@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YpHhBjsAarWtSpnKxtWZ/8Pz0ks/54FML06i7S3zWzWCfrXvzScUiQxyZI9BKIuXfVHw16V6pz6d7GNycXjwTg==",
+  "success": true,
+  "projectFilePath": "D:\\Assemblies\\Hashing\\Roblox.Hashing\\Roblox.Hashing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ErringPaladin10\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ErringPaladin10\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

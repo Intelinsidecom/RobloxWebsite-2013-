@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Web.Metrics</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Roblox.Web.Devices">
+      <HintPath>..\..\full\Roblox.Web.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EphemeralCounters">
+      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Devices">
+      <HintPath>..\..\full\Roblox.Platform.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.Groups</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Platform.Core">
+      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.TextFilter">
+      <HintPath>..\..\full\Roblox.TextFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Membership">
+      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox Server Class Library">
+      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Locking">
+      <HintPath>..\..\full\Roblox.Locking.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EventLog">
+      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.PremiumFeatures">
+      <HintPath>..\..\full\Roblox.Platform.PremiumFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.MembershipCore">
+      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.FloodCheckers.Core">
+      <HintPath>..\..\full\Roblox.FloodCheckers.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Moderation">
+      <HintPath>..\..\full\Roblox.Moderation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Roblox.PremiumFeatures">
+      <HintPath>..\..\full\Roblox.PremiumFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Data">
+      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.FloodCheckers">
+      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EphemeralCounters">
+      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Groups.Client" />
+    <Reference Include="Roblox.DataV2.Core">
+      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Amazon.Sns">
+      <HintPath>..\..\full\Roblox.Amazon.Sns.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Roblox.Entities">
+      <HintPath>..\..\full\Roblox.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Counters">
+      <HintPath>..\..\full\Roblox.Platform.Counters.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Membership.Extensions">
+      <HintPath>..\..\full\Roblox.Platform.Membership.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Groups">
+      <HintPath>..\..\full\Roblox.Groups.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Common">
+      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Users">
+      <HintPath>..\..\full\Roblox.Users.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core" />
+    <Reference Include="Roblox.MssqlDatabases">
+      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

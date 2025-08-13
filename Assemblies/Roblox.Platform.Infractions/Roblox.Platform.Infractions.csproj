@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.Infractions</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.EventLog">
+      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.FloodCheckers.Core">
+      <HintPath>..\..\full\Roblox.FloodCheckers.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.FloodCheckers.Redis">
+      <HintPath>..\..\full\Roblox.FloodCheckers.Redis.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

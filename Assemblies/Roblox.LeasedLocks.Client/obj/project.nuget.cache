@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "58uvxNFLIWj5Ost0qSf94IywVCU3RHYgGrclm6gxX1vmNQ/45fXebO+XLgLIHaPk3wJAl/xlEVp5Y/c+2ycx4Q==",
+  "success": true,
+  "projectFilePath": "W:\\--Roblox\\Roblox.LeasedLocks.Client\\Roblox.LeasedLocks.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ricky\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ricky\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

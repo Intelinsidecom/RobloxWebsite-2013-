@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.GroupAssets</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Platform.Assets">
+      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Groups">
+      <HintPath>..\..\full\Roblox.Platform.Groups.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Core">
+      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

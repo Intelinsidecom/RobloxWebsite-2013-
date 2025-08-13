@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Web.Presence</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Platform.Presence">
+      <HintPath>..\..\full\Roblox.Platform.Presence.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.TranslationResources">
+      <HintPath>..\..\full\Roblox.TranslationResources.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox Server Class Library">
+      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Assets">
+      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.UniverseDisplayInformation">
+      <HintPath>..\..\full\Roblox.Platform.UniverseDisplayInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Universes">
+      <HintPath>..\..\full\Roblox.Platform.Universes.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Localization.Core">
+      <HintPath>..\..\full\Roblox.Platform.Localization.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Web.Authentication">
+      <HintPath>..\..\full\Roblox.Web.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Membership">
+      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EventLog">
+      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Social">
+      <HintPath>..\..\full\Roblox.Platform.Social.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc" />
+    <Reference Include="Roblox.Web.Devices">
+      <HintPath>..\..\full\Roblox.Web.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Devices">
+      <HintPath>..\..\full\Roblox.Platform.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Time">
+      <HintPath>..\..\full\Roblox.Time.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.MembershipCore">
+      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\full\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.AssetsCore">
+      <HintPath>..\..\full\Roblox.Platform.AssetsCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

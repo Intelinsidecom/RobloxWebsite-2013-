@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yGzVT+NSKKsKfQ6OQos2iSPwrNsU2Z1u99FGzzozm9eZRAWGF6SrV92H1+WlgKY+vFFCwp9ie3KrwRkBatsFWQ==",
+  "success": true,
+  "projectFilePath": "D:\\Assemblies\\Common\\Roblox.Common.NetStandard\\Roblox.Common.NetStandard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ErringPaladin10\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ErringPaladin10\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

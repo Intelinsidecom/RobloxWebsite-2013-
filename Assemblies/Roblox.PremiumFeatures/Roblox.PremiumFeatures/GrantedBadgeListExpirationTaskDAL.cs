@@ -1,0 +1,203 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using Roblox.Common;
+using Roblox.Data;
+using Roblox.MssqlDatabases;
+
+namespace Roblox.PremiumFeatures;
+
+public class GrantedBadgeListExpirationTaskDAL
+{
+	private long _ID;
+
+	private int _AccountAddOnID;
+
+	private Guid? _WorkerID;
+
+	private DateTime? _Completed;
+
+	private DateTime _Created = DateTime.MinValue;
+
+	private DateTime _Updated = DateTime.MinValue;
+
+	internal long ID
+	{
+		get
+		{
+			return _ID;
+		}
+		set
+		{
+			_ID = value;
+		}
+	}
+
+	internal int AccountAddOnID
+	{
+		get
+		{
+			return _AccountAddOnID;
+		}
+		set
+		{
+			_AccountAddOnID = value;
+		}
+	}
+
+	internal Guid? WorkerID
+	{
+		get
+		{
+			return _WorkerID;
+		}
+		set
+		{
+			_WorkerID = value;
+		}
+	}
+
+	internal DateTime? Completed
+	{
+		get
+		{
+			return _Completed;
+		}
+		set
+		{
+			_Completed = value;
+		}
+	}
+
+	internal DateTime Created
+	{
+		get
+		{
+			return _Created;
+		}
+		set
+		{
+			_Created = value;
+		}
+	}
+
+	internal DateTime Updated
+	{
+		get
+		{
+			return _Updated;
+		}
+		set
+		{
+			_Updated = value;
+		}
+	}
+
+	private static string ConnectionString => RobloxDatabase.RobloxPremiumFeatures.GetConnectionString();
+
+	internal GrantedBadgeListExpirationTaskDAL()
+	{
+	}
+
+	internal void Delete()
+	{
+		if (_ID == 0L)
+		{
+			throw new ApplicationException("Required value not specified: ID.");
+		}
+		List<SqlParameter> queryParameters = new List<SqlParameter>();
+		queryParameters.Add(new SqlParameter("@ID", _ID));
+		EntityHelper.DoEntityDALDelete(new DbInfo(ConnectionString, "[dbo].[GrantedBadgeListExpirationTasks_DeleteGrantedBadgeListExpirationTaskByID]", queryParameters));
+	}
+
+	internal void Insert()
+	{
+		if (_AccountAddOnID == 0)
+		{
+			throw new ApplicationException("Required value not specified: AccountAddOnID.");
+		}
+		if (_Created.Equals(DateTime.MinValue))
+		{
+			throw new ApplicationException("Required value not specified: Created.");
+		}
+		if (_Updated.Equals(DateTime.MinValue))
+		{
+			throw new ApplicationException("Required value not specified: Updated.");
+		}
+		List<SqlParameter> queryParameters = new List<SqlParameter>();
+		queryParameters.Add(new SqlParameter("@AccountAddOnID", _AccountAddOnID));
+		queryParameters.Add(new SqlParameter("@WorkerID", _WorkerID.HasValue ? ((object)_WorkerID.Value) : DBNull.Value));
+		queryParameters.Add(new SqlParameter("@Completed", _Completed.HasValue ? ((object)_Completed.Value) : DBNull.Value));
+		queryParameters.Add(new SqlParameter("@Created", _Created));
+		queryParameters.Add(new SqlParameter("@Updated", _Updated));
+		_ID = EntityHelper.DoEntityDALInsert<long>(new DbInfo(ConnectionString, "[dbo].[GrantedBadgeListExpirationTasks_InsertGrantedBadgeListExpirationTask]", new SqlParameter("@ID", SqlDbType.BigInt), queryParameters));
+	}
+
+	internal void Update()
+	{
+		if (_ID == 0L)
+		{
+			throw new ApplicationException("Required value was not specified: ID.");
+		}
+		if (_AccountAddOnID == 0)
+		{
+			throw new ApplicationException("Required value not specified: AccountAddOnID.");
+		}
+		if (_Created.Equals(DateTime.MinValue))
+		{
+			throw new ApplicationException("Required value not specified: Created.");
+		}
+		if (_Updated.Equals(DateTime.MinValue))
+		{
+			throw new ApplicationException("Required value not specified: Updated.");
+		}
+		List<SqlParameter> queryParameters = new List<SqlParameter>();
+		queryParameters.Add(new SqlParameter("@ID", _ID));
+		queryParameters.Add(new SqlParameter("@AccountAddOnID", _AccountAddOnID));
+		queryParameters.Add(new SqlParameter("@WorkerID", _WorkerID.HasValue ? ((object)_WorkerID.Value) : DBNull.Value));
+		queryParameters.Add(new SqlParameter("@Completed", _Completed.HasValue ? ((object)_Completed.Value) : DBNull.Value));
+		queryParameters.Add(new SqlParameter("@Created", _Created));
+		queryParameters.Add(new SqlParameter("@Updated", _Updated));
+		EntityHelper.DoEntityDALUpdate(new DbInfo(ConnectionString, "[dbo].[GrantedBadgeListExpirationTasks_UpdateGrantedBadgeListExpirationTaskByID]", queryParameters));
+	}
+
+	private static GrantedBadgeListExpirationTaskDAL BuildDAL(SqlDataReader reader)
+	{
+		GrantedBadgeListExpirationTaskDAL dal = new GrantedBadgeListExpirationTaskDAL();
+		while (reader.Read())
+		{
+			dal.ID = (long)reader["ID"];
+			dal.AccountAddOnID = (int)reader["AccountAddOnID"];
+			dal.WorkerID = (reader["WorkerID"].Equals(DBNull.Value) ? null : ((Guid?)reader["WorkerID"]));
+			dal.Completed = (reader["Completed"].Equals(DBNull.Value) ? null : ((DateTime?)reader["Completed"]));
+			dal.Created = (DateTime)reader["Created"];
+			dal.Updated = (DateTime)reader["Updated"];
+		}
+		if (dal.ID == 0L)
+		{
+			return null;
+		}
+		return dal;
+	}
+
+	internal static GrantedBadgeListExpirationTaskDAL Get(long id)
+	{
+		if (id == 0L)
+		{
+			return null;
+		}
+		List<SqlParameter> queryParameters = new List<SqlParameter>();
+		queryParameters.Add(new SqlParameter("@ID", id));
+		return EntityHelper.GetEntityDAL(new DbInfo(ConnectionString, "[dbo].[GrantedBadgeListExpirationTasks_GetGrantedBadgeListExpirationTaskByID]", queryParameters), BuildDAL);
+	}
+
+	internal static ICollection<long> LeaseTasks(Guid workerId, int leaseDurationInMinutes, int maxToLease)
+	{
+		List<SqlParameter> queryParameters = new List<SqlParameter>();
+		queryParameters.Add(new SqlParameter("@WorkerID", workerId));
+		queryParameters.Add(new SqlParameter("@NumberOfTasks", maxToLease));
+		queryParameters.Add(new SqlParameter("@DurationInMinutes", leaseDurationInMinutes));
+		return EntityHelper.GetDataEntityIDCollection<long>(new DbInfo(ConnectionString, "[dbo].[GrantedBadgeListExpirationTasks_LeaseTasks]", queryParameters));
+	}
+}

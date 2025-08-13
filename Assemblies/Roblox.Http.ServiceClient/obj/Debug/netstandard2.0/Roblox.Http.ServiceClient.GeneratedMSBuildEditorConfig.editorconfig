@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = Roblox.Http.ServiceClient
+build_property.ProjectDir = C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.ServiceClient\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

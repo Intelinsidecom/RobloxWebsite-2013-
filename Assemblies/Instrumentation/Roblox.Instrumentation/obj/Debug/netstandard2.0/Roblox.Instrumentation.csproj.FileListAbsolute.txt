@@ -1,0 +1,3 @@
+W:\web-26d8f6287feed891ad3be67c9ac1aa2af380379e\Assemblies\Instrumentation\Roblox.Instrumentation\obj\Debug\netstandard2.0\Roblox.Instrumentation.csproj.AssemblyReference.cache
+W:\web-26d8f6287feed891ad3be67c9ac1aa2af380379e\Assemblies\Instrumentation\Roblox.Instrumentation\obj\Debug\netstandard2.0\Roblox.Instrumentation.GeneratedMSBuildEditorConfig.editorconfig
+W:\web-26d8f6287feed891ad3be67c9ac1aa2af380379e\Assemblies\Instrumentation\Roblox.Instrumentation\obj\Debug\netstandard2.0\Roblox.Instrumentation.csproj.CoreCompileInputs.cache

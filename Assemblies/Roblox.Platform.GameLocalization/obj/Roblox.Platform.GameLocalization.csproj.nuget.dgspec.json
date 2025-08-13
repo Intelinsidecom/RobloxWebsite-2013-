@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "W:\\--Roblox\\Roblox.Platform.GameLocalization\\Roblox.Platform.GameLocalization.csproj": {}
+  },
+  "projects": {
+    "W:\\--Roblox\\Roblox.Platform.GameLocalization\\Roblox.Platform.GameLocalization.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "W:\\--Roblox\\Roblox.Platform.GameLocalization\\Roblox.Platform.GameLocalization.csproj",
+        "projectName": "Roblox.Platform.GameLocalization",
+        "projectPath": "W:\\--Roblox\\Roblox.Platform.GameLocalization\\Roblox.Platform.GameLocalization.csproj",
+        "packagesPath": "C:\\Users\\ricky\\.nuget\\packages\\",
+        "outputPath": "W:\\--Roblox\\Roblox.Platform.GameLocalization\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ricky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "targetAlias": "net471",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "targetAlias": "net471",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

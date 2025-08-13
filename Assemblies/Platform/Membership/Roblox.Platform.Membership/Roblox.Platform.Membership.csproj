@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.Membership</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Platform.Core">
+      <HintPath>D:\full\Roblox.Platform.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox Server Class Library">
+      <HintPath>D:\full\Roblox Server Class Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.MembershipCore">
+      <HintPath>D:\full\Roblox.Platform.MembershipCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Users.Client">
+      <HintPath>D:\full\Roblox.Users.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Random">
+      <HintPath>D:\full\Roblox.Random.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EventLog">
+      <HintPath>D:\full\Roblox.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>D:\full\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Agents">
+      <HintPath>D:\full\Roblox.Agents.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Passwords.Client">
+      <HintPath>D:\full\Roblox.Passwords.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Roblox.Configuration">
+      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Amazon.Sns">
+      <HintPath>D:\full\Roblox.Amazon.Sns.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Roblox.Entities">
+      <HintPath>D:\full\Roblox.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Data">
+      <HintPath>D:\full\Roblox.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Hashing">
+      <HintPath>D:\full\Roblox.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Common">
+      <HintPath>D:\full\Roblox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Users">
+      <HintPath>D:\full\Roblox.Users.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core" />
+    <Reference Include="Roblox.Caching">
+      <HintPath>D:\full\Roblox.Caching.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

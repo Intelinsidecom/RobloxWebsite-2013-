@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nsDnN8FsR2kA5lf3mF0fEodXa4JKyIcYqPR6jlIePBrbbqUMh/ZuFnRlfXWAz796XFKxcKBNRfMKDubu433TMA==",
+  "success": true,
+  "projectFilePath": "W:\\--Roblox\\Roblox.Files.Client\\Roblox.Files.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ricky\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ricky\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

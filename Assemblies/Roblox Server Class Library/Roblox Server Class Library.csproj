@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox Server Class Library</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Data">
+      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Common">
+      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Roblox.Roles.Client" />
+    <Reference Include="System.Web" />
+    <Reference Include="Roblox.Amazon.Sqs">
+      <HintPath>..\..\full\Roblox.Amazon.Sqs.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.BucketStore">
+      <HintPath>..\..\full\Roblox.BucketStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EventLog">
+      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.AssetOwnership">
+      <HintPath>..\..\full\Roblox.Platform.AssetOwnership.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Roblox.Locking">
+      <HintPath>..\..\full\Roblox.Locking.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Amazon">
+      <HintPath>..\..\full\Roblox.Amazon.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Common.Web">
+      <HintPath>..\..\full\Roblox.Common.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Roblox.MssqlDatabases">
+      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Marketplace.Client" />
+    <Reference Include="Roblox.Economy.Common">
+      <HintPath>..\..\full\Roblox.Economy.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Economy">
+      <HintPath>..\..\full\Roblox.Economy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Passwords.Client">
+      <HintPath>..\..\full\Roblox.Passwords.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Roblox.Users.Client">
+      <HintPath>..\..\full\Roblox.Users.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Moderation">
+      <HintPath>..\..\full\Roblox.Moderation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.DataV2.Core">
+      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>..\..\full\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Groups.Client" />
+    <Reference Include="Roblox.ApiClientBase">
+      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Agents">
+      <HintPath>..\..\full\Roblox.Agents.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.WebsiteSettings">
+      <HintPath>..\..\full\Roblox.WebsiteSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Entities.Mssql">
+      <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.RequestContext">
+      <HintPath>..\..\full\Roblox.RequestContext.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.UserCacheMigrationSettings">
+      <HintPath>..\..\full\Roblox.UserCacheMigrationSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Web.SEO">
+      <HintPath>..\..\full\Roblox.Web.SEO.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Assets">
+      <HintPath>..\..\full\Roblox.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Redis.Lru">
+      <HintPath>..\..\full\Roblox.Redis.Lru.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Redis">
+      <HintPath>..\..\full\Roblox.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Users">
+      <HintPath>..\..\full\Roblox.Users.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.ContentRatings">
+      <HintPath>..\..\full\Roblox.ContentRatings.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Coordination">
+      <HintPath>..\..\full\Roblox.Coordination.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

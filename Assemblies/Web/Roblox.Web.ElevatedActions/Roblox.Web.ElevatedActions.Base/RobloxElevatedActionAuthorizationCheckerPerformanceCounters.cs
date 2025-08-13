@@ -1,0 +1,65 @@
+using System;
+using Roblox.Instrumentation;
+
+namespace Roblox.Web.ElevatedActions.Base;
+
+public class RobloxElevatedActionAuthorizationCheckerPerformanceCounters : IRobloxElevatedActionAuthorizationCheckerPerformanceCounters
+{
+	private const string _PerformanceCategory = "Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker";
+
+	public IRateOfCountsPerSecondCounter ElevatedActionNameNullOrEmptyOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter UserNotFoundForUserIdOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter UserFoundSuccessfullyOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter RolesetsNotFoundForUserOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter RoleSetValidatorReturnedNullWhenLookingUpRolesetsForUserOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter RoleSetValidatorSuccessfullyRetrievedRolesetsForUserOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter AuthorizationSuccessOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter AuthorizationFailureOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter PerformNotPermittedSideEffectsEncounteredUnhandledExceptionOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter PerformNotPermittedSideEffectsCompletedSuccessfullyOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter TryGetElevatedActionSuccessOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter ElevatedActionFactoryGetReturnedNullOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter GetRoleSetElevatedActionByRoleSetIdElevatedActionIdSuccessfulOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter GetRoleSetElevatedActionByRoleSetIdElevatedActionIdThrewOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter GetRoleSetElevatedActionByRoleSetIdElevatedActionIdReturnedNullOccurrencesPerSecond { get; }
+
+	public IRateOfCountsPerSecondCounter IsUserMemberOfRolesetThatIsAuthorizedToExecuteElevatedActionEncounteredUnhandledExceptionOccurrencesPerSecond { get; }
+
+	public RobloxElevatedActionAuthorizationCheckerPerformanceCounters(ICounterRegistry registry)
+	{
+		if (registry == null)
+		{
+			throw new ArgumentNullException("registry");
+		}
+		UserNotFoundForUserIdOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "UserNotFoundForUserIdOccurrencesPerSecond");
+		UserFoundSuccessfullyOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "UserFoundSuccessfullyOccurrencesPerSecond");
+		RolesetsNotFoundForUserOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "RolesetsNotFoundForUserOccurrencesPerSecond");
+		RoleSetValidatorReturnedNullWhenLookingUpRolesetsForUserOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "RoleSetValidatorReturnedNullWhenLookingUpRolesetsForUserOccurrencesPerSecond");
+		RoleSetValidatorSuccessfullyRetrievedRolesetsForUserOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "RoleSetValidatorSuccessfullyRetrievedRolesetsForUserOccurrencesPerSecond");
+		AuthorizationSuccessOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "AuthorizationSuccessOccurrencesPerSecond");
+		AuthorizationFailureOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "AuthorizationFailureOccurrencesPerSecond");
+		PerformNotPermittedSideEffectsEncounteredUnhandledExceptionOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "PerformNotPermittedSideEffectsEncounteredUnhandledExceptionOccurrencesPerSecond");
+		PerformNotPermittedSideEffectsCompletedSuccessfullyOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "PerformNotPermittedSideEffectsCompletedSuccessfullyOccurrencesPerSecond");
+		TryGetElevatedActionSuccessOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "TryGetElevatedActionSuccessOccurrencesPerSecond");
+		ElevatedActionFactoryGetReturnedNullOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "ElevatedActionFactoryGetReturnedNullOccurrencesPerSecond");
+		GetRoleSetElevatedActionByRoleSetIdElevatedActionIdSuccessfulOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "GetRoleSetElevatedActionByRoleSetIdElevatedActionIdSuccessfulOccurrencesPerSecond");
+		GetRoleSetElevatedActionByRoleSetIdElevatedActionIdThrewOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "GetRoleSetElevatedActionByRoleSetIdElevatedActionIdThrewOccurrencesPerSecond");
+		GetRoleSetElevatedActionByRoleSetIdElevatedActionIdReturnedNullOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "GetRoleSetElevatedActionByRoleSetIdElevatedActionIdReturnedNullOccurrencesPerSecond");
+		ElevatedActionNameNullOrEmptyOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "ElevatedActionNameNullOrEmptyOccurrencesPerSecond");
+		IsUserMemberOfRolesetThatIsAuthorizedToExecuteElevatedActionEncounteredUnhandledExceptionOccurrencesPerSecond = registry.GetRateOfCountsPerSecondCounter("Roblox.Web.ElevatedActions.Base.RobloxElevatedActionAuthorizationChecker", "IsUserMemberOfRolesetThatIsAuthorizedToExecuteElevatedActionEncounteredUnhandledExceptionOccurrencesPerSecond");
+	}
+}

@@ -1,0 +1,119 @@
+﻿@using Roblox.Website.ViewModels.Navigation
+@{
+    ViewBag.ControlsResources = new RobloxResourceSet("CommonUI.Controls");
+    ViewBag.VisitGameResources = new RobloxResourceSet("Common.VisitGame");
+    ViewBag.GuestModeResources = new RobloxResourceSet("Feature.GameLaunchGuestMode");
+
+    var clientInstallerModel = new ClientInstallerViewModel(Request.UserAgent)
+    {
+        VisitGameResources = ViewBag.VisitGameResources,
+        ControlsResources = ViewBag.ControlsResources
+    };
+    var placeLauncherModel = new PlaceLauncherViewModel()
+    {
+        VisitGameResources = ViewBag.VisitGameResources,
+        GuestModeResources = ViewBag.GuestModeResources
+    };
+
+    RobloxCSS.PageCSS.Add("PartialViews/Navigation.css");
+    RobloxScripts.PageScripts.Add("GenericConfirmation.js");
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <!-- MachineID: @ViewBag.MachineID -->
+    @{ Html.RenderPartial("~/Views/Shared/PageMetaTags.cshtml", (MetaTagListViewModel)ViewBag.MetaTagListViewModel); }
+
+
+    <title> @(!String.IsNullOrEmpty(ViewBag.Title) ? ViewBag.Title + " - ROBLOX" : "ROBLOX.com")</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+
+    @RobloxCSS.RenderBundle("main")
+    @RobloxCSS.Render(StaticContent.GetPageCSSBundle())
+
+    @Html.Partial("~/UserControls/TrackingPixels/GoogleAnalytics.ascx")
+    <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js'></script>
+    <script type='text/javascript'>window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-1.7.2.min.js'><\/script>")</script>
+    <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js'></script>
+    <script type='text/javascript'>window.Sys || document.write("<script type='text/javascript' src='/js/Microsoft/MicrosoftAjax.js'><\/script>")</script>
+    @RobloxScripts.RenderBundle("base")
+    @*Scripts.Render("~/Js/M/nonLoggedIn")*@
+    <script type='text/javascript'>Roblox.config.externalResources = ['/js/jquery/jquery-1.7.2.min.js', '/js/json2.min.js']; Roblox.config.paths['jQuery'] = '/js/modules/jQuery.js'; Roblox.config.paths['Pagelets.BestFriends'] = '/js/modules/Pagelets/BestFriends.js'; Roblox.config.paths['Pages.Catalog'] = '/js/modules/Pages/Catalog.js'; Roblox.config.paths['Pages.Messages'] = '/js/modules/Pages/Messages.js'; Roblox.config.paths['Resources.Messages'] = '/js/modules/Resources/Messages.js'; Roblox.config.paths['Widgets.AvatarImage'] = '/js/modules/Widgets/AvatarImage.js'; Roblox.config.paths['Widgets.DropdownMenu'] = '/js/modules/Widgets/DropdownMenu.js'; Roblox.config.paths['Widgets.GroupImage'] = '/js/modules/Widgets/GroupImage.js'; Roblox.config.paths['Widgets.HierarchicalDropdown'] = '/js/modules/Widgets/HierarchicalDropdown.js'; Roblox.config.paths['Widgets.ItemImage'] = '/js/modules/Widgets/ItemImage.js'; Roblox.config.paths['Widgets.PlaceImage'] = '/js/modules/Widgets/PlaceImage.js'; Roblox.config.paths['Widgets.Suggestions'] = '/js/modules/Widgets/Suggestions.js'; Roblox.config.paths['Widgets.SurveyModal'] = '/js/modules/WidgWebtApplicationURLs/SurveyModal.js';</script>
+    @RobloxScripts.Render(StaticContent.GetPageScriptBundle())
+
+    @Html.Partial("~/Views/Tracking/JavascriptErrorTracker.cshtml", (JavascriptErrorTrackerViewModel)ViewBag.JavascriptErrorTrackerViewModel)
+    <script type="text/javascript">
+        $(function () {
+            RobloxEventManager.triggerEvent('rbx_evt_newuser', {});
+        });
+    </script>
+    <script type="text/javascript">
+        var Roblox = Roblox || {};
+        Roblox.UpsellAdModal = Roblox.UpsellAdModal || {};
+
+        Roblox.UpsellAdModal.Resources = {
+            //<sl:translate>
+            title: "Remove Ads Like This",
+            body: "Builders Club members do not see external ads like these.",
+            accept: "Upgrade Now",
+            decline: "No, thanks"
+            //</sl:translate>
+        };
+    </script>
+    <script type="text/javascript">
+        Roblox.XsrfToken.setToken('');
+    </script>
+    <script type="text/javascript">
+        Roblox.FixedUI.gutterAdsEnabled = false;
+    </script>
+
+</head>
+<body class="">
+    <div id="fb-root"></div>
+
+    <!-- Used for execution that must happen before page load -->
+
+    <div id="MasterContainer">
+        <script type="text/javascript">
+            if (top.location != self.location) {
+                top.location = self.location.href;
+            }
+        </script>
+        @Html.Partial("~/Views/Tracking/EventManager.cshtml")
+        <div>
+            @Html.Partial("~/Views/Navigation/Navigation.cshtml", new NavigationViewModel())
+            <style>
+                html {
+                    background: #123f83;
+                }
+            </style>
+            @if (Request.IsAuthenticated)
+            {
+                @Html.Partial("~/Views/Navigation/UserSubmenu.cshtml")
+            }
+            <div class="forceSpace">&nbsp;</div>
+            <noscript><div class="SystemAlert"><div class="SystemAlertText">Please enable Javascript to use all the features on this site.</div></div></noscript>
+
+            <div id="BodyWrapper">
+                <div id="RepositionBody">
+                    <div id="Body" style="width:970px">
+                        @RenderBody()
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </div>
+            @Html.Partial("~/UserControls/Navigation/Footer.ascx")
+        </div>
+    </div>
+
+    @* Chat UserControl should go here *@
+    @{
+        Html.RenderPartial("~/Views/Tracker/GoogleAnalytics.cshtml");
+        Html.RenderPartial("~/Views/Game/PlaceLauncher.cshtml", placeLauncherModel);
+        Html.RenderPartial("~/Views/Game/ClientInstaller.cshtml", clientInstallerModel);
+        Html.RenderPartial("~/UserControls/Modals/ConfirmationModal.ascx");
+        Html.RenderPartial("~/Views/Tracking/VendorSpecificSignupTrackingPixel.cshtml");
+    }
+
+</body>
+</html>

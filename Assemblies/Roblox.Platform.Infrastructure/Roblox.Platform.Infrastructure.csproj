@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.Infrastructure</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="Roblox.Common">
+      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="Roblox.Redis">
+      <HintPath>..\..\full\Roblox.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>..\..\full\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Data">
+      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EventLog">
+      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Networking">
+      <HintPath>..\..\full\Roblox.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.MssqlDatabases">
+      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Hashing">
+      <HintPath>..\..\full\Roblox.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Redis.Lru">
+      <HintPath>..\..\full\Roblox.Redis.Lru.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Entities.Mssql">
+      <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

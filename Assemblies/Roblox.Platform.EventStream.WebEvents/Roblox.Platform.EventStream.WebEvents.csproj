@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.EventStream.WebEvents</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Platform.EventStream">
+      <HintPath>..\..\full\Roblox.Platform.EventStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Time">
+      <HintPath>..\..\full\Roblox.Time.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Common">
+      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+</Project>

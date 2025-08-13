@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DInhhcx6OSZ4iDZHq7GYP8lVAjSRV0dZXKPfUqFZZFpNTUHM2QpsX40CU+W1aL6GixLYYLVkHQjpbZ7+2N63AA==",
+  "success": true,
+  "projectFilePath": "W:\\--Roblox\\Roblox.Paging\\Roblox.Paging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ricky\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ricky\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

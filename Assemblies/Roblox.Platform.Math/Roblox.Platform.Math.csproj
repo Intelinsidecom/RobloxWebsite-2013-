@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.Math</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Roblox.Platform.Math.Statistics.TDistribution.csv" />
+    <EmbeddedResource Include="Roblox.Platform.Math.Statistics.TDistribution.csv" LogicalName="Roblox.Platform.Math.Statistics.TDistribution.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Numerics" />
+  </ItemGroup>
+</Project>

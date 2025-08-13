@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "G356vp+Su26qsOa6FnHm1/utaEaGuNrD+4LY50EIZwfV2y9bmiIX6wlVzJwgL5+4dPbG8WsYlTCphHgMiVoMzA==",
+  "success": true,
+  "projectFilePath": "D:\\Assemblies\\Redis\\Roblox.Redis\\Roblox.Redis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ErringPaladin10\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ErringPaladin10\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

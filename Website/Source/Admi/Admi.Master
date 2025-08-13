@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admi.master.cs" Inherits="Roblox.Website.Admi.Admi" %>
+<%@ Register Src="~/UserControls/Admi/Dashboard.ascx" TagName="Dashboard" TagPrefix="rbx"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" id="www-roblox-com" class="adminStyle">
+    <!-- MachineID: APP7 -->
+<head ID="Head1" runat="server">
+    <title></title>
+    <!--link rel='stylesheet' href='~/CSS/Base/CSS/Admin.css' />
+    <link rel='stylesheet' href='~/CSS/Base/CSS/Admin2.css' /-->
+    <link href="~/css2/main.css" type="text/css" rel="stylesheet" />
+    <link href="~/Admi/Admin.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="~/favicon.ico" />
+    <style type="text/css">
+        * { padding: 0; margin: 0; }
+    </style>
+</head>
+<body>
+    <form id="aspnetForm" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <asp:Panel ID="Panel1" Height="100%" runat="server">
+        <div style="padding: 0; width: 17em; height: 100%; color: #333; background: #eaeaea;
+            border-right: 1px solid #333">
+            <div style="text-align: center; padding: 1em">
+                <asp:HyperLink ID="RobloxHyperLink" ImageUrl="~/Admi/roblox.png" Text="Roblox" NavigateUrl="~/" runat="server" />
+            </div>
+			<div style="padding: 1em">
+            <rbx:Dashboard ID="Dashboard1" runat="server" />
+            </div>
+            <div style="/*padding: 1em*/ overflow: scroll; height: 442px">
+                <%-- Change ImageSet to BulletedList for 2009 look --%>
+                <asp:TreeView ID="TreeView1"
+                    ShowLines="True"
+                    CssClass="TreeView"
+                    ParentNodeStyle-ImageUrl="~/Admi/bullet_black.png"
+                    LeafNodeStyle-ImageUrl="~/Admi/bullet_white.png"
+                    OnTreeNodeDataBound="AdminDashboardTreeView_TreeNodeDataBound"
+                    NodeWrap="True"
+                    runat="server" DataSourceID="SiteMapDataSource" >
+                </asp:TreeView>
+                <asp:SiteMapDataSource
+                    ID="SiteMapDataSource"
+                    SiteMapProvider="RobloxSiteMapProvider"
+                    StartingNodeUrl="~/Admi/Default.aspx"
+                    runat="server" />
+            </div>
+        </div>
+	</asp:Panel>
+    <div id="Container">
+        <%-- Change 0.5em to 0 and 17.5em to 17em for 2009 look --%>
+        <asp:Panel ID="AdminContainer" ClientIDMode="Static"
+            ScrollBars="Auto"
+            CssClass="AdminPanel"
+            runat="server">
+            <asp:ContentPlaceHolder ID="cphRoblox" runat="server" />
+        </asp:Panel>
+    </div>
+    </form>
+</body>
+</html>

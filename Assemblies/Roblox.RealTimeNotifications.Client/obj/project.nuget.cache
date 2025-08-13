@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sS4wI9fbKUFAkB/O0s35wUEldK/7Ewrulf94YCzCUFIMbCp0yayKIEItWrLXW0pxE8v01gmBWA000PYNOrY8bQ==",
+  "success": true,
+  "projectFilePath": "W:\\--Roblox\\Roblox.RealTimeNotifications.Client\\Roblox.RealTimeNotifications.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ricky\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ricky\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

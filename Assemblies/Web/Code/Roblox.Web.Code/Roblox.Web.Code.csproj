@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Web.Code</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Web.Mvc" />
+    <Reference Include="System.Web" />
+    <Reference Include="Roblox.Platform.Localization.Core">
+      <HintPath>D:\full\Roblox.Platform.Localization.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Localization.Accounts">
+      <HintPath>D:\full\Roblox.Platform.Localization.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.RequestContext">
+      <HintPath>D:\full\Roblox.RequestContext.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Random">
+      <HintPath>D:\full\Roblox.Random.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EventLog">
+      <HintPath>D:\full\Roblox.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Web.Devices">
+      <HintPath>D:\full\Roblox.Web.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Membership">
+      <HintPath>D:\full\Roblox.Platform.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Core">
+      <HintPath>D:\full\Roblox.Platform.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Games.Client">
+      <HintPath>D:\full\Roblox.Games.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Presence">
+      <HintPath>D:\full\Roblox.Platform.Presence.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMarkupMin.Core">
+      <HintPath>D:\full\WebMarkupMin.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Avatar">
+      <HintPath>D:\full\Roblox.Platform.Avatar.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EphemeralCounters">
+      <HintPath>D:\full\Roblox.EphemeralCounters.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.EventStream">
+      <HintPath>D:\full\Roblox.Platform.EventStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.EventStream.WebEvents">
+      <HintPath>D:\full\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Devices">
+      <HintPath>D:\full\Roblox.Platform.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.FloodCheckers">
+      <HintPath>D:\full\Roblox.FloodCheckers.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.IpAddresses">
+      <HintPath>D:\full\Roblox.Platform.IpAddresses.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox Server Class Library">
+      <HintPath>D:\full\Roblox Server Class Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Infrastructure">
+      <HintPath>D:\full\Roblox.Platform.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.GameInstances">
+      <HintPath>D:\full\Roblox.Platform.GameInstances.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.AssetPermissions">
+      <HintPath>D:\full\Roblox.Platform.AssetPermissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Assets">
+      <HintPath>D:\full\Roblox.Platform.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Games">
+      <HintPath>D:\full\Roblox.Platform.Games.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Roblox.Platform.UserSetting">
+      <HintPath>D:\full\Roblox.Platform.UserSetting.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.TextFilter.Client">
+      <HintPath>D:\full\Roblox.TextFilter.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Universes">
+      <HintPath>D:\full\Roblox.Platform.Universes.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Marketplace.Client" />
+    <Reference Include="Roblox.Web.Authentication">
+      <HintPath>D:\full\Roblox.Web.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Users">
+      <HintPath>D:\full\Roblox.Users.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Web.Metrics">
+      <HintPath>D:\full\Roblox.Web.Metrics.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.AuthenticationV2">
+      <HintPath>D:\full\Roblox.AuthenticationV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Social">
+      <HintPath>D:\full\Roblox.Platform.Social.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Web.Presence">
+      <HintPath>D:\full\Roblox.Web.Presence.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.TranslationResources">
+      <HintPath>D:\full\Roblox.TranslationResources.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Marketing">
+      <HintPath>D:\full\Roblox.Marketing.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\full\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Marketing">
+      <HintPath>D:\full\Roblox.Platform.Marketing.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Configuration">
+      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>D:\full\Roblox.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Locking">
+      <HintPath>D:\full\Roblox.Locking.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.ApiClientBase">
+      <HintPath>D:\full\Roblox.ApiClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Amazon.Sns">
+      <HintPath>D:\full\Roblox.Amazon.Sns.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>D:\full\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Party">
+      <HintPath>D:\full\Roblox.Platform.Party.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.RealTimeNotifications">
+      <HintPath>D:\full\Roblox.RealTimeNotifications.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Authentication">
+      <HintPath>D:\full\Roblox.Platform.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Gigya">
+      <HintPath>D:\full\Roblox.Gigya.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Web">
+      <HintPath>D:\full\Roblox.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Networking">
+      <HintPath>D:\full\Roblox.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Captcha">
+      <HintPath>D:\full\Roblox.Platform.Captcha.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Counters">
+      <HintPath>D:\full\Roblox.Platform.Counters.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Common">
+      <HintPath>D:\full\Roblox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Common.Web">
+      <HintPath>D:\full\Roblox.Common.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.WebsiteSettings">
+      <HintPath>D:\full\Roblox.WebsiteSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.AssetsCore">
+      <HintPath>D:\full\Roblox.Platform.AssetsCore.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>D:\full\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.MembershipCore">
+      <HintPath>D:\full\Roblox.Platform.MembershipCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Membership.Extensions">
+      <HintPath>D:\full\Roblox.Platform.Membership.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core" />
+    <Reference Include="Roblox.Platform.AbTesting">
+      <HintPath>D:\full\Roblox.Platform.AbTesting.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.AbTesting.Core">
+      <HintPath>D:\full\Roblox.Platform.AbTesting.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

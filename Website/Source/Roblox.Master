@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Roblox.Master.cs" Inherits="Roblox.Website.RobloxMaster" %>
+<%@ Import Namespace="System.Web.Optimization" %>
+<%@ Import Namespace="Roblox.Website" %>
+<%@ Import Namespace="Roblox.Website.ViewModels" %>
+<%@ Import Namespace="Roblox.Web.StaticContent" %>
+
+
+<%@ Register Src="~/UserControls/Navigation/MenuRedesign.ascx" TagName="MenuRedesign" TagPrefix="rbx"%>
+<%@ Register Src="~/UserControls/Navigation/UserSubmenu.ascx" TagName="UserSubmenu" TagPrefix="rbx"%>
+<%@ Register Src="~/UserControls/Navigation/Footer.ascx" TagName="Footer" TagPrefix="rbx"%>
+
+<%@ Register Src="~/UserControls/TrackingPixels/GoogleAnalytics.ascx" TagName="GoogleAnalytics" TagPrefix="rbx"%>
+<%@ Register Src="~/UserControls/TrackingPixels/JavascriptErrorTracker.ascx" TagName="JavascriptErrorTracker" TagPrefix="rbx"%>
+<%@ Register Src="~/UserControls/TrackingPixels/RobloxEventManager.ascx" TagName="RobloxEventManager" TagPrefix="rbx"%>
+<%@ Register Src="~/UserControls/TrackingPixels/UrchinTracker.ascx" TagName="UrchinTracker" TagPrefix="rbx"%>
+
+<%@ Register Src="~/UserControls/ClientInstaller.ascx" TagName="ClientInstaller" TagPrefix="rbx"%>
+<%@ Register Src="~/UserControls/PlaceLauncher.ascx" TagName="PlaceLauncher" TagPrefix="rbx"%>
+
+<%@ Register Src="~/UserControls/Modals/UpsellAdModal.ascx" TagName="UpsellAdModal" TagPrefix="rbx"%>
+<%@ Register Src="~/UserControls/Modals/ConfirmationModal.ascx" TagName="ConfirmationModal" TagPrefix="rbx"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!-- MachineID: <%: Environment.MachineName %> -->
+<head ID="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true" />
+    <title><%=Page.Title %></title>
+
+    <%: RobloxCSS.RenderBundle("main") %>
+    <%: RobloxCSS.Render(StaticContent.GetPageCSSBundle()) %>
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta name="author" content="ROBLOX Corporation" />
+    <meta ID="metadescription" name="description" content="" runat="server" />
+    <meta ID="metakeywords" name="keywords" content="" runat="server" />
+
+    <rbx:GoogleAnalytics runat="server" />
+    <%-- TODO: CdnFallbackExpression for these --%>
+<script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js'></script>
+<script type='text/javascript'>window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-1.7.2.min.js'><\/script>")</script>
+<script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js'></script>
+<script type='text/javascript'>window.Sys || document.write("<script type='text/javascript' src='/js/Microsoft/MicrosoftAjax.js'><\/script>")</script>
+    <%: RobloxScripts.RenderBundle("master") %>
+    <script type='text/javascript'>Roblox.config.externalResources = ['/js/jquery/jquery-1.7.2.min.js', '/js/json2.min.js']; Roblox.config.paths['jQuery'] = '/js/modules/jQuery.js'; Roblox.config.paths['Pagelets.BestFriends'] = '/js/modules/Pagelets/BestFriends.js'; Roblox.config.paths['Pages.Catalog'] = '/js/modules/Pages/Catalog.js'; Roblox.config.paths['Pages.Messages'] = '/js/modules/Pages/Messages.js'; Roblox.config.paths['Resources.Messages'] = '/js/modules/Resources/Messages.js'; Roblox.config.paths['Widgets.AvatarImage'] = '/js/modules/Widgets/AvatarImage.js'; Roblox.config.paths['Widgets.DropdownMenu'] = '/js/modules/Widgets/DropdownMenu.js'; Roblox.config.paths['Widgets.GroupImage'] = '/js/modules/Widgets/GroupImage.js'; Roblox.config.paths['Widgets.HierarchicalDropdown'] = '/js/modules/Widgets/HierarchicalDropdown.js'; Roblox.config.paths['Widgets.ItemImage'] = '/js/modules/Widgets/ItemImage.js'; Roblox.config.paths['Widgets.PlaceImage'] = '/js/modules/Widgets/PlaceImage.js'; Roblox.config.paths['Widgets.Suggestions'] = 'modules/Widgets/Suggestions.js'; Roblox.config.paths['Widgets.SurveyModal'] = '/js/modules/Widgets/SurveyModal.js';</script>
+    <rbx:JavascriptErrorTracker runat="server" />
+    <%: RobloxScripts.Render(StaticContent.GetPageScriptBundle()) %>
+</head>
+<body class="">
+    <script type="text/javascript">Roblox.XsrfToken.setToken('');</script>
+ 
+    <script type="text/javascript">
+        if (top.location != self.location) {
+            top.location = self.location.href;
+        }
+    </script>
+
+    <form name="aspnetForm" id="aspnetForm" runat="server">
+        <div id="fb-root">
+        </div>
+        <asp:ScriptManager ID="ScriptManager" runat="server" />
+
+            <div class=""><div class="">
+                <div id="MasterContainer" >
+                    <rbx:RobloxEventManager runat="server" />
+                    <script type="text/javascript">Roblox.FixedUI.gutterAdsEnabled = false;</script>
+
+                    <div id="Container">
+                        <asp:ContentPlaceHolder ID="cphBanner" runat="server"><rbx:MenuRedesign ID="MenuRedesign" runat="server" /></asp:ContentPlaceHolder>
+                        <style>
+                            html {
+                                background: #123f83;
+                            }
+                        </style>
+                        
+                    </div>
+                    <asp:ContentPlaceHolder ID="cphSubmenu" runat="server"><rbx:UserSubmenu ID="UserSubmenu1" runat="server" /></asp:ContentPlaceHolder>
+                    <div class="forceSpace">&nbsp;</div>
+
+                    <asp:ContentPlaceHolder ID="cphBannerAd" runat="server">
+                        <div id="AdvertisingLeaderboard">
+                        <iframe
+                            allowtransparency="true"
+                            frameborder="0"
+                            height="110"
+                            scrolling="no"
+                            src="/userads/1"
+                            width="828"
+                            data-js-adtype="iframead"></iframe>
+                        </div>
+                    </asp:ContentPlaceHolder>
+
+                    <noscript><div class="SystemAlert"><div class="SystemAlertText">Please enable Javascript to use all the features on this site.</div></div></noscript>
+        
+                    <div id="BodyWrapper">
+                        <div id="RepositionBody">
+                            <div id="Body" style='width:970px;'>
+                                <asp:ContentPlaceHolder ID="cphRoblox" runat="server"></asp:ContentPlaceHolder>
+                                <div style="clear:both"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <asp:ContentPlaceHolder ID="cphFooter" runat="server"><rbx:Footer ID="rbxFooter" runat="server" /></asp:ContentPlaceHolder>
+            </div></div>
+        <div id="ChatContainer" style="position:fixed;bottom:0;right:0;z-index:1000;">
+        </div>
+
+        <rbx:UrchinTracker runat="server" />
+    </form>
+
+    <rbx:ClientInstaller runat="server" />
+    <rbx:PlaceLauncher runat="server" />
+    <rbx:UpsellAdModal runat="server" />
+    <rbx:ConfirmationModal runat="server" />
+
+</body>
+</html>

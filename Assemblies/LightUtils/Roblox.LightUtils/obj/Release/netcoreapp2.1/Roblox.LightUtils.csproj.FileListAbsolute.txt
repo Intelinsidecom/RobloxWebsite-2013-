@@ -1,0 +1,10 @@
+W:\Sphynx\lib\Roblox.LightUtils\bin\Release\netcoreapp2.1\Roblox.LightUtils.deps.json
+W:\Sphynx\lib\Roblox.LightUtils\bin\Release\netcoreapp2.1\Roblox.LightUtils.dll
+W:\Sphynx\lib\Roblox.LightUtils\bin\Release\netcoreapp2.1\Roblox.LightUtils.pdb
+W:\Sphynx\lib\Roblox.LightUtils\obj\Release\netcoreapp2.1\Roblox.LightUtils.csproj.AssemblyReference.cache
+W:\Sphynx\lib\Roblox.LightUtils\obj\Release\netcoreapp2.1\Roblox.LightUtils.GeneratedMSBuildEditorConfig.editorconfig
+W:\Sphynx\lib\Roblox.LightUtils\obj\Release\netcoreapp2.1\Roblox.LightUtils.AssemblyInfoInputs.cache
+W:\Sphynx\lib\Roblox.LightUtils\obj\Release\netcoreapp2.1\Roblox.LightUtils.AssemblyInfo.cs
+W:\Sphynx\lib\Roblox.LightUtils\obj\Release\netcoreapp2.1\Roblox.LightUtils.csproj.CoreCompileInputs.cache
+W:\Sphynx\lib\Roblox.LightUtils\obj\Release\netcoreapp2.1\Roblox.LightUtils.dll
+W:\Sphynx\lib\Roblox.LightUtils\obj\Release\netcoreapp2.1\Roblox.LightUtils.pdb

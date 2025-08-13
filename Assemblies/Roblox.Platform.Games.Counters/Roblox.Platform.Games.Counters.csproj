@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.Games.Counters</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Platform.Counters">
+      <HintPath>..\..\full\Roblox.Platform.Counters.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Devices">
+      <HintPath>..\..\full\Roblox.Platform.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Assets">
+      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EphemeralCounters">
+      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.EventLog">
+      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Outfits">
+      <HintPath>..\..\full\Roblox.Platform.Outfits.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Avatar">
+      <HintPath>..\..\full\Roblox.Platform.Avatar.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.UniverseSettings">
+      <HintPath>..\..\full\Roblox.Platform.UniverseSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Collections">
+      <HintPath>..\..\full\Roblox.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Universes">
+      <HintPath>..\..\full\Roblox.Platform.Universes.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Currency.Client" />
+    <Reference Include="Roblox Server Class Library">
+      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Membership">
+      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.ApiClientBase">
+      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.AssetsCore">
+      <HintPath>..\..\full\Roblox.Platform.AssetsCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Core">
+      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.MembershipCore">
+      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Billing">
+      <HintPath>..\..\full\Roblox.Platform.Billing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+</Project>

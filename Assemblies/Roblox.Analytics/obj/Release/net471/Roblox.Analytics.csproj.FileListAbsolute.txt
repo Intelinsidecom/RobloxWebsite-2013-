@@ -1,0 +1,3 @@
+W:\--Roblox\Roblox.Analytics\obj\Release\net471\Roblox.Analytics.csproj.AssemblyReference.cache
+W:\--Roblox\Roblox.Analytics\obj\Release\net471\Roblox.Analytics.GeneratedMSBuildEditorConfig.editorconfig
+W:\--Roblox\Roblox.Analytics\obj\Release\net471\Roblox.Analytics.csproj.CoreCompileInputs.cache

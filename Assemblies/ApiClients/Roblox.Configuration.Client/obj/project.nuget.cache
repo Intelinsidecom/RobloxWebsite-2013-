@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DwQNeAxDVKEsOerzEzOsPf9WWA16SYCQPkOETl2i69gJkz44WP0Sg28Q4+HlctGhxPPHyGfGrKhVKuTCM/cIhQ==",
+  "success": true,
+  "projectFilePath": "D:\\Roblox\\aaa\\Assemblies\\ApiClients\\Roblox.Configuration.Client\\Roblox.Configuration.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ErringPaladin10\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ErringPaladin10\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,56 @@
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace Roblox.Localization.Client;
+
+public interface ILocalizationClient
+{
+	GetLanguageFamilyByIdResponse GetLanguageFamilyById(int id);
+
+	Task<GetLanguageFamilyByIdResponse> GetLanguageFamilyByIdAsync(int id, CancellationToken cancellationToken);
+
+	GetLanguageFamilyByLanguageCodeResponse GetLanguageFamilyByLanguageCode(string languageCode);
+
+	Task<GetLanguageFamilyByLanguageCodeResponse> GetLanguageFamilyByLanguageCodeAsync(string languageCode, CancellationToken cancellationToken);
+
+	IEnumerable<SupportedLocale> GetAllSupportedLocales();
+
+	Task<IEnumerable<SupportedLocale>> GetAllSupportedLocalesAsync(CancellationToken cancellationToken);
+
+	GetSupportedLocaleByLocaleCodeResponse GetSupportedLocaleByLocaleCode(string code);
+
+	Task<GetSupportedLocaleByLocaleCodeResponse> GetSupportedLocaleByLocaleCodeAsync(string code, CancellationToken cancellationToken);
+
+	GetSupportedLocaleByIdResponse GetSupportedLocaleById(int id);
+
+	Task<GetSupportedLocaleByIdResponse> GetSupportedLocaleByIdAsync(int id, CancellationToken cancellationToken);
+
+	GetDefaultSupportedLocaleByLanguageCodeResponse GetDefaultSupportedLocaleByLanguageCode(string languageCode);
+
+	Task<GetDefaultSupportedLocaleByLanguageCodeResponse> GetDefaultSupportedLocaleByLanguageCodeAsync(string languageCode, CancellationToken cancellationToken);
+
+	GetSupportedLocalesByParentLanguageResponse GetSupportedLocalesByParentLanguage(string languageCode);
+
+	Task<GetSupportedLocalesByParentLanguageResponse> GetSupportedLocalesByParentLanguageAsync(string languageCode, CancellationToken cancellationToken);
+
+	int RecordDeviceReportedLocale(string rawDeviceReportedLocaleCode);
+
+	Task<int> RecordDeviceReportedLocaleAsync(string rawDeviceReportedLocaleCode, CancellationToken cancellationToken);
+
+	MapDeviceReportedLocaleToSupportedLocaleResult MapDeviceReportedLocaleToSupportedLocale(int supportedLocaleId, int deviceReportedLocaleId);
+
+	Task<MapDeviceReportedLocaleToSupportedLocaleResult> MapDeviceReportedLocaleToSupportedLocaleAsync(int supportedLocaleId, int deviceReportedLocaleId, CancellationToken cancellationToken);
+
+	MapDeviceReportedLocaleToLanguageFamilyResult MapDeviceReportedLocaleToLanguageFamily(int languageFamilyId, int deviceReportedLocaleId);
+
+	Task<MapDeviceReportedLocaleToLanguageFamilyResult> MapDeviceReportedLocaleToLanguageFamilyAsync(int languageFamilyId, int deviceReportedLocaleId, CancellationToken cancellationToken);
+
+	GetDeviceReportedLocaleByIdResponse GetDeviceReportedLocaleById(int id);
+
+	Task<GetDeviceReportedLocaleByIdResponse> GetDeviceReportedLocaleByIdAsync(int id, CancellationToken cancellationToken);
+
+	GetDeviceReportedLocaleByCodeResponse GetDeviceReportedLocaleByCode(string deviceReportedLocaleCode);
+
+	Task<GetDeviceReportedLocaleByCodeResponse> GetDeviceReportedLocaleByCodeAsync(string deviceReportedLocaleCode, CancellationToken cancellationToken);
+}

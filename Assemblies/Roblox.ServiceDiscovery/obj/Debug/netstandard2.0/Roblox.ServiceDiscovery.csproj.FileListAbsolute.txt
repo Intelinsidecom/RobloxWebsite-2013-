@@ -1,0 +1,4 @@
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\obj\Debug\netstandard2.0\Roblox.ServiceDiscovery.csproj.AssemblyReference.cache
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\obj\Debug\netstandard2.0\Roblox.ServiceDiscovery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\obj\Debug\netstandard2.0\Roblox.ServiceDiscovery.csproj.CoreCompileInputs.cache
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\obj\Debug\netstandard2.0\Roblox.ServiceDiscovery.sourcelink.json

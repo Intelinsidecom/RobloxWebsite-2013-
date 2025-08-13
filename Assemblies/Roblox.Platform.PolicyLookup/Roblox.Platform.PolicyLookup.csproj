@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.PolicyLookup</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.PolicyLookup" />
+    <Reference Include="Roblox.Platform.Demographics">
+      <HintPath>..\..\full\Roblox.Platform.Demographics.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Membership">
+      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Authentication">
+      <HintPath>..\..\full\Roblox.Platform.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.RequestContext">
+      <HintPath>..\..\full\Roblox.RequestContext.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Http.ServiceClient</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Http.Client">
+      <HintPath>..\..\full\Roblox.Http.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Http">
+      <HintPath>..\..\full\Roblox.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Pipeline">
+      <HintPath>..\..\full\Roblox.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.RequestContext">
+      <HintPath>..\..\full\Roblox.RequestContext.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Http.Client.Monitoring">
+      <HintPath>..\..\full\Roblox.Http.Client.Monitoring.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Sentinels">
+      <HintPath>..\..\full\Roblox.Sentinels.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
