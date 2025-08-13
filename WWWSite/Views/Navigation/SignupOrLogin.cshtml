@@ -1,0 +1,12 @@
+﻿<div id="header-login-container">
+    <div id="header-login-wrapper" class="iframe-login-signup" data-display-opened="">
+        <a id="header-signup" href="/Login/NewAge.aspx">@Resources.CommonUI.Features.Label_sSignUp</a>
+        <span id="header-or">@Resources.CommonUI.Features.Label_sOr</span>
+        <span id="login-span">
+            <a id="header-login" class="btn-control btn-control-large">@Resources.CommonUI.Features.Label_sLogin <span class="grey-arrow">▼</span></a>
+        </span>
+        <div id="iFrameLogin" style="display:none">
+            <iframe class="login-frame" src="/Login/iFrameLogin.aspx?loginRedirect=True&parentUrl=@HttpUtility.UrlEncode(HttpContext.Current.Request.Url.AbsoluteUri)" scrolling="no" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>

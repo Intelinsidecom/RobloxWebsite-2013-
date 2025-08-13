@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active Places" xml:space="preserve">
+    <value>Active Places</value>
+  </data>
+  <data name="BC Beta Features" xml:space="preserve">
+    <value>BC Beta Features</value>
+  </data>
+  <data name="BCInfo1" xml:space="preserve">
+    <value>Learn more about builders club and how we help</value>
+  </data>
+  <data name="BCInfo2" xml:space="preserve">
+    <value>keep kids safe</value>
+  </data>
+  <data name="Benefits" xml:space="preserve">
+    <value>Benefits</value>
+  </data>
+  <data name="Bonus Gear Item" xml:space="preserve">
+    <value>Bonus Gear Item</value>
+  </data>
+  <data name="BuildersClub" xml:space="preserve">
+    <value>Builders Club</value>
+  </data>
+  <data name="Buy Card" xml:space="preserve">
+    <value>Buy Card</value>
+  </data>
+  <data name="Buy ROBUX" xml:space="preserve">
+    <value>Buy ROBUX</value>
+  </data>
+  <data name="Buy ROBUX with" xml:space="preserve">
+    <value>Buy ROBUX with</value>
+  </data>
+  <data name="BuyBuildersClub" xml:space="preserve">
+    <value>Buy Builders Club</value>
+  </data>
+  <data name="Create Badges" xml:space="preserve">
+    <value>Create Badges</value>
+  </data>
+  <data name="Create Groups" xml:space="preserve">
+    <value>Create Groups</value>
+  </data>
+  <data name="Daily ROBUX" xml:space="preserve">
+    <value>Daily ROBUX</value>
+  </data>
+  <data name="For billing and payment questions" xml:space="preserve">
+    <value>For billing and payment questions</value>
+  </data>
+  <data name="Free Account" xml:space="preserve">
+    <value>Free Account</value>
+  </data>
+  <data name="Game Cards" xml:space="preserve">
+    <value>Game Cards</value>
+  </data>
+  <data name="generic image" xml:space="preserve">
+    <value>generic image</value>
+  </data>
+  <data name="Gift Cards" xml:space="preserve">
+    <value>Gift Cards</value>
+  </data>
+  <data name="Join Groups" xml:space="preserve">
+    <value>Join Groups</value>
+  </data>
+  <data name="Manipulation" xml:space="preserve">
+    <value>Please Upgrade Me!</value>
+  </data>
+  <data name="ManipulationDesc" xml:space="preserve">
+    <value>Fill out our fun, interactive form, and print it out or send it your friends and family!</value>
+  </data>
+  <data name="ManipulationQuestion" xml:space="preserve">
+    <value>Need Builders Club Now?</value>
+  </data>
+  <data name="ManipulationWarning" xml:space="preserve">
+    <value>Warning: "Please Upgrade Me!" may be very convincing.</value>
+  </data>
+  <data name="Mega Places" xml:space="preserve">
+    <value>Mega Places</value>
+  </data>
+  <data name="MembershipCancelDisclaimer" xml:space="preserve">
+    <value>To cancel the memberships for one or more other accounts, please contact customer service at info@Roblox.com. Please Note: You can cancel monthly recurring memberships any time before the renewal date. 6 and 12 month memberships cannot be canceled. Memberships are not refundable.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Other Accounts" xml:space="preserve">
+    <value>Other Accounts</value>
+  </data>
+  <data name="Outrageous" xml:space="preserve">
+    <value>Outrageous</value>
+  </data>
+  <data name="Paid Access Revenue" xml:space="preserve">
+    <value>Paid Access Revenue</value>
+  </data>
+  <data name="Parents" xml:space="preserve">
+    <value>Parents</value>
+  </data>
+  <data name="Personal Servers" xml:space="preserve">
+    <value>Personal Servers</value>
+  </data>
+  <data name="Redeem card" xml:space="preserve">
+    <value>Redeem card</value>
+  </data>
+  <data name="Regular" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="RobuxUsage" xml:space="preserve">
+    <value>Use ROBUX to buy virtual goods for your character - shirts, pants, hats, faces,
+            and even heads! You can also buy gear, like hammers, potions, jet boots, swords,
+            and BLOXI Cola.</value>
+  </data>
+  <data name="See Ads" xml:space="preserve">
+    <value>See Ads</value>
+  </data>
+  <data name="Sell Stuff" xml:space="preserve">
+    <value>Sell Stuff</value>
+  </data>
+  <data name="Signing Bonus" xml:space="preserve">
+    <value>Signing Bonus</value>
+  </data>
+  <data name="Terms &amp; Conditions" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
+  </data>
+  <data name="Trade System" xml:space="preserve">
+    <value>Trade System</value>
+  </data>
+  <data name="Turbo" xml:space="preserve">
+    <value>Turbo</value>
+  </data>
+  <data name="Virtual Hat" xml:space="preserve">
+    <value>Virtual Hat</value>
+  </data>
+  <data name="Where to Buy" xml:space="preserve">
+    <value>Where to Buy</value>
+  </data>
+  <data name="WindowsOnlyWarning1" xml:space="preserve">
+    <value>For more information, read our</value>
+  </data>
+  <data name="WindowsOnlyWarning2" xml:space="preserve">
+    <value>All items and gear are virtual.</value>
+  </data>
+  <data name="WindowsOnlyWarning3" xml:space="preserve">
+    <value>All Sales are final. Please see our</value>
+  </data>
+  <data name="WindowsOnlyWarning4" xml:space="preserve">
+    <value>for more information.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+</root>

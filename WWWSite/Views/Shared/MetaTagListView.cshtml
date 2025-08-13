@@ -1,0 +1,6 @@
+﻿@model MetaTagListViewModel
+@foreach (KeyValuePair<string, string> metaTag in Model.GetMetaTags())
+{
+    @Html.Raw(String.Format("<meta name=\"{0}\" content=\"{1}\" />\n", metaTag.Key, metaTag.Value));
+}
+@Html.Partial("~/Views/Shared/_StructuredPageView.cshtml", Model.StructuredDataTags, ViewData)

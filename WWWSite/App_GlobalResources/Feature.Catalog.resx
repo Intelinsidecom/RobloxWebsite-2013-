@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action.BuyRobux" xml:space="preserve">
+	<value>Buy Robux</value>
+  </data>
+  <data name="Action.Dialog.AddGearOk" xml:space="preserve">
+	<value>OK</value>
+  </data>
+  <data name="Action.Filter.Apply" xml:space="preserve">
+	<value>Apply</value>
+  </data>
+  <data name="Action.Filter.Cancel" xml:space="preserve">
+	<value>Cancel</value>
+  </data>
+  <data name="Action.Go" xml:space="preserve">
+	<value>Go</value>
+  </data>
+  <data name="Action.ViewAllItems" xml:space="preserve">
+	<value>View All Items</value>
+  </data>
+  <data name="Action.ViewFeaturedItems" xml:space="preserve">
+	<value>View Featured Items</value>
+  </data>
+  <data name="Description.Dialog.AddGearBody" xml:space="preserve">
+	<value>To add gear to your game, find an item in the catalog and click the Add to Game button. The item will automatically be allowed in game, and you'll receive a commission on every copy sold from your game page. (You can only add gear that's for sale.)</value>
+  </data>
+  <data name="Heading.AvatarShop" xml:space="preserve">
+	<value>Avatar Shop</value>
+  </data>
+  <data name="Heading.CatalogCategory" xml:space="preserve">
+	<value>Category</value>
+  </data>
+  <data name="Heading.CatalogPage" xml:space="preserve">
+	<value>Catalog</value>
+  </data>
+  <data name="Label.AllCommunityCreations" xml:space="preserve">
+	<value>All Creations</value>
+  </data>
+  <data name="Label.AllFeaturedItems" xml:space="preserve">
+	<value>View All Featured Items</value>
+  </data>
+  <data name="Label.AllGenres" xml:space="preserve">
+	<value>All Genres</value>
+  </data>
+  <data name="Label.AllPremiumItems" xml:space="preserve">
+	<value>All Premium Items</value>
+  </data>
+  <data name="Label.Amazon" xml:space="preserve">
+	<value>Amazon</value>
+  </data>
+  <data name="Label.BreadCrumb.Free" xml:space="preserve">
+	<value>Free</value>
+  </data>
+  <data name="Label.BreadCrumb.GenreOrText" xml:space="preserve">
+	<value>{genreName1} or {genreName2}</value>
+  </data>
+  <data name="Label.BreadCrumb.GenreSelectedText" xml:space="preserve">
+	<value>Genre: {genreCount} selected</value>
+  </data>
+  <data name="Label.BreadCrumb.Group" xml:space="preserve">
+	<value>Group:</value>
+  </data>
+  <data name="Label.BreadCrumb.PriceAbove" xml:space="preserve">
+	<value>{price} and above</value>
+  </data>
+  <data name="Label.BreadCrumb.PriceBelow" xml:space="preserve">
+	<value>{price} and below</value>
+  </data>
+  <data name="Label.BreadCrumb.ResultsCount" xml:space="preserve">
+	<value>{startNumber} - {endNumber} of {resultsCount} Results</value>
+  </data>
+  <data name="Label.Bundle" xml:space="preserve">
+	<value>Bundle</value>
+  </data>
+  <data name="Label.Bundles" xml:space="preserve">
+	<value>Bundles</value>
+  </data>
+  <data name="Label.ByCreatorLink" xml:space="preserve">
+	<value>By {linkStart}{creator}{linkEnd}</value>
+  </data>
+  <data name="Label.Card.CreatorBy" xml:space="preserve">
+	<value>By</value>
+  </data>
+  <data name="Label.Card.PriceWas" xml:space="preserve">
+	<value>Was</value>
+  </data>
+  <data name="Label.Card.Remaining" xml:space="preserve">
+	<value>Remaining:</value>
+  </data>
+  <data name="Label.CategoryAttributes" xml:space="preserve">
+	<value>Attributes</value>
+  </data>
+  <data name="Label.CategoryType" xml:space="preserve">
+	<value>Type</value>
+  </data>
+  <data name="Label.CommunityCreations" xml:space="preserve">
+	<value> Community Creations</value>
+  </data>
+  <data name="Label.Dialog.AddGearTitle" xml:space="preserve">
+	<value>Add Gear to Your Game</value>
+  </data>
+  <data name="Label.Emotes" xml:space="preserve">
+	<value>Emotes</value>
+  </data>
+  <data name="Label.Favorites" xml:space="preserve">
+	<value>Favorites</value>
+  </data>
+  <data name="Label.FeaturedBundles" xml:space="preserve">
+	<value>Featured Bundles</value>
+  </data>
+  <data name="Label.FeaturedEmotes" xml:space="preserve">
+	<value>Featured Emotes</value>
+  </data>
+  <data name="Label.FeaturedItemsOnRoblox" xml:space="preserve">
+	<value>Featured Items on {spanStart}{roblox}{spanEnd}</value>
+  </data>
+  <data name="Label.Filter.ByTime" xml:space="preserve">
+	<value>By Time</value>
+  </data>
+  <data name="Label.Filter.Category" xml:space="preserve">
+	<value>Category</value>
+  </data>
+  <data name="Label.Filter.Creator" xml:space="preserve">
+	<value>Creator</value>
+  </data>
+  <data name="Label.Filter.Filter" xml:space="preserve">
+	<value>Filter</value>
+  </data>
+  <data name="Label.Filter.Filters" xml:space="preserve">
+	<value>Filters</value>
+  </data>
+  <data name="Label.Filter.Genre" xml:space="preserve">
+	<value>Genre</value>
+  </data>
+  <data name="Label.Filter.Hide" xml:space="preserve">
+	<value>Hide</value>
+  </data>
+  <data name="Label.Filter.Price" xml:space="preserve">
+	<value>Price</value>
+  </data>
+  <data name="Label.Filter.PriceMax" xml:space="preserve">
+	<value>Max</value>
+  </data>
+  <data name="Label.Filter.PriceMin" xml:space="preserve">
+	<value>Min</value>
+  </data>
+  <data name="Label.Filter.PriceTo" xml:space="preserve">
+	<value>To</value>
+  </data>
+  <data name="Label.Filter.Show" xml:space="preserve">
+	<value>Show</value>
+  </data>
+  <data name="Label.Filter.Sorting" xml:space="preserve">
+	<value>Sorting</value>
+  </data>
+  <data name="Label.Filter.UnavailableItems" xml:space="preserve">
+	<value>Unavailable Items</value>
+  </data>
+  <data name="Label.GoogleOnly" xml:space="preserve">
+	<value>Google Only</value>
+  </data>
+  <data name="Label.Ios" xml:space="preserve">
+	<value>IOS</value>
+  </data>
+  <data name="Label.Mobile" xml:space="preserve">
+	<value>Mobile</value>
+  </data>
+  <data name="Label.New" xml:space="preserve">
+	<value>New</value>
+  </data>
+  <data name="Label.Premium" xml:space="preserve">
+	<value>Premium</value>
+  </data>
+  <data name="Label.Recommended" xml:space="preserve">
+	<value>Recommended</value>
+  </data>
+  <data name="Label.RecommendedItemsForYou" xml:space="preserve">
+	<value>Recommended Items for You</value>
+  </data>
+  <data name="Label.Rthro" xml:space="preserve">
+	<value>Rthro</value>
+  </data>
+  <data name="Label.Sale" xml:space="preserve">
+	<value>Sale</value>
+  </data>
+  <data name="Label.SearchField" xml:space="preserve">
+	<value>Search</value>
+  </data>
+  <data name="Label.SeeAll" xml:space="preserve">
+	<value>See All</value>
+  </data>
+  <data name="Label.Username" xml:space="preserve">
+	<value>Username</value>
+  </data>
+  <data name="Label.Xbox" xml:space="preserve">
+	<value>Xbox</value>
+  </data>
+  <data name="LabelAccessories" xml:space="preserve">
+	<value>Accessories</value>
+  </data>
+  <data name="LabelAccessoryAll" xml:space="preserve">
+	<value>All Accessories</value>
+  </data>
+  <data name="LabelAccessoryBack" xml:space="preserve">
+	<value>Back</value>
+  </data>
+  <data name="LabelAccessoryFace" xml:space="preserve">
+	<value>Face</value>
+  </data>
+  <data name="LabelAccessoryFront" xml:space="preserve">
+	<value>Front</value>
+  </data>
+  <data name="LabelAccessoryHair" xml:space="preserve">
+	<value>Hair</value>
+  </data>
+  <data name="LabelAccessoryHats" xml:space="preserve">
+	<value>Hats</value>
+  </data>
+  <data name="LabelAccessoryNeck" xml:space="preserve">
+	<value>Neck</value>
+  </data>
+  <data name="LabelAccessoryShoulder" xml:space="preserve">
+	<value>Shoulder</value>
+  </data>
+  <data name="LabelAccessoryWaist" xml:space="preserve">
+	<value>Waist</value>
+  </data>
+  <data name="LabelAll" xml:space="preserve">
+	<value>All</value>
+  </data>
+  <data name="LabelAllAvatarAnimations" xml:space="preserve">
+	<value>All Animations</value>
+  </data>
+  <data name="LabelAllBodyParts" xml:space="preserve">
+	<value>All Body Parts</value>
+  </data>
+  <data name="LabelAllCategories" xml:space="preserve">
+	<value>All Categories</value>
+  </data>
+  <data name="LabelAllClothing" xml:space="preserve">
+	<value>All Clothing</value>
+  </data>
+  <data name="LabelAllCollectibles" xml:space="preserve">
+	<value>All Collectibles</value>
+  </data>
+  <data name="LabelAllCreators" xml:space="preserve">
+	<value>All Creators</value>
+  </data>
+  <data name="LabelAllCurrency" xml:space="preserve">
+	<value>All Currency</value>
+  </data>
+  <data name="LabelAllFeatured" xml:space="preserve">
+	<value>All Featured Items</value>
+  </data>
+  <data name="LabelAllTime" xml:space="preserve">
+	<value>All Time</value>
+  </data>
+  <data name="LabelAnimations" xml:space="preserve">
+	<value>Animations</value>
+  </data>
+  <data name="LabelAnyPrice" xml:space="preserve">
+	<value>Any Price</value>
+  </data>
+  <data name="LabelAvatarAnimations" xml:space="preserve">
+	<value>Avatar Animations</value>
+  </data>
+  <data name="LabelBestselling" xml:space="preserve">
+	<value>Bestselling</value>
+  </data>
+  <data name="LabelBodyParts" xml:space="preserve">
+	<value>Body Parts</value>
+  </data>
+  <data name="LabelClothing" xml:space="preserve">
+	<value>Clothing</value>
+  </data>
+  <data name="LabelCollectibleAccessories" xml:space="preserve">
+	<value>Collectible Accessories</value>
+  </data>
+  <data name="LabelCollectibleFaces" xml:space="preserve">
+	<value>Collectible Faces</value>
+  </data>
+  <data name="LabelCollectibleGear" xml:space="preserve">
+	<value>Collectible Gear</value>
+  </data>
+  <data name="LabelCollectibles" xml:space="preserve">
+	<value>Collectibles</value>
+  </data>
+  <data name="LabelFaces" xml:space="preserve">
+	<value>Faces</value>
+  </data>
+  <data name="LabelFeatured" xml:space="preserve">
+	<value>Featured</value>
+  </data>
+  <data name="LabelFeaturedAccesories" xml:space="preserve">
+	<value>Featured Accessories</value>
+  </data>
+  <data name="LabelFeaturedAnimations" xml:space="preserve">
+	<value>Featured Animations</value>
+  </data>
+  <data name="LabelFeaturedFaces" xml:space="preserve">
+	<value>Featured Faces</value>
+  </data>
+  <data name="LabelFeaturedGear" xml:space="preserve">
+	<value>Featured Gear</value>
+  </data>
+  <data name="LabelFeaturedPackages" xml:space="preserve">
+	<value>Featured Packages</value>
+  </data>
+  <data name="LabelFree" xml:space="preserve">
+	<value>Free</value>
+  </data>
+  <data name="LabelGear" xml:space="preserve">
+	<value>Gear</value>
+  </data>
+  <data name="LabelGearAll" xml:space="preserve">
+	<value>All Gear</value>
+  </data>
+  <data name="LabelGearBuilding" xml:space="preserve">
+	<value>Building</value>
+  </data>
+  <data name="LabelGearExplosive" xml:space="preserve">
+	<value>Explosive</value>
+  </data>
+  <data name="LabelGearMelee" xml:space="preserve">
+	<value>Melee</value>
+  </data>
+  <data name="LabelGearMusical" xml:space="preserve">
+	<value>Musical</value>
+  </data>
+  <data name="LabelGearNavigation" xml:space="preserve">
+	<value>Navigation</value>
+  </data>
+  <data name="LabelGearPersonalTransport" xml:space="preserve">
+	<value>Transport</value>
+  </data>
+  <data name="LabelGearPowerUps" xml:space="preserve">
+	<value>Power Up</value>
+  </data>
+  <data name="LabelGearRanged" xml:space="preserve">
+	<value>Ranged</value>
+  </data>
+  <data name="LabelGearSocial" xml:space="preserve">
+	<value>Social</value>
+  </data>
+  <data name="LabelGenreAdventure" xml:space="preserve">
+	<value>Adventure</value>
+  </data>
+  <data name="LabelGenreAll" xml:space="preserve">
+	<value>All Genres</value>
+  </data>
+  <data name="LabelGenreBuilding" xml:space="preserve">
+	<value>Building</value>
+  </data>
+  <data name="LabelGenreComedy" xml:space="preserve">
+	<value>Comedy</value>
+  </data>
+  <data name="LabelGenreFantasy" xml:space="preserve">
+	<value>Medieval</value>
+  </data>
+  <data name="LabelGenreFighting" xml:space="preserve">
+	<value>Fighting</value>
+  </data>
+  <data name="LabelGenreFPS" xml:space="preserve">
+	<value>FPS</value>
+  </data>
+  <data name="LabelGenreFunny" xml:space="preserve">
+	<value>Comedy</value>
+  </data>
+  <data name="LabelGenreHorror" xml:space="preserve">
+	<value>Horror</value>
+  </data>
+  <data name="LabelGenreMedieval" xml:space="preserve">
+	<value>Medieval</value>
+  </data>
+  <data name="LabelGenreMilitary" xml:space="preserve">
+	<value>Military</value>
+  </data>
+  <data name="LabelGenreNaval" xml:space="preserve">
+	<value>Naval</value>
+  </data>
+  <data name="LabelGenreNinja" xml:space="preserve">
+	<value>Fighting</value>
+  </data>
+  <data name="LabelGenrePirate" xml:space="preserve">
+	<value>Naval</value>
+  </data>
+  <data name="LabelGenreRPG" xml:space="preserve">
+	<value>RPG</value>
+  </data>
+  <data name="LabelGenreScary" xml:space="preserve">
+	<value>Horror</value>
+  </data>
+  <data name="LabelGenreSciFi" xml:space="preserve">
+	<value>Sci-Fi</value>
+  </data>
+  <data name="LabelGenreSports" xml:space="preserve">
+	<value>Sports</value>
+  </data>
+  <data name="LabelGenreTownAndCity" xml:space="preserve">
+	<value>Town and City</value>
+  </data>
+  <data name="LabelGenreTutorial" xml:space="preserve">
+	<value>Building</value>
+  </data>
+  <data name="LabelGenreWar" xml:space="preserve">
+	<value>Military</value>
+  </data>
+  <data name="LabelGenreWestern" xml:space="preserve">
+	<value>Western</value>
+  </data>
+  <data name="LabelGenreWildWest" xml:space="preserve">
+	<value>Western</value>
+  </data>
+  <data name="LabelHeads" xml:space="preserve">
+	<value>Heads</value>
+  </data>
+  <data name="LabelMostFavorited" xml:space="preserve">
+	<value>Most Favorited</value>
+  </data>
+  <data name="LabelNoResellers" xml:space="preserve">
+	<value>No Resellers</value>
+  </data>
+  <data name="LabelOffSale" xml:space="preserve">
+	<value>Offsale</value>
+  </data>
+  <data name="LabelPackages" xml:space="preserve">
+	<value>Packages</value>
+  </data>
+  <data name="LabelPants" xml:space="preserve">
+	<value>Pants</value>
+  </data>
+  <data name="LabelPastDay" xml:space="preserve">
+	<value>Past Day</value>
+  </data>
+  <data name="LabelPastWeek" xml:space="preserve">
+	<value>Past Week</value>
+  </data>
+  <data name="LabelPriceHighFirst" xml:space="preserve">
+	<value>Price (High to Low)</value>
+  </data>
+  <data name="LabelPriceLowFirst" xml:space="preserve">
+	<value>Price (Low to High)</value>
+  </data>
+  <data name="LabelRecentlyUpdated" xml:space="preserve">
+	<value>Recently Updated</value>
+  </data>
+  <data name="LabelRelevance" xml:space="preserve">
+	<value>Relevance</value>
+  </data>
+  <data name="LabelRoblox" xml:space="preserve">
+	<value>Roblox</value>
+  </data>
+  <data name="LabelRobux" xml:space="preserve">
+	<value>Robux</value>
+  </data>
+  <data name="LabelShirts" xml:space="preserve">
+	<value>Shirts</value>
+  </data>
+  <data name="LabelTShirts" xml:space="preserve">
+	<value>T-Shirts</value>
+  </data>
+  <data name="Response.Error.Filter" xml:space="preserve">
+	<value>Errors exist in Filter tab</value>
+  </data>
+  <data name="Response.GenericError" xml:space="preserve">
+	<value>An error occurred. Please try again later.</value>
+  </data>
+  <data name="Response.NoItemsFound" xml:space="preserve">
+	<value>No items found.</value>
+  </data>
+  <data name="Response.NoSaleItemsFromSearch" xml:space="preserve">
+	<value>Your search did not find items for sale. Unavailable items displayed below.</value>
+  </data>
+  <data name="Response.PlacedOnSaleFailure" xml:space="preserve">
+	<value>Failed to place on sale</value>
+  </data>
+  <data name="Response.PlacedOnSaleSuccess" xml:space="preserve">
+	<value>Successfully placed on sale</value>
+  </data>
+  <data name="Response.TakenOffSaleFailure" xml:space="preserve">
+	<value>Failed to take off sale</value>
+  </data>
+  <data name="Response.TakenOffSaleSuccess" xml:space="preserve">
+	<value>Successfully taken off sale</value>
+  </data>
+  <data name="Response.TemporarilyUnavailable" xml:space="preserve">
+	<value>Catalog temporarily unavailable. Please try again later.</value>
+  </data>
+  <data name="Response.Throttled" xml:space="preserve">
+	<value>You're going too fast! Try again in a minute."</value>
+  </data>
+</root>

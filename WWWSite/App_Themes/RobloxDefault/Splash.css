@@ -1,0 +1,147 @@
+﻿#SplashContainer
+{
+}
+
+#SplashContainer h2
+{
+	color: #333333;
+	margin: 0 0 0 0;
+}
+
+#SplashContainer h3
+{
+	color: #333333;
+	letter-spacing: normal;
+	margin: 5px 0 5px 0;
+}
+
+#SplashContainer #SignInPane
+{
+	width: 150px;
+	float: left;
+}
+
+#SplashContainer #Figure
+{
+	text-align: center;
+	margin-top: 60px;
+}
+
+#SplashContainer #RobloxAtAGlance
+{
+	background-color: #eeeeee;
+	border: solid 1px #000000;
+	float: right;
+	padding: 10px 10px 10px 10px;
+	width: 715px;
+}
+
+#SplashContainer #RobloxAtAGlance #ThingsToDo
+{
+	color: #666666;
+	float: left;
+	list-style: none;
+	margin: 0 0 0 0;
+	width: 292px;
+}
+
+#SplashContainer #RobloxAtAGlance #ThingsToDo h3
+{
+	margin: 5px 0 5px 0;
+}
+
+#SplashContainer #RobloxAtAGlance #ThingsToDo #Point1
+{
+	background-image: url(../../images/bullet1.png);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	margin: 10px 0 20px 0;
+	padding: 0 0 0 55px;
+}
+
+#SplashContainer #RobloxAtAGlance #ThingsToDo #Point2
+{
+	background-image: url(../../images/bullet2.png);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	margin: 10px 0 20px 0;
+	padding: 0 0 0 55px;
+}
+
+#SplashContainer #RobloxAtAGlance #ThingsToDo #Point3
+{
+	background-image: url(../../images/bullet3.png);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	margin: 10px 0 10px 0;
+	padding: 0 0 0 55px;
+}
+
+#SplashContainer #RobloxAtAGlance #Showcase
+{
+	float: right;
+	margin: 15px 0 0 0;
+	width: 400px;
+}
+
+#SplashContainer #RobloxAtAGlance #Install
+{
+	margin: 5px 0 0 0;
+	width: 715px;
+}
+
+#SplashContainer #RobloxAtAGlance #Install #CompatibilityNote
+{
+	color: #666666;
+	float: left;
+	font: normal 9px/normal Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+	width: 310px;
+}
+
+#SplashContainer #RobloxAtAGlance #Install #DownloadAndPlay
+{
+	float: right;
+	width: 400px;
+}
+
+#SplashContainer #UserPlacesPane
+{
+	border: solid 1px #000000;
+	clear: both;
+	margin: 15px 0 0 0;
+}
+
+#SplashContainer #UserPlacesPane #UserPlaces_Header
+{
+	background-color: #bbbbbb;
+	border-right: solid 1px #000000;
+	padding: 10px 10px 10px 10px;
+	width: 144px;
+}
+
+#SplashContainer #UserPlacesPane #UserPlaces_Header h3
+{
+	line-height: 1em;
+	padding: 0 0 0 0;
+}
+
+#SplashContainer #UserPlacesPane #UserPlaces_Header p
+{
+	letter-spacing: 1px;
+	line-height: 1em;
+	padding: 0 0 0 0;
+}
+
+#SplashContainer #UserPlaces_Content
+{
+	float: right;
+	padding: 7px 5px 5px 5px;
+}
+
+#SplashContainer #UserPlaces_Content .UserPlace
+{
+	height: 70px;
+	margin: 10px 10px 10px 10px;
+	width: 120px;
+}

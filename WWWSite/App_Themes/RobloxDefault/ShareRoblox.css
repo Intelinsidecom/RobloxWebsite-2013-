@@ -1,0 +1,118 @@
+﻿#InviteAFriendContainer
+{
+	padding: 10px 10px 10px 10px;
+}
+
+#InviteAFriendContainer h3
+{
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+	text-align: left;
+	width: 700px;
+}
+
+#InviteAFriendContainer #Exposition
+{
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+	width: 700px;
+}
+
+#InviteAFriendContainer #Buttons
+{
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	width: 700px;
+}
+
+#InviteAFriendContainer .Button
+{
+	border: solid 1px #000000;
+	color: #000000;
+	float: right;
+	font-family: Verdana, Sans-Serif;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 10px;
+	text-decoration: none;
+}
+
+#InviteAFriendContainer .MultilineTextBox
+{
+	border-color: Gray;
+	border-style: dashed;
+	font-family: Arial, Sans-Serif;
+	line-height: 1.5em;
+	padding: 5px 5px 5px 5px;
+	scrollbar-base-color: Gray;
+	width: 92%;
+}
+
+#InviteAFriendContainer .TextBox
+{
+	border-color: Gray;
+	border-style: dashed;
+	font-family: Arial, Sans-Serif;
+	padding: 5px 5px 5px 5px;
+	width: 92%;
+}
+
+#InviteAFriendContainer .Label
+{
+	font-weight: bold;
+}
+
+#InviteAFriendContainer #InvitationElements
+{
+	border: solid 1px #000000;
+	margin: 0 auto;
+	padding: 5px 5px 5px 5px;
+	width: 688px;
+}
+
+#InviteAFriendContainer #Name,
+#InviteAFriendContainer #Recipients,
+#InviteAFriendContainer #Message
+{
+	margin: 15px 0 0 0;
+}
+
+#InviteAFriendContainer .FormLabel
+{
+	float: left;
+	width: 94px;
+}
+
+#InviteAFriendContainer .FormField
+{
+	float: left;
+	width: 317px;
+}
+
+#InviteAFriendContainer .FormNotes
+{
+	float: right;
+	font-family: Verdana;
+	font-size: xx-small;
+	width: 277px;
+}
+
+#InviteAFriendContainer #Confirmation h3
+{
+	margin: 0 auto;
+	text-align: left;
+	width: 400px;
+}
+
+#InviteAFriendContainer #Confirmation #Message
+{
+	border: solid 1px #000000;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	width: 380px;
+}
+
+#InviteAFriendContainer #Confirmation #Buttons
+{
+	margin: 0 auto;
+	width: 400px;
+}

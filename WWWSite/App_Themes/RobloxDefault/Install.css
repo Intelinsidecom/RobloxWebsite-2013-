@@ -1,0 +1,12 @@
+﻿#AlreadyInstalled
+{
+	display: none; 
+	font-size: x-large; 
+	color: Red;
+	margin: 44px 44px 44px 44px;
+}
+
+#AlreadyInstalled a
+{
+	text-decoration: underline;
+}

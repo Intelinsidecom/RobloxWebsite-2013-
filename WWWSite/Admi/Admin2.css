@@ -1,0 +1,353 @@
+﻿#master_container a:link {
+	text-decoration:underline;
+}
+
+/* ============= Moderation Content Panels ============ */
+
+.RBXPanel {
+	border: #D25532 solid;
+}
+
+.PanelHeader {
+	line-height: 10px; /* Vertical centering hack */
+	padding: 12px;
+	border-bottom: #0000009b solid 2px; /* optionally #757575 */
+	font-size: 22px;
+	font-family: Calibri;
+	font-weight:bold;
+	color: #222;
+	vertical-align: middle;
+	
+	background-color: #C8A53C;
+}
+.PanelHeader .caption {
+	padding-left: 20px;
+}
+
+.PanelHeader .rightCaption {
+	float: right;
+	padding-left: 16px;
+    font-size: 14px
+}
+
+.PanelBody .text {
+	padding: 6px;
+}
+
+.PanelFooter {
+	padding: 4px;
+	padding-left: 8px;
+	vertical-align: middle;
+	
+	background-color: #D75537;
+}
+
+/* ============= Moderation Components ============ */
+
+.ModerationCard {
+	color: #222;
+	padding-left: 4px;
+}
+
+.ModerationCard a:link, .ModerationCard a:visited, .ModerationCard a:active {
+    color:#854200;
+}
+
+.ModerationCard th {
+	color: #916912;
+	background-color: #FACD4B;
+	text-align: left;
+}
+
+.ModerationInfo td {
+	vertical-align: top;
+}
+
+.ModerationInfo .RBXPanel {
+	margin: 8px 2px;
+}
+
+.ExpandLinkButton {
+	text-decoration: none !important;
+	font-weight: bold;
+}
+
+.PunishmentInfoPanel {
+	background-color: #CCCCCC;
+}
+
+/* ============= ROBLOX Content Panels ============ */
+
+.adminStyle .panel_1col {
+    width: 314px;
+    display: block;
+    margin: 0 0 9px 0;
+}
+/* fixed height for home panels */
+.adminStyle .panel_home_height {
+    height: 296px;
+}
+/* space between left-floating panels */
+.adminStyle .panel_right_margin {
+    margin-right: 9px;
+}
+
+.adminStyle .panel_2col {
+    width: 637px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.adminStyle .panel_3col {
+    width: 960px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.adminStyle .panel_3col_with_ad {
+    width: 805px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.adminStyle .panel_header {
+    display: block;
+    height: 28px;
+}
+
+.adminStyle .rollover_header {
+    display: block;
+    height: 10px;
+}
+
+.adminStyle .panel_header_left {
+    height: 28px;
+    background: url(../graphics/panel-corner-top-left.png) no-repeat top left;
+}
+
+.adminStyle .panel_header_left2 {
+    height: 28px;
+    background: url(../graphics/panel-corner-top-left2.png) no-repeat top left;
+}
+
+.adminStyle .panel_header_left_white {
+    height: 28px;
+    background: url(../graphics/panel-corner-top-left-white.gif) no-repeat top left;
+}
+
+.adminStyle .rollover_header_left {
+    height: 10px;
+    background: url(../graphics/rollover-corner-top-left.png) no-repeat top left;
+}
+
+.adminStyle .panel_header_right {
+    height: 28px;
+    background: url(../graphics/panel-corner-top-right.png) no-repeat top right;
+}
+
+.adminStyle .panel_header_right2 {
+    height: 28px;
+    background: url(../graphics/panel-corner-top-right2.png) no-repeat top right;
+}
+
+.adminStyle .panel_header_right_white {
+    height: 28px;
+    background: url(../graphics/panel-corner-top-right-white.gif) no-repeat top right;
+}
+
+.adminStyle .rollover_header_right {
+    height: 10px;
+    background: url(../graphics/rollover-corner-top-right.png) no-repeat top right;
+}
+
+.adminStyle .panel_header_content {
+    display: block;
+    width: auto;
+    height: 28px;
+    margin: 0 10px 0 10px;
+    background: url(../graphics/panel-header-bg.png) repeat-x;
+}
+
+.adminStyle .panel_header_content2 {
+    display: block;
+    width: auto;
+    height: 28px;
+    margin: 0 10px 0 10px;
+    background: url(../graphics/panel-header-bg2.png) repeat-x;
+}
+
+.adminStyle .panel_header_content_white {
+    display: block;
+    width: auto;
+    height: 28px;
+    margin: 0 10px 0 10px;
+    background: url(../graphics/panel-header-bg-white.gif) repeat-x;
+}
+
+.adminStyle .rollover_header_content {
+    display: block;
+    width: auto;
+    height: 10px;
+    margin: 0 10px 0 10px;
+    background: url(../graphics/panel-header-bg-white.gif) repeat-x;
+}
+
+.adminStyle .panel_header_content p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    padding: 8px 0 0 10px;
+}
+
+.adminStyle .panel_header_content2 p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    padding: 8px 0 0 10px;
+}
+
+.adminStyle .header_online_indicator {
+    margin: 6px 0 0 10px;
+}
+
+.adminStyle .header_online_indicator_text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    padding: 8px 0 0 5px;
+}
+
+.adminStyle .panel_header_rightside {
+    float: right;
+    padding: 8px 10px 0 0;
+}
+
+    .adminStyle .panel_header_rightside a:link, .adminStyle .panel_header_rightside a:visited, .adminStyle .panel_header_rightside a:active {
+        color: #ff9;
+        font-size: 10px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .adminStyle .panel_header_rightside a:hover {
+        text-decoration: underline;
+    }
+
+    .adminStyle .panel_header_rightside img {
+        padding: 0 0 1px 7px;
+        vertical-align: middle;
+    }
+
+.adminStyle .panel_content_small {
+    background: #fff;
+    font-size: 9px;
+    border-left: #2a2a2a 2px solid;
+    border-right: #2a2a2a 2px solid;
+}
+
+.adminStyle .panel_content_small2 {
+    background: #000;
+    color: #fff;
+    font-size: 9px;
+    border-left: #2a2a2a 2px solid;
+    border-right: #2a2a2a 2px solid;
+}
+
+.adminStyle .panel_content {
+    background: #fff;
+    border-left: #2a2a2a 2px solid;
+    border-right: #2a2a2a 2px solid;
+}
+
+.adminStyle .panel_content2 {
+    color: #fff;
+    background: #000;
+    border-left: #2a2a2a 2px solid;
+    border-right: #2a2a2a 2px solid;
+}
+
+.adminStyle .panel_content_body {
+    padding: 15px 20px 0 20px;
+}
+
+.adminStyle .rollover_content_body {
+    padding: 0 20px 0 20px;
+}
+
+.adminStyle .panel_content_bottom_margin {
+    padding-bottom: 25px;
+}
+
+.adminStyle .panel_content_bottom_margin10 {
+    padding-bottom: 10px;
+}
+
+.adminStyle .panel_content_body p.top {
+    padding: 0 0 10px 0;
+}
+
+.adminStyle .panel_content_body li {
+    margin-left: 30px;
+}
+
+.adminStyle .panel_content_body_3col {
+    padding: 15px 60px 25px 60px;
+}
+
+.adminStyle .panel_content a:link, .adminStyle .panel_content a:visited, .adminStyle .panel_content a:active {
+    color: #1e52d5;
+    text-decoration: none;
+}
+
+.adminStyle .panel_content a:hover {
+    text-decoration: underline;
+}
+
+.adminStyle .panel_footer {
+    display: block;
+}
+
+.adminStyle .panel_footer_left {
+    height: 10px;
+    background: url(../graphics/panel-corner-bottom-left.png) no-repeat left;
+}
+
+.adminStyle .panel_footer_left2 {
+    height: 10px;
+    background: url(../graphics/panel-corner-bottom-left2.png) no-repeat left;
+}
+
+.adminStyle .panel_footer_right {
+    height: 10px;
+    background: url(../graphics/panel-corner-bottom-right.png) no-repeat right;
+}
+
+.adminStyle .panel_footer_right2 {
+    height: 10px;
+    background: url(../graphics/panel-corner-bottom-right2.png) no-repeat right;
+}
+
+.adminStyle .panel_footer_main {
+    height: 8px;
+    margin: 0 10px 0 10px;
+    background: #fff;
+    border-bottom: #2a2a2a 2px solid;
+}
+
+.adminStyle .panel_footer_main2 {
+    height: 8px;
+    margin: 0 10px 0 10px;
+    background: #000;
+    border-bottom: #2a2a2a 2px solid;
+}
+
+.adminStyle *html .panel_footer_main {
+    margin: -4px 10px 0 10px;
+}
+
+.adminStyle *html .panel_footer_main2 {
+    margin: -4px 10px 0 10px;
+}

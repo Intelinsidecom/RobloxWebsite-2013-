@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action.Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="Action.AddFriend" xml:space="preserve">
+    <value>Add Friend</value>
+  </data>
+  <data name="Action.BlockUser" xml:space="preserve">
+    <value>Block User</value>
+  </data>
+  <data name="Action.CancelBlockUser" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Action.Chat" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="Action.Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Action.ConfirmBlockUser" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="Action.ConfirmUnblockUser" xml:space="preserve">
+    <value>Unblock</value>
+  </data>
+  <data name="Action.Favorites" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="Action.Follow" xml:space="preserve">
+    <value>Follow</value>
+  </data>
+  <data name="Action.GridView" xml:space="preserve">
+    <value>Grid View</value>
+  </data>
+  <data name="Action.ImpersonateUser" xml:space="preserve">
+    <value>Impersonate User</value>
+  </data>
+  <data name="Action.Inventory" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="Action.JoinGame" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="Action.Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Action.Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="Action.Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Action.SeeAll" xml:space="preserve">
+    <value>See All</value>
+  </data>
+  <data name="Action.SeeLess" xml:space="preserve">
+    <value>See Less</value>
+  </data>
+  <data name="Action.SeeMore" xml:space="preserve">
+    <value>See More</value>
+  </data>
+  <data name="Action.SlideshowView" xml:space="preserve">
+    <value>Slideshow View</value>
+  </data>
+  <data name="Action.Trade" xml:space="preserve">
+    <value>Trade</value>
+  </data>
+  <data name="Action.TradeItems" xml:space="preserve">
+    <value>Trade Items</value>
+  </data>
+  <data name="Action.UnblockUser" xml:space="preserve">
+    <value>Unblock User</value>
+  </data>
+  <data name="Action.Unfollow" xml:space="preserve">
+    <value>Unfollow</value>
+  </data>
+  <data name="Action.Unfriend" xml:space="preserve">
+    <value>Unfriend</value>
+  </data>
+  <data name="Action.UpdateStatus" xml:space="preserve">
+    <value>Update Status</value>
+  </data>
+  <data name="Description.AboutSuccess" xml:space="preserve">
+    <value>Successfully updated description.</value>
+  </data>
+  <data name="Description.AboutWarning" xml:space="preserve">
+    <value>Keep yourself safe, do not share personal details online.</value>
+  </data>
+  <data name="Description.BlockUserFooter" xml:space="preserve">
+    <value>When you've blocked a user, neither of you can directly contact the other.</value>
+  </data>
+  <data name="Description.BlockUserPrompt" xml:space="preserve">
+    <value>Are you sure you want to block this user?</value>
+  </data>
+  <data name="Description.ChangeAlias" xml:space="preserve">
+    <value>Only you can see this information</value>
+  </data>
+  <data name="Description.Error" xml:space="preserve">
+    <value>Unable to update description, please try again later.</value>
+  </data>
+  <data name="Description.PlaceholderStatus" xml:space="preserve">
+    <value>Tell the Roblox community about what you like to make, build, and explore...</value>
+  </data>
+  <data name="Description.UnblockUserPrompt" xml:space="preserve">
+    <value>Are you sure you want to unblock this user?</value>
+  </data>
+  <data name="Heading.AboutTab" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Heading.BlockUserTitle" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Heading.Collections" xml:space="preserve">
+    <value>Collections</value>
+  </data>
+  <data name="Heading.CurrentlyWearing" xml:space="preserve">
+    <value>Currently Wearing</value>
+  </data>
+  <data name="Heading.FavoriteGames" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="Heading.Friends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="Heading.FriendsNum" xml:space="preserve">
+    <value>Friends ({0})</value>
+  </data>
+  <data name="Heading.Games" xml:space="preserve">
+    <value>Games</value>
+  </data>
+  <data name="Heading.GameTitle" xml:space="preserve">
+    <value>Games</value>
+  </data>
+  <data name="Heading.Groups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="Heading.PlayerAssetsBadges" xml:space="preserve">
+    <value>Badges</value>
+  </data>
+  <data name="Heading.PlayerAssetsClothing" xml:space="preserve">
+    <value>Clothing</value>
+  </data>
+  <data name="Heading.PlayerAssetsModels" xml:space="preserve">
+    <value>Models</value>
+  </data>
+  <data name="Heading.PlayerBadge" xml:space="preserve">
+    <value>Badges</value>
+  </data>
+  <data name="Heading.Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Heading.ProfileGroups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="Heading.RobloxBadge" xml:space="preserve">
+    <value>Roblox Badges</value>
+  </data>
+  <data name="Heading.Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="Label.About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Label.Alias" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="Label.BlockWarningBody" xml:space="preserve">
+    <value>Are you sure you want to block this user?</value>
+  </data>
+  <data name="Label.BlockWarningConfirm" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="Label.BlockWarningFooter" xml:space="preserve">
+    <value>When you've blocked a user, neither of you can directly contact the other.</value>
+  </data>
+  <data name="Label.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Label.ChangeAlias" xml:space="preserve">
+    <value>Set Alias</value>
+  </data>
+  <data name="Label.Creations" xml:space="preserve">
+    <value>Creations</value>
+  </data>
+  <data name="Label.Followers" xml:space="preserve">
+    <value>Followers</value>
+  </data>
+  <data name="Label.Following" xml:space="preserve">
+    <value>Following</value>
+  </data>
+  <data name="Label.ForumPosts" xml:space="preserve">
+    <value>Forum Posts</value>
+  </data>
+  <data name="Label.Friends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="Label.GridView" xml:space="preserve">
+    <value>Grid View</value>
+  </data>
+  <data name="Label.JoinDate" xml:space="preserve">
+    <value>Join Date</value>
+  </data>
+  <data name="Label.LoadMore" xml:space="preserve">
+    <value>Load More</value>
+  </data>
+  <data name="Label.Members" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="Label.PastUsername" xml:space="preserve">
+    <value>Past Usernames</value>
+  </data>
+  <data name="Label.PastUsernames" xml:space="preserve">
+    <value>Previous usernames</value>
+  </data>
+  <data name="Label.PlaceVisits" xml:space="preserve">
+    <value>Place Visits</value>
+  </data>
+  <data name="Label.Playing" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Label.Quotation" xml:space="preserve">
+    <value>\"{0}\"</value>
+  </data>
+  <data name="Label.Rank" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="Label.ReadMore" xml:space="preserve">
+    <value>Read More</value>
+  </data>
+  <data name="Label.ReportAbuse" xml:space="preserve">
+    <value>Report Abuse</value>
+  </data>
+  <data name="Label.ShowLess" xml:space="preserve">
+    <value>Show Less</value>
+  </data>
+  <data name="Label.SlideshowView" xml:space="preserve">
+    <value>Slideshow View</value>
+  </data>
+  <data name="Label.UnblockWarningBody" xml:space="preserve">
+    <value>Are you sure you want to unblock this user?</value>
+  </data>
+  <data name="Label.UnblockWarningConfirm" xml:space="preserve">
+    <value>Unblock</value>
+  </data>
+  <data name="Label.Visits" xml:space="preserve">
+    <value>Visits</value>
+  </data>
+  <data name="Label.WarningTitle" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Message.AcceptFriendRequestError" xml:space="preserve">
+    <value>Unable to accept friend request.</value>
+  </data>
+  <data name="Message.AliasHasError" xml:space="preserve">
+    <value>An error has occurred. Please try again later</value>
+  </data>
+  <data name="Message.AliasIsModerated" xml:space="preserve">
+    <value>Please avoid using full names or offensive language.</value>
+  </data>
+  <data name="Message.BlockError" xml:space="preserve">
+    <value>Unable to block user. You may have blocked too many people.</value>
+  </data>
+  <data name="Message.BlockRequestError" xml:space="preserve">
+    <value>Unable to block user.</value>
+  </data>
+  <data name="Message.ChangeStatus" xml:space="preserve">
+    <value>What are you up to?</value>
+  </data>
+  <data name="Message.ErrorBlockLimit" xml:space="preserve">
+    <value>Operation failed! You may have blocked too many people.</value>
+  </data>
+  <data name="Message.ErrorGeneral" xml:space="preserve">
+    <value>Something went wrong. Please check back in a few minutes.</value>
+  </data>
+  <data name="Message.FollowError" xml:space="preserve">
+    <value>Unable to follow user.</value>
+  </data>
+  <data name="Message.ImpersonateUserError" xml:space="preserve">
+    <value>Unable to impersonate user.</value>
+  </data>
+  <data name="Message.NoCreation" xml:space="preserve">
+    <value>{0} has no creations.</value>
+  </data>
+  <data name="Message.RemoveFriendError" xml:space="preserve">
+    <value>Unable to unfriend user.</value>
+  </data>
+  <data name="Message.SendFriendRequestError" xml:space="preserve">
+    <value>Unable to send friend request.</value>
+  </data>
+  <data name="Message.Sharing" xml:space="preserve">
+    <value>Sharing...</value>
+  </data>
+  <data name="Message.UnfollowError" xml:space="preserve">
+    <value>Unable to unfollow user.</value>
+  </data>
+  <data name="Message.UpdateStatusError" xml:space="preserve">
+    <value>Unable to update status.</value>
+  </data>
+  <data name="Response.TooManyAttempts" xml:space="preserve">
+    <value>Too many attempts. Please try again later.</value>
+  </data>
+  <data name="HeadingUsersProfile" xml:space="preserve">
+    <value>{0}'s Profile</value>
+  </data>
+  <data name="HeadingYourProfile" xml:space="preserve">
+    <value>Your Profile</value>
+  </data>
+  <data name="Label.InGame" xml:space="preserve">
+    <value>In Game</value>
+  </data>
+  <data name="Label.InStudio" xml:space="preserve">
+    <value>In Studio</value>
+  </data>
+  <data name="LabelOffline" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="LabelOnline" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="LabelOnlineStatus" xml:space="preserve">
+    <value>[ {0} ]</value>
+  </data>
+  <data name="LabelOnlineStatusDetailed" xml:space="preserve">
+    <value>[ {0}: &lt;span class=\"notranslate\"&gt;{1}&lt;/span&gt; ]</value>
+  </data>
+  <data name="ActionViewPublicProfile" xml:space="preserve">
+    <value>View Public Profile</value>
+  </data>
+  <data name="ActionFriendOptions" xml:space="preserve">
+    <value>Friend Options</value>
+  </data>
+  <data name="ActionMakeTopFriend" xml:space="preserve">
+    <value>Make Best Friend</value>
+  </data>
+  <data name="ActionSendFriendInvitation" xml:space="preserve">
+    <value>Send Friend Request</value>
+  </data>
+  <data name="ActionSendMessage" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="LabelClanPoints" xml:space="preserve">
+    <value>Clan Points</value>
+  </data>
+  <data name="LabelPrimaryGroup" xml:space="preserve">
+    <value>Primary Group</value>
+  </data>
+  <data name="LabelUserPoints" xml:space="preserve">
+    <value>Player Points</value>
+  </data>
+  <data name="ActionRemoveTopFriend" xml:space="preserve">
+    <value>Remove Best Friend</value>
+  </data>
+  <data name="DescriptionChangedUsernames" xml:space="preserve">
+    <value>This user has changed usernames.</value>
+  </data>
+  <data name="LabelGreeting" xml:space="preserve">
+    <value>Hi, {0}</value>
+  </data>
+  <data name="HeadingRobloxBadges" xml:space="preserve">
+    <value>ROBLOX Badges</value>
+  </data>
+  <data name="ActionFriendRequestPending" xml:space="preserve">
+    <value>Friend Request Pending</value>
+  </data>
+  <data name="ActionInviteToParty" xml:space="preserve">
+    <value>Invite To Party</value>
+  </data>
+  <data name="ActionJoinGame" xml:space="preserve">
+    <value>Join Game</value>
+  </data>
+  <data name="ActionStartChatting" xml:space="preserve">
+    <value>Start Chatting</value>
+  </data>
+  <data name="HeadingPlayerBadge" xml:space="preserve">
+    <value>Player Badges</value>
+  </data>
+  <data name="HeadingSets" xml:space="preserve">
+    <value>{0}'s Sets</value>
+  </data>
+  <data name="HeadingShowcase" xml:space="preserve">
+    <value>Active Places</value>
+  </data>
+</root>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="~/User.aspx" title="My ROBLOX"  description="" />
+    <siteMapNode url="~/Admi/Default.aspx" title="Admin Dashboard"  description="">
+      <siteMapNode url="~/Admi/Config/Default.aspx" title="Configuration"  description="">
+        <siteMapNode url="~/Admi/Config/ABTests.aspx" title="AB Tests"  description="" />
+        <siteMapNode url="~/Admi/Config/TestSites.aspx" title="Test Sites"  description="" />
+      </siteMapNode>
+      <siteMapNode url="~/Admi/Shoutbox/Default.aspx" title="Shoutbox"  description="" />
+      <siteMapNode url="" title="Site-wide Alert"  description="" />
+      <siteMapNode url="~/Admi/Notifications.aspx" title="Notifications"  description="" />
+      <siteMapNode url="~/Admi/Chat.aspx" title="Chat"  description="" />
+      <siteMapNode url="" title="Scripts"  description="">
+        <siteMapNode url="~/Admi/UserScripts/Scripts.aspx" title="Review Scripts"  description="" />
+        <siteMapNode url="~/Admi/UserScripts/ReputationSystem.aspx" title="Reputation System"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="People"  description="">
+        <siteMapNode url="~/Admi/Users/Find.aspx" title="Find"  description="" />
+        <siteMapNode url="~/Admi/Users/UserAdmin.aspx" title="User Admin"  description="" />
+        <siteMapNode url="~/Admi/Diagnostics/MachineConfiguration.aspx" title="Machine Config"  description="" />
+        <siteMapNode url="~/Admi/AccountUpgrades/BuildersClub.aspx" title="Builders Club"  description="" />
+        <siteMapNode url="~/Admi/AccountUpgrades/Referrals.aspx" title="Referral Program"  description="" />
+        <siteMapNode url="~/Admi/AccountUpgrades/Payments.aspx" title="Find Payment"  description="" />
+        <siteMapNode url="" title="Find Parent"  description="" />
+        <siteMapNode url="~/Admi/Users/BlacklistEmail.aspx" title="Blacklist Email"  description="" />
+        <siteMapNode url="~/Admi/Users/ManageForumModeration.aspx" title="Manage Forum Moderators"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Groups"  description="">
+        <siteMapNode url="~/Admi/Groups/FindGroup.aspx" title="Find Group"  description="" />
+        <siteMapNode url="" title="Group Admin"  description="" />
+        <siteMapNode url="" title="Group Building"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Contests"  description="">
+        <siteMapNode url="" title="Edits Contests"  description="" />
+        <siteMapNode url="" title="Create New"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Moderation"  description="">
+        <siteMapNode url="" title="Image Queue"  description="" />
+        <siteMapNode url="" title="Abuse Queue"  description="" />
+        <siteMapNode url="" title="Abuse Grid"  description="" />
+        <siteMapNode url="" title="User Queue"  description="" />
+        <siteMapNode url="" title="IP Addresses"  description="" />
+        <siteMapNode url="" title="Asset Scrub"  description="" />
+        <siteMapNode url="" title="Order History"  description="" />
+        <siteMapNode url="" title="Content Filter"  description="" />
+        <siteMapNode url="" title="Trade/Evaluation"  description="" />
+        <siteMapNode url="~/Admi/ContentFilter/RegularExpressionView.aspx" title="Regular Expressions"  description="" />
+        <siteMapNode url="~/Admi/Moderation/ModeratorReview.aspx" title="Moderator Review"  description="" />
+        <siteMapNode url="" title="Moderator Performance"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Games"  description="">
+        <siteMapNode url="~/Admi/Users/FPSSummary.aspx" title="FPS"  description="" />
+        <siteMapNode url="" title="Build Games"  description="" />
+        <siteMapNode url="" title="Broadcast"  description="" />
+        <siteMapNode url="" title="Places"  description="" />
+        <siteMapNode url="" title="Search"  description="" />
+        <siteMapNode url="" title="BadgeAssetAward"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Grid"  description="">
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

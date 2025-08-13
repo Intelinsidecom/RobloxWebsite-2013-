@@ -1,0 +1,66 @@
+﻿@{ 
+    RobloxScripts.PageScripts.Add("Landing/BlueCity/Animation.js");
+    RobloxScripts.PageScripts.Add("Landing/BlueCity/Animated.js");
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- MachineID: @ViewBag.MachineID -->
+    <title>@(!String.IsNullOrEmpty(ViewBag.Title) ? ViewBag.Title + " - ROBLOX" : "ROBLOX")</title>
+    @RobloxCSS.RenderBundle("reset")
+    @RobloxCSS.RenderBundle("main")
+    @RobloxCSS.Render(StaticContent.GetPageCSSBundle())
+    @Html.Partial("~/UserControls/TrackingPixels/GoogleAnalytics.ascx")
+    @Html.Partial("~/Views/Tracker/GoogleAnalytics.cshtml")
+    @* Function that creates AJAX and jQuery HTML goes here *@
+    <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js'></script>
+    <script type='text/javascript'>window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-1.7.2.min.js'><\/script>")</script>
+    <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js'></script>
+    <script type='text/javascript'>window.Sys || document.write("<script type='text/javascript' src='/js/Microsoft/MicrosoftAjax.js'><\/script>")</script>
+    @* No tabs here *@
+    @RobloxScripts.RenderBundle("base")
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/CSS/PartialViews/Navigation.css">
+    @Html.Partial("~/Views/Shared/PageMetaTags.cshtml", (MetaTagListViewModel)ViewBag.MetaTagListViewModel)
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="Container">
+        @*Html.Partial("~/Views/Navigation/Banner.cshtml")*@
+        <div style="clear:both"></div>
+        <div id="Body" style="width:970px">
+            @RenderBody()
+            @Html.Partial("~/Views/Tracking/GoogleAdWordsConversionTracker.cshtml")
+            @Html.Partial("~/UserControls/Modals/ConfirmationModal.ascx")
+        </div>
+        @Html.Partial("~/Views/Shared/Experimental/_Footer.cshtml")
+    </div>
+
+    @Html.Partial("~/Views/Tracking/EventManager.cshtml")
+    @Html.Partial("~/Views/Tracker/GoogleAnalytics.cshtml")
+
+    @Html.Partial("~/Views/Tracking/JavascriptErrorTracker.cshtml", (JavascriptErrorTrackerViewModel)ViewBag.JavascriptErrorTrackerViewModel)
+    @RobloxScripts.RenderBundle("simple-mvc")
+    @RobloxScripts.Render(StaticContent.GetPageScriptBundle())
+    @Html.Partial("~/Views/Tracking/VendorSpecificSignupTrackingPixel.cshtml")
+    <script type="text/javascript">
+        $(function () {
+            $('.tooltip').tipsy();
+            $('.tooltip-top').tipsy({ gravity: 's' });
+            $('.tooltip-right').tipsy({ gravity: 'w' });
+            $('.tooltip-left').tipsy({ gravity: 'e' });
+            $('.tooltip-bottom').tipsy({ gravity: 'n' });
+        });
+    </script>
+</body>
+</html>

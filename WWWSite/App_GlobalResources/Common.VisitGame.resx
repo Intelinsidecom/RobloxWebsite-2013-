@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action.GamePerformPoorly" xml:space="preserve">
+    <value>{0} This game may perform poorly on your device.</value>
+  </data>
+  <data name="Action.Retry" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="Heading.ErrorStartingGame" xml:space="preserve">
+    <value>Error starting game</value>
+  </data>
+  <data name="Heading.SwitchToDesktopToPlay" xml:space="preserve">
+    <value>Switch to Desktop Mode to Play Games</value>
+  </data>
+  <data name="Label.BuyAccess" xml:space="preserve">
+    <value>Buy Access for {0} Robux</value>
+  </data>
+  <data name="Label.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Label.CheckingForStudio" xml:space="preserve">
+    <value>Checking for Roblox Studio...</value>
+  </data>
+  <data name="Label.ClickHereForHelp" xml:space="preserve">
+    <value>Click here for help</value>
+  </data>
+  <data name="Label.ConnectingToPlayers" xml:space="preserve">
+    <value>Connecting to Players...</value>
+  </data>
+  <data name="Label.DevelopPageTitle" xml:space="preserve">
+    <value>Develop</value>
+  </data>
+  <data name="Label.DownloadInstallRoblox" xml:space="preserve">
+    <value>Download and Install Roblox</value>
+  </data>
+  <data name="Label.DownloadStudio" xml:space="preserve">
+    <value>Download Studio</value>
+  </data>
+  <data name="Label.GameConfigurePageTitle" xml:space="preserve">
+    <value>Game Configure</value>
+  </data>
+  <data name="Label.GameFreeSoothsayer" xml:space="preserve">
+    <value>Free because you are a soothsayer</value>
+  </data>
+  <data name="Label.GameIsPrivatePlayableByGroupOnly" xml:space="preserve">
+    <value>Only developers can visit because this game is private. Make it public on the {0}Configure Game{1} page.</value>
+  </data>
+  <data name="Label.GameIsPrivatePlayableByOwnerOnly" xml:space="preserve">
+    <value>Only you can visit because this game is private. Make it public on the {0}Configure game{1} page.</value>
+  </data>
+  <data name="Label.GameIsPrivatePlayableByPlaytester" xml:space="preserve">
+    <value>This game is private, but you can visit because you're a tester.</value>
+  </data>
+  <data name="Label.GameUnavailableAccountResrictions" xml:space="preserve">
+    <value>The game is unavailable due to account restrictions settings.</value>
+  </data>
+  <data name="Label.GameUnavailableCannotPlayGamesStudio" xml:space="preserve">
+    <value>You cannot visit games from Studio. Please use a web browser to visit this game.</value>
+  </data>
+  <data name="Label.GameUnavailableClosedToVisitors" xml:space="preserve">
+    <value>Sorry, this place is currently closed to visitors.</value>
+  </data>
+  <data name="Label.GameUnavailableCurrentlyIsPrivateGroup" xml:space="preserve">
+    <value>Only developers can visit because this game is private. Make it public on the {0}Develop{1} page.</value>
+  </data>
+  <data name="Label.GameUnavailableCurrentlyIsPrivateOwner" xml:space="preserve">
+    <value>Only you can visit because this game is private. Make it public on the {0}Develop{1} page.</value>
+  </data>
+  <data name="Label.GameUnavailableCurrentlyIsPrivateVisitor" xml:space="preserve">
+    <value>Sorry, this game is private.</value>
+  </data>
+  <data name="Label.GameUnavailableCurrentlyPrivate" xml:space="preserve">
+    <value>This {0} is currently private. Make it public on the {1} page to make it available.</value>
+  </data>
+  <data name="Label.GameUnavailableGameInsecure" xml:space="preserve">
+    <value>Sorry, your account is restricted from visiting Experimental Games unless you are friends with the creator.</value>
+  </data>
+  <data name="Label.GameUnavailableNoRootPlace" xml:space="preserve">
+    <value>This place is part of a game that has no root place. Add a root place on the {0} page to make it available.</value>
+  </data>
+  <data name="Label.GameUnavailablePermissionLevels" xml:space="preserve">
+    <value>The permission levels on this place prevent you from entering.</value>
+  </data>
+  <data name="Label.GameUnavailablePlaceNotPartOfGame" xml:space="preserve">
+    <value>This place is not currently part of a Game. Add it to a game on the {0} page to make it available.</value>
+  </data>
+  <data name="Label.GameUnavailablePlaceUnderReview" xml:space="preserve">
+    <value>Sorry, this place is currently under review. Try again later.</value>
+  </data>
+  <data name="Label.GameUnavailablePlatform" xml:space="preserve">
+    <value>This game is not available on your platform.  Check the game page to see all available games.</value>
+  </data>
+  <data name="Label.GameUnavailableRootPlaceIsUnpublished" xml:space="preserve">
+    <value>This game is unavailable because its starting place is unpublished. Publish the starting place to make it available.</value>
+  </data>
+  <data name="Label.GameWarning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Label.InstallationInstructions" xml:space="preserve">
+    <value>Installation Instructions</value>
+  </data>
+  <data name="Label.LaunchApplication" xml:space="preserve">
+    <value>Launch Application</value>
+  </data>
+  <data name="Label.OperaInstallSteps" xml:space="preserve">
+    <value>1) A window will open. Click {0}Open{1}.{2}2) Doubleclick the Roblox icon.</value>
+  </data>
+  <data name="Label.PersuadeToDevelopRoblox" xml:space="preserve">
+    <value>Get started creating your own games!</value>
+  </data>
+  <data name="Label.PersuadeToInstallRoblox" xml:space="preserve">
+    <value>You're moments away from getting into the game!</value>
+  </data>
+  <data name="Label.Play" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="Label.PlayInApp" xml:space="preserve">
+    <value>Visit in App</value>
+  </data>
+  <data name="Label.RobloxLoadingToPlay" xml:space="preserve">
+    <value>Roblox is now loading. Get ready!</value>
+  </data>
+  <data name="Label.StartingRoblox" xml:space="preserve">
+    <value>Starting Roblox...</value>
+  </data>
+  <data name="Label.SwitchToDesktopMode" xml:space="preserve">
+    <value>Switch to Desktop Mode</value>
+  </data>
+  <data name="Label.UniverseConfigurePageTitle" xml:space="preserve">
+    <value>Universe Configuration</value>
+  </data>
+  <data name="Response.CheckAlwaysOpenRoblox" xml:space="preserve">
+    <value>Check {0}Always open links for Roblox{1} and click {2}Open Roblox{3} in the dialog box above to visit games faster in the future!</value>
+  </data>
+  <data name="Response.CheckAlwaysOpenRobloxURL" xml:space="preserve">
+    <value>Check {0}Always open links for URL: Roblox Protocol{1} and click {2}Open URL: Roblox Protocol{3} in the dialog box above to join games faster in the future!</value>
+  </data>
+  <data name="Response.CheckRememberMyChoiceOK" xml:space="preserve">
+    <value>Check {0}Remember my choice{1} and click {2}OK{3} in the dialog box above to join games faster in the future!</value>
+  </data>
+  <data name="Response.Dialog.ClickHere" xml:space="preserve">
+    <value>Click here!</value>
+  </data>
+  <data name="Response.Dialog.ErrorLaunching" xml:space="preserve">
+    <value>An error occurred trying to launch the game.  Please try again later.</value>
+  </data>
+  <data name="Response.Dialog.HavingTroubleInstallQuestion" xml:space="preserve">
+    <value>Having trouble installing Roblox?</value>
+  </data>
+  <data name="Response.Dialog.InstallingMessageWithLink" xml:space="preserve">
+    <value>The Roblox installer should download shortly. If it doesn't, start the {0}download now.{1}</value>
+  </data>
+  <data name="Response.Dialog.MacChromeFifthInstruction" xml:space="preserve">
+    <value>After installation, click {0}Join{1} below to join the action!</value>
+  </data>
+  <data name="Response.Dialog.MacChromeFirstInstruction" xml:space="preserve">
+    <value>Click {0}Roblox.dmg{1} to run the Roblox installer, which just downloaded via your web browser.</value>
+  </data>
+  <data name="Response.Dialog.MacChromeFourthInstruction" xml:space="preserve">
+    <value>Click {0}Ok{1} once you've successfully installed Roblox.</value>
+  </data>
+  <data name="Response.Dialog.MacChromeSecondInstruction" xml:space="preserve">
+    <value>Double-click the Roblox app icon to begin the installation process.</value>
+  </data>
+  <data name="Response.Dialog.MacChromeThirdInstruction" xml:space="preserve">
+    <value>Click {0}Open{1} when prompted by your computer.</value>
+  </data>
+  <data name="Response.Dialog.MacFirefoxFifthInstruction" xml:space="preserve">
+    <value>Then select the {0}Remember my choice...{1} checkbox and click {2}OK{3}</value>
+  </data>
+  <data name="Response.Dialog.MacFirefoxFirstInstruction" xml:space="preserve">
+    <value>Select {0}Open with{1} and click {2}OK{3}</value>
+  </data>
+  <data name="Response.Dialog.MacFirefoxFourthInstruction" xml:space="preserve">
+    <value>Once installed, click {0}Join{1} to join the action!</value>
+  </data>
+  <data name="Response.Dialog.MacFirefoxSecondInstruction" xml:space="preserve">
+    <value>Double-click the {0}Roblox Icon{1} to begin the installation process</value>
+  </data>
+  <data name="Response.Dialog.MacFirefoxThirdInstruction" xml:space="preserve">
+    <value>You will receive a warning, click {0}Open{1}</value>
+  </data>
+  <data name="Response.Dialog.MacSafariFirstInstruction" xml:space="preserve">
+    <value>Go to Downloads and double-click {0}Roblox.dmg{1}</value>
+  </data>
+  <data name="Response.Dialog.MacSafariFourthInstruction" xml:space="preserve">
+    <value>Once installed, click {0}Join{1} to join the action!</value>
+  </data>
+  <data name="Response.Dialog.MacSafariSecondInstruction" xml:space="preserve">
+    <value>Double-click the {0}Roblox Icon{1} to begin the installation process</value>
+  </data>
+  <data name="Response.Dialog.MacSafariThirdInstruction" xml:space="preserve">
+    <value>You will receive a warning, click {0}Open{1}</value>
+  </data>
+  <data name="Response.Dialog.PcChromeFirstInstruction" xml:space="preserve">
+    <value>Click {0}RobloxPlayer.exe{1} to run the Roblox installer, which just downloaded via your web browser.</value>
+  </data>
+  <data name="Response.Dialog.PcChromeFourthInstruction" xml:space="preserve">
+    <value>After installation, click {0}Join{1} below to join the action!</value>
+  </data>
+  <data name="Response.Dialog.PcChromeSecondInstruction" xml:space="preserve">
+    <value>Click {0}Run{1} when prompted by your computer to begin the installation process.</value>
+  </data>
+  <data name="Response.Dialog.PcChromeThirdInstruction" xml:space="preserve">
+    <value>Click {0}Ok{1} once you've successfully installed Roblox.</value>
+  </data>
+  <data name="Response.Dialog.PcEdgeFirstInstruction" xml:space="preserve">
+    <value>Click {0}Run{1} to install Roblox after the download finishes</value>
+  </data>
+  <data name="Response.Dialog.PcEdgeSecondInstruction" xml:space="preserve">
+    <value>Click {0}Ok{1} to finish installing Roblox</value>
+  </data>
+  <data name="Response.Dialog.PcEdgeThirdInstruction" xml:space="preserve">
+    <value>Click the {0}Join{1} button to join the action!</value>
+  </data>
+  <data name="Response.Dialog.PcFirefoxFifthInstruction" xml:space="preserve">
+    <value>Click {0}Ok{1} when the alert pops up</value>
+  </data>
+  <data name="Response.Dialog.PcFirefoxFirstInstruction" xml:space="preserve">
+    <value>Click {0}Save File{1} when the download window pops up</value>
+  </data>
+  <data name="Response.Dialog.PcFirefoxFourthInstruction" xml:space="preserve">
+    <value>Once installed, click {0}Join{1} to join the action!</value>
+  </data>
+  <data name="Response.Dialog.PcFirefoxSecondInstruction" xml:space="preserve">
+    <value>Go to Downloads and double click {0}RobloxPlayer.exe{1}</value>
+  </data>
+  <data name="Response.Dialog.PcFirefoxThirdInstruction" xml:space="preserve">
+    <value>Click {0}Run{1}</value>
+  </data>
+  <data name="Response.Dialog.PcIEFirstInstruction" xml:space="preserve">
+    <value>You will receive a warning, click {0}Run{1}</value>
+  </data>
+  <data name="Response.Dialog.PcIeInstructionOne" xml:space="preserve">
+    <value>You will receive a warning, click {0}Run{1}</value>
+  </data>
+  <data name="Response.Dialog.PcIeInstructionThree" xml:space="preserve">
+    <value>Click {0}Run{1}</value>
+  </data>
+  <data name="Response.Dialog.PcIeInstructionTwo" xml:space="preserve">
+    <value>Go to Downloads and double click {0}RobloxPlayer.exe{1}</value>
+  </data>
+  <data name="Response.Dialog.PcIESecondInstruction" xml:space="preserve">
+    <value>Click {0}Ok{1} once you've installed Roblox</value>
+  </data>
+  <data name="Response.Dialog.PcIEThirdInstruction" xml:space="preserve">
+    <value>Once installed, click {0}Join{1} to join the action!</value>
+  </data>
+  <data name="Response.Dialog.ThanksForPlayingRoblox" xml:space="preserve">
+    <value>Thanks for visiting Roblox</value>
+  </data>
+  <data name="Response.GameTemporarilyUnavailable" xml:space="preserve">
+    <value>Unable to verify that you have access to this game.  Please try again later.</value>
+  </data>
+  <data name="Response.RememberMyChoiceAppLaunch" xml:space="preserve">
+    <value>Check {0}Remember my choice{1} and click {2} in the dialog box above to join games faster in the future!</value>
+  </data>
+  <data name="ResponseDialogHavingTroubleInstallQuestion" xml:space="preserve">
+    <value>Having trouble installing ROBLOX?</value>
+  </data>
+</root>

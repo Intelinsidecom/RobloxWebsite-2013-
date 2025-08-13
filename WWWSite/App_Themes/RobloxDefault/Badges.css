@@ -1,0 +1,237 @@
+﻿#BadgesContainer
+{
+	width: 100%
+}
+
+#CombatBadges
+{
+	border: solid 1px #000000;
+}
+
+#VisitsBadges,
+#FriendshipBadges
+{
+	border: solid 1px #000000;
+	margin-top: 10px;
+}
+
+#BadgesContainer .Legend .BadgesList
+{
+	color: #666666;
+	float: left;
+	list-style: none;
+	margin: 0 0 0 0;
+}
+
+#FriendshipBadges .Legend,
+#CombatBadges .Legend,
+#VisitsBadges .Legend
+{
+	float: left;
+	padding: 5px 15px 5px 5px;
+	width: 500px;
+}
+
+#StatisticsRankingsPane_Friendship,
+#StatisticsRankingsPane_Combat,
+#StatisticsRankingsPane_Visits
+{
+	border: solid 1px #000000;
+	float: right;
+	margin: 15px 15px 15px 15px;
+	width: 300px;
+}
+
+#BadgesContainer .Legend h4
+{
+	margin: 5px 0 5px 0;
+}
+
+#BadgesContainer #FriendshipBadges .Legend #FriendshipLevel1,
+#BadgesContainer #FriendshipBadges .Legend #InviterLevel1,
+#BadgesContainer #CombatBadges .Legend #CombatLevel1,
+#BadgesContainer #CombatBadges .Legend #CombatLevel2,
+#BadgesContainer #CombatBadges .Legend #CombatLevel3,
+#BadgesContainer #VisitsBadges .Legend #VisitsLevel1,
+#BadgesContainer #VisitsBadges .Legend #VisitsLevel2
+{
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	margin: 10px 0 20px 0;
+	padding: 0 0 5px 80px;
+}
+
+#BadgesContainer #FriendshipBadges .Legend #FriendshipLevel1
+{
+	background-image: url(../../images/Badges/Friendship-75x75.jpg);
+}
+
+#BadgesContainer #FriendshipBadges .Legend #InviterLevel1
+{
+	background-image: url(../../images/Badges/Inviter-75x75.png);
+}
+
+#BadgesContainer #CombatBadges .Legend #CombatLevel1
+{
+	background-image: url(../../images/Badges/CombatInitiation-75x75.jpg);
+}
+
+#BadgesContainer #CombatBadges .Legend #CombatLevel2
+{
+	background-image: url(../../images/Badges/Warrior-75x75.jpg);
+}
+
+#BadgesContainer #CombatBadges .Legend #CombatLevel3
+{
+	background-image: url(../../images/Badges/Bloxxer-75x75.jpg);
+}
+
+#BadgesContainer #VisitsBadges .Legend #VisitsLevel1
+{
+	background-image: url(../../images/Badges/Homestead-70x75.jpg);
+}
+
+#BadgesContainer #VisitsBadges .Legend #VisitsLevel2
+{
+	background-image: url(../../images/Badges/Bricksmith-54x75.jpg);
+}
+
+.StatisticsRankings
+{
+	background-color: #eeeeee;
+}
+
+.StatisticsRankings h4
+{
+	background-color: #cccccc;
+	border-bottom: solid 1px #000000;
+	color: #333333;
+	margin: 0 0 0 0;
+	text-align: center;
+}
+
+.StatisticsRankingsHeader
+{
+}
+
+.StatisticsRankingsHeader_Rank
+{
+	border: solid 1px #000000;
+	float: left;
+	font-weight: bold;
+	margin-right: 1px;
+	text-align: center;
+	width: 45px;
+}
+
+.StatisticsRankingsHeader_Item
+{
+	border: solid 1px #000000;
+	float: left;
+	font-weight: bold;
+	margin-right: 1px;
+	text-align: center;
+	width: 150px;
+}
+
+.StatisticsRankingsHeader_Score
+{
+	border: solid 1px #000000;
+	float: right;
+	font-weight: bold;
+	text-align: center;
+	width: 95px;
+}
+
+.StatisticsRanking,
+.StatisticsRanking_AlternatingRow,
+.StatisticsRanking_UserCentric,
+.StatisticsRanking_UserCentric_AlternatingRow
+{
+}
+
+.StatisticsRanking_UserCentric a,
+.StatisticsRanking_UserCentric_AlternatingRow a
+{
+	color: #ffffff;
+}
+
+.StatisticsRanking .StatisticsRanking_Rank,
+.StatisticsRanking .StatisticsRanking_Item,
+.StatisticsRanking .StatisticsRanking_Score,
+.StatisticsRanking_AlternatingRow .StatisticsRanking_Rank,
+.StatisticsRanking_AlternatingRow .StatisticsRanking_Item,
+.StatisticsRanking_AlternatingRow .StatisticsRanking_Score
+{
+	border: solid 1px #000000;
+	float: left;
+	margin-right: 1px;
+	text-align: center;
+}
+
+.StatisticsRanking .StatisticsRanking_Rank,
+.StatisticsRanking_AlternatingRow .StatisticsRanking_Rank
+{
+	width: 45px;
+}
+
+.StatisticsRanking .StatisticsRanking_Item,
+.StatisticsRanking_AlternatingRow .StatisticsRanking_Item
+{
+	width: 150px;
+}
+
+.StatisticsRanking .StatisticsRanking_Score,
+.StatisticsRanking_AlternatingRow .StatisticsRanking_Score
+{
+	float: right;
+	width: 95px;
+}
+
+.StatisticsRanking_UserCentric .StatisticsRanking_Rank,
+.StatisticsRanking_UserCentric .StatisticsRanking_Item,
+.StatisticsRanking_UserCentric .StatisticsRanking_Score,
+.StatisticsRanking_UserCentric_AlternatingRow .StatisticsRanking_Rank,
+.StatisticsRanking_UserCentric_AlternatingRow .StatisticsRanking_Item,
+.StatisticsRanking_UserCentric_AlternatingRow .StatisticsRanking_Score
+{
+	background-color: #6e99c9;
+	border: solid 1px #000000;
+	color: #ffffff;
+	float: left;
+	font-weight: bold;
+	margin-right: 1px;
+	text-align: center;
+}
+
+.StatisticsRanking_UserCentric .StatisticsRanking_Rank,
+.StatisticsRanking_UserCentric_AlternatingRow .StatisticsRanking_Rank
+{
+	width: 45px;
+}
+
+.StatisticsRanking_UserCentric .StatisticsRanking_Item,
+.StatisticsRanking_UserCentric_AlternatingRow .StatisticsRanking_Item
+{
+	width: 150px;
+}
+
+.StatisticsRanking_UserCentric .StatisticsRanking_Score,
+.StatisticsRanking_UserCentric_AlternatingRow .StatisticsRanking_Score
+{
+	float: right;
+	width: 95px;
+}
+
+.StatisticsRankingsFooter
+{
+	border-top: solid 1px #000000;
+	padding: 2px 1px 2px 1px;
+}
+
+.RankingsPeriodSelector
+{
+	font-family: Verdana, Sans-Serif;
+	font-size: xx-small;
+	width: 100%;
+}

@@ -1,0 +1,96 @@
+﻿#EditProfileContainer
+{
+	background-color: #eee;
+	border: solid 1px #000;
+	color: #555;
+	margin: 0 auto;
+	width: 620px;
+}
+
+#EditProfileContainer h2
+{
+	background-color: #ccc;
+	border-bottom: solid 1px #000;
+	color: #333;
+	font-size: x-large;
+	margin: 0;
+	text-align: center;
+}
+
+#EditProfileContainer h3
+{
+	text-align: center;
+}
+
+#EditProfileContainer fieldset
+{
+	font-size: 1.2em;
+	margin: 15px 0 0 0;
+}
+
+#EditProfileContainer .MultilineTextBox
+{
+	width: 250px;
+}
+
+#EditProfileContainer .TextBox
+{
+	vertical-align: middle;
+	width: 150px;
+}
+
+#EditProfileContainer .Label
+{
+	vertical-align: middle;
+}
+
+#EditProfileContainer #AgeGroup,
+#EditProfileContainer #ChatMode,
+#EditProfileContainer #ResetPassword,
+#EditProfileContainer #Blurb
+{
+    margin: 0 auto;
+    width: 60%;
+}
+
+#EditProfileContainer #Buttons
+{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+#EditProfileContainer .AgeGroupRow,
+#EditProfileContainer .ChatModeRow
+{
+	font-size: .9em;
+	margin: 10px 0 10px 100px;
+}
+
+#EditProfileContainer .ResetPasswordRow
+{
+	margin: 10px 0;
+	text-align: center;
+}
+
+#EditProfileContainer .BlurbRow
+{
+    padding: 10px 4px 10px 4px;
+    text-align: right;
+}
+
+#EditProfileContainer .Legend
+{
+	color: Blue;
+	margin-left: 9px;
+}
+
+#EditProfileContainer .Suggestion
+{
+	font: normal .8em/normal Verdana, sans-serif;
+	padding-left: 9px;
+}
+
+#EditProfileContainer .Validators
+{
+	margin-left: 9px;
+}

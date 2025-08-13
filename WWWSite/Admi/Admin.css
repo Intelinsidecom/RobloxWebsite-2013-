@@ -1,0 +1,354 @@
+﻿html, body, form {
+    height: 100%
+}
+
+html {
+    line-height: 1.1
+}
+
+fieldset {
+    margin-top: 0.5em
+}
+
+div#ctl00_Panel1 {
+    float: left;
+    /*margin-right: 0.5em;*/
+}
+div.TreeView {
+    border: 1px dashed #333;
+}
+
+div#Container {
+    overflow: auto;
+    height: 100%;
+}
+
+div#AdminContainer{
+    color: black;
+}
+
+.TightRadio div {
+    width: 16em;
+}
+
+.TopFloat {
+    padding: 5px;
+    /*width: 100%;*/
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+fieldset
+{
+	padding: 1em;
+}
+legend
+{
+	padding-bottom: 0.5em;
+}
+#AdminContainer td, #AdminContainer th
+{
+	padding: 2px 0.5em 2px 0.5em;
+}
+
+.TreeView td
+{
+	padding: 0;
+}
+
+.Panel
+{
+	padding:6px;
+	border: solid 1px #000;
+}
+
+.AdminPanel
+{
+    margin: 1em 0.5em 0.5em 0.5em;
+    background: ivory;
+    border: 1px solid #333;
+    padding: 1em;
+}
+
+
+.GameGenres
+{
+    font-size: 14px;
+}
+.GameGenres, .GameGenres input, .GameGenres textarea
+{
+    font-size: 14px;
+}
+.GameGenres h1
+{
+    padding: 5px;
+    width: 100%;
+    clear: both;
+}
+.GameGenres h1 span
+{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Delicious, Verdana, Times New Roman, sans-serif;
+}
+.GameGenres ul
+{
+    list-style: none;
+    margin-bottom: 10px;
+    float: left;
+}
+.GameGenres ul li
+{
+    float: left;
+    margin: 5px;
+}
+.GameGenres ul li a
+{
+    padding: 5px;
+    border: 1px outset #9944AA;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+.GameGenres ul li a:hover
+{
+    background: #EEEEEE;
+    border-style: inset;
+}
+.GameGenresTable
+{
+    clear: both;
+    margin-top: 10px;
+}
+.GameGenresTable table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.GameGenresTable table td, .GameGenresTable table th
+{
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+}
+.GameGenresTable table tr:first-child td, .GameGenresTable table tr:first-child th
+{
+    border-top: 0;
+}
+
+.GameGenresTable table tr:last-child td
+{
+    border-bottom: 0;
+}
+.GameGenresTable table tr td:first-child, .GameGenresTable table tr th:first-child
+{
+    border-left: 0;
+}
+.GameGenresTable table tr td:last-child, .GameGenresTable table tr th:last-child
+{
+    border-right: 0;
+}
+div#BigImageOverlayDiv 
+{
+    padding:50px;    
+    position:fixed;
+    top:30%;
+    left:40%;
+    z-index:2000;
+    background:url(/images/Moderation/Checkerboardforimages.gif)
+}
+
+
+/* ==Firefox uses padding-left for ul; IE uses margin-left== */
+ul {
+    /*padding-left:1em;*/
+    margin-left: 0;
+}
+
+.tight {
+    margin-top: -10px;
+    margin-left: 8px;
+    padding-left: 8px;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+table {
+    /*
+	cellpadding: 0;
+	cellspacing: 0;
+*/
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.spacer {
+    clear: both;
+    float: none;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+p {
+    padding: .6em 0 .6em 0;
+}
+
+.lessair {
+    margin: 2px 0 4px 0;
+    padding: 0;
+}
+
+.air {
+    line-height: 1.6em;
+}
+
+.small {
+    font-size: 11px;
+    line-height: 12px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+
+
+
+/* ============= MAIN CONTAINERS ============ */
+
+html {
+    padding: 0;
+    margin: 0;
+    /* background-color: #287241; */
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444;
+}
+
+a:link, a:visited, a:active {
+    color: #1e52d5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ============= Main content container ============ */
+#master_container {
+    /* background:url(../graphics/bg_clouds.jpg) no-repeat center top; */
+    width: 100%;
+}
+
+#container {
+    width: 920px;
+    margin: 0 auto 0 auto;
+}
+
+/* ============= MISC ============ */
+
+.margin_top15 {
+	margin-top:15px;
+}
+.margin_top25 {
+	margin-top:25px;
+}
+.margin_right15 {
+	margin-right:15px;
+}
+.light {
+	color:#afafaf;
+}
+.players_online {
+	color:#1a773b;
+	font-weight:bold;
+}
+.selected {
+	font-weight:bold;
+}
+.search_box {
+	width:160px;
+	height:18px;
+	margin:0 0 4px 0;
+}
+.input_short {
+	width:120px;
+	height:18px;
+	margin:0 0 4px 0;
+}
+.input_shorter {
+	width:60px;
+	height:16px;
+	margin:0 0 4px 5px;
+}
+.input_long {
+	width:200px;
+	height:18px;
+	margin:0 0 4px 0;
+}
+.text_area {
+	width:200px;
+	height:100px;
+	margin:0 0 4px 0;
+}
+.arrow_down {
+	display:inline;
+	margin:0 0 0 5px;
+}
+
+.dark {
+	color:#000;
+}
+.highlight {
+	color:#1a773b;
+}
+.highlight2 {
+	color:#c60;
+}
+
+
+
+/* ============= UserAdmin ============= */
+.ua_fieldset_col1,
+.ua_fieldset_col2 {
+    margin-top: 5px;
+    width: 580px;
+}
+
+.ua_fieldset_col2 {
+    width: 360px;
+}
+
+.ua_component_col1,
+.ua_component_col2_div,
+.ua_component_col2_table {
+    background: lightsteelblue;
+    display: block;
+    padding: 5px;
+    width: 100%;
+}
+
+.ua_component_col2_div {
+    width: 327px;
+}
+
+.UserNotesContainer {
+    max-height: 300px;
+    overflow: auto;
+    margin-top: 5px;
+}

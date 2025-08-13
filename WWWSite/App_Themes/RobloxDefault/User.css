@@ -1,0 +1,198 @@
+﻿#UserContainer
+{
+	width: 100%
+}
+
+#ProfilePane
+{
+	float: left;
+	width: 45%;
+	border: solid 1px #000000;
+	margin: 10px 0 0 0;
+	overflow: auto;
+	text-align: center;
+}
+
+#PrimaryPlacePane
+{
+	float: right;
+	width: 50%;
+	border: solid 1px #000000;
+	margin: 10px 0 0 0;
+	overflow: auto;
+	text-align: center;
+}
+
+#UserBadgesPane
+{
+	float: left;
+	width: 45%;
+	border: solid 1px #000000;
+	margin: 20px 0 0 0;
+	text-align: left;
+}
+
+#UserBadgesPane #UserBadges
+{
+	background-color: #ffffff;
+	text-align: center;
+}
+
+#UserBadgesPane #UserBadges h4
+{
+	background-color: #cccccc;
+	border-bottom: solid 1px #000000;
+	color: #333333;
+	margin: 0 0 0 0;
+	text-align: center;
+}
+
+#UserStatisticsPane
+{
+	clear: left;
+	float: left;
+	width: 45%;
+	border: solid 1px #000000;
+	margin: 20px 0 0 0;
+	text-align: left;
+}
+
+#UserStatisticsPane #UserStatistics
+{
+	background-color: #eeeeee;
+}
+
+#UserStatisticsPane #UserStatistics .Header
+{
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#UserStatisticsPane #UserStatistics h4
+{
+	background-color: #cccccc;
+	border-bottom: solid 1px #000000;
+	color: #333333;
+	margin: 0 0 0 0;
+	text-align: center;
+}
+
+#UserStatisticsPane #UserStatistics #Results
+{
+	padding: 5px 10px 10px 10px;
+}
+
+#UserStatisticsPane #UserStatistics .PanelToggle
+{
+	float: right;
+	margin: -20px 5px 0 0;
+	vertical-align: middle;
+}
+
+#UserStatisticsPane #UserStatistics .ProgressIndicator
+{
+	padding: 5px 10px 10px 10px;
+	text-align: center;
+}
+
+#UserStatisticsPane #UserStatistics .Statistic
+{
+	line-height: 1.8em;
+	margin: 0 auto;
+	width: 385px;
+}
+
+#UserStatisticsPane #UserStatistics .Label
+{
+	float: left;
+	text-align: right;
+	width: 178px;
+}
+
+#UserStatisticsPane #UserStatistics .Value
+{
+	float: right;
+	width: 177px;
+}
+
+#FriendRequestsPane,
+#FriendsPane
+{
+	border: solid 1px #000000;
+	margin: 20px 0 0 0;
+	text-align: center;
+}
+
+#FriendsPane
+{
+	clear: right;
+	float: right;
+	width: 50%;
+}
+
+#FriendRequestsPane
+{
+	clear: both;
+}
+
+
+#UserModelsContainer
+{
+	clear: both;
+	margin-top: 10px;
+}
+
+#Friends h4
+{
+	font-size: 10pt;
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.NoResults
+{
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.Badge
+{
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.Friend
+{
+	display:inline-block;
+	margin: 10px 10px 10px 10px;
+}
+
+.Friend .Summary
+{
+	margin-top: 5px;
+}
+
+.Friend .Options
+{
+	margin-top: 5px;
+	text-align: center;
+}
+
+#FriendRequests h4
+{
+	font-size: 10pt;
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#UserContainer .CollapsiblePanelHint
+{
+	color: #999999;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}

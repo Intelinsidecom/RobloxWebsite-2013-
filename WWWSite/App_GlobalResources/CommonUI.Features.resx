@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action.BackToTop" xml:space="preserve">
+    <value>Back To Top</value>
+  </data>
+  <data name="Action.BuyAccess" xml:space="preserve">
+    <value>Buy Access</value>
+  </data>
+  <data name="Action.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Action.sUpgradeNow" xml:space="preserve">
+    <value>Upgrade Now</value>
+  </data>
+  <data name="ActionsGetPremium" xml:space="preserve">
+    <value>Get Premium</value>
+  </data>
+  <data name="ActionsPremium" xml:space="preserve">
+    <value>Premium</value>
+  </data>
+  <data name="BuyAccessToGameForModal" xml:space="preserve">
+    <value>Would you like to buy access to the Place: {placeName} from {creatorName} for {robux}?</value>
+  </data>
+  <data name="Description.CopyRightMessage" xml:space="preserve">
+    <value>Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.</value>
+  </data>
+  <data name="Description.CopyRightMessageDynamicYear" xml:space="preserve">
+    <value>Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.</value>
+  </data>
+  <data name="Description.UnsupportedLanguage" xml:space="preserve">
+    <value>While some experiences may use the selected language, it is not fully supported by roblox.com.</value>
+  </data>
+  <data name="Description.UnsupportedLanguageModal" xml:space="preserve">
+    <value>{userLanguage} is currently unavailable on roblox.com. You will see in-game content in {platformLanguage}, and roblox.com has been set to English.</value>
+  </data>
+  <data name="Heading.BuyItem" xml:space="preserve">
+    <value>Buy Item</value>
+  </data>
+  <data name="Heading.ConfigurePrivateServer" xml:space="preserve">
+    <value>Configure Private Server</value>
+  </data>
+  <data name="Heading.PrivateServers" xml:space="preserve">
+    <value>Private Servers</value>
+  </data>
+  <data name="Heading.UnsupportedLanguage" xml:space="preserve">
+    <value>Unsupported Language</value>
+  </data>
+  <data name="Label.AboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="Label.Accessibility" xml:space="preserve">
+    <value>Accessibility</value>
+  </data>
+  <data name="Label.AuthenticationError" xml:space="preserve">
+    <value>Authentication Error</value>
+  </data>
+  <data name="Label.Avatar" xml:space="preserve">
+    <value>Avatar</value>
+  </data>
+  <data name="Label.AvatarShop" xml:space="preserve">
+    <value>Avatar Shop</value>
+  </data>
+  <data name="Label.Badges" xml:space="preserve">
+    <value>Badges</value>
+  </data>
+  <data name="Label.Careers" xml:space="preserve">
+    <value>Careers</value>
+  </data>
+  <data name="Label.Configure" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+  <data name="Label.ConfigureGame" xml:space="preserve">
+    <value>Configure Game</value>
+  </data>
+  <data name="Label.ConfigurePlace" xml:space="preserve">
+    <value>Configure Place</value>
+  </data>
+  <data name="Label.ConfigurePrivateServer" xml:space="preserve">
+    <value>Configure VIP Server</value>
+  </data>
+  <data name="Label.ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Label.Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Label.CreateGame" xml:space="preserve">
+    <value>Create Game</value>
+  </data>
+  <data name="Label.CreateGroup" xml:space="preserve">
+    <value>Create Group</value>
+  </data>
+  <data name="Label.CreateUserAd" xml:space="preserve">
+    <value>Create User Ad</value>
+  </data>
+  <data name="Label.Discover" xml:space="preserve">
+    <value>Discover</value>
+  </data>
+  <data name="Label.DisplayName" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="Label.Experience" xml:space="preserve">
+    <value>Experiences</value>
+  </data>
+  <data name="Label.Favorites" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="Label.Feeds" xml:space="preserve">
+    <value>My Feed</value>
+  </data>
+  <data name="Label.GiftCards" xml:space="preserve">
+    <value>Gift Cards</value>
+  </data>
+  <data name="Label.Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Label.Jobs" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="Label.Library" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="Label.Merch" xml:space="preserve">
+    <value>Merchandise</value>
+  </data>
+  <data name="Label.MyMoney" xml:space="preserve">
+    <value>My Transactions</value>
+  </data>
+  <data name="Label.OfficialStore" xml:space="preserve">
+    <value>Official Store</value>
+  </data>
+  <data name="Label.Parents" xml:space="preserve">
+    <value>Parents</value>
+  </data>
+  <data name="Label.PlaceStatistics" xml:space="preserve">
+    <value>Place Statistics</value>
+  </data>
+  <data name="Label.Players" xml:space="preserve">
+    <value>Players</value>
+  </data>
+  <data name="Label.Privacy" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="Label.RealNameVerified" xml:space="preserve">
+    <value>Real Name Verified</value>
+  </data>
+  <data name="Label.RedeemRobloxCards" xml:space="preserve">
+    <value>Redeem Roblox Cards</value>
+  </data>
+  <data name="Label.sAvatar" xml:space="preserve">
+    <value>Avatar</value>
+  </data>
+  <data name="Label.sBlog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="Label.sBrowse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="Label.sBuildersClub" xml:space="preserve">
+    <value>Builders Club</value>
+  </data>
+  <data name="Label.sCatalog" xml:space="preserve">
+    <value>Catalog</value>
+  </data>
+  <data name="Label.sDevelop" xml:space="preserve">
+    <value>Develop</value>
+  </data>
+  <data name="Label.sEvents" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="Label.sForum" xml:space="preserve">
+    <value>Forum</value>
+  </data>
+  <data name="Label.sFriends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="Label.sGames" xml:space="preserve">
+    <value>Games</value>
+  </data>
+  <data name="Label.sGroups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="Label.sHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Label.sInventory" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="Label.sLeaderboards" xml:space="preserve">
+    <value>Leaderboards</value>
+  </data>
+  <data name="Label.sLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Label.sMessages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="Label.sMore" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="Label.sOr" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="Label.sPeople" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="Label.sProfile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Label.sRobux" xml:space="preserve">
+    <value>Robux</value>
+  </data>
+  <data name="Label.sSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Label.sSearchPhrase" xml:space="preserve">
+    <value>Search \"{phrase}\" in {location}</value>
+  </data>
+  <data name="Label.sSearchPhraseV2" xml:space="preserve">
+    <value>in {location}</value>
+  </data>
+  <data name="Label.sShop" xml:space="preserve">
+    <value>Shop</value>
+  </data>
+  <data name="Label.sSignUp" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="Label.Store" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="Label.sTrade" xml:space="preserve">
+    <value>Trade</value>
+  </data>
+  <data name="Label.Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Label.Terms" xml:space="preserve">
+    <value>Terms</value>
+  </data>
+  <data name="Label.TermsOfUse" xml:space="preserve">
+    <value>Terms of Use</value>
+  </data>
+  <data name="Label.Thanks" xml:space="preserve">
+    <value>Thanks</value>
+  </data>
+  <data name="Label.Upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+</root>
