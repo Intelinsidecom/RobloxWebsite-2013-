@@ -1693,11 +1693,7 @@
     <Compile Include="Entities\Account.cs" />
     <Compile Include="Entities\AccountStatus.cs" />
     <Compile Include="Factories\RolesDomainFactories.cs" />
-    <Compile Include="Factories\IRole.cs" />
-    <Compile Include="Factories\IRoleSetReader.cs" />
-    <Compile Include="Factories\IRoleSet.cs" />
     <Compile Include="Factories\IUserEmailFactory.cs" />
-    <Compile Include="Factories\IUserEmail.cs" />
     <Compile Include="Factories\ICredentialValidator.cs" />
     <Compile Include="Factories\CredentialValidator.cs" />
     <Compile Include="Factories\AuthenticationDomainFactories.cs" />

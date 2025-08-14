@@ -549,19 +549,19 @@
       <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Math.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.Commands">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Membership.Commands.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.Commands.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.Extensions">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Membership.Extensions.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.UserDataAudit">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Membership.UserDataAudit.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.UserDataAudit.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.UserDataAuditCore">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Membership.UserDataAuditCore.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.UserDataAuditCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\Assemblies\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.dll</HintPath>
@@ -579,221 +579,221 @@
       <HintPath>..\..\WWWSite\bin\Roblox.Roles.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Moderation">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Moderation.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Moderation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Notifications">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Notifications.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Notifications.AbTesting">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Notifications.AbTesting.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.AbTesting.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Notifications.Core">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Notifications.Core.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Notifications.Push">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Notifications.Push.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.Push.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Notifications.Stream">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Notifications.Stream.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.Stream.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Outfits">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Outfits.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Outfits.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.OwnershipV2">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.OwnershipV2.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.OwnershipV2.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Party">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Party.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Party.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Permissions">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Permissions.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Permissions.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Permissions.Core">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Permissions.Core.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Permissions.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.PolicyLookup">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.PolicyLookup.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.PolicyLookup.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.PremiumFeatures">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.PremiumFeatures.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.PremiumFeatures.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Presence">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Presence.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Presence.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Privacy">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Privacy.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Privacy.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Security">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Security.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Security.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Social">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Social.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Social.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.StaticContent">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.StaticContent.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.StaticContent.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Studio">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Studio.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Studio.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TeamCreate">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.TeamCreate.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.TeamCreate.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TeamCreate.Notifications">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.TeamCreate.Notifications.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.TeamCreate.Notifications.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Throttling">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Throttling.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Throttling.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Thumbnails.Repository">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Thumbnails.Repository.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Thumbnails.Repository.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TranslationStorage">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.TranslationStorage.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.TranslationStorage.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TwoStepVerification">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.TwoStepVerification.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.TwoStepVerification.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.UniverseDisplayInformation">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.UniverseDisplayInformation.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.UniverseDisplayInformation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Universes.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Universes.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.UniverseSettings">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.UniverseSettings.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.UniverseSettings.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.UserBlock.Core">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.UserBlock.Core.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.UserBlock.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.UserSetting">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.UserSetting.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.UserSetting.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.VirtualCurrency">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.VirtualCurrency.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.VirtualCurrency.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.XboxLive">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.XboxLive.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Platform.XboxLive.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.PremiumFeatures">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.PremiumFeatures.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.PremiumFeatures.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.PremiumFeatures.Models">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.PremiumFeatures.Models.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.PremiumFeatures.Models.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Random">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Random.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Random.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RealTimeNotifications">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.RealTimeNotifications.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.RealTimeNotifications.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RealTimeNotifications.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.RealTimeNotifications.Client.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.RealTimeNotifications.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Redis.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis.Lru">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Redis.Lru.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Redis.Lru.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RequestContext">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.RequestContext.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.RequestContext.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RestClientBase">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.RestClientBase.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.RestClientBase.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Segmentation.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Segmentation.Client.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Segmentation.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Sentinels, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Sentinels.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Serialization.Json">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Serialization.Json.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Serialization.Json.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ServiceDiscovery">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.ServiceDiscovery.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.ServiceDiscovery.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.StaticContent.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.StaticContent.Client.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.StaticContent.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TextFilter">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.TextFilter.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.TextFilter.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.TextFilter.Client.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.TextFilter.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Thumbnails.RequestValidation">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Thumbnails.RequestValidation.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Thumbnails.RequestValidation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Thumbs">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Thumbs.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Thumbs.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Time">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Time.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Time.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TrackingQueue">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.TrackingQueue.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.TrackingQueue.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TransactionEvents">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.TransactionEvents.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.TransactionEvents.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TranslationResources">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.TranslationResources.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.TranslationResources.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.UserCacheMigrationSettings">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.UserCacheMigrationSettings.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.UserCacheMigrationSettings.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Users">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Users.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Users.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Users.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Users.Client.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Users.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Attributes">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Attributes.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Authentication">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Code">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Code.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Code.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Core">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Core.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Devices">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Devices.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Devices.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.ElevatedActions">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.ElevatedActions.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.ElevatedActions.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Metrics">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Metrics.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Metrics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Mvc">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Mvc.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Presence">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Presence.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Presence.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.SEO">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.SEO.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.SEO.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.StaticContent">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.StaticContent.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.StaticContent.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Thumbnails">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Web.Thumbnails.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.Thumbnails.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.WebsiteSettings">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.WebsiteSettings.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.WebsiteSettings.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.YouTube">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.YouTube.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.YouTube.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -1688,6 +1688,8 @@
     <Compile Include="WebCode\Core\RobloxWebsiteLogger.cs" />
     <Compile Include="WebCode\Resources\RobloxResourceSet.cs" />
     <Compile Include="Showcases\Entities\Showcase.cs" />
+    <Compile Include="Showcases\Entities\ShowcaseItem.cs" />
+    <Compile Include="Showcases\Entities\ShowcaseType.cs" />
     <Compile Include="Entities\Account.cs" />
     <Compile Include="Entities\AccountStatus.cs" />
     <Compile Include="Factories\RolesDomainFactories.cs" />

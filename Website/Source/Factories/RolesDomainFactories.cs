@@ -77,6 +77,16 @@ namespace Roblox.Platform.Email
         {
             return new StubUserEmail();
         }
+        
+        public IUserEmail GetByEmail(string email)
+        {
+            return new StubUserEmail();
+        }
+        
+        public ICollection<IUserEmail> GetEmailsForUser(long userId)
+        {
+            return new List<IUserEmail> { new StubUserEmail() };
+        }
     }
     
     internal class StubUserEmail : IUserEmail

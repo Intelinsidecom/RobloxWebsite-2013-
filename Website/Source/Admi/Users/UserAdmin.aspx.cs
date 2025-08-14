@@ -105,7 +105,7 @@ namespace Roblox.Website.Admi.Users
             var emailAddress = _userEmailFactory.GetCurrentVerified(IUser);
             var userEmail = _userEmailFactory.GetByEmail(emailAddress != null ? emailAddress.EmailAddress.Address : "");
             // HACK: Do we even need IsApproved anymore?
-            var account = AccountEntity.MustGet(IUser.AccountId);
+            var account = AccountEntity.Get(IUser.AccountId);
 
             rbxUpdateUserPane.Model = new UpdateUserViewModel()
             {

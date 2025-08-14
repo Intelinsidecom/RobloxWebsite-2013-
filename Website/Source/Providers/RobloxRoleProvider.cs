@@ -13,7 +13,7 @@ namespace Roblox.Website.Providers
     {
         private IUserFactory _UserFactory = Global.MembershipDomainFactories.UserFactory;
         private IRoleSetReader _RoleSetReader = Global.RolesDomainFactories.RoleSetReader;
-        private IRoleSetValidator _RoleSetValidator = Global.MembershipDomainFactories.RoleSetValidator;
+        private Roblox.Platform.Membership.IRoleSetValidator _RoleSetValidator = Global.MembershipDomainFactories.RoleSetValidator;
 
         public override string ApplicationName { get; set; }
 
