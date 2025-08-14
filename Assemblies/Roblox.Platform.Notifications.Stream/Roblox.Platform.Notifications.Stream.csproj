@@ -13,47 +13,47 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Notifications.Core">
-      <HintPath>..\..\full\Roblox.Platform.Notifications.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Notifications.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis">
-      <HintPath>..\..\full\Roblox.Redis.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
-      <HintPath>..\..\full\StackExchange.Redis.dll</HintPath>
+      <HintPath>..\..\Website\bin\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Diagnostics">
-      <HintPath>..\..\full\Roblox.Diagnostics.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RealTimeNotifications">
-      <HintPath>..\..\full\Roblox.RealTimeNotifications.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.RealTimeNotifications.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis.Lru">
-      <HintPath>..\..\full\Roblox.Redis.Lru.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Redis.Lru.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

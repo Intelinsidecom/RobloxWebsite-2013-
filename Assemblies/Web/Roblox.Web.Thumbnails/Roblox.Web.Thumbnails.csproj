@@ -13,23 +13,23 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\full\Roblox.Platform.EventStream.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Thumbnails.Client" />
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream.WebEvents">
-      <HintPath>..\..\full\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
   </ItemGroup>

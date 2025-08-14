@@ -15,37 +15,37 @@
     <Reference Include="AWSSDK.SQS" />
     <Reference Include="AWSSDK.Core" />
     <Reference Include="Roblox.Amazon.Core">
-      <HintPath>..\..\full\Roblox.Amazon.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Amazon.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\full\Roblox.Sentinels.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Coordination">
-      <HintPath>..\..\full\Roblox.Coordination.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Coordination.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Time">
-      <HintPath>..\..\full\Roblox.Time.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Time.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\full\Roblox.FloodCheckers.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Redis">
-      <HintPath>..\..\full\Roblox.FloodCheckers.Redis.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\full\System.Configuration.ConfigurationManager.dll</HintPath>
+      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

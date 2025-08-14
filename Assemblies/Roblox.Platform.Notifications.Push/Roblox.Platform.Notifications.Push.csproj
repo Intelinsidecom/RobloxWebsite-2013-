@@ -13,98 +13,98 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Notifications.Core">
-      <HintPath>..\..\full\Roblox.Platform.Notifications.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Notifications.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Localization.Accounts">
-      <HintPath>..\..\full\Roblox.Platform.Localization.Accounts.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Accounts.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TranslationResources">
-      <HintPath>..\..\full\Roblox.TranslationResources.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.TranslationResources.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="AWSSDK.SimpleNotificationService" />
     <Reference Include="Roblox.Amazon.Sns">
-      <HintPath>..\..\full\Roblox.Amazon.Sns.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Amazon.Sns.dll</HintPath>
     </Reference>
     <Reference Include="AWSSDK.Core" />
     <Reference Include="Roblox.Amazon.Sqs">
-      <HintPath>..\..\full\Roblox.Amazon.Sqs.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Amazon.Sqs.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Redis">
-      <HintPath>..\..\full\Roblox.Redis.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Redis.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
-      <HintPath>..\..\full\StackExchange.Redis.dll</HintPath>
+      <HintPath>..\..\Website\bin\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Privacy">
-      <HintPath>..\..\full\Roblox.Platform.Privacy.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Privacy.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>..\..\full\Roblox.Platform.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Locking">
-      <HintPath>..\..\full\Roblox.Locking.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Locking.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\full\Roblox.Platform.EventStream.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Diagnostics">
-      <HintPath>..\..\full\Roblox.Diagnostics.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities">
-      <HintPath>..\..\full\Roblox.Entities.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.Data">
-      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Coordination">
-      <HintPath>..\..\full\Roblox.Coordination.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Coordination.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common.NetStandard">
-      <HintPath>..\..\full\Roblox.Common.NetStandard.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Common.NetStandard.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream.WebEvents">
-      <HintPath>..\..\full\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

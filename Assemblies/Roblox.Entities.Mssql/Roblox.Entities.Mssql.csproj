@@ -13,13 +13,13 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Data.SqlClient">
-      <HintPath>..\..\full\System.Data.SqlClient.dll</HintPath>
+      <HintPath>..\..\Website\bin\System.Data.SqlClient.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Data">
-      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

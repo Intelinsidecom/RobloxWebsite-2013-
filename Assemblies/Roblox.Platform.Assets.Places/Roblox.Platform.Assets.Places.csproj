@@ -13,41 +13,41 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Data">
-      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities">
-      <HintPath>..\..\full\Roblox.Entities.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.Assets.Places">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetsCore">
-      <HintPath>..\..\full\Roblox.Platform.AssetsCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
   </ItemGroup>

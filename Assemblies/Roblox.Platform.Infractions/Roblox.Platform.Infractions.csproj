@@ -13,16 +13,16 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\full\Roblox.FloodCheckers.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Redis">
-      <HintPath>..\..\full\Roblox.FloodCheckers.Redis.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Redis.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

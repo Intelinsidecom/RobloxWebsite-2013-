@@ -14,16 +14,16 @@
   <ItemGroup>
     <Reference Include="Roblox.PolicyLookup" />
     <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>..\..\full\Roblox.Platform.Demographics.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>..\..\full\Roblox.Platform.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RequestContext">
-      <HintPath>..\..\full\Roblox.RequestContext.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

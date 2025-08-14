@@ -17,7 +17,7 @@
       </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
       <HintPath>
@@ -25,7 +25,7 @@
     </Reference>
     <Reference Include="Roblox.Permissions.Client" />
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Groups">
       <HintPath>
@@ -36,21 +36,21 @@
       </HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.PermissionResolution.Client" />
     <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetsCore">
-      <HintPath>..\..\full\Roblox.Platform.AssetsCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

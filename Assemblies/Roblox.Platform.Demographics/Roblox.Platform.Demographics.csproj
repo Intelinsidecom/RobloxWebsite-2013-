@@ -13,80 +13,80 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication.AccountSecurityTickets">
-      <HintPath>..\..\full\Roblox.Platform.Authentication.AccountSecurityTickets.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Authentication.AccountSecurityTickets.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.Delivery">
-      <HintPath>..\..\full\Roblox.Platform.Email.Delivery.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Email.Delivery.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
     <Reference Include="PhoneNumbers" />
     <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Demographics">
-      <HintPath>..\..\full\Roblox.Demographics.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Demographics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MaxMind.GeoIP2">
-      <HintPath>..\..\full\Roblox.MaxMind.GeoIP2.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.MaxMind.GeoIP2.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.UserDataAudit">
-      <HintPath>..\..\full\Roblox.Platform.Membership.UserDataAudit.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.UserDataAudit.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TranslationStorage">
-      <HintPath>..\..\full\Roblox.Platform.TranslationStorage.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.TranslationStorage.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.UserDataAuditCore">
-      <HintPath>..\..\full\Roblox.Platform.Membership.UserDataAuditCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.UserDataAuditCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.IpAddresses">
-      <HintPath>..\..\full\Roblox.Platform.IpAddresses.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.IpAddresses.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Localization.Core">
-      <HintPath>..\..\full\Roblox.Platform.Localization.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Users">
-      <HintPath>..\..\full\Roblox.Users.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Users.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Data">
-      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities">
-      <HintPath>..\..\full\Roblox.Entities.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.Common">
-      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

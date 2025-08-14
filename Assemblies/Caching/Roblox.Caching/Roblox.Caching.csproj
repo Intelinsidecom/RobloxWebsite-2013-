@@ -13,32 +13,32 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.EventLog">
-      <HintPath>D:\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>D:\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>D:\full\System.Configuration.ConfigurationManager.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
-      <HintPath>D:\full\StackExchange.Redis.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MemCachedClient">
-      <HintPath>D:\full\Roblox.MemCachedClient.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.MemCachedClient.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="Roblox.Common.NetStandard">
-      <HintPath>D:\full\Roblox.Common.NetStandard.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Common.NetStandard.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis">
-      <HintPath>D:\full\Roblox.Redis.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Redis.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

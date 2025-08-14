@@ -13,116 +13,116 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.AccountPins">
-      <HintPath>D:\full\Roblox.Platform.AccountPins.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.AccountPins.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>D:\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Devices">
-      <HintPath>D:\full\Roblox.Web.Devices.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Web.Devices.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Marketing">
-      <HintPath>D:\full\Roblox.Platform.Marketing.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Marketing.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Caching">
-      <HintPath>D:\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Captcha.Captcha.V1.CaptchaAPI.Client" />
     <Reference Include="Roblox.EventLog">
-      <HintPath>D:\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core.Api" />
     <Reference Include="Roblox.Platform.TwoStepVerification">
-      <HintPath>D:\full\Roblox.Platform.TwoStepVerification.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.TwoStepVerification.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>D:\full\Roblox.Platform.Authentication.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>D:\full\Roblox.FloodCheckers.Core.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>D:\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Platform.Captcha">
-      <HintPath>D:\full\Roblox.Platform.Captcha.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Captcha.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web">
-      <HintPath>D:\full\Roblox.Web.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Web.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Security">
-      <HintPath>D:\full\Roblox.Platform.Security.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Security.dll</HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
-      <HintPath>D:\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.User">
-      <HintPath>D:\full\Roblox.Platform.Email.User.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Email.User.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>D:\full\Roblox.Platform.Demographics.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Devices">
-      <HintPath>D:\full\Roblox.Platform.Devices.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Devices.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RequestContext">
-      <HintPath>D:\full\Roblox.RequestContext.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Identities.Client" />
     <Reference Include="Roblox.Platform.XboxLive">
-      <HintPath>D:\full\Roblox.Platform.XboxLive.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.XboxLive.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>D:\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>D:\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Identities.Models">
-      <HintPath>D:\full\Roblox.Identities.Models.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Identities.Models.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.ServiceClient">
-      <HintPath>D:\full\Roblox.Http.ServiceClient.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>D:\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.Delivery">
-      <HintPath>D:\full\Roblox.Platform.Email.Delivery.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Email.Delivery.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Sms.Client" />
     <Reference Include="Roblox.Configuration">
-      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication.AccountSecurityTickets">
-      <HintPath>D:\full\Roblox.Platform.Authentication.AccountSecurityTickets.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Authentication.AccountSecurityTickets.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>D:\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.FloodCheckers.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.ElevatedActions">
-      <HintPath>D:\full\Roblox.Web.ElevatedActions.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Web.ElevatedActions.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AbTesting">
-      <HintPath>D:\full\Roblox.Platform.AbTesting.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.AbTesting.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AbTesting.Core">
-      <HintPath>D:\full\Roblox.Platform.AbTesting.Core.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.AbTesting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common.Web">
-      <HintPath>D:\full\Roblox.Common.Web.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Common.Web.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Floodcheckers">
-      <HintPath>D:\full\Roblox.Platform.Floodcheckers.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Floodcheckers.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication.AccountSecurity">
-      <HintPath>D:\full\Roblox.Platform.Authentication.AccountSecurity.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Authentication.AccountSecurity.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="Roblox.Users">
-      <HintPath>D:\full\Roblox.Users.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Users.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

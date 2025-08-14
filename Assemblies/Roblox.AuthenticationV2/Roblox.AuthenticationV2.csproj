@@ -16,43 +16,43 @@
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Platform.Authentication">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.Client">
-      <HintPath>..\..\full\Roblox.Http.Client.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.Client.Monitoring">
-      <HintPath>..\..\full\Roblox.Http.Client.Monitoring.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.Client.Monitoring.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\full\Roblox.Sentinels.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Pipeline">
-      <HintPath>..\..\full\Roblox.Pipeline.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Pipeline.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http">
-      <HintPath>..\..\full\Roblox.Http.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

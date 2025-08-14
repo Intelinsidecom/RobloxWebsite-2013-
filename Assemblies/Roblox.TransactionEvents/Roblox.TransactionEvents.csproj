@@ -13,10 +13,10 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\full\Roblox.Platform.EventStream.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

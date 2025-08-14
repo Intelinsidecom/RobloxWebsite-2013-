@@ -15,19 +15,19 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Data">
-      <HintPath>D:\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>D:\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Hashing">
-      <HintPath>D:\full\Roblox.Hashing.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Hashing.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

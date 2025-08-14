@@ -13,14 +13,14 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.Platform.EventStream.WebEvents">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\full\Roblox.Platform.EventStream.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Devices">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
@@ -32,48 +32,48 @@
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Data">
-      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities">
-      <HintPath>..\..\full\Roblox.Entities.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Locking">
-      <HintPath>..\..\full\Roblox.Locking.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Locking.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis">
-      <HintPath>..\..\full\Roblox.Redis.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Redis.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
-      <HintPath>..\..\full\StackExchange.Redis.dll</HintPath>
+      <HintPath>..\..\Website\bin\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Avatar.Client" />
     <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.ServiceClient">
-      <HintPath>..\..\full\Roblox.Http.ServiceClient.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\full\Roblox.Platform.AssetOwnership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetOwnership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.UniverseSettings">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
@@ -83,25 +83,25 @@
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ServiceDiscovery">
-      <HintPath>..\..\full\Roblox.ServiceDiscovery.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.ServiceDiscovery.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RealTimeNotifications">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetsCore">
-      <HintPath>..\..\full\Roblox.Platform.AssetsCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.Extensions">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>

@@ -14,26 +14,26 @@
   <ItemGroup>
     <Reference Include="Roblox.Billing.Client" />
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.PremiumFeatures.Models">
-      <HintPath>..\..\full\Roblox.PremiumFeatures.Models.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.PremiumFeatures.Models.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.PremiumFeatures.Client" />
     <Reference Include="Roblox.Platform.Localization.Accounts">
-      <HintPath>..\..\full\Roblox.Platform.Localization.Accounts.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Accounts.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>..\..\full\Roblox.Platform.Demographics.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

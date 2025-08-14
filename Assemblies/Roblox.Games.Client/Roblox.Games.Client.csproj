@@ -13,16 +13,16 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\full\System.Configuration.ConfigurationManager.dll</HintPath>
+      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

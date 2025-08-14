@@ -13,16 +13,16 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>D:\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Passwords.Client">
-      <HintPath>D:\full\Roblox.Passwords.Client.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Passwords.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>D:\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>D:\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.User">
       <HintPath>
@@ -41,38 +41,38 @@
       </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>D:\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
       <HintPath>
       </HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>D:\full\Roblox.FloodCheckers.Core.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Data">
-      <HintPath>D:\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>D:\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>D:\full\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox Server Class Library">
-      <HintPath>D:\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Common">
-      <HintPath>D:\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>D:\full\Roblox.Entities.Mssql.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

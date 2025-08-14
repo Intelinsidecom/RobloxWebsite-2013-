@@ -20,36 +20,36 @@
       <HintPath>..\..\full\Roblox.StaticContent.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.StaticContent">
       <HintPath>..\..\full\Roblox.Platform.StaticContent.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.ServiceClient">
-      <HintPath>..\..\full\Roblox.Http.ServiceClient.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.Client">
-      <HintPath>..\..\full\Roblox.Http.Client.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\full\Roblox.Sentinels.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RequestContext">
-      <HintPath>..\..\full\Roblox.RequestContext.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

@@ -13,25 +13,25 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="StackExchange.Redis">
-      <HintPath>D:\full\StackExchange.Redis.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Hashing">
-      <HintPath>D:\full\Roblox.Hashing.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>D:\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>D:\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ServiceDiscovery">
-      <HintPath>D:\full\Roblox.ServiceDiscovery.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.ServiceDiscovery.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>D:\full\System.Configuration.ConfigurationManager.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

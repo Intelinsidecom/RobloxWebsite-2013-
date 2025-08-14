@@ -5,13 +5,23 @@ param(
 
 Write-Host "Root path: $RootPath"
 
+# Cache all DLL files in the repository for faster lookup
+Write-Host "Caching DLL files for faster lookup..."
+$dllCache = @{}
+Get-ChildItem -Path (Split-Path -Path $RootPath -Parent) -Recurse -Filter *.dll -ErrorAction SilentlyContinue | ForEach-Object {
+    $dllCache[$_.Name] = $_.FullName
+}
+Write-Host "Cached $($dllCache.Count) DLL files."
+
 Write-Host "Searching for .csproj files..."
 $csprojFiles = Get-ChildItem -Path $RootPath -Recurse -Filter *.csproj
 Write-Host "Found $($csprojFiles.Count) .csproj files."
 $unresolved = @()
 
+$projectCount = 0
 foreach ($proj in $csprojFiles) {
-    Write-Host "Processing $($proj.FullName)..."
+    $projectCount++
+    Write-Host "Processing $($projectCount)/$($csprojFiles.Count): $($proj.Name)..."
     [xml]$xml = Get-Content $proj.FullName
     $changed = $false
 
@@ -87,19 +97,46 @@ foreach ($proj in $csprojFiles) {
         }
         
         # Replace 'full' paths with correct relative paths
-        if ($hintPath -like "*..\\..\\full\\*") {
+        $patternMatch = $hintPath -like "*..\..\full\*"
+        
+        # Also check for other 'full' path patterns
+        if (-not $patternMatch) {
+            $patternMatch = $hintPath -like "*D:\full\*"
+        }
+        
+        if ($patternMatch) {
+            # Extract filename, handling both ..\..\full\ and D:\full\ patterns
             $fileName = Split-Path $hintPath -Leaf
-            # Search for the project file first
-            $projectMatches = Get-ChildItem -Path $RootPath -Recurse -Filter "$fileName" -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq "$fileName" }
-            if ($projectMatches.Count -eq 0) {
-                # If no project file, search for DLL in bin directories
-                $dllMatches = Get-ChildItem -Path $RootPath -Recurse -Filter $fileName -ErrorAction SilentlyContinue | Where-Object { $_.Directory.Name -eq "bin" }
-                $projectMatches = $dllMatches
+            # Search specifically for this DLL in Website\bin and other bin directories
+            # First, try to find it in Website\bin directly
+            # Get the repository root path (parent of Assemblies and Website directories)
+            $repoRootPath = Split-Path -Path $RootPath -Parent
+            if ((Split-Path -Path $repoRootPath -Leaf) -eq "Assemblies") {
+                $repoRootPath = Split-Path -Path $repoRootPath -Parent
             }
-            if ($projectMatches.Count -eq 1) {
+            $websiteBinPath = Join-Path -Path $repoRootPath -ChildPath "Website\bin\$fileName"
+            if (Test-Path $websiteBinPath) {
+                $dllMatches = @([PSCustomObject]@{FullName = $websiteBinPath})
+            } else {
+                # Use the DLL cache for faster lookup
+                if ($dllCache.ContainsKey($fileName)) {
+                    $dllMatches = @([PSCustomObject]@{FullName = $dllCache[$fileName]})
+                } else {
+                    # Fallback to recursive search if not in cache
+                    $dllMatches = Get-ChildItem -Path $RootPath -Recurse -Filter $fileName -ErrorAction SilentlyContinue | 
+                        Where-Object { 
+                            $_.Name -eq $fileName -and 
+                            ($_.Extension -eq ".dll" -and ($_.Directory.Name -eq "bin" -or $_.FullName -like "*Website*bin*"))
+                        }
+                }
+            }
+            
+            Write-Host "DEBUG: Processing matches for $fileName, count: $($dllMatches.Count)"
+            if ($dllMatches.Count -eq 1) {
                 # Compute relative path manually
                 $from = $proj.DirectoryName
-                $to = $projectMatches[0].FullName
+                $to = $dllMatches[0].FullName
+                Write-Host "DEBUG: Using match: $($dllMatches[0].FullName)"
                 $fromUri = New-Object System.Uri("file:///$($from.Replace('\','/'))/")
                 $toUri = New-Object System.Uri("file:///$($to.Replace('\','/'))")
                 $relativeUri = $fromUri.MakeRelativeUri($toUri)
@@ -108,8 +145,26 @@ foreach ($proj in $csprojFiles) {
                 $changed = $true
                 Write-Host "Fixed 'full' HintPath in $($proj.Name): $fileName"
             }
+            elseif ($dllMatches.Count -eq 0) {
+                $unresolved += "'full' HintPath in $($proj.FullName): $hintPath - DLL not found"
+            }
             else {
-                $unresolved += "'full' HintPath in $($proj.FullName): $hintPath"
+                # Multiple matches found, try to find the most appropriate one
+                $websiteBinMatches = $dllMatches | Where-Object { $_.FullName -like "*Website*bin*" }
+                if ($websiteBinMatches.Count -gt 0) {
+                    # Use the one in Website\bin
+                    $from = $proj.DirectoryName
+                    $to = $websiteBinMatches[0].FullName
+                    $fromUri = New-Object System.Uri("file:///$($from.Replace('\','/'))/")
+                    $toUri = New-Object System.Uri("file:///$($to.Replace('\','/'))")
+                    $relativeUri = $fromUri.MakeRelativeUri($toUri)
+                    $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\')
+                    $hint.InnerText = $newRelative
+                    $changed = $true
+                    Write-Host "Fixed 'full' HintPath in $($proj.Name): $fileName"
+                } else {
+                    $unresolved += "'full' HintPath in $($proj.FullName): $hintPath - Multiple DLL matches found"
+                }
             }
             continue
         }
@@ -118,7 +173,13 @@ foreach ($proj in $csprojFiles) {
         $absPath = Join-Path -Path $proj.DirectoryName -ChildPath $hintPath
         if (-not (Test-Path $absPath)) {
             $fileName = Split-Path $hintPath -Leaf
-            $matches = Get-ChildItem -Path $RootPath -Recurse -Filter $fileName -ErrorAction SilentlyContinue
+            # Be more specific in our search - look for DLL files in bin directories
+            $matches = Get-ChildItem -Path $RootPath -Recurse -Filter $fileName -ErrorAction SilentlyContinue | 
+                Where-Object { 
+                    $_.Name -eq $fileName -and 
+                    ($_.Extension -eq ".dll" -and ($_.Directory.Name -eq "bin" -or $_.FullName -like "*Website*bin*"))
+                }
+            
             if ($matches.Count -eq 1) {
                 # Compute relative path manually
                 $from = $proj.DirectoryName
@@ -131,8 +192,12 @@ foreach ($proj in $csprojFiles) {
                 $changed = $true
                 Write-Host "Fixed HintPath in $($proj.Name): $fileName"
             }
+            elseif ($matches.Count -eq 0) {
+                $unresolved += "HintPath in $($proj.FullName): $hintPath - File not found"
+            }
             else {
-                $unresolved += "HintPath in $($proj.FullName): $hintPath"
+                # Multiple matches found
+                $unresolved += "HintPath in $($proj.FullName): $hintPath - Multiple matches found"
             }
         }
     }
@@ -146,5 +211,7 @@ if ($unresolved.Count -gt 0) {
     $unresolved | Sort-Object | Set-Content -Path $ReportPath -Encoding UTF8
     Write-Host "Unresolved references written to $ReportPath"
 } else {
-    Write-Host "All references resolved."
+    # Clear the report file if there are no unresolved references
+    Set-Content -Path $ReportPath -Value @() -Encoding UTF8
+    Write-Host "All references resolved. Report file cleared."
 }

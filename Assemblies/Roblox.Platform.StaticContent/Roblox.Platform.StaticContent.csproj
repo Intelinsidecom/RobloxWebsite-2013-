@@ -17,37 +17,37 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.CachingV2.Core">
-      <HintPath>..\..\full\Roblox.CachingV2.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.CachingV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.ServiceClient">
-      <HintPath>..\..\full\Roblox.Http.ServiceClient.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.CachingV2.MemoryCache">
-      <HintPath>..\..\full\Roblox.CachingV2.MemoryCache.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.CachingV2.MemoryCache.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.CachingV2.Diagnostics">
-      <HintPath>..\..\full\Roblox.CachingV2.Diagnostics.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.CachingV2.Diagnostics.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

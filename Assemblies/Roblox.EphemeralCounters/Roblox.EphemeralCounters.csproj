@@ -13,10 +13,10 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Collections">
-      <HintPath>..\..\full\Roblox.Collections.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters.Client">
       <HintPath>

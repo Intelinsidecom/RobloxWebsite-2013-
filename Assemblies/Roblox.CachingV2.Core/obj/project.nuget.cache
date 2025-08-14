@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NUTlUG4qEhXOsAnTPqU/R+2nPGxPpikWdgYRhTdpx1n071fCLvK4BFtr0DlC1+CyBOJ6548okPTsYxy7ahdDiA==",
+  "dgSpecHash": "FkHfMPcR3xw=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.CachingV2.Core\\Roblox.CachingV2.Core.csproj",
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.CachingV2.Core\\Roblox.CachingV2.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ricky\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\ricky\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

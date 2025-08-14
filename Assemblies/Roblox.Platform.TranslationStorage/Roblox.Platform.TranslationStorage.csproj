@@ -14,30 +14,30 @@
   <ItemGroup>
     <Reference Include="Roblox.TranslationStorage.Client" />
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Localization.Core">
-      <HintPath>..\..\full\Roblox.Platform.Localization.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

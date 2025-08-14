@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox Server Class Library</AssemblyName>
@@ -34,7 +34,7 @@
       <HintPath>..\Roblox.BucketStore\bin\Debug\net471\Roblox.BucketStore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\Roblox.EventLog\bin\Debug\net471\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\Roblox.CachingV2.Core\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetOwnership">
       <HintPath>..\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Platform.AssetOwnership.dll</HintPath>
@@ -78,7 +78,7 @@
       <HintPath>..\Roblox.Moderation\bin\Debug\net471\Roblox.Moderation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\Roblox.DataV2.Core\bin\Debug\net471\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\Roblox.CachingV2.Core\bin\Debug\netstandard2.0\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
       <HintPath>..\..\packages\StackExchange.Redis.2.2.4\lib\net471\StackExchange.Redis.dll</HintPath>
@@ -100,7 +100,7 @@
       <HintPath>..\Roblox.Entities.Mssql\bin\Debug\net471\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RequestContext">
-      <HintPath>..\Roblox.RequestContext\bin\Debug\net471\Roblox.RequestContext.dll</HintPath>
+      <HintPath>..\Roblox.RequestContext\bin\Debug\netstandard2.0\Roblox.RequestContext.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.UserCacheMigrationSettings">
       <HintPath>..\Roblox.UserCacheMigrationSettings\bin\Debug\net471\Roblox.UserCacheMigrationSettings.dll</HintPath>
@@ -124,7 +124,7 @@
       <HintPath>..\Roblox.ContentRatings\bin\Debug\net471\Roblox.ContentRatings.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Coordination">
-      <HintPath>..\Roblox.Coordination\bin\Debug\net471\Roblox.Coordination.dll</HintPath>
+      <HintPath>..\Roblox.Coordination\bin\Debug\netstandard2.0\Roblox.Coordination.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

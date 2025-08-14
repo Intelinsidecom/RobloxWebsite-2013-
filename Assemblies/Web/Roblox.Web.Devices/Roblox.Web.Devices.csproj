@@ -13,17 +13,17 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Devices">
-      <HintPath>..\..\full\Roblox.Platform.Devices.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Devices.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web">
-      <HintPath>..\..\full\Roblox.Web.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Web.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
   </ItemGroup>

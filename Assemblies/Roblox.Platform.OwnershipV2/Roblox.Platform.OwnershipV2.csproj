@@ -14,13 +14,13 @@
   <ItemGroup>
     <Reference Include="Roblox.OwnershipV2.Client" />
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

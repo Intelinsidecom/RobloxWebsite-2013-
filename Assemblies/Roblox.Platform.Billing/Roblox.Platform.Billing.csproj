@@ -13,41 +13,41 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities">
-      <HintPath>..\..\full\Roblox.Entities.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Billing">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.LiveGamer">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Billing.Client" />
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Locking">
-      <HintPath>..\..\full\Roblox.Locking.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Locking.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\full\Roblox.FloodCheckers.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\full\Roblox.Platform.AssetOwnership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetOwnership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Demographics">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
@@ -56,23 +56,23 @@
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.PremiumFeatures.Models">
-      <HintPath>..\..\full\Roblox.PremiumFeatures.Models.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.PremiumFeatures.Models.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.Delivery">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.FloodCheckers">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Users">
-      <HintPath>..\..\full\Roblox.Users.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Users.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.BillingTransactionEventPublisher">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>

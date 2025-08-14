@@ -13,21 +13,21 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
       <HintPath>
       </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\full\Roblox.Platform.AssetOwnership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetOwnership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
       <HintPath>
       </HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Thumbs">
       <HintPath>
@@ -42,23 +42,23 @@
       </HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\full\Roblox.FloodCheckers.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.AssetMedia">
       <HintPath>
       </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\full\Roblox.Platform.EventStream.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream.WebEvents">
       <HintPath>
@@ -71,23 +71,23 @@
     <Reference Include="Roblox.Currency.Client" />
     <Reference Include="Roblox.Marketplace.Client" />
     <Reference Include="Roblox.TransactionEvents">
-      <HintPath>..\..\full\Roblox.TransactionEvents.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.TransactionEvents.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.YouTube">
       <HintPath>
       </HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetsCore">
-      <HintPath>..\..\full\Roblox.Platform.AssetsCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Drawing">
       <HintPath>
@@ -99,10 +99,10 @@
       </HintPath>
     </Reference>
     <Reference Include="Roblox.Economy.Common">
-      <HintPath>..\..\full\Roblox.Economy.Common.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Economy.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Economy">
-      <HintPath>..\..\full\Roblox.Economy.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Economy.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.VirtualCurrency">
       <HintPath>

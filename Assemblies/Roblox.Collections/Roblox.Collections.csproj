@@ -13,10 +13,10 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Random">
-      <HintPath>..\..\full\Roblox.Random.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Random.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

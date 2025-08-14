@@ -13,11 +13,11 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>D:\full\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
   </ItemGroup>

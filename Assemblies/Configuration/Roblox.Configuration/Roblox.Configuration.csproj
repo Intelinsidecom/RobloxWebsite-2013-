@@ -13,13 +13,13 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.EventLog">
-      <HintPath>D:\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>D:\full\System.Configuration.ConfigurationManager.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

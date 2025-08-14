@@ -13,24 +13,24 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.DurableCounters.Client" />
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Diagnostics">
-      <HintPath>..\..\full\Roblox.Diagnostics.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Collections">
-      <HintPath>..\..\full\Roblox.Collections.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

@@ -13,13 +13,13 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Groups">
-      <HintPath>..\..\full\Roblox.Platform.Groups.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Groups.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

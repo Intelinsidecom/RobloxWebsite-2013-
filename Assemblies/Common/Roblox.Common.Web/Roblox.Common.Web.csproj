@@ -13,26 +13,26 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Diagnostics">
-      <HintPath>D:\full\Roblox.Diagnostics.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Common">
-      <HintPath>D:\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Infrastructure">
-      <HintPath>D:\full\Roblox.Platform.Infrastructure.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
-      <HintPath>D:\full\System.Net.Http.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\roslyn\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="Microsoft.Owin" />
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Configuration">
-      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.WebsiteSettings">
-      <HintPath>D:\full\Roblox.WebsiteSettings.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.WebsiteSettings.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

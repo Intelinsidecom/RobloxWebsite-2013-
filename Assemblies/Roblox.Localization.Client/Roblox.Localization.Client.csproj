@@ -13,31 +13,31 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RequestContext">
-      <HintPath>..\..\full\Roblox.RequestContext.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.Client">
-      <HintPath>..\..\full\Roblox.Http.Client.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.ServiceClient">
-      <HintPath>..\..\full\Roblox.Http.ServiceClient.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Collections">
-      <HintPath>..\..\full\Roblox.Collections.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\full\System.Configuration.ConfigurationManager.dll</HintPath>
+      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\full\Roblox.Sentinels.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

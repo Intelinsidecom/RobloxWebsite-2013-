@@ -13,36 +13,36 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.GameInstances.Client">
-      <HintPath>..\..\full\Roblox.GameInstances.Client.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.GameInstances.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Devices">
-      <HintPath>..\..\full\Roblox.Platform.Devices.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Devices.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Hashing">
-      <HintPath>..\..\full\Roblox.Hashing.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

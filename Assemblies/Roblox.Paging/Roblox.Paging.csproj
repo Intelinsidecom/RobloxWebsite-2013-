@@ -13,13 +13,13 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Hashing">
-      <HintPath>..\..\full\Roblox.Hashing.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Hashing.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

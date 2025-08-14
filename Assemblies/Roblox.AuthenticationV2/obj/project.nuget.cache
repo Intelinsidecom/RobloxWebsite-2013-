@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6WrBO8Q3x+W0R+8G0vPixj11h7doHfwK1KujOAkTQBE1IRJoG40JNu0YrUe9GFcCW3XH5dkVecm5Js9lZfxZ3Q==",
+  "dgSpecHash": "jx0/0KKVpnQ=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.AuthenticationV2\\Roblox.AuthenticationV2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.AuthenticationV2\\Roblox.AuthenticationV2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -13,22 +13,22 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Data">
-      <HintPath>D:\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>D:\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Configuration">
-      <HintPath>D:\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Common">
-      <HintPath>D:\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>D:\full\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

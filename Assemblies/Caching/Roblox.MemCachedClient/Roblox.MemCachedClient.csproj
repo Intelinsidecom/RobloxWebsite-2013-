@@ -13,13 +13,13 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="DnsClient">
-      <HintPath>..\..\full\DnsClient.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\full\Roblox.Sentinels.dll</HintPath>
+      <HintPath>..\..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

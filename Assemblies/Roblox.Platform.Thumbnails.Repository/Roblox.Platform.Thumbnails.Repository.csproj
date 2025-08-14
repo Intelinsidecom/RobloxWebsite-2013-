@@ -13,20 +13,20 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.BucketStore">
-      <HintPath>..\..\full\Roblox.BucketStore.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.BucketStore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Amazon">
-      <HintPath>..\..\full\Roblox.Amazon.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Amazon.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

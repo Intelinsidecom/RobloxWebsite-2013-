@@ -17,10 +17,10 @@
     </Reference>
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\full\System.Configuration.ConfigurationManager.dll</HintPath>
+      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
