@@ -44,7 +44,7 @@ public abstract class LoggerBase : ILogger
 		}
 		if (LogMethodName || LogClassAndMethodName)
 		{
-			MethodBase method = new StackFrame(3, needFileInfo: true).GetMethod();
+			MethodBase method = new StackFrame(3, true).GetMethod();
 			string arg2 = ((method != null) ? method.Name : "<Unknown method>");
 			string arg3 = "";
 			if (LogClassAndMethodName)

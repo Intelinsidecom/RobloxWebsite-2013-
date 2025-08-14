@@ -21,11 +21,11 @@ public class GroupConfigElement : ConfigurationElement
 	{
 		get
 		{
-			return (string)((ConfigurationElement)this)[_GroupNameProperty];
+			return (string)this[_GroupNameProperty];
 		}
 		set
 		{
-			((ConfigurationElement)this)[_GroupNameProperty] = value;
+			this[_GroupNameProperty] = value;
 		}
 	}
 
@@ -33,11 +33,11 @@ public class GroupConfigElement : ConfigurationElement
 	{
 		get
 		{
-			return (TimeSpan)((ConfigurationElement)this)[_UpdateIntervalProperty];
+			return (TimeSpan)this[_UpdateIntervalProperty];
 		}
 		set
 		{
-			((ConfigurationElement)this)[_UpdateIntervalProperty] = value;
+			this[_UpdateIntervalProperty] = value;
 		}
 	}
 
@@ -45,11 +45,11 @@ public class GroupConfigElement : ConfigurationElement
 	{
 		get
 		{
-			return (string)((ConfigurationElement)this)[_ConfigurationServiceEndpointProperty];
+			return (string)this[_ConfigurationServiceEndpointProperty];
 		}
 		set
 		{
-			((ConfigurationElement)this)[_ConfigurationServiceEndpointProperty] = value;
+			this[_ConfigurationServiceEndpointProperty] = value;
 		}
 	}
 
@@ -57,11 +57,11 @@ public class GroupConfigElement : ConfigurationElement
 	{
 		get
 		{
-			return (bool)((ConfigurationElement)this)[_UseConfigurationServiceEnabledProperty];
+			return (bool)this[_UseConfigurationServiceEnabledProperty];
 		}
 		set
 		{
-			((ConfigurationElement)this)[_UseConfigurationServiceEnabledProperty] = value;
+			this[_UseConfigurationServiceEnabledProperty] = value;
 		}
 	}
 
@@ -69,11 +69,11 @@ public class GroupConfigElement : ConfigurationElement
 	{
 		get
 		{
-			return (string)((ConfigurationElement)this)[_OverrideFileNameProperty];
+			return (string)this[_OverrideFileNameProperty];
 		}
 		set
 		{
-			((ConfigurationElement)this)[_OverrideFileNameProperty] = value;
+			this[_OverrideFileNameProperty] = value;
 		}
 	}
 

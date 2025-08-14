@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jcyncwkEuEEjt4RCSvPo0WULxB56DXI2r6aNnhKkTi/qYtAP5ftBoco3gFh2eZeHRZBc3AfLnKdtmeoWYuA3lA==",
+  "dgSpecHash": "Uxua2w+Io44=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.EventLog.Windows\\Roblox.EventLog.Windows.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\EventLog\\Roblox.EventLog.Windows\\Roblox.EventLog.Windows.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

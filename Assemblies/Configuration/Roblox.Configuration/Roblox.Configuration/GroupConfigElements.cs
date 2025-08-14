@@ -14,33 +14,33 @@ public class GroupConfigElements : ConfigurationElementCollection
 	{
 		get
 		{
-			return (GroupConfigElement)(object)((ConfigurationElementCollection)this).BaseGet(index);
+			return (GroupConfigElement)(object)this.BaseGet(index);
 		}
 		set
 		{
-			if (((ConfigurationElementCollection)this).BaseGet(index) != null)
+			if (this.BaseGet(index) != null)
 			{
-				((ConfigurationElementCollection)this).BaseRemoveAt(index);
+				this.BaseRemoveAt(index);
 			}
-			((ConfigurationElementCollection)this).BaseAdd(index, (ConfigurationElement)(object)value);
+			this.BaseAdd(index, (ConfigurationElement)(object)value);
 		}
 	}
 
-	public GroupConfigElement this[string name] => (GroupConfigElement)(object)((ConfigurationElementCollection)this).BaseGet((object)name);
+	public GroupConfigElement this[string name] => (GroupConfigElement)(object)this.BaseGet((object)name);
 
 	public void Add(GroupConfigElement item)
 	{
-		((ConfigurationElementCollection)this).BaseAdd((ConfigurationElement)(object)item);
+		this.BaseAdd((ConfigurationElement)(object)item);
 	}
 
 	public void Remove(GroupConfigElement item)
 	{
-		((ConfigurationElementCollection)this).BaseRemove((object)item);
+		this.BaseRemove((object)item);
 	}
 
 	public void RemoveAt(int index)
 	{
-		((ConfigurationElementCollection)this).BaseRemoveAt(index);
+		this.BaseRemoveAt(index);
 	}
 
 	protected override ConfigurationElement CreateNewElement()

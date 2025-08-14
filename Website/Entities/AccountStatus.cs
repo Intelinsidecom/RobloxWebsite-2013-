@@ -84,6 +84,8 @@ namespace Roblox
 
 	public static byte OkId => _OkLazy.Value.ID;
 
+	public static AccountStatus Ok => _OkLazy.Value;
+
 	public static byte SuppressedId => _SuppressedLazy.Value.ID;
 
 	public static byte DeletedId => _DeletedLazy.Value.ID;

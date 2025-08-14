@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Roblox.Web.Code;
+using Roblox.Web.StaticContent.Properties;
+using static Roblox.StaticFilesManager;
 
 namespace Roblox.Web.StaticContent
 {
@@ -37,7 +39,7 @@ namespace Roblox.Web.StaticContent
             var bundleResult = Roblox.Web.Code.RobloxScripts.CreateBundle(
                 name,
                 files,
-                Roblox.Web.Code.Properties.Settings.MinifyJavascript
+                Settings.Default.MinifyJavaScript
             );
             return new RobloxScriptBundle(bundleResult);
         }
@@ -47,7 +49,7 @@ namespace Roblox.Web.StaticContent
             var bundleResult = Roblox.Web.Code.RobloxScripts.CreateBundle(
                 name,
                 files,
-                Roblox.Web.Code.Properties.Settings.MinifyJavascript
+                Settings.Default.MinifyJavaScript
             );
             return new RobloxScriptBundle(bundleResult);
         }
@@ -66,7 +68,7 @@ namespace Roblox.Web.StaticContent
         /// </summary>
         public static string GetUrl(string fileName)
         {
-            if (Roblox.WebsiteSettings.Properties.Settings.Default.PushStaticImagesToS3)
+            if (Settings.Default.PushStaticImagesToS3)
             {
                 if (fileName.StartsWith("/"))
                 {
@@ -77,7 +79,7 @@ namespace Roblox.Web.StaticContent
                     // Log exception here if needed
                     return fileName;
                 }
-                return Roblox.Web.Code.StaticFilesManager.GetUrlByFileName(fileName, System.Web.HttpContext.Current.Request);
+                return GetUrlByFileName(fileName, System.Web.HttpContext.Current.Request);
             }
             return System.Web.VirtualPathUtility.ToAbsolute(fileName);
         }
@@ -89,7 +91,7 @@ namespace Roblox.Web.StaticContent
             var bundleResult = Roblox.Web.Code.RobloxCSS.CreateBundle(
                 name,
                 files,
-                Roblox.Web.Code.Properties.Settings.MinifyCss
+                Settings.Default.MinifyCss
             );
             return new RobloxCssBundle(bundleResult);
         }
@@ -101,7 +103,7 @@ namespace Roblox.Web.StaticContent
             var bundleResult = Roblox.Web.Code.RobloxCSS.CreateBundle(
                 name,
                 files,
-                Roblox.Web.Code.Properties.Settings.MinifyCss
+                Settings.Default.MinifyCss
             );
             return new RobloxCssBundle(bundleResult);
         }

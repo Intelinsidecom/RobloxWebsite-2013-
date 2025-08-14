@@ -1,0 +1,4 @@
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Assets\obj\Debug\net471\Roblox.Platform.Assets.csproj.AssemblyReference.cache
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Assets\obj\Debug\net471\Roblox.Platform.Assets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Assets\obj\Debug\net471\Roblox.Platform.Assets.csproj.CoreCompileInputs.cache
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Assets\obj\Debug\net471\Roblox.Platform.Assets.sourcelink.json

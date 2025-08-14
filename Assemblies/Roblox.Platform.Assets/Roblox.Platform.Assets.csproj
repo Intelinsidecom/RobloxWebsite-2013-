@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Assets</AssemblyName>
@@ -12,9 +12,11 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
+    <Reference Include="Roblox.ContentFilter.Client">
+      <HintPath>..\..\Website\bin\Roblox.ContentFilter.Client.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>

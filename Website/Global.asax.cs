@@ -44,9 +44,7 @@ namespace Roblox.Website
             {
                 if (_rolesDomainFactories == null)
                 {
-                    _rolesDomainFactories = new RolesDomainFactories(
-                        logger: Logger
-                    );
+                    _rolesDomainFactories = new RolesDomainFactories();
                 }
                 return _rolesDomainFactories;
             }

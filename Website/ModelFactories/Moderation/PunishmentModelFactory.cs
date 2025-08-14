@@ -22,7 +22,7 @@ namespace Roblox.Website.ModelFactories.Moderation
             return new PunishmentModel
             {
                 ID = punishment.ID,
-                Action = punishment.PunishmentType.Value,
+                Action = punishment.Type.Value,
                 ModeratorID = (int)punishment.ModeratorID,
                 ModeratorName = moderator.Name,
                 InternalNote = punishment.InternalNoteExpression?.Value,

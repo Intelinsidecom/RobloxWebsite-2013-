@@ -14,15 +14,15 @@ public class ProviderConfigSection : ConfigurationSection
 	{
 		get
 		{
-			return !(bool)((ConfigurationElement)this)[_IsDatabaseWritableProperty];
+			return !(bool)this[_IsDatabaseWritableProperty];
 		}
 		set
 		{
-			((ConfigurationElement)this)[_IsDatabaseWritableProperty] = !value;
+			this[_IsDatabaseWritableProperty] = !value;
 		}
 	}
 
-	public GroupConfigElements GroupConfigs => (GroupConfigElements)((ConfigurationElement)this)[_GroupConfigs];
+	public GroupConfigElements GroupConfigs => (GroupConfigElements)this[_GroupConfigs];
 
 	protected override ConfigurationPropertyCollection Properties => _Properties;
 

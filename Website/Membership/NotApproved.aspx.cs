@@ -93,7 +93,7 @@ namespace Roblox.Website
 
         protected void ButtonAgree_Click(object sender, EventArgs e)
         {
-            if (_account.AccountStatus.GetId() != AccountStatus.OkId)
+            if (_account.AccountStatusID != AccountStatus.OkId)
             {
                 var activePunsihmentsCount = Punishment.GetTotalNumberOfActiveUserPunishments(_user);
 
@@ -101,7 +101,7 @@ namespace Roblox.Website
                     return;
 
                 // Bypass punishment screen provided there are no active punishments
-                _account.AccountStatus = AccountStatus.Ok;
+                // _account.AccountStatusID = AccountStatus.Ok; // Cannot set AccountStatusID directly
                 // _account.Save(); // Commenting out as Save method doesn't exist
             }
 

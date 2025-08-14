@@ -101,12 +101,16 @@ internal class EntitySerializer : IEntitySerializer
 		{
 			throw new ArgumentNullException("key");
 		}
-		var (flag, json) = SafelyInvokeActionAndRemoveKeyAndLogOnFailure(sharedCacheClient, key, () => Encoding.UTF8.GetString(value), () => $"Failed to get string from byte array for for key={key}. Value was {BitConverter.ToString(value)}");
+		var result1 = SafelyInvokeActionAndRemoveKeyAndLogOnFailure(sharedCacheClient, key, () => Encoding.UTF8.GetString(value), () => $"Failed to get string from byte array for for key={key}. Value was {BitConverter.ToString(value)}");
+		bool flag = result1.Success;
+		string json = result1.Value;
 		if (!flag)
 		{
 			return (false, default(TEntity));
 		}
-		var (flag2, item) = SafelyInvokeActionAndRemoveKeyAndLogOnFailure(sharedCacheClient, key, () => Deserialize<TEntity>(json), () => $"Failed to deserialize data for key:{key}, value:{json}.");
+		var result2 = SafelyInvokeActionAndRemoveKeyAndLogOnFailure(sharedCacheClient, key, () => Deserialize<TEntity>(json), () => $"Failed to deserialize data for key:{key}, value:{json}.");
+		bool flag2 = result2.Success;
+		TEntity item = result2.Value;
 		if (!flag2 && _Settings.IsEntityDeserializationFailureCounterEnabled)
 		{
 			_CounterRegistry.GetRateOfCountsPerSecondCounter("Roblox.Caching.EntitySerializer", "DeserializationFailures", typeof(TEntity).FullName).Increment();
@@ -140,14 +144,16 @@ internal class EntitySerializer : IEntitySerializer
 			object obj = JsonConvert.DeserializeObject(json, value.Item2, _JsonSerializerSettingsIgnoreTypes);
 			return (TEntity)value.Item1.Invoke(new object[1] { obj });
 		}
-		foreach (var (constructorInfo, type) in from t in typeFromHandle.GetConstructors(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).Select(delegate(ConstructorInfo c)
+		foreach (var t in from t in typeFromHandle.GetConstructors(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).Select(delegate(ConstructorInfo c)
 			{
 				ParameterInfo[] parameters = c.GetParameters();
 				return (parameters.Length != 1) ? (null, null) : (c, parameters[0].ParameterType);
 			})
-			where t.constructor != null
+			where t.Item1 != null
 			select t)
 		{
+			ConstructorInfo constructorInfo = t.Item1;
+			Type type = t.Item2;
 			try
 			{
 				object obj2 = JsonConvert.DeserializeObject(json, type, _JsonSerializerSettingsIgnoreTypes);

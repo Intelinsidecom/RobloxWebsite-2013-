@@ -15,13 +15,13 @@ internal sealed class Settings : ApplicationSettingsBase
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[SpecialSetting(/*Could not decode attribute arguments.*/)]
+	[SpecialSetting(SpecialSetting.ConnectionString)]
 	[DefaultSettingValue("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\ConfigurationDatabase.mdf;Integrated Security=True;User Instance=True")]
 	public string BasicConfigSource => (string)((SettingsBase)this)["BasicConfigSource"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[SpecialSetting(/*Could not decode attribute arguments.*/)]
+	[SpecialSetting(SpecialSetting.ConnectionString)]
 	[DefaultSettingValue("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\ConfigurationDatabase.mdf;Integrated Security=True;User Instance=True")]
 	public string ConfigurationDatabaseConnectionString => (string)((SettingsBase)this)["ConfigurationDatabaseConnectionString"];
 }

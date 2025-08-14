@@ -9,7 +9,7 @@ using Roblox.Http;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
-using Roblox.MonolithRequestContext;
+using Roblox.RequestContext;
 
 namespace Roblox.Configuration.Client;
 
@@ -68,7 +68,7 @@ public class ConfigurationClient : IConfigurationClient
 		}
 		_ApiKeyGetter = apiKeyGetter;
 		IHttpClient httpClient = httpClientBuilder.Build();
-		HttpRequestBuilder httpRequestBuilder = new HttpRequestBuilder((Func<string>)(() => serviceClientSettings.Endpoint));
+		HttpRequestBuilder httpRequestBuilder = new HttpRequestBuilder(serviceClientSettings.Endpoint);
 		_ServiceRequestSender = new ServiceRequestSender(httpClient, httpRequestBuilder);
 	}
 
@@ -706,10 +706,8 @@ public class ConfigurationClient : IConfigurationClient
 		{
 			apiKeyGetter = () => null;
 		}
-		return new Roblox.Http.ServiceClient.HttpClientBuilder(serviceClientSettings, counterRegistry, apiKeyGetter, (Func<bool>)null, (CookieContainer)null, (IRequestContextLoader)null, (IHttpMessageHandlerBuilder)null, (CircuitBreakerMode)0)
-		{
-			ApiKeyViaHeaderEnabled = () => true,
-			GetClientCircuitBreakerType = () => (ClientCircuitBreakerType)2
-		};
+		var builder = new Roblox.Http.ServiceClient.HttpClientBuilder(serviceClientSettings, counterRegistry, apiKeyGetter, (CookieContainer)null, (IRequestContextLoader)null);
+		builder.ApiKeyViaHeaderEnabled = () => true;
+		return builder;
 	}
 }

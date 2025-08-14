@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Infrastructure.DateTimeUtils">
+            <summary>
+            The DateTime columns in InfraDb are all in Central time zone. This class can be used to convert those to UTC before returning the data.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Infrastructure.IServerFactory">
+            <summary>
+            Provides functionality for creating entities of types which implementing <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            Using data from Infrastracture DB for getting and building collections of <see cref="T:Roblox.Platform.Infrastructure.IServer"/> which are corresponding 
+            to specified conditions
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerType(Roblox.Platform.Infrastructure.ServerType)">
+            <summary>
+            Returns readonly collection of corresponding <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverType">Type of the server.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerTypeAndServerGroup(Roblox.Platform.Infrastructure.ServerType,Roblox.Platform.Infrastructure.ServerGroup)">
+            <summary>
+            Returns readonly collection of corresponding Live <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverType">Type of the server.</param>
+            <param name="serverGroup">The server group.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerTypeAndServerGroupWithNoCaching(Roblox.Platform.Infrastructure.ServerType,Roblox.Platform.Infrastructure.ServerGroup)">
+            <summary>
+            Returns readonly collection of corresponding Live <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverType">Type of the server.</param>
+            <param name="serverGroup">The server group.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerGroupIdAndServerTypeId(System.Int32,System.Int32)">
+            <summary>
+            Returns readonly collection of corresponding Live <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverGroupId">The server group identifier.</param>
+            <param name="serverTypeId">The server type identifier.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerGroupIdAndServerTypeIdWithNoCaching(System.Int32,System.Int32)">
+            <summary>
+            Returns readonly collection of corresponding Live <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverGroupId">The server group identifier.</param>
+            <param name="serverTypeId">The server type identifier.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerTypeServerGroupAndServerStatus(Roblox.Platform.Infrastructure.ServerType,Roblox.Platform.Infrastructure.ServerGroup,Roblox.Platform.Infrastructure.ServerStatus)">
+            <summary>
+            Returns readonly collection of corresponding <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverType">Type of the server.</param>
+            <param name="serverGroup">The server group.</param>
+            <param name="serverStatus">The server status.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerTypeServerGroupAndServerStatusWithNoCaching(Roblox.Platform.Infrastructure.ServerType,Roblox.Platform.Infrastructure.ServerGroup,Roblox.Platform.Infrastructure.ServerStatus)">
+            <summary>
+            Returns readonly collection of corresponding <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverType">Type of the server.</param>
+            <param name="serverGroup">The server group.</param>
+            <param name="serverStatus">The server status.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerGroupIdServerTypeIdAndServerStatusId(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns readonly collection of corresponding <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverGroupId">The server group identifier.</param>
+            <param name="serverTypeId">The server type identifier.</param>
+            <param name="serverStatusId">The server status identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerGroupIdServerTypeIdAndServerStatusIdWithNoCaching(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns readonly collection of corresponding <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverGroupId">The server group identifier.</param>
+            <param name="serverTypeId">The server type identifier.</param>
+            <param name="serverStatusId">The server status identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerTypeId(System.Int32)">
+            <summary>
+            Returns readonly collection of corresponding <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverTypeId">The server type identifier.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServersByServerTypeIdWithNoCaching(System.Int32)">
+            <summary>
+            Returns readonly collection of corresponding <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.
+            </summary>
+            <param name="serverTypeId">The server type identifier.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServer"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServerById(System.Int32)">
+            <summary>
+            Gets the server by identifier.
+            </summary>
+            <param name="serverId">The server identifier.</param>
+            <returns><see cref="T:Roblox.Platform.Infrastructure.IServer"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServerByHostNameWithNoCaching(System.String)">
+            <summary>
+            Gets the server by identifier.
+            </summary>
+            <param name="hostName">The server host name.</param>
+            <returns><see cref="T:Roblox.Platform.Infrastructure.IServer"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetServerByIdWithNoCaching(System.Int32)">
+            <summary>
+            Gets the server by identifier with no caching.
+            </summary>
+            <param name="serverId">The server identifier.</param>
+            <returns><see cref="T:Roblox.Platform.Infrastructure.IServer"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetAllServerTypes">
+            <summary>
+            Gets all server types.
+            </summary>
+            <returns>Collection of key value pairs where key is the type identifier and value is name of the type</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerFactory.GetAllServerTypesWithNoCaching">
+            <summary>
+            Gets all server types with no caching.
+            </summary>
+            <returns>Collection of key value pairs where key is the type identifier and value is name of the type</returns>
+        </member>
+        <member name="T:Roblox.Platform.Infrastructure.IServerGroupMember">
+            <summary>
+            This interface represents information from table ServerGroupMembership.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Infrastructure.IServerGroupMemberFactory">
+            <summary>
+            Provides functionality for creating entities of types which implement <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/>. 
+            Uses data from ServerGroupMembers table in Infrastracture DB.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerGroupMemberFactory.GetServerGroupMembersByServerId(System.Int32)">
+            <summary>
+            Returns read only collection of all <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> for a server. If the cache has it then the data from cache is returned else DB is queried.
+            </summary>
+            <param name="serverId">ServerId identifying the server.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerGroupMemberFactory.GetServerGroupMembersByServerIdWithNoCaching(System.Int32)">
+            <summary>
+            Returns read only collection of all <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> for a server. No cached data used.
+            </summary>
+            <param name="serverId">ServerId identifying the server.</param>
+            <returns>Read only collection of <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerGroupMemberFactory.GetServerGroupMemberByServerIdAndServerGroup(System.Int32,Roblox.Platform.Infrastructure.ServerGroup)">
+            <summary>
+            Returns <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> for a server and a specific group. If the cache has it then the data from cache is returned else DB is queried.
+            </summary>
+            <param name="serverId">ServerId identifying the server.</param>
+            <param name="serverGroup">Server group for which <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> needs to be found.</param>
+            <returns>Returns <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerGroupMemberFactory.GetServerGroupMemberByServerIdAndServerGroupWithNoCaching(System.Int32,Roblox.Platform.Infrastructure.ServerGroup)">
+            <summary>
+            Returns <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> for a server and a specific group. No cached data used.
+            </summary>
+            <param name="serverId">ServerId identifying the server.</param>
+            <param name="serverGroup">Server group for which <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> needs to be found.</param>
+            <returns>Returns <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerGroupMemberFactory.GetServerGroupMemberByServerIdAndServerGroupId(System.Int32,System.Int32)">
+            <summary>
+            Returns <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> for a server and a specific group. If the cache has it then the data from cache is returned else DB is queried.
+            </summary>
+            <param name="serverId">ServerId identifying the server.</param>
+            <param name="serverGroupId">Server group id for which <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> needs to be found.</param>
+            <returns>Returns <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerGroupMemberFactory.GetServerGroupMemberByServerIdAndServerGroupIdWithNoCaching(System.Int32,System.Int32)">
+            <summary>
+            Returns <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> for a server and a specific group. No cached data used.
+            </summary>
+            <param name="serverId">ServerId identifying the server.</param>
+            <param name="serverGroupId">Server group id for which <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/> needs to be found.</param>
+            <returns>Returns <see cref="T:Roblox.Platform.Infrastructure.IServerGroupMember"/>.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Infrastructure.IServerIpValidator">
+            <summary>
+            Provides functionality for checking that specified ipAddress belongs to server with appropriate <see cref="P:Roblox.Platform.Infrastructure.IServerIpValidator.ServerGroup"/> and <see cref="P:Roblox.Platform.Infrastructure.IServerIpValidator.ServerType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Infrastructure.IServerIpValidator.ServerType">
+            <summary>
+            Gets the type of the server.
+            </summary>
+            <value>
+            The type of the server.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Infrastructure.IServerIpValidator.ServerGroup">
+            <summary>
+            Gets the server group.
+            </summary>
+            <value>
+            The server group.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerIpValidator.VerifyServerAccess(System.String)">
+            <summary>
+            Validates that ipAddress belongs to server with appropriate <see cref="P:Roblox.Platform.Infrastructure.IServerIpValidator.ServerGroup"/> and <see cref="P:Roblox.Platform.Infrastructure.IServerIpValidator.ServerType"/>.
+            </summary>
+            <param name="ipAddress">The ip address.</param>
+            <returns>
+            true if ipAddress is ipAddress of server which corresponds to specified settings, otherwise false.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerTypeByIpAddress(System.String)">
+            <summary>
+            Given an IP address will return the known <see cref="T:Roblox.Platform.Infrastructure.ServerType"/> for it.
+            </summary>
+            <param name="ipAddress">The IP addresss.</param>
+            <returns>The <see cref="T:Roblox.Platform.Infrastructure.ServerType"/> (or <c>null</c> if the IP address/<see cref="T:Roblox.Platform.Infrastructure.ServerType"/> is unknown.)</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerTypeIdByIpAddress(System.String)">
+            <summary>
+            Similar to <see cref="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerTypeByIpAddress(System.String)"/> but does not try to parse the value into the enum (<see cref="T:Roblox.Platform.Infrastructure.ServerType"/>).
+            </summary>
+            <remarks>
+            Useful for debugging to figure out if the server has an invalid server type ID.
+            </remarks>
+            <param name="ipAddress">The IP addresss.</param>
+            <returns>Returns the stored ServerTypeID for the server (or <c>null</c> if the IP address is invalid).</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerStatusByIpAddress(System.String)">
+            <summary>
+            Gets the server status for a given IP address.
+            </summary>
+            <param name="ipAddress">The IP addresss.</param>
+            <returns>The <see cref="T:Roblox.Platform.Infrastructure.ServerStatus"/> (or <c>null</c> if the IP address/<see cref="T:Roblox.Platform.Infrastructure.ServerStatus"/> is unknown).</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerStatusIdByIpAddress(System.String)">
+            <summary>
+            Similar to <see cref="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerStatusByIpAddress(System.String)"/> but does not try to parse the value into the enum (<see cref="T:Roblox.Platform.Infrastructure.ServerStatus"/>).
+            </summary>
+            <remarks>
+            Useful for debugging to figure out if the server has an invalid status type ID.
+            </remarks>
+            <param name="ipAddress">The IP addresss.</param>
+            <returns>Returns the stored ServerStatusID for the server (or <c>null</c> if the IP address is invalid).</returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerValidator.VerifyAccess(System.String)">
+            <summary>
+            Verifies that the IP address belongs to a live game server or one of the server groups with access
+            </summary>
+            <param name="ipAddress">The IP addresss.</param>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerValidator.IsAllowedProxyIp(System.String)">
+            <summary>
+            Verifies that an input IP address belongs to a Roblox load balancer.
+            We need to verify that extra headers on our requests (X-Forwarded-For)
+            were added by load balancers.
+            </summary>
+            <param name="ipAddress">The IP addresss.</param>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerValidator.IsWhitelistedIp(System.String)">
+            <summary>
+            Verifies that an input IP address belongs to a specific whitelist of IPs (proxy IPs).
+            </summary>
+            <remarks>
+            Whitelist determined by <see cref="P:Roblox.Platform.Infrastructure.Properties.ISettings.WhitelistedIpAddressRanges"/>.
+            </remarks>
+            <param name="ipAddress">The IP addresss.</param>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.IServerValidator.IsDosArrestIp(System.String)">
+            <summary>
+            Determines if the input IP address is from DosArrest.
+            </summary>
+            <remarks>
+            This is used to determine
+            if we should accept the X-Real-Ip header from the request.
+            </remarks>
+            <param name="ipAddress">The IP addresss.</param>
+        </member>
+        <member name="T:Roblox.Platform.Infrastructure.ServerIpValidator">
+            <summary>
+            Provides functionality for checking that specified ipAddress belongs to server with appropriate <see cref="P:Roblox.Platform.Infrastructure.ServerIpValidator.ServerGroup"/> and <see cref="P:Roblox.Platform.Infrastructure.ServerIpValidator.ServerType"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerIpValidator.#ctor(Roblox.Platform.Infrastructure.IServerFactory,Roblox.Platform.Infrastructure.ServerType,Roblox.Platform.Infrastructure.ServerGroup,System.Func{System.Boolean},Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Infrastructure.ServerIpValidator"/> class.
+            </summary>
+            <param name="serverFactory">The server factory.</param>
+            <param name="serverType">Type of the server.</param>
+            <param name="serverGroup">The server group.</param>
+            <param name="loggingEnabled">If enabled the IPs will be logged</param>
+            <param name="logger">Logger used to log IPs</param>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerIpValidator.VerifyServerAccess(System.String)">
+            <summary>
+            Validates that ipAddress belongs to server with appropriate <see cref="P:Roblox.Platform.Infrastructure.ServerIpValidator.ServerGroup"/> and <see cref="P:Roblox.Platform.Infrastructure.ServerIpValidator.ServerType"/>.
+            </summary>
+            <param name="ipAddress">The ip address.</param>
+            <returns>
+            true if ipAddress is ipAddress of server which corresponds to specified settings, otherwise false.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerValidatorInstance.GetServerTypeByIpAddress(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerTypeByIpAddress(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerValidatorInstance.GetServerTypeIdByIpAddress(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerTypeIdByIpAddress(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerValidatorInstance.GetServerStatusByIpAddress(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerStatusByIpAddress(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerValidatorInstance.GetServerStatusIdByIpAddress(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Infrastructure.IServerValidator.GetServerStatusIdByIpAddress(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerValidatorInstance.VerifyAccess(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Infrastructure.IServerValidator.VerifyAccess(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerValidatorInstance.IsAllowedProxyIp(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Infrastructure.IServerValidator.IsAllowedProxyIp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerValidatorInstance.IsDosArrestIp(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Infrastructure.IServerValidator.IsDosArrestIp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Infrastructure.ServerValidatorInstance.IsWhitelistedIp(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Infrastructure.IServerValidator.IsWhitelistedIp(System.String)"/>
+        </member>
+    </members>
+</doc>

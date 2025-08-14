@@ -6,7 +6,7 @@ using Roblox.Common.NetStandard;
 namespace Roblox.Caching;
 
 [TypeConverter(typeof(MigrationStateChangeConverter))]
-[SettingsSerializeAs(/*Could not decode attribute arguments.*/)]
+[SettingsSerializeAs(SettingsSerializeAs.Xml)]
 public class MigrationStateChange : IEquatable<MigrationStateChange>
 {
 	public readonly MigrationState SourceState;

@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 namespace Roblox.Configuration;
 
 [TypeConverter(typeof(WeightedCsvConverter))]
-[SettingsSerializeAs(/*Could not decode attribute arguments.*/)]
+[SettingsSerializeAs(SettingsSerializeAs.Xml)]
 public class WeightedCsv
 {
 	public string Source { get; }

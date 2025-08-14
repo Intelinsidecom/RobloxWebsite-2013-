@@ -279,7 +279,7 @@ public abstract class ApiClientBase
 			text = "can't read from response (no responseText)";
 		}
 		string message = string.Format("ApiClient {0} exception:\r\nUrl = {1}\r\nStatusCode = {2}\r\nStatusDescription = {3}\r\nResponseText = {4}\r\n", Name, Endpoint + actionName, statusCode?.ToString() ?? "StatusCodeNotAvailable", statusDescription, text);
-		if ((statusCode.HasValue && statusCode.Value == HttpStatusCode.TooManyRequests) || ex.Message.Contains("ProvisionedThroughputExceeded"))
+		if ((statusCode.HasValue && (int)statusCode.Value == 429) || ex.Message.Contains("ProvisionedThroughputExceeded"))
 		{
 			throw new RequestThrottledException(Name, message, ex, statusCode, statusDescription);
 		}

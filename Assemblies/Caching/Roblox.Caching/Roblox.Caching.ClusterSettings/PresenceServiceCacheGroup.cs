@@ -24,11 +24,11 @@ internal sealed class PresenceServiceCacheGroup : ApplicationSettingsBase, IExpo
 	{
 		get
 		{
-			return _Properties.GetOrAdd(propertyName, (string propName) => ((ApplicationSettingsBase)this)[propName]);
+			return _Properties.GetOrAdd(propertyName, (string propName) => base[propertyName]);
 		}
 		set
 		{
-			((ApplicationSettingsBase)this)[propertyName] = value;
+			base[propertyName] = value;
 		}
 	}
 
@@ -37,137 +37,137 @@ internal sealed class PresenceServiceCacheGroup : ApplicationSettingsBase, IExpo
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("100")]
-	public int MaximumNumberOfSocketsPerPool => (int)((SettingsBase)this)["MaximumNumberOfSocketsPerPool"];
+	public int MaximumNumberOfSocketsPerPool => (int)base["MaximumNumberOfSocketsPerPool"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:00.5000000")]
-	public TimeSpan PooledSocketConstructionSocketConnectTimeout => (TimeSpan)((SettingsBase)this)["PooledSocketConstructionSocketConnectTimeout"];
+	public TimeSpan PooledSocketConstructionSocketConnectTimeout => (TimeSpan)base["PooledSocketConstructionSocketConnectTimeout"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:00.1500000")]
-	public TimeSpan ConnectionCircuitBreakerRetryInterval => (TimeSpan)((SettingsBase)this)["ConnectionCircuitBreakerRetryInterval"];
+	public TimeSpan ConnectionCircuitBreakerRetryInterval => (TimeSpan)base["ConnectionCircuitBreakerRetryInterval"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("False")]
-	public bool IsExecutionCircuitBreakerEnabled => (bool)((SettingsBase)this)["IsExecutionCircuitBreakerEnabled"];
+	public bool IsExecutionCircuitBreakerEnabled => (bool)base["IsExecutionCircuitBreakerEnabled"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:00.0100000")]
-	public TimeSpan ExecutionCircuitBreakerRetryInterval => (TimeSpan)((SettingsBase)this)["ExecutionCircuitBreakerRetryInterval"];
+	public TimeSpan ExecutionCircuitBreakerRetryInterval => (TimeSpan)base["ExecutionCircuitBreakerRetryInterval"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("TimedOut")]
-	public string SocketErrorsThatTripExecutionCircuitBreakerCsv => (string)((SettingsBase)this)["SocketErrorsThatTripExecutionCircuitBreakerCsv"];
+	public string SocketErrorsThatTripExecutionCircuitBreakerCsv => (string)base["SocketErrorsThatTripExecutionCircuitBreakerCsv"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("3")]
-	public int ExecutionCircuitBreakerExceptionCountForTripping => (int)((SettingsBase)this)["ExecutionCircuitBreakerExceptionCountForTripping"];
+	public int ExecutionCircuitBreakerExceptionCountForTripping => (int)base["ExecutionCircuitBreakerExceptionCountForTripping"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:00.5000000")]
-	public TimeSpan ExecutionCircuitBreakerExceptionIntervalForTripping => (TimeSpan)((SettingsBase)this)["ExecutionCircuitBreakerExceptionIntervalForTripping"];
+	public TimeSpan ExecutionCircuitBreakerExceptionIntervalForTripping => (TimeSpan)base["ExecutionCircuitBreakerExceptionIntervalForTripping"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("")]
-	public string PerHostExpiryOverridesCsv => (string)((SettingsBase)this)["PerHostExpiryOverridesCsv"];
+	public string PerHostExpiryOverridesCsv => (string)base["PerHostExpiryOverridesCsv"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("False")]
-	public bool PerHostExpiryOverridesEnabled => (bool)((SettingsBase)this)["PerHostExpiryOverridesEnabled"];
+	public bool PerHostExpiryOverridesEnabled => (bool)base["PerHostExpiryOverridesEnabled"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("2")]
-	public int ConnectionCircuitBreakerExceptionCountForTripping => (int)((SettingsBase)this)["ConnectionCircuitBreakerExceptionCountForTripping"];
+	public int ConnectionCircuitBreakerExceptionCountForTripping => (int)base["ConnectionCircuitBreakerExceptionCountForTripping"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:00.1000000")]
-	public TimeSpan ConnectionCircuitBreakerExceptionIntervalForTripping => (TimeSpan)((SettingsBase)this)["ConnectionCircuitBreakerExceptionIntervalForTripping"];
+	public TimeSpan ConnectionCircuitBreakerExceptionIntervalForTripping => (TimeSpan)base["ConnectionCircuitBreakerExceptionIntervalForTripping"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("NotSupportedException")]
-	public string ExceptionTypeNamesToForceResetBytesCsv => (string)((SettingsBase)this)["ExceptionTypeNamesToForceResetBytesCsv"];
+	public string ExceptionTypeNamesToForceResetBytesCsv => (string)base["ExceptionTypeNamesToForceResetBytesCsv"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("10")]
-	public int ForceResetBytesMaxAttempts => (int)((SettingsBase)this)["ForceResetBytesMaxAttempts"];
+	public int ForceResetBytesMaxAttempts => (int)base["ForceResetBytesMaxAttempts"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("256")]
-	public int ForceResetBytesMaxNumberOfBytes => (int)((SettingsBase)this)["ForceResetBytesMaxNumberOfBytes"];
+	public int ForceResetBytesMaxNumberOfBytes => (int)base["ForceResetBytesMaxNumberOfBytes"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("False")]
-	public bool LogVerboseExceptions => (bool)((SettingsBase)this)["LogVerboseExceptions"];
+	public bool LogVerboseExceptions => (bool)base["LogVerboseExceptions"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("True")]
-	public bool IsRespectingMaxPoolSizeEnabled => (bool)((SettingsBase)this)["IsRespectingMaxPoolSizeEnabled"];
+	public bool IsRespectingMaxPoolSizeEnabled => (bool)base["IsRespectingMaxPoolSizeEnabled"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("False")]
-	public bool UseRoundRobinSocketPoolSelection => (bool)((SettingsBase)this)["UseRoundRobinSocketPoolSelection"];
+	public bool UseRoundRobinSocketPoolSelection => (bool)base["UseRoundRobinSocketPoolSelection"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("1")]
-	public int MaximumSelectionAttemptsForRoundRobin => (int)((SettingsBase)this)["MaximumSelectionAttemptsForRoundRobin"];
+	public int MaximumSelectionAttemptsForRoundRobin => (int)base["MaximumSelectionAttemptsForRoundRobin"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("5")]
-	public uint MinimumPoolSize => (uint)((SettingsBase)this)["MinimumPoolSize"];
+	public uint MinimumPoolSize => (uint)base["MinimumPoolSize"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("100")]
-	public uint MaximumPoolSize => (uint)((SettingsBase)this)["MaximumPoolSize"];
+	public uint MaximumPoolSize => (uint)base["MaximumPoolSize"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:01")]
-	public TimeSpan SendReceiveTimeout => (TimeSpan)((SettingsBase)this)["SendReceiveTimeout"];
+	public TimeSpan SendReceiveTimeout => (TimeSpan)base["SendReceiveTimeout"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:01:00")]
-	public TimeSpan SocketRecycleAge => (TimeSpan)((SettingsBase)this)["SocketRecycleAge"];
+	public TimeSpan SocketRecycleAge => (TimeSpan)base["SocketRecycleAge"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("131072")]
-	public uint CompressionThreshold => (uint)((SettingsBase)this)["CompressionThreshold"];
+	public uint CompressionThreshold => (uint)base["CompressionThreshold"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("False")]
-	public bool IsUpgradedDnsResolvingEnabled => (bool)((SettingsBase)this)["IsUpgradedDnsResolvingEnabled"];
+	public bool IsUpgradedDnsResolvingEnabled => (bool)base["IsUpgradedDnsResolvingEnabled"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("False")]
-	public bool IsConnectionCreationRateLimitingEnabled => (bool)((SettingsBase)this)["IsConnectionCreationRateLimitingEnabled"];
+	public bool IsConnectionCreationRateLimitingEnabled => (bool)base["IsConnectionCreationRateLimitingEnabled"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:01")]
-	public TimeSpan ConnectionCreationRateLimitPeriodLength => (TimeSpan)((SettingsBase)this)["ConnectionCreationRateLimitPeriodLength"];
+	public TimeSpan ConnectionCreationRateLimitPeriodLength => (TimeSpan)base["ConnectionCreationRateLimitPeriodLength"];
 
 	[UserScopedSetting]
 	[DebuggerNonUserCode]
@@ -176,17 +176,17 @@ internal sealed class PresenceServiceCacheGroup : ApplicationSettingsBase, IExpo
 	{
 		get
 		{
-			return (int)((SettingsBase)this)["MaximumConnectionCreationsPerPeriod"];
+			return (int)base["MaximumConnectionCreationsPerPeriod"];
 		}
 		set
 		{
-			((SettingsBase)this)["MaximumConnectionCreationsPerPeriod"] = value;
+			base["MaximumConnectionCreationsPerPeriod"] = value;
 		}
 	}
 
 	internal PresenceServiceCacheGroup()
 	{
-		((ApplicationSettingsBase)this).PropertyChanged += delegate(object sender, PropertyChangedEventArgs args)
+		base.PropertyChanged += delegate(object sender, PropertyChangedEventArgs args)
 		{
 			_Properties.TryRemove(args.PropertyName, out var _);
 		};
@@ -194,7 +194,7 @@ internal sealed class PresenceServiceCacheGroup : ApplicationSettingsBase, IExpo
 
 	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
 	{
-		((ApplicationSettingsBase)this).OnSettingsLoaded(sender, e);
-		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
+		base.OnSettingsLoaded(sender, e);
+		Provider.RegisterSettings(e, this);
 	}
 }

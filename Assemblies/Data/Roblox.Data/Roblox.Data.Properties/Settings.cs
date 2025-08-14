@@ -48,7 +48,7 @@ public sealed class Settings : ApplicationSettingsBase
 
 	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
 	{
-		((ApplicationSettingsBase)this).OnSettingsLoaded(sender, e);
-		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
+		base.OnSettingsLoaded(sender, e);
+		Provider.RegisterSettings(e, this);
 	}
 }

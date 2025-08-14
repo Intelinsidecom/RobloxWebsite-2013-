@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Caching</AssemblyName>
@@ -12,6 +12,10 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Runtime.Caching" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
@@ -23,9 +27,6 @@
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
       <HintPath>..\..\..\Website\bin\StackExchange.Redis.dll</HintPath>

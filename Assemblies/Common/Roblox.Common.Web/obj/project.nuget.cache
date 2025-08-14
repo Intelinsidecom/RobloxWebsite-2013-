@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jBtP4GMaw2RWU2AFBwgsuZqqd9MU3n13dvO/1Y3GqEzu6XHicSAGcVdiwyXY3u/Np9oEFj8U09j4fNw7FaUVOA==",
+  "dgSpecHash": "OEiQTx7/jOI=",
   "success": true,
-  "projectFilePath": "D:\\Assemblies\\Common\\Roblox.Common.Web\\Roblox.Common.Web.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Common\\Roblox.Common.Web\\Roblox.Common.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.owin\\4.2.2\\microsoft.owin.4.2.2.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\owin\\1.0.0\\owin.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

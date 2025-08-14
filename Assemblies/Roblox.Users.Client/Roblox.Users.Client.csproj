@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Users.Client</AssemblyName>
@@ -10,7 +10,9 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Common">
       <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>

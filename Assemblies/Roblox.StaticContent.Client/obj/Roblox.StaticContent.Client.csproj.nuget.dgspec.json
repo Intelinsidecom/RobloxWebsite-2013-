@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "W:\\--Roblox\\Roblox.StaticContent.Client\\Roblox.StaticContent.Client.csproj": {}
+    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.StaticContent.Client\\Roblox.StaticContent.Client.csproj": {}
   },
   "projects": {
-    "W:\\--Roblox\\Roblox.StaticContent.Client\\Roblox.StaticContent.Client.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.StaticContent.Client\\Roblox.StaticContent.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "W:\\--Roblox\\Roblox.StaticContent.Client\\Roblox.StaticContent.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.StaticContent.Client\\Roblox.StaticContent.Client.csproj",
         "projectName": "Roblox.StaticContent.Client",
-        "projectPath": "W:\\--Roblox\\Roblox.StaticContent.Client\\Roblox.StaticContent.Client.csproj",
-        "packagesPath": "C:\\Users\\ricky\\.nuget\\packages\\",
-        "outputPath": "W:\\--Roblox\\Roblox.StaticContent.Client\\obj\\",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.StaticContent.Client\\Roblox.StaticContent.Client.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.StaticContent.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ricky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -38,7 +39,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "netstandard2.0": {
@@ -62,7 +69,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.ContentFilter.Client</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Http">
+      <HintPath>..\..\Website\bin\Roblox.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Sentinels">
+      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

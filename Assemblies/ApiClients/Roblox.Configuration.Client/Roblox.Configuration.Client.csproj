@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Configuration.Client</AssemblyName>
@@ -33,6 +33,8 @@
     <Reference Include="Roblox.Sentinels">
       <HintPath>..\..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.MonolithRequestContext" />
+    <Reference Include="Roblox.RequestContext">
+      <HintPath>..\..\Roblox.RequestContext\bin\Debug\netstandard2.0\Roblox.RequestContext.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

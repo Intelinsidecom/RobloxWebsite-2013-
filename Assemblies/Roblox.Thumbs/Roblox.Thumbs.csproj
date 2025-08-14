@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Thumbs</AssemblyName>
@@ -81,6 +81,9 @@
     </Reference>
     <Reference Include="Roblox.Thumbnails.RequestValidation">
       <HintPath>..\..\Website\bin\Roblox.Thumbnails.RequestValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.ContentFilter.Client">
+      <HintPath>..\..\Website\bin\Roblox.ContentFilter.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>

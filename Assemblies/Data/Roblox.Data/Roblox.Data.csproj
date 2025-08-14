@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Data</AssemblyName>
@@ -13,22 +13,14 @@
   <PropertyGroup>
     <RootNamespace>Roblox.Data</RootNamespace>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Caching">
-      <HintPath>..\..\Caching\bin\Debug\netstandard2.0\Roblox.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SqlClient">
-      <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\9.0.3\ref\net9.0\System.Data.SqlClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Configuration\bin\Debug\netstandard2.0\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\9.0.3\ref\net9.0\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Roblox.CachingV2.Core\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
-    </Reference>
+    <PackageReference Include="System.Resources.Extensions" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
   </ItemGroup>
 </Project>

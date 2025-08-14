@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Moderation</AssemblyName>
@@ -19,16 +19,24 @@
       <HintPath>..\..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Common">
       <HintPath>..\..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MssqlDatabases">
       <HintPath>..\..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.ContentFilter.Client">
+      <HintPath>..\..\..\Website\bin\Roblox.ContentFilter.Client.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

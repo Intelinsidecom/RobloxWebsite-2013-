@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 
+using Roblox;
 using Roblox.Hashing;
 using Roblox.Platform.Authentication;
 using Roblox.Platform.Membership;
@@ -84,7 +85,7 @@ namespace Roblox.Website.Providers
                 }
 
                 // Finally create the user
-                var passwordHash = HashGenerator.HashString(password);
+                var passwordHash = HashGenerator.HashString(string.Empty, password);
                 Roblox.Signup.CreateNew(username, passwordHash, email);
 
                 // Do this last

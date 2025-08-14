@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wDVcfq76wrdKotjPpZX6shmn1vPh3vQWLlMaOO9SXREkJnCHl/heb64/DmdfNYnWPWHYylG+OMSkQFZr8+GENw==",
+  "dgSpecHash": "/x/tpnp1IJ8=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Web.StaticContent\\Roblox.Web.StaticContent.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.StaticContentV2\\Roblox.Web.StaticContentV2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

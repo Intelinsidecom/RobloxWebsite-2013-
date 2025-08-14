@@ -24,11 +24,11 @@ internal sealed class InvalidationSettings : ApplicationSettingsBase
 	{
 		get
 		{
-			return _Properties.GetOrAdd(propertyName, (string propName) => ((ApplicationSettingsBase)this)[propName]);
+			return _Properties.GetOrAdd(propertyName, (string propName) => base[propertyName]);
 		}
 		set
 		{
-			((ApplicationSettingsBase)this)[propertyName] = value;
+			base[propertyName] = value;
 		}
 	}
 
@@ -37,46 +37,46 @@ internal sealed class InvalidationSettings : ApplicationSettingsBase
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("")]
-	public string RedisEndpointsForInvalidation => (string)((SettingsBase)this)["RedisEndpointsForInvalidation"];
+	public string RedisEndpointsForInvalidation => (string)base["RedisEndpointsForInvalidation"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("4")]
-	public int NumberOfAttemptsForInvalidationMessageDelivery => (int)((SettingsBase)this)["NumberOfAttemptsForInvalidationMessageDelivery"];
+	public int NumberOfAttemptsForInvalidationMessageDelivery => (int)base["NumberOfAttemptsForInvalidationMessageDelivery"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("5")]
-	public int NumberOfAttemptsForTopicSubscription => (int)((SettingsBase)this)["NumberOfAttemptsForTopicSubscription"];
+	public int NumberOfAttemptsForTopicSubscription => (int)base["NumberOfAttemptsForTopicSubscription"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("5000")]
-	public int RetryIntervalForTopicSubscriptionsInMilliSeconds => (int)((SettingsBase)this)["RetryIntervalForTopicSubscriptionsInMilliSeconds"];
+	public int RetryIntervalForTopicSubscriptionsInMilliSeconds => (int)base["RetryIntervalForTopicSubscriptionsInMilliSeconds"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:30")]
-	public TimeSpan DelayToStartPublishingAfterNodeAddition => (TimeSpan)((SettingsBase)this)["DelayToStartPublishingAfterNodeAddition"];
+	public TimeSpan DelayToStartPublishingAfterNodeAddition => (TimeSpan)base["DelayToStartPublishingAfterNodeAddition"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("00:00:30")]
-	public TimeSpan DelayToStopSubscribingAfterNodeRemoval => (TimeSpan)((SettingsBase)this)["DelayToStopSubscribingAfterNodeRemoval"];
+	public TimeSpan DelayToStopSubscribingAfterNodeRemoval => (TimeSpan)base["DelayToStopSubscribingAfterNodeRemoval"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("100000")]
-	public int RedisInvalidationQueueSize => (int)((SettingsBase)this)["RedisInvalidationQueueSize"];
+	public int RedisInvalidationQueueSize => (int)base["RedisInvalidationQueueSize"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("False")]
-	public bool ThrowOnInitializationErrorEnabled => (bool)((SettingsBase)this)["ThrowOnInitializationErrorEnabled"];
+	public bool ThrowOnInitializationErrorEnabled => (bool)base["ThrowOnInitializationErrorEnabled"];
 
 	internal InvalidationSettings()
 	{
-		((ApplicationSettingsBase)this).PropertyChanged += delegate(object sender, PropertyChangedEventArgs args)
+		base.PropertyChanged += delegate(object sender, PropertyChangedEventArgs args)
 		{
 			_Properties.TryRemove(args.PropertyName, out var _);
 		};
@@ -84,7 +84,7 @@ internal sealed class InvalidationSettings : ApplicationSettingsBase
 
 	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
 	{
-		((ApplicationSettingsBase)this).OnSettingsLoaded(sender, e);
-		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
+		base.OnSettingsLoaded(sender, e);
+		Provider.RegisterSettings(e, this);
 	}
 }

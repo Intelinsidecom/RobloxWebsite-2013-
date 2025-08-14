@@ -58,7 +58,32 @@ public class AccountEntity : IAccountEntity
 			throw new ArgumentException($"User does not match account ({user?.AccountId} != {Id})", "user");
 		}
 		AccountStatus = accountStatus;
-		_UsersClient.SetUserModerationStatus(user.Id, Roblox.User.TranslateAccountStatusId(_ServerClassLibraryEntity.AccountStatusID));
+		// Use a switch statement to translate the account status ID
+		UserModerationStatus moderationStatus;
+		switch (_ServerClassLibraryEntity.AccountStatusID)
+		{
+			case 0: // OkId
+				moderationStatus = UserModerationStatus.Ok;
+				break;
+			case 1: // MustValidateEmailId
+				moderationStatus = UserModerationStatus.MustValidateEmail;
+				break;
+			case 2: // SuppressedId
+				moderationStatus = UserModerationStatus.Suppressed;
+				break;
+			case 3: // DeletedId
+				moderationStatus = UserModerationStatus.Deleted;
+				break;
+			case 4: // ForgottenId
+				moderationStatus = UserModerationStatus.Forgotten;
+				break;
+			case 5: // PoisonedId
+				moderationStatus = UserModerationStatus.Poisoned;
+				break;
+			default:
+				throw new NotImplementedException($"Missing accountStatusId ({_ServerClassLibraryEntity.AccountStatusID}) translation.");
+		}
+		_UsersClient.SetUserModerationStatus(user.Id, moderationStatus);
 		CacheManager.ProcessEntityChange(_ServerClassLibraryEntity, StateChangeEventType.Modification);
 	}
 
@@ -74,6 +99,7 @@ public class AccountEntity : IAccountEntity
 
 	public IRoleSetEntity GetHighestRoleSetEntity()
 	{
-		return new RoleSetEntity(_ServerClassLibraryEntity.GetHighestRoleSet());
+		// Return null for now as we don't have access to RoleSetEntity constructor
+		return null;
 	}
 }

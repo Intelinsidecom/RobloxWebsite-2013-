@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Outfits</AssemblyName>
@@ -48,6 +48,9 @@
     </Reference>
     <Reference Include="Roblox.TextFilter.Client">
       <HintPath>..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.ContentFilter.Client">
+      <HintPath>..\..\Website\bin\Roblox.ContentFilter.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Paging">
       <HintPath>..\..\Website\bin\Roblox.Paging.dll</HintPath>

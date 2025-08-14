@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Common.Web</AssemblyName>
@@ -26,7 +26,6 @@
       <HintPath>..\..\..\Website\bin\roslyn\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel" />
-    <Reference Include="Microsoft.Owin" />
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
@@ -34,5 +33,8 @@
     <Reference Include="Roblox.WebsiteSettings">
       <HintPath>..\..\..\Website\bin\Roblox.WebsiteSettings.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Owin" Version="4.2.2" />
   </ItemGroup>
 </Project>

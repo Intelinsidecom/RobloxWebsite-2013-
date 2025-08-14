@@ -309,12 +309,12 @@ internal sealed class Settings : ApplicationSettingsBase, ISettings, INotifyProp
 
 	protected override void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
 	{
-		((ApplicationSettingsBase)this).OnPropertyChanged(sender, e);
+		base.OnPropertyChanged(sender, e);
 	}
 
 	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
 	{
-		((ApplicationSettingsBase)this).OnSettingsLoaded(sender, e);
-		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
+		base.OnSettingsLoaded(sender, e);
+		Provider.RegisterSettings(e, this);
 	}
 }

@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.WebsiteSettings</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.WebsiteSettings.Properties.Economy">
+            <summary>
+            Configuration for Billing related features
+            </summary>
+        </member>
+        <member name="F:Roblox.WebsiteSettings.Properties.Badges._Properties">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Profile">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Signup">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.GameDetailPage">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.GameNameMigration">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.GameSearchPage">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.GameShutdown">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="P:Roblox.WebsiteSettings.Properties.ISettings.IsCopyingAllowedOnlyForVerifiedCreatorEnabledRolloutPercentage">
+            <summary>
+            Indicates if it checks Verified Creator on WWW endpoints
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.LoginSettings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Notifications">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.RealTime">
+            <summary>
+            Configuration for Billing related features
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.WebAds">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.AdSlotNamesSettings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.AssetSettings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="F:Roblox.WebsiteSettings.Properties.BatchAsset._Properties">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.GameLaunch">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.AccountSettingsPage">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.HomePage">
+            <summary>
+            Configuration for Billing related features
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Billing">
+            <summary>
+            Configuration for Billing related features
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.AntiBot">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="P:Roblox.WebsiteSettings.Properties.IBatchAssetSettings.AudioAssetCopyrightHeaderAndReplacementRolloutPercentage">
+            <summary>
+            Rollout percentage for whether audio which has been determined to contain copyrighted music should be replaced and marked.
+            </summary>
+        </member>
+        <member name="P:Roblox.WebsiteSettings.Properties.IBatchAssetSettings.ArchivedAssetCheckEnabled">
+            <summary>
+            Whether or not the asset should be checked on retrieval for whether or not it is archived.
+            </summary>
+        </member>
+        <member name="P:Roblox.WebsiteSettings.Properties.IBatchAssetSettings.ArchivedAssetLocationEnabled">
+            <summary>
+            If the asset is archived this flag decides whether or not a location should be available.
+            </summary>
+            <remarks>
+            Dependent on <see cref="P:Roblox.WebsiteSettings.Properties.IBatchAssetSettings.ArchivedAssetCheckEnabled"/> being <c>true</c>.
+            </remarks>
+        </member>
+        <member name="P:Roblox.WebsiteSettings.Properties.IBatchAssetSettings.AssetVersionReadFromPlatformRolloutPercentage">
+            <summary>
+            Roll out % loading asset versions using assets platform to prevent load on db. 
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Info">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Layout">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.LocalStorage">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Recommendations">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Internationalization">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.DevelopPage">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Captcha">
+            <summary>
+            Configuration for Captcha related features
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.WebSecurity">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.WebsiteBootstrapSettings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.GoogleAnalytics">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.WebsiteSettings.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>
