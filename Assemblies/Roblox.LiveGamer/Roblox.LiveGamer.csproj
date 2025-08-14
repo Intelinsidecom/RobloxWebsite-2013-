@@ -17,7 +17,8 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Roblox.Billing">
-      <HintPath>..\..\full\Roblox.Billing.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>

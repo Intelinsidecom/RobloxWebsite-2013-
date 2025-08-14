@@ -28,7 +28,8 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Analytics">
-      <HintPath>..\..\full\Roblox.Analytics.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Common.Web">
       <HintPath>..\..\full\Roblox.Common.Web.dll</HintPath>

@@ -27,10 +27,10 @@
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web">
-      <HintPath>..\..\full\Roblox.Web.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>

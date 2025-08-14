@@ -19,7 +19,7 @@
       <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Economy">
       <HintPath>..\..\full\Roblox.Economy.dll</HintPath>
@@ -28,7 +28,7 @@
       <HintPath>..\..\full\Roblox.Assets.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Counters">
-      <HintPath>..\..\full\Roblox.Platform.Counters.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Amazon.Sqs">
       <HintPath>..\..\full\Roblox.Amazon.Sqs.dll</HintPath>

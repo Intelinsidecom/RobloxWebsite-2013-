@@ -13,7 +13,8 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Segmentation.Client">
-      <HintPath>..\..\full\Roblox.Segmentation.Client.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Data">
       <HintPath>..\..\full\Roblox.Data.dll</HintPath>

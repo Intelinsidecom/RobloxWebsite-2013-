@@ -1,129 +1,130 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox Server Class Library</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net471</TargetFramework>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace />
+    <RootNamespace>Roblox</RootNamespace>
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Data">
-      <HintPath>..\..\full\Roblox.Data.dll</HintPath>
+      <HintPath>..\Roblox.Data\bin\Debug\net471\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
+      <HintPath>..\Roblox.Caching\bin\Debug\net471\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>..\..\full\Roblox.Common.dll</HintPath>
+      <HintPath>..\Roblox.Common\bin\Debug\net471\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Roles.Client" />
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Amazon.Sqs">
-      <HintPath>..\..\full\Roblox.Amazon.Sqs.dll</HintPath>
+      <HintPath>..\Roblox.Amazon.Sqs\bin\Debug\net471\Roblox.Amazon.Sqs.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.BucketStore">
-      <HintPath>..\..\full\Roblox.BucketStore.dll</HintPath>
+      <HintPath>..\Roblox.BucketStore\bin\Debug\net471\Roblox.BucketStore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\Roblox.EventLog\bin\Debug\net471\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\full\Roblox.Platform.AssetOwnership.dll</HintPath>
+      <HintPath>..\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Platform.AssetOwnership.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Roblox.Locking">
-      <HintPath>..\..\full\Roblox.Locking.dll</HintPath>
+      <HintPath>..\Roblox.Locking\bin\Debug\net471\Roblox.Locking.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Amazon">
-      <HintPath>..\..\full\Roblox.Amazon.dll</HintPath>
+      <HintPath>..\Roblox.Amazon\bin\Debug\net471\Roblox.Amazon.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common.Web">
-      <HintPath>..\..\full\Roblox.Common.Web.dll</HintPath>
+      <HintPath>..\Roblox.Common.Web\bin\Debug\net471\Roblox.Common.Web.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\full\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\Roblox.MssqlDatabases\bin\Debug\net471\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Marketplace.Client" />
     <Reference Include="Roblox.Economy.Common">
-      <HintPath>..\..\full\Roblox.Economy.Common.dll</HintPath>
+      <HintPath>..\Roblox.Economy.Common\bin\Debug\net471\Roblox.Economy.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Economy">
-      <HintPath>..\..\full\Roblox.Economy.dll</HintPath>
+      <HintPath>..\Roblox.Economy\bin\Debug\net471\Roblox.Economy.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
+      <HintPath>..\Roblox.Configuration\bin\Debug\net471\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Passwords.Client">
-      <HintPath>..\..\full\Roblox.Passwords.Client.dll</HintPath>
+      <HintPath>..\Roblox.Passwords.Client\bin\Debug\net471\Roblox.Passwords.Client.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="Roblox.Users.Client">
-      <HintPath>..\..\full\Roblox.Users.Client.dll</HintPath>
+      <HintPath>..\Roblox.Users.Client\bin\Debug\net471\Roblox.Users.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Moderation">
-      <HintPath>..\..\full\Roblox.Moderation.dll</HintPath>
+      <HintPath>..\Roblox.Moderation\bin\Debug\net471\Roblox.Moderation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
+      <HintPath>..\Roblox.DataV2.Core\bin\Debug\net471\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
-      <HintPath>..\..\full\StackExchange.Redis.dll</HintPath>
+      <HintPath>..\..\packages\StackExchange.Redis.2.2.4\lib\net471\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Groups.Client" />
     <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
+      <HintPath>..\Roblox.ApiClientBase\bin\Debug\net471\Roblox.ApiClientBase.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Agents">
-      <HintPath>..\..\full\Roblox.Agents.dll</HintPath>
+      <HintPath>..\Roblox.Agents\bin\Debug\net471\Roblox.Agents.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>
+      <HintPath>..\Roblox.Instrumentation\bin\Debug\net471\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.WebsiteSettings">
-      <HintPath>..\..\full\Roblox.WebsiteSettings.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.WebsiteSettings.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
+      <HintPath>..\Roblox.Entities.Mssql\bin\Debug\net471\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RequestContext">
-      <HintPath>..\..\full\Roblox.RequestContext.dll</HintPath>
+      <HintPath>..\Roblox.RequestContext\bin\Debug\net471\Roblox.RequestContext.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.UserCacheMigrationSettings">
-      <HintPath>..\..\full\Roblox.UserCacheMigrationSettings.dll</HintPath>
+      <HintPath>..\Roblox.UserCacheMigrationSettings\bin\Debug\net471\Roblox.UserCacheMigrationSettings.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.SEO">
-      <HintPath>..\..\full\Roblox.Web.SEO.dll</HintPath>
+      <HintPath>..\..\Website\Source\bin\Roblox.Web.SEO.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Assets">
-      <HintPath>..\..\full\Roblox.Assets.dll</HintPath>
+      <HintPath>..\Roblox.Assets\bin\Debug\net471\Roblox.Assets.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis.Lru">
-      <HintPath>..\..\full\Roblox.Redis.Lru.dll</HintPath>
+      <HintPath>..\Roblox.Redis.Lru\bin\Debug\net471\Roblox.Redis.Lru.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis">
-      <HintPath>..\..\full\Roblox.Redis.dll</HintPath>
+      <HintPath>..\Roblox.Redis\bin\Debug\net471\Roblox.Redis.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Users">
-      <HintPath>..\..\full\Roblox.Users.dll</HintPath>
+      <HintPath>..\Users\bin\Debug\net471\Roblox.Users.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ContentRatings">
-      <HintPath>..\..\full\Roblox.ContentRatings.dll</HintPath>
+      <HintPath>..\Roblox.ContentRatings\bin\Debug\net471\Roblox.ContentRatings.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Coordination">
-      <HintPath>..\..\full\Roblox.Coordination.dll</HintPath>
+      <HintPath>..\Roblox.Coordination\bin\Debug\net471\Roblox.Coordination.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

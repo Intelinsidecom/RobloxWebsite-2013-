@@ -16,16 +16,16 @@
       <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication.AccountSecurityTickets">
-      <HintPath>..\..\full\Roblox.Platform.Authentication.AccountSecurityTickets.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TwoStepVerification">
-      <HintPath>..\..\full\Roblox.Platform.TwoStepVerification.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>..\..\full\Roblox.Platform.Demographics.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>

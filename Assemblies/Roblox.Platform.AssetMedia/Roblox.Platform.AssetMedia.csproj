@@ -16,25 +16,30 @@
       <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetOwnership">
       <HintPath>..\..\full\Roblox.Platform.AssetOwnership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Thumbs">
-      <HintPath>..\..\full\Roblox.Thumbs.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\full\Roblox.Platform.Universes.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.AssetMedia.Entities">
-      <HintPath>..\..\full\Roblox.AssetMedia.Entities.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
@@ -49,16 +54,19 @@
       <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.AssetMedia">
-      <HintPath>..\..\full\Roblox.AssetMedia.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream">
       <HintPath>..\..\full\Roblox.Platform.EventStream.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream.WebEvents">
-      <HintPath>..\..\full\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Devices">
-      <HintPath>..\..\full\Roblox.Platform.Devices.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Currency.Client" />
     <Reference Include="Roblox.Marketplace.Client" />
@@ -66,7 +74,8 @@
       <HintPath>..\..\full\Roblox.TransactionEvents.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.YouTube">
-      <HintPath>..\..\full\Roblox.YouTube.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
@@ -81,11 +90,13 @@
       <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Drawing">
-      <HintPath>..\..\full\Roblox.Drawing.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Economy.Common">
       <HintPath>..\..\full\Roblox.Economy.Common.dll</HintPath>
@@ -94,7 +105,8 @@
       <HintPath>..\..\full\Roblox.Economy.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.VirtualCurrency">
-      <HintPath>..\..\full\Roblox.Platform.VirtualCurrency.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
   </ItemGroup>
 </Project>

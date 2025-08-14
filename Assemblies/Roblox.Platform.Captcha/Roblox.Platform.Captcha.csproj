@@ -13,7 +13,7 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
       <HintPath>..\..\full\Roblox.FloodCheckers.Core.dll</HintPath>
@@ -22,13 +22,13 @@
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Counters">
-      <HintPath>..\..\full\Roblox.Platform.Counters.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
       <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Captcha.Entities">
-      <HintPath>..\..\full\Roblox.Captcha.Entities.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
@@ -37,13 +37,13 @@
       <HintPath>..\..\full\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Games.Counters">
-      <HintPath>..\..\full\Roblox.Platform.Games.Counters.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Platform.MembershipCore">

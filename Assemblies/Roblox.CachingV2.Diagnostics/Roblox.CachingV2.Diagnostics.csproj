@@ -13,7 +13,8 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.CachingV2.Core">
-      <HintPath>..\..\full\Roblox.CachingV2.Core.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\full\Roblox.Instrumentation.dll</HintPath>

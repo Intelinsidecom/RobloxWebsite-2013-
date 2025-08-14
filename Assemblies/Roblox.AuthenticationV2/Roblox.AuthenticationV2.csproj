@@ -13,7 +13,7 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Web.Authentication">
-      <HintPath>..\..\full\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
@@ -23,7 +23,7 @@
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>..\..\full\Roblox.Platform.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.Client">
       <HintPath>..\..\full\Roblox.Http.Client.dll</HintPath>

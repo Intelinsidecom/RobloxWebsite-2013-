@@ -13,7 +13,7 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\full\Roblox.Platform.Universes.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
@@ -22,29 +22,29 @@
       <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Social">
-      <HintPath>..\..\full\Roblox.Platform.Social.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RealTimeNotifications">
-      <HintPath>..\..\full\Roblox.RealTimeNotifications.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Permissions.Client" />
     <Reference Include="Roblox.Platform.Permissions.Core">
-      <HintPath>..\..\full\Roblox.Platform.Permissions.Core.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Permissions">
-      <HintPath>..\..\full\Roblox.Platform.Permissions.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Studio">
-      <HintPath>..\..\full\Roblox.Platform.Studio.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.ApiClientBase">
       <HintPath>..\..\full\Roblox.ApiClientBase.dll</HintPath>
@@ -64,7 +64,7 @@
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

@@ -38,10 +38,12 @@
       <HintPath>D:\full\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>D:\full\Roblox.TextFilter.Client.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>D:\full\Roblox.Platform.Authentication.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Users.Client">
       <HintPath>D:\full\Roblox.Users.Client.dll</HintPath>

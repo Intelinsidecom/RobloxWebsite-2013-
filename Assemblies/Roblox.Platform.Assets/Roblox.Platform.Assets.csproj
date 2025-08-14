@@ -13,7 +13,8 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\full\Roblox.TextFilter.Client.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
@@ -45,7 +46,8 @@
       <HintPath>..\..\full\Roblox.Agents.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TextFilter">
-      <HintPath>..\..\full\Roblox.TextFilter.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
@@ -61,26 +63,31 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.Platform.Membership.UserDataAudit">
-      <HintPath>..\..\full\Roblox.Platform.Membership.UserDataAudit.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.UserDataAuditCore">
-      <HintPath>..\..\full\Roblox.Platform.Membership.UserDataAuditCore.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Roblox.FloodCheckers.Core">
       <HintPath>..\..\full\Roblox.FloodCheckers.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Paging">
-      <HintPath>..\..\full\Roblox.Paging.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.DataV2.Core">
       <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TranslationResources">
-      <HintPath>..\..\full\Roblox.TranslationResources.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
@@ -97,10 +104,12 @@
       <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Drawing">
-      <HintPath>..\..\full\Roblox.Drawing.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.Extensions">
-      <HintPath>..\..\full\Roblox.Platform.Membership.Extensions.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Assets">
       <HintPath>..\..\full\Roblox.Assets.dll</HintPath>

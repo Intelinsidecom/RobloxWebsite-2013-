@@ -13,13 +13,15 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\full\Roblox.TextFilter.Client.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TextFilter">
-      <HintPath>..\..\full\Roblox.TextFilter.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>

@@ -25,22 +25,27 @@
       <HintPath>D:\full\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.User">
-      <HintPath>D:\full\Roblox.Platform.Email.User.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>D:\full\Roblox.Platform.Demographics.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TwoStepVerification">
-      <HintPath>D:\full\Roblox.Platform.TwoStepVerification.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.Delivery">
-      <HintPath>D:\full\Roblox.Platform.Email.Delivery.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
       <HintPath>D:\full\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>D:\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
       <HintPath>D:\full\Roblox.FloodCheckers.Core.dll</HintPath>

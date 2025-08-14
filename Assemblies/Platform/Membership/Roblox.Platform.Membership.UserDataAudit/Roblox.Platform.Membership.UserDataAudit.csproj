@@ -13,7 +13,8 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Membership.UserDataAuditCore">
-      <HintPath>..\..\full\Roblox.Platform.Membership.UserDataAuditCore.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>

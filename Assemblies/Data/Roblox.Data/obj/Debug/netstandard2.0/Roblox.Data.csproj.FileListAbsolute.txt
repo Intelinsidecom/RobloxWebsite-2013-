@@ -1,0 +1,3 @@
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\obj\Debug\netstandard2.0\Roblox.Data.csproj.AssemblyReference.cache
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\obj\Debug\netstandard2.0\Roblox.Data.Resources.resources
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\obj\Debug\netstandard2.0\Roblox.Data.csproj.GenerateResource.cache

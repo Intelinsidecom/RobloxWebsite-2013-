@@ -13,10 +13,12 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Marketing">
-      <HintPath>..\..\full\Roblox.Platform.Marketing.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AbTesting.Core">
-      <HintPath>..\..\full\Roblox.Platform.AbTesting.Core.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\full\Roblox.Platform.MembershipCore.dll</HintPath>

@@ -16,7 +16,8 @@
       <HintPath>..\..\full\Roblox.Common.Web.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.PremiumFeatures">
-      <HintPath>..\..\full\Roblox.PremiumFeatures.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
@@ -32,14 +33,16 @@
       <HintPath>..\..\full\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.MssqlDatabases">
       <HintPath>..\..\full\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.Delivery">
-      <HintPath>..\..\full\Roblox.Platform.Email.Delivery.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
@@ -47,13 +50,16 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\full\Roblox.FloodCheckers.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>..\..\full\Roblox.Platform.Demographics.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Localization.Accounts">
-      <HintPath>..\..\full\Roblox.Platform.Localization.Accounts.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Locking">
       <HintPath>..\..\full\Roblox.Locking.dll</HintPath>
@@ -71,7 +77,8 @@
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Roblox.BillingTransactionEventPublisher">
-      <HintPath>..\..\full\Roblox.BillingTransactionEventPublisher.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.PayPal.Client" />
     <Reference Include="Roblox.Configuration">
@@ -90,19 +97,23 @@
       <HintPath>..\..\full\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Demographics">
-      <HintPath>..\..\full\Roblox.Demographics.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Classification">
-      <HintPath>..\..\full\Roblox.Classification.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.Users">
       <HintPath>..\..\full\Roblox.Users.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="Roblox.PayPal.Common">
-      <HintPath>..\..\full\Roblox.PayPal.Common.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="Newtonsoft.Json">

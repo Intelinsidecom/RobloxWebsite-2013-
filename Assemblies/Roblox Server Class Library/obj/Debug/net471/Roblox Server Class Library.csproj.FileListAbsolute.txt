@@ -1,0 +1,5 @@
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox Server Class Library.csproj.AssemblyReference.cache
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox.Business_Logic_Layer.CharacterAppearance.resources
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox.Business_Logic_Layer.RobloxContent.resources
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox.Resources.JSON.resources
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox Server Class Library.csproj.GenerateResource.cache

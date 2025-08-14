@@ -25,16 +25,16 @@
     </Reference>
     <Reference Include="Roblox.Badges.Client" />
     <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\full\Roblox.Platform.Universes.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Groups">
-      <HintPath>..\..\full\Roblox.Platform.Groups.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetPermissions">
-      <HintPath>..\..\full\Roblox.Platform.AssetPermissions.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
@@ -58,7 +58,7 @@
       <HintPath>..\..\full\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Counters">
-      <HintPath>..\..\full\Roblox.Platform.Counters.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
@@ -72,13 +72,13 @@
       <HintPath>..\..\full\Roblox.TransactionEvents.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Devices">
-      <HintPath>..\..\full\Roblox.Platform.Devices.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\full\Roblox Server Class Library.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\full\Roblox.TextFilter.Client.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\full\Roblox.Configuration.dll</HintPath>
@@ -88,19 +88,19 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Drawing">
-      <HintPath>..\..\full\Roblox.Drawing.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Economy.Common">
       <HintPath>..\..\full\Roblox.Economy.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership.Extensions">
-      <HintPath>..\..\full\Roblox.Platform.Membership.Extensions.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.VirtualCurrency">
-      <HintPath>..\..\full\Roblox.Platform.VirtualCurrency.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Groups">
-      <HintPath>..\..\full\Roblox.Groups.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Economy">
       <HintPath>..\..\full\Roblox.Economy.dll</HintPath>

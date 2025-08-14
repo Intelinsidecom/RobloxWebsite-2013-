@@ -16,7 +16,7 @@
       <HintPath>..\..\full\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\full\Roblox.Platform.Assets.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\full\Roblox.Platform.Core.dll</HintPath>
@@ -38,7 +38,7 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.Assets.Places">
-      <HintPath>..\..\full\Roblox.Assets.Places.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetsCore">
       <HintPath>..\..\full\Roblox.Platform.AssetsCore.dll</HintPath>

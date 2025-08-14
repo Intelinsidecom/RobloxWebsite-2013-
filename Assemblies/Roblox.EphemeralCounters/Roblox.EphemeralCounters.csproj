@@ -19,7 +19,8 @@
       <HintPath>..\..\full\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters.Client">
-      <HintPath>..\..\full\Roblox.EphemeralCounters.Client.dll</HintPath>
+      <HintPath>
+      </HintPath>
     </Reference>
   </ItemGroup>
 </Project>
