@@ -1,1 +1,4 @@
-﻿
+﻿ProjectReference in C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\Roblox.Website.csproj: ..\..\..\..\Assemblies\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+ProjectReference in C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\Roblox.Website.csproj: ..\..\..\..\Assemblies\Roblox.Platform.Groups\Roblox.Platform.Groups.csproj
+ProjectReference in C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\Roblox.Website.csproj: ..\..\..\..\Assemblies\TranslationResources\Roblox.TranslationResources\Roblox.TranslationResources.csproj
+ProjectReference in C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\Roblox.Website.csproj: ..\..\..\..\Assemblies\Web\Code\Roblox.Web.Code\Roblox.Web.Code.csproj

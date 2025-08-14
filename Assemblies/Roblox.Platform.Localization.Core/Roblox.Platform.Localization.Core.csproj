@@ -29,7 +29,7 @@
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
-      <HintPath>..\..\full\System.Net.Http.dll</HintPath>
+      <HintPath>..\..\Website\bin\roslyn\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>

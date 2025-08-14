@@ -14,7 +14,7 @@
   <ItemGroup>
     <Reference Include="System.Web" />
     <Reference Include="System.Net.Http">
-      <HintPath>..\..\full\System.Net.Http.dll</HintPath>
+      <HintPath>..\..\Website\bin\roslyn\System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Data</AssemblyName>
@@ -28,7 +28,7 @@
       <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\9.0.3\ref\net9.0\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Roblox.CachingV2.Core\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
