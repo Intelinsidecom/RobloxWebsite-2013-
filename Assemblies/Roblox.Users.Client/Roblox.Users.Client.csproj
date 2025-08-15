@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Users.Client</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -11,7 +11,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="System.Configuration" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Common">
@@ -33,7 +33,10 @@
       <HintPath>..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.Client">
-      <HintPath>..\..\Website\bin\Roblox.Http.Client.dll</HintPath>
+      <HintPath>..\Roblox.Http.Client\bin\Debug\netstandard2.0\Roblox.Http.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\Caching\Roblox.Caching\bin\Debug\netstandard2.0\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Collections">
       <HintPath>..\..\Website\bin\Roblox.Collections.dll</HintPath>
@@ -47,9 +50,7 @@
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
+    <!-- System.Configuration.ConfigurationManager now referenced via PackageReference -->
     <Reference Include="Roblox.Sentinels">
       <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>

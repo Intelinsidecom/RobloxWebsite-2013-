@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.MaxMind.GeoIP2</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.MaxMind.GeoIP2.IIPLookupResult">
+            <summary>
+            An IP lookup result with geo information from MaxMind API
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.City">
+            <summary>
+            The IP City eg: San Mateo
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.Country">
+            <summary>
+            The IP Country eg: United States
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.CountryCode">
+            <summary>
+            The IP CountryCode eg: US
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.IPLookupErrorType">
+            <summary>
+            The IPLookupErrorType has three types : Bad
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.Latitude">
+            <summary>
+            The IP Latitude 
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.Longitude">
+            <summary>
+            The IP Longitude
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.Provider">
+            <summary>
+            The IP Provider eg: Sprint
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.Subdivision">
+            <summary>
+            The IP Subdivision eg: California
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.IIPLookupResult.ZipCode">
+            <summary>
+            The IP Zipcode eg: 91040
+            </summary>
+        </member>
+        <member name="T:Roblox.MaxMind.GeoIP2.IMaxmindClient">
+            <summary>
+            This interface generated for future unit test purpose
+            </summary>
+        </member>
+        <member name="M:Roblox.MaxMind.GeoIP2.IMaxmindClient.Lookup(System.String,Roblox.MaxMind.GeoIP2.IPLookupType)">
+            <summary>
+            The <see cref="T:Roblox.MaxMind.GeoIP2.IPLookupResult"/> from MaxMind
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Properties.IMaxMindSettings.GeoIP2ServiceEndpoint">
+            <summary>
+            The MaxMind API Endpoint
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Properties.IMaxMindSettings.GeoIP2WebClientTimeout">
+            <summary>
+            Default API timeout
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Properties.IMaxMindSettings.GeoIP2Username">
+            <summary>
+            The account username
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Properties.IMaxMindSettings.GeoIP2Password">
+            <summary>
+            The account password
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Properties.IMaxMindSettings.GeoIP2CircuitBreakerRetryInterval">
+            <summary>
+            Override retry interval
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Properties.IMaxMindSettings.EnableDetailedErrorLogging">
+            <summary>
+            Whether to enable http-level error logging
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Properties.IMaxMindSettings.UseDirectHttpBasicAuthHeader">
+            <summary>
+            use basic auth header instead of built-in .net
+            </summary>
+        </member>
+        <member name="T:Roblox.MaxMind.GeoIP2.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.CityResponse.Confidence">
+            <summary>
+                A value from 0-100 indicating MaxMind's confidence that the city
+                is correct. This attribute is only available from the Insights web
+                service end point.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.CityResponse.GeoNameId">
+            <summary>
+                The GeoName ID for the city.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.CityResponse.Names">
+            <summary>
+                The name is a json formated dictionary including key and value for city
+                eg: name : {
+                      "de":    "Los Angeles",
+                      "en":    "Los Angeles"
+                }
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.ContinentResponse.Code">
+            <summary>
+                A two character continent code like "NA" (North America) or "OC"
+                (Oceania).
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.CountryResponse.Confidence">
+            <summary>
+                A value from 0-100 indicating MaxMind's confidence that the country
+                is correct. This attribute is only available from the Insights web
+                service end point.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.CountryResponse.IsoCode">
+            <summary>
+                The
+                <a
+                    href="http://en.wikipedia.org/wiki/ISO_3166-1">
+                    two-character ISO
+                    3166-1 alpha code
+                </a>
+                for the country.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.CountryResponse.GeoNameId">
+            <summary>
+                The GeoName ID for the city.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.PostalResponse.Code">
+            <summary>
+            The code for postal is in the following format  
+              "postal": {
+                 "code":  "90001",
+                "confidence": 10
+              }
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.RegionResponse.Confidence">
+            <summary>
+                A value from 0-100 indicating MaxMind's confidence that the region
+                is correct. This attribute is only available from the Insights web
+                service end point.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.RegionResponse.IsoCode">
+            <summary>
+                The
+                <a
+                    href="http://en.wikipedia.org/wiki/ISO_3166-1">
+                    two-character ISO
+                    3166-1 alpha code
+                </a>
+                for the country.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.RegionResponse.GeoNameId">
+            <summary>
+                The GeoName ID for the region.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.RegionResponse.Names">
+            <summary>
+                The name is a json formated dictionary including key and value for region
+                eg: name : {
+                      "de":    "Kalifornien",
+                      "en":    "California"
+                }
+            </summary>
+        </member>
+        <member name="F:Roblox.MaxMind.GeoIP2.Responses.Response.Code">
+            <summary>
+                The attribute code only show up when error exists
+                It is a indicator of the error, not related to postal code
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.AutonomousSystemNumber">
+            <summary>
+                The
+                <a
+                    href="http://en.wikipedia.org/wiki/Autonomous_system_(Internet)">
+                    autonomous system number
+                </a>
+                associated with the IP address.
+                This attribute is only available from the City and Insights web
+                service end points.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.AutonomousSystemOrganization">
+            <summary>
+                The organization associated with the registered
+                <a
+                    href="http://en.wikipedia.org/wiki/Autonomous_system_(Internet)">
+                    autonomous system number
+                </a>
+                for the IP address. This attribute
+                is only available from the City and Insights web service end points.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.Domain">
+            <summary>
+                The second level domain associated with the IP address. This will
+                be something like "example.com" or "example.co.uk", not
+                "foo.example.com". This attribute is only available from the
+                City and Insights web service end points.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.IPAddress">
+            <summary>
+                The IP address that the data in the model is for. If you
+                performed a "me" lookup against the web service, this will be the
+                externally routable IP address for the system the code is running
+                on. If the system is behind a NAT, this may differ from the IP
+                address locally assigned to it.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.IsAnonymousProxy">
+            <summary>
+                This is true if the IP is an anonymous proxy. See
+                <a href="http://dev.maxmind.com/faq/geoip#anonproxy">
+                    MaxMind's GeoIP
+                    FAQ
+                </a>
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.IsSatelliteProvider">
+            <summary>
+                This is true if the IP belong to a satellite internet provider.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.Isp">
+            <summary>
+                The name of the ISP associated with the IP address. This
+                attribute is only available from the City and Insights web
+                service end points.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.Organization">
+            <summary>
+                The name of the organization associated with the IP address. This
+                attribute is only available from the City and Insights web
+                service end points.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.TraitsResponse.UserType">
+            <summary>
+                The user type associated with the IP address. This can be one of
+                the following values:
+                business
+                cafe
+                cellular
+                college
+                content_delivery_network
+                dialup
+                government
+                hosting
+                library
+                military
+                residential
+                router
+                school
+                search_engine_spider
+                traveler
+                This attribute is only available from the Insights end point.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.LocationResponse.Latitude">
+            <summary>
+                The latitude of the location as a floating point number.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.LocationResponse.Longitude">
+            <summary>
+                The longitude of the location as a floating point number.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.LocationResponse.MetroCode">
+            <summary>
+                The metro code of the location if the location is in the US.
+                MaxMind returns the same metro codes as the
+                <a href="https://developers.google.com/adwords/api/docs/appendix/cities-DMAregions">Google AdWords API</a>.
+            </summary>
+        </member>
+        <member name="P:Roblox.MaxMind.GeoIP2.Responses.LocationResponse.TimeZone">
+            <summary>
+                The time zone associated with location, as specified by the
+                <a
+                    href="http://www.iana.org/time-zones">
+                    IANA Time Zone
+                    Database
+                </a>
+                , e.g., "America/New_York".
+            </summary>
+        </member>
+        <member name="M:Roblox.MaxMind.GeoIP2.Responses.LocationResponse.ToString">
+            <summary>
+                Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+                A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:Roblox.MaxMind.GeoIP2.PerformanceCounters.IMaxMindPerformanceMonitor">
+            <summary>
+            Performance Monitor Interface
+            </summary>
+        </member>
+        <member name="M:Roblox.MaxMind.GeoIP2.PerformanceCounters.IMaxMindPerformanceMonitor.IncrementResponse(System.TimeSpan)">
+            <summary>
+            Increment API Call
+            </summary>
+            <param name="requestTime"></param>
+        </member>
+        <member name="M:Roblox.MaxMind.GeoIP2.PerformanceCounters.IMaxMindPerformanceMonitor.IncrementResponseHasRegisteredCountry">
+            <summary>
+            Increment Registered Country
+            </summary>
+        </member>
+        <member name="M:Roblox.MaxMind.GeoIP2.PerformanceCounters.IMaxMindPerformanceMonitor.IncrementResponseHasRepresentedCountry">
+            <summary>
+            Increment Represented Country
+            </summary>
+        </member>
+        <member name="M:Roblox.MaxMind.GeoIP2.PerformanceCounters.IMaxMindPerformanceMonitor.IncrementException(System.Object,System.TimeSpan,System.Net.WebException)">
+            <summary>
+            Increment Exception
+            </summary>
+            <param name="request"></param>
+            <param name="requestTime"></param>
+            <param name="ex"></param>
+        </member>
+    </members>
+</doc>

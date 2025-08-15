@@ -42,7 +42,7 @@ public abstract class AuditCompositeEntryFactoryBase<TCompositeEntry, TMetadataE
 				{
 					mData = mData,
 					aEntry = aEntries.SingleOrDefault()
-				}, outerKeySelector: pair => pair.mData.ActorUserId, innerKeySelector: (IUser actorUser) => actorUser.Id, resultSelector: (pair, IEnumerable<IUser> u) => GetByComposition(pair.mData, pair.aEntry, u.SingleOrDefault()))
+				}, outerKeySelector: pair => pair.mData.ActorUserId, innerKeySelector: (IUser actorUser) => actorUser.Id, resultSelector: (pair, u) => GetByComposition(pair.mData, pair.aEntry, u.SingleOrDefault()))
 			orderby composite.Id descending
 			select composite).ToArray();
 	}

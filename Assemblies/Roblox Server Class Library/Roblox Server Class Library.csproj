@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox Server Class Library</AssemblyName>
@@ -13,16 +13,18 @@
   <PropertyGroup>
     <RootNamespace>Roblox</RootNamespace>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Resources.Extensions" Version="7.0.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Data">
-      <HintPath>..\Roblox.Data\bin\Debug\net471\Roblox.Data.dll</HintPath>
+      <HintPath>..\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Data.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Caching">
-      <HintPath>..\Roblox.Caching\bin\Debug\net471\Roblox.Caching.dll</HintPath>
+      <HintPath>..\Caching\Roblox.Caching\bin\Debug\netstandard2.0\Roblox.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
-      <HintPath>..\Roblox.Common\bin\Debug\net471\Roblox.Common.dll</HintPath>
+      <HintPath>..\Common\Roblox.Common\bin\Debug\net471\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Roles.Client" />

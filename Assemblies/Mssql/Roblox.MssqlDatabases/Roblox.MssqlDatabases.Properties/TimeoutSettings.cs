@@ -69,7 +69,7 @@ internal sealed class TimeoutSettings : ApplicationSettingsBase
 
 	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
 	{
-		((ApplicationSettingsBase)this).OnSettingsLoaded(sender, e);
+		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
 	}
 }

@@ -1,0 +1,802 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.TextFilter</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.TextFilter.TextFilterOperationUnavailableException">
+            <summary>
+            This TextFilter operation was unavailable for some reason.
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.TextFilterOperationUnavailableException.#ctor(System.String,System.Exception)">
+            <summary>
+            Default constructor including inner exception.
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="T:Roblox.TextFilter.CommunitySiftTopicTranslator">
+            <summary>
+            Translates Community Sift specific moderation topics into standardised Roblox topics
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.ObjectNameValidationRequest">
+            <summary>
+            A public implementation of <see cref="T:Roblox.TextFilter.IObjectNameValidationRequest"/> to be instantiated by consumers making username validation requests.
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.ObjectNameValidationRequest.#ctor(System.String)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="requestedName"></param>
+        </member>
+        <member name="P:Roblox.TextFilter.ObjectNameValidationRequest.RequestedName">
+            <summary>
+            <inheritdoc cref="P:Roblox.TextFilter.IUsernameValidationRequest.RequestedName"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.IObjectNameValidationRequest">
+            <summary>
+            An interferface representing a request to validate text submitted for an object name in <see cref="M:Roblox.TextFilter.ITextFilter.ValidateObjectName(Roblox.TextFilter.IObjectNameValidationRequest)"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IObjectNameValidationRequest.RequestedName">
+            <summary>
+            The name being requested for validation
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.IObjectNameValidationResult">
+            <summary>
+            An interface representing the result of validating text submitted for an object name in <see cref="M:Roblox.TextFilter.ITextFilter.ValidateObjectName(Roblox.TextFilter.IObjectNameValidationRequest)"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IObjectNameValidationResult.IsValid">
+            <summary>
+            Whether the request object name is valid
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.IUsernameFilter">
+            <summary>
+            An interface representing a text filter for usernames.
+            
+            This does NOT cover any other business logic for username validation, such as:
+            - whether the name is already taken
+            - whether the name is too long
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.IUsernameFilter.Evaluate13OUsername(System.String)">
+            <summary>
+            Evaluates a username against the 13-or-over username filter
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.IUsernameFilter.EvaluateU13Username(System.String)">
+            <summary>
+            Evaluates a username against the under-13 username filter
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.MetricTrackingTextFilterDecorator">
+            <summary>
+            Decorates an <see cref="T:Roblox.TextFilter.ITextFilter"/> instance and records metrics about the results that it returns.
+            It passes through the results of the internal ITextFilter unaltered
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.ModerationLevel">
+            <summary>
+            How much redaction was applied?
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.ModerationLevel.FullyAcceptable">
+            <summary>
+            Text was processed with no redaction.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.ModerationLevel.PartiallyModerated">
+            <summary>
+            Text was processed with partial redaction.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.ModerationLevel.FullyModerated">
+            <summary>
+            Text was completely redacted.
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.TextFilterFactory">
+            <summary>
+            Factory for generating <see cref="T:Roblox.TextFilter.ITextFilter"/> objects.
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.TextFilterFactory.GetTextFilter">
+            <summary>
+            Get an instance of a new TextFilter. A new instance of an ICommunitySiftClient 
+            will be instatiated to be used by this text filter
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.TextFilterFactory.GetTextFilter(Roblox.CommunitySift.ICommunitySiftClient,Roblox.ContentFilterApi.Client.IContentFilterClient)">
+            <summary>
+            Get an instance of a new TextFilter using the ICommunitySiftClient provided.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.UsernameFilter._Settings">
+            <summary>
+            Settings for the library.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.UsernameFilter._ContentFilterClient">
+            <summary>
+            Client to communicate with Roblox's ContentFilter service
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.IUsernameValidationResult">
+            <summary>
+            An interface representing the result of validating text submitted for a username against the <see cref="T:Roblox.TextFilter.IUsernameFilter"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IUsernameValidationResult.IsValid">
+            <summary>
+            Whether the requested name is valid
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IUsernameValidationResult.IsPotentialPiiViolation">
+            <summary>
+            If the requested name is invalid, this property indicates whether any of the Personal Identifiable Information filters' probability threshold were exceeded.
+            If the requested name is valid, this property has no meaning (should be false).
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.IUsernameValidationRequest">
+            <summary>
+            An interface representing a request to validate text submitted for a username against the <see cref="T:Roblox.TextFilter.IUsernameFilter"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IUsernameValidationRequest.RequestedName">
+            <summary>
+            The name being requested for validation
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IUsernameValidationRequest.IsUnder13">
+            <summary>
+            Whether the request is for a user under age of 13
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.TextFilterRuleResult">
+            <summary>
+            The result of filtering text for a single moderation rule (eg. under 13)
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextFilterRuleResult.FilteredText">
+            <summary>
+            The safely filtered text
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextFilterRuleResult.ModerationLevel">
+            <summary>
+            The level to which the text had to be moderated to be rendered safe
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextFilterRuleResult.TriggeredModerationCategories">
+            <summary>
+            The categories which were triggered causing the text to be moderated
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.UnknownTextRecipient">
+            <summary>
+            Default implementation of <see cref="T:Roblox.TextFilter.ITextRecipient"/> specifically for the case of an unkown user.
+            By default this user will be under 13.
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.IModerateTextForRecipientRequest">
+            <summary>
+            A <see cref="T:Roblox.TextFilter.IModeratedTextRequest"/> that also includes recipient information in
+            a <see cref="T:Roblox.TextFilter.ITextRecipient"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IModerateTextForRecipientRequest.Recipient">
+            <summary>
+            Information on the recipient of the text to be filtered.
+            For cases when the final result depends on the recipient.
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.ITextFilterFactory">
+            <summary>
+            Factory for generating TextFilters.
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilterFactory.GetTextFilter">
+            <summary>
+            Basic factory methods generates default values.
+            We eventually want to move away from this method.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilterFactory.GetTextFilter(Roblox.CommunitySift.ICommunitySiftClient,Roblox.ContentFilterApi.Client.IContentFilterClient)">
+            <summary>
+            Factory method supporting explicity CommSift and ContentFilter clients.
+            </summary>
+            <param name="communitySiftClient"></param>
+            <param name="contentFilterClient"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.TextFilter.ITextFilterResultModerationDetails">
+            <summary>
+            An interface to represent the details about moderation levels of the filtered text.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ITextFilterResultModerationDetails.ModerationLevel">
+            <summary>
+            Gets the moderation level.
+            </summary>
+            <value>
+            The moderation level.
+            </value>
+        </member>
+        <member name="P:Roblox.TextFilter.ITextFilterResultModerationDetails.TriggeredModerationCategories">
+            <summary>
+            Gets the triggered moderation categories.
+            </summary>
+            <value>
+            The triggered moderation categories.
+            </value>
+        </member>
+        <member name="T:Roblox.TextFilter.ITextFilterResults">
+            <summary>
+            Results from calling FilterText.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ITextFilterResults.Success">
+            <summary>
+            Did the operation complete successfully?
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ITextFilterResults.Message">
+            <summary>
+            If the operation failed, message for why the operation failed.
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.ITextFilterRuleResult">
+            <summary>
+            An interface that contains details about the filtered text.
+            </summary>
+            <seealso cref="T:Roblox.TextFilter.ITextFilterResultModerationDetails" />
+        </member>
+        <member name="P:Roblox.TextFilter.ITextFilterRuleResult.FilteredText">
+            <summary>
+            Gets the filtered text.
+            </summary>
+            <value>
+            The filtered text.
+            </value>
+        </member>
+        <member name="T:Roblox.TextFilter.ITextRecipient">
+            <summary>
+            Wrapper for features relevant to the recipient of the message.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ITextRecipient.IsUnder13">
+            <summary>
+            Is the recipient under 13?
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest">
+            <summary>
+            Request for filtering a Keyword in a search query via the text filter.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IKeywordSearchQueryValidationRequest.Keyword">
+            <summary>
+            The Keyword to be filtering.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IKeywordSearchQueryValidationRequest.Author">
+            <summary>
+            The user making the call.
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.IKeywordSearchQueryValidationResults">
+            <summary>
+            Results from filtering a Keyword.
+            Returns a value for both U13 and 13O.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IKeywordSearchQueryValidationResults.IsValid13Over">
+            <summary>
+            Was the given user valid for users 13+?
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IKeywordSearchQueryValidationResults.IsValidUnder13">
+            <summary>
+            Was the given user valid for users under 13?
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.UnknownTextAuthor">
+            <summary>
+            Default implementation of <see cref="T:Roblox.TextFilter.ITextAuthor"/> specifically for an unknown user.
+            By default this user will be under 13 and with a distinct ID.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.UnknownTextAuthor.Id">
+            <summary>
+            See <see cref="T:Roblox.TextFilter.ITextAuthor"/>. 
+            Default value of -1.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.UnknownTextAuthor.Name">
+            <summary>
+            See <see cref="T:Roblox.TextFilter.ITextAuthor"/>. 
+            Default value of "unknown".
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.UnknownTextAuthor.IsUnder13">
+            <summary>
+            See <see cref="T:Roblox.TextFilter.ITextAuthor"/>. 
+            Defaults to true, unknown people are assumed to be children.
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.BasicTextFilter">
+            <summary>
+            Represents an <see cref="T:Roblox.TextFilter.ITextFilter"/> that performs basic text filtering.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.BasicTextFilter._Settings">
+            <summary>
+            Settings for the library.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.BasicTextFilter._CommunitySiftClient">
+            <summary>
+            Client to communicate with CommunitySift
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.BasicTextFilter._ContentFilterClient">
+            <summary>
+            Client to communicate with Roblox's ContentFilter
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.BasicTextFilter._UsernameFilter">
+            <summary>
+            A textfilter to handle username filter requests
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.BasicTextFilter.#ctor(Roblox.TextFilter.Properties.ITextFilterSettings,Roblox.CommunitySift.ICommunitySiftClient,Roblox.ContentFilterApi.Client.IContentFilterClient,Roblox.TextFilter.IUsernameFilter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.TextFilter.BasicTextFilter"/> class.
+            This is the constructor that we should use going forward.
+            </summary>
+            <param name="settings"></param>
+            <param name="communitySiftClient">Client to communicate with CommunitySift</param>
+            <param name="contentFilterClient">ContentFilter Client for our internal redaction.</param>
+            <param name="usernameFilter">Filter for username filter requests</param>
+        </member>
+        <member name="M:Roblox.TextFilter.BasicTextFilter.FilterText(Roblox.TextFilter.IModeratedTextRequest)">
+            <summary>
+            Filters the given text for the given user.
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns>The <see cref="T:Roblox.TextFilter.ITextFilterRuleResult"/> for the <paramref name="request"/>.</returns>
+        </member>
+        <member name="M:Roblox.TextFilter.BasicTextFilter.FilterTextNoContext(Roblox.TextFilter.IModeratedTextRequest)">
+            <summary>
+            Filters the given text for the given user.
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns>The <see cref="T:Roblox.TextFilter.ITextFilterRuleResult"/> for the <paramref name="request"/>.</returns>
+        </member>
+        <member name="M:Roblox.TextFilter.BasicTextFilter.FilterTextForRecipient(Roblox.TextFilter.IModerateTextForRecipientRequest)">
+            <summary>
+            Filter the given request by the given author targeted at the given recipient.
+            An empty Author or Recipient will be treated either as a U13.
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.IModerateTextForRecipientRequest"/> containing the text, author and recipient.</param>
+            <returns></returns>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
+        </member>
+        <member name="M:Roblox.TextFilter.BasicTextFilter.FilterLiveText(Roblox.TextFilter.IModeratedTextRequest)">
+            <summary>
+            Filters text for live game chat (and eventually for all 'live' text exchanges).
+            
+            It passes the given text through multiple filters and returns the results for each filter, the idea being that the
+            caller can choose which filtered text to show the viewer based on the viewers age or other factors. This is a
+            departure from all other text moderation we perform in which the text is filtered exclusively based on the status 
+            of the text creator.
+            
+            This supplants logic that used to exist only in the Api.Proxy ModerationController.
+            
+            Currently the filters used are thus:
+            
+            With CommunitySift enabled:
+                Age13OrOver: Rule set defined by CommunitySift.Properties.Settings.Default.CommunitySiftTextFiltering13AndOverRule
+                AgeUnder13: Rule set defined by CommunitySift.Properties.Settings.Default.CommunitySiftTextFilteringUnder13Rule
+            
+            With CommunitySift disabled:
+                Age13OrOver: blacklist
+                AgeUnder13: white list
+            
+            The returned class takes the form of
+            {
+                "success": true,
+                "message": "",
+                "data": 
+                {
+                    "AgeUnder13":"##############################",
+                    "Age13OrOver":"Do you have a twitter account?"
+                }
+            }
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <returns><seealso cref="T:Roblox.TextFilter.TextFilterResults" /></returns>
+        </member>
+        <member name="M:Roblox.TextFilter.BasicTextFilter.ValidateKeywordSearchQuery(Roblox.TextFilter.IKeywordSearchQueryValidationRequest)">
+            <summary>
+            Validates the keyword for the search query against the filtering rules.
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest" /> containing the keyword.</param>
+            <returns>
+            The <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationResults" />.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">request</exception>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Failed to connect to CommunitySift</exception>
+        </member>
+        <member name="M:Roblox.TextFilter.BasicTextFilter.ValidateUsername(Roblox.TextFilter.IUsernameValidationRequest)">
+            <inheritdoc cref="!:ITextFilter.ValidateUserName" />
+        </member>
+        <member name="M:Roblox.TextFilter.BasicTextFilter.ValidateObjectName(Roblox.TextFilter.IObjectNameValidationRequest)">
+            <inheritdoc cref="M:Roblox.TextFilter.ITextFilter.ValidateObjectName(Roblox.TextFilter.IObjectNameValidationRequest)"/>
+        </member>
+        <member name="T:Roblox.TextFilter.ModeratedTextRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.TextFilter.IModeratedTextRequest"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.ModeratedTextRequest.#ctor(Roblox.TextFilter.ITextAuthor,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Default constructor with required arguments.
+            </summary>
+            <param name="user"><see cref="P:Roblox.TextFilter.ModeratedTextRequest.Author"/><see cref="T:Roblox.TextFilter.TextAuthor"/> who is submitting this text.</param>
+            <param name="text"><see cref="P:Roblox.TextFilter.ModeratedTextRequest.Text"/>Original text value entered by the user.</param>
+            <param name="server"><see cref="P:Roblox.TextFilter.ModeratedTextRequest.Server"/></param>
+            <param name="room"><see cref="P:Roblox.TextFilter.ModeratedTextRequest.Room"/></param>
+        </member>
+        <member name="P:Roblox.TextFilter.ModeratedTextRequest.Text">
+            <summary>
+            The textRequest to filter.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ModeratedTextRequest.Author">
+            <summary>
+            The user for which we are filtering the textRequest.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ModeratedTextRequest.Server">
+            <summary>
+            PlaceID or TextFilterServerType.WebChat, WebPost, WebAsset or WebPm
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ModeratedTextRequest.Room">
+            <summary>
+            GameInstanceId or ConversationId. This can be optional for WebPost, WebAsset and WebPm
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ModeratedTextRequest.Client">
+            <summary>
+            The client/requester of the filtering
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ModeratedTextRequest.TrackDetailedClientStatistics">
+            <summary>
+            Whether or to track detailed statistics for this client
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.TextAuthor">
+            <summary>
+            Default implementation of <see cref="T:Roblox.TextFilter.ITextAuthor"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextAuthor.Id">
+            <summary>
+            See <see cref="T:Roblox.TextFilter.ITextAuthor"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextAuthor.Name">
+            <summary>
+            See <see cref="T:Roblox.TextFilter.ITextAuthor"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextAuthor.IsUnder13">
+            <summary>
+            See <see cref="T:Roblox.TextFilter.ITextAuthor"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.TextAuthor.#ctor(System.Int64,System.String,System.Boolean)">
+            <summary>
+            A basic implementation of <see cref="T:Roblox.TextFilter.ITextAuthor"/>
+            </summary>
+            <param name="id"><see cref="P:Roblox.TextFilter.TextAuthor.Id"/></param>
+            <param name="name"><see cref="P:Roblox.TextFilter.TextAuthor.Name"/></param>
+            <param name="isUnder13"><see cref="P:Roblox.TextFilter.TextAuthor.IsUnder13"/></param>
+        </member>
+        <member name="T:Roblox.TextFilter.TextFilterResults">
+            <summary>
+            Wrapper class for the results of FilterLiveText call.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextFilterResults.Success">
+            <summary>
+            Did the operation complete successfully?
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextFilterResults.Message">
+            <summary>
+            If the operation failed, message for why the operation failed.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextFilterResults.AgeUnder13Result">
+            <summary>
+            The result of filtering the text so that it is safe for users with age under 13
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.TextFilterResults.Age13OrOverResult">
+            <summary>
+            The result of filtering the text so that it is safe for users aged 13 and over
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.TextFilterServerType">
+            <summary>
+            List of constants for the type of text being sent.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.TextFilterServerType.WebChat">
+            <summary>
+            Text coming through webchat.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.TextFilterServerType.WebPost">
+            <summary>
+            Text coming through the basic website or forums.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.TextFilterServerType.WebAsset">
+            <summary>
+            Text connected with asset creation.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.TextFilterServerType.WebPm">
+            <summary>
+            Text connected with private messaging.
+            </summary>
+        </member>
+        <member name="F:Roblox.TextFilter.TextFilterServerType.WebUniverse">
+            <summary>
+            Text connected with universe creation.
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.KeywordSearchQueryValidationRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.KeywordSearchQueryValidationRequest.#ctor(System.String,Roblox.TextFilter.ITextAuthor)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="keyword"></param>
+            <param name="author"></param>
+        </member>
+        <member name="P:Roblox.TextFilter.KeywordSearchQueryValidationRequest.Keyword">
+            <inheritdoc cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest"/>
+        </member>
+        <member name="P:Roblox.TextFilter.KeywordSearchQueryValidationRequest.Author">
+            <inheritdoc cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest"/>
+        </member>
+        <member name="T:Roblox.TextFilter.IModeratedTextRequest">
+            <summary>
+            Parameters for requesting the filtering of text.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IModeratedTextRequest.Text">
+            <summary>
+            The textRequest to filter.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IModeratedTextRequest.Author">
+            <summary>
+            The user for which we are filtering the textRequest.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IModeratedTextRequest.Server">
+            <summary>
+            PlaceID or TextFilterServerType.WebChat, WebPost, WebAsset or WebPm
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IModeratedTextRequest.Room">
+            <summary>
+            GameInstanceId or ConversationId. This can be optional for WebPost, WebAsset and WebPm
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IModeratedTextRequest.Client">
+            <summary>
+            The client/requester of the filtering
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.IModeratedTextRequest.TrackDetailedClientStatistics">
+            <summary>
+            Whether or to track detailed statistics for this client
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.ITextAuthor">
+            <summary>
+            Fields required by Moderation to identify the Author of a given piece of text.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ITextAuthor.Id">
+            <summary>
+            The Id of the Author, typically User.Id
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ITextAuthor.Name">
+            <summary>
+            The Name of the Author, typically username.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.ITextAuthor.IsUnder13">
+            <summary>
+            Is the user Under 13.
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.ITextFilter">
+            <summary>
+            Provides an interface for filtering textual user content.
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilter.FilterText(Roblox.TextFilter.IModeratedTextRequest)">
+            <summary>
+            Filters the given request for the given user.
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
+            <returns>
+            An <see cref="T:Roblox.TextFilter.ITextFilterRuleResult"/> corresponding to the passed in <paramref request="request"/>.
+            </returns>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilter.FilterTextNoContext(Roblox.TextFilter.IModeratedTextRequest)">
+            <summary>
+            Filters the given request for the given user.
+            Does not update the UserContext meaning that it will not respect vertical filtering.
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
+            <returns>
+            An <see cref="T:Roblox.TextFilter.ITextFilterRuleResult"/> corresponding to the passed in <paramref request="request"/>.
+            </returns>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilter.FilterTextForRecipient(Roblox.TextFilter.IModerateTextForRecipientRequest)">
+            <summary>
+            Filter the given request by the given author targeted at the given recipient.
+            An empty Author or Recipient will be treated either as a U13.
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.IModerateTextForRecipientRequest"/> containing the text, author and recipient.</param>
+            <returns>
+            The <see cref="T:Roblox.TextFilter.ITextFilterRuleResult"/> corresponding to the passed in <paramref request="request"/>.
+            </returns>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilter.FilterLiveText(Roblox.TextFilter.IModeratedTextRequest)">
+            <summary>
+            Filters request for live game chat (and eventually for all 'live' request exchanges).
+            
+            It passes the given request through multiple filters and returns the results for each filter, the idea being that the
+            caller can choose which filtered request to show the viewer based on the viewers age or other factors. This is a
+            departure from all other request moderation we perform in which the request is filtered exclusively based on the status 
+            of the request creator.
+            
+            This supplants logic that used to exist only in the Api.Proxy ModerationController.
+            
+            Currently the filters used are thus:
+            
+            With CommunitySift enabled:
+                Age13OrOver: Rule set defined by CommunitySift.Properties.Settings.Default.CommunitySiftTextFiltering13AndOverRule
+                AgeUnder13: Rule set defined by CommunitySift.Properties.Settings.Default.CommunitySiftTextFilteringUnder13Rule
+            
+            With CommunitySift disabled:
+                Age13OrOver: blacklist
+                AgeUnder13: white list
+            
+            The returned class takes the form of
+            {
+                "success": true,
+                "message": "",
+                "data": 
+                {
+                    "AgeUnder13":"##############################",
+                    "Age13OrOver":"Do you have a twitter account?"
+                }
+            }
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
+            <returns>
+            The <see cref="T:Roblox.TextFilter.ITextFilterResults" />.
+            </returns>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilter.ValidateKeywordSearchQuery(Roblox.TextFilter.IKeywordSearchQueryValidationRequest)">
+            <summary>
+            Validates the given search keyword for U13 and 13+.
+            </summary>
+            <param name="request">A <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest" /> containing the Keyword.</param>
+            <returns>
+            The <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationResults" />.
+            </returns>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilter.ValidateUsername(Roblox.TextFilter.IUsernameValidationRequest)">
+            <summary>
+            Validates the given text is allowed to be a username.
+            </summary>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilter.ValidateObjectName(Roblox.TextFilter.IObjectNameValidationRequest)">
+            <summary>
+            Validate the given text is allowed to be an Object Name.
+            </summary>
+            <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+        </member>
+        <member name="M:Roblox.TextFilter.ITextFilter.GetModerationLevelOfFilteredText(System.String,System.String)">
+            <summary>
+            Returns the <see cref="T:Roblox.TextFilter.ModerationLevel"/> based on the given Original Text and Filtered Text.
+            </summary>
+            <param name="originalText">Original Text that was sent to be filtered</param>
+            <param name="filteredText">Text that has been filtered for comparison</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.TextFilter.ModerateTextForRecipientRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.TextFilter.IModerateTextForRecipientRequest"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.ModerateTextForRecipientRequest.#ctor(Roblox.TextFilter.ITextAuthor,System.String,Roblox.TextFilter.ITextRecipient,System.String,System.String)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="user"></param>
+            <param name="text"></param>
+            <param name="recipient"></param>
+            <param name="server"></param>
+            <param name="room"></param>
+        </member>
+        <member name="T:Roblox.TextFilter.TextRecipient">
+            <summary>
+            Default implementation of the <see cref="T:Roblox.TextFilter.ITextRecipient"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.TextFilter.TextRecipient.#ctor(System.Boolean)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="isUnder13"></param>
+        </member>
+        <member name="T:Roblox.TextFilter.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.TextFilter.UsernameValidationRequest">
+            <summary>
+            An public implementation of <see cref="T:Roblox.TextFilter.IUsernameValidationRequest"/> to be instantiated by consumers making username validation requests.
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.UsernameValidationRequest.RequestedName">
+            <summary>
+            <inheritdoc cref="P:Roblox.TextFilter.IUsernameValidationRequest.RequestedName"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.TextFilter.UsernameValidationRequest.IsUnder13">
+            <summary>
+            <inheritdoc cref="P:Roblox.TextFilter.IUsernameValidationRequest.IsUnder13"/>
+            </summary>
+        </member>
+    </members>
+</doc>

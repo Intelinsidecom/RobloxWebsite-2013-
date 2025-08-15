@@ -1,20 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Amazon.DynamoDb</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-  <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
-  <PropertyGroup />
-  <ItemGroup />
   <ItemGroup>
-    <Reference Include="AWSSDK.DAX" />
-    <Reference Include="AWSSDK.Core" />
-    <Reference Include="AWSSDK.DynamoDBv2" />
+    <Reference Include="AWSSDK.DAX">
+      <HintPath>..\..\Website\bin\AWSSDK.DAX.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\..\Website\bin\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DynamoDBv2">
+      <HintPath>..\..\Website\bin\AWSSDK.DynamoDBv2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Amazon.Core">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Core.dll</HintPath>
     </Reference>
@@ -27,8 +32,8 @@
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
   </ItemGroup>
 </Project>

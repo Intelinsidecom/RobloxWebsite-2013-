@@ -1,5 +1,5 @@
 using System;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Sentinels;
 
 namespace Roblox.Mssql;

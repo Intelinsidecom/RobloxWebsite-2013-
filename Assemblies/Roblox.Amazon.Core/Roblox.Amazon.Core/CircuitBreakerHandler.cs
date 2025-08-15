@@ -58,7 +58,7 @@ public class CircuitBreakerHandler : PipelineHandler, IDisposable
 		CircuitBreakerPolicy.ThrowIfTripped(executionContext);
 		try
 		{
-			T result = await _003C_003En__0<T>(executionContext).ConfigureAwait(continueOnCapturedContext: false);
+			T result = await base.InvokeAsync<T>(executionContext).ConfigureAwait(continueOnCapturedContext: false);
 			CircuitBreakerPolicy.NotifyRequestFinished(executionContext);
 			return result;
 		}

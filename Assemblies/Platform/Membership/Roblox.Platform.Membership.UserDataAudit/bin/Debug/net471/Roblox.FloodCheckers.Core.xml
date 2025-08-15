@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.FloodCheckers.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.FloodCheckers.Core.IBasicFloodChecker.IsFlooded">
+            <summary>
+            Indicates where or not the current count has reached or exceeded the limit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Core.IBasicFloodChecker.UpdateCount">
+            <summary>
+            Increases the current count of the FloodChecker by one
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Core.IBasicFloodChecker.Reset">
+            <summary>
+            Resets the count of the FloodChecker to zero
+            </summary>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Core.IExpiringFloodChecker">
+            <summary>
+            A FloodChecker which makes available the amount of time before the current count will expire, and the count return to zero
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Core.IExpiringFloodChecker.TimeToExpiry">
+            <summary>
+            The amount of time before the current count will expire, and the count return to zero. Null if there is no current value
+            </summary>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Core.IFloodCheckerFactory`1">
+            <summary>
+            Factory to construct and return a new floodchecker
+            </summary>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Core.IGlobalFloodCheckerEventLogger">
+            <summary>
+            Event logger for to log when a category of floodcheckers is accessed while the floodchecker is flooded.
+            </summary>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Core.IRetryAfterFloodChecker">
+            <summary>
+            Provides the number of seconds the caller must wait until they can send a request that will not be flood checked,
+            if the caller is flooded.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Core.IRetryAfterFloodChecker.RetryAfter">
+            <summary>
+            Returns the amount of time in seconds until the caller can send a request that will not be flood checked. Null if the caller is not flood checked.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Core.IFloodChecker.Check">
+            <summary>
+            Returns the current state of the FloodChecker
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Core.IFloodChecker.GetCount">
+            <summary>
+            Gets the current count of the FloodChecker
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Core.IFloodChecker.GetCountOverLimit">
+            <summary>
+            Gets the magnitude that count currently exceeds the limit.
+            If the count is currently at or below the limit this will return zero.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

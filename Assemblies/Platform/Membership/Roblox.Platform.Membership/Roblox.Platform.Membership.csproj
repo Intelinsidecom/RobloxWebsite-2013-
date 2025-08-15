@@ -50,6 +50,11 @@
       <HintPath>..\..\..\..\Website\bin\Roblox.Amazon.Sns.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Entities">
       <HintPath>..\..\..\Roblox.Entities\bin\Debug\netstandard2.0\Roblox.Entities.dll</HintPath>
     </Reference>
@@ -65,7 +70,9 @@
     <Reference Include="Roblox.Users">
       <HintPath>..\..\..\..\Website\bin\Roblox.Users.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\..\..\..\Website\bin\AWSSDK.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Caching">
       <HintPath>..\..\..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>

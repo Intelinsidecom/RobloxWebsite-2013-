@@ -564,7 +564,7 @@ public abstract class RedisClientBase<TOptions> : IRedisClient where TOptions : 
 			LoadScript(database, scriptHash, script);
 			return convertRedisResult(await database.ScriptEvaluateAsync(scriptHash, keys, values, flags).ConfigureAwait(continueOnCapturedContext: false));
 		}
-		ExceptionDispatchInfo.Capture((obj as Exception) ?? throw obj).Throw();
+		ExceptionDispatchInfo.Capture((obj as Exception) ?? new Exception(obj.ToString())).Throw();
 		return result;
 	}
 

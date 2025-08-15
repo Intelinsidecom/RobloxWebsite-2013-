@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = Roblox.Configuration
-build_property.ProjectDir = c:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\
+build_property.ProjectDir = C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

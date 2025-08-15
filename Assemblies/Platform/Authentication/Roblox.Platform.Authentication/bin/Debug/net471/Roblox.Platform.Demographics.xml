@@ -1,0 +1,1409 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Demographics</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Demographics.Entities.AccountPhoneNumberEntityFactory">
+            <summary>
+            AccountPhoneNumberEntityFactory is split into two partial classes:
+            * AccountPhoneNumberEntityFactory.cs contains generated code with minimal editing
+            * AccountPhoneNumberEntityFactory.Partial.cs contains manually written code
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.Entities.Audit.AccountPhoneNumbersAuditEntryCachedMssqlEntity.Updated">
+            <summary>
+            Set to now as we don't really track updated value in this table.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditEntryEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditEntryEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditEntryEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditEntryEntityFactory.GetByPublicId(System.Guid)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditEntryEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditEntryEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntityFactory.GetByUserIdEnumerative(System.Int64,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntity"/>s by the userId, ordered by id descending
+            </summary>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntityFactory.GetByUserIdAndAccountPhoneNumbersChangeTypeIdEnumerative(System.Int64,System.Byte,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntity"/>s by their user id and change type id
+            </summary>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntityFactory.GetByAccountIdAndIsVerifiedEnumerative(System.Int64,System.Nullable{System.Boolean},System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/>s by their accountId and whehter they are verified.
+            </summary>
+            <param name="accountId">The accountId.</param>
+            <param name="isVerified">Whether the phone number has been verified by the account holder.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartAccountPhoneNumberId">The exclusive key at which to begin getting entities.  Null grabs the first page.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntityFactory.GetByAccountIdIsVerifiedAndIsActiveEnumerative(System.Int64,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/>s by their accountId and whehter they are verified.
+            </summary>
+            <param name="accountId">The accountId.</param>
+            <param name="isVerified">Whether the phone number has been verified by the account holder.</param>
+            <param name="isActive">Whether the phone number is active.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartAccountPhoneNumberId">The exclusive key at which to begin getting entities.  Null grabs the first page.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntityFactory.GetByAccountIdEnumerative(System.Int64,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/>s by their account id, ordered descending by entity id
+            </summary>
+            <param name="accountId">The accountId.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartAccountPhoneNumberId">The exclusive key at which to begin getting entities.  Null grabs the first page.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntityFactory.GetByPhoneNumberIDIsVerifiedAndIsActiveEnumerative(System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/>s by their accountId and whehter they are verified.
+            </summary>
+            <param name="phoneNumberId">The phoneNumberId.</param>
+            <param name="isVerified">Whether the phone number has been verified by the account holder.</param>
+            <param name="isActive">Whether the phone number is active.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartAccountPhoneNumberId">The exclusive key at which to begin getting entities.  Null grabs the first page.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntityFactory.CreateNew(System.Int64,Roblox.Platform.Demographics.IPhoneNumber)">
+            <summary>
+            Creates a new account phone number entity
+            </summary>
+            <param name="accountId">The accountId</param>
+            <param name="phoneNumber">The <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberEntity"/> with the given value
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberEntity"/> with the given value
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberEntityFactory.GetOrCreate(System.String,System.Int16,System.String)">
+            <summary>
+            Gets or creates the <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberEntity"/>
+            </summary>
+            <param name="value">The full phone number.</param>
+            <param name="prefixId">The id of the <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix"/></param>
+            <param name="nationalNumber">The portion of the phone number excluding the internal prefix.</param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberEntityFactory.MultiGet(System.Collections.Generic.ICollection{System.Int32})">
+            <summary>
+            Gets multiple <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberEntity">IPhoneNumberEntities</see> by their ids.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberEntityFactory.GetByNationalPhoneNumberEnumerative(System.String,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberEntity"/>s by national phone number.
+            </summary>
+            <param name="nationalPhoneNumber">The national phone number.</param>
+            <param name="count">The maximum number of entities to get.</param>
+            <param name="exclusiveStartId">The exclusive start identifier.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+                Thrown if <paramref name="count"/> is non-positive.
+                Thrown if <paramref name="nationalPhoneNumber"/> is null or whitespace.
+            </exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberEntity"/>s.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity">
+            <summary>
+            An interface for the PhoneNumberInternationalPrefixEntity
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity.CountryId">
+            <summary>
+            The ID of the <see cref="T:Roblox.Platform.Demographics.Country"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity.InternationalPrefix">
+            <summary>
+            The international prefix
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity.IsActive">
+            <summary>
+            Whether this is active
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntityFactory">
+            <summary>
+            An interface for the factory producing PhoneNumberInternationalPrefixEntity
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntityFactory.Get(System.Int16)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntityFactory.GetOrCreate(System.Int32,System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity"/> with the given country and international prefix
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntityFactory.GetByIsActiveEnumerative(System.Boolean,System.Int32,System.Nullable{System.Int16})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity"/>s that are active
+            </summary>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntityFactory.GetByCountryIdAndInternationalPrefix(System.Int32,System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity"/> with the given country id and prefix
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntityFactory.GetByCountryIdEnumerative(System.Int32,System.Int32,System.Nullable{System.Int16})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity"/>s by their country id
+            </summary>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntityFactory.GetByInternationalPrefixAndCountryId(System.String,System.Int32)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Demographics.Entities.IPhoneNumberInternationalPrefixEntity"/> with the given prefix and <see cref="T:Roblox.Platform.Demographics.ICountry">country</see> id.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.Entities.PhoneNumberEntityFactory.GetByNationalPhoneNumberEnumerative(System.String,System.Int32,System.Nullable{System.Int32})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PlatformPhoneNumberAlreadyActiveException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.PlatformPhoneNumberAlreadyActiveException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PlatformPhoneNumberAlreadyActiveException.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.PlatformPhoneNumberAlreadyActiveException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="userFacingMessage">The message to be shown to the user.</param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PlatformPhoneNumberAlreadyActiveException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.PlatformPhoneNumberAlreadyActiveException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PlatformUnverifiedEmailAddressException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.PlatformUnverifiedEmailAddressException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PlatformUnverifiedEmailAddressException.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.PlatformUnverifiedEmailAddressException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="userFacingMessage">The message to be shown to the user.</param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PlatformUnverifiedEmailAddressException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.PlatformUnverifiedEmailAddressException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.AccountPhoneNumberDisconnector">
+            <summary>
+            Provides functionality to disconnect accounts from phone numbers.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberDisconnector.#ctor(Roblox.Platform.Demographics.DemographicsDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.AccountPhoneNumberDisconnector" /> class.
+            </summary>
+            <param name="domainFactories">The <see cref="T:Roblox.Platform.Demographics.DemographicsDomainFactories" /></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"> If any of the args are null </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberDisconnector.DisconnectPhoneNumbersFromAccount(Roblox.Platform.Membership.IUser,Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberDisconnector.DeleteAccountPhoneNumbers(Roblox.Platform.Membership.IUser,Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons)">
+            <summary>
+            Deletes account phone numbers for specified user.
+            </summary>
+            <param name="user"><see cref="T:Roblox.Platform.Membership.IUser" />User</param>
+            <param name="reason">
+            <see cref="T:Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons" />
+            </param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberDisconnector.DisconnectPhoneAudits(Roblox.Platform.Membership.IUser,Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons)">
+            <summary>
+            Deletes phone number audits for the provided <see cref="T:Roblox.Platform.Membership.IUser" />
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser" />.</param>
+            <param name="reason">The reason for disconnection <see cref="T:Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons" /></param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberDisconnector.DisconnectPhoneAuditMetadataEntities(Roblox.Platform.Membership.IUser,System.Collections.Generic.IEnumerable{Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntity},Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons)">
+            <summary>
+            Deletes phone audit metadata entities.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser" />.</param>
+            <param name="auditMetadata">Collection of <see cref="T:Roblox.Platform.Demographics.Entities.Audit.IAccountPhoneNumbersAuditMetadataEntity" />.</param>
+            <param name="reason">
+            <see cref="T:Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons" />
+            </param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberDisconnector.DeleteAccountPhoneNumbersEntities(Roblox.Platform.Membership.IUser,System.Collections.Generic.IEnumerable{Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity},Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons)">
+            <summary>
+            Deletes account phone numbers entities.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser" />.</param>
+            <param name="accountPhoneNumbersList">Collection of <see cref="T:Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity" />.</param>
+            <param name="reason">
+            <see cref="T:Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons" />
+            </param>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.AccountPhoneNumberOwnerFactory">
+            <summary>
+            A factory to create <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner"/> objects.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberOwnerFactory.#ctor(Roblox.Platform.Demographics.DemographicsDomainFactories)">
+            <summary>
+            Initilizes a new instance of <see cref="T:Roblox.Platform.Demographics.AccountPhoneNumberOwnerFactory"/>.
+            </summary>
+            <param name="domainFactories">The <see cref="T:Roblox.Platform.Demographics.DemographicsDomainFactories"/>.</param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberOwnerFactory.GetAccountPhoneNumberOwnersByPhoneNumberValueIsVerifiedAndIsActive(System.String,System.Boolean,System.Boolean,System.Int32,System.Nullable{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberOwnerFactory.GetAccountPhoneNumberOwnersByPhoneNumberIdIsVerifiedAndIsActive(Roblox.Platform.Demographics.IPhoneNumberIdentifier,System.Boolean,System.Boolean,System.Int32,System.Nullable{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Demographics.AccountPhoneNumberFactory">
+            <summary>
+            Represents an implementation of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactory"/>.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactory" />.
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberFactory.#ctor(Roblox.Platform.Demographics.DemographicsDomainFactories,Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory,Roblox.Platform.Email.Delivery.IEmailSender,Roblox.EphemeralCounters.IEphemeralCounterFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.AccountPhoneNumberFactory" /> class.
+            </summary>
+            <param name="domainFactories">The <see cref="T:Roblox.Platform.Demographics.DemographicsDomainFactories"/></param>
+            <param name="accountSecurityTicketsFactory">The <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory"/>.</param>
+            <param name="emailClient">The <see cref="!:IEmailClient"/>.</param>
+            <param name="ephemeralCounterFactory">The <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"> If any of the args are null </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumberFactory.GetByPhoneNumberIsVerifiedAndIsActive(Roblox.Platform.Demographics.IPhoneNumberIdentifier,System.Boolean,System.Boolean,System.Int32,System.Nullable{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Demographics.AddressFactory">
+            <summary>
+            Represents a factory that produces <see cref="T:Roblox.Platform.Demographics.IAddress"/>es.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Demographics.IAddressFactory" />
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AddressFactory.#ctor(Roblox.Platform.Demographics.ICountryFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.AddressFactory"/> class.
+            </summary>
+            <param name="countryFactory">The <see cref="T:Roblox.Platform.Demographics.ICountryFactory"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="countryFactory"/>
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.GeolocationFactory">
+            <summary>
+            Represents a factory that produces <see cref="T:Roblox.Platform.Demographics.IGeolocation"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.GeolocationFactory.#ctor(System.String)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.AccountPhoneNumberOwner">
+            <summary>
+            Represents an account phone number owner.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.AccountPhoneNumberOwner.AccountId">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Demographics.GeolocationProvider">
+            <summary>
+            Implements the interface IGeolocationFactory. Provides geolocation information for a given userid.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAccountPhoneNumberDisconnector">
+            <summary>
+            Provides method to disconnect accounts and phone numbers.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberDisconnector.DisconnectPhoneNumbersFromAccount(Roblox.Platform.Membership.IUser,Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons)">
+             <summary>
+             Disconnects phone numbers from the given <see cref="T:Roblox.Platform.Membership.IUser"/>. 
+             </summary>
+             <remarks>
+             It is risky to use this method outside of the processors as this method will try to disconnect all the possible
+             entries.
+             Anyone else using this account's phone numbers would still be using them.
+             Disconnects phone number from phone audits and removes values.
+             This won't create account security ticket.
+             Typical use case for this method is COPPA or GDPR (privacy) related concerns.
+             This method won't delete phone number entries.
+            
+             After this is executed we might have some orphans left in the phone numbers table but since someone else might
+             still use phone numbers we cannot perform phone number removal.
+             </remarks>
+             <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+             <param name="reason">Reason for disconnect <see cref="T:Roblox.Platform.Demographics.DisconnectAccountPhoneNumbersReasons"/>.</param>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner">
+            <summary>
+            Represents an account phone number owner.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberOwner.AccountId">
+            <summary>
+            The phone number owner's account id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberOwner.AccountPhoneNumberId">
+            <summary>
+            The phone number owner's account phone number id.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwnerFactory">
+            <summary>
+            Provides a common interface for an object that produces <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner"/>es.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberOwnerFactory.GetAccountPhoneNumberOwnersByPhoneNumberValueIsVerifiedAndIsActive(System.String,System.Boolean,System.Boolean,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets all <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner"/> by phone number value.
+            </summary>
+            <param name="phoneNumberValue">The phone number value in E164 format.</param>
+            <param name="isVerified">Whether the phone number has been verified by the account holder.</param>
+            <param name="isActive">Whether the phone number is active</param>
+            <param name="count">Maximum number of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner"/> to get</param>
+            <param name="exclusiveStartId">The exclusive start identifier</param>
+            <returns>
+                A page of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner"/> associated with the <paramref name="phoneNumberValue"/>
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+                Thrown if <paramref name="count"/> was not positive
+                Thrown if <paramref name="phoneNumberValue"/> was null or whitespace
+            </exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformInvalidPhoneNumberException">
+                Thrown if the <paramref name="phoneNumberValue"/> is not valid or properly formatted
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberOwnerFactory.GetAccountPhoneNumberOwnersByPhoneNumberIdIsVerifiedAndIsActive(Roblox.Platform.Demographics.IPhoneNumberIdentifier,System.Boolean,System.Boolean,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets all <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner"/> by phone number identifier.
+            </summary>
+            <param name="phoneNumberId">The <see cref="T:Roblox.Platform.Demographics.IPhoneNumberIdentifier"/>.</param>
+            <param name="isVerified">Whether the phone number has been verified by the account holder.</param>
+            <param name="isActive">Whether the phone number is active</param>
+            <param name="count">Maximum number of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner"/> to get</param>
+            <param name="exclusiveStartId">The exclusive start identifier</param>
+            <returns>
+                A page of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberOwner"/> associated with the <paramref name="phoneNumberId"/>
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+                Thrown if <paramref name="count"/> was not positive
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                Thrown if <paramref name="phoneNumberId"/> was null
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IGeolocationFactory.GetGeolocation(System.String)">
+            <summary>
+            Get IGeolocation by ip address.
+            </summary>
+            <param name="ip">IP Address</param>
+            <returns>IGeolocation if found or empty value of Geolocation</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IGeolocationFactory.GetOrCreateGeolocation(System.String)">
+            <summary>
+            Get geolocation by ip address. If not found, creates a new geo location entry in database.
+            </summary>
+            <param name="ip">IP Address</param>
+            <returns>IGeolocation</returns>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry">
+            <summary>
+            Audit information on the AccountPhoneNumbers data entity, comprising of the raw data (prefixed with "Audit_") and additional meta data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.UserId">
+            <summary>
+            [Metadata] The id of the user this record is associated with
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.Type">
+            <summary>
+            [Metadata] The cause triggering the audit event
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.ActorUserId">
+            <summary>
+            [Metadata] The id of the user triggering the audit event, such as an ordinary user or a CS agent.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.IsLegacyValue">
+            <summary>
+            [Metadata] Indicating if the record represents data originally produced when auditing was not available, and is later being backfilled to provide comparison with other audit records.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.Audit_Id">
+            <summary>
+            The value of Id of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.Audit_AccountId">
+            <summary>
+            The value of AccountId of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.Audit_PhoneNumberId">
+            <summary>
+            The value of PhoneNumberId of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.Audit_IsVerified">
+            <summary>
+            The value of IsVerified of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.Audit_Phone">
+            <summary>
+            The value of Phone of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.Audit_Created">
+            <summary>
+            The value of Created of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.Audit_Updated">
+            <summary>
+            The value of Updated of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.PhoneNumberId">
+            <summary>
+            The id of the <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/>associated with the record
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry.PhoneNumber">
+            <summary>
+            The <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> associated with the record
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntryFactory">
+            <summary>
+            A public interface producing <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntry">IAccountPhoneNumberAuditCompositeEntries</see>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntryFactory.GetFullPhoneNumberHistory(System.Int64,System.Byte,System.Nullable{System.Int64})">
+            <summary>
+            Obtains full audit information on a user's phone number history changes
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntryFactory.GetAddingUnverifiedUserPhoneNumbersHistory(System.Int64,System.Byte,System.Nullable{System.Int64})">
+            <summary>
+            Obtains audit information on unverified phone number being added for the user's account
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberAuditCompositeEntryFactory.GetVerifiedUserPhoneNumbersHistory(System.Int64,System.Byte,System.Nullable{System.Int64})">
+            <summary>
+            Obtains audit information on a phone number being verified for the user's account
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IGeolocation">
+            <summary>
+            Geolocation
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IGeolocation.Latitude">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IGeolocation.Longitude">
+            <summary>
+            Longitude
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IGeolocation.CountryId">
+            <summary>
+            Id of the <see cref="T:Roblox.Platform.Demographics.ICountry"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IGeolocation.IsGeopositionLookupAttempted">
+            <summary>
+            Is Geoposition lookup attempted
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IGeolocation.IsCountryLookupAttempted">
+            <summary>
+            Is country lookup attempted
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.AccountPhoneNumber">
+            <summary>
+            Represents an implementation of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.AccountPhoneNumber.#ctor(Roblox.Platform.Demographics.DemographicsDomainFactories,Roblox.Platform.Demographics.Entities.IAccountPhoneNumberEntity,Roblox.Platform.Demographics.IPhoneNumber,Roblox.Platform.Demographics.ICountry)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.AccountPhoneNumber"/> class.
+            </summary>
+            <param name="domainFactories">The <see cref="T:Roblox.Platform.Demographics.DemographicsDomainFactories"/></param>
+            <param name="entity">The entity.</param>
+            <param name="phoneNumber">The phone number</param>
+            <param name="country">The country of the phone number prefix. This may be null for old data</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the passed in <see cref="T:Roblox.Platform.Demographics.Entities.AccountPhoneNumberCAL"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.PhoneNumberIdentifier">
+            <summary>
+            Represents an object that uniquely identifies a phone number.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Demographics.IPhoneNumberIdentifier" />
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PhoneNumberIdentifier.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.PhoneNumberIdentifier"/> class.
+            </summary>
+            <param name="id">The phone number's ID.</param>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.PhoneNumberInternationalPrefix.Value">
+            <summary>
+            The string representing the prefix.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.PhoneNumberInternationalPrefix.IsActive">
+            <summary>
+            Whether the prefix is active.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PhoneNumberInternationalPrefixIdentifier.#ctor(System.Int16)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Demographics.PhoneNumberInternationalPrefixIdentifier"/> class.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.PhoneNumberValidator">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Demographics.IPhoneNumberValidator"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.PhoneNumberValidator.TryGetSanitizedPhoneNumberFromPhoneNumber(System.String,Roblox.Platform.Demographics.ISanitizedPhoneNumber@,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Demographics.CountryIdentifier">
+            <summary>
+            Represents a unique identifier for a country.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Demographics.ICountryIdentifier" />
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAccountPhoneNumber">
+            <summary>
+            Represents the platform object for <see cref="T:Roblox.Platform.Demographics.Entities.AccountPhoneNumberCAL"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.Id">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.AccountId">
+            <summary>
+            Gets the account identifier for this phone. Shouldn't be exposed to users under 13.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.FullPhoneNumber">
+            <summary>
+            Gets the full phone number including the international prefix.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.E164PhoneNumber">
+            <summary>
+            Gets the full phone number including the international prefix and the exit code symbol (+).
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.CountryCode">
+            <summary>
+            Gets the country code of the phone number prefix.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.Prefix">
+            <summary>
+            Gets the international prefix portion of the full phone number.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.Phone">
+            <summary>
+            Legacy field holding the phone number.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.PhoneNumberId">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/>'s identifier.
+            </summary>
+            <value>The phone number identifier.</value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.IsVerified">
+            <summary>
+            Tells whether the phone is verified
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.IsActive">
+            <summary>
+            Tells whether the phone is active
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.Created">
+            <summary>
+            Gets the created date.
+            </summary>
+            <value>
+            The created.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IAccountPhoneNumber.Updated">
+            <summary>
+            Gets the updated date.
+            </summary>
+            <value>
+            The updated.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumber.SetToVerified(Roblox.Platform.Membership.IUser,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Sets the account phone number to be verified.
+            </summary>
+            <param name="user">The user who owns the account.</param>
+            <param name="actorUserIdentifier">The user who set it to be verified.</param>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactory">
+            <summary>
+            Represents an interface for creating and retrieving an <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber" />.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.AddUnverifiedForUser(Roblox.Platform.Membership.IUser,System.String,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Adds a phone number for the user which then needs to be verified.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> owning the phone number.</param>
+            <param name="simplePhoneNumber">The phone number of the user.</param>
+            <param name="actorUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> adding the phone number.</param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.AddUnverifiedForUser(Roblox.Platform.Membership.IUser,System.String,System.String,System.String,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Adds a phone number for the user which then needs to be verified.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> owning the phone number.</param>
+            <param name="internationalPrefixNumber">The <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix">international prefix</see> portion (aka "country code") of a phone number when dialing to this number from another country (eg. "1" for America, "44" for the United Kingdoms, "1" for Canada).</param>
+            <param name="nationalNumber">The national number portion of a phone number, which (usually) begins with the area code and does not include the long-distance dialing prefix (eg the national part of American phone numbers would be 10 digits starting with the 3-digit area code, does not include with the "1" prefix for dialing long distance).</param>
+            <param name="twoLetterCountryCode">The standard two-letter code denoting the <see cref="T:Roblox.Platform.Demographics.ICountry">country/region/territory</see> for the phone number (eg. "US", "GB", "CA").</param>
+            <param name="actorUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> adding the phone number.</param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.AddUnverifiedForUser(Roblox.Platform.Membership.IUser,Roblox.Platform.Demographics.IPhoneNumber,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Adds a phone number for the user which then needs to be verified.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> owning the phone number.</param>
+            <param name="phoneNumber">The phone number of the user.</param>
+            <param name="actorUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> adding the phone number.</param>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.GetVerifiedForUser(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Obtains the most recently verified phone number for the user
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.GetPendingVerificationPhoneNumber(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> to be verified by account identifier.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns>The to-be-verified <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> associated with the passed in account Id if exists or null otherwise.
+            Returns null if the latest IAccountPhoneNumber is already verified.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.GetByPhoneNumber(Roblox.Platform.Demographics.IPhoneNumberIdentifier)">
+            <summary>
+            Get the <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> for a given phone number id.
+            </summary>
+            <param name="phoneNumberIdentifier">The phone number identifier <see cref="T:Roblox.Platform.Demographics.IPhoneNumberIdentifier"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">If any of the params is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformInvalidPhoneNumberException">If the phone is invalid.</exception>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> or null if there wasn't one.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.GetByPhoneNumber(System.String)">
+            <summary>
+            Get the <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> for a given phone.
+            </summary>
+            <param name="target">The target phone number, which consists of an international number prefix, a national number and a two letter country code</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">If the param is null or empty</exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformInvalidPhoneNumberException">If the phone is invalid</exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformPhoneNotFoundException">If the phone wasn't found</exception>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> or null if there wasn't one</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.GetByPhoneNumber(System.String,System.String,System.String)">
+            <summary>
+            Get the <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> for a given phone.
+            </summary>
+            <param name="internationalPrefixNumber">The <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix">international prefix</see> portion (aka "country code") of a phone number when dialing to this number from another country (eg. "1" for America, "44" for the United Kingdoms, "1" for Canada).</param>
+            <param name="nationalNumber">The national number portion of a phone number, which (usually) begins with the area code and does not include the long-distance dialing prefix (eg the national part of American phone numbers would be 10 digits starting with the 3-digit area code, does not include with the "1" prefix for dialing long distance).</param>
+            <param name="twoLetterCountryCode">The standard two-letter code denoting the <see cref="T:Roblox.Platform.Demographics.ICountry">country/region/territory</see> for the phone number (eg. "US", "GB", "CA").</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">If any of the params is null or empty</exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformInvalidPhoneNumberException">If the phone is invalid</exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformPhoneNotFoundException">If the phone wasn't found</exception>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> or null if there wasn't one</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.GetByPhoneNumberIsVerifiedAndIsActive(Roblox.Platform.Demographics.IPhoneNumberIdentifier,System.Boolean,System.Boolean,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> by <paramref name="phoneNumberIdentifier"/>.
+            </summary>
+            <param name="phoneNumberIdentifier">The <see cref="T:Roblox.Platform.Demographics.IPhoneNumberIdentifier"/>.</param>
+            <param name="isVerified">Whether the phone number has been verified by the account holder.</param>
+            <param name="isActive">Whether the phone number is active.</param>
+            <param name="count">Maximum number of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> to get.</param>
+            <param name="exclusiveStartId">The exclusive start identifier.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="phoneNumberIdentifier"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is not positive.</exception>
+            <returns>A page of <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumber"/> or an empty list if none are found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.DeletePhoneNumberForUser(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Nullable{System.Int32})">
+            <summary>
+            Deletes the user's saved phone number.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="actorUser">The actor <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="exclusiveStartId">The start id to not delete from.</param>
+            <returns>If the number was deleted succesfully</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.PurgePhoneNumber(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Purge the user's current phone number and phone number history from our data stores. Intended for compliance with data privacy laws such as COPPA.
+            </summary>
+            <param name="user"></param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.DoesPhoneNumberAlreadyExist(System.Int32)">
+            <summary>
+            Checks if an account phone number can be added.
+            </summary>
+            <param name="phoneNumberId">The phone number id/>.</param>
+            <returns>If the account phone number can be added</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.SendRevertPhoneNumberEmail(Roblox.Platform.Membership.IUser,Roblox.AccountEmailAddress)">
+            <summary>
+            Sends a revert phone number email
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="accountEmailAddress">The <see cref="T:Roblox.AccountEmailAddress"/>.</param>
+            <returns>If the email is sent, false otherwise</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAccountPhoneNumberFactory.GetMaskedAndFormattedPhoneNumberString(System.String,System.String,System.Int32,System.Char)">
+            <summary>
+            Returns a formatted phone number from the country code and phone
+            </summary>
+            <param name="phone">The phone number/>.</param>
+            <param name="countryCode">The country code/>.</param>
+            <param name="numberOfVisibleDigits">The number of digits we're displaying/>.</param>
+            <param name="maskCharacter">The character that we mask with/>.</param>
+            <returns>The formatted phone number</returns>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.ICountryConverter">
+            <summary>
+            Provides a common interface for an object that convert country object to ICountry.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.ICountryConverter.ConvertFromUserCountry(Roblox.Users.Country)">
+            <summary>
+            Converts <see cref="T:Roblox.Users.Country"/> to <see cref="T:Roblox.Platform.Demographics.ICountry"/>.
+            </summary>
+            <param name="country">The <see cref="T:Roblox.Users.Country"/> that needs to be converted.</param>
+            <returns>An converted country that implements <see cref="T:Roblox.Platform.Demographics.ICountry"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="country"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IGeolocationProvider">
+            <summary>
+            Interface for a provider of <see cref="T:Roblox.Platform.Demographics.IGeolocation"/>s. Clients of this interface provide an
+            IP address or user ID.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IGeolocationProvider.GetGeolocationByUser(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Looks up geolocation information for a given IUser.
+            </summary>
+            <param name="user">IUser: User that needs to be looked up.</param>
+            <returns>An <see cref="T:Roblox.Platform.Demographics.IGeolocation"/> corresponding to the user.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.ILocalizedCountry">
+            <summary>
+            This interface extend <see cref="T:Roblox.Platform.Demographics.ICountry"/> to have localized country name.
+            If you don't need localized country name, just use <see cref="T:Roblox.Platform.Demographics.ICountry"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.ILocalizedCountry.LocalizedName">
+            <summary>
+            The localized country name
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.ILocalizedCountryProvider">
+            <summary>
+            Provide <see cref="T:Roblox.Platform.Demographics.ILocalizedCountry"/> for given <see cref="T:Roblox.Platform.Demographics.ICountry"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.ILocalizedCountryProvider.GetLocalizedCountry(Roblox.Platform.Demographics.ICountry,Roblox.Platform.Localization.Core.ISupportedLocale)">
+            <summary>
+            Get an <see cref="T:Roblox.Platform.Demographics.ILocalizedCountry"/> of a given <see cref="T:Roblox.Platform.Demographics.ICountry"/> for a specific <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/>
+            </summary>
+            <param name="country"><see cref="T:Roblox.Platform.Demographics.ICountry"/></param>
+            <param name="supportedLocale"><see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/></param>
+            <returns><see cref="T:Roblox.Platform.Demographics.ILocalizedCountry"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.ILocalizedCountryProvider.GetLocalizedCountries(System.Collections.Generic.ICollection{Roblox.Platform.Demographics.ICountry},Roblox.Platform.Localization.Core.ISupportedLocale)">
+            <summary>
+            Get <see cref="T:Roblox.Platform.Demographics.ILocalizedCountry"/> collection of a given <see cref="T:Roblox.Platform.Demographics.ICountry"/> collection for a specific <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/>
+            </summary>
+            <param name="countries"><see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Roblox.Platform.Demographics.ICountry"/></param>
+            <param name="supportedLocale"><see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/></param>
+            <returns><see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Roblox.Platform.Demographics.ILocalizedCountry"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberFactory_Internal.GetById(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> by its ID.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefixFactory">
+            <summary>
+            A public interface producing <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix"/>es
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefixFactory.GetByID(Roblox.Platform.Demographics.IPhoneNumberInternationalPrefixIdentifier)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix"/> by its id
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefixFactory.GetByCountryAndPrefix(System.String,System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix"/> by its two-letter ISO code and the prefix number
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefixFactory.GetOrCreate(System.String,System.String)">
+            <summary>
+            Get or create an <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix"/> by its two-letter ISO code and the prefix number
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefixFactory.GetAllActivePrefixes">
+            <summary>
+            Get all the <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix"/>es that are active.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefixIdentifier">
+            <summary>
+            Provides a common interface for an object that uniquely identifies a phone number international prefix.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefixIdentifier.Id">
+            <summary>
+            Gets the ID of the internatioanl prefix.
+            </summary>
+            <value>
+            The ID of the international prefix.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix">
+            <summary>
+            Represents an interface for the internatonal prefix of phone numbers 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix.CountryIdentifier">
+            <summary>
+            The identifier for the country associated with the prefix.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix.Value">
+            <summary>
+            The string representing the prefix (eg. "1" for America, "44" for the United Kingdoms, "1" for Canada).
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix.IsActive">
+            <summary>
+            Whether the prefix is active.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IPhoneNumber">
+            <summary>
+            Provides a common interface for an object that wraps a phone number.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumber.Value">
+            <summary>
+            Gets the phone number's value.
+            </summary>
+            <value>
+            The phone number's value.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumber.InternationalPrefixIdentifier">
+            <summary>
+            The identifier of the <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumber.FullPhoneNumber">
+            <summary>
+            The full phone number including the international prefix.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumber.NationalPhoneNumber">
+            <summary>
+            The national phone number portion which excludes the international prefix.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.IPhoneNumber.IsBlacklisted">
+            <summary>
+            Whether we should avoid contacting this phone number.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumber.GetPhoneNumberInE164Format">
+            <summary>
+            Gets the current phone number in E164 format.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IPhoneNumberFactory">
+            <summary>
+            Provides a common interface for an object that produces <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberFactory.Get(Roblox.Platform.Demographics.IPhoneNumberIdentifier)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> by its identifier.
+            </summary>
+            <param name="phoneNumberId">The phone number identifier.</param>
+            <returns>
+                The <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> with the given identifier, or null if none existed.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="phoneNumberId"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberFactory.GetPhoneNumbers(System.Collections.Generic.ICollection{System.Int32})">
+            <summary>
+            Gets a collection of <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/>s by their IDs.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> with the given value.
+            </summary>
+            <param name="phoneNumber">The phone number value.</param>
+            <returns>
+                The <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> with the given value.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="phoneNumber"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberFactory.GetOrCreate(System.String,System.String,System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> with the given value.
+            </summary>
+            <param name="internationalPrefixNumber">The international prefix portion of the full telephone number.</param>
+            <param name="nationalPhoneNumber">The "national" part of the full telephone number.</param>
+            <param name="countryAbbreviationCode">The two-letter code designating the country or region.</param>
+            <returns>
+                The <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> with the given value.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="nationalPhoneNumber"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberFactory.GetByPhoneNumber(System.String,System.String,System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> by phone number if it exists.
+            </summary>
+            <param name="internationalPrefixNumber">The international prefix portion of the full telephone number.</param>
+            <param name="nationalPhoneNumber">The "national" part of the full telephone number.</param>
+            <param name="countryAbbreviationCode">The two-letter code designating the country or region.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> or null</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="nationalPhoneNumber"/>
+            </exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformInvalidPhoneNumberException">
+                If the phone is not valid
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberFactory.GetByPhoneNumber(System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> by phone number if it exists.
+            </summary>
+            <param name="phoneNumber">The phone number.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> or null</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+                <paramref name="phoneNumber"/> was null or empty.
+            </exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformInvalidPhoneNumberException">
+                If the phone is not valid.
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberFactory.GetByNationalPhoneNumber(System.String,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets a collection of <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/> by national phone number.
+            </summary>
+            <param name="nationalPhoneNumber">The national phone number.</param>
+            <param name="count">The maximum number of entities to get.</param>
+            <param name="exclusiveStartId">The exclusive start identifier.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+                Thrown if <paramref name="count"/> is non-positive.
+                Thrown if <paramref name="nationalPhoneNumber"/> is null or whitespace.
+            </exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Demographics.IPhoneNumber"/>s.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IPhoneNumberIdentifier">
+            <summary>
+            Provides a common interface for an object that uniquely identifies a phone number.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.IDomainObjectIdentifier`1" />
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IPhoneNumberValidator">
+            <summary>
+            Represents an interface for validating a phone number
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberValidator.IsValid(System.String)">
+            <summary>
+            Checks whether a phone is valid.
+            </summary>
+            <param name="phone">The phone to test validity for.</param>
+            <returns>
+            True if the passed in account phone number is valid, false otherwise.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="phone.Phone.Phone"/> is null or empty.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberValidator.IsValid(System.String,System.String,System.String)">
+            <summary>
+            Checks whether a phone number is valid.
+            </summary>
+            <param name="internationalPrefix"></param>
+            <param name="nationalPhoneNumber"></param>
+            <param name="twoLetterCountryCode"></param>
+            <returns>Whether the phone number is correct</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if any param is null or empty.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberValidator.GetSanitizedPhoneNumber(System.String,System.String,System.String)">
+            <summary>
+            Gets a valid and sanitized phone number
+            </summary>
+            <param name="internationalPrefix"></param>
+            <param name="nationalPhoneNumber"></param>
+            <param name="twoLetterCountryCode"></param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.ISanitizedPhoneNumber"/> or null if the phone is not valid </returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberValidator.TryGetSanitizedPhoneNumberFromPhoneNumber(System.String,Roblox.Platform.Demographics.ISanitizedPhoneNumber@,System.String)">
+            <summary>
+            Tries to get a <see cref="T:Roblox.Platform.Demographics.ISanitizedPhoneNumber"/> from a string representation of a phone number.
+            <remarks>
+                Works for valid international phone number starting or not with the + sign. 
+                Works for national phone numbers although for these, <see cref="P:Roblox.Platform.Demographics.ISanitizedPhoneNumber.InternationalPrefix"/> will always be null
+                unless you supply a valid <paramref name="twoLetterCountryCode"/>.
+                This will strip away any special characters and letters besides one leading + sign.
+                For example the phone number "+++123%456A7890" becomes "+1234567890".
+            </remarks>
+            </summary>
+            <param name="phoneNumber">A string representation of a phone number.</param>
+            <param name="sanitizedPhoneNumber">An out <see cref="T:Roblox.Platform.Demographics.ISanitizedPhoneNumber"/>.</param>
+            <param name="twoLetterCountryCode">
+                An optional twoLetterCountryCode. You need to provide a valid twoLetterCountryCode and a valid 
+                national/international phone number to get the <see cref="P:Roblox.Platform.Demographics.ISanitizedPhoneNumber.InternationalPrefix"/> information. 
+                Otherwise it will be null.
+            </param>
+            <returns>True if <paramref name="sanitizedPhoneNumber"/> was assigned a non null <see cref="T:Roblox.Platform.Demographics.ISanitizedPhoneNumber"/>. False otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberValidator.GetFormattedPhoneNumber(System.String,System.String)">
+            <summary>
+            Gets a formatted number from an international phone number.
+            If the phone number is valid, outputs the country code + the national phone number
+            without the symbols or spaces that the provided phone number might content.
+            If a country code is passed will try to validate the phone number region.
+            If no country code is passed then will use an unknown region code for validation.
+            </summary>
+            <param name="phoneNumber">The string representation of a phone number</param>
+            <param name="twoLetterCountryCode">The two letter country code, if none is passed the 
+            parser will try to infer it by using the unknown region.</param>
+            <returns>The formatted phone number.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="phoneNumber"/> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Demographics.PlatformInvalidPhoneNumberException">
+                Thrown if <paramref name="phoneNumber"/> is an invalid phone or
+                a valid national phone and no <paramref name="twoLetterCountryCode"/> was provided.
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IPhoneNumberValidator.StripInvalidCharacters(System.String)">
+            <summary>
+            Strips all invalid (non-digit) characters from a given phone number.
+            </summary>
+            <param name="phoneNumber">The phone number</param>
+            <returns>The stripped phone number</returns>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAddress">
+            <summary>
+            Provides a common interface for an object that describes a physical address.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAddressFactory">
+            <summary>
+            Provides a common interface for an object that produces <see cref="T:Roblox.Platform.Demographics.IAddress"/>es.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAddressFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.IAddress"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.IAddress"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.IAddressFactory.GetOrCreate(System.String,System.String,System.String,System.String,Roblox.Platform.Demographics.ICountryIdentifier,System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Demographics.IAddress"/> with the given information.
+            </summary>
+            <param name="line1">The first line.</param>
+            <param name="line2">The second line.</param>
+            <param name="city">The city.</param>
+            <param name="stateProvince">The state province.</param>
+            <param name="country">The identifier of the country that the address is in.</param>
+            <param name="zipPostal">The zip code.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.IAddress"/> with the given information.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="line1"/>
+                or
+                <paramref name="line2"/>
+                or
+                <paramref name="city"/>
+                or
+                <paramref name="stateProvince"/>
+                or
+                <paramref name="country"/>
+                or
+                <paramref name="zipPostal"/>
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.ICountry">
+            <summary>
+            Provides a common interface for an object that contains information about a country.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Demographics.ICountryIdentifier" />
+        </member>
+        <member name="P:Roblox.Platform.Demographics.ICountry.Name">
+            <summary>
+            Gets the name of the country.
+            </summary>
+            <value>
+            The name of the country.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.ICountry.Code">
+            <summary>
+            Gets the country's code.
+            </summary>
+            <value>
+            The country's code.
+            </value>
+            <example>US, CA, GB</example>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.ICountry.IsActive">
+            <summary>
+            Gets a value indicating whether the country is active.
+            </summary>
+            <value>
+              <c>true</c> if this instance is active; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.ICountryFactory">
+            <summary>
+            Provides a common interface for an object that produces <see cref="T:Roblox.Platform.Demographics.ICountry"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.ICountryFactory.Get(Roblox.Platform.Demographics.ICountryIdentifier)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.ICountry"/> by its ID.
+            </summary>
+            <param name="countryId">The country identifier.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.ICountry"/> with the given ID, or null if none existed.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="countryId"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.ICountryFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.ICountry" /> by its ID.
+            </summary>
+            <param name="countryId">The country identifier.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.ICountry" /> with the given ID, or null if none existed.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="countryId" /></exception>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.ICountryFactory.GetAllActive">
+            <summary>
+            Returns all the countries that are active
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.ICountryFactory.GetByCode(System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Demographics.ICountry"/> by its code.
+            </summary>
+            <param name="code">The code.</param>
+            <returns>The <see cref="T:Roblox.Platform.Demographics.ICountry"/> with the given code, or null if none existed.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="code"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.ICountryIdentifier">
+            <summary>
+            Provides a common interface for an object that uniquely identifies a country.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.ICountryIdentifier.Id">
+            <summary>
+            Gets the ID of the country.
+            </summary>
+            <value>
+            The ID of the country.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.DemographicsDomainFactories">
+            <summary>
+            A class holding the factories for the (Platform) Demographics domain.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.PhoneNumberFactory">
+            <summary>
+            Gets the phone number factory.
+            </summary>
+            <value>The phone number factory.</value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.PhoneNumberInternationalPrefixFactory">
+            <summary>
+            Gets the phone number international prefix factory.
+            </summary>
+            <value>The phone number international prefix factory.</value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.CountryFactory">
+            <summary>
+            Gets the country factory.
+            </summary>
+            <value>The country factory.</value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.CountryConverter">
+            <summary>
+            Gets the country converter.
+            </summary>
+            <value>The country converter.</value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.AddressFactory">
+            <summary>
+            Gets the address factory.
+            </summary>
+            <value>The address factory.</value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.AccountPhoneNumberFactory">
+            <summary>
+            Gets the account phone number factory.
+            </summary>
+            <value>The account phone number factory.</value>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.PhoneNumberValidator">
+            <summary>
+            Gets a phone number validator.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.AccountPhoneNumberOwnerFactory">
+            <summary>
+            Gets a account phone number owner factory.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.DemographicsDomainFactories.GeolocationFactory">
+            <see cref="T:Roblox.Platform.Demographics.IGeolocationFactory"/>
+        </member>
+        <member name="M:Roblox.Platform.Demographics.DemographicsDomainFactories.GetLocalizedCountryProvider(Roblox.Platform.TranslationStorage.ITranslationStorageAccessor,Roblox.EventLog.ILogger)">
+            <summary>
+            Get an <see cref="T:Roblox.Platform.Demographics.ILocalizedCountryProvider"/>
+            </summary>
+            <param name="translationStorageAccessor">The <see cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor"/> to access translations</param>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/> to log exceptions</param>
+            <returns>An <see cref="T:Roblox.Platform.Demographics.ILocalizedCountryProvider"/></returns>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.ISanitizedPhoneNumber.InternationalPrefix">
+            <summary>
+            The <see cref="T:Roblox.Platform.Demographics.IPhoneNumberInternationalPrefix"/> for the sanitized phone
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.ISanitizedPhoneNumber.NationalNumber">
+            <summary>
+            The national number
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Demographics.ISanitizedPhoneNumber.FullNumber">
+            <summary>
+            The full number (prefix + national number)
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactorySettings">
+            <summary>
+            Settings for the AccountPhoneNumberFactory.
+            In particular, several flood checker settings.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Demographics.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

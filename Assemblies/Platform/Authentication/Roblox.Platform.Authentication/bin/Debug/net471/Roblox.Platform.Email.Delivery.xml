@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Email.Delivery</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Email.Delivery.Email">
+            <summary>
+            A default implementation class of <see cref="T:Roblox.Platform.Email.Delivery.IEmail"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.Email.From">
+            <summary>
+            The From field of the email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.Email.To">
+            <summary>
+            The To field of the email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.Email.Subject">
+            <summary>
+            The Subject of the email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.Email.PlainBody">
+            <summary>
+            The body of a plain email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.Email.HtmlBody">
+            <summary>
+            The body of a html email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.Email.BodyType">
+            <summary>
+            The body type of the email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.Email.EmailType">
+            <summary>
+            The type of the email being tracked in PerfMon Counters.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.Email.#ctor(System.String,System.String,System.String,Roblox.Platform.Email.Delivery.EmailBodyType,System.String,System.String,System.String)">
+            <summary>
+            The default constructor of the <see cref="T:Roblox.Platform.Email.Delivery.Email" />.
+            </summary>
+            <param name="from">The from field.</param>
+            <param name="to">The to field.</param>
+            <param name="subject">The subject field.</param>
+            <param name="bodyType">The email body type.</param>
+            <param name="emailType">The type of the email being tracked.</param>
+            <param name="plainBody">The plain body.</param>
+            <param name="htmlBody">The html body.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">from
+            or
+            to
+            or
+            subject
+            is null or white space.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.EmailDeliveryEventsPublisher">
+            <summary>
+            An  implementation of <see cref="T:Roblox.Platform.Email.Delivery.IEmailDeliveryEventsPublisher"/>.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Email.Delivery.IEmailDeliveryEventsPublisher" />.
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.EmailDeliveryEventsPublisher.#ctor(Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Email.Delivery.EmailDeliveryEventsPublisher" /> class.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.EmailSender">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Email.Delivery.IEmailSender"/>.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Email.Delivery.IEmailSender" />
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.EmailSender.#ctor(Roblox.EventLog.ILogger,Roblox.Platform.Email.Delivery.IEmailDeliveryEventsPublisher,Roblox.Platform.Email.Delivery.IEmailPerformanceMonitor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Email.Delivery.EmailSender"/> class. Used for testing purposes.
+            </summary>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="emailDeliveryEventsPublisher">The <see cref="T:Roblox.Platform.Email.Delivery.IEmailDeliveryEventsPublisher"/>.</param>
+            <param name="emailPerformanceMonitor">The <see cref="T:Roblox.Platform.Email.Delivery.IEmailPerformanceMonitor"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            logger
+            or
+            emailDeliveryEventsPublisher
+            or
+            emailPerformanceMonitor
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.EmailSender.#ctor(Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Email.Delivery.EmailSender" /> class.
+            </summary>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">The <see cref="T:Roblox.EventLog.ILogger"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.EmailSender.SendEmail(Roblox.Platform.Email.Delivery.IEmail)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.EmailSender.SendEmail(Roblox.Platform.Email.Delivery.IEmail,Roblox.TranslationResources.Communication.ICommonEmailResources)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.EmailBodyType">
+            <summary>
+            The set of text/media types that represent supported email body text formats.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Email.Delivery.EmailBodyType.Plain">
+            <summary>
+            Plain text email body.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Email.Delivery.EmailBodyType.Html">
+            <summary>
+            Html format email body.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Email.Delivery.EmailBodyType.Mime">
+            <summary>
+            Mime format email body.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.EmailDeliveryEvent">
+            <summary>
+            A class used to hold the details necessary for the consuming code to send emails.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.EmailDeliveryEvent.To">
+            <summary>
+            The 'To' field
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.EmailDeliveryEvent.From">
+            <summary>
+            The 'From' field.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.EmailDeliveryEvent.Subject">
+            <summary>
+            The 'Subject' field.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.EmailDeliveryEvent.HtmlBody">
+            <summary>
+            The 'HTML body'.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.EmailDeliveryEvent.PlainTextBody">
+            <summary>
+            The plain text body.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.EmailDeliveryEvent.EmailBodyType">
+            <summary>
+            The Email body type.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.EmailDeliveryEvent.EmailType">
+            <summary>
+            The type of the email.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.EmailInvalidException">
+            <summary>
+            Exception to be thrown when an input email failed the validity check.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Email.Delivery.EmailInvalidException.UserFacingMessage">
+            <summary>
+            User-friendly error message intended for display to the user.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.EmailInvalidException.#ctor(System.String,System.String)">
+            <summary>
+            Basic constructor.
+            </summary>
+            <param name="message">Message passed back to the caller to be handled.</param>
+            <param name="userFacingMessage">User-friendly error mesage intended for display to the user.</param>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.EmailQueueingException">
+            <summary>
+            Exception to be thrown when there is an error while queueing the <see cref="T:Roblox.Platform.Email.Delivery.EmailDeliveryEvent"/> to SNS.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.EmailQueueingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Basic constructor.
+            </summary>
+            <param name="message">Message passed back to the caller to be handled.</param>
+            <param name="innerException"><see cref="T:System.Exception" /> that triggered the exception.</param>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.IEmail">
+            <summary>
+            Provides a common interface for an object that represents an Email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.IEmail.From">
+            <summary>
+            The From field of the email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.IEmail.To">
+            <summary>
+            The To field of the email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.IEmail.Subject">
+            <summary>
+            The Subject of the email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.IEmail.PlainBody">
+            <summary>
+            The body of a plain email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.IEmail.HtmlBody">
+            <summary>
+            The body of a html email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.IEmail.BodyType">
+            <summary>
+            The body type of the email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.Delivery.IEmail.EmailType">
+            <summary>
+            The type of the email being tracked in PerfMon Counters
+            and displayed in performance charts.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.IEmailDeliveryEventsPublisher">
+            <summary>
+            An interface for publishing an <see cref="T:Roblox.Platform.Email.Delivery.EmailDeliveryEvent"/> to SNS.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.IEmailDeliveryEventsPublisher.Publish(Roblox.Platform.Email.Delivery.EmailDeliveryEvent)">
+            <summary>
+            Publishes the provided <see cref="T:Roblox.Platform.Email.Delivery.EmailDeliveryEvent"/> to SNS.
+            </summary>
+            <param name="emailDeliveryEvent">The <see cref="T:Roblox.Platform.Email.Delivery.EmailDeliveryEvent"/>.</param>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.IEmailSender">
+            <summary>
+            Provides a common interface for an object that handles the sending of Emails.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.IEmailSender.SendEmail(Roblox.Platform.Email.Delivery.IEmail)">
+            <summary>
+            Sends the specified email.
+            </summary>
+            <param name="email">The email to be sent.</param>
+            <exception cref="T:Roblox.Platform.Email.Delivery.EmailQueueingException">Thrown when there are problems publishing the email to SNS.
+            </exception>
+            <exception cref="T:Roblox.Platform.Email.Delivery.EmailInvalidException">Thrown when the input email failed the validity check.
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown when the input email is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.IEmailSender.SendEmail(Roblox.Platform.Email.Delivery.IEmail,Roblox.TranslationResources.Communication.ICommonEmailResources)">
+            <summary>
+            Sends the specified email.
+            </summary>
+            <param name="email">The email to be sent.</param>
+            <param name="commonEmailResources">The <see cref="T:Roblox.TranslationResources.Communication.ICommonEmailResources"/></param>
+            <exception cref="T:Roblox.Platform.Email.Delivery.EmailQueueingException">Thrown when there are problems publishing the email to SNS.
+            </exception>
+            <exception cref="T:Roblox.Platform.Email.Delivery.EmailInvalidException">Thrown when the input email failed the validity check.
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown when the input email is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.IEmailPerformanceMonitor">
+            <summary>
+            Provides a common interface for an object that can record email service performance using PerfMon counters.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.IEmailPerformanceMonitor.RecordEmailSent(Roblox.Platform.Email.Delivery.IEmail)">
+            <summary>
+            Increments the PerfMon counters when an <see cref="T:Roblox.Platform.Email.Delivery.IEmail"/> has been successfully sent.
+            </summary>
+            <param name="email">The IEmail sent.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown when the input email is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.Delivery.IEmailPerformanceMonitor.RecordEmailException(Roblox.Platform.Email.Delivery.IEmail,System.Exception)">
+            <summary>
+            Increments the PerfMon counters when an error occurred during the sending of an <see cref="T:Roblox.Platform.Email.Delivery.IEmail"/>.
+            </summary>
+            <param name="email">The IEmail being sent.</param>
+            <param name="exception">The exception thrown.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown when the input email is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Email.Delivery.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

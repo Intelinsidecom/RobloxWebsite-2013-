@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.FloodCheckers.Redis</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.FloodCheckers.Redis.RedisExpandingWindowFloodChecker">
+            <summary>
+            A Redis-backed expanding window FloodChecker. Whenever a count is recorded against the floodchecker, the expiry of the current count will be
+            extended by the window period. The count will only increase until a full window period elapses without any counts recorded, at which point
+            it will reset to zero. Useful in situations where you want a particular activity to completely cease before allowing it to continue.
+            Resolution of the expiry time is approx. 1 millisecond.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Redis.RedisExpandingWindowFloodChecker.#ctor(System.String,System.String,System.Func{System.Int32},System.Func{System.TimeSpan},System.Func{System.Boolean},System.Func{System.Boolean},Roblox.EventLog.ILogger,Roblox.Redis.IRedisClient,Roblox.FloodCheckers.Core.IGlobalFloodCheckerEventLogger,Roblox.FloodCheckers.Redis.ISettings)">
+            <summary>
+            Constructs a new Redis-backed Expanding Window FloodChecker
+            </summary>
+            <param name="category">A category for the floodchecker. This will be used for plotting floodchecker metrics and should be broad</param>
+            <param name="key">The key for the individual action you wish to flood check, which may be much more specific than the category</param>
+            <param name="getLimit">The threshold before a checker becomes flooded</param>
+            <param name="getWindowPeriod">The lifespan of the floodchecker before the count is reset</param>
+            <param name="isEnabled">Whether or not the floodchecker is enabled. If false it will never report itself as flooded</param>
+            <param name="recordGlobalFloodedEvents">Whether or not the floodchecker should record global events when the floodchecker is flooded</param>
+            <param name="logger"></param>
+            <param name="redisClient"></param>
+            <param name="globalFloodCheckerEventLogger"></param>
+            <param name="settings"></param>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Redis.RedisApproximateRollingWindowFloodChecker">
+            <summary>
+            This flood checker is similar to <see cref="T:Roblox.FloodCheckers.Redis.RedisRollingWindowFloodChecker"/>. It uses a linear approximation of the
+            rate of events and therefore is not as precise as <see cref="T:Roblox.FloodCheckers.Redis.RedisRollingWindowFloodChecker"/>. On the other hand,
+            it uses very little memory (two numbers), which makes it suitable for rate limiting at high rates.
+            Inspired by https://blog.cloudflare.com/counting-things-a-lot-of-different-things/.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Redis.RedisApproximateRollingWindowFloodChecker.#ctor(System.String,System.String,System.Func{System.Int32},System.Func{System.TimeSpan},System.Func{System.Boolean},Roblox.EventLog.ILogger)">
+            <summary>
+            Constructs a new Redis-backed Floodchecker
+            </summary>
+            <param name="category">A category for the floodchecker. This will be used for plotting floodchecker metrics and should be broad</param>
+            <param name="key">The key for the individual action you wish to flood check, which may be much more specific than the category</param>
+            <param name="getLimit">The threshold before a checker becomes flooded</param>
+            <param name="getWindowPeriod">The window of time to consider counts towards the limit</param>
+            <param name="isEnabled">Whether or not the floodchecker is enabled. If false it will never report itself as flooded</param>
+            <param name="logger"></param>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Redis.RedisRollingWindowFloodChecker">
+            <summary>
+            A Redis-backed continuous rolling-window FloodChecker. To determine if it is flooded it will look at the number
+            of counts recorded in the specified window period, measuring from the current time when the check is performed.
+            Resolution of count times is the storage time as ticks rounded at the precision of a double float (approx.  1/10,000th of a second)
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.Redis.RedisRollingWindowFloodChecker.#ctor(System.String,System.String,System.Func{System.Int32},System.Func{System.TimeSpan},System.Func{System.Boolean},Roblox.EventLog.ILogger)">
+            <summary>
+            Constructs a new Redis-backed Floodchecker
+            </summary>
+            <param name="category">A category for the floodchecker. This will be used for plotting floodchecker metrics and should be broad</param>
+            <param name="key">The key for the individual action you wish to flood check, which may be much more specific than the category</param>
+            <param name="getLimit">The threshold before a checker becomes flooded</param>
+            <param name="getWindowPeriod">The window of time to consider counts towards the limit</param>
+            <param name="isEnabled">Whether or not the floodchecker is enabled. If false it will never report itself as flooded</param>
+            <param name="logger"></param>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Redis.RedisExpandingWindowFloodCheckerFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.FloodCheckers.Core.IFloodCheckerFactory`1"/> which will construct IFloodCheckers as <see cref="T:Roblox.FloodCheckers.Redis.RedisRollingWindowFloodChecker"/>s
+            </summary>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Redis.RedisApproximateRollingWindowFloodCheckerFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.FloodCheckers.Core.IFloodCheckerFactory`1"/> which will construct IFloodCheckers as <see cref="T:Roblox.FloodCheckers.Redis.RedisApproximateRollingWindowFloodChecker"/>s
+            </summary>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Redis.RedisRollingWindowFloodCheckerFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.FloodCheckers.Core.IFloodCheckerFactory`1"/> which will construct IFloodCheckers as <see cref="T:Roblox.FloodCheckers.Redis.RedisRollingWindowFloodChecker"/>s
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Agents</AssemblyName>
@@ -11,6 +11,10 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Users.Client">
       <HintPath>..\..\Website\bin\Roblox.Users.Client.dll</HintPath>
@@ -40,6 +44,12 @@
     </Reference>
     <Reference Include="Roblox.Entities.Mssql">
       <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Http.Client">
+      <HintPath>..\Roblox.Http.Client\bin\Debug\netstandard2.0\Roblox.Http.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Http.ServiceClient">
+      <HintPath>..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

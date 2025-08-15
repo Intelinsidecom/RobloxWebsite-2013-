@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Membership.Extensions</AssemblyName>
@@ -13,15 +13,13 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TextFilter">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.TextFilter.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>

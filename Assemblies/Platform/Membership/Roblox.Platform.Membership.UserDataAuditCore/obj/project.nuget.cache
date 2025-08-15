@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Uq/jTfeJQM9lBB2pyPm2MN2vVHE411Hk+AbhqcR6D7zJWqefpxvv8FbCcp8WpmQyyg5KmlamidwLwQadde8B5w==",
+  "dgSpecHash": "Uj4alMVHx9k=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.Membership.UserDataAuditCore\\Roblox.Platform.Membership.UserDataAuditCore.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.UserDataAuditCore\\Roblox.Platform.Membership.UserDataAuditCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

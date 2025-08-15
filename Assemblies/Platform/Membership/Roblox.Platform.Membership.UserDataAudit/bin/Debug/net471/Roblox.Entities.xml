@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Entities</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Entities.IEntity`1">
+            <summary>
+            Provides a common interface for a persisted entity.
+            </summary>
+            <typeparam name="TId">The type of the entity's ID.</typeparam>
+        </member>
+        <member name="P:Roblox.Entities.IEntity`1.Id">
+            <summary>
+            Gets the ID.
+            </summary>
+            <value>
+            The ID.
+            </value>
+        </member>
+        <member name="P:Roblox.Entities.IEntity`1.Created">
+            <summary>
+            Gets the <see cref="T:System.DateTime"/> at which the entity was created.
+            </summary>
+            <value>
+            The <see cref="T:System.DateTime"/> at which the entity was created.
+            </value>
+        </member>
+        <member name="M:Roblox.Entities.IEntity`1.Delete">
+            <summary>
+            Deletes the entity from persistence.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+                Thrown if the entity no longer exists in persistent storage.
+            </exception>
+        </member>
+        <member name="T:Roblox.Entities.IUpdateableEntity`1">
+            <summary>
+            Provides a common interface for a persisted entity that can be updated.
+            </summary>
+            <typeparam name="TId">The type of the identifier.</typeparam>
+            <seealso cref="T:Roblox.Entities.IEntity`1" />
+        </member>
+        <member name="P:Roblox.Entities.IUpdateableEntity`1.Updated">
+            <summary>
+            Gets the <see cref="T:System.DateTime"/> at which the entity was last updated.
+            </summary>
+            <value>
+            The <see cref="T:System.DateTime"/> at which the entity was last updated.
+            </value>
+        </member>
+        <member name="M:Roblox.Entities.IUpdateableEntity`1.Update">
+            <summary>
+            Updates the persisted entity to match its current in-memory values.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+                Thrown if the entity no longer exists in persistent storage.
+            </exception>
+        </member>
+    </members>
+</doc>

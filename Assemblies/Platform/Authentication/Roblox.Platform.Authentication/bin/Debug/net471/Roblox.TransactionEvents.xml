@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.TransactionEvents</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.TransactionEvents.ContentType">
+            <summary>
+            The types of content we're logging.
+            </summary>
+        </member>
+        <member name="T:Roblox.TransactionEvents.UserType">
+            <summary>
+            The types of users we're logging.
+            </summary>
+        </member>
+        <member name="T:Roblox.TransactionEvents.ITransactionStreamer">
+            <summary>
+            An interface for a TransactionStreamer, used to stream events with Robux transactions.
+            </summary>
+        </member>
+        <member name="M:Roblox.TransactionEvents.ITransactionStreamer.StreamTransactionEvent(System.String,Roblox.TransactionEvents.UserType,System.String,Roblox.TransactionEvents.UserType,System.String,Roblox.TransactionEvents.ContentType,System.Int64,System.Int64,System.Byte,System.String,System.DateTime,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Streams a transaction event.
+            </summary>
+            <param name="eventType">The name of the event we're streaming.</param>
+            <param name="originTypeId">The sender's type id</param>
+            <param name="originId">The sender's id</param>
+            <param name="targetTypeId">The target's type id</param>
+            <param name="targetId">The target's id</param>
+            <param name="contentTypeId">Content type id for txn</param>
+            <param name="amount">The amount of robux being transferred.</param>
+            <param name="robuxBalanceBeforePurchase">The user's balance before the transfer.</param>
+            <param name="acquisitionType">The transaction origin type</param>
+            <param name="typeOfTransaction">Which economy it's in</param>
+            <param name="created">The time at which the event was created</param>
+            <param name="paymentId">The payment id. This can be empty.</param>
+            <param name="saleId">The sale id. can be empty.</param>
+        </member>
+    </members>
+</doc>

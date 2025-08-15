@@ -239,7 +239,8 @@ public class AgentFactory : IAgentFactory
 	private static IUsersClient CreateUsersClient()
 	{
 		UsersClient usersClient = new UsersClient(StaticCounterRegistry.Instance, () => Settings.Default.UsersClientMasterApiKey);
-		RequestCache requestCache = new RequestCache(GetRequestCacheDictionary);
-		return new CachedUsersClient((IUsersClient)usersClient, (IRequestCache)requestCache);
+		UsersClientAgentCache agentCache = new UsersClientAgentCache();
+		UsersClientLocalCache localCache = new UsersClientLocalCache(usersClient, agentCache);
+		return new CachedUsersClient((IUsersClient)usersClient, (IUsersClientCache)localCache, (IUsersClientAgentCache)agentCache);
 	}
 }

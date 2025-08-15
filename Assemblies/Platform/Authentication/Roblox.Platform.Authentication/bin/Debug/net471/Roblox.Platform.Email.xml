@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Email</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Email.EmailDomainFactories">
+            <summary>
+            A class holding the factories for the Platform.Email domain.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.EmailDomainFactories.EmailAddressFactory">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Email.IEmailAddressFactory"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.EmailDomainFactories.EmailAddressValidator">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Email.IEmailAddressValidator"/>
+            </summary>
+            <value><see cref="T:Roblox.Platform.Email.IEmailAddressValidator"/></value>
+        </member>
+        <member name="P:Roblox.Platform.Email.EmailDomainFactories.BriteVerifyEmailVerifier">
+            <summary>
+            Gets the <see cref="T:Roblox.BriteVerify.IBriteVerifyClient"/>
+            </summary>
+            <value><see cref="T:Roblox.BriteVerify.IBriteVerifyClient"/></value>
+        </member>
+        <member name="P:Roblox.Platform.Email.EmailDomainFactories.EmailDeleter">
+            <see cref="T:Roblox.Platform.Email.IEmailAddressDeleter"/>
+        </member>
+        <member name="M:Roblox.Platform.Email.EmailDomainFactories.#ctor(Roblox.EventLog.ILogger,DnsClient.ILookupClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Email.EmailDomainFactories" /> class.
+            </summary>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
+            <param name="dnsLookupClient">The DNS lookup client.</param>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Email.EmailConstants">
+            <summary>
+            Constants needed for email contents.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Email.IEmailAddressDeleter">
+            <summary>
+            Deletes email entities from the system. Intended for use only with CS tools and the purge processor.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressDeleter.Delete(System.Int32)">
+            <summary>
+            Deletes the email address entity with the given id
+            </summary>
+            <param name="emailAddressId"></param>
+        </member>
+        <member name="T:Roblox.Platform.Email.IEmailAddressFactory">
+            <summary>
+            Interface for factories producing <see cref="T:Roblox.Platform.Email.IEmailAddress"/>es
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressFactory.GetById(System.Int32)">
+             <summary>
+             Returns the <see cref="T:Roblox.Platform.Email.IEmailAddress"/> with the provided id, or null if it doesn't exist.
+             </summary>
+            <exception cref="T:System.OverflowException"><paramref name="id"/> cannot be cast to the data type used by the underlying data storage. </exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressFactory.GetByEmailAddress(System.String)">
+            <summary>
+            Returns an <see cref="T:Roblox.Platform.Email.IEmailAddress"/> with the email address, or null if it doesn't exist.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"><paramref name="emailAddress"/> is null.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="emailAddress"/> is the empty string.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressFactory.GetOrCreateByEmailAddress(System.String)">
+            <summary>
+            Returns an <see cref="T:Roblox.Platform.Email.IEmailAddress"/> with the email address, creating one if one didn't exist.
+            </summary>
+            <remarks>This method does not perform email address validation.  The argument should be validated before calling this method.</remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="emailAddress"/> is null.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="emailAddress"/> is the empty string.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Email.EmailAddressValidator">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Email.IEmailAddressValidator"/>.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Email.IEmailAddressValidator" />
+        </member>
+        <member name="M:Roblox.Platform.Email.EmailAddressValidator.#ctor(DnsClient.ILookupClient,Roblox.Platform.Email.Properties.ISettings,Roblox.Platform.Email.Entities.IEmailAddressEntityFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Email.EmailAddressValidator"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.EmailAddressValidator.GetEmailRegex">
+            <inheritdoc cref="M:Roblox.Platform.Email.IEmailAddressValidator.GetEmailRegex"/>
+        </member>
+        <member name="M:Roblox.Platform.Email.EmailAddressValidator.IsValidEmail(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Email.IEmailAddressValidator.IsValidEmail(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Email.EmailAddressValidator.IsShadyProvider(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Email.IEmailAddressValidator.IsShadyProvider(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Email.EmailAddressValidator.IsBlacklisted(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Email.IEmailAddressValidator.IsBlacklisted(System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Email.EmailAddressValidator.IgnorePeriods(System.String)">
+            <summary>
+            Ignore periods in email address to match Gmail's standard. 
+            </summary>
+            <param name="email">The string of email address</param>
+            <returns>An email address that has no dot</returns>
+        </member>
+        <member name="M:Roblox.Platform.Email.EmailAddressValidator.IsEmailDomainValid(System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Email.IEmailAddressValidator.IsEmailDomainValid(System.String)"/>
+        </member>
+        <member name="T:Roblox.Platform.Email.IEmailAddress">
+            <summary>
+            An interface for representing an email address.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.IEmailAddress.Id">
+            <summary>
+            The ID of the email address
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.IEmailAddress.Address">
+            <summary>
+            The actual email address
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.IEmailAddress.IsBlacklisted">
+            <summary>
+            Whether the email address is blacklisted.  Emails should not be delivered to blacklisted email addresses, not even for account recovery.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Email.IEmailAddressValidator">
+            <summary>
+            Represents an interface for validating an email address.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressValidator.GetEmailRegex">
+            <summary>
+            Gets regex to use for validating emails
+            </summary>
+            <returns>
+            Regex for valid email
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressValidator.IsValidEmail(System.String)">
+            <summary>
+            Checks whether an email address is valid.
+            </summary>
+            <param name="emailAddress">The email address to test validity for.</param>
+            <returns>
+            True if the passed in email address is valid, false otherwise.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="emailAddress"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressValidator.IsShadyProvider(System.String)">
+            <summary>
+            Determines whether or not a given email address has a shady domain.
+            </summary>
+            <param name="emailAddress">The email address to check</param>
+            <returns>True if the email address has a shady domain, false otherwise.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="emailAddress"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressValidator.IsBlacklisted(System.String)">
+            <summary>
+            Determines whether or not a given email is blacklisted.
+            We also check the email without periods. E.g., a.b@gmail.com is the same email as ab@gmail.com
+            </summary>
+            <param name="emailAddress">The email address to check</param>
+            <returns>True if the email is blacklisted, false otherwise.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="emailAddress"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.IEmailAddressValidator.IsEmailDomainValid(System.String)">
+            <summary>
+            Determines if the domain of the e-mail address actually contains MX records or is resolvable in order to receive mail.
+            </summary>
+            <param name="emailAddress">The email address to validate.</param>
+            <returns>True if the email domain is valid, false otherwise.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="emailAddress"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Email.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

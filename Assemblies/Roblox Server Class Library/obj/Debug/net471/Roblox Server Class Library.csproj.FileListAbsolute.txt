@@ -3,3 +3,9 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Cla
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox.Business_Logic_Layer.RobloxContent.resources
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox.Resources.JSON.resources
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox Server Class Library.csproj.GenerateResource.cache
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox.Roblox.Business_Logic_Layer.CharacterAppearance.resources
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox.Roblox.Business_Logic_Layer.RobloxContent.resources
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox.Roblox.Resources.JSON.resources
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox Server Class Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox Server Class Library.csproj.CoreCompileInputs.cache
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\obj\Debug\net471\Roblox Server Class Library.sourcelink.json

@@ -7,7 +7,7 @@ using System.Linq;
 namespace Roblox.Redis;
 
 [TypeConverter(typeof(RedisEndpointsConverter))]
-[SettingsSerializeAs(/*Could not decode attribute arguments.*/)]
+[SettingsSerializeAs(SettingsSerializeAs.String)]
 public class RedisEndpoints
 {
 	public string Source { get; }

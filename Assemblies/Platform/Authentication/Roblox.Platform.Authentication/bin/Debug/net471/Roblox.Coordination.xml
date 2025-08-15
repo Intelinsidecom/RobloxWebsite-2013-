@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Coordination</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Coordination.IBackgroundWorker">
+            <summary>
+            An object implementing this interface will perform work in the background.
+            The Start() and Stop() are using to control that work-flow.
+            </summary>
+        </member>
+        <member name="P:Roblox.Coordination.IBackgroundWorker.IsRunning">
+            <summary>
+            Has the Start() method been called without the Stop() method being called?
+            </summary>
+        </member>
+        <member name="E:Roblox.Coordination.IBackgroundWorker.Started">
+            <summary>
+            The background thread has started doing work.
+            </summary>
+        </member>
+        <member name="E:Roblox.Coordination.IBackgroundWorker.Stopped">
+            <summary>
+            The background thread has completed work.
+            </summary>
+        </member>
+        <member name="E:Roblox.Coordination.IBackgroundWorker.Worked">
+            <summary>
+            The worker is running and DoWork has completed.
+            </summary>
+        </member>
+        <member name="E:Roblox.Coordination.IBackgroundWorker.Working">
+            <summary>
+            The worker is running and DoWork is about to be called.
+            </summary>
+        </member>
+        <member name="M:Roblox.Coordination.IBackgroundWorker.Start">
+            <summary>
+            Starts the worker
+            </summary>
+        </member>
+        <member name="M:Roblox.Coordination.IBackgroundWorker.Stop">
+            <summary>
+            Stops the worker
+            </summary>
+        </member>
+    </members>
+</doc>

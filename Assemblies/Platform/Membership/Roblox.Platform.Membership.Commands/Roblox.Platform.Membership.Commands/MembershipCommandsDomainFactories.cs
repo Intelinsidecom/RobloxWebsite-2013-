@@ -19,7 +19,7 @@ public class MembershipCommandsDomainFactories : DomainFactoriesBase
 {
 	internal virtual ILogger Logger { get; }
 
-	internal virtual ITextFilterClient TextFilterClient { get; }
+	internal virtual ITextFilterClientV2 TextFilterClient { get; }
 
 	internal virtual IUserEntityFactory UserEntityFactory { get; }
 
@@ -71,12 +71,12 @@ public class MembershipCommandsDomainFactories : DomainFactoriesBase
 	/// Constructs the domain factories for Roblox.Platform.Membership.Commands
 	/// </summary>
 	/// <param name="membershipDomainFactories">The <see cref="T:Roblox.Platform.Membership.MembershipDomainFactories" />.</param>
-	/// <param name="textFilterClient">The <see cref="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.TextFilterClient" />.</param>
+	/// <param name="textFilterClientV2">The <see cref="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.TextFilterClient" />.</param>
 	/// <param name="logger">The <see cref="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.Logger" />.</param>
 	/// <param name="availableAuthenticationMethodMonitor">The <see cref="T:Roblox.Platform.Authentication.AvailableAuthenticationMethodMonitor" />.</param>
 	/// <exception cref="T:System.ArgumentNullException">Throws when membershipDomainFactories is null.</exception>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Throws when textFilter, textFilterV2, logger, availableAuthenticationMethodMonitor, or nowGetter is null.</exception>
-	public MembershipCommandsDomainFactories(MembershipDomainFactories membershipDomainFactories, ITextFilterClient textFilterClient, ILogger logger, IAvailableAuthenticationMethodMonitor availableAuthenticationMethodMonitor, Func<DateTime> nowGetter)
+	public MembershipCommandsDomainFactories(MembershipDomainFactories membershipDomainFactories, ITextFilterClientV2 textFilterClientV2, ILogger logger, IAvailableAuthenticationMethodMonitor availableAuthenticationMethodMonitor, Func<DateTime> nowGetter)
 	{
 		if (membershipDomainFactories == null)
 		{
@@ -87,7 +87,7 @@ public class MembershipCommandsDomainFactories : DomainFactoriesBase
 			throw new ArgumentNullException("availableAuthenticationMethodMonitor");
 		}
 		Now = nowGetter ?? throw new ArgumentNullException("nowGetter");
-		TextFilterClient = textFilterClient ?? throw new ArgumentNullException("textFilterClient");
+		TextFilterClient = textFilterClientV2 ?? throw new ArgumentNullException("textFilterClientV2");
 		Logger = logger ?? throw new ArgumentNullException("logger");
 		Settings = Roblox.Platform.Membership.Commands.Properties.Settings.Default;
 		UserEntityFactory = membershipDomainFactories.UserEntityFactory;

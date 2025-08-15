@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Localization.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntityFactory.GetByLanguageId(System.Int32)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntity"/> with the given language id.
+            </summary>
+            <param name="languageId">The language id.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntity"/> with the given languageId, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntityFactory.Create(System.Int32,System.Int32)">
+            <summary>
+            Create instance of <see cref="T:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntity"/> with given language id and supported locale id.
+            </summary>
+            <param name="languageId">language id must positive and present in valid list of languages</param>
+            <param name="supportedLocaleId">supported locale is must be positive and present in valid list of supported locales</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntity"/> with given language id and supported locale id </returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILanguageEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILanguageEntityFactory.Get(Roblox.Platform.Localization.Core.ILanguageFamilyIdentifier)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILanguageEntityFactory.GetByName(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity"/> with the given language name
+            </summary>
+            <param name="name">Language name.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity"/> with the given language name, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILanguageEntityFactory.GetByLanguageCode(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity"/> with the given language code.
+            </summary>
+            <param name="languageCode">Language code.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity"/> language code or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILanguageEntityFactory.Create(System.String,System.String,System.String)">
+            <summary>
+            Create language by name, native name and language code.
+            </summary>
+            <param name="name">name of the language, example - korean </param>
+            <param name="nativeName">native name of the language, example - 한국어 </param>
+            <param name="languageCode">language code, example - ko </param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.IObservedLocaleEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Core.IObservedLocaleEntity"/> by ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.IObservedLocaleEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.IObservedLocaleEntityFactory.Get(Roblox.Platform.Localization.Core.IDeviceReportedLocaleIdentifier)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Core.IObservedLocaleEntity"/> by observed locale id .
+            </summary>
+            <param name="identifier">Id</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.IObservedLocaleEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.IObservedLocaleEntityFactory.GetByLocale(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Core.IObservedLocaleEntity"/> with the given locale.
+            </summary>
+            <param name="locale">locale</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.IObservedLocaleEntity"/> with the given locale, or null if non existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.IObservedLocaleEntityFactory.Create(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Creates the <see cref="T:Roblox.Platform.Localization.Core.IObservedLocaleEntity"/> with given locale, language id and supported locale id
+            </summary>
+            <param name="locale">example ko-ko</param>
+            <param name="languageId">language associated with given locale</param>
+            <param name="supportedLocaleId">supported locale associated with give locale</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ISupportedLocaleEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ISupportedLocaleEntityFactory.Get(Roblox.Platform.Localization.Core.ISupportedLocaleIdentifier)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ISupportedLocaleEntityFactory.GetByLocale(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/> with the given locale.
+            </summary>
+            <param name="locale"></param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/> with the given.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ISupportedLocaleEntityFactory.Create(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Creates the <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/> with given locale, name, native name and language id
+            </summary>
+            <param name="locale">example ko-ko</param>
+            <param name="name">example korean</param>
+            <param name="nativeName">example 한국어 </param>
+            <param name="languageId">Valid language associated with locale. Id must be from valid list of language ids.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ISupportedLocaleEntityFactory.GetSupportedLocalesPaged(System.Int32,System.Int32)">
+            <summary>
+            Gets list of <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/>s from start row index with number of rows
+            </summary>
+            <param name="startRowIndex">The zero-indexed start row index at which to begin getting rows.</param>
+            <param name="maxRows">The maximum number of rows to get.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="startRowIndex"/> is less than 0.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="maxRows"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleEntity"/>s.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum">
+            <summary>
+            Supported locales Enum. Locale Enum like en_us.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILocaleParser.GetStandardizedLocaleFromRawLocaleString(System.String)">
+            <summary>
+            standardized the raw locale and return
+            </summary>
+            <param name="rawLocale"></param>
+            <returns>standardized locale</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILocaleParser.GetLanguageCodeFromStandardizedLocale(System.String)">
+            <summary>
+            Get language from standardized locale
+            </summary>
+            <param name="standardizedLocale"></param>
+            <returns>language code </returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ILocaleParser.ParseLocaleCodeToSupportedLocaleEnum(System.String)">
+            <summary>
+            Get SupportedLocaleEnum from locale code. If locale code not found return null.
+            </summary>
+            <param name="localeCode"></param>
+            <returns><see cref="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor">
+            <summary>
+            An interface that provides core localization constructs needed.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetLanguageFamily(Roblox.Platform.Localization.Core.ILanguageFamilyIdentifier)">
+            <summary>
+            Get Language Family by Id
+            </summary>
+            <param name="languageFamilyIdentifier">id of language</param>
+            <returns><see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/> if exists or null</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetLanguageFamily(System.String)">
+            <summary>
+            Get Language Family by Language Family Code.
+            </summary>
+            <param name="languageFamilyCode">Language Family Code. eg. 'en' </param>
+            <returns><see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/> if exists or null.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetAvailableLanguageFamiliesForOutOfGameUgc">
+            <summary>
+            Gets the available languages for out of game UGC(e.g. names and descriptions). It is up to the consumer of this API to sort the values.
+            </summary>
+            <returns>A <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> of <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/> that are available for UGC.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetAvailableLanguageFamiliesForInGameUgc">
+            <summary>
+            Get the available language for in game UGC(e.g. in game translations). Consumer should sort the values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetSupportedInGameUGCLanguageFamily(System.String)">
+            <summary>
+            Get the language family for in game UGC by language code
+            </summary>
+            <param name="languageFamilyCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetDeviceReportedLocale(Roblox.Platform.Localization.Core.IDeviceReportedLocaleIdentifier)">
+            <summary>
+            Get a Device Reported Locale by its Id.
+            </summary>
+            <param name="deviceReportedLocaleId">The device reported locale identifier.</param>
+            <returns>
+            A <see cref="T:Roblox.Platform.Localization.Core.IDeviceReportedLocale"/> if present or null
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetDeviceReportedLocale(System.String)">
+            <summary>
+            Get a Device Reported Locale by looking up its locale code.
+            </summary>
+            <param name="deviceReportedLocaleCode"></param>
+            <returns>ILocaleInformation</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetSupportedLocaleBySupportedLocaleId(Roblox.Platform.Localization.Core.ISupportedLocaleIdentifier)">
+            <summary>
+            Get supported locale by supported locale id.
+            </summary>
+            <param name="supportedLocaleId">id of supported locale</param>
+            <returns>ISupportedLocale if exists or null</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetSupportedLocaleBySupportedLocaleCode(System.String)">
+            <summary>
+            Get supported locale by supported locale code.
+            No fallback mechanism is available (similar to LookupLocaleInformationByRawLocale) for associated language and supported locale.
+            </summary>
+            <param name="supportedLocaleCode">locale code of supported locale. For example en_us</param>
+            <returns>ISupportedLocale if exists or null</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetSupportedLocales(System.Boolean)">
+            <summary>
+            Get all supported locales
+            </summary>
+            <param name="isChinaJvUser">A boolean, if true, will return only JV supported locales </param>
+            <returns> Read only list of ISupportedLocale if present or empty list</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetSupportedLocalesInternal">
+            <summary>
+            DO NOT USE THIS METHOD FOR ANY PUBLIC FACING API
+            Get all supported locales for internal usage without any filters.
+            </summary>
+            <returns> Read only list of ISupportedLocale if present or empty list</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetDefaultSupportedLocale">
+            <summary>
+            Get default supported locale
+            </summary>
+            <returns>ISupportedLocale</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetSupportedLocaleEnum(System.String)">
+            <summary>
+            Returns SupportedLocaleEnum for supported locale code. Null or empty param will be considered as invalid value.
+            For invalid parameter, null value will be returned.
+            </summary>
+            <param name="supportedLocaleCode">Code for which SupportedLocaleEnum will be returned.</param>
+            <returns><see cref="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor.GetDefaultSupportedLocaleFromLanguage(Roblox.Platform.Localization.Core.ILanguageFamily)">
+            <summary>
+            Gets default supported locale from a language
+            </summary>
+            <param name="language">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/></param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationBuilder.MapDeviceReportedLocaleToLanguageFamily(Roblox.Platform.Localization.Core.IDeviceReportedLocale,Roblox.Platform.Localization.Core.ILanguageFamily)">
+            <summary>
+            Set the Langauge Family that a given Device Reported Locale belongs to
+            </summary>
+            <param name="deviceReportedLocale">Locale information for which Language needs to be set</param>
+            <param name="languageFamily">Language that needs to be set for locale information. Language must be in list of valid list of languages.</param>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationBuilder.MapDeviceReportedLocaleToSupportedLocale(Roblox.Platform.Localization.Core.IDeviceReportedLocale,Roblox.Platform.Localization.Core.ISupportedLocale)">
+            <summary>
+            Set the default Supported Locale for given Device Reported Locale
+            </summary>
+            <param name="deviceReportedLocale">Locale information for which supported locale needs to be set</param>
+            <param name="supportedLocale">supported locale that needs to be set for locale information. Supported Local needs to be in list of valid supported locales.</param>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.ICoreLocalizationBuilder.RecordDeviceReportedLocale(System.String)">
+            <summary>
+            Records a device reported locale in the database if it doesn't already exist
+            </summary>
+            <param name="rawDeviceReportedLocaleCode">raw locale value passed by a client deivce. eg. "en-us", accept-language header "en_US,en;q=0.8"</param>
+            <returns>The new or existing identifier for the locale code reported by the deivice</returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Core.ILanguageFamily">
+            <summary>
+            A "Language Family" represents a collection of related locales.
+            Eg. The American English (en_us) and British English (en_uk) locales would both be part of the "English" Language Family (en)
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.ILanguageFamily.Name">
+            <summary>
+            Name of the language in English (eg. Korean could be "Korean")
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.ILanguageFamily.NativeName">
+            <summary>
+            Name of the language in that native language (eg. Korean could be "한국어")
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.ILanguageFamily.LanguageCode">
+            <summary>
+            Language code, generally following ISO standards (eg. Korean could be "ko")
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Core.IDeviceReportedLocale">
+            <summary>
+            Represents a locale that was provided to roblox by a device/client by a user of the system.
+            Does not necessarily correspond to any Supported Locale that Roblox uses in the system
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.IDeviceReportedLocale.DeviceReportedLocaleId">
+            <summary>
+            ID of the Device Reported Locale
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.IDeviceReportedLocale.StandardizedLocale">
+            <summary>
+            Standardized locale code. eg "en_us"
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.IDeviceReportedLocale.LanguageFamily">
+            <summary>
+            Language Family that the device reported locale is associated with. Can be null
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.IDeviceReportedLocale.SupportedLocale">
+            <summary>
+            Supported locale associated with locale. Can be null
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.IObservedLocaleEntityTranslator.TranslateObservedLocaleEntityWithDefaults(Roblox.Platform.Localization.Core.IObservedLocaleEntity)">
+            <summary>
+            Converts IObservedLocaleEntity to ILocaleInformation.
+            For given IObservedLocaleEntity
+                If Language null then we use default language.
+                If SupportedLocale is null then we use language to get respective supported locale
+                If language not found in DB then we use default locale.
+            </summary>
+            <param name="observedLocaleEntity"></param>
+            <returns>ILocaleInformation</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Core.IObservedLocaleEntityTranslator.TranslateObservedLocaleEntity(Roblox.Platform.Localization.Core.IObservedLocaleEntity)">
+            <summary>
+            Converts IObservedLocaleEntity to ILocaleInformation. No defaults used.
+            </summary>
+            <param name="observedLocaleEntity"></param>
+            <returns>ILocaleInformation</returns>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.ISupportedLocale.Locale">
+            <summary>
+            <see cref = "T:Roblox.Platform.Localization.Core.SupportedLocaleEnum" />
+            It is possible to have locale code which is not present in enum.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.ISupportedLocale.LocaleCode">
+            <summary>
+            Locale code.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.ISupportedLocale.Name">
+            <summary>
+            Name of locale like English(US)
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.ISupportedLocale.NativeName">
+            <summary>
+            Name in native language English(US)
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.ISupportedLocale.Language">
+            <summary>
+            Language associated with supported locale
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.DefaultSupportedLocale">
+            <summary>
+            Default supported locale code. Example - en-us
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.DefaultSupportedLocaleName">
+            <summary>
+            Default supported locale name. Example - English(US)
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.DefaultSupportedLocaleNativeName">
+            <summary>
+            Default supported locale native name. Example - English
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.DefaultSupportedLocaleAssociatedLanguageName">
+            <summary>
+            Langauge name associated with default supported locale. Example - English
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.DefaultSupportedLocaleAssociatedLanguageNativeName">
+            <summary>
+            Langauge native name associated with default supported locale. Example - English
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.DefaultSupportedLocaleAssociatedLanguageCode">
+            <summary>
+            Langauge code associated with default supported locale. Example - en
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.DefaultSupportedLocaleAssociatedLanguageId">
+            <summary>
+            Language Id associated with default supported locale. Example 41.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.AvailableUgcLanguageCodesCsv">
+            <summary>
+            A comma separated list for the available out of game UGC language codes.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Core.Properties.ISettings.AvailableInGameUgcLanguageCodesCsv">
+            <summary>
+            A comma separated list for the available in game UGC language codes
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "LXz7ALhWBdE7+oSYrB2wKjPNU1AdprMCF1vwIpccAyiaoelkAbMvZ8GqWsUys6dawmwDx6NO8jbpJxLu15HrFw==",
+  "dgSpecHash": "zD1cCOYKJ88=",
   "success": true,
-  "projectFilePath": "D:\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.Commands\\Roblox.Platform.Membership.Commands.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.Commands\\Roblox.Platform.Membership.Commands.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

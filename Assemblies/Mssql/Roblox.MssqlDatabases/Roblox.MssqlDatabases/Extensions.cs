@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
@@ -67,37 +68,37 @@ public static class Extensions
 		_DatabaseRegistry.GetDatabase(robloxDatabase);
 	}
 
-	public static int ExecuteNonQuery(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public static int ExecuteNonQuery(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000d: Unknown result type (might be due to invalid IL or missing references)
 		return _DatabaseRegistry.GetDatabase(robloxDatabase).ExecuteNonQuery(commandText, sqlParameters, commandType, commandTimeout, applicationIntent);
 	}
 
-	public static Task<int> ExecuteNonQueryAsync(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public static Task<int> ExecuteNonQueryAsync(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000d: Unknown result type (might be due to invalid IL or missing references)
 		return _DatabaseRegistry.GetDatabase(robloxDatabase).ExecuteNonQueryAsync(commandText, sqlParameters, commandType, cancellationToken, commandTimeout, applicationIntent);
 	}
 
-	public static IEnumerable<IDictionary<string, object>> ExecuteReader(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public static IEnumerable<IDictionary<string, object>> ExecuteReader(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000d: Unknown result type (might be due to invalid IL or missing references)
 		return _DatabaseRegistry.GetDatabase(robloxDatabase).ExecuteReader(commandText, sqlParameters, commandType, commandTimeout, applicationIntent);
 	}
 
-	public static Task<IEnumerable<IDictionary<string, object>>> ExecuteReaderAsync(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public static Task<IEnumerable<IDictionary<string, object>>> ExecuteReaderAsync(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000d: Unknown result type (might be due to invalid IL or missing references)
 		return _DatabaseRegistry.GetDatabase(robloxDatabase).ExecuteReaderAsync(commandText, sqlParameters, commandType, cancellationToken, commandTimeout, applicationIntent);
 	}
 
-	public static object ExecuteScalar(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public static object ExecuteScalar(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000d: Unknown result type (might be due to invalid IL or missing references)
 		return _DatabaseRegistry.GetDatabase(robloxDatabase).ExecuteScalar(commandText, sqlParameters, commandType, commandTimeout, applicationIntent);
 	}
 
-	public static Task<object> ExecuteScalarAsync(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public static Task<object> ExecuteScalarAsync(this RobloxDatabase robloxDatabase, string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000d: Unknown result type (might be due to invalid IL or missing references)
 		return _DatabaseRegistry.GetDatabase(robloxDatabase).ExecuteScalarAsync(commandText, sqlParameters, commandType, cancellationToken, commandTimeout, applicationIntent);

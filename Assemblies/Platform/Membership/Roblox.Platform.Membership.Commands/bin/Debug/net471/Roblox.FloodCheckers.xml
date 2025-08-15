@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.FloodCheckers</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.FloodCheckers.CatalogQueryFloodChecker.#ctor(System.String)">
+            <inheritdoc />
+            <param name="userIdentifier">ID of user (IP address can be populated as fallback)</param>
+        </member>
+        <member name="T:Roblox.FloodCheckers.FloodCheckerFactoryProxy">
+            <summary>
+            Proxy to use one or another flood checker factory when invoking the GetFloodChecker method based on the value returned from
+            the userFloodCheckerFactory2 getter constructor parameter.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.FloodCheckerFactoryProxy.#ctor(Roblox.FloodCheckers.Core.IFloodCheckerFactory{Roblox.FloodCheckers.Core.IFloodChecker},Roblox.FloodCheckers.Core.IFloodCheckerFactory{Roblox.FloodCheckers.Core.IFloodChecker},System.Func{System.Boolean})">
+            <summary>
+            Initialize a new instance of the <see cref="T:Roblox.FloodCheckers.FloodCheckerFactoryProxy"/>.
+            </summary>
+            <param name="floodCheckerFactory1"></param>
+            <param name="floodCheckerFactory2"></param>
+            <param name="useFloodCheckerFactory2">Getter to determine if floodCheckerFactory2 is used.</param>
+            <exception cref="T:System.ArgumentNullException">Null argument.</exception>
+        </member>
+        <member name="M:Roblox.FloodCheckers.FloodCheckerFactoryProxy.GetFloodChecker(System.String,System.String,System.Func{System.Int32},System.Func{System.TimeSpan},System.Func{System.Boolean},System.Func{System.Boolean},Roblox.EventLog.ILogger)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.FloodCheckers.DiscretizedFloodChecker">
+            <summary>
+            Tracks counts in fixed time buckets instead of a sliding window.  Use when a high number of counts is expected.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.FloodChecker.#ctor(System.String,System.Int32,System.TimeSpan,System.Boolean,System.String)">
+            <summary>
+            Constructs a new Floodchecker
+            </summary>
+            <param name="keyName">The key for the individual action you wish to flood check, which may be much more specific than the category</param>
+            <param name="limit">The threshold before a checker becomes flooded</param>
+            <param name="expiry">The lifespan of the floodchecker before the count is reset</param>
+            <param name="enabled">Whether or not the floodchecker is enabled. If false it will never report itself as flooded</param>
+            <param name="category">A category for the floodchecker. If none specified the type name of the class will be used. This will be used for plotting floodchecker metrics and should be broad</param>
+        </member>
+        <member name="M:Roblox.FloodCheckers.FloodChecker.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean})">
+            <summary>
+            Constructs a new Floodchecker
+            </summary>
+            <param name="category">A category for the floodchecker. This will be used for plotting floodchecker metrics and should be broad</param>
+            <param name="keyName">The key for the individual action you wish to flood check, which may be much more specific than the category</param>
+            <param name="limit">The threshold before a checker becomes flooded</param>
+            <param name="expiry">The lifespan of the floodchecker before the count is reset</param>
+            <param name="enabled">Whether or not the floodchecker is enabled. If false it will never report itself as flooded</param>
+        </member>
+        <member name="M:Roblox.FloodCheckers.FloodChecker.Reset">
+            <summary>
+            Removes particular key from the Cache Client
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.FloodChecker.RetryAfterInternal">
+            <summary>
+            The amount of time in seconds until the caller can send a request that will not be flood checked. Null if the caller is not flood checked.
+            </summary>
+            <remarks>
+            This is an internal-protected method because there isn't currently a justification for all flood checkers exposing this functionality.
+            </remarks>
+            <returns>The amount of seconds until the caller can send</returns>
+        </member>
+        <member name="M:Roblox.FloodCheckers.FloodChecker.GetNextAvailableTime">
+            <summary>
+            Returns the next time at which the caller can make a call that will not be flood checked.
+            </summary>
+            <returns>A <see cref="T:System.DateTime"/> representing the next un-flooded time, or null if the flood checker isn't enabled.</returns>
+        </member>
+        <member name="T:Roblox.FloodCheckers.RequestCommentsByIpFloodChecker">
+            <summary>
+            Represents a <see cref="T:Roblox.FloodCheckers.FloodChecker"/> that flood checks requesting comments on a per-ip basis.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.RequestCommentsByIpFloodChecker.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.FloodCheckers.RequestCommentsByIpFloodChecker"/> class
+            for given IP requesting comments.
+            </summary>
+            <param name="ipAddress">The IP of the client requesting comments.</param>
+        </member>
+        <member name="T:Roblox.FloodCheckers.RequestCommentsByUserFloodChecker">
+            <summary>
+            Represents a <see cref="T:Roblox.FloodCheckers.FloodChecker"/> that flood checks commenting on a per-user per-asset basis.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.RequestCommentsByUserFloodChecker.#ctor(System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.FloodCheckers.RequestCommentsByUserFloodChecker"/> class
+            for user with the given user ID requesting comments.
+            </summary>
+            <param name="userId">The ID of the user requesting comments.</param>
+        </member>
+        <member name="T:Roblox.FloodCheckers.UserCommentFloodChecker">
+            <summary>
+            Represents a <see cref="T:Roblox.FloodCheckers.FloodChecker"/> that flood checks commenting on a per-user basis.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.UserCommentFloodChecker.#ctor(System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.FloodCheckers.UserCommentFloodChecker"/> class for a
+            user with the given user ID.
+            </summary>
+            <param name="userId">The user's ID.</param>
+        </member>
+        <member name="T:Roblox.FloodCheckers.UserCommentPerAssetFloodChecker">
+            <summary>
+            Represents a <see cref="T:Roblox.FloodCheckers.FloodChecker"/> that flood checks commenting on a per-user per-asset basis.
+            </summary>
+        </member>
+        <member name="M:Roblox.FloodCheckers.UserCommentPerAssetFloodChecker.#ctor(System.Int64,System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.FloodCheckers.UserCommentPerAssetFloodChecker"/> class
+            for user with the given user ID commenting on an asset with the given asset ID.
+            </summary>
+            <param name="userId">The ID of the user doing the commenting.</param>
+            <param name="assetId">The ID of the asset being commented on.</param>
+        </member>
+        <member name="T:Roblox.FloodCheckers.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

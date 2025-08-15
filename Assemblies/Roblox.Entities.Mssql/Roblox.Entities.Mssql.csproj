@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Entities.Mssql</AssemblyName>
@@ -12,14 +12,12 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="System.Data.SqlClient">
-      <HintPath>..\..\Website\bin\System.Data.SqlClient.dll</HintPath>
-    </Reference>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
     <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
+      <HintPath>..\Mssql\Roblox.MssqlDatabases\bin\Debug\netstandard2.0\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Data">
-      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
+      <HintPath>..\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

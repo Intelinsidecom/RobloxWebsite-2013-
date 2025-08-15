@@ -596,10 +596,9 @@ public class UsersClient : IUsersClient
 
 	private static IHttpClientBuilder CreateHttpClientBuilder(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, IRequestContextLoader requestContextLoader)
 	{
-		return new Roblox.Http.ServiceClient.HttpClientBuilder((IServiceClientSettings)Settings.Default, counterRegistry, apiKeyGetter, (Func<bool>)null, (CookieContainer)null, requestContextLoader)
-		{
-			ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled,
-			GetClientCircuitBreakerType = GetClientCircuitBreakerType
-		};
+		var builder = new Roblox.Http.ServiceClient.HttpClientBuilder((IServiceClientSettings)Settings.Default, counterRegistry, apiKeyGetter, (CookieContainer)null, requestContextLoader);
+		builder.ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled;
+		// GetClientCircuitBreakerType is not a property of HttpClientBuilder, so we can't set it directly
+		return builder;
 	}
 }

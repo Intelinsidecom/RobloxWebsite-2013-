@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Common</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.BackgroundThreadHelper">
+            <summary>
+            Used by background threads to know when to terminate.
+            This class listens for the ProcessExit event to help
+            background threads exit gracefully (rather than being
+            interrupted by ThreadAbortExceptions)
+            </summary>
+        </member>
+        <member name="T:Roblox.BackgroundThreadHelper.Handle">
+            <summary>
+            A disposable object used in conjunction with AddEvent
+            </summary>
+        </member>
+        <member name="P:Roblox.BackgroundThreadHelper.IsDone">
+            <summary>
+            Returns true if the thread should exit
+            </summary>
+        </member>
+        <member name="M:Roblox.BackgroundThreadHelper.Wait(System.TimeSpan)">
+            <summary>
+            Returns true if the thread should exit
+            </summary>
+        </member>
+        <member name="M:Roblox.BackgroundThreadHelper.Wait(System.TimeSpan,System.Boolean)">
+            <summary>
+            Returns true if the thread should exit
+            </summary>
+        </member>
+        <member name="M:Roblox.BackgroundThreadHelper.RunInBackground(System.TimeSpan,Roblox.BackgroundThreadHelper.F)">
+            <summary>
+            Convenience function that runs "f" every 
+            </summary>
+            <param name="sleepTime"></param>
+            <param name="f">The function to run</param>
+            <returns>A handle you can set to end this background thread</returns>
+        </member>
+        <member name="M:Roblox.BackgroundThreadHelper.SetOnProcessExit(System.Threading.EventWaitHandle)">
+            <summary>
+            Add an event that should be Set when the process exits.
+            Be sure to Dispose the returned object in order to remove the EventWaitHandle
+            when you are done.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Counters.GetStableRolloutPercentage(System.Int64,System.String)">
+            <summary>Remap any userid into a stable number from 0-99, 
+            to be used for comparison against rollout switches. 
+            We do the remap so users whose id ends in 00 do not always fall into the test group for 1% rollouts.
+            <param name="userid">User ID to base the percentage on.</param>
+            <param name="key">An arbitrarily unique key per component. Can be component name.</param>
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.EncodingDetector.GetFileEncoding(System.IO.Stream)">
+            <summary>
+            Detect File's Encoding by checking the first 5 bytes
+            Reference: https://en.wikipedia.org/wiki/Byte_order_mark#Representations_of_byte_order_marks_by_encoding
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.EncodingDetector.IsEntireFileUtf8(System.IO.Stream)">
+            <summary>
+            Check if the entire bytes are UTF8
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.EnumUtils.StrictTryParseEnum``1(System.String)">
+            <summary>
+            Like Enum.TryParse, but won't accept values that aren't in the enum definition.
+            </summary>
+            <example>
+            public enum PlayerAvatarTypeEnum : byte
+            {
+             R6 = 1,
+             R15 = 3,
+            }
+            ...
+            
+            PlayerAvatarType? result = StrictTryParseEnum&lt;PlayerAvatarType&gt;("11");
+            
+            ==> result==null
+            Normal Enum.TryParse would just map whatever you sent onto a byte without complaint.  This one returns null in that case.
+            </example>
+        </member>
+        <member name="T:Roblox.Common.ExceptionHandlerUnregisteredLoggerException">
+            <summary>
+            Thrown when ExceptionHandler tries to use StaticLoggerRegistry but the logger is not registered.
+            Contains the inner exception so we don't lose that information.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.ExceptionHandlerUnregisteredLoggerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Instantiates a <see cref="T:Roblox.Common.ExceptionHandlerUnregisteredLoggerException"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Extensions.Contains(Roblox.Common.Range,System.Int32)">
+            <summary>
+            An integer range with Min and Max barriers.
+            
+            If the minimum is greater than the maximum,
+            range represents the range going up from Min to int.maxvalue
+            unioned with the range going from int.minvalue to Max
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Extensions.GetAttribute``1(System.Enum)">
+            <summary>
+            Get the desired attribute for a given enum value
+            </summary>
+            <typeparam name="TAttribute">The desired attribute type</typeparam>
+            <param name="value">The enum value</param>
+            <returns>The desired attribute</returns>
+        </member>
+        <member name="M:Roblox.Common.Extensions.ToEnum``1(System.String,System.Boolean)">
+            <summary>
+            Parses a string to enum type, only if the value is in the enum definition.
+            </summary>
+            <typeparam name="T">The Enum type.</typeparam>
+            <param name="value">The given string value.</param>
+            <param name="ignoreCase">Whether to ignore case when parsing. Default to ignore.</param>
+            <returns>The converted enum if it is in the enum definition, otherwise null.</returns>
+        </member>
+        <member name="M:Roblox.Common.Extensions.Intersect``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})">
+            <summary>
+            Produces the set intersection between two sequences by using the specified function comparer.
+            </summary>
+            <typeparam name="TSource">The collection items type.</typeparam>
+            <param name="first">The first collection.</param>
+            <param name="second">The second collection.</param>
+            <param name="comparer">The comparer function.</param>
+            <returns>Returns a collection with the elements that are in both  
+            collections according to the comparer function.
+            </returns>
+        </member>
+        <member name="M:Roblox.Common.Extensions.Truncate(System.DateTime,System.Int64)">
+            <summary>
+            <para>Truncates a <see cref="T:System.DateTime"/> to a specified resolution.</para>
+            <para>A convenient source for resolution is TimeSpan.TicksPerXXXX constants.</para>
+            </summary>
+            <remarks>http://stackoverflow.com/questions/1004698/how-to-truncate-milliseconds-off-of-a-net-datetime</remarks>
+            <param name="date">The <see cref="T:System.DateTime"/> object to truncate</param>
+            <param name="resolution">e.g. to round to nearest second, TimeSpan.TicksPerSecond</param>
+            <returns>Truncated <see cref="T:System.DateTime"/></returns>
+        </member>
+        <member name="M:Roblox.Common.Extensions.WithoutMilliseconds(System.DateTime)">
+            <summary>
+            Truncates the milliseconds on a <see cref="T:System.DateTime"/>
+            </summary>
+            <param name="date">The <see cref="T:System.DateTime"/> to truncate.</param>
+            <returns>The <see cref="T:System.DateTime"/> without milliseconds</returns>
+        </member>
+        <member name="T:Roblox.Common.Range">
+            <summary>
+            An integer range with Min and Max barriers.
+            
+            If the minimum is greater than the maximum,
+            this represents the range going up from Min to int.maxvalue
+            unioned with the range going from int.minvalue to Max
+            </summary>
+        </member>
+        <member name="T:Roblox.Common.StringTokenizer`1">
+            <summary>
+            Converts a delimiter separated string to an IEnumerable&lt;T&gt;
+            Cannot be used for Enum types
+            Trims whitespace from the start and end of all values
+            Returns an empty list if passed an empty string
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Roblox.Common.StringTokenizer`1.Parse">
+            <summary>
+            Converts the <see cref="T:System.String"/> to an IEnumerable&lt;T&gt; based on the given separator. Throws errors on invalid values.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">Thrown when an item in the string can't be cast to &lt;T&gt;</exception>
+        </member>
+        <member name="T:Roblox.Common.MailMessageEx">
+            <summary>
+            This class adds a few internet mail headers not already exposed by the 
+            System.Net.MailMessage.  It also provides support to encapsulate the
+            nested mail attachments in the Children collection.
+            </summary>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.MessageNumber">
+            <summary>
+            Gets or sets the message number of the MailMessage on the POP3 server.
+            </summary>
+            <value>The message number.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.Children">
+            <summary>
+            Gets the children MailMessage attachments.
+            </summary>
+            <value>The children MailMessage attachments.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.DeliveryDate">
+            <summary>
+            Gets the delivery date.
+            </summary>
+            <value>The delivery date.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.ReturnAddress">
+            <summary>
+            Gets the return address.
+            </summary>
+            <value>The return address.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.Routing">
+            <summary>
+            Gets the routing.
+            </summary>
+            <value>The routing.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.MessageId">
+            <summary>
+            Gets the message id.
+            </summary>
+            <value>The message id.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.MimeVersion">
+            <summary>
+            Gets the MIME version.
+            </summary>
+            <value>The MIME version.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.ContentId">
+            <summary>
+            Gets the content id.
+            </summary>
+            <value>The content id.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.ContentDescription">
+            <summary>
+            Gets the content description.
+            </summary>
+            <value>The content description.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.ContentDisposition">
+            <summary>
+            Gets the content disposition.
+            </summary>
+            <value>The content disposition.</value>
+        </member>
+        <member name="P:Roblox.Common.MailMessageEx.ContentType">
+            <summary>
+            Gets the type of the content.
+            </summary>
+            <value>The type of the content.</value>
+        </member>
+        <member name="M:Roblox.Common.MailMessageEx.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Common.MailMessageEx"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.MailMessageEx.GetHeader(System.String)">
+            <summary>
+            Gets the header.
+            </summary>
+            <param name="header">The header.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.MailMessageEx.CreateMailMessageFromEntity(Roblox.Common.Mime.MimeEntity)">
+            <summary>
+            Creates the mail message from entity.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.MailMessageEx.CreateMailAddress(System.String)">
+            <summary>
+            Creates the mail address.
+            </summary>
+            <param name="address">The address.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.MailMessageEx.PopulateAddressList(System.String,System.Net.Mail.MailAddressCollection)">
+            <summary>
+            Populates the address list.
+            </summary>
+            <param name="addressList">The address list.</param>
+            <param name="recipients">The recipients.</param>
+        </member>
+        <member name="M:Roblox.Common.MailMessageEx.GetMailAddresses(System.String)">
+            <summary>
+            Gets the mail addresses.
+            </summary>
+            <param name="addressList">The address list.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.Mime.MimeReader">
+            Taken from http://www.codeproject.com/KB/IP/NetPopMimeClient.aspx to facilitate parsing an email message into its MIME parts
+            <summary>
+            This class is responsible for parsing a string array of lines
+            containing a MIME message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.Mime.MimeReader.Crlf">
+            <summary>
+            The CRLF escape sequence.
+            </summary>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeReader.Lines">
+            <summary>
+            Gets the lines.
+            </summary>
+            <value>The lines.</value>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Common.Mime.MimeReader"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.#ctor(Roblox.Common.Mime.MimeEntity,System.Collections.Generic.Queue{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Common.Mime.MimeReader"/> class.
+            </summary>
+            <param name="entity">The entity.</param>
+            <param name="lines">The lines.</param>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Common.Mime.MimeReader"/> class.
+            </summary>
+            <param name="lines">The lines.</param>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.ParseHeaders">
+            <summary>
+            Parse headers into _entity.Headers NameValueCollection.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.ProcessHeaders">
+            <summary>
+            Processes mime specific headers.
+            </summary>
+            <returns>A mime entity with mime specific headers parsed.</returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.CreateMimeEntity">
+            <summary>
+            Creates the MIME entity.
+            </summary>
+            <returns>A mime entity containing 0 or more children representing the mime message.</returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.SetDecodedContentStream">
+            <summary>
+            Sets the decoded content stream by decoding the EncodedMessage 
+            and writing it to the entity content stream.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.GetBytes(System.String)">
+            <summary>
+            Gets a byte[] of content for the provided string.
+            </summary>
+            <param name="content">Content.</param>
+            <returns>A byte[] containing content.</returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.ParseBody">
+            <summary>
+            Parses the body.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.AddChildEntity(Roblox.Common.Mime.MimeEntity,System.Collections.Generic.Queue{System.String})">
+            <summary>
+            Adds the child entity.
+            </summary>
+            <param name="entity">The entity.</param>
+            <param name="lines">The lines.</param>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.GetContentType(System.String)">
+            <summary>
+            Gets the type of the content.
+            </summary>
+            <param name="contentType">Type of the content.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.GetMediaType(System.String)">
+            <summary>
+            Gets the type of the media.
+            </summary>
+            <param name="mediaType">Type of the media.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.GetMediaMainType(System.String)">
+            <summary>
+            Gets the type of the media main.
+            </summary>
+            <param name="mediaType">Type of the media.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.GetMediaSubType(System.String)">
+            <summary>
+            Gets the type of the media sub.
+            </summary>
+            <param name="mediaType">Type of the media.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeReader.GetTransferEncoding(System.String)">
+            <summary>
+            Gets the transfer encoding.
+            </summary>
+            <param name="transferEncoding">The transfer encoding.</param>
+            <returns></returns>
+            <remarks>
+            The transfer encoding determination follows the same rules as 
+            Peter Huber's article w/ the exception of not throwing exceptions 
+            when binary is provided as a transferEncoding.  Instead it is left
+            to the calling code to check for binary.
+            </remarks>
+        </member>
+        <member name="T:Roblox.Common.Mime.MimeEntity">
+            <summary>
+            This class represents a Mime entity.
+            </summary>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.EncodedMessage">
+            <summary>
+            Gets the encoded message.
+            </summary>
+            <value>The encoded message.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.Children">
+            <summary>
+            Gets the children.
+            </summary>
+            <value>The children.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.ContentType">
+            <summary>
+            Gets the type of the content.
+            </summary>
+            <value>The type of the content.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.MediaSubType">
+            <summary>
+            Gets the type of the media sub.
+            </summary>
+            <value>The type of the media sub.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.MediaMainType">
+            <summary>
+            Gets the type of the media main.
+            </summary>
+            <value>The type of the media main.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.Headers">
+            <summary>
+            Gets the headers.
+            </summary>
+            <value>The headers.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.MimeVersion">
+            <summary>
+            Gets or sets the MIME version.
+            </summary>
+            <value>The MIME version.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.ContentId">
+            <summary>
+            Gets or sets the content id.
+            </summary>
+            <value>The content id.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.ContentDescription">
+            <summary>
+            Gets or sets the content description.
+            </summary>
+            <value>The content description.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.ContentDisposition">
+            <summary>
+            Gets or sets the content disposition.
+            </summary>
+            <value>The content disposition.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.TransferEncoding">
+            <summary>
+            Gets or sets the transfer encoding.
+            </summary>
+            <value>The transfer encoding.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.ContentTransferEncoding">
+            <summary>
+            Gets or sets the content transfer encoding.
+            </summary>
+            <value>The content transfer encoding.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.HasBoundary">
+            <summary>
+            Gets a value indicating whether this instance has boundary.
+            </summary>
+            <value>
+            	<c>true</c> if this instance has boundary; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.StartBoundary">
+            <summary>
+            Gets the start boundary.
+            </summary>
+            <value>The start boundary.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.EndBoundary">
+            <summary>
+            Gets the end boundary.
+            </summary>
+            <value>The end boundary.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.Parent">
+            <summary>
+            Gets or sets the parent.
+            </summary>
+            <value>The parent.</value>
+        </member>
+        <member name="P:Roblox.Common.Mime.MimeEntity.Content">
+            <summary>
+            Gets or sets the content.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Common.Mime.MimeEntity"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.#ctor(Roblox.Common.Mime.MimeEntity)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Common.Mime.MimeEntity"/> class.
+            </summary>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.SetContentType(System.Net.Mime.ContentType)">
+            <summary>
+            Sets the type of the content.
+            </summary>
+            <param name="contentType">Type of the content.</param>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.ToMailMessageEx">
+            <summary>
+            Toes the mail message ex.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.ToMailMessageEx(Roblox.Common.Mime.MimeEntity)">
+            <summary>
+            Toes the mail message ex.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.BuildSinglePartMessage(Roblox.Common.Mime.MimeEntity,Roblox.Common.MailMessageEx)">
+            <summary>
+            Builds the single part message.
+            </summary>
+            <param name="entity">The entity.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.GetEncoding">
+            <summary>
+            Gets the body encoding.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.BuildMultiPartMessage(Roblox.Common.Mime.MimeEntity,Roblox.Common.MailMessageEx)">
+            <summary>
+            Builds the multi part message.
+            </summary>
+            <param name="entity">The entity.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.SetMessageBody(Roblox.Common.MailMessageEx,Roblox.Common.Mime.MimeEntity)">
+            <summary>
+            Sets the message body.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="child">The child.</param>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.DecodeBytes(System.Byte[],System.Text.Encoding)">
+            <summary>
+            Decodes the bytes.
+            </summary>
+            <param name="buffer">The buffer.</param>
+            <param name="encoding">The encoding.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.CreateAlternateView(Roblox.Common.Mime.MimeEntity)">
+            <summary>
+            Creates the alternate view.
+            </summary>
+            <param name="view">The view.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.TrimBrackets(System.String)">
+            <summary>
+            Trims the brackets.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.Mime.MimeEntity.CreateAttachment(Roblox.Common.Mime.MimeEntity)">
+            <summary>
+            Creates the attachment.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.Mime.QuotedPrintableEncoding">
+            <summary>
+            This class is based on the QuotedPrintable class written by Bill Gearhart
+            found at http://www.aspemporium.com/classes.aspx?cid=6
+            </summary>
+        </member>
+        <member name="T:Roblox.Common.OperationUnavailableException">
+            <summary>
+            The exception that is thrown when an operation is currently unavailable, but may be available at another time.
+            </summary>
+        </member>
+        <member name="T:Roblox.Common.RefreshAhead`1">
+            <inheritdoc cref="T:Roblox.Common.IRefreshAhead`1"/>
+        </member>
+        <member name="P:Roblox.Common.RefreshAhead`1.Value">
+            <inheritdoc cref="P:Roblox.Common.IRefreshAhead`1.Value"/>
+        </member>
+        <member name="M:Roblox.Common.RefreshAhead`1.SetRefreshInterval(System.TimeSpan)">
+            <inheritdoc cref="M:Roblox.Common.IRefreshAhead`1.SetRefreshInterval(System.TimeSpan)"/>
+        </member>
+        <member name="M:Roblox.Common.RefreshAhead`1.Refresh">
+            <inheritdoc cref="M:Roblox.Common.IRefreshAhead`1.Refresh"/>
+        </member>
+        <member name="M:Roblox.Common.SeparatedString`1.TryParseToEnumerable(System.Collections.Generic.IEnumerable{`0}@)">
+            <summary>
+            Converts the <see cref="T:Roblox.Common.SeparatedString`1"/> to an IEnumerable of an enum based on the given separator. Discards invalid values. 
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">Thrown if the enum type is not an enum.</exception>
+        </member>
+        <member name="T:Roblox.Common.EventCounter">
+            <summary>
+            Stores event counts in power-of-2 time buckets
+            </summary>
+        </member>
+        <member name="M:Roblox.ExceptionHandler.WriteUsingLogger(System.Exception,Roblox.EventLog.LogLevel)">
+            <exception cref="T:Roblox.EventLog.UninitializedLoggerException">Thrown when StaticLoggerRegistry.Instance is not registered</exception>
+        </member>
+        <member name="T:Roblox.NotLoggedException">
+            <summary>
+            Only respected by ExceptionHandler.
+            Throw this exception or an exception derived from this if you don't want it to show up in the Roblox Event Log.
+            </summary>
+            <remarks>
+            This should be used to return an error to the user, but something that isn't technically broken in the system.
+            For example failing validation for a control would be a good canditate as it is nothing for us to fix in the code base.
+            </remarks>
+        </member>
+    </members>
+</doc>

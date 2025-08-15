@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Membership.Commands</AssemblyName>
@@ -28,6 +28,15 @@
       <HintPath>..\..\..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>..\..\..\..\Website\bin\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
@@ -38,12 +47,10 @@
       <HintPath>..\..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Users.Client">
       <HintPath>..\..\..\..\Website\bin\Roblox.Users.Client.dll</HintPath>

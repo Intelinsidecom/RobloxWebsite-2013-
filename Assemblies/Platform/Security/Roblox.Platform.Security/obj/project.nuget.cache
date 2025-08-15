@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9jGk1phJwjNsqpHyAaRU18kWdgWIebjWX9yJEHC4eXn75065xPcCauztfP8xuX3PKdRIQVQuvn+EodpszFaGdg==",
+  "dgSpecHash": "8K4Z13lUUuE=",
   "success": true,
-  "projectFilePath": "D:\\Assemblies\\Platform\\Security\\Roblox.Platform.Security\\Roblox.Platform.Security.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Security\\Roblox.Platform.Security\\Roblox.Platform.Security.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

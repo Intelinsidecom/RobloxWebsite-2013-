@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Collections</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Collections.BufferedCounterBase`1.#ctor(Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Collections.BufferedCounterBase`1"/> class.
+            </summary>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="logger"/>
+            </exception>
+        </member>
+        <member name="T:Roblox.Collections.CounterBase`1">
+            <summary>
+            A base class for counters that includes the protected Commit method used to persist counts.
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <seealso cref="T:Roblox.Collections.ICounter`1" />
+        </member>
+        <member name="M:Roblox.Collections.CounterBase`1.Increment(`0,System.Double)">
+            <summary>
+            Increments the specified counter key.
+            </summary>
+            <param name="counterKey">The counter key.</param>
+            <param name="amount">The amount.</param>
+        </member>
+        <member name="M:Roblox.Collections.ExpirableDictionary`2.ContainsKey(`0)">
+            <summary>
+            Check if the key exists.  Will not extend expiration.
+            </summary>
+            <param name="key"></param>
+            <returns>True if the key exists</returns>
+        </member>
+        <member name="T:Roblox.Collections.ICounter`1">
+            <summary>
+            A generic counter interface
+            </summary>
+            <typeparam name="TKey">The type of thing to count.</typeparam>
+        </member>
+        <member name="M:Roblox.Collections.ICounter`1.Increment(`0,System.Double)">
+            <summary>
+            Increments the specified counter key.
+            </summary>
+            <param name="counterKey">The counter key.</param>
+            <param name="amount">The amount.</param>
+        </member>
+        <member name="M:Roblox.Collections.WeightedProbabilisticPicker.PickElement``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IList{System.Int32})">
+            <summary>
+             This method picks one element from a list of elements probabilistically based on weights passed in. The weight for
+             any element cannot be 0.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="elements">Data elements from which picking needs to be done.</param>
+            <param name="weights">The element will be picked probalistically based on weights. 0 weights are not supported.</param>
+            <returns>Picked element.</returns>
+        </member>
+        <member name="M:Roblox.Collections.WeightedProbabilisticPicker.PickElements``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IList{System.Int32},System.Int32)">
+            <summary>
+             This method picks one or more elements from a list of elements probabilistically based on weights passed in. The weight for
+             any element cannot be 0.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="elements">Data elements from which picking needs to be done.</param>
+            <param name="weights">The elements will be picked probalistically based on weights. 0 weights are not supported.</param>
+            <param name="numberOfElementsToPick">Number of elements to pick</param>
+            <returns>Picked elements.</returns>
+        </member>
+        <member name="M:Roblox.Collections.WeightedProbabilisticPicker.GetNextRandom">
+            <summary>
+                Get a random number greater than 0 and less than or equal to 1.
+            </summary>
+            <returns>Random number greater than 0 and less than or equal to 1. </returns>
+        </member>
+    </members>
+</doc>

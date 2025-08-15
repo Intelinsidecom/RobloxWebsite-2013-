@@ -1,0 +1,777 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Localization.Accounts</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntityFactory.GetById(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntityFactory.GetByPublicId(System.Guid)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/> with the given PublicId.
+            </summary>
+            <param name="publicId">The PublicId.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/> with the given PublicId, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntityFactory.SingleGetsByPublicIds(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            Gets individual <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/> by thier PublicIds and returns them in a <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/>.
+            </summary>
+            <param name="publicIds">The publicIds.</param>
+            <returns>An <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntityFactory.GetByAuditIdEnumerative(System.Int64,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/>s by their AuditId.
+            </summary>
+            <param name="auditId">The AuditId.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntityFactory.Create(Roblox.Platform.Localization.Accounts.IAccountCountryEntity)">
+            <summary>
+            Creates a new audit entry record based on the given <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountryEntity"/>.
+            </summary>
+            <param name="entity">The entity to base the audit on.</param>
+            <returns>The newly created <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntityFactory.GetByAccountCountriesAuditEntryAuditIdAndAccountCountriesAuditMetadataTypeIdEnumerative(System.Int64,System.Byte,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntity"/>s by their AuditId and <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesAuditEntryMetadataType"/>.
+            </summary>
+            <param name="accountCountriesAuditEntryAuditId">The AccountCountries row ID.</param>
+            <param name="accountCountriesAuditMetadataTypeId">The data that was changed. <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesAuditEntryMetadataType"/>.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntityFactory.Create(Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity,Roblox.Platform.Localization.Accounts.AccountCountriesAuditEntryMetadataType,Roblox.Platform.Localization.Accounts.AccountCountriesChangeAgentType,System.Nullable{System.Int64})">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntity"/> based on an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/>.
+            </summary>
+            <param name="auditEntryEntity">The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity"/>.</param>
+            <param name="metadataType">The <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesAuditEntryMetadataType"/>.</param>
+            <param name="changeAgentType">The <see cref="T:Roblox.Platform.Localization.Audit.AccountCountriesChangeAgentTypeCAL"/>.</param>
+            <param name="changeAgentTargetId">The change agent type target Id.</param>
+            <returns>A new <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntity"/> with the given value.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntity"/> with the given value.
+            </summary>
+            TODO: Add other params.
+            TODO: Add exceptions.
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntity"/> with the given value.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Add other params.
+            TODO: Add exceptions.
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAutomationTypeEntity"/> with the given TODO: Fill in characterisics.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntity"/> with the given value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntity"/> with the given value.
+            </summary>
+            <param name="value">The value to get or create.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesChangeAgentTypeEntity"/> with the given value.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntityFactory.GetById(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntityFactory.GetByPublicId(System.Guid)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/> with the given PublicId.
+            </summary>
+            <param name="publicId">The PublicId.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/> with the given PublicId, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntityFactory.MultiGetByPublicIds(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            Gets individual <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/> by thier PublicIds and returns them in a <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/>.
+            </summary>
+            <param name="publicIds">The publicIds.</param>
+            <returns>An <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntityFactory.MultiGetByAuditId(System.Int64,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/>s by their AuditId.
+            </summary>
+            <param name="auditId">The AuditId.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntityFactory.Create(Roblox.Platform.Localization.Accounts.IAccountLocaleEntity)">
+            <summary>
+            Creates a new audit entry record based on the given <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleEntity"/>.
+            </summary>
+            <param name="entity">The entity to base the audit on.</param>
+            <returns>The newly created <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntityFactory.GetByAccountLocalesAuditEntryAuditIdAndAccountLocalesAuditMetadataTypeIdEnumerative(System.Int64,System.Byte,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntity"/>s by their AuditId and <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesAuditEntryMetadataType"/>.
+            </summary>
+            <param name="accountLocalesAuditEntryAuditId">The AccountLocales row ID.</param>
+            <param name="accountLocalesAuditMetadataTypeId">The data that was changed. <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesAuditEntryMetadataType"/>.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntityFactory.Create(Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity,Roblox.Platform.Localization.Accounts.AccountLocalesAuditEntryMetadataType,Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgentType,System.Nullable{System.Int64})">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntity"/> based on an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/>. 
+            </summary>
+            <param name="auditEntryEntity">The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditEntryEntity"/>.</param>
+            <param name="metadataType">The <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesAuditEntryMetadataType"/>.</param>
+            <param name="changeAgentType">The <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgentType"/>.</param>
+            <param name="changeAgentTargetId">The change agent type target Id.</param>
+            <returns>A new <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Add other params.
+            TODO: Add exceptions.
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAuditMetadataTypeEntity"/> with the given TODO: Fill in characterisics.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntity"/> with the given value.
+            </summary>
+            <param name="value">The value of the automation type.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntity"/> with the given value.
+            </summary>
+            <param name="value">The value of the automation type.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntity"/> with the given value.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntity"/> with the given value.
+            </summary>
+            <param name="value">The value of the change agent type.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntity"/> with the given value.
+            </summary>
+            <param name="value">The value of the change agent type.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntity"/> with the given value.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.AccountLocalesAuditEntryMetadataType">
+            <summary>
+            An enum for describing the contents that were changed in an AccountLocale audit log.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.AccountLocalesAutomationType">
+            <summary>
+            The type of automation that contributed to the change of AccountLocale. For use with <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgent"/>.Automation.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgentType">
+            <summary>
+            An enum that describes the agent which changed a user's account locale.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.CountryChangedByUserEventHandler">
+            <summary>
+            The CountryChangedByUserEventHandler definition.
+            </summary>
+            <param name="accountId">The account Id of the user whose country setting was changed.</param>
+            <param name="previousCountryId">The Id of the user's old country setting.</param>
+            <param name="newCountryId">The Id of the user's new country setting.</param>
+            <param name="actorId">The Id of the user initiating the change of one's country setting.</param>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.SupportedLocaleChangedByUserEventHandler">
+            <summary>
+            The SupportedLocaleChangedByUserEventHandler definition.
+            </summary>
+            <param name="accountId">The account Id of the user whose supported locale was changed.</param>
+            <param name="previousSupportedLocaleId">The Id of the user's old supported locale setting.</param>
+            <param name="newSupportedLocaleId">The Id of the user's new supported locale setting.</param>
+            <param name="actorId">The Id of the user initiating the change of one's supported locale setting.</param>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.AccountCountriesAuditCompositeEntryAccessorFactory.#ctor(Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            Initializes a factory to get an <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor"/>.
+            </summary>
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/> needed for <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor"/>.</param>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.AccountCountriesAuditCompositeEntryAccessorFactory.GetAccountCountriesAuditCompositeEntryAccessor">
+            <summary>
+            An accessor for <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor"/>.
+            </summary>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"></exception>
+            <returns>An <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.AccountLocalizationFactory.GetAccountLocaleAccessor">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor"/>.
+            </summary>
+            <returns>An <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.AccountLocalizationFactory.GetAccountLocaleBuilder">
+            <summary>
+            Gets <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleBuilder"/>.
+            </summary>
+            <returns>An <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleBuilder"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.ContextAgnosticLocalizationResourceProvider">
+            <inheritdoc cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider"/>.
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider"/> that is not aware of the context.
+            This needs to be used in all places where context cannot be loaded.
+            For all the places that can load HttpContext, use Roblox.Web.LocalizationResourceProvider.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase" />
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.ContextAgnosticLocalizationResourceProvider.#ctor(Roblox.TranslationResources.ILocaleResourceFactory,Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor)">
+            <summary>
+            Instantiate an object of <see cref="T:Roblox.Platform.Localization.Accounts.ContextAgnosticLocalizationResourceProvider"/>.
+            </summary>
+            <param name="localeResourceFactory"><see cref="T:Roblox.TranslationResources.ILocaleResourceFactory"/></param>
+            <param name="accountLocaleAccessor"><see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.ContextAgnosticLocalizationResourceProvider.GetLocalizationResources(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResources(Roblox.Platform.Membership.IUser)"/>.
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.ContextAgnosticLocalizationResourceProvider.GetLocalizationResourcesForSpecificLocale(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)">
+            <inheritdoc cref="M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResourcesForSpecificLocale(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)"/>.
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase">
+            <inheritdoc />
+            <summary>
+            An abstract class that implements the <see cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider" />.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider" />
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase.#ctor(Roblox.TranslationResources.ILocaleResourceFactory,Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase"/> class.
+            </summary>
+            <param name="localeResourceFactory">The locale resource factory.</param>
+            <param name="accountLocaleAccessor">The account locale accessor.</param>
+            <exception cref="T:System.ArgumentNullException">
+            localeResourceFactory
+            or
+            accountLocaleAccessor
+            </exception>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase.DefaultTranslationResourceLocale">
+            <inheritdoc cref="P:Roblox.Platform.Localization.Accounts.TranslationResourceLocaleMapper.DefaultTranslationResourceLocale"/>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase.MapToResourceLocale(System.Nullable{Roblox.Platform.Localization.Core.SupportedLocaleEnum})">
+            <inheritdoc cref="M:Roblox.Platform.Localization.Accounts.TranslationResourceLocaleMapper.MapToResourceLocale(System.Nullable{Roblox.Platform.Localization.Core.SupportedLocaleEnum})"/>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase.GetLocalizationResources(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref = "M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResources(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase.GetLocalizationResourcesForSpecificLocale(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)">
+            <inheritdoc cref = "M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResourcesForSpecificLocale(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)"/>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.TranslationResourceLocaleMapper.DefaultTranslationResourceLocale">
+            <summary>
+            Gets the default translation resource locale.
+            </summary>
+            <value>
+            The default translation resource locale.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.TranslationResourceLocaleMapper.MapToResourceLocale(System.Nullable{Roblox.Platform.Localization.Core.SupportedLocaleEnum})">
+            <summary>
+            Maps a <see cref="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum"/> to a <see cref="T:Roblox.TranslationResources.TranslationResourceLocale"/>.
+            </summary>
+            <param name="locale">The <see cref="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum"/>.</param>
+            <returns>A <see cref="T:Roblox.TranslationResources.TranslationResourceLocale"/> corresponding to a passed in <see cref="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum"/>.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent">
+            <summary>
+            Provides a container for AccountLocaleChangeAgent details.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent.ChangeAgentType">
+            <summary>
+            The <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgentType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent.ChangeAgentTargetId">
+            <summary>
+            The id of the change agent.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgentFactory.CreateChangeAgentForUser(Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgentType,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgent"/> for a user.
+            </summary>
+            <param name="changeAgentType">Either User or CsAgent.</param>
+            <param name="changeAgentTargetUser">The change agent user.</param>
+            <returns><see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgentFactory.CreateChangeAgentForAutomation(Roblox.Platform.Localization.Accounts.AccountLocalesAutomationType)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgent"/> for an automated process.
+            </summary>
+            <param name="changeAgentAutomationType"></param>
+            <returns><see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent"/>.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry">
+            <summary>
+            Audit information on the AccountCountries data entry, comprising of the raw data (prefixed with "Audit_") and additional meta data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.Id">
+            <summary>
+            The primary identifier of the entry.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.AccountCountriesId">
+            <summary>
+            [Metadata] The AccountCountry ID associated with this record.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.MetadataType">
+            <summary>
+            [Metadata] The cause triggering the audit event, such as a change in country.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.ChangeAgentType">
+            <summary>
+            [Metadata] The person/machine making changes, such as a user or migrator.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.ChangeAgentTargetId">
+            <summary>
+            [Metadata] The target Id with respect to the <see cref="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.ChangeAgentType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.AuditCountryId">
+            <summary>
+            Value of "CountryId" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.AuditUpdated">
+            <summary>
+            Value of "Updated" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.AuditCreated">
+            <summary>
+            Value of "Created" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.AuditAccountID">
+            <summary>
+            Value of "AccountID" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.GetChangeAgentName">
+            <summary>
+            Get the name of our change agent.
+            </summary>
+            <returns>The name of the change agent, null if it can't be found.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor">
+            <summary>
+            An accessor to obtain <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry"/> records.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor.GetCountryHistory(Roblox.Platform.Membership.IUser,System.Byte,System.Int64)">
+            <summary>
+            Obtains audit information on a user's country changes.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> we wish to audit.</param>
+            <param name="count">The number of records to obtain. Must be eqaual or less than the setting.AccountCountriesAuditCompositeEntryCountLimit.</param>
+            <param name="exclusiveStartId">The exclusive start id of the query. Default is 0.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"> If the <see cref="T:Roblox.Platform.Membership.IUser"/> is null.</exception>
+            <returns>An <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry"/>. It's possible this is empty if no audit records are found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgentFactory.CreateChangeAgentForUser(Roblox.Platform.Localization.Accounts.AccountCountriesChangeAgentType,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates a <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent"/> for a specific user.
+            </summary>
+            <param name="changeAgentType"></param>
+            <param name="changeAgentTargetUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> who is changing the country.</param>
+            <returns>A <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgentFactory.CreateChangeAgentForAutomation(Roblox.Platform.Localization.Accounts.AccountCountriesAutomationType)">
+            <summary>
+            Creates a <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent"/> for an automated change agent.
+            </summary>
+            <param name="changeAgentAutomationType">The <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesAutomationType"/>.</param>
+            <returns>A <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent"/>.</returns>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountry.AccountId">
+            <summary>
+            Account Id of a user
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountry.CountryId">
+            <summary>
+            Country Id assocciated with an account
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountCountry.IsVerified">
+            <summary>
+            If country set by user explicitly then field returns true
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountryAccessor.GetAccountCountry(System.Int64)">
+            <summary>
+            Get IAccountCountry associated with account id.
+            </summary>
+            <param name="accountId"></param>
+            <returns>An <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountryAccessor.GetUserCountry(Roblox.Platform.Membership.IUser,System.Boolean)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Demographics.ICountry"/> of the user.  Returns null if the user is null or if no country is associated with the user's account.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> in question.</param>
+            <param name="onlyIfExplicitlySetByUser">If set to true, the method will only return an <see cref="T:Roblox.Platform.Demographics.ICountry"/> that is explicitly set by the user.  If false (default), the method not distinguish whether the country was explicitly set by the user.</param>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleEntityFactory.GetByAccountId(System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleEntity"/> with the given accountId
+            </summary>
+            <param name="accountId">The accountId associated with AccountLocale.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleEntity"/> with given accountId, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleEntityFactory.Create(System.Int64,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Create instance of <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleEntity"/> with the given account id, observed locale id and supported locale id
+            </summary>
+            <param name="accountId">account id of user</param>
+            <param name="observedLocaleId"> observed locale id associated with account, must be positive.</param>
+            <param name="supportedLocaleId">supported locale id associated with account, if not null then it must be positive and should present in valid list of supported locales.</param>
+            <returns></returns>
+        </member>
+        <member name="E:Roblox.Platform.Localization.Accounts.IAccountCountryBuilder.CountryChangedByUser">
+            <summary>
+            Fires when the user's country is changed.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountryBuilder.SetCountryVerifiedByUser(System.Int64,Roblox.Platform.Demographics.ICountryIdentifier,Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent)">
+            <summary>
+            Set country assocciated with account id. 
+            Call this method only when user explicilty sets/chooses country field.
+            </summary>
+            <param name="accountId">The account id of user.</param>
+            <param name="countryIdentifier">The country identifier that needs to set for account id. countryIdentifier cannot be negative or null.</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent"/> which contains the <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesChangeAgentType"/> and target id.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformException">This is thrown when changeAgent is not properly validated.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountryBuilder.SetDerivedCountry(System.Int64,Roblox.Platform.Demographics.ICountryIdentifier,Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent)">
+            <summary>
+            Set country assocciated with account id.
+            Call this method when user is NOT setting country explicitly.
+            This method will not override user's country when user already set country explicitly by calling SetCountryVerifiedByUser.
+            Example setting country by ip address lookup.
+            </summary>
+            <param name="accountId">The account id of the user whose country was changed.</param>
+            <param name="countryId">The country identifier that needs to set for account id. countryIdentifier cannot be negative but null is allowed.</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent"/> which contains the <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesChangeAgentType"/> and target id.</param>
+            /// <exception cref="T:Roblox.Platform.Core.PlatformException">This is thrown when changeAgent is not properly validated.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountCountryInitializer.SetDerivedCountryForAccountByIpAddress(System.Int64,System.String,System.Boolean,Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent)">
+            <summary>
+            Set country for account by ip address. Country will not be updated if user has already set country explicitly.
+            </summary>
+            <param name="accountId">account of user</param>
+            <param name="ipAddress">ipAddress of user. Empty or null ipAddress will throw an exception.</param>
+            <param name="overwriteCountry">If true will over write current country for account with new country value. Except if country is set by user explicitly.</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent"/> which contains the <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesChangeAgentType"/> and target id.</param>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocale.AccountId">
+            <summary>
+            Account id of a user
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocale.SupportedLocale">
+            <summary>
+            Supported Locale associated with an account.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocale.NativeLanguage">
+            <summary>
+            Native language associated with an account. Can be null.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor.GetAccountLocale(System.Int64)">
+            <summary>
+            Get <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale"/> for given account id.
+            </summary>
+            <param name="accountId">The account id.</param>
+            <returns>The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale"/> if present, null otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor.GetTranslationResourcesState(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Get translation resources state.
+            </summary>
+            <param name="user"></param>
+            <returns><see cref="T:Roblox.TranslationResources.TranslationResourceState"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor.IsPreferredLocaleExplicitlySet(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Checks whether the provided <see cref="T:Roblox.Platform.Membership.IUser"/> has explicitly set their <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns>False if the <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/> from the AccountLocaleEntity based on the given <see cref="T:Roblox.Platform.Membership.IUser"/> is NULL. Otherwise, return true.</returns>
+        </member>
+        <member name="E:Roblox.Platform.Localization.Accounts.IAccountLocaleBuilder.SupportedLocaleChangedByUser">
+            <summary>
+            Fires when a user's supported locale is changed.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleBuilder.SetSupportedLocale(System.Int64,Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent)">
+            <summary>
+            Sets the <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale"/> entity's supported locale for given account id. Call this method only when user explicitly sets/chooses supported locale
+            </summary>
+            <param name="accountId">Account id of user.</param>
+            <param name="supportedLocale">Supported locale that needs to be set for given account id. Supported locale id must be in valid list of supported locale ids.</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent"/> changing the supported locale.</param>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleBuilder.SetObservedLocale(System.Int64,Roblox.Platform.Localization.Core.IDeviceReportedLocaleIdentifier,Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent)">
+            <summary>
+            Sets the <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale" /> entity's observed locale for given accountId based on passed in <see cref="T:Roblox.Platform.Localization.Core.IDeviceReportedLocaleIdentifier" />.
+            </summary>
+            <param name="accountId">The account id.</param>
+            <param name="deviceReportedLocale">The <see cref="T:Roblox.Platform.Localization.Core.IDeviceReportedLocale" /> retrieved from request object</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent"/>.</param>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocaleBuilder.CreateAccountLocale(System.Int64,Roblox.Platform.Localization.Core.IDeviceReportedLocaleIdentifier,Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent)">
+            <summary>
+            Creates a new account locale. If entity already presents, throws DuplicateKeyException.
+            </summary>
+            <param name="accountId">Account id of user.</param>
+            <param name="deviceReportedLocale">Locale as reported by the device the user is currently using to access Roblox. Cannot be null.</param>
+            <param name="supportedLocale">Supported locale associated with account id. Can be null</param>
+            <param name="changeAgent">The change agent.</param>
+            <returns>
+              <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale" /> with give account id and supported locale.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry">
+            <summary>
+            Audit information on the AccountLocales data entry, comprising of the raw data (prefixed with "Audit") and additional metadata.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.Id">
+            <summary>
+            The primary identifier for the entry. The metadata Id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.AccountLocaleId">
+            <summary>
+            [Metadata] The AccountLocale Id associated with this record.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.MetadataType">
+            <summary>
+            [Metadata] The cause triggering the audit event, such as a change in supported locale.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.ChangeAgentType">
+            <summary>
+            [Metadata] The person/machine making changes, such as a user or migrator.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.ChangeAgentTargetId">
+            <summary>
+            [Metadata] The target Id with respect to the <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgentType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.AuditAccountId">
+            <summary>
+            The value of "AccountId" from the AccountLocale record at the time of the audit event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.AuditObservedLocaleId">
+            <summary>
+            The value of "ObservedLocaleId" from the AccountLocale record at the time of the audit event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.AuditSupportedLocaleId">
+            <summary>
+            The value of "SupportedLocaleId" from the AccountLocale record at the time of the audit event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.AuditCreated">
+            <summary>
+            The value of "Created" from the AccountLocale record at the time of the audit event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.AuditUpdated">
+            <summary>
+            The value of "Updated" from the AccountLocale record at the time of the audit event.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry.GetChangeAgentName">
+            <summary>
+            Get the name of our change agent.
+            </summary>
+            <returns>The name of our change agent, null if it can't be found.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntryAccessor">
+            <summary>
+            An accessor to obtain <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry"/> records.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntryAccessor.GetSupportedLocaleHistory(Roblox.Platform.Membership.IUser,System.Byte,System.Int64)">
+            <summary>
+            Obtains audit information on a user's supported locale changes.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> we wish to audit.</param>
+            <param name="count">The number of records to obtain, Must be equal or less than the setting AccountLocalesAuditCompositeEntryCountLimit.</param>
+            <param name="exclusiveStartId">The exclusive start id of the query, default is <see cref="F:System.Int64.MaxValue"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"> if the <see cref="T:Roblox.Platform.Membership.IUser"/> is null.</exception>
+            <returns>An <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry"/>. It is possible this is empty if no audit records are found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntryAccessor.GetObservedLocaleHistory(Roblox.Platform.Membership.IUser,System.Byte,System.Int64)">
+            <summary>
+            Obtains audit information on a user's observed locale changes.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> we wish to audit.</param>
+            <param name="count">The number of records to obtain, Must be equal or less than the setting AccountLocalesAuditCompositeEntryCountLimit.</param>
+            <param name="exclusiveStartId">The exclusive start id of the query, default is <see cref="F:System.Int64.MaxValue"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"> if the <see cref="T:Roblox.Platform.Membership.IUser"/> is null.</exception>
+            <returns>An <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocalesAuditCompositeEntry"/>. It is possible this is empty if no audit records are found.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider">
+            <summary>
+            Common Interface to access Locale specific resources.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResources(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Get user's localized resources (creates a Locale if one doesn't exist)
+            </summary>
+            <param name="user"><see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <returns>localized resources. <see cref="T:Roblox.TranslationResources.IMasterResources"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResourcesForSpecificLocale(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)">
+            <summary>
+            Returns resource based on locale param if locale is enabled for given user.
+            </summary>
+            <param name="user"><see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="locale">Locale for which resource will be returned</param>
+            <returns>Localized resource based on locale<see cref="T:Roblox.TranslationResources.IMasterResources"/></returns>
+        </member>
+    </members>
+</doc>

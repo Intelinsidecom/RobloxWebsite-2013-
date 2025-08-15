@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Amazon.Sns</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Amazon.Sns.IRobloxSnsClientFactory">
+            <summary>
+            Creates clients for Amazon SNS.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.IRobloxSnsClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Sns.RobloxSnsClientConfig)">
+            <summary>
+            Creates Amazon SNS client.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <returns>Amazon SNS client</returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.IRobloxSnsClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon SNS client. Uses default values from settings to build configuration.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">
+            Name of the client instance.
+            (required for performance counters creation)
+            </param>
+            <returns>
+            Amazon SNS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.IRobloxSnsClientFactory.GetDefaultSettings">
+            <summary>
+            Gets the default client settings.
+            </summary>
+            <returns><see cref="T:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings"/></returns>
+        </member>
+        <member name="E:Roblox.Amazon.Sns.IRobloxSnsClientFactory.DefaultClientSettingsChanged">
+            <summary>
+            Occurs when default client settings changed <see cref="T:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings"/>.
+            Don't forget to unsubscribe to avoid memory leaks.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.IRobloxSnsClientFactory.Create(System.String,System.String,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon SNS client. Uses default settings to build configuration.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.</param>
+            <returns>
+            Amazon SNS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.IRobloxSnsClientFactory.Create(System.String,System.String,Roblox.Amazon.Sns.RobloxSnsClientConfig)">
+            <summary>
+            Creates Amazon SNS client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.Sns.RobloxSnsClientConfig"/>.</param>
+            <returns>
+            Amazon SNS client
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.Sns.RobloxSnsClient">
+            <summary>
+            AmazonSimpleNotificationServiceClient extended with configurable circuit breaker and async invoke timeout handlers.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClient.#ctor(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Sns.RobloxSnsClientConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sns.RobloxSnsClient" /> class.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <exception cref="T:System.ArgumentNullException">config</exception>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClient.CustomizeRuntimePipeline(Amazon.Runtime.Internal.RuntimePipeline)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Amazon.Sns.RobloxSnsClientConfig">
+            <summary>
+            Configuration for <see cref="T:Roblox.Amazon.Sns.RobloxSnsClient"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientConfig.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sns.RobloxSnsClientConfig" /> class.
+            </summary>
+            <param name="clientInstanceName">Name of the client instance.
+            Examples: BadgeAwardsRepository, PlatformChat, etc.
+            Data Storage prefix will be added automatically.
+            </param>
+            <exception cref="T:System.ArgumentException">Cannot be null or empty or whitespaces. - clientInstanceName</exception>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientConfig.CircuitBreakerPolicyConfig">
+            <summary>
+            Gets the circuit breaker policy configuration.
+            Default value is ConsecutiveCircuitBreakerPolicyConfig with properties intialized from settings.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientConfig.ClientInstanceName">
+            <summary>
+            Gets the name of the client instance.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientConfig.IsCircuitBreakerEnabled">
+            <summary>
+            Gets or sets a value indicating whether circuit breaker is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientConfig.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets or sets a value indicating whether asynchronous request timeout is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings">
+            <summary>
+            RobloxSnsClient default settings <see cref="T:Roblox.Amazon.Sns.RobloxSnsClient"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.#ctor(System.Boolean,System.Boolean,System.Boolean,System.TimeSpan,System.TimeSpan,System.Int32,System.TimeSpan,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings"/> class.
+            </summary>
+            <param name="isCircuitBreakerEnabled">if set to <c>true</c> then circuit breaker is enabled.</param>
+            <param name="isAsyncRequestTimeoutEnabled">if set to <c>true</c> then asynchronous request timeout is enabled.</param>
+            <param name="isThrottleRetriesEnabled">if set to <c>true</c> throttle retries is enabled.</param>
+            <param name="requestTimeout">The request timeout.</param>
+            <param name="readWriteTimeout">The read write timeout.</param>
+            <param name="failuresAllowedBeforeCircuitBreakerTrip">The failures allowed before circuit breaker trip.</param>
+            <param name="circuitBreakerRetryInterval">The circuit breaker retry interval.</param>
+            <param name="maxErrorRetry">The maximum error retry.</param>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.IsCircuitBreakerEnabled">
+            <summary>
+            Gets a value indicating whether circuit breaker is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets a value indicating whether asynchronous request timeout is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.IsThrottleRetriesEnabled">
+            <summary>
+            Gets a value indicating whether throttle retries is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.RequestTimeout">
+            <summary>
+            Gets the request timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.ReadWriteTimeout">
+            <summary>
+            Gets the read write timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.FailuresAllowedBeforeCircuitBreakerTrip">
+            <summary>
+            Gets the amount of failures allowed before circuit breaker trip.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.CircuitBreakerRetryInterval">
+            <summary>
+            Gets the circuit breaker retry interval.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.MaxErrorRetry">
+            <summary>
+            Gets the maximum error retry.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings.Equals(Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.Sns.RobloxSnsClientFactory">
+            <summary>
+            Creates clients for Amazon SNS.
+            </summary>
+            <seealso cref="T:Roblox.Amazon.Sns.IRobloxSnsClientFactory" />
+        </member>
+        <member name="P:Roblox.Amazon.Sns.RobloxSnsClientFactory.Instance">
+            <summary>
+            Gets the instance of <see cref="T:Roblox.Amazon.Sns.RobloxSnsClientFactory"/>.
+            </summary>
+        </member>
+        <member name="E:Roblox.Amazon.Sns.RobloxSnsClientFactory.DefaultClientSettingsChanged">
+            <inheritdoc cref="E:Roblox.Amazon.Sns.IRobloxSnsClientFactory.DefaultClientSettingsChanged"/>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Sns.RobloxSnsClientConfig)">
+            <summary>
+            Creates Amazon SNS client.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <returns>
+            Amazon SNS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon SNS client. Uses default settings to build configuration.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.
+            (required for performance counters creation)</param>
+            <returns>
+            Amazon SNS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientFactory.Create(System.String,System.String,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon SNS client. Uses default settings to build configuration.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.</param>
+            <returns>
+            Amazon SNS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientFactory.Create(System.String,System.String,Roblox.Amazon.Sns.RobloxSnsClientConfig)">
+            <summary>
+            Creates Amazon SNS client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.Sns.RobloxSnsClientConfig"/>.</param>
+            <returns>
+            Amazon SNS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientFactory.GetDefaultSettings">
+            <inheritdoc cref="M:Roblox.Amazon.Sns.IRobloxSnsClientFactory.GetDefaultSettings"/>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.RobloxSnsClientFactory.GetDefaultSettingsFromSource">
+            <summary>
+            Gets the default settings from source.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.GenericSnsPublisher`1.#ctor(System.Action{System.Exception},System.Action{System.Action},System.Func{System.String},System.Func{System.String},System.Func{Amazon.RegionEndpoint},System.String,Roblox.Instrumentation.ICounterRegistry)">
+             <summary>
+             Initializes an instance of <see cref="T:Roblox.Amazon.Sns.GenericSnsPublisher`1"/>.
+            
+             Note: The generic Type T MUST be a class decorated with [DataContract] attribute.
+             And all the public properties of the generic type T MUST be decorated with [DataMember] attribute.
+             </summary>
+             <param name="errorHandler">The error handler.</param>
+             <param name="monitorWireup">The Action that wires up the configuration settings monitoring.</param>
+             <param name="snsAwsAccessKeyAndSecretGetter">The getter for SnsAwsAccessKeyAndSecret.</param>
+             <param name="snsTopicArnGetter">The getter for SnsTopicArn.</param>
+             <param name="primaryRegionEndpointGetter">The getter for Primary Region Endpoint.</param>
+             <param name="performanceMonitorCategory">The performance monitor category of the publisher.</param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <exception cref="T:System.ArgumentNullException">
+                 Throws if <paramref name="errorHandler"/>,
+                           <paramref name="monitorWireup"/>,
+                           <paramref name="snsAwsAccessKeyAndSecretGetter"/>,
+                           <paramref name="snsTopicArnGetter"/>,
+                           <paramref name="primaryRegionEndpointGetter"/> is null.
+             </exception>
+             <exception cref="T:System.ArgumentException"> Throws if <paramref name="performanceMonitorCategory"/> is null or white space.</exception>
+             <exception cref="T:System.InvalidOperationException"> Throws if the generic Type T does not have proper [DataContract] or [DataMember] attributes.</exception>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.GenericSnsPublisher`1.ValidateGenericClassHasCorrectAttributes">
+            <summary>
+            Using Reflection to validate the generic class T is decorated with proper attributes.
+            The validation is called during the construction of this class, which should normally happen
+            during the application start.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sns.IGenericSnsPublisher`1">
+            <summary>
+            A generic Sns event publisher that wraps the <see cref="T:Roblox.Amazon.Sns.SnsPublisher"/> and handles its initialization and re-initialization when config settings changed.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.IGenericSnsPublisher`1.Publish(`0)">
+            <summary>
+            Publish a message to the configured Sns Topic.
+            </summary>
+            <param name="message">The message to be published.</param>
+            <exception cref="T:System.ArgumentNullException">Throws when <paramref name="message"/> is null.</exception>
+            <exception cref="T:System.InvalidOperationException">Throws when SnsPublisher is not properly initialized.</exception>
+        </member>
+        <member name="T:Roblox.Amazon.Sns.SnsPublisher">
+            <inheritdoc cref="T:Roblox.Amazon.Sns.ISnsPublisher"/>
+        </member>
+        <member name="E:Roblox.Amazon.Sns.SnsPublisher.SnsError">
+            <summary>
+            Occurs when an SNS message fails to publish.
+            </summary>
+        </member>
+        <member name="E:Roblox.Amazon.Sns.SnsPublisher.SnsPublished">
+            <summary>
+            Occurs when an SNS message successfully publish.
+            </summary>
+        </member>
+        <member name="E:Roblox.Amazon.Sns.SnsPublisher.ErrorOnPublishersRebuildOccurred">
+            <summary>
+            Occurs when an exception is thrown during publishers rebuild.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.SnsPublisher.#ctor(System.String,System.String,Amazon.RegionEndpoint,System.String,System.String,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sns.SnsPublisher" /> class.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="primaryRegionEndpoint">The primary region endpoint.</param>
+            <param name="snsTopicArn">The SNS topic arn.</param>
+            <param name="perfmonInstanceName">The performance monitor category.</param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.SnsPublisher.#ctor(Roblox.Amazon.Sns.SnsPublisherConfig,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sns.SnsPublisher" /> class.
+            </summary>
+            <param name="config">The SNS publisher configuration <see cref="T:Roblox.Amazon.Sns.SnsPublisherConfig" />.</param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <exception cref="T:System.ArgumentNullException">snsPublisherConfig
+            or
+            snsPublisherConfig.PrimaryRegionEndpoint</exception>
+            <exception cref="T:System.ArgumentException">Must be a non-empty string. - snsPublisherConfig.AwsAccessKey
+            or
+            Must be a non-empty string. - snsPublisherConfig.AwsSecretKey
+            or
+            Must be a non-empty string. - snsPublisherConfig.PrimarySnsTopicArn
+            or
+            Must be a non-empty string. - snsPublisherConfig.PerfmonInstanceName</exception>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.SnsPublisher.Publish(System.Object)">
+            <inheritdoc cref="M:Roblox.Amazon.Sns.ISnsPublisher.Publish(System.Object)"/>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.SnsPublisher.CreateSnsRegionPublisher(Roblox.Amazon.Sns.SnsPublisherConfig,Roblox.Amazon.Sns.RobloxSnsClientDefaultSettings,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Initializes the new instance of <see cref="T:Roblox.Amazon.Sns.SnsRegionPublisher" />.
+            </summary>
+            <param name="publisherConfig">The publisher configuration.</param>
+            <param name="defaultSettings">The default settings.</param>
+            <param name="snsTopicArn">The SNS topic arn.
+            (optional, PrimarySnsTopicArn property value of <paramref name="publisherConfig" />
+            will be used when <paramref name="snsTopicArn" /> is not specified).</param>
+            <param name="regionEndpoint">The region endpoint.
+            (optional, PrimaryRegionEndpoint property value of <paramref name="publisherConfig" />
+            will be used when <paramref name="regionEndpoint" /> is not specified).</param>
+            <returns>
+              <see cref="T:Roblox.Amazon.Sns.SnsRegionPublisher" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.SnsPublisher.Dispose">
+            <summary>
+            Disposes the current instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.SnsPublisher.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.ISnsPublisher.Publish(System.Object)">
+            <summary>
+            Run through all publishers in order, trying up to TotalNumberOfRetryAttemptsPerRegion each.
+            </summary>
+            <param name="message">Message to be serialized.</param>
+        </member>
+        <member name="F:Roblox.Amazon.Sns.PublishRequestWithRetries._RunningSnsPublishRequestCount">
+            <summary>
+            All instances of this class manipulate this shared value, and update the related performance counter.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.PublishRequestWithRetries.SafelyModifyRunningRequestCountBy(System.Int32)">
+            <summary>
+            This is necessary to prevent performance counters from overflowing when decremented below zero.
+            There is a potential issue where currentValue becomes very negative (if somehow we have extra decrements)
+            TODO: Add logging to at least detect this case.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sns.SnsPublisherConfig">
+            <summary>
+            Configuration for <see cref="T:Roblox.Amazon.Sns.SnsPublisher"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.SnsPublisherConfig.AwsAccessKey">
+            <summary>
+            Gets the aws access key.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.SnsPublisherConfig.AwsSecretKey">
+            <summary>
+            Gets the aws secret key.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.SnsPublisherConfig.AwsPrimaryRegionEndpoint">
+            <summary>
+            Gets the primary region endpoint.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.SnsPublisherConfig.AwsPrimarySnsTopicArn">
+            <summary>
+            Gets the primary SNS topic arn.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sns.SnsPublisherConfig.PerfmonInstanceName">
+            <summary>
+            Gets the name of the perfmon instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sns.SnsPublisherConfig.#ctor(System.String,System.String,Amazon.RegionEndpoint,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sns.SnsPublisherConfig"/> class.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="awsPrimaryRegionEndpoint">The primary region endpoint.</param>
+            <param name="awsPrimarySnsTopicArn">The primary SNS topic arn.</param>
+            <param name="perfmonInstanceName">Name of the perfmon instance.</param>
+        </member>
+    </members>
+</doc>

@@ -226,7 +226,7 @@ public class UserSetter : IUserSetter
 			Id = user.Id,
 			Name = user.Name,
 			IsUnder13 = user.IsUnder13()
-		}, "UserDescription", user.Id.ToString(), false) ?? throw new PlatformOperationUnavailableException("TextFilterClientV2 returned a null response.")).FilteredText.TruncateToNVarChar(_Settings.MaxUserDescriptionLength) : string.Empty);
+		}, TextFilterUsage.UserDescription, user.Id.ToString(), false) ?? throw new PlatformOperationUnavailableException("TextFilterClientV2 returned a null response.")).FilteredText.TruncateToNVarChar(_Settings.MaxUserDescriptionLength) : string.Empty);
 		_UsersClient.SetUserDescription(user.Id, newDescription);
 	}
 

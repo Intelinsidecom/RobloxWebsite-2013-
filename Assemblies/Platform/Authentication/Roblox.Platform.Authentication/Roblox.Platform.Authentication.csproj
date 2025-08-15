@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Authentication</AssemblyName>
@@ -25,27 +25,22 @@
       <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.User">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Email.User.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TwoStepVerification">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.TwoStepVerification.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Email.Delivery">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Email.Delivery.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\..\..\Website\bin\Roblox.FloodCheckers.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.FloodCheckers.Core">
       <HintPath>..\..\..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
@@ -63,6 +58,15 @@
       <HintPath>..\..\..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>..\..\..\..\Website\bin\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>

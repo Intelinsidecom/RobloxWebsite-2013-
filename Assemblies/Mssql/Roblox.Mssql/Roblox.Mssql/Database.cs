@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -197,7 +197,7 @@ public class Database : IDatabase, IDisposable
 		return Task.FromResult(result: true);
 	}
 
-	public int ExecuteNonQuery(string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public int ExecuteNonQuery(string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000e: Unknown result type (might be due to invalid IL or missing references)
 		int numberOfRecordsAffected = 0;
@@ -208,7 +208,7 @@ public class Database : IDatabase, IDisposable
 		return numberOfRecordsAffected;
 	}
 
-	public async Task<int> ExecuteNonQueryAsync(string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public async Task<int> ExecuteNonQueryAsync(string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_001a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_001b: Unknown result type (might be due to invalid IL or missing references)
@@ -220,7 +220,7 @@ public class Database : IDatabase, IDisposable
 		return numberOfRecordsAffected;
 	}
 
-	public IEnumerable<IDictionary<string, object>> ExecuteReader(string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public IEnumerable<IDictionary<string, object>> ExecuteReader(string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000e: Unknown result type (might be due to invalid IL or missing references)
 		IEnumerable<IDictionary<string, object>> records = null;
@@ -231,7 +231,7 @@ public class Database : IDatabase, IDisposable
 		return records;
 	}
 
-	public async Task<IEnumerable<IDictionary<string, object>>> ExecuteReaderAsync(string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public async Task<IEnumerable<IDictionary<string, object>>> ExecuteReaderAsync(string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_001a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_001b: Unknown result type (might be due to invalid IL or missing references)
@@ -243,7 +243,7 @@ public class Database : IDatabase, IDisposable
 		return records;
 	}
 
-	public object ExecuteScalar(string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public object ExecuteScalar(string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_000e: Unknown result type (might be due to invalid IL or missing references)
 		object result = null;
@@ -254,7 +254,7 @@ public class Database : IDatabase, IDisposable
 		return result;
 	}
 
-	public async Task<object> ExecuteScalarAsync(string commandText, SqlParameter[] sqlParameters, CommandType commandType = 4, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
+	public async Task<object> ExecuteScalarAsync(string commandText, SqlParameter[] sqlParameters, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken), int? commandTimeout = null, ApplicationIntent? applicationIntent = null)
 	{
 		//IL_001a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_001b: Unknown result type (might be due to invalid IL or missing references)

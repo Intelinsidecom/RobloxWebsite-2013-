@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.IpAddresses</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.IpAddresses.IpLocationFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.IpAddresses.IIpLocationFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IpLocationFactory.#ctor(Roblox.MaxMind.GeoIP2.IMaxmindClient)">
+            <summary>
+            Construct a new <see cref="T:Roblox.Platform.IpAddresses.IpLocationFactory"/>
+            </summary>
+            <param name="client">An <see cref="T:Roblox.MaxMind.GeoIP2.IMaxmindClient"/></param>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IpLocationFactory.GetByIpAddress(System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.IpAddresses.IIpLocation"/> by its string value of ipAddress
+            </summary>
+            <param name="ipAddress">The string value of ipAddress.</param>
+            <returns>The <see cref="T:Roblox.Platform.IpAddresses.IIpLocation"/> with the given ipAddress, or null if the ipAddress is invalid.</returns>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.AccountIpAddressCardinalityDetector">
+            <summary>
+            Checks how many accounts have been accessed from an IP address
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.AccountIpAddressCardinalityDetector.IsCardinalityGreaterThanThreshold(System.String,System.Int32)">
+            <summary>
+            Checks if more than a given number of accounts have been accessed from an IP address.
+            This implementation is less heavy on the database than aggregating for exact cardinality.
+            </summary>
+            <param name="ipAddress">The IP address</param>
+            <param name="threshold">Threshold number</param>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.IpLocation">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.IpAddresses.IIpLocation"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IpLocation.Country">
+            <inheritdoc cref="P:Roblox.Platform.IpAddresses.IIpLocation.Country"/>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IpLocation.Region">
+            <inheritdoc cref="P:Roblox.Platform.IpAddresses.IIpLocation.Region"/>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IpLocation.City">
+            <inheritdoc cref="P:Roblox.Platform.IpAddresses.IIpLocation.City"/>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IpLocation.Postal">
+            <inheritdoc cref="P:Roblox.Platform.IpAddresses.IIpLocation.Postal"/>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IpLocation.IpType">
+            <inheritdoc cref="P:Roblox.Platform.IpAddresses.IIpLocation.IpType"/>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IpLocation.Value">
+            <inheritdoc cref="P:Roblox.Platform.IpAddresses.IIpLocation.Value"/>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IpLocation.#ctor(Roblox.MaxMind.GeoIP2.IIPLookupResult,System.String)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.IpAddresses.IpLocation"/>
+            </summary>
+            <param name="ipLookUpResult">An <see cref="T:Roblox.MaxMind.GeoIP2.IPLookupResult"/></param>
+            <param name="ipAddress">A string value of ipAddress</param>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.IpType">
+            <summary>
+            If Ip is valid, then it only has 3 types
+            NotFound means MaxMind API can not return any Geo Information
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.IIpLocation">
+            <summary>
+            An IP Location with Geo Information from which someone at some point accessed Roblox
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpLocation.Region">
+            <summary>
+            The IP Region eg: California
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpLocation.City">
+            <summary>
+            The IP City eg: San Mateo
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpLocation.Country">
+            <summary>
+            The IP Country eg: United States
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpLocation.Postal">
+            <summary>
+            The Postal or Zipcode eg: 91040
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpLocation.IpType">
+            <summary>
+            The IP Type
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpLocation.Value">
+            <summary>
+            String value of the IP eg: 127.0.0.1
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.IIpLocationFactory">
+            <summary>
+            A factory which could get <see cref="T:Roblox.Platform.IpAddresses.IIpLocation"/> by IpAddress.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IIpLocationFactory.GetByIpAddress(System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.IpAddresses.IIpLocation"/> by its string value of ipAddress
+            </summary>
+            <param name="ipAddress">The string value of ipAddress.</param>
+            <returns>The <see cref="T:Roblox.Platform.IpAddresses.IIpLocation"/> with the given ipAddress, or null if the ipAddress is invalid.</returns>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.ISuspiciousIpChecker">
+            <summary>
+            Determines if an IP is suspicious, eg. has unusual behavior. 
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.ISuspiciousIpChecker.IsSuspicious(System.String)">
+            <summary>
+            Is the IP suspicious?
+            </summary>
+            <param name="ipAddress">The IP address string</param>
+            <returns>True, if suspicious.</returns>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.IAccountIpAddressCardinalityDetector">
+            <summary>
+            Checks how many accounts have been accessed from an IP address
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressCardinalityDetector.IsCardinalityGreaterThanThreshold(System.String,System.Int32)">
+            <summary>
+            Checks if more than a given number of accounts have been accessed from an IP address
+            </summary>
+            <param name="ipAddress">The IP address</param>
+            <param name="threshold">Threshold number</param>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity">
+            <summary>
+            Associative entity between accounts and IP addresses on which they have been seen.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IAccountIpAddressEntity.AccountId">
+            <summary>
+            The account id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IAccountIpAddressEntity.IpAddressId">
+            <summary>
+            The IpAddress id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IAccountIpAddressEntity.LastSeen">
+            <summary>
+            Last seen time
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressEntity.RecordSeen">
+            <summary>
+            Record that this (AccountId, IpAddressId) tuple was seen, i.e. update LastSeen
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressEntityFactory.GetOrCreate(System.Int64,System.Int64)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/> with the given accountId and ipAddressId.
+            </summary>
+            <param name="accountId">The Account id</param>
+            <param name="ipAddressId">The IpAddress id</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="accountId"/> or <paramref name="ipAddressId"/> is non-positive.</exception>
+            <returns>The <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/> with the given characterisics.</returns>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressEntityFactory.GetByAccountIdPaged(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s by their TODO: Fill in.
+            </summary>
+            <param name="accountId">Account to fetch Ips for</param>
+            <param name="startRowIndex">The zero-indexed start row index at which to begin getting rows.</param>
+            <param name="maxRows">The maximum number of rows to get.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="startRowIndex"/> is less than 0.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="accountId"/> or <paramref name="maxRows"/> is non-positive.</exception>
+            TODO: Add other exceptions
+            <returns>The page of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressEntityFactory.GetTotalByAccountId(System.Int64)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s for the given accountId.
+            </summary>
+            <param name="accountId">The accountId</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="accountId"/> is non-positive.</exception>
+            <returns>The total number of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s with the given accountId</returns>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressEntityFactory.GetByIpAddressIdPaged(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s by their ipAddress id.
+            </summary>
+            <param name="ipAddressId">The IpAddress id</param>
+            <param name="startRowIndex">The zero-indexed start row index at which to begin getting rows.</param>
+            <param name="maxRows">The maximum number of rows to get.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="startRowIndex"/> is less than 0.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="maxRows"/> or <paramref name="ipAddressId"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressEntityFactory.GetTotalByIpAddressId(System.Int64)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s with the given ip address
+            </summary>
+            <param name="ipAddressId">The IpAddress id</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="ipAddressId"/> is non-positive.</exception>
+            <returns>The total number of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s with the given  ip address.</returns>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IAccountIpAddressEntityFactory.GetByAccountIdEnumerative(System.Int64,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s by their account ID.
+            </summary>
+            <param name="accountId">The account ID to fetch entities for.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartLastSeen">Exclusive key at which to begin getting entities.
+            Expected to have DateTimeKind.Utc.</param>
+            <param name="exclusiveStartID">Exclusive key at which to begin getting entities that match exclusiveStartLastSeen.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> or <paramref name="exclusiveStartID"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.IpAddresses.IAccountIpAddressEntity"/>s.</returns>
+        </member>
+        <member name="T:Roblox.Platform.IpAddresses.IIpAddressEntity">
+            <summary>
+            An IP address from which someone at some point accessed Roblox
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpAddressEntity.State">
+            <summary>
+            Whether this IP is banned for website access
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpAddressEntity.Expiration">
+            <summary>
+            Expiration date of any ban
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.IpAddresses.IIpAddressEntity.Value">
+            <summary>
+            String value of the IP eg: 127.0.0.1
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IIpAddressEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.IpAddresses.IIpAddressEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.IpAddresses.IIpAddressEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IIpAddressEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.IpAddresses.IIpAddressEntity"/> with the given IP address string.
+            </summary>
+            <param name="value">The IP address string.</param>
+            <returns>The <see cref="T:Roblox.Platform.IpAddresses.IIpAddressEntity"/> with the given given IP address string.</returns>
+        </member>
+        <member name="M:Roblox.Platform.IpAddresses.IIpAddressEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.IpAddresses.IIpAddressEntity"/> with the given IP address string.
+            </summary>
+            <param name="value">The IP address string.</param>
+            <returns>The <see cref="T:Roblox.Platform.IpAddresses.IIpAddressEntity"/> with the given IP address string.</returns>
+        </member>
+        <member name="F:Roblox.Platform.IpAddresses.RbxIpCookieModeEnum.Legacy">
+            <summary>
+            Only use "rbx-ip" cookie
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.IpAddresses.RbxIpCookieModeEnum.Transition">
+            <summary>
+            Keep using "rbx-ip" short-circuit logic, but start writing "rbx-ip2" cookie
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.IpAddresses.RbxIpCookieModeEnum.RbxIp2">
+            <summary>
+            Only use "rbx-ip2" cookie
+            </summary>
+        </member>
+    </members>
+</doc>

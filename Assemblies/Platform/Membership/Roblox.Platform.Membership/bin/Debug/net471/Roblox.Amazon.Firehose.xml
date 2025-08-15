@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Amazon.Firehose</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender">
+            <summary>
+            Class provides methods to push data to Firehose stream.
+            </summary>
+            <seealso cref="T:Roblox.Coordination.BackgroundWorker" />
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender.#ctor(Roblox.EventLog.ILogger,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},Amazon.RegionEndpoint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender" /> class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws access secret key.</param>
+            <param name="amazonKinesisFirehoseDeliveryStreamName">Name of the amazon kinesis firehose delivery stream.</param>
+            <param name="maxBufferSize">Maximum size of the buffer (optional, default value will be used when is not specified).</param>
+            <param name="maxMessagesPerBatchRequest">The maximum messages per batch request (optional, default value will be used when is not specified).</param>
+            <param name="maxTimeoutPerMessage">The maximum timeout per message (optional, default value will be used when is not specified).</param>
+            <param name="awsRegionEndpoint">The aws region endpoint (optional, default value will be used when is not specified).</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender.#ctor(Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig,Roblox.EventLog.ILogger,Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender" /> class.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:System.ArgumentNullException">
+            config
+            or
+            config.AwsRegionEndpoint
+            or
+            logger
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            Must be a non-empty string. - config.AwsAccessKey
+            or
+            Must be a non-empty string. - config.AwsSecretKey
+            or
+            Must be a non-empty string. - config.AwsKinesisFirehoseDeliveryStreamName
+            or
+            Has to be bigger than 0. - config.MaxBufferSize
+            or
+            Has to be bigger than 0. - config.MaxMessagesPerBatchRequest
+            or
+            Has to be bigger than 0. - config.MaxTimeoutPerMessage
+            </exception>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender.EnqueueWork(System.String)">
+            <summary>
+            Enqueues the data to be pushed to Firehose stream. 
+            </summary>
+            <param name="workItem">The work item.</param>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender.DoWork">
+            <summary>
+            Prepares batch items in chunks of defined size.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender.Dispose">
+            <summary>
+            Disposes the current instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig">
+            <summary>
+            Configuration for <see cref="T:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSender"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig.AwsAccessKey">
+            <summary>
+            Gets the aws access key.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig.AwsSecretKey">
+            <summary>
+            Gets the aws secret key.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig.AwsKinesisFirehoseDeliveryStreamName">
+            <summary>
+            Gets the mame of the amazon kinesis firehose delivery stream.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig.AwsRegionEndpoint">
+            <summary>
+            Gets the aws region endpoint.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig.MaxBufferSize">
+            <summary>
+            Gets the maximum size of the buffer.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig.MaxMessagesPerBatchRequest">
+            <summary>
+            Gets the maximum messages per batch request.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig.MaxTimeoutPerMessage">
+            <summary>
+            Gets the maximum timeout per message.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},Amazon.RegionEndpoint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Firehose.AmazonKinesisFirehoseBatchEventSenderConfig" /> class.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="awsKinesisFirehoseDeliveryStreamName">Name of the aws kinesis firehose delivery stream.</param>
+            <param name="maxBufferSize">Maximum size of the buffer (optional, default value will be used).</param>
+            <param name="maxMessagesPerBatchRequest">The maximum messages per batch request (optional, default value will be used).</param>
+            <param name="maxTimeoutPerMessage">The maximum timeout per message (optional, default value will be used).</param>
+            <param name="awsRegionEndpoint">The aws region endpoint. (optional, default value is RegionEndpoint.USEast1)</param>
+        </member>
+        <member name="T:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory">
+            <summary>
+            Creates clients for Amazon KinesisFirehose.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Firehose.RobloxFirehoseClientConfig)">
+            <summary>
+            Creates Amazon KinesisFirehose client.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <returns>Amazon KinesisFirehose client</returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon KinesisFirehose client. Uses default values from settings to build configuration.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">
+            Name of the client instance.
+            (required for performance counters creation)
+            </param>
+            <returns>
+            Amazon KinesisFirehose client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory.Create(System.String,System.String,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon KinesisFirehose client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.</param>
+            <returns>
+            Amazon KinesisFirehose client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory.Create(System.String,System.String,Roblox.Amazon.Firehose.RobloxFirehoseClientConfig)">
+            <summary>
+            Creates Amazon KinesisFirehose client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig" />.</param>
+            <returns>
+            Amazon KinesisFirehose client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory.GetDefaultSettings">
+            <summary>
+            Gets the default client settings.
+            </summary>
+            <returns><see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings"/></returns>
+        </member>
+        <member name="E:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory.DefaultClientSettingsChanged">
+            <summary>
+            Occurs when default client settings changed <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings"/>.
+            Don't forget to unsubscribe to avoid memory leaks.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Firehose.RobloxFirehoseClient">
+            <summary>
+            AmazonKinesisFirehoseClient extended with configurable circuit breaker and async invoke timeout handlers. 
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClient.#ctor(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Firehose.RobloxFirehoseClientConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClient" /> class.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <exception cref="T:System.ArgumentNullException">config</exception>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClient.CustomizeRuntimePipeline(Amazon.Runtime.Internal.RuntimePipeline)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig">
+            <summary>
+            Configuration for <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClient"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig" /> class.
+            </summary>
+            <param name="clientInstanceName">Name of the client instance. 
+            Examples: BadgeAwardsRepository, PlatformChat, etc.
+            Data Storage prefix will be added automatically.
+            </param>
+            <exception cref="T:System.ArgumentException">Cannot be null or empty or whitespaces. - clientInstanceName</exception>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig.CircuitBreakerPolicyConfig">
+            <summary>
+            Gets the circuit breaker policy configuration.
+            Default value is ConsecutiveCircuitBreakerPolicyConfig with properties initialized from settings.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig.ClientInstanceName">
+            <summary>
+            Gets the name of the client instance.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig.IsCircuitBreakerEnabled">
+            <summary>
+            Gets or sets a value indicating whether circuit breaker is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets or sets a value indicating whether asynchronous request timeout is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings">
+            <summary>
+            RobloxFirehoseClient default settings <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClient"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.#ctor(System.Boolean,System.Boolean,System.Boolean,System.TimeSpan,System.TimeSpan,System.Int32,System.TimeSpan,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings"/> class.
+            </summary>
+            <param name="isCircuitBreakerEnabled">if set to <c>true</c> then circuit breaker is enabled.</param>
+            <param name="isAsyncRequestTimeoutEnabled">if set to <c>true</c> then asynchronous request timeout is enabled.</param>
+            <param name="isThrottleRetriesEnabled">if set to <c>true</c> throttle retries is enabled.</param>
+            <param name="requestTimeout">The request timeout.</param>
+            <param name="readWriteTimeout">The read write timeout.</param>
+            <param name="failuresAllowedBeforeCircuitBreakerTrip">The failures allowed before circuit breaker trip.</param>
+            <param name="circuitBreakerRetryInterval">The circuit breaker retry interval.</param>
+            <param name="maxErrorRetry">The maximum error retry.</param>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.IsCircuitBreakerEnabled">
+            <summary>
+            Gets a value indicating whether circuit breaker is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets a value indicating whether asynchronous request timeout is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.IsThrottleRetriesEnabled">
+            <summary>
+            Gets a value indicating whether throttle retries is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.RequestTimeout">
+            <summary>
+            Gets the request timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.ReadWriteTimeout">
+            <summary>
+            Gets the read write timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.FailuresAllowedBeforeCircuitBreakerTrip">
+            <summary>
+            Gets the amount of failures allowed before circuit breaker trip.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.CircuitBreakerRetryInterval">
+            <summary>
+            Gets the circuit breaker retry interval.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.MaxErrorRetry">
+            <summary>
+            Gets the maximum error retry.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings.Equals(Roblox.Amazon.Firehose.RobloxFirehoseClientDefaultSettings)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory">
+            <summary>
+            Creates clients for Amazon KinesisFirehose.
+            </summary>
+            <seealso cref="T:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory" />
+        </member>
+        <member name="P:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory.Instance">
+            <summary>
+            Gets the instance of <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory"/>.
+            </summary>
+        </member>
+        <member name="E:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory.DefaultClientSettingsChanged">
+            <inheritdoc cref="E:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory.DefaultClientSettingsChanged"/>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Firehose.RobloxFirehoseClientConfig)">
+            <summary>
+            Creates Amazon KinesisFirehose client.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <returns>
+            Amazon KinesisFirehose client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon KinesisFirehose client. Uses default settings to build configuration.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.
+            (required for performance counters creation)</param>
+            <returns>
+            Amazon KinesisFirehose client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory.Create(System.String,System.String,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon KinesisFirehose client. Uses default settings to build configuration.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.</param>
+            <returns>
+            Amazon KinesisFirehose client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory.Create(System.String,System.String,Roblox.Amazon.Firehose.RobloxFirehoseClientConfig)">
+            <summary>
+            Creates Amazon KinesisFirehose client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.Firehose.RobloxFirehoseClientConfig" />.</param>
+            <returns>
+            Amazon KinesisFirehose client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory.GetDefaultSettings">
+            <inheritdoc cref="M:Roblox.Amazon.Firehose.IRobloxFirehoseClientFactory.GetDefaultSettings"/>
+        </member>
+        <member name="M:Roblox.Amazon.Firehose.RobloxFirehoseClientFactory.GetDefaultSettingsFromSource">
+            <summary>
+            Gets the default settings from source.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Firehose.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

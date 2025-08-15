@@ -1,0 +1,2441 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Assets</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Assets.AssetTextFilterRequestV2">
+            <summary>
+            Wrapper class for submitting Asset Name and Description to be set or changed.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetTextFilterV2">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.Assets.IAssetTextFilter"/> which uses the TextFilterClientV2.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTextFilterV2.FilterAssetText(Roblox.Platform.Assets.IAssetTextFilterRequestV2)">
+            <summary>
+            Filter the given name and description as if they were part of the same conversation by the same Author.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Platform.Assets.IAssetTextFilterRequestV2"/> that wraps the request.</param>
+            <returns>a <see cref="T:Roblox.Platform.Assets.IAssetTextFilterResult"/> containing the filtered name and description.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">In the case of bad input data</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Assets.MembershipType">
+            <summary>
+            Minimum Builders Club level required to purchase a product
+            If modifying, make sure to update other copies of this enum on Roblox.Marketplace
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher">
+            <summary>
+            AssetEventsPublisher implements <see cref="T:Roblox.Platform.Assets.Events.IAssetEventsObserver"/> to get notifications of 
+            events and publishes changes to Asset Archival Status
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetArchivalEventsPublisher.Subscribe(System.IObservable{Roblox.Platform.Assets.Events.AssetEntityEvent})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetArchivalEventsPublisher.Unsubscribe">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetDependencyCreationFailureException">
+            <summary>
+            A platform exception thrown when the creation of a dependency in the asset dependencies service fails. It is intended to be thrown to stop asset creation.
+            </summary>
+            <inheritdoc cref="T:Roblox.Platform.Core.PlatformException"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDependencyCreationFailureException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Assets.AssetDependencyCreationFailureException"/> class.
+            </summary>
+            <param name="message">The message that carries additional details on the exeception for the callers.</param>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetOptionFactory">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetOptionFactory.#ctor">
+            <summary>
+            Legacy constructor - do not use.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetOptionFactory.#ctor(Roblox.Assets.Client.IAssetsClient,Roblox.EventLog.ILogger)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="assetsClient">Assets service client.</param>
+            <param name="logger">Roblox event logger.</param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetOptionFactory.#ctor(Roblox.Assets.Client.IAssetsClient,Roblox.Platform.Assets.Properties.ISettings,Roblox.EventLog.ILogger,Roblox.Platform.Assets.IUntestableCodeWrapper)">
+            <summary>
+            Injection constructor.
+            </summary>
+            <param name="assetsClient">Assets service client.</param>
+            <param name="settings">Platform Assets settings <see cref="T:Roblox.Platform.Assets.Properties.ISettings"/></param>
+            <param name="logger">Roblox event logger.</param>
+            <param name="untestableCodeWrapper"></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetOptionFactory.Get(System.Int64)">
+            <inheritdoc cref="M:Roblox.Platform.Assets.IAssetOptionFactory.Get(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetOptionFactory.GetOrCreate(System.Int64)">
+            <inheritdoc cref="T:Roblox.Platform.Assets.IAssetOptionFactory"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetOptionFactory.GetAssetOption(Roblox.AssetOption)">
+            <inheritdoc cref="T:Roblox.Platform.Assets.IAssetOptionFactory"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetOptionFactory.Save(Roblox.Platform.Assets.IAssetOption)">
+            <inheritdoc cref="T:Roblox.Platform.Assets.IAssetOptionFactory"/>
+        </member>
+        <member name="T:Roblox.Platform.Assets.TexturePackFactory">
+            <summary>
+            Represents a factory for <see cref="T:Roblox.Platform.Assets.TexturePack"/> assets.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.TexturePackFactory.#ctor(Roblox.Platform.Assets.AssetDomainFactories)">
+            <summary>
+            Constructor of <see cref="T:Roblox.Platform.Assets.TexturePackFactory"/>.
+            </summary>
+            <param name="domainFactories"></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.TexturePackFactory.GetTexturePack(Roblox.Platform.Assets.IAsset)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.VideoFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Create an <see cref="T:Roblox.Platform.Assets.IVideo"/> asset while skipping the text filtering for the name and description.
+            [Warning!] This text does not get filtered. Use with extreme care.
+            [Warning!] This should only be used to generate assets with trusted/filtered name and description.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDependenciesConfigurationProvider.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDependenciesConfigurationProvider.#ctor(Roblox.Platform.Assets.Properties.ISettings)">
+            <summary>
+            Unit test friendly constructor.
+            </summary>
+            <param name="settings"></param>
+        </member>
+        <member name="T:Roblox.Platform.Assets.UntestableCodeWrapper">
+            <inheritdoc cref="T:Roblox.Platform.Assets.IUntestableCodeWrapper" />
+        </member>
+        <member name="M:Roblox.Platform.Assets.UntestableCodeWrapper.Execute(System.Action,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Assets.IUntestableCodeWrapper.Execute(System.Action,System.String)" />
+        </member>
+        <member name="M:Roblox.Platform.Assets.UntestableCodeWrapper.Execute``1(System.Func{``0},System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Assets.IUntestableCodeWrapper.Execute``1(System.Func{``0},System.String)" />
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetCategoryAuthority">
+            <inheritdoc cref="T:Roblox.Platform.Assets.IAssetCategoryAuthority" />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetCategoryAuthority.GetCategories(Roblox.Platform.Assets.IAsset)">
+            <inheritdocs />
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetOption">
+            <inheritdoc cref="T:Roblox.Platform.Assets.IAssetOption"/>
+        </member>
+        <member name="T:Roblox.Platform.Assets.TexturePack">
+            <summary>
+            Represents a custom material asset.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.TexturePack.#ctor(Roblox.Platform.Assets.AssetDomainFactories,Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Constructor of <see cref="T:Roblox.Platform.Assets.TexturePack"/>.
+            </summary>
+            <param name="domainFactories"></param>
+            <param name="asset"></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetCategoryAuthority">
+            <summary>
+            Interface of authority to handle asset category reads.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetCategoryAuthority.GetCategories(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Reads value of flags for asset categories.
+            </summary>
+            <param name="asset">An instance of IAsset</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="asset" /> is <see langword="null" /></exception>
+            <returns>A value of flags</returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetOption">
+            <summary>
+            A wrapper for asset option class in SCL.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetOptionFactory">
+            <summary>
+            Interface for the factory for <see cref="T:Roblox.Platform.Assets.AssetOption"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetOptionFactory.Get(System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAssetOption"/> of the specified id.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Assets.IAssetOption"/> of the specified id.  Null if no asset option is found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetOptionFactory.GetOrCreate(System.Int64)">
+            <summary>
+            Gets or creates the <see cref="T:Roblox.Platform.Assets.IAssetOption"/> of specified asset id.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Assets.IAssetOption"/> of the specified asset id.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetOptionFactory.GetAssetOption(Roblox.AssetOption)">
+            <summary>
+            Make <see cref="T:Roblox.Platform.Assets.IAssetOption"/> from <see cref="T:Roblox.AssetOption"/>
+            </summary>
+            <param name="assetOption"><see cref="T:Roblox.AssetOption"/>, which is in SCL.</param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetOptionFactory.Save(Roblox.Platform.Assets.IAssetOption)">
+            <summary>
+            Save <see cref="T:Roblox.Platform.Assets.IAssetOption"/> into backend storage.
+            </summary>
+            <param name="assetOption"><see cref="T:Roblox.AssetOption"/>, which is in SCL.</param>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetDependenciesConfigurationProvider">
+            <summary>
+            Configuration related to publishing and serving asset versions.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetDependenciesConfigurationProvider.IsCreateAssetDependencyAllowedForAsset(System.Int64)">
+            <summary>
+            Whether the asset type is supported by the Asset Dependencies service.
+            </summary>
+            <param name="assetId">The asset id.</param>
+            <returns>True if supported, false otherwise.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.ITexturePack">
+            <summary>
+            Represents the interface of custom material assets.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.ITexturePackFactory">
+            <summary>
+            Represents the interface of factories for custom material assets.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.ITexturePackFactory.GetTexturePack(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Returns custom material by <see cref="T:Roblox.Platform.Assets.IAsset"/>.
+            </summary>
+            <param name="genericAsset"></param>
+            <returns><see cref="T:Roblox.Platform.Assets.ITexturePack"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IUntestableCodeWrapper">
+            <summary>
+            A wrapper for untestable code to make the code path testable.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IUntestableCodeWrapper.Execute(System.Action,System.String)">
+            <summary>
+            Executes an <see cref="T:System.Action"/> wrapping an untestable code path.
+            </summary>
+            <param name="untestableCode">The untestable code path</param>
+            <param name="codePathName">Optional name, useful in unit testing when the target method has more than one untestable code paths.</param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IUntestableCodeWrapper.Execute``1(System.Func{``0},System.String)">
+            <summary>
+            Executes a <see cref="T:System.Func`1"/> wrapping an untestable code path.
+            </summary>
+            <param name="untestableCode">The untestable code path</param>
+            <param name="codePathName">Optional name, useful in unit testing when the target method has more than one untestable code paths.</param>
+            <returns>Result object of the code path.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IImageFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier,System.String)">
+            <summary>
+            Create an <see cref="T:Roblox.Platform.Assets.IImage"/> asset while skipping the text filtering for the name and description.
+            </summary>
+            <remarks>
+            [Warning!] This text does not get filtered.Use with extreme care.
+            [Warning!] This should only be used to generate assets with trusted/filtered name and description.
+            </remarks>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetVersionsConfigurationProvider">
+            <summary>
+            Provides configuration for AssetsVersions
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionsConfigurationProvider.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionsConfigurationProvider.#ctor(Roblox.Platform.Assets.Properties.ISettings)">
+            <summary>
+            Unit test friendly constructor.
+            </summary>
+            <param name="settings"></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionsConfigurationProvider.IsPublishToAssetPublishedVersionsEnabledForAssetType(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionsConfigurationProvider.IsServeFromAssetPublishedVersionsEnabledForAssetType(Roblox.Platform.Assets.AssetType,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Assets.AccessChecker">
+            <summary>
+            For checking if an asset can be loaded by a user.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AccessChecker.HasAccess(Roblox.Platform.Assets.IAsset,Roblox.User)">
+            <summary>
+            Most asset types allow unlimited access but some are restricted.
+            </summary>
+            <remarks>
+            Any content that a user can bring with her into game (via avatar)
+            must be available without an ownership check.  The reason is: all other users in the
+            game must be able to request it so they can render the avatar correctly.
+            Therefore, only check the ownership on content that cannot migrate with a user (Places,
+            Models).  Grid servers can skip the ownership check through presentation of a "secret"
+            key.  
+            Note 2018: the above is 7+ years old.
+            </remarks>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetGenreAuthority">
+            <inheritdoc cref="T:Roblox.Platform.Assets.IAssetGenreAuthority" />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetGenreAuthority.Read(Roblox.Platform.Assets.IAsset)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetGenreAuthority.ReadAsGenres(Roblox.Platform.Assets.IAsset)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetGenreAuthority.Write(Roblox.Platform.Assets.IAsset,System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetGenreAuthority.Write(Roblox.Platform.Assets.IAsset,System.String,System.Boolean)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetGenreAuthority.Write(Roblox.Platform.Assets.IAsset,System.Byte,System.Boolean)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetGenreAuthority.Write(Roblox.Platform.Assets.IAsset,System.Collections.Generic.IEnumerable{Roblox.Platform.Assets.AssetGenre},System.Boolean)">
+            <inheritdocs />
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetVersionPublisher">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Platform.Assets.IAssetVersionPublisher"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionPublisher.#ctor(Roblox.Assets.Client.IAssetsClient,Roblox.Platform.Assets.IAssetFactory)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="assetsClient">Client to Assets service.</param>
+            <param name="assetFactory"></param>
+            <exception cref="T:System.ArgumentNullException">All parameters are required.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionPublisher.#ctor(Roblox.Assets.Client.IAssetsClient,Roblox.Platform.Assets.IAssetFactory,Roblox.Platform.Assets.IAssetTypeFactory,Roblox.Platform.Assets.IAssetVersionsConfigurationProvider)">
+            <summary>
+            Unit test friendly constructor.
+            </summary>
+            <param name="assetsClient">Client to Assets service.</param>
+            <param name="assetFactory">Asset factory.</param>
+            <param name="assetTypeFactory">Instance of <see cref="T:Roblox.Platform.Assets.IAssetTypeFactory"/></param>
+            <param name="assetVersionsConfig">Configuration for publishing and serving asset versions.</param>
+            <exception cref="T:System.ArgumentNullException">All parameters are required.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionPublisher.IsAssetTypeSupported(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionPublisher.IsAssetTypeSupported(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionPublisher.PublishAssetVersion(Roblox.Platform.Assets.IAssetVersion,Roblox.Platform.Assets.CreatorType,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.Implementation.ImageUploadAccountAgeOneYearFloodChecker.RetryAfter">
+            <inheritdoc cref="T:Roblox.FloodCheckers.Core.IRetryAfterFloodChecker" />
+        </member>
+        <member name="M:Roblox.Platform.Assets.Implementation.ImageUploadAccountAgeTwoYearsFloodChecker.RetryAfter">
+            <inheritdoc cref="T:Roblox.FloodCheckers.Core.IRetryAfterFloodChecker" />
+        </member>
+        <member name="M:Roblox.Platform.Assets.Implementation.ImageUploadFloodChecker.RetryAfter">
+            <inheritdoc cref="T:Roblox.FloodCheckers.Core.IRetryAfterFloodChecker" />
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAccessChecker">
+            <summary>
+            Interface for validating that a User has access to a given Asset.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetGenreAuthority">
+            <summary>
+            Interface of authority to handle asset genre reads and writes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetGenreAuthority.Read(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Reads asset genres associated with a given <paramref name="asset" /> instance.
+            </summary>
+            <param name="asset">An instance of IAsset</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="asset" /> is <see langword="null" /></exception>
+            <returns>A collection of asset genre names</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetGenreAuthority.ReadAsGenres(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Reads asset genres associated with a given <paramref name="asset" /> instance.
+            </summary>
+            <param name="asset">An instance of IAsset</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="asset" /> is <see langword="null" /></exception>
+            <returns>A collection of asset genres</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetGenreAuthority.Write(Roblox.Platform.Assets.IAsset,System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+            <summary>
+            Updates asset genres on the given <paramref name="asset" /> with the given genre names.
+            </summary>
+            <param name="asset">An instance of <see cref="T:Roblox.Platform.Assets.IAsset" /></param>
+            <param name="genreNames">A collection of string genre names</param>
+            <param name="forceUpdate">Perform an update whether or not the genres have changed</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="asset" /> is <see langword="null" /></exception>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="genreNames" /> is <see langword="null" /></exception>
+            <exception cref="T:System.ArgumentException">Thrown when one of the given <paramref name="genreName" />'s is invalid /></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetGenreAuthority.Write(Roblox.Platform.Assets.IAsset,System.String,System.Boolean)">
+            <summary>
+            Updates an asset genre with the given genre name.
+            </summary>
+            <param name="asset">An instance of <see cref="T:Roblox.Platform.Assets.IAsset" /></param>
+            <param name="genreName">A string genre name</param>
+            <param name="forceUpdate">Perform an update whether or not the genres have changed</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="asset" /> is <see langword="null" /></exception>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="genreName" /> is <see langword="null" /></exception>
+            <exception cref="T:System.ArgumentException">Thrown when <paramref name="genreName" /> is invalid /></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetGenreAuthority.Write(Roblox.Platform.Assets.IAsset,System.Byte,System.Boolean)">
+            <summary>
+            Updates an asset genre with the given genre ID.
+            </summary>
+            <param name="asset">An instance of <see cref="T:Roblox.Platform.Assets.IAsset" /></param>
+            <param name="genreId">An ID representing a unique <see cref="T:Roblox.AssetGenre" /></param>
+            <param name="forceUpdate">Perform an update whether or not the genres have changed</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="asset" /> is <see langword="null" /></exception>
+            <exception cref="T:System.ArgumentException">Thrown when <paramref name="genreId" /> is invalid /></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetGenreAuthority.Write(Roblox.Platform.Assets.IAsset,System.Collections.Generic.IEnumerable{Roblox.Platform.Assets.AssetGenre},System.Boolean)">
+            <summary>
+            Updates asset genres on the given <paramref name="asset" /> with the given list of <see cref="T:Roblox.Platform.Assets.AssetGenre"/>.
+            </summary>
+            <param name="asset">An instance of <see cref="T:Roblox.Platform.Assets.IAsset" /></param>
+            <param name="genres">A collection of <see cref="T:Roblox.Platform.Assets.AssetGenre" /></param>
+            <param name="forceUpdate">Perform an update whether or not the genres have changed</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="asset" /> is <see langword="null" /></exception>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="genreNames" /> is <see langword="null" /></exception>
+            <exception cref="T:System.ArgumentException">Thrown when one of the given <paramref name="genreName" />'s is invalid /></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.AssetHash.AssetHashEntityFactory.GetDefaultModerationFlags(Roblox.ICreator,Roblox.AssetType)">
+            <summary>
+            Logic for figuring out if an asset requires review.
+            TODO - Currently a copy-paste job from SCL, clearly belong in a separate file.
+            </summary>
+            <param name="creator">Creator of the Content</param>
+            <param name="assetType">AssetType of the Content</param>
+            <returns>A <see cref="T:Roblox.Platform.Assets.Entities.AssetHash.AssetHashEntityFactory.ModerationFlags"/> object containing default values for IsApproved and IsReviewed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetChangeTypesEntityFactory.GetIdByEnum(Roblox.Platform.Assets.AssetChangeType)">
+            <summary>
+            Returns the Id of the ChangeType using the name of the enum as value lookup.
+            </summary>
+            <exception cref="T:Roblox.Data.DataIntegrityException">If no record can be found matching the name of the enum as its value.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetChangeTypesEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetChangeTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetChangeTypeEntity"/> with the given ID, or null if none exists.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetChangeTypesEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetChangeTypeEntity"/> with the given value
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntityFactory.Create(Roblox.DataAccess.AssetDAL)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntity"/> based on the records in the <see cref="T:Roblox.DataAccess.AssetDAL"/> object.
+            This is an unusual jump of abstraction layers, due to the intermediate BLL (=CAL) layer not mirrioring the underlying data structure.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntityFactory.GetByPublicId(System.Guid)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntity"/> with the given (public) GUID
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditMetadataEntityFactory.CreateNew(Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntity,Roblox.Platform.Assets.AssetChangeType,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Creates a new Metadata record for the audit entry based on the information provided.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditMetadataEntityFactory.CreateLegacyAudit(Roblox.Platform.Assets.Entities.Audit.IAssetsAuditEntryEntity,Roblox.Platform.Assets.AssetChangeType)">
+            <summary>
+            Creates a Metadata record for a legacy audit entry from a time period when auditing was not turned on.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditMetadataEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditMetadataEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditMetadataEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditMetadataEntityFactory.GetByAssetIdAndAssetChangeTypeIdEnumerative(System.Int64,System.Byte,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditMetadataEntity"/>s by their assetId and assetChangeTypeId, paged by their Id in Descending order
+            </summary>
+            <returns>The page of <see cref="T:Roblox.Platform.Assets.Entities.Audit.IAssetsAuditMetadataEntity"/>s.</returns>
+        </member>
+        <member name="P:Roblox.Platform.Assets.Entities.IAssetEntity.CreatorId">
+            <summary>
+            The AgentId of the creator
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.Entities.IAssetEntity._EntityDAL">
+            <summary>
+            This is a hack to audit the records of the Assets table directly, because Roblox.Asset does not have the exact same data type/values as the underlying database table.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.IAssetEntity.Update(System.Boolean)">
+            <exception cref="T:System.InvalidOperationException">If the data entity is not found.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.IAssetEntityFactory.Get(System.Int64)">
+            <summary>
+            Get an <see cref="T:Roblox.Platform.Assets.Entities.IAssetEntity"/> based on its id.
+            </summary>
+            <returns>The corresponding <see cref="T:Roblox.Platform.Assets.Entities.IAssetEntity"/>, or null if data is not found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.IAssetEntityFactory.MustGet(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Assets.Entities.IAssetEntity"/> based on its id, and check that it is not null.
+            </summary>
+            <returns>The corresponding <see cref="T:Roblox.Platform.Assets.Entities.IAssetEntity"/></returns>
+            <exception cref="T:System.InvalidOperationException">If the data is not found.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Entities.IAssetEntityFactory.Create(Roblox.AssetType,Roblox.Platform.Assets.Entities.AssetHash.IAssetHashEntity,Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Agents.IAgent)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Assets.Entities.IAssetEntity"/> based on the provided information.
+            </summary>
+            <returns><see cref="T:Roblox.Platform.Core.DataUpdateResult`2"/></returns>
+        </member>
+        <member name="F:Roblox.Platform.Assets.Entities.Creation._OriginalCreationContextId">
+            <summary>
+            The creation context ID of the previous creation context.
+            </summary>
+            <remarks>Used for cache invalidation.</remarks>
+        </member>
+        <member name="F:Roblox.Platform.Assets.GearAssetTypes._GearAssetTypes">
+            <summary>
+            All gears
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.Events.AssetChangeType.Unknown">
+            <summary>
+            Unknown change event
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.Events.AssetChangeType.TextChanged">
+            <summary>
+            Some text on an asset was changed.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.Events.AssetChangeType.CreatorChanged">
+            <summary>
+            The creator was changed.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.Events.AssetChangeType.Reverted">
+            <summary>
+            The asset was reverted
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.Events.AssetChangeType.VersionChanged">
+            <summary>
+            The asset has a new version
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.Events.AssetChangeType.Archived">
+            <summary>
+            The asset was archived.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.Events.AssetChangeType.Unarchived">
+            <summary>
+            The asset was unarchived.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.Events.AssetEventsPublisher">
+            <summary>
+            AssetEventsPublisher implements <see cref="!:IUniverseEventsObserver"/> to get notifications of 
+            events and publishes them to a Universe entity changed SNS topic.
+            Note: this is not really an Asset Events publisher but a Place Events publisher
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Events.AssetEventsPublisher.Subscribe(System.IObservable{Roblox.Platform.Assets.Events.AssetEntityEvent})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Events.AssetEventsPublisher.Unsubscribe">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Events.AssetEventsPublisher.OnNext(Roblox.Platform.Assets.Events.AssetEntityEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.Events.AssetEventsPublisher.OnError(System.Exception)">
+            <summary>
+            This is not implemented.
+            </summary>
+            <param name="error"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Events.AssetEventsPublisher.OnCompleted">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Assets.Events.IAssetEventsObserver">
+            <summary>
+            Asset events observer.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Events.IAssetEventsObserver.Subscribe(System.IObservable{Roblox.Platform.Assets.Events.AssetEntityEvent})">
+            <summary>
+            Subscribe to receive change events
+            </summary>
+            <param name="observable"><see cref="T:System.IObservable`1"/> for <see cref="T:Roblox.Platform.Assets.Events.AssetEntityEvent"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Events.IAssetEventsObserver.Unsubscribe">
+            <summary>
+            Un-subscribe from the <see cref="T:System.IObservable`1"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetVersionCreationEvent.AssetVersionId">
+            <summary>
+            The Id of the new <see cref="T:Roblox.Platform.Assets.IAssetVersion"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetVersionCreationEvent.LocaleCodeOverride">
+            <summary>
+            The locale code to be used instead for moderation review task.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetVersionCreationEventPublisher">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Platform.Assets.IAssetVersionCreationEventPublisher"/>.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Assets.IAssetVersionCreationEventPublisher" />.
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionCreationEventPublisher.#ctor(Roblox.Platform.Assets.Properties.ISettings,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Assets.AssetVersionCreationEventPublisher" /> class.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetReverter">
+            <inheritdoc />
+            <seealso cref="T:Roblox.Platform.Assets.IAssetReverter" />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetReverter.#ctor(Roblox.EventLog.ILogger,Roblox.Platform.Assets.AssetDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Assets.AssetReverter"/> class.
+            </summary>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="domainFactories">The <see cref="T:Roblox.Platform.Assets.AssetDomainFactories"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            logger
+            or
+            domainFactories
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetReverter.Reset(Roblox.Platform.Assets.IAsset)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetReverter.Revert(Roblox.Platform.Assets.IAssetVersion,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetReverter.Revert(Roblox.Platform.Assets.IAsset,System.Int32,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetReverter.Revert(Roblox.Platform.Assets.IAsset,Roblox.Platform.Assets.IAssetVersion,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetReverter">
+            <summary>
+            For reverting <see cref="T:Roblox.Platform.Assets.IAsset"/> versions.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetReverter.Reset(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Resets the specified asset by reverting it to it's version number 1
+            </summary>
+            <param name="asset">The <see cref="T:Roblox.Platform.Assets.IAsset"/>.</param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetReverter.Revert(Roblox.Platform.Assets.IAsset,Roblox.Platform.Assets.IAssetVersion,System.Boolean)">
+            <summary>
+            Reverts the specified <see cref="T:Roblox.Platform.Assets.IAsset"/> to the given <see cref="T:Roblox.Platform.Assets.IAssetVersion"/>.
+            </summary>
+            <param name="asset">The <see cref="T:Roblox.Platform.Assets.IAsset"/>.</param>
+            <param name="previousAssetVersion">The previous <see cref="T:Roblox.Platform.Assets.IAssetVersion"/> version, must be a version for the given IAsset.</param>
+            <param name="isSavedVersionOnly">Indicates that the new version should only be saved but not published.</param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetReverter.Revert(Roblox.Platform.Assets.IAsset,System.Int32,System.Boolean)">
+            <summary>
+            Reverts the specified <see cref="T:Roblox.Platform.Assets.IAsset"/>, to the given version number.
+            </summary>
+            <param name="asset">The <see cref="T:Roblox.Platform.Assets.IAsset"/>.</param>
+            <param name="versionNumber">The version number.</param>
+            <param name="isSavedVersionOnly">Indicates that the new version should only be saved but not published.</param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetReverter.Revert(Roblox.Platform.Assets.IAssetVersion,System.Boolean)">
+            <summary>
+            Reverts an <see cref="T:Roblox.Platform.Assets.IAsset"/> to the given <see cref="T:Roblox.Platform.Assets.IAssetVersion"/>. Which asset is reverted is derived from the <see cref="T:Roblox.Platform.Assets.IAssetVersion"/>.
+            </summary>
+            <param name="previousAssetVersion">The previous <see cref="T:Roblox.Platform.Assets.IAssetVersion"/>.</param>
+            <param name="isSavedVersionOnly">Indicates that the new version should only be saved but not published.</param>
+        </member>
+        <member name="T:Roblox.Platform.Assets.VideoDisapprovedException">
+            <summary>
+            A platform exception thrown when the newly uploaded video has already been disapproved previously. It is intended to be thrown to stop asset creation.
+            The caller should handle this exception gracefully.
+            </summary>
+            <inheritdoc cref="T:Roblox.Platform.Core.PlatformException"/>
+        </member>
+        <member name="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">
+            <summary>
+            A platform exception thrown if the asset Name or Description is fully moderated. It is intended to be thrown to stop asset creation.
+            The caller should handle this exception gracefully.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.PlatformException" />
+        </member>
+        <member name="M:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException"/> class.
+            </summary>
+            <param name="message">The message that carries additional details on the exeception for the callers.</param>
+        </member>
+        <member name="F:Roblox.Platform.Assets.AccessoryAssetTypes._AccessoryAssetTypes">
+            <summary>
+            Hat are a type of accessory, but also existed before accessories as a concept, so there are lots of switches like "enableAccessories" which enable them all except hats, which are enabled already.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetComparer">
+            <summary>
+            Comparer class to be used in linq query to check if two assets are
+            equal i.e. they have same id.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetDomainFactories">
+            <summary>
+            A container object for factories (and other stateless objects) of Platform.Assets.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetDomainFactories.AssetTypeFactoryInternal">
+            <summary>
+            An <see cref="P:Roblox.Platform.Assets.AssetDomainFactories.AssetTypeFactory"/> with internal methods exposed to the rest of this assembly.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetDomainFactories.AssetFactoryInternal">
+            <summary>
+            An <see cref="T:Roblox.Platform.Assets.AssetFactoryInstantiable"/> with internal methods exposed to the rest of this assembly.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetDomainFactories.AssetVersionFactoryInternal">
+            <summary>
+            An <see cref="T:Roblox.Platform.Assets.IAssetVersionFactory_Internal"/> with internal methods exposed to the rest of this assembly.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDomainFactories.#ctor">
+            <summary>
+            Internal constructor for unit tests only
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.TextFilter.ITextFilter,Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            AssetDomainFactories constructor - only using deprecated TextFilter
+            </summary>
+            <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory"/></param>
+            <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <remarks>The <see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /> and <see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher" /> are not passed in by default, which is ppropriate for all cases except testing or when you must disable events to SNS.</remarks>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            AssetDomainFactories constructor - only using TextFilterClientV2
+            </summary>
+            <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory"/></param>
+            <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <remarks>The <see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /> and <see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher" /> are not passed in by default, which is ppropriate for all cases except testing or when you must disable events to SNS.</remarks>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.TextFilter.ITextFilter,Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            AssetDomainFactories constructor
+            </summary>
+            <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory"/></param>
+            <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter"/></param>
+            <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <remarks>The <see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /> and <see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher" /> are not passed in by default, which is ppropriate for all cases except testing or when you must disable events to SNS.</remarks>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.TextFilter.ITextFilter,Roblox.EventLog.ILogger,Roblox.Platform.Assets.Events.IAssetEventsObserver,Roblox.Platform.Assets.Events.IAssetEventsObserver,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            AssetDomainFactories constructor - only using deprecated TextFilter
+            </summary>
+            <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory"/></param>
+            <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="assetEventsObserver"><see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <param name="assetArchivalEventsObserver"><see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.EventLog.ILogger,Roblox.Platform.Assets.Events.IAssetEventsObserver,Roblox.Platform.Assets.Events.IAssetEventsObserver,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            AssetDomainFactories constructor - only using TextFilterClientV2
+            </summary>
+            <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory"/></param>
+            <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="assetEventsObserver"><see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <param name="assetArchivalEventsObserver"><see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.TextFilter.ITextFilter,Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.EventLog.ILogger,Roblox.Platform.Assets.Events.IAssetEventsObserver,Roblox.Platform.Assets.Events.IAssetEventsObserver,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            AssetDomainFactories constructor
+            </summary>
+            <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory"/></param>
+            <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter"/></param>
+            <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="assetEventsObserver"><see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <param name="assetArchivalEventsObserver"><see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.TextFilter.ITextFilter,Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.EventLog.ILogger,Roblox.Platform.Assets.Events.IAssetEventsObserver,Roblox.Platform.Assets.Events.IAssetEventsObserver,Roblox.Instrumentation.ICounterRegistry,Roblox.Platform.Assets.Properties.ISettings)">
+            <summary>
+            AssetDomainFactories constructor - With settings as a parameter. For internal testing only.
+            </summary>
+            <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory"/></param>
+            <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter"/></param>
+            <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="assetEventsObserver"><see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <param name="assetArchivalEventsObserver"><see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher"/></param>
+            <param name="settings"><see cref="T:Roblox.Platform.Assets.Properties.ISettings"/></param>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetTextFilter">
+            <summary>
+            Default internal implementation of <see cref="T:Roblox.Platform.Assets.IAssetTextFilter"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTextFilter.FilterAssetText(Roblox.Platform.Assets.IAssetTextFilterRequestV2)">
+            <summary>
+            Filter the given name and description as if they were part of the same conversation by the same ClientTextAuthor.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Platform.Assets.IAssetTextFilterRequestV2"/> that wraps the request.</param>
+            <returns>a <see cref="T:Roblox.Platform.Assets.IAssetTextFilterResult"/> containing the filtered name and description.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">In the case of bad input data</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTextFilter.FilterAssetText(Roblox.Platform.Assets.IAssetTextFilterRequest)">
+            <summary>
+            Filter the given name and description as if they were part of the same conversation by the same Author.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Platform.Assets.IAssetTextFilterRequest"/> that wraps the request.</param>
+            <returns>a <see cref="T:Roblox.Platform.Assets.IAssetTextFilterResult"/> containing the filtered name and description.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">In the case of bad input data</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetTextFilterRequest">
+            <summary>
+            Wrapper class for submitting Asset Name and Description to be set or changed.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetTextFilterResult">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Platform.Assets.IAssetTextFilterResult"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetTextFilter">
+            <summary>
+            Filter Asset text for the given Author.
+            In particular, we're filtering the name and description as if they were in the same "room".
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTextFilter.FilterAssetText(Roblox.Platform.Assets.IAssetTextFilterRequest)">
+            <summary>
+            Filter the given name and description as if they were part of the same conversation by the same Author.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Platform.Assets.IAssetTextFilterRequest"/> that wraps the request.</param>
+            <returns>a <see cref="T:Roblox.Platform.Assets.IAssetTextFilterResult"/> containing the filtered name and description.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">In the case of bad input data</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTextFilter.FilterAssetText(Roblox.Platform.Assets.IAssetTextFilterRequestV2)">
+            <summary>
+            Filter the given name and description as if they were part of the same conversation by the same ClientTextAuthor.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Platform.Assets.IAssetTextFilterRequestV2"/> that wraps the request.</param>
+            <returns>a <see cref="T:Roblox.Platform.Assets.IAssetTextFilterResult"/> containing the filtered name and description.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">In the case of bad input data</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetTextFilterResult">
+            <summary>
+            The result of filtering text for an Asset, safe to go to DB.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AvatarAssetGroups.GetAssetGroup(System.Nullable{System.Int32})">
+            <summary>
+            For a given assetTypeID, does it belong to any AvatarAssetGroups?
+            AvatarAssetGroups are non-overlapping groups of assetTypes.
+            Not every assetTypeID belongs to an assetGroup.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetType">
+            <summary>
+            These MUST match the ids in the AssetTypes table exactly
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AvatarAnimationAssetTypes.GetKeyForAnimationAssetType(System.Int32)">
+            <summary>
+            Used by the client in avatar-fetch endpoint
+            Each animation has its own key
+            </summary>
+            <param name="assetTypeId"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Roblox.Platform.Assets.AvatarAnimationAssetTypes._AvatarAnimationAssetTypes">
+            <summary>
+            The list of public avatar animation asset types
+            The commented out animations have been created but are not in use and are not publicly visible yet
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.BodyPartAssetTypes._BodyPartAssetTypes">
+            <summary>
+            Traditional body parts, plus face and head.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.ClothingAssetTypes._ClothingAssetTypes">
+            <summary>
+            Pants, TShirts, Shirts.  Note that in some places hats are considered clothing; but here and 
+            going forward they are accessories.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.TrustedAssetTextInfo">
+            <summary>
+            Wrapper class for submitting trusted Asset Text Info (Name and Description) to be changed.
+            The text info are considered trusted and should bypass text filtering.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.TrustedAssetTextInfo.Name">
+            <summary>
+            The new Name of the Asset.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.TrustedAssetTextInfo.Description">
+            <summary>
+            The new Description of the Asset.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.TrustedAssetTextInfo.#ctor(System.String,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="name"></param>
+            <param name="description"></param>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetsAuditCompositeEntry">
+            <summary>
+            Audit information on the Assets data entity, comprising of the raw data (prefixed with "Audit_") and additional meta data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.AssetChangeValue">
+            <summary>
+            [Metadata] The cause triggering the audit event
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_Id">
+            <summary>
+            The value of Id of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_AssetType">
+            <summary>
+            The value of AssetType of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_Hash">
+            <summary>
+            The value of Hash of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_Name">
+            <summary>
+            The value of Name of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_Description">
+            <summary>
+            The value of Description of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_Created">
+            <summary>
+            The value of Created of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_Updated">
+            <summary>
+            The value of Updated of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_CreatorId">
+            <summary>
+            The value of CreatorID of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_CurrentVersionId">
+            <summary>
+            The value of CurrentVersionId of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_AssetHashId">
+            <summary>
+            The value of AssetHashId of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_AssetGenres">
+            <summary>
+            The value of AssetGenres of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.Audit_AssetCategories">
+            <summary>
+            The value of AssetCategories of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.ActorUserId">
+            <summary>
+            [Metadata] The id of the user triggering the audit event, such as an ordinary user or a CS agent.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetsAuditCompositeEntry.IsLegacyValue">
+            <summary>
+            [Metadata] Indicating if the record represents data originally produced when auditing was not available, and is later being backfilled to provide comparison with other audit records.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetsAuditCompositeEntryFactory">
+            <summary>
+            A public interface producing <see cref="T:Roblox.Platform.Assets.IAssetsAuditCompositeEntry">IAssetsAuditCompositeEntries</see>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetsAuditCompositeEntryFactory.GetTextChangeHistory(System.Int64,System.Byte,System.Nullable{System.Int64})">
+            <summary>
+            Obtains audit information on an asset's text changes
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetVersionPublisher">
+            <summary>
+            For publishing an asset version.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionPublisher.IsAssetTypeSupported(System.Int32)">
+            <summary>
+            Checks whether an asset of the provided type can be published.
+            </summary>
+            <param name="assetTypeId">Asset type ID.</param>
+            <returns>True if supported, false otherwise.</returns>
+            <exception cref="T:System.ApplicationException">Asset type ID cannot be translated to an <see cref="T:Roblox.Platform.Assets.AssetType"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionPublisher.IsAssetTypeSupported(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Checks whether an asset of the provided type can be published.
+            </summary>
+            <param name="assetType">Asset type.</param>
+            <returns>True if supported, false otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionPublisher.PublishAssetVersion(Roblox.Platform.Assets.IAssetVersion,Roblox.Platform.Assets.CreatorType,System.String)">
+            <summary>
+            Publishes an asset version. Supported asset types: <see cref="F:Roblox.Platform.Assets.AssetType.Place"/>
+            </summary>
+            <param name="assetVersion">The asset version to be published.</param>
+            <param name="actorType">Type of the entity (user, group, etc.) publishing the asset version.</param>
+            <param name="actorTargetId">ID of the publishing entity.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="assetVersion"/> is null.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="actorTargetId"/> is null or empty.</exception>
+            <exception cref="T:System.ApplicationException">Asset type ID cannot be translated to an <see cref="T:Roblox.Platform.Assets.AssetType"/></exception>
+            <exception cref="T:System.NotSupportedException">Asset type not supported.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetVersionsConfigurationProvider">
+            <summary>
+            Configuration related to publishing and serving asset versions.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionsConfigurationProvider.IsPublishToAssetPublishedVersionsEnabledForAssetType(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Whether the asset type is supported by Assets service's publish functionality.
+            </summary>
+            <param name="assetType">The asset type.</param>
+            <returns>True if supported, false otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionsConfigurationProvider.IsServeFromAssetPublishedVersionsEnabledForAssetType(Roblox.Platform.Assets.AssetType,System.Int64)">
+            <summary>
+            Whether published versions of the asset is served from Assets service.
+            </summary>
+            <param name="assetType">The asset type.</param>
+            <param name="assetId">The asset ID.</param>
+            <returns>True: the published versions will be served from Assets service. Otherwise false.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.ITrustedAssetTextInfo">
+            <summary>
+            Wrapper interface class for submitting trusted Asset Text Info (Name and Description) to be changed.
+            The text info are considered trusted and should bypass text filtering.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IRawContentFactory">
+            <summary>
+            Factory for accesing <see cref="T:Roblox.Platform.Assets.IRawContent"/> objects.
+            These are a thin layer over the underlying AssetHash object in the DB, this is effectively the Platform version.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IRawContentFactory.CheckedGet(System.Nullable{System.Int64})">
+            <summary>
+            Load the AssetHash for the given Id.
+            Throws if the item is not found.
+            </summary>
+            <param name="id"></param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.IRawContent"/> matching the given Id</returns>
+            <exception cref="T:Roblox.Platform.Assets.UnknownRawContentException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IRawContentFactory.GetOrCreate(System.Int32,Roblox.Platform.Assets.CreatorType,System.Int64,System.IO.Stream,System.Net.DecompressionMethods,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Get the AssetHash for the given AssetType and Hash.
+            If the item does not exist, it will be created under the given Creator using the given stream and settings.
+            </summary>
+            <param name="assetTypeId"></param>
+            <param name="creatorType"></param>
+            <param name="creatorTargetId"></param>
+            <param name="content"></param>
+            <param name="decompressionMethod"></param>
+            <param name="expectedContentSize"></param>
+            <param name="expectedContentHash"></param>
+            <param name="mimeType"></param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.IRawContent"/> matching the given values or null if not found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IRawContentFactory.GetOrCreate(System.Int32,Roblox.Platform.Assets.CreatorType,System.Int64,System.String)">
+            <summary>
+            Get the AssetHash for the given AssetType and Hash.
+            If the item does not exist, it will be created under the given Creator.
+            </summary>
+            <param name="assetTypeId"></param>
+            <param name="creatorType"></param>
+            <param name="creatorTargetId"></param>
+            <param name="contentMd5Hash"></param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.IRawContent"/> matching the given values or null if not found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IRawContentFactory.Get(System.Nullable{System.Int64})">
+            <summary>
+            Load the AssetHash for the given Id.
+            </summary>
+            <param name="id"></param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.IRawContent"/> matching the given Id or null if not found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IRawContentFactory.GetByAssetTypeAndMd5hash(Roblox.Platform.Assets.AssetType,System.String)">
+            <summary>
+            Load the AssetHash for the given AssetType and Hash value.
+            </summary>
+            <param name="assetType"></param>
+            <param name="md5Hash"></param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.IRawContent"/> matching the given values or null if not found.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IRawContentFactory.GetByMd5HashPaged(System.String,System.Int32,System.Int32)">
+            <summary>
+            Load the AssetHash for the given Hash value.
+            </summary>
+            <param name="md5Hash"></param>
+            <param name="startRowIndex"></param>
+            <param name="maximumRows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IRawContentFactory.GetByAssetTypeAndMd5hash(System.Int32,System.String)">
+            <summary>
+            Load the AssetHash for the given AssetType and Hash value.
+            </summary>
+            <param name="assetTypeId"></param>
+            <param name="md5Hash"></param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.IRawContent"/> matching the given values or null if not found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetFactoryInstantiable.GetAssets(System.Collections.Generic.IReadOnlyCollection{System.Int64})">
+            <inheritdoc cref="M:Roblox.Platform.Assets.IAssetFactory.GetAssets(System.Collections.Generic.IReadOnlyCollection{System.Int64})"/>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetCreatorInfo">
+            <summary>
+            Wrapper class for submitting data for an Asset's Creator.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetFactoryBase`1.Create(Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Assets that need text filtering should be created using this method.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetFactoryBase`1.Create(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier,System.String)">
+            <summary>
+            Assets that could bypass text filtering can be created using this method.
+            This method should be called from the implementing typed asset factories.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetFactoryBase`1.Create(Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.IRawContent,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Assets that need text filtering should be created using this method.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetFactoryBase`1.Create(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.IRawContent,Roblox.Platform.MembershipCore.IUserIdentifier,System.String)">
+            <summary>
+            Assets that could bypass text filtering can be created using this method.
+            This method should be called from the implementing typed asset factories.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetFactoryBase`1.Get(System.Collections.Generic.IReadOnlyCollection{System.Int64},System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.Assets.IAssetFactoryBase`1.Get(System.Collections.Generic.IReadOnlyCollection{System.Int64},System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.GetAssetType(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.IsArchivalEnabledForType(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.GetArchivalEnabledTypes">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.GetAssetTypeByValue(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.ToId(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.ToLegacyValue(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.GetAssetTypeCategory(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.DoesAssetTypeRequireReview(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.ToAssetsClientAssetType(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.IsAssetTypeVersioningEnabled(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.IsAssetTypeOnMarketplace(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetTypeFactory.CanAssetTypeHaveThumbnail(Roblox.Platform.Assets.AssetType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AudioFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Create an <see cref="T:Roblox.Platform.Assets.IAudio"/> asset while skipping the text filtering for the name and description.
+            [Warning!] This text does not get filtered. Use with extreme care.
+            [Warning!] This should only be used to generate assets with trusted/filtered name and description.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.BadgeFactory">
+            <inheritdoc cref="T:Roblox.Platform.Assets.IBadgeFactory"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.BadgeFactory.#ctor(Roblox.Platform.Assets.AssetDomainFactories,Roblox.Platform.Assets.IBadgeTypeFactory)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Assets.BadgeFactory"/>
+            </summary>
+            <param name="domainFactories">The <see cref="T:Roblox.Platform.Assets.AssetDomainFactories"/>.</param>
+            <param name="badgeTypeFactory">An <see cref="T:Roblox.Platform.Assets.IBadgeTypeFactory"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.BadgeFactory.CreateBadge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Assets.BadgeType)">
+            <inheritdoc cref="M:Roblox.Platform.Assets.IBadgeFactory.CreateBadge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Assets.BadgeType)"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.CreationScopeFactory.GetCreatorName(Roblox.Platform.Assets.ICreationScope,Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            Gets the name of a creator.
+            </summary>
+            <param name="creationScope">The <see cref="T:Roblox.Platform.Assets.ICreationScope"/> containing information about the creator.</param>
+            <param name="userFactory"><see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <returns>
+            The name of the creator.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if creationScope is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if creationScope contains an invalid target ID.</exception>
+            <exception cref="T:System.NotImplementedException">Thrown if creationScope contains an unsupported <see cref="T:Roblox.Platform.Assets.CreatorType"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Assets.Factories">
+            <summary>
+            This is an anachronism. It really needs to be modified to include correct injection of the BasicTextFilter from the Moderation platform.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.Factories.FallbackErrorLogger">
+            <summary>
+            This class exists for the unusual situation where the AssetDomainFactories is instantiated by Factories,
+            and needs an ILogger to log exceptions.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetNameAndDescription">
+            <summary>
+            Wrapper class for submitting Asset Name and Description to be changed.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetNameAndDescription.TextAuthor">
+            <summary>
+            The <see cref="T:Roblox.TextFilter.ITextAuthor"/> who is attempting to make the change.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetNameAndDescription.ClientTextAuthor">
+            <summary>
+            The <see cref="T:Roblox.TextFilter.Client.IClientTextAuthor"/> who is attempting to make the change.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetNameAndDescription.Name">
+            <summary>
+            The new Name of the Asset.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.AssetNameAndDescription.Description">
+            <summary>
+            The new Description of the Asset.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetNameAndDescription.#ctor(Roblox.Platform.Membership.IUser,System.String,System.String)">
+            <summary>
+            Helper constructor, allows for passing around IUser instead of ITextAuthor.
+            </summary>
+            <param name="user"></param>
+            <param name="name"></param>
+            <param name="description"></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetNameAndDescription.#ctor(Roblox.TextFilter.ITextAuthor,System.String,System.String)">
+            <summary>
+            Deprecated. Use IClientTextAuthor.
+            </summary>
+            <param name="textAuthor"></param>
+            <param name="name"></param>
+            <param name="description"></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetNameAndDescription.#ctor(Roblox.TextFilter.Client.IClientTextAuthor,System.String,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="textAuthor"></param>
+            <param name="name"></param>
+            <param name="description"></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.CreatorAssetTypeUploadFloodChecker.RetryAfter">
+            <inheritdoc cref="T:Roblox.FloodCheckers.Core.IRetryAfterFloodChecker" />
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetNameAndDescription">
+            <summary>
+            An public interface for the <see cref="T:Roblox.Platform.Assets.AssetNameAndDescription"/> change to an asset
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetNameAndDescription.TextAuthor">
+            <summary>
+            Deprecated. Use ClientTextAuthor.
+            The <see cref="T:Roblox.TextFilter.ITextAuthor"/> who is attempting to make the change.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IAssetNameAndDescription.ClientTextAuthor">
+            <summary>
+            The <see cref="T:Roblox.TextFilter.Client.IClientTextAuthor"/> who is attempting to make the change.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.StreamCreatorInfo">
+            <summary>
+            Wrapper class for submitting data for an Asset Stream.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetFactory">
+            <summary>
+            A public interface for a factory producing <see cref="T:Roblox.Platform.Assets.IAsset"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactory.CheckedGetAsset(System.Nullable{System.Int64})">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAsset"/> of the specified id.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Assets.IAsset"/> of the specified id.  Never returns null.</returns>
+            <exception cref="T:Roblox.Platform.Assets.UnknownAssetException">If no asset exists corresponding to the specified id</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactory.GetAsset(System.Nullable{System.Int64})">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAsset"/> of the specified id.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Assets.IAsset"/> of the specified id.  Null if no asset is found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactory.GetAssets(System.Collections.Generic.IReadOnlyCollection{System.Int64})">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAsset"/>s for the specified ids.
+            </summary>
+            <param name="ids">The ids of the assets we are interested in.</param>
+            <returns>The requested <see name="IAsset"/>s.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="ids"/> is null.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="ids"/> is empty.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactory.GetAssetsByCreationScope(Roblox.Platform.Assets.ICreationScope,System.Nullable{System.Int64},System.Int64,System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAsset"/>s of the specified <see cref="T:Roblox.Platform.Assets.ICreationScope"/> and universe id.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactory.Create(System.Int32,Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Assets.IAsset"/> with the specified info.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactory.Create(System.Int32,Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.IRawContent,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Assets.IAsset"/> with the specified info.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactory.GetAssociatedImageAsset(Roblox.IAsset)">
+            <summary>
+            Get associated image asset of an asset, varies by asset type.
+            </summary>
+            <param name="asset">The original <see cref="T:Roblox.IAsset"/> that the image asset is associated with.</param>
+            <returns>The image <see cref="T:Roblox.IAsset"/> associated with the input asset.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactory.GetDecalOrClothingImageAssetId(System.String)">
+            <summary>
+            Get associated image asset id of an asset, varies by asset type.
+            </summary>
+            <param name="assetHash">Md5 hash of requested asset.</param>
+            <returns>id of dependent image if it exists</returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetTypeFactory">
+            <summary>
+            Public interface for the factory for <see cref="T:Roblox.Platform.Assets.AssetType"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.GetAssetType(System.Int32)">
+            <summary>
+            This method returns an <see cref="T:Roblox.Platform.Assets.AssetType"/> object based off AssetType ID provided 
+            This method returns null if the AssetType is not found
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.GetAssetTypeByValue(System.String)">
+            <summary>
+            This method returns an <see cref="T:Roblox.Platform.Assets.AssetType"/> object based off the legacy AssetType value provided 
+            This method returns null if the AssetType is not found
+            </summary>
+            <param name="assetTypeValue"></param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.ToId(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Return assetType associated ID from DB 
+            </summary>
+            <param name="assetType"></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if assetType could not be found.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.ToLegacyValue(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Return the legacy asset type value given the asset type.  
+            </summary>
+            <param name="assetType"></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if assetType could not be found.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.GetAssetTypeCategory(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Gets <see cref="T:Roblox.Platform.Assets.AssetCategory"/> for a given <see cref="T:Roblox.Platform.Assets.AssetType"/>
+            </summary>
+            <param name="assetType">An <see cref="T:Roblox.Platform.Assets.AssetType"/></param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.AssetCategory"/> for the given <see cref="T:Roblox.Platform.Assets.AssetType"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if the provided <see cref="T:Roblox.Platform.Assets.AssetType"/> could not be found.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.DoesAssetTypeRequireReview(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Returns review requirement for asset type.
+            </summary>
+            <param name="assetType">An <see cref="T:Roblox.Platform.Assets.AssetType"/></param>
+            <returns>requires review status</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.ToAssetsClientAssetType(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Helper to translate <see cref="T:Roblox.Platform.Assets.AssetType"/> to <see cref="T:Roblox.Assets.Client.AssetType"/>.
+            </summary>
+            <param name="platformAssetType">The platform asset type enum.</param>
+            <returns>Assets service client's asset type enum.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.IsArchivalEnabledForType(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            function to determine if a archival is enabled for a type
+            </summary>
+            <param name="assetType"><see cref="T:Roblox.Platform.Assets.AssetType"/></param>
+            <returns>If Archival is enabled for type</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.GetArchivalEnabledTypes">
+            <summary>
+            Returns a enumerable of asset types that are allowed to be archived.
+            </summary>
+            <returns><see cref="T:System.Collections.Generic.IEnumerable`1"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.IsAssetTypeVersioningEnabled(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Returns if an asset type supports versioning
+            </summary>
+            <param name="assetType"><see cref="T:Roblox.Platform.Assets.AssetType"/></param>
+            <returns>True if versioning is supported</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.IsAssetTypeOnMarketplace(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Returns if an asset type is on marketplace
+            </summary>
+            <param name="assetType"><see cref="T:Roblox.Platform.Assets.AssetType"/></param>
+            <returns>True if the asset type is on marketplace</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetTypeFactory.CanAssetTypeHaveThumbnail(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Returns if an asset type can have a thumbnail
+            </summary>
+            <param name="assetType"><see cref="T:Roblox.Platform.Assets.AssetType" /></param>
+            <returns>True if the asset type can have a thumbnail</returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetVersionFactory">
+            <summary>
+            A public interface for the factory producing <see cref="T:Roblox.Platform.Assets.IAssetVersion"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.CheckedGet(System.Nullable{System.Int64})">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> with the specified id, guaranteed to not be null
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+            <exception cref="T:Roblox.Platform.Assets.UnknownAssetVersionException">If there is no AssetVersion matching the id</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.Get(System.Nullable{System.Int64})">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> with the specified id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetByAssetAndVersionNumber(Roblox.Platform.Assets.IAsset,System.Int32)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> for the specified asset and version number.
+            </summary>
+            <param name="asset">The asset.</param>
+            <param name="versionNumber">The version number.</param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetCurrentAssetVersion(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Gets the current <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> for the specified asset.
+            </summary>
+            <param name="asset">The asset.</param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="asset"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetByAssetIdAndVersionNumber(System.Int64,System.Int32)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> for the specified asset id and version number.
+            </summary>
+            <param name="assetId">The asset identifier.</param>
+            <param name="versionNumber">The version number.</param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetAssetVersionsByRawContent(Roblox.Platform.Assets.IRawContent,System.Int32,System.Int32)">
+            <summary>
+            Gets the collection of <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> for the specified rawContent, startRowIndex and and maximumRows.
+            </summary>
+            <param name="rawContent"><see cref="T:Roblox.Platform.Assets.IRawContent"/></param>
+            <param name="startRowIndex">The start row index.</param>
+            <param name="maximumRows">The maximum rows number.</param>
+            <returns><see cref="!:ICollection"/> of <see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetAssetVersionsPaged(Roblox.Platform.Assets.IAsset,System.Int64,System.Int64)">
+            <summary>
+            Gets the enumerable of <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> for the specified  offset and and count.
+            </summary>
+            <param name="asset"><see cref="T:Roblox.Platform.Assets.IAsset"/></param>
+            <param name="offset">The start row index.</param>
+            <param name="count">The maximum rows number.</param>
+            <returns><see cref="!:IEnumerable"/> of <see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetAssetPublishedVersionsPaged(Roblox.Platform.Assets.IAsset,System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            Gets the enumerable of published <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> for the specified  offset and and count.
+            </summary>
+            <param name="asset"><see cref="T:Roblox.Platform.Assets.IAsset"/></param>
+            <param name="startRowIndex">The start row index.</param>
+            <param name="count">The maximum rows number.</param>
+            <param name="catchClientExceptions">setting this to true catches and logs all client exceptions</param>
+            <returns><see cref="!:IEnumerable"/> of <see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="asset"/></exception>
+            <exception cref="T:System.ArgumentException"><paramref name="startRowIndex"/></exception>
+            <exception cref="T:System.ArgumentException"><paramref name="count"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetAssetSavedVersionsPaged(Roblox.Platform.Assets.IAsset,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.String})">
+            <summary>
+            Get saved versions off an asset, with exclusive start paging.
+            </summary>
+            <param name="asset">The asset.</param>
+            <param name="exclusiveStartKeyInfo">Container for pagination parameters.</param>
+            <returns>A page of asset versions.</returns>
+            <exception cref="T:System.ArgumentNullException">All parameters required.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="exclusiveStartKeyInfo"/> contains invalid values.</exception>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.Assets.IAssetVersionFactory.GetAssetSavedVersionsPaged(Roblox.Platform.Assets.IAsset,System.Nullable{System.Int32},System.Int32,Roblox.DataV2.Core.SortOrder)" -->
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetAssetPublishedVersionsPaged(Roblox.Platform.Assets.IAsset,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.String})">
+            <summary>
+            Get published versions off an asset, with exclusive start paging.
+            </summary>
+            <param name="asset">The asset.</param>
+            <param name="exclusiveStartKeyInfo">Container for pagination parameters.</param>
+            <returns>A page of asset versions.</returns>
+            <exception cref="T:System.ArgumentNullException">All parameters required.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="exclusiveStartKeyInfo"/> contains invalid values.</exception>
+            <exception cref="T:System.ApplicationException">Cannot translate <see cref="T:Roblox.Platform.Assets.AssetType"/> to <see cref="T:Roblox.Assets.Client.AssetType"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetCurrentAssetPublishedVersion(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Gets the current <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> of an asset. Not to be used for <see cref="T:Roblox.Platform.Assets.IPlace"/>.
+            </summary>
+            <param name="asset"><see cref="T:Roblox.Platform.Assets.IAsset"/></param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="asset"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetCurrentPlacePublishedVersion(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Gets the current published <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> of a place
+            </summary>
+            <param name="place"><see cref="T:Roblox.Platform.Assets.IAsset"/></param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetCurrentPlaceSavedVersion(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Gets the current saved <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> of a place
+            </summary>
+            <param name="place"><see cref="T:Roblox.Platform.Assets.IAsset"/></param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetCurrentPlacePublishedVersion(Roblox.Platform.Assets.IAsset,System.Boolean)">
+            <summary>
+            Get Current Place Published <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> of a place
+            </summary>
+            <param name="place"><see cref="T:Roblox.Platform.Assets.IAsset"/></param>
+            <param name="isJvRequest">specified if the request for JV users</param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.Create(Roblox.Platform.Assets.IAsset,Roblox.Platform.Assets.CreatorType,System.Int64,Roblox.Platform.Assets.IAssetVersion,System.IO.Stream,System.Net.DecompressionMethods,System.Nullable{System.Int32},System.String,System.Nullable{System.Int64},System.Nullable{Roblox.Platform.Assets.CreationContextType},System.String,System.Boolean)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> with the provided info
+            </summary>
+            <param name="asset">The asset.</param>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target identifier.</param>
+            <param name="parentAssetVersion">The parent asset version.</param>
+            <param name="content">The content.</param>
+            <param name="decompressionMethod">The decompression method.</param>
+            <param name="expectedContentSize">Expected size of the content.</param>
+            <param name="expectedContentHash">The expected content hash.</param>
+            <param name="creatingUniverseId">The creating universe identifier.</param>
+            <param name="creationContext">The creation context.</param>
+            <param name="mimeType">Type of the MIME.</param>
+            <param name = "isSavedVersionOnly"> determines if the created version is saved only</param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetAssetSavedVersionsWithPublishedFlagPaged(Roblox.Platform.Assets.IAsset,System.Int32,System.Int32)">
+            <summary>
+            Returns saved Asset versions with an is published flag
+            </summary>
+            <param name="asset">The asset.</param>
+            <param name="offset">The start row index.</param>
+            <param name="count">The maximum rows number.</param>
+            <returns><see cref="T:Roblox.Platform.Assets.PlatformAssetPublishedVersionsResponse"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetAssetSavedVersionsWithPublishedFlagPaged(Roblox.Platform.Assets.IAsset,System.Nullable{System.Int32},System.Int32,Roblox.DataV2.Core.SortOrder)">
+            <summary>
+            Returns saved Asset versions with an is published flag
+            </summary>
+            <param name="asset">The asset.</param>
+            <param name="versionNumberExclusiveStartKey">start version number</param>
+            <param name="count">number of requested elements</param>
+            <param name="sortOrder">sort order</param>
+            <returns><see cref="T:Roblox.Platform.Assets.PlatformAssetPublishedVersionsResponse"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="asset"/> </exception>
+            <exception cref="T:System.ArgumentException"><paramref name="count"/> is less than 0</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetTotalNumberOfAssetVersionsByAssetID(System.Int64)">
+            <summary>
+            returns the total number of asset versions
+            </summary>
+            <param name="assetId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetTotalNumberOfAssetVersionsByAssetHashID(System.Int64)">
+            <summary>
+            returns the total number of asset versions based on a specific hash
+            </summary>
+            <param name="assetHashId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.GetCurrentAssetSavedVersion(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Returns the current saved version of an asset.
+            </summary>
+            <param name="asset"></param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory.Create(Roblox.Platform.Assets.IAsset,Roblox.Platform.Assets.CreatorType,System.Int64,Roblox.Platform.Assets.IRawContent,Roblox.Platform.Assets.IAssetVersion,System.Nullable{System.Int64},System.Nullable{Roblox.Platform.Assets.CreationContextType},System.Boolean,System.String)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Assets.IAssetVersion" /> with the provided info
+            </summary>
+            <param name="asset">The asset.</param>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target identifier.</param>
+            <param name="rawContent">Content of the raw.</param>
+            <param name="parentAssetVersion">The parent asset version.</param>
+            <param name="creatingUniverseId">The creating universe identifier.</param>
+            <param name="creationContext">The creation context.</param>
+            <param name="isSavedVersionOnly"> determines if the created version is saved only</param>
+            <param name="localeCodeOverride">The locale code for moderation review task</param>
+            <returns><see cref="T:Roblox.Platform.Assets.IAssetVersion"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetVersionFactory_Internal">
+            <summary>
+            Internal interface for a factory producing <see cref="T:Roblox.Platform.Assets.IAssetVersion"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetVersionFactory_Internal.GetAssetVersion(Roblox.AssetVersion)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Assets.IAssetVersion"/> with the provided entity object
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IBadgeAwarder.UserOwnsBadge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Assets.BadgeType)">
+            <summary>
+            Check if the user owns a badge
+            </summary>
+            <param name="iUser">user identifier</param>
+            <param name="assetBadgeType">type of the badge</param>
+            <returns>whether the user owns the badge</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">if user is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IBadgeAwarder.AwardBadge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Assets.BadgeType)">
+            <summary>
+            Award a badge to the user
+            </summary>
+            <param name="iUser">user identifier</param>
+            <param name="assetBadgeType">type of the badge</param>
+            /// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">if user is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IBadgeFactory.CreateBadge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Assets.BadgeType)">
+            <summary>
+            Awards a platform badge for user
+            </summary>
+            <param name="iUser">User identifier</param>
+            <param name="assetBadgeType">platform badge type</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">if iUser is null</exception>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IAssetFactoryBase`1">
+            <summary>
+            A base class for the factory producing types of <see cref="T:Roblox.Platform.Assets.IAsset"/>s.
+            </summary>
+            <typeparam name="T">The type of <see cref="T:Roblox.Platform.Assets.IAsset"/> the factory produces</typeparam>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactoryBase`1.Get(System.Int64)">
+            <summary>
+            Gets the <typeparamref name="T"/> of the specified id.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactoryBase`1.Get(System.Collections.Generic.IReadOnlyCollection{System.Int64},System.Boolean)">
+            <summary>
+            Gets the <typeparamref name="T"/> for the specified ids.
+            </summary>
+            <param name="ids">The ids of the assets we are interested in.</param>
+            <param name="filterNulls">Whether or not to filter nulls out of the response.</param>
+            <returns>The requested <typeparamref name="T"/>s.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="ids"/> is null.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="ids"/> is empty.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactoryBase`1.CheckedGet(System.Int64)">
+            <summary>
+            Gets the <typeparamref name="T"/> of the specified id.
+            </summary>
+            <returns>The <typeparamref name="T"/> of the specified id.  Never returns null.</returns>
+            <exception cref="T:Roblox.Platform.Assets.UnknownAssetException">If no asset exists corresponding to the specified id</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactoryBase`1.Create(Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Creates an <typeparamref name="T"/> with the specified info.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactoryBase`1.Create(Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.IRawContent,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Creates an <typeparamref name="T"/> with the specified info.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAssetFactoryBase`1.CreateWithDependency(Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.IRawContent,Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Assets.IImage,Roblox.Assets.Client.AssetType)">
+            <summary>
+            Creates an <typeparamref name="T"/> with the specified info, and creates a dependency in the AssetDependencies service.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IBadgeTypeFactory.GetBadgeTypeByName(System.String)">
+            <summary>
+            Get badge type id by name
+            </summary>
+            <param name="name"></param>
+            <returns>Badge type id</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">if name is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">if badge type cannot be found</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IBadgeTypeFactory.GetBadgeTypeIdByBadgeType(Roblox.Platform.Assets.BadgeType)">
+            <summary>
+            Get badge type id by platform AssetBadgeType
+            </summary>
+            <param name="assetBadgeType">Platform badge type</param>
+            <returns>Badge type id of SCL badge type</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">if platform badge type is cannot be found in the enum</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IBadgeTypeFactory.GetBadgeTypeByBadgeTypeId(System.Int32)">
+            <summary>
+            Get platform badge type by SCL badge type id
+            </summary>
+            <param name="badgeTypeId"></param>
+            <returns>Asset badge type</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">if badge type id is invalid</exception>
+        </member>
+        <member name="T:Roblox.Platform.Assets.ICreationScopeFactory">
+            <summary>
+            A public interface for the factory producing <see cref="T:Roblox.Platform.Assets.ICreationScope"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.ICreationScopeFactory.BuildCreationScope(Roblox.Platform.Assets.CreationContextType,Roblox.Platform.Assets.CreatorType,System.Int32,System.Int32)">
+            <summary>
+            Builds a <see cref="T:Roblox.Platform.Assets.ICreationScope"/> with the specified information
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IGamePassFactory.CreateGamePass(Roblox.Platform.Assets.AssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.IImage,Roblox.Platform.Assets.IPlace,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Creates a Game Pass for a given place
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IGamePassFactory.GetTotalNumberOfGamePassesByPlaceId(System.Int64)">
+            <summary>
+            Gets the total number of Game Passes for a given Place.
+            </summary>
+            <param name="placeId">The Id of a Place to get total for.</param>
+            <returns>The total number of Game Passes for the given Place Id</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IGamePassFactory.GetGamePassesByPlaceId_Paged(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Gets all the Game Passes attached to a given Place.
+            </summary>
+            <param name="placeId">The Id of a Place to get Game Passes for.</param>
+            <param name="startRowIndex">The starting index to fetch. One indexed.</param>
+            <param name="maximumRows">The maximum number of items to fetch. One indexed.</param>
+            <returns>A collection of <see cref="T:Roblox.Platform.Assets.IGamePass"/>es.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if placeId is the default value.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown if startRowIndex is less than 1.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown if maximumRows is less than 1.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.ImageFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Assets.IImageFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier,System.String)"/>
+        </member>
+        <member name="T:Roblox.Platform.Assets.LocalizationTableManifestFactory">
+            <inheritdoc cref="T:Roblox.Platform.Assets.ILocalizationTableManifestFactory"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.LocalizationTableManifestFactory.#ctor(Roblox.Platform.Assets.AssetDomainFactories)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Assets.LocalizationTableManifestFactory"/>
+            </summary>
+            <param name="domainFactories">The <see cref="T:Roblox.Platform.Assets.AssetDomainFactories"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.LocalizationTableManifestFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Assets.ILocalizationTableManifestFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)"/>>
+        </member>
+        <member name="M:Roblox.Platform.Assets.LocalizationTableTranslationFactory.#ctor(Roblox.Platform.Assets.AssetDomainFactories)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Assets.LocalizationTableTranslationFactory"/>
+            </summary>
+            <param name="domainFactories">The <see cref="T:Roblox.Platform.Assets.AssetDomainFactories"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.LocalizationTableTranslationFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <inheritdoc cref="!:ILocalizationTableTranslation.CreateWithTrustedAssetText"/>>
+        </member>
+        <member name="M:Roblox.Platform.Assets.MeshFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Create an <see cref="T:Roblox.Platform.Assets.IMesh"/> asset while skipping the text filtering for the name and description.
+            [Warning!] This text does not get filtered. Use with extreme care.
+            [Warning!] This should only be used to generate assets with trusted/filtered name and description.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.YouTubeVideoFactory">
+            <summary>
+            Typed asset factory for YouTube videos. Provides the <see cref="M:Roblox.Platform.Assets.YouTubeVideoFactory.CreateYouTubeVideo(Roblox.Platform.Assets.AssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,System.String,Roblox.Platform.MembershipCore.IUserIdentifier)"/> method for creating YouTube videos
+            from YouTube video id.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.YouTubeVideoFactory.CreateYouTubeVideo(Roblox.Platform.Assets.AssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,System.String,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Assets.IYouTubeVideoFactory.CreateYouTubeVideo(Roblox.Platform.Assets.AssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,System.String,Roblox.Platform.MembershipCore.IUserIdentifier)"/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Asset.UpdateGenres(Roblox.AssetGenre,System.Boolean)">
+            <summary>
+            Public method for saving non-public-facing properties.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Asset.UpdateText(Roblox.Platform.Assets.INameAndDescription,System.Collections.Generic.IEnumerable{Roblox.Platform.Assets.AssetChangeType},Roblox.Platform.MembershipCore.IUserIdentifier,System.Boolean)">
+            <summary>
+            All changes to asset text should pass through here to ensure consistent data auditing.  
+            Any text moderation should be performed before passing text into this function.
+            </summary>
+            <param name="textInfo">The container object holding the name and description to be updated to.</param>
+            <param name="changeTypesToAudit">
+              An <see cref="T:System.Collections.Generic.IEnumerable`1"/> that should at least contain AssetChangeType.TextSaved.
+              There may be business cases where certain text changes should have its own categorized auditing, which adds to the enumerable.
+            </param>
+            <param name="actorUserIdentity">
+                The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> of the agent performing the update, which may be different from the text author. 
+                For migrators and sanitization processes, pass null for the actorUserIdentity.
+            </param>
+            <param name="isDelayedRelease">Whether this update is for a delayed release</param>
+            <returns>Returns whether any of the text is changed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Asset.CheckHasUnauditedText">
+            <summary>
+            If there are text updates (or creations) when auditing is off, it would not be audited at the timie the update happens.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.AssetFactory">
+            <summary>
+            This is a wrapper around a singleton
+            Use AssetDomainFactories.AssetFactory for new code
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Assets.AssetFactory._Singleton">
+            <summary>
+            Always access the singleton through the internal Singleton property or the public GetSingleton() method.
+            Never directly access the private _Singleton field because it may not be initialized yet.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.#ctor(Roblox.Platform.Assets.AssetDomainFactories)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="domainFactories">Asset domain factories.</param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.#ctor(Roblox.Platform.Assets.AssetDomainFactories,Roblox.Platform.Assets.IAssetVersionsConfigurationProvider)">
+            <summary>
+            Constructor with injected configuration provider for unit testing.
+            </summary>
+            <param name="domainFactories">Asset domain factories.</param>
+            <param name="assetVersionsConfigurationProvider">Configuration for publishing and servind asset versions.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="domainFactories"/>, <paramref name="assetVersionsConfigurationProvider"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetCurrentPlacePublishedVersion(Roblox.Platform.Assets.IAsset)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetCurrentPlacePublishedVersion(Roblox.Platform.Assets.IAsset,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.RoundUpJvDateTime(System.DateTime)">
+            <summary>
+            This method rounds up expectedLatestTime to the nearest time span specified by the setting JvPlaceLaunchRoundUpToNearestTimeSpan
+            </summary>
+            <param name="expectedLatestTime">date time to be rounded up</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetCurrentPlaceSavedVersion(Roblox.Platform.Assets.IAsset)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetCurrentAssetPublishedVersion(Roblox.Platform.Assets.IAsset)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetCurrentAssetVersion(Roblox.Platform.Assets.IAsset)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetAssetVersionsPaged(Roblox.Platform.Assets.IAsset,System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetAssetPublishedVersionsPaged(Roblox.Platform.Assets.IAsset,System.Int64,System.Int64,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetAssetSavedVersionsPaged(Roblox.Platform.Assets.IAsset,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetAssetPublishedVersionsPaged(Roblox.Platform.Assets.IAsset,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetTotalNumberOfAssetVersionsByAssetID(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetTotalNumberOfAssetVersionsByAssetHashID(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.AssetVersionFactory.GetAssetSavedVersionsWithPublishedFlagPaged(Roblox.Platform.Assets.IAsset,System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.IsPublicAssetType(Roblox.Platform.Assets.AssetType)">
+            <summary>
+            This checks if assetType should be visible to the public 
+            </summary>
+            <param name="assetType">The asset type</param>
+            <returns>Whether or not the <see cref="T:Roblox.Platform.Assets.AssetType"/> provided is open to public</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.GetAssetType(System.Int32,Roblox.Platform.Assets.IAssetTypeFactory)">
+            <summary>
+            This method returns an <see cref="T:Roblox.Platform.Assets.AssetType"/> object based off AssetType ID provided 
+            This method returns null if the AssetType is not found
+            </summary>
+            <param name="id">The asset type Id</param>
+            <param name="assetTypeFactory">A <see cref="T:Roblox.Platform.Assets.IAssetTypeFactory"/>, if none is passed in, the default singleton is used</param>
+            <returns>
+            This method returns an <see cref="T:Roblox.Platform.Assets.AssetType"/> or null
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.ToId(Roblox.Platform.Assets.AssetType,Roblox.Platform.Assets.IAssetTypeFactory)">
+            <summary>
+            Return assetType associated ID from DB 
+            </summary>
+            <param name="assetType">An <see cref="T:Roblox.Platform.Assets.AssetType"/></param>
+            <param name="assetTypeFactory">A <see cref="T:Roblox.Platform.Assets.IAssetTypeFactory"/>, if none is passed in, the default singleton is used</param>
+            <returns>An AssetType Id</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if assetType could not be found.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.ToAssetType(System.String,Roblox.Platform.Assets.IAssetTypeFactory)">
+            <summary>
+            Return the asset type value given the legacy asset type value
+            </summary>
+            <param name="assetType">A string representing the legacy asset type value</param>
+            <param name="assetTypeFactory">A <see cref="T:Roblox.Platform.Assets.IAssetTypeFactory"/>, if none is passed in, the default singleton is used</param>
+            <returns>The asset type</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.ToLegacyValue(Roblox.Platform.Assets.AssetType,Roblox.Platform.Assets.IAssetTypeFactory)">
+            <summary>
+            Return the legacy asset type value given the asset type
+            </summary>
+            <param name="assetType">An <see cref="T:Roblox.Platform.Assets.AssetType"/></param>
+            <param name="assetTypeFactory">A <see cref="T:Roblox.Platform.Assets.IAssetTypeFactory"/>, if none is passed in, the default singleton is used</param>
+            <returns>The legacy asset type value as string</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.ToAssetCategory(Roblox.Platform.Assets.AssetType,Roblox.Platform.Assets.IAssetTypeFactory)">
+            <summary>
+            This method returns an <see cref="T:Roblox.Platform.Assets.AssetCategory"/> based off AssetType provided 
+            </summary>
+            <param name="assetType">An <see cref="T:Roblox.Platform.Assets.AssetType"/></param>
+            <param name="assetTypeFactory">A <see cref="T:Roblox.Platform.Assets.IAssetTypeFactory"/>, if none is passed in, the default singleton is used</param>
+            <returns>
+            The <see cref="T:Roblox.Platform.Assets.AssetCategory"/> associated with provided <see cref="T:Roblox.Platform.Assets.AssetType"/>
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if assetType could not be found.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.ToAssetGenreEnumValue(System.Byte)">
+            <summary>
+            This method return an <see cref="T:Roblox.Platform.Assets.AssetGenre"/> based off assetGenreId provided
+            </summary>
+            <param name="assetGenreId">Asset genre Id</param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.AssetGenre"/> associated with the asset genre Id provided</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.GetDisplayName(Roblox.Platform.Assets.AssetGenre)">
+            <summary>
+            This returns the display name for a given <see cref="T:Roblox.Platform.Assets.AssetGenre"/>
+            </summary>
+            <param name="assetGenre">An <see cref="T:Roblox.Platform.Assets.AssetGenre"/></param>
+            <returns>The display name text for the provided <see cref="T:Roblox.Platform.Assets.AssetGenre"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.GetId(Roblox.Platform.Assets.AssetGenre)">
+            <summary>
+            This returns the asset genre Id for a given <see cref="T:Roblox.Platform.Assets.AssetGenre"/>
+            </summary>
+            <param name="assetGenre">An <see cref="T:Roblox.Platform.Assets.AssetGenre"/></param>
+            <returns>The id of the <see cref="T:Roblox.Platform.Assets.AssetGenre"/> provided</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.GetAssetType(Roblox.Platform.Assets.IAsset,Roblox.Platform.Assets.IAssetTypeFactory)">
+            <summary>
+            This method returns an <see cref="T:Roblox.Platform.Assets.AssetType"/> object based off Asset provided 
+            This method returns null if the AssetType is not found
+            </summary>
+            <param name="asset">An <see cref="T:Roblox.Platform.Assets.IAsset"/></param>
+            <param name="assetTypeFactory">A <see cref="T:Roblox.Platform.Assets.IAssetTypeFactory"/>, if none is passed in, the default singleton is used</param>
+            <returns>The <see cref="T:Roblox.Platform.Assets.AssetType"/> for the provided <see cref="T:Roblox.Platform.Assets.IAsset"/> or null</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.GetAssetHashId(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Returns AssetHashID
+            </summary>
+            <param name="asset">takes an <see cref="T:Roblox.Platform.Assets.IAsset"/></param>
+            <returns>AssetHashID</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.GetCreatorName(Roblox.Platform.Assets.ICreationScope,Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            Gets the name of a creator.
+            </summary>
+            <param name="creationScope">The <see cref="T:Roblox.Platform.Assets.ICreationScope"/> containing information about the creator.</param>
+            <param name="userFactory"><see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <returns>
+            The name of the creator.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if creationScope is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if creationScope contains an invalid target ID.</exception>
+            <exception cref="T:System.NotImplementedException">Thrown if creationScope contains an unsupported <see cref="T:Roblox.Platform.Assets.CreatorType"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Extensions.GetConstituentAssetIds(Roblox.Asset)">
+            <summary>
+            If an asset is a package, then return a list containing the assetId plus the assetIds of all package items within it.
+            If it's a normal assetType, just return a list containing the assetId.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.UpdateNameAndDescription(Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Set the Name and Description for the current Asset.
+            Both will be filtered according to the rules for the given ITextFilter + IUser + Language defined in the <see cref="T:Roblox.Platform.Assets.IAssetNameAndDescription"/>.
+            </summary>
+            <param name="textInfo">The <see cref="T:Roblox.Platform.Assets.IAssetNameAndDescription"/> to use for updating the Asset.</param>
+            <param name="actorUserIdentity">
+                The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> of the agent performing the update, which may be different from the text author. 
+                For migrators and sanitization processes, pass null for the actorUserIdentity.
+            </param>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+            <exception cref="T:Roblox.Platform.Core.LongDescriptionException">In the case where the description is too long.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.UpdateNameAndDescriptionTrusted(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Skipping text filtering and directly set the Name and Description for the current Asset.
+            [Warning!] This text does not get filtered. Use with extreme care.
+            [Warning!] This should only be used through the internal (CS, Admin, or Moderation) websites and performed by Roblox staff!
+            </summary>
+            <param name="textInfo">The <see cref="T:Roblox.Platform.Assets.ITrustedAssetTextInfo" /> to use for updating the Asset.</param>
+            <param name="actorUserIdentity">
+                The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier" /> of the agent performing the update, which may be different from the text author.
+                For migrators and sanitization processes, pass null for the actorUserIdentity.
+            </param>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.DelayedReleaseUpdateNameAndDescription(Roblox.Platform.Assets.IAssetNameAndDescription,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Updates the Name for a <see cref="T:Roblox.DelayedReleaseAsset"/>.
+            [Warning!] This text does not get filtered. Use with extreme care.
+            [Warning!] This should only be used through the Admin website!
+            </summary>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.Sanitize(Roblox.TextFilter.ITextAuthor)">
+            <summary>
+            Passes the existing name and description through the AssetTextFilter using the given textAuthor, and saves any changes.
+            </summary>
+            <returns>
+            [True] If either the name and/or description was altered by the AssetTextFilter. [False] If both the name and description remain unchanged through the AssetTextFilter.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.UpdateGenres(Roblox.AssetGenre,System.Boolean)">
+            <summary>
+            Updates the Genres of the Asset
+            </summary>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">If the genre is null.</exception>
+            <exception cref="T:System.ApplicationException">If the asset's id is less than 1 (asset not yet saved to persistent storage)</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.UpdateGenres(System.UInt64,System.Boolean)">
+            <summary>
+            Updates the Genres of the Asset
+            </summary>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+            <exception cref="T:System.ApplicationException">If the asset's id is less than 1 (asset not yet saved to persistent storage)</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.UpdateCategories(System.UInt64,System.Boolean)">
+            <summary>
+            Updates the categories of the Asset via a bitfield
+            </summary>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+            <exception cref="T:System.ApplicationException">If the asset's id is less than 1 (asset not yet saved to persistent storage)</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.UpdateCreatorAgentId(Roblox.Agents.IAgent)">
+            <summary>
+            Updates the agent id of the Asset's creator
+            </summary>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+            <exception cref="T:System.ApplicationException">If the asset's id is less than 1 (asset not yet saved to persistent storage)</exception>
+            <exception cref="T:System.ArgumentNullException">If the newCreatorAgent is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.UpdateUpdated">
+            <summary>
+            Updates the timestamp when the asset was updated
+            </summary>
+            <exception cref="T:System.InvalidOperationException">If there is trouble loading the data entity to be updated.</exception>
+            <exception cref="T:System.ApplicationException">If the asset's id is less than 1 (asset not yet saved to persistent storage)</exception>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.Archive(Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Archives the asset
+            </summary>
+            <param name="actorUserIdentity">
+                The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier" /> of the agent performing the update, which may be different from the text author.
+                For migrators and sanitization processes, pass null for the actorUserIdentity.
+            </param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IAsset.Restore(Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Restores, or unarchives, the asset
+            </summary>
+            <param name="actorUserIdentity">
+                The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier" /> of the agent performing the update, which may be different from the text author.
+                For migrators and sanitization processes, pass null for the actorUserIdentity.
+            </param>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IBadgeAsset">
+            <summary>
+            A badge asset
+            </summary>
+            <remarks>
+            Game badges used to be created as assets, they're not anymore.
+            </remarks>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IGamePass.GetPlaceId">
+            <summary>
+            Gets the Id for the Place that this Game Pass is attached to.
+            </summary>
+            <returns>The Place Id</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IGamePass.GetImage">
+            <summary>
+            Gets the Image this Game Pass.
+            </summary>
+            <returns>An instance of <see cref="T:Roblox.Platform.Assets.IImage"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.ILocalizationTableManifestFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Returns an <see cref="T:Roblox.Platform.Assets.ILocalizationTableManifest"/> asset while skipping the text filtering for the name and description.
+            [Warning!] This text does not get filtered. Use with extreme care.
+            </summary>
+            <param name="trustedAssetTextInfo">The <see cref="T:Roblox.Platform.Assets.ITrustedAssetTextInfo"/>.</param>
+            <param name="assetCreatorInfo">The <see cref="T:Roblox.Platform.Assets.AssetCreatorInfo"/>.</param>
+            <param name="stream">The <see cref="T:Roblox.Platform.Assets.StreamCreatorInfo"/>.</param>
+            <param name="actorUserIdentity">The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/>.</param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.ILocalizationTableManifest"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.ILocalizationTableTranslationFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.StreamCreatorInfo,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Returns an <see cref="T:Roblox.Platform.Assets.ILocalizationTableTranslation"/> asset while skipping the text filtering for the name and description.
+            [Warning!] This text does not get filtered. Use with extreme care.
+            </summary>
+            <param name="trustedAssetTextInfo">The <see cref="T:Roblox.Platform.Assets.ITrustedAssetTextInfo"/>.</param>
+            <param name="assetCreatorInfo">The <see cref="T:Roblox.Platform.Assets.AssetCreatorInfo"/>.</param>
+            <param name="stream">The <see cref="T:Roblox.Platform.Assets.StreamCreatorInfo"/>.</param>
+            <param name="actorUserIdentity">The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/>.</param>
+            <returns>An <see cref="T:Roblox.Platform.Assets.ILocalizationTableTranslation"/>.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IMeshPart">
+            <summary>
+            Represents the asset of MeshPart type which is container for Meshes uploaded by users
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.INameAndDescription">
+            <summary>
+            A simple interface representing a data structure that has a name and a description
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IPlaceFactory.OverridePlaceWithBaseTemplate(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Create a new published place version with base plate version.
+            </summary>
+            <param name="place">existing place</param>
+        </member>
+        <member name="M:Roblox.Platform.Assets.PlaceFactory.OverridePlaceWithBaseTemplate(Roblox.Platform.Assets.IAsset)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Assets.PlaceFactory.CreateWithTrustedAssetText(Roblox.Platform.Assets.ITrustedAssetTextInfo,Roblox.Platform.Assets.AssetCreatorInfo,Roblox.Platform.Assets.IRawContent,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Create an <see cref="T:Roblox.Platform.Assets.IPlace"/> asset while skipping the text filtering for the name and description.
+            [Warning!] This text does not get filtered. Use with extreme care.
+            [Warning!] This should only be used to generate assets with trusted/filtered name and description.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IRawContent">
+            <summary>
+            RawContent for Assets that are stored in the sytem.
+            These are a thin layer over the underlying AssetHash object in the DB, this is effectively the Platform version.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.Id">
+            <summary>
+            ID of the AssetHash
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.Md5Hash">
+            <summary>
+            Hash value of the given object.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.IsReviewed">
+            <summary>
+            Has this AssetHash been reviewed by the moderation system?
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.IsApproved">
+            <summary>
+            Has this AssetHash been approved?
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.CreatorType">
+            <summary>
+            The <see cref="P:Roblox.Platform.Assets.IRawContent.CreatorType"/> of the first User/Group to upload this object.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.CreatorTargetId">
+            <summary>
+            The Id of the first User/Group to upload this object.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.Created">
+            <summary>
+            When was the object uploaded.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.Updated">
+            <summary>
+            When was the object last updated?
+            Likely for review.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.IRawContent.AssetType">
+            <summary>
+            The type of Asset does represented by this hash.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IRawContent.SetApproval(System.Boolean,System.Boolean)">
+            <summary>
+            Sets the IsApproved and IsReviewed status of this object.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory.GetFreeThumbnailImageUploadFloodChecker(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets a floodchecker meant for thumbnail image uploads by user.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns><see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory.GetCreatorAssetTypeUploadFloodChecker(Roblox.Platform.Assets.CreatorType,System.Int64,Roblox.Platform.Assets.AssetType)">
+            <summary>
+            Gets a floodchecker meant for asset uploads by creator and asset type.
+            </summary>
+            <param name="creatorType">The <see cref="T:Roblox.Platform.Assets.CreatorType"/>.</param>
+            <param name="creatorTargetId">The creator target Id.</param>
+            <param name="assetType">The <see cref="T:Roblox.Platform.Assets.AssetType"/>.</param>
+            <returns><see cref="T:Roblox.FloodCheckers.Core.IRetryAfterFloodChecker"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Assets.IYouTubeVideoFactory">
+            <summary>
+            A typed asset factory interface for YouTube videos.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.IYouTubeVideoFactory.CreateYouTubeVideo(Roblox.Platform.Assets.AssetNameAndDescription,Roblox.Platform.Assets.AssetCreatorInfo,System.String,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Creates a YouTube video asset.
+            </summary>
+            <param name="assetNameAndDescription">Asset name and description.</param>
+            <param name="assetCreatorInfo">Asset creator.</param>
+            <param name="youTubeVideoId">Video id on YouTube.</param>
+            <param name="actorUserIdentity">User performing the operation.</param>
+            <returns>YouTube video asset instance.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="assetNameAndDescription"/>
+            - <paramref name="assetCreatorInfo"/>
+            - <paramref name="youTubeVideoId"/>
+            - <paramref name="actorUserIdentity"/>
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.LongDescriptionException">
+            Thrown if the video description is too long.
+            </exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">
+            Thrown if the video description was fully moderated.
+            </exception>
+            <exception cref="T:Roblox.Platform.Assets.VideoDisapprovedException">
+            Thrown if this video was previously uploaded and was moderated.
+            </exception>
+        </member>
+        <member name="P:Roblox.Platform.Assets.PlatformAssetPublishedVersionsResponse.AssetVersion">
+            <summary>
+            AssetVersion of an Asset
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.PlatformAssetPublishedVersionsResponse.IsPublished">
+            <summary>
+            Published status of the Asset Version
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.Properties.ISettings.UseAssetsServiceForAssetOptionFactoryGetRolloutPercentage">
+            <summary>
+            Rollout percentage of using Assets service for <see cref="M:Roblox.Platform.Assets.AssetOptionFactory.Get(System.Int64)"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.Properties.ISettings.UseAssetsServiceForAssetOptionFactoryGetOrCreateRolloutPercentage">
+            <summary>
+            Rollout percentage of using Assets service for <see cref="M:Roblox.Platform.Assets.AssetOptionFactory.GetOrCreate(System.Int64)"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.Properties.ISettings.IsJvDelayedPlaceLaunchEnabled">
+            <summary>
+            Is delayed place launch for JV requests enabled
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.Properties.ISettings.JvPlaceLaunchDelayTimeSpan">
+            <summary>
+            The time span that JV games need to be delayed for. 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.Properties.ISettings.JvPlaceLaunchRoundUpToNearestTimeSpan">
+            <summary>
+            JV Delay time span will be rounded up to the closest time span set by this setting.
+            If this is set to 1 hour. The JvPlaceLaunchDelayTimeSpan will be rounded to the nearest hour. 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Assets.Properties.ISettings.UseAssetsServiceForAssetOptionFactorySaveRolloutPercentage">
+            <summary>
+            Rollout percentage of using Assets service for <see cref="M:Roblox.Platform.Assets.AssetOptionFactory.Save(Roblox.Platform.Assets.IAssetOption)"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Assets.PublicAssetTypes.GetPublicAssetTypes">
+            <summary>
+            This returns an IEnumerable of public asset types
+            Public asset types are the asset types that are visible to our users 
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.Assets.PublicAssetTypes.GetLocalizedGroupName(System.Int32,System.Boolean,Roblox.TranslationResources.Common.IAssetTypesResources)" -->
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.Assets.PublicAssetTypes.GetLocalizedNameMinusGroupName(System.Int32,System.Boolean,Roblox.TranslationResources.Common.IAssetTypesResources)" -->
+        <member name="M:Roblox.Platform.Assets.PublicAssetTypes.GetNameMinusGroupName(System.Int32,System.Boolean)">
+            <summary>
+            Gets the asset type's publicly visible name minus the group
+            e.g. for Face Accessory it is Face
+            </summary>
+            <param name="assetTypeId">The asset type id</param>
+            <param name="plural">Whether to return the name in plural form</param>
+            <returns>The shortened name for the <see cref="T:Roblox.Platform.Assets.AssetType"/></returns>
+        </member>
+    </members>
+</doc>

@@ -70,7 +70,7 @@ public class UserFactory : IUserFactory
 
 	public IUser CreateNewUser(string username, string password)
 	{
-		UserData serviceUser = _UsersClient.CreateUser(username);
+		UserData serviceUser = _UsersClient.CreateUser(username, null, null, null);
 		AccountPasswordHash.CreateNew(serviceUser.AccountId, password);
 		return Translate(serviceUser, shouldReturnForgottenUser: true);
 	}
@@ -314,6 +314,14 @@ public class UserFactory : IUserFactory
 			return null;
 		}
 		return new User(userData);
+	}
+
+	public IUser GetCurrentUser()
+	{
+		// Implementation would depend on how the current user is determined in this context
+		// This is a placeholder implementation that returns null
+		// TODO: Implement proper logic to get the current user
+		return null;
 	}
 
 	private void IncrementCounter(string instanceName, string counterName)

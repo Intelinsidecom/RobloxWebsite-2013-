@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Email</AssemblyName>
@@ -25,6 +25,10 @@
       <HintPath>..\..\..\..\Website\bin\DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>

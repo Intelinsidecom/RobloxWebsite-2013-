@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Random</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Random.RandomFactory">
+            <summary>
+            Represents a factory to create <see cref="T:Roblox.Random.IRandom"/> objects.
+            </summary>
+        </member>
+        <member name="M:Roblox.Random.RandomFactory.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Random.RandomFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Random.RandomFactory.GetDefaultRandom">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Random.LongRandom">
+            <summary>
+            Used to abstract logic for NextLong which is the same between all known IRandom implementations.
+            </summary>
+        </member>
+        <member name="T:Roblox.Random.PercentageInvoker">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.PercentageInvoker.#ctor(Roblox.Random.IRandom)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Random.PercentageInvoker"/> class
+            </summary>
+            <param name="random"></param>
+        </member>
+        <member name="M:Roblox.Random.PercentageInvoker.InvokeAction(System.Action,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Random.RngCryptoServiceRandom">
+            <summary>
+            Represents an <see cref="T:Roblox.Random.IRandom"/> adapter for the <see cref="T:System.Security.Cryptography.RNGCryptoServiceProvider"/> class.
+            </summary>
+            <seealso cref="T:Roblox.Random.IRandom" />
+            <seealso cref="T:System.Security.Cryptography.RNGCryptoServiceProvider"/>
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.#ctor">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Random.RngCryptoServiceRandom"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.Next">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.Next(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.Next(System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.NextBytes(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.NextDouble">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.NextLong">
+            <inheritdoc cref="M:Roblox.Random.IRandom.NextLong" />
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.NextLong(System.Int64)">
+            <inheritdoc cref="M:Roblox.Random.IRandom.NextLong(System.Int64)" />
+        </member>
+        <member name="M:Roblox.Random.RngCryptoServiceRandom.NextLong(System.Int64,System.Int64)">
+            <inheritdoc cref="M:Roblox.Random.IRandom.NextLong(System.Int64,System.Int64)" />
+        </member>
+        <member name="T:Roblox.Random.ThreadLocalRandom">
+            <summary>
+            Represents an <see cref="T:Roblox.Random.IRandom"/> that uses a <see cref="T:System.Threading.ThreadLocal`1"/> <see cref="T:System.Random"/>.
+            </summary>
+            <seealso cref="T:Roblox.Random.IRandom" />
+            <seealso cref="T:System.Random"/>
+            <seealso cref="T:System.Threading.ThreadLocal`1"/>
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Random.ThreadLocalRandom"/> class, using the specified seed.
+            </summary>
+            <param name="initialSeed">The initial seed.</param>
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Random.ThreadLocalRandom"/> class, using a time dependent seed value.
+            </summary>
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.Next">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.Next(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.Next(System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.NextDouble">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.NextBytes(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.NextLong">
+            <inheritdoc cref="M:Roblox.Random.IRandom.NextLong" />
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.NextLong(System.Int64)">
+            <inheritdoc cref="M:Roblox.Random.IRandom.NextLong(System.Int64)" />
+        </member>
+        <member name="M:Roblox.Random.ThreadLocalRandom.NextLong(System.Int64,System.Int64)">
+            <inheritdoc cref="M:Roblox.Random.IRandom.NextLong(System.Int64,System.Int64)" />
+        </member>
+        <member name="T:Roblox.Random.IPercentageInvoker">
+            <summary>
+            For invoking an action based on a percentage
+            </summary>
+        </member>
+        <member name="M:Roblox.Random.IPercentageInvoker.InvokeAction(System.Action,System.Int32)">
+            <summary>
+            Invokes the action only the given percentage of times this method is called.
+            </summary>
+            <param name="action">The action</param>
+            <param name="invokePercentage">The percentage of times to call the action.</param>
+        </member>
+        <member name="T:Roblox.Random.IRandom">
+            <summary>
+            Provides a common interface for an object that generates random information safely in a multi-threaded environment.
+            </summary>
+        </member>
+        <member name="M:Roblox.Random.IRandom.Next">
+            <summary>
+            Returns a nonnegative random number.
+            </summary>
+            <returns>A 32-bit signed integer that is greater than or equal to 0 and less than <see cref="F:System.Int32.MaxValue"/>.</returns>
+        </member>
+        <member name="M:Roblox.Random.IRandom.Next(System.Int32)">
+            <summary>
+            Returns a nonnegative random number less than the specified maximum.
+            </summary>
+            <param name="maxValue">The exclusive upper bound of the random number to be generated. <paramref name="maxValue"/> must be greater than or equal to 0.</param>
+            <returns>A 32-bit signed integer that is greater than or equal to 0, and less than <paramref name="maxValue"/>; that is, the range of return values 
+            ordinarily includes 0 but not <paramref name="maxValue"/>. However, if <paramref name="maxValue"/> equals 0, <paramref name="maxValue"/> is returned.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="maxValue"/> is less than 0.</exception>
+        </member>
+        <member name="M:Roblox.Random.IRandom.Next(System.Int32,System.Int32)">
+            <summary>
+            Returns a random number within a specified range.
+            </summary>
+            <param name="minValue">The inclusive lower bound of the random number to be returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random number to be returned. <paramref name="maxValue"/> must be greater than or equal 
+            to <paramref name="minValue"/>.</param>
+            <returns>A 32-bit signed integer greater than or equal to <paramref name="minValue"/> and less than <paramref name="maxValue"/>; that is, the range of return 
+            values includes <paramref name="minValue"/> but not <paramref name="maxValue"/>. If <paramref name="minValue"/> equals <paramref name="maxValue"/>,
+             <paramref name="minValue"/> is returned.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="minValue"/> is greater than <paramref name="maxValue"/>.</exception>
+        </member>
+        <member name="M:Roblox.Random.IRandom.NextDouble">
+            <summary>
+            Returns a random floating-point number that is greater than or equal to 0.0, and less than 1.0.
+            </summary>
+            <returns>A double-precision floating point number that is greater than or equal to 0.0, and less than 1.0.</returns>
+        </member>
+        <member name="M:Roblox.Random.IRandom.NextBytes(System.Byte[])">
+            <summary>
+            Fills the elements of a specified array of bytes with random numbers.
+            </summary>
+            <param name="buffer">An array of bytes to contain random numbers.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="buffer"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Roblox.Random.IRandom.NextLong">
+            <summary>
+            Returns a nonnegative random number.
+            </summary>
+            <returns>A 64-bit signed integer that is greater than or equal to 0 and less than <see cref="F:System.Int64.MaxValue"/>.</returns>
+        </member>
+        <member name="M:Roblox.Random.IRandom.NextLong(System.Int64)">
+            <summary>
+            Returns a nonnegative random number less than the specified maximum.
+            </summary>
+            <param name="maxValue">The exclusive upper bound of the random number to be generated. <paramref name="maxValue"/> must be greater than or equal to 0.</param>
+            <returns>A 64-bit signed integer that is greater than or equal to 0, and less than <paramref name="maxValue"/>; that is, the range of return values 
+            ordinarily includes 0 but not <paramref name="maxValue"/>. However, if <paramref name="maxValue"/> equals 0, <paramref name="maxValue"/> is returned.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="maxValue"/> is less than 0.</exception>
+        </member>
+        <member name="M:Roblox.Random.IRandom.NextLong(System.Int64,System.Int64)">
+            <summary>
+            Returns a random number within a specified range.
+            </summary>
+            <param name="minValue">The inclusive lower bound of the random number to be returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random number to be returned. <paramref name="maxValue"/> must be greater than or equal 
+            to <paramref name="minValue"/>.</param>
+            <returns>A 64-bit signed integer greater than or equal to <paramref name="minValue"/> and less than <paramref name="maxValue"/>; that is, the range of return 
+            values includes <paramref name="minValue"/> but not <paramref name="maxValue"/>. If <paramref name="minValue"/> equals <paramref name="maxValue"/>,
+             <paramref name="minValue"/> is returned.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="minValue"/> is greater than <paramref name="maxValue"/>.</exception>
+        </member>
+        <member name="T:Roblox.Random.IRandomFactory">
+            <summary>
+            Represents a factory to create <see cref="T:Roblox.Random.IRandom"/> objects.
+            </summary>
+        </member>
+        <member name="M:Roblox.Random.IRandomFactory.GetDefaultRandom">
+            <summary>
+            Gets the default <see cref="T:Roblox.Random.IRandom"/> implementation.
+            </summary>
+            <remarks>
+                The default random uses an <see cref="T:Roblox.Random.ThreadLocalRandom"/> implementation
+                with a crypto based seed provided by <see cref="T:System.Security.Cryptography.RNGCryptoServiceProvider"/>.
+            </remarks>
+            <returns>An <see cref="T:Roblox.Random.IRandom"/> object.</returns>
+        </member>
+    </members>
+</doc>

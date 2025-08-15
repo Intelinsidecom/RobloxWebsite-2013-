@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.MssqlDatabases</AssemblyName>
@@ -15,15 +15,11 @@
     <Reference Include="Roblox.Mssql">
       <HintPath>..\..\..\Website\bin\Roblox.Mssql.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SqlClient">
-      <HintPath>..\..\..\Website\bin\System.Data.SqlClient.dll</HintPath>
-    </Reference>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>

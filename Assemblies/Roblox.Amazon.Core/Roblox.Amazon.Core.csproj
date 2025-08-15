@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Amazon.Core</AssemblyName>
@@ -12,7 +12,9 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="AWSSDK.Core" />
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\..\Website\bin\AWSSDK.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Sentinels">
       <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
     </Reference>

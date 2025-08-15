@@ -1,0 +1,2121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Amazon</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.SimpleDB.AmazonSimpleDB">
+            <summary>
+            Amazon SimpleDB is a web service for running queries on structured
+            data in real time. This service works in close conjunction with Amazon
+            Simple Storage Service (Amazon S3) and Amazon Elastic Compute Cloud
+            (Amazon EC2), collectively providing the ability to store, process
+            and query data sets in the cloud. These services are designed to make
+            web-scale computing easier and more cost-effective for developers.
+            
+            Traditionally, this type of functionality has been accomplished with
+            a clustered relational database that requires a sizable upfront
+            investment, brings more complexity than is typically needed, and often
+            requires a DBA to maintain and administer. In contrast, Amazon SimpleDB
+            is easy to use and provides the core functionality of a database -
+            real-time lookup and simple querying of structured data without the
+            operational complexity.  Amazon SimpleDB requires no schema, automatically
+            indexes your data and provides a simple API for storage and access.
+            This eliminates the administrative burden of data modeling, index
+            maintenance, and performance tuning. Developers gain access to this
+            functionality within Amazon's proven computing environment, are able
+            to scale instantly, and pay only for what they use.
+            
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDB.CreateDomain(Amazon.SimpleDB.Model.CreateDomain)">
+            <summary>
+            Create Domain 
+            </summary>
+            <param name="request">Create Domain  request</param>
+            <returns>Create Domain  Response from the service</returns>
+            <remarks>
+            The CreateDomain operation creates a new domain. The domain name must be unique
+            among the domains associated with the Access Key ID provided in the request. The CreateDomain
+            operation may take 10 or more seconds to complete.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDB.ListDomains(Amazon.SimpleDB.Model.ListDomains)">
+            <summary>
+            List Domains 
+            </summary>
+            <param name="request">List Domains  request</param>
+            <returns>List Domains  Response from the service</returns>
+            <remarks>
+            The ListDomains operaton lists all domains associated with the Access Key ID. It returns
+            domain names up to the limit set by MaxNumberOfDomains. A NextToken is returned if there are more
+            than MaxNumberOfDomains domains. Calling ListDomains successive times with the
+            NextToken returns up to MaxNumberOfDomains more domain names each time.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDB.DeleteDomain(Amazon.SimpleDB.Model.DeleteDomain)">
+            <summary>
+            Delete Domain 
+            </summary>
+            <param name="request">Delete Domain  request</param>
+            <returns>Delete Domain  Response from the service</returns>
+            <remarks>
+            The DeleteDomain operation deletes a domain. Any items (and their attributes) in the domain
+            are deleted as well. The DeleteDomain operation may take 10 or more seconds to complete.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDB.PutAttributes(Amazon.SimpleDB.Model.PutAttributes)">
+            <summary>
+            Put Attributes 
+            </summary>
+            <param name="request">Put Attributes  request</param>
+            <returns>Put Attributes  Response from the service</returns>
+            <remarks>
+            The PutAttributes operation creates or replaces attributes within an item. You specify new attributes
+            using a combination of the Attribute.X.Name and Attribute.X.Value parameters. You specify
+            the first attribute by the parameters Attribute.0.Name and Attribute.0.Value, the second
+            attribute by the parameters Attribute.1.Name and Attribute.1.Value, and so on.
+            
+            Attributes are uniquely identified within an item by their name/value combination. For example, a single
+            item can have the attributes { "first_name", "first_value" } and { "first_name",
+            second_value" }. However, it cannot have two attribute instances where both the Attribute.X.Name and
+            Attribute.X.Value are the same.
+            Optionally, the requestor can supply the Replace parameter for each individual value. Setting this value
+            to true will cause the new attribute value to replace the existing attribute value(s). For example, if an
+            item has the attributes { 'a', '1' }, { 'b', '2'} and { 'b', '3' } and the requestor does a
+            PutAttributes of { 'b', '4' } with the Replace parameter set to true, the final attributes of the
+            item will be { 'a', '1' } and { 'b', '4' }, replacing the previous values of the 'b' attribute
+            with the new value.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDB.GetAttributes(Amazon.SimpleDB.Model.GetAttributes)">
+            <summary>
+            Get Attributes 
+            </summary>
+            <param name="request">Get Attributes  request</param>
+            <returns>Get Attributes  Response from the service</returns>
+            <remarks>
+            Returns all of the attributes associated with the item. Optionally, the attributes returned can be limited to
+            the specified AttributeName parameter.
+            If the item does not exist on the replica that was accessed for this operation, an empty attribute is
+            returned. The system does not return an error as it cannot guarantee the item does not exist on other
+            replicas.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDB.DeleteAttributes(Amazon.SimpleDB.Model.DeleteAttributes)">
+            <summary>
+            Delete Attributes 
+            </summary>
+            <param name="request">Delete Attributes  request</param>
+            <returns>Delete Attributes  Response from the service</returns>
+            <remarks>
+            Deletes one or more attributes associated with the item. If all attributes of an item are deleted, the item is
+            deleted.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDB.Query(Amazon.SimpleDB.Model.Query)">
+            <summary>
+            Query 
+            </summary>
+            <param name="request">Query  request</param>
+            <returns>Query  Response from the service</returns>
+            <remarks>
+            The Query operation returns a set of ItemNames that match the query expression. Query operations that
+            run longer than 5 seconds will likely time-out and return a time-out error response.
+            A Query with no QueryExpression matches all items in the domain.
+              
+            </remarks>
+        </member>
+        <member name="T:Amazon.SimpleDB.AmazonSimpleDBClient">
+            
+                 *
+                 * AmazonSimpleDBClient is an implementation of AmazonSimpleDB
+                 *
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.#ctor">
+            <summary>
+            Constructs AmazonSimpleDBClient
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.#ctor(Amazon.SimpleDB.AmazonSimpleDBConfig)">
+            <summary>
+            Constructs AmazonSimpleDBClient
+            </summary>
+            <param name="config">configuration</param>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.CreateDomain(Amazon.SimpleDB.Model.CreateDomain)">
+            <summary>
+            Create Domain 
+            </summary>
+            <param name="request">Create Domain  Action</param>
+            <returns>Create Domain  Response from the service</returns>
+            <remarks>
+            The CreateDomain operation creates a new domain. The domain name must be unique
+            among the domains associated with the Access Key ID provided in the request. The CreateDomain
+            operation may take 10 or more seconds to complete.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.ListDomains(Amazon.SimpleDB.Model.ListDomains)">
+            <summary>
+            List Domains 
+            </summary>
+            <param name="request">List Domains  Action</param>
+            <returns>List Domains  Response from the service</returns>
+            <remarks>
+            The ListDomains operaton lists all domains associated with the Access Key ID. It returns
+            domain names up to the limit set by MaxNumberOfDomains. A NextToken is returned if there are more
+            than MaxNumberOfDomains domains. Calling ListDomains successive times with the
+            NextToken returns up to MaxNumberOfDomains more domain names each time.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.DeleteDomain(Amazon.SimpleDB.Model.DeleteDomain)">
+            <summary>
+            Delete Domain 
+            </summary>
+            <param name="request">Delete Domain  Action</param>
+            <returns>Delete Domain  Response from the service</returns>
+            <remarks>
+            The DeleteDomain operation deletes a domain. Any items (and their attributes) in the domain
+            are deleted as well. The DeleteDomain operation may take 10 or more seconds to complete.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.PutAttributes(Amazon.SimpleDB.Model.PutAttributes)">
+            <summary>
+            Put Attributes 
+            </summary>
+            <param name="request">Put Attributes  Action</param>
+            <returns>Put Attributes  Response from the service</returns>
+            <remarks>
+            The PutAttributes operation creates or replaces attributes within an item. You specify new attributes
+            using a combination of the Attribute.X.Name and Attribute.X.Value parameters. You specify
+            the first attribute by the parameters Attribute.0.Name and Attribute.0.Value, the second
+            attribute by the parameters Attribute.1.Name and Attribute.1.Value, and so on.
+            
+            Attributes are uniquely identified within an item by their name/value combination. For example, a single
+            item can have the attributes { "first_name", "first_value" } and { "first_name",
+            second_value" }. However, it cannot have two attribute instances where both the Attribute.X.Name and
+            Attribute.X.Value are the same.
+            Optionally, the requestor can supply the Replace parameter for each individual value. Setting this value
+            to true will cause the new attribute value to replace the existing attribute value(s). For example, if an
+            item has the attributes { 'a', '1' }, { 'b', '2'} and { 'b', '3' } and the requestor does a
+            PutAttributes of { 'b', '4' } with the Replace parameter set to true, the final attributes of the
+            item will be { 'a', '1' } and { 'b', '4' }, replacing the previous values of the 'b' attribute
+            with the new value.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.GetAttributes(Amazon.SimpleDB.Model.GetAttributes)">
+            <summary>
+            Get Attributes 
+            </summary>
+            <param name="request">Get Attributes  Action</param>
+            <returns>Get Attributes  Response from the service</returns>
+            <remarks>
+            Returns all of the attributes associated with the item. Optionally, the attributes returned can be limited to
+            the specified AttributeName parameter.
+            If the item does not exist on the replica that was accessed for this operation, an empty attribute is
+            returned. The system does not return an error as it cannot guarantee the item does not exist on other
+            replicas.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.DeleteAttributes(Amazon.SimpleDB.Model.DeleteAttributes)">
+            <summary>
+            Delete Attributes 
+            </summary>
+            <param name="request">Delete Attributes  Action</param>
+            <returns>Delete Attributes  Response from the service</returns>
+            <remarks>
+            Deletes one or more attributes associated with the item. If all attributes of an item are deleted, the item is
+            deleted.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.Query(Amazon.SimpleDB.Model.Query)">
+            <summary>
+            Query 
+            </summary>
+            <param name="request">Query  Action</param>
+            <returns>Query  Response from the service</returns>
+            <remarks>
+            The Query operation returns a set of ItemNames that match the query expression. Query operations that
+            run longer than 5 seconds will likely time-out and return a time-out error response.
+            A Query with no QueryExpression matches all items in the domain.
+              
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.ConfigureWebRequest(System.Int32)">
+            Configure HttpClient with set of defaults as well as configuration
+            from AmazonSimpleDBConfig instance
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.HandleAsyncInvokeException(System.Exception,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="ex"></param>
+            <param name="retryAllowed">This function may chose not to throw if retryAllowed</param>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.Invoke``1(System.Collections.Generic.IDictionary{System.String,System.String})">
+            Invoke request and return response
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.ReportAnyErrors(System.String,System.Net.HttpStatusCode,System.Exception)">
+            Look for additional error strings in the response and return formatted exception
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.PauseOnRetry(System.Int32,System.Net.HttpStatusCode)">
+            Exponential sleep on failed request
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.AddRequiredParameters(System.Collections.Generic.IDictionary{System.String,System.String})">
+            Add authentication related and version parameters
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.GetParametersAsString(System.Collections.Generic.IDictionary{System.String,System.String})">
+            Convert Disctionary of paremeters to Url encoded query string
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.SignParameters(System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+             Computes RFC 2104-compliant HMAC signature for request parameters
+             Implements AWS Signature, as per following spec:
+            
+             If Signature Version is 0, it signs concatenated Action and Timestamp
+            
+             If Signature Version is 1, it performs the following:
+            
+             Sorts all  parameters (including SignatureVersion and excluding Signature,
+             the value of which is being created), ignoring case.
+            
+             Iterate over the sorted list and append the parameter name (in original case)
+             and then its value. It will not URL-encode the parameter values before
+             constructing this string. There are no separators.
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.Sign(System.String,System.String)">
+            Computes RFC 2104-compliant HMAC signature.
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBClient.GetFormattedTimestamp">
+            Formats date as ISO 8601 timestamp
+        </member>
+        <member name="T:Amazon.SimpleDB.AmazonSimpleDBConfig">
+            <summary>
+            Configuration for accessing Amazon Simple DB  service
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBConfig.ServiceVersion">
+            <summary>
+            Gets Service Version
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBConfig.SignatureVersion">
+            <summary>
+            Gets and sets of the SignatureVersion property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.WithSignatureVersion(System.String)">
+            <summary>
+            Sets the SignatureVersion property
+            </summary>
+            <param name="signatureVersion">SignatureVersion property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.IsSetSignatureVersion">
+            <summary>
+            Checks if SignatureVersion property is set
+            </summary>
+            <returns>true if SignatureVersion property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBConfig.UserAgent">
+            <summary>
+            Gets and sets of the UserAgent property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.WithUserAgent(System.String)">
+            <summary>
+            Sets the UserAgent property
+            </summary>
+            <param name="userAgent">UserAgent property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.IsSetUserAgent">
+            <summary>
+            Checks if UserAgent property is set
+            </summary>
+            <returns>true if UserAgent property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBConfig.ServiceURL">
+            <summary>
+            Gets and sets of the ServiceURL property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.WithServiceURL(System.String)">
+            <summary>
+            Sets the ServiceURL property
+            </summary>
+            <param name="serviceURL">ServiceURL property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.IsSetServiceURL">
+            <summary>
+            Checks if ServiceURL property is set
+            </summary>
+            <returns>true if ServiceURL property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBConfig.ProxyHost">
+            <summary>
+            Gets and sets of the ProxyHost property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.WithProxyHost(System.String)">
+            <summary>
+            Sets the ProxyHost property
+            </summary>
+            <param name="proxyHost">ProxyHost property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.IsSetProxyHost">
+            <summary>
+            Checks if ProxyHost property is set
+            </summary>
+            <returns>true if ProxyHost property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBConfig.ProxyPort">
+            <summary>
+            Gets and sets of the ProxyPort property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.WithProxyPort(System.Int32)">
+            <summary>
+            Sets the ProxyPort property
+            </summary>
+            <param name="proxyPort">ProxyPort property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.IsSetProxyPort">
+            <summary>
+            Checks if ProxyPort property is set
+            </summary>
+            <returns>true if ProxyPort property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBConfig.MaxErrorRetry">
+            <summary>
+            Gets and sets of the MaxErrorRetry property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.WithMaxErrorRetry(System.Int32)">
+            <summary>
+            Sets the MaxErrorRetry property
+            </summary>
+            <param name="maxErrorRetry">MaxErrorRetry property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBConfig.IsSetMaxErrorRetry">
+            <summary>
+            Checks if MaxErrorRetry property is set
+            </summary>
+            <returns>true if MaxErrorRetry property is set</returns>
+        </member>
+        <member name="T:Amazon.SimpleDB.AmazonSimpleDBException">
+            <summary>
+            Amazon Simple DB  Exception provides details of errors 
+            returned by Amazon Simple DB  service
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBException.#ctor(System.String)">
+            <summary>
+            Constructs AmazonSimpleDBException with message
+            </summary>
+            <param name="message">Overview of error</param>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBException.#ctor(System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Constructs AmazonSimpleDBException with message and status code
+            </summary>
+            <param name="message">Overview of error</param>
+            <param name="statusCode">HTTP status code for error response</param>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBException.#ctor(System.Exception)">
+            <summary>
+            Constructs AmazonSimpleDBException with wrapped exception
+            </summary>
+            <param name="t">Wrapped exception</param>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructs AmazonSimpleDBException with message and wrapped exception
+            </summary>
+            <param name="message">Overview of error</param>
+            <param name="t">Wrapped exception</param>
+        </member>
+        <member name="M:Amazon.SimpleDB.AmazonSimpleDBException.#ctor(System.String,System.Net.HttpStatusCode,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonSimpleDBException with information available from service
+            </summary>
+            <param name="message">Overview of error</param>
+            <param name="statusCode">HTTP status code for error response</param>
+            <param name="errorCode">Error Code returned by the service</param>
+            <param name="errorType">Error type. Possible types:  Sender, Receiver or Unknown</param>
+            <param name="boxUsage">Measure of machine utilization for this request</param>
+            <param name="requestId">Request ID returned by the service</param>
+            <param name="xml">Compete xml found in response</param>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBException.ErrorCode">
+            <summary>
+            Gets and sets of the ErrorCode property.
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBException.ErrorType">
+            <summary>
+            Gets and sets of the ErrorType property.
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBException.Message">
+            <summary>
+            Gets error message
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBException.StatusCode">
+            <summary>
+            Gets status code returned by the service if available. If status
+            code is set to -1, it means that status code was unavailable at the
+            time exception was thrown
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBException.BoxUsage">
+            <summary>
+            Gets measure of machine utilization for this request
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBException.XML">
+            <summary>
+            Gets XML returned by the service if available.
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.AmazonSimpleDBException.RequestId">
+            <summary>
+            Gets Request ID returned by the service if available.
+            </summary>
+        </member>
+        <member name="T:Amazon.SimpleDB.Util.AmazonSimpleDBUtil">
+            Provides collection of static functions for conversion of various values into 
+            strings that may be compared lexicographically.
+        </member>
+        <member name="F:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.dateFormat">
+            <summary>
+            Date format String, e.g. 2007-12-06T10:32:43.141-08:00
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.EncodeZeroPadding(System.Int32,System.Int32)">
+            <summary>
+            Encodes positive integer value into a string by zero-padding it up to the specified number of digits.
+            </summary>
+            <remarks>
+            For example, the integer 123 encoded with a 6 digit maximum would be represented as 000123
+            </remarks>
+            <param name="number">positive integer to be encoded</param>
+            <param name="maxNumDigits">maximum number of digits in the largest value in the data set</param>
+            <returns>A string representation of the zero-padded integer</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.EncodeZeroPadding(System.Single,System.Int32)">
+             <summary>
+             Encodes positive single-precision floating point value into a string by zero-padding it to the specified number of digits.
+             </summary>
+             <remarks>
+             This function only zero-pads digits to the left of the decimal point.
+            
+             For example, the value 123.456 encoded with a 6 digit maximum would be represented as 000123.456
+             </remarks>
+             <param name="number">positive floating point value to be encoded</param>
+             <param name="maxNumDigits">maximum number of digits in the largest value in the data set</param>
+             <returns>A string representation of the zero-padded floating point value</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.EncodeRealNumberRange(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Encodes real integer value into a string by offsetting and zero-padding 
+            number up to the specified number of digits.  Use this encoding method if the data
+            range set includes both positive and negative values.
+            </summary>
+            <remarks>
+            For example, the integer value -123 offset by 1000 with a maximum of 6 digits would be:
+            -123 + 1000, padded to 6 digits: 000877
+            </remarks>
+            <param name="number">integer to be encoded</param>
+            <param name="maxNumDigits">maximum number of digits in the largest absolute value in the data set</param>
+            <param name="offsetValue">offset value, has to be greater than absolute value of any negative number in the data set.</param>
+            <returns>A string representation of the integer</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.EncodeRealNumberRange(System.Single,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Encodes real float value into a string by offsetting and zero-padding 
+            number up to the specified number of digits.  Use this encoding method if the data
+            range set includes both positive and negative values.
+            </summary>
+            <remarks>
+            For example, the floating point value -123.456 offset by 1000 with
+            a maximum of 6 digits to the left, and 4 to the right would be:
+            0008765440
+            </remarks>
+            <param name="number">floating point value to be encoded</param>
+            <param name="maxDigitsLeft">maximum number of digits left of the decimal point in the largest absolute value in the data set</param>
+            <param name="maxDigitsRight">maximum number of digits right of the decimal point in the largest absolute value in the data set, i.e. precision</param>
+            <param name="offsetValue">offset value, has to be greater than absolute value of any negative number in the data set.</param>
+            <returns>A string representation of the integer</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.DecodeZeroPaddingFloat(System.String)">
+            <summary>
+            Decodes zero-padded positive float value from the string representation
+            </summary>
+            <param name="value">zero-padded string representation of the float value</param>
+            <returns>original float value</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.DecodeZeroPaddingInt(System.String)">
+            <summary>
+            Decodes zero-padded positive integer value from the string representation
+            </summary>
+            <param name="value">zero-padded string representation of the integer</param>
+            <returns>original integer value</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.DecodeRealNumberRangeInt(System.String,System.Int32)">
+            <summary>
+            Decodes float value from the string representation that was created by using encodeRealNumberRange(..) function.
+            </summary>
+            <param name="value">String representation of the integer value</param>
+            <param name="offsetValue">offset value that was used in the original encoding</param>
+            <returns>original integer value</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.DecodeRealNumberRangeFloat(System.String,System.Int32,System.Int32)">
+            <summary>
+            Decodes float value from the string representation that was created by using encodeRealNumberRange(..) function.
+            </summary>
+            <param name="value">string representation of the integer value</param>
+            <param name="maxDigitsRight">maximum number of digits left of the decimal point in the largest absolute value in the data set (must be the same as the one used for encoding).</param>
+            <param name="offsetValue">offset value that was used in the original encoding</param>
+            <returns>original float value</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.EncodeDate(System.DateTime)">
+            <summary>
+            Encodes date value into string format that can be compared lexicographically
+            </summary>
+            <param name="date">date value to be encoded</param>
+            <returns>string representation of the date value</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Util.AmazonSimpleDBUtil.DecodeDate(System.String)">
+            <summary>
+            Decodes date value from the string representation created using encodeDate(..) function.
+            </summary>
+            <param name="value">string representation of the date value</param>
+            <returns>original date value</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Attribute.Name">
+            <summary>
+            Gets and sets the Name property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Attribute.WithName(System.String)">
+            <summary>
+            Sets the Name property
+            </summary>
+            <param name="name">Name property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Attribute.IsSetName">
+            <summary>
+            Checks if Name property is set
+            </summary>
+            <returns>true if Name property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Attribute.Value">
+            <summary>
+            Gets and sets the Value property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Attribute.WithValue(System.String)">
+            <summary>
+            Sets the Value property
+            </summary>
+            <param name="value">Value property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Attribute.IsSetValue">
+            <summary>
+            Checks if Value property is set
+            </summary>
+            <returns>true if Value property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Attribute.ToXMLFragment">
+            <summary>
+            XML fragment representation of this object
+            </summary>
+            <returns>XML fragment for this object.</returns>
+            <remarks>
+            Name for outer tag expected to be set by calling method. 
+            This fragment returns inner properties representation only
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Attribute.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.CreateDomain.DomainName">
+            <summary>
+            Gets and sets the DomainName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.CreateDomain.ToMap">
+            <summary>
+            Representation of operation that returns
+            Dictionary of AWS Query Parameters
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.CreateDomainResponse.ResponseMetadata">
+            <summary>
+            Gets and sets the ResponseMetadata property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.CreateDomainResponse.WithResponseMetadata(Amazon.SimpleDB.Model.ResponseMetadata)">
+            <summary>
+            Sets the ResponseMetadata property
+            </summary>
+            <param name="responseMetadata">ResponseMetadata property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.CreateDomainResponse.IsSetResponseMetadata">
+            <summary>
+            Checks if ResponseMetadata property is set
+            </summary>
+            <returns>true if ResponseMetadata property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.CreateDomainResponse.ToXML">
+            <summary>
+            XML Representation for this object
+            </summary>
+            <returns>XML String</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.CreateDomainResponse.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.DeleteAttributes.DomainName">
+            <summary>
+            Gets and sets the DomainName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributes.WithDomainName(System.String)">
+            <summary>
+            Sets the DomainName property
+            </summary>
+            <param name="domainName">DomainName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributes.IsSetDomainName">
+            <summary>
+            Checks if DomainName property is set
+            </summary>
+            <returns>true if DomainName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.DeleteAttributes.ItemName">
+            <summary>
+            Gets and sets the ItemName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributes.WithItemName(System.String)">
+            <summary>
+            Sets the ItemName property
+            </summary>
+            <param name="itemName">ItemName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributes.IsSetItemName">
+            <summary>
+            Checks if ItemName property is set
+            </summary>
+            <returns>true if ItemName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.DeleteAttributes.Attribute">
+            <summary>
+            Gets and sets the Attribute property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributes.WithAttribute(Amazon.SimpleDB.Model.Attribute[])">
+            <summary>
+            Sets the Attribute property
+            </summary>
+            <param name="list">Attribute property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributes.IsSetAttribute">
+            <summary>
+            Checks if Attribute property is set
+            </summary>
+            <returns>true if Attribute property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributes.ToMap">
+            <summary>
+            Representation of operation that returns
+            Dictionary of AWS Query Parameters
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.DeleteAttributesResponse.ResponseMetadata">
+            <summary>
+            Gets and sets the ResponseMetadata property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributesResponse.WithResponseMetadata(Amazon.SimpleDB.Model.ResponseMetadata)">
+            <summary>
+            Sets the ResponseMetadata property
+            </summary>
+            <param name="responseMetadata">ResponseMetadata property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributesResponse.IsSetResponseMetadata">
+            <summary>
+            Checks if ResponseMetadata property is set
+            </summary>
+            <returns>true if ResponseMetadata property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributesResponse.ToXML">
+            <summary>
+            XML Representation for this object
+            </summary>
+            <returns>XML String</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteAttributesResponse.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.DeleteDomain.DomainName">
+            <summary>
+            Gets and sets the DomainName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteDomain.WithDomainName(System.String)">
+            <summary>
+            Sets the DomainName property
+            </summary>
+            <param name="domainName">DomainName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteDomain.IsSetDomainName">
+            <summary>
+            Checks if DomainName property is set
+            </summary>
+            <returns>true if DomainName property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteDomain.ToMap">
+            <summary>
+            Representation of operation that returns
+            Dictionary of AWS Query Parameters
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.DeleteDomainResponse.ResponseMetadata">
+            <summary>
+            Gets and sets the ResponseMetadata property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteDomainResponse.WithResponseMetadata(Amazon.SimpleDB.Model.ResponseMetadata)">
+            <summary>
+            Sets the ResponseMetadata property
+            </summary>
+            <param name="responseMetadata">ResponseMetadata property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteDomainResponse.IsSetResponseMetadata">
+            <summary>
+            Checks if ResponseMetadata property is set
+            </summary>
+            <returns>true if ResponseMetadata property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteDomainResponse.ToXML">
+            <summary>
+            XML Representation for this object
+            </summary>
+            <returns>XML String</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.DeleteDomainResponse.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Error.Type">
+            <summary>
+            Gets and sets the Type property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.WithType(System.String)">
+            <summary>
+            Sets the Type property
+            </summary>
+            <param name="type">Type property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.IsSetType">
+            <summary>
+            Checks if Type property is set
+            </summary>
+            <returns>true if Type property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Error.Code">
+            <summary>
+            Gets and sets the Code property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.WithCode(System.String)">
+            <summary>
+            Sets the Code property
+            </summary>
+            <param name="code">Code property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.IsSetCode">
+            <summary>
+            Checks if Code property is set
+            </summary>
+            <returns>true if Code property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Error.Message">
+            <summary>
+            Gets and sets the Message property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.WithMessage(System.String)">
+            <summary>
+            Sets the Message property
+            </summary>
+            <param name="message">Message property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.IsSetMessage">
+            <summary>
+            Checks if Message property is set
+            </summary>
+            <returns>true if Message property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Error.Detail">
+            <summary>
+            Gets and sets the Detail property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.WithDetail(System.Object)">
+            <summary>
+            Sets the Detail property
+            </summary>
+            <param name="detail">Detail property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.IsSetDetail">
+            <summary>
+            Checks if Detail property is set
+            </summary>
+            <returns>true if Detail property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.ToXMLFragment">
+            <summary>
+            XML fragment representation of this object
+            </summary>
+            <returns>XML fragment for this object.</returns>
+            <remarks>
+            Name for outer tag expected to be set by calling method. 
+            This fragment returns inner properties representation only
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Error.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ErrorResponse.Error">
+            <summary>
+            Gets and sets the Error property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ErrorResponse.WithError(Amazon.SimpleDB.Model.Error[])">
+            <summary>
+            Sets the Error property
+            </summary>
+            <param name="list">Error property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ErrorResponse.IsSetError">
+            <summary>
+            Checks if Error property is set
+            </summary>
+            <returns>true if Error property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ErrorResponse.RequestId">
+            <summary>
+            Gets and sets the RequestId property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ErrorResponse.WithRequestId(System.String)">
+            <summary>
+            Sets the RequestId property
+            </summary>
+            <param name="requestId">RequestId property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ErrorResponse.IsSetRequestId">
+            <summary>
+            Checks if RequestId property is set
+            </summary>
+            <returns>true if RequestId property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ErrorResponse.ToXML">
+            <summary>
+            XML Representation for this object
+            </summary>
+            <returns>XML String</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ErrorResponse.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.GetAttributes.DomainName">
+            <summary>
+            Gets and sets the DomainName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributes.WithDomainName(System.String)">
+            <summary>
+            Sets the DomainName property
+            </summary>
+            <param name="domainName">DomainName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributes.IsSetDomainName">
+            <summary>
+            Checks if DomainName property is set
+            </summary>
+            <returns>true if DomainName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.GetAttributes.ItemName">
+            <summary>
+            Gets and sets the ItemName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributes.WithItemName(System.String)">
+            <summary>
+            Sets the ItemName property
+            </summary>
+            <param name="itemName">ItemName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributes.IsSetItemName">
+            <summary>
+            Checks if ItemName property is set
+            </summary>
+            <returns>true if ItemName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.GetAttributes.AttributeName">
+            <summary>
+            Gets and sets the AttributeName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributes.WithAttributeName(System.String[])">
+            <summary>
+            Sets the AttributeName property
+            </summary>
+            <param name="list">AttributeName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributes.IsSetAttributeName">
+            <summary>
+            Checks of AttributeName property is set
+            </summary>
+            <returns>true if AttributeName property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributes.ToMap">
+            <summary>
+            Representation of operation that returns
+            Dictionary of AWS Query Parameters
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.GetAttributesResponse.GetAttributesResult">
+            <summary>
+            Gets and sets the GetAttributesResult property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResponse.WithGetAttributesResult(Amazon.SimpleDB.Model.GetAttributesResult)">
+            <summary>
+            Sets the GetAttributesResult property
+            </summary>
+            <param name="getAttributesResult">GetAttributesResult property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResponse.IsSetGetAttributesResult">
+            <summary>
+            Checks if GetAttributesResult property is set
+            </summary>
+            <returns>true if GetAttributesResult property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.GetAttributesResponse.ResponseMetadata">
+            <summary>
+            Gets and sets the ResponseMetadata property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResponse.WithResponseMetadata(Amazon.SimpleDB.Model.ResponseMetadata)">
+            <summary>
+            Sets the ResponseMetadata property
+            </summary>
+            <param name="responseMetadata">ResponseMetadata property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResponse.IsSetResponseMetadata">
+            <summary>
+            Checks if ResponseMetadata property is set
+            </summary>
+            <returns>true if ResponseMetadata property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResponse.ToXML">
+            <summary>
+            XML Representation for this object
+            </summary>
+            <returns>XML String</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResponse.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.GetAttributesResult.Attribute">
+            <summary>
+            Gets and sets the Attribute property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResult.WithAttribute(Amazon.SimpleDB.Model.Attribute[])">
+            <summary>
+            Sets the Attribute property
+            </summary>
+            <param name="list">Attribute property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResult.IsSetAttribute">
+            <summary>
+            Checks if Attribute property is set
+            </summary>
+            <returns>true if Attribute property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResult.ToXMLFragment">
+            <summary>
+            XML fragment representation of this object
+            </summary>
+            <returns>XML fragment for this object.</returns>
+            <remarks>
+            Name for outer tag expected to be set by calling method. 
+            This fragment returns inner properties representation only
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.GetAttributesResult.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ListDomains.MaxNumberOfDomains">
+            <summary>
+            Gets and sets the MaxNumberOfDomains property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomains.WithMaxNumberOfDomains(System.Decimal)">
+            <summary>
+            Sets the MaxNumberOfDomains property
+            </summary>
+            <param name="maxNumberOfDomains">MaxNumberOfDomains property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomains.IsSetMaxNumberOfDomains">
+            <summary>
+            Checks if MaxNumberOfDomains property is set
+            </summary>
+            <returns>true if MaxNumberOfDomains property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ListDomains.NextToken">
+            <summary>
+            Gets and sets the NextToken property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomains.WithNextToken(System.String)">
+            <summary>
+            Sets the NextToken property
+            </summary>
+            <param name="nextToken">NextToken property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomains.IsSetNextToken">
+            <summary>
+            Checks if NextToken property is set
+            </summary>
+            <returns>true if NextToken property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomains.ToMap">
+            <summary>
+            Representation of operation that returns
+            Dictionary of AWS Query Parameters
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ListDomainsResponse.ListDomainsResult">
+            <summary>
+            Gets and sets the ListDomainsResult property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResponse.WithListDomainsResult(Amazon.SimpleDB.Model.ListDomainsResult)">
+            <summary>
+            Sets the ListDomainsResult property
+            </summary>
+            <param name="listDomainsResult">ListDomainsResult property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResponse.IsSetListDomainsResult">
+            <summary>
+            Checks if ListDomainsResult property is set
+            </summary>
+            <returns>true if ListDomainsResult property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ListDomainsResponse.ResponseMetadata">
+            <summary>
+            Gets and sets the ResponseMetadata property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResponse.WithResponseMetadata(Amazon.SimpleDB.Model.ResponseMetadata)">
+            <summary>
+            Sets the ResponseMetadata property
+            </summary>
+            <param name="responseMetadata">ResponseMetadata property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResponse.IsSetResponseMetadata">
+            <summary>
+            Checks if ResponseMetadata property is set
+            </summary>
+            <returns>true if ResponseMetadata property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResponse.ToXML">
+            <summary>
+            XML Representation for this object
+            </summary>
+            <returns>XML String</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResponse.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ListDomainsResult.DomainName">
+            <summary>
+            Gets and sets the DomainName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResult.WithDomainName(System.String[])">
+            <summary>
+            Sets the DomainName property
+            </summary>
+            <param name="list">DomainName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResult.IsSetDomainName">
+            <summary>
+            Checks of DomainName property is set
+            </summary>
+            <returns>true if DomainName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ListDomainsResult.NextToken">
+            <summary>
+            Gets and sets the NextToken property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResult.WithNextToken(System.String)">
+            <summary>
+            Sets the NextToken property
+            </summary>
+            <param name="nextToken">NextToken property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResult.IsSetNextToken">
+            <summary>
+            Checks if NextToken property is set
+            </summary>
+            <returns>true if NextToken property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResult.ToXMLFragment">
+            <summary>
+            XML fragment representation of this object
+            </summary>
+            <returns>XML fragment for this object.</returns>
+            <remarks>
+            Name for outer tag expected to be set by calling method. 
+            This fragment returns inner properties representation only
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ListDomainsResult.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.PutAttributes.DomainName">
+            <summary>
+            Gets and sets the DomainName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributes.WithDomainName(System.String)">
+            <summary>
+            Sets the DomainName property
+            </summary>
+            <param name="domainName">DomainName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributes.IsSetDomainName">
+            <summary>
+            Checks if DomainName property is set
+            </summary>
+            <returns>true if DomainName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.PutAttributes.ItemName">
+            <summary>
+            Gets and sets the ItemName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributes.WithItemName(System.String)">
+            <summary>
+            Sets the ItemName property
+            </summary>
+            <param name="itemName">ItemName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributes.IsSetItemName">
+            <summary>
+            Checks if ItemName property is set
+            </summary>
+            <returns>true if ItemName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.PutAttributes.Attribute">
+            <summary>
+            Gets and sets the Attribute property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributes.WithAttribute(Amazon.SimpleDB.Model.ReplaceableAttribute[])">
+            <summary>
+            Sets the Attribute property
+            </summary>
+            <param name="list">Attribute property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributes.IsSetAttribute">
+            <summary>
+            Checks if Attribute property is set
+            </summary>
+            <returns>true if Attribute property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributes.ToMap">
+            <summary>
+            Representation of operation that returns
+            Dictionary of AWS Query Parameters
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.PutAttributesResponse.ResponseMetadata">
+            <summary>
+            Gets and sets the ResponseMetadata property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributesResponse.WithResponseMetadata(Amazon.SimpleDB.Model.ResponseMetadata)">
+            <summary>
+            Sets the ResponseMetadata property
+            </summary>
+            <param name="responseMetadata">ResponseMetadata property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributesResponse.IsSetResponseMetadata">
+            <summary>
+            Checks if ResponseMetadata property is set
+            </summary>
+            <returns>true if ResponseMetadata property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributesResponse.ToXML">
+            <summary>
+            XML Representation for this object
+            </summary>
+            <returns>XML String</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.PutAttributesResponse.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Query.DomainName">
+            <summary>
+            Gets and sets the DomainName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.WithDomainName(System.String)">
+            <summary>
+            Sets the DomainName property
+            </summary>
+            <param name="domainName">DomainName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.IsSetDomainName">
+            <summary>
+            Checks if DomainName property is set
+            </summary>
+            <returns>true if DomainName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Query.QueryExpression">
+            <summary>
+            Gets and sets the QueryExpression property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.WithQueryExpression(System.String)">
+            <summary>
+            Sets the QueryExpression property
+            </summary>
+            <param name="queryExpression">QueryExpression property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.IsSetQueryExpression">
+            <summary>
+            Checks if QueryExpression property is set
+            </summary>
+            <returns>true if QueryExpression property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Query.MaxNumberOfItems">
+            <summary>
+            Gets and sets the MaxNumberOfItems property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.WithMaxNumberOfItems(System.Decimal)">
+            <summary>
+            Sets the MaxNumberOfItems property
+            </summary>
+            <param name="maxNumberOfItems">MaxNumberOfItems property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.IsSetMaxNumberOfItems">
+            <summary>
+            Checks if MaxNumberOfItems property is set
+            </summary>
+            <returns>true if MaxNumberOfItems property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.Query.NextToken">
+            <summary>
+            Gets and sets the NextToken property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.WithNextToken(System.String)">
+            <summary>
+            Sets the NextToken property
+            </summary>
+            <param name="nextToken">NextToken property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.IsSetNextToken">
+            <summary>
+            Checks if NextToken property is set
+            </summary>
+            <returns>true if NextToken property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.Query.ToMap">
+            <summary>
+            Representation of operation that returns
+            Dictionary of AWS Query Parameters
+            </summary>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.QueryResponse.QueryResult">
+            <summary>
+            Gets and sets the QueryResult property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResponse.WithQueryResult(Amazon.SimpleDB.Model.QueryResult)">
+            <summary>
+            Sets the QueryResult property
+            </summary>
+            <param name="queryResult">QueryResult property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResponse.IsSetQueryResult">
+            <summary>
+            Checks if QueryResult property is set
+            </summary>
+            <returns>true if QueryResult property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.QueryResponse.ResponseMetadata">
+            <summary>
+            Gets and sets the ResponseMetadata property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResponse.WithResponseMetadata(Amazon.SimpleDB.Model.ResponseMetadata)">
+            <summary>
+            Sets the ResponseMetadata property
+            </summary>
+            <param name="responseMetadata">ResponseMetadata property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResponse.IsSetResponseMetadata">
+            <summary>
+            Checks if ResponseMetadata property is set
+            </summary>
+            <returns>true if ResponseMetadata property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResponse.ToXML">
+            <summary>
+            XML Representation for this object
+            </summary>
+            <returns>XML String</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResponse.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.QueryResult.ItemName">
+            <summary>
+            Gets and sets the ItemName property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResult.WithItemName(System.String[])">
+            <summary>
+            Sets the ItemName property
+            </summary>
+            <param name="list">ItemName property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResult.IsSetItemName">
+            <summary>
+            Checks of ItemName property is set
+            </summary>
+            <returns>true if ItemName property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.QueryResult.NextToken">
+            <summary>
+            Gets and sets the NextToken property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResult.WithNextToken(System.String)">
+            <summary>
+            Sets the NextToken property
+            </summary>
+            <param name="nextToken">NextToken property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResult.IsSetNextToken">
+            <summary>
+            Checks if NextToken property is set
+            </summary>
+            <returns>true if NextToken property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResult.ToXMLFragment">
+            <summary>
+            XML fragment representation of this object
+            </summary>
+            <returns>XML fragment for this object.</returns>
+            <remarks>
+            Name for outer tag expected to be set by calling method. 
+            This fragment returns inner properties representation only
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.QueryResult.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ReplaceableAttribute.Name">
+            <summary>
+            Gets and sets the Name property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ReplaceableAttribute.WithName(System.String)">
+            <summary>
+            Sets the Name property
+            </summary>
+            <param name="name">Name property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ReplaceableAttribute.IsSetName">
+            <summary>
+            Checks if Name property is set
+            </summary>
+            <returns>true if Name property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ReplaceableAttribute.Value">
+            <summary>
+            Gets and sets the Value property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ReplaceableAttribute.WithValue(System.String)">
+            <summary>
+            Sets the Value property
+            </summary>
+            <param name="value">Value property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ReplaceableAttribute.IsSetValue">
+            <summary>
+            Checks if Value property is set
+            </summary>
+            <returns>true if Value property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ReplaceableAttribute.Replace">
+            <summary>
+            Gets and sets the Replace property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ReplaceableAttribute.WithReplace(System.Boolean)">
+            <summary>
+            Sets the Replace property
+            </summary>
+            <param name="replace">Replace property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ReplaceableAttribute.IsSetReplace">
+            <summary>
+            Checks if Replace property is set
+            </summary>
+            <returns>true if Replace property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ReplaceableAttribute.ToXMLFragment">
+            <summary>
+            XML fragment representation of this object
+            </summary>
+            <returns>XML fragment for this object.</returns>
+            <remarks>
+            Name for outer tag expected to be set by calling method. 
+            This fragment returns inner properties representation only
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ReplaceableAttribute.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ResponseMetadata.RequestId">
+            <summary>
+            Gets and sets the RequestId property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ResponseMetadata.WithRequestId(System.String)">
+            <summary>
+            Sets the RequestId property
+            </summary>
+            <param name="requestId">RequestId property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ResponseMetadata.IsSetRequestId">
+            <summary>
+            Checks if RequestId property is set
+            </summary>
+            <returns>true if RequestId property is set</returns>
+        </member>
+        <member name="P:Amazon.SimpleDB.Model.ResponseMetadata.BoxUsage">
+            <summary>
+            Gets and sets the BoxUsage property.
+            </summary>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ResponseMetadata.WithBoxUsage(System.String)">
+            <summary>
+            Sets the BoxUsage property
+            </summary>
+            <param name="boxUsage">BoxUsage property</param>
+            <returns>this instance</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ResponseMetadata.IsSetBoxUsage">
+            <summary>
+            Checks if BoxUsage property is set
+            </summary>
+            <returns>true if BoxUsage property is set</returns>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ResponseMetadata.ToXMLFragment">
+            <summary>
+            XML fragment representation of this object
+            </summary>
+            <returns>XML fragment for this object.</returns>
+            <remarks>
+            Name for outer tag expected to be set by calling method. 
+            This fragment returns inner properties representation only
+            </remarks>
+        </member>
+        <member name="M:Amazon.SimpleDB.Model.ResponseMetadata.EscapeXML(System.String)">
+            
+            Escape XML special characters
+        </member>
+        <member name="M:Roblox.Amazon.Attributes.Add(System.String)">
+            <summary>
+            Add empty attribute (used for deletion)
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.ReplaceableAttributes.Add(System.String)">
+            <summary>
+            Add empty attribute (used for deletion)
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.CdnUrlResolver.GetCdnUrl(System.String)">
+            <summary>
+                Converts the url from the format t0.roblox.com to the one specified in the setting for CDN url
+                eg: t0.roblox.com --->  t0roblox-a.akamaihd.net
+            </summary>
+            <param name="bucket">The bucket including the subdomain and roblox domain</param>
+            <returns>Returns the CDN url for the particular subdomain</returns>
+        </member>
+        <member name="T:Roblox.Amazon.Domain">
+            <summary>
+            ROBLOX wrapper around Amazon's C# SimpleDB API
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.S3BucketPersistorFactory.#ctor(System.String,Roblox.EventLog.ILogger)">
+            <summary>
+            
+            </summary>
+            <param name="accessKeySecretKeyCsv">awsaccesskey,awssecretkey</param>
+            <param name="logger"></param>
+        </member>
+        <member name="T:Roblox.Amazon.Properties.BucketSettings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.S3.S3BucketFactory">
+            <inheritdoc cref="T:Roblox.S3.IS3BucketFactory"/>
+        </member>
+        <member name="M:Roblox.S3.S3BucketFactory.#ctor(Roblox.S3.IBucketPersistor)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.S3.S3BucketFactory"/>.
+            </summary>
+            <param name="bucketPersistor">An <see cref="T:Roblox.S3.IBucketPersistor"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="bucketPersistor"/></exception>
+        </member>
+        <member name="M:Roblox.S3.S3BucketFactory.CreateVanityBucket(System.String,System.Net.DecompressionMethods)">
+            <inheritdoc cref="M:Roblox.S3.IS3BucketFactory.CreateVanityBucket(System.String,System.Net.DecompressionMethods)"/>
+        </member>
+        <member name="T:Roblox.S3.IBucketPersistor">
+            <summary>
+            A no-sql data persistence interface.
+            </summary>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.BucketExists(System.String)">
+            <summary>
+            Does this storage bucket exist.
+            </summary>
+            <param name="bucketName">Name of the bucket.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.ClearBucket(System.String)">
+            <summary>
+            Clears the bucket.
+            </summary>
+            <param name="bucket">The bucket.</param>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.CreateBucket(System.String)">
+            <summary>
+            Creates a bucket.
+            </summary>
+            <param name="name">The name of the bucket to create.</param>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.Delete(System.String,System.String)">
+            <summary>
+            Deletes the specified item in a bucket.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.DeleteBucket(System.String)">
+            <summary>
+            Deletes the bucket.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.Get(System.String,System.String)">
+            <summary>
+            Gets the specified item from a bucket bucket.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="key">The key.</param>
+            <returns><see cref="T:com.amazon.s3.GetResponse"/></returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.Download(System.String,System.String)">
+            <summary>
+            Downloads the specified item from a bucket.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="key">The key.</param>
+            <returns>byte []</returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.Exists(System.String,System.String)">
+            <summary>
+            Does the specified item exist in the given bucket.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="key">The key.</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.GetBuckets">
+            <summary>
+            Gets the buckets.
+            </summary>
+            <returns><see cref="!:ICollection&lt;com.amazon.s3.Bucket&gt;"/></returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.GetDownloadUrl(System.String,com.amazon.s3.CallingFormat,System.String,System.Boolean)">
+            <summary>
+            Gets the download URL.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="format">The format.</param>
+            <param name="key">The key.</param>
+            <param name="secureConnection">if set to <c>true</c> [secure connection].</param>
+            <returns>The fully realized URL to get the item.</returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.GetEntries(System.String,System.String,System.Int32)">
+            <summary>
+            Gets the entries.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="prefix">The prefix.</param>
+            <param name="maxKeys">The maximum keys.</param>
+            <returns><see cref="!:ICollection&lt;com.amazon.s3.Bucket&gt;"/></returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.GetUploadUrl(System.String,com.amazon.s3.CallingFormat,System.String,System.TimeSpan,System.String,System.Net.DecompressionMethods)">
+            <summary>
+            Gets the upload URL.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="format">The format.</param>
+            <param name="key">The key.</param>
+            <param name="expiration">The expiration.</param>
+            <param name="mimeType">Type of the MIME.</param>
+            <param name="contentEncoding">The content encoding.</param>
+            <returns>The fully realized URL which with to upload the item.</returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.ParseBucket(System.String)">
+            <summary>
+            Parses the bucket url.
+            </summary>
+            <param name="urlString">The URL string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.ParseBucket(System.String,com.amazon.s3.CallingFormat@)">
+            <summary>
+            Parses the bucket url with a given format.
+            </summary>
+            <param name="urlString">The URL string.</param>
+            <param name="format">The format.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.Upload(System.String,System.String,System.IO.FileInfo,System.String,System.Net.DecompressionMethods,System.Boolean)">
+            <summary>
+            Uploads a file to a specified bucket.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="key">The key.</param>
+            <param name="fileInfo">The file information.</param>
+            <param name="mimeType">Type of the MIME.</param>
+            <param name="contentEncoding">The content encoding.</param>
+            <param name="neverExpires">if set to <c>true</c> [never expires].</param>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistor.Upload(System.String,System.String,System.Byte[],System.String,System.Net.DecompressionMethods,System.Boolean)">
+            <summary>
+            Uploads a byte array to a specified bucket.
+            </summary>
+            <param name="bucket">The bucket.</param>
+            <param name="key">The key.</param>
+            <param name="data">The data.</param>
+            <param name="mimeType">Type of the MIME.</param>
+            <param name="contentEncoding">The content encoding.</param>
+            <param name="neverExpires">if set to <c>true</c> [never expires].</param>
+        </member>
+        <member name="T:Roblox.S3.S3BucketPersistor">
+            <summary>
+            Public interface to Roblox's Amazon S3 database
+            </summary>
+        </member>
+        <member name="T:Roblox.S3.IBucketPersistorFactory">
+            <summary>
+            The Bucket Persistor Factory
+            </summary>
+        </member>
+        <member name="M:Roblox.S3.IBucketPersistorFactory.GetBucketPersistor">
+            <summary>
+            Gets the bucket persistor.
+            </summary>
+            <returns>An <see cref="T:Roblox.S3.IBucketPersistor"/>.</returns>
+        </member>
+        <member name="T:Roblox.S3.IS3BucketFactory">
+            <summary>
+            A factory for <see cref="T:Roblox.BucketStore.IBucket"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.S3.IS3BucketFactory.CreateVanityBucket(System.String,System.Net.DecompressionMethods)">
+            <summary>
+            Creates an <see cref="T:Roblox.BucketStore.IBucket"/> with a <see cref="F:com.amazon.s3.CallingFormat.VANITY"/> calling format.
+            </summary>
+            <param name="bucketName">The bucket name.</param>
+            <param name="decompressionMethod">The <see cref="T:System.Net.DecompressionMethods"/> used for the bucket.</param>
+            <returns><see cref="T:Roblox.BucketStore.IBucket"/></returns>
+        </member>
+        <member name="T:com.amazon.s3.AWSAuthConnection">
+            An interface into the S3 system.  It is initially configured with
+            authentication and connection parameters and exposes methods to access and
+            manipulate S3 data.
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.createBucket(System.String,System.Collections.SortedList)">
+            <summary>
+            Creates a new bucket.
+            </summary>
+            <param name="bucket">The name of the bucket to create</param>
+            <param name="headers">A Map of string to string representing the headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.listBucket(System.String,System.String,System.String,System.Int32,System.Collections.SortedList)">
+            <summary>
+            Lists the contents of a bucket.
+            </summary>
+            <param name="bucket">The name of the bucket to list</param>
+            <param name="prefix">All returned keys will start with this string (can be null)</param>
+            <param name="marker">All returned keys will be lexographically greater than this string (can be null)</param>
+            <param name="maxKeys">The maximum number of keys to return (can be 0)</param>
+            <param name="headers">A Map of string to string representing HTTP headers to pass.</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.listBucket(System.String,System.String,System.String,System.Int32,System.String,System.Collections.SortedList)">
+            <summary>
+            Lists the contents of a bucket.
+            </summary>
+            <param name="bucket">The name of the bucket to list</param>
+            <param name="prefix">All returned keys will start with this string (can be null)</param>
+            <param name="marker">All returned keys will be lexographically greater than this string (can be null)</param>
+            <param name="maxKeys">The maximum number of keys to return (can be 0)</param>
+            <param name="headers">A Map of string to string representing HTTP headers to pass.</param>
+            <param name="delimiter">Keys that contain a string between the prefix and the first
+            occurrence of the delimiter will be rolled up into a single element.</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.deleteBucket(System.String,System.Collections.SortedList)">
+            <summary>
+            Deletes an empty Bucket.
+            </summary>
+            <param name="bucket">The name of the bucket to delete</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+            <returns></returns>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.put(System.String,System.String,com.amazon.s3.S3Object,System.Collections.SortedList)">
+            <summary>
+            Writes an object to S3.
+            </summary>
+            <param name="bucket">The name of the bucket to which the object will be added.</param>
+            <param name="key">The name of the key to use</param>
+            <param name="obj">An S3Object containing the data to write.</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.get(System.String,System.String,System.Collections.SortedList)">
+            <summary>
+            Reads an object from S3
+            </summary>
+            <param name="bucket">The name of the bucket where the object lives</param>
+            <param name="key">The name of the key to use</param>
+            <param name="headers">A Map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.delete(System.String,System.String,System.Collections.SortedList)">
+            <summary>
+            Delete an object from S3.
+            </summary>
+            <param name="bucket">The name of the bucket where the object lives.</param>
+            <param name="key">The name of the key to use.</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+            <returns></returns>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.getBucketLogging(System.String,System.Collections.SortedList)">
+            <summary>
+            Get the logging xml document for a given bucket
+            </summary>
+            <param name="bucket">The name of the bucket</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.putBucketLogging(System.String,System.String,System.Collections.SortedList)">
+            <summary>
+            Write a new logging xml document for a given bucket
+            </summary>
+            <param name="bucket">The name of the bucket to enable/disable logging on</param>
+            <param name="loggingXMLDoc">The xml representation of the logging configuration as a String.</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.getBucketACL(System.String,System.Collections.SortedList)">
+            <summary>
+            Get the ACL for a given bucket.
+            </summary>
+            <param name="bucket">The the bucket to get the ACL from.</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.getACL(System.String,System.String,System.Collections.SortedList)">
+            <summary>
+            Get the ACL for a given object
+            </summary>
+            <param name="bucket">The name of the bucket where the object lives</param>
+            <param name="key">The name of the key to use.</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.putBucketACL(System.String,System.String,System.Collections.SortedList)">
+            <summary>
+            Write a new ACL for a given bucket
+            </summary>
+            <param name="bucket">The name of the bucket to change the ACL.</param>
+            <param name="aclXMLDoc">An XML representation of the ACL as a string.</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.putACL(System.String,System.String,System.String,System.Collections.SortedList)">
+            <summary>
+            Write a new ACL for a given object
+            </summary>
+            <param name="bucket">The name of the bucket where the object lives or the
+            name of the bucket to change the ACL if key is null.</param>
+            <param name="key">The name of the key to use; can be null.</param>
+            <param name="aclXMLDoc">An XML representation of the ACL as a string.</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.listAllMyBuckets(System.Collections.SortedList)">
+            <summary>
+            List all the buckets created by this account.
+            </summary>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.makeRequest(System.String,System.String,System.String,System.Collections.SortedList)">
+            <summary>
+            Make a new WebRequest without an S3Object.
+            </summary>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.makeRequest(System.String,System.String,System.String,System.Collections.SortedList,com.amazon.s3.S3Object)">
+            <summary>
+            Make a new WebRequest with an S3Object.
+            </summary>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.makeRequest(System.String,System.String,System.String,System.Collections.SortedList,System.Collections.SortedList,com.amazon.s3.S3Object)">
+            <summary>
+            Make a new WebRequest
+            </summary>
+            <param name="method">The HTTP method to use (GET, PUT, DELETE)</param>
+            <param name="bucket">The bucket name for this request</param>
+            <param name="key">The key this request is for</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+            <param name="obj">S3Object that is to be written (can be null).</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.addHeaders(System.Net.WebRequest,System.Collections.SortedList)">
+            <summary>
+            Add the given headers to the WebRequest
+            </summary>
+            <param name="req">Web request to add the headers to.</param>
+            <param name="headers">A map of string to string representing the HTTP headers to pass (can be null)</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.addMetadataHeaders(System.Net.WebRequest,System.Collections.SortedList)">
+            <summary>
+            Add the given metadata fields to the WebRequest.
+            </summary>
+            <param name="req">Web request to add the headers to.</param>
+            <param name="metadata">A map of string to string representing the S3 metadata for this resource.</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.addHeaders(System.Net.WebRequest,System.Collections.SortedList,System.String)">
+            <summary>
+            Add the given headers to the WebRequest with a prefix before the keys.
+            </summary>
+            <param name="req">WebRequest to add the headers to.</param>
+            <param name="headers">Headers to add.</param>
+            <param name="prefix">String to prepend to each before ebfore adding it to the WebRequest</param>
+        </member>
+        <member name="M:com.amazon.s3.AWSAuthConnection.addAuthHeader(System.Net.WebRequest,System.String,System.String,System.Collections.SortedList)">
+            <summary>
+            Add the appropriate Authorization header to the WebRequest
+            </summary>
+            <param name="request">Request to add the header to</param>
+            <param name="resource">The resource name (bucketName + "/" + key)</param>
+        </member>
+        <member name="F:com.amazon.s3.CommonPrefixEntry.prefix">
+            <summary>
+            The prefix common to the delimited keys it represents.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.name">
+            <summary>
+            The name of the bucket being listed.  Null if the request fails.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.prefix">
+            <summary>
+            The prefix echoed back from the request.  Null if the request fails.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.marker">
+            <summary>
+            The marker echoed back from the request.  Null if the request fails.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.delimiter">
+            <summary>
+            The delimiter echoed back from the request.  Null if not specified in
+            the request or it fails.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.maxKeys">
+            <summary>
+            The maxKeys echoed back from the request if specified.  0 if the request fails.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.isTruncated">
+            <summary>
+            Indicates if there are more results to the list.  True if the current
+            list results have been truncated.  The value will be false if the request
+            fails.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.nextMarker">
+            <summary>
+            Indicates what to use as a marker for subsequent list requests in the event
+            that the results are truncated.  Present only when a delimiter is specified.
+            Null if the requests fails.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.entries">
+            <summary>
+            A list of ListEntry objects representing the objects in the given bucket.
+            Null if the request fails.
+            </summary>
+        </member>
+        <member name="F:com.amazon.s3.ListBucketResponse.commonPrefixEntries">
+            <summary>
+            A list of CommonPrefixEntry objects representing the common prefixes of the
+            keys that matched up to the delimiter.  Null if the request fails.
+            </summary>
+        </member>
+        <member name="T:com.amazon.s3.QueryStringAuthGenerator">
+            This class mimics the behavior of AWSAuthConnection, except instead of actually performing
+            the operation, QueryStringAuthGenerator will return URLs with query string parameters that
+            can be used to do the same thing.  These parameters include an expiration date, so that
+            if you hand them off to someone else, they will only work for a limited amount of time.
+        </member>
+        <member name="P:com.amazon.s3.QueryStringAuthGenerator.Expires">
+            <summary>
+            Sets/Gets the milliseconds since the Epoch that this
+            expires at
+            </summary>
+        </member>
+        <member name="P:com.amazon.s3.S3Object.Bytes">
+            <summary>
+            Acquires the binary representation of an object.
+            </summary>
+        </member>
+        <member name="P:com.amazon.s3.S3Object.Data">
+            <summary>
+            Acquires the ASCII Encoding representation of an object.
+            </summary>
+        </member>
+        <member name="P:com.amazon.s3.S3Object.Metadata">
+            <summary>
+            Acquires the metadata.
+            </summary>
+        </member>
+        <member name="M:com.amazon.s3.S3Object.#ctor(System.Byte[],System.Collections.SortedList)">
+            <summary>
+            Constructs an S3Object.
+            </summary>
+            <param name="bytes">Byte array representing the object</param>
+            <param name="metadata">Metadata associated with the object</param>
+        </member>
+        <member name="M:com.amazon.s3.S3Object.#ctor(System.String,System.Collections.SortedList)">
+            <summary>
+            Constructs an S3Object.
+            </summary>
+            <param name="data">String representation of the data; this will be decoded via ASCII</param>
+            <param name="metadata">Metadata associated with the object</param>
+        </member>
+        <member name="M:com.amazon.s3.Utils.buildUrlBase(System.String,System.Int32,System.String,com.amazon.s3.CallingFormat)">
+            <summary>
+            Calculates the endpoint based on the calling format.
+            </summary>
+        </member>
+    </members>
+</doc>

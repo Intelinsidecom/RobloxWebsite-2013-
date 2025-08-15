@@ -35,7 +35,7 @@ public class AsyncInvokeTimeoutHandler : PipelineHandler
 		RequestContext requestContext = (RequestContext)(object)((requestContext2 is RequestContext) ? requestContext2 : null);
 		if (requestContext == null)
 		{
-			return await _003C_003En__0<T>(executionContext);
+			return await base.InvokeAsync<T>(executionContext);
 		}
 		using CancellationTokenSource timeoutTokenSource = new CancellationTokenSource(_Config.Timeout);
 		CancellationToken initialCancellationToken = requestContext.CancellationToken;
@@ -48,7 +48,7 @@ public class AsyncInvokeTimeoutHandler : PipelineHandler
 		try
 		{
 			requestContext.CancellationToken = linkedCancelationSource.Token;
-			return await _003C_003En__1<T>(executionContext).ConfigureAwait(continueOnCapturedContext: false);
+			return await base.InvokeAsync<T>(executionContext).ConfigureAwait(continueOnCapturedContext: false);
 		}
 		catch (OperationCanceledException ex)
 		{
