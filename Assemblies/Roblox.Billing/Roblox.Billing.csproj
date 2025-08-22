@@ -99,11 +99,9 @@
     <Compile Remove="Roblox.Billing\PayPalPaymentProvider.cs" />
     <Compile Remove="Roblox.Billing\CreditCardPaymentProvider.cs" />
     <Compile Remove="Roblox.Billing\Cancellation.cs" />
-    <Compile Remove="Roblox.Billing\PayPalPaymentInfo.cs" />
     <Compile Remove="Roblox.Billing\PayPalBillingAgreementDAL.cs" />
     <Compile Remove="Roblox.Billing\PayPalBillingAgreement.cs" />
-    <!-- Ensure the stub is compiled to satisfy references to Cancellation -->
-    <Compile Include="Roblox.Billing\PayPalCancellationStub.cs" />
+    <!-- The stub will be included by SDK default items automatically -->
   </ItemGroup>
   <ItemGroup>
     <!-- Treat removed PayPal files as content so they stay in solution but don't compile -->
