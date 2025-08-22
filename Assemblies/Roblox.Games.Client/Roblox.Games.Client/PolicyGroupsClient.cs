@@ -22,7 +22,7 @@ public class PolicyGroupsClient : GuardedApiClientBase
 	protected override TimeSpan Timeout => SettingsV3.Default.PolicyGroupsClientTimeout;
 
 	public PolicyGroupsClient(Func<string> apiKeyGetter)
-		: this(apiKeyGetter, () => RobloxEnvironment.GetApiEndpoint("games"))
+		: this(apiKeyGetter, () => RobloxEnvironment.GetInternalApiServiceEndpoint("games"))
 	{
 	}
 
@@ -41,7 +41,7 @@ public class PolicyGroupsClient : GuardedApiClientBase
 		return Get<PolicyGroup>("/v1.0/PolicyGroups/GetPolicyGroupByName", queryStringParameters);
 	}
 
-	public PolicyGroup[] GetAllPolicyGroups(int? exclusiveStartId, int count, SortOrder sortOrder)
+	public PolicyGroup[] GetAllPolicyGroups(int? exclusiveStartId, int count, Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		List<KeyValuePair<string, object>> queryStringParameters = new List<KeyValuePair<string, object>>
 		{
@@ -134,7 +134,7 @@ public class PolicyGroupsClient : GuardedApiClientBase
 		return Get<PolicyGroupServer>("/v1.0/PolicyGroups/GetPolicyGroupServer", queryStringParameters);
 	}
 
-	public PolicyGroupServer[] GetAllPolicyGroupServers(int? exclusiveStartId, int count, SortOrder sortOrder)
+	public PolicyGroupServer[] GetAllPolicyGroupServers(int? exclusiveStartId, int count, Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		List<KeyValuePair<string, object>> queryStringParameters = new List<KeyValuePair<string, object>>
 		{
@@ -173,7 +173,7 @@ public class PolicyGroupsClient : GuardedApiClientBase
 		return Get<LocationGroup>("/v1.0/PolicyGroups/GetLocationGroupByName", queryStringParameters);
 	}
 
-	public LocationGroup[] GetAllLocationGroups(int? exclusiveStartId, int count, SortOrder sortOrder)
+	public LocationGroup[] GetAllLocationGroups(int? exclusiveStartId, int count, Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		List<KeyValuePair<string, object>> queryStringParameters = new List<KeyValuePair<string, object>>
 		{
@@ -212,7 +212,7 @@ public class PolicyGroupsClient : GuardedApiClientBase
 		Post("/v1.0/PolicyGroups/DeleteLocationGroup", queryStringParameters);
 	}
 
-	public LocationGroupMember[] GetLocationGroupMembersByLocationGroupId(int locationGroupId, long? exclusiveStartId, int count, SortOrder sortOrder)
+	public LocationGroupMember[] GetLocationGroupMembersByLocationGroupId(int locationGroupId, long? exclusiveStartId, int count, Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		List<KeyValuePair<string, object>> queryStringParameters = new List<KeyValuePair<string, object>>
 		{
@@ -262,7 +262,7 @@ public class PolicyGroupsClient : GuardedApiClientBase
 		Post("/v1.0/PolicyGroups/DeleteLocationGroupMember", queryStringParameters);
 	}
 
-	public PolicyGroupMember[] GetPolicyGroupMembersByLocationGroupId(int locationGroupId, long? exclusiveStartId, int count, SortOrder sortOrder)
+	public PolicyGroupMember[] GetPolicyGroupMembersByLocationGroupId(int locationGroupId, long? exclusiveStartId, int count, Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		List<KeyValuePair<string, object>> queryStringParameters = new List<KeyValuePair<string, object>>
 		{
@@ -274,7 +274,7 @@ public class PolicyGroupsClient : GuardedApiClientBase
 		return Get<PolicyGroupMember[]>("/v1.0/PolicyGroups/GetPolicyGroupMembersByLocationGroupId", queryStringParameters);
 	}
 
-	public PolicyGroupMember[] GetPolicyGroupMembersByPolicyGroupId(int policyGroupId, long? exclusiveStartId, int count, SortOrder sortOrder)
+	public PolicyGroupMember[] GetPolicyGroupMembersByPolicyGroupId(int policyGroupId, long? exclusiveStartId, int count, Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		List<KeyValuePair<string, object>> queryStringParameters = new List<KeyValuePair<string, object>>
 		{

@@ -43,14 +43,16 @@ public class CommunicationBehaviorGuard : ICommunicationBehaviorGuard
 	{
 		if (isRevalidation)
 		{
-			return new GuardedFilterTextResult(_TextFilterClientV2.FilterLiveText(filterLiveTextRequest.Text, filterLiveTextRequest.Author, filterLiveTextRequest.TextUsage, filterLiveTextRequest.Server, filterLiveTextRequest.InstanceIdentifier), CommunicationBehaviorGuardStatus.Unenforced);
+			TextFilterUsage usageReval = CoerceUsage(filterLiveTextRequest);
+			return new GuardedFilterTextResult(_TextFilterClientV2.FilterLiveText(filterLiveTextRequest.Text, filterLiveTextRequest.Author, usageReval, filterLiveTextRequest.Server, filterLiveTextRequest.InstanceIdentifier), CommunicationBehaviorGuardStatus.Unenforced);
 		}
 		if (_CommunicationBehaviorRules.IsBanEnforced() && SafelyExecute(() => _PiiInfractionTracker.ShouldConsequencesBeEnforced(filterLiveTextRequest.Author), fallback: false))
 		{
 			return new GuardedFilterTextResult(null, CommunicationBehaviorGuardStatus.FailedAlreadyBanned);
 		}
 		CommunicationBehaviorGuardStatus behaviorGuardStatus = CommunicationBehaviorGuardStatus.Ok;
-		FilterLiveTextResult filterLiveTextResult = _TextFilterClientV2.FilterLiveText(filterLiveTextRequest.Text, filterLiveTextRequest.Author, filterLiveTextRequest.TextUsage, filterLiveTextRequest.Server, filterLiveTextRequest.InstanceIdentifier);
+		TextFilterUsage usage = CoerceUsage(filterLiveTextRequest);
+		FilterLiveTextResult filterLiveTextResult = _TextFilterClientV2.FilterLiveText(filterLiveTextRequest.Text, filterLiveTextRequest.Author, usage, filterLiveTextRequest.Server, filterLiveTextRequest.InstanceIdentifier);
 		try
 		{
 			FilterTextResult relevantRuleResult = _CommunicationBehaviorRules.GetRelevantRuleResult(filterLiveTextRequest, filterLiveTextResult);
@@ -102,6 +104,23 @@ public class CommunicationBehaviorGuard : ICommunicationBehaviorGuard
 			GlobalEnforcementLimitTimespan = () => Settings.Default.PiiGlobalBanLimitTimespan,
 			ResetInfractionCountWhenConsequencesEnforced = () => true
 		};
+	}
+
+	private static TextFilterUsage CoerceUsage(FilterLiveTextRequest req)
+	{
+		// Prefer the strongly typed enum when it is set
+		if (req.UsageType != TextFilterUsage.Unknown)
+		{
+			return req.UsageType;
+		}
+		// Fallback: try to parse the older string property
+		var s = req.TextUsage;
+		if (!string.IsNullOrWhiteSpace(s) && Enum.TryParse<TextFilterUsage>(s, true, out var parsed))
+		{
+			return parsed;
+		}
+		// Final fallback
+		return TextFilterUsage.Unknown;
 	}
 
 	private T SafelyExecute<T>(Func<T> func, T fallback)

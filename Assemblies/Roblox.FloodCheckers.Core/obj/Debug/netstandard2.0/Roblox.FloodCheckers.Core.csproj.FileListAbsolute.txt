@@ -9,3 +9,4 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.FloodCheck
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.FloodCheckers.Core\obj\Debug\netstandard2.0\Roblox.F.346975ED.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.FloodCheckers.Core\obj\Debug\netstandard2.0\Roblox.FloodCheckers.Core.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.FloodCheckers.Core\obj\Debug\netstandard2.0\Roblox.FloodCheckers.Core.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.FloodCheckers.Core\bin\Debug\netstandard2.0\Roblox.EventLog.pdb

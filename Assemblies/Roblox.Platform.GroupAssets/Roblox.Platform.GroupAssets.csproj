@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.GroupAssets</AssemblyName>
@@ -10,7 +10,9 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.Assets">
       <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>

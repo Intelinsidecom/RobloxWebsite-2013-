@@ -33,7 +33,7 @@ internal sealed class RobloxSqsClient : AmazonSQSClient
 		{
 			throw new ArgumentException("Configuration cannot be converted to RobloxSqsClientConfig.");
 		}
-		((AmazonSQSClient)this).CustomizeRuntimePipeline(pipeline);
+		base.CustomizeRuntimePipeline(pipeline);
 		if (robloxSqsClientConfig.IsAsyncRequestTimeoutEnabled && ((ClientConfig)robloxSqsClientConfig).Timeout.HasValue)
 		{
 			AsyncInvokeTimeoutHandler asyncInvokeTimeoutHandler = new AsyncInvokeTimeoutHandler(new AsyncInvokeTimeoutHandlerConfig(((ClientConfig)robloxSqsClientConfig).Timeout.Value));

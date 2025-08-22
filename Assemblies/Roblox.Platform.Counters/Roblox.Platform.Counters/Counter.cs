@@ -23,19 +23,19 @@ internal class Counter : ICounter
 	/// <inheritdoc />
 	public void Increment(double value = 1.0)
 	{
-		_DurableCountersClient.Increment(_CounterKey, value, (CounterType)32, (DateTime?)null);
+		_DurableCountersClient.Increment(_CounterKey, value, (Roblox.DurableCounters.Client.CounterType)32, (DateTime?)null);
 	}
 
 	/// <inheritdoc />
 	public void Decrement(double value = 1.0)
 	{
-		_DurableCountersClient.Decrement(_CounterKey, value, (CounterType)32, (DateTime?)null);
+		_DurableCountersClient.Decrement(_CounterKey, value, (Roblox.DurableCounters.Client.CounterType)32, (DateTime?)null);
 	}
 
 	/// <inheritdoc />
 	public double GetCount(bool useCache = true, TimeSpan? cacheDuration = null)
 	{
-		return _DurableCountersClient.GetCount(_CounterKey, (CounterType)32, (DateTime?)null, (DateTime?)null, true, (TimeSpan?)null);
+		return _DurableCountersClient.GetCount(_CounterKey, (Roblox.DurableCounters.Client.CounterType)32, (DateTime?)null, (DateTime?)null, true, (TimeSpan?)null);
 	}
 
 	/// <inheritdoc />

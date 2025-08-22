@@ -38,7 +38,7 @@
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
     <Reference Include="Roblox.ApiClientBase">
       <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
     </Reference>

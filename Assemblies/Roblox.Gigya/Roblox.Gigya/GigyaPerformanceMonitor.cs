@@ -4,6 +4,7 @@ using Gigya.Socialize.SDK;
 using Roblox.Common;
 using Roblox.Gigya.Properties;
 using Roblox.Instrumentation;
+using Newtonsoft.Json;
 
 namespace Roblox.Gigya;
 
@@ -85,7 +86,7 @@ internal class GigyaPerformanceMonitor
 	private void LogDetailedTimeoutInformation(GSRequest request, TimeSpan requestTime, GSResponse response)
 	{
 		HttpContext currentContext = HttpContext.Current;
-		string errorMessage = $"Gigya Timed Out. ApiName: {_ApiName}, Request Time {requestTime}, Request Body {request.GetParams().ToJsonString()}, Response Headers: {response.GetHeaders().ToJSON()}, Response Data: {response.GetData().ToJsonString()}, Timestamp {DateTime.Now}";
+		string errorMessage = $"Gigya Timed Out. ApiName: {_ApiName}, Request Time {requestTime}, Request Body {JsonConvert.SerializeObject(request.GetParams())}, Response Headers: {JsonConvert.SerializeObject(response.GetHeaders())}, Response Data: {JsonConvert.SerializeObject(response.GetData())}, Timestamp {DateTime.Now}";
 		if (currentContext != null)
 		{
 			string clientIp = currentContext.GetOriginIP();

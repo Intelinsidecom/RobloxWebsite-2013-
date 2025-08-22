@@ -11,6 +11,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Compile Remove="Roblox.Groups\CurrencyClientStubs.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Roblox.Currency.Client\Roblox.Currency.Client.csproj" />
   </ItemGroup>
   <ItemGroup>

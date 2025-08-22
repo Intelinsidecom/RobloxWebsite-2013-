@@ -18,7 +18,7 @@ internal class TimeBucketedCounter : ITimeBucketedCounter
 
 	private readonly CounterType _CounterType;
 
-	private readonly CounterType _ClientCounterType;
+	private readonly Roblox.DurableCounters.Client.CounterType _ClientCounterType;
 
 	/// <summary>
 	/// Constructs a new <see cref="T:Roblox.Platform.Counters.TimeBucketedCounter" />.
@@ -33,7 +33,7 @@ internal class TimeBucketedCounter : ITimeBucketedCounter
 		_DurableCountersClient = client ?? throw new ArgumentNullException("client");
 		_CounterKey = counterKey ?? throw new ArgumentNullException("counterKey");
 		_CounterType = counterType;
-		_ClientCounterType = (CounterType)counterType;
+		_ClientCounterType = (Roblox.DurableCounters.Client.CounterType)counterType;
 	}
 
 	/// <inheritdoc />

@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Chat</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net471</TargetFramework>
+    <NoWarn>$(NoWarn);CS1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -11,6 +12,10 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
@@ -25,7 +30,7 @@
       <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Social">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Social.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Redis">
       <HintPath>..\..\Website\bin\Roblox.Redis.dll</HintPath>
@@ -35,33 +40,35 @@
       <HintPath>..\..\Website\bin\Roblox.Time.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Universes.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Redis">
       <HintPath>..\..\Website\bin\StackExchange.Redis.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="AWSSDK.DynamoDBv2" />
+    <Reference Include="AWSSDK.DynamoDBv2">
+      <HintPath>..\..\Website\bin\AWSSDK.DynamoDBv2.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http">
       <HintPath>..\..\Website\bin\Roblox.Http.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TeamCreate">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.TeamCreate.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Groups">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Groups.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Devices">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Devices.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Communication.Behavior">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Communication.Behavior.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Amazon.Sns">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Sns.dll</HintPath>
@@ -70,10 +77,10 @@
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.RealTimeNotifications">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.RealTimeNotifications.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Diagnostics">
       <HintPath>..\..\Website\bin\Roblox.Diagnostics.dll</HintPath>
@@ -110,13 +117,14 @@
       <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Amazon.DynamoDb">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Amazon.DynamoDb.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\..\Website\bin\AWSSDK.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.dll</HintPath>
     </Reference>
-    <Reference Include="GraphemeSplitter" />
     <Reference Include="Roblox.Entities.Mssql">
       <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>

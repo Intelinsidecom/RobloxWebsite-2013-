@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Roblox.EventLog/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        }
       }
     }
   },
@@ -172,11 +182,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Roblox.EventLog/1.0.0": {
+      "type": "project",
+      "path": "../EventLog/Roblox.EventLog/Roblox.EventLog.csproj",
+      "msbuildProject": "../EventLog/Roblox.EventLog/Roblox.EventLog.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "Roblox.EventLog >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -211,7 +227,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\EventLog\\Roblox.EventLog\\Roblox.EventLog.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\EventLog\\Roblox.EventLog\\Roblox.EventLog.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -12,32 +12,15 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="StackExchange.Redis">
-      <HintPath>..\..\..\Website\bin\StackExchange.Redis.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Hashing">
-      <HintPath>..\..\..\Website\bin\Roblox.Hashing.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ServiceDiscovery">
-      <HintPath>..\..\..\Website\bin\Roblox.ServiceDiscovery.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Permissions">
-      <HintPath>..\..\..\Website\bin\System.Security.Permissions.dll</HintPath>
-    </Reference>
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Security.Permissions" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <ProjectReference Include="..\..\Hashing\Roblox.Hashing\Roblox.Hashing.csproj" />
+    <ProjectReference Include="..\..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\..\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj" />
+    <ProjectReference Include="..\..\Roblox.ServiceDiscovery\Roblox.ServiceDiscovery.csproj" />
+    <ProjectReference Include="..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Math</AssemblyName>
@@ -17,6 +17,6 @@
     <EmbeddedResource Include="Roblox.Platform.Math.Statistics.TDistribution.csv" LogicalName="Roblox.Platform.Math.Statistics.TDistribution.csv" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MathNet.Numerics" />
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
   </ItemGroup>
 </Project>

@@ -113,4 +113,22 @@ public struct QQSessionDataResult
 		}
 		return false;
 	}
+
+	/// <summary>
+	/// Returns a hash code based on all fields used in equality.
+	/// </summary>
+	public override int GetHashCode()
+	{
+		unchecked
+		{
+			int hash = 17;
+			hash = hash * 31 + AccountId.GetHashCode();
+			hash = hash * 31 + (OpenId != null ? OpenId.GetHashCode() : 0);
+			hash = hash * 31 + (AccessToken != null ? AccessToken.GetHashCode() : 0);
+			hash = hash * 31 + (RefreshToken != null ? RefreshToken.GetHashCode() : 0);
+			hash = hash * 31 + AccessExpires.GetHashCode();
+			hash = hash * 31 + RefreshExpires.GetHashCode();
+			return hash;
+		}
+	}
 }

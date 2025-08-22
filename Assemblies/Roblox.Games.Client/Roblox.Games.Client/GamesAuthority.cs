@@ -27,7 +27,7 @@ public class GamesAuthority : GuardedApiClientBase, IGamesAuthority
 	protected override TimeSpan Timeout => SettingsV3.Default.GamesClientTimeout;
 
 	public GamesAuthority(Func<string> apiKeyGetter)
-		: this(apiKeyGetter, () => RobloxEnvironment.GetApiEndpoint("games"))
+		: this(apiKeyGetter, () => RobloxEnvironment.GetInternalApiServiceEndpoint("games"))
 	{
 	}
 

@@ -24,7 +24,13 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Com
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.Configuration.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.EventLog.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.Hashing.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.Configuration.dll.config
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\obj\Debug\net471\Roblox.C.89FA5E96.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\obj\Debug\net471\Roblox.Common.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\obj\Debug\net471\Roblox.Common.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Newtonsoft.Json.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.EventLog.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.Configuration.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.Hashing.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.Common.NetStandard.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Newtonsoft.Json.xml
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\System.Data.SqlClient.dll

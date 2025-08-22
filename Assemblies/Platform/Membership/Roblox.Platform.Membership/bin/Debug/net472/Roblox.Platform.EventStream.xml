@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.EventStream</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.EventStream.ChatTrainingData.ChatTrainingDataStreamerFactory">
+            <summary>
+            A class producing <see cref="T:Roblox.Platform.EventStream.IChatTrainingDataStreamer"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.ChatTrainingData.ChatTrainingDataStreamerFactory.GetStreamer(Roblox.Instrumentation.ICounterRegistry,Roblox.EventLog.ILogger)">
+            <summary>
+            Returns a <see cref="T:Roblox.Platform.EventStream.IChatTrainingDataStreamer"/> using the given <see cref="T:Roblox.EventLog.ILogger"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.ChatTrainingData.IChatTrainingDataStreamerFactory">
+            <summary>
+            An interface representing a factory that produces <see cref="T:Roblox.Platform.EventStream.IChatTrainingDataStreamer"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.ChatTrainingData.IChatTrainingDataStreamerFactory.GetStreamer(Roblox.Instrumentation.ICounterRegistry,Roblox.EventLog.ILogger)">
+            <summary>
+            Returns a <see cref="T:Roblox.Platform.EventStream.IChatTrainingDataStreamer"/> using the given <see cref="T:Roblox.EventLog.ILogger"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.Region">
+            <summary>
+            Enum of locations for IChatTrainingData objects
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.IChatTrainingData">
+            <summary>
+            Interface for chat training data object to be streamed to AWS Kinesis firehose
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Event">
+            <summary>
+            event type - should be filterTextReq
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Context">
+            <summary>
+            Context regarding what kind of text this is - i.e. web_chat, web_pm etc
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Subcontext1">
+            <summary>
+            Integer identifier for the context
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.OriginalText">
+            <summary>
+            The original, unfiltered text that was input by a user
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Timestamp">
+            <summary>
+            The time the message was sent
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.RequestType">
+            <summary>
+            The Community Sift request type (Chat, DoubleChat, LongText, etc)
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Name">
+            <summary>
+            Hashed username of the person who sent text
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Under13Response">
+            <summary>
+            Community Sift's hashed response for under 13 users
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Over13Response">
+            <summary>
+            Community Sift's hashed response for over 13 users
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Under13Categories">
+            <summary>
+            The unsafe topics community sift felt the text failed for under 13 users, if any
+            EVEN IF NO CATEGORIES ARE RETURNED BY COMMUNITY SIFT YOU STILL MUST INSTANTIATE AN ARRAY
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Over13Categories">
+            <summary>
+            The unsafe topics community sift felt the text failed for over 13 users, if any
+            EVEN IF NO CATEGORIES ARE RETURNED BY COMMUNITY SIFT YOU STILL MUST INSTANTIATE AN ARRAY
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.Region">
+            <summary>
+            Enum for location that the text was sent from (EU or Non EU)
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IChatTrainingData.RoblockResult">
+            <summary>
+            bool for roblock result
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.IChatTrainingDataSender">
+            <summary>
+            Interface for classes who will publish chat data to an AWS Kinesis Firehose
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.IChatTrainingDataSender.PublishData(Roblox.Platform.EventStream.IChatTrainingData)">
+            <summary>
+            Method to publish an instantiation of an IChatTrainingData object 
+            to an AWS Kinesis Firehose
+            </summary>
+            <param name="data">a filled IChatTrainingData object representing
+            a community sift request</param>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.IChatTrainingDataStreamer.StreamChatTrainingData(Roblox.Platform.EventStream.IChatTrainingData)">
+            <summary>
+            Stream a chat training data object to AWS kinesis firehose
+            </summary>
+            <param name="data"> a filled chat tgraining data object</param>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.IDataStreamer">
+            <summary>
+            Defines interface for streaming data.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.IDataStreamer.StreamData(System.Collections.Generic.List{System.String})">
+            <summary>
+            Streams data.    
+            </summary>
+            <param name="dataList">Data list</param>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.IEventStreamer">
+            <summary>
+            Common interface for streaming events.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.IEventStreamer.StreamEvent(System.String,System.String,System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.String,System.Boolean,System.String)">
+            <summary>
+            Streams an event.
+            </summary>
+            <param name="target">The event's target.</param>
+            <param name="eventType">The type of event.</param>
+            <param name="eventParameters">Additional parameters for this event.</param>
+            <param name="clientIp">The client ip that triggered this event.</param>
+            <param name="isTrustedSource">Is the event source trusted?</param>
+            <param name="partitionKey"></param>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.IPushNotificationData">
+            <summary>
+            Interface for push notification data to be streamed to AWS Kinesis Firehose
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IPushNotificationData.Event">
+            <summary>
+            The Event Type
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IPushNotificationData.DateTime">
+            <summary>
+            The time of the event
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IPushNotificationData.ReceiverDestinationId">
+            <summary>
+            The receiver destination id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IPushNotificationData.NotificationId">
+            <summary>
+            The notification id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IPushNotificationData.PushNotificationIntent">
+            <summary>
+            The push notification intent
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.IPushNotificationData.NotificationSourceType">
+            <summary>
+            The notification source type
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.IPushNotificationDataSender.PublishData(Roblox.Platform.EventStream.IPushNotificationData)">
+            <summary>
+            Publish push notification data to AmazonKinesisFirehose
+            </summary>
+            <param name="pushNotificationData">The push notification data</param>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.PushNotificationDataSender.#ctor(Roblox.EventLog.ILogger)">
+            <summary>
+            Creates a PushNotificationDataSender with AWS Firehose settings with Push Notification STream Name
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.PushNotificationDataSender.PublishData(Roblox.Platform.EventStream.IPushNotificationData)">
+            <inheritdoc cref="M:Roblox.Platform.EventStream.IPushNotificationDataSender.PublishData(Roblox.Platform.EventStream.IPushNotificationData)"/>
+        </member>
+    </members>
+</doc>

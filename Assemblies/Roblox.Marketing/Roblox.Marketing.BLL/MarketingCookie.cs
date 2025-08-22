@@ -27,7 +27,7 @@ public class MarketingCookie
 		RobloxCookie cookie = RobloxCookie.GetOrCreate(context, _Name, TimeSpan.FromDays(10000.0));
 		if (Settings.Default.RBXMarketingCookieSetsDomain)
 		{
-			cookie.SetDomain(RobloxEnvironment.Domain);
+			cookie.Domain = RobloxEnvironment.Domain;
 		}
 		return cookie;
 	}

@@ -28,7 +28,7 @@
         "runtime": {
           "AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.103.66"
+            "fileVersion": "3.7.0.0"
           }
         }
       },

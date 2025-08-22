@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Games</AssemblyName>
@@ -30,7 +30,6 @@
     <Reference Include="Roblox.Platform.Assets.Places">
       <HintPath>..\..\Website\bin\Roblox.Platform.Assets.Places.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Universes.Client" />
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
@@ -58,7 +57,6 @@
     <Reference Include="Roblox.Caching">
       <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Marketplace.Client" />
     <Reference Include="Roblox.Agents">
       <HintPath>..\..\Website\bin\Roblox.Agents.dll</HintPath>
     </Reference>
@@ -112,7 +110,6 @@
     <Reference Include="Roblox.FloodCheckers.Core">
       <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Permissions.Client" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
@@ -126,7 +123,6 @@
     <Reference Include="Roblox.Platform.AssetsCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
@@ -146,5 +142,15 @@
     <Reference Include="Roblox.Entities.Mssql">
       <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Permissions.Client\Roblox.Permissions.Client.csproj" />
+    <ProjectReference Include="..\Roblox.Universes.Client\Roblox.Universes.Client.csproj" />
+    <ProjectReference Include="..\Roblox.Marketplace.Client\Roblox.Marketplace.Client.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
 </Project>

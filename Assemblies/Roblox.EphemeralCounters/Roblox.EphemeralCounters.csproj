@@ -12,12 +12,8 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Collections">
-      <HintPath>..\..\Website\bin\Roblox.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Roblox.Collections\Roblox.Collections.csproj" />
+    <ProjectReference Include="..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ApiClientBase\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj" />

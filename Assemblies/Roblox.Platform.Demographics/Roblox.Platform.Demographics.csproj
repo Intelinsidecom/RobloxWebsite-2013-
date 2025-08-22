@@ -89,8 +89,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
     <Reference Include="System.Web.ApplicationServices" />
     <PackageReference Include="libphonenumber-csharp" Version="9.0.12" />
   </ItemGroup>

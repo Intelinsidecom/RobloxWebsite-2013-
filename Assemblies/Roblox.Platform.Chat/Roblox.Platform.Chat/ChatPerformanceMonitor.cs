@@ -58,7 +58,9 @@ internal class ChatPerformanceMonitor
 				ChatsNotifiedPerSecond = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
+		#pragma warning disable 618
 		CounterCreator.InitializeMultiInstance(usagePerformanceCounterCategory, "_Total", usageCollection);
+		#pragma warning restore 618
 		string botDetectionPerformanceCounterCategory = performanceCounterCategoryBase + ".BotDetection";
 		CounterDescriptor[] botDetectionCollection = new CounterDescriptor[1]
 		{
@@ -67,7 +69,9 @@ internal class ChatPerformanceMonitor
 				MessageSendAttemptedWithoutRealTimePerSecond = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
+		#pragma warning disable 618
 		CounterCreator.InitializeMultiInstance(botDetectionPerformanceCounterCategory, "_Total", botDetectionCollection);
+		#pragma warning restore 618
 		_TotalChatsGeneratedPerSecondByDeviceTypeLookup = new Dictionary<DeviceType, PerformanceCounter>();
 		_TotalChatsGeneratedPerSecondByOperatingSystemLookup = new Dictionary<OperatingSystemType, PerformanceCounter>();
 		_TotalMessageSendAttemptedWithoutRealTimePerSecondByOperatingSystemLookup = new Dictionary<OperatingSystemType, PerformanceCounter>();
@@ -97,7 +101,9 @@ internal class ChatPerformanceMonitor
 				ChatRedisMissesPerSecond = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
+		#pragma warning disable 618
 		CounterCreator.InitializeMultiInstance(redisHitRatesPerformanceCounterCategory, "_Total", redisHitRatesCollection);
+		#pragma warning restore 618
 		string conversationRedisHitRatesPerformanceMonitorCategory = performanceCounterCategoryBase + ".ParticipantConversationRedisHitRates";
 		CounterDescriptor[] conversationRedisHitRatesCollection = new CounterDescriptor[2]
 		{
@@ -110,7 +116,9 @@ internal class ChatPerformanceMonitor
 				ConversationRedisMissesPerSecond = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
+		#pragma warning disable 618
 		CounterCreator.InitializeSingleInstance(conversationRedisHitRatesPerformanceMonitorCategory, conversationRedisHitRatesCollection);
+		#pragma warning restore 618
 		string participantRedisHitRatesPerformanceMonitorCategory = performanceCounterCategoryBase + ".ConversationParticipantRedisHitRates";
 		CounterDescriptor[] participantRedisHitRatesCollection = new CounterDescriptor[2]
 		{
@@ -123,7 +131,9 @@ internal class ChatPerformanceMonitor
 				ParticipantRedisMissesPerSecond = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
+		#pragma warning disable 618
 		CounterCreator.InitializeSingleInstance(participantRedisHitRatesPerformanceMonitorCategory, participantRedisHitRatesCollection);
+		#pragma warning restore 618
 	}
 
 	internal PerformanceCounter ChatsGeneratedPerSecondByDevice(DeviceType deviceType)
@@ -151,7 +161,9 @@ internal class ChatPerformanceMonitor
 				counter = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
+		#pragma warning disable 618
 		CounterCreator.InitializeMultiInstance(performanceCounterCategory, enumName, deviceTypeCollection);
+		#pragma warning restore 618
 		return counter;
 	}
 }

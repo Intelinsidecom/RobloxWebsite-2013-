@@ -96,7 +96,7 @@ internal class MessagePersister : PersistedMessageDataAccessor, IMessagePersiste
 		};
 		try
 		{
-			_DynamoDbClient.PutItem(chatMessagePersistenceRequest);
+			_DynamoDbClient.PutItemAsync(chatMessagePersistenceRequest).GetAwaiter().GetResult();
 		}
 		catch (ConditionalCheckFailedException)
 		{

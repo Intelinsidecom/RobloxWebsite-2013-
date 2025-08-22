@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.TrackingQueue</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.TrackingQueue.TrackingQueueConsumer">
+            <inheritdoc cref="T:Roblox.TrackingQueue.ITrackingQueueConsumer"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueConsumer.GetNextMessageForWorker(System.String)">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueueConsumer.GetNextMessageForWorker(System.String)"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueConsumer.GetNextMessagesForWorker(System.String,System.Int32)">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueueConsumer.GetNextMessagesForWorker(System.String,System.Int32)"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueConsumer.DeleteMessageForWorker(Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt,System.String)">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueueConsumer.DeleteMessageForWorker(Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt,System.String)"/>
+        </member>
+        <member name="T:Roblox.TrackingQueue.TrackingQueueConsumerFactory">
+            <inheritdoc cref="T:Roblox.TrackingQueue.ITrackingQueueConsumerFactory"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueConsumerFactory.Create(Roblox.Amazon.Sqs.ISqsConsumerWithReceipt,System.String)">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueueConsumerFactory.Create(Roblox.Amazon.Sqs.ISqsConsumerWithReceipt,System.String)"/>
+        </member>
+        <member name="T:Roblox.TrackingQueue.TrackingQueueMessage">
+            <summary>
+            Default implementation of <see cref="T:Roblox.TrackingQueue.ITrackingQueueMessage"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueMessage.Id">
+            <inheritdoc cref="P:Roblox.TrackingQueue.ITrackingQueueMessage.Id"/>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueMessage.Body">
+            <inheritdoc cref="P:Roblox.TrackingQueue.ITrackingQueueMessage.Body"/>
+        </member>
+        <member name="T:Roblox.TrackingQueue.TrackingQueueMessageWithReceipt">
+            <inheritdoc cref="T:Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt"/>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueMessageWithReceipt.Body">
+            <inheritdoc cref="!:ITrackingQueueMessageWithReceipt.Body"/>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueMessageWithReceipt.Id">
+            <inheritdoc cref="!:ITrackingQueueMessageWithReceipt.Id"/>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueMessageWithReceipt.ReceiptHandle">
+            <inheritdoc cref="!:ITrackingQueueMessageWithReceipt.ReceiptHandle"/>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueMessageWithReceipt.RegionName">
+            <inheritdoc cref="!:ITrackingQueueMessageWithReceipt.RegionName"/>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueMessageWithReceipt.MessageExpiry">
+            <inheritdoc cref="P:Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt.MessageExpiry"/>
+        </member>
+        <member name="T:Roblox.TrackingQueue.TrackingQueueMetrics">
+            <inheritdoc cref="T:Roblox.TrackingQueue.ITrackingQueueMetrics"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueMetrics.GetNumberOfItemsInQueue">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueueMetrics.GetNumberOfItemsInQueue"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueMetrics.GetNumberOfQueueWorkers">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueueMetrics.GetNumberOfQueueWorkers"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueMetrics.AgeOfOldestItemInQueue">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueueMetrics.AgeOfOldestItemInQueue"/>
+        </member>
+        <member name="T:Roblox.TrackingQueue.TrackingQueueMetricsFactory">
+            <inheritdoc cref="T:Roblox.TrackingQueue.ITrackingQueueMetricsFactory"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueMetricsFactory.Create(System.String)">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueueMetricsFactory.Create(System.String)"/>
+        </member>
+        <member name="T:Roblox.TrackingQueue.TrackingQueuePublisher">
+            <inheritdoc cref="T:Roblox.TrackingQueue.ITrackingQueuePublisher"/>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueuePublisher.SendMessage(Roblox.TrackingQueue.ITrackingQueueMessage)">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueuePublisher.SendMessage(Roblox.TrackingQueue.ITrackingQueueMessage)"/>
+        </member>
+        <member name="T:Roblox.TrackingQueue.TrackingQueuePublisherFactory">
+            <summary>
+            Default implementation of <see cref="T:Roblox.TrackingQueue.ITrackingQueuePublisherFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueuePublisherFactory.Create(Roblox.Amazon.Sqs.ISqsSender,System.String)">
+            <inheritdoc cref="M:Roblox.TrackingQueue.ITrackingQueuePublisherFactory.Create(Roblox.Amazon.Sqs.ISqsSender,System.String)"/>
+        </member>
+        <member name="T:Roblox.TrackingQueue.IQueueTrackerFactory">
+            <summary>
+            A factory producing <see cref="T:Roblox.TrackingQueue.IQueueTracker"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTrackerFactory.Create(System.String)">
+            <summary>
+            Creates a <see cref="T:Roblox.TrackingQueue.IQueueTracker"/>
+            </summary>
+            <param name="trackingKey">The specific key to track against.  Tracking data for different queues will be aggregated together if they use the same key.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.TrackingQueue.ITrackingQueueConsumer">
+            <summary>
+            An <see cref="T:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt"/> that also tracks progress within Redis
+            to allow for real-time updates on the state of the queue.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueueConsumer.GetNextMessageForWorker(System.String)">
+            <summary>
+            Get the next message from the Queue and allocated it to the given <paramref name="worker"/>.
+            We assume that <paramref name="worker"/>s are unique. Requesting a message for a 
+            worker that is already assigned a message will return the existing one.
+            </summary>
+            <param name="worker">unique key for the actor working on the given message</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueueConsumer.GetNextMessagesForWorker(System.String,System.Int32)">
+            <summary>
+            Return up to <paramref name="maxCount"/> messages for the given <paramref name="worker"/>.
+            If the <paramref name="worker"/> has existing incomplete work items, those may be returned as part of the set.
+            </summary>
+            <param name="worker">unique key for the actor working on the given message</param>
+            <param name="maxCount">maximum number of messages to return</param>
+            <returns>A non-null collection of messages.</returns>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueueConsumer.DeleteMessageForWorker(Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt,System.String)">
+            <summary>
+            Delete a message from the queue as represented by the <paramref name="receipt"/> AND
+            clear the active task for the given <paramref name="worker"/>
+            </summary>
+            <param name="receipt">message and receipt exactly as they came from <see cref="M:Roblox.TrackingQueue.ITrackingQueueConsumer.GetNextMessageForWorker(System.String)"/></param>
+            <param name="worker">unique key for the actor working on the given message</param>
+        </member>
+        <member name="T:Roblox.TrackingQueue.ITrackingQueueConsumerFactory">
+            <summary>
+            A Factory for <see cref="T:Roblox.TrackingQueue.ITrackingQueueConsumer"/> objects.
+            Effectively a wrapper for an <see cref="T:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt"/> along with a key.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueueConsumerFactory.Create(Roblox.Amazon.Sqs.ISqsConsumerWithReceipt,System.String)">
+            <summary>
+            Create a <see cref="T:Roblox.TrackingQueue.ITrackingQueueConsumer"/>.
+            </summary>
+            <param name="consumer">The connection to Sqs for consuming</param>
+            <param name="trackingKey">The specific key to track against.  Tracking data for different queues will be aggregated together if they use the same key.</param>
+            <returns><see cref="T:Roblox.TrackingQueue.ITrackingQueueConsumer"/></returns>
+        </member>
+        <member name="T:Roblox.TrackingQueue.ITrackingQueueMessage">
+            <summary>
+            A message to be placed on the Queue.
+            The <see cref="P:Roblox.TrackingQueue.ITrackingQueueMessage.Body"/> is used for the actual message.
+            The <see cref="P:Roblox.TrackingQueue.ITrackingQueueMessage.Id"/> is used for uniquely identifying that message through the life cycle.
+            </summary>
+        </member>
+        <member name="P:Roblox.TrackingQueue.ITrackingQueueMessage.Body">
+            <summary>
+            The message to place on the Queue.
+            </summary>
+        </member>
+        <member name="P:Roblox.TrackingQueue.ITrackingQueueMessage.Id">
+            <summary>
+            The unique identifier for the given item on the queue.
+            </summary>
+        </member>
+        <member name="T:Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt">
+            <summary>
+            A <see cref="T:Roblox.TrackingQueue.ITrackingQueueMessage"/> with receipt information.
+            Effectively represents a message pulled from the queue, but in the same 
+            format that was submitted.
+            </summary>
+        </member>
+        <member name="P:Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt.MessageExpiry">
+            <summary>
+            Expected expiry time for the given message.
+            </summary>
+        </member>
+        <member name="T:Roblox.TrackingQueue.ITrackingQueueMetrics">
+            <summary>
+            Provides metrics for the state of work in the given Queue.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueueMetrics.GetNumberOfItemsInQueue">
+            <summary>
+            Count of the total number of items in the queue.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueueMetrics.GetNumberOfQueueWorkers">
+            <summary>
+            Count of the total workers with an active item in the queue.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueueMetrics.AgeOfOldestItemInQueue">
+            <summary>
+            Find the age of the oldest item in the queue.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.TrackingQueue.ITrackingQueueMetricsFactory">
+            <summary>
+            A Factory for <see cref="T:Roblox.TrackingQueue.ITrackingQueueMetrics"/> objects.
+            Effectively a wrapper for data stored within the given key.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueueMetricsFactory.Create(System.String)">
+            <summary>
+            Used for pulling metrics generated by <see cref="T:Roblox.TrackingQueue.ITrackingQueuePublisher"/>
+            and <see cref="T:Roblox.TrackingQueue.ITrackingQueueConsumer"/>. Note that the <paramref name="trackingKey"/> value
+            must match the values used in those two objects.
+            </summary>
+            <param name="trackingKey">The specific key to track against.  Tracking data for different queues will be aggregated together if they use the same key.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.TrackingQueue.ITrackingQueuePublisher">
+            <summary>
+            A Queue Publisher that also tracks state of added items in Redis.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueuePublisher.SendMessage(Roblox.TrackingQueue.ITrackingQueueMessage)">
+            <summary>
+            Send the queue message to the queue and track it based on the key.
+            Note that the message will be edited. 
+            Use the <see cref="T:Roblox.TrackingQueue.ITrackingQueueConsumer"/> to read data back out.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:Roblox.TrackingQueue.ITrackingQueuePublisherFactory">
+            <summary>
+            A factory for creating <see cref="T:Roblox.TrackingQueue.ITrackingQueuePublisher"/> objects.
+            These are effectively wrappers for an <see cref="T:Roblox.Amazon.Sqs.ISqsSender"/>
+            that track progress in a Keyed redis set.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.ITrackingQueuePublisherFactory.Create(Roblox.Amazon.Sqs.ISqsSender,System.String)">
+            <summary>
+            Create a new <see cref="T:Roblox.TrackingQueue.ITrackingQueuePublisher"/>.
+            </summary>
+            <param name="sender">The publisher in Sqs.</param>
+            <param name="trackingKey">The specific key to track against.  Tracking data for different queues will be aggregated together if they use the same key.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.TrackingQueue.IQueueTracker">
+            <summary>
+            An interface for tracking messages in one or more queues to be processed by workers.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTracker.GetAgeOfOldestItemInQueue">
+            <summary>
+            Get the age of the oldest message that is not done being processed.
+            This includes messages already retrieved by workers and is in the middle of processing.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTracker.TryDequeueOldestItemInQueue(System.String@,System.TimeSpan@)">
+            <summary>
+            Get the id and timespan of the oldest message that is not done being processed.
+            This includes messages already retrieved by workers and is in the middle of processing.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTracker.GetExistingMessagesForWorker(System.String)">
+            <summary>
+            Get the messages retrieved by a worker that are not done being processed.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTracker.GetNumberOfItemsInQueue">
+            <summary>
+            Get the number of messages published and are not done being processed
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTracker.GetNumberOfQueueWorkers">
+            <summary>
+            Get the number of workers that have retrieved messages and are not done processing
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTracker.TrackMessagePublished(Roblox.TrackingQueue.ITrackingQueueMessage)">
+            <summary>
+            Track that a message has been published
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTracker.TrackMessageRetrievedByWorker(Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt,System.String)">
+            <summary>
+            Track that a message has been retreived by a worker
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.IQueueTracker.UntrackMessageProcessedByWorker(Roblox.TrackingQueue.ITrackingQueueMessageWithReceipt,System.String)">
+            <summary>
+            Removes a message from tracking after it's done being processed by a worker
+            </summary>
+        </member>
+        <member name="T:Roblox.TrackingQueue.TrackingQueueDomainFactories">
+            <summary>
+            Factories for the various Features of the RedisQueueTracker.
+            The Publisher and Consumer effectively wrap an Sqs connection while providing
+            real-time counters for the activity that happens against the queue.
+            The Metrics are provided via the MetricsFactory
+            </summary>
+            <remarks>
+            To work together a Publisher+Consumer+Metrics must all share the same key (as passed into the factory constructors).
+            The Publisher modifies the message that is put "on the wire", so the Publisher and Consumer must be used together.
+            </remarks>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueDomainFactories.PublisherFactory">
+            <summary>
+            Factory for getting keyed publishers.
+            </summary>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueDomainFactories.ConsumerFactory">
+            <summary>
+            Factory for getting keyed consumers.
+            </summary>
+        </member>
+        <member name="P:Roblox.TrackingQueue.TrackingQueueDomainFactories.MetricsFactory">
+            <summary>
+            Factory for getting keyed metrics.
+            </summary>
+        </member>
+        <member name="M:Roblox.TrackingQueue.TrackingQueueDomainFactories.#ctor(Roblox.TrackingQueue.IQueueTrackerFactory)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="trackerFactory"><see cref="T:Roblox.TrackingQueue.IQueueTrackerFactory"/>, required</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+    </members>
+</doc>

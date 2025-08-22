@@ -102,14 +102,8 @@ public static class BillingHelper
 				result2.AreMoreExpected = collection2.Count >= numberOfTasks;
 				return result2;
 			});
-			ParallelTaskWorker.Start("PayPalCancellation", parallelTaskWorkerConfiguration, delegate
-			{
-				ICollection<IParallelWorkTask> collection = Cancellation.LeaseWorkItems(ParallelTaskWorker.ID, numberOfTasks, leaseDurationInMinutes, MaxCancellationsPerDay, logger);
-				ParallelTaskWorker.LeaseResult result = default(ParallelTaskWorker.LeaseResult);
-				result.Tasks = collection;
-				result.AreMoreExpected = collection.Count >= numberOfTasks;
-				return result;
-			});
+			// PayPal/Payflow dependent cancellation worker disabled in this environment.
+			//ParallelTaskWorker.Start("PayPalCancellation", parallelTaskWorkerConfiguration, delegate { ... });
 		}
 		catch (Exception ex)
 		{

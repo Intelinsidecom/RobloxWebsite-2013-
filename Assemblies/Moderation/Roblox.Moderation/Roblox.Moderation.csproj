@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Moderation</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -24,9 +24,6 @@
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Common">
@@ -38,5 +35,8 @@
     <Reference Include="Roblox.ContentFilter.Client">
       <HintPath>..\..\..\Website\bin\Roblox.ContentFilter.Client.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
 </Project>

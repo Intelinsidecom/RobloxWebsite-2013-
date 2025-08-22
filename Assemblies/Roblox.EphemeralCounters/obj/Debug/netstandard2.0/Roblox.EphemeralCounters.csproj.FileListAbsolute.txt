@@ -18,7 +18,6 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralC
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\bin\Debug\netstandard2.0\Roblox.ApiClientBase.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\bin\Debug\netstandard2.0\Roblox.EphemeralCounters.Client.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\bin\Debug\netstandard2.0\Roblox.Collections.pdb
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\bin\Debug\netstandard2.0\Roblox.Collections.xml
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\bin\Debug\netstandard2.0\Roblox.Configuration.dll.config
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\bin\Debug\netstandard2.0\Roblox.Random.pdb
@@ -26,3 +25,4 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralC
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\obj\Debug\netstandard2.0\Roblox.E.9E6ABD05.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\obj\Debug\netstandard2.0\Roblox.EphemeralCounters.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\obj\Debug\netstandard2.0\Roblox.EphemeralCounters.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\bin\Debug\netstandard2.0\Roblox.EventLog.pdb

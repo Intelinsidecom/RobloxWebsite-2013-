@@ -48,3 +48,6 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.E
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email.Delivery\obj\Debug\net471\Roblox.P.1F415D59.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email.Delivery\obj\Debug\net471\Roblox.Platform.Email.Delivery.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email.Delivery\obj\Debug\net471\Roblox.Platform.Email.Delivery.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email.Delivery\bin\Debug\net471\System.Security.AccessControl.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email.Delivery\bin\Debug\net471\System.Security.Permissions.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email.Delivery\bin\Debug\net471\System.Security.Principal.Windows.dll

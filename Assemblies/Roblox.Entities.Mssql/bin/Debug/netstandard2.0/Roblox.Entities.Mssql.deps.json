@@ -96,27 +96,11 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.0.0": {
-        "runtime": {
-          "Newtonsoft.Json.dll": {
-            "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.1.25517"
-          }
-        }
-      },
       "Prometheus.NetStandard/3.0.0.0": {
         "runtime": {
           "Prometheus.NetStandard.dll": {
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.1.4.0"
-          }
-        }
-      },
-      "StackExchange.Redis/1.2.6.0": {
-        "runtime": {
-          "StackExchange.Redis.dll": {
-            "assemblyVersion": "1.2.6.0",
-            "fileVersion": "1.2.6.0"
           }
         }
       },
@@ -165,14 +149,6 @@
           "Roblox.ServiceDiscovery.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Consul/0.7.2.6": {
-        "runtime": {
-          "Consul.dll": {
-            "assemblyVersion": "0.7.2.6",
-            "fileVersion": "0.7.2.6"
           }
         }
       }
@@ -245,17 +221,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Newtonsoft.Json/13.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Prometheus.NetStandard/3.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "StackExchange.Redis/1.2.6.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -286,11 +252,6 @@
       "sha512": ""
     },
     "Roblox.ServiceDiscovery/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Consul/0.7.2.6": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -203,7 +203,7 @@ public class PrivateServerFactory : IPrivateServerFactory
 		long callbackUrlId = _GlobalEventsPublisher.GetOrCreateEventDestination(EventDestinationType.AmazonSqs, Settings.Default.PurchaseCallbackSQSValue);
 		try
 		{
-			purchaseResult = _MarketplaceAuthority.RecurringPurchaseProduct((long)Convert.ToInt32(ownerUserId), product.ID, (int)currencyType, expectedPrice, true, Settings.Default.PrivateServerRecurrencePeriodMagnitude, periodType, (long?)callbackUrlId, (DateTime?)null, 0L, platformTypeId, (SaleLocationType)0, (long?)null, existingPrivateServer?.Id);
+			purchaseResult = _MarketplaceAuthority.RecurringPurchaseProduct((long)Convert.ToInt32(ownerUserId), product.ID, (int)currencyType, expectedPrice, true, Settings.Default.PrivateServerRecurrencePeriodMagnitude, periodType, (long?)callbackUrlId, (DateTime?)null, 0L, platformTypeId, 0, (long?)null, existingPrivateServer?.Id);
 		}
 		catch (ApiClientException)
 		{
@@ -218,7 +218,7 @@ public class PrivateServerFactory : IPrivateServerFactory
 		_UniversePrivateServersSettingsManager.VerifyPrivateServerConfigurePermissions(universe);
 		VerifyPrivateServerName(serverName);
 		DoPurchasePrivateServer(ownerUserId, expectedPrice, universe, platformTypeId, out transactionStatus, out var purchaseResult);
-		if (transactionStatus)
+		if ((int)transactionStatus != 0)
 		{
 			return null;
 		}

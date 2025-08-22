@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using Roblox.EventLog;
 using Roblox.GameLocalization.Client;
+using Roblox.GameLocalization.Client.AutoLocalization;
+using Roblox.GameLocalization.Client.GameLocalizationRoles;
 using Roblox.Platform.Core;
 using Roblox.Platform.GameLocalization.Authorization.Properties;
 using Roblox.Platform.Groups;

@@ -291,7 +291,20 @@ public abstract class SqsThrottlingStreamSubscriberBase : IDisposable
 
 	internal string TrimMessage(string message)
 	{
-		return message[..((SqsMessageTrimmingStartIndex >= 0) ? SqsMessageTrimmingStartIndex : 0)];
+		int end = (SqsMessageTrimmingStartIndex >= 0) ? SqsMessageTrimmingStartIndex : 0;
+		if (message == null)
+		{
+			return string.Empty;
+		}
+		if (end <= 0)
+		{
+			return string.Empty;
+		}
+		if (end > message.Length)
+		{
+			end = message.Length;
+		}
+		return message.Substring(0, end);
 	}
 
 	private double CalculatePredictionConfidence(bool isDegreeOfParallelismIncreasing)

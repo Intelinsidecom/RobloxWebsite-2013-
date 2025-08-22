@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Gy0GJVIXwtZwxuFkdqn0c3bPBoEJwjidVmienLwCV8S9G+5vtD/dxC8kjHEcpNTWegAwokbgJCLIfUuXjJYeKg==",
+  "dgSpecHash": "9bSgW4vKS6A=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.Infractions\\Roblox.Platform.Infractions.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.Infractions\\Roblox.Platform.Infractions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

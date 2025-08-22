@@ -10,10 +10,12 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redi
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Hashing.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Instrumentation.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.ServiceDiscovery.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\StackExchange.Redis.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Prometheus.NetStandard.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Consul.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Configuration.dll.config
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\obj\Debug\netstandard2.0\Roblox.R.3FEADE33.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\obj\Debug\netstandard2.0\Roblox.Redis.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\obj\Debug\netstandard2.0\Roblox.Redis.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Hashing.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.EventLog.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Instrumentation.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.ServiceDiscovery.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Configuration.pdb

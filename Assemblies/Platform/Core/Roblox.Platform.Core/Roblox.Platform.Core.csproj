@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Core</AssemblyName>
@@ -12,13 +12,13 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DataV2\Core\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj" />
   </ItemGroup>
 </Project>

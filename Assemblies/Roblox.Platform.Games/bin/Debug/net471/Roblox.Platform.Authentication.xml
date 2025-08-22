@@ -1,0 +1,568 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Authentication</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Authentication.AuthenticationEvents">
+            <summary>
+            Contains static events related to authentication.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AuthenticationEvents.AuthenticatedHandler">
+            <summary>
+            Represents a delegate that handle an <see cref="E:Roblox.Platform.Authentication.AuthenticationEvents.Authenticated"/> event.
+            </summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> containing data of the event.</param>
+        </member>
+        <member name="E:Roblox.Platform.Authentication.AuthenticationEvents.Authenticated">
+            <summary>
+            Triggered after a user's credentials have been authenticated.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AuthenticationEvents.RaiseAuthenticated(System.Object,System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Roblox.Platform.Authentication.AuthenticationEvents.Authenticated"/> event.
+            </summary>
+            <param name="sender">The object that raised the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> containing data of the event.</param>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.Entities.XboxLiveAccount.AccountID">
+            <summary>
+            Roblox AccountId. Not Xbox AccountId
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.MultipleUsersPerCredentialException">
+            <summary>
+            Multiple users where found for provided credentials. 
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.UnverifiedCredentialsException">
+            <summary>
+            Unverified credentials exception with credentials linked to single user.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Authentication.UnverifiedCredentialsException.UserId">
+            <summary>
+            The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> if one user is linked to the credentials.
+            </summary>
+            <remarks>The user id may be null in the case of multiple users linked to the unverified credentials.</remarks>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.UnverifiedCredentialsMultipleUsersException">
+            <summary>
+            Unverified credentials exception with credentials linked to multiple users.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.CredentialsCollisionException">
+            <summary>
+            Credentials collision exception.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.TooManyUsersLinkedToCredentialsException">
+            <summary>
+            An exception for when the number of users to analyze per credentials threshold is surpased.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.InvalidCredentialsException">
+            <summary>
+            An exception for when a user for the credential value exists, but the password is incorrect.
+            </summary>
+            <remarks>
+            For example, this will be thrown when a user exists with the email "test123@test.com" but the password is wrong.
+            </remarks>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountsNeedingPasswordResetFactory">
+            <inheritdoc cref="T:Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory"/>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountsNeedingPasswordResetFactory.#ctor(Roblox.Passwords.Client.IPasswordsClient,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Authentication.AccountsNeedingPasswordResetFactory"/>.
+            </summary>
+            <param name="passwordsClient">An <see cref="T:Roblox.Passwords.Client.IPasswordsClient"/>.</param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="passwordsClient"/>
+            - <paramref name="logger"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountsNeedingPasswordResetFactory.GetAccountNeedsPasswordReset(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory.GetAccountNeedsPasswordReset(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountsNeedingPasswordResetFactory.SetAccountNeedsPasswordReset(Roblox.Platform.Membership.IUser,System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory.SetAccountNeedsPasswordReset(Roblox.Platform.Membership.IUser,System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.UserCredentialsFactory.#ctor(Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Email.User.IAccountEmailAddressFactory,Roblox.Platform.Demographics.IPhoneNumberFactory,Roblox.Platform.Demographics.IAccountPhoneNumberFactory,Roblox.Platform.Demographics.IPhoneNumberValidator)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Platform.Authentication.UserCredentialsFactory"/>.
+            </summary>
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <param name="accountEmailAddressFactory">The <see cref="T:Roblox.Platform.Email.User.IAccountEmailAddressFactory"/>.</param>
+            <param name="phoneNumberFactory">The <see cref="T:Roblox.Platform.Demographics.IPhoneNumberFactory"/>.</param>
+            <param name="accountPhoneNumberFactory">The <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactory"/>.</param>
+            <param name="phoneNumberValidator">The <see cref="T:Roblox.Platform.Demographics.IPhoneNumberValidator"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="userFactory"/>
+            - <paramref name="accountEmailAddressFactory"/>
+            - <paramref name="phoneNumberFactory"/>
+            - <paramref name="accountPhoneNumberFactory"/>
+            - <paramref name="phoneNumberValidator"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.UserCredentialsFactory.BuildUserCredentials(Roblox.Platform.Authentication.CredentialsType,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Authentication.Factories.RobloxUnverifiedUserCredentialsFactory">
+            <summary>
+            An implementation of a factory that builds <see cref="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.Factories.RobloxUnverifiedUserCredentialsFactory.#ctor(Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Email.User.IAccountEmailAddressFactory)">
+            <summary>
+            Initializes a new instance of an <see cref ="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentialsFactory"/>
+            </summary>
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <param name="accountEmailAddressFactory">The <see cref="T:Roblox.Platform.Email.User.IAccountEmailAddressFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="userFactory"/>
+            - <paramref name="accountEmailAddressFactory"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.Factories.RobloxUnverifiedUserCredentialsFactory.BuildUserCredentials(Roblox.Platform.Authentication.CredentialsType,System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentialsFactory.BuildUserCredentials(Roblox.Platform.Authentication.CredentialsType,System.String,System.String)" />
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AvailableAuthenticationMethodMonitor">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AvailableAuthenticationMethodMonitor.#ctor">
+            <summary>
+            Constructs an <see cref="T:Roblox.Platform.Authentication.AvailableAuthenticationMethodMonitor"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.RobloxUsernameCredentials">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/> for username credentials.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.UserCredentialsBase">
+            <summary>
+            A base implementation for all user credentials classes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.UserCredentialsBase.GetUser">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Membership.IUser"/> for the current credentials.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.UserCredentialsBase.Verify">
+            <summary>
+            Verifies the current credentials.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials">
+            <summary>
+            Provides a common interface for credential types that may be unverified, such as emails.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials.GetUserFromUnverifiedCredentials">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Membership.IUser"/> with the unverified credentials. Ex. A user linked to an unverified email.
+            </summary>
+            <remarks>This allows getting a <see cref="T:Roblox.Platform.Membership.IUser"/> with an unverified credential instead of throwing an error.</remarks>
+            <returns>A user with the unverified credentials, or null if no user is found.</returns>
+            <exception cref="T:Roblox.Platform.Authentication.MultipleUsersPerCredentialException">
+                Thrown if multiple users match the current credentials.
+            </exception>
+            <exception cref="T:Roblox.Platform.Authentication.TooManyUsersLinkedToCredentialsException">
+                Thrown if too many users match the current credential value.
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IUserCredentialsFactory">
+            <summary>
+            An interface for a factory that generates <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IUserCredentialsFactory.BuildUserCredentials(Roblox.Platform.Authentication.CredentialsType,System.String,System.String)">
+            <summary>
+            Builds <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/> for a given <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.
+            </summary>
+            <param name="credentialsType">The <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.</param>
+            <param name="credentialsValue">The credential value. Ex. For <see cref="F:Roblox.Platform.Authentication.CredentialsType.Username"/> this would be the user's name.</param>
+            <param name="password">The password.</param>
+            <returns>An <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/>.</returns>
+            <exception cref="T:System.ArgumentException">
+                <paramref name="credentialsValue"/> was null or whitespace.
+                <paramref name="password"/> was null or empty.
+                <paramref name="credentialsType"/> unsupported credential type was provided.
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IRobloxUserCredentials">
+            <summary>
+            Represents the credentials for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.IRobloxUserCredentials.CredentialsType">
+            <summary>
+            Gets the credentials <see cref="P:Roblox.Platform.Authentication.IRobloxUserCredentials.CredentialsType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.IRobloxUserCredentials.CredentialValue">
+            <summary>
+            Gets the credentials value.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IRobloxUserCredentials.GetUser">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Membership.IUser"/> associated with the current credentials.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Membership.IUser"/>.</returns>
+            <exception cref="T:Roblox.Platform.Authentication.MultipleUsersPerCredentialException">
+                Multiple user matches for current credential.
+            </exception>
+            <exception cref="T:Roblox.Platform.Authentication.UnverifiedCredentialsException">
+                Provided credentials are unverified.
+                Ex. For email credentials the email is not verified for the user. 
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.RobloxEmailCredentials">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/> for user email credentials.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.RobloxEmailCredentials.GetUserFromUnverifiedCredentials">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.TwoStepVerificationCredentials">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.Authentication.ITwoStepVerificationCredentials"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.TwoStepVerificationCredentials.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Authentication.TwoStepVerificationCredentials"/> class.
+            </summary>
+            <param name="twoStepVerificationCodeValidator">The <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator"/>.</param>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <param name="challenge">An <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="twoStepVerificationCodeValidator"/>, <paramref name="userFactory"/>, or <paramref name="challenge"/> is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="challenge.ActionType.ActionType"/> is not <see cref="F:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType.Login"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory.GetAccountNeedsPasswordReset(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets whether or not an <see cref="T:Roblox.Platform.Membership.IUser"/> requires a password reset.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns><c>true</c> if the <see cref="T:Roblox.Platform.Membership.IUser"/> must reset their password.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory.SetAccountNeedsPasswordReset(Roblox.Platform.Membership.IUser,System.Boolean)">
+            <summary>
+            Sets whether or not the user will be required to reset their password.
+            </summary>
+            <remarks>
+            Will log out all sessions if <paramref name="needsReset"/> is <c>true</c> and does not match the current value.
+            </remarks>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> corresponding to the account.</param>
+            <param name="needsReset">Whether or not the account needs a password reset.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="user"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IFacebookAccountConnector">
+            <summary>
+            Provides a common interface for connecting accounts to Facebook.
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Authentication.IFacebookAccountConnector.OnFacebookAccountDisconnected">
+            <summary>
+            The event to fire when a Facebook account is disconnected from a Roblox account
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountConnector.Connect(System.Int64,System.UInt64)">
+            <summary>
+            Adds a connection for the given <paramref name="accountId"/> to it's respective <paramref name="facebookId"/>.
+            </summary>
+            <remarks>
+            This function will return true if the connection already exists.  You do not have to check this prior to execution.
+            It will also attempt to remove the any existing connection for <paramref name="facebookId"/> 
+            </remarks>
+            <param name="accountId">The account id to link.</param>
+            <param name="facebookId">The Facebook id to link.</param>
+            <returns>True if successfully linked, false otherwise.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if this account is already linked to a different Facebook id</exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountConnector.Disconnect(System.Int64,System.Boolean)">
+            <summary>
+            Disconnects an <paramref name="accountId"/> from any Facebook id it may be connected to.
+            </summary>
+            <remarks>
+            This will fail in the event that Facebook is a user's only means of authentication and cannot be disconnected.  In the event
+            that the account is not currently linked to a Facebook, this will return true.
+            </remarks>
+            <param name="accountId">The account id to disconnect.</param>
+            <param name="force">If set to true, this will disconnect the account(s) EVEN IF the account has no other authentication method. Intended to be used with the Right to be Forgotten feature.</param>
+            <returns>False if the given <paramref name="accountId"/> is still linked to a Facebook, true otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountConnector.GetConnectedFacebookAccountIdentifier(System.Int64)">
+            <summary>
+            For the given <paramref name="accountId"/>, get the connected <see cref="T:Roblox.Platform.Authentication.IFacebookAccountIdentifier"/>.
+            </summary>
+            <param name="accountId">Roblox AccountId</param>
+            <returns>An <see cref="T:Roblox.Platform.Authentication.IFacebookAccountIdentifier"/> if connected, null otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountConnector.GetConnectedFacebookAccountIdentifier(System.UInt64)">
+            <summary>
+            For the given <paramref name="facebookId"/>, get the connected <see cref="T:Roblox.Platform.Authentication.IFacebookAccountIdentifier"/>.
+            </summary>
+            <param name="facebookId">Facebook Id</param>
+            <returns>An <see cref="T:Roblox.Platform.Authentication.IFacebookAccountIdentifier"/> if connected, null otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountConnector.GetConnectedFacebookAccount(System.Int64)">
+            <summary>
+            For the given <paramref name="accountId"/>, get the connected <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/>.
+            </summary>
+            <param name="accountId">Roblox AccountId</param>
+            <returns>An <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> if connected, null otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountConnector.Forget(System.Int64)">
+            <summary>
+            This method DELETES the associated entities, EVEN IF there is no other authentication method for the account. Intended to be used only with the Right to be Forgotten feature.
+            </summary>
+            <param name="accountId">The account id to forget.</param>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IFacebookAccount">
+            <summary>
+            A common interface for a Facebook account.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.IFacebookAccount.AccountId">
+            <summary>
+            The account id linked to this Facebook account.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.IFacebookAccount.FacebookId">
+            <summary>
+            The Facebook id for this Facebook account.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.IFacebookAccount.Created">
+            <summary>
+            The date this Facebook account was created.
+            </summary>
+            <remarks>
+            TODO: Delete once HasAutogeneratedPassword has been removed
+            </remarks>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IAvailableAuthenticationMethodMonitor">
+            <summary>
+            A helper interface that checks available authentication methods for user accounts.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IAvailableAuthenticationMethodMonitor.GetNumberOfAvailableAuthenticationMethods(System.Int64)">
+            <summary>
+            Gets the number of available authentication methods a given account has.
+            </summary>
+            <param name="accountId">The account id to check.</param>
+            <returns>The number of available <see cref="T:Roblox.Platform.Authentication.AuthenticationMethod"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IAvailableAuthenticationMethodMonitor.GetAvailableAuthenticationMethods(System.Int64)">
+            <summary>
+            Gets an enumerable of available authentication methods a given account has.
+            </summary>
+            <param name="accountId">The account id to check.</param>
+            <returns>The list of available <see cref="T:Roblox.Platform.Authentication.AuthenticationMethod"/>s.</returns>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.IFacebookAccountIdentifier.Id">
+            <summary>
+            The Id of this <see cref="T:Roblox.Platform.Authentication.IFacebookAccountIdentifier"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IAuthenticateAsUserCredentials">
+            <summary>
+            Credentials for authenticating as a given <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.IAuthenticateAsUserCredentials.User">
+            <summary>
+            The <see cref="T:Roblox.Platform.Membership.IUser"/> to authenticate as.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IPasswordResetSender.Send(Roblox.Platform.Membership.IUser,System.Uri,Roblox.Platform.Email.Delivery.IEmailSender)">
+            <summary>
+            Sends the specified user the url for resetting password.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="resetUrl">The reset URL.</param>
+            <param name="emailSender">The email sender.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">User, resetUrl or emailClient is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Reset url is invalid (must be absolute, not a file uri)</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidEmailAddressException">User does not have an email associated with account</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidAccountStatusException">Account status is not ok</exception>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.ITwoStepVerificationCredentials">
+            <summary>
+            Provides a common interface for sign in with TwoStepVerification.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.ITwoStepVerificationCredentials.Challenge">
+            <summary>
+            The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/> that is being fulfilled.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentialsFactory">
+            <summary>
+            Represents a factory that builds <see cref="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentialsFactory.BuildUserCredentials(Roblox.Platform.Authentication.CredentialsType,System.String,System.String)">
+            <summary>
+            Builds <see cref="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials"/> for a given <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.
+            </summary>
+            <param name="credentialsType">The <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.</param>
+            <param name="credentialsValue">The credential value. Ex. For <see cref="F:Roblox.Platform.Authentication.CredentialsType.Email"/> this would be the email.</param>
+            <param name="password">The password.</param>
+            <returns>An <see cref="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials"/>.</returns>
+            <exception cref="T:System.ArgumentException">
+                <paramref name="credentialsValue"/> was null or whitespace.
+                <paramref name="password"/> was null or empty.
+                <paramref name="credentialsType"/> unsupported credential type was provided.
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IFacebookAccountDataAccessor">
+            <summary>
+            Provides a common interface for accessing data regarding an <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountDataAccessor.Save(Roblox.Platform.Authentication.IFacebookAccount)">
+            <summary>
+            Saves an <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/>.
+            </summary>
+            <param name="facebookAccount">The <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> to save.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="facebookAccount"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountDataAccessor.Invalidate(Roblox.Platform.Authentication.IFacebookAccount)">
+            <summary>
+            Invalidates an <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/>.
+            </summary>
+            <param name="facebookAccount">The <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> to invalidate.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="facebookAccount"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountDataAccessor.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> by looking up its <paramref name="id"/>.
+            </summary>
+            <param name="id">The id to look up.</param>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> for this <paramref name="id"/>, or null if not found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountDataAccessor.GetByAccountId(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> by looking up its <paramref name="accountId"/>.
+            </summary>
+            <param name="accountId">The account id to look up.</param>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> for this <paramref name="accountId"/>, or null if not found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountDataAccessor.GetByFacebookId(System.UInt64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> by looking up its <paramref name="facebookId"/>.
+            </summary>
+            <param name="facebookId">The Facebook id to look up.</param>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.IFacebookAccount"/> for this <paramref name="facebookId"/>, or null if not found.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.IFacebookAccountDataAccessor.Forget(System.Int64)">
+            <summary>
+            Deletes the entities associated with the given account. Intended to be used by the Right to be Forgotten feature.
+            </summary>
+            <param name="accountId">The roblox accountId whose associated facebook accounts we want to forget</param>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.Extensions.HasValidPasswordSet(Roblox.Platform.Membership.IUser)">
+            <summary>
+            This method tells us whether this user has setup a password for their Roblox Account or not
+            </summary>
+            <param name="authenticatedUser">Authenticated Roblox User object</param>
+            <returns>A boolean that tells whether the user has set a password or not</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.ICredentials.Authenticate(System.TimeSpan)">
+            <summary>
+            Authenticates the <see cref="T:Roblox.Platform.Authentication.ICredentials"/> and returns the resulting <see cref="T:Roblox.Platform.Authentication.IAuthenticationSession"/>. If the
+            authentication was successful the <see cref="E:Roblox.Platform.Authentication.AuthenticationEvents.Authenticated"/> event will be raised.
+            </summary>
+            <param name="timeToLive">How long the <see cref="T:Roblox.Platform.Authentication.IAuthenticationSession"/> should live.</param>
+            <returns>An <see cref="T:Roblox.Platform.Authentication.IAuthenticationSession"/> if the authentication was successful. Otherwise null.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.ICredentialsFactory">
+            <summary>
+            An interface for a factory that generates <see cref="T:Roblox.Platform.Authentication.ICredentials"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.ICredentialsFactory.BuildFacebookCredentials(System.UInt64)">
+            <summary>
+            Builds credentials for login via Facebook.
+            </summary>
+            <param name="facebookId">The user's Facebook id.</param>
+            <returns>An instance of <see cref="T:Roblox.Platform.Authentication.IFacebookCredentials"/> for authentication, or null.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.ICredentialsFactory.BuildXboxLiveCredentials(System.String,Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor)">
+            <summary>
+            Builds credentials for login via Xbox.
+            </summary>
+            <param name="xboxPairWiseId">The Xbox PairWiseId.</param>
+            <param name="xboxLiveAccountDataAccessor">An <see cref="T:Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor"/>.</param>
+            <returns>An instance of <see cref="T:Roblox.Platform.Authentication.IXboxLiveCredentials"/> for authentication, or null.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.ICredentialsFactory.BuildAuthenticateAsUserCredentials(System.String)">
+            <summary>
+            Builds credentials for authenticating as a specific <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="name">The other <see cref="T:Roblox.Platform.Membership.IUser"/>'s name.</param>
+            <returns>An instance of <see cref="T:Roblox.Platform.Authentication.IAuthenticateAsUserCredentials"/> for authentication, or null.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.ICredentialsFactory.BuildAuthenticateAsUserCredentials(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Builds credentials for authenticating as a specific <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The other <see cref="T:Roblox.Platform.Membership.IUser"/> to authenticate as.</param>
+            <returns>An instance of <see cref="T:Roblox.Platform.Authentication.IAuthenticateAsUserCredentials"/> for authentication.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="user"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.ICredentialsFactory.BuildRobloxCredentialsFromAccountNameAndPassword(System.String,System.String)">
+            <summary>
+            Builds credentials for login via Roblox <paramref name="accountName"/> and <paramref name="password"/>.
+            </summary>
+            <param name="accountName">The name of the account.</param>
+            <param name="password">The account's password.</param>
+            <returns>An instance of <see cref="T:Roblox.Platform.Authentication.IRobloxCredentials"/> for authentication, or null.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.ICredentialsFactory.BuildTwoStepVerificationCredentialsFromChallenge(Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator,Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)">
+            <summary>
+            Builds 2SV credentials from an <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>
+            </summary>
+            <param name="challenge">An <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/></param>
+            <param name="twoStepVerificationCodeValidator">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator"/>.</param>
+            <returns>
+            An instance of the <see cref="T:Roblox.Platform.Authentication.ITwoStepVerificationCredentials" /> for authentication, or null.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.IFacebookCredentials">
+            <summary>
+            Provides a common interface for Facebook credentials.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.IFacebookCredentials.FacebookId">
+            <summary>
+            The Facebook id associated with these credentials.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.CredentialsFactory.BuildAuthenticateAsUserCredentials(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Authentication.ICredentialsFactory.BuildAuthenticateAsUserCredentials(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.CredentialsFactory.BuildTwoStepVerificationCredentialsFromChallenge(Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator,Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)">
+            <inheritdoc cref="M:Roblox.Platform.Authentication.ICredentialsFactory.BuildTwoStepVerificationCredentialsFromChallenge(Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator,Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)"/>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

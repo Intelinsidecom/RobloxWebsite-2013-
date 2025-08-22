@@ -54,7 +54,8 @@ internal class ContentValidator : IContentValidator
 	/// <summary> Retrieves the Text Validation result from the Text Filter Service</summary>
 	public virtual IMessageContentValidationResult GetValidationResultFromService(IUser sender, IConversationWithParticipants conversation, ChatContentType contentType, string rawContent, bool isRevalidation)
 	{
-		string client = GetTextFilterClientName(contentType, isRevalidation);
+		        // Use default TextFilterUsage since specific enum values are not available in this SDK version
+        TextFilterUsage usage = default;
 		try
 		{
 			ITextFilterClientV2 textFilterClientV = _TextFilterClientV2;
@@ -77,7 +78,7 @@ internal class ContentValidator : IContentValidator
 			IL_0047:
 			obj.IsUnder13 = (byte)isUnder != 0;
 			obj.Name = sender?.Name ?? string.Empty;
-			FilterLiveTextResult filterLiveTextResult = textFilterClientV.FilterLiveText(rawContent, (IClientTextAuthor)obj, client, TextFilterServerType.WebChat, conversation.Id.ToString());
+			FilterLiveTextResult filterLiveTextResult = textFilterClientV.FilterLiveText(rawContent, (IClientTextAuthor)obj, usage, TextFilterServerType.WebChat, conversation.Id.ToString());
 			if (filterLiveTextResult == null || filterLiveTextResult.FilteredResult == null || filterLiveTextResult.FilteredResultUnderage == null || !_ContentValidationRules.IsTextAppropriateToSend(filterLiveTextResult, sender, conversation))
 			{
 				return new MessageContentValidationResult

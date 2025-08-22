@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.BucketStore</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.BucketStore.BucketFan">
+            <summary>
+            Partitions entries among a collection of IBuckets
+            </summary>
+        </member>
+        <member name="T:Roblox.BucketStore.FileSystemBucket">
+            <summary>
+            A simple File System implementation of IBucket
+            </summary>
+        </member>
+        <member name="M:Roblox.BucketStore.IBucket.DeriveKey(System.String)">
+            <summary>
+            Derive an entry's Key from the entry's Hash value
+            </summary>
+            <param name="hash">Hash value of an entry</param>
+            <returns>returns the Key value of an entry, based on the Hash</returns>
+        </member>
+        <member name="M:Roblox.BucketStore.IBucket.DeriveHash(System.String)">
+            <summary>
+            Derive an entry's Hash from the entry's Key value
+            </summary>
+            <param name="key">Key value of an entry</param>
+            <returns>returns the Hash value of an entry, based on the Key</returns>
+        </member>
+        <member name="M:Roblox.BucketStore.IBucket.Verify(System.String,System.Int32,System.String)">
+            <summary>
+            Verify that the uploaded data can be downloaded and identified
+            </summary>
+            <param name="key">Key identifier by which the data can be downloaded</param>
+            <param name="expectedLength">The expected length of the downloaded content</param>
+            <param name="expectedHash">The expected hash of the downloaded content</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

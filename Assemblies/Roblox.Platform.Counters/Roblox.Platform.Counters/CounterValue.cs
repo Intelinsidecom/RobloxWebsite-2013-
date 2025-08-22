@@ -9,7 +9,7 @@ public class CounterValue
 
 	public double Value { get; private set; }
 
-	internal CounterValue(CounterValue clientCounterValue)
+	internal CounterValue(Roblox.DurableCounters.Client.CounterValue clientCounterValue)
 		: this(clientCounterValue.Bucket, clientCounterValue.Value)
 	{
 	}

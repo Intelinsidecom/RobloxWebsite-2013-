@@ -74,7 +74,9 @@ public class UserMobileAdIdentifierDAL
 		{
 			new SqlParameter("@ID", ID)
 		};
+#pragma warning disable CS0618 // Suppress obsolete API usage until DoEntityDALAction migration is available here
 		EntityHelper.DoEntityDALDelete(new DbInfo(ConnectionString, "UserMobileAdIdentifiers_DeleteUserMobileAdIdentifierByID", queryParameters));
+#pragma warning restore CS0618
 	}
 
 	internal static UserMobileAdIdentifierDAL Get(int id)

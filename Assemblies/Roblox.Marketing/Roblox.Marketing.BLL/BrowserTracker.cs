@@ -121,7 +121,9 @@ public class BrowserTracker : IRobloxEntity<long, BrowserTrackerDAL>, ICacheable
 			HttpRequest request = HttpContext.Current.Request;
 			string userAgent = request.UserAgent;
 			string ipAddress = HttpContext.Current.GetOriginIP();
+			#pragma warning disable CS0618 // User.GetCurrentID is obsolete in this codebase; replacement not available here
 			long? userId = User.GetCurrentID();
+			#pragma warning restore CS0618
 			int cookieCount = request.Cookies.Count;
 			StringBuilder cookiesSb = new StringBuilder();
 			cookiesSb.Append("{ ");

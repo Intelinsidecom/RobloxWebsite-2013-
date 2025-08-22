@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Groups</AssemblyName>
@@ -55,7 +55,6 @@
     <Reference Include="Roblox.EphemeralCounters">
       <HintPath>..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Groups.Client" />
     <Reference Include="Roblox.DataV2.Core">
       <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
@@ -95,9 +94,13 @@
     <Reference Include="Roblox.Users">
       <HintPath>..\..\Website\bin\Roblox.Users.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
     <Reference Include="Roblox.MssqlDatabases">
       <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
 </Project>

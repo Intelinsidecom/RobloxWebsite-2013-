@@ -23,10 +23,10 @@ internal class ConversationParticipantValidator : IConversationParticipantValida
 
 	public ConversationParticipantValidator(IFriendshipFactory friendshipFactory, IConversationDataAccessor conversationDataAccessor, ITeamCreatePermissionsVerifier teamCreatePermissionsVerifier, IUniverseFactory universeFactory)
 	{
-		_FriendshipFactory = friendshipFactory.AssignOrThrowIfNull("friendshipFactory");
-		_ConversationDataAccessor = conversationDataAccessor.AssignOrThrowIfNull("conversationDataAccessor");
-		_TeamCreatePermissionsVerifier = teamCreatePermissionsVerifier.AssignOrThrowIfNull("teamCreatePermissionsVerifier");
-		_UniverseFactory = universeFactory.AssignOrThrowIfNull("universeFactory");
+		_FriendshipFactory = friendshipFactory ?? throw new PlatformArgumentNullException("friendshipFactory");
+		_ConversationDataAccessor = conversationDataAccessor ?? throw new PlatformArgumentNullException("conversationDataAccessor");
+		_TeamCreatePermissionsVerifier = teamCreatePermissionsVerifier ?? throw new PlatformArgumentNullException("teamCreatePermissionsVerifier");
+		_UniverseFactory = universeFactory ?? throw new PlatformArgumentNullException("universeFactory");
 	}
 
 	public ValidatedUsers GetValidatedParticipantsForSocialConversations(IUser currentUser, IReadOnlyCollection<IUser> newUsers, ConversationType conversationType)

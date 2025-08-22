@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Economy</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Economy.Business_Logic.MarketPlaceSwitches">
+            <summary>
+            This class allows access to the settings for the market place.
+            Available settings are:
+             MarketPlaceEnabled - Enables/Disables all features involving exchange (items, currency, bonuses...)
+             ItemsXchangeEnabled - Enables/Disables the items exchange feature (sells/purchases)
+             LoginBonusEnabled - Enables/Disables the login bonus feature
+             TrafficBonusEnabled- Enables/Disables the traffic bonus feature
+             LoginBonusValue - Sets the amount of Tickets that will be given away for every login
+             TrafficBonusValue - Sets the amount of Tickets that will be given away for traffic into a player's site
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Business_Logic.MarketPlaceSwitches.IsMarketPlaceEnabled">
+            <summary>
+            Gets a value indicating whether this instance is market place enabled.
+            </summary>
+            <value>
+                <c>true</c> if this instance is market place enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Roblox.Economy.Business_Logic.MarketPlaceSwitches.IsItemsXchangeEnabled">
+            <summary>
+            Gets a value indicating whether this instance is items xchange enabled.
+            </summary>
+            <value>
+                <c>true</c> if this instance is items xchange enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Roblox.Economy.Business_Logic.MarketPlaceSwitches.IsItemResaleEnabled">
+            <summary>
+            Enables users to resell items
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Business_Logic.MarketPlaceSwitches.IsLoginBonusEnabled">
+            <summary>
+            Gets a value indicating whether this instance is login bonus enabled.
+            </summary>
+            <value>
+                <c>true</c> if this instance is login bonus enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Roblox.Economy.Business_Logic.MarketPlaceSwitches.IsTrafficBonusEnabled">
+            <summary>
+            Gets a value indicating whether this instance is traffic bonus enabled.
+            </summary>
+            <value>
+                <c>true</c> if this instance is traffic bonus enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Roblox.Economy.Business_Logic.MarketPlaceSwitches.LoginBonusAward">
+            <summary>
+            Gets the login bonus award.
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.TargetID">
+            <summary>
+            Stored as AssetID in the db, this is actually a TargetID controlled by ProductType.
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.LimitedEditionSalesCount">
+            <summary>
+            If limited edition product, number sold BY ROBLOX. Null if not limited
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.UserAd_728x90">
+            <summary>
+            The ad is a traditional horizontal banner ad.
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.UserAd_160x600">
+            <summary>
+            The ad is a traditional vertical skyscraper ad.
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.UserAd_300x250">
+            <summary>
+            The ad is a traditional square ad.
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.UserAd_PromotedUniverseDesktop">
+            <summary>
+            The ad is a promoted universe for desktop.
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.UserAd_PromotedUniverseTablet">
+            <summary>
+            The ad is a promoted universe for tablet.
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.UserAd_PromotedUniversePhone">
+            <summary>
+            The ad is a promoted universe for phone.
+            </summary>
+        </member>
+        <member name="P:Roblox.Economy.Product.UserAd_PromotedUniverseConsole">
+            <summary>
+            The ad is a promoted universe for console.
+            </summary>
+        </member>
+        <member name="M:Roblox.Economy.Product.GetProductsByProductTypeIDAndTargetID(System.Int32,System.Int64)">
+            <summary>
+            Only use this if you know what you are doing
+            There are a few assets on production with two Products that match the given ProductTypeId and TargetId
+            We will have to fix this later and make the two columns have a unique key
+            </summary>
+            <param name="productTypeId"></param>
+            <param name="targetId"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Roblox.Economy.RobloxProduct.UserAd_728x90">
+            <summary>
+            The ad is a traditional horizontal banner ad.
+            </summary>
+        </member>
+        <member name="F:Roblox.Economy.RobloxProduct.UserAd_160x600">
+            <summary>
+            The ad is a traditional vertical skyscraper ad.
+            </summary>
+        </member>
+        <member name="F:Roblox.Economy.RobloxProduct.UserAd_300x250">
+            <summary>
+            The ad is a traditional square ad.
+            </summary>
+        </member>
+        <member name="F:Roblox.Economy.RobloxProduct.UserAd_PromotedUniverseDesktop">
+            <summary>
+            The ad is a promoted universe for desktop.
+            </summary>
+        </member>
+        <member name="F:Roblox.Economy.RobloxProduct.UserAd_PromotedUniverseTablet">
+            <summary>
+            The ad is a promoted universe for tablet.
+            </summary>
+        </member>
+        <member name="F:Roblox.Economy.RobloxProduct.UserAd_PromotedUniversePhone">
+            <summary>
+            The ad is a promoted universe for phone.
+            </summary>
+        </member>
+        <member name="F:Roblox.Economy.RobloxProduct.UserAd_PromotedUniverseConsole">
+            <summary>
+            The ad is a promoted universe for console.
+            </summary>
+        </member>
+        <member name="M:Roblox.Economy.UserLoginAward.TryAward">
+            <summary>
+            Checks if the user should receive the login reward, and if so proceeds to reward (and updates records).
+            
+            NOTE: Currently this method doesn't actually reward anything, because what used to be rewarded is a deprecated feature
+            and the quantity to reward had been set to 0 since 2016.
+            </summary>
+        </member>
+    </members>
+</doc>

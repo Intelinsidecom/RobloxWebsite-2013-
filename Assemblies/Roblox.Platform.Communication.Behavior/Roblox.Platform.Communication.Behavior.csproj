@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Communication.Behavior</AssemblyName>
@@ -12,14 +12,20 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.TextFilter">
+      <HintPath>..\..\Website\bin\Roblox.TextFilter.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Infractions">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Infractions.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
@@ -31,7 +37,7 @@
       <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.EventStream.WebEvents">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
   </ItemGroup>

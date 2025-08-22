@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Moderation</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Moderation.AnyAbuseReport">
+            <summary>
+            The newer AnyAbuseReport copied and modified from SCL. This uses a delegate instead of accessing 
+            static dependencies.
+            </summary>
+        </member>
+        <member name="T:Roblox.Moderation.BadgeAbuseReport">
+            <summary>
+            Badge abuse report
+            </summary>
+        </member>
+        <member name="T:Roblox.Moderation.GameUpdateAbuseReport">
+            <summary>
+            Game Update abuse report
+            </summary>
+        </member>
+        <member name="T:Roblox.Moderation.WebApplicationUrlGetter">
+            <summary>
+            Delegate should return the containing web application's URL.
+            </summary>
+            <remarks>Formerly this returned the Roblox.Common.Web.ApplicationURL</remarks>
+            <returns>The application's URL as a string.</returns>
+        </member>
+        <member name="T:Roblox.Moderation.WebAbuseReport">
+            <summary>
+            This is a copy of the SCL WebAbuseReport that uses the <see cref="T:Roblox.Moderation.WebApplicationUrlGetter"/> to remove
+            static dependencies.
+            </summary>
+        </member>
+        <member name="M:Roblox.Moderation.WebAbuseReport.BuildContextUrl">
+            <summary>
+            Builds the relative context url 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Moderation.CoarseTextScrub">
+            <summary>
+            Implements <see cref="T:Roblox.Moderation.IUtteranceTextScrub"/>.
+            </summary>
+            <remarks>
+            This is called "coarse" primarily because it supports the <see cref="T:Roblox.Moderation.CoarseUtteranceSource"/>. 
+            Additionally there are other text (prose) scrubs that include an ID
+            or other information from an <seealso cref="T:Roblox.Moderation.IUtteranceSource"/> such as 
+            <see cref="!:GroupNameSource" />. It is also a way to reduce the surface area of IUtteranceSource
+            which doesn't need to know about the ScrubText property.
+            
+            Those custom implementations don't use the old ScrubText property and instead provide a
+            finer scrubbed text in the <see cref="T:Roblox.Moderation.IUtteranceScrubber"/> implementation itself.
+            
+            It's not clear if it makes sense to continue the IUtteranceTextScrub pattern or how to 
+            better handle scrubbed text. There will probably eventually be concerns about how to 
+            localize moderated text too.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Moderation.CoarseTextScrub.ScrubText">
+            <inheritdoc cref="P:Roblox.Moderation.IUtteranceTextScrub.ScrubText"/>
+        </member>
+        <member name="T:Roblox.Moderation.AssetVersionSource">
+            <summary>
+            The <see cref="T:Roblox.Moderation.IUtteranceSource"/> for SCL.AssetVersion without the need to add a dependency to SCL.
+            </summary>
+            <inheritdoc cref="T:Roblox.Moderation.CoarseUtteranceSource"/>
+        </member>
+        <member name="T:Roblox.Moderation.BadgeDescriptionSource">
+            <summary>
+            Badge description utterance source.
+            </summary>
+        </member>
+        <member name="P:Roblox.Moderation.BadgeDescriptionSource.IsProse">
+            <inheritdoc cref="P:Roblox.Moderation.CoarseUtteranceSource.IsProse"/>
+        </member>
+        <member name="P:Roblox.Moderation.BadgeDescriptionSource.Type">
+            <inheritdoc cref="P:Roblox.Moderation.CoarseUtteranceSource.Type"/>
+        </member>
+        <member name="M:Roblox.Moderation.BadgeDescriptionSource.#ctor(System.Int64)">
+            <summary>
+            The constructor to create a badge description utterance source.
+            </summary>
+            <param name="badgeId">The badge identifier</param>
+        </member>
+        <member name="T:Roblox.Moderation.BadgeSource">
+            <summary>
+            Abstract class for Badge utterance sources
+            </summary>
+        </member>
+        <member name="P:Roblox.Moderation.BadgeSource.SourceID">
+            <inheritdoc cref="P:Roblox.Moderation.CoarseUtteranceSource.SourceID"/>
+        </member>
+        <member name="T:Roblox.Moderation.BadgeNameSource">
+            <summary>
+            Badge name utterance source.
+            </summary>
+        </member>
+        <member name="P:Roblox.Moderation.BadgeNameSource.IsProse">
+            <inheritdoc cref="P:Roblox.Moderation.CoarseUtteranceSource.IsProse"/>
+        </member>
+        <member name="P:Roblox.Moderation.BadgeNameSource.Type">
+            <inheritdoc cref="P:Roblox.Moderation.CoarseUtteranceSource.Type"/>
+        </member>
+        <member name="M:Roblox.Moderation.BadgeNameSource.#ctor(System.Int64)">
+            <summary>
+            The constructor to create a badge name utterance source.
+            </summary>
+            <param name="badgeId">The badge identifier</param>
+        </member>
+        <member name="T:Roblox.Moderation.GameUpdateBodySource">
+            <summary>
+            Game Update description utterance source.
+            </summary>
+        </member>
+        <member name="M:Roblox.Moderation.GameUpdateBodySource.#ctor(System.Int64)">
+            <summary>
+            The constructor to create a GameUpdate description utterance source.
+            </summary>
+            <param name="gameUpdateId">The GameUpdate identifier</param>
+        </member>
+        <member name="P:Roblox.Moderation.GameUpdateBodySource.SourceID">
+            <inheritdoc cref="P:Roblox.Moderation.CoarseUtteranceSource.SourceID"/>
+        </member>
+        <member name="P:Roblox.Moderation.GameUpdateBodySource.IsProse">
+            <inheritdoc cref="P:Roblox.Moderation.CoarseUtteranceSource.IsProse"/>
+        </member>
+        <member name="P:Roblox.Moderation.GameUpdateBodySource.Type">
+            <inheritdoc cref="P:Roblox.Moderation.CoarseUtteranceSource.Type"/>
+        </member>
+        <member name="T:Roblox.Moderation.IUtteranceTextScrub">
+            <summary>
+            When an Utterance is scrubbable, it must implement this interface.
+            </summary>
+        </member>
+        <member name="P:Roblox.Moderation.IUtteranceTextScrub.ScrubText">
+            <summary>
+            The text used to replace bad text
+            </summary>
+        </member>
+        <member name="T:Roblox.Moderation.IUtteranceScrubber">
+            <summary>
+            When an Utterance is scrubbable, it must implement this interface.
+            </summary>
+        </member>
+        <member name="M:Roblox.Moderation.IUtteranceScrubber.Scrub">
+             <summary>
+             Calling this method should scrub the utterance. For example, if this is a FooNameUtterance,
+             the name of Foo would be scrubbed. For text scrubbing, it should use the value from <see cref="P:Roblox.Moderation.IUtteranceTextScrub.ScrubText"/>
+            
+             This is the write side. An <see cref="T:Roblox.Moderation.IUtteranceSource"/> is the utterance reader.
+             </summary>
+             <remarks>Legacy SCL UtteranceSources implement both IUtteranceScrubber and IUtteranceSource. This is an anti-pattern.</remarks>
+        </member>
+        <member name="T:Roblox.Moderation.IUtteranceSource">
+             <summary>
+             This defines an utterance source interface. It is a reading interface.
+             See <see cref="T:Roblox.Moderation.IUtteranceScrubber"/> for the write interface.
+            
+             <see cref="T:Roblox.Moderation.IUtteranceSourceFactory"/> is used to instantiate IUtteranceSource.
+             </summary>
+        </member>
+        <member name="P:Roblox.Moderation.IUtteranceSource.IsProse">
+            <summary>
+            Is the moderatable source made up of words?
+            </summary>
+        </member>
+        <member name="P:Roblox.Moderation.IUtteranceSource.SourceID">
+            <summary>
+            The nullable target ID of the source.
+            </summary>
+        </member>
+        <member name="P:Roblox.Moderation.IUtteranceSource.Type">
+            <summary>
+            The <see cref="T:Roblox.Moderation.UtteranceSourceType"/> (an entity DAL) representing
+            the type of source.
+            </summary>
+        </member>
+        <member name="T:Roblox.Moderation.IUtteranceSourceFactory">
+            <summary>
+            Creates instances of <see cref="T:Roblox.Moderation.IUtteranceSource"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Moderation.IUtteranceSourceFactory.Create(Roblox.Moderation.UtteranceSourceType,System.Nullable{System.Int64})">
+            <summary>
+            Creates instances of <see cref="T:Roblox.Moderation.IUtteranceSource"/>.
+            </summary>
+            <remarks>
+            Currently this depends on <see cref="T:Roblox.Moderation.UtteranceSourceType"/> which 
+            is an entity DAL. :(
+            </remarks>
+            <param name="utteranceSourceType"><see cref="T:Roblox.Moderation.UtteranceSourceType"/> of the utterance's source.</param>
+            <param name="sourceId">Nullable ID of the Asset, Badge, etc.</param>
+        </member>
+        <member name="M:Roblox.Moderation.Punishment.GetUtterancesForPunishment">
+            <summary>
+            Load all of the Utterances connected to this Punishment.
+            Note that the UserID must match the Utterer.
+            Extra Note:
+             - If you think this needs to live somewhere better, you are completely correct.
+             - It lives here for now because it was copy-pasted across CS and Moderation.
+            </summary>
+            <returns>The List of Utterances</returns>
+        </member>
+        <member name="T:Roblox.Moderation.CoarseUtteranceSource">
+            <summary>
+            A composite base class for legacy SCL UtteranceSources.
+            </summary>
+            <remarks>
+            This class exists to easily move the legacy SCL UtteranceSources (which were used in pure read-only
+            situations and scrubbing, i.e. writing, situations) into the split <see cref="T:Roblox.Moderation.IUtteranceSource"/> 
+            readers and the <see cref="T:Roblox.Moderation.IUtteranceScrubber"/> writer implementations.
+            
+            In part these are "coarse" because the classes that they support have too much responsibility.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Moderation.CoarseUtteranceSource.IsProse">
+            <inheritdoc cref="P:Roblox.Moderation.IUtteranceSource.IsProse"/>
+        </member>
+        <member name="P:Roblox.Moderation.CoarseUtteranceSource.SourceID">
+            <inheritdoc cref="P:Roblox.Moderation.IUtteranceSource.SourceID"/>
+        </member>
+        <member name="P:Roblox.Moderation.CoarseUtteranceSource.Type">
+            <inheritdoc cref="P:Roblox.Moderation.IUtteranceSource.Type"/>
+        </member>
+        <member name="F:Roblox.Moderation.UtteranceSourceType.AssetDescription">
+            <remarks>
+            Changes here should be mirrored in all the following places:
+             - Roblox.Platform.Moderation.AbuseReports.UtteranceSourceType
+             - Roblox.Platform.Moderation.AbuseReports.Entities.UtteranceSourceTypeEntityFactory
+             - Roblox.Platform.Moderation.ModeratorActions.UtteranceScrubberFactory
+             - Roblox.Moderation.UtteranceSourceType
+             - Roblox.Moderation.AbuseReports.UtteranceSourceFactory
+            </remarks>
+        </member>
+        <member name="F:Roblox.Moderation.UtteranceSourceType.GroupRoleSetName">
+            IMPORTANT: WHEN YOU ADD ONE TO THIS LIST, YOU MUST MODIFY ALL THE CLASSES LISTED ABOVE!!! *
+        </member>
+        <member name="M:Roblox.Moderation.UtteranceSourceType.#ctor">
+            IMPORTANT: WHEN YOU ADD ONE TO THIS LIST, YOU MUST MODIFY ALL THE CLASSES LISTED ABOVE!!! *
+        </member>
+        <member name="T:Roblox.Moderation.EvaluationAid">
+            <summary>
+            Holder / renderer for AbuseType + Message + Color.
+            Shared between /Admi &amp; CSWebsite.
+            </summary>
+        </member>
+        <member name="T:Roblox.Moderation.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

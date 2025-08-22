@@ -25,8 +25,6 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 	public PersistedMessageFactory(IAmazonDynamoDB dynamoDbClient, ILogger logger)
 		: base(logger)
 	{
-		//IL_0034: Unknown result type (might be due to invalid IL or missing references)
-		//IL_003e: Expected O, but got Unknown
 		_DynamoDbClient = dynamoDbClient ?? throw new PlatformArgumentNullException("dynamoDbClient");
 		try
 		{
@@ -105,28 +103,6 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 
 	private IReadOnlyCollection<Guid> GetMessageIdsFromConversation(long conversationId, int pageSize, Guid? exclusiveStartKeyId = null, long? exclusiveStartKeyTimestampTicks = null, bool sortByTimestampAsc = false)
 	{
-		//IL_0007: Unknown result type (might be due to invalid IL or missing references)
-		//IL_000c: Unknown result type (might be due to invalid IL or missing references)
-		//IL_001a: Expected O, but got Unknown
-		//IL_001a: Unknown result type (might be due to invalid IL or missing references)
-		//IL_001f: Unknown result type (might be due to invalid IL or missing references)
-		//IL_002b: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0036: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0046: Unknown result type (might be due to invalid IL or missing references)
-		//IL_005c: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0064: Unknown result type (might be due to invalid IL or missing references)
-		//IL_006c: Expected O, but got Unknown
-		//IL_0077: Unknown result type (might be due to invalid IL or missing references)
-		//IL_007c: Unknown result type (might be due to invalid IL or missing references)
-		//IL_008c: Unknown result type (might be due to invalid IL or missing references)
-		//IL_009d: Expected O, but got Unknown
-		//IL_00cc: Unknown result type (might be due to invalid IL or missing references)
-		//IL_00d1: Unknown result type (might be due to invalid IL or missing references)
-		//IL_00e1: Unknown result type (might be due to invalid IL or missing references)
-		//IL_00e7: Unknown result type (might be due to invalid IL or missing references)
-		//IL_00ec: Unknown result type (might be due to invalid IL or missing references)
-		//IL_00f9: Expected O, but got Unknown
-		//IL_00fe: Expected O, but got Unknown
 		List<Guid> messageIds = new List<Guid>(pageSize);
 		AttributeValue hashAttribute = new AttributeValue
 		{
@@ -136,7 +112,7 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 		{
 			TableName = _ChatMessagesTableName,
 			IndexName = "IX_ConversationIdSortOrder",
-			Select = Select.op_Implicit("SPECIFIC_ATTRIBUTES"),
+			Select = Select.SPECIFIC_ATTRIBUTES,
 			AttributesToGet = new List<string> { "Id" },
 			ScanIndexForward = sortByTimestampAsc,
 			Limit = pageSize
@@ -146,7 +122,7 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 			"ConversationId",
 			new Condition
 			{
-				ComparisonOperator = ComparisonOperator.op_Implicit("EQ"),
+				ComparisonOperator = ComparisonOperator.EQ,
 				AttributeValueList = { hashAttribute }
 			}
 		} };
@@ -155,7 +131,7 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 			string sortOrder = GetSortOrder(exclusiveStartKeyTimestampTicks.Value, exclusiveStartKeyId.Value);
 			conditions.Add("SortOrder", new Condition
 			{
-				ComparisonOperator = ComparisonOperator.op_Implicit("LT"),
+				ComparisonOperator = ComparisonOperator.LT,
 				AttributeValueList = 
 				{
 					new AttributeValue
@@ -166,7 +142,7 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 			});
 		}
 		readRequest.KeyConditions = conditions;
-		List<Dictionary<string, AttributeValue>> items = _DynamoDbClient.Query(readRequest).Items;
+		List<Dictionary<string, AttributeValue>> items = _DynamoDbClient.QueryAsync(readRequest).GetAwaiter().GetResult().Items;
 		if (items == null || items.Count == 0)
 		{
 			return new List<Guid>();
@@ -181,13 +157,6 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 
 	private IReadOnlyCollection<IChatMessageEntity> GetChatMessagesFromIds(IReadOnlyCollection<Guid> messageIds)
 	{
-		//IL_0000: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0005: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0012: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0017: Unknown result type (might be due to invalid IL or missing references)
-		//IL_004c: Expected O, but got Unknown
-		//IL_0051: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0062: Expected O, but got Unknown
 		BatchGetItemRequest batchGetItemRequest = new BatchGetItemRequest
 		{
 			RequestItems = new Dictionary<string, KeysAndAttributes> { 
@@ -205,18 +174,14 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 					} }).ToList()
 				}
 			} },
-			ReturnConsumedCapacity = ReturnConsumedCapacity.op_Implicit("TOTAL")
+			ReturnConsumedCapacity = ReturnConsumedCapacity.TOTAL
 		};
-		List<Dictionary<string, AttributeValue>> responses = _DynamoDbClient.BatchGetItem(batchGetItemRequest).Responses[_ChatMessagesTableName];
+		List<Dictionary<string, AttributeValue>> responses = _DynamoDbClient.BatchGetItemAsync(batchGetItemRequest).GetAwaiter().GetResult().Responses[_ChatMessagesTableName];
 		return GetChatMessageFromDictionary(responses);
 	}
 
 	private IReadOnlyCollection<IChatMessageEntity> GetChatMessagesFromIdsViaDynamoDbContext(IReadOnlyCollection<Guid> messageIds)
 	{
-		//IL_0000: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0005: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0012: Expected O, but got Unknown
-		//IL_0085: Expected O, but got Unknown
 		try
 		{
 			DynamoDBOperationConfig config = new DynamoDBOperationConfig
@@ -232,7 +197,7 @@ internal class PersistedMessageFactory : PersistedMessageDataAccessor, IPersiste
 			{
 				batches.AddKey((object)messageId);
 			}
-			((BatchGet)batches).Execute();
+			((BatchGet)batches).ExecuteAsync().GetAwaiter().GetResult();
 			return batches.Results.Select(base.Translate).ToList();
 		}
 		catch (AmazonDynamoDBException val)

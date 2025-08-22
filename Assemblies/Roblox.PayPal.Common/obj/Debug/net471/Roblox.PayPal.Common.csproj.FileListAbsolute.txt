@@ -23,3 +23,6 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PayPal.Com
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PayPal.Common\obj\Debug\net471\Roblox.P.AF2E1CBE.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PayPal.Common\obj\Debug\net471\Roblox.PayPal.Common.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PayPal.Common\obj\Debug\net471\Roblox.PayPal.Common.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PayPal.Common\bin\Debug\net471\System.Security.AccessControl.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PayPal.Common\bin\Debug\net471\System.Security.Permissions.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PayPal.Common\bin\Debug\net471\System.Security.Principal.Windows.dll

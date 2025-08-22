@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.PremiumFeatures</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -12,7 +12,6 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Billing.Client" />
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
@@ -22,7 +21,6 @@
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.PremiumFeatures.Client" />
     <Reference Include="Roblox.Platform.Localization.Accounts">
       <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Accounts.dll</HintPath>
     </Reference>

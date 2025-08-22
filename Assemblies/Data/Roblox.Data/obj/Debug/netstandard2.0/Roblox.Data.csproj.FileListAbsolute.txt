@@ -11,8 +11,6 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Configuration.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.EventLog.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Instrumentation.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\StackExchange.Redis.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.MemCachedClient.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Common.NetStandard.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Redis.dll
@@ -21,11 +19,15 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Sentinels.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Hashing.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.ServiceDiscovery.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Consul.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Caching.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Configuration.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.EventLog.pdb
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\obj\Debug\netstandard2.0\Roblox.D.283FC688.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\obj\Debug\netstandard2.0\Roblox.Data.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\obj\Debug\netstandard2.0\Roblox.Data.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Common.NetStandard.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Hashing.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Instrumentation.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.MemCachedClient.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Redis.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.ServiceDiscovery.pdb

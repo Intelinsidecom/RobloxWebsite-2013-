@@ -19,3 +19,5 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Games.Clie
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Games.Client\obj\Debug\netstandard2.0\Roblox.G.798F7388.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Games.Client\obj\Debug\netstandard2.0\Roblox.Games.Client.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Games.Client\obj\Debug\netstandard2.0\Roblox.Games.Client.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Games.Client\bin\Debug\netstandard2.0\Roblox.DataV2.Core.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Games.Client\bin\Debug\netstandard2.0\Roblox.DataV2.Core.pdb

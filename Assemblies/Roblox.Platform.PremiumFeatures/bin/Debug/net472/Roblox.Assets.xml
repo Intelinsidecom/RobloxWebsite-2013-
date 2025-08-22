@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Assets</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Assets.Asset">
+            <summary>
+            The asset class should ideally have it's own assembly to make it easily portable between projects, this a crude beginning
+            </summary>
+        </member>
+        <member name="T:Roblox.Assets.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

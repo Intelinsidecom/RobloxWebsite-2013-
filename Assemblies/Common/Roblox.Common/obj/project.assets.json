@@ -37,6 +37,22 @@
           }
         }
       },
+      "System.Data.SqlClient/4.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
       "System.Security.AccessControl/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -112,6 +128,52 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "Roblox.Common.NetStandard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Common.NetStandard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Common.NetStandard.dll": {}
+        }
+      },
+      "Roblox.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Configuration.dll": {}
+        }
+      },
+      "Roblox.EventLog/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        }
+      },
+      "Roblox.Hashing/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Hashing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Hashing.dll": {}
         }
       }
     }
@@ -531,6 +593,39 @@
         "version.txt"
       ]
     },
+    "System.Data.SqlClient/4.9.0": {
+      "sha512": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
+      "type": "package",
+      "path": "system.data.sqlclient/4.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Data.SqlClient.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Data.SqlClient.targets",
+        "lib/net462/System.Data.SqlClient.dll",
+        "lib/net462/System.Data.SqlClient.xml",
+        "lib/net6.0/System.Data.SqlClient.dll",
+        "lib/net6.0/System.Data.SqlClient.xml",
+        "lib/net8.0/System.Data.SqlClient.dll",
+        "lib/net8.0/System.Data.SqlClient.xml",
+        "lib/netstandard2.0/System.Data.SqlClient.dll",
+        "lib/netstandard2.0/System.Data.SqlClient.xml",
+        "runtimes/unix/lib/net6.0/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/net6.0/System.Data.SqlClient.xml",
+        "runtimes/unix/lib/net8.0/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/net8.0/System.Data.SqlClient.xml",
+        "runtimes/win/lib/net6.0/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net6.0/System.Data.SqlClient.xml",
+        "runtimes/win/lib/net8.0/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net8.0/System.Data.SqlClient.xml",
+        "system.data.sqlclient.4.9.0.nupkg.sha512",
+        "system.data.sqlclient.nuspec"
+      ]
+    },
     "System.Security.AccessControl/4.7.0": {
       "sha512": "JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
       "type": "package",
@@ -657,12 +752,37 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Roblox.Common.NetStandard/1.0.0": {
+      "type": "project",
+      "path": "../Roblox.Common.NetStandard/Roblox.Common.NetStandard.csproj",
+      "msbuildProject": "../Roblox.Common.NetStandard/Roblox.Common.NetStandard.csproj"
+    },
+    "Roblox.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../../Configuration/Roblox.Configuration/Roblox.Configuration.csproj",
+      "msbuildProject": "../../Configuration/Roblox.Configuration/Roblox.Configuration.csproj"
+    },
+    "Roblox.EventLog/1.0.0": {
+      "type": "project",
+      "path": "../../EventLog/Roblox.EventLog/Roblox.EventLog.csproj",
+      "msbuildProject": "../../EventLog/Roblox.EventLog/Roblox.EventLog.csproj"
+    },
+    "Roblox.Hashing/1.0.0": {
+      "type": "project",
+      "path": "../../Hashing/Roblox.Hashing/Roblox.Hashing.csproj",
+      "msbuildProject": "../../Hashing/Roblox.Hashing/Roblox.Hashing.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.1": [
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.3",
-      "System.Configuration.ConfigurationManager >= 4.7.0"
+      "Roblox.Common.NetStandard >= 1.0.0",
+      "Roblox.Configuration >= 1.0.0",
+      "Roblox.EventLog >= 1.0.0",
+      "Roblox.Hashing >= 1.0.0",
+      "System.Configuration.ConfigurationManager >= 4.7.0",
+      "System.Data.SqlClient >= 4.9.0"
     ]
   },
   "packageFolders": {
@@ -697,7 +817,20 @@
       "frameworks": {
         "net471": {
           "targetAlias": "net471",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Common\\Roblox.Common.NetStandard\\Roblox.Common.NetStandard.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Common\\Roblox.Common.NetStandard\\Roblox.Common.NetStandard.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\EventLog\\Roblox.EventLog\\Roblox.EventLog.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\EventLog\\Roblox.EventLog\\Roblox.EventLog.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Hashing\\Roblox.Hashing\\Roblox.Hashing.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Hashing\\Roblox.Hashing\\Roblox.Hashing.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -725,6 +858,10 @@
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
             "version": "[4.7.0, )"
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.9.0, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"

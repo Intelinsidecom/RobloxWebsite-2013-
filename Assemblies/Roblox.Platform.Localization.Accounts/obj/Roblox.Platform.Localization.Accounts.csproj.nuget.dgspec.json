@@ -59,7 +59,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[9.0.8, )"
+              "version": "[4.7.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

@@ -226,3 +226,6 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.L
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Localization.Accounts\obj\Debug\net471\Roblox.P.A64C82AF.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Localization.Accounts\obj\Debug\net471\Roblox.Platform.Localization.Accounts.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Localization.Accounts\obj\Debug\net471\Roblox.Platform.Localization.Accounts.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Localization.Accounts\bin\Debug\net471\System.Security.AccessControl.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Localization.Accounts\bin\Debug\net471\System.Security.Permissions.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Localization.Accounts\bin\Debug\net471\System.Security.Principal.Windows.dll

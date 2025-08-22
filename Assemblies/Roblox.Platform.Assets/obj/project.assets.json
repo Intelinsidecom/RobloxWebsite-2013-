@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
+      "Consul/1.6.10.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http",
+          "System.Net.Http.WebRequest"
+        ],
+        "compile": {
+          "lib/net461/Consul.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Consul.dll": {}
+        }
+      },
       "Magick.NET-Q8-AnyCPU/14.7.0": {
         "type": "package",
         "dependencies": {
@@ -68,26 +82,58 @@
           }
         }
       },
-      "System.Configuration.ConfigurationManager/7.0.0": {
+      "Newtonsoft.Json/13.0.3": {
         "type": "package",
-        "dependencies": {
-          "System.Security.Permissions": "7.0.0"
-        },
-        "frameworkAssemblies": [
-          "System.Configuration"
-        ],
         "compile": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+          "lib/net45/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "StackExchange.Redis/1.2.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net46/StackExchange.Redis.dll": {
             "related": ".xml"
           }
         },
-        "build": {
-          "buildTransitive/net462/_._": {}
+        "runtime": {
+          "lib/net46/StackExchange.Redis.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Configuration",
+          "System.Drawing",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Data.SqlClient/4.9.0": {
@@ -104,6 +150,24 @@
         },
         "build": {
           "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Runtime.Caching/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Caching"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net45/_._": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Security.AccessControl/6.0.0": {
@@ -128,7 +192,7 @@
           }
         }
       },
-      "System.Security.Permissions/7.0.0": {
+      "System.Security.Permissions/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0"
@@ -143,17 +207,20 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net462/System.Security.Permissions.dll": {
+          "lib/net461/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net462/System.Security.Permissions.dll": {
+          "lib/net461/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
-        "build": {
-          "buildTransitive/net462/_._": {}
+        "runtimeTargets": {
+          "runtimes/win/lib/net461/System.Security.Permissions.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Security.Principal.Windows/5.0.0": {
@@ -203,12 +270,78 @@
           "bin/placeholder/Roblox.Assets.Client.dll": {}
         }
       },
+      "Roblox.Caching/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Common.NetStandard": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.MemCachedClient": "1.0.0",
+          "Roblox.Redis": "1.0.0",
+          "StackExchange.Redis": "1.2.6",
+          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Runtime.Caching": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Caching.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Caching.dll": {}
+        }
+      },
+      "Roblox.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.1",
+        "dependencies": {
+          "Roblox.Common.NetStandard": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.Hashing": "1.0.0",
+          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Data.SqlClient": "4.9.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Common.dll": {}
+        }
+      },
+      "Roblox.Common.NetStandard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Common.NetStandard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Common.NetStandard.dll": {}
+        }
+      },
+      "Roblox.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Configuration.dll": {}
+        }
+      },
       "Roblox.Drawing/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
           "Magick.NET-Q8-AnyCPU": "14.7.0",
-          "System.Configuration.ConfigurationManager": "7.0.0"
+          "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Drawing.dll": {}
@@ -217,17 +350,76 @@
           "bin/placeholder/Roblox.Drawing.dll": {}
         }
       },
+      "Roblox.EventLog/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        }
+      },
       "Roblox.FloodCheckers/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "7.0.0"
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.FloodCheckers.Core": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
           "bin/placeholder/Roblox.FloodCheckers.dll": {}
         },
         "runtime": {
           "bin/placeholder/Roblox.FloodCheckers.dll": {}
+        }
+      },
+      "Roblox.FloodCheckers.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.EventLog": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.FloodCheckers.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.FloodCheckers.Core.dll": {}
+        }
+      },
+      "Roblox.Hashing/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Hashing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Hashing.dll": {}
+        }
+      },
+      "Roblox.Instrumentation/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Instrumentation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Instrumentation.dll": {}
+        }
+      },
+      "Roblox.MemCachedClient/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.MemCachedClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.MemCachedClient.dll": {}
         }
       },
       "Roblox.Paging/1.0.0": {
@@ -270,11 +462,47 @@
           "bin/placeholder/Roblox.Platform.Membership.UserDataAuditCore.dll": {}
         }
       },
+      "Roblox.Redis/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.Hashing": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.ServiceDiscovery": "1.0.0",
+          "StackExchange.Redis": "1.2.6",
+          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Security.Permissions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Redis.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Redis.dll": {}
+        }
+      },
+      "Roblox.ServiceDiscovery/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Consul": "1.6.10.4",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.ServiceDiscovery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.ServiceDiscovery.dll": {}
+        }
+      },
       "Roblox.TextFilter/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "7.0.0"
+          "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
           "bin/placeholder/Roblox.TextFilter.dll": {}
@@ -296,6 +524,19 @@
     }
   },
   "libraries": {
+    "Consul/1.6.10.4": {
+      "sha512": "5L3O7XirEx3bJ03OjMVdi/hdRLpkH/gRilgMZzk55Is5ttJ4GamwW+aONfFVneTKRKBpcCw/gIH5qoz4zomi1g==",
+      "type": "package",
+      "path": "consul/1.6.10.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "consul.1.6.10.4.nupkg.sha512",
+        "consul.nuspec",
+        "lib/net461/Consul.dll",
+        "lib/netstandard2.0/Consul.dll"
+      ]
+    },
     "Magick.NET-Q8-AnyCPU/14.7.0": {
       "sha512": "JQiOjOPXJar57Ew5YeD28zE1pbHpSKBYYQZBNkqhvXbLxCcTmu8djfVLKkqTcTAxFX/Mcj14j2RB+ORkCYD9Jw==",
       "type": "package",
@@ -345,31 +586,74 @@
         "magick.net.core.nuspec"
       ]
     },
-    "System.Configuration.ConfigurationManager/7.0.0": {
-      "sha512": "WvRUdlL1lB0dTRZSs5XcQOd5q9MYNk90GkbmRmiCvRHThWiojkpGqWdmEDJdXyHbxG/BhE5hmVbMfRLXW9FJVA==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/7.0.0",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "StackExchange.Redis/1.2.6": {
+      "sha512": "uBzdFmPmsCJWZ/Iau85+2Ogal6nPiY5gT8pl2gA7R4dQ14GwRpwyTGkTuD1+hgHVuBW+zkCSnysmWc7h277r/g==",
+      "type": "package",
+      "path": "stackexchange.redis/1.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/StackExchange.Redis.dll",
+        "lib/net45/StackExchange.Redis.xml",
+        "lib/net46/StackExchange.Redis.dll",
+        "lib/net46/StackExchange.Redis.xml",
+        "lib/netstandard1.5/StackExchange.Redis.dll",
+        "lib/netstandard1.5/StackExchange.Redis.xml",
+        "stackexchange.redis.1.2.6.nupkg.sha512",
+        "stackexchange.redis.nuspec"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/4.7.0": {
+      "sha512": "/anOTeSZCNNI2zDilogWrZ8pNqCmYbzGNexUnNhjW8k0sHqEZ2nHJBp147jBV3hGYswu5lINpNg1vxR7bnqvVA==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
-        "lib/net462/System.Configuration.ConfigurationManager.dll",
-        "lib/net462/System.Configuration.ConfigurationManager.xml",
-        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
-        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
-        "lib/net7.0/System.Configuration.ConfigurationManager.dll",
-        "lib/net7.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/net461/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+        "ref/net461/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.xml",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.4.7.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
-        "useSharedDesignerContext.txt"
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Data.SqlClient/4.9.0": {
@@ -405,6 +689,42 @@
         "system.data.sqlclient.nuspec"
       ]
     },
+    "System.Runtime.Caching/4.7.0": {
+      "sha512": "NdvNRjTPxYvIEhXQszT9L9vJhdQoX6AQ0AlhjTU+5NqFQVuacJTfhPVAvtGWNA2OJCqRiR/okBcZgMwI6MqcZg==",
+      "type": "package",
+      "path": "system.runtime.caching/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Runtime.Caching.dll",
+        "lib/netstandard2.0/System.Runtime.Caching.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Runtime.Caching.dll",
+        "ref/netstandard2.0/System.Runtime.Caching.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net45/_._",
+        "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
+        "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.xml",
+        "system.runtime.caching.4.7.0.nupkg.sha512",
+        "system.runtime.caching.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Security.AccessControl/6.0.0": {
       "sha512": "AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ==",
       "type": "package",
@@ -434,29 +754,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Permissions/7.0.0": {
-      "sha512": "Vmp0iRmCEno9BWiskOW5pxJ3d9n+jUqKxvX4GhLwFhnQaySZmBN2FuC0N5gjFHgyFMUjC5sfIJ8KZfoJwkcMmA==",
+    "System.Security.Permissions/6.0.0": {
+      "sha512": "T/uuc7AklkDoxmcJ7LGkyX1CcSviZuLCa4jg3PekfJ7SU0niF0IVTXwUiNVP9DSpzou2PpxJ+eNY2IfDM90ZCg==",
       "type": "package",
-      "path": "system.security.permissions/7.0.0",
+      "path": "system.security.permissions/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Security.Permissions.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Permissions.targets",
-        "lib/net462/System.Security.Permissions.dll",
-        "lib/net462/System.Security.Permissions.xml",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/net461/System.Security.Permissions.xml",
+        "lib/net5.0/System.Security.Permissions.dll",
+        "lib/net5.0/System.Security.Permissions.xml",
         "lib/net6.0/System.Security.Permissions.dll",
         "lib/net6.0/System.Security.Permissions.xml",
-        "lib/net7.0/System.Security.Permissions.dll",
-        "lib/net7.0/System.Security.Permissions.xml",
+        "lib/netcoreapp3.1/System.Security.Permissions.dll",
+        "lib/netcoreapp3.1/System.Security.Permissions.xml",
         "lib/netstandard2.0/System.Security.Permissions.dll",
         "lib/netstandard2.0/System.Security.Permissions.xml",
-        "system.security.permissions.7.0.0.nupkg.sha512",
+        "runtimes/win/lib/net461/System.Security.Permissions.dll",
+        "runtimes/win/lib/net461/System.Security.Permissions.xml",
+        "system.security.permissions.6.0.0.nupkg.sha512",
         "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -526,15 +848,60 @@
       "path": "../Roblox.Assets.Client/Roblox.Assets.Client.csproj",
       "msbuildProject": "../Roblox.Assets.Client/Roblox.Assets.Client.csproj"
     },
+    "Roblox.Caching/1.0.0": {
+      "type": "project",
+      "path": "../Caching/Roblox.Caching/Roblox.Caching.csproj",
+      "msbuildProject": "../Caching/Roblox.Caching/Roblox.Caching.csproj"
+    },
+    "Roblox.Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Roblox.Common/Roblox.Common.csproj",
+      "msbuildProject": "../Common/Roblox.Common/Roblox.Common.csproj"
+    },
+    "Roblox.Common.NetStandard/1.0.0": {
+      "type": "project",
+      "path": "../Common/Roblox.Common.NetStandard/Roblox.Common.NetStandard.csproj",
+      "msbuildProject": "../Common/Roblox.Common.NetStandard/Roblox.Common.NetStandard.csproj"
+    },
+    "Roblox.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../Configuration/Roblox.Configuration/Roblox.Configuration.csproj",
+      "msbuildProject": "../Configuration/Roblox.Configuration/Roblox.Configuration.csproj"
+    },
     "Roblox.Drawing/1.0.0": {
       "type": "project",
       "path": "../Roblox.Drawing/Roblox.Drawing.csproj",
       "msbuildProject": "../Roblox.Drawing/Roblox.Drawing.csproj"
     },
+    "Roblox.EventLog/1.0.0": {
+      "type": "project",
+      "path": "../EventLog/Roblox.EventLog/Roblox.EventLog.csproj",
+      "msbuildProject": "../EventLog/Roblox.EventLog/Roblox.EventLog.csproj"
+    },
     "Roblox.FloodCheckers/1.0.0": {
       "type": "project",
       "path": "../Roblox.FloodCheckers/Roblox.FloodCheckers.csproj",
       "msbuildProject": "../Roblox.FloodCheckers/Roblox.FloodCheckers.csproj"
+    },
+    "Roblox.FloodCheckers.Core/1.0.0": {
+      "type": "project",
+      "path": "../Roblox.FloodCheckers.Core/Roblox.FloodCheckers.Core.csproj",
+      "msbuildProject": "../Roblox.FloodCheckers.Core/Roblox.FloodCheckers.Core.csproj"
+    },
+    "Roblox.Hashing/1.0.0": {
+      "type": "project",
+      "path": "../Hashing/Roblox.Hashing/Roblox.Hashing.csproj",
+      "msbuildProject": "../Hashing/Roblox.Hashing/Roblox.Hashing.csproj"
+    },
+    "Roblox.Instrumentation/1.0.0": {
+      "type": "project",
+      "path": "../Instrumentation/Roblox.Instrumentation/Roblox.Instrumentation.csproj",
+      "msbuildProject": "../Instrumentation/Roblox.Instrumentation/Roblox.Instrumentation.csproj"
+    },
+    "Roblox.MemCachedClient/1.0.0": {
+      "type": "project",
+      "path": "../Caching/Roblox.MemCachedClient/Roblox.MemCachedClient.csproj",
+      "msbuildProject": "../Caching/Roblox.MemCachedClient/Roblox.MemCachedClient.csproj"
     },
     "Roblox.Paging/1.0.0": {
       "type": "project",
@@ -555,6 +922,16 @@
       "type": "project",
       "path": "../Platform/Membership/Roblox.Platform.Membership.UserDataAuditCore/Roblox.Platform.Membership.UserDataAuditCore.csproj",
       "msbuildProject": "../Platform/Membership/Roblox.Platform.Membership.UserDataAuditCore/Roblox.Platform.Membership.UserDataAuditCore.csproj"
+    },
+    "Roblox.Redis/1.0.0": {
+      "type": "project",
+      "path": "../Redis/Roblox.Redis/Roblox.Redis.csproj",
+      "msbuildProject": "../Redis/Roblox.Redis/Roblox.Redis.csproj"
+    },
+    "Roblox.ServiceDiscovery/1.0.0": {
+      "type": "project",
+      "path": "../Roblox.ServiceDiscovery/Roblox.ServiceDiscovery.csproj",
+      "msbuildProject": "../Roblox.ServiceDiscovery/Roblox.ServiceDiscovery.csproj"
     },
     "Roblox.TextFilter/1.0.0": {
       "type": "project",

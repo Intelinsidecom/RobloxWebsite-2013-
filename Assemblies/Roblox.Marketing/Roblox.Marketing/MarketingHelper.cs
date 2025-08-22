@@ -47,7 +47,7 @@ public static class MarketingHelper
 		{
 			return null;
 		}
-		if (long.TryParse(cookie.GetValue(BrowserTrackerCookie.BrowserTrackerIDKey), out var browserTrackerId))
+		if (long.TryParse(cookie.Values[BrowserTrackerCookie.BrowserTrackerIDKey], out var browserTrackerId))
 		{
 			return browserTrackerId;
 		}
@@ -74,7 +74,9 @@ public static class MarketingHelper
 	private static RobloxCookie UpdateCookie(RobloxCookie cookie, long? browserId, string requestUrl)
 	{
 		bool isBrowserTrackerCreated = false;
+		#pragma warning disable CS0618 // Suppress obsolete API usage until WebAuthenticator available
 		long? userId = User.GetCurrentID();
+		#pragma warning restore CS0618
 		long? accountId = (userId.HasValue ? new long?(User.Get(userId.Value).AccountID) : null);
 		long browserTrackerId;
 		if (browserId.HasValue)
@@ -101,12 +103,12 @@ public static class MarketingHelper
 				ExceptionHandler.LogException(ex.InnerException ?? ex);
 			}
 		}
-		cookie.SetValue("CreateDate", DateTime.Now.ToString());
-		cookie.SetValue(BrowserTrackerCookie.PCICompliantAccountIDKey, accountId.ToString());
-		cookie.SetValue(BrowserTrackerCookie.BrowserTrackerIDKey, browserTrackerId.ToString());
+		cookie.Values["CreateDate"] = DateTime.Now.ToString();
+		cookie.Values[BrowserTrackerCookie.PCICompliantAccountIDKey] = accountId.ToString();
+		cookie.Values[BrowserTrackerCookie.BrowserTrackerIDKey] = browserTrackerId.ToString();
 		if (cookie.Name == BrowserTrackerCookie.CookieNameV2)
 		{
-			cookie.SetDomain(Settings.Default.BrowserTrackerCookie_DomainSuffix);
+			cookie.Domain = Settings.Default.BrowserTrackerCookie_DomainSuffix;
 		}
 		cookie.Save(TimeSpan.FromDays(10000.0));
 		if (isBrowserTrackerCreated && MarketingHelper.OnBrowserTrackerCreated != null)
@@ -133,7 +135,9 @@ public static class MarketingHelper
 	{
 		redirectUrl = string.Empty;
 		enrollmentScript = string.Empty;
+		#pragma warning disable CS0618 // Suppress obsolete API usage until WebAuthenticator available
 		User authenticatedUser = User.GetCurrent();
+		#pragma warning restore CS0618
 		if (Settings.Default.TrafficRoutingEnabled && !IsExcludedFromBrowserTracker(context) && authenticatedUser == null)
 		{
 			AcquisitionSource acquisitionSource = AcquisitionHelper.GetUserAcquisitionSource(context);
@@ -229,10 +233,10 @@ public static class MarketingHelper
 				cookie = RobloxCookie.Get(context, BrowserTrackerCookie.CookieName);
 				RobloxCookie cookieV2 = RobloxCookie.GetOrCreate(context, BrowserTrackerCookie.CookieNameV2, TimeSpan.FromDays(10000.0));
 				created = true;
-				cookieV2.SetDomain(Settings.Default.BrowserTrackerCookie_DomainSuffix);
-				cookieV2.SetValue("CreateDate", cookie.GetValue("CreateDate"));
-				cookieV2.SetValue(BrowserTrackerCookie.PCICompliantAccountIDKey, cookie.GetValue(BrowserTrackerCookie.PCICompliantAccountIDKey));
-				cookieV2.SetValue(BrowserTrackerCookie.BrowserTrackerIDKey, cookie.GetValue(BrowserTrackerCookie.BrowserTrackerIDKey));
+				cookieV2.Domain = Settings.Default.BrowserTrackerCookie_DomainSuffix;
+				cookieV2.Values["CreateDate"] = cookie.Values["CreateDate"];
+				cookieV2.Values[BrowserTrackerCookie.PCICompliantAccountIDKey] = cookie.Values[BrowserTrackerCookie.PCICompliantAccountIDKey];
+				cookieV2.Values[BrowserTrackerCookie.BrowserTrackerIDKey] = cookie.Values[BrowserTrackerCookie.BrowserTrackerIDKey];
 				MarketingHelper.OnBrowserTrackerV1ToV2CookieConverted?.Invoke(cookie.Name, cookie.Value, cookieV2.Name);
 				cookie = cookieV2;
 				cookie.Save(TimeSpan.FromDays(10000.0));
@@ -248,13 +252,15 @@ public static class MarketingHelper
 					BrowserTrackerCookieMonitor.Increment(BrowserTrackerInstancesEnum.BrowserTrackerV1DeletionRate.ToString());
 				}
 			}
-			if (cookie.GetValue(BrowserTrackerCookie.BrowserTrackerIDKey) == null)
+			if (cookie.Values[BrowserTrackerCookie.BrowserTrackerIDKey] == null)
 			{
 				cookie = UpdateCookie(cookie, null, context.Request.Url.ToString());
 			}
 			else
 			{
+				#pragma warning disable CS0618 // Suppress obsolete API usage until WebAuthenticator available
 				long? accountId = Account.GetCurrentID(context);
+				#pragma warning restore CS0618
 				if (accountId.HasValue && ExtractAccountID(cookie) != accountId)
 				{
 					cookie = UpdateCookie(cookie, ExtractBrowserTrackerID(cookie), context.Request.Url.ToString());
@@ -285,7 +291,7 @@ public static class MarketingHelper
 		}
 		else
 		{
-			string value = GetOrCreateBrowserTrackerCookie(context).GetValue("CreateDate");
+			string value = GetOrCreateBrowserTrackerCookie(context).Values["CreateDate"];
 			if (!string.IsNullOrEmpty(value))
 			{
 				return DateTime.Now - Convert.ToDateTime(value);

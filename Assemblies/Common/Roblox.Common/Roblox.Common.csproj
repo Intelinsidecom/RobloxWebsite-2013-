@@ -12,24 +12,19 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Web" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common.NetStandard">
-      <HintPath>..\..\..\Website\bin\Roblox.Common.NetStandard.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.Hashing">
-      <HintPath>..\..\..\Website\bin\Roblox.Hashing.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\..\Hashing\Roblox.Hashing\Roblox.Hashing.csproj" />
+    <ProjectReference Include="..\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 </Project>

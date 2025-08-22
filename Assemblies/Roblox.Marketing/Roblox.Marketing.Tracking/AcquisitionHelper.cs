@@ -103,21 +103,9 @@ public static class AcquisitionHelper
 		RobloxCookie cookie = RobloxCookie.Get(context, "RBXSource");
 		if (cookie != null)
 		{
-			acquisitionMedium = cookie.GetValue("rbx_medium");
-			if (acquisitionMedium == null)
-			{
-				acquisitionMedium = "";
-			}
-			acquisitionSource = cookie.GetValue("rbx_source");
-			if (acquisitionSource == null)
-			{
-				acquisitionSource = "";
-			}
-			acquisitionCampaign = cookie.GetValue("rbx_campaign");
-			if (acquisitionCampaign == null)
-			{
-				acquisitionCampaign = "";
-			}
+			acquisitionMedium = cookie.Values["rbx_medium"] ?? "";
+			acquisitionSource = cookie.Values["rbx_source"] ?? "";
+			acquisitionCampaign = cookie.Values["rbx_campaign"] ?? "";
 		}
 	}
 }

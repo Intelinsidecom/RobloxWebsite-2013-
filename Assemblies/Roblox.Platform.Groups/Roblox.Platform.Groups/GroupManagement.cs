@@ -7,7 +7,6 @@ using Roblox.Data;
 using Roblox.EphemeralCounters;
 using Roblox.FloodCheckers;
 using Roblox.FloodCheckers.Core;
-using Roblox.Groups.Client;
 using Roblox.Platform.Core;
 using Roblox.Platform.Groups.Counters;
 using Roblox.Platform.Groups.Events;

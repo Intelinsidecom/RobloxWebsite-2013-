@@ -40,5 +40,8 @@
     <Reference Include="Roblox.Common.Web">
       <HintPath>..\..\Website\bin\Roblox.Common.Web.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

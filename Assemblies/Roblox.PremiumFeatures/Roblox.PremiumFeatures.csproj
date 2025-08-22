@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.PremiumFeatures</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -13,45 +13,27 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Data" />
-    <Reference Include="Roblox.Data">
-      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Caching">
-      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common.Web">
-      <HintPath>..\..\Website\bin\Roblox.Common.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Locking">
-      <HintPath>..\..\Website\bin\Roblox.Locking.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetOwnership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Entities">
-      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common">
-      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Economy.Common">
-      <HintPath>..\..\Website\bin\Roblox.Economy.Common.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Roblox.Data\Roblox.Data.csproj" />
+    <ProjectReference Include="..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\Common\Roblox.Common.Web\Roblox.Common.Web.csproj" />
+    <ProjectReference Include="..\Roblox.Locking\Roblox.Locking.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.AssetOwnership\Roblox.Platform.AssetOwnership.csproj" />
+    <ProjectReference Include="..\Roblox.Entities\Roblox.Entities.csproj" />
+    <ProjectReference Include="..\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj" />
+    <ProjectReference Include="..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\Common\Roblox.Common\Roblox.Common.csproj" />
+    <ProjectReference Include="..\Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj" />
+    <ProjectReference Include="..\Roblox.Economy.Common\Roblox.Economy.Common.csproj" />
+    <ProjectReference Include="..\Roblox Server Class Library\Roblox Server Class Library.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 </Project>

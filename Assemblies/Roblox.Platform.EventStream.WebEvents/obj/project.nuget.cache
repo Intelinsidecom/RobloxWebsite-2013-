@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OE8mpeh1pVl5kFRxxUxHaPX5LXF/7S3QQviAcgAB4h4nM5fpXAwoaTvubGKhlD/vRRiSkK12X01RSyZld5N43g==",
+  "dgSpecHash": "d8G3aDBy6C4=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.EventStream.WebEvents\\Roblox.Platform.EventStream.WebEvents.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.EventStream.WebEvents\\Roblox.Platform.EventStream.WebEvents.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

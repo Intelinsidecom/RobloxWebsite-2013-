@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.BriteVerify</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.BriteVerify.BriteVerifyClient">
+            <summary>
+            BriteVerify Client
+            </summary>
+        </member>
+        <member name="M:Roblox.BriteVerify.BriteVerifyClient.#ctor(System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="apiName">Name of the parent service making these called. Used for logging.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Roblox.BriteVerify.BriteVerifyClient.#ctor(Roblox.BriteVerify.IBriteVerifyRestClient,Roblox.BriteVerify.IBriteVerifyPerformanceMonitor,Roblox.BriteVerify.Properties.IBriteVerifySettings)">
+            <summary>
+            Internal test constructor allows us to fake the restClient, performanceMonitor, and settings.
+            </summary>
+            <param name="restClient"></param>
+            <param name="performanceMonitor"></param>
+            <param name="settings">Settings for the Client</param>
+        </member>
+        <member name="M:Roblox.BriteVerify.BriteVerifyClient.VerifyEmail(Roblox.BriteVerify.IBriteVerifyEmailRequest)">
+            <summary>
+            Check the validatity of an email address.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.BriteVerify.IBriteVerifyEmailRequest"/> containing the required parameters for BriteVerify</param>
+            <returns>An <see cref="T:Roblox.BriteVerify.IBriteVerifyEmailResult"/> containing the results for both age categories</returns>
+            <exception cref="T:Roblox.BriteVerify.BriteVerifyException"></exception>
+        </member>
+        <member name="T:Roblox.BriteVerify.BriteVerifyEmailRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.BriteVerify.IBriteVerifyEmailRequest"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.BriteVerify.BriteVerifyEmailRequest.#ctor(System.String,System.Boolean)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="email"></param>
+            <param name="allowAcceptAll">allow_all is BriteVerify's soft bounce for private servers</param>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailRequest.Email">
+            <summary>
+            Email that needs to get checked.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailRequest.AcceptAll">
+            <summary>
+            Specifies whether to allow/deny accept_all
+            </summary>
+        </member>
+        <member name="T:Roblox.BriteVerify.BriteVerifyRestClient">
+            <summary>
+            Base client for making calls to BriteVerify.
+            Provides CircuitBreaker features by default.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyRestClient.Endpoint">
+            <summary>
+            Base url for calls into BriteVerify.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyRestClient.Timeout">
+            <summary>
+            Timeout for the bodyData
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyRestClient.RetryInterval">
+            <summary>
+            An override for the <see cref="!:RestClientBase.Properties.Settings.Default.DefaultCircuitBreakerRetryInterval"/> setting
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyRestClient.Name">
+            <summary>
+            Default client Name.
+            </summary>
+        </member>
+        <member name="M:Roblox.BriteVerify.BriteVerifyRestClient.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Roblox.BriteVerify.BriteVerifyRestClient.#ctor(Roblox.BriteVerify.Properties.IBriteVerifySettings)">
+            <summary>
+            Special constructor. Requires settings for Endpoint, Timeout, ApiKey
+            </summary>
+            <param name="settings"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Roblox.BriteVerify.BriteVerifyRestClient.ExecuteHttpRequest``1(System.String,Roblox.RestClientBase.RestClientBase.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>
+            Execute the given HttpRequest against BriteVerify.
+            Environment-level configurations for BriteVerify are handled within.
+            </summary>
+            <typeparam name="T">Object type into which the response will be deserialized from JSON.</typeparam>
+            <param name="actionPath">Path to the API endpoint.</param>
+            <param name="method">The HttpMethod used by this call.</param>
+            <param name="queryStringParameters">List of parameters fokr the query string.</param>
+            <exception cref="T:Roblox.Sentinels.CircuitBreakerException"></exception>
+            <exception cref="T:Roblox.RestClientBase.RequestThrottledException"></exception>
+            <exception cref="T:Roblox.RestClientBase.ApiClientException"></exception>
+            <exception cref="T:Newtonsoft.Json.JsonSerializationException"></exception>
+            <returns>An object of type T containing the successful response</returns>
+        </member>
+        <member name="T:Roblox.BriteVerify.IBriteVerifyEmailRequest">
+            <summary>
+            Basic interface for making a request to the BriteVerify Email Verification endpoint.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailRequest.Email">
+            <summary>
+            Email that needs to get checked.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailRequest.AcceptAll">
+            <summary>
+            Specifies whether to allow/deny accept_all
+            </summary>
+        </member>
+        <member name="T:Roblox.BriteVerify.IBriteVerifyEmailResult">
+            <summary>
+            Result of an Email check request.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.Address">
+            <summary>
+            The full email address.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.Account">
+            <summary>
+            The username part of the email address
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.Domain">
+            <summary>
+            The email address domain.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.Status">
+            <summary>
+            The result of the BriteVerify call.
+            http://docs.briteverify.com/status-key/
+            VALID, INVALID, ACCEPT ALL, UNKNOWN
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.Connected">
+            <summary>
+            ???.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.IsDisposable">
+            <summary>
+            Whether the email was identified as a disposable address.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.IsRoleAddress">
+            <summary>
+            ??.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.ErrorCode">
+            <summary>
+            The BriteVerify internal error code.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.Error">
+            <summary>
+            The BriteVerify error description.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.IBriteVerifyEmailResult.Duration">
+            <summary>
+            Duration of the API call, in seconds.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.Address">
+            <summary>
+            The full email address.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.Account">
+            <summary>
+            The username part of the email address
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.Domain">
+            <summary>
+            The email address domain.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.Status">
+            <summary>
+            The result of the BriteVerify call.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.Connected">
+            <summary>
+            ???.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.IsDisposable">
+            <summary>
+            Whether the email was identified as a disposable address.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.IsRoleAddress">
+            <summary>
+            ??.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.ErrorCode">
+            <summary>
+            The BriteVerify internal error code.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.Error">
+            <summary>
+            The BriteVerify error description.
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.BriteVerifyEmailResponseData.Duration">
+            <summary>
+            Duration of the API call, in seconds.
+            </summary>
+        </member>
+        <member name="T:Roblox.BriteVerify.BriteVerifyException">
+            <summary>
+            Wrapper for Exceptions in calls to BriteVerify.
+            </summary>
+        </member>
+        <member name="M:Roblox.BriteVerify.BriteVerifyException.#ctor(System.String,System.Exception)">
+            <summary>
+            Basic constructor.
+            </summary>
+            <param name="message">Message passed back to the caller.</param>
+            <param name="innerException"><see cref="T:System.Exception" /> that triggered the exception. See here for HttpStatusCode of the failure.</param>
+        </member>
+        <member name="T:Roblox.BriteVerify.IBriteVerifyRestClient">
+            <summary>
+            Base client for making calls to BriteVerify.
+            </summary>
+        </member>
+        <member name="M:Roblox.BriteVerify.IBriteVerifyRestClient.ExecuteHttpRequest``1(System.String,Roblox.RestClientBase.RestClientBase.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>
+            Execute the given HttpRequest against BriteVerify.
+            Environment-level configurations for BriteVerify are handled within.
+            </summary>
+            <typeparam name="T">Object type into which the response will be deserialized from JSON.</typeparam>
+            <param name="actionPath">Path to the API endpoint.</param>
+            <param name="method">The HttpMethod used by this call.</param>
+            <param name="queryStringParameters">List of parameters fokr the query string.</param>
+            <returns>An object of type T containing the successful response</returns>
+            <exception cref="T:Roblox.Sentinels.CircuitBreakerException"></exception>
+            <exception cref="T:Roblox.RestClientBase.RequestThrottledException"></exception>
+            <exception cref="T:Roblox.RestClientBase.ApiClientException"></exception>
+            <exception cref="T:Newtonsoft.Json.JsonSerializationException"></exception>
+        </member>
+        <member name="T:Roblox.BriteVerify.IBriteVerifyClient">
+            <summary>
+            Defines methods for BriteVerify API calls
+            </summary>
+        </member>
+        <member name="M:Roblox.BriteVerify.IBriteVerifyClient.VerifyEmail(Roblox.BriteVerify.IBriteVerifyEmailRequest)">
+            <summary>
+            Check the given email address against BriteVerify
+            </summary>
+            <param name="request">The <see cref="T:Roblox.BriteVerify.IBriteVerifyEmailRequest"/> containing the required parameters for BriteVerify</param>
+            <returns>An <see cref="T:Roblox.BriteVerify.IBriteVerifyEmailResult"/> containing the results for the email validity check</returns>
+            <exception cref="T:Roblox.BriteVerify.BriteVerifyException"></exception>
+        </member>
+        <member name="T:Roblox.BriteVerify.Properties.IBriteVerifySettings">
+            <summary>
+            Interface for settins to BriteVerify
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.Properties.IBriteVerifySettings.BriteVerifyApiEndpoint">
+            <summary>
+            The BriteVerify https endpoint
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.Properties.IBriteVerifySettings.BriteVerifyUri">
+            <summary>
+            The URI if the API
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.Properties.IBriteVerifySettings.BriteVerifyApiKey">
+            <summary>
+            Private API key for BriteVerify
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.Properties.IBriteVerifySettings.BriteVerifyCircuitBreakerRetryInterval">
+            <summary>
+            Separate circuit breaker retry interval for BriteVerify
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.Properties.IBriteVerifySettings.BriteVerifyClientTimeoutInterval">
+            <summary>
+            Adjustable client retry. BriteVerify requests can take up to 10+ seconds
+            </summary>
+        </member>
+        <member name="P:Roblox.BriteVerify.Properties.IBriteVerifySettings.IsDetailedBriteVerifyErrorLoggingEnabled">
+            <summary>
+            Enable detailed error logging in Windows Event Logs
+            </summary>
+        </member>
+        <member name="T:Roblox.BriteVerify.Properties.Settings">
+            <summary>
+            </summary>
+        </member>
+    </members>
+</doc>

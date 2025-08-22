@@ -1,0 +1,1049 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.CommunitySift</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.CommunitySift.CommunitySiftChatNoContextRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest"/> for public consumption.
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftChatNoContextRequest.#ctor(System.Int64,System.String,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="userId"></param>
+            <param name="userName"></param>
+            <param name="isUnder13"></param>
+            <param name="text"></param>
+            <param name="server"></param>
+            <param name="room"></param>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequest.UserId">
+            <inheritdoc cref="T:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest"/>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequest.UserName">
+            <inheritdoc cref="T:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest"/>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequest.IsUnder13">
+            <inheritdoc cref="T:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest"/>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequest.Text">
+            <inheritdoc cref="T:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest"/>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequest.Server">
+            <inheritdoc cref="T:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest"/>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequest.Room">
+            <inheritdoc cref="T:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest"/>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftTopicTranslator">
+            <summary>
+            Default implementation of <see cref="T:Roblox.CommunitySift.ICommunitySiftTopicTranslator"/>.
+            Used to extract information about which CommSift categories may have failed for the given request.
+            Note that we are mapping their IDs in enums.
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftTopicTranslator.ExtractFilteredTopics(System.Collections.Generic.Dictionary{System.Int32,System.Int32},System.Boolean)">
+            <summary>
+            Takes a list of topic IDs and sccores from a community sift response, and returns corresponding enums for the topics
+            that are over the filtering threshold, which indicates that they were a reason the text was filtered.
+            
+            Currently only considers the score of the PII topic
+            </summary>
+            <param name="topicIdsAndScores">A map of topic IDs to the score the text rated for that topic</param>
+            <param name="isUnder13"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftTopicTranslator.TranslateTopicIdToEnum(System.Int32)">
+            <summary>
+            Converts a Community Sift topic ID to an enum. These mappings are taken directly from
+            the Community Sift documentation pages.
+            Accurate as of 13 MAR 2017
+            </summary>
+            <param name="topicId"></param>
+            <returns>The enum if a mapping exists, otherwise null</returns>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftUserNameRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.CommunitySift.ICommunitySiftUserNameRequest"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftUserNameRequest.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="text"></param>
+            <param name="userId"></param>
+            <param name="isUnder13"></param>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftUserNameRequest.Text">
+            <inheritdoc cref="P:Roblox.CommunitySift.ICommunitySiftUserNameRequest.Text"/>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftUserNameRequest.UserId">
+            <inheritdoc cref="P:Roblox.CommunitySift.ICommunitySiftUserNameRequest.UserId"/>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftUserNameRequest.IsUnder13">
+            <inheritdoc cref="P:Roblox.CommunitySift.ICommunitySiftUserNameRequest.IsUnder13"/>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftChatFilterNoContextResult">
+            <summary>
+            Result of calling the chat endpoint with no context enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatFilterNoContextResult.TextWasFiltered">
+            <summary>
+            Indicates that the text was filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatFilterNoContextResult.FilteredText">
+            <summary>
+            Value of the filtered text.
+            Will be null if the text was not filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatFilterNoContextResult.FilteredCategories">
+            <summary>
+            The Community Sift Moderation Topics that caused the text to be filtered.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest">
+            <summary>
+            Request format for the Chat with No Context.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest.UserId">
+            <summary>
+            ID of the author of the text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest.UserName">
+            <summary>
+            UserName of the author of the text to be filtered. Useful for Cs.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest.IsUnder13">
+            <summary>
+            Age Category of the author of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest.Text">
+            <summary>
+            Text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest.Server">
+            <summary>
+            Category grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatNoContextRequest.Room">
+            <summary>
+            Subcategory grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftTopicTranslator">
+            <summary>
+            Converts the Community Sift Topic IDs that are returned in filter calls to an enum value
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.UserId">
+            <summary>
+            Optional. Your unique identifier for the player (ROBLOX UserId)
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.RuleSet">
+            <summary>
+            Optional. Identifier of the ruleset to use, along with the topic-risks of text and our history of player, to determine the pass/fail result (See Administration -> Rulesets)
+            Example Value: 1
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.Filtered">
+            <summary>
+            Optional. A past filtering result you want to provide for auditing purposes. 
+            By adding a value here you are asking it to report on what has changed since this text was last filtered. 
+            false = not filtered, true = was filtered previously
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.MessageId">
+            <summary>
+            Optional. Your message identifier. This is provided in case you need a way to associate responses with your messages independent of requestBase/response semantics
+            length(msg_id) ≤ 255
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.Text">
+            <summary>
+            Required. What the player would like to say
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.Username">
+            <summary>
+            Optional. A friendly name for the user that will be used for display purposes. (ROBLOX Username)
+            Helpful when using a numeric identifier in player field. We also accept user_display_name for backwards compatibility 
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.Server">
+            <summary>
+            Optional. The server that the chat came from, if you want to identify it for searching/filtering.
+            For our case, it's PlaceID / "web_chat" / "web_post" / "web_asset" / "web_pm"
+            Reference: https://docs.google.com/document/d/1jHMlnHeGcvhyG5j_p067j1xw5bHZrwdJS7qJeifBUMk/edit#
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.Room">
+            <summary>
+            Optional. The chat room that the chat came from, if you want to identify it for searching/filtering.
+            For our case, it's GameInstanceId or ConversationId.
+            In cases where this is not provided a "random" GUID should be delivered as per our 2016-09-15 conversations with them.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.Language">
+            <summary>
+            Optional. Expected language of the text, if known, as a two letter ISO language code for a supported language
+            Default Value: "*" (Language detection. Added 03/07/2016)
+            Example Value: "en"
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftChatNoContextRequestBody.ToJson">
+            <summary>
+            Convert this object to a JSON string representing the current object.
+            </summary>
+            <returns>JSON representation of the object.</returns>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextResponseData.Language">
+            <summary>
+            (Always present) Either the language from the input or the auto-detected language.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatNoContextResponseData.RedactedText">
+            <summary>
+            (May be omitted) RedactedText version of the input text. Only returned if Response is false and the text is high risk (4 or higher).
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftModerationTopic">
+            <summary>
+            The set of moderation topics as defined by Community Sift
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftUserNameFilterResult">
+            <summary>
+            Result of a UserName request.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftUserNameFilterResult.IsPrimaryTextFiltered">
+            <summary>
+            Indicates if the text was filtered for 13+ users.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftUserNameFilterResult.PrimaryFilteredText">
+            <summary>
+            The new value of the text with hashes for 13+ users.
+            Null otherwise.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftUserNameFilterResult.IsSecondaryTextFiltered">
+            <summary>
+            Indicates if the was filtered for U13 users.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftUserNameFilterResult.SecondaryFilteredText">
+            <summary>
+            The new value of the text with hashes for U13 users.
+            Null otherwise.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftUserNameFilterResult.FilteredCategories">
+            <summary>
+            The Community Sift Moderation Topics that caused the text to be filtered.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftUserNameRequest">
+            <summary>
+            Basic interface for making a request to the CommunitySift UserName endpoint, which is currently used for search in Roblox.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftUserNameRequest.Text">
+            <summary>
+            The text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftUserNameRequest.UserId">
+            <summary>
+            Id of the user making the request. Use -1 for "anonymous" user.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftUserNameRequest.IsUnder13">
+            <summary>
+            If the author of the text is under 13.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftException">
+            <summary>
+            Wrapper for Exceptions in calls to CommunitySift.
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftException.#ctor(System.String,System.Exception)">
+            <summary>
+            Basic constructor.
+            </summary>
+            <param name="message">Message passed back to the caller.</param>
+            <param name="innerException"><see cref="T:System.Exception" /> that triggered the exception. See here for HttpStatusCode of the failure.</param>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftChatRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.CommunitySift.ICommunitySiftChatRequest"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftChatRequest.#ctor(System.Int64,System.String,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="userId"></param>
+            <param name="userName"></param>
+            <param name="isUnder13"></param>
+            <param name="text"></param>
+            <param name="server"></param>
+            <param name="room"></param>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequest.UserId">
+            <summary>
+            ID of the author of the text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequest.UserName">
+            <summary>
+            UserName of the author of the text to be filtered. Useful for Cs.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequest.IsUnder13">
+            <summary>
+            Age Category of the author of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequest.Text">
+            <summary>
+            Text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequest.Server">
+            <summary>
+            Category grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequest.Room">
+            <summary>
+            Subcategory grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftLongTextRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.CommunitySift.ICommunitySiftLongTextRequest"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftLongTextRequest.#ctor(System.Int64,System.String,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="userId"></param>
+            <param name="userName"></param>
+            <param name="isUnder13"></param>
+            <param name="text"></param>
+            <param name="server"></param>
+            <param name="room"></param>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequest.UserId">
+            <summary>
+            ID of the author of the text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequest.UserName">
+            <summary>
+            UserName of the author of the text to be filtered. Useful for Cs.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequest.IsUnder13">
+            <summary>
+            Age Category of the author of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequest.Text">
+            <summary>
+            Text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequest.Server">
+            <summary>
+            Category grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequest.Room">
+            <summary>
+            Subcategory grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftDoubleChatRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftDoubleChatRequest.#ctor(System.Int64,System.String,System.String,System.String,System.String)">
+            <summary>
+            Default Constructor.
+            </summary>
+            <param name="userId"></param>
+            <param name="userName"></param>
+            <param name="text"></param>
+            <param name="server"></param>
+            <param name="room"></param>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftDoubleChatRequest.UserId">
+            <summary>
+            ID of the author of the text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftDoubleChatRequest.UserName">
+            <summary>
+            UserName of the author of the text to be filtered. Useful for Cs.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftDoubleChatRequest.Text">
+            <summary>
+            Text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftDoubleChatRequest.Server">
+            <summary>
+            Category grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftDoubleChatRequest.Room">
+            <summary>
+            Subcategory grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult">
+            <summary>
+            Result of a double chat request.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult.PrimaryTextWasFiltered">
+            <summary>
+            Indicates if the text was filtered for 13+ users.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult.PrimaryFilteredText">
+            <summary>
+            The new value of the text with hashes for 13+ users.
+            Null otherwise.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult.PrimaryFilteredCategories">
+            <summary>
+            The list of Community Sift Moderation Topics that caused the text to be filtered for 13+ users.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult.SecondaryTextWasFiltered">
+            <summary>
+            Indicates if the was filtered for U13 users.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult.SecondaryFilteredText">
+            <summary>
+            The new value of the text with hashes for U13 users.
+            Null otherwise.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult.SecondaryFilteredCategories">
+            <summary>
+            The list of Community Sift Moderation Topics that caused the text to be filtered for U13 users.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult.Trust">
+            <summary>Trust level assigned to the user </summary>
+            <remarks>0=full trust to 7=no trust</remarks>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest">
+            <summary>
+            Parameters required for making a double chat request.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest.UserId">
+            <summary>
+            ID of the author of the text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest.UserName">
+            <summary>
+            UserName of the author of the text to be filtered. Useful for Cs.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest.Text">
+            <summary>
+            Text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest.Server">
+            <summary>
+            Category grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest.Room">
+            <summary>
+            Subcategory grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftRestClient">
+            <summary>
+            Base client for making calls to CommunitySift.
+            Provides CircuitBreaker features by default.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRestClient.Endpoint">
+            <summary>
+            Base url for calls into CommunitySift.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRestClient.Timeout">
+            <summary>
+            Timeout for the bodyData
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRestClient.RetryInterval">
+            <summary>
+            An override for the <see cref="!:RestClientBase.Properties.Settings.Default.DefaultCircuitBreakerRetryInterval"/> setting
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRestClient.TimeoutCountBeforeTripping">
+            <summary>
+            An override for Settings.Default.DefaultCircuitBreakerTimeoutsBeforeTrip
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRestClient.TimeoutIntervalForTripping">
+            <summary>
+            An override for Settings.Default.DefaultCircuitBreakerTimeoutInterval
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRestClient.Name">
+            <summary>
+            Default client Name.
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftRestClient.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftRestClient.#ctor(Roblox.CommunitySift.Properties.ICommunitySiftSettings)">
+            <summary>
+            Special constructor. Requires settings for Endpoint, Timeout, ApiKey
+            </summary>
+            <param name="settings"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftRestClient.ExecuteHttpRequest``1(System.String,Roblox.RestClientBase.RestClientBase.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Object)">
+            <summary>
+            Execute the given HttpRequest against CommunitySift.
+            Environment-level configurations for CommunitySift are handled within.
+            </summary>
+            <typeparam name="T">Object type into which the response will be deserialized from JSON.</typeparam>
+            <param name="actionPath">Path to the API endpoint.</param>
+            <param name="method">The HttpMethod used by this call.</param>
+            <param name="queryStringParameters">List of parameters fokr the query string.</param>
+            <param name="bodyData">Object containing the data to be POSTed. This data will be serialized into JSON.</param>
+            <exception cref="T:Roblox.Sentinels.CircuitBreakerException"></exception>
+            <exception cref="T:Roblox.RestClientBase.RequestThrottledException"></exception>
+            <exception cref="T:Roblox.RestClientBase.ApiClientException"></exception>
+            <exception cref="T:Newtonsoft.Json.JsonSerializationException"></exception>
+            <returns>An object of type T containing the successful response</returns>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftChatFilterResult">
+            <summary>
+            Result of a chat request.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatFilterResult.TextWasFiltered">
+            <summary>
+            Indicates that the text was filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatFilterResult.FilteredText">
+            <summary>
+            Value of the filtered text.
+            Will be null if the text was not filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatFilterResult.FilteredCategories">
+            <summary>
+            The Community Sift Moderation Topics that caused the text to be filtered.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftChatRequest">
+            <summary>
+            Parameters required for making a chat request.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatRequest.UserId">
+            <summary>
+            ID of the author of the text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatRequest.UserName">
+            <summary>
+            UserName of the author of the text to be filtered. Useful for Cs.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatRequest.IsUnder13">
+            <summary>
+            Age Category of the author of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatRequest.Text">
+            <summary>
+            Text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatRequest.Server">
+            <summary>
+            Category grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftChatRequest.Room">
+            <summary>
+            Subcategory grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftLongTextFilterResult">
+            <summary>
+            Result of a long text request
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextFilterResult.TextWasFiltered">
+            <summary>
+            Indicates that the text was filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextFilterResult.FilteredText">
+            <summary>
+            Value of the filtered text.
+            Will be null if the text was not filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextFilterResult.FilteredCategories">
+            <summary>
+            The Community Sift Moderation Topics that caused the text to be filtered.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftLongTextRequest">
+            <summary>
+            Parameters required for making a long text request.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextRequest.UserId">
+            <summary>
+            ID of the author of the text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextRequest.UserName">
+            <summary>
+            UserName of the author of the text to be filtered. Useful for Cs.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextRequest.IsUnder13">
+            <summary>
+            Age Category of the author of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextRequest.Text">
+            <summary>
+            Text to be filtered.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextRequest.Server">
+            <summary>
+            Category grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.ICommunitySiftLongTextRequest.Room">
+            <summary>
+            Subcategory grouping for the source of the text.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftRestClient">
+            <summary>
+            Base client for making calls to CommunitySift.
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.ICommunitySiftRestClient.ExecuteHttpRequest``1(System.String,Roblox.RestClientBase.RestClientBase.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Object)">
+            <summary>
+            Execute the given HttpRequest against CommunitySift.
+            Environment-level configurations for CommunitySift are handled within.
+            </summary>
+            <typeparam name="T">Object type into which the response will be deserialized from JSON.</typeparam>
+            <param name="actionPath">Path to the API endpoint.</param>
+            <param name="method">The HttpMethod used by this call.</param>
+            <param name="queryStringParameters">List of parameters fokr the query string.</param>
+            <param name="bodyData">Object containing the data to be POSTed. This data will be serialized into JSON.</param>
+            <returns>An object of type T containing the successful response</returns>
+            <exception cref="T:Roblox.Sentinels.CircuitBreakerException"></exception>
+            <exception cref="T:Roblox.RestClientBase.RequestThrottledException"></exception>
+            <exception cref="T:Roblox.RestClientBase.ApiClientException"></exception>
+            <exception cref="T:Newtonsoft.Json.JsonSerializationException"></exception>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftChatRequestBody">
+            <summary>
+            CommunitySift Request Body
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequestBody.UserId">
+            <summary>
+            Optional. Your unique identifier for the player (ROBLOX UserId)
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequestBody.RuleSet">
+            <summary>
+            Optional. Identifier of the ruleset to use, along with the topic-risks of text and our history of player, to determine the pass/fail result (See Administration -> Rulesets)
+            Example Value: 1
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequestBody.Filtered">
+            <summary>
+            Optional. A past filtering result you want to provide for auditing purposes. 
+            By adding a value here you are asking it to report on what has changed since this text was last filtered. 
+            false = not filtered, true = was filtered previously
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatRequestBody.MessageId">
+            <summary>
+            Optional. Your message identifier. This is provided in case you need a way to associate responses with your messages independent of requestBase/response semantics
+            length(msg_id) ≤ 255
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftChatResponseData">
+            <summary>
+            Response from the community sift chat endpoint
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatResponseData.Language">
+            <summary>
+            (Always present) Either the language from the input or the auto-detected language.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatResponseData.Hashed">
+            <summary>
+            (May be omitted) Hashed version of the input text. Only returned if Response is false and the text is high risk (4 or higher).
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatResponseData.MessageId">
+            <summary>
+            (May be omitted) The msg_id from the input. Only returned if non-empty msg_id was in input.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftChatResponseData.Text">
+            <summary>
+            The text response from CommunitySift. Only valid if Response is false and the text is high risk (4 or higher).
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftClient">
+            <summary>
+            CommunitySift Client
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftClient.#ctor(Roblox.CommunitySift.ICommunitySiftRestClient,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="restClient">The <see cref="T:Roblox.CommunitySift.ICommunitySiftRestClient"/> responsible for making the actual Http calls.</param>
+            <param name="apiName">Name of the parent service making these called. Used for logging.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftClient.#ctor(Roblox.CommunitySift.ICommunitySiftRestClient,Roblox.CommunitySift.ICommunitySiftPerformanceMonitor,Roblox.CommunitySift.ICommunitySiftTopicTranslator,Roblox.CommunitySift.Properties.ICommunitySiftSettings)">
+            <summary>
+            Internal constructor allows us access to the performanceMonitor.
+            </summary>
+            <param name="restClient"></param>
+            <param name="performanceMonitor"></param>
+            <param name="topicTranslator"></param>
+            <param name="settings">Settings for the Client</param>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftClient.PostChat(Roblox.CommunitySift.ICommunitySiftChatRequest)">
+            <summary>
+            Post a short piece of text to CommunitySift.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.CommunitySift.ICommunitySiftChatRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftChatFilterResult"/> containing the filter result.</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftClient.PostChatNoContext(Roblox.CommunitySift.ICommunitySiftChatNoContextRequest)">
+            <inheritdoc cref="T:Roblox.CommunitySift.ICommunitySiftClient"/>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftClient.PostLongText(Roblox.CommunitySift.ICommunitySiftLongTextRequest)">
+            <summary>
+            Post a long piece of text to CommunitySift.
+            Generally 1000+ characters.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.CommunitySift.ICommunitySiftLongTextRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftChatFilterResult"/> containing the filter result.</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftClient.PostDoubleChat(Roblox.CommunitySift.ICommunitySiftDoubleChatRequest)">
+            <summary>
+            Post a piece of chat as both under and over 13 in a single call.
+            Note that the chat will be truncated to 1000 characters. For longer text use PostLongText().
+            </summary>
+            <param name="request">An <see cref="T:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult"/> containing the results for both age categories.</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftClient.PostUserName(Roblox.CommunitySift.ICommunitySiftUserNameRequest)">
+            <summary>
+            Post a the given UserName and check its validatity for both over and under 13.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.CommunitySift.ICommunitySiftUserNameRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftUserNameRequest"/> containing the results for both age categories</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="T:Roblox.CommunitySift.ICommunitySiftClient">
+            <summary>
+            Defines methods for CommunitySift API calls
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.ICommunitySiftClient.PostChat(Roblox.CommunitySift.ICommunitySiftChatRequest)">
+            <summary>
+            Post a short piece of text to CommunitySift.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.CommunitySift.ICommunitySiftChatRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftChatFilterResult"/> containing the filter result.</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.ICommunitySiftClient.PostLongText(Roblox.CommunitySift.ICommunitySiftLongTextRequest)">
+            <summary>
+            Post a long piece of text to CommunitySift.
+            Generally 1000+ characters or 2000 bytes.
+            This text will not be added to the user context which means that it won't have vertical filtering applied.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.CommunitySift.ICommunitySiftLongTextRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftChatFilterResult"/> containing the filter result.</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.ICommunitySiftClient.PostChatNoContext(Roblox.CommunitySift.ICommunitySiftChatNoContextRequest)">
+            <summary>
+            Post a short piece of text to CommunitySift.
+            This text will not be added to the user context which means that it won't have vertical filtering applied.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.CommunitySift.ICommunitySiftChatRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftChatFilterResult"/> containing the filter result.</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.ICommunitySiftClient.PostDoubleChat(Roblox.CommunitySift.ICommunitySiftDoubleChatRequest)">
+            <summary>
+            Post a piece of chat as both under and over 13 in a single call.
+            </summary>
+            <param name="request">An <see cref="T:Roblox.CommunitySift.ICommunitySiftDoubleChatRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftDoubleChatFilterResult"/> containing the results for both age categories.</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="M:Roblox.CommunitySift.ICommunitySiftClient.PostUserName(Roblox.CommunitySift.ICommunitySiftUserNameRequest)">
+            <summary>
+            Post a the given UserName and check its validity for both over and under 13.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.CommunitySift.ICommunitySiftUserNameRequest"/> containing the required parameters for CommunitySift</param>
+            <returns>An <see cref="T:Roblox.CommunitySift.ICommunitySiftUserNameRequest"/> containing the results for both age categories</returns>
+            <exception cref="T:Roblox.CommunitySift.CommunitySiftException"></exception>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftLongTextFragment">
+            <summary>
+            Details on Fragments of text returned from calls that can span multiple paragraphs.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.RiskLevel">
+            <summary>
+            (Always present) The risk level.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.Response">
+            <summary>
+            (Always present) Whether the text passed the selected ruleset.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.Timeout">
+            <summary>
+            (Always present) If the processing timed out.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.Hashed">
+            <summary>
+            (May be omitted) Hashed version of the input text. Only returned if response is false and the text is high risk (4 or higher).
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.FragmentLength">
+            <summary>
+            (Always present) The length of the fragment.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.FragmentStart">
+            <summary>
+            (Always present) The start of the fragment in the overall text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.Topics">
+            <summary>
+            (May be omitted) The topic risk levels identified for the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.Hashes">
+            <summary>
+            (May be omitted) Where hashes were placed in the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.StatusCode">
+            <summary>
+            Status Code for Internal Use
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextFragment.ErrorMessage">
+            <summary>
+            Custom Error Message for Internal Use
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftLongTextResponseData">
+            <summary>
+            Response from the community sift Long Text endpoint
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextResponseData.Escalations">
+            <summary>
+            (Always present) List of any queues the text was escalated into
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextResponseData.FailingFragments">
+            <summary>
+            (Always present) Array of fragments of the text that fail the ruleset. Contains fragment start, length, list of hash positions in the fragment as well as topics.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextResponseData.Risk">
+            <summary>
+            (Always present) The general overall risk level identified for the entire text
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextResponseData.Events">
+            <summary>
+            (Always present) Chat and moderation events for the user such as trust changes
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextResponseData.Hashed">
+            <summary>
+            (May be omitted) Hashed version of the input text. Only returned if Response is false and the text is high risk (4 or higher).
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftLongTextRequestBody">
+            <summary>
+            CommunitySift Request Body
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequestBody.UserId">
+            <summary>
+            Optional. Your unique identifier for the player (ROBLOX UserId)
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequestBody.RuleSet">
+            <summary>
+            Optional. Identifier of the ruleset to use, along with the topic-risks of text and our history of player, to determine the pass/fail result (See Administration -> Rulesets)
+            Example Value: 1
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftLongTextRequestBody.MessageId">
+            <summary>
+            Optional. Your message identifier. This is provided in case you need a way to associate responses with your messages independent of requestBase/response semantics
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftRequestBase">
+            <summary>
+            CommunitySift Request Body Base
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRequestBase.Text">
+            <summary>
+            Required. What the player would like to say
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRequestBase.Username">
+            <summary>
+            Optional. A friendly name for the user that will be used for display purposes. (ROBLOX Username)
+            Helpful when using a numeric identifier in player field. We also accept user_display_name for backwards compatibility 
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRequestBase.Server">
+            <summary>
+            Optional. The server that the chat came from, if you want to identify it for searching/filtering.
+            For our case, it's PlaceID / "web_chat" / "web_post" / "web_asset" / "web_pm"
+            Reference: https://docs.google.com/document/d/1jHMlnHeGcvhyG5j_p067j1xw5bHZrwdJS7qJeifBUMk/edit#
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRequestBase.Room">
+            <summary>
+            Optional. The chat room that the chat came from, if you want to identify it for searching/filtering.
+            For our case, it's GameInstanceId or ConversationId.
+            In cases where this is not provided a "random" GUID should be delivered as per our 2016-09-15 conversations with them.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftRequestBase.Language">
+            <summary>
+            Optional. Expected language of the text, if known, as a two letter ISO language code for a supported language
+            Default Value: "*" (Language detection. Added 03/07/2016)
+            Example Value: "en"
+            </summary>
+        </member>
+        <member name="M:Roblox.CommunitySift.CommunitySiftRequestBase.ToJson">
+            <summary>
+            Convert this object to a JSON string representing the current object.
+            </summary>
+            <returns>JSON representation of the object.</returns>
+        </member>
+        <member name="T:Roblox.CommunitySift.CommunitySiftResponseBaseData">
+            <summary>
+            Base community sift response
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftResponseBaseData.Trust">
+            <summary>
+            (Always present) The trust level of the user.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftResponseBaseData.Response">
+            <summary>
+            (Always present) Whether the text passed the selected ruleset.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftResponseBaseData.Topics">
+            <summary>
+            (May be omitted) The topic risk levels identified for the text.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftResponseBaseData.Text">
+            <summary>
+            The text response from CommunitySift, if Response is true this will be set.
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftResponseBaseData.StatusCode">
+            <summary>
+            Status Code for Internal Use
+            </summary>
+        </member>
+        <member name="P:Roblox.CommunitySift.CommunitySiftResponseBaseData.ErrorMessage">
+            <summary>
+            Custom Error Message for Internal Use
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.Properties.ICommunitySiftTopicTranslatorSettings">
+            <summary>
+            CommunitySift settings specific to translating Topic and Risk levels.
+            In particular these map to settings in the Community Sift Policy Guides.
+            </summary>
+        </member>
+        <member name="T:Roblox.CommunitySift.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

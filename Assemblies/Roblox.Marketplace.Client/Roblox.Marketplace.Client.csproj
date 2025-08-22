@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyName>Roblox.Marketplace.Client</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>11.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Roblox.Economy">
+      <HintPath>..\..\Website\bin\Roblox.Economy.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Economy.Common">
+      <HintPath>..\..\Website\bin\Roblox.Economy.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.ApiClientBase">
+      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

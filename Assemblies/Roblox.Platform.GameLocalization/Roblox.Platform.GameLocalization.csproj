@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.GameLocalization</AssemblyName>
@@ -23,7 +23,7 @@
       <HintPath>..\..\Website\bin\Roblox.Platform.GameLocalization.Authorization.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.GameLocalization.Client" />
+    
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
@@ -39,6 +39,12 @@
     <Reference Include="Roblox.Amazon.Sns">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Sns.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.GameLocalization.Client\Roblox.GameLocalization.Client.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
 </Project>

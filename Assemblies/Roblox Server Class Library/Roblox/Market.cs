@@ -33,12 +33,28 @@ public static class Market
 	/// <param name="status">After execution, either Success or a reason for failure.</param>
 	/// <param name="placeProductPromotionId">If sold as an affiliate sale (eg, in a user's place) the placeProductPromotionId.</param>
 	/// <returns>True if successful.  If false, the reason is in status out parameter.</returns>
-	public static bool PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, out EconomyHelper.TransactionStatus status, long placeProductPromotionId = 0L, SaleLocationType saleLocationType = 0, long? saleLocationId = null)
+	public static bool PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, out EconomyHelper.TransactionStatus status, long placeProductPromotionId, Roblox.Economy.SaleLocationType saleLocationType, long? saleLocationId)
 	{
 		//IL_000a: Unknown result type (might be due to invalid IL or missing references)
 		PurchaseProductResult purchaseResult = PurchaseProduct(purchaserId, sellerId, productId, purchasePrice, placeInHold, platformTypeId, placeProductPromotionId, saleLocationType, saleLocationId);
 		status = (EconomyHelper.TransactionStatus)purchaseResult.Status;
 		return purchaseResult.Status.Equals(0);
+	}
+
+	// Backwards-compatible overloads without optional parameters
+	public static bool PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, out EconomyHelper.TransactionStatus status)
+	{
+		return PurchaseProduct(purchaserId, sellerId, productId, purchasePrice, placeInHold, platformTypeId, out status, 0L, null, null);
+	}
+
+	public static bool PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, out EconomyHelper.TransactionStatus status, long placeProductPromotionId)
+	{
+		return PurchaseProduct(purchaserId, sellerId, productId, purchasePrice, placeInHold, platformTypeId, out status, placeProductPromotionId, null, null);
+	}
+
+	public static bool PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, out EconomyHelper.TransactionStatus status, long placeProductPromotionId, Roblox.Economy.SaleLocationType saleLocationType)
+	{
+		return PurchaseProduct(purchaserId, sellerId, productId, purchasePrice, placeInHold, platformTypeId, out status, placeProductPromotionId, saleLocationType, null);
 	}
 
 	/// <summary>
@@ -54,7 +70,7 @@ public static class Market
 	/// <param name="saleLocationType">The location where the product was purchased</param>
 	/// <param name="saleLocationId">The location id where the product was purchased</param>
 	/// <returns>True if successful.  If false, the reason is in status out parameter.</returns>
-	public static PurchaseProductResult PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, long placeProductPromotionId = 0L, SaleLocationType saleLocationType = 0, long? saleLocationId = null)
+	public static PurchaseProductResult PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, long placeProductPromotionId, Roblox.Economy.SaleLocationType saleLocationType, long? saleLocationId)
 	{
 		//IL_003f: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0044: Unknown result type (might be due to invalid IL or missing references)
@@ -72,5 +88,21 @@ public static class Market
 			}
 		}
 		return Client.PurchaseProduct(purchaserId, productId, (int)CurrencyType.RobuxID, purchasePrice, placeInHold, placeProductPromotionId, platformTypeId, saleLocationType, saleLocationId);
+	}
+
+	// Backwards-compatible overloads without optional parameters
+	public static PurchaseProductResult PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId)
+	{
+		return PurchaseProduct(purchaserId, sellerId, productId, purchasePrice, placeInHold, platformTypeId, 0L, null, null);
+	}
+
+	public static PurchaseProductResult PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, long placeProductPromotionId)
+	{
+		return PurchaseProduct(purchaserId, sellerId, productId, purchasePrice, placeInHold, platformTypeId, placeProductPromotionId, null, null);
+	}
+
+	public static PurchaseProductResult PurchaseProduct(long purchaserId, long sellerId, long productId, long purchasePrice, bool placeInHold, byte platformTypeId, long placeProductPromotionId, Roblox.Economy.SaleLocationType saleLocationType)
+	{
+		return PurchaseProduct(purchaserId, sellerId, productId, purchasePrice, placeInHold, platformTypeId, placeProductPromotionId, saleLocationType, null);
 	}
 }

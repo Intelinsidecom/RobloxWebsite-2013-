@@ -80,4 +80,18 @@ public struct QQIdentityDataResult
 		}
 		return false;
 	}
+
+	/// <summary>
+	/// Returns a hash code based on fields used in equality.
+	/// </summary>
+	public override int GetHashCode()
+	{
+		unchecked
+		{
+			int hash = 17;
+			hash = hash * 31 + AccountId.GetHashCode();
+			hash = hash * 31 + (OpenId != null ? OpenId.GetHashCode() : 0);
+			return hash;
+		}
+	}
 }

@@ -79,7 +79,7 @@ public abstract class RenewalProviderBase
 		return 25920000000000L * renewalPeriodInMonths / 2;
 	}
 
-	public static Cancellation CancelRenewals(Sale sale)
+	public static void CancelRenewals(Sale sale)
 	{
 		Payment mostRecentPayment = Payment.GetPaymentsBySale(sale.ID).FirstOrDefault();
 		if (mostRecentPayment == null)
@@ -91,14 +91,11 @@ public abstract class RenewalProviderBase
 		{
 			throw new Exception($"No Transaction Log associated with PayentID: {mostRecentPayment.ID}");
 		}
-		Cancellation cancellation = Cancellation.CreateNew(sale.ID, associatedTransactionLog.AccountID);
-		if (cancellation != null)
-		{
-			sale.RenewalDate = null;
-			sale.SaleStatusTypeID = SaleStatusType.Cancelled.ID;
-			sale.Save();
-		}
-		return cancellation;
+		// PayPal/Payflow cancellation request not available in this environment.
+		// Perform local sale cancellation updates only.
+		sale.RenewalDate = null;
+		sale.SaleStatusTypeID = SaleStatusType.Cancelled.ID;
+		sale.Save();
 	}
 
 	public static void PublishRenewalEvent(Sale sale)

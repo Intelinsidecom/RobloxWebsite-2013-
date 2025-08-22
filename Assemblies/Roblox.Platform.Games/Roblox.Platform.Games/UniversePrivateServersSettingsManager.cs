@@ -43,10 +43,10 @@ public class UniversePrivateServersSettingsManager : IUniversePrivateServersSett
 	/// <exception cref="T:System.ArgumentNullException"><paramref name="userFactory" /></exception>
 	public UniversePrivateServersSettingsManager(IMarketplaceAuthority marketplaceAuthority, IAgentFactory agentFactory, IGroupFactory groupFactory, IUniversePermissionsVerifier universePermissionsVerifier, IUserFactory userFactory)
 	{
-		_MarketplaceAuthority = marketplaceAuthority.AssignOrThrowIfNull<IMarketplaceAuthority>("marketplaceAuthority");
-		_AgentFactory = agentFactory.AssignOrThrowIfNull("agentFactory");
-		_GroupFactory = groupFactory.AssignOrThrowIfNull("groupFactory");
-		_UniversePermissionsVerifier = universePermissionsVerifier.AssignOrThrowIfNull("universePermissionsVerifier");
+		_MarketplaceAuthority = marketplaceAuthority ?? throw new ArgumentNullException("marketplaceAuthority");
+		_AgentFactory = agentFactory ?? throw new ArgumentNullException("agentFactory");
+		_GroupFactory = groupFactory ?? throw new ArgumentNullException("groupFactory");
+		_UniversePermissionsVerifier = universePermissionsVerifier ?? throw new ArgumentNullException("universePermissionsVerifier");
 		_UserFactory = userFactory ?? throw new ArgumentNullException("userFactory");
 	}
 
@@ -84,7 +84,7 @@ public class UniversePrivateServersSettingsManager : IUniversePrivateServersSett
 					_ => throw new NotSupportedException($"VIP server creation not supported for universes with a creator type of {universe.CreatorType}"), 
 				};
 				IAgent agent = _AgentFactory.GetByAgentTypeAndAgentTargetId(agentType, universe.CreatorTargetId);
-				_MarketplaceAuthority.CreateProduct(ProductType.PrivateServerProductID, (long?)universe.Id, (long?)Convert.ToInt32(agent.Id), false, true, (long?)price, (long?)null, (int?)null, 0L, 0L, (float?)0f);
+				_MarketplaceAuthority.CreateProduct((byte)ProductType.PrivateServerProductID, (long?)universe.Id, (long?)Convert.ToInt32(agent.Id), false, true, (long?)price, (long?)null, (int?)null, 0L, 0L, (float?)0f);
 			}
 			universeAttributes.AllowPrivateServers = allowPrivateServers;
 			universeAttributes.Save();

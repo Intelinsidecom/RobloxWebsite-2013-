@@ -95,9 +95,6 @@
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\Roblox.Instrumentation\bin\Debug\net471\Roblox.Instrumentation.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.WebsiteSettings">
-      <HintPath>..\..\Website\Source\bin\Roblox.WebsiteSettings.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Entities.Mssql">
       <HintPath>..\Roblox.Entities.Mssql\bin\Debug\net471\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
@@ -157,5 +154,7 @@
     <ProjectReference Include="..\Roblox.ContentRatings\Roblox.ContentRatings.csproj" />
     <ProjectReference Include="..\Roblox.Coordination\Roblox.Coordination.csproj" />
     <ProjectReference Include="..\Roblox.Entities\Roblox.Entities.csproj" />
+    <ProjectReference Include="..\Web\Roblox.Web.SEO\Roblox.Web.SEO.csproj" />
+    <ProjectReference Include="..\Web\Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj" />
   </ItemGroup>
 </Project>

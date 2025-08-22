@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Networking</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Networking.IpAddressRange">
+            <summary>
+            Maintains a range of IPAdresses and can return if a given address is within the range.
+            The range is inclusive.
+            </summary>
+        </member>
+        <member name="M:Roblox.Networking.IpAddressRange.#ctor(System.Net.IPAddress,System.Net.IPAddress)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Networking.IpAddressRange"/> class.
+            </summary>
+            <param name="lower">The minimum IP for this range.</param>
+            <param name="upper">The maximum IP for this range.</param>
+        </member>
+        <member name="M:Roblox.Networking.IpAddressRange.IsInRange(System.Net.IPAddress)">
+            <summary>
+            Determines whether the given IPAddress is in the range set for this instance.
+            </summary>
+            <param name="address">The address to check.</param>
+            <returns>
+              <c>true</c> if the given IPAdress is in range; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Networking.IpAddressRange.ParseStringList(System.String)">
+            <summary>
+            Parses a string list of IP address ranges into a List of <see cref="T:Roblox.Networking.IpAddressRange" />
+            
+            A range string is formatted as in this example with single IP addresses or a range indicated by a dash
+            all separated by commas.
+            "192.168.1.1, 127.0.0.1-127.0.0.10, 222.222.222.222, 192.168.1.200 - 192.168.1.230"
+            </summary>
+            <param name="ranges">The ranges.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Networking.IPAddressUtils">
+            <summary>
+            Utility methods for dealing with IPAddresses
+            </summary>
+        </member>
+        <member name="M:Roblox.Networking.IPAddressUtils.ResolveClientIpAddressFromRequestHeader(System.String)">
+            <summary>
+            Resoves client ip address from request header value
+            </summary>
+            <param name="headerValue">Request header value</param>
+            <returns>Client ip address</returns>
+            <throws>ArgumentException if unable to parse header value</throws>
+        </member>
+        <member name="M:Roblox.Networking.IPAddressUtils.IsIpAddressAllowed(System.Net.IPAddress,System.Collections.Generic.IReadOnlyCollection{Roblox.Networking.IpAddressRange})">
+            <summary>
+            Returns true if ip address is allowed
+            </summary>
+            <param name="ipAddress">IP Address to check</param>
+            <param name="ipAddressRanges">IP Address ranges to check against</param>
+            <returns>True if ip address is allowed</returns>
+        </member>
+        <member name="M:Roblox.Networking.IPAddressUtils.ParseIPAddress(System.String)">
+            <summary>
+            Parse ip address from string
+            </summary>
+            <param name="ipAddressString">IP Address string</param>
+            <returns>ip address</returns>
+        </member>
+        <member name="T:Roblox.Networking.IpPrefixParser">
+            <summary>
+            IP Prefix Parser
+            </summary>
+        </member>
+        <member name="M:Roblox.Networking.IpPrefixParser.ComputeIpAddressesFromPrefix(System.String)">
+            <summary>
+            Parses an IP Prefix into list of IP addresses
+            </summary>
+            <param name="ipPrefix">IP prefix</param>
+            <returns>list of IP Addresses</returns>
+        </member>
+    </members>
+</doc>

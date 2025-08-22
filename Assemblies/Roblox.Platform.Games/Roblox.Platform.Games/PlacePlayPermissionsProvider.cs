@@ -7,6 +7,7 @@ using Roblox.Platform.Membership;
 using Roblox.Platform.Moderation;
 using Roblox.Platform.Universes;
 using Roblox.Universes.Client;
+using Roblox.Platform.Privacy;
 using Roblox.Web.ElevatedActions;
 
 namespace Roblox.Platform.Games;
@@ -79,8 +80,7 @@ internal static class PlacePlayPermissionsProvider
 			return IsPlayable(Roblox.Platform.Assets.Factories.PlaceFactory.Get(universe.RootPlaceId.Value), groupFactory, universeFactory, out result);
 		}
 		string privacyType = universe.PrivacyType;
-		PrivacyType val = (PrivacyType)1;
-		if (privacyType != ((object)(PrivacyType)(ref val)).ToString())
+		if (!string.Equals(privacyType, "Public", StringComparison.OrdinalIgnoreCase))
 		{
 			result = PlayabilityResultEnum.UniverseRootPlaceIsNotActive;
 			return false;
@@ -159,8 +159,7 @@ internal static class PlacePlayPermissionsProvider
 			return false;
 		}
 		string privacyType = universe.PrivacyType;
-		PrivacyType val = (PrivacyType)1;
-		bool playable = privacyType == ((object)(PrivacyType)(ref val)).ToString();
+		bool playable = string.Equals(privacyType, "Public", StringComparison.OrdinalIgnoreCase);
 		result = ((!playable) ? PlayabilityResultEnum.UniverseRootPlaceIsNotActive : PlayabilityResultEnum.Playable);
 		return playable;
 	}
