@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Classification</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Classification.UserDescriptor.GetAgeSegment">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <exception cref="T:Roblox.ApiClientBase.ApiClientException"></exception>
+        </member>
+        <member name="M:Roblox.Classification.UserDescriptor.GetGenderSegment">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <exception cref="T:Roblox.ApiClientBase.ApiClientException"></exception>
+        </member>
+        <member name="M:Roblox.Classification.UserDescriptor.GetAgeAndGenderSegments">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            <exception cref="T:Roblox.ApiClientBase.ApiClientException"></exception>
+        </member>
+    </members>
+</doc>

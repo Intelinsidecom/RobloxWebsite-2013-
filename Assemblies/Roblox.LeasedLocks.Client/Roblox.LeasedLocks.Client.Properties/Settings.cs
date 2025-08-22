@@ -39,6 +39,11 @@ internal sealed class Settings : ApplicationSettingsBase, ISettings
 	[DefaultSettingValue("00:00:05")]
 	public TimeSpan RequestTimeout => (TimeSpan)((SettingsBase)this)["RequestTimeout"];
 
+	[ApplicationScopedSetting]
+	[DebuggerNonUserCode]
+	[DefaultSettingValue("")]
+	public string ServiceEndpointOverride => (string)((SettingsBase)this)["ServiceEndpointOverride"];
+
 	internal Settings()
 	{
 		((ApplicationSettingsBase)this).PropertyChanged += delegate(object sender, PropertyChangedEventArgs args)
@@ -49,7 +54,7 @@ internal sealed class Settings : ApplicationSettingsBase, ISettings
 
 	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
 	{
-		((ApplicationSettingsBase)this).OnSettingsLoaded(sender, e);
+		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
 	}
 }

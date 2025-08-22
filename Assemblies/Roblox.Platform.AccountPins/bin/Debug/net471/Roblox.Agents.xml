@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Agents</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Agents.AgentType">
+            <summary>
+            Enum representing the type of an Agent
+            </summary>
+        </member>
+        <member name="F:Roblox.Agents.AgentType.User">
+            <summary>
+            Represents a registered Roblox user
+            </summary>
+        </member>
+        <member name="F:Roblox.Agents.AgentType.Group">
+            <summary>
+            A Group
+            </summary>
+        </member>
+        <member name="T:Roblox.Agents.AgentFactory">
+            <summary>
+            Factory to get or create Agents
+            </summary>
+        </member>
+        <member name="F:Roblox.Agents.AgentFactory._RequestCacheDictionaryKey">
+            <remarks>
+            Must match Roblox.Web.RequestContextDictionaryProvider._RequestCacheDictionaryKey in order to ensure cache consistency across the request.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Agents.AgentFactory.UsersClient">
+            <summary>
+            A cached <see cref="T:Roblox.Users.Client.IUsersClient"/> instance.
+            </summary>
+            <remarks>
+            Singleton instance of <see cref="T:Roblox.Users.Client.CachedUsersClient"/> that can be used to communicate with Roblox.Users.Service.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Agents.AgentFactory.Singleton">
+            <summary>
+            A singleton instance of the <see cref="T:Roblox.Agents.IAgentFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Agents.AgentFactory.#ctor">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Agents.AgentFactory"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Agents.AgentFactory.#ctor(Roblox.Users.Client.IUsersClient,Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Agents.AgentFactory"/>.
+            </summary>
+            <param name="usersClient">An <see cref="T:Roblox.Users.Client.IUsersClient"/>.</param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="counterRegistry">An <see cref="T:Roblox.Instrumentation.ICounterRegistry"/>.</param>
+        </member>
+        <member name="M:Roblox.Agents.AgentFactory.Get(System.Int64)">
+            <inheritdoc cref="M:Roblox.Agents.IAgentFactory.Get(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Agents.AgentFactory.Roblox#Agents#IAgentFactory#Get(System.Int64)">
+            <inheritdoc cref="M:Roblox.Agents.IAgentFactory.Get(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Agents.AgentFactory.MustGet(System.Int64)">
+            <inheritdoc cref="M:Roblox.Agents.IAgentFactory.MustGet(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Agents.AgentFactory.Roblox#Agents#IAgentFactory#MustGet(System.Int64)">
+            <inheritdoc cref="M:Roblox.Agents.IAgentFactory.MustGet(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Agents.AgentFactory.GetByAgentTypeAndAgentTargetId(Roblox.Agents.AgentType,System.Int64)">
+            <inheritdoc cref="M:Roblox.Agents.IAgentFactory.GetByAgentTypeAndAgentTargetId(Roblox.Agents.AgentType,System.Int64)"/>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Agents.AgentFactory.Roblox#Agents#IAgentFactory#GetByAgentTypeAndAgentTargetId(Roblox.Agents.AgentType,System.Int64)">
+            <inheritdoc cref="M:Roblox.Agents.IAgentFactory.GetByAgentTypeAndAgentTargetId(Roblox.Agents.AgentType,System.Int64)"/>
+        </member>
+        <member name="T:Roblox.Agents.IAgent">
+            <summary>
+            Interface representing an Agent entity
+            </summary>
+        </member>
+        <member name="P:Roblox.Agents.IAgent.Id">
+            <summary>
+            The Agent ID
+            </summary>
+        </member>
+        <member name="P:Roblox.Agents.IAgent.AgentType">
+            <summary>
+            The Agent Type enum, either User or Group
+            </summary>
+        </member>
+        <member name="P:Roblox.Agents.IAgent.AgentTargetId">
+            <summary>
+            The Agent Target ID, either the User ID or the Group ID, depending on the Agent Type
+            </summary>
+        </member>
+        <member name="T:Roblox.Agents.IAgentFactory">
+            <summary>
+            Factory to get or create Agents
+            </summary>
+        </member>
+        <member name="M:Roblox.Agents.IAgentFactory.Get(System.Int64)">
+            <summary>
+            Get an agent by its Id.
+            </summary>
+            <param name="agentId"></param>
+            <returns>Agent if found, otherwise null</returns>
+        </member>
+        <member name="M:Roblox.Agents.IAgentFactory.MustGet(System.Int64)">
+            <summary>
+            Get an agent by its Id, throws if not found.
+            </summary>
+            <param name="agentId"></param>
+            <returns>The non-null agent</returns>
+        </member>
+        <member name="M:Roblox.Agents.IAgentFactory.GetByAgentTypeAndAgentTargetId(Roblox.Agents.AgentType,System.Int64)">
+            <summary>
+            Lookup an agent by the Agent Type and the target Id
+            </summary>
+            <param name="agentType"></param>
+            <param name="agentTargetId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

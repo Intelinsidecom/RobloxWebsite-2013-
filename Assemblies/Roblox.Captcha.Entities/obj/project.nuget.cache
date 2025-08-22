@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mx5xyuZ7otIJ7GdDsitr97NRjQcwd/F2bBurSOeQrIuToiimIj696Y6Oe0dEW/SL0kYxQC9BQaM2NYq+TwA8Zw==",
+  "dgSpecHash": "ubHX1p3XwSA=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Captcha.Entities\\Roblox.Captcha.Entities.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Captcha.Entities\\Roblox.Captcha.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

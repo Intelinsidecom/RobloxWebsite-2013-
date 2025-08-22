@@ -1,0 +1,998 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Outfits</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Outfits.PlayerAvatarType">
+            <summary>
+            https://confluence.roblox.com/display/PLATFORM/Avatar+Project+2016
+            What avatar type does the player prefer to have?
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.PlatformFailedToRetrieveBodyColorsException">
+            <summary>
+            A platform exception thrown if body colors fail to be downloaded from Amazon S3
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.PlatformException" />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.PlatformFailedToRetrieveBodyColorsException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Outfits.PlatformFailedToRetrieveBodyColorsException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="innerException"></param>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.PlatformIllegalBodyColorsException">
+            <summary>
+            A platform exception thrown if body colors are retrieved from S3 and they contain one more more invalid brickColorIds
+            In this case, we will reset the player's body colors
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.PlatformException" />
+        </member>
+        <member name="T:Roblox.Platform.Outfits.PlatformOutfitTextFullyModeratedException">
+            <summary>
+            A platform exception thrown if the Outfit Name is fully moderated. In this case we do not save the entity in the database and throw this exception.
+            The caller should handle this exception gracefully.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.PlatformException" />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.PlatformOutfitTextFullyModeratedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Outfits.PlatformOutfitTextFullyModeratedException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.BrickBodyColorSetFactory">
+            <summary>
+            BrickColors are a specified palette of colors that the Roblox client uses
+            For now, avatars are restricted to this palette
+            In the future we may expand the limits
+            http://wiki.roblox.com/index.php?title=BrickColor
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BrickBodyColorSetFactory.Create(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new BodyColorSet from brickColorIds
+            </summary>
+            <param name="headBrickColorId"></param>
+            <param name="leftArmBrickColorId"></param>
+            <param name="leftLegBrickColorId"></param>
+            <param name="rightArmBrickColorId"></param>
+            <param name="rightLegBrickColorId"></param>
+            <param name="torsoBrickColorId"></param>
+            <returns></returns>
+            <exception cref="T:Roblox.Platform.Outfits.PlatformIllegalBodyColorsException">Throw when an invalid bodyColorId is passed in</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BrickBodyColorSetFactory.CreateNoValidation(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Used to create a BrickBodyColorSetId when loading brickColors from an XML document and we don't want to do any validation
+            Some old avatars have brickColors that are not in the new palette, e.g. 1005 Deep orange
+            </summary>
+            <param name="headBrickColorId"></param>
+            <param name="leftArmBrickColorId"></param>
+            <param name="leftLegBrickColorId"></param>
+            <param name="rightArmBrickColorId"></param>
+            <param name="rightLegBrickColorId"></param>
+            <param name="torsoBrickColorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BrickBodyColorSetFactory.FromBodyColorSet(Roblox.Platform.Outfits.IBodyColorSet)">
+            <summary>
+            Translates from a BodyColorSet (ColorIds) to a BrickBodyColorSet (BrickColorIds)
+            </summary>
+            <param name="bodyColorSet"></param>
+            <returns></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown when a ColorId doesn't have a corresponding BrickColor</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BrickBodyColorSetFactory.FromBodyColorsHash(System.String)">
+            <summary>
+            Retrieves the colors from the XML document downloaded from BodyColorSet.BodyColorSetHash
+            </summary>
+            <param name="hash"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.OutfitFactory.GetOrCreate(System.Collections.Generic.List{System.Int64},System.Int64,System.Int32,System.Byte,System.Int64)">
+            <summary>
+            Create an outfit based on a body color set, scale, playerAvatarType and assets
+            UserId is used for creating an AssetHash for BodyColors, nothing else
+            Since this does not create from an existing avatar, we need to make sure business rules are applied before we call this
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.ScaleFactory">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleFactory.#ctor(Roblox.Platform.Outfits.OutfitDomainFactories)">
+            <summary>
+            Constructs a ScaleFactory
+            </summary>
+            <param name="outfitDomainFactories">The OutfitDomainFactories.</param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleFactory.Get(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleFactory.GetOrCreate(System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleFactory.GetDefault">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Outfits.BodyColorsXmlSerializer">
+            <inheritdoc />
+        </member>
+        <member name="F:Roblox.Platform.Outfits.BodyColorsXmlSerializer._DefaultAvatar">
+            <summary>
+            Very important that this matches the existing XML format, do not make any formatting changes
+            We now have a unit test to ensure the format is not changed
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.GenerateBodyColorsXmlDocument(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.StripTeeShirtFromAvatar(Roblox.IUserAvatar,System.Xml.XmlDocument)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.AddDefaultColorsIfMissing(Roblox.IUserAvatar)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.ResetToDefaultColors(Roblox.IUserAvatar)">
+            <summary>
+            Moved from UserAvatar in Server Class Library
+            Resets the UserAvatar's Body Colors
+            </summary>
+            <param name="userAvatar"></param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.PersistAvatar(Roblox.IUserAvatar,System.Xml.XmlDocument)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.SetBodyColor(System.String,Roblox.BrickColor,System.Xml.XmlDocument)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.GetOrCreateAssetHashFromBrickColorIds(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.DownloadXmlDocumentFromBodyColorsHash(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.UploadXmlDocument(System.Xml.XmlDocument)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.GetBodyColorsXmlDocumentFromUserAvatar(Roblox.IUserAvatar,System.String@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.ParseBodyColorsFromXmlDocument(System.Xml.XmlDocument)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorsXmlSerializer.GetBrickColorSetFromAvatarHash(Roblox.IUserAvatar)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Outfits.BrickBodyColorSet">
+            <summary>
+             BodyColors are currently stored as XML documents in S3. We are transitioning to storing them in the BodyColorSets database.
+             
+             Note that BrickColorIds and ColorIds are totally different. ColorIds are from the Colors table that holds RGB values.
+             BrickColor Ids are from the Roblox game client http://wiki.roblox.com/index.php?title=BrickColor_codes.
+             
+             This class represents a set of Body Colors. It has methods for manipulating the IDs, without persisting.
+             </summary>
+             <example>
+             var bodyColors = avatar.GetBodyColors();
+             bodyColors.SetBodyPart(BodyPartEnum.Head, BrickColor.Get(1))
+             avatar.SetBodyColors(bodyColors);
+             </example>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BrickBodyColorSet.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Roblox.Platform.Outfits.OutfitDomainFactories)">
+            <summary>
+            Constructs a BodyColorSet consisting of BrickColors
+            </summary>
+            <param name="headBrickColorId"></param>
+            <param name="leftArmBrickColorId"></param>
+            <param name="leftLegBrickColorId"></param>
+            <param name="rightArmBrickColorId"></param>
+            <param name="rightLegBrickColorId"></param>
+            <param name="torsoBrickColorId"></param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleAuthority.GetClampedScale(System.Boolean@,Roblox.Platform.Outfits.Scale,Roblox.Platform.Outfits.Scale)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleAuthority.GetClampedScale(System.Boolean@,System.Decimal,System.Decimal,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},Roblox.Platform.Outfits.Scale)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleAuthority.CheckScale(System.Decimal,System.Decimal,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleAuthority.CompareMinAndMaxScales(Roblox.Platform.Outfits.Scale,Roblox.Platform.Outfits.Scale)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Outfits.Scale">
+            <summary>
+            A model that contains scaling information
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Scale.Height">
+            <summary>
+            The height scale 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Scale.Width">
+            <summary>
+            The width scale
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Scale.Head">
+            <summary>
+            The head scale 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Scale.Depth">
+            <summary>
+            The depth scale of the avatar
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Scale.Proportion">
+            <summary>
+            The proportion scale 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Scale.BodyType">
+            <summary>
+            The body type scale
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.IBodyColorsXmlSerializer">
+            <summary>
+            Handles serialization/deserialization of the Body Colors XML document
+            This is uploaded as a document to S3 and the md5 hash is stored in UserAvatar.AvatarHash
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBodyColorsXmlSerializer.GenerateBodyColorsXmlDocument(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Moved from BodyColorSet.cs
+            Creates a BodyColors XML document in memory from brickColorIds
+            Format of the XML document should be the same as UserAvatar.AvatarHash
+            When we migrate UserAvatar.AvatarHash over to UserAvatar.BodyColorSetId, we will need to look up bodyColorSets by the hash of this file on S3
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBodyColorsXmlSerializer.AddDefaultColorsIfMissing(Roblox.IUserAvatar)">
+            <summary>
+            If the user does not have any body colors, update with a default set of colors
+            </summary>
+            <param name="userAvatar"></param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBodyColorsXmlSerializer.PersistAvatar(Roblox.IUserAvatar,System.Xml.XmlDocument)">
+            <summary>
+            Moved from UserAvatar in Server Class Library
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBodyColorsXmlSerializer.SetBodyColor(System.String,Roblox.BrickColor,System.Xml.XmlDocument)">
+            <summary>
+            Moved from UserAvatar in Server Class Library
+            </summary>
+            <param name="property">The string property of the XML to update</param>
+            <param name="brickColor">The BrickColor the property is being changed to</param>
+            <param name="avatarDocument">The avatar XML document</param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBodyColorsXmlSerializer.GetOrCreateAssetHashFromBrickColorIds(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            For use when we want to create a new BodyColorSetHash, but aren't creating it from a user who has these body colors
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBodyColorsXmlSerializer.DownloadXmlDocumentFromBodyColorsHash(System.String)">
+            <summary>
+            Given a hash, downloads the XML document from S3
+            </summary>
+            <param name="bodyColorsHash">The hash of the body colors document</param>
+            <returns></returns>
+            <exception cref="T:Roblox.Platform.Outfits.PlatformFailedToRetrieveBodyColorsException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBodyColorsXmlSerializer.GetBodyColorsXmlDocumentFromUserAvatar(Roblox.IUserAvatar,System.String@)">
+            <summary>
+            Retrieves the body colors XML document for a UserAvatar.
+            If body colors are missing, they are filled in with defaults.
+            Also removes any t-shirts from the XML document.
+            </summary>
+            <param name="userAvatar"></param>
+            <param name="avatarHash"></param>
+            <returns></returns>
+            <exception cref="T:Roblox.Platform.Outfits.PlatformFailedToRetrieveBodyColorsException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBodyColorsXmlSerializer.GetBrickColorSetFromAvatarHash(Roblox.IUserAvatar)">
+            <summary>
+            Retrieves the XML body colors from a UserAvatar.
+            If the body colors contain illegal brickColorIds, try once to reset the colors to defaults.
+            </summary>
+            <param name="userAvatar"></param>
+            <returns></returns>
+            <exception cref="T:Roblox.Platform.Outfits.PlatformFailedToRetrieveBodyColorsException"></exception>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.OutfitKeyGenerator">
+            <summary>
+            When an user creates an outfit out of their combination of assets, we generate a string that represents that unique appearance
+            We upload that string as a file to S3, and get an AssetHash back
+            We then use that AssetHash's ID as a unique ID for that particular outfit
+            When the thumbnailer wants to render an outfit, it downloads that AssetHash and parses the string to extract the data
+            The thumbnailer also treats this as a unique key for the thumbnail
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.OutfitKeyGenerator.ComputeKey(System.Collections.Generic.List{System.Int64},System.Int64,System.Int32,System.Byte)">
+            <summary>
+            Computes the string used to uniquely identify an outfit
+            </summary>
+            <param name="assetIds"></param>
+            <param name="bodyColorSetId"></param>
+            <param name="scaleId"></param>
+            <param name="playerAvatarTypeId"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Roblox.Platform.Outfits.ColorConverter" -->
+        <member name="M:Roblox.Platform.Outfits.ColorConverter.DeltaE(Roblox.Platform.Outfits.IColor,Roblox.Platform.Outfits.IColor)">
+            <summary>
+            Calculates the Delta-E distance between two colors given in RGB.
+            </summary>
+            <param name="color1"></param>
+            <param name="color2"></param>
+            <returns>A double representing the Delta-E difference between color1 and color2</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ColorConverter.Cie2000Difference(Roblox.Platform.Outfits.ColorConverter.ColorLab,Roblox.Platform.Outfits.ColorConverter.ColorLab)">
+            <summary>
+            Implements the CIE2000 method of Delta-E: 
+            https://en.wikipedia.org/wiki/Color_difference#CIEDE2000
+            </summary>
+            <param name="color1"></param>
+            <param name="color2"></param>
+            <returns>A double representing the CIE2000 Delta-E between color1 and color2</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.KeyGenerator.GenerateKeyUrl(Roblox.Platform.Outfits.KeyGeneratorInput)">
+            <summary>
+            Used for avatar key generation
+            </summary>
+            <param name="generatorInput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.KeyGenerator.GenerateAssetHash(System.String,System.Int64)">
+            <summary>
+            Given the unique key for an outfit or avatar
+            Tries to upload it to S3, and GetOrCreates an AssetHash with that hash.
+            </summary>
+            <param name="keyUrl"></param>
+            <param name="userId">UserID used to create a new AssetHash if none exists</param>
+            <returns></returns>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.BodyColorSet.BodyColorSetHash">
+            <summary>
+            BodyColorSetHash is a hash that points to a file in S3
+            That file is the Body Colors XML document which contains all the body colors
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.BodyColorSet.GetOrCreate(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            GetOrCreates a BodyColorSet when bodyColorSetHash is known
+            e.g. when creating an outfit from an existing user's appearance
+            </summary> 
+        </member>
+        <member name="T:Roblox.Platform.Outfits.ScaleRules">
+            <summary>
+            Do not change the 'default' values for any of these scales without serious thought
+            It will cause all existing users with default scale to have a new thumbnail key
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleRules.CalculateDepth(System.Decimal)">
+            <summary>
+            Depth is calculated based on width.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleRules.Valid(System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            Returns false if any of the parameters are out of range of valid inputs
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleRules.IsDefault(System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            Returns false if any of the parameters are different from their default values.
+            Disregards depth because it is calculated based on the other parameters.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.ScaleRules.ClampAndRound(System.Decimal)">
+            <summary>
+            Clamps the input to the min and max for this scale dimension.
+            Rounds to the nearest increment if necessary.
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.BodyColorSetFactory">
+            <summary>
+            BodyColorSets is a table in the database
+            Each row has columns that point to Color rows, which are RGB values
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.IBrickBodyColorSet">
+            <summary>
+            Represents a BodyColorSet that contains BrickColors
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBrickBodyColorSetFactory.Create(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new BrickBodyColorSet from brickColorIds
+            </summary>
+            <param name="headBrickColorId"></param>
+            <param name="leftArmBrickColorId"></param>
+            <param name="leftLegBrickColorId"></param>
+            <param name="rightArmBrickColorId"></param>
+            <param name="rightLegBrickColorId"></param>
+            <param name="torsoBrickColorId"></param>
+            <returns></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Throw when an invalid bodyColorId is passed in</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBrickBodyColorSetFactory.CreateNoValidation(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a BrickBodyColorSet without validating whether the brickColorIds are valid
+            </summary>
+            <param name="headBrickColorId"></param>
+            <param name="leftArmBrickColorId"></param>
+            <param name="leftLegBrickColorId"></param>
+            <param name="rightArmBrickColorId"></param>
+            <param name="rightLegBrickColorId"></param>
+            <param name="torsoBrickColorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBrickBodyColorSetFactory.FromBodyColorSet(Roblox.Platform.Outfits.IBodyColorSet)">
+            <summary>
+            Translates from a BodyColorSet (ColorIds) to a BrickBodyColorSet (BrickColorIds)
+            </summary>
+            <param name="bodyColorSet"></param>
+            <returns></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown when a ColorId doesn't have a corresponding BrickColor</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IBrickBodyColorSetFactory.FromBodyColorsHash(System.String)">
+            <summary>
+            Downloads the XML document based on a Body Colors XML document hash
+            </summary>
+            <param name="hash"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IPlayerAvatarTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Outfits.IPlayerAvatarTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Outfits.IPlayerAvatarTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IPlayerAvatarTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Outfits.IPlayerAvatarTypeEntity"/> with the given id.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Outfits.IPlayerAvatarTypeEntity"/> with the given value</returns>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.IScaleAuthority">
+            <summary>
+            Contains common functions to validate scales
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleAuthority.GetClampedScale(System.Boolean@,Roblox.Platform.Outfits.Scale,Roblox.Platform.Outfits.Scale)">
+            <summary>
+            Gets scale values clamped on acceptable height, width, head, proportion, and bodyType ranges
+            <param name="valid">A boolean that states whether or not the scales were valid before clamped</param>
+            <param name="scalesModelToClamp">The scales to be clamped</param>
+            <param name="existingScale">The existing scales to default to if a scale in the scalesModelToClamp does not have a value. Can be null.</param>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleAuthority.GetClampedScale(System.Boolean@,System.Decimal,System.Decimal,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},Roblox.Platform.Outfits.Scale)">
+            <summary>
+            Gets scale values clamped on acceptable height, width, head, proportion, and bodyType ranges
+            <param name="valid">A boolean that states whether or not the scales were valid before clamped</param>
+            <param name="height">The height scale</param>
+            <param name="width">The width scale</param>
+            <param name="head">The head scale</param>
+            <param name="proportion">The proportion scale</param>
+            <param name="bodyType">The bodyType scale</param>
+            <param name="existingScale">The existing scales to default to if a scale in the scalesModelToClamp does not have a value. Can be null.</param>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleAuthority.CheckScale(System.Decimal,System.Decimal,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})">
+            <summary>
+            Gets a list of violated ScaleRules when scales are not in acceptable range 
+            <param name="height">The height scale</param>
+            <param name="width">The width scale</param>
+            <param name="head">The head scale</param>
+            <param name="proportion">The proportion scale</param>
+            <param name="bodyType">The bodyType scale</param>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleAuthority.CompareMinAndMaxScales(Roblox.Platform.Outfits.Scale,Roblox.Platform.Outfits.Scale)">
+            <summary>
+            Gets a list of violated ScaleRules when min scale values are less than the max scale values
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.IScaleFactory">
+            <summary>
+            Factory to manipulate Scales
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Outfits.Scale"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns> The <see cref="!:IScale"/> with the given ID, or null if none existed. </returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleFactory.GetOrCreate(System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Outfits.Scale"/> with the given height, width, and head, proportion, and bodyType
+            </summary>
+            <param name="height">The height scale</param>
+            <param name="width">The width scale</param>
+            <param name="head">The head scale</param>
+            <param name="proportion">The proportion scale</param>
+            <param name="bodyType">The bodyType scale</param>
+            <returns> The <see cref="!:IScale"/> with the given ID, or null if none existed. </returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleFactory.GetDefault">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Outfits.Scale"/> with the default height, width, head, proportion, and bodyType
+            </summary>
+            <returns> The <see cref="!:IScale"/> with the given ID, or default scale values.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Outfits.IScaleEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Outfits.IScaleEntity"/> with the given ID, or null if none existed.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleEntityFactory.GetOrCreate(System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Outfits.IScaleEntity"/> with the given height, width, and head, proportion, and bodyType
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IScaleEntityFactory.GetDefault">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Outfits.IScaleEntity"/> with the default height, width, head, proportion, and bodyType
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.IUserOutfit">
+            <summary>
+            Provides a common interface for an object that represents a user outfit
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.IUserOutfit.Id">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.IUserOutfit.OutfitId">
+            <summary>
+            Gets the Id of the <see cref="T:Roblox.Platform.Outfits.IOutfit"/>.
+            </summary>
+            <value>
+            The Id of the <see cref="T:Roblox.Platform.Outfits.IOutfit"/>.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.IUserOutfit.UserId">
+            <summary>
+            Gets the Id of the user.
+            </summary>
+            <value>
+            The Id of the user.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.IUserOutfit.Name">
+            <summary>
+            Gets the Name of the <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>.
+            </summary>
+            <value>
+            The name of the <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.IUserOutfit.IsEditable">
+            <summary>
+            Gets the editability of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>.
+            </summary>
+            <value>
+            Whether the <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> can be modified.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.IUserOutfit.Created">
+            <summary>
+            Gets the created.
+            </summary>
+            <value>
+            The created.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.IUserOutfit.Updated">
+            <summary>
+            Gets the updated.
+            </summary>
+            <value>
+            The updated.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfit.UpdateFromOutfit(Roblox.Platform.Outfits.IOutfit,System.Boolean)">
+            <summary>
+            Update the <see cref="T:Roblox.Platform.Outfits.IOutfit"/> of the <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> to be the target <see cref="T:Roblox.Platform.Outfits.IOutfit"/>
+            </summary>
+            <param name="outfit">The target <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/></param>
+            <param name="overrideIsEditable">Overrides the outfit being editable even if it's owned by Roblox. Do NOT pass this into this method unless you know exactly what you're doing.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the input <see cref="T:Roblox.Platform.Outfits.IOutfit"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if the entity was not found while updating.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfit.Rename(System.String,Roblox.TextFilter.Client.IClientTextAuthor,Roblox.TextFilter.Client.ITextFilterClientV2)">
+            <summary>
+            Rename the current <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> with validation from TextFilter service
+            </summary>
+            <param name="name">The new name for the <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/></param>
+            <param name="author">The <see cref="T:Roblox.TextFilter.Client.IClientTextAuthor"/> of the new name</param>
+            <param name="textFilterClientV2">The <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/> used for filtering</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if the outfit name is invalid.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if text filter service is unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Outfits.PlatformOutfitTextFullyModeratedException">Thrown if the input name got fully moderated.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfit.RenameNoValidation(System.String)">
+            <summary>
+            Rename the current <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>, skipping any text filtering. Only use if the text is coming from a trusted source.
+            </summary>
+            <param name="name">The new name for the <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if the outfit name is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfit.Delete">
+            <summary>
+            Delete this instance.
+            </summary>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if the entity was not found while deleting.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.GetByUserIdPaged(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/>s by their userId and startIndex
+            </summary>
+            <param name="userId">The userId.</param>
+            <param name="startIndex">The 1-base begining row number of entities to be returned</param>
+            <param name="maxRows">The maximum number of rows to get</param>
+            <returns>The page of <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/>s</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.GetByUserIdIsEditablePaged(System.Int64,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/>s by their userId, filtered by IsEditable and startIndex
+            </summary>
+            <param name="userId">The userId.</param>
+            <param name="isEditable">Whethr we want editable outfits or non-editable outfits.</param>
+            <param name="startIndex">The 1-base begining row number of entities to be returned</param>
+            <param name="maxRows">The maximum number of rows to get</param>
+            <returns>The page of <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/>s</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.GetTotalNumberByUserId(System.Int64)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> of a user
+            </summary>
+            <param name="userId">The Id of the user</param>
+            <returns>The total number of outfits that belong to this user</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.GetEditableCountByUserId(System.Int64)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> of a user that are editable.
+            </summary>
+            <param name="userId">The Id of the user</param>
+            <returns>The total number of editable outfits that belong to this user</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.CreateFromOutfit(System.Int64,System.Int64,System.String,System.Boolean)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> for a user from an existing outfit
+            </summary>
+            <param name="outfitId">The Id of the existing outfit</param>
+            <param name="userId">The Id of the user</param>
+            <param name="outfitName">The name of the new outfit</param>
+            <param name="isEditable">Boolean indicating if the userOutfit can be modified</param>
+            <returns>The <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> created from the existing outfit</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.OnCreated(Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            To invoke the EntityCreated event when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is created
+            </summary>
+            <param name="userOutfit">The created <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.OnUpdated(Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            To invoke the EntityUpdated event when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is updated
+            </summary>
+            <param name="userOutfit">The updated <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitEntityFactory.OnDeleted(Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            To invoke the EntityDeleted event when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is deleted
+            </summary>
+            <param name="userOutfit">The deleted <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/></param>
+        </member>
+        <member name="E:Roblox.Platform.Outfits.IUserOutfitEntityFactory.EntityCreated">
+            <summary>
+            OnCreated Event for <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> to be used in Platform.Avatar.RecentAvatarItemListener
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Outfits.IUserOutfitEntityFactory.EntityUpdated">
+            <summary>
+            OnUpdated Event for <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> to be used in Platform.Avatar.RecentAvatarItemListener
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Outfits.IUserOutfitEntityFactory.EntityDeleted">
+            <summary>
+            OnDeleted Event for <see cref="T:Roblox.Platform.Outfits.IUserOutfitEntity"/> to be used in Platform.Avatar.RecentAvatarItemListener
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.IUserOutfitFactory">
+            <summary>
+            Load and create <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>s for a user
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.GetUserOutfit(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> with the given ID, or null if none existed.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if the input Id is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.GetUserOutfitsPagedResult(Roblox.Platform.Membership.IUser,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>s by their userId and start index, wrapping in <see cref="T:Roblox.Paging.IPagedResult`2"/>
+            </summary>
+            <param name="user">The user</param>
+            <param name="startIndex">The 0-Based starting row index of the user outfits to be returned</param>
+            <param name="maxRows">The maximum number of rows to get</param>
+            <returns>The <see cref="T:Roblox.Paging.IPagedResult`2"/> of a of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>s</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the input user is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if the startIndex is less than default(int) or maxRows is less than 1.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.GetUserOutfitsFilteredByIsEditablePaged(Roblox.Platform.Membership.IUser,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>s by their userId, whether they are editable and start index, wrapping in <see cref="T:Roblox.Paging.IPagedResult`2"/>
+            </summary>
+            <param name="user">The user</param>
+            <param name="isEditable">The filter value for whether a user outfit can be edited.</param>
+            <param name="startIndex">The 1-Based starting row index of the user outfits to be returned</param>
+            <param name="maxRows">The maximum number of rows to get</param>
+            <returns>The <see cref="T:Roblox.Paging.IPagedResult`2"/> of a of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>s</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the input user is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if the startIndex is less than default(int) or maxRows is less than 1.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.GetUserOutfitsPaged(Roblox.Platform.Membership.IUser,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>s by their userId and start index.
+            </summary>
+            <param name="user">The user</param>
+            <param name="startIndex">The 1-based starting row index of the user outfits to be returned</param>
+            <param name="maxRows">The maximum number of rows to get</param>
+            <returns>The page of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>s</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the input user is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if the startIndex is less than default(int) or maxRows is less than 1.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.CreateFromOutfit(Roblox.Platform.Membership.IUser,Roblox.Platform.Outfits.IOutfit,System.Boolean)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> for a user from an existing outfit. 
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> of the new <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/></param>
+            <param name="outfit">The <see cref="T:Roblox.Platform.Outfits.IOutfit"/> to be created from</param>
+            <param name="overrideToUneditable">Optional parameter that makes the outfit not editable.</param>
+            <returns>The <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> created from the existing outfit, , or null if none existed.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the input user or outfit is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.GetTotalNumberOfUserOutfits(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> of a user.
+            </summary>
+            <param name="user">The user</param>
+            <returns>The total number of outfits belong to this user</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the input user is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.GetTotalNumberOfEditableUserOutfits(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> of a user, filtered by whether they are editable..
+            </summary>
+            <param name="user">The user</param>
+            <returns>The total number of outfits belong to this user</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the input user is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.RegisterUserOutfitCreatedEvent(System.Action{Roblox.Platform.Outfits.IUserOutfit})">
+            <summary>
+            To register the OnCreated event of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> by Platform.Avatar.RecentAvatarItemListener
+            </summary>
+            <param name="onUserOutfitCreated">The action to be executed when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is created</param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.UnregisterUserOutfitCreatedEvent(System.Action{Roblox.Platform.Outfits.IUserOutfit})">
+            <summary>
+            To unregister the OnCreated event of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> by Platform.Avatar.RecentAvatarItemListener
+            </summary>
+            <param name="onUserOutfitCreated">The action to be executed when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is created</param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.RegisterUserOutfitUpdatedEvent(System.Action{Roblox.Platform.Outfits.IUserOutfit})">
+            <summary>
+            To register the OnUpdated event of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> by Platform.Avatar.RecentAvatarItemListener
+            </summary>
+            <param name="onUserOutfitUpdated">The action to be executed when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is updated</param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.UnregisterUserOutfitUpdatedEvent(System.Action{Roblox.Platform.Outfits.IUserOutfit})">
+            <summary>
+            To unregister the OnUpdated event of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> by Platform.Avatar.RecentAvatarItemListener
+            </summary>
+            <param name="onUserOutfitUpdated">The action to be executed when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is updated</param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.RegisterUserOutfitDeletedEvent(System.Action{Roblox.Platform.Outfits.IUserOutfit})">
+            <summary>
+            To register the OnDeleted event of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> by Platform.Avatar.RecentAvatarItemListener
+            </summary>
+            <param name="OnUserOutfitDeleted">The action to be executed when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is deleted</param>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IUserOutfitFactory.UnregisterUserOutfitDeletedEvent(System.Action{Roblox.Platform.Outfits.IUserOutfit})">
+            <summary>
+            To unregister the OnDeleted event of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> by Platform.Avatar.RecentAvatarItemListener
+            </summary>
+            <param name="OnUserOutfitDeleted">The action to be executed when a <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> is deleted</param>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.OutfitDomainFactories">
+            <summary>
+            The <seealso cref="T:Roblox.Platform.Core.DomainFactoriesBase">DomainFactories</seealso> object for Roblox.Platform.Outfits.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.OutfitDomainFactories.#ctor">
+            <summary>
+            Only for use by unit tests
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.IOutfitRulesManager">
+            <summary>
+            Provides a common interface for an object that represents Outfit Rules Manager
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IOutfitRulesManager.CanUpdateOutfit(Roblox.Platform.Membership.IUser,Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            Check if an <see cref="T:Roblox.Platform.Membership.IUser"/> can update an <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> to be checked</param>
+            <param name="userOutfit">The <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> to be checked against</param>
+            <returns>True if the user can update the outfit, False otherwise</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IOutfitRulesManager.CanRenameOutfit(Roblox.Platform.Membership.IUser,Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            Check if an <see cref="T:Roblox.Platform.Membership.IUser"/> can rename an <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> to be checked</param>
+            <param name="userOutfit">The <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> to be checked against</param>
+            <returns>True if the user can rename the outfit, False otherwise</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IOutfitRulesManager.CanDeleteOutfit(Roblox.Platform.Membership.IUser,Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            Check if an <see cref="T:Roblox.Platform.Membership.IUser"/> can delete an <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> to be checked</param>
+            <param name="userOutfit">The <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> to be checked against</param>
+            <returns>True if the user can delete the outfit, False otherwise</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IOutfitRulesManager.CanWearOutfit(Roblox.Platform.Membership.IUser,Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            Check if an <see cref="T:Roblox.Platform.Membership.IUser"/> can wear an <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> to be checked</param>
+            <param name="userOutfit">The <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/> to be checked against</param>
+            <returns>True if the user can wear the outfit, False otherwise</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IOutfitRulesManager.HasMaximumNumberOfOutfits(Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Check if an <see cref="T:Roblox.Platform.Membership.IUser"/> has maximum number of outfits allowed.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> to be checked</param>
+            <returns>True if the user has maximum number of outfits allowed, False otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.IOutfitRulesManager.IsValidName(System.String)">
+            <summary>
+            Check if a given outfit name is valid.
+            </summary>
+            <param name="outfitName">The name of the outfit to be checked against</param>
+            <returns>True if the input is a valid outfit name, False otherwise.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.OutfitRulesManager">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Outfits.IOutfitRulesManager"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.OutfitRulesManager.#ctor(Roblox.Platform.Outfits.OutfitDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Outfits.OutfitRulesManager"/> class.
+            </summary>
+            <param name="domainFactories">The domain factories</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.OutfitRulesManager.CanUpdateOutfit(Roblox.Platform.Membership.IUser,Roblox.Platform.Outfits.IUserOutfit)">
+            For now rename, wear and delete are the same but update is limited to user created outfits only. 
+            However, in the future we may change requirements e.g. when we start giving out Outfits when you buy a package, 
+            we may want to allow you to delete an outfit or wear it, but not update or rename it
+        </member>
+        <member name="M:Roblox.Platform.Outfits.OutfitRulesManager.GetValidBodyColors">
+            <summary>
+            The valid BrickColors that can be used for avatar body parts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.OutfitRulesManager.IsValidBodyColor(System.Int32)">
+            <summary>
+            Returns whether the BrickColor is valid for applying to a body part
+            </summary>
+            <param name="brickColorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.OutfitRulesManager.IsValidBodyColor(System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Returns whether the RGB color is valid for applying to a body part
+            </summary>
+            <param name="r">Red</param>
+            <param name="g">Green</param>
+            <param name="b">Blue</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Outfits.Properties.Resources.CharacterAppearance">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.UserOutfitFactory">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Outfits.IUserOutfitFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.UserOutfitFactory.#ctor(Roblox.Platform.Outfits.OutfitDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Outfits.UserOutfitFactory"/> class.
+            </summary>
+            <param name="domainFactories">The domain factories</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Outfits.UserOutfit">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Outfits.IUserOutfit"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.UserOutfit.#ctor(Roblox.Platform.Outfits.IUserOutfitEntity,Roblox.Platform.Outfits.OutfitDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Outfits.UserOutfit"/> class
+            </summary>
+            <param name="entity">The entity</param>
+            <param name="domainFactories">The domain factories</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Outfits.UserOutfit.Rename(System.String,Roblox.TextFilter.Client.IClientTextAuthor,Roblox.TextFilter.Client.ITextFilterClientV2)">
+            <inheritdoc cref="M:Roblox.Platform.Outfits.IUserOutfit.Rename(System.String,Roblox.TextFilter.Client.IClientTextAuthor,Roblox.TextFilter.Client.ITextFilterClientV2)"/>>
+        </member>
+    </members>
+</doc>

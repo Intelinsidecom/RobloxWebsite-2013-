@@ -1,0 +1,1162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Avatar</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationFactory.SetEmoteConfiguration(System.Int64,System.Int64,System.Byte)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationFactory.SetEmoteConfigurations(System.Int64,System.Collections.Generic.IEnumerable{System.Tuple{System.Int64,System.Byte}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationFactory.DeleteEmoteConfiguration(System.Int64,System.Byte)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationFactory.DeleteEmoteConfigurations(System.Int64,System.Collections.Generic.IEnumerable{System.Byte})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationFactory.GetAllEmoteConfigurations(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationFactory.ExecuteLockingWriteProtocol(System.Int64,System.Action)">
+            <summary>
+            Tries to execute a write action through this protocol:
+            1. Take distributed lock
+            2. Clear cache
+            3. Write to database
+            4. Write to cache
+            5. Release distributed lock
+            If any step 1-3 fails, then the method will throw
+            </summary>
+            <param name="userId">The user Id to take the lock with respect to</param>
+            <param name="dbWriteAction">A delegate action to perform to write to the database. If this action throws, so will this method.</param>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.EmoteConfigurationRedisCache">
+             Cache schema:
+            
+             * EmoteConfiguration - HashSet, stores the information for each individual emote configuration
+             Key          Data type   Description
+             Id           long        The Id of the emote configuration
+             AssetId      long        The Id of the associated asset
+             UserId       long        The Id of the associated user
+             Position     byte        The position of the configuration on the user's emote wheel
+             CreatedTicks long        The ticks in the DateTime of the Created field for the emote configuration
+             UpdatedTicks long        The ticks in the DateTime of the Updated field for the emote configuration
+            
+             * EmoteConfigurations - HashSet, stores the Ids of each emote configuration equipped for a given user, indexed by position
+             Key          Data type   Description
+             [1-8]        long        The Id of the emote configuration stored at the position indicated by the given key
+             255          long        The sentinel record, used to record that even an empty configurations list is not a cache miss
+            <summary>
+            A Redis-backed caching solution for emote configurations
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationRedisCache.#ctor(Roblox.Redis.IRedisClient)">
+            <summary>
+            Creates a new instance of the emote configuration redis cache
+            </summary>
+            <param name="redisClient">The client to use to execute Redis actions</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationRedisCache.ClearEmoteConfigurationsForUserId(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationRedisCache.DeleteEmoteConfigurationByUserIdAndPosition(System.Int64,System.Byte)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationRedisCache.GetEmoteConfiguration(System.Int64,System.Func{System.Int64,Roblox.Platform.Avatar.IEmoteConfigurationEntity})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationRedisCache.GetEmoteConfigurationByUserIdAndPosition(System.Int64,System.Byte,System.Func{System.Int64,System.Collections.Generic.ICollection{Roblox.Platform.Avatar.IEmoteConfigurationEntity}},System.Func{System.Int64,Roblox.Platform.Avatar.IEmoteConfigurationEntity})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationRedisCache.GetEmoteConfigurationsByUserId(System.Int64,System.Func{System.Int64,System.Collections.Generic.ICollection{Roblox.Platform.Avatar.IEmoteConfigurationEntity}},System.Func{System.Int64,Roblox.Platform.Avatar.IEmoteConfigurationEntity})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationRedisCache.SetEmoteConfiguration(Roblox.Platform.Avatar.IEmoteConfigurationEntity)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.EmoteConfigurationRedisCache.SetEmoteConfigurationsForUserId(System.Int64,System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Avatar.IEmoteConfigurationEntity})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationFactory.SetEmoteConfiguration(System.Int64,System.Int64,System.Byte)">
+            <summary>
+            Methods to set emote configuration on specific position
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationFactory.SetEmoteConfigurations(System.Int64,System.Collections.Generic.IEnumerable{System.Tuple{System.Int64,System.Byte}})">
+            <summary>
+            Methods to set multiple emote configurations with on specific positions
+            If any of the emotes is unowned during the process, return it as invalid emote
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationFactory.DeleteEmoteConfiguration(System.Int64,System.Byte)">
+            <summary>
+            Methods to delete emote configuration on specific position
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationFactory.DeleteEmoteConfigurations(System.Int64,System.Collections.Generic.IEnumerable{System.Byte})">
+            <summary>
+            Methods to delete multiple emote configurations on specific positions
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationFactory.GetAllEmoteConfigurations(System.Int64)">
+            <summary>
+            Methods to get all emote configurations on specific user
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.EmoteConfiguration">
+            <summary>
+            Represents a configuration of a specified emote to a position
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.EmoteConfiguration.AssetId">
+            <summary>
+            The emote asset id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.EmoteConfiguration.Position">
+            <summary>
+            The position of the equipped emote
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Avatar.IEmoteConfigurationEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IEmoteConfigurationEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationEntityFactory.GetByUserIdAndPosition(System.Int64,System.Byte)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Avatar.IEmoteConfigurationEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            <param name="userId">The user id</param>
+            <param name="position">The emote position</param>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IEmoteConfigurationEntity"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationEntityFactory.GetByUserIdEnumerative(System.Int64,System.Int32,System.Nullable{System.Byte})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Avatar.IEmoteConfigurationEntity"/>s by their TODO: Fill in.
+            </summary>
+            TODO: Add params
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartPosition">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            TODO: Add other exceptions
+            <returns>The page of <see cref="T:Roblox.Platform.Avatar.IEmoteConfigurationEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationEntityFactory.Delete(System.Int64,System.Byte)">
+            <summary>
+            Deletes a user's emote configuration at the desired position
+            </summary>
+            <param name="userId">The user id</param>
+            <param name="position">The emote position</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationEntityFactory.CreateOrUpdate(System.Int64,System.Int64,System.Byte)">
+            <summary>
+            Creates or Updates a <see cref="T:Roblox.Platform.Avatar.IEmoteConfigurationEntity"/> by user Id and position
+            </summary>
+            <param name="userId">The user id</param>
+            <param name="assetId">The emote asset id</param>
+            <param name="position">The desired position</param>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IEmoteConfigurationEntity"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AccoutrementBuilder">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementBuilder.CreateNew(System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Avatar.Accoutrement">
+            <summary>
+            An accoutrement is an asset that is being worn on a user's avatar
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Accoutrement.Delete">
+            <summary>
+            Removes an accoutrement from the user's avatar.
+            accoutrements are only accessed through avatar, which handles thumbnail invalidation.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Accoutrement.Save">
+            accoutrements are only accessed through avatar, which handles thumbnail invalidation.
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Accoutrement.GetUserAccoutrementsNoFilter(System.Int64)">
+            <summary>
+            A version of GetUserAccoutrements which doesn't apply business rules at the end.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.RecentItemList.ReadWriteLock">
+            <summary>
+            Recent avatar items can be updated from nummerous threads
+            The entity has 3 columns that need to be kept in sync:
+            Dates, TypeIds, and TargetIds
+            Because of this, we need to lock on the entity whenever:
+            - we read from the DB
+            - we write back to the DB
+            - we copy data from the entity to another layer (like CachedMssqlEntity)
+            - we copy data from CachedMssqlEntity back to the entity
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.AccessoryLimitModeEnum.ThreeHats">
+            <summary>
+            Avatars can wear 1 of each asset type, but they can wear 3 hats
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.AccessoryLimitModeEnum.TenTotalAccessories">
+            <summary>
+            Avatars can wear 1 of each asset type, but for accessories you can wear up to 10, with any combination.
+            For example, you can wear 5 shoulder accessories and 3 hats and 2 face accessories
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AvatarChangeSourceEnum">
+            <summary>
+            Where do avatar changes come from?  i.e. what is the closest point to the user that the change originated from?
+            The goal of this is to cover all characterizable sources of changes.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AvatarChangeTypeEnum">
+            <summary>
+            https://confluence.roblox.com/display/PLATFORM/Avatar+Project+2016
+            What ways can an avatar change?
+            
+            This is not stored in a db so it can be reordered for now.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.RecentItemListTypeEnum">
+            <summary>
+            https://confluence.roblox.com/display/PLATFORM/Avatar+Project+2016
+            What category of recent clothing does this list contain?
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.RecentItemTypeEnum">
+            <summary>
+            https://confluence.roblox.com/display/PLATFORM/Avatar+Project+2016
+            What type of item is this?
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.ResolvedAvatarTypeEnum">
+            <summary>
+            This is the combination of universeAvatarType and playerAvatarType that is returned along with avatar-fetch.
+            It is used by the game server to build the character.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.ScaleDescriptionEnum">
+            <summary>
+            For a given scale set (height/width only) how would it best be described?
+            Earlier items have precedence.  https://docs.google.com/drawings/d/1s7ciFapx34pPuWVv70uWt_e8JTb9wuoWbjgeV2z-_u4/edit
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.ScaleDescriptionEnum.Standard">
+            <summary>
+            height==width==default value
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.ScaleDescriptionEnum.Biggest">
+            <summary>
+            height==width==maximum value
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.ScaleDescriptionEnum.Smallest">
+            <summary>
+            height==width==minimum value
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.ScaleDescriptionEnum.Proportional">
+            <summary>
+            height/width==1
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.ScaleDescriptionEnum.Narrower">
+            <summary>
+            height/width&gt;1
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.ScaleDescriptionEnum.Wider">
+            <summary>
+            height/width&lt;1
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AvatarOwnershipFactory">
+            <summary>
+            All avatar ownership calls should go through this class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarOwnershipFactory.IsExpired(Roblox.Platform.AssetOwnership.IUserAsset)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Avatar.IEmoteConfigurationCache">
+            <summary>
+            Defines the interface for storing emote configurations in a cache
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationCache.ClearEmoteConfigurationsForUserId(System.Int64)">
+            <summary>
+            Clears all related cache entries for the given user Id, if any
+            </summary>
+            <param name="userId">The Id of the given user</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationCache.DeleteEmoteConfigurationByUserIdAndPosition(System.Int64,System.Byte)">
+            <summary>
+            Deletes the emote configuration for the given user at the given position
+            </summary>
+            <param name="userId">The Id of the given user</param>
+            <param name="position">The position of the emote configuration</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationCache.GetEmoteConfiguration(System.Int64,System.Func{System.Int64,Roblox.Platform.Avatar.IEmoteConfigurationEntity})">
+            <summary>
+            Gets an emote configuration from the Redis cache by the given emote configuration id
+            If there is a cache miss, the getter is used to fill the cache and the value returned by the getter will be returned by this method
+            </summary>
+            <param name="id">The Id of the emote configuration</param>
+            <param name="emoteConfigurationGetter">Used in the case that a single emote configuration has been missed to fill the cache</param>
+            <returns>The emote configuration that is associated with the given id, if any</returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationCache.GetEmoteConfigurationByUserIdAndPosition(System.Int64,System.Byte,System.Func{System.Int64,System.Collections.Generic.ICollection{Roblox.Platform.Avatar.IEmoteConfigurationEntity}},System.Func{System.Int64,Roblox.Platform.Avatar.IEmoteConfigurationEntity})">
+            <summary>
+            Gets an emote configuration by the given user Id and position
+            If no emote configuration in the cache matches the given user Id and position,
+            this method will check for a cache miss on the user's entire set of emotes and
+            may use the provided getter methods to fill in the cache
+            </summary>
+            <param name="userId">The Id of the given user</param>
+            <param name="position">The position of the emote configuration</param>
+            <param name="emoteConfigurationsGetter">Used in the case that the user's entire emote configurations list has been missed to fill the cache</param>
+            <param name="emoteConfigurationGetter">Used in the case that a single emote configuration has been missed to fill the cache</param>
+            <returns>The emote configuration that is associated with the given user and position, if any</returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationCache.GetEmoteConfigurationsByUserId(System.Int64,System.Func{System.Int64,System.Collections.Generic.ICollection{Roblox.Platform.Avatar.IEmoteConfigurationEntity}},System.Func{System.Int64,Roblox.Platform.Avatar.IEmoteConfigurationEntity})">
+            <summary>
+            Gets all the emote configurations for the given user
+            Will use the provided getter methods in the case of cache misses
+            </summary>
+            <param name="userId">The Id of the given user</param>
+            <param name="emoteConfigurationsGetter">Used in the case that the user's entire emote configurations list has been missed to fill the cache</param>
+            <param name="emoteConfigurationGetter">Used in the case that a single emote configuration has been missed to fill the cache</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationCache.SetEmoteConfiguration(Roblox.Platform.Avatar.IEmoteConfigurationEntity)">
+            <summary>
+            Sets the cached value for a single emote configuration
+            </summary>
+            <param name="emoteConfiguration">The emote configuration to save</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IEmoteConfigurationCache.SetEmoteConfigurationsForUserId(System.Int64,System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Avatar.IEmoteConfigurationEntity})">
+            <summary>
+            Sets the cached value for emote configurations for the given user Id
+            </summary>
+            <param name="userId">The Id of the given user</param>
+            <param name="emoteConfigurations">The list of emote configurations</param>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.ITryOnFactory">
+            <summary>
+            A factory to try on unowned assets and create performance monitoring instances to track usage of the feature.
+            Also contains a method to ascentain if a specific asset can be tried on (i.e. whether the asset is werable).
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Avatar.ITryOnFactory.TryOnEvent">
+            <summary>
+            An event to track try on usage using <see cref="T:Roblox.Platform.Avatar.IAvatarTracker"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.ITryOnFactory.GetTemporaryOutfit(System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},Roblox.Platform.Membership.IUser,System.Boolean,System.Boolean)">
+            <summary>
+            Creates a temporary <see cref="T:Roblox.Platform.Outfits.IOutfit"/> with the list of clothing assets added to the current user's avatar. 
+            </summary>
+            <param name="wearableAssets">A list of assets to be added to the current user's avatar.</param>
+            <param name="user">The user trying on the item.</param>
+            <param name="applyDefaultClothing">Whether to apply default clothing to the thumbnail.</param>
+            <param name="trackUsage">Whether to track try on usage with AvatarTracker</param>
+            <returns>A <see cref="T:Roblox.Platform.Outfits.TemporaryOutfit"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.ITryOnFactory.IsAssetEligibleForTryingOn(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Returns true if the asset can be tried on. Returns false otherwise.
+            </summary>
+            <param name="asset">The asset to try on.</param>
+            <returns>Whether the asset can be tried on.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAccoutrementBuilder.CreateNew(System.Int64,System.Int64)">
+            <summary>
+            Creates a new accoutrement
+            </summary>
+            <exception cref="T:Roblox.Platform.Avatar.DuplicateAccoutrementInsertException">Thrown when an accoutrement already exists for this UserAssetID</exception>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AccoutrementSetBuilder">
+            <summary>
+            Represents a set of assets worn by a user.
+            Has methods to add items, remove items, and validate business rules.
+            Should preserve order of assets.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.LoadAccoutrements">
+            <summary>
+            Loads accoutrements for the user.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.HasPendingChanges">
+            <summary>
+            Returns true if there are any changes between the original set of loaded accoutrements, and the modified set.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.Add(Roblox.Platform.Assets.IAsset,System.Boolean)">
+            <summary>
+            Attempts to add an item to the accoutrement set
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.Remove(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Attempts to remove an item from the accoutrement set
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.Contains(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Check if the accoutrement set contains a specific asset
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.FilterDuplicates">
+            <summary>
+            Remove duplicate items from the accoutrement set
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.Reset">
+            <summary>
+            Removes all items from the accoutrement set
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.EnforceWearingLimits(Roblox.Platform.Avatar.AccessoryLimitModeEnum)">
+            <summary>
+            Enforces the maximum limit per assetType
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.IsWearableAsset(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Checks if the asset is a wearable asset type
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.IsPackage(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Checks if the asset is a package
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.OwnsAsset(Roblox.Platform.Assets.IAsset)">
+            <summary>
+            Checks if the asset is owned and is not expired
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementSetBuilder.AddExisting(Roblox.Platform.AssetOwnership.IUserAsset)">
+            <summary>
+            Adds an accoutrement to the assets list that is already on the avatar.
+            Doesn't do as many permission checks as Add()
+            </summary>
+            <param name="userAsset"></param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarChangeIdentifier.GetChangeType(System.Nullable{System.Int32},System.Boolean)">
+            <summary>
+            For a given accoutrement add/removal, determine how it should be logged.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarOwnershipFactory.IsExpired(Roblox.Platform.AssetOwnership.IUserAsset)">
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown when userAsset is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarOwnershipFactory.GetUserAssetsByUserAssetIds(System.Collections.Generic.ISet{System.Int64})">
+            <summary>
+            Returns a dictionary of userAssetId -> UserAsset object. All keys in the dictionary will have values. The implementation guarantees that no keys will exist in the dictionary with null values.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.EntityPerformanceMonitor">
+            <summary>
+            Performance monitor for tracking requests / methodName.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AccoutrementRulesAuthority">
+            <summary>
+            Responsible for all rules around wearing/removing accoutrements
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementRulesAuthority.IsWearableAssetType(System.Int32)">
+            <summary>
+            Is this something the user can click "wear" on on the website?
+            *not* something that they can "be wearing".  (due to packages)
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementRulesAuthority.CanTryOn(System.Int32)">
+            <summary>
+            Gets if the user can try on the assetType. For wearable items.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementRulesAuthority.GetWearingLimitForBucket(System.Int32,Roblox.Platform.Avatar.AccessoryLimitModeEnum)">
+            <summary>
+            Gets the total number
+            </summary>
+            <param name="assetTypeId"></param>
+            <param name="accessoryLimitMode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementRulesAuthority.GetWearingLimitBucket(System.Int32,Roblox.Platform.Avatar.AccessoryLimitModeEnum)">
+            <summary>
+            Returns a key that indicates which wearing limit the assetType should be included under
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementRulesAuthority.GetWearableTypes">
+            <summary>
+            Gets a list of wearable asset types
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementRulesAuthority.GetWearableOwnedAssetIds(System.Collections.Generic.List{Roblox.Asset},Roblox.Platform.Membership.IUser,Roblox.Platform.Avatar.AccessoryLimitModeEnum)">
+            <summary>
+            For a given list of assets make sure the user can wear all of them.
+            Example: used when trying to wear a costume
+            </summary>
+            <returns>The assetids which are wearable from the sent list.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AccoutrementRulesAuthority.GetUserAssetIdsWhichViolateWearingLimits(System.Collections.Generic.List{Roblox.Platform.AssetOwnership.IUserAsset},Roblox.Platform.Avatar.AccessoryLimitModeEnum)">
+            <summary>
+            Given a list of data about userAssets
+            Returns a new list of UserAssets that could not be worn because they are not within the max wearing limits
+            e.g. you can only wear 1 gear at a time, so if you tried to wear 2 gear, it would discard one
+            </summary>
+            <remarks>The reason this doesn't just take userAssetDTOs is that some consumers don't have them - they only have accoutrements.</remarks>
+            <returns>The userassetIds which violate wearing limits.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AssetChangeDiff">
+            <summary>
+            Given the input, this class determines:
+            - which items should be incremented on the Avatar Change graphs
+            - which items should be bumped to the top of recent avatar items
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AssetChangeDiff.GetAssetsAddedByUser">
+            <summary>
+            If wearing an outfit, don't fire avatarChange for any of the assets
+            If wearing a package, only fire avatarChange for the package asset
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AssetChangeDiff.WasAssetSwappedWithAssetOfSameType(System.Collections.Generic.List{System.Int64},System.Collections.Generic.List{System.Int64})">
+            <summary>
+            If adding one item and removing one item and they are both the same type, don't count it as a removal
+            It's probably a bump (e.g. when you wear a head, it bumps your other head)
+            This intentionally does not cover the case of wearing 10 accessories and then using the web view to wear another one, resulting in a bunch being removed
+            </summary>
+            <param name="addedAssets"></param>
+            <param name="removedAssets"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AssetChangeDiff.GetRecentItemsAdded">
+            <summary>
+            If the user is wearing an outfit, we don't add the individual parts to recent
+            If the user is wearing a package, add the individual parts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.AssetTypeRule.Limit">
+            <summary>
+            The number of this type of asset that can be worn at a time
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AvatarKeyGenerator">
+            <summary>
+            When we want to thumbnail a UserAvatar, we generate a string that represents that unique appearance
+            We upload that string as a file to S3, and get an AssetHash back
+            We then update the UserAvatar.NewAvatarAssetHashID to the ID of that AssetHash
+            When the thumbnailer wants to render that avatar, it downloads that AssetHash and parses the string to extract the data
+            The thumbnailer also treats this as a unique key for the avatar thumbnail
+            Outfits have a similar key system, see <see cref="T:Roblox.Platform.Outfits.OutfitKeyGenerator"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarKeyGenerator.ComputeKey(Roblox.Platform.Avatar.IAvatar,System.Boolean)">
+            <summary>
+            Generate the input that is turned into a URL which will be stored as the assetHash of the userAvatar
+            userAvatarAvatarHash is actually the bodycolors CDN hash
+            </summary>
+            <remarks>
+            Why does this URL have all the assetIds inline, and doesn't just send the userId and placeID
+            the way avatar-fetch does?  Because caching of (hash of all worn items as URL) => thumb happens early;
+            if we instead just cached userId, there might be a mismatch and the user would not be wearing what they ought to.
+            With game join, this is much more tolerable (gaps between what you're wearing when you click play
+            and when you get in the game due to fast clicking are okay).
+            
+            This URL is put into the CDN and saved; then later thumbnail coordination service reads it and sends it to the 
+            RCC thumbnailer. That service rewrites it to an apiproxy request to /avatar-fetch-thumbnail
+            </remarks>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver">
+            <summary>
+            This answers questions related to creating an avatar for a given user and place.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver.ConvertToResolvedAvatarType(Roblox.Platform.Outfits.PlayerAvatarType)">
+            <summary>
+            What resolvedAvatarType most directly matches the player's one, with no input from the universe?
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver.ConvertToResolvedAvatarType(Roblox.Platform.UniverseSettings.UniverseAvatarType)">
+            <summary>
+            If someone is trying to get into a game, and we don't have any information on player preference,
+            Determine how to resolve the user solely based on the universe's UniverseAvatarType.
+            </summary>
+            <param name="universeAvatarType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver.GetResolvedAvatarType(Roblox.Platform.Avatar.IAvatar,Roblox.Platform.UniverseSettings.UniverseAvatarType)">
+            <summary>
+            What resolvedAvatarType should a certain player have in a certain place?
+            This combines what we know of the player's desires with what the dev has set up as allowed for their universe, into a resolvedAvatarType.
+            
+            This method is called on game join.  For logged in users, it receives their real avatar.
+            for guests, it's called with the avatar of their "CharacterAppearanceId", who is just the avatar they look like.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver.InterpretPlayerAvatarTypeSetting(System.String)">
+            <summary>
+            Interpret an optional setting string as a playerAvatarType.
+            This coerces settings values into only valid enum values
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver.InterpretResolvedAvatarTypeSetting(System.String)">
+            <summary>
+            Interpret an optional setting string as a resolvedAvatarType.
+            This coerces settings values into only valid enum values
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver.GetDefaultThumbnailResolvedAvatarType">
+            <summary>
+            Avatar type for thumbnailing when no resolvedAvatarType is specified.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver.GetOverrideThumbnailResolvedAvatarType">
+            <summary>
+            Globally override resolvedAvatarType the thumbnailer uses.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarPlaceSettingsResolver.GetResolvedScale(Roblox.Platform.Avatar.IAvatar,Roblox.Platform.UniverseSettings.UniverseScaleType,Roblox.Platform.UniverseSettings.UniverseAvatarBodyType)">
+            <summary>
+            Gets the resolved scale for an avatar.
+            https://confluence.roblox.com/display/PLATFORM/Avatar+Scaling+and+Scales
+            </summary>
+            <param name="avatar">The avatar</param>
+            <param name="universeScaleType">The universeScaleType of the universe the avatar is joining</param>
+            <param name="universeBodyType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.UserAvatarListener">
+            <summary>
+            Listens for events that GetOrCreate UserAvatars and clear Thumbnails
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.DefaultClothingEnforcer">
+            <summary>
+            Default Clothing
+            https://confluence.roblox.com/pages/viewpage.action?pageId=11897659
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.DefaultClothingEnforcer.HandleDefaultClothingSetting(System.String,Roblox.Platform.Avatar.DefaultClothingType)">
+            <summary>
+            Load all default assets every time the settings changes
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.DefaultClothingEnforcer.GetDefaultClothingState(Roblox.Platform.Avatar.IAvatar,System.Boolean@,System.Boolean@,Roblox.Platform.Outfits.IBrickBodyColorSet)">
+            <summary>
+            This avatar actually has had default clothing applied to them.
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:Roblox.Platform.Avatar.DefaultClothingEnforcer.TryAddDefaultClothing(System.Collections.Generic.IList{Roblox.Platform.Avatar.WornAsset},Roblox.Platform.Avatar.IAvatar)">
+            <summary>
+            Check release state and business rules for wearing items for this user,
+            and if necessary create wornAssets of the default clothing items for them.
+            Rules: If user is wearing pants, (add default pants and check shirt)
+            check shirt: if user is not wearing shirt, wear shirt.
+            Acceptable clothing states, if feature is enabled for the user:
+              *just pants
+              *pants and shirt
+            </summary>
+            <param name="wornAssets"></param>
+            <param name="avatar"></param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.DefaultClothingEnforcer.TryAddDefaultClothing(Roblox.Platform.Membership.IUser,System.Collections.Generic.IList{Roblox.Platform.Assets.IAsset},Roblox.Platform.Outfits.IBrickBodyColorSet,Roblox.Platform.Assets.IAssetFactory)">
+            <summary>
+            Check release state and business rules for wearing items for this temporary outfit,
+            and if necessary, add default clothing items for them.
+            Rules: If user is wearing pants, (add default pants and check shirt)
+            check shirt: if user is not wearing shirt, wear shirt.
+            Acceptable clothing states, if feature is enabled for the user:
+              *just pants
+              *pants and shirt
+            </summary>
+            <param name="user">The user for which the outfit is being created</param>
+            <param name="outfitAssets">The assets in the outfit.</param>
+            <param name="brickBodyColorSet">The brick body color set of the outfit.</param>
+            <param name="assetFactory">The Roblox.Platform AssetFactory to get the Roblox.Platform.Assets.IAsset from the Asset entity.</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.DefaultClothingEnforcer.IsWearingApprovedAssetType(System.Int32,System.Collections.Generic.IList{Roblox.Platform.Assets.IAsset},System.Boolean@)">
+            <summary>
+            For default clothing; does the outfit assets contain an (approved) item of the given assetType?
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.DefaultClothingEnforcer.RemoveWornAssetType(System.Int32,System.Collections.Generic.IList{Roblox.Platform.Avatar.WornAsset})">
+            <summary>
+            Private method to remove moderated pant and shirt assets from the list of worn assets so users don't appear to be wearing two of either of those when default clothing is applied. 
+            We cannot do this with LinQ since we NEED to modify the existing collection as that is what is returned by the method calling TryAddDefaultClothing
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IUserAvatarFactory.Get(System.Int32)">
+            <summary>
+            Get UserAvatar Entity by ID
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IUserAvatarFactory.GetOrCreate(System.Int64,System.Nullable{System.Byte},System.Nullable{System.Int32})">
+            <summary>
+            Get UserAvatar if one exists with the given userId. 
+            If a UserAvatar Entity does not exist for the given object, this method creates a new entity with the supplied params.
+            If the optional parameters are not supplied, they are populated with default values.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.WornAsset">
+            <summary>
+            This is how platform.avatar communicates the currently worn assets of a user to everyone else.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.Avatar">
+            <summary>
+            Manages rules for wearing/removing userAssets
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Avatar.Avatar.AssetsChangedEvent">
+            <summary>
+            Avatar being changed
+            Asset IDs being worn
+            Asset IDs being unworn
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Avatar.Avatar._ThumbnailDirty">
+            <summary>
+            When making changes to the avatar, we only want to mark it as ready for a new thumbnail when all the accoutrements/changes have occurred
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.AvatarChanged(Roblox.Platform.EventStream.WebEvents.AvatarChangedEventArgs)">
+             <summary>
+             This is called once for each "avatar change" action the user does.
+             This should (only) be called at the end of every public method which changes the avatar - no intermediate states.
+            
+             It triggers regeneration of thumbnail, if anything actually changed about the user's appearance.
+             </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.AvatarChanged(Roblox.Platform.Avatar.AvatarChangeTypeEnum)">
+            <summary>
+            Overload of <see cref="M:Roblox.Platform.Avatar.Avatar.AvatarChanged(Roblox.Platform.EventStream.WebEvents.AvatarChangedEventArgs)"></see>
+            </summary>
+            <param name="avatarChangeType"></param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.LoadAccoutrements(System.Boolean,Roblox.Platform.Avatar.AccessoryLimitModeEnum)">
+            <summary>
+            Update cached Accoutrements from the db.
+            </summary>
+            <param name="mustCheckWearingRules">whether to force check wearing rules (for important cases, like game join).</param>
+            <param name="accessoryLimitMode"></param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.DoRemove(System.Collections.Generic.IEnumerable{Roblox.Platform.Avatar.IAccoutrement})">
+            <summary>
+            Delete accoutrement from the db, and delete it from this avatar's cache.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.IsWearingApprovedAssetType(System.Int32,System.Boolean@)">
+            <summary>
+            For default clothing; is the user wearing an (approved) item of the given assetType?
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.GetGear(System.Int32,System.Int32)">
+            <summary>
+            Returns the user's gear in userAsset Creation order.  We have to read all of them to be sure to get it in the right order.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.GetAccoutrements(System.Boolean)">
+            <param name="mustCheckWearingRules">optionally, also check wearing business rules.</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.GetWornAssets(System.Boolean,System.Boolean)">
+            <summary>
+            Single point of access for worn items on an avatar.
+            </summary>
+            <param name="mustCheckWearingRules">Should we revalidate the business rules about wearing slots &amp; accessories</param>
+            <param name="checkIfDefaultClothingNeeded">If default clothing is released, then check the user for the necessity of including it.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.WearOutfit(Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            Wears a user outfit
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.SetScale(System.Decimal,System.Decimal,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})">
+            <summary>
+            Updates the avatar scale
+            If any of the scale dimensions are outside of the range of valid values, clamps to the valid range.
+            If any of the values are zero, use defaults.
+            </summary>
+            <returns>False if any of the scales are outside the valid range</returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.Avatar.GetGearForPlacePaged(Roblox.Asset,System.Int32,System.Int32,System.Collections.Generic.IReadOnlyCollection{System.Int64})">
+            <summary>
+            Handle pagination of the backpack for a place, which consists of allowed gear like this:
+            [equippedGear], [otherBackPackGear]+
+            Where otherBackPackGear are in most recently updated UserAsset first order
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarChangeIdentifier.GetChangeType(System.Nullable{System.Int32},System.Boolean)">
+            <summary>
+            For a given accoutrement add/removal, determine how it should be logged.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.AvatarDomainFactories.RecentItemListTypeEntityFactory">
+            <summary>
+            Type table for RecentItemListType
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.AvatarDomainFactories.RecentItemTypeEntityFactory">
+            <summary>
+            Type table for RecentItemType
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.AvatarDomainFactories.RecentItemListEntityFactory">
+            <summary>
+            Table that contains rows that represent lists of recently worn avatar items
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarDomainFactories.#ctor">
+            <summary>
+            Used only for tests
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarDomainFactories.#ctor(Roblox.EventLog.ILogger,Roblox.Avatar.Client.IAvatarClient,Roblox.Platform.Avatar.IAvatarTracker)">
+            <summary>
+            If avatarTracker is not null, logging to diag and eventstream will happen automatically
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarDomainFactories.#ctor(Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Assets.IAssetFactory,Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority,Roblox.Platform.Assets.IAssetTypeFactory,Roblox.Platform.Outfits.OutfitDomainFactories,Roblox.Platform.Assets.IRawContentFactory,Roblox.EventLog.ILogger,Roblox.Avatar.Client.IAvatarClient,Roblox.Platform.Avatar.IAvatarTracker)">
+            <summary>
+            If avatarTracker is not null, logging to diag and eventstream will happen automatically
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarDomainFactories.RegisterListeners">
+            <summary>
+            Methods to register event handlers for Recent Avatar Item changes and clear thumbnail events for UserAvatars
+            Do NOT override these methods unless you know what you're doing - they are virtual to facilitate testability.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarDomainFactories.UnregisterListeners">
+            <summary>
+            Methods to unregister event handlers for Recent Avatar Item changes and clear thumbnail events for UserAvatars
+            Do NOT override these methods unless you know what you're doing - they are virtual to facilitate testability.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.AvatarScale">
+            <summary>
+            Publicly exposed representation of avatar scale
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarExtensions.GetScaleDescription(Roblox.Platform.Avatar.IAvatar)">
+            <summary>
+            Determine which scaleDescription the user has on.
+            https://confluence.roblox.com/display/PLATFORM/Avatar+Scaling+and+Scales
+            </summary>
+            <param name="avatar">The avatar for which we are requesting the scale</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.AvatarExtensions.BodyColorsTooSimilar(System.Int32,System.Int32)">
+            <summary>
+            Determines whether 2 body colors are similar enough to pass for "nudity".
+            The Delta-E difference between two body colors is calculated using the CIE2000
+            algorithm, and the minimum threshold value is determined by a setting.
+            </summary>
+            <param name="firstBrickColorId"></param>
+            <param name="secondBrickColorId"></param>
+            <returns>True if firstBodyColor and secondBodyColor are too similar</returns>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.RecentAvatarItem">
+            <summary>
+            Exposed to public methods and consumers
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.RecentAvatarItemListener">
+            <summary>
+            Listens for events that add items to a user's recent avatar items list
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.RecentAvatarItemPublisher">
+            <summary>
+            This both does avatar recent items logic, and actually modifies the "recent items" entities.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.RecentAvatarItems">
+            <summary>
+            We keep track of items that a user has recently interacted with
+            This will be displayed on the avatar page
+            Note: we don't check whether the user actually owns the item; we just put it on their avatar page anyway.  This should be fine.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.RecentAvatarItems.Add(Roblox.Platform.Assets.IAsset,System.Nullable{System.DateTime})">
+            <summary>
+            Adds the asset to the appropriate list of recent avatar items
+            Call <see cref="M:Roblox.Platform.Avatar.RecentAvatarItems.Save"/> to persist the change to the database
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.RecentAvatarItems.Add(Roblox.Platform.Outfits.IUserOutfit,System.Nullable{System.DateTime})">
+            <summary>
+            Adds the userOutfit to the appropriate list of recent avatar items
+            Call <see cref="M:Roblox.Platform.Avatar.RecentAvatarItems.Save"/> to persist the change to the database
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.RecentAvatarItems.Save">
+            <summary>
+            Saves each list of recent avatar items
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.RecentAvatarItems.GetRecentItems(Roblox.Platform.Avatar.RecentItemListTypeEnum)">
+            <summary>
+            Gets a list of recent avatar items of the given type
+            </summary>
+            <param name="recentItemListTypeEnum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.RecentAvatarItems.GetAll">
+            <summary>
+            Gets a list of recent avatar items of all the types
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.RecentAvatarItems.IsUserAssetValidForRecentItems(Roblox.Platform.AssetOwnership.IUserAsset)">
+             <summary>
+            invalid if null, or (asset is expireable and userasset is expired)
+             </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.IAvatar">
+            <summary>
+            An object which can be used to wear and remove things for a user.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.WearAssets(System.Collections.Generic.IEnumerable{System.Int64},System.Boolean,Roblox.Platform.Avatar.AccessoryLimitModeEnum)">
+            <summary>
+            Adds a list of assets to the avatar
+            </summary>
+            <param name="assetIds">The assetIds to wear</param>
+            <param name="resetCurrentAppearance">If true, removes all other assets first</param>
+            <param name="accessoryLimitMode">Whether to use the 10 accessory maximum, or the 3 hat max + 1 of each</param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.WearOutfit(Roblox.Platform.Outfits.IUserOutfit)">
+            <summary>
+            Sets the appearance of the avatar to the specified user outfit.
+            Does not wear item that are no longer owned.
+            </summary>
+            <param name="userOutfit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.CreateUserOutfit(Roblox.Platform.Outfits.IOutfit,Roblox.TextFilter.Client.ITextFilterClientV2,System.String)">
+            <summary>
+            Given an Outfit entity, creates a user outfit
+            </summary>
+            <param name="outfit"></param>
+            <param name="textFilterClientV2"></param>
+            <param name="outfitName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.UpdateUserOutfit(Roblox.Platform.Outfits.IUserOutfit,Roblox.Platform.Outfits.IOutfit)">
+            <summary>
+            Updates a user outfit to point to the given outfit
+            </summary>
+            <param name="userOutfit"></param>
+            <param name="outfit"></param>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.GetWornAssets(System.Boolean,System.Boolean)">
+            <summary>
+            This should be the only way to access what the avatar is wearing.
+            </summary>
+            <param name="mustCheckWearingRules">If true, then we check the business rules for wearing slots &amp; types before returning.  This possibly removes some Accoutrements.</param>
+            <param name="checkIfDefaultClothingNeeded">If true, then WornAsset objects for the default clothing will be created - even if the user doesn't actually own those types.
+            (This is to prevent nude avatars when user isn't wearing shirt/pants on their own)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.GetScale">
+            <summary>
+            Gets the avatar's scale.
+            Heals the value in the database if it's outside the valid max and min values.
+            Returns a default scale if the user's scale is null or scales are globally overridden.
+            Note that even though scales aren't applied to R6 avatars, this will return the scales set in the database.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.GetDefaultScale">
+            <summary>
+            Gets the default scale for an avatar
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.SetScale(System.Decimal,System.Decimal,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})">
+            <summary>
+            Sets the avatar's scale.
+            Returns false and does not update if any of the scales are out of the valid range.
+            Use <see cref="M:Roblox.Platform.Avatar.IAvatar.CheckScale(System.Decimal,System.Decimal,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})"/> beforehand.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatar.CheckScale(System.Decimal,System.Decimal,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})">
+            <summary>
+            Checks the avatar scales and ensures they are within valid ranges
+            </summary>
+            <returns>A list of <see cref="T:Roblox.Platform.Outfits.ScaleRules"/> for each dimension of the scale that is out of range</returns>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.IAvatarFactory">
+            <summary>
+            An object which can be used to wear and remove things for a user.
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Avatar.IAvatarFactory.AppearanceChangedEvent">
+            <summary>
+            An event raised when an avatar changes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarFactory.InvokeAppearanceChangeEvent(Roblox.Platform.EventStream.WebEvents.AvatarChangedEventArgs)">
+            <summary>
+            Invokes the <see cref="E:Roblox.Platform.Avatar.IAvatarFactory.AppearanceChangedEvent"/> with the specified args.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.IAvatarScale">
+            <summary>
+            Public representation of avatar scale
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.IAvatarScale.Height">
+            <summary>
+            Height scale
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.IAvatarScale.Width">
+            <summary>
+            Width scale
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.IAvatarScale.Head">
+            <summary>
+            Head scale
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.IAvatarScale.Proportion">
+            <summary>
+            Scale between 50th percentile male and 50th percentile female proportions
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.IAvatarScale.BodyType">
+            <summary>
+            Scale between base avatar and anthropomorphic avatar
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.IAvatarScale.Depth">
+            <summary>
+            Derived field based on width.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Avatar.IAvatarScale.IsDefault">
+            <summary>
+            Whether the scale is the default scale for an avatar
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.IAvatarTracker">
+            <summary>
+            For tracking changes made to avatars
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarTracker.RegisterToDiag(Roblox.Platform.Avatar.IAvatarFactory)">
+            <summary>
+            Registers AppearanceChangedEvents to be funneled to diag via the injected AvatarFactory.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarTracker.RegisterToEventStream(Roblox.Platform.Avatar.IAvatarFactory)">
+            <summary>
+            Registers AppearanceChangedEvents to be funneled to event stream via the injected AvatarFactory.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarTracker.RegisterToDiag(Roblox.Platform.Avatar.ITryOnFactory)">
+            <summary>
+            Registers AppearanceChangedEvents to be funneled to diag via the injected TryOnFactory.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarTracker.RegisterToEventStream(Roblox.Platform.Avatar.ITryOnFactory)">
+            <summary>
+            Registers AppearanceChangedEvents to be funneled to event stream via the injected TryOnFactory.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarTracker.UnregisterFromDiag(Roblox.Platform.Avatar.IAvatarFactory)">
+            <summary>
+            Unregisters AppearanceChangedEvents to be funneled to diag via the injected AvatarFactory.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IAvatarTracker.UnregisterFromEventStream(Roblox.Platform.Avatar.IAvatarFactory)">
+            <summary>
+            Unregisters AppearanceChangedEvents to be funneled to event stream via the injected AvatarFactory.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.Avatar.IAvatarTracker.UnregisterFromDiag(Roblox.Platform.Avatar.ITryOnFactory)" -->
+        <member name="M:Roblox.Platform.Avatar.IAvatarTracker.UnregisterFromEventStream(Roblox.Platform.Avatar.ITryOnFactory)">
+            <summary>
+            Unregisters AppearanceChangedEvents to be funneled to event stream via the injected TryOnFactory.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IRecentItemListTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Avatar.IRecentItemListTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IRecentItemListTypeEntity"/> with the given ID, or null if none existed.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IRecentItemListTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Avatar.IRecentItemListTypeEntity"/> with the given value
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IRecentItemListTypeEntity"/> with the given value
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IRecentItemTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Avatar.IRecentItemTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IRecentItemTypeEntity"/> with the given ID, or null if none existed.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IRecentItemTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Avatar.IRecentItemTypeEntity"/> with the given value
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IRecentItemTypeEntity"/> with the given value
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IUniverseScaleTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Avatar.IUniverseScaleTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IUniverseScaleTypeEntity"/> with the given ID, or null if none existed.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Avatar.IUniverseScaleTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Avatar.IUniverseScaleTypeEntity"/> with the given value
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Avatar.IUniverseScaleTypeEntity"/> with the given value
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.Avatar.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.AvatarChangedEventArgs">
+            <summary>
+            Event arguments for tracking Cookie Conversion.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AvatarChangedEventArgs.RequestDataSetup">
+            <summary>
+            During evaluation of this eventArgs, have we already filled in deviceType, etc. from webEventArgsFactory?
+            </summary>
+        </member>
+    </members>
+</doc>

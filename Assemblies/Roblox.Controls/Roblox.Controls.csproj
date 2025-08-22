@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Controls</AssemblyName>
@@ -19,7 +19,6 @@
     <EmbeddedResource Include="Roblox.Controls.Image.min.js" LogicalName="Roblox.Controls.Image.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit" />
     <Reference Include="System.Web" />
     <Reference Include="System.Design" />
     <Reference Include="System.Web.Extensions" />
@@ -28,11 +27,13 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Analytics">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common.Web">
       <HintPath>..\..\Website\bin\Roblox.Common.Web.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
 </Project>

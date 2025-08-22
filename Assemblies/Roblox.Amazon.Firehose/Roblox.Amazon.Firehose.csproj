@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Amazon.Firehose</AssemblyName>
@@ -18,11 +18,9 @@
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.KinesisFirehose" />
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
     <Reference Include="Roblox.Amazon.Core">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Core.dll</HintPath>
     </Reference>
@@ -35,5 +33,9 @@
     <Reference Include="System.Configuration.ConfigurationManager">
       <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.0" />
+    <PackageReference Include="AWSSDK.KinesisFirehose" Version="3.7.0" />
   </ItemGroup>
 </Project>

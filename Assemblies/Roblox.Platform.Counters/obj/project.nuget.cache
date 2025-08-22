@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fzzhPzzMKzp1JS134v9t/G0SeWD4y1if8k1Lr3WU3kbnLJQacYkm8ysDEgxKzBuaQBDZfglBorpnsvKhGMdd9A==",
+  "dgSpecHash": "J/Sdvq3tfNI=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.Counters\\Roblox.Platform.Counters.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.Counters\\Roblox.Platform.Counters.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

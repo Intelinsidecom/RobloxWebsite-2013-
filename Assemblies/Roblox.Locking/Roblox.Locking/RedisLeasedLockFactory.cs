@@ -4,7 +4,7 @@ namespace Roblox.Locking;
 
 public class RedisLeasedLockFactory : IRedisLeasedLockFactory, ILeasedLockFactory
 {
-	ILeasedLock ILeasedLockFactory.CreateLeasedLock(string lockKey, TimeSpan leaseDuration, Action<Exception> exceptionHandler = null)
+	ILeasedLock ILeasedLockFactory.CreateLeasedLock(string lockKey, TimeSpan leaseDuration, Action<Exception> exceptionHandler)
 	{
 		return CreateLeasedLock(lockKey, leaseDuration, exceptionHandler);
 	}

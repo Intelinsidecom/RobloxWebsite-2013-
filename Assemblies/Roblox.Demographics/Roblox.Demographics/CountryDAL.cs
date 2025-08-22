@@ -34,7 +34,7 @@ public class CountryDAL
 		{
 			new SqlParameter("@ID", ID)
 		};
-		EntityHelper.DoEntityDALDelete(new DbInfo(ConnectionString, "Countries_DeleteCountryByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(ConnectionString, "Countries_DeleteCountryByID", queryParameters));
 	}
 
 	internal void Insert()

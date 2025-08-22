@@ -53,18 +53,16 @@ public abstract class OwnershipV2AuthorityBase<TOwner, TItem>
 	protected IReadOnlyCollection<TItem> GetItemsByOwnerAndItemType(TOwner owner, string itemType, int count, TItem exclusiveStartItem, Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		OwnedItem exclusiveStartOwnedItem = ((exclusiveStartItem == null) ? null : BuildOwnedItem(owner, exclusiveStartItem));
-		Roblox.ApiClientBase.SortOrder clientSortOrder = ((sortOrder != Roblox.DataV2.Core.SortOrder.Desc) ? Roblox.ApiClientBase.SortOrder.Asc : Roblox.ApiClientBase.SortOrder.Desc);
 		Owner builtOwner = BuildOwner(owner);
-		GetOwnedItemsResult result = _Client.GetOwnedItemsByOwnerAndItemType(builtOwner, itemType, count, exclusiveStartOwnedItem, clientSortOrder);
+		GetOwnedItemsResult result = _Client.GetOwnedItemsByOwnerAndItemType(builtOwner, itemType, count, exclusiveStartOwnedItem, sortOrder);
 		return Translate(result);
 	}
 
 	protected IReadOnlyCollection<TItem> GetItemsByOwnerAndTypeAndSubtype(TOwner owner, string itemType, string subtype, int count, TItem exclusiveStartItem, Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		OwnedItem exclusiveStartOwnedItem = ((exclusiveStartItem == null) ? null : BuildOwnedItem(owner, exclusiveStartItem));
-		Roblox.ApiClientBase.SortOrder clientSortOrder = ((sortOrder != Roblox.DataV2.Core.SortOrder.Desc) ? Roblox.ApiClientBase.SortOrder.Asc : Roblox.ApiClientBase.SortOrder.Desc);
 		Owner builtOwner = BuildOwner(owner);
-		GetOwnedItemsResult result = _Client.GetOwnedItemsByOwnerAndItemTypeAndSubtype(builtOwner, itemType, subtype, count, exclusiveStartOwnedItem, clientSortOrder);
+		GetOwnedItemsResult result = _Client.GetOwnedItemsByOwnerAndItemTypeAndSubtype(builtOwner, itemType, subtype, count, exclusiveStartOwnedItem, sortOrder);
 		return Translate(result);
 	}
 

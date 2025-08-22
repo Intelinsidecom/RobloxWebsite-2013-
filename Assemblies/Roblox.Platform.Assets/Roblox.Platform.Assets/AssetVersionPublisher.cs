@@ -1,5 +1,6 @@
 using System;
 using Roblox.Assets.Client;
+using ClientAssetType = Roblox.Assets.Client.AssetType;
 
 namespace Roblox.Platform.Assets;
 
@@ -88,7 +89,7 @@ public class AssetVersionPublisher : IAssetVersionPublisher
 		{
 			throw new NotSupportedException($"Asset type is not supported. Asset type ID: {asset.TypeId}.");
 		}
-		AssetType clientAssetType = _AssetTypeFactory.ToAssetsClientAssetType(assetType.Value);
+		ClientAssetType clientAssetType = _AssetTypeFactory.ToAssetsClientAssetType(assetType.Value);
 		_AssetsClient.CreateAssetPublishedVersion(clientAssetType, asset.Id.ToString(), (long)assetVersion.VersionNumber, actorTargetId, actorType.ToString());
 	}
 }

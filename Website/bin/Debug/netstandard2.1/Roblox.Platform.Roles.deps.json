@@ -1,0 +1,1002 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "Roblox.Platform.Roles/1.0.0": {
+        "dependencies": {
+          "Roblox.Platform.Email": "1.0.0",
+          "Roblox.Platform.Membership": "1.0.0",
+          "Roblox.EventLog": "1.0.0.0",
+          "Roblox.EventLog.Windows": "1.0.0.0"
+        },
+        "runtime": {
+          "Roblox.Platform.Roles.dll": {}
+        }
+      },
+      "Roblox.Platform.Email/1.0.0": {
+        "runtime": {
+          "Roblox.Platform.Email.dll": {}
+        }
+      },
+      "Roblox.Platform.Membership/1.0.0": {
+        "dependencies": {
+          "Roblox.Platform.Email": "1.0.0"
+        },
+        "runtime": {
+          "Roblox.Platform.Membership.dll": {}
+        }
+      },
+      "Roblox.EventLog/1.0.0.0": {
+        "runtime": {
+          "Roblox.EventLog.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.EventLog.Windows/1.0.0.0": {
+        "runtime": {
+          "Roblox.EventLog.Windows.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DnsClient/1.2.0.0": {
+        "runtime": {
+          "DnsClient.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Roblox.Platform.Core/1.0.0.0": {
+        "runtime": {
+          "Roblox.Platform.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.BriteVerify/1.0.0.0": {
+        "runtime": {
+          "Roblox.BriteVerify.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Configuration/1.0.0.0": {
+        "runtime": {
+          "Roblox.Configuration.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Entities/1.0.0.0": {
+        "runtime": {
+          "Roblox.Entities.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox Server Class Library/1.0.0.0": {
+        "runtime": {
+          "Roblox Server Class Library.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Platform.MembershipCore/1.0.0.0": {
+        "runtime": {
+          "Roblox.Platform.MembershipCore.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Instrumentation/1.0.0.0": {
+        "runtime": {
+          "Roblox.Instrumentation.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Agents/1.0.0.0": {
+        "runtime": {
+          "Roblox.Agents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Users.Client/1.0.0.0": {
+        "runtime": {
+          "Roblox.Users.Client.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Passwords.Client/1.0.0.0": {
+        "runtime": {
+          "Roblox.Passwords.Client.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Random/1.0.0.0": {
+        "runtime": {
+          "Roblox.Random.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Amazon.Sns/1.0.0.0": {
+        "runtime": {
+          "Roblox.Amazon.Sns.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Data/1.0.0.0": {
+        "runtime": {
+          "Roblox.Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Common/1.0.0.0": {
+        "runtime": {
+          "Roblox.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Hashing/1.0.0.0": {
+        "runtime": {
+          "Roblox.Hashing.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Users/1.0.0.0": {
+        "runtime": {
+          "Roblox.Users.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.3.0.0": {
+        "runtime": {
+          "AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.103.66"
+          }
+        }
+      },
+      "Roblox.Caching/1.0.0.0": {
+        "runtime": {
+          "Roblox.Caching.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Diagnostics/1.0.0.0": {
+        "runtime": {
+          "Roblox.Diagnostics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.0.0": {
+        "runtime": {
+          "Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "Roblox.DataV2.Core/1.0.0.0": {
+        "runtime": {
+          "Roblox.DataV2.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.RestClientBase/1.0.0.0": {
+        "runtime": {
+          "Roblox.RestClientBase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Sentinels/1.0.0.0": {
+        "runtime": {
+          "Roblox.Sentinels.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Amazon.Sqs/1.0.0.0": {
+        "runtime": {
+          "Roblox.Amazon.Sqs.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.BucketStore/1.0.0.0": {
+        "runtime": {
+          "Roblox.BucketStore.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Platform.AssetOwnership/1.0.0.0": {
+        "runtime": {
+          "Roblox.Platform.AssetOwnership.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Locking/1.0.0.0": {
+        "runtime": {
+          "Roblox.Locking.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Amazon/1.0.0.0": {
+        "runtime": {
+          "Roblox.Amazon.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Common.Web/1.0.0.0": {
+        "runtime": {
+          "Roblox.Common.Web.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.MssqlDatabases/1.0.0.0": {
+        "runtime": {
+          "Roblox.MssqlDatabases.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Economy.Common/1.0.0.0": {
+        "runtime": {
+          "Roblox.Economy.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Economy/1.0.0.0": {
+        "runtime": {
+          "Roblox.Economy.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Moderation/1.0.0.0": {
+        "runtime": {
+          "Roblox.Moderation.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StackExchange.Redis/1.2.6.0": {
+        "runtime": {
+          "StackExchange.Redis.dll": {
+            "assemblyVersion": "1.2.6.0",
+            "fileVersion": "1.2.6.0"
+          }
+        }
+      },
+      "Roblox.ApiClientBase/1.0.0.0": {
+        "runtime": {
+          "Roblox.ApiClientBase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.WebsiteSettings/1.0.0.0": {
+        "runtime": {
+          "Roblox.WebsiteSettings.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Entities.Mssql/1.0.0.0": {
+        "runtime": {
+          "Roblox.Entities.Mssql.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.RequestContext/1.0.0.0": {
+        "runtime": {
+          "Roblox.RequestContext.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.UserCacheMigrationSettings/1.0.0.0": {
+        "runtime": {
+          "Roblox.UserCacheMigrationSettings.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Web.SEO/1.0.0.0": {
+        "runtime": {
+          "Roblox.Web.SEO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Assets/1.0.0.0": {
+        "runtime": {
+          "Roblox.Assets.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Redis.Lru/1.0.0.0": {
+        "runtime": {
+          "Roblox.Redis.Lru.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Redis/1.0.0.0": {
+        "runtime": {
+          "Roblox.Redis.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.ContentRatings/1.0.0.0": {
+        "runtime": {
+          "Roblox.ContentRatings.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Coordination/1.0.0.0": {
+        "runtime": {
+          "Roblox.Coordination.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Prometheus.NetStandard/3.0.0.0": {
+        "runtime": {
+          "Prometheus.NetStandard.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.4.0"
+          }
+        }
+      },
+      "Roblox.Http.ServiceClient/1.0.0.0": {
+        "runtime": {
+          "Roblox.Http.ServiceClient.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Http.Client/1.0.0.0": {
+        "runtime": {
+          "Roblox.Http.Client.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Collections/1.0.0.0": {
+        "runtime": {
+          "Roblox.Collections.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Serialization.Json/1.0.0.0": {
+        "runtime": {
+          "Roblox.Serialization.Json.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Amazon.Core/1.0.0.0": {
+        "runtime": {
+          "Roblox.Amazon.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Data.SqlClient/4.5.0.0": {
+        "runtime": {
+          "System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.6.27110.4"
+          }
+        }
+      },
+      "Roblox.Common.NetStandard/1.0.0.0": {
+        "runtime": {
+          "Roblox.Common.NetStandard.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.MemCachedClient/1.0.0.0": {
+        "runtime": {
+          "Roblox.MemCachedClient.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Time/1.0.0.0": {
+        "runtime": {
+          "Roblox.Time.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.FloodCheckers.Core/1.0.0.0": {
+        "runtime": {
+          "Roblox.FloodCheckers.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.FloodCheckers.Redis/1.0.0.0": {
+        "runtime": {
+          "Roblox.FloodCheckers.Redis.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Platform.OwnershipV2/1.0.0.0": {
+        "runtime": {
+          "Roblox.Platform.OwnershipV2.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.LeasedLocks.Client/1.0.0.0": {
+        "runtime": {
+          "Roblox.LeasedLocks.Client.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Platform.Infrastructure/1.0.0.0": {
+        "runtime": {
+          "Roblox.Platform.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Mssql/1.0.0.0": {
+        "runtime": {
+          "Roblox.Mssql.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.TransactionEvents/1.0.0.0": {
+        "runtime": {
+          "Roblox.TransactionEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.ServiceDiscovery/1.0.0.0": {
+        "runtime": {
+          "Roblox.ServiceDiscovery.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Http/1.0.0.0": {
+        "runtime": {
+          "Roblox.Http.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Pipeline/1.0.0.0": {
+        "runtime": {
+          "Roblox.Pipeline.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Http.Client.Monitoring/1.0.0.0": {
+        "runtime": {
+          "Roblox.Http.Client.Monitoring.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Networking/1.0.0.0": {
+        "runtime": {
+          "Roblox.Networking.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Roblox.Platform.EventStream/1.0.0.0": {
+        "runtime": {
+          "Roblox.Platform.EventStream.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Consul/0.7.2.6": {
+        "runtime": {
+          "Consul.dll": {
+            "assemblyVersion": "0.7.2.6",
+            "fileVersion": "0.7.2.6"
+          }
+        }
+      },
+      "Roblox.Amazon.Firehose/1.0.0.0": {
+        "runtime": {
+          "Roblox.Amazon.Firehose.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Roblox.Platform.Roles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Platform.Email/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Platform.Membership/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.EventLog/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.EventLog.Windows/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DnsClient/1.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Platform.Core/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.BriteVerify/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Configuration/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Entities/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox Server Class Library/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Platform.MembershipCore/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Instrumentation/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Agents/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Users.Client/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Passwords.Client/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Random/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Amazon.Sns/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Data/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Common/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Hashing/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Users/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AWSSDK.Core/3.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Caching/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Diagnostics/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/11.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.DataV2.Core/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.RestClientBase/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Sentinels/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Amazon.Sqs/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.BucketStore/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Platform.AssetOwnership/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Locking/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Amazon/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Common.Web/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.MssqlDatabases/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Economy.Common/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Economy/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Moderation/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StackExchange.Redis/1.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.ApiClientBase/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.WebsiteSettings/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Entities.Mssql/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.RequestContext/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.UserCacheMigrationSettings/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Web.SEO/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Assets/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Redis.Lru/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Redis/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.ContentRatings/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Coordination/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Prometheus.NetStandard/3.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Http.ServiceClient/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Http.Client/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Collections/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Serialization.Json/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Amazon.Core/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Data.SqlClient/4.5.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Common.NetStandard/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.MemCachedClient/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Time/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.FloodCheckers.Core/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.FloodCheckers.Redis/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Platform.OwnershipV2/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.LeasedLocks.Client/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Platform.Infrastructure/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Mssql/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.TransactionEvents/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.ServiceDiscovery/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Http/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Pipeline/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Http.Client.Monitoring/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Networking/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Platform.EventStream/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Consul/0.7.2.6": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Roblox.Amazon.Firehose/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

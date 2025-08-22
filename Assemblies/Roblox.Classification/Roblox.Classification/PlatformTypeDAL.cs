@@ -123,7 +123,7 @@ public class PlatformTypeDAL
 		{
 			new SqlParameter("@ID", ID)
 		};
-		EntityHelper.DoEntityDALDelete(new DbInfo(ConnectionString, "PlatformTypes_DeletePlatformTypeByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(ConnectionString, "PlatformTypes_DeletePlatformTypeByID", queryParameters));
 	}
 
 	public static PlatformTypeDAL Get(byte id)

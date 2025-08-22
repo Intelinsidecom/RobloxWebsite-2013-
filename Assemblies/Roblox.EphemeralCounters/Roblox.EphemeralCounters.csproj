@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.EphemeralCounters</AssemblyName>
@@ -18,9 +18,11 @@
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.EphemeralCounters.Client">
-      <HintPath>
-      </HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiClientBase\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.EphemeralCounters.Client\Roblox.EphemeralCounters.Client.csproj" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Email.User</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Email.User.Admin.AccountEmailEntityVerifier">
+            <summary>
+            DO NOT USE AccountEmailEntityVerifier
+            
+            This class exists to support customer service, admin, and low level email verification. 
+            Normal usage MUST go through <see cref="T:Roblox.Platform.Email.User.IUserEmailVerifier"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.Admin.AccountEmailEntityVerifier.TryVerifyEmail(Roblox.Platform.Membership.IUser)">
+            <summary>
+            DO NOT USE TryVerifyEmail
+            
+            Attempts to verify the current email address for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            
+            This method exists to support customer service, admin, and low level email verification. 
+            Normal usage MUST go through <see cref="T:Roblox.Platform.Email.User.IUserEmailVerifier"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+        </member>
+        <member name="T:Roblox.Platform.Email.User.UserEmailVerificationResult">
+            <summary>
+            An object to contain the response from verifying a user's email.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.UserEmailVerificationResult.User">
+            <summary>
+            The user whose email is verified.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Email.User.IUserEmailFloodCheckerFactory">
+            <summary>
+            Factory for getting the flood checkers relate to email operations
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailFloodCheckerFactory.GetFloodCheckerForVerifyEmail(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Get the verify email <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/> for the given <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> who tried to verify email.</param>
+            <returns>A <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Email.User.UserEmailDomainFactories">
+            <summary>
+            A class holding the factories for the Platform.Email.User domain for user emails.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.UserEmailDomainFactories.AccountEmailAddressFactory">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Email.User.IAccountEmailAddressFactory"/>
+            </summary>
+            <value><see cref="T:Roblox.Platform.Email.User.IAccountEmailAddressFactory"/></value>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.UserEmailDomainFactories.UserEmailFloodCheckerFactory">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Email.User.IUserEmailFloodCheckerFactory"/>
+            </summary>
+            <value><see cref="T:Roblox.Platform.Email.User.IUserEmailFloodCheckerFactory"/></value>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.UserEmailDomainFactories.UserEmailChanger">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Email.User.IUserEmailChanger"/>
+            </summary>
+            <value><see cref="T:Roblox.Platform.Email.User.IUserEmailChanger"/></value>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.UserEmailDomainFactories.UserEmailVerifier">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Email.User.IUserEmailVerifier"/>
+            </summary>
+            <value><see cref="T:Roblox.Platform.Email.User.IUserEmailVerifier"/></value>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.UserEmailDomainFactories.#ctor(Roblox.Instrumentation.ICounterRegistry,Roblox.EventLog.ILogger,Roblox.Platform.Email.IEmailAddressFactory,Roblox.Platform.Email.IEmailAddressValidator,Roblox.Platform.Email.Delivery.IEmailSender,Roblox.BriteVerify.IBriteVerifyClient,Roblox.Platform.Membership.IUserFactory,Roblox.EphemeralCounters.IEphemeralCounterFactory,Roblox.FloodCheckers.Core.IFloodCheckerFactory{Roblox.FloodCheckers.Core.IFloodChecker},Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory,Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority,Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider,Roblox.Platform.Email.IEmailAddressDeleter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Email.IEmailAddressFactory" /> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Email.User.AccountEmailAddressFactory">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Platform.Email.User.IAccountEmailAddressFactory"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.AccountEmailAddressFactory.#ctor(Roblox.Platform.Email.IEmailAddressFactory,Roblox.Platform.Email.User.Entities.IAccountEmailAddressEntityFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Email.User.AccountEmailAddressFactory"/> class.
+            </summary>
+            <param name="emailAddressFactory">The email address factory.</param>
+            <param name="accountEmailAddressFactory">The account email address factory.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            emailAddressFactory
+            or
+            accountEmailAddressFactory
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.AccountEmailAddressFactory.Get(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Default implementation of <see cref="M:Roblox.Platform.Email.User.IAccountEmailAddressFactory.Get(Roblox.Platform.Membership.IUser)"/>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> whose e-mail we are looking up.</param>
+            <returns>A <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/> or null if not found.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">No user provided</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.AccountEmailAddressFactory.GetAccountsByEmailAddress(System.String,System.Int32,System.Int32)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/>s by email address.
+            </summary>
+            <param name="address">The email address.</param>
+            <param name="count">The count.</param>
+            <param name="exclusiveStartId">The exclusive start identifier.</param>
+            <returns>
+            A collection of <see cref="T:Roblox.Platform.Email.User.IAccountEmail" />s, if any.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">address
+            or
+            exclusiveStartId
+            or
+            count</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.UserEmailChanger.#ctor(Roblox.Instrumentation.ICounterRegistry,Roblox.Platform.Email.IEmailAddressFactory,Roblox.Platform.Email.User.IAccountEmailAddressFactory,Roblox.Platform.Email.IEmailAddressValidator,Roblox.EphemeralCounters.IEphemeralCounterFactory,Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory,Roblox.Platform.Email.Delivery.IEmailSender,Roblox.BriteVerify.IBriteVerifyClient,Roblox.Platform.Email.User.Entities.IAccountEmailAddressEntityFactory,Roblox.Platform.Email.IEmailAddressDeleter,Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Email.User.UserEmailChanger" /> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException">Thrown if any of the arguments is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.UserEmailChanger.SetEmail(Roblox.Platform.Membership.IUser,System.String,System.Boolean,System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.Email.User.IUserEmailChanger.ValidateAndSetEmail(Roblox.Platform.Membership.IUser,System.String,System.Boolean,System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.UserEmailChanger.VerifyEmailByBriteVerify(System.String,Roblox.EmailAddress)">
+            <inheritdoc cref="M:Roblox.Platform.Email.User.IUserEmailChanger.VerifyEmailByBriteVerify(System.String,Roblox.EmailAddress)"/>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.UserEmailVerifier.GetEmailVerificationTicketModel(System.String)">
+            <summary>
+            Gets the email verification ticket model.
+            </summary>
+            <param name="ticket">The ticket.</param>
+            <returns><see cref="T:Roblox.Platform.Email.User.UserEmailVerificationTicket"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Ticket is invalid.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformExpiredException">Ticket is expired.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.UserEmailVerifier.TryVerifyEmail(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Attempts to verify the current email address for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.UserEmailVerifier.GenerateEmailVerificationTicketSecret(Roblox.Platform.Email.User.UserEmailVerificationTicket)">
+            <summary>
+            Generates a secret for the blob hash for an <see cref="T:Roblox.Platform.Membership.IUser"/>'s <see cref="T:Roblox.Platform.Email.User.UserEmailVerificationTicket"/>.
+            This secret is being used dual-purpose as a nonce by including information about the current email.
+            When the email changes, this and any other tickets that may have been sent out to verify emails become invalid
+            because the secret changes, and the ticket can no longer be validated with it.
+            </summary>
+            <param name="ticket">The <see cref="T:Roblox.Platform.Email.User.UserEmailVerificationTicket"/> (used to get the <see cref="T:Roblox.Platform.Membership.IUser"/>).</param>
+            <returns>A secret for the secure blob.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Email.User.IAccountEmail">
+             <summary>
+             E-mail for a given <see cref="T:Roblox.Platform.Membership.IUser"/> along with validation information.
+            
+             Future direction - replace with an IUserEmail abstraction
+             </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.IAccountEmail.Id">
+            <summary>
+            The AccountEmailId
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.IAccountEmail.Email">
+            <summary>
+            The actual e-mail address
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.IAccountEmail.IsBlacklisted">
+            <summary>
+            Has this e-mail address been Blacklisted?
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.IAccountEmail.IsVerified">
+            <summary>
+            Has this e-mail address been verified for the <see cref="T:Roblox.Platform.Membership.IUser"/>?
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.IAccountEmail.IsCurrent">
+            <summary>
+            If this email is the current email for the user
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.IAccountEmail.IsValid">
+            <summary>
+            Has this e-mail been marked as valid for the <see cref="T:Roblox.Platform.Membership.IUser"/>?
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.IAccountEmail.AccountId">
+            <summary>
+            The Account identifier.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Email.User.IAccountEmailAddressFactory">
+             <summary>
+             Factory for loading the e-mail information associated with an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            
+             Future direction - replace with an IUserEmailFactory abstraction
+             </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IAccountEmailAddressFactory.Get(Roblox.Platform.Membership.IUser)">
+            <summary>
+            GetAccountsByEmailAddress the <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/> associated with the given <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> whose e-mail we are looking up.</param>
+            <returns>A <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/> or null if not found.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">No user provided</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IAccountEmailAddressFactory.GetAccountsByEmailAddress(System.String,System.Int32,System.Int32)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/>s by email address.
+            </summary>
+            <param name="address">The email address.</param>
+            <param name="count">The count.</param>
+            <param name="exclusiveStartId">The exclusive start identifier. </param>
+            <returns>
+            A collection of <see cref="T:Roblox.Platform.Email.User.IAccountEmail" />s, if any.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">address
+            or
+            exclusiveStartId
+            or
+            count</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IAccountEmailAddressFactory.GetCurrentAccountsByEmailAddress(System.String,System.Int32,System.Int32)">
+            <summary>
+            Gets the active <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/>s by email address.
+            </summary>
+            <param name="emailAddress">The email address.</param>
+            <param name="count">The count.</param>
+            <param name="exclusiveStartId">The exclusive start identifier.</param>
+            <returns>
+            A collection of <see cref="T:Roblox.Platform.Email.User.IAccountEmail" />s, if any.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">address
+            or
+            exclusiveStartId
+            or
+            count</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IAccountEmailAddressFactory.GetCurrentEmailAccountsByEmailAddressIsVerified(System.String,System.Boolean,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Gets the active <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/>s by email address.
+            </summary>
+            <param name="emailAddress">The email address.</param>
+            <param name="isVerified">Whether or not to retrieve the verified <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/> only.</param>
+            <param name="count">The count.</param>
+            <param name="exclusiveStartId">The exclusive start identifier.</param>
+            <returns>A collection of <see cref="T:Roblox.Platform.Email.User.IAccountEmail"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+                Thrown if <paramref name="emailAddress"/> is null or whitespace 
+                or if <paramref name="count"/> is less or equal than default value
+                or if <paramref name="exclusiveStartId"/>'s value if any is less than default value
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Email.User.IUserEmailChanger">
+            <summary>
+            An interface for a class that changes emails for <see cref="T:Roblox.Platform.Membership.IUser"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailChanger.ValidateAndSetEmail(Roblox.Platform.Membership.IUser,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Validates and optionally sets the email address for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <remarks>
+            Under most scenarios this should be done by sending a verification email to the user with <see cref="T:Roblox.Platform.Email.User.IUserEmailVerifier"/>.
+            Cases where you might want to bypass and set it directly:
+            - Customer Service
+            - First email on the account
+            </remarks>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="emailAddress">The email address.</param>
+            <param name="forceSet">force setting the email</param>
+            <param name="sendRevertEmail">
+            if <c>true</c> will send revert account email to <see cref="T:Roblox.Platform.Membership.IUser"/>'s previous email.
+            If the <see cref="T:Roblox.Platform.Membership.IUser"/> does not have a previous email, or if the previous email is
+            unverified, none will be sent.
+            </param>
+            <returns>Returns Account Security Token associated with the added email</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="user"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="emailAddress"/> was null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidEmailAddressException">Email is in an invalid format, or is blacklisted.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Changing email feature currently unavailable.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailChanger.SetEmail(Roblox.Platform.Membership.IUser,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Sets the email address for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="emailAddress">The email address.</param>
+            <param name="forceSet">force setting the email</param>
+            <param name="sendRevertEmail">
+            if <c>true</c> will send revert account email to <see cref="T:Roblox.Platform.Membership.IUser"/>'s previous email.
+            If the <see cref="T:Roblox.Platform.Membership.IUser"/> does not have a previous email, or if the previous email is
+            unverified, none will be sent.
+            </param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="user"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="emailAddress"/> was null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Changing email feature currently unavailable.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailChanger.SendRevertEmail(Roblox.Platform.Membership.IUser,System.Int32,System.String,System.String)">
+            <summary>
+            Send revert email.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="accountEmailAddressIdToRevert"></param>
+            <param name="currentEmailAddress">
+            <param name="emailAddress">The email address.</param>
+            Send revert account email to <see cref="T:Roblox.Platform.Membership.IUser"/>'s previous email.
+            We should not use this if the <see cref="T:Roblox.Platform.Membership.IUser"/> do not have a previous email, or if the previous email is
+            unverified.
+            </param>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailChanger.EmailHasMaxAccounts(System.String)">
+            <summary>
+            Returns whether the email address has linked to too many accounts.
+            </summary>
+            <param name="emailAddress">The email address.</param>
+            <returns> True if the passed in email address has linked to max accounts, false otherwise. </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="emailAddress"/> was null or empty.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailChanger.PurgeEmailAddress(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Completely break the link between the account and all associated email addresses (both current and past). This will delete all entries in the db for the given account. Intended to be used to fulfil data privacy laws such as COPPA.
+            
+            This method will also delete the email entity itself if it is no longer associated with any account.
+            </summary>
+            <param name="user"></param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailChanger.VerifyEmailByBriteVerify(System.String,Roblox.EmailAddress)">
+            <summary>
+            Validates the email address
+            </summary>
+            <param name="address">email address to validate</param>
+            <param name="emailAddress">Email address entity associated with the address</param>
+        </member>
+        <member name="T:Roblox.Platform.Email.User.IUserEmailVerifier">
+            <summary>
+            An interface for a class that verifies emails for <see cref="T:Roblox.Platform.Membership.IUser"/>s
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Email.User.IUserEmailVerifier.EmailVerificationTicketExpiration">
+            <summary>
+            Gets the <see cref="T:System.TimeSpan"/> for how long an email verification ticket is valid for from creation.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailVerifier.SendVerificationEmail(Roblox.Platform.Membership.IUser,System.String,System.Boolean,System.String)">
+            <summary>
+            Generates an email verification ticket for an <see cref="T:Roblox.Platform.Membership.IUser"/>, and sends it
+            in a verification email to the <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="emailAddress">The email address to be verified by the <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="freeItem">Determines whether user will see messaging that they received a free item after verifying their email</param>
+            <param name="ticket">Use account security token if provided</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="user"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="emailAddress"/> was null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidEmailAddressException">Email is in an invalid format, or is blacklisted.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidOperationException"><paramref name="emailAddress"/> is current email, and already verified.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Email verification, or email change feature disabled.</exception>
+            <exception cref="T:Roblox.Platform.Email.Delivery.EmailQueueingException">Failed to send email to the user at no fault of the caller.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailVerifier.VerifyUserEmailWithTicket(System.String)">
+            <summary>
+            Validates an email verification ticket, and verifies an email for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            If the email is not the current one on the account it will be added to the <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            After verification will email old email with link to revert back.
+            </summary>
+            <param name="ticket">The verification ticket.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+            <paramref name="ticket"/> was null or empty.
+            OR
+            Ticket does not have valid user and/or email.
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFormatException">Ticket is not a valid verification ticket.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformExpiredException">Ticket is valid, but expired.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Email verification, or email change feature disabled.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Email.User.IUserEmailVerifier.VerifyUserEmailWithAccountSecurityTicket(System.String)">
+            <summary>
+            Validates an email verification ticket, and verifies an email for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            If the email is not the current one on the account it will be added to the <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            After verification will email old email with link to revert back.
+            </summary>
+            <param name="ticket">The verification ticket.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+            <paramref name="ticket"/> was null or empty.
+            OR
+            Ticket does not have valid user and/or email.
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFormatException">Ticket is not a valid verification ticket.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformExpiredException">Ticket is valid, but expired.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Email verification, or email change feature disabled.</exception>
+        </member>
+    </members>
+</doc>

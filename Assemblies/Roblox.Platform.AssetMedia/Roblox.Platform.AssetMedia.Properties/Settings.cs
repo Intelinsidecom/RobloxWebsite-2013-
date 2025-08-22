@@ -1,8 +1,9 @@
+extern alias ConfMan;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
-using System.Configuration;
+using ConfManSystemConfiguration = ConfMan::System.Configuration;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
@@ -14,15 +15,15 @@ namespace Roblox.Platform.AssetMedia.Properties;
 /// <summary>
 /// Externally-defined settings.
 /// </summary>
-[SettingsProvider(typeof(Provider))]
+[ConfManSystemConfiguration.SettingsProvider(typeof(Provider))]
 [ExcludeFromCodeCoverage]
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.8.0.0")]
-public sealed class Settings : ApplicationSettingsBase, ISettings
+public sealed class Settings : ConfManSystemConfiguration.ApplicationSettingsBase, ISettings
 {
 	private readonly ConcurrentDictionary<string, object> _Properties = new ConcurrentDictionary<string, object>();
 
-	private static Settings defaultInstance = (Settings)SettingsBase.Synchronized(new Settings());
+	private static Settings defaultInstance = (Settings)ConfManSystemConfiguration.SettingsBase.Synchronized(new Settings());
 
 	public override object this[string propertyName]
 	{
@@ -38,44 +39,44 @@ public sealed class Settings : ApplicationSettingsBase, ISettings
 
 	public static Settings Default => defaultInstance;
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("False")]
+	[ConfManSystemConfiguration.DefaultSettingValue("False")]
 	public bool IsDefaultCameraGeneratedThumbnailRemovalEnabled => (bool)this["IsDefaultCameraGeneratedThumbnailRemovalEnabled"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("00:01:00")]
+	[ConfManSystemConfiguration.DefaultSettingValue("00:01:00")]
 	public TimeSpan DefaultCameraGeneratedThumbnailTimeout => (TimeSpan)this["DefaultCameraGeneratedThumbnailTimeout"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("00:00:15")]
+	[ConfManSystemConfiguration.DefaultSettingValue("00:00:15")]
 	public TimeSpan DownloadImageTimeout => (TimeSpan)this["DownloadImageTimeout"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("600")]
+	[ConfManSystemConfiguration.DefaultSettingValue("600")]
 	public int GeneratedThumbnailWidth => (int)this["GeneratedThumbnailWidth"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("600")]
+	[ConfManSystemConfiguration.DefaultSettingValue("600")]
 	public int GeneratedThumbnailHeight => (int)this["GeneratedThumbnailHeight"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("900")]
+	[ConfManSystemConfiguration.DefaultSettingValue("900")]
 	public int MaximumUploadedImageWidthOrHeight => (int)this["MaximumUploadedImageWidthOrHeight"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("32")]
+	[ConfManSystemConfiguration.DefaultSettingValue("32")]
 	public int MaximumYouTubeVideoUploadLengthInSeconds => (int)this["MaximumYouTubeVideoUploadLengthInSeconds"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("True")]
+	[ConfManSystemConfiguration.DefaultSettingValue("True")]
 	public bool IsVideoThumbnailUploadDisabledForUnder13Users => (bool)this["IsVideoThumbnailUploadDisabledForUnder13Users"];
 
 	/// <inheritdoc cref="P:Roblox.Platform.AssetMedia.Properties.ISettings.YouTubeVideoPurchasePrice" />
@@ -89,7 +90,7 @@ public sealed class Settings : ApplicationSettingsBase, ISettings
 		};
 	}
 
-	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
+	protected override void OnSettingsLoaded(object sender, ConfManSystemConfiguration.SettingsLoadedEventArgs e)
 	{
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, this);

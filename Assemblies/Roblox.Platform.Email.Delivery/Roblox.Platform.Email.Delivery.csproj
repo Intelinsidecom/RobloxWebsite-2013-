@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Email.Delivery</AssemblyName>
@@ -12,9 +12,6 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Amazon.Sns">
-      <HintPath>..\..\Website\bin\Roblox.Amazon.Sns.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
@@ -31,9 +28,14 @@
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
     <Reference Include="Roblox.Common">
       <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Amazon.Sns\Roblox.Amazon.Sns.csproj" />
   </ItemGroup>
 </Project>

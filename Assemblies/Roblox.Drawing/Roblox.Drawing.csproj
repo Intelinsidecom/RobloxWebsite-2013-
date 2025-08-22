@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Drawing</AssemblyName>
@@ -15,10 +15,11 @@
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
-    <Reference Include="Magick.NET-Q8-AnyCPU" />
+    <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="14.7.0" />
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
 </Project>

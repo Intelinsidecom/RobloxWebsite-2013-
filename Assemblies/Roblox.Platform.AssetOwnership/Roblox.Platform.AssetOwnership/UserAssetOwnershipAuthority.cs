@@ -26,7 +26,9 @@ internal class UserAssetOwnershipAuthority : OwnershipV2AuthorityBase<IUserIdent
 
 	private static readonly Func<string> _AssetInstancesApiKeyGetter = () => Settings.Default.AssetInstancesApiKey;
 
+	#pragma warning disable CS0618 // RobloxEnvironment.GetApiEndpoint is obsolete in this codebase but retained for compatibility
 	private static readonly Func<string> _AssetInstancesEndpointGetter = () => RobloxEnvironment.GetApiEndpoint("assetinstances");
+	#pragma warning restore CS0618
 
 	private readonly Func<long, int> _AssetTypeGetter;
 

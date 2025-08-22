@@ -1,7 +1,6 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Agents;
-using Roblox.Badges.Client;
 using Roblox.Currency.Client;
 using Roblox.Economy.Common;
 using Roblox.EventLog;
@@ -50,7 +49,7 @@ public class BadgeCreator : IBadgeCreator
 
 	private readonly IAgentFactory _AgentFactory;
 
-	private readonly IBadgesClient _BadgesClient;
+	private readonly Roblox.Badges.Client.IBadgesClient _BadgesClient;
 
 	private readonly ILogger _Logger;
 
@@ -99,7 +98,7 @@ public class BadgeCreator : IBadgeCreator
 	/// - <paramref name="badgesClient" />
 	/// - <paramref name="logger" />
 	/// </exception>
-	public BadgeCreator(ISettings settings, IBadgesClient badgesClient, IBadgeTextFilter badgeTextFilter, IBadgePermissionsVerifier badgePermissionsVerifier, IAssetPermissionsVerifier assetPermissionsVerifier, IBadgesAwardsAuthority badgeAwardsAuthority, IMarketplaceAuthority marketplaceClient, ICurrencyAuthority currencyClient, IPlaceFactory placeFactory, IGroupFactory groupFactory, IGroupCounter groupCounter, IAgentFactory agentFactory, ILogger logger, ITransactionStreamer transactionStreamer)
+	public BadgeCreator(ISettings settings, Roblox.Badges.Client.IBadgesClient badgesClient, IBadgeTextFilter badgeTextFilter, IBadgePermissionsVerifier badgePermissionsVerifier, IAssetPermissionsVerifier assetPermissionsVerifier, IBadgesAwardsAuthority badgeAwardsAuthority, IMarketplaceAuthority marketplaceClient, ICurrencyAuthority currencyClient, IPlaceFactory placeFactory, IGroupFactory groupFactory, IGroupCounter groupCounter, IAgentFactory agentFactory, ILogger logger, ITransactionStreamer transactionStreamer)
 	{
 		_Settings = settings ?? throw new ArgumentNullException("settings");
 		_BadgesClient = badgesClient ?? throw new ArgumentNullException("badgesClient");
@@ -222,22 +221,11 @@ public class BadgeCreator : IBadgeCreator
 	/// <returns><see cref="T:Roblox.Platform.Badges.Badge" /></returns>
 	internal virtual Badge CreateBadgeInstance(IPlace rootPlace, BadgeTextFilterResult filteredText, long badgeImageId)
 	{
-		//IL_0000: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0005: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0006: Unknown result type (might be due to invalid IL or missing references)
-		//IL_000b: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0012: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0023: Expected O, but got Unknown
-		//IL_0023: Unknown result type (might be due to invalid IL or missing references)
-		//IL_002f: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0036: Unknown result type (might be due to invalid IL or missing references)
-		//IL_003d: Unknown result type (might be due to invalid IL or missing references)
-		//IL_004a: Expected O, but got Unknown
-		Badge clientBadge = new Badge
+		Roblox.Badges.Client.Badge clientBadge = new Roblox.Badges.Client.Badge
 		{
-			Awarder = new Awarder
+			Awarder = new Roblox.Badges.Client.Awarder
 			{
-				Type = (AwarderType)1,
+				Type = (Roblox.Badges.Client.AwarderType)1,
 				TargetId = rootPlace.Id
 			},
 			Description = filteredText.Description,
@@ -245,7 +233,7 @@ public class BadgeCreator : IBadgeCreator
 			IsActive = true,
 			Name = filteredText.Name
 		};
-		CreateBadgeResult createBadgeResult = _BadgesClient.Create(clientBadge);
+		Roblox.Badges.Client.CreateBadgeResult createBadgeResult = _BadgesClient.Create(clientBadge);
 		Badge createdBadge = _BadgeConverter.ConvertToPlatformBadge(createBadgeResult.Badge);
 		this.BadgeCreated?.Invoke(createdBadge);
 		return createdBadge;

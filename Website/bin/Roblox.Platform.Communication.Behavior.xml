@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Communication.Behavior</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Communication.Behavior.EventStreaming.UndesirableCommunicationBehaviorEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.Communication.Behavior.EventStreaming.UndesirableCommunicationBehaviorEventArgs)">
+            <summary>
+            The event that represents a user attempting to send a piece of communication that has been deemed undesirable.
+            Allows publishing to the EventStream
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Communication.Behavior.EventStreaming.UndesirableCommunicationBehaviorEventArgs">
+            <summary>
+            EventArgs class to provide Additional information when sending an <see cref="T:Roblox.Platform.Communication.Behavior.EventStreaming.UndesirableCommunicationBehaviorEvent"/> event to the EventStream
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Communication.Behavior.ICommunicationBehaviorGuard">
+            <summary>
+            Guard to check that users are communicating in a safe way. Performs additional checks and logic in 
+            addition to calling into the standard text filter. Will prevent users from communicating if they
+            are deemed to be in breach of our standards
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Communication.Behavior.ICommunicationBehaviorGuard.FilterText(Roblox.TextFilter.Client.FilterLiveTextRequest,System.Boolean)">
+            <summary>
+            Filter text through our standard TextFilter and also check for patterns
+            of bad behavior
+            </summary>
+            <param name="filterLiveTextRequest"></param>
+            <param name="isRevalidation">Is this re-running text previously submitted. 
+            If true, this call will not cause any consequences for the author</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Communication.Behavior.IGuardedFilterTextResult">
+            <summary>
+            Result of filtering text through the CommuincationBehaviorGuard
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Communication.Behavior.IGuardedFilterTextResult.FilterLiveTextResult">
+            <summary>
+            Results of running the text through our text moderation filters
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Communication.Behavior.IGuardedFilterTextResult.Status">
+            <summary>
+            Additional status indicating whether or not the request is a breach
+            of our behavior guidelines. NOTE: Even if this status is OK, it does
+            not imply the text is safe to send, only that it does not incur any 
+            additional consequences
+            </summary>
+        </member>
+    </members>
+</doc>

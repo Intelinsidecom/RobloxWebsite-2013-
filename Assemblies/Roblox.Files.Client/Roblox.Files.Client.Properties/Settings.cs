@@ -25,7 +25,7 @@ internal sealed class Settings : ApplicationSettingsBase, IServiceClientSettings
 
 	private static Settings defaultInstance = (Settings)(object)SettingsBase.Synchronized((SettingsBase)(object)new Settings());
 
-	public string Endpoint => RobloxEnvironment.GetApiEndpoint("files");
+	public string Endpoint => RobloxEnvironment.GetInternalApiServiceEndpoint("files");
 
 	public string ClientName => "Files";
 
@@ -88,7 +88,7 @@ internal sealed class Settings : ApplicationSettingsBase, IServiceClientSettings
 
 	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
 	{
-		((ApplicationSettingsBase)this).OnSettingsLoaded(sender, e);
+		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
 	}
 }

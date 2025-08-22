@@ -1,8 +1,41 @@
 {
   "version": 2,
-  "dgSpecHash": "Dpw+XolK0BoTY+/K/vIVmswkTmws1Za/pIJD45MkwVO+1mpAlfTsUlyXgEjK2yw3xVAR+PzLH3+13WPTGIT/dA==",
+  "dgSpecHash": "x7kLKOnrmco=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.AssetMedia.Entities\\Roblox.AssetMedia.Entities.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.AssetMedia.Entities\\Roblox.AssetMedia.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.data.sqlclient\\4.5.0\\system.data.sqlclient.4.5.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'System.Data.SqlClient' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g2p-5pqh-5jmc",
+      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.AssetMedia.Entities\\Roblox.AssetMedia.Entities.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.AssetMedia.Entities\\Roblox.AssetMedia.Entities.csproj",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.1"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'System.Data.SqlClient' 4.5.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.AssetMedia.Entities\\Roblox.AssetMedia.Entities.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.AssetMedia.Entities\\Roblox.AssetMedia.Entities.csproj",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.1"
+      ]
+    }
+  ]
 }

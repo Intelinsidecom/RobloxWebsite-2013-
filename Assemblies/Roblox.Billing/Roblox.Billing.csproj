@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Billing</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -119,5 +119,23 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.EphemeralCounters\Roblox.EphemeralCounters.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.Email.Delivery\Roblox.Platform.Email.Delivery.csproj" />
+    <ProjectReference Include="..\Roblox.PayPal.Common\Roblox.PayPal.Common.csproj" />
+    <ProjectReference Include="..\Roblox.BillingTransactionEventPublisher\Roblox.BillingTransactionEventPublisher.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
+    <ProjectReference Include="..\Roblox.Demographics\Roblox.Demographics.csproj" />
+    <ProjectReference Include="..\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.Localization.Accounts\Roblox.Platform.Localization.Accounts.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.Assets\Roblox.Platform.Assets.csproj" />
+    <ProjectReference Include="..\Roblox.Classification\Roblox.Classification.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="PdfSharp" Version="1.50.5147" />
+    <PackageReference Include="Google.Apis.Core" Version="1.61.0" />
   </ItemGroup>
 </Project>

@@ -34,7 +34,7 @@ internal sealed class RobloxSnsClient : AmazonSimpleNotificationServiceClient
 		{
 			throw new ArgumentException("Configuration cannot be converted to RobloxSnsClientConfig.");
 		}
-		((AmazonServiceClient)this).CustomizeRuntimePipeline(pipeline);
+		base.CustomizeRuntimePipeline(pipeline);
 		if (robloxSnsClientConfig.IsAsyncRequestTimeoutEnabled && ((ClientConfig)robloxSnsClientConfig).Timeout.HasValue)
 		{
 			AsyncInvokeTimeoutHandler asyncInvokeTimeoutHandler = new AsyncInvokeTimeoutHandler(new AsyncInvokeTimeoutHandlerConfig(((ClientConfig)robloxSnsClientConfig).Timeout.Value));

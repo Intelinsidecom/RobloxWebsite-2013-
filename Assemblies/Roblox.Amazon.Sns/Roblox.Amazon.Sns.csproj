@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Amazon.Sns</AssemblyName>
@@ -12,8 +12,9 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="AWSSDK.SimpleNotificationService" />
-    <Reference Include="AWSSDK.Core" />
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\..\extracted_packages\AWSSDK.Core.3.7.0\lib\netstandard2.0\AWSSDK.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Amazon.Core">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Core.dll</HintPath>
     </Reference>
@@ -32,5 +33,8 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.0" />
   </ItemGroup>
 </Project>

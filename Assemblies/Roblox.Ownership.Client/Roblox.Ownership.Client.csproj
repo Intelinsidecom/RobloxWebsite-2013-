@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Ownership.Client</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+    <LangVersion>11.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataV2\Core\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

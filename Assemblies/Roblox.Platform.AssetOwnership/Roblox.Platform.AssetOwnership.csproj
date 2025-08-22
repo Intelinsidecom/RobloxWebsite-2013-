@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.AssetOwnership</AssemblyName>
@@ -10,12 +10,15 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Remove="Stubs\*.cs" />
+    <Compile Remove="**\Stubs\*.cs" />
+    <None Include="Stubs\*.cs" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Ownership.Client" />
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
@@ -29,19 +32,24 @@
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.AssetInstances.Client" />
-    <Reference Include="Roblox.OwnershipV2.Client" />
     <Reference Include="Roblox.DataV2.Core">
       <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Platform.OwnershipV2">
-      <HintPath>..\..\Website\bin\Roblox.Platform.OwnershipV2.dll</HintPath>
-    </Reference>
+    
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Common">
       <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Ownership.Client\Roblox.Ownership.Client.csproj" />
+    <ProjectReference Include="..\Roblox.AssetInstances.Client\Roblox.AssetInstances.Client.csproj" />
+    <ProjectReference Include="..\Roblox.OwnershipV2.Client\Roblox.OwnershipV2.Client.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.OwnershipV2\Roblox.Platform.OwnershipV2.csproj" />
   </ItemGroup>
 </Project>

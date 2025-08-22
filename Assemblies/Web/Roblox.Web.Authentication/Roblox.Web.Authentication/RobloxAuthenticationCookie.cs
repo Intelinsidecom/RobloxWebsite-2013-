@@ -130,9 +130,13 @@ public class RobloxAuthenticationCookie : RobloxCookieBase
 			Expires = _Ticket.Expiration,
 			Path = Path,
 			HttpOnly = true,
-			Domain = Domain,
 			Secure = FormsAuthentication.RequireSSL
 		};
+		if (!string.IsNullOrEmpty(Domain))
+		{
+			cookie.Domain = Domain;
+		}
+
 		HttpContext.Current.Response.Cookies.Set(cookie);
 	}
 

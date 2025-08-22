@@ -163,15 +163,6 @@ public class FilesClient : IFilesClient
 		return _ServiceRequestSender.SendPostRequestAsync<GetFileContentLocationRequest, GetFileContentLocationResult>("/v1/GetFileContentLocation", requestData, cancellationToken);
 	}
 
-	private static ClientCircuitBreakerType GetClientCircuitBreakerType()
-	{
-		if (!Settings.Default.PerEndpointCircuitBreakerEnabled)
-		{
-			return (ClientCircuitBreakerType)1;
-		}
-		return (ClientCircuitBreakerType)2;
-	}
-
 	private static bool ApiKeyViaHeaderEnabled()
 	{
 		return Settings.Default.ApiKeyViaHeaderEnabled;
@@ -181,8 +172,7 @@ public class FilesClient : IFilesClient
 	{
 		return new Roblox.Http.ServiceClient.HttpClientBuilder(Settings.Default, counterRegistry, apiKeyGetter, null, requestContextLoader)
 		{
-			ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled,
-			GetClientCircuitBreakerType = GetClientCircuitBreakerType
+			ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled
 		};
 	}
 }

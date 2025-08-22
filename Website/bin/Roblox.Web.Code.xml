@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Web.Code</name>
+    </assembly>
+    <members>
+        <member name="P:Roblox.Web.Code.SupportedLocaleLocus.IsEnabledForFullExperience">
+            <summary>
+            Is locale enabled for full experience
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.SupportedLocaleLocus.IsEnabledForSignupAndLogin">
+            <summary>
+            Is locale enabled for signup and login
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.SupportedLocaleLocus.Locale">
+            <summary>
+            Supported locale
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.ILocalizationLocusUserLocales">
+            <summary>
+            An interface to hold each localization locus locale.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.ILocalizationLocusUserLocales.GeneralExperienceLocale">
+            <summary>
+            The general experience supported locale.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.ILocalizationLocusUserLocales.SignupAndLoginLocale">
+            <summary>
+            The signup and login page supported locale.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.ILocalizationLocusUserLocales.UgcLocale">
+            <summary>
+            The user generated content supported locale.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.ISupportedLocaleLocus.IsEnabledForFullExperience">
+            <summary>
+            Is locale enabled for full experience
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.ISupportedLocaleLocus.IsEnabledForSignupAndLogin">
+            <summary>
+            Is locale enabled for signup and login
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.ISupportedLocaleLocus.Locale">
+            <summary>
+            Supported locale
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.IUserLocale.User">
+            <summary>
+            User can be null. If null, ISupportedLocale &amp; ILanguage will retrieved from http request object
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.IUserLocale.SupportedLocale">
+            <summary>
+            Supported locale
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.IUserLocale.Language">
+            <summary>
+            Native Language
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.IAccountLocaleInitializer">
+            <summary>
+            Account Locale initializer - use to update users observed and supported locale.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.IAccountLocaleInitializer.SetOrCreateObservedLocaleForUser(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent)">
+            <summary>
+            Set observed locale for user's account. If account not present, create new entry with observed locale.
+            If the code gets called from UI, make sure you check IsUserInRolloutPercentage. If not, no need to show UI elements to users.
+            Observed locale information id retrieved from http request object.
+            If observed locale not found then user will have default observed locale.
+            </summary>
+            <param name="user">User for which observed locale need to be set. <see cref="T:Roblox.Platform.Membership.IUser" /></param>
+            <param name="changeAgent">The change agent.</param>
+            <returns>
+            AccountLocaleInitializerResponse
+            </returns>
+        </member>
+        <member name="M:Roblox.Web.Code.IAccountLocaleInitializer.SetOrCreateSupportedLocaleForUser(Roblox.Platform.Membership.IUser,System.Nullable{Roblox.Platform.Localization.Core.SupportedLocaleEnum},Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent)">
+            <summary>
+            Set supported locale for user's account. If account not present, create new entry with observed locale and supported locale.
+            Observed locale information id retrieved from http request object.
+            If observed locale not found then user will have default observed locale.
+            </summary>
+            <param name="user">User for which supported locale need to be set. <see cref="T:Roblox.Platform.Membership.IUser" /></param>
+            <param name="supportedLocaleEnum"><see cref="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum" />Supported locale enum that needs to be set for given user. Null value will reset user's supported locale.</param>
+            <param name="changeAgent">The change agent.</param>
+            <returns>
+            AccountLocaleInitializerResponse
+            </returns>
+        </member>
+        <member name="M:Roblox.Web.Code.IAccountLocaleInitializer.GetOrCreateUserLocale(Roblox.Platform.Membership.IUser,System.Boolean)">
+            <summary>
+            Creates user locale entry for given user if not present in DB and returns user's Locale Information
+            If user is null, method does not create any entry in DB and returns locale information retrieved from http request object.
+            </summary>
+            <param name="user">User for which account locale need to be retrieved. <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="returnsUgcLocale"></param>
+            <returns>IUserLocale <see cref="T:Roblox.Web.Code.IUserLocale"/>If true, when full experience is not enabled, it will return ugc locale. Otherwise, returns default locale.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.IAccountLocaleInitializer.GetSupportedLocales(Roblox.Platform.Membership.IUser)">
+            <summary>
+            returns list of supported locales
+            </summary>
+            <param name="user"><see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <returns>List of ISupportedLocale</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.IAccountLocaleInitializer.GetSupportedLocalesWithLocus(Roblox.Platform.Membership.IUser,System.Boolean)">
+            <summary>
+            Get list of supported locales with locus information
+            </summary>
+            <param name="user"></param>
+            <param name="isSortedByFullExperience">Sort the list by putting full-experience locales first</param>
+            <returns>List of <see cref="T:Roblox.Web.Code.ISupportedLocaleLocus"/></returns>
+        </member>
+        <member name="M:Roblox.Web.Code.IAccountLocaleInitializer.GetLocalizationLocusUserSupportedLocales(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates user locale entry for the given user if not present in the DB and returns the user's Locale Information for each localization
+            locus. See <see cref="T:Roblox.Web.Code.ILocalizationLocusUserLocales"/> for our supported locus.
+            </summary>
+            <param name="user">User for which account locale need to be retrieved. <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns>An instance of <see cref="T:Roblox.Web.Code.ILocalizationLocusUserLocales"/>.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.IAccountLocaleInitializer.GetSupportedLocaleBasedOnOverride(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)">
+            <summary>
+            Returns supported locale based on overrideLocale parameter. See <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/> for Supported Locale
+            </summary>
+            <param name="user"><see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="overrideLocale">override locale to get SupportedLocale </param>
+            <returns>An instance of <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/></returns>
+        </member>
+        <member name="T:Roblox.Web.Code.AccountStatusChangeListener">
+            <summary>
+            Process an account change event by kicking them from games.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.AngularTemplatesManager.ProcessHtmlFile(System.String,System.Boolean,System.String@)">
+            <summary>
+            Given an html template file:
+            - pull out the angular template id
+            - remove the wrapping angular script tags so we have the pure html
+            - remove newlines, so the html can be injected into javascript as a string
+            </summary>
+            <param name="content">File contents</param>
+            <param name="minify"></param>
+            <param name="templateId">Angular template id, needed for the templateCache key</param>
+            <returns>Pure html, without newlines</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.AngularTemplatesManager.CreateBundle(System.String,System.Collections.Generic.IReadOnlyCollection{System.String},System.Boolean,System.Nullable{System.Guid})">
+            <summary>
+            If successful merge: Generates a javascript file that instantiates an angular app (TemplatesApp) and puts the templates into the templatecache
+            
+            Otherwise returns null
+            </summary>
+            <returns>Relative path to the generated file</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.AngularTemplatesManager.GetBundledTemplates(System.String,System.Collections.Generic.IReadOnlyCollection{System.String},System.Boolean@,System.Nullable{System.Guid})">
+            <summary>
+            If bundle already exists, returns the file name of the already generated file. If bundle does not exist, creates the bundle and returns
+            the file path of the newly generated file.
+            </summary>
+            <param name="name">Bundle name</param>
+            <param name="fileList">List of files we need in that bundle. Relative paths.</param>
+            <param name="merged">Were the files successfully merged</param>
+            <returns>If merge was successful, we expect to return a single js file. If merge was not successful, we return the original fileList. Relative file paths.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.AngularTemplatesManager.GetOutputFromMinifyErrors(WebMarkupMin.Core.MarkupMinificationResult)">
+            <summary>
+            Outputs a readable string about any minification errors.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.AngularTemplatesManager.RenderTemplatesToDOM(System.Text.StringBuilder,System.String)">
+            <summary>
+            Reads the file provided and appends the file contents to the stringbuilder.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.AngularTemplatesManager.AddToTemplateCacheFromDOM(System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <summary>
+            Formats a $templateCache.put call for each template (that we expect to be printed into the DOM via another part of code).
+            This method is used if we are not merging templates into a single file.
+            </summary>
+            <param name="fileList">List of local html template files</param>
+            <returns>A string of javascript, which is one $templateCache.put call for each template.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.AngularTemplatesManager.RenderTemplateBundle(System.String,System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <summary>
+            Attempts to bundle the list of templates, and formats the result into the appropriate html tags to be printed out in a page.
+            </summary>
+            <param name="name"></param>
+            <param name="fileList"></param>
+            <returns>The html that needs to be printed into the page. If template merging was successful, this will be a single javascript script
+            tag, linking to a generated js file. If template merging was not successful, this will be a javascript script tag followed by the html
+            templates wrapped in angular script tags.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.AvatarTracker.GetSource(System.String,System.String,System.Nullable{Roblox.Platform.Devices.DeviceType},System.Nullable{System.Int32},System.String,Roblox.Platform.EventStream.WebEvents.EventTarget,Roblox.Platform.Avatar.AvatarChangeTypeEnum,Roblox.EventLog.ILogger,System.Random)">
+            <summary>
+            Very rough attempt to interpret where an avatar change request is actually coming from, from the user's perspective.
+            
+            i.e. what action did the user take to change their avatar?
+            
+            This is complicated by the fact that certain pages are available from within the mobile app
+            and also available directly.
+            
+            
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.CookieConstraint.CookieConstraintModuleBase">
+            <summary>
+            Provides a base class for cookie constraint modules used on ASPX pages.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.CookieConstraint.CookieConstraintModuleBase.Configuration">
+            <summary>
+            The configuration describing the redirects for the implementation.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.CookieConstraint.CookieConstraintRedirectConfiguration">
+            <summary>
+            Describes the redirect action of a cookie constraint attribute or module.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.CookieConstraint.CookieConstraintRedirectConfiguration.IsCookieConstraintEnabled">
+            <summary>
+            Returns whether this module should be enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.CookieConstraint.CookieConstraintRedirectConfiguration.CookieConstraintRedirectRelativeUrl">
+            <summary>
+            Returns the relative URL of the cookie constraint redirect page.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.CookieConstraint.CookieConstraintRedirectConfiguration.CookieConstraintRedirectDomain">
+            <summary>
+            Returns the domain of the cookie constraint redirect page.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Code.CookieConstraint.CookieConstraintRedirectConfiguration.CookieConstraintRedirectAbsoluteUrl">
+            <summary>
+            The absolute URL of the cookie constraint page.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.CookieConstraint.CookieConstraintValidator">
+            <summary>
+            Provides shared functions for dealing with the cookie constraint.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.CookieConstraint.CookieConstraintValidator.HasConstrainedCookie(System.Web.HttpRequest)">
+            <summary>
+            Determines whether the supplied <see cref="T:System.Web.HttpRequest"/> has passed the cookie constraint.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.CookieConstraint.CookieConstraintValidator.SetConstrainedCookie(System.Web.HttpResponse,System.String,System.String)">
+            <summary>
+            Sets the cookie indicating the client has passed the cookie constraint.
+            </summary>
+            <param name="response">The response to which the cookie should be appended</param>
+            <param name="host">The host of the request, used to validate that the cookie can be set.</param>
+            <param name="domainSuffix">The domain suffix to use for the cookie.</param>
+        </member>
+        <member name="M:Roblox.Web.Code.CookieConstraint.CookieConstraintVerifier.#ctor(Roblox.Web.IGameServerRequestValidator)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Code.CookieConstraint.CookieConstraintVerifier"/>.
+            </summary>
+            <remarks>
+            If <paramref name="gameServerRequestValidator"/> is <c>null</c> game servers will not be able
+            to bypass the cookie constraint.
+            </remarks>
+            <param name="gameServerRequestValidator">An <see cref="T:Roblox.Web.IGameServerRequestValidator"/>.</param>
+        </member>
+        <member name="M:Roblox.Web.Code.CookieConstraint.CookieConstraintVerifier.#ctor(Roblox.Web.Code.Properties.ICookieConstraintSettings,Roblox.Web.Properties.ISettings,Roblox.Web.IGameServerRequestValidator)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Code.CookieConstraint.CookieConstraintVerifier"/>.
+            </summary>
+            <remarks>
+            If <paramref name="gameServerRequestValidator"/> is <c>null</c> game servers will not be able
+            to bypass the cookie constraint.
+            </remarks>
+            <param name="cookieConstraintSettings">An <see cref="T:Roblox.Web.Code.Properties.ICookieConstraintSettings"/>.</param>
+            <param name="webSettings">A <see cref="T:Roblox.Web.Properties.ISettings"/>.</param>
+            <param name="gameServerRequestValidator">An <see cref="T:Roblox.Web.IGameServerRequestValidator"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="cookieConstraintSettings"/>
+            - <paramref name="webSettings"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Web.Code.Economy.IRobuxIconPermissionVerifier.IsNewRobuxIconEnabled">
+            <summary>
+            Checks if new Robux icon is enabled for current user
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.Economy.RobuxIconPermissionVerifier.IsNewRobuxIconEnabled">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Web.Code.EventStream.WebEvents.WebEventArgsFactory.#ctor(Roblox.Web.Authentication.IWebAuthenticator,Roblox.Platform.EventStream.WebEvents.EventTarget,Roblox.Web.Devices.IClientDeviceIdentifier)">
+            <summary>
+            Creates a new instance of <see cref="T:Roblox.Web.Code.EventStream.WebEvents.IWebEventArgsFactory"/>.
+            </summary>
+            <param name="webAuthenticator">The <see cref="T:Roblox.Web.Authentication.IWebAuthenticator"/>.</param>
+            <param name="defaultEventTarget">The <see cref="T:Roblox.Platform.EventStream.WebEvents.EventTarget"/>.</param>
+            <param name="clientDeviceIdentifier">The <see cref="T:Roblox.Web.Devices.IClientDeviceIdentifier"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="webAuthenticator"/> or <paramref name="clientDeviceIdentifier"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Code.EventStream.WebEvents.WebEventArgsFactory.Create``1(System.Web.HttpContext)">
+            <summary>
+            Creates a WebEventArgs object and also creates a GuestId cookie and Browser Tracker cookie if they do not exist.
+            </summary>
+            <remarks>Do not call this method to create WebEventArgs if WebEventArgs are being created after a Response.Redirect call with endResponse parameter value set to False or 
+            if WebEventArgs are being created in an HttpModule's OnEndRequest method.</remarks>
+            <typeparam name="TWebEventArgs">Type of WebEventArgs to be created</typeparam>
+            <param name="httpContext">Current HttpContext</param>
+            <returns></returns>
+            <inheritdoc cref="T:Roblox.Web.Code.EventStream.WebEvents.IWebEventArgsFactory"/>
+        </member>
+        <member name="M:Roblox.Web.Code.EventStream.WebEvents.WebEventArgsFactory.CreateWithoutUpdatingGuestIdCookieAndBtCookie``1(System.Web.HttpContext)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/> without updating GuestId and BrowserTracker cookie.
+            </summary>
+            <typeparam name="TWebEventArgs">The type of the web event arguments.</typeparam>
+            <param name="httpContext">The HTTP context.</param>
+            <returns>The created <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="httpContext"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Web.Code.EventStream.WebEvents.IWebEventArgsFactory">
+            <summary>
+            An interface for WebEventArgsFactory.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.EventStream.WebEvents.IWebEventArgsFactory.Create``1(System.Web.HttpContext)">
+            <summary>
+            Creates a WebEventArgs object and also creates a GuestId cookie and Browser Tracker cookie if they do not exist.
+            </summary>
+            <remarks>Do not call this method to create WebEventArgs if WebEventArgs are being created after a Response.Redirect call with endResponse parameter value set to False or 
+            if WebEventArgs are being created in an HttpModule's OnEndRequest method.</remarks>
+            <typeparam name="TWebEventArgs">The type of the web event arguments.</typeparam>
+            <param name="httpContext">The <see cref="T:System.Web.HttpContext"/> to create the <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/> from.</param>
+            <returns>The created <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="httpContext"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Code.EventStream.WebEvents.IWebEventArgsFactory.CreateWithoutUpdatingGuestIdCookieAndBtCookie``1(System.Web.HttpContext)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/> without updating GuestId and BrowserTracker cookie.
+            </summary>
+            <typeparam name="TWebEventArgs">The type of the web event arguments.</typeparam>
+            <param name="httpContext">The HTTP context.</param>
+            <returns>The created <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="httpContext"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Web.Code.DeviceHandleFloodCheckAttributeBase">
+            <summary>
+            Copies any existing device handle header from a header into the current context.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Code.DeviceHandleFloodCheckAttributeBase.SkipOnNonNullParameter">
+            <summary>
+            This is for endpoints that handle multiple actions, where we want to not flood based on the
+            presence of a parameter. e.g. Send message endpoint handles replies, we don't want to stop
+            users from replying.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.Interfaces.ILocalizationResourceScripts.GetScriptFileForResource(Roblox.TranslationResources.ITranslationResources)">
+            <summary>
+            Check if language resource is already present in the concurrent dictionary. 
+            If its already present, file path is taken from the dictionary and added to the PpageScripts.
+            If its not present, a new file is created by calling and dictionary is updated.
+            </summary>
+            <param name="resource">Language Resource - an instance of implementation of ITranslationResources</param>
+        </member>
+        <member name="T:Roblox.Web.Code.IUniverseShutdownAuthority">
+            <summary>
+            Handles shutting down game instances for a universe.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.IUniverseShutdownAuthority.CloseAllGameInstances(System.Int64,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Attempts to close all game instances for a particular universeId. It is assumed that the user making this call is authorized to
+            manage the universe they are trying to shut down game instances of. A universe could have thousands of instances and this would
+            iterate over each of them. This should not happen over the main thread and hence the ticket to processorize this - https://jira.roblox.com/browse/AV-1409
+            </summary>
+            <param name="universeId">Universe id to shut down game instances of.</param>
+            <param name="user">User performing the action.</param>
+            <returns><c>True</c> if all game instances were closed, or <c>False</c> if some of the game instances could not be closed.</returns>
+        </member>
+        <member name="T:Roblox.Web.Code.IWebApplicationLifeCycleManager">
+            <summary>
+            This class is used to perform actions which happen through the lifecycle of an application. Do not add www website specific code to this code.
+            </summary>
+            <remarks>
+            Anything added here should in general be applicable for all the user facing sites.
+            </remarks>
+        </member>
+        <member name="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.AuthenticateRequest(System.Web.HttpRequest)">
+            <summary>
+            Checks the authentication status of an <see cref="T:System.Web.HttpRequest"/>
+            </summary>
+            <param name="request">The <see cref="T:System.Web.HttpRequest"/>.</param>
+        </member>
+        <member name="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.BeginRequest(System.Web.HttpRequest,System.Web.HttpResponse)">
+            <summary>
+            Start tracking information about the request
+            </summary>
+            <remarks><paramref name="response"/> is not used right now, but should not be null.</remarks>
+            <param name="request">The <see cref="T:System.Web.HttpRequest"/>.</param>
+            <param name="response">The <see cref="T:System.Web.HttpResponse"/>.</param>
+        </member>
+        <member name="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.ActionChosen(System.Web.HttpContextBase,System.String,System.String)">
+            <summary>
+            Tracks additionally information about the request once we have it.
+            </summary>
+            <param name="requestContext">The <see cref="T:System.Web.HttpContextBase"/> from the request.</param>
+            <param name="controllerName">The controller name that action belongs to.</param>
+            <param name="actionName">The action name the request is executing on.</param>
+        </member>
+        <member name="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.PreSendRequestHeaders(System.Web.HttpRequest,System.Web.HttpResponse)">
+            <summary>
+            Tracks when request headers are sent
+            </summary>
+            <param name="request">The <see cref="T:System.Web.HttpRequest"/>.</param>
+            <param name="response">The <see cref="T:System.Web.HttpResponse"/>.</param>
+        </member>
+        <member name="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.EndRequest(System.Web.HttpRequest,System.Web.HttpResponse)">
+            <summary>
+            Tracks when the request ends.
+            </summary>
+            <param name="request">The <see cref="T:System.Web.HttpRequest"/>.</param>
+            <param name="response">The <see cref="T:System.Web.HttpResponse"/>.</param>
+        </member>
+        <member name="T:Roblox.Web.Code.ILoginInformationUpdater">
+            <summary>
+            Represents an object that perform login information updates.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.ILoginInformationUpdater.UpdateLoginInformation(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Updates the login information for the provided <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Throws if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Web.Code.LoginInformationUpdater">
+            <summary>
+            A class for updating login information on successful login event.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.LoginInformationUpdater.#ctor(Roblox.Platform.Presence.IPresenceRegistrar,Roblox.Web.Devices.IClientDeviceIdentifier,Roblox.Platform.IpAddresses.IAccountIpAddressRecorder)">
+            <summary>
+            Initializes an instance of <see cref="T:Roblox.Web.Code.LoginInformationUpdater"/>.
+            </summary>
+            <param name="presenceRegistrar">The <see cref="T:Roblox.Platform.Presence.IPresenceRegistrar"/>.</param>
+            <param name="clientDeviceIdentifier">The <see cref="T:Roblox.Web.Devices.IClientDeviceIdentifier"/>.</param>
+            <param name="accountIpAddressRecorder">The <see cref="T:Roblox.Platform.IpAddresses.AccountIpAddressRecorder"/>.</param>
+        </member>
+        <member name="M:Roblox.Web.Code.LoginInformationUpdater.UpdateLoginInformation(Roblox.Platform.Membership.IUser)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Web.Code.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.UGCValidationServerRequestValidator">
+            <summary>
+            Validates UGCValidationRCC requests 
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.UGCValidationServerRequestValidator.#ctor(Roblox.Platform.Infrastructure.IServerIpValidator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Code.UGCValidationServerRequestValidator"/> class.
+            </summary>
+            <param name="serverIpValidator">Instance of type which implements <see cref="T:Roblox.Platform.Infrastructure.IServerIpValidator"/>.</param>
+            <exception cref="T:System.ArgumentNullException">serverIpValidator is null</exception>
+            <exception cref="T:System.ArgumentException">Is not ugc validation rcc server</exception>
+        </member>
+        <member name="M:Roblox.Web.Code.UGCValidationServerRequestValidator.IsValidUGCValidationServerRequest(System.Web.HttpContext)">
+            <summary>
+            Determines whether current request is valid ugc validation rcc server request
+            </summary>
+            <param name="context">Instance of HttpContext</param>
+            <returns>true if request is valid ugc validation rcc server request, otherwise false</returns>
+        </member>
+        <member name="T:Roblox.Web.Code.ThumbnailServerRequestValidator">
+            <summary>
+            Validates ThumbnailServer requests 
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.ThumbnailServerRequestValidator.#ctor(Roblox.Platform.Infrastructure.IServerIpValidator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Code.ThumbnailServerRequestValidator"/> class.
+            </summary>
+            <param name="serverIpValidator">Instance of type which implements <see cref="T:Roblox.Platform.Infrastructure.IServerIpValidator"/>.</param>
+            <exception cref="T:System.ArgumentNullException">serverIpValidator is null</exception>
+            <exception cref="T:System.ArgumentException">Is not thumbnail server validator</exception>
+        </member>
+        <member name="M:Roblox.Web.Code.ThumbnailServerRequestValidator.IsValidThumbnailServerRequest(System.Web.HttpContext)">
+            <summary>
+            Determines whether current request is valid thumbnail server request
+            </summary>
+            <param name="context">Instance of HttpContext</param>
+            <returns>true if request is valid thumbnailServer request, otherwise false</returns>
+        </member>
+        <member name="T:Roblox.Web.Code.UniverseShutdownAuthority">
+            <summary>
+            Implements <see cref="T:Roblox.Web.Code.IUniverseShutdownAuthority"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.UniverseShutdownAuthority.CloseAllGameInstances(System.Int64,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Web.Code.IUniverseShutdownAuthority.CloseAllGameInstances(System.Int64,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.DateTimeExtensions.ToJsonTicks(System.Nullable{System.DateTime})">
+            <summary>
+            .NET Ticks are different from JSON Ticks.
+            http://www.codeproject.com/Tips/467697/Converting-a-NET-DateTime-object-to-a-JavaScript-D
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Web.Code.Util.IPermissionVerifier">
+            <summary>
+            Utility class for checking if a user is authorized to access a feature.
+            Has methods for doing the checks based on appType, appVersion, deviceType, rollout percentage, or page name.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.IPermissionVerifier.IsFeatureEnabledByBrowserTrackerId(System.Int32,System.String,System.Boolean)">
+            <summary>
+            Determines if a feature is enabled based on the current BrowserTrackerId
+            </summary>
+            <param name="rolloutPercentageSetting">Setting for rollout percentage of feature</param>
+            <param name="browserTrackerIdList">List of comma separated browserTrackerIds for which the feature is enabled</param>
+            <param name="turnOnForAllSetting">Setting to control if feature is on for all</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.IPermissionVerifier.IsFeatureEnabledOnPageNames(System.String,System.String,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Get settings for a feature rollout per page basis - supports global soothsayer and all users overrides
+            </summary>
+            <param name="pageNameFromModel">Page name as defined in PageNameProvider</param>
+            <param name="pagesEnabledForAll">List of comma separated pages enabled for soothsayers</param>
+            <param name="soothsayerSetting">Enable all pages for soothsayers</param>
+            <param name="enabledForAllSetting">Enable all pages for all users</param>
+            <param name="pagesEnabledForSoothsayers">List of comma separated pages enabled for soothsayers</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.IPermissionVerifier.GetVersionNumberBySettings(System.Guid,System.Guid)">
+            <summary>
+            Get version number by checking soothsayer accounts
+            </summary>
+            <param name="versionNumberForSoothsayer">Guid representing version for soothsayers</param>
+            <param name="versionNumberForAll">Guid representing version for everyone else</param>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.IPermissionVerifier.GetVersionNumberBySettings(System.String,System.Guid,System.Guid)">
+            <summary>
+            Get version number by checking browser tracker ID
+            </summary>
+            <param name="browserTrackerIdList">List of comma separated browser tracker IDs that will get specific version</param>
+            <param name="versionNumberForBrowserTrackerIdList">Guid representing version for browser tracker IDs in the browserTrackerIdList provided</param>
+            <param name="versionNumberForAll">Guid representing version for everyone else</param>
+        </member>
+        <member name="T:Roblox.Web.Code.Util.PermissionVerifier">
+            <inheritdoc cref="T:Roblox.Web.Code.Util.IPermissionVerifier"/>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.PermissionVerifier.IsFeatureEnabledOnPageNames(System.String,System.String,System.Boolean,System.Boolean,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Code.Util.IPermissionVerifier.IsFeatureEnabledOnPageNames(System.String,System.String,System.Boolean,System.Boolean,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.PermissionVerifier.GetVersionNumberBySettings(System.Guid,System.Guid)">
+            <inheritdoc cref="M:Roblox.Web.Code.Util.IPermissionVerifier.GetVersionNumberBySettings(System.Guid,System.Guid)"/>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.PermissionVerifier.GetVersionNumberBySettings(System.String,System.Guid,System.Guid)">
+            <inheritdoc cref="M:Roblox.Web.Code.Util.IPermissionVerifier.GetVersionNumberBySettings(System.String,System.Guid,System.Guid)"/>
+        </member>
+        <member name="M:Roblox.Web.Code.Util.TextMasking.GetMaskedEmail(System.String,System.Int32,System.Char)">
+            <summary>
+            Replace characters before the domain/ip (the @ symbol) with the given <see cref="!:maskCharacter"/>.
+            The first <see cref="!:numberOfVisibleCharacters"/> can be revealed.
+            </summary>
+            <param name="email">email address to mask</param>
+            <param name="numberOfVisibleCharacters">number of characters to display before masking starts, negative numbers are treated as zero</param>
+            <param name="maskCharacter">character to use for masking</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Web.Code.Browser">
+            <summary>
+            NOTE:  You must check for a null UserAgent or unit tests will fail.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.Browser.IsSupportedBrowser(System.Web.HttpContext)">
+            <summary>
+            This is a superset of ImplementsProxy.  This is all browsers that implement the proxy + the possibility that we're in studio.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.Extensions.FindControlR(System.Web.UI.Control,System.String)">
+            <summary>
+            Searches recursively in this control to find a control with the name specified.
+            </summary>
+            <param name="root">The Control in which to begin searching.</param>
+            <param name="id">The ID of the control to be found.</param>
+            <returns>The control if it is found or null if it is not.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.Extensions.GetControlList(System.Web.UI.Control)">
+            <summary>
+            Returns a list of controls under the root element
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.Extensions.GetControlList``1(System.Web.UI.Control)">
+            <summary>
+            Returns a list of controls of type T underneath the root element
+            </summary>
+            <typeparam name="T">Type of controls you want to extract</typeparam>
+            <param name="root">Parent node you want to get controls under</param>
+        </member>
+        <member name="T:Roblox.Web.Code.CssMinifyExtensions">
+            <summary>
+            Copyright (c) 2008, Yahoo! Inc.
+            All rights reserved.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.CssMinifyExtensions.CssMinify(System.String)">
+            <summary>
+            Minifies CSS.
+            </summary>
+            <param name="css">The CSS content to minify.</param>
+            <returns>Minified CSS content.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.CssMinifyExtensions.CssMinify(System.String,System.Int32)">
+            <summary>
+            Minifies CSS with a column width maximum.
+            </summary>
+            <param name="css">The CSS content to minify.</param>
+            <param name="columnWidth">The maximum column width.</param>
+            <returns>Minified CSS content.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.RobloxCSS.RenderMainBundle(System.Func{System.String,System.String})">
+            <summary>
+            Renders the main bundle.
+            </summary>
+            <param name="resolveUrl">A function that when given a path, returns an absolute URL.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Web.Code.RobloxCSS.GetOrCreateBundle(System.String,System.Collections.Generic.ICollection{System.String},System.Boolean,System.Nullable{System.Guid})">
+            <summary>
+            Gets or creates the CSS bundle with the given name and file paths with an optional version number. If the bundle has already been
+            requested it will not be re-created. When a new bundle is created it is saved on the server and in the temporary store.
+            </summary>
+            <param name="name"></param>
+            <param name="fileList">the paths to the files that will be bundled</param>
+            <param name="minifyFiles"></param>
+            <param name="versionNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Web.Code.RobloxCSS.RenderWebAppStylesheetTag(System.String,System.String)">
+            <summary>
+            Renders a style (link) tag for WebApp CSS.
+            </summary>
+            <remarks>
+            Intended to replace <see cref="M:Roblox.Web.Code.RobloxCSS.RenderAppStyleBundle(System.String)"/> (used for app sites.)
+            App sites are being replaced by WebApps.
+            </remarks>
+            <param name="cdnUrl">The CDN url.</param>
+            <param name="webAppComponentName">The WebApp component name.</param>
+            <returns>The style (link) tag HTML.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.RobloxScripts.RenderWebAppScriptTag(System.String,System.String)">
+            <summary>
+            Renders a script tag for WebApp JavaScript.
+            </summary>
+            <remarks>
+            Intended to replace <see cref="M:Roblox.Web.Code.RobloxScripts.RenderAppScriptBundle(System.String,System.String,System.Boolean)"/> (used for app sites.)
+            App sites are being replaced by WebApps.
+            </remarks>
+            <param name="cdnUrl">The CDN url.</param>
+            <param name="webAppComponentName">The WebApp component name.</param>
+            <returns>The script tag HTML (or <c>null</c> if <paramref name="cdnUrl"/> is <c>null</c>.)</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.RobloxScripts.CreateBundle(System.String,System.Collections.Generic.ICollection{System.String},System.Boolean,System.Nullable{System.Guid})">
+            <summary>
+            Generates the minified file that is stored on the web server, before it is uploaded to S3/the CDN.
+            Generally you want to use RenderScriptBundle or GetBundledScripts; this method is only provided for 
+            rare cases where the JS must be served from a roblox.com domain.
+            </summary>
+            <param name="namePrefix">The name of the bundle.</param>
+            <param name="files">The list of filepaths to bundle.</param>
+            <param name="minifyFiles">Whether to minify the files.</param>
+            <returns>The relative path of the bundled JS.</returns>
+        </member>
+        <member name="M:Roblox.Web.Code.StaticBundleUtils.ComputeHashForFiles(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>
+            Quickly generate a hash for a collection of files.  Hash each file, then rehash the combined hashes. 
+            Optionally add a salt to generate bundle in case we need to regenerate bundles without file changes.
+            </summary>
+            <param name="files">The files for which the contents will be hashed</param>
+            <param name="salt">Optional salt</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Web.Code.StaticContentV1">
+            <summary>
+            This class is used to upload static files to S3 and return the resulting URL (backed by CDN)
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.StaticContentV1.GetUrl(System.String)">
+            <summary>
+            Returns CDN url for a static file
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.LoginHelper.LoginFailureReason">
+            <summary>
+            Represents a reason that logging in can fail.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Code.LoginHelper.LoginFailureReason.None">
+            <summary>
+            Logging in did not fail.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Code.LoginHelper.LoginFailureReason.CaptchaMissing">
+            <summary>
+            The captcha was required but no captcha information was given.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Code.LoginHelper.LoginFailureReason.CaptchaIncorrect">
+            <summary>
+            The captcha was required but the captcha information given was invalid.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Code.LoginHelper.LoginFailureReason.Credentials">
+            <summary>
+            The user's credentials were invalid.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.PurchasePrivateServerAccountRestrictionsException">
+            <summary>
+            Exception thrown if user has curated content only enabled and purchase a VIP server that the universe is trusted and secured (IS curated content)
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.PurchasePrivateServerTransactionfailedException">
+            <summary>
+            Exception thrown if transaction failed when purchase the VIP server
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Code.UserHelper.GetOrCreateCurrentGuestId">
+            <summary>
+            Returns the current guestId.  If one didn't exist, or 
+            there was an error with the current value, then a new cookie &amp; value
+            will be created and set in the current context.
+            This function will throw an exception if it is called after a Response.Redirect call with endResponse parameter value set to False or 
+            if it is called in an HttpModule's OnEndRequest method.
+            </summary>
+            <returns>the context user's current guestId, or null if there was an error creating it.</returns>
+            <exception cref="T:System.Web.HttpException">Server cannot modify cookies after HTTP headers have been sent</exception>
+            
+        </member>
+        <member name="M:Roblox.Web.Code.UserHelper.SetGuestGenderType(System.Byte)">
+            <summary>
+            This code encodes gender into a guestId, which is never served to the user.
+            This is really weird.
+            
+            So what's the purpose of this "guestId encoding gender"?
+            It's sent to the game instances service, and returned when the website gets the player list for a server.
+            From that point it's decrypted mod 3 to find out whether the user clicked male or female on the chooser popup,
+            and correctly display their gender in the player list by server.
+            
+            So if you are trying to remove this, watch out.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Code.WebApplicationLifeCycleManager">
+            <inheritdoc cref="T:Roblox.Web.Code.IWebApplicationLifeCycleManager"/>
+        </member>
+        <member name="M:Roblox.Web.Code.WebApplicationLifeCycleManager.#ctor(Roblox.EventLog.ILogger,Roblox.Web.Authentication.IWebAuthenticator,Roblox.Web.Metrics.IWebRequestStatisticsTracker,Roblox.AuthenticationV2.IAuthenticationV2Synchronizer)">
+            <summary>
+            Initializes a <see cref="T:Roblox.Web.Code.WebApplicationLifeCycleManager"/>
+            </summary>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="webAuthenticator">A <see cref="T:Roblox.Web.Authentication.IWebAuthenticator"/>.</param>
+            <param name="webRequestStatisticsTracker">An <see cref="T:Roblox.Web.Metrics.IWebRequestStatisticsTracker"/>.</param>
+            <param name="authenticationV2Synchronizer">An <see cref="T:Roblox.AuthenticationV2.IAuthenticationV2Synchronizer"/>.</param>
+        </member>
+        <member name="M:Roblox.Web.Code.WebApplicationLifeCycleManager.AuthenticateRequest(System.Web.HttpRequest)">
+            <inheritdoc cref="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.AuthenticateRequest(System.Web.HttpRequest)"/>
+        </member>
+        <member name="M:Roblox.Web.Code.WebApplicationLifeCycleManager.BeginRequest(System.Web.HttpRequest,System.Web.HttpResponse)">
+            <inheritdoc cref="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.BeginRequest(System.Web.HttpRequest,System.Web.HttpResponse)"/>
+        </member>
+        <member name="M:Roblox.Web.Code.WebApplicationLifeCycleManager.ActionChosen(System.Web.HttpContextBase,System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.ActionChosen(System.Web.HttpContextBase,System.String,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Code.WebApplicationLifeCycleManager.EndRequest(System.Web.HttpRequest,System.Web.HttpResponse)">
+            <inheritdoc cref="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.EndRequest(System.Web.HttpRequest,System.Web.HttpResponse)"/>
+        </member>
+        <member name="T:Roblox.Web.Mvc.FilterAttributes.RequestBeginMetricsTrackingHandler">
+            <summary>
+            A handler/FilterAttribute for collecting per-endpoint metrics for MVC sites
+            </summary>
+            <remarks>
+            Ideally (as the namespace suggests) this would live in Roblox.Web.MVC as it is
+            an MVC specific FilterAttribute.
+            Unfortunately Roblox.Web.Code relies on Roblox.Web.MVC, and this FilterAttribute
+            requires the <see cref="T:Roblox.Web.Code.IWebApplicationLifeCycleManager"/> from Roblox.Web.Code
+            </remarks>
+        </member>
+        <member name="M:Roblox.Web.Mvc.FilterAttributes.RequestBeginMetricsTrackingHandler.#ctor(Roblox.Web.Code.IWebApplicationLifeCycleManager,System.Func{System.Boolean})">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Mvc.FilterAttributes.RequestBeginMetricsTrackingHandler"/>
+            </summary>
+            <param name="webApplicationLifeCycleManager">An <see cref="T:Roblox.Web.Code.IWebApplicationLifeCycleManager"/>.</param>
+            <param name="isEnabledFunc">A function that decides whether or not to record metrics, primary used for rollouts of new sites implementing this handler.</param>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+    </members>
+</doc>

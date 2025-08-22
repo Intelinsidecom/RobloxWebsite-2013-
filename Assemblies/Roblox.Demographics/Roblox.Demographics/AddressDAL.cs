@@ -44,7 +44,7 @@ public class AddressDAL
 		{
 			new SqlParameter("@ID", ID)
 		};
-		EntityHelper.DoEntityDALDelete(new DbInfo(ConnectionString, "Addresses_DeleteAddressByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(ConnectionString, "Addresses_DeleteAddressByID", queryParameters));
 	}
 
 	internal void Insert()

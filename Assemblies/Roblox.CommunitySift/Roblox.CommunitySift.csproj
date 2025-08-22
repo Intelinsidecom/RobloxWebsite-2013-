@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.CommunitySift</AssemblyName>
@@ -10,7 +10,9 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Core" />
     <Reference Include="Newtonsoft.Json">
@@ -30,6 +32,9 @@
     </Reference>
     <Reference Include="Roblox.Sentinels">
       <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

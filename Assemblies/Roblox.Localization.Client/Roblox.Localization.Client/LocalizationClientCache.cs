@@ -25,7 +25,13 @@ public class LocalizationClientCache : ILocalizationClientCache
 
 	private readonly ExpirableDictionary<string, IEnumerable<SupportedLocale>> _AllSupportedLocaleDictionary;
 
-	private readonly ExpirableDictionary<string, int?> _RawDeviceReportedLocaleId;
+	private class NullableInt
+	{
+		public int? Value { get; set; }
+		public NullableInt(int? value) { Value = value; }
+	}
+
+	private readonly ExpirableDictionary<string, NullableInt> _RawDeviceReportedLocaleId;
 
 	private readonly ExpirableDictionary<int, DeviceReportedLocale> _DeviceReportedLocaleCacheById;
 
@@ -45,7 +51,7 @@ public class LocalizationClientCache : ILocalizationClientCache
 		_SupportedLocaleCacheById = new ExpirableDictionary<int, SupportedLocale>(() => _Settings.SupportedLocaleLocalCacheExpiry, ExpirationPolicy.NeverRenew);
 		_SupportedLocaleCacheByCode = new ExpirableDictionary<string, SupportedLocale>(() => _Settings.SupportedLocaleLocalCacheExpiry, ExpirationPolicy.NeverRenew);
 		_AllSupportedLocaleDictionary = new ExpirableDictionary<string, IEnumerable<SupportedLocale>>(() => _Settings.SupportedLocaleLocalCacheExpiry, ExpirationPolicy.NeverRenew);
-		_RawDeviceReportedLocaleId = new ExpirableDictionary<string, int?>(() => _Settings.DeviceReportedLocaleCacheExpiry, ExpirationPolicy.NeverRenew);
+		_RawDeviceReportedLocaleId = new ExpirableDictionary<string, NullableInt>(() => _Settings.DeviceReportedLocaleCacheExpiry, ExpirationPolicy.NeverRenew);
 		_DeviceReportedLocaleCacheById = new ExpirableDictionary<int, DeviceReportedLocale>(() => _Settings.DeviceReportedLocaleCacheExpiry, ExpirationPolicy.NeverRenew);
 		_DeviceReportedLocaleCacheByCode = new ExpirableDictionary<string, DeviceReportedLocale>(() => _Settings.DeviceReportedLocaleCacheExpiry, ExpirationPolicy.NeverRenew);
 	}
@@ -100,10 +106,10 @@ public class LocalizationClientCache : ILocalizationClientCache
 		{
 			rawDeviceLocale = string.Empty;
 		}
-		int? num = default(int?);
-		if (_RawDeviceReportedLocaleId.TryGet(rawDeviceLocale, ref num))
+		var entry = _RawDeviceReportedLocaleId.Get(rawDeviceLocale);
+		if (entry != null)
 		{
-			deviceReportedLocaleId = num;
+			deviceReportedLocaleId = entry.Value;
 			return true;
 		}
 		deviceReportedLocaleId = null;
@@ -116,7 +122,8 @@ public class LocalizationClientCache : ILocalizationClientCache
 		{
 			rawDeviceLocale = string.Empty;
 		}
-		return _DeviceReportedLocaleCacheByCode.TryGet(rawDeviceLocale, ref deviceReportedLocale);
+		deviceReportedLocale = _DeviceReportedLocaleCacheByCode.Get(rawDeviceLocale);
+		return deviceReportedLocale != null;
 	}
 
 	public bool TryGetDeviceReportedLocaleById(int id, out DeviceReportedLocale deviceReportedLocale)
@@ -177,6 +184,6 @@ public class LocalizationClientCache : ILocalizationClientCache
 		{
 			rawLocaleCode = string.Empty;
 		}
-		_RawDeviceReportedLocaleId.Set(rawLocaleCode, deviceReportedLocaleId);
+		_RawDeviceReportedLocaleId.Set(rawLocaleCode, new NullableInt(deviceReportedLocaleId));
 	}
 }

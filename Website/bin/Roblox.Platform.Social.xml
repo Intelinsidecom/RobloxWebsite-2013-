@@ -1,0 +1,1513 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Social</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Social.Events.IMessageEventPublisher.Publish(Roblox.Platform.Social.Events.MessageEventType,System.Int64,System.Int64)">
+            <summary>
+            Publish a message event.
+            </summary>
+            <param name="type">The type of message event</param>
+            <param name="messageId">The id of the message</param>
+            <param name="recipientUserId">The user that will receive the message.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.Events.MessageEventPublisher.Publish(Roblox.Platform.Social.Events.MessageEventType,System.Int64,System.Int64)">
+            <summary>
+            Publish a message event.
+            </summary>
+            <param name="type">The type of message event</param>
+            <param name="messageId">The id of the message</param>
+            <param name="recipientUserId">The user that will receive the message.</param>
+        </member>
+        <member name="T:Roblox.Platform.Social.Follow.FollowPrivacyType">
+            <summary>
+            Disabled and TopFriends values are obsolete
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.Follow.IFollowPrivacySetting">
+            <summary>
+            A user's privacy setting for allowing/disallowing other users to follow them into game
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Follow.IFollowPrivacySetting.PrivacyType">
+            <summary>
+            Currently set privacy type
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Follow.IFollowPrivacySetting.SetPrivacyType(Roblox.Platform.Social.Follow.FollowPrivacyType)">
+            <summary>
+            If privacy type is inappropriate for user's age, does nothing
+            </summary>
+            <returns>Returns a boolean indicating whether the save was successful or not</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.Follow.IFollowPrivacySetting.Sanitize">
+            <summary>
+            If current privacy type is inappropriate for user's age, updates it to default (for age)
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.Follow.IFollowPrivacySettingFactory">
+            <summary>
+            Factor for follow privacy settings
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Follow.IFollowPrivacySettingFactory.GetOrCreate(Roblox.Platform.Membership.IUser)">
+            <param name="user">Will throw a PlatformArgumentNullException if null</param>
+        </member>
+        <member name="T:Roblox.Platform.Social.Follow.IFollowValidator">
+            <summary>
+            Validates a user's ability to follow another user into game 
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Follow.IFollowValidator.CanFollow(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Checks whether a user can follow another user into game
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Follow.IFollowValidator.CanFollow(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Func{System.Int64,System.Int64,System.Boolean},System.Func{System.Int64,System.Int64,System.Boolean})">
+            <summary>
+            Provided for specific cases where we don't want to use the FriendshipFactory for determining user relationships (because of performance considerations).
+            Most times we should be using the other CanFollow function.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.AntiAbuseFlags">
+            <summary>
+            A struct containing booleans related to anti-abuse checking and CAPTCHA.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.AntiAbuseFlags.IsUserInGame">
+            <summary>
+            Is user currently in a game.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.AntiAbuseFlags.IsRecipientInSameGameAsUser">
+            <summary>
+            Is the recipient user in the same game as the sending user.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.AntiAbuseFlags.IsUserInApp">
+            <summary>
+            Is the user in an app.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.AntiAbuseFlags.HasUserFilledOrIsUserExemptFromCaptcha">
+            <summary>
+            Has the user filled a captcha or is the user otherwise exempt (e.g. due to time in game).
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.FriendshipFactory">
+            <summary>
+            All friendship Apis should go through this class
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.CreateFollowing(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.Social.IFriendshipFactory.CreateFollowing(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Boolean,System.Boolean,System.Boolean,System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.DeleteFollowing(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Social.IFriendshipFactory.DeleteFollowing(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.HasRequest(System.Int64,System.Int64)">
+            <summary>
+            Determines whether or not there is a pending friend request sent from a user to its friend.
+            </summary>
+            <param name="userId">The user ID of the first user.</param>
+            <param name="friendId">The user ID of the friend.</param>
+            <returns>Whether or not there is a pending friend request.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.GetFriendshipStatus(System.Int64,System.Int64)">
+            <summary>
+            Gets the FriendshipStatus of the users.
+            </summary>
+            <remarks>The parameters are not commutitative.</remarks>
+            <param name="userId">The user ID of the first user.</param>
+            <param name="friendId">The user ID of the second user.</param>
+            <returns>The FriendshipStatus that describes the relationship between the two users.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.MultigetFriendshipStatus(System.Int64,System.Collections.Generic.IReadOnlyCollection{System.Int64})">
+            <summary>
+            Gets the FriendshipStatus of the specified user for each of the other users.
+            </summary>
+            <remarks>The parameters are not commutitative.</remarks>
+            <param name="userId">The user ID of the first user.</param>
+            <param name="otherUserIds">The collection of other users to get the FriendshipStatuses of.</param>
+            <returns>The FriendshipStatus that describes the relationship between the two users.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.AreFriends(System.Int64,System.Int64)">
+            <summary>
+            Determines whether or not the users with the given user IDs are friends.
+            </summary>
+            <param name="userId">The user ID of the first user.</param>
+            <param name="friendId">The user ID of the second user.</param>
+            <returns>Whether or not the users with the given user IDs are friends.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.GetUsersOfInterestPaged(Roblox.Platform.Membership.IUser,System.Int32,System.Int32,Roblox.Caching.Shared.ISharedCacheClient,System.Func{Roblox.Platform.Membership.IUser,System.Boolean})">
+            <summary>
+            Moved from SCL.
+            </summary>
+            <param name="user"></param>
+            <param name="startRowIndex"></param>
+            <param name="maximumRows"></param>
+            <param name="cacheClient"></param>
+            <param name="onlineStatusGetter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.BuildUserIdsOfInterest(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Moved from SCL.
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.BuildTopFriendsInteractionDimension(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Moved from SCL.
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.FriendshipFactory.BuildMessagesSentInteractionDimension(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Moved from SCL.
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.FriendshipStatus">
+            <summary>
+            Represents the status of a friendship between users.
+            </summary>
+            <remarks>These values only contain statuses that one user can know. For example
+            there is no value for me being another user's best friend because that
+            information is not presented to me.</remarks>
+        </member>
+        <member name="F:Roblox.Platform.Social.FriendshipStatus.NoFriendship">
+            <summary>
+            There is no friendship among the users.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.FriendshipStatus.PendingOnOtherUser">
+            <summary>
+            The current user has sent a friend request and the request is pending.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.FriendshipStatus.PendingOnCurrentUser">
+            <summary>
+            The other user has sent a friend request and the request is pending.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.FriendshipStatus.Friends">
+            <summary>
+            The users are friends with each other.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.IFriendshipCreator">
+            <summary>
+            Interface for friendship creation-related APIs.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.IFriendshipCreator.SendFriendRequest(System.Int64,System.Int64,Roblox.Platform.Social.AntiAbuseFlags,System.String,Roblox.Friends.Client.FriendshipOriginSourceType)">
+            <summary>
+            Sends a friend request from <paramref name="userId"/> to <paramref name="recipientId"/>.
+            </summary>
+            <param name="userId">The user sending the friend request ("sending user").</param>
+            <param name="recipientId">The target of the friend request.</param>
+            <param name="antiAbuseFlags"> The <see cref="T:Roblox.Platform.Social.AntiAbuseFlags"/> that accompany this friend request.</param>
+            <param name="message">Message accompanying friend request. (Default: Empty string.)</param>
+            <param name="friendshipOriginSourceType">Enum value describing origin of friendship. (Default: Unknown.)</param>
+        </member>
+        <member name="E:Roblox.Platform.Social.IFriendshipCreator.OnFriendRequestSent">
+            <summary>
+            Event raised when friendship request is sent.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.IFriendshipFactory.GetFollowersEnumerative(System.Int64,Roblox.ApiClientBase.ExclusiveStartInfo{System.Nullable{System.Int64}})">
+            <summary>
+            Gets followers of a user.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.IFriendshipFactory.GetFollowingsEnumerative(System.Int64,Roblox.ApiClientBase.ExclusiveStartInfo{System.Nullable{System.Int64}})">
+            <summary>
+            Gets a user's followings.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.IFriendshipFactory.CreateFollowing(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Creates a following on <paramref name="user"/> from <paramref name="follower"/>
+            </summary>
+            <param name="user">The user to follow.</param>
+            <param name="follower">The follower.</param>
+            <param name="isFollowerInGame">Is user to be followed currently in a game</param>
+            <param name="isUserInSameGameAsFollower">Is the user to be followed in the same game as the follower.</param>
+            <param name="isFollowerInApp">Is the follower in an app</param>
+            <param name="hasFollowerFilledACaptcha">Has the follower filled a captcha</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="user"/> is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="follower"/> is null</exception>
+            <exception cref="T:Roblox.Platform.Social.FriendshipOperationException">Friendship client failure</exception>
+            <exception cref="T:Roblox.Platform.Social.FriendshipOperationUnavailableException">Friendship service unavailable</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.IFriendshipFactory.DeleteFollowing(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Deletes the following of <paramref name="follower"/> from <paramref name="user"/>
+            </summary>
+            <param name="user">The user currently being followed.</param>
+            <param name="follower">The follower.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="user"/> is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="follower"/> is null</exception>
+            <exception cref="T:Roblox.Platform.Social.FriendshipOperationException">Friendship client failure</exception>
+            <exception cref="T:Roblox.Platform.Social.FriendshipOperationUnavailableException">Friendship service unavailable</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.IFriendshipFactory.GetFriendRequestsEnumerative(System.Int64,Roblox.ApiClientBase.ExclusiveStartInfo{Roblox.Friends.Client.FriendRequestExclusiveStartKey})">
+            <summary>
+            Gets pending friend requests for a user.
+            </summary>
+            <param name="userId"></param>
+            <param name="exclusiveStartKeyInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.IFriendshipFactory.GetAllFriends(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Get all friends
+            </summary>
+            <param name="user">The user whose friends will be fetched</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.Messages.SystemMessageSenderType">
+            <summary>
+            System message sender types.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.Messages.SystemMessageSenderType.Roblox">
+            <summary>
+            The message should be sent by the Roblox user.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.Messages.SystemMessageSenderType.Builderman">
+            <summary>
+            The message should be sent by the user: builderman.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.Messages.IMessagePrivacySetting">
+            <summary>
+            Public interface representing a user's privacy settings for receiving messages.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Messages.IMessagePrivacySetting.User">
+            <summary>
+            A <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Messages.IMessagePrivacySetting.MessagePrivacyType">
+            <summary>
+            The <see cref="P:Roblox.Platform.Social.Messages.IMessagePrivacySetting.MessagePrivacyType"/> that controls who can send the user messages.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Messages.IMessagePrivacySetting.UpdatePrivacyType(Roblox.Platform.Social.MessagePrivacyType)">
+            <summary>
+            Updates the privacy type. If the chosen privacy type is not valid for the user's age bracket, or if the chosen privacy
+            type is equal to the existing privacy type, this method does not update the DB.
+            </summary>
+            <param name="newPrivacyType"></param>
+            <exception cref="T:Roblox.Data.DataIntegrityException">Thrown if the underlying entity object is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.Messages.IMessagePrivacySetting.Sanitize">
+            <summary>
+            Checks that the user's privacy setting is valid for their age bracket, and updates it to a default value if it is invalid.
+            </summary>
+            <exception cref="T:Roblox.Data.DataIntegrityException">Thrown if the underlying entity object is null</exception>
+        </member>
+        <member name="T:Roblox.Platform.Social.Messages.IMessagePrivacySettingEntity">
+            <summary>
+            Wrapper for the legacy UserMessagePrivacySetting class - makes platform code testable. There should be no logic in
+            the implementation of this interface.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.Messages.IMessagePrivacySettingEntityFactory">
+            <summary>
+            Creates <see cref="T:Roblox.Platform.Social.Messages.IMessagePrivacySettingEntity"/>. This is a mockable wrapper for a legacy entity file that is untestable.
+            There should be no logic in the implementation of this interface.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Messages.ISystemMessageSender.Send(System.String,System.String,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Sends a private message from the default system user (<see cref="F:Roblox.Platform.Social.Messages.SystemMessageSenderType.Roblox"/>).
+            </summary>
+            <param name="subject">The private message subject.</param>
+            <param name="body">The contents of the private message.</param>
+            <param name="recipientUser">The private message recipient.</param>
+            <returns>The <see cref="T:Roblox.Platform.Social.SendResult"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.Messages.ISystemMessageSender.Send(System.String,System.String,Roblox.Platform.Membership.IUser,Roblox.Platform.Social.Messages.SystemMessageSenderType)">
+            <summary>
+            Sends a private message from the selected system user.
+            </summary>
+            <param name="subject">The private message subject.</param>
+            <param name="body">The contents of the private message.</param>
+            <param name="recipientUser">The private message recipient.</param>
+            <param name="systemMessageSenderType">The system user to send as.</param>
+            <returns>The <see cref="T:Roblox.Platform.Social.SendResult"/>.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.Messages.IMessagePrivacySettingFactory">
+            <summary>
+            Fetches and constructs <see cref="T:Roblox.Platform.Social.Messages.IMessagePrivacySetting"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Messages.IMessagePrivacySettingFactory.GetOrCreate(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets or creates a <see cref="T:Roblox.Platform.Social.Messages.IMessagePrivacySetting"/> by its user. If the appropriate setting is true, the user's
+            setting will be sanitized as well.
+            </summary>
+            <param name="user">The user.</param>
+            <returns>The <see cref="T:Roblox.Platform.Social.Messages.IMessagePrivacySetting"/> whose user ID matches the given user.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if the passed in user is null</exception>
+        </member>
+        <member name="T:Roblox.Platform.Social.Messages.IMessagePrivacyAuthority">
+            <summary>
+            Provides methods to determine whether or not a user can send a private message to another user.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Messages.IMessagePrivacyAuthority.CanSendMessage(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Determines whether or not a user can send a message to another user.
+            </summary>
+            <param name="sender">The user ID of the user sending the message.</param>
+            <param name="recipient">The user ID of the user receiving the message.</param>
+            <returns>The result of the check.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the sender ID or the recipient ID are invalid.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Social.Messages.MessageDomainFactories">
+            <summary>
+            Common factories necessary for interacting with the Messages system
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Messages.MessagePrivacyAuthority.IsFriendsWith(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Determines whether or not a user is friends with another user.
+            </summary>
+            <param name="user">The first user.</param>
+            <param name="friend">The user to check for friendship with.</param>
+            <returns>Whether or not the UserMessagePrivacySetting's User is
+            friends with the given user.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.Messages.MessagePrivacyAuthority.HasFollower(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Determines whether or not a user is being followed another user.
+            </summary>
+            <param name="user">The first user.</param>
+            <param name="followerUser">The user to check if they are following.</param>
+            <returns>Whether or not the UserMessagePrivacySetting's User is
+            being followed by the given user.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.IMessageDataAccessor">
+            <summary>
+            Provides common methods to access private message data.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.Save(Roblox.Platform.Social.Message)">
+            <summary>
+            Saves the given <see cref="T:Roblox.Platform.Social.Message"/>.
+            </summary>
+            <param name="message">The <see cref="T:Roblox.Platform.Social.Message"/> to save.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.Delete(System.Int64)">
+            <summary>
+            Deletes the <see cref="T:Roblox.Platform.Social.Message"/> with the given ID.
+            </summary>
+            <param name="messageId">The ID of the <see cref="T:Roblox.Platform.Social.Message"/> to delete.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.GetByAuthorId(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Gets all messages authored by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="authorId">The user ID of the author.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <returns>All messages authored by the user with the given user ID that match the given filter set.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.GetByAuthorIdPaged(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of messages authored by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="authorId">The user ID of the author.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <param name="startIndex">The zero-indexed row to start getting messages at.</param>
+            <param name="pageSize">The number of messages on the page.</param>
+            <returns>The page of messages authored by the user with the given user ID that match the given filter set. Up 
+            to pageSize messages will be returned.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported,
+            if the startIndex is negative, or the page size is less than one.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.GetByRecipientId(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Gets all messages received by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="recipientId">The user ID of the recipient.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <returns>All messages received by the user with the given user ID that match the given filter set.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.GetByRecipientIdPaged(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of messages received by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="recipientId">The user ID of the recipient.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <param name="startIndex">The zero-indexed row to start getting messages at.</param>
+            <param name="pageSize">The number of messages on the page.</param>
+            <returns>The page of messages received by the user with the given user ID that match the given filter set. Up 
+            to pageSize messages will be returned.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported,
+            if the startIndex is negative, or the page size is less than one.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.GetCountByAuthorId(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Gets the number of messages authored by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="authorId">The user ID of the author.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <returns>The number of messages authored by the user with the given user ID that match the given filter set.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.GetCountByRecipientId(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Gets the number of messages received by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="recipientId">The user ID of the recipient.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <returns>The number of messages received by the user with the given user ID that match the given filter set.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.GetByMessageId(System.Int64)">
+            <summary>
+            Gets a message by its message ID.
+            </summary>
+            <param name="messageId">The message ID of the message to get.</param>
+            <returns>The message with the given message ID, or null if none exists.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.IMessageDataAccessor.GetMessages(System.Int64,System.Int32)">
+            <summary>
+            Gets a collection of messages by exclusiveStartId and maximumRows
+            </summary>
+            <param name="exclusiveStartId">ExclusiveStartId</param>
+            <param name="maximumRows">MaximumRows</param>
+            <returns></returns>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageCounter.UseUnreadMessagesCounter">
+            <summary>
+            Gets whether or not unread message counts should be tracked through user counters.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageCounter._MessageDataAccessor">
+            <summary>
+            The <see cref="T:Roblox.Platform.Social.IMessageDataAccessor"/> used to access message data.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageCounter.#ctor(Roblox.Platform.Social.IMessageDataAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Social.MessageCounter"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageCounter.IncrementUnreadMessageCountUserCounter(System.Int64)">
+            <summary>
+            Increments the unread messages user counter for the user with the given user ID.
+            </summary>
+            <param name="userId">The user ID of the user than the counter is for.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageCounter.DecrementUnreadMessageCountUserCounter(System.Int64)">
+            <summary>
+            Decrements the unread messages user counter for the user with the given user ID.
+            </summary>
+            <param name="userId">The user ID of the user than the counter is for.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageCounter.SynchronizeUnreadMessagesCounter(Roblox.UserCounter)">
+            <summary>
+            Synchronizes the given <see cref="T:Roblox.UserCounter"/> to exactly match the real unread
+            messages count.
+            </summary>
+            <param name="unreadMessagesCounter">The <see cref="T:Roblox.UserCounter"/> to sync.</param>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageDataAccessor">
+            <summary>
+            Provides common methods to access private message data.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageDataAccessor._SortExpression">
+            <summary>
+            The sort expression to use when getting messages.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.Save(Roblox.Platform.Social.Message)">
+            <summary>
+            Saves the given <see cref="T:Roblox.Platform.Social.Message"/>.
+            </summary>
+            <param name="message">The <see cref="T:Roblox.Platform.Social.Message"/> to save.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.Delete(System.Int64)">
+            <summary>
+            Deletes the <see cref="T:Roblox.Platform.Social.Message"/> with the given ID.
+            </summary>
+            <param name="messageId">The ID of the <see cref="T:Roblox.Platform.Social.Message"/> to delete.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.ConvertSclMessageToPlatformMessage(Roblox.Message)">
+            <summary>
+            Converts a Server Class Library message entity to a platform message.
+            </summary>
+            <param name="entity">The entity to convert.</param>
+            <returns>The converted message model.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.GetByAuthorId(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Gets all messages authored by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="authorId">The user ID of the author.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <returns>All messages authored by the user with the given user ID that match the given filter set.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.GetByRecipientId(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Gets all messages received by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="recipientId">The user ID of the recipient.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <returns>All messages received by the user with the given user ID that match the given filter set.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.GetByAuthorIdPaged(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of messages authored by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="authorId">The user ID of the author.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <param name="startIndex">The zero-indexed row to start getting messages at.</param>
+            <param name="pageSize">The number of messages on the page.</param>
+            <returns>The page of messages authored by the user with the given user ID that match the given filter set. Up 
+            to pageSize messages will be returned.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported,
+            if the startIndex is negative, or the page size is less than one.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.GetByRecipientIdPaged(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of messages received by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="recipientId">The user ID of the recipient.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <param name="startIndex">The zero-indexed row to start getting messages at.</param>
+            <param name="pageSize">The number of messages on the page.</param>
+            <returns>The page of messages received by the user with the given user ID that match the given filter set. Up 
+            to pageSize messages will be returned.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported,
+            if the startIndex negative, or the page size is less than one.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.GetCountByAuthorId(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Gets the number of messages authored by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="authorId">The user ID of the author.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <returns>The number of messages authored by the user with the given user ID that match the given filter set.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.GetCountByRecipientId(System.Int64,Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Gets the number of messages received by the user with the given user ID that match the given filter set.
+            </summary>
+            <param name="recipientId">The user ID of the recipient.</param>
+            <param name="filterSet">The filter set to match.</param>
+            <returns>The number of messages received by the user with the given user ID that match the given filter set.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the given <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> is not supported.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.GetByMessageId(System.Int64)">
+            <summary>
+            Gets a message by its message ID.
+            </summary>
+            <param name="messageId">The message ID of the message to get.</param>
+            <returns>The message with the given message ID, or null if none exists.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageDataAccessor.GetMessages(System.Int64,System.Int32)">
+            <summary>
+            Gets a collection of messages by exclusiveStartId and maximumRows
+            </summary>
+            <param name="exclusiveStartId">ExclusiveStartId</param>
+            <param name="maximumRows">MaximumRows</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessagePermission">
+            <summary>
+            Provides methods for determining if a user has permission to access an existing message
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessagePermission._MessageDataAccessor">
+            <summary>
+            The IMessageDataAccessor used to get message data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessagePermission.Message">
+            <summary>
+            Returns the message id to check permissions for
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessagePermission.#ctor(System.Int64,Roblox.Platform.Social.IMessageDataAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Social.MessagePermission"/> class.
+            </summary>
+            <param name="messageId">The message ID of the message to get permissions for.</param>
+            <param name="messageDataAccessor">The IMessageDataAccessor used to access message data. Uses 
+            a <see cref="T:Roblox.Platform.Social.MessageDataAccessor"/> if left null.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessagePermission.HasPermissionToAccess(System.Int64)">
+            <summary>
+            Determines whether user has permission to access the specified message.
+            </summary>
+            <param name="userId">The user identifier to check.</param>
+            <returns>False if the user not the sender or receiver of the message or 
+                if the message can not be found, true if they are the sender or receiver.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessagePrivacyType">
+            <summary>
+            Represents a privacy type the determines who can send a user a message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessagePrivacyType.All">
+            <summary>
+            Any user can send the user a message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessagePrivacyType.TopFriends">
+            <summary>
+            Only best friend can send the user a message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessagePrivacyType.Friends">
+            <summary>
+            Only friends can send the user a message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessagePrivacyType.NoOne">
+            <summary>
+            Nobody can send the user a message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessagePrivacyType.Disabled">
+            <summary>
+            No longer used - deprecated privacy type.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessagePrivacyType.Following">
+            <summary>
+            Only friends and users the user is following can send the user a message
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessagePrivacyType.Followers">
+            <summary>
+            Only friends, users the user is following, and users following the user can send the user a message
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.Message">
+            <summary>
+            Represents a private message that can be sent between users.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.Id">
+            <summary>
+            Gets or sets the message's unique ID.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.MessageTypeId">
+            <summary>
+            Gets or sets the ID of the message's MessageType.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.Body">
+            <summary>
+            Gets or sets the message's body.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.Subject">
+            <summary>
+            Gets or sets the message's subject.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.AuthorId">
+            <summary>
+            Gets or sets the ID of the message's author.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.RecipientId">
+            <summary>
+            Gets or sets the ID of the message's recipient.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.IsRead">
+            <summary>
+            Gets or sets whether or not the message has been read by the recipient.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.IsArchived">
+            <summary>
+            Gets or sets whether or not the message has been archived.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.IsBroadcastMessage">
+            <summary>
+            Gets or sets whether or not the message is a broadcast message.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.IsSystemMessage">
+            <summary>
+            Gets or sets whether or not the message is a system message.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.Created">
+            <summary>
+            Gets or sets the DateTime at which the message was created.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.Message.Updated">
+            <summary>
+            Gets or sets the DateTime at which the message was last updated.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageGetter">
+            <summary>
+            Provides methods to get a user's messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageGetter._UserId">
+            <summary>
+            The user ID of the user to get messages for.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageGetter._MessageDataAccessor">
+            <summary>
+            The IMessageDataAccessor used to get message data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageGetter.UserId">
+            <summary>
+            Gets the user ID of the user to access messages for.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageGetter._UnreadInboxMessageCountFilterSet">
+            <summary>
+            The <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> that represents a query for
+            the count of unread messages in a user's inbox.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageGetter.UseUnreadMessagesCounter">
+            <summary>
+            Gets whether or not unread message counts should be tracked through user counters.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageGetter.UnreadMessagesCounterVerificationPercentage">
+            <summary>
+            Gets the chance that the user counter for unread messages should be synced
+            when getting the unread inbox message count.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageGetter.UnreadMessagesCounterAutoSyncThreshold">
+            <summary>
+            Gets the number of messages below which the user counter for unread inbox messages
+            will always be synced.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetUnreadInboxMessageCountFilterSet">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Social.MessageQueryFilterSet"/> that represents a query for
+            the count of unread messages in a user's inbox.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.#ctor(System.Int64,Roblox.Platform.Social.IMessageDataAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Social.MessageGetter"/> class.
+            </summary>
+            <param name="userId">The user ID of the user to get messages for.</param>
+            <param name="messageDataAccessor">The IMessageDataAccessor used to access message data. Uses 
+            a <see cref="T:Roblox.Platform.Social.MessageDataAccessor"/> if left null.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetMessagesInMessageTab(Roblox.Platform.Social.MessageTabType,System.Int32,System.Int32)">
+            <summary>
+            Gets the user's messages in a specified tab.
+            </summary>
+            <param name="messageTab">The message tab to get messages for.</param>
+            <param name="pageNumber">The zero-indexed page of messages to get.</param>
+            <param name="pageSize">The number of messages on the page.</param>
+            <returns>The page of the user's messages in the specified tab.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if pageNumber or pageSize is less than one.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetMessageCountInMessageTab(Roblox.Platform.Social.MessageTabType)">
+            <summary>
+            Gets the count of the user's messages in a specified tab.
+            </summary>
+            <param name="messageTab">The message tab to get the count for.</param>
+            <returns>The number of messages in the tab.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.SynchronizeUnreadMessagesCounter(Roblox.UserCounter)">
+            <summary>
+            Synchronizes the given <see cref="T:Roblox.UserCounter"/> to exactly match the real unread
+            messages count.
+            </summary>
+            <param name="unreadMessagesCounter">The <see cref="T:Roblox.UserCounter"/> to sync.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetInboxMessagesCount">
+            <summary>
+            Gets the number of messages in the user's inbox.
+            </summary>
+            <returns>The number of messages in the user's inbox.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.ShouldSynchronizeUnreadMessagesUserCounter(Roblox.UserCounter)">
+            <summary>
+            Determines whether the given user counter should be synchronized.
+            </summary>
+            <param name="unreadMessagesCounter">The <see cref="T:Roblox.UserCounter"/> to check.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetSentMessagesCount">
+            <summary>
+            Gets the number of messages in the user's sent tab.
+            </summary>
+            <returns>The number of messages in the user's sent tab.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetArchivedMessagesCount">
+            <summary>
+            Gets the number of messages in the user's archive tab.
+            </summary>
+            <returns>The number of messages in the user's archive tab.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetMessageById(System.Int64)">
+            <summary>
+            Gets the user's message by its message ID.
+            </summary>
+            <param name="messageId">The message ID of the message to get.</param>
+            <returns>The message with the given message ID, or null if none existed.</returns>
+            <exception cref="T:Roblox.Platform.Membership.UnauthorizedUserOperationException">Thrown if the user did not send or receive the message.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetUnreadMessagesInInboxCount">
+            <summary>
+            Gets the number of unread messages in the user's inbox.
+            </summary>
+            <returns>The number of unread messages in the user's inbox.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetInboxMessages(System.Int32,System.Int32)">
+            <summary>
+            Gets the messages in the user's inbox.
+            </summary>
+            <param name="pageNumber">The zero-indexed page number to get messages for.</param>
+            <param name="pageSize">The number of messages on each page.</param>
+            <returns>The messages in the user's inbox.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetSentMessages(System.Int32,System.Int32)">
+            <summary>
+            Gets the messages in the user's sent tab.
+            </summary>
+            <param name="pageNumber">The zero-indexed page number to get messages for.</param>
+            <param name="pageSize">The number of messages on each page.</param>
+            <returns>The messages in the user's sent tab.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.GetArchivedMessages(System.Int32,System.Int32)">
+            <summary>
+            Gets the messages in the user's archive tab.
+            </summary>
+            <param name="pageNumber">The zero-indexed page number to get messages for.</param>
+            <param name="pageSize">The number of messages on each page.</param>
+            <returns>The messages in the user's archive tab.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.ConvertPageNumberAndSizeToStartIndex(System.Int32,System.Int32)">
+            <summary>
+            Converts the given page number and page size to a start index.
+            </summary>
+            <param name="pageNumber">The zero-indexed page number.</param>
+            <param name="pageSize">The page size.</param>
+            <returns>The start index.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.EncodeStringAsHtml(System.String)">
+            <summary>
+            Encodes the given string as HTML.
+            </summary>
+            <param name="value">The string to encode.</param>
+            <returns>The string encoded as html.</returns>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageGetter.RobloxUserId">
+            <summary>
+            Gets to user ID of Roblox.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageGetter.FilterMessageProblems(Roblox.Platform.Social.Message)">
+            <summary>
+            Escapes HTML in message body and converts line endings to brs, for non system messages.
+            </summary>
+            <param name="message">The message</param>
+            <returns>The message</returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageManipulator">
+            <summary>
+            Provides methods for manipulating an existing message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageManipulator._MessageDataAccessor">
+            <summary>
+            The IMessageDataAccessor used to access message data.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageManipulator._MessageEventPublisher">
+            <summary>
+            The IMessageEventPublisher used to publish message event to AWS Sns.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageManipulator._MessageCounter">
+            <summary>
+            The MessageCounter used to track message count change.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageManipulator.#ctor(Roblox.Platform.Social.Events.IMessageEventPublisher,Roblox.Platform.Social.IMessageDataAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Social.MessageManipulator"/> class.
+            </summary>
+            <param name="messageEventPublisher">The <see cref="T:Roblox.Platform.Social.Events.IMessageEventPublisher"/> to use to publish message events. 
+            Uses a <see cref="T:Roblox.Platform.Social.Events.MessageEventPublisher"/> if ledt null</param>
+            <param name="messageDataAccessor">The IMessageDataAccessor used to access message data. Uses 
+            a <see cref="T:Roblox.Platform.Social.MessageDataAccessor"/> if left null.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageManipulator.MarkMessageAsRead(System.Int64,System.Int64)">
+            <summary>
+            Marks a user's message as read.
+            </summary>
+            <param name="userId">The user ID of the user that received the message.</param>
+            <param name="messageId">The message ID of the message to mark as read.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageManipulator.MarkMessageAsUnread(System.Int64,System.Int64)">
+            <summary>
+            Marks a user's message as unread.
+            </summary>
+            <param name="userId">The user ID of the user that received the message.</param>
+            <param name="messageId">The message ID of the message to mark as unread.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageManipulator.MarkMessageAsArchived(System.Int64,System.Int64)">
+            <summary>
+            Marks a user's message as archived.
+            </summary>
+            <param name="userId">The user ID of the user that received the message.</param>
+            <param name="messageId">The message ID of the message to mark as archived.</param>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageManipulator.MarkMessageAsUnarchived(System.Int64,System.Int64)">
+            <summary>
+            Marks a user's message as unarchived.
+            </summary>
+            <param name="userId">The user ID of the user that received the message.</param>
+            <param name="messageId">The message ID of the message to mark as unarchived.</param>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageQueryFilterSet">
+            <summary>
+            Represents a set of filters for querying messages.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageQueryFilterSet.ArchiveQueryFilter">
+            <summary>
+            Represents a filter on querying messages based off whether the message is archived or not.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.ArchiveQueryFilter.ArchivedOnly">
+            <summary>
+            The query should only get archived messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.ArchiveQueryFilter.UnarchivedOnly">
+            <summary>
+            The query should only get unarchived messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.ArchiveQueryFilter.Both">
+            <summary>
+            The query should get both archived and unarchived messages.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageQueryFilterSet.ReadQueryFilter">
+            <summary>
+            Represents a filter on querying messages based off whether the message is read or not.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.ReadQueryFilter.ReadOnly">
+            <summary>
+            The query should only get read messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.ReadQueryFilter.UnreadOnly">
+            <summary>
+            The query should only get unread messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.ReadQueryFilter.Both">
+            <summary>
+            The query should get both read and unread messages.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageQueryFilterSet.SystemMessageQueryFilter">
+            <summary>
+            Represents a filter on querying messages based off whether the message is a system message or not.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.SystemMessageQueryFilter.SystemOnly">
+            <summary>
+            The query should only get system messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.SystemMessageQueryFilter.UserOnly">
+            <summary>
+            The query should only get user messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.SystemMessageQueryFilter.Both">
+            <summary>
+            The query should get both system and user messages.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageQueryFilterSet.InvitationQueryFilter">
+            <summary>
+            Represents a filter on querying messages based off whether the message is an invitation or not.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.InvitationQueryFilter.InvitationsOnly">
+            <summary>
+            The query should only get invitation messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.InvitationQueryFilter.NoInvitations">
+            <summary>
+            The query should only get non-invitation messages.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageQueryFilterSet.InvitationQueryFilter.Both">
+            <summary>
+            The query should get both invitation and non-invitation messages.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageQueryFilterSet.ArchiveFilter">
+            <summary>
+            The ArchiveQueryFilter to filter the query by.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageQueryFilterSet.ReadFilter">
+            <summary>
+            The ReadQueryFilter to filter the query by.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageQueryFilterSet.SystemMessageFilter">
+            <summary>
+            The SystemMessageQueryFilter to filter the query by.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageQueryFilterSet.InvitationFilter">
+            <summary>
+            The InvitationQueryFilter to filter the query by.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageQueryFilterSetDecoder">
+            <summary>
+            Provides methods for decoding a MessageQueryFilterSet into the name of a stored procedure.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageQueryFilterSetDecoder.DecodeForRecipient(Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Decodes the given MessageQueryFilterSet to the name of a
+            stored procedure. The stored procedure will perform a query 
+            to get the desired messages for a recipient.
+            </summary>
+            <param name="filterSet">The MessageQueryFilterSet to decode.</param>
+            <returns>The name of the stored procedure that will perform the 
+            query to get the desired messages. Returns null if no corresponding 
+            stored procedure exists.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageQueryFilterSetDecoder.DecodeCountForRecipient(Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Decodes the given MessageQueryFilterSet to the name of a
+            stored procedure. The stored procedure will perform a query 
+            to get the total number of desired messages for a recipient.
+            </summary>
+            <param name="filterSet">The MessageQueryFilterSet to decode.</param>
+            <returns>The name of the stored procedure that will perform the 
+            query to get the number of desired messages. Returns null if no 
+            corresponding stored procedure exists.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageQueryFilterSetDecoder.DecodeForSender(Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Decodes the given MessageQueryFilterSet to the name of a
+            stored procedure. The stored procedure will perform a query 
+            to get the desired messages for a sender.
+            </summary>
+            <param name="filterSet">The MessageQueryFilterSet to decode.</param>
+            <returns>The name of the stored procedure that will perform the 
+            query to get the desired messages. Returns null if no corresponding 
+            stored procedure exists.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageQueryFilterSetDecoder.DecodeCountForSender(Roblox.Platform.Social.MessageQueryFilterSet)">
+            <summary>
+            Decodes the given MessageQueryFilterSet to the name of a
+            stored procedure. The stored procedure will perform a query 
+            to get the total number of desired messages for a sender.
+            </summary>
+            <param name="filterSet">The MessageQueryFilterSet to decode.</param>
+            <returns>The name of the stored procedure that will perform the 
+            query to get the number of desired messages. Returns null if no 
+            corresponding stored procedure exists.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageSender">
+            <summary>
+            Provides methods for sending a message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageSender._MessageDataAccessor">
+            <summary>
+            The IMessageDataAccessor used to access message data.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageSender._MessageEventPublisher">
+            <summary>
+            The IMessageEventPublisher used to publish message event to AWS Sns.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageSender.#ctor(Roblox.Platform.Membership.IUserFactory,Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.Platform.Social.Messages.IMessagePrivacyAuthority,Roblox.Platform.Social.Events.IMessageEventPublisher,Roblox.Platform.Social.IMessageDataAccessor)">
+            <summary>
+            Constructs a new MessageSender.
+            </summary>
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/> for loading related users.</param>
+            <param name="textFilterClientV2">The <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/> to use to filter a message's body and subject.</param>
+            <param name="messagePrivacyAuthority">Used <see cref="T:Roblox.Platform.Social.Messages.IMessagePrivacyAuthority" /> for identifying if the Message can be sent between the users.</param>
+            <param name="messageEventPublisher">The <see cref="T:Roblox.Platform.Social.Events.IMessageEventPublisher"/> to use to publish message events. 
+            Uses a <see cref="T:Roblox.Platform.Social.Events.MessageEventPublisher"/> if left null</param>
+            <param name="messageDataAccessor">The IMessageDataAccessor used to access message data. Uses 
+            a <see cref="T:Roblox.Platform.Social.MessageDataAccessor"/> if left null.</param>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageSender.MessageModerationInfo">
+            <summary>
+            Represents a set of information relevant to message moderation.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageSender.MessageModerationInfo.Body">
+            <summary>
+            The body of the message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageSender.MessageModerationInfo.Subject">
+            <summary>
+            The subject of the message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageSender.MessageModerationInfo.AuthorId">
+            <summary>
+            The user ID of the author of the message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageSender.MessageModerationInfo.RecipientId">
+            <summary>
+            The user ID of the recipient of the message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageSender.MessageModerationInfo.IsSystemMessage">
+            <summary>
+            Whether or not the message is a system message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageSender.MessageModerationInfo.MessageTypeId">
+            <summary>
+            The message type ID of the message's message type.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageSender.GetUserByUserId(System.Int64)">
+            <summary>
+            Gets a user by their user ID.
+            </summary>
+            <param name="userId">The user ID of the user to get.</param>
+            <returns>The user.</returns>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageSender.BodyCharacterLimit">
+            <summary>
+            Gets the character limit of the body of a message.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Social.MessageSender.SubjectCharacterLimit">
+            <summary>
+            Gets the character limit of the subject of a message.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageSender.UserHasVerifiedEmail(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Determines whether or not the given IUser has a verified email.
+            Explicitly here for unit testing
+            </summary>
+            <param name="user">The user to check for a verified email.</param>
+            <returns>Whether or not the user has a verified email.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageSender.Send(System.String,System.String,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.String)">
+            <summary>
+            Sends a message.
+            </summary>
+            <param name="subject">The subject of the message.</param>
+            <param name="body">The body of the message.</param>
+            <param name="senderUser">The IUser that is sending the message. Assumed to be valid</param>
+            <param name="recipientUser">The IUser that should receive the message. Assumed to be valid.</param>
+            <param name="ipAddress">IP Address of the sender</param>
+            <returns>The result of the send attempt.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageSender.SendAsReply(System.String,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Int64,System.Boolean,System.String)">
+            <summary>
+            Sends a message as a reply from one user to another.
+            </summary>
+            <param name="body">The body of the message.</param>
+            <param name="senderUser">The user that is sending the message.</param>
+            <param name="recipientUser">The user that will receive the message.</param>
+            <param name="replyMessageId">The message ID of the message being replied to.</param>
+            <param name="includePreviousMessage">Whether or not to include the previous message in the body of the message being sent.</param>
+            <param name="ipAddress">IP Address of the sender.</param>
+            <returns>A SendResult indicating the result of the request.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.MessageSender.Send(System.String,System.String,System.String,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.String)">
+            <summary>
+            Sends a message from one user to another.
+            </summary>
+            <param name="body">The body of the message.</param>
+            <param name="subject">The subject of the message.</param>
+            <param name="previousBody">The body of the message being replied to. Leave null if the previous body should not
+            be included or this is not a reply.</param>
+            <param name="senderUser">The user that is sending the message.</param>
+            <param name="recipientUser">The user that will receive the message.</param>
+            <param name="ipAddress">IP Address of the sender.</param>
+            <returns>A SendResult indicating the result of the request.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageTabType">
+            <summary>
+            Represents a grouping of messages by what kind of message they are according to pre-defined MessageQueryFilter
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageTabType.Inbox">
+            <summary>
+            Messages received in the users inbox.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageTabType.Sent">
+            <summary>
+            Messages sent by the user.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageTabType.Archive">
+            <summary>
+            Messages the user has archived from their inbox.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.MessageType">
+            <summary>
+            Represents a type of message.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageType.PrivateMessage">
+            <summary>
+            A private message that users send to one another.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.MessageType.FriendshipInvitation">
+            <summary>
+            A friendship invitation.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.PrivacySettingsCheckResult">
+            <summary>
+            Represents the result of a privacy settings check.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.PrivacySettingsCheckResult.Login">
+            <summary>
+            The check failed because the sender is not logged in.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.PrivacySettingsCheckResult.BadRecipient">
+            <summary>
+            The check failed because the recipient does not exist.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.PrivacySettingsCheckResult.BadSender">
+            <summary>
+            The check failed because the sender does not exist.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.PrivacySettingsCheckResult.SentToSelf">
+            <summary>
+            The check failed because the sender and recipient are the same user.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.PrivacySettingsCheckResult.SenderPrivacySettingsTooHigh">
+            <summary>
+            The check failed because the sender's privacy settings are too high.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.PrivacySettingsCheckResult.RecipientPrivacySettingsTooHigh">
+            <summary>
+            The check failed because the recipient's privacy settings are too high.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.PrivacySettingsCheckResult.Passed">
+            <summary>
+            The check passed successfully.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.PrivacySettingsCheckResult.FriendsServiceUnavailable">
+            <summary>
+            The Friends Service is currently unavailable
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.SendResult">
+            <summary>
+            Represents the result of a message send operation.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.UnauthorizedReply">
+            <summary>
+            The message being replied to does not exist or was not sent to the user sending the reply.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.SenderFlooded">
+            <summary>
+            The sender has send too many messages and has reached the flood checker limit.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.RecipientFlooded">
+            <summary>
+            The recipient has received too many messages and has reached the flood checker limit.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.BodyTooLong">
+            <summary>
+            The body of the messages is too long.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.BodyIsBlank">
+            <summary>
+            The body of the message is null or empty.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.SubjectIsBlank">
+            <summary>
+            The subject of the message is null or empty.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.Login">
+            <summary>
+            The sender is not logged in.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.BadRecipient">
+            <summary>
+            The recipient does not exist.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.BadSender">
+            <summary>
+            The sender does not exist.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.SentToSelf">
+            <summary>
+            The sender attempted to send the message to himself/herself.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.RecipientPrivacySettingsTooHigh">
+            <summary>
+            The recipient's privacy settings are too high.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.SenderPrivacySettingsTooHigh">
+            <summary>
+            The sender's privacy settings are too high.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.VerifySenderEmail">
+            <summary>
+            The sender must verify his/her email.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.UnknownError">
+            <summary>
+            And unknown error occured.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.Moderated">
+            <summary>
+            The message did not pass moderation.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Social.SendResult.Success">
+            <summary>
+            The message was sent successfully.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Social.SystemMessageSender">
+            <inheritdoc cref="T:Roblox.Platform.Social.Messages.ISystemMessageSender"/>
+        </member>
+        <member name="M:Roblox.Platform.Social.SystemMessageSender.#ctor(Roblox.Platform.Social.Events.IMessageEventPublisher,Roblox.Platform.Social.IMessageDataAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Social.SystemMessageSender"/> class.
+            </summary>
+            <remarks>
+            If <paramref name="messageDataAccessor"/> is left <c>null</c> a new one will be initialized.
+            </remarks>
+            <param name="messageEventPublisher">An <see cref="T:Roblox.Platform.Social.Events.IMessageEventPublisher"/>.</param>
+            <param name="messageDataAccessor">An <see cref="T:Roblox.Platform.Social.IMessageDataAccessor"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="messageEventPublisher"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Social.SystemMessageSender.Send(System.String,System.String,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Social.Messages.ISystemMessageSender.Send(System.String,System.String,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Social.SystemMessageSender.Send(System.String,System.String,Roblox.Platform.Membership.IUser,Roblox.Platform.Social.Messages.SystemMessageSenderType)">
+            <inheritdoc cref="M:Roblox.Platform.Social.Messages.ISystemMessageSender.Send(System.String,System.String,Roblox.Platform.Membership.IUser,Roblox.Platform.Social.Messages.SystemMessageSenderType)"/>
+        </member>
+        <member name="T:Roblox.Platform.Social.PlayerInteractions.IPlayerInteractionDataAccessorFactory">
+            <summary>
+            The factory interface which provide <see cref="T:Roblox.Platform.Social.PlayerInteractions.IPlayerInteractionDataAccessor"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.PlayerInteractions.IPlayerInteractionDataAccessorFactory.GetPlayerInteractionDataAccessor">
+            <summary>
+            Returns the <see cref="T:Roblox.Platform.Social.PlayerInteractions.IPlayerInteractionDataAccessor"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.PlayerInteractions.PlayerInteractionFactory.GetRecentPlayerInteractions(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Gets a paged result of a user's recent player interactions
+            </summary>
+            <param name="userId">The userID of the user you care about</param>
+            <param name="startIndex">0 based start index</param>
+            <param name="maxRows">will be capped at the maximum stored</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.PlayerInteractions.PlayerInteractionFactory.UpdateRecentPlayerInteractions(System.Int64,System.Collections.Generic.IReadOnlyCollection{System.Int64},System.Int64,System.DateTime)">
+            <summary>
+            Records player interactions between the user specified and the list of other users.
+            Also records player interactions in the reverse direction
+            </summary>
+            <param name="userId">The user who joined the server</param>
+            <param name="otherUserIds">The other users in the server</param>
+            <param name="placeId">The place ID of the place the server is running.</param>
+            <param name="interactionTime">The time at which this interaction ocurred</param>
+        </member>
+        <member name="T:Roblox.Platform.Social.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Social.Comparers.UserPresenceTypeComparer.GetSortingOrderKeysCollection">
+            <summary>
+            Return a list of PresenceType enums handled by the comparer for sorting list of User Presences
+            </summary>
+            <returns> list of presenceType <see cref="T:Roblox.Platform.Presence.PresenceType"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Social.Comparers.UserPresenceTypeComparer.Compare(Roblox.Platform.Presence.IPresence,Roblox.Platform.Presence.IPresence)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

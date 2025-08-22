@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "n5qvOpPlWRYSQTVfnoVcvBZjrKRUsY5hG3Y5Z0HgfbYZl0CrLLrS4fUu8eW9Wq4lQlJxkeg+1Viah5tDw+4G/g==",
+  "dgSpecHash": "dfjmmsgdqnk=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.CatalogItemChangePublisher\\Roblox.CatalogItemChangePublisher.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.CatalogItemChangePublisher\\Roblox.CatalogItemChangePublisher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

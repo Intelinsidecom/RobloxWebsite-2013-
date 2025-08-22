@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Demographics</AssemblyName>
@@ -30,7 +30,6 @@
     <Reference Include="Roblox.EphemeralCounters">
       <HintPath>..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
-    <Reference Include="PhoneNumbers" />
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
@@ -88,5 +87,11 @@
     <Reference Include="Roblox.Entities.Mssql">
       <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <PackageReference Include="libphonenumber-csharp" Version="9.0.12" />
   </ItemGroup>
 </Project>

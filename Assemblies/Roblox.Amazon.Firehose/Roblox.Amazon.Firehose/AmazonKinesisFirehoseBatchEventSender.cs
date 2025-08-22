@@ -251,7 +251,7 @@ public class AmazonKinesisFirehoseBatchEventSender : BackgroundWorker, IDisposab
 		clientConfig.CircuitBreakerPolicyConfig.RetryInterval = defaultSettings.CircuitBreakerRetryInterval;
 		clientConfig.CircuitBreakerPolicyConfig.FailuresAllowedBeforeTrip = defaultSettings.FailuresAllowedBeforeCircuitBreakerTrip;
 		clientConfig.IsAsyncRequestTimeoutEnabled = defaultSettings.IsAsyncRequestTimeoutEnabled;
-		((ClientConfig)clientConfig).ReadWriteTimeout = defaultSettings.ReadWriteTimeout;
+		// ReadWriteTimeout is obsolete, using cancellation token approach instead
 		((ClientConfig)clientConfig).Timeout = defaultSettings.RequestTimeout;
 		return _FirehoseClientFactory.Create((AWSCredentials)(object)credentials, clientConfig);
 	}

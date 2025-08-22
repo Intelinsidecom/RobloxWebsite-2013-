@@ -122,9 +122,9 @@ internal class Accoutrement : IRobloxEntity<long, AccoutrementDAL>, ICacheableOb
 				AvatarClient.DeleteAccoutrement(ID);
 				return;
 			}
-			catch (ServiceOperationErrorException e)
+			catch (Roblox.Avatar.Client.ServiceOperationErrorException e)
 			{
-				throw new AvatarServiceException(e.Code, (Exception)(object)e);
+				throw new AvatarServiceException(e.Code.ToString(), (Exception)(object)e);
 			}
 		}
 		OnEntityCRUD("DeleteAccoutrement");
@@ -160,9 +160,9 @@ internal class Accoutrement : IRobloxEntity<long, AccoutrementDAL>, ICacheableOb
 			{
 				return TranslateAccoutrementResult(AvatarClient.CreateAccoutrement(userId, userAssetId));
 			}
-			catch (ServiceOperationErrorException e)
+			catch (Roblox.Avatar.Client.ServiceOperationErrorException e)
 			{
-				throw new AvatarServiceException(e.Code, (Exception)(object)e);
+				throw new AvatarServiceException(e.Code.ToString(), (Exception)(object)e);
 			}
 		}
 		OnEntityCRUD("CreateNew");
@@ -209,9 +209,9 @@ internal class Accoutrement : IRobloxEntity<long, AccoutrementDAL>, ICacheableOb
 				}
 				return null;
 			}
-			catch (ServiceOperationErrorException e)
+			catch (Roblox.Avatar.Client.ServiceOperationErrorException e)
 			{
-				throw new AvatarServiceException(e.Code, (Exception)(object)e);
+				throw new AvatarServiceException(e.Code.ToString(), (Exception)(object)e);
 			}
 		}
 		OnEntityCRUD("GetAccoutrementByUserAssetID");
@@ -240,9 +240,9 @@ internal class Accoutrement : IRobloxEntity<long, AccoutrementDAL>, ICacheableOb
 				}
 				return null;
 			}
-			catch (ServiceOperationErrorException e)
+			catch (Roblox.Avatar.Client.ServiceOperationErrorException e)
 			{
-				throw new AvatarServiceException(e.Code, (Exception)(object)e);
+				throw new AvatarServiceException(e.Code.ToString(), (Exception)(object)e);
 			}
 		}
 		OnEntityCRUD("GetAccoutrementIDsByUserID");

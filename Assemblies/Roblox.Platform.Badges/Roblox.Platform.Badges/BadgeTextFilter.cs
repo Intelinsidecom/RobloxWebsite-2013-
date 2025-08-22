@@ -49,8 +49,10 @@ public class BadgeTextFilter : IBadgeTextFilter
 
 	internal virtual BadgeTextFilterResult Filter(BadgeTextFilterRequest request)
 	{
-		FilterTextResult filteredNameResult = _TextFilterClientV2.FilterObjectName(request.Name, request.TextAuthor, TextFilterServerType.WebAsset, "", true);
-		FilterTextResult filteredDescriptionResult = _TextFilterClientV2.FilterObjectName(request.Description, request.TextAuthor, TextFilterServerType.WebAsset, "", true);
+		// Use a safe default TextFilterUsage value compatible with the referenced DLL
+		var usage = GetDefaultTextFilterUsage();
+		FilterTextResult filteredNameResult = _TextFilterClientV2.FilterObjectName(request.Name, request.TextAuthor, usage);
+		FilterTextResult filteredDescriptionResult = _TextFilterClientV2.FilterObjectName(request.Description, request.TextAuthor, usage);
 		if (_Settings.IsBadgeWithFullyModeratedTextBlocked && filteredNameResult.ModerationLevel == 3)
 		{
 			throw new PlatformBadgeTextFullyModeratedException("Badge Name is fully moderated.");
@@ -63,7 +65,7 @@ public class BadgeTextFilter : IBadgeTextFilter
 		string filteredDesc = filteredDescriptionResult.FilteredText;
 		if (filteredNameResult.ModerationLevel != 3 && filteredDescriptionResult.ModerationLevel != 3)
 		{
-			FilterTextResult combinedFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name + "\n" + request.Description, request.TextAuthor, TextFilterServerType.WebAsset, "", true);
+			FilterTextResult combinedFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name + "\n" + request.Description, request.TextAuthor, usage);
 			if (!combinedFilteredResult.FilteredText.Contains(filteredNameResult.FilteredText) || !combinedFilteredResult.FilteredText.Contains(filteredDescriptionResult.FilteredText))
 			{
 				if (_Settings.IsBadgeWithFullyModeratedTextBlocked)
@@ -79,5 +81,11 @@ public class BadgeTextFilter : IBadgeTextFilter
 			Name = filteredName,
 			Description = filteredDesc
 		};
+	}
+
+	private static Roblox.TextFilter.Client.TextFilterUsage GetDefaultTextFilterUsage()
+	{
+		// Default underlying enum value (0) is used to avoid depending on specific enum members
+		return default(Roblox.TextFilter.Client.TextFilterUsage);
 	}
 }

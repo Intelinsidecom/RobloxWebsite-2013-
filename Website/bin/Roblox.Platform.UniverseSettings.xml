@@ -1,0 +1,493 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.UniverseSettings</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.UniverseSettings.Events.IUniverseSettingsEventsObserver">
+            <summary>
+            Universe events publisher.
+            
+            The publisher doesn't define a publishing interface. It should be invoked via the 
+            <see cref="T:System.IObserver`1"/> methods that are the responsibility of the 
+            implementation.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.Events.IUniverseSettingsEventsObserver.Subscribe(System.IObservable{Roblox.Platform.UniverseSettings.Events.UniverseSettingsEvent})">
+            <summary>
+            Subscribe to receive Universe Settings change events
+            </summary>
+            <param name="observable"><see cref="T:System.IObservable`1"/> for <see cref="T:Roblox.Platform.UniverseSettings.Events.UniverseSettingsEvent"/></param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.Events.IUniverseSettingsEventsObserver.Unsubscribe">
+            <summary>
+            Un-subscribe from the <see cref="T:System.IObservable`1"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.UniverseSettings.Events.UniverseSettingsEventsPublisher">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.UniverseSettings.Events.IUniverseSettingsEventsObserver"/> to get notifications of 
+            events and publishes them to a Universe settings entity changed SNS topic.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.Events.UniverseSettingsEventsPublisher.Subscribe(System.IObservable{Roblox.Platform.UniverseSettings.Events.UniverseSettingsEvent})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.Events.UniverseSettingsEventsPublisher.Unsubscribe">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.Events.UniverseSettingsEventsPublisher.OnNext(Roblox.Platform.UniverseSettings.Events.UniverseSettingsEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.Events.UniverseSettingsEventsPublisher.OnError(System.Exception)">
+            <summary>
+            This is not implemented.
+            </summary>
+            <param name="error"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.Events.UniverseSettingsEventsPublisher.OnCompleted">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.UniverseSettings.UniverseAvatarAssetOverrideFactory">
+            <summary>
+            Factory to manipulate Universe Assets in UniverseSettings
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.UniverseSettings.UniverseAvatarAssetOverrideFactory.AllowedAssetTypes">
+            <summary>
+            A collection of asset types allowed to be overridden
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseAvatarAssetOverrideFactory.#ctor(Roblox.Platform.Assets.IAssetFactory,Roblox.Platform.UniverseSettings.UniverseAvatarAssetOverrideEntityFactory)">
+            <summary>
+            Constructs a new UniverseAvatarAssetOverrideFactory
+            <param name="assetFactory">The <see cref="T:Roblox.Platform.Assets.IAssetFactory"/></param>
+            <param name="universeAvatarAssetOverrideEntityFactory">The <see cref="T:Roblox.Platform.UniverseSettings.UniverseAvatarAssetOverrideEntityFactory"/></param>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseAvatarAssetOverrideFactory.CreateOrUpdate(System.Int64,System.Int64,System.Int32,System.Boolean)">
+            <summary>
+            Creates a Avatar Asset Overrides for a given universeId if not in db. Updates the existing Asset Override if in db.
+            If PlayerChoice is true, then the AssetID will be zero'ed out and no asset or assetType validation will run.
+            ^ This is to make data consistent. The client should have checks on if the assetID is zero and default to the default asset (which is defined in the client).
+            </summary>
+            <param name="universeId">The Id of the Universe to set Asset Override for</param>
+            <param name="assetId">The assetId to update the Avatar Asset Override to</param>
+            <param name="assetTypeId">The assetTypeId to update the Avatar Asset Override to</param>
+            <param name="isPlayerChoice">Whteher or not the Avatar Asset Override Player Choice</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseAvatarAssetOverrideFactory.GetAllUniverseAvatarAssetOverridesByUniverseId(System.Int64)">
+            <summary>
+            Gets the maximum number of Avatar Asset Overrides allowed for a given universeId
+            </summary>
+            <param name="universeId">The Id of the Universe to get Asset Overrides for</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseAvatarAssetOverrideFactory.GetUniverseAssetOverride(System.Int64)">
+            <summary>
+            Gets the Avatar Asset Override from the db
+            </summary>
+            <param name="id">The Id of the Avatar Asset override to get</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.UniverseSettings.UniverseAvatarScaleFactory.SetUniverseAvatarScales(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.Outfits.Scale,Roblox.Platform.Outfits.Scale)" -->
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarAssetOverrideEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarAssetOverrideEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarAssetOverrideEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarJointPositioningTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarJointPositioningTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarJointPositioningTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarJointPositioningTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarJointPositioningTypeEntity"/> with the given value.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarJointPositioningTypeEntity"/> with the given value.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarBodyTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarBodyTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarBodyTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarBodyTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarBodyTypeEntity"/> with the given value.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarBodyTypeEntity"/> with the given value.</returns>
+        </member>
+        <member name="T:Roblox.Platform.UniverseSettings.UniverseAccessDomainFactories">
+            <summary>
+            Domain interfaces container for classes that deal with universe access
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.UniverseSettings.UniverseAccessDomainFactories.UniverseAccessChanger">
+            <summary>
+            The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAccessChanger"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseAccessDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.Platform.Assets.IPlaceFactory,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Universes.IUniversePublicizer,Roblox.Games.Client.IGamesAuthority,Roblox.Platform.Games.IMatchmakingContextFactory,System.Func{Roblox.Platform.Membership.IUser},Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initialize a new instance of the <see cref="T:Roblox.Platform.UniverseSettings.UniverseAccessDomainFactories"/> class. This is the primary constructor. If you have special SNS requirements, see the other constructor.
+            </summary>
+            <param name="agentFactory"></param>
+            <param name="placeFactory"></param>
+            <param name="universeFactory"></param>
+            <param name="gamesAuthority"></param>
+            <param name="matchmakingContextFactory"></param>
+            <param name="getAuditingUser"></param>
+            <param name="logger"></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseAccessDomainFactories.#ctor(Roblox.Agents.IAgentFactory,Roblox.Platform.Assets.IPlaceFactory,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Universes.IUniversePublicizer,Roblox.Games.Client.IGamesAuthority,Roblox.Platform.Games.IMatchmakingContextFactory,System.Func{Roblox.Platform.Membership.IUser},Roblox.Platform.UniverseSettings.Events.IUniverseSettingsEventsObserver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.UniverseSettings.UniverseAccessDomainFactories"/> class. Use this constructor when you need to do some dependency injection
+            to override normal behavior.
+            </summary>
+            <param name="agentFactory">The <see cref="T:Roblox.Agents.IAgentFactory"/>.</param>
+            <param name="placeFactory">The <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/>.</param>
+            <param name="universeFactory">The <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/>.</param>
+            <param name="gamesAuthority">The <see cref="T:Roblox.Games.Client.IGamesAuthority"/>.</param>
+            <param name="matchmakingContextFactory">The <see cref="T:Roblox.Platform.Games.IMatchmakingContextFactory"/>.</param>
+            <param name="getAuditingUser">Returns an <see cref="T:Roblox.Platform.Membership.IUser"/> used for things like group audit logging when activating, or deactivating a universe.</param>
+            <param name="universeSettingsEventsObserver">Override to inject your own <see cref="T:Roblox.Platform.UniverseSettings.Events.IUniverseSettingsEventsObserver"/>. You should have a very good reason
+            (infinite change event loops) for example, when modifying this.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAccessChanger.ActivateUniverse(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Activates an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="universe"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="universe"/> does not have a root place.</exception>
+            <exception cref="T:Roblox.Platform.Moderation.ModeratedOperationException">The <see cref="T:Roblox.Platform.Universes.IUniverse"/> is moderated, or the group it belongs to is locked (if owned by a group.)</exception>
+            <exception cref="!:CreatorHasTooManyActiveUniversesException">The creator of the <see cref="T:Roblox.Platform.Universes.IUniverse"/> is at it's max activation limit.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAccessChanger.DeactivateUniverse(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Deactivates a <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="universe"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="universe"/> does not have a root place.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarAnimationTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarAnimationTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarAnimationTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarAnimationTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarAnimationTypeEntity"/> with the given value.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarAnimationTypeEntity"/> with the given value.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarCollisionTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarCollisionTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarCollisionTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarCollisionTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarCollisionTypeEntity"/> with the given value.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarCollisionTypeEntity"/> with the given value.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetUniverseAvatarSettings(System.Int64)">
+            <summary>
+            If you want to get all UniverseAvatarSettings, use this and do fewer db hits.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseAvatarAssetOverrides(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return an empty array.
+            Otherwise, the collection of assetOverrides for this universe.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseMinScale(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return the default universeAvatarType.
+            Otherwise, getOrCreate a min scale entity for this universe, with default values.
+            Then return either the existing setting or the default.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseMaxScale(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return the default universeAvatarType.
+            Otherwise, getOrCreate a max scale entity for this universe, with default values.
+            Then return either the existing setting or the default.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseAvatarType(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return the default universeAvatarType.
+            Otherwise, getOrCreate a universeSettings entity for this universe, with default values.
+            Then return either the existing setting or the default.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseScaleType(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return the default universeScaleType.
+            Otherwise, getOrCreate a universeSettings entity for this universe, with default values.
+            Then return either the existing setting or the default.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseAvatarAnimationType(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return the default universeAvatarAnimationType.
+            Otherwise, getOrCreate a universeSettings entity for this universe, with default values.
+            Then return either the existing setting or the default.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseAvatarCollisionType(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return the default universeAvatarCollisionType.
+            Otherwise, getOrCreate a universeSettings entity for this universe, with default values.
+            Then return either the existing setting or the default.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseAvatarBodyType(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return the default universeAvatarBodyType.
+            Otherwise, getOrCreate a universeSettings entity for this universe, with default values.
+            Then return either the existing setting or the default.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.GetValidUniverseAvatarJointPositioningType(System.Nullable{System.Int64})">
+            <summary>
+            If universe is null just return the default universeAvatarJointPositioningType.
+            Otherwise, getOrCreate a universeSettings entity for this universe, with default values.
+            Then return either the existing setting or the default.
+            </summary>
+            <param name="universeId">The Id of the universe.</param>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.SetUniverseAvatarType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarType)">
+            <summary>
+            UniverseAvatarSettings entities may not have existed for this universe, or may have had 0/null as the typeIDs.
+            </summary>
+            <returns>Returns whether the type actually changed from what clients would have received before.
+            This is complicated because game servers have been served default values if the dev has never edited this setting before.</returns>
+            <param name="user">The user who is modifying the universe. This user must own the universe they are attempting to modify.</param>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="universeAvatarType">The type of Avatars that will be allowed by the universe.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException">This exception is thrown when the user does not have permissions to modify the Universe's Avatar Settings.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.SetUniverseScaleType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseScaleType)">
+            <summary>
+            UniverseAvatarSettings entities may not have existed for this universe, or may have had 0/null as the typeIDs.
+            </summary>
+            <param name="user">The user who is modifying the universe. This user must own the universe they are attempting to modify.</param>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="universeScaleType">The type of scales that will be allowed by the universe.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException">This exception is thrown when the user does not have permissions to modify the Universe's Avatar Settings.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.SetUniverseAvatarAnimationType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarAnimationType)">
+            <summary>
+            Sets the AnimationType for the given <see param="universeId"/> if the <see param="user"/> has permission to do so, i.e. if the user owns the universe.
+            </summary>
+            <param name="user">The user who is modifying the universe. This user must own the universe they are attempting to modify.</param>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="universeAvatarAnimationType">The setting which controls whether users can bring their own animations into games.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException">This exception is thrown when the user does not have permissions to modify the Universe's Avatar Settings.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.SetUniverseAvatarCollisionType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarCollisionType)">
+            <summary>
+            Sets the CollisionType for the given <see param="universeId"/> if the <see param="user"/> has permission to do so, i.e. if the user owns the universe.
+            </summary>
+            <param name="user">The user who is modifying the universe. This user must own the universe they are attempting to modify.</param>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="universeAvatarCollisionType">The type of bounding boxes used by the universe for collisions.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException">This exception is thrown when the user does not have permissions to modify the Universe's Avatar Settings.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.SetUniverseAvatarBodyType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarBodyType)">
+            <summary>
+            Sets the BodyType for the given <see param="universeId"/> if the <see param="user"/> has permission to do so, i.e. if the user owns the universe.
+            </summary>
+            <param name="user">The user who is modifying the universe. This user must own the universe they are attempting to modify.</param>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="universeAvatarBodyType">Whether anthro body types allowed by the universe.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException">This exception is thrown when the user does not have permissions to modify the Universe's Avatar Settings.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.SetUniverseAvatarJointPositioningType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarJointPositioningType)">
+            <inheritdoc />
+            <summary>
+            Sets the JointPostioningType for the given <see param="universeId"/> if the <see param="user"/> has permission to do so, i.e. if the user owns the universe.
+            </summary>
+            <param name="user">The user who is modifying the universe. This user must own the universe they are attempting to modify.</param>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="universeAvatarJointPositioningType">Whether joint positions on the avatar are standard rig or artist's intent for the given universe.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException">This exception is thrown when the user does not have permissions to modify the Universe's Avatar Settings.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.SetUniverseAvatarMinScale(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.Outfits.Scale)">
+            <summary>
+            Sets the UniverseAvatarMinScale for the given <see param="universeId"/> if the <see param="user"/> has permission to do so, i.e. if the user owns the universe.
+            </summary>
+            <param name="user">The user who is modifying the universe. This user must own the universe they are attempting to modify.</param>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="clampedMinScale">The min scales to set.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException">This exception is thrown when the user does not have permissions to modify the Universe's Avatar Settings.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseSettingsFactory.SetUniverseAvatarMaxScale(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.Outfits.Scale)">
+            <summary>
+            Sets the UniverseAvatarMaxScale for the given <see param="universeId"/> if the <see param="user"/> has permission to do so, i.e. if the user owns the universe.
+            <param name="user">The user who is modifying the universe. This user must own the universe they are attempting to modify.</param>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="clampedMaxScale">The max scales to set.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException">This exception is thrown when the user does not have permissions to modify the Universe's Avatar Settings.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetUniverseAvatarSettings(System.Int64)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseAvatarAssetOverrides(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseMinScale(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseMaxScale(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseAvatarType(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseScaleType(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseAvatarAnimationType(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseAvatarCollisionType(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseAvatarBodyType(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.GetValidUniverseAvatarJointPositioningType(System.Nullable{System.Int64})">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseAvatarType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarType)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseAvatarTypeByAdmin(System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarType)">
+            <summary>
+            UniverseAvatarSettings entities may not have existed for this universe, or may have had 0/null as the typeIDs.
+            </summary>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="universeAvatarType">The type of Avatars that will be allowed by the universe.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseScaleType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseScaleType)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseScaleTypeByAdmin(System.Int64,Roblox.Platform.UniverseSettings.UniverseScaleType)">
+            <summary>
+            UniverseAvatarSettings entities may not have existed for this universe, or may have had 0/null as the typeIDs.
+            </summary>
+            <param name="universeId">The Id of the universe to modify.</param>
+            <param name="universeScaleType">The type of scales that will be allowed by the universe.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">This exception is thrown when the a universe doesn't exist for the given UniverseId or the universeId is invalid.</exception>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseAvatarAnimationType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarAnimationType)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseAvatarCollisionType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarCollisionType)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseAvatarBodyType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarBodyType)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseAvatarJointPositioningType(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.UniverseSettings.UniverseAvatarJointPositioningType)">
+            <inheritdocs />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseAvatarMinScale(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.Outfits.Scale)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.UniverseSettingsFactory.SetUniverseAvatarMaxScale(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.Outfits.Scale)">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Platform.UniverseSettings.UniverseSettingsDomainFactories.UniverseAvatarTypeEntityFactory">
+            <summary>
+            storage for per-universe related settings.  For now, there are only avatar-related settings.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.UniverseSettings.UniverseSettingsDomainFactories.UniverseAvatarAssetOverrideFactory">
+            <summary>
+            Factory to manipulate AssetOverrides in UniverseAvatarSettings
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.UniverseSettings.UniverseSettingsDomainFactories.UniverseAvatarScaleFactory">
+            <summary>
+            Factory to manipulate AvatarScales in UniverseAvatarSettings
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.UniverseSettings.UniverseScaleType">
+            <summary>
+            https://confluence.roblox.com/display/PLATFORM/Avatar+Project+2016
+            Matches up with RobloxAvatars.UniverseScaleTypes
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseAvatarTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarTypeEntity"/> with the given value
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseAvatarTypeEntity"/> with the given value
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseScaleTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.UniverseSettings.IUniverseScaleTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseScaleTypeEntity"/> with the given ID, or null if none existed.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.UniverseSettings.IUniverseScaleTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.UniverseSettings.IUniverseScaleTypeEntity"/> with the given value
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.UniverseSettings.IUniverseScaleTypeEntity"/> with the given value
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.UniverseSettings.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

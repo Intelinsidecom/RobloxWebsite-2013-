@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "jSuHgPvd9YtnL3WDp4XOX6IQId7Eb5z2CCdL/OzgDreN9ToxqFwWSYJ817mQsz01prAVTC2Pi6kBPYM/n7Z1Pg==",
+  "dgSpecHash": "xJ9CkBYMxaU=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Drawing\\Roblox.Drawing.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Drawing\\Roblox.Drawing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\magick.net-q8-anycpu\\14.7.0\\magick.net-q8-anycpu.14.7.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\magick.net.core\\14.7.0\\magick.net.core.14.7.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

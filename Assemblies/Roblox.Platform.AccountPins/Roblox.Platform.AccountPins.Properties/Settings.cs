@@ -1,8 +1,9 @@
+extern alias ConfMan;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
-using System.Configuration;
+using ConfManSystemConfiguration = ConfMan::System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
@@ -14,53 +15,53 @@ namespace Roblox.Platform.AccountPins.Properties;
 /// </summary>
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-[SettingsProvider(typeof(Provider))]
-public sealed class Settings : ApplicationSettingsBase
+[ConfManSystemConfiguration.SettingsProvider(typeof(Provider))]
+public sealed class Settings : ConfManSystemConfiguration.ApplicationSettingsBase
 {
-	private static Settings defaultInstance = (Settings)SettingsBase.Synchronized(new Settings());
+	private static Settings defaultInstance = (Settings)ConfManSystemConfiguration.SettingsBase.Synchronized(new Settings());
 
 	private readonly ConcurrentDictionary<string, object> _Properties = new ConcurrentDictionary<string, object>();
 
 	public static Settings Default => defaultInstance;
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("False")]
+	[ConfManSystemConfiguration.DefaultSettingValue("False")]
 	public bool IsAccountPinEnabledForSoothSayers => (bool)this["IsAccountPinEnabledForSoothSayers"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("False")]
+	[ConfManSystemConfiguration.DefaultSettingValue("False")]
 	public bool IsAccountPinEnabledForRegularUser => (bool)this["IsAccountPinEnabledForRegularUser"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("00:05:00")]
+	[ConfManSystemConfiguration.DefaultSettingValue("00:05:00")]
 	public TimeSpan PinEntryExpiration => (TimeSpan)this["PinEntryExpiration"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("4")]
+	[ConfManSystemConfiguration.DefaultSettingValue("4")]
 	public int AccountPinLength => (int)this["AccountPinLength"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("0123456789")]
+	[ConfManSystemConfiguration.DefaultSettingValue("0123456789")]
 	public string AccountPinCharacters => (string)this["AccountPinCharacters"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("5")]
+	[ConfManSystemConfiguration.DefaultSettingValue("5")]
 	public int AccountPinInputFloodCheckerLimit => (int)this["AccountPinInputFloodCheckerLimit"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("00:20:00")]
+	[ConfManSystemConfiguration.DefaultSettingValue("00:20:00")]
 	public TimeSpan AccountPinInputFloodCheckerExpiry => (TimeSpan)this["AccountPinInputFloodCheckerExpiry"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("False")]
+	[ConfManSystemConfiguration.DefaultSettingValue("False")]
 	public bool IsAccountPinHashesTableAuditingEnabled => (bool)this["IsAccountPinHashesTableAuditingEnabled"];
 
 	/// <summary>
@@ -96,7 +97,7 @@ public sealed class Settings : ApplicationSettingsBase
 	/// </summary>
 	/// <param name="sender">The source of the event.</param>
 	/// <param name="e">A <see cref="T:System.Configuration.SettingsLoadedEventArgs" /> that contains the event data.</param>
-	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
+	protected override void OnSettingsLoaded(object sender, ConfManSystemConfiguration.SettingsLoadedEventArgs e)
 	{
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, this);

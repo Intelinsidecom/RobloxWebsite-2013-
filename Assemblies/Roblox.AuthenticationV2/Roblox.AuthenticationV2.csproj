@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.AuthenticationV2</AssemblyName>
@@ -15,6 +15,9 @@
     <Reference Include="Roblox.Web.Authentication">
       <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
     </Reference>
+    <Reference Include="Roblox.Web">
+      <HintPath>..\..\Website\bin\Roblox.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
@@ -23,7 +26,7 @@
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.Client">
       <HintPath>..\..\Website\bin\Roblox.Http.Client.dll</HintPath>
@@ -51,8 +54,12 @@
       <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.0.3" />
   </ItemGroup>
 </Project>

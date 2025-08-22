@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.AuthenticationV2</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.AuthenticationV2.Client.AuthenticationV2Client">
+            <inheritdoc cref="T:Roblox.AuthenticationV2.Client.IAuthenticationV2Client"/>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.Client.AuthenticationV2Client.#ctor(Roblox.Http.Client.IHttpClient,Roblox.Http.Client.IHttpRequestBuilder)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.AuthenticationV2.Client.AuthenticationV2Client"/>.
+            </summary>
+            <param name="httpClient">An <see cref="T:Roblox.Http.Client.IHttpClient"/>.</param>
+            <param name="httpRequestBuilder">An <see cref="T:Roblox.Http.Client.IHttpRequestBuilder"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="httpClient"/>
+            - <paramref name="httpRequestBuilder"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.Client.AuthenticationV2Client.SyncRobloxUserSession(System.String,System.String,System.Guid,System.DateTime,System.String,System.TimeSpan)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.Client.AuthenticationV2Client.DeleteRobloxUserSession(System.Guid)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.Client.AuthenticationV2Client.DeleteAllRobloxUserSessions(System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.Client.AuthenticationV2HttpClientBuilder">
+            <inheritdoc />
+            <summary>
+            A class for building <see cref="T:Roblox.Http.Client.IHttpClient"/>s for the AuthenticationV2 Service
+            </summary>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.Client.AuthenticationV2HttpClientBuilder.#ctor(Roblox.AuthenticationV2.Client.Properties.ISettings,Roblox.Instrumentation.ICounterRegistry,System.Net.CookieContainer)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Http.Client.HttpClientBuilder" />.
+            </summary>
+            <param name="clientSettings">The <see cref="T:Roblox.AuthenticationV2.Client.Properties.ISettings" />.</param>
+            <param name="counterRegistry"><see cref="T:Roblox.Instrumentation.ICounterRegistry" /></param>
+            <param name="cookieContainer">The <see cref="T:System.Net.CookieContainer" /> for the requests.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="clientSettings" />
+            - <paramref name="counterRegistry" />
+            </exception>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.Client.IAuthenticationV2Client">
+            <summary>
+            A client to communicate with the AuthenticationV2 Service
+            </summary>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.Client.IAuthenticationV2Client.SyncRobloxUserSession(System.String,System.String,System.Guid,System.DateTime,System.String,System.TimeSpan)">
+            <summary>
+            Syncs Roblox User sessions with AuthenticationV2
+            </summary>
+            <param name="type">The type of user</param>
+            <param name="user">Unique identifier for the user</param>
+            <param name="token">Unique identifier for this session</param>
+            <param name="expiration">When this session should expire?</param>
+            <param name="ip">The Ip this session started on</param>
+            <param name="timeToLive">How long should this session live?</param>
+            <returns>AuthenticationV2 External Jwt representation of the provided session.</returns>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.Client.IAuthenticationV2Client.DeleteRobloxUserSession(System.Guid)">
+            <summary>
+            Deletes the Roblox User session from AuthenticationV2
+            </summary>
+            <param name="token">Unique identifier for the session</param>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.Client.IAuthenticationV2Client.DeleteAllRobloxUserSessions(System.String,System.String)">
+            <summary>
+            Deletes all Roblox User sessions from AuthenticationV2 for the specified user
+            </summary>
+            <param name="type">The type of user</param>
+            <param name="user">Unique identifier for the user</param>
+        </member>
+        <member name="E:Roblox.AuthenticationV2.Client.Properties.Settings.SettingChanged">
+            <inheritdoc cref="E:Roblox.Http.Client.IHttpClientSettings.SettingChanged"/>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.Client.Properties.ISettings">
+            <summary>
+            Settings specific to an <see cref="T:Roblox.Http.Client.IHttpClient"/> used for the AuthenticationV2 Service.
+            </summary>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.Properties.ISettings.Endpoint">
+             <summary>
+             The url base for the infrastructure service.
+             </summary>
+             <remarks>
+             Due to the way this value is used, anything after the FQDN will be dropped.
+             E.g. http://example.com/route will simply drop the /route portion.
+            
+             This is important because the Authentication service is behind Traefik and does not have a unique FQDN.
+             The full route must be specified in the client.
+             </remarks>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.Properties.ISettings.ClientName">
+            <summary>
+            The client name.
+            </summary>
+            <remarks>
+            This value is used primarily for circuit breaking and performance counters.
+            It should be entirely alphanumeric.
+            </remarks>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.Client.DeleteAllRobloxUserSessionsRequest">
+            <summary>
+            Request model for /DeleteAllRobloxUserSessions
+            </summary>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.DeleteAllRobloxUserSessionsRequest.Type">
+            <summary>
+            The type of user to delete sessions for
+            </summary>
+            <example>RobloxUser</example>
+            <example>RobloxUser_ST3</example>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.DeleteAllRobloxUserSessionsRequest.User">
+            <summary>
+            Unique identifier for the user
+            </summary>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.Client.DeleteRobloxUserSessionRequest">
+            <summary>
+            Request model for /DeletRobloxUserSession
+            </summary>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.DeleteRobloxUserSessionRequest.Token">
+            <summary>
+            Unique identifier for the session to delete
+            </summary>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.Client.SyncRobloxUserSessionRequest">
+            <summary>
+            Request model for /SyncRobloxUserSession
+            </summary>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.SyncRobloxUserSessionRequest.Type">
+            <summary>
+            The type of user sync to session for
+            </summary>
+            <example>RobloxUser</example>
+            <example>RobloxUser_ST3</example>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.SyncRobloxUserSessionRequest.User">
+            <summary>
+            Unique identifier for the user
+            </summary>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.SyncRobloxUserSessionRequest.Token">
+            <summary>
+            Unique identifier for this session
+            </summary>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.SyncRobloxUserSessionRequest.Expiration">
+            <summary>
+            When this session should expire
+            </summary>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.SyncRobloxUserSessionRequest.IPAddressHash">
+            <summary>
+            The IP this session started on
+            </summary>
+        </member>
+        <member name="P:Roblox.AuthenticationV2.Client.SyncRobloxUserSessionRequest.TimeToLive">
+            <summary>
+            How long this session should live
+            </summary>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.AuthenticationV2Synchronizer">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Synchronizer.#ctor(Roblox.EventLog.ILogger,Roblox.AuthenticationV2.IAuthenticationV2Telemetry,Roblox.Web.Authentication.WebAuthenticator,Roblox.AuthenticationV2.Client.IAuthenticationV2Client,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Membership.IRoleSetValidator,Roblox.AuthenticationV2.IIPAddressHasher)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.AuthenticationV2.AuthenticationV2Synchronizer"/>
+            </summary>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="authenticationV2Telemetry">An <see cref="T:Roblox.AuthenticationV2.IAuthenticationV2Telemetry"/></param>
+            <param name="webAuthenticator">A <see cref="T:Roblox.Web.Authentication.WebAuthenticator"/>.  This cannot be an <see cref="T:Roblox.Web.Authentication.IWebAuthenticator"/> because we need access to events that are internal.</param>
+            <param name="authenticationV2Client">An <see cref="T:Roblox.AuthenticationV2.Client.IAuthenticationV2Client"/></param>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <param name="roleSetValidator">An <see cref="T:Roblox.Platform.Membership.IRoleSetValidator"/></param>
+            <param name="ipAddressHasher">An <see cref="T:Roblox.AuthenticationV2.IIPAddressHasher"/></param>
+            <exception cref="T:System.ArgumentNullException">
+                <paramref name="logger"/>
+                <paramref name="authenticationV2Telemetry"/>
+                <paramref name="webAuthenticator"/>
+                <paramref name="authenticationV2Client"/>
+                <paramref name="userFactory"/>
+                <paramref name="roleSetValidator"/>
+                <paramref name="ipAddressHasher"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Synchronizer.PreSendRequestHeaders(System.Web.HttpRequestBase,System.Web.HttpResponseBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Synchronizer.SyncRobloxUserSession(Roblox.Web.Authentication.RobloxAuthenticationCookie)">
+            <summary>
+            Synchronizes an AuthenticationV1 session with AuthenticationV2
+            </summary>
+            <param name="authCookie">A <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie"/></param>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Synchronizer.DeleteRobloxUserSession(Roblox.Web.Authentication.RobloxAuthenticationCookie)">
+            <summary>
+            Deletes an AuthenticationV2 session for the specified <paramref name="session"/>
+            </summary>
+            <param name="authCookie">A <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie"/></param>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Synchronizer.DeleteAllRobloxUserSessions(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Deletes all AuthenticationV2 sessions for the specified <paramref name="user"/>
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Synchronizer.WriteAuthenticationV2Cookie(System.String)">
+            <summary>
+            Writes the AuthenticationV2 cookie
+            </summary>
+            <param name="encodedJwt">The AuthenticationV2 External Jwt representation of a session</param>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Synchronizer.DeleteAuthenticationV2Cookie">
+            <summary>
+            Deletes the AuthenticationV2 cookie
+            </summary>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.Counter">
+            <summary>
+            AuthenticationV2 flows to track
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Counter.SyncRobloxUserSession">
+            <summary>
+            Flow related to /SyncRobloxUserSession
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Counter.DeleteRobloxUserSession">
+            <summary>
+            Flow related to /DeleteRobloxUserSession
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Counter.DeleteAllRobloxUserSessions">
+            <summary>
+            Flow related to /DeleteAllRobloxUserSessions
+            </summary>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.Instance">
+            <summary>
+            AuthenticationV2 flow occurrences to track
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.Success">
+            <summary>
+            The flow was successful
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.Failure">
+            <summary>
+            The flow failed
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.DisabledIntent">
+            <summary>
+            The flow would have been processed, but is disabled
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.NullCookie">
+            <summary>
+            The flow was not provided a valid <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie"/>
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.NullUser">
+            <summary>
+            The user provided in the <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie"/> does not exist
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.NullSession">
+            <summary>
+            The session provided in the <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie"/> does not exist
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.BadToken">
+            <summary>
+            The session token provided in the <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie"/> is malformed
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.SessionWithoutExpiration">
+            <summary>
+            The session provided in the <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie"/> is missing an expiration
+            </summary>
+        </member>
+        <member name="F:Roblox.AuthenticationV2.Instance.BadIpAddress">
+            <summary>
+            The session provided in the <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie"/> has an invalid IPAddress
+            </summary>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.AuthenticationV2Telemetry">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Telemetry.#ctor(Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.AuthenticationV2.AuthenticationV2Telemetry"/>
+            </summary>
+            <param name="counterRegistry">An <see cref="T:Roblox.Instrumentation.ICounterRegistry"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="counterRegistry"/></exception>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.AuthenticationV2Telemetry.Increment(Roblox.AuthenticationV2.Counter,Roblox.AuthenticationV2.Instance)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.AuthenticationV2.IPAddressHasher">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.AuthenticationV2.IPAddressHasher.#ctor">
+            <summary>
+            Creates an new see <see cref="T:Roblox.AuthenticationV2.IPAddressHasher"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.IPAddressHasher.SHA256(System.Net.IPAddress)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.AuthenticationV2.IAuthenticationV2Synchronizer">
+            <summary>
+            Synchronizes AuthenticationV1 sessions with AuthenticationV2
+            </summary>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.IAuthenticationV2Synchronizer.PreSendRequestHeaders(System.Web.HttpRequestBase,System.Web.HttpResponseBase)">
+            <summary>
+            Handler to run at during Application_PreSendRequestHeaders
+            Ensures that if an AuthenticationV1 session exist it is synchronized with AuthenticationV2 in the cases when the AuthenticationV1 session is not modified.
+            </summary>
+            <param name="request">The <see cref="T:System.Web.HttpRequestBase"/></param>
+            <param name="response">The <see cref="T:System.Web.HttpResponseBase"/></param>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.IAuthenticationV2Telemetry">
+            <summary>
+            Writes telemetry for AuthenticationV2
+            </summary>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.IAuthenticationV2Telemetry.Increment(Roblox.AuthenticationV2.Counter,Roblox.AuthenticationV2.Instance)">
+            <summary>
+            Increments the specified counter instance
+            </summary>
+            <param name="counter">The counter to increment</param>
+            <param name="instance">The instance to increment</param>
+        </member>
+        <member name="T:Roblox.AuthenticationV2.IIPAddressHasher">
+            <summary>
+            Computes hashes of <see cref="T:System.Net.IPAddress"/>es
+            </summary>
+        </member>
+        <member name="M:Roblox.AuthenticationV2.IIPAddressHasher.SHA256(System.Net.IPAddress)">
+            <summary>
+            Computes a SHA256 hash of the given <paramref name="ip"/>
+            </summary>
+            <param name="ip">The <see cref="T:System.Net.IPAddress"/> to hash.</param>
+            <returns>A Base64 encoded SHA256 hash of <paramref name="ip"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="ip"/></exception>
+        </member>
+    </members>
+</doc>

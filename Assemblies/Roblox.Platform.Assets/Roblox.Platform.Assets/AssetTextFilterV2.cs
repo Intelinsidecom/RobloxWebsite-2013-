@@ -63,12 +63,12 @@ internal class AssetTextFilterV2 : IAssetTextFilter
 		string room = Guid.NewGuid().ToString();
 		try
 		{
-			FilterTextResult nameFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name, request.ClientTextAuthor, TextFilterServerType.WebAsset, room, false);
+			FilterTextResult nameFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name, request.ClientTextAuthor, TextFilterUsage.Asset, room, false);
 			if (IsAssetWithFullyModeratedTextBlocked && nameFilteredResult.ModerationLevel == 3)
 			{
 				throw new PlatformAssetTextFullyModeratedException("Asset Name is fully moderated.");
 			}
-			FilterTextResult descriptionFilteredResult = _TextFilterClientV2.FilterObjectName(request.Description, request.ClientTextAuthor, TextFilterServerType.WebAsset, room, false);
+			FilterTextResult descriptionFilteredResult = _TextFilterClientV2.FilterObjectName(request.Description, request.ClientTextAuthor, TextFilterUsage.Asset, room, false);
 			if (IsAssetWithFullyModeratedTextBlocked && descriptionFilteredResult.ModerationLevel == 3)
 			{
 				throw new PlatformAssetTextFullyModeratedException("Asset Description is fully moderated.");
@@ -85,19 +85,19 @@ internal class AssetTextFilterV2 : IAssetTextFilter
 	{
 		try
 		{
-			FilterTextResult nameFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name, request.ClientTextAuthor, TextFilterServerType.WebAsset, "", true);
+			FilterTextResult nameFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name, request.ClientTextAuthor, TextFilterUsage.Asset, "", true);
 			if (IsAssetWithFullyModeratedTextBlocked && nameFilteredResult.ModerationLevel == 3)
 			{
 				throw new PlatformAssetTextFullyModeratedException("Asset Name is fully moderated.");
 			}
-			FilterTextResult descriptionFilteredResult = _TextFilterClientV2.FilterObjectName(request.Description, request.ClientTextAuthor, TextFilterServerType.WebAsset, "", true);
+			FilterTextResult descriptionFilteredResult = _TextFilterClientV2.FilterObjectName(request.Description, request.ClientTextAuthor, TextFilterUsage.Asset, "", true);
 			if (IsAssetWithFullyModeratedTextBlocked && descriptionFilteredResult.ModerationLevel == 3)
 			{
 				throw new PlatformAssetTextFullyModeratedException("Asset Description is fully moderated.");
 			}
 			if (nameFilteredResult.ModerationLevel != 3 && descriptionFilteredResult.ModerationLevel != 3)
 			{
-				FilterTextResult combinedFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name + "\n" + request.Description, request.ClientTextAuthor, TextFilterServerType.WebAsset, "", true);
+				FilterTextResult combinedFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name + "\n" + request.Description, request.ClientTextAuthor, TextFilterUsage.Asset, "", true);
 				if (nameFilteredResult.ModerationLevel == 1 && descriptionFilteredResult.ModerationLevel == 1 && combinedFilteredResult.ModerationLevel == 1)
 				{
 					return new AssetTextFilterResult(nameFilteredResult.FilteredText, descriptionFilteredResult.FilteredText);

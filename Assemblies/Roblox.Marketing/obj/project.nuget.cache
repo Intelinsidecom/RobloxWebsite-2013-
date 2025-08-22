@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "O4MILeRtq6YBXTzwHf2jFHEXsP1qqpzfhfGwx4hCsYcvKHskJEOSntaqzXGkeSJMe9kaLb+KZXbcbzA8F3PxCg==",
+  "dgSpecHash": "J4nJSRHMIe8=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Marketing\\Roblox.Marketing.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Marketing\\Roblox.Marketing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

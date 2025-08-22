@@ -102,7 +102,10 @@ public abstract class RobloxCookieBase
 			cookie.Expires = DateTime.Now.Add(_ExpirationLength.Value);
 		}
 		cookie.Path = Path;
-		cookie.Domain = Domain;
+		if (!string.IsNullOrEmpty(Domain))
+		{
+			cookie.Domain = Domain;
+		}
 		cookie.HttpOnly = HttpOnly;
 		NameValueCollection keyValueCollection = SerializeValues();
 		string[] allKeys = keyValueCollection.AllKeys;
@@ -121,7 +124,10 @@ public abstract class RobloxCookieBase
 		HttpCookie cookie = new HttpCookie(Name);
 		cookie.Expires = DateTime.Now.AddDays(-1.0);
 		cookie.Path = Path;
-		cookie.Domain = Domain;
+		if (!string.IsNullOrEmpty(Domain))
+		{
+			cookie.Domain = Domain;
+		}
 		cookie.HttpOnly = HttpOnly;
 		cookie.Value = null;
 		HttpContext.Current.Response.Cookies.Set(cookie);

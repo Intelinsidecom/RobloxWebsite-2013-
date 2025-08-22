@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using Roblox.Agents;
 using Roblox.Assets.Client;
+using ClientAssetType = Roblox.Assets.Client.AssetType;
 using Roblox.Data;
 using Roblox.DataV2.Core;
 using Roblox.Platform.Assets.Entities;
@@ -136,7 +137,7 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 		}
 		if (_AssetVersionsConfigurationProvider.IsPublishToAssetPublishedVersionsEnabledForAssetType(platformAssetType.Value) && (!isSavedVersionOnly || !Settings.IsCloudSavedGamesEnabled) && assetVersion != null)
 		{
-			if (!Enum.TryParse<AssetType>(platformAssetType.Value.ToString(), out AssetType clientAssetType))
+			if (!Enum.TryParse<ClientAssetType>(platformAssetType.Value.ToString(), out ClientAssetType clientAssetType))
 			{
 				throw new ArgumentException($"Invalid Asset type {platformAssetType}");
 			}
@@ -171,7 +172,7 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 			{
 				throw new ArgumentException($"Invalid Asset type Id {place.TypeId}");
 			}
-			if (!Enum.TryParse<AssetType>(assetType.Value.ToString(), out AssetType clientAssetType))
+			if (!Enum.TryParse<ClientAssetType>(assetType.Value.ToString(), out ClientAssetType clientAssetType))
 			{
 				throw new ArgumentException($"Invalid Asset type {assetType}");
 			}
@@ -180,9 +181,9 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 			GetCurrentAssetPublishedVersionResponse response = _DomainFactories.AssetsClient.GetCurrentAssetPublishedVersion(clientAssetType, place.Id.ToString(CultureInfo.InvariantCulture), (DateTime?)expectedLatestTime);
 			IAssetVersionFactory assetVersionFactory = _DomainFactories.AssetVersionFactory;
 			AssetPublishedVersion assetPublishedVersion = response.AssetPublishedVersion;
-			long assetId = Convert.ToInt64(((AssetPublishedVersion)(ref assetPublishedVersion)).AssetId);
+			long assetId = Convert.ToInt64(assetPublishedVersion.AssetId);
 			assetPublishedVersion = response.AssetPublishedVersion;
-			return assetVersionFactory.GetByAssetIdAndVersionNumber(assetId, (int)((AssetPublishedVersion)(ref assetPublishedVersion)).AssetVersionNumber);
+			return assetVersionFactory.GetByAssetIdAndVersionNumber(assetId, (int)assetPublishedVersion.AssetVersionNumber);
 		}
 		return _DomainFactories.AssetVersionFactory.GetCurrentAssetPublishedVersion(place);
 	}
@@ -216,15 +217,15 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 		}
 		if (_AssetVersionsConfigurationProvider.IsServeFromAssetPublishedVersionsEnabledForAssetType(assetType.Value, asset.Id))
 		{
-			if (!Enum.TryParse<AssetType>(assetType.Value.ToString(), out AssetType clientAssetType))
+			if (!Enum.TryParse<ClientAssetType>(assetType.Value.ToString(), out ClientAssetType clientAssetType))
 			{
 				throw new ArgumentException($"Invalid Asset type {assetType}");
 			}
-			PaginatedAssetPublishedVersionResult response = _DomainFactories.AssetsClient.GetAssetPublishedVersionByAssetIdAndAssetType(clientAssetType, asset.Id.ToString(CultureInfo.InvariantCulture), (string)null, 1);
+			PaginatedAssetPublishedVersionResult response = _DomainFactories.AssetsClient.GetAssetPublishedVersionByAssetIdAndAssetType(clientAssetType, asset.Id.ToString(CultureInfo.InvariantCulture), (string)null, 1).Result;
 			if (response.AssetPublishedVersion != null && response.AssetPublishedVersion.Count > 0)
 			{
 				AssetPublishedVersion assetPublishedVersion = response.AssetPublishedVersion.First();
-				return _DomainFactories.AssetVersionFactory.GetByAssetIdAndVersionNumber(Convert.ToInt64(((AssetPublishedVersion)(ref assetPublishedVersion)).AssetId), (int)((AssetPublishedVersion)(ref assetPublishedVersion)).AssetVersionNumber);
+				return _DomainFactories.AssetVersionFactory.GetByAssetIdAndVersionNumber(Convert.ToInt64(assetPublishedVersion.AssetId), (int)assetPublishedVersion.AssetVersionNumber);
 			}
 			return null;
 		}
@@ -279,18 +280,18 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 		}
 		if (_AssetVersionsConfigurationProvider.IsServeFromAssetPublishedVersionsEnabledForAssetType(assetType.Value, asset.Id))
 		{
-			long endRowIndex = startRowIndex + count;
-			string startKey = null;
-			List<AssetPublishedVersion> assetPublishedVersions = new List<AssetPublishedVersion>();
-			if (!Enum.TryParse<AssetType>(assetType.Value.ToString(), out AssetType clientAssetType))
+			if (!Enum.TryParse<ClientAssetType>(assetType.Value.ToString(), out ClientAssetType clientAssetType))
 			{
 				throw new ArgumentException($"Invalid Asset type {assetType}");
 			}
+			long endRowIndex = startRowIndex + count;
+			string startKey = null;
+			List<AssetPublishedVersion> assetPublishedVersions = new List<AssetPublishedVersion>();
 			try
 			{
 				do
 				{
-					PaginatedAssetPublishedVersionResult response = _DomainFactories.AssetsClient.GetAssetPublishedVersionByAssetIdAndAssetType(clientAssetType, asset.Id.ToString(), startKey, 50);
+					PaginatedAssetPublishedVersionResult response = _DomainFactories.AssetsClient.GetAssetPublishedVersionByAssetIdAndAssetType(clientAssetType, asset.Id.ToString(), startKey, 50).Result;
 					if (response != null)
 					{
 						assetPublishedVersions.AddRange(response.AssetPublishedVersion);
@@ -316,7 +317,7 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 				long desiredItems = ((assetPublishedVersions.Count() - startRowIndex < count) ? (assetPublishedVersions.Count() - startRowIndex) : count);
 				return from p in assetPublishedVersions.GetRange((int)startRowIndex, (int)desiredItems).AsParallel().AsOrdered()
 						.WithDegreeOfParallelism(_DomainFactories.Settings.AssetVersionLookUpParallelizationDegree)
-					select _DomainFactories.AssetVersionFactory.GetByAssetIdAndVersionNumber(Convert.ToInt64(((AssetPublishedVersion)(ref p)).AssetId), (int)((AssetPublishedVersion)(ref p)).AssetVersionNumber);
+					select _DomainFactories.AssetVersionFactory.GetByAssetIdAndVersionNumber(Convert.ToInt64(p.AssetId), (int)p.AssetVersionNumber);
 			}
 			return Array.Empty<IAssetVersion>();
 		}
@@ -384,11 +385,19 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 		{
 			return GetAssetSavedVersionsPaged(asset, exclusiveStartKeyInfo);
 		}
-		AssetType clientAssetType = _DomainFactories.AssetTypeFactory.ToAssetsClientAssetType(platformAssetType.Value);
+		ClientAssetType clientAssetTypeForMulti;
+        try
+        {
+            clientAssetTypeForMulti = _DomainFactories.AssetTypeFactory.ToAssetsClientAssetType(platformAssetType.Value);
+        }
+        catch (Exception ex)
+        {
+            throw new ArgumentException($"Invalid Asset type {platformAssetType}", ex);
+        }
 		exclusiveStartKeyInfo.TryGetExclusiveStartKey(out var exclusiveStartKey);
-		PaginatedAssetPublishedVersionResult response = _DomainFactories.AssetsClient.GetAssetPublishedVersionByAssetIdAndAssetType(clientAssetType, asset.Id.ToString(CultureInfo.InvariantCulture), exclusiveStartKey, exclusiveStartKeyInfo.Count);
+		PaginatedAssetPublishedVersionResult response = _DomainFactories.AssetsClient.GetAssetPublishedVersionByAssetIdAndAssetType(clientAssetTypeForMulti, asset.Id.ToString(CultureInfo.InvariantCulture), exclusiveStartKey, exclusiveStartKeyInfo.Count).Result;
 		return new PlatformPageResponse<string, IAssetVersion>((from v in response.AssetPublishedVersion
-			select Roblox.AssetVersion.Get(asset.Id, (int)((AssetPublishedVersion)(ref v)).AssetVersionNumber) into v
+			select Roblox.AssetVersion.Get(asset.Id, (int)v.AssetVersionNumber) into v
 			select GetAssetVersion(v)).ToArray(), exclusiveStartKeyInfo, null, (response.ExclusiveStartKey == null) ? null : new ExclusiveStartKeyContainer<string>(response.ExclusiveStartKey));
 	}
 
@@ -428,21 +437,26 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 				IsPublished = true
 			}).ToList();
 		}
-		if (!Enum.TryParse<AssetType>(platformAssetType.Value.ToString(), out AssetType clientAssetType))
-		{
-			throw new ArgumentException($"Invalid Asset type {platformAssetType}");
-		}
-		List<MultiGetAssetPublishedVersionsRequestItem> requestItems = ((IEnumerable<IAssetVersion>)assetVersions).Select((Func<IAssetVersion, MultiGetAssetPublishedVersionsRequestItem>)((IAssetVersion p) => new MultiGetAssetPublishedVersionsRequestItem
-		{
-			AssetId = p.AssetId.ToString(),
-			AssetType = clientAssetType,
-			AssetVersionNumber = p.VersionNumber
-		})).ToList();
-		MultiGetAssetPublishedVersionsResponse clientResults = _DomainFactories.AssetsClient.MultiGetAssetPublishedVersionsByAssetIdAndAssetVersionId(requestItems);
+		ClientAssetType clientAssetTypeForMulti;
+        try
+        {
+            clientAssetTypeForMulti = _DomainFactories.AssetTypeFactory.ToAssetsClientAssetType(platformAssetType.Value);
+        }
+        catch (Exception ex)
+        {
+            throw new ArgumentException($"Invalid Asset type {platformAssetType}", ex);
+        }
+        List<MultiGetAssetPublishedVersionsRequestItem> requestItems = ((IEnumerable<IAssetVersion>)assetVersions).Select((Func<IAssetVersion, MultiGetAssetPublishedVersionsRequestItem>)((IAssetVersion p) => new MultiGetAssetPublishedVersionsRequestItem
+        {
+            AssetId = p.AssetId.ToString(),
+            AssetType = clientAssetTypeForMulti,
+            AssetVersionNumber = p.VersionNumber
+        })).ToList();
+		MultiGetAssetPublishedVersionsResponse clientResults = _DomainFactories.AssetsClient.MultiGetAssetPublishedVersionsByAssetIdAndAssetVersionId(requestItems).Result;
 		return assetVersions.Select((IAssetVersion p) => new PlatformAssetPublishedVersionsResponse
 		{
 			AssetVersion = p,
-			IsPublished = clientResults.AssetPublishedVersions.Any((AssetPublishedVersion q) => ((AssetPublishedVersion)(ref q)).AssetId.Equals(p.AssetId.ToString()) && ((AssetPublishedVersion)(ref q)).AssetVersionNumber == p.VersionNumber)
+			IsPublished = clientResults.AssetPublishedVersions.Any((AssetPublishedVersion q) => q.AssetId.Equals(p.AssetId.ToString()) && q.AssetVersionNumber == p.VersionNumber)
 		}).ToList();
 	}
 
@@ -475,21 +489,21 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 				IsPublished = true
 			}).ToList();
 		}
-		if (!Enum.TryParse<AssetType>(platformAssetType.Value.ToString(), out AssetType clientAssetType))
-		{
-			throw new ArgumentException($"Invalid Asset type {platformAssetType}");
-		}
-		List<MultiGetAssetPublishedVersionsRequestItem> requestItems = ((IEnumerable<IAssetVersion>)assetVersions).Select((Func<IAssetVersion, MultiGetAssetPublishedVersionsRequestItem>)((IAssetVersion p) => new MultiGetAssetPublishedVersionsRequestItem
-		{
-			AssetId = p.AssetId.ToString(),
-			AssetType = clientAssetType,
-			AssetVersionNumber = p.VersionNumber
-		})).ToList();
-		MultiGetAssetPublishedVersionsResponse clientResults = _DomainFactories.AssetsClient.MultiGetAssetPublishedVersionsByAssetIdAndAssetVersionId(requestItems);
+		if (!Enum.TryParse<ClientAssetType>(platformAssetType.Value.ToString(), out ClientAssetType clientAssetType))
+        {
+            throw new ArgumentException($"Invalid Asset type {platformAssetType}");
+        }
+        List<MultiGetAssetPublishedVersionsRequestItem> requestItems = ((IEnumerable<IAssetVersion>)assetVersions).Select((Func<IAssetVersion, MultiGetAssetPublishedVersionsRequestItem>)((IAssetVersion p) => new MultiGetAssetPublishedVersionsRequestItem
+        {
+            AssetId = p.AssetId.ToString(),
+            AssetType = clientAssetType,
+            AssetVersionNumber = p.VersionNumber
+        })).ToList();
+		MultiGetAssetPublishedVersionsResponse clientResults = _DomainFactories.AssetsClient.MultiGetAssetPublishedVersionsByAssetIdAndAssetVersionId(requestItems).Result;
 		return assetVersions.Select((IAssetVersion p) => new PlatformAssetPublishedVersionsResponse
 		{
 			AssetVersion = p,
-			IsPublished = clientResults.AssetPublishedVersions.Any((AssetPublishedVersion q) => ((AssetPublishedVersion)(ref q)).AssetId.Equals(p.AssetId.ToString()) && ((AssetPublishedVersion)(ref q)).AssetVersionNumber == p.VersionNumber)
+			IsPublished = clientResults.AssetPublishedVersions.Any((AssetPublishedVersion q) => q.AssetId.Equals(p.AssetId.ToString()) && q.AssetVersionNumber == p.VersionNumber)
 		}).ToList();
 	}
 

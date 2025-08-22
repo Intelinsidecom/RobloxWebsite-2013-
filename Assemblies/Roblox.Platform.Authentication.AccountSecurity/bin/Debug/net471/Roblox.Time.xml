@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Time</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Time.InstantProvider">
+            <summary>
+            An Implmenetation of IInstantProvider based on the local server time
+            </summary>
+        </member>
+        <member name="T:Roblox.Time.UtcInstant">
+            <summary>
+            Represents an instant in time, specified in UTC time. This is a useful alternative to the
+            DateTime class to ensure that all times are explicitly in UTC and treated consistently
+            </summary>
+        </member>
+        <member name="M:Roblox.Time.UtcInstant.#ctor(System.DateTime)">
+            <summary>
+            Constructs a new UtcInstant from the DateTime provided
+            </summary>
+            <param name="dateTime">UTC Kind DateTime to be represented by the Instant</param>
+            <exception cref="T:Roblox.Time.NonUtcDateTimeArgumentException">Thrown when dateTime is not a UTC DateTime</exception>
+        </member>
+        <member name="M:Roblox.Time.UtcInstant.#ctor(System.DateTimeOffset)">
+            <summary>
+            Constructs a new UtcInstant from the <see cref="T:System.DateTimeOffset"/> provided.
+            </summary>
+            <param name="dateTimeOffset"></param>
+        </member>
+        <member name="M:Roblox.Time.UtcInstant.#ctor(System.Int64)">
+            <summary>
+            Constructs a new UtcInstant from the provided ticks
+            </summary>
+            <param name="ticks"></param>
+        </member>
+        <member name="M:Roblox.Time.UtcInstant.CoerceFrom(System.DateTime,System.Action{System.DateTimeKind})">
+            <summary>
+            Method to coerce a DateTime into a UtcInstant, even if provided with a non-UTC time. Note that this
+            may produce an incorrect result if an Unspecified type of DateTime is provided - that is unavoidable
+            </summary>
+            <param name="dateTime"></param>
+            <param name="onDateTimeCoerced">an Action that will be called if a DateTime coercion occurs, passing in the DateTimeKind of the DateTime provided</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Time.IInstantProvider">
+            <summary>
+            Returns the current UtcInstant, according to some time source
+            </summary>
+        </member>
+        <member name="M:Roblox.Time.IInstantProvider.GetCurrentUtcInstant">
+            <summary>
+            The current time as a UtcInstant
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

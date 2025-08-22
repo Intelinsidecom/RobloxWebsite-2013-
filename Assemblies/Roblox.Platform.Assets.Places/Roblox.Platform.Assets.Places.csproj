@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Assets.Places</AssemblyName>
@@ -16,7 +16,7 @@
       <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
@@ -38,7 +38,7 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="Roblox.Assets.Places">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Assets.Places.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AssetsCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
@@ -50,5 +50,9 @@
       <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.9.0" />
   </ItemGroup>
 </Project>

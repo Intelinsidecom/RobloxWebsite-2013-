@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Gs7gidAR70Zq6wNYeUrdrEgYOKjjqhAaKlJeeMrFVBSwS4XbixhWNpZ9JUlojWhfUnNyUifSGgftdMO2TfYSHA==",
+  "dgSpecHash": "l99nSVeM3MU=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.AccountPins\\Roblox.Platform.AccountPins.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.AccountPins\\Roblox.Platform.AccountPins.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

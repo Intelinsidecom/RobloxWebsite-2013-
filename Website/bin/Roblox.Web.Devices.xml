@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Web.Devices</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Web.Devices.ClientDeviceIdentifier">
+            <summary>
+            Implementation of <see cref="T:Roblox.Web.Devices.IClientDeviceIdentifier"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.#ctor(Roblox.Platform.Devices.IDeviceFactory,Roblox.Platform.Devices.IPlatformFactory)">
+            <summary>
+            Instantiates a new <see cref="T:Roblox.Web.Devices.ClientDeviceIdentifier"/>.
+            </summary>
+            <param name="deviceFactory">An <see cref="T:Roblox.Platform.Devices.IDeviceFactory"/>.</param>
+            <param name="platformFactory">An <see cref="T:Roblox.Platform.Devices.IPlatformFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="deviceFactory"/>, <paramref name="platformFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.CreateAndSetAppIdentifier(System.Web.HttpContext)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.CreateAndSetAppIdentifier(System.Web.HttpContext)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxPowershell(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxPowershell(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.UseAppBrowsingMode(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.UseAppBrowsingMode(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsGoogleStoreApp(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsGoogleStoreApp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsAmazonApp(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsAmazonApp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxApp(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxApp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxClient(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxClient(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxStudio(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxStudio(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRoblox(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRoblox(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxIOSApp(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxIOSApp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxAndroidApp(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxAndroidApp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxWindowsApp(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxWindowsApp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxXboxApp(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxXboxApp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsRobloxAppVersionAtLeast(System.Version,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxAppVersionAtLeast(System.Version,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsMobile(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsMobile(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetRobloxAppVersionNumber(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetRobloxAppVersionNumber(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetRobloxAppVersion(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetRobloxAppVersion(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetDeviceVersionFromRobloxIOSApp(System.String,Roblox.Platform.Devices.IOSDeviceType@,System.Version@)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetDeviceVersionFromRobloxIOSApp(System.String,Roblox.Platform.Devices.IOSDeviceType@,System.Version@)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetMajorIOSVersion(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetMajorIOSVersion(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetMajorAndroidVersion(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetMajorAndroidVersion(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.IsIOSVersionSupported(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsIOSVersionSupported(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetFriendlyDeviceNameFromRobloxIOSApp(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetFriendlyDeviceNameFromRobloxIOSApp(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetDeviceType(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetDeviceType(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetPlatformByUserAgent(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformByUserAgent(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetPlatformNameByPlatformType(Roblox.Platform.Devices.PlatformType)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformNameByPlatformType(Roblox.Platform.Devices.PlatformType)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.DetectOperatingSystemType(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.DetectOperatingSystemType(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetPlatformTypeIdByUserAgent(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformTypeIdByUserAgent(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Devices.ClientDeviceIdentifier.GetPlatformTypeByUserAgent(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformTypeByUserAgent(System.String)"/>
+        </member>
+        <member name="T:Roblox.Web.Devices.DeviceHandleInspectionResult">
+            <summary>
+            Contains information about how DeviceHandle was extracted from a request in addition to
+            the result of the cryptographic evaluation.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Devices.DeviceHandleInspectionResult.OperatingSystemType">
+            <summary>
+            Operating system type of the requestor for which DeviceHandle was evaluated.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Devices.DeviceHandleInspectionResult.SuppliedInHeader">
+            <summary>
+            Device handle was supplied in the header.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Devices.DeviceHandleInspectionResult.SuppliedInCookie">
+            <summary>
+            Device handle was supplied as a cookie
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Devices.DeviceHandleInspectionResult.EvaluationResult">
+            <summary>
+            The result of the IDeviceHandleEncryptor's evaluation of the DeviceHandle
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Devices.DeviceHandleInspector">
+            <summary>
+            Wrapper for <see cref="T:Roblox.Platform.Devices.IDeviceHandleEncryptor"/> that determines whether to use the header or cookie values
+            extracted from a DeviceHandle
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Devices.DeviceHandleInspector.#ctor(Roblox.Platform.Devices.IDeviceHandleEncryptor)">
+            <summary>
+            DeviceHandleInspector
+            </summary>
+            <param name="encryptor">The implementor of the actual DeviceHandle evaluation algorithm.</param>
+        </member>
+        <member name="M:Roblox.Web.Devices.DeviceHandleInspector.ResolveDeviceHandleValidFromHeaderOrCookie(System.String,System.String,System.UInt64,Roblox.Platform.Devices.OperatingSystemType)">
+            <summary>
+            Populates and returns a <see cref="T:Roblox.Web.Devices.DeviceHandleInspectionResult" /> by comparing the <paramref name="browserTrackerId" />
+            against the DeviceHandle header and cookie values extracted from a request.
+            </summary>
+            <remarks>
+            This method will evaluate the header if it is not null, otherwise it will evaluate the cookie if it is likewise not null, but it will
+            not evaluate both.
+            </remarks>
+            <param name="headerValue">The encrypted DeviceHandle value if available from the DeviceHandle header (null if not provided)</param>
+            <param name="cookieValue">The encrypted DeviceHandle value if available from the DeviceHandle cookie (null if not provided)</param>
+            <param name="browserTrackerId">Unique identifier for a device included in every request.</param>
+            <param name="operatingSystem"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Web.Devices.DeviceHandleInspectorMetricsTracker">
+            <summary>
+            Instantiated by the <see cref="T:Roblox.Web.Devices.WebDeviceHandleInspectorBase" /> to increment ephemeral counters based on the results of
+            device handle evaluations for web requests for a deployable component (e.g. ApiProxy, the website, or the Auth Api).
+            of DeviceHandle
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Devices.DeviceHandleInspectorMetricsTracker.#ctor(System.String,System.String,Roblox.EphemeralCounters.IEphemeralCounterFactory)">
+            <summary>
+            Used to increment counters based on DeviceHandleEvaluation.
+            </summary>
+            <param name="componentName">The deployable component that is evaluating DeviceHandle (e.g. "Roblox.ApiProxy")</param>
+            <param name="deviceHandleVersionSuffix">Suffix used to indicate what version of device handle this metrics tracker will be used for, e.g. "V1" or "V2"</param>
+            <param name="ephemeralCounterFactory"></param>
+        </member>
+        <member name="M:Roblox.Web.Devices.DeviceHandleInspectorMetricsTracker.IncrementCountersFromDeviceHandleInspectionResult(Roblox.Web.Devices.DeviceHandleInspectionResult)">
+            <summary>
+            Increments the appropriate counters from a DeviceHandleInspectionResult returned by a <see cref="T:Roblox.Web.Devices.DeviceHandleInspector" />.
+            </summary>
+            <param name="result">DeviceHandleInspectionResult returned from a <see cref="T:Roblox.Web.Devices.DeviceHandleInspector" /></param>
+        </member>
+        <member name="M:Roblox.Web.Devices.WebDeviceHandleInspector.#ctor(System.String,Roblox.EphemeralCounters.IEphemeralCounterFactory,Roblox.Web.Devices.IClientDeviceIdentifier)">
+            <inheritdoc cref="T:Roblox.Web.Devices.WebDeviceHandleInspectorBase" />
+        </member>
+        <member name="T:Roblox.Web.Devices.IDeviceHandleInspector">
+            <summary>
+            Wrapper for <see cref="T:Roblox.Platform.Devices.IDeviceHandleEncryptor"/> that determines whether to use the header or cookie values
+            extracted from a DeviceHandle
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Devices.IDeviceHandleInspector.ResolveDeviceHandleValidFromHeaderOrCookie(System.String,System.String,System.UInt64,Roblox.Platform.Devices.OperatingSystemType)">
+            <summary>
+            Populates and returns a <see cref="T:Roblox.Web.Devices.DeviceHandleInspectionResult" /> by comparing the <paramref name="browserTrackerId" />
+            against the DeviceHandle header and cookie values extracted from a request.
+            </summary>
+            <remarks>
+            This method will evaluate the header if it is not null, otherwise it will evaluate the cookie if it is likewise not null, but it will
+            not evaluate both.
+            </remarks>
+            <param name="headerValue">The encrypted DeviceHandle value if available from the DeviceHandle header (null if not provided)</param>
+            <param name="cookieValue">The encrypted DeviceHandle value if available from the DeviceHandle cookie (null if not provided)</param>
+            <param name="browserTrackerId">Unique identifier for a device included in every request.</param>
+            <param name="operatingSystem"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Web.Devices.IDeviceHandleInspectorMetricsTracker">
+            <summary>
+            Instantiated by the <see cref="T:Roblox.Web.Devices.WebDeviceHandleInspectorBase" /> to increment ephemeral counters based on the results of
+            device handle evaluations for web requests for a deployable component (e.g. ApiProxy, the website, or the Auth Api).
+            of DeviceHandle
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Devices.IDeviceHandleInspectorMetricsTracker.IncrementCountersFromDeviceHandleInspectionResult(Roblox.Web.Devices.DeviceHandleInspectionResult)">
+            <summary>
+            Increments the appropriate counters from a DeviceHandleInspectionResult returned by a <see cref="T:Roblox.Web.Devices.DeviceHandleInspector" />.
+            </summary>
+            <param name="result">DeviceHandleInspectionResult returned from a <see cref="T:Roblox.Web.Devices.DeviceHandleInspector" /></param>
+        </member>
+        <member name="T:Roblox.Web.Devices.WebDeviceHandleInspectorArguments">
+            <summary>
+            Container for necessary components to evaluate both DeviceHandle V1 and DeviceHandle V2 for a request.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Devices.WebDeviceHandleInspectorArguments.BrowserTrackerId">
+            <summary>
+            Unique identifier for the device making a request. Should be included on all requests.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Devices.WebDeviceHandleInspectorArguments.UserAgent">
+            <summary>
+            User agent used to identify the operating system for metrics tracking.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Devices.WebDeviceHandleInspectorArguments.DeviceHandleV1Cookie">
+            <summary>
+            Value of DeviceHandle V1 cookie (null if not provided)
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Devices.WebDeviceHandleInspectorArguments.DeviceHandleV1Header">
+            <summary>
+            Value of DeviceHandle V1 header (null if not provided)
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Devices.WebDeviceHandleInspectorArguments.DeviceHandleV2Cookie">
+            <summary>
+            Value of DeviceHandle V2 cookie (null if not provided)
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Devices.WebDeviceHandleInspectorArguments.DeviceHandleV2Header">
+            <summary>
+            Value of DeviceHandle V2 cookie (null if not provided)
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Devices.WebDeviceHandleInspectorBase">
+            <summary>
+            Class to be extended to accept and evaluate if DeviceHandle is valid for specific types of requests (e.g. HttpRequestBase vs HttpRequestMessage)
+            </summary>
+        </member>
+        <member name="E:Roblox.Web.Devices.WebDeviceHandleInspectorBase.OnDeviceHandleInspectionCompleted">
+            <summary>
+            Fired when a <see cref="T:Roblox.Web.Devices.IDeviceHandleInspector" /> is used to evaluate DeviceHandle V1 or V2
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Devices.WebDeviceHandleInspectorBase.#ctor(System.String,Roblox.EphemeralCounters.IEphemeralCounterFactory,Roblox.Web.Devices.IClientDeviceIdentifier)">
+            <summary>
+            Constructs the necessary evaluation and metrics tracking objects.
+            </summary>
+            <param name="componentName">This will be used to name ephemeral counters for DeviceHandle evaluation tracking.</param>
+            <param name="counterFactory">Necessary for metrics tracking.</param>
+            <param name="identifier">Identifies operating system of requests for metrics tracking.</param>
+        </member>
+        <member name="M:Roblox.Web.Devices.WebDeviceHandleInspectorBase.#ctor(System.String,Roblox.Web.Devices.Properties.ISettings,Roblox.Web.Devices.IDeviceHandleInspector,Roblox.Web.Devices.IDeviceHandleInspectorMetricsTracker,Roblox.Web.Devices.IDeviceHandleInspector,Roblox.Web.Devices.IDeviceHandleInspectorMetricsTracker,Roblox.Web.Devices.IClientDeviceIdentifier)">
+            <summary>
+            Internal constructor for testing.
+            </summary>
+            <param name="componentName"></param>
+            <param name="settings"></param>
+            <param name="v1Inspector"></param>
+            <param name="v1MetricsTracker"></param>
+            <param name="v2Inspector"></param>
+            <param name="v2MetricsTracker"></param>
+            <param name="clientDeviceIdentifier"></param>
+        </member>
+        <member name="M:Roblox.Web.Devices.WebDeviceHandleInspectorBase.EvaluateDeviceHandle(Roblox.Web.Devices.WebDeviceHandleInspectorArguments)">
+            <summary>
+            Returns the <see cref="T:Roblox.Web.Devices.DeviceHandleInspectionResult" /> of the DeviceHandle method used to evaluate the request.
+            </summary>
+            <param name="args"><see cref="T:Roblox.Web.Devices.WebDeviceHandleInspectorArguments" /></param>
+            <returns>Returns the <see cref="T:Roblox.Web.Devices.DeviceHandleInspectionResult" /> of the DeviceHandle method used to evaluate the request. Null if neither is evaluated.</returns>
+        </member>
+        <member name="T:Roblox.Web.Devices.IClientDeviceIdentifier">
+            <summary>
+            An interface that identifies client devices.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.CreateAndSetAppIdentifier(System.Web.HttpContext)">
+            <summary>
+            Creates and Sets the unique Identifier for the current App.
+            </summary>
+            <param name="context">The current <see cref="T:System.Web.HttpContext"/></param>
+            <returns>The unique Identifier for the current App</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.DetectOperatingSystemType(System.String)">
+            <summary>
+            Detects the <see cref="T:Roblox.Platform.Devices.OperatingSystemType"/> indicated by a given UserAgent
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns>The corresponding <see cref="T:Roblox.Platform.Devices.OperatingSystemType"/>.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetDeviceType(System.String)">
+            <summary>
+            Detects the <see cref="T:Roblox.Platform.Devices.DeviceType"/> indicated by a given UserAgent
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns>The corresponding <see cref="T:Roblox.Platform.Devices.DeviceType"/>.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetDeviceVersionFromRobloxIOSApp(System.String,Roblox.Platform.Devices.IOSDeviceType@,System.Version@)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Devices.IOSDeviceType"/> and a <see cref="T:System.Version"/> for the given UserAgent.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <param name="deviceType">The corresponding <see cref="T:Roblox.Platform.Devices.IOSDeviceType"/>.</param>
+            <param name="version">The corresponding <see cref="T:System.Version"/>.</param>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetFriendlyDeviceNameFromRobloxIOSApp(System.String)">
+            <summary>
+            Gets the friendly name for an iOS device indicated by a UserAgent.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns>The friendly name for the detected iOS device.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetMajorIOSVersion(System.String)">
+            <summary>
+            Detects the major version for an iOS device indicated by a UserAgent.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns>The major version.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetMajorAndroidVersion(System.String)">
+            <summary>
+            Detects the major version for an Android device indicated by a UserAgent.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns>The major version.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformByUserAgent(System.String)">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.Devices.IPlatform"/> indicated by a UserAgent.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns>The corresponding <see cref="T:Roblox.Platform.Devices.IPlatform"/>.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformTypeByUserAgent(System.String)">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.Devices.PlatformType"/> indicated by a UserAgent.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns>The corresponding <see cref="T:Roblox.Platform.Devices.PlatformType"/>.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformNameByPlatformType(Roblox.Platform.Devices.PlatformType)">
+            <summary>
+            Gets platform name from platformTypeId
+            </summary>
+            <param name="platformType"> platform type <see cref="T:Roblox.Platform.Devices.PlatformType"/>  </param>
+            <returns>platform name</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformTypeIdByUserAgent(System.String)">
+            <summary>
+            Determines the <see cref="!:Roblox.Classification.PlatformType"/> Id based on the UserAgent.
+            </summary>
+            <remarks>Please avoid using this where possible.  When writing new code try to consume <see cref="T:Roblox.Platform.Devices.PlatformType"/> from <see cref="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetPlatformTypeByUserAgent(System.String)"/> instead.</remarks>
+            <param name="userAgent">A UserAgent.</param>
+            <returns>The corresponding <see cref="!:Roblox.Classification.PlatformType"/> Id.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxPowershell(System.String)">
+            <summary>
+            Determines if the give UserAgent cooresponds to a Roblox Powershell script.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its Roblox Powershell.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.UseAppBrowsingMode(System.String)">
+            <summary>
+            Determines if the give UserAgent should use App Browsing Mode.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if it should.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxApp(System.String)">
+            <summary>
+            Determines if the give UserAgent cooresponds to a Roblox App.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its a Roblox App.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxClient(System.String)">
+            <summary>
+            Determines if the give UserAgent corresponds to the Roblox Client.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its the Roblox Client.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxStudio(System.String)">
+            <summary>
+            Determines if the give UserAgent corresponds to Roblox Studio.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its Roblox Studio.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRoblox(System.String)">
+            <summary>
+            Determines if the given UserAgent is from any official Roblox consumer.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if <paramref name="userAgent"/> contains "Roblox".</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsMobile(System.String)">
+            <summary>
+            Determines if the given UserAgent is from a Mobile device
+            </summary>
+            <param name="userAgent"></param>
+            <returns><c>true</c> if mobile device</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetRobloxAppVersion(System.String)">
+            <summary>
+            Gets the version string of the Roblox App indicated by a UserAgent.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns>A string representation of the App Version.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.GetRobloxAppVersionNumber(System.String)">
+            <summary>
+            Get the version number of the Roblox App indicated by a UserAgent.
+            </summary>
+            <param name="userAgent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxAppVersionAtLeast(System.Version,System.String)">
+            <summary>
+            Determines if the Roblox App version indicated by a UserAgent is at least the specified version.
+            </summary>
+            <param name="minVersion">The minimum <see cref="T:System.Version"/>.</param>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if the version meets minimum requirements.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsIOSVersionSupported(System.String)">
+            <summary>
+            Determines if the version of the Roblox iOS App indicated by a UserAgent is supported.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if the corresponding version is supported.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxIOSApp(System.String)">
+            <summary>
+            Determines if the give UserAgent cooresponds to a Roblox iOS App.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its a Roblox iOS App.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxAndroidApp(System.String)">
+            <summary>
+            Determines if the give UserAgent cooresponds to a Roblox Android App.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its a Roblox Android App.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxAndroidAppOnChromebook(System.String)">
+            <summary>
+            Determines if the give UserAgent corresponds to a Roblox ChromeOS
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its a Roblox ChromeOS.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsAmazonApp(System.String)">
+            <summary>
+            Determines if the give UserAgent cooresponds to a Roblox Amazon App.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its a Roblox Amazon App.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsGoogleStoreApp(System.String)">
+            <summary>
+            Determines if the give UserAgent cooresponds to a Roblox GoogleStore App.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its a Roblox GoogleStore App.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxWindowsApp(System.String)">
+            <summary>
+            Determines if the give UserAgent cooresponds to a Roblox Windows App.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its a Roblox Windows App.</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IClientDeviceIdentifier.IsRobloxXboxApp(System.String)">
+            <summary>
+            Determines if the give UserAgent cooresponds to a Roblox Xbox App.
+            </summary>
+            <param name="userAgent">The UserAgent.</param>
+            <returns><c>true</c> if its a Roblox Xbox App.</returns>
+        </member>
+        <member name="T:Roblox.Web.Devices.IWebDeviceHandleInspector">
+            <summary>
+            Class used to evaluate DeviceHandle against a <see cref="T:System.Web.HttpRequest" /> or <see cref="T:System.Web.HttpRequestBase" />
+            to determine if the request is a legitimate Roblox app request.
+            </summary>
+            <remarks>
+            This class will evaluate both DeviceHandle V1 and V2 depending on which is enabled.
+            </remarks>
+        </member>
+        <member name="E:Roblox.Web.Devices.IWebDeviceHandleInspector.OnDeviceHandleInspectionCompleted">
+            <summary>
+            Fired when a <see cref="T:Roblox.Web.Devices.IDeviceHandleInspector" /> is used to evaluate DeviceHandle V1 or V2
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Devices.IWebDeviceHandleInspector.InspectDeviceHandleRequest(System.Web.HttpRequest,System.UInt64)">
+            <summary>
+            Evaluates DeviceHandle V1 or V2 against an <see cref="T:System.Web.HttpRequest" /> to
+            determine if the request is from a legitimate Roblox app.
+            </summary>
+            <param name="request"></param>
+            <param name="browserTrackerId"></param>
+            <returns><see cref="T:Roblox.Web.Devices.DeviceHandleInspectionResult" /></returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IWebDeviceHandleInspector.InspectDeviceHandleRequest(System.Web.HttpRequestBase,System.UInt64)">
+            <summary>
+            Evaluates DeviceHandle V1 or V2 against an <see cref="T:System.Web.HttpRequestBase" /> to
+            determine if the request is from a legitimate Roblox app.
+            </summary>
+            <param name="request"></param>
+            <param name="browserTrackerId"></param>
+            <returns><see cref="T:Roblox.Web.Devices.DeviceHandleInspectionResult" /></returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IWebDeviceHandleInspector.IsValidDeviceHandleRequest(System.Web.HttpRequestBase,System.UInt64)">
+            <summary>
+            Determines whether or not an <see cref="T:System.Web.HttpRequestBase" /> is submitting a valid DeviceHandle,
+            i.e. whether the request is from a legitimate Roblox app
+            </summary>
+            <param name="request"></param>
+            <param name="browserTrackerId"></param>
+            <returns>Whether the request is submitting a valid DeviceHandle header or cookie</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IWebDeviceHandleInspector.IsValidDeviceHandleRequest(System.Web.HttpRequest,System.UInt64)">
+            <summary>
+            Determines whether or not an <see cref="T:System.Web.HttpRequest" /> is submitting a valid DeviceHandle,
+            i.e. whether the request is from a legitimate Roblox app
+            </summary>
+            <param name="request"></param>
+            <param name="browserTrackerId"></param>
+            <returns>Whether the request is submitting a valid DeviceHandle header or cookie</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IWebDeviceHandleInspector.IsValidDeviceHandleRequest(System.Web.HttpRequestBase,System.Int64)">
+            <summary>
+            Determines whether or not an <see cref="T:System.Web.HttpRequestBase" /> is submitting a valid DeviceHandle,
+            i.e. whether the request is from a legitimate Roblox app
+            </summary>
+            <param name="request"></param>
+            <param name="browserTrackerId"></param>
+            <returns>Whether the request is submitting a valid DeviceHandle header or cookie</returns>
+        </member>
+        <member name="M:Roblox.Web.Devices.IWebDeviceHandleInspector.IsValidDeviceHandleRequest(System.Web.HttpRequest,System.Int64)">
+            <summary>
+            Determines whether or not an <see cref="T:System.Web.HttpRequest" /> is submitting a valid DeviceHandle,
+            i.e. whether the request is from a legitimate Roblox app
+            </summary>
+            <param name="request"></param>
+            <param name="browserTrackerId"></param>
+            <returns>Whether the request is submitting a valid DeviceHandle header or cookie</returns>
+        </member>
+        <member name="T:Roblox.Web.Devices.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

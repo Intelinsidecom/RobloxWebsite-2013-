@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "h6gVZap4pRPXzkMwP+TjP9Py0tX/+OBDYUP+55jJTbkshBnUcjv8jY0PVOdFX3IPH0yJ1uhVa+XZjvqqrBlvCg==",
+  "dgSpecHash": "n46Bwrhh/Aw=",
   "success": true,
-  "projectFilePath": "D:\\Assemblies\\TranslationResources\\Roblox.TranslationResources\\Roblox.TranslationResources.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\TranslationResources\\Roblox.TranslationResources\\Roblox.TranslationResources.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

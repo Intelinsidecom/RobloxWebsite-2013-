@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "hNRjAvheBoFd0vXxUSBxibomaNJ8g3b+viA0Aycvzba58Lm2F2EL39U3Hc0kbGJxjqRDeP83YCv4D4mO5jnGXQ==",
+  "dgSpecHash": "3rZeb7KBRLg=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Gigya\\Roblox.Gigya.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Gigya\\Roblox.Gigya.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\gigya.socialize.sdk\\2.16.4.3\\gigya.socialize.sdk.2.16.4.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

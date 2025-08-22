@@ -147,7 +147,10 @@ internal class AssetOptionFactory : IAssetOptionFactory
 				updateRequest.SetIsCopyLocked(platformOption.IsCopyLocked);
 				updateRequest.SetIsFriendsOnly(platformOption.IsFriendsOnly);
 				updateRequest.SetAllowedGearCategories((long)platformOption.AllowedGearCategories);
-				updateRequest.SetDefaultExpirationInTicks(platformOption.DefaultExpirationInTicks);
+				if (platformOption.DefaultExpirationInTicks.HasValue)
+				{
+					updateRequest.SetDefaultExpirationInTicks(platformOption.DefaultExpirationInTicks.Value);
+				}
 				updateRequest.SetEnforceGenre(platformOption.EnforceGenre);
 				updateRequest.SetMinMembershipType((byte)platformOption.MinMembershipType);
 				Task.Run<GetAssetOptionResponse>(async () => await _AssetsClient.UpdateOrCreateAssetOptionAsync(updateRequest, CancellationToken.None)).Wait();

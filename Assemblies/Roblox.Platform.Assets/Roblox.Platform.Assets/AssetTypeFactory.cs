@@ -273,10 +273,10 @@ internal class AssetTypeFactory : IAssetTypeFactory
 	}
 
 	/// <inheritdoc />
-	public AssetType ToAssetsClientAssetType(AssetType platformAssetType)
+	public Roblox.Assets.Client.AssetType ToAssetsClientAssetType(AssetType platformAssetType)
 	{
 		//IL_002c: Unknown result type (might be due to invalid IL or missing references)
-		if (!Enum.TryParse<AssetType>(platformAssetType.ToString(), out AssetType clientAssetType))
+		if (!Enum.TryParse<Roblox.Assets.Client.AssetType>(platformAssetType.ToString(), out Roblox.Assets.Client.AssetType clientAssetType))
 		{
 			throw new ApplicationException($"Cannot translate platform asset type enum {platformAssetType} to Assets service client's asset type enum.");
 		}

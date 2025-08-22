@@ -4,6 +4,7 @@ using System.Net;
 using Newtonsoft.Json;
 using Roblox.CommunitySift.Properties;
 using Roblox.Diagnostics;
+using Roblox.Instrumentation;
 using Roblox.RestClientBase;
 using Roblox.Sentinels;
 

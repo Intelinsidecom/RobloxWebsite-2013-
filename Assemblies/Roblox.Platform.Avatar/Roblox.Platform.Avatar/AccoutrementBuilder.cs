@@ -23,8 +23,8 @@ internal class AccoutrementBuilder : IAccoutrementBuilder
 		{
 			// Could not convert BlockContainer to single expression
 			string message = ex2.Message;
-			AccoutrementError val = (AccoutrementError)1;
-			return message == ((object)(AccoutrementError)(ref val)).ToString();
+			var val = (AccoutrementError)1;
+			return message == val.ToString();
 		}).Invoke())
 		{
 			throw new DuplicateAccoutrementInsertException($"Duplicate accoutrement insertion for UserAssetID={userAssetId} and UserID={userId}", ex2);

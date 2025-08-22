@@ -1,7 +1,8 @@
+extern alias ConfMan;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
-using System.Configuration;
+using ConfManSystemConfiguration = ConfMan::System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
@@ -13,23 +14,23 @@ namespace Roblox.Platform.AbTesting.Core.Properties;
 /// </summary>
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
-[SettingsProvider(typeof(Provider))]
-internal sealed class Settings : ApplicationSettingsBase
+[ConfManSystemConfiguration.SettingsProvider(typeof(Provider))]
+internal sealed class Settings : ConfManSystemConfiguration.ApplicationSettingsBase
 {
-	private static Settings defaultInstance = (Settings)SettingsBase.Synchronized(new Settings());
+	private static Settings defaultInstance = (Settings)ConfManSystemConfiguration.SettingsBase.Synchronized(new Settings());
 
 	private readonly ConcurrentDictionary<string, object> _Properties = new ConcurrentDictionary<string, object>();
 
 	public static Settings Default => defaultInstance;
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("False")]
+	[ConfManSystemConfiguration.DefaultSettingValue("False")]
 	public bool IsEnrollmentDeclinationRemoteCacheEnabled => (bool)this["IsEnrollmentDeclinationRemoteCacheEnabled"];
 
-	[ApplicationScopedSetting]
+	[ConfManSystemConfiguration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[DefaultSettingValue("False")]
+	[ConfManSystemConfiguration.DefaultSettingValue("False")]
 	public bool IsEnrollmentRemoteCacheEnabled => (bool)this["IsEnrollmentRemoteCacheEnabled"];
 
 	public override object this[string propertyName]
@@ -52,7 +53,7 @@ internal sealed class Settings : ApplicationSettingsBase
 		};
 	}
 
-	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
+	protected override void OnSettingsLoaded(object sender, ConfManSystemConfiguration.SettingsLoadedEventArgs e)
 	{
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, this);

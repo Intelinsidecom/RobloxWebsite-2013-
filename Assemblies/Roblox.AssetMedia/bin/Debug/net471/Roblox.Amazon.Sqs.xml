@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Amazon.Sqs</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Amazon.Sqs.IRobloxSqsClientFactory">
+            <summary>
+            Creates clients for Amazon SQS.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.IRobloxSqsClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Sqs.RobloxSqsClientConfig)">
+            <summary>
+            Creates Amazon SQS client.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <returns>Amazon SQS client</returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.IRobloxSqsClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon SQS client. Uses default values from settings to build configuration.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">
+            Name of the client instance.
+            (required for performance counters creation)
+            </param>
+            <returns>
+            Amazon SQS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.IRobloxSqsClientFactory.Create(System.String,System.String,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon SQS client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.</param>
+            <returns>
+            Amazon SQS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.IRobloxSqsClientFactory.Create(System.String,System.String,Roblox.Amazon.Sqs.RobloxSqsClientConfig)">
+            <summary>
+            Creates Amazon SQS client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClientConfig" />.</param>
+            <returns>
+            Amazon SQS client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.IRobloxSqsClientFactory.GetDefaultSettings">
+            <summary>
+            Gets the default client settings.
+            </summary>
+            <returns><see cref="T:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings"/></returns>
+        </member>
+        <member name="E:Roblox.Amazon.Sqs.IRobloxSqsClientFactory.DefaultClientSettingsChanged">
+            <summary>
+            Occurs when default client settings changed <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings"/>.
+            Don't forget to unsubscribe to avoid memory leaks.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.RobloxSqsClient">
+            <summary>
+            AmazonSQSClient extended with configurable circuit breaker and async invoke timeout handlers. 
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClient.#ctor(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Sqs.RobloxSqsClientConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClient"/> class.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClient.CustomizeRuntimePipeline(Amazon.Runtime.Internal.RuntimePipeline)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.RobloxSqsClientConfig">
+            <summary>
+            Configuration for <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClient"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientConfig.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClientConfig" /> class.
+            </summary>
+            <param name="clientInstanceName">Name of the client instance. 
+            Examples: BadgeAwardsRepository, PlatformChat, etc.
+            Data Storage prefix will be added automatically.
+            </param>
+            <exception cref="T:System.ArgumentException">Cannot be null or empty or whitespaces. - clientInstanceName</exception>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientConfig.CircuitBreakerPolicyConfig">
+            <summary>
+            Gets the circuit breaker policy configuration.
+            Default value is ConsecutiveCircuitBreakerPolicyConfig with properties initialized from settings.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientConfig.ClientInstanceName">
+            <summary>
+            Gets the name of the client instance.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientConfig.IsCircuitBreakerEnabled">
+            <summary>
+            Gets or sets a value indicating whether circuit breaker is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientConfig.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets or sets a value indicating whether asynchronous request timeout is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings">
+            <summary>
+            RobloxSqsClient default settings <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClient"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.#ctor(System.Boolean,System.Boolean,System.Boolean,System.TimeSpan,System.TimeSpan,System.Int32,System.TimeSpan,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings"/> class.
+            </summary>
+            <param name="isCircuitBreakerEnabled">if set to <c>true</c> then circuit breaker is enabled.</param>
+            <param name="isAsyncRequestTimeoutEnabled">if set to <c>true</c> then asynchronous request timeout is enabled.</param>
+            <param name="isThrottleRetriesEnabled">if set to <c>true</c> throttle retries is enabled.</param>
+            <param name="requestTimeout">The request timeout.</param>
+            <param name="readWriteTimeout">The read write timeout.</param>
+            <param name="failuresAllowedBeforeCircuitBreakerTrip">The failures allowed before circuit breaker trip.</param>
+            <param name="circuitBreakerRetryInterval">The circuit breaker retry interval.</param>
+            <param name="maxErrorRetry">The maximum error retry.</param>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.IsCircuitBreakerEnabled">
+            <summary>
+            Gets a value indicating whether circuit breaker is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets a value indicating whether asynchronous request timeout is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.IsThrottleRetriesEnabled">
+            <summary>
+            Gets a value indicating whether throttle retries is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.RequestTimeout">
+            <summary>
+            Gets the request timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.ReadWriteTimeout">
+            <summary>
+            Gets the read write timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.FailuresAllowedBeforeCircuitBreakerTrip">
+            <summary>
+            Gets the amount of failures allowed before circuit breaker trip.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.CircuitBreakerRetryInterval">
+            <summary>
+            Gets the circuit breaker retry interval.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.MaxErrorRetry">
+            <summary>
+            Gets the maximum error retry.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings.Equals(Roblox.Amazon.Sqs.RobloxSqsClientDefaultSettings)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.RobloxSqsClientFactory">
+            <summary>
+            Creates clients for Amazon Sqs.
+            </summary>
+            <seealso cref="T:Roblox.Amazon.Sqs.IRobloxSqsClientFactory" />
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxSqsClientFactory.Instance">
+            <summary>
+            Gets the instance of <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClientFactory"/>.
+            </summary>
+        </member>
+        <member name="E:Roblox.Amazon.Sqs.RobloxSqsClientFactory.DefaultClientSettingsChanged">
+            <inheritdoc cref="E:Roblox.Amazon.Sqs.IRobloxSqsClientFactory.DefaultClientSettingsChanged"/>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.Sqs.RobloxSqsClientConfig)">
+            <summary>
+            Creates Amazon Sqs client.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <returns>
+            Amazon Sqs client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon Sqs client. Uses default settings to build configuration.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.
+            (required for performance counters creation)</param>
+            <returns>
+            Amazon Sqs client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientFactory.Create(System.String,System.String,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon Sqs client. Uses default settings to build configuration.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientFactory.Create(System.String,System.String,Roblox.Amazon.Sqs.RobloxSqsClientConfig)">
+            <summary>
+            Creates Amazon Sqs client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.Sqs.RobloxSqsClientConfig"/>.</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientFactory.GetDefaultSettings">
+            <inheritdoc cref="M:Roblox.Amazon.Sqs.IRobloxSqsClientFactory.GetDefaultSettings"/>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxSqsClientFactory.GetDefaultSettingsFromSource">
+            <summary>
+            Gets the default settings from source.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsConfigSettingsFactory">
+            <summary>
+            A factory object that is capable of creating AWS <seealso cref="T:Roblox.Amazon.Sqs.ISqsConfigSettings"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsConfigSettingsFactory.GetSqsConfigSettings(System.String,System.String,System.String)">
+            <summary>
+            Create and return the Sqs config settings based on the input.
+            </summary>
+            <param name="sqsUrl">The Url of the AWS Sqs.</param>
+            <param name="sqsAccessKey">The access key of the AWS Sqs.</param>
+            <param name="sqsSecretAccessKey">The secret access key of the AWS Sqs.</param>
+            <returns>The <see cref="T:Roblox.Amazon.Sqs.ISqsConfigSettings"/>.</returns>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsConsumerFactory">
+            <summary>
+            A factory object that is capable of getting and constructing <see cref="T:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt"/> objects.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsConsumerFactory.GetSqsConsumerWithReceipt(Roblox.Amazon.Sqs.ISqsConfigSettings,System.Collections.Generic.List{System.String},System.String,System.Int32,System.Int32,System.Func{System.TimeSpan})">
+            <summary>
+            Gets an <see cref="T:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt"/> with specified input parameters.
+            </summary>
+            <param name="sqsConfigSettings">The config settings required for setting up connections to SQS.</param>
+            <param name="requestedMessageAttributes">The list of attributes for constructing SQS message requests.</param>
+            <param name="performanceMonitorCategory">The performance monitor category for this consumer.</param>
+            <param name="batchSize">The batch size for the SQS message requests.</param>
+            <param name="visibilityTimeout">The visibility timeout for the SQS message requests.</param>
+            <param name="waitTimeGetter">Getter for the wait time of the SQS message requests.</param>
+            This effectively controls how soon the message will be visible again to others.
+            <returns><see cref="T:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt"/></returns>
+            <exception cref="T:System.ArgumentNullException">Throws when sqsConfigSettings is null.</exception>
+            <exception cref="T:System.ArgumentException">Throws when performanceMonitorCategory is null or white space.</exception>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsReceiptFactory">
+            <summary>
+            A factory object that is capable of creating AWS <seealso cref="T:Roblox.Amazon.Sqs.ISqsReceipt"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsReceiptFactory.GetSqsReceipt(System.String,System.String)">
+            <summary>
+            Create and return the Sqs receipt based on the input.
+            </summary>
+            <param name="receiptHandle">The handle string of the receipt.</param>
+            <param name="regionName">The regional system name of the receipt that is received from.</param>
+            <returns>An <see cref="T:Roblox.Amazon.Sqs.ISqsReceipt"/>.</returns>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsConfigSettingsFactory">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsConfigSettingsFactory"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsConfigSettingsFactory.GetSqsConfigSettings(System.String,System.String,System.String)">
+            <summary>
+            <inheritdoc cref="M:Roblox.Amazon.Sqs.ISqsConfigSettingsFactory.GetSqsConfigSettings(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsConsumerFactory">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsConsumerFactory"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsConsumerFactory.#ctor(Roblox.Amazon.Sqs.SqsDomainFactories)">
+            <summary>
+            Default consturctor for <see cref="T:Roblox.Amazon.Sqs.SqsConsumerFactory"/>.
+            </summary>
+            <param name="domainFactories"><see cref="T:Roblox.Amazon.Sqs.SqsDomainFactories"/>.</param>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsConsumerFactory.GetSqsConsumerWithReceipt(Roblox.Amazon.Sqs.ISqsConfigSettings,System.Collections.Generic.List{System.String},System.String,System.Int32,System.Int32,System.Func{System.TimeSpan})">
+            <summary>
+            <inheritdoc cref="M:Roblox.Amazon.Sqs.ISqsConsumerFactory.GetSqsConsumerWithReceipt(Roblox.Amazon.Sqs.ISqsConfigSettings,System.Collections.Generic.List{System.String},System.String,System.Int32,System.Int32,System.Func{System.TimeSpan})"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsReceiptFactory">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsReceiptFactory"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsReceiptFactory.GetSqsReceipt(System.String,System.String)">
+            <summary>
+            <inheritdoc cref="M:Roblox.Amazon.Sqs.ISqsReceiptFactory.GetSqsReceipt(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.PerInstancePerformanceMonitor">
+            <summary>
+            If you modify this, also modify RP.Observation.Custom.SqsPerformanceDatasetCollector,
+            which is in charge of charting them.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.RobloxRegionEndpoint">
+            <summary>
+            The default implemetation of <see cref="T:Roblox.Amazon.Sqs.IRobloxRegionEndpoint"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.RobloxRegionEndpoint.SystemName">
+            <summary>
+            <inheritdoc cref="P:Roblox.Amazon.Sqs.IRobloxRegionEndpoint.SystemName"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.RobloxRegionEndpoint.GetAwsRegionEndpoint">
+            <summary>
+            <inheritdoc cref="M:Roblox.Amazon.Sqs.IRobloxRegionEndpoint.GetAwsRegionEndpoint"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsBatchDeleter">
+            <summary>
+            The default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsBatchDeleter"/>.
+            </summary>
+        </member>
+        <member name="E:Roblox.Amazon.Sqs.SqsBatchSender.ErrorOnSqsClientRebuildOccurred">
+            <summary>
+            Occurs when an exception is thrown during SQS client rebuild.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsBatchSender.Dispose">
+            <summary>
+            Disposes the current instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsBatchSender.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsConfigSettings">
+            <summary>
+            The default Implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsConfigSettings"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsConfigSettings.SqsUrl">
+            <inheritdoc cref="P:Roblox.Amazon.Sqs.ISqsConfigSettings.SqsUrl"/>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsConfigSettings.SqsAccessKey">
+            <inheritdoc cref="P:Roblox.Amazon.Sqs.ISqsConfigSettings.SqsAccessKey"/>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsConfigSettings.SqsSecretAccessKey">
+            <inheritdoc cref="P:Roblox.Amazon.Sqs.ISqsConfigSettings.SqsSecretAccessKey"/>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsConsumerWithReceipt">
+            <summary>
+            The default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsConsumerWithReceipt.#ctor(Roblox.Amazon.Sqs.ISqsConfigSettings,System.Collections.Generic.List{System.String},Roblox.Instrumentation.ICounterRegistry,System.String,System.Int32,System.Int32,System.Func{System.TimeSpan},Roblox.Amazon.Sqs.SqsDomainFactories,System.Collections.Concurrent.ConcurrentQueue{Roblox.Amazon.Sqs.ISqsMessageWithReceipt},Roblox.Amazon.Sqs.ISqsPerformanceMonitor,System.Collections.Generic.Dictionary{System.String,Roblox.Amazon.Sqs.ISqsPerformanceMonitor},System.Collections.Generic.List{Roblox.Amazon.Sqs.ISqsReadWriteDeleteClient},System.Collections.Generic.Dictionary{System.String,Roblox.Amazon.Sqs.ISqsBatchDeleter})">
+            <summary>
+            The default public constructor for <see cref="T:Roblox.Amazon.Sqs.SqsConsumerWithReceipt"/>.
+            </summary>
+            <param name="sqsConfigSettings">The <see cref="T:Roblox.Amazon.Sqs.ISqsConfigSettings"/> for AWS SQS access settings.</param>
+            <param name="requestedMessageAttributes">The list of SQS request attributes for which to retrieve information from SQS.</param>
+            <param name="counterRegistry">The Instrumentation CounterRegistry.</param>
+            <param name="performanceMonitorCategory">The category name of the performance monitor.</param>
+            <param name="batchSize">The batch size for each SQS message request.</param>
+            <param name="visibilityTimeout">The visibility timeout in seconds to be set for the SQS request.</param>
+            <param name="waitTimeGetter">Getter for the wait time to be set for the SQS request.</param>
+            <param name="domainFactories">The <see cref="T:Roblox.Amazon.Sqs.SqsDomainFactories"/>.</param>
+            <param name="messages">The local cached queue storing messages leased from SQS and is ready to be consumed by consumers.</param>
+            <param name="totalsPerformanceMonitor">The total performance monitor.</param>
+            <param name="regionPerformanceMonitors">The regional performance monitor.</param>
+            <param name="sqsReadWriteDeleteClients">The list of <see cref="T:Roblox.Amazon.Sqs.ISqsReadWriteDeleteClient"/>s being used by the object of this class.</param>
+            <param name="sqsBatchDeleters">The list of <see cref="T:Roblox.Amazon.Sqs.ISqsBatchDeleter"/>s being used by the object of this class.</param>
+            <exception cref="T:System.ArgumentNullException">Throws when any of the input parameters settings, sqsConfigSettings, performanceMonitorCategory, 
+            logger, or domainFactories is null.</exception>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsMessage">
+            <summary>
+            The default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsMessage"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsMessageWithReceipt">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsMessageWithReceipt"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsMessageWithReceipt.Receipt">
+            <summary>
+            <inheritdoc cref="P:Roblox.Amazon.Sqs.ISqsMessageWithReceipt.Receipt"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsPerformanceMonitor.LogMessageProcessSuccess">
+            <summary>
+            Called when a message is deleted.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsReadWriteDeleteClient">
+            <summary>
+            The default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsReadWriteDeleteClient"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsReceipt">
+            <summary>
+            The default implementation of <see cref="T:Roblox.Amazon.Sqs.ISqsReceipt"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsReceipt.ReceiptHandle">
+            <summary>
+            <inheritdoc cref="P:Roblox.Amazon.Sqs.ISqsReceipt.ReceiptHandle"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsReceipt.RegionName">
+            <summary>
+            <inheritdoc cref="P:Roblox.Amazon.Sqs.ISqsReceipt.RegionName"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsStreamSubscriberBase.DeserializeMessage``1(System.String)">
+            <summary>
+            Deserializes the string message into the provided type (using Newtonsoft.Json). Does no exception handling - up to consumers how to handle deserialization exceptions.
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+            <exception cref="T:Newtonsoft.Json.JsonSerializationException">Thrown when the message cannot be deserialized into the given object</exception>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsStreamSubscriberBase.IsSqsCredentialsConfigured">
+            <summary>
+            Utility method to check if AWS credentials have been configured for the subscriber correctly
+            </summary>
+            <returns>true if AWS credentials and SQS url are configured, false otherwise</returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsStreamSubscriberBase.IsMessageOutdated(System.Nullable{System.DateTime},System.Action{System.DateTimeKind})">
+            <summary>
+            Utility method to check if a message should be ignored - timestamp greater than a configured threshold
+            This is disabled by default, and should be enabled in the derived sqs stream Implementations
+            </summary>
+            <param name="messageTimeStamp">sqs message timestamp</param>
+            <param name="onDateTimeCoerced">callback on utc time coercion from DateTime failure</param>
+            <returns>true if message is stale and should be Ignored</returns>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsThrottlingStreamSubscriberBase.IsSqsMessageTrimmingEnabled">
+            <summary>
+            This value, when true, causes the SqsMessages to be trimmed before being echoed into the logger. Trimming starts at the index SqsMessageTrimmingStartIndex
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsThrottlingStreamSubscriberBase.SqsMessageTrimmingStartIndex">
+            <summary>
+            When IsSqsMessageTrimmingEnabled is true, the value of SqsMessageTrimmingStartIndex controls the position at which the trimming function begins.
+            A value of 0 indicates that the entire message is trimmed, a value of 1 indicates that all but the first character is trimmed
+            Negative values are not supported at this time and are treated the same as a zero, with an additional warning log entry being generated
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsThrottlingStreamSubscriberBase.IsSqsMessageIdIncludedInErrorLogs">
+            <summary>
+            This flag can be set to true to prefix the echoed sqsMessage body with the AWS provided message id attribute
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsThrottlingStreamSubscriberBase.SetupRegionEndpoint(System.String[],Amazon.RegionEndpoint)">
+            <summary>
+            Every region endpoint has a batchDeleter.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsThrottlingStreamSubscriberBase.Dispose">
+            <summary>
+            Disposes the current instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsThrottlingStreamSubscriberBase.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.IRobloxRegionEndpoint">
+            <summary>
+            A wrapper interface for AWS RegionEndpoint so that it can be faked for testing.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.IRobloxRegionEndpoint.GetAwsRegionEndpoint">
+            <summary>
+            Gets the AWS <see cref="T:Amazon.RegionEndpoint"/>.
+            </summary>
+            <returns>The <see cref="T:Amazon.RegionEndpoint"/>.</returns>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.IRobloxRegionEndpoint.SystemName">
+            <summary>
+            The system name of the region endpoint.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsBatchDeleter">
+            <summary>
+            An interface that represents the background-running batch message deleter for AWS SQS.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsBatchSender">
+            <summary>
+            An interface represents the background-running batch message sender for AWS SQS.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsConfigSettings">
+            <summary>
+            An interface represents AWS settings for configuring the access of a SQS queue.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsConfigSettings.SqsAccessKey">
+            <summary>
+            The SQS queue access key.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsConfigSettings.SqsSecretAccessKey">
+            <summary>
+            The SQS queue Secret Access Key.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsConfigSettings.SqsUrl">
+            <summary>
+            The URL of the SQS queue.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt">
+            <summary>
+            An interface that repesents an object that is capable of getting a message with receipt
+            from AWS SQS and delete it later on in an asynchronous way.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt.GetNextMessage">
+            <summary>
+            Fetch the next message in the queue from AWS SQS.
+            </summary>
+            <returns>An <see cref="T:Roblox.Amazon.Sqs.ISqsMessageWithReceipt"/>, returns null if there's no messages available.</returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsConsumerWithReceipt.DeleteMessage(Roblox.Amazon.Sqs.ISqsReceipt)">
+            <summary>
+            Delete the message from the AWS SQS queue using the receipt.
+            </summary>
+            <param name="sqsReceipt">The <see cref="T:Roblox.Amazon.Sqs.ISqsReceipt"/> to be used in deletion.</param>
+            <exception cref="T:System.ArgumentNullException">Throws when the input parameter sqsReceipt is null.</exception>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsDeleter">
+            <summary>
+            Deletes messages on the active queue based on the given receipt handle.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsDeleter.DeleteMessage(System.String)">
+            <summary>
+            Push the message receipt handle into deletion queue to be deleted in batch by the background deleter.
+            </summary>
+            <param name="receiptHandle">The receipt handle string being used in requesting message deletion by AWS SQS.</param>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsMessage">
+            <summary>
+            An interface that represents an AWS SQS message with expiry.
+            <seealso cref="T:Roblox.Coordination.IMessage"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsMessage.FullMessage">
+            <summary>
+            The AWS SQS <seealso cref="T:Amazon.SQS.Model.Message"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsMessage.MessageExpiry">
+            <summary>
+            The expiry time of the message.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsMessageWithReceipt">
+            <summary>
+            An interface that represents an <seealso cref="T:Roblox.Amazon.Sqs.ISqsMessage"/> with an <seealso cref="T:Roblox.Amazon.Sqs.ISqsReceipt"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsMessageWithReceipt.Receipt">
+            <summary>
+            The <see cref="T:Roblox.Amazon.Sqs.ISqsReceipt"/> of the message.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsReadWriteDeleteClient">
+            <summary>
+            An interface that repesents an object that is capable of retrieving messages from AWS SQS 
+            and batch deleting them if the specific message tasks are marked as completed.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsReadWriteDeleteClient.SqsBatchDeleterGetter">
+            <summary>
+            The Getter for the <see cref="T:Roblox.Amazon.Sqs.ISqsBatchDeleter"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsReadWriteDeleteClient.GetMessages(System.Int32)">
+            <summary>
+            Retrieve an array of <see cref="T:Roblox.Amazon.Sqs.ISqsMessage"/> from AWS SQS.
+            </summary>
+            <param name="batchSize">The batch size of each request.</param>
+            <returns>An array of <see cref="T:Roblox.Amazon.Sqs.ISqsMessage"/>. Returns an empty array if there's no messages from SQS.</returns>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsReadWriteDeleteClient.GetMessagesWithReceipt(System.Int32,System.Int32)">
+            <summary>
+            Retrieve an array of <see cref="T:Roblox.Amazon.Sqs.ISqsMessageWithReceipt"/> from AWS SQS.
+            </summary>
+            <param name="batchSize">The batch size of each request.</param>
+            <param name="visibilityTimeout">The visibility timeout to be set on the messages being retrieved.</param>
+            <returns>An array of <see cref="T:Roblox.Amazon.Sqs.ISqsMessageWithReceipt"/>. Returns an empty array if there's no messages from SQS.</returns>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.ISqsReceipt">
+            <summary>
+            An interface object represents an AWS Sqs message receipt with region name.
+            To be used for AWS Sqs message operations such as deleting the message from the queue.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsReceipt.ReceiptHandle">
+            <summary>
+            The handle string of the receipt.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.ISqsReceipt.RegionName">
+            <summary>
+            The regional system name of the receipt that is received from.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.ISqsSender.SendMessage(System.String)">
+            <summary>
+            Send a message to the AWS SQS queue.
+            </summary>
+            <param name="message">The message to be sent to SQS.</param>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Sqs.SqsDomainFactories">
+            <summary>
+            The domain factories class for holding reference of all factory objects needed for Sqs.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsDomainFactories.SqsReceiptFactory">
+            <summary>
+            <see cref="T:Roblox.Amazon.Sqs.ISqsReceiptFactory" />
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsDomainFactories.SqsConfigSettingsFactory">
+            <summary>
+            <see cref="T:Roblox.Amazon.Sqs.ISqsConfigSettingsFactory"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Sqs.SqsDomainFactories.SqsConsumerFactory">
+            <summary>
+            <see cref="T:Roblox.Amazon.Sqs.ISqsConsumerFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Sqs.SqsDomainFactories.#ctor(Roblox.EventLog.ILogger)">
+            <summary>
+            Default constructor for <see cref="T:Roblox.Amazon.Sqs.SqsDomainFactories"/>.
+            </summary>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Throws when logger or settings is null.</exception>
+        </member>
+    </members>
+</doc>

@@ -46,7 +46,7 @@ public class OperatingSystemTypeDAL
 		{
 			new SqlParameter("@ID", ID)
 		};
-		EntityHelper.DoEntityDALDelete(new DbInfo(ConnectionString, "OperatingSystemTypes_DeleteOperatingSystemTypeByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(ConnectionString, "OperatingSystemTypes_DeleteOperatingSystemTypeByID", queryParameters));
 	}
 
 	public static OperatingSystemTypeDAL Get(byte id)

@@ -4,7 +4,7 @@ using Roblox.Currency.Client;
 using Roblox.Economy;
 using Roblox.Economy.Common;
 using Roblox.EventLog;
-using Roblox.Marketplace.Client;
+using Roblox;
 using Roblox.Platform.AssetOwnership;
 using Roblox.Platform.Core;
 using Roblox.Platform.Devices;
@@ -25,7 +25,6 @@ public class YouTubeVideoBroker : IYouTubeVideoBroker
 
 	private readonly IAssetOwnershipAuthority _AssetOwnershipAuthority;
 
-	private readonly IMarketplaceAuthority _MarketplaceAuthority;
 
 	private readonly ILogger _Logger;
 
@@ -44,19 +43,16 @@ public class YouTubeVideoBroker : IYouTubeVideoBroker
 	/// </summary>
 	/// <param name="currencyAuthority">An <see cref="T:Roblox.Currency.Client.ICurrencyAuthority" />.</param>
 	/// <param name="assetOwnershipAuthority">An <see cref="T:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority" />.</param>
-	/// <param name="marketplaceAuthority">An <see cref="T:Roblox.Marketplace.Client.IMarketplaceAuthority" />.</param>
 	/// <param name="logger">An <see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <exception cref="T:System.ArgumentNullException">
 	/// - <paramref name="currencyAuthority" />
 	/// - <paramref name="assetOwnershipAuthority" />
-	/// - <paramref name="marketplaceAuthority" />
 	/// - <paramref name="logger" />
 	/// </exception>
-	public YouTubeVideoBroker(ICurrencyAuthority currencyAuthority, IAssetOwnershipAuthority assetOwnershipAuthority, IMarketplaceAuthority marketplaceAuthority, ILogger logger, ITransactionStreamer transactionStreamer, IUserFactory userFactory)
+	public YouTubeVideoBroker(ICurrencyAuthority currencyAuthority, IAssetOwnershipAuthority assetOwnershipAuthority, ILogger logger, ITransactionStreamer transactionStreamer, IUserFactory userFactory)
 	{
 		_CurrencyAuthority = currencyAuthority ?? throw new ArgumentNullException("currencyAuthority");
 		_AssetOwnershipAuthority = assetOwnershipAuthority ?? throw new ArgumentNullException("assetOwnershipAuthority");
-		_MarketplaceAuthority = marketplaceAuthority ?? throw new ArgumentNullException("marketplaceAuthority");
 		_Logger = logger ?? throw new ArgumentNullException("logger");
 		_TransactionStreamer = transactionStreamer ?? throw new ArgumentNullException("transactionStreamer");
 		_UserFactory = userFactory ?? throw new ArgumentNullException("userFactory");
@@ -75,10 +71,47 @@ public class YouTubeVideoBroker : IYouTubeVideoBroker
 		{
 			throw new ArgumentNullException("actingUser");
 		}
-		PurchaseProductResult purchaseResult = _MarketplaceAuthority.PurchaseProduct((long)Convert.ToInt32(actingUser.Id), YouTubeVideoProductId, RobuxCurrencyId, videoCostInRobux, false, 0L, (byte)initiatingPlatformType, (SaleLocationType)0, (long?)null);
-		TransactionStatus status = (TransactionStatus)purchaseResult.Status;
-		saleId = purchaseResult.SaleId;
-		if ((int)status != 0)
+		Roblox.EconomyHelper.TransactionStatus status = default;
+		bool ok;
+		// Use reflection to avoid compile-time dependency on Roblox.Marketplace.Client types (SaleLocationType, PurchaseProductResult)
+		var marketType = typeof(Market);
+		var methods = marketType.GetMethods(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+		System.Reflection.MethodInfo target = null;
+		foreach (var m in methods)
+		{
+			if (m.Name == "PurchaseProduct")
+			{
+				var ps = m.GetParameters();
+				// Look for the bool-returning overload with at least 7 params where 7th is by-ref (status)
+				if (m.ReturnType == typeof(bool) && ps.Length >= 7 && ps[6].ParameterType.IsByRef)
+				{
+					target = m;
+					break;
+				}
+			}
+		}
+		if (target == null)
+		{
+			throw new PlatformOperationUnavailableException("Unable to locate Market.PurchaseProduct method.");
+		}
+		object[] args = new object[]
+		{
+			(long)Convert.ToInt32(actingUser.Id),
+			0L,
+			YouTubeVideoProductId,
+			videoCostInRobux,
+			false,
+			(byte)initiatingPlatformType,
+			status,
+			Type.Missing,
+			Type.Missing,
+			Type.Missing
+		};
+		var result = target.Invoke(null, args);
+		status = (Roblox.EconomyHelper.TransactionStatus)args[6];
+		ok = result is bool b && b;
+		saleId = null;
+		if (!ok)
 		{
 			if ((int)status == 4)
 			{

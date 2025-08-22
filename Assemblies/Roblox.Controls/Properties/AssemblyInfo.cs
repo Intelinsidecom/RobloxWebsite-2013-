@@ -3,9 +3,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.Versioning;
 using System.Web.UI;
-using AjaxControlToolkit;
 
-[assembly: ScriptCombine]
 [assembly: WebResource("Roblox.Controls.Image.min.js", "application/x-javascript")]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyFile("")]

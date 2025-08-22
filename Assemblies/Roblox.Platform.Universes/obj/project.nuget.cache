@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "G3xhkXiXW1osIGGNDGQMP5tYbbDymJLWOq1fKpbsCjeg6XltRl7+4LomWao/vyMJbBcxlmujs1h6o0zmkgSrOA==",
+  "dgSpecHash": "uQVC09KyFy0=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

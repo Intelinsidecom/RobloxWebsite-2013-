@@ -56,7 +56,7 @@ public interface IAssetTypeFactory
 	/// </summary>
 	/// <param name="platformAssetType">The platform asset type enum.</param>
 	/// <returns>Assets service client's asset type enum.</returns>
-	AssetType ToAssetsClientAssetType(AssetType platformAssetType);
+	Roblox.Assets.Client.AssetType ToAssetsClientAssetType(AssetType platformAssetType);
 
 	/// <summary>
 	/// function to determine if a archival is enabled for a type

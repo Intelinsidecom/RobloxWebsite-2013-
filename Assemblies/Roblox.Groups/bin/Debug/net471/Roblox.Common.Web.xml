@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Common.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Common.HttpContextExtensions">
+            <summary>
+            Http context extensions
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.HttpContextExtensions.GetOriginIP(System.Web.HttpContextBase)">
+            <summary>
+            Determines the true origin IP address based on whether the request came from an internal server,
+            externally through a load balancer, through DosArrest, or through DosArrest through a load balancer.
+            </summary>
+            <param name="context">context base</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.HttpContextExtensions.GetOriginIP(System.Web.HttpContext)">
+            <summary>
+            Determines the true origin IP address based on whether the request came from an internal server,
+            externally through a load balancer, through DosArrest, or through DosArrest through a load balancer.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.HttpContextIpResolver">
+            <inheritdoc cref="T:Roblox.Common.IIpResolver`1" />
+        </member>
+        <member name="M:Roblox.Common.HttpContextIpResolver.#ctor(Roblox.Common.IIpResolver{Roblox.Common.HttpHeaderIpResolverModel},Roblox.Common.IIpResolver{Roblox.Common.HttpHeaderSecureIpResolverModel})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Common.HttpContextIpResolver.Resolve(System.Web.HttpContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Common.HttpContextIpResolver.Resolve(System.Web.HttpContextBase)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Common.HttpHeaderProtocolResolver">
+            <summary>
+            Contains logic for determining origin request protocol using values
+            from the request object
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.HttpHeaderProtocolResolver.#ctor">
+            <summary>
+            Resolves origin protocol based on request properties
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.HttpHeaderProtocolResolver.ResolveProtocolFromRequestProperties(System.String,System.String,System.String)">
+            <summary>
+            Determines whether the provided IP address is an allowed proxy IP and returns the protocol
+            of the request from the X-Forwarded-Proto header value
+            </summary>
+            <param name="userHostAddress">The IP address reported by the request</param>
+            <param name="requestProtocol">The protocol "http" or "https" reported by the request</param>
+            <param name="xForwardedProtoValue">The value of the X-Forwarded-Proto header</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.HttpHeaderProtocolResolver.GetIsRequestSecureFromRequestProperties(System.String,System.String,System.String)">
+            <summary>
+            Returns true if request originated over https according to request properties
+            </summary>
+            <param name="userHostAddress">IP address according to request</param>
+            <param name="requestProtocol">Protocol according to request</param>
+            <param name="xForwardedProtoValue">Protocol according to X-Forwarded-Proto header</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.HttpProxyHeaders">
+            <summary>
+            Contains the header names for the X-Forwarded-For header (used by load balancers to store the IP of incoming requests)
+            and the X-Real-Ip header (used by DosArrest to store the IP of incoming requests)
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.XForwardedForHeaderName">
+            <summary>
+            The name of the header in which load balancers define the host address of the incoming request
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.DosArrestRealIpHeaderName">
+            <summary>
+            The name of the header in which DosArrest defines the original host address
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.XForwardedProtoHeaderName">
+            <summary>
+            The name of a header added by our load balancers to indicate whether the client connection was
+            over http or https
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxEdgeProxyDate">
+            <summary>
+            The date of the secure request; functions as a nonce
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxEdgeProxyUrl">
+            <summary>
+            This is the url that is securely proxied
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxEdgeProxyTrueIp">
+            <summary>
+            This is the IP address from the secure server
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxEdgeProxySecure">
+            <summary>
+            The HMAC hash
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxCnProxyDate">
+            <summary>
+            The date of the secure request; functions as a nonce
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxCnProxyUrl">
+            <summary>
+            This is the url that is securely proxied
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxCnProxyTrueIp">
+            <summary>
+            This is the IP address from the secure server
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxCnProxySecure">
+            <summary>
+            The HMAC hash
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxCnProxySecure2">
+            <summary>
+            The HMAC hash
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpProxyHeaders.RobloxWhiteListProxiedIp">
+            <summary>
+            IP Address from a whitelisted proxy server
+            </summary>
+        </member>
+        <member name="T:Roblox.Common.HttpRequestExtensions">
+            <summary>
+            HttpRequest extension methods
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.HttpRequestExtensions.IsOriginSecureConnection(System.Web.HttpRequest)">
+            <summary>
+            Determines if the originating connection was over https based on headers
+            added to the request (if the request is coming through a load balancer)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.HttpRequestExtensions.IsOriginSecureConnection(System.Web.HttpRequestBase)">
+            <summary>
+            Determines if the originating connection was over https based on headers
+            added to the request (if the request is coming through a load balancer)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.HttpRequestProtocolResolver">
+            <summary>
+            Contains methods to resolve origin protocol of HttpRequest and HttpRequestBase objects
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.HttpRequestProtocolResolver.#ctor(Roblox.Common.IHttpHeaderProtocolResolver)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.HttpRequestProtocolResolver.ResolveProtocol(System.Web.HttpRequest)">
+            <summary>
+            Resolves the protocol, "http" or "https", for a HttpRequest object
+            based on request headers if they are present
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.HttpRequestProtocolResolver.IsRequestSecure(System.Web.HttpRequest)">
+            <summary>
+            True if the request originated over https according to request headers
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.HttpRequestProtocolResolver.ResolveProtocol(System.Web.HttpRequestBase)">
+            <summary>
+            Resolves the protocol, "http" or "https", for a HttpRequestBase object
+            based on request headers if they are present
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.HttpRequestProtocolResolver.IsRequestSecure(System.Web.HttpRequestBase)">
+            <summary>
+            True if the request originated over https according to request headers
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.IHeaderIpResolver">
+            <summary>
+            interface for resolving Ips based on info from Roblox http headers.
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.IHeaderIpResolver.Resolve(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Resolve Ip Address based on client's remote Ip address and header values.
+            
+            This is necessary because we have data-centers that proxy in to our main
+            data0center and the headers help define the source.
+            </summary>
+            <returns>An ip address</returns>
+        </member>
+        <member name="T:Roblox.Common.IHttpHeaderIpResolver">
+            <summary>
+            Interface used to determine which field extracted from an Http request is the true origin IP address
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.IHttpHeaderIpResolver.ResolveOriginIpFromRequestHeaders(System.String,System.String,System.String,System.String)">
+            <summary>
+            Takes the user host address according to the request and the values of the X-Forwarded-For and X-Real-Ip headers
+            and returns which of these values is the true origin host IP
+            </summary>
+            <param name="userHostAddress"></param>
+            <param name="xForwardedForHeaderValue"></param>
+            <param name="xRealIpHeaderValue"></param>
+            <param name="robloxProxiedForHeaderValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.IHttpHeaderProtocolResolver">
+            <summary>
+            Interface for determining protocol from raw request data
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.IHttpHeaderProtocolResolver.ResolveProtocolFromRequestProperties(System.String,System.String,System.String)">
+            <summary>
+            Resolves protocol from provided parameters
+            </summary>
+            <param name="userHostAddress">The IP address according to a request</param>
+            <param name="requestProtocol">The protocol (http or https) according to a request</param>
+            <param name="xForwardedProtoValue">The protocol according to the X-Forwarded-Proto header of a request</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.IHttpHeaderProtocolResolver.GetIsRequestSecureFromRequestProperties(System.String,System.String,System.String)">
+            <summary>
+            Returns true if request originated over https according to request properties
+            </summary>
+            <param name="userHostAddress"></param>
+            <param name="requestProtocol"></param>
+            <param name="xForwardedProtoValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.IHttpRequestProtocolResolver">
+            <summary>
+            Interface used for RequestProtocolResolver able to resolve for both HttpRequest and HttpRequest base
+            </summary>
+        </member>
+        <member name="T:Roblox.Common.IIpResolver`1">
+            <summary>
+            interface for resolving Ips
+            </summary>
+            <typeparam name="TResolveFrom"></typeparam>
+        </member>
+        <member name="M:Roblox.Common.IIpResolver`1.Resolve(`0)">
+            <summary>
+            Resolve Ip Address from <typeparamref name="TResolveFrom"/>
+            </summary>
+            <param name="data">data to resolve from</param>
+            <returns>An ip address</returns>
+        </member>
+        <member name="T:Roblox.Common.IHttpSecureIpResolver">
+            <summary>
+            Interface used to determine if the IP from a supplied secure request header is the true origin IP address
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.IHttpSecureIpResolver.ResolveOriginIpFromSecureIpHeaders(System.String,System.String,System.String,System.Boolean,System.Tuple{System.String,System.String},System.Tuple{System.String,System.String})">
+            <summary>
+            Uses the secure headers from Nginx to resolve the client IP.
+            </summary>
+            <param name="trueIp"></param>
+            <param name="proxyUrl"></param>
+            <param name="nonce"></param>
+            <param name="bool enableHashenableHash"></param>
+            <param name="hashAndKeyPair1"></param>
+            <param name="hashAndKeyPair2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.IRequestProtocolResolver`1">
+            <summary>
+            Interface for resolving whether protocol was http or https for a
+            object representing a request
+            </summary>
+            <typeparam name="TRequestObject"></typeparam>
+        </member>
+        <member name="M:Roblox.Common.IRequestProtocolResolver`1.ResolveProtocol(`0)">
+            <summary>
+            Resolves protocol as "http" or "https" from <typeparamref name="TRequestObject>>"/>
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.IRequestProtocolResolver`1.IsRequestSecure(`0)">
+            <summary>
+            True if the request originated through https
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Common.HttpHeaderIpResolverModel">
+            <summary>
+            Model for resolving Ip via Http Headers
+            </summary>
+        </member>
+        <member name="P:Roblox.Common.HttpHeaderIpResolverModel.UserHostAddress">
+            <summary>
+            Host address
+            </summary>
+        </member>
+        <member name="P:Roblox.Common.HttpHeaderIpResolverModel.ForwardedFor">
+            <summary>
+            XForwardedForHeaderName value from proxy headers
+            </summary>
+        </member>
+        <member name="P:Roblox.Common.HttpHeaderIpResolverModel.DosArrestRealIpHeaderName">
+            <summary>
+            Real Ip header Name from proxy headers
+            </summary>
+        </member>
+        <member name="P:Roblox.Common.HttpHeaderIpResolverModel.RobloxProxiedFor">
+            <summary>
+            Roblox-Proxied-IP header for IPs that are behind a NAT or Load Balancer
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.HttpHeaderIpResolver.TrimAndValidateXForwardedFor(System.String)">
+            <summary>
+            First IP address from X-Forwarded-For header.  This represents the original client IP address, but BEWARE THIS CAN BE SPOOFED.  
+            </summary>
+            <param name="xForwardedForHeaderValue">The value of the xForwardedForHeader</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.HttpHeaderIpResolver.ResolveOriginIpFromRequestHeaders(System.String,System.String,System.String,System.String)">
+            <summary>
+            Determines which of the three provided values should be used as the OriginIP Address
+            based on whether the OriginIP is from one of the three scenarios:
+             1) an internal server (standard load-balancer situation)
+             2) through DosArrest (deprecated).
+             3) through another header. This is for IP addresses behind a NAT proxy.
+            </summary>
+            <param name="userHostAddress"></param>
+            <param name="xForwardedForHeaderValue"></param>
+            <param name="xRealIpHeaderValue"></param>
+            <param name="robloxProxiedForHeaderValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Common.HttpHeaderIpResolver.Resolve(Roblox.Common.HttpHeaderIpResolverModel)">
+            <summary>
+            Resolve Ip from headers
+            </summary>
+            <param name="data">header data</param>
+            <returns>Ip address</returns>
+        </member>
+        <member name="T:Roblox.Common.HttpHeaderSecureIpResolverModel">
+            <summary>
+            Model for receiving the client IP via secure header and hash check
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpHeaderSecureIpResolverModel.TrueIp">
+            <summary>
+            The purported client IP of the request
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpHeaderSecureIpResolverModel.ProxyUrl">
+            <summary>
+            The proxy-reported URL of the request
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpHeaderSecureIpResolverModel.Nonce">
+            <summary>
+            Nonce to prevent replay attacks.
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpHeaderSecureIpResolverModel.SecureHash1">
+            <summary>
+            The HMAC signature verifying the client IP
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpHeaderSecureIpResolverModel.SecureHash2">
+            <summary>
+            The HMAC signature verifying the client IP, allowing for key rotation
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpHeaderSecureIpResolverModel.EnableHashCheck">
+            <summary>
+            Boolean to determine whether the hash check is enforced
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpHeaderSecureIpResolverModel.Key1">
+            <summary>
+            The key used to validate the SecureHash
+            </summary>
+        </member>
+        <member name="F:Roblox.Common.HttpHeaderSecureIpResolverModel.Key2">
+            <summary>
+            The key used to validate the SecureHash, allowing for key rotation
+            </summary>
+        </member>
+        <member name="M:Roblox.Common.OwinContextExtensions.GetOwinContextOriginIP(Microsoft.Owin.IOwinContext)">
+            <summary>
+            Proxy aware IP address lookup
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Authentication.AccountSecurity</AssemblyName>
@@ -8,6 +8,7 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);CS1668;0618</NoWarn>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
@@ -16,16 +17,16 @@
       <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Authentication.AccountSecurityTickets">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Authentication.AccountSecurityTickets.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.TwoStepVerification">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.TwoStepVerification.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
+      <HintPath>..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
@@ -40,5 +41,8 @@
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
 </Project>

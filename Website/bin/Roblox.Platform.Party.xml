@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Party</name>
+    </assembly>
+    <members>
+        <member name="F:Roblox.Platform.Party.Events.PartyEventType.PartyReadyToBeDeleted">
+            <summary>
+            Used when a party needs to be deleted, i.e. the last member leaves.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Party.Events.PartyEventType.PartyInvitationSent">
+            <summary>
+            Used when a party invitation is sent to someone
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Party.Events.PartyEventType.PartyInvitationAccepted">
+            <summary>
+            Used when someone accepts a party invitation
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Party.Events.PartyEventType.PartyCreated">
+            <summary>
+            Used when someone starts a new party
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Party.Events.PartyEventType.PartyMemberLeft">
+            <summary>
+            Used when someone leaves a party
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Party.PartyBuilder.OnUserSignout(Roblox.Platform.Membership.IUser,Roblox.Platform.Devices.IPlatform)">
+            <summary>
+            If the user is signing out from the device type they joined their current party from, then remove them from it
+            </summary>
+            <param name="user"></param>
+            <param name="platform"></param>
+        </member>
+        <member name="M:Roblox.Platform.Party.PartyBuilder.TakeLeadershipOfParty(Roblox.Platform.Devices.IPlatform,System.Guid,Roblox.Platform.Membership.IUser)">
+            <summary>
+            The specified user takes leadership of the party.
+            </summary>
+            <param name="platform">The platform the user is on</param>
+            <param name="partyId">The party the user wishes to be leader of. The user must be a member of that party</param>
+            <param name="userToBeLeader">User who wishes to be leader</param>
+        </member>
+        <member name="F:Roblox.Platform.Party.PartyUpdateNotificationType.ILeftParty">
+            <summary>
+            This goes out to the user who left the party. 
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Party.PartyUpdateNotificationType.ICreatedParty">
+            <summary>
+            This goes out to the user who created the party. 
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Party.PartyUpdateNotificationType.IJoinedParty">
+            <summary>
+            This goes out to the user who joined the party. 
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Party.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

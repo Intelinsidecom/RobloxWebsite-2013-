@@ -30,11 +30,11 @@ internal sealed class RobloxFirehoseClient : AmazonKinesisFirehoseClient
 	/// <inheritdoc />
 	protected override void CustomizeRuntimePipeline(RuntimePipeline pipeline)
 	{
-		if (!(((AmazonServiceClient)this).Config is RobloxFirehoseClientConfig robloxFirehoseClientConfig))
+		if (!(Config is RobloxFirehoseClientConfig robloxFirehoseClientConfig))
 		{
-			throw new ArgumentException("Configuration cannot be converted to RobloxDynamoDbClientConfig.");
+			throw new ArgumentException("Configuration cannot be converted to RobloxFirehoseClientConfig.");
 		}
-		((AmazonServiceClient)this).CustomizeRuntimePipeline(pipeline);
+		base.CustomizeRuntimePipeline(pipeline);
 		if (robloxFirehoseClientConfig.IsAsyncRequestTimeoutEnabled && ((ClientConfig)robloxFirehoseClientConfig).Timeout.HasValue)
 		{
 			AsyncInvokeTimeoutHandler asyncInvokeTimeoutHandler = new AsyncInvokeTimeoutHandler(new AsyncInvokeTimeoutHandlerConfig(((ClientConfig)robloxFirehoseClientConfig).Timeout.Value));

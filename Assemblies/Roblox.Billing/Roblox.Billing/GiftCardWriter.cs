@@ -103,24 +103,24 @@ public class GiftCardWriter
 		XGraphics xGraphics = XGraphics.FromPdfPage(_Page);
 		XTextFormatter val = new XTextFormatter(xGraphics);
 		XRect quad = BeginQuadrant(xGraphics, 2);
-		((XRect)(ref quad)).Y = ((XRect)(ref quad)).Y + (((XRect)(ref quad)).Height / 2.0 - _HeaderHeightLarge / 2.0);
+		quad.Y = quad.Y + (quad.Height / 2.0 - _HeaderHeightLarge / 2.0);
 		val.Alignment = (XParagraphAlignment)2;
 		val.DrawString(_RedemptionCode, _HeaderFontLarge, (XBrush)(object)XBrushes.Black, quad, XStringFormats.TopLeft);
 		EndQuadrant(xGraphics);
 		quad = BeginQuadrant(xGraphics, 4);
 		val.Alignment = (XParagraphAlignment)2;
 		string[] productStrings = _GetCertificateProductStrings();
-		((XRect)(ref quad)).Y = ((XRect)(ref quad)).Y + 2.0 * _HeaderHeightLarge;
+		quad.Y = quad.Y + 2.0 * _HeaderHeightLarge;
 		val.DrawString(productStrings[0], _TextFont, (XBrush)(object)XBrushes.Black, quad, XStringFormats.TopLeft);
-		((XRect)(ref quad)).Y = ((XRect)(ref quad)).Y + _FontHeight;
+		quad.Y = quad.Y + _FontHeight;
 		val.DrawString(productStrings[1], _HeaderFontLarge, (XBrush)(object)XBrushes.Black, quad, XStringFormats.TopLeft);
-		((XRect)(ref quad)).Y = ((XRect)(ref quad)).Y + 2.0 * _HeaderHeightLarge;
+		quad.Y = quad.Y + 2.0 * _HeaderHeightLarge;
 		val.DrawString("Awarded to", _TextFont, (XBrush)(object)XBrushes.Black, quad, XStringFormats.TopLeft);
-		((XRect)(ref quad)).Y = ((XRect)(ref quad)).Y + _HeaderHeightLarge;
+		quad.Y = quad.Y + _HeaderHeightLarge;
 		val.DrawString(_To, _HeaderFontLarge, (XBrush)(object)XBrushes.Black, quad, XStringFormats.TopLeft);
-		((XRect)(ref quad)).Y = ((XRect)(ref quad)).Y + 2.0 * _HeaderHeightLarge;
+		quad.Y = quad.Y + 2.0 * _HeaderHeightLarge;
 		val.DrawString(_Message, _TextFont, (XBrush)(object)XBrushes.Black, quad, XStringFormats.TopLeft);
-		((XRect)(ref quad)).Y = ((XRect)(ref quad)).Y + 6.0 * _FontHeight;
+		quad.Y = quad.Y + 6.0 * _FontHeight;
 		val.DrawString("From " + _From, _HeaderFontMedium, (XBrush)(object)XBrushes.Black, quad, XStringFormats.TopLeft);
 		EndQuadrant(xGraphics);
 	}
@@ -142,31 +142,33 @@ public class GiftCardWriter
 		double dx = 0.0;
 		double dy = 0.0;
 		double dt = 0.0;
-		XRect rect = default(XRect);
+		double pageWidth = (double)_Page.Width;
+		double pageHeight = (double)_Page.Height;
+		XRect rect;
 		if (quadrant == 0)
 		{
-			((XRect)(ref rect))._002Ector(0.0, 0.0, XUnit.op_Implicit(_Page.Width), XUnit.op_Implicit(_Page.Height));
+			rect = new XRect(0.0, 0.0, pageWidth, pageHeight);
 		}
 		else
 		{
-			((XRect)(ref rect))._002Ector(10.0, 10.0, XUnit.op_Implicit(_Page.Width) / 2.0 - 20.0, XUnit.op_Implicit(_Page.Height) / 2.0 - 20.0);
-			dt = ((quadrant != 1) ? 0.0 : 180.0);
+			rect = new XRect(10.0, 10.0, pageWidth / 2.0 - 20.0, pageHeight / 2.0 - 20.0);
+			dt = (quadrant == 1) ? 180.0 : 0.0;
 			switch (quadrant)
 			{
-			case 1:
-				dx = XUnit.op_Implicit(_Page.Width) / 2.0;
-				dy = XUnit.op_Implicit(_Page.Height) / 2.0;
-				break;
-			case 2:
-				dx = XUnit.op_Implicit(_Page.Width) / 2.0;
-				break;
-			case 3:
-				dy = XUnit.op_Implicit(_Page.Height) / 2.0;
-				break;
-			case 4:
-				dx = XUnit.op_Implicit(_Page.Width) / 2.0;
-				dy = XUnit.op_Implicit(_Page.Height) / 2.0;
-				break;
+				case 1:
+					dx = pageWidth / 2.0;
+					dy = pageHeight / 2.0;
+					break;
+				case 2:
+					dx = pageWidth / 2.0;
+					break;
+				case 3:
+					dy = pageHeight / 2.0;
+					break;
+				case 4:
+					dx = pageWidth / 2.0;
+					dy = pageHeight / 2.0;
+					break;
 			}
 		}
 		xGraphics.TranslateTransform(dx, dy);

@@ -136,7 +136,7 @@ public class AlphaDetector
 			{
 				return !img.IsOpaque;
 			}
-			IPixelCollection pc = img.GetPixels();
+			IPixelCollection<byte> pc = img.GetPixels();
 			for (int y = 0; y < img.Height; y++)
 			{
 				for (int x = 0; x < img.Width; x++)

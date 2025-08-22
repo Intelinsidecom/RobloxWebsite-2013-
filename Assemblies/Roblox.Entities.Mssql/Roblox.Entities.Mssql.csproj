@@ -4,6 +4,7 @@
     <AssemblyName>Roblox.Entities.Mssql</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <NoWarn>$(NoWarn);0618</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>

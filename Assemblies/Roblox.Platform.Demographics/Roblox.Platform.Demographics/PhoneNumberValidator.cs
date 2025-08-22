@@ -53,7 +53,7 @@ public class PhoneNumberValidator : IPhoneNumberValidator
 			return false;
 		}
 		PhoneNumberUtil phoneNumberUtil = PhoneNumberUtil.GetInstance();
-		PhoneNumber phoneNumber;
+		PhoneNumbers.PhoneNumber phoneNumber;
 		try
 		{
 			phoneNumber = phoneNumberUtil.Parse(nationalPhoneNumber, twoLetterCountryCode);
@@ -132,7 +132,7 @@ public class PhoneNumberValidator : IPhoneNumberValidator
 			throw new PlatformArgumentException("phoneNumber");
 		}
 		PhoneNumberUtil phoneNumberUtil = PhoneNumberUtil.GetInstance();
-		PhoneNumber pNumber;
+		PhoneNumbers.PhoneNumber pNumber;
 		try
 		{
 			pNumber = phoneNumberUtil.Parse(phoneNumber, twoLetterCountryCode ?? "ZZ");
@@ -172,7 +172,7 @@ public class PhoneNumberValidator : IPhoneNumberValidator
 		return sb.ToString();
 	}
 
-	private ISanitizedPhoneNumber BuildFromParsedPhone(PhoneNumber phoneNumber, IPhoneNumberInternationalPrefix phoneNumberInternationalPrefix = null)
+	private ISanitizedPhoneNumber BuildFromParsedPhone(PhoneNumbers.PhoneNumber phoneNumber, IPhoneNumberInternationalPrefix phoneNumberInternationalPrefix = null)
 	{
 		string nationalNumber = PhoneNumberUtil.GetInstance().GetNationalSignificantNumber(phoneNumber);
 		string fullNumber = (phoneNumber.HasCountryCode ? $"{phoneNumber.CountryCode}{nationalNumber}" : nationalNumber);
@@ -184,7 +184,7 @@ public class PhoneNumberValidator : IPhoneNumberValidator
 		};
 	}
 
-	private bool TryParsePhoneNumber(string phoneNumber, string twoLetterCountryCode, out PhoneNumber parsedPhoneNumber)
+	private bool TryParsePhoneNumber(string phoneNumber, string twoLetterCountryCode, out PhoneNumbers.PhoneNumber parsedPhoneNumber)
 	{
 		parsedPhoneNumber = null;
 		if (string.IsNullOrEmpty(phoneNumber))
@@ -225,7 +225,7 @@ public class PhoneNumberValidator : IPhoneNumberValidator
 	internal virtual string GetSignificantNumber(string nationalNumber, string twoLetterCountryCode)
 	{
 		PhoneNumberUtil phoneNumberUtil = PhoneNumberUtil.GetInstance();
-		PhoneNumber phoneNumber;
+		PhoneNumbers.PhoneNumber phoneNumber;
 		try
 		{
 			phoneNumber = phoneNumberUtil.Parse(nationalNumber, twoLetterCountryCode);

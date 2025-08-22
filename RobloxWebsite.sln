@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -42,6 +42,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Serialization.Json", "Assemblies\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj", "{CE0A3916-334E-4C8B-A216-EB86D638C4BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Http.ServiceClient", "Assemblies\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj", "{908D32DD-88DA-4398-A690-B5379F4E0953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Controls", "Assemblies\Roblox.Controls\Roblox.Controls.csproj", "{70938E70-DEBC-4AC0-9D04-E51F135A57D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Http.Client", "Assemblies\Roblox.Http.Client\Roblox.Http.Client.csproj", "{579CD6AE-AE7C-4372-99B2-387A8E0D3A30}"
 EndProject
@@ -284,6 +286,18 @@ Global
 		{908D32DD-88DA-4398-A690-B5379F4E0953}.Release|x86.ActiveCfg = Release|Any CPU
 		{908D32DD-88DA-4398-A690-B5379F4E0953}.Release|x86.Build.0 = Release|Any CPU
 		{579CD6AE-AE7C-4372-99B2-387A8E0D3A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Debug|x64.Build.0 = Debug|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Debug|x86.Build.0 = Debug|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Release|x64.ActiveCfg = Release|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Release|x64.Build.0 = Release|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Release|x86.ActiveCfg = Release|Any CPU
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6}.Release|x86.Build.0 = Release|Any CPU
 		{579CD6AE-AE7C-4372-99B2-387A8E0D3A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{579CD6AE-AE7C-4372-99B2-387A8E0D3A30}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{579CD6AE-AE7C-4372-99B2-387A8E0D3A30}.Debug|x64.Build.0 = Debug|Any CPU
@@ -320,5 +334,6 @@ Global
 		{CE0A3916-334E-4C8B-A216-EB86D638C4BA} = {20EFFD2B-F690-FFA8-16A9-C9830A7F7F9B}
 		{908D32DD-88DA-4398-A690-B5379F4E0953} = {20EFFD2B-F690-FFA8-16A9-C9830A7F7F9B}
 		{579CD6AE-AE7C-4372-99B2-387A8E0D3A30} = {20EFFD2B-F690-FFA8-16A9-C9830A7F7F9B}
+		{70938E70-DEBC-4AC0-9D04-E51F135A57D6} = {20EFFD2B-F690-FFA8-16A9-C9830A7F7F9B}
 	EndGlobalSection
 EndGlobal

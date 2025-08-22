@@ -103,8 +103,8 @@ public static class Resizer
 			MagickImage sourceImage = new MagickImage(texture, magickSettings);
 			try
 			{
-				DetermineDesiredSize(sourceImage.Width, sourceImage.Height, maxEdgeSize, out var desiredWidth, out var desiredHeight);
-				sourceImage.Resize(desiredWidth, desiredHeight);
+				DetermineDesiredSize((int)sourceImage.Width, (int)sourceImage.Height, maxEdgeSize, out var desiredWidth, out var desiredHeight);
+				sourceImage.Resize((uint)desiredWidth, (uint)desiredHeight);
 				sourceImage.Write((Stream)memoryStream, (MagickFormat)163);
 			}
 			finally

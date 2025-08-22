@@ -58,16 +58,16 @@ public class AudioCopyrightStatusReader : IAudioCopyrightStatusReader
 		}
 		IEnumerable<ContentIdentifier> identifier = rawContent.Select(delegate(IRawContent content)
 		{
-			//IL_0002: Unknown result type (might be due to invalid IL or missing references)
-			//IL_002b: Unknown result type (might be due to invalid IL or missing references)
-			ContentIdentifier result = default(ContentIdentifier);
-			((ContentIdentifier)(ref result)).ContentType = ContentType.Audio.ToString();
-			((ContentIdentifier)(ref result)).ContentTargetId = content.Md5Hash;
+			var result = new ContentIdentifier
+			{
+				ContentType = ContentType.Audio.ToString(),
+				ContentTargetId = content.Md5Hash
+			};
 			return result;
 		});
 		IEnumerable<ContentIdentifier> source = _ContentRightsClient.AreContentRightsProtected(identifier);
 		ILookup<string, IRawContent> lookupByHashRawContent = rawContent.ToLookup((IRawContent r) => r.Md5Hash, (IRawContent r) => r);
-		return (IReadOnlyCollection<IRawContent>)(object)source.Select((ContentIdentifier c) => lookupByHashRawContent[((ContentIdentifier)(ref c)).ContentTargetId].First()).ToArray();
+		return (IReadOnlyCollection<IRawContent>)(object)source.Select((ContentIdentifier c) => lookupByHashRawContent[c.ContentTargetId].First()).ToArray();
 	}
 
 	/// <inheritdoc />

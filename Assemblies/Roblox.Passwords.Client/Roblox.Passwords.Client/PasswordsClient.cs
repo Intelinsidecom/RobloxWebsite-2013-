@@ -7,6 +7,7 @@ using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
 using Roblox.Passwords.Client.Properties;
 using Roblox.RequestContext;
+using Roblox.Sentinels.CircuitBreakerPolicy;
 
 namespace Roblox.Passwords.Client;
 
@@ -144,15 +145,6 @@ public class PasswordsClient : IPasswordsClient
 		return await _ServiceRequestSender.SendPostRequestAsync<SetPasswordResetRequiredRequest, SetPasswordResetRequiredResult>("/v1/SetPasswordResetRequired", request, cancellationToken);
 	}
 
-	private static ClientCircuitBreakerType GetClientCircuitBreakerType()
-	{
-		if (!Settings.Default.PerEndpointCircuitBreakerEnabled)
-		{
-			return (ClientCircuitBreakerType)1;
-		}
-		return (ClientCircuitBreakerType)2;
-	}
-
 	private static bool ApiKeyViaHeaderEnabled()
 	{
 		return Settings.Default.ApiKeyViaHeaderEnabled;
@@ -160,10 +152,9 @@ public class PasswordsClient : IPasswordsClient
 
 	private static IHttpClientBuilder CreateHttpClientBuilder(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, IRequestContextLoader requestContextLoader)
 	{
-		return new Roblox.Http.ServiceClient.HttpClientBuilder((IServiceClientSettings)Settings.Default, counterRegistry, apiKeyGetter, (Func<bool>)null, (CookieContainer)null, requestContextLoader, (IHttpMessageHandlerBuilder)null)
-		{
-			ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled,
-			GetClientCircuitBreakerType = GetClientCircuitBreakerType
-		};
+		var builder = new Roblox.Http.ServiceClient.HttpClientBuilder((IServiceClientSettings)Settings.Default, counterRegistry, apiKeyGetter);
+		// Set optional delegates if supported by this HttpClientBuilder version
+		try { builder.ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled; } catch { /* property may not exist in this version */ }
+		return builder;
 	}
 }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.OwnershipV2</AssemblyName>
@@ -12,7 +12,7 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.OwnershipV2.Client" />
+    <ProjectReference Include="..\Roblox.OwnershipV2.Client\Roblox.OwnershipV2.Client.csproj" />
     <Reference Include="Roblox.DataV2.Core">
       <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
     </Reference>

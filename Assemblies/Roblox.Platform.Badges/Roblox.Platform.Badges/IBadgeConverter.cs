@@ -6,13 +6,13 @@ namespace Roblox.Platform.Badges;
 
 internal interface IBadgeConverter
 {
-	Roblox.ApiClientBase.SortOrder ConvertToClientSortOrder(Roblox.DataV2.Core.SortOrder sortOrder);
+    Roblox.ApiClientBase.SortOrder ConvertToClientSortOrder(Roblox.DataV2.Core.SortOrder sortOrder);
 
-	Badge ConvertToPlatformBadge(Badge badge);
+    Roblox.Platform.Badges.Badge ConvertToPlatformBadge(Roblox.Badges.Client.Badge badge);
 
-	BadgeAwarder ConvertToPlatformBadgeAwarder(Awarder clientBadgeAwarder);
+    Roblox.Platform.Badges.BadgeAwarder ConvertToPlatformBadgeAwarder(Roblox.Badges.Client.Awarder clientBadgeAwarder);
 
-	Awarder ConvertToClientBadgeAwarder(IBadgeAwarder platformBadgeAwarder);
+    Roblox.Badges.Client.Awarder ConvertToClientBadgeAwarder(Roblox.Platform.Badges.IBadgeAwarder platformBadgeAwarder);
 
-	Badge ConvertToClientBadge(Badge badge);
+    Roblox.Badges.Client.Badge ConvertToClientBadge(Roblox.Platform.Badges.Badge badge);
 }

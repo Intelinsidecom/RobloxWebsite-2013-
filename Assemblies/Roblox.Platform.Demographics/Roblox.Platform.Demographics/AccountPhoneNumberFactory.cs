@@ -457,8 +457,8 @@ public class AccountPhoneNumberFactory : IAccountPhoneNumberFactory
 		{
 			return string.Empty;
 		}
-		PhoneNumberUtil instance = PhoneNumberUtil.GetInstance();
-		PhoneNumber phoneParsed = instance.Parse(phone, countryCode);
+		PhoneNumbers.PhoneNumberUtil instance = PhoneNumbers.PhoneNumberUtil.GetInstance();
+		PhoneNumbers.PhoneNumber phoneParsed = instance.Parse(phone, countryCode);
 		phone = instance.Format(phoneParsed, (PhoneNumberFormat)1);
 		if (phone.Length <= numberOfVisibleDigits)
 		{

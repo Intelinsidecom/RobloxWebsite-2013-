@@ -1,8 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "bZIUJQmLvAzcISMGd2qA9QWaGh6tn46a5s6695bDGx8NPBvaqWkddrcyT1+XM0MKEf6l+vS/bY1PO3q5batW9Q==",
+  "dgSpecHash": "x9Ct3y5U54A=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.Localization.Accounts\\Roblox.Platform.Localization.Accounts.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.Localization.Accounts\\Roblox.Platform.Localization.Accounts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.8\\system.configuration.configurationmanager.9.0.8.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'System.Data.SqlClient' 4.8.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.Localization.Accounts\\Roblox.Platform.Localization.Accounts.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.Localization.Accounts\\Roblox.Platform.Localization.Accounts.csproj",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.1"
+      ]
+    }
+  ]
 }

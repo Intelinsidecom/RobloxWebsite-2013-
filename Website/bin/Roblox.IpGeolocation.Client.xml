@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.IpGeolocation.Client</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.IpGeolocation.Client.IIpLookupClient.LookupAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:Roblox.IpGeolocation.Client.SwaggerException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.IIpLookupClient.LookupAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:Roblox.IpGeolocation.Client.SwaggerException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.IpLookupClient.LookupAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:Roblox.IpGeolocation.Client.SwaggerException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.IpLookupClient.LookupAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:Roblox.IpGeolocation.Client.SwaggerException">A server side error occurred.</exception>
+        </member>
+        <member name="T:Roblox.IpGeolocation.Client.IpLookupClientFactory">
+             <summary>
+             Factory to create a Roblox.Instrumentation monitored REST client.
+             </summary>
+             <remarks>
+             HttpClient on BEDEV1 (.NET Framework) systems should set
+             ServicePointManager.FindServicePoint(baseUri).ConnectionLeaseTimeout to
+             re-use and manage sockets.
+            
+             HttpClients are not pooled in .NET Framework by default.
+            
+             Advanced usage: It is possible to use the client directly by injecting a
+             properly configured HttpClient (and not use this factory class).
+             </remarks>
+        </member>
+        <member name="F:Roblox.IpGeolocation.Client.IpLookupClientFactory.ClientName">
+            <summary>
+            Name used to register a "named" HTTP client.
+            </summary>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.IpLookupClientFactory.#ctor(Roblox.Instrumentation.ICounterRegistry,System.Action{System.Net.Http.HttpClient},System.Net.Http.HttpMessageHandler)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="counterRegistry"><see cref="T:Roblox.Instrumentation.ICounterRegistry"/></param>
+            <param name="configureClient"><see cref="T:System.Action`1"/> allows you to configure the <seealso cref="T:System.Net.Http.HttpClient"/>'s properties like BaseAddress.</param>
+            <param name="httpMessageHandler"><see cref="T:System.Net.Http.HttpMessageHandler"/> for things like circuit breaking, etc.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - Throws when <paramref name="counterRegistry"/> is null
+            </exception>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.IpLookupClientFactory.Create">
+            <inheritdoc cref="T:Roblox.IpGeolocation.Client.IIpLookupClientFactory"/>
+        </member>
+        <member name="T:Roblox.IpGeolocation.Client.IIpLookupClientFactory">
+            <summary>
+            Service client factory
+            </summary>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.IIpLookupClientFactory.Create">
+            <summary>
+            Instantiates a new HttpClient
+            </summary>
+            <returns><see cref="T:Roblox.IpGeolocation.Client.IIpLookupClient"/></returns>
+        </member>
+        <member name="T:Roblox.IpGeolocation.Client.MonitoredIpLookupClient">
+            <summary>
+            Monitored implementation of IpLookupClient
+            </summary>
+        </member>
+        <member name="P:Roblox.IpGeolocation.Client.MonitoredIpLookupClient.HttpClient">
+            <summary>
+            The HttpClient is made available for configuring timeouts, etc.
+            </summary>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.MonitoredIpLookupClient.#ctor(System.Net.Http.HttpClient,Roblox.Http.Client.Monitoring.ClientRequestsMonitor)">
+            <summary>
+            Constructor for a monitored client. It's recommended to use the
+             instead of directly creating an
+            instance.
+            </summary>
+            <param name="httpClient"><see cref="P:Roblox.IpGeolocation.Client.MonitoredIpLookupClient.HttpClient"/></param>
+            <param name="monitor"><see cref="T:Roblox.Http.Client.Monitoring.ClientRequestsMonitor"/></param>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.MonitoredIpLookupClient.LookupAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:Roblox.IpGeolocation.Client.SwaggerException">A server side error occurred.</exception>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.MonitoredIpLookupClient.LookupAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:Roblox.IpGeolocation.Client.SwaggerException">A server side error occurred.</exception>
+        </member>
+        <member name="T:Roblox.IpGeolocation.Client.IIpLookupClientFactoryProvider">
+            <summary>
+            Class used to initialize an <see cref="T:Roblox.IpGeolocation.Client.IIpLookupClientFactory" />
+            with the required circuit breaker and local caching handlers.
+            </summary>
+        </member>
+        <member name="P:Roblox.IpGeolocation.Client.IIpLookupClientFactoryProvider.IpLookupClientFactoryInstance">
+            <summary>
+            Gets a single instance of <see cref="T:Roblox.IpGeolocation.Client.IIpLookupClientFactory" /> that all consumers should use.
+            </summary>
+        </member>
+        <member name="T:Roblox.IpGeolocation.Client.PollyPolicyDelegatingHandler">
+            <summary>
+            Class used to wrap a <see cref="T:Polly.Policy" /> when Polly.Policy is used
+            without the .NET Core HttpClientFactory
+            </summary>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.PollyPolicyDelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            Executes the base handler's SendAsync method through Polly's <see cref="T:Polly.Policy"/>
+            </summary>
+            <param name="request"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.IpGeolocation.Client.IpLookupClientFactoryProvider">
+            <inheritdoc cref="T:Roblox.IpGeolocation.Client.IIpLookupClientFactoryProvider" />
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.IpLookupClientFactoryProvider.#ctor(Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry,System.Func{System.TimeSpan},System.TimeSpan)">
+            <summary>
+            Constructor with parameters used to initialize caching handler.
+            </summary>
+            <param name="logger"></param>
+            <param name="counterRegistry"></param>
+            <param name="cacheTimeToLiveGetter"></param>
+            <param name="cacheTraversalInterval"></param>
+        </member>
+        <member name="P:Roblox.IpGeolocation.Client.IpLookupClientFactoryProvider.IpLookupClientFactoryInstance">
+            <inheritdoc cref="T:Roblox.IpGeolocation.Client.IIpLookupClientFactoryProvider" />
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.IpLookupClientFactoryProvider.SetIpLookupClientFactoryInstance">
+            <summary>
+            Sets IpLookupClientFactoryInstance to a <see cref="T:Roblox.IpGeolocation.Client.IIpLookupClientFactory" /> initialized to build
+            <see cref="T:Roblox.IpGeolocation.Client.IIpLookupClient" /> with local caching handler and circuit breaker handler.
+            </summary>
+        </member>
+        <member name="T:Roblox.IpGeolocation.Client.LocalCacheGetRequestsClientHandler">
+            <summary>
+            <see cref="T:System.Net.Http.DelegatingHandler" /> that locally caches all HTTP GET requests
+            based on the full URI of the request.
+            </summary>
+        </member>
+        <member name="M:Roblox.IpGeolocation.Client.LocalCacheGetRequestsClientHandler.#ctor(System.Func{System.TimeSpan},System.TimeSpan)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="cacheTimeToLiveGetter">Expiration of cached requests</param>
+            <param name="cacheTraversalInterval">How often expired entries will be purged</param>
+        </member>
+    </members>
+</doc>

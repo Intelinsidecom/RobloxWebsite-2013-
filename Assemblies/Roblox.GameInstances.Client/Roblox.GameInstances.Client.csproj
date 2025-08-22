@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.GameInstances.Client</AssemblyName>
@@ -10,10 +10,10 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.GameInstances.Interfaces" />
-    <Reference Include="protobuf-net" />
+    <PackageReference Include="protobuf-net" Version="3.2.30" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>

@@ -193,3 +193,6 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membersh
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.Extensions\obj\Debug\net471\Roblox.P.B56CFAE2.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.Extensions\obj\Debug\net471\Roblox.Platform.Membership.Extensions.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.Extensions\obj\Debug\net471\Roblox.Platform.Membership.Extensions.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.Extensions\bin\Debug\net471\System.Configuration.ConfigurationManager.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.Extensions\bin\Debug\net471\AWSSDK.KinesisFirehose.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.Extensions\bin\Debug\net471\System.Configuration.ConfigurationManager.xml

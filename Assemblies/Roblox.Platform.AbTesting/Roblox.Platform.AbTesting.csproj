@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.AbTesting</AssemblyName>
@@ -13,12 +13,10 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.Platform.Marketing">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.Marketing.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.AbTesting.Core">
-      <HintPath>
-      </HintPath>
+      <HintPath>..\..\Website\bin\Roblox.Platform.AbTesting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>

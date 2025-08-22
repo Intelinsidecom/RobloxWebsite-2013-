@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Groups</AssemblyName>
@@ -10,7 +10,12 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Currency.Client\Roblox.Currency.Client.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Data">
       <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
@@ -22,7 +27,6 @@
       <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="Roblox.Currency.Client" />
     <Reference Include="Roblox.Entities.Mssql">
       <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>

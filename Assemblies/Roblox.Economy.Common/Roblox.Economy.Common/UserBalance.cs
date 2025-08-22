@@ -1,13 +1,13 @@
 using System;
-using Roblox.Currency.Client;
+using Roblox.Platform.VirtualCurrency;
 
 namespace Roblox.Economy.Common;
 
 public static class UserBalance
 {
-	private static ICurrencyAuthority _Client;
+	private static ICurrencyOperations _Client;
 
-	public static ICurrencyAuthority Client
+	public static ICurrencyOperations Client
 	{
 		get
 		{
@@ -31,6 +31,9 @@ public static class UserBalance
 
 	public static bool TryDebitRobux(long userId, long amount)
 	{
-		return Client.TryDebitRobux(userId, amount);
+		// ICurrencyOperations doesn't expose debit; use ICurrencyBudgetAuthority
+		var budget = Client as ICurrencyBudgetAuthority
+			?? throw new ApplicationException("Client does not implement ICurrencyBudgetAuthority");
+		return budget.TryDebitBalance(userId, amount, null);
 	}
 }

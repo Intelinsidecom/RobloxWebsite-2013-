@@ -52,7 +52,7 @@ public class DeviceTypeDAL
 		{
 			new SqlParameter("@ID", ID)
 		};
-		EntityHelper.DoEntityDALDelete(new DbInfo(ConnectionString, "DeviceTypes_DeleteDeviceTypeByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(ConnectionString, "DeviceTypes_DeleteDeviceTypeByID", queryParameters));
 	}
 
 	public static DeviceTypeDAL Get(byte id)

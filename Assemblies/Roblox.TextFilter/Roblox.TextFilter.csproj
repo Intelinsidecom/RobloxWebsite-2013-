@@ -28,5 +28,9 @@
     <Reference Include="Roblox.Common">
       <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <Reference Include="Roblox.RestClientBase">
+      <HintPath>..\..\Website\bin\Roblox.RestClientBase.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

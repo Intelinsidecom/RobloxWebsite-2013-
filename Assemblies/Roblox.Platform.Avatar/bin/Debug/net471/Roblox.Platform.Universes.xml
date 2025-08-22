@@ -1,0 +1,878 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Universes</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Universes.Events.IUniverseEventsObserver">
+            <summary>
+            Universe events observer.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.IUniverseEventsObserver.Subscribe(System.IObservable{Roblox.Platform.Universes.Events.UniverseEntityEvent})">
+            <summary>
+            Subscribe to receive change events
+            </summary>
+            <param name="observable"><see cref="T:System.IObservable`1"/> for <see cref="T:Roblox.Platform.Universes.Events.UniverseEntityEvent"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.IUniverseEventsObserver.Unsubscribe">
+            <summary>
+            Un-subscribe from the <see cref="T:System.IObservable`1"/>.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Universes.Events.UniverseChangeType.Unknown">
+            <summary>
+            An unknown change was made
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Universes.Events.UniverseChangeType.NameDescription">
+            <summary>
+            The name or description was changed
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Universes.Events.UniverseChangeType.RootPlace">
+            <summary>
+            The root place was changed
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Universes.Events.UniverseChangeType.Created">
+            <summary>
+            A universe was created
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Universes.Events.UniverseChangeType.CreatorChanged">
+            <summary>
+            The creator was set
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Universes.Events.UniverseChangeType.IsArchivedChanged">
+            <summary>
+            The archive status of a game was changed
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Universes.Events.UniverseEntityEvent">
+            <summary>
+            The event model published by the <see cref="T:Roblox.Platform.Universes.Events.IUniverseEventsObserver"/> when an universe is updated.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.Events.UniverseEntityEvent.UniverseId">
+            <summary>
+            The universe's id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.Events.UniverseEntityEvent.ChangeType">
+            <summary>
+            The <see cref="T:Roblox.Platform.Universes.Events.UniverseChangeType"/> as a string.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.UniverseEntityEvent.#ctor(System.Int64,Roblox.Platform.Universes.Events.UniverseChangeType)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.Universes.Events.UniverseEntityEvent"/>
+            </summary>
+            <param name="universeId">The universe's id</param>
+            <param name="changeType">The <see cref="T:Roblox.Platform.Universes.Events.UniverseChangeType"/></param>
+        </member>
+        <member name="T:Roblox.Platform.Universes.Events.UniverseEventsPublisher">
+            <summary>
+            UniverseEventsPublisher implements <see cref="T:Roblox.Platform.Universes.Events.IUniverseEventsObserver"/> to get notifications of 
+            events and publishes them to a Universe entity changed SNS topic.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.UniverseEventsPublisher.#ctor(Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.Universes.Events.UniverseEventsPublisher"/>.
+            </summary>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="logger"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.UniverseEventsPublisher.Subscribe(System.IObservable{Roblox.Platform.Universes.Events.UniverseEntityEvent})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.UniverseEventsPublisher.Unsubscribe">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.UniverseEventsPublisher.OnNext(Roblox.Platform.Universes.Events.UniverseEntityEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.UniverseEventsPublisher.OnError(System.Exception)">
+            <summary>
+            This is not implemented.
+            </summary>
+            <param name="error"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Events.UniverseEventsPublisher.OnCompleted">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Universes.PlatformUniverseTextFullyModeratedException">
+            <summary>
+            A platform exception thrown if the Universe Name or Description is fully moderated. In this case we do not save the entity in the database and throw this exception.
+            The caller should handle this exception gracefully.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.PlatformException" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.PlatformUniverseTextFullyModeratedException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.PlatformUniverseTextFullyModeratedException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.PlatformUniverseTextFullyModeratedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.PlatformUniverseTextFullyModeratedException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="T:Roblox.Platform.Universes.PublicUniverseLimitReachedException">
+            <summary>
+            An exception thrown if a you try to make a universe public when the public universe limit 
+            has been reached for the creator of the universe.
+            </summary>
+            <seealso cref="T:System.Exception" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.PublicUniverseLimitReachedException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.PublicUniverseLimitReachedException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.PublicUniverseLimitReachedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.PublicUniverseLimitReachedException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="T:Roblox.Platform.Universes.UniverseTextPartiallyModeratedException">
+            <summary>
+            An exception thrown if the Universe Name or Description is partially moderated.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseTextPartiallyModeratedException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.UniverseTextPartiallyModeratedException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseTextPartiallyModeratedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.UniverseTextPartiallyModeratedException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="T:Roblox.Platform.Universes.Implementation.PermissionsV2UniversePermissionsVerifier">
+            <summary>
+            A very simple wrapper class that encapsulates invoking the Permissions V2 data source
+            to determine if a user has permission to manage the given universe.
+            </summary>
+            <inheritdoc cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.Implementation.PermissionsV2UniversePermissionsVerifier.#ctor(Roblox.PermissionResolution.Client.IPermissionResolutionClient)">
+            <summary>
+            Primary constructor.
+            </summary>
+            <param name="permissionResolutionClient"></param>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Implementation.PermissionsV2UniversePermissionsVerifier.CanUserManageUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserManageUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.Implementation.PermissionsV2UniversePermissionsVerifier.CanUserPlayUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserPlayUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)" />
+        </member>
+        <member name="T:Roblox.Platform.Universes.Implementation.UniversePermissionsVerifierAdapter">
+            <summary>
+            Class that encapsulates two IUniversePermissionsVerifier implementations to handle
+            the additional permission check against the new Permissions V2 service. Access
+            to the Permissions V2 service is gated by settings to enable toggling reading
+            from the service as well as progressive rollout which enables turning on a given
+            percentage of reads. Ultimately, both verifier implementations will still be
+            invoked as they represent non-overlapping functionality. Permission could be
+            granted in either system.
+            </summary>
+            <inheritdoc cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.Implementation.UniversePermissionsVerifierAdapter.#ctor(Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.EventLog.ILogger)">
+            <summary>
+            Constructor. Retrieves setting from default settings object.
+            </summary>
+            <param name="universePermissionsVerifier"></param>
+            <param name="permissionsV2UniversePermissionsVerifier"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Implementation.UniversePermissionsVerifierAdapter.#ctor(Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.Configuration.ISingleSetting{System.Boolean},Roblox.Configuration.ISingleSetting{System.Double},Roblox.Configuration.ISingleSetting{System.Boolean},Roblox.Configuration.ISingleSetting{System.Double},Roblox.Random.IRandom,Roblox.EventLog.ILogger)">
+            <summary>
+            Constructor. Explicit settings arguments for injection.
+            </summary>
+            <param name="universePermissionsVerifier"></param>
+            <param name="permissionsV2UniversePermissionsVerifier"></param>
+            <param name="isPermissionsV2Enabled"></param>
+            <param name="permissionsV2ReadsPercentage"></param>
+            <param name="isPermissionsV2PlayReadsEnabled"></param>
+            <param name="permissionsV2PlayReadsPercentage"></param>
+            <param name="random"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Implementation.UniversePermissionsVerifierAdapter.CanUserManageUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserManageUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.Implementation.UniversePermissionsVerifierAdapter.CanUserPlayUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserPlayUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.Universe.UpdateNameDescription(System.String,System.String,Roblox.TextFilter.Client.IClientTextAuthor,System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniverse.UpdateNameDescription(System.String,System.String,Roblox.TextFilter.Client.IClientTextAuthor,System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Universe.UpdateNameDescriptionTrusted(System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniverse.UpdateNameDescriptionTrusted(System.String,System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.Universe.UpdateBasicSettings(System.Nullable{System.Boolean})">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniverse.UpdateBasicSettings(System.Nullable{System.Boolean})"/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseFactory.#ctor(Roblox.Universes.Client.IUniversesClient,Roblox.Platform.Universes.UniverseDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.UniverseFactory"/> class.
+            </summary>
+            <param name="client">An <see cref="T:Roblox.Universes.Client.IUniversesClient"/></param>
+            <param name="domainFactories">A <see cref="T:Roblox.Platform.Universes.UniverseDomainFactories"/></param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if either of the arguments is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseFactory.#ctor(Roblox.Universes.Client.IUniversesClient,Roblox.Platform.Universes.UniverseDomainFactories,Roblox.Platform.Universes.Properties.ISettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.UniverseFactory"/> class.
+            </summary>
+            <param name="client">An <see cref="T:Roblox.Universes.Client.IUniversesClient"/></param>
+            <param name="domainFactories">A <see cref="T:Roblox.Platform.Universes.UniverseDomainFactories"/></param>
+            <param name="settings">Universe settings.</param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if either of the arguments is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseFactory.GetUniverses(System.Collections.Generic.IEnumerable{System.Int64})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseFactory.CreateUniverse(Roblox.Platform.Assets.IPlace,System.Int64,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseFactory.GetUniverseByPlaces(System.Collections.Generic.IReadOnlyCollection{System.Int64})">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverseByPlaces(System.Collections.Generic.IReadOnlyCollection{System.Int64})"/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseFactory.GetUniverseByPlaces(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Assets.IPlace})">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverseByPlaces(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Assets.IPlace})"/>
+        </member>
+        <member name="T:Roblox.Platform.Universes.UniversePermissionsVerifier">
+            <inheritdoc cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePermissionsVerifier.#ctor(Roblox.Platform.Groups.IGroupMembershipFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Universes.UniversePermissionsVerifier"/> class.
+            </summary>
+            <param name="groupMembershipFactory">The <see cref="T:Roblox.Platform.Groups.IGroupMembershipFactory"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Null <paramref name="groupMembershipFactory"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePermissionsVerifier.CanUserManageUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserManageUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)" />
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePermissionsVerifier.CanUserPlayUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserPlayUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)" />
+            <remarks>Currently only returns false as PermissionResolution will be the source for this information.</remarks>
+        </member>
+        <member name="T:Roblox.Platform.Universes.UniversePrivacyLimits">
+            <summary>
+            Provides limits on the number of public universes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePrivacyLimits.GetMaxPublicUniverses(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePrivacyLimits.GetMaxPublicUniverses(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePrivacyLimits.GetMaxPublicUniverses(Roblox.Platform.Groups.IGroup)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePrivacyLimits.GetMaxPublicUniverses(Roblox.Platform.Groups.IGroup)"/>
+        </member>
+        <member name="T:Roblox.Platform.Universes.UniversePublicizer">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePublicizer.#ctor(Roblox.Universes.Client.IUniversesClient,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Assets.IPlaceFactory,Roblox.Platform.Groups.IGroupFactory)">
+            <summary>
+            Creates a UniversePublicizer, standard constructor
+            </summary>
+            <param name="universesClient">An <see cref="T:Roblox.Universes.Client.IUniversesClient"/></param>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <param name="placeFactory">An <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/></param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universesClient"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="userFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="placeFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="groupFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePublicizer.SetUniverseToPublic(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePublicizer.SetUniverseToPrivate(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniversePublicizer.CanSetUniverseToPublic(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Determines if the <see cref="T:Roblox.Platform.Universes.IUniverse"/> can be made public.
+            </summary>
+            <param name="universe">The universe to check.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the <paramref name="universe"/> is null</exception>
+            <exception cref="T:Roblox.Common.OperationUnavailableException">Thrown when the universes service is unable to perform the operation.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Universes.UniverseTextFilter">
+            <inheritdoc cref="T:Roblox.Platform.Universes.IUniverseTextFilter"/>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseTextFilter.#ctor(Roblox.TextFilter.Client.ITextFilterClientV2)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.Universes.UniverseTextFilter"/>
+            </summary>
+            <param name="textFilterClientV2">A <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="textFilterClient"/>
+            - <paramref name="textFilterClientV2"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseTextFilter.FilterUniverseText(Roblox.Platform.Universes.IUniverseTextFilterRequest)">
+            <inheritdoc cref="M:Roblox.Platform.Universes.IUniverseTextFilter.FilterUniverseText(Roblox.Platform.Universes.IUniverseTextFilterRequest)" />
+        </member>
+        <member name="T:Roblox.Platform.Universes.UniverseTextFilterRequest">
+            <inheritdoc cref="T:Roblox.Platform.Universes.IUniverseTextFilterRequest"/>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseTextFilterRequest.ClientTextAuthor">
+            <inheritdoc cref="P:Roblox.Platform.Universes.IUniverseTextFilterRequest.ClientTextAuthor"/>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseTextFilterRequest.Name">
+            <inheritdoc cref="P:Roblox.Platform.Universes.IUniverseTextFilterRequest.Name"/>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseTextFilterRequest.Description">
+            <inheritdoc cref="P:Roblox.Platform.Universes.IUniverseTextFilterRequest.Description"/>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseTextFilterRequest.AllowPartiallyModerated">
+            <inheritdoc cref="P:Roblox.Platform.Universes.IUniverseTextFilterRequest.AllowPartiallyModerated"/>
+        </member>
+        <member name="T:Roblox.Platform.Universes.UniverseTextFilterResult">
+            <inheritdoc cref="T:Roblox.Platform.Universes.IUniverseTextFilterResult"/>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseTextFilterResult.Name">
+            <inheritdoc cref="P:Roblox.Platform.Universes.IUniverseTextFilterResult.Name"/>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseTextFilterResult.Description">
+            <inheritdoc cref="P:Roblox.Platform.Universes.IUniverseTextFilterResult.Description"/>
+        </member>
+        <member name="T:Roblox.Platform.Universes.UniverseWriter">
+            <summary>
+            Implements <see cref="T:Roblox.Platform.Universes.IUniverseWriter"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseWriter.UniversesClient">
+            <summary>
+            A <see cref="T:Roblox.Universes.Client.IUniversesClient"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseWriter.UniverseChangeReporter">
+            <summary>
+            A <see cref="P:Roblox.Platform.Universes.UniverseWriter.UniverseChangeReporter"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseWriter.Logger">
+            <summary>
+            A <see cref="T:Roblox.EventLog.ILogger"/>>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.UniverseWriter.UniverseEventsObserver">
+            <summary>
+            A <see cref="T:Roblox.Platform.Universes.Events.IUniverseEventsObserver"/>>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseWriter.#ctor(Roblox.Universes.Client.IUniversesClient,Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Constructs a <see cref="T:Roblox.Platform.Universes.UniverseWriter"/>
+            </summary>
+            <param name="universesClient">A <see cref="T:Roblox.Universes.Client.IUniversesClient"/></param>
+            <param name="logger">A <see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universesClient"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseWriter.UpdateIsArchived(Roblox.Platform.Universes.IUniverse,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniverse">
+            <summary>
+            Provides a common interface for an object that represents a Universe
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.Id">
+            <summary>
+            Gets the identifier
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.Name">
+            <summary>
+            Gets the name of the universe
+            NOTE: Do not use this as a display name for <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            If you intend to use the universe name for display purposes or in a localized context, use Roblox.Platform.UniverseDisplayInformation instead.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.Description">
+            <summary>
+            Gets the description of the universe
+            NOTE: Do not use this as a display description for <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            If you intend to use the universe description for display purposes or in a localized context, use Roblox.Platform.UniverseDisplayInformation instead.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.IsArchived">
+            <summary>
+            Whether or not the universe is archived
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.RootPlaceId">
+            <summary>
+            Gets the Id of the root place of the universe
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.CreatorType">
+            <summary>
+            Gets the type of the creator, a user or a group
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.CreatorTargetId">
+            <summary>
+            Gets the actual Id of the creator of the universe.
+            Group Id if it is a group, user Id if it is a user
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.Created">
+            <summary>
+            Gets the created time.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.Updated">
+            <summary>
+            Gets the updated time.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.StudioAccessToApisAllowed">
+            <summary>
+            Gets the the setting of Is Studio Access To Apis Allowed of the universe
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverse.PrivacyType">
+            <summary>
+            The privacy of the universe
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverse.UpdateNameDescription(System.String,System.String,Roblox.TextFilter.Client.IClientTextAuthor,System.Boolean)">
+            <summary>
+            Update the name and description of the <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+            <param name="newName">The new name to be updated to</param>
+            <param name="newDescription">The new description to be updated to</param>
+            <param name="clientTextAuthor">The text author of the name and description</param>
+            <param name="allowPartiallyModerated">Whether to allow the name or description that were partially moderated.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the IClientTextAuthor is null</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the new name is null or white space or the length is too long</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown when the text filtering service is unavailable</exception>
+            <exception cref="T:Roblox.Platform.Universes.PlatformUniverseTextFullyModeratedException">Thrown when the name or description is fully moderated</exception>
+            <exception cref="T:Roblox.Platform.Universes.UniverseTextPartiallyModeratedException">Throw when <paramref name="allowPartiallyModerated"/> is <c>false</c> and the name or description is partially moderated.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverse.UpdateNameDescriptionTrusted(System.String,System.String)">
+            <summary>
+            Skipping text filtering and directly update the name and description of the <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            [Warning!] This text does not get filtered. Use with extreme care.
+            [Warning!] This should only be used through the internal (CS, Admin, or Moderation) websites.
+            </summary>
+            <param name="trustedName">The new name to be updated to</param>
+            <param name="trustedDescription">The new description to be updated to</param>
+            <exception cref="T:System.ArgumentException">Thrown when the new name is null or white space or the length is too long</exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverse.UpdateBasicSettings(System.Nullable{System.Boolean})">
+            <summary>
+            Update the <see cref="P:Roblox.Platform.Universes.IUniverse.StudioAccessToApisAllowed"/> option of the <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+            <param name="newStudioAccessToApisAllowed">The new <see cref="P:Roblox.Platform.Universes.IUniverse.StudioAccessToApisAllowed"/> to be updated to, or null if not to be updated</param>
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniverseFactory">
+            <summary>
+            Creates/Gets universe <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            Exposes helper methods for working with universes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverse(System.Int64)">
+            <summary>
+            Gets the universe.
+            </summary>
+            <param name="universeId">The universe identifier.</param>
+            <returns><see cref="T:Roblox.Platform.Universes.IUniverse"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverses(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Gets a number of universes.
+            </summary>
+            <param name="universeIds">All universes to get.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of all requested universes.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="universeIds"/> is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetPlaceUniverse(System.Int64)">
+            <summary>
+            Gets the universe for specified place identifier.
+            </summary>
+            <param name="placeId">The place identifier.</param>
+            <returns><see cref="T:Roblox.Platform.Universes.IUniverse"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetPlaceUniverse(Roblox.Platform.Assets.IPlace)">
+            <summary>
+            Gets universe for specified place.
+            </summary>
+            <param name="place">The place <see cref="T:Roblox.Platform.Assets.IPlace"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Universes.IUniverse"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverseByPlaces(System.Collections.Generic.IReadOnlyCollection{System.Int64})">
+            <summary>
+            Gets the universe for each <see cref="T:Roblox.Platform.Assets.IPlace"/>.
+            </summary>
+            <param name="placeIds">The <see cref="T:Roblox.Platform.Assets.IPlace"/>s to fetch universes for, identified by it's id.</param>
+            <returns>A lookup containing the universe for each place.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="placeIds"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverseByPlaces(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Assets.IPlace})">
+            <summary>
+            Gets the universe for each <see cref="T:Roblox.Platform.Assets.IPlace"/>.
+            </summary>
+            <param name="places">The <see cref="T:Roblox.Platform.Assets.IPlace"/>s to fetch universes for.</param>
+            <returns>A lookup containing the universe for each place.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="places"/></exception>
+            <exception cref="T:System.ArgumentException">Any <paramref name="places"/> entry is null.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="places"/> contains entries with duplicate IDs.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniversePlacesPaged(System.Int64,System.Int32,System.Int64@,System.Boolean)">
+            <summary>
+            Gets the universe places paged.
+            </summary>
+            <param name="universeId">The universe identifier.</param>
+            <param name="page">The page number.</param>
+            <param name="totalCount">The total count of places in specified Universe.</param>
+            <param name="isUniverseCreation">if set to true then returns places which are created by Universe, 
+            otherwise returns places which are created by user.</param>
+            <returns>IEnumerable collection of <see cref="T:Roblox.Platform.Assets.IPlace" /> entities.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniversePlaces(System.Int64,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2"/> of <see cref="T:Roblox.Platform.Assets.IPlace"/>s in a universe with the given <paramref name="universeId"/>
+            </summary>
+            <param name="universeId">The universe id.</param>
+            <param name="exclusiveStartKeyInfo">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2"/> of <see cref="T:Roblox.Platform.Assets.IPlace"/>s</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverseCreationPlaces(System.Int64,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2"/> of universe creation <see cref="T:Roblox.Platform.Assets.IPlace"/>s in a universe with the given <paramref name="universeId"/>
+            </summary>
+            <param name="universeId">The universe id.</param>
+            <param name="exclusiveStartKeyInfo">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2"/> of <see cref="T:Roblox.Platform.Assets.IPlace"/>s</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.CreateUniverse(Roblox.Platform.Assets.IPlace,System.Int64,System.String)">
+            <summary>
+            Creates a new universe with a given root <see cref="T:Roblox.Platform.Assets.IPlace"/>.
+            </summary>
+            <param name="rootPlace">An orphan <see cref="T:Roblox.Platform.Assets.IPlace"/> that will be the root place of the created universe.</param>
+            <param name="shopId">The ID of the shop for the universe..</param>
+            <param name="privacyType">The initial privacy type of the universe.</param>
+            <returns>ID of the new universe.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="rootPlace"/> is null.
+            </exception>
+            <exception cref="T:System.ArgumentException">Thrown if:
+            - <paramref name="rootPlace"/> has an invalid creator type.
+            - the place referenced by <paramref name="rootPlace"/> is the root place of an existing universe.
+            - the privacy type provided in <paramref name="privacyType"/> is not Public, Private, or Draft.
+            </exception>
+            <exception cref="T:System.Net.WebException">Thrown for any unexpected result from the service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetCreatorUniversesPaged(Roblox.Platform.Core.CreatorType,System.Int64,System.Int32,System.Int64@)">
+            <summary>
+            Gets universes for specified creator.
+            </summary>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target identifier.</param>
+            <param name="page">The page number.</param>
+            <param name="totalCount">The total count of universes which are created by specified creator.</param>
+            <returns>IEnumerable collection of IUniverse entities.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetCreatorUniversesPaged(Roblox.Platform.Core.CreatorType,System.Int64,System.Int32,System.Int32,System.Int64@)">
+            <summary>
+            Gets universes for specified creator.
+            </summary>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target identifier.</param>
+            <param name="startIndex">The start index.</param>
+            <param name="count">Amount of results.</param>
+            <param name="totalCount">The total count of universes which are created by specified creator.</param>
+            <returns>
+            IEnumerable collection of IUniverse entities.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetCreatorPublicUniversesPaged(Roblox.Platform.Core.CreatorType,System.Int64,System.Int32,System.Int64@)">
+            <summary>
+            Gets public universes for specified creator.
+            </summary>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target identifier.</param>
+            <param name="page">The page number.</param>
+            <param name="totalCount">The total count of universes which are created by specified creator.</param>
+            <returns>IEnumerable collection of IUniverse entities.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetCreatorPublicUniversesPaged(Roblox.Platform.Core.CreatorType,System.Int64,System.Int32,System.Int32,System.Int64@)">
+            <summary>
+            Gets public universes for specified creator.
+            </summary>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target identifier.</param>
+            <param name="startIndex">The start index.</param>
+            <param name="count">Amount of results.</param>
+            <param name="totalCount">The total count of universes which are created by specified creator.</param>
+            <returns>IEnumerable collection of IUniverse entities.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetCreatorUniverses(Roblox.Platform.Core.CreatorType,System.Int64,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Gets universes made by the specified creator.
+            </summary>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target id.</param>
+            <param name="exclusiveStartKeyInfo">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2"/> of <see cref="T:Roblox.Platform.Universes.IUniverse"/>s</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetCreatorPublicUniverses(Roblox.Platform.Core.CreatorType,System.Int64,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Gets universes made by the specified creator.
+            </summary>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target id.</param>
+            <param name="exclusiveStartKeyInfo">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2"/> of <see cref="T:Roblox.Platform.Universes.IUniverse"/>s</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverseShopId(System.Int64)">
+            <summary>
+            Gets the universe shop identifier.
+            </summary>
+            <param name="universeId">The universe identifier.</param>
+            <returns>Universe shop identifier. </returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverseByShopId(System.Int64)">
+            <summary>
+            Gets the universe by shop identifier.
+            </summary>
+            <param name="shopId">The shop identifier.</param>
+            <returns><see cref="T:Roblox.Platform.Universes.IUniverse"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.SetUniverseCreator(System.Int64,System.String,System.Int64)">
+            <summary>
+            Sets the universe creator.
+            </summary>
+            <param name="universeId">The universe identifier.</param>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target identifier.</param>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetUniversePlaceIdsPaged(System.Int64,System.Int32,System.Int64@,System.Boolean)">
+            <summary>
+            Gets the universe places ids paged.
+            </summary>
+            <param name="universeId">The universe identifier.</param>
+            <param name="page">The page number.</param>
+            <param name="totalCount">The total count of places in specified Universe.</param>
+            <param name="isUniverseCreation">if set to true then returns places which are created by Universe, 
+            otherwise returns places which are created by user.</param>
+            <returns>IEnumerable collection of place ids.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseFactory.GetCreatorPublicUniverseCount(System.String,System.Int64)">
+            <summary>
+            Get the total number of public universes a creator has.
+            </summary>
+            <param name="creatorType">Type of the creator.</param>
+            <param name="creatorTargetId">The creator target identifier.</param>
+            <returns>The total number of public universes a creator has</returns>
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniversePermissionsVerifier">
+            <summary>
+            Handles authorization around <see cref="T:Roblox.Platform.Universes.IUniverse"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserManageUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Checks whether or not an <see cref="T:Roblox.Platform.Membership.IUser"/> can manage an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <returns><c>true</c> if <paramref name="universe"/> can be managed by <paramref name="user"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Null <paramref name="user"/>.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Null <paramref name="universe"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserPlayUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Checks whether of not an <see cref="T:Roblox.Platform.Membership.IUser"/> can play an <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <returns><c>true</c> if <paramref name="universe"/> can be played by <paramref name="user"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Null <paramref name="user"/>.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Null <paramref name="universe"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniversePrivacyLimits">
+            <summary>
+            Provides limits on the number of public universes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniversePrivacyLimits.GetMaxPublicUniverses(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Returns the maximum allowed number of public universes for a user.
+            </summary>
+            <param name="user">User whose limit to return.</param>
+            <returns>The maximum allowed number of public universes.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="user"/> is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniversePrivacyLimits.GetMaxPublicUniverses(Roblox.Platform.Groups.IGroup)">
+            <summary>
+            Returns the maximum allowed number of public universes for a group.
+            </summary>
+            <param name="group">Group whose limit to return.</param>
+            <returns>The maximum allowed number of public universes.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="group"/> is null.
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniversePublicizer">
+            <summary>
+            Manages the public or private status of an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniversePublicizer.SetUniverseToPublic(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Sets the <see cref="T:Roblox.Platform.Universes.IUniverse"/> to public.
+            </summary>
+            <param name="universe">The universe to be made public.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the <paramref name="universe"/> is null</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the the root place of the IUniverse can not be found.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="universe"/>'s creator type is group, but creator target id is invalid group id.</exception>
+            <exception cref="T:Roblox.Common.OperationUnavailableException">Thrown when the universes service is unable to perform the operation.</exception>
+            <exception cref="T:Roblox.Platform.Universes.PublicUniverseLimitReachedException">Thrown when the public universe limit is already reached by the creator of the universe.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniversePublicizer.SetUniverseToPrivate(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Sets the <see cref="T:Roblox.Platform.Universes.IUniverse"/> to private.
+            </summary>
+            <param name="universe">The universe to be made private.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the <paramref name="universe"/> is null</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the the root place of the IUniverse can not be found.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="universe"/>'s creator type is group, but creator target id is invalid group id.</exception>
+            <exception cref="T:Roblox.Common.OperationUnavailableException">Thrown when the universes service is unable to perform the operation.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniverseTextFilter">
+            <summary>
+            Filter Universe text for the given Author.
+            In particular, we're filtering the name and description as if they were in the same "room".
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseTextFilter.FilterUniverseText(Roblox.Platform.Universes.IUniverseTextFilterRequest)">
+            <summary>
+            Filter the given name and description as if they were part of the same conversation by the same Author.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Platform.Universes.IUniverseTextFilterRequest"/> that wraps the request.</param>
+            <returns>a <see cref="T:Roblox.Platform.Universes.IUniverseTextFilterResult"/> containing the filtered name and description.</returns>
+            <exception cref="T:System.ArgumentNullException">In the case of bad input data</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Universes.PlatformUniverseTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniverseTextFilterRequest">
+            <summary>
+            Interface that represents a request submitting universe name and description to filtering service.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverseTextFilterRequest.ClientTextAuthor">
+            <summary>
+            Text author.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverseTextFilterRequest.Name">
+            <summary>
+            Universe name.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverseTextFilterRequest.Description">
+            <summary>
+            Universe description.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverseTextFilterRequest.AllowPartiallyModerated">
+            <summary>
+            Whether to allow partially moderated name or description.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniverseTextFilterResult">
+            <summary>
+            The result of filtering text for a Universe, safe to go to DB.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverseTextFilterResult.Name">
+            <summary>
+            Filtered universe name.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Universes.IUniverseTextFilterResult.Description">
+            <summary>
+            Filtered universe description.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Universes.IUniverseWriter">
+            <summary>
+            Provides a common interface for updating an <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.IUniverseWriter.UpdateIsArchived(Roblox.Platform.Universes.IUniverse,System.Boolean)">
+            <summary>
+            Updates the archive status of a universe
+            </summary>
+            <param name="universe">Universe to update</param>
+            <param name="isArchived">Desired archive status</param>
+            <exception cref="T:System.NullReferenceException"><paramref name="universe"/></exception>
+        </member>
+        <member name="P:Roblox.Platform.Universes.Properties.ISettings.DefaultUniversePrivacyType">
+            <summary>
+            Gets the default universe privacy type.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Universes.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseDomainFactories.#ctor">
+            <summary>
+            Only to be used for unit tests
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseDomainFactories.#ctor(Roblox.Universes.Client.IUniversesClient,Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.EventLog.ILogger,Roblox.CatalogItemChangePublisher.ICatalogItemChangePublisher,Roblox.Platform.Assets.IPlaceFactory,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            The normal <see cref="T:Roblox.Platform.Universes.UniverseDomainFactories"/> constructor
+            </summary>
+            <param name="universesClient"><see cref="T:Roblox.Universes.Client.IUniversesClient"/></param>
+            <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="catalogPublisher"></param>
+            <param name="placeFactory"><see cref="T:Roblox.Platform.Assets.IPlaceFactory"/></param>
+            <param name="counterRegistry"></param>
+        </member>
+        <member name="M:Roblox.Platform.Universes.UniverseDomainFactories.#ctor(Roblox.Universes.Client.IUniversesClient,Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.CatalogItemChangePublisher.ICatalogItemChangePublisher,Roblox.Platform.Universes.Events.IUniverseEventsObserver,Roblox.Platform.Assets.IPlaceFactory)">
+            <summary>
+            Specialized <see cref="T:Roblox.Platform.Universes.UniverseDomainFactories"/> constructor
+            </summary>
+            <param name="universesClient"><see cref="T:Roblox.Universes.Client.IUniversesClient"/></param>
+            <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/></param>
+            <param name="catalogPublisher"></param>
+            <param name="universeEventsObserver">Inject a custom <see cref="T:Roblox.Platform.Universes.Events.IUniverseEventsObserver"/> for testing or a very good reason.</param>
+            <param name="placeFactory"><see cref="T:Roblox.Platform.Assets.IPlaceFactory"/></param>
+            <remarks>
+            This constructor should only be used when you have a specific and well understood need to supply your own <see cref="T:Roblox.Platform.Universes.Events.IUniverseEventsObserver"/>.
+            </remarks>
+        </member>
+    </members>
+</doc>

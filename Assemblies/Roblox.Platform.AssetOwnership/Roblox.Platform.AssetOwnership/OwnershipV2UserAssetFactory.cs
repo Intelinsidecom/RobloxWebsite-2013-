@@ -120,7 +120,7 @@ internal class OwnershipV2UserAssetFactory : UserAssetOwnershipAuthority, IOwner
 			throw new ApplicationException(string.Format("OwnershipV2 service could not revoke UserAsset {0}={1}", "userAssetId", userAssetId));
 		}
 		OwnershipV2OperationResult result = revokeResult.Result;
-		return new AssetOwnershipResult(isSuccess: true, ((object)(OwnershipV2OperationResult)(ref result)).ToString());
+		return new AssetOwnershipResult(isSuccess: true, result.ToString());
 	}
 
 	public bool TransferWithExistingLock(long assetId, long userAssetId, long oldOwnerId, long newOwnerId, Guid token, out string message)

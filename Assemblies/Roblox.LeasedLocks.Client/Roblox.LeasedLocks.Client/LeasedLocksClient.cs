@@ -32,7 +32,17 @@ public class LeasedLocksClient : GuardedApiClientBase, ILeasedLocksClient
 
 	[ExcludeFromCodeCoverage]
 	public LeasedLocksClient(Func<string> apiKeyGetter)
-		: this(apiKeyGetter, () => RobloxEnvironment.GetApiEndpoint("leasedlocks"))
+		: this(apiKeyGetter, () =>
+		{
+			var overrideValue = Settings.Default.ServiceEndpointOverride;
+			if (!string.IsNullOrWhiteSpace(overrideValue))
+			{
+				return overrideValue;
+			}
+#pragma warning disable CS0618 // RobloxEnvironment.GetApiEndpoint is obsolete; kept as fallback for legacy envs
+			return RobloxEnvironment.GetApiEndpoint("leasedlocks");
+#pragma warning restore CS0618
+		})
 	{
 	}
 

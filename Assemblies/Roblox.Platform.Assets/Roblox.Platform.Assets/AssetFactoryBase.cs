@@ -125,10 +125,10 @@ public abstract class AssetFactoryBase<T> : IAssetFactoryBase<T> where T : IAsse
 				createDependencyResult = DomainFactories.AssetsClient.CreateAssetDependency(new CreateAssetDependencyRequest
 				{
 					DependsAssetId = createdAsset.Id.ToString(),
-					DependsAssetType = dependsAssetType,
+					DependsAssetType = (Roblox.Assets.Client.AssetType)dependsAssetType,
 					DependsAssetVersionNumber = DomainFactories.AssetVersionFactory.GetCurrentAssetPublishedVersion(createdAsset).VersionNumber,
 					SupportsAssetId = image.Id.ToString(),
-					SupportsAssetType = (AssetType)0,
+					SupportsAssetType = Roblox.Assets.Client.AssetType.Unknown,
 					SupportsAssetVersionNumber = DomainFactories.AssetVersionFactory.GetCurrentAssetPublishedVersion(image).VersionNumber
 				});
 			}
