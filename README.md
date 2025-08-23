@@ -1,5 +1,7 @@
 # Roblox Website (2013)
 
+Warning: This repo is Vide coded, i let you hate for it
+
 This is a recreation of the Roblox website from 2013.
 
 ## Project Structure
