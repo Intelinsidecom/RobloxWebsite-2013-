@@ -474,6 +474,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.DataV2.Core": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -522,7 +524,9 @@
           "Roblox.Platform.Assets": "1.0.0",
           "Roblox.Platform.Demographics": "1.0.0",
           "Roblox.Platform.Email.Delivery": "1.0.0",
-          "Roblox.Platform.Localization.Accounts": "1.0.0"
+          "Roblox.Platform.Localization.Accounts": "1.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.0",
+          "System.Data.SqlClient": "4.9.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Billing.dll": {}
@@ -627,6 +631,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -634,6 +639,16 @@
         },
         "runtime": {
           "bin/placeholder/Roblox.Configuration.dll": {}
+        }
+      },
+      "Roblox.DataV2.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.DataV2.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.DataV2.Core.dll": {}
         }
       },
       "Roblox.Demographics/1.0.0": {
@@ -884,6 +899,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
@@ -915,6 +931,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Consul": "1.6.10.4",
+          "Newtonsoft.Json": "13.0.3",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
@@ -1664,6 +1681,11 @@
       "type": "project",
       "path": "../Configuration/Roblox.Configuration/Roblox.Configuration.csproj",
       "msbuildProject": "../Configuration/Roblox.Configuration/Roblox.Configuration.csproj"
+    },
+    "Roblox.DataV2.Core/1.0.0": {
+      "type": "project",
+      "path": "../DataV2/Core/Roblox.DataV2.Core/Roblox.DataV2.Core.csproj",
+      "msbuildProject": "../DataV2/Core/Roblox.DataV2.Core/Roblox.DataV2.Core.csproj"
     },
     "Roblox.Demographics/1.0.0": {
       "type": "project",

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Web.Thumbnails</AssemblyName>
@@ -10,7 +10,9 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.8.1" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.EventStream">
       <HintPath>..\..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
@@ -18,7 +20,7 @@
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Thumbnails.Client" />
+    <ProjectReference Include="..\..\Roblox.Thumbnails.Client\Roblox.Thumbnails.Client.csproj" />
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>

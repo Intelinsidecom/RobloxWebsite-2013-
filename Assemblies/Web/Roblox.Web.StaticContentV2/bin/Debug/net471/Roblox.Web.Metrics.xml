@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Web.Metrics</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Web.Metrics.AspNetPageType">
+            <summary>
+            The page type for the ASP.NET file.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Metrics.AspNetPageType.Aspx">
+            <summary>
+            An aspx file
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Metrics.AspNetPageType.Ashx">
+            <summary>
+            An ashx file
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Metrics.AspNetPageType.Ascx">
+            <summary>
+            An ascx file
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Metrics.AspNetPageType.Asmx">
+            <summary>
+            An asmx (WebService) file
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Metrics.AspNetPerformanceCounter">
+            <inheritdoc cref="T:Roblox.Web.Metrics.IAspNetPerformanceCounter"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetPerformanceCounter.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String,Roblox.Web.Metrics.AspNetPageType,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.AspNetPerformanceCounter"/>
+            </summary>
+            <remarks>
+            This constructor is non-unittestable because it initializes a new instance
+            and we don't want the implementation of that instance to run with our tests.
+            </remarks>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <param name="performanceCounterCategory">The performance counter category.</param>
+            <param name="pageType">The <see cref="T:Roblox.Web.Metrics.AspNetPageType"/>.</param>
+            <param name="pageName">The page name for the AspNet file.</param>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetPerformanceCounter.IncrementRequest">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IAspNetPerformanceCounter.IncrementRequest"/>
+        </member>
+        <member name="T:Roblox.Web.Metrics.AspNetStatisticsTracker">
+            <inheritdoc cref="T:Roblox.Web.Metrics.IAspNetStatisticsTracker"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetStatisticsTracker.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.AspNetStatisticsTracker"/>.
+            </summary>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <param name="performanceCounterNamespace">The performance counter namespace.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="performanceCounterNamespace"/> is null or whitespace.</exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetStatisticsTracker.#ctor(Roblox.Web.Metrics.IWebResponseMetricsFactory)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.AspNetStatisticsTracker"/>.
+            </summary>
+            <remarks>
+            Constructor exists for tests, consumers should use counter namespace constructor.
+            </remarks>
+            <param name="webResponseMetricsFactory">The <see cref="T:Roblox.Web.Metrics.IWebResponseMetricsFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="webResponseMetricsFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetStatisticsTracker.OnAspxPageChosen(System.Web.UI.Page)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAspxPageChosen(System.Web.UI.Page)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetStatisticsTracker.OnAspxPageChosen(System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAspxPageChosen(System.String,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetStatisticsTracker.OnAshxPageChosen(System.Web.IHttpHandler)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAshxPageChosen(System.Web.IHttpHandler)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetStatisticsTracker.OnAscxPageChosen(System.Web.UI.UserControl)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAscxPageChosen(System.Web.UI.UserControl)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.AspNetStatisticsTracker.OnAsmxServiceMethodChosen(System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAsmxServiceMethodChosen(System.String,System.String)"/>
+        </member>
+        <member name="T:Roblox.Web.Metrics.EndpointResponsePerformanceCounter">
+            <inheritdoc cref="T:Roblox.Web.Metrics.IEndpointResponsePerformanceCounter"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.EndpointResponsePerformanceCounter.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.EndpointResponsePerformanceCounter"/>
+            </summary>
+            <remarks>
+            This constructor is non-unittestable because it initializes a new instance
+            and we don't want the implementation of that instance to run with our tests.
+            </remarks>
+            <param name="performanceCounterCategory">The performance counter category.</param>
+            <param name="controllerName">The controller name the endpoint lives on.</param>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <param name="actionName">The action name of the endpoint from the controller.</param>
+        </member>
+        <member name="M:Roblox.Web.Metrics.EndpointResponsePerformanceCounter.Increment(System.TimeSpan)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IEndpointResponsePerformanceCounter.Increment(System.TimeSpan)"/>
+        </member>
+        <member name="T:Roblox.Web.Metrics.EndpointFailurePerformanceCounter">
+            <inheritdoc cref="T:Roblox.Web.Metrics.IEndpointFailurePerformanceCounter"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.EndpointFailurePerformanceCounter.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.EndpointFailurePerformanceCounter"/>
+            </summary>
+            <remarks>
+            This constructor is non-unittestable because it initializes a new instance
+            and we don't want the implementation of that instance to run with our tests.
+            </remarks>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <param name="performanceCounterCategory">The performance counter category.</param>
+            <param name="controllerName">The controller name the endpoint lives on.</param>
+            <param name="actionName">The action name of the endpoint from the controller.</param>
+        </member>
+        <member name="M:Roblox.Web.Metrics.EndpointFailurePerformanceCounter.Increment(System.TimeSpan)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IEndpointFailurePerformanceCounter.Increment(System.TimeSpan)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.HttpStatusCodePerformanceCounter.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.HttpStatusCodePerformanceCounter"/>
+            </summary>
+            <remarks>
+            This constructor is non-unittestable because it initializes a new instance
+            and we don't want the implementation of that instance to run with our tests.
+            </remarks>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <param name="performanceCounterCategory">The performance counter category.</param>
+            <param name="statusCode">The status code for the counter.</param>
+        </member>
+        <member name="M:Roblox.Web.Metrics.HttpStatusCodePerformanceCounter.Increment">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IHttpStatusCodePerformanceCounter.Increment"/>
+        </member>
+        <member name="T:Roblox.Web.Metrics.WebRequestStatisticsTracker">
+            <inheritdoc cref="T:Roblox.Web.Metrics.IWebRequestStatisticsTracker"/>
+        </member>
+        <member name="P:Roblox.Web.Metrics.WebRequestStatisticsTracker.UtcNow">
+            <summary>
+            This virtual seems useless, but exists to be overridable for testing.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebRequestStatisticsTracker.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String,Roblox.Web.Metrics.IWebRequestStatisticsEnabler)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.WebRequestStatisticsTracker"/>
+            </summary>
+            <param name="performanceCounterCategoryPrefix">The performance counter prefix.</param>
+            <param name="webRequestStatisticsEnabler">The custom extended enabler to use.</param>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="performanceCounterCategoryPrefix"/> is null or whitespace.</exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebRequestStatisticsTracker.#ctor(Roblox.Web.Metrics.IWebResponseMetricsFactory,Roblox.Web.Metrics.IWebRequestStatisticsEnabler)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.WebRequestStatisticsTracker"/>
+            </summary>
+            <remarks>
+            This constructor exists for tests only.
+            </remarks>
+            <param name="webResponseMetricsFactory">The <see cref="T:Roblox.Web.Metrics.IWebResponseMetricsFactory"/></param>
+            <param name="webRequestStatisticsEnabler">The custom extended enabler to use.</param>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebRequestStatisticsTracker.OnActionChosen(System.Web.HttpContextBase,System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IWebRequestStatisticsTracker.OnActionChosen(System.Web.HttpContextBase,System.String,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebRequestStatisticsTracker.OnRequestEnd(System.Web.HttpRequestBase,System.Web.HttpResponseBase)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IWebRequestStatisticsTracker.OnRequestEnd(System.Web.HttpRequestBase,System.Web.HttpResponseBase)"/>
+        </member>
+        <member name="T:Roblox.Web.Metrics.WebResponseMetricsFactory">
+            <inheritdoc cref="T:Roblox.Web.Metrics.IWebResponseMetricsFactory"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebResponseMetricsFactory.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Metrics.WebResponseMetricsFactory"/>
+            </summary>
+            <param name="performanceCounterCategoryPrefix">The performance counter category prefix.</param>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="performanceCounterCategoryPrefix"/> is null or whitespace.</exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebResponseMetricsFactory.GetEndpointResponsePerformanceCounter(System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IWebResponseMetricsFactory.GetEndpointResponsePerformanceCounter(System.String,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebResponseMetricsFactory.GetEndpointFailurePerformanceCounter(System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IWebResponseMetricsFactory.GetEndpointResponsePerformanceCounter(System.String,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebResponseMetricsFactory.GetHttpStatusCodePerformanceCounter(System.Net.HttpStatusCode)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IWebResponseMetricsFactory.GetHttpStatusCodePerformanceCounter(System.Net.HttpStatusCode)"/>
+        </member>
+        <member name="M:Roblox.Web.Metrics.WebResponseMetricsFactory.GetAspNetPerformanceCounter(Roblox.Web.Metrics.AspNetPageType,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Metrics.IWebResponseMetricsFactory.GetAspNetPerformanceCounter(Roblox.Web.Metrics.AspNetPageType,System.String)"/>
+        </member>
+        <member name="T:Roblox.Web.Metrics.IAspNetPerformanceCounter">
+            <summary>
+            A performance counter for increment 
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IAspNetPerformanceCounter.IncrementRequest">
+            <summary>
+            Increments the counter instance for request tracking.
+            </summary>
+            <remarks>
+            For now we don't need to track ASP.NET responses, just requests
+            so we know whether or not they get traffic so we know if we can
+            remove them.
+            
+            If we need responses too at some point we can add it here as a separate method.
+            </remarks>
+        </member>
+        <member name="T:Roblox.Web.Metrics.IAspNetStatisticsTracker">
+            <summary>
+            A statistics tracker for ASP.NET pages
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAspxPageChosen(System.Web.UI.Page)">
+            <summary>
+            Tracks requests per second for aspx pages.
+            </summary>
+            <param name="page">The ASPX <see cref="T:System.Web.UI.Page"/>.</param>
+            <param name="methodName">Used to distinguish between WebMethods (if there is a need).</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="page"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAspxPageChosen(System.String,System.String)">
+            <summary>
+            Tracks requests per second for aspx pages.
+            </summary>
+            <param name="pageName">The ASPX page name.</param>
+            <param name="methodName">Used to distinguish between WebMethods (if there is a need).</param>
+            <exception cref="T:System.ArgumentException">
+            - <paramref name="pageName"/> is <c>null</c> or whitespace.
+            </exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAshxPageChosen(System.Web.IHttpHandler)">
+            <summary>
+            Tracks requests per second for ashx pages.
+            </summary>
+            <param name="page">The ASHX <see cref="T:System.Web.IHttpHandler"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="page"/></exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAscxPageChosen(System.Web.UI.UserControl)">
+            <summary>
+            Tracks requests per second for ascx controls.
+            </summary>
+            <param name="userControl">The ASCX <see cref="T:System.Web.UI.UserControl"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="userControl"/></exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IAspNetStatisticsTracker.OnAsmxServiceMethodChosen(System.String,System.String)">
+            <summary>
+            Tracks requests per second for asmx service methods.
+            </summary>
+            <param name="serviceName">The service name.</param>
+            <param name="methodName">The method name.</param>
+            <exception cref="T:System.ArgumentException">
+            - <paramref name="serviceName"/> is <c>null</c> or whitespace.
+            - <paramref name="methodName"/> is <c>null</c> or whitespace.
+            </exception>
+        </member>
+        <member name="T:Roblox.Web.Metrics.ICurrentPlatformEphemeralCounterMetricsTracker">
+            <summary>
+            Interface for writing metrics to EphemeralCounters for the current request's <see cref="T:Roblox.Platform.Devices.IPlatform"/>.
+            </summary>
+            <remarks>
+            DO NOT USE THIS IN A CHILD THREAD
+            Doing so will result in the HttpContext used below to be null.
+            </remarks>
+        </member>
+        <member name="M:Roblox.Web.Metrics.ICurrentPlatformEphemeralCounterMetricsTracker.IncrementCountersForCurrentPlatform(System.String,System.String)">
+            <summary>
+            Increments the <see cref="T:Roblox.EphemeralCounters.ICounter"/>s for the current <see cref="T:Roblox.Platform.Devices.IPlatform"/>, using <paramref name="prefix"/> and <paramref name="suffix"/> to construct counter names.
+            </summary>
+            <remarks>This method will do nothing if there is no current <see cref="T:System.Web.HttpContext"/>.</remarks>
+            <param name="prefix">The <see cref="T:Roblox.EphemeralCounters.ICounter"/>'s prefix.</param>
+            <param name="suffix">The <see cref="T:Roblox.EphemeralCounters.ICounter"/>'s suffix.</param>
+        </member>
+        <member name="M:Roblox.Web.Metrics.ICurrentPlatformEphemeralCounterMetricsTracker.IncrementCountersForCurrentPlatformAndGlobalCounter(System.String,System.String)">
+            <summary>
+            Increments a counter equivalent to "{prefix}_Global" or "{prefix}_Global_{suffix}" if suffix is defined.
+            Also increments the <see cref="T:Roblox.EphemeralCounters.ICounter"/>s for the current <see cref="T:Roblox.Platform.Devices.IPlatform"/>, using <paramref name="prefix"/> and <paramref name="suffix"/> to construct counter names.
+            </summary>
+            <remarks>This method will only increment the global counter if there is no <see cref="T:System.Web.HttpContext"/>.</remarks>
+            <param name="prefix">The <see cref="T:Roblox.EphemeralCounters.ICounter"/>'s prefix.</param>
+            <param name="suffix">The <see cref="T:Roblox.EphemeralCounters.ICounter"/>'s suffix.</param>
+        </member>
+        <member name="T:Roblox.Web.Metrics.CurrentPlatformEphemeralCounterMetricsTracker">
+            <summary>
+            Class for writing metrics to EphemeralCounters for the current request's <see cref="T:Roblox.Platform.Devices.IPlatform"/>.
+            </summary>
+            <remarks>
+            DO NOT USE THIS IN A CHILD THREAD
+            Doing so will result in the HttpContext used below to be null.
+            </remarks>
+        </member>
+        <member name="M:Roblox.Web.Metrics.CurrentPlatformEphemeralCounterMetricsTracker.#ctor(Roblox.Web.Devices.IClientDeviceIdentifier,Roblox.EphemeralCounters.IEphemeralCounterFactory)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Web.Metrics.CurrentPlatformEphemeralCounterMetricsTracker"/>.
+            </summary>
+            <param name="ephemeralCounterFactory">An instance of <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="clientDeviceIdentifer"/> or <paramref name="ephemeralCounterFactory"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Metrics.CurrentPlatformEphemeralCounterMetricsTracker.IncrementCountersForCurrentPlatform(System.String,System.String)">
+            <inheritdoc cref="T:Roblox.Web.Metrics.ICurrentPlatformEphemeralCounterMetricsTracker"></inheritdoc>
+        </member>
+        <member name="M:Roblox.Web.Metrics.CurrentPlatformEphemeralCounterMetricsTracker.IncrementCountersForCurrentPlatformAndGlobalCounter(System.String,System.String)">
+            <inheritdoc cref="T:Roblox.Web.Metrics.ICurrentPlatformEphemeralCounterMetricsTracker"></inheritdoc>
+        </member>
+        <member name="M:Roblox.Web.Metrics.CurrentPlatformEphemeralCounterMetricsTracker.IncrementCounter(System.String)">
+            <summary>
+            Increments the <see cref="T:Roblox.EphemeralCounters.ICounter"/> indicated by <paramref name="counterName"/>.
+            </summary>
+            <param name="counterName">The counter to increment.</param>
+        </member>
+        <member name="M:Roblox.Web.Metrics.CurrentPlatformEphemeralCounterMetricsTracker.TryGetUserAgent(System.String@)">
+            <summary>
+            Tries to get the current <see cref="T:System.Web.HttpRequest"/>'s UserAgent.
+            </summary>
+            <remarks>This method should be private but is protected virtual for testing purposes.</remarks>
+            <param name="userAgent">The </param>
+            <returns><c>True</c> if fetching the UserAgent from <see cref="T:System.Web.HttpContext"/> was successful, <c>False</c> otherwise.</returns>
+        </member>
+        <member name="T:Roblox.Web.Metrics.IEndpointResponsePerformanceCounter">
+            <summary>
+            A performance counter for per endpoint metrics
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IEndpointResponsePerformanceCounter.Increment(System.TimeSpan)">
+            <summary>
+            Increments the web execution, and response count total counters
+            </summary>
+            <param name="executionTime">The request execution time.</param>
+        </member>
+        <member name="T:Roblox.Web.Metrics.IEndpointFailurePerformanceCounter">
+            <summary>
+            A performance counter for per endpoint failure metrics.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IEndpointFailurePerformanceCounter.Increment(System.TimeSpan)">
+            <summary>
+            Increments the web execution, and response count total counters.
+            </summary>
+            <param name="executionTime">The request execution time.</param>
+        </member>
+        <member name="T:Roblox.Web.Metrics.IWebRequestStatisticsEnabler">
+            <summary>
+            Describes a facility that checks if counters should be enabled based on the collected information.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebRequestStatisticsEnabler.IsStatusCodeTrackingEnabled(System.Web.HttpResponseBase)">
+            <summary>
+            Checks when to report the status code counter.
+            </summary>
+            <param name="response">The response that completed.</param>
+            <returns>true if the status code needs to be reported or false otherwise</returns>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebRequestStatisticsEnabler.IsEndpointResponseTrackingEnabled(System.Web.HttpResponseBase,System.String,System.String,System.TimeSpan)">
+            <summary>
+            Checks when to report the endpoint response counter.
+            </summary>
+            <param name="response">The response that completed.</param>
+            <param name="controller">The controller dispatching the response.</param>
+            <param name="action">The action dispatching the response.</param>
+            <param name="executionTime">The execution time it took to dispatch the response.</param>
+            <returns>true if the endpoint response needs to be reported or false otherwise</returns>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebRequestStatisticsEnabler.IsEndpointFailureTrackingEnabled(System.Web.HttpResponseBase,System.String,System.String,System.TimeSpan)">
+            <summary>
+            Checks when to report the endpoint failure counter.
+            </summary>
+            <param name="response">The response that completed.</param>
+            <param name="controller">The controller dispatching the response.</param>
+            <param name="action">The action dispatching the response.</param>
+            <param name="executionTime">The execution time it took to dispatch the response.</param>
+            <returns>true if the endpoint response needs to be reported or false otherwise</returns>
+        </member>
+        <member name="T:Roblox.Web.Metrics.IHttpStatusCodePerformanceCounter">
+            <summary>
+            A performance counter for tracking Http status codes per site
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IHttpStatusCodePerformanceCounter.Increment">
+            <summary>
+            Increments the performance counter
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Metrics.IWebRequestStatisticsTracker">
+            <summary>
+            A class for tracking metrics about requests
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebRequestStatisticsTracker.OnActionChosen(System.Web.HttpContextBase,System.String,System.String)">
+            <summary>
+            Tracks information on an <see cref="T:System.Web.HttpContextBase"/> about what action is being
+            used to be tracked when the request ends.
+            </summary>
+            <remarks>
+            It is possible for this to be called multiple times in a single Http request
+            for cases where multiple actions are called in a single request.
+            </remarks>
+            <param name="requestContext">The <see cref="T:System.Web.HttpContextBase"/>.</param>
+            <param name="controllerName">The controller name the action belongs to.</param>
+            <param name="actionName">The name of the action being called.</param>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebRequestStatisticsTracker.OnRequestEnd(System.Web.HttpRequestBase,System.Web.HttpResponseBase)">
+            <summary>
+            Tracks metrics when a request ends
+            </summary>
+            <param name="request">The <see cref="T:System.Web.HttpRequestBase"/>.</param>
+            <param name="response">The <see cref="T:System.Web.HttpResponseBase"/>.</param>
+        </member>
+        <member name="T:Roblox.Web.Metrics.IWebResponseMetricsFactory">
+            <summary>
+            A factory that gets Web.Metrics specific performance counters
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebResponseMetricsFactory.GetEndpointResponsePerformanceCounter(System.String,System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Web.Metrics.IEndpointResponsePerformanceCounter"/> for an action
+            </summary>
+            <remarks>
+            This interface is reused among multiple calls.
+            </remarks>
+            <param name="controllerName">The controller name the action belongs to.</param>
+            <param name="actionName">The action name.</param>
+            <returns><see cref="T:Roblox.Web.Metrics.IEndpointResponsePerformanceCounter"/></returns>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebResponseMetricsFactory.GetEndpointFailurePerformanceCounter(System.String,System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Web.Metrics.IEndpointFailurePerformanceCounter"/> for an action
+            </summary>
+            <remarks>
+            This interface is reused among multiple calls.
+            </remarks>
+            <param name="controllerName">The controller name the action belongs to.</param>
+            <param name="actionName">The action name.</param>
+            <returns><see cref="T:Roblox.Web.Metrics.IEndpointFailurePerformanceCounter"/></returns>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebResponseMetricsFactory.GetHttpStatusCodePerformanceCounter(System.Net.HttpStatusCode)">
+            <summary>
+            Gets an <see cref="T:Roblox.Web.Metrics.IHttpStatusCodePerformanceCounter"/> for an <see cref="T:System.Net.HttpStatusCode"/>
+            </summary>
+            <remarks>
+            This interface is reused among multiple calls.
+            </remarks>
+            <param name="statusCode">The <see cref="T:System.Net.HttpStatusCode"/>.</param>
+            <returns><see cref="T:Roblox.Web.Metrics.IHttpStatusCodePerformanceCounter"/></returns>
+        </member>
+        <member name="M:Roblox.Web.Metrics.IWebResponseMetricsFactory.GetAspNetPerformanceCounter(Roblox.Web.Metrics.AspNetPageType,System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Web.Metrics.IAspNetPerformanceCounter"/> for an ASP.NET file.
+            </summary>
+            <param name="pageType">The file <see cref="T:Roblox.Web.Metrics.AspNetPageType"/>.</param>
+            <param name="pageName">The ASP.NET class name for the file.</param>
+            <returns><see cref="T:Roblox.Web.Metrics.IAspNetPerformanceCounter"/></returns>
+            <exception cref="T:System.ArgumentException"><paramref name="pageName"/> is null or whitespace.</exception>
+        </member>
+        <member name="T:Roblox.Web.Metrics.ActionMetricsModel">
+            <summary>
+            A model for containing endpoint metric information
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Metrics.ActionMetricsModel.ActionName">
+            <summary>
+            The action name
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Metrics.ActionMetricsModel.ControllerName">
+            <summary>
+            The controller name
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Metrics.ActionMetricsModel.ActionExecutionStartTime">
+            <summary>
+            When the action was chosen for execution
+            </summary>
+        </member>
+    </members>
+</doc>

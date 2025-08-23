@@ -1,0 +1,983 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.TwoStepVerification</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoStepVerificationSettingsAuditEntryEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoStepVerificationSettingsAuditEntryEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoStepVerificationSettingsAuditEntryEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoStepVerificationSettingsAuditEntryEntityFactory.GetByPublicId(System.Guid)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoStepVerificationSettingsAuditEntryEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoStepVerificationSettingsAuditEntryEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntityFactory.GetByUserIdEnumerative(System.Int64,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntity"/>s by their TODO: Fill in.
+            </summary>
+            TODO: Add params
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartTwoSVSettingsAuditMetadataId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            TODO: Add other exceptions
+            <returns>The page of <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntityFactory.GetByUserIdAndTwoStepVerificationChangeTypeIdEnumerative(System.Int64,System.Byte,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntity"/>s by their TODO: Fill in.
+            </summary>
+            TODO: Add params
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartTwoSVSettingsAuditMetadataId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            TODO: Add other exceptions
+            <returns>The page of <see cref="T:Roblox.Platform.TwoStepVerification.Entities.Audit.ITwoSVSettingsAuditMetadataEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationMediaTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationMediaTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationMediaTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationMediaTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationMediaTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationMediaTypeEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntityFactory.GetByUserId(System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity"/> with the given <see cref="T:Roblox.Platform.Membership.IUser">user</see> id
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntityFactory.GetOrCreate(System.Int64)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity"/> with the given <see cref="T:Roblox.Platform.Membership.IUser">user</see> id
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntityFactory.Clone(Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity)">
+            <summary>
+            Clones an existing <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity"/>.
+            </summary>
+            <param name="entity">An <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity"/></param>
+            <returns>An <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity"/> with the identical values to <paramref name="entity"/>.</returns>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationFloodCheckerFactory">
+            <summary>
+            Factory for getting the flood checkers relate to two-step verification operations
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationFloodCheckerFactory.GetFloodCheckerForSetTwoStepSetting(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Get the set two-step verification <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/> for the given <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> who tried to set two-step verification.</param>
+            <returns>A <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.FloodCheckers.TwoStepVerificationResendCodeFloodChecker">
+            <summary>
+            A flood checker for resending an already sent 2SV code
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionPurger">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionPurger.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionCollectionFactory)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionPurger"/>
+            </summary>
+            <param name="sessionCollectionFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionCollectionFactory"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="sessionCollectionFactory"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionPurger.DeleteSessionsForUser(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger.DeleteSessionsForUser(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationEmailNotifier.SendEmail(Roblox.Platform.Membership.IUser,System.String,System.String,System.String,System.String,Roblox.TranslationResources.Communication.ICommonEmailResources)">
+            <summary>
+            Sends an email to <see cref="T:Roblox.Platform.Membership.IUser" /> <paramref name="user" /> with <paramref name="subject" />, <paramref name="emailType" />, <paramref name="plainBody" />, <paramref name="htmlBody" />.
+            </summary>
+            <param name="user"><see cref="T:Roblox.Platform.Membership.IUser" /> to send the email to.</param>
+            <param name="subject">Email subject.</param>
+            <param name="emailType">Email type.</param>
+            <param name="plainBody">Email plain body.</param>
+            <param name="htmlBody">Email HTML body.</param>
+            <param name="commonEmailResources">The <see cref="T:Roblox.TranslationResources.Communication.ICommonEmailResources"/>.</param>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionCollectionFactory">
+            <summary>
+            Produces <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionCollectionFactory.GetSessionsByUser(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets all <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>s for <paramref name="user"/>
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <returns>All <see cref="T:System.Collections.Generic.IEnumerable`1"/> for <paramref name="user"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger">
+            <summary>
+            Deletes existing <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger.DeleteSessionsForUser(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Deletes all existing <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>s for <paramref name="user"/>.
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengePersister.#ctor(Roblox.Caching.Shared.ISharedCacheClient)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengePersister"/>
+            </summary>
+            <param name="sharedCacheClient">An <see cref="T:Roblox.Caching.Shared.ISharedCacheClient"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="sharedCacheClient"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengePersister.GetByUserAndActionType(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister.GetByUserAndActionType(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengePersister.Persist(Roblox.Platform.TwoStepVerification.TwoStepVerificationCode)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister.Persist(Roblox.Platform.TwoStepVerification.TwoStepVerificationCode)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengePersister.Delete(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister.Delete(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengePersister.ConstructKey(System.Int64,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <summary>
+            Gets the cache key for a given <paramref name="userId"/> and <paramref name="actionType"/>.
+            </summary>
+            <remarks>
+            DO NOT CHANGE THIS METHOD -- Modifying this can cause cache misses during rollout and will impact 2SV users.
+            </remarks>
+            <param name="userId">An <see cref="!:IUserIdentifier.Id"/></param>
+            <param name="actionType">A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/></param>
+            <returns>The cache key.</returns>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister">
+            <summary>
+            Persists records of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister.GetByUserAndActionType(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode"/> for a given <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> and <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/>.
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/></param>
+            <param name="actionType">A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/></param>
+            <returns>A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode"/>, or null if not found.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister.Persist(Roblox.Platform.TwoStepVerification.TwoStepVerificationCode)">
+            <summary>
+            Persists the given <paramref name="cacheableChallenge"/>
+            </summary>
+            <param name="cacheableChallenge">A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode"/></param>
+            <returns><c>True</c> if successful, <c>False</c> otherwise.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="cacheableChallenge"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister.Delete(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <summary>
+            Deletes a persisted <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode"/>
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/></param>
+            <param name="actionType">A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaTypeFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaTypeFactory.#ctor(Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationMediaTypeEntityFactory)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaTypeFactory"/>
+            </summary>
+            <param name="mediaTypeEntityFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationMediaTypeEntityFactory"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="mediaTypeEntityFactory"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaTypeFactory.GetIdByValue(Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory.GetIdByValue(Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaTypeFactory.GetValueById(System.Byte)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory.GetValueById(System.Byte)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge.Id">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Id"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge.UserIdentifier">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.UserIdentifier"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge.Passcode">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Passcode"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge.ActionType">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.ActionType"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge.IssuedDate">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.IssuedDate"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister,Roblox.Platform.TwoStepVerification.TwoStepVerificationCode)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge"/>
+            </summary>
+            <param name="challengePersister">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister"/></param>
+            <param name="cacheableChallenge">A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="cacheableChallenge"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="cacheableChallenge.Id.Id"/> is empty, <paramref name="cacheableChallenge.Passcode.Passcode"/> is null or empty, or <paramref name="cacheableChallenge.UserId.UserId"/> is a default value.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge.Revoke">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Revoke"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallenge.ToDTO">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.ToDTO"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/>
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting.OnPreChange">
+            <inheritdoc cref="E:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.OnPreChange"/>
+        </member>
+        <member name="E:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting.OnPostChange">
+            <inheritdoc cref="E:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.OnPostChange"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting.UserIdentifier">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.UserIdentifier"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting.IsEnabled">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.IsEnabled"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting.MediaType">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.MediaType"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory,Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntityFactory,Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting"/>
+            </summary>
+            <param name="mediaTypeFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory"/></param>
+            <param name="settingEntityFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntityFactory"/></param>
+            <param name="entity">An <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntity"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="mediaTypeFactory"/>, <paramref name="settingEntityFactory"/>, or <paramref name="entity"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting.Save">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.Save"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetting.ToDTO">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.ToDTO"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory">
+            <summary>
+            Translates between <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>s and primitives.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory.GetIdByValue(Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType)">
+            <summary>
+            Gets the primitive ID of <paramref name="twoStepVerificationMediaType"/>.
+            </summary>
+            <param name="twoStepVerificationMediaType">A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>.</param>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>'s ID.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if <paramref name="twoStepVerificationMediaType"/> is not found in the database.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory.GetValueById(System.Byte)">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/> by its primative ID.
+            </summary>
+            <param name="id">The primative ID of the <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/> to get.</param>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/> that matches the value for <paramref name="id"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformDataIntegrityException">Thrown if there is no record for <paramref name="id"/>, or if the record for <paramref name="id"/> does not map to <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession">
+            <summary>
+            An active 2SV session created after an <see cref="T:Roblox.Platform.Membership.IUser"/> passing an <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession.UserIdentifier">
+            <summary>
+            The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> that this session relates to.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession.Token">
+            <summary>
+            A unique token that identifies this <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession.Delete">
+            <summary>
+            Deletes this <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingChangeNotifier.Send(Roblox.Platform.TwoStepVerification.TwoStepEventArgs)">
+            <summary>
+            Sends an email given a <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepEventArgs"/> <paramref name="e"/>.
+            </summary>
+            <param name="e"><see cref="T:Roblox.Platform.TwoStepVerification.TwoStepEventArgs"/> containing information regarding email to be sent.</param>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry">
+            <summary>
+            Audit information on the TwoStepVerificationSettings data entity, comprising of the raw data (prefixed with "Audit_") and additional meta data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.UserId">
+            <summary>
+            [Metadata] The id of the user this record is associated with
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.Type">
+            <summary>
+            [Metadata] The cause triggering the audit event
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.ActorUserId">
+            <summary>
+            [Metadata] The id of the user triggering the audit event, such as an ordinary user or a CS agent.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.IsLegacyValue">
+            <summary>
+            [Metadata] Indicating if the record represents data originally produced when auditing was not available, and is later being backfilled to provide comparison with other audit records.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.Audit_Id">
+            <summary>
+            The value of Id of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.Audit_IsEnabled">
+            <summary>
+            The value of IsEnabled of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.Audit_UserID">
+            <summary>
+            The value of UserID of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.Audit_Created">
+            <summary>
+            The value of Created of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.Audit_Updated">
+            <summary>
+            The value of Updated of the record being audited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry.Audit_TwoStepVerificationMediaType">
+            <summary>
+            The value of TwoStepVerificationMediaType of the record being audited.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntryFactory">
+            <summary>
+            A public interface producing <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntry">ITwoStepVerificationSettingsAuditCompositeEntries</see>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntryFactory.GetAllHistory(System.Int64,System.Byte,System.Nullable{System.Int64})">
+            <summary>
+            Obtains full audit information on a user's TwoStepVerificationSetting changes
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntryFactory.GetEnableDisableHistory(System.Int64,System.Byte,System.Nullable{System.Int64})">
+            <summary>
+            Obtains audit information on a user's isEnabled changes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingsAuditCompositeEntryFactory.GetMediaTypeHistory(System.Int64,System.Byte,System.Nullable{System.Int64})">
+            <summary>
+            Obtains audit information on a user's media type changes.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationDomainProvider.TwoStepVerificationFloodCheckerFactory">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationFloodCheckerFactory"/>
+            </summary>
+            <value><see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationFloodCheckerFactory"/></value>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeFactory.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeFactory"/>
+            </summary>
+            <param name="challengePersister">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengePersister"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="challengePersister"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeFactory.GetByUserAndActionType(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory.GetByUserAndActionType(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeFactory.GenerateChallenge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory.GenerateChallenge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendorFactory"/>
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorFactory._EmailVendor">
+            <summary>
+            A <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor"/> that sends codes via email.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorFactory._SmsVendor">
+            <summary>
+            A <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor"/> that sends codes via SMS.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorFactory.#ctor(Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorViaEmail,Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorViaSms)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorFactory.GetCodeVendor(Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendorFactory.GetCodeVendor(Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionFactory"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionFactory.#ctor(Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionFactory"/>
+            </summary>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="userFactory"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionFactory.CreateNew(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionFactory.CreateNew(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionFactory.GetByToken(System.Guid)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionFactory.GetByToken(System.Guid)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSessionFactory.GetSessionsByUser(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionCollectionFactory.GetSessionsByUser(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingFactory">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory"/>
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingFactory.OnSettingInstantiated">
+            <inheritdoc cref="E:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory.OnSettingInstantiated"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingFactory.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory,Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntityFactory)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingFactory"/>
+            </summary>
+            <param name="mediaTypeFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationMediaTypeFactory"/></param>
+            <param name="settingEntityFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.Entities.ITwoStepVerificationSettingEntityFactory"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="mediaTypeFactory"/> or <paramref name="settingEntityFactory"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingFactory.GetByUser(Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory.GetByUser(Roblox.Platform.MembershipCore.IUserIdentifier)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingFactory.GetOrCreateByUser(Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory.GetOrCreateByUser(Roblox.Platform.MembershipCore.IUserIdentifier)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorViaEmail">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender"/> that sends codes via email.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorViaEmail.Send(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge,Roblox.Platform.Membership.IUser,Roblox.Platform.IpAddresses.IIpLocation)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor.Send(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge,Roblox.Platform.Membership.IUser,Roblox.Platform.IpAddresses.IIpLocation)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorViaSms">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender"/> that sends codes via SMS.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorViaSms.#ctor(Roblox.Platform.Demographics.IAccountPhoneNumberFactory,Roblox.Sms.Client.ISmsClient,Roblox.EventLog.ILogger,System.String,System.Func{System.Boolean})">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorViaSms"/>
+            </summary>
+            <param name="accountPhoneNumberFactory">An <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactory"/></param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="applicationName">Name of the application.</param>
+            <param name="isTwoStepVerificationLoggingEnabled">A <see cref="!:Func&lt;bool&gt;"/> that returns <c>True</c> if logging enabled, <c>False</c> otherwise.</param>
+            <param name="smsClient">An <see cref="T:Roblox.Sms.Client.SmsClient"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="accountPhoneNumberFactory"/>, <paramref name="logger"/>, or <paramref name="isTwoStepVerificationLoggingEnabled"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="applicationName"/> is null or empty.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeVendorViaSms.Send(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge,Roblox.Platform.Membership.IUser,Roblox.Platform.IpAddresses.IIpLocation)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor.Send(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge,Roblox.Platform.Membership.IUser,Roblox.Platform.IpAddresses.IIpLocation)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeSender">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeSender.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory,Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendorFactory,Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider,Roblox.Platform.Membership.IUserFactory,Roblox.EventLog.ILogger)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeSender"/>
+            </summary>
+            <param name="challengeFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory"/></param>
+            <param name="codeVendorFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendorFactory"/></param>
+            <param name="configurationProvider">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider"/></param>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="challengeFactory"/>, <paramref name="codeVendorFactory"/>, <paramref name="configurationProvider"/>, <paramref name="userFactory"/>, or <paramref name="logger" /> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeSender.GenerateChallengeAndSendCode(Roblox.Platform.Membership.IUser,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender.GenerateChallengeAndSendCode(Roblox.Platform.Membership.IUser,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType,System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeSender.ResendCodeForChallenge(Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender.ResendCodeForChallenge(Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO,System.String)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeValidator">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeValidator.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory,Roblox.EphemeralCounters.IEphemeralCounterFactory,Roblox.EventLog.ILogger)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeValidator"/>
+            </summary>
+            <param name="challengeFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory"/></param>
+            <param name="ephemeralCounterFactory">An <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/>.</param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            - <paramref name="challengeFactory" />
+            - <paramref name="ephemeralCounterFactory"/>
+            - <paramref name="logger"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeValidator.IsCodeValid(Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator.IsCodeValid(Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationConfigurationProvider">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationConfigurationProvider.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory,Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger,Roblox.Platform.Email.User.IAccountEmailAddressFactory,Roblox.Platform.Demographics.IAccountPhoneNumberFactory,Roblox.Platform.Membership.IRoleSetValidator)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationConfigurationProvider"/>
+            </summary>
+            <param name="settingFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory"/></param>
+            <param name="sessionPurger">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger"/></param>
+            <param name="accountEmailAddressFactory">An <see cref="T:Roblox.Platform.Email.User.IAccountEmailAddressFactory"/></param>
+            <param name="accountPhoneNumberFactory">An <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactory"/></param>
+            <param name="roleSetValidator">An <see cref="T:Roblox.Platform.Membership.IRoleSetValidator"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="settingFactory"/>, <paramref name="sessionPurger"/>, <paramref name="accountEmailAddressFactory"/>, <paramref name="accountPhoneNumberFactory"/>, or <paramref name="roleSetValidator"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationConfigurationProvider.GetTwoStepSettingForUser(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider.GetTwoStepSettingForUser(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationConfigurationProvider.SetTwoStepSettingForUser(Roblox.Platform.Membership.IUser,System.Boolean,System.Nullable{Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType})">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider.SetTwoStepSettingForUser(Roblox.Platform.Membership.IUser,System.Boolean,System.Nullable{Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType})"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge">
+            <summary>
+            A record of an <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> being challenged by Two Step Verification
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Id">
+            <summary>
+            A unique identifier for this challenge.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.UserIdentifier">
+            <summary>
+            The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> to challenge.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Passcode">
+            <summary>
+            The code required to pass this challenge.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.ActionType">
+            <summary>
+            The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/> for this challenge.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.IssuedDate">
+            <summary>
+            When the <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/> was generated.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Revoke">
+            <summary>
+            Revokes this <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.ToDTO">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/> from this <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory">
+            <summary>
+            Produces <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory.GenerateChallenge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/> for the given <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> and <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/>.
+            </summary>
+            <remarks>
+            Revokes any existing challenge for the <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> and <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/> pair.
+            </remarks> 
+            <param name="userIdentifier">The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> to generate the challeng for.</param>
+            <param name="actionType">The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/> that the challenge is valid for.</param>
+            <returns>The new <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">Thrown if <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeGenerationFloodChecker"/> is flooded.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="userIdentifier"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if an error occurred persisting a 2SV challenge.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallengeFactory.GetByUserAndActionType(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType)">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/> for a given <paramref name="userIdentifier"/> and <paramref name="actionType"/>
+            </summary>
+            <param name="userIdentifier">An <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/></param>
+            <param name="actionType">A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/></param>
+            <returns>A <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>, or null if not found or expired.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="userIdentifier"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender">
+            <summary>
+            Sends 2SV codes to an <see cref="T:Roblox.Platform.Membership.IUser"/>'s configured second factor.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender.GenerateChallengeAndSendCode(Roblox.Platform.Membership.IUser,Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType,System.String)">
+            <summary>
+            Generates a <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/> and sends <see cref="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO.Passcode"/> to the given <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="actionType">The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType"/></param>
+            <param name="ipAddress">The IpAddress of the original request</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the <paramref name="user" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">Thrown if <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeGenerationFloodChecker"/> is flooded.</exception>
+            <exception cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationUnverifiedMediaTypeException">Thrown if <paramref name="user"/> has not verified their chosen <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if there was an unexpected failure to send <see cref="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO.Passcode"/>.</exception>
+            <returns>The generated <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender.ResendCodeForChallenge(Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO,System.String)">
+            <summary>
+            Resends a <see cref="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO.Passcode"/> to the <see cref="T:Roblox.Platform.Membership.IUser"/> it was generated for.
+            </summary>
+            <param name="challengeDto">The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/></param>
+            <param name="ipAddress">The IpAddress of the original request</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the <paramref name="challengeDto"/> or <paramref name="challengeDto.UserIdentifier.UserIdentifier"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="challengeDto.Id.Id"/> is empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidOperationException">Thrown if <pramref name="challenge.Id"/> was not issued for <paramref name="challengeDto.UserIdentifier.UserIdentifier"/>.</exception>
+            <exception cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationUnverifiedMediaTypeException">Thrown if <paramref name="challengeDto.UserIdentifier.UserIdentifier"/> has not verified their chosen <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if there was an unexpected failure to send <see cref="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO.Passcode"/>.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">Flood check limit reached retrying code.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendorFactory">
+            <summary>
+            Produces <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor"/>s for specified <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendorFactory.GetCodeVendor(Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType)">
+            <summary>
+            Produces an <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor"/> appropriate for the given <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>.
+            </summary>
+            <param name="mediaType">A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/></param>
+            <returns>An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor">
+            <summary>
+            A means of transmitting a <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Passcode"/> to an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeVendor.Send(Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge,Roblox.Platform.Membership.IUser,Roblox.Platform.IpAddresses.IIpLocation)">
+            <summary>
+            Sends the <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Passcode"/> to <paramref name="user"/> using a <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>.
+            </summary>
+            <param name="challenge">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/></param>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="ipLocation">The <see cref="T:Roblox.Platform.IpAddresses.IIpLocation"/> of the original request</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="challenge"/> or <paramref name="user"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationUnverifiedMediaTypeException">Thrown if <paramref name="user"/> has not verified their chosen <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if there was an unexpected failure to send <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Passcode"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator">
+            <summary>
+            Validates that a given <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/> is correct and all fields are valid.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator.IsCodeValid(Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)">
+            <summary>
+            Verifies that all fields of a given <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/> are valid.
+            </summary>
+            <param name="challengeDTO">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="challengeDTO"/> or <paramref name="challengeDTO.User.User"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="challengeDTO.Id.Id"/> is empty or if <paramref name="challengeDTO.Passcode.Passcode"/> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">Thrown if <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCodeInputFloodChecker"/> is flooded.</exception>
+            <returns><c>True</c> if <paramref name="challengeDTO"/> is valid, <c>False</c> otherwise.</returns>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider">
+            <summary>
+            Gets and sets 2SV configuration for an <see cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider.GetTwoStepSettingForUser(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the 2SV configuration for <paramref name="user"/>, or a suitable default.
+            </summary>
+            <remarks>
+            For privileged users the default is Enabled + SMS.
+            For everyone else it is Disabled + Email.
+            </remarks>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <returns>A <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingDTO"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider.SetTwoStepSettingForUser(Roblox.Platform.Membership.IUser,System.Boolean,System.Nullable{Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType})">
+            <summary>
+            Sets the 2SV configuration for <paramref name="user"/>.
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="isEnabled"><c>True</c> enabled, <c>False</c> otherwise.</param>
+            <param name="mediaType">The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/> through which to send 2SV codes. This is always optional.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSetNotAllowedException">Thrown when a privileged user attempts to set 2SV to an invalid state.</exception>
+            <exception cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationUnverifiedMediaTypeException">Thrown when attempting to set <paramref name="mediaType"/> for a media type that <paramref name="user"/> has not yet verified.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionFactory">
+            <summary>
+            Starts new, and looks up existing <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionFactory.CreateNew(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Starts a new <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/> for the <paramref name="user"/>.
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <returns>The newly created <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionFactory.GetByToken(System.Guid)">
+            <summary>
+            Looks up an <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/> by <paramref name="token"/>
+            </summary>
+            <remarks>
+            If an expired <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/> is found for <paramref name="token"/> it will be deleted.
+            </remarks>
+            <param name="token">A unique identifier</param>
+            <returns>An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>, or null if none found.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="token"/> is empty.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting">
+            <summary>
+            An <see cref="T:Roblox.Platform.Membership.IUser"/>'s 2SV configuration.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.UserIdentifier">
+            <summary>
+            The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> that the preferences belong to.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.IsEnabled">
+            <summary>
+            Whether or not 2SV is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.MediaType">
+            <summary>
+            Type of media through which 2SV codes will be sent.
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.OnPreChange">
+            <summary>
+            Event fired immediately before changes to this <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/> become permanent.
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.OnPostChange">
+            <summary>
+            Event fired immediately after changes to this <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/> become permanent.
+            </summary>
+            <remarks>
+            The first argument is the entity before the save, the second argument is the entity after the save.
+            </remarks>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.Save">
+            <summary>
+            Saves this <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.ToDTO">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingDTO"/> from this <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/>
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingDTO"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory">
+            <summary>
+            Produces <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/>
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory.OnSettingInstantiated">
+            <summary>
+            Event fired when an <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/> is instantiated.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory.GetByUser(Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/> for <paramref name="user"/>
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/></param>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/> for <paramref name="user"/>, or null if none exists.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSettingFactory.GetOrCreateByUser(Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Gets or creates the <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/> for <paramref name="user"/>
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/></param>
+            <returns>The <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting"/> for <paramref name="user"/>, creating one if none existed.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO">
+            <summary>
+            Data Transfer Object for an <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO.Id">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Id"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO.UserIdentifier">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.UserIdentifier"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO.Passcode">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Passcode"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO.ActionType">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.ActionType"/>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType">
+            <summary>
+            Represents a type of action that requires a verification code if two step verification is enabled.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TwoStepVerification.TwoStepVerificationActionType.Login">
+            <summary>
+            The user is signing in.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode">
+            <summary>
+            A cacheable version of an <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge"/>.
+            </summary>
+            <remarks>
+            DO NOT CHANGE THIS CLASS -- Modifying the properties or behavior of this class will cause cache misses during rollout and will impact 2SV users.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode.UserId">
+            <summary>
+            The <see cref="P:Roblox.Platform.MembershipCore.IVisitorIdentifier.Id"/> for this challenge.
+            </summary>
+            <remarks>Corresponds to <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.UserIdentifier"/></remarks>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode.Code">
+            <summary>
+            The code sent to second factor.
+            </summary>
+            <remarks>Corresponds to <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Passcode"/></remarks>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode.TwoStepVerificationActionType">
+            <summary>
+            The <see cref="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode.TwoStepVerificationActionType"/> of this challenge.
+            </summary>
+            <remarks>Corresponds to <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.ActionType"/></remarks>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode.Created">
+            <summary>
+            The <see cref="T:System.DateTime"/> when this challenge was created.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationCode.Nonce">
+            <summary>
+            A unique identifier for this challenge.
+            </summary>
+            <remarks>Corresponds to <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Id"/></remarks>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType">
+            <summary>
+            Represents a media type through which Two Step Verification codes are sent.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType.Email">
+            <summary>
+            Email.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType.SMS">
+            <summary>
+            SMS.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSession">
+            <summary>
+            Implementation of <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationSession.UserIdentifier">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession.UserIdentifier"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationSession.Token">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession.Token"/>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSession.#ctor(Roblox.Platform.Membership.IUserFactory,Roblox.Platform.TwoStepVerification.Entities.TwoStepVerificationSessionToken)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationSession"/>
+            </summary>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <param name="entity">A <see cref="T:Roblox.Platform.TwoStepVerification.Entities.TwoStepVerificationSessionToken"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="userFactory"/> or <paramref name="entity"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TwoStepVerification.TwoStepVerificationSession.Delete">
+            <inheritdoc cref="M:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSession.Delete"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingDTO.UserIdentifier">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.UserIdentifier"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingDTO.IsEnabled">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.IsEnabled"/>
+        </member>
+        <member name="P:Roblox.Platform.TwoStepVerification.TwoStepVerificationSettingDTO.MediaType">
+            <inheritdoc cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.MediaType"/>
+        </member>
+    </members>
+</doc>

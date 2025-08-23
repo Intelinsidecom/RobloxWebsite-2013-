@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Roblox.Thumbnails.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3010b2f6f6739a85ad34657bb02c299e8ee40d09")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9abf90dc3eac2c20ea4f205d53ed14c678386f04")]
 [assembly: System.Reflection.AssemblyProductAttribute("Roblox.Thumbnails.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Roblox.Thumbnails.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

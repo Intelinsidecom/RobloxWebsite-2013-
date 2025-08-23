@@ -5,7 +5,7 @@ using Roblox.Common;
 using Roblox.EphemeralCounters;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Authentication;
-using Roblox.Platform.Floodcheckers;
+using Roblox.FloodCheckers;
 using Roblox.Platform.Membership;
 using Roblox.Web.Authentication.Enums;
 using Roblox.Web.Authentication.Floodcheckers;

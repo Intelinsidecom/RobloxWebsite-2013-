@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Web.Authentication</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -13,7 +13,7 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Grpc.Core.Api" Version="2.46.6" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.8.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.AccountPins">
@@ -49,6 +49,9 @@
     <Reference Include="Roblox.Platform.AbTesting.Core">
       <HintPath>..\..\..\Website\bin\Roblox.Platform.AbTesting.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Roblox.Platform.Marketing">
+      <HintPath>..\..\..\Website\bin\Roblox.Platform.Marketing.dll</HintPath>
+    </Reference>
     
     <Reference Include="System.Web.ApplicationServices" />
     
@@ -59,28 +62,28 @@
     <ProjectReference Include="..\..\Roblox.Sms.Client\Roblox.Sms.Client.csproj" />
     <ProjectReference Include="..\..\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj" />
     <ProjectReference Include="..\..\Web\Roblox.Web.Devices\Roblox.Web.Devices.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Platform.Marketing\Roblox.Platform.Marketing.csproj" />
-    <ProjectReference Include="..\..\..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
-    <ProjectReference Include="..\..\..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Platform.TwoStepVerification\Roblox.Platform.TwoStepVerification.csproj" />
+    <ProjectReference Include="..\..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\..\Roblox.Platform.TwoStepVerification\Roblox.Platform.TwoStepVerification.csproj" />
     <ProjectReference Include="..\..\Platform\Authentication\Roblox.Platform.Authentication\Roblox.Platform.Authentication.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.FloodCheckers.Core\Roblox.FloodCheckers.Core.csproj" />
+    <ProjectReference Include="..\..\Roblox.Platform.Authentication.AccountSecurity\Roblox.Platform.Authentication.AccountSecurity.csproj" />
+    <ProjectReference Include="..\..\Roblox.FloodCheckers.Core\Roblox.FloodCheckers.Core.csproj" />
     <ProjectReference Include="..\..\Platform\Membership\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Platform.Captcha\Roblox.Platform.Captcha.csproj" />
+    <ProjectReference Include="..\..\Roblox.Platform.Captcha\Roblox.Platform.Captcha.csproj" />
     <ProjectReference Include="..\..\Web\Roblox.Web\Roblox.Web.csproj" />
     <ProjectReference Include="..\..\Platform\Security\Roblox.Platform.Security\Roblox.Platform.Security.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Platform.Email.User\Roblox.Platform.Email.User.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Platform.Devices\Roblox.Platform.Devices.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.RequestContext\Roblox.RequestContext.csproj" />
+    <ProjectReference Include="..\..\Roblox.Platform.Email.User\Roblox.Platform.Email.User.csproj" />
+    <ProjectReference Include="..\..\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
+    <ProjectReference Include="..\..\Roblox.Platform.Devices\Roblox.Platform.Devices.csproj" />
+    <ProjectReference Include="..\..\Roblox.RequestContext\Roblox.RequestContext.csproj" />
     <ProjectReference Include="..\..\Common\Roblox.Common\Roblox.Common.csproj" />
     <ProjectReference Include="..\..\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Identities.Models\Roblox.Identities.Models.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.Http.Client\Roblox.Http.Client.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.EphemeralCounters\Roblox.EphemeralCounters.csproj" />
-    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
-    <ProjectReference Include="..\..\..\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
+    <ProjectReference Include="..\..\Roblox.Identities.Models\Roblox.Identities.Models.csproj" />
+    <ProjectReference Include="..\..\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj" />
+    <ProjectReference Include="..\..\Roblox.Http.Client\Roblox.Http.Client.csproj" />
+    <ProjectReference Include="..\..\Roblox.EphemeralCounters\Roblox.EphemeralCounters.csproj" />
+    <ProjectReference Include="..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\..\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
     <ProjectReference Include="..\..\Common\Roblox.Common.Web\Roblox.Common.Web.csproj" />
     <ProjectReference Include="..\..\Users\Roblox.Users\Roblox.Users.csproj" />
   </ItemGroup>

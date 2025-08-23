@@ -1,0 +1,1453 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Web.Authentication</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Web.Authentication.AccountPinAuthenticator">
+            <summary>
+            A web implementation of <see cref="T:Roblox.Web.Authentication.IAccountPinAuthenticator" />.
+            </summary>
+            <seealso cref="T:Roblox.Web.Authentication.IAccountPinAuthenticator" />
+        </member>
+        <member name="M:Roblox.Web.Authentication.AccountPinAuthenticator.#ctor(Roblox.Platform.AccountPins.AccountPinsDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.AccountPinAuthenticator"/> class.
+            </summary>
+            <param name="domainFactories">The domain factories.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if the domainFactories is null.</exception>
+        </member>
+        <member name="P:Roblox.Web.Authentication.AuthenticatedUserProvider.AuthenticatedUser">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Web.Authentication.AuthenticatedUserProvider.#ctor(Roblox.Web.Authentication.IWebAuthenticationReader)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="webAuthenticationReader"></param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.AuthenticationSessionType">
+            <summary>
+            Types of <see cref="T:Roblox.Platform.Authentication.IAuthenticationSession"/>s.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.AuthenticationSessionType.Undefined">
+            <summary>
+            Default, type not defined
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.AuthenticationSessionType.Website">
+            <summary>
+            Session used by the website
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.AuthenticationSessionType.Game">
+            <summary>
+            Session used by the game client
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.CaptchaAuthorityBase.AbTestAppCaptchaAlwaysVariation">
+            <summary>
+            This variant is now used to test optimizations for the "always captcha"
+            behavior. The control variation always requires captcha, but clients check if
+            they are enrolled in this variant to compare optimizations
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.CaptchaAuthorityBase.IsCaptchaRequired(System.String,Roblox.Platform.Marketing.IBrowserTracker)">
+            <inheritdoc cref="T:Roblox.Web.Authentication.ICaptchaAuthority"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.CaptchaAuthorityBase.AbTestVariantRequiresCaptcha(System.Nullable{System.Int32})">
+            <summary>
+            Can be overridden by child classes if multiple AB test variants require captcha.
+            </summary>
+            <param name="abTestEnrollment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.CaptchaAuthorityBase.IsDeviceHandleEnabled(System.String,Roblox.Platform.Marketing.IBrowserTracker)">
+            <inheritdoc cref="T:Roblox.Web.Authentication.ICaptchaAuthority"/>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ICaptchaAuthority">
+            <summary>
+            Object that determines whether captcha should be required for an operation
+            and whether or not a consumer of a particular app type should be allowed to
+            bypass captcha.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.ICaptchaAuthority.IsCaptchaRequired(System.String,Roblox.Platform.Marketing.IBrowserTracker)">
+            <summary>
+            Whether captcha should be required.
+            </summary>
+            <param name="userAgent"></param>
+            <param name="browserTracker"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.ICaptchaAuthority.IsDeviceHandleEnabled(System.String,Roblox.Platform.Marketing.IBrowserTracker)">
+            <summary>
+            Whether a particular consumer should be allowed to use the Device Handle system to skip
+            captcha.
+            </summary>
+            <param name="userAgent"></param>
+            <param name="browserTracker"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ICaptchaSettingsModel">
+            <summary>
+            Holds device specific configuration information for captcha on a specific operation.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.CaptchaGrpcClient.#ctor(Roblox.Caching.LazyWithRetry{Roblox.Captcha.Captcha.V1.CaptchaAPI.CaptchaAPIClient},Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.CaptchaGrpcClient" /> class.
+            </summary>
+            <param name="captchaApiClient"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.CaptchaGrpcClient.CaptchaPassed(Roblox.Web.Authentication.ICaptchaParameter,Roblox.Captcha.Captcha.V1.ActionType)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.ICaptchaGrpcClient.CaptchaPassed(Roblox.Web.Authentication.ICaptchaParameter,Roblox.Captcha.Captcha.V1.ActionType)"/>
+        </member>
+        <member name="P:Roblox.Web.Authentication.CaptchaParameter.CaptchaToken">
+            <inheritdoc cref="P:Roblox.Web.Authentication.ICaptchaParameter.CaptchaToken"/>
+        </member>
+        <member name="P:Roblox.Web.Authentication.CaptchaParameter.CaptchaProvider">
+            <inheritdoc cref="P:Roblox.Web.Authentication.ICaptchaParameter.CaptchaProvider"/>
+        </member>
+        <member name="P:Roblox.Web.Authentication.CaptchaParameter.GrpcTimeOut">
+            <inheritdoc cref="P:Roblox.Web.Authentication.ICaptchaParameter.GrpcTimeOut"/>
+        </member>
+        <member name="P:Roblox.Web.Authentication.CaptchaParameter.IsBedev2ForBackendWebLoginEnabled">
+            <inheritdoc cref="P:Roblox.Web.Authentication.ICaptchaParameter.IsBedev2ForBackendWebLoginEnabled"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.CaptchaParameter.#ctor(System.String,System.String,System.TimeSpan,System.Boolean)">
+            <summary>
+            Constructor to initialize a <see cref="T:Roblox.Web.Authentication.CaptchaParameter"/>
+            </summary>
+            <param name="captchaToken"></param>
+            <param name="captchaProvider"></param>
+            <param name="grpcTimeOut"></param>
+            <param name="isBedev2CaptchaEnabled"></param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ICaptchaGrpcClient">
+            <summary>
+            Bedev2 gRPC client to verify the captch token.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.ICaptchaGrpcClient.CaptchaPassed(Roblox.Web.Authentication.ICaptchaParameter,Roblox.Captcha.Captcha.V1.ActionType)">
+            <summary>
+            Verify the token on Bedev2 captcha service.
+            </summary>
+            <param name="captchaParameter"></param>
+            <param name="actionType"></param>
+            <returns><c>True</c> if captcha token is passed validation, <c>False</c> otherwise</returns>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ICaptchaParameter">
+            <summary>
+            ICaptchaParameter represents the required captcha information to validate.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ICaptchaParameter.CaptchaToken">
+            <summary>
+            CaptchaToken need be validated by provider.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ICaptchaParameter.CaptchaProvider">
+            <summary>
+            Current captcha provider.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ICaptchaParameter.GrpcTimeOut">
+            <summary>
+            The gRPC timeout for client.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ICaptchaParameter.IsBedev2ForBackendWebLoginEnabled">
+            <summary>
+            Whether bedev2 captcha flow is enabled for web login.
+            </summary>
+            <returns><c>True</c> if the configuration flag "IsBEDEV2CaptchaEnabledForWebLoginForAll" is turned on, <c>False</c> otherwise</returns>
+        </member>
+        <member name="F:Roblox.Web.Authentication.DoNotShareWarning.CommentEndDelimiter">
+            <summary>
+            The delimiter string used to signify the end of a comment. Everything before the delimiter should be
+            disregarded when processing the cookie value.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.DoNotShareWarning.CommentBeginDelimiter">
+            <summary>
+            The delimiter string used to signify the start of a comment. This delimiter MUST be the first part of the string.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.DoNotShareWarning.DoNotSharePrefix">
+            <summary>
+            Gets the Do Not Share prefix.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.DoNotShareWarning.AddWarning(System.String)">
+            <summary>
+            Adds the do not share message to the begining of a string.
+            </summary>
+            <param name="originalValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.DoNotShareWarning.RemoveWarning(System.String,System.Boolean@)">
+            <summary>
+            Removes the unwanted user warning from the beginning of the value.
+            </summary>
+            <param name="value">The string with the warning.</param>
+            <param name="wasChanged">Whether or not the string was changed.</param>
+            <returns>The string resulting from removing the warning.</returns>
+        </member>
+        <member name="T:Roblox.Web.Authentication.DeviceHandleFailEventType">
+            <summary>
+            An enum with event types for device handle fail event.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.LoginFailureStatus">
+            <summary>
+            An enum with login failure status.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.FloodedException">
+            <summary>
+            Exception to be thrown if the request is flooded.
+            </summary>
+            <seealso cref="T:System.Exception" />
+        </member>
+        <member name="M:Roblox.Web.Authentication.FloodedException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.FloodedException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.FloodedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.FloodedException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.FloodedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.FloodedException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.InvalidSolutionException">
+            <summary>
+            Thrown when the solution entered by the user is invalid
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.InvalidSolutionException.#ctor">
+            <summary>
+            Initializes an <see cref="T:Roblox.Web.Authentication.InvalidSolutionException"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.InvalidSolutionException.#ctor(System.String)">
+            <summary>
+            Initializes an <see cref="T:Roblox.Web.Authentication.InvalidSolutionException"/>
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.InvalidSolutionException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes an <see cref="T:Roblox.Web.Authentication.InvalidSolutionException"/>
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.InvalidTargetException">
+            <summary>
+            Thrown when the target entered is invalid
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.InvalidTargetException.#ctor">
+            <summary>
+            Initializes an <see cref="T:Roblox.Web.Authentication.InvalidTargetException"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.InvalidTargetException.#ctor(System.String)">
+            <summary>
+            /// <summary>
+            Initializes an <see cref="T:Roblox.Web.Authentication.InvalidTargetException"/>
+            </summary>
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.InvalidTargetException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes an <see cref="T:Roblox.Web.Authentication.InvalidTargetException"/>
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.TransmissionException">
+            <summary>
+            Thrown when there is an error sending the challenge
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.TransmissionException.#ctor">
+            <summary>
+            Constructs a <see cref="T:Roblox.Web.Authentication.TransmissionException"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.TransmissionException.#ctor(System.String)">
+            <summary>
+            Constructs a <see cref="T:Roblox.Web.Authentication.TransmissionException"/>
+            </summary>
+            <param name="message">The message</param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.TransmissionException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructs a <see cref="T:Roblox.Web.Authentication.TransmissionException"/>
+            </summary>
+            <param name="message">The message</param>
+            <param name="innerException">The inner <see cref="T:System.Exception"/></param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.AdministrationFailedLoginByIpFloodChecker">
+            <summary>
+            A flood checker to flood check failed logins by ip
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.AdministrationFailedLoginByIpFloodChecker.#ctor(System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.FailedLoginByIpFloodChecker"/>
+            </summary>
+            <param name="ipAddress">The ip address.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="ipAddress"/> is null, whitespace, or longer than <see cref="F:Roblox.Web.Authentication.Floodcheckers.AdministrationFailedLoginByIpFloodChecker._IpAddressMaxLength"/> characters.</exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.CanSendVerificationMessageByIpFloodChecker">
+            <summary>
+            A flood checker by ip address for floodchecking if it's possible to send a verification message for given credentials.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.CanSendVerificationMessageByIpFloodChecker.#ctor(System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.CanSendVerificationMessageByIpFloodChecker"/>
+            </summary>
+            <param name="ipAddress">The IP address.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="ipAddress"/> is null, whitespace, or longer than <see cref="F:Roblox.Web.Authentication.Floodcheckers.CanSendVerificationMessageByIpFloodChecker._IpAddressMaxLength"/> characters.</exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.FailedLoginByIpFloodChecker">
+            <summary>
+            A flood checker to flood check failed logins by ip
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.FailedLoginByIpFloodChecker.#ctor(System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.FailedLoginByIpFloodChecker"/>
+            </summary>
+            <param name="ipAddress">The ip address.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="ipAddress"/> is null, whitespace, or longer than <see cref="F:Roblox.Web.Authentication.Floodcheckers.FailedLoginByIpFloodChecker._IpAddressMaxLength"/> characters.</exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.FailedLoginByUserFloodChecker">
+            <summary>
+            A flood checker to flood check failed logins by user
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.FailedLoginByUserFloodChecker.#ctor(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.FailedLoginByUserFloodChecker"/>
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.LoginAttemptByIpFloodChecker">
+            <summary>
+            A flood checker to flood check logins by ip.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.LoginAttemptByIpFloodChecker.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.LoginAttemptByIpFloodChecker"/>
+            </summary>
+            <param name="ipAddress">The ip address.</param>
+            <param name="isEnabled">Whether or not this floodchecker is enabled.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="ipAddress"/> is null, whitespace, or longer than <see cref="F:Roblox.Web.Authentication.Floodcheckers.LoginAttemptByIpFloodChecker._IpAddressMaxLength"/> characters.</exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.CanSendVerificationMessageByIpAndCredentialsFloodChecker">
+            <summary>
+            A flood checker by ip address, <see cref="T:Roblox.Platform.Authentication.CredentialsType"/> and credentials value 
+            for floodchecking if it's possible to send a verification message for given credentials.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.CanSendVerificationMessageByIpAndCredentialsFloodChecker.#ctor(System.String,Roblox.Platform.Authentication.CredentialsType,System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.Floodcheckers.CanSendVerificationMessageByIpAndCredentialsFloodChecker"/>.
+            </summary>
+            <param name="ipAddress">The user's ip address.</param>
+            <param name="credentialsType">The <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.</param>
+            <param name="credentialsValue">The credential value.</param>
+            <exception cref="T:System.ArgumentException">
+                <paramref name="ipAddress"/> was null, whitespace, or longer than <see cref="F:Roblox.Web.Authentication.Floodcheckers.CanSendVerificationMessageByIpAndCredentialsFloodChecker._IpAddressMaxLength"/>
+                <paramref name="credentialsValue"/> was null or whitespace.
+            </exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookByFacebookIdFloodChecker">
+            <summary>
+            A flood checker for signing in with Facebook by facebookId
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookByFacebookIdFloodChecker.#ctor(System.UInt64)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookByFacebookIdFloodChecker"/>
+            </summary>
+            <param name="facebookId">An <see cref="T:System.UInt64"/>.</param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookByIpAndFacebookIdFloodChecker">
+            <summary>
+            A flood checker for signing in with Facebook by IP address and facebookId
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookByIpAndFacebookIdFloodChecker.#ctor(System.String,System.UInt64)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookByIpAndFacebookIdFloodChecker"/>
+            </summary>
+            <param name="ipAddress">A <see cref="T:System.String"/>.</param>
+            <param name="facebookId">A <see cref="T:System.UInt64"/>.</param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookFloodCheckers">
+            <summary>
+            A class to group facebook sign in flood checkers.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookFloodCheckers.SignInWithFacebookByFacebookIdFloodChecker">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookFloodCheckers.SignInWithFacebookByIpAndFacebookIdFloodChecker">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookFloodCheckers.#ctor(System.String,System.UInt64)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.Floodcheckers.SignInWithFacebookFloodCheckers"/>.
+            </summary>
+            <param name="ipAddress">The user's ipAddress</param>
+            <param name="facebookId">The facebookId used for login.</param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByIpAndCredentialsFloodChecker">
+            <summary>
+            A flood checker to flood check user credentials by ip address, <see cref="T:Roblox.Platform.Authentication.CredentialsType"/> and credentials value.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByIpAndCredentialsFloodChecker.#ctor(System.String,Roblox.Platform.Authentication.CredentialsType,System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByIpAndCredentialsFloodChecker"/>.
+            </summary>
+            <param name="ipAddress">The user's ip address.</param>
+            <param name="credentialsType">The <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.</param>
+            <param name="credentialsValue">The credential value.</param>
+            <exception cref="T:System.ArgumentException">
+                <paramref name="ipAddress"/> was null, whitespace, or longer than <see cref="F:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByIpAndCredentialsFloodChecker._IpAddressMaxLength"/>
+                <paramref name="credentialsValue"/> was null or whitespace.
+            </exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByIpFloodChecker">
+            <summary>
+            A flood checker to flood check sending verification messages by IP
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByIpFloodChecker.#ctor(System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByIpFloodChecker"/>
+            </summary>
+            <param name="ipAddress">The IP address.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="ipAddress"/> is null, whitespace, or longer than <see cref="F:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByIpFloodChecker._IpAddressMaxLength"/> characters.</exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByUserIdFloodChecker">
+            <summary>
+            A flood checker to flood check sending verification messaages by user id
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByUserIdFloodChecker.#ctor(System.Int64)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Web.Authentication.Floodcheckers.SendVerificationMessageByUserIdFloodChecker"/>
+            </summary>
+            <param name="userId">The user id.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="userId"/> not positive.</exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Floodcheckers.UserCredentialsFloodChecker">
+            <summary>
+            A flood checker to flood check user credentials by ip address, <see cref="T:Roblox.Platform.Authentication.CredentialsType"/> and credentials value.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Floodcheckers.UserCredentialsFloodChecker.#ctor(System.String,Roblox.Platform.Authentication.CredentialsType,System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.Floodcheckers.UserCredentialsFloodChecker"/>.
+            </summary>
+            <param name="ipAddress">The user's ip address.</param>
+            <param name="credentialsType">The <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.</param>
+            <param name="credentialsValue">The credential value.</param>
+            <exception cref="T:System.ArgumentException">
+                <paramref name="credentialsValue"/> was null or whitespace.
+            </exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ITwoStepVerificationDataV2">
+            <summary>
+            Represents a container for two step verification data using more secure tickets
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ITwoStepVerificationDataV2.MediaType">
+            <summary>
+            The <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.MediaType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ITwoStepVerificationDataV2.Ticket">
+            <summary>
+            The <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Id"/> ticket as a secure blob
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.LoginTwoStepVerificationDataV2">
+            <summary>
+            A class to hold data for two step verification on login using longer secure blob tickets
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginTwoStepVerificationDataV2.MediaType">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginTwoStepVerificationDataV2.Ticket">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Web.Authentication.IAccountPinAuthenticator">
+            <summary>
+            A central location for accessing information about the Account pins.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IAccountPinAuthenticator.IsLocked(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Determines whether the specified account pin is locked for a passed in <paramref name="user" />.
+            </summary>
+            <param name="user">The user.</param>
+            <returns>
+            True if the account pin is locked, false otherwise.
+            </returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IAccountPinAuthenticator.GetPinEntry(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the pin entry for the passed in user.
+            </summary>
+            <param name="user">The user.</param>
+            <returns>
+            The <see cref="T:Roblox.Platform.AccountPins.IPinEntry" /> which contains information reagrding the unlock until for the account pin.
+            </returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IAccountPinAuthenticator.Unlock(Roblox.Platform.Membership.IUser,System.String)">
+            <summary>
+            Unlocks the pin and returns a new <see cref="T:Roblox.Platform.AccountPins.IPinEntry" /> if the validation is successful. If the validation fails, this returns a null entry.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="pin">The pin.</param>
+            <returns>
+            An <see cref="T:Roblox.Platform.AccountPins.IPinEntry" /> is the entered pin is valid, null otherwise
+            </returns>
+        </member>
+        <member name="T:Roblox.Web.Authentication.IAuthenticatedUserProvider">
+            <summary>
+            Provides the Authenticated IUser for use in a web application
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.IAuthenticatedUserProvider.AuthenticatedUser">
+            <summary>
+            The authenticated user
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ILoginFloodCheckers">
+            <summary>
+            Represents a group of login <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ILoginFloodCheckers.FailedLoginByUserFloodChecker">
+            <summary>
+            A <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/> to flood check by user on login.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ILoginFloodCheckers.FailedLoginFloodCheckerSet">
+            <summary>
+            A <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/> to flood check on failed login.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ILoginFloodCheckers.SuccessfulLoginFloodChecker">
+            <summary>
+            A <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/> to flood check on successful login.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ILoginResult">
+            <summary>
+            Represents a login result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ILoginResult.FailedStatus">
+            <summary>
+            The error status if the login operation resulted in an error. <see cref="T:Roblox.Web.Authentication.LoginFailureStatus"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ILoginResult.User">
+            <summary>
+            The authenticated <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ILoginResult.TwoStepVerificationData">
+            <summary>
+            The <see cref="T:Roblox.Web.Authentication.ITwoStepVerificationData"/> if two step verification is required.
+            Null if no need to check two step verification.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ILoginEventSender">
+            <summary>
+            Represents an object with sign in events.
+            </summary>
+        </member>
+        <member name="E:Roblox.Web.Authentication.ILoginEventSender.OnUserLoginFailed">
+            <summary>
+            An event for when user login failed.
+            <remarks>
+            Sends the <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> if it was able to get one from credentials. Null otherwise.
+            Sends the failure reason as a <see cref="T:Roblox.Web.Authentication.LoginFailureStatus"/>.
+            Sends the <see cref="T:Roblox.Platform.Authentication.CredentialsType"/> present on failed login.
+            Sends user agent.
+            </remarks>
+            </summary>
+        </member>
+        <member name="E:Roblox.Web.Authentication.ILoginEventSender.OnUserLoggedIn">
+            <summary>
+            An event for when user login succeeded.
+            <remarks>
+            Sends the authenticated <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            Sends the used <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.
+            </remarks>
+            </summary>
+        </member>
+        <member name="E:Roblox.Web.Authentication.ILoginEventSender.OnTwoStepVerificationSucceeded">
+            <summary>
+            An event for when two step verification succeeded.
+            <remarks>
+            Sends the User Agent.
+            Sends the <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationMediaType"/>
+            Sends the <see cref="T:Roblox.Platform.Membership.IUser"/>
+            Sends the <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>
+            </remarks>
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Interfaces.ISignInWithFacebookFloodCheckers">
+            <summary>
+            Represents a group of facebook sign in <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.Interfaces.ISignInWithFacebookFloodCheckers.SignInWithFacebookByFacebookIdFloodChecker">
+            <summary>
+            A <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/> to flood check on facebookId
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.Interfaces.ISignInWithFacebookFloodCheckers.SignInWithFacebookByIpAndFacebookIdFloodChecker">
+            <summary>
+            A <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/> to flood check on IP address and facebookId
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ITwoStepAuthenticator">
+            <summary>
+            Checks 2SV requirements for authentication and creates 2SV sessions
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.ITwoStepAuthenticator.IsTwoStepChallengeRequired(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Checks if 2SV is required for <paramref name="user"/> to authenticate
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <returns><c>True</c> if required, <c>False</c> otherwise</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.ITwoStepAuthenticator.StartTwoStepSession(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Starts a 2SV session for <paramref name="user"/>
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.ITwoStepAuthenticator.CreateChallengeSecureBlob(System.Guid)">
+            <summary>
+            Creates a secure blob out of a two step challenge id
+            </summary>
+            <param name="id">The challenge id to be converted to a secure blob</param>
+            <returns>A secure blob string</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.ITwoStepAuthenticator.GetChallengeFromSecureBlobTicket(System.String)">
+            <summary>
+            Decrypts a secure blob into the underlying two step challenge id
+            </summary>
+            <param name="ticket">The secure blob ticket</param>
+            <returns>The underlying challenge</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"></exception>
+            <exception cref="T:System.FormatException"></exception>
+            <exception cref="T:Roblox.Platform.Security.SecureBlobs.SecureBlobExpiredException"></exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.ITwoStepVerificationData">
+            <summary>
+            Represents a container for two step verification data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ITwoStepVerificationData.MediaType">
+            <summary>
+            The <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSetting.MediaType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.ITwoStepVerificationData.Ticket">
+            <summary>
+            The <see cref="P:Roblox.Platform.TwoStepVerification.ITwoStepVerificationChallenge.Id"/> ticket.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.IWebAuthenticationReader">
+            <summary>
+            Represents an object to get information from the currently authenticated session.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticationReader.GetAuthenticatedUser">
+            <summary>
+            Provides the authenticated user for the current session
+            </summary>
+            <returns>The logged in <see cref="T:Roblox.Platform.Membership.IUser"/> or null if there is none.</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticationReader.GetAuthenticatedUser(System.Web.HttpContextBase)">
+            <summary>
+            Provides the authenticated user for the specified <see cref="T:System.Web.HttpContextBase"/>.
+            </summary>
+            <param name="context"></param>
+            <returns>The logged in <see cref="T:Roblox.Platform.Membership.IUser"/> or null if there is none.</returns>
+        </member>
+        <member name="T:Roblox.Web.Authentication.IWebAuthenticatorV2">
+            <summary>
+            Represents an object to perform session related authentication.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticatorV2.SignInWithUserCredentials(Roblox.Platform.Authentication.IRobloxUserCredentials,Roblox.Platform.Marketing.IBrowserTracker,Roblox.Web.Authentication.ICaptchaParameter)">
+            <summary>
+            Signs in a user using the provided <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/>.
+            <remarks>
+                Performs the following main steps to authenticate from <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/>
+                1) Checks captcha 
+                2) Verifies provided <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/>.
+                3) Checks if password reset is required for <see cref="T:Roblox.Platform.Membership.IUser"/> obtained from <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/>
+                4) Checks if two step verification is required and if it is generates the challenge, sends the code and returns the <see cref="P:Roblox.Web.Authentication.ILoginResult.TwoStepVerificationData"/>.
+                5) Authenticates the <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </remarks>
+            </summary>
+            <param name="credentials">The <see cref="T:Roblox.Platform.Authentication.IRobloxUserCredentials"/>.</param>
+            <param name="browserTracker">The <see cref="T:Roblox.Platform.Marketing.IBrowserTracker"/>.</param>
+            <returns>A <see cref="T:Roblox.Web.Authentication.ILoginResult"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">
+                Throws if <paramref name="credentials"/> is null.
+            </exception>
+            <exception cref="T:System.ArgumentException">
+                Throws if <paramref name="credentials.Value.Value"/> is null or whitespace.
+            </exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.IUserCredentialsFloodCheckerResetter">
+            <summary>
+            Represents an object to reset credentials floodcheckers.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IUserCredentialsFloodCheckerResetter.ResetCredentialsFloodChecker(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Resets all the credentials floodcheckers for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            <remarks>
+            Resets the username, email, and phone number credentials floodchecker. See <see cref="T:Roblox.Web.Authentication.Floodcheckers.UserCredentialsFloodChecker"/>
+            </remarks>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+                Thrown if <paramref name="user"/> is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.LoginCaptchaAction.#ctor(System.String,Roblox.Platform.Captcha.Factories)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Web.Authentication.LoginCaptchaAction"/> from the given credential value and <see cref="T:Roblox.Platform.Captcha.Factories"/>.
+            </summary>
+            <param name="credentialValue">The credential value.</param>
+            <param name="factories"></param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="credentialValue"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.LoginCaptchaAction.ConstructIdentifierFromCredentialValue(System.String)">
+            <summary>
+            Constructs an <see cref="T:Roblox.Platform.Captcha.Identifier"/> from a credential value.
+            </summary>
+            <param name="credentialValue">The credential value to construct the <see cref="T:Roblox.Platform.Captcha.Identifier"/> from.</param>
+            <returns>The constructed <see cref="T:Roblox.Platform.Captcha.Identifier"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="credentialValue"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Login.DisposableStopWatch">
+            <summary>
+            This is here only temporary to mesure user sign in operation time.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.LoginFloodCheckers">
+            <summary>
+            A class to group login flood checkers.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginFloodCheckers.FailedLoginByUserFloodChecker">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginFloodCheckers.FailedLoginFloodCheckerSet">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginFloodCheckers.SuccessfulLoginFloodChecker">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Web.Authentication.LoginFloodCheckers.#ctor(Roblox.Platform.Membership.IUser,System.String,System.UInt64)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.LoginFloodCheckers"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="ipAddress">The user's ipAddress</param>
+            <param name="browserTrackerId">The browser tracker's id passed to the login action.</param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.LoginResult">
+            <summary>
+            A class for a login result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginResult.User">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginResult.TwoStepVerificationData">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginResult.FailedStatus">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Web.Authentication.LoginResult.#ctor(Roblox.Web.Authentication.LoginFailureStatus)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.LoginResult"/>.
+            </summary>
+            <param name="loginStatus">The <see cref="T:Roblox.Web.Authentication.LoginFailureStatus"/></param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.LoginResult.#ctor(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.LoginResult"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.LoginResult.#ctor(Roblox.Platform.Membership.IUser,Roblox.Web.Authentication.ITwoStepVerificationData)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.LoginResult"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="twoStepVerificationData">The <see cref="T:Roblox.Web.Authentication.ITwoStepVerificationData"/>.</param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.LoginTwoStepVerificationData">
+            <summary>
+            A class to hold data for two step verification on login.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginTwoStepVerificationData.MediaType">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Web.Authentication.LoginTwoStepVerificationData.Ticket">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Web.Authentication.Passwords.InvalidPasswordException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.Passwords.InvalidPasswordException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Passwords.InvalidPasswordException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.Passwords.InvalidPasswordException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Passwords.IPasswordChangeAuthority">
+            <summary>
+            This authority is responsible for changing user passwords.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Passwords.IPasswordChangeAuthority.ChangePassword(Roblox.Platform.Membership.IUser,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Changes an <see cref="T:Roblox.Platform.Membership.IUser"/>'s password.
+            Accepts options to check password, and send <see cref="T:Roblox.Platform.Membership.IUser"/> reset email.
+            Will sign out all user sessions if the password successfully changes.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="newPassword">The <see cref="T:Roblox.Platform.Membership.IUser"/>'s new password.</param>
+            <param name="sendRevertEmail">
+            If <c>true</c> sends password reset email to <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            If the user does not have an email set it will not send one.
+            </param>
+            <param name="checkPasswordRules">If <c>true</c> will check password rules before allowing change.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null.</exception>
+            <exception cref="T:Roblox.Web.Authentication.Passwords.InvalidPasswordException">The password is not valid. (Does not meet password requirements)</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Passwords.IPasswordChangeAuthority.GetRevertTicketFromSecureBlob(System.String)">
+            <summary>
+            Decrypts a secure blob into the underlying revert ticket
+            </summary>
+            <param name="ticket"> The SecureBlob ticket </param>
+            <exception cref="!:FormatException"> The ticket can't be parsed as a secure blob </exception>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Passwords.ISendPasswordChangeEmailResult">
+            <summary>
+            The result (success or failure) of sending a forgot password <see cref="T:Roblox.Platform.Verification.Email.IEmailChallenge`1">email challenge</see>
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.Passwords.ISendPasswordChangeEmailResult.Success">
+            <summary>
+            Indicates whether the password change email was successfully sent.
+            </summary>
+        </member>
+        <member name="P:Roblox.Web.Authentication.Passwords.ISendPasswordChangeEmailResult.Result">
+            <summary>
+            The result of the send. Will indicate either success or a reason for failure.
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Passwords.PasswordChangeAuthority">
+            <inheritdoc cref="T:Roblox.Web.Authentication.Passwords.IPasswordChangeAuthority"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Passwords.PasswordChangeAuthority.#ctor(Roblox.Platform.Membership.IPasswordValidatorFactory,Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory,Roblox.Web.Authentication.IWebAuthenticator,Roblox.Platform.Email.Delivery.IEmailSender,Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory,Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger,Roblox.Platform.Demographics.IAccountPhoneNumberFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.Passwords.PasswordChangeAuthority"/> class.
+            </summary>
+            <param name="passwordValidatorFactory"><see cref="T:Roblox.Platform.Membership.IPasswordValidatorFactory"/></param>
+            <param name="accountsNeedingPasswordResetFactory"><see cref="T:Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory"/></param>
+            <param name="webAuthenticator"><see cref="T:Roblox.Web.Authentication.IWebAuthenticator"/></param>
+            <param name="emailClient"><see cref="!:IEmailClient"/></param>
+            <param name="accountSecurityTicketsFactory"><see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory"/></param>
+            <param name="twoStepVerificationSessionPurger"><see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger"/></param>
+            <param name="accountPhoneNumberFactory"><see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactory"/></param>
+            <exception cref="T:System.ArgumentNullException">Any arguments are null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Passwords.PasswordChangeAuthority.ChangePassword(Roblox.Platform.Membership.IUser,System.String,System.Boolean,System.Boolean)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.Passwords.IPasswordChangeAuthority.ChangePassword(Roblox.Platform.Membership.IUser,System.String,System.Boolean,System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Passwords.PasswordChangeAuthority.GetRevertTicketFromSecureBlob(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.Passwords.IPasswordChangeAuthority.GetRevertTicketFromSecureBlob(System.String)"/>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Passwords.PasswordResponseCodes">
+            <summary>
+            Response codes for password reset/change
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Passwords.PasswordResponseCodes.Unknown">
+            <summary>
+            Reserved for base error code, or unknown exception. Keeping for backwards compatibility, should not be used for new code.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Passwords.PasswordResponseCodes.Flooded">
+            <summary>
+            A floodcheck was hit.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Passwords.PasswordResponseCodes.InvalidPassword">
+            <summary>
+            Invalid password
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Passwords.PasswordResponseCodes.InvalidCurrentPassword">
+            <summary>
+            The current password does not match supplied value
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Passwords.PasswordResponseCodes.PinLocked">
+            <summary>
+            The account pin is locked
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Passwords.PasswordResponseCodes.Ok">
+            <summary>
+            The request was successful
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Properties.LoginCaptchaSettings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Properties.SecurityKeySettings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Recovery.TargetType">
+            <summary>
+            The type of target for a recovery
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Recovery.TargetType.Email">
+            <summary>
+            The target is an email
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Recovery.TargetType.PhoneNumber">
+            <summary>
+            The target is a phone
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Recovery.TransmissionType">
+            <summary>
+            The channel to transmit
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Recovery.TransmissionType.Sms">
+            <summary>
+            Challenge sent via Sms
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Recovery.TransmissionType.Email">
+            <summary>
+            Challenge sent via Email
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.TwoStepAuthenticator">
+            <summary>
+            Implementation of <see cref="T:Roblox.Web.Authentication.ITwoStepAuthenticator"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.TwoStepAuthenticator.#ctor(Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionFactory,Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Web.Authentication.ITwoStepAuthenticator"/>
+            </summary>
+            <param name="twoStepVerificationSessionFactory">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionFactory"/></param>
+            <param name="twoStepVerificationConfigurationProvider">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider"/></param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="twoStepVerificationSessionFactory"/> or <paramref name="twoStepVerificationConfigurationProvider"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.TwoStepAuthenticator.IsTwoStepChallengeRequired(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.ITwoStepAuthenticator.IsTwoStepChallengeRequired(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.TwoStepAuthenticator.StartTwoStepSession(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.ITwoStepAuthenticator.StartTwoStepSession(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.TwoStepAuthenticator.CreateChallengeSecureBlob(System.Guid)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.ITwoStepAuthenticator.CreateChallengeSecureBlob(System.Guid)"/>
+        </member>
+        <member name="T:Roblox.Web.Authentication.UserCredentialsFloodCheckerResetter">
+            <summary>
+            An implementation of <see cref="T:Roblox.Web.Authentication.IUserCredentialsFloodCheckerResetter"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.UserCredentialsFloodCheckerResetter.#ctor(Roblox.Platform.Email.User.IAccountEmailAddressFactory,Roblox.Platform.Demographics.IAccountPhoneNumberFactory)">
+            <summary>
+            Initializes a new instance of <see cref="T:Roblox.Web.Authentication.UserCredentialsFloodCheckerResetter"/>.
+            </summary>
+            <param name="accountEmailAddressFactory">The <see cref="T:Roblox.Platform.Email.User.IAccountEmailAddressFactory"/>.</param>
+            <param name="accountPhoneNumberFactory">The <see cref="T:Roblox.Platform.Demographics.IAccountPhoneNumberFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+                Thrown if <paramref name="accountEmailAddressFactory"/> or <paramref name="accountPhoneNumberFactory"/> is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.UserCredentialsFloodCheckerResetter.ResetCredentialsFloodChecker(Roblox.Platform.Membership.IUser)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Web.Authentication.Usernames.IUsernameRecoveryAuthority.RecoverUsernameByPhone(System.String,System.String)">
+            <summary>
+            Sends a message to the owner of the phone containing the username
+            </summary>
+            <param name="ip">The ip of the user for floodchecking</param>
+            <param name="target">The target phone number to send the message to</param>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Usernames.UsernameResponseCodes">
+            <summary>
+            Response codes for username recovery.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Usernames.UsernameResponseCodes.Unknown">
+            <summary>
+            Reserved for base error code, or unknown exception.
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Usernames.UsernameResponseCodes.InvalidPhoneNumber">
+            <summary>
+            The phone number entered by the user is malformed
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Usernames.UsernameResponseCodes.UnknownPhoneNumber">
+            <summary>
+            The phone number is not connected to any account
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Usernames.UsernameResponseCodes.Flooded">
+            <summary>
+            A floodcheck was hit
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Usernames.UsernameResponseCodes.FeatureDisabled">
+            <summary>
+            The username recovery feature is disabled
+            </summary>
+        </member>
+        <member name="F:Roblox.Web.Authentication.Usernames.UsernameResponseCodes.Ok">
+            <summary>
+            The request was successful
+            </summary>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Verification.BaseCredentialsVerifier">
+            <summary>
+            A base class that verifies credentials.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.BaseCredentialsVerifier.#ctor(Roblox.Platform.Authentication.CredentialsType,Roblox.EphemeralCounters.IEphemeralCounterFactory)">
+            <summary>
+            A base constructor for a class that verifies credentials.
+            </summary>
+            <param name="credentialsType">The <see cref="T:Roblox.Platform.Authentication.CredentialsType"/> this class verifies.</param>
+            <param name="ephemeralCounterFactory">A <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="ephemeralCounterFactory"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.BaseCredentialsVerifier.SendVerificationMessageToUser(Roblox.Platform.Membership.IUser,System.String)">
+            <summary>
+            Sends a verification message to a user.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="credentialsValue">The <see cref="P:Roblox.Platform.Authentication.IRobloxUserCredentials.CredentialValue"/> of the <paramref name="user"/></param>
+            <returns>A <see cref="T:Roblox.Web.Authentication.Enums.SendVerificationMessageStatus"/>.</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.BaseCredentialsVerifier.CanSendCredentialsVerificationMessage(Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.BaseCredentialsVerifier.SendCredentialsVerificationMessage(Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Verification.CredentialsVerifierFactory">
+            <summary>
+            A factory that builds <see cref="T:Roblox.Web.Authentication.Verification.ICredentialsVerifier"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.CredentialsVerifierFactory.#ctor(Roblox.Platform.Email.User.IUserEmailVerifier,Roblox.EphemeralCounters.IEphemeralCounterFactory)">
+            <summary>
+            Creates an instance of <see cref="T:Roblox.Web.Authentication.Verification.CredentialsVerifierFactory"/>.
+            </summary>
+            <param name="userEmailVerifier">The <see cref="T:Roblox.Platform.Email.User.IUserEmailVerifier"/>.</param>
+            <param name="ephemeralCounterFactory">The <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="userEmailVerifier"/> or <paramref name="ephemeralCounterFactory"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.CredentialsVerifierFactory.BuildCredentialsVerifier(Roblox.Platform.Authentication.CredentialsType)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Verification.EmailCredentialsVerifier">
+            <summary>
+            A class that verifies email credentials.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.EmailCredentialsVerifier.#ctor(Roblox.Platform.Email.User.IUserEmailVerifier,Roblox.EphemeralCounters.IEphemeralCounterFactory)">
+            <summary>
+            Creates an instance of <see cref="T:Roblox.Web.Authentication.Verification.EmailCredentialsVerifier"/>.
+            </summary>
+            <param name="userEmailVerifier">The <see cref="T:Roblox.Platform.Email.User.IUserEmailVerifier"/>.</param>
+            <param name="ephemeralCounterFactory">The <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+                Thrown if <paramref name="userEmailVerifier"/> or <paramref name="ephemeralCounterFactory"/> is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.EmailCredentialsVerifier.SendVerificationMessageToUser(Roblox.Platform.Membership.IUser,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Verification.ICredentialsVerifier">
+            <summary>
+            Represents a class that verifies credentials.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.ICredentialsVerifier.CanSendCredentialsVerificationMessage(Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials)">
+            <summary>
+            Checks if a verification message can be sent for the provided credentials.
+            </summary>
+            <remarks>A verification message can only be sent if the credentials are tied to exactly one user.</remarks>
+            <param name="credentials">The <see cref="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="credentials"/> is null.</exception>
+            <exception cref="T:Roblox.Web.Authentication.FloodedException">Thrown if operation is flooded.</exception>
+            <returns>True if a verification message can be sent, or false otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.ICredentialsVerifier.SendCredentialsVerificationMessage(Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials)">
+            <summary>
+            Sends a verification message to the user with the provided credential value if it is unverified.
+            </summary>
+            <param name="credentials">The <see cref="T:Roblox.Platform.Authentication.IRobloxUnverifiedUserCredentials"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+                Thrown if <paramref name="credentials"/> is null.
+            </exception>
+            <exception cref="T:System.ArgumentException">
+                Thrown if <paramref name="credentials.CredentialsValue.CredentialsValue"/> is null or whitespace, or <paramref name="credentials.CredentialsType.CredentialsType"/> is not supported.
+            </exception>
+            <returns>A <see cref="T:Roblox.Web.Authentication.Enums.SendVerificationMessageStatus"/>.</returns>
+        </member>
+        <member name="T:Roblox.Web.Authentication.Verification.ICredentialsVerifierFactory">
+            <summary>
+            Represents a factory that creates <see cref="T:Roblox.Web.Authentication.Verification.ICredentialsVerifier"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.Verification.ICredentialsVerifierFactory.BuildCredentialsVerifier(Roblox.Platform.Authentication.CredentialsType)">
+            <summary>
+            Builds a <see cref="T:Roblox.Web.Authentication.Verification.ICredentialsVerifier"/> from a credential type.
+            </summary>
+            <param name="credentialsType">The <see cref="T:Roblox.Platform.Authentication.CredentialsType"/>.</param>
+            <exception cref="T:System.ArgumentException">If no authority is supported for the <paramref name="credentialsType"/>.</exception>
+            <returns>The <see cref="T:Roblox.Web.Authentication.Verification.ICredentialsVerifier"/>.</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticationReader.#ctor(Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.WebAuthenticationReader" /> class.
+            </summary>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+                Thrown if <paramref name="userFactory"/> is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticationReader.GetAuthenticatedUser(System.Web.HttpContextBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticationReader.GetAuthenticatedUser">
+            <inheritdoc />
+        </member>
+        <member name="E:Roblox.Web.Authentication.WebAuthenticator.OnUserSignedIn">
+            <summary>
+            Event fired when a user signs in.
+            </summary>
+        </member>
+        <member name="E:Roblox.Web.Authentication.WebAuthenticator.OnUserSignedOut">
+            <summary>
+            Event fired when a user signs out.
+            </summary>
+        </member>
+        <member name="E:Roblox.Web.Authentication.WebAuthenticator.OnUserSignedOutFromAllSessions">
+            <summary>
+            Event fired when a user signs out of all sessions.
+            </summary>
+            <remarks>
+            This event is not fired at the same time as <see cref="E:Roblox.Web.Authentication.WebAuthenticator.OnUserSignedOut"/> because the current session is recreated and the user has indirectly logged out of other sessions.
+            </remarks>
+        </member>
+        <member name="E:Roblox.Web.Authentication.WebAuthenticator.OnFailedSessionValidation">
+            <summary>
+            Event fired when an authentication session fails validation.
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.#ctor(Roblox.Platform.Authentication.ICredentialsFactory,Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory,Roblox.Platform.Membership.IUserFactory,Roblox.EventLog.ILogger,Roblox.Web.Devices.IClientDeviceIdentifier,Roblox.RequestContext.IRequestContextLoader,Roblox.Identities.Client.IIdentitiesClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.WebAuthenticator" /> class.
+            </summary>
+            <param name="credentialsFactory">An <see cref="T:Roblox.Platform.Authentication.ICredentialsFactory"/>.</param>
+            <param name="accountsNeedingPasswordResetFactory">An <see cref="T:Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory"/>.</param>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="clientDeviceIdentifier">An <see cref="T:Roblox.Web.Devices.IClientDeviceIdentifier"/>.</param>
+            <param name="requestContextLoader">An <see cref="T:Roblox.RequestContext.IRequestContextLoader"/></param>
+            <param name="identitiesClient">An <see cref="T:Roblox.Identities.Client.IIdentitiesClient"/></param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="credentialsFactory"/>, <paramref name="accountsNeedingPasswordResetFactory"/>, <paramref name="logger"/>, <paramref name="userFactory"/>, <paramref name="clientDeviceIdentifier"/> or is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.GetAuthenticatedUser">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.GetAuthenticatedUser"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.Impersonate(Roblox.Platform.Membership.IUser,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.Impersonate(Roblox.Platform.Membership.IUser,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.SignInViaAuthenticationTicket(System.String)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.SignInViaAuthenticationTicket(System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.SignIn(System.String,System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.SignIn(System.String,System.String,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.SignInViaFacebook(System.UInt64)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.SignInViaFacebook(System.UInt64)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.SignInViaXbox(System.String,System.String,Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor,Roblox.Platform.XboxLive.IXboxLiveUserManager,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.SignInViaXbox(System.String,System.String,Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor,Roblox.Platform.XboxLive.IXboxLiveUserManager,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.SignInUsingTwoStepVerificationCredentials(Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator,Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.SignInUsingTwoStepVerificationCredentials(Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator,Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.SignOut">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.SignOut"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.SignOutFromAllSessionsAndReauthenticate(System.String,Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.SignOutFromAllSessionsAndReauthenticate(System.String,Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.SignOutFromAllSessions(Roblox.Platform.Membership.IUser,Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.SignOutFromAllSessions(Roblox.Platform.Membership.IUser,Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.IsAuthCookieAndSessionValid">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.IsAuthCookieAndSessionValid"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.VerifyAccountPassword(System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.VerifyAccountPassword(System.String,System.String)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.GetAuthenticatedUsername">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.GetAuthenticatedUsername"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.RemoveAuthCookiePrefix(System.Web.HttpRequest)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.RemoveAuthCookiePrefix(System.Web.HttpRequest)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.GetCurrentSessionToken">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticator.GetCurrentSessionToken"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticator.IsTencentSessionCheckEnabled(Roblox.Platform.Membership.IUser,System.Int32,System.Int32)">
+            <summary>
+            Checks whether to validate the user's tencent session using 2 methods:
+            1) Checks if the user has the ChinaLicenseUser roleset
+            2) Checks if the RequestContext has the LicenseBuildChina policy
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.VerifyAccountPassword(System.String,System.String)">
+            <summary>
+            Verifies the account name and the password
+            </summary>
+            <param name="accountName">The account name</param>
+            <param name="password">The password</param>
+            <returns>True if verified successfully, False otherwise</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.SignIn(System.String,System.String,System.String)">
+            <summary>
+            Signs in a user using accountName and a password
+            </summary>
+            <param name="accountName">The account name</param>
+            <param name="password">The password</param>
+            <param name="ipAddress">The IP address</param>
+            <returns>True if signed in, False otherwise</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.SignOut">
+            <summary>
+            Signs out a user out of the account
+            </summary>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.Impersonate(Roblox.Platform.Membership.IUser,System.String)">
+            <summary>
+            Authenticates directly as an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="ipAddress">The current IP address.</param>
+            <returns><c>true</c> if successful.</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.SignInViaAuthenticationTicket(System.String)">
+            <summary>
+            Signs in via an AuthenticationTicket
+            </summary>
+            <remarks>
+            You may notice that this function doesn't take an AuthenticationTicket as a parameter.  Right now, this is essentially a clone of Impersonate.
+            This exists to give game launch a separate authentication method that is distinct from Impersonation.  We need to move the AuthenticationTicket
+            verification to be a proper set of <see cref="T:Roblox.Platform.Authentication.ICredentials"/> and actually pass this information through.
+            </remarks>
+            <param name="accountName">The account name</param>
+            <returns>True if successful, False otherwise</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.SignInViaFacebook(System.UInt64)">
+            <summary>
+            Signs in a user using Facebook credentials
+            </summary>
+            <param name="facebookId">The Facebook ID for the social user</param>
+            <returns>The logged in <see cref="T:Roblox.Platform.Membership.IUser"/> if successful, null otherwise</returns>
+            <exception cref="T:Roblox.Web.Authentication.FloodedException">Thrown if flooding occurs while signing in via Facebook</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.SignInViaXbox(System.String,System.String,Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor,Roblox.Platform.XboxLive.IXboxLiveUserManager,System.String)">
+            <summary>
+            Signs in a user based on Xbox Live credentials.
+            </summary>
+            <param name="pairwiseId">The Xbox Live user's pairwise id.</param>
+            <param name="gamerTag">The Xbox Live user's GamerTag.</param>
+            <param name="xboxLiveAccountDataAccessor">An instance of <see cref="T:Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor"/>.</param>
+            <param name="userManager">An instance of <see cref="T:Roblox.Platform.XboxLive.IXboxLiveUserManager"/>.</param>
+            <param name="ipAddress">The IP addess</param>
+            <returns>True if the successful, False otherwise</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.SignInUsingTwoStepVerificationCredentials(Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator,Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO)">
+            <summary>
+            Signs in a user using two step verification credentials.
+            </summary>
+            <param name="twoStepVerificationCodeValidator">The <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeValidator"/>.</param>
+            <param name="challenge">The <see cref="T:Roblox.Platform.TwoStepVerification.TwoStepVerificationChallengeDTO"/>.</param>
+            <returns><c>True</c> if successful, <c>False</c> otherwise.</returns>
+            <exception cref="T:Roblox.Web.Authentication.FloodedException">Thrown if flooding occurs while signing in using TwoStep Credentials.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.SignOutFromAllSessionsAndReauthenticate(System.String,Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger)">
+            <summary>
+            Signs out the currently authenticated user out of all sessions and re-authenticates the current session
+            </summary>
+            <param name="ipAddress">The IP addess</param>
+            <param name="sessionPurger">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger"/></param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.SignOutFromAllSessions(Roblox.Platform.Membership.IUser,Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger)">
+            <summary>
+            Signs an <see cref="T:Roblox.Platform.Membership.IUser"/> out of all sessions.  This destroys all user sessions and does not re-authenticate.
+            </summary>
+            <remarks>
+            This is an extremely dangerous method.  Please be certain that this is the right thing to use before invoking.
+            </remarks>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="sessionPurger">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationSessionPurger"/></param>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.IsAuthCookieAndSessionValid">
+            <summary>
+            Validates that current authentication cookie and the cooresponding session are valid.
+            </summary>
+            <remarks>
+            If the cookie is not valid it will be deleted.
+            If the authentication session is not valid it will be deleted along with any existing cookie.
+            </remarks>
+            <returns><c>true</c> if current cookie is valid, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.GetAuthenticatedUser">
+            <summary>
+            Provides the authenticated user for the current session
+            </summary>
+            <returns>The logged in <see cref="T:Roblox.Platform.Membership.IUser"/> or null if the user is a guest</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.GetAuthenticatedUsername">
+            <summary>
+            Returns the user name for the currently logged in user or null if guest
+            </summary>
+            <returns>The username as string or null if a guest</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.RemoveAuthCookiePrefix(System.Web.HttpRequest)">
+            <summary>
+            Removes the do not share warning from the auth cookie in the given <see cref="T:System.Web.HttpRequest"/>.
+            </summary>
+            <param name="request">The <see cref="T:System.Web.HttpRequest"/> containing the auth cookie.</param>
+            <exception cref="T:System.NullReferenceException">Thrown if <paramref name="request"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.IWebAuthenticator.GetCurrentSessionToken">
+            <summary>
+            Returns the current <see cref="T:Roblox.Platform.Authentication.ISessionToken"/>
+            </summary>
+            <returns>The current <see cref="T:Roblox.Platform.Authentication.ISessionToken"/> or null if the user is not logged in</returns>
+        </member>
+        <member name="M:Roblox.Web.Authentication.RobloxAuthenticationCookie.GetOrCreate(System.String,Roblox.Web.Authentication.AuthenticationSessionType)">
+            <summary>
+            Gets or creates a properly versioned authentication cookie
+            </summary>
+            <remarks>
+            The logic here is a bit counter-intuitive primarily to support the website's use of ASP.NET's login control
+            </remarks>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticatorV2.#ctor(Roblox.Web.Authentication.IWebAuthenticationReader,Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory,Roblox.Web.Devices.IClientDeviceIdentifier,Roblox.Platform.Captcha.Factories,Roblox.Web.Authentication.ITwoStepAuthenticator,Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender,Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider,Roblox.Platform.Marketing.IBrowserTrackerDetailProvider,Roblox.Platform.Membership.IUserFactory,Roblox.Web.Authentication.ICaptchaGrpcClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Web.Authentication.WebAuthenticatorV2" /> class.
+            </summary>
+            <param name="webAuthenticationReader">An <see cref="T:Roblox.Web.Authentication.IWebAuthenticationReader"/>.</param>
+            <param name="accountsNeedingPasswordResetFactory">An <see cref="T:Roblox.Platform.Authentication.IAccountsNeedingPasswordResetFactory"/>.</param>
+            <param name="clientDeviceIdentifier">An <see cref="T:Roblox.Web.Devices.IClientDeviceIdentifier"/>.</param>
+            <param name="captchaFactories">An <see cref="T:Roblox.Platform.Captcha.Factories"/>.</param>
+            <param name="twoStepAuthenticator">An <see cref="T:Roblox.Web.Authentication.ITwoStepAuthenticator"/>.</param>
+            <param name="twoStepVerificationCodeSender">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationCodeSender"/>.</param>
+            <param name="twoStepVerificationConfigurationProvider">An <see cref="T:Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider"/>.</param>
+            <param name="browserTrackerDetailProvider">An <see cref="T:Roblox.Platform.Marketing.IBrowserTrackerDetailProvider"/>.</param>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+                Thrown if <paramref name="webAuthenticationReader"/>, <paramref name="accountsNeedingPasswordResetFactory"/>, 
+                <paramref name="clientDeviceIdentifier"/>, <paramref name="captchaFactories"/>,
+                <paramref name="twoStepAuthenticator"/>, <paramref name="twoStepVerificationCodeSender"/>, <paramref name="twoStepVerificationConfigurationProvider"/>  
+                or <paramref name="browserTrackerDetailProvider"/> is null.
+            </exception>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticatorV2.SignInWithUserCredentials(Roblox.Platform.Authentication.IRobloxUserCredentials,Roblox.Platform.Marketing.IBrowserTracker,Roblox.Web.Authentication.ICaptchaParameter)">
+            <inheritdoc cref="M:Roblox.Web.Authentication.IWebAuthenticatorV2.SignInWithUserCredentials(Roblox.Platform.Authentication.IRobloxUserCredentials,Roblox.Platform.Marketing.IBrowserTracker,Roblox.Web.Authentication.ICaptchaParameter)"/>
+        </member>
+        <member name="M:Roblox.Web.Authentication.WebAuthenticatorV2.InvalidateLoginCaptchaActionWhenFlooded(Roblox.Platform.Captcha.IAction,System.Boolean,System.Boolean)">
+            <summary>
+            Invalidates the login captcha action if captcha was required because of a floodchecker having been flooded.
+            Subsequent attempts must pass captcha again if the action is invalidated.
+            </summary>
+            <remarks>
+            This prevents someone from unnecessarily solving captchas for each login attempt if captcha is always
+            required for login and they have not exceeded any rate limits.
+            </remarks>
+            <param name="loginCaptchaAction"></param>
+            <param name="captchaRequiredForAllAttempts"></param>
+            <param name="forceInvalidation"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Notifications.Push</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Add other params.
+            TODO: Add exceptions.
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntity"/> with the given TODO: Fill in characterisics.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IApplicationTypeEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Add other params.
+            TODO: Add exceptions.
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IAuthenticationTypeEntity"/> with the given TODO: Fill in characterisics.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IPlatformTypeEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IPlatformTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IPlatformTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IPlatformTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Notifications.Push.Entities.IPlatformTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IPlatformTypeEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntityFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Add other params.
+            TODO: Add exceptions.
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverTypeEntity"/> with the given TODO: Fill in characterisics.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IDestinationEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IDestinationEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IDestinationEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntityFactory.GetByApplicationTypeIdAndPlatformTypeId(System.Int32,System.Int32)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntityFactory.GetByApplicationTypeIdPaged(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntity"/>s by their TODO: Fill in.
+            </summary>
+            TODO: Add params
+            <param name="startRowIndex">The zero-indexed start row index at which to begin getting rows.</param>
+            <param name="maxRows">The maximum number of rows to get.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="startRowIndex"/> is less than 0.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="maxRows"/> is non-positive.</exception>
+            TODO: Add other exceptions
+            <returns>The page of <see cref="T:Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntityFactory.GetByDestinationIdAndIsActivePaged(System.Int64,System.Boolean,System.Int64,System.Int64)">
+            <summary>
+            </summary>
+            <param name="startRowIndex">The zero-indexed start row index at which to begin getting rows.</param>
+            <param name="maxRows">The maximum number of rows to get.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="startRowIndex"/> is less than 0.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="maxRows"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntityFactory.GetByReceiverTypeIdReceiverTargetIdAndIsActivePaged(System.Int32,System.Int64,System.Boolean,System.Int64,System.Int64)">
+            <summary>
+            </summary>
+            <param name="startRowIndex">The zero-indexed start row index at which to begin getting rows.</param>
+            <param name="maxRows">The maximum number of rows to get.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="startRowIndex"/> is less than 0.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="maxRows"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntityFactory.GetByReceiverTypeIdReceiverTargetIdIsAuthorizedByReceiverAndIsActivePaged(System.Int32,System.Int64,System.Boolean,System.Boolean,System.Int64,System.Int64)">
+            <summary>
+            </summary>
+            <param name="startRowIndex">The zero-indexed start row index at which to begin getting rows.</param>
+            <param name="maxRows">The maximum number of rows to get.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="startRowIndex"/> is less than 0.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="maxRows"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Notifications.Push.Entities.IReceiverDestinationEntity"/>s.</returns>
+            ///
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushPlatforms.AndroidAmazon.#ctor(Roblox.Platform.Notifications.Push.PushServiceClientFactory,Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntity,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Notifications.Push.ReceiverTypeLookup)">
+            <summary>
+            This is to support delivering push notifications to Android devices where the Roblox app was installed through the
+            Amazon app store, and registered with 'Amazon Device Messaging' (ADM)
+            </summary>
+            <param name="pushServiceClientFactory"></param>
+            <param name="destinationType"></param>
+            <param name="userFactory"></param>
+            <param name="receiverTypeLookup"></param>
+        </member>
+        <member name="F:Roblox.Platform.Notifications.Push.PushNotificationIntent.NewContent">
+            <summary>
+            New content which should be displayed either as a new notification, or, depending on client logic, 
+            combined into an existing stack of notifications
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Notifications.Push.PushNotificationIntent.UpdateSingleNotification">
+            <summary>
+            An update to a previously delivered notification, this could be a change in content or a request to remove it
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Notifications.Push.PushNotificationIntent.UpdateCategoryOfNotifications">
+            <summary>
+            An update that should be applied to any notifications present on the client belonging to the specified category
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.AmazonSnsMobilePushClient.Dispose">
+            <summary>
+            Disposes the HTTP handler.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.AmazonSnsMobilePushClient.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushNotificationEventPublisher.PublishPrimaryNotification(Roblox.Platform.Notifications.Push.IUserPushDestination,System.Guid,Roblox.Platform.Notifications.Push.PushNotificationIntent,System.Nullable{Roblox.Platform.Notifications.Core.NotificationSourceType})">
+            <summary>
+            Publish a push notification event to be handled by a processor
+            </summary>
+            <returns>True if successful, false if not</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushNotificationDeliverer.Deliver(Roblox.Platform.Notifications.Push.IPushNotificationSpecification,Roblox.Platform.Notifications.Push.DeliveryAttemptType)">
+            <summary>
+            Deliver a push notification to the third party push service. Should only be called in the context of a processor or background task
+            </summary>
+            <param name="specification"></param>
+            <param name="attempt"></param>
+            <returns>True if successful, false if not</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushNotificationDeliverer.IsDestinationFlooded(Roblox.Platform.Notifications.Push.IPushNotificationSpecification,Roblox.Platform.Notifications.Push.IExtendedReceiverDestination)">
+            <summary>
+            Ensure no destination is delivered an exorbitant number of notifications, both for the user's sake and to ensure
+            we don't hit any rate-limiting issues with the external notification service. Also limit the number of notifications 
+            of any particular type to a destination to ensure no rogue notification producer can flood a user's device and prevent 
+            other notification types from getting through.
+            </summary>
+            <returns>Whether any of the floodcheckers has tripped</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.Register(Roblox.Platform.Notifications.Push.PushApplicationType,Roblox.Platform.Notifications.Push.PushPlatformType,Roblox.Platform.Membership.IUser,Roblox.Platform.Authentication.ISessionToken,System.String,System.String,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Register a device as a Destination and ReceiverDestination for the specified user
+            </summary>
+            <param name="applicationType"></param>
+            <param name="platformType"></param>
+            <param name="user"></param>
+            <param name="sessionToken"></param>
+            <param name="notificationToken"></param>
+            <param name="notificationEndpoint"></param>
+            <param name="initiatedByUser">This should indicate if this is being triggered by an explicit user action. If it is then the receiverDestination 
+            will be marked as Authorized as well as active, otherwise any existing settings will be preserved.</param>
+            <param name="deviceName">Friendly user-facing name of the device being registered</param>
+            <returns>Registration</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.DeauthorizeSessionDestinations(Roblox.Platform.Notifications.Push.PushApplicationType,Roblox.Platform.Membership.IUser,Roblox.Platform.Authentication.ISessionToken)">
+            <summary>
+            Deauthorizes the current destination for the user's session to indicate they no longer want to receive notifications at that destination.
+            Only one destination should be registered per session. Any superfluous records for the current session will be removed.
+            </summary>
+            <param name="application">The notification application to consider</param>
+            <param name="user">User</param>
+            <param name="sessionToken">The session token of the session the user's current session</param>
+            <returns>True if successful, false if not</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.GetValidDestinations(Roblox.Platform.Notifications.Push.PushApplicationType,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets all valid push notification destinations for the specified user and application. That is destinations that are both active and authorized for the passed user
+            </summary>
+            <param name="application"></param>
+            <param name="user"></param>
+            <returns>The valid destinations</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.GetSessionDestination(Roblox.Platform.Notifications.Push.PushApplicationType,Roblox.Platform.Membership.IUser,Roblox.Platform.Authentication.ISessionToken)">
+            <summary>
+            Gets the push notification destination associated with the user's session, if one exists and it is valid.
+            </summary>
+            <param name="application"></param>
+            <param name="user"></param>
+            <param name="sessionToken"></param>
+            <returns>The destination if one exists, otherwise null</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.GetSessionDestination(Roblox.Platform.Notifications.Push.PushApplicationType,Roblox.Platform.Membership.IUser,Roblox.Platform.Authentication.ISessionToken,System.String)">
+            <summary>
+            Gets the push notification destination associated with the user's session, if it matches the specified notification token.
+            </summary>
+            <param name="application"></param>
+            <param name="user"></param>
+            <param name="sessionToken"></param>
+            <param name="notificationToken">The current notification token passed in from the client.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.GetDestinationType(Roblox.Platform.Notifications.Push.PushApplicationType,Roblox.Platform.Notifications.Push.PushPlatformType)">
+            <summary>
+            Gets the unique Destination Type defined by the application and platform types specified.
+            </summary>
+            <param name="application"></param>
+            <param name="platform"></param>
+            <returns>The Destination Type if it exists, otherwise null</returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.GetDestinationTypes(Roblox.Platform.Notifications.Push.PushApplicationType)">
+            <summary>
+            Get the Destination Types for all defined Platform Types for the specified Application Type
+            </summary>
+            <param name="application"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.CreateDestinationType(Roblox.Platform.Notifications.Push.PushApplicationType,Roblox.Platform.Notifications.Push.PushPlatformType,System.String)">
+            <summary>
+            Create a new Destination Type for the specified Application and Platform Types specified. Will throw an exception if
+            a Destination Type with that combination already exists.
+            </summary>
+            <param name="application"></param>
+            <param name="platform"></param>
+            <param name="registrationEndpoint"></param>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.PushRegistrar.UpdateDestinationType(Roblox.Platform.Notifications.Push.PushApplicationType,Roblox.Platform.Notifications.Push.PushPlatformType,System.String)">
+            <summary>
+            Update the Destination Type defined by the unique combination of Application and Platform type specified. Will throw
+            an exception if the Destination Type does not exist.
+            </summary>
+            <param name="application"></param>
+            <param name="platform"></param>
+            <param name="registrationEndpoint"></param>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.IPushServiceClient.GetDevicePushPublishEndpoint(Roblox.Platform.Notifications.Push.Entities.IDestinationTypeEntity,System.String,System.String)">
+            <summary>
+            Given a destination type and a notification registration token, this will provide a unique endpoint 
+            at the push service that can be used to deliver notificaitons to that device
+            </summary>
+            <param name="destinationType"></param>
+            <param name="deviceToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Push.IPushServiceClient.PublishNotificationToDestination(System.String,System.String)">
+            <summary>
+            Publishes a notification to the destination device
+            </summary>
+            <param name="endpoint">The endpoint to deliver the message to</param>
+            <param name="jsonMessage">The JSON formatted message contianing the PushNotificationID GUID. This 
+            should be formatted appropriately for the destination platform</param>
+            <returns>Returns a receipt ID for the push attempt from the push service</returns>
+        </member>
+        <member name="T:Roblox.Platform.Notifications.Push.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Notifications.Push.PushNotificationEventLegacy">
+            <summary>
+            This contains the details of a new Push Notification. This is used to be published to SNS to be handled
+            some time in the future by a processor
+            </summary>
+        </member>
+    </members>
+</doc>

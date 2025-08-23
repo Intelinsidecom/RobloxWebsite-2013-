@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "k1GDUrugM0J01pOxX7pnMe/qdlTIRbQ5tETrKcWrZ3f7ABT2aZlzQWr4USo8/++NwZHRE/OMnOFq+l+JyDP59w==",
+  "dgSpecHash": "OwuurrqdYM4=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Web.Devices\\Roblox.Web.Devices.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.Devices\\Roblox.Web.Devices.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -40,7 +40,7 @@ public class RobloxDaxClient : AmazonDAXClient
 		{
 			throw new ArgumentException("Configuration cannot be converted to RobloxDaxClientConfig.");
 		}
-		((AmazonServiceClient)this).CustomizeRuntimePipeline(pipeline);
+		base.CustomizeRuntimePipeline(pipeline);
 		if (robloxDynamoDbClientConfig.IsAsyncRequestTimeoutEnabled && ((ClientConfig)robloxDynamoDbClientConfig).Timeout.HasValue)
 		{
 			AsyncInvokeTimeoutHandler asyncInvokeTimeoutHandler = new AsyncInvokeTimeoutHandler(new AsyncInvokeTimeoutHandlerConfig(((ClientConfig)robloxDynamoDbClientConfig).Timeout.Value));

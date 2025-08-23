@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Roblox.DataV2.Core;
+using System.Threading.Tasks;
 
 namespace Roblox.StaticContent.Client
 {
@@ -11,6 +12,20 @@ namespace Roblox.StaticContent.Client
         Css = 0,
         JavaScript = 1,
         TranslationResourceNamespace = 2
+    }
+
+    // Needed by Roblox.Web.StaticContentV2
+    public enum StaticContentContentType
+    {
+        Css = 0,
+        JavaScript = 1
+    }
+
+    public enum StaticContentResult
+    {
+        Unknown = 0,
+        Created = 1,
+        Duplicate = 2
     }
 
     public class ContentPackItemResult
@@ -41,5 +56,27 @@ namespace Roblox.StaticContent.Client
             SortOrder sortOrder,
             long? exclusiveStartId,
             int count);
+
+        // Synchronous content pack creation used by web uploader
+        StaticContentResult CreateDevelopmentContentPack(
+            string componentSuffix,
+            string componentName,
+            string cssContent,
+            string javaScriptContent,
+            string[] translationResourceNamespaces,
+            string[] componentDependencies);
+
+        StaticContentResult CreateContentPack(
+            string name,
+            string componentName,
+            string cssContent,
+            string javaScriptContent,
+            string[] translationResourceNamespaces,
+            string[] componentDependencies);
+
+        // Async uploads used by web uploader
+        Task<StaticContentResult> UploadImage(string fileName, byte[] contents);
+
+        Task<StaticContentResult> UploadSourceMap(string filename, string contents);
     }
 }

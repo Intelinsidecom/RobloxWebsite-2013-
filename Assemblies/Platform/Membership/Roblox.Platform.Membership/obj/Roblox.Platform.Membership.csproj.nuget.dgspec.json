@@ -32,7 +32,11 @@
         "frameworks": {
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -56,6 +60,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -582,6 +590,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -1331,7 +1343,7 @@
           "dependencies": {
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -1406,6 +1418,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "StackExchange.Redis": {
               "target": "Package",
@@ -1613,7 +1629,11 @@
         "frameworks": {
           "net471": {
             "targetAlias": "net471",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Http.Client\\Roblox.Http.Client.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Http.Client\\Roblox.Http.Client.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -1853,6 +1873,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -2283,7 +2307,14 @@
         "frameworks": {
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -2805,7 +2836,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -3099,7 +3130,7 @@
           "dependencies": {
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -3385,6 +3416,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[4.7.0, )"
@@ -3506,7 +3541,14 @@
         "frameworks": {
           "net471": {
             "targetAlias": "net471",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Http.Client\\Roblox.Http.Client.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Http.Client\\Roblox.Http.Client.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -3530,6 +3572,10 @@
               "target": "Package",
               "version": "[1.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",

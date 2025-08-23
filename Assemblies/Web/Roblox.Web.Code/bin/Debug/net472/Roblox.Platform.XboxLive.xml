@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.XboxLive</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.XboxLive.XboxLiveUserManager">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.XboxLive.IXboxLiveUserManager"/>.
+            </summary>
+            <seealso cref="T:Roblox.Platform.XboxLive.IXboxLiveUserManager" />
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.XboxLiveUserManager.#ctor(Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor,Roblox.Platform.Membership.IPasswordValidatorFactory,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Membership.Commands.IUsernameValidator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.XboxLive.XboxLiveUserManager"/> class.
+            </summary>
+            <param name="xboxLiveAccountDataAccessor">The <see cref="T:Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor"/>r.</param>
+            <param name="passwordValidatorFactory">The <see cref="T:Roblox.Platform.Membership.IPasswordValidatorFactory"/>y.</param>
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <param name="usernameValidator">The <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidator"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="xboxLiveAccountDataAccessor"/>
+            - <paramref name="passwordValidatorFactory"/>
+            - <paramref name="userFactory"/>
+            - <paramref name="usernameValidator"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.XboxLiveUserManager.#ctor(Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor,Roblox.Platform.Membership.IPasswordValidatorFactory,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Membership.Commands.IUsernameValidator,Roblox.Users.Client.IUsersClient,Roblox.Platform.XboxLive.Properties.IXboxLiveSettings)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.XboxLive.XboxLiveUserManager"/>.
+            </summary>
+            <param name="xboxLiveAccountDataAccessor">An <see cref="T:Roblox.Platform.Authentication.IXboxLiveAccountDataAccessor"/>r.</param>
+            <param name="passwordValidatorFactory">An <see cref="T:Roblox.Platform.Membership.IPasswordValidatorFactory"/>y.</param>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <param name="usernameValidator">An <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidator"/>.</param>
+            <param name="usersClient">An <see cref="T:Roblox.Users.Client.IUsersClient"/>.</param>
+            <param name="xboxLiveSettings">An <see cref="T:Roblox.Platform.XboxLive.Properties.IXboxLiveSettings"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="xboxLiveAccountDataAccessor"/>
+            - <paramref name="passwordValidatorFactory"/>
+            - <paramref name="userFactory"/>
+            - <paramref name="usernameValidator"/>
+            - <paramref name="xboxLiveSettings"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.XboxLiveUserManager.TryIncrementXboxUserLoginConsecutiveDayCount(Roblox.Platform.Membership.IUser,System.DateTime)">
+            <summary>
+            Xbox Login Consecutive Days for Achievments
+            </summary>
+            <param name="user"></param>
+            <param name="clientLastSeen">TimeStamp from the client. Not from server</param>
+            <returns>true: if incremented or changed, false: no change (login within the same day)</returns>
+        </member>
+        <member name="T:Roblox.Platform.XboxLive.ICrossPlaySetting">
+            <summary>
+            Determines whether the user has enabled or disabled CrossPlay
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.XboxLive.ICrossPlaySetting.UserId">
+            <summary>
+            Gets the user identifier.
+            </summary>
+            <value>
+            The user identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.XboxLive.ICrossPlaySetting.IsEnabled">
+            <summary>
+            Gets a value indicating whether this instance is enabled.
+            </summary>
+            <value>
+              <c>true</c> CrossPlay is enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.XboxLive.ICrossPlaySetting.Created">
+            <summary>
+            Gets the created Date.
+            </summary>
+            <value>
+            The created Date.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.XboxLive.ICrossPlaySetting.Updated">
+            <summary>
+            Gets the updated date.
+            </summary>
+            <value>
+            The updated Date.
+            </value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.XboxLive.ICrossPlaySetting.SetEnabled(System.Boolean)" -->
+        <member name="T:Roblox.Platform.XboxLive.ICrossPlaySettingEntity">
+            <summary>
+            Settings for user CrossPlay information.
+            </summary>
+            <seealso cref="!:Roblox.Entities.IUpdateableEntity&lt;System.Int64&gt;" />
+        </member>
+        <member name="P:Roblox.Platform.XboxLive.ICrossPlaySettingEntity.UserId">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>
+            The user identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.XboxLive.ICrossPlaySettingEntity.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether a user has opted out of CrossPlay.
+            </summary>
+            <value>
+              <c>true</c> if the user has CrossPlay enabled otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.XboxLive.ICrossPlaySettingEntityFactory">
+            <summary>
+            Builds <see cref="T:Roblox.Platform.XboxLive.CrossPlaySetting"/> instances.
+            </summary>
+            <seealso cref="!:Roblox.Platform.Core.IDomainFactory&lt;Roblox.Platform.XboxLive.XboxDomainFactories&gt;" />
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.ICrossPlaySettingEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.XboxLive.ICrossPlaySettingEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.XboxLive.ICrossPlaySettingEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.ICrossPlaySettingEntityFactory.GetByUserId(System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.XboxLive.ICrossPlaySettingEntity" /> with the given user ID
+            </summary>
+            <param name="userId">The user identifier.</param>
+            <returns>
+            The <see cref="T:Roblox.Platform.XboxLive.ICrossPlaySettingEntity" />
+            </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.XboxLive.ICrossPlaySettingEntityFactory.CreateNew(System.Int64,System.Boolean)" -->
+        <member name="T:Roblox.Platform.XboxLive.ICrossPlaySettingFactory">
+            <summary>
+            A Factory for <see cref="T:Roblox.Platform.XboxLive.CrossPlaySetting"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.ICrossPlaySettingFactory.GetByUserId(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the by user identifier.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> who's setting to get.</param>
+            <returns>The <see cref="T:Roblox.Platform.XboxLive.CrossPlaySetting" /></returns>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.ICrossPlaySettingFactory.CreateNew(Roblox.Platform.Membership.IUser,System.Boolean)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.XboxLive.CrossPlaySetting"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> who's setting to create.</param>
+            <param name="isEnabled">if set to <c>true</c> [is enabled].</param>
+            <returns>A new <see cref="T:Roblox.Platform.XboxLive.CrossPlaySetting" /></returns>
+        </member>
+        <member name="T:Roblox.Platform.XboxLive.IXboxSoothsayerVerifier">
+            <summary>
+            A class for Xbox soothsayer verification
+            </summary>
+            <remarks>
+            This exists so we can test Xbox specific features on a select set
+            of users (like the Microsoft Xbox certification team) before turning the
+            feature on for other users.
+            This is separate from the official Soothsayer roleset.
+            </remarks>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxSoothsayerVerifier.IsSoothsayer(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Determines whether or not an <see cref="T:Roblox.Platform.Membership.IUser"/> is an Xbox soothsayer
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns><c>true</c> if <paramref name="user"/> is an Xbox soothsayer.</returns>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.XboxLive.IXboxLiveUserManager">
+            <summary>
+            An interface for management of Xbox live user and Roblox user.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.LinkExistingUser(Roblox.Platform.Membership.IUser,System.String,System.String,System.String)">
+            <summary>
+            Links the existing user to xbox user.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="pairwiseId">The pairwise identifier.</param>
+            <param name="gamerTag">The gamer tag.</param>
+            <param name="ageGroup">The age group.</param>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.SetRobloxUsernameAndPassword(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Sets the roblox username and password.
+            </summary>
+            <param name="pairwiseId">The pairwise identifier.</param>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <param name="mustUsePiiFiltersForU13Usernames">if set to <c>true</c> [must use pii filters for u13 usernames].</param>
+            TODO: Delete once we no longer support /xboxlive/set-roblox-username-password
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.UnlinkXboxLiveAccountFromRobloxAccount(System.String)">
+            <summary>
+            Unlinks the xbox live account from roblox account.
+            </summary>
+            <param name="pairwiseId">The pairwise identifier.</param>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.UnlinkRobloxAccountFromXboxLiveAccount(System.Int64)">
+            <summary>
+            Unlinks the roblox account from xbox live account.
+            </summary>
+            <param name="accountId">The account identifier.</param>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.SynchronizeGamerTagHash(System.String,System.String)">
+            <summary>
+            Synchronizes the gamer tag hash.
+            </summary>
+            <param name="pairwiseId">The pairwise identifier.</param>
+            <param name="gamerTag">The gamer tag.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.TryIncrementXboxUserLoginConsecutiveDayCount(Roblox.Platform.Membership.IUser,System.DateTime)">
+            <summary>
+            Xbox Login Consecutive Days for Achievments
+            </summary>
+            <param name="user"></param>
+            <param name="clientLastSeen">TimeStamp from the client. Not from server</param>
+            <returns>true: if incremented or changed, false: no change (login within the same day)</returns>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.GetLoginConsecutiveDayCount(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the login consecutive day count.
+            </summary>
+            <param name="user">The user.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.IsXboxLiveUser(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Determines whether [the specified user] [is xbox live user].
+            </summary>
+            <param name="user">The user.</param>
+            <returns>
+              <c>true</c> if [the specified user] [is xbox live user]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.IsXboxGamerTagValid(Roblox.Platform.Membership.IUser,System.String)">
+            <summary>
+            Determines whether users XboxGamerTag is valid.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="gamerTag">The gamer tag.</param>
+            <returns>
+              <c>true</c> if [is xbox gamer tag valid] [the specified user]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.IXboxLiveUserManager.GetLeasedLock(System.String)">
+            <summary>
+            Gets a leased lock for managing an Xbox account via pairwise Id.
+            </summary>
+            <param name="pairwiseId">The pairwise Id.</param>
+            <returns>The <see cref="T:Roblox.Locking.ILeasedLock"/>.</returns>
+        </member>
+        <member name="T:Roblox.Platform.XboxLive.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.XboxLive.XboxDomainFactories">
+            <summary>
+            Represents an object that contains factories for the Xbox domain.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.DomainFactoriesBase" />
+        </member>
+        <member name="P:Roblox.Platform.XboxLive.XboxDomainFactories.CrossPlaySettingFactory">
+            <summary>
+            Gets the cross play setting factory.
+            </summary>
+            <value>
+            The cross play setting factory.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.XboxLive.XboxDomainFactories.XboxSoothsayerVerifier">
+            <summary>
+            The <see cref="T:Roblox.Platform.XboxLive.IXboxSoothsayerVerifier"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.XboxLive.XboxDomainFactories.#ctor">
+            <summary>
+            XboxDomainFactories is the new Domain factory for all Roblox.Platform.XboxLive. 
+            Currently most of the entities that the factory should build still reside in Roblox.Platform.XboxLive.Entities 
+            </summary>
+        </member>
+    </members>
+</doc>

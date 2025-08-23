@@ -104,7 +104,7 @@ public class ElevatedActionAlert
 				IAccountPhoneNumber accountPhoneNumber = _AccountPhoneNumberFactory.GetVerifiedForUser(user);
 				if (accountPhoneNumber != null)
 				{
-					Sms sms2 = new Sms(accountPhoneNumber.FullPhoneNumber, message);
+					Roblox.Sms.Client.Sms sms2 = new Roblox.Sms.Client.Sms(accountPhoneNumber.FullPhoneNumber, message);
 					_SmsClient.Send(sms2);
 				}
 			}
@@ -117,7 +117,7 @@ public class ElevatedActionAlert
 		{
 			try
 			{
-				Sms sms = new Sms(number, message);
+				Roblox.Sms.Client.Sms sms = new Roblox.Sms.Client.Sms(number, message);
 				_SmsClient.Send(sms);
 			}
 			catch (Exception exception)

@@ -20,7 +20,7 @@ public interface IPrivateServerPermissionsFactory
 	/// <param name="privateServerId">ID of private server to get the permission group for.</param>
 	/// <returns>Permission group for private server <paramref name="privateServerId" /> or null if private server has no permission group.</returns>
 	/// <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId" /> has more than one permission group.</exception>
-	IPermissionGroup GetPrivateServerPermissionGroup(long privateServerId);
+	Roblox.Platform.Permissions.Core.IPermissionGroup GetPrivateServerPermissionGroup(long privateServerId);
 
 	/// <summary>
 	/// Create permission group for private server given the ID of the server's owner.
@@ -28,7 +28,7 @@ public interface IPrivateServerPermissionsFactory
 	/// <param name="privateServerId">ID of the private server to create a permission group for.</param>
 	/// <param name="ownerUserId">ID of the user that owns the private server.</param>
 	/// <returns>Newly created permission group for private server <paramref name="privateServerId" /> owned by <paramref name="ownerUserId" /></returns>
-	IPermissionGroup CreatePrivateServerPermissions(long privateServerId, long ownerUserId);
+	Roblox.Platform.Permissions.Core.IPermissionGroup CreatePrivateServerPermissions(long privateServerId, long ownerUserId);
 
 	/// <summary>
 	/// Adds friends access to private server.
@@ -61,7 +61,7 @@ public interface IPrivateServerPermissionsFactory
 	/// <param name="permissionGroup">Permission group to use instead of the private server <paramref name="privateServerId" />'s current permission group.</param>
 	/// <returns>A collection of clan IDs that have access to private server <paramref name="privateServerId" /> given a non-null <paramref name="permissionGroup" />. Otherwise, determines the clan IDs based on the existing permission groups associated with private server <paramref name="privateServerId" />.</returns>
 	/// <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if <paramref name="permissionGroup" /> is <c>null</c> and private server <paramref name="privateServerId" /> has more than one permission group.</exception>
-	IReadOnlyCollection<long> GetPrivateServerClanIdsWithAccess(long privateServerId, IPermissionGroup permissionGroup = null);
+	IReadOnlyCollection<long> GetPrivateServerClanIdsWithAccess(long privateServerId, Roblox.Platform.Permissions.Core.IPermissionGroup permissionGroup = null);
 
 	/// <summary>
 	/// Set clan access to private server.
@@ -72,7 +72,7 @@ public interface IPrivateServerPermissionsFactory
 	/// <returns><c>true</c> if the set of allowed clans on private server <paramref name="privateServerId" /> changed, <c>false</c> otherwise.</returns>
 	/// <exception cref="T:System.ArgumentException">Thrown when <paramref name="allowedClanIds" /> exceeds the maximum number of allowed clan IDs for private servers.</exception>
 	/// <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId" /> has more than one permission group.</exception>
-	bool SetPrivateServerClanAccess(long privateServerId, IReadOnlyCollection<long> allowedClanIds, IPermissionGroup permissionGroup = null);
+	bool SetPrivateServerClanAccess(long privateServerId, IReadOnlyCollection<long> allowedClanIds, Roblox.Platform.Permissions.Core.IPermissionGroup permissionGroup = null);
 
 	/// <summary>
 	/// Gets whitelist for private server.

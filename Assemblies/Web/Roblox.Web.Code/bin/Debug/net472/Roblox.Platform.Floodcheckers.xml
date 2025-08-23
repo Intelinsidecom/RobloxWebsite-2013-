@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Floodcheckers</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Floodcheckers.FloodCheckerList.Check">
+            <summary>
+            Checks all the floodcheckers in the list and returns status of first flooded floodchecker.
+            If none are flooded returns the result of the first floodchecker in the list.
+            </summary>
+            <returns><see cref="T:Roblox.FloodCheckers.Core.FloodCheckerStatus"/> of the first flooded floodchecker or if none are flooded then the first floodchecker in the list</returns>
+        </member>
+        <member name="M:Roblox.Platform.Floodcheckers.FloodCheckerList.GetCount">
+            <summary>
+            Gets count of the first flooded floodchecker in the list
+            </summary>
+            <returns>count of the first flooded floodchecker in the list of if none are flooded then the count of the first floodchecker in the list</returns>
+        </member>
+        <member name="M:Roblox.Platform.Floodcheckers.FloodCheckerList.GetCountOverLimit">
+            <summary>
+            Gets count over limit of the first flooded floodchecker in the list
+            </summary>
+            <returns>count over limit of the first flooded floodchecker in the list of if none are flooded then the count over limit of the first floodchecker in the list</returns>
+        </member>
+        <member name="M:Roblox.Platform.Floodcheckers.FloodCheckerList.IsFlooded">
+            <summary>
+            Checks if any floodchecker in the list is flooded
+            </summary>
+            <returns>returns true if it finds any flooded floodcheckers in the list</returns>
+        </member>
+        <member name="M:Roblox.Platform.Floodcheckers.FloodCheckerList.UpdateCount">
+            <summary>
+            Updates count of each floodchecker in the list
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Floodcheckers.FloodCheckerList.Reset">
+            <summary>
+            Resets count to zero for every floodchecker in the list
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Floodcheckers.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

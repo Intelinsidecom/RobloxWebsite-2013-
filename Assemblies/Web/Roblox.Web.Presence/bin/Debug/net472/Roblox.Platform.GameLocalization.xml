@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.GameLocalization</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.GameLocalization.GameLocalizationLanguagesDomainFactory">
+            <summary>
+            A domain factory for accessors and builders.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationLanguagesDomainFactory.GetGameLanguagesBuilder(Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.GameLocalization.Authorization.IGameLocalizationAuthorizer)">
+            <summary>
+            Creates a new GameLanguagesBuilder.
+            </summary>
+            <returns>A new <see cref="T:Roblox.Platform.GameLocalization.IGameLanguagesBuilder"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationLanguagesDomainFactory.GetGameLanguagesAccessor">
+            <summary>
+            Creates a new GameLanguagesAccessor.
+            </summary>
+            <returns>A new <see cref="T:Roblox.Platform.GameLocalization.IGameLanguagesAccessor"/>.</returns>
+        </member>
+        <member name="T:Roblox.Platform.GameLocalization.GameLocalizationChangeEventsPublisher">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationChangeEventsPublisher.#ctor(Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.GameLocalization.GameLocalizationChangeEventsPublisher"/> class.
+            </summary>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="counterRegistry"></param>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationChangeEventsPublisher.OnCompleted">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationChangeEventsPublisher.OnError(System.Exception)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationChangeEventsPublisher.OnNext(Roblox.Platform.GameLocalization.GameLocalizationChangeEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationChangeEventsPublisher.Subscribe(System.IObservable{Roblox.Platform.GameLocalization.GameLocalizationChangeEvent})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationChangeEventsPublisher.Unsubscribe">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.GameLocalizationSettingsAuthority.#ctor(Roblox.Platform.Localization.Core.ICoreLocalizationAccessor,Roblox.GameLocalization.Client.IGameLocalizationSettingsClient,Roblox.Platform.GameLocalization.IGameLocalizationChangeEventsPublisher,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.GameLocalization.GameLocalizationSettingsAuthority" /> class.
+            </summary>
+            <param name="coreLocalizationAccessor">The <see cref="T:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor" />.</param>
+            <param name="client">The <see cref="T:Roblox.GameLocalization.Client.IGameLocalizationSettingsClient" />.</param>
+            <param name="publisher">The <see cref="T:Roblox.Platform.GameLocalization.IGameLocalizationChangeEventsPublisher" />.</param>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLanguagesAccessor.GetGameLanguagesForGame(System.Int64)">
+            <summary>
+            Gets the list of supported languages for a particular universe.
+            </summary>
+            <param name="universeId">The universeId.</param>
+            <returns>A <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> of <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLanguagesBuilder.AddGameLanguages(System.Int64,System.Collections.Generic.IReadOnlyCollection{System.String},Roblox.Platform.GameLocalization.Authorization.IActor)">
+            <summary>
+            Add languages to a game's list of supported languages.
+            </summary>
+            <param name="universeId">The game to add the languages to.</param>
+            <param name="languageCodes">The languages to add.</param>
+            <param name="actor">The actor making the change.</param>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLanguagesBuilder.RemoveGameLanguages(System.Int64,System.Collections.Generic.IReadOnlyCollection{System.String},Roblox.Platform.GameLocalization.Authorization.IActor)">
+            <summary>
+            Remove languages from a game's list of supported languages.
+            </summary>
+            <param name="universeId">The game to remove the languages from.</param>
+            <param name="languageCodes">The languages to remove.</param>
+            <param name="actor">The actor making the change.</param>
+        </member>
+        <member name="T:Roblox.Platform.GameLocalization.IGameLocalizationChangeEventsPublisher">
+            <inheritdoc />
+            <summary>
+            An interface for publishing game localization change events.
+            </summary>
+            <seealso cref="T:Roblox.Platform.GameLocalization.GameLocalizationChangeEvent" />
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLocalizationChangeEventsPublisher.Subscribe(System.IObservable{Roblox.Platform.GameLocalization.GameLocalizationChangeEvent})">
+            <summary>
+            Subscribe to receive change events
+            </summary>
+            <param name="observable"><see cref="T:System.IObservable`1"/> for <see cref="T:Roblox.Platform.GameLocalization.GameLocalizationChangeEvent"/></param>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLocalizationChangeEventsPublisher.Unsubscribe">
+            <summary>
+            Un-subscribe from the <see cref="T:System.IObservable`1"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.GameLocalization.IGameLocalizationLanguageSettingsAuthority">
+            <summary>
+            A common interface for an entity that manages GameLocalizationLanguageSettings.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLocalizationLanguageSettingsAuthority.GetSupportedLanguageFamiliesForGame(System.Int64)">
+            <summary>
+            Gets the list of supported languages for a particular universe.
+            </summary>
+            <param name="universeId">The universeId.</param>
+            <returns>A <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> of <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLocalizationLanguageSettingsAuthority.RemoveSupportedLanguageFamiliesForGame(System.Int64,System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Localization.Core.ILanguageFamily})">
+            <summary>
+            Removes languages from the supported list of languages for a universe.
+            </summary>
+            <param name="universeId">The universeId.</param>
+            <param name="languages">The languages to remove.</param>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLocalizationLanguageSettingsAuthority.AddSupportedLanguageFamiliesForGame(System.Int64,System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Localization.Core.ILanguageFamily})">
+            <summary>
+            Adds languages to the supported list of languages for a universe. 
+            </summary>
+            <param name="universeId">The universeId.</param>
+            <param name="languages">The languages to add.</param>
+        </member>
+        <member name="T:Roblox.Platform.GameLocalization.IGameLocalizationSettingsAuthority">
+            <summary>
+            An interface for dealting with GameLocalizationSettings.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLocalizationSettingsAuthority.GetSourceLanguageFamily(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Gets the source language family for the game.
+            </summary>
+            <param name="universe">The universe.</param>
+            <returns>An <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/> which is the source language for the game or null.</returns>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLocalizationSettingsAuthority.GetSourceLanguageFamiliesForGames(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Universes.IUniverse})">
+            <summary>
+            Gets the source language families for games.
+            </summary>
+            <param name="universes">The universes.</param>
+            <returns>A <see cref="T:System.Collections.Generic.IReadOnlyDictionary`2"/> of universe and corresponding <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.GameLocalization.IGameLocalizationSettingsAuthority.SetSourceLanguageFamily(Roblox.Platform.Universes.IUniverse,Roblox.Platform.Localization.Core.ILanguageFamily)">
+            <summary>
+            Sets the source language family for the game.
+            </summary>
+            <param name="universe">The universe.</param>
+            <param name="languageFamily">The language family.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the <paramref name="universe"/> or <paramref name="languageFamily"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidOperationException">Thrown if the <paramref name="languageFamily"/> is not in the list of available language families for UGC.</exception>
+        </member>
+    </members>
+</doc>

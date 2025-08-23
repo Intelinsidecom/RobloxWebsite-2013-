@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Web.SEO</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Web.SEO.NameConverter.ConvertToSEO(System.String)">
+             <summary>
+            Converts Name into an SEO friendly string.  Concatenates substrings of alphanumeric
+            characters via dashes.  Custom algorithm for speed.
+            </summary>
+        </member>
+    </members>
+</doc>

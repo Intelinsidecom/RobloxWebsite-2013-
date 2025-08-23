@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Notifications.Stream</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Notifications.Stream.NotificationStreamAccessor.StoreNotification(Roblox.Platform.Notifications.Core.NotificationSourceType,Roblox.Platform.Notifications.Core.EventTarget)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Stream.NotificationStreamPersister.GenerateNotificationId(Roblox.Platform.Notifications.Core.NotificationSourceType,Roblox.Platform.Notifications.Core.EventTarget)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Stream.INotificationStreamAccessor.StoreNotification(Roblox.Platform.Notifications.Core.NotificationSourceType,Roblox.Platform.Notifications.Core.EventTarget)">
+            <summary>
+            Stores a notification in the system.
+            </summary>
+            <param name="sourceType">The <see cref="T:Roblox.Platform.Notifications.Core.NotificationSourceType"/> of the notification.</param>
+            <param name="eventTarget">An identifier used by the consumer to identify the notification's content. Has a configurable max length.</param>
+            <returns>A <see cref="T:System.Guid"/> uniquely identifing this notificaiton.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="eventTarget"/> is null or empty</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="eventTarget"/> is longer than the maximum limit</exception>
+        </member>
+        <member name="T:Roblox.Platform.Notifications.Stream.IStreamNotification">
+            <summary>
+            Represents a notification within the notification stream subsystem.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.IStreamNotification.SourceType">
+            <summary>
+            The notification's <see cref="T:Roblox.Platform.Notifications.Core.NotificationSourceType"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.IStreamNotification.Category">
+            <summary>
+            The notification's category
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.IStreamNotification.EventTargetId">
+            <summary>
+            The notification's <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.IStreamNotification.EventDate">
+            <summary>
+            The notification's time
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.IStreamNotification.Detail">
+            <summary>
+            An <see cref="T:System.Object"/> containing detailed information about this notification.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Notifications.Stream.INotificationStreamPersister.GenerateNotificationId(Roblox.Platform.Notifications.Core.NotificationSourceType,Roblox.Platform.Notifications.Core.EventTarget)">
+            <summary>
+            Stores a notification and returns the id to the stored version.
+            </summary>
+            <param name="sourceType">The <see cref="T:Roblox.Platform.Notifications.Core.NotificationSourceType"/> of the notification.</param>
+            <param name="eventTarget">The identifier the consumer is using to identify the content of a notiication.</param>
+            <returns>A <see cref="T:System.Guid"/> uniquely identifing this notificaiton.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="eventTarget"/> is null or empty</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="eventTarget"/> is longer than the maximum limit</exception>
+        </member>
+        <member name="T:Roblox.Platform.Notifications.Stream.IStoredStreamNotification">
+            <summary>
+            A notification shown in the notification stream.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.IStoredStreamNotification.EventTargetId">
+            <summary>
+            The notification's event target id. Used by the consumer subsystem to identify the content of this notification.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.IStoredStreamNotification.EventDate">
+            <summary>
+            The date this notification was sent.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Notifications.Stream.NotificationStreamEvent">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.Notifications.Stream.INotificationStreamEvent"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.NotificationStreamEvent.EventId">
+            <inheritdoc/>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.NotificationStreamEvent.EventTargetId">
+            <inheritdoc/>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.NotificationStreamEvent.IsInteracted">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.Platform.Notifications.Stream.NotificationStreamEventIdentifier">
+            <summary>
+            Identifies a notification stored in the notification stream.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.NotificationStreamEventIdentifier.SourceType">
+            <summary>
+            The <see cref="T:Roblox.Platform.Notifications.Core.NotificationSourceType"/> of the notification.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.NotificationStreamEventIdentifier.EventId">
+            <summary>
+            The id of the event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.NotificationStreamEventIdentifier.EventDate">
+            <summary>
+            The time the event happened.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Notifications.Stream.NotificationStreamEventIdentifier.EventTarget">
+            <summary>
+            The event's <see cref="P:Roblox.Platform.Notifications.Stream.NotificationStreamEventIdentifier.EventTarget"/>.
+            </summary>
+        </member>
+    </members>
+</doc>

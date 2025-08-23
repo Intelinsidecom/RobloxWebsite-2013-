@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Core.DataUpdateResult`2">
+            <summary>
+            This is effectively a tuple to encapsulate data change results (creation/modification) at the entity level in an auditing pattern
+            </summary>
+            <typeparam name="TDataEntity">The type of the Entity object representing the data record in question</typeparam>
+            <typeparam name="TAuditEntryEntity">The type of AuditEntryEntity</typeparam>
+        </member>
+        <member name="T:Roblox.Platform.Core.LongDescriptionException">
+            <summary>
+            An exception thrown if the Description has too many characters and will be cropped by caching. It is intended to be thrown to stop asset creation.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.LongDescriptionException.#ctor">
+            <summary>
+            A long desription exception without a comment
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.LongDescriptionException.#ctor(System.String)">
+            <summary>
+            A long description exception with a comment
+            </summary>
+            <param name="message">The comment for the circumstances of the throw</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.LongDescriptionException.#ctor(System.String,System.Exception)">
+            <summary>
+            A long description exception with a comment and inner exception
+            </summary>
+            <param name="message">The comment for the circumstances of the throw</param>
+            <param name="innerException">The associated exception</param>
+        </member>
+        <member name="T:Roblox.Platform.Core.PlatformPermissionDeniedException">
+            <summary>
+            Exception thrown when a method argument is invalid.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformPermissionDeniedException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformPermissionDeniedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformPermissionDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformPermissionDeniedException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:Roblox.Platform.Core.PlatformExpiredException">
+            <summary>
+            An exception thrown when something is expired at the platform level.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Core.DomainFactoriesBase">
+            <summary>
+            Represents an object containing all of the factories in a domain.
+            </summary>
+            <example>
+            <code>
+            public class MembershipDomainFactories : DomainFactoriesBase
+            {
+                public IUserFactory UserFactory { get; protected set; }
+                <br/>
+                public IUserIdentifierFactory UserIdentifierFactory { get; protected set; }
+                <br/>
+                protected MembershipDomainFactories()
+                {
+                }
+                <br/>
+                public static MembershipDomainFactories Build()
+                {
+                    var factories = new MembershipDomainFactories();
+                    factories.UserFactory = new UserFactory(factories);
+                    factories.UserIdentifierFactory = new UserIdentifierFactory(factories);
+                    return factories;
+                }
+            }
+            
+            public class TestableMembershipDomainFactories : MembershipDomainFactories
+            {
+                public static new MembershipDomainFactories Build()
+                {
+                    var factories = new TestableMembershipDomainFactories();
+                    factories.UserFactory = A.Fake&lt;IUserFactory&gt;();
+                    factories.UserIdentifierFactory = A.Fake&lt;IUserIdentifierFactory&gt;();
+                    return factories;
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="T:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1">
+            <inheritdoc cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1" />
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1.SortOrder">
+            <inheritdoc cref="P:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1.SortOrder" />
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1.PagingDirection">
+            <inheritdoc cref="P:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1.PagingDirection" />
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1.Count">
+            <inheritdoc cref="P:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1.Count" />
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1.#ctor(`0,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1"/> class.
+            </summary>
+            <param name="exclusiveStartKey">The exclusive start key.</param>
+            <param name="count">The count.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1.#ctor(Roblox.DataV2.Core.SortOrder,Roblox.Platform.Core.PagingDirection,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1"/> class.
+            </summary>
+            <param name="sortOrder">The sort order.</param>
+            <param name="pagingDirection">The paging direction.</param>
+            <param name="count">The count.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1.#ctor(`0,Roblox.DataV2.Core.SortOrder,Roblox.Platform.Core.PagingDirection,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1"/> class with specified exclusive start key.
+            </summary>
+            <param name="exclusiveStartKey">The exclusive start key.</param>
+            <param name="sortOrder">The sort order.</param>
+            <param name="pagingDirection">The paging direction.</param>
+            <param name="count">The count.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfo`1.TryGetExclusiveStartKey(`0@)">
+            <inheritdoc cref="M:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1.TryGetExclusiveStartKey(`0@)" />
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfoExtensions.GetDatabaseRequestSortOrder``1(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{``0})">
+            <summary>
+            Gets sort order to be used when requesting from the database.
+            If the direction is backwards we want to return the reversed sort order.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfoExtensions.GetNullableExclusiveStartKey``1(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{``0})">
+            <summary>
+            Gets the exclusive start key from an <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>
+            If TryGet fails, returns null.
+            </summary>
+            <typeparam name="TId">The exclusive start key type.</typeparam>
+            <param name="exclusiveStartKeyInfo">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>.</param>
+            <returns><see cref="T:System.Nullable"/> <typeparamref name="TId"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyInfoExtensions.GetDefaultExclusiveStartId``1(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{``0})">
+            <summary>
+            Gets a non-nullable exclusive start id for basic data types.
+            The default exclusive start id based on the <see cref="T:Roblox.DataV2.Core.SortOrder"/> of <paramref name="exclusiveStartKeyInfo"/>.
+            If ascending will always be 0. If descending will be the max value of the datatype.
+            </summary>
+            <typeparam name="TId">The exclusive start key type.</typeparam>
+            <param name="exclusiveStartKeyInfo">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>.</param>
+            <returns>Non-nullable exclusive start key.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponseExtensions.Convert``3(Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse{``0,``1},System.Func{``1,``2})">
+            <summary>
+            Converts items in a <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2"/> from <typeparamref name="TPagedItem"/>
+            to <typeparamref name="TNewPagedItem"/> in a new <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2"/>.
+            </summary>
+            <typeparam name="TExclusiveStartKey">The exclusive start key type.</typeparam>
+            <typeparam name="TPagedItem">The original type of the items.</typeparam>
+            <typeparam name="TNewPagedItem">The new type of the paged items.</typeparam>
+            <param name="platformPageResponse">The original <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2"/>.</param>
+            <param name="convertFunc">The convert function.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1">
+            <summary>
+            A model containing information needed for interaction with start key based paging methods.
+            </summary>
+            <typeparam name="TExclusiveStartKey">The type of the exclusive start ID.</typeparam>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1.SortOrder">
+            <summary>
+            Gets the sort order.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1.PagingDirection">
+            <summary>
+            Gets the paging direction.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1.Count">
+            <summary>
+            Page size.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1.TryGetExclusiveStartKey(`0@)">
+            <summary>
+            Tries to get exclusive start key.
+            </summary>
+            <param name="exclusiveStartKey">The exclusive start key value.</param>
+            <returns>True if an exclusive start key was specified, otherwise false.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2">
+            <summary>
+            A model to hold information about paged results that can be returned by platform.
+            </summary>
+            <typeparam name="TExclusiveStartKey">The type of the exclusive start key.</typeparam>
+            <typeparam name="TPagedItem">The type of the paged items.</typeparam>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2.Count">
+            <inheritdoc cref="P:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.Count"/>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2.Items">
+            <inheritdoc cref="P:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.Items"/>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2.SortOrder">
+            <inheritdoc cref="P:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.SortOrder"/>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2.#ctor(`1[],Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{`0},System.Func{`1,`0},System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2"/> model.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2.#ctor(`1[],Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{`0},Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyContainer{`0},Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyContainer{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2"/> model.
+            Use it only if you know what you are doing. Created for inclusive start/prev ES paging workaround.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2.#ctor(Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyContainer{`0},Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyContainer{`0})">
+            <summary>
+            Initializes a new PlatformPageResponse with specific start keys.
+            This constructor is not meant to be public, and should only be used for converting internally.
+            </summary>
+            <param name="nextPageExclusiveStartKeyContainer">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyContainer`1"/> for the next page start key.</param>
+            <param name="previousPageExclusiveStartKeyContainer">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.ExclusiveStartKeyContainer`1"/> for the previous page start key.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2.TryGetPreviousPageExclusiveStartKey(`0@)">
+            <inheritdoc cref="M:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.TryGetPreviousPageExclusiveStartKey(`0@)"/>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.PlatformPageResponse`2.TryGetNextPageExclusiveStartKey(`0@)">
+            <inheritdoc cref="M:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.TryGetNextPageExclusiveStartKey(`0@)"/>
+        </member>
+        <member name="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2">
+            <summary>
+            A model to hold information about paged results that can be returned by platform.
+            </summary>
+            <typeparam name="TExclusiveStartKey">The type of the exclusive start key.</typeparam>
+            <typeparam name="TPagedItem">The type of the paged items.</typeparam>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.Count">
+            <summary>
+            The max expected results.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.Items">
+            <summary>
+            The array of <typeparamref name="TPagedItem"/> results.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.SortOrder">
+            <summary>
+            The <see cref="P:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.SortOrder"/> of the <see cref="P:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.Items"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.TryGetPreviousPageExclusiveStartKey(`0@)">
+            <summary>
+            Tries to get previous page exclusive start key.
+            </summary>
+            <param name="previousPageExclusiveStartKey">The previous page exclusive start key <typeparamref name="TExclusiveStartKey"/>.</param>
+            <returns>True if ExclusiveStartKey specified, otherwise false</returns>
+        </member>
+        <member name="M:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2.TryGetNextPageExclusiveStartKey(`0@)">
+            <summary>
+            Tries to get previous page exclusive start key.
+            </summary>
+            <param name="nextPageExclusiveStartKey">The next page exclusive start key <typeparamref name="TExclusiveStartKey"/>.</param>
+            <returns>True if ExclusiveStartKey specified, otherwise false</returns>
+        </member>
+        <member name="M:Roblox.Platform.Core.Extensions.AssignOrThrowIfNull``1(``0,System.String)">
+            <summary>
+            Extension method used for assignment.It takes care of null argument and
+            throws <see cref="T:Roblox.Platform.Core.PlatformArgumentNullException"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="argument">The argument.</param>
+            <param name="argumentName">Name of the argument.</param>
+            <returns>T</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"> <paramref name="argument"/>
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="argumentName"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Core.FeatureDisabledException">
+            <summary>
+            The exception thrown when a disabled feature is used.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.FeatureDisabledException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.FeatureDisabledException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.FeatureDisabledException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.FeatureDisabledException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.FeatureDisabledException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.FeatureDisabledException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:Roblox.Platform.Core.DomainObjectBase`1">
+            <summary>
+            Represents an object that is part of a domain.
+            </summary>
+            <typeparam name="TDomainFactories">The type of the container containing all factories in the domain.</typeparam>
+            <seealso cref="T:Roblox.Platform.Core.IDomainObject`1" />
+        </member>
+        <member name="M:Roblox.Platform.Core.DomainObjectBase`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.DomainObjectBase`1"/> class.
+            </summary>
+            <param name="domainFactories">The domain factories.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="domainFactories"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Core.DomainObjectBase`2">
+            <summary>
+            Represents an identifiable object that is part of a domain.
+            </summary>
+            <typeparam name="TDomainFactories">The type of the container containing all factories in the domain.</typeparam>
+            <typeparam name="TId">The type of the identifier that uniquely identifies the object.</typeparam>
+            <seealso cref="T:Roblox.Platform.Core.IDomainObject`1" />
+        </member>
+        <member name="M:Roblox.Platform.Core.DomainObjectBase`2.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.DomainObjectBase`2"/> class.
+            </summary>
+            <param name="domainFactories">The domain factories.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="domainFactories"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Core.EventOccurrence`1">
+            <summary>
+            Represents an occurrence of an event.
+            </summary>
+            <typeparam name="TEvent">The type of the event.</typeparam>
+        </member>
+        <member name="M:Roblox.Platform.Core.EventOccurrence`1.#ctor(`0,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.EventOccurrence`1"/> class.
+            </summary>
+            <param name="e">The <see cref="T:Roblox.Platform.Core.IEvent"/>.</param>
+            <param name="timeOfOccurrence">The time of occurrence.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">e</exception>
+        </member>
+        <member name="T:Roblox.Platform.Core.Result`1">
+            <inheritdoc cref="T:Roblox.Platform.Core.IResult`1"/>
+        </member>
+        <member name="P:Roblox.Platform.Core.Result`1.Response">
+            <inheritdoc cref="P:Roblox.Platform.Core.IResult`1.Response"/>
+        </member>
+        <member name="M:Roblox.Platform.Core.Result`1.#ctor(`0)">
+            <remark>
+            Having the constructor be public is better than having each assembly have to create their own base Result class
+            </remark>
+            <param name="response">Enum response value. Cannot be null.</param>
+        </member>
+        <member name="T:Roblox.Platform.Core.SubjectObjectEvent`2">
+            <summary>
+            Represents an <see cref="T:Roblox.Platform.Core.IEvent"/> that has a subject and an object.
+            </summary>
+            <typeparam name="TSubject">The type of the subject.</typeparam>
+            <typeparam name="TObject">The type of the object.</typeparam>
+        </member>
+        <member name="M:Roblox.Platform.Core.SubjectObjectEvent`2.#ctor(`0,`1)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.SubjectObjectEvent`2"/> class.
+            </summary>
+            <param name="subject">The subject.</param>
+            <param name="o">The object.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            subject
+            or
+            o
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Core.IDomainFactory`1">
+            <summary>
+            Provides a common interface for a factory object that is part of a domain.
+            </summary>
+            <typeparam name="T">The type of the container containing all factories in the domain.</typeparam>
+        </member>
+        <member name="T:Roblox.Platform.Core.IDomainObject`1">
+            <summary>
+            Provides a common interface for an object that is part of a domain.
+            </summary>
+            <typeparam name="TDomainFactories">The type of the container containing all factories in the domain.</typeparam>
+        </member>
+        <member name="P:Roblox.Platform.Core.IDomainObject`1.DomainFactories">
+            <summary>
+            Gets the container containing all factories in the object's domain.
+            </summary>
+            <value>
+            The domain factories.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.Core.IDomainObject`2">
+            <summary>
+            Provides a common interface for a uniquely identifiable object that is part of a domain.
+            </summary>
+            <typeparam name="TDomainFactories">The type of the container containing all factories in the domain.</typeparam>
+            <typeparam name="TId">The type of the identifier that uniquely identifies the object.</typeparam>
+        </member>
+        <member name="T:Roblox.Platform.Core.IDomainObjectIdentifier`1">
+            <summary>
+            Provides a common interface for an object that uniquely identifies an object in a domain.
+            </summary>
+            <typeparam name="TId">The type of the ID.</typeparam>
+        </member>
+        <member name="P:Roblox.Platform.Core.IDomainObjectIdentifier`1.Id">
+            <summary>
+            Gets the ID.
+            </summary>
+            <value>
+            The ID.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.Core.IEvent">
+            <summary>
+            Provides a common interface for an any event.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Core.IEventOccurrence`1">
+            <summary>
+            Provides a common interface for an occurence of an event.
+            </summary>
+            <typeparam name="TEvent">The type of the event that occurred.</typeparam>
+        </member>
+        <member name="P:Roblox.Platform.Core.IEventOccurrence`1.Event">
+            <summary>
+            Gets the event.
+            </summary>
+            <value>
+            The event.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Core.IEventOccurrence`1.TimeOfOccurrence">
+            <summary>
+            Gets the time of the occurrence.
+            </summary>
+            <value>
+            The time of occurrence.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.Core.IResult`1">
+            <summary>
+            Platform code handles a lot of validation logic, and we need a way to return validation errors to the consumer.
+            This class is the core of what every response object should contain.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Core.IResult`1.Response">
+            <summary>
+            The response code for the request. Intended to be an enum value indicating either success or a failure reason.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Core.ISubjectObjectEvent`2">
+            <summary>
+            Provides a common interface for an event that has a subject (what performed the action) and an object (what received the action).
+            </summary>
+            <typeparam name="TSubject">The type of the subject.</typeparam>
+            <typeparam name="TObject">The type of the object.</typeparam>
+        </member>
+        <member name="P:Roblox.Platform.Core.ISubjectObjectEvent`2.Subject">
+            <summary>
+            Gets the subject.
+            </summary>
+            <value>
+            The subject.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Core.ISubjectObjectEvent`2.Object">
+            <summary>
+            Gets the object.
+            </summary>
+            <value>
+            The object.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.Core.PagingDirection">
+            <summary>
+            Used for enumerative paging to decide direction
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Core.PlatformFloodedException">
+            <summary>
+            Exception thrown when a platform request gets throttled, but may be available later.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Core.PlatformFormatException">
+            <summary>
+            The exception that is thrown when the format of an argument is invalid, or when a composite format string is not well formed.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.PlatformException" />
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformFormatException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformFormatException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformFormatException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformFormatException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformFormatException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformFormatException"/> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception. If the <paramref name="innerException"/> parameter is not a null reference (Nothing in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidAccountStatusException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidAccountStatusException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidAccountStatusException.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidAccountStatusException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="userFacingMessage">The message to be shown to the user.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidAccountStatusException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidAccountStatusException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:Roblox.Platform.Core.PlatformInvalidCastException">
+            <summary>
+            The exception that is thrown for invalid casting or explicit conversion.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidCastException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidCastException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidCastException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidCastException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidCastException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidCastException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            <summary>
+            Exception thrown when a method argument is null.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformArgumentNullException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformArgumentNullException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformArgumentNullException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformArgumentNullException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformArgumentNullException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformArgumentNullException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidEmailAddressException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidEmailAddressException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidEmailAddressException.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidEmailAddressException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="userFacingMessage">The message to be shown to the user.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformInvalidEmailAddressException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformInvalidEmailAddressException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:Roblox.Platform.Core.PlatformOperationUnavailableException">
+            <summary>
+            Exception thrown when a platform operation is not currently available at no fault of the caller, but may be available later.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Core.PlatformArgumentException">
+            <summary>
+            Exception thrown when a method argument is invalid.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformArgumentException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformArgumentException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformArgumentException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformArgumentException"/> class with the given error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.PlatformArgumentException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.PlatformArgumentException"/> class with
+            the given error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="T:Roblox.Platform.Core.ValidationException">
+            <summary>
+            Exception thrown when a validation operation fails.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.ValidationException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.ValidationException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Core.ValidationException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.ValidationException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Roblox.Platform.Core.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Core.ValidationException"/> class with a 
+            specified error message and a reference to the inner exception that is the cause 
+            of this exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+    </members>
+</doc>

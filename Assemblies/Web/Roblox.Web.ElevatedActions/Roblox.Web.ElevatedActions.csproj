@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Web.ElevatedActions</AssemblyName>
@@ -10,7 +10,10 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.8.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.Membership">
       <HintPath>..\..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
@@ -18,11 +21,12 @@
     <Reference Include="Roblox.Platform.Demographics">
       <HintPath>..\..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Sms.Client" />
+    <ProjectReference Include="..\..\Roblox.Sms.Client\Roblox.Sms.Client.csproj" />
     <Reference Include="Roblox.Platform.Email.Delivery">
       <HintPath>..\..\..\Website\bin\Roblox.Platform.Email.Delivery.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>

@@ -269,3 +269,4 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Billing\bi
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Billing\obj\Debug\net472\Roblox.B.65C7A08A.Up2Date
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Billing\obj\Debug\net472\Roblox.Billing.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Billing\obj\Debug\net472\Roblox.Billing.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Billing\bin\Debug\net472\Roblox.DataV2.Core.pdb

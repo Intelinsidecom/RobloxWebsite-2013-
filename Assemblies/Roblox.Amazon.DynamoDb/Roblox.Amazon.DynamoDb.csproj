@@ -6,8 +6,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <NoWarn>NU1605</NoWarn>
+    <NoWarn>NU1605;CS0618</NoWarn>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="AWSSDK.DAX">
       <HintPath>..\..\Website\bin\AWSSDK.DAX.dll</HintPath>
@@ -17,9 +20,6 @@
     </Reference>
     <Reference Include="AWSSDK.DynamoDBv2">
       <HintPath>..\..\Website\bin\AWSSDK.DynamoDBv2.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Amazon.Core">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Core.dll</HintPath>
@@ -34,7 +34,5 @@
       <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.Configuration" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

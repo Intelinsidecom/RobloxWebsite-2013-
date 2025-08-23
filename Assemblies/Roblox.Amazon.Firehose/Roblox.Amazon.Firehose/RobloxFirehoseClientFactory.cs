@@ -67,8 +67,8 @@ public sealed class RobloxFirehoseClientFactory : IRobloxFirehoseClientFactory
 		config.CircuitBreakerPolicyConfig.RetryInterval = defaultSettings.CircuitBreakerRetryInterval;
 		config.CircuitBreakerPolicyConfig.FailuresAllowedBeforeTrip = defaultSettings.FailuresAllowedBeforeCircuitBreakerTrip;
 		config.IsAsyncRequestTimeoutEnabled = defaultSettings.IsAsyncRequestTimeoutEnabled;
-		((ClientConfig)config).ReadWriteTimeout = defaultSettings.ReadWriteTimeout;
-		((ClientConfig)config).Timeout = defaultSettings.RequestTimeout;
+        // ReadWriteTimeout is obsolete for async HTTP requests; rely on Timeout and cancellation tokens instead.
+        ((ClientConfig)config).Timeout = defaultSettings.RequestTimeout;
 		return Create(credentials, config);
 	}
 

@@ -6,6 +6,9 @@ using Roblox.Instrumentation;
 
 namespace Roblox.Thumbnails.Client
 {
+    // Matches usage in Roblox.Web.Thumbnails
+    public delegate void OnThumbnailHashRequestedEvent(int width, int height, string thumbnailTypeName, string formatType);
+
     public enum SubstitutionType
     {
         None = 0,
@@ -42,6 +45,9 @@ namespace Roblox.Thumbnails.Client
         private readonly ILogger _logger;
         private readonly ICounterRegistry _counters;
         private readonly Func<string> _getApiKey;
+
+        // Event used by ThumbnailHashEventStreamRegistrar
+        public event OnThumbnailHashRequestedEvent OnThumbnailHashRequested;
 
         public ThumbnailsClient(ILogger logger, ICounterRegistry counters, Func<string> getApiKey)
         {

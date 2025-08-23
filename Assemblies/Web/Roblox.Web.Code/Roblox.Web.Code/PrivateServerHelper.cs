@@ -70,7 +70,7 @@ public class PrivateServerHelper
 				throw new PurchasePrivateServerAccountRestrictionsException();
 			}
 		}
-		string filteredPrivateServerName = _TextFilterClientV2.FilterText(privateServerName, user.ToClientTextAuthor(), "PrivateServer", "", false).FilteredText;
+		string filteredPrivateServerName = _TextFilterClientV2.FilterText(privateServerName, user.ToClientTextAuthor(), TextFilterUsage.PrivateServer, "", false).FilteredText;
 		TransactionStatus transactionStatus;
 		return _PrivateServerFactory.PurchasePrivateServer(universe.Id, user.Id, filteredPrivateServerName, expectedPrice, _ClientDeviceIdentifier.GetPlatformTypeIdByUserAgent(userAgent), _PrivateServerPermissionsFactory, out transactionStatus) ?? throw new PurchasePrivateServerTransactionfailedException(transactionStatus);
 	}

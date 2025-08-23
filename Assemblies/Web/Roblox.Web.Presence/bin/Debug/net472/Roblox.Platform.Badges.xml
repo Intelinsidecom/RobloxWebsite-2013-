@@ -1,0 +1,1399 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Badges</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Badges.BadgesDomainFactories">
+            <summary>
+            Contains factories of Badges Domain
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.DomainFactoriesBase" />
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesDomainFactories.BadgesAwardsAuthority">
+            <summary>
+            Gets the badges factory.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesDomainFactories.BadgeIdentifierFactory">
+            <summary>
+            Gets the badge identifier factory.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesDomainFactories.BadgeAwardAssetsReader">
+            <summary>
+            The <see cref="T:Roblox.Platform.Badges.IBadgeAwardAssetsReader"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesDomainFactories.ExclusiveStartKeyFactory">
+            <summary>
+            Gets the exclusive start key factory.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesDomainFactories.BadgePermissionsVerifier">
+            <summary>
+            The <see cref="T:Roblox.Platform.Badges.IBadgePermissionsVerifier"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesDomainFactories.Settings">
+            <summary>
+            The badge <see cref="T:Roblox.Platform.Badges.Properties.ISettings"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgesDomainFactories.#ctor(Roblox.Badges.Client.IBadgesClient,Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Groups.IGroupMembershipFactory,Roblox.Platform.Assets.IPlaceFactory,Roblox.Platform.AssetPermissions.IAssetPermissionsVerifier,Roblox.Platform.Universes.IUniverseFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Badges.BadgesDomainFactories" /> class.
+            </summary>
+            <param name="badgesClient">The badges client <see cref="T:Roblox.Badges.Client.IBadgesClient" />.</param>
+            <param name="universePermissionsVerifier">An <see cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier"/>.</param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/>.</param>
+            <param name="groupMembershipFactory">An <see cref="T:Roblox.Platform.Groups.IGroupMembershipFactory"/>.</param>
+            <param name="placeFactory">An <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/></param>
+            <param name="assetPermissionsVerifier">An <see cref="T:Roblox.Platform.AssetPermissions.IAssetPermissionsVerifier"/></param>
+            <param name="universeFactory">An <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.Exceptions.PlatformBadgeTextFullyModeratedException">
+            <summary>
+            A platform exception thrown if the badge Name or Description is fully moderated. It is intended to be thrown to stop badge creation.
+            The caller should handle this exception gracefully.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.PlatformException" />
+        </member>
+        <member name="M:Roblox.Platform.Badges.Exceptions.PlatformBadgeTextFullyModeratedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Badges.Exceptions.PlatformBadgeTextFullyModeratedException"/> class.
+            </summary>
+            <param name="message">The message that carries additional details on the exeception for the callers.</param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.UnauthorizedBadgeCreationException">
+            <summary>
+            An exception thrown when an <see cref="T:Roblox.Platform.Membership.IUser"/> doesn't have permission
+            to create a badge for an <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.UnauthorizedBadgeCreationException.User">
+            <summary>
+            The <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.UnauthorizedBadgeCreationException.Universe">
+            <summary>
+            The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.UnauthorizedBadgeCreationException.#ctor(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.UnauthorizedBadgeCreationException"/>.
+            </summary>
+            <param name="user">The <see cref="P:Roblox.Platform.Badges.UnauthorizedBadgeCreationException.User"/>.</param>
+            <param name="universe">The <see cref="P:Roblox.Platform.Badges.UnauthorizedBadgeCreationException.Universe"/>.</param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.UnauthorizedBadgeIconUsageException">
+            <summary>
+            An exception thrown when an <see cref="T:Roblox.Platform.Membership.IUser"/> does not have permission to use
+            an <see cref="T:Roblox.Platform.Assets.IImage"/> as a badge icon.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.UnauthorizedBadgeIconUsageException.User">
+            <summary>
+            The <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.UnauthorizedBadgeIconUsageException.BadgeIcon">
+            <summary>
+            The badge icon <see cref="T:Roblox.Platform.Assets.IImage"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.UnauthorizedBadgeIconUsageException.#ctor(Roblox.Platform.Membership.IUser,Roblox.Platform.Assets.IImage)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.UnauthorizedBadgeIconUsageException"/>.
+            </summary>
+            <param name="user">The <see cref="P:Roblox.Platform.Badges.UnauthorizedBadgeIconUsageException.User"/>.</param>
+            <param name="badgeIcon">The <see cref="P:Roblox.Platform.Badges.UnauthorizedBadgeIconUsageException.BadgeIcon"/>.</param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeAwardAsset">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeAwardAsset"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeAwardAsset.Badge">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeAwardAsset.Badge"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeAwardAsset.Asset">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeAwardAsset.Asset"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeAwardAsset.Description">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeAwardAsset.Description"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeAwardAsset.Created">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeAwardAsset.Created"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeAwardAsset.Updated">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeAwardAsset.Updated"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeAwardAssetsReader">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeAwardAssetsReader"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeAwardAssetsReader.#ctor(Roblox.Platform.Badges.IBadgeIdentifierFactory)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.BadgeAwardAssetsReader"/>.
+            </summary>
+            <param name="badgeIdentifierFactory">An <see cref="T:Roblox.Platform.Badges.IBadgeIdentifierFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badgeIdentifierFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeAwardAssetsReader.GetBadgeAwardAssetsByBadge(Roblox.Platform.Badges.IBadgeIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeAwardAssetsReader.GetBadgeAwardAssetsByBadge(Roblox.Platform.Badges.IBadgeIdentifier)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeAwardAssetsReader.GetBadgeAwardAssets(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int32})">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeAwardAssetsReader.GetBadgeAwardAssets(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int32})"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeAwardAssetsReader.GetTotalNumberOfBadgeAwardAssets">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeAwardAssetsReader.GetTotalNumberOfBadgeAwardAssets"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeAwardAssetWriter">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeAwardAssetWriter"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeAwardAssetWriter.#ctor(Roblox.Platform.Badges.IBadgeAwardAssetsReader)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.IBadgeAwardAssetWriter"/>.
+            </summary>
+            <param name="badgeAwardAssetsReader">An <see cref="T:Roblox.Platform.Badges.IBadgeAwardAssetsReader"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badgeAwardAssetsReader"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeAwardAssetWriter.CreateBadgeAward(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.AssetsCore.IAssetIdentifier,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeAwardAssetWriter.CreateBadgeAward(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.AssetsCore.IAssetIdentifier,System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeAwardAssetWriter.DeleteBadgeAward(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.AssetsCore.IAssetIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeAwardAssetWriter.DeleteBadgeAward(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.AssetsCore.IAssetIdentifier)"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeIconFactory">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeIconFactory"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeIconFactory.#ctor(Roblox.Platform.Badges.Properties.ISettings,Roblox.Platform.Assets.IAssetFactoryBase{Roblox.Platform.Assets.IImage},Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority,Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.BadgeIconFactory"/>
+            </summary>
+            <param name="settings">The badge <see cref="T:Roblox.Platform.Badges.Properties.ISettings"/>.</param>
+            <param name="imageFactory">The <see cref="T:Roblox.Platform.Assets.IAssetFactoryBase`1"/> for <see cref="T:Roblox.Platform.Assets.IImage"/>s.</param>
+            <param name="uploadFloodcheckerFactory">An <see cref="T:Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeIconFactory.CreateBadgeIcon(Roblox.Platform.Membership.IUser,System.String,System.IO.Stream,System.Net.DecompressionMethods)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeIconFactory.CreateBadgeIcon(Roblox.Platform.Membership.IUser,System.String,System.IO.Stream,System.Net.DecompressionMethods)"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeOwner">
+            <summary>
+            The owner of a <see cref="T:Roblox.Platform.Badges.Badge"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeOwner.Id">
+            <summary>
+            The target Id of the owner.
+            </summary>
+            <remarks>
+            An <see cref="T:Roblox.Platform.Membership.IUser"/> Id if the <see cref="P:Roblox.Platform.Badges.BadgeOwner.Type"/> is <see cref="F:Roblox.Platform.Badges.BadgeOwnerType.User"/>,
+            or an <see cref="T:Roblox.Platform.Groups.IGroup"/> Id if the <see cref="P:Roblox.Platform.Badges.BadgeOwner.Type"/> is <see cref="F:Roblox.Platform.Badges.BadgeOwnerType.Group"/>.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeOwner.Type">
+            <summary>
+            The <see cref="T:Roblox.Platform.Badges.BadgeOwnerType"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeOwnerProvider">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeOwnerProvider"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeOwnerProvider.#ctor(Roblox.Platform.Assets.IPlaceFactory)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.BadgeOwnerProvider"/>.
+            </summary>
+            <param name="placeFactory">An <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="placeFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeOwnerProvider.GetBadgeOwner(Roblox.Platform.Badges.Badge)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeOwnerProvider.GetBadgeOwner(Roblox.Platform.Badges.Badge)"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeOwnerType">
+            <summary>
+            Types of badge owners.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeOwnerType.User">
+            <summary>
+            An <see cref="T:Roblox.Platform.Membership.IUser"/> owner.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeOwnerType.Group">
+            <summary>
+            An <see cref="T:Roblox.Platform.Groups.IGroup"/> owner.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgesAwardsAuthority">
+            <summary>
+            Implementation of IBadgesAwardsAuthority which is using Badges service as a datasource <see cref="T:Roblox.Badges.Client.IBadgesClient"/>
+            </summary>
+            <seealso cref="T:Roblox.Platform.Badges.IBadgesAwardsAuthority" />
+        </member>
+        <member name="E:Roblox.Platform.Badges.BadgesAwardsAuthority.BadgeAwarded">
+            <inheritdoc cref="E:Roblox.Platform.Badges.IBadgesAwardsAuthority.BadgeAwarded"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesAwardsAuthority.AllowedPageSizes">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgesAwardsAuthority.AllowedPageSizes"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesAwardsAuthority.MaxPageSize">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgesAwardsAuthority.MaxPageSize"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgesAwardsAuthority.MinPageSize">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgesAwardsAuthority.MinPageSize"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgesAwardsAuthority.#ctor(Roblox.Badges.Client.IBadgesClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Badges.BadgesAwardsAuthority" /> class.
+            </summary>
+            <param name="badgesClient">The badges client <see cref="T:Roblox.Badges.Client.IBadgesClient"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="badgesClient"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgesAwardsAuthority.#ctor(Roblox.Platform.Badges.IRecipientFactory,Roblox.Badges.Client.IBadgesClient)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Badges.BadgesAwardsAuthority" /> class.
+            </summary>
+            <param name="badgesClient">The badges client <see cref="T:Roblox.Badges.Client.IBadgesClient"/>.</param>
+            <param name="recipientFactory">The see <see cref="T:Roblox.Platform.Badges.IRecipientFactory"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="recipientFactory"/>, <paramref name="badgesClient"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgesAwardsAuthority.Award(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.Award(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgesAwardsAuthority.IsAwarded(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.IsAwarded(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgesAwardsAuthority.GetBadgeAwardedDate(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.GetBadgeAwardedDate(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgesAwardsAuthority.Revoke(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.Revoke(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgesAwardsAuthority.GetAwardedBadgesIdentifiersByRecipient(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{Roblox.Platform.Badges.IAwardedBadgeIdentifier})">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.GetAwardedBadgesIdentifiersByRecipient(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{Roblox.Platform.Badges.IAwardedBadgeIdentifier})"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.AwardedBadgeIdentifier">
+            <summary>
+            Implementation of IAwardedBadgeIdentifier
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.AwardedBadgeIdentifier.Id">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeIdentifier.Id"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.AwardedBadgeIdentifier.AwardDateTime">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IAwardedBadgeIdentifier.AwardDateTime"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.AwardedBadgeIdentifier.#ctor(System.Int64,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Badges.AwardedBadgeIdentifier"/> class.
+            </summary>
+            <param name="id">The Badge Id.</param>
+            <param name="awardDateTime">The Badge award date time.</param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.Badge">
+            <summary>
+            Badge information
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Badge.Id">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeIdentifier.Id"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Badge.Name">
+            <summary>
+            The badge name
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Badge.Description">
+            <summary>
+            The badge description
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Badge.Awarder">
+            <summary>
+            The badge awarder
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Badge.ImageId">
+            <summary>
+            The badge Image Asset Id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Badge.IsEnabled">
+            <summary>
+            The badge icon
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Badge.Created">
+            <summary>
+            When the badge was created
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Badge.Updated">
+            <summary>
+            When the badge was updated last time
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeAwarder">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeAwarder"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeAwarder.Id">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeAwarder.Id"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeAwarder.Type">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeAwarder.Type"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeAwarderProvider">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeAwarderProvider"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeAwarderProvider.GetBadgeAwarderFromPlace(Roblox.Platform.AssetsCore.IAssetIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeAwarderProvider.GetBadgeAwarderFromPlace(Roblox.Platform.AssetsCore.IAssetIdentifier)"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeCounter">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeCounter"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCounter.#ctor(Roblox.Platform.Counters.IDurableCounterFactory,Roblox.EventLog.ILogger,Roblox.Platform.Badges.Properties.ISettings)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.BadgeCounter"/>.
+            </summary>
+            <param name="durableCounterFactory">An <see cref="T:Roblox.Platform.Counters.IDurableCounterFactory"/>.</param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="settings">The <see cref="T:Roblox.Platform.Badges.Properties.ISettings"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="durableCounterFactory"/>, <paramref name="logger"/>, <paramref name="settings"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCounter.IncrementBadgeAwardCounter(Roblox.Platform.Badges.IBadgeIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeCounter.IncrementBadgeAwardCounter(Roblox.Platform.Badges.IBadgeIdentifier)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCounter.GetBadgeAwardCount(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.Counters.Frequency)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeCounter.GetBadgeAwardCount(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.Counters.Frequency)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCounter.GetBadgeWinRatePercentage(Roblox.Platform.Badges.IBadgeIdentifier,System.Int64)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeCounter.GetBadgeWinRatePercentage(Roblox.Platform.Badges.IBadgeIdentifier,System.Int64)"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeCreator">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgeCreator"/>
+        </member>
+        <member name="E:Roblox.Platform.Badges.BadgeCreator.BadgeCreated">
+            <inheritdoc />
+        </member>
+        <member name="E:Roblox.Platform.Badges.BadgeCreator.BadgeCreationFailed">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCreator.#ctor(Roblox.Platform.Badges.Properties.ISettings,Roblox.Badges.Client.IBadgesClient,Roblox.Platform.Badges.IBadgeTextFilter,Roblox.Platform.Badges.IBadgePermissionsVerifier,Roblox.Platform.AssetPermissions.IAssetPermissionsVerifier,Roblox.Platform.Badges.IBadgesAwardsAuthority,Roblox.Marketplace.Client.IMarketplaceAuthority,Roblox.Currency.Client.ICurrencyAuthority,Roblox.Platform.Assets.IPlaceFactory,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Groups.Counters.IGroupCounter,Roblox.Agents.IAgentFactory,Roblox.EventLog.ILogger,Roblox.TransactionEvents.ITransactionStreamer)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.BadgeCreator"/>.
+            </summary>
+            <param name="settings">The <see cref="T:Roblox.Platform.Badges.Properties.ISettings"/>.</param>
+            <param name="badgesClient">An <see cref="T:Roblox.Badges.Client.IBadgesClient"/></param>
+            <param name="badgeTextFilter">An <see cref="T:Roblox.Platform.Badges.IBadgeTextFilter"/>.</param>
+            <param name="badgePermissionsVerifier">The <see cref="T:Roblox.Platform.Badges.IBadgePermissionsVerifier"/>.</param>
+            <param name="assetPermissionsVerifier">An <see cref="T:Roblox.Platform.AssetPermissions.IAssetPermissionsVerifier"/>.</param>
+            <param name="badgeAwardsAuthority">The <see cref="T:Roblox.Platform.Badges.IBadgesAwardsAuthority"/>.</param>
+            <param name="marketplaceClient">An <see cref="T:Roblox.Marketplace.Client.IMarketplaceAuthority"/>.</param>
+            <param name="currencyClient">An <see cref="T:Roblox.Currency.Client.ICurrencyAuthority"/>.</param>
+            <param name="placeFactory">An <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/>.</param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/>.</param>
+            <param name="groupCounter">An <see cref="T:Roblox.Platform.Groups.Counters.IGroupCounter"/>.</param>
+            <param name="agentFactory">An <see cref="T:Roblox.Agents.IAgentFactory"/>.</param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="settings"/>
+            - <paramref name="badgePermissionsVerifier"/>
+            - <paramref name="badgeAwardsAuthority"/>
+            - <paramref name="marketplaceClient"/>
+            - <paramref name="currencyClient"/>
+            - <paramref name="placeFactory"/>
+            - <paramref name="groupFactory"/>
+            - <paramref name="groupCounter"/>
+            - <paramref name="agentFactory"/>
+            - <paramref name="badgeTextFilter"/>
+            - <paramref name="badgesClient"/>
+            - <paramref name="logger"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCreator.CreateBadge(Roblox.Platform.Membership.IUser,System.String,System.String,Roblox.Platform.Universes.IUniverse,Roblox.Platform.Assets.IImage,Roblox.Platform.Devices.IPlatform)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeCreator.CreateBadge(Roblox.Platform.Membership.IUser,System.String,System.String,Roblox.Platform.Universes.IUniverse,Roblox.Platform.Assets.IImage,Roblox.Platform.Devices.IPlatform)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCreator.CreateBadgeInstance(Roblox.Platform.Assets.IPlace,Roblox.Platform.Badges.BadgeTextFilterResult,System.Int64)">
+            <summary>
+            Creates the actual badge instance.
+            </summary>
+            <param name="rootPlace">The <see cref="T:Roblox.Platform.Assets.IPlace"/> the badge is attached to.</param>
+            <param name="filteredText">Text for the badge.</param>
+            <param name="badgeImageId">The badge image identifier.</param>
+            <returns><see cref="T:Roblox.Platform.Badges.Badge"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCreator.FilterText(Roblox.Platform.Membership.IUser,System.String,System.String)">
+            <summary>
+            FilterText filters name and description and returns moderated text.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCreator.PurchaseBadge(Roblox.Platform.Assets.IPlace,Roblox.Platform.Devices.IPlatform,Roblox.Agents.IAgent@,System.Nullable{System.Int64}@)">
+            <summary>
+            Makes the badge product purchase for the creator of an <see cref="T:Roblox.Platform.Assets.IPlace"/>
+            </summary>
+            <remarks>
+            Separated from <see cref="M:Roblox.Platform.Badges.BadgeCreator.CreateBadge(Roblox.Platform.Membership.IUser,System.String,System.String,Roblox.Platform.Universes.IUniverse,Roblox.Platform.Assets.IImage,Roblox.Platform.Devices.IPlatform)"/> for ease of testing.
+            </remarks>
+            <param name="place">The <see cref="T:Roblox.Platform.Assets.IPlace"/>.</param>
+            <param name="platform">The platform the badge is being purchased on.</param>
+            <param name="purchaserAgent">The <see cref="T:Roblox.Agents.IAgent"/> that made the purchase.</param>
+            <param name="saleId">The sale id for the purchase result</param>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCreator.RefundBadgePurchase(Roblox.Agents.IAgent,System.Nullable{System.Int64})">
+            <summary>
+            Refunds the purchase of a badge product
+            </summary>
+            <remarks>
+            Separated from <see cref="M:Roblox.Platform.Badges.BadgeCreator.CreateBadge(Roblox.Platform.Membership.IUser,System.String,System.String,Roblox.Platform.Universes.IUniverse,Roblox.Platform.Assets.IImage,Roblox.Platform.Devices.IPlatform)"/> so refund logic can be tested separately.
+            </remarks>
+            <param name="purchaserAgent">The <see cref="T:Roblox.Agents.IAgent"/> that purchased the badge.</param>
+            <param name="saleId">The sale id for creating the badge.</param>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeCreator.AwardBadge(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <summary>
+            Awards an <see cref="T:Roblox.Platform.Badges.Badge"/> to an <see cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+            <remarks>
+            Separated from <see cref="M:Roblox.Platform.Badges.BadgeCreator.CreateBadge(Roblox.Platform.Membership.IUser,System.String,System.String,Roblox.Platform.Universes.IUniverse,Roblox.Platform.Assets.IImage,Roblox.Platform.Devices.IPlatform)"/> for log testing
+            </remarks>
+            <param name="userIdentifier">The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/>.</param>
+            <param name="badgeIdentifier">The <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/>.</param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeIdentifier">
+            <summary>
+            Implementation of IBadgeIdentifier
+            <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeIdentifier.Id">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeIdentifier.Id"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeIdentifierFactory.Get(System.Int64)">
+            <summary>
+            Returns wrapper which implements <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/>
+            </summary>
+            <param name="id">Badge Id</param>
+            <returns><see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgePermissionsVerifier">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IBadgePermissionsVerifier"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgePermissionsVerifier.#ctor(Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Groups.IGroupMembershipFactory,Roblox.Platform.Assets.IPlaceFactory,Roblox.Platform.AssetPermissions.IAssetPermissionsVerifier,Roblox.Platform.Universes.IUniverseFactory)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.BadgePermissionsVerifier"/>
+            </summary>
+            <param name="universePermissionsVerifier">An <see cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier"/>.</param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/>.</param>
+            <param name="groupMembershipFactory">An <see cref="T:Roblox.Platform.Groups.IGroupMembershipFactory"/>.</param>
+            <param name="placeFactory">An <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/>.</param>
+            <param name="assetPermissionsVerifier">An <see cref="T:Roblox.Platform.AssetPermissions.IAssetPermissionsVerifier"/>.</param>
+            <param name="universeFactory">An <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="universePermissionsVerifier"/>,
+            <paramref name="groupFactory"/>, 
+            <paramref name="groupMembershipFactory"/>
+            <paramref name="placeFactory"/>, 
+            <paramref name="assetPermissionsVerifier"/>,
+            <paramref name="universeFactory"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgePermissionsVerifier.CanUserCreateBadgeForUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgePermissionsVerifier.CanUserCreateBadgeForUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgePermissionsVerifier.CanAwardBadge(Roblox.Platform.Assets.IPlace,Roblox.Platform.Badges.Badge)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgePermissionsVerifier.CanAwardBadge(Roblox.Platform.Assets.IPlace,Roblox.Platform.Badges.Badge)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgePermissionsVerifier.CanUserManageBadge(Roblox.Platform.Membership.IUser,Roblox.Platform.Badges.Badge)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgePermissionsVerifier.CanUserManageBadge(Roblox.Platform.Membership.IUser,Roblox.Platform.Badges.Badge)"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeReader">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeReader.AllowedPageSizes">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IBadgeReader.AllowedPageSizes"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeReader.#ctor(Roblox.Badges.Client.IBadgesClient,Roblox.Platform.Badges.Properties.ISettings)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.BadgeReader"/>
+            </summary>
+            <param name="badgesClient">The <see cref="T:Roblox.Badges.Client.IBadgesClient"/></param>
+            <param name="settings">The badge <see cref="T:Roblox.Platform.Badges.Properties.ISettings"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badgesClient"/>, <paramref name="settings"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeReader.GetBadge(System.Int64)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeReader.GetBadge(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeReader.GetBadges(System.Collections.Generic.ICollection{System.Int64})">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeReader.GetBadges(System.Collections.Generic.ICollection{System.Int64})"/>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="badgeIds"/>, 
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            <paramref name="badgeIds"/> Count is bigger than <see cref="P:Roblox.Platform.Badges.Properties.ISettings.BadgeReaderGetBadgesPerCallLimit"/>, 
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeReader.GetBadgesByAwarder(Roblox.Platform.Badges.IBadgeAwarder,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IBadgeReader.GetBadgesByAwarder(Roblox.Platform.Badges.IBadgeAwarder,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeTextFilter.FilterBadgeText(Roblox.Platform.Badges.BadgeTextFilterRequest)">
+            <summary>
+            Filter the given name and description as if they were part of the same conversation by the same Author.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Platform.Badges.BadgeTextFilterRequest"/> that wraps the request.</param>
+            <returns>a <see cref="T:Roblox.Platform.Badges.BadgeTextFilterResult"/> containing the filtered name and description.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">In the case of bad input data</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeTextFilterRequest">
+            <summary>
+            Badge text filter request.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeTextFilterRequest.Description">
+            <summary>
+            Badge description
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeTextFilterRequest.Name">
+            <summary>
+            Badge name
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeTextFilterRequest.TextAuthor">
+            <summary>
+            Badge Text author
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeTextFilterResult">
+            <summary>
+            The result of filtering text for a Badge.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeTextFilterResult.Name">
+            <summary>
+            Badge name
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.BadgeTextFilterResult.Description">
+            <summary>
+            Badge description
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeUpdater">
+            <inheritdoc />
+        </member>
+        <member name="E:Roblox.Platform.Badges.BadgeUpdater.BadgeUpdated">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeUpdater.#ctor(Roblox.Platform.Badges.Properties.ISettings,Roblox.Badges.Client.IBadgesClient,Roblox.Platform.Badges.IBadgeTextFilter)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Badges.BadgeUpdater"/>
+            </summary>
+            <param name="settings"></param>
+            <param name="badgesClient"></param>
+            <param name="badgeTextFilter"></param>
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeUpdater.SetNameAndDescription(Roblox.Platform.Badges.Badge,Roblox.TextFilter.Client.IClientTextAuthor,System.String,System.String,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeUpdater.SetImage(Roblox.Platform.Badges.Badge,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Badges.BadgeUpdater.SetEnabled(Roblox.Platform.Badges.Badge,System.Boolean)">
+            <summary>
+            Enable/Disable badge.
+            </summary>
+            <param name="badge"><see cref="T:Roblox.Platform.Badges.Badge"/></param>
+            <param name="isEnabled"></param>
+            <exception cref="T:System.ArgumentNullException">
+            badge
+            </exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeCreationFailureReason">
+            <summary>
+            Badge creation failure reason types
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeCreationFailureReason.UnauthorizedBadgeCreation">
+            <summary>
+            User cannot create badge for specified universe
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeCreationFailureReason.UnauthorizedBadgeIconUsage">
+            <summary>
+            User doesn't have permission to manage specified BadgeIcon
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeCreationFailureReason.PurchaseFailed">
+            <summary>
+            User cannot purchase a badge
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeCreationFailureReason.TextFullyModerated">
+            <summary>
+            Badge name and/or description were fully moderated
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeCreationFailureReason.BadgeInstanceCreationFailed">
+            <summary>
+            Error on badge instance creation
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeCreationFailureReason.TextModerationFailed">
+            <summary>
+            Unknown error during badge name and description moderation
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.BadgeUpdateType">
+            <summary>
+            Badge update types
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeUpdateType.SetEnabled">
+            <summary>
+            Updated enabled state
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeUpdateType.SetNameAndDescription">
+            <summary>
+            Updated name or/and description
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Badges.BadgeUpdateType.SetImage">
+            <summary>
+            Updated imaged
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IPlatformBadgeEventGroupActionLogger">
+            <summary>
+            Logs group action related to platform badges events. 
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IPlatformBadgeEventGroupActionLogger.OnBadgeUpdated(Roblox.Platform.Badges.Badge,Roblox.Platform.Badges.BadgeUpdateType)">
+            <summary>
+            Badge updated handler
+            </summary>
+            <param name="badge">Updated badge <see cref="T:Roblox.Platform.Badges.Badge"/></param>
+            <param name="badgeUpdateType">Badge update type <see cref="T:Roblox.Platform.Badges.BadgeUpdateType"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IPlatformBadgeEventGroupActionLogger.OnBadgeCreated(Roblox.Platform.Badges.Badge)">
+            <summary>
+            Badge created handler
+            </summary>
+            <param name="badge">Created badge <see cref="T:Roblox.Platform.Badges.Badge"/></param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.PlatformBadgeEventGroupActionLogger">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IPlatformBadgeEventGroupActionLogger"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.PlatformBadgeEventGroupActionLogger.#ctor(System.Func{Roblox.Platform.Membership.IUser},Roblox.Platform.Assets.IPlaceFactory,Roblox.EventLog.ILogger)">
+            <summary>
+            
+            </summary>
+            <param name="authenticatedUserGetter"></param>
+            <param name="placeFactory"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Roblox.Platform.Badges.PlatformBadgeEventGroupActionLogger.OnBadgeUpdated(Roblox.Platform.Badges.Badge,Roblox.Platform.Badges.BadgeUpdateType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Badges.PlatformBadgeEventGroupActionLogger.OnBadgeCreated(Roblox.Platform.Badges.Badge)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeAwardAsset">
+            <summary>
+            A badge award asset.
+            </summary>
+            <remarks>
+            Badge award assets are assets that get granted to a user
+            when they win a badge.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeAwardAsset.Badge">
+            <summary>
+            The <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/> the asset is being awarded from.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeAwardAsset.Asset">
+            <summary>
+            The asset Id getting awarded.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeAwardAsset.Description">
+            <summary>
+            The badge award asset description.
+            </summary>
+            <remarks>
+            The description is used for the marketing to be able to know
+            what the awards are for.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeAwardAsset.Created">
+            <summary>
+            When the badge award asset was created.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeAwardAsset.Updated">
+            <summary>
+            When the badge award asset was last updated.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeAwardAssetsReader">
+            <summary>
+            A class to get assets granted from <see cref="T:Roblox.Platform.Badges.Badge"/> awards.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeAwardAssetsReader.GetBadgeAwardAssetsByBadge(Roblox.Platform.Badges.IBadgeIdentifier)">
+            <summary>
+            Gets all <see cref="T:Roblox.Platform.Badges.IBadgeAwardAsset"/> that should be granted when a <see cref="T:Roblox.Platform.Badges.Badge"/> is awarded.
+            </summary>
+            <param name="badge">The <see cref="T:Roblox.Platform.Badges.Badge"/>.</param>
+            <returns>The collection of the <see cref="T:Roblox.Platform.Badges.IBadgeAwardAsset"/> Ids.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badge"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeAwardAssetsReader.GetBadgeAwardAssets(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int32})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Badges.IBadgeAwardAsset"/>s.
+            </summary>
+            <param name="exclusiveStartKey">The paging details.</param>
+            <returns>The page of <see cref="T:Roblox.Platform.Badges.IBadgeAwardAsset"/>s.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="exclusiveStartKey"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeAwardAssetsReader.GetTotalNumberOfBadgeAwardAssets">
+            <summary>
+            Returns the total number of badge award assets.
+            </summary>
+            <remarks>
+            Exists to not expose the entity.
+            Ideally we wouldn't expose this count but it's still in use.
+            </remarks>
+            <returns>The total number of badge award assets.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeAwardAssetWriter">
+            <summary>
+            Creates and deletes <see cref="T:Roblox.Platform.Badges.IBadgeAwardAsset"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeAwardAssetWriter.CreateBadgeAward(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.AssetsCore.IAssetIdentifier,System.String)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Badges.IBadgeAwardAsset"/>.
+            </summary>
+            <param name="badge">The <see cref="T:Roblox.Platform.Badges.Badge"/>.</param>
+            <param name="asset">The <see cref="T:Roblox.Platform.Assets.IAsset"/>.</param>
+            <param name="description">The <see cref="P:Roblox.Platform.Badges.IBadgeAwardAsset.Description"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badge"/>, <paramref name="asset"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeAwardAssetWriter.DeleteBadgeAward(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.AssetsCore.IAssetIdentifier)">
+            <summary>
+            Deletes an <see cref="T:Roblox.Platform.Badges.IBadgeAwardAsset"/>.
+            </summary>
+            <param name="badge">The <see cref="T:Roblox.Platform.Badges.Badge"/>.</param>
+            <param name="asset">The <see cref="T:Roblox.Platform.Assets.IAsset"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badge"/>, <paramref name="asset"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeOwnerProvider">
+            <summary>
+            A class to retrieve an <see cref="T:Roblox.Platform.Badges.BadgeOwner"/> from a <see cref="T:Roblox.Platform.Badges.Badge"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeOwnerProvider.GetBadgeOwner(Roblox.Platform.Badges.Badge)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Badges.BadgeOwner"/> from a <see cref="T:Roblox.Platform.Badges.Badge"/>.
+            </summary>
+            <remarks>
+            The owner will match the <see cref="P:Roblox.Platform.Badges.Badge.Awarder"/> owner.
+            Right now there is only a <see cref="T:Roblox.Platform.Badges.BadgeAwarderType"/> of <see cref="F:Roblox.Platform.Badges.BadgeAwarderType.Place"/>
+            so the owner will be the place owner.
+            </remarks>
+            <param name="badge">The <see cref="T:Roblox.Platform.Badges.Badge"/>.</param>
+            <returns>The <see cref="T:Roblox.Platform.Badges.BadgeOwner"/>.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badge"/></exception>
+            <exception cref="T:System.ArgumentException"><paramref name="badge"/> awarder type must be <see cref="F:Roblox.Platform.Badges.BadgeAwarderType.Place"/>.</exception>
+            <exception cref="T:Roblox.Data.DataIntegrityException"><paramref name="badge"/> awarder does not exist.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeTextFilter">
+            <summary>
+            Filter Badge text for the given Author.
+            In particular, we're filtering the name and description as if they were in the same "room".
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeTextFilter.FilterBadgeText(Roblox.Platform.Badges.BadgeTextFilterRequest)">
+            <summary>
+            Filter the given name and description as if they were part of the same conversation by the same Author.
+            </summary>
+            <param name="request">The <see cref="!:IAssetTextFilterRequest"/> that wraps the request.</param>
+            <returns>a <see cref="!:IAssetTextFilterResult"/> containing the filtered name and description.</returns>
+            <exception cref="!:PlatformArgumentNullException">In the case of bad input data</exception>
+            <exception cref="!:PlatformOperationUnavailableException">In the case where the filtering service is simply unavailable.</exception>
+            <exception cref="!:PlatformAssetTextFullyModeratedException">In the case where the text is fully moderated.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeAwarderProvider">
+            <summary>
+            A class that provides <see cref="T:Roblox.Platform.Badges.IBadgeAwarder"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeAwarderProvider.GetBadgeAwarderFromPlace(Roblox.Platform.AssetsCore.IAssetIdentifier)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Badges.IBadgeAwarder"/> for an <see cref="T:Roblox.Platform.Assets.IPlace"/>.
+            </summary>
+            <param name="place">The <see cref="T:Roblox.Platform.Assets.IPlace"/> <see cref="T:Roblox.Platform.AssetsCore.IAssetIdentifier"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Badges.IBadgeAwarder"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeIconFactory">
+            <summary>
+            A factory for creating <see cref="!:IBadge"/> icons
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeIconFactory.CreateBadgeIcon(Roblox.Platform.Membership.IUser,System.String,System.IO.Stream,System.Net.DecompressionMethods)">
+            <summary>
+            Creates an <see cref="T:Roblox.Platform.Assets.IImage"/> shaped for <see cref="!:IBadge"/> icons.
+            </summary>
+            <remarks>
+            The image uploaded from the <see cref="T:System.IO.Stream"/> gets reshaped into a circular format.
+            </remarks>
+            <param name="creator">The <see cref="T:Roblox.Platform.Membership.IUser"/> creating the badge icon.</param>
+            <param name="name">The <see cref="!:IBadge"/> icon <see cref="T:Roblox.Platform.Assets.IImage"/> name.</param>
+            <param name="imageFile">The file <see cref="T:System.IO.Stream"/> with the icon image.</param>
+            <param name="imageFileDecompressionMethods">The <see cref="T:System.Net.DecompressionMethods"/> on the <paramref name="imageFile"/>.</param>
+            <returns>The <see cref="!:IBadge"/> <see cref="T:Roblox.Platform.Assets.IImage"/> icon.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="creator"/>, <paramref name="imageFile"/></exception>
+            <exception cref="T:System.ArgumentException"><paramref name="name"/> is null, whitespace, or longer than <see cref="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeIconNameLength"/>.</exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException"><paramref name="name"/> was fully moderated.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Failed to create badge image due to service error. (e.g. text filtering service unavailable.)</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException"><paramref name="creator"/> is has hit the image upload floodcheck.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeAwarder">
+            <summary>
+            A class that contains information about an entity
+            that can award badges.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeAwarder.Id">
+            <summary>
+            The Id of the awarder
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeAwarder.Type">
+            <summary>
+            The <see cref="T:Roblox.Platform.Badges.BadgeAwarderType"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeCounter">
+            <summary>
+            BadgeCounter information
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeCounter.IncrementBadgeAwardCounter(Roblox.Platform.Badges.IBadgeIdentifier)">
+            <summary>
+            Increments the awarded count for an <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/>
+            </summary>
+            <param name="badgeIdentifier"> The <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier" /></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badgeIdentifier"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeCounter.GetBadgeAwardCount(Roblox.Platform.Badges.IBadgeIdentifier,Roblox.Platform.Counters.Frequency)">
+            <summary>
+            Returns the count of badge award of a period of time
+            </summary>
+            <remarks>Returns 0 when it fails.</remarks>
+            <param name="badgeIdentifier"> The <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier" /></param>
+            <param name="frequency">the time period of the count of badge award</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badgeIdentifier"/></exception>
+            <returns>Count of badge award of a period of time.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeCounter.GetBadgeWinRatePercentage(Roblox.Platform.Badges.IBadgeIdentifier,System.Int64)">
+            <summary>
+            Returns the win rate percentage of a <see cref="T:Roblox.Platform.Badges.Badge"/>.
+            </summary>
+            <remarks>
+            Ideally <paramref name="pastDayRootPlaceVisits"/> could be calculated in the implementation, and would
+            use the unique universe visit count. But the unique universe visit count is not something  possible to
+            obtain at the moment.
+            Until it is, or past day place visit count is more accessible the number will have to be passed in.
+            </remarks>
+            <param name="badge">The <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/> for the <see cref="T:Roblox.Platform.Badges.Badge"/>.</param>
+            <param name="pastDayRootPlaceVisits">The place visit count for the root place the <see cref="T:Roblox.Platform.Badges.Badge"/> is awarded from in the past day.</param>
+            <returns>The win rate percentage.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badge"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeCreator">
+            <summary>
+            A class for creating badges.
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Badges.IBadgeCreator.BadgeCreated">
+            <summary>
+            Raises on Badge successfully created.
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Badges.IBadgeCreator.BadgeCreationFailed">
+            <summary>
+            Raises on Badge creation failure.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeCreator.CreateBadge(Roblox.Platform.Membership.IUser,System.String,System.String,Roblox.Platform.Universes.IUniverse,Roblox.Platform.Assets.IImage,Roblox.Platform.Devices.IPlatform)">
+            <summary>
+            Creates a badge to be awarded by an <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+            <param name="creatingUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> creating the badge.</param>
+            <param name="awardingUniverse">The awarding <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <param name="badgeIcon">The badge icon <see cref="T:Roblox.Platform.Assets.IImage"/>.</param>
+            <param name="name">The name of the badge.</param>
+            <param name="description">The badge description.</param>
+            <param name="platform">The platform the <see cref="T:Roblox.Platform.Membership.IUser"/> is purchasing the badge from. An unfortunate requirement of Marketplace client.</param>
+            <returns>The created <see cref="T:Roblox.Platform.Badges.Badge"/>.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="creatingUser"/>, <paramref name="awardingUniverse"/>, <paramref name="badgeIcon"/>, <paramref name="platform"/></exception>
+            <exception cref="T:System.ArgumentException">
+            - <paramref name="name"/> is null or whitespace.
+            - <paramref name="name"/> is longer than <see cref="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeNameLength"/>
+            - <paramref name="description"/> is longer than <see cref="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeDescriptionLength"/>
+            - <paramref name="awardingUniverse"/> does not have valid root place.
+            </exception>
+            <exception cref="T:Roblox.Platform.Badges.UnauthorizedBadgeCreationException"><paramref name="creatingUser"/> does not have access to create badges for <paramref name="awardingUniverse"/>.</exception>
+            <exception cref="T:Roblox.Platform.Badges.UnauthorizedBadgeIconUsageException"><paramref name="creatingUser"/> does not have use <paramref name="badgeIcon"/> for the badge.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Issue with dependant service for badge creation.</exception>
+            <exception cref="!:PlatformBadgeTextFullyModeratedException">Badge text failed moderation check.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeCreatorEventHandlerRegistrar">
+            <summary>
+            Registers <see cref="T:Roblox.Platform.Badges.IBadgeCreator"/> event handlers 
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeCreatorEventHandlerRegistrar.RegisterEventHandlers(Roblox.Platform.Badges.IBadgeCreator)">
+            <summary>
+            Registers event handlers
+            </summary>
+            <param name="badgeCreator"><see cref="T:Roblox.Platform.Badges.IBadgeCreator"/></param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgePermissionsVerifier">
+            <summary>
+            Verifies permissions between users, and universes for badges
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgePermissionsVerifier.CanUserCreateBadgeForUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Checks an <see cref="T:Roblox.Platform.Membership.IUser"/>'s permissions for creating a new badge on an <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <returns><c>true</c> if the user is allowed to create a badge.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="user"/>, <paramref name="universe"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgePermissionsVerifier.CanAwardBadge(Roblox.Platform.Assets.IPlace,Roblox.Platform.Badges.Badge)">
+            <summary>
+            Checks whether the <see cref="T:Roblox.Platform.Badges.Badge"/> can be awarded by an <see cref="T:Roblox.Platform.Assets.IPlace"/>
+            </summary>
+            <param name="place">The <see cref="T:Roblox.Platform.Assets.IPlace"/>.</param>
+            <param name="badge">The <see cref="T:Roblox.Platform.Badges.Badge"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/>, <paramref name="badge"/></exception>
+            <returns><c>true</c> if the badge can be awarded.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgePermissionsVerifier.CanUserManageBadge(Roblox.Platform.Membership.IUser,Roblox.Platform.Badges.Badge)">
+            <summary>
+            Checks whether the <see cref="T:Roblox.Platform.Badges.Badge"/> can be managed by an <see cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="badge">The <see cref="T:Roblox.Platform.Badges.Badge"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="user"/>, <paramref name="badge"/></exception>
+            <returns><c>true</c> if the badge can be managed.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeReader">
+            <summary>
+            Gets <see cref="T:Roblox.Platform.Badges.Badge"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeReader.AllowedPageSizes">
+            <summary>
+            Gets the allowed page sizes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeReader.GetBadge(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Badges.Badge"/> by <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/>
+            </summary>
+            <param name="badgeId">The badge Identifier.</param>
+            <returns>The <see cref="T:Roblox.Platform.Badges.Badge"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeReader.GetBadges(System.Collections.Generic.ICollection{System.Int64})">
+            <summary>
+            Gets a collection of <see cref="T:Roblox.Platform.Badges.Badge"/> for collection of <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/>
+            </summary>
+            <param name="badgeIds">The badge Identifiers.</param>
+            <exception cref="T:System.ArgumentException">
+            <paramref name="badgeIds"/> Count is bigger than <see cref="P:Roblox.Platform.Badges.Properties.ISettings.BadgeReaderGetBadgesPerCallLimit"/>, 
+            </exception>
+            <returns>The <see cref="T:System.Collections.Generic.ICollection`1"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeReader.GetBadgesByAwarder(Roblox.Platform.Badges.IBadgeAwarder,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Returns badges which belongs to awarder.
+            </summary>
+            <param name="badgeAwarder">The badge awarder.</param>
+            <param name="exclusiveStartInfo">The information of exclusive start key.</param>
+            <returns>The page with information about paged results.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="badgeAwarder"/>, <paramref name="exclusiveStartInfo"/></exception>
+            <exception cref="T:System.ArgumentException">
+            - <paramref name="badgeAwarder"/> is not of type <see cref="F:Roblox.Platform.Badges.BadgeAwarderType.Place"/>
+            - <paramref name="badgeAwarder"/> has invalid target Id.
+            - Page size is not larger than zero
+            - Exclusive start key is less than zero
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeUpdater">
+            <summary>
+            Performs updates on <see cref="T:Roblox.Platform.Badges.Badge"/>
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Badges.IBadgeUpdater.BadgeUpdated">
+            <summary>
+            Raises on Badge successfully updated.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeUpdater.SetNameAndDescription(Roblox.Platform.Badges.Badge,Roblox.TextFilter.Client.IClientTextAuthor,System.String,System.String,Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <summary>
+            Updates Badge name and description
+            </summary>
+            <param name="badge"></param>
+            <param name="textAuthor"></param>
+            <param name="newName"></param>
+            <param name="newDescription"></param>
+            <param name="actorUserIdentity"></param>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeUpdater.SetImage(Roblox.Platform.Badges.Badge,System.Int64)">
+            <summary>
+            Updates Badge image
+            </summary>
+            <param name="badge"></param>
+            <param name="imageId"></param>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeUpdater.SetEnabled(Roblox.Platform.Badges.Badge,System.Boolean)">
+            <summary>
+            Updates Badge enable state
+            </summary>
+            <param name="badge"></param>
+            <param name="isEnabled"></param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgesAwardsAuthorityEventHandlerRegistrar">
+            <summary>
+            Registers <see cref="T:Roblox.Platform.Badges.IBadgesAwardsAuthority"/> event handlers 
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgesAwardsAuthorityEventHandlerRegistrar.RegisterEventHandlers(Roblox.Platform.Badges.IBadgesAwardsAuthority)">
+            <summary>
+            Registers <see cref="T:Roblox.Platform.Badges.IBadgesAwardsAuthority"/> event handlers
+            </summary>
+            <param name="badgesAwardsAuthority"><see cref="T:Roblox.Platform.Badges.IBadgesAwardsAuthority"/></param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeUpdaterEventHandlerRegistrar">
+            <summary>
+            Registers <see cref="T:Roblox.Platform.Badges.IBadgeUpdater"/> event handlers 
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeUpdaterEventHandlerRegistrar.RegisterEventHandlers(Roblox.Platform.Badges.IBadgeUpdater)">
+            <summary>
+            Registers <see cref="T:Roblox.Platform.Badges.IBadgeUpdater"/> event handlers
+            </summary>
+            <param name="badgeUpdater"><see cref="T:Roblox.Platform.Badges.IBadgeUpdater"/></param>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IExclusiveStartKeyFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IExclusiveStartKeyFactory.BuildAwardedBadgeExclusiveStartKeyString(Roblox.Platform.Badges.IAwardedBadgeIdentifier)">
+            <summary>
+            Builds the awarded badge exclusive start key string.
+            </summary>
+            <param name="awardedBadgeIdentifier">The awarded badge identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IExclusiveStartKeyFactory.ExtractAwardedBadgeExclusiveStartKeyFromString(System.String)">
+            <summary>
+            Extracts the awarded badge exclusive start key from string.
+            </summary>
+            <param name="awardedBadgeIdentifierKeyString">The awarded badge identifier key string.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Badges.Recipient">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IRecipient"/>
+            <seealso cref="T:Roblox.Platform.Badges.IRecipient" />
+        </member>
+        <member name="P:Roblox.Platform.Badges.Recipient.TargetType">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IRecipient.TargetType"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Recipient.TargetId">
+            <inheritdoc cref="P:Roblox.Platform.Badges.IRecipient.TargetId"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.RecipientFactory">
+            <inheritdoc cref="T:Roblox.Platform.Badges.IRecipientFactory"/>
+        </member>
+        <member name="M:Roblox.Platform.Badges.RecipientFactory.Get(Roblox.Platform.MembershipCore.IUserIdentifier)">
+            <inheritdoc cref="M:Roblox.Platform.Badges.IRecipientFactory.Get(Roblox.Platform.MembershipCore.IUserIdentifier)"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeIdentifierFactory">
+            <summary>
+            Badge Identifier Factory
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgeIdentifierFactory.Get(System.Int64)">
+            <summary>
+            Returns wrapper which implements <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/>
+            </summary>
+            <param name="id">Badge Id</param>
+            <returns>Instance of <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IAwardedBadgeIdentifier">
+            <summary>
+            Awarded Badge Identifier
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IAwardedBadgeIdentifier.AwardDateTime">
+            <summary>
+            Gets or sets the award date time.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgeIdentifier">
+            <summary>
+            Badge Identifier
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgeIdentifier.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IBadgesAwardsAuthority">
+            <summary>
+            Authority resonsible for Badges awards
+            </summary>
+        </member>
+        <member name="E:Roblox.Platform.Badges.IBadgesAwardsAuthority.BadgeAwarded">
+            <summary>
+            Raises when an <see cref="T:Roblox.Platform.Membership.IUser"/> is awarded a <see cref="T:Roblox.Platform.Badges.Badge"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgesAwardsAuthority.AllowedPageSizes">
+            <summary>
+            Gets the allowed page sizes.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgesAwardsAuthority.MaxPageSize">
+            <summary>
+            Gets the maximum allowed page size.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IBadgesAwardsAuthority.MinPageSize">
+            <summary>
+            Gets the minimum allowed page size.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.Award(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <summary>
+            Awards the badge to the specified user.
+            </summary>
+            <param name="recipient">The userIdentifier <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/>.</param>
+            <param name="badgeIdentifier">The badge identifier.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            userIdentifier
+            or
+            badgeIdentifier
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+            userIdentifier target id less than or equal to zero 
+            or
+            badgeIdentifier.TargetId less than or equal to zero 
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">
+            Throws when a platform operation is not currently available at no fault of the caller.
+            Possible reason: a datastore or related service is not available.
+            </exception>
+            <returns>
+            <c>true</c> if the specified user is awarded; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.IsAwarded(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <summary>
+            Determines whether the specified user is awarded.
+            </summary>
+            <param name="userIdentifier">The userIdentifier <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/>.</param>
+            <param name="badgeIdentifier">The badge identifier.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            userIdentifier
+            or
+            badgeIdentifier
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+            userIdentifier target id equal to zero 
+            or
+            badgeIdentifier.TargetId less than or equal to zero 
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">
+            Throws when a platform operation is not currently available at no fault of the caller.
+            Possible reason: a datastore or related service is not available.
+            </exception>
+            <returns>
+              <c>true</c> if the specified user is awarded; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.GetBadgeAwardedDate(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <summary>
+            Gets the <see cref="T:System.DateTime"/> a <see cref="T:Roblox.Platform.Badges.Badge"/> was awarded to an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="badge">The <see cref="T:Roblox.Platform.Badges.IBadgeIdentifier"/>.</param>
+            <returns>The <see cref="T:System.DateTime"/> if the <see cref="T:Roblox.Platform.Membership.IUser"/> has the badge (otherwise <c>null</c>.)</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="user"/>, <paramref name="badge"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.Revoke(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Badges.IBadgeIdentifier)">
+            <summary>
+            Revokes the badge from the specified user.
+            </summary>
+            <param name="recipient">The userIdentifier <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/>.</param>
+            <param name="badgeIdentifier">The badge identifier.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            userIdentifier
+            or
+            badgeIdentifier
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+            userIdentifier target id less than or equal to zero 
+            or
+            badgeIdentifier.TargetId less than or equal to zero 
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">
+            Throws when a platform operation is not currently available at no fault of the caller.
+            Possible reason: a datastore or related service is not available.
+            </exception>
+            <returns>
+            <c>true</c> if the specified badge is revoked; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IBadgesAwardsAuthority.GetAwardedBadgesIdentifiersByRecipient(Roblox.Platform.MembershipCore.IUserIdentifier,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{Roblox.Platform.Badges.IAwardedBadgeIdentifier})">
+            <summary>
+            Gets the awarded badges by user identifier (ExclusiveStartItem based paging).
+            </summary>
+            <param name="recipient">The userIdentifier.</param>
+            <param name="exclusiveStartKeyInfo">The exclusive start key details.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            userIdentifier
+            or
+            exclusiveStartDetails
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Recipient TargetId has to be larger than zero</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">
+            Throws when a platform operation is not currently available at no fault of the caller.
+            Possible reason: a datastore or related service is not available.
+            </exception>
+            <returns>
+            <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2" /> Platform page response which contain collection 
+            of awarded badge identifiers <see cref="T:Roblox.Platform.Badges.IAwardedBadgeIdentifier" />
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IRecipient">
+            <summary>
+            Represents internal recipient DTO
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IRecipient.TargetType">
+            <summary>
+            Gets the type of the recipient target.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.IRecipient.TargetId">
+            <summary>
+            Gets the Id of the recipient target.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Badges.IRecipientFactory">
+            <summary>
+            Recipient factory
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Badges.IRecipientFactory.Get(Roblox.Platform.MembershipCore.IUserIdentifier)">
+             <summary>
+             Gets the recipient of User type.
+             </summary>
+             <param name="userIdentifier">The user identifier.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+             userIdentifier
+             </exception>
+             <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+             userIdentifier.Id equals to zero
+             </exception>
+             <returns><see cref="T:Roblox.Platform.Badges.IRecipient"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Badges.Properties.Settings">
+            <summary>
+            Settings for badges that aren't actual web settings
+            </summary>
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+            Temporary public (need to share temporary settings for switches) todo has to be internal after verification 
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.Settings.BadgePurchaseRobuxPrice">
+            <inheritdoc cref="P:Roblox.Platform.Badges.Properties.ISettings.BadgePurchaseRobuxPrice"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.Settings.BadgeMarketplaceProductId">
+            <inheritdoc cref="P:Roblox.Platform.Badges.Properties.ISettings.BadgeMarketplaceProductId"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.Settings.MaxBadgeNameLength">
+            <inheritdoc cref="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeNameLength"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.Settings.MaxBadgeDescriptionLength">
+            <inheritdoc cref="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeDescriptionLength"/>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.Settings.MaxBadgeIconNameLength">
+            <inheritdoc cref="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeIconNameLength"/>
+        </member>
+        <member name="T:Roblox.Platform.Badges.Properties.ISettings">
+            <summary>
+            Settings belong to <see cref="N:Roblox.Platform.Badges"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.ISettings.BadgePurchaseRobuxPrice">
+            <summary>
+            The Robux cost of creating a new badge
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.ISettings.BadgeMarketplaceProductId">
+            <summary>
+            The economy marketplace product Id for a Roblox badge product
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeNameLength">
+            <summary>
+            The max length of a badge name
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeDescriptionLength">
+            <summary>
+            The max length of a badge description
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.ISettings.MaxBadgeIconNameLength">
+            <summary>
+            The max length for the <see cref="T:Roblox.Platform.Badges.Badge"/> <see cref="T:Roblox.Platform.Assets.IImage"/> icon name.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.ISettings.IsBadgeWithFullyModeratedTextBlocked">
+            <summary>
+             Whether or not badge with fully moderated text is blocked (TextFilter throws)
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.ISettings.BadgeReaderGetBadgesPerCallLimit">
+            <summary>
+            Maximum amount of items which can be requested in one <see cref="M:Roblox.Platform.Badges.BadgeReader.GetBadges(System.Collections.Generic.ICollection{System.Int64})"/> call
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Badges.Properties.ISettings.BadgeRarityUniquenessCorrectionFactor">
+            <summary>
+            Used to coerce the win rate percentage of a badge to look more proper.
+            </summary>
+        </member>
+    </members>
+</doc>

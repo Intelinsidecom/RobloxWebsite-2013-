@@ -1,0 +1,700 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.AssetMedia</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.AssetMedia.InvalidVideoException">
+            <summary>
+            Throws when a video URL does not refer to a valid video.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.InvalidVideoException.#ctor">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.InvalidVideoException"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.InvalidVideoException.#ctor(System.String)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.InvalidVideoException"/>
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.InvalidVideoException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.InvalidVideoException"/>
+            </summary>
+            <param name="message">Exception message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException">
+            <summary>
+            Thrown when a YouTube video does not support embedding.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException.#ctor">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException.#ctor(System.String)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException"/>
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException"/>
+            </summary>
+            <param name="message">Exception message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.VideoTooLongException">
+            <summary>
+            Thrown when a video duration is longer than allowed.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.VideoTooLongException.#ctor">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.VideoTooLongException"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.VideoTooLongException.#ctor(System.String)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.VideoTooLongException"/>
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.VideoTooLongException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.VideoTooLongException"/>
+            </summary>
+            <param name="message">Exception message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.UniverseExtensions">
+            <summary>
+            Contains extensions methods on a <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.UniverseExtensions.GetIconThumbResult(Roblox.Platform.Universes.IUniverse,Roblox.Thumbs.ImageParameters,Roblox.Platform.AssetMedia.IPlaceIconFactory)">
+            <summary>
+            Gets the <see cref="T:Roblox.Thumbs.ThumbResult"/> for the <see cref="T:Roblox.Platform.Universes.IUniverse"/>'s icon .
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/> to get the icon for.</param>
+            <param name="imageParameters">The <see cref="T:Roblox.Thumbs.ImageParameters"/>.</param>
+            <param name="placeIconFactory">The <see cref="T:Roblox.Platform.AssetMedia.IPlaceIconFactory"/> factory to use to get <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>s.</param>
+            <returns>The <see cref="T:Roblox.Thumbs.ThumbResult"/> for the <see cref="T:Roblox.Platform.Universes.IUniverse"/>'s icon.</returns>
+            <exception cref="T:System.NullReferenceException">Thrown if <paramref name="universe"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="imageParameters"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="placeIconFactory"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.AssetMediaThumbnailUploader.GenerateModelImage(Roblox.Asset)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.GenerateModelImage(Roblox.Asset)"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.AssetMediaThumbnailUploader.UploadGeneratedAssetMediaImageAsync(Roblox.Asset,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.UploadGeneratedAssetMediaImageAsync(Roblox.Asset,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.AssetMediaThumbnailUploader.UploadAssetMediaImage(System.IO.Stream,Roblox.Asset,Roblox.Platform.Membership.IUser,System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.UploadAssetMediaImage(System.IO.Stream,Roblox.Asset,Roblox.Platform.Membership.IUser,System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.AssetMediaThumbnailUploader.UploadAssetMediaImage(System.IO.Stream,Roblox.Platform.Assets.IAsset,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.UploadAssetMediaImage(System.IO.Stream,Roblox.Platform.Assets.IAsset,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.AssetMediaThumbnailUploader.AddAssetMediaImage(Roblox.Platform.Assets.IAsset,Roblox.Platform.Assets.IImage,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.AddAssetMediaImage(Roblox.Platform.Assets.IAsset,Roblox.Platform.Assets.IImage,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.PlaceIconThumbnailGetter">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceIconThumbnailGetter.#ctor(Roblox.Thumbs.IAssetThumbnail)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.PlaceIconThumbnailGetter"/>.
+            </summary>
+            <param name="assetThumbnail">An <see cref="T:Roblox.Thumbs.IAssetThumbnail"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            - <paramref name="assetThumbnail"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceIconThumbnailGetter.GetPlaceIconThumbResult(System.Int64,System.Nullable{System.Int64},System.Int32,System.Int32,System.Drawing.Imaging.ImageFormat,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceIconThumbnailGetter.GetPlaceIconThumbResult(System.Int64,System.Nullable{System.Int64},Roblox.Thumbs.ImageParameters,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.PlaceIconUploader">
+            <summary>
+            Manages uploading of place icons.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceIconUploader.#ctor(Roblox.Thumbs.IAssetThumbnail,Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority,Roblox.Platform.AssetMedia.IPlaceIconFactory,Roblox.EphemeralCounters.IEphemeralCounterFactory,Roblox.Platform.Assets.IImageFactory,Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory)">
+            <summary>
+            Constructs the place icon uploader.
+            </summary>
+            <param name="assetThumbnail">An <see cref="T:Roblox.Thumbs.IAssetThumbnail"/></param>
+            <param name="assetOwnershipAuthority">An <see cref="T:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority"/></param>
+            <param name="placeIconFactory">An <see cref="T:Roblox.Platform.AssetMedia.IPlaceIconFactory"/></param>
+            <param name="ephemeralCounterFactory">An <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/></param>
+            <param name="imageFactory">An <see cref="T:Roblox.Platform.Assets.IImageFactory"/></param>
+            <param name="eventStreamer">An <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/></param>
+            <param name="uploadFloodcheckerFactory">An <see cref="T:Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory"/></param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="assetThumbnail"/>
+            - <paramref name="assetOwnershipAuthority"/>
+            - <paramref name="placeIconFactory"/>
+            - <paramref name="ephemeralCounterFactory"/>
+            - <paramref name="imageFactory" />
+            - <paramref name="eventStreamer"/>
+            - <paramref name="uploadFloodcheckerFactory"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceIconUploader.SetGeneratedPlaceIcon(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IPlaceIconUploader.SetGeneratedPlaceIcon(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceIconUploader.SetPlaceIcon(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser,System.IO.Stream)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IPlaceIconUploader.SetPlaceIcon(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser,System.IO.Stream)"/>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.PlaceThumbnail">
+            <summary>
+            Implements <see cref="T:Roblox.Platform.AssetMedia.IPlaceThumbnail"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.PlaceThumbnail.Id">
+            <inheritdoc cref="P:Roblox.Platform.AssetMedia.IPlaceThumbnail.Id"/>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.PlaceThumbnail.PlaceId">
+            <inheritdoc cref="P:Roblox.Platform.AssetMedia.IPlaceThumbnail.PlaceId"/>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.PlaceThumbnail.ImageId">
+            <inheritdoc cref="P:Roblox.Platform.AssetMedia.IPlaceThumbnail.ImageId"/>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.PlaceThumbnailUploader">
+            <summary>
+            Implements <see cref="T:Roblox.Platform.AssetMedia.IPlaceThumbnailUploader"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceThumbnailUploader.#ctor(Roblox.Thumbs.IAssetThumbnail,Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority,Roblox.EphemeralCounters.IEphemeralCounterFactory,Roblox.Platform.Assets.IImageFactory,Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory)">
+            <summary>
+            Constructs the place thumbnail uploader.
+            </summary>
+            <param name="assetThumbnail">An <see cref="T:Roblox.Thumbs.IAssetThumbnail"/>.</param>
+            <param name="assetOwnershipAuthority">An <see cref="T:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority"/>.</param>
+            <param name="ephemeralCounterFactory">An <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/>.</param>
+            <param name="imageFactory">An <see cref="T:Roblox.Platform.Assets.IImageFactory"/>.</param>
+            <param name="uploadFloodcheckerFactory">An <see cref="T:Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory"/></param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="assetThumbnail"/>
+            - <paramref name="assetOwnershipAuthority"/>
+            - <paramref name="ephemeralCounterFactory"/>
+            - <paramref name="imageFactory"/>
+            - <paramref name="uploadFloodcheckerFactory"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceThumbnailUploader.AddGeneratedPlaceThumbnail(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IPlaceThumbnailUploader.AddGeneratedPlaceThumbnail(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceThumbnailUploader.AddPlaceThumbnail(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser,System.IO.Stream)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IPlaceThumbnailUploader.AddGeneratedPlaceThumbnail(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.PlaceVideoPermissionsVerifier">
+            <summary>
+            Implements <see cref="T:Roblox.Platform.AssetMedia.IPlaceVideoPermissionsVerifier"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceVideoPermissionsVerifier.#ctor(Roblox.Platform.AssetMedia.Properties.ISettings)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.PlaceVideoPermissionsVerifier"/>.
+            </summary>
+            <param name="settings">Asset media settings.</param>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceVideoPermissionsVerifier.CanUserAddPlaceVideos(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IPlaceVideoPermissionsVerifier.CanUserAddPlaceVideos(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.PlaceVideoUploader">
+            <summary>
+            Implements <see cref="T:Roblox.Platform.AssetMedia.IPlaceVideoUploader"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceVideoUploader.#ctor(Roblox.Platform.AssetMedia.Properties.ISettings,Roblox.Platform.AssetMedia.IYouTubeVideoAssetBuilder,Roblox.Platform.AssetMedia.IYouTubeVideoBroker,Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.PlaceVideoUploader"/>
+            </summary>
+            <param name="settings">Asset media settings.</param>
+            <param name="youTubeVideoAssetBuilder">An <see cref="T:Roblox.Platform.AssetMedia.IYouTubeVideoAssetBuilder"/>.</param>
+            <param name="youTubeVideoBroker">An <see cref="T:Roblox.Platform.AssetMedia.IYouTubeVideoBroker"/>.</param>
+            <param name="assetOwnershipAuthority">An <see cref="T:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="settings"/>
+            - <paramref name="youTubeVideoAssetBuilder"/>
+            - <paramref name="youTubeVideoBroker"/>
+            - <paramref name="assetOwnershipAuthority"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.PlaceVideoUploader.AddPlaceVideo(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser,System.String,Roblox.Platform.Devices.PlatformType)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IPlaceVideoUploader.AddPlaceVideo(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser,System.String,Roblox.Platform.Devices.PlatformType)"/>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.YouTubeVideoBroker">
+            <summary>
+            Implements <see cref="T:Roblox.Platform.AssetMedia.IYouTubeVideoBroker"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.YouTubeVideoBroker.#ctor(Roblox.Currency.Client.ICurrencyAuthority,Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority,Roblox.Marketplace.Client.IMarketplaceAuthority,Roblox.EventLog.ILogger,Roblox.TransactionEvents.ITransactionStreamer,Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.YouTubeVideoBroker"/>.
+            </summary>
+            <param name="currencyAuthority">An <see cref="T:Roblox.Currency.Client.ICurrencyAuthority"/>.</param>
+            <param name="assetOwnershipAuthority">An <see cref="T:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority"/>.</param>
+            <param name="marketplaceAuthority">An <see cref="T:Roblox.Marketplace.Client.IMarketplaceAuthority"/>.</param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/></param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="currencyAuthority"/>
+            - <paramref name="assetOwnershipAuthority"/>
+            - <paramref name="marketplaceAuthority"/>
+            - <paramref name="logger"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.YouTubeVideoBroker.PurchaseVideo(Roblox.Platform.Membership.IUser,Roblox.Platform.Devices.PlatformType,System.Int64,System.Nullable{System.Int64}@)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IYouTubeVideoBroker.PurchaseVideo(Roblox.Platform.Membership.IUser,Roblox.Platform.Devices.PlatformType,System.Int64,System.Nullable{System.Int64}@)"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.YouTubeVideoBroker.RefundVideo(Roblox.Platform.Membership.IUser,System.Int64,System.Nullable{System.Int64})">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IYouTubeVideoBroker.RefundVideo(Roblox.Platform.Membership.IUser,System.Int64,System.Nullable{System.Int64})"/>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.YouTubeVideoAssetBuilder">
+            <summary>
+            Implements <see cref="T:Roblox.Platform.AssetMedia.IYouTubeVideoAssetBuilder"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.YouTubeVideoAssetBuilder.#ctor(Roblox.Platform.AssetMedia.Properties.ISettings,Roblox.Platform.Assets.IYouTubeVideoFactory)">
+            <summary>
+            Constructs <see cref="T:Roblox.Platform.AssetMedia.YouTubeVideoAssetBuilder"/>
+            </summary>
+            <param name="settings">Asset media settings.</param>
+            <param name="youTubeVideoFactory">An <see cref="T:Roblox.Platform.Assets.IYouTubeVideoFactory"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="settings"/>
+            - <paramref name="youTubeVideoFactory"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.YouTubeVideoAssetBuilder.CreateVideoAssetFromUrl(System.String,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.AssetMedia.IYouTubeVideoAssetBuilder.CreateVideoAssetFromUrl(System.String,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.GenerateModelImage(Roblox.Asset)">
+            <summary>
+            Requests a model thumbnail to be generated.
+            </summary>
+            <param name="asset">The model.</param>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.UploadGeneratedAssetMediaImageAsync(Roblox.Asset,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates an auto-generated thumbnail of the asset.
+            Meant to be used for models, hasn't been tested with places.
+            If the asset already has an 'Image' AssetMedia, a new version is created.
+            If there is no AssetMedia, a new one is created.
+            The newly created image has to go through moderation before it becomes visible.
+            </summary>
+            <param name="asset">The asset that needs an auto-generated thumbnail</param>
+            <param name="authenticatedUser"></param>
+            <returns></returns>
+            <exception cref="T:System.ApplicationException">Thrown if thumbnail generation takes longer than the allowed limit</exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.UploadAssetMediaImage(System.IO.Stream,Roblox.Asset,Roblox.Platform.Membership.IUser,System.Boolean)">
+            <summary>
+            Uploads and sets the <paramref name="imageStream"/> as an image asset.
+            </summary>
+            <remarks>
+            Creates an AssetMedia or PlaceMedia based on the new image asset, that is tied to <paramref name="asset"/>.
+            </remarks>
+            <param name="imageStream">The stream being uploaded into an image asset.</param>
+            <param name="asset">The asset that will have the media tied to it.</param>
+            <param name="user">The user performing the action.</param>
+            <param name="isPlace">Whether or not <paramref name="asset"/> is a place.</param>
+            <returns>The uploaded <see cref="T:Roblox.Platform.Assets.IImage"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.UploadAssetMediaImage(System.IO.Stream,Roblox.Platform.Assets.IAsset,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Uploads an <paramref name="imageStream"/> as an image asset for an <see cref="T:Roblox.Platform.Assets.IAsset"/>.
+            </summary>
+            <param name="imageStream">The stream being uploaded into an image asset.</param>
+            <param name="asset">The asset that will have the media tied to it.</param>
+            <param name="user">The user performing the action.</param>
+            <returns>The uploaded <see cref="T:Roblox.Platform.Assets.IImage"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IAssetMediaThumbnailUploader.AddAssetMediaImage(Roblox.Platform.Assets.IAsset,Roblox.Platform.Assets.IImage,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Adds an <see cref="T:Roblox.Platform.Assets.IImage"/> as asset media for an <see cref="T:Roblox.Platform.Assets.IAsset"/>.
+            </summary>
+            <param name="asset">The <see cref="T:Roblox.Platform.Assets.IAsset"/>.</param>
+            <param name="image">The <see cref="T:Roblox.Platform.Assets.IImage"/>.</param>
+            <param name="user">The user performing the action.</param>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IPlaceIcon">
+            <summary>
+            Represents a PlaceIcon object: a link between a place and its respective icon image.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.IPlaceIcon.ImageId">
+            <summary>
+            A null ImageId means that there is no implicitly defined PlaceIcon for this place and the default place screenshot will be used
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIcon.GetGameIconThumbResult(System.Int32,System.Int32,System.Drawing.Imaging.ImageFormat,System.Boolean)">
+            <summary>
+            Gets the <see cref="T:Roblox.Thumbs.ThumbResult"/> for this <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>'s image in the specified format, and size.
+            </summary>
+            <param name="width">The desired width.</param>
+            <param name="height">The desired height.</param>
+            <param name="format">The image format to use.</param>
+            <param name="returnAutoGenerated">The image will be auto generated using the thumbnail service of the user's place, if true.</param>
+            <returns>A ThumbResult for this <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>'s image.</returns>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIcon.GetGameIconThumbResult(Roblox.Thumbs.ImageParameters,System.Boolean)">
+            <summary>
+            Gets the game icon <see cref="T:Roblox.Thumbs.ThumbResult"/> for this <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>.
+            </summary>
+            <param name="imageParameters">The <see cref="T:Roblox.Thumbs.ImageParameters"/> of the image to get.</param>
+            <param name="returnAutoGenerated">The image will be auto generated using the thumbnail service of the user's place, if true.</param>
+            <returns>The <see cref="T:Roblox.Thumbs.ThumbResult"/> for the game icon.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="imageParameters"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IPlaceIconFactory">
+            <summary>
+            Manages place icons.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIconFactory.GetPlaceIconByPlaceId(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/> with the given placeId.  This will always get a <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/> even where none exist.  This behavior is necessary in order to call <see cref="!:IPlaceIcon.GetGameIconThumbResult(int,int,System.Drawing.Imaging.ImageFormat)"/> on a place that has no icon.
+            </summary>
+            <param name="placeId"></param>
+            <returns>The <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/> for the given placeId.  If the place has no respective <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>, a new one will be returned.</returns>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIconFactory.DeletePlaceIcon(Roblox.Platform.AssetMedia.IPlaceIcon@)">
+            <summary>
+            Deletes the provided <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>.  This will modify the passed in instance by resetting it to a new <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>.  This is again to provide access to <see cref="!:IPlaceIcon.GetGameIconThumbResult(int,int,System.Drawing.Imaging.ImageFormat)"/> on a freshly deleted <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>.
+            </summary>
+            <param name="placeIcon"></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="placeIcon"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIconFactory.SavePlaceIcon(Roblox.Platform.AssetMedia.IPlaceIcon@)">
+            <summary>
+            Saves the provided <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon"/>.  This will modify the passed in instance by updating its fields to match those in the database (necessary for Updated, Created, etc).
+            </summary>
+            <param name="placeIcon"></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="placeIcon"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="placeIcon"/>'s 'ImageId' property is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIconFactory.ContainsPlaceIcon(System.Int64)">
+            <summary>
+            Determines if a place has a place icon.
+            </summary>
+            <param name="placeId">Place to test for the presence of the icon.</param>
+            <returns>True if the place has an icon or false - otherwise.</returns>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IPlaceIconThumbnailGetter">
+            <summary>
+            A class to getter place icon thumbnail
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIconThumbnailGetter.GetPlaceIconThumbResult(System.Int64,System.Nullable{System.Int64},System.Int32,System.Int32,System.Drawing.Imaging.ImageFormat,System.Boolean)">
+            <summary>
+            Gets the <see cref="T:Roblox.Thumbs.ThumbResult"/> for a place icon image in the specified format, and size.
+            </summary>
+            <param name="placeId">The place ID.</param>
+            <param name="imageId">The image ID of a place icon.</param>
+            <param name="width">The desired width.</param>
+            <param name="height">The desired height.</param>
+            <param name="format">The image format to use.</param>
+            <param name="returnAutoGenerated">The image will be auto generated using the thumbnail service of the user's place, if true.</param>
+            <returns>The <see cref="T:Roblox.Thumbs.ThumbResult"/> for the place icon image.</returns>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIconThumbnailGetter.GetPlaceIconThumbResult(System.Int64,System.Nullable{System.Int64},Roblox.Thumbs.ImageParameters,System.Boolean)">
+            <summary>
+            Gets the <see cref="T:Roblox.Thumbs.ThumbResult"/> for a place icon image with the given <see cref="T:Roblox.Thumbs.ImageParameters"/>.
+            </summary>
+            <param name="placeId">The place ID.</param>
+            <param name="imageId">The image ID of a place icon.</param>
+            <param name="imageParameters">The <see cref="T:Roblox.Thumbs.ImageParameters"/> of the image to get.</param>
+            <param name="returnAutoGenerated">The image will be auto generated using the thumbnail service of the user's place, if true.</param>
+            <returns>The <see cref="T:Roblox.Thumbs.ThumbResult"/> for the place icon image.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="imageParameters"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IPlaceIconUploader">
+            <summary>
+            Provides method for adding place icons.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIconUploader.SetGeneratedPlaceIcon(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Sets an icon generated from the place contents. If the place already has an icon, the existing icon is replaced
+            with the auto-generated one.
+            </summary>
+            <param name="place">A place for which to set the icon.</param>
+            <param name="actingUser">The user that performs the operation.</param>
+            <returns>Place icon.</returns>
+            <exception cref="T:System.ArgumentNullException">
+             - <paramref name="place"/>
+             - <paramref name="actingUser"/>
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if the generated place icon is not available</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">If there are too many icon upload requests.</exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceIconUploader.SetPlaceIcon(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser,System.IO.Stream)">
+            <summary>
+            Sets a custom icon. If the place already has an icon, the existing icon is replaced with the provided image.
+            </summary>
+            <param name="place">A place for which to set the icon.</param>
+            <param name="actingUser">The user that performs the operation.</param>
+            <param name="imageData">A stream containing image data.</param>
+            <returns>Place icon.</returns>
+            <exception cref="T:System.ArgumentNullException">
+             - <paramref name="place"/>
+             - <paramref name="actingUser"/>
+             - <paramref name="imageData"/>
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">If there are too many icon upload requests.</exception>
+            <exception cref="T:System.IO.InvalidDataException">If the image data stream is in an invalid format.</exception>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IPlaceThumbnail">
+            <summary>
+            Represents a place thumbnail.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.IPlaceThumbnail.Id">
+            <summary>
+            The identifier of the place thumbnail.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.IPlaceThumbnail.PlaceId">
+            <summary>
+            The identifier of the place this thumbnail belongs to.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.IPlaceThumbnail.ImageId">
+            <summary>
+            The identifier of the corresponding image asset.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IPlaceThumbnailUploader">
+            <summary>
+            Provides methods for adding place thumbnails.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceThumbnailUploader.AddGeneratedPlaceThumbnail(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Adds a generated place thumbnail.
+            </summary>
+            <param name="place">Place to add the generated thumbnail to.</param>
+            <param name="actingUser">The user that performs the operation.</param>
+            <returns>Place thumbnail.</returns>
+            <exception cref="T:System.ArgumentNullException">
+             - <paramref name="place"/>
+             - <paramref name="actingUser"/>
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if the generated place thumbnail is not available</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">If there are too many thumbnail upload requests.</exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceThumbnailUploader.AddPlaceThumbnail(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser,System.IO.Stream)">
+            <summary>
+            Adds a custom place thumbnail.
+            </summary>
+            <param name="place">Place the add the thumbnail to.</param>
+            <param name="actingUser">The user that performs the operation.</param>
+            <param name="imageData">A stream containing image data.</param>
+            <returns>Place icon.</returns>
+            <exception cref="T:System.ArgumentNullException">
+             - <paramref name="place"/>
+             - <paramref name="actingUser"/>
+             - <paramref name="imageData"/>
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">If there are too many icon upload requests.</exception>
+            <exception cref="T:System.IO.InvalidDataException">If the image data stream is in an invalid format.</exception>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IPlaceVideoPermissionsVerifier">
+            <summary>
+            Checks whether users are allowed to add place video.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceVideoPermissionsVerifier.CanUserAddPlaceVideos(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Tests if the provided user can add YouTube videos as place thumbnails.
+            </summary>
+            <param name="user">User to test.</param>
+            <returns><c>True</c> if the user is allowed to add YouTube videos as place thumbnails, or <c>False</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="user"/>
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IPlaceVideoUploader">
+            <summary>
+            Handles adding YouTube videos to places.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IPlaceVideoUploader.AddPlaceVideo(Roblox.Platform.Assets.IPlace,Roblox.Platform.Membership.IUser,System.String,Roblox.Platform.Devices.PlatformType)">
+            <summary>
+            Adds a YouTube video media item to a place, which includes charging the user for the cost of adding
+            a YouTube video item.
+            </summary>
+            <param name="place">Place to add the video to.</param>
+            <param name="actingUser">The user performing the action.</param>
+            <param name="youTubeVideoUrl">YouTube video URL.</param>
+            <param name="initiatingPlatformType">Platform from which the action was initiated.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="place"/>
+            - <paramref name="actingUser"/>
+            - <paramref name="youTubeVideoUrl"/>
+            </exception>
+            <exception cref="T:System.UriFormatException">
+            Thrown if the provided URL is syntactically invalid.
+            </exception>
+            <exception cref="T:Roblox.Platform.AssetMedia.InvalidVideoException">
+            Thrown if the provided URL is syntactically valid but does not refer to a valid video.
+            </exception>
+            <exception cref="T:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException">
+            Thrown if the video referred to by the provided URL does not support embedding.
+            </exception>
+            <exception cref="T:Roblox.Platform.AssetMedia.VideoTooLongException">
+            Thrown if the video duration is longer than the allowed limit.
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.LongDescriptionException">
+            Thrown if the video description is too long.
+            </exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">
+            Thrown if the video description was fully moderated.
+            </exception>
+            <exception cref="T:Roblox.Platform.Assets.VideoDisapprovedException">
+            Thrown if this video was previously uploaded and was moderated.
+            </exception>
+            <exception cref="T:Roblox.Platform.VirtualCurrency.InsufficientFundsException">
+            Thrown if the user does not have sufficient funds to purchase the video.
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">
+            Thrown if the purchase transaction could not complete.
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IYouTubeVideoAssetBuilder">
+            <summary>
+            Builds YouTube video assets.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IYouTubeVideoAssetBuilder.CreateVideoAssetFromUrl(System.String,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates a YouTube video asset from a YouTube video URL.
+            </summary>
+            <param name="youTubeVideoUrl">The video URL.</param>
+            <param name="actingUser">User performing the action.</param>
+            <returns>YouTube video asset.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="youTubeVideoUrl"/>
+            - <paramref name="actingUser"/>
+            </exception>
+            <exception cref="T:System.UriFormatException">
+            Thrown if the provided URL is syntactically invalid.
+            </exception>
+            <exception cref="T:Roblox.Platform.AssetMedia.InvalidVideoException">
+            Thrown if the provided URL is syntactically valid but does not refer to a valid video.
+            </exception>
+            <exception cref="T:Roblox.Platform.AssetMedia.VideoDoesNotSupportEmbeddingException">
+            Thrown if the video referred to by the provided URL does not support embedding.
+            </exception>
+            <exception cref="T:Roblox.Platform.AssetMedia.VideoTooLongException">
+            Thrown if the video duration is longer than the allowed limit.
+            </exception>
+            <exception cref="T:Roblox.Platform.Core.LongDescriptionException">
+            Thrown if the video description is too long.
+            </exception>
+            <exception cref="T:Roblox.Platform.Assets.PlatformAssetTextFullyModeratedException">
+            Thrown if the video description was fully moderated.
+            </exception>
+            <exception cref="T:Roblox.Platform.Assets.VideoDisapprovedException">
+            Thrown if this video was previously uploaded and was moderated.
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.IYouTubeVideoBroker">
+            <summary>
+            Handles video asset transactions on behalf of a user.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IYouTubeVideoBroker.PurchaseVideo(Roblox.Platform.Membership.IUser,Roblox.Platform.Devices.PlatformType,System.Int64,System.Nullable{System.Int64}@)">
+            <summary>
+            Purchases a YouTube place video on behalf of a user.
+            </summary>
+            <param name="actingUser">User purchasing a video.</param>
+            <param name="initiatingPlatformType">Type of the platform from which the action was initiated.</param>
+            <param name="videoCostInRobux">Cost to add YouTube video, in Robux</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="actingUser"/>
+            </exception>
+            <exception cref="T:Roblox.Platform.VirtualCurrency.InsufficientFundsException">If the user does not have enough funds to purchase the video</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">If the sale could not be completed.</exception>
+        </member>
+        <member name="M:Roblox.Platform.AssetMedia.IYouTubeVideoBroker.RefundVideo(Roblox.Platform.Membership.IUser,System.Int64,System.Nullable{System.Int64})">
+            <summary>
+            Refunds the cost of a YouTube video to the user.
+            </summary>
+            <param name="actingUser"></param>
+            <param name="videoCost"></param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="actingUser"/>
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.Properties.ISettings">
+            <summary>
+            Asset media settings.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.IsDefaultCameraGeneratedThumbnailRemovalEnabled">
+            <summary>
+            Whether it is allowed to remove the default thumbnail generated for an asset.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.MaximumUploadedImageWidthOrHeight">
+            <summary>
+            Maximum allowed asset image width or height.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.GeneratedThumbnailWidth">
+            <summary>
+            Width of generated asset thumbnails, in pixels.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.GeneratedThumbnailHeight">
+            <summary>
+            Height of generated asset thumbnails, in pixels.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.DefaultCameraGeneratedThumbnailTimeout">
+            <summary>
+            The timeout for default thumbnail generation.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.DownloadImageTimeout">
+            <summary>
+            The timeout for downloading generated images.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.MaximumYouTubeVideoUploadLengthInSeconds">
+            <summary>
+            The maximum allowed length of YouTube videos, in seconds.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.YouTubeVideoPurchasePrice">
+            <summary>
+            The price of YouTube media items.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.ISettings.IsVideoThumbnailUploadDisabledForUnder13Users">
+            <summary>
+            Whether adding YouTube videos as game thumbnails is disabled for users under 13.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetMedia.Properties.Settings">
+            <summary>
+            Externally-defined settings.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetMedia.Properties.Settings.YouTubeVideoPurchasePrice">
+            <inheritdoc cref="P:Roblox.Platform.AssetMedia.Properties.ISettings.YouTubeVideoPurchasePrice" />
+        </member>
+    </members>
+</doc>

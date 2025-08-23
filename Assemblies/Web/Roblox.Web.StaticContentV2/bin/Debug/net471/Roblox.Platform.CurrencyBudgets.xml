@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.CurrencyBudgets</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.CurrencyBudgets.Entities.CurrencyBudget">
+            <summary>
+            Tracks the amount and transactions of a currency for a given holder.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget" />
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionFactory">
+            <summary>
+            Creates PlatformCurrencyBudgetTransactions
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionFactory.CreateNew(System.Int64,System.Int64,System.Int32,System.Int64)">
+            <summary>
+            Creates a new CurrencyBudgetTransaction.
+            </summary>
+            <param name="currencyBudgetId">The currency budget identifier.</param>
+            <param name="delta">The transaction delta.</param>
+            <param name="currencyBudgetTransactionTypeId">The currency budget transaction type identifier.</param>
+            <param name="currencyBudgetTransactionTargetId">The currency budget transaction target identifier.</param>
+            <returns>A new CurrencyBudgetTransaction.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionTypeFactory">
+            <summary>
+            Gets or creates PlatformCurrencyBudgetTransactionTypes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionTypeFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates a PlatformCurrencyBudgetTransactionType.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>New or existing PlatformCurrencyBudgetTransactionType.</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionTypeFactory.Get(System.Int32)">
+            <summary>
+            Gets the an existing PlatformCurrencyBudgetTransactionType.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Existing PlatformCurrencyBudgetTransactionType or null if it does not exist.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionType">
+            <summary>
+            Types of transactions.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionType" />
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionType.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionType"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The type.</param>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionType.ID">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransactionType.Value">
+            <summary>
+            Gets or sets the transaction type value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetType">
+            <summary>
+            Budget types.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetType" />
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetType.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetType"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The budget type.</param>
+            <exception cref="T:System.ArgumentNullException">Value can not be null.</exception>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetType.ID">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetType.Value">
+            <summary>
+            Gets or sets the currency budget type.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyHolderType">
+            <summary>
+            Types of currency holders.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyHolderType" />
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyHolderType.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyHolderType"/> class.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The holder type.</param>
+            <exception cref="T:System.ArgumentNullException">Value can not be null.</exception>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyHolderType.ID">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyHolderType.Value">
+            <summary>
+            Gets or sets the currency holder type.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionFactory">
+            <summary>
+            Creates PlatformCurrencyBudgetTransactions
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionFactory.CreateNew(System.Int64,System.Int64,System.Int32,System.Int64)">
+            <summary>
+            Creates a new CurrencyBudgetTransaction.
+            </summary>
+            <param name="currencyBudgetId">The currency budget identifier.</param>
+            <param name="delta">The transaction delta.</param>
+            <param name="currencyBudgetTransactionTypeId">The currency budget transaction type identifier.</param>
+            <param name="currencyBudgetTransactionTargetId">The currency budget transaction target identifier.</param>
+            <returns>A new CurrencyBudgetTransaction.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionType">
+            <summary>
+            Types of transactions.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionType.ID">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionType.Value">
+            <summary>
+            Gets or sets the transaction type value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.CurrencyBudgetTypeFactory">
+            <summary>
+            Gets PlatformCurrencyBudgetTypes.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTypeFactory" />
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyBudgetTypeFactory.Get(System.Int32)">
+            <summary>
+            Gets an existing PlatformCurrencyBudgetType.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>An existing PlatformCurrencyBudgetType or null.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.CurrencyHolderTypeFactory">
+            <summary>
+            Gets PlatformCurrencyHolderType.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyHolderTypeFactory" />
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyHolderTypeFactory.Get(System.Int32)">
+            <summary>
+            Gets an existing PlatformCurrencyHolderType.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>An existing PlatformCurrencyHolderType or null.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionTypeFactory">
+            <summary>
+            Gets or creates PlatformCurrencyBudgetTransactionTypes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionTypeFactory.GetOrCreate(System.String)">
+            <summary>
+            Gets or creates a PlatformCurrencyBudgetTransactionType.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>New or existing PlatformCurrencyBudgetTransactionType.</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionTypeFactory.Get(System.Int32)">
+            <summary>
+            Gets the an existing PlatformCurrencyBudgetTransactionType.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Existing PlatformCurrencyBudgetTransactionType or null if it does not exist.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetType">
+            <summary>
+            Budget types.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetType.ID">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetType.Value">
+            <summary>
+            Gets or sets the currency budget type.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyHolderType">
+            <summary>
+            Types of currency holders.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyHolderType.ID">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyHolderType.Value">
+            <summary>
+            Gets or sets the currency holder type.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.CurrencyBudgetFactory">
+            <summary>
+            Makes or gets PlatformCurrencyBudget instances.
+            
+            This is misnamed, it's an ICurrencyBudgetFactory that only creates PlatformCurrencyBudgets. 
+            This is for legacy reasons.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetFactory" />
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyBudgetFactory.GetOrCreate(System.String,System.Byte,System.String,System.Int64)">
+            <summary>
+            Creates a new currency budget.
+            </summary>
+            <param name="currencyBudgetType">Type of the currency budget.</param>
+            <param name="currencyTypeId">The currency type identifier.</param>
+            <param name="currencyHolderType">Type of the currency holder.</param>
+            <param name="currencyHolderTargetId">The currency holder target identifier.</param>
+            <returns>A new PlatformCurrencyBudget</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyBudgetFactory.Get(System.Int64)">
+            <summary>
+            Gets an existing PlatformCurrencyBudget.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>
+            Existing CurrencyBudged or null.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.CurrencyBudgetModerationFactory">
+            <summary>
+            Gets CurrencyBudgetTransactions
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetFactory" />
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyBudgetModerationFactory.GetOrCreate(System.String,System.Byte,System.String,System.Int64)">
+            <summary>
+            Creates a new currency budget.
+            </summary>
+            <param name="currencyBudgetType">Type of the currency budget.</param>
+            <param name="currencyTypeId">The currency type identifier.</param>
+            <param name="currencyHolderType">Type of the currency holder.</param>
+            <param name="currencyHolderTargetId">The currency holder target identifier.</param>
+            <returns>
+            A new PlatformCurrencyBudget
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyBudgetModerationFactory.GetTotalNumberOfCurrencyBudgetTransactions(System.Int64)">
+            <summary>
+            Gets the total number of currency budget transactions given a budget id.
+            </summary>
+            <param name="currencyBudgetId">The currency budget identifier.</param>
+            <returns>The count of transactions.</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyBudgetModerationFactory.GetCurrencyBudgetTransactions(System.Int64,System.Int32)">
+            <summary>
+            Gets the currency budget transactions for a budget id.
+            </summary>
+            <param name="currencyBudgetId">The currency budget identifier.</param>
+            <param name="pageNumber">The page number.</param>
+            <returns>A collection of transactions</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyBudgetModerationFactory.TryAdjustCurrencyBudget(System.Int64,System.Int64,System.String,System.Int64,System.String@)">
+            <summary>
+            Tries to adjust the adjust currency budget.
+            
+            Ideally this method should be eliminated in favor of using the correct Credit and Debit methods on PlatformCurrencyBudget, however: 
+            
+            This is used by the endpoint "/users/adjust-xbox-currency-budget" which passes in a const string transactionType of "CS Adjustment"
+            which isn't part of any defined Type and is used to record both credits and debits, which is terrible.
+            
+            It's also used by DebitXboxStep.Rollback which passes in a null for transactoinType, which is worse.
+            
+            These facts make it impossible to convert this method to using the proper PlatformCurrencyBudget classes without a major refactor.
+            
+            TODO: Get rid of this method
+            </summary>
+            <param name="currencyBudgetId">The currency budget identifier.</param>
+            <param name="amount">The amount.</param>
+            <param name="transactionType">Type of the transaction.</param>
+            <param name="transactionTargetId">The transaction target identifier.</param>
+            <param name="errorMessage">The error message.</param>
+            <returns>True if it succeeds, false otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.CurrencyBudgetModerationFactory.Get(System.Int64)">
+            <summary>
+            Gets an existing PlatformCurrencyBudget.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>
+            Existing CurrencyBudged or null.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget">
+            <summary>
+            Tracks the amount and transactions of a currency for a given holder.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget" />
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.Id">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.Value">
+            <summary>
+            Gets the budget value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.CurrencyBudgetType">
+            <summary>
+            Gets the type of the currency budget.
+            </summary>
+            <value>
+            The type of the currency budget.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.CurrencyTypeId">
+            <summary>
+            Gets the currency type identifier.
+            </summary>
+            <value>
+            The currency type identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.CurrencyHolderType">
+            <summary>
+            Gets the type of the currency holder.
+            </summary>
+            <value>
+            The type of the currency holder.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.CurrencyHolderTargetId">
+            <summary>
+            Gets the currency holder target identifier.
+            </summary>
+            <value>
+            The currency holder target identifier.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.#ctor(Roblox.Platform.CurrencyBudgets.ICurrencyBudget,Roblox.Platform.CurrencyBudgets.ICurrencyBudgetFactory,Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTypeFactory,Roblox.Platform.CurrencyBudgets.IPlatformCurrencyHolderTypeFactory,Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionTypeFactory,Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget"/> class.
+            </summary>
+            <param name="currencyBudgetEntity">The currency budget entity.</param>
+            <param name="currencyBudgetFactory">The currency budget factory.</param>
+            <param name="currencyBudgetTypeFactory">The currency budget type factory.</param>
+            <param name="currencyHolderTypeFactory">The currency holder type factory.</param>
+            <param name="CurrencyBudgetTransactionTypeFactory">The currency budget transaction type factory.</param>
+            <param name="currencyBudgetTransactionFactory">The currency budget transaction factory.</param>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.#ctor(Roblox.Platform.CurrencyBudgets.ICurrencyBudget)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget"/> class.
+            </summary>
+            <param name="currencyBudgetEntity">The currency budget entity.</param>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.Credit(System.Int64,System.String,System.Int64)">
+            <summary>
+            Credits the specified amount to the CurrencyBudget.
+            </summary>
+            <param name="amount">The amount.</param>
+            <param name="transactionType">Type of the transaction.</param>
+            <param name="transactionTargetId">The transaction target identifier.</param>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudget.Debit(System.Int64,System.String,System.Int64)">
+            <summary>
+            Tries to debit from the CurrencyBudget. Returns true if the debit succeeded, 
+            false if there was not enough money in the CurrencyBudget to cover the amount.
+            </summary>
+            <param name="amount">The amount to debit.</param>
+            <param name="transactionType">Type of transaction.</param>
+            <param name="transactionTargetId">The transaction target identifier.</param>
+            <returns>true if the debit succeeded, 
+            false if the amount was greater than the current credit.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction">
+            <summary>
+            Tracks the amount and transactions of a currency for a given holder.
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction" />
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.Id">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.CurrencyBudgetId">
+            <summary>
+            Gets the currency budget identifier.
+            </summary>
+            <value>
+            The currency budget identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.Delta">
+            <summary>
+            Gets the delta of the transaction.
+            </summary>
+            <value>
+            The delta.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.CurrencyBudgetTransactionTypeId">
+            <summary>
+            Gets the currency budget transaction type identifier.
+            </summary>
+            <value>
+            The currency budget transaction type identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.CurrencyBudgetTransactionType">
+            <summary>
+            Gets the type of the currency budget transaction.
+            </summary>
+            <value>
+            The type of the currency budget transaction.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.CurrencyBudgetTransactionTargetId">
+            <summary>
+            Gets the currency budget transaction target identifier.
+            </summary>
+            <value>
+            The currency budget transaction target identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.Created">
+            <summary>
+            Gets the date and time this transaction happened.
+            </summary>
+            <value>
+            The created.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.#ctor(Roblox.Platform.CurrencyBudgets.Entities.CurrencyBudgetTransaction,Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTransactionTypeFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction"/> class.
+            </summary>
+            <param name="currencyBudgetTransactionEntity">The currency budget transaction entity.</param>
+            <param name="platformCurrencyBudgetTransactionTypeFactory">The platform currency budget transaction type factory.</param>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.PlatformCurrencyBudgetTransaction.Delete">
+            <summary>
+            Deletes this instance.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.ICurrencyBudget">
+            <summary>
+            Tracks the amount and transactions of a currency for a given holder.
+            
+            This interface is required so the tests can mock out the db interaction and 
+            emulated the logic in the CurrencyBudget Entity and the TryDebit stored procedure. 
+            (yes, there is a TryDebit SP and yes it does validate the value of the amount too)
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget" />
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.ID">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.CurrencyBudgetTypeID">
+            <summary>
+            Gets or sets the currency budget type identifier.
+            </summary>
+            <value>
+            The currency budget type identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.CurrencyTypeID">
+            <summary>
+            Gets or sets the currency type identifier.
+            </summary>
+            <value>
+            The currency type identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.CurrencyHolderTypeID">
+            <summary>
+            Gets or sets the currency holder type identifier.
+            </summary>
+            <value>
+            The currency holder type identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.CurrencyHolderTargetID">
+            <summary>
+            Gets or sets the currency holder target identifier.
+            </summary>
+            <value>
+            The currency holder target identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>
+            The credit value of this budget.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.Delete">
+            <summary>
+            Deletes this instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.Credit(System.Int64)">
+            <summary>
+            Credits the specified amount to the CurrencyBudget.
+            </summary>
+            <param name="amount">The amount.</param>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudget.TryDebit(System.Int64)">
+            <summary>
+            Tries to debit from the CurrencyBudget. Returns true if the debit succeeded, 
+            false if there was not enough money in the CurrencyBudget to cover the amount.
+            </summary>
+            <param name="amount">The amount to debit.</param>
+            <returns>true if the debit succeeded, 
+            false if the amount was greater than the current credit.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetFactory">
+            <summary>
+            Makes or gets PlatformCurrencyBudget instances
+            
+            This is misnamed, it's an ICurrencyBudgetFactory that only creates PlatformCurrencyBudgets. 
+            This is for legacy reasons.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetFactory.GetOrCreate(System.String,System.Byte,System.String,System.Int64)">
+            <summary>
+            Gets or creates a new currency budget.
+            </summary>
+            <param name="currencyBudgetType">Type of the currency budget.</param>
+            <param name="currencyTypeId">The currency type identifier.</param>
+            <param name="currencyHolderType">Type of the currency holder.</param>
+            <param name="currencyHolderTargetId">The currency holder target identifier.</param>
+            <returns>A new PlatformCurrencyBudget</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetFactory.Get(System.Int64)">
+            <summary>
+            Gets an existing PlatformCurrencyBudget.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Existing CurrencyBudged or null.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTypeFactory">
+            <summary>
+            Gets PlatformCurrencyBudgetTypes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudgetTypeFactory.Get(System.Int32)">
+            <summary>
+            Gets an existing PlatformCurrencyBudgetType.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>An existing PlatformCurrencyBudgetType or null.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyHolderTypeFactory">
+            <summary>
+            Gets PlatformCurrencyHolderType.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyHolderTypeFactory.Get(System.Int32)">
+            <summary>
+            Gets an existing PlatformCurrencyHolderType.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>An existing PlatformCurrencyHolderType or null.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget">
+            <summary>
+            Tracks the amount and transactions of a currency for a given holder.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget.Id">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget.Value">
+            <summary>
+            Gets the budget value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget.CurrencyBudgetType">
+            <summary>
+            Gets the type of the currency budget.
+            </summary>
+            <value>
+            The type of the currency budget.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget.CurrencyTypeId">
+            <summary>
+            Gets the currency type identifier.
+            </summary>
+            <value>
+            The currency type identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget.CurrencyHolderType">
+            <summary>
+            Gets the type of the currency holder.
+            </summary>
+            <value>
+            The type of the currency holder.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget.CurrencyHolderTargetId">
+            <summary>
+            Gets the currency holder target identifier.
+            </summary>
+            <value>
+            The currency holder target identifier.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget.Credit(System.Int64,System.String,System.Int64)">
+            <summary>
+            Credits the specified amount to the CurrencyBudget.
+            </summary>
+            <param name="amount">The amount.</param>
+            <param name="transactionType">Type of the transaction.</param>
+            <param name="transactionTargetId">The transaction target identifier.</param>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.IPlatformCurrencyBudget.Debit(System.Int64,System.String,System.Int64)">
+            <summary>
+            Tries to debit from the CurrencyBudget. Returns true if the debit succeeded, 
+            false if there was not enough money in the CurrencyBudget to cover the amount.
+            </summary>
+            <param name="amount">The amount to debit.</param>
+            <param name="transactionType">Type of transaction.</param>
+            <param name="transactionTargetId">The transaction target identifier.</param>
+            <returns>true if the debit succeeded, 
+            false if the amount was greater than the current credit.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetModerationFactory">
+            <summary>
+            Gets CurrencyBudgetTransactions
+            </summary>
+            <seealso cref="T:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetFactory" />
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetModerationFactory.GetTotalNumberOfCurrencyBudgetTransactions(System.Int64)">
+            <summary>
+            Gets the total number of currency budget transactions given a budget id.
+            </summary>
+            <param name="currencyBudgetId">The currency budget identifier.</param>
+            <returns>The count of transactions.</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetModerationFactory.GetCurrencyBudgetTransactions(System.Int64,System.Int32)">
+            <summary>
+            Gets the currency budget transactions for a budget id.
+            </summary>
+            <param name="currencyBudgetId">The currency budget identifier.</param>
+            <param name="pageNumber">The page number.</param>
+            <returns>A collection of transactions</returns>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetModerationFactory.TryAdjustCurrencyBudget(System.Int64,System.Int64,System.String,System.Int64,System.String@)">
+            <summary>
+            Tries to adjust the adjust currency budget.
+            </summary>
+            <param name="currencyBudgetId">The currency budget identifier.</param>
+            <param name="amount">The amount.</param>
+            <param name="transactionType">Type of the transaction.</param>
+            <param name="transactionTargetId">The transaction target identifier.</param>
+            <param name="errorMessage">The error message.</param>
+            <returns>True if it succeeds, false otherwise.</returns>
+        </member>
+        <member name="T:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction">
+            <summary>
+            Tracks the amount and transactions of a currency for a given holder.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction.Id">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction.CurrencyBudgetId">
+            <summary>
+            Gets the currency budget identifier.
+            </summary>
+            <value>
+            The currency budget identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction.Delta">
+            <summary>
+            Gets the delta of the transaction.
+            </summary>
+            <value>
+            The delta.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction.CurrencyBudgetTransactionTypeId">
+            <summary>
+            Gets the currency budget transaction type identifier.
+            </summary>
+            <value>
+            The currency budget transaction type identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction.CurrencyBudgetTransactionType">
+            <summary>
+            Gets the type of the currency budget transaction.
+            </summary>
+            <value>
+            The type of the currency budget transaction.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction.CurrencyBudgetTransactionTargetId">
+            <summary>
+            Gets the currency budget transaction target identifier.
+            </summary>
+            <value>
+            The currency budget transaction target identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction.Created">
+            <summary>
+            Gets the date and time this transaction happened.
+            </summary>
+            <value>
+            The created.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.CurrencyBudgets.ICurrencyBudgetTransaction.Delete">
+            <summary>
+            Deletes this transaction.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1465 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.PremiumFeatures</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.PremiumFeatures.MembershipMigrationState">
+            <summary>
+            MembershipMigration states, DescriptionAttributes have to match values in RobloxPremiumFeatures table
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MigrationStateConverter.GetIdByEnum(Roblox.PremiumFeatures.MembershipMigrationState)">
+            <summary>
+            Gets the ID associated with the <see cref="T:Roblox.PremiumFeatures.MembershipMigrationStateEntity"/>
+            </summary>
+            <param name="migrationState"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Implementation.RobuxStipendFactory">
+            <summary>
+            RobuxStipendFactory
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendFactory.Get(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendFactory.GetByAccountId(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendFactory.LeaseRobuxStipends(System.Guid,System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendFactory.LeaseRobuxStipend(System.Int64,System.Guid,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendFactory.UpdateRobuxStipend(Roblox.PremiumFeatures.RobuxStipend,System.Nullable{System.Byte},System.Byte,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Implementation.RobuxStipendModel">
+            <summary>
+            RobuxStipendModel
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendModel.ID">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendModel.AccountID">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendModel.RobuxStipendQuantityTypeID">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendModel.LastAwarded">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendModel.Expiration">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendModel.RobuxStipendFrequencyTypeID">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendModel.NextDistribution">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendModel.#ctor(System.Int64,System.Int64,System.Byte,System.Nullable{System.DateTime},System.DateTime,System.Nullable{System.Byte},System.Nullable{System.DateTime})">
+            <summary>
+            Construct new RobuxStipendModel
+            </summary>
+            <param name="id"></param>
+            <param name="accountId"></param>
+            <param name="robuxStipendQuantityTypeID"></param>
+            <param name="lastAwarded"></param>
+            <param name="expiration"></param>
+            <param name="robuxStipendFrequencyTypeID"></param>
+            <param name="nextDistribution"></param>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Implementation.AccountAddOnModel">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.AccountId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.PremiumFeatureId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.Renewal">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.Expiration">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.RobuxStipendId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.Created">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.RenewedSince">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.AccountAddOnTypeName">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.IsLifetime">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnModel.#ctor(System.Int32,System.Int64,System.Int32,System.Nullable{System.DateTime},System.DateTime,System.Nullable{System.Int64},System.DateTime,System.Nullable{System.DateTime},System.String,System.String,System.Boolean)">
+            <summary>
+            Create new AccountAddOnModel
+            </summary>
+            <param name="id">AccountAddOn id</param>
+            <param name="accountId">Account id</param>
+            <param name="premiumFeatureId">PremiumFeature id</param>
+            <param name="renewal">Renewal date</param>
+            <param name="expiration">Expiration date</param>
+            <param name="robuxStipendId">Robux stipend id</param>
+            <param name="created">Created date</param>
+            <param name="renewedSince">Original renewal date</param>
+            <param name="name">PremiumFeature name</param>
+            <param name="accountAddOnTypeName">AccountAddOn type name</param>
+            <param name="isLifetime">Is lifetime</param>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory">
+            <summary>
+            Factory for AccountAddOns
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.GetSubscriptionAccountAddOnForAccountId(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.GetAccountAddOnsByPremiumFeatureIDRenewalIsNullAndExpirationRange(System.Int32,System.DateTime,System.DateTime,System.Boolean,System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.LeaseWorkItems(System.Guid,System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.LeaseAccountAddOnToMigrate(System.Int32,System.Guid,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.UpdateAddOnToUsePremiumFeatureId(Roblox.PremiumFeatures.AccountAddOn,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.GetBuildersClubMembershipAccountAddOn(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.CancelMembershipForAccountId(System.Int64,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.ReverseBuildersClubCancellationMembershipForAccountId(System.Int64,Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.UpdateSubscriptionForAccountId(System.Int64,System.Int32,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.UpdateSubscriptionForAccountId(System.Int32,System.Int32,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.AccountAddOnFactory.IsPremiumAccount(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.AccountAddOnTypeId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.DurationTypeId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.IsRenewal">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.RobuxCreditQuantityTypeId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.RobuxStipendQuantityTypeId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.RobuxStipendFrequencyTypeId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.ShowcaseAllotmentTypeId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.ContentPrivilegeTypeId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.AdvertisingSuppressionTypeId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.GrantedAssetListId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.GrantedBadgeListId">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.IsAnyBuildersClub">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.IsPremium">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.IsBuildersClub">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.IsTurboBuildersClub">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.IsOutrageousBuildersClub">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureModel.#ctor(System.Int32,System.String,System.Byte,System.Byte,System.Boolean,System.Byte,System.Byte,System.Nullable{System.Byte},System.Byte,System.Byte,System.Byte,System.Int32,System.Byte,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Create PremiumFeature model
+            </summary>
+            <param name="id">PremiumFeature id</param>
+            <param name="name">Name</param>
+            <param name="accountAddOnTypeId">AccountAddOn type id</param>
+            <param name="durationTypeId">Duration type id</param>
+            <param name="isRenewal">Is renewal</param>
+            <param name="robuxCreditQuantityTypeId">Robux credit quantity type id</param>
+            <param name="robuxStipendQuantityTypeId">Robux stipend quantity type id</param>
+            <param name="robuxStipendFrequencyTypeId">Robux stipend frequency type id</param>
+            <param name="showcaseAllotmentTypeId">Showcase allotment type id</param>
+            <param name="contentPrivilegeTypeId">Content privilege type id</param>
+            <param name="advertisingSuppressionTypeId">Advertising suppression type id</param>
+            <param name="grantedAssetListId">Granted asset list id</param>
+            <param name="grantedBadgeListId">Granted badge list id</param>
+            <param name="isAnyBuildersClub">Is any Builders Club</param>
+            <param name="isPremium">Is any Subscription</param>
+            <param name="isBuildersClub">Is classic Builders Club</param>
+            <param name="isTurboBuildersClub">Is turbo Builders Club</param>
+            <param name="isOutrageousBuildersClub">is outrageous Builders Club</param>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.GetNonRenewalFeatureList">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BCMonthly">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BC1Month">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BC30Days">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BC90Days">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BC45Days">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BC6Months">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BC6MonthsRenewing">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BC12Months">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BC12MonthsRenewing">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.BCLifetime">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.TBCMonthly">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.TBC1Month">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.TBC6Months">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.TBC6MonthsRenewing">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.TBC12Months">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.TBC12MonthsRenewing">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.TBCLifetime">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.OBCMonthly">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.OBC1Month">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.OBC6Months">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.OBC6MonthsRenewing">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.OBC12Months">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.OBC12MonthsRenewing">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.OBCLifetime">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux450">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux731">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux1000">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux1005">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux2000">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux2004">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux2750">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux2755">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux4500">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux6000">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux10000">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux15000">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux22500">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Robux35000">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.GetPremiumFeaturesByAccountAddOnTypeIdPaged(System.Int32,System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.Get(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.GetByName(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.PremiumFeatureFactory.MustGet(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeModel">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeModel.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeModel.Amount">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeModel.#ctor(System.Byte,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeFactory">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeFactory.NoneId">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeFactory.FifteenId">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeFactory.ThirtyFiveId">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeFactory.SixtyId">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeFactory.OneHundredId">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Implementation.RobuxStipendQuantityTypeFactory.Get(System.Byte)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.IGrantedItemEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IGrantedItemEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemEntityFactory.GetByGrantedItemListIdEnumerative(System.Int64,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.PremiumFeatures.IGrantedItemEntity"/>s by their grantedItemListId.
+            </summary>
+            <param name="grantedItemListId">The ID of the granted item list to retrieve items for.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.PremiumFeatures.IGrantedItemEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemEntityFactory.Create(System.Int64,System.Byte,System.Int64)">
+            <summary>
+            Creates an <see cref="T:Roblox.PremiumFeatures.IGrantedItemEntity"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntityFactory.GetOrCreate(System.Byte,System.Int64)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntity"/> with the given grantedItemTypeId and premiumFeatureActivationTaskId.
+            </summary>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntity"/> with the given grantedItemTypeId and premiumFeatureActivationTaskId.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntityFactory.LeaseTasks(System.Byte,System.Guid,System.Int32,System.Int32)">
+            <summary>
+            Leases a set of <see cref="T:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntity"/> from the database
+            </summary>
+            <param name="grantedItemTypeId">The specific grantedItemTypeId we are asking to lease.</param>
+            <param name="workerId">The workerId that will be used to mark who is processing each task.</param>
+            <param name="leaseDurationInMinutes">How many minutes to hold a lease on the tasks.</param>
+            <param name="maxToLease">The maximum number of tasks to lease in this request.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            - <paramref name="leaseDurationInMinutes"/>
+            - <paramref name="maxToLease"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemListEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.IGrantedItemListEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IGrantedItemListEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemListEntityFactory.Create(System.String)">
+            <summary>
+            Creates an <see cref="T:Roblox.PremiumFeatures.IGrantedItemListEntity"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.IGrantedItemTypeEntityFactory.Asset">
+            <summary>
+            The GrantedItemType for Assets 
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.IGrantedItemTypeEntityFactory.Bundle">
+            <summary>
+            The GrantedItemType for Bundles 
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.IGrantedItemTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IGrantedItemTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IGrantedItemTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.PremiumFeatures.IGrantedItemTypeEntity"/> with the given value.
+            </summary>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IGrantedItemTypeEntity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity">
+            <summary>
+            The various frequencies that a <see cref="T:Roblox.PremiumFeatures.RobuxStipend"/> may be awarded.
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity.#ctor">
+            <summary>
+            The rate at which a Robux stipend is distributed/awarded.
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType">
+            <summary>
+            Represents the frequency of a repeating event.
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType.None">
+            <summary>
+            This event does not repeat.
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType.Daily">
+            <summary>
+            This event repeats every day.
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType.Monthly">
+            <summary>
+            This event repeats every month.
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeConverter">
+            <summary>
+            Converts <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/> enums to IDs.
+            </summary>
+            <seealso cref="T:Roblox.PremiumFeatures.Interfaces.Converters.IRobuxStipendFrequencyTypeConverter" />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeConverter.#ctor(Roblox.PremiumFeatures.Interfaces.EntityFactories.IRobuxStipendFrequencyTypeEntityFactory,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeConverter"/> class.
+            </summary>
+            <param name="robuxStipendFrequencyTypeEntityFactory">The <see cref="P:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeConverter.RobuxStipendFrequencyTypeEntityFactory"/>.</param>
+            <param name="logger">The logger used to log issues.</param>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeConverter.GetIdByType(Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType)">
+            <summary>
+            Gets the ID associated with the <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/>
+            </summary>
+            <param name="frequencyType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeConverter.GetTypeById(System.Byte)">
+            <summary>
+            Gets the<see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/> associated with the given id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeEntityFactory">
+            <summary>
+            The entity factory for <see cref="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets a <see cref="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity"/> by ID
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.RobuxStipendFrequencyTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets a <see cref="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity"/> by value
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStateEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets a <see cref="T:Roblox.PremiumFeatures.MembershipMigrationStateEntity"/> by value
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.Get(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.GetOrCreate(System.Int64,System.Int32,System.Int32,System.Nullable{System.DateTime},System.Int32,Roblox.PremiumFeatures.MembershipMigrationState)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.GetByAccountId(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.Create(System.Int64,Roblox.PremiumFeatures.MembershipMigrationState)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdateMembershipMigrationStateById(System.Int64,Roblox.PremiumFeatures.MembershipMigrationState)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdateOriginalPremiumFeatureIdById(System.Int64,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdateOriginalPremiumFeatureIdByAccountId(System.Int64,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdateUpdatedPremiumFeatureIdById(System.Int64,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdateUpdatedPremiumFeatureIdByAccountId(System.Int64,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdatePremiumStartDateById(System.Int64,System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdatePremiumStartDateByAccountId(System.Int64,System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdateRobuxDistributionAmountById(System.Int64,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.PremiumFeatures.MembershipMigrationStatusEntityFactory.UpdateRobuxDistributionAmountByAccountId(System.Int64,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel">
+            <summary>
+            AccountAddOnModel interface
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.Id">
+            <summary>
+            AccountAddOn id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.AccountId">
+            <summary>
+            Account id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.PremiumFeatureId">
+            <summary>
+            PremiumFeature id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.Renewal">
+            <summary>
+            Renewal date
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.Expiration">
+            <summary>
+            Expiration date
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.RobuxStipendId">
+            <summary>
+            Robux stipend id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.Created">
+            <summary>
+            Created date
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.RenewedSince">
+            <summary>
+            Original renewal date
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.Name">
+            <summary>
+            Name of premiumFeature
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.AccountAddOnTypeName">
+            <summary>
+            Name of AccountAddOnType
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel.IsLifetime">
+            <summary>
+            Is lifetime
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory">
+            <summary>
+            Interface for AccountAddOnFactory
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.GetSubscriptionAccountAddOnForAccountId(System.Int64)">
+            <summary>
+            Get Subscription AccountAddOn for long AccountId
+            </summary>
+            <param name="accountId">Account Id</param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.GetAccountAddOnsByPremiumFeatureIDRenewalIsNullAndExpirationRange(System.Int32,System.DateTime,System.DateTime,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Get AccountAddOns by params
+            </summary>
+            <param name="premiumFeatureId">PremiumFeature Id</param>
+            <param name="minimumExpiration">Min expiration</param>
+            <param name="maximumExpiration">Max expiration</param>
+            <param name="isRenewal">Is renewal</param>
+            <param name="startRowIndex">Start row index</param>
+            <param name="maximumRows">Max rows</param>
+            <returns>Collection of <see cref="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.LeaseWorkItems(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            Get lease work items
+            </summary>
+            <param name="workerId">Worker Id</param>
+            <param name="leaseDurationInMinutes">Lease duration in minutes</param>
+            <param name="numberOfItems">Number of items</param>
+            <returns>Collection of <see cref="T:Roblox.IParallelWorkTask"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.LeaseAccountAddOnToMigrate(System.Int32,System.Guid,System.Int32)">
+            <summary>
+            Lease an AccountAddOn by id for update in premium migration.
+            </summary>
+            <param name="id">AccountAddOn ID</param>
+            <param name="workerId">Worker Id</param>
+            <param name="leaseDurationInMinutes">Lease duration in minutes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.UpdateAddOnToUsePremiumFeatureId(Roblox.PremiumFeatures.AccountAddOn,System.Int32)">
+            <summary>
+            Update an AccountAddOn with new premiumFeatureId.
+            </summary>
+            <param name="accountAddOn"></param>
+            <param name="premiumFeatureId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.GetBuildersClubMembershipAccountAddOn(System.Int64)">
+            <summary>
+            Get BuildersClub membership AccountAddOn using long accountId
+            </summary>
+            <param name="accountId">Account Id</param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.CancelMembershipForAccountId(System.Int64,System.Boolean)">
+            <summary>
+            Cancel membership AccountAddOn using long accountId
+            </summary>
+            <param name="accountId">Account Id</param>
+            <param name="isImmediate">Should expire immediately</param>
+            <returns>Original <see cref="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.ReverseBuildersClubCancellationMembershipForAccountId(System.Int64,Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel)">
+            <summary>
+            Reverse Builders club cancellation for long accountId
+            </summary>
+            <param name="accountId">Account Id</param>
+            <param name="originalAccountAddOnModel">original <see cref="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel"/></param>
+            <returns>Updated <see cref="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.UpdateSubscriptionForAccountId(System.Int64,System.Int32,System.Boolean)">
+            <summary>
+            Updates a Subscription Membership to the provided Premium Feature ID using long accountId
+            </summary>
+            <param name="accountId">Account Id</param>
+            <param name="premiumFeatureId">The Id of the new premium feature</param>
+            <returns>Original <see cref="T:Roblox.PremiumFeatures.Interfaces.IAccountAddOnModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.IsPremiumAccount(System.Int64)">
+            <summary>
+            Returns if Account is Premium
+            </summary>
+            <param name="accountId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IAccountAddOnFactory.GetRobuxStipendAmount(System.Int64)">
+            <summary>
+            Returns Robux stipend amount for latest active account add on
+            </summary>
+            <param name="accountId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel">
+            <summary>
+            PremiumFeature Model
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.Id">
+            <summary>
+            PremiumFeature id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.AccountAddOnTypeId">
+            <summary>
+            AccountAddOn type id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.DurationTypeId">
+            <summary>
+            Duration type id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.IsRenewal">
+            <summary>
+            Is renewal
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.RobuxCreditQuantityTypeId">
+            <summary>
+            Robux credit quantity type id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.RobuxStipendQuantityTypeId">
+            <summary>
+            Robux stipend quantity type id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.RobuxStipendFrequencyTypeId">
+            <summary>
+            Robux stipend frequency type id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.ShowcaseAllotmentTypeId">
+            <summary>
+            Showcase allotment type id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.ContentPrivilegeTypeId">
+            <summary>
+            Content privilege type id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.AdvertisingSuppressionTypeId">
+            <summary>
+            Advertising suppression type id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.GrantedAssetListId">
+            <summary>
+            Granted asset list id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.GrantedBadgeListId">
+            <summary>
+            Granted badge list id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.IsAnyBuildersClub">
+            <summary>
+            Is any Builders Club
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.IsPremium">
+            <summary>
+            Is Premium member
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.IsBuildersClub">
+            <summary>
+            Is classic Builders Club
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.IsTurboBuildersClub">
+            <summary>
+            Is turbo Builders Club
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel.IsOutrageousBuildersClub">
+            <summary>
+            Is outrageous Builders Club
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory">
+            <summary>
+            Interface for PremiumFeature factory
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.GetNonRenewalFeatureList">
+            <summary>
+            Get NonRenewal feature list
+            </summary>
+            <returns>Collection of <see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BCMonthly">
+            <summary>
+            PremiumFeature for BuildersClub monthly
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BC1Month">
+            <summary>
+            PremiumFeature for BuildersClub 1 month
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BC30Days">
+            <summary>
+            PremiumFeature for BuildersClub 30 days
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BC90Days">
+            <summary>
+            PremiumFeature for BuildersClub 90 days
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BC45Days">
+            <summary>
+            PremiumFeature for BuildersClub 45 days
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BC6Months">
+            <summary>
+            PremiumFeature for BuildersClub 6 months
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BC6MonthsRenewing">
+            <summary>
+            PremiumFeature for BuildersClub 6 months renewing
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BC12Months">
+            <summary>
+            PremiumFeature for BuildersClub 12 months
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BC12MonthsRenewing">
+            <summary>
+            PremiumFeature for BuildersClub 12 months renewing
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.BCLifetime">
+            <summary>
+            PremiumFeature for BuildersClub lifetime
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.TBCMonthly">
+            <summary>
+            PremiumFeature for Turbo BuildersClub monthly
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.TBC1Month">
+            <summary>
+            PremiumFeature for Turbo BuildersClub 1 month
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.TBC6Months">
+            <summary>
+            PremiumFeature for Turbo BuildersClub 6 months
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.TBC6MonthsRenewing">
+            <summary>
+            PremiumFeature for Turbo BuildersClub 6 months renewing
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.TBC12Months">
+            <summary>
+            PremiumFeature for Turbo BuildersClub 12 months
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.TBC12MonthsRenewing">
+            <summary>
+            PremiumFeature for Turbo BuildersClub 12 months renewing
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.TBCLifetime">
+            <summary>
+            PremiumFeature for Turbo BuildersClub lifetime
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.OBCMonthly">
+            <summary>
+            PremiumFeature for Outrageous BuildersClub monthly
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.OBC1Month">
+            <summary>
+            PremiumFeature for Outrageous BuildersClub 1 month
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.OBC6Months">
+            <summary>
+            PremiumFeature for Outrageous BuildersClub 6 months
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.OBC6MonthsRenewing">
+            <summary>
+            PremiumFeature for Outrageous BuildersClub 6 months renewing
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.OBC12Months">
+            <summary>
+            PremiumFeature for Outrageous BuildersClub 12 months
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.OBC12MonthsRenewing">
+            <summary>
+            PremiumFeature for Outrageous BuildersClub 12 months renewing
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.OBCLifetime">
+            <summary>
+            PremiumFeature for Outrageous BuildersClub lifetime
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux450">
+            <summary>
+            PremiumFeature for 450 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux731">
+            <summary>
+            PremiumFeature for 731 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux1000">
+            <summary>
+            PremiumFeature for 1000 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux1005">
+            <summary>
+            PremiumFeature for 1005 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux2000">
+            <summary>
+            PremiumFeature for 2000 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux2004">
+            <summary>
+            PremiumFeature for 2004 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux2750">
+            <summary>
+            PremiumFeature for 2750 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux2755">
+            <summary>
+            PremiumFeature for 2755 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux4500">
+            <summary>
+            PremiumFeature for 4500 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux6000">
+            <summary>
+            PremiumFeature for 6000 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux10000">
+            <summary>
+            PremiumFeature for 10000 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux15000">
+            <summary>
+            PremiumFeature for 15000 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux22500">
+            <summary>
+            PremiumFeature for 22500 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Robux35000">
+            <summary>
+            PremiumFeature for 35000 Robux
+            </summary>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.GetPremiumFeaturesByAccountAddOnTypeIdPaged(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get premiumFeatures by AccountAddOnType
+            </summary>
+            <param name="accountAddOnTypeId">AccountAddOn type id</param>
+            <param name="startRowIndex">Start row index</param>
+            <param name="maximumRows">Max rows</param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.Get(System.Int32)">
+            <summary>
+            Get premiumFeature by id
+            </summary>
+            <param name="id">PremiumFeature id</param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.GetByName(System.String)">
+            <summary>
+            Get premiumFeature by name
+            </summary>
+            <param name="name">Name</param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureFactory.MustGet(System.Int32)">
+            <summary>
+            Get premiumFeature by id
+            </summary>
+            <param name="id">PremiumFeature id</param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel"/></returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IRobuxStipendFactory">
+            <summary>
+            IRobuxStipendFactory interface
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendFactory.Get(System.Int64)">
+            <summary>
+            Get a RobuxStipendModel
+            </summary>
+            <param name="id">RobuxStipend ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendFactory.GetByAccountId(System.Int64)">
+            <summary>
+            Get a collection of RobuxStipend by accountId
+            </summary>
+            <param name="accountId">account id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendFactory.LeaseRobuxStipends(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            Lease numberOfItems numbers of RobuxStipend, update workerId, set leaseDurationInMinutes
+            </summary>
+            <param name="workerId">Guid</param>
+            <param name="leaseDurationInMinutes">lease duration in minutes</param>
+            <param name="numberOfItems">numberOfItems</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendFactory.LeaseRobuxStipend(System.Int64,System.Guid,System.Int32)">
+            <summary>
+            Lease a single RobuxStipend by its ID.
+            </summary>
+            <param name="id">RobuxStipend ID</param>
+            <param name="workerId">Guid</param>
+            <param name="leaseDurationInMinutes">lease duration in minutes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendFactory.UpdateRobuxStipend(Roblox.PremiumFeatures.RobuxStipend,System.Nullable{System.Byte},System.Byte,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Update RobuxStipend with values.
+            </summary>
+            <param name="robuxStipend">robuxStipend to be updated</param>
+            <param name="robuxStipendFrequencyTypeID">robuxStipendFrequencyTypeID</param>
+            <param name="robuxStipendQuantityTypeID">robuxStipendQuantityTypeID</param>
+            <param name="lastAwarded">lastAwarded datetime</param>
+            <param name="nextDistribution">nextDistribution datetime</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IRobuxStipendModel">
+            <summary>
+            IRobuxStipendModel interface
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendModel.ID">
+            <summary>
+            RobuxStipend ID
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendModel.AccountID">
+            <summary>
+            AccountID
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendModel.RobuxStipendQuantityTypeID">
+            <summary>
+            RobuxStipendQuantityTypeID
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendModel.LastAwarded">
+            <summary>
+            LastAwarded DateTime
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendModel.Expiration">
+            <summary>
+            Expiration DateTime
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendModel.RobuxStipendFrequencyTypeID">
+            <summary>
+            RobuxStipendFrequencyTypeID
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendModel.NextDistribution">
+            <summary>
+            NextDistribution DateTime
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeModel">
+            <summary>
+            Robux stipend quantity type model
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeModel.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeModel.Amount">
+            <summary>
+            Amount
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeFactory">
+            <summary>
+            Robux stipend quantity type factory
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeFactory.NoneId">
+            <summary>
+            None id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeFactory.FifteenId">
+            <summary>
+            15 id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeFactory.ThirtyFiveId">
+            <summary>
+            35 id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeFactory.SixtyId">
+            <summary>
+            60 id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeFactory.OneHundredId">
+            <summary>
+            100 id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeFactory.Get(System.Byte)">
+            <summary>
+            Get Robux stipend quantity type model by id
+            </summary>
+            <param name="id">Id</param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeModel"/></returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.IBCMembershipToPremiumConverter">
+            <summary>
+            Provides a common interface for an object that can convert a <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/> into an ID.
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.IBCMembershipToPremiumConverter.MapBCToPremiumProduct(Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel)">
+            <summary>
+            Gets the ID of a <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/>
+            </summary>
+            <param name="robuxStipendFrequencyType">The <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/>.</param>
+            <returns>The ID of the <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/>.</returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.Converters.IRobuxStipendFrequencyTypeConverter">
+            <summary>
+            Provides a common interface for an object that can convert a <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/> into an ID.
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.Converters.IRobuxStipendFrequencyTypeConverter.GetIdByType(Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType)">
+            <summary>
+            Gets the ID of a <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/>
+            </summary>
+            <param name="robuxStipendFrequencyType">The <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/>.</param>
+            <returns>The ID of the <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/>.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.Converters.IRobuxStipendFrequencyTypeConverter.GetTypeById(System.Byte)">
+            <summary>
+            Gets a <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/> by its ID.
+            </summary>
+            <param name="id">The ID of the <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/> to get.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/> for the given ID, or null if no <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType"/> is associated with the given ID.</returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity">
+            <summary>
+            An interface for the <see cref="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity.Value">
+            <summary>
+            The value of the <see cref="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Interfaces.EntityFactories.IRobuxStipendFrequencyTypeEntityFactory">
+            <summary>
+            The Entity Factory for <see cref="T:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.EntityFactories.IRobuxStipendFrequencyTypeEntityFactory.Get(System.Byte)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Interfaces.EntityFactories.IRobuxStipendFrequencyTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity"/> with the given value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStateEntityFactory.Get(System.Int32)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStateEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStateEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStateEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStateEntity"/> by its value.
+            </summary>
+            <param name="value">The value</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStateEntity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStatusEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStatusEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.GetOrCreate(System.Int64,System.Int32,System.Int32,System.Nullable{System.DateTime},System.Int32,Roblox.PremiumFeatures.MembershipMigrationState)">
+            <summary>
+            Get or create a MembershipMigrationStatus Entity
+            </summary>
+            <param name="accountId"></param>
+            <param name="originalPremiumFeatureId"></param>
+            <param name="updatedPremiumFeatureId"></param>
+            <param name="premiumStartDate"></param>
+            <param name="robuxDistributionAmount"></param>
+            <param name="migrationState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.GetByAccountId(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStatusEntity"/> by Account ID.
+            </summary>
+            <param name="accountId">The Account ID.</param>
+            <returns>The <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStatusEntity"/> with the given account ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.Create(System.Int64,Roblox.PremiumFeatures.MembershipMigrationState)">
+            <summary>
+            Create a new MembershipMigrationStatus Entity
+            </summary>
+            <param name="accountId"></param>
+            <param name="migrationState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdateMembershipMigrationStateById(System.Int64,Roblox.PremiumFeatures.MembershipMigrationState)">
+            <summary>
+            Updates the MigrationState
+            </summary>
+            <param name="id"></param>
+            <param name="migrationState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdateMembershipMigrationStateByAccountId(System.Int64,Roblox.PremiumFeatures.MembershipMigrationState)">
+            <summary>
+            Updates the MigrationState by Account ID
+            </summary>
+            <param name="accountId"></param>
+            <param name="migrationState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdateOriginalPremiumFeatureIdById(System.Int64,System.Int32)">
+            <summary>
+            Updates the Original PremiumFeature Id
+            </summary>
+            <param name="id"></param>
+            <param name="premiumFeatureId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdateOriginalPremiumFeatureIdByAccountId(System.Int64,System.Int32)">
+            <summary>
+            Updates the Original PremiumFeature by Account ID
+            </summary>
+            <param name="accountId"></param>
+            <param name="premiumFeatureId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdateUpdatedPremiumFeatureIdById(System.Int64,System.Int32)">
+            <summary>
+            Updates the Updated PremiumFeatureId
+            </summary>
+            <param name="id"></param>
+            <param name="premiumFeatureId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdateUpdatedPremiumFeatureIdByAccountId(System.Int64,System.Int32)">
+            <summary>
+            Updates the Updated PremiumFeatureId by Account ID
+            </summary>
+            <param name="accountId"></param>
+            <param name="premiumFeatureId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdatePremiumStartDateById(System.Int64,System.DateTime)">
+            <summary>
+            Updates the Premium Start date
+            </summary>
+            <param name="id"></param>
+            <param name="premiumStartDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdatePremiumStartDateByAccountId(System.Int64,System.DateTime)">
+            <summary>
+            Updates the Premium Start date by Account ID
+            </summary>
+            <param name="accountId"></param>
+            <param name="premiumStartDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdateRobuxDistributionAmountById(System.Int64,System.Int32)">
+            <summary>
+            Updates the Robux Distribution amount
+            </summary>
+            <param name="id"></param>
+            <param name="robuxDistributionAmount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.IMembershipMigrationStatusEntityFactory.UpdateRobuxDistributionAmountByAccountId(System.Int64,System.Int32)">
+            <summary>
+            Updates the Robux Distribution amount by Account ID
+            </summary>
+            <param name="accountId"></param>
+            <param name="robuxDistributionAmount"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

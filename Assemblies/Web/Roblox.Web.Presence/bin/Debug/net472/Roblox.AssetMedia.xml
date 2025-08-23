@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.AssetMedia</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.AssetMedia.PlaceMediaManager._SetUsePlaceMediaForThumbs(System.Int64,System.Boolean)">
+            <summary>
+            Update PlaceAttributes to UsePlaceMediaForThumb.  This is an optimization for lookups -- most places wont have placemediaitems (or so we suspect), so let's look to something
+            that's already likely in cache (PlaceAttributes) to see if we should use them or not.
+            </summary>
+            <param name="placeId"></param>
+            <param name="usePlaceMedia"></param>
+        </member>
+        <member name="M:Roblox.AssetMedia.PlaceMediaItem.GetPlaceMediaItemsByPlaceID_Paged(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            This returns sorted by IsPrimary DESC
+            </summary>
+        </member>
+        <member name="M:Roblox.AssetMedia.PlaceMediaItemDAL.GetPlaceMediaItemIDsByPlaceID_Paged(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            This sorts by IsPrimary DESC
+            </summary>
+        </member>
+        <member name="T:Roblox.AssetMedia.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

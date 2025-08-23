@@ -13,4 +13,10 @@
     <SourceRoot Include="C:\Users\Intel\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.core\3.7.300.27</PkgAWSSDK_Core>
+    <PkgAWSSDK_SQS Condition=" '$(PkgAWSSDK_SQS)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.sqs\3.7.0</PkgAWSSDK_SQS>
+    <PkgAWSSDK_SimpleNotificationService Condition=" '$(PkgAWSSDK_SimpleNotificationService)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.simplenotificationservice\3.7.0</PkgAWSSDK_SimpleNotificationService>
+    <PkgAjaxMin Condition=" '$(PkgAjaxMin)' == '' ">C:\Users\Intel\.nuget\packages\ajaxmin\5.14.5506.26202</PkgAjaxMin>
+  </PropertyGroup>
 </Project>

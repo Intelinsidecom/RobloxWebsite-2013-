@@ -14,44 +14,27 @@
   <ItemGroup>
     <ProjectReference Include="..\Roblox.Platform.Permissions.Core\Roblox.Platform.Permissions.Core.csproj" />
     <ProjectReference Include="..\Roblox.Platform.Assets\Roblox.Platform.Assets.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.Groups\Roblox.Platform.Groups.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.Universes\Roblox.Platform.Universes.csproj" />
+    <ProjectReference Include="..\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj" />
+    <ProjectReference Include="..\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj" />
+    <ProjectReference Include="..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\ApiClientBase\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj" />
+    <ProjectReference Include="..\Clients\Roblox.PermissionResolution.Client\Roblox.PermissionResolution.Client.csproj" />
+    <ProjectReference Include="..\Roblox.Permissions.Client\Roblox.Permissions.Client.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Roblox.Platform.Permissions.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Permissions.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Groups">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Groups.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Universes.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Permissions.Client">
-      <HintPath>..\..\Website\bin\Roblox.Permissions.Client.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetsCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Exclude local shim files to avoid type conflicts with real client assemblies -->
+    <Compile Remove="Roblox.Platform.AssetPermissions\Shims\*.cs" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.TeamCreate</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.TeamCreate.Events.ITeamCreateChangeReporter">
+            <summary>
+            Interface for Team Create event provider.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Events.ITeamCreateChangeReporter.EntityChanged(System.Int64,Roblox.Platform.TeamCreate.Events.TeamCreateChangeType,System.Nullable{System.Int64})">
+            <summary>
+            Method to notify observers of changes to Team Create membership.
+            </summary>
+            <param name="universeId"></param>
+            <param name="changeType"></param>
+            <param name="userId"></param>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Events.ITeamCreateEventsObserver">
+            <summary>
+            Team create events observer.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Events.ITeamCreateEventsObserver.Subscribe(System.IObservable{Roblox.Platform.TeamCreate.Events.TeamCreateEvent})">
+            <summary>
+            Subscribe to receive change events
+            </summary>
+            <param name="observable"><see cref="T:System.IObservable`1"/> for <see cref="T:Roblox.Platform.TeamCreate.Events.TeamCreateEvent"/></param>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Events.ITeamCreateEventsObserver.Unsubscribe">
+            <summary>
+            Un-subscribe from the <see cref="T:System.IObservable`1"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Events.TeamCreateChangeType">
+            <summary>
+            Membership change event type
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TeamCreate.Events.TeamCreateChangeType.MembershipChanged">
+            <summary>
+            Team create membership has changed
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TeamCreate.Events.TeamCreateChangeType.StatusChanged">
+            <summary>
+            Team create enable/disable status changed
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Events.TeamCreateEventsPublisher">
+            <summary>
+            TeamCreateEventsPublisher implements <see cref="T:Roblox.Platform.TeamCreate.Events.ITeamCreateEventsObserver"/> to get notifications of 
+            events and publishes them to a Universe entity changed SNS topic.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Events.TeamCreateEventsPublisher.Subscribe(System.IObservable{Roblox.Platform.TeamCreate.Events.TeamCreateEvent})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Events.TeamCreateEventsPublisher.Unsubscribe">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Events.TeamCreateEventsPublisher.OnNext(Roblox.Platform.TeamCreate.Events.TeamCreateEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Events.TeamCreateEventsPublisher.OnError(System.Exception)">
+            <summary>
+            This is not implemented.
+            </summary>
+            <param name="error"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Events.TeamCreateEventsPublisher.OnCompleted">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreatePermissionsAuthority.AddTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority.AddTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)"/>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreatePermissionsAuthority.RemoveTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority.RemoveTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)"/>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreatePermissionsAuthority.EnableTeamCreate(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority.EnableTeamCreate(Roblox.Platform.Universes.IUniverse)"/>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreatePermissionsAuthority.DisableTeamCreate(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority.DisableTeamCreate(Roblox.Platform.Universes.IUniverse)"/>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.TeamCreateClientConverterDtoExtensions">
+            <summary>
+            This class is for converting interfaces for the TeamCreate client in this platform only!
+            Do not make public!
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreateMembershipFactory.GetUniverseTeamCreateMembersPaged(Roblox.Platform.Universes.IUniverse,System.Int32)">
+            <summary>
+            Gets a list of universe team create members paged.
+            </summary>
+            <remarks>
+            Excluded from code coverage because it is just a wrapper for external obsolete functionality.
+            </remarks>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse" />.</param>
+            <param name="pageNumber">The page number.</param>
+            <returns><see cref="T:System.Collections.Generic.ICollection`1" /></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">universe</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">pageNumber</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Permissions service request failed</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreatePermissionsVerifier.IsTeamCreateEnabled(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Checks whether or not an <see cref="T:Roblox.Platform.Universes.IUniverse" /> is enabled for team create.
+            </summary>
+            <remarks>
+            This is currently excluded from code coverage because it is just a wrapper for external functionality.
+            When the underlying code is moved into this platform the attribute should be removed, and unit tests added.
+            </remarks>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse" />.</param>
+            <returns><c>true</c> if the <see cref="T:Roblox.Platform.Universes.IUniverse" /> has team create enabled</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">universe</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Service request failed</exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.TeamCreateUserInstancePermissionsValidator">
+            <inheritdoc cref="T:Roblox.Platform.TeamCreate.ITeamCreateUserInstancePermissionsValidator"/>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreateUserInstancePermissionsValidator.#ctor(Roblox.EventLog.ILogger,Roblox.Games.Client.IGamesAuthority,Roblox.Platform.GameInstances.IGameInstanceFactory,Roblox.Platform.Presence.IPresenceReader,Roblox.Platform.Games.IMatchmakingContextFactory,Roblox.Platform.AssetPermissions.IAssetPermissionsVerifier,Roblox.Platform.Assets.IPlaceFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.TeamCreate.TeamCreateUserInstancePermissionsValidator"/> class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="gamesAuthority">The games authority.</param>
+            <param name="gameInstanceFactory">The game instance factory.</param>
+            <param name="presenceReader">The presence reader.</param>
+            <param name="matchmakingContextFactory">The matchmaking context factory.</param>
+            <param name="assetPermissionsVerifier">The asset permissions verifier.</param>
+            <param name="placeFactory">The place factory.</param>
+            <exception cref="T:System.ArgumentNullException">On any argument is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreateUserInstancePermissionsValidator.ValidateTeamCreateUserInstances(Roblox.Platform.Membership.IUser)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority">
+            <summary>
+            An interface for a class that performs actions around team create
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority.AddTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Adds an <see cref="T:Roblox.Platform.Membership.IUser"/> to have permission to team create an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> inviting <paramref name="targetUser"/> to team create.</param>
+            <param name="targetUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> being added to team create.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Call to team create service failed.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidOperationException"><paramref name="user"/> does not have permission to add <paramref name="targetUser"/> to team create.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority.RemoveTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Removes an <see cref="T:Roblox.Platform.Membership.IUser"/>'s permission to team create an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> removing <paramref name="targetUser"/>.</param>
+            <param name="targetUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> being removed from team create.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Call to team create service failed.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidOperationException"><paramref name="user"/> does not have permission to remove <paramref name="targetUser"/> from team create.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority.EnableTeamCreate(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Enables an <see cref="T:Roblox.Platform.Universes.IUniverse"/> for team create.
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Internal service call failed.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority.DisableTeamCreate(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Disables an <see cref="T:Roblox.Platform.Universes.IUniverse"/> for team create.
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Internal service call failed.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.ITeamCreateMembershipFactory">
+            <summary>
+            An interface for a class that constructs interfaces for entities around team create
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreateMembershipFactory.GetUniverseTeamCreateMembers(Roblox.Platform.Universes.IUniverse,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{Roblox.Platform.TeamCreate.ITeamCreateMembership})">
+            <summary>
+            Gets a list of <see cref="T:Roblox.Platform.TeamCreate.ITeamCreateMembership"/>s for an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <param name="exclusiveStartInfo">The exclusive start information.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Call to team create service failed.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreateMembershipFactory.GetUserTeamCreateMemberships(Roblox.Platform.Membership.IUser,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{Roblox.Platform.TeamCreate.ITeamCreateMembership})">
+            <summary>
+            Gets a list of <see cref="T:Roblox.Platform.TeamCreate.ITeamCreateMembership"/>s an <see cref="T:Roblox.Platform.Membership.IUser"/> is able to team create.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="exclusiveStartInfo">The exclusive start information.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Call to team create service failed.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreateMembershipFactory.GetUniverseTeamCreateMembersPaged(Roblox.Platform.Universes.IUniverse,System.Int32)">
+            <summary>
+            Gets a list of universe team create members paged.
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <param name="pageNumber">The page number.</param>
+            <returns><see cref="T:System.Collections.Generic.ICollection`1"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"><paramref name="pageNumber"/> is below 1.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Call to permissions service failed.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.ITeamCreateMembership">
+            <summary>
+            An interface for information about a team create member
+            </summary>
+            <remarks>
+            This interface is only valid assuming the only entities that can be members are <see cref="T:Roblox.Platform.Membership.IUser"/>s
+            If we extend team create outside of just <see cref="T:Roblox.Platform.Membership.IUser"/>s we should make a new interface.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.ITeamCreateMembership.User">
+            <summary>
+            The <see cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.ITeamCreateMembership.Universe">
+            <summary>
+            The <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.ITeamCreateMembership.GrantDate">
+            <summary>
+            The <see cref="T:System.DateTime"/> the membership was granted
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.ITeamCreatePermissionsVerifier">
+            <summary>
+            An interface for a class that verifies permissions around team create
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsVerifier.IsUserTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse,System.Nullable{System.Boolean})">
+            <summary>
+            Checks whether or not an <see cref="T:Roblox.Platform.Membership.IUser"/> is allowed to join a team create
+            session for an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <param name="canUserManageUniverse">(Optional) Whether the user has permissions to manage the universe.</param>
+            <returns><c>true</c> if the <see cref="T:Roblox.Platform.Membership.IUser"/> is allowed to team create <see cref="T:Roblox.Platform.Universes.IUniverse"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Call to team create service failed.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsVerifier.CanUserAddTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Determines whether or not an <see cref="T:Roblox.Platform.Membership.IUser"/> can add another <see cref="T:Roblox.Platform.Membership.IUser"/> to team create an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> adding the target user.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <param name="targetUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> being added to team create.</param>
+            <returns><c>true</c> if <paramref name="user"/> can add <paramref name="targetUser"/> to the <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Call to friendship service failed.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsVerifier.CanUserRemoveTeamCreateMember(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Determines whether or not an <see cref="T:Roblox.Platform.Membership.IUser"/> can remove another <see cref="T:Roblox.Platform.Membership.IUser"/> from team create on an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> removing the target user.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <param name="targetUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> being removed from team create.</param>
+            <returns><c>true</c> if <paramref name="user"/> can remove <paramref name="targetUser"/> from the <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Any argument is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreatePermissionsVerifier.IsTeamCreateEnabled(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Checks whether or not an <see cref="T:Roblox.Platform.Universes.IUniverse"/> is enabled for team create.
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <returns><c>true</c> if the <see cref="T:Roblox.Platform.Universes.IUniverse"/> has team create enabled</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Internal service request failed.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.ITeamCreateUserInstancePermissionsValidator">
+            <summary>
+            Validate that a user in TeamCreate has permission to edit the place, if not kick them.
+            </summary>
+            <seealso cref="T:Roblox.Platform.TeamCreate.ITeamCreateUserInstancePermissionsValidator" />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.ITeamCreateUserInstancePermissionsValidator.ValidateTeamCreateUserInstances(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Validates the team create user instances.
+            Kicks users out of any team create sessions they no longer have permission to edit
+            </summary>
+            <param name="user">The user who's permissions to validate.</param>
+            <exception cref="T:System.ArgumentNullException">On user is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.TeamCreateDomainFactories">
+            <summary>
+            The domain factories for Roblox.Platform.TeamCreate
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.TeamCreateDomainFactories.TeamCreatePermissionsVerifier">
+            <summary>
+            The <see cref="T:Roblox.Platform.TeamCreate.ITeamCreatePermissionsVerifier"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.TeamCreateDomainFactories.TeamCreateMembershipFactory">
+            <summary>
+            The <see cref="T:Roblox.Platform.TeamCreate.ITeamCreateMembershipFactory"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.TeamCreateDomainFactories.TeamCreatePermissionsAuthority">
+            <summary>
+            The <see cref="T:Roblox.Platform.TeamCreate.ITeamCreatePermissionsAuthority"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.TeamCreateDomainFactories.CloudEditPermissionManagerFactory">
+            <summary>
+            The <see cref="P:Roblox.Platform.TeamCreate.TeamCreateDomainFactories.CloudEditPermissionManagerFactory"/> for team create V1 permissions
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreateDomainFactories.#ctor(Roblox.TeamCreate.Client.ITeamCreateClient,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.Platform.Social.IFriendshipFactory,Roblox.Platform.Permissions.IUserPermissionsChecker,Roblox.Permissions.Client.IPermissionsClient,Roblox.Platform.Social.Messages.ISystemMessageSender,Roblox.Platform.Assets.IPlaceFactory,Roblox.PermissionResolution.Client.IPermissionResolutionClient,Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.TeamCreate.TeamCreateDomainFactories"/> class.
+            </summary>
+            <param name="teamCreateClient">The <see cref="T:Roblox.TeamCreate.Client.ITeamCreateClient"/>.</param>
+            <param name="universeFactory">The <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/>.</param>
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <param name="universePermissionsVerifier">The <see cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier"/>.</param>
+            <param name="friendshipFactory">The <see cref="T:Roblox.Platform.Social.IFriendshipFactory"/>.</param>
+            <param name="userPermissionsChecker">The <see cref="T:Roblox.Platform.Permissions.IUserPermissionsChecker"/>.</param>
+            <param name="permissionsClient">The <see cref="T:Roblox.Permissions.Client.IPermissionsClient"/>.</param>
+            <param name="systemMessageSender">The <see cref="T:Roblox.Platform.Social.Messages.ISystemMessageSender"/>.</param>
+            <param name="placeFactory">The <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/>.</param>
+            <param name="permissionResolutionClient">The <see cref="T:Roblox.PermissionResolution.Client.IPermissionResolutionClient"/>.</param>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.TeamCreateDomainFactories.#ctor(Roblox.TeamCreate.Client.ITeamCreateClient,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.Platform.Social.IFriendshipFactory,Roblox.Platform.Permissions.IUserPermissionsChecker,Roblox.Permissions.Client.IPermissionsClient,Roblox.Platform.Social.Messages.ISystemMessageSender,Roblox.Platform.Assets.IPlaceFactory,Roblox.Platform.TeamCreate.Events.ITeamCreateEventsObserver,Roblox.PermissionResolution.Client.IPermissionResolutionClient,Roblox.EventLog.ILogger,Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Special use constructor. Only use for testing and when there's a well understood need.
+            </summary>
+            <param name="teamCreateClient">The <see cref="T:Roblox.TeamCreate.Client.ITeamCreateClient"/>.</param>
+            <param name="universeFactory">The <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/>.</param>
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <param name="universePermissionsVerifier">The <see cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier"/>.</param>
+            <param name="friendshipFactory">The <see cref="T:Roblox.Platform.Social.IFriendshipFactory"/>.</param>
+            <param name="userPermissionsChecker">The <see cref="T:Roblox.Platform.Permissions.IUserPermissionsChecker"/>.</param>
+            <param name="permissionsClient">The <see cref="T:Roblox.Permissions.Client.IPermissionsClient"/>.</param>
+            <param name="systemMessageSender">The <see cref="T:Roblox.Platform.Social.Messages.ISystemMessageSender"/>.</param>
+            <param name="placeFactory">The <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/>.</param>
+            <param name="teamCreateEventsObserver">The <see cref="T:Roblox.Platform.TeamCreate.Events.ITeamCreateEventsObserver"/>.</param>
+            <param name="permissionResolutionClient">The <see cref="T:Roblox.PermissionResolution.Client.IPermissionResolutionClient"/>.</param>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/>.</param>
+            <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter"/> for telemetry)</param>
+        </member>
+    </members>
+</doc>

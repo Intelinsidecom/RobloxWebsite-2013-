@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Roblox.Permissions.Client;
 using Roblox.Platform.AssetPermissions.Properties;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Membership;
@@ -13,7 +12,7 @@ public static class Deprecated
 {
 	private static int MaxUsersInWhiteList => Settings.Default.PlaceInviteOnlyUserLimit;
 
-	private static PlaceVisitationPermissionType DoTranslate(this IPermissionGroup permissionGroup)
+	private static PlaceVisitationPermissionType DoTranslate(this Roblox.Platform.Permissions.Core.IPermissionGroup permissionGroup)
 	{
 		if (permissionGroup == null)
 		{
@@ -34,7 +33,7 @@ public static class Deprecated
 		throw new UnknownPlaceVisitationPermissionTypeException();
 	}
 
-	private static void AddAccessGroup(this IUser user, IPlace place, IActionType actionType, IPermissionGroup newPermissionGroup, IPermissionsClient permissionsApiClient)
+	private static void AddAccessGroup(this IUser user, IPlace place, IActionType actionType, Roblox.Platform.Permissions.Core.IPermissionGroup newPermissionGroup, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
 	{
 		user.VerifyIsNotNull();
 		place.VerifyIsNotNull();
@@ -48,7 +47,7 @@ public static class Deprecated
 		user.AddPermissionGroup(place, actionType, newPermissionGroup, permissionsApiClient);
 	}
 
-	private static bool Is(this IPermissionGroup permissionGroup, PlaceVisitationPermissionType accessType, long? placeId = null)
+	private static bool Is(this Roblox.Platform.Permissions.Core.IPermissionGroup permissionGroup, PlaceVisitationPermissionType accessType, long? placeId = null)
 	{
 		if (permissionGroup == null && accessType == PlaceVisitationPermissionType.Everyone)
 		{
@@ -69,7 +68,7 @@ public static class Deprecated
 		return permissionGroup.Name == accessType.ToString();
 	}
 
-	private static void RemoveAccessGroup(this IUser user, IPlace place, IActionType actionType, IPermissionGroup currentPermissionGroup, IPermissionsClient permissionsApiClient, CustomListFactory customListFactory)
+	private static void RemoveAccessGroup(this IUser user, IPlace place, IActionType actionType, Roblox.Platform.Permissions.Core.IPermissionGroup currentPermissionGroup, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient, CustomListFactory customListFactory)
 	{
 		user.VerifyIsNotNull();
 		place.VerifyIsNotNull();
@@ -93,13 +92,13 @@ public static class Deprecated
 		};
 	}
 
-	private static IPermissionGroup Translate(this PlaceVisitationPermissionType accessType, IUser user, IPermissionsClient permissionsApiClient, long? placeId = null)
+	private static Roblox.Platform.Permissions.Core.IPermissionGroup Translate(this PlaceVisitationPermissionType accessType, IUser user, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient, long? placeId = null)
 	{
 		user.VerifyIsNotNull();
-		return user.GetPermissionGroups(permissionsApiClient, 1).FirstOrDefault((IPermissionGroup p) => p.Is(accessType, placeId));
+		return user.GetPermissionGroups(permissionsApiClient, 1).FirstOrDefault((Roblox.Platform.Permissions.Core.IPermissionGroup p) => p.Is(accessType, placeId));
 	}
 
-	private static void UpdateWhitelist(this IUser user, ICustomList whitelist, IEnumerable<long> currentUserIds, IEnumerable<long> newUserIds, IPermissionsClient permissionsApiClient)
+	private static void UpdateWhitelist(this IUser user, ICustomList whitelist, IEnumerable<long> currentUserIds, IEnumerable<long> newUserIds, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
 	{
 		user.VerifyIsNotNull();
 		List<long> userIdsToAdd = newUserIds.Except(currentUserIds).ToList();
@@ -119,13 +118,13 @@ public static class Deprecated
 		}
 	}
 
-	public static IPermissionGroup CreateAccessPermissionGroup(this IUser user, PlaceVisitationPermissionType accessType, long placeId, IPermissionsClient permissionsApiClient)
+	public static Roblox.Platform.Permissions.Core.IPermissionGroup CreateAccessPermissionGroup(this IUser user, PlaceVisitationPermissionType accessType, long placeId, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
 	{
 		if (accessType == PlaceVisitationPermissionType.Everyone)
 		{
 			return null;
 		}
-		IPermissionGroup newPermissionGroup = user.CreatePermissionGroup(evaluateByAND: false, accessType.ToPermissionGroupName(placeId), permissionsApiClient);
+		Roblox.Platform.Permissions.Core.IPermissionGroup newPermissionGroup = user.CreatePermissionGroup(evaluateByAND: false, accessType.ToPermissionGroupName(placeId), permissionsApiClient);
 		if (accessType == PlaceVisitationPermissionType.Creator)
 		{
 			newPermissionGroup.AddPermission(allowAccess: true, PermissionType.IsAssetCreator.ToString(), placeId);
@@ -137,7 +136,7 @@ public static class Deprecated
 		return newPermissionGroup;
 	}
 
-	public static IEnumerable<IPermissionGroup> GetPlaceVisitationPermissionGroups(IUser user, IPlace place, IPermissionsClient permissionsApiClient)
+	public static IEnumerable<Roblox.Platform.Permissions.Core.IPermissionGroup> GetPlaceVisitationPermissionGroups(IUser user, IPlace place, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
 	{
 		user.VerifyIsNotNull();
 		place.VerifyIsNotNull();
@@ -145,19 +144,19 @@ public static class Deprecated
 		return place.GetPlaceVisitationPermissionGroups(permissionsApiClient);
 	}
 
-	public static PlaceVisitationPermissionType GetPlaceVisitationPermissionType(IEnumerable<IPermissionGroup> permissionGroups)
+	public static PlaceVisitationPermissionType GetPlaceVisitationPermissionType(IEnumerable<Roblox.Platform.Permissions.Core.IPermissionGroup> permissionGroups)
 	{
 		return permissionGroups.FirstOrDefault().DoTranslate();
 	}
 
-	public static ICustomList GetPlaceVisitationWhitelist(IEnumerable<IPermissionGroup> permissionGroups, CustomListFactory customListFactory)
+	public static ICustomList GetPlaceVisitationWhitelist(IEnumerable<Roblox.Platform.Permissions.Core.IPermissionGroup> permissionGroups, CustomListFactory customListFactory)
 	{
 		return GetPlaceVisitationWhitelist(permissionGroups.FirstOrDefault(), customListFactory);
 	}
 
-	public static ICustomList GetPlaceVisitationWhitelist(IPermissionGroup permissionGroup, CustomListFactory customListFactory)
+	public static ICustomList GetPlaceVisitationWhitelist(Roblox.Platform.Permissions.Core.IPermissionGroup permissionGroup, CustomListFactory customListFactory)
 	{
-		IPermission whitelistPermission = permissionGroup.GetPermissions(1).First((IPermission p) => p.PermissionType == PermissionType.IsInList.ToString());
+		Roblox.Platform.Permissions.Core.IPermission whitelistPermission = permissionGroup.GetPermissions(1).First((Roblox.Platform.Permissions.Core.IPermission p) => p.PermissionType == PermissionType.IsInList.ToString());
 		return customListFactory.GetCustomList(whitelistPermission.PermissionTypeTargetId.Value);
 	}
 
@@ -166,16 +165,16 @@ public static class Deprecated
 		return count > MaxUsersInWhiteList;
 	}
 
-	public static void SetAccess(IUser user, IPlace place, PlaceVisitationPermissionType newAccessType, IPermissionsClient permissionsApiClient, CustomListFactory customListFactory, IEnumerable<long> whiteListUserIds = null)
+	public static void SetAccess(IUser user, IPlace place, PlaceVisitationPermissionType newAccessType, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient, CustomListFactory customListFactory, IEnumerable<long> whiteListUserIds = null)
 	{
 		user.VerifyIsNotNull();
 		place.VerifyIsNotNull();
 		user.VerifyIsCreator(place);
 		PlaceVisitationPermissionType currentAccessType = GetPlaceVisitationPermissionType(GetPlaceVisitationPermissionGroups(user, place, permissionsApiClient));
-		IPermissionGroup newPermissionGroup = newAccessType.Translate(user, permissionsApiClient, place.Id);
+		Roblox.Platform.Permissions.Core.IPermissionGroup newPermissionGroup = newAccessType.Translate(user, permissionsApiClient, place.Id);
 		if (currentAccessType != newAccessType)
 		{
-			IPermissionGroup currentPermissionGroup = currentAccessType.Translate(user, permissionsApiClient, place.Id);
+			Roblox.Platform.Permissions.Core.IPermissionGroup currentPermissionGroup = currentAccessType.Translate(user, permissionsApiClient, place.Id);
 			IActionType actionType = ActionTypeFactory.GetActionType("VisitPlace");
 			if (newPermissionGroup == null)
 			{
@@ -202,7 +201,7 @@ public static class Deprecated
 		}
 	}
 
-	public static PlaceVisitationPermissionType Translate(IPermissionGroup permissionGroup)
+	public static PlaceVisitationPermissionType Translate(Roblox.Platform.Permissions.Core.IPermissionGroup permissionGroup)
 	{
 		return permissionGroup.DoTranslate();
 	}

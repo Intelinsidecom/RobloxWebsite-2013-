@@ -34,7 +34,7 @@ public sealed class RobloxDynamoDbClient : AmazonDynamoDBClient
 		{
 			throw new ArgumentException("Configuration cannot be converted to RobloxDynamoDbClientConfig.");
 		}
-		((AmazonDynamoDBClient)this).CustomizeRuntimePipeline(pipeline);
+		base.CustomizeRuntimePipeline(pipeline);
 		if (robloxDynamoDbClientConfig.IsAsyncRequestTimeoutEnabled && ((ClientConfig)robloxDynamoDbClientConfig).Timeout.HasValue)
 		{
 			AsyncInvokeTimeoutHandler asyncInvokeTimeoutHandler = new AsyncInvokeTimeoutHandler(new AsyncInvokeTimeoutHandlerConfig(((ClientConfig)robloxDynamoDbClientConfig).Timeout.Value));

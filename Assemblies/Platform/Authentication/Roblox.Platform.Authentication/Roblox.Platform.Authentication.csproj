@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Authentication</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -11,6 +11,10 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
@@ -58,13 +62,7 @@
       <HintPath>..\..\..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.SqlClient">
-      <HintPath>..\..\..\..\Website\bin\System.Data.SqlClient.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="Roblox Server Class Library">

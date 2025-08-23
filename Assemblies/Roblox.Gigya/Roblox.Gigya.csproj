@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Gigya</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFrameworks>net472;net48</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
