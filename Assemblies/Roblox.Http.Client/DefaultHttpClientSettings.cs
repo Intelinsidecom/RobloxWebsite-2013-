@@ -15,5 +15,7 @@ public class DefaultHttpClientSettings : IHttpClientSettings
 	public TimeSpan RequestTimeout { get; } = TimeSpan.FromSeconds(100.0);
 
 
+	#pragma warning disable 0067
 	public event Action<string> SettingChanged;
+	#pragma warning restore 0067
 }

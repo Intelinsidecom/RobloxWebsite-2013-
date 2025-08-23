@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Assets.Places</name>
+    </assembly>
+    <members>
+        <member name="F:Roblox.Assets.Places.PlaceAttribute._OriginalUniverseID">
+            <summary>
+            The ID of the previous universe.
+            </summary>
+            <remarks>Used for cache invalidation.</remarks>
+        </member>
+        <member name="M:Roblox.Assets.Places.PlaceTypesDAL.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Assets.Places.PlaceTypesDAL"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Assets.Places.PlaceTypesDAL.#ctor(System.Byte)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Assets.Places.PlaceTypesDAL"/> class.
+            </summary>
+            <param name="id">The id.</param>
+        </member>
+        <member name="T:Roblox.Assets.Places.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

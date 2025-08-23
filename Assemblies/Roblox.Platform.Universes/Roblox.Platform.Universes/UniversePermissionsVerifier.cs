@@ -17,7 +17,11 @@ public class UniversePermissionsVerifier : IUniversePermissionsVerifier
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Null <paramref name="groupMembershipFactory" />.</exception>
 	public UniversePermissionsVerifier(IGroupMembershipFactory groupMembershipFactory)
 	{
-		_GroupMembershipFactory = groupMembershipFactory.AssignOrThrowIfNull("groupMembershipFactory");
+		if (groupMembershipFactory == null)
+		{
+			throw new PlatformArgumentNullException("groupMembershipFactory");
+		}
+		_GroupMembershipFactory = groupMembershipFactory;
 	}
 
 	/// <inheritdoc cref="M:Roblox.Platform.Universes.IUniversePermissionsVerifier.CanUserManageUniverse(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)" />

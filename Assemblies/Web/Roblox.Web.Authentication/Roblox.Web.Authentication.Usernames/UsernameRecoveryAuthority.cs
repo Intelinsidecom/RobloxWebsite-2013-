@@ -128,7 +128,7 @@ public class UsernameRecoveryAuthority : IUsernameRecoveryAuthority
 		//IL_0012: Expected O, but got Unknown
 		try
 		{
-			Sms sms = new Sms(phone, $"Your Roblox username is: {username}.");
+			Roblox.Sms.Client.Sms sms = new Roblox.Sms.Client.Sms(phone, $"Your Roblox username is: {username}.");
 			_SmsClient.Send(sms);
 		}
 		catch (Exception exception)

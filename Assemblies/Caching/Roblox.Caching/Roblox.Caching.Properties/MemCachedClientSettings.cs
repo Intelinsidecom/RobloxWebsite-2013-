@@ -82,7 +82,9 @@ public class MemCachedClientSettings : IMemCachedClientSettings, IMemcachedClien
 
 	public int MaximumConnectionCreationsPerPeriod { get; private set; }
 
-	public event PropertyChangedEventHandler PropertyChanged;
+    #pragma warning disable 0067
+    public event PropertyChangedEventHandler PropertyChanged;
+    #pragma warning restore 0067
 
 	internal MemCachedClientSettings(Settings settings, ILogger logger)
 	{

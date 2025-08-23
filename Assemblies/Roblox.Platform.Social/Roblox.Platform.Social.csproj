@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Social</AssemblyName>
@@ -8,9 +8,18 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);CS1668;1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.300.27" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Friends.Client\Roblox.Friends.Client.csproj" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Data">
       <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
@@ -40,7 +49,6 @@
     <Reference Include="Roblox.Platform.PolicyLookup">
       <HintPath>..\..\Website\bin\Roblox.Platform.PolicyLookup.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Friends.Client" />
     <Reference Include="Roblox.Platform.UserBlock.Core">
       <HintPath>..\..\Website\bin\Roblox.Platform.UserBlock.Core.dll</HintPath>
     </Reference>
@@ -108,7 +116,7 @@
     <Reference Include="Roblox.Entities.Mssql">
       <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
+    <!-- AWSSDK.Core now referenced via NuGet -->
     <Reference Include="System.Web" />
   </ItemGroup>
 </Project>

@@ -372,6 +372,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
+          "Roblox.Http.Client": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0",
           "System.Data.SqlClient": "4.9.0"
         },
@@ -401,6 +402,7 @@
         "dependencies": {
           "AWSSDK.Core": "3.7.0",
           "AWSSDK.SQS": "3.7.0",
+          "Newtonsoft.Json": "13.0.3",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -414,6 +416,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.DataV2.Core": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -517,6 +521,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -620,6 +625,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Roblox.Data": "1.0.0",
+          "Roblox.MssqlDatabases": "1.0.0",
           "System.Data.SqlClient": "4.9.0"
         },
         "compile": {
@@ -806,6 +813,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
@@ -860,6 +868,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Consul": "1.6.10.4",
+          "Newtonsoft.Json": "13.0.3",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
@@ -902,6 +911,9 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Http.Client": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {

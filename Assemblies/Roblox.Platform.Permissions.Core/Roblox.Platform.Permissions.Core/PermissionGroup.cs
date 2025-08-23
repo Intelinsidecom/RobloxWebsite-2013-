@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using Roblox.Permissions.Client;
+using Api = Roblox.Permissions.Client;
 
 namespace Roblox.Platform.Permissions.Core;
 
 internal class PermissionGroup : IPermissionGroup
 {
-	private readonly IPermissionsClient _PermissionsApiClient;
+	private readonly Api.IPermissionsClient _PermissionsApiClient;
 
 	public long Id { get; }
 
@@ -17,7 +17,7 @@ internal class PermissionGroup : IPermissionGroup
 
 	public bool EvaluateByAND { get; private set; }
 
-	internal PermissionGroup(IPermissionsClient permissionsApiClient, long id, string name, string creatorType, long creatorTargetId, bool evaluateByAND)
+	internal PermissionGroup(Api.IPermissionsClient permissionsApiClient, long id, string name, string creatorType, long creatorTargetId, bool evaluateByAND)
 	{
 		_PermissionsApiClient = permissionsApiClient;
 		Id = id;
@@ -39,8 +39,8 @@ internal class PermissionGroup : IPermissionGroup
 
 	public IEnumerable<IPermission> GetPermissions(int pageNumber)
 	{
-		PermissionGroup permissionGroup = _PermissionsApiClient.GetPermissionGroup(Id, (int?)pageNumber);
-		foreach (Permission apiClientPermission in permissionGroup.Permissions)
+		Api.PermissionGroup permissionGroup = _PermissionsApiClient.GetPermissionGroup(Id, (int?)pageNumber);
+		foreach (Api.Permission apiClientPermission in permissionGroup.Permissions)
 		{
 			yield return new Permission(apiClientPermission.ID, apiClientPermission.AllowAccess, apiClientPermission.PermissionType, apiClientPermission.PermissionTypeTargetId);
 		}

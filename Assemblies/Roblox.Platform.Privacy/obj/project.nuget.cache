@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "PA+BjSEDBXgIbqqN1bEVXAIJ3ubQtpYTyjPlcNLn3Uui1c52G5M8vvhSsf2Gg0OMfZg9LClKg9shrbsQhmXr2A==",
+  "dgSpecHash": "Xr8Aea8Ul7o=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.Privacy\\Roblox.Platform.Privacy.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.Privacy\\Roblox.Platform.Privacy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

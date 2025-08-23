@@ -34,8 +34,8 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.A
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Common.NetStandard.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Redis.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Hashing.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Sentinels.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\DnsClient.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Sentinels.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.ServiceDiscovery.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Consul.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Ownership.Client.pdb

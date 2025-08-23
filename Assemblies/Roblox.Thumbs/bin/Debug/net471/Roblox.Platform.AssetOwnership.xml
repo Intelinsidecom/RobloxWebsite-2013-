@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.AssetOwnership</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.AssetOwnership.ActionResultCounter">
+            <summary>
+            Counts for either Total, or "{action} | {result}"
+            where action is AwardAsset|AwardAssetAllowingDuplicates, etc, and result is AwardAssetResult|TransferAssetResult|RevokeAssetResult
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.Ov1Ov2TransactionException">
+            <summary>
+            When the dual write returns a result indicating that the transaction failed in the primary write target (probably ov1)
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.RemediationRequestRecorder">
+            <summary>
+            This will be implemented as a table of userAssetIds.
+            These items are all products of interrupted transactions, where the ov1 stage happened, ov2 failed, and ov1 rollback failed.
+            So the correct course of action is to make ov2 ownership status match that in ov1.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.RemediationRequestRecorder.RecordUserAssetIdForRemediation(System.Int64,System.String)">
+            <summary>
+            This doesn't actually persist anything yet.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.UserAssetModel">
+            <summary>
+            Represents a record in ov2 of type "Asset".  for asset ownership.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.OwnerType">
+            <summary>
+            The types of targets that can own an item in ov1
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.OwnerType.User">
+            <summary>
+            <see cref="!:IUser"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.OwnershipWriteStrategy">
+            <summary>
+            During rollout we have to decide which of ov1 and ov2 we should save data to.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.ClientGetter.#ctor(System.Linq.Expressions.Expression{System.Func{Roblox.Platform.AssetOwnership.Properties.ISettings,System.String}},Roblox.EventLog.ILogger,Roblox.Caching.Interfaces.IRequestCache)">
+            <summary>
+            Monitors the ov1 apiKey and keeps a fresh copy of the ov1 client.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.LegacyUserAssetExpirationAuthority.GetUserAssetExpireTimeSpan(Roblox.Platform.AssetOwnership.IUserAsset)">
+            <summary>
+            Previously this checked whether the asset is expireable.  If yes, it then checked if the userasset is expired.
+            Now it only checks if the userasset is expired.  You must check if the asset is expireable yourself using AssetOption.IsExpireable.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.LegacyUserAssetExpirationAuthority.UserAssetIsExpired(Roblox.Platform.AssetOwnership.IUserAsset)">
+            <summary>
+            Previously this checked whether the asset is expireable.  If yes, it then checked if the userasset is expired.
+            Now it only checks if the userasset is expired.  You must check if the asset is expireable yourself using AssetOption.IsExpireable.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.OwnershipV2UserAssetFactory.AwardAssetSpecifyingUserAssetId(System.Int64,System.Int64,System.Int64)">
+            <returns>Whether the asset was actually awarded</returns>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.OwnershipV2UserAssetFactory.RevokeWithExistingLock(System.Guid,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            This is correct now.  Having userAssetId makes things so much easier!!!!!
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.OwnershipV1UserAssetFactory.AwardAssets(System.Collections.Generic.IReadOnlyCollection{System.Int64},System.Int64,System.Boolean@)">
+            <summary>
+            Defaults to "prevent duplicates"
+            </summary>
+            <param name="awardedNewAsset">Was any asset actually awarded to the user (or were they all duplicates?)</param>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.OwnershipV1UserAssetFactory.RevokeWithExistingLock(System.Guid,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            userId and assetId are not needed here but all calls to revoke must provide them for when we are in ov2.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.OwnershipV1UserAssetFactory.AwardAssetAllowingDuplicates(System.Int64,System.Int64)">
+            <summary>
+            no "awardedNewAsset" version, because it always either is true or throws.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.OwnershipV1UserAssetFactory.AwardAsset(System.Int64,System.Int64,System.Boolean@)">
+            <summary>
+            If the user already owns this assetId, then just return the existing userAssetId.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.OwnershipV1UserAssetFactory.GetCollectibleUserAssetsByUserIdAndAssetTypeId(System.Int64,System.Int32,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <inheritdoc cref="!:ICollectibleUserAssetFactory.GetCollectibleUserAssetsByUserIdAndAssetTypeId"/>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.OwnershipV1UserAssetFactory.GetCollectibleUserAssetsByUserId(System.Int64,Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <inheritdoc cref="!:ICollectibleUserAssetFactory.GetCollectibleUserAssetsByUserId"/>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority">
+            <summary>
+            All Ownership-related queries and changes should go through here. 
+            Do not directly use the ov1 or ov2 client, or UserAssetFactory, or UserAsset methods.
+            However, this does not cover collectible stuff.
+            This is where managing the ov1/ov2 transition happens.
+            This should only contain methods that can exist for ov1 and ov2 simultaneously.
+            Anything which can't and needs to be transitioned, should use the Legacy classes
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority._Ov1UserAssetOwnershipFactory">
+            <summary>
+            These two should be used interchangably.  This forces us to notice when ov1 is doing something which claims to be dual-compatible, but ov2 doesn't have support for it yet.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority._ComponentName">
+            <summary>
+            This will be used for telemetry. It should be of two forms:
+            1. For non-static instances, it should be the proper component name (according to the code organization and component naming rules spreadsheet, regardless of what's in infra).
+            2. For static, it should be the base namespace of the csproj which loads it statically, or "ServerClassLibrary" for SCL.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority._Logger">
+            <summary>
+            Note: in static AOAs, this is generally a dummy log.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority.GetCollectibleUpdatedDateByUserAssetId(System.Int64)">
+            <summary>
+            UserAssets are never updated, except collectibles. Ones which might be collectible have their Updated date loaded from inside ov1.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority.AwardAsset(System.Int64,System.Int64,System.Boolean@)">
+            <summary>
+            By default, awardAssets does not allow duplicates.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority.AwardAssets(System.Collections.Generic.IReadOnlyCollection{System.Int64},System.Int64,System.Boolean@)">
+            <summary>
+            Defaults to "prevent duplicates"
+            </summary>
+            <param name="awardedNewAsset"> Was any asset actually awarded to the user (or were they all duplicates?) </param>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority.AwardAssetAllowingDuplicates(System.Int64,System.Int64)">
+            <summary>
+            Attempts to award asset allowing a given userId to own multiple of the same assetId.
+            Returns the UserAssetId of the newly created item.
+            </summary>
+            <returns>The UserAssetId of the awarded asset.</returns>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority.Transfer(System.Int64,System.Int64,System.Int64,System.String@)">
+            <summary>
+            Clients who are doing single item transfers should use this method so they don't have to lock/unlock/do transactions themselves.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority.TransferWithExistingLock(System.Int64,System.Int64,System.Int64,System.Guid)">
+            <summary>
+            Trade system needs to do mass locking, then transferring.  Internal calls should NOT unlock it!
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipAuthority.DeleteUserAsset(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Delete a userasset.  The caller has responsibility to delete accoutrement if user was wearing it. (and clear thumbnail if so)
+            We provide userId so that ov1 can look up and delete the record.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AwardStatus.Ov1Success">
+            <summary>
+            Just ov1
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AwardStatus.Ov2Success">
+            <summary>
+            Just ov2
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AwardStatus.DualAwarded">
+            <summary>
+            Awarded in both.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AwardStatus.Ov2OutOfSync">
+            <summary>
+            when you write to ov1, then fail to write to ov2, then fail to rollback ov1
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AwardStatus.Ov1Failure">
+            <summary>
+            when the initial write to ov1 fails
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AwardStatus.Ov2FailureRolledBackOv1">
+            <summary>
+            when you write to ov1, then ov2 fails, then successfully rollback ov1
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AwardStatus.AlreadyOwnedInOv1ButGrantedInOv2">
+            <summary>
+            previously AwardAsset(userId, assetId, out bool awardedNewAsset) would soft fail with awardedNewAsset==false when the user owned it already.  Some consumers still need that information.  For our case, we can't just fail early - we have to notice it and copy that data to ov2, and then return this status so that the consumer knows.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AwardStatus.AlreadyOwnedInOv1AndOv2GrantFailed">
+            <summary>
+            When ov2 fails.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.Ov2RolloutLogicHandler.#ctor(System.Func{System.Int64,System.Int32},Roblox.Platform.AssetOwnership.ILocker,Roblox.Platform.AssetOwnership.IUnlocker,Roblox.Platform.AssetOwnership.IDualCompatibleOwnershipFactory,Roblox.Platform.AssetOwnership.IOwnershipV2UserAssetFactory,Roblox.Platform.AssetOwnership.Properties.ISettings,Roblox.Platform.AssetOwnership.IRemediationRequestRecorder,Roblox.Platform.AssetOwnership.IAssetOwnershipObserver,Roblox.EventLog.ILogger)">
+            <summary>
+            The handler shouldn't throw, but consumers of it which used to throw when they'd interact directly with ov1UserAssetFactory should now detect the various types of failures and throw if necessary.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.Ov2RolloutLogicHandler.DoInnerRevoke(System.Int64,System.Int64,System.Int64,System.Guid)">
+            <summary>
+            Strategy for this: rather than attempting to rollback ov1, immediately create a remediation task.
+            That's because it doesn't seem easy to restore a userAsset from ov1 once it's deleted.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.UserAsset.#ctor(System.Int64,System.Int64,System.Int32,System.DateTime,System.Int64)">
+            <summary>
+            For reading userAssets from ov2!
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.IAssetOwnershipResult">
+            <summary>
+            For use queries that may hit ov1 or ov2 depending on rollout status.
+            For lock-related items, it's always ov1.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority.Transfer(System.Int64,System.Int64,System.Int64,System.String@)">
+            <summary>
+            Just transfer.  This locks, does ov1 and ov2 transferWithExistingLock, then unlocks.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority.DeleteUserAsset(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Aka Revoke.  The caller has responsibility to delete accoutrement if user was wearing it. (and clear thumbnail if so)
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority.AwardAssetAllowingDuplicates(System.Int64,System.Int64)">
+            <summary>
+            Attempts to award asset allowing a given userId to own multiple of the same assetId.
+            Returns the UserAssetId of the newly created item.
+            </summary>
+            <returns>The UserAssetId of the awarded asset.</returns>
+        </member>
+        <member name="T:Roblox.Platform.AssetOwnership.IDualCompatibleOwnershipFactory">
+            <summary>
+            This is for the two ownershipFactories.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.IDualCompatibleOwnershipFactory.RevokeWithExistingLock(System.Guid,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            This provides guid so that ov1 can revoke it.
+            This provides userId, assetId for ov2, which assumes its already locked.
+            both sides need the guid to ensure it's still locked.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.IDualCompatibleOwnershipFactory.TransferWithExistingLock(System.Int64,System.Int64,System.Int64,System.Int64,System.Guid,System.String@)">
+            <summary>
+            This provides guid so that ov1 can unlock it.
+            This provides userId, assetId for ov2, which assumes its already locked.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.AssetOwnership.AssetOwnershipObserver._ActionResultCounters">
+            <summary>
+            Write every named action+result enum to its own counter.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipObserver.OnExecutionStarted(Roblox.Platform.AssetOwnership.AssetOwnershipActionEventArgs)">
+            <summary>
+            we count totals, and start timers by requestId.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.AssetOwnership.AssetOwnershipObserver.OnExecutionFinished(Roblox.Platform.AssetOwnership.AssetOwnershipActionEventArgs)">
+            <summary>
+            We sample for average response time.
+            the average reqs/sec for this action+result
+            the average response time for this action+result
+            </summary>
+        </member>
+    </members>
+</doc>

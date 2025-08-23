@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Membership.UserDataAudit</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Membership.UserDataAudit.AuditCompositeEntryFactoryBase`4.#ctor(`3,Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            The base constructor for AuditCompositeEntryFactories.
+            </summary>
+            <param name="auditEntryEntityFactory">The <see cref="!:IAuditEntryEntityFactory"/> that produces <see cref="T:Roblox.Platform.Membership.UserDataAuditCore.IAuditEntry">IAuditEntries</see> data</param>.
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/> for name-lookup.  Accepts null if no name lookup is necessary.</param>
+        </member>
+    </members>
+</doc>

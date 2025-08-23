@@ -126,12 +126,12 @@ internal class ConfigurationServiceProvider
 		{
 			object value = parameter.Value;
 			string key = parameter.Key;
-			IEnumerable enumerable = ((value is string) ? null : (value as IEnumerable));
+			IEnumerable enumerable = (value is string) ? null : (value as IEnumerable);
 			if (enumerable != null)
 			{
-				foreach (object? item in enumerable)
+				foreach (object item in enumerable)
 				{
-					string value2 = ((item != null) ? WebUtility.UrlEncode(item.ToString()) : string.Empty);
+					string value2 = (item != null) ? WebUtility.UrlEncode(item.ToString()) : string.Empty;
 					list.Add(new KeyValuePair<string, string>(key, value2));
 				}
 			}
@@ -140,7 +140,14 @@ internal class ConfigurationServiceProvider
 				string value3 = string.Empty;
 				if (value != null)
 				{
-					value3 = WebUtility.UrlEncode((value as DateTime?)?.ToString("o") ?? value.ToString());
+					if (value is DateTime dt)
+					{
+						value3 = WebUtility.UrlEncode(dt.ToString("o"));
+					}
+					else
+					{
+						value3 = WebUtility.UrlEncode(value.ToString());
+					}
 				}
 				list.Add(new KeyValuePair<string, string>(key, value3));
 			}

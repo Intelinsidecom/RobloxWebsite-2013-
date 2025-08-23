@@ -1,0 +1,746 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Membership.Commands</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntityFactory.GetByPublicId(System.Guid)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntity"/> with the given public id
+            </summary>
+            <param name="publicId">the public id</param>
+            <returns>The <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntity"/> with the given public id, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntityFactory.SingleGetsByPublicIds(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            Gets individual <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntity" /> by their publicIds and return in a collection.
+            Serves as an alternative to MultiGet due to lack of EntityHelper support.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntityFactory.Create(Roblox.Platform.Membership.Entities.IAccountEntity)">
+            <summary>
+            Creates a new audit entry for the given account.
+            </summary>
+            <param name="entity"></param>
+            <returns>The newly created <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntity"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditMetadataEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditMetadataEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditMetadataEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditMetadataEntityFactory.GetByAccountsChangeTypeIdAndUserIdEnumerative(System.Byte,System.Int64,System.Int32,System.Nullable{System.Int64})">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditMetadataEntity"/>s by their AccountsAuditChangeType id and user id.
+            </summary>
+            <param name="accountsChangeTypeId">Id of the AccountsChangeType</param>
+            <param name="userId">Id of the user whose account changed</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditMetadataEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditMetadataEntityFactory.Create(Roblox.Platform.Membership.IUser,System.Guid,Roblox.Platform.Membership.Commands.AccountsAuditChangeType,System.Nullable{System.Int64})">
+            <summary>
+            Creates a new audit metadata entry for the given user.
+            </summary>
+            <param name="targetUser">User whose account changed</param>
+            <param name="auditEntryPublicId"></param>
+            <param name="typeId">Change type id</param>
+            <param name="actorUserId">Who changed the account (user themselves, CS agent, or processor-as-Roblox)</param>
+            <returns>The newly created <see cref="T:Roblox.Platform.Membership.Commands.Audit.IAccountsAuditMetadataEntity"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.UserUpdateResultCode">
+            <summary>
+            Codes represent where the update went wrong
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.ExplicitAgeBracketWithBirthdateException">
+            <summary>
+            Exception thrown for age bracket being explicitly set when user's birthdate is already set.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.ExplicitAgeBracketWithBirthdateException.#ctor(System.DateTime)">
+            <summary>
+            Constructs an <see cref="T:Roblox.Platform.Membership.Commands.ExplicitAgeBracketWithBirthdateException"/>.
+            </summary>
+            <param name="birthdate">The birthdate that was already set.</param>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.InvalidBirthdateException">
+            <summary>
+            Exception thrown for a birthdate that is invalid according to <see cref="T:Roblox.Platform.Membership.Commands.IBirthdateValidator"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.InsufficientAuthenticationMethodsException">
+            <summary>
+            Exception thrown for an invalid birthdate change that requires disconnecting Social Sign On (Facebook),
+            but is unable to because it is the user's only means of authentication.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.UserUpdateCommandResult">
+            <summary>
+            Result of the command execution
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Membership.Commands.UserUpdateCommandResult.Success">
+            <summary>
+            Represents a success result
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Membership.Commands.UserUpdateCommandResult.ResultCode">
+            <summary>
+            Result code
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Membership.Commands.UserUpdateCommandResult.InnerResultCode">
+            <summary>
+            Miscellaneous result code, if available. Means nothing if it is not interpreted.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserUpdateCommandResult.#ctor(Roblox.Platform.Membership.Commands.UserUpdateResultCode,System.Int32)">
+            <summary>
+            Default Constructor
+            </summary>
+            <param name="resultCode"><see cref="T:Roblox.Platform.Membership.Commands.UserUpdateResultCode"/></param>
+            <param name="innerResultCode"><see cref="F:Roblox.Platform.Membership.Commands.UserUpdateCommandResult.InnerResultCode"/></param>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.UserUpdateAuditEntry">
+            <summary>
+            Account and user are the same thing to the user service
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserUpdateAuditEntry.#ctor(Roblox.Platform.Membership.Audit.IUsersAuditEntryEntity,Roblox.Platform.Membership.Commands.Audit.IAccountsAuditEntryEntity)">
+            <summary>
+            Default Constructor
+            </summary>
+            <param name="usersAuditEntryEntity"></param>
+            <param name="accountsAuditEntryEntity"></param>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.UsernameValidationResult">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidationResult"/>.
+            </summary>
+            <seealso cref="!:Roblox.Platform.Membership.IUsernameValidationResult" />
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UsernameValidationResult.#ctor(System.Boolean,Roblox.Platform.Membership.Commands.UsernameValidatorResultCode)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Membership.Commands.UsernameValidationResult"/> class.
+            </summary>
+            <param name="isValid">if set to <c>true</c> [is valid].</param>
+            <param name="errorCode">The error code.</param>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.UsernameValidator">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidator"/>.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Membership.Commands.IUsernameValidator" />
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UsernameValidator.#ctor(Roblox.TextFilter.Client.ITextFilterClientV2,Roblox.EventLog.ILogger,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Membership.Entities.IAccountNameHistoryEntityFactory,Roblox.Platform.Membership.Entities.IAccountEntityFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Membership.Commands.UsernameValidator" /> class.
+            </summary>
+            <param name="textFilterClientV2">The <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2"/>.</param>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
+            <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory"/>.</param>
+            <param name="accountNameHistoryEntityFactory">The <see cref="T:Roblox.Platform.Membership.Entities.IAccountNameHistoryEntityFactory"/>.</param>
+            <param name="accountEntityFactory">The <see cref="T:Roblox.Platform.Membership.Entities.IAccountEntityFactory"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">membershipDomainFactories
+            or
+            textFilter
+            or
+            logger</exception>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UsernameValidator.IsUserNameLegal(System.String)">
+            <summary>
+            Returns an <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidationResult"/> if the username does not satisify the fixed rules on name requirements.
+            Returns null if the username passed the legality check with no issues.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UsernameValidator.CheckWithTextFilterService(System.String,Roblox.Platform.Membership.AgeBracket,System.Boolean,System.Boolean,Roblox.Platform.Membership.IUser)">
+            <summary> Checks the given username against the Text Filter Service </summary>
+            <returns> Returns an <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidationResult"/> if the username is invalid or there is otherwise an issue communicating with the text filter.
+            Returns null if the username passed the text filter with no issues.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IAccountsAuditFactory">
+            <summary>
+            Factory for getting accounts audit-related information
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IAccountsAuditFactory.GetAccountStatusChangeHistory(Roblox.Platform.MembershipCore.IUserIdentifier,System.Int32,System.Nullable{System.Int64},System.Boolean)">
+            <summary>
+            Obtains the audit history on a user's Account Status changes.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier"/> of the user whose account status history is being retrieved.</param>
+            <param name="count">The number of records to return.</param>
+            <param name="exclusiveStartId">The exclusive start Id.</param>
+            <param name="shouldReturnForgottenUser">Whether the records of a forgotten user should be returned, default to False (not returned).</param>
+            <returns>A collection of <see cref="T:Roblox.Platform.Membership.Commands.IAccountsAuditCompositeEntry"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">Throws when user is null.</exception>
+            <exception cref="T:System.ArgumentException">Throws when count is not positive.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IAccountsAuditCompositeEntry">
+            <summary>
+            Audit information on the change of Account data entity, comprising of the raw data (prefixed with "Audit_") and additional meta data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IAccountsAuditCompositeEntry.Id">
+            <summary>
+            The Id of the meta data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IAccountsAuditCompositeEntry.ActorUser">
+            <summary>
+            [Metadata] User who made the change - may be null
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IAccountsAuditCompositeEntry.ChangeType">
+            <summary>
+            [Metadata] What kind of change was made to the account
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IAccountsAuditCompositeEntry.TargetUser">
+            <summary>
+            [Metadata] User whose account was changed
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IAccountsAuditCompositeEntry.Created">
+            <summary>
+            [Metadata] When this metadata record was created
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IAccountsAuditCompositeEntry.Audit_AccountStatus">
+            <summary>
+            Value of "AccountStatus" of the Account record at the audit event.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.UserSetter">
+            <inheritdoc cref="T:Roblox.Platform.Membership.Commands.IUserSetter"/>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserSetter.SetBirthdate(System.DateTime,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.Membership.Commands.IUserSetter.SetBirthdate(System.DateTime,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserSetter.SetAgeBracket(Roblox.Platform.Membership.AgeBracket,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Membership.Commands.IUserSetter.SetAgeBracket(Roblox.Platform.Membership.AgeBracket,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserSetter.SetGenderType(Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Membership.Commands.IUserSetter.SetGenderType(Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserSetter.SetBirthdateAndGenderType(System.DateTime,Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Membership.Commands.IUserSetter.SetBirthdateAndGenderType(System.DateTime,Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserSetter.SetAgeBracketAndGenderTypeForNewUser(Roblox.Platform.Membership.AgeBracket,Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Membership.Commands.IUserSetter.SetAgeBracketAndGenderTypeForNewUser(Roblox.Platform.Membership.AgeBracket,Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserSetter.SetDescription(System.String,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Membership.Commands.IUserSetter.SetDescription(System.String,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserSetter.BackfillUnauditedPastData(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Membership.Commands.IUserSetter.BackfillUnauditedPastData(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserSetter.SetName(Roblox.Platform.Membership.IUser,System.String,Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Membership.Commands.IUserSetter.SetName(Roblox.Platform.Membership.IUser,System.String,Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IBirthdateChangeValidator">
+            <summary>
+            A platform object used to validate birthdate changes for users.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IBirthdateChangeValidator.Is13OrOverToUnder13Change(Roblox.Platform.Membership.IUser,System.DateTime,System.DateTime)">
+            <summary>
+            Determines if a user is currently over 13 years old and if so, whether changing to the new Birthdate
+            will make them under 13 years old.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="nowDate">The current date.</param>
+            <param name="newBirthdate">The birthdate.</param>
+            <returns>True if current over 13 and new birthdate is under 13, false otherwise. </returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IBirthdateChangeValidator.ValidateBirthdateChange(Roblox.Platform.Membership.IUser,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            Validates whether the given user is allowed to change to the newBirthdate based on the given parameters.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="nowDate">The current date.</param>
+            <param name="newBirthdate">The new birthdate.</param>
+            <param name="checkAge">if set to <c>false</c> will skip check to see if user is under 13 before changing age. This should only be false when setting through CS.</param>
+            <exception cref="T:Roblox.Platform.Membership.Commands.InvalidBirthdateException">Thrown if the given newBirthdate is in an invalid date for a birthdate.</exception>
+            <exception cref="T:Roblox.Platform.Membership.UnauthorizedUserOperationException">The user cannot change their birthdate if they are under 13.</exception>
+            <exception cref="T:Roblox.Platform.Membership.Commands.InsufficientAuthenticationMethodsException">Thrown if the user is changing from over 13 to under 13 and cannot disconnect social sign on.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IBirthdateValidator">
+            <summary>
+            A platform object used to validate birthdates.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IBirthdateValidator.IsBirthdateValid(System.DateTime,System.DateTime)">
+            <summary>
+            Determines whether the date is a valid birthdate based on the given dates.
+            </summary>
+            <param name="nowDate">The current date.</param>
+            <param name="date">The date to validate.</param>
+            <returns>True if it's a valid birthdate, otherwise false</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IBirthdateValidator.IsBirthdateValid(System.DateTime,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Determines whether the date is a valid birthdate based on the given nowDate, year, month and day.
+            </summary>
+            <param name="nowDate">The current date.</param>
+            <param name="year">The year.</param>
+            <param name="month">The month.</param>
+            <param name="day">The day.</param>
+            <returns>True if it is a valid birthdate, otherwise false.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IChangeUserResult`1">
+            <summary>
+            An object to contain the response from changing a user object. T is expected to be an enum representing possible responses (success and failure reasons) for the change being made.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IChangeUserResult`1.User">
+            <summary>
+            The updated IUser object
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IUsernameFactory">
+            <summary>
+            A factory handling the generation of usernames.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUsernameFactory.GenerateUserName(System.String,Roblox.Platform.Membership.AgeBracket,System.Boolean,System.String@)">
+            <summary>
+            Tries to generate the username.
+            </summary>
+            <param name="username">The base username, the user is attempting.</param>
+            <param name="ageBracket">The age bracket.</param>
+            <param name="mustUsePiiFiltersForU13Usernames">if set to <c>true</c> [should paass through pii filtersout].</param>
+            <param name="generatedUsername">The generated username.</param>
+            <returns>
+              <c>true</c> if the method was able to generate a username successfully, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IUsernameValidationResult">
+            <summary>
+            An interface that holds the result of username validation.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IUsernameValidationResult.IsValid">
+            <summary>
+              This holds whether the username validation is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IUsernameValidationResult.ResultCode">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Membership.Commands.UsernameValidatorResultCode"/>.
+            </summary>
+            <value>
+            The <see cref="T:Roblox.Platform.Membership.Commands.UsernameValidatorResultCode"/>.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.IUsernameValidationResult.ErrorMessage">
+            <summary>
+            Gets the error message in American English.
+            </summary>
+            <value>
+            The error message.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IUsernameValidator">
+            <summary>
+            Interface for validation of usernames.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUsernameValidator.ValidateUsername(System.String,Roblox.Platform.Membership.AgeBracket,System.Boolean,System.Boolean)">
+            <summary>
+            Validates the username for signup. This also checks if the username provided is available to use and passes filtering rules.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="ageBracket">The age bracket of the user trying to sign up.</param>
+            <param name="mustUsePiiFiltersForU13Usernames">if set to <c>true</c> [should use pii filters for u13 users].</param>
+            <param name="canBypassReservedUsername">If request can bypass the reserved username filter</param>
+            <returns>
+            A <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidationResult" /> based on the passed in <paramref name="username" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUsernameValidator.ValidateUsername(System.String,Roblox.Platform.Membership.IUser,System.Boolean)">
+            <summary>
+            Checks if the username is valid to use. This also checks if the username provided is available to use and passes filtering rules.
+            The passed in user must be a valid <see cref="T:Roblox.Platform.Membership.IUser" />.
+            </summary>
+            <param name="username">The username that needs validation.</param>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser" /> for which the username needs validation against.</param>
+            <param name="mustUsePiiFiltersForU13Usernames">if set to <c>true</c> [should use pii filters for u13 users].</param>
+            <returns>
+            A <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidationResult" /> based on the passed in <paramref name="username" />.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUsernameValidator.IsUserNameLegal(System.String)">
+            <summary>
+            Determines whether the specified username is legal under the username validation rules.
+            NOTE:  DO NOT use this method usless you know what you are doing.
+            This method determines whether the username is legal under the validation rules.
+            This method does not check if the username is available to use and also does not check if the username can be validated against the filtering rules.
+            </summary>
+            <param name="username">The username.</param>
+            <returns>
+            A <see cref="T:Roblox.Platform.Membership.Commands.IUsernameValidationResult" /> based in the passed in <paramref name="username" />.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUsernameValidator.IsUsernameAvailable(System.String,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Returns whether the specified <paramref name="username" /> is available to use for the provided <paramref name="user" />.
+            This method does not check the username against validation rules and filtering rules.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser" />.</param>
+            <returns>
+              <c>true</c> if [the speecified username is available for the user] ; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.IUserSetter">
+            <summary>
+            A platform object used to change user properties.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.SetBirthdate(System.DateTime,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,System.Boolean)">
+            <summary>
+            Sets the user's birthdate to the given value.
+            First validates the birthdate and whether the user can perform the action, so caller does not need to validate.
+            [WARNING] This method does not update the properties on the original IUser.
+            If the <see cref="T:Roblox.Platform.Membership.IUser" /> needs to have the updated properties, then grab a new IUser using the <see cref="T:Roblox.Platform.Membership.IUserFactory" />
+            </summary>
+            <param name="newBirthdate">New value for the birthdate.</param>
+            <param name="targetUser">The user changing their birthdate.</param>
+            <param name="actorUser">The user performing the action.</param>
+            <param name="checkAge">if set to <c>false</c> will skip check to see if user is under 13 before changing age. This should only be false when setting through CS.</param>
+            <exception cref="T:Roblox.Platform.Membership.Commands.InvalidBirthdateException">Attempted to set a birthdate out of range, also <see cref="T:Roblox.Platform.Membership.Commands.IBirthdateValidator" />.</exception>
+            <exception cref="T:Roblox.Platform.Membership.UnauthorizedUserOperationException">The user cannot change their birthdate if they are under 13.</exception>
+            <exception cref="T:Roblox.Platform.Membership.Commands.InsufficientAuthenticationMethodsException">Thrown if the user cannot disconnect social sign on, also <see cref="T:Roblox.Platform.Membership.Commands.IBirthdateValidator" />.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.SetAgeBracket(Roblox.Platform.Membership.AgeBracket,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Saves age bracket and related privacy settings where birthdate is null
+            (new user creation from certain platforms where such information is not available).
+            [WARNING] This method does not update the properties on the original IUser.
+            If the <see cref="T:Roblox.Platform.Membership.IUser" /> needs to have the updated properties, then grab a new IUser using the <see cref="T:Roblox.Platform.Membership.IUserFactory" />
+            </summary>
+            <param name="ageBracket">New value for the AgeBracket.</param>
+            <param name="user">The user setting their AgeBracket.</param>
+            <exception cref="T:Roblox.Platform.Membership.Commands.ExplicitAgeBracketWithBirthdateException">Cannot set age bracket explicitly if the user already has a birthdate (age bracket should be derived from birthdate when available).</exception>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.SetGenderType(Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Sets the user's gender type.
+            [WARNING] This method does not update the properties on the original IUser.
+            If the <see cref="T:Roblox.Platform.Membership.IUser" /> needs to have the updated properties, then grab a new IUser using the <see cref="T:Roblox.Platform.Membership.IUserFactory" />
+            </summary>
+            <param name="genderType">New value for the genderType.</param>
+            <param name="targetUser">The user changing their birthdate.</param>
+            <param name="actorUser">The user performing the action.</param>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.SetBirthdateAndGenderType(System.DateTime,Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Sets the user's birthdate and gender type.
+            [WARNING] This method does not update the properties on the original IUser.
+            If the <see cref="T:Roblox.Platform.Membership.IUser" /> needs to have the updated properties, then grab a new IUser using the <see cref="T:Roblox.Platform.Membership.IUserFactory" />
+            </summary>
+            <param name="newBirthdate">New value for the Birthdate.</param>
+            <param name="genderType">New value for the GenderType.</param>
+            <param name="targetUser">The user changing their birthdate.</param>
+            <param name="actorUser">The user performing the action.</param>
+            <exception cref="T:Roblox.Platform.Membership.Commands.InvalidBirthdateException">Attempted to set a birthdate out of range, also <see cref="T:Roblox.Platform.Membership.Commands.IBirthdateValidator" />.</exception>
+            <exception cref="T:Roblox.Platform.Membership.UnauthorizedUserOperationException">The user cannot change their birthdate if they are under 13.</exception>
+            <exception cref="T:Roblox.Platform.Membership.Commands.InsufficientAuthenticationMethodsException">Thrown if the user cannot disconnect social sign on, also <see cref="T:Roblox.Platform.Membership.Commands.IBirthdateValidator" />.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.SetAgeBracketAndGenderTypeForNewUser(Roblox.Platform.Membership.AgeBracket,Roblox.Platform.Membership.GenderType,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Saves age bracket, age-related privacy settings, and gender type for situations where birthdate is null
+            (new user creation from certain platforms where such information is not available).
+            [WARNING] This method does not update the properties on the original IUser.
+            If the <see cref="T:Roblox.Platform.Membership.IUser" /> needs to have the updated properties, then grab a new IUser using the <see cref="T:Roblox.Platform.Membership.IUserFactory" />
+            </summary>
+            <param name="ageBracket">New value for the AgeBracket.</param>
+            <param name="genderType">New value for the GenderType.</param>
+            <param name="user">The new user setting their AgeBracket and GenderType.</param>
+            <exception cref="T:Roblox.Platform.Membership.Commands.ExplicitAgeBracketWithBirthdateException">Cannot set age bracket explicitly if the user already has a birthdate (age bracket should be derived from birthdate when available).</exception>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.SetDescription(System.String,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Saves the given description as the "User Blurb".
+            Note that the value will be filtered before being committed.
+            [WARNING] This method does not update the properties on the original IUser.
+            If the <see cref="T:Roblox.Platform.Membership.IUser" /> needs to have the updated properties, then grab a new IUser using the <see cref="T:Roblox.Platform.Membership.IUserFactory" />
+            </summary>
+            <param name="description">The new value for the user description / blurb</param>
+            <param name="user">The user setting their description.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.BackfillUnauditedPastData(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Check to see if the current data is reflected by the audit system.
+            If there is a discrepency, backfill an audit entry for the current data with acknowledgement that we don't know when the data was set.
+            [WARNING] This method does not update the properties on the original IUser.
+            If the <see cref="T:Roblox.Platform.Membership.IUser" /> needs to have the updated properties, then grab a new IUser using the <see cref="T:Roblox.Platform.Membership.IUserFactory" />
+            </summary>
+            <param name="user">The user this is called for.</param>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.SetName(Roblox.Platform.Membership.IUser,System.String,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Updates the user's name (if the name is valid and legal), and records the previous name in the history log. Does not handle the purchasing of the new username.
+            WARNING: Not meant to be used by CS (as implemented). Does not check roleset/elevated action permissions on the actor.
+            If the actor is the roblox system user (ie, the request is coming from a processor), we skip all validation other than that the name does not already exist.
+            </summary>
+            <param name="user">The user whose name is changing</param>
+            <param name="newName">The proposed new name</param>
+            <param name="actor">Who is initiating this request. Processors should pass the Roblox IUser.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if the <paramref name="user"/> is null</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown if the AccountId of the <paramref name="user"/> returns a null entity object (ie, the accountid is invalid)</exception>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.IUserSetter.SetAccountStatus(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.AccountStatus,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Sets the status of the underlying Account entity.
+            </summary>
+            <param name="actor">Who is initiating this request. Processors should pass the Roblox IUser.</param>
+            <returns>Returns false if an error occurred. True if successful.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories">
+            <summary>
+            Domain factories for Roblox.Platform.Membership.Commands
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.BirthdateValidator">
+            <summary>
+            Provides an IBirthdateValidator
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.BirthdateChangeValidator">
+            <summary>
+            Provides an IBirthdateChangeValidator
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.AccountsAuditFactory">
+            <summary>
+            The <see cref="T:Roblox.Platform.Membership.Commands.IAccountsAuditFactory"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.Settings">
+            <summary>
+            The <see cref="T:Roblox.Platform.Membership.Commands.Properties.ISettings"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.#ctor(Roblox.Platform.Membership.MembershipDomainFactories,Roblox.TextFilter.Client.ITextFilterClient,Roblox.EventLog.ILogger,Roblox.Platform.Authentication.IAvailableAuthenticationMethodMonitor,System.Func{System.DateTime})">
+            <summary> 
+            Constructs the domain factories for Roblox.Platform.Membership.Commands
+            </summary>
+            <param name="membershipDomainFactories">The <see cref="T:Roblox.Platform.Membership.MembershipDomainFactories"/>.</param>
+            <param name="textFilterClient">The <see cref="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.TextFilterClient"/>.</param>
+            <param name="logger">The <see cref="P:Roblox.Platform.Membership.Commands.MembershipCommandsDomainFactories.Logger"/>.</param>
+            <param name="availableAuthenticationMethodMonitor">The <see cref="T:Roblox.Platform.Authentication.AvailableAuthenticationMethodMonitor"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Throws when membershipDomainFactories is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Throws when textFilter, textFilterV2, logger, availableAuthenticationMethodMonitor, or nowGetter is null.</exception>
+        </member>
+        <member name="F:Roblox.Platform.Membership.Commands.UsernameLegalityCheckResult.ValidatorErrorCode">
+            <summary>
+            Error code for the UsernameValidator to pass back to the consumer.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.UsernameLegalityCheckResult.IsLegal">
+            <summary>
+            Whether the username is legal.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Membership.Commands.UsernameTextFilterCheckResult.ValidatorErrorCode">
+            <summary>
+            Error code for the UsernameValidator to pass back to the consumer.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.Commands.UsernameTextFilterCheckResult.IsClean">
+            <summary>
+            Whether the username is clean (passes the text filter).
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.Commands.UserUpdaterResult">
+            <summary>
+            Result of the updater execution
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Membership.Commands.UserUpdaterResult.CommandResult">
+            <summary>
+            Result of last command
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Membership.Commands.UserUpdaterResult.UpdatedUser">
+            <summary>
+            Updated user if available
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserUpdaterResult.#ctor(Roblox.Platform.Membership.Commands.UserUpdateCommandResult,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Default Constructor
+            </summary>
+            <param name="result"><see cref="T:Roblox.Platform.Membership.Commands.UserUpdateCommandResult"/></param>
+            <param name="updatedUser"><see cref="F:Roblox.Platform.Membership.Commands.UserUpdaterResult.UpdatedUser"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Commands.UserUpdaterResult.CreateWithNoUser(Roblox.Platform.Membership.Commands.UserUpdateCommandResult)">
+            <summary>
+            Creates result with null user
+            </summary>
+            <param name="result"><see cref="T:Roblox.Platform.Membership.Commands.UserUpdateCommandResult"/></param>
+            <returns><see cref="T:Roblox.Platform.Membership.Commands.UserUpdaterResult"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntityFactory.GetByUserIdAndUsersAuditEntriesMetaDataTypeIdEnumerative(System.Int64,System.Byte,System.Int32,System.Int64)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntity"/>s of a given user and <see cref="T:Roblox.Platform.Membership.UsersAuditEntryMetaDataType"/>.
+            </summary>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntityFactory.CreateNew(Roblox.Platform.Membership.IUser,System.Guid,Roblox.Platform.Membership.UsersAuditEntryMetaDataType,System.Int64)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntity"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntityFactory.CreateLegacyEntry(Roblox.Platform.Membership.IUser,System.Guid,Roblox.Platform.Membership.UsersAuditEntryMetaDataType,System.Int64)">
+            <summary>
+            Creates a <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntriesMetaDataEntity"/> for an audit entry for a past change where certain meta data are not available.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntityFactory.GetByPublicId(System.Guid)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntity"/> with the given characteristics.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntity"/> with the given characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntityFactory.SingleGetsByPublicIds(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            Gets individual <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntity">IUsersAuditEntryEntities</see> by their publicIds and return in a collection.
+            Serves as an alternative to MultiGet due to lack of EntityHelper support.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntityFactory.CreateNew(Roblox.Platform.Membership.Entities.IUserEntity)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.Membership.Audit.IUsersAuditEntryEntity"/> based on an <see cref="T:Roblox.Platform.Membership.Entities.IUserEntity"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.IUsersAuditCompositeEntry">
+            <summary>
+            Audit information on the User data entity, comprising of the raw data (prefixed with "Audit_") and additional meta data.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Id">
+            <summary>
+            Primary identifier of the entry
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.UserId">
+            <summary>
+            [Metadata] The id of the user this record is associated with
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Type">
+            <summary>
+            [Metadata] The cause triggering the audit event, such has change of birthhdate.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.ActorUserId">
+            <summary>
+            [Metadata] The id of the user triggering the audit event, such as an ordinary user or a CS agent.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.ActorName">
+            <summary>
+            [Metadata] The name of the user triggering the audit event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.IsLegacyValue">
+            <summary>
+            [Metadata] Indicating if the record represents data originally produced when auditing was not available, and is later being backfilled to provide comparison with other audit records.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Audit_Updated">
+            <summary>
+            Value of "Updated" field of the User record at the audit event.  <seealso cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Audit_GenderType">
+            <summary>
+            Value of "GenderType" field of the User record at the audit event.  <seealso cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Audit_Birthdate">
+            <summary>
+            Value of "GenderType" field of the User record at the audit event.  <seealso cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Audit_AgeBracket">
+            <summary>
+            Value of "AgeBracket" field of the User record at the audit event.  <seealso cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Audit_UseSuperSafeConversationMode">
+            <summary>
+            Value of "UseSuperSafeConversationMode" field of the User record at the audit event.  <seealso cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Audit_UseSuperSafePrivacyMode">
+            <summary>
+            Value of "UseSuperSafePrivacyMode" field of the User record at the audit event.  <seealso cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Audit_Created">
+            <summary>
+            Value of "Created" field of the User record at the audit event.  <seealso cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Membership.IUsersAuditCompositeEntry.Audit_AccountId">
+            <summary>
+            Value of "AccountId" field of the User record at the audit event.  <seealso cref="T:Roblox.Platform.Membership.IUser"/>
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Membership.IUsersAuditCompositeEntryFactory">
+            <summary>
+            A factory producing <see cref="T:Roblox.Platform.Membership.UsersAuditCompositeEntry">UsersAuditCompositeEntries</see>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.IUsersAuditCompositeEntryFactory.GetBirthdateHistory(System.Int64,System.Byte,System.Int64)">
+            <summary>
+            Obtains audit information on a user's birthhdate changes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.IUsersAuditCompositeEntryFactory.GetGenderHistory(System.Int64,System.Byte,System.Int64)">
+            <summary>
+            Obtains audit information on a user's gender changes.
+            </summary>
+        </member>
+    </members>
+</doc>

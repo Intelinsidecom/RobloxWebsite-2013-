@@ -24,11 +24,12 @@
     <Reference Include="System.Configuration.ConfigurationManager">
       <HintPath>..\..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataV2\Core\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj" />
   </ItemGroup>
 </Project>

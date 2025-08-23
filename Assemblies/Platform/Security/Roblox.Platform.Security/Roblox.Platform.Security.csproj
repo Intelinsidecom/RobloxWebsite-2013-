@@ -24,9 +24,6 @@
     <Reference Include="Roblox.Platform.Core">
       <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Hashing">
       <HintPath>..\..\..\..\Website\bin\Roblox.Hashing.dll</HintPath>
     </Reference>
@@ -40,5 +37,8 @@
     <Reference Include="System.Configuration">
       <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Configuration.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

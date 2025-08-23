@@ -39,11 +39,16 @@ public class PremiumFeaturesProduct : IPremiumFeaturesProduct
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	public PremiumFeaturesProduct(IPremiumFeaturesClient premiumFeaturesClient, IBillingClient billingClient, IAccountCountryAccessor accountCountryAccessor, IGeolocationFactory geolocationFactory, ILogger logger)
 	{
-		PremiumFeaturesClient = premiumFeaturesClient.AssignOrThrowIfNull<IPremiumFeaturesClient>("premiumFeaturesClient");
-		BillingClient = billingClient.AssignOrThrowIfNull<IBillingClient>("billingClient");
-		AccountCountryAccessor = accountCountryAccessor.AssignOrThrowIfNull("accountCountryAccessor");
-		GeolocationFactory = geolocationFactory.AssignOrThrowIfNull("geolocationFactory");
-		Logger = logger.AssignOrThrowIfNull("logger");
+		if (premiumFeaturesClient == null) throw new ArgumentNullException("premiumFeaturesClient");
+		if (billingClient == null) throw new ArgumentNullException("billingClient");
+		if (accountCountryAccessor == null) throw new ArgumentNullException("accountCountryAccessor");
+		if (geolocationFactory == null) throw new ArgumentNullException("geolocationFactory");
+		if (logger == null) throw new ArgumentNullException("logger");
+		PremiumFeaturesClient = premiumFeaturesClient;
+		BillingClient = billingClient;
+		AccountCountryAccessor = accountCountryAccessor;
+		GeolocationFactory = geolocationFactory;
+		Logger = logger;
 	}
 
 	/// <summary>

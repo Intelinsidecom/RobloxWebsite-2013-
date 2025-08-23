@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyName>Roblox.TranslationStorage.Client</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <LangVersion>11.0</LangVersion>
+  </PropertyGroup>
+</Project>

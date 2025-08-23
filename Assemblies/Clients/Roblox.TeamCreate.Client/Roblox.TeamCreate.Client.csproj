@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AssemblyName>Roblox.TeamCreate.Client</AssemblyName>
+    <LangVersion>11.0</LangVersion>
+    <NoWarn>$(NoWarn);CS1668</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Roblox.ApiClientBase">
+      <HintPath>..\..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.DataV2.Core">
+      <HintPath>..\..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

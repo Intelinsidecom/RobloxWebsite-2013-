@@ -3,6 +3,7 @@ using Roblox.Platform.Universes.Events;
 using Roblox.Platform.Universes.Properties;
 using Roblox.TextFilter.Client;
 using Roblox.Universes.Client;
+using ClientUniverse = Roblox.Universes.Client.Universe;
 
 namespace Roblox.Platform.Universes;
 
@@ -36,12 +37,12 @@ internal class Universe : IUniverse
 
 	public virtual bool StudioAccessToApisAllowed { get; internal set; }
 
-	public Universe(Universe clientUniverse, UniverseDomainFactories universeDomainFactories)
+	public Universe(ClientUniverse clientUniverse, UniverseDomainFactories universeDomainFactories)
 		: this(clientUniverse, universeDomainFactories, Settings.Default)
 	{
 	}
 
-	public Universe(Universe clientUniverse, UniverseDomainFactories universeDomainFactories, ISettings settings)
+	public Universe(ClientUniverse clientUniverse, UniverseDomainFactories universeDomainFactories, ISettings settings)
 	{
 		_UniverseDomainFactories = universeDomainFactories ?? throw new ArgumentNullException("universeDomainFactories");
 		if (clientUniverse == null)

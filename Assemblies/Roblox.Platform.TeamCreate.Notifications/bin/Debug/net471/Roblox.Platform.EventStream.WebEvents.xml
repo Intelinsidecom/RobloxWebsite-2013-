@@ -1,0 +1,1523 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.EventStream.WebEvents</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.BufferedEventBase">
+            <summary>
+            Used to force people to pass in a BufferedEventStreamer and delayed event args construction if you want to use certain types of high-volume events.
+            Otherwise identical to a <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.BufferedWebEventBase">
+            <summary>
+            Used to force people to pass in a BufferedEventStreamer if you want to use certain types of high-volume events.
+            Otherwise identical to a <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventBase"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEventArgs">
+            <summary>
+            Represents the event arguments for an <see cref="T:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEvent"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEventArgs.EnrollmentId">
+            <summary>
+            The enrollment id assigned when enrolled
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEventArgs.ExperimentId">
+            <summary>
+            The id of the experiment id of the test they were enrolled in
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEventArgs.VersionId">
+            <summary>
+            The version id of the test they were enrolled in
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEventArgs.VariationId">
+            <summary>
+            The id of the variation the user ended up in the AB test enrollment
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEventArgs.VariationValue">
+            <summary>
+            The value of the variation the user ended up in the AB test enrollment
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEventArgs.SubjectTargetId">
+            <summary>
+            The value of the SubjectTargetId passed on the enroll call
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEventArgs">
+            <summary>
+            Represents the event arguments for an <see cref="T:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEvent"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEventArgs.PageUrl">
+            <summary>
+            The url the app used in order to inform the platform layer of the event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEventArgs.PlaceId">
+            <summary>
+            The roblox place id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEventArgs.EventTime">
+            <summary>
+            The event time (timestamp on platform layer host).
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.EventArgs.EndpointIncorrectUsageEventArgs.EndpointName">
+            <summary>
+            Gets or sets the name of the endpoint. (required)
+            </summary>
+            <value>
+            The name of the endpoint.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.EventArgs.EndpointIncorrectUsageEventArgs.Report">
+            <summary>
+            Gets or sets the report (optional).
+            May contain additional information such as arguments values provided by user.
+            </summary>
+            <value>
+            The report.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.EventArgs.LoginFormEventArgs.Email">
+            <summary>
+            The email entered if any
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.EventArgs.LoginFormEventArgs.Username">
+            <summary>
+            The username entered if any
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.EventArgs.LoginFormEventArgs.Phone">
+            <summary>
+            The phone entered if any
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.EventArgs.LoginFormEventArgs.Context">
+            <summary>
+            The context for the event
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.EventArgs.PrivateModuleRequiredEventArgs.PlaceId">
+            <summary>
+            The ID of the place which required the module.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.EventArgs.PrivateModuleRequiredEventArgs.AssetId">
+            <summary>
+            The ID of the module which was required.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.BrowserTrackerCreatedEventArgs">
+            <summary>
+            Event arguments for tracking BrowserTracker creation.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BrowserTrackerCreatedEventArgs.RequestUrl">
+            <summary>
+            Gets or sets the request URL.
+            </summary>
+            <value>
+            The request URL.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BotScoreCheckEventArgs.Reason">
+            <summary>
+            The reason for the score given. Note, reason currently doesn't exist.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BotScoreCheckEventArgs.Score">
+            <summary>
+            The score given by the service 0 - 1.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BotScoreCheckEventArgs.Context">
+            <summary>
+            The service that we use to get the score. e.g. Google.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.Sort">
+            <summary>
+            Sort of the result
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.Category">
+            <summary>
+            Category of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.AssetsReturned">
+            <summary>The assets returned in CSV format</summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.Page">
+            <summary>
+            Page on which current results shown.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.SubCategory">
+            <summary>
+            Sub Category of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.Gears">
+            <summary>
+            Gears of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.Genre">
+            <summary>
+            Genre of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.AlgorithmName">
+            <summary>
+            Algorithm Name of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.PriceMin">
+            <summary>
+            Minimum Price of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.PriceMax">
+            <summary>
+            Maximum Price of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.HttpStatusCode">
+            <summary>
+            HttpStatusCode of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.IncludeNotForSale">
+            <summary>
+            Include Not For Sale Assets of result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.TagNames">
+            <summary>
+            Tag names in result
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs.UserItemModelName">
+            <summary>
+            User Item model name for catalog sorts.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CatalogKeywordSearchEventArgs.Keyword">
+            <summary>
+            The keyword for the search.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.UniverseId">
+            <summary>
+            The id of the universe of which root place being configured
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.PlaceId">
+            <summary>
+            The id of the place being configured
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.OldName">
+            <summary>
+            The name of the place before configuration
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.NewName">
+            <summary>
+            The name of the place after configuration
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.OldDescription">
+            <summary>
+            The description of the place before configuration
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.NewDescription">
+            <summary>
+            The description of the place after configuration
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.OldImageIconUrl">
+            <summary>
+            The IconUrl of the place before configuration
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.NewImageIconUrl">
+            <summary>
+            The IconUrl of the place after configuration
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs.FailureReason">
+            <summary>
+            Why the attempt to configure the place was unsuccessful
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs">
+            <summary>
+            Event arguments for CookieSizeEvent class
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs.CookieSizeThreshold">
+            <summary>
+            Gets or sets the cookie size threshold.
+            </summary>
+            <value>The cookie size threshold.</value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs.ActualCookieSize">
+            <summary>
+            Gets or sets the actual size of the cookie.
+            </summary>
+            <value>The actual size of the cookie.</value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs.RawCookies">
+            <summary>
+            Gets or sets the raw cookies.
+            </summary>
+            <value>The raw cookies.</value>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEventArgs">
+            <summary>
+            Event arguments for tracking Cookie Conversion.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEventArgs.Ctx">
+            <summary>
+            Gets or sets the context.
+            </summary>
+            <value>
+            The context.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEventArgs.CookieName">
+            <summary>
+            Gets or sets the name of the cookie.
+            </summary>
+            <value>
+            The name of the cookie.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEventArgs.CookieValue">
+            <summary>
+            Gets or sets the cookie value.
+            </summary>
+            <value>
+            The cookie value.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEventArgs.NewCookieName">
+            <summary>
+            Gets or sets the name of the new cookie.
+            </summary>
+            <value>
+            The name of the new cookie.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CountryChangedByUserEventArgs.NewCountryId">
+            <summary>
+            The Id of the user's new country.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CountryChangedByUserEventArgs.PreviousCountryId">
+            <summary>
+            The Id of the user's old country.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CountryChangedByUserEventArgs.ActorId">
+            <summary>
+            The user Id of the account which activated the change in country setting. This
+            could be a CS agent.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.CountryChangedByUserEventArgs.EventTime">
+            <summary>
+            The time the user changed countries.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BundleFavoriteEventArgs.BundleId">
+            <summary>
+            The id of the budnle being favorited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BundleFavoriteEventArgs.BundleType">
+            <summary>
+            Type of the asset being favorited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BundleFavoriteEventArgs.Favorite">
+            <summary>
+            True if a user is adding a favorite, false if a user is removing the favorite
+            Not supplied if the attempt failed
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BundleFavoriteEventArgs.Success">
+            <summary>
+            True if the favorite event is recorded
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BundleFavoriteEventArgs.FailureReason">
+            <summary>
+            Why the attempt to favorite the bundle was unsuccessful
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.BundleFavoriteEventArgs.FavoriteCount">
+            <summary>
+            The favorites count for the bundle reported to the page PRIOR to this action
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.Solved">
+            <summary>
+            If FunCaptcha was solved
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.Score">
+            <summary>
+            The score given by the service. Currently always 0.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.UserIp">
+            <summary>
+            The ip of the user according to FunCaptcha
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.Context">
+            <summary>
+            The action that triggered FunCaptcha
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.FunCaptchaSession">
+            <summary>
+            The FunCaptcha session token. This is always set and always unique.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.TimeVerified">
+            <summary>
+            Unix Timestamp of when FunCaptcha was verified with our server as solved or not.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.Attempted">
+            <summary>
+            If the user didn't interact with FunCaptcha but it was submitted for verification.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.PreviouslyVerified">
+            <summary>
+            If this session had previously been validated. 
+            Sessions can only be validated once and will always return solved:false 
+            with this added if previously verified. Prevents replay attacks.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.SessionTimedOut">
+            <summary>
+            Sessions can only live for a certain time, by default 30 minutes.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.Suppressed">
+            <summary>
+            FunCaptcha was not shown due to users prior history.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.SuppressLimited">
+            <summary>
+            Suppress mode would have shown, except user hit internal rate limits
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.VerificationTimeElapsed">
+            <summary>
+            The time it took to get response from FC servers
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs.VerificationBlocked">
+            <summary>
+            If this is true, the result of the "Solved" parameter was ignored and we blocked this
+            particular captcha solve. Currently this can happen if the ASN of the IP used to create
+            the captcha token and the ASN of the IP used to redeem the token don't match.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.Keyword">
+            <summary>
+            The keyword for the search.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.AlgorithmName">
+            <summary>
+            Algorithm used in searching games. 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.AlgorithmQueryType">
+            <summary>
+            Get or set AlgorithmQueryType
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.SuggestionCorrection">
+            <summary>
+            Get or set suggestion correction.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.SuggestionKeyword">
+            <summary>
+            Get or set suggestion shown.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.SuggestionAlgorithm">
+            <summary>
+            Get or set suggestion algorithm.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.SuggestionReplacedKwd">
+            <summary>
+            Get or set suggestion replaced keyword.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.IllegalKeyword">
+            <summary>
+            Get or set illegal keyword.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs.FilteredKeyword">
+            <summary>
+            Get or set filtered keyword.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortEventArgs.SortPosition">
+            <summary>
+            Position of sort on the page.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortEventArgs.SortFilter">
+            <summary>
+            Sort filter identifies the sort.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortEventArgs.GameSetTargetId">
+            <summary>
+            GameSetTargetId is applicable for curated sorts. It identifies the sort.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortSearchBaseEventArgs.GamesStartIndex">
+            <summary>
+            Start index of games to search.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortSearchBaseEventArgs.MaxGames">
+            <summary>
+            Max number of games to return.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortSearchBaseEventArgs.Page">
+            <summary>Page of results determined by StartRow / MaxRows</summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortSearchBaseEventArgs.FeaturedPlaceId">
+            <summary>
+            Get or set FeaturedPlaceId
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortSearchBaseEventArgs.AssetsReturned">
+            <summary>The assets returned. It will be Ids for the GameSortEvent and Id and name for GameSearchEvent.</summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortsListEventArgs.VersionId">
+            <summary>
+            Version Id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortsListEventArgs.VariationValue">
+            <summary>
+            Variation Value
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSortsListEventArgs.GameSorts">
+            <summary>
+            Game sorts to be shown on the page.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.LoginAttemptedEventArgs.Context">
+            <summary>
+            The context for the event
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.LoginAttemptedEventArgs.CredentialsType">
+            <summary>
+            The credentials type used for login.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.LoginAttemptedEventArgs.ResultCode">
+            <summary>
+            The result code for the login operation.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.LoginAttemptedEventArgs.EventTime">
+            <summary>
+            The time the event happened.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs.PageUrl">
+            <summary>
+            Url of the action for which the device handle was evaluated.
+            E.g. this would be the friend request api endpoint while the
+            ReferrerUrl would corresopnd to the user profile page.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs.Valid">
+            <summary>
+            Did this HTTP request supply device handle, either in header or in cookie,
+            and was it valid?
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs.SuppliedInHeader">
+            <summary>
+            Device handle was supplied in the header.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs.SuppliedInCookie">
+            <summary>
+            Device handle was supplied as a cookie
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs.NotSupplied">
+            <summary>
+            Device handle was not supplied
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs.Invalid">
+            <summary>
+            Device handle was supplied in header or as cookie,
+            it was evaluated and determined to be invalid
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs.Failed">
+            <summary>
+            This request failed the device handle check, either because it supplied
+            an invalid device handle or none was supplied at all
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs.AssetId">
+            <summary>
+            The id of the asset being favorited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs.AssetType">
+            <summary>
+            Type of the asset being favorited
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs.Favorite">
+            <summary>
+            True if a user is adding a favorite, false if a user is removing the favorite
+            Not supplied if the attempt failed
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs.Success">
+            <summary>
+            True if the favorite event is recorded
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs.FailureReason">
+            <summary>
+            Why the attempt to favorite the asset was unsuccessful
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs.FavoriteCount">
+            <summary>
+            The favorites count for the asset reported to the page PRIOR to this action
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.LogoutProcessorLogoutEventArgs">
+            <summary>
+            <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/> for <see cref="T:Roblox.Platform.EventStream.WebEvents.LogoutProcessorLogoutEvent"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.LogoutProcessorLogoutEventArgs.Success">
+            <summary>
+            Indicates whether the LogoutFromAllSessions initiated by the processor was successful.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PurchaseBundleEventArgs">
+            <summary>
+            Event args for Bundle Purchase event
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PushNotificationSettingChangedEventArgs">
+            <summary>
+            Event Arguments for a push notification change event
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PushNotificationSettingChangedEventArgs.EventTime">
+            <summary>
+            The event time <see cref="T:Roblox.Time.UtcInstant"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PushNotificationSettingChangedEventArgs.IsEnabled">
+            <summary>
+            Whether Push Notification Setting is enabled or disabled
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PushNotificationSettingChangedEventArgs.ReceiverDestinationType">
+            <summary>
+            The receiver destination type
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PushNotificationSettingChangedEventArgs.ReceiverDestinationId">
+            <summary>
+            The receiver target id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.SupportedLocaleChangedByUserEventArgs.NewSupportedLocaleId">
+            <summary>
+            The Id of the user's new supported locale setting.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.SupportedLocaleChangedByUserEventArgs.PreviousSupportedLocaleId">
+            <summary>
+            The Id of the user's old supported locale setting.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.SupportedLocaleChangedByUserEventArgs.ActorId">
+            <summary>
+            The user Id of the account which activated the change in supported locale. This
+            could be a CS agent.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.SupportedLocaleChangedByUserEventArgs.EventTime">
+            <summary>
+            The time the user changed languages.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.MatchUserContactsByPhoneEventArgs.EventTime">
+            <summary>
+            The event time <see cref="T:Roblox.Time.UtcInstant"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.MatchUserContactsByPhoneEventArgs.Contacts">
+            <summary>
+            The number of contacts received for matching.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.MatchUserContactsByPhoneEventArgs.Matches">
+            <summary>
+            The number of contacts that matched.
+            A contact is a match when at least one 
+            of its phone numbers matched with an existing account.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PointsAwardedEventArgs">
+            <summary>
+            All arguments for the <see cref="T:Roblox.Platform.EventStream.WebEvents.PointsAwardedEvent"/> event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PointsAwardedEventArgs.RecipientUserId">
+            <summary>
+            The id of the user who recieved the points.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PointsAwardedEventArgs.UniverseId">
+            <summary>
+            The universes where the points were awarded.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PointsAwardedEventArgs.PlaceId">
+            <summary>
+            The place where the points were awarded.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PointsAwardedEventArgs.Amount">
+            <summary>
+            How many points were awarded.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PointsAwardedEventArgs.EventTime">
+            <summary>
+            When the points were awarded.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.TwilioErrorEventArgs.ErrorCode">
+            <summary>
+            The error code specified by Twilio
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.TwilioErrorEventArgs.HttpStatus">
+            <summary>
+            The status of the underlying HTTP request
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.TwilioErrorEventArgs.PhoneNumber">
+            <summary>
+            The phone that we tried to contact
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.UserLoggedInEventArgs.Username">
+            <summary>
+            The username the user signed up with.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.LogoutEventArgs">
+            <summary>
+            <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/> for <see cref="T:Roblox.Platform.EventStream.WebEvents.LogoutEvent"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.LogoutEventArgs.IsFromAllSessions">
+            <summary>
+            Is this logout for all sessions?
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.LogoutEventArgs.LogoutReason">
+            <summary>
+            The reason this logout occurred.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.VoteEventArgs">
+            <summary>
+            Arguments class for <see cref="T:Roblox.Platform.EventStream.WebEvents.VoteEvent"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.AssetId">
+            <summary>
+            Asset Id which is being voted.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.AssetType">
+            <summary>
+            Asset type.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.VoterId">
+            <summary>
+            Voter's user Id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.VoterType">
+            <summary>
+            Voter's type. It's User when the voter is a user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.Vote">
+            <summary>
+            Vote action. It is null when user is removing his/her vote. It is true or false when user is upvoting or downvoting respectively.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.CanVote">
+            <summary>
+            Indicate whether the asset is voteable by the voter (user).
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.ReasonForNotVoteable">
+            <summary>
+            Indicate the reason when user cannot vote.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.IsPayingUser">
+            <summary>
+            Indicate whehter the user is a paid user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.DeviceType">
+            <summary>
+            The device type which is used by the user when voting.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.Success">
+            <summary>
+            Indicate whether the voting is successful.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.UpVoteCount">
+            <summary>
+            The upvote count after the user's vote.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.VoteEventArgs.DownVoteCount">
+            <summary>
+            The downvote count after the user's vote.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GroupSearchEventArgs.Keyword">
+            <summary>
+            The keyword for the search.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GroupSearchEventArgs.GroupsReturned">
+            <summary>The assets returned in CSV format</summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GroupSearchEventArgs.Page">
+            <summary>
+            Page on which current results shown.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PaymentSuccessEventArgs.ProductIds">
+            <summary>
+            The purchased product ids, including upsell products
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PeopleSearchEventArgs.Keyword">
+            <summary>
+            The keyword for the search.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PeopleSearchEventArgs.PeopleReturned">
+            <summary>The assets returned in CSV format</summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.PeopleSearchEventArgs.Page">
+            <summary>
+            Page on which current results shown.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.Keyword">
+            <summary>
+            The keyword for the search.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.AssetsReturned">
+            <summary>The assets returned in CSV format</summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.Page">
+            <summary>Page of results determined by StartRow / MaxRows</summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.AlgorithmName">
+            <summary>
+            Algorithm used in searching games. 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.SuggestionCorrection">
+            <summary>
+            Get or set suggestion correction.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.SuggestionKeyword">
+            <summary>
+            Get or set suggestion shown.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.SuggestionAlgorithm">
+            <summary>
+            Get or set suggestion algorithm.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.SuggestionReplacedKwd">
+            <summary>
+            Get or set suggestion replaced keyword.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.IllegalKeyword">
+            <summary>
+            Get or set illegal keyword.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.AlgorithmQueryType">
+            <summary>
+            Get or set AlgorithmQueryType
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs.FeaturedPlaceId">
+            <summary>
+            Get or set FeaturedPlaceId
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PurchaseAssetEventArgs">
+            <summary>
+            Event args for Asset purchase event
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PurchaseEventArgs">
+            <summary>
+            Base class for purchase events
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PurchaseGamePassEventArgs">
+            <summary>
+            Event args for Game Pass Purchase event
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.RobuxPageClickEventArgs.Page">
+            <summary>
+            The page (Robux grid view or list view) which user clicks on.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.RobuxPageClickEventArgs.Context">
+            <summary>
+            The name and product of the button user clicks.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.SessionValidationFailureEventArgs">
+            <summary>
+            Event Arguments for authentication session validation failures.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.SessionValidationFailureEventArgs.CookieValidationStatus">
+            <summary>
+            The reason a user's cookie failed to validate as an authentication session.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.StudioToolboxSearchEventArgs.Keyword">
+            <summary>
+            The keyword for the search.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.StudioToolboxSearchEventArgs.Category">
+            <summary>
+            The Category for the search. eg: "Models", "Decals" etc
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.StudioToolboxSearchEventArgs.Sort">
+            <summary>
+            The sort used for the search. eg: "Relevance", "Favorites", "Updated" etc
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.StudioToolboxSearchEventArgs.AssetsReturned">
+            <summary>
+            The assets returned in CSV format
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.StudioToolboxSearchEventArgs.AlgorithmName">
+            <summary>
+            The name of algorithm used to sort the result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.StudioToolboxSearchEventArgs.PageNumber">
+            <summary>
+            The page number of the result.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.UserCreatedEventArgs.Captcha">
+            <summary>
+            Whether the user was presented with Captcha during signup.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.UserCreatedEventArgs.ETagCountOverLimit">
+            <summary>
+            The count over limit of the etag floodchecker.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.UserCreatedEventArgs.IpAddressCountOverLimit">
+            <summary>
+            The count over limit of the IP address floodchecker.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.UserCreatedEventArgs.PlaceId">
+            <summary>
+            If applicable, the ID of the place through which the user signed up.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.UserCreatedEventArgs.Context">
+            <summary>
+            The page through which the user signed up.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.UserCreatedEventArgs.Username">
+            <summary>
+            The username the user signed up with.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.UserCreatedEventArgs.VerificationMethod">
+            <summary>
+            The verification method the user signed up with.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FormValidationFailedEventArgs.Field">
+            <summary>
+            The field (e.g., username, password) which failed validation.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FormValidationFailedEventArgs.Input">
+            <summary>
+            The user's input into the field. May be redacted or empty.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FormValidationFailedEventArgs.Context">
+            <summary>
+            The context in which the form was presented.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FormValidationFailedEventArgs.Message">
+            <summary>
+            If IsVisible is true, the exact message presented to the user, else a description.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.FormValidationFailedEventArgs.IsVisible">
+            <summary>
+            Whether Message was displayed verbatim to the user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameNameDescriptionChangeEventArgs.UniverseId">
+            <summary>
+            The ID of universe of which name or description was changed.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameNameDescriptionChangeEventArgs.LanguageCode">
+            <summary>
+            The language code of language in which game name or description was changed.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameNameDescriptionChangeEventArgs.IsSourceLanguage">
+            <summary>
+            The language is source language or not.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameNameDescriptionChangeEventArgs.UserType">
+            <summary>
+            The type of the user who made this change: User or Other.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameNameDescriptionChangeEventArgs.ActionType">
+            <summary>
+            The action type: Created, Updated or Deleted
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.GameNameDescriptionChangeEventArgs.Field">
+            <summary>
+            The changed field: Name, Description
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.EventStream.WebEvents.WebAuthenticatorLoginEventArgs.Url">
+            <summary>
+            URL of the page or endpoint through which this event is fired
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.EventBase.#ctor(Roblox.Platform.EventStream.IEventStreamer,System.String,Roblox.Platform.EventStream.WebEvents.BasicEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer"/> used to stream the event.</param>
+            <param name="eventName">The name of the event.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/> containing event info.</param>
+            <exception cref="!:PlatformArgumentNullException">Thrown if <paramref name="streamer"/>, <paramref name="eventName"/>, or <paramref name="args"/> is null.</exception>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not a supported <see cref="T:Roblox.Platform.EventStream.WebEvents.EventTarget"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.EventBase.AddEventArg(System.String,System.Int64)">
+            <summary>
+            Adds an event argument to the <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/>'s arguments.
+            </summary>
+            <param name="name">The name of the argument.</param>
+            <param name="value"></param>        
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.EventBase.AddEventArg(System.String,System.Guid)">
+            <summary>
+            Adds an event argument to the <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/>'s arguments.
+            </summary>
+            <param name="name">The name of the argument.</param>
+            <param name="value"></param>        
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.EventBase.AddEventArg(System.String,System.Byte)">
+            <summary>
+            Adds an event argument to the <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/>'s arguments.
+            </summary>
+            <param name="name">The name of the argument.</param>
+            <param name="value"></param>        
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.EventBase.AddEventArg(System.String,System.Int32)">
+            <summary>
+            Adds an event argument to the <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/>'s arguments.
+            </summary>
+            <param name="name">The name of the argument.</param>
+            <param name="value"></param>        
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.EventBase.AddEventArg(System.String,System.String)">
+            <summary>
+            Adds an event argument to the <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/>'s arguments.
+            </summary>
+            <param name="name">The name of the argument.</param>
+            <param name="value"></param>
+            <exception cref="!:PlatformArgumentNullException">Thrown if <paramref name="name"/> is null.</exception>
+            <exception cref="!:PlatformArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.EventBase.Stream">
+            <summary>
+            Streams the <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEvent">
+            <summary>
+            Represents an EventStream event for app session/crash reporter events.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,System.String,Roblox.Platform.EventStream.WebEvents.AppSessionReporterEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEvent"/>  class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/> used to stream the event.</param>
+            <param name="eventName">The event identifier.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEventArgs"/> containing event info.</param>
+            <exception cref="T:System.ArgumentException">Thrown if a non-empty PageUrl is not provided with <paramref name="args"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.Events.AssetItemTagAddDeleteEvent">
+            <inheritdoc/>
+            Additionally, includes event args specific to Assets
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.Events.ConfigurePlaceEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.Events.ConfigurePlaceEvent" /> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer" />.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.ConfigurePlaceEventArgs" /> instance containing the event data.</param>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Www"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.Events.LoginFormEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.EventArgs.LoginFormEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.Events.LoginFormEvent"/> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/> used to stream the event.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.EventArgs.LoginFormEventArgs"/> containing event info.</param>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.Events.BrowserTrackerCreatedEvent">
+            <summary>
+            Represents an event for BrowserTracker creation.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.Events.BrowserTrackerCreatedEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.BrowserTrackerCreatedEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.Events.BrowserTrackerCreatedEvent"/> class.
+            </summary>
+            <param name="streamer">The streamer.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.BrowserTrackerCreatedEventArgs"/> instance containing the event data.</param>
+            <exception cref="!:PlatformArgumentException">args.RequestUrl cannot be null or empty.</exception>
+            <exception cref="!:PlatformArgumentNullException">Thrown if <paramref name="streamer"/> or <paramref name="args"/> is null.</exception>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Diagnostic"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.Events.PrivateModuleRequiredEvent">
+            <summary>
+            Represents an event for when a private module is required.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.Events.PrivateModuleRequiredEvent.#ctor(Roblox.Platform.EventStream.EventStreamer,Roblox.Platform.EventStream.WebEvents.EventArgs.PrivateModuleRequiredEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.Events.PrivateModuleRequiredEvent"/>  class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer"/> used to stream the event.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.BasicEventArgs"/> containing event info.</param>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.BotScoreCheckEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.BotScoreCheckEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.BotScoreCheckEvent"/>  class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/> used to stream the event.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.BasicEventArgs"/> containing event info.</param>
+            <exception cref="!:PlatformArgumentException">Thrown if <paramref name="args"/> has invalid field.</exception>
+            <exception cref="!:PlatformArgumentException">Thrown if <paramref name="args"/> has invalid context.</exception>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.CatalogKeywordSearchEvent.SendCatalogKeywordSearchEvent(Roblox.Platform.EventStream.WebEvents.CatalogKeywordSearchEventArgs,Roblox.Platform.EventStream.IEventStreamer)">
+            <summary>
+            Sends catalog search events to event stream.
+            </summary>
+            <param name="eventArgs"></param>
+            <param name="eventStreamer"></param>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.BundleFavoriteEvent.#ctor(Roblox.Platform.EventStream.EventStreamer,Roblox.Platform.EventStream.WebEvents.BundleFavoriteEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="!:deviceHandleRequestedEvent" /> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs" /> instance containing the event data.</param>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Www"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.FunCaptchaEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.FunCaptchaEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.FunCaptchaEvent"/>  class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/> used to stream the event.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.BasicEventArgs"/> containing event info.</param>
+            <exception cref="!:PlatformArgumentException">Thrown if <paramref name="args"/> has invalid field.</exception>
+            <exception cref="!:PlatformArgumentException">Thrown if <paramref name="args"/> has invalid context.</exception>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.CatalogSearchEvent.SendCatalogSearchEvent(Roblox.Platform.EventStream.WebEvents.CatalogSearchEventArgs,Roblox.Platform.EventStream.IEventStreamer)">
+            <summary>
+            Sends catalog sort events to event stream.
+            </summary>
+            <param name="eventArgs"></param>
+            <param name="eventStreamer"></param>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.GameSearchV2Event">
+            <summary>
+            TODO : CTR Enhancement. Rename class to GameSearchEvent.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.GameSearchV2Event.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.GameSearchV2EventArgs)">
+            <summary>
+            The event that represents a game search.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.GameSortEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.GameSortEventArgs)">
+            <summary>
+            The event that represents a game search.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.GameSortSearchBaseEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,System.String,Roblox.Platform.EventStream.WebEvents.GameSortSearchBaseEventArgs)">
+            <summary>
+            The event that represents a game search.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEvent" /> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs" /> instance containing the event data.</param>
+            <exception cref="!:PlatformArgumentException">Throw if <paramref name="args.PageUrl.PageUrl" /> is not provided.</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.DeviceInitializeEvent">
+            <summary>
+            Represents an event for logging device initialize.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.EmailVerifiedEvent">
+            <summary>
+            Event triggered when a user completes the email verification flow
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.EmailVerifiedEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.WebEventArgs)">
+            <summary>
+            Constructs a <see cref="T:Roblox.Platform.EventStream.WebEvents.EmailVerifiedEvent"/> with the given <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/> and <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/>
+            </summary>
+            <param name="eventStreamer">The streamer to send the event</param>
+            <param name="eventArgs">The arguments for this event</param>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.FavoriteEvent.#ctor(Roblox.Platform.EventStream.EventStreamer,Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="!:deviceHandleRequestedEvent" /> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs" /> instance containing the event data.</param>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Www"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PurchaseBundleEvent">
+            <summary>
+            Represents an event for when a bundle purchase was attempted
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PointsAwardedEvent">
+            <summary>
+            An event fired whenever points are awarded in a game.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.PointsAwardedEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.PointsAwardedEventArgs)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.EventStream.WebEvents.PointsAwardedEvent"/>.
+            </summary>
+            <param name="eventStreamer">An <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/>.</param>
+            <param name="eventArgs">The arguments describing the event.</param>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.TwilioErrorEvent">
+            <summary>
+            Event triggered when an error occurs sending an SMS with Twilio
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.TwilioErrorEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.TwilioErrorEventArgs)">
+            <summary>
+            Constructs a <see cref="T:Roblox.Platform.EventStream.WebEvents.TwilioErrorEvent"/> with the given <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/> and <see cref="T:Roblox.Platform.EventStream.WebEvents.TwilioErrorEventArgs"/>
+            </summary>
+            <param name="eventStreamer">The streamer to send the event</param>
+            <param name="twilioErrorEventArgs">The arguments for this event</param>
+            <exception cref="T:System.ArgumentException">If the phone number is is not defined in the arguments</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.VoteEvent">
+            <summary>
+            When user is upvoting/downvoting or removing his/her vote for an asset, we can publish this event to EventStream.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.VoteEvent.#ctor(Roblox.Platform.EventStream.EventStreamer,Roblox.Platform.EventStream.WebEvents.VoteEventArgs)">
+            <summary>
+            The event that represents voting an asset.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.GroupSearchEvent.SendGroupSearchEvent(Roblox.Platform.EventStream.WebEvents.GroupSearchEventArgs,Roblox.Platform.EventStream.EventStreamer,System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Sends group search events to event stream.
+            </summary>
+            <param name="eventArgs"></param>
+            <param name="eventStreamer"></param>
+            <param name="keyword"></param>
+            <param name="pageNumber"></param>
+            <param name="groupsReturned"></param>
+            <param name="isMobileApp"></param>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.LibrarySearchEvent.SendLibrarySearchEvent(Roblox.Platform.EventStream.WebEvents.CatalogKeywordSearchEventArgs,Roblox.Platform.EventStream.EventStreamer,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sends library search events to event stream.
+            </summary>
+            <param name="eventArgs"></param>
+            <param name="eventStreamer"></param>
+            <param name="assetReturned"></param>
+            <param name="keyword"></param>
+            <param name="page"></param>
+            <param name="category"></param>
+            <param name="subCategory"></param>
+            <param name="sortType"></param>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.PeopleSearchEvent.SendPeopleSearchEvent(Roblox.Platform.EventStream.WebEvents.PeopleSearchEventArgs,Roblox.Platform.EventStream.EventStreamer,System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Sends people search events to event streams.
+            </summary>
+            <param name="eventArgs"></param>
+            <param name="eventStreamer"></param>
+            <param name="keyword"></param>
+            <param name="pageNumber"></param>
+            <param name="peopleReturned"></param>
+            <param name="isMobileApp"></param>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PurchaseAssetEvent">
+            <summary>
+            Represents an event for when an asset purchase was attempted
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PurchaseEventBase">
+            <summary>
+            Base class for events when a purchase was attempted
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PurchaseGamePassEvent">
+            <summary>
+            Represents an event for when a game pass purchase was attempted
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.WebEventBase">
+            <summary>
+            Represents a web event that can be streamed.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.WebEventBase.#ctor(Roblox.Platform.EventStream.IEventStreamer,System.String,Roblox.Platform.EventStream.WebEvents.WebEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventBase"/> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer"/> used to stream the event.</param>
+            <param name="eventName">The name of the event.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs"/> containing event info.</param>
+            <exception cref="!:PlatformArgumentNullException">Thrown if <paramref name="streamer"/>, <paramref name="eventName"/>, or <paramref name="args"/> is null.</exception>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not a supported <see cref="T:Roblox.Platform.EventStream.WebEvents.EventTarget"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.CookieSizeEvent">
+            <summary>
+            Represents an EventStream event for CookieSizeEvent.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.CookieSizeEvent.#ctor(Roblox.Platform.EventStream.EventStreamer,Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieSizeEvent" /> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs" /> instance containing the event data.</param>
+            <exception cref="!:PlatformArgumentNullException">
+            streamer
+            or 
+            args
+            or
+            args.RawCookies
+            </exception>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Diagnostic"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.CookieSizeSampleEvent">
+            <summary>
+            Represents an EventStream event for CookieSizeV2Event. Does not use the cookieSizeThreshold parameter.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.CookieSizeSampleEvent.#ctor(Roblox.Platform.EventStream.EventStreamer,Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieSizeSampleEvent" /> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs" /> instance containing the event data.</param>
+            <exception cref="!:PlatformArgumentNullException">
+            streamer
+            or 
+            args
+            or
+            args.RawCookies
+            </exception>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Diagnostic"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEvent">
+            <summary>
+            Represents an Event stream event for Cookie upgrade.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.CookieUpgraderEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEvent" /> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEventArgs" /> instance containing the event data.</param>
+            <exception cref="!:PlatformArgumentNullException">
+            streamer
+            or 
+            args
+            or
+            args.CookieName
+            </exception>
+            <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target"/> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Diagnostic"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.GameCounterEvent">
+            <summary>
+            Represents an event reporting when a game counter has changed.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.GameCounterEvent.#ctor(Roblox.Platform.EventStream.EventStreamer,Roblox.Platform.EventStream.WebEvents.GameCounterEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.GameCounterEvent"/> class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer"/>.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.BasicEventArgs"/> instance containing the event data.</param>
+            <exception cref="!:PlatformArgumentNullException">
+            <paramref name="streamer"/>
+            or
+            <paramref name="args"/>
+            </exception>
+            <exception cref="!:PlatformArgumentException">Thrown if the <see cref="P:Roblox.Platform.EventStream.WebEvents.GameCounterEventArgs.CounterKey"/> property of <paramref name="args"/> is null, or if the <see cref="P:Roblox.Platform.EventStream.WebEvents.BasicEventArgs.Target"/> property of <paramref name="args"/> is not supported.</exception>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.GameSearchEvent.#ctor(Roblox.Platform.EventStream.EventStreamer,Roblox.Platform.EventStream.WebEvents.GameSearchEventArgs)">
+            <summary>
+            The event that represents a game search.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.PageLoadEvent">
+            <summary>
+            Represents an event for when a page is loaded.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.FormValidationFailedEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.FormValidationFailedEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.FormValidationFailedEvent"/>  class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer"/> used to stream the event.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.BasicEventArgs"/> containing event info.</param>
+            <exception cref="!:PlatformArgumentException">Thrown if <paramref name="args"/> has invalid field.</exception>
+            <exception cref="!:PlatformArgumentException">Thrown if <paramref name="args"/> has invalid context.</exception>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.StudioToolboxSearchEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.StudioToolboxSearchEventArgs)">
+            <summary>
+            The event that represents a studio toolbox search.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.EventTarget">
+            <summary>
+            Represents an event's target environment.
+            
+            Some represent a specific web source, but others represent a conceptual grouping of event sources.  (e.g. Chat, Avatar)
+            </summary>
+            <remarks>The <see cref="T:System.ComponentModel.DescriptionAttribute"/> will be used as the event target for streaming.</remarks>
+        </member>
+        <member name="T:Roblox.Platform.EventStream.WebEvents.UserCreatedEvent">
+            <summary>
+            Represents an event for when a new user is signed up.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.EventStream.WebEvents.UserCreatedEvent.#ctor(Roblox.Platform.EventStream.IEventStreamer,Roblox.Platform.EventStream.WebEvents.UserCreatedEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.UserCreatedEvent"/>  class.
+            </summary>
+            <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer"/> used to stream the event.</param>
+            <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.BasicEventArgs"/> containing event info.</param>
+        </member>
+        <member name="P:Roblox.Platform.EventStream.WebEvents.WebEventArgs.PageId">
+            <summary>
+            The pageId to tie various things on a page.
+            </summary>
+        </member>
+    </members>
+</doc>

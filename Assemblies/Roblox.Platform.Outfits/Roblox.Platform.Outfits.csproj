@@ -8,11 +8,17 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <NoWarn>$(NoWarn);CS1668;1668;CS0618</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <RootNamespace />
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Outfits">
       <HintPath>..\..\Website\bin\Roblox.Outfits.dll</HintPath>
@@ -57,6 +63,9 @@
     </Reference>
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.AssetsCore">
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Configuration">

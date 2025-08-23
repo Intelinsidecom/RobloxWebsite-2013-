@@ -362,7 +362,6 @@ internal class AmazonSimpleDBClient : AmazonSimpleDB
 	/// Look for additional error strings in the response and return formatted exception
 	private AmazonSimpleDBException ReportAnyErrors(string responseBody, HttpStatusCode status, Exception e)
 	{
-		AmazonSimpleDBException ex = null;
 		if (responseBody != null && responseBody.StartsWith("<"))
 		{
 			Match errorMatcherOne = Regex.Match(responseBody, "<RequestId>(.*)</RequestId>.*<Error><Code>(.*)</Code><Message>(.*)</Message></Error>.*(<Error>)?", RegexOptions.Multiline);

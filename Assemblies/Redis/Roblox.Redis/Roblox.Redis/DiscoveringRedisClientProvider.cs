@@ -58,7 +58,7 @@ public class DiscoveringRedisClientProvider : IRedisClientProvider
 	private static IEnumerable<string> ConvertEndPoints(IEnumerable<IPEndPoint> endPoints)
 	{
 		return from e in endPoints
-			orderby e.Address.Address, e.Port
+			orderby e.Address.ToString(), e.Port
 			select e.ToString();
 	}
 }

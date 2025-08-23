@@ -8,9 +8,13 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);CS1668;1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Roblox.Permissions.Client\Roblox.Permissions.Client.csproj" />
     <Reference Include="Roblox.Platform.Core">

@@ -1,0 +1,840 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Games</name>
+    </assembly>
+    <members>
+        <member name="F:Roblox.Platform.Games.Entities.PrivateServer._OriginalLinkCode">
+            <summary>
+            The previous link code.
+            </summary>
+            <remarks>Used for cache invalidation.</remarks>
+        </member>
+        <member name="P:Roblox.Platform.Games.Events.GamePlacesChangeEvent.ChangeType">
+            <summary>
+            The event's <see cref="T:Roblox.Platform.Games.Events.GamePlacesChangeType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.Events.GamePlacesChangeEvent.PlaceId">
+            <summary>
+            The id of the place involved.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Games.Events.GamePlacesChangeType">
+            <summary>
+            The type of an <see cref="T:Roblox.Platform.Games.Events.GamePlacesChangeEvent"/>.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Games.Events.GamePlacesChangeType.PlaceAdded">
+            <summary>
+            A place was added to the place.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Games.Events.GamePlacesChangeType.PlaceRemoved">
+            <summary>
+            A place was removed from the game.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.Events.GamePlacesEventsPublisher.Subscribe(System.IObservable{Roblox.Platform.Games.Events.GamePlacesChangeEvent})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Games.Events.GamePlacesEventsPublisher.Unsubscribe">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Games.Events.GamePlacesEventsPublisher.OnNext(Roblox.Platform.Games.Events.GamePlacesChangeEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.Events.GamePlacesEventsPublisher.OnError(System.Exception)">
+            <summary>
+            This is not implemented.
+            </summary>
+            <param name="error"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.Events.GamePlacesEventsPublisher.OnCompleted">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Games.Events.IGamePlacesEventsObserver">
+            <summary>
+            Universe events observer.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.Events.IGamePlacesEventsObserver.Subscribe(System.IObservable{Roblox.Platform.Games.Events.GamePlacesChangeEvent})">
+            <summary>
+            Subscribe to receive change events
+            </summary>
+            <param name="observable"><see cref="T:System.IObservable`1"/> for <see cref="T:Roblox.Platform.Games.Events.GamePlacesChangeEvent"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Games.Events.IGamePlacesEventsObserver.Unsubscribe">
+            <summary>
+            Un-subscribe from the <see cref="T:System.IObservable`1"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.UniverseExtensions.IsSecure(Roblox.Platform.Universes.IUniverse,Roblox.Platform.Games.IGameAttributesFactory)">
+            <summary>
+            Checks if a given universe is secure.
+            </summary>
+            <param name="universe">The universe being checked.</param>
+            <param name="gameAttributesFactory">The dependency necessary to look up data.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Games.UniverseIdWithUniverseRootPlacePair">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> where the instance is created from a universe id.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.UniverseIdWithUniverseRootPlacePair.#ctor(Roblox.Platform.Games.GamesDomainFactories,System.Int64)">
+            <summary>
+            Create an instance of <see cref="T:Roblox.Platform.Games.PlaceIdWithUniverseRootPlacePair"/>.
+            </summary>
+            <param name="gamesDomainFactories"></param>
+            <param name="universeId">The universe's id.</param>
+        </member>
+        <member name="T:Roblox.Platform.Games.PlaceIdWithUniverseRootPlacePair">
+            <summary>
+            An implementation of <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> which was created from a place id.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.PlaceIdWithUniverseRootPlacePair.#ctor(Roblox.Platform.Games.GamesDomainFactories,System.Int64,System.String)">
+            <summary>
+            Create an instance of <see cref="T:Roblox.Platform.Games.PlaceIdWithUniverseRootPlacePair"/>.
+            </summary>
+            <param name="gamesDomainFactories"></param>
+            <param name="placeId">The place's id. It's fine if the specified place is not a root place.</param>
+            <param name="name">The game's name. When it's null, the universe's name will be used.</param>
+        </member>
+        <member name="T:Roblox.Platform.Games.IUniverseRootPlacePair">
+            <summary>
+            A read-only interface for games that support both the legacy concept of a game (place) and the new representation of a game (universe).
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IUniverseRootPlacePair.Universe">
+            <summary>
+            A unique universe that is representative of the game. It will be null when the universe does not exist.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IUniverseRootPlacePair.RootPlace">
+            <summary>
+            A unique place that is used as the identifier of the game in many legacy syb-systems. It will be null when the universe does not have a root place or the root place does not exist.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlaceFactory">
+            <summary>
+            A factory producing <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameWithUniverseAndRootPlaceFactory.Get(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> by its <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> of the universe, or null if the game does not have a root place.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameWithUniverseAndRootPlaceFactory.GetByRootPlace(Roblox.Platform.Assets.IPlace)">
+            <summary>
+            Gets an  <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> by its <see cref="T:Roblox.Platform.Assets.IPlace">root place</see>.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> of the place, or null if the place is not the root place of a game.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameWithUniverseAndRootPlaceFactory.GetByPlace(Roblox.Platform.Assets.IPlace)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> by any of its <see cref="T:Roblox.Platform.Assets.IPlace">places</see>.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> containing the place, or null if the place does not belong to a well-defined <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameWithUniverseAndRootPlaceFactory.GetByPlaceId(System.Int64,System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> by a place id.
+            </summary>
+            <param name="placeId"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameWithUniverseAndRootPlaceFactory.GetByUniverseId(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace"/> by a universe id.
+            </summary>
+            <param name="universeId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Games.IGameWithUniverseAndRootPlace">
+            <summary>
+            A read-only interface for games that support both the legacy concept of a game (place) and the new representation of a game (universe).
+            
+            Neither "a universe without a root place" or "a place without a universe" should be supported by implementations of this interface.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.UniverseId">
+            <summary>
+            The universe entity's id. The universe id will be null if there is no corresponding universe.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.RootPlaceId">
+            <summary>
+            The universe's root place id. The root place id will be null if there is no corresponding universe or there is no root place with the universe.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.PlaceId">
+            <summary>
+            The related place id, just in case that we get a place without a universe
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.PlayerCount">
+            <summary>
+            Player count of the game.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.Universe">
+            <summary>
+            A unique universe that is representative of the game, is never null.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.RootPlace">
+            <summary>
+            A unique place that is used as the identifier of the game in many legacy syb-systems.  This is never null for a IGameWithUniverseAndRootPlace.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.DeveloperFacingName">
+            <summary>
+            The name of the game as surfaced to the developers on the Develope page.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.PlayerFacingName">
+            <summary>
+            The name of the game as surfaced to players.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameWithUniverseAndRootPlace.IsSecure">
+            <summary>
+            Checks if this game is secure.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.IPurchasedPlacesFactory.GetUserPurchasedPlacesPaged(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Returns a <see cref="T:Roblox.Platform.Games.IUserPurchasedPlacesPagedResult"/> including the total number of places purchased by the user
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.GamesDomainFactories.RunningGamesEventPublisher">
+            <summary>
+            Publishes events to the running games SNS queue
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.GameAttributesEntityFactory.GetByUniverseId(System.Int64)">
+            <inheritdoc cref="M:Roblox.Platform.Games.IGameAttributesEntityFactory.GetByUniverseId(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Platform.Games.GameAttributesEntityFactory.GetOrCreate(System.Int64)">
+            <inheritdoc cref="M:Roblox.Platform.Games.IGameAttributesEntityFactory.GetOrCreate(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Platform.Games.GameAttributesEntityFactory.GetByIsTrustedEnumerative(System.Boolean,System.Int64,System.Int32,Roblox.DataV2.Core.SortOrder)">
+            <inheritdoc cref="M:Roblox.Platform.Games.IGameAttributesEntityFactory.GetByIsTrustedEnumerative(System.Boolean,System.Int64,System.Int32,Roblox.DataV2.Core.SortOrder)"/>
+        </member>
+        <member name="T:Roblox.Platform.Games.GameAttributesFactory">
+            <inheritdoc cref="T:Roblox.Platform.Games.IGameAttributesFactory" />
+        </member>
+        <member name="M:Roblox.Platform.Games.GameAttributesFactory.GetGameAttributes(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Games.IGameAttributesFactory.GetGameAttributes(Roblox.Platform.Universes.IUniverse)" />
+        </member>
+        <member name="M:Roblox.Platform.Games.GameAttributesFactory.GetOrCreateGameAttributes(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc cref="M:Roblox.Platform.Games.IGameAttributesFactory.GetOrCreateGameAttributes(Roblox.Platform.Universes.IUniverse)" />
+        </member>
+        <member name="T:Roblox.Platform.Games.GameAttributes">
+            <inheritdoc cref="T:Roblox.Platform.Games.IGameAttributes"/>
+        </member>
+        <member name="P:Roblox.Platform.Games.GameAttributes.UniverseId">
+            <inheritdoc cref="P:Roblox.Platform.Games.IGameAttributes.UniverseId"/>
+        </member>
+        <member name="P:Roblox.Platform.Games.GameAttributes.IsSecure">
+            <inheritdoc cref="P:Roblox.Platform.Games.IGameAttributes.IsSecure"/>
+        </member>
+        <member name="P:Roblox.Platform.Games.GameAttributes.IsTrusted">
+            <inheritdoc cref="P:Roblox.Platform.Games.IGameAttributes.IsTrusted"/>
+        </member>
+        <member name="M:Roblox.Platform.Games.GameAttributes.SetIsSecure(System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.Games.IGameAttributes.SetIsSecure(System.Boolean)"/>
+        </member>
+        <member name="M:Roblox.Platform.Games.GameAttributes.SetIsTrusted(System.Boolean)">
+            <inheritdoc cref="M:Roblox.Platform.Games.IGameAttributes.SetIsTrusted(System.Boolean)"/>
+        </member>
+        <member name="T:Roblox.Platform.Games.IGamePlacesManager">
+            <summary>
+            Public interface for a class that manages things related to places and games.
+            In particular, it is in charge of:
+            * Adding/Removing places from a universe, and adjusts the game's IsSecure attribute accordingly
+            * Setting the IsFilteringEnabled attribute for a place, and adjusts the game's IsSecure attribute accordingly
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGamePlacesManager.AddPlaceToUniverse(Roblox.Platform.Assets.IPlace,Roblox.Platform.Universes.IUniverse,System.Boolean)">
+            <summary>
+            Attempts to add a place to a game, and adjusts the game's IsSecure attribute where applicable.
+            </summary>
+            <param name="place">An <see cref="T:Roblox.Platform.Assets.IPlace"/></param>
+            <param name="universe">An <see cref="T:Roblox.Platform.Universes.IUniverse"/></param>
+            <param name="isCreatedByUniverse">if set to <c>true</c>, then it means that <paramref name="place"/> was created by <paramref name="universe"/> (in game).</param>
+            <returns><c>true</c> if the <paramref name="place"/> is a part of <paramref name="universe"/> after the method's completion, <c>false</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universe"/></exception>
+            <exception cref="T:System.ArgumentException">Thrown when <paramref name="place"/> is already the root place of a universe other than <paramref name="universe"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGamePlacesManager.RemovePlaceFromUniverse(Roblox.Platform.Assets.IPlace,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Removes the place from universe, and adjusts the game's IsSecure attribute where applicable.
+            </summary>
+            <param name="place">An <see cref="T:Roblox.Platform.Assets.IPlace"/></param>
+            <param name="universe">An <see cref="T:Roblox.Platform.Universes.IUniverse"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universe"/></exception>
+            <exception cref="T:System.ArgumentException">Thrown when <paramref name="place"/> is not part of <paramref name="universe"/>.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when <paramref name="place"/> is the root place of <paramref name="universe"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGamePlacesManager.SetPlaceIsFilteringEnabled(Roblox.Platform.Assets.IPlace,System.Boolean)">
+            <summary>
+            Sets a place's IsFilteringEnabled attribute, and adjusts the parent game's IsSecure attribute where applicable.
+            </summary>
+            <param name="place"></param>
+            <param name="isFilteringEnabled"></param>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGamePlacesManager.IsAnyPlaceInUniverseNotFilteringEnabled(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Whether there exists any place in the universe that does not have filtering enabled
+            </summary>
+            <returns>[False] If all places in the universe has filtering enabled.  [True] Otherwise. </returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPrivacySetting.UpdatePrivacyLevel(Roblox.Platform.Privacy.UserPrivacyLevelType)">
+            <summary>
+            </summary>
+            <exception cref="T:Roblox.Platform.Permissions.Core.InvalidPermissionTypeException">Thrown if trying to update the privacy level to an invalid value</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerSaleManager.GetActivePrivateServerSale(Roblox.Platform.Games.PrivateServer.IPrivateServer,Roblox.Platform.Games.Entities.PrivateServerSale@)">
+            <summary>
+            Gets the private server sale with an active recurring sale profile (if one exists) or else returns null
+            </summary>
+            <param name="privateServer"></param>
+            <param name="newestPrivateServerSale">The newest private server sale, which may also be active</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerSaleManager.GetAllActivePrivateServerSalesWithRecurringCurrencyProfile(Roblox.Platform.Games.PrivateServer.IPrivateServer)">
+            <summary>
+            Gets all the private server sales with an active recurring sale profile (if one exists)
+            </summary>
+            <param name="privateServer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerSaleManager.GetOutOfSyncSalesWithRecurrencyTransactionProfile(Roblox.Platform.Games.PrivateServer.IPrivateServer)">
+            <summary>
+            Gets all the private server sales with either an active sale metadata and an inactive recurring sale profile or vice versa
+            </summary>
+            <param name="privateServer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerSaleManager.GetNewestPrivateServerSale(Roblox.Platform.Games.PrivateServer.IPrivateServer)">
+            <summary>
+            Gets the newest private server sale, can be active or inactive
+            </summary>
+            <param name="privateServer"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Games.PrivateServer.PrivateServerDomainFactories">
+            <summary>
+            Domain factories for Private Servers
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.#ctor(Roblox.Permissions.Client.IPermissionsClient,Roblox.Platform.Games.PrivateServer.PrivateServerDomainFactories)">
+            <summary>
+            Constructor for <see cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory"/>.
+            </summary>
+            <param name="permissionsClient">An <see cref="T:Roblox.Permissions.Client.IPermissionsClient"/></param>
+            <param name="privateServerDomainFactories">A <see cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerDomainFactories"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="permissionsClient"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="privateServerDomainFactories"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.GetPrivateServerPermissionGroup(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.CreatePrivateServerPermissions(System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.AddPrivateServerFriendsAccess(System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.RemovePrivateServerFriendsAccess(System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.DoesPrivateServerAllowFriends(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.GetPrivateServerClanIdsWithAccess(System.Int64,Roblox.Platform.Permissions.Core.IPermissionGroup)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.SetPrivateServerClanAccess(System.Int64,System.Collections.Generic.IReadOnlyCollection{System.Int64},Roblox.Platform.Permissions.Core.IPermissionGroup)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.GetPrivateServerWhitelist(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.ClearPrivateServerWhitelist(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.DoesUserHaveAccessToPrivateServerInPlace(Roblox.Platform.Membership.IUser,Roblox.Platform.Games.PrivateServer.IPrivateServer,Roblox.Platform.Assets.IPlace,Roblox.Platform.Permissions.IUserPermissionsChecker,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Groups.IGroupFactory,System.Boolean,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.TestUserPrivateServerPermissions(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.Permissions.IUserPermissionsChecker)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.DoesUserHavePermissionToInviteUserToPrivateServer(Roblox.Platform.Permissions.IUserPermissionsChecker,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.GetPrivateServerIdsClanHasAccessTo(System.Int64,System.Int64,System.Int64@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionsFactory.GetPrivateServerClanAccessPermissions(Roblox.Platform.Permissions.Core.IPermissionGroup)">
+            <summary>
+            Get the clan access permissions from an <see cref="T:Roblox.Platform.Permissions.Core.IPermissionGroup"/>.
+            </summary>
+            <param name="permissionGroup">An <see cref="T:Roblox.Platform.Permissions.Core.IPermissionGroup"/></param>
+            <returns>A list of clan acess <see cref="T:Roblox.Platform.Permissions.Core.IPermission"/>s within <paramref name="permissionGroup"/>.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="permissionGroup"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Games.PrivateServer.IPrivateServer">
+            <summary>
+            Represents a Virtual Private Server
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory">
+            <summary>
+            Creates/gets <see cref="T:Roblox.Platform.Permissions.Core.IPermissionGroup"/>s and <see cref="T:Roblox.Platform.Permissions.Core.IPermission"/>s for private servers.
+            Exposes helper methods for working with private server permissions and permission groups.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.GetPrivateServerPermissionGroup(System.Int64)">
+            <summary>
+            Get a private server's permission group.
+            </summary>
+            <param name="privateServerId">ID of private server to get the permission group for.</param>
+            <returns>Permission group for private server <paramref name="privateServerId"/> or null if private server has no permission group.</returns>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId"/> has more than one permission group.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.CreatePrivateServerPermissions(System.Int64,System.Int64)">
+            <summary>
+            Create permission group for private server given the ID of the server's owner.
+            </summary>
+            <param name="privateServerId">ID of the private server to create a permission group for.</param>
+            <param name="ownerUserId">ID of the user that owns the private server.</param>
+            <returns>Newly created permission group for private server <paramref name="privateServerId"/> owned by <paramref name="ownerUserId"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.AddPrivateServerFriendsAccess(System.Int64,System.Int64)">
+            <summary>
+            Adds friends access to private server.
+            </summary>
+            <param name="privateServerId">ID of the private server to add friends access to.</param>
+            <param name="ownerUserId">ID of the user that owns the private server.</param>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId"/> has more than one permission group.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.RemovePrivateServerFriendsAccess(System.Int64,System.Int64)">
+            <summary>
+            Remove friends access from private server.
+            </summary>
+            <param name="privateServerId">ID of the private server to remove friends access from.</param>
+            <param name="ownerUserId">ID of the user that owns the private server.</param>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId"/> has more than one permission group.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.DoesPrivateServerAllowFriends(System.Int64)">
+            <summary>
+            Returns whether private server has friends access enabled.
+            </summary>
+            <param name="privateServerId">ID of the private server to check for friends access.</param>
+            <returns>Whether private server <paramref name="privateServerId"/> has friends access enabled.</returns>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId"/> has more than one permission group.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.GetPrivateServerClanIdsWithAccess(System.Int64,Roblox.Platform.Permissions.Core.IPermissionGroup)">
+            <summary>
+            Get the clan IDs for that have access to private server.
+            </summary>
+            <param name="privateServerId">ID of the private server to find clan IDs which have access.</param>
+            <param name="permissionGroup">Permission group to use instead of the private server <paramref name="privateServerId"/>'s current permission group.</param>
+            <returns>A collection of clan IDs that have access to private server <paramref name="privateServerId"/> given a non-null <paramref name="permissionGroup"/>. Otherwise, determines the clan IDs based on the existing permission groups associated with private server <paramref name="privateServerId"/>.</returns>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if <paramref name="permissionGroup"/> is <c>null</c> and private server <paramref name="privateServerId"/> has more than one permission group.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.SetPrivateServerClanAccess(System.Int64,System.Collections.Generic.IReadOnlyCollection{System.Int64},Roblox.Platform.Permissions.Core.IPermissionGroup)">
+            <summary>
+            Set clan access to private server.
+            </summary>
+            <param name="privateServerId">ID of the private server to set clan access for.</param>
+            <param name="allowedClanIds">Collection of clan IDs to give access to private server <paramref name="privateServerId"/>.</param>
+            <param name="permissionGroup">Permission group to use instead of private server <paramref name="privateServerId"/>'s current permission group.</param>
+            <returns><c>true</c> if the set of allowed clans on private server <paramref name="privateServerId"/> changed, <c>false</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when <paramref name="allowedClanIds"/> exceeds the maximum number of allowed clan IDs for private servers.</exception>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId"/> has more than one permission group.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.GetPrivateServerWhitelist(System.Int64)">
+            <summary>
+            Gets whitelist for private server.
+            </summary>
+            <param name="privateServerId">ID of the private server to get the whitelist of.</param>
+            <returns>Whitelist for private server <paramref name="privateServerId"/> unless server does not have a permission group or a whitelist permission, in which case <c>null</c> is returned.</returns>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId"/> has more than one permission group.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.ClearPrivateServerWhitelist(System.Int64)">
+            <summary>
+            Removes all existing members from private server whitelist.
+            </summary>
+            <param name="privateServerId">ID of the private server to clear the whitelist of.</param>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerPermissionGroupException">Thrown if private server <paramref name="privateServerId"/> has more than one permission group.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.DoesUserHaveAccessToPrivateServerInPlace(Roblox.Platform.Membership.IUser,Roblox.Platform.Games.PrivateServer.IPrivateServer,Roblox.Platform.Assets.IPlace,Roblox.Platform.Permissions.IUserPermissionsChecker,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Groups.IGroupFactory,System.Boolean,System.String)">
+            <summary>
+            Returns whether an <see cref="T:Roblox.Platform.Membership.IUser"/> can access an <see cref="T:Roblox.Platform.Games.PrivateServer.IPrivateServer"/>.
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="privateServer">An <see cref="T:Roblox.Platform.Games.PrivateServer.IPrivateServer"/></param>
+            <param name="place">An <see cref="T:Roblox.Platform.Assets.IPlace"/></param>
+            <param name="userPermissionsChecker">An <see cref="T:Roblox.Platform.Permissions.IUserPermissionsChecker"/></param>
+            <param name="universeFactory">An <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/></param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/></param>
+            <param name="userCanManage">A <c>bool</c> indicating whether <paramref name="user"/> (if provided) can manage <paramref name="privateServer"/>.</param>
+            <param name="linkCode">A special <c>string</c> that gives <paramref name="user"/> access to <paramref name="privateServer"/> even if they wouldn't have access otherwise (optional).</param>
+            <returns><c>true</c> if <paramref name="user"/> has access to <paramref name="privateServer"/>, <c>false</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="user"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="privateServer"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="userPermissionsChecker"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universeFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="groupFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.TestUserPrivateServerPermissions(Roblox.Platform.Membership.IUser,System.Int64,Roblox.Platform.Permissions.IUserPermissionsChecker)">
+            <summary>
+            Returns whether an <see cref="T:Roblox.Platform.Membership.IUser"/> has private server access permissions.
+            </summary>
+            <param name="user">An <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="privateServerId">ID of the private server to check <paramref name="user"/>'s access to.</param>
+            <param name="userPermissionsChecker">An <see cref="T:Roblox.Platform.Permissions.IUserPermissionsChecker"/></param>
+            <returns><c>true</c> if <paramref name="user"/> has private server access for private server <paramref name="privateServerId"/>.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="user"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="userPermissionsChecker"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.DoesUserHavePermissionToInviteUserToPrivateServer(Roblox.Platform.Permissions.IUserPermissionsChecker,Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Returns whether an <see cref="T:Roblox.Platform.Membership.IUser"/> has permission to invite another user to their private servers.
+            </summary>
+            <param name="userPermissionsChecker">An <see cref="T:Roblox.Platform.Permissions.IUserPermissionsChecker"/></param>
+            <param name="ownerUser">Owner <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <param name="invitedUser">Invited <see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <returns><c>true</c> if <paramref name="ownerUser"/> is non-null and has permission to invite <paramref name="invitedUser"/>, <c>false</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="invitedUser"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PrivateServer.IPrivateServerPermissionsFactory.GetPrivateServerIdsClanHasAccessTo(System.Int64,System.Int64,System.Int64@)">
+            <summary>
+            Gets a collection of private server IDs that a clan has access to.
+            </summary>
+            <param name="clanId">Clan ID</param>
+            <param name="exclusiveStartId">Page ID to start the query on.</param>
+            <param name="nextPageExclusiveStartId">Output parameter indicating the next page to query.</param>
+            <returns>A collections of private server IDs.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.GamePlacesManager.DoAddPlaceToUniverse(Roblox.Platform.Assets.IPlace,Roblox.Platform.Universes.IUniverse,System.Boolean,Roblox.Platform.Assets.Places.Entities.IPlaceAttributeEntity)">
+            <summary>
+            Workhorse bookkeeping method for adding an <see cref="T:Roblox.Platform.Assets.IPlace"/>(<paramref name="place"/>) to a game (<paramref name="universe"/>).
+            </summary>
+            <remarks>
+            This method does the following work:
+              1) Sets <paramref name="place"/>'s universe to be <paramref name="universe"/> via the Universes Service.
+              2) Updates the <see cref="T:Roblox.Platform.Assets.Places.Entities.IPlaceAttributeEntity"/> information about <paramref name="place"/> to reflect its new <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+              3) Reports a change to <paramref name="place"/> via an <see cref="T:Roblox.Platform.Games.Events.GamePlacesChangeReporter"/>.
+              4) Syncs the secureness of <paramref name="place"/>'s previous <see cref="T:Roblox.Platform.Universes.IUniverse"/> (if necessary).
+            </remarks>
+            <param name="place">The <see cref="T:Roblox.Platform.Assets.IPlace"/> to add to <paramref name="universe"/>.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/> to add <paramref name="place"/> to.</param>
+            <param name="isCreatedByUniverse"><c>true</c> if <paramref name="place"/> was created by <paramref name="universe"/>, <c>false</c> otherwise.</param>
+            <param name="placeAttributeEntity">An <see cref="T:Roblox.Platform.Assets.Places.Entities.IPlaceAttributeEntity"/> containing current attribute information about <paramref name="place"/>.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universe"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="placeAttributeEntity"/></exception>
+            <exception cref="T:System.ArgumentException">If <paramref name="place"/> is already part of an <see cref="T:Roblox.Platform.Universes.IUniverse"/> other than <paramref name="universe"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Games.IGameAttributes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameAttributes.UniverseId">
+            <summary>
+            The game attributes' universe Id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameAttributes.IsSecure">
+            <summary>
+            The security status of the game (FilteringEnabled across all places)
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Games.IGameAttributes.IsTrusted">
+            <summary>
+            The trusted status of the game (Have we gone out of our way to approve the game?)
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributes.SetIsSecure(System.Boolean)">
+            <summary>
+            Sets <see cref="P:Roblox.Platform.Games.IGameAttributes.IsSecure"/>
+            </summary>
+            <param name="isSecure">The value for <see cref="P:Roblox.Platform.Games.IGameAttributes.IsSecure"/>.</param>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributes.SetIsTrusted(System.Boolean)">
+            <summary>
+            Sets <see cref="P:Roblox.Platform.Games.IGameAttributes.IsTrusted"/>
+            </summary>
+            <param name="isTrusted">The value for <see cref="P:Roblox.Platform.Games.IGameAttributes.IsTrusted"/>.</param>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributesEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributesEntityFactory.GetByUniverseId(System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/> with the given universe Id.
+            </summary>
+            <param name="universeId">The universe Id.</param>
+            <returns>The <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Invalid <paramref name="universeId"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributesEntityFactory.GetOrCreate(System.Int64)">
+            <summary>
+            Gets or creates an <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/> with the given universe Id.
+            </summary>
+            <param name="universeId">The universe Id.</param>
+            <returns>The <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Invalid <paramref name="universeId"/>.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributesEntityFactory.GetByIsTrustedEnumerative(System.Boolean,System.Int64,System.Int32,Roblox.DataV2.Core.SortOrder)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/>s by their IsTrusted field.
+            </summary>
+            <param name="isTrusted">The IsTrusted state of the <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/>s to return.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartUniverseId">The exclusive start universe Id.</param>
+            <param name="sortOrder">The sort order of the results.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Games.IGameAttributesEntity"/>s.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Games.IGameAttributesFactory">
+            <summary>
+            A factory for getting <see cref="T:Roblox.Platform.Games.IGameAttributes"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributesFactory.GetGameAttributes(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Gets <see cref="T:Roblox.Platform.Games.IGameAttributes"/> by it's <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Games.IGameAttributes"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributesFactory.GetOrCreateGameAttributes(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Gets or creates <see cref="T:Roblox.Platform.Games.IGameAttributes"/> by it's <see cref="T:Roblox.Platform.Universes.IUniverse"/>
+            </summary>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Games.IGameAttributes"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IGameAttributesFactory.GetTrustedGames(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Gets a list of <see cref="T:Roblox.Platform.Universes.IUniverse"/>s where the <see cref="T:Roblox.Platform.Games.IGameAttributes"/>
+            IsTrusted state for that <see cref="T:Roblox.Platform.Universes.IUniverse"/> is set to <c>true</c>.
+            </summary>
+            <param name="exclusiveStartDetails">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2"/> of <see cref="T:Roblox.Platform.Universes.IUniverse"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IUniversePrivateServersSettingsManager.GetTotalNumberOfPrivateServersByPrivateServerStatusType(Roblox.Platform.Universes.IUniverse,Roblox.Platform.Games.PrivateServer.PrivateServerStatusType)">
+            <summary>
+            Get total number of private servers of a given type for an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="universe">An <see cref="T:Roblox.Platform.Universes.IUniverse"/></param>
+            <param name="privateServerStatusType">A <see cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerStatusType"/></param>
+            <returns>Total number of private servers for the given <paramref name="privateServerStatusType"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IUniversePrivateServersSettingsManager.DoesUniverseAllowPrivateServers(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Determine if a universe allows private servers.
+            </summary>
+            <param name="universe">An <see cref="T:Roblox.Platform.Universes.IUniverse"/></param>
+            <returns>Whether <paramref name="universe"/> allows private servers.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IUniversePrivateServersSettingsManager.SetUniverseDoesAllowPrivateServers(Roblox.Platform.Universes.IUniverse,System.Boolean,System.Int64,System.Nullable{System.Int64})">
+            <summary>
+            Set whether private servers can be created for an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="universe">An <see cref="T:Roblox.Platform.Universes.IUniverse"/></param>
+            <param name="allowPrivateServers">Whether <paramref name="universe"/> should allow private servers.</param>
+            <param name="userPerformingChangeId">ID of the user changing <paramref name="universe"/>'s configuration.</param>
+            <param name="priceInRobux">The price in Robux to create a private server for <paramref name="universe"/>.</param>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.InvalidOwnerException">Thrown when <paramref name="userPerformingChangeId"/> does not have sufficient priviliges to manage <paramref name="universe"/>.</exception>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerArgumentException">Thrown when <paramref name="priceInRobux"/> is non-null and below the default private server price.</exception>
+            <exception cref="T:System.NotSupportedException">Thrown when <paramref name="universe"/> has a creator type that does not support VIP server creation.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.IUniversePrivateServersSettingsManager.SetPrivateServerPriceForUniverse(Roblox.Platform.Universes.IUniverse,System.Int64,System.Int64)">
+            <summary>
+            Set the private server price for an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="universe">An <see cref="T:Roblox.Platform.Universes.IUniverse"/></param>
+            <param name="userPerformingChangeId">ID of the user changing <paramref name="universe"/>'s configuration.</param>
+            <param name="newPriceInRobux">The price in Robux to create a private server for <paramref name="universe"/>.</param>
+            <returns>Whether the price of creating a private server in <paramref name="universe"/> was changed.</returns>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.InvalidOwnerException">Thrown when <paramref name="userPerformingChangeId"/> does not have sufficient priviliges to manage <paramref name="universe"/>.</exception>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerArgumentException">Thrown when <paramref name="newPriceInRobux"/> is non-null and below the default private server price.</exception>
+            <exception cref="T:Roblox.Platform.Games.PrivateServer.PrivateServersPlatformException">Thrown when there was an issue changing the price.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.IUniversePrivateServersSettingsManager.GetPrivateServerProduct(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Get the private server product for an <see cref="T:Roblox.Platform.Universes.IUniverse"/>.
+            </summary>
+            <param name="universe">An <see cref="T:Roblox.Platform.Universes.IUniverse"/></param>
+            <returns>The private server product for <paramref name="universe"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Games.IUniversePrivateServersSettingsManager.VerifyPrivateServerConfigurePermissions(Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Checks if an <see cref="T:Roblox.Platform.Universes.IUniverse"/>'s configurations allow VIP servers.
+            </summary>
+            <param name="universe">An <see cref="T:Roblox.Platform.Universes.IUniverse"/></param>
+            <exception cref="T:Roblox.Platform.Games.Exceptions.UniverseDisallowsPrivateServersException">Thrown when VIP servers are disabled for <paramref name="universe"/>.</exception>
+            <exception cref="T:Roblox.Platform.Games.Exceptions.UniverseDisallowsPrivateServersException">Thrown when <paramref name="universe"/> does not have a valid start place.</exception>
+            <exception cref="T:Roblox.Platform.Games.Exceptions.UniverseDisallowsPrivateServersException">Thrown when <paramref name="universe"/> is not playable.</exception>
+            <exception cref="T:Roblox.Platform.Games.Exceptions.UniverseDisallowsPrivateServersException">Thrown when <paramref name="universe"/> is set to Friends Only.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.IReservedServerPermissionsFactory.GenerateAccessCodeAndGameCode(System.Int64,System.Int64)">
+            <summary>
+            Generates a new Reserved Server Game Code and uses that to generate an Access Code that can be used to
+            teleport players to the reserved instance with the returned Game Code.
+            </summary>
+            <param name="originPlaceId">Place ID for the place from which the players will be teleported</param>
+            <param name="reservedServerPlaceId">Place ID for the place to reserve an instance of</param>
+            <returns></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformInvalidOperationException">Thrown if the reservedServerPlaceId is not in the same universe as the originPlaceId</exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.UniversePrivateServersSettingsManager.#ctor(Roblox.Marketplace.Client.IMarketplaceAuthority,Roblox.Agents.IAgentFactory,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Universes.IUniversePermissionsVerifier,Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            Constructor for UniversePrivateServersSettingsManager.
+            </summary>
+            <param name="marketplaceAuthority">An <see cref="T:Roblox.Marketplace.Client.IMarketplaceAuthority"/></param>
+            <param name="agentFactory">An <see cref="T:Roblox.Agents.IAgentFactory"/></param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/></param>
+            <param name="universePermissionsVerifier">An <see cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier"/></param>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="marketplaceAuthority"/></exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="agentFactory"/></exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="groupFactory"/></exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="universePermissionsVerifier"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="userFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.UniversePrivateServersSettingsManager.GetTotalNumberOfPrivateServersByPrivateServerStatusType(Roblox.Platform.Universes.IUniverse,Roblox.Platform.Games.PrivateServer.PrivateServerStatusType)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.UniversePrivateServersSettingsManager.DoesUniverseAllowPrivateServers(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.UniversePrivateServersSettingsManager.SetUniverseDoesAllowPrivateServers(Roblox.Platform.Universes.IUniverse,System.Boolean,System.Int64,System.Nullable{System.Int64})">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.UniversePrivateServersSettingsManager.SetPrivateServerPriceForUniverse(Roblox.Platform.Universes.IUniverse,System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.UniversePrivateServersSettingsManager.GetPrivateServerProduct(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.UniversePrivateServersSettingsManager.VerifyPrivateServerConfigurePermissions(Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Games.PlaceExtensions.IsPlaceUniverseRooted(Roblox.Platform.Assets.IPlace,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Games.PlayabilityResultEnum@)">
+            <summary>
+            Returns whether an <see cref="T:Roblox.Platform.Assets.IPlace"/>'s <see cref="T:Roblox.Platform.Universes.IUniverse"/> is rooted.
+            </summary>
+            <param name="place">An <see cref="T:Roblox.Platform.Assets.IPlace"/></param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/></param>
+            <param name="universeFactory">An <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/></param>
+            <param name="result">A <see cref="T:Roblox.Platform.Games.PlayabilityResultEnum"/> indicating that either <paramref name="place"/> is playable or the reason it is not playable.</param>
+            <returns><c>true</c> if <paramref name="place"/> has a universe, and the universe has a root place. Returns <c>false</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="groupFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universeFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PlaceExtensions.IsPlaceUniverseRootedAndPublic(Roblox.Platform.Assets.IPlace,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Games.PlayabilityResultEnum@)">
+            <summary>
+            Returns whether an <see cref="T:Roblox.Platform.Assets.IPlace"/>'s <see cref="T:Roblox.Platform.Universes.IUniverse"/> is rooted and is public.
+            </summary>
+            <param name="place">An <see cref="T:Roblox.Platform.Assets.IPlace"/></param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/></param>
+            <param name="universeFactory">An <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/></param>
+            <param name="result">A <see cref="T:Roblox.Platform.Games.PlayabilityResultEnum"/> indicating that either <paramref name="place"/> is playable or the reason it is not playable.</param>
+            <returns><c>true</c> if <paramref name="place"/> has a universe, the universe has a root place, and the universe is public. Returns <c>false</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="groupFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universeFactory"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.Games.PlacePlayPermissionsProvider">
+            <summary>
+            Static class used by extensions only
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Games.PlacePlayPermissionsProvider.IsPlaceUniverseRooted(Roblox.Platform.Assets.IPlace,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Games.PlayabilityResultEnum@)">
+            <summary>
+            Returns whether <paramref name="place"/> has a universe with a root place.
+            </summary>
+            <param name="place">An <see cref="T:Roblox.Platform.Assets.IPlace"/></param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/></param>
+            <param name="universeFactory">An <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/></param>
+            <param name="result">A <see cref="T:Roblox.Platform.Games.PlayabilityResultEnum"/> indicating that either <paramref name="place"/> is playable, or the reason it is not playable.</param>
+            <returns><c>true</c> if <paramref name="place"/> has a universe and the universe has a root place. Returns <c>false</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="groupFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universeFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PlacePlayPermissionsProvider.IsPlaceUniverseRootedAndPublic(Roblox.Platform.Assets.IPlace,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Games.PlayabilityResultEnum@)">
+            <summary>
+            Returns whether <paramref name="place"/> has a universe with a root place and is public.
+            </summary>
+            <param name="place">An <see cref="T:Roblox.Platform.Assets.IPlace"/></param>
+            <param name="groupFactory">An <see cref="T:Roblox.Platform.Groups.IGroupFactory"/></param>
+            <param name="universeFactory">An <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/></param>
+            <param name="result">A <see cref="T:Roblox.Platform.Games.PlayabilityResultEnum"/> indicating that either <paramref name="place"/> is playable, or the reason it is not playable.</param>
+            <returns><c>true</c> if <paramref name="place"/> has a universe, the universe has a root place, and the universe is public. Returns <c>false</c> otherwise.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="place"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="groupFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universeFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.Games.PurchasedPlacesFactory.GetPageBySkipTake(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.AssetOwnership.IUserAsset},System.Int32,System.Int32)">
+            <summary>
+            Produces a Keyed Page Result from a collection of items by skipping and taking.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Games.PlayabilityResultEnum.Playable">
+            <summary>
+            Place is playable.  No problems.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Games.PlayabilityResultEnum.NotAPlace">
+            <summary>
+            Asset provided is not a place, thus is not playable.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Games.PlayabilityResultEnum.PlaceHasNoUniverse">
+            <summary>
+            The place provided does not have a universe.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Games.PlayabilityResultEnum.UniverseDoesNotHaveARootPlace">
+            <summary>
+            The place is part of a universe, but there is no root place for the universe.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Games.PlayabilityResultEnum.UniverseRootPlaceIsNotAPlace">
+            <summary>
+            The place is part of a universe, but the "root place" of the universe is not a place.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Games.PlayabilityResultEnum.UniverseRootPlaceIsNotActive">
+            <summary>
+            The root place of the universe is not active.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Games.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

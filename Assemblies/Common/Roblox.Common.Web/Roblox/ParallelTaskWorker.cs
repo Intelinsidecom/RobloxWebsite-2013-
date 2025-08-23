@@ -8,7 +8,9 @@ using Roblox.Diagnostics;
 
 namespace Roblox;
 
+#pragma warning disable 0618
 [CounterCategory("Roblox.ParallelTaskWorker v2")]
+#pragma warning restore 0618
 public sealed class ParallelTaskWorker : IDisposable
 {
 	public class Configuration
@@ -72,35 +74,37 @@ public sealed class ParallelTaskWorker : IDisposable
 
 	private CancellationTokenSource _RequestTaskCancellationTokenSource;
 
-	[Counter("Requests", PerformanceCounterType.NumberOfItems64)]
-	private readonly PerformanceCounter _RequestsTotal;
-
-	[Counter("Requests/s", PerformanceCounterType.RateOfCountsPerSecond32)]
-	private readonly PerformanceCounter _RequestsPerSecond;
-
-	[Counter("Tasks Errors", PerformanceCounterType.NumberOfItems32)]
-	private readonly PerformanceCounter _TaskErrorsTotal;
-
-	[Counter("Tasks Errors/s", PerformanceCounterType.RateOfCountsPerSecond32)]
-	private readonly PerformanceCounter _TaskErrorsPerSecond;
-
-	[Counter("Tasks Processed", PerformanceCounterType.NumberOfItems32)]
-	private readonly PerformanceCounter _TasksProcessedTotal;
-
-	[Counter("Tasks Processed/s", PerformanceCounterType.RateOfCountsPerSecond32)]
-	private readonly PerformanceCounter _TasksProcessedPerSecond;
-
-	[Counter("Tasks Success", PerformanceCounterType.NumberOfItems32)]
-	private readonly PerformanceCounter _TaskSuccessesTotal;
-
-	[Counter("Tasks Success/s", PerformanceCounterType.RateOfCountsPerSecond32)]
-	private readonly PerformanceCounter _TaskSuccessesPerSecond;
-
-	[Counter("Queued Tasks", PerformanceCounterType.NumberOfItems32)]
-	private readonly PerformanceCounter _TaskQueued;
-
-	[Counter("Delay Interval", PerformanceCounterType.NumberOfItems32)]
-	private readonly PerformanceCounter _CurrentDelay;
+	#pragma warning disable 0649
+    [Counter("Requests", PerformanceCounterType.NumberOfItems64)]
+    private readonly PerformanceCounter _RequestsTotal;
+    
+    [Counter("Requests/s", PerformanceCounterType.RateOfCountsPerSecond32)]
+    private readonly PerformanceCounter _RequestsPerSecond;
+    
+    [Counter("Tasks Errors", PerformanceCounterType.NumberOfItems32)]
+    private readonly PerformanceCounter _TaskErrorsTotal;
+    
+    [Counter("Tasks Errors/s", PerformanceCounterType.RateOfCountsPerSecond32)]
+    private readonly PerformanceCounter _TaskErrorsPerSecond;
+    
+    [Counter("Tasks Processed", PerformanceCounterType.NumberOfItems32)]
+    private readonly PerformanceCounter _TasksProcessedTotal;
+    
+    [Counter("Tasks Processed/s", PerformanceCounterType.RateOfCountsPerSecond32)]
+    private readonly PerformanceCounter _TasksProcessedPerSecond;
+    
+    [Counter("Tasks Success", PerformanceCounterType.NumberOfItems32)]
+    private readonly PerformanceCounter _TaskSuccessesTotal;
+    
+    [Counter("Tasks Success/s", PerformanceCounterType.RateOfCountsPerSecond32)]
+    private readonly PerformanceCounter _TaskSuccessesPerSecond;
+    
+    [Counter("Queued Tasks", PerformanceCounterType.NumberOfItems32)]
+    private readonly PerformanceCounter _TaskQueued;
+    
+    [Counter("Delay Interval", PerformanceCounterType.NumberOfItems32)]
+    private readonly PerformanceCounter _CurrentDelay;
+    #pragma warning restore 0649
 
 	public int QueuedTasks => _TaskQueue.Count;
 

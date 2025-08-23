@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.CachingV2.Diagnostics</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3">
+            <summary>
+            Represents an object that monitors an <see cref="T:Roblox.CachingV2.Core.ICache`2"/>'s performance.
+            </summary>
+            <seealso cref="T:Roblox.CachingV2.Core.ICache`2"/>
+            <seealso cref="T:Roblox.CachingV2.Core.BasicMetadata"/>
+            <seealso cref="T:Roblox.CachingV2.Core.BasicSetArgs"/>
+        </member>
+        <member name="P:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3.Cache">
+            <summary>
+            Gets the cache being monitored.
+            </summary>
+        </member>
+        <member name="M:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3.#ctor(Roblox.Instrumentation.ICounterRegistry,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3"/> class.
+            </summary>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <param name="cache">The cache to monitor.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="cache"/></exception>
+        </member>
+        <member name="M:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3.Register">
+            <summary>
+            Registers the monitor to begin listening to the <see cref="T:Roblox.CachingV2.Core.ICache`2"/>'s events.
+            </summary>
+        </member>
+        <member name="M:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3.Unregister">
+            <summary>
+            Unregisters the monitor from listening to the <see cref="T:Roblox.CachingV2.Core.ICache`2"/>'s events.
+            </summary>
+        </member>
+        <member name="M:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3.DoRegistration">
+            <summary>
+            Performs any event registration.
+            </summary>
+        </member>
+        <member name="M:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3.DoUnregistration">
+            <summary>
+            Performs any event unregistration.
+            </summary>
+        </member>
+        <member name="T:Roblox.CachingV2.Diagnostics.DependencyAwareCachePerformanceMonitor">
+            <summary>
+            Represents an object that monitors an <seealso cref="T:Roblox.CachingV2.Core.IDependencyAwareCache"/>'s performance.
+            </summary>
+            <seealso cref="T:Roblox.CachingV2.Diagnostics.CachePerformanceMonitor`3" />
+            <seealso cref="T:Roblox.CachingV2.Core.IDependencyAwareCache"/>
+            <seealso cref="T:Roblox.CachingV2.Core.DependencyAwareMetadata"/>
+            <seealso cref="T:Roblox.CachingV2.Core.DependencyAwareSetArgs"/>
+        </member>
+        <member name="M:Roblox.CachingV2.Diagnostics.DependencyAwareCachePerformanceMonitor.#ctor(Roblox.Instrumentation.ICounterRegistry,Roblox.CachingV2.Core.IDependencyAwareCache)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.CachingV2.Diagnostics.DependencyAwareCachePerformanceMonitor"/> class.
+            </summary>
+            <param name="counterRegistry">The counter registry injected.</param>
+            <param name="cache">The cache to monitor.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="cache"/></exception>
+        </member>
+        <member name="M:Roblox.CachingV2.Diagnostics.DependencyAwareCachePerformanceMonitor.DoRegistration">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.CachingV2.Diagnostics.DependencyAwareCachePerformanceMonitor.DoUnregistration">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

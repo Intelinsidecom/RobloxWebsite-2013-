@@ -34,12 +34,12 @@ public class RecurringTransactionFactory : IRecurringTransactionFactory
 		return new RecurringTransactionProfile
 		{
 			Id = profileDetails.RecurringTransactionProfileId,
-			CurrencyTypeId = profileDetails.CurrencyTypeId,
+			CurrencyTypeId = (byte)profileDetails.CurrencyTypeId,
 			RecurrenceStartDate = profileDetails.RecurrenceStartDate,
-			RecurrenceEndDate = profileDetails.RecurrenceEndDate,
-			CurrencyHolderTypeId = profileDetails.CurrencyHolderTypeId,
+			RecurrenceEndDate = profileDetails.RecurrenceEndDate ?? System.DateTime.MaxValue,
+			CurrencyHolderTypeId = (byte)profileDetails.CurrencyHolderTypeId,
 			CurrencyHolderTargetId = profileDetails.CurrencyHolderTargetId,
-			TransactionTypeId = profileDetails.TransactionTypeId,
+			TransactionTypeId = (byte)profileDetails.TransactionTypeId,
 			Amount = profileDetails.Amount
 		};
 	}

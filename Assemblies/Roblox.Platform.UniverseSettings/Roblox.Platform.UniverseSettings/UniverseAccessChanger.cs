@@ -113,9 +113,13 @@ internal class UniverseAccessChanger : IUniverseAccessChanger
 
 	[ExcludeFromCodeCoverage]
 	internal virtual AssetModerationStatus GetPlaceModerationStatus(IPlace place)
-	{
-		return place.GetModerationStatus();
-	}
+    {
+        // The recommended AssetModerationStatusChecker API is not available in-source here.
+        // Use the legacy API but suppress the obsolete warning for this localized call.
+        #pragma warning disable CS0618
+        return place.GetModerationStatus();
+        #pragma warning restore CS0618
+    }
 
 	[ExcludeFromCodeCoverage]
 	internal virtual void LogGroupAction(IPlace place, IUser actor, GroupManagement.ConfigureGroupAssetAction action)

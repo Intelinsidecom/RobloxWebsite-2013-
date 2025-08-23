@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Users</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Users.Implementation.CountryFactory">
+            <summary>
+            This is the interface for a factory for <see cref="T:Roblox.Users.Interfaces.ICountryModel"/> so we can abstract away the entity implementation and to make this unit testable
+            </summary>
+        </member>
+        <member name="T:Roblox.Users.Implementation.CountryModel">
+            <summary>
+            This is the interface for CountryModel
+            </summary>
+        </member>
+        <member name="T:Roblox.Users.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

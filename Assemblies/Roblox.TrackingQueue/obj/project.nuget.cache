@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WBa/QhAlWLaagwgtgE1E0flCa91HpGHx1rc6Tq1/5aWzUVMFITiwaYFRMtRkXTFW3g19CRTVbnf3O2GSXa8j+A==",
+  "dgSpecHash": "x8o4QGMKl/8=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.TrackingQueue\\Roblox.TrackingQueue.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.TrackingQueue\\Roblox.TrackingQueue.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Presence</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Presence.ClientLocationValidator">
+            <summary>
+            Helper class to validate location for Registering App Presence.
+            Valid locations are configured as Enums, new client location can be added as a setting but should
+            be moved to an Enum later.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Presence.PresenceReader">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.Presence.IPresenceReader"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceReader.#ctor(Roblox.EventLog.ILogger,Roblox.Presence.Client.IPresenceClient)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.Presence.PresenceReader"/>.
+            </summary>
+            <param name="logger" cref="T:Roblox.EventLog.ILogger">The logger to use.</param>
+            <param name="presenceClient" cref="T:Roblox.Presence.Client.IPresenceClient">The client to connect to the presence service.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="logger"/>
+            - <paramref name="presenceClient"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceReader.GetAllActivePresences(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Presence.IPresenceReader.GetAllActivePresences(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceReader.GetPresence(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Presence.IPresenceReader.MultiGetPresence(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Membership.IUser})"/>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceReader.MultiGetPresence(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Membership.IUser})">
+            <inheritdoc cref="M:Roblox.Platform.Presence.IPresenceReader.MultiGetPresence(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Membership.IUser})"/>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceReader.GetPrioritizedPresence(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Presence.IPresenceReader.GetPrioritizedPresence(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceReader.MultiGetPrioritizedPresence(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Membership.IUser})">
+            <inheritdoc cref="M:Roblox.Platform.Presence.IPresenceReader.MultiGetPrioritizedPresence(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Membership.IUser})"/>
+        </member>
+        <member name="T:Roblox.Platform.Presence.IPresenceReader">
+             <summary>
+             Provides methods to read presence-related data.
+             </summary>
+             <remarks>
+             It is notable that his interface has a rather unique approach to handle service failures:
+             If _any_ service-level failure occurs, then the failure is logged and the _default_ result
+             is returned. This means that the consumer can not differentiate between the "user has not been online recently"
+             and the "the presence service is down" case.
+            
+             This behaviour was inherited from the IPresenceRegistrar implementation and changing it will
+             require auditing and updating all consumers to handle errors gracefully.
+             </remarks>
+        </member>
+        <member name="M:Roblox.Platform.Presence.IPresenceReader.GetPresence(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the latest presence for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Presence.IPresence"/> for the <see cref="T:Roblox.Platform.Membership.IUser"/>. Returns an empty <see cref="T:Roblox.Platform.Presence.IPresence"/> if none if available.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="user"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Presence.IPresenceReader.MultiGetPresence(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Membership.IUser})">
+            <summary>
+            Gets the latest <see cref="T:Roblox.Platform.Presence.IPresence"/> for a list of <see cref="T:Roblox.Platform.Membership.IUser"/>s.
+            You should evaluate whether the latest or a prioritized is required on a per-usecase basis.
+            </summary>
+            <param name="users" cref="T:System.Collections.Generic.IReadOnlyCollection`1">The<see cref="T:Roblox.Platform.Membership.IUser"/>s to fetch the <see cref="T:Roblox.Platform.Presence.IPresence"/>s for.</param>
+            <returns>
+            The <see cref="T:System.Collections.Generic.IEnumerable`1"/>s, one for each user.
+            Entries are ordered the same as the <paramref name="users"/>.
+            In the event of a service-level failure, an <see cref="T:System.Collections.Generic.IEnumerable`1"/>
+            consisting of empty, default <see cref="T:Roblox.Platform.Presence.IPresence"/>s is returned. This looks the same
+            as if none of the <see cref="T:Roblox.Platform.Membership.IUser"/>s ever was online.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="users"/>
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            - Any entry in <paramref name="users"/> is null.
+            - <paramref name="users"/> has more entries than allowed.
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Presence.IPresenceReader.GetPrioritizedPresence(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the prioritized presence for a user based on all their active presences.
+            Game > Cloud Edit > Studio > All
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns>
+            <see cref="T:Roblox.Platform.Presence.IPresence"/> of the <see cref="T:Roblox.Platform.Membership.IUser"/>'s presence.
+            Or an empty, default <see cref="T:Roblox.Platform.Presence.IPresence"/> if any failure occured.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="user"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Presence.IPresenceReader.MultiGetPrioritizedPresence(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Membership.IUser})">
+            <summary>
+            Gets the prioritized presence for a list of <see cref="T:Roblox.Platform.Membership.IUser"/>s.
+            See <see cref="M:Roblox.Platform.Presence.IPresenceReader.GetPrioritizedPresence(Roblox.Platform.Membership.IUser)"/> for details.
+            </summary>
+            <param name="users" cref="T:Roblox.Platform.Membership.IUser">The <see cref="T:Roblox.Platform.Membership.IUser"/>s.</param>
+            <returns>
+            The requested <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/>, one per user.
+            The resulting list is ordered the same as the input list of users.
+            If the presence service is not responding or if there has been any other failure,
+            then an <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> of empty, default <see cref="T:Roblox.Platform.Presence.IPresence"/>s
+            is returned.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+             - <paramref name="users"/>
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            - <paramref name="users"/> had more than 200 users in it.
+            - <paramref name="users"/> has a null entry.
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Presence.IPresenceReader.GetAllActivePresences(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the latest presences for an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user" cref="T:Roblox.Platform.Membership.IUser">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns>
+            <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> for the <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            Or an empty <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> if the user has not been online
+            or if the service request failed."/></returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="user"/>
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Presence.IPresenceRegistrar">
+            <summary>
+            An Interface for PresenceRegistrar
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Presence.PresenceRegistrar">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.Presence.IPresenceRegistrar"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceRegistrar.#ctor(Roblox.EventLog.ILogger,Roblox.Presence.Client.IPresenceClient,Roblox.Platform.Presence.IPresenceSessionProvider,Roblox.Platform.Devices.IPlatformFactory)">
+            <summary>
+            Creates a new <see cref="T:Roblox.Platform.Presence.PresenceRegistrar"/>.
+            </summary>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+            <param name="client"><see cref="T:Roblox.Presence.Client.IPresenceClient"/></param>
+            <param name="presenceSessionProvider"><see cref="T:Roblox.Platform.Presence.IPresenceSessionProvider"/></param>
+            <param name="platformFactory"><see cref="T:Roblox.Platform.Devices.IPlatformFactory"/></param>
+            <exception cref="T:System.ArgumentNullException">
+             - <paramref name="logger"/>
+             - <paramref name="client"/>
+             - <paramref name="presenceSessionProvider"/>
+             - <paramref name="platformFactory"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceRegistrar.PingFromLocation(Roblox.Platform.MembershipCore.IVisitorIdentifier,Roblox.Platform.Presence.LocationType,System.String,System.String,System.Nullable{System.Byte},System.String,System.Nullable{System.Int64})">
+            <summary>
+            New PingFromLocation using platformName instead of platformTypeId
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Presence.PresenceRegistrar.PingFromLocation(Roblox.Platform.MembershipCore.IVisitorIdentifier,Roblox.Platform.Presence.LocationType,System.String,System.String,System.Byte)">
+            <summary>
+            Old PingFromLocation to deprecate. platformTypeId obsolete
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Presence.IPresence">
+            <summary>
+            A report about the last location of a specific user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Presence.IPresence.VisitorId">
+            <summary>
+            The id of the visitor.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Presence.IPresence.PlaceId">
+            <summary>
+            The id of the place the user was last seen in, either online or in team create.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Presence.IPresence.GameId">
+            <summary>
+            The <see cref="T:System.Guid"/> of the game the user was last seen in.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Presence.IPresence.IsOnline">
+            <summary>
+            Whether the user is currently online.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Presence.IPresence.LastOnline">
+            <summary>
+            The last time we saw this user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Presence.IPresence.LocationType">
+            <summary>
+            The type of the last location.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Presence.IPresence.PresenceType">
+            <summary>
+            The type of this report.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Presence.IPresence.UniverseId">
+            <summary>
+            UniverseId of the place user was last seen in, either online or in team create.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Presence.Presence">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.Presence.IPresence"/>, for internal use.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Presence.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

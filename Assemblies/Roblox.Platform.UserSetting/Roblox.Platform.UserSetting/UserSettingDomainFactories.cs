@@ -28,7 +28,7 @@ public class UserSettingDomainFactories : DomainFactoriesBase
 	/// </summary>
 	public UserSettingDomainFactories(IRoleSetValidator roleSetValidator)
 	{
-		RoleSetValidator = roleSetValidator.AssignOrThrowIfNull("roleSetValidator");
+		RoleSetValidator = roleSetValidator ?? throw new PlatformArgumentNullException("roleSetValidator");
 		UserSettingEntityFactory = new UserSettingEntityFactory(this);
 		UserSettingsFactory = new UserSettingsFactory(this);
 		UserSettingsValidator = new UserSettingsValidator(this);

@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.TeamCreate.Notifications</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateEvent">
+            <summary>
+            The event sent to the TeamCreateEvents SNS publisher.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateEvent.EventType">
+            <summary>
+            The type of the event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateEvent.EventArgs">
+            <summary>
+            A json-seralized object containing arguments based on the <see cref="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateEvent.EventType"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventPublisher">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateEventPublisher"/>.
+            This class is not unit-testable due to the usage of an <see cref="T:Roblox.Amazon.Sns.SnsPublisher"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventPublisher.#ctor(Roblox.Instrumentation.ICounterRegistry)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventPublisher"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventPublisher.PublishTeamCreateInvitation(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventPublisher.PublishTeamCreateRevokedInvitation(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventType">
+            <summary>
+            The different types of <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateEvent"/>s.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventType.UserInvited">
+            <summary>
+            A user is invited to a team create.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventType.UserInvitationRevoked">
+            <summary>
+            A user's invitation is revoked.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventTargetBuilder">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetBuilder"/>.
+            Compatible with the <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventTargetInterpreter"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventTargetBuilder.BuildEventTarget(Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationFloodCheckerFactory">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationFloodCheckerFactory"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationFloodCheckerFactory.#ctor(Roblox.FloodCheckers.Core.IFloodCheckerFactory{Roblox.FloodCheckers.Core.IFloodChecker},Roblox.EventLog.ILogger)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationFloodCheckerFactory"/>.
+            </summary>
+            <param name="floodCheckerFactory">An <see cref="T:Roblox.FloodCheckers.Core.IFloodCheckerFactory`1"/></param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="floodCheckerFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="logger"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationFloodCheckerFactory.#ctor(Roblox.FloodCheckers.Core.IFloodCheckerFactory{Roblox.FloodCheckers.Core.IFloodChecker},System.Func{System.Int32},System.Func{System.TimeSpan},System.Func{System.Boolean},System.Func{System.Boolean},Roblox.EventLog.ILogger)">
+            <summary>
+            An internal constructor for the <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationFloodCheckerFactory"/>.
+            </summary>
+            <param name="floodCheckerFactory">An <see cref="T:Roblox.FloodCheckers.Core.IFloodCheckerFactory`1"/></param>
+            <param name="floodCheckerLimitGetter">A <see cref="T:System.Func`1"/> to get the total count of allowed notifications per user:universe in the specified window.</param>
+            <param name="floodCheckerLimitWindowGetter">An <see cref="T:System.Func`1"/> to get the window size.</param>
+            <param name="floodCheckerEnabledGetter">An <see cref="T:System.Func`1"/> which dictates whether floodchecking is enabled.</param>
+            <param name="floodCheckerRecordGlobalEventsGetter">An <see cref="T:System.Func`1"/> which dictates as to whether we should record global events.</param>
+            <param name="logger">An <see cref="T:Roblox.EventLog.ILogger"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="floodCheckerLimitGetter"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="floodCheckerLimitWindowGetter"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="floodCheckerEnabledGetter"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="floodCheckerRecordGlobalEventsGetter"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="logger"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationFloodCheckerFactory.GetFloodchecker(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+             <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification">
+            <summary>
+            A notification for a team create invitation.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.EventDate">
+            <inheritdoc cref="P:Roblox.Platform.Notifications.Core.INotification.EventDate" />
+            <remarks>
+            The date when the user was invited.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.AddedUserId">
+            <summary>
+            The invited user's id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.UniverseId">
+            <summary>
+            The id of the universe the user is being invited to.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.Generator">
+            <inheritdoc cref="P:Roblox.Platform.Notifications.Core.INotification.Generator" />
+            <remarks>
+            For this notification, the generator is the user inviting someone to a team create.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.SourceType">
+            <inheritdoc cref="P:Roblox.Platform.Notifications.Core.INotification.SourceType" />
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.EventTargetId">
+            <inheritdoc cref="P:Roblox.Platform.Notifications.Core.INotification.EventTargetId" />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.#ctor">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification"/>.
+            Exists because the notification class is deseralized by JSON.NET which requires a constructor without parameters.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.#ctor(Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationKeyBuilder,Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetBuilder)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification"/>.
+            </summary>
+            <param name="keyBuilder">An <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationKeyBuilder"/>.</param>
+            <param name="eventTargetBuilder">An <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetBuilder"/></param>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification.GetMessageSpecificNotificationKey">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventTargetInterpreter">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventTargetInterpreter.#ctor(Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.Assets.IPlaceFactory)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventTargetInterpreter"/>.
+            </summary>
+            <param name="userFactory">An <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <param name="universeFactory">An <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/></param>
+            <param name="placeFactory">An <see cref="T:Roblox.Platform.Assets.IPlaceFactory"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="userFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universeFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="placeFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventTargetInterpreter.BuildDetail(Roblox.Platform.Notifications.Core.EventTarget,System.DateTime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventTargetInterpreter.GetInvitee(Roblox.Platform.Notifications.Core.EventTarget)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationAuthority">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationAuthority"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationAuthority.#ctor(Roblox.Platform.Notifications.INotificationDistributor,Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationKeyBuilder,Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetBuilder,Roblox.Platform.Membership.IUserFactory,Roblox.Platform.Universes.IUniverseFactory,Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationFloodCheckerFactory)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationAuthority"/>.
+            </summary>
+            <param name="notificationDistributor">A <see cref="T:Roblox.Platform.Notifications.INotificationDistributor"/></param>
+            <param name="keyBuilder">A <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationKeyBuilder"/></param>
+            <param name="eventTargetBuilder">A <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetBuilder"/></param>
+            <param name="userFactory">A <see cref="T:Roblox.Platform.Membership.IUserFactory"/></param>
+            <param name="universeFactory">A <see cref="T:Roblox.Platform.Universes.IUniverseFactory"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="notificationDistributor"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="keyBuilder"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="eventTargetBuilder"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="userFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universeFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="floodCheckerFactory"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationAuthority.ProcessUserInvitationEvent(System.Int64,System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationAuthority.ProcessUserInvitationRevokedEvent(System.Int64,System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationAuthority.UserToReceiver(Roblox.Platform.Membership.IUser)">
+            <summary>
+            A helper method replacing the IUser.ToReceiver() extension method.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> to convert to an <see cref="T:Roblox.Platform.Notifications.Core.IReceiver"/></param>
+            <returns><paramref name="user"/> as a <see cref="T:Roblox.Platform.Notifications.Core.IReceiver"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationKeyBuilder">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationKeyBuilder"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationKeyBuilder.BuildKey(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationKeyBuilder.BuildKey(System.Int64,System.Int64,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationReceiverResolver">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Platform.Notifications.Core.INotificationReceiverResolver"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationReceiverResolver.NotificationSourceType">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationReceiverResolver.#ctor(Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationReceiverResolver"/>.
+            </summary>
+            <param name="eventTargetInterpreter">An <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="eventTargetInterpreter"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationReceiverResolver.GetReceiverForMessages(Roblox.Platform.Notifications.Core.INotification)">
+            <inheritdoc />
+            <exception cref="T:System.ArgumentNullException"><paramref name="notification"/></exception>
+            <exception cref="T:System.ArgumentException"><paramref name="notification"/> has an invalid event target id.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotificationReceiverResolver.UserToReceiver(Roblox.Platform.Membership.IUser)">
+            <summary>
+            A helper method replacing the IUser.ToReceiver() extension method.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> to convert to an <see cref="T:Roblox.Platform.Notifications.Core.IReceiver"/></param>
+            <returns><paramref name="user"/> as a <see cref="T:Roblox.Platform.Notifications.Core.IReceiver"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationPushNotificationBuilder">
+            <summary>
+            An <see cref="T:Roblox.Platform.Notifications.Push.PushNotificationContentBuilderBase`2"/> implementation for the team create invitation notification.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationPushNotificationBuilder.NotificationSourceType">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationPushNotificationBuilder.#ctor(Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter,Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationPushNotificationBuilder"/>.
+            </summary>
+            <param name="eventTargetInterpreter">An <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="eventTargetInterpreter"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationPushNotificationBuilder.BuildCategory(Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationPushNotificationBuilder.BuildDetail(Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification)">
+            <inheritdoc />
+            <exception cref="T:System.ArgumentNullException"><paramref name="notification"/> is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationPushNotificationBuilder.BuildBody(Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail)">
+            <inheritdoc />
+            <exception cref="T:System.ArgumentNullException"><paramref name="detail"/> is null</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationPushNotificationBuilder.BuildLocalizedBody(Roblox.Platform.Membership.IUser,Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail)">
+            <inheritdoc />
+            <exception cref="T:System.ArgumentNullException"><paramref name="detail"/> is null</exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationRevokedEventArgs">
+            <summary>
+            The arguments for an <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateEvent"/> of the <see cref="F:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventType.UserInvitationRevoked"/> type.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationRevokedEventArgs.UserId">
+            <summary>
+            The user revoking the inivation of the <see cref="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationRevokedEventArgs.AffectedUserId"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationRevokedEventArgs.AffectedUserId">
+            <summary>
+            The previously invited user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationRevokedEventArgs.UniverseId">
+            <summary>
+            The universe id the user is no longer invited to edit.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail">
+            <summary>
+            Details class with all information to describe a team create invitation notification.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail.ActingUserId">
+            <summary>
+            The id of the acting user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail.ActingUsername">
+            <summary>
+            The name of the acting user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail.AffectedUserId">
+            <summary>
+            The id of the affected user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail.AffectedUsername">
+            <summary>
+            The name of the affected user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail.UniverseId">
+            <summary>
+            The id of the universe the affected user is invited to.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail.RootPlaceId">
+            <summary>
+            The id of the root place of the universe.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail.UniverseName">
+            <summary>
+            The name of the universe the affected user is invited to.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventArgs">
+            <summary>
+            The arguments for an <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateEvent"/> of the <see cref="F:Roblox.Platform.TeamCreate.Notifications.TeamCreateEventType.UserInvited"/> type.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventArgs.UserId">
+            <summary>
+            The user inviting the <see cref="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventArgs.AffectedUserId"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventArgs.AffectedUserId">
+            <summary>
+            The invited user.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationEventArgs.UniverseId">
+            <summary>
+            The universe id the user is invited to edit.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationStreamNotificationBuilder">
+            <summary>
+            An implementation of the <see cref="T:Roblox.Platform.Notifications.Stream.StreamNotificationBuilderBase`1"/>  for the team create invitation event.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationStreamNotificationBuilder.NotificationSourceType">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationStreamNotificationBuilder.#ctor(Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationStreamNotificationBuilder"/>.
+            </summary>
+            <param name="eventTargetInterpreter">An <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="eventTargetInterpreter"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationStreamNotificationBuilder.BuildCategory(Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationStreamNotificationBuilder.BuildDetail(Roblox.Platform.Notifications.Stream.IStoredStreamNotification)">
+            <inheritdoc />
+            <exception cref="T:System.ArgumentNullException"><paramref name="storedNotification"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateEventPublisher">
+            <summary>
+            Publishes events around the team create feature.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateEventPublisher.PublishTeamCreateInvitation(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            A user was invited to a team create.
+            </summary>
+            <param name="actor">The <see cref="T:Roblox.Platform.Membership.IUser"/> inviting the <paramref name="target"/></param>
+            <param name="target">The <see cref="T:Roblox.Platform.Membership.IUser"/> being invited.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/> the <see cref="T:Roblox.Platform.Membership.IUser"/> is invited to.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="actor"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="target"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universe"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateEventPublisher.PublishTeamCreateRevokedInvitation(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            A user was removed from a team create.
+            </summary>
+            <param name="actor">The <see cref="T:Roblox.Platform.Membership.IUser"/> removing the <paramref name="target"/></param>
+            <param name="target">The <see cref="T:Roblox.Platform.Membership.IUser"/> being removed.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/> the <see cref="T:Roblox.Platform.Membership.IUser"/> is no longer invited to.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="actor"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="target"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universe"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetBuilder">
+            <summary>
+            Used to build the <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/> for an <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetBuilder.BuildEventTarget(Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification)">
+            <summary>
+            Builds the <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/> for an <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification"/>.
+            </summary>
+            <param name="notification">The <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification"/></param>
+            <returns>The built <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/> for the <paramref name="notification"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="notification"/></exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationFloodCheckerFactory">
+            <summary>
+            A wrapper around an <see cref="T:Roblox.FloodCheckers.Core.IFloodCheckerFactory`1"/> which can create <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/>s to handle floodchecking team create invitation notifications.
+            This exists to extract the responsiblity as to how floodchecking is configured out of the <see cref="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationAuthority"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationFloodCheckerFactory.GetFloodchecker(Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Gets a floodchecker which handles floodchecking team create notifications for the <paramref name="invitee"/> to the <paramref name="universe"/>.
+            </summary>
+            <param name="invitee">The <see cref="T:Roblox.Platform.Membership.IUser"/>being invited to the <paramref name="universe"/>.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/> the <paramref name="invitee"/> is being invited to.</param>
+            <returns>The <see cref="T:Roblox.FloodCheckers.Core.IFloodChecker"/> to use for the specified case.</returns>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationAuthority">
+            <summary>
+            Used to process events originating from the team create platform code, sends notifications to the involved parties accordingly.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationAuthority.ProcessUserInvitationEvent(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Process that an user has to been invited to a team create.
+            </summary>
+            <param name="actorId">The id of the user inviting the <paramref name="inviteeId"/>"/>.</param>
+            <param name="inviteeId">The id of the user being invited.</param>
+            <param name="universeId">The id of the universe the <paramref name="inviteeId"/> is being invited to.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="actorId"/> is not a valid user</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="inviteeId"/> is not a valid user</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="universeId"/> is not a valid universe</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationAuthority.ProcessUserInvitationRevokedEvent(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Process that an user's invitation to a team create has been revoked.
+            </summary>
+            <param name="actorId">The id of the user removing the <paramref name="inviteeId"/>"/>.</param>
+            <param name="inviteeId">The id of the user being removed.</param>
+            <param name="universeId">The id of the universe the <paramref name="inviteeId"/> is no longer being invited to.</param>
+            <exception cref="T:System.ArgumentException"><paramref name="actorId"/> is not a valid user</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="inviteeId"/> is not a valid user</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="universeId"/> is not a valid universe</exception>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationKeyBuilder">
+            <summary>
+            A builder to create the key uniquely identifying each notification.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationKeyBuilder.BuildKey(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Universes.IUniverse)">
+            <summary>
+            Builds the key for a notification.
+            </summary>
+            <param name="inviter">The <see cref="T:Roblox.Platform.Membership.IUser"/> inviting the <paramref name="invitee"/></param>
+            <param name="invitee">The <see cref="T:Roblox.Platform.Membership.IUser"/> being invited.</param>
+            <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse"/> the <paramref name="invitee"/> is being invited to.</param>
+            <returns>the key identifying the notification</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="inviter"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="invitee"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="universe"/></exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationNotificationKeyBuilder.BuildKey(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Builds the key for a notification.
+            </summary>
+            <param name="inviterUserId"></param>
+            <param name="inviteeUserId"></param>
+            <param name="universeId"></param>
+            <returns>the key identifying the notification</returns>
+        </member>
+        <member name="T:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter">
+            <summary>
+            Handles parsing the <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/> for the <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification"/>.
+            Can build the <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail"/> from an <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter.BuildDetail(Roblox.Platform.Notifications.Core.EventTarget,System.DateTime)">
+            <summary>
+            Builds a <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail"/> from an <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/>.
+            </summary>
+            <param name="eventTarget">The <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/> of the notification for which the details should be built.</param>
+            <param name="eventDate">The time the notification was sent.</param>
+            <returns>The created <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationDetail"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="eventTarget"/></exception>
+            <exception cref="T:System.ArgumentException">the actor specfied within the <paramref name="eventTarget"/> does not exist</exception>
+            <exception cref="T:System.ArgumentException">the invitee specfied within the <paramref name="eventTarget"/> does not exist</exception>
+            <exception cref="T:System.ArgumentException">the universe specfied within the <paramref name="eventTarget"/> does not exist</exception>
+        </member>
+        <member name="M:Roblox.Platform.TeamCreate.Notifications.ITeamCreateInvitationEventTargetInterpreter.GetInvitee(Roblox.Platform.Notifications.Core.EventTarget)">
+            <summary>
+            Extracts the invited <see cref="T:Roblox.Platform.Membership.IUser"/> from an <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/> for a <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification"/>.
+            </summary>
+            <param name="eventTarget">The <see cref="T:Roblox.Platform.Notifications.Core.EventTarget"/> for a <see cref="T:Roblox.Platform.TeamCreate.Notifications.TeamCreateInvitationNotification"/></param>
+            <returns>the invited <see cref="T:Roblox.Platform.Membership.IUser"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="eventTarget"/></exception>
+        </member>
+    </members>
+</doc>

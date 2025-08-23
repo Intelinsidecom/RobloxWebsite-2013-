@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Roblox.Platform.Authentication;
 using Roblox.Platform.Demographics;
 using Roblox.Platform.Membership;
-using Roblox.PolicyLookup;
+using Roblox.Platform.PolicyLookup;
 using Roblox.RequestContext;
 
 namespace Roblox.Platform.PolicyLookup;

@@ -1,0 +1,1156 @@
+
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures>dotnet build
+Restore complete (1.9s)
+  Roblox.Locking succeeded with 1 warning(s) (0.4s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0\Roblox.Locking.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Common.Web succeeded with 1 warning(s) (0.4s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net471\Roblox.Common.Web.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Common.NetStandard succeeded with 1 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.NetStandard\bin\Debug\netstandard2.0\Roblox.Common.NetStandard.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.EventLog succeeded with 1 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\EventLog\Roblox.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Configuration succeeded with 1 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\bin\Debug\netstandard2.0\Roblox.Configuration.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Instrumentation succeeded with 1 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Instrumentation\Roblox.Instrumentation\bin\Debug\netstandard2.0\Roblox.Instrumentation.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Entities succeeded with 1 warning(s) (0.2s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities\bin\Debug\netstandard2.0\Roblox.Entities.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Hashing succeeded with 1 warning(s) (0.2s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Hashing\Roblox.Hashing\bin\Debug\netstandard2.0\Roblox.Hashing.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.MemCachedClient succeeded with 1 warning(s) (0.9s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.MemCachedClient\bin\Debug\netstandard2.0\Roblox.MemCachedClient.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.AssetInstances.Client succeeded with 1 warning(s) (0.2s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.AssetInstances.Client\bin\Debug\net471\Roblox.AssetInstances.Client.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.MssqlDatabases succeeded with 1 warning(s) (0.6s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\netstandard2.0\Roblox.MssqlDatabases.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.DataV2.Core succeeded with 1 warning(s) (0.2s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\DataV2\Core\Roblox.DataV2.Core\bin\Debug\netstandard2.0\Roblox.DataV2.Core.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Http.Client succeeded with 1 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.Client\bin\Debug\netstandard2.0\Roblox.Http.Client.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Economy.Common succeeded with 1 warning(s) (0.7s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\Roblox.Economy.Common.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.ContentRatings succeeded with 3 warning(s) (0.9s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\bin\Debug\net471\Roblox.ContentRatings.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\Roblox.ContentRatings\ContentRatingTypeDAL.cs(75,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\Roblox.ContentRatings\AssetContentRatingDAL.cs(80,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+  Roblox.Agents succeeded with 1 warning(s) (0.7s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\bin\Debug\net471\Roblox.Agents.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Amazon.Sqs succeeded with 1 warning(s) (0.6s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\Roblox.Amazon.Sqs.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.ServiceDiscovery succeeded with 1 warning(s) (0.8s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\bin\Debug\netstandard2.0\Roblox.ServiceDiscovery.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.UserCacheMigrationSettings succeeded with 1 warning(s) (0.5s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\Debug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Amazon succeeded with 1 warning(s) (0.5s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon\bin\Debug\net472\Roblox.Amazon.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Common succeeded with 1 warning(s) (0.7s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\Roblox.Common.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Moderation succeeded with 29 warning(s) (0.6s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\net472\Roblox.Moderation.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\WebsiteReportContextDAL.cs(85,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\AbuseTypeDAL.cs(188,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\AccountMACAddressDAL.cs(35,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\UtteranceSourceTypeDAL.cs(78,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\AssetReviewTaskDAL.cs(41,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\UtteranceDAL.cs(36,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\CheatDetectionDAL.cs(84,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ContextUrlDAL.cs(76,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ExpressionDAL.cs(104,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\InGameReportContextDAL.cs(113,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ItemStatusDAL.cs(113,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ItemTypeDAL.cs(85,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\UserModerationNoteDAL.cs(73,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\MACAddressDAL.cs(39,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\StatusTypeDAL.cs(99,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\PunishmentDAL.cs(44,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\SellBanDAL.cs(35,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ReportUtteranceDAL.cs(104,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\PunishmentReasonTypeDAL.cs(84,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\PunishmentReviewTaskDAL.cs(43,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\PunishmentTypeDAL.cs(160,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ReportReviewTaskDAL.cs(41,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ReportCategoryAutoCloseProbabilityThresholdDAL.cs(52,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ReportCategoryDAL.cs(141,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ReportContextDAL.cs(99,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ReportContextTypeDAL.cs(85,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ReportDAL.cs(40,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\ReportProbabilityDAL.cs(33,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+  Roblox.RequestContext succeeded with 1 warning(s) (0.4s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.RequestContext\bin\Debug\netstandard2.0\Roblox.RequestContext.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Assets succeeded with 3 warning(s) (0.5s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\Roblox.Assets.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\Roblox.Assets\RecentlyInsertedAssetDAL.cs(73,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\Roblox.Assets\MarketingBoostDAL.cs(123,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+  Roblox.Coordination succeeded with 1 warning(s) (0.2s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Coordination\bin\Debug\netstandard2.0\Roblox.Coordination.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Economy succeeded with 1 warning(s) (0.9s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.Economy.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.OwnershipV2.Client succeeded (0.4s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.OwnershipV2.Client\bin\Debug\net471\Roblox.OwnershipV2.Client.dll
+  Roblox.ApiClientBase succeeded with 1 warning(s) (0.8s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\ApiClientBase\Roblox.ApiClientBase\bin\Debug\netstandard2.0\Roblox.ApiClientBase.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Redis.Lru succeeded with 1 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2.0\Roblox.Redis.Lru.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Web.SEO succeeded with 1 warning(s) (0.1s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.SEO\bin\Debug\netstandard2.0\Roblox.Web.SEO.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Http.ServiceClient succeeded with 1 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Http.ServiceClient.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.WebsiteSettings succeeded with 1 warning(s) (1.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.WebsiteSettings\bin\Debug\net471\Roblox.WebsiteSettings.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Redis succeeded with 1 warning(s) (1.1s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Redis.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Ownership.Client succeeded with 1 warning(s) (0.5s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net471\Roblox.Ownership.Client.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Sentinels succeeded with 1 warning(s) (0.1s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Sentinels\Roblox.Sentinels\bin\Debug\netstandard2.0\Roblox.Sentinels.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Platform.OwnershipV2 succeeded with 1 warning(s) (0.2s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.OwnershipV2\bin\Debug\net471\Roblox.Platform.OwnershipV2.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Users succeeded with 4 warning(s) (0.4s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Roblox.Users.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\Roblox.Users.DAL\LanguageTypeDAL.cs(90,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\Roblox.Users\CountryDAL.cs(85,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\Roblox.Users\GenderTypeDAL.cs(75,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+  Roblox.Platform.AssetOwnership succeeded with 1 warning(s) (0.6s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Platform.AssetOwnership.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Caching succeeded with 3 warning(s) (0.8s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\bin\Debug\netstandard2.0\Roblox.Caching.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\Roblox.Caching\MigrationStateChange.cs(97,7): warning CS0253: Possible unintended reference comparison; to get a value comparison, cast the right hand side to type 'MigrationStateChange'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\Roblox.Caching.Shared\SharedCacheClient.cs(308,30): warning CS0618: 'MemCachedClientSettings' is obsolete: 'This is the global version for MemcachedObject and MemcachedWeb, a more specialized implementation exists in ClusterSettings'
+  Roblox.Data succeeded with 47 warning(s) (0.4s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Data.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbInfo.cs(14,9): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbInfo.cs(16,21): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbInfo.cs(23,77): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbInfo.cs(28,65): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbInfo.cs(28,107): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(376,16): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(405,16): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(28,9): warning CS0618: 'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(30,9): warning CS0618: 'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(32,9): warning CS0618: 'SqlDataAdapter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(34,9): warning CS0618: 'SqlParameterCollection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(137,17): warning CS0618: 'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(277,52): warning CS0618: 'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(82,32): warning CS0618: 'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(84,55): warning CS0618: 'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(169,12): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbInfo.cs(19,60): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(42,22): warning CS0618: 'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(196,12): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(207,4): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(101,24): warning CS0618: 'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(105,21): warning CS0618: 'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(122,24): warning CS0618: 'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(332,13): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(159,10): warning CS0618: 'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(161,4): warning CS0618: 'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(354,12): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(358,3): warning CS0618: 'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(196,10): warning CS0618: 'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(198,4): warning CS0618: 'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(233,10): warning CS0618: 'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(235,4): warning CS0618: 'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(391,14): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(407,38): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(407,11): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(255,20): warning CS0618: 'SqlDataAdapter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(268,10): warning CS0618: 'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data\DbHelper.cs(270,4): warning CS0618: 'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(413,3): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(415,3): warning CS0618: 'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(936,12): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(940,3): warning CS0618: 'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(1026,3): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(1026,48): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(1034,13): warning CS0618: 'SqlParameter' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Common\EntityHelper.cs(1038,4): warning CS0618: 'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'
+  Roblox.Users.Client succeeded with 3 warning(s) (0.2s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\bin\Debug\net471\Roblox.Users.Client.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\Roblox.Users.Client.Properties\Settings.cs(28,28): warning CS0618: 'RobloxEnvironment.GetApiEndpoint(string)' is obsolete: 'GetApiEndpoint method is deprecated. Use it only if your service still lives on roblox.com domain. If so, then ask to map simulpong and simulprod domains for your service. Use GetInternalApiServiceEndpoint method if your services mapped to simulpong/simulprod.'
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(5718,5): warning MSB3061: Unable to delete file "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\bin\Debug\net471\Newtonsoft.Json.xml". Access to the path 'C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\bin\Debug\net471\Newtonsoft.Json.xml' is denied.
+  Roblox.Entities.Mssql succeeded with 1 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstandard2.0\Roblox.Entities.Mssql.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+  Roblox.Passwords.Client succeeded with 2 warning(s) (0.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\bin\Debug\netstandard2.0\Roblox.Passwords.Client.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\Roblox.Passwords.Client.Properties\Settings.cs(26,28): warning CS0618: 'RobloxEnvironment.GetApiEndpoint(string)' is obsolete: 'GetApiEndpoint method is deprecated. Use it only if your service still lives on roblox.com domain. If so, then ask to map simulpong and simulprod domains for your service. Use GetInternalApiServiceEndpoint method if your services mapped to simulpong/simulprod.'
+  Roblox Server Class Library succeeded with 299 warning(s) (1.3s) → C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\net472\Roblox Server Class Library.dll
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Roles.Client". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Amazon.Sqs". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Locking". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Common.Web". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.MssqlDatabases". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Marketplace.Client". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Configuration". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Passwords.Client". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Moderation". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Groups.Client". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.ApiClientBase". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Instrumentation". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Entities.Mssql". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.UserCacheMigrationSettings". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Assets". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Redis.Lru". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Redis". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Roblox.Users". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Amazon.Sqs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Amazon.Sqs". Choosing "Roblox.Amazon.Sqs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Locking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Locking". Choosing "Roblox.Locking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Common.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Common.Web". Choosing "Roblox.Common.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.MssqlDatabases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.MssqlDatabases". Choosing "Roblox.MssqlDatabases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Configuration". Choosing "Roblox.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Passwords.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Passwords.Client". Choosing "Roblox.Passwords.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Moderation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Moderation". Choosing "Roblox.Moderation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.ApiClientBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.ApiClientBase". Choosing "Roblox.ApiClientBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Instrumentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Instrumentation". Choosing "Roblox.Instrumentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Entities.Mssql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Entities.Mssql". Choosing "Roblox.Entities.Mssql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.UserCacheMigrationSettings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.UserCacheMigrationSettings". Choosing "Roblox.UserCacheMigrationSettings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Assets, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Assets". Choosing "Roblox.Assets, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Redis.Lru, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Redis.Lru". Choosing "Roblox.Redis.Lru, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Redis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Redis". Choosing "Roblox.Redis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3243: No way to resolve conflict between "Roblox.Users, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" and "Roblox.Users". Choosing "Roblox.Users, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" arbitrarily.
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3277:
+      Found conflicts between different versions of "System.Configuration.ConfigurationManager" that could not be resolv
+      ed.
+      There was a conflict between "System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicK
+      eyToken=cc7b13ffcd2ddd51" and "System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, Public
+      KeyToken=cc7b13ffcd2ddd51".
+          "System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51"
+       was chosen because it was primary and "System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutra
+      l, PublicKeyToken=cc7b13ffcd2ddd51" was not.
+          References which depend on "System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, Publi
+      cKeyToken=cc7b13ffcd2ddd51" [C:\Users\Intel\.nuget\packages\system.configuration.configurationmanager\4.7.0\ref\ne
+      t461\System.Configuration.ConfigurationManager.dll].
+              C:\Users\Intel\.nuget\packages\system.configuration.configurationmanager\4.7.0\ref\net461\System.Configura
+      tion.ConfigurationManager.dll
+                Project file item includes which caused reference "C:\Users\Intel\.nuget\packages\system.configuration.c
+      onfigurationmanager\4.7.0\ref\net461\System.Configuration.ConfigurationManager.dll".
+                  C:\Users\Intel\.nuget\packages\system.configuration.configurationmanager\4.7.0\ref\net461\System.Confi
+      guration.ConfigurationManager.dll
+          References which depend on or have been unified to "System.Configuration.ConfigurationManager, Version=6.0.0.0
+      , Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" [].
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\R
+      oblox.Data.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Data.dll".
+                  Roblox.Data
+                  Roblox.Economy.Common
+                  Roblox.Economy
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  Roblox.Agents
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  Roblox.ContentRatings
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\bin\Debug\netstandar
+      d2.0\Roblox.Caching.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Caching\Roblox.Caching\bin\Debug\netstandard2.0\Roblox.Caching.dll".
+                  Roblox.Caching
+                  Roblox.Data
+                  Roblox.Platform.AssetOwnership
+                  Roblox.Economy.Common
+                  Roblox.Economy
+                  Roblox.Users.Client
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  Roblox.Agents
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  Roblox.ContentRatings
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0\Rob
+      lox.Locking.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Locking\bin\Debug\netstandard2.0\Roblox.Locking.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0
+      \Roblox.Locking.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\
+      Roblox.Amazon.Sqs.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\Roblox.Amazon.Sqs.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\netst
+      andard2.0\Roblox.MssqlDatabases.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\netstandard2.0\Roblox.MssqlDatabases.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\n
+      etstandard2.0\Roblox.MssqlDatabases.dll
+                  Roblox.Economy.Common
+                  Roblox.Economy
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  Roblox.Agents
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\bin\Debu
+      g\netstandard2.0\Roblox.Configuration.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Configuration\Roblox.Configuration\bin\Debug\netstandard2.0\Roblox.Configuration.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\bin\
+      Debug\netstandard2.0\Roblox.Configuration.dll
+                  Roblox.Data
+                  Roblox.Caching
+                  Roblox.Common
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+                  Roblox.Platform.AssetOwnership
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0
+      \Roblox.Locking.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+                  Roblox.Amazon
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\n
+      etstandard2.0\Roblox.MssqlDatabases.dll
+                  Roblox.Economy.Common
+                  Roblox.Economy
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\bin\Debug\netst
+      andard2.0\Roblox.Passwords.Client.dll
+                  Roblox.Users.Client
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\ApiClientBase\Roblox.ApiClientBase\bin\
+      Debug\netstandard2.0\Roblox.ApiClientBase.dll
+                  Roblox.Agents
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2
+      .0\Roblox.Redis.Lru.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandar
+      d2.0\Roblox.Redis.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  Roblox.ContentRatings
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.WebsiteSettings\bin\Debug\ne
+      t471\Roblox.WebsiteSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\bin\Debug\netst
+      andard2.0\Roblox.ServiceDiscovery.dll
+                  Roblox.BucketStore
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\bin\Debug\netstanda
+      rd2.0\Roblox.Passwords.Client.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Passwords.Client\bin\Debug\netstandard2.0\Roblox.Passwords.Client.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\bin\Debug\netst
+      andard2.0\Roblox.Passwords.Client.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\ApiClientBase\Roblox.ApiClientBase\bin\Debu
+      g\netstandard2.0\Roblox.ApiClientBase.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\ApiClientBase\Roblox.ApiClientBase\bin\Debug\netstandard2.0\Roblox.ApiClientBase.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\ApiClientBase\Roblox.ApiClientBase\bin\
+      Debug\netstandard2.0\Roblox.ApiClientBase.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0
+      \Roblox.Locking.dll
+                  Roblox.Economy.Common
+                  Roblox.Economy
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\Debug
+      \netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.UserCacheMigrationSettings\bin\Debug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2.0\R
+      oblox.Redis.Lru.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Redis.Lru\bin\Debug\netstandard2.0\Roblox.Redis.Lru.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2
+      .0\Roblox.Redis.Lru.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0
+      \Roblox.Redis.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Redis.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandar
+      d2.0\Roblox.Redis.dll
+                  Roblox.Caching
+                  Roblox.Data
+                  Roblox.Platform.AssetOwnership
+                  Roblox.Economy.Common
+                  Roblox.Economy
+                  Roblox.Users.Client
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  Roblox.Agents
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2
+      .0\Roblox.Redis.Lru.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  Roblox.ContentRatings
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.NetStandard\bin\Debug\
+      netstandard2.0\Roblox.Common.NetStandard.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Common\Roblox.Common.NetStandard\bin\Debug\netstandard2.0\Roblox.Common.NetStandard.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.NetStandard\bin\De
+      bug\netstandard2.0\Roblox.Common.NetStandard.dll
+                  Roblox.Caching
+                  Roblox.Data
+                  Roblox.Common
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+                  Roblox.Platform.AssetOwnership
+                  Roblox.Amazon
+                  Roblox.Economy.Common
+                  Roblox.Economy
+                  Roblox.Users.Client
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  Roblox.Agents
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  Roblox.ContentRatings
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  Roblox.BucketStore
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\bin\Debug\netstanda
+      rd2.0\Roblox.ServiceDiscovery.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.ServiceDiscovery\bin\Debug\netstandard2.0\Roblox.ServiceDiscovery.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\bin\Debug\netst
+      andard2.0\Roblox.ServiceDiscovery.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandar
+      d2.0\Roblox.Redis.dll
+                  Roblox.Caching
+                  Roblox.Data
+                  Roblox.Platform.AssetOwnership
+                  Roblox.Economy.Common
+                  Roblox.Economy
+                  Roblox.Users.Client
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  Roblox.Agents
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2
+      .0\Roblox.Redis.Lru.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  Roblox.ContentRatings
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0\Rob
+      lox.LeasedLocks.Client.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Locking\bin\Debug\netstandard2.0\Roblox.LeasedLocks.Client.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0
+      \Roblox.Locking.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\
+      Roblox.FloodCheckers.Redis.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\Roblox.FloodCheckers.Redis.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\Robl
+      ox.Amazon.Firehose.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Economy.Common\bin\Debug\net471\Roblox.Amazon.Firehose.dll".
+                  Roblox.Economy.Common
+                  Roblox.Economy
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Stubs\GroupsClientStubs.cs(15,179): warning CS0618: 'SortOrder' is obsolete: 'Please use Roblox.DataV2.Core.SortOrder'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Stubs\GroupsClientStubs.cs(40,186): warning CS0618: 'SortOrder' is obsolete: 'Please use Roblox.DataV2.Core.SortOrder'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(94,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\IAsset.cs(8,2): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\IAsset.cs(30,2): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetVersionDAL.cs(243,58): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetVersionDAL.cs(294,50): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(36,9): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(134,49): warning CS0618: 'AssetCounter' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(147,44): warning CS0618: 'AssetCounter' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(155,45): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(211,59): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(55,29): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Shirt.cs(24,34): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Shirt.cs(78,31): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Shirt.cs(90,37): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Shirt.cs(95,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Shirt.cs(100,54): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Shirt.cs(100,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Shirt.cs(105,29): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\TeeShirt.cs(24,34): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\TeeShirt.cs(78,31): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\TeeShirt.cs(90,37): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\TeeShirt.cs(95,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\TeeShirt.cs(100,54): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\TeeShirt.cs(100,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\TeeShirt.cs(105,32): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Pants.cs(24,34): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Pants.cs(78,31): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Pants.cs(90,37): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Pants.cs(95,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Pants.cs(100,54): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Pants.cs(100,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Pants.cs(105,29): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Decal.cs(22,34): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Decal.cs(69,37): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\DelayedReleaseAsset.cs(180,9): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\DelayedReleaseAsset.cs(182,9): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(119,27): warning CS0809: Obsolete member 'Account.CreationDate' overrides non-obsolete member 'MembershipUser.CreationDate'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(122,25): warning CS0809: Obsolete member 'Account.Email' overrides non-obsolete member 'MembershipUser.Email'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(143,27): warning CS0809: Obsolete member 'Account.LastActivityDate' overrides non-obsolete member 'MembershipUser.LastActivityDate'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(146,25): warning CS0809: Obsolete member 'Account.ProviderName' overrides non-obsolete member 'MembershipUser.ProviderName'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(149,25): warning CS0809: Obsolete member 'Account.ProviderUserKey' overrides non-obsolete member 'MembershipUser.ProviderUserKey'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(152,25): warning CS0809: Obsolete member 'Account.UserName' overrides non-obsolete member 'MembershipUser.UserName'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\UserGroup.cs(163,17): warning CS0618: 'SortOrder' is obsolete: 'Please use Roblox.DataV2.Core.SortOrder'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetItem.cs(134,9): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetItem.cs(136,9): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(234,22): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(239,9): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(249,9): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(220,9): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(466,39): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AccountSecurityTicket.cs(169,106): warning CS0618: 'AccountPasswordHash' is obsolete: 'Please use IPasswordsClient instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AccoutrementPackageItem.cs(78,9): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\UserStatusDAL.cs(100,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\UserScreenSettingDAL.cs(84,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\ShowcaseAllotmentTypeDAL.cs(83,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\UserReferralsDAL.cs(108,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\RobuxStipendQuantityTypeDAL.cs(46,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\UserGroup.cs(167,40): warning CS0618: 'SortOrder' is obsolete: 'Please use Roblox.DataV2.Core.SortOrder'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\UserGroup.cs(168,41): warning CS0618: 'SortOrder' is obsolete: 'Please use Roblox.DataV2.Core.SortOrder'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\UserFollowPrivacySettingDAL.cs(74,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\UserCounterTypeDAL.cs(79,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\RobuxStipendDAL.cs(53,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\UserCounterDAL.cs(81,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\RobuxCreditQuantityTypeDAL.cs(93,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\ScriptDAL.cs(191,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\PremiumFeatureDAL.cs(59,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\AccountAddOnTypeDAL.cs(83,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\User.cs(80,46): warning CS0618: 'User.UseSuperSafeConversationMode' is obsolete: 'This always returns true if AgeBracket is AgeUnder13.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\User.cs(81,41): warning CS0618: 'User.UseSuperSafePrivacyMode' is obsolete: 'This always returns true if AgeBracket is AgeUnder13.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\User.cs(193,3): warning CS0618: 'User.RobloxAccountID' is obsolete: 'Use Roblox.User.Properties.Settings.RobloxUserId'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\GrantedBadgeListItemDAL.cs(97,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AccountSecurityTicketDAL.cs(149,28): warning CS0219: The variable 'dal' is assigned but its value is never used
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AccountSecurityTicketDAL.cs(162,28): warning CS0219: The variable 'dal' is assigned but its value is never used
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\AccountFeatureSetDAL.cs(59,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\User.cs(827,11): warning CS0612: 'UserModerationStatus.MustValidateEmail' is obsolete
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\User.cs(843,11): warning CS0612: 'UserModerationStatus.Poisoned' is obsolete
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\RobloxScreenDAL.cs(75,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetCategoryDAL.cs(149,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\ReportedScriptDAL.cs(93,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\AccountProductPremiumFeatureMappingDAL.cs(93,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\PlaceGamePassDAL.cs(80,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetGenreDAL.cs(149,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\AdvertisingSuppressionTypeDAL.cs(79,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(702,21): warning CS0618: 'Account.GetCurrent(HttpContext)' is obsolete: 'Use Global.WebAuthenticator.GetAuthenticatedUser() instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(770,4): warning CS0612: 'UserModerationStatus.Poisoned' is obsolete
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Account.cs(771,4): warning CS0612: 'UserModerationStatus.MustValidateEmail' is obsolete
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\ContentPrivilegeTypeDAL.cs(69,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\DurationTypeDAL.cs(83,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\GrantedBadgeListDAL.cs(79,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\GrantedAssetListDAL.cs(79,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\TeeShirt.cs(107,50): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.PremiumFeatures\GrantedAssetListItemDAL.cs(93,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AccoutrementPackageItem.cs(78,24): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AccoutrementPackageItem.cs(89,7): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AccoutrementPackageItemDAL.cs(85,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetVersionDAL.cs(240,34): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetVersionDAL.cs(247,4): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetVersionDAL.cs(248,4): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetVersionDAL.cs(291,40): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetVersionDAL.cs(298,4): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\AssetVersionDAL.cs(299,4): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AlertDAL.cs(85,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AlertVisibilityTypeDAL.cs(75,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\FeedDAL.cs(136,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox.DataAccess\FeedDAL.cs(147,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetCounterDAL.cs(63,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetGenresInfoDAL.cs(53,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetHashSafetyRatingDAL.cs(41,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetHashScriptDAL.cs(94,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetOptionDAL.cs(125,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(105,11): warning CS0618: 'User.GetUserIDByAgentID(long)' is obsolete: 'This just returns agentId (the input).'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetCounterTypeDAL.cs(79,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(220,29): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(220,29): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetItemDAL.cs(70,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetItem.cs(187,4): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetItem.cs(220,3): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(400,3): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(400,17): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(400,17): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetSubscription.cs(90,34): warning CS0618: 'User.GetUserIDByAgentID(long)' is obsolete: 'This just returns agentId (the input).'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetItem.cs(238,5): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(468,28): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(468,70): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(468,112): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(470,32): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSet.cs(481,52): warning CS0618: 'User.GetAgentID()' is obsolete: 'Agent IDs are just User.ID. Use ID directly.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetSubscriptionDAL.cs(66,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\StaticFileDAL.cs(78,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(36,24): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(81,4): warning CS0618: 'AssetCounter' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(81,38): warning CS0618: 'AssetCounterType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(89,4): warning CS0618: 'AssetCounter' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(89,38): warning CS0618: 'AssetCounterType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(125,4): warning CS0618: 'AssetCounter' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(125,28): warning CS0618: 'AssetCounter' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Comment.cs(125,62): warning CS0618: 'AssetCounterType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\CompressionTypeDAL.cs(75,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(63,106): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\DelayedReleaseAsset.cs(180,24): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\DelayedReleaseAsset.cs(190,4): warning CS0618: 'AssetOption' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\DelayedReleaseAsset.cs(190,25): warning CS0618: 'AssetOption' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(117,18): warning CS0618: 'AgentFactory.Get(long)' is obsolete: 'Please use the instance method instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\DelayedReleaseAsset.cs(199,4): warning CS0618: 'AssetOption' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\DelayedReleaseAsset.cs(199,25): warning CS0618: 'AssetOption' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\AssetSetDAL.cs(74,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(29,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(30,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(31,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(32,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(33,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(34,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(35,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(36,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(37,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(38,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(39,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(40,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(41,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(42,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(43,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(44,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(45,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(46,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(47,3): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(50,106): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(212,3): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(212,17): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(212,17): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(288,19): warning CS0618: 'User.RobloxAccountID' is obsolete: 'Use Roblox.User.Properties.Settings.RobloxUserId'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(277,103): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(285,9): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Feed.cs(285,9): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\FilesManager.cs(105,10): warning CS0618: 'FilesManager.GenerateFormattedSourceContentHash(string, string)' is obsolete: 'This is only meant for temporary use for multi-binary assets V1'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\FilesManager.cs(157,10): warning CS0618: 'FilesManager.GetUri(string, string, bool, string, string)' is obsolete: 'This is only meant for temporary use for multi-binary assets V1'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(236,10): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(236,46): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(241,8): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(241,30): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(251,10): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(256,10): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Group.cs(256,55): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\FilesManager.cs(234,19): warning CS0618: 'FilesManager.GenerateS3KeyForFormattedContent(string, string)' is obsolete: 'This is only meant for temporary use for multi-binary assets V1'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\FilesManager.cs(289,19): warning CS0618: 'FilesManager.GenerateS3KeyForFormattedContent(string, string)' is obsolete: 'This is only meant for temporary use for multi-binary assets V1'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Showcase.cs(86,18): warning CS0618: 'AgentFactory.Get(long)' is obsolete: 'Please use the instance method instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\FilesManager.cs(450,69): warning CS0618: 'FilesManager.GenerateFormattedSourceContentHash(string, string)' is obsolete: 'This is only meant for temporary use for multi-binary assets V1'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EmailAddressDAL.cs(62,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Shirt.cs(107,50): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(308,27): warning CS0618: 'AgentFactory.Get(long)' is obsolete: 'Please use the instance method instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(391,41): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(391,41): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(432,122): warning CS0618: 'User.RobloxAccountID' is obsolete: 'Use Roblox.User.Properties.Settings.RobloxUserId'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(441,7): warning CS0618: 'AgentFactory.Get(long)' is obsolete: 'Please use the instance method instead.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(451,70): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(461,104): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(461,159): warning CS0618: 'User.RobloxAccountID' is obsolete: 'Use Roblox.User.Properties.Settings.RobloxUserId'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(486,32): warning CS0618: 'AssetOption' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(556,7): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(556,7): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(574,3): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(574,17): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(574,17): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(579,28): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(583,28): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(592,3): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(592,17): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(592,17): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(597,28): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(601,28): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(605,28): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(641,17): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(644,39): warning CS0618: 'User.RobloxAccountID' is obsolete: 'Use Roblox.User.Properties.Settings.RobloxUserId'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(667,4): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(668,4): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(669,4): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(671,85): warning CS0618: 'User.RobloxAccountID' is obsolete: 'Use Roblox.User.Properties.Settings.RobloxUserId'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(687,22): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(691,22): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(695,22): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\EconomyHelper.cs(699,22): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Script.cs(249,3): warning CS0618: 'AssetHash' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Script.cs(249,20): warning CS0618: 'AssetHash' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(9,106): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(25,12): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(25,12): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(29,12): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(40,11): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(44,11): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(44,11): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Script.cs(351,31): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Script.cs(351,76): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\ProductGenreMappingDAL.cs(41,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(70,12): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(81,11): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(112,17): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(112,32): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(112,32): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(112,62): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(119,5): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(119,23): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(122,17): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(122,42): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(136,4): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(136,23): warning CS0618: 'AssetVersion' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(139,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(139,36): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(144,4): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(144,14): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(144,14): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(147,16): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\QueryStringAssetParameterParser.cs(147,34): warning CS0618: 'AssetReference' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\PlaceChatStyleTypeDAL.cs(39,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\PlaceChatStyleSettingDAL.cs(41,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\Pants.cs(107,50): warning CS0618: 'AssetType' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\LocationTypeDAL.cs(67,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\LocationDAL.cs(70,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\InteractionCounterTypeDAL.cs(107,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\InteractionCounterDAL.cs(167,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\GroupWallPost.cs(143,26): warning CS0618: 'RedisLruClient' is obsolete: 'Use your own cluster instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\GroupWallPost.cs(143,26): warning CS0618: 'RedisLruClient.GetInstance()' is obsolete: 'Use your own cluster instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\GroupWallPost.cs(152,4): warning CS0618: 'RedisLruClient' is obsolete: 'Use your own cluster instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\Roblox\GroupWallPost.cs(152,4): warning CS0618: 'RedisLruClient.GetInstance()' is obsolete: 'Use your own cluster instead'
+  Roblox.PremiumFeatures succeeded with 17 warning(s) (0.3s) → bin\Debug\net472\Roblox.PremiumFeatures.dll
+    C:\Program Files\dotnet\sdk\9.0.304\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3277:
+      Found conflicts between different versions of "System.Configuration.ConfigurationManager" that could not be resolv
+      ed.
+      There was a conflict between "System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicK
+      eyToken=cc7b13ffcd2ddd51" and "System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, Public
+      KeyToken=cc7b13ffcd2ddd51".
+          "System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51"
+       was chosen because it was primary and "System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutra
+      l, PublicKeyToken=cc7b13ffcd2ddd51" was not.
+          References which depend on "System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, Publi
+      cKeyToken=cc7b13ffcd2ddd51" [C:\Users\Intel\.nuget\packages\system.configuration.configurationmanager\4.7.0\ref\ne
+      t461\System.Configuration.ConfigurationManager.dll].
+              C:\Users\Intel\.nuget\packages\system.configuration.configurationmanager\4.7.0\ref\net461\System.Configura
+      tion.ConfigurationManager.dll
+                Project file item includes which caused reference "C:\Users\Intel\.nuget\packages\system.configuration.c
+      onfigurationmanager\4.7.0\ref\net461\System.Configuration.ConfigurationManager.dll".
+                  C:\Users\Intel\.nuget\packages\system.configuration.configurationmanager\4.7.0\ref\net461\System.Confi
+      guration.ConfigurationManager.dll
+          References which depend on or have been unified to "System.Configuration.ConfigurationManager, Version=6.0.0.0
+      , Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" [].
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\R
+      oblox.Data.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Data.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2
+      .0\Roblox.Data.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\bin\Debug\net471\Roblox.A
+      gents.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\bin\Debug\net471\
+      Roblox.ContentRatings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\bin\Debug\netstandar
+      d2.0\Roblox.Caching.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Caching\Roblox.Caching\bin\Debug\netstandard2.0\Roblox.Caching.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\bin\Debug\netsta
+      ndard2.0\Roblox.Caching.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2
+      .0\Roblox.Data.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debu
+      g\net471\Roblox.Platform.AssetOwnership.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\bin\Debug\net471\Roblox.A
+      gents.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\bin\Debug\net471\
+      Roblox.ContentRatings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\bin\Debug\net471\Ro
+      blox.Users.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0\Rob
+      lox.Locking.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Locking\bin\Debug\netstandard2.0\Roblox.Locking.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0
+      \Roblox.Locking.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\netst
+      andard2.0\Roblox.MssqlDatabases.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\netstandard2.0\Roblox.MssqlDatabases.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\n
+      etstandard2.0\Roblox.MssqlDatabases.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\bin\Debug\net471\Roblox.A
+      gents.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\bin\Debu
+      g\netstandard2.0\Roblox.Configuration.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Configuration\Roblox.Configuration\bin\Debug\netstandard2.0\Roblox.Configuration.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\bin\
+      Debug\netstandard2.0\Roblox.Configuration.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2
+      .0\Roblox.Data.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\bin\Debug\netsta
+      ndard2.0\Roblox.Caching.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0
+      \Roblox.Locking.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debu
+      g\net471\Roblox.Platform.AssetOwnership.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.MssqlDatabases\bin\Debug\n
+      etstandard2.0\Roblox.MssqlDatabases.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\R
+      oblox.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\bin\Debug\net471\Roblox.A
+      gents.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon\bin\Debug\net472\Roblox.A
+      mazon.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\ApiClientBase\Roblox.ApiClientBase\bin\
+      Debug\netstandard2.0\Roblox.ApiClientBase.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\bin\Debug\net471\
+      Roblox.ContentRatings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\bin\Debug\netst
+      andard2.0\Roblox.Passwords.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandar
+      d2.0\Roblox.Redis.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2
+      .0\Roblox.Redis.Lru.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\bin\Debug\netst
+      andard2.0\Roblox.ServiceDiscovery.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\bin\Debug\net471\Ro
+      blox.Users.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.WebsiteSettings\bin\Debug\ne
+      t471\Roblox.WebsiteSettings.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\
+      Roblox.Amazon.Sqs.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\Roblox.Amazon.Sqs.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\ApiClientBase\Roblox.ApiClientBase\bin\Debu
+      g\netstandard2.0\Roblox.ApiClientBase.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\ApiClientBase\Roblox.ApiClientBase\bin\Debug\netstandard2.0\Roblox.ApiClientBase.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\ApiClientBase\Roblox.ApiClientBase\bin\
+      Debug\netstandard2.0\Roblox.ApiClientBase.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0
+      \Roblox.Locking.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.NetStandard\bin\Debug\
+      netstandard2.0\Roblox.Common.NetStandard.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Common\Roblox.Common.NetStandard\bin\Debug\netstandard2.0\Roblox.Common.NetStandard.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.NetStandard\bin\De
+      bug\netstandard2.0\Roblox.Common.NetStandard.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\bin\Debug\netsta
+      ndard2.0\Roblox.Caching.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2
+      .0\Roblox.Data.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debu
+      g\net471\Roblox.Platform.AssetOwnership.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\bin\Debug\net471\R
+      oblox.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\bin\Debug\net471\Roblox.A
+      gents.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon\bin\Debug\net472\Roblox.A
+      mazon.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\bin\Debug\net471\
+      Roblox.ContentRatings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\bin\Debug\net471\Ro
+      blox.Users.Client.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\bin\Debug\netstanda
+      rd2.0\Roblox.Passwords.Client.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Passwords.Client\bin\Debug\netstandard2.0\Roblox.Passwords.Client.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\bin\Debug\netst
+      andard2.0\Roblox.Passwords.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0
+      \Roblox.Redis.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Redis\Roblox.Redis\bin\Debug\netstandard2.0\Roblox.Redis.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandar
+      d2.0\Roblox.Redis.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\bin\Debug\netsta
+      ndard2.0\Roblox.Caching.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2
+      .0\Roblox.Data.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debu
+      g\net471\Roblox.Platform.AssetOwnership.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\bin\Debug\net471\Roblox.A
+      gents.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\bin\Debug\net471\
+      Roblox.ContentRatings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2
+      .0\Roblox.Redis.Lru.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\bin\Debug\net471\Ro
+      blox.Users.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2.0\R
+      oblox.Redis.Lru.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Redis.Lru\bin\Debug\netstandard2.0\Roblox.Redis.Lru.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2
+      .0\Roblox.Redis.Lru.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\bin\Debug\netstanda
+      rd2.0\Roblox.ServiceDiscovery.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.ServiceDiscovery\bin\Debug\netstandard2.0\Roblox.ServiceDiscovery.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\bin\Debug\netst
+      andard2.0\Roblox.ServiceDiscovery.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\bin\Debug\netstandar
+      d2.0\Roblox.Redis.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\bin\Debug\netsta
+      ndard2.0\Roblox.Caching.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\bin\Debug\netstandard2
+      .0\Roblox.Data.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\bin\Debu
+      g\net471\Roblox.Platform.AssetOwnership.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\bin\Debug\netstan
+      dard2.0\Roblox.Entities.Mssql.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\bin\Debug\net471\Roblox.A
+      gents.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\bin\Debug\net471\R
+      oblox.Assets.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\bin\Debug\net471\
+      Roblox.ContentRatings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\bin\Debug\
+      net472\Roblox.Moderation.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Ownership.Client\bin\Debug\net47
+      1\Roblox.Ownership.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\bin\Debug\netstandard2
+      .0\Roblox.Redis.Lru.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Users\Roblox.Users\bin\Debug\net471\Rob
+      lox.Users.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\bin\Debug\net471\Ro
+      blox.Users.Client.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net4
+      71\Roblox.Common.Web.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\Debug
+      \netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.UserCacheMigrationSettings\bin\Debug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\bin\D
+      ebug\netstandard2.0\Roblox.UserCacheMigrationSettings.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0\Rob
+      lox.LeasedLocks.Client.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Locking\bin\Debug\netstandard2.0\Roblox.LeasedLocks.Client.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\bin\Debug\netstandard2.0
+      \Roblox.Locking.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\
+      Roblox.FloodCheckers.Redis.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard2.0\Roblox.FloodCheckers.Redis.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\bin\Debug\netstandard
+      2.0\Roblox.Amazon.Sqs.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+              C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\Robl
+      ox.Amazon.Firehose.dll
+                Project file item includes which caused reference "C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\A
+      ssemblies\Roblox.Economy.Common\bin\Debug\net471\Roblox.Amazon.Firehose.dll".
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\bin\Debug\net471\
+      Roblox.Economy.Common.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox Server Class Library\bin\Debug\n
+      et472\Roblox Server Class Library.dll
+                  C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\bin\Debug\net471\Roblox.
+      Economy.dll
+    CSC : warning CS1668: Invalid search path 'C:\Program Files\OpenSSL-Win64\lib' specified in 'LIB environment variable' -- 'directory does not exist'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures.Entities\RobuxStipendFrequencyTypeDAL.cs(32,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\RobuxCreditActivationTaskDAL.cs(111,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\AccountAddOnActivationTaskDAL.cs(111,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\AccountAddOnExpirationEmailTaskDAL.cs(91,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\AccountFeatureSetActivationTaskDAL.cs(111,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\PremiumFeatureActivationTasks_BillingTestDAL.cs(45,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\AccountFeatureSetExpirationTaskDAL.cs(111,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\GrantedAssetListActivationTask.cs(18,106): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\GrantedAssetListActivationTaskDAL.cs(111,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\PremiumFeatureActivationTaskDAL.cs(125,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\GrantedAssetListActivationTask.cs(157,4): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\GrantedAssetListActivationTask.cs(157,18): warning CS0618: 'Asset' is obsolete: 'Should use Roblox.Platform.Assets. This entity is going to be deleted.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\GrantedAssetListActivationTask.cs(157,18): warning CS0618: 'Asset.Get(long)' is obsolete: 'Should use Roblox.Platform.Assets.IAssetFactory.'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\GrantedBadgeListActivationTaskDAL.cs(111,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+    C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures\GrantedBadgeListExpirationTaskDAL.cs(111,3): warning CS0618: 'EntityHelper.DoEntityDALDelete(DbInfo)' is obsolete: 'Use the generic DoEntityDALAction instead'
+
+Build succeeded with 444 warning(s) in 11.9s
+
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures>

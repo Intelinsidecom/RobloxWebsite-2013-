@@ -1,8 +1,9 @@
+extern alias ConfMan;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
-using System.Configuration;
+using ConfMan::System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;

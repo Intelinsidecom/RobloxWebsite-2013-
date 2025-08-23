@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Permissions</AssemblyName>
@@ -8,9 +8,16 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);CS1668;1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Permissions.Client\Roblox.Permissions.Client.csproj" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.Permissions.Core">
       <HintPath>..\..\Website\bin\Roblox.Platform.Permissions.Core.dll</HintPath>
@@ -21,7 +28,7 @@
     <Reference Include="Roblox.Platform.CallContext">
       <HintPath>..\..\Website\bin\Roblox.Platform.CallContext.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Permissions.Client" />
+    
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
@@ -57,5 +64,14 @@
       <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Roblox.Moderation">
+      <HintPath>..\..\Website\bin\Roblox.Moderation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Data">
+      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

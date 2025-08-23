@@ -14,11 +14,9 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
-    <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\Mssql\Roblox.MssqlDatabases\bin\Debug\netstandard2.0\Roblox.MssqlDatabases.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Data">
-      <HintPath>..\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Data.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj" />
+    <ProjectReference Include="..\Data\Roblox.Data\Roblox.Data.csproj" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.VirtualCurrency</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.VirtualCurrency.CurrencyOperations.GetBalance(System.Int64)">
+            <inheritdoc cref="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority.GetBalance(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.CurrencyOperations.VerifyBalanceIsSufficient(System.Int64,System.Int64)">
+            <inheritdoc cref="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority.VerifyBalanceIsSufficient(System.Int64,System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.CurrencyOperations.CreditBalance(System.Int64,System.Int64,System.Nullable{System.Int64})">
+            <inheritdoc cref="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority.CreditBalance(System.Int64,System.Int64,System.Nullable{System.Int64})"/>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.CurrencyOperations.TryDebitBalance(System.Int64,System.Int64,System.Nullable{System.Int64})">
+            <inheritdoc cref="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority.TryDebitBalance(System.Int64,System.Int64,System.Nullable{System.Int64})"/>
+        </member>
+        <member name="T:Roblox.Platform.VirtualCurrency.CurrencyBudgetAuthorityFactory">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.CurrencyBudgetAuthorityFactory.#ctor(Roblox.Currency.Client.ICurrencyAuthority)">
+            <summary>
+            A constructor to initialize the <see cref="T:Roblox.Platform.VirtualCurrency.CurrencyBudgetAuthorityFactory"/>.
+            </summary>
+            <param name="defaultCurrencyAuthority">The default <see cref="T:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority"/> to return when the platformTypeId is not registered with the factory.</param>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.CurrencyBudgetAuthorityFactory.Register(System.Byte,Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.CurrencyBudgetAuthorityFactory.GetCurrencyBudgetAuthority(System.Byte)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthorityFactory">
+            <summary>
+            A factory to get the correct implementation of the <see cref="T:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority"/> for the given platform type. 
+            This returns a default <see cref="T:Roblox.Platform.VirtualCurrency.ICurrencyOperations"/> if the platformType is not registered with this factory.
+            For all platforms except Xbox, the default implementation is fine. 
+            Components that use this on XBox MUST register Xbox with the correct implementation which can be found at Roblox.Platform.XboxLive.XboxCurrencyBudgetAuthority.
+            TODO Update the above two comments if they are no longer accurate.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthorityFactory.Register(System.Byte,Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority)">
+            <summary>
+            A method to register an implementation of <see cref="T:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority"/> with the given platformTypeId.
+            </summary>
+            <param name="platformTypeId">The platformTypeId to register.</param>
+            <param name="currencyBudgetAuthority">The implementation of <see cref="T:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority"/>to register for the given platformTypeId.</param>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthorityFactory.GetCurrencyBudgetAuthority(System.Byte)">
+            <summary>
+            A method to get the <see cref="T:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority"/> for the given platformTypeId.
+            </summary>
+            <param name="platformTypeId">The platformTypeId toge the <see cref="T:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority"/> for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.RecurringTransactionFactory.CancelRecurringTransactionProfile(System.String)">
+            <summary>
+            Cancels the recurring transaction
+            NOTE : Make sure the callee of this method has the right set of permissions to cancel the transaction.
+            </summary>
+            <param name="id">Id of the recurring transaction to be cancelled.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.RecurringTransactionFactory.GetRecurringTransactionProfile(System.String)">
+            <summary>
+            Gets the recurring transaction
+            NOTE : Make sure the callee of this method has the right set of permissions to view the recurring transaction.
+            </summary>
+            <param name="id">Id of the recurring transaction to be viewed.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.VirtualCurrency.InsufficientFundsException">
+            <summary>
+            The exception thrown when an operation failed because the actor had insufficient funds.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.InsufficientFundsException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.VirtualCurrency.InsufficientFundsException"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.InsufficientFundsException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.VirtualCurrency.InsufficientFundsException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.InsufficientFundsException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.VirtualCurrency.InsufficientFundsException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="T:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority">
+            <summary>
+            A generic interface to provide currency operations for Virtual Economy independent of platform.
+            The implementation of this interface varies depending on what currency system is used by the platform it is implemented for.
+            This is necessary for walled gardens where we need to keep currency separate across platforms.
+            This interface presumes we only have once type of currency (robux) in our virtual economy. The interface should be updated if that changes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority.GetBalance(System.Int64)">
+            <summary>
+            A method to obtain the currenct balance for the given userId.
+            </summary>
+            <param name="userId">The Id of the user.</param>
+            <returns>The current balance of the user in robux.</returns>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority.VerifyBalanceIsSufficient(System.Int64,System.Int64)">
+            <summary>
+            A method to check if the the the user has at least as much balance given a certain amount.
+            </summary>
+            <param name="userId">The Id of the user.</param>
+            <param name="amount">The amount to check against.</param>
+            <returns>A boolean representing whether the user has at least as much balance as the amount.</returns>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority.CreditBalance(System.Int64,System.Int64,System.Nullable{System.Int64})">
+            <summary>
+            A method to credit a given amount of our virtual currency to given userId.
+            </summary>
+            <param name="userId">The Id of the user.</param>
+            <param name="amount">The amount to credit to the user.</param>
+            <param name="saleId">The Id of the sale for which this operation is being performed.</param>
+        </member>
+        <member name="M:Roblox.Platform.VirtualCurrency.ICurrencyBudgetAuthority.TryDebitBalance(System.Int64,System.Int64,System.Nullable{System.Int64})">
+            <summary>
+            A method to debit amount from the given user's balance.
+            </summary>
+            <param name="userId">The Id of the user.</param>
+            <param name="amount">The amount to debit from the user's balance.</param>
+            <param name="saleId">The Id of the sale for which this operation is being performed.</param>
+            <returns>Whether the amount was successfully debited from the user's balance.</returns>
+        </member>
+        <member name="T:Roblox.Platform.VirtualCurrency.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

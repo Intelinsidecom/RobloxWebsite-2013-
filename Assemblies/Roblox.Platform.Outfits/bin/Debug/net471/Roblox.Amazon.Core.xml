@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Amazon.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Amazon.Core.RobloxAwsClientType">
+            <summary>
+            Represents RobloxAws client types
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.RobloxAwsClientType.DynamoDb">
+            <summary>
+            The Dynamo database
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.RobloxAwsClientType.Firehose">
+            <summary>
+            The Kinesis Firehose
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.RobloxAwsClientType.S3">
+            <summary>
+            The S3
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.RobloxAwsClientType.CloudWatch">
+            <summary>
+            The Cloud Watch
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.RobloxAwsClientType.Sqs">
+            <summary>
+            The SQS
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.RobloxAwsClientType.Sns">
+            <summary>
+            The SNS
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.RobloxAwsClientType.Lambda">
+            <summary>
+            The Lambda
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.RobloxAwsClientType.Rekognition">
+            <summary>
+            The Rekognition
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Core.CircuitBreakerHandler">
+            <summary>
+            Wrapes invocation with circuit breaker functionality.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Core.CircuitBreakerHandler.CircuitBreakerPolicy">
+            <summary>
+            The CircuitBreaker policy which specifies when 
+            a CircuitBreaker should be performed.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.CircuitBreakerHandler.#ctor(Roblox.Sentinels.CircuitBreakerPolicy.ICircuitBreakerPolicy{Amazon.Runtime.IExecutionContext})">
+            <summary>
+            Constructor which takes in a CircuitBreaker policy.
+            </summary>
+            <param name="circuitBreakerPolicy">CircuitBreaker Policy <see cref="P:Roblox.Amazon.Core.CircuitBreakerHandler.CircuitBreakerPolicy"/></param>
+        </member>
+        <member name="M:Roblox.Amazon.Core.CircuitBreakerHandler.InvokeSync(Amazon.Runtime.IExecutionContext)">
+            <summary>
+            
+            </summary>
+            <param name="executionContext">The execution context which contains both the
+            requests and response context.</param>
+        </member>
+        <member name="M:Roblox.Amazon.Core.CircuitBreakerHandler.InvokeAsync``1(Amazon.Runtime.IExecutionContext)">
+             <summary>
+            
+             </summary>
+             <param name="executionContext">The execution context which contains both the
+             requests and response context.</param>
+        </member>
+        <member name="M:Roblox.Amazon.Core.CircuitBreakerHandler.Dispose">
+            <summary>
+            Disposes the current instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.CircuitBreakerHandler.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Roblox.Amazon.Core.DefaultTripReasonAuthority">
+            <summary>
+            AWS specific implementation of <see cref="T:Roblox.Sentinels.CircuitBreakerPolicy.ITripReasonAuthority`1"/> for <see cref="T:Roblox.Sentinels.CircuitBreakerPolicy.CircuitBreakerPolicyBase`1"/>.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.DefaultTripReasonAuthority._HttpStatusCodesToTripOn">
+            <summary>
+            List of HTTP Status codes codes which are returned as part of the error response.
+            These status codes can cause circuit break.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.DefaultTripReasonAuthority._ErrorCodesToTripOn">
+            <summary>
+            List of AWS specific error codes which are returned as part of the error response.
+            These error can cause circuit break.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.Core.DefaultTripReasonAuthority._WebExceptionStatusesToTripOn">
+            <summary>
+            List of WebExceptionStatus for a WebException which can cause circuit break.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.DefaultTripReasonAuthority.IsReasonForTrip(Amazon.Runtime.IExecutionContext,System.Exception)">
+            <inheritdoc cref="M:Roblox.Sentinels.CircuitBreakerPolicy.TripReasonAuthorityBase`1.IsReasonForTrip(`0,System.Exception)" />
+        </member>
+        <member name="T:Roblox.Amazon.Core.AwsCircuitBreakerPolicyMetricsEventHandler">
+            <summary>
+            CircuitBreakerPolicy event handler which register metrics tracking for AWS circuit breaker policies.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.AwsCircuitBreakerPolicyMetricsEventHandler.RegisterEvents(Roblox.Sentinels.CircuitBreakerPolicy.ICircuitBreakerPolicy{Amazon.Runtime.IExecutionContext},System.String,Roblox.Amazon.Core.RobloxAwsClientType)">
+            <summary>
+            Register events handlers which track metrics.
+            </summary>
+            <param name="circuitBreakerPolicy"><see cref="T:Roblox.Sentinels.CircuitBreakerPolicy.DefaultCircuitBreakerPolicy`1"/></param>
+            <param name="clientInstanceName">Client instance name</param>
+            <param name="robloxAwsClientType">AWS client type <see cref="T:Roblox.Amazon.Core.RobloxAwsClientType"/></param>
+        </member>
+        <member name="M:Roblox.Amazon.Core.CircuitBreakerPolicyPerInstancePerformanceMonitor.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Core.CircuitBreakerPolicyPerInstancePerformanceMonitor" /> class.
+            </summary>
+            <param name="categoryName">Name of the performance category.</param>
+            <param name="instanceName">Name of the client instance</param>
+            <exception cref="T:System.ArgumentException">Cannot be null, empty or whitespaces - instanceName</exception>
+        </member>
+        <member name="M:Roblox.Amazon.Core.CircuitBreakerPolicyPerInstancePerformanceMonitor.IncrementRequestsThatTripCircuitBreakerPerSecond">
+            <summary>
+            Increments the requests that trip circuit breaker (per second).
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.CircuitBreakerPolicyPerInstancePerformanceMonitor.IncrementRequestsTrippedByCircuitBreakerPerSecond">
+            <summary>
+            Increments the requests that tripped by circuit breaker (per second).
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Core.ICircuitBreakerPolicyPerformanceMonitor">
+            <summary>
+            Performance monitoring for <see cref="!:ICircuitBreakerPolicy"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.ICircuitBreakerPolicyPerformanceMonitor.IncrementRequestsThatTripCircuitBreakerPerSecond">
+            <summary>
+            Increments requests that trip circuit breaker (per second).
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.ICircuitBreakerPolicyPerformanceMonitor.IncrementRequestsTrippedByCircuitBreakerPerSecond">
+            <summary>
+            Increments the requests tripped by circuit breaker (per second).
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.Core.AsyncInvokeTimeoutHandler">
+            <summary>
+            Overrides default InvokeAsync with proper timeout implementation.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.AsyncInvokeTimeoutHandler.#ctor(Roblox.Amazon.Core.IAsyncInvokeTimeoutHandlerConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Core.AsyncInvokeTimeoutHandler" /> class.
+            </summary>
+            <param name="config">The configuration.</param>
+            <exception cref="T:System.ArgumentNullException">config</exception>
+        </member>
+        <member name="M:Roblox.Amazon.Core.AsyncInvokeTimeoutHandler.InvokeAsync``1(Amazon.Runtime.IExecutionContext)">
+            <summary>
+            Invokes handler in async way
+            </summary>
+            <param name="executionContext">The execution context which contains both the
+            requests and response context.</param>
+        </member>
+        <member name="T:Roblox.Amazon.Core.AsyncInvokeTimeoutHandlerConfig">
+            <summary>
+            <see cref="T:Roblox.Amazon.Core.AsyncInvokeTimeoutHandler"/> configuration.
+            </summary>
+            <seealso cref="T:Roblox.Amazon.Core.IAsyncInvokeTimeoutHandlerConfig" />
+        </member>
+        <member name="P:Roblox.Amazon.Core.AsyncInvokeTimeoutHandlerConfig.Timeout">
+            <summary>
+            Gets the timeout.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.Core.AsyncInvokeTimeoutHandlerConfig.#ctor(System.TimeSpan)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.Core.AsyncInvokeTimeoutHandlerConfig"/> class.
+            </summary>
+            <param name="timeout">The timeout.</param>
+        </member>
+        <member name="T:Roblox.Amazon.Core.IAsyncInvokeTimeoutHandlerConfig">
+            <summary>
+            <see cref="T:Roblox.Amazon.Core.AsyncInvokeTimeoutHandler"/> configuration.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.Core.IAsyncInvokeTimeoutHandlerConfig.Timeout">
+            <summary>
+            Gets the timeout.
+            </summary>
+        </member>
+    </members>
+</doc>

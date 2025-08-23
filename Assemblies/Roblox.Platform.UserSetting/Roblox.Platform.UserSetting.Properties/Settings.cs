@@ -1,7 +1,8 @@
+extern alias ConfMan;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
-using System.Configuration;
+using ConfMan::System.Configuration;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;

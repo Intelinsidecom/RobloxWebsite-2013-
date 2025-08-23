@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Kickbox</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Kickbox.KickboxClient">
+            <summary>
+            Kickbox Client
+            </summary>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxClient.#ctor(Roblox.Instrumentation.ICounterRegistry,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="counterRegistry">CounterRegistry Injected.</param>
+            <param name="apiName">Name of the parent service making these called. Used for logging.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxClient.#ctor(Roblox.Kickbox.IKickboxRestClient,Roblox.Kickbox.PerformanceCounters.IKickboxVerifyDomainPerformanceMonitor,Roblox.Kickbox.PerformanceCounters.IKickboxVerifyEmailPerformanceMonitor,DnsClient.ILookupClient,Roblox.Kickbox.Properties.IKickboxSettings)">
+            <summary>
+            Internal test constructor allows us to fake the restClient, performanceMonitor, and settings.
+            </summary>
+            <param name="restClient"></param>
+            <param name="verifyDomainPerformanceMonitor"></param>
+            <param name="verifyEmailPerformanceMonitor"></param>
+            <param name="lookupClient">DNS Lookup client</param>
+            <param name="settings">Settings for the Client</param>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxClient.VerifyDomain(Roblox.Kickbox.IKickboxVerifyDomainRequest)">
+            <summary>
+            Checks the domain against Kickbox's Free Domain Checker 
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxClient.IsDisposableDomainImpl(Roblox.Kickbox.IKickboxVerifyDomainRequest)">
+            <summary>
+            Checks the domain against Kickbox's Free Domain Checker 
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxClient.VerifyEmail(Roblox.Kickbox.IKickboxVerifyEmailRequest)">
+            <summary>
+            Check the validatity of an email address.
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Kickbox.IKickboxVerifyEmailRequest"/> containing the required parameters for Kickbox</param>
+            <returns>An <see cref="T:Roblox.Kickbox.IKickboxVerifyEmailResult"/> containing the results for both age categories</returns>
+            <exception cref="T:Roblox.Kickbox.KickboxException"></exception>
+        </member>
+        <member name="T:Roblox.Kickbox.KickboxVerifyEmailRequest">
+            <summary>
+            Default implementation of <see cref="T:Roblox.Kickbox.IKickboxVerifyEmailRequest"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxVerifyEmailRequest.#ctor(System.String,System.Boolean)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="email"></param>
+            <param name="allowAcceptAll">allow_all is Kickbox's soft bounce for private servers</param>
+        </member>
+        <member name="P:Roblox.Kickbox.KickboxVerifyEmailRequest.Email">
+            <summary>
+            Email that needs to get checked.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.KickboxVerifyEmailRequest.AcceptAll">
+            <summary>
+            Specifies whether to allow/deny accept_all
+            </summary>
+        </member>
+        <member name="T:Roblox.Kickbox.KickboxRestClient">
+            <summary>
+            Base client for making calls to Kickbox.
+            Provides CircuitBreaker features by default.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.KickboxRestClient.Endpoint">
+            <summary>
+            Base url for calls into Kickbox.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.KickboxRestClient.Timeout">
+            <summary>
+            Timeout for the bodyData
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.KickboxRestClient.RetryInterval">
+            <summary>
+            An override for the <see cref="!:RestClientBase.Properties.Settings.Default.DefaultCircuitBreakerRetryInterval"/> setting
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.KickboxRestClient.Name">
+            <summary>
+            Default client Name.
+            </summary>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxRestClient.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxRestClient.#ctor(Roblox.Kickbox.Properties.IKickboxSettings)">
+            <summary>
+            Special constructor. Requires settings for Endpoint, Timeout, ApiKey
+            </summary>
+            <param name="settings"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxRestClient.ExecuteHttpRequest``1(System.String,Roblox.RestClientBase.RestClientBase.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>
+            Execute the given HttpRequest against Kickbox.
+            Environment-level configurations for Kickbox are handled within.
+            </summary>
+            <typeparam name="T">Object type into which the response will be deserialized from JSON.</typeparam>
+            <param name="actionPath">Path to the API endpoint.</param>
+            <param name="method">The HttpMethod used by this call.</param>
+            <param name="queryStringParameters">List of parameters fokr the query string.</param>
+            <exception cref="T:Roblox.Sentinels.CircuitBreakerException"></exception>
+            <exception cref="T:Roblox.RestClientBase.RequestThrottledException"></exception>
+            <exception cref="T:Roblox.RestClientBase.ApiClientException"></exception>
+            <exception cref="T:Newtonsoft.Json.JsonSerializationException"></exception>
+            <returns>An object of type T containing the successful response</returns>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.invalid_email">
+            <summary>
+            Specified email is not a valid email address syntax
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.invalid_domain">
+            <summary>
+            Domain for email does not exist
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.rejected_email">
+            <summary>
+            Email address was rejected by the SMTP server, email address does not exist
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.accepted_email">
+            <summary>
+            Email address was accepted by the SMTP server
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.low_quality">
+            <summary>
+            Email address has quality issues that may make it a risky or low-value address
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.low_deliverability">
+            <summary>
+            Email address appears to be deliverable, but deliverability cannot be guaranteed
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.no_connect">
+            <summary>
+            Could not connect to SMTP server
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.timeout">
+            <summary>
+            SMTP session timed out
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.invalid_smtp">
+            <summary>
+            SMTP server returned an unexpected/invalid response
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.unavailable_smtp">
+            <summary>
+            SMTP server was unavailable to process our request
+            </summary>
+        </member>
+        <member name="F:Roblox.Kickbox.ErrorCodeType.unexpected_error">
+            <summary>
+            An unexpected error has occurred
+            </summary>
+        </member>
+        <member name="T:Roblox.Kickbox.IKickboxVerifyEmailRequest">
+            <summary>
+            Basic interface for making a request to the Kickbox Email Verification endpoint.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailRequest.Email">
+            <summary>
+            Email that needs to get checked.
+            </summary>
+        </member>
+        <member name="T:Roblox.Kickbox.IKickboxVerifyEmailResult">
+            <summary>
+            Result of an Email check request.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.Role">
+            <summary>
+            true if the email address is a role address (postmaster@example.com, support@example.com, etc)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.Free">
+            <summary>
+            true if the email address uses a free email service like gmail.com or yahoo.com
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.Disposable">
+            <summary>
+            Whether the email was identified as a disposable address.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.AcceptAll">
+            <summary>
+            true if the email was accepted, but the domain appears to accept all emails addressed to that domain
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.DidYouMean">
+            <summary>
+            Returns a suggested email if a possible spelling error was detected. (bill.lumbergh@gamil.com -> bill.lumbergh@gmail.com)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.Sendex">
+            <summary>
+            A quality score of the provided email address ranging between 0 (no quality) and 1 (perfect quality). More information on the Sendex Score can be found here
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.Email">
+            <summary>
+            Returns a normalized version of the provided email address. (BoB@example.com -> bob@example.com)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.User">
+            <summary>
+            The username part of the email address
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.Domain">
+            <summary>
+            The email address domain.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.Success">
+            <summary>
+            true if the API request was successful (i.e., no authentication or unexpected errors occurred)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.IKickboxVerifyEmailResult.Message">
+            <summary>
+            The Kickbox error description.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyDomainResponseData.Disposable">
+            <summary>
+            true if the API request was successful (i.e., no authentication or unexpected errors occurred)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Result">
+            <summary>
+            The verification result: deliverable, undeliverable, risky, unknown
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Reason">
+            <summary>
+            The reason code. The reason for the result. Possible reasons are:
+             - invalid_email - Specified email is not a valid email address syntax
+             - invalid_domain - Domain for email does not exist
+             - rejected_email - Email address was rejected by the SMTP server, email address does not exist
+             - accepted_email - Email address was accepted by the SMTP server
+             - low_quality - Email address has quality issues that may make it a risky or low-value address
+             - low_deliverability - Email address appears to be deliverable, but deliverability cannot be guaranteed
+             - no_connect - Could not connect to SMTP server
+             - timeout - SMTP session timed out
+             - invalid_smtp - SMTP server returned an unexpected/invalid response
+             - unavailable_smtp - SMTP server was unavailable to process our request
+             - unexpected_error - An unexpected error has occurred
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Role">
+            <summary>
+            true if the email address is a role address (postmaster@example.com, support@example.com, etc)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Free">
+            <summary>
+            true if the email address uses a free email service like gmail.com or yahoo.com
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Disposable">
+            <summary>
+            Whether the email was identified as a disposable address.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.AcceptAll">
+            <summary>
+            true if the email was accepted, but the domain appears to accept all emails addressed to that domain
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.DidYouMean">
+            <summary>
+            Returns a suggested email if a possible spelling error was detected. (bill.lumbergh@gamil.com -> bill.lumbergh@gmail.com)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Sendex">
+            <summary>
+            A quality score of the provided email address ranging between 0 (no quality) and 1 (perfect quality). More information on the Sendex Score can be found here
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Email">
+            <summary>
+            Returns a normalized version of the provided email address. (BoB@example.com -> bob@example.com)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.User">
+            <summary>
+            The username part of the email address
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Domain">
+            <summary>
+            The email address domain.
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Success">
+            <summary>
+            true if the API request was successful (i.e., no authentication or unexpected errors occurred)
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.VerifyEmailResponseData.Message">
+            <summary>
+            The Kickbox error description.
+            </summary>
+        </member>
+        <member name="T:Roblox.Kickbox.KickboxException">
+            <summary>
+            Wrapper for Exceptions in calls to Kickbox.
+            </summary>
+        </member>
+        <member name="M:Roblox.Kickbox.KickboxException.#ctor(System.String,System.Exception)">
+            <summary>
+            Basic constructor.
+            </summary>
+            <param name="message">Message passed back to the caller.</param>
+            <param name="innerException"><see cref="T:System.Exception" /> that triggered the exception. See here for HttpStatusCode of the failure.</param>
+        </member>
+        <member name="T:Roblox.Kickbox.IKickboxRestClient">
+            <summary>
+            Base client for making calls to Kickbox.
+            </summary>
+        </member>
+        <member name="M:Roblox.Kickbox.IKickboxRestClient.ExecuteHttpRequest``1(System.String,Roblox.RestClientBase.RestClientBase.HttpMethod,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>
+            Execute the given HttpRequest against Kickbox.
+            Environment-level configurations for Kickbox are handled within.
+            </summary>
+            <typeparam name="T">Object type into which the response will be deserialized from JSON.</typeparam>
+            <param name="actionPath">Path to the API endpoint.</param>
+            <param name="method">The HttpMethod used by this call.</param>
+            <param name="queryStringParameters">List of parameters fokr the query string.</param>
+            <returns>An object of type T containing the successful response</returns>
+            <exception cref="T:Roblox.Sentinels.CircuitBreakerException"></exception>
+            <exception cref="T:Roblox.RestClientBase.RequestThrottledException"></exception>
+            <exception cref="T:Roblox.RestClientBase.ApiClientException"></exception>
+            <exception cref="T:Newtonsoft.Json.JsonSerializationException"></exception>
+        </member>
+        <member name="T:Roblox.Kickbox.IKickboxClient">
+            <summary>
+            Defines methods for Kickbox API calls
+            </summary>
+        </member>
+        <member name="M:Roblox.Kickbox.IKickboxClient.VerifyEmail(Roblox.Kickbox.IKickboxVerifyEmailRequest)">
+            <summary>
+            Check the given email address against Kickbox
+            </summary>
+            <param name="request">The <see cref="T:Roblox.Kickbox.IKickboxVerifyEmailRequest"/> containing the required parameters for Kickbox</param>
+            <returns>An <see cref="T:Roblox.Kickbox.IKickboxVerifyEmailResult"/> containing the results for the email validity check</returns>
+            <exception cref="T:Roblox.Kickbox.KickboxException"></exception>
+        </member>
+        <member name="T:Roblox.Kickbox.Properties.IKickboxSettings">
+            <summary>
+            Interface for settins to Kickbox
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.Properties.IKickboxSettings.KickboxDisposableApiEndpoint">
+            <summary>
+            The Kickbox https endpoint
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.Properties.IKickboxSettings.KickboxDisposableApiUri">
+            <summary>
+            The URI of the endpoint
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.Properties.IKickboxSettings.KickboxUri">
+            <summary>
+            The URI if the API
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.Properties.IKickboxSettings.KickboxApiKey">
+            <summary>
+            Private API key for Kickbox
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.Properties.IKickboxSettings.KickboxCircuitBreakerRetryInterval">
+            <summary>
+            Separate circuit breaker retry interval for Kickbox
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.Properties.IKickboxSettings.KickboxClientTimeoutInterval">
+            <summary>
+            Adjustable client retry. Kickbox requests can take up to 10+ seconds
+            </summary>
+        </member>
+        <member name="P:Roblox.Kickbox.Properties.IKickboxSettings.IsDetailedKickboxErrorLoggingEnabled">
+            <summary>
+            Enable detailed error logging in Windows Event Logs
+            </summary>
+        </member>
+        <member name="T:Roblox.Kickbox.Properties.Settings">
+            <summary>
+            </summary>
+        </member>
+    </members>
+</doc>

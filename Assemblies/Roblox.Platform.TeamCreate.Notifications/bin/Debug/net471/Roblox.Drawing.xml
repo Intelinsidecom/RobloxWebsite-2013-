@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Drawing</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Drawing.AlphaDetector">
+            <summary>
+            Utility class for checking whether an image has an alpha channel in use.
+            </summary>
+        </member>
+        <member name="M:Roblox.Drawing.AlphaDetector.HasAlpha(System.Byte[],System.Boolean)">
+            <summary>
+            Returns true if an image has an alpha channel actually in use.  
+            Returns false if the image either does not have an alpha channel, 
+            or if it was saved with an alpha channel but is opaque everywhere.
+            </summary>
+        </member>
+        <member name="M:Roblox.Drawing.AlphaDetector.HasAlpha(System.IO.Stream,System.Boolean)">
+            <summary>
+            Returns true if an image has an alpha channel actually in use.  
+            Returns false if the image either does not have an alpha channel, 
+            or if it was saved with an alpha channel but is opaque everywhere.
+            </summary>
+        </member>
+        <member name="M:Roblox.Drawing.AlphaDetector.HasAlpha(System.String,System.Boolean)">
+            <summary>
+            Returns true if an image has an alpha channel actually in use.  
+            Returns false if the image either does not have an alpha channel, 
+            or if it was saved with an alpha channel but is opaque everywhere.
+            </summary>
+        </member>
+        <member name="M:Roblox.Drawing.FormatConverter.IsStreamTga(System.IO.Stream)">
+            <summary>
+            Determines whether a byte Stream constitutes TGA image data or not.
+            
+            This works by paging to the end of the stream and looking for the TGA 2.0
+            footer. If the TGA is 1.0 this method will not work, and there is no 100%
+            foolproof way of determining if the data is TGA or not.
+            </summary>
+            <param name="texture">The Image stream.</param>
+            <returns>True if the data stream contains the TGA footer tag.</returns>
+        </member>
+        <member name="M:Roblox.Drawing.FormatConverter.ConvertIncompatibleFormatToPng(System.IO.Stream)">
+            <summary>
+            Converts the incompatible format (such as TGA) to a PNG the .Net library can use.
+            </summary>
+            <param name="imageStream">The image stream.</param>
+            <returns>A new stream or null if the Stream is compatible</returns>
+            <exception cref="T:System.ArgumentNullException">imageStream</exception>
+        </member>
+        <member name="M:Roblox.Drawing.FormatConverter.TgaToPng(System.IO.Stream)">
+            <summary>
+            Converts a TGA data stream to a PNG data stream.
+            </summary>
+            <param name="imageStream">The image stream to convert.</param>
+            <returns>
+            A PNG data stream.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">imageStream</exception>
+            <exception cref="T:System.InvalidOperationException">Unrecognized image format</exception>
+        </member>
+        <member name="M:Roblox.Drawing.FormatConverter.ImageFromStream(System.IO.Stream)">
+            <summary>
+            Turns a stream into an image, making sure the stream is one .NET's image code can handle
+            </summary>
+            <param name="imageStream">The image stream.</param>
+            <returns>An image derived from the stream.</returns>
+            <exception cref="T:System.ArgumentNullException">imageStream</exception>
+        </member>
+        <member name="M:Roblox.Drawing.ImageUtil.DrawInto(System.Drawing.Image,System.Drawing.Bitmap,System.Nullable{System.Drawing.Color})">
+            <summary>
+            Draws the source image into the destination bitmap scaling it to fit.
+            It preserves the source aspect ratio, rendering in the top-middle of the destination bitmap
+            </summary>
+            <param name="srcImage"></param>
+            <param name="destBitmap"></param>
+            <param name="fillColor"> </param>
+        </member>
+        <member name="M:Roblox.Drawing.ImageUtil.AreTextureDimensionsValid(System.IO.Stream,System.Int32,System.Int32)">
+            <summary>
+            Interpreting the provided stream as an image file, check its height and width against
+            the provided upper limits. Do this without actually allocating memory to render the
+            image according to its claimed dimensions.
+            </summary>
+            <param name="texture">Stream representing an image</param>
+            <param name="heightLimit">Max height allowed</param>
+            <param name="widthLimit">Max width allowed</param>
+            <returns>true IFF image file dimensions are within (less than or equal to) provided
+            limits.</returns>
+        </member>
+        <member name="M:Roblox.Drawing.Resizer.DetermineDesiredSize(System.Int32,System.Int32,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            Determines the desired size of an image given it's current size and an edge size.
+            </summary>
+            <param name="sourceWidth">Width of the source.</param>
+            <param name="sourceHeight">Height of the source.</param>
+            <param name="maxEdgeSize">Maximum size of the edge.</param>
+            <param name="desiredWidth">Width desired.</param>
+            <param name="desiredHeight">Height desired.</param>
+        </member>
+        <member name="M:Roblox.Drawing.Resizer.GetImageDimensionsFromStream(System.IO.Stream,System.Int32@,System.Int32@)">
+            <summary>
+            Gets the image dimensions from stream.
+            </summary>
+            <param name="imageStream">The image stream.</param>
+            <param name="width">The width returned.</param>
+            <param name="height">The height returned.</param>
+            <exception cref="T:System.ArgumentNullException">imageStream</exception>
+        </member>
+        <member name="M:Roblox.Drawing.Resizer.EnforceMaxEdgeSize(System.IO.Stream,System.Int32)">
+            <summary>
+            Enforces the maximum size of an edge.
+            </summary>
+            <param name="texture">The texture.</param>
+            <param name="maxEdgeSize">Maximum size of the edge.</param>
+            <returns>
+            The edged image Stream
+            </returns>
+            <exception cref="T:System.ArgumentNullException">imageStream</exception>
+            <exception cref="T:System.InvalidOperationException">Unrecognized image format</exception>
+        </member>
+        <member name="M:Roblox.Drawing.Utilities.ParseImageFormat(System.String)">
+            <summary>
+            parses string representation of format (such as Bmp, Jpeg, Png, etc...) into actual ImageFormat
+            </summary>
+            <param name="format">a string representation of format, such as: Bmp, Jpeg, Png, etc...</param>
+            <returns>ImageFormat</returns>
+            <see cref="T:System.Drawing.Imaging.ImageFormat"/>
+        </member>
+        <member name="M:Roblox.Drawing.Utilities.TryParseImageFormat(System.String,System.Drawing.Imaging.ImageFormat@)">
+            <summary>
+            Tries to parse a string representation of format (such as Bmp, Jpeg, Png, etc...) into the actual ImageFormat
+            </summary>
+            <param name="format">A string representation of format, such as: Bmp, Jpeg, Png, etc...</param>
+            <param name="parsedFormat">Parsed ImageFormat</param>
+            <returns>bool representing whether the parsing was successful</returns>
+        </member>
+        <member name="T:Roblox.Drawing.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

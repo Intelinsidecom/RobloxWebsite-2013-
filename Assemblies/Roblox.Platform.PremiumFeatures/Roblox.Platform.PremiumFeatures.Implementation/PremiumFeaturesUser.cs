@@ -1,3 +1,4 @@
+using System;
 using Roblox.Billing.Client;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
@@ -31,9 +32,12 @@ public class PremiumFeaturesUser : IPremiumFeaturesUser
 	/// <param name="userFactory"></param>
 	public PremiumFeaturesUser(IPremiumFeaturesClient premiumFeaturesClient, IBillingClient billingClient, IUserFactory userFactory)
 	{
-		PremiumFeaturesClient = premiumFeaturesClient.AssignOrThrowIfNull<IPremiumFeaturesClient>("premiumFeaturesClient");
-		BillingClient = billingClient.AssignOrThrowIfNull<IBillingClient>("billingClient");
-		UserFactory = userFactory.AssignOrThrowIfNull("userFactory");
+		if (premiumFeaturesClient == null) throw new ArgumentNullException("premiumFeaturesClient");
+		if (billingClient == null) throw new ArgumentNullException("billingClient");
+		if (userFactory == null) throw new ArgumentNullException("userFactory");
+		PremiumFeaturesClient = premiumFeaturesClient;
+		BillingClient = billingClient;
+		UserFactory = userFactory;
 	}
 
 	/// <inheritdoc />

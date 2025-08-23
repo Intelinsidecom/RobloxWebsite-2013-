@@ -247,7 +247,8 @@ public abstract class RestClientBase
 	protected void ThrowConvertedException(WebException ex, string actionPath, HttpStatusCode? statusCode, string statusDescription)
 	{
 		string message = string.Format("ApiClient {0} exception:\r\nUrl = {1}\r\nStatusCode = {2}\r\nStatusDescription = {3}\r\n", Name, Endpoint + actionPath, statusCode.HasValue ? statusCode.Value.ToString() : "StatusCodeNotAvailable", statusDescription);
-		if ((statusCode.HasValue && statusCode.Value == HttpStatusCode.TooManyRequests) || ex.Message.Contains("ProvisionedThroughputExceeded"))
+		// Use numeric 429 to avoid requiring HttpStatusCode.TooManyRequests on older target frameworks
+		if ((statusCode.HasValue && (int)statusCode.Value == 429) || ex.Message.Contains("ProvisionedThroughputExceeded"))
 		{
 			throw new RequestThrottledException(Name, message, ex, statusCode, statusDescription);
 		}

@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Diagnostics</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Diagnostics.CannotUpdateContainerException">
+            <summary>
+            An exception thrown from <see cref="!:ICounterBuilder.SetContainer"/>
+            when counters have already been added before calling.
+            </summary>
+        </member>
+        <member name="T:Roblox.Diagnostics.ContainerNotSetException">
+            <summary>
+            An exception thrown when trying to add counters with <see cref="T:Roblox.Diagnostics.ICounterBuilder"/>
+            when the container has not yet been set.
+            </summary>
+        </member>
+        <member name="T:Roblox.Diagnostics.CounterDescriptor">
+            <summary>
+            A descriptor for creating counters.
+            </summary>
+        </member>
+        <member name="P:Roblox.Diagnostics.CounterDescriptor.Setter">
+            <summary>
+            The function that returns the performance counter once it's created.
+            </summary>
+        </member>
+        <member name="P:Roblox.Diagnostics.CounterDescriptor.CounterCreationData">
+            <summary>
+            The <see cref="P:Roblox.Diagnostics.CounterDescriptor.CounterCreationData"/> to create the counter with.
+            </summary>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterDescriptor.#ctor(System.String,System.Action{System.Diagnostics.PerformanceCounter},System.Diagnostics.PerformanceCounterType,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Diagnostics.CounterDescriptor"/>
+            </summary>
+            <param name="counterName">The <see cref="P:System.Diagnostics.CounterCreationData.CounterName"/>.</param>
+            <param name="setter">The <see cref="P:Roblox.Diagnostics.CounterDescriptor.Setter"/></param>
+            <param name="counterType">The <see cref="P:System.Diagnostics.CounterCreationData.CounterType"/>.</param>
+            <param name="counterHelp">The <see cref="P:System.Diagnostics.CounterCreationData.CounterHelp"/>.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterDescriptor.#ctor(System.String,System.Object,System.Diagnostics.PerformanceCounterType,System.Type,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Diagnostics.CounterDescriptor"/>
+            </summary>
+            <param name="counterName">The <see cref="P:System.Diagnostics.CounterCreationData.CounterName"/>.</param>
+            <param name="container">The container for the <see cref="P:Roblox.Diagnostics.CounterDescriptor.Setter"/>.</param>
+            <param name="counterType">The <see cref="P:System.Diagnostics.CounterCreationData.CounterType"/>.</param>
+            <param name="containerType">The type of <paramref name="container"/>.</param>
+            <param name="counterHelp">The <see cref="P:System.Diagnostics.CounterCreationData.CounterHelp"/>.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterDescriptor.#ctor(System.Linq.Expressions.Expression{System.Func{System.Object}},System.Action{System.Diagnostics.PerformanceCounter},System.Diagnostics.PerformanceCounterType,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Diagnostics.CounterDescriptor"/>
+            </summary>
+            <param name="nameExpression">The <see cref="T:System.Linq.Expressions.Expression"/> that gets the <see cref="P:System.Diagnostics.CounterCreationData.CounterName"/>.</param>
+            <param name="setter">The <see cref="P:Roblox.Diagnostics.CounterDescriptor.Setter"/></param>
+            <param name="counterType">The <see cref="P:System.Diagnostics.CounterCreationData.CounterType"/>.</param>
+            <param name="counterHelp">The <see cref="P:System.Diagnostics.CounterCreationData.CounterHelp"/>.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterDescriptor.#ctor(System.Linq.Expressions.Expression{System.Func{System.Object}},System.Object,System.Diagnostics.PerformanceCounterType,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Diagnostics.CounterDescriptor"/>
+            </summary>
+            <param name="nameExpression">The <see cref="T:System.Linq.Expressions.Expression"/> that gets the <see cref="P:System.Diagnostics.CounterCreationData.CounterName"/>.</param>
+            <param name="container">The container for the <see cref="P:Roblox.Diagnostics.CounterDescriptor.Setter"/>.</param>
+            <param name="counterType">The <see cref="P:System.Diagnostics.CounterCreationData.CounterType"/>.</param>
+            <param name="counterHelp">The <see cref="P:System.Diagnostics.CounterCreationData.CounterHelp"/>.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterDescriptor.#ctor(System.String,System.Object,System.Diagnostics.PerformanceCounterType,System.String)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Diagnostics.CounterDescriptor"/>
+            </summary>
+            <param name="counterName">The <see cref="P:System.Diagnostics.CounterCreationData.CounterName"/>.</param>
+            <param name="container">The container for the <see cref="P:Roblox.Diagnostics.CounterDescriptor.Setter"/>.</param>
+            <param name="counterType">The <see cref="P:System.Diagnostics.CounterCreationData.CounterType"/>.</param>
+            <param name="counterHelp">The <see cref="P:System.Diagnostics.CounterCreationData.CounterHelp"/>.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Diagnostics.CounterHelpers.GetSetter``1(System.String,System.Object,System.Type)" -->
+        <member name="T:Roblox.Diagnostics.ICounterBuilder">
+            <summary>
+            A class to build performance counters
+            </summary>
+            <remarks>
+            How to use this:
+            Any class created will, at runtime, call this to make sure the local machine counter setup is done.
+            In code: Create a CounterBuilder.
+            Use the public methods to create percentileValue counters, averageValue counters, and regular counters.
+            Then call .Create();
+            If you include instanceName it will be multi-instance.
+            </remarks>
+        </member>
+        <member name="P:Roblox.Diagnostics.ICounterBuilder.Container">
+            <summary>
+            The class the performance counter properties live in.
+            </summary>
+            <remarks>
+            This must be set before adding any counters.
+            </remarks>
+            <exception cref="T:Roblox.Diagnostics.CannotUpdateContainerException">Attempt to set when counters have already started being added.</exception>
+        </member>
+        <member name="M:Roblox.Diagnostics.ICounterBuilder.AddPercentileCounter(System.Linq.Expressions.Expression{System.Func{Roblox.Diagnostics.IPercentileValueCounter}})">
+            <summary>
+            Call this like: AddPercentileCounter(() => your object of class PercentileValueCounter)
+            A PercentileCounter will be assigned to your object.
+            </summary>
+            <param name="expression">The expression used to initialize the counter after <see cref="M:Roblox.Diagnostics.ICounterBuilder.Create"/> is called.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.ICounterBuilder.AddPercentileCounter(System.String,System.Action{Roblox.Diagnostics.IPercentileValueCounter})">
+            <summary>
+            Adds percentile counter with given name
+            </summary>
+            <param name="counterName">The counter name.</param>
+            <param name="onCreatedFunc">The function that returns the counter after <see cref="M:Roblox.Diagnostics.ICounterBuilder.Create"/> is called.</param>
+            <exception cref="T:Roblox.Diagnostics.ContainerNotSetException"><see cref="P:Roblox.Diagnostics.ICounterBuilder.Container"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Diagnostics.ICounterBuilder.AddAverageCounter(System.Linq.Expressions.Expression{System.Func{Roblox.Diagnostics.IAverageValueCounter}})">
+            <summary>
+            Call this like: AddAverageCounter(() => your object of class AverageValueCounter)
+            An internal auto-updating counter will be created, started, and assigned to your counter.
+            </summary>
+            <param name="expression">The expression used to initialize the counter after <see cref="M:Roblox.Diagnostics.ICounterBuilder.Create"/> is called.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.ICounterBuilder.AddAverageCounter(System.String,System.Action{Roblox.Diagnostics.IAverageValueCounter})">
+            <summary>
+            Adds average counter with given name
+            </summary>
+            <param name="counterName">The counter name.</param>
+            <param name="onCreatedFunc">The function that returns the counter after <see cref="M:Roblox.Diagnostics.ICounterBuilder.Create"/> is called.</param>
+            <exception cref="T:Roblox.Diagnostics.ContainerNotSetException"><see cref="P:Roblox.Diagnostics.ICounterBuilder.Container"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Diagnostics.ICounterBuilder.AddRateOfCountsPerSecond32Counter(System.String,System.Action{Roblox.Diagnostics.IPerformanceCounter})">
+            <summary>
+            Adds a counters per second counter to the builder.
+            </summary>
+            <remarks>
+            This is the counter to use to track increments per second.
+            </remarks>
+            <param name="counterName">The counter name.</param>
+            <param name="onCreatedFunc">The function that returns the counter after <see cref="M:Roblox.Diagnostics.ICounterBuilder.Create"/> is called.</param>
+            <exception cref="T:Roblox.Diagnostics.ContainerNotSetException"><see cref="P:Roblox.Diagnostics.ICounterBuilder.Container"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Diagnostics.ICounterBuilder.AddCounter(System.Linq.Expressions.Expression{System.Func{System.Diagnostics.PerformanceCounter}},System.Diagnostics.PerformanceCounterType)">
+            <summary>
+            Call this like: AddCounter(() => PerformanceCounter)
+            The CounterBuilder will create the counters and assign them to what you send in.
+            </summary>
+            <param name="expression">The expression used to initialize the counter after <see cref="M:Roblox.Diagnostics.ICounterBuilder.Create"/> is called.</param>
+            <param name="counterType">The type of the counter.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.ICounterBuilder.AddCounter(System.String,System.Action{Roblox.Diagnostics.IPerformanceCounter},System.Diagnostics.PerformanceCounterType)">
+            <summary>
+            Adds counter with given name.
+            </summary>
+            <param name="counterName">The counter name.</param>
+            <param name="onCreatedFunc">The function that returns the counter after <see cref="M:Roblox.Diagnostics.ICounterBuilder.Create"/> is called.</param>
+            <param name="counterType">The type of the counter.</param>
+            <exception cref="T:Roblox.Diagnostics.ContainerNotSetException"><see cref="P:Roblox.Diagnostics.ICounterBuilder.Container"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Diagnostics.ICounterBuilder.Create">
+            <summary>
+            Creates the performance counters that were added.
+            </summary>
+        </member>
+        <member name="T:Roblox.Diagnostics.IPerformanceCounter">
+            <summary>
+            A performance counter
+            </summary>
+        </member>
+        <member name="P:Roblox.Diagnostics.IPerformanceCounter.Value">
+            <summary>
+            The current value
+            </summary>
+        </member>
+        <member name="M:Roblox.Diagnostics.IPerformanceCounter.Increment">
+            <summary>
+            Increments <see cref="P:Roblox.Diagnostics.IPerformanceCounter.Value"/> by 1
+            </summary>
+        </member>
+        <member name="M:Roblox.Diagnostics.IPerformanceCounter.IncrementBy(System.Int64)">
+            <summary>
+            Increments <see cref="P:Roblox.Diagnostics.IPerformanceCounter.Value"/> by <paramref name="value"/>
+            </summary>
+            <param name="value">The delta to increment by.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.IPerformanceCounter.Reset">
+            <summary>
+            Resets <see cref="P:Roblox.Diagnostics.IPerformanceCounter.Value"/> back to default (0.)
+            </summary>
+        </member>
+        <member name="T:Roblox.Diagnostics.CounterBuilder">
+            <inheritdoc cref="T:Roblox.Diagnostics.ICounterBuilder"/>
+        </member>
+        <member name="P:Roblox.Diagnostics.CounterBuilder.Container">
+            <inheritdoc cref="P:Roblox.Diagnostics.ICounterBuilder.Container"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.#ctor(System.String,System.String,System.TimeSpan,System.Object,System.Collections.Generic.HashSet{System.Int32})">
+            <summary>
+            This is the constructor for the multi-instance counters.
+            </summary>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.#ctor(System.String,System.TimeSpan,System.Object,System.Collections.Generic.HashSet{System.Int32})">
+            <summary>
+            This is the constructor for the single instance counters.
+            </summary>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.#ctor(System.String,System.Object,System.Func{System.TimeSpan},System.String,System.Collections.Generic.HashSet{System.Int32})">
+            <summary>
+            Initializes a <see cref="T:Roblox.Diagnostics.CounterBuilder"/>
+            </summary>
+            <remarks>
+            Arguments that are null will go to their defaults with the exceptions of:
+            <paramref name="performanceCounterCategory"/>: This argument is required.
+            <paramref name="instanceName"/>: If this is null the category type becomes <see cref="F:System.Diagnostics.PerformanceCounterCategoryType.SingleInstance"/>
+            </remarks>
+            <param name="performanceCounterCategory">The performance counter category.</param>
+            <param name="container">The container for the performance counters being created. If this is not specified or is null <see cref="!:SetContainer"/> must be called separately.</param>
+            <param name="updateInterval">The update interval to be used for <see cref="T:Roblox.Diagnostics.IAverageValueCounter"/>s.</param>
+            <param name="instanceName">The instance name for multi instance counters. If not provided counter category type is <see cref="F:System.Diagnostics.PerformanceCounterCategoryType.SingleInstance"/>.</param>
+            <param name="percentiles">A hashset of percentiles for <see cref="T:Roblox.Diagnostics.IPercentileValueCounter"/>s.</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.AddPercentileCounter(System.Linq.Expressions.Expression{System.Func{Roblox.Diagnostics.IPercentileValueCounter}})">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.AddPercentileCounter(System.Linq.Expressions.Expression{System.Func{Roblox.Diagnostics.IPercentileValueCounter}})"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.AddPercentileCounter(System.String,System.Action{Roblox.Diagnostics.IPercentileValueCounter})">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.AddPercentileCounter(System.String,System.Action{Roblox.Diagnostics.IPercentileValueCounter})"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.AddAverageCounter(System.Linq.Expressions.Expression{System.Func{Roblox.Diagnostics.IAverageValueCounter}})">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.AddAverageCounter(System.Linq.Expressions.Expression{System.Func{Roblox.Diagnostics.IAverageValueCounter}})"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.AddAverageCounter(System.String,System.Action{Roblox.Diagnostics.IAverageValueCounter})">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.AddAverageCounter(System.String,System.Action{Roblox.Diagnostics.IAverageValueCounter})"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.AddRateOfCountsPerSecond32Counter(System.Linq.Expressions.Expression{System.Func{System.Diagnostics.PerformanceCounter}})">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.AddRateOfCountsPerSecond32Counter(System.Linq.Expressions.Expression{System.Func{System.Diagnostics.PerformanceCounter}})"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.AddRateOfCountsPerSecond32Counter(System.String,System.Action{Roblox.Diagnostics.IPerformanceCounter})">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.AddRateOfCountsPerSecond32Counter(System.String,System.Action{Roblox.Diagnostics.IPerformanceCounter})"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.AddCounter(System.Linq.Expressions.Expression{System.Func{System.Diagnostics.PerformanceCounter}},System.Diagnostics.PerformanceCounterType)">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.AddCounter(System.Linq.Expressions.Expression{System.Func{System.Diagnostics.PerformanceCounter}},System.Diagnostics.PerformanceCounterType)"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.AddCounter(System.String,System.Action{Roblox.Diagnostics.IPerformanceCounter},System.Diagnostics.PerformanceCounterType)">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.AddCounter(System.String,System.Action{Roblox.Diagnostics.IPerformanceCounter},System.Diagnostics.PerformanceCounterType)"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.CounterBuilder.Create">
+            <inheritdoc cref="M:Roblox.Diagnostics.ICounterBuilder.Create"/>
+        </member>
+        <member name="T:Roblox.Diagnostics.PerformanceCounterWrapper">
+            <summary>
+            An implementation of <see cref="T:Roblox.Diagnostics.IPerformanceCounter"/> that wraps <see cref="T:System.Diagnostics.PerformanceCounter"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Diagnostics.PerformanceCounterWrapper.Value">
+            <inheritdoc cref="P:Roblox.Diagnostics.IPerformanceCounter.Value"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.PerformanceCounterWrapper.#ctor(System.Diagnostics.PerformanceCounter)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Diagnostics.PerformanceCounterWrapper"/>
+            </summary>
+            <param name="performanceCounter">The <see cref="T:System.Diagnostics.PerformanceCounter"/></param>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="M:Roblox.Diagnostics.PerformanceCounterWrapper.Increment">
+            <inheritdoc cref="M:Roblox.Diagnostics.IPerformanceCounter.Increment"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.PerformanceCounterWrapper.IncrementBy(System.Int64)">
+            <inheritdoc cref="M:Roblox.Diagnostics.IPerformanceCounter.IncrementBy(System.Int64)"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.PerformanceCounterWrapper.Reset">
+            <inheritdoc cref="M:Roblox.Diagnostics.IPerformanceCounter.Reset"/>
+        </member>
+        <member name="M:Roblox.Diagnostics.PerformanceCounterWrapper.Dispose">
+            <inheritdoc cref="M:System.IDisposable.Dispose"/>
+        </member>
+        <member name="F:Roblox.Diagnostics.CounterCategory.IsAutoUpdateEnabled">
+            <summary>
+            Automatically regenerates the performance category if any
+            any of the counters have changed. You may need to restart
+            the WMI service afterwards
+            </summary>
+        </member>
+        <member name="T:Roblox.Diagnostics.PerfCounters">
+            <summary>
+            Use this class to initialize performance counter fields declared on your class.
+            For this to work, you must decorate your class with a CounterCategory attribute
+            and decoreate each PerformanceCounter field with a Counter attribute. The fields can be
+            public or non-public. They fields may be readonly.
+            </summary>
+        </member>
+        <member name="M:Roblox.Diagnostics.PerfCounters.Initialize(System.Object)">
+            <summary>
+            Use this function to initialize a SingleInstance set of PerformanceCounters
+            </summary>
+            <param name="obj">The object that is decorated with Counter attributes</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.PerfCounters.Initialize(System.Object,System.String)">
+            <summary>
+            Use this function to initialize a MultiInstance set of PerformanceCounters
+            </summary>
+            <param name="obj">The object that is decorated with Counter attributes</param>
+            <param name="instanceName">The name of the counter (for multi-instance counters)</param>
+        </member>
+        <member name="M:Roblox.Diagnostics.ISimpleCounterCategory.IncrementTotal(System.String)">
+            <summary>
+            Increment the Total instance for the specified counter
+            </summary>
+            <param name="counterName"></param>
+        </member>
+        <member name="M:Roblox.Diagnostics.ISimpleCounterCategory.IncrementInstance(System.String,System.String)">
+            <summary>
+            Increments the specified instance (or creates it if it doesn't exist) for the specifed counter
+            </summary>
+            <param name="counterName"></param>
+            <param name="instanceName"></param>
+        </member>
+        <member name="M:Roblox.Diagnostics.ISimpleCounterCategory.IncrementTotalAndInstance(System.String,System.String)">
+            <summary>
+            Increments both the Total instance and the specified instance for the specified counter. 
+            Equivalent to calling both IncrementTotal and IncrementInstance
+            </summary>
+            <param name="counterName"></param>
+            <param name="instanceName"></param>
+        </member>
+    </members>
+</doc>

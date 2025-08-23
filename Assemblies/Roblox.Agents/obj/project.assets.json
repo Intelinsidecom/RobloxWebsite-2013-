@@ -129,6 +129,16 @@
             "rid": "win"
           }
         }
+      },
+      "Roblox.Http.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Http.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Http.Client.dll": {}
+        }
       }
     }
   },
@@ -706,11 +716,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Roblox.Http.Client/1.0.0": {
+      "type": "project",
+      "path": "../Roblox.Http.Client/Roblox.Http.Client.csproj",
+      "msbuildProject": "../Roblox.Http.Client/Roblox.Http.Client.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.1": [
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.3",
+      "Roblox.Http.Client >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 4.7.0",
       "System.Data.SqlClient >= 4.9.0"
     ]
@@ -747,7 +763,11 @@
       "frameworks": {
         "net471": {
           "targetAlias": "net471",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Http.Client\\Roblox.Http.Client.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Http.Client\\Roblox.Http.Client.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -3,13 +3,15 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using Roblox.Instrumentation;
 using Roblox.Mssql;
 using Roblox.MssqlDatabases.Properties;
+
+#nullable enable annotations
+#pragma warning disable 0618
 
 namespace Roblox.MssqlDatabases;
 
@@ -134,3 +136,5 @@ public static class Extensions
 		return new DatabaseObserver(database, StaticCounterRegistry.Instance);
 	}
 }
+
+#pragma warning restore 0618

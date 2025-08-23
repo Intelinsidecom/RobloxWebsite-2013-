@@ -13,6 +13,9 @@
     <RootNamespace />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Stubs\**\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Roblox.Thumbs.AssetImage.js" />
     <None Remove="Roblox.Thumbs.AvatarImage.js" />
     <None Remove="Roblox.Thumbs.Image.js" />
@@ -21,7 +24,6 @@
     <EmbeddedResource Include="Roblox.Thumbs.Image.js" LogicalName="Roblox.Thumbs.Image.js" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Web.Extensions" />
@@ -41,7 +43,6 @@
       <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.Thumbnails.Client" />
     <Reference Include="Roblox.Platform.Universes">
       <HintPath>..\..\Website\bin\Roblox.Platform.Universes.dll</HintPath>
     </Reference>
@@ -69,7 +70,6 @@
     <Reference Include="Roblox.Amazon.Sqs">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Sqs.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.SQS" />
     <Reference Include="Roblox.Platform.AudioRightsManagement">
       <HintPath>..\..\Website\bin\Roblox.Platform.AudioRightsManagement.dll</HintPath>
     </Reference>
@@ -100,12 +100,28 @@
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
     <Reference Include="Roblox.Common">
       <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Thumbnails">
       <HintPath>..\..\Website\bin\Roblox.Web.Thumbnails.dll</HintPath>
     </Reference>
+    <Reference Include="Roblox.Data">
+      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Moderation">
+      <HintPath>..\..\Website\bin\Roblox.Moderation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SQS" Version="3.7.200.10" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Thumbnails.Client\Roblox.Thumbnails.Client.csproj" />
+    <ProjectReference Include="..\AjaxControlToolkit\AjaxControlToolkit.csproj" />
   </ItemGroup>
 </Project>

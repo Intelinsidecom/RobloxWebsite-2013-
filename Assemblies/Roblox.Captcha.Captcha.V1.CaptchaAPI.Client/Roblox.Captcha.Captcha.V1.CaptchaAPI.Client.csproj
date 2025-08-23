@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Captcha.Captcha.V1.CaptchaAPI.Client</AssemblyName>
+    <TargetFramework>net471</TargetFramework>
+    <LangVersion>11.0</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Grpc.Core.Api" Version="2.46.6" />
+  </ItemGroup>
+</Project>

@@ -244,7 +244,7 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 				UserId = userId,
 				ExclusiveStartInfo = exclusiveStartKeyInfo
 			};
-			return (IReadOnlyCollection<IFollowing>)(object)base.Client.GetFollowersEnumerative(request).Followings.Select(Translate).ToArray();
+			return base.Client.GetFollowersEnumerative(request).Followings.Select(Translate).ToArray();
 		}
 		catch (FriendsClientException val)
 		{
@@ -281,7 +281,7 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 				FollowerUserId = userId,
 				ExclusiveStartInfo = exclusiveStartKeyInfo
 			};
-			return (IReadOnlyCollection<IFollowing>)(object)base.Client.GetFollowingsEnumerative(request).Followings.Select(Translate).ToArray();
+			return base.Client.GetFollowingsEnumerative(request).Followings.Select(Translate).ToArray();
 		}
 		catch (FriendsClientException val)
 		{
@@ -639,7 +639,7 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 				UserId = userId,
 				ExclusiveStartInfo = exclusiveStartKeyInfo
 			};
-			return (IReadOnlyCollection<IFriendRequest>)(object)base.Client.GetFriendRequestsEnumerative(request)?.Select(Translate).ToArray();
+			return base.Client.GetFriendRequestsEnumerative(request)?.Select(Translate).ToArray();
 		}
 		catch (FriendsClientException val)
 		{
@@ -712,7 +712,7 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 		try
 		{
 			FriendshipOriginSourceType val = (FriendshipOriginSourceType)3;
-			if (!((object)(FriendshipOriginSourceType)(ref val)).Equals((object)senderFriendshipOriginSourceType))
+			if (!val.Equals(senderFriendshipOriginSourceType))
 			{
 				return false;
 			}
@@ -720,9 +720,9 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 			{
 				return false;
 			}
-			FriendRequest friendRequest = base.Client.GetFriendRequest((long?)null, (long?)recipientId, (long?)senderUserId);
+			var friendRequest = base.Client.GetFriendRequest((long?)null, (long?)recipientId, (long?)senderUserId);
 			FriendRequestOriginSourceResponse friendRequestSource = base.Client.GetFriendRequestOriginSource(friendRequest.Id);
-			if (!((object)(FriendshipOriginSourceType)(ref senderFriendshipOriginSourceType)).Equals((object)friendRequestSource.FriendshipOriginSourceType))
+			if (!senderFriendshipOriginSourceType.Equals(friendRequestSource.FriendshipOriginSourceType))
 			{
 				return false;
 			}
@@ -924,7 +924,7 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 		}
 		try
 		{
-			return base.Client.GetAllFriends(userId).Any((Friend f) => f.UserId == friendId);
+			return base.Client.GetAllFriends(userId).Any(f => f.UserId == friendId);
 		}
 		catch (FriendsClientException val)
 		{
@@ -1014,11 +1014,11 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 	private IDictionary<long, int> BuildTopFriendsInteractionDimension(IUser user)
 	{
 		Dictionary<long, int> dimension = new Dictionary<long, int>();
-		foreach (Friend topFriendship in base.Client.GetAllFriends(user.Id).Take(DesiredResultsUserIdsOfInterest))
-		{
-			dimension[topFriendship.UserId] = (int)InteractionBiasTopFriendship;
-		}
-		return dimension;
+		        foreach (Roblox.Friends.Client.Friend topFriendship in base.Client.GetAllFriends(user.Id).Take(DesiredResultsUserIdsOfInterest))
+        {
+            dimension[topFriendship.UserId] = (int)InteractionBiasTopFriendship;
+        }
+        return dimension;
 	}
 
 	/// <summary>
@@ -1065,76 +1065,77 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 		return dimension;
 	}
 
-	private static IFollowing Translate(Following following)
-	{
-		if (following != null)
-		{
-			return new Following
-			{
-				Id = following.Id,
-				UserId = following.UserId,
-				FollowerUserId = following.FollowerUserId,
-				FollowerSince = following.Created
-			};
-		}
-		return null;
-	}
+	private static IFollowing Translate(Roblox.Friends.Client.Following following)
+    {
+        if (following != null)
+        {
+            return new Following
+            {
+                Id = following.Id,
+                UserId = following.UserId,
+                FollowerUserId = following.FollowerUserId,
+                FollowerSince = following.Created
+            };
+        }
+        return null;
+    }
 
-	private static IReadOnlyCollection<IFollowingDetails> Translate(IReadOnlyCollection<FollowingDetails> followingDetails)
-	{
-		List<FollowingDetails> list = new List<FollowingDetails>(followingDetails.Count);
-		list.AddRange(followingDetails.Select((FollowingDetails followingDetail) => new FollowingDetails(followingDetail.UserId1, followingDetail.UserId2, followingDetail.User1FollowsUser2, followingDetail.User2FollowsUser1)));
-		return list;
-	}
+    private static IReadOnlyCollection<IFollowingDetails> Translate(IReadOnlyCollection<Roblox.Friends.Client.FollowingDetails> followingDetails)
+    {
+        List<IFollowingDetails> list = new List<IFollowingDetails>(followingDetails.Count);
+        list.AddRange(followingDetails.Select((Roblox.Friends.Client.FollowingDetails followingDetail) => new FollowingDetails(followingDetail.UserId1, followingDetail.UserId2, followingDetail.User1FollowsUser2, followingDetail.User2FollowsUser1)));
+        return list;
+    }
 
-	private static IReadOnlyCollection<IFollowing> Translate(IEnumerable<Following> followings)
-	{
-		return followings?.Select(Translate).ToList();
-	}
+    private static IReadOnlyCollection<IFollowing> Translate(IEnumerable<Roblox.Friends.Client.Following> followings)
+    {
+        return followings?.Select(Translate).ToList();
+    }
 
-	private static IFriend Translate(Friend friend)
-	{
-		if (friend != null)
-		{
-			return new Friend
-			{
-				FriendsSince = friend.FriendsSince,
-				UserId = friend.UserId
-			};
-		}
-		return null;
-	}
+    private static IFriend Translate(Roblox.Friends.Client.Friend friend)
+    {
+        if (friend != null)
+        {
+            return new Friend
+            {
+                FriendsSince = friend.FriendsSince,
+                UserId = friend.UserId
+            };
+        }
+        return null;
+    }
 
-	private static IReadOnlyCollection<IFriend> Translate(IEnumerable<Friend> friends)
-	{
-		return friends?.Select(Translate).ToList();
-	}
+    private static IReadOnlyCollection<IFriend> Translate(IEnumerable<Roblox.Friends.Client.Friend> friends)
+    {
+        return friends?.Select(Translate).ToList();
+    }
 
-	private static IFriendRequest Translate(FriendRequest friendRequest)
-	{
-		if (friendRequest == null)
-		{
-			return null;
-		}
-		return new FriendRequest
-		{
-			Body = friendRequest.Body,
-			Id = friendRequest.Id,
-			RecipientId = friendRequest.RecipientId,
-			SenderId = friendRequest.SenderId,
-			SentAt = friendRequest.SentAt,
-			Subject = friendRequest.Subject,
-			IsAccepted = friendRequest.IsAccepted
-		};
-	}
+    private static IFriendRequest Translate(Roblox.Friends.Client.FriendRequest friendRequest)
+    {
+        if (friendRequest == null)
+        {
+            return null;
+        }
+        return new FriendRequest
+        {
+            Body = friendRequest.Body,
+            Id = friendRequest.Id,
+            RecipientId = friendRequest.RecipientId,
+            SenderId = friendRequest.SenderId,
+            SentAt = friendRequest.SentAt,
+            Subject = friendRequest.Subject,
+            IsAccepted = friendRequest.IsAccepted
+        };
+    }
 
-	private static IReadOnlyCollection<IFriendRequest> Translate(IEnumerable<FriendRequest> friendRequests)
-	{
-		return friendRequests?.Select(Translate).ToList();
-	}
+    private static IReadOnlyCollection<IFriendRequest> Translate(IEnumerable<Roblox.Friends.Client.FriendRequest> friendRequests)
+    {
+        return friendRequests?.Select(Translate).ToList();
+    }
 
 	private static int GetRandomRolloutPercentage()
 	{
 		return new Random(new object().GetHashCode()).Next(100);
 	}
+
 }

@@ -44,8 +44,7 @@ internal sealed class Settings : ApplicationSettingsBase, IServiceClientSettings
 	[DefaultSettingValue("")]
 	public string ApiKey => (string)this["ApiKey"];
 
-	public string Endpoint { get; set; } = RobloxEnvironment.GetApiEndpoint("staticcontent");
-
+	public string Endpoint { get; set; } = RobloxEnvironment.GetInternalApiServiceEndpoint("staticcontent");
 
 	public string ClientName => "StaticContent";
 
@@ -55,12 +54,9 @@ internal sealed class Settings : ApplicationSettingsBase, IServiceClientSettings
 
 	public TimeSpan RequestTimeout { get; } = TimeSpan.FromMinutes(2.0);
 
-
 	public TimeSpan RetryInterval { get; } = TimeSpan.FromSeconds(15.0);
 
-
 	public int FailuresAllowedBeforeTrip { get; } = 5;
-
 
 	public event Action<string> SettingChanged;
 
@@ -69,6 +65,8 @@ internal sealed class Settings : ApplicationSettingsBase, IServiceClientSettings
 		base.PropertyChanged += delegate(object sender, PropertyChangedEventArgs args)
 		{
 			_Properties.TryRemove(args.PropertyName, out var _);
+			// Notify listeners which setting changed so the event is referenced
+			SettingChanged?.Invoke(args.PropertyName);
 		};
 	}
 

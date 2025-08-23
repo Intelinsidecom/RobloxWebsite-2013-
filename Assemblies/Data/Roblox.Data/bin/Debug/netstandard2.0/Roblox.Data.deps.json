@@ -900,6 +900,7 @@
       },
       "Roblox.Configuration/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "runtime": {
@@ -943,6 +944,7 @@
       },
       "Roblox.Redis/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
@@ -962,6 +964,7 @@
       "Roblox.ServiceDiscovery/1.0.0": {
         "dependencies": {
           "Consul": "1.6.10.4",
+          "Newtonsoft.Json": "13.0.3",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"

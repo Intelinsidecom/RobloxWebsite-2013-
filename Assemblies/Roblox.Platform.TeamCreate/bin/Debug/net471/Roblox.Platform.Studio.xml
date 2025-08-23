@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Studio</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Studio.Entities.UniverseCloudEditStatus">
+            <summary>
+            Entity which is indicate if CloudEdit is enabled for place or not
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Studio.StudioSearchAssetsSortFactory.GetSortedAssets(System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},Roblox.Platform.Math.Statistics.BetaDistribution,Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory,System.String)">
+            <summary>
+            This method takes two list of assets and does union of list and sort the merged list 
+            by beta distrubution sample that is calculated from total searches and total inserts of assets.
+            Total inserts and total searches of an asset are fetched from database using <seealso cref="T:Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory"/>
+            </summary>
+            <param name="assetsFromDefaultSearch"></param>
+            <param name="assetsFromWilsonScoreSearch"></param>
+            <param name="betaDistribution"></param>
+            <param name="assetSearchKeywordStatisticFactory"></param>
+            <param name="keyword"></param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.StudioSearchAssetsSortFactory.GetAssetsSortedByAdjustedThompsonSample(System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},Roblox.Platform.Math.Statistics.BetaDistribution,Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory,System.String)">
+            <summary>
+            This method takes two list of assets and does union of list and sort the merged list 
+            by adjusted beta distrubution sample that is calculated from adjustments in total searches and total inserts of assets.
+            Total inserts and total searches of an asset are fetched from database using <seealso cref="T:Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory"/>
+            </summary>
+            <param name="assetsFromDefaultSearch"></param>
+            <param name="assetsFromWilsonScoreSearch"></param>
+            <param name="betaDistribution"></param>
+            <param name="assetSearchKeywordStatisticFactory"></param>
+            <param name="keyword"></param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.StudioSearchAssetsSortFactory.GetBetaDistributionSample(System.Int64,System.Collections.Generic.HashSet{System.Int64},System.Double,System.Double,System.Double,System.String,Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory,Roblox.Platform.Math.Statistics.BetaDistribution)">
+            <summary>
+            Provides the beta distribution based sort order.
+            </summary>
+            <param name="assetId"></param>
+            <param name="assetIds"></param>
+            <param name="zeroSearchedModelSuccess"></param>
+            <param name="zeroSearchedModelFailure"></param>
+            <param name="shrink"></param>
+            <param name="keyword"></param>
+            <param name="assetSearchKeywordStatisticFactory"></param>
+            <param name="betaDistribution"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.StudioSearchAssetsSortFactory.ApplyAmplitudeCorrection(System.Double,System.Double@,System.Double@)">
+            <summary>
+            Calculate success and failure using different correction schemes.
+            </summary>
+            <param name="shrink"></param>
+            <param name="success"></param>
+            <param name="failure"></param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.StudioSearchAssetsSortFactory.CalculateAdjustmentToZeroSearchedModel(System.Double,System.Double,System.Double@,System.Double@)">
+            <summary>
+            Calculate success and failure of models which do not have keyword stats data.
+            Either new models or never searched.
+            </summary>
+            <param name="meanSuccess"></param>
+            <param name="meanFailure"></param>
+            <param name="success"></param>
+            <param name="failure"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.Studio.StudioSearchAssetsSortFactory.CalculateMeanSuccessFailure(System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory,System.String,System.Double,System.Double@,System.Double@)" -->
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntityFactory.GetByAssetId(System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntity"/> with the given assetId.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntity"/> with the given assetId, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntityFactory.Create(System.Int64,System.String)">
+            <summary>
+            Saves
+            </summary>
+            <param name="assetId"></param>
+            <param name="json"></param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntityFactory.GetAssetSearchKeywordStatistics(System.Int64,System.Int32)">
+            <summary>
+            Gets paged collection of <see cref="T:Roblox.Platform.Studio.IAssetSearchKeywordStatisticEntity"/>.
+            </summary>
+            <param name="exclusiveStartId"></param>
+            <param name="count"></param>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IAssetSearchKeywordStatistic">
+            <summary>
+            Provides an interface for AssetSearchKeywordStatistic.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IAssetSearchKeywordStatistic.Id">
+            <summary>
+            Get the Id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IAssetSearchKeywordStatistic.AssetId">
+            <summary>
+            Get the asset Id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IAssetSearchKeywordStatistic.Json">
+            <summary>
+            Get the json string.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatistic.GetKeywordStatistics(System.String)">
+            <summary>
+            Get the keyword stats for a given keyword.
+            </summary>
+            <param name="keyword"></param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatistic.GetAllKeywordStatistics">
+            <summary>
+            Get all keyword stats for a given asset id.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory">
+            <summary>
+            Provides methods for creating and geting json corresponding to assetId.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory.CreateOrUpdate(System.Int64,System.String)">
+            <summary>
+            Method for Inserting or updating AssetSearchKeywordStatistic object. 
+            </summary>
+            <param name="assetId"></param>
+            <param name="json"></param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory.Get(System.Int64)">
+            <summary>
+            Method for getting AssetSearchKeywordStatistic by assetId. 
+            </summary>
+            <param name="assetId"></param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory.GetAllPaged(System.Int64,System.Int32)">
+            <summary>
+            Method for getting paged collection of <seealso cref="T:Roblox.Platform.Studio.IAssetSearchKeywordStatistic"/>
+            </summary>
+            <param name="exclusiveStartId"></param>
+            <param name="count"></param>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IKeywordStatistic">
+            <summary>
+            This interface provides all the statistics associated with a keyword.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IKeywordStatistic.AssetId">
+            <summary>
+            Get or set the asset id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IKeywordStatistic.Keyword">
+            <summary>
+            Get or set the search keyword.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IKeywordStatistic.WilsonScore">
+            <summary>
+            Get or set the wilson score
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IKeywordStatistic.TotalSearch">
+            <summary>
+            Get or set the total search.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IKeywordStatistic.TotalInsert">
+            <summary>
+            Get or set the total insert.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IStudioSearchAssetsSortFactory">
+            <summary>
+            Provide a common interface for sorting business logic for assets.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IStudioSearchAssetsSortFactory.GetSortedAssets(System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},Roblox.Platform.Math.Statistics.BetaDistribution,Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory,System.String)">
+            <summary>
+            This method merges the list of assets from elsticsearh default sort and sort by 
+            wilso socre and apply beta destribution on merged list.
+            </summary>
+            <param name="assetsFromDefaultSearch"></param>
+            <param name="assetsFromWilsonScoreSearch"></param>
+            <param name="betaDistribution"></param>
+            <param name="assetSearchKeywordStatisticFactory"></param>
+            <param name="keyword"></param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IStudioSearchAssetsSortFactory.GetSortedAssets(System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},System.Collections.Generic.ICollection{Roblox.Platform.Assets.IAsset},System.Int32,System.Int32,Roblox.Platform.Studio.IAssetSearchKeywordStatisticFactory,System.String,System.Int32)">
+            <summary>
+            This method merges the list of assets from elasticsearch default sort and sort by 
+            wilson score to generate merged list.
+            </summary>
+            <param name="assetsFromDefaultSearch"></param>
+            <param name="assetsFromWilsonScoreSearch"></param>
+            <param name="wilsonScoreQueryCount"></param>
+            <param name="defaultQueryCount"></param>
+            <param name="assetSearchKeywordStatisticFactory"></param>
+            <param name="keyword"></param>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IToolboxSearchAlgorithm">
+            <summary>
+            Provides a common interface for ToolboxSearchAlgorithm.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IToolboxSearchAlgorithm.Id">
+            <summary>
+            Get the Id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IToolboxSearchAlgorithm.Name">
+            <summary>
+            Get the name of alorithm.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IToolboxSearchAlgorithm.Description">
+            <summary>
+            Get the description of algorithm.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmFactory">
+            <summary>
+            Provides a common interface for factory class to get the IToolboxSearchAlgorithmFactory.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.IDomainFactory`1" />
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmFactory.Create(System.String,System.String)">
+            <summary>
+            Creates an instance of <seealso cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithm"/>.
+            </summary>
+            <param name="algorithmName"></param>
+            <param name="description"></param>
+            <returns>Instance of type IToolboxSearchAlgorithmResult</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmFactory.GetAllPaged(System.Int32,System.Int32)">
+            <summary>
+            Gets the collection of <seealso cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithm"/>.
+            </summary>
+            <param name="startRowIndex"></param>
+            <param name="maxRows"></param>
+            <returns>Collection of <seealso cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithm"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult">
+            <summary>
+            Provides a common interface for ToolboxSearchAlgorithmResult.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult.Id">
+            <summary>
+            Get the Id.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult.AlgorithmId">
+            <summary>
+            Get the AlgorithmId.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult.Keyword">
+            <summary>
+            Get the Keyword.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult.Results">
+            <summary>
+            Get the Results.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultFactory">
+            <summary>
+            Provides a common interface for factory class to get the IToolboxSearchAlgorithmResultFactory.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.IDomainFactory`1" />
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultFactory.GetByAlgorithmNameAndKeyword(System.String,System.String)">
+            <summary>
+            Get an instance of <seealso cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult"/> by algorithm name and search keyword.
+            </summary>
+            <param name="algorithmName"></param>
+            <param name="keyword"></param>
+            <returns>Instance of type IToolboxSearchAlgorithmResult</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultFactory.Create(System.String,System.String,System.Int64[])">
+            <summary>
+            Create an instance of <seealso cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult"/>.
+            </summary>
+            <param name="algorithmName"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <returns>Instance of type IToolboxSearchAlgorithmResult</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultFactory.GetByAlgorithmIdAndKeyword(System.Int32,System.String)">
+            <summary>
+            Get an instance of <seealso cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult"/> by algorithm Id and keyword.
+            </summary>
+            <param name="algorithmId"></param>
+            <param name="keyword"></param>
+            <returns>Instance of type IToolboxSearchAlgorithmResult</returns>
+        </member>
+        <member name="T:Roblox.Platform.Studio.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Studio.StudioDomainFactories">
+            <summary>
+            Represents an object that contains the factories of the studio search algorithm domain.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.StudioDomainFactories.AssetSearchKeywordStatisticFactory">
+            <summary>
+            Provbides factory instance to access methods to insert and get an instance of <seealso cref="T:Roblox.Platform.Studio.AssetSearchKeywordStatistic"/>  
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.StudioDomainFactories.StudioSearchAssetsSortFactory">
+            <summary>
+            Provbides factory instance to access methods related to merging and sorting of assets list.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.StudioDomainFactories.ToolboxSearchAlgorithmFactory">
+            <summary>
+            Provides factory instance to access methods to insert and get an instance of <seealso cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithm"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Studio.StudioDomainFactories.ToolboxSearchAlgorithmResultFactory">
+            <summary>
+            Provides factory instance to access methods to insert and get an instance of <seealso cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResult"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Studio.StudioDomainFactories.#ctor(Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Studio.StudioDomainFactories"/> class.
+            </summary>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/> that the factories should use to log issues.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="logger"/>
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Studio.UniverseCloudEditStatusProvider">
+            <summary>
+            Provides possibility to get or update a CloudEditStatus for specified universe 
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Studio.UniverseCloudEditStatusProvider.#ctor(Roblox.Platform.Universes.IUniverseFactory)">
+            <summary>
+            Main constructor
+            </summary>
+            <param name="universeFactory">Instance of IUniverseFactory</param>
+        </member>
+        <member name="M:Roblox.Platform.Studio.UniverseCloudEditStatusProvider.IsCloudEditEnabled(System.Int64)">
+            <summary>
+            Returns cloud edit enabled status for corresponding universe.
+            </summary>
+            <param name="universeID">ID of universe</param>
+            <returns>null in case when property doesn't exist, true or false - if enabled or not correspondingly</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.UniverseCloudEditStatusProvider.UpdateCloudEditStatus(System.Int64,System.Boolean)">
+            <summary>
+            Updates CloudEditEnabled status for specified universe
+            </summary>
+            <param name="universeID"></param>
+            <param name="isCloudEditEnabled"></param>
+            <exception cref="T:Roblox.Platform.Universes.UnknownUniverseException">Thrown when universe with provided id is not exists</exception>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntityFactory.Get(System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntity"/> by its ID.
+            </summary>
+            <param name="name">Name of algorithm.</param>
+            <returns>The <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntityFactory.Create(System.String,System.String)">
+            <summary>
+            Create an instance of <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntity"/>
+            </summary>
+            <param name="name"></param>
+            <param name="description"></param>
+            <returns>Instance of <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntity"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntityFactory.GetAllPaged(System.Int32,System.Int32)">
+            <summary>
+            Get collection of <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntity"/> by startRowIndex and max number of rows.
+            </summary>
+            <param name="startRowIndex"></param>
+            <param name="maxRows"></param>
+            <returns>IEnumerable of <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmEntity"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultEntityFactory.GetByAlgorithmIdAndKeyword(System.Int32,System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultEntity"/> with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Fill in params
+            TODO: Fill in exceptions
+            <returns>The <see cref="T:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultEntity"/> with the given TODO: Fill in characteristics, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IToolboxSearchAlgorithmResultEntityFactory.Create(System.Int32,System.String,System.Int64[])">
+            <summary>
+            
+            </summary>
+            <param name="algorithmId"></param>
+            <param name="keyword"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.Studio.IUniverseCloudEditStatusProvider">
+            <summary>
+            Provides possibility to get or update a CloudEditStatus for specified universe 
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IUniverseCloudEditStatusProvider.IsCloudEditEnabled(System.Int64)">
+            <summary>
+            Returns cloud edit enabled status for corresponding universe.
+            </summary>
+            <param name="universeID">ID of universe</param>
+            <returns>null in case when property doesn't exist, true or false - if enabled or not correspondingly</returns>
+        </member>
+        <member name="M:Roblox.Platform.Studio.IUniverseCloudEditStatusProvider.UpdateCloudEditStatus(System.Int64,System.Boolean)">
+            <summary>
+            Updates CloudEditEnabled status for specified universe
+            </summary>
+            <param name="universeID"></param>
+            <param name="isCloudEditEnabled"></param>
+        </member>
+    </members>
+</doc>

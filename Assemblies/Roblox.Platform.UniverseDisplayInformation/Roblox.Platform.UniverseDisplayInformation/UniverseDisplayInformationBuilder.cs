@@ -458,7 +458,9 @@ public class UniverseDisplayInformationBuilder : IUniverseDisplayInformationBuil
 		FilterTextResult result;
 		try
 		{
-			result = _TextFilterClientV2.FilterText(text, clientTextAuthor, "UniverseDisplayInformation", "", false);
+			TextFilterUsage usage = default(TextFilterUsage);
+			Enum.TryParse<TextFilterUsage>(_TextFilterClientV2Usage, out usage);
+			result = _TextFilterClientV2.FilterText(text, clientTextAuthor, usage, "", false);
 		}
 		catch (Exception ex)
 		{

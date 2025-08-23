@@ -56,26 +56,26 @@ public class PushRegistrar : IPushRegistrar
 		[CompilerGenerated]
 		add
 		{
-			RegistrationEventHandler registrationEventHandler = this.OnRegistration;
+			RegistrationEventHandler registrationEventHandler = this.m_OnRegistrationEvent;
 			RegistrationEventHandler registrationEventHandler2;
 			do
 			{
 				registrationEventHandler2 = registrationEventHandler;
 				RegistrationEventHandler value2 = (RegistrationEventHandler)Delegate.Combine(registrationEventHandler2, value);
-				registrationEventHandler = Interlocked.CompareExchange(ref this.OnRegistration, value2, registrationEventHandler2);
+				registrationEventHandler = Interlocked.CompareExchange(ref this.m_OnRegistrationEvent, value2, registrationEventHandler2);
 			}
 			while ((object)registrationEventHandler != registrationEventHandler2);
 		}
 		[CompilerGenerated]
 		remove
 		{
-			RegistrationEventHandler registrationEventHandler = this.OnRegistration;
+			RegistrationEventHandler registrationEventHandler = this.m_OnRegistrationEvent;
 			RegistrationEventHandler registrationEventHandler2;
 			do
 			{
 				registrationEventHandler2 = registrationEventHandler;
 				RegistrationEventHandler value2 = (RegistrationEventHandler)Delegate.Remove(registrationEventHandler2, value);
-				registrationEventHandler = Interlocked.CompareExchange(ref this.OnRegistration, value2, registrationEventHandler2);
+				registrationEventHandler = Interlocked.CompareExchange(ref this.m_OnRegistrationEvent, value2, registrationEventHandler2);
 			}
 			while ((object)registrationEventHandler != registrationEventHandler2);
 		}
@@ -497,7 +497,7 @@ public class PushRegistrar : IPushRegistrar
 	{
 		try
 		{
-			this.OnRegistration?.Invoke(application, platform, registrationEventType);
+			this.m_OnRegistrationEvent?.Invoke(application, platform, registrationEventType);
 		}
 		catch (Exception exception)
 		{

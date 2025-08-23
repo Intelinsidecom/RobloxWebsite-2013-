@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.PremiumFeatures</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesProduct">
+            <summary>
+            PremiumFeatures Product Interface
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesProduct.GetPremiumFeaturesProducts(System.Int64,System.String,Roblox.PremiumFeatures.Models.Enums.PremiumFeatureType,System.Boolean,Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesProductPlatformType)">
+            <summary>
+            Get PremiumFeatures Products
+            </summary>
+            <param name="userId"></param>
+            <param name="ip"></param>
+            <param name="premiumFeatureType"></param>
+            <param name="isMobile"></param>
+            <param name="platformType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser">
+            <summary>
+            Interface for Premium Feature User Logic Layer
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser.GetSubscriptionProductForUser(System.Int64)">
+            <summary>
+            Get a user's subscription product
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser.IsPremiumUser(System.Int64)">
+            <summary>
+            Checks if user has a subscription
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser.GetBuildersClubCancellationForUser(Roblox.PremiumFeatures.Models.Requests.BuildersClubCancellationForUserRequest)">
+            <summary>
+            Get Builders Club Cancellation
+            </summary>
+            <param name="GetBuildersClubCancellationForUserRequest"></param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Models.Responses.BuildersClubCancellationForUserResponse"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser.ExecuteBuildersClubCancellationForUser(Roblox.PremiumFeatures.Models.Requests.ExecuteBuildersClubCancellationForUserRequest)">
+            <summary>
+            Execute Builders Club Cancellation
+            </summary>
+            <param name="executeBuildersClubCancellationForUserRequest"></param>
+            <returns><see cref="T:Roblox.PremiumFeatures.Models.Responses.BuildersClubCancellationForUserResponse"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser.UpdateSubscriptionProductForUser(System.Int64,System.Int32)">
+            <summary>
+            Updates a user's subscription product
+            </summary>
+            <param name="userId"></param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesProduct">
+            <summary>
+            Logic layer for PremiumFeatures Products
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesProduct.#ctor(Roblox.PremiumFeatures.Client.Interfaces.IPremiumFeaturesClient,Roblox.Billing.Client.IBillingClient,Roblox.Platform.Localization.Accounts.IAccountCountryAccessor,Roblox.Platform.Demographics.IGeolocationFactory,Roblox.EventLog.ILogger)">
+            <summary>
+            Initialize PremiumFeaturesProduct 
+            </summary>
+            <param name="premiumFeaturesClient"><see cref="T:Roblox.PremiumFeatures.Client.Interfaces.IPremiumFeaturesClient"/></param>
+            <param name="billingClient"><see cref="T:Roblox.Billing.Client.IBillingClient"/></param>
+            <param name="accountCountryAccessor"><see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountryAccessor"/></param>
+            <param name="geolocationFactory"><see cref="T:Roblox.Platform.Demographics.IGeolocationFactory"/></param>
+            <param name="logger"><see cref="T:Roblox.EventLog.ILogger"/></param>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesProduct.GetPremiumFeaturesProducts(System.Int64,System.String,Roblox.PremiumFeatures.Models.Enums.PremiumFeatureType,System.Boolean,Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesProductPlatformType)">
+            <summary>
+            Get all available premium feature products for a user
+            </summary>
+            <param name="accountId">Account Id</param>
+            <param name="ip">User IP</param>
+            <param name="premiumFeatureType"><see cref="T:Roblox.PremiumFeatures.Models.Enums.PremiumFeatureType"/></param>
+            <param name="isMobile">Is request coming from Mobile</param>
+            <param name="platformType"></param>
+            <returns>Collection of <see cref="T:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel"/></returns>
+        </member>
+        <member name="T:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesUser">
+            <summary>
+            PremiumFeature User Logic Layer
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesUser.PremiumFeaturesClient">
+            <summary>
+            PremiumFeatures Client
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesUser.#ctor(Roblox.PremiumFeatures.Client.Interfaces.IPremiumFeaturesClient,Roblox.Billing.Client.IBillingClient,Roblox.Platform.Membership.IUserFactory)">
+            <summary>
+            Initialize PremiumFeaturesUser
+            </summary>
+            <param name="premiumFeaturesClient"></param>
+            <param name="billingClient"></param>
+            <param name="userFactory"></param>
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesUser.GetSubscriptionProductForUser(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesUser.IsPremiumUser(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesUser.GetBuildersClubCancellationForUser(Roblox.PremiumFeatures.Models.Requests.BuildersClubCancellationForUserRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesUser.ExecuteBuildersClubCancellationForUser(Roblox.PremiumFeatures.Models.Requests.ExecuteBuildersClubCancellationForUserRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.PremiumFeatures.Implementation.PremiumFeaturesUser.UpdateSubscriptionProductForUser(System.Int64,System.Int32)">
+            <summary>
+            Get a user's subscription product
+            </summary>
+            <param name="userId"></param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

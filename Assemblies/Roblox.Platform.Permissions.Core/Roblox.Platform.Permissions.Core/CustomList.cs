@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
-using Roblox.Permissions.Client;
+using Api = Roblox.Permissions.Client;
 
 namespace Roblox.Platform.Permissions.Core;
 
 internal class CustomList : ICustomList
 {
-	private readonly IPermissionsClient _PermissionsApiClient;
+	private readonly Api.IPermissionsClient _PermissionsApiClient;
 
 	public long Id { get; }
 
@@ -16,7 +16,7 @@ internal class CustomList : ICustomList
 
 	public long CreatorTargetId { get; }
 
-	internal CustomList(IPermissionsClient permissionsApiClient, long id, string name, string creatorType, long creatorTargetId)
+	internal CustomList(Api.IPermissionsClient permissionsApiClient, long id, string name, string creatorType, long creatorTargetId)
 	{
 		_PermissionsApiClient = permissionsApiClient;
 		Id = id;
@@ -42,7 +42,7 @@ internal class CustomList : ICustomList
 
 	public IEnumerable<long> GetMembers(int page, out long count)
 	{
-		PageResult<long, long> listMembers = _PermissionsApiClient.GetListMembers(Id, (int?)page);
+		Api.PageResult<long, long> listMembers = _PermissionsApiClient.GetListMembers(Id, (int?)page);
 		count = listMembers.Count;
 		return listMembers.PageItems?.Select((long i) => i);
 	}

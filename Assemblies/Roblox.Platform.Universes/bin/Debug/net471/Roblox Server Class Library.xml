@@ -1,0 +1,956 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox Server Class Library</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.IAsset">
+            <summary>
+            Implementing classes: Asset, AssetVersion
+            </summary>
+        </member>
+        <member name="M:Roblox.IFilesManager.GetFileContentLocation(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.FileContentLocation"/> for <paramref name="hash"/>.
+            </summary>
+            <param name="hash">The hash used to identify the file.</param>
+            <returns>the requested <see cref="T:Roblox.FileContentLocation"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="hash"/> is null or empty.</exception>
+        </member>
+        <member name="T:Roblox.PrimaryUserGroup">
+            <summary>
+            This is a special one-off class to back primary groups by shared cache
+            </summary>
+        </member>
+        <member name="M:Roblox.RobloxContentValidator.#ctor(Roblox.EventLog.ILogger)">
+            <summary>
+            Instantiates a <see cref="T:Roblox.RobloxContentValidator"/>
+            </summary>
+            <param name="logger"></param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="logger"/> is null</exception>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.UploadFile(System.Byte[],System.String)">
+            <summary>
+            Upload a File to S3 directly based on File Extension and without compression
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.UploadFile(System.IO.Stream,System.String)">
+            <summary>
+            Upload a File as  File Stream without any GZip.
+            To be used for Images.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.UploadFile(System.Byte[],System.String,System.Net.DecompressionMethods)">
+            <summary>
+            Upload content to S3 Bucket based on the File Extension and Compression Method.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetUrlByFileName(System.String,System.Web.HttpRequest)">
+            <summary>
+            Get the download Url for a FileName as String.
+            If unavailable in BucketStore, it uploads the file.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetUriByFileName(System.String,System.Web.HttpRequest)">
+            <summary>
+            Get the Download url for a File name as System.Uri
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetImageUrlByHash(System.String,System.Web.HttpRequest)">
+            <summary>
+            Return the download URL using the Hash.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetImageUrlByHash(System.String,System.Web.HttpRequestBase)">
+            <summary>
+            Return the download URL using the Hash.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetBucket(System.String,System.Net.DecompressionMethods)">
+            <summary>
+            Get the S3 Bucket based on File Type - js/css or image and the CompressionMethod
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetImageUriByHash(System.String,System.Web.HttpRequest)">
+            <summary>
+            Return the Uri using the Hash.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetImageUriByHash(System.String,System.Web.HttpRequestBase)">
+            <summary>
+            Return the Uri using the Hash.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetDownloadUriByHashAndExtension(System.String,System.String,System.Boolean,Roblox.S3.Bucket,System.Boolean)">
+            <summary>
+            Retrieve the Location of the File using the Hash and Extension and return URI
+            Should be used if FileName is known - js, css etc.,
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.UploadStaticFile(System.String,System.String,System.Boolean,System.Byte)">
+            <summary>
+            Uploads the File based on the Compression Rule.
+            Checks File Extension and GZip(s) the Data if necessary.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetCompressionRule(System.String)">
+            <summary>
+            Determines if a File requires Compression or not.
+            </summary>
+            <param name="fileName">File name with Extension</param>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.GetMimeTypeHeader(System.String)">
+            <summary>
+            Returns the Content-Type Header based on the MimeType.
+            For images, it returns an empty string.
+            </summary>
+        </member>
+        <member name="M:Roblox.StaticFilesManager.AmazonS3UrlFormat(System.String)">
+            <summary>
+            Return s3.Amazon.com url appended instead of Cloudfront URL.
+            To be used if Akamai is disabled for some reason.
+            </summary>
+        </member>
+        <member name="M:Roblox.StreamUtilities.Wrap(System.IO.Stream,System.Net.DecompressionMethods,System.IO.Compression.CompressionMode)">
+            <summary>
+            Returns a ****Non-Seekable**** Zlib compressor/uncompressor
+            </summary>
+        </member>
+        <member name="M:Roblox.HashGenerator.HashPassword(System.String)">
+            <summary>
+            Creates new secure hash
+            </summary>
+        </member>
+        <member name="M:Roblox.HashGenerator.ValidatePassword(System.String,System.String)">
+            <summary>
+            Checks if a password matches its secure hash
+            </summary>
+        </member>
+        <member name="M:Roblox.HashGenerator.GetRandomSalt">
+            <summary>
+            Returns a random 64 character hex string (256 bits)
+            </summary>
+        </member>
+        <member name="T:Roblox.HelperClasses.RewriteFormActionHtmlTextWriter">
+            <summary>
+            Specialised <see ref="HtmlTextWriter" /> that handles populating the form action attribute appropriately for 
+            url rewriting
+            </summary> 
+        </member>
+        <member name="M:Roblox.HelperClasses.RewriteFormActionHtmlTextWriter.#ctor(System.IO.TextWriter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.HelperClasses.RewriteFormActionHtmlTextWriter"/> class. 
+            </summary>
+            <param name="writer">The writer.</param> 
+        </member>
+        <member name="M:Roblox.HelperClasses.RewriteFormActionHtmlTextWriter.#ctor(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.HelperClasses.RewriteFormActionHtmlTextWriter"/> class. 
+            </summary>
+            <param name="writer">The writer.</param> 
+        </member>
+        <member name="M:Roblox.HelperClasses.RewriteFormActionHtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)">
+            <summary>
+            Writes the specified markup attribute and value to the output stream, and, if specified, writes the value encoded. 
+            </summary>
+            <param name="name">The markup attribute to write to the output stream.</param> 
+            <param name="value">The value assigned to the attribute.</param>
+            <param name="fEncode">true to encode the attribute and its assigned value; otherwise, false.</param> 
+        </member>
+        <member name="T:Roblox.IRobloxCookie">
+            <summary>
+            An interface for RobloxCookie.
+            </summary>
+        </member>
+        <member name="P:Roblox.IRobloxCookie.Expires">
+            <summary>
+            Gets the expires.
+            </summary>
+            <value>
+            The expires.
+            </value>
+        </member>
+        <member name="P:Roblox.IRobloxCookie.HttpOnly">
+            <summary>
+            Gets a value indicating whether [HTTP only].
+            </summary>
+            <value>
+              <c>true</c> if [HTTP only]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Roblox.IRobloxCookie.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Roblox.IRobloxCookie.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Roblox.IRobloxCookie.Domain">
+            <summary>
+            Gets the domain.
+            </summary>
+            <value>
+            The domain.
+            </value>
+        </member>
+        <member name="P:Roblox.IRobloxCookie.Values">
+            <summary>
+            Gets the values.
+            </summary>
+            <value>
+            The values.
+            </value>
+        </member>
+        <member name="P:Roblox.IRobloxCookie.Path">
+            <summary>
+            Gets the path.
+            </summary>
+            <value>
+            The path.
+            </value>
+        </member>
+        <member name="M:Roblox.IRobloxCookie.AppendToResponse">
+            <summary>
+            Appends the cookie to response.
+            </summary>
+        </member>
+        <member name="M:Roblox.IRobloxCookie.Save(System.TimeSpan)">
+            <summary>
+            Saves the specified expiration length.
+            </summary>
+            <param name="expirationLength">Length of the expiration.</param>
+        </member>
+        <member name="M:Roblox.IRobloxCookie.Save">
+            <summary>
+            Session Cookie Save.
+            </summary>
+        </member>
+        <member name="M:Roblox.IRobloxCookie.Delete">
+            <summary>
+            Deletes this instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Market.PurchaseProduct(System.Int64,System.Int64,System.Int64,System.Int64,System.Boolean,System.Byte,Roblox.EconomyHelper.TransactionStatus@,System.Int64,Roblox.Marketplace.Client.SaleLocationType,System.Nullable{System.Int64})">
+            <summary>
+            Purchase a virtual economy product.
+            </summary>
+            <param name="purchaserId">Purchaser's userId</param>
+            <param name="sellerId">Seller's userId</param>
+            <param name="productId">Id of product being purchased</param>
+            <param name="purchasePrice"></param>
+            <param name="placeInHold">If true, don't grant the funds to the seller right away, add them to a currency hold instead.</param>
+            <param name="platformTypeId"></param>
+            <param name="status">After execution, either Success or a reason for failure.</param>
+            <param name="placeProductPromotionId">If sold as an affiliate sale (eg, in a user's place) the placeProductPromotionId.</param>
+            <returns>True if successful.  If false, the reason is in status out parameter.</returns>
+        </member>
+        <member name="M:Roblox.Market.PurchaseProduct(System.Int64,System.Int64,System.Int64,System.Int64,System.Boolean,System.Byte,System.Int64,Roblox.Marketplace.Client.SaleLocationType,System.Nullable{System.Int64})">
+            <summary>
+            Purchase a virtual economy product.
+            </summary>
+            <param name="purchaserId">Purchaser's userId</param>
+            <param name="sellerId">Seller's userId</param>
+            <param name="productId">Id of product being purchased</param>
+            <param name="purchasePrice"></param>
+            <param name="placeInHold">If true, don't grant the funds to the seller right away, add them to a currency hold instead.</param>
+            <param name="platformTypeId"></param>
+            <param name="placeProductPromotionId">If sold as an affiliate sale (eg, in a user's place) the placeProductPromotionId.</param>
+            <param name="saleLocationType">The location where the product was purchased</param>
+            <param name="saleLocationId">The location id where the product was purchased</param>
+            <returns>True if successful.  If false, the reason is in status out parameter.</returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.RobuxStipendBonus">
+             <summary>
+             This is a prototype class for awarding additional ROBUX for a stipend.
+             Before extending this class consider redesigning it such that there
+             is some database presence.
+            
+             Some ideas for future expansion:
+            
+             1.  Add RobuxStipendBonusTypes to DB and use this to determine an appropriate bonus
+            
+             2.  Fully convert this to a data-driven design
+                 -Bake in acceptable bonus amounts
+                 -Upgrade a user's robux stipend on a monthly basis
+             </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.RobuxStipendBonus.CalculateLoyaltyMultiplier(System.Int32)">
+             <summary>
+             y = (MaxMultiplier - 1)/MaxDays * x + 1
+            
+             A linear function from 1 to MaxMultiplier
+             </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.RobuxStipendBonus.CalculateLoyaltyBonus(Roblox.User,System.Nullable{System.DateTime},System.Single@)">
+            <summary>
+            Calculates how much *extra* daily Robux a user should get based
+            on how long they've been in BC
+            </summary>
+        </member>
+        <member name="M:Roblox.DelayedReleaseAsset.GetDelayedReleaseAssetAssetIDsPaged(System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <remarks>
+            Currently does not directly call DelayedReleaseAssetDAL.GetDelayedReleaseAssetIDsPaged because returns DelayedReleaseAssetID NOT AssetID.
+            Need to create new DelayedReleaseAssetDAL method + stored procedure to avoid using GetDelayedReleaseAssetsPaged: AVBURST-271.
+            </remarks>
+        </member>
+        <member name="P:Roblox.UserAvatar.NewAvatarAssetHashID">
+            <summary>
+            NewAvatarAssetHashID points to an AssetHash that stores a URL
+            e.g. if you download from S3, it looks something like this
+            <![CDATA[
+            http://www.roblox.com/Asset/AvatarAccoutrements.ashx?AvatarHash=d1bf78e06aa76ee4ad11d6c6eee87e30&AssetIDs=48474313,120955812,129906909
+            ]]>
+            </summary>
+        </member>
+        <member name="P:Roblox.UserAvatar.AvatarHash">
+            <summary>
+            AvatarHash points to an S3 file XML file that contains the BodyColors of the avatar
+            </summary>
+        </member>
+        <member name="M:Roblox.UserAvatar.ClearThumbnail">
+            <summary>
+            Since the user appearance has changed (could be accoutrements added/removed),
+            Clear out the AvatarAssetHashID to make sure the thumbnail is re-rendered.
+            </summary>
+        </member>
+        <member name="F:Roblox.AssetHashSafetyRating._EntityDAL">
+            Data Members *
+        </member>
+        <member name="P:Roblox.AssetHashSafetyRating.MinAssetHashSafetyRatingToDisplay">
+            Properties *
+        </member>
+        <member name="M:Roblox.AssetHashSafetyRating.#ctor">
+            CRUD *
+        </member>
+        <member name="M:Roblox.AssetHashSafetyRating.IsTrusted">
+            Methods *
+        </member>
+        <member name="M:Roblox.AssetHashSafetyRating.CalculateSafety(System.Int64)">
+            Static Methods *
+        </member>
+        <member name="M:Roblox.AssetSet.#cctor">
+            Crud *
+        </member>
+        <member name="M:Roblox.AssetSet.AddItem(System.Int64,System.Int64)">
+            Methods *
+        </member>
+        <member name="M:Roblox.AssetSet.IsProperAssetType(Roblox.Asset)">
+            Static Methods *
+        </member>
+        <member name="T:Roblox.AssetSetItem">
+            When AssetSetItems are retrieved (Get), the public domain bit is checked.  If the item has become
+            publicly unavailable, the associated AssetSetItem is removed;  Also, if they're considered unsafe at that point
+            we delete them.  More efficient to do it on insert than on any retrieval... so maybe move to just the insert tool.
+            *
+        </member>
+        <member name="P:Roblox.Account.Description">
+            <summary>
+            Marked as internal, should only be used by Platform.Membership
+            </summary>
+        </member>
+        <member name="M:Roblox.Account.GetAccountsByEmailAddressPaged(System.String,System.Int32,System.Int32,System.Int32@,System.Int64@)">
+            <summary>
+            Gets the accounts using an email address paged. The list is paged on the AccountEmailAddressId returned, 
+            to get the next batch pass in the last returned EmailAddressId as the exclusiveStartAccountEmailAddressId.
+            </summary>
+            <param name="emailAddress">The email address.</param>
+            <param name="count">Number of items to get from the starting point ID.</param>
+            <param name="exclusiveStartAccountEmailAddressId">The starting ID in the sorted list of IDs.</param>
+            <param name="lastAccountEmailAddressId">The last account email address identifier.</param>
+            <param name="totalResult">The total result.</param>
+            <returns>Accounts associated with the given email address within the page constraints</returns>
+        </member>
+        <member name="T:Roblox.AccountEmailAddress.SaveRequestSource">
+            <remarks>MailChimp has been obsoleted. This enum is saved for compatibility reasons.</remarks>
+        </member>
+        <member name="P:Roblox.Asset.AssetCategories">
+            <summary>
+            A bitmask representation of all AssetCategories associated with this asset
+            </summary>
+        </member>
+        <member name="P:Roblox.Asset.AssetGenres">
+            <summary>
+            A bitmask representation of all AssetGenres associated with this asset
+            </summary>
+        </member>
+        <member name="P:Roblox.Asset.CreatorID">
+            <summary>
+            The AgentId of the Creator
+            </summary>
+        </member>
+        <member name="P:Roblox.Asset.SEOName">
+            <summary>
+            A search-engine friendly asset NAME (Example: My awesome #1 Vibhu tycoon obby -> My-awesome-1-Vibhu-tycoon-obby)
+            </summary>
+        </member>
+        <member name="M:Roblox.Asset.PassesGearCategoryMatch(Roblox.Asset)">
+            <summary>
+            Tests to see whether this asset is category compatible with a given Gear asset
+            </summary>
+            <param name="gear">Gear to test for Category match against this Asset</param>
+            <returns>True or False</returns>
+        </member>
+        <member name="M:Roblox.Asset.MultiGet(System.Collections.Generic.IReadOnlyCollection{System.Int64})">
+            <summary>
+            Gets <see cref="T:Roblox.Asset"/> by ids.
+            </summary>
+            <remarks>Should only be used by Roblox.Platform.Assets.</remarks>
+        </member>
+        <member name="M:Roblox.Asset.MultiGet_Private(System.Collections.Generic.ICollection{System.Int64})">
+            <summary>
+            This method should only be used in the context of EntityHelper.GetEntityCollection. Do not make it internal or public
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Asset.GetSEOURL(Roblox.Asset)">
+            <summary>
+            Gets a search-engine friendly URL given an asset (Format: http://www.roblox.com/[item_seo_name]?id=123)
+            </summary>
+        </member>
+        <member name="M:Roblox.Asset.GetSEOURL(Roblox.Platform.AssetOwnership.IUserAsset)">
+            <summary>
+            Gets a search-engine friendly URL given an asset (Format: http://www.roblox.com/[item_seo_name]?id=123)
+            </summary>
+        </member>
+        <member name="M:Roblox.Asset.PlaceAllowsGear(Roblox.Asset,Roblox.Asset)">
+            <summary>
+            place null, gear null => true
+            place null, gear non-null => true
+            place non-null, gear null => this will throw, but it never happens apparently.  (since place.PassesGearCategoryMatch(gear) doesn't null-check gear)
+            place non-null, gear non-null => (there is a product, and promotion exists) or (gear passes the place category &amp; genre check))
+            </summary>
+        </member>
+        <member name="P:Roblox.AssetGenre.Name">
+            <summary>
+            This is a lookup key only - use DisplayName for display purposes
+            </summary>
+        </member>
+        <member name="P:Roblox.AssetOption.AllowedGearCategories">
+            <summary>
+            A bitmask representation of all Gear Categories associated with this asset
+            </summary>
+        </member>
+        <member name="M:Roblox.AssetType.isPurchaseable">
+            <summary>
+            Return true if the Asset is publically purchaseable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.AssetType.GetValuePluralized(System.String)">
+            <summary>
+            This converts the assetType.Value field to plural - not the enum value.
+            </summary>
+        </member>
+        <member name="M:Roblox.AssetVersion.CreateNew_PLATFORMONLY(Roblox.Asset,Roblox.CreatorRef,System.String,System.Nullable{System.Int64})">
+            <summary>
+            Create a new AssetVersion for the given Asset and Creator using the given Hash
+            </summary>
+            <param name="asset"></param>
+            <param name="creatorRef"></param>
+            <param name="contentHash">Hash value, will result in the <see cref="P:Roblox.AssetVersion.AssetHash"/> being loaded.</param>
+            <param name="creatingUniverseId"></param>
+            <returns>newly created <see cref="T:Roblox.AssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.AssetVersion.CreateNew_PLATFORMONLY(Roblox.Asset,Roblox.CreatorRef,System.String,System.Nullable{System.Int64},System.Int64,System.Nullable{System.Int64})">
+            <summary>
+            Create a new AssetVersion for the given Asset and Creator based on the given Parent AssetVersion.
+            This is effectively a pass-through used to revert an AssetVersion. 
+            There is no validation of Hash or HashId against the Parent AssetVersion
+            </summary>
+            <param name="asset"></param>
+            <param name="creatorRef"></param>
+            <param name="hash"></param>
+            <param name="parentAssetVersionId"></param>
+            <param name="assetHashId"></param>
+            <param name="creatingUniverseId"></param>
+            <returns>newly created <see cref="T:Roblox.AssetVersion"/></returns>
+        </member>
+        <member name="M:Roblox.AssetVersion.MultiGet(System.Collections.Generic.IReadOnlyCollection{System.Int64})">
+            <summary>
+            Gets <see cref="T:Roblox.AssetVersion"/> by ids.
+            </summary>
+            <remarks>Should only be used by Roblox.Assets service.</remarks>
+        </member>
+        <member name="T:Roblox.BrickColor">
+            <summary>
+            See this wiki page for details on the bugs surround Neon orange and Deep orange (133, 1005, 1017)
+            https://confluence.roblox.com/display/PLATFORM/Avatar+Body+Colors
+            </summary>
+        </member>
+        <member name="F:Roblox.BrickColor._Colors">
+             <summary>
+             The following Lua script generates this table:
+            
+             function printBrick(i)
+                local bc = BrickColor.new(i)
+            local s = string.format([==[
+                new BrickColor(%d, "%s", Color.FromArgb(%d, %d, %d)),
+                ]==],
+                bc.number, bc.name, 255 * bc.r, 255 * bc.g, 255 * bc.b)
+                print(s)
+            end
+                        printBrick(1);
+                        printBrick(208);
+                        printBrick(194);
+                        printBrick(199);
+                        printBrick(26);
+                        printBrick(21);
+                        printBrick(24);
+                        printBrick(226);
+                        printBrick(23);
+                        printBrick(107);
+                        printBrick(102);
+                        printBrick(11);
+                        printBrick(45);
+                        printBrick(135);
+                        printBrick(106);
+                        printBrick(105);
+                        printBrick(141);
+                        printBrick(28);
+                        printBrick(37);
+                        printBrick(119);
+                        printBrick(29);
+                        printBrick(151);
+                        printBrick(38);
+                        printBrick(192);
+                        printBrick(104);
+                        printBrick(9);
+                        printBrick(101);
+                        printBrick(5);
+                        printBrick(153);
+                        printBrick(217);
+                        printBrick(18);
+                        printBrick(125);
+                        printBrick(301);
+                        printBrick(303);
+                        printBrick(304);
+                        printBrick(302);
+                        printBrick(305);
+                        printBrick(306);
+                        printBrick(307);
+                        printBrick(308);
+                        printBrick(309);
+                        printBrick(310);
+                        printBrick(312);
+                        printBrick(313);
+                        printBrick(311);
+                        printBrick(315);
+                        printBrick(316);
+                        printBrick(317);
+                        printBrick(318);
+                        printBrick(319);
+                        printBrick(314);
+                        printBrick(321);
+                        printBrick(322);
+                        printBrick(323);
+                        printBrick(324);
+                        printBrick(325);
+                        printBrick(320);
+                        printBrick(327);
+                        printBrick(328);
+                        printBrick(329);
+                        printBrick(330);
+                        printBrick(331);
+                        printBrick(332);
+                        printBrick(333);
+                        printBrick(334);
+                        printBrick(335);
+                        printBrick(336);
+                        printBrick(342);
+                        printBrick(343);
+                        printBrick(338);
+                        printBrick(339);
+                        printBrick(133);
+                        printBrick(340);
+                        printBrick(341);
+                        printBrick(337);
+                        printBrick(344);
+                        printBrick(345);
+                        printBrick(346);
+                        printBrick(347);
+                        printBrick(348);
+                        printBrick(349);
+                        printBrick(350);
+                        printBrick(351);
+                        printBrick(352);
+                        printBrick(353);
+                        printBrick(354);
+                        printBrick(355);
+                        printBrick(356);
+                        printBrick(357);
+                        printBrick(358);
+                        printBrick(359);
+                        printBrick(360);
+                        printBrick(361);
+                        printBrick(362);
+                        printBrick(363);
+                        printBrick(364);
+                        printBrick(365);
+             </summary>
+        </member>
+        <member name="M:Roblox.BrickColor.GetAvatarPageV2ColorPalette">
+            <summary>
+            A subsets of the advanced color palette, only includes 30
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.BrickColor.GetAllValidColors">
+            <summary>
+            All valid brick Colors that can be used for body colors
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.BrickColor.GetAdvancedColorPalette">
+            <summary>
+            All BrickColors that are visible in the advanced color palette on the avatar page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Roblox.Business_Logic_Layer.CharacterAppearance">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.CharacterAppearance.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.CharacterAppearance.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.CharacterAppearance.DefaultAppearance">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.CharacterAppearance.Pants">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.CharacterAppearance.Shirt">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.CharacterAppearance.TeeShirt">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="T:Roblox.Business_Logic_Layer.RobloxContent">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.RobloxContent.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.RobloxContent.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.RobloxContent.BadgeAwarder">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.RobloxContent.BadgeAwarderPlatform">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Roblox.Business_Logic_Layer.RobloxContent.Decal">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="M:Roblox.Feed.UpdateFeed(System.Int64,Roblox.Feed,System.String,System.DateTime)">
+            <summary>
+            Checks if the status appearing in Feeds for a particular user is out of date - if so, attempts to grab
+            the freshest status for that user and place into Feeds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Feed.GetLocalCacheInterval">
+            <summary>
+            Tells client how long it should cache a user's feed for before asking the service to get it again
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Feed.SetLocalCacheInterval(System.Int32)">
+            <summary>
+            Sets the caching interval
+            </summary>
+        </member>
+        <member name="M:Roblox.Feed.GetFeedForViewer(System.Int64)">
+            <summary>
+            Retrieves the feed that a specific user is supposed to see, based on his userfeed
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.GroupRoleSetPermissionType.LazyGetter(System.String)">
+            Static Accessors *
+        </member>
+        <member name="T:Roblox.GroupRoleSetPermissionType.Permission">
+            Enums *
+        </member>
+        <member name="F:Roblox.GroupRoleSetPermissionType.Permission.CanDeletePosts">
+            WARNING: These are letter for letter the same values as the "Name" field in the database and must stay that way *
+            NOTE:  Associated image icons are retrieved by using enumVal.ToString()+".png" from the images/groups/permissions folder *
+        </member>
+        <member name="F:Roblox.GroupRoleSetPermissionType.PermissionCategory.Group">
+            Hard coded.  Deal. *
+        </member>
+        <member name="F:Roblox.GroupRoleSetPermissionType._EntityDAL">
+            DAL Object *
+        </member>
+        <member name="P:Roblox.GroupRoleSetPermissionType.ID">
+            Data Members *
+        </member>
+        <member name="M:Roblox.GroupRoleSetPermissionType.#ctor(Roblox.GroupRoleSetPermissionTypeDAL)">
+            Constructors *
+        </member>
+        <member name="M:Roblox.GroupRoleSetPermissionType.Save">
+            CRUD *
+        </member>
+        <member name="M:Roblox.GroupRoleSetPermissionType.Get(System.Int32)">
+            Getters (single) *
+        </member>
+        <member name="M:Roblox.GroupRoleSetPermissionType.GetAllPermissions">
+            Getters (multiple *
+        </member>
+        <member name="M:Roblox.GroupRoleSetPermissionType.op_Equality(Roblox.GroupRoleSetPermissionType,Roblox.GroupRoleSetPermissionType.Permission)">
+            Operators *
+        </member>
+        <member name="M:Roblox.GroupStatus.UpdateFeed(System.Int64,Roblox.Feed)">
+            <summary>
+            Checks if the status appearing in Feeds for a particular user is out of date - if so, attempts to grab
+            the freshest status for that user and place into Feeds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Roblox.GroupRoleSet.GuestRank">
+            Enums *
+        </member>
+        <member name="F:Roblox.GroupRoleSet._EntityDAL">
+            DAL Object *
+        </member>
+        <member name="P:Roblox.GroupRoleSet.ID">
+            Data Members *
+        </member>
+        <member name="M:Roblox.GroupRoleSet.GetPermissions">
+            Public Methods *
+        </member>
+        <member name="M:Roblox.GroupRoleSet.#ctor(Roblox.GroupRoleSetDAL)">
+            Constructors *
+        </member>
+        <member name="M:Roblox.GroupRoleSet.Delete">
+            CRUD *
+        </member>
+        <member name="M:Roblox.GroupRoleSet.Get(System.Nullable{System.Int64},System.Int64)">
+            Getters (single) *
+        </member>
+        <member name="M:Roblox.GroupRoleSet.GetGroupRoleSetsDictionaryByGroupId(System.Int64)">
+            Getters (multiple) / Totals *
+        </member>
+        <member name="M:Roblox.GroupRoleSet.op_Equality(Roblox.GroupRoleSet,Roblox.GroupRoleSet)">
+            Operators *
+        </member>
+        <member name="T:Roblox.ICreator">
+            <summary>
+            Currently implementing: User, Group
+            </summary>
+        </member>
+        <member name="M:Roblox.FilesManager.GetFileContentLocation(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.FileContentLocation"/> for <paramref name="hash"/>.
+            </summary>
+            <param name="hash">The hash used to identify the file.</param>
+            <returns>the requested <see cref="T:Roblox.FileContentLocation"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="hash"/> is null or empty.</exception>
+        </member>
+        <member name="T:Roblox.Message">
+            <summary>
+            Do not use this class directly, use classes in Platform.Social instead.
+            </summary>
+        </member>
+        <member name="T:Roblox.MessageType">
+            <summary>
+            Do not use this class directly, use classes in Platform.Social instead.
+            </summary>
+        </member>
+        <member name="P:Roblox.Script.Safety">
+            Member Getters *
+        </member>
+        <member name="M:Roblox.Script.ProcessScripts(Roblox.IAsset,System.Boolean)">
+            <summary>
+            Extracts all the scripts found in a model/place and creates the appropriate objects:
+                Script
+                AssetScriptHash
+                ScriptReport (if requested to do so)
+            </summary>
+        </member>
+        <member name="M:Roblox.Script.ProcessScripts(System.String,System.Int64,System.Boolean,System.Int64)">
+            <summary>
+            Extracts all the scripts found in a model/place and creates the appropriate objects:
+                Script
+                AssetScriptHash
+                ScriptReport (if requested to do so)
+            </summary>
+        </member>
+        <member name="M:Roblox.Status.#ctor(System.Int64)">
+            <summary>
+            Creates an object containing user's most recent status update, if present
+            </summary>
+            <param name="userID"></param>
+        </member>
+        <member name="M:Roblox.Status.Save(System.String)">
+            <summary>
+            Updates a user's status
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.UserFeed.Exists(System.Int64,System.Int64)">
+            <summary>
+            Checks existence of a specific item, looked up by UserID and FeedID
+            </summary>
+        </member>
+        <member name="T:Roblox.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Resources.JSON">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Roblox.Resources.JSON.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Resources.JSON.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Resources.JSON.JSON_Comment">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="M:Roblox.UserAvatarDAL.GetUserAvatarIDs(System.Int32,System.Int32)">
+            <summary>
+            This method is intended to be used by migrators that need to iterate over UserAvatars table.
+            There's no method in UserAvatar.cs for this.
+            Call this DAL method directly, but use UserAvatar.MultiGet on the IDs that you get back.
+            </summary>
+            <param name="exclusiveStartId"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Roblox.EmailAddressDAL.IsApproved">
+            <summary>
+            Whether this email address has been Verified by external service
+            </summary>
+        </member>
+        <member name="P:Roblox.EmailAddressDAL.IsReviewed">
+            <summary>
+            Whether this email address is valid, as determined by external
+            service
+            </summary>
+        </member>
+        <member name="P:Roblox.EmailAddressDAL.ReviewedUtc">
+            <summary>
+            The dateTime of when this email has been Verified.
+            </summary>
+        </member>
+        <member name="P:Roblox.EmailAddressDAL.CreatedUtc">
+            <summary>
+            UTC migration
+            </summary>
+        </member>
+        <member name="P:Roblox.EmailAddressDAL.UpdatedUtc">
+            <summary>
+            UTC migration
+            </summary>
+        </member>
+        <member name="T:Roblox.EconomyHelper.TransactionStatus">
+            <summary>
+            This enum is duplicated in ServerClassLibrary.EconomyHelper, Roblox.Marketplace, Roblox.Marketplace.Client.MarketplaceAuthority and Roblox.Platform.VirtualEconomy. They must all be kept in sync!
+            </summary>
+        </member>
+        <member name="M:Roblox.EconomyHelper.GetMarketplaceFee(System.Byte,System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            Gets the marketplace fee for price and agent id.
+            </summary>
+            <param name="currencyTypeId">The currency type id.</param>
+            <param name="purchasePrice">The purchase price.</param>
+            <param name="sellerAgentId">The agent id of the seller.</param>
+            <param name="isPremiumUser">Whether the seller is a Premium user.</param>
+            <returns>Amount of price that is taxed.</returns>
+            <exception cref="T:System.ArgumentException">Agent with sellerAgentId {sellerAgentId} does not exist.</exception>
+        </member>
+        <member name="M:Roblox.EconomyHelper.GetCommissionRate(System.Int64,System.Boolean)">
+            <summary>
+            Gets the commission rate for the specified agent.
+            </summary>
+            <param name="agentId">The agent target id of the seller.</param>
+            <param name="isPremiumUser">Whether the seller is a Premium user (does not apply to groups).</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">
+            Invalid agent id
+            or
+            User does not exist
+            or
+            agentId does not match group or user
+            </exception>
+        </member>
+        <member name="M:Roblox.EconomyHelper.EnforceUserProductMinimumPrice(System.Int64,System.Nullable{System.Int64},System.Boolean@)">
+            <summary>
+            This is the alternative to a performance-intensive bulk update of prices.
+            This code can be deprecated once all items are updated.
+            </summary>
+            <param name="productId">Unique ID with which a Product can be fetched.</param>
+            <param name="priceInRobux"></param>
+            <param name="robuxPriceUpdated"></param>
+        </member>
+        <member name="M:Roblox.RobloxCookie.GetOrCreate(System.Web.HttpContext,System.String)">
+            <summary>
+            Creates a Session cookie.
+            </summary>
+            <param name="context"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.RobloxCookie.Save">
+            <summary>
+            Session Cookie Save
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

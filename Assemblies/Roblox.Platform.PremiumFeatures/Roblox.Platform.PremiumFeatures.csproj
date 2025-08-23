@@ -8,6 +8,7 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);CS1668;1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />

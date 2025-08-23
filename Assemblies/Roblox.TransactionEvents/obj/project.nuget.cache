@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "z+rXITHFFSRKyjLFV5KO4XjAIKIES/cR85DUN0jhIGB6g3BoLMJ9YEJHTbKJtC4oaiL1lNLhG24ycZ+XGmZoGg==",
+  "dgSpecHash": "y0GZmLNT3O4=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.TransactionEvents\\Roblox.TransactionEvents.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.TransactionEvents\\Roblox.TransactionEvents.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -4,13 +4,17 @@
     <AssemblyName>Roblox.Platform.Moderation</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net471</TargetFramework>
+    <NoWarn>$(NoWarn);0618;0436;1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
@@ -61,9 +65,6 @@
     </Reference>
     <Reference Include="Roblox.Configuration">
       <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ContentFilter.Client">
-      <HintPath>..\..\Website\bin\Roblox.ContentFilter.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.MssqlDatabases">
       <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>

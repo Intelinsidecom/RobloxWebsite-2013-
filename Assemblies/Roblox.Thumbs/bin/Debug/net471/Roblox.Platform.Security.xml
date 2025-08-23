@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Security</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Security.Codes.RandomCodeAuthority">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Security.Codes.RandomCodeAuthority.Generate(System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Security.Codes.RandomCodeCharacters">
+            <summary>
+            Provides access to the characters to be used in the <see cref="T:Roblox.Platform.Security.Codes.IRandomCodeAuthority"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Security.Codes.RandomCodeCharacters.Numbers">
+            <summary>
+            Numeric string
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Security.Codes.IRandomCodeAuthority">
+            <summary>
+            Provides the hability to generate random codes. The codes are not persisted.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Security.Codes.IRandomCodeAuthority.Generate(System.String,System.Int32)">
+            <summary>
+            Returns a code consisting using the given characters.
+            </summary>
+            <param name="characters">All the charracters allowed in this code. <see cref="T:Roblox.Platform.Security.Codes.RandomCodeCharacters"/></param>
+            <param name="length">The amount of characters the code should have</param>
+            <returns>The code of lenght <paramref name="length"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">
+                If <paramref name="characters"/> is empty or null
+                If <paramref name="length"/> is not positive
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Security.SecureBlobs.SecureBlobAuthority`1">
+            <inheritdoc cref="T:Roblox.Platform.Security.SecureBlobs.ISecureBlobAuthority`1"/>
+        </member>
+        <member name="M:Roblox.Platform.Security.SecureBlobs.SecureBlobAuthority`1.#ctor(System.Func{`0,System.String})">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Security.SecureBlobs.SecureBlobAuthority`1"/>
+            </summary>
+            <example>
+            new SecureBlobAuthority((model) => {
+                   // model = { userId = 123 };
+                   // Secret includes purpose of blob by prepending PasswordReset
+                   // Secret includes static information tied to a piece of the model that can be replicated, but won't mix with another model
+                   return $"PasswordReset_{getCreationTicks(model.userId)}";
+            });
+            </example>
+            <param name="getBlobSecret">
+            Gets a secret to add to every blob hash.
+            This secret must be unique to every blob that's specific to the model, and the purpose of the blob.
+            This is for security against two blobs with the same model, but a different purpose getting mixed.
+            </param>
+        </member>
+        <member name="M:Roblox.Platform.Security.SecureBlobs.SecureBlobAuthority`1.GenerateSecureBlob(`0,Roblox.Platform.Security.EncryptionKey,System.Nullable{System.TimeSpan})">
+            <inheritdoc cref="M:Roblox.Platform.Security.SecureBlobs.ISecureBlobAuthority`1.GenerateSecureBlob(`0,System.Nullable{System.TimeSpan})"/>
+        </member>
+        <member name="M:Roblox.Platform.Security.SecureBlobs.SecureBlobAuthority`1.GetModelFromSecureBlob(System.String,Roblox.Platform.Security.EncryptionKey[])">
+            <inheritdoc cref="M:Roblox.Platform.Security.SecureBlobs.ISecureBlobAuthority`1.GetModelFromSecureBlob(System.String)"/>
+        </member>
+        <member name="T:Roblox.Platform.Security.SecureBlobs.SecureBlobExpiredException">
+            <summary>
+            An exception thrown when a SecureBlob is in a valid format, but is expired.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Security.SecureBlobs.ISecureBlobAuthority`1">
+            <summary>
+            An authority used to create secure blobs of models that can be passed to consumers, and passed back unchanged and validated.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Security.SecureBlobs.ISecureBlobAuthority`1.GenerateSecureBlob(`0,System.Nullable{System.TimeSpan})">
+            <summary>
+            Generates a Base64 encoded blob of a model with validation hash
+            </summary>
+            <param name="model">The model to create the blob from.</param>
+            <param name="expiration">When the blob becomes invalid. If <c>null</c> no expiration.</param>
+            <returns>An expirable secure blob string.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="model"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Security.SecureBlobs.ISecureBlobAuthority`1.GetModelFromSecureBlob(System.String)">
+            <summary>
+            Gets a model from a secure blob as long as the blob is not expired, and valid.
+            </summary>
+            <param name="secureBlob">Gets a <typeparamref name="TModel"/> from a secure blob.</param>
+            <returns><typeparamref name="TModel"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="secureBlob"/> is null or empty.</exception>
+            <exception cref="T:System.FormatException"><paramref name="secureBlob"/> is not in a valid format.</exception>
+            <exception cref="T:Roblox.Platform.Security.SecureBlobs.SecureBlobExpiredException">The secure blob is in a valid format but is expired.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Security.SecureBlobs.ISecureBlobAuthority`1.GenerateSecureBlob(`0,Roblox.Platform.Security.EncryptionKey,System.Nullable{System.TimeSpan})">
+            <summary>
+            Generates a Base64 encoded blob of a model with validation hash
+            </summary>
+            <param name="model">The model to create the blob from.</param>
+            <param name="encryptionKey">Encryption key to be used by SecurityNotary</param>
+            <param name="expiration">When the blob becomes invalid. If <c>null</c> no expiration.</param>
+            <returns>An expirable secure blob string.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="model"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Security.SecureBlobs.ISecureBlobAuthority`1.GetModelFromSecureBlob(System.String,Roblox.Platform.Security.EncryptionKey[])">
+            <summary>
+            Gets a model from a secure blob as long as the blob is not expired, and valid.
+            </summary>
+            <param name="secureBlob">Gets a <typeparamref name="TModel"/> from a secure blob.</param>
+            <param name="encryptionKey">Encryption key to be used by SecurityNotary</param>
+            <returns><typeparamref name="TModel"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="secureBlob"/> is null or empty.</exception>
+            <exception cref="T:System.FormatException"><paramref name="secureBlob"/> is not in a valid format.</exception>
+            <exception cref="T:Roblox.Platform.Security.SecureBlobs.SecureBlobExpiredException">The secure blob is in a valid format but is expired.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Security.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Security.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Security.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Security.Resources.RbxPrivate">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Security.Resources.RbxPublic">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Security.SecurityNotary">
+            <summary>
+            This class is used to sign client join tickets and game join scripts.
+            The key used to sign depends on the encryption key argument passed in.
+            Work in progress. Please contact webcore team for more details.
+            </summary>
+        </member>
+    </members>
+</doc>

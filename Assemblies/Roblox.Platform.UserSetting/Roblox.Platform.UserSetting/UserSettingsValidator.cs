@@ -14,7 +14,7 @@ internal class UserSettingsValidator : IUserSettingsValidator
 
 	public UserSettingsValidator(UserSettingDomainFactories domainFactories)
 	{
-		_DomainFactories = domainFactories.AssignOrThrowIfNull("domainFactories");
+		_DomainFactories = domainFactories ?? throw new PlatformArgumentNullException("domainFactories");
 	}
 
 	public bool IsUserConfiguredForCuratedContentOnly(IUser user)

@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.UserBlock.Core</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net471</TargetFramework>
+    <NoWarn>$(NoWarn);CS1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -12,7 +13,6 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Permissions.Client" />
     <Reference Include="Roblox.Caching">
       <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
     </Reference>
@@ -31,6 +31,13 @@
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
+      <Aliases>ConfMan</Aliases>
+    </Reference>
     <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Roblox.Permissions.Client\Roblox.Permissions.Client.csproj" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,823 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.TranslationStorage</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.TranslationStorage.AutomationType">
+            <summary>
+            An enum representing the AutomationType.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.AutomationType.MachineTranslations">
+            <summary>
+            The machine translations
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ChangeAgentType">
+            <summary>
+            An enum representing the change agent used for changing the translation
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ChangeAgentType.User">
+            <summary>
+            User
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ChangeAgentType.Automation">
+            <summary>
+            Automation
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.CreateOrUpdateTranslationStatus">
+            <summary>
+            Status for CreateOrUpdateTranslation operation to tell if the translation was created or updated.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.CreateOrUpdateTranslationStatus.Created">
+            <summary>
+            The translation was created.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.CreateOrUpdateTranslationStatus.Updated">
+            <summary>
+            The translation was updated.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ContentSourceType">
+            <summary>
+            An enum defining the content source type.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.RobloxCountryDisplayNames">
+            <summary>
+            Roblox country display names
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.InGameTranslations">
+             <summary>
+            In Game Translations
+             </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.UniverseDisplayNames">
+            <summary>
+            Universe display names
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.UniverseDisplayDescriptions">
+            <summary>
+            Universe display descriptions
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.BundleDisplayName">
+            <summary>
+            Bundle display name.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.BundleDisplayDescription">
+            <summary>
+            Bundle display description.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.AssetDisplayName">
+            <summary>
+            Asset display name.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.AssetDisplayDescription">
+            <summary>
+            Asset display description.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.UniverseDisplayIconMapping">
+            <summary>
+            The universe display icon mapping.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.RobloxLanguageDisplayNames">
+            <summary>
+            Roblox language display names
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.UniverseDisplayThumbnailsMapping">
+            <summary>
+            The universe display thumbnails mapping.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.GamePassDisplayName">
+            <summary>
+            GamePass display name.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.GamePassDisplayDescription">
+            <summary>
+            GamePass display description
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.BadgeDisplayName">
+            <summary>
+            The badge display name
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.BadgeDisplayDescription">
+            <summary>
+            The badge display description
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.ItemTagDisplayName">
+            <summary>
+            The item tag display name.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.BadgeDisplayIconMapping">
+            <summary>
+            The badge display icon mapping.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.GamePassDisplayIconMapping">
+            <summary>
+            The game pass display icon mapping.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentSourceType.DeveloperProductDisplayIconMapping">
+            <summary>
+            The developer product icon mapping.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ContentVariantType">
+            <summary>
+            An enum representing a ContentVariantType.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentVariantType.Production">
+            <summary>
+            The production variant for content.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.ContentVariantType.Draft">
+            <summary>
+            The draft variant for content.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.OperationStatusCode">
+            <summary>
+            Status codes for the Translation Storage Service.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.OperationStatusCode.Success">
+            <summary>
+            When the operation has completed successfully.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.OperationStatusCode.CannotDeleteNonExistingTranslation">
+            <summary>
+            When trying to delete a translation that didn't exist.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.TranslationStorage.OperationStatusCode.TranslationMigrationFailed">
+            <summary>
+            When trying to migrate translation but failed. 
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ChangeAgentFactory">
+            <inheritdoc />
+            <summary>
+            An implementation of an <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgentFactory" />.
+            </summary>
+            <seealso cref="T:Roblox.Platform.TranslationStorage.IChangeAgentFactory" />
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ChangeAgentFactory.GetChangeAgentForUser(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.IChangeAgentFactory.GetChangeAgentForUser(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ChangeAgentFactory.GetChangeAgentForAutomation(Roblox.Platform.TranslationStorage.AutomationType)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.IChangeAgentFactory.GetChangeAgentForAutomation(Roblox.Platform.TranslationStorage.AutomationType)"/>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.GenericTranslationStorageAccessor`1">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.GenericTranslationStorageAccessor`1.#ctor(Roblox.TranslationStorage.Client.ITranslationStorageClient,Roblox.EventLog.ILogger,System.Func{System.Boolean},System.Func{System.Boolean},System.Func{System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.TranslationStorage.GenericTranslationStorageAccessor`1" /> class.
+            </summary>
+            <param name="translationStorageClient">The <see cref="T:Roblox.TranslationStorage.Client.ITranslationStorageClient" />.</param>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
+            <param name="isAccessingTranslationsEnabledGetter">The is accessing translations enabled getter.</param>
+            <param name="isReturningTranslationsEnabledGetter">The is returning translations enabled getter.</param>
+            <param name="shadowRolloutPercentageGetter">The shadow roll-out percentage getter.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">translationStorageClient
+            or
+            logger
+            or
+            isAccessingTranslationsEnabledGetter
+            or
+            isReturningTranslationsEnabledGetter
+            or
+            shadowRolloutPercentagGetter</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.GenericTranslationStorageAccessor`1.GetTranslationValue(Roblox.Platform.TranslationStorage.ValueSource{`0},System.String,System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.IGenericTranslationStorageAccessor`1.GetTranslationValue(Roblox.Platform.TranslationStorage.ValueSource{`0},System.String,System.String,System.String)" />
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.GenericTranslationStorageAccessor`1.MultiGetTranslationValues(System.Collections.Generic.ICollection{Roblox.Platform.TranslationStorage.ValueSource{`0}},System.String,System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.IGenericTranslationStorageAccessor`1.MultiGetTranslationValues(System.Collections.Generic.ICollection{Roblox.Platform.TranslationStorage.ValueSource{`0}},System.String,System.String,System.String)" />
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.GenericTranslationStorageAccessor`1.GetTranslationValuesInAllContentLocales(System.String,System.String,System.String,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.IGenericTranslationStorageAccessor`1.GetTranslationValuesInAllContentLocales(System.String,System.String,System.String,System.String)"/>/>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.TranslationStorageAccessor">
+            <inheritdoc />
+            <seealso cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor" />
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageAccessor.#ctor(Roblox.TranslationStorage.Client.ITranslationStorageClient,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.TranslationStorage.TranslationStorageAccessor" /> class.
+            </summary>
+            <param name="client">The translation storage client.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            client
+            or
+            logger
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageAccessor.GetTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageAccessor.GetTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageAccessor.GetTranslationsForContentSourceTargetIds(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationsForContentSourceTargetIds(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.Collections.Generic.IReadOnlyCollection{System.String})"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageAccessor.GetTranslationsForContentSourceTargetIds(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationsForContentSourceTargetIds(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.Collections.Generic.IReadOnlyCollection{System.String})"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageAccessor.GetTranslationForContentLocales(Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationForContentLocales(Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageAccessor.GetTranslationHistory(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Int32,Roblox.DataV2.Core.SortOrder)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationHistory(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Int32,Roblox.DataV2.Core.SortOrder)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageAccessor.GetTranslationHistory(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Int32,Roblox.DataV2.Core.SortOrder)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationHistory(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Int32,Roblox.DataV2.Core.SortOrder)"/>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.TranslationStorageBuilder">
+            <inheritdoc />
+            <summary>
+            A class for creating and updating translations to the Translation Storage service.
+            </summary>
+            <seealso cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder" />
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.#ctor(Roblox.TranslationStorage.Client.ITranslationStorageClient,Roblox.Platform.TranslationStorage.ITranslationStorageResponseConverter,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.TranslationStorage.TranslationStorageBuilder"/> class.
+            </summary>
+            <param name="client">The client.</param>
+            <param name="translationStorageResponseConverter"></param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+            client
+            or
+            translationStorageResponseConverter
+            or
+            logger
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.CreateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.CreateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.CreateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.CreateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.CreateOrUpdateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.CreateOrUpdateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.CreateOrUpdateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.CreateOrUpdateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.DeleteTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.DeleteTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.DeleteTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.DeleteTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.UpdateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.UpdateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.UpdateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <inheritdoc cref="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.UpdateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)"/>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageBuilder.MigrateTranslations(System.Collections.Generic.IEnumerable{Roblox.Platform.TranslationStorage.MigrateTranslationId},Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType)">
+            <inheritdoc cref="!:MigrateTranslations(IDictionary, ContentSourceType, ContentVariantType)"/>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.TranslationValue">
+            <summary>
+            A class that contains information like content locale, translation etc.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationValue.#ctor(System.String,System.String)">
+            <summary>
+            The constructor.
+            </summary>
+            <param name="contentLocale"></param>
+            <param name="translation"></param>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.TranslationValue.ContentLocale">
+            <summary>
+            What locale the translation is in.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.TranslationValue.Translation">
+            <summary>
+            The translation
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ValueSource`1">
+            <summary>
+            A class containing a ValueSource that contains information like source string value, targetId etc.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ValueSource`1.#ctor(`0,System.String,System.String,System.String,System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.TranslationStorage.ValueSource`1" /> class.
+            </summary>
+            <param name="identifier">The <typeparamref name="TIdentifier"/>.</param>
+            <param name="value">The source string value.</param>
+            <param name="targetId">The target identifier to query TranslationStorage.</param>
+            <param name="shadowRolloutId">The shadow roll-out range. This can be be initialized with id of the <typeparamref name="TIdentifier"/>.</param>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ValueSource`1.Identifier">
+            <summary>
+            The Identifier of <typeparamref name="TIdentifier"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ValueSource`1.Value">
+            <summary>
+            The source string value.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ValueSource`1.SourceLocale">
+            <summary>
+            The source locale
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ValueSource`1.TargetId">
+            <summary>
+            The Target identifier for querying TranslationStorage.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ValueSource`1.ShadowRolloutId">
+            <summary>
+            Gets the shadow roll-out id for this ValueSource.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.IGenericTranslationStorageAccessor`1">
+            <summary>
+            A generic accessor for hitting the TranslationStorage service with shadow roll-out logic.
+            </summary>
+            <typeparam name="TIdentifier">The type of the identifier.</typeparam>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.IGenericTranslationStorageAccessor`1.GetTranslationValue(Roblox.Platform.TranslationStorage.ValueSource{`0},System.String,System.String,System.String)">
+            <summary>
+            Gets the translation value from the service or the source string if it is not present.
+            </summary>
+            <param name="valueSource">The <see cref="T:Roblox.Platform.TranslationStorage.ValueSource`1"/>.</param>
+            <param name="contentSourceType">The content source type.</param>
+            <param name="contentVariantType">The content variant type.</param>
+            <param name="contentLocaleType">The content locale type.</param>
+            <returns>
+            A translation value or the source string.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">valueSource</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">contentSourceType</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.IGenericTranslationStorageAccessor`1.MultiGetTranslationValues(System.Collections.Generic.ICollection{Roblox.Platform.TranslationStorage.ValueSource{`0}},System.String,System.String,System.String)">
+            <summary>
+            Multi-get translation values from the service or source strings.
+            </summary>
+            <param name="valueSources">The <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Roblox.Platform.TranslationStorage.ValueSource`1"/>.</param>
+            <param name="contentSourceType">The content source type.</param>
+            <param name="contentVariantType">The content variant type.</param>
+            <param name="contentLocaleType">The content locale type.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IDictionary`2"/> of <typeparamref name="TIdentifier"/> and its translationValue from the service or source string.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">valueSource</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">contentSourceType</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.IGenericTranslationStorageAccessor`1.GetTranslationValuesInAllContentLocales(System.String,System.String,System.String,System.String)">
+            <summary>
+            Gets the translation values in all locales. This also indicates whether the value is a source string or not.
+            </summary>
+            <param name="sourceLocale">The source locale.</param>
+            <param name="contentSourceType">The content source type.</param>
+            <param name="contentVariantType">The content variant type.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IReadOnlyCollection`1" /> of <see cref="T:Roblox.Platform.TranslationStorage.TranslationValue"/>.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.IGetTranslationHistoryResult">
+            <summary>
+            An interface that holds results of getting translation history.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.IGetTranslationHistoryResult.History">
+            <summary>
+            A collection of <see cref="T:Roblox.Platform.TranslationStorage.ITranslationSummary"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.IGetTranslationHistoryResult.LastEvaluatedId">
+            <summary>
+            The last evaluated id.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.IChangeAgent">
+            <summary>
+            An interface representing an <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.IChangeAgent.ChangeAgentType">
+            <summary>
+            Gets the value of property <see cref="P:Roblox.Platform.TranslationStorage.IChangeAgent.ChangeAgentType"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.IChangeAgent.ChangeAgentTargetId">
+            <summary>
+            Gets the value of property <see cref="P:Roblox.Platform.TranslationStorage.IChangeAgent.ChangeAgentTargetId"/>.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.IChangeAgentFactory">
+            <summary>
+            An interface to get an <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.IChangeAgentFactory.GetChangeAgentForUser(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the change agent for user.
+            </summary>
+            <param name="user">The user.</param>
+            <returns>An <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/> corresponding to the user.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.IChangeAgentFactory.GetChangeAgentForAutomation(Roblox.Platform.TranslationStorage.AutomationType)">
+            <summary>
+            Gets the change agent for automation.
+            </summary>
+            <param name="automationType">Type of the automation.</param>
+            <returns>An <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/> corresponding to AutomationType.</returns>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ITranslationForContentSourceTargetId">
+            <summary>
+            An interface that holds a translation.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ITranslationForContentSourceTargetId.ContentSourceTargetId">
+            <summary>
+            Gets the content source target identifier.
+            </summary>
+            <value>
+            The content source target identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ITranslationForContentSourceTargetId.TranslationValue">
+            <summary>
+            Gets the translation value.
+            </summary>
+            <value>
+            The translation value.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ITranslationForContentLocale">
+            <summary>
+            An interface that holds translations for ContentLocales.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ITranslationForContentLocale.ContentLocale">
+            <summary>
+            Gets the content locale.
+            </summary>
+            <value>
+            The content locale.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ITranslationForContentLocale.TranslationValue">
+            <summary>
+            Gets the translated value.
+            </summary>
+            <value>
+            The translated value.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ITranslationSummary">
+            <summary>
+            A interface that holds a translation change history record.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ITranslationSummary.TranslationValue">
+            <summary>
+            The translation value.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ITranslationSummary.ChangeAgent">
+            <summary>
+            The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.ITranslationSummary.Created">
+            <summary>
+            The time when the change happened.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor">
+            <summary>
+            An interface to access the translation storage service through client.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)">
+            <summary>
+            Retrieves the translation for the provided arguments.
+            </summary>
+            <param name="supportedLocale">The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType"/>.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType"/>.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <returns>
+            The translation for the passed in arguments.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)">
+            <summary>
+            Retrieves the translation.
+            </summary>
+            <param name="languageFamily">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</param>
+            <param name="contentSourceType">TheType of the content source.</param>
+            <param name="contentVariantType">Type of the content variant.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <returns>
+            The translation for the passed in arguments.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationsForContentSourceTargetIds(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <summary>
+            Gets the translations for the provided <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> of <paramref name="contentSourceTargetIds"/>.
+            </summary>
+            <param name="supportedLocale">The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale" />.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" />.</param>
+            <param name="contentSourceTargetIds">The collection of content source target identifiers.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IReadOnlyCollection`1" /> of <see cref="T:Roblox.Platform.TranslationStorage.ITranslationForContentSourceTargetId" /> corresponding to the passed in information.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="supportedLocale"/> is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType"/> is not supported or <paramref name="contentSourceTargetIds"/> is null or contains nulls.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to get the translations from the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationsForContentSourceTargetIds(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <summary>
+            Gets the translations for the provided <see cref="T:System.Collections.Generic.IReadOnlyCollection`1" /> of <paramref name="contentSourceTargetIds" />.
+            </summary>
+            <param name="languageFamily">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" />.</param>
+            <param name="contentSourceTargetIds">The collection of content source target identifiers.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IReadOnlyCollection`1" /> of <see cref="T:Roblox.Platform.TranslationStorage.ITranslationForContentSourceTargetId" /> corresponding to the passed in information.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="languageFamily" /> is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" /> is not supported or <paramref name="contentSourceTargetIds" /> is null or contains nulls.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to get the translations from the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationForContentLocales(Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String)">
+            <summary>
+            Gets the translation for content locales.
+            </summary>
+            <param name="contentSourceType">Type of the content source.</param>
+            <param name="contentVariantType">Type of the content variant.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> of <see cref="T:Roblox.Platform.TranslationStorage.ITranslationForContentLocale"/> corresponding to the passed in information.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType"/> is not supported or <paramref name="contentSourceTargetId"/> is null or whitespace.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to get the translations from the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationHistory(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Int32,Roblox.DataV2.Core.SortOrder)">
+            <summary>
+            Retrieves translation history for provided locale.
+            </summary>
+            <param name="supportedLocale">The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale" />.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" />.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="exclusiveStartId">The exclusiveStartId.</param>
+            <param name="count">The count of results.</param>
+            <param name="sortOrder">The <see cref="T:Roblox.DataV2.Core.SortOrder" />.</param>
+            <returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="supportedLocale" /> is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" /> is not supported or <paramref name="contentSourceTargetId" /> is null or whitespaces or <paramref name="count"/> is less than one.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to get the translation history from the storage service.</exception>
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor.GetTranslationHistory(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Int32,Roblox.DataV2.Core.SortOrder)">
+            <summary>
+            Retrieves translation history for provided language.
+            </summary>
+            <param name="languageFamily">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" />.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="exclusiveStartId">The exclusiveStartId.</param>
+            <param name="count">The count of results.</param>
+            <param name="sortOrder">The <see cref="T:Roblox.DataV2.Core.SortOrder" />.</param>
+            <returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="languageFamily" /> is null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" /> is not supported or <paramref name="contentSourceTargetId" /> is null or whitespaces or <paramref name="count"/> is less than one.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to get the translation history from the storage service.</exception>
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder">
+            <summary>
+            An interface that creates and updates translations to the Translation Storage service.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.CreateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <summary>
+            Creates the translation for the provided arguments.
+            </summary>
+            <param name="supportedLocale">The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale" />.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" /> of the translation.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="translationValue">The translation value.</param>
+            <param name="isSourceContentVariantAndLocale">if set to <c>true</c> [is source content variant and locale].</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="supportedLocale" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" />  is not supported or <paramref name="contentSourceTargetId" /> or <paramref name="translationValue" /> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to upload the translation to the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.CreateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <summary>
+            Creates the translation for the provided arguments.
+            </summary>
+            <param name="languageFamily">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" /> of the translation.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="translationValue">The translation value.</param>
+            <param name="isSourceContentVariantAndLocale">if set to <c>true</c> [is source content variant and locale].</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="languageFamily" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" />  is not supported or <paramref name="contentSourceTargetId" /> or <paramref name="translationValue" /> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to upload the translation to the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.CreateOrUpdateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <summary>
+            Creates a new translation for the provided arguments or updates an existing translation.
+            </summary>
+            <param name="supportedLocale">The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale" />.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" /> of the translation.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="translationValue">The translation value.</param>
+            <param name="isSourceContentVariantAndLocale">if set to <c>true</c> [is source content variant and locale].</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.</param>
+            <returns><see cref="T:Roblox.Platform.TranslationStorage.CreateOrUpdateTranslationStatus"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="supportedLocale" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" />  is not supported or <paramref name="contentSourceTargetId" /> or <paramref name="translationValue" /> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to upload the translation to the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.CreateOrUpdateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,System.Boolean,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <summary>
+            Creates a new translation for the provided arguments or updates an existing translation.
+            </summary>
+            <param name="languageFamily">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" /> of the translation.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="translationValue">The translation value.</param>
+            <param name="isSourceContentVariantAndLocale">if set to <c>true</c> [is source content variant and locale].</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.</param>
+            <returns><see cref="T:Roblox.Platform.TranslationStorage.CreateOrUpdateTranslationStatus"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="languageFamily" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" />  is not supported or <paramref name="contentSourceTargetId" /> or <paramref name="translationValue" /> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to upload the translation to the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.DeleteTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <summary>
+            Deletes the translation for the provided arguments.
+            </summary>
+            <param name="supportedLocale">The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType"/>.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType"/>.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.</param>
+            <returns><see cref="T:Roblox.Platform.TranslationStorage.DeleteTranslationResponse"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="supportedLocale" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" />  is not supported or <paramref name="contentSourceTargetId" /> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to upload the translation to the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.DeleteTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <summary>
+            Deletes the translation for the provided arguments.
+            </summary>
+            <param name="languageFamily">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType"/>.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType"/>.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.</param>
+            <returns><see cref="T:Roblox.Platform.TranslationStorage.DeleteTranslationResponse"/>.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="languageFamily" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" />  is not supported or <paramref name="contentSourceTargetId" /> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to upload the translation to the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.UpdateTranslation(Roblox.Platform.Localization.Core.ISupportedLocale,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <summary>
+            Updates the translation for the provided arguments.
+            </summary>
+            <param name="supportedLocale">The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" /> of the translation.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="translationValue">The translation value.</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="supportedLocale" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" />  is not supported or <paramref name="contentSourceTargetId" /> or <paramref name="translationValue" /> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to upload the translation to the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.UpdateTranslation(Roblox.Platform.Localization.Core.ILanguageFamily,Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType,System.String,System.String,Roblox.Platform.TranslationStorage.IChangeAgent)">
+            <summary>
+            Updates the translation for the provided arguments.
+            </summary>
+            <param name="languageFamily">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily"/>.</param>
+            <param name="contentSourceType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentSourceType" />.</param>
+            <param name="contentVariantType">The <see cref="T:Roblox.Platform.TranslationStorage.ContentVariantType" /> of the translation.</param>
+            <param name="contentSourceTargetId">The content source target identifier.</param>
+            <param name="translationValue">The translation value.</param>
+            <param name="changeAgent">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgent"/>.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="languageFamily" /> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="contentVariantType" />  is not supported or <paramref name="contentSourceTargetId" /> or <paramref name="translationValue" /> is null or empty.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown in case there is any exception while attempting to upload the translation to the storage service.</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder.MigrateTranslations(System.Collections.Generic.IEnumerable{Roblox.Platform.TranslationStorage.MigrateTranslationId},Roblox.Platform.TranslationStorage.ContentSourceType,Roblox.Platform.TranslationStorage.ContentVariantType)">
+            <summary>
+            Migrates a translation and its retained created history. Deletes the old translations and history afterwards
+            </summary>
+            <param name="migrateTranslationIds"></param>
+            <param name="contentSourceType"></param>
+            <param name="contentVariantType"></param>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.DeleteTranslationResponse">
+            <summary>
+            A class that represents a DeleteTranslationResponse
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.TranslationStorage.DeleteTranslationResponse.StatusCode">
+            <summary>
+            Gets or sets the status code.
+            </summary>
+            <value>
+            The <see cref="T:Roblox.Platform.TranslationStorage.OperationStatusCode"/>.
+            </value>
+        </member>
+        <member name="T:Roblox.Platform.TranslationStorage.TranslationStorageDomainManager">
+            <summary>
+            A domain manager for creating the accessors and builders.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageDomainManager.#ctor(Roblox.TranslationStorage.Client.ITranslationStorageClient,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.TranslationStorage.TranslationStorageDomainManager" /> class.
+            </summary>
+            <param name="client">The client.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">client</exception>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageDomainManager.GetTranslationStorageAccessor">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor"/>.
+            </summary>
+            <returns>A new <see cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageDomainManager.GetTranslationStorageBuilder">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder" />.
+            </summary>
+            <returns>
+            A new <see cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageBuilder" />.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageDomainManager.GetChangeAgentFactory">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgentFactory" />.
+            </summary>
+            <returns>
+            A new <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgentFactory" />.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.TranslationStorage.TranslationStorageDomainManager.GetGenericTranslationStorageAccessor``1(System.Func{System.Boolean},System.Func{System.Boolean},System.Func{System.Int32})">
+            <summary>
+            Gets the generic translation storage accessor.
+            </summary>
+            <typeparam name="TIdentifier">The type of the identifier.</typeparam>
+            <returns>An <see cref="T:Roblox.Platform.TranslationStorage.IGenericTranslationStorageAccessor`1"/></returns>
+        </member>
+    </members>
+</doc>

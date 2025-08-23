@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Authentication.AccountSecurityTickets</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsDomainFactories">
+            <summary>
+            Represents a set of factories for the account security tickets domain.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.DomainFactoriesBase" />
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsDomainFactories.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsDomainFactories"/> class.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType">
+            <summary>
+            Represents the account security type.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType.Email">
+            <summary>
+            The entry indicates a email.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType.Password">
+            <summary>
+            The entry indicates password.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType.PhoneNumber">
+            <summary>
+            The entry indicates a phone number.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketDisconnector">
+            <summary>
+                Provides functionality that disconnects account security tickets
+                from various information.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketDisconnector.#ctor(Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsDomainFactories)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets" /> class.
+            </summary>
+            <param name="domainFactories">The domain factories <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsDomainFactories" />. </param>
+            <exception cref="T:System.ArgumentNullException">
+                <paramref name="domainFactories" />
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketDisconnector.DisconnectSecurityTicketsWithPhoneNumber(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketDisconnector.DisconnectSecurityTicketsWithEmail(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketDisconnector.DisconnectSecurityTickets(System.Int64,Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType)">
+            <summary>
+                Deletes security tickets and security ticket items that are targeting
+                specified accountSecurityType.
+            </summary>
+            <param name="accountId">Account whose tickets should be deleted.</param>
+            <param name="accountSecurityType">
+                Type of security ticket items that should be removed.
+                <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType" />
+            </param>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketDisconnector.DisconnectSecurityTickets(System.Int64,System.Boolean,Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType)">
+            <summary>
+                Deletes security tickets and their items.
+            </summary>
+            <param name="accountId">Account whose security tickets should be deleted.</param>
+            <param name="isValid">Flag indicating whether to target only valid or invalid tickets.</param>
+            <param name="accountSecurityType">Type of security ticket items to delete. <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType" /></param>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketDisconnector.DeleteSecurityTicketItems(System.Int64,Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType)">
+            <summary>
+                Deletes all security ticket items of specific type id and related to specified ticket id.
+            </summary>
+            <param name="securityTicketId">Security ticket that should be deleted.</param>
+            <param name="accountSecurityType">Type of security ticket items to delete. <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityType" /></param>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItem">
+            <summary>
+            Represents the account security ticket item.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItem.AccountSecurityTicketsId">
+            <summary>
+            The entry indicates the ticket this item is associated with 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItem.AccountSecurityTypeId">
+            <summary>
+            The entry indicates the type of item this
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItem.AccountSecurityTargetId">
+            <summary>
+            The entry indicates the ticket the target to revert to
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets">
+            <summary>
+            Represents the account security tickets.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets.Id">
+            <summary>
+            The entry indicates the Id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets.Value">
+            <summary>
+            The entry indicates the Value of the ticket
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets.AccountId">
+            <summary>
+            The entry indicates the AccountId of the ticket owner
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets.IsValid">
+            <summary>
+            The entry represents weather the ticket is valid
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItemFactory.#ctor(Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItem" /> class.
+            </summary>
+            <param name="domainFactories">The domain factories.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="domainFactories"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItemFactory.CreateEntry(System.Int64,System.Int64,System.Int16)">
+            <summary>
+            Creates a <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItem"/>.
+            </summary>
+            <param name="accountSecurityTicketId">The account security ticket ID.</param>
+            <param name="accountSecurityTargetId">The account security target ID.</param>
+            <param name="accountSecurityTypeId">The account security type ID.</param>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItemFactory.GetByAccountSecurityTicketsIdEnumerative(System.Int64)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItem"/>s by their account security tickets ID
+            </summary>
+            <param name="accountSecurityTicketId">The account security ID.</param>
+            <returns>The page of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsFactory.#ctor(Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets" /> class.
+            </summary>
+            <param name="domainFactories">The domain factories.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="domainFactories"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsFactory.CreateEntry(System.Int64)">
+            <inheritdoc cref="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory.CreateEntry(System.Int64,System.Guid)"/>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsFactory.CreateEntry(System.Int64,System.Guid)">
+            <inheritdoc cref="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory.CreateEntry(System.Int64,System.Guid)"/>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsFactory.GetByValue(System.Guid)">
+            <inheritdoc cref="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory.GetByValue(System.Guid)"/>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsFactory.InvalidateCurrentAndNewerAccountSecurityTickets(System.Int64,System.Int64)">
+            <summary>
+            Invalidates all new valid security tickets from the inputted exclusiveStartAccountSecurityTicketsV2Id
+            </summary>
+            <param name="accountId">The account id to get this from.</param>
+            <param name="exclusiveStartAccountSecurityTicketsV2Id">The exclusive key at which to begin getting entities.</param>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsFactory.CreateAccountSecurityTickets(System.Int64,System.Guid,System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Creates AccountSecurityTicketItems linked to the supplied Guid 
+            </summary>
+            <param name="accountId">The accountId of the user.</param>
+            <param name="value">The Guid of the ticket to attach to the item.</param>
+            <param name="accountEmailAddressId">The account email address to create a ticket for.</param>
+            <param name="accountPasswordId">The account password to create a ticket for.</param>
+            <param name="phoneNumberId">The phone number to create a ticket for.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="value"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsFactory.Get(System.Guid)">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets"/> by it's GUID, null otherwise
+            </summary>
+            <param name="value">The Guid of the ticket.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="value"/> is null.</exception>
+            <returns>A <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntityFactory.Create(System.Int64,System.Int64,System.Int16)">
+            <summary>
+            Creates and persists a new <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/> with the given account ID.
+            </summary>
+            <param name="accountSecurityTicketId">The account security ticket ID.</param>
+            <param name="accountSecurityTargetId">The account security target ID.</param>
+            <param name="accountSecurityTypeId">he account security type ID.</param>
+            <returns>The created <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntityFactory.GetByAccountSecurityTicketsIdEnumerative(System.Int64,System.Int32,System.Int64)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/>s by their account security tickets ID
+            </summary>
+            <param name="accountSecurityTicketId">The account security ID.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartAccountSecurityTicketItemId">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntityFactory.GetTotalByAccountSecurityTicketId(System.Int64)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/>s with the given accountSecurityTicketId
+            </summary>
+            <param name="accountSecurityTicketId">The account security ID.</param>
+            <returns>The total number of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/>s with the given accountSecurityTicketId.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2EntityFactory.Create(System.Int64)">
+            <summary>
+            Creates and persists a new <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/> with the given account ID.
+            </summary>
+            <param name="accountId">The account ID.</param>
+            <returns>The created <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2EntityFactory.Create(System.Int64,System.Guid)">
+            <summary>
+            Creates and persists a new <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/> with the given account ID.
+            </summary>
+            <param name="accountId">The account ID.</param>
+            <param name="value">The value.</param>
+            <returns>The created <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2EntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2EntityFactory.GetByValue(System.Guid)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/> by its value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2EntityFactory.GetByAccountIdAndIsValidEnumerative(System.Int64,System.Boolean,System.Int64,System.Int64)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/>s by their accountId and isValid
+            </summary>
+            <param name="accountId">The account id to get this from.</param>
+            <param name="isValid">if the entiries will be valid.</param>
+            <param name="count">The number of entities to get.</param>
+            <param name="exclusiveStartAccountSecurityTicketsV2Id">The exclusive key at which to begin getting entities.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="count"/> is non-positive.</exception>
+            <returns>The page of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2EntityFactory.GetTotalByAccountIdAndIsValid(System.Int64,System.Boolean)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/>s with the given accountId and whether it isValid
+            </summary>
+            <param name="accountId">The account id to get this from.</param>
+            <param name="isValid">if the entiries will be valid.</param>
+            <returns>The total number of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/>s with the given accountId and whether it isValid.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTypeEntityFactory.Get(System.Int16)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTypeEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTypeEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTypeEntityFactory.GetByValue(System.String)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTypeEntity"/> with the given value
+            </summary>
+            <param name="value">The value.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="value"/> is null.</exception>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTypeEntity"/> with the given the value</returns>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.Interfaces.Factories.IAccountSecurityTicketItemFactory">
+            <summary>
+            Provides common functions for account security ticket items
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.Interfaces.Factories.IAccountSecurityTicketItemFactory.CreateEntry(System.Int64,System.Int64,System.Int16)">
+            <summary>
+            Creates a <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItem"/>.
+            </summary>
+            <param name="accountSecurityTicketId">The account security ticket ID.</param>
+            <param name="accountSecurityTargetId">The account security target ID.</param>
+            <param name="accountSecurityTypeId">The account security type ID.</param>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.Interfaces.Factories.IAccountSecurityTicketItemFactory.GetByAccountSecurityTicketsIdEnumerative(System.Int64,System.Int32,System.Int64)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/>s with the given accountSecurityTicketId
+            </summary>
+            <param name="accountSecurityTicketId">The account security ID.</param>
+            <param name="count">The maximum number to be returned.</param>
+            <param name="exclusiveStartAccountSecurityTicketItemId">The exclusiveStartAccountSecurityTicketItemId to start pulling from.</param>
+            <returns>The total number of <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItemEntity"/>s with the given accountSecurityTicketId.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory.CreateEntry(System.Int64,System.Guid)">
+            <summary>
+            Creates a <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/>.
+            </summary>
+            <param name="accountId">The account ID.</param>
+            <param name="value">The value.</param>
+            <returns>The created <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory.GetByValue(System.Guid)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/> by its value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsV2Entity"/> with the given value, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory.CreateAccountSecurityTickets(System.Int64,System.Guid,System.Int64,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Creates AccountSecurityTicketItems linked to the supplied Guid 
+            </summary>
+            <param name="accountId">The accountId of the user.</param>
+            <param name="value">The Guid of the ticket to attach to the item.</param>
+            <param name="accountEmailAddress">The account email address to create a ticket for.</param>
+            <param name="accountPassword">The account password to create a ticket for.</param>
+            <param name="accountPhoneNumber">The account phone number to create a ticket for.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="value"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory.Get(System.Guid)">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets"/> by it's GUID, null otherwise
+            </summary>
+            <param name="value">The Guid of the ticket.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="value"/> is null.</exception>
+            <returns>A <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketsFactory.InvalidateCurrentAndNewerAccountSecurityTickets(System.Int64,System.Int64)">
+            <summary>
+            Invalidates all new valid security tickets from the inputted exclusiveStartAccountSecurityTicketsV2Id
+            </summary>
+            <param name="accountId">The account id to get this from.</param>
+            <param name="exclusiveStartAccountSecurityTicketsV2Id">The exclusive key at which to begin getting entities.</param>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketDisconnector">
+            <summary>
+                Provides methods to disconnect account security tickets with various information.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketDisconnector.DisconnectSecurityTicketsWithPhoneNumber(System.Int64)">
+            <summary>
+                Disconnects security tickets and all their ticket items that are targeting phones.
+            </summary>
+            <remarks>
+                It is not safe to use this method outside of the processors.
+                Where is this used? When phone number is purged or disconnected from the user, due to privacy
+                (COPPA or GDPR), we would need to remove all security tickets that keep user -> phone connection.
+            </remarks>
+            <param name="accountId">Account whose security tickets should be removed.</param>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketDisconnector.DisconnectSecurityTicketsWithEmail(System.Int64)">
+            <summary>
+                Disconnects security tickets and all ticket items that are targeting emails for provided accountId.
+            </summary>
+            <remarks>
+                It is not safe to use this method outside of the processors.
+                Where is this used? When email is purged or disconnected from the user, due to privacy
+                (COPPA or GDPR), we would need to remove all security tickets that keep user -> email connection.
+            </remarks>
+            <param name="accountId">Account whose security tickets should be removed.</param>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItem">
+            <summary>
+            Represents the account security ticket item.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItem.AccountSecurityTicketsId">
+            <summary>
+            The entry indicates the ticket this item is associated with 
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItem.AccountSecurityTypeId">
+            <summary>
+            The entry indicates the type of item this
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTicketItem.AccountSecurityTargetId">
+            <summary>
+            The entry indicates the ticket the target to revert to
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTickets">
+            <summary>
+            Represents the account security tickets.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTickets.Id">
+            <summary>
+            The entry indicates the Id
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTickets.Value">
+            <summary>
+            The entry indicates the Value of the ticket
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTickets.AccountId">
+            <summary>
+            The entry indicates the AccountId of the ticket owner
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurityTickets.IAccountSecurityTickets.IsValid">
+            <summary>
+            The entry represents weather the ticket is valid
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurityTickets.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,6 +1,8 @@
 using Roblox.Permissions.Client;
 using Roblox.Platform.Membership;
 
+using Roblox.Platform.Permissions.Core;
+
 namespace Roblox.Platform.Permissions;
 
 public interface IUserPermissionTestFactory

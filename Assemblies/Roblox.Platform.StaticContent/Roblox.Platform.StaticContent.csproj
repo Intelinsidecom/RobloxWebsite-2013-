@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.StaticContent</AssemblyName>
@@ -10,12 +10,15 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.StaticContent.Client">
-      <HintPath>..\..\full\Roblox.StaticContent.Client.dll</HintPath>
-    </Reference>
+    <Compile Remove="Roblox.StaticContent.Client\Stubs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clients\Roblox.StaticContent.Client\Roblox.StaticContent.Client.csproj" />
     <Reference Include="System.Core" />
+    <Reference Include="Roblox.Http.Client">
+      <HintPath>..\..\Website\bin\Roblox.Http.Client.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
@@ -49,5 +52,8 @@
     <Reference Include="Roblox.CachingV2.Diagnostics">
       <HintPath>..\..\Website\bin\Roblox.CachingV2.Diagnostics.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyName>Roblox.StaticContent.Client</AssemblyName>
+    <RootNamespace>Roblox.StaticContent.Client</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>11.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj" />
+    <ProjectReference Include="..\..\DataV2\Core\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj" />
+  </ItemGroup>
+</Project>

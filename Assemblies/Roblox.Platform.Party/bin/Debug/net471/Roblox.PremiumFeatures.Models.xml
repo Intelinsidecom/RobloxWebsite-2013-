@@ -1,0 +1,771 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.PremiumFeatures.Models</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.PremiumFeatures.Models.MembershipMigrationAuditLogModel">
+            <summary>
+            Membership Migration Audit Log Model
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.MembershipMigrationModel">
+            <summary>
+            Membership Migration Model
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Enums.CurrencyType">
+            <summary>
+            Represents a type of currency.
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.USD">
+            <summary>
+            US Dollar
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.CAD">
+            <summary>
+            Canadian Dollar
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.GBP">
+            <summary>
+            Pound Sterling
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.EUR">
+            <summary>
+            Euro
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.DZD">
+            <summary>
+            Algerian dinar
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.AUD">
+            <summary>
+            Australian dollar
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.BDT">
+            <summary>
+            Bangladeshi taka
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.BOB">
+            <summary>
+            Bolivian boliviano
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.BRL">
+            <summary>
+            Brazilian real
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.BGN">
+            <summary>
+            Bulgarian lev (old)
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.CLP">
+            <summary>
+            Chilean Peso
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.CNY">
+            <summary>
+            Chinese yuan renminbi
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.COP">
+            <summary>
+            Colombian peso
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.CRC">
+            <summary>
+            Costa Rican colon
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.HRK">
+            <summary>
+            Croatian Kuna
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.CZK">
+            <summary>
+            Czech koruna
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.DKK">
+            <summary>
+            Danish krone
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.EGP">
+            <summary>
+            Egyptian pound
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.GHS">
+            <summary>
+            Ghanaian cedi
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.HKD">
+            <summary>
+            Hong Kong Dollar
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.HUF">
+            <summary>
+            Hungarian Forint
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.INR">
+            <summary>
+            Indian Rupee
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.IDR">
+            <summary>
+            Indonesian Rupiah
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.ILS">
+            <summary>
+            Israeli New Shekel
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.JPY">
+            <summary>
+            Japanese Yen
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.KZT">
+            <summary>
+            Kazakhstani Tenge
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.KES">
+            <summary>
+            Kenyan Shilling
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.LBP">
+            <summary>
+            Lebanese Pound
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.MOP">
+            <summary>
+            Macao pataca
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.MYR">
+            <summary>
+            Malaysian Ringgit
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.MXN">
+            <summary>
+            Mexican Peso
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.MAD">
+            <summary>
+            Moroccan Dirham
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.NZD">
+            <summary>
+            New Zealand Dollar
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.NGN">
+            <summary>
+            Nigerian Naira
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.NOK">
+            <summary>
+            Norwegian Krone
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.PKR">
+            <summary>
+            Pakistani Rupee
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.PEN">
+            <summary>
+            Peruvian Sol
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.PHP">
+            <summary>
+            Philippine Peso
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.PLN">
+            <summary>
+            Polish Zloty
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.QAR">
+            <summary>
+            Qatari Riyal
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.RON">
+            <summary>
+            Romanian Leu
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.RUB">
+            <summary>
+            Russian Ruble
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.SAR">
+            <summary>
+            Saudi Riyal
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.SGD">
+            <summary>
+            Singapore Dollar
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.ZAR">
+            <summary>
+            South African Rand
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.KRW">
+            <summary>
+            South Korean Won
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.LKR">
+            <summary>
+            Sri Lankan Rupee
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.SEK">
+            <summary>
+            Swedish Krona
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.CHF">
+            <summary>
+            Swiss franc
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.TWD">
+            <summary>
+            New Taiwan dollar
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.TZS">
+            <summary>
+            Tanzanian shilling
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.THB">
+            <summary>
+            Thai Baht
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.TRY">
+            <summary>
+            Turkish lira
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.UAH">
+            <summary>
+            Ukrainian Hryvnia
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.AED">
+            <summary>
+            United Arab Emirates dirham
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.CurrencyType.VND">
+            <summary>
+            Vietnamese Dong
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode">
+            <summary>
+            Error code getting responses back from the PremiumFeatures Service
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.NoError">
+            <summary>
+            No error
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.UserNotFound">
+            <summary>
+            User not found
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.UserSubscriptionNotFound">
+            <summary>
+            Unable to find user's subscription
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.SubscriptionProductNotFound">
+            <summary>
+            Subscription product not found
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.ProductPriceNotFound">
+            <summary>
+            Product price not found
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.InvalidInput">
+            <summary>
+            Invalid input
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.NotConfirmed">
+            <summary>
+            Not Confirmed
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.UnableToCalculateRobuxGrant">
+            <summary>
+            Unable to calculate robux grant
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.ExceedsMaxRobuxGrantAmount">
+            <summary>
+            Exceeds the max robux grant amount
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.ServerError">
+            <summary>
+            Generic server error, currently only used for leased lock errors
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.UnableToUpdateSubscription">
+            <summary>
+            Unable to update subscription
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.Unknown">
+            <summary>
+            Unknown Type
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.BC_ClassicBuildersClub">
+            <summary>
+            Classic Builders Club
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.BC_TurboBuildersClub">
+            <summary>
+            Turbo Builders Club
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.BC_OutrageousBuildersClub">
+            <summary>
+            Outrageous Builders Club
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.RobloxPremium450">
+            <summary>
+            Premium Membership Tier 1
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.RobloxPremium1000">
+            <summary>
+            Premium Membership Tier 2
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.RobloxPremium2200">
+            <summary>
+            Premium Membership Tier 3
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.RobloxPremium450OneMonth">
+            <summary>
+            Premium Membership Tier 1 One Month
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.RobloxPremium1000OneMonth">
+            <summary>
+            Premium Membership Tier 2 One Month
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Enums.SubscriptionType.RobloxPremium2200OneMonth">
+            <summary>
+            Premium Membership Tier 3 One Month
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Implementations.SubscriptionTypeFactory">
+            <summary>
+            GetSubscriptionType
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Models.Implementations.SubscriptionTypeFactory.GetSubscriptionTypeName(System.String,System.String)">
+            <summary>
+            Get the SubscriptionType Name
+            </summary>
+            <param name="name">PremiumFeature name</param>
+            <param name="accountAddOnTypeName">Account Add On Type Name</param>
+            <returns>string version of corresponding<see cref="T:Roblox.PremiumFeatures.Models.Enums.SubscriptionType"/></returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Interfaces.ISubscriptionTypeFactory">
+            <summary>
+            SubscriptionType Factory
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Models.Interfaces.ISubscriptionTypeFactory.GetSubscriptionTypeName(System.String,System.String)">
+            <summary>
+            Get SubscriptionType Name
+            </summary>
+            <param name="name">PremiumFeature Name</param>
+            <param name="accountAddOnTypeName">AccountAddOnType Name</param>
+            <returns>SubscriptionType Name</returns>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Models.Interfaces.ISubscriptionTypeFactory.IsBuildersClubType(System.String)">
+            <summary>
+            Get IsBuildersClubType
+            </summary>
+            <param name="name">Product name</param>
+            <returns>If product is Builders Club type</returns>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Core.Currency">
+            <summary>
+            Currency Model
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.Currency.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.Currency.CurrencyType">
+            <summary>
+            Type of Currency
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.Currency.CurrencyName">
+            <summary>
+            Full name of Currency Type
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.Currency.CurrencySymbol">
+            <summary>
+            Currency Symbol
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Models.Core.Currency.#ctor(System.Byte,System.String,Roblox.PremiumFeatures.Models.Enums.CurrencyType,System.String)">
+            <summary>
+            Creates a Currency Object
+            </summary>
+            <param name="id"></param>
+            <param name="currencyName"></param>
+            <param name="currencyType"></param>
+            <param name="currencySymbol"></param>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Core.Money">
+            <summary>
+            Represents a monetary value.
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Core.Money.Amount">
+            <summary>
+            The amount of money.
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Core.Money.USDAmount">
+            <summary>
+            Optional field for amount in USD, and should only be populated when the currency is not USD.  
+            This is primarily here to be used for fraud detection.
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.Core.Money.Currency">
+            <summary>
+            The currency of the money.
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel">
+            <summary>
+            Premium Feature Product
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.ProductId">
+            <summary>
+            Product Id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.PremiumFeatureId">
+            <summary>
+            Premium Feature Id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.MobileProductId">
+            <summary>
+            Mobile Product Id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.RobuxAmount">
+            <summary>
+            Robux Amount
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.PremiumFeatureTypeName">
+            <summary>
+            Premium Feature Type
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.SubscriptionTypeName">
+            <summary>
+             Subscription Type
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.IsSubscriptionOnly">
+            <summary>
+             Subscription Type
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.Price">
+            <summary>
+            Localized price
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductModel.Description">
+            <summary>
+            Description of the product
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductErrorModel.ErrorCode">
+            <summary>
+            Error Code. see <see cref="T:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeaturesAvailableProductErrorModel.ErrorMessage">
+            <summary>
+            Template string error message. For internal use. Use code to render an appropriate message depending on UI.
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Core.PremiumFeatureProductModel">
+            <summary>
+            PremiumFeature Product Model
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeatureProductModel.PremiumFeatureId">
+            <summary>
+            PremiumFeature Id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeatureProductModel.MobileProductId">
+            <summary>
+            Mobile Product Id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeatureProductModel.RobuxAmount">
+            <summary>
+            Robux Amount
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeatureProductModel.PremiumFeatureType">
+            <summary>
+            PremiumFeature Type Name
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeatureProductModel.SubscriptionTypeName">
+            <summary>
+            Subscription Type Name
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeatureProductModel.IsSubscriptionOnly">
+            <summary>
+            Is only for subscribed users
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Core.PremiumFeatureProductModel.Description">
+            <summary>
+            Subscription Type Name
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.BuildersClubCancellationForUserErrorResponse.ErrorCode">
+            <summary>
+            Error Code. see <see cref="T:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.BuildersClubCancellationForUserErrorResponse.ErrorMessage">
+            <summary>
+            Template string error message. For internal use. Use code to render an appropriate message depending on UI.
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Responses.PremiumFeatureProductModelErrorResponse">
+            <summary>
+            Error response model for PremiumFeatureProductModel
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.PremiumFeatureProductModelErrorResponse.ErrorCode">
+            <summary>
+            Error Code. see <see cref="T:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.PremiumFeatureProductModelErrorResponse.ErrorMessage">
+            <summary>
+            Template string error message. For internal use. Use code to render an appropriate message depending on UI.
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Responses.PremiumFeatureProductModelResponse">
+            <summary>
+            Response model for PremiumFeature Products
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.PremiumFeatureProductModelResponse.PremiumFeatureProducts">
+            <summary>
+            PremiumFeature products
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.PremiumFeaturesErrorResponse.ErrorCode">
+            <summary>
+            Error Code. see <see cref="T:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.PremiumFeaturesErrorResponse.ErrorMessage">
+            <summary>
+            Template string error message. For internal use. Use code to render an appropriate message depending on UI.
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.Responses.PremiumFeaturesAvailableProductResponse">
+            <summary>
+            Response model for PremiumFeature available products
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.PremiumFeaturesAvailableProductResponse.Products">
+            <summary>
+            List of Products
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.PurchasePlatformResponse.PurchasePlatform">
+            <summary>
+            String value of the platform on which the subscription was purchased
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.SubscriptionProductErrorResponse.ErrorCode">
+            <summary>
+            Error Code. see <see cref="T:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.Responses.SubscriptionProductErrorResponse.ErrorMessage">
+            <summary>
+            Template string error message. For internal use. Use code to render an appropriate message depending on UI.
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.MembershipMigrationErrorResponse.ErrorCode">
+            <summary>
+            Error Code. see <see cref="T:Roblox.PremiumFeatures.MembershipMigrationsErrorCode"/>
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.MembershipMigrationErrorResponse.ErrorMessage">
+            <summary>
+            Template string error message. For internal use. Use code to render an appropriate message depending on UI.
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.Models.GetMembershipMigrationAuditLogResponse">
+            <summary>
+            Membership Migration Record Response
+            </summary>
+        </member>
+        <member name="M:Roblox.PremiumFeatures.Models.AttemptMembershipMigrationResponse.#ctor">
+            <summary>
+            For deserialization
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.AttemptMembershipMigrationResponse.UserId">
+            <summary>
+            UserId
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.AttemptMembershipMigrationResponse.RobuxGranted">
+            <summary>
+            Number of robux granted due to migration
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.AttemptMembershipMigrationResponse.StipendFrequency">
+            <summary>
+            Stipend Frequency
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.AttemptMembershipMigrationResponse.NewRobuxStipendAmount">
+            <summary>
+            New Robux stipend amount
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.Models.AttemptMembershipMigrationResponse.PremiumStartDate">
+            <summary>
+            Premium start date
+            </summary>
+        </member>
+        <member name="F:Roblox.PremiumFeatures.Models.AttemptMembershipMigrationResponse.PremiumFeatureName">
+            <summary>
+            Premium Feature Name
+            </summary>
+        </member>
+        <member name="T:Roblox.PremiumFeatures.SubscriptionProductModel">
+            <summary>
+            User's subscription product
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.SubscriptionProductModel.PremiumFeatureId">
+            <summary>
+            PremiumFeature Id
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.SubscriptionProductModel.SubscriptionTypeName">
+            <summary>
+            Subscription Type
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.SubscriptionProductModel.RobuxStipendAmount">
+            <summary>
+            Robux Stipend Amount
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.SubscriptionProductModel.IsLifetime">
+            <summary>
+            Is Lifetime
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.SubscriptionProductModel.Expiration">
+            <summary>
+            Expiration date
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.SubscriptionProductModel.Renewal">
+            <summary>
+            Renewal Date
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.SubscriptionProductModel.Created">
+            <summary>
+            Created Date
+            </summary>
+        </member>
+        <member name="P:Roblox.PremiumFeatures.SubscriptionProductModel.PurchasePlatform">
+            <summary>
+            Platform where Subscription was purchased
+            </summary>
+        </member>
+    </members>
+</doc>

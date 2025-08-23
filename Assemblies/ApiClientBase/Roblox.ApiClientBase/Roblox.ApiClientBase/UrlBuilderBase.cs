@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Web;
 
+#nullable enable annotations
+
 namespace Roblox.ApiClientBase;
 
 internal abstract class UrlBuilderBase

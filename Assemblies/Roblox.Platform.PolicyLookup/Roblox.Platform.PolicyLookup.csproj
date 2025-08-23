@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.PolicyLookup</AssemblyName>
@@ -8,11 +8,17 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);CS1668;1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.PolicyLookup" />
+    <Reference Include="Roblox.Platform.PolicyLookup">
+      <HintPath>..\..\Website\bin\Roblox.Platform.PolicyLookup.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.MembershipCore">
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Platform.Demographics">
       <HintPath>..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
     </Reference>
@@ -25,5 +31,11 @@
     <Reference Include="Roblox.RequestContext">
       <HintPath>..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
     </Reference>
+    <Reference Include="Roblox.Platform.PolicyLookup">
+      <HintPath>..\..\Website\bin\Roblox.Platform.PolicyLookup.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Roblox.Platform.PolicyLookup\IUserPolicyLookup.cs" />
   </ItemGroup>
 </Project>

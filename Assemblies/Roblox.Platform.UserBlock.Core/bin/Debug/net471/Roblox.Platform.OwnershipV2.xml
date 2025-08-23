@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.OwnershipV2</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.OwnershipV2.ItemType">
+            <summary>
+            The types of items that can be owned
+            This is actually only related to OV2
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.OwnershipV2.ItemType.GamePass">
+            <summary>
+            <see cref="!:Assets.IGamePass"/>
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.OwnershipV2.ItemType.BundleInstance">
+            <summary>
+            See Roblox.Platform.Bundles
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.OwnershipV2.OwnerType">
+            <summary>
+            The types of targets that can own an item
+            This is actually only related to OV2
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.OwnershipV2.OwnerType.User">
+            <summary>
+            <see cref="!:IUser"/>
+            </summary>
+        </member>
+    </members>
+</doc>

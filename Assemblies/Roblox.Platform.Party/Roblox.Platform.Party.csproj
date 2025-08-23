@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Party</AssemblyName>
@@ -8,9 +8,13 @@
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);CS1668;1668;CS0618</NoWarn>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.Universes">
       <HintPath>..\..\Website\bin\Roblox.Platform.Universes.dll</HintPath>
@@ -64,6 +68,5 @@
     <Reference Include="Roblox.Platform.AssetsCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
   </ItemGroup>
 </Project>

@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.TeamCreate</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net471</TargetFramework>
+    <NoWarn>$(NoWarn);CS1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -12,7 +13,7 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.TeamCreate.Client" />
+    <ProjectReference Include="..\Clients\Roblox.TeamCreate.Client\Roblox.TeamCreate.Client.csproj" />
     <Reference Include="Roblox.Platform.CloudEdit.Permissions">
       <HintPath>..\..\Website\bin\Roblox.Platform.CloudEdit.Permissions.dll</HintPath>
     </Reference>
@@ -40,7 +41,7 @@
     <Reference Include="Roblox.Platform.Social">
       <HintPath>..\..\Website\bin\Roblox.Platform.Social.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.PermissionResolution.Client" />
+    <ProjectReference Include="..\Clients\Roblox.PermissionResolution.Client\Roblox.PermissionResolution.Client.csproj" />
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
@@ -62,10 +63,13 @@
     <Reference Include="Roblox.Platform.AssetPermissions">
       <HintPath>..\..\Website\bin\Roblox.Platform.AssetPermissions.dll</HintPath>
     </Reference>
+    <Reference Include="Roblox.Platform.AssetsCore">
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
+    </Reference>
     <Reference Include="Roblox.Platform.Permissions">
       <HintPath>..\..\Website\bin\Roblox.Platform.Permissions.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Permissions.Client" />
+    <ProjectReference Include="..\Clients\Roblox.Permissions.Client\Roblox.Permissions.Client.csproj" />
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
     </Reference>
@@ -80,6 +84,9 @@
     <Reference Include="Roblox.Platform.MembershipCore">
       <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.300.6" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
 </Project>

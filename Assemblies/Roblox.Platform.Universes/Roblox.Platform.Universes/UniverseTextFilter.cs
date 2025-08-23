@@ -38,7 +38,7 @@ internal class UniverseTextFilter : IUniverseTextFilter
 		ValidateRequest(request);
 		try
 		{
-			FilterTextResult nameFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name, request.ClientTextAuthor, TextFilterServerType.WebUniverse, "", true);
+			FilterTextResult nameFilteredResult = _TextFilterClientV2.FilterObjectName(request.Name, request.ClientTextAuthor, TextFilterUsage.Universe, "", true);
 			if (nameFilteredResult.ModerationLevel == 3)
 			{
 				throw new PlatformUniverseTextFullyModeratedException("Universe Name is fully moderated.");
@@ -55,7 +55,7 @@ internal class UniverseTextFilter : IUniverseTextFilter
 					Description = (request.Description ?? "")
 				};
 			}
-			FilterTextResult descriptionFilteredResult = _TextFilterClientV2.FilterText(request.Description, request.ClientTextAuthor, TextFilterServerType.WebUniverse, "", true);
+			FilterTextResult descriptionFilteredResult = _TextFilterClientV2.FilterText(request.Description, request.ClientTextAuthor, TextFilterUsage.Universe, "", true);
 			if (descriptionFilteredResult.ModerationLevel == 3)
 			{
 				throw new PlatformUniverseTextFullyModeratedException("Universe Description is fully moderated.");
@@ -64,7 +64,7 @@ internal class UniverseTextFilter : IUniverseTextFilter
 			{
 				throw new UniverseTextPartiallyModeratedException("Universe Description is partially moderated.");
 			}
-			FilterTextResult combinedFilteredResult = _TextFilterClientV2.FilterText(request.Name + "\n" + request.Description, request.ClientTextAuthor, TextFilterServerType.WebUniverse, "", true);
+			FilterTextResult combinedFilteredResult = _TextFilterClientV2.FilterText(request.Name + "\n" + request.Description, request.ClientTextAuthor, TextFilterUsage.Universe, "", true);
 			if (nameFilteredResult.ModerationLevel == 1 && descriptionFilteredResult.ModerationLevel == 1 && combinedFilteredResult.ModerationLevel == 1)
 			{
 				return new UniverseTextFilterResult

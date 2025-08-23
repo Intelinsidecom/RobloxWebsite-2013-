@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Authentication.AccountSecurity</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityDomainFactories">
+            <summary>
+            Represents a set of factories for the account security tickets domain.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.DomainFactoriesBase" />
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityDomainFactories.AccountSecurityTicketItemFactory">
+            <summary>
+            Gets the account security ticket item factory.
+            </summary>
+            <value>the account security ticket item factory.</value>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityDomainFactories.TwoStepVerificationConfigurationProvider">
+            <summary>
+            Gets the two step verification configuration provider.
+            </summary>
+            <value>The two step verification configuration provider.</value>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityDomainFactories.AccountPhoneNumberFactory">
+            <summary>
+            Gets the account phone number factory.
+            </summary>
+            <value>The account phone number factory.</value>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityDomainFactories.PhoneNumberFactory">
+            <summary>
+            Gets the phone number factory.
+            </summary>
+            <value>The phone number factory.</value>
+        </member>
+        <member name="P:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityDomainFactories.EphemeralCounterFactory">
+            <summary>
+            Gets the ephemeral counter factory.
+            </summary>
+            <value>The ephemeral counter factory.</value>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityDomainFactories.#ctor(Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketItemFactory,Roblox.Platform.TwoStepVerification.ITwoStepVerificationConfigurationProvider,Roblox.Platform.Demographics.IAccountPhoneNumberFactory,Roblox.Platform.Demographics.IPhoneNumberFactory,Roblox.EphemeralCounters.IEphemeralCounterFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTicketsDomainFactories"/> class.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityFactory.#ctor(Roblox.Platform.Authentication.AccountSecurity.AccountSecurityDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="N:Roblox.Platform.Authentication.AccountSecurityTickets" /> class.
+            </summary>
+            <param name="domainFactories">The domain factories.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
+                <paramref name="domainFactories"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurity.AccountSecurityFactory.RevertAccountFromAccountSecurityTickets(Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets,Roblox.AccountSecurityTicket,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates AccountSecurityTicketItems linked to the supplied Guid 
+            </summary>
+            <param name="accountSecurityTicketsV2"><see cref="N:Roblox.Platform.Authentication.AccountSecurityTickets"/></param>
+            <param name="accountSecurityTicket"><see cref="T:Roblox.AccountSecurityTicket"/></param>
+            <param name="targetUser"><see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="accountSecurityTicketsV2"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="accountSecurityTicket"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="targetUser"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Authentication.AccountSecurity.IAccountSecurityFactory.RevertAccountFromAccountSecurityTickets(Roblox.Platform.Authentication.AccountSecurityTickets.AccountSecurityTickets,Roblox.AccountSecurityTicket,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Reverts the account from the AccountSecurityTicketItems linked to the AccountSecurityTickets
+            </summary>
+            <param name="accountSecurityTicketsV2"><see cref="N:Roblox.Platform.Authentication.AccountSecurityTickets"/></param>
+            <param name="accountSecurityTicket"><see cref="T:Roblox.AccountSecurityTicket"/></param>
+            <param name="targetUser"><see cref="T:Roblox.Platform.Membership.IUser"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="accountSecurityTicketsV2"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="accountSecurityTicket"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="targetUser"/> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Authentication.AccountSecurity.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -9,6 +9,7 @@ using Roblox.Platform.Core.ExclusiveStartPaging;
 using Roblox.Platform.Universes.Events;
 using Roblox.Platform.Universes.Properties;
 using Roblox.Universes.Client;
+using ClientUniverse = Roblox.Universes.Client.Universe;
 
 namespace Roblox.Platform.Universes;
 
@@ -56,7 +57,7 @@ internal class UniverseFactory : IUniverseFactory
 		{
 			throw new ArgumentNullException("universeIds");
 		}
-		return _Client.MultiGetUniverses((ICollection<long>)universeIds.ToList()).Select(ConvertClientToPlatformUniverse);
+		return _Client.MultiGetUniverses((ICollection<long>)universeIds.ToList()).Select(u => ConvertClientToPlatformUniverse(u));
 	}
 
 	/// <inheritdoc />
@@ -93,7 +94,7 @@ internal class UniverseFactory : IUniverseFactory
 	[Obsolete("Please use GetCreatorUniverses instead.")]
 	public IEnumerable<IUniverse> GetCreatorUniversesPaged(Roblox.Platform.Core.CreatorType creatorType, long creatorTargetId, int page, out long totalCount)
 	{
-		PagedResult<long, Universe> universePagedResult = _Client.GetCreatorUniverses(creatorType.ToString(), creatorTargetId, (int?)page, false);
+		PagedResult<long, ClientUniverse> universePagedResult = _Client.GetCreatorUniverses(creatorType.ToString(), creatorTargetId, (int?)page, false);
 		IEnumerable<IUniverse> result = universePagedResult.PageItems.Select(ConvertClientToPlatformUniverse);
 		totalCount = universePagedResult.Count;
 		return result;
@@ -119,7 +120,7 @@ internal class UniverseFactory : IUniverseFactory
 
 	public IEnumerable<IUniverse> GetCreatorPublicUniversesPaged(Roblox.Platform.Core.CreatorType creatorType, long creatorTargetId, int page, out long totalCount)
 	{
-		PagedResult<long, Universe> universePagedResult = _Client.GetCreatorPublicUniversesPaged(creatorType.ToString(), creatorTargetId, (int?)page, false);
+		PagedResult<long, ClientUniverse> universePagedResult = _Client.GetCreatorPublicUniversesPaged(creatorType.ToString(), creatorTargetId, (int?)page, false);
 		IEnumerable<IUniverse> result = universePagedResult.PageItems.Select(ConvertClientToPlatformUniverse);
 		totalCount = universePagedResult.Count;
 		return result;
@@ -144,14 +145,24 @@ internal class UniverseFactory : IUniverseFactory
 
 	public IPlatformPageResponse<long, IUniverse> GetCreatorUniverses(Roblox.Platform.Core.CreatorType creatorType, long creatorTargetId, IExclusiveStartKeyInfo<long> exclusiveStartKeyInfo)
 	{
-		Roblox.ApiClientBase.SortOrder sortOrder = (exclusiveStartKeyInfo.GetDatabaseRequestSortOrder().Equals(Roblox.DataV2.Core.SortOrder.Asc) ? Roblox.ApiClientBase.SortOrder.Asc : Roblox.ApiClientBase.SortOrder.Desc);
-		return new PlatformPageResponse<long, IUniverse>(_Client.GetCreatorUniverses(creatorType.ToString(), creatorTargetId, exclusiveStartKeyInfo.GetNullableExclusiveStartKey(), exclusiveStartKeyInfo.Count + 1, sortOrder, false).Select(ConvertClientToPlatformUniverse).ToArray(), exclusiveStartKeyInfo, (IUniverse u) => u.Id);
+        #pragma warning disable CS0618
+        Roblox.ApiClientBase.SortOrder sortOrder = (exclusiveStartKeyInfo.GetDatabaseRequestSortOrder().Equals(Roblox.DataV2.Core.SortOrder.Asc) ? Roblox.ApiClientBase.SortOrder.Asc : Roblox.ApiClientBase.SortOrder.Desc);
+        var items = _Client.GetCreatorUniverses(creatorType.ToString(), creatorTargetId, exclusiveStartKeyInfo.GetNullableExclusiveStartKey(), exclusiveStartKeyInfo.Count + 1, sortOrder, false)
+            .Select(ConvertClientToPlatformUniverse)
+            .ToArray();
+        #pragma warning restore CS0618
+        return new PlatformPageResponse<long, IUniverse>(items, exclusiveStartKeyInfo, (IUniverse u) => u.Id);
 	}
 
 	public IPlatformPageResponse<long, IUniverse> GetCreatorPublicUniverses(Roblox.Platform.Core.CreatorType creatorType, long creatorTargetId, IExclusiveStartKeyInfo<long> exclusiveStartKeyInfo)
 	{
-		Roblox.ApiClientBase.SortOrder sortOrder = (exclusiveStartKeyInfo.GetDatabaseRequestSortOrder().Equals(Roblox.DataV2.Core.SortOrder.Asc) ? Roblox.ApiClientBase.SortOrder.Asc : Roblox.ApiClientBase.SortOrder.Desc);
-		return new PlatformPageResponse<long, IUniverse>(_Client.GetCreatorPublicUniverses(creatorType.ToString(), creatorTargetId, exclusiveStartKeyInfo.GetNullableExclusiveStartKey(), exclusiveStartKeyInfo.Count + 1, sortOrder, false).Select(ConvertClientToPlatformUniverse).ToArray(), exclusiveStartKeyInfo, (IUniverse u) => u.Id);
+        #pragma warning disable CS0618
+        Roblox.ApiClientBase.SortOrder sortOrder = (exclusiveStartKeyInfo.GetDatabaseRequestSortOrder().Equals(Roblox.DataV2.Core.SortOrder.Asc) ? Roblox.ApiClientBase.SortOrder.Asc : Roblox.ApiClientBase.SortOrder.Desc);
+        var items = _Client.GetCreatorPublicUniverses(creatorType.ToString(), creatorTargetId, exclusiveStartKeyInfo.GetNullableExclusiveStartKey(), exclusiveStartKeyInfo.Count + 1, sortOrder, false)
+            .Select(ConvertClientToPlatformUniverse)
+            .ToArray();
+        #pragma warning restore CS0618
+        return new PlatformPageResponse<long, IUniverse>(items, exclusiveStartKeyInfo, (IUniverse u) => u.Id);
 	}
 
 	public long? GetUniverseShopId(long universeId)
@@ -161,7 +172,7 @@ internal class UniverseFactory : IUniverseFactory
 
 	public IUniverse GetUniverseByShopId(long shopId)
 	{
-		Universe clientUniverse = _Client.GetUniverseByShopId(shopId);
+		ClientUniverse clientUniverse = _Client.GetUniverseByShopId(shopId);
 		return ConvertClientToPlatformUniverse(clientUniverse);
 	}
 
@@ -173,7 +184,7 @@ internal class UniverseFactory : IUniverseFactory
 
 	public virtual IUniverse GetPlaceUniverse(long placeId)
 	{
-		Universe clientUniverse = _Client.GetPlaceUniverse(placeId);
+		ClientUniverse clientUniverse = _Client.GetPlaceUniverse(placeId);
 		return ConvertClientToPlatformUniverse(clientUniverse);
 	}
 
@@ -184,7 +195,8 @@ internal class UniverseFactory : IUniverseFactory
 		{
 			throw new ArgumentNullException("placeIds");
 		}
-		return _Client.MultiGetPlaceUniverses((IEnumerable<long>)placeIds).ToDictionary((KeyValuePair<long, Universe> p) => p.Key, (KeyValuePair<long, Universe> p) => ConvertClientToPlatformUniverse(p.Value));
+		return _Client.MultiGetPlaceUniverses((IEnumerable<long>)placeIds)
+			.ToDictionary((KeyValuePair<long, ClientUniverse> p) => p.Key, (KeyValuePair<long, ClientUniverse> p) => ConvertClientToPlatformUniverse(p.Value));
 	}
 
 	/// <inheritdoc cref="M:Roblox.Platform.Universes.IUniverseFactory.GetUniverseByPlaces(System.Collections.Generic.IReadOnlyCollection{Roblox.Platform.Assets.IPlace})" />
@@ -205,7 +217,7 @@ internal class UniverseFactory : IUniverseFactory
 
 	public IUniverse GetUniverse(long universeId)
 	{
-		Universe clientUniverse = _Client.GetUniverse(universeId);
+		ClientUniverse clientUniverse = _Client.GetUniverse(universeId);
 		return ConvertClientToPlatformUniverse(clientUniverse);
 	}
 
@@ -246,7 +258,7 @@ internal class UniverseFactory : IUniverseFactory
 		return _Client.GetCreatorPublicUniverseCount(creatorType, creatorTargetId);
 	}
 
-	private IUniverse ConvertClientToPlatformUniverse(Universe clientUniverse)
+	private IUniverse ConvertClientToPlatformUniverse(ClientUniverse clientUniverse)
 	{
 		if (clientUniverse == null)
 		{
@@ -257,8 +269,13 @@ internal class UniverseFactory : IUniverseFactory
 
 	private PlatformPageResponse<long, IPlace> GetUniversePlaceIds(long universeId, bool isUniverseCreation, IExclusiveStartKeyInfo<long> exclusiveStartKeyInfo)
 	{
-		Roblox.ApiClientBase.SortOrder sortOrder = (exclusiveStartKeyInfo.GetDatabaseRequestSortOrder().Equals(Roblox.DataV2.Core.SortOrder.Asc) ? Roblox.ApiClientBase.SortOrder.Asc : Roblox.ApiClientBase.SortOrder.Desc);
-		long exclusiveStartId = exclusiveStartKeyInfo.GetDefaultExclusiveStartId();
-		return new PlatformPageResponse<long, IPlace>(_Client.GetUniversePlaceIds(universeId, isUniverseCreation, exclusiveStartId, exclusiveStartKeyInfo.Count + 1, sortOrder).Select(_UniverseDomainFactories.PlaceFactory.Get).ToArray(), exclusiveStartKeyInfo, (IPlace place) => place.Id);
+        #pragma warning disable CS0618
+        Roblox.ApiClientBase.SortOrder sortOrder = (exclusiveStartKeyInfo.GetDatabaseRequestSortOrder().Equals(Roblox.DataV2.Core.SortOrder.Asc) ? Roblox.ApiClientBase.SortOrder.Asc : Roblox.ApiClientBase.SortOrder.Desc);
+        long exclusiveStartId = exclusiveStartKeyInfo.GetDefaultExclusiveStartId();
+        var items = _Client.GetUniversePlaceIds(universeId, isUniverseCreation, exclusiveStartId, exclusiveStartKeyInfo.Count + 1, sortOrder)
+            .Select(_UniverseDomainFactories.PlaceFactory.Get)
+            .ToArray();
+        #pragma warning restore CS0618
+        return new PlatformPageResponse<long, IPlace>(items, exclusiveStartKeyInfo, (IPlace place) => place.Id);
 	}
 }

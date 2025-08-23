@@ -32,12 +32,13 @@ internal class TeamCreateMembershipFactory : ITeamCreateMembershipFactory
 
 	internal TeamCreateMembershipFactory(TeamCreateDomainFactories domainFactories, ITeamCreateClient teamCreateClient, ITeamCreatePermissionsVerifier teamCreatePermissionsVerifier, ICloudEditPermissionManagerFactory cloudEditPermissionManagerFactory, IUniverseFactory universeFactory, IUserFactory userFactory)
 	{
-		_DomainFactories = domainFactories.AssignOrThrowIfNull("domainFactories");
-		_TeamCreateClient = teamCreateClient.AssignOrThrowIfNull<ITeamCreateClient>("teamCreateClient");
-		_TeamCreatePermissionsVerifier = teamCreatePermissionsVerifier.AssignOrThrowIfNull("teamCreatePermissionsVerifier");
-		_UniverseFactory = universeFactory.AssignOrThrowIfNull("universeFactory");
-		_UserFactory = userFactory.AssignOrThrowIfNull("userFactory");
-		_CloudEditPermissionManagerFactory = cloudEditPermissionManagerFactory.AssignOrThrowIfNull("cloudEditPermissionManagerFactory");
+		_DomainFactories = domainFactories ?? throw new ArgumentNullException("domainFactories");
+		_TeamCreateClient = teamCreateClient ?? throw new ArgumentNullException("teamCreateClient");
+		_TeamCreatePermissionsVerifier = teamCreatePermissionsVerifier ?? throw new ArgumentNullException("teamCreatePermissionsVerifier");
+		_UniverseFactory = universeFactory ?? throw new ArgumentNullException("universeFactory");
+		_UserFactory = userFactory ?? throw new ArgumentNullException("userFactory");
+		_CloudEditPermissionManagerFactory = cloudEditPermissionManagerFactory ?? throw new ArgumentNullException("cloudEditPermissionManagerFactory");
+		_TargetType = TeamCreateMembershipTargetType.User;
 	}
 
 	public IPlatformPageResponse<ITeamCreateMembership, ITeamCreateMembership> GetUniverseTeamCreateMembers(IUniverse universe, IExclusiveStartKeyInfo<ITeamCreateMembership> exclusiveStartInfo)
@@ -51,7 +52,7 @@ internal class TeamCreateMembershipFactory : ITeamCreateMembershipFactory
 			throw new PlatformArgumentNullException("exclusiveStartInfo");
 		}
 		exclusiveStartInfo.TryGetExclusiveStartKey(out var exclusiveStartMember);
-		IReadOnlyCollection<TeamCreateMembership> memberships;
+		IReadOnlyCollection<Roblox.TeamCreate.Client.TeamCreateMembership> memberships;
 		try
 		{
 			memberships = _TeamCreateClient.GetTeamCreateMembershipsByUniverse(universe.ToUniverseIdentifier(), ConvertToDto(exclusiveStartMember), exclusiveStartInfo.Count + 1, ConvertToClientSortOrder(exclusiveStartInfo)).Memberships;
@@ -60,13 +61,10 @@ internal class TeamCreateMembershipFactory : ITeamCreateMembershipFactory
 		{
 			throw new PlatformOperationUnavailableException("TeamCreate service request failed", e);
 		}
-		return new PlatformPageResponse<ITeamCreateMembership, ITeamCreateMembership>(memberships.Where(delegate(TeamCreateMembership tcm)
+		return new PlatformPageResponse<ITeamCreateMembership, ITeamCreateMembership>(memberships.Where(delegate(Roblox.TeamCreate.Client.TeamCreateMembership tcm)
 		{
-			//IL_0006: Unknown result type (might be due to invalid IL or missing references)
-			//IL_000b: Unknown result type (might be due to invalid IL or missing references)
-			//IL_000f: Unknown result type (might be due to invalid IL or missing references)
 			TeamCreateMembershipTargetType targetType = tcm.Target.TargetType;
-			return ((object)(TeamCreateMembershipTargetType)(ref targetType)).Equals((object)_TargetType);
+			return targetType == _TargetType;
 		}).Select(ConvertFromDto).ToArray(), exclusiveStartInfo, (ITeamCreateMembership tcm) => tcm);
 	}
 
@@ -81,7 +79,7 @@ internal class TeamCreateMembershipFactory : ITeamCreateMembershipFactory
 			throw new PlatformArgumentNullException("exclusiveStartInfo");
 		}
 		exclusiveStartInfo.TryGetExclusiveStartKey(out var exclusiveStartMembership);
-		IReadOnlyCollection<TeamCreateMembership> memberships;
+		IReadOnlyCollection<Roblox.TeamCreate.Client.TeamCreateMembership> memberships;
 		try
 		{
 			memberships = _TeamCreateClient.GetTeamCreateMembershipsByMembershipTarget(user.ToMembershipTarget(), ConvertToDto(exclusiveStartMembership), exclusiveStartInfo.Count + 1, ConvertToClientSortOrder(exclusiveStartInfo)).Memberships;
@@ -90,16 +88,13 @@ internal class TeamCreateMembershipFactory : ITeamCreateMembershipFactory
 		{
 			throw new PlatformOperationUnavailableException("TeamCreate service request failed", e2);
 		}
-		IEnumerable<TeamCreateMembership> userMemberships = memberships.Where(delegate(TeamCreateMembership membership)
+		IEnumerable<Roblox.TeamCreate.Client.TeamCreateMembership> userMemberships = memberships.Where(delegate(Roblox.TeamCreate.Client.TeamCreateMembership membership)
 		{
-			//IL_0006: Unknown result type (might be due to invalid IL or missing references)
-			//IL_000b: Unknown result type (might be due to invalid IL or missing references)
-			//IL_000f: Unknown result type (might be due to invalid IL or missing references)
 			TeamCreateMembershipTargetType targetType = membership.Target.TargetType;
-			return ((object)(TeamCreateMembershipTargetType)(ref targetType)).Equals((object)_TargetType);
+			return targetType == _TargetType;
 		});
 		List<ITeamCreateMembership> cloudEditEnabledMemberships = new List<ITeamCreateMembership>();
-		List<long> universeIds = userMemberships.Select((TeamCreateMembership membership) => membership.Universe.Id).ToList();
+		List<long> universeIds = userMemberships.Select((Roblox.TeamCreate.Client.TeamCreateMembership membership) => membership.Universe.Id).ToList();
 		try
 		{
 			IUniverse[] universes = _UniverseFactory.GetUniverses(universeIds).ToArray();
@@ -155,7 +150,7 @@ internal class TeamCreateMembershipFactory : ITeamCreateMembershipFactory
 		}
 	}
 
-	private static TeamCreateMembership ConvertToDto(ITeamCreateMembership membership)
+	private static Roblox.TeamCreate.Client.TeamCreateMembership ConvertToDto(ITeamCreateMembership membership)
 	{
 		//IL_0018: Unknown result type (might be due to invalid IL or missing references)
 		//IL_001d: Unknown result type (might be due to invalid IL or missing references)
@@ -166,7 +161,7 @@ internal class TeamCreateMembershipFactory : ITeamCreateMembershipFactory
 		{
 			return null;
 		}
-		return new TeamCreateMembership
+		return new Roblox.TeamCreate.Client.TeamCreateMembership
 		{
 			Target = membership.User.ToMembershipTarget(),
 			Universe = membership.Universe.ToUniverseIdentifier(),
@@ -174,16 +169,14 @@ internal class TeamCreateMembershipFactory : ITeamCreateMembershipFactory
 		};
 	}
 
-	private static Roblox.ApiClientBase.SortOrder ConvertToClientSortOrder(IExclusiveStartKeyInfo<ITeamCreateMembership> exclusiveStartKeyInfo)
+	private static Roblox.DataV2.Core.SortOrder ConvertToClientSortOrder(IExclusiveStartKeyInfo<ITeamCreateMembership> exclusiveStartKeyInfo)
 	{
-		if (!exclusiveStartKeyInfo.GetDatabaseRequestSortOrder().Equals(Roblox.DataV2.Core.SortOrder.Asc))
-		{
-			return Roblox.ApiClientBase.SortOrder.Desc;
-		}
-		return Roblox.ApiClientBase.SortOrder.Asc;
+		return exclusiveStartKeyInfo.GetDatabaseRequestSortOrder().Equals(Roblox.DataV2.Core.SortOrder.Asc)
+			? Roblox.DataV2.Core.SortOrder.Asc
+			: Roblox.DataV2.Core.SortOrder.Desc;
 	}
 
-	private ITeamCreateMembership ConvertFromDto(TeamCreateMembership dto)
+	private ITeamCreateMembership ConvertFromDto(Roblox.TeamCreate.Client.TeamCreateMembership dto)
 	{
 		return new TeamCreateMembership
 		{

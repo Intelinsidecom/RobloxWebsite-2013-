@@ -1,16 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Notifications.Push</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net471</TargetFramework>
+    <NoWarn>$(NoWarn);1668;0618</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);1668;CS1668;MSB3277;0618</NoWarn>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.0" />
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Roblox.Platform.Notifications.Core">
       <HintPath>..\..\Website\bin\Roblox.Platform.Notifications.Core.dll</HintPath>
@@ -27,11 +34,9 @@
     <Reference Include="Roblox.EventLog">
       <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.SimpleNotificationService" />
     <Reference Include="Roblox.Amazon.Sns">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Sns.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK.Core" />
     <Reference Include="Roblox.Amazon.Sqs">
       <HintPath>..\..\Website\bin\Roblox.Amazon.Sqs.dll</HintPath>
     </Reference>

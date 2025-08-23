@@ -90,7 +90,12 @@ internal class UserOutfit : IUserOutfit
 		FilterTextResult filteredResult;
 		try
 		{
-			filteredResult = textFilterClientV2.FilterText(name, author, "OutfitName_Rename", "", false);
+			filteredResult = textFilterClientV2.FilterText(
+				name,
+				author,
+				(TextFilterUsage)Enum.Parse(typeof(TextFilterUsage), "OutfitName_Rename", ignoreCase: true),
+				"",
+				false);
 		}
 		catch (Exception ex)
 		{

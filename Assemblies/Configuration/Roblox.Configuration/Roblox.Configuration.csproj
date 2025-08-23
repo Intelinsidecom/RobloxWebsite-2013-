@@ -16,8 +16,6 @@
       <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
     </Reference>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

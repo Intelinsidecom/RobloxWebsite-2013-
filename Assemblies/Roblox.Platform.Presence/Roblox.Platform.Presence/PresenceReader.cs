@@ -38,10 +38,14 @@ public class PresenceReader : IPresenceReader
 
 	internal PresenceReader(ISettings settings, ILogger logger, IPresenceClient presenceClient, IComparer<IPresence> presencePriorityComparer)
 	{
-		_Settings = settings.AssignOrThrowIfNull("settings");
-		_Logger = logger.AssignOrThrowIfNull("logger");
-		_PresenceClient = presenceClient.AssignOrThrowIfNull<IPresenceClient>("presenceClient");
-		_PresencePriorityComparer = presencePriorityComparer.AssignOrThrowIfNull("presencePriorityComparer");
+		if (settings == null) throw new ArgumentNullException("settings");
+		if (logger == null) throw new ArgumentNullException("logger");
+		if (presenceClient == null) throw new ArgumentNullException("presenceClient");
+		if (presencePriorityComparer == null) throw new ArgumentNullException("presencePriorityComparer");
+		_Settings = settings;
+		_Logger = logger;
+		_PresenceClient = presenceClient;
+		_PresencePriorityComparer = presencePriorityComparer;
 	}
 
 	/// <inheritdoc cref="M:Roblox.Platform.Presence.IPresenceReader.GetAllActivePresences(Roblox.Platform.Membership.IUser)" />
@@ -165,21 +169,21 @@ public class PresenceReader : IPresenceReader
 
 	private IPresence ConvertPresenceReportToPresenceInfo(IUser user, PresenceReport report)
 	{
-		DateTime lastObserved = (((PresenceReport)(ref report)).LastObserved.HasValue ? TimeZone.CurrentTimeZone.ToLocalTime(((PresenceReport)(ref report)).LastObserved.Value) : user.Created);
-		LocationType? locationType = GetPlatformLocationType(((PresenceReport)(ref report)).LocationType);
+		DateTime lastObserved = (report.LastObserved.HasValue ? TimeZone.CurrentTimeZone.ToLocalTime(report.LastObserved.Value) : user.Created);
+		LocationType? locationType = GetPlatformLocationType(report.LocationType);
 		if (locationType == LocationType.Game || locationType == LocationType.CloudEdit)
 		{
-			string[] gameIdentifier = ((PresenceReport)(ref report)).LocationId.Split('|');
+			string[] gameIdentifier = report.LocationId.Split('|');
 			long placeId = Convert.ToInt64(gameIdentifier[0]);
 			Guid? presenceGameId = null;
 			if (gameIdentifier.Length == 2 && Guid.TryParse(gameIdentifier[1], out var gameId))
 			{
 				presenceGameId = gameId;
 			}
-			return new Presence(user.Id, ((PresenceReport)(ref report)).IsOnline, lastObserved, placeId, presenceGameId, locationType, ((PresenceReport)(ref report)).UniverseId);
+			return new Presence(user.Id, report.IsOnline, lastObserved, placeId, presenceGameId, locationType, report.UniverseId);
 		}
-		long? placeIdEditing = ((locationType == LocationType.Studio) ? new long?(Convert.ToInt64(((PresenceReport)(ref report)).LocationId)) : null);
-		return new Presence(user.Id, ((PresenceReport)(ref report)).IsOnline, lastObserved, placeIdEditing, null, locationType, null);
+		long? placeIdEditing = ((locationType == LocationType.Studio) ? new long?(Convert.ToInt64(report.LocationId)) : null);
+		return new Presence(user.Id, report.IsOnline, lastObserved, placeIdEditing, null, locationType, null);
 	}
 
 	private static LocationType? GetPlatformLocationType(string locationType)

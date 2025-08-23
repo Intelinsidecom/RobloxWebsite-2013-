@@ -1,0 +1,987 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Groups</name>
+    </assembly>
+    <members>
+        <member name="M:Roblox.Platform.Groups.Counters.IGroupCounter.IncrementAssetUploads(Roblox.Platform.Groups.IGroup,System.String,System.DateTime)">
+            <summary>
+            Used to record creation of new assets. Updating existing assets is another call.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Counters.IGroupCounter.IncrementAssetUpdates(Roblox.Platform.Groups.IGroup,System.String,System.DateTime)">
+            <summary>
+            Used to record uploading new versions of existing assets.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Counters.IGroupCounter.IncrementSalesCounters(Roblox.Platform.Groups.IGroup,System.String,System.Int64,System.String,System.DateTime)">
+            <param name="revenue">This should be the revenue to the group - it should not include the marketplace fee.</param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Counters.GroupCounter.IncrementAssetUploads(Roblox.Platform.Groups.IGroup,System.String,System.DateTime)">
+            <summary>
+            Used to record creation of new assets. Updating existing assets is another call.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Counters.GroupCounter.IncrementAssetUpdates(Roblox.Platform.Groups.IGroup,System.String,System.DateTime)">
+            <summary>
+            Used to record uploading new versions of existing assets.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Counters.GroupCounter.IncrementSalesCounters(Roblox.Platform.Groups.IGroup,System.String,System.Int64,System.String,System.DateTime)">
+            <param name="revenue">This should be the revenue to the group - it should not include the marketplace fee.</param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory.GetById(System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/> by the identifier.
+            ***This should never return null - it defaults to guest roleset.
+            </summary>
+            <param name="groupRoleSetId">The group role set identifier.</param>
+            <returns>The <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/> if present, null otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory.MultiGet(System.Collections.Generic.ICollection{System.Int64})">
+            <summary>
+            Fetches multiple group rolesets by their ids.
+            </summary>
+            <param name="groupRoleSetIds">The group roleset ids.</param>
+            <returns>A collection of <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory.GetAllByGroupId(System.Int64)">
+            <summary>
+            Gets all <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/>s by group identifier.
+            </summary>
+            <param name="groupId">The group identifier.</param>
+            <returns>A collection of <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory.GetByGroupIdAndUserId(System.Int64,System.Nullable{System.Int64})">
+            <summary> 
+            Gets the by group identifier and user identifier.
+            *** This should never return null - it defaults to guest roleset.
+            </summary>
+            <param name="groupId">The group identifier.</param>
+            <param name="userId">The user identifier.</param>
+            <returns>The <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/> if existing, null otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory.CreateNew(System.Int64,System.String,System.String,System.Byte)">
+            <summary>
+            Creates the a new <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/>.
+            </summary>
+            <param name="groupId">The group identifier.</param>
+            <param name="name">The name.</param>
+            <param name="description">The description.</param>
+            <param name="rank">The rank.</param>
+            <returns>The newly created <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.IStatusEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Groups.Entities.IStatusEntity"/> by its ID.
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Groups.Entities.IStatusEntity"/> with the given id, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.IStatusEntityFactory.GetByGroupId(System.Int64)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Groups.Entities.IStatusEntity"/> with the given group id
+            </summary>
+            <returns>The <see cref="T:Roblox.Platform.Groups.Entities.IStatusEntity"/> with the given group id, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.IWallPostEntityFactory.Get(System.Int64)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Groups.Entities.IWallPostEntity"/> by its ID.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>The <see cref="T:Roblox.Platform.Groups.Entities.IWallPostEntity"/> with the given ID, or null if none existed.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.IWallPostEntityFactory.GetByGroupIdPaged(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Gets a page of <see cref="T:Roblox.Platform.Groups.Entities.IWallPostEntity"/>s by their TODO: Fill in.
+            </summary>
+            TODO: Add params
+            <param name="groupId">The groupId to get.</param>
+            <param name="startRowIndex">The zero-indexed start row index at which to begin getting rows.</param>
+            <param name="maxRows">The maximum number of rows to get.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="startRowIndex"/> is less than 0.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="maxRows"/> is non-positive.</exception>
+            TODO: Add other exceptions
+            <returns>The page of <see cref="T:Roblox.Platform.Groups.Entities.IWallPostEntity"/>s.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.IWallPostEntityFactory.GetByGroupId(System.Int64,System.Int32,System.Nullable{System.Int64},Roblox.DataV2.Core.SortOrder)">
+            <summary>
+            Gets a list of <see cref="T:Roblox.Platform.Groups.Entities.IWallPostEntity" />s by their group id.
+            </summary>
+            <param name="groupId">The group id.</param>
+            <param name="count">The max amount of <see cref="T:Roblox.Platform.Groups.Entities.IWallPostEntity"/>s to return.</param>
+            <param name="exclusiveStartId">The exclusive start id.</param>
+            <param name="sortOrder">The sort order.</param>
+            <returns>
+              <see cref="T:System.Collections.Generic.IEnumerable`1" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Entities.IWallPostEntityFactory.GetTotalByGroupId(System.Int64)">
+            <summary>
+            Gets the total number of <see cref="T:Roblox.Platform.Groups.Entities.IWallPostEntity"/>s with the given TODO: Fill in characteristics.
+            </summary>
+            TODO: Add params
+            TODO: Add other exceptions
+            <returns>The total number of <see cref="T:Roblox.Platform.Groups.Entities.IWallPostEntity"/>s with the given TODO: Fill in characteristics.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Groups.JoinGroupException">
+            <summary>
+            Exception thrown when a user fails to join a group.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Groups.StatusFactory">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.StatusFactory.PostStatus(Roblox.Platform.Groups.IGroup,Roblox.Platform.Membership.IUser,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="F:Roblox.Platform.Groups.AcceptJoinRequestFailureReason.MaxGroups">
+            <summary>
+            Group join requester is in too many groups to join another.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Groups.AcceptJoinRequestFailureReason.InsufficientPermissions">
+            <summary>
+            Insufficient permissions to accept a group join request.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupMembershipAuthority.ValidateAndRefreshGroupAndNewOwner(Roblox.Platform.Groups.IGroup,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Validates the group, the newOwner, and will return the entity Group and SCL UserGroup that can be used for modification. Please make sure that the group and user are up-to-date as much as possible
+            and are the objects which will be modified or be used to persist data changes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupMembershipAuthority.LogClaimGroupAction(Roblox.Platform.Groups.IGroup,Roblox.Platform.Membership.IUser)">
+            <summary>
+            This is a wrapper around the static GroupManagement LogGroupAction method for unit-tests
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupMembershipAuthority.GetGroupOwnerRoleSetId(Roblox.Platform.Groups.Entities.IGroupEntity)">
+            <summary>
+            This is a wrapper around a static GetOwnerGroupRoleSetByGroupID method
+            </summary>
+            <param name="groupEntity">GroupEntity for which to retrieve the owner roleset Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupMembershipAuthority.GetUserGroup(Roblox.Platform.Membership.IUser,Roblox.Platform.Groups.IGroup)">
+            <summary>
+            This is a wrapper around a static UserGroup Get method
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Groups.GroupRelationshipModificationStatus.Success">
+            <summary>
+            Success.
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Groups.GroupRelationshipModificationStatus.SelfError">
+            <summary>
+            Trying to form relationship with self
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Groups.GroupRelationshipModificationStatus.DuplicateError">
+            <summary>
+            Trying to form relationship with an existing or requested target
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Groups.GroupRelationshipModificationStatus.PermissionError">
+            <summary>
+            Does not have permission to create relationship
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Groups.GroupRelationshipModificationStatus.TypeError">
+            <summary>
+            Incorrect relationship type
+            </summary>
+        </member>
+        <member name="F:Roblox.Platform.Groups.GroupRelationshipModificationStatus.DoesNotExist">
+            <summary>
+            Relationship does not exist
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Groups.GroupSettingsProvider">
+            <inheritdoc cref="T:Roblox.Platform.Groups.IGroupSettingsProvider"/>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupSettingsProvider.#ctor(Roblox.Platform.Groups.IGroupFeatureEnabler)">
+            <summary>
+            Initializes a new <see cref="T:Roblox.Platform.Groups.GroupSettingsProvider"/>.
+            </summary>
+            <param name="groupFeatureEnabler">An <see cref="T:Roblox.Platform.Groups.IGroupFeatureEnabler"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="groupFeatureEnabler"/>
+            </exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupSettingsProvider.IsSettingEnabled(Roblox.Platform.Groups.IGroup,Roblox.Platform.Groups.GroupSetting)">
+            <inheritdoc cref="M:Roblox.Platform.Groups.IGroupSettingsProvider.IsSettingEnabled(Roblox.Platform.Groups.IGroup,Roblox.Platform.Groups.GroupSetting)"/>
+        </member>
+        <member name="T:Roblox.Platform.Groups.Interfaces.IStatusAccessor">
+            <summary>
+            Interface for a class that accesses <see cref="T:Roblox.Platform.Groups.IStatus"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Interfaces.IStatusAccessor.GetStatus(Roblox.Platform.Groups.IGroup)">
+            <summary>
+            Gets the latest group status for an <see cref="T:Roblox.Platform.Groups.IGroup"/>
+            </summary>
+            <param name="group">The <see cref="T:Roblox.Platform.Groups.IGroup"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Groups.IStatus"/></returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if group is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.Interfaces.IWallWriter">
+            <summary>
+            An interface for a class that writes to <see cref="T:Roblox.Platform.Groups.IWall"/> object
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Interfaces.IWallWriter.Post(Roblox.Platform.Groups.IWall,Roblox.Platform.Membership.IUser,System.String)">
+            <summary>
+            Creates a post on the wall, authored by an <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <remarks>
+            <paramref name="message"/> will be filtered, trimmed, and truncated before posting.
+            </remarks>
+            <param name="wall">The <see cref="T:Roblox.Platform.Groups.IWall"/>.</param>
+            <param name="group''">The <see cref="T:Roblox.Platform.Groups.IGroup"/>.</param>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="message">The post content.</param>
+            <returns>The new <see cref="T:Roblox.Platform.Groups.IWallPost"/>.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="user"/> is null.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="message"/> is null, whitespace.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformFloodedException">Floodcheck reached for wall posting.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Interfaces.IWallWriter.DeletePost(Roblox.Platform.Groups.IWallPost,Roblox.Platform.Groups.IGroup,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Deletes a post, performed by the specified user.
+            </summary>
+            <param name="wallPost">The <see cref="T:Roblox.Platform.Groups.IWallPost"/> being deleted.</param>
+            <param name="group''">The Wall's<see cref="T:Roblox.Platform.Groups.IGroup"/>.</param>
+            <param name="actorUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> deleting the post.</param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Interfaces.IWallWriter.DeleteAllPostsByUser(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Groups.IGroup)">
+            <summary>
+            Deletes all posts made by a specified <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="actorUser">The <see cref="T:Roblox.Platform.Membership.IUser"/> deleting all the posts.</param>
+            /// <param name="group''">The Wall's<see cref="T:Roblox.Platform.Groups.IGroup"/>.</param>
+            <exception cref="T:System.ArgumentNullException">Any argument is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IGroupRoleSet">
+            <summary>
+            This is a platform interface for GroupRoleSets.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSet.Id">
+            <summary>
+            Gets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSet.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSet.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>
+            The description.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSet.Rank">
+            <summary>
+            Gets or sets the rank.
+            </summary>
+            <value>
+            The rank.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSet.GroupId">
+            <summary>
+            Gets the group identifier.
+            </summary>
+            <value>
+            The group identifier.
+            </value>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSet.IsGuest">
+            <summary>
+            Determines whether the current rank is guest rank.
+            </summary>
+            <returns>[True] if the rank is a guest rank, [False] otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSet.IsOwner">
+            <summary>
+            Determines whether the current rank is owner rank.
+            </summary>
+            <returns>[True] if the rank is a owner rank, [False] otherwise.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSet.HasPermission(Roblox.Platform.Groups.GroupRoleSetPermissionType)">
+            <summary>
+            Determines whether the roleset has specified permission.
+            </summary>
+            <param name="permission">The permission.</param>
+            <returns>
+            [True] if this <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" /> has the passed in <paramref name="permission" />, [False] otherwise.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSet.GetAllPermissionTypes">
+            <summary>
+            Gets all group role set permissions by group role set.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:Roblox.Platform.Groups.GroupRoleSetPermissionType" /> for the <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" />.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSet.GetUsersInRoleSet(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Membership.IUser"/>s that are in this roleset.
+            </summary>
+            <returns><see cref="T:System.Collections.Generic.ICollection`1"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSet.GetUserIdsInRoleSet(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Gets the user ids that are in this roleset.
+            </summary>
+            <returns>Collection of user ids></returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSet.GetTotalNumberOfUsersInRoleSet">
+            <summary>
+            Gets total number of users in this roleset.
+            </summary>
+            <returns>integer number of users in this roleset</returns>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IGroupRoleSetFactory">
+            <summary>
+            A public interface for creating GroupRoleSets.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSetFactory.CreateNew(System.String,System.String,System.Byte,Roblox.Platform.Groups.IGroup,Roblox.TextFilter.ITextAuthor)">
+            <summary>
+            Creates the new <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" />.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="description">The description.</param>
+            <param name="rank">The rank.</param>
+            <param name="group">The group.</param>
+            <param name="textAuthor">The text author.</param>
+            <returns>
+            The newly created <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" />.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="group"/> or <paramref name="textAuthor"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="name"/> is null or empty or name length is exceeding 
+            or
+            if description length is exceeding.</exception>
+            <exception cref="T:Roblox.Platform.Groups.PlatformGroupTextFullyModeratedException">Thrown if the <paramref name="name"/> or <paramref name="description"/> is moderated.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if the underlying service is unavailable.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IGroupRoleSetAccessor">
+            <summary>
+            A public interface for accessing GroupRoleSets.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSetAccessor.RolesetNameMaxLength">
+            <summary>
+            Gets the maximum length of the roleset name.
+            </summary>
+            <value>
+            The maximum length of the roleset name.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSetAccessor.RolesetDescriptionMaxLength">
+            <summary>
+            Gets the maximum length of the roleset description.
+            </summary>
+            <value>
+            The maximum length of the roleset description.
+            </value>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSetAccessor.RolesetMaxRank">
+            <summary>
+            Gets the maximum number of the roleset rank.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IGroupRoleSetAccessor.RolesetMinRank">
+            <summary>
+            Gets the minimum number of the roleset rank.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSetAccessor.GetById(System.Int64,System.Boolean)">
+            <summary>
+            Gets the <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/> by identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="invalidIdThrows">If true, the method throws <see cref="T:Roblox.Platform.Core.PlatformArgumentException"/> when the <paramref name="id"/> is less than or equal to zero</param>
+            <returns>A <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/> if found, null otherwise.</returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if <paramref name="id"/> is a non-positive integer.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSetAccessor.GetAllForGroup(Roblox.Platform.Groups.IGroup)">
+            <summary>
+            Gets all <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/>s for the group.
+            </summary>
+            <param name="group">The <see cref="T:Roblox.Platform.Groups.IGroup"/>.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" /> for the passed in group.
+            </returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="group"/> is null.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSetAccessor.GetAllByGroupId(System.Int64)">
+            <summary>
+            Gets all <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/>s for the given group ID.
+            </summary>
+            <param name="groupId">The ID of the group the roleset is a part of.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" /> for the passed in group ID.
+            </returns>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IGroupRoleSetWriter">
+            <summary>
+            interface for class that performs write operations on <see cref="T:Roblox.Platform.Groups.GroupRoleSet"/> objects
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSetWriter.UpdateNameAndDescription(Roblox.Platform.Groups.IGroupRoleSet,System.String,System.String,Roblox.TextFilter.ITextAuthor)">
+            <summary>
+            Updates the name and description for <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" />.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="description">The description.</param>
+            <param name="author">The author.</param>
+            <param name="groupRoleSet">The <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if the <paramref name="name" /> is null or whitespace.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="author"/> is null.</exception>
+            <exception cref="T:Roblox.Platform.Groups.PlatformGroupTextFullyModeratedException">Thrown if the groupRoleSet cannot be updated with passed in <paramref name="name" />.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if the text filtering service is unavailable.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSetWriter.UpdateRank(Roblox.Platform.Groups.IGroupRoleSet,System.Byte)">
+            <summary>
+            Updates the rank for the <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/>.
+            </summary>
+            <param name="groupRoleSet">The <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/></param>
+            <param name="rank">The rank.</param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSetWriter.UpdatePermission(Roblox.Platform.Groups.IGroupRoleSet,Roblox.Platform.Groups.GroupRoleSetPermissionType,System.Boolean)">
+            <summary>
+            Updates a permission for the <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/>.
+            </summary>
+            <param name="groupRoleSet">The <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/></param>
+            <param name="permission">The permission type</param>
+            <param name="createPermission">Do we create or delete a permission</param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupRoleSetWriter.Delete(Roblox.Platform.Groups.IGroupRoleSet)">
+            <summary>
+            Deletes this instance.
+            </summary>
+            <param name="groupRoleSet">The <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/></param>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IGroup">
+            <summary>
+            A platform interface to store the group.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroup.GetGroupRoleSetByUserId(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets a <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" /> user identifier. If the <paramref name="user"/> is null, this returns a guest RoleSet.
+            // TODO Extract the getting of guest roleset logic from SCL and move to platform.
+            </summary>
+            <param name="user">The user identifier.</param>
+            <returns>
+            The <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" />.
+            </returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroup.IsLocked">
+            <summary>
+            Whether or not the group is locked.
+            </summary>
+            <returns><c>true</c> if the group is locked.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroup.Lock(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Locks the group.
+            Users will not be able to access the groups page, no new members may join, no users may post etc.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> locking the group.</param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroup.Unlock(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Unlocks the group.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> unlocking the group.</param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupFactory.GetById(System.Int64,System.Boolean,System.Boolean)">
+            <param name="groupId">The groupId</param>
+            <param name="invalidIdThrows">If true, the method throws <see cref="T:Roblox.Platform.Groups.UnknownGroupException"/> when the <paramref name="groupId"/> is less than or equal to zero</param>
+            <param name="shouldReturnLockedGroups">If false, the method returns null when looking up a locked group.</param>
+            <returns>An <see cref="T:Roblox.Platform.Groups.IGroup"/> if a group exists with the given groupId</returns>
+            <exception cref="T:Roblox.Platform.Groups.UnknownGroupException">Thrown when the <paramref name="invalidIdThrows"/> is true and <paramref name="groupId"/> is less than or equal to zero.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupFactory.GetByName(System.String)">
+            <summary>
+            Gets an <see cref="T:Roblox.Platform.Groups.IGroup"/> by it's name.
+            </summary>
+            <param name="name">The name of the group.</param>
+            <returns>The <see cref="T:Roblox.Platform.Groups.IGroup"/> (or <c>null</c> if it does not exist.)</returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupMembershipAuthority.ClaimOwnership(Roblox.Platform.Groups.IGroup,Roblox.Platform.Membership.IUser)">
+            <summary>
+            Claims ownership of a group.
+            </summary>
+            <param name="newOwner">The <see cref="T:Roblox.Platform.Membership.IUser"/> claiming the group.</param>
+            <exception cref="T:Roblox.Platform.Groups.ClaimGroupUnauthorizedException">User was not authorized to claim the group.</exception>
+            <exception cref="T:Roblox.Platform.Groups.ClaimGroupWithOwnerException">User tried to claim a group with an existing owner.</exception>
+            <exception cref="T:Roblox.Platform.Groups.ClaimOwnershipFloodCheckedException">User tried to claim too many groups within a time period.</exception>
+            <exception cref="T:Roblox.Platform.Groups.ClaimGroupException">Exception occurred while the claiming the group. See inner exception or message.</exception>
+            <exception cref="T:Roblox.Common.OperationUnavailableException">Claiming ownership is temporarily unavailable.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupMembershipFactory.GetDevelopmentGroupMembershipsByUser(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Gets the group memberships for <paramref name="user"/> for groups the <see cref="T:Roblox.Platform.Membership.IUser"/> has permission to develop games in.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <returns>List of <see cref="T:Roblox.Platform.Groups.IGroupMembership"/>s, with <paramref name="user"/>'s primary group first.</returns>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IGroupPermissionsVerifier">
+            <summary>
+            Handles authorization around <see cref="!:IUniverse"/>s
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupPermissionsVerifier.CanUserManageGroup(Roblox.Platform.Membership.IUser,Roblox.Platform.Groups.IGroup)">
+            <summary>
+            Checks whether or not an <see cref="T:Roblox.Platform.Membership.IUser"/> can manage an <see cref="T:Roblox.Platform.Groups.IGroup"/>. Right now, only group owners have permissions to manage group,
+            but this could be changed to allow different rolesets to have this permission, if desired.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/>.</param>
+            <param name="group">The <see cref="T:Roblox.Platform.Groups.IGroup"/>.</param>
+            <returns><c>true</c> if <paramref name="group"/> can be managed by <paramref name="user"/>.</returns>
+            <exception cref="!:ArgumentNullException">Null <paramref name="user"/>.</exception>
+            <exception cref="!:ArgumentNullException">Null <paramref name="group"/>.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IGroupSettingsProvider">
+            <summary>
+            Provides indirect settings for groups.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupSettingsProvider.IsSettingEnabled(Roblox.Platform.Groups.IGroup,Roblox.Platform.Groups.GroupSetting)">
+            <summary>
+            Gets whether or not a boolean group setting is enabled.
+            </summary>
+            <param name="group">The <see cref="T:Roblox.Platform.Groups.IGroup"/>.</param>
+            <param name="groupSetting">The <see cref="T:Roblox.Platform.Groups.GroupSetting"/>.</param>
+            <returns><c>true</c> if the setting is enabled.</returns>
+            <exception cref="T:System.ArgumentNullException">
+            - <paramref name="group"/>
+            </exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IGroupWriter">
+            <summary>
+            A class for group actions that modify existing groups
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupWriter.UpdateName(Roblox.Platform.Groups.IGroup,System.String,Roblox.TextFilter.ITextAuthor)">
+            <summary>
+            update a groups name
+            </summary>
+            <param name="group"><see cref="T:Roblox.Platform.Groups.IGroup"/></param>
+            <param name="newName">the new name</param>
+            <param name="textAuthor"><see cref="T:Roblox.TextFilter.ITextAuthor"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IGroupWriter.UpdateDescription(Roblox.Platform.Groups.IGroup,System.String,Roblox.TextFilter.ITextAuthor)">
+            <summary>
+            update a groups description
+            </summary>
+            <param name="group"><see cref="T:Roblox.Platform.Groups.IGroup"/></param>
+            <param name="newDescription">the new description</param>
+            <param name="textAuthor"><see cref="T:Roblox.TextFilter.ITextAuthor"/></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Roblox.Platform.Groups.IGroupWriter.UpdateEmblem(Roblox.Platform.Groups.IGroup,System.Int64)" -->
+        <member name="M:Roblox.Platform.Groups.IGroupWriter.UpdateSettings(Roblox.Platform.Groups.IGroup,System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
+            <summary>
+            Update a groups settings
+            </summary>
+            <param name="group"><see cref="T:Roblox.Platform.Groups.IGroup"/></param>
+            <param name="bcOnly">only builders club?</param>
+            <param name="publicEntryAllowed">public entry allowed?</param>
+        </member>
+        <member name="T:Roblox.Platform.Groups.Events.IGroupEventPublisher">
+            <summary>
+            A pipeline or Queue for notifying other parts of the system about changes to Groups.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Events.IGroupEventPublisher.Publish(System.Int64,Roblox.Platform.Groups.Events.GroupEventType,System.Nullable{System.Int64})">
+            <summary>
+            Publish that a change of the given type has happened to the given groupId.
+            The userId is optional, but should indicate the acting user.
+            </summary>
+            <param name="groupId"></param>
+            <param name="groupEventType"></param>
+            <param name="userId"></param>
+        </member>
+        <member name="T:Roblox.Platform.Groups.PlatformGroupTextFullyModeratedException">
+            <summary>
+            A platform exception thrown if the Group Name or Description is fully moderated. In this case we do not save the entity in the database and throw this exception.
+            The caller should handle this exception gracefully.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Core.PlatformException" />
+        </member>
+        <member name="M:Roblox.Platform.Groups.PlatformGroupTextFullyModeratedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Groups.PlatformGroupTextFullyModeratedException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupMembershipFactory.CheckedGet(Roblox.Platform.Membership.IUser,System.Int64)">
+            <summary>
+            Note that user can still be null
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupMembershipFactory.GetDevelopmentGroupMembershipsByUser(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Groups.IGroupMembershipFactory.GetDevelopmentGroupMembershipsByUser(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="T:Roblox.Platform.Groups.GroupRoleSetFactory">
+            <summary>
+            A platform implementation of <see cref="T:Roblox.Platform.Groups.IGroupRoleSetFactory"/>.
+            </summary>
+            <seealso cref="T:Roblox.Platform.Groups.IGroupRoleSetFactory" />
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSetFactory.#ctor(Roblox.Platform.Groups.Interfaces.IGroupRoleSetAccessorInternal,Roblox.TextFilter.ITextFilter,Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Groups.GroupRoleSetFactory"/> class.
+            </summary>
+            <param name="groupRoleSetAccessor"><see cref="T:Roblox.Platform.Groups.IGroupRoleSetAccessor"/></param>
+            <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter"/></param>
+            <param name="groupRoleSetEntityFactory"><see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"></exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSetFactory.CreateNew(System.String,System.String,System.Byte,Roblox.Platform.Groups.IGroup,Roblox.TextFilter.ITextAuthor)">
+            <inheritdoc />
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentException"></exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"></exception>
+            <exception cref="T:Roblox.Platform.Groups.PlatformGroupTextFullyModeratedException"></exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.WallFactory">
+             <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.WallFactory.GetGroupWall(Roblox.Platform.Groups.IGroup)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Groups.GroupDomainFactories">
+            <summary>
+            The <seealso cref="T:Roblox.Platform.Core.DomainFactoriesBase">DomainFactories</seealso> object for Roblox.Platform.Groups.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.GetUsersByGroupIDPaged(System.Int64,System.Int32,System.Int32)">
+            Gets *
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.ReplaceOwner(System.Int64,System.Int64,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Groups.Counters.IGroupCounter,Roblox.Platform.Groups.Events.IGroupEventPublisher)">
+            Roblox Admin Functions *
+            <exception cref="T:Roblox.Common.OperationUnavailableException">Group memberships are in read-only mode.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.IsMemberOfGroup(System.Int64,System.Int64)">
+            Public methods *
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.PostOnWall(System.Int64,System.Int64,System.String)">
+            Actions *
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.AcceptJoinRequest(Roblox.GroupJoinRequest,System.Int64,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Groups.Counters.IGroupCounter,Roblox.Platform.Groups.Events.IGroupEventPublisher,System.Boolean)">
+            <exception cref="T:Roblox.Common.OperationUnavailableException">Group memberships are in read-only mode.</exception>
+            <exception cref="T:Roblox.Platform.Groups.AcceptJoinRequestException">Thrown when the user has insufficient permissions and shouldThrow is true.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.JoinGroup(System.Int64,System.Int64,System.Int64,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Groups.Counters.IGroupCounter,Roblox.Platform.Groups.Events.IGroupEventPublisher,Roblox.Platform.Groups.IGroupFloodCheckerFactory,Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser,Roblox.EphemeralCounters.IEphemeralCounterFactory,System.Boolean)">
+            <summary>
+            Attempts to join a group as the given user
+            </summary>
+            <param name="userID">The user id</param>
+            <param name="groupId">The group id</param>
+            <param name="roleSetID">The group role set id</param>
+            <param name="groupFactory">The <see cref="T:Roblox.Platform.Groups.IGroupFactory"/></param>
+            <param name="groupCounter">The <see cref="T:Roblox.Platform.Groups.Counters.IGroupCounter"/></param>
+            <param name="groupEventPublisher">The <see cref="T:Roblox.Platform.Groups.Events.IGroupEventPublisher"/></param>
+            <param name="groupFloodCheckerFactory">The <see cref="T:Roblox.Platform.Groups.IGroupFloodCheckerFactory"/></param>
+            <param name="premiumFeaturesUser">The <see cref="T:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser"/></param>
+            <param name="ephemeralCounterFactory">Optional <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory"/></param>
+            <param name="bypassRestrictions">If true, the user will bypass any user or group restrictions e.g. user has max # of groups, group is private or BC-only</param>
+            <exception cref="T:Roblox.Platform.Groups.JoinGroupException">User failed to join the group. Exception has a Reason enum that contains more information.</exception>
+            <exception cref="T:Roblox.Common.OperationUnavailableException">Group memberships are in read-only mode.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.LeaveGroup(System.Int64,System.Int64,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Groups.Counters.IGroupCounter,Roblox.Platform.Groups.Events.IGroupEventPublisher)">
+            <exception cref="T:Roblox.Common.OperationUnavailableException">Group memberships are in read-only mode.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.CreateGroup(Roblox.Platform.Membership.IUser,System.String,System.String,System.Int64,System.Boolean,System.Boolean,Roblox.Platform.Groups.IGroupFactory,Roblox.Platform.Groups.Counters.IGroupCounter,Roblox.Platform.Groups.Events.IGroupEventPublisher,Roblox.TextFilter.ITextFilter)">
+            <summary>
+            Create a new Group based on the given parameters.
+            </summary>
+            <param name="ownerUser"></param>
+            <param name="name"></param>
+            <param name="description"></param>
+            <param name="emblemID"></param>
+            <param name="publicEntryAllowed"></param>
+            <param name="bcOnlyJoin"></param>
+            <param name="groupFactory"></param>
+            <param name="groupCounter"></param>
+            <param name="groupEventPublisher"></param>
+            <param name="textFilter"></param>
+            <returns>The Roblox.Group that was created.</returns>
+            <exception cref="!:GroupCreationException">There was an issue create the group as requested.</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Some part of the system is unavailable to completely the operation. Likely TextFilter.</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupManagement.CanPerformAction(Roblox.User,System.Int64,Roblox.GroupRoleSetPermissionType.Permission)">
+            Permissions checks *
+        </member>
+        <member name="M:Roblox.Platform.Groups.Group.IsLocked">
+            <inheritdoc cref="M:Roblox.Platform.Groups.IGroup.IsLocked"/>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Group.Unlock(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Groups.IGroup.Unlock(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="M:Roblox.Platform.Groups.Group.Lock(Roblox.Platform.Membership.IUser)">
+            <inheritdoc cref="M:Roblox.Platform.Groups.IGroup.Lock(Roblox.Platform.Membership.IUser)"/>
+        </member>
+        <member name="T:Roblox.Platform.Groups.GroupRoleSet">
+            <summary>
+            A platform implementation of <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" />
+            </summary>
+            <seealso cref="T:Roblox.Platform.Groups.IGroupRoleSet" />
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSet.#ctor(Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity,Roblox.Platform.Groups.GroupDomainFactories)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Platform.Groups.GroupRoleSet" /> class.
+            </summary>
+            <param name="entity">The <see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity"/>.</param>
+            <param name="domainFactories">The domain factories.</param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if the <paramref name="entity" /> or <paramref name="domainFactories" /> is null.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.Wall">
+            <inheritdoc />
+        </member>
+        <member name="P:Roblox.Platform.Groups.Wall.MaxWallPostLength">
+            <inheritdoc cref="P:Roblox.Platform.Groups.IWall.MaxWallPostLength"/>
+            <remarks>
+            This is the limit for a wall post in the database.
+            If you update the schema for wall post lists please update this too.
+            </remarks>
+        </member>
+        <member name="T:Roblox.Platform.Groups.GroupPermissionsVerifier">
+            <inheritdoc cref="T:Roblox.Platform.Groups.IGroupPermissionsVerifier"/>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupPermissionsVerifier.CanUserManageGroup(Roblox.Platform.Membership.IUser,Roblox.Platform.Groups.IGroup)">
+            <inheritdoc cref="M:Roblox.Platform.Groups.IGroupPermissionsVerifier.CanUserManageGroup(Roblox.Platform.Membership.IUser,Roblox.Platform.Groups.IGroup)"/>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IStatus">
+            <summary>
+            A public interface representing the status message (aka "shout") of a group
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IStatus.GroupId">
+            <summary>
+            The id of the group
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IStatus.PosterId">
+            <summary>
+            The id of the user who submitted the status message.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IStatus.Message">
+            <summary>
+            The status message itself.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IStatus.Created">
+            <summary>
+            When the status was created
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IStatus.Updated">
+            <summary>
+            When the status was updated
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IStatusFactory">
+            <summary>
+            A public interface for the factory class managing <see cref="T:Roblox.Platform.Groups.IStatus"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IStatusFactory.PostStatus(Roblox.Platform.Groups.IGroup,Roblox.Platform.Membership.IUser,System.String)">
+            <summary>
+            Posts a group status message by a user.
+            </summary>
+            <param name="group">The <see cref="T:Roblox.Platform.Groups.IGroup"/>.</param>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> posting.</param>
+            <param name="message">The message to set as the status.</param>
+            <param name="textFilter">The text filter</param>
+            <returns>The <see cref="T:Roblox.Platform.Groups.Status"/> that was posted.</returns>
+            <exception cref="T:Roblox.Platform.Groups.PostStatusPermissionException">The user does not have permission to post to the group's status.</exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IWall">
+            <summary>
+            A public interface for the Group Wall
+            
+            The wall is a place where <seealso cref="T:Roblox.Platform.Groups.IWallPost"/>s are made.  
+            Each group has its own wall.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IWall.Group">
+            <summary>
+            The group who owns the particular wall instance.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IWall.MaxWallPostLength">
+            <summary>
+            The maximum length for a group wall post
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IWall.GetPost(System.Int64)">
+            <summary>
+            Gets a wall post specified by its id.
+            
+            Returns null if no corresponding post is found, or if the post belongs to a different group.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IWall.GetPostsPaged(System.Int32,System.Int32)">
+            <summary>
+            Gets a page of wall posts for the group
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IWall.GetPosts(Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo{System.Int64})">
+            <summary>
+            Gets a list of <see cref="T:Roblox.Platform.Groups.IWallPost"/>s for the group (<see cref="P:Roblox.Platform.Groups.IWall.Group"/>.)
+            </summary>
+            <param name="exclusiveStartKeyInfo">The <see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IExclusiveStartKeyInfo`1"/>.</param>
+            <returns><see cref="T:Roblox.Platform.Core.ExclusiveStartPaging.IPlatformPageResponse`2"/></returns>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IWall.GetCount">
+            <summary>
+            Gets the total count of wall posts for the group
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IWallFactory">
+            <summary>
+            The public interface for the factory producinng <see cref="T:Roblox.Platform.Groups.IWall"/>s.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Groups.IWallFactory.GetGroupWall(Roblox.Platform.Groups.IGroup)">
+            <summary>
+            Gets the wall for the specified group.
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Groups.IWallPost">
+            <summary>
+            An interface representing a Group Wall Post
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IWallPost.Id">
+            <summary>
+            The identifier
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IWallPost.GroupId">
+            <summary>
+            The id of the group the wall post is associated with.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IWallPost.UserId">
+            <summary>
+            The id of the user who made the post.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IWallPost.Value">
+            <summary>
+            The contents of the post.
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IWallPost.Created">
+            <summary>
+            When the post was created
+            </summary>
+        </member>
+        <member name="P:Roblox.Platform.Groups.IWallPost.Updated">
+            <summary>
+            When the post was last modified
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Groups.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Platform.Groups.StatusAccessor">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.StatusAccessor.GetStatus(Roblox.Platform.Groups.IGroup)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Groups.GroupRoleSetWriter">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSetWriter.#ctor(Roblox.TextFilter.ITextFilter,Roblox.Platform.Groups.IGroupRoleSetAccessor,Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory)">
+            <summary>
+            Class for writing to <see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/> objects
+            </summary>
+            <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter"/></param>
+            <param name="groupRoleSetAccessor"><see cref="T:Roblox.Platform.Groups.IGroupRoleSetAccessor"/></param>
+            <param name="groupRoleSetEntityFactory"><see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory"/></param>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSetWriter.UpdateNameAndDescription(Roblox.Platform.Groups.IGroupRoleSet,System.String,System.String,Roblox.TextFilter.ITextAuthor)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSetWriter.UpdateRank(Roblox.Platform.Groups.IGroupRoleSet,System.Byte)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSetWriter.UpdatePermission(Roblox.Platform.Groups.IGroupRoleSet,Roblox.Platform.Groups.GroupRoleSetPermissionType,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSetWriter.Delete(Roblox.Platform.Groups.IGroupRoleSet)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupRoleSetWriter.FilterText(Roblox.Platform.Groups.IGroupRoleSet,System.String,Roblox.TextFilter.ITextAuthor)">
+            <summary>
+            Filter Text 
+            </summary>
+            <param name="groupRoleSet"><see cref="T:Roblox.Platform.Groups.IGroupRoleSet"/></param>
+            <param name="text">the text to filter</param>
+            <param name="author"><see cref="T:Roblox.TextFilter.ITextAuthor"/></param>
+            <returns><see cref="T:Roblox.TextFilter.ITextFilterRuleResult"/></returns>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException"></exception>
+        </member>
+        <member name="T:Roblox.Platform.Groups.GroupWriter">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupWriter.UpdateName(Roblox.Platform.Groups.IGroup,System.String,Roblox.TextFilter.ITextAuthor)">
+            <inheritdoc />
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">thrown if arguments are null</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">thrown if we can't find a the group's entity or if the name can't be filtered</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupWriter.UpdateDescription(Roblox.Platform.Groups.IGroup,System.String,Roblox.TextFilter.ITextAuthor)">
+            <inheritdoc />
+            <param name="textAuthor"></param>
+            <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">thrown if arguments are null</exception>
+            <exception cref="T:Roblox.Platform.Core.LongDescriptionException">thrown if description is greater than GroupDescriptionMaxCharacterCount</exception>
+            <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if you can't find group or the description can't be filtered</exception>
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupWriter.UpdateEmblem(Roblox.Platform.Groups.IGroup,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.GroupWriter.UpdateSettings(Roblox.Platform.Groups.IGroup,System.Nullable{System.Boolean},System.Nullable{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Platform.Groups.WallWriter">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.WallWriter.Post(Roblox.Platform.Groups.IWall,Roblox.Platform.Membership.IUser,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.WallWriter.DeletePost(Roblox.Platform.Groups.IWallPost,Roblox.Platform.Groups.IGroup,Roblox.Platform.Membership.IUser)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Platform.Groups.WallWriter.DeleteAllPostsByUser(Roblox.Platform.Membership.IUser,Roblox.Platform.Membership.IUser,Roblox.Platform.Groups.IGroup)">
+            <inheritdoc cref="!:IWall.DeleteAllPostsByUser"/>
+            <remarks>
+            Imported from Groups.aspx on RobloxWebsite, do not follow pattern for new work.
+            We should have a processor for deleting all posts by a user, it's an unbounded number.
+            </remarks>
+        </member>
+    </members>
+</doc>

@@ -24,7 +24,7 @@ public class SegmentationClient : GuardedApiClientBase
 	protected override TimeSpan Timeout => Settings.Default.SegmentationServiceTimeout;
 
 	public SegmentationClient(Func<string> apiKeyGetterGetter)
-		: this(apiKeyGetterGetter, () => RobloxEnvironment.GetApiEndpoint("segmentation"))
+		: this(apiKeyGetterGetter, () => RobloxEnvironment.GetInternalApiServiceEndpoint("segmentation"))
 	{
 	}
 

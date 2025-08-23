@@ -1,0 +1,1332 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Amazon.DynamoDb</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Amazon.DynamoDb.IRobloxDaxClientFactory">
+            <summary>
+            Responsible for creating <see cref="T:Amazon.DAX.IAmazonDAX"/>s as well as the authority on the default settings.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDaxClientFactory.GetDefaultSettings">
+            <summary>
+            Gets the default client settings.
+            </summary>
+            <returns><see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings"/></returns>
+        </member>
+        <member name="E:Roblox.Amazon.DynamoDb.IRobloxDaxClientFactory.DefaultClientSettingsChanged">
+            <summary>
+            Occurs when default client settings changed <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings"/>.
+            Don't forget to unsubscribe to avoid memory leaks.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDaxClientFactory.Create(Amazon.Runtime.AWSCredentials,System.String)">
+            <summary>
+            Creates a new <see cref="T:Amazon.DAX.IAmazonDAX"/> using <paramref name="credentials"/> and the default <see cref="T:Amazon.RegionEndpoint"/>.
+            </summary>
+            <param name="credentials">The <see cref="T:Amazon.Runtime.AWSCredentials"/> to use.</param>
+            <param name="clientInstanceName">The name of the client.</param>
+            <returns>The created <see cref="T:Amazon.DAX.IAmazonDAX"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="credentials"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="clientInstanceName"/> is null or empty.</exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDaxClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates a new <see cref="T:Amazon.DAX.IAmazonDAX"/> using <paramref name="credentials"/> and a custom <see cref="T:Amazon.RegionEndpoint"/>.
+            </summary>
+            <param name="credentials">The <see cref="T:Amazon.Runtime.AWSCredentials"/> to use.</param>
+            <param name="regionEndpoint">The <see cref="T:Amazon.RegionEndpoint"/> to use.</param>
+            <param name="clientInstanceName">The name of the client.</param>
+            <returns>The created <see cref="T:Amazon.DAX.IAmazonDAX"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="credentials"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="regionEndpoint"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="clientInstanceName"/> is null or empty.</exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDaxClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.DynamoDb.RobloxDaxClientConfig)">
+            <summary>
+            Creates a new <see cref="T:Amazon.DAX.IAmazonDAX"/> using an explicit <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig"/>.
+            </summary>
+            <param name="credentials">The <see cref="T:Amazon.Runtime.AWSCredentials"/> to use.</param>
+            <param name="daxClientConfig">The <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig"/> to use.</param>
+            <returns>The created <see cref="T:Amazon.DAX.IAmazonDAX"/></returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="credentials"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="daxClientConfig"/></exception>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory">
+            <summary>
+            Creates clients for Amazon DynamoDB.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory.GetDefaultSettings">
+            <summary>
+            Gets the default client settings.
+            </summary>
+            <returns><see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings"/></returns>
+        </member>
+        <member name="E:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory.DefaultClientSettingsChanged">
+            <summary>
+            Occurs when default client settings changed <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings"/>.
+            Don't forget to unsubscribe to avoid memory leaks.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig)">
+            <summary>
+            Creates Amazon DynamoDB client.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig"/>.</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon DynamoDB client. Uses default settings to build configuration.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.
+            (required for performance counters creation)</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory.Create(System.String,System.String,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon DynamoDB client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory.Create(System.String,System.String,Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig)">
+            <summary>
+            Creates Amazon DynamoDB client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig"/>.</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.RobloxDaxClient">
+            <summary>
+            Our wrapper around the <see cref="T:Amazon.DAX.AmazonDAXClient"/> - provides additional circuit breaking.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClient.#ctor(Amazon.Runtime.AWSCredentials,Roblox.Amazon.DynamoDb.RobloxDaxClientConfig)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClient"/>.
+            </summary>
+            <param name="credentials">The <see cref="T:Amazon.Runtime.AWSCredentials"/> to use.</param>
+            <param name="daxClientConfig">The <see cref="!:RobloxDaxClusterClientConfig"/> to use</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="credentials"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="daxClientConfig"/></exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClient.CustomizeRuntimePipeline(Amazon.Runtime.Internal.RuntimePipeline)">
+            <inheritdoc />
+            <remarks>This logic is replicated in all clients inheriting from <see cref="T:Amazon.Runtime.AmazonServiceClient"/></remarks>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig">
+            <summary>
+            Our wrapper extending the <see cref="T:Amazon.DAX.AmazonDAXConfig"/> to provide the configuration options for the extended <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClient"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig" /> class.
+            </summary>
+            <param name="clientInstanceName">Name of the client instance.
+            Examples: BadgeAwardsRepository, PlatformChat, etc.
+            Data Storage prefix will be added automatically.
+            </param>
+            <exception cref="T:System.ArgumentException">Cannot be null or empty or whitespaces. - <paramref name="clientInstanceName"/></exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig.#ctor(System.String,Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig" /> class.
+            </summary>
+            <param name="clientInstanceName">Name of the client instance.
+            Examples: BadgeAwardsRepository, PlatformChat, etc.
+            Data Storage prefix will be added automatically.
+            </param>
+            <param name="settings">The <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings"/> used to populate the config.</param>
+            <exception cref="T:System.ArgumentException">Cannot be null or empty or whitespaces. - <paramref name="clientInstanceName"/></exception>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig.ClientInstanceName">
+            <summary>
+            Gets the name of the client instance.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig.CircuitBreakerPolicyConfig">
+            <summary>
+            Gets the circuit breaker policy configuration.
+            Default value is ConsecutiveCircuitBreakerPolicyConfig with properties initialized from settings.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig.IsCircuitBreakerEnabled">
+            <summary>
+            Gets or sets a value indicating whether circuit breaker is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDaxClientConfig.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets or sets a value indicating whether asynchronous request timeout is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings">
+            <summary>
+            Default settings for the <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClient"/>.
+            </summary>
+            <remarks>Should be converted to a readonly struct once C# 7.2 is available.</remarks>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.IsCircuitBreakerEnabled">
+            <summary>
+            Gets a value indicating whether circuit breaker is enabled.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets a value indicating whether asynchronous request timeout is enabled.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.IsThrottleRetriesEnabled">
+            <summary>
+            Gets a value indicating whether throttle retries is enabled.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.RequestTimeout">
+            <summary>
+            Gets the request timeout.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.ReadWriteTimeout">
+            <summary>
+            Gets the read write timeout.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.FailuresAllowedBeforeCircuitBreakerTrip">
+            <summary>
+            Gets the amount of failures allowed before circuit breaker trip.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.CircuitBreakerRetryInterval">
+            <summary>
+            Gets the circuit breaker retry interval.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.MaxErrorRetry">
+            <summary>
+            Gets the maximum error retry.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.RegionEndpoint">
+            <summary>
+            The default <see cref="F:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.RegionEndpoint"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings.#ctor(Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings"/>.
+            </summary>
+            <param name="settings">A <see cref="T:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="settings"/></exception>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory">
+            <summary>
+            The default implementation of an <see cref="T:Roblox.Amazon.DynamoDb.IRobloxDaxClientFactory"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory.Instance">
+            <summary>
+            Gets the instance of <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory"/>.
+            </summary>
+        </member>
+        <member name="E:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory.DefaultClientSettingsChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory.#ctor">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory.#ctor(Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings)">
+            <summary>
+            Constructs a new <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory"/>. Should only be used for testing.
+            </summary>
+            <param name="settings">The <see cref="T:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings"/></param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="settings"/></exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory.Create(Amazon.Runtime.AWSCredentials,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.DynamoDb.RobloxDaxClientConfig)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDaxClientFactory.GetDefaultSettings">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClient">
+            <summary>
+            AmazonDynamoDBClient client extended with configurable circuit breaker and async invoke timeout handlers. 
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClient.#ctor(Amazon.Runtime.AWSCredentials,Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClient" /> class.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration.</param>
+            <exception cref="T:System.ArgumentNullException">config</exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClient.CustomizeRuntimePipeline(Amazon.Runtime.Internal.RuntimePipeline)">
+            <inheritdoc />
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig">
+            <summary>
+            Configuration for <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClient"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig" /> class.
+            </summary>
+            <param name="clientInstanceName">Name of the client instance.
+            Examples: BadgeAwardsRepository, PlatformChat, etc.
+            Data Storage prefix will be added automatically.
+            </param>
+            <exception cref="T:System.ArgumentException">Cannot be null or empty or whitespaces. - clientInstanceName</exception>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig.CircuitBreakerPolicyConfig">
+            <summary>
+            Gets the circuit breaker policy configuration.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig.ClientInstanceName">
+            <summary>
+            Gets the name of the client instance.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig.IsCircuitBreakerEnabled">
+            <summary>
+            Gets or sets a value indicating whether circuit breaker is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets or sets a value indicating whether asynchronous request timeout is enabled.
+            Enabled by default.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings">
+            <summary>
+            RobloxDynamoDbClient default settings <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClient"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.#ctor(System.Boolean,System.Boolean,System.Boolean,System.TimeSpan,System.TimeSpan,System.Int32,System.TimeSpan,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings"/> class.
+            </summary>
+            <param name="isCircuitBreakerEnabled">if set to <c>true</c> then circuit breaker is enabled.</param>
+            <param name="isAsyncRequestTimeoutEnabled">if set to <c>true</c> then asynchronous request timeout is enabled.</param>
+            <param name="isThrottleRetriesEnabled">if set to <c>true</c> throttle retries is enabled.</param>
+            <param name="requestTimeout">The request timeout.</param>
+            <param name="readWriteTimeout">The read write timeout.</param>
+            <param name="failuresAllowedBeforeCircuitBreakerTrip">The failures allowed before circuit breaker trip.</param>
+            <param name="circuitBreakerRetryInterval">The circuit breaker retry interval.</param>
+            <param name="maxErrorRetry">The maximum error retry.</param>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.IsCircuitBreakerEnabled">
+            <summary>
+            Gets a value indicating whether circuit breaker is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Gets a value indicating whether asynchronous request timeout is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.IsThrottleRetriesEnabled">
+            <summary>
+            Gets a value indicating whether throttle retries is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.RequestTimeout">
+            <summary>
+            Gets the request timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.ReadWriteTimeout">
+            <summary>
+            Gets the read write timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.FailuresAllowedBeforeCircuitBreakerTrip">
+            <summary>
+            Gets the amount of failures allowed before circuit breaker trip.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.CircuitBreakerRetryInterval">
+            <summary>
+            Gets the circuit breaker retry interval.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.MaxErrorRetry">
+            <summary>
+            Gets the maximum error retry.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings.Equals(Roblox.Amazon.DynamoDb.RobloxDynamoDbClientDefaultSettings)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory">
+            <summary>
+            Creates clients for Amazon DynamoDB.
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory.Instance">
+            <summary>
+            Gets the instance of <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory"/>.
+            </summary>
+        </member>
+        <member name="E:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory.DefaultClientSettingsChanged">
+            <inheritdoc cref="E:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory.DefaultClientSettingsChanged"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory.Create(Amazon.Runtime.AWSCredentials,Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig)">
+            <summary>
+            Creates Amazon DynamoDB client.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig"/>.</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory.Create(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon DynamoDB client. Uses default settings to build configuration.
+            </summary>
+            <param name="credentials">The credentials.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.
+            (required for performance counters creation)</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory.Create(System.String,System.String,Amazon.RegionEndpoint,System.String)">
+            <summary>
+            Creates Amazon DynamoDB client. Uses default settings to build configuration.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="endpoint">The endpoint.</param>
+            <param name="clientInstanceName">Name of the client instance.</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory.Create(System.String,System.String,Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig)">
+            <summary>
+            Creates Amazon DynamoDB client.
+            </summary>
+            <param name="awsAccessKey">The aws access key.</param>
+            <param name="awsSecretKey">The aws secret key.</param>
+            <param name="config">The configuration <see cref="T:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientConfig"/>.</param>
+            <returns>
+            Amazon DynamoDB client
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory.GetDefaultSettings">
+            <inheritdoc cref="M:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory.GetDefaultSettings"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.RobloxDynamoDbClientFactory.GetDefaultSettingsFromSource">
+            <summary>
+            Gets the default settings from source.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig">
+            <summary>
+            DynamoDB repository configuration for <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryBase"/>
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig"/> class.
+            </summary>
+            <param name="awsAccessKey">The AWS access key.</param>
+            <param name="awsSecretKey">The AWS secret key.</param>
+            <param name="awsRegionName">The name of aws region which is available to the AWS DynamoDB client</param>
+            <param name="maxErrorRetry">The maximum amount of retries on error (if null then default value will be used).</param>
+            <param name="requestTimeout">The request timeout (if null then default value will be used).</param>
+            <param name="isThrottleRetriesEnabled">
+            The is throttle retries enabled (if null then default value will be used).
+            Check https://aws.amazon.com/ru/blogs/developer/retry-throttling-dotnet/ for additional information.
+            </param>
+            <exception cref="T:System.ArgumentException">
+            Has to be a nonempty string - awsAccessKey
+            or
+            Has to be a nonempty string - awsSecretKey
+            or
+            Has to be equal or grater than zero - maxErrorRetry
+            </exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.#ctor(System.String,System.String,Amazon.RegionEndpoint,System.Nullable{System.Int32},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig" /> class.
+            </summary>
+            <param name="awsAccessKey">The AWS access key.</param>
+            <param name="awsSecretKey">The AWS secret key.</param>
+            <param name="regionEndpoint">The endpoint available to the AWS DynamoDB client</param>
+            <param name="maxErrorRetry">The maximum amount of retries on error (if null then default value will be used).</param>
+            <param name="requestTimeout">The request timeout (if null then default value will be used).</param>
+            <param name="isThrottleRetriesEnabled">
+            The is throttle retries enabled (if null then default value will be used).
+            Check https://aws.amazon.com/ru/blogs/developer/retry-throttling-dotnet/ for additional information.
+            </param>
+            <exception cref="T:System.ArgumentException">Has to be a nonempty string - awsAccessKey
+            or
+            Has to be a nonempty string - awsSecretKey
+            or
+            Has to be equal or grater than zero - maxErrorRetry</exception>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.AwsAccessKey">
+            <summary>
+            Gets the aws access key.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.AwsSecretKey">
+            <summary>
+            Gets the aws secret key.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.RegionEndpoint">
+            <summary>
+            Gets the endpoint available to the AWS DynamoDB client
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.MaxErrorRetry">
+            <summary>
+            Gets the maximum amount of retries on error (if null then default value will be used).
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.RequestTimeout">
+            <summary>
+            Gets the request timeout (if null then default value will be used).
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.IsThrottleRetriesEnabled">
+            <summary>
+            Gets is throttle retries enabled. (if null then default value will be used).
+            Check https://aws.amazon.com/ru/blogs/developer/retry-throttling-dotnet/ for additional information.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig.Equals(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfigChangedEventHandler">
+            <summary>
+            EventHandler for event which has to be fired when DynamoDB repository configuration was changed.
+            <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfig"/>
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfigChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfigChangedEventArgs">
+            <summary>
+            EventArgs for <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfigChangedEventHandler"/> which contains changed DynamoDB repository configuration
+            </summary>
+            <seealso cref="T:System.EventArgs" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryConfigChangedEventArgs.RepositoryConfig">
+            <summary>
+            Gets the repository configuration.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryConfigChangedEventArgs.#ctor(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfigChangedEventArgs" /> class.
+            </summary>
+            <param name="repositoryConfig">The client <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryConfigChangedEventHandler"/>.</param>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1">
+            <summary>
+            Generic base abstract class which describes DynamoDB attribute and exposes helper methods.
+            </summary>
+            <typeparam name="T">Data type which is associated with DynamoDB attribute</typeparam>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1.Name">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo"/>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1.Type">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo"/>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1.PlaceHolder">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1.BuildAttributeValue(`0)">
+            <summary>
+            Converts provided value of T type to the <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue"/> entity. 
+            </summary>
+            <param name="value">The value of T type .</param>
+            <returns><see cref="T:Amazon.DynamoDBv2.Model.AttributeValue"/></returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1.GetValueFromDBItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Gets corresponding <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue"/> from DynamoDB database item, converts it to T type 
+            and returns as a result.
+            </summary>
+            <param name="dbItem">The DynamoDB database item.</param>
+            <returns>Converted value of T type</returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1.#ctor(System.String)">
+            <summary>
+            Base constructor.
+            </summary>
+            <param name="name">The DynamoDB attribute name.</param>
+            <exception cref="T:System.ArgumentException">name</exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1.IsAttributeExistInDbItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Determines whether attribute is exist in database item.
+            </summary>
+            <param name="dbItem">The database item.</param>
+            <returns>
+              <c>true</c> if attribute exist in database item; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoDataType">
+            <summary>
+            DynamoDB data types.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.DynamoDataType.B">
+            <summary>
+            A Binary data type.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.DynamoDataType.N">
+            <summary>
+            A Number data type.
+            </summary>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.DynamoDataType.S">
+            <summary>
+            A String Set data type
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoDateTimeAttributeInfo">
+            <summary>
+            Implementation of DynamoAttributeInfo{T} for DateTime type
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1" />
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoDateTimeAttributeInfo.Type">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo" />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoDateTimeAttributeInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoDateTimeAttributeInfo"/> class.
+            </summary>
+            <param name="name">The DynamoDB attribute name.</param>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoDateTimeAttributeInfo.BuildAttributeValue(System.Nullable{System.DateTime})">
+            <summary>
+            Converts provided value to the <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> entity.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoDateTimeAttributeInfo.GetValueFromDBItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Gets corresponding <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> from DynamoDB database item, 
+            converts it to DateTime? and returns as a result.
+            If corresponding attribute doesn't exist or value can't be converted then returns null.
+            </summary>
+            <param name="dbItem">The DynamoDB database item.</param>
+            <returns>
+            Converted value of DateTime? type
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoDateTimeKeyInfo">
+            <summary>
+            Implementation of DynamoKeyInfo{T} for DateTime type
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1" />
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoDateTimeKeyInfo.Type">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo" />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoDateTimeKeyInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoDateTimeKeyInfo"/> class.
+            </summary>
+            <param name="name">The DynamoDB key name.</param>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoDateTimeKeyInfo.BuildAttributeValue(System.Nullable{System.DateTime})">
+            <summary>
+            Converts provided value to the <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> entity.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoDateTimeKeyInfo.GetValueFromDBItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Gets corresponding <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> from DynamoDB database item, 
+            converts it to DateTime? and returns as a result.
+            If corresponding key doesn't exist or value can't be converted then returns null.
+            </summary>
+            <param name="dbItem">The DynamoDB database item.</param>
+            <returns>
+            Converted value of DateTime? type
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1">
+            <summary>
+            Generic base abstract class which describes DynamoDB key and exposes helper methods.
+            </summary>
+            <typeparam name="T">Data type which is associated with DynamoDB key</typeparam>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1.Name">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo"/>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1.Type">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo"/>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1.PlaceHolder">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1.BuildAttributeValue(`0)">
+            <summary>
+            Converts provided value of T type to the <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue"/> entity. 
+            </summary>
+            <param name="value">The value of T type .</param>
+            <returns><see cref="T:Amazon.DynamoDBv2.Model.AttributeValue"/></returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1.GetValueFromDBItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Gets corresponding <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue"/> from DynamoDB database item, converts it to T type 
+            and returns as a result.
+            </summary>
+            <param name="dbItem">The DynamoDB database item.</param>
+            <returns>Converted value of T type</returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1.#ctor(System.String)">
+            <summary>
+            Base constructor.
+            </summary>
+            <param name="name">The DynamoDB key name.</param>
+            <exception cref="T:System.ArgumentNullException">name</exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1.IsKeyExistInDbItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Determines whether key is exist in database item.
+            </summary>
+            <param name="dbItem">The database item.</param>
+            <returns>
+              <c>true</c> if key exist in database item]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoNumericAttributeInfo">
+            <summary>
+            Implementation of DynamoAttributeInfo{T} for long type
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1" />
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoNumericAttributeInfo.Type">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo" />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoNumericAttributeInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoNumericAttributeInfo"/> class.
+            </summary>
+            <param name="name">The DynamoDB attribute name.</param>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoNumericAttributeInfo.BuildAttributeValue(System.Nullable{System.Int64})">
+            <summary>
+            Converts provided value to the <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> entity.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoNumericAttributeInfo.GetValueFromDBItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Gets corresponding <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> from DynamoDB database item, 
+            converts it to long? and returns as a result. 
+            If corresponding attribute doesn't exist or value can't be converted then returns null.
+            </summary>
+            <param name="dbItem">The DynamoDB database item.</param>
+            <returns>
+            Converted value of DateTime? type
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoNumericKeyInfo">
+            <summary>
+            Implementation of DynamoKeyInfo{T} for long type
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1" />
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoNumericKeyInfo.Type">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo" />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoNumericKeyInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoNumericKeyInfo"/> class.
+            </summary>
+            <param name="name">The DynamoDB key name.</param>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoNumericKeyInfo.BuildAttributeValue(System.Nullable{System.Int64})">
+            <summary>
+            Converts provided value to the <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> entity.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoNumericKeyInfo.GetValueFromDBItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Gets corresponding <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> from DynamoDB database item, 
+            converts it to long? and returns as a result. 
+            If corresponding key doesn't exist or value can't be converted then returns null.
+            </summary>
+            <param name="dbItem">The DynamoDB database item.</param>
+            <returns>
+            Converted value of DateTime? type
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoStringAttributeInfo">
+            <summary>
+            Implementation of DynamoAttributeInfo{T} for string type
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.DynamoAttributeInfo`1" />
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoStringAttributeInfo.Type">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo" />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoStringAttributeInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoStringAttributeInfo"/> class.
+            </summary>
+            <param name="name">The DynamoDB attribute name.</param>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoStringAttributeInfo.BuildAttributeValue(System.String)">
+            <summary>
+            Converts provided value to the <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> entity.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoStringAttributeInfo.GetValueFromDBItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Gets corresponding <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> from DynamoDB database item, 
+            converts it to string and returns as a result.
+            If corresponding attribute doesn't exist or value can't be converted then returns null.
+            </summary>
+            <param name="dbItem">The DynamoDB database item.</param>
+            <returns>
+            Converted value of string type
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoStringKeyInfo">
+            <summary>
+            Implementation of DynamoKeyInfo{T} for string type
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.DynamoKeyInfo`1" />
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoStringKeyInfo.Type">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo" />
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoStringKeyInfo.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoStringKeyInfo"/> class.
+            </summary>
+            <param name="name">The DynamoDB key name.</param>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoStringKeyInfo.BuildAttributeValue(System.String)">
+            <summary>
+            Converts provided value to the <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> entity.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" />
+            </returns>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoStringKeyInfo.GetValueFromDBItem(System.Collections.Generic.Dictionary{System.String,Amazon.DynamoDBv2.Model.AttributeValue})">
+            <summary>
+            Gets corresponding <see cref="T:Amazon.DynamoDBv2.Model.AttributeValue" /> from DynamoDB database item, 
+            converts it to DateTime? and returns as a result.
+            If corresponding key doesn't exist or value can't be converted then returns null.
+            </summary>
+            <param name="dbItem">The DynamoDB database item.</param>
+            <returns>
+            Converted value of DateTime? type
+            </returns>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo">
+            <summary>
+            Describes particular DynamoDB attribute
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo.Name">
+            <summary>
+            Gets the DynamoDB attribute name.
+            </summary>
+            <value>
+            The DynamoDB attribute name.
+            </value>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo.Type">
+            <summary>
+            Gets the DynamoDB data type <see cref="T:Roblox.Amazon.DynamoDb.DynamoDataType"/>.
+            </summary>
+            <value>
+            The DynamoDB data type.
+            </value>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo.PlaceHolder">
+            <summary>
+            Gets the DynamoDB attribute value placeholder. More information: http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html
+            </summary>
+            <value>
+            The DynamoDB attribute value place holder.
+            </value>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.IDynamoKeyInfo">
+            <summary>
+            Describes particular DynamoDB key
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoKeyInfo.Name">
+            <summary>
+            Gets the DynamoDB key name.
+            </summary>
+            <value>
+            The DynamoDB key name.
+            </value>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoKeyInfo.Type">
+            <summary>
+            Gets the DynamoDB data type <see cref="T:Roblox.Amazon.DynamoDb.DynamoDataType"/>.
+            </summary>
+            <value>
+            The DynamoDB data type.
+            </value>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoKeyInfo.PlaceHolder">
+            <summary>
+            Gets the DynamoDB key place holder which can be used to define an expression attribute value 
+            as a placeholder.
+            </summary>
+            <value>
+            The DynamoDB key place holder.
+            </value>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoMapperBase">
+            <summary>
+            Abstract base class for DynamoDB mappers. 
+            Different <see cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo"/> implementations can be used in derived classes
+            to describe DynamoDB attributes.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoMapperBase.GetAttributeNotExistsConditionExpression(Roblox.Amazon.DynamoDb.IDynamoAttributeInfo)">
+            <summary>
+            Gets the "specified attribute not exists" condition expression.
+            </summary>
+            <param name="dynamoAttributeInfo"><see cref="T:Roblox.Amazon.DynamoDb.IDynamoAttributeInfo"/></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">dynamoAttributeInfo</exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoMapperBase.GetAttributeExistsConditionExpression(Roblox.Amazon.DynamoDb.IDynamoAttributeInfo)">
+            <summary>
+            Gets the "specified attribute exists" condition expression.
+            </summary>
+            <param name="dynamoAttributeInfo">The dynamo attribute information.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">dynamoAttributeInfo</exception>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings">
+            <summary>
+            All settings for the <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClient"/>, populates the <see cref="T:Roblox.Amazon.DynamoDb.RobloxDaxClientDefaultSettings"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.IsCircuitBreakerEnabled">
+            <summary>
+            Whether the circuit breaker is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Whether asynchronous request timeout is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.IsThrottleRetriesEnabled">
+            <summary>
+            Whether throttle retries is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.RequestTimeout">
+            <summary>
+            The request timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.ReadWriteTimeout">
+            <summary>
+            The read write timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.FailuresAllowedBeforeCircuitBreakerTrip">
+            <summary>
+            Amount of failures allowed before circuit breaker trip.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.CircuitBreakerRetryInterval">
+            <summary>
+            Circuit breaker retry interval.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.IsFailuresToTripOnExtendedModeEnabled">
+            <summary>
+            Whether failures to trip on extended mode is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.MaxErrorRetry">
+            <summary>
+            Maximum error retry.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClientSettings.RegionEndpointSystemName">
+            <summary>
+            The default region endpoint, e.g. us-east-1.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings">
+            <summary>
+            All settings for the <see cref="!:RobloxDaxClusterClient"/>, populates the <see cref="!:RobloxDaxClusterClientDefaultSettings"/>.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.IsCircuitBreakerEnabled">
+            <summary>
+            Whether the circuit breaker is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.IsAsyncRequestTimeoutEnabled">
+            <summary>
+            Whether asynchronous request timeout is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.RequestTimeout">
+            <summary>
+            The request timeout.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.FailuresAllowedBeforeCircuitBreakerTrip">
+            <summary>
+            Amount of failures allowed before circuit breaker trip.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.CircuitBreakerRetryInterval">
+            <summary>
+            Circuit breaker retry interval.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.IsFailuresToTripOnExtendedModeEnabled">
+            <summary>
+            Whether failures to trip on extended mode is enabled.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.ReadRetryCount">
+            <summary>
+            How often should read requests be retried?
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.WriteRetryCount">
+            <summary>
+            How often should write requests be retried?
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.HealthCheckInterval">
+            <summary>
+            What should the <see cref="T:System.TimeSpan"/> between two health checks be?
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.HealthCheckTimeout">
+            <summary>
+            How long to wait for the healthcheck response?
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.MaxPendingConnections">
+            <summary>
+            How many concurrent pending connections to allow?
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.Properties.IDaxClusterClientSettings.RegionEndpointSystemName">
+            <summary>
+            The default region endpoint, e.g. us-east-1.
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.Properties.Settings">
+            <summary>
+            Configuration that uses Roblox.Configuration.Provider
+            </summary>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoRepository">
+            <summary>
+            Represents a configurable Dynamo repository.
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoRepository" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepository.Client">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepository"/>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepository.ClientName">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepository"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepository.#ctor(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig,System.String,Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryBase" /> class.
+            </summary>
+            <param name="repositoryConfig">The AWS DynamoDB credentials.</param>
+            <param name="clientName">The name of the repository's client.</param>
+            <param name="dynamoDbClientFactory">The <see cref="T:Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory"/> used to build the repository's client.</param>
+            <param name="logger">The <see cref="T:Roblox.EventLog.ILogger"/> used to log errors.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="repositoryConfig"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="clientName"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="dynamoDbClientFactory"/></exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="logger"/></exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepository.Refresh(System.String,System.String)">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepository"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepository.Refresh(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig)">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepository"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepository.Dispose">
+            <summary>
+            Disposes the current instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepository.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.DynamoRepositoryBase">
+            <summary>
+            DynamoRepositoryBase
+            </summary>
+            <seealso cref="T:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase" />
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.TableName">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase"/>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.ClientName">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase"/>
+        </member>
+        <member name="F:Roblox.Amazon.DynamoDb.DynamoRepositoryBase._RepositoryConfig">
+            <summary>
+            Gets the AWS DynamoDB client configuration.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.Client">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.#ctor(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig,System.String,System.String,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryBase" /> class.
+            </summary>
+            <param name="repositoryConfig">The AWS DynamoDB client configuration.</param>
+            <param name="robloxEnvironmentAbbreviation">The roblox environment abbreviation.</param>
+            <param name="pureTableName">The pure name of the DynamoDB table.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:System.ArgumentNullException">credentials
+            or
+            logger
+            or
+            repositoryConfig</exception>
+            <exception cref="T:System.ArgumentException">Environment abbreviation must be specified - robloxEnvironmentAbbreviation
+            or
+            Table name must be specified - pureTableName</exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.#ctor(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig,System.String,System.String,Roblox.Amazon.DynamoDb.IRobloxDynamoDbClientFactory,Roblox.EventLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Roblox.Amazon.DynamoDb.DynamoRepositoryBase" /> class.
+            </summary>
+            <param name="repositoryConfig">The AWS DynamoDB credentials.</param>
+            <param name="robloxEnvironmentAbbreviation">The roblox environment abbreviation.</param>
+            <param name="pureTableName">The pure name of the DynamoDB table.</param>
+            <param name="dynamoDbClientFactory">The dynamo database client factory.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:System.ArgumentException">Environment abbreviation must be specified - robloxEnvironmentAbbreviation
+            or
+            Table name must be specified - pureTableName</exception>
+            <exception cref="T:System.ArgumentNullException">
+            credentials
+            or
+            logger
+            or
+            repositoryConfig
+            </exception>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.Refresh(System.String,System.String)">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.Refresh(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig)">
+            <inheritdoc cref="T:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase"/>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.Dispose">
+            <summary>
+            Disposes the current instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.DynamoRepositoryBase.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.IDynamoRepository">
+            <summary>
+            Provides a common interface for an object that exposes a configurable DynamoDB client.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoRepository.Client">
+            <summary>
+            Gets the <see cref="T:Amazon.DynamoDBv2.IAmazonDynamoDB"/> that connected to the repository.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoRepository.ClientName">
+            <summary>
+            Gets the name of the client instance.
+            </summary>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IDynamoRepository.Refresh(System.String,System.String)">
+            <summary>
+            Updates DynamoDB client with new aws credentials.
+            </summary>
+            <param name="awsAccessKey">The AWS access key.</param>
+            <param name="awsSecretKey">The AWS secret key.</param>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IDynamoRepository.Refresh(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig)">
+            <summary>
+            Updates the instance's client with the specified client configuration.
+            </summary>
+            <param name="repositoryConfig">The DynamoDB credentials.</param>
+        </member>
+        <member name="T:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase">
+            <summary>
+            DynamoRepositoryBase interface which exposes methods to get DynamoDB client, table name, update DynamoDB client configs/aws credentials
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase.TableName">
+            <summary>
+            Gets the name of the DynamoDB table.
+            </summary>
+            <value>
+            The name of the DynamoDB table.
+            </value>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase.ClientName">
+            <summary>
+            Gets the name of the client instance.
+            </summary>
+        </member>
+        <member name="P:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase.Client">
+            <summary>
+            Gets the AWS DynamoDB client <see cref="T:Amazon.DynamoDBv2.IAmazonDynamoDB"/>.
+            </summary>
+            <value>
+            The AWS DynamoDB client.
+            </value>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase.Refresh(System.String,System.String)">
+            <summary>
+            Updates DynamoDB client with new aws credentials.
+            </summary>
+            <param name="awsAccessKey">The AWS access key.</param>
+            <param name="awsSecretKey">The AWS secret key.</param>
+        </member>
+        <member name="M:Roblox.Amazon.DynamoDb.IDynamoRepositoryBase.Refresh(Roblox.Amazon.DynamoDb.DynamoRepositoryConfig)">
+            <summary>
+            Updates DynamoDB client with the specified client configuration.
+            </summary>
+            <param name="repositoryConfig">The DynamoDB credentials.</param>
+        </member>
+    </members>
+</doc>

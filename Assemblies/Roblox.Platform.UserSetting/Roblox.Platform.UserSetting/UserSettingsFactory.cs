@@ -10,7 +10,7 @@ internal class UserSettingsFactory : IUserSettingsFactory
 
 	public UserSettingsFactory(UserSettingDomainFactories domainFactories)
 	{
-		_DomainFactories = domainFactories.AssignOrThrowIfNull("domainFactories");
+		_DomainFactories = domainFactories ?? throw new PlatformArgumentNullException("domainFactories");
 	}
 
 	public IUserSettings GetUserSettings(IUserIdentifier user)

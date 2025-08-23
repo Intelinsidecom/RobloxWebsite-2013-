@@ -51,7 +51,7 @@ internal abstract class UrlBuilderBase
 			IEnumerable enumerableValue = ((parameterValue is string) ? null : (parameterValue as IEnumerable));
 			if (enumerableValue != null)
 			{
-				foreach (object? rawValue in enumerableValue)
+				foreach (object rawValue in enumerableValue)
 				{
 					string encodedValue2 = ((rawValue != null) ? HttpUtility.UrlEncode(rawValue.ToString()) : string.Empty);
 					list.Add(new KeyValuePair<string, string>(parameterKey, encodedValue2));

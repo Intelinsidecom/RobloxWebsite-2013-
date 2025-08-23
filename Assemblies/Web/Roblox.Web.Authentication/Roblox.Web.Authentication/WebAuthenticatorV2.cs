@@ -140,7 +140,7 @@ public class WebAuthenticatorV2 : IWebAuthenticatorV2, ILoginEventSender
 			loginCaptchaActionPassed = loginCaptchaAction.HasPassed(DateTime.Now);
 			if (!loginCaptchaActionPassed && captchaParameter != null && captchaParameter.IsBedev2ForBackendWebLoginEnabled)
 			{
-				loginCaptchaActionPassed = _CaptchaGrpcClient.CaptchaPassed(captchaParameter, (ActionType)3);
+				loginCaptchaActionPassed = _CaptchaGrpcClient.CaptchaPassed(captchaParameter, (Roblox.Captcha.Captcha.V1.ActionType)3);
 			}
 			if (!loginCaptchaActionPassed && (captchaAuthorityCaptchaRequired || loginAttemptFloodCheckersFlooded) && !_CaptchaAuthority.IsCredentialValueExemptFromAttemptCaptcha(credentials.CredentialValue))
 			{

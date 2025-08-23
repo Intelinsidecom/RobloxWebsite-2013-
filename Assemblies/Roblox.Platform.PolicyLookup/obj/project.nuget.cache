@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "tp38ZLYun2+UnJ68BdL8Ztzqj1sGmtsb9bMg0sl5oecAAvCpUOOMib3MU0+gvKWT4sSKR8gapD5kjUrEuffM8A==",
+  "dgSpecHash": "/4X8958eUIM=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.PolicyLookup\\Roblox.Platform.PolicyLookup.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.PolicyLookup\\Roblox.Platform.PolicyLookup.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

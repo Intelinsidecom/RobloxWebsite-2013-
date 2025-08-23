@@ -26,7 +26,7 @@ public class GroupConfigElements : ConfigurationElementCollection
 		}
 	}
 
-	public GroupConfigElement this[string name] => (GroupConfigElement)(object)this.BaseGet((object)name);
+	public new GroupConfigElement this[string name] => (GroupConfigElement)(object)this.BaseGet((object)name);
 
 	public void Add(GroupConfigElement item)
 	{

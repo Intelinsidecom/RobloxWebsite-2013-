@@ -4,6 +4,7 @@
     <AssemblyName>Roblox.Platform.VirtualCurrency</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net471</TargetFramework>
+    <NoWarn>$(NoWarn);CS1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -28,6 +29,10 @@
     </Reference>
     <Reference Include="Roblox.Sentinels">
       <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
+      <Aliases>ConfMan</Aliases>
     </Reference>
   </ItemGroup>
 </Project>

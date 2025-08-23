@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XcM/dQIOeh32tH1nFNVqwU0MxhV7YYCva8WkQnngmAGtWj4orGlXxKNO33jTyVCcjzRfw1bJog4Xd5Y6fis9hg==",
+  "dgSpecHash": "PBeSmlHPaS8=",
   "success": true,
-  "projectFilePath": "W:\\--Roblox\\Roblox.Platform.UniverseSettings\\Roblox.Platform.UniverseSettings.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.Platform.UniverseSettings\\Roblox.Platform.UniverseSettings.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512"
+  ],
   "logs": []
 }

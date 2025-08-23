@@ -22,12 +22,17 @@ namespace Roblox.Currency.Client
         bool TryDebitRobux(long agentId, long amount);
         long GetRobuxHeld(long currencyHolderId);
         CurrencyBalances GetCurrencyBalances(long agentId);
+
+        // Recurring transaction APIs (minimal surface for VirtualCurrency project)
+        bool CancelRecurringTransaction(string id);
+        RecurringTransactionProfileDetails GetRecurringTransactionProfile(string id);
     }
 
     // A simple in-process implementation to enable functional behavior without external services.
     public class InProcessCurrencyAuthority : ICurrencyAuthority
     {
         private readonly ConcurrentDictionary<long, long> _balances = new();
+        private readonly ConcurrentDictionary<string, RecurringTransactionProfileDetails> _recurring = new();
 
         public long GetRobuxBalance(long agentId)
         {
@@ -64,5 +69,41 @@ namespace Roblox.Currency.Client
             // No separate hold tracking in this simple implementation.
             return 0L;
         }
+
+        public bool CancelRecurringTransaction(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id)) return false;
+            return _recurring.TryRemove(id, out _);
+        }
+
+        public RecurringTransactionProfileDetails GetRecurringTransactionProfile(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id)) throw new CurrencyClientException("id required");
+            // Return existing or synthesize a simple record for testing
+            return _recurring.GetOrAdd(id, key => new RecurringTransactionProfileDetails
+            {
+                RecurringTransactionProfileId = key,
+                CurrencyTypeId = 1,
+                RecurrenceStartDate = DateTime.UtcNow.AddDays(-1),
+                RecurrenceEndDate = null,
+                CurrencyHolderTypeId = 1,
+                CurrencyHolderTargetId = 0,
+                TransactionTypeId = 1,
+                Amount = 0
+            });
+        }
+    }
+
+    // Minimal DTO to support VirtualCurrency.RecurringTransactionFactory mapping
+    public class RecurringTransactionProfileDetails
+    {
+        public string RecurringTransactionProfileId { get; set; }
+        public int CurrencyTypeId { get; set; }
+        public DateTime RecurrenceStartDate { get; set; }
+        public DateTime? RecurrenceEndDate { get; set; }
+        public int CurrencyHolderTypeId { get; set; }
+        public long CurrencyHolderTargetId { get; set; }
+        public int TransactionTypeId { get; set; }
+        public long Amount { get; set; }
     }
 }

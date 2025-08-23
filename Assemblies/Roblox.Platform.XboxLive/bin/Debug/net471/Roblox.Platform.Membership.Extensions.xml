@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Roblox.Platform.Membership.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:Roblox.Platform.Membership.Extensions.UserExtensions">
+            <summary>
+            Extension methods for <see cref="T:Roblox.Platform.Membership.IUser"/>.
+            </summary>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Extensions.UserExtensions.ToClientTextAuthor(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates a <see cref="T:Roblox.TextFilter.Client.IClientTextAuthor"/> from an <see cref="T:Roblox.Platform.Membership.IUser"/> for text filter request using the TextFilter client.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> that creates the text.</param>
+            <returns><see cref="T:Roblox.TextFilter.Client.IClientTextAuthor"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Extensions.UserExtensions.ToTextAuthor(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates a <see cref="T:Roblox.TextFilter.ITextAuthor"/> from an <see cref="T:Roblox.Platform.Membership.IUser"/> for text filtering request.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> that creates the text.</param>
+            <returns><see cref="T:Roblox.TextFilter.ITextAuthor"/>.</returns>
+        </member>
+        <member name="M:Roblox.Platform.Membership.Extensions.UserExtensions.ToTextRecipient(Roblox.Platform.Membership.IUser)">
+            <summary>
+            Creates a <see cref="T:Roblox.TextFilter.ITextRecipient"/> from an <see cref="T:Roblox.Platform.Membership.IUser"/> for text filtering request.
+            </summary>
+            <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser"/> who will be receiving the text.</param>
+            <returns><see cref="T:Roblox.TextFilter.ITextRecipient"/>.</returns>
+        </member>
+    </members>
+</doc>

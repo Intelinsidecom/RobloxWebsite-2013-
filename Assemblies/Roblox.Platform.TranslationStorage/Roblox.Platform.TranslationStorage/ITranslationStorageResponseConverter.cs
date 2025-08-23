@@ -4,7 +4,7 @@ namespace Roblox.Platform.TranslationStorage;
 
 internal interface ITranslationStorageResponseConverter
 {
-	DeleteTranslationResponse ConvertDeleteTranslationResponse(DeleteTranslationResponse clientRespone);
+	DeleteTranslationResponse ConvertDeleteTranslationResponse(Roblox.TranslationStorage.Client.DeleteTranslationResponse clientRespone);
 
-	CreateOrUpdateTranslationStatus ConvertCreateOrUpdateTranslationResponse(CreateOrUpdateTranslationResponse clientResponse);
+	CreateOrUpdateTranslationStatus ConvertCreateOrUpdateTranslationResponse(Roblox.TranslationStorage.Client.CreateOrUpdateTranslationResponse clientResponse);
 }

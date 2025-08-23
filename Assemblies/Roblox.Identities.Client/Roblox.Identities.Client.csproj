@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Identities.Client</AssemblyName>
+    <TargetFramework>net471</TargetFramework>
+    <LangVersion>11.0</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Roblox.Identities.Models">
+      <HintPath>..\..\Website\bin\Roblox.Identities.Models.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
