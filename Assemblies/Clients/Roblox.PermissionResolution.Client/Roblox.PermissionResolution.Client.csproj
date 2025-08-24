@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
-    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <AssemblyName>Roblox.PermissionResolution.Client</AssemblyName>
-    <LangVersion>11.0</LangVersion>
-  </PropertyGroup>
-</Project>

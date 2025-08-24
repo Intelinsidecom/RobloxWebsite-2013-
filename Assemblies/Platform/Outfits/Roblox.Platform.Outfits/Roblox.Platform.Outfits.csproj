@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.Outfits</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <NoWarn>$(NoWarn);CS1668;1668;CS0618</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Roblox.Data">
+      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Caching">
+      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Entities">
+      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.MssqlDatabases">
+      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Roblox.Platform.Core">
+      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Roblox.Platform.Membership">
+      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.Assets">
+      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox Server Class Library">
+      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.TextFilter.Client">
+      <HintPath>..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.ContentFilter.Client">
+      <HintPath>..\..\Website\bin\Roblox.ContentFilter.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Paging">
+      <HintPath>..\..\Website\bin\Roblox.Paging.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.MembershipCore">
+      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Platform.AssetsCore">
+      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Entities.Mssql">
+      <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Common">
+      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Users">
+      <HintPath>..\..\Website\bin\Roblox.Users.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

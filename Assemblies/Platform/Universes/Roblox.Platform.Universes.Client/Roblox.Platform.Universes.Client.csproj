@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyName>Roblox.Platform.Universes.Client</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>11.0</LangVersion>
+    <NoWarn>$(NoWarn);CS1668;CS0618</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Roblox.ApiClientBase">
+      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

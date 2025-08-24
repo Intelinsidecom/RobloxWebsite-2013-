@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.RealTimeNotifications.Client</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Roblox.Http.ServiceClient">
+      <HintPath>..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Instrumentation">
+      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.RequestContext">
+      <HintPath>..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Http.Client">
+      <HintPath>..\..\Website\bin\Roblox.Http.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Configuration">
+      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Roblox.Sentinels">
+      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

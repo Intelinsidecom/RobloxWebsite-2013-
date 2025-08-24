@@ -1,4 +1,0 @@
-c:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Assets.Client\obj\Release\net472\Roblox.Assets.Client.csproj.AssemblyReference.cache
-c:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Assets.Client\obj\Release\net472\Roblox.Assets.Client.GeneratedMSBuildEditorConfig.editorconfig
-c:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Assets.Client\obj\Release\net472\Roblox.Assets.Client.csproj.CoreCompileInputs.cache
-c:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Assets.Client\obj\Release\net472\Roblox.Assets.Client.sourcelink.json

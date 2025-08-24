@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.Platform.PremiumFeatures</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Roblox.Data\Roblox.Data.csproj" />
+    <ProjectReference Include="..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\Common\Roblox.Common.Web\Roblox.Common.Web.csproj" />
+    <ProjectReference Include="..\Roblox.Locking\Roblox.Locking.csproj" />
+    <ProjectReference Include="..\Roblox.Platform.AssetOwnership\Roblox.Platform.AssetOwnership.csproj" />
+    <ProjectReference Include="..\Roblox.Entities\Roblox.Entities.csproj" />
+    <ProjectReference Include="..\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj" />
+    <ProjectReference Include="..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\Common\Roblox.Common\Roblox.Common.csproj" />
+    <ProjectReference Include="..\Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj" />
+    <ProjectReference Include="..\Roblox.Economy.Common\Roblox.Economy.Common.csproj" />
+    <ProjectReference Include="..\Roblox Server Class Library\Roblox Server Class Library.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+</Project>
