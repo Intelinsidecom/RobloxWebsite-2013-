@@ -12,11 +12,13 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Random">
-      <HintPath>..\..\Website\bin\Roblox.Random.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Random\\Roblox.Random\\Roblox.Random.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

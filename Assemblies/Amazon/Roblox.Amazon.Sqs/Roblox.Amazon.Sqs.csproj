@@ -13,33 +13,42 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Amazon.Core">
-      <HintPath>..\..\Website\bin\Roblox.Amazon.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Coordination">
-      <HintPath>..\..\Website\bin\Roblox.Coordination.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Time">
-      <HintPath>..\..\Website\bin\Roblox.Time.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.FloodCheckers.Redis">
-      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Redis.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\Roblox.Amazon.Core\\Roblox.Amazon.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Coordination\\Roblox.Coordination\\Roblox.Coordination.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Time\\Roblox.Time\\Roblox.Time.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\FloodCheckers\\Roblox.FloodCheckers.Core\\Roblox.FloodCheckers.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\FloodCheckers\\Roblox.FloodCheckers.Redis\\Roblox.FloodCheckers.Redis.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AWSSDK.Core" Version="3.7.0" />

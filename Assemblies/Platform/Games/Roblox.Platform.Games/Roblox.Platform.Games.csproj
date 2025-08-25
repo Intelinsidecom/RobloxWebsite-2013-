@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Games</AssemblyName>
@@ -12,141 +12,177 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Universes.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.CatalogItemChangePublisher">
-      <HintPath>..\..\Website\bin\Roblox.CatalogItemChangePublisher.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Assets.Places">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.Places.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon.Sns">
-      <HintPath>..\..\Website\bin\Roblox.Amazon.Sns.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Paging">
-      <HintPath>..\..\Website\bin\Roblox.Paging.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetOwnership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Entities">
-      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Economy">
-      <HintPath>..\..\Website\bin\Roblox.Economy.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Caching">
-      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Agents">
-      <HintPath>..\..\Website\bin\Roblox.Agents.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Groups">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Groups.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetPermissions">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetPermissions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Moderation">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Moderation.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Games.Client">
-      <HintPath>..\..\Website\bin\Roblox.Games.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Privacy">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Privacy.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.VirtualCurrency">
-      <HintPath>..\..\Website\bin\Roblox.Platform.VirtualCurrency.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.GameInstances">
-      <HintPath>..\..\Website\bin\Roblox.Platform.GameInstances.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Permissions">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Permissions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Events">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Events.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Permissions.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Permissions.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Data">
-      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\..\Website\bin\Roblox.MssqlDatabases.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetsCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.ElevatedActions">
-      <HintPath>..\..\Website\bin\Roblox.Web.ElevatedActions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common">
-      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Economy.Common">
-      <HintPath>..\..\Website\bin\Roblox.Economy.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Floodcheckers">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Floodcheckers.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\..\Website\bin\Roblox.Entities.Mssql.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
+      <Project>
+      </Project>
+      <Name>Roblox.Platform.Membership.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Universes\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.Assets\\Roblox.Platform.Assets.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Catalog\\Roblox.Platform.CatalogItemChangePublisher\\Roblox.Platform.CatalogItemChangePublisher.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.Assets.Places\\Roblox.Platform.Assets.Places.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Paging\\Roblox.Paging.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Counters\\Roblox.Platform.EphemeralCounters\\Roblox.Platform.EphemeralCounters.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Economy\\Roblox.Economy\\Roblox.Economy.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Agents\\Roblox.Agents\\Roblox.Agents.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Groups\\Roblox.Platform.Groups\\Roblox.Platform.Groups.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetPermissions\\Roblox.Platform.AssetPermissions.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Privacy\\Roblox.Platform.Privacy\\Roblox.Platform.Privacy.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers\\Roblox.FloodCheckers.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\VirtualCurrency\\Roblox.Platform.VirtualCurrency\\Roblox.Platform.VirtualCurrency.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Platform.GameInstances\\Roblox.Platform.GameInstances.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Permissions\\Roblox.Platform.Permissions\\Roblox.Platform.Permissions.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.Events\\Roblox.Events.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Permissions\\Roblox.Platform.Permissions.Core\\Roblox.Platform.Permissions.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers.Core\\Roblox.FloodCheckers.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Data\\Roblox.Data\\Roblox.Data.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetsCore\\Roblox.Platform.AssetsCore.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Web\\Roblox.Web.ElevatedActions\\Roblox.Web.ElevatedActions.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Economy\\Roblox.Economy.Common\\Roblox.Economy.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Moderation\\Roblox.Moderation\\Roblox.Moderation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Platform.Games.Client\\Roblox.Platform.Games.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers\\Roblox.FloodCheckers.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Permissions.Client\Roblox.Permissions.Client.csproj" />
-    <ProjectReference Include="..\Roblox.Universes.Client\Roblox.Universes.Client.csproj" />
-    <ProjectReference Include="..\Roblox.Marketplace.Client\Roblox.Marketplace.Client.csproj" />
+    <ProjectReference Include="..\\..\\Permissions\\Roblox.Platform.Permissions.Client\\Roblox.Platform.Permissions.Client.csproj" />
+    <ProjectReference Include="..\\..\\Universes\\Roblox.Platform.Universes.Client\\Roblox.Platform.Universes.Client.csproj" />
+    <ProjectReference Include="..\\..\\Marketplace\\Roblox.Platform.Marketplace.Client\\Roblox.Platform.Marketplace.Client.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AWSSDK.Core" Version="3.7.0" />

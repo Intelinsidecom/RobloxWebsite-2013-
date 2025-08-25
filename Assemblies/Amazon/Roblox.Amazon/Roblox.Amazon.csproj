@@ -12,27 +12,30 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.BucketStore">
-      <HintPath>..\..\Website\bin\Roblox.BucketStore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
     <Reference Include="System.Configuration">
-      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Web">
-      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Web.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Common.NetStandard">
-      <HintPath>..\..\Website\bin\Roblox.Common.NetStandard.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Roblox\\Roblox.BucketStore\\Roblox.BucketStore.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Common\\Roblox.Common.NetStandard\\Roblox.Common.NetStandard.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />

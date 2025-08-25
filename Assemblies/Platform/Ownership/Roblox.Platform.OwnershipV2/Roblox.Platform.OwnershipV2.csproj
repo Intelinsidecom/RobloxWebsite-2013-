@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.OwnershipV2</AssemblyName>
@@ -12,15 +12,18 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.OwnershipV2.Client\Roblox.OwnershipV2.Client.csproj" />
-    <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\Roblox.Platform.OwnershipV2.Client\\Roblox.Platform.OwnershipV2.Client.csproj" />
+    <ProjectReference Include="..\\..\\..\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

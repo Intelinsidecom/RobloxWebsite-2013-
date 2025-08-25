@@ -1,4 +1,4 @@
-namespace Roblox.GameLocalization.Client.GameLocalizationRoles
+namespace Roblox.Platform.GameLocalization.Client.GameLocalizationRoles
 {
     public enum RoleAssigneeType
     {

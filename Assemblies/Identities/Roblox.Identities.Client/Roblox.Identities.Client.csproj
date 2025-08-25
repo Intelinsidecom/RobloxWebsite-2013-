@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Identities.Client</AssemblyName>
@@ -7,8 +7,9 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Roblox.Identities.Models">
-      <HintPath>..\..\Website\bin\Roblox.Identities.Models.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\Roblox.Identities.Models\\Roblox.Identities.Models.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

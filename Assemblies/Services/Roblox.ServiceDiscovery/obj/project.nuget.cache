@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hhlcIoi7hE8=",
+  "dgSpecHash": "kvYSyyjshIs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox.ServiceDiscovery\\Roblox.ServiceDiscovery.csproj",
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Services\\Roblox.ServiceDiscovery\\Roblox.ServiceDiscovery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Intel\\.nuget\\packages\\consul\\1.6.10.4\\consul.1.6.10.4.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

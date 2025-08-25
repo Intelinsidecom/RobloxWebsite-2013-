@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.IpAddresses</AssemblyName>
@@ -12,25 +12,31 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.MaxMind.GeoIP2">
-      <HintPath>..\..\Website\bin\Roblox.MaxMind.GeoIP2.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Entities">
-      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.Common">
-      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.MaxMind.GeoIP2\\Roblox.MaxMind.GeoIP2.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />

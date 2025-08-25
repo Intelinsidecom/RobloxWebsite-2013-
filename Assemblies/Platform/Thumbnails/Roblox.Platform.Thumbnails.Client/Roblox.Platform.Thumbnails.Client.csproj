@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net471</TargetFramework>
@@ -8,11 +8,13 @@
     <LangVersion>11.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -12,17 +12,15 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
-      <HintPath>..\..\Website\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
   </ItemGroup>
 </Project>

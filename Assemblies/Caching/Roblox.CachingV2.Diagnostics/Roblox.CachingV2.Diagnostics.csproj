@@ -12,11 +12,13 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.CachingV2.Core">
-      <HintPath>..\Roblox.CachingV2.Core\bin\Debug\netstandard2.0\Roblox.CachingV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\Roblox.CachingV2.Core\\Roblox.CachingV2.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

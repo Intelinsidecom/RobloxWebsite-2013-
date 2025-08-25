@@ -3,7 +3,7 @@ using Roblox.Agents;
 using Roblox.Moderation;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Membership;
-using Roblox.Platform.MembershipCore;
+using Roblox.Platform.Membership.Core;
 
 namespace Roblox.Platform.Moderation;
 

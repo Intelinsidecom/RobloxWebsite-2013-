@@ -12,17 +12,21 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Pipeline">
-      <HintPath>..\..\Website\bin\Roblox.Pipeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Http">
-      <HintPath>..\..\Website\bin\Roblox.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Roblox\\Roblox.Pipeline\\Roblox.Pipeline.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Http\\Roblox.Http.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

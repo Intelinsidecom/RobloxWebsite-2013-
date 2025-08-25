@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Web.StaticContent</AssemblyName>
@@ -12,45 +12,57 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\Roblox.Platform.StaticContent\Roblox.Platform.StaticContent.csproj" />
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Networking">
-      <HintPath>..\..\..\Website\bin\Roblox.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.Authentication">
-      <HintPath>..\..\..\Website\bin\Roblox.Web.Authentication.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Caching">
-      <HintPath>..\..\..\Website\bin\Roblox.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Localization.Accounts">
-      <HintPath>..\..\..\Website\bin\Roblox.Platform.Localization.Accounts.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.Code">
-      <HintPath>..\..\..\Website\bin\Roblox.Web.Code.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Platform\\StaticContent\\Roblox.Platform.StaticContent\\Roblox.Platform.StaticContent.csproj" />
     <!-- StaticContent Client is brought transitively by Roblox.Platform.StaticContent -->
-    <Reference Include="Roblox.TranslationResources">
-      <HintPath>..\..\..\Website\bin\Roblox.TranslationResources.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
-    <Reference Include="Roblox.Common.Web">
-      <HintPath>..\..\..\Website\bin\Roblox.Common.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Networking\\Roblox.Networking\\Roblox.Networking.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Web.Authentication\\Roblox.Web.Authentication.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Localization\\Roblox.Localization.Accounts\\Roblox.Localization.Accounts.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Web.Code\\Roblox.Web.Code.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Platform\\Translations\\Roblox.Platform.TranslationResources\\Roblox.Platform.TranslationResources.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Common\\Roblox.Common.Web\\Roblox.Common.Web.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Platform\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

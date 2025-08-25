@@ -12,26 +12,27 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Redis">
-      <HintPath>..\..\Website\bin\Roblox.Redis.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="StackExchange.Redis">
-      <HintPath>..\..\Website\bin\StackExchange.Redis.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration.ConfigurationManager">
-      <HintPath>..\..\Website\bin\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Redis\\Roblox.Redis\\Roblox.Redis.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.FloodCheckers.Core\\Roblox.FloodCheckers.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
 </Project>

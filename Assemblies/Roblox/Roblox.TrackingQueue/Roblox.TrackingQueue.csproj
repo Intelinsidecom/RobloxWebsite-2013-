@@ -12,15 +12,15 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Amazon.Sqs">
-      <HintPath>..\..\Website\bin\Roblox.Amazon.Sqs.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.Coordination">
-      <HintPath>..\..\Website\bin\Roblox.Coordination.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Coordination\\Roblox.Coordination\\Roblox.Coordination.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

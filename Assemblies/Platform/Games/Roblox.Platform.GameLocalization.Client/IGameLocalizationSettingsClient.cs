@@ -1,6 +1,6 @@
 using Roblox.GameLocalization.Client.GameLocalizationSettings;
 
-namespace Roblox.GameLocalization.Client
+namespace Roblox.Platform.GameLocalization.Client
 {
     public interface IGameLocalizationSettingsClient
     {

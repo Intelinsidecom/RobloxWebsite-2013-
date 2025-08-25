@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Roblox.GameLocalization.Client.GameLocalizationSettings
+namespace Roblox.Platform.GameLocalization.Client.GameLocalizationSettings
 {
     public class BaseLocalizationSettings
     {

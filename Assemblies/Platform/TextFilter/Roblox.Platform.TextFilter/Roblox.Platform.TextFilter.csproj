@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.TextFilter</AssemblyName>
@@ -13,24 +13,30 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.CommunitySift">
-      <HintPath>..\..\Website\bin\Roblox.CommunitySift.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ContentFilter.Client">
-      <HintPath>..\..\Website\bin\Roblox.ContentFilter.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Diagnostics">
-      <HintPath>..\..\Website\bin\Roblox.Diagnostics.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common">
-      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
-    </Reference>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
-    <Reference Include="Roblox.RestClientBase">
-      <HintPath>..\..\Website\bin\Roblox.RestClientBase.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\..\\Community\\Roblox.CommunitySift\\Roblox.CommunitySift.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Content\\Roblox.Platform.ContentFilter.Client\\Roblox.Platform.ContentFilter.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Diagnostics\\Roblox.Diagnostics\\Roblox.Diagnostics.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.RestClientBase\\Roblox.RestClientBase.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

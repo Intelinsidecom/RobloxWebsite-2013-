@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Roblox.GameLocalization.Client
+namespace Roblox.Platform.GameLocalization.Client
 {
     public interface IGameLocalizationLanguageSettingsClient
     {

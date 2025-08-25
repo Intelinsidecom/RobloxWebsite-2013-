@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.TranslationStorage</AssemblyName>
@@ -12,32 +12,36 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.TranslationStorage.Client\Roblox.TranslationStorage.Client.csproj" />
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Localization.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\Roblox.Platform.TranslationStorage.Client\\Roblox.Platform.TranslationStorage.Client.csproj" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common">
-      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Localization\\Roblox.Localization.Core\\Roblox.Localization.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

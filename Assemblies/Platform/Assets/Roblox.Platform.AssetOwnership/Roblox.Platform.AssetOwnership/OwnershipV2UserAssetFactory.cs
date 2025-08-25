@@ -6,7 +6,7 @@ using Roblox.DataV2.Core;
 using Roblox.EventLog;
 using Roblox.OwnershipV2.Client.Models;
 using Roblox.Platform.Core.ExclusiveStartPaging;
-using Roblox.Platform.MembershipCore;
+using Roblox.Platform.Membership.Core;
 
 namespace Roblox.Platform.AssetOwnership;
 

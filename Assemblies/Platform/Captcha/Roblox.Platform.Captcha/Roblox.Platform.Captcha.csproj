@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Captcha</AssemblyName>
@@ -12,17 +12,17 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Captcha.Entities\Roblox.Captcha.Entities.csproj" />
-    <ProjectReference Include="..\Roblox.EphemeralCounters\Roblox.EphemeralCounters.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.Counters\Roblox.Platform.Counters.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.Games.Counters\Roblox.Platform.Games.Counters.csproj" />
-    <ProjectReference Include="..\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj" />
-    <ProjectReference Include="..\Common\Roblox.Common\Roblox.Common.csproj" />
-    <ProjectReference Include="..\Roblox.FloodCheckers.Core\Roblox.FloodCheckers.Core.csproj" />
-    <ProjectReference Include="..\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
-    <ProjectReference Include="..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
-    <ProjectReference Include="..\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj" />
-    <ProjectReference Include="..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\\Roblox.Platform.Captcha.Entities\\Roblox.Platform.Captcha.Entities.csproj" />
+    <ProjectReference Include="..\\..\\Counters\\Roblox.Platform.EphemeralCounters\\Roblox.Platform.EphemeralCounters.csproj" />
+    <ProjectReference Include="..\\..\\Counters\\Roblox.Platform.Counters\\Roblox.Platform.Counters.csproj" />
+    <ProjectReference Include="..\\..\\Games\\Roblox.Platform.Games.Counters\\Roblox.Platform.Games.Counters.csproj" />
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj" />
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj" />
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers.Core\\Roblox.FloodCheckers.Core.csproj" />
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers\\Roblox.FloodCheckers.csproj" />
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj" />
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj" />
     <Reference Include="System.Web" />
   </ItemGroup>
 </Project>

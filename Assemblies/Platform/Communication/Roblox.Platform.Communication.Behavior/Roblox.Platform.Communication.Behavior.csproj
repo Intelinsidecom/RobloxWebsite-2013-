@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Communication.Behavior</AssemblyName>
@@ -15,30 +15,38 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TextFilter">
-      <HintPath>..\..\Website\bin\Roblox.TextFilter.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Infractions">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Infractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.EventStream.WebEvents">
-      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
+    <ProjectReference Include="..\\..\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\TextFilter\\Roblox.Platform.TextFilter\\Roblox.Platform.TextFilter.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Infractions\\Roblox.Platform.Infractions\\Roblox.Platform.Infractions.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventStream\\Roblox.EventStream.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventStream.WebEvents\\Roblox.EventStream.WebEvents.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

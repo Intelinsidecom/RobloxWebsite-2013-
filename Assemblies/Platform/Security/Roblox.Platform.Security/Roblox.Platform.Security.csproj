@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Security</AssemblyName>
@@ -15,19 +15,23 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Data">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Hashing">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Hashing.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <ProjectReference Include="..\\..\\..\\Data\\Roblox.Data\\Roblox.Data.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Hashing\\Roblox.Hashing\\Roblox.Hashing.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />

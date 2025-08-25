@@ -1,6 +1,6 @@
 using System;
 
-namespace Roblox.Currency.Client
+namespace Roblox.Platform.Currency.Client
 {
     // Minimal stub to satisfy Roblox.Groups usage.
     public interface ICurrencyAuthority

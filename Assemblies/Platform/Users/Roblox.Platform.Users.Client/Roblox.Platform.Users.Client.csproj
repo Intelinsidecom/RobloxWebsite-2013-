@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Users.Client</AssemblyName>
@@ -15,40 +15,50 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Roblox.Common">
-      <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Http.ServiceClient">
-      <HintPath>..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.RequestContext">
-      <HintPath>..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Collections">
-      <HintPath>..\..\Website\bin\Roblox.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Serialization.Json">
-      <HintPath>..\..\Website\bin\Roblox.Serialization.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
     <!-- System.Configuration.ConfigurationManager now referenced via PackageReference -->
-    <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Http\\Roblox.Http.ServiceClient\\Roblox.Http.ServiceClient.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Collections\\Roblox.Collections\\Roblox.Collections.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Serialization\\Roblox.Serialization.Json\\Roblox.Serialization.Json.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Roblox.Http.Client\Roblox.Http.Client.csproj" />
-    <ProjectReference Include="..\..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\\..\\..\\Http\\Roblox.Http.Client\\Roblox.Http.Client.csproj" />
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj" />
   </ItemGroup>
 </Project>

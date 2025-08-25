@@ -12,27 +12,31 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Http.ServiceClient">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Http.ServiceClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Http">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Http.Client">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Http.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Serialization.Json">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Serialization.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
-    </Reference>
-    <ProjectReference Include="..\..\..\RequestContext\Roblox.RequestContext\Roblox.RequestContext.csproj" />
+    <ProjectReference Include="..\\..\\..\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj" />
+    <ProjectReference Include="..\\..\\..\\Http\\Roblox.Http.ServiceClient\\Roblox.Http.ServiceClient.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Http\\Roblox.Http\\Roblox.Http.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Http\\Roblox.Http.Client\\Roblox.Http.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Serialization\\Roblox.Serialization.Json\\Roblox.Serialization.Json.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

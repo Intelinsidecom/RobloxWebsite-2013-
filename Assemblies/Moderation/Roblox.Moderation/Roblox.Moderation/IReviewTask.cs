@@ -1,6 +1,6 @@
 using System;
 using Roblox.Platform.Localization.Core;
-using Roblox.Platform.MembershipCore;
+using Roblox.Platform.Membership.Core;
 
 namespace Roblox.Platform.Moderation;
 
@@ -12,7 +12,7 @@ public interface IReviewTask
 	long Id { get; }
 
 	/// <summary>
-	/// The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier" /> who handles the review task.
+	/// The <see cref="T:Roblox.Platform.Membership.Core.IUserIdentifier" /> who handles the review task.
 	/// </summary>
 	IUserIdentifier Moderator { get; }
 

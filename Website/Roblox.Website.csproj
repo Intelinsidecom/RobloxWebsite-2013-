@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -3829,19 +3829,19 @@
     <TypeScriptCompile Include="js\presenceStatus\constants\presenceStatusConstants.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Assemblies\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
+    <ProjectReference Include="..\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
       <Project>{90617a8b-c827-4beb-a42b-cd65403ce8de}</Project>
       <Name>Roblox.Platform.Membership</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Assemblies\Roblox.Platform.Groups\Roblox.Platform.Groups.csproj">
+    <ProjectReference Include="..\\Assemblies\\Platform\\Groups\\Roblox.Platform.Groups\\Roblox.Platform.Groups.csproj">
       <Project>{6f505311-e366-4f86-b9fc-e348a9fc6cd7}</Project>
       <Name>Roblox.Platform.Groups</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Assemblies\TranslationResources\Roblox.TranslationResources\Roblox.TranslationResources.csproj">
+    <ProjectReference Include="..\\Assemblies\\Platform\\Translations\\Roblox.Platform.TranslationResources\\Roblox.Platform.TranslationResources.csproj">
       <Project>{533be1bf-bea9-4cbf-81df-187e65f74626}</Project>
       <Name>Roblox.TranslationResources</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Assemblies\Web\Code\Roblox.Web.Code\Roblox.Web.Code.csproj">
+    <ProjectReference Include="..\\Assemblies\\Web\\Roblox.Web.Code\\Roblox.Web.Code.csproj">
       <Project>{fbcec580-61dc-46ad-a475-2f80ebbde13a}</Project>
       <Name>Roblox.Web.Code</Name>
     </ProjectReference>

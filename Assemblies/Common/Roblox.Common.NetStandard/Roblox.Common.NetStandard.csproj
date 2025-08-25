@@ -13,8 +13,9 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

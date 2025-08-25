@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.GroupAssets</AssemblyName>
@@ -11,17 +11,20 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj" />
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetsCore\\Roblox.Platform.AssetsCore.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Groups">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Groups.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.Assets\\Roblox.Platform.Assets.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Platform.Groups\\Roblox.Platform.Groups.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

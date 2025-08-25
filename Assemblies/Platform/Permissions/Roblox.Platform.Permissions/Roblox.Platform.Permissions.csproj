@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Permissions</AssemblyName>
@@ -16,62 +16,79 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Permissions.Client\Roblox.Permissions.Client.csproj" />
+    <ProjectReference Include="..\\Roblox.Platform.Permissions.Client\\Roblox.Platform.Permissions.Client.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Roblox.Platform.Permissions.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Permissions.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.CallContext">
-      <HintPath>..\..\Website\bin\Roblox.Platform.CallContext.dll</HintPath>
-    </Reference>
-    
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Localization.Accounts">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Accounts.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Social">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Social.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Groups">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Groups.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Authentication.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
+      <Project>
+      </Project>
+      <Name>Roblox.Platform.Membership.Core</Name>
+    </ProjectReference>
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="Roblox.Moderation">
-      <HintPath>..\..\Website\bin\Roblox.Moderation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Caching">
-      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Data">
-      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\Roblox.Platform.Permissions.Core\\Roblox.Platform.Permissions.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\CallContext\\Roblox.Platform.CallContext\\Roblox.Platform.CallContext.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Demographics\\Roblox.Platform.Demographics\\Roblox.Platform.Demographics.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Localization\\Roblox.Localization.Accounts\\Roblox.Localization.Accounts.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Social\\Roblox.Platform.Social\\Roblox.Platform.Social.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Groups\\Roblox.Platform.Groups\\Roblox.Platform.Groups.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Authentication\\Roblox.Platform.Authentication\\Roblox.Platform.Authentication.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Moderation\\Roblox.Moderation\\Roblox.Moderation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Data\\Roblox.Data\\Roblox.Data.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

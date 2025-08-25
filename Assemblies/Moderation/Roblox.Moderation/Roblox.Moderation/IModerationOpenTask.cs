@@ -1,5 +1,5 @@
 using Roblox.Platform.Localization.Core;
-using Roblox.Platform.MembershipCore;
+using Roblox.Platform.Membership.Core;
 
 namespace Roblox.Platform.Moderation;
 

@@ -9,7 +9,7 @@ using Roblox.OwnershipV2.Client;
 using Roblox.OwnershipV2.Client.Models;
 using Roblox.Platform.AssetOwnership.Properties;
 using Roblox.Platform.Core;
-using Roblox.Platform.MembershipCore;
+using Roblox.Platform.Membership.Core;
 using Roblox.Platform.OwnershipV2;
 
 namespace Roblox.Platform.AssetOwnership;

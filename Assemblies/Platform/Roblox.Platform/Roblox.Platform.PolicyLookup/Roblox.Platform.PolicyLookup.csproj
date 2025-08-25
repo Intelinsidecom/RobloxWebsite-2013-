@@ -13,27 +13,34 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Platform.PolicyLookup">
-      <HintPath>..\..\Website\bin\Roblox.Platform.PolicyLookup.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Demographics.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Authentication.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.RequestContext">
-      <HintPath>..\..\Website\bin\Roblox.RequestContext.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.PolicyLookup">
-      <HintPath>..\..\Website\bin\Roblox.Platform.PolicyLookup.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="Roblox.Platform.PolicyLookup.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Demographics\\Roblox.Platform.Demographics\\Roblox.Platform.Demographics.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Authentication\\Roblox.Platform.Authentication\\Roblox.Platform.Authentication.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="Roblox.Platform.PolicyLookup.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Roblox.Platform.PolicyLookup\IUserPolicyLookup.cs" />

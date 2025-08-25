@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Common.Web</AssemblyName>
@@ -12,27 +12,30 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Diagnostics">
-      <HintPath>..\..\..\Website\bin\Roblox.Diagnostics.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="Roblox.Common">
-      <HintPath>..\..\..\Website\bin\Roblox.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Infrastructure">
-      <HintPath>..\..\..\Website\bin\Roblox.Platform.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>..\..\..\Website\bin\roslyn\System.Net.Http.dll</HintPath>
-    </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.WebsiteSettings">
-      <HintPath>..\..\..\Website\bin\Roblox.WebsiteSettings.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Diagnostics\\Roblox.Diagnostics\\Roblox.Diagnostics.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Common\\Roblox.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Platform\\Infrastructure\\Roblox.Platform.Infrastructure\\Roblox.Platform.Infrastructure.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Web\\Roblox.WebsiteSettings\\Roblox.WebsiteSettings.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Owin" Version="4.2.2" />

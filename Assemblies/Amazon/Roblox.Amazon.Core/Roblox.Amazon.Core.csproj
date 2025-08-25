@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Amazon.Core</AssemblyName>
@@ -12,14 +12,14 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="AWSSDK.Core">
-      <HintPath>..\..\Website\bin\AWSSDK.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.102" />
   </ItemGroup>
 </Project>

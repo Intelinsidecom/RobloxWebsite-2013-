@@ -1,5 +1,5 @@
 using System;
-using Roblox.Platform.MembershipCore;
+using Roblox.Platform.Membership.Core;
 using Roblox.Platform.Moderation.Properties;
 
 namespace Roblox.Platform.Moderation;

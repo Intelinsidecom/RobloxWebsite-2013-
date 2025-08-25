@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Billing</AssemblyName>
@@ -12,23 +12,23 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj" />
-    <ProjectReference Include="..\Common\Roblox.Common\Roblox.Common.csproj" />
-    <ProjectReference Include="..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
-    <ProjectReference Include="..\Roblox.Billing\Roblox.Billing.csproj" />
-    <ProjectReference Include="..\Roblox.LiveGamer\Roblox.LiveGamer.csproj" />
-    <ProjectReference Include="..\Roblox.EphemeralCounters\Roblox.EphemeralCounters.csproj" />
-    <ProjectReference Include="..\Roblox.Locking\Roblox.Locking.csproj" />
-    <ProjectReference Include="..\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.AssetOwnership\Roblox.Platform.AssetOwnership.csproj" />
-    <ProjectReference Include="..\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj" />
-    <ProjectReference Include="..\Platform\Membership\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.PremiumFeatures\Roblox.Platform.PremiumFeatures.csproj" />
-    <ProjectReference Include="..\Roblox.PremiumFeatures.Models\Roblox.PremiumFeatures.Models.csproj" />
-    <ProjectReference Include="..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
-    <ProjectReference Include="..\Users\Roblox.Users\Roblox.Users.csproj" />
-    <ProjectReference Include="..\Roblox.BillingTransactionEventPublisher\Roblox.BillingTransactionEventPublisher.csproj" />
-    <ProjectReference Include="..\Roblox Server Class Library\Roblox Server Class Library.csproj" />
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj" />
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj" />
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\\..\\..\\Billing\\Roblox.Billing\\Roblox.Billing.csproj" />
+    <ProjectReference Include="..\\..\\..\\LiveGamer\\Roblox.LiveGamer\\Roblox.LiveGamer.csproj" />
+    <ProjectReference Include="..\\..\\Counters\\Roblox.Platform.EphemeralCounters\\Roblox.Platform.EphemeralCounters.csproj" />
+    <ProjectReference Include="..\\..\\..\\Locking\\Roblox.Locking\\Roblox.Locking.csproj" />
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers\\Roblox.FloodCheckers.csproj" />
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj" />
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj" />
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj" />
+    <ProjectReference Include="..\\..\\Demographics\\Roblox.Platform.Demographics\\Roblox.Platform.Demographics.csproj" />
+    <ProjectReference Include="..\\..\\Premium\\Roblox.Platform.PremiumFeatures\\Roblox.Platform.PremiumFeatures.csproj" />
+    <ProjectReference Include="..\\..\\Premium\\Roblox.Platform.PremiumFeatures.Models\\Roblox.Platform.PremiumFeatures.Models.csproj" />
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\\..\\Users\\Roblox.Platform.Users\\Roblox.Platform.Users.csproj" />
+    <ProjectReference Include="..\\..\\..\\Billing\\Roblox.BillingTransactionEventPublisher\\Roblox.BillingTransactionEventPublisher.csproj" />
+    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj" />
   </ItemGroup>
 </Project>

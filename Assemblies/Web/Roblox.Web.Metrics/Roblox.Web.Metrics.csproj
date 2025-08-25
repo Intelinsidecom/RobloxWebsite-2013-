@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Web.Metrics</AssemblyName>
@@ -15,21 +15,26 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="Roblox.Web.Devices">
-      <HintPath>..\..\..\Website\bin\Roblox.Web.Devices.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Devices">
-      <HintPath>..\..\..\Website\bin\Roblox.Platform.Devices.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Web.Devices\\Roblox.Web.Devices.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Platform\\Counters\\Roblox.Platform.EphemeralCounters\\Roblox.Platform.EphemeralCounters.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Platform\\Devices\\Roblox.Platform.Devices\\Roblox.Platform.Devices.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -25,6 +25,19 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "prometheus-net/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prometheus.NetStandard.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prometheus.NetStandard.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
       }
     }
   },
@@ -172,11 +185,39 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "prometheus-net/4.2.0": {
+      "sha512": "1u9aEPHnp3qrY9KsJRTZ1FmaBiOxEzEeEuHzmTyEnudd0KKB5KSG9enkEIeyaptFVu/B43pLwLwS1FqF/fXdCg==",
+      "type": "package",
+      "path": "prometheus-net/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/prometheus-net-logo.png",
+        "lib/net461/Prometheus.NetStandard.dll",
+        "lib/net461/Prometheus.NetStandard.pdb",
+        "lib/net461/Prometheus.NetStandard.xml",
+        "lib/netcoreapp2.1/Prometheus.NetCore.deps.json",
+        "lib/netcoreapp2.1/Prometheus.NetCore.dll",
+        "lib/netcoreapp2.1/Prometheus.NetCore.pdb",
+        "lib/netcoreapp2.1/Prometheus.NetCore.xml",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.deps.json",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.dll",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.pdb",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.xml",
+        "lib/netstandard2.0/Prometheus.NetStandard.deps.json",
+        "lib/netstandard2.0/Prometheus.NetStandard.dll",
+        "lib/netstandard2.0/Prometheus.NetStandard.pdb",
+        "lib/netstandard2.0/Prometheus.NetStandard.xml",
+        "prometheus-net.4.2.0.nupkg.sha512",
+        "prometheus-net.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "prometheus-net >= 4.2.0"
     ]
   },
   "packageFolders": {
@@ -235,6 +276,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "prometheus-net": {
+            "target": "Package",
+            "version": "[4.2.0, )"
           }
         },
         "imports": [

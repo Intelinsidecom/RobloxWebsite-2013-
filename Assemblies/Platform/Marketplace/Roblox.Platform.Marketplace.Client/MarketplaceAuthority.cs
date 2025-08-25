@@ -2,7 +2,7 @@ using System;
 using Roblox.Economy;
 using Roblox.Economy.Common;
 
-namespace Roblox.Marketplace.Client
+namespace Roblox.Platform.Marketplace.Client
 {
     public class MarketplaceAuthority : IMarketplaceAuthority
     {

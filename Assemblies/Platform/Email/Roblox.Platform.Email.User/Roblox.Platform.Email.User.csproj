@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Email.User</AssemblyName>
@@ -13,81 +13,107 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Email">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Email.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Email.Delivery">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Email.Delivery.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.BriteVerify">
-      <HintPath>..\..\Website\bin\Roblox.BriteVerify.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\Website\bin\Roblox.EphemeralCounters.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Authentication.AccountSecurityTickets">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Authentication.AccountSecurityTickets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetOwnership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Localization.Accounts">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Accounts.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Kickbox">
-      <HintPath>..\..\Website\bin\Roblox.Kickbox.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TranslationResources">
-      <HintPath>..\..\Website\bin\Roblox.TranslationResources.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Security">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.EventStream.WebEvents">
-      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Entities">
-      <HintPath>..\..\Website\bin\Roblox.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
+      <Project>
+      </Project>
+      <Name>Roblox.Platform.Membership.Core</Name>
+    </ProjectReference>
     <Reference Include="System.Core" />
-    <Reference Include="Roblox.Data">
-      <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Caching">
-      <HintPath>..\..\Website\bin\Roblox.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Assets">
-      <HintPath>..\..\Website\bin\Roblox.Assets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers.Core\\Roblox.FloodCheckers.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Platform.Email\\Roblox.Platform.Email.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Platform.Email.Delivery\\Roblox.Platform.Email.Delivery.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.BriteVerify\\Roblox.BriteVerify.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Counters\\Roblox.Platform.EphemeralCounters\\Roblox.Platform.EphemeralCounters.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Authentication\\Roblox.Platform.Authentication.AccountSecurityTickets\\Roblox.Platform.Authentication.AccountSecurityTickets.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventStream\\Roblox.EventStream.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\KickBox\\Roblox.Kickbox\\Roblox.Kickbox.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Translations\\Roblox.Platform.TranslationResources\\Roblox.Platform.TranslationResources.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Security\\Roblox.Platform.Security\\Roblox.Platform.Security.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventStream.WebEvents\\Roblox.EventStream.WebEvents.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Data\\Roblox.Data\\Roblox.Data.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Assets\\Roblox.Assets\\Roblox.Assets.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.Assets\\Roblox.Platform.Assets.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Localization\\Roblox.Localization.Accounts\\Roblox.Localization.Accounts.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

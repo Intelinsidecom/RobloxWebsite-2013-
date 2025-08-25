@@ -14,7 +14,7 @@ using System.Runtime.Versioning;
 [assembly: AssemblyCompany("Roblox")]
 [assembly: AssemblyConfiguration("Release")]
 [assembly: AssemblyCopyright("Copyright © Roblox 2017")]
-[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.Platform.AssetsCore, Roblox.Entities, Roblox.Coordination, Roblox.EventLog, Roblox.Instrumentation, Roblox.Sentinels, Roblox.Platform.Core, Roblox.Configuration, Roblox.Platform.MembershipCore, Roblox.ApiClientBase, Roblox.MssqlDatabases, Roblox.RestClientBase, Roblox.ContentFilter.Client, Roblox.EventLog.Windows, Roblox.Caching, Roblox.Data, Roblox.Amazon.Sqs, Roblox.Moderation, Roblox.Users, Roblox.Entities.Mssql, Roblox.Platform.Localization.Core, Roblox.TrackingQueue, Roblox.Agents, Roblox.CommunitySift, Roblox Server Class Library, Roblox.Platform.Membership, Roblox.Platform.Assets\n\nORIGINAL CHANGE TRIGGERS\n\n")]
+[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.Platform.AssetsCore, Roblox.Entities, Roblox.Coordination, Roblox.EventLog, Roblox.Instrumentation, Roblox.Sentinels, Roblox.Platform.Core, Roblox.Configuration, Roblox.Platform.Membership.Core, Roblox.ApiClientBase, Roblox.MssqlDatabases, Roblox.RestClientBase, Roblox.ContentFilter.Client, Roblox.EventLog.Windows, Roblox.Caching, Roblox.Data, Roblox.Amazon.Sqs, Roblox.Moderation, Roblox.Users, Roblox.Entities.Mssql, Roblox.Platform.Localization.Core, Roblox.TrackingQueue, Roblox.Agents, Roblox.CommunitySift, Roblox Server Class Library, Roblox.Platform.Membership, Roblox.Platform.Assets\n\nORIGINAL CHANGE TRIGGERS\n\n")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyInformationalVersion("1.0.0")]
 [assembly: AssemblyProduct("Roblox.Moderation")]

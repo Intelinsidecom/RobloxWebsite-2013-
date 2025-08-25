@@ -1,6 +1,7 @@
 param(
     [string]$RootPath = (Get-Location).Path,
-    [string]$ReportPath = "$(Get-Location)/missing.txt"
+    [string]$ReportPath = "$(Get-Location)/missing.txt",
+    [switch]$Force
 )
 
 Write-Host "Root path: $RootPath"
@@ -14,7 +15,11 @@ Get-ChildItem -Path (Split-Path -Path $RootPath -Parent) -Recurse -Filter *.dll 
 Write-Host "Cached $($dllCache.Count) DLL files."
 
 function Find-Csproj([string]$asmName) {
+    $originalName = $asmName
+    if ($assemblyAliasMap.ContainsKey($asmName)) { $asmName = $assemblyAliasMap[$asmName] }
     if ($csprojCache.ContainsKey($asmName)) { return $csprojCache[$asmName] }
+    if ($csprojCache.ContainsKey($originalName)) { return $csprojCache[$originalName] }
+
     $variants = @()
     if ($asmName -match '^Roblox\.Platform\.') {
         $variants += ($asmName -replace '^Roblox\.Platform\.', 'Roblox.')
@@ -23,14 +28,49 @@ function Find-Csproj([string]$asmName) {
         $variants += 'Roblox.' + ($asmName -replace '^Roblox\.Platform\.')
     }
     foreach ($v in $variants) {
-        if ($csprojCache.ContainsKey($v)) { $csprojCache[$asmName] = $csprojCache[$v]; return $csprojCache[$v] }
+        if ($csprojCache.ContainsKey($v)) { $csprojCache[$asmName] = $csprojCache[$v]; $csprojCache[$originalName] = $csprojCache[$v]; return $csprojCache[$v] }
     }
     $searchNames = @($asmName) + $variants
     foreach ($n in $searchNames) {
         $match = Get-ChildItem -Path $RootPath -Recurse -Filter "$n.csproj" -ErrorAction SilentlyContinue | Select-Object -First 1
-        if ($match) { $csprojCache[$asmName] = $match.FullName; return $match.FullName }
+        if ($match) { $csprojCache[$asmName] = $match.FullName; $csprojCache[$originalName] = $match.FullName; return $match.FullName }
     }
     return $null
+}
+
+# NuGet package map (assembly -> version)
+$nugetPackages = @{
+    "Newtonsoft.Json"      = "13.0.3";
+    "StackExchange.Redis"  = "2.6.66";
+    "AWSSDK.Core"          = "3.7.102";
+    "AWSSDK.DynamoDBv2"    = "3.7.102";
+    "DnsClient"            = "1.7.0";
+    "System.Configuration.ConfigurationManager" = "4.7.0";
+    "Microsoft.Extensions.DependencyInjection.Abstractions" = "2.1.1";
+    "System.Data.SqlClient" = "4.8.5";
+    "System.Net.Http" = "4.3.4";
+    # Assembly name Prometheus.NetStandard comes from package prometheus-net
+    "Prometheus.NetStandard" = "4.2.0";
+}
+
+# Map assembly name -> NuGet package ID when it differs
+$nugetPackageIdOverride = @{
+    "Prometheus.NetStandard" = "prometheus-net"
+}
+
+# Map legacy/misnamed assembly identifiers to the actual project assembly names
+$assemblyAliasMap = @{
+    # Convert old binary name to the SDK-style project
+    "Roblox.Platform.MembershipCore" = "Roblox.Platform.Membership.Core"
+    # Known DLL name used historically that maps to this project
+    "Thumbnails.RequestValidation" = "Roblox.PlatformThumbnails.RequestValidation"
+}
+
+function Add-PackageReference([xml]$xml,[string]$include,[string]$version){
+    $pkgRef = $xml.CreateElement('PackageReference')
+    $pkgRef.SetAttribute('Include',$include)
+    $pkgRef.SetAttribute('Version',$version)
+    return $pkgRef
 }
 
 function Add-ProjectReference([xml]$xml,[string]$fromDir,[string]$targetCsproj,[string]$assemblyName){
@@ -56,24 +96,46 @@ function Add-ProjectReference([xml]$xml,[string]$fromDir,[string]$targetCsproj,[
 # Cache all csproj files by their assembly name for quick lookup
 Write-Host "Caching csproj assembly names..."
 $csprojCache = @{}
-Get-ChildItem -Path $RootPath -Recurse -Filter *.csproj -ErrorAction SilentlyContinue | ForEach-Object {
+# Build a concrete list first so we can compare counts later
+$csprojFilesForCache = Get-ChildItem -Path $RootPath -Recurse -Filter *.csproj -ErrorAction SilentlyContinue
+Write-Host "Discovered $($csprojFilesForCache.Count) .csproj files for caching."
+$csprojFilesForCache | ForEach-Object {
+    $path = $_.FullName
+    $fileKey = [IO.Path]::GetFileNameWithoutExtension($_.Name)
+    if (-not $csprojCache.ContainsKey($fileKey)) { $csprojCache[$fileKey] = $path }
     try {
-        [xml]$tmpXml = Get-Content $_.FullName
+        [xml]$tmpXml = Get-Content $path
         $asmNode = $tmpXml.Project.PropertyGroup.AssemblyName
         if ($asmNode) {
             $asm = $asmNode.'#text'
-        } else {
-            $asm = [IO.Path]::GetFileNameWithoutExtension($_.Name)
+            if ($asm -and -not $csprojCache.ContainsKey($asm)) { $csprojCache[$asm] = $path }
         }
-        if (-not $csprojCache.ContainsKey($asm)) {
-            $csprojCache[$asm] = $_.FullName
-        }
-    } catch {}
+    } catch {
+        # ignore parse issues; filename key already cached
+    }
 }
 Write-Host "Cached $($csprojCache.Count) assemblies from csproj."
 
 Write-Host "Searching for .csproj files..."
-$csprojFiles = Get-ChildItem -Path $RootPath -Recurse -Filter *.csproj
+$csprojFiles = Get-ChildItem -Path $RootPath -Recurse -Filter *.csproj -ErrorAction SilentlyContinue
+if ($csprojCache.Count -lt 10 -and $csprojFiles.Count -ge 10) {
+    Write-Warning "csproj cache unexpectedly low ($($csprojCache.Count)). Falling back to recaching from discovered list..."
+    $csprojCache = @{}
+    foreach ($f in $csprojFiles) {
+        $path = $f.FullName
+        $fileKey = [IO.Path]::GetFileNameWithoutExtension($f.Name)
+        if (-not $csprojCache.ContainsKey($fileKey)) { $csprojCache[$fileKey] = $path }
+        try {
+            [xml]$tmpXml2 = Get-Content $path
+            $asmNode2 = $tmpXml2.Project.PropertyGroup.AssemblyName
+            if ($asmNode2) {
+                $asm2 = $asmNode2.'#text'
+                if ($asm2 -and -not $csprojCache.ContainsKey($asm2)) { $csprojCache[$asm2] = $path }
+            }
+        } catch {}
+    }
+    Write-Host "Rebuilt csproj cache: $($csprojCache.Count) entries."
+}
 Write-Host "Found $($csprojFiles.Count) .csproj files."
 $unresolved = @()
 $changes = @()
@@ -90,33 +152,83 @@ foreach ($proj in $csprojFiles) {
     $projRefs = $xml.Project.ItemGroup.ProjectReference
     if (-not $planByProject.ContainsKey($proj.FullName)) { $planByProject[$proj.FullName] = @() }
     foreach ($ref in $projRefs) {
-        $include = $ref.Include
+        # Guard against malformed ProjectReference nodes (missing Include attr or non-element nodes)
+        if (-not $ref -or -not $ref.Include -or [string]::IsNullOrWhiteSpace([string]$ref.Include)) { continue }
+        $include = [string]$ref.Include
+        $fileName = Split-Path $include -Leaf
         $absPath = Join-Path -Path $proj.DirectoryName -ChildPath $include
-        if (-not (Test-Path $absPath)) {
-            # search for same file name within repo
-            $fileName = Split-Path $include -Leaf
-            $matches = Get-ChildItem -Path $RootPath -Recurse -Filter $fileName -ErrorAction SilentlyContinue
-            if ($matches.Count -eq 1) {
-                # Compute the relative path from the project file to the found DLL
+
+        if (Test-Path $absPath) {
+            # Normalize slashes and recompute canonical relative path to the actual file location
+            $from = $proj.DirectoryName
+            $to = (Resolve-Path $absPath).Path
+            $fromUri = New-Object System.Uri("file:///$($from.Replace('\\','/'))/")
+            $toUri = New-Object System.Uri("file:///$($to.Replace('\\','/'))")
+            $relativeUri = $fromUri.MakeRelativeUri($toUri)
+            $normalized = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\\')
+            if ($ref.Include -ne $normalized) {
+                $ref.Include = $normalized
+                $changed = $true
+                $planByProject[$proj.FullName] += "ProjectReference: normalize Include for $fileName -> $normalized"
+            }
+            continue
+        }
+
+        # Target not found: try to resolve by assembly/project name using cache/aliases
+        $targetName = [IO.Path]::GetFileNameWithoutExtension($include)
+        $resolvedProjPath = Find-Csproj $targetName
+        if ($resolvedProjPath) {
+            $from = $proj.DirectoryName
+            $to = $resolvedProjPath
+            $fromUri = New-Object System.Uri("file:///$($from.Replace('\\','/'))/")
+            $toUri = New-Object System.Uri("file:///$($to.Replace('\\','/'))")
+            $relativeUri = $fromUri.MakeRelativeUri($toUri)
+            $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\\')
+            $ref.Include = $newRelative
+            $changed = $true
+            $planByProject[$proj.FullName] += "ProjectReference: remap $targetName via cache -> $newRelative"
+            continue
+        }
+
+        # Fallback: search for the same file name within repo and fix
+        $matches = Get-ChildItem -Path $RootPath -Recurse -Filter $fileName -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq $fileName }
+        if ($matches.Count -eq 1) {
+            $from = $proj.DirectoryName
+            $to = $matches[0].FullName
+            $fromUri = New-Object System.Uri("file:///$($from.Replace('\\','/'))/")
+            $toUri = New-Object System.Uri("file:///$($to.Replace('\\','/'))")
+            $relativeUri = $fromUri.MakeRelativeUri($toUri)
+            $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\\')
+            $ref.Include = $newRelative
+            $changed = $true
+            $planByProject[$proj.FullName] += "ProjectReference: update Include for $fileName -> $newRelative"
+        }
+        elseif ($matches.Count -gt 1) {
+            # Prefer a match under Assemblies directory
+            $preferred = $matches | Where-Object { $_.FullName -like "*$($RootPath)\*" } | Select-Object -First 1
+            if ($preferred) {
                 $from = $proj.DirectoryName
-                $to = $matches[0].FullName
-                $fromUri = New-Object System.Uri("file:///$($from.Replace('\','/'))/")
-                $toUri = New-Object System.Uri("file:///$($to.Replace('\','/'))")
+                $to = $preferred.FullName
+                $fromUri = New-Object System.Uri("file:///$($from.Replace('\\','/'))/")
+                $toUri = New-Object System.Uri("file:///$($to.Replace('\\','/'))")
                 $relativeUri = $fromUri.MakeRelativeUri($toUri)
-                $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\')
-                
-                # Update the ProjectReference in the XML
+                $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\\')
                 $ref.Include = $newRelative
                 $changed = $true
-                $planByProject[$proj.FullName] += "ProjectReference: update Include for $fileName -> $newRelative"
-            }
-            else {
+                $planByProject[$proj.FullName] += "ProjectReference: disambiguated and updated Include for $fileName -> $newRelative"
+            } else {
                 $unresolved += "ProjectReference in $($proj.FullName): $include"
             }
         }
+        else {
+            $unresolved += "ProjectReference in $($proj.FullName): $include"
+        }
     }
 
-    # Convert DLL <Reference> elements to <ProjectReference> when source project exists
+    # Convert DLL <Reference> elements
+    # 1) to ProjectReference if source exists
+    # 2) to PackageReference if NuGet package known
+    # otherwise keep previous behaviour
     $referenceNodes = $xml.SelectNodes("//Reference")
     foreach ($refNode in $referenceNodes) {
         $includeVal = $refNode.Include
@@ -130,7 +242,17 @@ foreach ($proj in $csprojFiles) {
             if ($assemblyProj) { $csprojCache[$assemblyName] = $assemblyProj.FullName }
         }
 
-        if ($csprojCache.ContainsKey($assemblyName)) {
+        if ($nugetPackages.ContainsKey($assemblyName)) {
+            $pkgId = if ($nugetPackageIdOverride.ContainsKey($assemblyName)) { $nugetPackageIdOverride[$assemblyName] } else { $assemblyName }
+            $pkgRef = Add-PackageReference $xml $pkgId $nugetPackages[$assemblyName]
+            $parent = $refNode.ParentNode
+            $parent.AppendChild($pkgRef) | Out-Null
+            $parent.RemoveChild($refNode) | Out-Null
+            $changed = $true
+            $planByProject[$proj.FullName] += "Reference: convert $assemblyName to PackageReference v$($nugetPackages[$assemblyName])"
+            continue
+        }
+        elseif ($csprojCache.ContainsKey($assemblyName)) {
             $projPathAbs = $csprojCache[$assemblyName]
             # compute relative path
             $from = $proj.DirectoryName
@@ -170,6 +292,14 @@ foreach ($proj in $csprojFiles) {
         $hintPath = $hint.InnerText
         # Prefer csproj for any HintPath resolution
         $assemblyName = $hint.ParentNode.Attributes["Include"].Value
+        # If this is a framework assembly and not in our NuGet map, drop the stale HintPath
+        if ($assemblyName -match '^(System|Microsoft)\.' -and -not $nugetPackages.ContainsKey($assemblyName)) {
+            $parentRef = $hint.ParentNode
+            $parentRef.RemoveChild($hint) | Out-Null
+            $changed = $true
+            $planByProject[$proj.FullName] += "HintPath: remove stale HintPath for framework $assemblyName"
+            continue
+        }
         $projPathAbs = Find-Csproj $assemblyName
         if ($projPathAbs) {
             # convert the parent <Reference> to <ProjectReference>
@@ -180,6 +310,18 @@ foreach ($proj in $csprojFiles) {
             $planByProject[$proj.FullName] += "HintPath: convert $assemblyName to ProjectReference ($($prs[1]))"
             $parentItemGroup.RemoveChild($parentRef) | Out-Null
             $changed = $true
+            continue
+        }
+        # If no csproj found, attempt NuGet package conversion
+        if ($nugetPackages.ContainsKey($assemblyName)) {
+            $parentRef = $hint.ParentNode
+            $parentItemGroup = $parentRef.ParentNode
+            $pkgId = if ($nugetPackageIdOverride.ContainsKey($assemblyName)) { $nugetPackageIdOverride[$assemblyName] } else { $assemblyName }
+            $pkgRef = Add-PackageReference $xml $pkgId $nugetPackages[$assemblyName]
+            $parentItemGroup.AppendChild($pkgRef) | Out-Null
+            $parentItemGroup.RemoveChild($parentRef) | Out-Null
+            $changed = $true
+            $planByProject[$proj.FullName] += "HintPath: convert $assemblyName to PackageReference v$($nugetPackages[$assemblyName])"
             continue
         }
         # If no csproj found, fallback to DLL search
@@ -341,10 +483,12 @@ foreach($c in $changes){
     }
 }
 
-$confirmation = Read-Host "FixProjectPaths will apply these changes. Continue? (Y/N)"
-if ($confirmation -notmatch '^(?i)y(yes)?$') {
-    Write-Host "Aborted by user."
-    exit 0
+if (-not $Force) {
+    $confirmation = Read-Host "FixProjectPaths will apply these changes. Continue? (Y/N)"
+    if ($confirmation -notmatch '^(?i)y(yes)?$') {
+        Write-Host "Aborted by user."
+        exit 0
+    }
 }
 
 # save changes

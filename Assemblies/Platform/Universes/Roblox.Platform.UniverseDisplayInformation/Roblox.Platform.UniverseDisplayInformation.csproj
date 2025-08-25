@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.UniverseDisplayInformation</AssemblyName>
@@ -13,87 +13,113 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="Roblox.Platform.Localization.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Localization.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon.Sns">
-      <HintPath>..\..\Website\bin\Roblox.Amazon.Sns.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.EventStream.WebEvents">
-      <HintPath>..\..\Website\bin\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Universes.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Assets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetMedia">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetMedia.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.AssetMedia">
-      <HintPath>..\..\Website\bin\Roblox.AssetMedia.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.TranslationStorage">
-      <HintPath>..\..\Website\bin\Roblox.Platform.TranslationStorage.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Thumbs">
-      <HintPath>..\..\Website\bin\Roblox.Thumbs.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetOwnership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.GameLocalization">
-      <HintPath>..\..\Website\bin\Roblox.Platform.GameLocalization.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\..\Website\bin\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\Website\bin\Roblox.TextFilter.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TextFilter">
-      <HintPath>..\..\Website\bin\Roblox.TextFilter.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\..\Website\bin\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetsCore">
-      <HintPath>..\..\Website\bin\Roblox.Platform.AssetsCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\Website\bin\Roblox.ApiClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\Website\bin\Roblox.FloodCheckers.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Drawing">
-      <HintPath>..\..\Website\bin\Roblox.Drawing.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership.Extensions">
-      <HintPath>..\..\Website\bin\Roblox.Platform.Membership.Extensions.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Localization\\Roblox.Localization.Core\\Roblox.Localization.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventStream\\Roblox.EventStream.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventStream.WebEvents\\Roblox.EventStream.WebEvents.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.Assets\\Roblox.Platform.Assets.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetMedia\\Roblox.Platform.AssetMedia.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetMedia\\Roblox.Platform.AssetMedia.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Translations\\Roblox.Platform.TranslationStorage\\Roblox.Platform.TranslationStorage.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Thumbs\\Roblox.Platform.Thumbs\\Roblox.Platform.Thumbs.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Games\\Roblox.Platform.GameLocalization\\Roblox.Platform.GameLocalization.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\TextFilter\\Roblox.Platform.TextFilter\\Roblox.Platform.TextFilter.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetsCore\\Roblox.Platform.AssetsCore.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers.Core\\Roblox.FloodCheckers.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\..\\Drawing\\Roblox.Drawing\\Roblox.Drawing.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Extensions\\Roblox.Platform.Membership.Extensions.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AWSSDK.Core" Version="3.7.300.23" />

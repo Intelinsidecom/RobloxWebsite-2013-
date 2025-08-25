@@ -12,14 +12,14 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <Reference Include="DnsClient">
-      <HintPath>..\..\Website\bin\DnsClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Sentinels">
-      <HintPath>..\..\Website\bin\Roblox.Sentinels.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="DnsClient" Version="1.7.0" />
   </ItemGroup>
 </Project>

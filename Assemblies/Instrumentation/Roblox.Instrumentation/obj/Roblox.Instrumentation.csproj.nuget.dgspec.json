@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "prometheus-net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
             }
           },
           "imports": [

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox Server Class Library</AssemblyName>
@@ -17,144 +17,169 @@
     <PackageReference Include="System.Resources.Extensions" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Roblox.Data">
-      <HintPath>..\Data\Roblox.Data\bin\Debug\netstandard2.0\Roblox.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Caching">
-      <HintPath>..\Caching\Roblox.Caching\bin\Debug\netstandard2.0\Roblox.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common">
-      <HintPath>..\Common\Roblox.Common\bin\Debug\net471\Roblox.Common.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="Roblox.Roles.Client" />
     <Reference Include="System.Web" />
-    <Reference Include="Roblox.Amazon.Sqs">
-      <HintPath>..\Roblox.Amazon.Sqs\bin\Debug\net471\Roblox.Amazon.Sqs.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.BucketStore">
-      <HintPath>..\Roblox.BucketStore\bin\Debug\net471\Roblox.BucketStore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog">
-      <HintPath>..\Roblox.CachingV2.Core\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\Roblox.Platform.AssetOwnership\bin\Debug\net471\Roblox.Platform.AssetOwnership.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml" />
-    <Reference Include="Roblox.Locking">
-      <HintPath>..\Roblox.Locking\bin\Debug\net471\Roblox.Locking.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon">
-      <HintPath>..\Roblox.Amazon\bin\Debug\net471\Roblox.Amazon.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common.Web">
-      <HintPath>..\Roblox.Common.Web\bin\Debug\net471\Roblox.Common.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="Roblox.MssqlDatabases">
-      <HintPath>..\Roblox.MssqlDatabases\bin\Debug\net471\Roblox.MssqlDatabases.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Marketplace.Client" />
-    <Reference Include="Roblox.Economy.Common">
-      <HintPath>..\Roblox.Economy.Common\bin\Debug\net471\Roblox.Economy.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Economy">
-      <HintPath>..\Roblox.Economy\bin\Debug\net471\Roblox.Economy.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="Roblox.Configuration">
-      <HintPath>..\Roblox.Configuration\bin\Debug\net471\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Passwords.Client">
-      <HintPath>..\Roblox.Passwords.Client\bin\Debug\net471\Roblox.Passwords.Client.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="Roblox.Users.Client">
-      <HintPath>..\Roblox.Users.Client\bin\Debug\net471\Roblox.Users.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Moderation">
-      <HintPath>..\Roblox.Moderation\bin\Debug\net471\Roblox.Moderation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.DataV2.Core">
-      <HintPath>..\Roblox.CachingV2.Core\bin\Debug\netstandard2.0\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="StackExchange.Redis">
-      <HintPath>..\..\packages\StackExchange.Redis.2.2.4\lib\net471\StackExchange.Redis.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Groups.Client" />
-    <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\Roblox.ApiClientBase\bin\Debug\net471\Roblox.ApiClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Agents">
-      <HintPath>..\Roblox.Agents\bin\Debug\net471\Roblox.Agents.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation">
-      <HintPath>..\Roblox.Instrumentation\bin\Debug\net471\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\Roblox.Entities.Mssql\bin\Debug\net471\Roblox.Entities.Mssql.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.RequestContext">
-      <HintPath>..\Roblox.RequestContext\bin\Debug\netstandard2.0\Roblox.RequestContext.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.UserCacheMigrationSettings">
-      <HintPath>..\Roblox.UserCacheMigrationSettings\bin\Debug\net471\Roblox.UserCacheMigrationSettings.dll</HintPath>
-    </Reference>
-    
-    <Reference Include="Roblox.Assets">
-      <HintPath>..\Roblox.Assets\bin\Debug\net471\Roblox.Assets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Redis.Lru">
-      <HintPath>..\Roblox.Redis.Lru\bin\Debug\net471\Roblox.Redis.Lru.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Redis">
-      <HintPath>..\Roblox.Redis\bin\Debug\net471\Roblox.Redis.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Users">
-      <HintPath>..\Users\bin\Debug\net471\Roblox.Users.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ContentRatings">
-      <HintPath>..\Roblox.ContentRatings\bin\Debug\net471\Roblox.ContentRatings.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Coordination">
-      <HintPath>..\Roblox.Coordination\bin\Debug\netstandard2.0\Roblox.Coordination.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\\Data\\Roblox.Data\\Roblox.Data.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Common\\Roblox.Common\\Roblox.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox\\Roblox.BucketStore\\Roblox.BucketStore.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Platform\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Locking\\Roblox.Locking\\Roblox.Locking.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Amazon\\Roblox.Amazon\\Roblox.Amazon.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Common\\Roblox.Common.Web\\Roblox.Common.Web.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Platform\\Marketplace\\Roblox.Platform.Marketplace.Client\\Roblox.Platform.Marketplace.Client.csproj" />
+    <ProjectReference Include="..\\Economy\\Roblox.Economy.Common\\Roblox.Economy.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Economy\\Roblox.Economy\\Roblox.Economy.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Passwords\\Roblox.Passwords.Client\\Roblox.Passwords.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Platform\\Users\\Roblox.Platform.Users.Client\\Roblox.Platform.Users.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Moderation\\Roblox.Moderation\\Roblox.Moderation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Agents\\Roblox.Agents\\Roblox.Agents.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Assets\\Roblox.Assets\\Roblox.Assets.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Redis\\Roblox.Redis.Lru\\Roblox.Redis.Lru.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Redis\\Roblox.Redis\\Roblox.Redis.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Platform\\Users\\Roblox.Platform.Users\\Roblox.Platform.Users.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Coordination\\Roblox.Coordination\\Roblox.Coordination.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Platform\\Users\\Roblox.Platform.UserCacheMigrationSettings\\Roblox.Platform.UserCacheMigrationSettings.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Platform\\Content\\Roblox.Platform.ContentRatings\\Roblox.Platform.ContentRatings.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\Roblox.Data\Roblox.Data.csproj" />
-    <ProjectReference Include="..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
-    <ProjectReference Include="..\Common\Roblox.Common\Roblox.Common.csproj" />
-    <ProjectReference Include="..\Common\Roblox.Common.Web\Roblox.Common.Web.csproj" />
-    <ProjectReference Include="..\EventLog\Roblox.EventLog\Roblox.EventLog.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.AssetOwnership\Roblox.Platform.AssetOwnership.csproj" />
-    <ProjectReference Include="..\Roblox.Locking\Roblox.Locking.csproj" />
-    <ProjectReference Include="..\Roblox.Amazon.Sqs\Roblox.Amazon.Sqs.csproj" />
-    <ProjectReference Include="..\Roblox.Amazon\Roblox.Amazon.csproj" />
-    <ProjectReference Include="..\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj" />
-    <ProjectReference Include="..\Roblox.Economy.Common\Roblox.Economy.Common.csproj" />
-    <ProjectReference Include="..\Roblox.Economy\Roblox.Economy.csproj" />
-    <ProjectReference Include="..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
-    <ProjectReference Include="..\Roblox.Passwords.Client\Roblox.Passwords.Client.csproj" />
-    <ProjectReference Include="..\Roblox.Users.Client\Roblox.Users.Client.csproj" />
-    <ProjectReference Include="..\Moderation\Roblox.Moderation\Roblox.Moderation.csproj" />
-    <ProjectReference Include="..\ApiClientBase\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj" />
-    <ProjectReference Include="..\Roblox.Agents\Roblox.Agents.csproj" />
-    <ProjectReference Include="..\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj" />
-    <ProjectReference Include="..\Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj" />
-    <ProjectReference Include="..\Roblox.RequestContext\Roblox.RequestContext.csproj" />
-    <ProjectReference Include="..\Roblox.UserCacheMigrationSettings\Roblox.UserCacheMigrationSettings.csproj" />
-    <ProjectReference Include="..\Assets\Roblox.Assets\Roblox.Assets.csproj" />
-    <ProjectReference Include="..\Roblox.Redis.Lru\Roblox.Redis.Lru.csproj" />
-    <ProjectReference Include="..\Redis\Roblox.Redis\Roblox.Redis.csproj" />
-    <ProjectReference Include="..\Users\Roblox.Users\Roblox.Users.csproj" />
-    <ProjectReference Include="..\Roblox.ContentRatings\Roblox.ContentRatings.csproj" />
-    <ProjectReference Include="..\Roblox.Coordination\Roblox.Coordination.csproj" />
-    <ProjectReference Include="..\Roblox.Entities\Roblox.Entities.csproj" />
-    <ProjectReference Include="..\Web\Roblox.Web.SEO\Roblox.Web.SEO.csproj" />
-    <ProjectReference Include="..\Web\Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj" />
+    <ProjectReference Include="..\\Data\\Roblox.Data\\Roblox.Data.csproj" />
+    <ProjectReference Include="..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\\Common\\Roblox.Common\\Roblox.Common.csproj" />
+    <ProjectReference Include="..\\Common\\Roblox.Common.Web\\Roblox.Common.Web.csproj" />
+    <ProjectReference Include="..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\\Platform\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj" />
+    <ProjectReference Include="..\\Locking\\Roblox.Locking\\Roblox.Locking.csproj" />
+    <ProjectReference Include="..\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj" />
+    <ProjectReference Include="..\\Amazon\\Roblox.Amazon\\Roblox.Amazon.csproj" />
+    <ProjectReference Include="..\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj" />
+    <ProjectReference Include="..\\Economy\\Roblox.Economy.Common\\Roblox.Economy.Common.csproj" />
+    <ProjectReference Include="..\\Economy\\Roblox.Economy\\Roblox.Economy.csproj" />
+    <ProjectReference Include="..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\\Passwords\\Roblox.Passwords.Client\\Roblox.Passwords.Client.csproj" />
+    <ProjectReference Include="..\\Platform\\Users\\Roblox.Platform.Users.Client\\Roblox.Platform.Users.Client.csproj" />
+    <ProjectReference Include="..\\Moderation\\Roblox.Moderation\\Roblox.Moderation.csproj" />
+    <ProjectReference Include="..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj" />
+    <ProjectReference Include="..\\Agents\\Roblox.Agents\\Roblox.Agents.csproj" />
+    <ProjectReference Include="..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj" />
+    <ProjectReference Include="..\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj" />
+    <ProjectReference Include="..\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj" />
+    <ProjectReference Include="..\\Platform\\Users\\Roblox.Platform.UserCacheMigrationSettings\\Roblox.Platform.UserCacheMigrationSettings.csproj" />
+    <ProjectReference Include="..\\Assets\\Roblox.Assets\\Roblox.Assets.csproj" />
+    <ProjectReference Include="..\\Redis\\Roblox.Redis.Lru\\Roblox.Redis.Lru.csproj" />
+    <ProjectReference Include="..\\Redis\\Roblox.Redis\\Roblox.Redis.csproj" />
+    <ProjectReference Include="..\\Platform\\Users\\Roblox.Platform.Users\\Roblox.Platform.Users.csproj" />
+    <ProjectReference Include="..\\Platform\\Content\\Roblox.Platform.ContentRatings\\Roblox.Platform.ContentRatings.csproj" />
+    <ProjectReference Include="..\\Coordination\\Roblox.Coordination\\Roblox.Coordination.csproj" />
+    <ProjectReference Include="..\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj" />
+    <ProjectReference Include="..\\Web\\Roblox.Web.SEO\\Roblox.Web.SEO.csproj" />
+    <ProjectReference Include="..\\Web\\Roblox.WebsiteSettings\\Roblox.WebsiteSettings.csproj" />
   </ItemGroup>
 </Project>
