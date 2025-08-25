@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Classification</AssemblyName>
@@ -12,7 +12,7 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Segmentation.Client\Roblox.Segmentation.Client.csproj" />
+    <ProjectReference Include="..\..\Segmentation\Roblox.Segmentation.Client\Roblox.Segmentation.Client.csproj" />
     <Reference Include="Roblox.Data">
       <HintPath>..\..\Website\bin\Roblox.Data.dll</HintPath>
     </Reference>
@@ -35,7 +35,7 @@
       <HintPath>..\..\Website\bin\Roblox.Common.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
     </Reference>
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />

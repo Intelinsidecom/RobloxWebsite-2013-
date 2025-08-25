@@ -1,6 +1,6 @@
 param(
     [string]$RootPath = (Get-Location).Path,
-    [string]$ReportPath = "$(Get-Location)/UnresolvedReferences.txt"
+    [string]$ReportPath = "$(Get-Location)/missing.txt"
 )
 
 Write-Host "Root path: $RootPath"
@@ -13,10 +13,71 @@ Get-ChildItem -Path (Split-Path -Path $RootPath -Parent) -Recurse -Filter *.dll 
 }
 Write-Host "Cached $($dllCache.Count) DLL files."
 
+function Find-Csproj([string]$asmName) {
+    if ($csprojCache.ContainsKey($asmName)) { return $csprojCache[$asmName] }
+    $variants = @()
+    if ($asmName -match '^Roblox\.Platform\.') {
+        $variants += ($asmName -replace '^Roblox\.Platform\.', 'Roblox.')
+    } elseif ($asmName -match '^Roblox\.') {
+        $variants += ($asmName -replace '^Roblox\.', 'Roblox.Platform.')
+        $variants += 'Roblox.' + ($asmName -replace '^Roblox\.Platform\.')
+    }
+    foreach ($v in $variants) {
+        if ($csprojCache.ContainsKey($v)) { $csprojCache[$asmName] = $csprojCache[$v]; return $csprojCache[$v] }
+    }
+    $searchNames = @($asmName) + $variants
+    foreach ($n in $searchNames) {
+        $match = Get-ChildItem -Path $RootPath -Recurse -Filter "$n.csproj" -ErrorAction SilentlyContinue | Select-Object -First 1
+        if ($match) { $csprojCache[$asmName] = $match.FullName; return $match.FullName }
+    }
+    return $null
+}
+
+function Add-ProjectReference([xml]$xml,[string]$fromDir,[string]$targetCsproj,[string]$assemblyName){
+    $fromUri = New-Object System.Uri("file:///$($fromDir.Replace('\','/'))/")
+    $toUri   = New-Object System.Uri("file:///$($targetCsproj.Replace('\\','/'))")
+    $relUri  = $fromUri.MakeRelativeUri($toUri)
+    $relPath = [System.Uri]::UnescapeDataString($relUri.ToString()).Replace('/', '\\')
+    $projRef = $xml.CreateElement('ProjectReference')
+    $projRef.SetAttribute('Include',$relPath)
+    try {
+        [xml]$srcXml = Get-Content $targetCsproj
+        $guidNode = $srcXml.Project.PropertyGroup.ProjectGuid
+        if($guidNode){
+            $guidElem = $xml.CreateElement('Project');
+            $guidElem.InnerText = $guidNode.'#text'
+            $projRef.AppendChild($guidElem) | Out-Null
+        }
+    } catch {}
+    return ,@($projRef,$relPath)
+}
+
+
+# Cache all csproj files by their assembly name for quick lookup
+Write-Host "Caching csproj assembly names..."
+$csprojCache = @{}
+Get-ChildItem -Path $RootPath -Recurse -Filter *.csproj -ErrorAction SilentlyContinue | ForEach-Object {
+    try {
+        [xml]$tmpXml = Get-Content $_.FullName
+        $asmNode = $tmpXml.Project.PropertyGroup.AssemblyName
+        if ($asmNode) {
+            $asm = $asmNode.'#text'
+        } else {
+            $asm = [IO.Path]::GetFileNameWithoutExtension($_.Name)
+        }
+        if (-not $csprojCache.ContainsKey($asm)) {
+            $csprojCache[$asm] = $_.FullName
+        }
+    } catch {}
+}
+Write-Host "Cached $($csprojCache.Count) assemblies from csproj."
+
 Write-Host "Searching for .csproj files..."
 $csprojFiles = Get-ChildItem -Path $RootPath -Recurse -Filter *.csproj
 Write-Host "Found $($csprojFiles.Count) .csproj files."
 $unresolved = @()
+$changes = @()
+$planByProject = @{}
 
 $projectCount = 0
 foreach ($proj in $csprojFiles) {
@@ -27,6 +88,7 @@ foreach ($proj in $csprojFiles) {
 
     # Fix <ProjectReference>
     $projRefs = $xml.Project.ItemGroup.ProjectReference
+    if (-not $planByProject.ContainsKey($proj.FullName)) { $planByProject[$proj.FullName] = @() }
     foreach ($ref in $projRefs) {
         $include = $ref.Include
         $absPath = Join-Path -Path $proj.DirectoryName -ChildPath $include
@@ -46,7 +108,7 @@ foreach ($proj in $csprojFiles) {
                 # Update the ProjectReference in the XML
                 $ref.Include = $newRelative
                 $changed = $true
-                Write-Host "Fixed ProjectReference in $($proj.Name): $fileName"
+                $planByProject[$proj.FullName] += "ProjectReference: update Include for $fileName -> $newRelative"
             }
             else {
                 $unresolved += "ProjectReference in $($proj.FullName): $include"
@@ -54,10 +116,73 @@ foreach ($proj in $csprojFiles) {
         }
     }
 
+    # Convert DLL <Reference> elements to <ProjectReference> when source project exists
+    $referenceNodes = $xml.SelectNodes("//Reference")
+    foreach ($refNode in $referenceNodes) {
+        $includeVal = $refNode.Include
+        if (-not $includeVal) { continue }
+        $assemblyName = ($includeVal -split ',')[0]
+        # skip standard framework references
+        if ($assemblyName -match '^(System|Microsoft)') { continue }
+        # Try existing csproj cache; if not present attempt to find in Assemblies folder
+        if (-not $csprojCache.ContainsKey($assemblyName)) {
+            $assemblyProj = Get-ChildItem -Path (Join-Path $RootPath 'Assemblies') -Recurse -Filter "$assemblyName.csproj" -ErrorAction SilentlyContinue | Select-Object -First 1
+            if ($assemblyProj) { $csprojCache[$assemblyName] = $assemblyProj.FullName }
+        }
+
+        if ($csprojCache.ContainsKey($assemblyName)) {
+            $projPathAbs = $csprojCache[$assemblyName]
+            # compute relative path
+            $from = $proj.DirectoryName
+            $to = $projPathAbs
+            $fromUri = New-Object System.Uri("file:///$($from.Replace('\','/'))/")
+            $toUri = New-Object System.Uri("file:///$($to.Replace('\\','/'))")
+            $relativeUri = $fromUri.MakeRelativeUri($toUri)
+            $relativePath = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\\')
+
+            # create new ProjectReference
+            $projRef = $xml.CreateElement("ProjectReference")
+            $projRef.SetAttribute("Include", $relativePath)
+            # copy ProjectGuid if exists
+            try {
+                [xml]$srcXml = Get-Content $projPathAbs
+                $guidNode = $srcXml.Project.PropertyGroup.ProjectGuid
+                if ($guidNode) {
+                    $guidElem = $xml.CreateElement("Project")
+                    $guidElem.InnerText = $guidNode.'#text'
+                    $projRef.AppendChild($guidElem) | Out-Null
+                }
+            } catch {}
+
+            $parent = $refNode.ParentNode
+            $parent.AppendChild($projRef) | Out-Null
+            $parent.RemoveChild($refNode) | Out-Null
+            $changed = $true
+            $planByProject[$proj.FullName] += "Reference: convert $assemblyName to ProjectReference ($relativePath)"
+        } else {
+            $unresolved += "Reference unresolved in $($proj.FullName): $assemblyName"
+        }
+    }
+
     # Fix <HintPath>
     $refs = $xml.SelectNodes("//HintPath")
     foreach ($hint in $refs) {
         $hintPath = $hint.InnerText
+        # Prefer csproj for any HintPath resolution
+        $assemblyName = $hint.ParentNode.Attributes["Include"].Value
+        $projPathAbs = Find-Csproj $assemblyName
+        if ($projPathAbs) {
+            # convert the parent <Reference> to <ProjectReference>
+            $parentRef = $hint.ParentNode
+            $parentItemGroup = $parentRef.ParentNode
+            $prs = Add-ProjectReference $xml $proj.DirectoryName $projPathAbs $assemblyName $planByProject[$proj.FullName]
+            $parentItemGroup.AppendChild($prs[0]) | Out-Null
+            $planByProject[$proj.FullName] += "HintPath: convert $assemblyName to ProjectReference ($($prs[1]))"
+            $parentItemGroup.RemoveChild($parentRef) | Out-Null
+            $changed = $true
+            continue
+        }
+        # If no csproj found, fallback to DLL search
         # Handle empty HintPath by searching for the DLL
         if ($hintPath -eq $null -or $hintPath.Trim() -eq "") {
             $assemblyName = $hint.ParentNode.Attributes["Include"].Value
@@ -86,7 +211,7 @@ foreach ($proj in $csprojFiles) {
                     $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\')
                     $hint.InnerText = $newRelative
                     $changed = $true
-                    Write-Host "Fixed empty HintPath in $($proj.Name): $assemblyName.dll"
+                    $planByProject[$proj.FullName] += "HintPath: set for $assemblyName.dll -> $newRelative"
                 } else {
                     $unresolved += "Empty HintPath for $assemblyName in $($proj.FullName) - Project found but DLL not built"
                 }
@@ -131,19 +256,17 @@ foreach ($proj in $csprojFiles) {
                 }
             }
             
-            Write-Host "DEBUG: Processing matches for $fileName, count: $($dllMatches.Count)"
             if ($dllMatches.Count -eq 1) {
                 # Compute relative path manually
                 $from = $proj.DirectoryName
                 $to = $dllMatches[0].FullName
-                Write-Host "DEBUG: Using match: $($dllMatches[0].FullName)"
                 $fromUri = New-Object System.Uri("file:///$($from.Replace('\','/'))/")
                 $toUri = New-Object System.Uri("file:///$($to.Replace('\','/'))")
                 $relativeUri = $fromUri.MakeRelativeUri($toUri)
                 $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\')
                 $hint.InnerText = $newRelative
                 $changed = $true
-                Write-Host "Fixed 'full' HintPath in $($proj.Name): $fileName"
+                $planByProject[$proj.FullName] += "HintPath: replace 'full' for $fileName -> $newRelative"
             }
             elseif ($dllMatches.Count -eq 0) {
                 $unresolved += "'full' HintPath in $($proj.FullName): $hintPath - DLL not found"
@@ -161,7 +284,7 @@ foreach ($proj in $csprojFiles) {
                     $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\')
                     $hint.InnerText = $newRelative
                     $changed = $true
-                    Write-Host "Fixed 'full' HintPath in $($proj.Name): $fileName"
+                    $planByProject[$proj.FullName] += "HintPath: replace 'full' for $fileName -> $newRelative"
                 } else {
                     $unresolved += "'full' HintPath in $($proj.FullName): $hintPath - Multiple DLL matches found"
                 }
@@ -190,7 +313,7 @@ foreach ($proj in $csprojFiles) {
                 $newRelative = [System.Uri]::UnescapeDataString($relativeUri.ToString()).Replace('/', '\')
                 $hint.InnerText = $newRelative
                 $changed = $true
-                Write-Host "Fixed HintPath in $($proj.Name): $fileName"
+                $planByProject[$proj.FullName] += "HintPath: update for $fileName -> $newRelative"
             }
             elseif ($matches.Count -eq 0) {
                 $unresolved += "HintPath in $($proj.FullName): $hintPath - File not found"
@@ -203,15 +326,36 @@ foreach ($proj in $csprojFiles) {
     }
 
     if ($changed) {
-        $xml.Save($proj.FullName)
+        # store for later save after confirmation
+        $changes += [PSCustomObject]@{Path=$proj.FullName; Xml=$xml}
     }
 }
 
+# Summary and confirmation
+Write-Host "Planned updates: $($changes.Count) project(s) will be modified."
+foreach($c in $changes){
+    $p = $c.Path
+    Write-Host "  - $([IO.Path]::GetFileName($p))"
+    if ($planByProject.ContainsKey($p)) {
+        foreach($line in $planByProject[$p]){ Write-Host "      * $line" }
+    }
+}
+
+$confirmation = Read-Host "FixProjectPaths will apply these changes. Continue? (Y/N)"
+if ($confirmation -notmatch '^(?i)y(yes)?$') {
+    Write-Host "Aborted by user."
+    exit 0
+}
+
+# save changes
+foreach($c in $changes){ $c.Xml.Save($c.Path) }
+
 if ($unresolved.Count -gt 0) {
-    $unresolved | Sort-Object | Set-Content -Path $ReportPath -Encoding UTF8
-    Write-Host "Unresolved references written to $ReportPath"
+    if (-not (Test-Path $ReportPath)) {
+        New-Item -Path $ReportPath -ItemType File -Force | Out-Null
+    }
+    $unresolved | Sort-Object | Add-Content -Path $ReportPath -Encoding UTF8
+    Write-Host "Missing references appended to $ReportPath"
 } else {
-    # Clear the report file if there are no unresolved references
-    Set-Content -Path $ReportPath -Value @() -Encoding UTF8
-    Write-Host "All references resolved. Report file cleared."
+    Write-Host "No missing references detected."
 }

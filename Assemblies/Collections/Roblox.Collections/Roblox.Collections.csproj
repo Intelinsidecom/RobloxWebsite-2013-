@@ -13,7 +13,7 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Random">
       <HintPath>..\..\Website\bin\Roblox.Random.dll</HintPath>

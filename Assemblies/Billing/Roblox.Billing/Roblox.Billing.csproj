@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Billing</AssemblyName>
@@ -19,7 +19,7 @@
       <HintPath>..\..\Website\bin\Roblox.PremiumFeatures.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox Server Class Library">
       <HintPath>..\..\Website\bin\Roblox Server Class Library.dll</HintPath>
@@ -40,7 +40,6 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Extensions" />
-    
     <Reference Include="Roblox.Locking">
       <HintPath>..\..\Website\bin\Roblox.Locking.dll</HintPath>
     </Reference>
@@ -80,17 +79,17 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Roblox.EphemeralCounters\Roblox.EphemeralCounters.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.Email.Delivery\Roblox.Platform.Email.Delivery.csproj" />
-    <ProjectReference Include="..\Roblox.PayPal.Common\Roblox.PayPal.Common.csproj" />
+    <ProjectReference Include="..\..\Platform\Email\Roblox.Platform.Email.Delivery\Roblox.Platform.Email.Delivery.csproj" />
+    <ProjectReference Include="..\..\PayPal\Roblox.PayPal.Common\Roblox.PayPal.Common.csproj" />
     <ProjectReference Include="..\Roblox.BillingTransactionEventPublisher\Roblox.BillingTransactionEventPublisher.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
-    <ProjectReference Include="..\Roblox.Demographics\Roblox.Demographics.csproj" />
-    <ProjectReference Include="..\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
+    <ProjectReference Include="..\..\Platform\Demographics\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
+    <ProjectReference Include="..\..\Platform\Demographics\Roblox.Platform.Demographics\Roblox.DemographicsTodo\Roblox.Demographics.csproj" />
+    <ProjectReference Include="..\..\FloodCheckers\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
     <ProjectReference Include="..\Roblox.Platform.Localization.Accounts\Roblox.Platform.Localization.Accounts.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.Assets\Roblox.Platform.Assets.csproj" />
-    <ProjectReference Include="..\Roblox.Classification\Roblox.Classification.csproj" />
+    <ProjectReference Include="..\..\Platform\Assets\Roblox.Platform.Assets\Roblox.Platform.Assets.csproj" />
+    <ProjectReference Include="..\..\Classification\Roblox.Classification\Roblox.Classification.csproj" />
   </ItemGroup>
   <!-- Exclude PayPal/Payflow dependent sources (SDK not available locally) -->
   <ItemGroup>

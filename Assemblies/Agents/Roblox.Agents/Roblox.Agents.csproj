@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Agents</AssemblyName>
@@ -20,7 +20,7 @@
       <HintPath>..\..\Website\bin\Roblox.Users.Client.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.EventLog">
-      <HintPath>..\..\Website\bin\Roblox.EventLog.dll</HintPath>
+      <HintPath>..\..\Platform\Events\Roblox.Platform.EventLog\bin\Debug\netstandard2.0\Roblox.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Instrumentation">
       <HintPath>..\..\Website\bin\Roblox.Instrumentation.dll</HintPath>
@@ -50,6 +50,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Http.Client\Roblox.Http.Client.csproj" />
+    <ProjectReference Include="..\..\Http\Roblox.Http.Client\Roblox.Http.Client.csproj" />
   </ItemGroup>
 </Project>
