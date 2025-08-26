@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models.Responses {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models.Responses;
-
-[DataContract]
 public class PurchasePlatformResponse
 {
 	/// <summary>
@@ -10,4 +9,7 @@ public class PurchasePlatformResponse
 	/// </summary>
 	[DataMember(Name = "purchasePlatform", EmitDefaultValue = true, IsRequired = true)]
 	public string PurchasePlatform { get; set; }
+}
+
+
 }

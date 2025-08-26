@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class FavoritesResources_en_us : TranslationResourcesBase, IFavoritesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class FavoritesResources_en_us : TranslationResourcesBase, IFavoritesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -242,4 +241,7 @@ internal class FavoritesResources_en_us : TranslationResourcesBase, IFavoritesRe
 	{
 		return "The asset you are trying to favorite cannot be found.";
 	}
+}
+
+
 }

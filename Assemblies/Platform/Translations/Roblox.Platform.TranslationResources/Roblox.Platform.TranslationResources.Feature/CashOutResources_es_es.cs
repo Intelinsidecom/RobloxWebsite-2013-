@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CashOutResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -29,13 +29,13 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// Key: "Action.GetObc"
 	/// English String: "Get OBC Now"
 	/// </summary>
-	public override string ActionGetObc => "Consigue ya la suscripción al OBC";
+	public override string ActionGetObc => "Consigue ya la suscripciÃ³n al OBC";
 
 	/// <summary>
 	/// Key: "Action.UpgradeMembership"
 	/// English String: "Upgrade Membership"
 	/// </summary>
-	public override string ActionUpgradeMembership => "Mejorar suscripción";
+	public override string ActionUpgradeMembership => "Mejorar suscripciÃ³n";
 
 	/// <summary>
 	/// Key: "Action.Verify"
@@ -47,7 +47,7 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// Key: "Action.VerifyEmail"
 	/// English String: "Verify Email"
 	/// </summary>
-	public override string ActionVerifyEmail => "Verificar correo electrónico";
+	public override string ActionVerifyEmail => "Verificar correo electrÃ³nico";
 
 	/// <summary>
 	/// Key: "Action.VerifyNow"
@@ -80,13 +80,13 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// section heading
 	/// English String: "Your Update"
 	/// </summary>
-	public override string HeadingYourUpdate => "Tu actualización";
+	public override string HeadingYourUpdate => "Tu actualizaciÃ³n";
 
 	/// <summary>
 	/// Key: "Label.AlmostReady"
 	/// English String: "You're almost ready!"
 	/// </summary>
-	public override string LabelAlmostReady => "¡Ya casi lo tienes!";
+	public override string LabelAlmostReady => "Â¡Ya casi lo tienes!";
 
 	/// <summary>
 	/// Key: "Label.BuilderClubForCash"
@@ -118,7 +118,7 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// label
 	/// English String: "Its status is Pending"
 	/// </summary>
-	public override string LabelDevExStatusPending => "La solicitud está pendiente.";
+	public override string LabelDevExStatusPending => "La solicitud estÃ¡ pendiente.";
 
 	/// <summary>
 	/// Key: "Label.DevExStatusRejected"
@@ -131,7 +131,7 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// Key: "Label.NeedVerifiedEmail"
 	/// English String: "You need a verified email address to use DevEx."
 	/// </summary>
-	public override string LabelNeedVerifiedEmail => "Necesitas una dirección de correo electrónico verificada para usar DevEx.";
+	public override string LabelNeedVerifiedEmail => "Necesitas una direcciÃ³n de correo electrÃ³nico verificada para usar DevEx.";
 
 	/// <summary>
 	/// Key: "Label.NotEligible"
@@ -161,19 +161,19 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// Key: "Label.TradingRobux"
 	/// English String: "You're on your way to trading Robux for cash!"
 	/// </summary>
-	public override string LabelTradingRobux => "¡Estás a punto de poder cambiar Robux por efectivo!";
+	public override string LabelTradingRobux => "Â¡EstÃ¡s a punto de poder cambiar Robux por efectivo!";
 
 	/// <summary>
 	/// Key: "Label.TradingRobuxCash"
 	/// English String: "You're almost there! You almost qualify to trade your Robux for cash!"
 	/// </summary>
-	public override string LabelTradingRobuxCash => "¡Ya casi lo tienes! Estás a punto de poder cambiar tus Robux por efectivo.";
+	public override string LabelTradingRobuxCash => "Â¡Ya casi lo tienes! EstÃ¡s a punto de poder cambiar tus Robux por efectivo.";
 
 	/// <summary>
 	/// Key: "Label.VerifiedEmailForCashout"
 	/// English String: "You must verify your email before you can cash out."
 	/// </summary>
-	public override string LabelVerifiedEmailForCashout => "Debes verificar tu correo electrónico antes de convertir en efectivo.";
+	public override string LabelVerifiedEmailForCashout => "Debes verificar tu correo electrÃ³nico antes de convertir en efectivo.";
 
 	public CashOutResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -197,12 +197,12 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForActionGetObc()
 	{
-		return "Consigue ya la suscripción al OBC";
+		return "Consigue ya la suscripciÃ³n al OBC";
 	}
 
 	protected override string _GetTemplateForActionUpgradeMembership()
 	{
-		return "Mejorar suscripción";
+		return "Mejorar suscripciÃ³n";
 	}
 
 	protected override string _GetTemplateForActionVerify()
@@ -212,7 +212,7 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForActionVerifyEmail()
 	{
-		return "Verificar correo electrónico";
+		return "Verificar correo electrÃ³nico";
 	}
 
 	protected override string _GetTemplateForActionVerifyNow()
@@ -232,12 +232,12 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionDevExRequestCompleted(string startMoneyLink, string endMoneyLink)
 	{
-		return $"Tu solicitud al DevEx ha sido completada. Comprueba tu página {startMoneyLink}Dinero{endMoneyLink} para más detalles.";
+		return $"Tu solicitud al DevEx ha sido completada. Comprueba tu pÃ¡gina {startMoneyLink}Dinero{endMoneyLink} para mÃ¡s detalles.";
 	}
 
 	protected override string _GetTemplateForDescriptionDevExRequestCompleted()
 	{
-		return "Tu solicitud al DevEx ha sido completada. Comprueba tu página {startMoneyLink}Dinero{endMoneyLink} para más detalles.";
+		return "Tu solicitud al DevEx ha sido completada. Comprueba tu pÃ¡gina {startMoneyLink}Dinero{endMoneyLink} para mÃ¡s detalles.";
 	}
 
 	/// <summary>
@@ -247,12 +247,12 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionDevExRequestSubmittedOn(string requestDate)
 	{
-		return $"Se presentó tu solicitud al DevEx el: {requestDate}";
+		return $"Se presentÃ³ tu solicitud al DevEx el: {requestDate}";
 	}
 
 	protected override string _GetTemplateForDescriptionDevExRequestSubmittedOn()
 	{
-		return "Se presentó tu solicitud al DevEx el: {requestDate}";
+		return "Se presentÃ³ tu solicitud al DevEx el: {requestDate}";
 	}
 
 	/// <summary>
@@ -262,12 +262,12 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionDevExTermsDisclaimer(string helpLinkStart, string helpLinkEnd)
 	{
-		return $"* Es posible que los viejos Robux se conviertan en efectivo a un tipo de cambio diferente. Haz clic {helpLinkStart}aquí{helpLinkEnd} para obtener más información.";
+		return $"* Es posible que los viejos Robux se conviertan en efectivo a un tipo de cambio diferente. Haz clic {helpLinkStart}aquÃ­{helpLinkEnd} para obtener mÃ¡s informaciÃ³n.";
 	}
 
 	protected override string _GetTemplateForDescriptionDevExTermsDisclaimer()
 	{
-		return "* Es posible que los viejos Robux se conviertan en efectivo a un tipo de cambio diferente. Haz clic {helpLinkStart}aquí{helpLinkEnd} para obtener más información.";
+		return "* Es posible que los viejos Robux se conviertan en efectivo a un tipo de cambio diferente. Haz clic {helpLinkStart}aquÃ­{helpLinkEnd} para obtener mÃ¡s informaciÃ³n.";
 	}
 
 	/// <summary>
@@ -277,12 +277,12 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionLearnMoreAboutDevEx(string startDevExLink, string endDevExLink)
 	{
-		return $"{startDevExLink}Obtén más información{endDevExLink} sobre nuestro programa de cambio para desarrolladores.";
+		return $"{startDevExLink}ObtÃ©n mÃ¡s informaciÃ³n{endDevExLink} sobre nuestro programa de cambio para desarrolladores.";
 	}
 
 	protected override string _GetTemplateForDescriptionLearnMoreAboutDevEx()
 	{
-		return "{startDevExLink}Obtén más información{endDevExLink} sobre nuestro programa de cambio para desarrolladores.";
+		return "{startDevExLink}ObtÃ©n mÃ¡s informaciÃ³n{endDevExLink} sobre nuestro programa de cambio para desarrolladores.";
 	}
 
 	/// <summary>
@@ -312,12 +312,12 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForHeadingYourUpdate()
 	{
-		return "Tu actualización";
+		return "Tu actualizaciÃ³n";
 	}
 
 	protected override string _GetTemplateForLabelAlmostReady()
 	{
-		return "¡Ya casi lo tienes!";
+		return "Â¡Ya casi lo tienes!";
 	}
 
 	/// <summary>
@@ -371,7 +371,7 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForLabelDevExStatusPending()
 	{
-		return "La solicitud está pendiente.";
+		return "La solicitud estÃ¡ pendiente.";
 	}
 
 	protected override string _GetTemplateForLabelDevExStatusRejected()
@@ -381,7 +381,7 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForLabelNeedVerifiedEmail()
 	{
-		return "Necesitas una dirección de correo electrónico verificada para usar DevEx.";
+		return "Necesitas una direcciÃ³n de correo electrÃ³nico verificada para usar DevEx.";
 	}
 
 	protected override string _GetTemplateForLabelNotEligible()
@@ -421,16 +421,19 @@ internal class CashOutResources_es_es : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForLabelTradingRobux()
 	{
-		return "¡Estás a punto de poder cambiar Robux por efectivo!";
+		return "Â¡EstÃ¡s a punto de poder cambiar Robux por efectivo!";
 	}
 
 	protected override string _GetTemplateForLabelTradingRobuxCash()
 	{
-		return "¡Ya casi lo tienes! Estás a punto de poder cambiar tus Robux por efectivo.";
+		return "Â¡Ya casi lo tienes! EstÃ¡s a punto de poder cambiar tus Robux por efectivo.";
 	}
 
 	protected override string _GetTemplateForLabelVerifiedEmailForCashout()
 	{
-		return "Debes verificar tu correo electrónico antes de convertir en efectivo.";
+		return "Debes verificar tu correo electrÃ³nico antes de convertir en efectivo.";
 	}
+}
+
+
 }

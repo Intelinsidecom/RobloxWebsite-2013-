@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class LoginResourceFactory
 
-internal static class LoginResourceFactory
 {
 	public const string FullNamespace = "Authentication.Login";
 
@@ -27,4 +27,7 @@ internal static class LoginResourceFactory
 			_ => new LoginResources_en_us(state), 
 		};
 	}
+}
+
+
 }

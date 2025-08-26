@@ -1,10 +1,9 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountLocalesAuditCompositeEntryFactory : IAccountLocalesAuditCompositeEntryFactory
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountLocalesAuditCompositeEntryFactory : IAccountLocalesAuditCompositeEntryFactory
 {
 	private readonly IAccountLocalesChangeAgentTypeEntityFactory _ChangeAgentTypeEntityFactory;
 
@@ -43,4 +42,7 @@ internal class AccountLocalesAuditCompositeEntryFactory : IAccountLocalesAuditCo
 		accountLocalesAuditCompositeEntry.MetadataType = metadataTypeEnum;
 		return accountLocalesAuditCompositeEntry;
 	}
+}
+
+
 }

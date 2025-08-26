@@ -1,6 +1,6 @@
-namespace Roblox.AuthenticationV2;
+﻿namespace Roblox.Platform.AuthenticationV2 {
+    /// <summary>
 
-/// <summary>
 /// AuthenticationV2 flow occurrences to track
 /// </summary>
 public enum Instance
@@ -41,4 +41,7 @@ public enum Instance
 	/// The session provided in the <see cref="T:Roblox.Web.Authentication.RobloxAuthenticationCookie" /> has an invalid IPAddress
 	/// </summary>
 	BadIpAddress
+}
+
+
 }

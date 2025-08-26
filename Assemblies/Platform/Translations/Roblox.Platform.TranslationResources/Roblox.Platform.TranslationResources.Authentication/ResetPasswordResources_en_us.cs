@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class ResetPasswordResources_en_us : TranslationResourcesBase, IResetPasswordResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class ResetPasswordResources_en_us : TranslationResourcesBase, IResetPasswordResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1194,4 +1193,7 @@ internal class ResetPasswordResources_en_us : TranslationResourcesBase, IResetPa
 	{
 		return "Your new password and confirm password must match";
 	}
+}
+
+
 }

@@ -3,9 +3,8 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Roblox.Serialization.Json;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 public class UserData
@@ -44,4 +43,6 @@ public class UserData
 	[DataMember(Name = "updated")]
 	[JsonConverter(typeof(KindAwareDateTimeConverter))]
 	public DateTime Updated { get; set; }
+}
+
 }

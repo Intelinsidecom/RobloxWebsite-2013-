@@ -1,10 +1,12 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models;
-
-[DataContract]
 public class AttemptMembershipMigrationRequest
 {
 	[DataMember(Name = "userId", EmitDefaultValue = false, IsRequired = false)]
 	public long UserId;
+}
+
+
 }

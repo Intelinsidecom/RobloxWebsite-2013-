@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.ContentRatings.Properties;
 using Roblox.Data;
+namespace Roblox.Platform.ContentRatingspublic {
+    class ContentRatingTypeDAL
 
-namespace Roblox.ContentRatings;
-
-public class ContentRatingTypeDAL
 {
 	private byte _ID;
 
@@ -96,4 +95,7 @@ public class ContentRatingTypeDAL
 		queryParameters.Add(new SqlParameter("@Value", value));
 		return EntityHelper.GetEntityDAL(new DbInfo(dbConnectionString_ContentRatingTypeDAL, "ContentRatingTypes_GetContentRatingTypeByValue", queryParameters), BuildDAL);
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,109 +10,109 @@ internal class MessagesResources_zh_cn : MessagesResources_en_us, IMessagesResou
 	/// Key: "Action.Archive"
 	/// English String: "Archive"
 	/// </summary>
-	public override string ActionArchive => "归档";
+	public override string ActionArchive => "å½’æ¡£";
 
 	/// <summary>
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "返回";
+	public override string ActionBack => "è¿”å›ž";
 
 	/// <summary>
 	/// Key: "Action.Discard"
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "放弃";
+	public override string ActionDiscard => "æ”¾å¼ƒ";
 
 	/// <summary>
 	/// Key: "Action.MarkAsRead"
 	/// English String: "Mark As Read"
 	/// </summary>
-	public override string ActionMarkAsRead => "标记为已读";
+	public override string ActionMarkAsRead => "æ ‡è®°ä¸ºå·²è¯»";
 
 	/// <summary>
 	/// Key: "Action.MarkAsUnread"
 	/// English String: "Mark As Unread"
 	/// </summary>
-	public override string ActionMarkAsUnread => "标记为未读";
+	public override string ActionMarkAsUnread => "æ ‡è®°ä¸ºæœªè¯»";
 
 	/// <summary>
 	/// Key: "Action.MoveToInbox"
 	/// English String: "Move To Inbox"
 	/// </summary>
-	public override string ActionMoveToInbox => "移至收件箱";
+	public override string ActionMoveToInbox => "ç§»è‡³æ”¶ä»¶ç®±";
 
 	/// <summary>
 	/// Key: "Action.Reply"
 	/// English String: "Reply"
 	/// </summary>
-	public override string ActionReply => "回复";
+	public override string ActionReply => "å›žå¤";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "报告滥用行为";
+	public override string ActionReportAbuse => "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
 
 	/// <summary>
 	/// Key: "Action.Send"
 	/// English String: "Send"
 	/// </summary>
-	public override string ActionSend => "发送";
+	public override string ActionSend => "å‘é€";
 
 	/// <summary>
 	/// Key: "Action.SendReply"
 	/// English String: "Send Reply"
 	/// </summary>
-	public override string ActionSendReply => "发送回复";
+	public override string ActionSendReply => "å‘é€å›žå¤";
 
 	/// <summary>
 	/// Key: "Heading.Message"
 	/// English String: "Messages"
 	/// </summary>
-	public override string HeadingMessage => "信息";
+	public override string HeadingMessage => "ä¿¡æ¯";
 
 	/// <summary>
 	/// Key: "Heading.NewMessages"
 	/// English String: "New Message"
 	/// </summary>
-	public override string HeadingNewMessages => "新信息";
+	public override string HeadingNewMessages => "æ–°ä¿¡æ¯";
 
 	/// <summary>
 	/// Key: "Heading.Response"
 	/// English String: "Responses:"
 	/// </summary>
-	public override string HeadingResponse => "回复：";
+	public override string HeadingResponse => "å›žå¤ï¼š";
 
 	/// <summary>
 	/// Key: "Label.All"
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "所有";
+	public override string LabelAll => "æ‰€æœ‰";
 
 	/// <summary>
 	/// Key: "Label.Archive"
 	/// English String: "Archive"
 	/// </summary>
-	public override string LabelArchive => "归档";
+	public override string LabelArchive => "å½’æ¡£";
 
 	/// <summary>
 	/// Key: "Label.Inbox"
 	/// English String: "Inbox"
 	/// </summary>
-	public override string LabelInbox => "收件箱";
+	public override string LabelInbox => "æ”¶ä»¶ç®±";
 
 	/// <summary>
 	/// Key: "Label.IncludeMessage"
 	/// English String: "Include Previous Message"
 	/// </summary>
-	public override string LabelIncludeMessage => "包含前一条信息";
+	public override string LabelIncludeMessage => "åŒ…å«å‰ä¸€æ¡ä¿¡æ¯";
 
 	/// <summary>
 	/// Key: "Label.News"
 	/// English String: "News"
 	/// </summary>
-	public override string LabelNews => "新闻";
+	public override string LabelNews => "æ–°é—»";
 
 	/// <summary>
 	/// Key: "Label.Of"
@@ -124,128 +124,128 @@ internal class MessagesResources_zh_cn : MessagesResources_en_us, IMessagesResou
 	/// Key: "Label.Select"
 	/// English String: "Select..."
 	/// </summary>
-	public override string LabelSelect => "选择...";
+	public override string LabelSelect => "é€‰æ‹©...";
 
 	/// <summary>
 	/// Key: "Label.Sent"
 	/// English String: "Sent"
 	/// </summary>
-	public override string LabelSent => "已发送";
+	public override string LabelSent => "å·²å‘é€";
 
 	/// <summary>
 	/// Key: "Label.Subject"
 	/// English String: "Subject:"
 	/// </summary>
-	public override string LabelSubject => "主题：";
+	public override string LabelSubject => "ä¸»é¢˜ï¼š";
 
 	/// <summary>
 	/// Key: "Label.To"
 	/// English String: "To:"
 	/// </summary>
-	public override string LabelTo => "收件人：";
+	public override string LabelTo => "æ”¶ä»¶äººï¼š";
 
 	/// <summary>
 	/// Key: "Message.BodyCantBlank"
 	/// English String: "The message body can't be blank."
 	/// </summary>
-	public override string MessageBodyCantBlank => "信息正文不能为空。";
+	public override string MessageBodyCantBlank => "ä¿¡æ¯æ­£æ–‡ä¸èƒ½ä¸ºç©ºã€‚";
 
 	/// <summary>
 	/// Key: "Message.GeneralError"
 	/// English String: "Sorry, an error occurred sending your message."
 	/// </summary>
-	public override string MessageGeneralError => "抱歉，发送信息时发生错误。";
+	public override string MessageGeneralError => "æŠ±æ­‰ï¼Œå‘é€ä¿¡æ¯æ—¶å‘ç”Ÿé”™è¯¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.IdTheftWarning"
 	/// English String: "Remember, Roblox staff will never ask you for your password. People who ask for your password are trying to steal your account."
 	/// </summary>
-	public override string MessageIdTheftWarning => "请记住，Roblox 员工绝对不会向你索取密码。如果有人这样做，那么他们是在企图盗取你的帐户。";
+	public override string MessageIdTheftWarning => "è¯·è®°ä½ï¼ŒRoblox å‘˜å·¥ç»å¯¹ä¸ä¼šå‘ä½ ç´¢å–å¯†ç ã€‚å¦‚æžœæœ‰äººè¿™æ ·åšï¼Œé‚£ä¹ˆä»–ä»¬æ˜¯åœ¨ä¼å›¾ç›—å–ä½ çš„å¸æˆ·ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NoMessageExist"
 	/// English String: "Message doesn't exist"
 	/// </summary>
-	public override string MessageNoMessageExist => "信息不存在";
+	public override string MessageNoMessageExist => "ä¿¡æ¯ä¸å­˜åœ¨";
 
 	/// <summary>
 	/// Key: "Message.NoNews"
 	/// English String: "You have no news."
 	/// </summary>
-	public override string MessageNoNews => "你没有新闻。";
+	public override string MessageNoNews => "ä½ æ²¡æœ‰æ–°é—»ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NoRecipient"
 	/// English String: "Recipient doesn't exist!"
 	/// </summary>
-	public override string MessageNoRecipient => "收件人不存在！";
+	public override string MessageNoRecipient => "æ”¶ä»¶äººä¸å­˜åœ¨ï¼";
 
 	/// <summary>
 	/// Key: "Message.NotAuthorizeToManipulate"
 	/// English String: "Not authorized to manipulate message"
 	/// </summary>
-	public override string MessageNotAuthorizeToManipulate => "无操控信息的权限";
+	public override string MessageNotAuthorizeToManipulate => "æ— æ“æŽ§ä¿¡æ¯çš„æƒé™";
 
 	/// <summary>
 	/// Key: "Message.NotSendAndModerated"
 	/// English String: "Your message was not sent because it was moderated."
 	/// </summary>
-	public override string MessageNotSendAndModerated => "你的信息已被过滤，未能发送。";
+	public override string MessageNotSendAndModerated => "ä½ çš„ä¿¡æ¯å·²è¢«è¿‡æ»¤ï¼Œæœªèƒ½å‘é€ã€‚";
 
 	/// <summary>
 	/// Key: "Message.RecipientPrivacySettingsTooHigh"
 	/// English String: "The recipient's privacy settings prevent you from sending this message."
 	/// </summary>
-	public override string MessageRecipientPrivacySettingsTooHigh => "收件人的隐私设置阻止你发送此信息。";
+	public override string MessageRecipientPrivacySettingsTooHigh => "æ”¶ä»¶äººçš„éšç§è®¾ç½®é˜»æ­¢ä½ å‘é€æ­¤ä¿¡æ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ReplyHere"
 	/// English String: "Reply here..."
 	/// </summary>
-	public override string MessageReplyHere => "在此回复...";
+	public override string MessageReplyHere => "åœ¨æ­¤å›žå¤...";
 
 	/// <summary>
 	/// Key: "Message.RobloxWarning"
 	/// English String: "Remember, Roblox staff will never ask you for your password. People who ask for your password are trying to steal your account."
 	/// </summary>
-	public override string MessageRobloxWarning => "请记住，Roblox 员工绝对不会向你索取密码。如果有人这样做，那么他们是在企图盗取你的帐户。";
+	public override string MessageRobloxWarning => "è¯·è®°ä½ï¼ŒRoblox å‘˜å·¥ç»å¯¹ä¸ä¼šå‘ä½ ç´¢å–å¯†ç ã€‚å¦‚æžœæœ‰äººè¿™æ ·åšï¼Œé‚£ä¹ˆä»–ä»¬æ˜¯åœ¨ä¼å›¾ç›—å–ä½ çš„å¸æˆ·ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SendSuccessfully"
 	/// English String: "Successfully sent message."
 	/// </summary>
-	public override string MessageSendSuccessfully => "信息已成功发送。";
+	public override string MessageSendSuccessfully => "ä¿¡æ¯å·²æˆåŠŸå‘é€ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SendTooManyMessages"
 	/// English String: "You're sending too many messages too quickly."
 	/// </summary>
-	public override string MessageSendTooManyMessages => "你短时间内发送了过多信息。";
+	public override string MessageSendTooManyMessages => "ä½ çŸ­æ—¶é—´å†…å‘é€äº†è¿‡å¤šä¿¡æ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SubjectCantBlank"
 	/// English String: "The message subject can't be blank."
 	/// </summary>
-	public override string MessageSubjectCantBlank => "信息主题不能为空。";
+	public override string MessageSubjectCantBlank => "ä¿¡æ¯ä¸»é¢˜ä¸èƒ½ä¸ºç©ºã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// English String: "Unknown error"
 	/// </summary>
-	public override string MessageUnknownError => "未知错误";
+	public override string MessageUnknownError => "æœªçŸ¥é”™è¯¯";
 
 	/// <summary>
 	/// Key: "Message.UnknownMessageType"
 	/// This serves as the fallback string for when an message type is received that the web chat does not know how to render.
 	/// English String: "A message cannot be displayed"
 	/// </summary>
-	public override string MessageUnknownMessageType => "信息无法显示";
+	public override string MessageUnknownMessageType => "ä¿¡æ¯æ— æ³•æ˜¾ç¤º";
 
 	/// <summary>
 	/// Key: "Message.WriteYourMessage"
 	/// English String: "Write your message..."
 	/// </summary>
-	public override string MessageWriteYourMessage => "编写你的信息...";
+	public override string MessageWriteYourMessage => "ç¼–å†™ä½ çš„ä¿¡æ¯...";
 
 	public MessagesResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -254,92 +254,92 @@ internal class MessagesResources_zh_cn : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionArchive()
 	{
-		return "归档";
+		return "å½’æ¡£";
 	}
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "返回";
+		return "è¿”å›ž";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "放弃";
+		return "æ”¾å¼ƒ";
 	}
 
 	protected override string _GetTemplateForActionMarkAsRead()
 	{
-		return "标记为已读";
+		return "æ ‡è®°ä¸ºå·²è¯»";
 	}
 
 	protected override string _GetTemplateForActionMarkAsUnread()
 	{
-		return "标记为未读";
+		return "æ ‡è®°ä¸ºæœªè¯»";
 	}
 
 	protected override string _GetTemplateForActionMoveToInbox()
 	{
-		return "移至收件箱";
+		return "ç§»è‡³æ”¶ä»¶ç®±";
 	}
 
 	protected override string _GetTemplateForActionReply()
 	{
-		return "回复";
+		return "å›žå¤";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "报告滥用行为";
+		return "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
 	}
 
 	protected override string _GetTemplateForActionSend()
 	{
-		return "发送";
+		return "å‘é€";
 	}
 
 	protected override string _GetTemplateForActionSendReply()
 	{
-		return "发送回复";
+		return "å‘é€å›žå¤";
 	}
 
 	protected override string _GetTemplateForHeadingMessage()
 	{
-		return "信息";
+		return "ä¿¡æ¯";
 	}
 
 	protected override string _GetTemplateForHeadingNewMessages()
 	{
-		return "新信息";
+		return "æ–°ä¿¡æ¯";
 	}
 
 	protected override string _GetTemplateForHeadingResponse()
 	{
-		return "回复：";
+		return "å›žå¤ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "所有";
+		return "æ‰€æœ‰";
 	}
 
 	protected override string _GetTemplateForLabelArchive()
 	{
-		return "归档";
+		return "å½’æ¡£";
 	}
 
 	protected override string _GetTemplateForLabelInbox()
 	{
-		return "收件箱";
+		return "æ”¶ä»¶ç®±";
 	}
 
 	protected override string _GetTemplateForLabelIncludeMessage()
 	{
-		return "包含前一条信息";
+		return "åŒ…å«å‰ä¸€æ¡ä¿¡æ¯";
 	}
 
 	protected override string _GetTemplateForLabelNews()
 	{
-		return "新闻";
+		return "æ–°é—»";
 	}
 
 	/// <summary>
@@ -348,12 +348,12 @@ internal class MessagesResources_zh_cn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string LabelNoMessagesInCategory(string activeTab)
 	{
-		return $"你没有{activeTab}信息。";
+		return $"ä½ æ²¡æœ‰{activeTab}ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoMessagesInCategory()
 	{
-		return "你没有{activeTab}信息。";
+		return "ä½ æ²¡æœ‰{activeTab}ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelOf()
@@ -363,27 +363,27 @@ internal class MessagesResources_zh_cn : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForLabelSelect()
 	{
-		return "选择...";
+		return "é€‰æ‹©...";
 	}
 
 	protected override string _GetTemplateForLabelSent()
 	{
-		return "已发送";
+		return "å·²å‘é€";
 	}
 
 	protected override string _GetTemplateForLabelSubject()
 	{
-		return "主题：";
+		return "ä¸»é¢˜ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelTo()
 	{
-		return "收件人：";
+		return "æ”¶ä»¶äººï¼š";
 	}
 
 	protected override string _GetTemplateForMessageBodyCantBlank()
 	{
-		return "信息正文不能为空。";
+		return "ä¿¡æ¯æ­£æ–‡ä¸èƒ½ä¸ºç©ºã€‚";
 	}
 
 	/// <summary>
@@ -392,62 +392,62 @@ internal class MessagesResources_zh_cn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageBodyTooLong(string maxLength)
 	{
-		return $"请将你的信息缩短至 {maxLength} 个字符或以内，并重试。";
+		return $"è¯·å°†ä½ çš„ä¿¡æ¯ç¼©çŸ­è‡³ {maxLength} ä¸ªå­—ç¬¦æˆ–ä»¥å†…ï¼Œå¹¶é‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageBodyTooLong()
 	{
-		return "请将你的信息缩短至 {maxLength} 个字符或以内，并重试。";
+		return "è¯·å°†ä½ çš„ä¿¡æ¯ç¼©çŸ­è‡³ {maxLength} ä¸ªå­—ç¬¦æˆ–ä»¥å†…ï¼Œå¹¶é‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGeneralError()
 	{
-		return "抱歉，发送信息时发生错误。";
+		return "æŠ±æ­‰ï¼Œå‘é€ä¿¡æ¯æ—¶å‘ç”Ÿé”™è¯¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageIdTheftWarning()
 	{
-		return "请记住，Roblox 员工绝对不会向你索取密码。如果有人这样做，那么他们是在企图盗取你的帐户。";
+		return "è¯·è®°ä½ï¼ŒRoblox å‘˜å·¥ç»å¯¹ä¸ä¼šå‘ä½ ç´¢å–å¯†ç ã€‚å¦‚æžœæœ‰äººè¿™æ ·åšï¼Œé‚£ä¹ˆä»–ä»¬æ˜¯åœ¨ä¼å›¾ç›—å–ä½ çš„å¸æˆ·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNoMessageExist()
 	{
-		return "信息不存在";
+		return "ä¿¡æ¯ä¸å­˜åœ¨";
 	}
 
 	protected override string _GetTemplateForMessageNoNews()
 	{
-		return "你没有新闻。";
+		return "ä½ æ²¡æœ‰æ–°é—»ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNoRecipient()
 	{
-		return "收件人不存在！";
+		return "æ”¶ä»¶äººä¸å­˜åœ¨ï¼";
 	}
 
 	protected override string _GetTemplateForMessageNotAuthorizeToManipulate()
 	{
-		return "无操控信息的权限";
+		return "æ— æ“æŽ§ä¿¡æ¯çš„æƒé™";
 	}
 
 	protected override string _GetTemplateForMessageNotSendAndModerated()
 	{
-		return "你的信息已被过滤，未能发送。";
+		return "ä½ çš„ä¿¡æ¯å·²è¢«è¿‡æ»¤ï¼Œæœªèƒ½å‘é€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageRecipientPrivacySettingsTooHigh()
 	{
-		return "收件人的隐私设置阻止你发送此信息。";
+		return "æ”¶ä»¶äººçš„éšç§è®¾ç½®é˜»æ­¢ä½ å‘é€æ­¤ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageReplyHere()
 	{
-		return "在此回复...";
+		return "åœ¨æ­¤å›žå¤...";
 	}
 
 	protected override string _GetTemplateForMessageRobloxWarning()
 	{
-		return "请记住，Roblox 员工绝对不会向你索取密码。如果有人这样做，那么他们是在企图盗取你的帐户。";
+		return "è¯·è®°ä½ï¼ŒRoblox å‘˜å·¥ç»å¯¹ä¸ä¼šå‘ä½ ç´¢å–å¯†ç ã€‚å¦‚æžœæœ‰äººè¿™æ ·åšï¼Œé‚£ä¹ˆä»–ä»¬æ˜¯åœ¨ä¼å›¾ç›—å–ä½ çš„å¸æˆ·ã€‚";
 	}
 
 	/// <summary>
@@ -456,37 +456,37 @@ internal class MessagesResources_zh_cn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageSenderPrivacySettingTooHeight(string frontLink, string endLink)
 	{
-		return $"你的{frontLink}隐私设置{endLink}阻止你发送此信息。";
+		return $"ä½ çš„{frontLink}éšç§è®¾ç½®{endLink}é˜»æ­¢ä½ å‘é€æ­¤ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSenderPrivacySettingTooHeight()
 	{
-		return "你的{frontLink}隐私设置{endLink}阻止你发送此信息。";
+		return "ä½ çš„{frontLink}éšç§è®¾ç½®{endLink}é˜»æ­¢ä½ å‘é€æ­¤ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSendSuccessfully()
 	{
-		return "信息已成功发送。";
+		return "ä¿¡æ¯å·²æˆåŠŸå‘é€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSendTooManyMessages()
 	{
-		return "你短时间内发送了过多信息。";
+		return "ä½ çŸ­æ—¶é—´å†…å‘é€äº†è¿‡å¤šä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSubjectCantBlank()
 	{
-		return "信息主题不能为空。";
+		return "ä¿¡æ¯ä¸»é¢˜ä¸èƒ½ä¸ºç©ºã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "未知错误";
+		return "æœªçŸ¥é”™è¯¯";
 	}
 
 	protected override string _GetTemplateForMessageUnknownMessageType()
 	{
-		return "信息无法显示";
+		return "ä¿¡æ¯æ— æ³•æ˜¾ç¤º";
 	}
 
 	/// <summary>
@@ -495,16 +495,19 @@ internal class MessagesResources_zh_cn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageVerifySenderEmail(string frontLink, string endLink)
 	{
-		return $"你必须先在{frontLink}帐户设置{endLink}页面验证电子邮件，然后才能发送信息。";
+		return $"ä½ å¿…é¡»å…ˆåœ¨{frontLink}å¸æˆ·è®¾ç½®{endLink}é¡µé¢éªŒè¯ç”µå­é‚®ä»¶ï¼Œç„¶åŽæ‰èƒ½å‘é€ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageVerifySenderEmail()
 	{
-		return "你必须先在{frontLink}帐户设置{endLink}页面验证电子邮件，然后才能发送信息。";
+		return "ä½ å¿…é¡»å…ˆåœ¨{frontLink}å¸æˆ·è®¾ç½®{endLink}é¡µé¢éªŒè¯ç”µå­é‚®ä»¶ï¼Œç„¶åŽæ‰èƒ½å‘é€ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageWriteYourMessage()
 	{
-		return "编写你的信息...";
+		return "ç¼–å†™ä½ çš„ä¿¡æ¯...";
 	}
+}
+
+
 }

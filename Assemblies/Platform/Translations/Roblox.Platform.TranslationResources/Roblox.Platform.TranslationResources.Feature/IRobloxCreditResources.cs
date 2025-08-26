@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IRobloxCreditResources : ITranslationResources
 
-public interface IRobloxCreditResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.ConvertToRobux"
@@ -34,7 +34,7 @@ public interface IRobloxCreditResources : ITranslationResources
 
 	/// <summary>
 	/// Key: "Message.FailedGrantingRobux"
-	/// English String: "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
+	/// English String: "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
 	/// </summary>
 	string MessageFailedGrantingRobux { get; }
 
@@ -63,4 +63,7 @@ public interface IRobloxCreditResources : ITranslationResources
 	/// English String: "You've successfully redeemed {robuxAmount} Robux!"
 	/// </summary>
 	string MessageRobloxCreditToRobuxRedemptionConfirmation(string robuxAmount);
+}
+
+
 }

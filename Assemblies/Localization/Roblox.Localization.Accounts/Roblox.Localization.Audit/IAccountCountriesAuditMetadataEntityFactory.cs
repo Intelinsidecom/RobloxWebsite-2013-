@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.Platform.Localization.Accounts;
+namespace Roblox.Localization.Auditinternal {
+    interface IAccountCountriesAuditMetadataEntityFactory
 
-namespace Roblox.Platform.Localization.Audit;
-
-internal interface IAccountCountriesAuditMetadataEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntity" /> by its ID.
@@ -32,4 +31,7 @@ internal interface IAccountCountriesAuditMetadataEntityFactory
 	/// <param name="changeAgentTargetId">The change agent type target Id.</param>
 	/// <returns>A new <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataEntity" />.</returns>
 	IAccountCountriesAuditMetadataEntity Create(IAccountCountriesAuditEntryEntity auditEntryEntity, AccountCountriesAuditEntryMetadataType metadataType, AccountCountriesChangeAgentType changeAgentType, long? changeAgentTargetId);
+}
+
+
 }

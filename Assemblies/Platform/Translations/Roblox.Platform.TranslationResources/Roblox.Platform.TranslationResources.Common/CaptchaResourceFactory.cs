@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class CaptchaResourceFactory
 
-internal static class CaptchaResourceFactory
 {
 	public const string FullNamespace = "Common.Captcha";
 
@@ -21,4 +21,7 @@ internal static class CaptchaResourceFactory
 			_ => new CaptchaResources_en_us(state), 
 		};
 	}
+}
+
+
 }

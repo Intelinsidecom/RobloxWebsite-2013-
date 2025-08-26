@@ -1,4 +1,6 @@
-extern alias ConfMan;
+﻿namespace extern {
+    alias ConfMan;
+
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -66,3 +68,4 @@ internal sealed class Settings : ApplicationSettingsBase
 		_Properties.TryRemove(propertyChangeEvent.PropertyName, out var _);
 	}
 }
+

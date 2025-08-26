@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Roblox.Collections;
 using Roblox.EventLog;
+namespace Roblox.Platform.EphemeralCounterspublic {
+    abstract class BufferedEphemeralCounterBase : BufferedCounterBase<string>
 
-namespace Roblox.EphemeralCounters;
-
-public abstract class BufferedEphemeralCounterBase : BufferedCounterBase<string>
 {
 	private readonly ILogger _Logger;
 
@@ -39,4 +38,7 @@ public abstract class BufferedEphemeralCounterBase : BufferedCounterBase<string>
 			_Logger.Error(ex);
 		}
 	}
+}
+
+
 }

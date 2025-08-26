@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// Interface represents a factory object that is responsible for creating and 
 /// retrieving <see cref="T:Roblox.Platform.Moderation.IModerationLocale" />.
 /// </summary>
@@ -28,4 +27,7 @@ public interface IModerationLocaleFactory
 	/// </summary>
 	/// <param name="locale">The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale" /> we want the moderation equivalent of</param>
 	IModerationLocale GetOrCreate(ISupportedLocale locale);
+}
+
+
 }

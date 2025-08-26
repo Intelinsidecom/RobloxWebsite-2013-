@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SecurityNotificationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class SecurityNotificationResources_ko_kr : SecurityNotificationResourc
 	/// Key: "Heading.Important"
 	/// English String: "Important"
 	/// </summary>
-	public override string HeadingImportant => "중요";
+	public override string HeadingImportant => "ì¤‘ìš”";
 
 	public SecurityNotificationResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -23,12 +23,12 @@ internal class SecurityNotificationResources_ko_kr : SecurityNotificationResourc
 	/// </summary>
 	public override string DescriptionSecurityNotificationText(string aTagStartWithHref, string emailMailToLink, string hrefEnd, string emailText, string aTagEnd)
 	{
-		return $"회원님 계정의 안전과 보안을 위해 비밀번호가 재설정되었습니다. 계정에 다시 접근하려면 이 페이지에 이메일 또는 전화번호를 입력하고 제출 버튼을 클릭하세요. 계정과 연결된 이메일 또는 전화번호가 없는 경우, Roblox 지원 센터{aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}에 문의하세요.";
+		return $"íšŒì›ë‹˜ ê³„ì •ì˜ ì•ˆì „ê³¼ ë³´ì•ˆì„ ìœ„í•´ ë¹„ë°€ë²ˆí˜¸ê°€ ìž¬ì„¤ì •ë˜ì—ˆìŠµë‹ˆë‹¤. ê³„ì •ì— ë‹¤ì‹œ ì ‘ê·¼í•˜ë ¤ë©´ ì´ íŽ˜ì´ì§€ì— ì´ë©”ì¼ ë˜ëŠ” ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ê³  ì œì¶œ ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”. ê³„ì •ê³¼ ì—°ê²°ëœ ì´ë©”ì¼ ë˜ëŠ” ì „í™”ë²ˆí˜¸ê°€ ì—†ëŠ” ê²½ìš°, Roblox ì§€ì› ì„¼í„°{aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}ì— ë¬¸ì˜í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionSecurityNotificationText()
 	{
-		return "회원님 계정의 안전과 보안을 위해 비밀번호가 재설정되었습니다. 계정에 다시 접근하려면 이 페이지에 이메일 또는 전화번호를 입력하고 제출 버튼을 클릭하세요. 계정과 연결된 이메일 또는 전화번호가 없는 경우, Roblox 지원 센터{aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}에 문의하세요.";
+		return "íšŒì›ë‹˜ ê³„ì •ì˜ ì•ˆì „ê³¼ ë³´ì•ˆì„ ìœ„í•´ ë¹„ë°€ë²ˆí˜¸ê°€ ìž¬ì„¤ì •ë˜ì—ˆìŠµë‹ˆë‹¤. ê³„ì •ì— ë‹¤ì‹œ ì ‘ê·¼í•˜ë ¤ë©´ ì´ íŽ˜ì´ì§€ì— ì´ë©”ì¼ ë˜ëŠ” ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ê³  ì œì¶œ ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”. ê³„ì •ê³¼ ì—°ê²°ëœ ì´ë©”ì¼ ë˜ëŠ” ì „í™”ë²ˆí˜¸ê°€ ì—†ëŠ” ê²½ìš°, Roblox ì§€ì› ì„¼í„°{aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}ì— ë¬¸ì˜í•˜ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -37,16 +37,19 @@ internal class SecurityNotificationResources_ko_kr : SecurityNotificationResourc
 	/// </summary>
 	public override string DescriptionSecurityNotificationTextWarning(string startSpan, string endSpan)
 	{
-		return $"Roblox에서만 사용하는 {startSpan}새롭고{endSpan} {startSpan}독특한{endSpan} 비밀번호를 만들고, 다른 사이트에서는 이 비밀번호를 사용하지 마세요. 회원님의 Roblox 계정을 보호할 수 있는 가장 좋은 방법입니다.";
+		return $"Robloxì—ì„œë§Œ ì‚¬ìš©í•˜ëŠ” {startSpan}ìƒˆë¡­ê³ {endSpan} {startSpan}ë…íŠ¹í•œ{endSpan} ë¹„ë°€ë²ˆí˜¸ë¥¼ ë§Œë“¤ê³ , ë‹¤ë¥¸ ì‚¬ì´íŠ¸ì—ì„œëŠ” ì´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”. íšŒì›ë‹˜ì˜ Roblox ê³„ì •ì„ ë³´í˜¸í•  ìˆ˜ ìžˆëŠ” ê°€ìž¥ ì¢‹ì€ ë°©ë²•ìž…ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionSecurityNotificationTextWarning()
 	{
-		return "Roblox에서만 사용하는 {startSpan}새롭고{endSpan} {startSpan}독특한{endSpan} 비밀번호를 만들고, 다른 사이트에서는 이 비밀번호를 사용하지 마세요. 회원님의 Roblox 계정을 보호할 수 있는 가장 좋은 방법입니다.";
+		return "Robloxì—ì„œë§Œ ì‚¬ìš©í•˜ëŠ” {startSpan}ìƒˆë¡­ê³ {endSpan} {startSpan}ë…íŠ¹í•œ{endSpan} ë¹„ë°€ë²ˆí˜¸ë¥¼ ë§Œë“¤ê³ , ë‹¤ë¥¸ ì‚¬ì´íŠ¸ì—ì„œëŠ” ì´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”. íšŒì›ë‹˜ì˜ Roblox ê³„ì •ì„ ë³´í˜¸í•  ìˆ˜ ìžˆëŠ” ê°€ìž¥ ì¢‹ì€ ë°©ë²•ìž…ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForHeadingImportant()
 	{
-		return "중요";
+		return "ì¤‘ìš”";
 	}
+}
+
+
 }

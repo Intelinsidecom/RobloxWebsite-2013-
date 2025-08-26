@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// An interface representing a request to validate text submitted for a username against the <see cref="T:Roblox.TextFilter.IUsernameFilter" />
 /// </summary>
 public interface IUsernameValidationRequest
@@ -14,4 +14,7 @@ public interface IUsernameValidationRequest
 	/// Whether the request is for a user under age of 13
 	/// </summary>
 	bool IsUnder13 { get; set; }
+}
+
+
 }

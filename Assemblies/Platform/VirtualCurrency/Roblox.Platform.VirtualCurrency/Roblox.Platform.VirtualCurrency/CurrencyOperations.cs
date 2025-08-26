@@ -1,6 +1,6 @@
 using System;
 using Roblox.ApiClientBase;
-using Roblox.Currency.Client;
+using Roblox.Platform.Currency.Client;
 using Roblox.Platform.VirtualCurrency.Properties;
 using Roblox.Sentinels;
 

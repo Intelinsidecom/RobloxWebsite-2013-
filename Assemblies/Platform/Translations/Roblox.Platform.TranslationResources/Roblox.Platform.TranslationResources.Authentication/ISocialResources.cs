@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface ISocialResources : ITranslationResources
 
-public interface ISocialResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -49,4 +49,7 @@ public interface ISocialResources : ITranslationResources
 	/// English String: "Unlink {provider}"
 	/// </summary>
 	string HeadingUnlink(string provider);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,510 +10,510 @@ internal class ProfileResources_zh_tw : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "接受";
+	public override string ActionAccept => "æŽ¥å—";
 
 	/// <summary>
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "新增好友";
+	public override string ActionAddFriend => "æ–°å¢žå¥½å‹";
 
 	/// <summary>
 	/// Key: "Action.BlockUser"
 	/// English String: "Block User"
 	/// </summary>
-	public override string ActionBlockUser => "封鎖使用者";
+	public override string ActionBlockUser => "å°éŽ–ä½¿ç”¨è€…";
 
 	/// <summary>
 	/// Key: "Action.CancelBlockUser"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancelBlockUser => "取消";
+	public override string ActionCancelBlockUser => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string ActionChat => "聊天";
+	public override string ActionChat => "èŠå¤©";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// close modal
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "關閉";
+	public override string ActionClose => "é—œé–‰";
 
 	/// <summary>
 	/// Key: "Action.ConfirmBlockUser"
 	/// English String: "Block"
 	/// </summary>
-	public override string ActionConfirmBlockUser => "封鎖";
+	public override string ActionConfirmBlockUser => "å°éŽ–";
 
 	/// <summary>
 	/// Key: "Action.ConfirmUnblockUser"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string ActionConfirmUnblockUser => "解除封鎖";
+	public override string ActionConfirmUnblockUser => "è§£é™¤å°éŽ–";
 
 	/// <summary>
 	/// Key: "Action.Favorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string ActionFavorites => "最愛";
+	public override string ActionFavorites => "æœ€æ„›";
 
 	/// <summary>
 	/// Key: "Action.Follow"
 	/// English String: "Follow"
 	/// </summary>
-	public override string ActionFollow => "追蹤";
+	public override string ActionFollow => "è¿½è¹¤";
 
 	/// <summary>
 	/// Key: "Action.GridView"
 	/// English String: "Grid View"
 	/// </summary>
-	public override string ActionGridView => "方格檢視";
+	public override string ActionGridView => "æ–¹æ ¼æª¢è¦–";
 
 	/// <summary>
 	/// Key: "Action.ImpersonateUser"
 	/// English String: "Impersonate User"
 	/// </summary>
-	public override string ActionImpersonateUser => "假冒使用者";
+	public override string ActionImpersonateUser => "å‡å†’ä½¿ç”¨è€…";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string ActionInventory => "道具欄";
+	public override string ActionInventory => "é“å…·æ¬„";
 
 	/// <summary>
 	/// Key: "Action.JoinGame"
 	/// English String: "Join Game"
 	/// </summary>
-	public override string ActionJoinGame => "加入遊戲";
+	public override string ActionJoinGame => "åŠ å…¥éŠæˆ²";
 
 	/// <summary>
 	/// Key: "Action.Message"
 	/// English String: "Message"
 	/// </summary>
-	public override string ActionMessage => "傳送訊息";
+	public override string ActionMessage => "å‚³é€è¨Šæ¯";
 
 	/// <summary>
 	/// Key: "Action.Pending"
 	/// English String: "Pending"
 	/// </summary>
-	public override string ActionPending => "待處理";
+	public override string ActionPending => "å¾…è™•ç†";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "儲存";
+	public override string ActionSave => "å„²å­˜";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "查看全部";
+	public override string ActionSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
 
 	/// <summary>
 	/// Key: "Action.SeeLess"
 	/// English String: "See Less"
 	/// </summary>
-	public override string ActionSeeLess => "看更少";
+	public override string ActionSeeLess => "çœ‹æ›´å°‘";
 
 	/// <summary>
 	/// Key: "Action.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string ActionSeeMore => "查看更多";
+	public override string ActionSeeMore => "æŸ¥çœ‹æ›´å¤š";
 
 	/// <summary>
 	/// Key: "Action.SlideshowView"
 	/// English String: "Slideshow View"
 	/// </summary>
-	public override string ActionSlideshowView => "投影片檢視";
+	public override string ActionSlideshowView => "æŠ•å½±ç‰‡æª¢è¦–";
 
 	/// <summary>
 	/// Key: "Action.Trade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string ActionTrade => "交易";
+	public override string ActionTrade => "äº¤æ˜“";
 
 	/// <summary>
 	/// Key: "Action.TradeItems"
 	/// English String: "Trade Items"
 	/// </summary>
-	public override string ActionTradeItems => "交換道具";
+	public override string ActionTradeItems => "äº¤æ›é“å…·";
 
 	/// <summary>
 	/// Key: "Action.UnblockUser"
 	/// English String: "Unblock User"
 	/// </summary>
-	public override string ActionUnblockUser => "解除封鎖使用者";
+	public override string ActionUnblockUser => "è§£é™¤å°éŽ–ä½¿ç”¨è€…";
 
 	/// <summary>
 	/// Key: "Action.Unfollow"
 	/// English String: "Unfollow"
 	/// </summary>
-	public override string ActionUnfollow => "取消追蹤";
+	public override string ActionUnfollow => "å–æ¶ˆè¿½è¹¤";
 
 	/// <summary>
 	/// Key: "Action.Unfriend"
 	/// English String: "Unfriend"
 	/// </summary>
-	public override string ActionUnfriend => "刪除好友";
+	public override string ActionUnfriend => "åˆªé™¤å¥½å‹";
 
 	/// <summary>
 	/// Key: "Action.UpdateStatus"
 	/// English String: "Update Status"
 	/// </summary>
-	public override string ActionUpdateStatus => "更新狀態";
+	public override string ActionUpdateStatus => "æ›´æ–°ç‹€æ…‹";
 
 	/// <summary>
 	/// Key: "Description.BlockUserFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string DescriptionBlockUserFooter => "當您封鎖一位使用者時，你們將無法直接聯絡彼此。";
+	public override string DescriptionBlockUserFooter => "ç•¶æ‚¨å°éŽ–ä¸€ä½ä½¿ç”¨è€…æ™‚ï¼Œä½ å€‘å°‡ç„¡æ³•ç›´æŽ¥è¯çµ¡å½¼æ­¤ã€‚";
 
 	/// <summary>
 	/// Key: "Description.BlockUserPrompt"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string DescriptionBlockUserPrompt => "確定封鎖此使用者？";
+	public override string DescriptionBlockUserPrompt => "ç¢ºå®šå°éŽ–æ­¤ä½¿ç”¨è€…ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.ChangeAlias"
 	/// English String: "Only you can see this information"
 	/// </summary>
-	public override string DescriptionChangeAlias => "只有您可以看到此資訊";
+	public override string DescriptionChangeAlias => "åªæœ‰æ‚¨å¯ä»¥çœ‹åˆ°æ­¤è³‡è¨Š";
 
 	/// <summary>
 	/// Key: "Description.UnblockUserPrompt"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string DescriptionUnblockUserPrompt => "確定解除封鎖此使用者？";
+	public override string DescriptionUnblockUserPrompt => "ç¢ºå®šè§£é™¤å°éŽ–æ­¤ä½¿ç”¨è€…ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Heading.AboutTab"
 	/// this is for the heading under About tab on profile page
 	/// English String: "About"
 	/// </summary>
-	public override string HeadingAboutTab => "介紹";
+	public override string HeadingAboutTab => "ä»‹ç´¹";
 
 	/// <summary>
 	/// Key: "Heading.BlockUserTitle"
 	/// English String: "Warning"
 	/// </summary>
-	public override string HeadingBlockUserTitle => "警告";
+	public override string HeadingBlockUserTitle => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Heading.Collections"
 	/// English String: "Collections"
 	/// </summary>
-	public override string HeadingCollections => "收藏";
+	public override string HeadingCollections => "æ”¶è—";
 
 	/// <summary>
 	/// Key: "Heading.CurrentlyWearing"
 	/// English String: "Currently Wearing"
 	/// </summary>
-	public override string HeadingCurrentlyWearing => "目前穿戴";
+	public override string HeadingCurrentlyWearing => "ç›®å‰ç©¿æˆ´";
 
 	/// <summary>
 	/// Key: "Heading.FavoriteGames"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string HeadingFavoriteGames => "最愛";
+	public override string HeadingFavoriteGames => "æœ€æ„›";
 
 	/// <summary>
 	/// Key: "Heading.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string HeadingFriends => "好友";
+	public override string HeadingFriends => "å¥½å‹";
 
 	/// <summary>
 	/// Key: "Heading.Games"
 	/// English String: "Games"
 	/// </summary>
-	public override string HeadingGames => "遊戲";
+	public override string HeadingGames => "éŠæˆ²";
 
 	/// <summary>
 	/// Key: "Heading.GameTitle"
 	/// English String: "Games"
 	/// </summary>
-	public override string HeadingGameTitle => "遊戲";
+	public override string HeadingGameTitle => "éŠæˆ²";
 
 	/// <summary>
 	/// Key: "Heading.Groups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string HeadingGroups => "群組";
+	public override string HeadingGroups => "ç¾¤çµ„";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsBadges"
 	/// English String: "Player Badges"
 	/// </summary>
-	public override string HeadingPlayerAssetsBadges => "遊戲徽章";
+	public override string HeadingPlayerAssetsBadges => "éŠæˆ²å¾½ç« ";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsClothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string HeadingPlayerAssetsClothing => "衣物";
+	public override string HeadingPlayerAssetsClothing => "è¡£ç‰©";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsModels"
 	/// English String: "Models"
 	/// </summary>
-	public override string HeadingPlayerAssetsModels => "模型";
+	public override string HeadingPlayerAssetsModels => "æ¨¡åž‹";
 
 	/// <summary>
 	/// Key: "Heading.PlayerBadge"
 	/// English String: "Player Badges"
 	/// </summary>
-	public override string HeadingPlayerBadge => "遊戲徽章";
+	public override string HeadingPlayerBadge => "éŠæˆ²å¾½ç« ";
 
 	/// <summary>
 	/// Key: "Heading.Profile"
 	/// English String: "Profile"
 	/// </summary>
-	public override string HeadingProfile => "個人檔案";
+	public override string HeadingProfile => "å€‹äººæª”æ¡ˆ";
 
 	/// <summary>
 	/// Key: "Heading.ProfileGroups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string HeadingProfileGroups => "群組";
+	public override string HeadingProfileGroups => "ç¾¤çµ„";
 
 	/// <summary>
 	/// Key: "Heading.RobloxBadge"
 	/// English String: "Roblox Badges"
 	/// </summary>
-	public override string HeadingRobloxBadge => "Roblox 徽章";
+	public override string HeadingRobloxBadge => "Roblox å¾½ç« ";
 
 	/// <summary>
 	/// Key: "Heading.Statistics"
 	/// English String: "Statistics"
 	/// </summary>
-	public override string HeadingStatistics => "數據";
+	public override string HeadingStatistics => "æ•¸æ“š";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "介紹";
+	public override string LabelAbout => "ä»‹ç´¹";
 
 	/// <summary>
 	/// Key: "Label.Alias"
 	/// Friends Tag, nickname
 	/// English String: "Alias"
 	/// </summary>
-	public override string LabelAlias => "暱稱";
+	public override string LabelAlias => "æš±ç¨±";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningBody"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string LabelBlockWarningBody => "確定封鎖此使用者？";
+	public override string LabelBlockWarningBody => "ç¢ºå®šå°éŽ–æ­¤ä½¿ç”¨è€…ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningConfirm"
 	/// English String: "Block"
 	/// </summary>
-	public override string LabelBlockWarningConfirm => "封鎖";
+	public override string LabelBlockWarningConfirm => "å°éŽ–";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string LabelBlockWarningFooter => "當您封鎖一位使用者時，你們將無法直接聯絡彼此。";
+	public override string LabelBlockWarningFooter => "ç•¶æ‚¨å°éŽ–ä¸€ä½ä½¿ç”¨è€…æ™‚ï¼Œä½ å€‘å°‡ç„¡æ³•ç›´æŽ¥è¯çµ¡å½¼æ­¤ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "取消";
+	public override string LabelCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Label.ChangeAlias"
 	/// set nickname
 	/// English String: "Set Alias"
 	/// </summary>
-	public override string LabelChangeAlias => "設定暱稱";
+	public override string LabelChangeAlias => "è¨­å®šæš±ç¨±";
 
 	/// <summary>
 	/// Key: "Label.Creations"
 	/// English String: "Creations"
 	/// </summary>
-	public override string LabelCreations => "作品";
+	public override string LabelCreations => "ä½œå“";
 
 	/// <summary>
 	/// Key: "Label.Followers"
 	/// English String: "Followers"
 	/// </summary>
-	public override string LabelFollowers => "追蹤者";
+	public override string LabelFollowers => "è¿½è¹¤è€…";
 
 	/// <summary>
 	/// Key: "Label.Following"
 	/// English String: "Following"
 	/// </summary>
-	public override string LabelFollowing => "追蹤中";
+	public override string LabelFollowing => "è¿½è¹¤ä¸­";
 
 	/// <summary>
 	/// Key: "Label.ForumPosts"
 	/// English String: "Forum Posts"
 	/// </summary>
-	public override string LabelForumPosts => "論壇貼文";
+	public override string LabelForumPosts => "è«–å£‡è²¼æ–‡";
 
 	/// <summary>
 	/// Key: "Label.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelFriends => "好友";
+	public override string LabelFriends => "å¥½å‹";
 
 	/// <summary>
 	/// Key: "Label.GridView"
 	/// English String: "Grid View"
 	/// </summary>
-	public override string LabelGridView => "方格檢視";
+	public override string LabelGridView => "æ–¹æ ¼æª¢è¦–";
 
 	/// <summary>
 	/// Key: "Label.JoinDate"
 	/// English String: "Join Date"
 	/// </summary>
-	public override string LabelJoinDate => "加入日期";
+	public override string LabelJoinDate => "åŠ å…¥æ—¥æœŸ";
 
 	/// <summary>
 	/// Key: "Label.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string LabelLoadMore => "載入更多";
+	public override string LabelLoadMore => "è¼‰å…¥æ›´å¤š";
 
 	/// <summary>
 	/// Key: "Label.Members"
 	/// English String: "Members"
 	/// </summary>
-	public override string LabelMembers => "會員";
+	public override string LabelMembers => "æœƒå“¡";
 
 	/// <summary>
 	/// Key: "Label.PastUsername"
 	/// English String: "Past Usernames"
 	/// </summary>
-	public override string LabelPastUsername => "之前的使用者名稱";
+	public override string LabelPastUsername => "ä¹‹å‰çš„ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Label.PastUsernames"
 	/// English String: "Past usernames"
 	/// </summary>
-	public override string LabelPastUsernames => "之前的使用者名稱";
+	public override string LabelPastUsernames => "ä¹‹å‰çš„ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Label.PlaceVisits"
 	/// English String: "Place Visits"
 	/// </summary>
-	public override string LabelPlaceVisits => "空間造訪次數";
+	public override string LabelPlaceVisits => "ç©ºé–“é€ è¨ªæ¬¡æ•¸";
 
 	/// <summary>
 	/// Key: "Label.Playing"
 	/// English String: "Playing"
 	/// </summary>
-	public override string LabelPlaying => "正在玩";
+	public override string LabelPlaying => "æ­£åœ¨çŽ©";
 
 	/// <summary>
 	/// Key: "Label.Rank"
 	/// English String: "Rank"
 	/// </summary>
-	public override string LabelRank => "階級";
+	public override string LabelRank => "éšŽç´š";
 
 	/// <summary>
 	/// Key: "Label.ReadMore"
 	/// English String: "Read More"
 	/// </summary>
-	public override string LabelReadMore => "閱讀更多";
+	public override string LabelReadMore => "é–±è®€æ›´å¤š";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "檢舉濫用";
+	public override string LabelReportAbuse => "æª¢èˆ‰æ¿«ç”¨";
 
 	/// <summary>
 	/// Key: "Label.ShowLess"
 	/// English String: "Show Less"
 	/// </summary>
-	public override string LabelShowLess => "顯示更少";
+	public override string LabelShowLess => "é¡¯ç¤ºæ›´å°‘";
 
 	/// <summary>
 	/// Key: "Label.SlideshowView"
 	/// English String: "Slideshow View"
 	/// </summary>
-	public override string LabelSlideshowView => "投影片檢視";
+	public override string LabelSlideshowView => "æŠ•å½±ç‰‡æª¢è¦–";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningBody"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string LabelUnblockWarningBody => "確定解除封鎖此使用者？";
+	public override string LabelUnblockWarningBody => "ç¢ºå®šè§£é™¤å°éŽ–æ­¤ä½¿ç”¨è€…ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningConfirm"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string LabelUnblockWarningConfirm => "解除封鎖";
+	public override string LabelUnblockWarningConfirm => "è§£é™¤å°éŽ–";
 
 	/// <summary>
 	/// Key: "Label.Visits"
 	/// English String: "Visits"
 	/// </summary>
-	public override string LabelVisits => "造訪次數";
+	public override string LabelVisits => "é€ è¨ªæ¬¡æ•¸";
 
 	/// <summary>
 	/// Key: "Label.WarningTitle"
 	/// English String: "Warning"
 	/// </summary>
-	public override string LabelWarningTitle => "警告";
+	public override string LabelWarningTitle => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Message.AliasHasError"
 	/// English String: "An error has occurred. Please try again later"
 	/// </summary>
-	public override string MessageAliasHasError => "發生錯誤，請稍後再試";
+	public override string MessageAliasHasError => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦";
 
 	/// <summary>
 	/// Key: "Message.AliasIsModerated"
 	/// English String: "Please avoid using full names or offensive language."
 	/// </summary>
-	public override string MessageAliasIsModerated => "請勿使用本名或不雅語言。";
+	public override string MessageAliasIsModerated => "è«‹å‹¿ä½¿ç”¨æœ¬åæˆ–ä¸é›…èªžè¨€ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ChangeStatus"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string MessageChangeStatus => "您在做什麼？";
+	public override string MessageChangeStatus => "æ‚¨åœ¨åšä»€éº¼ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Message.ErrorBlockLimit"
 	/// English String: "Operation failed! You may have blocked too many people."
 	/// </summary>
-	public override string MessageErrorBlockLimit => "無法作業，您封鎖的使用者人數可能過多。";
+	public override string MessageErrorBlockLimit => "ç„¡æ³•ä½œæ¥­ï¼Œæ‚¨å°éŽ–çš„ä½¿ç”¨è€…äººæ•¸å¯èƒ½éŽå¤šã€‚";
 
 	/// <summary>
 	/// Key: "Message.ErrorGeneral"
 	/// English String: "Something went wrong. Please check back in a few minutes."
 	/// </summary>
-	public override string MessageErrorGeneral => "發生錯誤，請稍後再回來查看。";
+	public override string MessageErrorGeneral => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†å›žä¾†æŸ¥çœ‹ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Sharing"
 	/// English String: "Sharing..."
 	/// </summary>
-	public override string MessageSharing => "正在分享…";
+	public override string MessageSharing => "æ­£åœ¨åˆ†äº«â€¦";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
 	/// flood error response
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttempts => "嘗試次數過多";
+	public override string ResponseTooManyAttempts => "å˜—è©¦æ¬¡æ•¸éŽå¤š";
 
 	public ProfileResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -522,187 +522,187 @@ internal class ProfileResources_zh_tw : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "接受";
+		return "æŽ¥å—";
 	}
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "新增好友";
+		return "æ–°å¢žå¥½å‹";
 	}
 
 	protected override string _GetTemplateForActionBlockUser()
 	{
-		return "封鎖使用者";
+		return "å°éŽ–ä½¿ç”¨è€…";
 	}
 
 	protected override string _GetTemplateForActionCancelBlockUser()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionChat()
 	{
-		return "聊天";
+		return "èŠå¤©";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "關閉";
+		return "é—œé–‰";
 	}
 
 	protected override string _GetTemplateForActionConfirmBlockUser()
 	{
-		return "封鎖";
+		return "å°éŽ–";
 	}
 
 	protected override string _GetTemplateForActionConfirmUnblockUser()
 	{
-		return "解除封鎖";
+		return "è§£é™¤å°éŽ–";
 	}
 
 	protected override string _GetTemplateForActionFavorites()
 	{
-		return "最愛";
+		return "æœ€æ„›";
 	}
 
 	protected override string _GetTemplateForActionFollow()
 	{
-		return "追蹤";
+		return "è¿½è¹¤";
 	}
 
 	protected override string _GetTemplateForActionGridView()
 	{
-		return "方格檢視";
+		return "æ–¹æ ¼æª¢è¦–";
 	}
 
 	protected override string _GetTemplateForActionImpersonateUser()
 	{
-		return "假冒使用者";
+		return "å‡å†’ä½¿ç”¨è€…";
 	}
 
 	protected override string _GetTemplateForActionInventory()
 	{
-		return "道具欄";
+		return "é“å…·æ¬„";
 	}
 
 	protected override string _GetTemplateForActionJoinGame()
 	{
-		return "加入遊戲";
+		return "åŠ å…¥éŠæˆ²";
 	}
 
 	protected override string _GetTemplateForActionMessage()
 	{
-		return "傳送訊息";
+		return "å‚³é€è¨Šæ¯";
 	}
 
 	protected override string _GetTemplateForActionPending()
 	{
-		return "待處理";
+		return "å¾…è™•ç†";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "儲存";
+		return "å„²å­˜";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "查看全部";
+		return "æŸ¥çœ‹å…¨éƒ¨";
 	}
 
 	protected override string _GetTemplateForActionSeeLess()
 	{
-		return "看更少";
+		return "çœ‹æ›´å°‘";
 	}
 
 	protected override string _GetTemplateForActionSeeMore()
 	{
-		return "查看更多";
+		return "æŸ¥çœ‹æ›´å¤š";
 	}
 
 	protected override string _GetTemplateForActionSlideshowView()
 	{
-		return "投影片檢視";
+		return "æŠ•å½±ç‰‡æª¢è¦–";
 	}
 
 	protected override string _GetTemplateForActionTrade()
 	{
-		return "交易";
+		return "äº¤æ˜“";
 	}
 
 	protected override string _GetTemplateForActionTradeItems()
 	{
-		return "交換道具";
+		return "äº¤æ›é“å…·";
 	}
 
 	protected override string _GetTemplateForActionUnblockUser()
 	{
-		return "解除封鎖使用者";
+		return "è§£é™¤å°éŽ–ä½¿ç”¨è€…";
 	}
 
 	protected override string _GetTemplateForActionUnfollow()
 	{
-		return "取消追蹤";
+		return "å–æ¶ˆè¿½è¹¤";
 	}
 
 	protected override string _GetTemplateForActionUnfriend()
 	{
-		return "刪除好友";
+		return "åˆªé™¤å¥½å‹";
 	}
 
 	protected override string _GetTemplateForActionUpdateStatus()
 	{
-		return "更新狀態";
+		return "æ›´æ–°ç‹€æ…‹";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserFooter()
 	{
-		return "當您封鎖一位使用者時，你們將無法直接聯絡彼此。";
+		return "ç•¶æ‚¨å°éŽ–ä¸€ä½ä½¿ç”¨è€…æ™‚ï¼Œä½ å€‘å°‡ç„¡æ³•ç›´æŽ¥è¯çµ¡å½¼æ­¤ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserPrompt()
 	{
-		return "確定封鎖此使用者？";
+		return "ç¢ºå®šå°éŽ–æ­¤ä½¿ç”¨è€…ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeAlias()
 	{
-		return "只有您可以看到此資訊";
+		return "åªæœ‰æ‚¨å¯ä»¥çœ‹åˆ°æ­¤è³‡è¨Š";
 	}
 
 	protected override string _GetTemplateForDescriptionUnblockUserPrompt()
 	{
-		return "確定解除封鎖此使用者？";
+		return "ç¢ºå®šè§£é™¤å°éŽ–æ­¤ä½¿ç”¨è€…ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForHeadingAboutTab()
 	{
-		return "介紹";
+		return "ä»‹ç´¹";
 	}
 
 	protected override string _GetTemplateForHeadingBlockUserTitle()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	protected override string _GetTemplateForHeadingCollections()
 	{
-		return "收藏";
+		return "æ”¶è—";
 	}
 
 	protected override string _GetTemplateForHeadingCurrentlyWearing()
 	{
-		return "目前穿戴";
+		return "ç›®å‰ç©¿æˆ´";
 	}
 
 	protected override string _GetTemplateForHeadingFavoriteGames()
 	{
-		return "最愛";
+		return "æœ€æ„›";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()
 	{
-		return "好友";
+		return "å¥½å‹";
 	}
 
 	/// <summary>
@@ -711,252 +711,252 @@ internal class ProfileResources_zh_tw : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string HeadingFriendsNum(string friendsCount)
 	{
-		return $"好友（{friendsCount}）";
+		return $"å¥½å‹ï¼ˆ{friendsCount}ï¼‰";
 	}
 
 	protected override string _GetTemplateForHeadingFriendsNum()
 	{
-		return "好友（{friendsCount}）";
+		return "å¥½å‹ï¼ˆ{friendsCount}ï¼‰";
 	}
 
 	protected override string _GetTemplateForHeadingGames()
 	{
-		return "遊戲";
+		return "éŠæˆ²";
 	}
 
 	protected override string _GetTemplateForHeadingGameTitle()
 	{
-		return "遊戲";
+		return "éŠæˆ²";
 	}
 
 	protected override string _GetTemplateForHeadingGroups()
 	{
-		return "群組";
+		return "ç¾¤çµ„";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsBadges()
 	{
-		return "遊戲徽章";
+		return "éŠæˆ²å¾½ç« ";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsClothing()
 	{
-		return "衣物";
+		return "è¡£ç‰©";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsModels()
 	{
-		return "模型";
+		return "æ¨¡åž‹";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerBadge()
 	{
-		return "遊戲徽章";
+		return "éŠæˆ²å¾½ç« ";
 	}
 
 	protected override string _GetTemplateForHeadingProfile()
 	{
-		return "個人檔案";
+		return "å€‹äººæª”æ¡ˆ";
 	}
 
 	protected override string _GetTemplateForHeadingProfileGroups()
 	{
-		return "群組";
+		return "ç¾¤çµ„";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxBadge()
 	{
-		return "Roblox 徽章";
+		return "Roblox å¾½ç« ";
 	}
 
 	protected override string _GetTemplateForHeadingStatistics()
 	{
-		return "數據";
+		return "æ•¸æ“š";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "介紹";
+		return "ä»‹ç´¹";
 	}
 
 	protected override string _GetTemplateForLabelAlias()
 	{
-		return "暱稱";
+		return "æš±ç¨±";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningBody()
 	{
-		return "確定封鎖此使用者？";
+		return "ç¢ºå®šå°éŽ–æ­¤ä½¿ç”¨è€…ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningConfirm()
 	{
-		return "封鎖";
+		return "å°éŽ–";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningFooter()
 	{
-		return "當您封鎖一位使用者時，你們將無法直接聯絡彼此。";
+		return "ç•¶æ‚¨å°éŽ–ä¸€ä½ä½¿ç”¨è€…æ™‚ï¼Œä½ å€‘å°‡ç„¡æ³•ç›´æŽ¥è¯çµ¡å½¼æ­¤ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForLabelChangeAlias()
 	{
-		return "設定暱稱";
+		return "è¨­å®šæš±ç¨±";
 	}
 
 	protected override string _GetTemplateForLabelCreations()
 	{
-		return "作品";
+		return "ä½œå“";
 	}
 
 	protected override string _GetTemplateForLabelFollowers()
 	{
-		return "追蹤者";
+		return "è¿½è¹¤è€…";
 	}
 
 	protected override string _GetTemplateForLabelFollowing()
 	{
-		return "追蹤中";
+		return "è¿½è¹¤ä¸­";
 	}
 
 	protected override string _GetTemplateForLabelForumPosts()
 	{
-		return "論壇貼文";
+		return "è«–å£‡è²¼æ–‡";
 	}
 
 	protected override string _GetTemplateForLabelFriends()
 	{
-		return "好友";
+		return "å¥½å‹";
 	}
 
 	protected override string _GetTemplateForLabelGridView()
 	{
-		return "方格檢視";
+		return "æ–¹æ ¼æª¢è¦–";
 	}
 
 	protected override string _GetTemplateForLabelJoinDate()
 	{
-		return "加入日期";
+		return "åŠ å…¥æ—¥æœŸ";
 	}
 
 	protected override string _GetTemplateForLabelLoadMore()
 	{
-		return "載入更多";
+		return "è¼‰å…¥æ›´å¤š";
 	}
 
 	protected override string _GetTemplateForLabelMembers()
 	{
-		return "會員";
+		return "æœƒå“¡";
 	}
 
 	protected override string _GetTemplateForLabelPastUsername()
 	{
-		return "之前的使用者名稱";
+		return "ä¹‹å‰çš„ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelPastUsernames()
 	{
-		return "之前的使用者名稱";
+		return "ä¹‹å‰çš„ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelPlaceVisits()
 	{
-		return "空間造訪次數";
+		return "ç©ºé–“é€ è¨ªæ¬¡æ•¸";
 	}
 
 	protected override string _GetTemplateForLabelPlaying()
 	{
-		return "正在玩";
+		return "æ­£åœ¨çŽ©";
 	}
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
+	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	public override string LabelQuotation(string userStatus)
 	{
-		return $"「{userStatus}」";
+		return $"ã€Œ{userStatus}ã€";
 	}
 
 	protected override string _GetTemplateForLabelQuotation()
 	{
-		return "「{userStatus}」";
+		return "ã€Œ{userStatus}ã€";
 	}
 
 	protected override string _GetTemplateForLabelRank()
 	{
-		return "階級";
+		return "éšŽç´š";
 	}
 
 	protected override string _GetTemplateForLabelReadMore()
 	{
-		return "閱讀更多";
+		return "é–±è®€æ›´å¤š";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "檢舉濫用";
+		return "æª¢èˆ‰æ¿«ç”¨";
 	}
 
 	protected override string _GetTemplateForLabelShowLess()
 	{
-		return "顯示更少";
+		return "é¡¯ç¤ºæ›´å°‘";
 	}
 
 	protected override string _GetTemplateForLabelSlideshowView()
 	{
-		return "投影片檢視";
+		return "æŠ•å½±ç‰‡æª¢è¦–";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningBody()
 	{
-		return "確定解除封鎖此使用者？";
+		return "ç¢ºå®šè§£é™¤å°éŽ–æ­¤ä½¿ç”¨è€…ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningConfirm()
 	{
-		return "解除封鎖";
+		return "è§£é™¤å°éŽ–";
 	}
 
 	protected override string _GetTemplateForLabelVisits()
 	{
-		return "造訪次數";
+		return "é€ è¨ªæ¬¡æ•¸";
 	}
 
 	protected override string _GetTemplateForLabelWarningTitle()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	protected override string _GetTemplateForMessageAliasHasError()
 	{
-		return "發生錯誤，請稍後再試";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦";
 	}
 
 	protected override string _GetTemplateForMessageAliasIsModerated()
 	{
-		return "請勿使用本名或不雅語言。";
+		return "è«‹å‹¿ä½¿ç”¨æœ¬åæˆ–ä¸é›…èªžè¨€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageChangeStatus()
 	{
-		return "您在做什麼？";
+		return "æ‚¨åœ¨åšä»€éº¼ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForMessageErrorBlockLimit()
 	{
-		return "無法作業，您封鎖的使用者人數可能過多。";
+		return "ç„¡æ³•ä½œæ¥­ï¼Œæ‚¨å°éŽ–çš„ä½¿ç”¨è€…äººæ•¸å¯èƒ½éŽå¤šã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorGeneral()
 	{
-		return "發生錯誤，請稍後再回來查看。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†å›žä¾†æŸ¥çœ‹ã€‚";
 	}
 
 	/// <summary>
@@ -965,21 +965,24 @@ internal class ProfileResources_zh_tw : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string MessageNoCreation(string username)
 	{
-		return $"{username} 沒有作品。";
+		return $"{username} æ²’æœ‰ä½œå“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNoCreation()
 	{
-		return "{username} 沒有作品。";
+		return "{username} æ²’æœ‰ä½œå“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSharing()
 	{
-		return "正在分享…";
+		return "æ­£åœ¨åˆ†äº«â€¦";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
 	{
-		return "嘗試次數過多";
+		return "å˜—è©¦æ¬¡æ•¸éŽå¤š";
 	}
+}
+
+
 }

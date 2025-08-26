@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationStorage.Client {
 
-namespace Roblox.TranslationStorage.Client
-{
     // Enums mirror names used in platform for string-based Enum.Parse mapping
     public enum ContentVariantType : byte { Production, Draft }
     public enum OperationStatusCode : byte { Unknown, Success, Failure }

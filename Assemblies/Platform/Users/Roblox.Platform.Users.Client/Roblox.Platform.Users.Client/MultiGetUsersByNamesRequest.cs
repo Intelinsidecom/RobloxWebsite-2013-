@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 internal class MultiGetUsersByNamesRequest
@@ -13,4 +12,6 @@ internal class MultiGetUsersByNamesRequest
 
 	[DataMember(Name = "includeUsernameHistory")]
 	public bool IncludeUsernameHistory { get; set; }
+}
+
 }

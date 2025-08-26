@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountCountriesChangeAgentTypeCachedMssqlEntity : IAccountCountriesChangeAgentTypeEntity, IUpdateableEntity<byte>, IEntity<byte>
 {
 	public byte Id { get; set; }
@@ -34,4 +33,7 @@ internal class AccountCountriesChangeAgentTypeCachedMssqlEntity : IAccountCountr
 	{
 		(AccountCountriesChangeAgentTypeCAL.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

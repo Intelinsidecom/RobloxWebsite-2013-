@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class AccountFeatureSetActivationTask : IRobloxEntity<long, AccountFeatureSetActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
-namespace Roblox.PremiumFeatures;
-
-public class AccountFeatureSetActivationTask : IRobloxEntity<long, AccountFeatureSetActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 {
 	private AccountFeatureSetActivationTaskDAL _EntityDAL;
 
@@ -165,4 +164,7 @@ public class AccountFeatureSetActivationTask : IRobloxEntity<long, AccountFeatur
 		Completed = DateTime.Now;
 		Save();
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// An interface represents an open moderation task that is to be worked on by a moderator.
 /// An effective wrapper around a task message and other necessary queue information in order 
 /// for a moderator to work on and then to perform the removal of the message from the queue.
@@ -28,4 +27,7 @@ public interface IOpenTask
 	/// The unique key for the actor working on the task.
 	/// </summary>
 	string Worker { get; }
+}
+
+
 }

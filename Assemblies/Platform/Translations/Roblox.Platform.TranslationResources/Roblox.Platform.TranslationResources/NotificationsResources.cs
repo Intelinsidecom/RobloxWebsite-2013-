@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.TranslationResources.Notifications;
+namespace Roblox.Platform.TranslationResourcesinternal {
+    class NotificationsResources : INotificationsResources, ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-internal class NotificationsResources : INotificationsResources, ITranslationResourcesNamespacesGroup
 {
 	private readonly Lazy<IDesktopPushNotificationPromptsResources> _IDesktopPushNotificationPromptsResources;
 
@@ -38,4 +37,7 @@ internal class NotificationsResources : INotificationsResources, ITranslationRes
 			_ => null, 
 		};
 	}
+}
+
+
 }

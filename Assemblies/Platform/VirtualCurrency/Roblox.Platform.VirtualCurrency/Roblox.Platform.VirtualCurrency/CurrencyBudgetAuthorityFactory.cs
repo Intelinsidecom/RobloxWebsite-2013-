@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Roblox.Currency.Client;
+using Roblox.Platform.Currency.Client;
 using Roblox.Platform.Core;
 
 namespace Roblox.Platform.VirtualCurrency;

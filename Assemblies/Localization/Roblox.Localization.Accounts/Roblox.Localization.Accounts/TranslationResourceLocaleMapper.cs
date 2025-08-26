@@ -1,9 +1,8 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
 using Roblox.TranslationResources;
+namespace Roblox.Localization.Accountspublic {
+    static class TranslationResourceLocaleMapper
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public static class TranslationResourceLocaleMapper
 {
 	/// <summary>
 	/// Gets the default translation resource locale.
@@ -35,4 +34,7 @@ public static class TranslationResourceLocaleMapper
 			_ => DefaultTranslationResourceLocale, 
 		};
 	}
+}
+
+
 }

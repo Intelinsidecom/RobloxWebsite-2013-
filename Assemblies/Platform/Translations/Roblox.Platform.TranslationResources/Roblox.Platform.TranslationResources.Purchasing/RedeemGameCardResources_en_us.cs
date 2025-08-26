@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+    class RedeemGameCardResources_en_us : TranslationResourcesBase, IRedeemGameCardResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Purchasing;
-
-internal class RedeemGameCardResources_en_us : TranslationResourcesBase, IRedeemGameCardResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -694,4 +693,7 @@ internal class RedeemGameCardResources_en_us : TranslationResourcesBase, IRedeem
 	{
 		return "Redeem one more Roblox card from Walmart to receive {rewardName}.";
 	}
+}
+
+
 }

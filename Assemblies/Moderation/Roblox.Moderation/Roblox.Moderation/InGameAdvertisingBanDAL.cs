@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Platform.Moderation.Properties;
+namespace Roblox.Moderationinternal {
+    class InGameAdvertisingBanDAL
 
-namespace Roblox.Platform.Moderation;
-
-internal class InGameAdvertisingBanDAL
 {
 	internal int ID { get; set; }
 
@@ -107,4 +106,7 @@ internal class InGameAdvertisingBanDAL
 		};
 		return EntityHelper.GetEntityDAL(new DbInfo(_DbConnectionString, "InGameAdvertisingBans_GetInGameAdvertisingBanByUserID", queryParameters), BuildDAL);
 	}
+}
+
+
 }

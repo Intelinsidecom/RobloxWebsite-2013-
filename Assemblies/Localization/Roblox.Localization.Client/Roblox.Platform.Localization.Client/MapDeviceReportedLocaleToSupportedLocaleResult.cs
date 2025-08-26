@@ -1,8 +1,11 @@
-namespace Roblox.Localization.Client;
+﻿namespace Roblox.Platform.Localization.Clientpublic {
+    enum MapDeviceReportedLocaleToSupportedLocaleResult
 
-public enum MapDeviceReportedLocaleToSupportedLocaleResult
 {
 	Unknown,
 	Updated,
 	Failed
+}
+
+
 }

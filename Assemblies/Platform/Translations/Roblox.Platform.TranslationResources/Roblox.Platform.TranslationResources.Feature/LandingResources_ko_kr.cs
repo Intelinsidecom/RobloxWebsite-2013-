@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides LandingResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,98 +11,98 @@ internal class LandingResources_ko_kr : LandingResources_en_us, ILandingResource
 	/// first paragraph under Roblox on your device heading on landing page
 	/// English String: "You can access Roblox on all modern smartphones, desktops, Xbox One, Oculus Rift, and soon on Daydream and Cardboard. Roblox adventures are accessible from any device, so players can imagine with their friends regardless of where they are."
 	/// </summary>
-	public override string DescriptionRobloxOnDeviceParagraphOne => "Roblox는 최신 스마트폰, 데스크톱은 물론 Xbox One과 Oculus Rift에서도 이용할 수 있으며, 곧 Daydream과 Cardboard도 지원할 예정이랍니다. 어떤 기기에서든 즐길 수 있는 만큼 장소에 구애받지 않고 친구들과 상상의 나래를 펼 수 있지요.";
+	public override string DescriptionRobloxOnDeviceParagraphOne => "RobloxëŠ” ìµœì‹  ìŠ¤ë§ˆíŠ¸í°, ë°ìŠ¤í¬í†±ì€ ë¬¼ë¡  Xbox Oneê³¼ Oculus Riftì—ì„œë„ ì´ìš©í•  ìˆ˜ ìžˆìœ¼ë©°, ê³§ Daydreamê³¼ Cardboardë„ ì§€ì›í•  ì˜ˆì •ì´ëžë‹ˆë‹¤. ì–´ë–¤ ê¸°ê¸°ì—ì„œë“  ì¦ê¸¸ ìˆ˜ ìžˆëŠ” ë§Œí¼ ìž¥ì†Œì— êµ¬ì• ë°›ì§€ ì•Šê³  ì¹œêµ¬ë“¤ê³¼ ìƒìƒì˜ ë‚˜ëž˜ë¥¼ íŽ¼ ìˆ˜ ìžˆì§€ìš”.";
 
 	/// <summary>
 	/// Key: "Description.RobloxOnDeviceParagraphTwo"
 	/// second paragraph under Roblox on Your Device on landing page
 	/// English String: "You can access Roblox on PC, Mac, iOS, Android, Amazon Devices, and Xbox One. Roblox adventures are accessible from any device, so players can imagine with their friends regardless of where they are."
 	/// </summary>
-	public override string DescriptionRobloxOnDeviceParagraphTwo => "Roblox는 PC와 Mac 외에 iOS 및 Android, Amazon 플랫폼 기반 장치는 물론 Xbox One과 Oculus Rift에서도 이용할 수 있어요. 어떤 기기에서든 즐길 수 있는 만큼 장소에 구애받지 않고 친구들과 상상의 나래를 펼 수 있지요.";
+	public override string DescriptionRobloxOnDeviceParagraphTwo => "RobloxëŠ” PCì™€ Mac ì™¸ì— iOS ë° Android, Amazon í”Œëž«í¼ ê¸°ë°˜ ìž¥ì¹˜ëŠ” ë¬¼ë¡  Xbox Oneê³¼ Oculus Riftì—ì„œë„ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”. ì–´ë–¤ ê¸°ê¸°ì—ì„œë“  ì¦ê¸¸ ìˆ˜ ìžˆëŠ” ë§Œí¼ ìž¥ì†Œì— êµ¬ì• ë°›ì§€ ì•Šê³  ì¹œêµ¬ë“¤ê³¼ ìƒìƒì˜ ë‚˜ëž˜ë¥¼ íŽ¼ ìˆ˜ ìžˆì§€ìš”.";
 
 	/// <summary>
 	/// Key: "Description.WhatIsRobloxParagraphOne"
 	/// first paragraph under what's Roblox heading on landing page
-	/// English String: "Roblox helps power the imagination of people around the world. As the largest growing social platform for play, over 44 million players come to Roblox every month to create adventures, play games, roleplay, and learn with friends. We call it the ‘Imagination Platform’ and believe everyone should have the right to play on it."
+	/// English String: "Roblox helps power the imagination of people around the world. As the largest growing social platform for play, over 44 million players come to Roblox every month to create adventures, play games, roleplay, and learn with friends. We call it the â€˜Imagination Platformâ€™ and believe everyone should have the right to play on it."
 	/// </summary>
-	public override string DescriptionWhatIsRobloxParagraphOne => "상상력을 쑥쑥 키워주는 Roblox는 월 방문자 수 4,400만을 자랑하는 세계 최대의 소셜 게임 플랫폼으로, 지금도 계속 성장하고 있어요. Roblox에서는 사용자가 직접 모험을 창조하고, 게임을 플레이할 수 있죠. 또한, 역할 놀이를 즐기고 친구들과 함께 새로운 것들을 배울 수 있어요. 누구나 참여할 수 있는 '상상 플랫폼'. 그것이 바로 Roblox랍니다.";
+	public override string DescriptionWhatIsRobloxParagraphOne => "ìƒìƒë ¥ì„ ì‘¥ì‘¥ í‚¤ì›Œì£¼ëŠ” RobloxëŠ” ì›” ë°©ë¬¸ìž ìˆ˜ 4,400ë§Œì„ ìžëž‘í•˜ëŠ” ì„¸ê³„ ìµœëŒ€ì˜ ì†Œì…œ ê²Œìž„ í”Œëž«í¼ìœ¼ë¡œ, ì§€ê¸ˆë„ ê³„ì† ì„±ìž¥í•˜ê³  ìžˆì–´ìš”. Robloxì—ì„œëŠ” ì‚¬ìš©ìžê°€ ì§ì ‘ ëª¨í—˜ì„ ì°½ì¡°í•˜ê³ , ê²Œìž„ì„ í”Œë ˆì´í•  ìˆ˜ ìžˆì£ . ë˜í•œ, ì—­í•  ë†€ì´ë¥¼ ì¦ê¸°ê³  ì¹œêµ¬ë“¤ê³¼ í•¨ê»˜ ìƒˆë¡œìš´ ê²ƒë“¤ì„ ë°°ìš¸ ìˆ˜ ìžˆì–´ìš”. ëˆ„êµ¬ë‚˜ ì°¸ì—¬í•  ìˆ˜ ìžˆëŠ” 'ìƒìƒ í”Œëž«í¼'. ê·¸ê²ƒì´ ë°”ë¡œ Robloxëžë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Heading.RobloxOnDevice"
 	/// heading Roblox on your device
 	/// English String: "Roblox on your Device"
 	/// </summary>
-	public override string HeadingRobloxOnDevice => "어디서든 즐길 수 있어요";
+	public override string HeadingRobloxOnDevice => "ì–´ë””ì„œë“  ì¦ê¸¸ ìˆ˜ ìžˆì–´ìš”";
 
 	/// <summary>
 	/// Key: "Heading.WhatIsRoblox"
 	/// heading for what is Roblox section on the landing page
 	/// English String: "What is Roblox?"
 	/// </summary>
-	public override string HeadingWhatIsRoblox => "Roblox란?";
+	public override string HeadingWhatIsRoblox => "Robloxëž€?";
 
 	/// <summary>
 	/// Key: "Heading.WhatIsRobloxParagraphTwo"
 	/// second paragraph under what's Roblox on the landing page
 	/// English String: "Roblox is the best place to Imagine with Friends. With the largest user-generated online gaming platform, and over 15 million games created by users, Roblox is the #1 gaming site for kids and teens (comScore). Every day, virtual explorers come to Roblox to create adventures, play games, role play, and learn with their friends in a family-friendly, immersive, 3D environment."
 	/// </summary>
-	public override string HeadingWhatIsRobloxParagraphTwo => "친구들과 함께 상상력을 펼기치엔 Roblox만한 곳도 없죠. Roblox는 사용자가 직접 개발한 1,500만 개 이상의 게임을 자랑하는 세계 최대의 사용자 제작 온라인 게임 플랫폼으로 어린이 및 10대가 즐겨 찾는 1등 게임 웹사이트랍니다(comScore 조사). 매일 많은 이들이 Roblox에 모여 가족 친화적 몰입형 3D 환경에서 모험을 창조하고 게임 및 역할 놀이를 즐기며 친구들과 함께 배워 나가고 있어요.";
+	public override string HeadingWhatIsRobloxParagraphTwo => "ì¹œêµ¬ë“¤ê³¼ í•¨ê»˜ ìƒìƒë ¥ì„ íŽ¼ê¸°ì¹˜ì—” Robloxë§Œí•œ ê³³ë„ ì—†ì£ . RobloxëŠ” ì‚¬ìš©ìžê°€ ì§ì ‘ ê°œë°œí•œ 1,500ë§Œ ê°œ ì´ìƒì˜ ê²Œìž„ì„ ìžëž‘í•˜ëŠ” ì„¸ê³„ ìµœëŒ€ì˜ ì‚¬ìš©ìž ì œìž‘ ì˜¨ë¼ì¸ ê²Œìž„ í”Œëž«í¼ìœ¼ë¡œ ì–´ë¦°ì´ ë° 10ëŒ€ê°€ ì¦ê²¨ ì°¾ëŠ” 1ë“± ê²Œìž„ ì›¹ì‚¬ì´íŠ¸ëžë‹ˆë‹¤(comScore ì¡°ì‚¬). ë§¤ì¼ ë§Žì€ ì´ë“¤ì´ Robloxì— ëª¨ì—¬ ê°€ì¡± ì¹œí™”ì  ëª°ìž…í˜• 3D í™˜ê²½ì—ì„œ ëª¨í—˜ì„ ì°½ì¡°í•˜ê³  ê²Œìž„ ë° ì—­í•  ë†€ì´ë¥¼ ì¦ê¸°ë©° ì¹œêµ¬ë“¤ê³¼ í•¨ê»˜ ë°°ì›Œ ë‚˜ê°€ê³  ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// about link on top left
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "소개";
+	public override string LabelAbout => "ì†Œê°œ";
 
 	/// <summary>
 	/// Key: "Label.GetOnGooglePlay"
 	/// Google play icon title
 	/// English String: "Get it on Google Play"
 	/// </summary>
-	public override string LabelGetOnGooglePlay => "Google Play에서 다운로드";
+	public override string LabelGetOnGooglePlay => "Google Playì—ì„œ ë‹¤ìš´ë¡œë“œ";
 
 	/// <summary>
 	/// Key: "Label.Platforms"
 	/// platform link on top left
 	/// English String: "Platforms"
 	/// </summary>
-	public override string LabelPlatforms => "플랫폼";
+	public override string LabelPlatforms => "í”Œëž«í¼";
 
 	/// <summary>
 	/// Key: "Label.Play"
 	/// play link on top left
 	/// English String: "Play"
 	/// </summary>
-	public override string LabelPlay => "플레이";
+	public override string LabelPlay => "í”Œë ˆì´";
 
 	/// <summary>
 	/// Key: "Label.RobloxAmazonStore"
 	/// title for Amazon store icon
 	/// English String: "Roblox on Amazon Store"
 	/// </summary>
-	public override string LabelRobloxAmazonStore => "Amazon 스토어용 Roblox";
+	public override string LabelRobloxAmazonStore => "Amazon ìŠ¤í† ì–´ìš© Roblox";
 
 	/// <summary>
 	/// Key: "Label.RobloxAppStore"
 	/// the title for app store icon
 	/// English String: "Roblox on App Store"
 	/// </summary>
-	public override string LabelRobloxAppStore => "App Store용 Roblox";
+	public override string LabelRobloxAppStore => "App Storeìš© Roblox";
 
 	/// <summary>
 	/// Key: "Label.RobloxOnXbox"
 	/// title for Xbox icon
 	/// English String: "Roblox on Xbox Store"
 	/// </summary>
-	public override string LabelRobloxOnXbox => "Xbox 스토어용 Roblox";
+	public override string LabelRobloxOnXbox => "Xbox ìŠ¤í† ì–´ìš© Roblox";
 
 	/// <summary>
 	/// Key: "Label.RobloxWindowsStore"
 	/// title for windows store icon
 	/// English String: "Roblox on Windows Store"
 	/// </summary>
-	public override string LabelRobloxWindowsStore => "Windows 스토어용 Roblox";
+	public override string LabelRobloxWindowsStore => "Windows ìŠ¤í† ì–´ìš© Roblox";
 
 	public LandingResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -111,71 +111,74 @@ internal class LandingResources_ko_kr : LandingResources_en_us, ILandingResource
 
 	protected override string _GetTemplateForDescriptionRobloxOnDeviceParagraphOne()
 	{
-		return "Roblox는 최신 스마트폰, 데스크톱은 물론 Xbox One과 Oculus Rift에서도 이용할 수 있으며, 곧 Daydream과 Cardboard도 지원할 예정이랍니다. 어떤 기기에서든 즐길 수 있는 만큼 장소에 구애받지 않고 친구들과 상상의 나래를 펼 수 있지요.";
+		return "RobloxëŠ” ìµœì‹  ìŠ¤ë§ˆíŠ¸í°, ë°ìŠ¤í¬í†±ì€ ë¬¼ë¡  Xbox Oneê³¼ Oculus Riftì—ì„œë„ ì´ìš©í•  ìˆ˜ ìžˆìœ¼ë©°, ê³§ Daydreamê³¼ Cardboardë„ ì§€ì›í•  ì˜ˆì •ì´ëžë‹ˆë‹¤. ì–´ë–¤ ê¸°ê¸°ì—ì„œë“  ì¦ê¸¸ ìˆ˜ ìžˆëŠ” ë§Œí¼ ìž¥ì†Œì— êµ¬ì• ë°›ì§€ ì•Šê³  ì¹œêµ¬ë“¤ê³¼ ìƒìƒì˜ ë‚˜ëž˜ë¥¼ íŽ¼ ìˆ˜ ìžˆì§€ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxOnDeviceParagraphTwo()
 	{
-		return "Roblox는 PC와 Mac 외에 iOS 및 Android, Amazon 플랫폼 기반 장치는 물론 Xbox One과 Oculus Rift에서도 이용할 수 있어요. 어떤 기기에서든 즐길 수 있는 만큼 장소에 구애받지 않고 친구들과 상상의 나래를 펼 수 있지요.";
+		return "RobloxëŠ” PCì™€ Mac ì™¸ì— iOS ë° Android, Amazon í”Œëž«í¼ ê¸°ë°˜ ìž¥ì¹˜ëŠ” ë¬¼ë¡  Xbox Oneê³¼ Oculus Riftì—ì„œë„ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”. ì–´ë–¤ ê¸°ê¸°ì—ì„œë“  ì¦ê¸¸ ìˆ˜ ìžˆëŠ” ë§Œí¼ ìž¥ì†Œì— êµ¬ì• ë°›ì§€ ì•Šê³  ì¹œêµ¬ë“¤ê³¼ ìƒìƒì˜ ë‚˜ëž˜ë¥¼ íŽ¼ ìˆ˜ ìžˆì§€ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionWhatIsRobloxParagraphOne()
 	{
-		return "상상력을 쑥쑥 키워주는 Roblox는 월 방문자 수 4,400만을 자랑하는 세계 최대의 소셜 게임 플랫폼으로, 지금도 계속 성장하고 있어요. Roblox에서는 사용자가 직접 모험을 창조하고, 게임을 플레이할 수 있죠. 또한, 역할 놀이를 즐기고 친구들과 함께 새로운 것들을 배울 수 있어요. 누구나 참여할 수 있는 '상상 플랫폼'. 그것이 바로 Roblox랍니다.";
+		return "ìƒìƒë ¥ì„ ì‘¥ì‘¥ í‚¤ì›Œì£¼ëŠ” RobloxëŠ” ì›” ë°©ë¬¸ìž ìˆ˜ 4,400ë§Œì„ ìžëž‘í•˜ëŠ” ì„¸ê³„ ìµœëŒ€ì˜ ì†Œì…œ ê²Œìž„ í”Œëž«í¼ìœ¼ë¡œ, ì§€ê¸ˆë„ ê³„ì† ì„±ìž¥í•˜ê³  ìžˆì–´ìš”. Robloxì—ì„œëŠ” ì‚¬ìš©ìžê°€ ì§ì ‘ ëª¨í—˜ì„ ì°½ì¡°í•˜ê³ , ê²Œìž„ì„ í”Œë ˆì´í•  ìˆ˜ ìžˆì£ . ë˜í•œ, ì—­í•  ë†€ì´ë¥¼ ì¦ê¸°ê³  ì¹œêµ¬ë“¤ê³¼ í•¨ê»˜ ìƒˆë¡œìš´ ê²ƒë“¤ì„ ë°°ìš¸ ìˆ˜ ìžˆì–´ìš”. ëˆ„êµ¬ë‚˜ ì°¸ì—¬í•  ìˆ˜ ìžˆëŠ” 'ìƒìƒ í”Œëž«í¼'. ê·¸ê²ƒì´ ë°”ë¡œ Robloxëžë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxOnDevice()
 	{
-		return "어디서든 즐길 수 있어요";
+		return "ì–´ë””ì„œë“  ì¦ê¸¸ ìˆ˜ ìžˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForHeadingWhatIsRoblox()
 	{
-		return "Roblox란?";
+		return "Robloxëž€?";
 	}
 
 	protected override string _GetTemplateForHeadingWhatIsRobloxParagraphTwo()
 	{
-		return "친구들과 함께 상상력을 펼기치엔 Roblox만한 곳도 없죠. Roblox는 사용자가 직접 개발한 1,500만 개 이상의 게임을 자랑하는 세계 최대의 사용자 제작 온라인 게임 플랫폼으로 어린이 및 10대가 즐겨 찾는 1등 게임 웹사이트랍니다(comScore 조사). 매일 많은 이들이 Roblox에 모여 가족 친화적 몰입형 3D 환경에서 모험을 창조하고 게임 및 역할 놀이를 즐기며 친구들과 함께 배워 나가고 있어요.";
+		return "ì¹œêµ¬ë“¤ê³¼ í•¨ê»˜ ìƒìƒë ¥ì„ íŽ¼ê¸°ì¹˜ì—” Robloxë§Œí•œ ê³³ë„ ì—†ì£ . RobloxëŠ” ì‚¬ìš©ìžê°€ ì§ì ‘ ê°œë°œí•œ 1,500ë§Œ ê°œ ì´ìƒì˜ ê²Œìž„ì„ ìžëž‘í•˜ëŠ” ì„¸ê³„ ìµœëŒ€ì˜ ì‚¬ìš©ìž ì œìž‘ ì˜¨ë¼ì¸ ê²Œìž„ í”Œëž«í¼ìœ¼ë¡œ ì–´ë¦°ì´ ë° 10ëŒ€ê°€ ì¦ê²¨ ì°¾ëŠ” 1ë“± ê²Œìž„ ì›¹ì‚¬ì´íŠ¸ëžë‹ˆë‹¤(comScore ì¡°ì‚¬). ë§¤ì¼ ë§Žì€ ì´ë“¤ì´ Robloxì— ëª¨ì—¬ ê°€ì¡± ì¹œí™”ì  ëª°ìž…í˜• 3D í™˜ê²½ì—ì„œ ëª¨í—˜ì„ ì°½ì¡°í•˜ê³  ê²Œìž„ ë° ì—­í•  ë†€ì´ë¥¼ ì¦ê¸°ë©° ì¹œêµ¬ë“¤ê³¼ í•¨ê»˜ ë°°ì›Œ ë‚˜ê°€ê³  ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "소개";
+		return "ì†Œê°œ";
 	}
 
 	protected override string _GetTemplateForLabelGetOnGooglePlay()
 	{
-		return "Google Play에서 다운로드";
+		return "Google Playì—ì„œ ë‹¤ìš´ë¡œë“œ";
 	}
 
 	protected override string _GetTemplateForLabelPlatforms()
 	{
-		return "플랫폼";
+		return "í”Œëž«í¼";
 	}
 
 	protected override string _GetTemplateForLabelPlay()
 	{
-		return "플레이";
+		return "í”Œë ˆì´";
 	}
 
 	protected override string _GetTemplateForLabelRobloxAmazonStore()
 	{
-		return "Amazon 스토어용 Roblox";
+		return "Amazon ìŠ¤í† ì–´ìš© Roblox";
 	}
 
 	protected override string _GetTemplateForLabelRobloxAppStore()
 	{
-		return "App Store용 Roblox";
+		return "App Storeìš© Roblox";
 	}
 
 	protected override string _GetTemplateForLabelRobloxOnXbox()
 	{
-		return "Xbox 스토어용 Roblox";
+		return "Xbox ìŠ¤í† ì–´ìš© Roblox";
 	}
 
 	protected override string _GetTemplateForLabelRobloxWindowsStore()
 	{
-		return "Windows 스토어용 Roblox";
+		return "Windows ìŠ¤í† ì–´ìš© Roblox";
 	}
+}
+
+
 }

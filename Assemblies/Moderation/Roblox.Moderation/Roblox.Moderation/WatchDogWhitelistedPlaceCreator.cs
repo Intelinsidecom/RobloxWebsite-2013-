@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Moderationpublic {
+    class WatchDogWhitelistedPlaceCreator : IRobloxEntity<long, WatchDogWhitelistedPlaceCreatorDAL>, ICacheableObject<long>, ICacheableObject
 
-namespace Roblox.Platform.Moderation;
-
-public class WatchDogWhitelistedPlaceCreator : IRobloxEntity<long, WatchDogWhitelistedPlaceCreatorDAL>, ICacheableObject<long>, ICacheableObject
 {
 	private WatchDogWhitelistedPlaceCreatorDAL _EntityDAL;
 
@@ -95,4 +94,7 @@ public class WatchDogWhitelistedPlaceCreator : IRobloxEntity<long, WatchDogWhite
 	{
 		yield break;
 	}
+}
+
+
 }

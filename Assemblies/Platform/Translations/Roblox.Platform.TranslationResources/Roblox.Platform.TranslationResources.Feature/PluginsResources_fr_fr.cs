@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PluginsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class PluginsResources_fr_fr : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.ErrorBody"
 	/// English String: "There was a problem installing this plugin. Please try again later."
 	/// </summary>
-	public override string LabelErrorBody => "Un problème est survenu lors de l'installation de ce plugin. Veuillez réessayer plus tard.";
+	public override string LabelErrorBody => "Un problÃ¨me est survenu lors de l'installation de ce plugin. Veuillez rÃ©essayer plus tard.";
 
 	/// <summary>
 	/// Key: "Label.ErrorTitle"
@@ -28,37 +28,37 @@ internal class PluginsResources_fr_fr : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.Reinstall"
 	/// English String: "Reinstall"
 	/// </summary>
-	public override string LabelReinstall => "Réinstaller";
+	public override string LabelReinstall => "RÃ©installer";
 
 	/// <summary>
 	/// Key: "Label.SuccessTitle"
 	/// English String: "Plugin Installed"
 	/// </summary>
-	public override string LabelSuccessTitle => "Plugin installé";
+	public override string LabelSuccessTitle => "Plugin installÃ©";
 
 	/// <summary>
 	/// Key: "Label.UpdateErrorBody"
 	/// English String: "There was a problem updating this plugin. Please try again later."
 	/// </summary>
-	public override string LabelUpdateErrorBody => "Un problème est survenu lors de la mise à jour de ce plugin. Veuillez réessayer plus tard.";
+	public override string LabelUpdateErrorBody => "Un problÃ¨me est survenu lors de la mise Ã  jour de ce plugin. Veuillez rÃ©essayer plus tard.";
 
 	/// <summary>
 	/// Key: "Label.UpdateErrorTitle"
 	/// English String: "Error Updating Plugin"
 	/// </summary>
-	public override string LabelUpdateErrorTitle => "Erreur lors de la mise à jour du plugin";
+	public override string LabelUpdateErrorTitle => "Erreur lors de la mise Ã  jour du plugin";
 
 	/// <summary>
 	/// Key: "Label.UpdateSuccessTitle"
 	/// English String: "Plugin Update"
 	/// </summary>
-	public override string LabelUpdateSuccessTitle => "Plugin mis à jour";
+	public override string LabelUpdateSuccessTitle => "Plugin mis Ã  jour";
 
 	/// <summary>
 	/// Key: "Label.UpdateText"
 	/// English String: "Update"
 	/// </summary>
-	public override string LabelUpdateText => "Mise à jour";
+	public override string LabelUpdateText => "Mise Ã  jour";
 
 	public PluginsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -67,7 +67,7 @@ internal class PluginsResources_fr_fr : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelErrorBody()
 	{
-		return "Un problème est survenu lors de l'installation de ce plugin. Veuillez réessayer plus tard.";
+		return "Un problÃ¨me est survenu lors de l'installation de ce plugin. Veuillez rÃ©essayer plus tard.";
 	}
 
 	protected override string _GetTemplateForLabelErrorTitle()
@@ -82,7 +82,7 @@ internal class PluginsResources_fr_fr : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelReinstall()
 	{
-		return "Réinstaller";
+		return "RÃ©installer";
 	}
 
 	/// <summary>
@@ -91,27 +91,27 @@ internal class PluginsResources_fr_fr : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelSuccessBody(string item)
 	{
-		return $"{item} a été installé\u00a0!";
+		return $"{item} a Ã©tÃ© installÃ©\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelSuccessBody()
 	{
-		return "{item} a été installé\u00a0!";
+		return "{item} a Ã©tÃ© installÃ©\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelSuccessTitle()
 	{
-		return "Plugin installé";
+		return "Plugin installÃ©";
 	}
 
 	protected override string _GetTemplateForLabelUpdateErrorBody()
 	{
-		return "Un problème est survenu lors de la mise à jour de ce plugin. Veuillez réessayer plus tard.";
+		return "Un problÃ¨me est survenu lors de la mise Ã  jour de ce plugin. Veuillez rÃ©essayer plus tard.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateErrorTitle()
 	{
-		return "Erreur lors de la mise à jour du plugin";
+		return "Erreur lors de la mise Ã  jour du plugin";
 	}
 
 	/// <summary>
@@ -120,21 +120,24 @@ internal class PluginsResources_fr_fr : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelUpdateSuccessBody(string item)
 	{
-		return $"{item} a été mis à jour\u00a0! Veuillez ouvrir une nouvelle fenêtre pour que les changements puissent être appliqués.";
+		return $"{item} a Ã©tÃ© mis Ã  jour\u00a0! Veuillez ouvrir une nouvelle fenÃªtre pour que les changements puissent Ãªtre appliquÃ©s.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessBody()
 	{
-		return "{item} a été mis à jour\u00a0! Veuillez ouvrir une nouvelle fenêtre pour que les changements puissent être appliqués.";
+		return "{item} a Ã©tÃ© mis Ã  jour\u00a0! Veuillez ouvrir une nouvelle fenÃªtre pour que les changements puissent Ãªtre appliquÃ©s.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessTitle()
 	{
-		return "Plugin mis à jour";
+		return "Plugin mis Ã  jour";
 	}
 
 	protected override string _GetTemplateForLabelUpdateText()
 	{
-		return "Mise à jour";
+		return "Mise Ã  jour";
 	}
+}
+
+
 }

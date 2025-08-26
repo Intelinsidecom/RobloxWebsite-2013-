@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public abstract class GameSortSearchBaseEvent : WebEventBase
 
-public abstract class GameSortSearchBaseEvent : WebEventBase
 {
 	private const string _GamesStartIndex = "GamesStartIndex";
 
@@ -31,3 +32,12 @@ public abstract class GameSortSearchBaseEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

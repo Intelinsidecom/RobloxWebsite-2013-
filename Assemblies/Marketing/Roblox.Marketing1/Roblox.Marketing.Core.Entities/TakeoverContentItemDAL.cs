@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Marketing.Core.Entitiesinternal {
+    class TakeoverContentItemDAL
 
-namespace Roblox.Platform.Marketing.Core.Entities;
-
-internal class TakeoverContentItemDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxMarketing;
 
@@ -183,4 +182,7 @@ internal class TakeoverContentItemDAL
 		};
 		return RobloxDatabase.RobloxMarketing.Lookup("TakeoverContentItems_GetTakeoverContentItemByTakeoverIDContentItemTypeIDAndContentItemTargetID", BuildDAL, queryParameters);
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Localization.Accounts.Propertiesinternal {
+    interface ISettings
 
-namespace Roblox.Platform.Localization.Accounts.Properties;
-
-internal interface ISettings
 {
 	int AccountLocaleUpdateUserIdFloodCheckerLimit { get; }
 
@@ -29,4 +28,7 @@ internal interface ISettings
 	int AccountCountryUpdateForUserFloodCheckerLimit { get; }
 
 	TimeSpan AccountCountryUpdateForUserFloodCheckerExpiry { get; }
+}
+
+
 }

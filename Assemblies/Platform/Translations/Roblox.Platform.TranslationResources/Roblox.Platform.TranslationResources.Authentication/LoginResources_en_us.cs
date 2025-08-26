@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class LoginResources_en_us : TranslationResourcesBase, ILoginResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class LoginResources_en_us : TranslationResourcesBase, ILoginResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -169,9 +168,9 @@ internal class LoginResources_en_us : TranslationResourcesBase, ILoginResources,
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging in…"
+	/// English String: "Logging inâ€¦"
 	/// </summary>
-	public virtual string LabelLoggingInSpinnerText => "Logging in…";
+	public virtual string LabelLoggingInSpinnerText => "Logging inâ€¦";
 
 	/// <summary>
 	/// Key: "Label.Login"
@@ -845,7 +844,7 @@ internal class LoginResources_en_us : TranslationResourcesBase, ILoginResources,
 
 	protected virtual string _GetTemplateForLabelLoggingInSpinnerText()
 	{
-		return "Logging in…";
+		return "Logging inâ€¦";
 	}
 
 	protected virtual string _GetTemplateForLabelLogin()
@@ -1051,4 +1050,7 @@ internal class LoginResources_en_us : TranslationResourcesBase, ILoginResources,
 	{
 		return "Your WeChat is not real-name verified. Please use a real-name verified WeChat account and try again. Please visit https://jiazhang.qq.com/zk/home.html";
 	}
+}
+
+
 }

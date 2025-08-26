@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class UserCreatedEventArgs : WebEventArgs
 
-public class UserCreatedEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// Whether the user was presented with Captcha during signup.
@@ -37,3 +38,12 @@ public class UserCreatedEventArgs : WebEventArgs
 	/// </summary>
 	public string VerificationMethod { get; set; }
 }
+
+
+}
+
+
+
+
+
+

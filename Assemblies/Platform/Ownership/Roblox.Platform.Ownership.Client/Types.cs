@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Roblox.DataV2.Core; // for SortOrder
 
-namespace Roblox.Ownership.Client
+namespace Roblox.Platform.Ownership.Client
 {
     public interface IOwnershipResult
     {

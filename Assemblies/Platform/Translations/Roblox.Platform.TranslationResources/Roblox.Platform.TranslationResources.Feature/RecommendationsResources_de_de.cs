@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RecommendationsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -57,7 +57,7 @@ internal class RecommendationsResources_de_de : RecommendationsResources_en_us, 
 	/// Key: "Label.NoReSellers"
 	/// English String: "No Resellers"
 	/// </summary>
-	public override string LabelNoReSellers => "Keine Wiederverkäufer";
+	public override string LabelNoReSellers => "Keine WiederverkÃ¤ufer";
 
 	/// <summary>
 	/// Key: "Label.OffSale"
@@ -151,11 +151,14 @@ internal class RecommendationsResources_de_de : RecommendationsResources_en_us, 
 
 	protected override string _GetTemplateForLabelNoReSellers()
 	{
-		return "Keine Wiederverkäufer";
+		return "Keine WiederverkÃ¤ufer";
 	}
 
 	protected override string _GetTemplateForLabelOffSale()
 	{
 		return "Nicht mehr im Angebot";
 	}
+}
+
+
 }

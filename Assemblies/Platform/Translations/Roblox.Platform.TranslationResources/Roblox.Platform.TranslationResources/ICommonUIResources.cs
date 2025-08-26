@@ -1,12 +1,14 @@
-using Roblox.TranslationResources.CommonUI;
+﻿using Roblox.TranslationResources.CommonUI;
+namespace Roblox.Platform.TranslationResourcespublic {
+    interface ICommonUIResources : ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-public interface ICommonUIResources : ITranslationResourcesNamespacesGroup
 {
 	IControlsResources Controls { get; }
 
 	IFeaturesResources Features { get; }
 
 	IMessagesResources Messages { get; }
+}
+
+
 }

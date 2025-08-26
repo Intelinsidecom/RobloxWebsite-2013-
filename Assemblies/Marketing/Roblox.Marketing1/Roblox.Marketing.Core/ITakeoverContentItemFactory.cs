@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Marketing.Core {
+    /// <summary>
 
-namespace Roblox.Platform.Marketing.Core;
-
-/// <summary>
 /// Creates and Gets TakeoverContentItems which are used to target specific content for takeover ads.
 ///  </summary>
 public interface ITakeoverContentItemFactory
@@ -46,4 +45,7 @@ public interface ITakeoverContentItemFactory
 	/// <param name="contentItemTargetId">The ID of the contentItemTargetID property to set.</param>
 	/// <returns>The new <see cref="T:Roblox.Platform.Marketing.Core.ITakeoverContentItem" />.</returns>
 	ITakeoverContentItem CreateTakeoverContentItem(int takeoverId, ContentItemType contentItemType, long contentItemTargetId);
+}
+
+
 }

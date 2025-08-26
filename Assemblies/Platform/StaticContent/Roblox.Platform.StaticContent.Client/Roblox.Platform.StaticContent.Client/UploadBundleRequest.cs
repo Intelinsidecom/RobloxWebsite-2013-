@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.StaticContent.Client {
+    [DataContract]
 
-namespace Roblox.StaticContent.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 internal class UploadBundleRequest
 {
@@ -15,4 +14,7 @@ internal class UploadBundleRequest
 
 	[DataMember(Name = "bundleContents")]
 	public string BundleContents { get; set; }
+}
+
+
 }

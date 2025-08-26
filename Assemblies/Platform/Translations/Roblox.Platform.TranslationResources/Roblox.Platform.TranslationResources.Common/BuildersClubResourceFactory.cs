@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class BuildersClubResourceFactory
 
-internal static class BuildersClubResourceFactory
 {
 	public const string FullNamespace = "Common.BuildersClub";
 
@@ -21,4 +21,7 @@ internal static class BuildersClubResourceFactory
 			_ => new BuildersClubResources_en_us(state), 
 		};
 	}
+}
+
+
 }

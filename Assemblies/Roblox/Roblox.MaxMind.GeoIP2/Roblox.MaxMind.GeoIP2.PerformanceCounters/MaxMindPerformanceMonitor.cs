@@ -127,7 +127,7 @@ internal class MaxMindPerformanceMonitor : IMaxMindPerformanceMonitor
 				OtherWebExceptionStatusErrorsPerSecond = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
-		CounterCreator.InitializeMultiInstance("Roblox.MaxMindV1", _ApiName, httpCounters);
+		CounterInitializer.InitializeMultiInstance("Roblox.MaxMindV1", _ApiName, httpCounters);
 	}
 
 	public virtual void IncrementResponse(TimeSpan requestTime)

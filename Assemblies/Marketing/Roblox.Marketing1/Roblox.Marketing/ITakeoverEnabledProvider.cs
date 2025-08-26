@@ -1,8 +1,7 @@
-using Roblox.Platform.Membership;
+﻿using Roblox.Platform.Membership;
+namespace Roblox.Marketing {
+    /// <summary>
 
-namespace Roblox.Platform.Marketing;
-
-/// <summary>
 /// Provides a common interface for checking whether or not a takeover is enabled.
 /// </summary>
 public interface ITakeoverEnabledProvider
@@ -20,4 +19,7 @@ public interface ITakeoverEnabledProvider
 	/// <returns>Whether or not a takeover of the given takeover type is enabled for
 	/// the given user in the given country.</returns>
 	bool TakeoverEnabled(byte takeoverTypeId, IUser user, bool isApp, int? userCountryId, ContentItemType? contentType, long? contentItemTargetId);
+}
+
+
 }

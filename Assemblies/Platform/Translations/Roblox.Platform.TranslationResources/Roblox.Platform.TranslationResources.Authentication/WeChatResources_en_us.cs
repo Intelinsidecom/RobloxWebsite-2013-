@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class WeChatResources_en_us : TranslationResourcesBase, IWeChatResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class WeChatResources_en_us : TranslationResourcesBase, IWeChatResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -38,4 +37,7 @@ internal class WeChatResources_en_us : TranslationResourcesBase, IWeChatResource
 	{
 		return "WeChat Login";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PlaceThumbnailsResources_en_us : TranslationResourcesBase, IPlaceThumbnailsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PlaceThumbnailsResources_en_us : TranslationResourcesBase, IPlaceThumbnailsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -118,4 +117,7 @@ internal class PlaceThumbnailsResources_en_us : TranslationResourcesBase, IPlace
 	{
 		return "Previous";
 	}
+}
+
+
 }

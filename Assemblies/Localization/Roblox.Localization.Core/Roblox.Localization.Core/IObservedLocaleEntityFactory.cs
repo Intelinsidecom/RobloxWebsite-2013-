@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Coreinternal {
+    interface IObservedLocaleEntityFactory
 
-internal interface IObservedLocaleEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Core.IObservedLocaleEntity" /> by ID.
@@ -31,4 +31,7 @@ internal interface IObservedLocaleEntityFactory
 	/// <param name="supportedLocaleId">supported locale associated with give locale</param>
 	/// <returns></returns>
 	IObservedLocaleEntity Create(string locale, int? languageId, int? supportedLocaleId);
+}
+
+
 }

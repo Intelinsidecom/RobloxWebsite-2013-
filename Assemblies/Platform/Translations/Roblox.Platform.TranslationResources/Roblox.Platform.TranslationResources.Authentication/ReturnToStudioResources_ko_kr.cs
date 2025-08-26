@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ReturnToStudioResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,26 +11,26 @@ internal class ReturnToStudioResources_ko_kr : ReturnToStudioResources_en_us, IR
 	/// Logout the current user
 	/// English String: "Switch Accounts"
 	/// </summary>
-	public override string ActionLogout => "계정 전환";
+	public override string ActionLogout => "ê³„ì • ì „í™˜";
 
 	/// <summary>
 	/// Key: "Action.OpenStudio"
 	/// Open studio
 	/// English String: "Open Studio"
 	/// </summary>
-	public override string ActionOpenStudio => "Studio 열기";
+	public override string ActionOpenStudio => "Studio ì—´ê¸°";
 
 	/// <summary>
 	/// Key: "Description.OpeningStudio"
 	/// English String: "Opening Roblox Studio now..."
 	/// </summary>
-	public override string DescriptionOpeningStudio => "Roblox Studio 여는 중...";
+	public override string DescriptionOpeningStudio => "Roblox Studio ì—¬ëŠ” ì¤‘...";
 
 	/// <summary>
 	/// Key: "Label.StudioHelp"
 	/// English String: "If Studio does not open, click here for help"
 	/// </summary>
-	public override string LabelStudioHelp => "Roblox Studio가 열리지 않으면 여기를 클릭해 도움을 받아보세요";
+	public override string LabelStudioHelp => "Roblox Studioê°€ ì—´ë¦¬ì§€ ì•Šìœ¼ë©´ ì—¬ê¸°ë¥¼ í´ë¦­í•´ ë„ì›€ì„ ë°›ì•„ë³´ì„¸ìš”";
 
 	public ReturnToStudioResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -39,12 +39,12 @@ internal class ReturnToStudioResources_ko_kr : ReturnToStudioResources_en_us, IR
 
 	protected override string _GetTemplateForActionLogout()
 	{
-		return "계정 전환";
+		return "ê³„ì • ì „í™˜";
 	}
 
 	protected override string _GetTemplateForActionOpenStudio()
 	{
-		return "Studio 열기";
+		return "Studio ì—´ê¸°";
 	}
 
 	/// <summary>
@@ -54,17 +54,17 @@ internal class ReturnToStudioResources_ko_kr : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionAttemptedUsername(string username)
 	{
-		return $"Roblox Studio에 {username}(으)로 로그인하려 합니다";
+		return $"Roblox Studioì— {username}(ìœ¼)ë¡œ ë¡œê·¸ì¸í•˜ë ¤ í•©ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForDescriptionAttemptedUsername()
 	{
-		return "Roblox Studio에 {username}(으)로 로그인하려 합니다";
+		return "Roblox Studioì— {username}(ìœ¼)ë¡œ ë¡œê·¸ì¸í•˜ë ¤ í•©ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForDescriptionOpeningStudio()
 	{
-		return "Roblox Studio 여는 중...";
+		return "Roblox Studio ì—¬ëŠ” ì¤‘...";
 	}
 
 	/// <summary>
@@ -74,12 +74,12 @@ internal class ReturnToStudioResources_ko_kr : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionOpenStudioSuggestion(string username)
 	{
-		return $"{username}(으)로 Roblox Studio를 열까요?";
+		return $"{username}(ìœ¼)ë¡œ Roblox Studioë¥¼ ì—´ê¹Œìš”?";
 	}
 
 	protected override string _GetTemplateForDescriptionOpenStudioSuggestion()
 	{
-		return "{username}(으)로 Roblox Studio를 열까요?";
+		return "{username}(ìœ¼)ë¡œ Roblox Studioë¥¼ ì—´ê¹Œìš”?";
 	}
 
 	/// <summary>
@@ -89,16 +89,19 @@ internal class ReturnToStudioResources_ko_kr : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string HeadingGreeting(string username)
 	{
-		return $"{username}님, 안녕하세요!";
+		return $"{username}ë‹˜, ì•ˆë…•í•˜ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForHeadingGreeting()
 	{
-		return "{username}님, 안녕하세요!";
+		return "{username}ë‹˜, ì•ˆë…•í•˜ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForLabelStudioHelp()
 	{
-		return "Roblox Studio가 열리지 않으면 여기를 클릭해 도움을 받아보세요";
+		return "Roblox Studioê°€ ì—´ë¦¬ì§€ ì•Šìœ¼ë©´ ì—¬ê¸°ë¥¼ í´ë¦­í•´ ë„ì›€ì„ ë°›ì•„ë³´ì„¸ìš”";
 	}
+}
+
+
 }

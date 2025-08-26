@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class FriendsResourceFactory
 
-internal static class FriendsResourceFactory
 {
 	public const string FullNamespace = "Feature.Friends";
 
@@ -21,4 +21,7 @@ internal static class FriendsResourceFactory
 			_ => new FriendsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

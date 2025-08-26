@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ShopDialogResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -31,26 +31,26 @@ internal class ShopDialogResources_pt_br : ShopDialogResources_en_us, IShopDialo
 	/// age warning message
 	/// English String: "Please note that you need to be over 18 to purchase products online. The Amazon store is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionAgeWarning => "Fique ciente de que você precisa ter 18 anos ou mais para comprar produtos online. A loja da Amazon não faz parte de Roblox.com e é regida por uma política de privacidade separada.";
+	public override string DescriptionAgeWarning => "Fique ciente de que vocÃª precisa ter 18 anos ou mais para comprar produtos online. A loja da Amazon nÃ£o faz parte de Roblox.com e Ã© regida por uma polÃ­tica de privacidade separada.";
 
 	/// <summary>
 	/// Key: "Description.PurchaseAgeWarning"
 	/// English String: "Please note that you need to be over 18 to purchase products online. We hope to see you again soon!"
 	/// </summary>
-	public override string DescriptionPurchaseAgeWarning => "Fique ciente de que você precisa ter 18 anos ou mais para comprar produtos online. Esperamos ver você novamente em breve";
+	public override string DescriptionPurchaseAgeWarning => "Fique ciente de que vocÃª precisa ter 18 anos ou mais para comprar produtos online. Esperamos ver vocÃª novamente em breve";
 
 	/// <summary>
 	/// Key: "Description.RetailWebsiteRedirect"
-	/// English String: "Heads up, Robloxian – by clicking “continue,” you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
+	/// English String: "Heads up, Robloxian â€“ by clicking â€œcontinue,â€ you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
 	/// </summary>
-	public override string DescriptionRetailWebsiteRedirect => "Atenção, robloxiano - ao clicar em \"continuar\", você será redirecionado para um site comercial que não é de propriedade nem operado pela Roblox. Ele pode possuir termos e políticas de privacidade diferentes.";
+	public override string DescriptionRetailWebsiteRedirect => "AtenÃ§Ã£o, robloxiano - ao clicar em \"continuar\", vocÃª serÃ¡ redirecionado para um site comercial que nÃ£o Ã© de propriedade nem operado pela Roblox. Ele pode possuir termos e polÃ­ticas de privacidade diferentes.";
 
 	/// <summary>
 	/// Key: "Heading.LeavingRoblox"
 	/// dialog heading
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingLeavingRoblox => "Você está saindo do Roblox";
+	public override string HeadingLeavingRoblox => "VocÃª estÃ¡ saindo do Roblox";
 
 	public ShopDialogResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -74,7 +74,7 @@ internal class ShopDialogResources_pt_br : ShopDialogResources_en_us, IShopDialo
 
 	protected override string _GetTemplateForDescriptionAgeWarning()
 	{
-		return "Fique ciente de que você precisa ter 18 anos ou mais para comprar produtos online. A loja da Amazon não faz parte de Roblox.com e é regida por uma política de privacidade separada.";
+		return "Fique ciente de que vocÃª precisa ter 18 anos ou mais para comprar produtos online. A loja da Amazon nÃ£o faz parte de Roblox.com e Ã© regida por uma polÃ­tica de privacidade separada.";
 	}
 
 	/// <summary>
@@ -84,26 +84,29 @@ internal class ShopDialogResources_pt_br : ShopDialogResources_en_us, IShopDialo
 	/// </summary>
 	public override string DescriptionAmazonRedirect(string shopLink)
 	{
-		return $"Você está prestes a visitar nossa loja da Amazon. Você será redirecionado para a loja de produtos do Roblox em {shopLink}.";
+		return $"VocÃª estÃ¡ prestes a visitar nossa loja da Amazon. VocÃª serÃ¡ redirecionado para a loja de produtos do Roblox em {shopLink}.";
 	}
 
 	protected override string _GetTemplateForDescriptionAmazonRedirect()
 	{
-		return "Você está prestes a visitar nossa loja da Amazon. Você será redirecionado para a loja de produtos do Roblox em {shopLink}.";
+		return "VocÃª estÃ¡ prestes a visitar nossa loja da Amazon. VocÃª serÃ¡ redirecionado para a loja de produtos do Roblox em {shopLink}.";
 	}
 
 	protected override string _GetTemplateForDescriptionPurchaseAgeWarning()
 	{
-		return "Fique ciente de que você precisa ter 18 anos ou mais para comprar produtos online. Esperamos ver você novamente em breve";
+		return "Fique ciente de que vocÃª precisa ter 18 anos ou mais para comprar produtos online. Esperamos ver vocÃª novamente em breve";
 	}
 
 	protected override string _GetTemplateForDescriptionRetailWebsiteRedirect()
 	{
-		return "Atenção, robloxiano - ao clicar em \"continuar\", você será redirecionado para um site comercial que não é de propriedade nem operado pela Roblox. Ele pode possuir termos e políticas de privacidade diferentes.";
+		return "AtenÃ§Ã£o, robloxiano - ao clicar em \"continuar\", vocÃª serÃ¡ redirecionado para um site comercial que nÃ£o Ã© de propriedade nem operado pela Roblox. Ele pode possuir termos e polÃ­ticas de privacidade diferentes.";
 	}
 
 	protected override string _GetTemplateForHeadingLeavingRoblox()
 	{
-		return "Você está saindo do Roblox";
+		return "VocÃª estÃ¡ saindo do Roblox";
 	}
+}
+
+
 }

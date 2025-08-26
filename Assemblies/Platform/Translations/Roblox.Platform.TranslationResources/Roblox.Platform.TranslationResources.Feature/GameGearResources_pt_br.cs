@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameGearResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -40,7 +40,7 @@ internal class GameGearResources_pt_br : GameGearResources_en_us, IGameGearResou
 	/// Key: "Label.NotForSale"
 	/// English String: "This item is not for sale."
 	/// </summary>
-	public override string LabelNotForSale => "Este item não está disponível para compra.";
+	public override string LabelNotForSale => "Este item nÃ£o estÃ¡ disponÃ­vel para compra.";
 
 	/// <summary>
 	/// Key: "Label.Ok"
@@ -52,7 +52,7 @@ internal class GameGearResources_pt_br : GameGearResources_en_us, IGameGearResou
 	/// Key: "Label.Owned"
 	/// English String: "Owned"
 	/// </summary>
-	public override string LabelOwned => "Você possui este item";
+	public override string LabelOwned => "VocÃª possui este item";
 
 	/// <summary>
 	/// Key: "Label.Rent"
@@ -70,7 +70,7 @@ internal class GameGearResources_pt_br : GameGearResources_en_us, IGameGearResou
 	/// Key: "Label.Sorry"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorry => "Infelizmente, não conseguimos remover o item do seu jogo. Tente novamente.";
+	public override string LabelSorry => "Infelizmente, nÃ£o conseguimos remover o item do seu jogo. Tente novamente.";
 
 	/// <summary>
 	/// Key: "Label.Success"
@@ -114,12 +114,12 @@ internal class GameGearResources_pt_br : GameGearResources_en_us, IGameGearResou
 	/// </summary>
 	public override string LabelItemAddedToGame(string item)
 	{
-		return $"Você adicionou {item} ao seu jogo.";
+		return $"VocÃª adicionou {item} ao seu jogo.";
 	}
 
 	protected override string _GetTemplateForLabelItemAddedToGame()
 	{
-		return "Você adicionou {item} ao seu jogo.";
+		return "VocÃª adicionou {item} ao seu jogo.";
 	}
 
 	/// <summary>
@@ -128,17 +128,17 @@ internal class GameGearResources_pt_br : GameGearResources_en_us, IGameGearResou
 	/// </summary>
 	public override string LabelItemRemovedFromGame(string item)
 	{
-		return $"Você removeu {item} do seu jogo.";
+		return $"VocÃª removeu {item} do seu jogo.";
 	}
 
 	protected override string _GetTemplateForLabelItemRemovedFromGame()
 	{
-		return "Você removeu {item} do seu jogo.";
+		return "VocÃª removeu {item} do seu jogo.";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
 	{
-		return "Este item não está disponível para compra.";
+		return "Este item nÃ£o estÃ¡ disponÃ­vel para compra.";
 	}
 
 	protected override string _GetTemplateForLabelOk()
@@ -148,7 +148,7 @@ internal class GameGearResources_pt_br : GameGearResources_en_us, IGameGearResou
 
 	protected override string _GetTemplateForLabelOwned()
 	{
-		return "Você possui este item";
+		return "VocÃª possui este item";
 	}
 
 	protected override string _GetTemplateForLabelRent()
@@ -163,11 +163,14 @@ internal class GameGearResources_pt_br : GameGearResources_en_us, IGameGearResou
 
 	protected override string _GetTemplateForLabelSorry()
 	{
-		return "Infelizmente, não conseguimos remover o item do seu jogo. Tente novamente.";
+		return "Infelizmente, nÃ£o conseguimos remover o item do seu jogo. Tente novamente.";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
 		return "Sucesso!";
 	}
+}
+
+
 }

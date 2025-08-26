@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SourceLanguageResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -25,7 +25,7 @@ internal class SourceLanguageResources_fr_fr : SourceLanguageResources_en_us, IS
 	/// The label for source language tooltip
 	/// English String: "The source language represents the language the game has been written in."
 	/// </summary>
-	public override string DescriptionSourceLanguage => "La langue source est la langue dans laquelle le jeu a été écrit.";
+	public override string DescriptionSourceLanguage => "La langue source est la langue dans laquelle le jeu a Ã©tÃ© Ã©crit.";
 
 	/// <summary>
 	/// Key: "Heading.ChangeSourceLanguage"
@@ -46,7 +46,7 @@ internal class SourceLanguageResources_fr_fr : SourceLanguageResources_en_us, IS
 	/// The label for not specified in source language dropdown
 	/// English String: "Not Specified"
 	/// </summary>
-	public override string LabelNotSpecified => "Non spécifié(e)";
+	public override string LabelNotSpecified => "Non spÃ©cifiÃ©(e)";
 
 	/// <summary>
 	/// Key: "Label.SourceLanguage"
@@ -60,7 +60,7 @@ internal class SourceLanguageResources_fr_fr : SourceLanguageResources_en_us, IS
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "Erreur\u00a0: une erreur s'est produite. Veuillez réessayer plus tard.";
+	public override string ResponseGeneralError => "Erreur\u00a0: une erreur s'est produite. Veuillez rÃ©essayer plus tard.";
 
 	public SourceLanguageResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -84,17 +84,17 @@ internal class SourceLanguageResources_fr_fr : SourceLanguageResources_en_us, IS
 	/// </summary>
 	public override string DescriptionChangeSourceLanguage(string languageName)
 	{
-		return $"Voulez-vous vraiment sélectionner cette langue\u00a0: {languageName} comme langue source du jeu\u00a0? Celle-ci doit correspondre à la langue dans laquelle le jeu a été écrit.";
+		return $"Voulez-vous vraiment sÃ©lectionner cette langue\u00a0: {languageName} comme langue source du jeu\u00a0? Celle-ci doit correspondre Ã  la langue dans laquelle le jeu a Ã©tÃ© Ã©crit.";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeSourceLanguage()
 	{
-		return "Voulez-vous vraiment sélectionner cette langue\u00a0: {languageName} comme langue source du jeu\u00a0? Celle-ci doit correspondre à la langue dans laquelle le jeu a été écrit.";
+		return "Voulez-vous vraiment sÃ©lectionner cette langue\u00a0: {languageName} comme langue source du jeu\u00a0? Celle-ci doit correspondre Ã  la langue dans laquelle le jeu a Ã©tÃ© Ã©crit.";
 	}
 
 	protected override string _GetTemplateForDescriptionSourceLanguage()
 	{
-		return "La langue source est la langue dans laquelle le jeu a été écrit.";
+		return "La langue source est la langue dans laquelle le jeu a Ã©tÃ© Ã©crit.";
 	}
 
 	protected override string _GetTemplateForHeadingChangeSourceLanguage()
@@ -109,7 +109,7 @@ internal class SourceLanguageResources_fr_fr : SourceLanguageResources_en_us, IS
 
 	protected override string _GetTemplateForLabelNotSpecified()
 	{
-		return "Non spécifié(e)";
+		return "Non spÃ©cifiÃ©(e)";
 	}
 
 	protected override string _GetTemplateForLabelSourceLanguage()
@@ -119,6 +119,9 @@ internal class SourceLanguageResources_fr_fr : SourceLanguageResources_en_us, IS
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "Erreur\u00a0: une erreur s'est produite. Veuillez réessayer plus tard.";
+		return "Erreur\u00a0: une erreur s'est produite. Veuillez rÃ©essayer plus tard.";
 	}
+}
+
+
 }

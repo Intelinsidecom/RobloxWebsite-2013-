@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLeaderboardResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 	/// Key: "Heading.Clans"
 	/// English String: "Clans"
 	/// </summary>
-	public override string HeadingClans => "Clãs";
+	public override string HeadingClans => "ClÃ£s";
 
 	/// <summary>
 	/// Key: "Heading.Players"
@@ -28,13 +28,13 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 	/// Key: "Label.Clan"
 	/// English String: "Clan"
 	/// </summary>
-	public override string LabelClan => "Clã";
+	public override string LabelClan => "ClÃ£";
 
 	/// <summary>
 	/// Key: "Label.Clans"
 	/// English String: "Clans"
 	/// </summary>
-	public override string LabelClans => "Clãs";
+	public override string LabelClans => "ClÃ£s";
 
 	/// <summary>
 	/// Key: "Label.ErrorLoading"
@@ -52,13 +52,13 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 	/// Key: "Label.GoGetPoints"
 	/// English String: "You are not yet ranked for this time period. Go earn some Points!"
 	/// </summary>
-	public override string LabelGoGetPoints => "Você ainda não tem um ranque para este período de tempo. Vá ganhar uns pontos!";
+	public override string LabelGoGetPoints => "VocÃª ainda nÃ£o tem um ranque para este perÃ­odo de tempo. VÃ¡ ganhar uns pontos!";
 
 	/// <summary>
 	/// Key: "Label.Leader"
 	/// English String: "Leader"
 	/// </summary>
-	public override string LabelLeader => "Líder";
+	public override string LabelLeader => "LÃ­der";
 
 	/// <summary>
 	/// Key: "Label.Loading"
@@ -82,7 +82,7 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 	/// Key: "Label.PastMonth"
 	/// English String: "Past Month"
 	/// </summary>
-	public override string LabelPastMonth => "Mês passado";
+	public override string LabelPastMonth => "MÃªs passado";
 
 	/// <summary>
 	/// Key: "Label.PastWeek"
@@ -124,13 +124,13 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 	/// Key: "Label.UpdatedOneHour"
 	/// English String: "Updated approx. 1 hour ago"
 	/// </summary>
-	public override string LabelUpdatedOneHour => "Atualizado há mais ou menos 1 hora";
+	public override string LabelUpdatedOneHour => "Atualizado hÃ¡ mais ou menos 1 hora";
 
 	/// <summary>
 	/// Key: "Label.UpdatedTenMinutes"
 	/// English String: "Updated approx. 10 minutes ago"
 	/// </summary>
-	public override string LabelUpdatedTenMinutes => "Atualizado há mais ou menos 10 minutos";
+	public override string LabelUpdatedTenMinutes => "Atualizado hÃ¡ mais ou menos 10 minutos";
 
 	public GameLeaderboardResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -139,7 +139,7 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForHeadingClans()
 	{
-		return "Clãs";
+		return "ClÃ£s";
 	}
 
 	protected override string _GetTemplateForHeadingPlayers()
@@ -154,12 +154,12 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelClan()
 	{
-		return "Clã";
+		return "ClÃ£";
 	}
 
 	protected override string _GetTemplateForLabelClans()
 	{
-		return "Clãs";
+		return "ClÃ£s";
 	}
 
 	protected override string _GetTemplateForLabelErrorLoading()
@@ -174,12 +174,12 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelGoGetPoints()
 	{
-		return "Você ainda não tem um ranque para este período de tempo. Vá ganhar uns pontos!";
+		return "VocÃª ainda nÃ£o tem um ranque para este perÃ­odo de tempo. VÃ¡ ganhar uns pontos!";
 	}
 
 	protected override string _GetTemplateForLabelLeader()
 	{
-		return "Líder";
+		return "LÃ­der";
 	}
 
 	protected override string _GetTemplateForLabelLoading()
@@ -199,7 +199,7 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelPastMonth()
 	{
-		return "Mês passado";
+		return "MÃªs passado";
 	}
 
 	protected override string _GetTemplateForLabelPastWeek()
@@ -234,11 +234,14 @@ internal class GameLeaderboardResources_pt_br : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelUpdatedOneHour()
 	{
-		return "Atualizado há mais ou menos 1 hora";
+		return "Atualizado hÃ¡ mais ou menos 1 hora";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedTenMinutes()
 	{
-		return "Atualizado há mais ou menos 10 minutos";
+		return "Atualizado hÃ¡ mais ou menos 10 minutos";
 	}
+}
+
+
 }

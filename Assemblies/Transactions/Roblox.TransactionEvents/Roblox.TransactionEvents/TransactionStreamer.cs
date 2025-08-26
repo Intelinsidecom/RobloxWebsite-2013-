@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Roblox.EventLog;
-using Roblox.Platform.EventStream;
+using Roblox.EventStream;
 
 namespace Roblox.TransactionEvents;
 

@@ -1,8 +1,7 @@
-using Roblox.Platform.EventStream.WebEvents.EventArgs;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class AssetTypeHeaderMismatchEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class AssetTypeHeaderMismatchEvent : WebEventBase
 {
 	private const string _Name = "assetTypeHeaderMismatch";
 
@@ -14,3 +13,12 @@ public class AssetTypeHeaderMismatchEvent : WebEventBase
 		AddEventArg("assetId", args.AssetId.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TencentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,14 +11,14 @@ internal class TencentResources_es_es : TencentResources_en_us, ITencentResource
 	/// button text for logging in with QQ (social network application)
 	/// English String: "QQ Login"
 	/// </summary>
-	public override string ActionQQLogin => "Inicio de sesión QQ";
+	public override string ActionQQLogin => "Inicio de sesiÃ³n QQ";
 
 	/// <summary>
 	/// Key: "Action.WeChatLogin"
 	/// button text for logging in with WeChat (social network application)
 	/// English String: "WeChat Login"
 	/// </summary>
-	public override string ActionWeChatLogin => "Inicio de sesión WeChat";
+	public override string ActionWeChatLogin => "Inicio de sesiÃ³n WeChat";
 
 	public TencentResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -27,11 +27,14 @@ internal class TencentResources_es_es : TencentResources_en_us, ITencentResource
 
 	protected override string _GetTemplateForActionQQLogin()
 	{
-		return "Inicio de sesión QQ";
+		return "Inicio de sesiÃ³n QQ";
 	}
 
 	protected override string _GetTemplateForActionWeChatLogin()
 	{
-		return "Inicio de sesión WeChat";
+		return "Inicio de sesiÃ³n WeChat";
 	}
+}
+
+
 }

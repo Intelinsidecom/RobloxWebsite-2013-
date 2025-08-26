@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SocialResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,19 +16,19 @@ internal class SocialResources_de_de : SocialResources_en_us, ISocialResources, 
 	/// Key: "Action.Unlink"
 	/// English String: "Unlink"
 	/// </summary>
-	public override string ActionUnlink => "Verknüpfung aufheben";
+	public override string ActionUnlink => "VerknÃ¼pfung aufheben";
 
 	/// <summary>
 	/// Key: "Description.ConnectedAccounts"
 	/// English String: "Disconnect your connected accounts here. Unlinking an account will log you out of Roblox."
 	/// </summary>
-	public override string DescriptionConnectedAccounts => "Trenne hier deine verbundenen Konten. Wenn du die Verknüpfung eines Kontos aufhebst, wirst du von Roblox abgemeldet.";
+	public override string DescriptionConnectedAccounts => "Trenne hier deine verbundenen Konten. Wenn du die VerknÃ¼pfung eines Kontos aufhebst, wirst du von Roblox abgemeldet.";
 
 	/// <summary>
 	/// Key: "Description.UnlinkLogOutWarning"
 	/// English String: "Unlinking this account will log you out of Roblox. You will have to link your account again to log back in."
 	/// </summary>
-	public override string DescriptionUnlinkLogOutWarning => "Wenn du die Verknüpfung dieses Kontos aufhebst, wirst du von Roblox abgemeldet. Du musst dein Konto erneut verknüpfen, um sich erneut anzumelden.";
+	public override string DescriptionUnlinkLogOutWarning => "Wenn du die VerknÃ¼pfung dieses Kontos aufhebst, wirst du von Roblox abgemeldet. Du musst dein Konto erneut verknÃ¼pfen, um sich erneut anzumelden.";
 
 	/// <summary>
 	/// Key: "Heading.ConnectedAccounts"
@@ -46,7 +46,7 @@ internal class SocialResources_de_de : SocialResources_en_us, ISocialResources, 
 	/// Key: "Response.InvalidPassword"
 	/// English String: "Invalid Password."
 	/// </summary>
-	public override string ResponseInvalidPassword => "Ungültiges Passwort.";
+	public override string ResponseInvalidPassword => "UngÃ¼ltiges Passwort.";
 
 	public SocialResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -60,17 +60,17 @@ internal class SocialResources_de_de : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForActionUnlink()
 	{
-		return "Verknüpfung aufheben";
+		return "VerknÃ¼pfung aufheben";
 	}
 
 	protected override string _GetTemplateForDescriptionConnectedAccounts()
 	{
-		return "Trenne hier deine verbundenen Konten. Wenn du die Verknüpfung eines Kontos aufhebst, wirst du von Roblox abgemeldet.";
+		return "Trenne hier deine verbundenen Konten. Wenn du die VerknÃ¼pfung eines Kontos aufhebst, wirst du von Roblox abgemeldet.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnlinkLogOutWarning()
 	{
-		return "Wenn du die Verknüpfung dieses Kontos aufhebst, wirst du von Roblox abgemeldet. Du musst dein Konto erneut verknüpfen, um sich erneut anzumelden.";
+		return "Wenn du die VerknÃ¼pfung dieses Kontos aufhebst, wirst du von Roblox abgemeldet. Du musst dein Konto erneut verknÃ¼pfen, um sich erneut anzumelden.";
 	}
 
 	protected override string _GetTemplateForHeadingConnectedAccounts()
@@ -84,12 +84,12 @@ internal class SocialResources_de_de : SocialResources_en_us, ISocialResources, 
 	/// </summary>
 	public override string HeadingUnlink(string provider)
 	{
-		return $"Verknüpfung zu {provider} aufheben";
+		return $"VerknÃ¼pfung zu {provider} aufheben";
 	}
 
 	protected override string _GetTemplateForHeadingUnlink()
 	{
-		return "Verknüpfung zu {provider} aufheben";
+		return "VerknÃ¼pfung zu {provider} aufheben";
 	}
 
 	protected override string _GetTemplateForPlaceholderPassword()
@@ -99,6 +99,9 @@ internal class SocialResources_de_de : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForResponseInvalidPassword()
 	{
-		return "Ungültiges Passwort.";
+		return "UngÃ¼ltiges Passwort.";
 	}
+}
+
+
 }

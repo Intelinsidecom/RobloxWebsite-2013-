@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class TranslationAnalyticsResources_en_us : TranslationResourcesBase, ITranslationAnalyticsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class TranslationAnalyticsResources_en_us : TranslationResourcesBase, ITranslationAnalyticsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -149,4 +148,7 @@ internal class TranslationAnalyticsResources_en_us : TranslationResourcesBase, I
 	{
 		return "You do not have sufficient permission to download this report.";
 	}
+}
+
+
 }

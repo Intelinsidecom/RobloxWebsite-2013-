@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
@@ -6,10 +6,9 @@ using Roblox.Common;
 using Roblox.Configuration;
 using Roblox.Data.Interfaces;
 using Roblox.Demographics.Properties;
+namespace Roblox.Platform.Demographicspublic {
+    class IPAddressCountry : IRobloxEntity<int, IPAddressCountryDAL>, ICacheableObject<int>, ICacheableObject, IRemoteCacheableObject
 
-namespace Roblox.Demographics;
-
-public class IPAddressCountry : IRobloxEntity<int, IPAddressCountryDAL>, ICacheableObject<int>, ICacheableObject, IRemoteCacheableObject
 {
 	private IPAddressCountryDAL _EntityDAL;
 
@@ -157,4 +156,7 @@ public class IPAddressCountry : IRobloxEntity<int, IPAddressCountryDAL>, ICachea
 	{
 		return $"IPAddressCountry_IPAddressID:{ipAddressId}_CountryID:{countryId}";
 	}
+}
+
+
 }

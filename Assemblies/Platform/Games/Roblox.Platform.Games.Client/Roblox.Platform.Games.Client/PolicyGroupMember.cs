@@ -1,6 +1,6 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    class PolicyGroupMember
 
-public class PolicyGroupMember
 {
 	public long Id { get; set; }
 
@@ -11,4 +11,7 @@ public class PolicyGroupMember
 	public int Rank { get; set; }
 
 	public double? InclusionRatio { get; set; }
+}
+
+
 }

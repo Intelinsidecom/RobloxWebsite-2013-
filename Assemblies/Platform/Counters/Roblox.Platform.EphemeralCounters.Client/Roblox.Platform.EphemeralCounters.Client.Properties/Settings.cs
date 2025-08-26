@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -7,10 +7,9 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
+namespace Roblox.Platform.EphemeralCounters.Client.Properties {
+    [SettingsProvider(typeof(Provider))]
 
-namespace Roblox.EphemeralCounters.Client.Properties;
-
-[SettingsProvider(typeof(Provider))]
 [ExcludeFromCodeCoverage]
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
@@ -52,4 +51,7 @@ internal sealed class Settings : ApplicationSettingsBase
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
 	}
+}
+
+
 }

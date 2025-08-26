@@ -1,6 +1,6 @@
-namespace Roblox.Localization.Client;
+﻿namespace Roblox.Platform.Localization.Clientpublic {
+    enum SupportedLocaleEnum
 
-public enum SupportedLocaleEnum
 {
 	en_us,
 	es_es,
@@ -48,4 +48,7 @@ public enum SupportedLocaleEnum
 	sr_rs,
 	sv_se,
 	zh_cjv
+}
+
+
 }

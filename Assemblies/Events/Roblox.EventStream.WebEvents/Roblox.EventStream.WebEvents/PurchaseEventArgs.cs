@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Base class for purchase events
 /// </summary>
 public class PurchaseEventArgs : WebEventArgs
@@ -11,3 +12,12 @@ public class PurchaseEventArgs : WebEventArgs
 
 	public string FailureReason { get; set; }
 }
+
+
+}
+
+
+
+
+
+

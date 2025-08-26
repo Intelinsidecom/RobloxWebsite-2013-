@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ChatResources_en_us : TranslationResourcesBase, IChatResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ChatResources_en_us : TranslationResourcesBase, IChatResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1979,4 +1978,7 @@ internal class ChatResources_en_us : TranslationResourcesBase, IChatResources, I
 	{
 		return "You received a party Invite.";
 	}
+}
+
+
 }

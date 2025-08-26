@@ -1,8 +1,7 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderationpublic {
+    interface IReviewTaskRepublisherProvider<out TTask> where TTask : IReviewTask
 
-namespace Roblox.Platform.Moderation;
-
-public interface IReviewTaskRepublisherProvider<out TTask> where TTask : IReviewTask
 {
 	/// <summary>
 	/// Returns a IReviewTaskRepublisher of the appropriate task type.
@@ -11,4 +10,7 @@ public interface IReviewTaskRepublisherProvider<out TTask> where TTask : IReview
 	/// <param name="priority">The specific priority level of the queue to bind the republisher to</param>
 	/// <returns></returns>
 	IReviewTaskRepublisher<TTask> GetReviewTaskRepublisher(ISupportedLocaleIdentifier localeIdentifier, ModerationTaskPriority priority);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RixtyPinResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,73 +10,73 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Action.BuyNow"
 	/// English String: "Buy Now"
 	/// </summary>
-	public override string ActionBuyNow => "지금 구매";
+	public override string ActionBuyNow => "ì§€ê¸ˆ êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "Robux 구매";
+	public override string ActionBuyRobux => "Robux êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Action.MoreBCOptions"
 	/// English String: "More Builders Club Options"
 	/// </summary>
-	public override string ActionMoreBCOptions => "Builders Club 옵션 더 보기";
+	public override string ActionMoreBCOptions => "Builders Club ì˜µì…˜ ë” ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "사용";
+	public override string ActionRedeem => "ì‚¬ìš©";
 
 	/// <summary>
 	/// Key: "Heading.AlreadyHaveCredit"
 	/// English String: "You have Roblox Credit!"
 	/// </summary>
-	public override string HeadingAlreadyHaveCredit => "Roblox 크레딧이 있어요!";
+	public override string HeadingAlreadyHaveCredit => "Roblox í¬ë ˆë”§ì´ ìžˆì–´ìš”!";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobuxUsingRixty"
 	/// English String: "Buy Robux using Rixty"
 	/// </summary>
-	public override string HeadingBuyRobuxUsingRixty => "Rixty로 Robux 구매";
+	public override string HeadingBuyRobuxUsingRixty => "Rixtyë¡œ Robux êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Heading.GetRobuxOrBcWithRixty"
 	/// English String: "Get Robux or Builders Club with Rixty"
 	/// </summary>
-	public override string HeadingGetRobuxOrBcWithRixty => "Rixty로 Robux 또는 Builders Club 구매하기";
+	public override string HeadingGetRobuxOrBcWithRixty => "Rixtyë¡œ Robux ë˜ëŠ” Builders Club êµ¬ë§¤í•˜ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.GetRobuxWithRixty"
 	/// English String: "Get Robux with Rixty"
 	/// </summary>
-	public override string HeadingGetRobuxWithRixty => "Rixty로 Robux 구매";
+	public override string HeadingGetRobuxWithRixty => "Rixtyë¡œ Robux êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Heading.HowToUse"
 	/// English String: "How to Use"
 	/// </summary>
-	public override string HeadingHowToUse => "사용 방법";
+	public override string HeadingHowToUse => "ì‚¬ìš© ë°©ë²•";
 
 	/// <summary>
 	/// Key: "Heading.PayWithRixty"
 	/// English String: "Pay with Rixty"
 	/// </summary>
-	public override string HeadingPayWithRixty => "Rixty로 결제";
+	public override string HeadingPayWithRixty => "Rixtyë¡œ ê²°ì œ";
 
 	/// <summary>
 	/// Key: "Heading.RedeemRixtyCards"
 	/// English String: "Redeem Rixty Cards"
 	/// </summary>
-	public override string HeadingRedeemRixtyCards => "Rixty 카드 사용";
+	public override string HeadingRedeemRixtyCards => "Rixty ì¹´ë“œ ì‚¬ìš©";
 
 	/// <summary>
 	/// Key: "Label.AlreadyHaveAccount"
 	/// English String: "I already have a Rixty account"
 	/// </summary>
-	public override string LabelAlreadyHaveAccount => "이미 Rixty 계정이 있어요";
+	public override string LabelAlreadyHaveAccount => "ì´ë¯¸ Rixty ê³„ì •ì´ ìžˆì–´ìš”";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubImage"
@@ -89,49 +89,49 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Label.EnterPin"
 	/// English String: "Enter PIN:"
 	/// </summary>
-	public override string LabelEnterPin => "PIN 입력:";
+	public override string LabelEnterPin => "PIN ìž…ë ¥:";
 
 	/// <summary>
 	/// Key: "Label.EnterPinImage"
 	/// English String: "Enter Your PIN"
 	/// </summary>
-	public override string LabelEnterPinImage => "PIN 입력";
+	public override string LabelEnterPinImage => "PIN ìž…ë ¥";
 
 	/// <summary>
 	/// Key: "Label.FortyFiveDaysBC"
 	/// English String: "45 Day Builders Club Extension - $10.00 (Existing BC members only)"
 	/// </summary>
-	public override string LabelFortyFiveDaysBC => "45일 Builders Club 연장 - $10.00 (기존 BC 멤버만 해당)";
+	public override string LabelFortyFiveDaysBC => "45ì¼ Builders Club ì—°ìž¥ - $10.00 (ê¸°ì¡´ BC ë©¤ë²„ë§Œ í•´ë‹¹)";
 
 	/// <summary>
 	/// Key: "Label.InstructionForCombineCards"
 	/// English String: "Combine cards for more Roblox credit."
 	/// </summary>
-	public override string LabelInstructionForCombineCards => "카드를 결합하면 더 많은 Roblox 크레딧을 받으실 수 있습니다.";
+	public override string LabelInstructionForCombineCards => "ì¹´ë“œë¥¼ ê²°í•©í•˜ë©´ ë” ë§Žì€ Roblox í¬ë ˆë”§ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Label.InstructionForEnterPin"
 	/// English String: "Enter your Rixty PIN."
 	/// </summary>
-	public override string LabelInstructionForEnterPin => "Rixty PIN을 입력하세요.";
+	public override string LabelInstructionForEnterPin => "Rixty PINì„ ìž…ë ¥í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.OrUppercase"
 	/// English String: "OR"
 	/// </summary>
-	public override string LabelOrUppercase => "또는";
+	public override string LabelOrUppercase => "ë˜ëŠ”";
 
 	/// <summary>
 	/// Key: "Label.PinImageText"
 	/// English String: "Your PIN is on your receipt"
 	/// </summary>
-	public override string LabelPinImageText => "영수증에서 PIN을 확인하세요";
+	public override string LabelPinImageText => "ì˜ìˆ˜ì¦ì—ì„œ PINì„ í™•ì¸í•˜ì„¸ìš”";
 
 	/// <summary>
 	/// Key: "Label.RixtyLogo"
 	/// English String: "Rixty Logo"
 	/// </summary>
-	public override string LabelRixtyLogo => "Rixty 로고";
+	public override string LabelRixtyLogo => "Rixty ë¡œê³ ";
 
 	/// <summary>
 	/// Key: "Label.Robux"
@@ -143,61 +143,61 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Label.ThirtyDaysBC"
 	/// English String: "30 Days of Builders Club - $10.00"
 	/// </summary>
-	public override string LabelThirtyDaysBC => "Builders Club 30일 - $10.00";
+	public override string LabelThirtyDaysBC => "Builders Club 30ì¼ - $10.00";
 
 	/// <summary>
 	/// Key: "Label.WhySpendCredit"
 	/// English String: "Spend your Roblox credit on Robux and Builders Club!"
 	/// </summary>
-	public override string LabelWhySpendCredit => "Roblox 크레딧으로 Robux를 구입하거나 Builders Club에 가입하세요!";
+	public override string LabelWhySpendCredit => "Roblox í¬ë ˆë”§ìœ¼ë¡œ Robuxë¥¼ êµ¬ìž…í•˜ê±°ë‚˜ Builders Clubì— ê°€ìž…í•˜ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Label.YourBalance"
 	/// English String: "Your Balance:"
 	/// </summary>
-	public override string LabelYourBalance => "잔액:";
+	public override string LabelYourBalance => "ìž”ì•¡:";
 
 	/// <summary>
 	/// Key: "Message.AnErrorOccurred"
 	/// English String: "An error occurred"
 	/// </summary>
-	public override string MessageAnErrorOccurred => "오류가 발생했어요";
+	public override string MessageAnErrorOccurred => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”";
 
 	/// <summary>
 	/// Key: "Message.Failure"
 	/// English String: "Failure"
 	/// </summary>
-	public override string MessageFailure => "실패";
+	public override string MessageFailure => "ì‹¤íŒ¨";
 
 	/// <summary>
 	/// Key: "Message.Loading"
 	/// English String: "Loading"
 	/// </summary>
-	public override string MessageLoading => "로딩 중";
+	public override string MessageLoading => "ë¡œë”© ì¤‘";
 
 	/// <summary>
 	/// Key: "Message.PinAlreadyRedeemed"
 	/// English String: "PIN already redeemed"
 	/// </summary>
-	public override string MessagePinAlreadyRedeemed => "이미 사용한 PIN이에요";
+	public override string MessagePinAlreadyRedeemed => "ì´ë¯¸ ì‚¬ìš©í•œ PINì´ì—ìš”";
 
 	/// <summary>
 	/// Key: "Message.RixtyUnavailable"
 	/// English String: "Currently unavailable. Please try again later."
 	/// </summary>
-	public override string MessageRixtyUnavailable => "현재 이용 불가. 나중에 다시 시도하세요.";
+	public override string MessageRixtyUnavailable => "í˜„ìž¬ ì´ìš© ë¶ˆê°€. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string MessageSuccess => "성공";
+	public override string MessageSuccess => "ì„±ê³µ";
 
 	/// <summary>
 	/// Key: "Message.SuccessfulRedemption"
 	/// English String: "You have successfully redeemed your PIN!"
 	/// </summary>
-	public override string MessageSuccessfulRedemption => "PIN 사용을 완료했어요!";
+	public override string MessageSuccessfulRedemption => "PIN ì‚¬ìš©ì„ ì™„ë£Œí–ˆì–´ìš”!";
 
 	public RixtyPinResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -206,22 +206,22 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForActionBuyNow()
 	{
-		return "지금 구매";
+		return "ì§€ê¸ˆ êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "Robux 구매";
+		return "Robux êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForActionMoreBCOptions()
 	{
-		return "Builders Club 옵션 더 보기";
+		return "Builders Club ì˜µì…˜ ë” ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "사용";
+		return "ì‚¬ìš©";
 	}
 
 	/// <summary>
@@ -230,12 +230,12 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string DescriptionUseCashForRobux(string lineBreak)
 	{
-		return $"Rixty로 현금 및 코인을 사용해 Robux와 Builders Club을 구매할 수 있어요.{lineBreak}신용카드가 없다고요? 괜찮습니다!";
+		return $"Rixtyë¡œ í˜„ê¸ˆ ë° ì½”ì¸ì„ ì‚¬ìš©í•´ Robuxì™€ Builders Clubì„ êµ¬ë§¤í•  ìˆ˜ ìžˆì–´ìš”.{lineBreak}ì‹ ìš©ì¹´ë“œê°€ ì—†ë‹¤ê³ ìš”? ê´œì°®ìŠµë‹ˆë‹¤!";
 	}
 
 	protected override string _GetTemplateForDescriptionUseCashForRobux()
 	{
-		return "Rixty로 현금 및 코인을 사용해 Robux와 Builders Club을 구매할 수 있어요.{lineBreak}신용카드가 없다고요? 괜찮습니다!";
+		return "Rixtyë¡œ í˜„ê¸ˆ ë° ì½”ì¸ì„ ì‚¬ìš©í•´ Robuxì™€ Builders Clubì„ êµ¬ë§¤í•  ìˆ˜ ìžˆì–´ìš”.{lineBreak}ì‹ ìš©ì¹´ë“œê°€ ì—†ë‹¤ê³ ìš”? ê´œì°®ìŠµë‹ˆë‹¤!";
 	}
 
 	/// <summary>
@@ -244,52 +244,52 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string DescriptionUseCashForRobuxAndPremium(string lineBreak)
 	{
-		return $"Rixty를 통해 현금과 코인으로 Robux와 빌더스 클럽을 구매할 수 있어요.{lineBreak}신용카드가 없다고요? 괜찮습니다!";
+		return $"Rixtyë¥¼ í†µí•´ í˜„ê¸ˆê³¼ ì½”ì¸ìœ¼ë¡œ Robuxì™€ ë¹Œë”ìŠ¤ í´ëŸ½ì„ êµ¬ë§¤í•  ìˆ˜ ìžˆì–´ìš”.{lineBreak}ì‹ ìš©ì¹´ë“œê°€ ì—†ë‹¤ê³ ìš”? ê´œì°®ìŠµë‹ˆë‹¤!";
 	}
 
 	protected override string _GetTemplateForDescriptionUseCashForRobuxAndPremium()
 	{
-		return "Rixty를 통해 현금과 코인으로 Robux와 빌더스 클럽을 구매할 수 있어요.{lineBreak}신용카드가 없다고요? 괜찮습니다!";
+		return "Rixtyë¥¼ í†µí•´ í˜„ê¸ˆê³¼ ì½”ì¸ìœ¼ë¡œ Robuxì™€ ë¹Œë”ìŠ¤ í´ëŸ½ì„ êµ¬ë§¤í•  ìˆ˜ ìžˆì–´ìš”.{lineBreak}ì‹ ìš©ì¹´ë“œê°€ ì—†ë‹¤ê³ ìš”? ê´œì°®ìŠµë‹ˆë‹¤!";
 	}
 
 	protected override string _GetTemplateForHeadingAlreadyHaveCredit()
 	{
-		return "Roblox 크레딧이 있어요!";
+		return "Roblox í¬ë ˆë”§ì´ ìžˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobuxUsingRixty()
 	{
-		return "Rixty로 Robux 구매";
+		return "Rixtyë¡œ Robux êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobuxOrBcWithRixty()
 	{
-		return "Rixty로 Robux 또는 Builders Club 구매하기";
+		return "Rixtyë¡œ Robux ë˜ëŠ” Builders Club êµ¬ë§¤í•˜ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobuxWithRixty()
 	{
-		return "Rixty로 Robux 구매";
+		return "Rixtyë¡œ Robux êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForHeadingHowToUse()
 	{
-		return "사용 방법";
+		return "ì‚¬ìš© ë°©ë²•";
 	}
 
 	protected override string _GetTemplateForHeadingPayWithRixty()
 	{
-		return "Rixty로 결제";
+		return "Rixtyë¡œ ê²°ì œ";
 	}
 
 	protected override string _GetTemplateForHeadingRedeemRixtyCards()
 	{
-		return "Rixty 카드 사용";
+		return "Rixty ì¹´ë“œ ì‚¬ìš©";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyHaveAccount()
 	{
-		return "이미 Rixty 계정이 있어요";
+		return "ì´ë¯¸ Rixty ê³„ì •ì´ ìžˆì–´ìš”";
 	}
 
 	/// <summary>
@@ -299,12 +299,12 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelBuildersClubExtensionExisting(string numberOfDays, string cost)
 	{
-		return $"{numberOfDays}일 Builders Club 연장 - {cost} (기존 BC 멤버만 해당)";
+		return $"{numberOfDays}ì¼ Builders Club ì—°ìž¥ - {cost} (ê¸°ì¡´ BC ë©¤ë²„ë§Œ í•´ë‹¹)";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubExtensionExisting()
 	{
-		return "{numberOfDays}일 Builders Club 연장 - {cost} (기존 BC 멤버만 해당)";
+		return "{numberOfDays}ì¼ Builders Club ì—°ìž¥ - {cost} (ê¸°ì¡´ BC ë©¤ë²„ë§Œ í•´ë‹¹)";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubImage()
@@ -319,12 +319,12 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelBuildersClubOffer(string numberOfDays, string cost)
 	{
-		return $"Builders Club {numberOfDays}일 - {cost}";
+		return $"Builders Club {numberOfDays}ì¼ - {cost}";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubOffer()
 	{
-		return "Builders Club {numberOfDays}일 - {cost}";
+		return "Builders Club {numberOfDays}ì¼ - {cost}";
 	}
 
 	/// <summary>
@@ -334,27 +334,27 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelBuyRobuxWithRixty(string robuxAmount, string currencyAmount)
 	{
-		return $"{currencyAmount}당 {robuxAmount} Robux ";
+		return $"{currencyAmount}ë‹¹ {robuxAmount} Robux ";
 	}
 
 	protected override string _GetTemplateForLabelBuyRobuxWithRixty()
 	{
-		return "{currencyAmount}당 {robuxAmount} Robux ";
+		return "{currencyAmount}ë‹¹ {robuxAmount} Robux ";
 	}
 
 	protected override string _GetTemplateForLabelEnterPin()
 	{
-		return "PIN 입력:";
+		return "PIN ìž…ë ¥:";
 	}
 
 	protected override string _GetTemplateForLabelEnterPinImage()
 	{
-		return "PIN 입력";
+		return "PIN ìž…ë ¥";
 	}
 
 	protected override string _GetTemplateForLabelFortyFiveDaysBC()
 	{
-		return "45일 Builders Club 연장 - $10.00 (기존 BC 멤버만 해당)";
+		return "45ì¼ Builders Club ì—°ìž¥ - $10.00 (ê¸°ì¡´ BC ë©¤ë²„ë§Œ í•´ë‹¹)";
 	}
 
 	/// <summary>
@@ -363,37 +363,37 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelGetPhysicalRixtyCard(string startLink, string endLink)
 	{
-		return $"{startLink}인근 매장을 방문해{endLink} Rixty 카드를 구매하세요.";
+		return $"{startLink}ì¸ê·¼ ë§¤ìž¥ì„ ë°©ë¬¸í•´{endLink} Rixty ì¹´ë“œë¥¼ êµ¬ë§¤í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelGetPhysicalRixtyCard()
 	{
-		return "{startLink}인근 매장을 방문해{endLink} Rixty 카드를 구매하세요.";
+		return "{startLink}ì¸ê·¼ ë§¤ìž¥ì„ ë°©ë¬¸í•´{endLink} Rixty ì¹´ë“œë¥¼ êµ¬ë§¤í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionForCombineCards()
 	{
-		return "카드를 결합하면 더 많은 Roblox 크레딧을 받으실 수 있습니다.";
+		return "ì¹´ë“œë¥¼ ê²°í•©í•˜ë©´ ë” ë§Žì€ Roblox í¬ë ˆë”§ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionForEnterPin()
 	{
-		return "Rixty PIN을 입력하세요.";
+		return "Rixty PINì„ ìž…ë ¥í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelOrUppercase()
 	{
-		return "또는";
+		return "ë˜ëŠ”";
 	}
 
 	protected override string _GetTemplateForLabelPinImageText()
 	{
-		return "영수증에서 PIN을 확인하세요";
+		return "ì˜ìˆ˜ì¦ì—ì„œ PINì„ í™•ì¸í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelRixtyLogo()
 	{
-		return "Rixty 로고";
+		return "Rixty ë¡œê³ ";
 	}
 
 	protected override string _GetTemplateForLabelRobux()
@@ -403,51 +403,54 @@ internal class RixtyPinResources_ko_kr : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForLabelThirtyDaysBC()
 	{
-		return "Builders Club 30일 - $10.00";
+		return "Builders Club 30ì¼ - $10.00";
 	}
 
 	protected override string _GetTemplateForLabelWhySpendCredit()
 	{
-		return "Roblox 크레딧으로 Robux를 구입하거나 Builders Club에 가입하세요!";
+		return "Roblox í¬ë ˆë”§ìœ¼ë¡œ Robuxë¥¼ êµ¬ìž…í•˜ê±°ë‚˜ Builders Clubì— ê°€ìž…í•˜ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForLabelYourBalance()
 	{
-		return "잔액:";
+		return "ìž”ì•¡:";
 	}
 
 	protected override string _GetTemplateForMessageAnErrorOccurred()
 	{
-		return "오류가 발생했어요";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForMessageFailure()
 	{
-		return "실패";
+		return "ì‹¤íŒ¨";
 	}
 
 	protected override string _GetTemplateForMessageLoading()
 	{
-		return "로딩 중";
+		return "ë¡œë”© ì¤‘";
 	}
 
 	protected override string _GetTemplateForMessagePinAlreadyRedeemed()
 	{
-		return "이미 사용한 PIN이에요";
+		return "ì´ë¯¸ ì‚¬ìš©í•œ PINì´ì—ìš”";
 	}
 
 	protected override string _GetTemplateForMessageRixtyUnavailable()
 	{
-		return "현재 이용 불가. 나중에 다시 시도하세요.";
+		return "í˜„ìž¬ ì´ìš© ë¶ˆê°€. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageSuccess()
 	{
-		return "성공";
+		return "ì„±ê³µ";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfulRedemption()
 	{
-		return "PIN 사용을 완료했어요!";
+		return "PIN ì‚¬ìš©ì„ ì™„ë£Œí–ˆì–´ìš”!";
 	}
+}
+
+
 }

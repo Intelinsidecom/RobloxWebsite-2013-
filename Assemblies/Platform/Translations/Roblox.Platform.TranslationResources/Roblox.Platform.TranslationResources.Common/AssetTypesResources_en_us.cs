@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class AssetTypesResources_en_us : TranslationResourcesBase, IAssetTypesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class AssetTypesResources_en_us : TranslationResourcesBase, IAssetTypesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1086,4 +1085,7 @@ internal class AssetTypesResources_en_us : TranslationResourcesBase, IAssetTypes
 	{
 		return "Walk";
 	}
+}
+
+
 }

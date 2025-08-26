@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class CatalogResources_en_us : TranslationResourcesBase, ICatalogResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class CatalogResources_en_us : TranslationResourcesBase, ICatalogResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -2326,4 +2325,7 @@ internal class CatalogResources_en_us : TranslationResourcesBase, ICatalogResour
 	{
 		return "You're going too fast! Try again in a minute.";
 	}
+}
+
+
 }

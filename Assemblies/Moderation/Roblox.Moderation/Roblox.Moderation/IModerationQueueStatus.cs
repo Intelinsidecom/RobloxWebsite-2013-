@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// An interface represents an object that is responsible for assembling metrics 
 /// about moderation queues.
 /// </summary>
@@ -23,4 +22,7 @@ public interface IModerationQueueStatus
 	/// </summary>
 	/// <returns>An <see cref="T:System.Collections.Generic.IDictionary`2" /> of {LocaleName, <see cref="T:Roblox.Platform.Moderation.SerializableLocaleMetrics" />} pairs.</returns>
 	IDictionary<string, SerializableLocaleMetrics> GetQueueStatus();
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FriendsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,285 +10,285 @@ internal class FriendsResources_ko_kr : FriendsResources_en_us, IFriendsResource
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "수락";
+	public override string ActionAccept => "ìˆ˜ë½";
 
 	/// <summary>
 	/// Key: "Action.FindFriends"
 	/// English String: "Find Friends"
 	/// </summary>
-	public override string ActionFindFriends => "친구 찾기";
+	public override string ActionFindFriends => "ì¹œêµ¬ ì°¾ê¸°";
 
 	/// <summary>
 	/// Key: "Action.Follow"
 	/// English String: "Follow"
 	/// </summary>
-	public override string ActionFollow => "팔로우";
+	public override string ActionFollow => "íŒ”ë¡œìš°";
 
 	/// <summary>
 	/// Key: "Action.Ignore"
 	/// English String: "Ignore"
 	/// </summary>
-	public override string ActionIgnore => "거절";
+	public override string ActionIgnore => "ê±°ì ˆ";
 
 	/// <summary>
 	/// Key: "Action.IgnoreAll"
 	/// English String: "Ignore All"
 	/// </summary>
-	public override string ActionIgnoreAll => "전체 거절";
+	public override string ActionIgnoreAll => "ì „ì²´ ê±°ì ˆ";
 
 	/// <summary>
 	/// Key: "Action.Unfollow"
 	/// English String: "Unfollow"
 	/// </summary>
-	public override string ActionUnfollow => "팔로우 취소";
+	public override string ActionUnfollow => "íŒ”ë¡œìš° ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Unfriend"
 	/// English String: "Unfriend"
 	/// </summary>
-	public override string ActionUnfriend => "친구 끊기";
+	public override string ActionUnfriend => "ì¹œêµ¬ ëŠê¸°";
 
 	/// <summary>
 	/// Key: "Heading.MyFriends"
 	/// English String: "My Friends"
 	/// </summary>
-	public override string HeadingMyFriends => "내 친구";
+	public override string HeadingMyFriends => "ë‚´ ì¹œêµ¬";
 
 	/// <summary>
 	/// Key: "Label.ErrorTitle"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelErrorTitle => "오류";
+	public override string LabelErrorTitle => "ì˜¤ë¥˜";
 
 	/// <summary>
 	/// Key: "Label.Followers"
 	/// English String: "Followers"
 	/// </summary>
-	public override string LabelFollowers => "팔로워";
+	public override string LabelFollowers => "íŒ”ë¡œì›Œ";
 
 	/// <summary>
 	/// Key: "Label.Following"
 	/// English String: "Following"
 	/// </summary>
-	public override string LabelFollowing => "팔로잉";
+	public override string LabelFollowing => "íŒ”ë¡œìž‰";
 
 	/// <summary>
 	/// Key: "Label.FriendRequests"
 	/// English String: "Friend Requests"
 	/// </summary>
-	public override string LabelFriendRequests => "친구 요청";
+	public override string LabelFriendRequests => "ì¹œêµ¬ ìš”ì²­";
 
 	/// <summary>
 	/// Key: "Label.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelFriends => "친구";
+	public override string LabelFriends => "ì¹œêµ¬";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "오프라인";
+	public override string LabelOffline => "ì˜¤í”„ë¼ì¸";
 
 	/// <summary>
 	/// Key: "Label.Ok"
 	/// English String: "Ok"
 	/// </summary>
-	public override string LabelOk => "확인";
+	public override string LabelOk => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "온라인";
+	public override string LabelOnline => "ì˜¨ë¼ì¸";
 
 	/// <summary>
 	/// Key: "Label.Requests"
 	/// English String: "Requests"
 	/// </summary>
-	public override string LabelRequests => "요청";
+	public override string LabelRequests => "ìš”ì²­";
 
 	/// <summary>
 	/// Key: "Label.SearchFriends"
 	/// When user doesn't have any friends.
 	/// English String: "Search for Friends"
 	/// </summary>
-	public override string LabelSearchFriends => "친구 검색";
+	public override string LabelSearchFriends => "ì¹œêµ¬ ê²€ìƒ‰";
 
 	/// <summary>
 	/// Key: "Label.Unfollowed"
 	/// Unfollowed
 	/// English String: "Unfollowed"
 	/// </summary>
-	public override string LabelUnfollowed => "팔로우 취소됨";
+	public override string LabelUnfollowed => "íŒ”ë¡œìš° ì·¨ì†Œë¨";
 
 	/// <summary>
 	/// Key: "Message.ActionNotAllowedError"
 	/// English String: "Action not allowed"
 	/// </summary>
-	public override string MessageActionNotAllowedError => "허용되지 않은 작업";
+	public override string MessageActionNotAllowedError => "í—ˆìš©ë˜ì§€ ì•Šì€ ìž‘ì—…";
 
 	/// <summary>
 	/// Key: "Message.AlreadyExistsError"
 	/// English String: "Already exists."
 	/// </summary>
-	public override string MessageAlreadyExistsError => "이미 있어요.";
+	public override string MessageAlreadyExistsError => "ì´ë¯¸ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.CurrentInvalidParametersError"
 	/// English String: "Invalid parameters."
 	/// </summary>
-	public override string MessageCurrentInvalidParametersError => "유효하지 않은 매개변수.";
+	public override string MessageCurrentInvalidParametersError => "ìœ íš¨í•˜ì§€ ì•Šì€ ë§¤ê°œë³€ìˆ˜.";
 
 	/// <summary>
 	/// Key: "Message.CurrentUserFriendsLimitExceededError"
 	/// English String: "You have reached the maximum number of Friends. Please remove a Friend before accepting any more Friend Requests."
 	/// </summary>
-	public override string MessageCurrentUserFriendsLimitExceededError => "친구 수가 한도에 도달했어요. 친구 요청을 더 받으려면 먼저 다른 분과 친구를 끊으셔야 합니다.";
+	public override string MessageCurrentUserFriendsLimitExceededError => "ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”. ì¹œêµ¬ ìš”ì²­ì„ ë” ë°›ìœ¼ë ¤ë©´ ë¨¼ì € ë‹¤ë¥¸ ë¶„ê³¼ ì¹œêµ¬ë¥¼ ëŠìœ¼ì…”ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error ocurred."
 	/// </summary>
-	public override string MessageDefaultError => "오류가 발생했어요.";
+	public override string MessageDefaultError => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.FloodLimitExceededError"
 	/// English String: "You are performing this action too often. Please wait a minute and try again."
 	/// </summary>
-	public override string MessageFloodLimitExceededError => "같은 작업을 너무 자주 반복하셨네요. 잠시 기다렸다가 다시 시도하세요.";
+	public override string MessageFloodLimitExceededError => "ê°™ì€ ìž‘ì—…ì„ ë„ˆë¬´ ìžì£¼ ë°˜ë³µí•˜ì…¨ë„¤ìš”. ìž ì‹œ ê¸°ë‹¤ë ¸ë‹¤ê°€ ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.FollowerTabTooltip"
 	/// English String: "People who have chosen to follow your activity."
 	/// </summary>
-	public override string MessageFollowerTabTooltip => "회원님을 팔로우하는 사람들이에요.";
+	public override string MessageFollowerTabTooltip => "íšŒì›ë‹˜ì„ íŒ”ë¡œìš°í•˜ëŠ” ì‚¬ëžŒë“¤ì´ì—ìš”.";
 
 	/// <summary>
 	/// Key: "Message.FollowingTabTooltip"
 	/// English String: "People whose activity you have chosen to follow."
 	/// </summary>
-	public override string MessageFollowingTabTooltip => "회원님이 팔로우하는 사람들이에요.";
+	public override string MessageFollowingTabTooltip => "íšŒì›ë‹˜ì´ íŒ”ë¡œìš°í•˜ëŠ” ì‚¬ëžŒë“¤ì´ì—ìš”.";
 
 	/// <summary>
 	/// Key: "Message.ForGeneralError"
 	/// English String: "Something went wrong."
 	/// </summary>
-	public override string MessageForGeneralError => "오류가 발생했어요.";
+	public override string MessageForGeneralError => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.ForGeneralFooter"
 	/// English String: "Please check back in few minutes."
 	/// </summary>
-	public override string MessageForGeneralFooter => "몇 분 후 다시 확인하세요.";
+	public override string MessageForGeneralFooter => "ëª‡ ë¶„ í›„ ë‹¤ì‹œ í™•ì¸í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.ForMaxFriendsError"
 	/// English String: "Unable to process Request.You currently have the max number of Friends allowed. "
 	/// </summary>
-	public override string MessageForMaxFriendsError => "요청 처리 불가. 친구 수가 한도에 도달했어요. ";
+	public override string MessageForMaxFriendsError => "ìš”ì²­ ì²˜ë¦¬ ë¶ˆê°€. ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”. ";
 
 	/// <summary>
 	/// Key: "Message.ForMaxFriendsFooter"
 	/// English String: "Unfriend someone before accepting any more Friend Requests."
 	/// </summary>
-	public override string MessageForMaxFriendsFooter => "친구 요청을 더 받고 싶으시면 먼저 다른 분과 친구 끊기를 해야 합니다.";
+	public override string MessageForMaxFriendsFooter => "ì¹œêµ¬ ìš”ì²­ì„ ë” ë°›ê³  ì‹¶ìœ¼ì‹œë©´ ë¨¼ì € ë‹¤ë¥¸ ë¶„ê³¼ ì¹œêµ¬ ëŠê¸°ë¥¼ í•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.ForMaxRequestsError"
 	/// English String: "Unable to process Request. That user currently has the max number of Friends allowed."
 	/// </summary>
-	public override string MessageForMaxRequestsError => "요청 처리 불가. 해당 사용자가 등록한 친구 수가 한도에 도달했어요.";
+	public override string MessageForMaxRequestsError => "ìš”ì²­ ì²˜ë¦¬ ë¶ˆê°€. í•´ë‹¹ ì‚¬ìš©ìžê°€ ë“±ë¡í•œ ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.ForMaxRequestsFooter"
 	/// English String: "You can not accept their Friend Request until they remove a Friend."
 	/// </summary>
-	public override string MessageForMaxRequestsFooter => "친구 요청을 수락하려면 먼저 상대방이 친구를 삭제해야 합니다.";
+	public override string MessageForMaxRequestsFooter => "ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í•˜ë ¤ë©´ ë¨¼ì € ìƒëŒ€ë°©ì´ ì¹œêµ¬ë¥¼ ì‚­ì œí•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.FriendRequestNotExistError"
 	/// English String: "Friend request does not exist"
 	/// </summary>
-	public override string MessageFriendRequestNotExistError => "친구 요청이 없어요";
+	public override string MessageFriendRequestNotExistError => "ì¹œêµ¬ ìš”ì²­ì´ ì—†ì–´ìš”";
 
 	/// <summary>
 	/// Key: "Message.FriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageFriendsLimitExceededError => "친구 수가 한도에 도달했어요.";
+	public override string MessageFriendsLimitExceededError => "ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.FriendsTabTooltip"
 	/// English String: "Friends are established when two Roblox users mutually agree to friendship."
 	/// </summary>
-	public override string MessageFriendsTabTooltip => "Roblox 사용자 두 명이 서로 친구 맺기에 동의해야 친구 관계가 성립됩니다.";
+	public override string MessageFriendsTabTooltip => "Roblox ì‚¬ìš©ìž ë‘ ëª…ì´ ì„œë¡œ ì¹œêµ¬ ë§ºê¸°ì— ë™ì˜í•´ì•¼ ì¹œêµ¬ ê´€ê³„ê°€ ì„±ë¦½ë©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.NotRecipientError"
 	/// English String: "You are not the recipient of this friend request."
 	/// </summary>
-	public override string MessageNotRecipientError => "회원님은 본 친구 요청의 수신자가 아닙니다.";
+	public override string MessageNotRecipientError => "íšŒì›ë‹˜ì€ ë³¸ ì¹œêµ¬ ìš”ì²­ì˜ ìˆ˜ì‹ ìžê°€ ì•„ë‹™ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.OtherUserFriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageOtherUserFriendsLimitExceededError => "친구 수가 한도를 초과했어요.";
+	public override string MessageOtherUserFriendsLimitExceededError => "ì¹œêµ¬ ìˆ˜ê°€ í•œë„ë¥¼ ì´ˆê³¼í–ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.RequestsTabTooltip"
 	/// English String: "Friends are established when two Roblox users mutually agree to friendship."
 	/// </summary>
-	public override string MessageRequestsTabTooltip => "Roblox 사용자 두 명이 서로 친구 맺기에 동의해야 친구 관계가 성립됩니다.";
+	public override string MessageRequestsTabTooltip => "Roblox ì‚¬ìš©ìž ë‘ ëª…ì´ ì„œë¡œ ì¹œêµ¬ ë§ºê¸°ì— ë™ì˜í•´ì•¼ ì¹œêµ¬ ê´€ê³„ê°€ ì„±ë¦½ë©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.RobloxIsMoreFunWithFriends"
 	/// English String: "Roblox is more fun with friends!"
 	/// </summary>
-	public override string MessageRobloxIsMoreFunWithFriends => "친구와 함께할 때 더욱 즐거운 Roblox!";
+	public override string MessageRobloxIsMoreFunWithFriends => "ì¹œêµ¬ì™€ í•¨ê»˜í•  ë•Œ ë”ìš± ì¦ê±°ìš´ Roblox!";
 
 	/// <summary>
 	/// Key: "Message.SelfFollowingAttemptError"
 	/// English String: "You cannot follow yourself."
 	/// </summary>
-	public override string MessageSelfFollowingAttemptError => "자기 자신을 팔로우할 수 없어요.";
+	public override string MessageSelfFollowingAttemptError => "ìžê¸° ìžì‹ ì„ íŒ”ë¡œìš°í•  ìˆ˜ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.SelfFriendingAttemptError"
 	/// English String: "You cannot be friends with yourself."
 	/// </summary>
-	public override string MessageSelfFriendingAttemptError => "자기 자신과는 친구를 맺을 수 없어요.";
+	public override string MessageSelfFriendingAttemptError => "ìžê¸° ìžì‹ ê³¼ëŠ” ì¹œêµ¬ë¥¼ ë§ºì„ ìˆ˜ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.SystemUnavailableError"
 	/// English String: "Friends and Followers system is unavailable."
 	/// </summary>
-	public override string MessageSystemUnavailableError => "친구 및 팔로워 시스템을 이용할 수 없어요.";
+	public override string MessageSystemUnavailableError => "ì¹œêµ¬ ë° íŒ”ë¡œì›Œ ì‹œìŠ¤í…œì„ ì´ìš©í•  ìˆ˜ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.UnblockUserPinLockedError"
 	/// English String: "Pin is locked."
 	/// </summary>
-	public override string MessageUnblockUserPinLockedError => "PIN 사용이 중지되었습니다.";
+	public override string MessageUnblockUserPinLockedError => "PIN ì‚¬ìš©ì´ ì¤‘ì§€ë˜ì—ˆìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.UserBlockedError"
 	/// English String: "User is blocked"
 	/// </summary>
-	public override string MessageUserBlockedError => "차단된 사용자입니다";
+	public override string MessageUserBlockedError => "ì°¨ë‹¨ëœ ì‚¬ìš©ìžìž…ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Message.UserHasNotPassedCaptchaError"
 	/// English String: "You need to pass Captcha."
 	/// </summary>
-	public override string MessageUserHasNotPassedCaptchaError => "보안 문자 입력을 통과해야 해요.";
+	public override string MessageUserHasNotPassedCaptchaError => "ë³´ì•ˆ ë¬¸ìž ìž…ë ¥ì„ í†µê³¼í•´ì•¼ í•´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.UsersAreNotInSameGameError"
 	/// English String: "Users need to be in the same game."
 	/// </summary>
-	public override string MessageUsersAreNotInSameGameError => "사용자들이 같은 게임에 참여해야 해요.";
+	public override string MessageUsersAreNotInSameGameError => "ì‚¬ìš©ìžë“¤ì´ ê°™ì€ ê²Œìž„ì— ì°¸ì—¬í•´ì•¼ í•´ìš”.";
 
 	public FriendsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -297,37 +297,37 @@ internal class FriendsResources_ko_kr : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "수락";
+		return "ìˆ˜ë½";
 	}
 
 	protected override string _GetTemplateForActionFindFriends()
 	{
-		return "친구 찾기";
+		return "ì¹œêµ¬ ì°¾ê¸°";
 	}
 
 	protected override string _GetTemplateForActionFollow()
 	{
-		return "팔로우";
+		return "íŒ”ë¡œìš°";
 	}
 
 	protected override string _GetTemplateForActionIgnore()
 	{
-		return "거절";
+		return "ê±°ì ˆ";
 	}
 
 	protected override string _GetTemplateForActionIgnoreAll()
 	{
-		return "전체 거절";
+		return "ì „ì²´ ê±°ì ˆ";
 	}
 
 	protected override string _GetTemplateForActionUnfollow()
 	{
-		return "팔로우 취소";
+		return "íŒ”ë¡œìš° ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionUnfriend()
 	{
-		return "친구 끊기";
+		return "ì¹œêµ¬ ëŠê¸°";
 	}
 
 	/// <summary>
@@ -337,17 +337,17 @@ internal class FriendsResources_ko_kr : FriendsResources_en_us, IFriendsResource
 	/// </summary>
 	public override string DescriptionSearchFriends(string startLink, string endLink)
 	{
-		return $"상단의 돋보기 아이콘을 눌러 사용자를 검색하거나 {startLink}게임 플레이{endLink}를 하면서 사람들을 만나보세요.";
+		return $"ìƒë‹¨ì˜ ë‹ë³´ê¸° ì•„ì´ì½˜ì„ ëˆŒëŸ¬ ì‚¬ìš©ìžë¥¼ ê²€ìƒ‰í•˜ê±°ë‚˜ {startLink}ê²Œìž„ í”Œë ˆì´{endLink}ë¥¼ í•˜ë©´ì„œ ì‚¬ëžŒë“¤ì„ ë§Œë‚˜ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionSearchFriends()
 	{
-		return "상단의 돋보기 아이콘을 눌러 사용자를 검색하거나 {startLink}게임 플레이{endLink}를 하면서 사람들을 만나보세요.";
+		return "ìƒë‹¨ì˜ ë‹ë³´ê¸° ì•„ì´ì½˜ì„ ëˆŒëŸ¬ ì‚¬ìš©ìžë¥¼ ê²€ìƒ‰í•˜ê±°ë‚˜ {startLink}ê²Œìž„ í”Œë ˆì´{endLink}ë¥¼ í•˜ë©´ì„œ ì‚¬ëžŒë“¤ì„ ë§Œë‚˜ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForHeadingMyFriends()
 	{
-		return "내 친구";
+		return "ë‚´ ì¹œêµ¬";
 	}
 
 	/// <summary>
@@ -356,37 +356,37 @@ internal class FriendsResources_ko_kr : FriendsResources_en_us, IFriendsResource
 	/// </summary>
 	public override string HeadingUsersFriends(string username)
 	{
-		return $"{username}님의 친구";
+		return $"{username}ë‹˜ì˜ ì¹œêµ¬";
 	}
 
 	protected override string _GetTemplateForHeadingUsersFriends()
 	{
-		return "{username}님의 친구";
+		return "{username}ë‹˜ì˜ ì¹œêµ¬";
 	}
 
 	protected override string _GetTemplateForLabelErrorTitle()
 	{
-		return "오류";
+		return "ì˜¤ë¥˜";
 	}
 
 	protected override string _GetTemplateForLabelFollowers()
 	{
-		return "팔로워";
+		return "íŒ”ë¡œì›Œ";
 	}
 
 	protected override string _GetTemplateForLabelFollowing()
 	{
-		return "팔로잉";
+		return "íŒ”ë¡œìž‰";
 	}
 
 	protected override string _GetTemplateForLabelFriendRequests()
 	{
-		return "친구 요청";
+		return "ì¹œêµ¬ ìš”ì²­";
 	}
 
 	protected override string _GetTemplateForLabelFriends()
 	{
-		return "친구";
+		return "ì¹œêµ¬";
 	}
 
 	/// <summary>
@@ -396,181 +396,184 @@ internal class FriendsResources_ko_kr : FriendsResources_en_us, IFriendsResource
 	/// </summary>
 	public override string LabelNearbyUpsell(string startSpan, string endSpan)
 	{
-		return $"대기 중인 친구 요청이 없습니다. 친구를 추가하려면, {startSpan}주변 플레이어 찾기{endSpan}를 살펴보세요.";
+		return $"ëŒ€ê¸° ì¤‘ì¸ ì¹œêµ¬ ìš”ì²­ì´ ì—†ìŠµë‹ˆë‹¤. ì¹œêµ¬ë¥¼ ì¶”ê°€í•˜ë ¤ë©´, {startSpan}ì£¼ë³€ í”Œë ˆì´ì–´ ì°¾ê¸°{endSpan}ë¥¼ ì‚´íŽ´ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelNearbyUpsell()
 	{
-		return "대기 중인 친구 요청이 없습니다. 친구를 추가하려면, {startSpan}주변 플레이어 찾기{endSpan}를 살펴보세요.";
+		return "ëŒ€ê¸° ì¤‘ì¸ ì¹œêµ¬ ìš”ì²­ì´ ì—†ìŠµë‹ˆë‹¤. ì¹œêµ¬ë¥¼ ì¶”ê°€í•˜ë ¤ë©´, {startSpan}ì£¼ë³€ í”Œë ˆì´ì–´ ì°¾ê¸°{endSpan}ë¥¼ ì‚´íŽ´ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "오프라인";
+		return "ì˜¤í”„ë¼ì¸";
 	}
 
 	protected override string _GetTemplateForLabelOk()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "온라인";
+		return "ì˜¨ë¼ì¸";
 	}
 
 	protected override string _GetTemplateForLabelRequests()
 	{
-		return "요청";
+		return "ìš”ì²­";
 	}
 
 	protected override string _GetTemplateForLabelSearchFriends()
 	{
-		return "친구 검색";
+		return "ì¹œêµ¬ ê²€ìƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelUnfollowed()
 	{
-		return "팔로우 취소됨";
+		return "íŒ”ë¡œìš° ì·¨ì†Œë¨";
 	}
 
 	protected override string _GetTemplateForMessageActionNotAllowedError()
 	{
-		return "허용되지 않은 작업";
+		return "í—ˆìš©ë˜ì§€ ì•Šì€ ìž‘ì—…";
 	}
 
 	protected override string _GetTemplateForMessageAlreadyExistsError()
 	{
-		return "이미 있어요.";
+		return "ì´ë¯¸ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageCurrentInvalidParametersError()
 	{
-		return "유효하지 않은 매개변수.";
+		return "ìœ íš¨í•˜ì§€ ì•Šì€ ë§¤ê°œë³€ìˆ˜.";
 	}
 
 	protected override string _GetTemplateForMessageCurrentUserFriendsLimitExceededError()
 	{
-		return "친구 수가 한도에 도달했어요. 친구 요청을 더 받으려면 먼저 다른 분과 친구를 끊으셔야 합니다.";
+		return "ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”. ì¹œêµ¬ ìš”ì²­ì„ ë” ë°›ìœ¼ë ¤ë©´ ë¨¼ì € ë‹¤ë¥¸ ë¶„ê³¼ ì¹œêµ¬ë¥¼ ëŠìœ¼ì…”ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "오류가 발생했어요.";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageFloodLimitExceededError()
 	{
-		return "같은 작업을 너무 자주 반복하셨네요. 잠시 기다렸다가 다시 시도하세요.";
+		return "ê°™ì€ ìž‘ì—…ì„ ë„ˆë¬´ ìžì£¼ ë°˜ë³µí•˜ì…¨ë„¤ìš”. ìž ì‹œ ê¸°ë‹¤ë ¸ë‹¤ê°€ ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageFollowerTabTooltip()
 	{
-		return "회원님을 팔로우하는 사람들이에요.";
+		return "íšŒì›ë‹˜ì„ íŒ”ë¡œìš°í•˜ëŠ” ì‚¬ëžŒë“¤ì´ì—ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageFollowingTabTooltip()
 	{
-		return "회원님이 팔로우하는 사람들이에요.";
+		return "íšŒì›ë‹˜ì´ íŒ”ë¡œìš°í•˜ëŠ” ì‚¬ëžŒë“¤ì´ì—ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageForGeneralError()
 	{
-		return "오류가 발생했어요.";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageForGeneralFooter()
 	{
-		return "몇 분 후 다시 확인하세요.";
+		return "ëª‡ ë¶„ í›„ ë‹¤ì‹œ í™•ì¸í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageForMaxFriendsError()
 	{
-		return "요청 처리 불가. 친구 수가 한도에 도달했어요. ";
+		return "ìš”ì²­ ì²˜ë¦¬ ë¶ˆê°€. ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”. ";
 	}
 
 	protected override string _GetTemplateForMessageForMaxFriendsFooter()
 	{
-		return "친구 요청을 더 받고 싶으시면 먼저 다른 분과 친구 끊기를 해야 합니다.";
+		return "ì¹œêµ¬ ìš”ì²­ì„ ë” ë°›ê³  ì‹¶ìœ¼ì‹œë©´ ë¨¼ì € ë‹¤ë¥¸ ë¶„ê³¼ ì¹œêµ¬ ëŠê¸°ë¥¼ í•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageForMaxRequestsError()
 	{
-		return "요청 처리 불가. 해당 사용자가 등록한 친구 수가 한도에 도달했어요.";
+		return "ìš”ì²­ ì²˜ë¦¬ ë¶ˆê°€. í•´ë‹¹ ì‚¬ìš©ìžê°€ ë“±ë¡í•œ ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageForMaxRequestsFooter()
 	{
-		return "친구 요청을 수락하려면 먼저 상대방이 친구를 삭제해야 합니다.";
+		return "ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í•˜ë ¤ë©´ ë¨¼ì € ìƒëŒ€ë°©ì´ ì¹œêµ¬ë¥¼ ì‚­ì œí•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestNotExistError()
 	{
-		return "친구 요청이 없어요";
+		return "ì¹œêµ¬ ìš”ì²­ì´ ì—†ì–´ìš”";
 	}
 
 	protected override string _GetTemplateForMessageFriendsLimitExceededError()
 	{
-		return "친구 수가 한도에 도달했어요.";
+		return "ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageFriendsTabTooltip()
 	{
-		return "Roblox 사용자 두 명이 서로 친구 맺기에 동의해야 친구 관계가 성립됩니다.";
+		return "Roblox ì‚¬ìš©ìž ë‘ ëª…ì´ ì„œë¡œ ì¹œêµ¬ ë§ºê¸°ì— ë™ì˜í•´ì•¼ ì¹œêµ¬ ê´€ê³„ê°€ ì„±ë¦½ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageNotRecipientError()
 	{
-		return "회원님은 본 친구 요청의 수신자가 아닙니다.";
+		return "íšŒì›ë‹˜ì€ ë³¸ ì¹œêµ¬ ìš”ì²­ì˜ ìˆ˜ì‹ ìžê°€ ì•„ë‹™ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageOtherUserFriendsLimitExceededError()
 	{
-		return "친구 수가 한도를 초과했어요.";
+		return "ì¹œêµ¬ ìˆ˜ê°€ í•œë„ë¥¼ ì´ˆê³¼í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageRequestsTabTooltip()
 	{
-		return "Roblox 사용자 두 명이 서로 친구 맺기에 동의해야 친구 관계가 성립됩니다.";
+		return "Roblox ì‚¬ìš©ìž ë‘ ëª…ì´ ì„œë¡œ ì¹œêµ¬ ë§ºê¸°ì— ë™ì˜í•´ì•¼ ì¹œêµ¬ ê´€ê³„ê°€ ì„±ë¦½ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageRobloxIsMoreFunWithFriends()
 	{
-		return "친구와 함께할 때 더욱 즐거운 Roblox!";
+		return "ì¹œêµ¬ì™€ í•¨ê»˜í•  ë•Œ ë”ìš± ì¦ê±°ìš´ Roblox!";
 	}
 
 	protected override string _GetTemplateForMessageSelfFollowingAttemptError()
 	{
-		return "자기 자신을 팔로우할 수 없어요.";
+		return "ìžê¸° ìžì‹ ì„ íŒ”ë¡œìš°í•  ìˆ˜ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageSelfFriendingAttemptError()
 	{
-		return "자기 자신과는 친구를 맺을 수 없어요.";
+		return "ìžê¸° ìžì‹ ê³¼ëŠ” ì¹œêµ¬ë¥¼ ë§ºì„ ìˆ˜ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageSystemUnavailableError()
 	{
-		return "친구 및 팔로워 시스템을 이용할 수 없어요.";
+		return "ì¹œêµ¬ ë° íŒ”ë¡œì›Œ ì‹œìŠ¤í…œì„ ì´ìš©í•  ìˆ˜ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageUnblockUserPinLockedError()
 	{
-		return "PIN 사용이 중지되었습니다.";
+		return "PIN ì‚¬ìš©ì´ ì¤‘ì§€ë˜ì—ˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageUserBlockedError()
 	{
-		return "차단된 사용자입니다";
+		return "ì°¨ë‹¨ëœ ì‚¬ìš©ìžìž…ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNotPassedCaptchaError()
 	{
-		return "보안 문자 입력을 통과해야 해요.";
+		return "ë³´ì•ˆ ë¬¸ìž ìž…ë ¥ì„ í†µê³¼í•´ì•¼ í•´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageUsersAreNotInSameGameError()
 	{
-		return "사용자들이 같은 게임에 참여해야 해요.";
+		return "ì‚¬ìš©ìžë“¤ì´ ê°™ì€ ê²Œìž„ì— ì°¸ì—¬í•´ì•¼ í•´ìš”.";
 	}
+}
+
+
 }

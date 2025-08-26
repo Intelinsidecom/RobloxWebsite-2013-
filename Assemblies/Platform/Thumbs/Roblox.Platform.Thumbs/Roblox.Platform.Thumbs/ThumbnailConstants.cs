@@ -1,6 +1,6 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbsinternal {
+    class ThumbnailConstants
 
-internal class ThumbnailConstants
 {
 	public static readonly string ObjFormat = "Obj";
 
@@ -9,4 +9,7 @@ internal class ThumbnailConstants
 	public static readonly ImageParameters ObjImageParameters = new ImageParameters(1, 1);
 
 	public static readonly ImageParameters AnimationManifestImageParameters = new ImageParameters(1, 1);
+}
+
+
 }

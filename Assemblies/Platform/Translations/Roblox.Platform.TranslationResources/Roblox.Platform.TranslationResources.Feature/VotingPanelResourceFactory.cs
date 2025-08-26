@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class VotingPanelResourceFactory
 
-internal static class VotingPanelResourceFactory
 {
 	public const string FullNamespace = "Feature.VotingPanel";
 
@@ -21,4 +21,7 @@ internal static class VotingPanelResourceFactory
 			_ => new VotingPanelResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -2,11 +2,10 @@ using System;
 using Newtonsoft.Json;
 using Roblox.Amazon.Firehose;
 using Roblox.EventLog;
-using Roblox.Platform.EventStream.Properties;
+using Roblox.EventStream.Properties;
+namespace Roblox.EventStream {
+    class AmazonKinesisFirehoseChatTrainingDataSender : IChatTrainingDataSender
 
-namespace Roblox.Platform.EventStream;
-
-public class AmazonKinesisFirehoseChatTrainingDataSender : IChatTrainingDataSender
 {
 	private readonly AmazonKinesisFirehoseBatchEventSender _AmazonKinesisFirehoseBatchEventSender;
 
@@ -27,4 +26,7 @@ public class AmazonKinesisFirehoseChatTrainingDataSender : IChatTrainingDataSend
 			_AmazonKinesisFirehoseBatchEventSender.EnqueueWork(formattedData);
 		}
 	}
+}
+
+
 }

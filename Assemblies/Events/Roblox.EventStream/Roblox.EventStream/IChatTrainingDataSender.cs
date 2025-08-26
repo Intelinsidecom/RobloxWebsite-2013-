@@ -1,6 +1,6 @@
-namespace Roblox.Platform.EventStream;
+﻿namespace Roblox.EventStream {
+    /// <summary>
 
-/// <summary>
 /// Interface for classes who will publish chat data to an AWS Kinesis Firehose
 /// </summary>
 public interface IChatTrainingDataSender
@@ -12,4 +12,7 @@ public interface IChatTrainingDataSender
 	/// <param name="data">a filled IChatTrainingData object representing
 	/// a community sift request</param>
 	void PublishData(IChatTrainingData data);
+}
+
+
 }

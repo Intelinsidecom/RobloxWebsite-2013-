@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class VIPServerResourceFactory
 
-internal static class VIPServerResourceFactory
 {
 	public const string FullNamespace = "Feature.VIPServer";
 
@@ -21,4 +21,7 @@ internal static class VIPServerResourceFactory
 			_ => new VIPServerResources_en_us(state), 
 		};
 	}
+}
+
+
 }

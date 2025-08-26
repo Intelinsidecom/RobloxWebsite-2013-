@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ItemResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,401 +11,401 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// button label
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "추가";
+	public override string ActionAdd => "ì¶”ê°€";
 
 	/// <summary>
 	/// Key: "Action.AddToGame"
 	/// English String: "Add To Game"
 	/// </summary>
-	public override string ActionAddToGame => "게임에 추가";
+	public override string ActionAddToGame => "ê²Œìž„ì— ì¶”ê°€";
 
 	/// <summary>
 	/// Key: "Action.AddToProfile"
 	/// English String: "Add to Profile"
 	/// </summary>
-	public override string ActionAddToProfile => "프로필에 추가";
+	public override string ActionAddToProfile => "í”„ë¡œí•„ì— ì¶”ê°€";
 
 	/// <summary>
 	/// Key: "Action.Advertise"
 	/// English String: "Advertise"
 	/// </summary>
-	public override string ActionAdvertise => "광고";
+	public override string ActionAdvertise => "ê´‘ê³ ";
 
 	/// <summary>
 	/// Key: "Action.Agree"
 	/// button label
 	/// English String: "Agree"
 	/// </summary>
-	public override string ActionAgree => "동의";
+	public override string ActionAgree => "ë™ì˜";
 
 	/// <summary>
 	/// Key: "Action.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionBuy => "구매";
+	public override string ActionBuy => "êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// Cancel
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "취소";
+	public override string ActionCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Configure"
 	/// English String: "Configure"
 	/// </summary>
-	public override string ActionConfigure => "구성";
+	public override string ActionConfigure => "êµ¬ì„±";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "확인";
+	public override string ActionConfirm => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "삭제";
+	public override string ActionDelete => "ì‚­ì œ";
 
 	/// <summary>
 	/// Key: "Action.DisableBadge"
 	/// English String: "Disable Badge"
 	/// </summary>
-	public override string ActionDisableBadge => "배지 비활성화";
+	public override string ActionDisableBadge => "ë°°ì§€ ë¹„í™œì„±í™”";
 
 	/// <summary>
 	/// Key: "Action.EditAvatar"
 	/// English String: "Edit Avatar"
 	/// </summary>
-	public override string ActionEditAvatar => "아바타 편집";
+	public override string ActionEditAvatar => "ì•„ë°”íƒ€ íŽ¸ì§‘";
 
 	/// <summary>
 	/// Key: "Action.EnableBadge"
 	/// English String: "Enable Badge"
 	/// </summary>
-	public override string ActionEnableBadge => "배지 활성화";
+	public override string ActionEnableBadge => "ë°°ì§€ í™œì„±í™”";
 
 	/// <summary>
 	/// Key: "Action.Get"
 	/// English String: "Get"
 	/// </summary>
-	public override string ActionGet => "획득";
+	public override string ActionGet => "íšë“";
 
 	/// <summary>
 	/// Key: "Action.Install"
 	/// English String: "Install"
 	/// </summary>
-	public override string ActionInstall => "설치";
+	public override string ActionInstall => "ì„¤ì¹˜";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string ActionInventory => "인벤토리";
+	public override string ActionInventory => "ì¸ë²¤í† ë¦¬";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// button label
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "아니요";
+	public override string ActionNo => "ì•„ë‹ˆìš”";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// button label
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOk => "확인";
+	public override string ActionOk => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "제거";
+	public override string ActionRemove => "ì œê±°";
 
 	/// <summary>
 	/// Key: "Action.RemoveFromProfile"
 	/// English String: "Remove from Profile"
 	/// </summary>
-	public override string ActionRemoveFromProfile => "프로필에서 삭제";
+	public override string ActionRemoveFromProfile => "í”„ë¡œí•„ì—ì„œ ì‚­ì œ";
 
 	/// <summary>
 	/// Key: "Action.Rent"
 	/// English String: "Rent"
 	/// </summary>
-	public override string ActionRent => "빌리기";
+	public override string ActionRent => "ë¹Œë¦¬ê¸°";
 
 	/// <summary>
 	/// Key: "Action.ReportItem"
 	/// English String: "Report Item"
 	/// </summary>
-	public override string ActionReportItem => "아이템 신고";
+	public override string ActionReportItem => "ì•„ì´í…œ ì‹ ê³ ";
 
 	/// <summary>
 	/// Key: "Action.Sell"
 	/// English String: "Sell"
 	/// </summary>
-	public override string ActionSell => "판매";
+	public override string ActionSell => "íŒë§¤";
 
 	/// <summary>
 	/// Key: "Action.SellNow"
 	/// Sell Now
 	/// English String: "Sell Now"
 	/// </summary>
-	public override string ActionSellNow => "지금 판매";
+	public override string ActionSellNow => "ì§€ê¸ˆ íŒë§¤";
 
 	/// <summary>
 	/// Key: "Action.TakeOff"
 	/// Action on context menu on owned item detail page.
 	/// English String: "Take Off"
 	/// </summary>
-	public override string ActionTakeOff => "해제";
+	public override string ActionTakeOff => "í•´ì œ";
 
 	/// <summary>
 	/// Key: "Action.TakeOffSale"
 	/// English String: "Take Off Sale"
 	/// </summary>
-	public override string ActionTakeOffSale => "판매 중단";
+	public override string ActionTakeOffSale => "íŒë§¤ ì¤‘ë‹¨";
 
 	/// <summary>
 	/// Key: "Action.TryOn"
 	/// English String: "Try On"
 	/// </summary>
-	public override string ActionTryOn => "장착해 보기";
+	public override string ActionTryOn => "ìž¥ì°©í•´ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.Upgrade"
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string ActionUpgrade => "업그레이드";
+	public override string ActionUpgrade => "ì—…ê·¸ë ˆì´ë“œ";
 
 	/// <summary>
 	/// Key: "Action.Wear"
 	/// Action on context menu on owned item
 	/// English String: "Wear"
 	/// </summary>
-	public override string ActionWear => "착용";
+	public override string ActionWear => "ì°©ìš©";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// Yes
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "예";
+	public override string ActionYes => "ì˜ˆ";
 
 	/// <summary>
 	/// Key: "Heading.IncludedItems"
 	/// Included items for a bundle of items. User purchases a bundle and will receive all items that will show below this heading.
 	/// English String: "Included Items"
 	/// </summary>
-	public override string HeadingIncludedItems => "포함된 아이템";
+	public override string HeadingIncludedItems => "í¬í•¨ëœ ì•„ì´í…œ";
 
 	/// <summary>
 	/// Key: "Heading.PromoteItem"
 	/// dialog heading
 	/// English String: "Promote Item"
 	/// </summary>
-	public override string HeadingPromoteItem => "아이템 홍보";
+	public override string HeadingPromoteItem => "ì•„ì´í…œ í™ë³´";
 
 	/// <summary>
 	/// Key: "Label.AssetGrantedModalAcceptText"
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelAssetGrantedModalAcceptText => "확인";
+	public override string LabelAssetGrantedModalAcceptText => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Label.AssetGrantedModalMessage"
 	/// English String: "You just got this item courtesy of our sponsor."
 	/// </summary>
-	public override string LabelAssetGrantedModalMessage => "스폰서 서비스로 본 아이템이 지급되었어요.";
+	public override string LabelAssetGrantedModalMessage => "ìŠ¤í°ì„œ ì„œë¹„ìŠ¤ë¡œ ë³¸ ì•„ì´í…œì´ ì§€ê¸‰ë˜ì—ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.AssetGrantedModalTitle"
 	/// English String: "This item is now yours"
 	/// </summary>
-	public override string LabelAssetGrantedModalTitle => "이제 회원님의 아이템이예요";
+	public override string LabelAssetGrantedModalTitle => "ì´ì œ íšŒì›ë‹˜ì˜ ì•„ì´í…œì´ì˜ˆìš”";
 
 	/// <summary>
 	/// Key: "Label.Attributes"
 	/// English String: "Attributes"
 	/// </summary>
-	public override string LabelAttributes => "속성";
+	public override string LabelAttributes => "ì†ì„±";
 
 	/// <summary>
 	/// Key: "Label.BestPrice"
 	/// English String: "Best Price"
 	/// </summary>
-	public override string LabelBestPrice => "최저 가격";
+	public override string LabelBestPrice => "ìµœì € ê°€ê²©";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubExclusive"
 	/// label for Builders Club requirement
 	/// English String: "Builders Club exclusive."
 	/// </summary>
-	public override string LabelBuildersClubExclusive => "Builders Club 전용이에요.";
+	public override string LabelBuildersClubExclusive => "Builders Club ì „ìš©ì´ì—ìš”.";
 
 	/// <summary>
 	/// Key: "Label.DeleteFromInventoryConfirm"
 	/// confirmation message before deletion
 	/// English String: "Are you sure you want to permanently DELETE this item from your inventory?"
 	/// </summary>
-	public override string LabelDeleteFromInventoryConfirm => "본 아이템을 정말 인벤토리에서 영구 삭제하시겠습니까?";
+	public override string LabelDeleteFromInventoryConfirm => "ë³¸ ì•„ì´í…œì„ ì •ë§ ì¸ë²¤í† ë¦¬ì—ì„œ ì˜êµ¬ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 
 	/// <summary>
 	/// Key: "Label.DeleteItem"
 	/// Delete Item
 	/// English String: "Delete Item"
 	/// </summary>
-	public override string LabelDeleteItem => "아이템 삭제";
+	public override string LabelDeleteItem => "ì•„ì´í…œ ì‚­ì œ";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelDescription => "설명";
+	public override string LabelDescription => "ì„¤ëª…";
 
 	/// <summary>
 	/// Key: "Label.DisableBadgeConfirm"
 	/// Are you sure you want to disable this Badge?
 	/// English String: "Are you sure you want to disable this Badge?"
 	/// </summary>
-	public override string LabelDisableBadgeConfirm => "본 배지를 정말 비활성화하시겠습니까?";
+	public override string LabelDisableBadgeConfirm => "ë³¸ ë°°ì§€ë¥¼ ì •ë§ ë¹„í™œì„±í™”í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 
 	/// <summary>
 	/// Key: "Label.DiscontinuedItem"
 	/// label
 	/// English String: "Discontinued item, resellable."
 	/// </summary>
-	public override string LabelDiscontinuedItem => "판매 중단 아이템 (재판매 가능)";
+	public override string LabelDiscontinuedItem => "íŒë§¤ ì¤‘ë‹¨ ì•„ì´í…œ (ìž¬íŒë§¤ ê°€ëŠ¥)";
 
 	/// <summary>
 	/// Key: "Label.EnableBadgeConfirm"
 	/// Are you sure you want to enable this Badge?
 	/// English String: "Are you sure you want to enable this Badge?"
 	/// </summary>
-	public override string LabelEnableBadgeConfirm => "본 배지를 정말 활성화하시겠습니까?";
+	public override string LabelEnableBadgeConfirm => "ë³¸ ë°°ì§€ë¥¼ ì •ë§ í™œì„±í™”í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 
 	/// <summary>
 	/// Key: "Label.ErrorOccurred"
 	/// English String: "Error occurred"
 	/// </summary>
-	public override string LabelErrorOccurred => "오류 발생";
+	public override string LabelErrorOccurred => "ì˜¤ë¥˜ ë°œìƒ";
 
 	/// <summary>
 	/// Key: "Label.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "무료";
+	public override string LabelFree => "ë¬´ë£Œ";
 
 	/// <summary>
 	/// Key: "Label.Genres"
 	/// English String: "Genres"
 	/// </summary>
-	public override string LabelGenres => "장르";
+	public override string LabelGenres => "ìž¥ë¥´";
 
 	/// <summary>
 	/// Key: "Label.GetBuildersClub"
 	/// Only Builders Club members can re-sell collectible items. Get Builders Club today!
 	/// English String: "Only Builders Club members can re-sell collectible items. Get Builders Club today!"
 	/// </summary>
-	public override string LabelGetBuildersClub => "Builders Club 멤버만 한정판 아이템을 재판매할 수 있어요. 지금 Builders Club에 가입하세요!";
+	public override string LabelGetBuildersClub => "Builders Club ë©¤ë²„ë§Œ í•œì •íŒ ì•„ì´í…œì„ ìž¬íŒë§¤í•  ìˆ˜ ìžˆì–´ìš”. ì§€ê¸ˆ Builders Clubì— ê°€ìž…í•˜ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Label.GetPremiumMembership"
 	/// English String: "Only Premium members can re-sell collectible items. Get Premium today!"
 	/// </summary>
-	public override string LabelGetPremiumMembership => "Premium 멤버만 한정판 아이템을 재판매할 수 있어요. 지금 Premium에 가입하세요!";
+	public override string LabelGetPremiumMembership => "Premium ë©¤ë²„ë§Œ í•œì •íŒ ì•„ì´í…œì„ ìž¬íŒë§¤í•  ìˆ˜ ìžˆì–´ìš”. ì§€ê¸ˆ Premiumì— ê°€ìž…í•˜ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Label.InvalidPlace"
 	/// text label
 	/// English String: "Invalid Place."
 	/// </summary>
-	public override string LabelInvalidPlace => "잘못된 장소예요.";
+	public override string LabelInvalidPlace => "ìž˜ëª»ëœ ìž¥ì†Œì˜ˆìš”.";
 
 	/// <summary>
 	/// Key: "Label.InvalidProduct"
 	/// label
 	/// English String: "Invalid Product."
 	/// </summary>
-	public override string LabelInvalidProduct => "유효하지 않은 상품.";
+	public override string LabelInvalidProduct => "ìœ íš¨í•˜ì§€ ì•Šì€ ìƒí’ˆ.";
 
 	/// <summary>
 	/// Key: "Label.ItemAvailable"
 	/// User is looking at the details of an item which they already own in their inventory.
 	/// English String: "This item is available in your inventory."
 	/// </summary>
-	public override string LabelItemAvailable => "본 아이템은 인벤토리에서 찾을 수 있어요.";
+	public override string LabelItemAvailable => "ë³¸ ì•„ì´í…œì€ ì¸ë²¤í† ë¦¬ì—ì„œ ì°¾ì„ ìˆ˜ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.ItemNotForSale"
 	/// User is looking at the details of an item that cannot be purchased.
 	/// English String: "This item is not currently for sale."
 	/// </summary>
-	public override string LabelItemNotForSale => "판매 중인 아이템이 아닙니다.";
+	public override string LabelItemNotForSale => "íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ ì•„ë‹™ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Label.ItemOwned"
 	/// English String: "Item Owned"
 	/// </summary>
-	public override string LabelItemOwned => "보유 아이템";
+	public override string LabelItemOwned => "ë³´ìœ  ì•„ì´í…œ";
 
 	/// <summary>
 	/// Key: "Label.None"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelNone => "없음";
+	public override string LabelNone => "ì—†ìŒ";
 
 	/// <summary>
 	/// Key: "Label.NotAvailable"
 	/// English String: "N/A"
 	/// </summary>
-	public override string LabelNotAvailable => "해당 없음";
+	public override string LabelNotAvailable => "í•´ë‹¹ ì—†ìŒ";
 
 	/// <summary>
 	/// Key: "Label.Price"
 	/// English String: "Price"
 	/// </summary>
-	public override string LabelPrice => "가격";
+	public override string LabelPrice => "ê°€ê²©";
 
 	/// <summary>
 	/// Key: "Label.PriceIsInvalid"
 	/// English String: "Price is invalid"
 	/// </summary>
-	public override string LabelPriceIsInvalid => "유효하지 않은 가격입니다";
+	public override string LabelPriceIsInvalid => "ìœ íš¨í•˜ì§€ ì•Šì€ ê°€ê²©ìž…ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Label.PriceMinimumOne"
 	/// English String: "Price (minimum 1)"
 	/// </summary>
-	public override string LabelPriceMinimumOne => "가격 (최소 1)";
+	public override string LabelPriceMinimumOne => "ê°€ê²© (ìµœì†Œ 1)";
 
 	/// <summary>
 	/// Key: "Label.PurchaseCompleted"
 	/// English String: "Purchase Completed"
 	/// </summary>
-	public override string LabelPurchaseCompleted => "구매 완료";
+	public override string LabelPurchaseCompleted => "êµ¬ë§¤ ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Label.Rarity"
 	/// English String: "Rarity"
 	/// </summary>
-	public override string LabelRarity => "희귀도";
+	public override string LabelRarity => "í¬ê·€ë„";
 
 	/// <summary>
 	/// Key: "Label.ReadMore"
 	/// English String: "Read More"
 	/// </summary>
-	public override string LabelReadMore => "더 보기";
+	public override string LabelReadMore => "ë” ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.RentingItem"
 	/// English String: "Renting Item"
 	/// </summary>
-	public override string LabelRentingItem => "아이템 빌리는 중";
+	public override string LabelRentingItem => "ì•„ì´í…œ ë¹Œë¦¬ëŠ” ì¤‘";
 
 	/// <summary>
 	/// Key: "Label.Rthro"
@@ -419,170 +419,170 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// Sell Your Collectible Item
 	/// English String: "Sell Your Collectible Item"
 	/// </summary>
-	public override string LabelSellYourCollectibleItem => "한정판 아이템 판매";
+	public override string LabelSellYourCollectibleItem => "í•œì •íŒ ì•„ì´í…œ íŒë§¤";
 
 	/// <summary>
 	/// Key: "Label.SerializedLimitedRelease"
 	/// label
 	/// English String: "Serialized limited release, resellable."
 	/// </summary>
-	public override string LabelSerializedLimitedRelease => "한정판 시리즈 (재판매 가능)";
+	public override string LabelSerializedLimitedRelease => "í•œì •íŒ ì‹œë¦¬ì¦ˆ (ìž¬íŒë§¤ ê°€ëŠ¥)";
 
 	/// <summary>
 	/// Key: "Label.SerialNotAvailable"
 	/// English String: "Serial N/A"
 	/// </summary>
-	public override string LabelSerialNotAvailable => "일련번호 없음";
+	public override string LabelSerialNotAvailable => "ì¼ë ¨ë²ˆí˜¸ ì—†ìŒ";
 
 	/// <summary>
 	/// Key: "Label.SerialNumber"
 	/// English String: "Serial Number"
 	/// </summary>
-	public override string LabelSerialNumber => "일련번호";
+	public override string LabelSerialNumber => "ì¼ë ¨ë²ˆí˜¸";
 
 	/// <summary>
 	/// Key: "Label.ShowLess"
 	/// Show Less
 	/// English String: "Show Less"
 	/// </summary>
-	public override string LabelShowLess => "간략히 보기";
+	public override string LabelShowLess => "ê°„ëžµížˆ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Tags"
 	/// A label to indicate a list of tags on an item (i.e. "red, belt, shoes, denim" could be some tags for a Pants item that was red jeans with a belt and shoes)
 	/// English String: "Tags"
 	/// </summary>
-	public override string LabelTags => "태그";
+	public override string LabelTags => "íƒœê·¸";
 
 	/// <summary>
 	/// Key: "Label.TakeOffSale"
 	/// Take off Sale
 	/// English String: "Take off Sale"
 	/// </summary>
-	public override string LabelTakeOffSale => "판매 중단";
+	public override string LabelTakeOffSale => "íŒë§¤ ì¤‘ë‹¨";
 
 	/// <summary>
 	/// Key: "Label.TakeOffSaleConfirm"
 	/// English String: "Are you sure you want to take the item off sale?"
 	/// </summary>
-	public override string LabelTakeOffSaleConfirm => "아이템 판매를 정말 중단하시겠습니까?";
+	public override string LabelTakeOffSaleConfirm => "ì•„ì´í…œ íŒë§¤ë¥¼ ì •ë§ ì¤‘ë‹¨í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 
 	/// <summary>
 	/// Key: "Label.ThirteenPlusOnly"
 	/// label
 	/// English String: "13+ Only."
 	/// </summary>
-	public override string LabelThirteenPlusOnly => "13+ 전용.";
+	public override string LabelThirteenPlusOnly => "13+ ì „ìš©.";
 
 	/// <summary>
 	/// Key: "Label.Type"
 	/// English String: "Type"
 	/// </summary>
-	public override string LabelType => "종류";
+	public override string LabelType => "ì¢…ë¥˜";
 
 	/// <summary>
 	/// Key: "Label.Updated"
 	/// English String: "Updated"
 	/// </summary>
-	public override string LabelUpdated => "업데이트";
+	public override string LabelUpdated => "ì—…ë°ì´íŠ¸";
 
 	/// <summary>
 	/// Key: "Label.YouGet"
 	/// Amount user gets after Marketplace fee deduction.
 	/// English String: "You get"
 	/// </summary>
-	public override string LabelYouGet => "획득:";
+	public override string LabelYouGet => "íšë“:";
 
 	/// <summary>
 	/// Key: "Response.AddedToProfile"
 	/// success message when item is added to profile
 	/// English String: "Added to your profile"
 	/// </summary>
-	public override string ResponseAddedToProfile => "프로필에 추가했습니다";
+	public override string ResponseAddedToProfile => "í”„ë¡œí•„ì— ì¶”ê°€í–ˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.AddedToYourAvater"
 	/// Added to your Avatar
 	/// English String: "Added to your Avatar"
 	/// </summary>
-	public override string ResponseAddedToYourAvater => "아바타에 추가했습니다";
+	public override string ResponseAddedToYourAvater => "ì•„ë°”íƒ€ì— ì¶”ê°€í–ˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.AlreadyHaveMaxItems"
 	/// error message
 	/// English String: "You already have the maximum number of items on your game!"
 	/// </summary>
-	public override string ResponseAlreadyHaveMaxItems => "게임에 적용한 아이템의 수가 이미 한도에 도달했어요!";
+	public override string ResponseAlreadyHaveMaxItems => "ê²Œìž„ì— ì ìš©í•œ ì•„ì´í…œì˜ ìˆ˜ê°€ ì´ë¯¸ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”!";
 
 	/// <summary>
 	/// Key: "Response.DisabledBadge"
 	/// Successfully disabled the badge
 	/// English String: "Successfully disabled the badge"
 	/// </summary>
-	public override string ResponseDisabledBadge => "배지 비활성화 완료";
+	public override string ResponseDisabledBadge => "ë°°ì§€ ë¹„í™œì„±í™” ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Response.EnabledBadge"
 	/// Successfully enabled the badge
 	/// English String: "Successfully enabled the badge"
 	/// </summary>
-	public override string ResponseEnabledBadge => "배지 활성화 완료";
+	public override string ResponseEnabledBadge => "ë°°ì§€ í™œì„±í™” ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Response.FailedToAddToProfile"
 	/// error message when item could not be added to profile
 	/// English String: "Failed to add to profile"
 	/// </summary>
-	public override string ResponseFailedToAddToProfile => "프로필에 추가하지 못했습니다";
+	public override string ResponseFailedToAddToProfile => "í”„ë¡œí•„ì— ì¶”ê°€í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.FailedToDeleteFromInventory"
 	/// Failed to delete item from inventory
 	/// English String: "Failed to delete item from inventory"
 	/// </summary>
-	public override string ResponseFailedToDeleteFromInventory => "인벤토리에서 아이템을 삭제하지 못했습니다";
+	public override string ResponseFailedToDeleteFromInventory => "ì¸ë²¤í† ë¦¬ì—ì„œ ì•„ì´í…œì„ ì‚­ì œí•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.FailedToDisableBadge"
 	/// Failed to disable badge
 	/// English String: "Failed to disable badge"
 	/// </summary>
-	public override string ResponseFailedToDisableBadge => "배지 비활성화 실패";
+	public override string ResponseFailedToDisableBadge => "ë°°ì§€ ë¹„í™œì„±í™” ì‹¤íŒ¨";
 
 	/// <summary>
 	/// Key: "Response.FailedToEnableBadge"
 	/// Failed to enable badge
 	/// English String: "Failed to enable badge"
 	/// </summary>
-	public override string ResponseFailedToEnableBadge => "배지 활성화 실패";
+	public override string ResponseFailedToEnableBadge => "ë°°ì§€ í™œì„±í™” ì‹¤íŒ¨";
 
 	/// <summary>
 	/// Key: "Response.FailedToRemoveFromProfile"
 	/// error message when items could not be removed
 	/// English String: "Failed to remove from profile"
 	/// </summary>
-	public override string ResponseFailedToRemoveFromProfile => "프로필에서 삭제하지 못했습니다";
+	public override string ResponseFailedToRemoveFromProfile => "í”„ë¡œí•„ì—ì„œ ì‚­ì œí•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromInventory"
 	/// Successfully removed from your inventory
 	/// English String: "Successfully removed from your inventory"
 	/// </summary>
-	public override string ResponseRemovedFromInventory => "인벤토리에서 삭제했습니다";
+	public override string ResponseRemovedFromInventory => "ì¸ë²¤í† ë¦¬ì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromProfile"
 	/// message when an item is removed from profile
 	/// English String: "Removed from your profile"
 	/// </summary>
-	public override string ResponseRemovedFromProfile => "프로필에서 삭제했습니다";
+	public override string ResponseRemovedFromProfile => "í”„ë¡œí•„ì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromYourAvater"
 	/// Removed from your Avatar
 	/// English String: "Removed from your Avatar"
 	/// </summary>
-	public override string ResponseRemovedFromYourAvater => "아바타에서 삭제했습니다";
+	public override string ResponseRemovedFromYourAvater => "ì•„ë°”íƒ€ì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤";
 
 	public ItemResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -591,162 +591,162 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "추가";
+		return "ì¶”ê°€";
 	}
 
 	protected override string _GetTemplateForActionAddToGame()
 	{
-		return "게임에 추가";
+		return "ê²Œìž„ì— ì¶”ê°€";
 	}
 
 	protected override string _GetTemplateForActionAddToProfile()
 	{
-		return "프로필에 추가";
+		return "í”„ë¡œí•„ì— ì¶”ê°€";
 	}
 
 	protected override string _GetTemplateForActionAdvertise()
 	{
-		return "광고";
+		return "ê´‘ê³ ";
 	}
 
 	protected override string _GetTemplateForActionAgree()
 	{
-		return "동의";
+		return "ë™ì˜";
 	}
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "구매";
+		return "êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionConfigure()
 	{
-		return "구성";
+		return "êµ¬ì„±";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "삭제";
+		return "ì‚­ì œ";
 	}
 
 	protected override string _GetTemplateForActionDisableBadge()
 	{
-		return "배지 비활성화";
+		return "ë°°ì§€ ë¹„í™œì„±í™”";
 	}
 
 	protected override string _GetTemplateForActionEditAvatar()
 	{
-		return "아바타 편집";
+		return "ì•„ë°”íƒ€ íŽ¸ì§‘";
 	}
 
 	protected override string _GetTemplateForActionEnableBadge()
 	{
-		return "배지 활성화";
+		return "ë°°ì§€ í™œì„±í™”";
 	}
 
 	protected override string _GetTemplateForActionGet()
 	{
-		return "획득";
+		return "íšë“";
 	}
 
 	protected override string _GetTemplateForActionInstall()
 	{
-		return "설치";
+		return "ì„¤ì¹˜";
 	}
 
 	protected override string _GetTemplateForActionInventory()
 	{
-		return "인벤토리";
+		return "ì¸ë²¤í† ë¦¬";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "아니요";
+		return "ì•„ë‹ˆìš”";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "제거";
+		return "ì œê±°";
 	}
 
 	protected override string _GetTemplateForActionRemoveFromProfile()
 	{
-		return "프로필에서 삭제";
+		return "í”„ë¡œí•„ì—ì„œ ì‚­ì œ";
 	}
 
 	protected override string _GetTemplateForActionRent()
 	{
-		return "빌리기";
+		return "ë¹Œë¦¬ê¸°";
 	}
 
 	protected override string _GetTemplateForActionReportItem()
 	{
-		return "아이템 신고";
+		return "ì•„ì´í…œ ì‹ ê³ ";
 	}
 
 	protected override string _GetTemplateForActionSell()
 	{
-		return "판매";
+		return "íŒë§¤";
 	}
 
 	protected override string _GetTemplateForActionSellNow()
 	{
-		return "지금 판매";
+		return "ì§€ê¸ˆ íŒë§¤";
 	}
 
 	protected override string _GetTemplateForActionTakeOff()
 	{
-		return "해제";
+		return "í•´ì œ";
 	}
 
 	protected override string _GetTemplateForActionTakeOffSale()
 	{
-		return "판매 중단";
+		return "íŒë§¤ ì¤‘ë‹¨";
 	}
 
 	protected override string _GetTemplateForActionTryOn()
 	{
-		return "장착해 보기";
+		return "ìž¥ì°©í•´ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionUpgrade()
 	{
-		return "업그레이드";
+		return "ì—…ê·¸ë ˆì´ë“œ";
 	}
 
 	protected override string _GetTemplateForActionWear()
 	{
-		return "착용";
+		return "ì°©ìš©";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "예";
+		return "ì˜ˆ";
 	}
 
 	protected override string _GetTemplateForHeadingIncludedItems()
 	{
-		return "포함된 아이템";
+		return "í¬í•¨ëœ ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForHeadingPromoteItem()
 	{
-		return "아이템 홍보";
+		return "ì•„ì´í…œ í™ë³´";
 	}
 
 	/// <summary>
@@ -755,42 +755,42 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelAllowPlayersPlusEarn(string affiliateSaleTotal)
 	{
-		return $"사용자들이 본 장비를 회원님의 게임에서 사용할 수 있도록 추가해보세요. 사용자가 회원님의 게임 페이지에서 본 장비를 구매시, {affiliateSaleTotal}을(를) 획득할 수 있습니다.";
+		return $"ì‚¬ìš©ìžë“¤ì´ ë³¸ ìž¥ë¹„ë¥¼ íšŒì›ë‹˜ì˜ ê²Œìž„ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ ì¶”ê°€í•´ë³´ì„¸ìš”. ì‚¬ìš©ìžê°€ íšŒì›ë‹˜ì˜ ê²Œìž„ íŽ˜ì´ì§€ì—ì„œ ë³¸ ìž¥ë¹„ë¥¼ êµ¬ë§¤ì‹œ, {affiliateSaleTotal}ì„(ë¥¼) íšë“í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelAllowPlayersPlusEarn()
 	{
-		return "사용자들이 본 장비를 회원님의 게임에서 사용할 수 있도록 추가해보세요. 사용자가 회원님의 게임 페이지에서 본 장비를 구매시, {affiliateSaleTotal}을(를) 획득할 수 있습니다.";
+		return "ì‚¬ìš©ìžë“¤ì´ ë³¸ ìž¥ë¹„ë¥¼ íšŒì›ë‹˜ì˜ ê²Œìž„ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ ì¶”ê°€í•´ë³´ì„¸ìš”. ì‚¬ìš©ìžê°€ íšŒì›ë‹˜ì˜ ê²Œìž„ íŽ˜ì´ì§€ì—ì„œ ë³¸ ìž¥ë¹„ë¥¼ êµ¬ë§¤ì‹œ, {affiliateSaleTotal}ì„(ë¥¼) íšë“í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalAcceptText()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalMessage()
 	{
-		return "스폰서 서비스로 본 아이템이 지급되었어요.";
+		return "ìŠ¤í°ì„œ ì„œë¹„ìŠ¤ë¡œ ë³¸ ì•„ì´í…œì´ ì§€ê¸‰ë˜ì—ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalTitle()
 	{
-		return "이제 회원님의 아이템이예요";
+		return "ì´ì œ íšŒì›ë‹˜ì˜ ì•„ì´í…œì´ì˜ˆìš”";
 	}
 
 	protected override string _GetTemplateForLabelAttributes()
 	{
-		return "속성";
+		return "ì†ì„±";
 	}
 
 	protected override string _GetTemplateForLabelBestPrice()
 	{
-		return "최저 가격";
+		return "ìµœì € ê°€ê²©";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubExclusive()
 	{
-		return "Builders Club 전용이에요.";
+		return "Builders Club ì „ìš©ì´ì—ìš”.";
 	}
 
 	/// <summary>
@@ -799,12 +799,12 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelBy(string creator)
 	{
-		return $"개발자: {creator}";
+		return $"ê°œë°œìž: {creator}";
 	}
 
 	protected override string _GetTemplateForLabelBy()
 	{
-		return "개발자: {creator}";
+		return "ê°œë°œìž: {creator}";
 	}
 
 	/// <summary>
@@ -814,37 +814,37 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelCountdownTimerDayHourMinute(string numberOfDays, string numberOfHours, string numberOfMinutes)
 	{
-		return $"{numberOfDays}일 {numberOfHours}시간 {numberOfMinutes}분 후 판매 중단";
+		return $"{numberOfDays}ì¼ {numberOfHours}ì‹œê°„ {numberOfMinutes}ë¶„ í›„ íŒë§¤ ì¤‘ë‹¨";
 	}
 
 	protected override string _GetTemplateForLabelCountdownTimerDayHourMinute()
 	{
-		return "{numberOfDays}일 {numberOfHours}시간 {numberOfMinutes}분 후 판매 중단";
+		return "{numberOfDays}ì¼ {numberOfHours}ì‹œê°„ {numberOfMinutes}ë¶„ í›„ íŒë§¤ ì¤‘ë‹¨";
 	}
 
 	protected override string _GetTemplateForLabelDeleteFromInventoryConfirm()
 	{
-		return "본 아이템을 정말 인벤토리에서 영구 삭제하시겠습니까?";
+		return "ë³¸ ì•„ì´í…œì„ ì •ë§ ì¸ë²¤í† ë¦¬ì—ì„œ ì˜êµ¬ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	protected override string _GetTemplateForLabelDeleteItem()
 	{
-		return "아이템 삭제";
+		return "ì•„ì´í…œ ì‚­ì œ";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "설명";
+		return "ì„¤ëª…";
 	}
 
 	protected override string _GetTemplateForLabelDisableBadgeConfirm()
 	{
-		return "본 배지를 정말 비활성화하시겠습니까?";
+		return "ë³¸ ë°°ì§€ë¥¼ ì •ë§ ë¹„í™œì„±í™”í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	protected override string _GetTemplateForLabelDiscontinuedItem()
 	{
-		return "판매 중단 아이템 (재판매 가능)";
+		return "íŒë§¤ ì¤‘ë‹¨ ì•„ì´í…œ (ìž¬íŒë§¤ ê°€ëŠ¥)";
 	}
 
 	/// <summary>
@@ -854,67 +854,67 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelEarnBadgeGameLink(string placeLink)
 	{
-		return $"{placeLink}에서 본 배지를 획득하세요";
+		return $"{placeLink}ì—ì„œ ë³¸ ë°°ì§€ë¥¼ íšë“í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelEarnBadgeGameLink()
 	{
-		return "{placeLink}에서 본 배지를 획득하세요";
+		return "{placeLink}ì—ì„œ ë³¸ ë°°ì§€ë¥¼ íšë“í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelEnableBadgeConfirm()
 	{
-		return "본 배지를 정말 활성화하시겠습니까?";
+		return "ë³¸ ë°°ì§€ë¥¼ ì •ë§ í™œì„±í™”í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	protected override string _GetTemplateForLabelErrorOccurred()
 	{
-		return "오류 발생";
+		return "ì˜¤ë¥˜ ë°œìƒ";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "무료";
+		return "ë¬´ë£Œ";
 	}
 
 	protected override string _GetTemplateForLabelGenres()
 	{
-		return "장르";
+		return "ìž¥ë¥´";
 	}
 
 	protected override string _GetTemplateForLabelGetBuildersClub()
 	{
-		return "Builders Club 멤버만 한정판 아이템을 재판매할 수 있어요. 지금 Builders Club에 가입하세요!";
+		return "Builders Club ë©¤ë²„ë§Œ í•œì •íŒ ì•„ì´í…œì„ ìž¬íŒë§¤í•  ìˆ˜ ìžˆì–´ìš”. ì§€ê¸ˆ Builders Clubì— ê°€ìž…í•˜ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForLabelGetPremiumMembership()
 	{
-		return "Premium 멤버만 한정판 아이템을 재판매할 수 있어요. 지금 Premium에 가입하세요!";
+		return "Premium ë©¤ë²„ë§Œ í•œì •íŒ ì•„ì´í…œì„ ìž¬íŒë§¤í•  ìˆ˜ ìžˆì–´ìš”. ì§€ê¸ˆ Premiumì— ê°€ìž…í•˜ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPlace()
 	{
-		return "잘못된 장소예요.";
+		return "ìž˜ëª»ëœ ìž¥ì†Œì˜ˆìš”.";
 	}
 
 	protected override string _GetTemplateForLabelInvalidProduct()
 	{
-		return "유효하지 않은 상품.";
+		return "ìœ íš¨í•˜ì§€ ì•Šì€ ìƒí’ˆ.";
 	}
 
 	protected override string _GetTemplateForLabelItemAvailable()
 	{
-		return "본 아이템은 인벤토리에서 찾을 수 있어요.";
+		return "ë³¸ ì•„ì´í…œì€ ì¸ë²¤í† ë¦¬ì—ì„œ ì°¾ì„ ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelItemNotForSale()
 	{
-		return "판매 중인 아이템이 아닙니다.";
+		return "íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ ì•„ë‹™ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelItemOwned()
 	{
-		return "보유 아이템";
+		return "ë³´ìœ  ì•„ì´í…œ";
 	}
 
 	/// <summary>
@@ -923,12 +923,12 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelItemOwnedAmount(string amount)
 	{
-		return $"보유 아이템 ({amount})";
+		return $"ë³´ìœ  ì•„ì´í…œ ({amount})";
 	}
 
 	protected override string _GetTemplateForLabelItemOwnedAmount()
 	{
-		return "보유 아이템 ({amount})";
+		return "ë³´ìœ  ì•„ì´í…œ ({amount})";
 	}
 
 	/// <summary>
@@ -937,12 +937,12 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelItemRecentPrice(string name, string price)
 	{
-		return $"{name}의 최근 평균 가격은 {price}입니다.";
+		return $"{name}ì˜ ìµœê·¼ í‰ê·  ê°€ê²©ì€ {price}ìž…ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelItemRecentPrice()
 	{
-		return "{name}의 최근 평균 가격은 {price}입니다.";
+		return "{name}ì˜ ìµœê·¼ í‰ê·  ê°€ê²©ì€ {price}ìž…ë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -952,22 +952,22 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelMarketplaceFee(string percent)
 	{
-		return $"장터 수수료 ({percent}%)";
+		return $"ìž¥í„° ìˆ˜ìˆ˜ë£Œ ({percent}%)";
 	}
 
 	protected override string _GetTemplateForLabelMarketplaceFee()
 	{
-		return "장터 수수료 ({percent}%)";
+		return "ìž¥í„° ìˆ˜ìˆ˜ë£Œ ({percent}%)";
 	}
 
 	protected override string _GetTemplateForLabelNone()
 	{
-		return "없음";
+		return "ì—†ìŒ";
 	}
 
 	protected override string _GetTemplateForLabelNotAvailable()
 	{
-		return "해당 없음";
+		return "í•´ë‹¹ ì—†ìŒ";
 	}
 
 	/// <summary>
@@ -977,47 +977,47 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelOffsaleCountdownHourMinuteSecond(string numberOfHours, string numberOfMinutes, string numberOfSeconds)
 	{
-		return $"{numberOfHours}시간 {numberOfMinutes}분 {numberOfSeconds}초 후 판매 중단";
+		return $"{numberOfHours}ì‹œê°„ {numberOfMinutes}ë¶„ {numberOfSeconds}ì´ˆ í›„ íŒë§¤ ì¤‘ë‹¨";
 	}
 
 	protected override string _GetTemplateForLabelOffsaleCountdownHourMinuteSecond()
 	{
-		return "{numberOfHours}시간 {numberOfMinutes}분 {numberOfSeconds}초 후 판매 중단";
+		return "{numberOfHours}ì‹œê°„ {numberOfMinutes}ë¶„ {numberOfSeconds}ì´ˆ í›„ íŒë§¤ ì¤‘ë‹¨";
 	}
 
 	protected override string _GetTemplateForLabelPrice()
 	{
-		return "가격";
+		return "ê°€ê²©";
 	}
 
 	protected override string _GetTemplateForLabelPriceIsInvalid()
 	{
-		return "유효하지 않은 가격입니다";
+		return "ìœ íš¨í•˜ì§€ ì•Šì€ ê°€ê²©ìž…ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForLabelPriceMinimumOne()
 	{
-		return "가격 (최소 1)";
+		return "ê°€ê²© (ìµœì†Œ 1)";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseCompleted()
 	{
-		return "구매 완료";
+		return "êµ¬ë§¤ ì™„ë£Œ";
 	}
 
 	protected override string _GetTemplateForLabelRarity()
 	{
-		return "희귀도";
+		return "í¬ê·€ë„";
 	}
 
 	protected override string _GetTemplateForLabelReadMore()
 	{
-		return "더 보기";
+		return "ë” ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelRentingItem()
 	{
-		return "아이템 빌리는 중";
+		return "ì•„ì´í…œ ë¹Œë¦¬ëŠ” ì¤‘";
 	}
 
 	protected override string _GetTemplateForLabelRthro()
@@ -1031,32 +1031,32 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelSellConfirm(string name, string price)
 	{
-		return $"{name}을(를) {price}에 정말 판매하시겠습니까?";
+		return $"{name}ì„(ë¥¼) {price}ì— ì •ë§ íŒë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	protected override string _GetTemplateForLabelSellConfirm()
 	{
-		return "{name}을(를) {price}에 정말 판매하시겠습니까?";
+		return "{name}ì„(ë¥¼) {price}ì— ì •ë§ íŒë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	protected override string _GetTemplateForLabelSellYourCollectibleItem()
 	{
-		return "한정판 아이템 판매";
+		return "í•œì •íŒ ì•„ì´í…œ íŒë§¤";
 	}
 
 	protected override string _GetTemplateForLabelSerializedLimitedRelease()
 	{
-		return "한정판 시리즈 (재판매 가능)";
+		return "í•œì •íŒ ì‹œë¦¬ì¦ˆ (ìž¬íŒë§¤ ê°€ëŠ¥)";
 	}
 
 	protected override string _GetTemplateForLabelSerialNotAvailable()
 	{
-		return "일련번호 없음";
+		return "ì¼ë ¨ë²ˆí˜¸ ì—†ìŒ";
 	}
 
 	protected override string _GetTemplateForLabelSerialNumber()
 	{
-		return "일련번호";
+		return "ì¼ë ¨ë²ˆí˜¸";
 	}
 
 	/// <summary>
@@ -1065,47 +1065,47 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelSerialNumberOfTotal(string number, string total)
 	{
-		return $"일련번호 {number} / {total}";
+		return $"ì¼ë ¨ë²ˆí˜¸ {number} / {total}";
 	}
 
 	protected override string _GetTemplateForLabelSerialNumberOfTotal()
 	{
-		return "일련번호 {number} / {total}";
+		return "ì¼ë ¨ë²ˆí˜¸ {number} / {total}";
 	}
 
 	protected override string _GetTemplateForLabelShowLess()
 	{
-		return "간략히 보기";
+		return "ê°„ëžµížˆ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelTags()
 	{
-		return "태그";
+		return "íƒœê·¸";
 	}
 
 	protected override string _GetTemplateForLabelTakeOffSale()
 	{
-		return "판매 중단";
+		return "íŒë§¤ ì¤‘ë‹¨";
 	}
 
 	protected override string _GetTemplateForLabelTakeOffSaleConfirm()
 	{
-		return "아이템 판매를 정말 중단하시겠습니까?";
+		return "ì•„ì´í…œ íŒë§¤ë¥¼ ì •ë§ ì¤‘ë‹¨í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	protected override string _GetTemplateForLabelThirteenPlusOnly()
 	{
-		return "13+ 전용.";
+		return "13+ ì „ìš©.";
 	}
 
 	protected override string _GetTemplateForLabelType()
 	{
-		return "종류";
+		return "ì¢…ë¥˜";
 	}
 
 	protected override string _GetTemplateForLabelUpdated()
 	{
-		return "업데이트";
+		return "ì—…ë°ì´íŠ¸";
 	}
 
 	/// <summary>
@@ -1114,12 +1114,12 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelUpdatedBy(string link)
 	{
-		return $"(개발: {link})";
+		return $"(ê°œë°œ: {link})";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedBy()
 	{
-		return "(개발: {link})";
+		return "(ê°œë°œ: {link})";
 	}
 
 	/// <summary>
@@ -1129,67 +1129,67 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelUseGamePassLink(string placeLink)
 	{
-		return $"{placeLink}에서 본 게임패스를 사용하세요";
+		return $"{placeLink}ì—ì„œ ë³¸ ê²Œìž„íŒ¨ìŠ¤ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelUseGamePassLink()
 	{
-		return "{placeLink}에서 본 게임패스를 사용하세요";
+		return "{placeLink}ì—ì„œ ë³¸ ê²Œìž„íŒ¨ìŠ¤ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelYouGet()
 	{
-		return "획득:";
+		return "íšë“:";
 	}
 
 	protected override string _GetTemplateForResponseAddedToProfile()
 	{
-		return "프로필에 추가했습니다";
+		return "í”„ë¡œí•„ì— ì¶”ê°€í–ˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseAddedToYourAvater()
 	{
-		return "아바타에 추가했습니다";
+		return "ì•„ë°”íƒ€ì— ì¶”ê°€í–ˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseAlreadyHaveMaxItems()
 	{
-		return "게임에 적용한 아이템의 수가 이미 한도에 도달했어요!";
+		return "ê²Œìž„ì— ì ìš©í•œ ì•„ì´í…œì˜ ìˆ˜ê°€ ì´ë¯¸ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForResponseDisabledBadge()
 	{
-		return "배지 비활성화 완료";
+		return "ë°°ì§€ ë¹„í™œì„±í™” ì™„ë£Œ";
 	}
 
 	protected override string _GetTemplateForResponseEnabledBadge()
 	{
-		return "배지 활성화 완료";
+		return "ë°°ì§€ í™œì„±í™” ì™„ë£Œ";
 	}
 
 	protected override string _GetTemplateForResponseFailedToAddToProfile()
 	{
-		return "프로필에 추가하지 못했습니다";
+		return "í”„ë¡œí•„ì— ì¶”ê°€í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseFailedToDeleteFromInventory()
 	{
-		return "인벤토리에서 아이템을 삭제하지 못했습니다";
+		return "ì¸ë²¤í† ë¦¬ì—ì„œ ì•„ì´í…œì„ ì‚­ì œí•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseFailedToDisableBadge()
 	{
-		return "배지 비활성화 실패";
+		return "ë°°ì§€ ë¹„í™œì„±í™” ì‹¤íŒ¨";
 	}
 
 	protected override string _GetTemplateForResponseFailedToEnableBadge()
 	{
-		return "배지 활성화 실패";
+		return "ë°°ì§€ í™œì„±í™” ì‹¤íŒ¨";
 	}
 
 	protected override string _GetTemplateForResponseFailedToRemoveFromProfile()
 	{
-		return "프로필에서 삭제하지 못했습니다";
+		return "í”„ë¡œí•„ì—ì„œ ì‚­ì œí•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤";
 	}
 
 	/// <summary>
@@ -1199,12 +1199,12 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string ResponseGearAddSuccess(string placeName)
 	{
-		return $"게임 ({placeName})에 추가 완료.";
+		return $"ê²Œìž„ ({placeName})ì— ì¶”ê°€ ì™„ë£Œ.";
 	}
 
 	protected override string _GetTemplateForResponseGearAddSuccess()
 	{
-		return "게임 ({placeName})에 추가 완료.";
+		return "ê²Œìž„ ({placeName})ì— ì¶”ê°€ ì™„ë£Œ.";
 	}
 
 	/// <summary>
@@ -1214,26 +1214,29 @@ internal class ItemResources_ko_kr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string ResponseGearAlreadyAdded(string placeName)
 	{
-		return $"이미 {placeName}에 추가한 장비입니다.";
+		return $"ì´ë¯¸ {placeName}ì— ì¶”ê°€í•œ ìž¥ë¹„ìž…ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForResponseGearAlreadyAdded()
 	{
-		return "이미 {placeName}에 추가한 장비입니다.";
+		return "ì´ë¯¸ {placeName}ì— ì¶”ê°€í•œ ìž¥ë¹„ìž…ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromInventory()
 	{
-		return "인벤토리에서 삭제했습니다";
+		return "ì¸ë²¤í† ë¦¬ì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromProfile()
 	{
-		return "프로필에서 삭제했습니다";
+		return "í”„ë¡œí•„ì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromYourAvater()
 	{
-		return "아바타에서 삭제했습니다";
+		return "ì•„ë°”íƒ€ì—ì„œ ì‚­ì œí–ˆìŠµë‹ˆë‹¤";
 	}
+}
+
+
 }

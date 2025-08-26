@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Web;
@@ -6,10 +6,9 @@ using System.Web.UI;
 using Roblox.Controls;
 using Roblox.Platform.Assets;
 using Roblox.Thumbs.Properties;
+namespace Roblox.Platform.Thumbs {
+    /// <summary>
 
-namespace Roblox.Thumbs;
-
-/// <summary>
 /// Renders an Asset thumbnail
 /// This control is coupled with AssetImage.js and the Asset.cs web service
 /// </summary>
@@ -224,4 +223,7 @@ public abstract class AssetImage : ThumbnailImage
 			}
 		}
 	}
+}
+
+
 }

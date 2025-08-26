@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.PremiumFeatures.Interfaces;
+namespace Roblox.Platform.PremiumFeatures.Implementation {
+    /// <inheritdoc />
 
-namespace Roblox.PremiumFeatures.Implementation;
-
-/// <inheritdoc />
 public class AccountAddOnModel : IAccountAddOnModel
 {
 	/// <inheritdoc />
@@ -67,4 +66,7 @@ public class AccountAddOnModel : IAccountAddOnModel
 		AccountAddOnTypeName = accountAddOnTypeName;
 		IsLifetime = isLifetime;
 	}
+}
+
+
 }

@@ -1,10 +1,9 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Collections;
-using Roblox.Users.Client.Properties;
-
-namespace Roblox.Users.Client;
-
+using Roblox.Platform.Users.Client.Properties;
+namespace Roblox.Platform.Users.Client
+{
 public class UsersClientAgentCache : IUsersClientAgentCache
 {
 	private readonly ExpirableDictionary<long, AgentData> _AgentCacheById;
@@ -75,4 +74,5 @@ public class UsersClientAgentCache : IUsersClientAgentCache
 	{
 		return $"agentType:{agentType}_agentTargetId:{agentTargetId}";
 	}
+}
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+    static class RedeemGameCardResourceFactory
 
-internal static class RedeemGameCardResourceFactory
 {
 	public const string FullNamespace = "Purchasing.RedeemGameCard";
 
@@ -21,4 +21,7 @@ internal static class RedeemGameCardResourceFactory
 			_ => new RedeemGameCardResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,510 +10,510 @@ internal class ProfileResources_ko_kr : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "수락";
+	public override string ActionAccept => "ìˆ˜ë½";
 
 	/// <summary>
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "친구 추가";
+	public override string ActionAddFriend => "ì¹œêµ¬ ì¶”ê°€";
 
 	/// <summary>
 	/// Key: "Action.BlockUser"
 	/// English String: "Block User"
 	/// </summary>
-	public override string ActionBlockUser => "사용자 차단";
+	public override string ActionBlockUser => "ì‚¬ìš©ìž ì°¨ë‹¨";
 
 	/// <summary>
 	/// Key: "Action.CancelBlockUser"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancelBlockUser => "취소";
+	public override string ActionCancelBlockUser => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string ActionChat => "채팅";
+	public override string ActionChat => "ì±„íŒ…";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// close modal
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "닫기";
+	public override string ActionClose => "ë‹«ê¸°";
 
 	/// <summary>
 	/// Key: "Action.ConfirmBlockUser"
 	/// English String: "Block"
 	/// </summary>
-	public override string ActionConfirmBlockUser => "차단";
+	public override string ActionConfirmBlockUser => "ì°¨ë‹¨";
 
 	/// <summary>
 	/// Key: "Action.ConfirmUnblockUser"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string ActionConfirmUnblockUser => "차단 해제";
+	public override string ActionConfirmUnblockUser => "ì°¨ë‹¨ í•´ì œ";
 
 	/// <summary>
 	/// Key: "Action.Favorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string ActionFavorites => "즐겨찾기";
+	public override string ActionFavorites => "ì¦ê²¨ì°¾ê¸°";
 
 	/// <summary>
 	/// Key: "Action.Follow"
 	/// English String: "Follow"
 	/// </summary>
-	public override string ActionFollow => "팔로우";
+	public override string ActionFollow => "íŒ”ë¡œìš°";
 
 	/// <summary>
 	/// Key: "Action.GridView"
 	/// English String: "Grid View"
 	/// </summary>
-	public override string ActionGridView => "격자 보기";
+	public override string ActionGridView => "ê²©ìž ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.ImpersonateUser"
 	/// English String: "Impersonate User"
 	/// </summary>
-	public override string ActionImpersonateUser => "사용자 사칭";
+	public override string ActionImpersonateUser => "ì‚¬ìš©ìž ì‚¬ì¹­";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string ActionInventory => "인벤토리";
+	public override string ActionInventory => "ì¸ë²¤í† ë¦¬";
 
 	/// <summary>
 	/// Key: "Action.JoinGame"
 	/// English String: "Join Game"
 	/// </summary>
-	public override string ActionJoinGame => "게임 참가";
+	public override string ActionJoinGame => "ê²Œìž„ ì°¸ê°€";
 
 	/// <summary>
 	/// Key: "Action.Message"
 	/// English String: "Message"
 	/// </summary>
-	public override string ActionMessage => "메시지";
+	public override string ActionMessage => "ë©”ì‹œì§€";
 
 	/// <summary>
 	/// Key: "Action.Pending"
 	/// English String: "Pending"
 	/// </summary>
-	public override string ActionPending => "대기 중";
+	public override string ActionPending => "ëŒ€ê¸° ì¤‘";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "저장";
+	public override string ActionSave => "ì €ìž¥";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "전체 보기";
+	public override string ActionSeeAll => "ì „ì²´ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.SeeLess"
 	/// English String: "See Less"
 	/// </summary>
-	public override string ActionSeeLess => "간략히 보기";
+	public override string ActionSeeLess => "ê°„ëžµížˆ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string ActionSeeMore => "더 보기";
+	public override string ActionSeeMore => "ë” ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.SlideshowView"
 	/// English String: "Slideshow View"
 	/// </summary>
-	public override string ActionSlideshowView => "슬라이드쇼 보기";
+	public override string ActionSlideshowView => "ìŠ¬ë¼ì´ë“œì‡¼ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.Trade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string ActionTrade => "거래";
+	public override string ActionTrade => "ê±°ëž˜";
 
 	/// <summary>
 	/// Key: "Action.TradeItems"
 	/// English String: "Trade Items"
 	/// </summary>
-	public override string ActionTradeItems => "아이템 거래";
+	public override string ActionTradeItems => "ì•„ì´í…œ ê±°ëž˜";
 
 	/// <summary>
 	/// Key: "Action.UnblockUser"
 	/// English String: "Unblock User"
 	/// </summary>
-	public override string ActionUnblockUser => "사용자 차단 해제";
+	public override string ActionUnblockUser => "ì‚¬ìš©ìž ì°¨ë‹¨ í•´ì œ";
 
 	/// <summary>
 	/// Key: "Action.Unfollow"
 	/// English String: "Unfollow"
 	/// </summary>
-	public override string ActionUnfollow => "팔로우 취소";
+	public override string ActionUnfollow => "íŒ”ë¡œìš° ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Unfriend"
 	/// English String: "Unfriend"
 	/// </summary>
-	public override string ActionUnfriend => "친구 끊기";
+	public override string ActionUnfriend => "ì¹œêµ¬ ëŠê¸°";
 
 	/// <summary>
 	/// Key: "Action.UpdateStatus"
 	/// English String: "Update Status"
 	/// </summary>
-	public override string ActionUpdateStatus => "상태 업데이트";
+	public override string ActionUpdateStatus => "ìƒíƒœ ì—…ë°ì´íŠ¸";
 
 	/// <summary>
 	/// Key: "Description.BlockUserFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string DescriptionBlockUserFooter => "사용자를 차단하면 해당 사용자와 서로 연락할 수 없습니다.";
+	public override string DescriptionBlockUserFooter => "ì‚¬ìš©ìžë¥¼ ì°¨ë‹¨í•˜ë©´ í•´ë‹¹ ì‚¬ìš©ìžì™€ ì„œë¡œ ì—°ë½í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Description.BlockUserPrompt"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string DescriptionBlockUserPrompt => "본 사용자를 정말 차단할까요?";
+	public override string DescriptionBlockUserPrompt => "ë³¸ ì‚¬ìš©ìžë¥¼ ì •ë§ ì°¨ë‹¨í• ê¹Œìš”?";
 
 	/// <summary>
 	/// Key: "Description.ChangeAlias"
 	/// English String: "Only you can see this information"
 	/// </summary>
-	public override string DescriptionChangeAlias => "오직 나만 이 정보를 볼 수 있어요";
+	public override string DescriptionChangeAlias => "ì˜¤ì§ ë‚˜ë§Œ ì´ ì •ë³´ë¥¼ ë³¼ ìˆ˜ ìžˆì–´ìš”";
 
 	/// <summary>
 	/// Key: "Description.UnblockUserPrompt"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string DescriptionUnblockUserPrompt => "본 사용자를 정말 차단 해제할까요?";
+	public override string DescriptionUnblockUserPrompt => "ë³¸ ì‚¬ìš©ìžë¥¼ ì •ë§ ì°¨ë‹¨ í•´ì œí• ê¹Œìš”?";
 
 	/// <summary>
 	/// Key: "Heading.AboutTab"
 	/// this is for the heading under About tab on profile page
 	/// English String: "About"
 	/// </summary>
-	public override string HeadingAboutTab => "소개";
+	public override string HeadingAboutTab => "ì†Œê°œ";
 
 	/// <summary>
 	/// Key: "Heading.BlockUserTitle"
 	/// English String: "Warning"
 	/// </summary>
-	public override string HeadingBlockUserTitle => "주의";
+	public override string HeadingBlockUserTitle => "ì£¼ì˜";
 
 	/// <summary>
 	/// Key: "Heading.Collections"
 	/// English String: "Collections"
 	/// </summary>
-	public override string HeadingCollections => "컬렉션";
+	public override string HeadingCollections => "ì»¬ë ‰ì…˜";
 
 	/// <summary>
 	/// Key: "Heading.CurrentlyWearing"
 	/// English String: "Currently Wearing"
 	/// </summary>
-	public override string HeadingCurrentlyWearing => "현재 착용 중";
+	public override string HeadingCurrentlyWearing => "í˜„ìž¬ ì°©ìš© ì¤‘";
 
 	/// <summary>
 	/// Key: "Heading.FavoriteGames"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string HeadingFavoriteGames => "즐겨찾기";
+	public override string HeadingFavoriteGames => "ì¦ê²¨ì°¾ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string HeadingFriends => "친구";
+	public override string HeadingFriends => "ì¹œêµ¬";
 
 	/// <summary>
 	/// Key: "Heading.Games"
 	/// English String: "Games"
 	/// </summary>
-	public override string HeadingGames => "게임";
+	public override string HeadingGames => "ê²Œìž„";
 
 	/// <summary>
 	/// Key: "Heading.GameTitle"
 	/// English String: "Games"
 	/// </summary>
-	public override string HeadingGameTitle => "게임";
+	public override string HeadingGameTitle => "ê²Œìž„";
 
 	/// <summary>
 	/// Key: "Heading.Groups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string HeadingGroups => "그룹";
+	public override string HeadingGroups => "ê·¸ë£¹";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsBadges"
 	/// English String: "Player Badges"
 	/// </summary>
-	public override string HeadingPlayerAssetsBadges => "플레이어 배지";
+	public override string HeadingPlayerAssetsBadges => "í”Œë ˆì´ì–´ ë°°ì§€";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsClothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string HeadingPlayerAssetsClothing => "복장";
+	public override string HeadingPlayerAssetsClothing => "ë³µìž¥";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsModels"
 	/// English String: "Models"
 	/// </summary>
-	public override string HeadingPlayerAssetsModels => "모델";
+	public override string HeadingPlayerAssetsModels => "ëª¨ë¸";
 
 	/// <summary>
 	/// Key: "Heading.PlayerBadge"
 	/// English String: "Player Badges"
 	/// </summary>
-	public override string HeadingPlayerBadge => "플레이어 배지";
+	public override string HeadingPlayerBadge => "í”Œë ˆì´ì–´ ë°°ì§€";
 
 	/// <summary>
 	/// Key: "Heading.Profile"
 	/// English String: "Profile"
 	/// </summary>
-	public override string HeadingProfile => "프로필";
+	public override string HeadingProfile => "í”„ë¡œí•„";
 
 	/// <summary>
 	/// Key: "Heading.ProfileGroups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string HeadingProfileGroups => "그룹";
+	public override string HeadingProfileGroups => "ê·¸ë£¹";
 
 	/// <summary>
 	/// Key: "Heading.RobloxBadge"
 	/// English String: "Roblox Badges"
 	/// </summary>
-	public override string HeadingRobloxBadge => "Roblox 배지";
+	public override string HeadingRobloxBadge => "Roblox ë°°ì§€";
 
 	/// <summary>
 	/// Key: "Heading.Statistics"
 	/// English String: "Statistics"
 	/// </summary>
-	public override string HeadingStatistics => "통계";
+	public override string HeadingStatistics => "í†µê³„";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "소개";
+	public override string LabelAbout => "ì†Œê°œ";
 
 	/// <summary>
 	/// Key: "Label.Alias"
 	/// Friends Tag, nickname
 	/// English String: "Alias"
 	/// </summary>
-	public override string LabelAlias => "닉네임";
+	public override string LabelAlias => "ë‹‰ë„¤ìž„";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningBody"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string LabelBlockWarningBody => "본 사용자를 정말 차단할까요?";
+	public override string LabelBlockWarningBody => "ë³¸ ì‚¬ìš©ìžë¥¼ ì •ë§ ì°¨ë‹¨í• ê¹Œìš”?";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningConfirm"
 	/// English String: "Block"
 	/// </summary>
-	public override string LabelBlockWarningConfirm => "차단";
+	public override string LabelBlockWarningConfirm => "ì°¨ë‹¨";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string LabelBlockWarningFooter => "사용자를 차단하면 해당 사용자와 서로 연락할 수 없습니다.";
+	public override string LabelBlockWarningFooter => "ì‚¬ìš©ìžë¥¼ ì°¨ë‹¨í•˜ë©´ í•´ë‹¹ ì‚¬ìš©ìžì™€ ì„œë¡œ ì—°ë½í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "취소";
+	public override string LabelCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Label.ChangeAlias"
 	/// set nickname
 	/// English String: "Set Alias"
 	/// </summary>
-	public override string LabelChangeAlias => "닉네임 설정";
+	public override string LabelChangeAlias => "ë‹‰ë„¤ìž„ ì„¤ì •";
 
 	/// <summary>
 	/// Key: "Label.Creations"
 	/// English String: "Creations"
 	/// </summary>
-	public override string LabelCreations => "작품";
+	public override string LabelCreations => "ìž‘í’ˆ";
 
 	/// <summary>
 	/// Key: "Label.Followers"
 	/// English String: "Followers"
 	/// </summary>
-	public override string LabelFollowers => "팔로워";
+	public override string LabelFollowers => "íŒ”ë¡œì›Œ";
 
 	/// <summary>
 	/// Key: "Label.Following"
 	/// English String: "Following"
 	/// </summary>
-	public override string LabelFollowing => "팔로잉";
+	public override string LabelFollowing => "íŒ”ë¡œìž‰";
 
 	/// <summary>
 	/// Key: "Label.ForumPosts"
 	/// English String: "Forum Posts"
 	/// </summary>
-	public override string LabelForumPosts => "포럼 게시물";
+	public override string LabelForumPosts => "í¬ëŸ¼ ê²Œì‹œë¬¼";
 
 	/// <summary>
 	/// Key: "Label.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelFriends => "친구";
+	public override string LabelFriends => "ì¹œêµ¬";
 
 	/// <summary>
 	/// Key: "Label.GridView"
 	/// English String: "Grid View"
 	/// </summary>
-	public override string LabelGridView => "격자 보기";
+	public override string LabelGridView => "ê²©ìž ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.JoinDate"
 	/// English String: "Join Date"
 	/// </summary>
-	public override string LabelJoinDate => "가입 날짜";
+	public override string LabelJoinDate => "ê°€ìž… ë‚ ì§œ";
 
 	/// <summary>
 	/// Key: "Label.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string LabelLoadMore => "더 불러오기";
+	public override string LabelLoadMore => "ë” ë¶ˆëŸ¬ì˜¤ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Members"
 	/// English String: "Members"
 	/// </summary>
-	public override string LabelMembers => "멤버";
+	public override string LabelMembers => "ë©¤ë²„";
 
 	/// <summary>
 	/// Key: "Label.PastUsername"
 	/// English String: "Past Usernames"
 	/// </summary>
-	public override string LabelPastUsername => "이전 사용자 이름";
+	public override string LabelPastUsername => "ì´ì „ ì‚¬ìš©ìž ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.PastUsernames"
 	/// English String: "Past usernames"
 	/// </summary>
-	public override string LabelPastUsernames => "이전 사용자 이름";
+	public override string LabelPastUsernames => "ì´ì „ ì‚¬ìš©ìž ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.PlaceVisits"
 	/// English String: "Place Visits"
 	/// </summary>
-	public override string LabelPlaceVisits => "장소 방문";
+	public override string LabelPlaceVisits => "ìž¥ì†Œ ë°©ë¬¸";
 
 	/// <summary>
 	/// Key: "Label.Playing"
 	/// English String: "Playing"
 	/// </summary>
-	public override string LabelPlaying => "플레이 중";
+	public override string LabelPlaying => "í”Œë ˆì´ ì¤‘";
 
 	/// <summary>
 	/// Key: "Label.Rank"
 	/// English String: "Rank"
 	/// </summary>
-	public override string LabelRank => "등급";
+	public override string LabelRank => "ë“±ê¸‰";
 
 	/// <summary>
 	/// Key: "Label.ReadMore"
 	/// English String: "Read More"
 	/// </summary>
-	public override string LabelReadMore => "더 보기";
+	public override string LabelReadMore => "ë” ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "신고하기";
+	public override string LabelReportAbuse => "ì‹ ê³ í•˜ê¸°";
 
 	/// <summary>
 	/// Key: "Label.ShowLess"
 	/// English String: "Show Less"
 	/// </summary>
-	public override string LabelShowLess => "간략히 보기";
+	public override string LabelShowLess => "ê°„ëžµížˆ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.SlideshowView"
 	/// English String: "Slideshow View"
 	/// </summary>
-	public override string LabelSlideshowView => "슬라이드쇼 보기";
+	public override string LabelSlideshowView => "ìŠ¬ë¼ì´ë“œì‡¼ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningBody"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string LabelUnblockWarningBody => "본 사용자를 정말 차단 해제할까요?";
+	public override string LabelUnblockWarningBody => "ë³¸ ì‚¬ìš©ìžë¥¼ ì •ë§ ì°¨ë‹¨ í•´ì œí• ê¹Œìš”?";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningConfirm"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string LabelUnblockWarningConfirm => "차단 해제";
+	public override string LabelUnblockWarningConfirm => "ì°¨ë‹¨ í•´ì œ";
 
 	/// <summary>
 	/// Key: "Label.Visits"
 	/// English String: "Visits"
 	/// </summary>
-	public override string LabelVisits => "방문";
+	public override string LabelVisits => "ë°©ë¬¸";
 
 	/// <summary>
 	/// Key: "Label.WarningTitle"
 	/// English String: "Warning"
 	/// </summary>
-	public override string LabelWarningTitle => "주의";
+	public override string LabelWarningTitle => "ì£¼ì˜";
 
 	/// <summary>
 	/// Key: "Message.AliasHasError"
 	/// English String: "An error has occurred. Please try again later"
 	/// </summary>
-	public override string MessageAliasHasError => "오류가 발생했어요. 나중에 다시 시도하세요";
+	public override string MessageAliasHasError => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”";
 
 	/// <summary>
 	/// Key: "Message.AliasIsModerated"
 	/// English String: "Please avoid using full names or offensive language."
 	/// </summary>
-	public override string MessageAliasIsModerated => "실명이나 공격적인 언어를 사용하지 마세요.";
+	public override string MessageAliasIsModerated => "ì‹¤ëª…ì´ë‚˜ ê³µê²©ì ì¸ ì–¸ì–´ë¥¼ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.ChangeStatus"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string MessageChangeStatus => "무엇을 하고 싶나요?";
+	public override string MessageChangeStatus => "ë¬´ì—‡ì„ í•˜ê³  ì‹¶ë‚˜ìš”?";
 
 	/// <summary>
 	/// Key: "Message.ErrorBlockLimit"
 	/// English String: "Operation failed! You may have blocked too many people."
 	/// </summary>
-	public override string MessageErrorBlockLimit => "작업 실패! 차단한 사용자가 너무 많아요.";
+	public override string MessageErrorBlockLimit => "ìž‘ì—… ì‹¤íŒ¨! ì°¨ë‹¨í•œ ì‚¬ìš©ìžê°€ ë„ˆë¬´ ë§Žì•„ìš”.";
 
 	/// <summary>
 	/// Key: "Message.ErrorGeneral"
 	/// English String: "Something went wrong. Please check back in a few minutes."
 	/// </summary>
-	public override string MessageErrorGeneral => "오류가 발생했어요. 몇 분 후 다시 확인해보세요.";
+	public override string MessageErrorGeneral => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ëª‡ ë¶„ í›„ ë‹¤ì‹œ í™•ì¸í•´ë³´ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.Sharing"
 	/// English String: "Sharing..."
 	/// </summary>
-	public override string MessageSharing => "공유 중...";
+	public override string MessageSharing => "ê³µìœ  ì¤‘...";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
 	/// flood error response
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttempts => "시도 가능 횟수를 초과했습니다";
+	public override string ResponseTooManyAttempts => "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤";
 
 	public ProfileResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -522,187 +522,187 @@ internal class ProfileResources_ko_kr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "수락";
+		return "ìˆ˜ë½";
 	}
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "친구 추가";
+		return "ì¹œêµ¬ ì¶”ê°€";
 	}
 
 	protected override string _GetTemplateForActionBlockUser()
 	{
-		return "사용자 차단";
+		return "ì‚¬ìš©ìž ì°¨ë‹¨";
 	}
 
 	protected override string _GetTemplateForActionCancelBlockUser()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionChat()
 	{
-		return "채팅";
+		return "ì±„íŒ…";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "닫기";
+		return "ë‹«ê¸°";
 	}
 
 	protected override string _GetTemplateForActionConfirmBlockUser()
 	{
-		return "차단";
+		return "ì°¨ë‹¨";
 	}
 
 	protected override string _GetTemplateForActionConfirmUnblockUser()
 	{
-		return "차단 해제";
+		return "ì°¨ë‹¨ í•´ì œ";
 	}
 
 	protected override string _GetTemplateForActionFavorites()
 	{
-		return "즐겨찾기";
+		return "ì¦ê²¨ì°¾ê¸°";
 	}
 
 	protected override string _GetTemplateForActionFollow()
 	{
-		return "팔로우";
+		return "íŒ”ë¡œìš°";
 	}
 
 	protected override string _GetTemplateForActionGridView()
 	{
-		return "격자 보기";
+		return "ê²©ìž ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionImpersonateUser()
 	{
-		return "사용자 사칭";
+		return "ì‚¬ìš©ìž ì‚¬ì¹­";
 	}
 
 	protected override string _GetTemplateForActionInventory()
 	{
-		return "인벤토리";
+		return "ì¸ë²¤í† ë¦¬";
 	}
 
 	protected override string _GetTemplateForActionJoinGame()
 	{
-		return "게임 참가";
+		return "ê²Œìž„ ì°¸ê°€";
 	}
 
 	protected override string _GetTemplateForActionMessage()
 	{
-		return "메시지";
+		return "ë©”ì‹œì§€";
 	}
 
 	protected override string _GetTemplateForActionPending()
 	{
-		return "대기 중";
+		return "ëŒ€ê¸° ì¤‘";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "저장";
+		return "ì €ìž¥";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "전체 보기";
+		return "ì „ì²´ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionSeeLess()
 	{
-		return "간략히 보기";
+		return "ê°„ëžµížˆ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionSeeMore()
 	{
-		return "더 보기";
+		return "ë” ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionSlideshowView()
 	{
-		return "슬라이드쇼 보기";
+		return "ìŠ¬ë¼ì´ë“œì‡¼ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionTrade()
 	{
-		return "거래";
+		return "ê±°ëž˜";
 	}
 
 	protected override string _GetTemplateForActionTradeItems()
 	{
-		return "아이템 거래";
+		return "ì•„ì´í…œ ê±°ëž˜";
 	}
 
 	protected override string _GetTemplateForActionUnblockUser()
 	{
-		return "사용자 차단 해제";
+		return "ì‚¬ìš©ìž ì°¨ë‹¨ í•´ì œ";
 	}
 
 	protected override string _GetTemplateForActionUnfollow()
 	{
-		return "팔로우 취소";
+		return "íŒ”ë¡œìš° ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionUnfriend()
 	{
-		return "친구 끊기";
+		return "ì¹œêµ¬ ëŠê¸°";
 	}
 
 	protected override string _GetTemplateForActionUpdateStatus()
 	{
-		return "상태 업데이트";
+		return "ìƒíƒœ ì—…ë°ì´íŠ¸";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserFooter()
 	{
-		return "사용자를 차단하면 해당 사용자와 서로 연락할 수 없습니다.";
+		return "ì‚¬ìš©ìžë¥¼ ì°¨ë‹¨í•˜ë©´ í•´ë‹¹ ì‚¬ìš©ìžì™€ ì„œë¡œ ì—°ë½í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserPrompt()
 	{
-		return "본 사용자를 정말 차단할까요?";
+		return "ë³¸ ì‚¬ìš©ìžë¥¼ ì •ë§ ì°¨ë‹¨í• ê¹Œìš”?";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeAlias()
 	{
-		return "오직 나만 이 정보를 볼 수 있어요";
+		return "ì˜¤ì§ ë‚˜ë§Œ ì´ ì •ë³´ë¥¼ ë³¼ ìˆ˜ ìžˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForDescriptionUnblockUserPrompt()
 	{
-		return "본 사용자를 정말 차단 해제할까요?";
+		return "ë³¸ ì‚¬ìš©ìžë¥¼ ì •ë§ ì°¨ë‹¨ í•´ì œí• ê¹Œìš”?";
 	}
 
 	protected override string _GetTemplateForHeadingAboutTab()
 	{
-		return "소개";
+		return "ì†Œê°œ";
 	}
 
 	protected override string _GetTemplateForHeadingBlockUserTitle()
 	{
-		return "주의";
+		return "ì£¼ì˜";
 	}
 
 	protected override string _GetTemplateForHeadingCollections()
 	{
-		return "컬렉션";
+		return "ì»¬ë ‰ì…˜";
 	}
 
 	protected override string _GetTemplateForHeadingCurrentlyWearing()
 	{
-		return "현재 착용 중";
+		return "í˜„ìž¬ ì°©ìš© ì¤‘";
 	}
 
 	protected override string _GetTemplateForHeadingFavoriteGames()
 	{
-		return "즐겨찾기";
+		return "ì¦ê²¨ì°¾ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()
 	{
-		return "친구";
+		return "ì¹œêµ¬";
 	}
 
 	/// <summary>
@@ -711,172 +711,172 @@ internal class ProfileResources_ko_kr : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string HeadingFriendsNum(string friendsCount)
 	{
-		return $"친구 ({friendsCount}명)";
+		return $"ì¹œêµ¬ ({friendsCount}ëª…)";
 	}
 
 	protected override string _GetTemplateForHeadingFriendsNum()
 	{
-		return "친구 ({friendsCount}명)";
+		return "ì¹œêµ¬ ({friendsCount}ëª…)";
 	}
 
 	protected override string _GetTemplateForHeadingGames()
 	{
-		return "게임";
+		return "ê²Œìž„";
 	}
 
 	protected override string _GetTemplateForHeadingGameTitle()
 	{
-		return "게임";
+		return "ê²Œìž„";
 	}
 
 	protected override string _GetTemplateForHeadingGroups()
 	{
-		return "그룹";
+		return "ê·¸ë£¹";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsBadges()
 	{
-		return "플레이어 배지";
+		return "í”Œë ˆì´ì–´ ë°°ì§€";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsClothing()
 	{
-		return "복장";
+		return "ë³µìž¥";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsModels()
 	{
-		return "모델";
+		return "ëª¨ë¸";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerBadge()
 	{
-		return "플레이어 배지";
+		return "í”Œë ˆì´ì–´ ë°°ì§€";
 	}
 
 	protected override string _GetTemplateForHeadingProfile()
 	{
-		return "프로필";
+		return "í”„ë¡œí•„";
 	}
 
 	protected override string _GetTemplateForHeadingProfileGroups()
 	{
-		return "그룹";
+		return "ê·¸ë£¹";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxBadge()
 	{
-		return "Roblox 배지";
+		return "Roblox ë°°ì§€";
 	}
 
 	protected override string _GetTemplateForHeadingStatistics()
 	{
-		return "통계";
+		return "í†µê³„";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "소개";
+		return "ì†Œê°œ";
 	}
 
 	protected override string _GetTemplateForLabelAlias()
 	{
-		return "닉네임";
+		return "ë‹‰ë„¤ìž„";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningBody()
 	{
-		return "본 사용자를 정말 차단할까요?";
+		return "ë³¸ ì‚¬ìš©ìžë¥¼ ì •ë§ ì°¨ë‹¨í• ê¹Œìš”?";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningConfirm()
 	{
-		return "차단";
+		return "ì°¨ë‹¨";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningFooter()
 	{
-		return "사용자를 차단하면 해당 사용자와 서로 연락할 수 없습니다.";
+		return "ì‚¬ìš©ìžë¥¼ ì°¨ë‹¨í•˜ë©´ í•´ë‹¹ ì‚¬ìš©ìžì™€ ì„œë¡œ ì—°ë½í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForLabelChangeAlias()
 	{
-		return "닉네임 설정";
+		return "ë‹‰ë„¤ìž„ ì„¤ì •";
 	}
 
 	protected override string _GetTemplateForLabelCreations()
 	{
-		return "작품";
+		return "ìž‘í’ˆ";
 	}
 
 	protected override string _GetTemplateForLabelFollowers()
 	{
-		return "팔로워";
+		return "íŒ”ë¡œì›Œ";
 	}
 
 	protected override string _GetTemplateForLabelFollowing()
 	{
-		return "팔로잉";
+		return "íŒ”ë¡œìž‰";
 	}
 
 	protected override string _GetTemplateForLabelForumPosts()
 	{
-		return "포럼 게시물";
+		return "í¬ëŸ¼ ê²Œì‹œë¬¼";
 	}
 
 	protected override string _GetTemplateForLabelFriends()
 	{
-		return "친구";
+		return "ì¹œêµ¬";
 	}
 
 	protected override string _GetTemplateForLabelGridView()
 	{
-		return "격자 보기";
+		return "ê²©ìž ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelJoinDate()
 	{
-		return "가입 날짜";
+		return "ê°€ìž… ë‚ ì§œ";
 	}
 
 	protected override string _GetTemplateForLabelLoadMore()
 	{
-		return "더 불러오기";
+		return "ë” ë¶ˆëŸ¬ì˜¤ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelMembers()
 	{
-		return "멤버";
+		return "ë©¤ë²„";
 	}
 
 	protected override string _GetTemplateForLabelPastUsername()
 	{
-		return "이전 사용자 이름";
+		return "ì´ì „ ì‚¬ìš©ìž ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelPastUsernames()
 	{
-		return "이전 사용자 이름";
+		return "ì´ì „ ì‚¬ìš©ìž ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelPlaceVisits()
 	{
-		return "장소 방문";
+		return "ìž¥ì†Œ ë°©ë¬¸";
 	}
 
 	protected override string _GetTemplateForLabelPlaying()
 	{
-		return "플레이 중";
+		return "í”Œë ˆì´ ì¤‘";
 	}
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
+	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	public override string LabelQuotation(string userStatus)
@@ -891,72 +891,72 @@ internal class ProfileResources_ko_kr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelRank()
 	{
-		return "등급";
+		return "ë“±ê¸‰";
 	}
 
 	protected override string _GetTemplateForLabelReadMore()
 	{
-		return "더 보기";
+		return "ë” ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "신고하기";
+		return "ì‹ ê³ í•˜ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelShowLess()
 	{
-		return "간략히 보기";
+		return "ê°„ëžµížˆ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelSlideshowView()
 	{
-		return "슬라이드쇼 보기";
+		return "ìŠ¬ë¼ì´ë“œì‡¼ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningBody()
 	{
-		return "본 사용자를 정말 차단 해제할까요?";
+		return "ë³¸ ì‚¬ìš©ìžë¥¼ ì •ë§ ì°¨ë‹¨ í•´ì œí• ê¹Œìš”?";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningConfirm()
 	{
-		return "차단 해제";
+		return "ì°¨ë‹¨ í•´ì œ";
 	}
 
 	protected override string _GetTemplateForLabelVisits()
 	{
-		return "방문";
+		return "ë°©ë¬¸";
 	}
 
 	protected override string _GetTemplateForLabelWarningTitle()
 	{
-		return "주의";
+		return "ì£¼ì˜";
 	}
 
 	protected override string _GetTemplateForMessageAliasHasError()
 	{
-		return "오류가 발생했어요. 나중에 다시 시도하세요";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForMessageAliasIsModerated()
 	{
-		return "실명이나 공격적인 언어를 사용하지 마세요.";
+		return "ì‹¤ëª…ì´ë‚˜ ê³µê²©ì ì¸ ì–¸ì–´ë¥¼ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageChangeStatus()
 	{
-		return "무엇을 하고 싶나요?";
+		return "ë¬´ì—‡ì„ í•˜ê³  ì‹¶ë‚˜ìš”?";
 	}
 
 	protected override string _GetTemplateForMessageErrorBlockLimit()
 	{
-		return "작업 실패! 차단한 사용자가 너무 많아요.";
+		return "ìž‘ì—… ì‹¤íŒ¨! ì°¨ë‹¨í•œ ì‚¬ìš©ìžê°€ ë„ˆë¬´ ë§Žì•„ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageErrorGeneral()
 	{
-		return "오류가 발생했어요. 몇 분 후 다시 확인해보세요.";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ëª‡ ë¶„ í›„ ë‹¤ì‹œ í™•ì¸í•´ë³´ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -965,21 +965,24 @@ internal class ProfileResources_ko_kr : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string MessageNoCreation(string username)
 	{
-		return $"{username}님의 작품이 없습니다.";
+		return $"{username}ë‹˜ì˜ ìž‘í’ˆì´ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageNoCreation()
 	{
-		return "{username}님의 작품이 없습니다.";
+		return "{username}ë‹˜ì˜ ìž‘í’ˆì´ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageSharing()
 	{
-		return "공유 중...";
+		return "ê³µìœ  ì¤‘...";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
 	{
-		return "시도 가능 횟수를 초과했습니다";
+		return "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤";
 	}
+}
+
+
 }

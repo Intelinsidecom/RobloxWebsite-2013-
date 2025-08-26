@@ -1,8 +1,10 @@
-using Roblox.Entities;
+﻿using Roblox.Entities;
+namespace Roblox.Moderation.Entitiesinternal {
+    interface IExpressionEntity : IUpdateableEntity<long>, IEntity<long>
 
-namespace Roblox.Platform.Moderation.Entities;
-
-internal interface IExpressionEntity : IUpdateableEntity<long>, IEntity<long>
 {
 	string Value { get; }
+}
+
+
 }

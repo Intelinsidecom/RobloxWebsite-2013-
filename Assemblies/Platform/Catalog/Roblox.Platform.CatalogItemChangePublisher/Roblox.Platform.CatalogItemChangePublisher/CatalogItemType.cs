@@ -1,7 +1,10 @@
-namespace Roblox.CatalogItemChangePublisher;
+﻿namespace Roblox.Platform.CatalogItemChangePublisherpublic {
+    enum CatalogItemType
 
-public enum CatalogItemType
 {
 	Asset = 1,
 	Bundle
+}
+
+
 }

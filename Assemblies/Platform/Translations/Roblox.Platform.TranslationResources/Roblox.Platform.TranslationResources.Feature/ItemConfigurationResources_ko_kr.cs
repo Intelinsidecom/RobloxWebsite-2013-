@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ItemConfigurationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,405 +10,405 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// Key: "Description.AllowCopying"
 	/// English String: "By switching on, you are granting every other user of Roblox the right to use (in various ways) the content you are now sharing. If you do not want to grant this right, please do not check this box. For more information about sharing content, please review the Roblox Terms of Use."
 	/// </summary>
-	public override string DescriptionAllowCopying => "본 확인란을 선택하면 회원님이 지금 공유하려는 콘텐츠를 Roblox의 모든 사용자가 다양한 방식으로 사용할 수 있게 됩니다. 사용을 허락하지 않으려면 확인란을 선택하지 마세요. 콘텐츠 공유에 관한 자세한 정보는 Roblox 이용 약관을 참고하세요.";
+	public override string DescriptionAllowCopying => "ë³¸ í™•ì¸ëž€ì„ ì„ íƒí•˜ë©´ íšŒì›ë‹˜ì´ ì§€ê¸ˆ ê³µìœ í•˜ë ¤ëŠ” ì½˜í…ì¸ ë¥¼ Robloxì˜ ëª¨ë“  ì‚¬ìš©ìžê°€ ë‹¤ì–‘í•œ ë°©ì‹ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆê²Œ ë©ë‹ˆë‹¤. ì‚¬ìš©ì„ í—ˆë½í•˜ì§€ ì•Šìœ¼ë ¤ë©´ í™•ì¸ëž€ì„ ì„ íƒí•˜ì§€ ë§ˆì„¸ìš”. ì½˜í…ì¸  ê³µìœ ì— ê´€í•œ ìžì„¸í•œ ì •ë³´ëŠ” Roblox ì´ìš© ì•½ê´€ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Description.ArchiveWarning"
 	/// English String: "Archiving this asset will prevent it from being used in game. Archived assets can be restored."
 	/// </summary>
-	public override string DescriptionArchiveWarning => "애셋을 보관하면 게임에서 사용할 수 없어요. 보관했던 애셋은 나중에 복원 가능해요.";
+	public override string DescriptionArchiveWarning => "ì• ì…‹ì„ ë³´ê´€í•˜ë©´ ê²Œìž„ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ì—†ì–´ìš”. ë³´ê´€í–ˆë˜ ì• ì…‹ì€ ë‚˜ì¤‘ì— ë³µì› ê°€ëŠ¥í•´ìš”.";
 
 	/// <summary>
 	/// Key: "Description.ClickToAddTag"
 	/// Hover text on the button that adds a tag to an item
 	/// English String: "Click to add tag"
 	/// </summary>
-	public override string DescriptionClickToAddTag => "태그를 추가하려면 클릭";
+	public override string DescriptionClickToAddTag => "íƒœê·¸ë¥¼ ì¶”ê°€í•˜ë ¤ë©´ í´ë¦­";
 
 	/// <summary>
 	/// Key: "Description.ModeratorFileReview"
 	/// English String: "* Uploaded file will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionModeratorFileReview => "* 업로드한 파일은 검열팀의 검토가 끝난 후에 다른 사용자에게 공개됩니다";
+	public override string DescriptionModeratorFileReview => "* ì—…ë¡œë“œí•œ íŒŒì¼ì€ ê²€ì—´íŒ€ì˜ ê²€í† ê°€ ëë‚œ í›„ì— ë‹¤ë¥¸ ì‚¬ìš©ìžì—ê²Œ ê³µê°œë©ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Description.ModeratorReview"
 	/// English String: "* Uploaded image will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionModeratorReview => "* 업로드한 이미지는 검열팀의 검토가 끝난 후에 다른 사용자에게 공개됩니다";
+	public override string DescriptionModeratorReview => "* ì—…ë¡œë“œí•œ ì´ë¯¸ì§€ëŠ” ê²€ì—´íŒ€ì˜ ê²€í† ê°€ ëë‚œ í›„ì— ë‹¤ë¥¸ ì‚¬ìš©ìžì—ê²Œ ê³µê°œë©ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Heading.Archive"
 	/// header text for section about archiving assets
 	/// English String: "Archive"
 	/// </summary>
-	public override string HeadingArchive => "보관";
+	public override string HeadingArchive => "ë³´ê´€";
 
 	/// <summary>
 	/// Key: "Heading.Configure"
 	/// English String: "Configure"
 	/// </summary>
-	public override string HeadingConfigure => "구성";
+	public override string HeadingConfigure => "êµ¬ì„±";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureItemTags"
 	/// Heading on Configure Tags modal
 	/// English String: "Configure Tags"
 	/// </summary>
-	public override string HeadingConfigureItemTags => "태그 구성";
+	public override string HeadingConfigureItemTags => "íƒœê·¸ êµ¬ì„±";
 
 	/// <summary>
 	/// Key: "Heading.Create"
 	/// English String: "Create"
 	/// </summary>
-	public override string HeadingCreate => "만들기";
+	public override string HeadingCreate => "ë§Œë“¤ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string HeadingSettings => "설정";
+	public override string HeadingSettings => "ì„¤ì •";
 
 	/// <summary>
 	/// Key: "Label.AllowCopying"
 	/// English String: "Allow Copying"
 	/// </summary>
-	public override string LabelAllowCopying => "복사 허용";
+	public override string LabelAllowCopying => "ë³µì‚¬ í—ˆìš©";
 
 	/// <summary>
 	/// Key: "Label.Archive"
 	/// Text on button for archiving an asset. Part of speech: verb
 	/// English String: "Archive"
 	/// </summary>
-	public override string LabelArchive => "보관";
+	public override string LabelArchive => "ë³´ê´€";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "취소";
+	public override string LabelCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Label.Computer"
 	/// computer term
 	/// English String: "Computer"
 	/// </summary>
-	public override string LabelComputer => "컴퓨터";
+	public override string LabelComputer => "ì»´í“¨í„°";
 
 	/// <summary>
 	/// Key: "Label.Created"
 	/// English String: "Created"
 	/// </summary>
-	public override string LabelCreated => "개발 완료";
+	public override string LabelCreated => "ê°œë°œ ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Label.Current"
 	/// English String: "Current"
 	/// </summary>
-	public override string LabelCurrent => "현재";
+	public override string LabelCurrent => "í˜„ìž¬";
 
 	/// <summary>
 	/// Key: "Label.CurrentPublishedVersion"
 	/// English String: "Current published version"
 	/// </summary>
-	public override string LabelCurrentPublishedVersion => "현재 게시 버전";
+	public override string LabelCurrentPublishedVersion => "í˜„ìž¬ ê²Œì‹œ ë²„ì „";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelDescription => "설명";
+	public override string LabelDescription => "ì„¤ëª…";
 
 	/// <summary>
 	/// Key: "Label.Device"
 	/// device term
 	/// English String: "Device"
 	/// </summary>
-	public override string LabelDevice => "기기";
+	public override string LabelDevice => "ê¸°ê¸°";
 
 	/// <summary>
 	/// Key: "Label.EnterItemTag"
 	/// Placeholder for input field
 	/// English String: "Enter tag here..."
 	/// </summary>
-	public override string LabelEnterItemTag => "여기에 태그를 입력하세요...";
+	public override string LabelEnterItemTag => "ì—¬ê¸°ì— íƒœê·¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”...";
 
 	/// <summary>
 	/// Key: "Label.Game"
 	/// English String: "Game"
 	/// </summary>
-	public override string LabelGame => "게임";
+	public override string LabelGame => "ê²Œìž„";
 
 	/// <summary>
 	/// Key: "Label.GamePass"
 	/// label
 	/// English String: "Game Pass"
 	/// </summary>
-	public override string LabelGamePass => "게임패스";
+	public override string LabelGamePass => "ê²Œìž„íŒ¨ìŠ¤";
 
 	/// <summary>
 	/// Key: "Label.General"
 	/// English String: "General"
 	/// </summary>
-	public override string LabelGeneral => "일반";
+	public override string LabelGeneral => "ì¼ë°˜";
 
 	/// <summary>
 	/// Key: "Label.GoToDetails"
 	/// Link to the item details page from the configure page
 	/// English String: "Go to Details"
 	/// </summary>
-	public override string LabelGoToDetails => "'설명'으로 이동";
+	public override string LabelGoToDetails => "'ì„¤ëª…'ìœ¼ë¡œ ì´ë™";
 
 	/// <summary>
 	/// Key: "Label.ItemActive"
 	/// English String: "Item is Active"
 	/// </summary>
-	public override string LabelItemActive => "아이템이 활성화 상태입니다";
+	public override string LabelItemActive => "ì•„ì´í…œì´ í™œì„±í™” ìƒíƒœìž…ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Label.ItemForSale"
 	/// English String: "Item for Sale"
 	/// </summary>
-	public override string LabelItemForSale => "판매 아이템";
+	public override string LabelItemForSale => "íŒë§¤ ì•„ì´í…œ";
 
 	/// <summary>
 	/// Key: "Label.LastUpdated"
 	/// English String: "Last Updated"
 	/// </summary>
-	public override string LabelLastUpdated => "최신 업데이트";
+	public override string LabelLastUpdated => "ìµœì‹  ì—…ë°ì´íŠ¸";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
 	/// English String: "Learn more"
 	/// </summary>
-	public override string LabelLearnMore => "더 알아보기";
+	public override string LabelLearnMore => "ë” ì•Œì•„ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.MarketplaceFee"
 	/// English String: "Marketplace Fee"
 	/// </summary>
-	public override string LabelMarketplaceFee => "장터 수수료";
+	public override string LabelMarketplaceFee => "ìž¥í„° ìˆ˜ìˆ˜ë£Œ";
 
 	/// <summary>
 	/// Key: "Label.Name"
 	/// English String: "Name"
 	/// </summary>
-	public override string LabelName => "이름";
+	public override string LabelName => "ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.OpenForComments"
 	/// English String: "Open for Comments"
 	/// </summary>
-	public override string LabelOpenForComments => "코멘트 열기";
+	public override string LabelOpenForComments => "ì½”ë©˜íŠ¸ ì—´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Preview"
 	/// English String: "Preview"
 	/// </summary>
-	public override string LabelPreview => "미리보기";
+	public override string LabelPreview => "ë¯¸ë¦¬ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Price"
 	/// English String: "Price"
 	/// </summary>
-	public override string LabelPrice => "가격";
+	public override string LabelPrice => "ê°€ê²©";
 
 	/// <summary>
 	/// Key: "Label.Profit"
 	/// English String: "You Earn"
 	/// </summary>
-	public override string LabelProfit => "획득:";
+	public override string LabelProfit => "íšë“:";
 
 	/// <summary>
 	/// Key: "Label.Restore"
 	/// English String: "Restore"
 	/// </summary>
-	public override string LabelRestore => "복원";
+	public override string LabelRestore => "ë³µì›";
 
 	/// <summary>
 	/// Key: "Label.RevertVersion"
 	/// English String: "Revert to this version"
 	/// </summary>
-	public override string LabelRevertVersion => "이 버전으로 복구";
+	public override string LabelRevertVersion => "ì´ ë²„ì „ìœ¼ë¡œ ë³µêµ¬";
 
 	/// <summary>
 	/// Key: "Label.Sales"
 	/// English String: "Sales"
 	/// </summary>
-	public override string LabelSales => "판매";
+	public override string LabelSales => "íŒë§¤";
 
 	/// <summary>
 	/// Key: "Label.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string LabelSave => "저장";
+	public override string LabelSave => "ì €ìž¥";
 
 	/// <summary>
 	/// Key: "Label.SelectType"
 	/// Placeholder for dropdown in create asset page. Options are image, mesh, hair accessory, etc
 	/// English String: "Select a type"
 	/// </summary>
-	public override string LabelSelectType => "종류 선택하기";
+	public override string LabelSelectType => "ì¢…ë¥˜ ì„ íƒí•˜ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Tags"
 	/// The label next to a list of item tags in the item configuration page
 	/// English String: "Tags"
 	/// </summary>
-	public override string LabelTags => "태그";
+	public override string LabelTags => "íƒœê·¸";
 
 	/// <summary>
 	/// Key: "Label.Type"
 	/// English String: "Type"
 	/// </summary>
-	public override string LabelType => "종류";
+	public override string LabelType => "ì¢…ë¥˜";
 
 	/// <summary>
 	/// Key: "Label.Updated"
 	/// English String: "Updated"
 	/// </summary>
-	public override string LabelUpdated => "업데이트 완료";
+	public override string LabelUpdated => "ì—…ë°ì´íŠ¸ ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Label.Version"
 	/// English String: "Version"
 	/// </summary>
-	public override string LabelVersion => "버전";
+	public override string LabelVersion => "ë²„ì „";
 
 	/// <summary>
 	/// Key: "Label.Versions"
 	/// English String: "Versions"
 	/// </summary>
-	public override string LabelVersions => "버전";
+	public override string LabelVersions => "ë²„ì „";
 
 	/// <summary>
 	/// Key: "Message.ArchiveError"
 	/// English String: "Failed to archive"
 	/// </summary>
-	public override string MessageArchiveError => "보관 실패";
+	public override string MessageArchiveError => "ë³´ê´€ ì‹¤íŒ¨";
 
 	/// <summary>
 	/// Key: "Message.ArchiveSuccess"
 	/// English String: "Successfully archived"
 	/// </summary>
-	public override string MessageArchiveSuccess => "보관 완료";
+	public override string MessageArchiveSuccess => "ë³´ê´€ ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Message.DescriptionFieldEmptyError"
 	/// English String: "Description cannot be empty"
 	/// </summary>
-	public override string MessageDescriptionFieldEmptyError => "설명을 입력하셔야 합니다";
+	public override string MessageDescriptionFieldEmptyError => "ì„¤ëª…ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Message.DescriptionTooLongError"
 	/// error message
 	/// English String: "The description is too long."
 	/// </summary>
-	public override string MessageDescriptionTooLongError => "설명이 너무 길어요.";
+	public override string MessageDescriptionTooLongError => "ì„¤ëª…ì´ ë„ˆë¬´ ê¸¸ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.FilteringServiceUnavailableError"
 	/// error message
 	/// English String: "Text filtering service is unavailable at this time."
 	/// </summary>
-	public override string MessageFilteringServiceUnavailableError => "지금은 텍스트 필터링 서비스를 이용할 수 없습니다.";
+	public override string MessageFilteringServiceUnavailableError => "ì§€ê¸ˆì€ í…ìŠ¤íŠ¸ í•„í„°ë§ ì„œë¹„ìŠ¤ë¥¼ ì´ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.GamePassConfigDisabledError"
 	/// error message
 	/// English String: "Game Pass configuration is not enabled yet."
 	/// </summary>
-	public override string MessageGamePassConfigDisabledError => "게임패스 구성이 아직 활성화되지 않았어요.";
+	public override string MessageGamePassConfigDisabledError => "ê²Œìž„íŒ¨ìŠ¤ êµ¬ì„±ì´ ì•„ì§ í™œì„±í™”ë˜ì§€ ì•Šì•˜ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.GamePassNotFoundError"
 	/// errormessage
 	/// English String: "The Game Pass does not exist."
 	/// </summary>
-	public override string MessageGamePassNotFoundError => "게임패스가 없어요.";
+	public override string MessageGamePassNotFoundError => "ê²Œìž„íŒ¨ìŠ¤ê°€ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.IconUpdateFailed"
 	/// error message
 	/// English String: "Failed to update icon."
 	/// </summary>
-	public override string MessageIconUpdateFailed => "아이콘 업데이트 실패.";
+	public override string MessageIconUpdateFailed => "ì•„ì´ì½˜ ì—…ë°ì´íŠ¸ ì‹¤íŒ¨.";
 
 	/// <summary>
 	/// Key: "Message.ImageSavingFailedError"
 	/// error message
 	/// English String: "Failed to save image. Please try again later."
 	/// </summary>
-	public override string MessageImageSavingFailedError => "이미지 저장 실패. 나중에 다시 시도해 주세요.";
+	public override string MessageImageSavingFailedError => "ì´ë¯¸ì§€ ì €ìž¥ ì‹¤íŒ¨. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.InappropriateTextError"
 	/// error message
 	/// English String: "The name or description contains inappropriate text."
 	/// </summary>
-	public override string MessageInappropriateTextError => "이름 또는 설명에 부적절한 텍스트가 포함되어 있어요.";
+	public override string MessageInappropriateTextError => "ì´ë¦„ ë˜ëŠ” ì„¤ëª…ì— ë¶€ì ì ˆí•œ í…ìŠ¤íŠ¸ê°€ í¬í•¨ë˜ì–´ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.NameFieldEmpty"
 	/// English String: "Name cannot be empty"
 	/// </summary>
-	public override string MessageNameFieldEmpty => "이름을 입력하셔야 합니다";
+	public override string MessageNameFieldEmpty => "ì´ë¦„ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Message.NameRequiredError"
 	/// error message
 	/// English String: "The name cannot be empty."
 	/// </summary>
-	public override string MessageNameRequiredError => "이름을 입력하셔야 합니다.";
+	public override string MessageNameRequiredError => "ì´ë¦„ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.NoTagsFound"
 	/// English String: "No tags found"
 	/// </summary>
-	public override string MessageNoTagsFound => "태그를 찾을 수 없습니다";
+	public override string MessageNoTagsFound => "íƒœê·¸ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Message.RestoreError"
 	/// English String: "Failed to restore"
 	/// </summary>
-	public override string MessageRestoreError => "복원 실패";
+	public override string MessageRestoreError => "ë³µì› ì‹¤íŒ¨";
 
 	/// <summary>
 	/// Key: "Message.RestoreSuccess"
 	/// English String: "Successfully restored"
 	/// </summary>
-	public override string MessageRestoreSuccess => "복원 완료";
+	public override string MessageRestoreSuccess => "ë³µì› ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Message.SaveError"
 	/// English String: "Something failed. Please try again later"
 	/// </summary>
-	public override string MessageSaveError => "오류가 발생했어요. 나중에 다시 시도하세요";
+	public override string MessageSaveError => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”";
 
 	/// <summary>
 	/// Key: "Message.TooManyUploads"
 	/// error message
 	/// English String: "You are uploading too much. Please try again later."
 	/// </summary>
-	public override string MessageTooManyUploads => "업로드가 너무 많아요. 나중에 다시 시도하세요.";
+	public override string MessageTooManyUploads => "ì—…ë¡œë“œê°€ ë„ˆë¬´ ë§Žì•„ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.UpdatePriceError"
 	/// English String: "Failed to update price"
 	/// </summary>
-	public override string MessageUpdatePriceError => "가격 업데이트 실패";
+	public override string MessageUpdatePriceError => "ê°€ê²© ì—…ë°ì´íŠ¸ ì‹¤íŒ¨";
 
 	/// <summary>
 	/// Key: "Message.UpdatePriceSuccess"
 	/// English String: "Successfully updated price"
 	/// </summary>
-	public override string MessageUpdatePriceSuccess => "가격 업데이트 완료";
+	public override string MessageUpdatePriceSuccess => "ê°€ê²© ì—…ë°ì´íŠ¸ ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Message.UpdateSuccess"
 	/// English String: "Successfully updated"
 	/// </summary>
-	public override string MessageUpdateSuccess => "업데이트 완료";
+	public override string MessageUpdateSuccess => "ì—…ë°ì´íŠ¸ ì™„ë£Œ";
 
 	public ItemConfigurationResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -421,12 +421,12 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAcceptableFileFormats(string fileExtensions)
 	{
-		return $"가능한 파일 형식: {fileExtensions}";
+		return $"ê°€ëŠ¥í•œ íŒŒì¼ í˜•ì‹: {fileExtensions}";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFileFormats()
 	{
-		return "가능한 파일 형식: {fileExtensions}";
+		return "ê°€ëŠ¥í•œ íŒŒì¼ í˜•ì‹: {fileExtensions}";
 	}
 
 	/// <summary>
@@ -435,17 +435,17 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAcceptableFiles(string lineBreak, string fileExtensions, string fileSizes)
 	{
-		return $"* 허용되는 파일{lineBreak}형식: {fileExtensions}   |   크기: {fileSizes}";
+		return $"* í—ˆìš©ë˜ëŠ” íŒŒì¼{lineBreak}í˜•ì‹: {fileExtensions}   |   í¬ê¸°: {fileSizes}";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFiles()
 	{
-		return "* 허용되는 파일{lineBreak}형식: {fileExtensions}   |   크기: {fileSizes}";
+		return "* í—ˆìš©ë˜ëŠ” íŒŒì¼{lineBreak}í˜•ì‹: {fileExtensions}   |   í¬ê¸°: {fileSizes}";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopying()
 	{
-		return "본 확인란을 선택하면 회원님이 지금 공유하려는 콘텐츠를 Roblox의 모든 사용자가 다양한 방식으로 사용할 수 있게 됩니다. 사용을 허락하지 않으려면 확인란을 선택하지 마세요. 콘텐츠 공유에 관한 자세한 정보는 Roblox 이용 약관을 참고하세요.";
+		return "ë³¸ í™•ì¸ëž€ì„ ì„ íƒí•˜ë©´ íšŒì›ë‹˜ì´ ì§€ê¸ˆ ê³µìœ í•˜ë ¤ëŠ” ì½˜í…ì¸ ë¥¼ Robloxì˜ ëª¨ë“  ì‚¬ìš©ìžê°€ ë‹¤ì–‘í•œ ë°©ì‹ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆê²Œ ë©ë‹ˆë‹¤. ì‚¬ìš©ì„ í—ˆë½í•˜ì§€ ì•Šìœ¼ë ¤ë©´ í™•ì¸ëž€ì„ ì„ íƒí•˜ì§€ ë§ˆì„¸ìš”. ì½˜í…ì¸  ê³µìœ ì— ê´€í•œ ìžì„¸í•œ ì •ë³´ëŠ” Roblox ì´ìš© ì•½ê´€ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -454,22 +454,22 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAllowCopyingWarning(string linkStart, string linkEnd)
 	{
-		return $"본 확인란을 선택하면 회원님이 지금 공유하려는 콘텐츠를 Roblox의 모든 사용자가 다양한 방식으로 사용할 수 있게 됩니다. 사용을 허락하지 않으려면 확인란을 선택하지 마세요. 콘텐츠 공유에 관한 자세한 정보는 Roblox {linkStart}이용 약관{linkEnd}을 참고하세요.";
+		return $"ë³¸ í™•ì¸ëž€ì„ ì„ íƒí•˜ë©´ íšŒì›ë‹˜ì´ ì§€ê¸ˆ ê³µìœ í•˜ë ¤ëŠ” ì½˜í…ì¸ ë¥¼ Robloxì˜ ëª¨ë“  ì‚¬ìš©ìžê°€ ë‹¤ì–‘í•œ ë°©ì‹ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆê²Œ ë©ë‹ˆë‹¤. ì‚¬ìš©ì„ í—ˆë½í•˜ì§€ ì•Šìœ¼ë ¤ë©´ í™•ì¸ëž€ì„ ì„ íƒí•˜ì§€ ë§ˆì„¸ìš”. ì½˜í…ì¸  ê³µìœ ì— ê´€í•œ ìžì„¸í•œ ì •ë³´ëŠ” Roblox {linkStart}ì´ìš© ì•½ê´€{linkEnd}ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopyingWarning()
 	{
-		return "본 확인란을 선택하면 회원님이 지금 공유하려는 콘텐츠를 Roblox의 모든 사용자가 다양한 방식으로 사용할 수 있게 됩니다. 사용을 허락하지 않으려면 확인란을 선택하지 마세요. 콘텐츠 공유에 관한 자세한 정보는 Roblox {linkStart}이용 약관{linkEnd}을 참고하세요.";
+		return "ë³¸ í™•ì¸ëž€ì„ ì„ íƒí•˜ë©´ íšŒì›ë‹˜ì´ ì§€ê¸ˆ ê³µìœ í•˜ë ¤ëŠ” ì½˜í…ì¸ ë¥¼ Robloxì˜ ëª¨ë“  ì‚¬ìš©ìžê°€ ë‹¤ì–‘í•œ ë°©ì‹ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆê²Œ ë©ë‹ˆë‹¤. ì‚¬ìš©ì„ í—ˆë½í•˜ì§€ ì•Šìœ¼ë ¤ë©´ í™•ì¸ëž€ì„ ì„ íƒí•˜ì§€ ë§ˆì„¸ìš”. ì½˜í…ì¸  ê³µìœ ì— ê´€í•œ ìžì„¸í•œ ì •ë³´ëŠ” Roblox {linkStart}ì´ìš© ì•½ê´€{linkEnd}ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionArchiveWarning()
 	{
-		return "애셋을 보관하면 게임에서 사용할 수 없어요. 보관했던 애셋은 나중에 복원 가능해요.";
+		return "ì• ì…‹ì„ ë³´ê´€í•˜ë©´ ê²Œìž„ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ì—†ì–´ìš”. ë³´ê´€í–ˆë˜ ì• ì…‹ì€ ë‚˜ì¤‘ì— ë³µì› ê°€ëŠ¥í•´ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionClickToAddTag()
 	{
-		return "태그를 추가하려면 클릭";
+		return "íƒœê·¸ë¥¼ ì¶”ê°€í•˜ë ¤ë©´ í´ë¦­";
 	}
 
 	/// <summary>
@@ -478,22 +478,22 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionMarketplaceExplanation(string marketplaceFeePercentage, string minimumPrice)
 	{
-		return $"(Roblox 수수료: {marketplaceFeePercentage}%, 기본 가격: {minimumPrice})";
+		return $"(Roblox ìˆ˜ìˆ˜ë£Œ: {marketplaceFeePercentage}%, ê¸°ë³¸ ê°€ê²©: {minimumPrice})";
 	}
 
 	protected override string _GetTemplateForDescriptionMarketplaceExplanation()
 	{
-		return "(Roblox 수수료: {marketplaceFeePercentage}%, 기본 가격: {minimumPrice})";
+		return "(Roblox ìˆ˜ìˆ˜ë£Œ: {marketplaceFeePercentage}%, ê¸°ë³¸ ê°€ê²©: {minimumPrice})";
 	}
 
 	protected override string _GetTemplateForDescriptionModeratorFileReview()
 	{
-		return "* 업로드한 파일은 검열팀의 검토가 끝난 후에 다른 사용자에게 공개됩니다";
+		return "* ì—…ë¡œë“œí•œ íŒŒì¼ì€ ê²€ì—´íŒ€ì˜ ê²€í† ê°€ ëë‚œ í›„ì— ë‹¤ë¥¸ ì‚¬ìš©ìžì—ê²Œ ê³µê°œë©ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForDescriptionModeratorReview()
 	{
-		return "* 업로드한 이미지는 검열팀의 검토가 끝난 후에 다른 사용자에게 공개됩니다";
+		return "* ì—…ë¡œë“œí•œ ì´ë¯¸ì§€ëŠ” ê²€ì—´íŒ€ì˜ ê²€í† ê°€ ëë‚œ í›„ì— ë‹¤ë¥¸ ì‚¬ìš©ìžì—ê²Œ ê³µê°œë©ë‹ˆë‹¤";
 	}
 
 	/// <summary>
@@ -503,32 +503,32 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionSelectItemTags(string itemTagLimit)
 	{
-		return $"태그를 {itemTagLimit}개까지 선택하세요.";
+		return $"íƒœê·¸ë¥¼ {itemTagLimit}ê°œê¹Œì§€ ì„ íƒí•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionSelectItemTags()
 	{
-		return "태그를 {itemTagLimit}개까지 선택하세요.";
+		return "íƒœê·¸ë¥¼ {itemTagLimit}ê°œê¹Œì§€ ì„ íƒí•˜ì„¸ìš”.";
 	}
 
 	public override string DescriptionVerifiedCreatorEmail(string linkStart, string linkEnd)
 	{
-		return $"콘텐츠를 장터에서 공유하려면, 계정에 이메일 주소를 추가하고 인증해야 합니다. {linkStart}계정 설정{linkEnd}에서 가능합니다.";
+		return $"ì½˜í…ì¸ ë¥¼ ìž¥í„°ì—ì„œ ê³µìœ í•˜ë ¤ë©´, ê³„ì •ì— ì´ë©”ì¼ ì£¼ì†Œë¥¼ ì¶”ê°€í•˜ê³  ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤. {linkStart}ê³„ì • ì„¤ì •{linkEnd}ì—ì„œ ê°€ëŠ¥í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionVerifiedCreatorEmail()
 	{
-		return "콘텐츠를 장터에서 공유하려면, 계정에 이메일 주소를 추가하고 인증해야 합니다. {linkStart}계정 설정{linkEnd}에서 가능합니다.";
+		return "ì½˜í…ì¸ ë¥¼ ìž¥í„°ì—ì„œ ê³µìœ í•˜ë ¤ë©´, ê³„ì •ì— ì´ë©”ì¼ ì£¼ì†Œë¥¼ ì¶”ê°€í•˜ê³  ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤. {linkStart}ê³„ì • ì„¤ì •{linkEnd}ì—ì„œ ê°€ëŠ¥í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForHeadingArchive()
 	{
-		return "보관";
+		return "ë³´ê´€";
 	}
 
 	protected override string _GetTemplateForHeadingConfigure()
 	{
-		return "구성";
+		return "êµ¬ì„±";
 	}
 
 	/// <summary>
@@ -537,77 +537,77 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string HeadingConfigureItem(string itemType)
 	{
-		return $"{itemType} 구성";
+		return $"{itemType} êµ¬ì„±";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureItem()
 	{
-		return "{itemType} 구성";
+		return "{itemType} êµ¬ì„±";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureItemTags()
 	{
-		return "태그 구성";
+		return "íƒœê·¸ êµ¬ì„±";
 	}
 
 	protected override string _GetTemplateForHeadingCreate()
 	{
-		return "만들기";
+		return "ë§Œë“¤ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingSettings()
 	{
-		return "설정";
+		return "ì„¤ì •";
 	}
 
 	protected override string _GetTemplateForLabelAllowCopying()
 	{
-		return "복사 허용";
+		return "ë³µì‚¬ í—ˆìš©";
 	}
 
 	protected override string _GetTemplateForLabelArchive()
 	{
-		return "보관";
+		return "ë³´ê´€";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForLabelComputer()
 	{
-		return "컴퓨터";
+		return "ì»´í“¨í„°";
 	}
 
 	protected override string _GetTemplateForLabelCreated()
 	{
-		return "개발 완료";
+		return "ê°œë°œ ì™„ë£Œ";
 	}
 
 	protected override string _GetTemplateForLabelCurrent()
 	{
-		return "현재";
+		return "í˜„ìž¬";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPublishedVersion()
 	{
-		return "현재 게시 버전";
+		return "í˜„ìž¬ ê²Œì‹œ ë²„ì „";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "설명";
+		return "ì„¤ëª…";
 	}
 
 	protected override string _GetTemplateForLabelDevice()
 	{
-		return "기기";
+		return "ê¸°ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelEnterItemTag()
 	{
-		return "여기에 태그를 입력하세요...";
+		return "ì—¬ê¸°ì— íƒœê·¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”...";
 	}
 
 	/// <summary>
@@ -626,132 +626,132 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelGame()
 	{
-		return "게임";
+		return "ê²Œìž„";
 	}
 
 	protected override string _GetTemplateForLabelGamePass()
 	{
-		return "게임패스";
+		return "ê²Œìž„íŒ¨ìŠ¤";
 	}
 
 	protected override string _GetTemplateForLabelGeneral()
 	{
-		return "일반";
+		return "ì¼ë°˜";
 	}
 
 	protected override string _GetTemplateForLabelGoToDetails()
 	{
-		return "'설명'으로 이동";
+		return "'ì„¤ëª…'ìœ¼ë¡œ ì´ë™";
 	}
 
 	protected override string _GetTemplateForLabelItemActive()
 	{
-		return "아이템이 활성화 상태입니다";
+		return "ì•„ì´í…œì´ í™œì„±í™” ìƒíƒœìž…ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForLabelItemForSale()
 	{
-		return "판매 아이템";
+		return "íŒë§¤ ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForLabelLastUpdated()
 	{
-		return "최신 업데이트";
+		return "ìµœì‹  ì—…ë°ì´íŠ¸";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
 	{
-		return "더 알아보기";
+		return "ë” ì•Œì•„ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelMarketplaceFee()
 	{
-		return "장터 수수료";
+		return "ìž¥í„° ìˆ˜ìˆ˜ë£Œ";
 	}
 
 	protected override string _GetTemplateForLabelName()
 	{
-		return "이름";
+		return "ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelOpenForComments()
 	{
-		return "코멘트 열기";
+		return "ì½”ë©˜íŠ¸ ì—´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelPreview()
 	{
-		return "미리보기";
+		return "ë¯¸ë¦¬ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelPrice()
 	{
-		return "가격";
+		return "ê°€ê²©";
 	}
 
 	protected override string _GetTemplateForLabelProfit()
 	{
-		return "획득:";
+		return "íšë“:";
 	}
 
 	protected override string _GetTemplateForLabelRestore()
 	{
-		return "복원";
+		return "ë³µì›";
 	}
 
 	protected override string _GetTemplateForLabelRevertVersion()
 	{
-		return "이 버전으로 복구";
+		return "ì´ ë²„ì „ìœ¼ë¡œ ë³µêµ¬";
 	}
 
 	protected override string _GetTemplateForLabelSales()
 	{
-		return "판매";
+		return "íŒë§¤";
 	}
 
 	protected override string _GetTemplateForLabelSave()
 	{
-		return "저장";
+		return "ì €ìž¥";
 	}
 
 	protected override string _GetTemplateForLabelSelectType()
 	{
-		return "종류 선택하기";
+		return "ì¢…ë¥˜ ì„ íƒí•˜ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelTags()
 	{
-		return "태그";
+		return "íƒœê·¸";
 	}
 
 	protected override string _GetTemplateForLabelType()
 	{
-		return "종류";
+		return "ì¢…ë¥˜";
 	}
 
 	protected override string _GetTemplateForLabelUpdated()
 	{
-		return "업데이트 완료";
+		return "ì—…ë°ì´íŠ¸ ì™„ë£Œ";
 	}
 
 	protected override string _GetTemplateForLabelVersion()
 	{
-		return "버전";
+		return "ë²„ì „";
 	}
 
 	protected override string _GetTemplateForLabelVersions()
 	{
-		return "버전";
+		return "ë²„ì „";
 	}
 
 	protected override string _GetTemplateForMessageArchiveError()
 	{
-		return "보관 실패";
+		return "ë³´ê´€ ì‹¤íŒ¨";
 	}
 
 	protected override string _GetTemplateForMessageArchiveSuccess()
 	{
-		return "보관 완료";
+		return "ë³´ê´€ ì™„ë£Œ";
 	}
 
 	/// <summary>
@@ -760,17 +760,17 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageDescriptionFieldEmpty(string maxDescriptionLength)
 	{
-		return $"{maxDescriptionLength}자 제한";
+		return $"{maxDescriptionLength}ìž ì œí•œ";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionFieldEmpty()
 	{
-		return "{maxDescriptionLength}자 제한";
+		return "{maxDescriptionLength}ìž ì œí•œ";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionFieldEmptyError()
 	{
-		return "설명을 입력하셔야 합니다";
+		return "ì„¤ëª…ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤";
 	}
 
 	/// <summary>
@@ -779,47 +779,47 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageDescriptionFieldPopulated(string descriptionLength, string maxDescriptionLength)
 	{
-		return $"{descriptionLength}/{maxDescriptionLength}자";
+		return $"{descriptionLength}/{maxDescriptionLength}ìž";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionFieldPopulated()
 	{
-		return "{descriptionLength}/{maxDescriptionLength}자";
+		return "{descriptionLength}/{maxDescriptionLength}ìž";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionTooLongError()
 	{
-		return "설명이 너무 길어요.";
+		return "ì„¤ëª…ì´ ë„ˆë¬´ ê¸¸ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageFilteringServiceUnavailableError()
 	{
-		return "지금은 텍스트 필터링 서비스를 이용할 수 없습니다.";
+		return "ì§€ê¸ˆì€ í…ìŠ¤íŠ¸ í•„í„°ë§ ì„œë¹„ìŠ¤ë¥¼ ì´ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageGamePassConfigDisabledError()
 	{
-		return "게임패스 구성이 아직 활성화되지 않았어요.";
+		return "ê²Œìž„íŒ¨ìŠ¤ êµ¬ì„±ì´ ì•„ì§ í™œì„±í™”ë˜ì§€ ì•Šì•˜ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageGamePassNotFoundError()
 	{
-		return "게임패스가 없어요.";
+		return "ê²Œìž„íŒ¨ìŠ¤ê°€ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageIconUpdateFailed()
 	{
-		return "아이콘 업데이트 실패.";
+		return "ì•„ì´ì½˜ ì—…ë°ì´íŠ¸ ì‹¤íŒ¨.";
 	}
 
 	protected override string _GetTemplateForMessageImageSavingFailedError()
 	{
-		return "이미지 저장 실패. 나중에 다시 시도해 주세요.";
+		return "ì´ë¯¸ì§€ ì €ìž¥ ì‹¤íŒ¨. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageInappropriateTextError()
 	{
-		return "이름 또는 설명에 부적절한 텍스트가 포함되어 있어요.";
+		return "ì´ë¦„ ë˜ëŠ” ì„¤ëª…ì— ë¶€ì ì ˆí•œ í…ìŠ¤íŠ¸ê°€ í¬í•¨ë˜ì–´ ìžˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -828,17 +828,17 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageMinimumPrice(string minimumPrice)
 	{
-		return $"최저 가격인 {minimumPrice} 미만으로 가격을 설정할 수 없어요";
+		return $"ìµœì € ê°€ê²©ì¸ {minimumPrice} ë¯¸ë§Œìœ¼ë¡œ ê°€ê²©ì„ ì„¤ì •í•  ìˆ˜ ì—†ì–´ìš”";
 	}
 
 	protected override string _GetTemplateForMessageMinimumPrice()
 	{
-		return "최저 가격인 {minimumPrice} 미만으로 가격을 설정할 수 없어요";
+		return "ìµœì € ê°€ê²©ì¸ {minimumPrice} ë¯¸ë§Œìœ¼ë¡œ ê°€ê²©ì„ ì„¤ì •í•  ìˆ˜ ì—†ì–´ìš”";
 	}
 
 	protected override string _GetTemplateForMessageNameFieldEmpty()
 	{
-		return "이름을 입력하셔야 합니다";
+		return "ì´ë¦„ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤";
 	}
 
 	/// <summary>
@@ -847,32 +847,32 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageNameFieldPopulated(string nameLength, string maxNameLength)
 	{
-		return $"{nameLength}/{maxNameLength}자";
+		return $"{nameLength}/{maxNameLength}ìž";
 	}
 
 	protected override string _GetTemplateForMessageNameFieldPopulated()
 	{
-		return "{nameLength}/{maxNameLength}자";
+		return "{nameLength}/{maxNameLength}ìž";
 	}
 
 	protected override string _GetTemplateForMessageNameRequiredError()
 	{
-		return "이름을 입력하셔야 합니다.";
+		return "ì´ë¦„ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageNoTagsFound()
 	{
-		return "태그를 찾을 수 없습니다";
+		return "íƒœê·¸ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForMessageRestoreError()
 	{
-		return "복원 실패";
+		return "ë³µì› ì‹¤íŒ¨";
 	}
 
 	protected override string _GetTemplateForMessageRestoreSuccess()
 	{
-		return "복원 완료";
+		return "ë³µì› ì™„ë£Œ";
 	}
 
 	/// <summary>
@@ -881,12 +881,12 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageRevertError(string versionNumber)
 	{
-		return $"버전 {versionNumber}(으)로 복구하는 데 실패했어요";
+		return $"ë²„ì „ {versionNumber}(ìœ¼)ë¡œ ë³µêµ¬í•˜ëŠ” ë° ì‹¤íŒ¨í–ˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForMessageRevertError()
 	{
-		return "버전 {versionNumber}(으)로 복구하는 데 실패했어요";
+		return "ë²„ì „ {versionNumber}(ìœ¼)ë¡œ ë³µêµ¬í•˜ëŠ” ë° ì‹¤íŒ¨í–ˆì–´ìš”";
 	}
 
 	/// <summary>
@@ -895,36 +895,39 @@ internal class ItemConfigurationResources_ko_kr : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageRevertSuccess(string versionNumber)
 	{
-		return $"버전 {versionNumber}(으)로 무사히 복구했어요";
+		return $"ë²„ì „ {versionNumber}(ìœ¼)ë¡œ ë¬´ì‚¬ížˆ ë³µêµ¬í–ˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForMessageRevertSuccess()
 	{
-		return "버전 {versionNumber}(으)로 무사히 복구했어요";
+		return "ë²„ì „ {versionNumber}(ìœ¼)ë¡œ ë¬´ì‚¬ížˆ ë³µêµ¬í–ˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForMessageSaveError()
 	{
-		return "오류가 발생했어요. 나중에 다시 시도하세요";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForMessageTooManyUploads()
 	{
-		return "업로드가 너무 많아요. 나중에 다시 시도하세요.";
+		return "ì—…ë¡œë“œê°€ ë„ˆë¬´ ë§Žì•„ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageUpdatePriceError()
 	{
-		return "가격 업데이트 실패";
+		return "ê°€ê²© ì—…ë°ì´íŠ¸ ì‹¤íŒ¨";
 	}
 
 	protected override string _GetTemplateForMessageUpdatePriceSuccess()
 	{
-		return "가격 업데이트 완료";
+		return "ê°€ê²© ì—…ë°ì´íŠ¸ ì™„ë£Œ";
 	}
 
 	protected override string _GetTemplateForMessageUpdateSuccess()
 	{
-		return "업데이트 완료";
+		return "ì—…ë°ì´íŠ¸ ì™„ë£Œ";
 	}
+}
+
+
 }

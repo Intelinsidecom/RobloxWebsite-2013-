@@ -1,9 +1,8 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Demographics;
+namespace Roblox.Localization.Accountspublic {
+    class AccountCountryInitializer : IAccountCountryInitializer
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public class AccountCountryInitializer : IAccountCountryInitializer
 {
 	private readonly IGeolocationFactory _GeolocationFactory;
 
@@ -45,4 +44,7 @@ public class AccountCountryInitializer : IAccountCountryInitializer
 		}
 		return new CountryIdentifier(geolocation.CountryId.Value);
 	}
+}
+
+
 }

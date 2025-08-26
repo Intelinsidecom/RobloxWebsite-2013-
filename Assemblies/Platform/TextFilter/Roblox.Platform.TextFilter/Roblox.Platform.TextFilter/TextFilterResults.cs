@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Wrapper class for the results of FilterLiveText call.
 /// </summary>
 internal class TextFilterResults : ITextFilterResults
@@ -24,4 +24,7 @@ internal class TextFilterResults : ITextFilterResults
 	/// The result of filtering the text so that it is safe for users aged 13 and over
 	/// </summary>
 	public ITextFilterRuleResult Age13OrOverResult { get; set; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class ProfileResourceFactory
 
-internal static class ProfileResourceFactory
 {
 	public const string FullNamespace = "Feature.Profile";
 
@@ -21,4 +21,7 @@ internal static class ProfileResourceFactory
 			_ => new ProfileResources_en_us(state), 
 		};
 	}
+}
+
+
 }

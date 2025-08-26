@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.AssetInstances.Client {
 
-namespace Roblox.AssetInstances.Client
-{
     public sealed class AssetInstanceModel
     {
         public long Id { get; set; }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IDevelopLandingResources : ITranslationResources
 
-public interface IDevelopLandingResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.ManageMyGames"
@@ -73,7 +73,7 @@ public interface IDevelopLandingResources : ITranslationResources
 	/// <summary>
 	/// Key: "Description.TestimonialAlexBalfanz"
 	/// testimonial
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
 	string DescriptionTestimonialAlexBalfanz { get; }
 
@@ -87,7 +87,7 @@ public interface IDevelopLandingResources : ITranslationResources
 	/// <summary>
 	/// Key: "Description.TestimonialJacksonMunsell"
 	/// testimonial
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
 	string DescriptionTestimonialJacksonMunsell { get; }
 
@@ -101,14 +101,14 @@ public interface IDevelopLandingResources : ITranslationResources
 	/// <summary>
 	/// Key: "Description.TestimonialThree"
 	/// testimonial text
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
 	string DescriptionTestimonialThree { get; }
 
 	/// <summary>
 	/// Key: "Description.TestimonialTwo"
 	/// description
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
 	string DescriptionTestimonialTwo { get; }
 
@@ -229,4 +229,7 @@ public interface IDevelopLandingResources : ITranslationResources
 	/// English String: "Jackson Munsell"
 	/// </summary>
 	string LabelTestimonialTwoName { get; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SourceLanguageResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,56 +11,56 @@ internal class SourceLanguageResources_ko_kr : SourceLanguageResources_en_us, IS
 	/// The label for the cancel button
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "취소";
+	public override string ActionCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// The label for the confirm button
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "확인";
+	public override string ActionConfirm => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Description.SourceLanguage"
 	/// The label for source language tooltip
 	/// English String: "The source language represents the language the game has been written in."
 	/// </summary>
-	public override string DescriptionSourceLanguage => "소스 언어는 게임 제작시 사용된 언어를 뜻합니다.";
+	public override string DescriptionSourceLanguage => "ì†ŒìŠ¤ ì–¸ì–´ëŠ” ê²Œìž„ ì œìž‘ì‹œ ì‚¬ìš©ëœ ì–¸ì–´ë¥¼ ëœ»í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Heading.ChangeSourceLanguage"
 	/// The modal title for change source language modal
 	/// English String: "Change Source Language"
 	/// </summary>
-	public override string HeadingChangeSourceLanguage => "언어 변경";
+	public override string HeadingChangeSourceLanguage => "ì–¸ì–´ ë³€ê²½";
 
 	/// <summary>
 	/// Key: "Label.GameSourceLanguage"
 	/// The label for source language selection dropdown
 	/// English String: "Game Source Language: "
 	/// </summary>
-	public override string LabelGameSourceLanguage => "게임 소스 언어: ";
+	public override string LabelGameSourceLanguage => "ê²Œìž„ ì†ŒìŠ¤ ì–¸ì–´: ";
 
 	/// <summary>
 	/// Key: "Label.NotSpecified"
 	/// The label for not specified in source language dropdown
 	/// English String: "Not Specified"
 	/// </summary>
-	public override string LabelNotSpecified => "지정되지 않음";
+	public override string LabelNotSpecified => "ì§€ì •ë˜ì§€ ì•ŠìŒ";
 
 	/// <summary>
 	/// Key: "Label.SourceLanguage"
 	/// The label for source language selection dropdown
 	/// English String: "Source Language"
 	/// </summary>
-	public override string LabelSourceLanguage => "소스 언어";
+	public override string LabelSourceLanguage => "ì†ŒìŠ¤ ì–¸ì–´";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "오류: 오류가 발생했어요. 나중에 다시 시도하세요.";
+	public override string ResponseGeneralError => "ì˜¤ë¥˜: ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	public SourceLanguageResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -69,12 +69,12 @@ internal class SourceLanguageResources_ko_kr : SourceLanguageResources_en_us, IS
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	/// <summary>
@@ -84,41 +84,44 @@ internal class SourceLanguageResources_ko_kr : SourceLanguageResources_en_us, IS
 	/// </summary>
 	public override string DescriptionChangeSourceLanguage(string languageName)
 	{
-		return $"본 게임에서 사용할 언어를 {languageName}로 바꾸시겠습니까? 게임의 사용 언어가 번경됩니다.";
+		return $"ë³¸ ê²Œìž„ì—ì„œ ì‚¬ìš©í•  ì–¸ì–´ë¥¼ {languageName}ë¡œ ë°”ê¾¸ì‹œê² ìŠµë‹ˆê¹Œ? ê²Œìž„ì˜ ì‚¬ìš© ì–¸ì–´ê°€ ë²ˆê²½ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeSourceLanguage()
 	{
-		return "본 게임에서 사용할 언어를 {languageName}로 바꾸시겠습니까? 게임의 사용 언어가 번경됩니다.";
+		return "ë³¸ ê²Œìž„ì—ì„œ ì‚¬ìš©í•  ì–¸ì–´ë¥¼ {languageName}ë¡œ ë°”ê¾¸ì‹œê² ìŠµë‹ˆê¹Œ? ê²Œìž„ì˜ ì‚¬ìš© ì–¸ì–´ê°€ ë²ˆê²½ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionSourceLanguage()
 	{
-		return "소스 언어는 게임 제작시 사용된 언어를 뜻합니다.";
+		return "ì†ŒìŠ¤ ì–¸ì–´ëŠ” ê²Œìž„ ì œìž‘ì‹œ ì‚¬ìš©ëœ ì–¸ì–´ë¥¼ ëœ»í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForHeadingChangeSourceLanguage()
 	{
-		return "언어 변경";
+		return "ì–¸ì–´ ë³€ê²½";
 	}
 
 	protected override string _GetTemplateForLabelGameSourceLanguage()
 	{
-		return "게임 소스 언어: ";
+		return "ê²Œìž„ ì†ŒìŠ¤ ì–¸ì–´: ";
 	}
 
 	protected override string _GetTemplateForLabelNotSpecified()
 	{
-		return "지정되지 않음";
+		return "ì§€ì •ë˜ì§€ ì•ŠìŒ";
 	}
 
 	protected override string _GetTemplateForLabelSourceLanguage()
 	{
-		return "소스 언어";
+		return "ì†ŒìŠ¤ ì–¸ì–´";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "오류: 오류가 발생했어요. 나중에 다시 시도하세요.";
+		return "ì˜¤ë¥˜: ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
+}
+
+
 }

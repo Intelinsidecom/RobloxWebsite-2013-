@@ -1,11 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Roblox.Platform.Core;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class SupportedLocaleEntityFactory : ISupportedLocaleEntityFactory
 {
 	public ISupportedLocaleEntity Get(int id)
@@ -92,4 +91,7 @@ internal class SupportedLocaleEntityFactory : ISupportedLocaleEntityFactory
 			throw new PlatformArgumentException($"'{parameterName}' cannot be null or empty");
 		}
 	}
+}
+
+
 }

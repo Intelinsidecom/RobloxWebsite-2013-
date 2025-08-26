@@ -1,8 +1,7 @@
 using System.Collections.Generic;
+namespace Roblox.EventStream {
+    class BufferableEvent
 
-namespace Roblox.Platform.EventStream;
-
-internal class BufferableEvent
 {
 	public string Target { get; set; }
 
@@ -15,4 +14,7 @@ internal class BufferableEvent
 	public bool IsTrustedSource { get; set; }
 
 	public string PartitionKey { get; set; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IExternalLinksResources : ITranslationResources
 
-public interface IExternalLinksResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Link.Help"
@@ -36,4 +36,7 @@ public interface IExternalLinksResources : ITranslationResources
 	/// English String: "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use"
 	/// </summary>
 	string LinkTermsOfService { get; }
+}
+
+
 }

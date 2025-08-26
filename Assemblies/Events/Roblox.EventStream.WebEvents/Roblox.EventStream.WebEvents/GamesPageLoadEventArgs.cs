@@ -1,6 +1,16 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GamesPageLoadEventArgs : WebEventArgs
 
-public class GamesPageLoadEventArgs : WebEventArgs
 {
 	public string Referrer { get; set; }
 }
+
+
+}
+
+
+
+
+
+

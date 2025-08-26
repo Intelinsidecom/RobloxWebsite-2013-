@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountLocalesAuditCompositeEntry : IAccountLocalesAuditCompositeEntry
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountLocalesAuditCompositeEntry : IAccountLocalesAuditCompositeEntry
 {
 	private readonly IAccountLocalesAuditMetadataEntity _Metadata;
 
@@ -60,4 +59,7 @@ internal class AccountLocalesAuditCompositeEntry : IAccountLocalesAuditComposite
 			return null;
 		}
 	}
+}
+
+
 }

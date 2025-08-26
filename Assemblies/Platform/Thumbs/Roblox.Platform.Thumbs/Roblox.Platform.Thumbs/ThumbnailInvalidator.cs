@@ -1,8 +1,7 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
+namespace Roblox.Platform.Thumbspublic {
+    class ThumbnailInvalidator : DomainObjectBase<ThumbnailDomainFactories>, IThumbnailInvalidator
 
-namespace Roblox.Thumbs;
-
-public class ThumbnailInvalidator : DomainObjectBase<ThumbnailDomainFactories>, IThumbnailInvalidator
 {
 	public ThumbnailInvalidator(ThumbnailDomainFactories domainFactories)
 		: base(domainFactories)
@@ -13,4 +12,7 @@ public class ThumbnailInvalidator : DomainObjectBase<ThumbnailDomainFactories>, 
 	{
 		base.DomainFactories.ThumbnailsClient.InvalidateThumbnails(assetHashIds);
 	}
+}
+
+
 }

@@ -1,8 +1,10 @@
-namespace Roblox.Users.Client;
-
-public enum UserGender
+namespace Roblox.Platform.Users.Client
 {
-	Unknown = 1,
-	Male,
-	Female
+    public enum UserGender
+    {
+        Unknown = 1,
+        Male,
+        Female
+    }
 }
+

@@ -1,10 +1,13 @@
-namespace Roblox.TextFilter.Client;
+namespace Roblox.Platform.TextFilter.Client {
+    public enum BehaviorStatus
 
-public enum BehaviorStatus
 {
 	Ok,
 	FailedWithWarning,
 	FailedWithBanning,
 	FailedAlreadyBanned,
 	Unenforced
+}
+
+
 }

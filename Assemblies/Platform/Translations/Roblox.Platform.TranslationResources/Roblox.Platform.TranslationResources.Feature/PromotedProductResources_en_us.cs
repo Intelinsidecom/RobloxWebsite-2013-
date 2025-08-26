@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PromotedProductResources_en_us : TranslationResourcesBase, IPromotedProductResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PromotedProductResources_en_us : TranslationResourcesBase, IPromotedProductResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -256,4 +255,7 @@ internal class PromotedProductResources_en_us : TranslationResourcesBase, IPromo
 	{
 		return "Success!";
 	}
+}
+
+
 }

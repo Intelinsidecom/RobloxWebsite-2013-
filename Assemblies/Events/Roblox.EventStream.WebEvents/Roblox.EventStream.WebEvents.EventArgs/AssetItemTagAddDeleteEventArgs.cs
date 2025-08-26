@@ -1,6 +1,17 @@
-namespace Roblox.Platform.EventStream.WebEvents.EventArgs;
+using Roblox.EventStream.WebEvents.EventArgs;
+using System;
 
-public class AssetItemTagAddDeleteEventArgs : ItemTagAddDeleteEventArgs
+namespace Roblox.EventStream.WebEvents.EventArgs {
+    public class AssetItemTagAddDeleteEventArgs : ItemTagAddDeleteEventArgs
+
 {
 	public string AssetType { get; set; }
 }
+
+
+}
+
+
+
+
+

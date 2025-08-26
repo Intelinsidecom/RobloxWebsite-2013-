@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderationpublic {
+    interface IReviewTaskRepublishResult<out TTask> where TTask : IReviewTask
 
-namespace Roblox.Platform.Moderation;
-
-public interface IReviewTaskRepublishResult<out TTask> where TTask : IReviewTask
 {
 	/// <summary>
 	/// Indicates if any items were republished, regardless of their locale
@@ -13,4 +12,7 @@ public interface IReviewTaskRepublishResult<out TTask> where TTask : IReviewTask
 	IReadOnlyCollection<TTask> TasksRepublishedForDesiredLocale { get; }
 
 	IReadOnlyDictionary<ISupportedLocaleIdentifier, IReadOnlyCollection<IReviewTask>> AllTasksRepublishedByLocaleIdentifier { get; }
+}
+
+
 }

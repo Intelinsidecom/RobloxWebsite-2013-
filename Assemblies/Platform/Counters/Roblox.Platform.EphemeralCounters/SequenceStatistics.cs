@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.EphemeralCountersinternal {
+    class SequenceStatistics : ISequenceStatistics
 
-namespace Roblox.EphemeralCounters;
-
-internal class SequenceStatistics : ISequenceStatistics
 {
 	private readonly IDictionary<string, double> _Dictionary;
 
@@ -55,4 +54,7 @@ internal class SequenceStatistics : ISequenceStatistics
 		_Dictionary.TryGetValue(statisticName, out var value);
 		return value;
 	}
+}
+
+
 }

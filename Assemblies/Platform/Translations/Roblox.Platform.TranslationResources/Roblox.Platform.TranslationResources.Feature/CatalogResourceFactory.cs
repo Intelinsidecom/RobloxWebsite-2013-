@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class CatalogResourceFactory
 
-internal static class CatalogResourceFactory
 {
 	public const string FullNamespace = "Feature.Catalog";
 
@@ -21,4 +21,7 @@ internal static class CatalogResourceFactory
 			_ => new CatalogResources_en_us(state), 
 		};
 	}
+}
+
+
 }

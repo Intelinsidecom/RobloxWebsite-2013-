@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures.Enums;
+﻿namespace Roblox.Platform.PremiumFeatures.Enums {
+    /// <summary>
 
-/// <summary>
 /// Represents the frequency of a repeating event.
 /// </summary>
 public enum RobuxStipendFrequencyType
@@ -17,4 +17,7 @@ public enum RobuxStipendFrequencyType
 	/// This event repeats every month.
 	/// </summary>
 	Monthly
+}
+
+
 }

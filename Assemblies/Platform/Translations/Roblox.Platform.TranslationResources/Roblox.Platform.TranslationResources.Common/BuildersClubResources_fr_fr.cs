@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -25,7 +25,7 @@ internal class BuildersClubResources_fr_fr : BuildersClubResources_en_us, IBuild
 	/// membership type
 	/// English String: "Outrageous Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipOutrageous => "Abonnement à l'Outrageous Builders Club";
+	public override string LabelBuildersClubMembershipOutrageous => "Abonnement Ã  l'Outrageous Builders Club";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipTurbo"
@@ -46,7 +46,7 @@ internal class BuildersClubResources_fr_fr : BuildersClubResources_en_us, IBuild
 	/// This signifies a lifetime subscription to builders club or some other product.
 	/// English String: "Lifetime"
 	/// </summary>
-	public override string LabelLifetime => "À vie";
+	public override string LabelLifetime => "Ã€ vie";
 
 	/// <summary>
 	/// Key: "Label.Membership"
@@ -142,7 +142,7 @@ internal class BuildersClubResources_fr_fr : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipOutrageous()
 	{
-		return "Abonnement à l'Outrageous Builders Club";
+		return "Abonnement Ã  l'Outrageous Builders Club";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipTurbo()
@@ -157,7 +157,7 @@ internal class BuildersClubResources_fr_fr : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelLifetime()
 	{
-		return "À vie";
+		return "Ã€ vie";
 	}
 
 	protected override string _GetTemplateForLabelMembership()
@@ -215,3 +215,5 @@ internal class BuildersClubResources_fr_fr : BuildersClubResources_en_us, IBuild
 		return "Oui";
 	}
 }
+
+

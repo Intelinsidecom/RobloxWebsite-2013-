@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class ItemConfigurationResourceFactory
 
-internal static class ItemConfigurationResourceFactory
 {
 	public const string FullNamespace = "Feature.ItemConfiguration";
 
@@ -21,4 +21,7 @@ internal static class ItemConfigurationResourceFactory
 			_ => new ItemConfigurationResources_en_us(state), 
 		};
 	}
+}
+
+
 }

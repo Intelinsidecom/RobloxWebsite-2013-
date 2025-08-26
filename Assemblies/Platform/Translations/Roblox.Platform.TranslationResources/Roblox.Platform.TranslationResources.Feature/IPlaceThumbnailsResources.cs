@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPlaceThumbnailsResources : ITranslationResources
 
-public interface IPlaceThumbnailsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.ContinueToVideo"
@@ -41,4 +41,7 @@ public interface IPlaceThumbnailsResources : ITranslationResources
 	/// English String: "Previous"
 	/// </summary>
 	string LabelPrevious { get; }
+}
+
+
 }

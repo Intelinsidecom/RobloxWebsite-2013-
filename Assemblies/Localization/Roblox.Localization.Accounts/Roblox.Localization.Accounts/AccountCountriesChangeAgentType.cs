@@ -1,8 +1,11 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accountspublic {
+    enum AccountCountriesChangeAgentType : byte
 
-public enum AccountCountriesChangeAgentType : byte
 {
 	User,
 	CsAgent,
 	Automation
+}
+
+
 }

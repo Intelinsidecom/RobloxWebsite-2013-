@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderationpublic {
+    class ExternallyAuthorizedPrincipal<TId> : IExternallyAuthorizedPrincipal<TId> where TId : struct
 
-public class ExternallyAuthorizedPrincipal<TId> : IExternallyAuthorizedPrincipal<TId> where TId : struct
 {
 	public AuthorizingParty AuthorizingParty { get; }
 
@@ -14,4 +14,7 @@ public class ExternallyAuthorizedPrincipal<TId> : IExternallyAuthorizedPrincipal
 		Id = id;
 		ExternallyAuthorizedOperation = externallyAuthorizedOperation;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DevelopLandingResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,144 +11,144 @@ internal class DevelopLandingResources_zh_cn : DevelopLandingResources_en_us, ID
 	/// button label
 	/// English String: "Manage my games"
 	/// </summary>
-	public override string ActionManageMyGames => "管理我的游戏";
+	public override string ActionManageMyGames => "ç®¡ç†æˆ‘çš„æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Action.RobloxDevHub"
 	/// English String: "Continue to the Developer Hub"
 	/// </summary>
-	public override string ActionRobloxDevHub => "前往 Developer Hub";
+	public override string ActionRobloxDevHub => "å‰å¾€ Developer Hub";
 
 	/// <summary>
 	/// Key: "Action.RobloxWiki"
 	/// button label
 	/// English String: "Continue to Roblox Wiki"
 	/// </summary>
-	public override string ActionRobloxWiki => "继续前往 Roblox Wiki";
+	public override string ActionRobloxWiki => "ç»§ç»­å‰å¾€ Roblox Wiki";
 
 	/// <summary>
 	/// Key: "Action.StartCreating"
 	/// button label
 	/// English String: "Start Creating"
 	/// </summary>
-	public override string ActionStartCreating => "开始创作";
+	public override string ActionStartCreating => "å¼€å§‹åˆ›ä½œ";
 
 	/// <summary>
 	/// Key: "Description.EarnSeriousCash"
 	/// description
 	/// English String: "Creators like you are getting paid for what they love to do. Our top developers are earning over $2M a year by providing in-game purchases"
 	/// </summary>
-	public override string DescriptionEarnSeriousCash => "像你一样的创作者正凭借着他们的创作获得报酬；通过提供游戏内交易项目，我们最优秀的开发者年获利可超过 200 万美元";
+	public override string DescriptionEarnSeriousCash => "åƒä½ ä¸€æ ·çš„åˆ›ä½œè€…æ­£å‡­å€Ÿç€ä»–ä»¬çš„åˆ›ä½œèŽ·å¾—æŠ¥é…¬ï¼›é€šè¿‡æä¾›æ¸¸æˆå†…äº¤æ˜“é¡¹ç›®ï¼Œæˆ‘ä»¬æœ€ä¼˜ç§€çš„å¼€å‘è€…å¹´èŽ·åˆ©å¯è¶…è¿‡ 200 ä¸‡ç¾Žå…ƒ";
 
 	/// <summary>
 	/// Key: "Description.FreeImmersiveCreationEngine"
 	/// subtext
 	/// English String: "With our FREE and immersive creation engine"
 	/// </summary>
-	public override string DescriptionFreeImmersiveCreationEngine => "使用我们免费的沉浸式创作引擎";
+	public override string DescriptionFreeImmersiveCreationEngine => "ä½¿ç”¨æˆ‘ä»¬å…è´¹çš„æ²‰æµ¸å¼åˆ›ä½œå¼•æ“Ž";
 
 	/// <summary>
 	/// Key: "Description.MakeAnything"
 	/// text paragraph on page
 	/// English String: "Roblox Studio lets you create anything and release with one click to smartphones, tablets, desktops, consoles, and virtual reality devices"
 	/// </summary>
-	public override string DescriptionMakeAnything => "你能使用 Roblox Studio 创作任何作品；只需轻轻一点，便能将作品发布至智能手机、平板电脑、游戏主机及虚拟现实设备上";
+	public override string DescriptionMakeAnything => "ä½ èƒ½ä½¿ç”¨ Roblox Studio åˆ›ä½œä»»ä½•ä½œå“ï¼›åªéœ€è½»è½»ä¸€ç‚¹ï¼Œä¾¿èƒ½å°†ä½œå“å‘å¸ƒè‡³æ™ºèƒ½æ‰‹æœºã€å¹³æ¿ç”µè„‘ã€æ¸¸æˆä¸»æœºåŠè™šæ‹ŸçŽ°å®žè®¾å¤‡ä¸Š";
 
 	/// <summary>
 	/// Key: "Description.ReachMillionsPlayers"
 	/// description
 	/// English String: "Connect with a massive audience by tapping into an incredibly enthusiastic and international community of over 50 million monthly players"
 	/// </summary>
-	public override string DescriptionReachMillionsPlayers => "融入一个每月超过五千万名来自全球各地、充满热情的玩家所组成的社区";
+	public override string DescriptionReachMillionsPlayers => "èžå…¥ä¸€ä¸ªæ¯æœˆè¶…è¿‡äº”åƒä¸‡åæ¥è‡ªå…¨çƒå„åœ°ã€å……æ»¡çƒ­æƒ…çš„çŽ©å®¶æ‰€ç»„æˆçš„ç¤¾åŒº";
 
 	/// <summary>
 	/// Key: "Description.RobloxDevHub"
 	/// English String: "The Developer Hub is your one-stop shop for publishing on Roblox. Learn from a wide set of tutorials, connect with other developers, get platform updates, browse our API references, and much more."
 	/// </summary>
-	public override string DescriptionRobloxDevHub => "Developer Hub 是你在 Roblox 发布游戏的一站式平台。你可以在这里找到种类繁多的教学视频、和其他开发者交流、获取平台更新，浏览我们的 API 参考资料等等。";
+	public override string DescriptionRobloxDevHub => "Developer Hub æ˜¯ä½ åœ¨ Roblox å‘å¸ƒæ¸¸æˆçš„ä¸€ç«™å¼å¹³å°ã€‚ä½ å¯ä»¥åœ¨è¿™é‡Œæ‰¾åˆ°ç§ç±»ç¹å¤šçš„æ•™å­¦è§†é¢‘ã€å’Œå…¶ä»–å¼€å‘è€…äº¤æµã€èŽ·å–å¹³å°æ›´æ–°ï¼Œæµè§ˆæˆ‘ä»¬çš„ API å‚è€ƒèµ„æ–™ç­‰ç­‰ã€‚";
 
 	/// <summary>
 	/// Key: "Description.RobloxWiki"
 	/// description
 	/// English String: "The Roblox Wiki is the ultimate resource for documentation, tutorials, and samples which will help you learn to make games with Roblox Studio"
 	/// </summary>
-	public override string DescriptionRobloxWiki => "Roblox Wiki 包含许多文档、教程和样本，是帮助你学习使用 Roblox Studio 制作游戏的最佳资源";
+	public override string DescriptionRobloxWiki => "Roblox Wiki åŒ…å«è®¸å¤šæ–‡æ¡£ã€æ•™ç¨‹å’Œæ ·æœ¬ï¼Œæ˜¯å¸®åŠ©ä½ å­¦ä¹ ä½¿ç”¨ Roblox Studio åˆ¶ä½œæ¸¸æˆçš„æœ€ä½³èµ„æº";
 
 	/// <summary>
 	/// Key: "Description.TestimonialAlexBalfanz"
 	/// testimonial
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
-	public override string DescriptionTestimonialAlexBalfanz => "我一下就学会玩 Roblox 了！那么多人在玩 Roblox，Roblox 工作团队也一直愿意为开发者提供优秀资源，Roblox 是一个非常棒的职业方向！";
+	public override string DescriptionTestimonialAlexBalfanz => "æˆ‘ä¸€ä¸‹å°±å­¦ä¼šçŽ© Roblox äº†ï¼é‚£ä¹ˆå¤šäººåœ¨çŽ© Robloxï¼ŒRoblox å·¥ä½œå›¢é˜Ÿä¹Ÿä¸€ç›´æ„¿æ„ä¸ºå¼€å‘è€…æä¾›ä¼˜ç§€èµ„æºï¼ŒRoblox æ˜¯ä¸€ä¸ªéžå¸¸æ£’çš„èŒä¸šæ–¹å‘ï¼";
 
 	/// <summary>
 	/// Key: "Description.TestimonialAndrewBereza"
 	/// testimonial text
 	/// English String: "Roblox allows me to focus on my game development and potential future career without having to worry about the financial hardships of being a college student."
 	/// </summary>
-	public override string DescriptionTestimonialAndrewBereza => "Roblox 给了我专心开发游戏并思考未来职业生涯的空间，我不用再为身为一名大学生的财务状况而烦恼。";
+	public override string DescriptionTestimonialAndrewBereza => "Roblox ç»™äº†æˆ‘ä¸“å¿ƒå¼€å‘æ¸¸æˆå¹¶æ€è€ƒæœªæ¥èŒä¸šç”Ÿæ¶¯çš„ç©ºé—´ï¼Œæˆ‘ä¸ç”¨å†ä¸ºèº«ä¸ºä¸€åå¤§å­¦ç”Ÿçš„è´¢åŠ¡çŠ¶å†µè€Œçƒ¦æ¼ã€‚";
 
 	/// <summary>
 	/// Key: "Description.TestimonialJacksonMunsell"
 	/// testimonial
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
-	public override string DescriptionTestimonialJacksonMunsell => "我很享受在 Roblox 上创作游戏，因为它将 Facebook 等平台的社交功能通过社区的游戏和创意提升到了新的层次。";
+	public override string DescriptionTestimonialJacksonMunsell => "æˆ‘å¾ˆäº«å—åœ¨ Roblox ä¸Šåˆ›ä½œæ¸¸æˆï¼Œå› ä¸ºå®ƒå°† Facebook ç­‰å¹³å°çš„ç¤¾äº¤åŠŸèƒ½é€šè¿‡ç¤¾åŒºçš„æ¸¸æˆå’Œåˆ›æ„æå‡åˆ°äº†æ–°çš„å±‚æ¬¡ã€‚";
 
 	/// <summary>
 	/// Key: "Description.TestimonialOne"
 	/// testimonial content
 	/// English String: "Roblox allows me to focus on my game development and potential future career without having to worry about the financial hardships of being a college student."
 	/// </summary>
-	public override string DescriptionTestimonialOne => "Roblox 给了我专心开发游戏并思考未来职业生涯的空间，我不用再为身为一名大学生的财务状况而烦恼。";
+	public override string DescriptionTestimonialOne => "Roblox ç»™äº†æˆ‘ä¸“å¿ƒå¼€å‘æ¸¸æˆå¹¶æ€è€ƒæœªæ¥èŒä¸šç”Ÿæ¶¯çš„ç©ºé—´ï¼Œæˆ‘ä¸ç”¨å†ä¸ºèº«ä¸ºä¸€åå¤§å­¦ç”Ÿçš„è´¢åŠ¡çŠ¶å†µè€Œçƒ¦æ¼ã€‚";
 
 	/// <summary>
 	/// Key: "Description.TestimonialThree"
 	/// testimonial text
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
-	public override string DescriptionTestimonialThree => "我一下就学会玩 Roblox 了！那么多人在玩 Roblox，Roblox 工作团队也一直愿意为开发者提供优秀资源，Roblox 是一个非常棒的职业方向！";
+	public override string DescriptionTestimonialThree => "æˆ‘ä¸€ä¸‹å°±å­¦ä¼šçŽ© Roblox äº†ï¼é‚£ä¹ˆå¤šäººåœ¨çŽ© Robloxï¼ŒRoblox å·¥ä½œå›¢é˜Ÿä¹Ÿä¸€ç›´æ„¿æ„ä¸ºå¼€å‘è€…æä¾›ä¼˜ç§€èµ„æºï¼ŒRoblox æ˜¯ä¸€ä¸ªéžå¸¸æ£’çš„èŒä¸šæ–¹å‘ï¼";
 
 	/// <summary>
 	/// Key: "Description.TestimonialTwo"
 	/// description
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
-	public override string DescriptionTestimonialTwo => "我很享受在 Roblox 上创作游戏，因为它将 Facebook 等平台的社交功能通过社区的游戏和创意提升到了新的层次。";
+	public override string DescriptionTestimonialTwo => "æˆ‘å¾ˆäº«å—åœ¨ Roblox ä¸Šåˆ›ä½œæ¸¸æˆï¼Œå› ä¸ºå®ƒå°† Facebook ç­‰å¹³å°çš„ç¤¾äº¤åŠŸèƒ½é€šè¿‡ç¤¾åŒºçš„æ¸¸æˆå’Œåˆ›æ„æå‡åˆ°äº†æ–°çš„å±‚æ¬¡ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.EarnSeriousCash"
 	/// heading
 	/// English String: "Earn Serious Cash"
 	/// </summary>
-	public override string HeadingEarnSeriousCash => "赚取现金";
+	public override string HeadingEarnSeriousCash => "èµšå–çŽ°é‡‘";
 
 	/// <summary>
 	/// Key: "Heading.MakeAnything"
 	/// heading
 	/// English String: "Make Anything You Can Imagine"
 	/// </summary>
-	public override string HeadingMakeAnything => "创造你能想象的一切";
+	public override string HeadingMakeAnything => "åˆ›é€ ä½ èƒ½æƒ³è±¡çš„ä¸€åˆ‡";
 
 	/// <summary>
 	/// Key: "Heading.MakeAnythingSub"
 	/// section heading
 	/// English String: "Make Anything"
 	/// </summary>
-	public override string HeadingMakeAnythingSub => "随心制作";
+	public override string HeadingMakeAnythingSub => "éšå¿ƒåˆ¶ä½œ";
 
 	/// <summary>
 	/// Key: "Heading.ReachMillionsPlayers"
 	/// heading
 	/// English String: "Reach Millions of Players"
 	/// </summary>
-	public override string HeadingReachMillionsPlayers => "接触数百万名玩家";
+	public override string HeadingReachMillionsPlayers => "æŽ¥è§¦æ•°ç™¾ä¸‡åçŽ©å®¶";
 
 	/// <summary>
 	/// Key: "Heading.RobloxDevHub"
 	/// English String: "Developer Hub"
 	/// </summary>
-	public override string HeadingRobloxDevHub => "开发者平台";
+	public override string HeadingRobloxDevHub => "å¼€å‘è€…å¹³å°";
 
 	/// <summary>
 	/// Key: "Heading.RobloxWiki"
@@ -169,49 +169,49 @@ internal class DevelopLandingResources_zh_cn : DevelopLandingResources_en_us, ID
 	/// heading
 	/// English String: "Roblox Studio is FREE! Try it out today!"
 	/// </summary>
-	public override string HeadingTryFreeRobloxStudioToday => "Roblox Studio 完全免费，快来试试看！";
+	public override string HeadingTryFreeRobloxStudioToday => "Roblox Studio å®Œå…¨å…è´¹ï¼Œå¿«æ¥è¯•è¯•çœ‹ï¼";
 
 	/// <summary>
 	/// Key: "Heading.WhatCreatorsSaying"
 	/// heading
 	/// English String: "What Our Creators Are Saying"
 	/// </summary>
-	public override string HeadingWhatCreatorsSaying => "创作者的话";
+	public override string HeadingWhatCreatorsSaying => "åˆ›ä½œè€…çš„è¯";
 
 	/// <summary>
 	/// Key: "Label.CreateWithFriends"
 	/// label
 	/// English String: "Create With Friends"
 	/// </summary>
-	public override string LabelCreateWithFriends => "与好友一起创作";
+	public override string LabelCreateWithFriends => "ä¸Žå¥½å‹ä¸€èµ·åˆ›ä½œ";
 
 	/// <summary>
 	/// Key: "Label.GetStarted"
 	/// label
 	/// English String: "Get Started"
 	/// </summary>
-	public override string LabelGetStarted => "开始使用";
+	public override string LabelGetStarted => "å¼€å§‹ä½¿ç”¨";
 
 	/// <summary>
 	/// Key: "Label.GoToTop"
 	/// label
 	/// English String: "Go to top"
 	/// </summary>
-	public override string LabelGoToTop => "回到顶部";
+	public override string LabelGoToTop => "å›žåˆ°é¡¶éƒ¨";
 
 	/// <summary>
 	/// Key: "Label.QuotationMark"
 	/// image alt text for accessibility
 	/// English String: "Quotation Mark"
 	/// </summary>
-	public override string LabelQuotationMark => "引号";
+	public override string LabelQuotationMark => "å¼•å·";
 
 	/// <summary>
 	/// Key: "Label.RobloxStudioOnWindowsAndMac"
 	/// label
 	/// English String: "Roblox Studio is available on Windows and Mac"
 	/// </summary>
-	public override string LabelRobloxStudioOnWindowsAndMac => "Roblox Studio 适用于 Windows 和 Mac";
+	public override string LabelRobloxStudioOnWindowsAndMac => "Roblox Studio é€‚ç”¨äºŽ Windows å’Œ Mac";
 
 	/// <summary>
 	/// Key: "Label.TestimonialOneName"
@@ -241,107 +241,107 @@ internal class DevelopLandingResources_zh_cn : DevelopLandingResources_en_us, ID
 
 	protected override string _GetTemplateForActionManageMyGames()
 	{
-		return "管理我的游戏";
+		return "ç®¡ç†æˆ‘çš„æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForActionRobloxDevHub()
 	{
-		return "前往 Developer Hub";
+		return "å‰å¾€ Developer Hub";
 	}
 
 	protected override string _GetTemplateForActionRobloxWiki()
 	{
-		return "继续前往 Roblox Wiki";
+		return "ç»§ç»­å‰å¾€ Roblox Wiki";
 	}
 
 	protected override string _GetTemplateForActionStartCreating()
 	{
-		return "开始创作";
+		return "å¼€å§‹åˆ›ä½œ";
 	}
 
 	protected override string _GetTemplateForDescriptionEarnSeriousCash()
 	{
-		return "像你一样的创作者正凭借着他们的创作获得报酬；通过提供游戏内交易项目，我们最优秀的开发者年获利可超过 200 万美元";
+		return "åƒä½ ä¸€æ ·çš„åˆ›ä½œè€…æ­£å‡­å€Ÿç€ä»–ä»¬çš„åˆ›ä½œèŽ·å¾—æŠ¥é…¬ï¼›é€šè¿‡æä¾›æ¸¸æˆå†…äº¤æ˜“é¡¹ç›®ï¼Œæˆ‘ä»¬æœ€ä¼˜ç§€çš„å¼€å‘è€…å¹´èŽ·åˆ©å¯è¶…è¿‡ 200 ä¸‡ç¾Žå…ƒ";
 	}
 
 	protected override string _GetTemplateForDescriptionFreeImmersiveCreationEngine()
 	{
-		return "使用我们免费的沉浸式创作引擎";
+		return "ä½¿ç”¨æˆ‘ä»¬å…è´¹çš„æ²‰æµ¸å¼åˆ›ä½œå¼•æ“Ž";
 	}
 
 	protected override string _GetTemplateForDescriptionMakeAnything()
 	{
-		return "你能使用 Roblox Studio 创作任何作品；只需轻轻一点，便能将作品发布至智能手机、平板电脑、游戏主机及虚拟现实设备上";
+		return "ä½ èƒ½ä½¿ç”¨ Roblox Studio åˆ›ä½œä»»ä½•ä½œå“ï¼›åªéœ€è½»è½»ä¸€ç‚¹ï¼Œä¾¿èƒ½å°†ä½œå“å‘å¸ƒè‡³æ™ºèƒ½æ‰‹æœºã€å¹³æ¿ç”µè„‘ã€æ¸¸æˆä¸»æœºåŠè™šæ‹ŸçŽ°å®žè®¾å¤‡ä¸Š";
 	}
 
 	protected override string _GetTemplateForDescriptionReachMillionsPlayers()
 	{
-		return "融入一个每月超过五千万名来自全球各地、充满热情的玩家所组成的社区";
+		return "èžå…¥ä¸€ä¸ªæ¯æœˆè¶…è¿‡äº”åƒä¸‡åæ¥è‡ªå…¨çƒå„åœ°ã€å……æ»¡çƒ­æƒ…çš„çŽ©å®¶æ‰€ç»„æˆçš„ç¤¾åŒº";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxDevHub()
 	{
-		return "Developer Hub 是你在 Roblox 发布游戏的一站式平台。你可以在这里找到种类繁多的教学视频、和其他开发者交流、获取平台更新，浏览我们的 API 参考资料等等。";
+		return "Developer Hub æ˜¯ä½ åœ¨ Roblox å‘å¸ƒæ¸¸æˆçš„ä¸€ç«™å¼å¹³å°ã€‚ä½ å¯ä»¥åœ¨è¿™é‡Œæ‰¾åˆ°ç§ç±»ç¹å¤šçš„æ•™å­¦è§†é¢‘ã€å’Œå…¶ä»–å¼€å‘è€…äº¤æµã€èŽ·å–å¹³å°æ›´æ–°ï¼Œæµè§ˆæˆ‘ä»¬çš„ API å‚è€ƒèµ„æ–™ç­‰ç­‰ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxWiki()
 	{
-		return "Roblox Wiki 包含许多文档、教程和样本，是帮助你学习使用 Roblox Studio 制作游戏的最佳资源";
+		return "Roblox Wiki åŒ…å«è®¸å¤šæ–‡æ¡£ã€æ•™ç¨‹å’Œæ ·æœ¬ï¼Œæ˜¯å¸®åŠ©ä½ å­¦ä¹ ä½¿ç”¨ Roblox Studio åˆ¶ä½œæ¸¸æˆçš„æœ€ä½³èµ„æº";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialAlexBalfanz()
 	{
-		return "我一下就学会玩 Roblox 了！那么多人在玩 Roblox，Roblox 工作团队也一直愿意为开发者提供优秀资源，Roblox 是一个非常棒的职业方向！";
+		return "æˆ‘ä¸€ä¸‹å°±å­¦ä¼šçŽ© Roblox äº†ï¼é‚£ä¹ˆå¤šäººåœ¨çŽ© Robloxï¼ŒRoblox å·¥ä½œå›¢é˜Ÿä¹Ÿä¸€ç›´æ„¿æ„ä¸ºå¼€å‘è€…æä¾›ä¼˜ç§€èµ„æºï¼ŒRoblox æ˜¯ä¸€ä¸ªéžå¸¸æ£’çš„èŒä¸šæ–¹å‘ï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialAndrewBereza()
 	{
-		return "Roblox 给了我专心开发游戏并思考未来职业生涯的空间，我不用再为身为一名大学生的财务状况而烦恼。";
+		return "Roblox ç»™äº†æˆ‘ä¸“å¿ƒå¼€å‘æ¸¸æˆå¹¶æ€è€ƒæœªæ¥èŒä¸šç”Ÿæ¶¯çš„ç©ºé—´ï¼Œæˆ‘ä¸ç”¨å†ä¸ºèº«ä¸ºä¸€åå¤§å­¦ç”Ÿçš„è´¢åŠ¡çŠ¶å†µè€Œçƒ¦æ¼ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialJacksonMunsell()
 	{
-		return "我很享受在 Roblox 上创作游戏，因为它将 Facebook 等平台的社交功能通过社区的游戏和创意提升到了新的层次。";
+		return "æˆ‘å¾ˆäº«å—åœ¨ Roblox ä¸Šåˆ›ä½œæ¸¸æˆï¼Œå› ä¸ºå®ƒå°† Facebook ç­‰å¹³å°çš„ç¤¾äº¤åŠŸèƒ½é€šè¿‡ç¤¾åŒºçš„æ¸¸æˆå’Œåˆ›æ„æå‡åˆ°äº†æ–°çš„å±‚æ¬¡ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialOne()
 	{
-		return "Roblox 给了我专心开发游戏并思考未来职业生涯的空间，我不用再为身为一名大学生的财务状况而烦恼。";
+		return "Roblox ç»™äº†æˆ‘ä¸“å¿ƒå¼€å‘æ¸¸æˆå¹¶æ€è€ƒæœªæ¥èŒä¸šç”Ÿæ¶¯çš„ç©ºé—´ï¼Œæˆ‘ä¸ç”¨å†ä¸ºèº«ä¸ºä¸€åå¤§å­¦ç”Ÿçš„è´¢åŠ¡çŠ¶å†µè€Œçƒ¦æ¼ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialThree()
 	{
-		return "我一下就学会玩 Roblox 了！那么多人在玩 Roblox，Roblox 工作团队也一直愿意为开发者提供优秀资源，Roblox 是一个非常棒的职业方向！";
+		return "æˆ‘ä¸€ä¸‹å°±å­¦ä¼šçŽ© Roblox äº†ï¼é‚£ä¹ˆå¤šäººåœ¨çŽ© Robloxï¼ŒRoblox å·¥ä½œå›¢é˜Ÿä¹Ÿä¸€ç›´æ„¿æ„ä¸ºå¼€å‘è€…æä¾›ä¼˜ç§€èµ„æºï¼ŒRoblox æ˜¯ä¸€ä¸ªéžå¸¸æ£’çš„èŒä¸šæ–¹å‘ï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialTwo()
 	{
-		return "我很享受在 Roblox 上创作游戏，因为它将 Facebook 等平台的社交功能通过社区的游戏和创意提升到了新的层次。";
+		return "æˆ‘å¾ˆäº«å—åœ¨ Roblox ä¸Šåˆ›ä½œæ¸¸æˆï¼Œå› ä¸ºå®ƒå°† Facebook ç­‰å¹³å°çš„ç¤¾äº¤åŠŸèƒ½é€šè¿‡ç¤¾åŒºçš„æ¸¸æˆå’Œåˆ›æ„æå‡åˆ°äº†æ–°çš„å±‚æ¬¡ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingEarnSeriousCash()
 	{
-		return "赚取现金";
+		return "èµšå–çŽ°é‡‘";
 	}
 
 	protected override string _GetTemplateForHeadingMakeAnything()
 	{
-		return "创造你能想象的一切";
+		return "åˆ›é€ ä½ èƒ½æƒ³è±¡çš„ä¸€åˆ‡";
 	}
 
 	protected override string _GetTemplateForHeadingMakeAnythingSub()
 	{
-		return "随心制作";
+		return "éšå¿ƒåˆ¶ä½œ";
 	}
 
 	protected override string _GetTemplateForHeadingReachMillionsPlayers()
 	{
-		return "接触数百万名玩家";
+		return "æŽ¥è§¦æ•°ç™¾ä¸‡åçŽ©å®¶";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxDevHub()
 	{
-		return "开发者平台";
+		return "å¼€å‘è€…å¹³å°";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxWiki()
@@ -356,37 +356,37 @@ internal class DevelopLandingResources_zh_cn : DevelopLandingResources_en_us, ID
 
 	protected override string _GetTemplateForHeadingTryFreeRobloxStudioToday()
 	{
-		return "Roblox Studio 完全免费，快来试试看！";
+		return "Roblox Studio å®Œå…¨å…è´¹ï¼Œå¿«æ¥è¯•è¯•çœ‹ï¼";
 	}
 
 	protected override string _GetTemplateForHeadingWhatCreatorsSaying()
 	{
-		return "创作者的话";
+		return "åˆ›ä½œè€…çš„è¯";
 	}
 
 	protected override string _GetTemplateForLabelCreateWithFriends()
 	{
-		return "与好友一起创作";
+		return "ä¸Žå¥½å‹ä¸€èµ·åˆ›ä½œ";
 	}
 
 	protected override string _GetTemplateForLabelGetStarted()
 	{
-		return "开始使用";
+		return "å¼€å§‹ä½¿ç”¨";
 	}
 
 	protected override string _GetTemplateForLabelGoToTop()
 	{
-		return "回到顶部";
+		return "å›žåˆ°é¡¶éƒ¨";
 	}
 
 	protected override string _GetTemplateForLabelQuotationMark()
 	{
-		return "引号";
+		return "å¼•å·";
 	}
 
 	protected override string _GetTemplateForLabelRobloxStudioOnWindowsAndMac()
 	{
-		return "Roblox Studio 适用于 Windows 和 Mac";
+		return "Roblox Studio é€‚ç”¨äºŽ Windows å’Œ Mac";
 	}
 
 	protected override string _GetTemplateForLabelTestimonialOneName()
@@ -403,4 +403,7 @@ internal class DevelopLandingResources_zh_cn : DevelopLandingResources_en_us, ID
 	{
 		return "Jackson Munsell";
 	}
+}
+
+
 }

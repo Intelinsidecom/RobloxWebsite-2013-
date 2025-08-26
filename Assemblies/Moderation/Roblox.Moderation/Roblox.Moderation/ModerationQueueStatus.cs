@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Moderation;
 using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// Default implementation of <see cref="T:Roblox.Platform.Moderation.IModerationQueueStatus" />.
 /// </summary>
 public class ModerationQueueStatus : IModerationQueueStatus
@@ -214,4 +213,7 @@ public class ModerationQueueStatus : IModerationQueueStatus
 			_ => throw new ArgumentException($"The Asset Queue Metrics for Asset Type Id : {assetTypeId} is not supported."), 
 		};
 	}
+}
+
+
 }

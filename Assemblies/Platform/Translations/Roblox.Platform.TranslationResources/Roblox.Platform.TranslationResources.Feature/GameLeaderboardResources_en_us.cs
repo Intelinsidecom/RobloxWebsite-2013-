@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameLeaderboardResources_en_us : TranslationResourcesBase, IGameLeaderboardResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameLeaderboardResources_en_us : TranslationResourcesBase, IGameLeaderboardResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -339,4 +338,7 @@ internal class GameLeaderboardResources_en_us : TranslationResourcesBase, IGameL
 	{
 		return "Updated approx. 10 minutes ago";
 	}
+}
+
+
 }

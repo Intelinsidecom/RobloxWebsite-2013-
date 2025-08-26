@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents.EventArgs;
+ using Roblox.EventStream.WebEvents;
+namespace Roblox.EventStream.WebEvents.EventArgs {
+    public class ThumbnailHashRequestedEventArgs : BasicEventArgs
 
-public class ThumbnailHashRequestedEventArgs : BasicEventArgs
 {
 	public string EntityType { get; set; }
 
@@ -14,3 +15,12 @@ public class ThumbnailHashRequestedEventArgs : BasicEventArgs
 
 	public long? RequesterPlaceId { get; set; }
 }
+
+
+}
+
+
+
+
+
+

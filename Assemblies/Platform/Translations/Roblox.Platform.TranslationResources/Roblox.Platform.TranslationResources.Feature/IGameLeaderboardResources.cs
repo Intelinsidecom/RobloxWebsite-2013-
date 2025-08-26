@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameLeaderboardResources : ITranslationResources
 
-public interface IGameLeaderboardResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Heading.Clans"
@@ -127,4 +127,7 @@ public interface IGameLeaderboardResources : ITranslationResources
 	/// English String: "Updated approx. 10 minutes ago"
 	/// </summary>
 	string LabelUpdatedTenMinutes { get; }
+}
+
+
 }

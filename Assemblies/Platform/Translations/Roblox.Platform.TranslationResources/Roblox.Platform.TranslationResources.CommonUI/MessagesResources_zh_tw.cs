@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,39 +11,39 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// button title
 	/// English String: "Go to the Previous Page"
 	/// </summary>
-	public override string ActionPreviousPage => "返回上一頁";
+	public override string ActionPreviousPage => "è¿”å›žä¸Šä¸€é ";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button title
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "返回首頁";
+	public override string ActionReturnHome => "è¿”å›žé¦–é ";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "錯誤";
+	public override string LabelError => "éŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Label.ErrorImage"
 	/// alternate text shown for error image
 	/// English String: "Error Image"
 	/// </summary>
-	public override string LabelErrorImage => "錯誤圖像";
+	public override string LabelErrorImage => "éŒ¯èª¤åœ–åƒ";
 
 	/// <summary>
 	/// Key: "Label.TooManyCharacters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyCharacters => "字元過多！";
+	public override string LabelTooManyCharacters => "å­—å…ƒéŽå¤šï¼";
 
 	/// <summary>
 	/// Key: "Message.AlwaysAllowed"
 	/// English String: "Always allowed"
 	/// </summary>
-	public override string MessageAlwaysAllowed => "始終允許";
+	public override string MessageAlwaysAllowed => "å§‹çµ‚å…è¨±";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookies"
@@ -55,7 +55,7 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.AnalyiticsCookiesDescription"
 	/// English String: "These cookies used for improving site performance or understanding site usage."
 	/// </summary>
-	public override string MessageAnalyiticsCookiesDescription => "我們使用這些 Cookies 增強網站性能或取得網站使用資訊。";
+	public override string MessageAnalyiticsCookiesDescription => "æˆ‘å€‘ä½¿ç”¨é€™äº› Cookies å¢žå¼·ç¶²ç«™æ€§èƒ½æˆ–å–å¾—ç¶²ç«™ä½¿ç”¨è³‡è¨Šã€‚";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem1"
@@ -79,7 +79,7 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "我們需要使用這些 Cookies 提供網站上的某些功能，包括使用者驗證、系統維護及保存 Cookie 偏好。";
+	public override string MessageEssentialCookiesDescription => "æˆ‘å€‘éœ€è¦ä½¿ç”¨é€™äº› Cookies æä¾›ç¶²ç«™ä¸Šçš„æŸäº›åŠŸèƒ½ï¼ŒåŒ…æ‹¬ä½¿ç”¨è€…é©—è­‰ã€ç³»çµ±ç¶­è­·åŠä¿å­˜ Cookie åå¥½ã€‚";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -97,7 +97,7 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.ManageCookies"
 	/// English String: "Manage Cookies"
 	/// </summary>
-	public override string MessageManageCookies => "管理 Cookies";
+	public override string MessageManageCookies => "ç®¡ç† Cookies";
 
 	/// <summary>
 	/// Key: "MessageEssentialCookiesItem3"
@@ -110,83 +110,83 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// 403 error message
 	/// English String: "Access Denied"
 	/// </summary>
-	public override string ResponseAccessDenied => "存取遭拒";
+	public override string ResponseAccessDenied => "å­˜å–é­æ‹’";
 
 	/// <summary>
 	/// Key: "Response.AccessDeniedDescription"
 	/// 403 error message detail
 	/// English String: "You don't have permission to view this page"
 	/// </summary>
-	public override string ResponseAccessDeniedDescription => "您沒有檢視此頁面的權限";
+	public override string ResponseAccessDeniedDescription => "æ‚¨æ²’æœ‰æª¢è¦–æ­¤é é¢çš„æ¬Šé™";
 
 	/// <summary>
 	/// Key: "Response.BadRequest"
 	/// 400 error message title
 	/// English String: "Bad Request"
 	/// </summary>
-	public override string ResponseBadRequest => "錯誤請求";
+	public override string ResponseBadRequest => "éŒ¯èª¤è«‹æ±‚";
 
 	/// <summary>
 	/// Key: "Response.BadRequestDescription"
 	/// error message detail for 400 error
 	/// English String: "There was a problem with your request"
 	/// </summary>
-	public override string ResponseBadRequestDescription => "請求發生錯誤";
+	public override string ResponseBadRequestDescription => "è«‹æ±‚ç™¼ç”ŸéŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Response.InternalServerError"
 	/// 500 error message title
 	/// English String: "Internal Server Error"
 	/// </summary>
-	public override string ResponseInternalServerError => "伺服器內部錯誤";
+	public override string ResponseInternalServerError => "ä¼ºæœå™¨å…§éƒ¨éŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Response.InternalServerErrorDescription"
 	/// 500 error message description
 	/// English String: "An unexpected error occurred"
 	/// </summary>
-	public override string ResponseInternalServerErrorDescription => "發生意外錯誤";
+	public override string ResponseInternalServerErrorDescription => "ç™¼ç”Ÿæ„å¤–éŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Response.PageNotFound"
 	/// 404 error message title
 	/// English String: "Page Not found"
 	/// </summary>
-	public override string ResponsePageNotFound => "找不到頁面";
+	public override string ResponsePageNotFound => "æ‰¾ä¸åˆ°é é¢";
 
 	/// <summary>
 	/// Key: "Response.PageNotFoundDescrition"
 	/// 404 error message description
 	/// English String: "Page cannot be found or no longer exists"
 	/// </summary>
-	public override string ResponsePageNotFoundDescrition => "頁面找不到或不存在";
+	public override string ResponsePageNotFoundDescrition => "é é¢æ‰¾ä¸åˆ°æˆ–ä¸å­˜åœ¨";
 
 	/// <summary>
 	/// Key: "Response.RequestError"
 	/// error message for incorrect request
 	/// English String: "Error with your request"
 	/// </summary>
-	public override string ResponseRequestError => "請求發生錯誤";
+	public override string ResponseRequestError => "è«‹æ±‚ç™¼ç”ŸéŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Response.SomethingWentWrong"
 	/// default error message
 	/// English String: "Something went wrong"
 	/// </summary>
-	public override string ResponseSomethingWentWrong => "發生錯誤";
+	public override string ResponseSomethingWentWrong => "ç™¼ç”ŸéŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsText"
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttemptsText => "嘗試次數過多";
+	public override string ResponseTooManyAttemptsText => "å˜—è©¦æ¬¡æ•¸éŽå¤š";
 
 	/// <summary>
 	/// Key: "Response.UnexpectedError"
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "發生意外錯誤，請稍後再試。";
+	public override string ResponseUnexpectedError => "ç™¼ç”Ÿæ„å¤–éŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	public MessagesResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -195,12 +195,12 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionPreviousPage()
 	{
-		return "返回上一頁";
+		return "è¿”å›žä¸Šä¸€é ";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "返回首頁";
+		return "è¿”å›žé¦–é ";
 	}
 
 	/// <summary>
@@ -210,12 +210,12 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox 使用 Cookies 提供個人化內容、提供社交媒體功能及分析網站流量。若您需要更多資訊和了解如何{startLink}管理 Cookies 偏好{endLink}，請前往我們的{startLink2}隱私權及 Cookies 政策{endLink2}。";
+		return $"Roblox ä½¿ç”¨ Cookies æä¾›å€‹äººåŒ–å…§å®¹ã€æä¾›ç¤¾äº¤åª’é«”åŠŸèƒ½åŠåˆ†æžç¶²ç«™æµé‡ã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šå’Œäº†è§£å¦‚ä½•{startLink}ç®¡ç† Cookies åå¥½{endLink}ï¼Œè«‹å‰å¾€æˆ‘å€‘çš„{startLink2}éš±ç§æ¬ŠåŠ Cookies æ”¿ç­–{endLink2}ã€‚";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Roblox 使用 Cookies 提供個人化內容、提供社交媒體功能及分析網站流量。若您需要更多資訊和了解如何{startLink}管理 Cookies 偏好{endLink}，請前往我們的{startLink2}隱私權及 Cookies 政策{endLink2}。";
+		return "Roblox ä½¿ç”¨ Cookies æä¾›å€‹äººåŒ–å…§å®¹ã€æä¾›ç¤¾äº¤åª’é«”åŠŸèƒ½åŠåˆ†æžç¶²ç«™æµé‡ã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šå’Œäº†è§£å¦‚ä½•{startLink}ç®¡ç† Cookies åå¥½{endLink}ï¼Œè«‹å‰å¾€æˆ‘å€‘çš„{startLink2}éš±ç§æ¬ŠåŠ Cookies æ”¿ç­–{endLink2}ã€‚";
 	}
 
 	/// <summary>
@@ -225,32 +225,32 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string DescriptionContactCustomerService(string emailLink)
 	{
-		return $"若此頁面持續顯示，請在 {emailLink} 聯絡客服人員。";
+		return $"è‹¥æ­¤é é¢æŒçºŒé¡¯ç¤ºï¼Œè«‹åœ¨ {emailLink} è¯çµ¡å®¢æœäººå“¡ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionContactCustomerService()
 	{
-		return "若此頁面持續顯示，請在 {emailLink} 聯絡客服人員。";
+		return "è‹¥æ­¤é é¢æŒçºŒé¡¯ç¤ºï¼Œè«‹åœ¨ {emailLink} è¯çµ¡å®¢æœäººå“¡ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "錯誤";
+		return "éŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForLabelErrorImage()
 	{
-		return "錯誤圖像";
+		return "éŒ¯èª¤åœ–åƒ";
 	}
 
 	protected override string _GetTemplateForLabelTooManyCharacters()
 	{
-		return "字元過多！";
+		return "å­—å…ƒéŽå¤šï¼";
 	}
 
 	protected override string _GetTemplateForMessageAlwaysAllowed()
 	{
-		return "始終允許";
+		return "å§‹çµ‚å…è¨±";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookies()
@@ -260,7 +260,7 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesDescription()
 	{
-		return "我們使用這些 Cookies 增強網站性能或取得網站使用資訊。";
+		return "æˆ‘å€‘ä½¿ç”¨é€™äº› Cookies å¢žå¼·ç¶²ç«™æ€§èƒ½æˆ–å–å¾—ç¶²ç«™ä½¿ç”¨è³‡è¨Šã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem1()
@@ -280,12 +280,12 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNotice(string startLink, string endLink)
 	{
-		return $"Roblox 使用 Cookies 給您更好的體驗。若您需要更多資訊，包括如何撤回同意及如何管理 Cookies 的使用方式，請前往我們的{startLink}隱私權及 Cookies 政策{endLink}。";
+		return $"Roblox ä½¿ç”¨ Cookies çµ¦æ‚¨æ›´å¥½çš„é«”é©—ã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼ŒåŒ…æ‹¬å¦‚ä½•æ’¤å›žåŒæ„åŠå¦‚ä½•ç®¡ç† Cookies çš„ä½¿ç”¨æ–¹å¼ï¼Œè«‹å‰å¾€æˆ‘å€‘çš„{startLink}éš±ç§æ¬ŠåŠ Cookies æ”¿ç­–{endLink}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNotice()
 	{
-		return "Roblox 使用 Cookies 給您更好的體驗。若您需要更多資訊，包括如何撤回同意及如何管理 Cookies 的使用方式，請前往我們的{startLink}隱私權及 Cookies 政策{endLink}。";
+		return "Roblox ä½¿ç”¨ Cookies çµ¦æ‚¨æ›´å¥½çš„é«”é©—ã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼ŒåŒ…æ‹¬å¦‚ä½•æ’¤å›žåŒæ„åŠå¦‚ä½•ç®¡ç† Cookies çš„ä½¿ç”¨æ–¹å¼ï¼Œè«‹å‰å¾€æˆ‘å€‘çš„{startLink}éš±ç§æ¬ŠåŠ Cookies æ”¿ç­–{endLink}ã€‚";
 	}
 
 	/// <summary>
@@ -294,12 +294,12 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox 使用 Cookies 提供個人化內容、提供社交媒體功能及分析網站流量。若您需要更多資訊和了解如何{startLink}管理 Cookies 偏好{endLink}，請前往我們的{startLink2}隱私權及 Cookies 政策{endLink2}。";
+		return $"Roblox ä½¿ç”¨ Cookies æä¾›å€‹äººåŒ–å…§å®¹ã€æä¾›ç¤¾äº¤åª’é«”åŠŸèƒ½åŠåˆ†æžç¶²ç«™æµé‡ã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šå’Œäº†è§£å¦‚ä½•{startLink}ç®¡ç† Cookies åå¥½{endLink}ï¼Œè«‹å‰å¾€æˆ‘å€‘çš„{startLink2}éš±ç§æ¬ŠåŠ Cookies æ”¿ç­–{endLink2}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Roblox 使用 Cookies 提供個人化內容、提供社交媒體功能及分析網站流量。若您需要更多資訊和了解如何{startLink}管理 Cookies 偏好{endLink}，請前往我們的{startLink2}隱私權及 Cookies 政策{endLink2}。";
+		return "Roblox ä½¿ç”¨ Cookies æä¾›å€‹äººåŒ–å…§å®¹ã€æä¾›ç¤¾äº¤åª’é«”åŠŸèƒ½åŠåˆ†æžç¶²ç«™æµé‡ã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šå’Œäº†è§£å¦‚ä½•{startLink}ç®¡ç† Cookies åå¥½{endLink}ï¼Œè«‹å‰å¾€æˆ‘å€‘çš„{startLink2}éš±ç§æ¬ŠåŠ Cookies æ”¿ç­–{endLink2}ã€‚";
 	}
 
 	/// <summary>
@@ -308,12 +308,12 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieModalText(string startLink, string endLink)
 	{
-		return $"請選擇此網站能否以下列方式使用 Cookies。若您想了解此網站使用 Cookies 及相關技術的方式，請前往我們的{startLink}隱私權政策{endLink}。";
+		return $"è«‹é¸æ“‡æ­¤ç¶²ç«™èƒ½å¦ä»¥ä¸‹åˆ—æ–¹å¼ä½¿ç”¨ Cookiesã€‚è‹¥æ‚¨æƒ³äº†è§£æ­¤ç¶²ç«™ä½¿ç”¨ Cookies åŠç›¸é—œæŠ€è¡“çš„æ–¹å¼ï¼Œè«‹å‰å¾€æˆ‘å€‘çš„{startLink}éš±ç§æ¬Šæ”¿ç­–{endLink}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCookieModalText()
 	{
-		return "請選擇此網站能否以下列方式使用 Cookies。若您想了解此網站使用 Cookies 及相關技術的方式，請前往我們的{startLink}隱私權政策{endLink}。";
+		return "è«‹é¸æ“‡æ­¤ç¶²ç«™èƒ½å¦ä»¥ä¸‹åˆ—æ–¹å¼ä½¿ç”¨ Cookiesã€‚è‹¥æ‚¨æƒ³äº†è§£æ­¤ç¶²ç«™ä½¿ç”¨ Cookies åŠç›¸é—œæŠ€è¡“çš„æ–¹å¼ï¼Œè«‹å‰å¾€æˆ‘å€‘çš„{startLink}éš±ç§æ¬Šæ”¿ç­–{endLink}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookies()
@@ -323,7 +323,7 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "我們需要使用這些 Cookies 提供網站上的某些功能，包括使用者驗證、系統維護及保存 Cookie 偏好。";
+		return "æˆ‘å€‘éœ€è¦ä½¿ç”¨é€™äº› Cookies æä¾›ç¶²ç«™ä¸Šçš„æŸäº›åŠŸèƒ½ï¼ŒåŒ…æ‹¬ä½¿ç”¨è€…é©—è­‰ã€ç³»çµ±ç¶­è­·åŠä¿å­˜ Cookie åå¥½ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -338,7 +338,7 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageManageCookies()
 	{
-		return "管理 Cookies";
+		return "ç®¡ç† Cookies";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem3()
@@ -348,61 +348,64 @@ internal class MessagesResources_zh_tw : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "存取遭拒";
+		return "å­˜å–é­æ‹’";
 	}
 
 	protected override string _GetTemplateForResponseAccessDeniedDescription()
 	{
-		return "您沒有檢視此頁面的權限";
+		return "æ‚¨æ²’æœ‰æª¢è¦–æ­¤é é¢çš„æ¬Šé™";
 	}
 
 	protected override string _GetTemplateForResponseBadRequest()
 	{
-		return "錯誤請求";
+		return "éŒ¯èª¤è«‹æ±‚";
 	}
 
 	protected override string _GetTemplateForResponseBadRequestDescription()
 	{
-		return "請求發生錯誤";
+		return "è«‹æ±‚ç™¼ç”ŸéŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerError()
 	{
-		return "伺服器內部錯誤";
+		return "ä¼ºæœå™¨å…§éƒ¨éŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerErrorDescription()
 	{
-		return "發生意外錯誤";
+		return "ç™¼ç”Ÿæ„å¤–éŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFound()
 	{
-		return "找不到頁面";
+		return "æ‰¾ä¸åˆ°é é¢";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFoundDescrition()
 	{
-		return "頁面找不到或不存在";
+		return "é é¢æ‰¾ä¸åˆ°æˆ–ä¸å­˜åœ¨";
 	}
 
 	protected override string _GetTemplateForResponseRequestError()
 	{
-		return "請求發生錯誤";
+		return "è«‹æ±‚ç™¼ç”ŸéŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForResponseSomethingWentWrong()
 	{
-		return "發生錯誤";
+		return "ç™¼ç”ŸéŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsText()
 	{
-		return "嘗試次數過多";
+		return "å˜—è©¦æ¬¡æ•¸éŽå¤š";
 	}
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "發生意外錯誤，請稍後再試。";
+		return "ç™¼ç”Ÿæ„å¤–éŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
+}
+
+
 }

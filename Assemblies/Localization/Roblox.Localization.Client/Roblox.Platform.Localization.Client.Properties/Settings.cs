@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -10,10 +10,9 @@ using Roblox.Configuration;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Sentinels.CircuitBreakerPolicy;
+namespace Roblox.Platform.Localization.Client.Properties {
+    [SettingsProvider(typeof(Provider))]
 
-namespace Roblox.Localization.Client.Properties;
-
-[SettingsProvider(typeof(Provider))]
 [ExcludeFromCodeCoverage]
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
@@ -109,4 +108,7 @@ internal sealed class Settings : ApplicationSettingsBase, IServiceClientSettings
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
 	}
+}
+
+
 }

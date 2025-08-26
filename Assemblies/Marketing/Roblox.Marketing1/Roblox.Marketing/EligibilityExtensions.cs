@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Platform.Membership;
+namespace Roblox.Marketinginternal {
+    static class EligibilityExtensions
 
-namespace Roblox.Platform.Marketing;
-
-internal static class EligibilityExtensions
 {
 	internal static bool CreatedWithinTimePeriod(this IUser user, IBrowserTracker browserTracker, DateTime? startDate, DateTime? endDate)
 	{
@@ -49,4 +48,7 @@ internal static class EligibilityExtensions
 		}
 		return (user?.Created ?? browserTracker.Created) < date;
 	}
+}
+
+
 }

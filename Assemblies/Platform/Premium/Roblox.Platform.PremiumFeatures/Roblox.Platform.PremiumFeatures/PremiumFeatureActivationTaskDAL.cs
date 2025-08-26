@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class PremiumFeatureActivationTaskDAL
 
-namespace Roblox.PremiumFeatures;
-
-public class PremiumFeatureActivationTaskDAL
 {
 	private long _ID;
 
@@ -225,4 +224,7 @@ public class PremiumFeatureActivationTaskDAL
 		queryParameters.Add(new SqlParameter("@DurationInMinutes", leaseDurationInMinutes));
 		return EntityHelper.GetDataEntityIDCollection<long>(new DbInfo(ConnectionString, "[dbo].[PremiumFeatureActivationTasksV2_LeaseTasks]", queryParameters));
 	}
+}
+
+
 }

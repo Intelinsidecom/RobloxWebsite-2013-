@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides VIPServerResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,187 +10,187 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 	/// Key: "Action.Add"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "추가";
+	public override string ActionAdd => "ì¶”ê°€";
 
 	/// <summary>
 	/// Key: "Action.AddPlayers"
 	/// English String: "Add Players"
 	/// </summary>
-	public override string ActionAddPlayers => "플레이어 추가";
+	public override string ActionAddPlayers => "í”Œë ˆì´ì–´ ì¶”ê°€";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "취소";
+	public override string ActionCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.CancelPayments"
 	/// English String: "Cancel Payments"
 	/// </summary>
-	public override string ActionCancelPayments => "결제 취소";
+	public override string ActionCancelPayments => "ê²°ì œ ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.ChangeName"
 	/// English String: "Change Name"
 	/// </summary>
-	public override string ActionChangeName => "이름 변경";
+	public override string ActionChangeName => "ì´ë¦„ ë³€ê²½";
 
 	/// <summary>
 	/// Key: "Action.GoBack"
 	/// English String: "Go Back"
 	/// </summary>
-	public override string ActionGoBack => "돌아가기";
+	public override string ActionGoBack => "ëŒì•„ê°€ê¸°";
 
 	/// <summary>
 	/// Key: "Action.RegenerateJoinLink"
 	/// English String: "Regenerate"
 	/// </summary>
-	public override string ActionRegenerateJoinLink => "다시 만들기";
+	public override string ActionRegenerateJoinLink => "ë‹¤ì‹œ ë§Œë“¤ê¸°";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "삭제";
+	public override string ActionRemove => "ì‚­ì œ";
 
 	/// <summary>
 	/// Key: "Action.RenewVipServer"
 	/// English String: "Renew VIP Server"
 	/// </summary>
-	public override string ActionRenewVipServer => "VIP 서버 갱신";
+	public override string ActionRenewVipServer => "VIP ì„œë²„ ê°±ì‹ ";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "전체 보기";
+	public override string ActionSeeAll => "ì „ì²´ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.CancelPayments"
 	/// English String: "Cancel Payments"
 	/// </summary>
-	public override string HeadingCancelPayments => "결제 취소";
+	public override string HeadingCancelPayments => "ê²°ì œ ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Heading.ChangeName"
 	/// English String: "Change VIP Server Name"
 	/// </summary>
-	public override string HeadingChangeName => "VIP 서버 이름 변경";
+	public override string HeadingChangeName => "VIP ì„œë²„ ì´ë¦„ ë³€ê²½";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureVipServer"
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string HeadingConfigureVipServer => "VIP 서버 구성";
+	public override string HeadingConfigureVipServer => "VIP ì„œë²„ êµ¬ì„±";
 
 	/// <summary>
 	/// Key: "Heading.RemovePlayer"
 	/// English String: "Remove Player"
 	/// </summary>
-	public override string HeadingRemovePlayer => "플레이어 삭제";
+	public override string HeadingRemovePlayer => "í”Œë ˆì´ì–´ ì‚­ì œ";
 
 	/// <summary>
 	/// Key: "Heading.RenewVipServer"
 	/// English String: "Renew VIP Server"
 	/// </summary>
-	public override string HeadingRenewVipServer => "VIP 서버 갱신";
+	public override string HeadingRenewVipServer => "VIP ì„œë²„ ê°±ì‹ ";
 
 	/// <summary>
 	/// Key: "Label.ChangeNamePlaceholder"
 	/// English String: "VIP Server Name (1-50 Characters)"
 	/// </summary>
-	public override string LabelChangeNamePlaceholder => "VIP 서버 이름 (1~50자)";
+	public override string LabelChangeNamePlaceholder => "VIP ì„œë²„ ì´ë¦„ (1~50ìž)";
 
 	/// <summary>
 	/// Key: "Label.ClanAccess"
 	/// English String: "Clan Access"
 	/// </summary>
-	public override string LabelClanAccess => "클랜 접근";
+	public override string LabelClanAccess => "í´ëžœ ì ‘ê·¼";
 
 	/// <summary>
 	/// Key: "Label.FriendsAllowed"
 	/// English String: "Friends Allowed"
 	/// </summary>
-	public override string LabelFriendsAllowed => "허용된 친구";
+	public override string LabelFriendsAllowed => "í—ˆìš©ëœ ì¹œêµ¬";
 
 	/// <summary>
 	/// Key: "Label.GameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelGameName => "게임 이름";
+	public override string LabelGameName => "ê²Œìž„ ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.JoinGameLink"
 	/// English String: "Join Game Link..."
 	/// </summary>
-	public override string LabelJoinGameLink => "게임 링크 참가...";
+	public override string LabelJoinGameLink => "ê²Œìž„ ë§í¬ ì°¸ê°€...";
 
 	/// <summary>
 	/// Key: "Label.None"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelNone => "없음";
+	public override string LabelNone => "ì—†ìŒ";
 
 	/// <summary>
 	/// Key: "Label.Off"
 	/// English String: "Off"
 	/// </summary>
-	public override string LabelOff => "끄기";
+	public override string LabelOff => "ë„ê¸°";
 
 	/// <summary>
 	/// Key: "Label.On"
 	/// English String: "On"
 	/// </summary>
-	public override string LabelOn => "켜기";
+	public override string LabelOn => "ì¼œê¸°";
 
 	/// <summary>
 	/// Key: "Label.PickEnemyClan"
 	/// English String: "Pick Enemy Clan"
 	/// </summary>
-	public override string LabelPickEnemyClan => "적 클랜 선택";
+	public override string LabelPickEnemyClan => "ì  í´ëžœ ì„ íƒ";
 
 	/// <summary>
 	/// Key: "Label.SearchForPlayers"
 	/// English String: "Search for Players"
 	/// </summary>
-	public override string LabelSearchForPlayers => "플레이어 검색";
+	public override string LabelSearchForPlayers => "í”Œë ˆì´ì–´ ê²€ìƒ‰";
 
 	/// <summary>
 	/// Key: "Label.Server"
 	/// English String: "Server"
 	/// </summary>
-	public override string LabelServer => "서버";
+	public override string LabelServer => "ì„œë²„";
 
 	/// <summary>
 	/// Key: "Label.ServerMembers"
 	/// English String: "Server Members"
 	/// </summary>
-	public override string LabelServerMembers => "서버 멤버";
+	public override string LabelServerMembers => "ì„œë²„ ë©¤ë²„";
 
 	/// <summary>
 	/// Key: "Label.SubscriptionStatus"
 	/// English String: "Subscription Status"
 	/// </summary>
-	public override string LabelSubscriptionStatus => "가입 상태";
+	public override string LabelSubscriptionStatus => "ê°€ìž… ìƒíƒœ";
 
 	/// <summary>
 	/// Key: "Label.VIPServerLink"
 	/// English String: "VIP Server Link"
 	/// </summary>
-	public override string LabelVIPServerLink => "VIP 서버 링크";
+	public override string LabelVIPServerLink => "VIP ì„œë²„ ë§í¬";
 
 	/// <summary>
 	/// Key: "Label.VIPServerStatus"
 	/// English String: "VIP Server Status"
 	/// </summary>
-	public override string LabelVIPServerStatus => "VIP 서버 상태";
+	public override string LabelVIPServerStatus => "VIP ì„œë²„ ìƒíƒœ";
 
 	/// <summary>
 	/// Key: "Label.YourClan"
 	/// English String: "Your Clan"
 	/// </summary>
-	public override string LabelYourClan => "회원님의 클랜";
+	public override string LabelYourClan => "íšŒì›ë‹˜ì˜ í´ëžœ";
 
 	public VIPServerResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -199,77 +199,77 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "추가";
+		return "ì¶”ê°€";
 	}
 
 	protected override string _GetTemplateForActionAddPlayers()
 	{
-		return "플레이어 추가";
+		return "í”Œë ˆì´ì–´ ì¶”ê°€";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionCancelPayments()
 	{
-		return "결제 취소";
+		return "ê²°ì œ ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionChangeName()
 	{
-		return "이름 변경";
+		return "ì´ë¦„ ë³€ê²½";
 	}
 
 	protected override string _GetTemplateForActionGoBack()
 	{
-		return "돌아가기";
+		return "ëŒì•„ê°€ê¸°";
 	}
 
 	protected override string _GetTemplateForActionRegenerateJoinLink()
 	{
-		return "다시 만들기";
+		return "ë‹¤ì‹œ ë§Œë“¤ê¸°";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "삭제";
+		return "ì‚­ì œ";
 	}
 
 	protected override string _GetTemplateForActionRenewVipServer()
 	{
-		return "VIP 서버 갱신";
+		return "VIP ì„œë²„ ê°±ì‹ ";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "전체 보기";
+		return "ì „ì²´ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingCancelPayments()
 	{
-		return "결제 취소";
+		return "ê²°ì œ ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForHeadingChangeName()
 	{
-		return "VIP 서버 이름 변경";
+		return "VIP ì„œë²„ ì´ë¦„ ë³€ê²½";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureVipServer()
 	{
-		return "VIP 서버 구성";
+		return "VIP ì„œë²„ êµ¬ì„±";
 	}
 
 	protected override string _GetTemplateForHeadingRemovePlayer()
 	{
-		return "플레이어 삭제";
+		return "í”Œë ˆì´ì–´ ì‚­ì œ";
 	}
 
 	protected override string _GetTemplateForHeadingRenewVipServer()
 	{
-		return "VIP 서버 갱신";
+		return "VIP ì„œë²„ ê°±ì‹ ";
 	}
 
 	/// <summary>
@@ -278,57 +278,57 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelChangeNameBodyMessage(string name, string creator, string date)
 	{
-		return $"{creator}님이 만든 {name} VIP 서버에 대한 향후 결제를 정말 취소할까요? 취소하면 회원님의 VIP 서버는 {date}에 비활성화 상태로 변경됩니다.";
+		return $"{creator}ë‹˜ì´ ë§Œë“  {name} VIP ì„œë²„ì— ëŒ€í•œ í–¥í›„ ê²°ì œë¥¼ ì •ë§ ì·¨ì†Œí• ê¹Œìš”? ì·¨ì†Œí•˜ë©´ íšŒì›ë‹˜ì˜ VIP ì„œë²„ëŠ” {date}ì— ë¹„í™œì„±í™” ìƒíƒœë¡œ ë³€ê²½ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelChangeNameBodyMessage()
 	{
-		return "{creator}님이 만든 {name} VIP 서버에 대한 향후 결제를 정말 취소할까요? 취소하면 회원님의 VIP 서버는 {date}에 비활성화 상태로 변경됩니다.";
+		return "{creator}ë‹˜ì´ ë§Œë“  {name} VIP ì„œë²„ì— ëŒ€í•œ í–¥í›„ ê²°ì œë¥¼ ì •ë§ ì·¨ì†Œí• ê¹Œìš”? ì·¨ì†Œí•˜ë©´ íšŒì›ë‹˜ì˜ VIP ì„œë²„ëŠ” {date}ì— ë¹„í™œì„±í™” ìƒíƒœë¡œ ë³€ê²½ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelChangeNamePlaceholder()
 	{
-		return "VIP 서버 이름 (1~50자)";
+		return "VIP ì„œë²„ ì´ë¦„ (1~50ìž)";
 	}
 
 	protected override string _GetTemplateForLabelClanAccess()
 	{
-		return "클랜 접근";
+		return "í´ëžœ ì ‘ê·¼";
 	}
 
 	protected override string _GetTemplateForLabelFriendsAllowed()
 	{
-		return "허용된 친구";
+		return "í—ˆìš©ëœ ì¹œêµ¬";
 	}
 
 	protected override string _GetTemplateForLabelGameName()
 	{
-		return "게임 이름";
+		return "ê²Œìž„ ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelJoinGameLink()
 	{
-		return "게임 링크 참가...";
+		return "ê²Œìž„ ë§í¬ ì°¸ê°€...";
 	}
 
 	protected override string _GetTemplateForLabelNone()
 	{
-		return "없음";
+		return "ì—†ìŒ";
 	}
 
 	protected override string _GetTemplateForLabelOff()
 	{
-		return "끄기";
+		return "ë„ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelOn()
 	{
-		return "켜기";
+		return "ì¼œê¸°";
 	}
 
 	protected override string _GetTemplateForLabelPickEnemyClan()
 	{
-		return "적 클랜 선택";
+		return "ì  í´ëžœ ì„ íƒ";
 	}
 
 	/// <summary>
@@ -337,12 +337,12 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelRemovePlayerBodyMessage(string name)
 	{
-		return $"VIP 서버에서 {name}님을 정말 삭제할까요? 삭제된 사용자는 회원님의 VIP 서버에 다시 참가할 수 없습니다.";
+		return $"VIP ì„œë²„ì—ì„œ {name}ë‹˜ì„ ì •ë§ ì‚­ì œí• ê¹Œìš”? ì‚­ì œëœ ì‚¬ìš©ìžëŠ” íšŒì›ë‹˜ì˜ VIP ì„œë²„ì— ë‹¤ì‹œ ì°¸ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelRemovePlayerBodyMessage()
 	{
-		return "VIP 서버에서 {name}님을 정말 삭제할까요? 삭제된 사용자는 회원님의 VIP 서버에 다시 참가할 수 없습니다.";
+		return "VIP ì„œë²„ì—ì„œ {name}ë‹˜ì„ ì •ë§ ì‚­ì œí• ê¹Œìš”? ì‚­ì œëœ ì‚¬ìš©ìžëŠ” íšŒì›ë‹˜ì˜ VIP ì„œë²„ì— ë‹¤ì‹œ ì°¸ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -351,12 +351,12 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelRenewVipServerBodyMessageConfirmation(string name, string creator)
 	{
-		return $"{creator}님이 만든 {name} VIP 서버에 대한 향후 결제를 정말 활성화하시겠습니까?";
+		return $"{creator}ë‹˜ì´ ë§Œë“  {name} VIP ì„œë²„ì— ëŒ€í•œ í–¥í›„ ê²°ì œë¥¼ ì •ë§ í™œì„±í™”í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	protected override string _GetTemplateForLabelRenewVipServerBodyMessageConfirmation()
 	{
-		return "{creator}님이 만든 {name} VIP 서버에 대한 향후 결제를 정말 활성화하시겠습니까?";
+		return "{creator}ë‹˜ì´ ë§Œë“  {name} VIP ì„œë²„ì— ëŒ€í•œ í–¥í›„ ê²°ì œë¥¼ ì •ë§ í™œì„±í™”í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	/// <summary>
@@ -365,22 +365,22 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelRenewVipServerBodyMessageStart(string date)
 	{
-		return $"본 VIP 서버는 취소할 때까지 매달 {date}에 갱신됩니다.";
+		return $"ë³¸ VIP ì„œë²„ëŠ” ì·¨ì†Œí•  ë•Œê¹Œì§€ ë§¤ë‹¬ {date}ì— ê°±ì‹ ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelRenewVipServerBodyMessageStart()
 	{
-		return "본 VIP 서버는 취소할 때까지 매달 {date}에 갱신됩니다.";
+		return "ë³¸ VIP ì„œë²„ëŠ” ì·¨ì†Œí•  ë•Œê¹Œì§€ ë§¤ë‹¬ {date}ì— ê°±ì‹ ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelSearchForPlayers()
 	{
-		return "플레이어 검색";
+		return "í”Œë ˆì´ì–´ ê²€ìƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelServer()
 	{
-		return "서버";
+		return "ì„œë²„";
 	}
 
 	/// <summary>
@@ -389,17 +389,17 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelServerExpirationDate(string date)
 	{
-		return $"VIP 서버 종료일: {date}";
+		return $"VIP ì„œë²„ ì¢…ë£Œì¼: {date}";
 	}
 
 	protected override string _GetTemplateForLabelServerExpirationDate()
 	{
-		return "VIP 서버 종료일: {date}";
+		return "VIP ì„œë²„ ì¢…ë£Œì¼: {date}";
 	}
 
 	protected override string _GetTemplateForLabelServerMembers()
 	{
-		return "서버 멤버";
+		return "ì„œë²„ ë©¤ë²„";
 	}
 
 	/// <summary>
@@ -408,12 +408,12 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelSubscriptionChargeDate(string date)
 	{
-		return $"다음 결제 예정일: {date}";
+		return $"ë‹¤ìŒ ê²°ì œ ì˜ˆì •ì¼: {date}";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionChargeDate()
 	{
-		return "다음 결제 예정일: {date}";
+		return "ë‹¤ìŒ ê²°ì œ ì˜ˆì •ì¼: {date}";
 	}
 
 	/// <summary>
@@ -422,31 +422,34 @@ internal class VIPServerResources_ko_kr : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelSubscriptionMonthlyPaymentDue(string value)
 	{
-		return $"VIP 월간 서버 요금: {value}";
+		return $"VIP ì›”ê°„ ì„œë²„ ìš”ê¸ˆ: {value}";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionMonthlyPaymentDue()
 	{
-		return "VIP 월간 서버 요금: {value}";
+		return "VIP ì›”ê°„ ì„œë²„ ìš”ê¸ˆ: {value}";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionStatus()
 	{
-		return "가입 상태";
+		return "ê°€ìž… ìƒíƒœ";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerLink()
 	{
-		return "VIP 서버 링크";
+		return "VIP ì„œë²„ ë§í¬";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerStatus()
 	{
-		return "VIP 서버 상태";
+		return "VIP ì„œë²„ ìƒíƒœ";
 	}
 
 	protected override string _GetTemplateForLabelYourClan()
 	{
-		return "회원님의 클랜";
+		return "íšŒì›ë‹˜ì˜ í´ëžœ";
 	}
+}
+
+
 }

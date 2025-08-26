@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class ExternalLinksResourceFactory
 
-internal static class ExternalLinksResourceFactory
 {
 	public const string FullNamespace = "Common.ExternalLinks";
 
@@ -20,4 +20,7 @@ internal static class ExternalLinksResourceFactory
 			_ => new ExternalLinksResources_en_us(state), 
 		};
 	}
+}
+
+
 }

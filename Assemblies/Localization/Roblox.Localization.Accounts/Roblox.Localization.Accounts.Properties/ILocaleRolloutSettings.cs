@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Accounts.Properties;
+﻿namespace Roblox.Localization.Accounts.Propertiespublic {
+    interface ILocaleRolloutSettings
 
-public interface ILocaleRolloutSettings
 {
 	bool IsSpanishLocaleEnabledForSoothsayers { get; }
 
@@ -243,4 +243,7 @@ public interface ILocaleRolloutSettings
 	string MinimumIOSAppVersionToEnableCjvFullExperience { get; }
 
 	string MinimumIOSAppVersionToEnableCjvOnSignupAndLogin { get; }
+}
+
+
 }

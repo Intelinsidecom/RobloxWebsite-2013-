@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Corepublic {
+    interface ICoreLocalizationBuilder
 
-public interface ICoreLocalizationBuilder
 {
 	/// <summary>
 	/// Set the Langauge Family that a given Device Reported Locale belongs to
@@ -22,4 +22,7 @@ public interface ICoreLocalizationBuilder
 	/// <param name="rawDeviceReportedLocaleCode">raw locale value passed by a client deivce. eg. "en-us", accept-language header "en_US,en;q=0.8"</param>
 	/// <returns>The new or existing identifier for the locale code reported by the deivice</returns>
 	IDeviceReportedLocaleIdentifier RecordDeviceReportedLocale(string rawDeviceReportedLocaleCode);
+}
+
+
 }

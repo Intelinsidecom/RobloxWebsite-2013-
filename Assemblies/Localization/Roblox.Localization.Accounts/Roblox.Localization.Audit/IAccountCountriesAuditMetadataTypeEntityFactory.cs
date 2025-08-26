@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Audit;
+﻿namespace Roblox.Localization.Auditinternal {
+    interface IAccountCountriesAuditMetadataTypeEntityFactory
 
-internal interface IAccountCountriesAuditMetadataTypeEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntity" /> by its ID.
@@ -24,4 +24,7 @@ internal interface IAccountCountriesAuditMetadataTypeEntityFactory
 	/// TODO: Add exceptions.
 	/// <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditMetadataTypeEntity" /> with the given value.</returns>
 	IAccountCountriesAuditMetadataTypeEntity GetOrCreate(string value);
+}
+
+
 }

@@ -1,8 +1,11 @@
-namespace Roblox.RealTimeNotifications.Authentication;
+﻿namespace Roblox.Platform.RealTimeNotifications.Authenticationpublic {
+    interface IAuthenticationNotificationsPublisher
 
-public interface IAuthenticationNotificationsPublisher
 {
 	bool PublishSignOutNotification(long signedOutUserId);
 
 	bool PublishSignOutNotification(long signedOutUser, long recipientUser);
+}
+
+
 }

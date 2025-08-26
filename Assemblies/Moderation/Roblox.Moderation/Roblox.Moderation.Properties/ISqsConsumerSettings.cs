@@ -1,10 +1,12 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
+namespace Roblox.Moderation.Propertiespublic {
+    interface ISqsConsumerSettings : ISqsSettings, INotifyPropertyChanged
 
-namespace Roblox.Platform.Moderation.Properties;
-
-public interface ISqsConsumerSettings : ISqsSettings, INotifyPropertyChanged
 {
 	double HighPriorityAbuseQueueUsagePercentage { get; }
 
 	double HighPriorityAbuseQueueMinimumUsagePercentage { get; }
+}
+
+
 }

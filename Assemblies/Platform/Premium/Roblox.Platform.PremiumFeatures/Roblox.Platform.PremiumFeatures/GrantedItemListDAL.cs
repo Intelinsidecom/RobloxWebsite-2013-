@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class GrantedItemListDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxPremiumFeatures;
@@ -73,4 +72,7 @@ internal class GrantedItemListDAL
 	{
 		return RobloxDatabase.RobloxPremiumFeatures.MultiGet("GrantedItemLists_GetGrantedItemListsByIDs", ids, BuildDAL);
 	}
+}
+
+
 }

@@ -168,7 +168,7 @@ internal class BriteVerifyPerformanceMonitor : IBriteVerifyPerformanceMonitor
 				ResponseIsInvalidEmailAccount = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
-		CounterCreator.InitializeMultiInstance("Roblox.BriteVerifyV2", _ApiName, httpCounters);
+		CounterInitializer.InitializeMultiInstance("Roblox.BriteVerifyV2", _ApiName, httpCounters);
 		CounterDescriptor[] counters2 = new CounterDescriptor[1]
 		{
 			new CounterDescriptor(() => ResponseIsAcceptAllEmail, delegate(PerformanceCounter v)
@@ -176,7 +176,7 @@ internal class BriteVerifyPerformanceMonitor : IBriteVerifyPerformanceMonitor
 				ResponseIsAcceptAllEmail = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
-		CounterCreator.InitializeMultiInstance("Roblox.BriteVerifyV3", _ApiName, counters2);
+		CounterInitializer.InitializeMultiInstance("Roblox.BriteVerifyV3", _ApiName, counters2);
 	}
 
 	public virtual void Increment(TimeSpan requestTime)

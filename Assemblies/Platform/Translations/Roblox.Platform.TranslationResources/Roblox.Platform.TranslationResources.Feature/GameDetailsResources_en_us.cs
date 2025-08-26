@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameDetailsResources_en_us : TranslationResourcesBase, IGameDetailsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameDetailsResources_en_us : TranslationResourcesBase, IGameDetailsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -537,4 +536,7 @@ internal class GameDetailsResources_en_us : TranslationResourcesBase, IGameDetai
 	{
 		return "Visits";
 	}
+}
+
+
 }

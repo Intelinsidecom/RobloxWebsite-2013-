@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PremiumMigrationWebResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,14 +10,14 @@ internal class PremiumMigrationWebResources_zh_cn : PremiumMigrationWebResources
 	/// Key: "Heading.MigrationModalTitle"
 	/// English String: "Builders Club is now Roblox Premium"
 	/// </summary>
-	public override string HeadingMigrationModalTitle => "Builders Club 现已更名为 Roblox Premium";
+	public override string HeadingMigrationModalTitle => "Builders Club çŽ°å·²æ›´åä¸º Roblox Premium";
 
 	/// <summary>
 	/// Key: "Heading.MigrationTitle"
 	/// obsoleted
 	/// English String: "Builders Club is now Roblox Premium"
 	/// </summary>
-	public override string HeadingMigrationTitle => "Builders Club 现已更名为 Roblox Premium";
+	public override string HeadingMigrationTitle => "Builders Club çŽ°å·²æ›´åä¸º Roblox Premium";
 
 	public PremiumMigrationWebResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -27,39 +27,42 @@ internal class PremiumMigrationWebResources_zh_cn : PremiumMigrationWebResources
 	/// <summary>
 	/// Key: "Description.MigrationBody"
 	/// obsoleted
-	/// English String: "Moving forward, subscribers will be granted a monthly lump sum of Robux instead of receiving it in daily increments. Today, we’re depositing {robuxAmount} Robux in your account to make up for the remaining amount you would have earned this month.\n{newLine}{newLine}\nCheck your Roblox Inbox for more details.  "
+	/// English String: "Moving forward, subscribers will be granted a monthly lump sum of Robux instead of receiving it in daily increments. Today, weâ€™re depositing {robuxAmount} Robux in your account to make up for the remaining amount you would have earned this month.\n{newLine}{newLine}\nCheck your Roblox Inbox for more details.  "
 	/// </summary>
 	public override string DescriptionMigrationBody(string robuxAmount, string newLine)
 	{
-		return $"即日起，订阅者将直接获得一整个月的 Robux 额度，而无需等待每日发放的额度。我们今天会给你 {robuxAmount} Robux 以补偿你本月尚未获得的额度。\n{newLine}{newLine}\n要了解更多信息，请前往你的 Roblox 收件箱。  ";
+		return $"å³æ—¥èµ·ï¼Œè®¢é˜…è€…å°†ç›´æŽ¥èŽ·å¾—ä¸€æ•´ä¸ªæœˆçš„ Robux é¢åº¦ï¼Œè€Œæ— éœ€ç­‰å¾…æ¯æ—¥å‘æ”¾çš„é¢åº¦ã€‚æˆ‘ä»¬ä»Šå¤©ä¼šç»™ä½  {robuxAmount} Robux ä»¥è¡¥å¿ä½ æœ¬æœˆå°šæœªèŽ·å¾—çš„é¢åº¦ã€‚\n{newLine}{newLine}\nè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ä½ çš„ Roblox æ”¶ä»¶ç®±ã€‚  ";
 	}
 
 	protected override string _GetTemplateForDescriptionMigrationBody()
 	{
-		return "即日起，订阅者将直接获得一整个月的 Robux 额度，而无需等待每日发放的额度。我们今天会给你 {robuxAmount} Robux 以补偿你本月尚未获得的额度。\n{newLine}{newLine}\n要了解更多信息，请前往你的 Roblox 收件箱。  ";
+		return "å³æ—¥èµ·ï¼Œè®¢é˜…è€…å°†ç›´æŽ¥èŽ·å¾—ä¸€æ•´ä¸ªæœˆçš„ Robux é¢åº¦ï¼Œè€Œæ— éœ€ç­‰å¾…æ¯æ—¥å‘æ”¾çš„é¢åº¦ã€‚æˆ‘ä»¬ä»Šå¤©ä¼šç»™ä½  {robuxAmount} Robux ä»¥è¡¥å¿ä½ æœ¬æœˆå°šæœªèŽ·å¾—çš„é¢åº¦ã€‚\n{newLine}{newLine}\nè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ä½ çš„ Roblox æ”¶ä»¶ç®±ã€‚  ";
 	}
 
 	/// <summary>
 	/// Key: "Description.MigrationModalBody"
-	/// English String: "Going forward, you will receive a full month’s worth of Robux on the day of your subscription renewal. Today, we’re giving you this month's Robux minus what you’ve already received this month: {robuxAmount}.{newLine}{newLine}\nCheck your Roblox inbox for more details."
+	/// English String: "Going forward, you will receive a full monthâ€™s worth of Robux on the day of your subscription renewal. Today, weâ€™re giving you this month's Robux minus what youâ€™ve already received this month: {robuxAmount}.{newLine}{newLine}\nCheck your Roblox inbox for more details."
 	/// </summary>
 	public override string DescriptionMigrationModalBody(string robuxAmount, string newLine)
 	{
-		return $"即日起，你在更新订阅的当天将直接获得一整个月的 Robux 额度。我们将把本月的 Robux 减去你在本月已经拿到的额度，你将拿到的总额为：{robuxAmount}。{newLine}{newLine}\n要了解更多信息，请前往你的 Roblox 收件箱。";
+		return $"å³æ—¥èµ·ï¼Œä½ åœ¨æ›´æ–°è®¢é˜…çš„å½“å¤©å°†ç›´æŽ¥èŽ·å¾—ä¸€æ•´ä¸ªæœˆçš„ Robux é¢åº¦ã€‚æˆ‘ä»¬å°†æŠŠæœ¬æœˆçš„ Robux å‡åŽ»ä½ åœ¨æœ¬æœˆå·²ç»æ‹¿åˆ°çš„é¢åº¦ï¼Œä½ å°†æ‹¿åˆ°çš„æ€»é¢ä¸ºï¼š{robuxAmount}ã€‚{newLine}{newLine}\nè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ä½ çš„ Roblox æ”¶ä»¶ç®±ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionMigrationModalBody()
 	{
-		return "即日起，你在更新订阅的当天将直接获得一整个月的 Robux 额度。我们将把本月的 Robux 减去你在本月已经拿到的额度，你将拿到的总额为：{robuxAmount}。{newLine}{newLine}\n要了解更多信息，请前往你的 Roblox 收件箱。";
+		return "å³æ—¥èµ·ï¼Œä½ åœ¨æ›´æ–°è®¢é˜…çš„å½“å¤©å°†ç›´æŽ¥èŽ·å¾—ä¸€æ•´ä¸ªæœˆçš„ Robux é¢åº¦ã€‚æˆ‘ä»¬å°†æŠŠæœ¬æœˆçš„ Robux å‡åŽ»ä½ åœ¨æœ¬æœˆå·²ç»æ‹¿åˆ°çš„é¢åº¦ï¼Œä½ å°†æ‹¿åˆ°çš„æ€»é¢ä¸ºï¼š{robuxAmount}ã€‚{newLine}{newLine}\nè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ä½ çš„ Roblox æ”¶ä»¶ç®±ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingMigrationModalTitle()
 	{
-		return "Builders Club 现已更名为 Roblox Premium";
+		return "Builders Club çŽ°å·²æ›´åä¸º Roblox Premium";
 	}
 
 	protected override string _GetTemplateForHeadingMigrationTitle()
 	{
-		return "Builders Club 现已更名为 Roblox Premium";
+		return "Builders Club çŽ°å·²æ›´åä¸º Roblox Premium";
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using Roblox.PremiumFeatures.Interfaces;
+﻿using Roblox.PremiumFeatures.Interfaces;
+namespace Roblox.Platform.PremiumFeatures.Implementation {
+    /// <inheritdoc />
 
-namespace Roblox.PremiumFeatures.Implementation;
-
-/// <inheritdoc />
 public class RobuxStipendQuantityTypeFactory : IRobuxStipendQuantityTypeFactory
 {
 	/// <inheritdoc />
@@ -50,4 +49,7 @@ public class RobuxStipendQuantityTypeFactory : IRobuxStipendQuantityTypeFactory
 		}
 		return null;
 	}
+}
+
+
 }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading;
@@ -8,10 +8,9 @@ using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
 using Roblox.Localization.Client.Properties;
 using Roblox.RequestContext;
+namespace Roblox.Platform.Localization.Clientpublic {
+    class LocalizationClient : ILocalizationClient
 
-namespace Roblox.Localization.Client;
-
-public class LocalizationClient : ILocalizationClient
 {
     private readonly IServiceRequestSender _ServiceRequestSender;
 
@@ -261,4 +260,7 @@ public class LocalizationClient : ILocalizationClient
             ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled
         };
     }
+}
+
+
 }

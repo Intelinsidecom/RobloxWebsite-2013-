@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -6,10 +6,9 @@ using System.Diagnostics.CodeAnalysis;
 using Roblox.Common;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Moderation.Entities {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Moderation.Entities;
-
-[ExcludeFromCodeCoverage]
 internal class ModerationLocaleDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxModerationNew;
@@ -128,4 +127,7 @@ internal class ModerationLocaleDAL
 		};
 		return RobloxDatabase.RobloxModerationNew.GetOrCreate("ModerationLocales_GetOrCreateModerationLocale", BuildDAL, queryParameters);
 	}
+}
+
+
 }

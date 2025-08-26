@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IContactUpsellResources : ITranslationResources
 
-public interface IContactUpsellResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.AddEmail"
@@ -484,4 +484,7 @@ public interface IContactUpsellResources : ITranslationResources
 	/// English String: "Code must be {number} digits"
 	/// </summary>
 	string ResponseIncorrectCodeLength(string number);
+}
+
+
 }

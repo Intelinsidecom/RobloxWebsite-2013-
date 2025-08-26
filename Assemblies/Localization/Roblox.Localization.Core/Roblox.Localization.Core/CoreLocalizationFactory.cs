@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.EventLog;
 using Roblox.Platform.Localization.Core.Properties;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 public class CoreLocalizationFactory
 {
 	private readonly Lazy<ObservedLocaleEntityFactory> _ObservedLocaleEntityFactory = new Lazy<ObservedLocaleEntityFactory>();
@@ -30,4 +29,7 @@ public class CoreLocalizationFactory
 	{
 		return new CoreLocalizationBuilder(_ObservedLocaleEntityFactory.Value, _LanguageEntityFactory.Value, _LocaleParser.Value);
 	}
+}
+
+
 }

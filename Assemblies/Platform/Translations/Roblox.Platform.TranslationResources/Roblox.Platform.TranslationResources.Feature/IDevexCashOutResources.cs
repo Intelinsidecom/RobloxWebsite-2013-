@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IDevexCashOutResources : ITranslationResources
 
-public interface IDevexCashOutResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "CashOutForm.CashOutSubmit"
@@ -175,4 +175,7 @@ public interface IDevexCashOutResources : ITranslationResources
 	/// English String: "I have read and agree to the {linkStart}Terms of Use{linkEnd}"
 	/// </summary>
 	string CashOutFormTermsOfService(string linkStart, string linkEnd);
+}
+
+
 }

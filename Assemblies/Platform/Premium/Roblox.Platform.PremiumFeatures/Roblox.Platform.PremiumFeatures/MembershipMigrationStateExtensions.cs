@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using Roblox.Common;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    static class MembershipMigrationStateExtensions
 
-namespace Roblox.PremiumFeatures;
-
-public static class MembershipMigrationStateExtensions
 {
 	private static readonly Dictionary<MembershipMigrationState, string> mapping;
 
@@ -19,4 +18,7 @@ public static class MembershipMigrationStateExtensions
 	{
 		return mapping[state];
 	}
+}
+
+
 }

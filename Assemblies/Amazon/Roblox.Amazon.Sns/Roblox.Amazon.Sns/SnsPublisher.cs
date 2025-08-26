@@ -236,7 +236,6 @@ public class SnsPublisher : ISnsPublisher, IDisposable
 		config.CircuitBreakerPolicyConfig.RetryInterval = defaultSettings.CircuitBreakerRetryInterval;
 		config.CircuitBreakerPolicyConfig.FailuresAllowedBeforeTrip = defaultSettings.FailuresAllowedBeforeCircuitBreakerTrip;
 		config.IsAsyncRequestTimeoutEnabled = defaultSettings.IsAsyncRequestTimeoutEnabled;
-		((ClientConfig)config).ReadWriteTimeout = defaultSettings.ReadWriteTimeout;
 		((ClientConfig)config).Timeout = defaultSettings.RequestTimeout;
 		BasicAWSCredentials credentials = new BasicAWSCredentials(publisherConfig.AwsAccessKey, publisherConfig.AwsSecretKey);
 		return new SnsRegionPublisher(_SnsClientFactory.Create((AWSCredentials)(object)credentials, config), snsTopicArn ?? publisherConfig.AwsPrimarySnsTopicArn, regionEndpoint ?? publisherConfig.AwsPrimaryRegionEndpoint);

@@ -1,8 +1,7 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// A struct responsible for holding <see cref="T:Roblox.Platform.Moderation.SerializableQueueMetrics" />s for a particular locale.
 /// IMPORTANT: Please do not update the JsonProperty on any field since it is being used by the frontend.
 /// </summary>
@@ -43,4 +42,7 @@ public struct SerializableLocaleMetrics
 	/// </summary>
 	[JsonProperty("players")]
 	public SerializableQueueMetrics Punishments { get; set; }
+}
+
+
 }

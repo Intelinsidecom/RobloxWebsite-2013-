@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Event Arguments for authentication session validation failures.
 /// </summary>
 public class SessionValidationFailureEventArgs : WebEventArgs
@@ -10,3 +11,12 @@ public class SessionValidationFailureEventArgs : WebEventArgs
 	/// </summary>
 	public byte CookieValidationStatus { get; set; }
 }
+
+
+}
+
+
+
+
+
+

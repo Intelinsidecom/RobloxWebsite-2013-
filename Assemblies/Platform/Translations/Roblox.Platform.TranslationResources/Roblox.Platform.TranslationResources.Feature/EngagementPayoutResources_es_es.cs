@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides EngagementPayoutResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class EngagementPayoutResources_es_es : EngagementPayoutResources_en_us
 	/// Key: "Description.EngagementPayoutSubtitle"
 	/// English String: "Engagement score and payout based on engagement of monetized users."
 	/// </summary>
-	public override string DescriptionEngagementPayoutSubtitle => "El puntaje de compromiso y los pagos se basan en participación de los usuarios que monetizan.";
+	public override string DescriptionEngagementPayoutSubtitle => "El puntaje de compromiso y los pagos se basan en participaciÃ³n de los usuarios que monetizan.";
 
 	/// <summary>
 	/// Key: "Description.EngagementRobuxEarned"
@@ -67,7 +67,7 @@ internal class EngagementPayoutResources_es_es : EngagementPayoutResources_en_us
 
 	protected override string _GetTemplateForDescriptionEngagementPayoutSubtitle()
 	{
-		return "El puntaje de compromiso y los pagos se basan en participación de los usuarios que monetizan.";
+		return "El puntaje de compromiso y los pagos se basan en participaciÃ³n de los usuarios que monetizan.";
 	}
 
 	protected override string _GetTemplateForDescriptionEngagementRobuxEarned()
@@ -109,4 +109,7 @@ internal class EngagementPayoutResources_es_es : EngagementPayoutResources_en_us
 	{
 		return "Semanal";
 	}
+}
+
+
 }

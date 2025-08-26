@@ -1,8 +1,7 @@
 using System;
+namespace Roblox.Platform.Users.Interfaces {
+    public interface ICountryModel
 
-namespace Roblox.Users.Interfaces;
-
-public interface ICountryModel
 {
 	byte ID { get; }
 
@@ -15,4 +14,7 @@ public interface ICountryModel
 	DateTime Created { get; }
 
 	DateTime Updated { get; }
+}
+
+
 }

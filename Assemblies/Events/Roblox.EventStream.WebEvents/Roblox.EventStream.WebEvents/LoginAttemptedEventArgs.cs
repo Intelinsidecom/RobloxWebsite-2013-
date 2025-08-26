@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class LoginAttemptedEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class LoginAttemptedEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The context for the event
@@ -24,3 +24,12 @@ public class LoginAttemptedEventArgs : WebEventArgs
 	/// </summary>
 	public DateTime EventTime { get; set; }
 }
+
+
+}
+
+
+
+
+
+

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class FeedsResources_en_us : TranslationResourcesBase, IFeedsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class FeedsResources_en_us : TranslationResourcesBase, IFeedsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -234,4 +233,7 @@ internal class FeedsResources_en_us : TranslationResourcesBase, IFeedsResources,
 	{
 		return "Nearly all Roblox games are built by players like you. Here are some of our favorites:";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class PrivateSalesResourceFactory
 
-internal static class PrivateSalesResourceFactory
 {
 	public const string FullNamespace = "Feature.PrivateSales";
 
@@ -21,4 +21,7 @@ internal static class PrivateSalesResourceFactory
 			_ => new PrivateSalesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

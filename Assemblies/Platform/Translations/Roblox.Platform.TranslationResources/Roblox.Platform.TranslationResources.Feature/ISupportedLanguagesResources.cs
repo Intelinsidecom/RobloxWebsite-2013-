@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ISupportedLanguagesResources : ITranslationResources
 
-public interface ISupportedLanguagesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Clear"
@@ -215,4 +215,7 @@ public interface ISupportedLanguagesResources : ITranslationResources
 	/// English String: "Localization Status{lineBreak}({stringCount} strings)"
 	/// </summary>
 	string LabelLocalizationStatus(string lineBreak, string stringCount);
+}
+
+
 }

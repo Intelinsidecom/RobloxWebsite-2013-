@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides InventoryResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,14 +11,14 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// Call to action button for the user to get more items or assets
 	/// English String: "Get More"
 	/// </summary>
-	public override string ActionGetMore => "Obtener más";
+	public override string ActionGetMore => "Obtener mÃ¡s";
 
 	/// <summary>
 	/// Key: "Heading.Category"
 	/// These categories include different item and asset types such as Accessories, Meshes, Badges, Audio assets, and Pants
 	/// English String: "Category"
 	/// </summary>
-	public override string HeadingCategory => "Categoría";
+	public override string HeadingCategory => "CategorÃ­a";
 
 	/// <summary>
 	/// Key: "Heading.Inventory"
@@ -39,7 +39,7 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// These subcategories include different sub-types of asset types. The subcategories under Accessories could be Hats, Hair, and Face.
 	/// English String: "Subcategory"
 	/// </summary>
-	public override string HeadingSubcategory => "Subcategoría";
+	public override string HeadingSubcategory => "SubcategorÃ­a";
 
 	/// <summary>
 	/// Key: "Label.BodyParts"
@@ -57,7 +57,7 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// Key: "Label.CreatedByMe"
 	/// English String: "Created by Me"
 	/// </summary>
-	public override string LabelCreatedByMe => "Creados por mí";
+	public override string LabelCreatedByMe => "Creados por mÃ­";
 
 	/// <summary>
 	/// Key: "Label.MyGames"
@@ -119,7 +119,7 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// Key: "Message.TryCatalogForItems"
 	/// English String: "Try using the catalog to find new items."
 	/// </summary>
-	public override string MessageTryCatalogForItems => "Prueba a utilizar el catálogo para encontrar nuevos objetos.";
+	public override string MessageTryCatalogForItems => "Prueba a utilizar el catÃ¡logo para encontrar nuevos objetos.";
 
 	/// <summary>
 	/// Key: "Message.TryLibraryForItems"
@@ -131,13 +131,13 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// Key: "Message.UserHasNoFavoritesCategory"
 	/// English String: "This user has not favorited items in this category."
 	/// </summary>
-	public override string MessageUserHasNoFavoritesCategory => "Este usuario no ha añadido a sus favoritos ningún objeto de esta categoría.";
+	public override string MessageUserHasNoFavoritesCategory => "Este usuario no ha aÃ±adido a sus favoritos ningÃºn objeto de esta categorÃ­a.";
 
 	/// <summary>
 	/// Key: "Message.UserHasNoItemsCategory"
 	/// English String: "This user doesn't have items in this category."
 	/// </summary>
-	public override string MessageUserHasNoItemsCategory => "Este usuario no tiene objetos en esta categoría.";
+	public override string MessageUserHasNoItemsCategory => "Este usuario no tiene objetos en esta categorÃ­a.";
 
 	/// <summary>
 	/// Key: "Message.UserInventoryHidden"
@@ -149,13 +149,13 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// Key: "Message.YouHaveNoFavoritesCategory"
 	/// English String: "You have not favorited items in this category."
 	/// </summary>
-	public override string MessageYouHaveNoFavoritesCategory => "No has añadido a tus favoritos ningún objeto de esta categoría.";
+	public override string MessageYouHaveNoFavoritesCategory => "No has aÃ±adido a tus favoritos ningÃºn objeto de esta categorÃ­a.";
 
 	/// <summary>
 	/// Key: "Message.YouHaveNoItemsCategory"
 	/// English String: "You don't have items in this category."
 	/// </summary>
-	public override string MessageYouHaveNoItemsCategory => "No tienes objetos en esta categoría.";
+	public override string MessageYouHaveNoItemsCategory => "No tienes objetos en esta categorÃ­a.";
 
 	public InventoryResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -164,12 +164,12 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForActionGetMore()
 	{
-		return "Obtener más";
+		return "Obtener mÃ¡s";
 	}
 
 	protected override string _GetTemplateForHeadingCategory()
 	{
-		return "Categoría";
+		return "CategorÃ­a";
 	}
 
 	protected override string _GetTemplateForHeadingInventory()
@@ -184,7 +184,7 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForHeadingSubcategory()
 	{
-		return "Subcategoría";
+		return "SubcategorÃ­a";
 	}
 
 	/// <summary>
@@ -214,7 +214,7 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForLabelCreatedByMe()
 	{
-		return "Creados por mí";
+		return "Creados por mÃ­";
 	}
 
 	protected override string _GetTemplateForLabelMyGames()
@@ -284,12 +284,12 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageExploreCatalogForItems(string itemsPlural)
 	{
-		return $"¡Explora el catálogo para encontrar más {itemsPlural}!";
+		return $"Â¡Explora el catÃ¡logo para encontrar mÃ¡s {itemsPlural}!";
 	}
 
 	protected override string _GetTemplateForMessageExploreCatalogForItems()
 	{
-		return "¡Explora el catálogo para encontrar más {itemsPlural}!";
+		return "Â¡Explora el catÃ¡logo para encontrar mÃ¡s {itemsPlural}!";
 	}
 
 	/// <summary>
@@ -299,17 +299,17 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageExploreLibraryForItems(string itemsPlural)
 	{
-		return $"¡Explora la biblioteca para encontrar más {itemsPlural}!";
+		return $"Â¡Explora la biblioteca para encontrar mÃ¡s {itemsPlural}!";
 	}
 
 	protected override string _GetTemplateForMessageExploreLibraryForItems()
 	{
-		return "¡Explora la biblioteca para encontrar más {itemsPlural}!";
+		return "Â¡Explora la biblioteca para encontrar mÃ¡s {itemsPlural}!";
 	}
 
 	protected override string _GetTemplateForMessageTryCatalogForItems()
 	{
-		return "Prueba a utilizar el catálogo para encontrar nuevos objetos.";
+		return "Prueba a utilizar el catÃ¡logo para encontrar nuevos objetos.";
 	}
 
 	/// <summary>
@@ -319,12 +319,12 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageTryCatalogLink(string startLink, string endLink)
 	{
-		return $"Prueba a utilizar el {startLink}Catálogo{endLink} para encontrar nuevos objetos.";
+		return $"Prueba a utilizar el {startLink}CatÃ¡logo{endLink} para encontrar nuevos objetos.";
 	}
 
 	protected override string _GetTemplateForMessageTryCatalogLink()
 	{
-		return "Prueba a utilizar el {startLink}Catálogo{endLink} para encontrar nuevos objetos.";
+		return "Prueba a utilizar el {startLink}CatÃ¡logo{endLink} para encontrar nuevos objetos.";
 	}
 
 	protected override string _GetTemplateForMessageTryLibraryForItems()
@@ -349,7 +349,7 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForMessageUserHasNoFavoritesCategory()
 	{
-		return "Este usuario no ha añadido a sus favoritos ningún objeto de esta categoría.";
+		return "Este usuario no ha aÃ±adido a sus favoritos ningÃºn objeto de esta categorÃ­a.";
 	}
 
 	/// <summary>
@@ -369,7 +369,7 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForMessageUserHasNoItemsCategory()
 	{
-		return "Este usuario no tiene objetos en esta categoría.";
+		return "Este usuario no tiene objetos en esta categorÃ­a.";
 	}
 
 	protected override string _GetTemplateForMessageUserInventoryHidden()
@@ -384,17 +384,17 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageUserNotFavoritedItems(string itemsPlural)
 	{
-		return $"Este usuario no ha añadido {itemsPlural} a sus favoritos.";
+		return $"Este usuario no ha aÃ±adido {itemsPlural} a sus favoritos.";
 	}
 
 	protected override string _GetTemplateForMessageUserNotFavoritedItems()
 	{
-		return "Este usuario no ha añadido {itemsPlural} a sus favoritos.";
+		return "Este usuario no ha aÃ±adido {itemsPlural} a sus favoritos.";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNoFavoritesCategory()
 	{
-		return "No has añadido a tus favoritos ningún objeto de esta categoría.";
+		return "No has aÃ±adido a tus favoritos ningÃºn objeto de esta categorÃ­a.";
 	}
 
 	/// <summary>
@@ -414,7 +414,7 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForMessageYouHaveNoItemsCategory()
 	{
-		return "No tienes objetos en esta categoría.";
+		return "No tienes objetos en esta categorÃ­a.";
 	}
 
 	/// <summary>
@@ -424,11 +424,14 @@ internal class InventoryResources_es_es : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageYouNotFavoritedItems(string itemsPlural)
 	{
-		return $"No has añadido {itemsPlural} a tus favoritos.";
+		return $"No has aÃ±adido {itemsPlural} a tus favoritos.";
 	}
 
 	protected override string _GetTemplateForMessageYouNotFavoritedItems()
 	{
-		return "No has añadido {itemsPlural} a tus favoritos.";
+		return "No has aÃ±adido {itemsPlural} a tus favoritos.";
 	}
+}
+
+
 }

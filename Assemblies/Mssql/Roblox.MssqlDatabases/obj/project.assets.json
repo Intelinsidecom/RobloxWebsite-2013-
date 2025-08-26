@@ -2,10 +2,11 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Azure.Core/1.35.0": {
+      "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "System.ClientModel": "1.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.1",
           "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
@@ -24,12 +25,12 @@
           }
         }
       },
-      "Azure.Identity/1.10.3": {
+      "Azure.Identity/1.11.4": {
         "type": "package",
         "dependencies": {
-          "Azure.Core": "1.35.0",
-          "Microsoft.Identity.Client": "4.56.0",
-          "Microsoft.Identity.Client.Extensions.Msal": "4.56.0",
+          "Azure.Core": "1.38.0",
+          "Microsoft.Identity.Client": "4.61.3",
+          "Microsoft.Identity.Client.Extensions.Msal": "4.61.3",
           "System.Memory": "4.5.4",
           "System.Security.Cryptography.ProtectedData": "4.7.0",
           "System.Text.Json": "4.7.2",
@@ -71,12 +72,12 @@
           "lib/netstandard2.0/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Data.SqlClient/5.2.0": {
+      "Microsoft.Data.SqlClient/5.2.2": {
         "type": "package",
         "dependencies": {
-          "Azure.Identity": "1.10.3",
+          "Azure.Identity": "1.11.4",
           "Microsoft.Data.SqlClient.SNI.runtime": "5.2.0",
-          "Microsoft.Identity.Client": "4.56.0",
+          "Microsoft.Identity.Client": "4.61.3",
           "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0",
           "Microsoft.SqlServer.Server": "1.0.0",
@@ -165,10 +166,11 @@
           }
         }
       },
-      "Microsoft.Identity.Client/4.56.0": {
+      "Microsoft.Identity.Client/4.61.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "6.22.0"
+          "Microsoft.IdentityModel.Abstractions": "6.35.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Identity.Client.dll": {
@@ -181,10 +183,10 @@
           }
         }
       },
-      "Microsoft.Identity.Client.Extensions.Msal/4.56.0": {
+      "Microsoft.Identity.Client.Extensions.Msal/4.61.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "4.56.0",
+          "Microsoft.Identity.Client": "4.61.3",
           "System.IO.FileSystem.AccessControl": "5.0.0",
           "System.Security.Cryptography.ProtectedData": "4.5.0"
         },
@@ -415,14 +417,31 @@
           }
         }
       },
-      "System.Configuration.ConfigurationManager/4.7.0": {
+      "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.7.0",
-          "System.Security.Permissions": "4.7.0"
+          "System.Memory.Data": "1.0.2",
+          "System.Text.Json": "4.7.2"
         },
         "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/netstandard2.0/System.ClientModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ClientModel.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "6.0.0",
+          "System.Security.Permissions": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
@@ -658,13 +677,13 @@
           "lib/netstandard1.5/System.Runtime.Loader.dll": {}
         }
       },
-      "System.Security.AccessControl/5.0.0": {
+      "System.Security.AccessControl/6.0.0": {
         "type": "package",
         "dependencies": {
           "System.Security.Principal.Windows": "5.0.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
         },
@@ -674,7 +693,7 @@
           }
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll": {
+          "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -699,13 +718,13 @@
           }
         }
       },
-      "System.Security.Cryptography.ProtectedData/4.7.0": {
+      "System.Security.Cryptography.ProtectedData/6.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.3"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
             "related": ".xml"
           }
         },
@@ -721,13 +740,13 @@
           }
         }
       },
-      "System.Security.Permissions/4.7.0": {
+      "System.Security.Permissions/6.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.AccessControl": "4.7.0"
+          "System.Security.AccessControl": "6.0.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.Permissions.dll": {
+          "lib/netstandard2.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
@@ -866,6 +885,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
+          "Roblox.EventLog": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -873,6 +893,16 @@
         },
         "runtime": {
           "bin/placeholder/Roblox.Configuration.dll": {}
+        }
+      },
+      "Roblox.EventLog/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
         }
       },
       "Roblox.Instrumentation/1.0.0": {
@@ -892,9 +922,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Data.SqlClient": "5.2.0",
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Instrumentation": "1.0.0",
-          "Roblox.Sentinels": "1.0.0"
+          "Roblox.Sentinels": "1.0.0",
+          "System.Data.SqlClient": "4.9.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Mssql.dll": {}
@@ -916,42 +947,38 @@
     }
   },
   "libraries": {
-    "Azure.Core/1.35.0": {
-      "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
+    "Azure.Core/1.38.0": {
+      "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
-      "path": "azure.core/1.35.0",
+      "path": "azure.core/1.38.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.core.1.35.0.nupkg.sha512",
+        "azure.core.1.38.0.nupkg.sha512",
         "azure.core.nuspec",
         "azureicon.png",
         "lib/net461/Azure.Core.dll",
         "lib/net461/Azure.Core.xml",
         "lib/net472/Azure.Core.dll",
         "lib/net472/Azure.Core.xml",
-        "lib/net5.0/Azure.Core.dll",
-        "lib/net5.0/Azure.Core.xml",
         "lib/net6.0/Azure.Core.dll",
         "lib/net6.0/Azure.Core.xml",
-        "lib/netcoreapp2.1/Azure.Core.dll",
-        "lib/netcoreapp2.1/Azure.Core.xml",
         "lib/netstandard2.0/Azure.Core.dll",
         "lib/netstandard2.0/Azure.Core.xml"
       ]
     },
-    "Azure.Identity/1.10.3": {
-      "sha512": "l1Xm2MWOF2Mzcwuarlw8kWQXLZk3UeB55aQXVyjj23aBfDwOZ3gu5GP2kJ6KlmZeZv2TCzw7x4L3V36iNr3gww==",
+    "Azure.Identity/1.11.4": {
+      "sha512": "Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "type": "package",
-      "path": "azure.identity/1.10.3",
+      "path": "azure.identity/1.11.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.identity.1.10.3.nupkg.sha512",
+        "azure.identity.1.11.4.nupkg.sha512",
         "azure.identity.nuspec",
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
@@ -1051,10 +1078,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.Data.SqlClient/5.2.0": {
-      "sha512": "3alfyqRN3ELRtdvU1dGtLBRNQqprr3TJ0WrUJfMISPwg1nPUN2P3Lelah68IKWuV27Ceb7ig95hWNHFTSXfxMg==",
+    "Microsoft.Data.SqlClient/5.2.2": {
+      "sha512": "mtoeRMh7F/OA536c/Cnh8L4H0uLSKB5kSmoi54oN7Fp0hNJDy22IqyMhaMH4PkDCqI7xL//Fvg9ldtuPHG0h5g==",
       "type": "package",
-      "path": "microsoft.data.sqlclient/5.2.0",
+      "path": "microsoft.data.sqlclient/5.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1119,7 +1146,7 @@
         "lib/netstandard2.1/ru/Microsoft.Data.SqlClient.resources.dll",
         "lib/netstandard2.1/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
         "lib/netstandard2.1/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
-        "microsoft.data.sqlclient.5.2.0.nupkg.sha512",
+        "microsoft.data.sqlclient.5.2.2.nupkg.sha512",
         "microsoft.data.sqlclient.nuspec",
         "ref/net462/Microsoft.Data.SqlClient.dll",
         "ref/net462/Microsoft.Data.SqlClient.xml",
@@ -1159,52 +1186,40 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
-    "Microsoft.Identity.Client/4.56.0": {
-      "sha512": "rr4zbidvHy9r4NvOAs5hdd964Ao2A0pAeFBJKR95u1CJAVzbd1p6tPTXUZ+5ld0cfThiVSGvz6UHwY6JjraTpA==",
+    "Microsoft.Identity.Client/4.61.3": {
+      "sha512": "naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA==",
       "type": "package",
-      "path": "microsoft.identity.client/4.56.0",
+      "path": "microsoft.identity.client/4.61.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.dll",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.xml",
-        "lib/monoandroid90/Microsoft.Identity.Client.dll",
-        "lib/monoandroid90/Microsoft.Identity.Client.xml",
-        "lib/net45/Microsoft.Identity.Client.dll",
-        "lib/net45/Microsoft.Identity.Client.xml",
-        "lib/net461/Microsoft.Identity.Client.dll",
-        "lib/net461/Microsoft.Identity.Client.xml",
+        "README.md",
+        "lib/net462/Microsoft.Identity.Client.dll",
+        "lib/net462/Microsoft.Identity.Client.xml",
         "lib/net6.0-android31.0/Microsoft.Identity.Client.dll",
         "lib/net6.0-android31.0/Microsoft.Identity.Client.xml",
         "lib/net6.0-ios15.4/Microsoft.Identity.Client.dll",
         "lib/net6.0-ios15.4/Microsoft.Identity.Client.xml",
-        "lib/net6.0-windows7.0/Microsoft.Identity.Client.dll",
-        "lib/net6.0-windows7.0/Microsoft.Identity.Client.xml",
         "lib/net6.0/Microsoft.Identity.Client.dll",
         "lib/net6.0/Microsoft.Identity.Client.xml",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.xml",
         "lib/netstandard2.0/Microsoft.Identity.Client.dll",
         "lib/netstandard2.0/Microsoft.Identity.Client.xml",
-        "lib/uap10.0.17763/Microsoft.Identity.Client.dll",
-        "lib/uap10.0.17763/Microsoft.Identity.Client.pri",
-        "lib/uap10.0.17763/Microsoft.Identity.Client.xml",
-        "lib/xamarinios10/Microsoft.Identity.Client.dll",
-        "lib/xamarinios10/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.56.0.nupkg.sha512",
+        "microsoft.identity.client.4.61.3.nupkg.sha512",
         "microsoft.identity.client.nuspec"
       ]
     },
-    "Microsoft.Identity.Client.Extensions.Msal/4.56.0": {
-      "sha512": "H12YAzEGK55vZ+QpxUzozhW8ZZtgPDuWvgA0JbdIR9UhMUplj29JhIgE2imuH8W2Nw9D8JKygR1uxRFtpSNcrg==",
+    "Microsoft.Identity.Client.Extensions.Msal/4.61.3": {
+      "sha512": "PWnJcznrSGr25MN8ajlc2XIDW4zCFu0U6FkpaNLEWLgd1NgFCp5uDY3mqLDgM8zCN8hqj8yo5wHYfLB2HjcdGw==",
       "type": "package",
-      "path": "microsoft.identity.client.extensions.msal/4.56.0",
+      "path": "microsoft.identity.client.extensions.msal/4.61.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.xml",
         "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
         "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",
+        "microsoft.identity.client.extensions.msal.4.61.3.nupkg.sha512",
         "microsoft.identity.client.extensions.msal.nuspec"
       ]
     },
@@ -1655,27 +1670,47 @@
         "version.txt"
       ]
     },
-    "System.Configuration.ConfigurationManager/4.7.0": {
-      "sha512": "/anOTeSZCNNI2zDilogWrZ8pNqCmYbzGNexUnNhjW8k0sHqEZ2nHJBp147jBV3hGYswu5lINpNg1vxR7bnqvVA==",
+    "System.ClientModel/1.0.0": {
+      "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/4.7.0",
+      "path": "system.clientmodel/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "CHANGELOG.md",
+        "DotNetPackageIcon.png",
+        "README.md",
+        "lib/net6.0/System.ClientModel.dll",
+        "lib/net6.0/System.ClientModel.xml",
+        "lib/netstandard2.0/System.ClientModel.dll",
+        "lib/netstandard2.0/System.ClientModel.xml",
+        "system.clientmodel.1.0.0.nupkg.sha512",
+        "system.clientmodel.nuspec"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/6.0.1": {
+      "sha512": "jXw9MlUu/kRfEU0WyTptAVueupqIeE3/rl0EZDMlf8pcvJnitQ8HeVEp69rZdaStXwTV72boi/Bhw8lOeO+U2w==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Configuration.ConfigurationManager.dll",
         "lib/net461/System.Configuration.ConfigurationManager.xml",
+        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "ref/net461/System.Configuration.ConfigurationManager.dll",
-        "ref/net461/System.Configuration.ConfigurationManager.xml",
-        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.dll",
+        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.6.0.1.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Data.SqlClient/4.9.0": {
@@ -2296,51 +2331,33 @@
         "system.runtime.loader.nuspec"
       ]
     },
-    "System.Security.AccessControl/5.0.0": {
-      "sha512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+    "System.Security.AccessControl/6.0.0": {
+      "sha512": "AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ==",
       "type": "package",
-      "path": "system.security.accesscontrol/5.0.0",
+      "path": "system.security.accesscontrol/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net46/System.Security.AccessControl.dll",
+        "buildTransitive/netcoreapp2.0/System.Security.AccessControl.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Security.AccessControl.dll",
         "lib/net461/System.Security.AccessControl.xml",
-        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/net6.0/System.Security.AccessControl.dll",
+        "lib/net6.0/System.Security.AccessControl.xml",
         "lib/netstandard2.0/System.Security.AccessControl.dll",
         "lib/netstandard2.0/System.Security.AccessControl.xml",
-        "lib/uap10.0.16299/_._",
-        "ref/net46/System.Security.AccessControl.dll",
-        "ref/net461/System.Security.AccessControl.dll",
-        "ref/net461/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/System.Security.AccessControl.dll",
-        "ref/netstandard1.3/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
-        "ref/netstandard2.0/System.Security.AccessControl.dll",
-        "ref/netstandard2.0/System.Security.AccessControl.xml",
-        "ref/uap10.0.16299/_._",
-        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
         "runtimes/win/lib/net461/System.Security.AccessControl.dll",
         "runtimes/win/lib/net461/System.Security.AccessControl.xml",
-        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
-        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
-        "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.accesscontrol.5.0.0.nupkg.sha512",
+        "runtimes/win/lib/net6.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net6.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.xml",
+        "system.security.accesscontrol.6.0.0.nupkg.sha512",
         "system.security.accesscontrol.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Security.Cryptography.Cng/5.0.0": {
@@ -2424,76 +2441,68 @@
         "version.txt"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/4.7.0": {
-      "sha512": "ehYW0m9ptxpGWvE4zgqongBVWpSDU/JCFD4K7krxkQwSz/sFQjEXCUqpvencjy6DYDbn7Ig09R8GFffu8TtneQ==",
+    "System.Security.Cryptography.ProtectedData/6.0.0": {
+      "sha512": "rp1gMNEZpvx9vP0JW0oHLxlf8oSiQgtno77Y4PLUBjSiDYoD77Y8uXHr1Ea5XG4/pIKhqAdxZ8v8OTUtqo9PeQ==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/4.7.0",
+      "path": "system.security.cryptography.protecteddata/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net46/System.Security.Cryptography.ProtectedData.dll",
         "lib/net461/System.Security.Cryptography.ProtectedData.dll",
         "lib/net461/System.Security.Cryptography.ProtectedData.xml",
-        "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Security.Cryptography.ProtectedData.dll",
-        "ref/net461/System.Security.Cryptography.ProtectedData.dll",
-        "ref/net461/System.Security.Cryptography.ProtectedData.xml",
-        "ref/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.xml",
-        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
-        "system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Permissions/4.7.0": {
-      "sha512": "dkOV6YYVBnYRa15/yv004eCGRBVADXw8qRbbNiCn/XpdJSUXkkUeIvdvFHkvnko4CdKMqG8yRHC4ox83LSlMsQ==",
+    "System.Security.Permissions/6.0.0": {
+      "sha512": "T/uuc7AklkDoxmcJ7LGkyX1CcSviZuLCa4jg3PekfJ7SU0niF0IVTXwUiNVP9DSpzou2PpxJ+eNY2IfDM90ZCg==",
       "type": "package",
-      "path": "system.security.permissions/4.7.0",
+      "path": "system.security.permissions/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Security.Permissions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Security.Permissions.dll",
         "lib/net461/System.Security.Permissions.xml",
-        "lib/netcoreapp3.0/System.Security.Permissions.dll",
-        "lib/netcoreapp3.0/System.Security.Permissions.xml",
+        "lib/net5.0/System.Security.Permissions.dll",
+        "lib/net5.0/System.Security.Permissions.xml",
+        "lib/net6.0/System.Security.Permissions.dll",
+        "lib/net6.0/System.Security.Permissions.xml",
+        "lib/netcoreapp3.1/System.Security.Permissions.dll",
+        "lib/netcoreapp3.1/System.Security.Permissions.xml",
         "lib/netstandard2.0/System.Security.Permissions.dll",
         "lib/netstandard2.0/System.Security.Permissions.xml",
-        "ref/net461/System.Security.Permissions.dll",
-        "ref/net461/System.Security.Permissions.xml",
-        "ref/netcoreapp3.0/System.Security.Permissions.dll",
-        "ref/netcoreapp3.0/System.Security.Permissions.xml",
-        "ref/netstandard2.0/System.Security.Permissions.dll",
-        "ref/netstandard2.0/System.Security.Permissions.xml",
-        "system.security.permissions.4.7.0.nupkg.sha512",
+        "runtimes/win/lib/net461/System.Security.Permissions.dll",
+        "runtimes/win/lib/net461/System.Security.Permissions.xml",
+        "system.security.permissions.6.0.0.nupkg.sha512",
         "system.security.permissions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Security.Principal.Windows/5.0.0": {
@@ -2817,6 +2826,11 @@
       "path": "../../Configuration/Roblox.Configuration/Roblox.Configuration.csproj",
       "msbuildProject": "../../Configuration/Roblox.Configuration/Roblox.Configuration.csproj"
     },
+    "Roblox.EventLog/1.0.0": {
+      "type": "project",
+      "path": "../../Events/Roblox.EventLog/Roblox.EventLog.csproj",
+      "msbuildProject": "../../Events/Roblox.EventLog/Roblox.EventLog.csproj"
+    },
     "Roblox.Instrumentation/1.0.0": {
       "type": "project",
       "path": "../../Instrumentation/Roblox.Instrumentation/Roblox.Instrumentation.csproj",
@@ -2835,11 +2849,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Microsoft.Data.SqlClient >= 5.2.2",
       "NETStandard.Library >= 2.0.3",
       "Roblox.Configuration >= 1.0.0",
       "Roblox.Instrumentation >= 1.0.0",
       "Roblox.Mssql >= 1.0.0",
-      "System.Configuration.ConfigurationManager >= 4.7.0",
+      "System.Configuration.ConfigurationManager >= 6.0.1",
       "System.Data.SqlClient >= 4.9.0"
     ]
   },
@@ -2904,6 +2919,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.2.2, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -2912,7 +2931,7 @@
           },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
-            "version": "[4.7.0, )"
+            "version": "[6.0.1, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
@@ -2933,16 +2952,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: System.Configuration.ConfigurationManager from 6.0.1 to 4.7.0. Reference the package directly from the project to select a different version. \r\n Roblox.MssqlDatabases -> Roblox.Mssql -> Microsoft.Data.SqlClient 5.2.0 -> System.Configuration.ConfigurationManager (>= 6.0.1) \r\n Roblox.MssqlDatabases -> System.Configuration.ConfigurationManager (>= 4.7.0)",
-      "libraryId": "System.Configuration.ConfigurationManager",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

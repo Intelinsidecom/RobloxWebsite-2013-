@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FileUploadComponentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,58 +10,58 @@ internal class FileUploadComponentResources_zh_cjv : FileUploadComponentResource
 	/// Key: "Label.DragFile"
 	/// English String: "Drag a file here"
 	/// </summary>
-	public override string LabelDragFile => "拖拽文件至此处";
+	public override string LabelDragFile => "æ‹–æ‹½æ–‡ä»¶è‡³æ­¤å¤„";
 
 	/// <summary>
 	/// Key: "Label.DragImage"
 	/// English String: "Drag an image here"
 	/// </summary>
-	public override string LabelDragImage => "拖拽图像至此处";
+	public override string LabelDragImage => "æ‹–æ‹½å›¾åƒè‡³æ­¤å¤„";
 
 	/// <summary>
 	/// Key: "Label.DragImageOr"
 	/// English String: "Drag an image here or select a file to upload"
 	/// </summary>
-	public override string LabelDragImageOr => "拖拽图像至此处，或选择文件上传。";
+	public override string LabelDragImageOr => "æ‹–æ‹½å›¾åƒè‡³æ­¤å¤„ï¼Œæˆ–é€‰æ‹©æ–‡ä»¶ä¸Šä¼ ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoFileChosen"
 	/// English String: "No File Chosen"
 	/// </summary>
-	public override string LabelNoFileChosen => "未选择文件";
+	public override string LabelNoFileChosen => "æœªé€‰æ‹©æ–‡ä»¶";
 
 	/// <summary>
 	/// Key: "Label.Or"
 	/// label
 	/// English String: "Or"
 	/// </summary>
-	public override string LabelOr => "或";
+	public override string LabelOr => "æˆ–";
 
 	/// <summary>
 	/// Key: "Label.SelectFile"
 	/// English String: "Select a file"
 	/// </summary>
-	public override string LabelSelectFile => "选择一个文件";
+	public override string LabelSelectFile => "é€‰æ‹©ä¸€ä¸ªæ–‡ä»¶";
 
 	/// <summary>
 	/// Key: "Label.SelectFromComputer"
 	/// label
 	/// English String: "Select an image from your computer"
 	/// </summary>
-	public override string LabelSelectFromComputer => "从你的电脑选择图像";
+	public override string LabelSelectFromComputer => "ä»Žä½ çš„ç”µè„‘é€‰æ‹©å›¾åƒ";
 
 	/// <summary>
 	/// Key: "Label.SelectFromDevice"
 	/// label
 	/// English String: "Select an image from your device"
 	/// </summary>
-	public override string LabelSelectFromDevice => "从你的设备选择图像";
+	public override string LabelSelectFromDevice => "ä»Žä½ çš„è®¾å¤‡é€‰æ‹©å›¾åƒ";
 
 	/// <summary>
 	/// Key: "Label.Upload"
 	/// English String: "Upload"
 	/// </summary>
-	public override string LabelUpload => "上传";
+	public override string LabelUpload => "ä¸Šä¼ ";
 
 	public FileUploadComponentResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -70,42 +70,42 @@ internal class FileUploadComponentResources_zh_cjv : FileUploadComponentResource
 
 	protected override string _GetTemplateForLabelDragFile()
 	{
-		return "拖拽文件至此处";
+		return "æ‹–æ‹½æ–‡ä»¶è‡³æ­¤å¤„";
 	}
 
 	protected override string _GetTemplateForLabelDragImage()
 	{
-		return "拖拽图像至此处";
+		return "æ‹–æ‹½å›¾åƒè‡³æ­¤å¤„";
 	}
 
 	protected override string _GetTemplateForLabelDragImageOr()
 	{
-		return "拖拽图像至此处，或选择文件上传。";
+		return "æ‹–æ‹½å›¾åƒè‡³æ­¤å¤„ï¼Œæˆ–é€‰æ‹©æ–‡ä»¶ä¸Šä¼ ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoFileChosen()
 	{
-		return "未选择文件";
+		return "æœªé€‰æ‹©æ–‡ä»¶";
 	}
 
 	protected override string _GetTemplateForLabelOr()
 	{
-		return "或";
+		return "æˆ–";
 	}
 
 	protected override string _GetTemplateForLabelSelectFile()
 	{
-		return "选择一个文件";
+		return "é€‰æ‹©ä¸€ä¸ªæ–‡ä»¶";
 	}
 
 	protected override string _GetTemplateForLabelSelectFromComputer()
 	{
-		return "从你的电脑选择图像";
+		return "ä»Žä½ çš„ç”µè„‘é€‰æ‹©å›¾åƒ";
 	}
 
 	protected override string _GetTemplateForLabelSelectFromDevice()
 	{
-		return "从你的设备选择图像";
+		return "ä»Žä½ çš„è®¾å¤‡é€‰æ‹©å›¾åƒ";
 	}
 
 	/// <summary>
@@ -114,17 +114,17 @@ internal class FileUploadComponentResources_zh_cjv : FileUploadComponentResource
 	/// </summary>
 	public override string LabelSelectImage(string deviceType)
 	{
-		return $"从你的 {deviceType} 选择图像";
+		return $"ä»Žä½ çš„ {deviceType} é€‰æ‹©å›¾åƒ";
 	}
 
 	protected override string _GetTemplateForLabelSelectImage()
 	{
-		return "从你的 {deviceType} 选择图像";
+		return "ä»Žä½ çš„ {deviceType} é€‰æ‹©å›¾åƒ";
 	}
 
 	protected override string _GetTemplateForLabelUpload()
 	{
-		return "上传";
+		return "ä¸Šä¼ ";
 	}
 
 	/// <summary>
@@ -133,11 +133,14 @@ internal class FileUploadComponentResources_zh_cjv : FileUploadComponentResource
 	/// </summary>
 	public override string MessageInvalidFile(string fileTypes)
 	{
-		return $"无效文件类型。必须是 {fileTypes} 文件。";
+		return $"æ— æ•ˆæ–‡ä»¶ç±»åž‹ã€‚å¿…é¡»æ˜¯ {fileTypes} æ–‡ä»¶ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidFile()
 	{
-		return "无效文件类型。必须是 {fileTypes} 文件。";
+		return "æ— æ•ˆæ–‡ä»¶ç±»åž‹ã€‚å¿…é¡»æ˜¯ {fileTypes} æ–‡ä»¶ã€‚";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class PremiumResourceFactory
 
-internal static class PremiumResourceFactory
 {
 	public const string FullNamespace = "Feature.Premium";
 
@@ -21,4 +21,7 @@ internal static class PremiumResourceFactory
 			_ => new PremiumResources_en_us(state), 
 		};
 	}
+}
+
+
 }

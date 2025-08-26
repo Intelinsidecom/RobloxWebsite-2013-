@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models;
-
-/// <summary>
 /// Membership Migration Model
 /// </summary>
 [DataContract]
@@ -26,4 +25,7 @@ public class MembershipMigrationModel
 
 	[DataMember(Name = "premiumFeatureName")]
 	public string PremiumFeatureName;
+}
+
+
 }

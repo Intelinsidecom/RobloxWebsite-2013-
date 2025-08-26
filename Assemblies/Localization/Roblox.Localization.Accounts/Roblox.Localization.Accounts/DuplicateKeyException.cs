@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Localization.Accountspublic {
+    class DuplicateKeyException : InvalidOperationException
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public class DuplicateKeyException : InvalidOperationException
 {
 	public DuplicateKeyException()
 	{
@@ -17,4 +16,7 @@ public class DuplicateKeyException : InvalidOperationException
 		: base(message, exception)
 	{
 	}
+}
+
+
 }

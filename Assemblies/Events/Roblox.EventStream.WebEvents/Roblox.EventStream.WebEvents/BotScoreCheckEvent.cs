@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class BotScoreCheckEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class BotScoreCheckEvent : WebEventBase
 {
 	private const string _Name = "botScoreCheck";
 
@@ -25,3 +25,12 @@ public class BotScoreCheckEvent : WebEventBase
 		AddEventArg("reason", args.Reason ?? "");
 	}
 }
+
+
+}
+
+
+
+
+
+

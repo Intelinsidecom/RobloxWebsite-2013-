@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+namespace Roblox.Platform.TextFilter {
+    class KeywordSearchQueryValidationResults : IKeywordSearchQueryValidationResults
 
-internal class KeywordSearchQueryValidationResults : IKeywordSearchQueryValidationResults
 {
 	public bool IsValid13Over { get; }
 
@@ -11,4 +11,7 @@ internal class KeywordSearchQueryValidationResults : IKeywordSearchQueryValidati
 		IsValid13Over = isValid13Over;
 		IsValidUnder13 = isValidUnder13;
 	}
+}
+
+
 }

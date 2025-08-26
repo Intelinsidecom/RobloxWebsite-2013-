@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Membership.Extensions</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -12,20 +12,20 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
+    <ProjectReference Include="..\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj">
       <Project>
       </Project>
       <Name>Roblox.Platform.Membership.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj">
+    <ProjectReference Include="..\..\TextFilter\Roblox.Platform.TextFilter.Client\Roblox.Platform.TextFilter.Client.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+    <ProjectReference Include="..\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\TextFilter\\Roblox.Platform.TextFilter\\Roblox.Platform.TextFilter.csproj">
+    <ProjectReference Include="..\..\TextFilter\Roblox.Platform.TextFilter\Roblox.Platform.TextFilter.csproj">
       <Project>
       </Project>
     </ProjectReference>

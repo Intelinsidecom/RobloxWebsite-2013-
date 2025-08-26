@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class SecurityNotificationResources_en_us : TranslationResourcesBase, ISecurityNotificationResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class SecurityNotificationResources_en_us : TranslationResourcesBase, ISecurityNotificationResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -75,4 +74,7 @@ internal class SecurityNotificationResources_en_us : TranslationResourcesBase, I
 	{
 		return "Important";
 	}
+}
+
+
 }

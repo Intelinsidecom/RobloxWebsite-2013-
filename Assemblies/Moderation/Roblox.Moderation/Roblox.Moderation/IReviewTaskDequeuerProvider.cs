@@ -1,8 +1,7 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderationpublic {
+    interface IReviewTaskDequeuerProvider<out TTask> where TTask : IReviewTask
 
-namespace Roblox.Platform.Moderation;
-
-public interface IReviewTaskDequeuerProvider<out TTask> where TTask : IReviewTask
 {
 	/// <summary>
 	/// Returns a ReviewTaskQueueTracker that is bound to the specified locale, priority, and TTask
@@ -11,4 +10,7 @@ public interface IReviewTaskDequeuerProvider<out TTask> where TTask : IReviewTas
 	/// <param name="priority">The specific priority level of the queue to bind the dequeuer to</param>
 	/// <returns></returns>
 	IReviewTaskDequeuer<TTask> GetReviewTaskDequeuer(ISupportedLocaleIdentifier localeIdentifier, ModerationTaskPriority priority);
+}
+
+
 }

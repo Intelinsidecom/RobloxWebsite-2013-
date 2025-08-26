@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GroupsResources_en_us : TranslationResourcesBase, IGroupsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GroupsResources_en_us : TranslationResourcesBase, IGroupsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -4405,4 +4404,7 @@ internal class GroupsResources_en_us : TranslationResourcesBase, IGroupsResource
 	{
 		return "You aren't a member of the group specified.";
 	}
+}
+
+
 }

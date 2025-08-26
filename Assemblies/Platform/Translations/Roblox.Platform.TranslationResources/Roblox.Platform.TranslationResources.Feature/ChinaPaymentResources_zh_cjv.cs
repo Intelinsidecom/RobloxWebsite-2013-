@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ChinaPaymentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class ChinaPaymentResources_zh_cjv : ChinaPaymentResources_en_us, IChin
 	/// Key: "Heading.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingError => "错误";
+	public override string HeadingError => "é”™è¯¯";
 
 	/// <summary>
 	/// Key: "Message.ScriptNotLoadError"
 	/// English String: "We have a problem loading the Midas script now. Please try again later"
 	/// </summary>
-	public override string MessageScriptNotLoadError => "加载 Midas 脚本时遇到问题。请稍后重试。";
+	public override string MessageScriptNotLoadError => "åŠ è½½ Midas è„šæœ¬æ—¶é‡åˆ°é—®é¢˜ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SessionExpiredError"
 	/// English String: "Looks like your WeChat session is expired and we cannot process your request. Please log out and log in again."
 	/// </summary>
-	public override string MessageSessionExpiredError => "你的微信会话似乎已过期，我们无法处理你的请求。请退出登录并重试。";
+	public override string MessageSessionExpiredError => "ä½ çš„å¾®ä¿¡ä¼šè¯ä¼¼ä¹Žå·²è¿‡æœŸï¼Œæˆ‘ä»¬æ— æ³•å¤„ç†ä½ çš„è¯·æ±‚ã€‚è¯·é€€å‡ºç™»å½•å¹¶é‡è¯•ã€‚";
 
 	public ChinaPaymentResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -31,16 +31,19 @@ internal class ChinaPaymentResources_zh_cjv : ChinaPaymentResources_en_us, IChin
 
 	protected override string _GetTemplateForHeadingError()
 	{
-		return "错误";
+		return "é”™è¯¯";
 	}
 
 	protected override string _GetTemplateForMessageScriptNotLoadError()
 	{
-		return "加载 Midas 脚本时遇到问题。请稍后重试。";
+		return "åŠ è½½ Midas è„šæœ¬æ—¶é‡åˆ°é—®é¢˜ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSessionExpiredError()
 	{
-		return "你的微信会话似乎已过期，我们无法处理你的请求。请退出登录并重试。";
+		return "ä½ çš„å¾®ä¿¡ä¼šè¯ä¼¼ä¹Žå·²è¿‡æœŸï¼Œæˆ‘ä»¬æ— æ³•å¤„ç†ä½ çš„è¯·æ±‚ã€‚è¯·é€€å‡ºç™»å½•å¹¶é‡è¯•ã€‚";
 	}
+}
+
+
 }

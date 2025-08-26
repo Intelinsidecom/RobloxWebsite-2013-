@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ChinaPaymentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class ChinaPaymentResources_de_de : ChinaPaymentResources_en_us, IChina
 	/// Key: "Message.ScriptNotLoadError"
 	/// English String: "We have a problem loading the Midas script now. Please try again later"
 	/// </summary>
-	public override string MessageScriptNotLoadError => "Das Midas-Skript konnte nicht geladen werden. Bitte versuch es später erneut";
+	public override string MessageScriptNotLoadError => "Das Midas-Skript konnte nicht geladen werden. Bitte versuch es spÃ¤ter erneut";
 
 	/// <summary>
 	/// Key: "Message.SessionExpiredError"
@@ -36,11 +36,14 @@ internal class ChinaPaymentResources_de_de : ChinaPaymentResources_en_us, IChina
 
 	protected override string _GetTemplateForMessageScriptNotLoadError()
 	{
-		return "Das Midas-Skript konnte nicht geladen werden. Bitte versuch es später erneut";
+		return "Das Midas-Skript konnte nicht geladen werden. Bitte versuch es spÃ¤ter erneut";
 	}
 
 	protected override string _GetTemplateForMessageSessionExpiredError()
 	{
 		return "Deine WeChat-Sitzung ist abgelaufen und deine Anfrage konnte nicht bearbeitet werden. Bitte melde dich erneut ein und versuch es noch mal.";
 	}
+}
+
+
 }

@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class ConfigurePlaceEventArgs : WebEventArgs
 
-public class ConfigurePlaceEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The id of the universe of which root place being configured
@@ -47,3 +48,12 @@ public class ConfigurePlaceEventArgs : WebEventArgs
 	/// </summary>
 	public string FailureReason { get; set; }
 }
+
+
+}
+
+
+
+
+
+

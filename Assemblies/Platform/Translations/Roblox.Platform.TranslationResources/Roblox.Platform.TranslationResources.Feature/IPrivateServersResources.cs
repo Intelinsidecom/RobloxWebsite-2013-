@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPrivateServersResources : ITranslationResources
 
-public interface IPrivateServersResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.CreateVipServer"
@@ -145,4 +145,7 @@ public interface IPrivateServersResources : ITranslationResources
 	/// English String: "This game does not support {vipServersLink}."
 	/// </summary>
 	string LabelVipServersNotSupported(string vipServersLink);
+}
+
+
 }

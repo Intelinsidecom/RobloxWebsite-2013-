@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
@@ -7,10 +7,9 @@ using Roblox.Configuration;
 using Roblox.EventLog;
 using Roblox.Platform.Moderation.Properties;
 using Roblox.TrackingQueue;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// A base class for publishing various types of moderation tasks to the SQS queue. 
 /// This class centralizes on how the publishing Sqs client is created from config 
 /// settings, as well as the business logic of using the right client to publish a task 
@@ -119,4 +118,7 @@ internal abstract class ModerationTaskPublisherBase : ModerationTaskClientBase<I
 		}
 		BatchSenders.Clear();
 	}
+}
+
+
 }

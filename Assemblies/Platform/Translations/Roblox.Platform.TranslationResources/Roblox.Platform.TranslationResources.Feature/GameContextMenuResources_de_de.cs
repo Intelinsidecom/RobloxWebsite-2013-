@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameContextMenuResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -36,13 +36,13 @@ internal class GameContextMenuResources_de_de : GameContextMenuResources_en_us, 
 	/// The label in context menu that will direct translators for a game to crowdsource translation page
 	/// English String: "Translate this Game"
 	/// </summary>
-	public override string LabelTranslateThisGame => "Übersetze dieses Spiel";
+	public override string LabelTranslateThisGame => "Ãœbersetze dieses Spiel";
 
 	/// <summary>
 	/// Key: "LabelAddToProfile"
 	/// English String: "Add to profile"
 	/// </summary>
-	public override string LabelAddToProfile => "Zu Profil hinzufügen";
+	public override string LabelAddToProfile => "Zu Profil hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "LabelConfigureGame"
@@ -90,7 +90,7 @@ internal class GameContextMenuResources_de_de : GameContextMenuResources_en_us, 
 	/// Key: "LabelShutDownServersWarning"
 	/// English String: "Are you sure you want to shut down all servers for this place?"
 	/// </summary>
-	public override string LabelShutDownServersWarning => "Möchtest du wirklich alle Server für diesen Ort abschalten?";
+	public override string LabelShutDownServersWarning => "MÃ¶chtest du wirklich alle Server fÃ¼r diesen Ort abschalten?";
 
 	/// <summary>
 	/// Key: "MessageServerShutDownError"
@@ -125,12 +125,12 @@ internal class GameContextMenuResources_de_de : GameContextMenuResources_en_us, 
 
 	protected override string _GetTemplateForLabelTranslateThisGame()
 	{
-		return "Übersetze dieses Spiel";
+		return "Ãœbersetze dieses Spiel";
 	}
 
 	protected override string _GetTemplateForLabelAddToProfile()
 	{
-		return "Zu Profil hinzufügen";
+		return "Zu Profil hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGame()
@@ -170,11 +170,14 @@ internal class GameContextMenuResources_de_de : GameContextMenuResources_en_us, 
 
 	protected override string _GetTemplateForLabelShutDownServersWarning()
 	{
-		return "Möchtest du wirklich alle Server für diesen Ort abschalten?";
+		return "MÃ¶chtest du wirklich alle Server fÃ¼r diesen Ort abschalten?";
 	}
 
 	protected override string _GetTemplateForMessageServerShutDownError()
 	{
 		return "Server konnten nicht abgeschaltet werden.";
 	}
+}
+
+
 }

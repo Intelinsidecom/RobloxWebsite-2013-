@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models.Requests {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models.Requests;
-
-[DataContract]
 public class SubscriptionUpdateForUserRequest
 {
 	[DataMember(Name = "accountId", EmitDefaultValue = true, IsRequired = true)]
@@ -13,4 +12,7 @@ public class SubscriptionUpdateForUserRequest
 
 	[DataMember(Name = "IsSwitchingToMonthly", EmitDefaultValue = true, IsRequired = true)]
 	public bool IsSwitchingToMonthly { get; set; }
+}
+
+
 }

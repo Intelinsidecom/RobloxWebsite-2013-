@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GamePageResourceFactory
 
-internal static class GamePageResourceFactory
 {
 	public const string FullNamespace = "Feature.GamePage";
 
@@ -21,4 +21,7 @@ internal static class GamePageResourceFactory
 			_ => new GamePageResources_en_us(state), 
 		};
 	}
+}
+
+
 }

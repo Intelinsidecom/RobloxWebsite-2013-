@@ -1,8 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 public class GenderTypeEntity
@@ -12,4 +11,6 @@ public class GenderTypeEntity
 
 	[DataMember(Name = "value")]
 	public string Value { get; set; }
+}
+
 }

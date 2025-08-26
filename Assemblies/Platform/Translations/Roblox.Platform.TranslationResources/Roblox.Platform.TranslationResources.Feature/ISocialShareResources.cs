@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ISocialShareResources : ITranslationResources
 
-public interface ISocialShareResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Share"
@@ -8,4 +8,7 @@ public interface ISocialShareResources : ITranslationResources
 	/// English String: "Share"
 	/// </summary>
 	string ActionShare { get; }
+}
+
+
 }

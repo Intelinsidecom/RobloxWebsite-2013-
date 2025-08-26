@@ -305,7 +305,9 @@ public abstract class SharedCacheClient : ISharedCacheClient, IDisposable
 	protected void CreateMemcachedClient(string[] addresses, string clientNameSuffix, ILogger logger, IMemCachedClientSettings settings = null)
 	{
 		string name = Settings.Default.SharedCacheKeyPrefix + clientNameSuffix;
+		#pragma warning disable 618
 		settings = settings ?? new MemCachedClientSettings(Settings.Default, logger);
+		#pragma warning restore 618
 		_Memcached = new MemcachedClient(name, addresses, logger.Error, StaticCounterRegistry.Instance, settings);
 	}
 

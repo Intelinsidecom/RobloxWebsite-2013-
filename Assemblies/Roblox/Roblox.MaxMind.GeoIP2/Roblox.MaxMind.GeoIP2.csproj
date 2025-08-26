@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.MaxMind.GeoIP2</AssemblyName>
@@ -13,7 +13,9 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Core" />
-    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration">
+      <Aliases>ConfMan</Aliases>
+    </Reference>
     <ProjectReference Include="..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
       <Project>
       </Project>

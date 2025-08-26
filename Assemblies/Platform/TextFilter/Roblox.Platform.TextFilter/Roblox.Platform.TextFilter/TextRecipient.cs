@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Default implementation of the <see cref="T:Roblox.TextFilter.ITextRecipient" />
 /// </summary>
 public class TextRecipient : ITextRecipient
@@ -15,4 +15,7 @@ public class TextRecipient : ITextRecipient
 	{
 		IsUnder13 = isUnder13;
 	}
+}
+
+
 }

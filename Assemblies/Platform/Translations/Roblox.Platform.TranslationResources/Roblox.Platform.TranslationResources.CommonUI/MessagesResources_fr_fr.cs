@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,14 +11,14 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// button title
 	/// English String: "Go to the Previous Page"
 	/// </summary>
-	public override string ActionPreviousPage => "Aller à la page précédente";
+	public override string ActionPreviousPage => "Aller Ã  la page prÃ©cÃ©dente";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button title
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "Retour à l'accueil";
+	public override string ActionReturnHome => "Retour Ã  l'accueil";
 
 	/// <summary>
 	/// Key: "Label.Error"
@@ -37,13 +37,13 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Label.TooManyCharacters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyCharacters => "Trop de caractères\u00a0!";
+	public override string LabelTooManyCharacters => "Trop de caractÃ¨res\u00a0!";
 
 	/// <summary>
 	/// Key: "Message.AlwaysAllowed"
 	/// English String: "Always allowed"
 	/// </summary>
-	public override string MessageAlwaysAllowed => "Toujours autorisés";
+	public override string MessageAlwaysAllowed => "Toujours autorisÃ©s";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookies"
@@ -55,7 +55,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.AnalyiticsCookiesDescription"
 	/// English String: "These cookies used for improving site performance or understanding site usage."
 	/// </summary>
-	public override string MessageAnalyiticsCookiesDescription => "Ces cookies servent à améliorer les performances du site ou la compréhension de son utilisation.";
+	public override string MessageAnalyiticsCookiesDescription => "Ces cookies servent Ã  amÃ©liorer les performances du site ou la comprÃ©hension de son utilisation.";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem1"
@@ -79,7 +79,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "Ces cookies sont nécessaires pour utiliser certaines fonctionnalités du site, telles que l'authentification des utilisateurs, la sécurisation du système et les préférences d'enregistrement des cookies.";
+	public override string MessageEssentialCookiesDescription => "Ces cookies sont nÃ©cessaires pour utiliser certaines fonctionnalitÃ©s du site, telles que l'authentification des utilisateurs, la sÃ©curisation du systÃ¨me et les prÃ©fÃ©rences d'enregistrement des cookies.";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -97,7 +97,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.ManageCookies"
 	/// English String: "Manage Cookies"
 	/// </summary>
-	public override string MessageManageCookies => "Gérer les cookies";
+	public override string MessageManageCookies => "GÃ©rer les cookies";
 
 	/// <summary>
 	/// Key: "MessageEssentialCookiesItem3"
@@ -110,7 +110,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// 403 error message
 	/// English String: "Access Denied"
 	/// </summary>
-	public override string ResponseAccessDenied => "Accès refusé";
+	public override string ResponseAccessDenied => "AccÃ¨s refusÃ©";
 
 	/// <summary>
 	/// Key: "Response.AccessDeniedDescription"
@@ -124,14 +124,14 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// 400 error message title
 	/// English String: "Bad Request"
 	/// </summary>
-	public override string ResponseBadRequest => "Erreur de requête";
+	public override string ResponseBadRequest => "Erreur de requÃªte";
 
 	/// <summary>
 	/// Key: "Response.BadRequestDescription"
 	/// error message detail for 400 error
 	/// English String: "There was a problem with your request"
 	/// </summary>
-	public override string ResponseBadRequestDescription => "Votre requête a rencontré un problème";
+	public override string ResponseBadRequestDescription => "Votre requÃªte a rencontrÃ© un problÃ¨me";
 
 	/// <summary>
 	/// Key: "Response.InternalServerError"
@@ -166,14 +166,14 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// error message for incorrect request
 	/// English String: "Error with your request"
 	/// </summary>
-	public override string ResponseRequestError => "Erreur avec votre requête";
+	public override string ResponseRequestError => "Erreur avec votre requÃªte";
 
 	/// <summary>
 	/// Key: "Response.SomethingWentWrong"
 	/// default error message
 	/// English String: "Something went wrong"
 	/// </summary>
-	public override string ResponseSomethingWentWrong => "Quelque chose s'est mal passé";
+	public override string ResponseSomethingWentWrong => "Quelque chose s'est mal passÃ©";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsText"
@@ -186,7 +186,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "Une erreur inconnue est survenue. Veuillez réessayer plus tard.";
+	public override string ResponseUnexpectedError => "Une erreur inconnue est survenue. Veuillez rÃ©essayer plus tard.";
 
 	public MessagesResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -195,12 +195,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionPreviousPage()
 	{
-		return "Aller à la page précédente";
+		return "Aller Ã  la page prÃ©cÃ©dente";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "Retour à l'accueil";
+		return "Retour Ã  l'accueil";
 	}
 
 	/// <summary>
@@ -210,12 +210,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox utilise les cookies pour l'affichage de contenu personnalisé, les fonctionnalités des réseaux sociaux et l'analyse du trafic sur le site. Pour en savoir plus sur la façon dont nous utilisons les cookies et comment vous pouvez {startLink}gérer les préférences des cookies{endLink}, veuillez consulter notre {startLink2}Politique de confidentialité et de cookies{endLink2}.";
+		return $"Roblox utilise les cookies pour l'affichage de contenu personnalisÃ©, les fonctionnalitÃ©s des rÃ©seaux sociaux et l'analyse du trafic sur le site. Pour en savoir plus sur la faÃ§on dont nous utilisons les cookies et comment vous pouvez {startLink}gÃ©rer les prÃ©fÃ©rences des cookies{endLink}, veuillez consulter notre {startLink2}Politique de confidentialitÃ© et de cookies{endLink2}.";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Roblox utilise les cookies pour l'affichage de contenu personnalisé, les fonctionnalités des réseaux sociaux et l'analyse du trafic sur le site. Pour en savoir plus sur la façon dont nous utilisons les cookies et comment vous pouvez {startLink}gérer les préférences des cookies{endLink}, veuillez consulter notre {startLink2}Politique de confidentialité et de cookies{endLink2}.";
+		return "Roblox utilise les cookies pour l'affichage de contenu personnalisÃ©, les fonctionnalitÃ©s des rÃ©seaux sociaux et l'analyse du trafic sur le site. Pour en savoir plus sur la faÃ§on dont nous utilisons les cookies et comment vous pouvez {startLink}gÃ©rer les prÃ©fÃ©rences des cookies{endLink}, veuillez consulter notre {startLink2}Politique de confidentialitÃ© et de cookies{endLink2}.";
 	}
 
 	/// <summary>
@@ -225,12 +225,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string DescriptionContactCustomerService(string emailLink)
 	{
-		return $"Si vous continuez de recevoir cette page, veuillez contacter notre assistance clientèle à l'adresse\u00a0: {emailLink}";
+		return $"Si vous continuez de recevoir cette page, veuillez contacter notre assistance clientÃ¨le Ã  l'adresse\u00a0: {emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionContactCustomerService()
 	{
-		return "Si vous continuez de recevoir cette page, veuillez contacter notre assistance clientèle à l'adresse\u00a0: {emailLink}";
+		return "Si vous continuez de recevoir cette page, veuillez contacter notre assistance clientÃ¨le Ã  l'adresse\u00a0: {emailLink}";
 	}
 
 	protected override string _GetTemplateForLabelError()
@@ -245,12 +245,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForLabelTooManyCharacters()
 	{
-		return "Trop de caractères\u00a0!";
+		return "Trop de caractÃ¨res\u00a0!";
 	}
 
 	protected override string _GetTemplateForMessageAlwaysAllowed()
 	{
-		return "Toujours autorisés";
+		return "Toujours autorisÃ©s";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookies()
@@ -260,7 +260,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesDescription()
 	{
-		return "Ces cookies servent à améliorer les performances du site ou la compréhension de son utilisation.";
+		return "Ces cookies servent Ã  amÃ©liorer les performances du site ou la comprÃ©hension de son utilisation.";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem1()
@@ -280,12 +280,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNotice(string startLink, string endLink)
 	{
-		return $"Roblox utilise des cookies afin d'améliorer votre expérience. Pour plus d'informations, notamment sur la manière de retirer votre autorisation et gérer l'utilisation des cookies sur Roblox, veuillez consulter notre {startLink}politique de confidentialité et relative aux cookies{endLink}.";
+		return $"Roblox utilise des cookies afin d'amÃ©liorer votre expÃ©rience. Pour plus d'informations, notamment sur la maniÃ¨re de retirer votre autorisation et gÃ©rer l'utilisation des cookies sur Roblox, veuillez consulter notre {startLink}politique de confidentialitÃ© et relative aux cookies{endLink}.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNotice()
 	{
-		return "Roblox utilise des cookies afin d'améliorer votre expérience. Pour plus d'informations, notamment sur la manière de retirer votre autorisation et gérer l'utilisation des cookies sur Roblox, veuillez consulter notre {startLink}politique de confidentialité et relative aux cookies{endLink}.";
+		return "Roblox utilise des cookies afin d'amÃ©liorer votre expÃ©rience. Pour plus d'informations, notamment sur la maniÃ¨re de retirer votre autorisation et gÃ©rer l'utilisation des cookies sur Roblox, veuillez consulter notre {startLink}politique de confidentialitÃ© et relative aux cookies{endLink}.";
 	}
 
 	/// <summary>
@@ -294,12 +294,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox utilise les cookies pour l'affichage de contenu personnalisé, les fonctionnalités des réseaux sociaux et l'analyse du trafic sur le site. Pour en savoir plus sur la façon dont nous utilisons les cookies et comment vous pouvez {startLink}gérer les préférences des cookies{endLink}, veuillez consulter notre {startLink2}Politique de confidentialité et de cookies{endLink2}.";
+		return $"Roblox utilise les cookies pour l'affichage de contenu personnalisÃ©, les fonctionnalitÃ©s des rÃ©seaux sociaux et l'analyse du trafic sur le site. Pour en savoir plus sur la faÃ§on dont nous utilisons les cookies et comment vous pouvez {startLink}gÃ©rer les prÃ©fÃ©rences des cookies{endLink}, veuillez consulter notre {startLink2}Politique de confidentialitÃ© et de cookies{endLink2}.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Roblox utilise les cookies pour l'affichage de contenu personnalisé, les fonctionnalités des réseaux sociaux et l'analyse du trafic sur le site. Pour en savoir plus sur la façon dont nous utilisons les cookies et comment vous pouvez {startLink}gérer les préférences des cookies{endLink}, veuillez consulter notre {startLink2}Politique de confidentialité et de cookies{endLink2}.";
+		return "Roblox utilise les cookies pour l'affichage de contenu personnalisÃ©, les fonctionnalitÃ©s des rÃ©seaux sociaux et l'analyse du trafic sur le site. Pour en savoir plus sur la faÃ§on dont nous utilisons les cookies et comment vous pouvez {startLink}gÃ©rer les prÃ©fÃ©rences des cookies{endLink}, veuillez consulter notre {startLink2}Politique de confidentialitÃ© et de cookies{endLink2}.";
 	}
 
 	/// <summary>
@@ -308,12 +308,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieModalText(string startLink, string endLink)
 	{
-		return $"Décidez si vous voulez autoriser ce site à utiliser des cookies comme décrit ci-dessous. Découvrez comment ils sont utilisés ainsi que les technologies liées en lisant notre {startLink}politique de confidentialité{endLink}.";
+		return $"DÃ©cidez si vous voulez autoriser ce site Ã  utiliser des cookies comme dÃ©crit ci-dessous. DÃ©couvrez comment ils sont utilisÃ©s ainsi que les technologies liÃ©es en lisant notre {startLink}politique de confidentialitÃ©{endLink}.";
 	}
 
 	protected override string _GetTemplateForMessageCookieModalText()
 	{
-		return "Décidez si vous voulez autoriser ce site à utiliser des cookies comme décrit ci-dessous. Découvrez comment ils sont utilisés ainsi que les technologies liées en lisant notre {startLink}politique de confidentialité{endLink}.";
+		return "DÃ©cidez si vous voulez autoriser ce site Ã  utiliser des cookies comme dÃ©crit ci-dessous. DÃ©couvrez comment ils sont utilisÃ©s ainsi que les technologies liÃ©es en lisant notre {startLink}politique de confidentialitÃ©{endLink}.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookies()
@@ -323,7 +323,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "Ces cookies sont nécessaires pour utiliser certaines fonctionnalités du site, telles que l'authentification des utilisateurs, la sécurisation du système et les préférences d'enregistrement des cookies.";
+		return "Ces cookies sont nÃ©cessaires pour utiliser certaines fonctionnalitÃ©s du site, telles que l'authentification des utilisateurs, la sÃ©curisation du systÃ¨me et les prÃ©fÃ©rences d'enregistrement des cookies.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -338,7 +338,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageManageCookies()
 	{
-		return "Gérer les cookies";
+		return "GÃ©rer les cookies";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem3()
@@ -348,7 +348,7 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "Accès refusé";
+		return "AccÃ¨s refusÃ©";
 	}
 
 	protected override string _GetTemplateForResponseAccessDeniedDescription()
@@ -358,12 +358,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseBadRequest()
 	{
-		return "Erreur de requête";
+		return "Erreur de requÃªte";
 	}
 
 	protected override string _GetTemplateForResponseBadRequestDescription()
 	{
-		return "Votre requête a rencontré un problème";
+		return "Votre requÃªte a rencontrÃ© un problÃ¨me";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerError()
@@ -388,12 +388,12 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseRequestError()
 	{
-		return "Erreur avec votre requête";
+		return "Erreur avec votre requÃªte";
 	}
 
 	protected override string _GetTemplateForResponseSomethingWentWrong()
 	{
-		return "Quelque chose s'est mal passé";
+		return "Quelque chose s'est mal passÃ©";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsText()
@@ -403,6 +403,9 @@ internal class MessagesResources_fr_fr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "Une erreur inconnue est survenue. Veuillez réessayer plus tard.";
+		return "Une erreur inconnue est survenue. Veuillez rÃ©essayer plus tard.";
 	}
+}
+
+
 }

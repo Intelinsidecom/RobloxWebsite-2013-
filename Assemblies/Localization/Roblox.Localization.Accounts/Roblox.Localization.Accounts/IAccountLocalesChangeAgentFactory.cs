@@ -1,8 +1,7 @@
-using Roblox.Platform.Membership;
+﻿using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountspublic {
+    interface IAccountLocalesChangeAgentFactory
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public interface IAccountLocalesChangeAgentFactory
 {
 	/// <summary>
 	/// Creates an <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgent" /> for a user.
@@ -18,4 +17,7 @@ public interface IAccountLocalesChangeAgentFactory
 	/// <param name="changeAgentAutomationType"></param>
 	/// <returns><see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocalesChangeAgent" />.</returns>
 	IAccountLocalesChangeAgent CreateChangeAgentForAutomation(AccountLocalesAutomationType changeAgentAutomationType);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,28 +18,28 @@ internal class BuildersClubResources_es_es : BuildersClubResources_en_us, IBuild
 	/// membership type name
 	/// English String: "Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembership => "Suscripción al Builders Club";
+	public override string LabelBuildersClubMembership => "SuscripciÃ³n al Builders Club";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipOutrageous"
 	/// membership type
 	/// English String: "Outrageous Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipOutrageous => "Suscripción al Outrageous Builders Club";
+	public override string LabelBuildersClubMembershipOutrageous => "SuscripciÃ³n al Outrageous Builders Club";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipTurbo"
 	/// membership type
 	/// English String: "Turbo Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipTurbo => "Suscripción al Turbo Builders Club";
+	public override string LabelBuildersClubMembershipTurbo => "SuscripciÃ³n al Turbo Builders Club";
 
 	/// <summary>
 	/// Key: "Label.ClassicBuildersClub"
 	/// label
 	/// English String: "Classic Builders Club"
 	/// </summary>
-	public override string LabelClassicBuildersClub => "Builders Club Clásico";
+	public override string LabelClassicBuildersClub => "Builders Club ClÃ¡sico";
 
 	/// <summary>
 	/// Key: "Label.Lifetime"
@@ -53,7 +53,7 @@ internal class BuildersClubResources_es_es : BuildersClubResources_en_us, IBuild
 	/// use Feature.Support namespace instead
 	/// English String: "Membership"
 	/// </summary>
-	public override string LabelMembership => "Suscripción";
+	public override string LabelMembership => "SuscripciÃ³n";
 
 	/// <summary>
 	/// Key: "Label.NeverUppercase"
@@ -81,7 +81,7 @@ internal class BuildersClubResources_es_es : BuildersClubResources_en_us, IBuild
 	/// Builders club membership type
 	/// English String: "Classic"
 	/// </summary>
-	public override string LabelPlanClassic => "Clásico";
+	public override string LabelPlanClassic => "ClÃ¡sico";
 
 	/// <summary>
 	/// Key: "Label.PlanFree"
@@ -123,7 +123,7 @@ internal class BuildersClubResources_es_es : BuildersClubResources_en_us, IBuild
 	/// label
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelYes => "Sí";
+	public override string LabelYes => "SÃ­";
 
 	public BuildersClubResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -137,22 +137,22 @@ internal class BuildersClubResources_es_es : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelBuildersClubMembership()
 	{
-		return "Suscripción al Builders Club";
+		return "SuscripciÃ³n al Builders Club";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipOutrageous()
 	{
-		return "Suscripción al Outrageous Builders Club";
+		return "SuscripciÃ³n al Outrageous Builders Club";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipTurbo()
 	{
-		return "Suscripción al Turbo Builders Club";
+		return "SuscripciÃ³n al Turbo Builders Club";
 	}
 
 	protected override string _GetTemplateForLabelClassicBuildersClub()
 	{
-		return "Builders Club Clásico";
+		return "Builders Club ClÃ¡sico";
 	}
 
 	protected override string _GetTemplateForLabelLifetime()
@@ -162,7 +162,7 @@ internal class BuildersClubResources_es_es : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelMembership()
 	{
-		return "Suscripción";
+		return "SuscripciÃ³n";
 	}
 
 	protected override string _GetTemplateForLabelNeverUppercase()
@@ -182,7 +182,7 @@ internal class BuildersClubResources_es_es : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelPlanClassic()
 	{
-		return "Clásico";
+		return "ClÃ¡sico";
 	}
 
 	protected override string _GetTemplateForLabelPlanFree()
@@ -212,6 +212,8 @@ internal class BuildersClubResources_es_es : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelYes()
 	{
-		return "Sí";
+		return "SÃ­";
 	}
 }
+
+

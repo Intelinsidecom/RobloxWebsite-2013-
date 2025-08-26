@@ -6,11 +6,10 @@ using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
 using Roblox.RequestContext;
-using Roblox.TextFilter.Client.Properties;
+using Roblox.Platform.TextFilter.Client.Properties;
+namespace Roblox.Platform.TextFilter.Client {
+    public class TextFilterClientV2 : ITextFilterClientV2
 
-namespace Roblox.TextFilter.Client;
-
-public class TextFilterClientV2 : ITextFilterClientV2
 {
 	private readonly IServiceClientSettings _ServiceClientSettings;
 
@@ -197,4 +196,7 @@ public class TextFilterClientV2 : ITextFilterClientV2
 		_HttpClient = httpClientBuilder.Build();
 		_ServiceClientSettings = serviceClientSettings ?? throw new ArgumentNullException("serviceClientSettings");
 	}
+}
+
+
 }

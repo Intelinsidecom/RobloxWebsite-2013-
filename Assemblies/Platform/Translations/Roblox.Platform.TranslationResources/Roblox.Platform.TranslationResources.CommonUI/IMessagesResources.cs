@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUIpublic {
+    interface IMessagesResources : ITranslationResources
 
-public interface IMessagesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.PreviousPage"
@@ -216,4 +216,7 @@ public interface IMessagesResources : ITranslationResources
 	/// English String: "Please choose whether this site may use cookies as described below. You can learn more about how this site uses cookies and related technologies by reading our {startLink}privacy policy{endLink}."
 	/// </summary>
 	string MessageCookieModalText(string startLink, string endLink);
+}
+
+
 }

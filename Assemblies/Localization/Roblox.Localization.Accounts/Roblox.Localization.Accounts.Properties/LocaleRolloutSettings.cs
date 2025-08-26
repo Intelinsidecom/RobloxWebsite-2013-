@@ -1,14 +1,13 @@
-using System.CodeDom.Compiler;
+﻿using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
+namespace Roblox.Localization.Accounts.Properties {
+    [SettingsProvider(typeof(Provider))]
 
-namespace Roblox.Platform.Localization.Accounts.Properties;
-
-[SettingsProvider(typeof(Provider))]
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
 public sealed class LocaleRolloutSettings : ApplicationSettingsBase, ILocaleRolloutSettings
@@ -649,4 +648,7 @@ public sealed class LocaleRolloutSettings : ApplicationSettingsBase, ILocaleRoll
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, this);
 	}
+}
+
+
 }

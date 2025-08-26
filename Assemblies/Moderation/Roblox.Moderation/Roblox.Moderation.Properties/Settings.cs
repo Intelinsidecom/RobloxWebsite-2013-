@@ -1,4 +1,4 @@
-using System.CodeDom.Compiler;
+﻿using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.Configuration;
@@ -6,10 +6,9 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
+namespace Roblox.Moderation.Properties {
+    [CompilerGenerated]
 
-namespace Roblox.Platform.Moderation.Properties;
-
-[CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.3.0.0")]
 [SettingsProvider(typeof(Provider))]
 [ExcludeFromCodeCoverage]
@@ -206,4 +205,7 @@ public sealed class Settings : ApplicationSettingsBase, ISettings
         base.OnSettingsLoaded(sender, e);
         Provider.RegisterSettings(e, this);
     }
+}
+
+
 }

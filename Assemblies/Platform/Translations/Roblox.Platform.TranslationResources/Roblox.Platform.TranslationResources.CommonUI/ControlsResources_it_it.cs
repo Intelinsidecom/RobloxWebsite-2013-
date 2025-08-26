@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -86,7 +86,7 @@ internal class ControlsResources_it_it : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "Sì";
+	public override string ActionYes => "SÃ¬";
 
 	/// <summary>
 	/// Key: "Birthdaypicker.Label.Date"
@@ -266,7 +266,7 @@ internal class ControlsResources_it_it : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "Sì";
+		return "SÃ¬";
 	}
 
 	protected override string _GetTemplateForBirthdaypickerLabelDate()
@@ -373,4 +373,7 @@ internal class ControlsResources_it_it : ControlsResources_en_us, IControlsResou
 	{
 		return "Anno";
 	}
+}
+
+
 }

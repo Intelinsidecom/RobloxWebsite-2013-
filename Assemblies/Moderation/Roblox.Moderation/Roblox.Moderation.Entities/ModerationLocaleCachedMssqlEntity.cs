@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
+namespace Roblox.Moderation.Entities {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Moderation.Entities;
-
-[ExcludeFromCodeCoverage]
 internal class ModerationLocaleCachedMssqlEntity : IModerationLocaleEntity, IUpdateableEntity<int>, IEntity<int>
 {
 	public int Id { get; set; }
@@ -34,4 +33,7 @@ internal class ModerationLocaleCachedMssqlEntity : IModerationLocaleEntity, IUpd
 	{
 		(ModerationLocaleCAL.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

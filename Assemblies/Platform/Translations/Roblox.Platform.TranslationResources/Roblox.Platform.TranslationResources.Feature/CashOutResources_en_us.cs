@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class CashOutResources_en_us : TranslationResourcesBase, ICashOutResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class CashOutResources_en_us : TranslationResourcesBase, ICashOutResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -587,4 +586,7 @@ internal class CashOutResources_en_us : TranslationResourcesBase, ICashOutResour
 	{
 		return "You must verify your email before you can cash out.";
 	}
+}
+
+
 }

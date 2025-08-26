@@ -1,8 +1,8 @@
 using Roblox.Time;
 
-namespace Roblox.Platform.EventStream.WebEvents;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Event Arguments for a push notification change event
 /// </summary>
 public class PushNotificationSettingChangedEventArgs : WebEventArgs
@@ -27,3 +27,12 @@ public class PushNotificationSettingChangedEventArgs : WebEventArgs
 	/// </summary>
 	public string ReceiverDestinationId { get; set; }
 }
+
+
+}
+
+
+
+
+
+

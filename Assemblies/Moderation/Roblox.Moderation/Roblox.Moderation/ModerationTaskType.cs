@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderation {
+    /// <summary>
 
-/// <summary>
 /// Used for determine which type of queue the moderation task belongs to.
 /// </summary>
 public enum ModerationTaskType : byte
@@ -11,4 +11,7 @@ public enum ModerationTaskType : byte
 	VideoReview,
 	AudioReview,
 	MeshReview
+}
+
+
 }

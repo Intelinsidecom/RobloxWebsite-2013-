@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class GrantedItemTypeCachedMssqlEntity : IGrantedItemTypeEntity, IUpdateableEntity<byte>, IEntity<byte>
 {
 	public byte Id { get; set; }
@@ -31,4 +30,7 @@ internal class GrantedItemTypeCachedMssqlEntity : IGrantedItemTypeEntity, IUpdat
 	{
 		(GrantedItemTypeEntity.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

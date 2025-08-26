@@ -1,9 +1,8 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Moderation.Entities;
+namespace Roblox.Moderation.Factoriesinternal {
+    class ExpressionFactory : IExpressionFactory
 
-namespace Roblox.Platform.Moderation.Factories;
-
-internal class ExpressionFactory : IExpressionFactory
 {
 	private readonly ModerationDomainFactories _DomainFactories;
 
@@ -41,4 +40,7 @@ internal class ExpressionFactory : IExpressionFactory
 		}
 		return null;
 	}
+}
+
+
 }

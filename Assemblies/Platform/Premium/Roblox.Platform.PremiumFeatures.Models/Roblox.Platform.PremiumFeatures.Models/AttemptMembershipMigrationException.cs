@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.PremiumFeatures.Modelspublic {
+    class AttemptMembershipMigrationException : Exception
 
-namespace Roblox.PremiumFeatures.Models;
-
-public class AttemptMembershipMigrationException : Exception
 {
 	public MembershipMigrationErrorResponse MembershipMigrationErrorResponse { get; set; }
 
@@ -19,4 +18,7 @@ public class AttemptMembershipMigrationException : Exception
 			ErrorMessage = message
 		};
 	}
+}
+
+
 }

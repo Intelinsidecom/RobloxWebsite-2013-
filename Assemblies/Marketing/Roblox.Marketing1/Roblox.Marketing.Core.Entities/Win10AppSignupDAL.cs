@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Marketing.Core.Entitiesinternal {
+    class Win10AppSignupDAL
 
-namespace Roblox.Platform.Marketing.Core.Entities;
-
-internal class Win10AppSignupDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxMarketing;
 
@@ -71,4 +70,7 @@ internal class Win10AppSignupDAL
 	{
 		return RobloxDatabase.RobloxMarketing.MultiGet("Win10AppSignups_GetWin10AppSignupsByIDs", ids, BuildDAL);
 	}
+}
+
+
 }

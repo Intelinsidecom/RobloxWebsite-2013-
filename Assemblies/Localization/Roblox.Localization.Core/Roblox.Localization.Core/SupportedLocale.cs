@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class SupportedLocale : IRobloxEntity<int, SupportedLocaleDAL>, ICacheableObject<int>, ICacheableObject, IRemoteCacheableObject
 {
 	private SupportedLocaleDAL _EntityDAL;
@@ -180,4 +179,7 @@ internal class SupportedLocale : IRobloxEntity<int, SupportedLocaleDAL>, ICachea
 	{
 		return $"Locale:{locale}";
 	}
+}
+
+
 }

@@ -1,0 +1,1443 @@
+﻿Platform Projects Move Impact Report
+Generated: 8/26/2025 9:08:11 AM
+Repository root: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-
+
+Broken ProjectReference includes: 0
+Broken .sln project entries: 246
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       8
+  Include:    Assemblies\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       10
+  Include:    Assemblies\Roblox.Platform.MembershipCore\Roblox.Platform.MembershipCore.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.MembershipCore\Roblox.Platform.MembershipCore.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       12
+  Include:    Assemblies\Roblox.Platform.Core\Roblox.Platform.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Core\Roblox.Platform.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       14
+  Include:    Assemblies\Roblox.Amazon\Roblox.Amazon.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon\Roblox.Amazon.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon\Roblox.Amazon.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       16
+  Include:    Assemblies\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       18
+  Include:    Assemblies\Roblox.Configuration\Roblox.Configuration.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Configuration\Roblox.Configuration.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\Roblox.Configuration.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       20
+  Include:    Assemblies\Roblox.Instrumentation\Roblox.Instrumentation.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Instrumentation\Roblox.Instrumentation.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       22
+  Include:    Assemblies\Roblox.EventLog\Roblox.EventLog.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EventLog\Roblox.EventLog.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Events\Roblox.EventLog\Roblox.EventLog.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       24
+  Include:    Assemblies\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       26
+  Include:    Assemblies\Roblox.BucketStore\Roblox.BucketStore.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.BucketStore\Roblox.BucketStore.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.BucketStore\Roblox.BucketStore.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       28
+  Include:    Assemblies\Roblox.Sentinels\Roblox.Sentinels.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Sentinels\Roblox.Sentinels.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Sentinels\Roblox.Sentinels\Roblox.Sentinels.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       30
+  Include:    Assemblies\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\DataV2\Core\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       32
+  Include:    Assemblies\Roblox.Collections\Roblox.Collections.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Collections\Roblox.Collections.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Collections\Roblox.Collections\Roblox.Collections.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       34
+  Include:    Assemblies\Roblox.Users.Client.Properties\Roblox.Users.Client.Properties.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client.Properties\Roblox.Users.Client.Properties.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       36
+  Include:    Assemblies\Roblox.Users.Client\Roblox.Users.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\Roblox.Users.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       38
+  Include:    Assemblies\Roblox.Common\Roblox.Common.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Common\Roblox.Common.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\Roblox.Common.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       40
+  Include:    Assemblies\Roblox.RequestContext\Roblox.RequestContext.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.RequestContext\Roblox.RequestContext.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\RequestContext\Roblox.RequestContext\Roblox.RequestContext.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       42
+  Include:    Assemblies\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Serialization\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       44
+  Include:    Assemblies\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.original.sln
+  Line:       46
+  Include:    Assemblies\Roblox.Http.Client\Roblox.Http.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.Client\Roblox.Http.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.Client\Roblox.Http.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       8
+  Include:    Assemblies\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       10
+  Include:    Assemblies\Roblox.Platform.MembershipCore\Roblox.Platform.MembershipCore.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.MembershipCore\Roblox.Platform.MembershipCore.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       12
+  Include:    Assemblies\Roblox.Platform.Core\Roblox.Platform.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Core\Roblox.Platform.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       14
+  Include:    Assemblies\Roblox.Amazon\Roblox.Amazon.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon\Roblox.Amazon.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon\Roblox.Amazon.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       16
+  Include:    Assemblies\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       18
+  Include:    Assemblies\Roblox.Configuration\Roblox.Configuration.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Configuration\Roblox.Configuration.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\Roblox.Configuration.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       20
+  Include:    Assemblies\Roblox.Instrumentation\Roblox.Instrumentation.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Instrumentation\Roblox.Instrumentation.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       22
+  Include:    Assemblies\Roblox.EventLog\Roblox.EventLog.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EventLog\Roblox.EventLog.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Events\Roblox.EventLog\Roblox.EventLog.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       24
+  Include:    Assemblies\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       26
+  Include:    Assemblies\Roblox.BucketStore\Roblox.BucketStore.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.BucketStore\Roblox.BucketStore.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.BucketStore\Roblox.BucketStore.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       28
+  Include:    Assemblies\Roblox.Sentinels\Roblox.Sentinels.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Sentinels\Roblox.Sentinels.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Sentinels\Roblox.Sentinels\Roblox.Sentinels.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       30
+  Include:    Assemblies\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\DataV2\Core\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       32
+  Include:    Assemblies\Roblox.Collections\Roblox.Collections.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Collections\Roblox.Collections.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Collections\Roblox.Collections\Roblox.Collections.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       34
+  Include:    Assemblies\Roblox.Users.Client.Properties\Roblox.Users.Client.Properties.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client.Properties\Roblox.Users.Client.Properties.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       36
+  Include:    Assemblies\Roblox.Users.Client\Roblox.Users.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\Roblox.Users.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       38
+  Include:    Assemblies\Roblox.Common\Roblox.Common.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Common\Roblox.Common.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\Roblox.Common.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       40
+  Include:    Assemblies\Roblox.RequestContext\Roblox.RequestContext.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.RequestContext\Roblox.RequestContext.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\RequestContext\Roblox.RequestContext\Roblox.RequestContext.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       42
+  Include:    Assemblies\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Serialization\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       44
+  Include:    Assemblies\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       46
+  Include:    Assemblies\Roblox.Controls\Roblox.Controls.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Controls\Roblox.Controls.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Controls\Roblox.Controls\Roblox.Controls.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\RobloxWebsite.sln
+  Line:       48
+  Include:    Assemblies\Roblox.Http.Client\Roblox.Http.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.Client\Roblox.Http.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.Client\Roblox.Http.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       5
+  Include:    Roblox.TranslationResources\Roblox.TranslationResources.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.TranslationResources\Roblox.TranslationResources.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       7
+  Include:    Roblox.TransactionEvents\Roblox.TransactionEvents.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.TransactionEvents\Roblox.TransactionEvents.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Transactions\Roblox.TransactionEvents\Roblox.TransactionEvents.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       9
+  Include:    Roblox.TrackingQueue\Roblox.TrackingQueue.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.TrackingQueue\Roblox.TrackingQueue.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.TrackingQueue\Roblox.TrackingQueue.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       11
+  Include:    Roblox.Time\Roblox.Time.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Time\Roblox.Time.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Time\Roblox.Time\Roblox.Time.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       13
+  Include:    Roblox.Thumbs\Roblox.Thumbs.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Thumbs\Roblox.Thumbs.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       15
+  Include:    Roblox.PremiumFeatures\Roblox.PremiumFeatures.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures\Roblox.PremiumFeatures.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       17
+  Include:    Roblox.Platform.XboxLive\Roblox.Platform.XboxLive.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.XboxLive\Roblox.Platform.XboxLive.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\XboxLive\Roblox.Platform.XboxLive\Roblox.Platform.XboxLive.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       19
+  Include:    Roblox.Platform.VirtualCurrency\Roblox.Platform.VirtualCurrency.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.VirtualCurrency\Roblox.Platform.VirtualCurrency.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\VirtualCurrency\Roblox.Platform.VirtualCurrency\Roblox.Platform.VirtualCurrency.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       21
+  Include:    Roblox.Platform.UserSetting\Roblox.Platform.UserSetting.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.UserSetting\Roblox.Platform.UserSetting.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Users\Roblox.Platform.UserSetting\Roblox.Platform.UserSetting.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       23
+  Include:    Roblox.Platform.UserBlock.Core\Roblox.Platform.UserBlock.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.UserBlock.Core\Roblox.Platform.UserBlock.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Users\Roblox.Platform.UserBlock.Core\Roblox.Platform.UserBlock.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       25
+  Include:    Roblox.Platform.UniverseSettings\Roblox.Platform.UniverseSettings.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.UniverseSettings\Roblox.Platform.UniverseSettings.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Universes\Roblox.Platform.UniverseSettings\Roblox.Platform.UniverseSettings.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       27
+  Include:    Roblox.Platform.Universes\Roblox.Platform.Universes.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Universes\Roblox.Platform.Universes.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Universes\Roblox.Platform.Universes\Roblox.Platform.Universes.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       29
+  Include:    Roblox.Platform.UniverseDisplayInformation\Roblox.Platform.UniverseDisplayInformation.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.UniverseDisplayInformation\Roblox.Platform.UniverseDisplayInformation.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Universes\Roblox.Platform.UniverseDisplayInformation\Roblox.Platform.UniverseDisplayInformation.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       31
+  Include:    Roblox.Platform.TwoStepVerification\Roblox.Platform.TwoStepVerification.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.TwoStepVerification\Roblox.Platform.TwoStepVerification.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Roblox.Platform\Roblox.Platform.TwoStepVerification\Roblox.Platform.TwoStepVerification.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       33
+  Include:    Roblox.Platform.TranslationStorage\Roblox.Platform.TranslationStorage.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.TranslationStorage\Roblox.Platform.TranslationStorage.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Translations\Roblox.Platform.TranslationStorage\Roblox.Platform.TranslationStorage.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       35
+  Include:    Roblox.Platform.Thumbnails.Repository\Roblox.Platform.Thumbnails.Repository.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Thumbnails.Repository\Roblox.Platform.Thumbnails.Repository.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Thumbnails\Roblox.Platform.Thumbnails.Repository\Roblox.Platform.Thumbnails.Repository.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       37
+  Include:    Roblox.Platform.Throttling\Roblox.Platform.Throttling.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Throttling\Roblox.Platform.Throttling.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Throttling\Roblox.Platform.Throttling\Roblox.Platform.Throttling.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       39
+  Include:    Roblox.Platform.TeamCreate.Notifications\Roblox.Platform.TeamCreate.Notifications.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.TeamCreate.Notifications\Roblox.Platform.TeamCreate.Notifications.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\TeamCreate\Roblox.Platform.TeamCreate.Notifications\Roblox.Platform.TeamCreate.Notifications.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       41
+  Include:    Roblox.Platform.TeamCreate\Roblox.Platform.TeamCreate.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.TeamCreate\Roblox.Platform.TeamCreate.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\TeamCreate\Roblox.Platform.TeamCreate\Roblox.Platform.TeamCreate.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       43
+  Include:    Roblox.Platform.Studio\Roblox.Platform.Studio.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Studio\Roblox.Platform.Studio.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Studio\Roblox.Platform.Studio\Roblox.Platform.Studio.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       45
+  Include:    Roblox.Platform.StaticContent\Roblox.Platform.StaticContent.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.StaticContent\Roblox.Platform.StaticContent.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\StaticContent\Roblox.Platform.StaticContent\Roblox.Platform.StaticContent.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       47
+  Include:    Roblox.Platform.Moderation\Roblox.Platform.Moderation.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Moderation\Roblox.Platform.Moderation.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       49
+  Include:    Roblox.Platform.MembershipCore\Roblox.Platform.MembershipCore.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.MembershipCore\Roblox.Platform.MembershipCore.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       51
+  Include:    Roblox.Platform.Membership.UserDataAuditCore\Roblox.Platform.Membership.UserDataAuditCore.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Membership.UserDataAuditCore\Roblox.Platform.Membership.UserDataAuditCore.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.UserDataAuditCore\Roblox.Platform.Membership.UserDataAuditCore.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       53
+  Include:    Roblox.Platform.Membership.UserDataAudit\Roblox.Platform.Membership.UserDataAudit.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Membership.UserDataAudit\Roblox.Platform.Membership.UserDataAudit.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.UserDataAudit\Roblox.Platform.Membership.UserDataAudit.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       55
+  Include:    Roblox.Platform.Membership.Extensions\Roblox.Platform.Membership.Extensions.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Membership.Extensions\Roblox.Platform.Membership.Extensions.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.Extensions\Roblox.Platform.Membership.Extensions.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       57
+  Include:    Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       59
+  Include:    Roblox.Platform.Membership.Commands\Roblox.Platform.Membership.Commands.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Membership.Commands\Roblox.Platform.Membership.Commands.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Membership\Roblox.Platform.Membership.Commands\Roblox.Platform.Membership.Commands.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       61
+  Include:    Roblox.Platform.Math\Roblox.Platform.Math.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Math\Roblox.Platform.Math.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Math\Roblox.Platform.Math\Roblox.Platform.Math.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       63
+  Include:    Roblox.Platform.Marketing\Roblox.Platform.Marketing.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Marketing\Roblox.Platform.Marketing.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Marketing\Roblox.Marketing1\Roblox.Platform.MarketingTodo\Roblox.Platform.Marketing.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       65
+  Include:    Roblox.Platform.Localization.Core\Roblox.Platform.Localization.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Localization.Core\Roblox.Platform.Localization.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       67
+  Include:    Roblox.Platform.Localization.Accounts\Roblox.Platform.Localization.Accounts.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Localization.Accounts\Roblox.Platform.Localization.Accounts.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       69
+  Include:    Roblox.Platform.IpAddresses\Roblox.Platform.IpAddresses.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.IpAddresses\Roblox.Platform.IpAddresses.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Roblox.Platform\Roblox.Platform.IpAddresses\Roblox.Platform.IpAddresses.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       71
+  Include:    Roblox.Platform.Infrastructure\Roblox.Platform.Infrastructure.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Infrastructure\Roblox.Platform.Infrastructure.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Infrastructure\Roblox.Platform.Infrastructure\Roblox.Platform.Infrastructure.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       73
+  Include:    Roblox.Platform.Infractions\Roblox.Platform.Infractions.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Infractions\Roblox.Platform.Infractions.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Infractions\Roblox.Platform.Infractions\Roblox.Platform.Infractions.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       75
+  Include:    Roblox.Platform.Groups\Roblox.Platform.Groups.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Groups\Roblox.Platform.Groups.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Groups\Roblox.Platform.Groups\Roblox.Platform.Groups.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       77
+  Include:    Roblox.Platform.GroupAssets\Roblox.Platform.GroupAssets.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.GroupAssets\Roblox.Platform.GroupAssets.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Groups\Roblox.Platform.GroupAssets\Roblox.Platform.GroupAssets.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       79
+  Include:    Roblox.Platform.Games\Roblox.Platform.Games.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Games\Roblox.Platform.Games.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Games\Roblox.Platform.Games\Roblox.Platform.Games.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       81
+  Include:    Roblox.Platform.Games.Counters\Roblox.Platform.Games.Counters.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Games.Counters\Roblox.Platform.Games.Counters.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Games\Roblox.Platform.Games.Counters\Roblox.Platform.Games.Counters.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       83
+  Include:    Roblox.Platform.GameLocalization\Roblox.Platform.GameLocalization.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.GameLocalization\Roblox.Platform.GameLocalization.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Games\Roblox.Platform.GameLocalization\Roblox.Platform.GameLocalization.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       85
+  Include:    Roblox.Platform.GameLocalization.Authorization\Roblox.Platform.GameLocalization.Authorization.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.GameLocalization.Authorization\Roblox.Platform.GameLocalization.Authorization.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Games\Roblox.Platform.GameLocalization.Authorization\Roblox.Platform.GameLocalization.Authorization.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       87
+  Include:    Roblox.Platform.GameInstances\Roblox.Platform.GameInstances.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.GameInstances\Roblox.Platform.GameInstances.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Games\Roblox.Platform.GameInstances\Roblox.Platform.GameInstances.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       89
+  Include:    Roblox.Platform.Floodcheckers\Roblox.Platform.Floodcheckers.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Floodcheckers\Roblox.Platform.Floodcheckers.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       91
+  Include:    Roblox.Platform.EventStream.WebEvents\Roblox.Platform.EventStream.WebEvents.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.EventStream.WebEvents\Roblox.Platform.EventStream.WebEvents.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       93
+  Include:    Roblox.Platform.EventStream\Roblox.Platform.EventStream.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.EventStream\Roblox.Platform.EventStream.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       95
+  Include:    Roblox.Platform.Events\Roblox.Platform.Events.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Events\Roblox.Platform.Events.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       97
+  Include:    Roblox.Platform.Email.User\Roblox.Platform.Email.User.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email.User\Roblox.Platform.Email.User.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Email\Roblox.Platform.Email.User\Roblox.Platform.Email.User.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       99
+  Include:    Roblox.Platform.Email\Roblox.Platform.Email.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email\Roblox.Platform.Email.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Email\Roblox.Platform.Email\Roblox.Platform.Email.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       101
+  Include:    Roblox.Platform.Email.Delivery\Roblox.Platform.Email.Delivery.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Email.Delivery\Roblox.Platform.Email.Delivery.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Email\Roblox.Platform.Email.Delivery\Roblox.Platform.Email.Delivery.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       103
+  Include:    Roblox.Platform.Devices\Roblox.Platform.Devices.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Devices\Roblox.Platform.Devices.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Devices\Roblox.Platform.Devices\Roblox.Platform.Devices.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       105
+  Include:    Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Demographics\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       107
+  Include:    Roblox.Platform.CurrencyBudgets\Roblox.Platform.CurrencyBudgets.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.CurrencyBudgets\Roblox.Platform.CurrencyBudgets.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Currency\Roblox.Platform.CurrencyBudgets\Roblox.Platform.CurrencyBudgets.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       109
+  Include:    Roblox.Platform.Counters\Roblox.Platform.Counters.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Counters\Roblox.Platform.Counters.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Counters\Roblox.Platform.Counters\Roblox.Platform.Counters.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       111
+  Include:    Roblox.Platform.AssetPermissions\Roblox.Platform.AssetPermissions.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetPermissions\Roblox.Platform.AssetPermissions.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Assets\Roblox.Platform.AssetPermissions\Roblox.Platform.AssetPermissions.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       113
+  Include:    Roblox.Platform.AssetOwnership\Roblox.Platform.AssetOwnership.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetOwnership\Roblox.Platform.AssetOwnership.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Assets\Roblox.Platform.AssetOwnership\Roblox.Platform.AssetOwnership.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       115
+  Include:    Roblox.Platform.AssetMedia\Roblox.Platform.AssetMedia.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetMedia\Roblox.Platform.AssetMedia.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Assets\Roblox.Platform.AssetMedia\Roblox.Platform.AssetMedia.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       117
+  Include:    Roblox.Platform.AccountPins\Roblox.Platform.AccountPins.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AccountPins\Roblox.Platform.AccountPins.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\AccountPins\Roblox.Platform.AccountPins\Roblox.Platform.AccountPins.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       119
+  Include:    Roblox.Platform.AbTesting\Roblox.Platform.AbTesting.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AbTesting\Roblox.Platform.AbTesting.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\AbTesting\Roblox.Platform.AbTesting\Roblox.Platform.AbTesting.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       121
+  Include:    Roblox.Platform.AbTesting.Core\Roblox.Platform.AbTesting.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AbTesting.Core\Roblox.Platform.AbTesting.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\AbTesting\Roblox.Platform.AbTesting.Core\Roblox.Platform.AbTesting.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       123
+  Include:    Roblox.Pipeline\Roblox.Pipeline.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Pipeline\Roblox.Pipeline.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.Pipeline\Roblox.Pipeline.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       125
+  Include:    Roblox.PayPal.Common\Roblox.PayPal.Common.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PayPal.Common\Roblox.PayPal.Common.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\PayPal\Roblox.PayPal.Common\Roblox.PayPal.Common.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       127
+  Include:    Roblox.MaxMind.GeoIP2\Roblox.MaxMind.GeoIP2.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.MaxMind.GeoIP2\Roblox.MaxMind.GeoIP2.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.MaxMind.GeoIP2\Roblox.MaxMind.GeoIP2.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       129
+  Include:    Roblox.Marketing\Roblox.Marketing.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Marketing\Roblox.Marketing.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Marketing\Roblox.Marketing1\Roblox.Marketing.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       131
+  Include:    Roblox.Locking\Roblox.Locking.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Locking\Roblox.Locking.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Locking\Roblox.Locking\Roblox.Locking.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       133
+  Include:    Roblox.Localization.Client\Roblox.Localization.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Localization.Client\Roblox.Localization.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       135
+  Include:    Roblox.LiveGamer\Roblox.LiveGamer.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.LiveGamer\Roblox.LiveGamer.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\LiveGamer\Roblox.LiveGamer\Roblox.LiveGamer.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       137
+  Include:    Roblox.LeasedLocks.Client\Roblox.LeasedLocks.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.LeasedLocks.Client\Roblox.LeasedLocks.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\LeasedLocks\Roblox.LeasedLocks.Client\Roblox.LeasedLocks.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       139
+  Include:    Roblox.Kickbox\Roblox.Kickbox.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Kickbox\Roblox.Kickbox.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\KickBox\Roblox.Kickbox\Roblox.Kickbox.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       141
+  Include:    Roblox.IpGeolocation.Client\Roblox.IpGeolocation.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.IpGeolocation.Client\Roblox.IpGeolocation.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\IpGeolocation\Roblox.IpGeolocation.Client\Roblox.IpGeolocation.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       143
+  Include:    Roblox.Instrumentation\Roblox.Instrumentation.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Instrumentation\Roblox.Instrumentation.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       145
+  Include:    Roblox.Identities.Models\Roblox.Identities.Models.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Identities.Models\Roblox.Identities.Models.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Identities\Roblox.Identities.Models\Roblox.Identities.Models.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       147
+  Include:    Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\Roblox.Http.ServiceClient.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       149
+  Include:    Roblox.Http\Roblox.Http.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http\Roblox.Http.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http\Roblox.Http.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       151
+  Include:    Roblox.Http.Client.Monitoring\Roblox.Http.Client.Monitoring.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.Client.Monitoring\Roblox.Http.Client.Monitoring.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.Client.Monitoring\Roblox.Http.Client.Monitoring.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       153
+  Include:    Roblox.Http.Client\Roblox.Http.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Http.Client\Roblox.Http.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.Client\Roblox.Http.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       155
+  Include:    Roblox.Hashing\Roblox.Hashing.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Hashing\Roblox.Hashing.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Hashing\Roblox.Hashing\Roblox.Hashing.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       157
+  Include:    Roblox.Groups\Roblox.Groups.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Groups\Roblox.Groups.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       159
+  Include:    Roblox.EventLog.Windows\Roblox.EventLog.Windows.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EventLog.Windows\Roblox.EventLog.Windows.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Events\Roblox.EventLog.Windows\Roblox.EventLog.Windows.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       161
+  Include:    Roblox.EventLog\Roblox.EventLog.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EventLog\Roblox.EventLog.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Events\Roblox.EventLog\Roblox.EventLog.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       163
+  Include:    Roblox.EphemeralCounters\Roblox.EphemeralCounters.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters\Roblox.EphemeralCounters.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       165
+  Include:    Roblox.EphemeralCounters.Client\Roblox.EphemeralCounters.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.EphemeralCounters.Client\Roblox.EphemeralCounters.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       167
+  Include:    Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       169
+  Include:    Roblox.Entities\Roblox.Entities.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Entities\Roblox.Entities.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.Entities\Roblox.Entities.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       171
+  Include:    Roblox.Economy\Roblox.Economy.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy\Roblox.Economy.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy\Roblox.Economy.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       173
+  Include:    Roblox.Economy.Common\Roblox.Economy.Common.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Economy.Common\Roblox.Economy.Common.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy.Common\Roblox.Economy.Common.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       175
+  Include:    Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.NetStandard\Roblox.Common.NetStandard.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       177
+  Include:    Roblox.Common\Roblox.Common.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Common\Roblox.Common.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common\Roblox.Common.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       179
+  Include:    Roblox.YouTube\Roblox.YouTube.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.YouTube\Roblox.YouTube.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Youtube\Roblox.YouTube\Roblox.YouTube.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       181
+  Include:    Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       183
+  Include:    Roblox.WebAppUploader\Roblox.WebAppUploader.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.WebAppUploader\Roblox.WebAppUploader.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.WebAppUploader\Roblox.WebAppUploader.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       185
+  Include:    Roblox.Web.StaticContent\Roblox.Web.StaticContent.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.StaticContent\Roblox.Web.StaticContent.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       187
+  Include:    Roblox.Web.SEO\Roblox.Web.SEO.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.SEO\Roblox.Web.SEO.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.SEO\Roblox.Web.SEO.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       189
+  Include:    Roblox.Web.Presence\Roblox.Web.Presence.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.Presence\Roblox.Web.Presence.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.Presence\Roblox.Web.Presence.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       191
+  Include:    Roblox.Web.Metrics\Roblox.Web.Metrics.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.Metrics\Roblox.Web.Metrics.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.Metrics\Roblox.Web.Metrics.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       193
+  Include:    Roblox.Web.ElevatedActions\Roblox.Web.ElevatedActions.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.ElevatedActions\Roblox.Web.ElevatedActions.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.ElevatedActions\Roblox.Web.ElevatedActions.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       195
+  Include:    Roblox.Web\Roblox.Web.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web\Roblox.Web.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web\Roblox.Web.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       197
+  Include:    Roblox.Web.Devices\Roblox.Web.Devices.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.Devices\Roblox.Web.Devices.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.Devices\Roblox.Web.Devices.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       199
+  Include:    Roblox.Web.Code\Roblox.Web.Code.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.Code\Roblox.Web.Code.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.Code\Roblox.Web.Code.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       201
+  Include:    Roblox.Web.Authentication\Roblox.Web.Authentication.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.Authentication\Roblox.Web.Authentication.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.Authentication\Roblox.Web.Authentication.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       203
+  Include:    Roblox.Users\Roblox.Users.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users\Roblox.Users.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       205
+  Include:    Roblox.Users.Client\Roblox.Users.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Users.Client\Roblox.Users.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       207
+  Include:    Roblox.UserCacheMigrationSettings\Roblox.UserCacheMigrationSettings.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.UserCacheMigrationSettings\Roblox.UserCacheMigrationSettings.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       209
+  Include:    Roblox.Collections\Roblox.Collections.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Collections\Roblox.Collections.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Collections\Roblox.Collections\Roblox.Collections.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       211
+  Include:    Roblox.Classification\Roblox.Classification.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Classification\Roblox.Classification.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Classification\Roblox.Classification\Roblox.Classification.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       213
+  Include:    Roblox.BillingTransactionEventPublisher\Roblox.BillingTransactionEventPublisher.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.BillingTransactionEventPublisher\Roblox.BillingTransactionEventPublisher.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Billing\Roblox.BillingTransactionEventPublisher\Roblox.BillingTransactionEventPublisher.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       215
+  Include:    Roblox.Billing\Roblox.Billing.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Billing\Roblox.Billing.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Billing\Roblox.Billing\Roblox.Billing.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       217
+  Include:    Roblox.AuthenticationV2\Roblox.AuthenticationV2.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.AuthenticationV2\Roblox.AuthenticationV2.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       219
+  Include:    Roblox.Assets.Places\Roblox.Assets.Places.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Assets.Places\Roblox.Assets.Places.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       221
+  Include:    Roblox.Assets\Roblox.Assets.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Assets\Roblox.Assets.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Assets\Roblox.Assets\Roblox.Assets.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       223
+  Include:    Roblox.AssetMedia.Entities\Roblox.AssetMedia.Entities.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.AssetMedia.Entities\Roblox.AssetMedia.Entities.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       225
+  Include:    Roblox.Analytics\Roblox.Analytics.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Analytics\Roblox.Analytics.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Analytics\Roblox.Analytics\Roblox.Analytics.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       227
+  Include:    Roblox.Amazon\Roblox.Amazon.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon\Roblox.Amazon.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon\Roblox.Amazon.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       231
+  Include:    Roblox.Thumbnails.RequestValidation\Roblox.Thumbnails.RequestValidation.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Thumbnails.RequestValidation\Roblox.Thumbnails.RequestValidation.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       233
+  Include:    Roblox.TextFilter\Roblox.TextFilter.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.TextFilter\Roblox.TextFilter.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       235
+  Include:    Roblox.TextFilter.Client\Roblox.TextFilter.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.TextFilter.Client\Roblox.TextFilter.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       237
+  Include:    Roblox.StaticContent.Client\Roblox.StaticContent.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.StaticContent.Client\Roblox.StaticContent.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       239
+  Include:    Roblox.ServiceDiscovery\Roblox.ServiceDiscovery.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ServiceDiscovery\Roblox.ServiceDiscovery.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Services\Roblox.ServiceDiscovery\Roblox.ServiceDiscovery.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       241
+  Include:    Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Serialization\Roblox.Serialization.Json\Roblox.Serialization.Json.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       243
+  Include:    Roblox.Sentinels\Roblox.Sentinels.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Sentinels\Roblox.Sentinels.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Sentinels\Roblox.Sentinels\Roblox.Sentinels.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       245
+  Include:    Roblox.Segmentation.Client\Roblox.Segmentation.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Segmentation.Client\Roblox.Segmentation.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Segmentation\Roblox.Segmentation.Client\Roblox.Segmentation.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       247
+  Include:    Roblox.RestClientBase\Roblox.RestClientBase.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.RestClientBase\Roblox.RestClientBase.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.RestClientBase\Roblox.RestClientBase.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       249
+  Include:    Roblox.RequestContext\Roblox.RequestContext.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.RequestContext\Roblox.RequestContext.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\RequestContext\Roblox.RequestContext\Roblox.RequestContext.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       251
+  Include:    Roblox.Redis.Lru\Roblox.Redis.Lru.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis.Lru\Roblox.Redis.Lru.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis.Lru\Roblox.Redis.Lru.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       253
+  Include:    Roblox.Redis\Roblox.Redis.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Redis\Roblox.Redis.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Redis\Roblox.Redis\Roblox.Redis.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       255
+  Include:    Roblox.RealTimeNotifications\Roblox.RealTimeNotifications.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.RealTimeNotifications\Roblox.RealTimeNotifications.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       257
+  Include:    Roblox.RealTimeNotifications.Client\Roblox.RealTimeNotifications.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.RealTimeNotifications.Client\Roblox.RealTimeNotifications.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       259
+  Include:    Roblox.Random\Roblox.Random.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Random\Roblox.Random.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Random\Roblox.Random\Roblox.Random.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       261
+  Include:    Roblox.PremiumFeatures.Models\Roblox.PremiumFeatures.Models.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.PremiumFeatures.Models\Roblox.PremiumFeatures.Models.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       263
+  Include:    Roblox.Platform.Social\Roblox.Platform.Social.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Social\Roblox.Platform.Social.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Social\Roblox.Platform.Social\Roblox.Platform.Social.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       265
+  Include:    Roblox.Platform.Security\Roblox.Platform.Security.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Security\Roblox.Platform.Security.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Security\Roblox.Platform.Security\Roblox.Platform.Security.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       267
+  Include:    Roblox.Platform.Privacy\Roblox.Platform.Privacy.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Privacy\Roblox.Platform.Privacy.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Privacy\Roblox.Platform.Privacy\Roblox.Platform.Privacy.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       269
+  Include:    Roblox.Platform.Presence\Roblox.Platform.Presence.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Presence\Roblox.Platform.Presence.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Presence\Roblox.Platform.Presence\Roblox.Platform.Presence.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       271
+  Include:    Roblox.Platform.PremiumFeatures\Roblox.Platform.PremiumFeatures.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.PremiumFeatures\Roblox.Platform.PremiumFeatures.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Premium\Roblox.Platform.PremiumFeatures\Roblox.Platform.PremiumFeatures.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       273
+  Include:    Roblox.Platform.PolicyLookup\Roblox.Platform.PolicyLookup.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.PolicyLookup\Roblox.Platform.PolicyLookup.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Roblox.Platform\Roblox.Platform.PolicyLookup\Roblox.Platform.PolicyLookup.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       275
+  Include:    Roblox.Platform.Permissions\Roblox.Platform.Permissions.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Permissions\Roblox.Platform.Permissions.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Permissions\Roblox.Platform.Permissions\Roblox.Platform.Permissions.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       277
+  Include:    Roblox.Platform.Permissions.Core\Roblox.Platform.Permissions.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Permissions.Core\Roblox.Platform.Permissions.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Permissions\Roblox.Platform.Permissions.Core\Roblox.Platform.Permissions.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       279
+  Include:    Roblox.Platform.Party\Roblox.Platform.Party.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Party\Roblox.Platform.Party.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Party\Roblox.Platform.Party\Roblox.Platform.Party.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       281
+  Include:    Roblox.Platform.OwnershipV2\Roblox.Platform.OwnershipV2.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.OwnershipV2\Roblox.Platform.OwnershipV2.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Ownership\Roblox.Platform.OwnershipV2\Roblox.Platform.OwnershipV2.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       283
+  Include:    Roblox.Platform.Outfits\Roblox.Platform.Outfits.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Outfits\Roblox.Platform.Outfits.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Outfits\Roblox.Platform.Outfits\Roblox.Platform.Outfits.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       285
+  Include:    Roblox.Platform.Notifications.Stream\Roblox.Platform.Notifications.Stream.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Notifications.Stream\Roblox.Platform.Notifications.Stream.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Notifications\Roblox.Platform.Notifications.Stream\Roblox.Platform.Notifications.Stream.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       287
+  Include:    Roblox.Platform.Notifications.Push\Roblox.Platform.Notifications.Push.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Notifications.Push\Roblox.Platform.Notifications.Push.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Notifications\Roblox.Platform.Notifications.Push\Roblox.Platform.Notifications.Push.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       289
+  Include:    Roblox.Platform.Notifications\Roblox.Platform.Notifications.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Notifications\Roblox.Platform.Notifications.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Notifications\Roblox.Platform.Notifications\Roblox.Platform.Notifications.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       291
+  Include:    Roblox.Platform.Notifications.Core\Roblox.Platform.Notifications.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Notifications.Core\Roblox.Platform.Notifications.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Notifications\Roblox.Platform.Notifications.Core\Roblox.Platform.Notifications.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       293
+  Include:    Roblox.Platform.Notifications.AbTesting\Roblox.Platform.Notifications.AbTesting.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Notifications.AbTesting\Roblox.Platform.Notifications.AbTesting.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Notifications\Roblox.Platform.Notifications.AbTesting\Roblox.Platform.Notifications.AbTesting.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       295
+  Include:    Roblox.Platform.Core\Roblox.Platform.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Core\Roblox.Platform.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       297
+  Include:    Roblox.Platform.Communication.Behavior\Roblox.Platform.Communication.Behavior.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Communication.Behavior\Roblox.Platform.Communication.Behavior.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Communication\Roblox.Platform.Communication.Behavior\Roblox.Platform.Communication.Behavior.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       299
+  Include:    Roblox.Platform.CloudEdit.Permissions\Roblox.Platform.CloudEdit.Permissions.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.CloudEdit.Permissions\Roblox.Platform.CloudEdit.Permissions.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\CloudEdit\Roblox.Platform.CloudEdit.Permissions\Roblox.Platform.CloudEdit.Permissions.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       301
+  Include:    Roblox.Platform.Chat\Roblox.Platform.Chat.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Chat\Roblox.Platform.Chat.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Chat\Roblox.Platform.Chat\Roblox.Platform.Chat.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       303
+  Include:    Roblox.Platform.Captcha\Roblox.Platform.Captcha.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Captcha\Roblox.Platform.Captcha.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Captcha\Roblox.Platform.Captcha\Roblox.Platform.Captcha.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       305
+  Include:    Roblox.Platform.CallContext\Roblox.Platform.CallContext.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.CallContext\Roblox.Platform.CallContext.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\CallContext\Roblox.Platform.CallContext\Roblox.Platform.CallContext.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       307
+  Include:    Roblox.Platform.Billing\Roblox.Platform.Billing.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Billing\Roblox.Platform.Billing.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Billing\Roblox.Platform.Billing\Roblox.Platform.Billing.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       309
+  Include:    Roblox.Platform.Badges\Roblox.Platform.Badges.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Badges\Roblox.Platform.Badges.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Badges\Roblox.Platform.Badges\Roblox.Platform.Badges.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       311
+  Include:    Roblox.Platform.Avatar\Roblox.Platform.Avatar.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Avatar\Roblox.Platform.Avatar.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Avatar\Roblox.Platform.Avatar\Roblox.Platform.Avatar.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       313
+  Include:    Roblox.Platform.Authentication\Roblox.Platform.Authentication.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Authentication\Roblox.Platform.Authentication.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Authentication\Roblox.Platform.Authentication\Roblox.Platform.Authentication.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       315
+  Include:    Roblox.Platform.Authentication.AccountSecurityTickets\Roblox.Platform.Authentication.AccountSecurityTickets.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Authentication.AccountSecurityTickets\Roblox.Platform.Authentication.AccountSecurityTickets.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Authentication\Roblox.Platform.Authentication.AccountSecurityTickets\Roblox.Platform.Authentication.AccountSecurityTickets.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       317
+  Include:    Roblox.Platform.Authentication.AccountSecurity\Roblox.Platform.Authentication.AccountSecurity.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Authentication.AccountSecurity\Roblox.Platform.Authentication.AccountSecurity.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Authentication\Roblox.Platform.Authentication.AccountSecurity\Roblox.Platform.Authentication.AccountSecurity.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       319
+  Include:    Roblox.Platform.AudioRightsManagement\Roblox.Platform.AudioRightsManagement.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AudioRightsManagement\Roblox.Platform.AudioRightsManagement.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\AudioRights\Roblox.Platform.AudioRightsManagement\Roblox.Platform.AudioRightsManagement.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       321
+  Include:    Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Assets\Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       323
+  Include:    Roblox.Platform.Assets.Places\Roblox.Platform.Assets.Places.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Assets.Places\Roblox.Platform.Assets.Places.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Assets\Roblox.Platform.Assets.Places\Roblox.Platform.Assets.Places.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       325
+  Include:    Roblox.Platform.Assets\Roblox.Platform.Assets.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Platform.Assets\Roblox.Platform.Assets.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Assets\Roblox.Platform.Assets\Roblox.Platform.Assets.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       327
+  Include:    Roblox.Passwords.Client\Roblox.Passwords.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Passwords.Client\Roblox.Passwords.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Passwords\Roblox.Passwords.Client\Roblox.Passwords.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       329
+  Include:    Roblox.Paging\Roblox.Paging.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Paging\Roblox.Paging.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.Paging\Roblox.Paging.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       331
+  Include:    Roblox.Outfits\Roblox.Outfits.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Outfits\Roblox.Outfits.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       333
+  Include:    Roblox.Networking\Roblox.Networking.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Networking\Roblox.Networking.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Networking\Roblox.Networking\Roblox.Networking.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       335
+  Include:    Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       337
+  Include:    Roblox.Mssql\Roblox.Mssql.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Mssql\Roblox.Mssql.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Mssql\Roblox.Mssql\Roblox.Mssql.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       339
+  Include:    Roblox.Moderation\Roblox.Moderation.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Moderation\Roblox.Moderation.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Moderation\Roblox.Moderation\Roblox.Moderation.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       341
+  Include:    Roblox.MemCachedClient\Roblox.MemCachedClient.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.MemCachedClient\Roblox.MemCachedClient.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.MemCachedClient\Roblox.MemCachedClient.csproj; C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.MemCachedClient\Roblox.MemCachedClient.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       343
+  Include:    Roblox.GoogleAPI.Interfaces\Roblox.GoogleAPI.Interfaces.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.GoogleAPI.Interfaces\Roblox.GoogleAPI.Interfaces.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Google\Roblox.GoogleAPI.Interfaces\Roblox.GoogleAPI.Interfaces.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       345
+  Include:    Roblox.Gigya\Roblox.Gigya.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Gigya\Roblox.Gigya.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.Gigya\Roblox.Gigya.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       347
+  Include:    Roblox.Games.Client\Roblox.Games.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Games.Client\Roblox.Games.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       349
+  Include:    Roblox.GameInstances.Client\Roblox.GameInstances.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.GameInstances.Client\Roblox.GameInstances.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       351
+  Include:    Roblox.FloodCheckers.Redis\Roblox.FloodCheckers.Redis.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.FloodCheckers.Redis\Roblox.FloodCheckers.Redis.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\FloodCheckers\Roblox.FloodCheckers.Redis\Roblox.FloodCheckers.Redis.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       353
+  Include:    Roblox.FloodCheckers\Roblox.FloodCheckers.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\FloodCheckers\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       355
+  Include:    Roblox.FloodCheckers.Core\Roblox.FloodCheckers.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.FloodCheckers.Core\Roblox.FloodCheckers.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\FloodCheckers\Roblox.FloodCheckers.Core\Roblox.FloodCheckers.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       357
+  Include:    Roblox.Files.Client\Roblox.Files.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Files.Client\Roblox.Files.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Files\Roblox.Files.Client\Roblox.Files.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       359
+  Include:    Roblox.Drawing\Roblox.Drawing.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Drawing\Roblox.Drawing.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Drawing\Roblox.Drawing\Roblox.Drawing.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       361
+  Include:    Roblox.Diagnostics\Roblox.Diagnostics.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Diagnostics\Roblox.Diagnostics.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Diagnostics\Roblox.Diagnostics\Roblox.Diagnostics.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       363
+  Include:    Roblox.Demographics\Roblox.Demographics.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Demographics\Roblox.Demographics.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Platform\Demographics\Roblox.Platform.Demographics\Roblox.DemographicsTodo\Roblox.Demographics.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       365
+  Include:    Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\DataV2\Core\Roblox.DataV2.Core\Roblox.DataV2.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       367
+  Include:    Roblox.Data\Roblox.Data.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Data\Roblox.Data.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Data\Roblox.Data\Roblox.Data.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       369
+  Include:    Roblox.Coordination\Roblox.Coordination.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Coordination\Roblox.Coordination.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Coordination\Roblox.Coordination\Roblox.Coordination.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       371
+  Include:    Roblox.Controls\Roblox.Controls.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Controls\Roblox.Controls.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Controls\Roblox.Controls\Roblox.Controls.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       373
+  Include:    Roblox.ContentRatings\Roblox.ContentRatings.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ContentRatings\Roblox.ContentRatings.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       375
+  Include:    Roblox.Configuration\Roblox.Configuration.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Configuration\Roblox.Configuration.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration\Roblox.Configuration.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       377
+  Include:    Roblox.Configuration.Client\Roblox.Configuration.Client.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Configuration.Client\Roblox.Configuration.Client.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Configuration\Roblox.Configuration.Client\Roblox.Configuration.Client.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       379
+  Include:    Roblox.CommunitySift\Roblox.CommunitySift.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.CommunitySift\Roblox.CommunitySift.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Community\Roblox.CommunitySift\Roblox.CommunitySift.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       381
+  Include:    Roblox.Common.Web\Roblox.Common.Web.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Common.Web\Roblox.Common.Web.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\Roblox.Common.Web.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       383
+  Include:    Roblox.CatalogItemChangePublisher\Roblox.CatalogItemChangePublisher.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.CatalogItemChangePublisher\Roblox.CatalogItemChangePublisher.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       385
+  Include:    Roblox.Captcha.Entities\Roblox.Captcha.Entities.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Captcha.Entities\Roblox.Captcha.Entities.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       387
+  Include:    Roblox.CachingV2.MemoryCache\Roblox.CachingV2.MemoryCache.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.CachingV2.MemoryCache\Roblox.CachingV2.MemoryCache.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.CachingV2.MemoryCache\Roblox.CachingV2.MemoryCache.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       389
+  Include:    Roblox.CachingV2.Diagnostics\Roblox.CachingV2.Diagnostics.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.CachingV2.Diagnostics\Roblox.CachingV2.Diagnostics.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.CachingV2.Diagnostics\Roblox.CachingV2.Diagnostics.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       391
+  Include:    Roblox.CachingV2.Core\Roblox.CachingV2.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.CachingV2.Core\Roblox.CachingV2.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.CachingV2.Core\Roblox.CachingV2.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       393
+  Include:    Roblox.Caching\Roblox.Caching.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Caching\Roblox.Caching.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Caching\Roblox.Caching\Roblox.Caching.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       395
+  Include:    Roblox.BucketStore\Roblox.BucketStore.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.BucketStore\Roblox.BucketStore.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.BucketStore\Roblox.BucketStore.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       397
+  Include:    Roblox.BriteVerify\Roblox.BriteVerify.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.BriteVerify\Roblox.BriteVerify.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox\Roblox.BriteVerify\Roblox.BriteVerify.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       399
+  Include:    Roblox.AssetMedia\Roblox.AssetMedia.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.AssetMedia\Roblox.AssetMedia.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       401
+  Include:    Roblox.ApiClientBase\Roblox.ApiClientBase.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\ApiClientBase\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       403
+  Include:    Roblox.Amazon.Sqs\Roblox.Amazon.Sqs.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sqs\Roblox.Amazon.Sqs.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon.Sqs\Roblox.Amazon.Sqs.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       405
+  Include:    Roblox.Amazon.Sns\Roblox.Amazon.Sns.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Sns\Roblox.Amazon.Sns.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon.Sns\Roblox.Amazon.Sns.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       407
+  Include:    Roblox.Amazon.Firehose\Roblox.Amazon.Firehose.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Firehose\Roblox.Amazon.Firehose.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon.Firehose\Roblox.Amazon.Firehose.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       409
+  Include:    Roblox.Amazon.DynamoDb\Roblox.Amazon.DynamoDb.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.DynamoDb\Roblox.Amazon.DynamoDb.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon.DynamoDb\Roblox.Amazon.DynamoDb.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       411
+  Include:    Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Amazon\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       413
+  Include:    Roblox.Agents\Roblox.Agents.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Agents\Roblox.Agents.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Agents\Roblox.Agents\Roblox.Agents.csproj
+
+- Solution:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.sln
+  Line:       415
+  Include:    Roblox.Web.Thumbnails\Roblox.Web.Thumbnails.csproj
+  Resolved:   C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Roblox.Web.Thumbnails\Roblox.Web.Thumbnails.csproj
+  Candidates: C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Web\Roblox.Web.Thumbnails\Roblox.Web.Thumbnails.csproj
+
+Potential script literal references to .csproj: 0
+Done.
+

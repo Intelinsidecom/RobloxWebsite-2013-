@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using Roblox.Amazon.Firehose;
 using Roblox.EventLog;
-using Roblox.Platform.EventStream.Properties;
+using Roblox.EventStream.Properties;
+namespace Roblox.EventStream {
+    class AmazonKinesisFirehoseAssetHandlerDataSender : IDataSender
 
-namespace Roblox.Platform.EventStream;
-
-public class AmazonKinesisFirehoseAssetHandlerDataSender : IDataSender
 {
 	private readonly AmazonKinesisFirehoseBatchEventSender _AmazonKinesisFirehoseBatchEventSender;
 
@@ -26,4 +25,7 @@ public class AmazonKinesisFirehoseAssetHandlerDataSender : IDataSender
 			_AmazonKinesisFirehoseBatchEventSender.EnqueueWork(data);
 		}
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ChinaPaymentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class ChinaPaymentResources_ko_kr : ChinaPaymentResources_en_us, IChina
 	/// Key: "Heading.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingError => "오류";
+	public override string HeadingError => "ì˜¤ë¥˜";
 
 	/// <summary>
 	/// Key: "Message.ScriptNotLoadError"
 	/// English String: "We have a problem loading the Midas script now. Please try again later"
 	/// </summary>
-	public override string MessageScriptNotLoadError => "지금 Midas 스크립트를 불러오는 데에 문제가 있습니다. 잠시 후에 다시 시도하세요.";
+	public override string MessageScriptNotLoadError => "ì§€ê¸ˆ Midas ìŠ¤í¬ë¦½íŠ¸ë¥¼ ë¶ˆëŸ¬ì˜¤ëŠ” ë°ì— ë¬¸ì œê°€ ìžˆìŠµë‹ˆë‹¤. ìž ì‹œ í›„ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.SessionExpiredError"
 	/// English String: "Looks like your WeChat session is expired and we cannot process your request. Please log out and log in again."
 	/// </summary>
-	public override string MessageSessionExpiredError => "WeChat 세션이 만료되어 요청을 처리할 수 없어요. 로그아웃하여 다시 로그인하세요.";
+	public override string MessageSessionExpiredError => "WeChat ì„¸ì…˜ì´ ë§Œë£Œë˜ì–´ ìš”ì²­ì„ ì²˜ë¦¬í•  ìˆ˜ ì—†ì–´ìš”. ë¡œê·¸ì•„ì›ƒí•˜ì—¬ ë‹¤ì‹œ ë¡œê·¸ì¸í•˜ì„¸ìš”.";
 
 	public ChinaPaymentResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -31,16 +31,19 @@ internal class ChinaPaymentResources_ko_kr : ChinaPaymentResources_en_us, IChina
 
 	protected override string _GetTemplateForHeadingError()
 	{
-		return "오류";
+		return "ì˜¤ë¥˜";
 	}
 
 	protected override string _GetTemplateForMessageScriptNotLoadError()
 	{
-		return "지금 Midas 스크립트를 불러오는 데에 문제가 있습니다. 잠시 후에 다시 시도하세요.";
+		return "ì§€ê¸ˆ Midas ìŠ¤í¬ë¦½íŠ¸ë¥¼ ë¶ˆëŸ¬ì˜¤ëŠ” ë°ì— ë¬¸ì œê°€ ìžˆìŠµë‹ˆë‹¤. ìž ì‹œ í›„ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageSessionExpiredError()
 	{
-		return "WeChat 세션이 만료되어 요청을 처리할 수 없어요. 로그아웃하여 다시 로그인하세요.";
+		return "WeChat ì„¸ì…˜ì´ ë§Œë£Œë˜ì–´ ìš”ì²­ì„ ì²˜ë¦¬í•  ìˆ˜ ì—†ì–´ìš”. ë¡œê·¸ì•„ì›ƒí•˜ì—¬ ë‹¤ì‹œ ë¡œê·¸ì¸í•˜ì„¸ìš”.";
 	}
+}
+
+
 }

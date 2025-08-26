@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class CaptchaResources_en_us : TranslationResourcesBase, ICaptchaResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class CaptchaResources_en_us : TranslationResourcesBase, ICaptchaResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -72,4 +71,7 @@ internal class CaptchaResources_en_us : TranslationResourcesBase, ICaptchaResour
 	{
 		return "Temporary error. Please try again in a few minutes";
 	}
+}
+
+
 }

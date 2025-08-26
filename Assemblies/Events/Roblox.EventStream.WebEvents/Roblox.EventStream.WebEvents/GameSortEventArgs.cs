@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameSortEventArgs : GameSortSearchBaseEventArgs
 
-public class GameSortEventArgs : GameSortSearchBaseEventArgs
 {
 	/// <summary>
 	/// Position of sort on the page.
@@ -19,3 +20,12 @@ public class GameSortEventArgs : GameSortSearchBaseEventArgs
 
 	public bool? IsSeeAllPage { get; set; }
 }
+
+
+}
+
+
+
+
+
+

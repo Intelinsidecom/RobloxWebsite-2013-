@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IGrantedItemListActivationTaskEntityFactory
 
-namespace Roblox.PremiumFeatures;
-
-public interface IGrantedItemListActivationTaskEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.PremiumFeatures.IGrantedItemListActivationTaskEntity" /> by its ID.
@@ -31,4 +30,7 @@ public interface IGrantedItemListActivationTaskEntityFactory
 	/// - <paramref name="maxToLease" />
 	/// </exception>
 	ICollection<IGrantedItemListActivationTaskEntity> LeaseTasks(byte grantedItemTypeId, Guid workerId, int leaseDurationInMinutes, int maxToLease);
+}
+
+
 }

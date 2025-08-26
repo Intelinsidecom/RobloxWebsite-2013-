@@ -164,7 +164,7 @@ internal class ServerValidatorInstance : IServerValidator
 
 	private void ReadAllowedProxyServerTypeIdsFromSettings()
 	{
-		_AllowedProxyServerTypeIds = MultiValueSettingParser.ParseCommaDelimitedListString(_Settings.AllowedXForwardedForProxyServerTypeIds, int.Parse);
+		_AllowedProxyServerTypeIds = MultiValueSettingParser.TryParseCommaDelimitedListString(_Settings.AllowedXForwardedForProxyServerTypeIds, int.Parse);
 	}
 
 	private void ReadWhitelistedIpRangesFromSettings()

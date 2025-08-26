@@ -1,6 +1,9 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accountsinternal {
+    interface IAuditParameterValidator
 
-internal interface IAuditParameterValidator
 {
 	void ValidateChangeAgent(IAccountCountriesChangeAgent changeAgent);
+}
+
+
 }

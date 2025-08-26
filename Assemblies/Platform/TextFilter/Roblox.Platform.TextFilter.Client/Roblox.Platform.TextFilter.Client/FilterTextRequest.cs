@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.TextFilter.Client {
+    [DataContract]
 
-namespace Roblox.TextFilter.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 internal class FilterTextRequest
 {
@@ -25,4 +24,7 @@ internal class FilterTextRequest
 
 	[DataMember(Name = "ignoreVerticalFilter")]
 	public bool IgnoreVerticalFilter { get; set; }
+}
+
+
 }

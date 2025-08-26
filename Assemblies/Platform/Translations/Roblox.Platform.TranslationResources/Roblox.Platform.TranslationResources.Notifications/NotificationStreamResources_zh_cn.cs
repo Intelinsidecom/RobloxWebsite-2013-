@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notifications {
+    /// <summary>
 
-/// <summary>
 /// This class overrides NotificationStreamResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,108 +10,108 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "接受";
+	public override string ActionAccept => "æŽ¥å—";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string ActionChat => "聊天";
+	public override string ActionChat => "èŠå¤©";
 
 	/// <summary>
 	/// Key: "Action.Ignore"
 	/// English String: "Ignore"
 	/// </summary>
-	public override string ActionIgnore => "忽略";
+	public override string ActionIgnore => "å¿½ç•¥";
 
 	/// <summary>
 	/// Key: "Action.Play"
 	/// Label for button to launch game.
 	/// English String: "Play"
 	/// </summary>
-	public override string ActionPlay => "开始游戏";
+	public override string ActionPlay => "å¼€å§‹æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// Label for link to report a game update message
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "报告滥用行为";
+	public override string ActionReportAbuse => "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
 
 	/// <summary>
 	/// Key: "Action.Undo"
 	/// Label for Undo link to reverse the unfollow action
 	/// English String: "Undo"
 	/// </summary>
-	public override string ActionUndo => "撤消";
+	public override string ActionUndo => "æ’¤æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.View"
 	/// English String: "View"
 	/// </summary>
-	public override string ActionView => "查看";
+	public override string ActionView => "æŸ¥çœ‹";
 
 	/// <summary>
 	/// Key: "Action.ViewAll"
 	/// English String: "View All"
 	/// </summary>
-	public override string ActionViewAll => "查看所有";
+	public override string ActionViewAll => "æŸ¥çœ‹æ‰€æœ‰";
 
 	/// <summary>
 	/// Key: "Heading.BackToAllNotifications"
 	/// Heading displayed in game updates view, containing back link to notifications main view.
 	/// English String: "All Notifications"
 	/// </summary>
-	public override string HeadingBackToAllNotifications => "所有通知";
+	public override string HeadingBackToAllNotifications => "æ‰€æœ‰é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Label.NoNetworkConnectionText"
 	/// English String: "Connecting..."
 	/// </summary>
-	public override string LabelNoNetworkConnectionText => "正在连接...";
+	public override string LabelNoNetworkConnectionText => "æ­£åœ¨è¿žæŽ¥...";
 
 	/// <summary>
 	/// Key: "Label.NoNotifications"
 	/// English String: "No Notifications"
 	/// </summary>
-	public override string LabelNoNotifications => "无通知";
+	public override string LabelNoNotifications => "æ— é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Label.Notifications"
 	/// English String: "Notifications"
 	/// </summary>
-	public override string LabelNotifications => "通知";
+	public override string LabelNotifications => "é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Label.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelSettings => "设置";
+	public override string LabelSettings => "è®¾ç½®";
 
 	/// <summary>
 	/// Key: "Message.GameNotPlayableOnDevice"
 	/// Message displayed on game update card when the game is not playable on the device type.
 	/// English String: "Not playable on this device"
 	/// </summary>
-	public override string MessageGameNotPlayableOnDevice => "在此设备上不可玩";
+	public override string MessageGameNotPlayableOnDevice => "åœ¨æ­¤è®¾å¤‡ä¸Šä¸å¯çŽ©";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsOther"
 	/// English String: "That user already has the max number of friends."
 	/// </summary>
-	public override string MessageTooManyFriendsOther => "该用户的好友人数已达上限。";
+	public override string MessageTooManyFriendsOther => "è¯¥ç”¨æˆ·çš„å¥½å‹äººæ•°å·²è¾¾ä¸Šé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsSelf"
 	/// English String: "You already have the max number of friends."
 	/// </summary>
-	public override string MessageTooManyFriendsSelf => "你的好友人数已达上限。";
+	public override string MessageTooManyFriendsSelf => "ä½ çš„å¥½å‹äººæ•°å·²è¾¾ä¸Šé™ã€‚";
 
 	public NotificationStreamResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -120,37 +120,37 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "接受";
+		return "æŽ¥å—";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionChat()
 	{
-		return "聊天";
+		return "èŠå¤©";
 	}
 
 	protected override string _GetTemplateForActionIgnore()
 	{
-		return "忽略";
+		return "å¿½ç•¥";
 	}
 
 	protected override string _GetTemplateForActionPlay()
 	{
-		return "开始游戏";
+		return "å¼€å§‹æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "报告滥用行为";
+		return "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
 	}
 
 	protected override string _GetTemplateForActionUndo()
 	{
-		return "撤消";
+		return "æ’¤æ¶ˆ";
 	}
 
 	/// <summary>
@@ -160,47 +160,47 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string ActionUnfollowGame(string gameName)
 	{
-		return $"取消关注 {gameName}";
+		return $"å–æ¶ˆå…³æ³¨ {gameName}";
 	}
 
 	protected override string _GetTemplateForActionUnfollowGame()
 	{
-		return "取消关注 {gameName}";
+		return "å–æ¶ˆå…³æ³¨ {gameName}";
 	}
 
 	protected override string _GetTemplateForActionView()
 	{
-		return "查看";
+		return "æŸ¥çœ‹";
 	}
 
 	protected override string _GetTemplateForActionViewAll()
 	{
-		return "查看所有";
+		return "æŸ¥çœ‹æ‰€æœ‰";
 	}
 
 	protected override string _GetTemplateForHeadingBackToAllNotifications()
 	{
-		return "所有通知";
+		return "æ‰€æœ‰é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForLabelNoNetworkConnectionText()
 	{
-		return "正在连接...";
+		return "æ­£åœ¨è¿žæŽ¥...";
 	}
 
 	protected override string _GetTemplateForLabelNoNotifications()
 	{
-		return "无通知";
+		return "æ— é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForLabelNotifications()
 	{
-		return "通知";
+		return "é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForLabelSettings()
 	{
-		return "设置";
+		return "è®¾ç½®";
 	}
 
 	/// <summary>
@@ -210,17 +210,17 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageAggregatedGameUpdateDouble(string gameOne, string gameTwo)
 	{
-		return $"{gameOne} 和 {gameTwo} 已发送更新。";
+		return $"{gameOne} å’Œ {gameTwo} å·²å‘é€æ›´æ–°ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAggregatedGameUpdateDouble()
 	{
-		return "{gameOne} 和 {gameTwo} 已发送更新。";
+		return "{gameOne} å’Œ {gameTwo} å·²å‘é€æ›´æ–°ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAggregatedGameUpdateMultiple()
 	{
-		return "{gameOne}，{gameTwo} 及 {otherCount, plural,=1 {#个其他游戏}other {# 个其他游戏}}已发布更新。";
+		return "{gameOne}ï¼Œ{gameTwo} åŠ {otherCount, plural,=1 {#ä¸ªå…¶ä»–æ¸¸æˆ}other {# ä¸ªå…¶ä»–æ¸¸æˆ}}å·²å‘å¸ƒæ›´æ–°ã€‚";
 	}
 
 	/// <summary>
@@ -229,17 +229,17 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmAcceptedDouble(string userOne, string userTwo)
 	{
-		return $"{userOne} 和 {userTwo}";
+		return $"{userOne} å’Œ {userTwo}";
 	}
 
 	protected override string _GetTemplateForMessageConfirmAcceptedDouble()
 	{
-		return "{userOne} 和 {userTwo}";
+		return "{userOne} å’Œ {userTwo}";
 	}
 
 	protected override string _GetTemplateForMessageConfirmAcceptedMultiple()
 	{
-		return "{userOne}、{userTwo} 和 {userMultipleCount, plural, =1 {# 人} other {# 人}}";
+		return "{userOne}ã€{userTwo} å’Œ {userMultipleCount, plural, =1 {# äºº} other {# äºº}}";
 	}
 
 	/// <summary>
@@ -262,17 +262,17 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmSentDouble(string userOne, string userTwo)
 	{
-		return $"{userOne} 和 {userTwo} 现在是你的好友了！";
+		return $"{userOne} å’Œ {userTwo} çŽ°åœ¨æ˜¯ä½ çš„å¥½å‹äº†ï¼";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentDouble()
 	{
-		return "{userOne} 和 {userTwo} 现在是你的好友了！";
+		return "{userOne} å’Œ {userTwo} çŽ°åœ¨æ˜¯ä½ çš„å¥½å‹äº†ï¼";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentMultiple()
 	{
-		return "{userOne}、{userTwo} 和其他 {userMultipleCount, plural, =1 {# 人} other {# 人}}现在是你的好友了！";
+		return "{userOne}ã€{userTwo} å’Œå…¶ä»– {userMultipleCount, plural, =1 {# äºº} other {# äºº}}çŽ°åœ¨æ˜¯ä½ çš„å¥½å‹äº†ï¼";
 	}
 
 	/// <summary>
@@ -281,12 +281,12 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmSentSingle(string userOne)
 	{
-		return $"{userOne} 现在是你的好友了！";
+		return $"{userOne} çŽ°åœ¨æ˜¯ä½ çš„å¥½å‹äº†ï¼";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentSingle()
 	{
-		return "{userOne} 现在是你的好友了！";
+		return "{userOne} çŽ°åœ¨æ˜¯ä½ çš„å¥½å‹äº†ï¼";
 	}
 
 	/// <summary>
@@ -295,17 +295,17 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailable(string month, string year, string gameName)
 	{
-		return $"“{gameName}”{year}年{month}的分析报告已开放。";
+		return $"â€œ{gameName}â€{year}å¹´{month}çš„åˆ†æžæŠ¥å‘Šå·²å¼€æ”¾ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailable()
 	{
-		return "“{gameName}”{year}年{month}的分析报告已开放。";
+		return "â€œ{gameName}â€{year}å¹´{month}çš„åˆ†æžæŠ¥å‘Šå·²å¼€æ”¾ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple()
 	{
-		return "“{gameName}”和另外 {otherCount, plural, =1 {# 个游戏} other {# 个游戏}}{year}年{month}的分析报告已开放。";
+		return "â€œ{gameName}â€å’Œå¦å¤– {otherCount, plural, =1 {# ä¸ªæ¸¸æˆ} other {# ä¸ªæ¸¸æˆ}}{year}å¹´{month}çš„åˆ†æžæŠ¥å‘Šå·²å¼€æ”¾ã€‚";
 	}
 
 	/// <summary>
@@ -314,12 +314,12 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailableMultiple2(string month, string year, string gameCount)
 	{
-		return $"{gameCount} 个游戏{year}年{month}的分析报告已开放。";
+		return $"{gameCount} ä¸ªæ¸¸æˆ{year}å¹´{month}çš„åˆ†æžæŠ¥å‘Šå·²å¼€æ”¾ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple2()
 	{
-		return "{gameCount} 个游戏{year}年{month}的分析报告已开放。";
+		return "{gameCount} ä¸ªæ¸¸æˆ{year}å¹´{month}çš„åˆ†æžæŠ¥å‘Šå·²å¼€æ”¾ã€‚";
 	}
 
 	/// <summary>
@@ -328,17 +328,17 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestAcceptedDouble(string userOne, string userTwo)
 	{
-		return $"{userOne} 和 {userTwo} 已接受了你的好友邀请。";
+		return $"{userOne} å’Œ {userTwo} å·²æŽ¥å—äº†ä½ çš„å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedDouble()
 	{
-		return "{userOne} 和 {userTwo} 已接受了你的好友邀请。";
+		return "{userOne} å’Œ {userTwo} å·²æŽ¥å—äº†ä½ çš„å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedMultiple()
 	{
-		return "{userOne}、{userTwo} 和其他 {userMultipleCount, plural, =1 {# 人} other {# 人}}已接受了你的好友邀请。";
+		return "{userOne}ã€{userTwo} å’Œå…¶ä»– {userMultipleCount, plural, =1 {# äºº} other {# äºº}}å·²æŽ¥å—äº†ä½ çš„å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	/// <summary>
@@ -347,12 +347,12 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestAcceptedSingle(string userOne)
 	{
-		return $"{userOne} 已接受了你的好友邀请。";
+		return $"{userOne} å·²æŽ¥å—äº†ä½ çš„å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedSingle()
 	{
-		return "{userOne} 已接受了你的好友邀请。";
+		return "{userOne} å·²æŽ¥å—äº†ä½ çš„å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	/// <summary>
@@ -361,17 +361,17 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestSentDouble(string userOne, string userTwo)
 	{
-		return $"{userOne} 和 {userTwo} 向你发出了好友邀请。";
+		return $"{userOne} å’Œ {userTwo} å‘ä½ å‘å‡ºäº†å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentDouble()
 	{
-		return "{userOne} 和 {userTwo} 向你发出了好友邀请。";
+		return "{userOne} å’Œ {userTwo} å‘ä½ å‘å‡ºäº†å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentMultiple()
 	{
-		return "{userOne}、{userTwo} 和其他 {userMultipleCount, plural, =1 {# 人} other {# 人}}向你发出了好友邀请。";
+		return "{userOne}ã€{userTwo} å’Œå…¶ä»– {userMultipleCount, plural, =1 {# äºº} other {# äºº}}å‘ä½ å‘å‡ºäº†å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	/// <summary>
@@ -380,17 +380,17 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestSentSingle(string userOne)
 	{
-		return $"{userOne} 向你发出了好友邀请。";
+		return $"{userOne} å‘ä½ å‘å‡ºäº†å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentSingle()
 	{
-		return "{userOne} 向你发出了好友邀请。";
+		return "{userOne} å‘ä½ å‘å‡ºäº†å¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGameNotPlayableOnDevice()
 	{
-		return "在此设备上不可玩";
+		return "åœ¨æ­¤è®¾å¤‡ä¸Šä¸å¯çŽ©";
 	}
 
 	/// <summary>
@@ -399,12 +399,12 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageMessageAndPreview(string titleStart, string username, string titleEnd, string message)
 	{
-		return $"{titleStart}{username}发来信息：{titleEnd} {message}";
+		return $"{titleStart}{username}å‘æ¥ä¿¡æ¯ï¼š{titleEnd} {message}";
 	}
 
 	protected override string _GetTemplateForMessageMessageAndPreview()
 	{
-		return "{titleStart}{username}发来信息：{titleEnd} {message}";
+		return "{titleStart}{username}å‘æ¥ä¿¡æ¯ï¼š{titleEnd} {message}";
 	}
 
 	/// <summary>
@@ -413,27 +413,27 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageMessageFrom(string username)
 	{
-		return $"{username} 发来信息：";
+		return $"{username} å‘æ¥ä¿¡æ¯ï¼š";
 	}
 
 	protected override string _GetTemplateForMessageMessageFrom()
 	{
-		return "{username} 发来信息：";
+		return "{username} å‘æ¥ä¿¡æ¯ï¼š";
 	}
 
 	protected override string _GetTemplateForMessageNumberofNewNotifications()
 	{
-		return "{notificationCount, plural, =1 {# 条新通知} other {# 条新通知}}";
+		return "{notificationCount, plural, =1 {# æ¡æ–°é€šçŸ¥} other {# æ¡æ–°é€šçŸ¥}}";
 	}
 
 	protected override string _GetTemplateForMessageTooManyFriendsOther()
 	{
-		return "该用户的好友人数已达上限。";
+		return "è¯¥ç”¨æˆ·çš„å¥½å‹äººæ•°å·²è¾¾ä¸Šé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyFriendsSelf()
 	{
-		return "你的好友人数已达上限。";
+		return "ä½ çš„å¥½å‹äººæ•°å·²è¾¾ä¸Šé™ã€‚";
 	}
 
 	/// <summary>
@@ -443,26 +443,29 @@ internal class NotificationStreamResources_zh_cn : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageUnfollowedGame(string gameName)
 	{
-		return $"已取消关注 {gameName}";
+		return $"å·²å–æ¶ˆå…³æ³¨ {gameName}";
 	}
 
 	protected override string _GetTemplateForMessageUnfollowedGame()
 	{
-		return "已取消关注 {gameName}";
+		return "å·²å–æ¶ˆå…³æ³¨ {gameName}";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNewFriendRequests()
 	{
-		return "你有 {numberOfRequests} 条新的{numberOfRequests, plural, =1 {好友邀请} other {好友邀请}}。";
+		return "ä½ æœ‰ {numberOfRequests} æ¡æ–°çš„{numberOfRequests, plural, =1 {å¥½å‹é‚€è¯·} other {å¥½å‹é‚€è¯·}}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNewFriends()
 	{
-		return "你有 {numberOfFriends} 位新{numberOfFriends, plural, =1 {好友} other {好友}}。";
+		return "ä½ æœ‰ {numberOfFriends} ä½æ–°{numberOfFriends, plural, =1 {å¥½å‹} other {å¥½å‹}}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageYouReceivedMessages()
 	{
-		return "你收到了 {numberOfMessagesText} 条{numberOfMessages, plural, =1 {信息} other {信息}}";
+		return "ä½ æ”¶åˆ°äº† {numberOfMessagesText} æ¡{numberOfMessages, plural, =1 {ä¿¡æ¯} other {ä¿¡æ¯}}";
 	}
+}
+
+
 }

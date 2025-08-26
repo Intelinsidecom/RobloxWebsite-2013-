@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GameDetailsResourceFactory
 
-internal static class GameDetailsResourceFactory
 {
 	public const string FullNamespace = "Feature.GameDetails";
 
@@ -21,4 +21,7 @@ internal static class GameDetailsResourceFactory
 			_ => new GameDetailsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AssetTypesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,40 +10,40 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.Accessories"
 	/// English String: "Accessories"
 	/// </summary>
-	public override string LabelAccessories => "Acessórios";
+	public override string LabelAccessories => "AcessÃ³rios";
 
 	/// <summary>
 	/// Key: "Label.Accessory"
 	/// Accessory asset group, in singular form
 	/// English String: "Accessory"
 	/// </summary>
-	public override string LabelAccessory => "Acessório";
+	public override string LabelAccessory => "AcessÃ³rio";
 
 	/// <summary>
 	/// Key: "Label.Animation"
 	/// Asset type Animation, singular form
 	/// English String: "Animation"
 	/// </summary>
-	public override string LabelAnimation => "Animações";
+	public override string LabelAnimation => "AnimaÃ§Ãµes";
 
 	/// <summary>
 	/// Key: "Label.Animations"
 	/// English String: "Animations"
 	/// </summary>
-	public override string LabelAnimations => "Animações";
+	public override string LabelAnimations => "AnimaÃ§Ãµes";
 
 	/// <summary>
 	/// Key: "Label.Audio"
 	/// English String: "Audio"
 	/// </summary>
-	public override string LabelAudio => "Áudio";
+	public override string LabelAudio => "Ãudio";
 
 	/// <summary>
 	/// Key: "Label.AvatarAnimations"
 	/// Avatar Animations allow the user to have their character or avatar move differently within the game.
 	/// English String: "Avatar Animations"
 	/// </summary>
-	public override string LabelAvatarAnimations => "Animações de avatar";
+	public override string LabelAvatarAnimations => "AnimaÃ§Ãµes de avatar";
 
 	/// <summary>
 	/// Key: "Label.Back"
@@ -56,7 +56,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.BackAccessory"
 	/// English String: "Back Accessory"
 	/// </summary>
-	public override string LabelBackAccessory => "Acessório de costas";
+	public override string LabelBackAccessory => "AcessÃ³rio de costas";
 
 	/// <summary>
 	/// Key: "Label.Badge"
@@ -120,7 +120,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.FaceAccessory"
 	/// English String: "Face Accessory"
 	/// </summary>
-	public override string LabelFaceAccessory => "Acessório de rosto";
+	public override string LabelFaceAccessory => "AcessÃ³rio de rosto";
 
 	/// <summary>
 	/// Key: "Label.Faces"
@@ -145,7 +145,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.FrontAccessory"
 	/// English String: "Front Accessory"
 	/// </summary>
-	public override string LabelFrontAccessory => "Acessório da frente";
+	public override string LabelFrontAccessory => "AcessÃ³rio da frente";
 
 	/// <summary>
 	/// Key: "Label.Game"
@@ -182,32 +182,32 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.HairAccessory"
 	/// English String: "Hair Accessory"
 	/// </summary>
-	public override string LabelHairAccessory => "Acessório de cabelo";
+	public override string LabelHairAccessory => "AcessÃ³rio de cabelo";
 
 	/// <summary>
 	/// Key: "Label.Hat"
 	/// English String: "Hat"
 	/// </summary>
-	public override string LabelHat => "Chapéu";
+	public override string LabelHat => "ChapÃ©u";
 
 	/// <summary>
 	/// Key: "Label.Hats"
 	/// English String: "Hats"
 	/// </summary>
-	public override string LabelHats => "Chapéus";
+	public override string LabelHats => "ChapÃ©us";
 
 	/// <summary>
 	/// Key: "Label.Head"
 	/// Asset type Head, singular form
 	/// English String: "Head"
 	/// </summary>
-	public override string LabelHead => "Cabeça";
+	public override string LabelHead => "CabeÃ§a";
 
 	/// <summary>
 	/// Key: "Label.Heads"
 	/// English String: "Heads"
 	/// </summary>
-	public override string LabelHeads => "Cabeças";
+	public override string LabelHeads => "CabeÃ§as";
 
 	/// <summary>
 	/// Key: "Label.Idle"
@@ -233,7 +233,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Asset type Left Arm, singular form
 	/// English String: "Left Arm"
 	/// </summary>
-	public override string LabelLeftArm => "Braço esquerdo";
+	public override string LabelLeftArm => "BraÃ§o esquerdo";
 
 	/// <summary>
 	/// Key: "Label.LeftLeg"
@@ -279,13 +279,13 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.Neck"
 	/// English String: "Neck"
 	/// </summary>
-	public override string LabelNeck => "Pescoço";
+	public override string LabelNeck => "PescoÃ§o";
 
 	/// <summary>
 	/// Key: "Label.NeckAccessory"
 	/// English String: "Neck Accessory"
 	/// </summary>
-	public override string LabelNeckAccessory => "Acessório de pescoço";
+	public override string LabelNeckAccessory => "AcessÃ³rio de pescoÃ§o";
 
 	/// <summary>
 	/// Key: "Label.Package"
@@ -304,7 +304,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.Pants"
 	/// English String: "Pants"
 	/// </summary>
-	public override string LabelPants => "Calças";
+	public override string LabelPants => "CalÃ§as";
 
 	/// <summary>
 	/// Key: "Label.Place"
@@ -343,7 +343,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Asset type Right Arm, singular form
 	/// English String: "Right Arm"
 	/// </summary>
-	public override string LabelRightArm => "Braço direito";
+	public override string LabelRightArm => "BraÃ§o direito";
 
 	/// <summary>
 	/// Key: "Label.RightLeg"
@@ -381,7 +381,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.ShoulderAccessory"
 	/// English String: "Shoulder Accessory"
 	/// </summary>
-	public override string LabelShoulderAccessory => "Acessório de ombro";
+	public override string LabelShoulderAccessory => "AcessÃ³rio de ombro";
 
 	/// <summary>
 	/// Key: "Label.Shoulders"
@@ -394,7 +394,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Asset type Solid Model, singular
 	/// English String: "Solid Model"
 	/// </summary>
-	public override string LabelSolidModel => "Modelo sólido";
+	public override string LabelSolidModel => "Modelo sÃ³lido";
 
 	/// <summary>
 	/// Key: "Label.Swim"
@@ -439,7 +439,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.WaistAccessory"
 	/// English String: "Waist Accessory"
 	/// </summary>
-	public override string LabelWaistAccessory => "Acessório de cintura";
+	public override string LabelWaistAccessory => "AcessÃ³rio de cintura";
 
 	/// <summary>
 	/// Key: "Label.Walk"
@@ -454,32 +454,32 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelAccessories()
 	{
-		return "Acessórios";
+		return "AcessÃ³rios";
 	}
 
 	protected override string _GetTemplateForLabelAccessory()
 	{
-		return "Acessório";
+		return "AcessÃ³rio";
 	}
 
 	protected override string _GetTemplateForLabelAnimation()
 	{
-		return "Animações";
+		return "AnimaÃ§Ãµes";
 	}
 
 	protected override string _GetTemplateForLabelAnimations()
 	{
-		return "Animações";
+		return "AnimaÃ§Ãµes";
 	}
 
 	protected override string _GetTemplateForLabelAudio()
 	{
-		return "Áudio";
+		return "Ãudio";
 	}
 
 	protected override string _GetTemplateForLabelAvatarAnimations()
 	{
-		return "Animações de avatar";
+		return "AnimaÃ§Ãµes de avatar";
 	}
 
 	protected override string _GetTemplateForLabelBack()
@@ -489,7 +489,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelBackAccessory()
 	{
-		return "Acessório de costas";
+		return "AcessÃ³rio de costas";
 	}
 
 	protected override string _GetTemplateForLabelBadge()
@@ -539,7 +539,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelFaceAccessory()
 	{
-		return "Acessório de rosto";
+		return "AcessÃ³rio de rosto";
 	}
 
 	protected override string _GetTemplateForLabelFaces()
@@ -559,7 +559,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelFrontAccessory()
 	{
-		return "Acessório da frente";
+		return "AcessÃ³rio da frente";
 	}
 
 	protected override string _GetTemplateForLabelGame()
@@ -589,27 +589,27 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelHairAccessory()
 	{
-		return "Acessório de cabelo";
+		return "AcessÃ³rio de cabelo";
 	}
 
 	protected override string _GetTemplateForLabelHat()
 	{
-		return "Chapéu";
+		return "ChapÃ©u";
 	}
 
 	protected override string _GetTemplateForLabelHats()
 	{
-		return "Chapéus";
+		return "ChapÃ©us";
 	}
 
 	protected override string _GetTemplateForLabelHead()
 	{
-		return "Cabeça";
+		return "CabeÃ§a";
 	}
 
 	protected override string _GetTemplateForLabelHeads()
 	{
-		return "Cabeças";
+		return "CabeÃ§as";
 	}
 
 	protected override string _GetTemplateForLabelIdle()
@@ -629,7 +629,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelLeftArm()
 	{
-		return "Braço esquerdo";
+		return "BraÃ§o esquerdo";
 	}
 
 	protected override string _GetTemplateForLabelLeftLeg()
@@ -664,12 +664,12 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelNeck()
 	{
-		return "Pescoço";
+		return "PescoÃ§o";
 	}
 
 	protected override string _GetTemplateForLabelNeckAccessory()
 	{
-		return "Acessório de pescoço";
+		return "AcessÃ³rio de pescoÃ§o";
 	}
 
 	protected override string _GetTemplateForLabelPackage()
@@ -684,7 +684,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelPants()
 	{
-		return "Calças";
+		return "CalÃ§as";
 	}
 
 	protected override string _GetTemplateForLabelPlace()
@@ -714,7 +714,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelRightArm()
 	{
-		return "Braço direito";
+		return "BraÃ§o direito";
 	}
 
 	protected override string _GetTemplateForLabelRightLeg()
@@ -744,7 +744,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelShoulderAccessory()
 	{
-		return "Acessório de ombro";
+		return "AcessÃ³rio de ombro";
 	}
 
 	protected override string _GetTemplateForLabelShoulders()
@@ -754,7 +754,7 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelSolidModel()
 	{
-		return "Modelo sólido";
+		return "Modelo sÃ³lido";
 	}
 
 	protected override string _GetTemplateForLabelSwim()
@@ -789,11 +789,14 @@ internal class AssetTypesResources_pt_br : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelWaistAccessory()
 	{
-		return "Acessório de cintura";
+		return "AcessÃ³rio de cintura";
 	}
 
 	protected override string _GetTemplateForLabelWalk()
 	{
 		return "Andar";
 	}
+}
+
+
 }

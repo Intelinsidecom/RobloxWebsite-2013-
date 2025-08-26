@@ -1,8 +1,10 @@
 using System.Collections.Generic;
+namespace Roblox.EventStream {
+    interface IDataSender
 
-namespace Roblox.Platform.EventStream;
-
-public interface IDataSender
 {
 	void PublishData(List<string> dataList);
+}
+
+
 }

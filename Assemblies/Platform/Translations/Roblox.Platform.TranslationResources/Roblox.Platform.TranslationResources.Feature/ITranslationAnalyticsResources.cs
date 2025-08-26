@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ITranslationAnalyticsResources : ITranslationResources
 
-public interface ITranslationAnalyticsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Download"
@@ -54,4 +54,7 @@ public interface ITranslationAnalyticsResources : ITranslationResources
 	/// English String: "You do not have sufficient permission to download this report."
 	/// </summary>
 	string MessagePermissionError { get; }
+}
+
+
 }

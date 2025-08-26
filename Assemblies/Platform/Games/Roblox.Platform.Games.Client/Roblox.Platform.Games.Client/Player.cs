@@ -1,6 +1,6 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    class Player
 
-public class Player
 {
 	public long Id { get; }
 
@@ -29,4 +29,7 @@ public class Player
 		BlockedPlayerIds = blockedPlayerIds;
 		PolicyCountryId = policyCountryId;
 	}
+}
+
+
 }

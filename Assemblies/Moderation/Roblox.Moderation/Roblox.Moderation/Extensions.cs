@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using Roblox.Agents;
 using Roblox.Moderation;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Membership.Core;
+namespace Roblox.Moderationpublic {
+    static class Extensions
 
-namespace Roblox.Platform.Moderation;
-
-public static class Extensions
 {
 	private static AssetModerationStatus GetAssetModerationStatus(this ItemStatus itemStatusEntity)
 	{
@@ -111,4 +110,7 @@ public static class Extensions
 		}
 		return punishmentTypeEntity.Value;
 	}
+}
+
+
 }

@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class GameSearchEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class GameSearchEvent : WebEventBase
 {
 	private const string _Name = "gameSearch";
 
@@ -23,7 +23,7 @@ public class GameSearchEvent : WebEventBase
 	/// <summary>
 	/// The event that represents a game search.
 	/// </summary>
-	public GameSearchEvent(EventStreamer streamer, GameSearchEventArgs eventArgs)
+	public GameSearchEvent(IEventStreamer streamer, GameSearchEventArgs eventArgs)
 		: base(streamer, "gameSearch", eventArgs)
 	{
 		if (string.IsNullOrWhiteSpace(eventArgs.Keyword))
@@ -67,3 +67,12 @@ public class GameSearchEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

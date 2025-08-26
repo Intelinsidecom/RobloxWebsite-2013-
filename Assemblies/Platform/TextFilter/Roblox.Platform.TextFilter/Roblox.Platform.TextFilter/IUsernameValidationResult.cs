@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// An interface representing the result of validating text submitted for a username against the <see cref="T:Roblox.TextFilter.IUsernameFilter" />
 /// </summary>
 public interface IUsernameValidationResult
@@ -15,4 +15,7 @@ public interface IUsernameValidationResult
 	/// If the requested name is valid, this property has no meaning (should be false).
 	/// </summary>
 	bool IsPotentialPiiViolation { get; }
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using Roblox.PremiumFeatures.Models.Enums;
+namespace Roblox.Platform.PremiumFeatures.Models.Core {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models.Core;
-
-/// <summary>
 /// Currency Model
 /// </summary>
 [DataContract]
@@ -47,4 +46,7 @@ public class Currency
 		CurrencyType = currencyType;
 		CurrencySymbol = currencySymbol;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameBadgesResources : ITranslationResources
 
-public interface IGameBadgesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "HeadingGameBadges"
@@ -94,4 +94,7 @@ public interface IGameBadgesResources : ITranslationResources
 	/// English String: "Won Yesterday"
 	/// </summary>
 	string LabelWonYesterday { get; }
+}
+
+
 }

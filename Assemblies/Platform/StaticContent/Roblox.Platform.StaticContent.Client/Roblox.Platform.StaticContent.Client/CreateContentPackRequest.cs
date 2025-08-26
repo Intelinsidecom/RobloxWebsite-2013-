@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.StaticContent.Client {
+    [DataContract]
 
-namespace Roblox.StaticContent.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 internal class CreateContentPackRequest
 {
@@ -24,4 +23,7 @@ internal class CreateContentPackRequest
 
 	[DataMember(Name = "componentDependencies")]
 	public string[] ComponentDependencies { get; set; }
+}
+
+
 }

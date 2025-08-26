@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocalesAuditMetadataDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxAccountLocalesAudit;
@@ -119,4 +118,7 @@ internal class AccountLocalesAuditMetadataDAL
 		SqlParameter[] queryParameters = obj;
 		return RobloxDatabase.RobloxAccountLocalesAudit.GetIDCollection<long>("AccountLocalesAuditMetadata_GetAccountLocalesAuditMetadataIDsByAudit-IDAndMetadataTypeID", queryParameters);
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SocialResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,43 +10,43 @@ internal class SocialResources_zh_tw : SocialResources_en_us, ISocialResources, 
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Unlink"
 	/// English String: "Unlink"
 	/// </summary>
-	public override string ActionUnlink => "解除連接";
+	public override string ActionUnlink => "è§£é™¤é€£æŽ¥";
 
 	/// <summary>
 	/// Key: "Description.ConnectedAccounts"
 	/// English String: "Disconnect your connected accounts here. Unlinking an account will log you out of Roblox."
 	/// </summary>
-	public override string DescriptionConnectedAccounts => "在此將已連接的帳號解除連接，您將在解除連接帳號後登出 Roblox。";
+	public override string DescriptionConnectedAccounts => "åœ¨æ­¤å°‡å·²é€£æŽ¥çš„å¸³è™Ÿè§£é™¤é€£æŽ¥ï¼Œæ‚¨å°‡åœ¨è§£é™¤é€£æŽ¥å¸³è™Ÿå¾Œç™»å‡º Robloxã€‚";
 
 	/// <summary>
 	/// Key: "Description.UnlinkLogOutWarning"
 	/// English String: "Unlinking this account will log you out of Roblox. You will have to link your account again to log back in."
 	/// </summary>
-	public override string DescriptionUnlinkLogOutWarning => "解除連接此帳號後，您將會登出 Roblox。若要重新登入，您就必須重新連接您的帳號。";
+	public override string DescriptionUnlinkLogOutWarning => "è§£é™¤é€£æŽ¥æ­¤å¸³è™Ÿå¾Œï¼Œæ‚¨å°‡æœƒç™»å‡º Robloxã€‚è‹¥è¦é‡æ–°ç™»å…¥ï¼Œæ‚¨å°±å¿…é ˆé‡æ–°é€£æŽ¥æ‚¨çš„å¸³è™Ÿã€‚";
 
 	/// <summary>
 	/// Key: "Heading.ConnectedAccounts"
 	/// English String: "Connected Accounts"
 	/// </summary>
-	public override string HeadingConnectedAccounts => "已連接的帳號";
+	public override string HeadingConnectedAccounts => "å·²é€£æŽ¥çš„å¸³è™Ÿ";
 
 	/// <summary>
 	/// Key: "Placeholder.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string PlaceholderPassword => "密碼";
+	public override string PlaceholderPassword => "å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Response.InvalidPassword"
 	/// English String: "Invalid Password."
 	/// </summary>
-	public override string ResponseInvalidPassword => "密碼無效";
+	public override string ResponseInvalidPassword => "å¯†ç¢¼ç„¡æ•ˆ";
 
 	public SocialResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -55,27 +55,27 @@ internal class SocialResources_zh_tw : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionUnlink()
 	{
-		return "解除連接";
+		return "è§£é™¤é€£æŽ¥";
 	}
 
 	protected override string _GetTemplateForDescriptionConnectedAccounts()
 	{
-		return "在此將已連接的帳號解除連接，您將在解除連接帳號後登出 Roblox。";
+		return "åœ¨æ­¤å°‡å·²é€£æŽ¥çš„å¸³è™Ÿè§£é™¤é€£æŽ¥ï¼Œæ‚¨å°‡åœ¨è§£é™¤é€£æŽ¥å¸³è™Ÿå¾Œç™»å‡º Robloxã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionUnlinkLogOutWarning()
 	{
-		return "解除連接此帳號後，您將會登出 Roblox。若要重新登入，您就必須重新連接您的帳號。";
+		return "è§£é™¤é€£æŽ¥æ­¤å¸³è™Ÿå¾Œï¼Œæ‚¨å°‡æœƒç™»å‡º Robloxã€‚è‹¥è¦é‡æ–°ç™»å…¥ï¼Œæ‚¨å°±å¿…é ˆé‡æ–°é€£æŽ¥æ‚¨çš„å¸³è™Ÿã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingConnectedAccounts()
 	{
-		return "已連接的帳號";
+		return "å·²é€£æŽ¥çš„å¸³è™Ÿ";
 	}
 
 	/// <summary>
@@ -84,21 +84,24 @@ internal class SocialResources_zh_tw : SocialResources_en_us, ISocialResources, 
 	/// </summary>
 	public override string HeadingUnlink(string provider)
 	{
-		return $"解除連接 {provider} 帳號";
+		return $"è§£é™¤é€£æŽ¥ {provider} å¸³è™Ÿ";
 	}
 
 	protected override string _GetTemplateForHeadingUnlink()
 	{
-		return "解除連接 {provider} 帳號";
+		return "è§£é™¤é€£æŽ¥ {provider} å¸³è™Ÿ";
 	}
 
 	protected override string _GetTemplateForPlaceholderPassword()
 	{
-		return "密碼";
+		return "å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForResponseInvalidPassword()
 	{
-		return "密碼無效";
+		return "å¯†ç¢¼ç„¡æ•ˆ";
 	}
+}
+
+
 }

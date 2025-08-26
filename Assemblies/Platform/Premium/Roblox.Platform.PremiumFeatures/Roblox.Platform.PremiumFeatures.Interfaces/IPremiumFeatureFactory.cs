@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Interfaces;
-
-/// <summary>
 /// Interface for PremiumFeature factory
 /// </summary>
 public interface IPremiumFeatureFactory
@@ -270,4 +269,7 @@ public interface IPremiumFeatureFactory
 	/// <param name="id">PremiumFeature id</param>
 	/// <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IPremiumFeatureModel" /></returns>
 	IPremiumFeatureModel MustGet(int id);
+}
+
+
 }

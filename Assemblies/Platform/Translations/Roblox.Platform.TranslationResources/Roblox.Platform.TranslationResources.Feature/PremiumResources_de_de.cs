@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PremiumResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -32,21 +32,21 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	/// <summary>
 	/// Key: "Description.GooglePlayMonthlySubscriptionDisclosure"
-	/// English String: "Roblox Premium is a monthly subscription that is charged to your Google Play account at confirmation of purchase. Roblox Premium will automatically renew unless auto-renewal is turned off at least 24-hours before the end of the current period. Your account will be charged for renewal within 24-hours prior to the end of the current period. Subscriptions may be managed and auto-renewal may be turned off by going to your Google Play account settings. If you’re under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted."
+	/// English String: "Roblox Premium is a monthly subscription that is charged to your Google Play account at confirmation of purchase. Roblox Premium will automatically renew unless auto-renewal is turned off at least 24-hours before the end of the current period. Your account will be charged for renewal within 24-hours prior to the end of the current period. Subscriptions may be managed and auto-renewal may be turned off by going to your Google Play account settings. If youâ€™re under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted."
 	/// </summary>
-	public override string DescriptionGooglePlayMonthlySubscriptionDisclosure => "Roblox-Premium ist ein monatliches Abonnement, das deinem Google Play-Konto bei Bestätigung des Kaufs belastet wird. Roblox-Premium verlängert sich automatisch, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit der Verlängerung belastet. Abonnements können verwaltet und die automatische Verlängerung kann in den Einstellungen deines Google Play-Kontos deaktiviert werden. Wenn du jünger als 18 Jahre bist, vergewissere dich, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten haben, bevor Sie einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird.";
+	public override string DescriptionGooglePlayMonthlySubscriptionDisclosure => "Roblox-Premium ist ein monatliches Abonnement, das deinem Google Play-Konto bei BestÃ¤tigung des Kaufs belastet wird. Roblox-Premium verlÃ¤ngert sich automatisch, sofern die automatische VerlÃ¤ngerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit der VerlÃ¤ngerung belastet. Abonnements kÃ¶nnen verwaltet und die automatische VerlÃ¤ngerung kann in den Einstellungen deines Google Play-Kontos deaktiviert werden. Wenn du jÃ¼nger als 18 Jahre bist, vergewissere dich, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten haben, bevor Sie einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird.";
 
 	/// <summary>
 	/// Key: "Description.RobloxPremiumSubtitle"
 	/// English String: "Joining Roblox Premium gets you a monthly Robux allowance and a 10% bonus when buying Robux. You will also get access to Roblox's economy features including buying, selling, and trading items, as well as increased revenue share on all sales in your games."
 	/// </summary>
-	public override string DescriptionRobloxPremiumSubtitle => "Wenn du Roblox Premium beitrittst, erhältst du monatlich eine gewisse Menge an Robux sowie einen Bonus von 10\u00a0% beim Kauf von Robux. Zudem erhältst du Zugang zu den wirtschaftlichen Features von Roblox (unter anderem kannst du Artikel kaufen, verkaufen und mit ihnen handeln). Und du erhältst einen größeren Umsatzanteil für alle in deinen Spielen getätigten Verkäufe.";
+	public override string DescriptionRobloxPremiumSubtitle => "Wenn du Roblox Premium beitrittst, erhÃ¤ltst du monatlich eine gewisse Menge an Robux sowie einen Bonus von 10\u00a0% beim Kauf von Robux. Zudem erhÃ¤ltst du Zugang zu den wirtschaftlichen Features von Roblox (unter anderem kannst du Artikel kaufen, verkaufen und mit ihnen handeln). Und du erhÃ¤ltst einen grÃ¶ÃŸeren Umsatzanteil fÃ¼r alle in deinen Spielen getÃ¤tigten VerkÃ¤ufe.";
 
 	/// <summary>
 	/// Key: "Description.SellMoreItems"
 	/// English String: "Resell items and get more Robux selling your creations"
 	/// </summary>
-	public override string DescriptionSellMoreItems => "Verkaufe Artikel weiter und erhalte mehr Robux für den Verkauf deiner Schöpfungen";
+	public override string DescriptionSellMoreItems => "Verkaufe Artikel weiter und erhalte mehr Robux fÃ¼r den Verkauf deiner SchÃ¶pfungen";
 
 	/// <summary>
 	/// Key: "Description.Trade"
@@ -65,7 +65,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.ConfirmCancellation"
 	/// English String: "Confirm Cancellation"
 	/// </summary>
-	public override string HeadingConfirmCancellation => "Kündigung bestätigen";
+	public override string HeadingConfirmCancellation => "KÃ¼ndigung bestÃ¤tigen";
 
 	/// <summary>
 	/// Key: "Heading.EvenMoreFeatures"
@@ -83,7 +83,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.PremiumRobuxDiscounts"
 	/// English String: "As a Premium user, you get discounts on Robux!"
 	/// </summary>
-	public override string HeadingPremiumRobuxDiscounts => "Als Premium-Mitglied erhältst du Rabatte auf Robux!";
+	public override string HeadingPremiumRobuxDiscounts => "Als Premium-Mitglied erhÃ¤ltst du Rabatte auf Robux!";
 
 	/// <summary>
 	/// Key: "Heading.RobloxPremium"
@@ -102,13 +102,13 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.SubscriptionUnavailable"
 	/// English String: "Subscription Unavailable"
 	/// </summary>
-	public override string HeadingSubscriptionUnavailable => "Abonnement nicht verfügbar";
+	public override string HeadingSubscriptionUnavailable => "Abonnement nicht verfÃ¼gbar";
 
 	/// <summary>
 	/// Key: "Heading.SwitchPlanModal"
 	/// English String: "Confirm Subscription Update"
 	/// </summary>
-	public override string HeadingSwitchPlanModal => "Abonnementaktualisierung bestätigen";
+	public override string HeadingSwitchPlanModal => "Abonnementaktualisierung bestÃ¤tigen";
 
 	/// <summary>
 	/// Key: "Heading.UnableToFindBc"
@@ -126,14 +126,14 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.UpgradeUnavailable"
 	/// English String: "Upgrade Unavailable"
 	/// </summary>
-	public override string HeadingUpgradeUnavailable => "Aufwertung nicht verfügbar";
+	public override string HeadingUpgradeUnavailable => "Aufwertung nicht verfÃ¼gbar";
 
 	/// <summary>
 	/// Key: "Label.10PercentMoreRobux"
 	/// Part 1 of a two part label (Label.SinceYouSubscribed)
 	/// English String: "You'll get 10% more Robux"
 	/// </summary>
-	public override string Label10PercentMoreRobux => "Du erhältst 10% mehr Robux";
+	public override string Label10PercentMoreRobux => "Du erhÃ¤ltst 10% mehr Robux";
 
 	/// <summary>
 	/// Key: "Label.AndGetMore"
@@ -169,7 +169,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.Confirm"
 	/// English String: "Confirm"
 	/// </summary>
-	public override string LabelConfirm => "Bestätigen";
+	public override string LabelConfirm => "BestÃ¤tigen";
 
 	/// <summary>
 	/// Key: "Label.CurrentPlan"
@@ -193,7 +193,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.MembershipManagementRecurring"
 	/// English String: "To manage your Premium subscription, please go to your Billing settings using a browser."
 	/// </summary>
-	public override string LabelMembershipManagementRecurring => "Um dein Premium-Abonnement zu verwalten, ruf die Abrechnungseinstellungen über einen Browser auf.";
+	public override string LabelMembershipManagementRecurring => "Um dein Premium-Abonnement zu verwalten, ruf die Abrechnungseinstellungen Ã¼ber einen Browser auf.";
 
 	/// <summary>
 	/// Key: "Label.No"
@@ -296,7 +296,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// Key: "Message.GeneralError"
 	/// English String: "An error occurred while updating your subscription. Please try again later."
 	/// </summary>
-	public override string MessageGeneralError => "Bei der Aktualisierung deines Abonnements ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+	public override string MessageGeneralError => "Bei der Aktualisierung deines Abonnements ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.NoDataError"
@@ -308,26 +308,26 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// Key: "Message.ServerError"
 	/// English String: "A server error occurred while updating your subscription. Please try again later."
 	/// </summary>
-	public override string MessageServerError => "Bei der Aktualisierung deines Abonnements ist ein Serverfehler aufgetreten. Bitte versuche es später erneut.";
+	public override string MessageServerError => "Bei der Aktualisierung deines Abonnements ist ein Serverfehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.UnableToFindBc"
 	/// English String: "Cannot find Builders Club information for this user."
 	/// </summary>
-	public override string MessageUnableToFindBc => "Informationen zum Builders Club dieses Benutzers können nicht gefunden werden.";
+	public override string MessageUnableToFindBc => "Informationen zum Builders Club dieses Benutzers kÃ¶nnen nicht gefunden werden.";
 
 	/// <summary>
 	/// Key: "Message.UpgradeUnavailableModal"
 	/// English String: "We are sorry, we cannot change your subscription because there is currently no package equivalent to Lifetime Builders Club."
 	/// </summary>
-	public override string MessageUpgradeUnavailableModal => "Es tut uns leid, wir können dein Abonnement nicht ändern, weil es momentan kein gleichwertiges Paket zum Builders Club auf Lebenszeit gibt.";
+	public override string MessageUpgradeUnavailableModal => "Es tut uns leid, wir kÃ¶nnen dein Abonnement nicht Ã¤ndern, weil es momentan kein gleichwertiges Paket zum Builders Club auf Lebenszeit gibt.";
 
 	/// <summary>
 	/// Key: "SwitchPlanTitle"
 	/// Wrong string. Do translate this.
 	/// English String: "Confirm Subscription Update"
 	/// </summary>
-	public override string SwitchPlanTitle => "Abonnementaktualisierung bestätigen";
+	public override string SwitchPlanTitle => "Abonnementaktualisierung bestÃ¤tigen";
 
 	public PremiumResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -355,12 +355,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionBuyMoreRobuxSubtitle(string lineBreak, string learnMoreLinkStart, string learnMoreLinkEnd)
 	{
-		return $"Kauf Robux, um Verbesserungen für deinen Avatar oder besondere Fähigkeiten in Spielen zu kaufen.{lineBreak} Kaufe Roblox-Premium, um mehr Robux jeden Monat sowie Bonusfunktionen zu erhalten. Roblox-Premium wird dir bis auf Widerruf jeden Monat in Rechnung gestellt. {learnMoreLinkStart}Hier erfährst du mehr{learnMoreLinkEnd}";
+		return $"Kauf Robux, um Verbesserungen fÃ¼r deinen Avatar oder besondere FÃ¤higkeiten in Spielen zu kaufen.{lineBreak} Kaufe Roblox-Premium, um mehr Robux jeden Monat sowie Bonusfunktionen zu erhalten. Roblox-Premium wird dir bis auf Widerruf jeden Monat in Rechnung gestellt. {learnMoreLinkStart}Hier erfÃ¤hrst du mehr{learnMoreLinkEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyMoreRobuxSubtitle()
 	{
-		return "Kauf Robux, um Verbesserungen für deinen Avatar oder besondere Fähigkeiten in Spielen zu kaufen.{lineBreak} Kaufe Roblox-Premium, um mehr Robux jeden Monat sowie Bonusfunktionen zu erhalten. Roblox-Premium wird dir bis auf Widerruf jeden Monat in Rechnung gestellt. {learnMoreLinkStart}Hier erfährst du mehr{learnMoreLinkEnd}";
+		return "Kauf Robux, um Verbesserungen fÃ¼r deinen Avatar oder besondere FÃ¤higkeiten in Spielen zu kaufen.{lineBreak} Kaufe Roblox-Premium, um mehr Robux jeden Monat sowie Bonusfunktionen zu erhalten. Roblox-Premium wird dir bis auf Widerruf jeden Monat in Rechnung gestellt. {learnMoreLinkStart}Hier erfÃ¤hrst du mehr{learnMoreLinkEnd}";
 	}
 
 	/// <summary>
@@ -369,12 +369,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionBuyRobuxSubtitle(string helpLinkStart, string helpLinkEnd, string paragraphBreaker, string learnMoreLinkStart, string learnMoreLinkEnd)
 	{
-		return $"Hol dir Robux, um Verbesserungen für deinen Avatar oder besondere Fähigkeiten in Spielen zu kaufen. Wie du Robux verdienst, erfährst du auf unserer {helpLinkStart}Robux-Hilfeseite{helpLinkEnd}.{paragraphBreaker}Kaufe Roblox Premium, um mehr Robux für denselben Preis zu erhalten. Roblox Premium wird dir bis auf Widerruf jeden Monat in Rechnung gestellt. {learnMoreLinkStart}Hier erfährst du mehr{learnMoreLinkEnd}.";
+		return $"Hol dir Robux, um Verbesserungen fÃ¼r deinen Avatar oder besondere FÃ¤higkeiten in Spielen zu kaufen. Wie du Robux verdienst, erfÃ¤hrst du auf unserer {helpLinkStart}Robux-Hilfeseite{helpLinkEnd}.{paragraphBreaker}Kaufe Roblox Premium, um mehr Robux fÃ¼r denselben Preis zu erhalten. Roblox Premium wird dir bis auf Widerruf jeden Monat in Rechnung gestellt. {learnMoreLinkStart}Hier erfÃ¤hrst du mehr{learnMoreLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyRobuxSubtitle()
 	{
-		return "Hol dir Robux, um Verbesserungen für deinen Avatar oder besondere Fähigkeiten in Spielen zu kaufen. Wie du Robux verdienst, erfährst du auf unserer {helpLinkStart}Robux-Hilfeseite{helpLinkEnd}.{paragraphBreaker}Kaufe Roblox Premium, um mehr Robux für denselben Preis zu erhalten. Roblox Premium wird dir bis auf Widerruf jeden Monat in Rechnung gestellt. {learnMoreLinkStart}Hier erfährst du mehr{learnMoreLinkEnd}.";
+		return "Hol dir Robux, um Verbesserungen fÃ¼r deinen Avatar oder besondere FÃ¤higkeiten in Spielen zu kaufen. Wie du Robux verdienst, erfÃ¤hrst du auf unserer {helpLinkStart}Robux-Hilfeseite{helpLinkEnd}.{paragraphBreaker}Kaufe Roblox Premium, um mehr Robux fÃ¼r denselben Preis zu erhalten. Roblox Premium wird dir bis auf Widerruf jeden Monat in Rechnung gestellt. {learnMoreLinkStart}Hier erfÃ¤hrst du mehr{learnMoreLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionGetMoreRobux()
@@ -384,7 +384,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForDescriptionGooglePlayMonthlySubscriptionDisclosure()
 	{
-		return "Roblox-Premium ist ein monatliches Abonnement, das deinem Google Play-Konto bei Bestätigung des Kaufs belastet wird. Roblox-Premium verlängert sich automatisch, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit der Verlängerung belastet. Abonnements können verwaltet und die automatische Verlängerung kann in den Einstellungen deines Google Play-Kontos deaktiviert werden. Wenn du jünger als 18 Jahre bist, vergewissere dich, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten haben, bevor Sie einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird.";
+		return "Roblox-Premium ist ein monatliches Abonnement, das deinem Google Play-Konto bei BestÃ¤tigung des Kaufs belastet wird. Roblox-Premium verlÃ¤ngert sich automatisch, sofern die automatische VerlÃ¤ngerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit der VerlÃ¤ngerung belastet. Abonnements kÃ¶nnen verwaltet und die automatische VerlÃ¤ngerung kann in den Einstellungen deines Google Play-Kontos deaktiviert werden. Wenn du jÃ¼nger als 18 Jahre bist, vergewissere dich, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten haben, bevor Sie einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird.";
 	}
 
 	/// <summary>
@@ -393,12 +393,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionIosMonthlySubscriptionDisclosure(string costPrice, string renewalPrice)
 	{
-		return $"Roblox-Premium ist ein monatliches Abonnement, das {costPrice} kostet. Die Zahlung wird dem iTunes-Konto bei Bestätigung des Kaufs belastet. Roblox Premium verlängert sich automatisch, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit {renewalPrice} für die Verlängerung belastet. Abonnements können verwaltet und die automatische Verlängerung kann in den Kontoeinstellungen deaktiviert werden. Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird.";
+		return $"Roblox-Premium ist ein monatliches Abonnement, das {costPrice} kostet. Die Zahlung wird dem iTunes-Konto bei BestÃ¤tigung des Kaufs belastet. Roblox Premium verlÃ¤ngert sich automatisch, sofern die automatische VerlÃ¤ngerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit {renewalPrice} fÃ¼r die VerlÃ¤ngerung belastet. Abonnements kÃ¶nnen verwaltet und die automatische VerlÃ¤ngerung kann in den Kontoeinstellungen deaktiviert werden. Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird.";
 	}
 
 	protected override string _GetTemplateForDescriptionIosMonthlySubscriptionDisclosure()
 	{
-		return "Roblox-Premium ist ein monatliches Abonnement, das {costPrice} kostet. Die Zahlung wird dem iTunes-Konto bei Bestätigung des Kaufs belastet. Roblox Premium verlängert sich automatisch, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit {renewalPrice} für die Verlängerung belastet. Abonnements können verwaltet und die automatische Verlängerung kann in den Kontoeinstellungen deaktiviert werden. Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird.";
+		return "Roblox-Premium ist ein monatliches Abonnement, das {costPrice} kostet. Die Zahlung wird dem iTunes-Konto bei BestÃ¤tigung des Kaufs belastet. Roblox Premium verlÃ¤ngert sich automatisch, sofern die automatische VerlÃ¤ngerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit {renewalPrice} fÃ¼r die VerlÃ¤ngerung belastet. Abonnements kÃ¶nnen verwaltet und die automatische VerlÃ¤ngerung kann in den Kontoeinstellungen deaktiviert werden. Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird.";
 	}
 
 	/// <summary>
@@ -407,12 +407,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionIosSubscriptionDisclosure(string durationType, string costPrice, string renewalPrice)
 	{
-		return $"Roblox-Premium ist ein {durationType}-Abonnement, das {costPrice} kostet. Die Zahlung wird dem iTunes-Konto bei Bestätigung des Kaufs belastet. Roblox Premium verlängert sich automatisch, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit {renewalPrice} für die Verlängerung belastet. Abonnements können verwaltet und die automatische Verlängerung kann in den Kontoeinstellungen deaktiviert werden.";
+		return $"Roblox-Premium ist ein {durationType}-Abonnement, das {costPrice} kostet. Die Zahlung wird dem iTunes-Konto bei BestÃ¤tigung des Kaufs belastet. Roblox Premium verlÃ¤ngert sich automatisch, sofern die automatische VerlÃ¤ngerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit {renewalPrice} fÃ¼r die VerlÃ¤ngerung belastet. Abonnements kÃ¶nnen verwaltet und die automatische VerlÃ¤ngerung kann in den Kontoeinstellungen deaktiviert werden.";
 	}
 
 	protected override string _GetTemplateForDescriptionIosSubscriptionDisclosure()
 	{
-		return "Roblox-Premium ist ein {durationType}-Abonnement, das {costPrice} kostet. Die Zahlung wird dem iTunes-Konto bei Bestätigung des Kaufs belastet. Roblox Premium verlängert sich automatisch, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit {renewalPrice} für die Verlängerung belastet. Abonnements können verwaltet und die automatische Verlängerung kann in den Kontoeinstellungen deaktiviert werden.";
+		return "Roblox-Premium ist ein {durationType}-Abonnement, das {costPrice} kostet. Die Zahlung wird dem iTunes-Konto bei BestÃ¤tigung des Kaufs belastet. Roblox Premium verlÃ¤ngert sich automatisch, sofern die automatische VerlÃ¤ngerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert wird. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums mit {renewalPrice} fÃ¼r die VerlÃ¤ngerung belastet. Abonnements kÃ¶nnen verwaltet und die automatische VerlÃ¤ngerung kann in den Kontoeinstellungen deaktiviert werden.";
 	}
 
 	/// <summary>
@@ -421,51 +421,51 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionlegalDisclosuresPremiumRobuxPage(string termsLinkStart, string termsLinkEnd)
 	{
-		return $"Wenn du Robux kaufst, erhältst du nur eine eingeschränkte, nicht rückerstattbare, nicht übertragbare, widerrufbare Lizenz zur Nutzung von Robux, die keinen Wert in realer Währung hat. Weitere Einschränkungen findest du unter {termsLinkStart}Nutzungsbedingungen{termsLinkEnd}. Wenn du unter 18 Jahre bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird.";
+		return $"Wenn du Robux kaufst, erhÃ¤ltst du nur eine eingeschrÃ¤nkte, nicht rÃ¼ckerstattbare, nicht Ã¼bertragbare, widerrufbare Lizenz zur Nutzung von Robux, die keinen Wert in realer WÃ¤hrung hat. Weitere EinschrÃ¤nkungen findest du unter {termsLinkStart}Nutzungsbedingungen{termsLinkEnd}. Wenn du unter 18 Jahre bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird.";
 	}
 
 	protected override string _GetTemplateForDescriptionlegalDisclosuresPremiumRobuxPage()
 	{
-		return "Wenn du Robux kaufst, erhältst du nur eine eingeschränkte, nicht rückerstattbare, nicht übertragbare, widerrufbare Lizenz zur Nutzung von Robux, die keinen Wert in realer Währung hat. Weitere Einschränkungen findest du unter {termsLinkStart}Nutzungsbedingungen{termsLinkEnd}. Wenn du unter 18 Jahre bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird.";
+		return "Wenn du Robux kaufst, erhÃ¤ltst du nur eine eingeschrÃ¤nkte, nicht rÃ¼ckerstattbare, nicht Ã¼bertragbare, widerrufbare Lizenz zur Nutzung von Robux, die keinen Wert in realer WÃ¤hrung hat. Weitere EinschrÃ¤nkungen findest du unter {termsLinkStart}Nutzungsbedingungen{termsLinkEnd}. Wenn du unter 18 Jahre bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird.";
 	}
 
 	/// <summary>
 	/// Key: "Description.legalDisclosuresPremiumUpgradePage"
-	/// English String: "If you are under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking “Submit Order” (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {termsLinkStart}Terms of Use{termsLinkEnd} and {privacyLinkStart}Privacy Policy{privatyLinkEnd}. You can cancel at any time by clicking “Cancel membership” on the {billingLinkStart}billing tab{billingLinkEnd}  of the setting page. If you cancel, you will still be charged for the current billing period."
+	/// English String: "If you are under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking â€œSubmit Orderâ€ (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {termsLinkStart}Terms of Use{termsLinkEnd} and {privacyLinkStart}Privacy Policy{privatyLinkEnd}. You can cancel at any time by clicking â€œCancel membershipâ€ on the {billingLinkStart}billing tab{billingLinkEnd}  of the setting page. If you cancel, you will still be charged for the current billing period."
 	/// </summary>
 	public override string DescriptionlegalDisclosuresPremiumUpgradePage(string termsLinkStart, string termsLinkEnd, string privacyLinkStart, string privatyLinkEnd, string billingLinkStart, string billingLinkEnd)
 	{
-		return $"Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird. Durch Klicken auf „Bestellung abschicken“ (1) ermächtigst du uns, dein Konto jeden Monat zu belasten, bis du das Abonnement kündigst und (1) bestätigst, dass du die {termsLinkStart}Nutzungsbedingungen{termsLinkEnd} und die {privacyLinkStart}Datenschutzrichtlinie{privatyLinkEnd} verstehst und diesen zustimmst. Du kannst die Mitgliedschaft jederzeit kündigen, indem du auf der Einstellungsseite auf der {billingLinkStart}Registerkarte {billingLinkEnd}der Registerkarte auf „Mitgliedschaft kündigen“ klickst. Wenn du stornierst, wird dir weiterhin der aktuelle Abrechnungszeitraum in Rechnung gestellt.";
+		return $"Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird. Durch Klicken auf â€žBestellung abschickenâ€œ (1) ermÃ¤chtigst du uns, dein Konto jeden Monat zu belasten, bis du das Abonnement kÃ¼ndigst und (1) bestÃ¤tigst, dass du die {termsLinkStart}Nutzungsbedingungen{termsLinkEnd} und die {privacyLinkStart}Datenschutzrichtlinie{privatyLinkEnd} verstehst und diesen zustimmst. Du kannst die Mitgliedschaft jederzeit kÃ¼ndigen, indem du auf der Einstellungsseite auf der {billingLinkStart}Registerkarte {billingLinkEnd}der Registerkarte auf â€žMitgliedschaft kÃ¼ndigenâ€œ klickst. Wenn du stornierst, wird dir weiterhin der aktuelle Abrechnungszeitraum in Rechnung gestellt.";
 	}
 
 	protected override string _GetTemplateForDescriptionlegalDisclosuresPremiumUpgradePage()
 	{
-		return "Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird. Durch Klicken auf „Bestellung abschicken“ (1) ermächtigst du uns, dein Konto jeden Monat zu belasten, bis du das Abonnement kündigst und (1) bestätigst, dass du die {termsLinkStart}Nutzungsbedingungen{termsLinkEnd} und die {privacyLinkStart}Datenschutzrichtlinie{privatyLinkEnd} verstehst und diesen zustimmst. Du kannst die Mitgliedschaft jederzeit kündigen, indem du auf der Einstellungsseite auf der {billingLinkStart}Registerkarte {billingLinkEnd}der Registerkarte auf „Mitgliedschaft kündigen“ klickst. Wenn du stornierst, wird dir weiterhin der aktuelle Abrechnungszeitraum in Rechnung gestellt.";
+		return "Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird. Durch Klicken auf â€žBestellung abschickenâ€œ (1) ermÃ¤chtigst du uns, dein Konto jeden Monat zu belasten, bis du das Abonnement kÃ¼ndigst und (1) bestÃ¤tigst, dass du die {termsLinkStart}Nutzungsbedingungen{termsLinkEnd} und die {privacyLinkStart}Datenschutzrichtlinie{privatyLinkEnd} verstehst und diesen zustimmst. Du kannst die Mitgliedschaft jederzeit kÃ¼ndigen, indem du auf der Einstellungsseite auf der {billingLinkStart}Registerkarte {billingLinkEnd}der Registerkarte auf â€žMitgliedschaft kÃ¼ndigenâ€œ klickst. Wenn du stornierst, wird dir weiterhin der aktuelle Abrechnungszeitraum in Rechnung gestellt.";
 	}
 
 	/// <summary>
 	/// Key: "Description.PremiumSubscriptionDisclosure"
 	/// Duplicated
-	/// English String: "If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking “Submit Order” (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {teamOfUseLinkStart}Terms of Use{teamOfUseLinkEnd} and {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You can cancel at any time by clicking “Cancel membership” on the {billingTabLinkStart}billing tab{billingTabLinkEnd} of the setting page. If you cancel, you will still be charged for the current billing period."
+	/// English String: "If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking â€œSubmit Orderâ€ (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {teamOfUseLinkStart}Terms of Use{teamOfUseLinkEnd} and {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You can cancel at any time by clicking â€œCancel membershipâ€ on the {billingTabLinkStart}billing tab{billingTabLinkEnd} of the setting page. If you cancel, you will still be charged for the current billing period."
 	/// </summary>
 	public override string DescriptionPremiumSubscriptionDisclosure(string teamOfUseLinkStart, string teamOfUseLinkEnd, string privacyPolicyLinkStart, string privacyPolicyLinkEnd, string billingTabLinkStart, string billingTabLinkEnd)
 	{
-		return $"Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird. Durch Klicken auf „Bestellung abschicken“ (1) ermächtigst du uns, dein Konto monatlich zu belasten, bis du das Abonnement kündigst, und (2) du erklärst dich mit den {teamOfUseLinkStart}Nutzungsbedingungen{teamOfUseLinkEnd} und {privacyPolicyLinkStart}Datenschutzerklärung{privacyPolicyLinkEnd} einverstanden. Du kannst jederzeit kündigen, indem du auf der Einstellungsseite auf der {billingTabLinkStart}Registerkarte{billingTabLinkEnd} auf „Mitgliedschaft kündigen“ klickst. Wenn du stornierst, wird dir weiterhin der aktuelle Abrechnungszeitraum in Rechnung gestellt.";
+		return $"Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird. Durch Klicken auf â€žBestellung abschickenâ€œ (1) ermÃ¤chtigst du uns, dein Konto monatlich zu belasten, bis du das Abonnement kÃ¼ndigst, und (2) du erklÃ¤rst dich mit den {teamOfUseLinkStart}Nutzungsbedingungen{teamOfUseLinkEnd} und {privacyPolicyLinkStart}DatenschutzerklÃ¤rung{privacyPolicyLinkEnd} einverstanden. Du kannst jederzeit kÃ¼ndigen, indem du auf der Einstellungsseite auf der {billingTabLinkStart}Registerkarte{billingTabLinkEnd} auf â€žMitgliedschaft kÃ¼ndigenâ€œ klickst. Wenn du stornierst, wird dir weiterhin der aktuelle Abrechnungszeitraum in Rechnung gestellt.";
 	}
 
 	protected override string _GetTemplateForDescriptionPremiumSubscriptionDisclosure()
 	{
-		return "Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tätigst. Ein Kauf ohne Erlaubnis kann dazu führen, dass dein Konto gelöscht wird. Durch Klicken auf „Bestellung abschicken“ (1) ermächtigst du uns, dein Konto monatlich zu belasten, bis du das Abonnement kündigst, und (2) du erklärst dich mit den {teamOfUseLinkStart}Nutzungsbedingungen{teamOfUseLinkEnd} und {privacyPolicyLinkStart}Datenschutzerklärung{privacyPolicyLinkEnd} einverstanden. Du kannst jederzeit kündigen, indem du auf der Einstellungsseite auf der {billingTabLinkStart}Registerkarte{billingTabLinkEnd} auf „Mitgliedschaft kündigen“ klickst. Wenn du stornierst, wird dir weiterhin der aktuelle Abrechnungszeitraum in Rechnung gestellt.";
+		return "Wenn du unter 18 Jahre alt bist, stell sicher, dass du die Erlaubnis deiner Eltern oder Erziehungsberechtigten hast, bevor du einen Kauf tÃ¤tigst. Ein Kauf ohne Erlaubnis kann dazu fÃ¼hren, dass dein Konto gelÃ¶scht wird. Durch Klicken auf â€žBestellung abschickenâ€œ (1) ermÃ¤chtigst du uns, dein Konto monatlich zu belasten, bis du das Abonnement kÃ¼ndigst, und (2) du erklÃ¤rst dich mit den {teamOfUseLinkStart}Nutzungsbedingungen{teamOfUseLinkEnd} und {privacyPolicyLinkStart}DatenschutzerklÃ¤rung{privacyPolicyLinkEnd} einverstanden. Du kannst jederzeit kÃ¼ndigen, indem du auf der Einstellungsseite auf der {billingTabLinkStart}Registerkarte{billingTabLinkEnd} auf â€žMitgliedschaft kÃ¼ndigenâ€œ klickst. Wenn du stornierst, wird dir weiterhin der aktuelle Abrechnungszeitraum in Rechnung gestellt.";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxPremiumSubtitle()
 	{
-		return "Wenn du Roblox Premium beitrittst, erhältst du monatlich eine gewisse Menge an Robux sowie einen Bonus von 10\u00a0% beim Kauf von Robux. Zudem erhältst du Zugang zu den wirtschaftlichen Features von Roblox (unter anderem kannst du Artikel kaufen, verkaufen und mit ihnen handeln). Und du erhältst einen größeren Umsatzanteil für alle in deinen Spielen getätigten Verkäufe.";
+		return "Wenn du Roblox Premium beitrittst, erhÃ¤ltst du monatlich eine gewisse Menge an Robux sowie einen Bonus von 10\u00a0% beim Kauf von Robux. Zudem erhÃ¤ltst du Zugang zu den wirtschaftlichen Features von Roblox (unter anderem kannst du Artikel kaufen, verkaufen und mit ihnen handeln). Und du erhÃ¤ltst einen grÃ¶ÃŸeren Umsatzanteil fÃ¼r alle in deinen Spielen getÃ¤tigten VerkÃ¤ufe.";
 	}
 
 	protected override string _GetTemplateForDescriptionSellMoreItems()
 	{
-		return "Verkaufe Artikel weiter und erhalte mehr Robux für den Verkauf deiner Schöpfungen";
+		return "Verkaufe Artikel weiter und erhalte mehr Robux fÃ¼r den Verkauf deiner SchÃ¶pfungen";
 	}
 
 	protected override string _GetTemplateForDescriptionTrade()
@@ -480,7 +480,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingConfirmCancellation()
 	{
-		return "Kündigung bestätigen";
+		return "KÃ¼ndigung bestÃ¤tigen";
 	}
 
 	protected override string _GetTemplateForHeadingEvenMoreFeatures()
@@ -495,7 +495,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingPremiumRobuxDiscounts()
 	{
-		return "Als Premium-Mitglied erhältst du Rabatte auf Robux!";
+		return "Als Premium-Mitglied erhÃ¤ltst du Rabatte auf Robux!";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxPremium()
@@ -510,12 +510,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingSubscriptionUnavailable()
 	{
-		return "Abonnement nicht verfügbar";
+		return "Abonnement nicht verfÃ¼gbar";
 	}
 
 	protected override string _GetTemplateForHeadingSwitchPlanModal()
 	{
-		return "Abonnementaktualisierung bestätigen";
+		return "Abonnementaktualisierung bestÃ¤tigen";
 	}
 
 	protected override string _GetTemplateForHeadingUnableToFindBc()
@@ -530,12 +530,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingUpgradeUnavailable()
 	{
-		return "Aufwertung nicht verfügbar";
+		return "Aufwertung nicht verfÃ¼gbar";
 	}
 
 	protected override string _GetTemplateForLabel10PercentMoreRobux()
 	{
-		return "Du erhältst 10% mehr Robux";
+		return "Du erhÃ¤ltst 10% mehr Robux";
 	}
 
 	protected override string _GetTemplateForLabelAndGetMore()
@@ -565,7 +565,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelConfirm()
 	{
-		return "Bestätigen";
+		return "BestÃ¤tigen";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPlan()
@@ -585,7 +585,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelMembershipManagementRecurring()
 	{
-		return "Um dein Premium-Abonnement zu verwalten, ruf die Abrechnungseinstellungen über einen Browser auf.";
+		return "Um dein Premium-Abonnement zu verwalten, ruf die Abrechnungseinstellungen Ã¼ber einen Browser auf.";
 	}
 
 	/// <summary>
@@ -594,12 +594,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatus(string premiumSubscription, string expirationDate)
 	{
-		return $"Dein aktueller Plan ist {premiumSubscription}. Er wird am {expirationDate} verlängert.";
+		return $"Dein aktueller Plan ist {premiumSubscription}. Er wird am {expirationDate} verlÃ¤ngert.";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatus()
 	{
-		return "Dein aktueller Plan ist {premiumSubscription}. Er wird am {expirationDate} verlängert.";
+		return "Dein aktueller Plan ist {premiumSubscription}. Er wird am {expirationDate} verlÃ¤ngert.";
 	}
 
 	/// <summary>
@@ -608,12 +608,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatusExpiration(string premiumSubscription, string expirationDate)
 	{
-		return $"Dein aktueller Plan lautet {premiumSubscription} und läuft am {expirationDate} ab. Du kannst einen neuen Plan kaufen oder zurückkaufen, sobald deine Mitgliedschaft abgelaufen ist. ";
+		return $"Dein aktueller Plan lautet {premiumSubscription} und lÃ¤uft am {expirationDate} ab. Du kannst einen neuen Plan kaufen oder zurÃ¼ckkaufen, sobald deine Mitgliedschaft abgelaufen ist. ";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusExpiration()
 	{
-		return "Dein aktueller Plan lautet {premiumSubscription} und läuft am {expirationDate} ab. Du kannst einen neuen Plan kaufen oder zurückkaufen, sobald deine Mitgliedschaft abgelaufen ist. ";
+		return "Dein aktueller Plan lautet {premiumSubscription} und lÃ¤uft am {expirationDate} ab. Du kannst einen neuen Plan kaufen oder zurÃ¼ckkaufen, sobald deine Mitgliedschaft abgelaufen ist. ";
 	}
 
 	/// <summary>
@@ -622,12 +622,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatusRecurring(string premiumSubscription, string renewal)
 	{
-		return $"Dein aktueller Plan ist {premiumSubscription}. Er wird am {renewal} verlängert.";
+		return $"Dein aktueller Plan ist {premiumSubscription}. Er wird am {renewal} verlÃ¤ngert.";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusRecurring()
 	{
-		return "Dein aktueller Plan ist {premiumSubscription}. Er wird am {renewal} verlängert.";
+		return "Dein aktueller Plan ist {premiumSubscription}. Er wird am {renewal} verlÃ¤ngert.";
 	}
 
 	protected override string _GetTemplateForLabelNo()
@@ -759,17 +759,17 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageConfirmCancellationModal(string newLine, string robuxAmount)
 	{
-		return $"Wenn du auf „Bestätigen“ klickst, beendest du deine „Builders Club“-Mitgliedschaft, damit du dich bei Roblox Premium anmelden kannst.{newLine}Du erhältst eine einmalige Auszahlung von {robuxAmount}.";
+		return $"Wenn du auf â€žBestÃ¤tigenâ€œ klickst, beendest du deine â€žBuilders Clubâ€œ-Mitgliedschaft, damit du dich bei Roblox Premium anmelden kannst.{newLine}Du erhÃ¤ltst eine einmalige Auszahlung von {robuxAmount}.";
 	}
 
 	protected override string _GetTemplateForMessageConfirmCancellationModal()
 	{
-		return "Wenn du auf „Bestätigen“ klickst, beendest du deine „Builders Club“-Mitgliedschaft, damit du dich bei Roblox Premium anmelden kannst.{newLine}Du erhältst eine einmalige Auszahlung von {robuxAmount}.";
+		return "Wenn du auf â€žBestÃ¤tigenâ€œ klickst, beendest du deine â€žBuilders Clubâ€œ-Mitgliedschaft, damit du dich bei Roblox Premium anmelden kannst.{newLine}Du erhÃ¤ltst eine einmalige Auszahlung von {robuxAmount}.";
 	}
 
 	protected override string _GetTemplateForMessageGeneralError()
 	{
-		return "Bei der Aktualisierung deines Abonnements ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+		return "Bei der Aktualisierung deines Abonnements ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageNoDataError()
@@ -779,7 +779,7 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForMessageServerError()
 	{
-		return "Bei der Aktualisierung deines Abonnements ist ein Serverfehler aufgetreten. Bitte versuche es später erneut.";
+		return "Bei der Aktualisierung deines Abonnements ist ein Serverfehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	/// <summary>
@@ -788,12 +788,12 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageSubscriptionUnavailableModal(string expiredDate)
 	{
-		return $"Es tut uns leid, du kannst erst wieder ein Abonnement abschließen, wenn dein aktuell gekündigtes abgelaufen ist. Bitte schließe am {expiredDate} wieder ein Abonnement ab.";
+		return $"Es tut uns leid, du kannst erst wieder ein Abonnement abschlieÃŸen, wenn dein aktuell gekÃ¼ndigtes abgelaufen ist. Bitte schlieÃŸe am {expiredDate} wieder ein Abonnement ab.";
 	}
 
 	protected override string _GetTemplateForMessageSubscriptionUnavailableModal()
 	{
-		return "Es tut uns leid, du kannst erst wieder ein Abonnement abschließen, wenn dein aktuell gekündigtes abgelaufen ist. Bitte schließe am {expiredDate} wieder ein Abonnement ab.";
+		return "Es tut uns leid, du kannst erst wieder ein Abonnement abschlieÃŸen, wenn dein aktuell gekÃ¼ndigtes abgelaufen ist. Bitte schlieÃŸe am {expiredDate} wieder ein Abonnement ab.";
 	}
 
 	/// <summary>
@@ -802,26 +802,29 @@ internal class PremiumResources_de_de : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageSwitchPlanBody(string price, string renewalDate)
 	{
-		return $"Wenn du auf „Bestätigen“ klickst, erlaubst du uns, dir jeden Monat {price} zu berechnen, bis du kündigst oder mit Wirkung zum {renewalDate} das Abonnement änderst.";
+		return $"Wenn du auf â€žBestÃ¤tigenâ€œ klickst, erlaubst du uns, dir jeden Monat {price} zu berechnen, bis du kÃ¼ndigst oder mit Wirkung zum {renewalDate} das Abonnement Ã¤nderst.";
 	}
 
 	protected override string _GetTemplateForMessageSwitchPlanBody()
 	{
-		return "Wenn du auf „Bestätigen“ klickst, erlaubst du uns, dir jeden Monat {price} zu berechnen, bis du kündigst oder mit Wirkung zum {renewalDate} das Abonnement änderst.";
+		return "Wenn du auf â€žBestÃ¤tigenâ€œ klickst, erlaubst du uns, dir jeden Monat {price} zu berechnen, bis du kÃ¼ndigst oder mit Wirkung zum {renewalDate} das Abonnement Ã¤nderst.";
 	}
 
 	protected override string _GetTemplateForMessageUnableToFindBc()
 	{
-		return "Informationen zum Builders Club dieses Benutzers können nicht gefunden werden.";
+		return "Informationen zum Builders Club dieses Benutzers kÃ¶nnen nicht gefunden werden.";
 	}
 
 	protected override string _GetTemplateForMessageUpgradeUnavailableModal()
 	{
-		return "Es tut uns leid, wir können dein Abonnement nicht ändern, weil es momentan kein gleichwertiges Paket zum Builders Club auf Lebenszeit gibt.";
+		return "Es tut uns leid, wir kÃ¶nnen dein Abonnement nicht Ã¤ndern, weil es momentan kein gleichwertiges Paket zum Builders Club auf Lebenszeit gibt.";
 	}
 
 	protected override string _GetTemplateForSwitchPlanTitle()
 	{
-		return "Abonnementaktualisierung bestätigen";
+		return "Abonnementaktualisierung bestÃ¤tigen";
 	}
+}
+
+
 }

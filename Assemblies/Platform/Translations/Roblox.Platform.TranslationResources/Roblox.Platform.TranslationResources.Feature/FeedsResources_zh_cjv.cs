@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeedsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,49 +10,49 @@ internal class FeedsResources_zh_cjv : FeedsResources_en_us, IFeedsResources, IT
 	/// Key: "Heading.BuildSomething"
 	/// English String: "Build Something"
 	/// </summary>
-	public override string HeadingBuildSomething => "发挥创造力";
+	public override string HeadingBuildSomething => "å‘æŒ¥åˆ›é€ åŠ›";
 
 	/// <summary>
 	/// Key: "Heading.CustomizeAvatar"
 	/// English String: "Customize Your Avatar"
 	/// </summary>
-	public override string HeadingCustomizeAvatar => "自定义你的虚拟形象";
+	public override string HeadingCustomizeAvatar => "è‡ªå®šä¹‰ä½ çš„è™šæ‹Ÿå½¢è±¡";
 
 	/// <summary>
 	/// Key: "Heading.ForumHelp"
 	/// English String: "Roblox forums for help"
 	/// </summary>
-	public override string HeadingForumHelp => "前往 Roblox 论坛寻求帮助";
+	public override string HeadingForumHelp => "å‰å¾€ Roblox è®ºå›å¯»æ±‚å¸®åŠ©";
 
 	/// <summary>
 	/// Key: "Heading.MakeFriends"
 	/// English String: "Make Friends"
 	/// </summary>
-	public override string HeadingMakeFriends => "结交好友";
+	public override string HeadingMakeFriends => "ç»“äº¤å¥½å‹";
 
 	/// <summary>
 	/// Key: "Heading.PlayGames"
 	/// English String: "Play Games"
 	/// </summary>
-	public override string HeadingPlayGames => "玩游戏";
+	public override string HeadingPlayGames => "çŽ©æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.NoFeedLink"
 	/// English String: "make some best friends now."
 	/// </summary>
-	public override string LabelNoFeedLink => "立即认识新朋友。";
+	public override string LabelNoFeedLink => "ç«‹å³è®¤è¯†æ–°æœ‹å‹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoFeedText"
 	/// English String: "No news about your best friends... want to know what your best friends are up to?"
 	/// </summary>
-	public override string LabelNoFeedText => "没有你好友的消息... 想知道他们在做什么吗？";
+	public override string LabelNoFeedText => "æ²¡æœ‰ä½ å¥½å‹çš„æ¶ˆæ¯... æƒ³çŸ¥é“ä»–ä»¬åœ¨åšä»€ä¹ˆå—ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.PlayGames"
 	/// English String: "Nearly all Roblox games are built by players like you. Here are some of our favorites:"
 	/// </summary>
-	public override string LabelPlayGames => "几乎所有的 Roblox 游戏都是由和你一样的玩家创作的。这里是我们最爱的几个游戏：";
+	public override string LabelPlayGames => "å‡ ä¹Žæ‰€æœ‰çš„ Roblox æ¸¸æˆéƒ½æ˜¯ç”±å’Œä½ ä¸€æ ·çš„çŽ©å®¶åˆ›ä½œçš„ã€‚è¿™é‡Œæ˜¯æˆ‘ä»¬æœ€çˆ±çš„å‡ ä¸ªæ¸¸æˆï¼š";
 
 	public FeedsResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -61,27 +61,27 @@ internal class FeedsResources_zh_cjv : FeedsResources_en_us, IFeedsResources, IT
 
 	protected override string _GetTemplateForHeadingBuildSomething()
 	{
-		return "发挥创造力";
+		return "å‘æŒ¥åˆ›é€ åŠ›";
 	}
 
 	protected override string _GetTemplateForHeadingCustomizeAvatar()
 	{
-		return "自定义你的虚拟形象";
+		return "è‡ªå®šä¹‰ä½ çš„è™šæ‹Ÿå½¢è±¡";
 	}
 
 	protected override string _GetTemplateForHeadingForumHelp()
 	{
-		return "前往 Roblox 论坛寻求帮助";
+		return "å‰å¾€ Roblox è®ºå›å¯»æ±‚å¸®åŠ©";
 	}
 
 	protected override string _GetTemplateForHeadingMakeFriends()
 	{
-		return "结交好友";
+		return "ç»“äº¤å¥½å‹";
 	}
 
 	protected override string _GetTemplateForHeadingPlayGames()
 	{
-		return "玩游戏";
+		return "çŽ©æ¸¸æˆ";
 	}
 
 	/// <summary>
@@ -90,12 +90,12 @@ internal class FeedsResources_zh_cjv : FeedsResources_en_us, IFeedsResources, IT
 	/// </summary>
 	public override string LabelBuildSomething(string linkStart, string linkEnd)
 	{
-		return $"你会在 Roblox 中发现许多深受大家欢迎的多人建造游戏。专业的创建者可以前往{linkStart}创建页面{linkEnd}，了解我们的游戏开发环境 Roblox Studio。";
+		return $"ä½ ä¼šåœ¨ Roblox ä¸­å‘çŽ°è®¸å¤šæ·±å—å¤§å®¶æ¬¢è¿Žçš„å¤šäººå»ºé€ æ¸¸æˆã€‚ä¸“ä¸šçš„åˆ›å»ºè€…å¯ä»¥å‰å¾€{linkStart}åˆ›å»ºé¡µé¢{linkEnd}ï¼Œäº†è§£æˆ‘ä»¬çš„æ¸¸æˆå¼€å‘çŽ¯å¢ƒ Roblox Studioã€‚";
 	}
 
 	protected override string _GetTemplateForLabelBuildSomething()
 	{
-		return "你会在 Roblox 中发现许多深受大家欢迎的多人建造游戏。专业的创建者可以前往{linkStart}创建页面{linkEnd}，了解我们的游戏开发环境 Roblox Studio。";
+		return "ä½ ä¼šåœ¨ Roblox ä¸­å‘çŽ°è®¸å¤šæ·±å—å¤§å®¶æ¬¢è¿Žçš„å¤šäººå»ºé€ æ¸¸æˆã€‚ä¸“ä¸šçš„åˆ›å»ºè€…å¯ä»¥å‰å¾€{linkStart}åˆ›å»ºé¡µé¢{linkEnd}ï¼Œäº†è§£æˆ‘ä»¬çš„æ¸¸æˆå¼€å‘çŽ¯å¢ƒ Roblox Studioã€‚";
 	}
 
 	/// <summary>
@@ -104,12 +104,12 @@ internal class FeedsResources_zh_cjv : FeedsResources_en_us, IFeedsResources, IT
 	/// </summary>
 	public override string LabelCustomizeAvatarDesktop(string avatarLinkStart, string avatarLinkEnd, string catalogLinkStart, string catalogLinkEnd)
 	{
-		return $"访问{avatarLinkStart}虚拟形象编辑器{avatarLinkEnd}来自定义你的人物。前往{catalogLinkStart}商店{catalogLinkEnd}购买心仪的服装。";
+		return $"è®¿é—®{avatarLinkStart}è™šæ‹Ÿå½¢è±¡ç¼–è¾‘å™¨{avatarLinkEnd}æ¥è‡ªå®šä¹‰ä½ çš„äººç‰©ã€‚å‰å¾€{catalogLinkStart}å•†åº—{catalogLinkEnd}è´­ä¹°å¿ƒä»ªçš„æœè£…ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarDesktop()
 	{
-		return "访问{avatarLinkStart}虚拟形象编辑器{avatarLinkEnd}来自定义你的人物。前往{catalogLinkStart}商店{catalogLinkEnd}购买心仪的服装。";
+		return "è®¿é—®{avatarLinkStart}è™šæ‹Ÿå½¢è±¡ç¼–è¾‘å™¨{avatarLinkEnd}æ¥è‡ªå®šä¹‰ä½ çš„äººç‰©ã€‚å‰å¾€{catalogLinkStart}å•†åº—{catalogLinkEnd}è´­ä¹°å¿ƒä»ªçš„æœè£…ã€‚";
 	}
 
 	/// <summary>
@@ -118,12 +118,12 @@ internal class FeedsResources_zh_cjv : FeedsResources_en_us, IFeedsResources, IT
 	/// </summary>
 	public override string LabelCustomizeAvatarPhone(string linkStart, string linkEnd)
 	{
-		return $"在{linkStart}商店{linkEnd}中获取新服装，自定义你的虚拟形象。";
+		return $"åœ¨{linkStart}å•†åº—{linkEnd}ä¸­èŽ·å–æ–°æœè£…ï¼Œè‡ªå®šä¹‰ä½ çš„è™šæ‹Ÿå½¢è±¡ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarPhone()
 	{
-		return "在{linkStart}商店{linkEnd}中获取新服装，自定义你的虚拟形象。";
+		return "åœ¨{linkStart}å•†åº—{linkEnd}ä¸­èŽ·å–æ–°æœè£…ï¼Œè‡ªå®šä¹‰ä½ çš„è™šæ‹Ÿå½¢è±¡ã€‚";
 	}
 
 	/// <summary>
@@ -132,12 +132,12 @@ internal class FeedsResources_zh_cjv : FeedsResources_en_us, IFeedsResources, IT
 	/// </summary>
 	public override string LabelForumHelp(string linkStart, string linkEnd)
 	{
-		return $"无论你要找什么，只要与 Roblox 相关，就有人在{linkStart}此处{linkEnd}讨论。";
+		return $"æ— è®ºä½ è¦æ‰¾ä»€ä¹ˆï¼Œåªè¦ä¸Ž Roblox ç›¸å…³ï¼Œå°±æœ‰äººåœ¨{linkStart}æ­¤å¤„{linkEnd}è®¨è®ºã€‚";
 	}
 
 	protected override string _GetTemplateForLabelForumHelp()
 	{
-		return "无论你要找什么，只要与 Roblox 相关，就有人在{linkStart}此处{linkEnd}讨论。";
+		return "æ— è®ºä½ è¦æ‰¾ä»€ä¹ˆï¼Œåªè¦ä¸Ž Roblox ç›¸å…³ï¼Œå°±æœ‰äººåœ¨{linkStart}æ­¤å¤„{linkEnd}è®¨è®ºã€‚";
 	}
 
 	/// <summary>
@@ -146,26 +146,29 @@ internal class FeedsResources_zh_cjv : FeedsResources_en_us, IFeedsResources, IT
 	/// </summary>
 	public override string LabelMakeFriends(string linkStart, string linkEnd)
 	{
-		return $"在游戏中认识其他玩家，并向他们发出好友邀请。如果你错过了机会，不用担心，你可以随时通过{linkStart}搜索{linkEnd}该玩家的个人资料，再向他们发出好友邀请。";
+		return $"åœ¨æ¸¸æˆä¸­è®¤è¯†å…¶ä»–çŽ©å®¶ï¼Œå¹¶å‘ä»–ä»¬å‘å‡ºå¥½å‹é‚€è¯·ã€‚å¦‚æžœä½ é”™è¿‡äº†æœºä¼šï¼Œä¸ç”¨æ‹…å¿ƒï¼Œä½ å¯ä»¥éšæ—¶é€šè¿‡{linkStart}æœç´¢{linkEnd}è¯¥çŽ©å®¶çš„ä¸ªäººèµ„æ–™ï¼Œå†å‘ä»–ä»¬å‘å‡ºå¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelMakeFriends()
 	{
-		return "在游戏中认识其他玩家，并向他们发出好友邀请。如果你错过了机会，不用担心，你可以随时通过{linkStart}搜索{linkEnd}该玩家的个人资料，再向他们发出好友邀请。";
+		return "åœ¨æ¸¸æˆä¸­è®¤è¯†å…¶ä»–çŽ©å®¶ï¼Œå¹¶å‘ä»–ä»¬å‘å‡ºå¥½å‹é‚€è¯·ã€‚å¦‚æžœä½ é”™è¿‡äº†æœºä¼šï¼Œä¸ç”¨æ‹…å¿ƒï¼Œä½ å¯ä»¥éšæ—¶é€šè¿‡{linkStart}æœç´¢{linkEnd}è¯¥çŽ©å®¶çš„ä¸ªäººèµ„æ–™ï¼Œå†å‘ä»–ä»¬å‘å‡ºå¥½å‹é‚€è¯·ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedLink()
 	{
-		return "立即认识新朋友。";
+		return "ç«‹å³è®¤è¯†æ–°æœ‹å‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedText()
 	{
-		return "没有你好友的消息... 想知道他们在做什么吗？";
+		return "æ²¡æœ‰ä½ å¥½å‹çš„æ¶ˆæ¯... æƒ³çŸ¥é“ä»–ä»¬åœ¨åšä»€ä¹ˆå—ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelPlayGames()
 	{
-		return "几乎所有的 Roblox 游戏都是由和你一样的玩家创作的。这里是我们最爱的几个游戏：";
+		return "å‡ ä¹Žæ‰€æœ‰çš„ Roblox æ¸¸æˆéƒ½æ˜¯ç”±å’Œä½ ä¸€æ ·çš„çŽ©å®¶åˆ›ä½œçš„ã€‚è¿™é‡Œæ˜¯æˆ‘ä»¬æœ€çˆ±çš„å‡ ä¸ªæ¸¸æˆï¼š";
 	}
+}
+
+
 }

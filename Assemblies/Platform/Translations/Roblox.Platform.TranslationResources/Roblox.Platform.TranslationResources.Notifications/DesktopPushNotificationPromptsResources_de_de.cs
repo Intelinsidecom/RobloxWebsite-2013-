@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notifications {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DesktopPushNotificationPromptsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,14 +11,14 @@ internal class DesktopPushNotificationPromptsResources_de_de : DesktopPushNotifi
 	/// Notify Me
 	/// English String: "Notify Me"
 	/// </summary>
-	public override string ActionAcceptNotificationPrompt => "Ich möchte eine Benachrichtigung";
+	public override string ActionAcceptNotificationPrompt => "Ich mÃ¶chte eine Benachrichtigung";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// Close
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "Schließen";
+	public override string ActionClose => "SchlieÃŸen";
 
 	/// <summary>
 	/// Key: "Heading.TurnNotificationsBackOn"
@@ -39,7 +39,7 @@ internal class DesktopPushNotificationPromptsResources_de_de : DesktopPushNotifi
 	/// Click the green lock next to the URL bar to open up your site permissions.
 	/// English String: "Click the green lock next to the URL bar to open up your site permissions."
 	/// </summary>
-	public override string LabelClickGreenLockOnUrl => "Klicke auf das grüne Vorhängeschloss neben der URL-Leiste, um die Websiteberechtigungen zu öffnen.";
+	public override string LabelClickGreenLockOnUrl => "Klicke auf das grÃ¼ne VorhÃ¤ngeschloss neben der URL-Leiste, um die Websiteberechtigungen zu Ã¶ffnen.";
 
 	/// <summary>
 	/// Key: "Message.PushNotificationsDisabledSuccess"
@@ -60,7 +60,7 @@ internal class DesktopPushNotificationPromptsResources_de_de : DesktopPushNotifi
 	/// Can we send you notifications on this computer?
 	/// English String: "Can we send you notifications on this computer?"
 	/// </summary>
-	public override string MessageSendNotificationsPrompt => "Dürfen wir dir Benachrichtigungen auf diesem Computer senden?";
+	public override string MessageSendNotificationsPrompt => "DÃ¼rfen wir dir Benachrichtigungen auf diesem Computer senden?";
 
 	public DesktopPushNotificationPromptsResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -69,12 +69,12 @@ internal class DesktopPushNotificationPromptsResources_de_de : DesktopPushNotifi
 
 	protected override string _GetTemplateForActionAcceptNotificationPrompt()
 	{
-		return "Ich möchte eine Benachrichtigung";
+		return "Ich mÃ¶chte eine Benachrichtigung";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "Schließen";
+		return "SchlieÃŸen";
 	}
 
 	protected override string _GetTemplateForHeadingTurnNotificationsBackOn()
@@ -89,7 +89,7 @@ internal class DesktopPushNotificationPromptsResources_de_de : DesktopPushNotifi
 
 	protected override string _GetTemplateForLabelClickGreenLockOnUrl()
 	{
-		return "Klicke auf das grüne Vorhängeschloss neben der URL-Leiste, um die Websiteberechtigungen zu öffnen.";
+		return "Klicke auf das grÃ¼ne VorhÃ¤ngeschloss neben der URL-Leiste, um die Websiteberechtigungen zu Ã¶ffnen.";
 	}
 
 	/// <summary>
@@ -99,12 +99,12 @@ internal class DesktopPushNotificationPromptsResources_de_de : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAllowNotificationsBackOn(string startBold, string endBold)
 	{
-		return $"Wähle {startBold}Erlauben{endBold}, um Benachrichtigungen wieder zu aktivieren.";
+		return $"WÃ¤hle {startBold}Erlauben{endBold}, um Benachrichtigungen wieder zu aktivieren.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAllowNotificationsBackOn()
 	{
-		return "Wähle {startBold}Erlauben{endBold}, um Benachrichtigungen wieder zu aktivieren.";
+		return "WÃ¤hle {startBold}Erlauben{endBold}, um Benachrichtigungen wieder zu aktivieren.";
 	}
 
 	/// <summary>
@@ -129,12 +129,12 @@ internal class DesktopPushNotificationPromptsResources_de_de : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAlwaysAllowNotificationsBackOn(string startBold, string endBold)
 	{
-		return $"Wähle {startBold}Auf dieser Website immer erlauben{endBold}, um Benachrichtigungen wieder zu aktivieren.";
+		return $"WÃ¤hle {startBold}Auf dieser Website immer erlauben{endBold}, um Benachrichtigungen wieder zu aktivieren.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAlwaysAllowNotificationsBackOn()
 	{
-		return "Wähle {startBold}Auf dieser Website immer erlauben{endBold}, um Benachrichtigungen wieder zu aktivieren.";
+		return "WÃ¤hle {startBold}Auf dieser Website immer erlauben{endBold}, um Benachrichtigungen wieder zu aktivieren.";
 	}
 
 	/// <summary>
@@ -179,6 +179,9 @@ internal class DesktopPushNotificationPromptsResources_de_de : DesktopPushNotifi
 
 	protected override string _GetTemplateForMessageSendNotificationsPrompt()
 	{
-		return "Dürfen wir dir Benachrichtigungen auf diesem Computer senden?";
+		return "DÃ¼rfen wir dir Benachrichtigungen auf diesem Computer senden?";
 	}
+}
+
+
 }

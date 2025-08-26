@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class TranslationRolesResources_en_us : TranslationResourcesBase, ITranslationRolesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class TranslationRolesResources_en_us : TranslationResourcesBase, ITranslationRolesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -463,4 +462,7 @@ internal class TranslationRolesResources_en_us : TranslationResourcesBase, ITran
 	{
 		return "User not found. Please check Username or User ID entered.";
 	}
+}
+
+
 }

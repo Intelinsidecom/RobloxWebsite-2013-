@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.PremiumFeatures.Entities {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Entities;
-
-/// <summary>
 /// The various frequencies that a <see cref="T:Roblox.PremiumFeatures.RobuxStipend" /> may be awarded.
 /// </summary>
 internal class RobuxStipendFrequencyTypeEntity : IRobloxEntity<byte, RobuxStipendFrequencyTypeDAL>, ICacheableObject<byte>, ICacheableObject
@@ -104,4 +103,7 @@ internal class RobuxStipendFrequencyTypeEntity : IRobloxEntity<byte, RobuxStipen
 	{
 		return $"Value:{value}";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class CrowdSourcedTranslationResources_en_us : TranslationResourcesBase, ICrowdSourcedTranslationResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class CrowdSourcedTranslationResources_en_us : TranslationResourcesBase, ICrowdSourcedTranslationResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -784,4 +783,7 @@ internal class CrowdSourcedTranslationResources_en_us : TranslationResourcesBase
 	{
 		return "There was a problem deleting entry.";
 	}
+}
+
+
 }

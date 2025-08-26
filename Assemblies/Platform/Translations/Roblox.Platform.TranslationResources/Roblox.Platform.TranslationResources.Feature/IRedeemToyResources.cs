@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IRedeemToyResources : ITranslationResources
 
-public interface IRedeemToyResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -141,4 +141,7 @@ public interface IRedeemToyResources : ITranslationResources
 	/// English String: "You have successfully redeemed {spanTagStart}{itemName}{spanTagEnd} ({itemType}) from {creatorName}."
 	/// </summary>
 	string DescriptionDialogSuccess(string spanTagStart, string itemName, string spanTagEnd, string itemType, string creatorName);
+}
+
+
 }

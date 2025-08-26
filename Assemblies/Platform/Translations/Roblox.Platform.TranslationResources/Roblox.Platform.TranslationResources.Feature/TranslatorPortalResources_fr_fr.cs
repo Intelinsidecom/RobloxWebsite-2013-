@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslatorPortalResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -24,7 +24,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 	/// modal window heading
 	/// English String: "Download Translation Contribution Report"
 	/// </summary>
-	public override string HeadingDownloadTranslationContributionReport => "Télécharger Compte rendu de traduction";
+	public override string HeadingDownloadTranslationContributionReport => "TÃ©lÃ©charger Compte rendu de traduction";
 
 	/// <summary>
 	/// Key: "Heading.TranslatorPortal"
@@ -36,7 +36,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 	/// Key: "Label.Creator"
 	/// English String: "Creator"
 	/// </summary>
-	public override string LabelCreator => "Créateur";
+	public override string LabelCreator => "CrÃ©ateur";
 
 	/// <summary>
 	/// Key: "Label.GameName"
@@ -60,7 +60,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 	/// Key: "Label.OrderByAlphabetical"
 	/// English String: "Alphabetical"
 	/// </summary>
-	public override string LabelOrderByAlphabetical => "Alphabétique";
+	public override string LabelOrderByAlphabetical => "AlphabÃ©tique";
 
 	/// <summary>
 	/// Key: "Label.OrderByFavorites"
@@ -78,7 +78,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 	/// Key: "Label.OrderByProgress"
 	/// English String: "Progress"
 	/// </summary>
-	public override string LabelOrderByProgress => "Évolution";
+	public override string LabelOrderByProgress => "Ã‰volution";
 
 	/// <summary>
 	/// Key: "Label.OrderByProgressAsc"
@@ -92,7 +92,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 	/// translation percent progress of a game
 	/// English String: "Progress (High to Low)"
 	/// </summary>
-	public override string LabelOrderByProgressDesc => "Progression (décroissante)";
+	public override string LabelOrderByProgressDesc => "Progression (dÃ©croissante)";
 
 	/// <summary>
 	/// Key: "Label.Search"
@@ -129,7 +129,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForHeadingDownloadTranslationContributionReport()
 	{
-		return "Télécharger Compte rendu de traduction";
+		return "TÃ©lÃ©charger Compte rendu de traduction";
 	}
 
 	protected override string _GetTemplateForHeadingTranslatorPortal()
@@ -139,7 +139,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForLabelCreator()
 	{
-		return "Créateur";
+		return "CrÃ©ateur";
 	}
 
 	/// <summary>
@@ -201,12 +201,12 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelLanguageNotSupportedByGame(string languageName)
 	{
-		return $"Ce jeu n'a pas été traduit en : {languageName}";
+		return $"Ce jeu n'a pas Ã©tÃ© traduit en : {languageName}";
 	}
 
 	protected override string _GetTemplateForLabelLanguageNotSupportedByGame()
 	{
-		return "Ce jeu n'a pas été traduit en : {languageName}";
+		return "Ce jeu n'a pas Ã©tÃ© traduit en : {languageName}";
 	}
 
 	protected override string _GetTemplateForLabelOrderBy()
@@ -216,7 +216,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForLabelOrderByAlphabetical()
 	{
-		return "Alphabétique";
+		return "AlphabÃ©tique";
 	}
 
 	protected override string _GetTemplateForLabelOrderByFavorites()
@@ -231,7 +231,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForLabelOrderByProgress()
 	{
-		return "Évolution";
+		return "Ã‰volution";
 	}
 
 	protected override string _GetTemplateForLabelOrderByProgressAsc()
@@ -241,7 +241,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForLabelOrderByProgressDesc()
 	{
-		return "Progression (décroissante)";
+		return "Progression (dÃ©croissante)";
 	}
 
 	protected override string _GetTemplateForLabelSearch()
@@ -272,4 +272,7 @@ internal class TranslatorPortalResources_fr_fr : TranslatorPortalResources_en_us
 	{
 		return "Traducteur";
 	}
+}
+
+
 }

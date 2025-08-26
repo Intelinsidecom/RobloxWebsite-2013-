@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides WebUtilResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -17,12 +17,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelDay(string day)
 	{
-		return $"{day}일";
+		return $"{day}ì¼";
 	}
 
 	protected override string _GetTemplateForGetLabelDay()
 	{
-		return "{day}일";
+		return "{day}ì¼";
 	}
 
 	/// <summary>
@@ -31,12 +31,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelDays(string days)
 	{
-		return $"{days}일";
+		return $"{days}ì¼";
 	}
 
 	protected override string _GetTemplateForGetLabelDays()
 	{
-		return "{days}일";
+		return "{days}ì¼";
 	}
 
 	/// <summary>
@@ -45,12 +45,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelHour(string hour)
 	{
-		return $"{hour}시간";
+		return $"{hour}ì‹œê°„";
 	}
 
 	protected override string _GetTemplateForGetLabelHour()
 	{
-		return "{hour}시간";
+		return "{hour}ì‹œê°„";
 	}
 
 	/// <summary>
@@ -59,12 +59,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelHours(string hours)
 	{
-		return $"{hours}시간";
+		return $"{hours}ì‹œê°„";
 	}
 
 	protected override string _GetTemplateForGetLabelHours()
 	{
-		return "{hours}시간";
+		return "{hours}ì‹œê°„";
 	}
 
 	/// <summary>
@@ -73,12 +73,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelMinute(string minute)
 	{
-		return $"{minute}분";
+		return $"{minute}ë¶„";
 	}
 
 	protected override string _GetTemplateForGetLabelMinute()
 	{
-		return "{minute}분";
+		return "{minute}ë¶„";
 	}
 
 	/// <summary>
@@ -87,12 +87,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelMinutes(string minutes)
 	{
-		return $"{minutes}분";
+		return $"{minutes}ë¶„";
 	}
 
 	protected override string _GetTemplateForGetLabelMinutes()
 	{
-		return "{minutes}분";
+		return "{minutes}ë¶„";
 	}
 
 	/// <summary>
@@ -101,12 +101,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelMonth(string month)
 	{
-		return $"{month}개월";
+		return $"{month}ê°œì›”";
 	}
 
 	protected override string _GetTemplateForGetLabelMonth()
 	{
-		return "{month}개월";
+		return "{month}ê°œì›”";
 	}
 
 	/// <summary>
@@ -115,12 +115,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelMonths(string months)
 	{
-		return $"{months}개월";
+		return $"{months}ê°œì›”";
 	}
 
 	protected override string _GetTemplateForGetLabelMonths()
 	{
-		return "{months}개월";
+		return "{months}ê°œì›”";
 	}
 
 	/// <summary>
@@ -130,12 +130,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelMonthsUppercase(string number)
 	{
-		return $"{number}개월";
+		return $"{number}ê°œì›”";
 	}
 
 	protected override string _GetTemplateForGetLabelMonthsUppercase()
 	{
-		return "{number}개월";
+		return "{number}ê°œì›”";
 	}
 
 	/// <summary>
@@ -144,12 +144,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelSecond(string second)
 	{
-		return $"{second}초";
+		return $"{second}ì´ˆ";
 	}
 
 	protected override string _GetTemplateForGetLabelSecond()
 	{
-		return "{second}초";
+		return "{second}ì´ˆ";
 	}
 
 	/// <summary>
@@ -158,12 +158,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelSeconds(string seconds)
 	{
-		return $"{seconds}초";
+		return $"{seconds}ì´ˆ";
 	}
 
 	protected override string _GetTemplateForGetLabelSeconds()
 	{
-		return "{seconds}초";
+		return "{seconds}ì´ˆ";
 	}
 
 	/// <summary>
@@ -172,12 +172,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelWeek(string week)
 	{
-		return $"{week}주";
+		return $"{week}ì£¼";
 	}
 
 	protected override string _GetTemplateForGetLabelWeek()
 	{
-		return "{week}주";
+		return "{week}ì£¼";
 	}
 
 	/// <summary>
@@ -186,12 +186,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelWeeks(string weeks)
 	{
-		return $"{weeks}주";
+		return $"{weeks}ì£¼";
 	}
 
 	protected override string _GetTemplateForGetLabelWeeks()
 	{
-		return "{weeks}주";
+		return "{weeks}ì£¼";
 	}
 
 	/// <summary>
@@ -200,12 +200,12 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelYear(string year)
 	{
-		return $"{year}년";
+		return $"{year}ë…„";
 	}
 
 	protected override string _GetTemplateForGetLabelYear()
 	{
-		return "{year}년";
+		return "{year}ë…„";
 	}
 
 	/// <summary>
@@ -214,11 +214,14 @@ internal class WebUtilResources_ko_kr : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelYears(string years)
 	{
-		return $"{years}년";
+		return $"{years}ë…„";
 	}
 
 	protected override string _GetTemplateForGetLabelYears()
 	{
-		return "{years}년";
+		return "{years}ë…„";
 	}
+}
+
+
 }

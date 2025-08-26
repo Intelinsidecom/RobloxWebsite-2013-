@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FriendsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -138,7 +138,7 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.CurrentInvalidParametersError"
 	/// English String: "Invalid parameters."
 	/// </summary>
-	public override string MessageCurrentInvalidParametersError => "Ungültige Angaben.";
+	public override string MessageCurrentInvalidParametersError => "UngÃ¼ltige Angaben.";
 
 	/// <summary>
 	/// Key: "Message.CurrentUserFriendsLimitExceededError"
@@ -156,19 +156,19 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.FloodLimitExceededError"
 	/// English String: "You are performing this action too often. Please wait a minute and try again."
 	/// </summary>
-	public override string MessageFloodLimitExceededError => "Du führst diese Aktion zu häufig durch. Bitte warte eine Minute und versuche es dann erneut.";
+	public override string MessageFloodLimitExceededError => "Du fÃ¼hrst diese Aktion zu hÃ¤ufig durch. Bitte warte eine Minute und versuche es dann erneut.";
 
 	/// <summary>
 	/// Key: "Message.FollowerTabTooltip"
 	/// English String: "People who have chosen to follow your activity."
 	/// </summary>
-	public override string MessageFollowerTabTooltip => "Leute, die deinen Aktivitäten folgen möchten.";
+	public override string MessageFollowerTabTooltip => "Leute, die deinen AktivitÃ¤ten folgen mÃ¶chten.";
 
 	/// <summary>
 	/// Key: "Message.FollowingTabTooltip"
 	/// English String: "People whose activity you have chosen to follow."
 	/// </summary>
-	public override string MessageFollowingTabTooltip => "Leute, deren Aktivitäten du folgen möchtest.";
+	public override string MessageFollowingTabTooltip => "Leute, deren AktivitÃ¤ten du folgen mÃ¶chtest.";
 
 	/// <summary>
 	/// Key: "Message.ForGeneralError"
@@ -216,7 +216,7 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.FriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageFriendsLimitExceededError => "Max. Anzahl an Freunden überschritten.";
+	public override string MessageFriendsLimitExceededError => "Max. Anzahl an Freunden Ã¼berschritten.";
 
 	/// <summary>
 	/// Key: "Message.FriendsTabTooltip"
@@ -228,13 +228,13 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.NotRecipientError"
 	/// English String: "You are not the recipient of this friend request."
 	/// </summary>
-	public override string MessageNotRecipientError => "Du bist nicht der Empfänger dieser Freundesanfrage.";
+	public override string MessageNotRecipientError => "Du bist nicht der EmpfÃ¤nger dieser Freundesanfrage.";
 
 	/// <summary>
 	/// Key: "Message.OtherUserFriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageOtherUserFriendsLimitExceededError => "Max. Anzahl an Freunden überschritten.";
+	public override string MessageOtherUserFriendsLimitExceededError => "Max. Anzahl an Freunden Ã¼berschritten.";
 
 	/// <summary>
 	/// Key: "Message.RequestsTabTooltip"
@@ -246,7 +246,7 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.RobloxIsMoreFunWithFriends"
 	/// English String: "Roblox is more fun with friends!"
 	/// </summary>
-	public override string MessageRobloxIsMoreFunWithFriends => "Roblox macht mehr Spaß mit Freunden!";
+	public override string MessageRobloxIsMoreFunWithFriends => "Roblox macht mehr SpaÃŸ mit Freunden!";
 
 	/// <summary>
 	/// Key: "Message.SelfFollowingAttemptError"
@@ -264,7 +264,7 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.SystemUnavailableError"
 	/// English String: "Friends and Followers system is unavailable."
 	/// </summary>
-	public override string MessageSystemUnavailableError => "Das System für Freunde und Follower ist nicht verfügbar.";
+	public override string MessageSystemUnavailableError => "Das System fÃ¼r Freunde und Follower ist nicht verfÃ¼gbar.";
 
 	/// <summary>
 	/// Key: "Message.UnblockUserPinLockedError"
@@ -282,13 +282,13 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.UserHasNotPassedCaptchaError"
 	/// English String: "You need to pass Captcha."
 	/// </summary>
-	public override string MessageUserHasNotPassedCaptchaError => "Du musst das Captcha abschließen.";
+	public override string MessageUserHasNotPassedCaptchaError => "Du musst das Captcha abschlieÃŸen.";
 
 	/// <summary>
 	/// Key: "Message.UsersAreNotInSameGameError"
 	/// English String: "Users need to be in the same game."
 	/// </summary>
-	public override string MessageUsersAreNotInSameGameError => "Benutzer müssen sich im selben Spiel befinden.";
+	public override string MessageUsersAreNotInSameGameError => "Benutzer mÃ¼ssen sich im selben Spiel befinden.";
 
 	public FriendsResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -396,12 +396,12 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 	/// </summary>
 	public override string LabelNearbyUpsell(string startSpan, string endSpan)
 	{
-		return $"Du hast keine ausstehenden Freundesanfragen. Füge Freunde {startSpan}In der Nähe{endSpan} hinzu.";
+		return $"Du hast keine ausstehenden Freundesanfragen. FÃ¼ge Freunde {startSpan}In der NÃ¤he{endSpan} hinzu.";
 	}
 
 	protected override string _GetTemplateForLabelNearbyUpsell()
 	{
-		return "Du hast keine ausstehenden Freundesanfragen. Füge Freunde {startSpan}In der Nähe{endSpan} hinzu.";
+		return "Du hast keine ausstehenden Freundesanfragen. FÃ¼ge Freunde {startSpan}In der NÃ¤he{endSpan} hinzu.";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
@@ -446,7 +446,7 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageCurrentInvalidParametersError()
 	{
-		return "Ungültige Angaben.";
+		return "UngÃ¼ltige Angaben.";
 	}
 
 	protected override string _GetTemplateForMessageCurrentUserFriendsLimitExceededError()
@@ -461,17 +461,17 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageFloodLimitExceededError()
 	{
-		return "Du führst diese Aktion zu häufig durch. Bitte warte eine Minute und versuche es dann erneut.";
+		return "Du fÃ¼hrst diese Aktion zu hÃ¤ufig durch. Bitte warte eine Minute und versuche es dann erneut.";
 	}
 
 	protected override string _GetTemplateForMessageFollowerTabTooltip()
 	{
-		return "Leute, die deinen Aktivitäten folgen möchten.";
+		return "Leute, die deinen AktivitÃ¤ten folgen mÃ¶chten.";
 	}
 
 	protected override string _GetTemplateForMessageFollowingTabTooltip()
 	{
-		return "Leute, deren Aktivitäten du folgen möchtest.";
+		return "Leute, deren AktivitÃ¤ten du folgen mÃ¶chtest.";
 	}
 
 	protected override string _GetTemplateForMessageForGeneralError()
@@ -511,7 +511,7 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageFriendsLimitExceededError()
 	{
-		return "Max. Anzahl an Freunden überschritten.";
+		return "Max. Anzahl an Freunden Ã¼berschritten.";
 	}
 
 	protected override string _GetTemplateForMessageFriendsTabTooltip()
@@ -521,12 +521,12 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageNotRecipientError()
 	{
-		return "Du bist nicht der Empfänger dieser Freundesanfrage.";
+		return "Du bist nicht der EmpfÃ¤nger dieser Freundesanfrage.";
 	}
 
 	protected override string _GetTemplateForMessageOtherUserFriendsLimitExceededError()
 	{
-		return "Max. Anzahl an Freunden überschritten.";
+		return "Max. Anzahl an Freunden Ã¼berschritten.";
 	}
 
 	protected override string _GetTemplateForMessageRequestsTabTooltip()
@@ -536,7 +536,7 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageRobloxIsMoreFunWithFriends()
 	{
-		return "Roblox macht mehr Spaß mit Freunden!";
+		return "Roblox macht mehr SpaÃŸ mit Freunden!";
 	}
 
 	protected override string _GetTemplateForMessageSelfFollowingAttemptError()
@@ -551,7 +551,7 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageSystemUnavailableError()
 	{
-		return "Das System für Freunde und Follower ist nicht verfügbar.";
+		return "Das System fÃ¼r Freunde und Follower ist nicht verfÃ¼gbar.";
 	}
 
 	protected override string _GetTemplateForMessageUnblockUserPinLockedError()
@@ -566,11 +566,14 @@ internal class FriendsResources_de_de : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageUserHasNotPassedCaptchaError()
 	{
-		return "Du musst das Captcha abschließen.";
+		return "Du musst das Captcha abschlieÃŸen.";
 	}
 
 	protected override string _GetTemplateForMessageUsersAreNotInSameGameError()
 	{
-		return "Benutzer müssen sich im selben Spiel befinden.";
+		return "Benutzer mÃ¼ssen sich im selben Spiel befinden.";
 	}
+}
+
+
 }

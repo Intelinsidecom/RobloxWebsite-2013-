@@ -1,12 +1,12 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class PeopleSearchEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class PeopleSearchEvent : WebEventBase
 {
 	private const string _Name = "peopleSearch";
 
-	public PeopleSearchEvent(EventStreamer streamer, PeopleSearchEventArgs eventArgs)
+	public PeopleSearchEvent(IEventStreamer streamer, PeopleSearchEventArgs eventArgs)
 		: base(streamer, "peopleSearch", eventArgs)
 	{
 		if (string.IsNullOrWhiteSpace(eventArgs.Keyword))
@@ -25,12 +25,12 @@ public class PeopleSearchEvent : WebEventBase
 	/// Sends people search events to event streams.
 	/// </summary>
 	/// <param name="eventArgs"></param>
-	/// <param name="eventStreamer"></param>
+	/// <param name="IEventStreamer"></param>
 	/// <param name="keyword"></param>
 	/// <param name="pageNumber"></param>
 	/// <param name="peopleReturned"></param>
 	/// <param name="isMobileApp"></param>
-	public static void SendPeopleSearchEvent(PeopleSearchEventArgs eventArgs, EventStreamer eventStreamer, string keyword, int pageNumber, string peopleReturned, bool isMobileApp)
+	public static void SendPeopleSearchEvent(PeopleSearchEventArgs eventArgs, IEventStreamer IEventStreamer, string keyword, int pageNumber, string peopleReturned, bool isMobileApp)
 	{
 		if (!string.IsNullOrEmpty(keyword))
 		{
@@ -42,7 +42,16 @@ public class PeopleSearchEvent : WebEventBase
 			{
 				eventArgs.Target = EventTarget.MobileApp;
 			}
-			new PeopleSearchEvent(eventStreamer, eventArgs).Stream();
+			new PeopleSearchEvent(IEventStreamer, eventArgs).Stream();
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

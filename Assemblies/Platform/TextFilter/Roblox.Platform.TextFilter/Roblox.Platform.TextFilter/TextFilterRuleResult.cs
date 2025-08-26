@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-namespace Roblox.TextFilter;
-
-/// <summary>
 /// The result of filtering text for a single moderation rule (eg. under 13)
 /// </summary>
 internal class TextFilterRuleResult : ITextFilterRuleResult, ITextFilterResultModerationDetails
@@ -21,4 +20,7 @@ internal class TextFilterRuleResult : ITextFilterRuleResult, ITextFilterResultMo
 	/// The categories which were triggered causing the text to be moderated
 	/// </summary>
 	public HashSet<ModerationCategory> TriggeredModerationCategories { get; set; }
+}
+
+
 }

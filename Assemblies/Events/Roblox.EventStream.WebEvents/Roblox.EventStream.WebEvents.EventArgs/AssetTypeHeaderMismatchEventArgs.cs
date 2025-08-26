@@ -1,6 +1,8 @@
-namespace Roblox.Platform.EventStream.WebEvents.EventArgs;
+ using Roblox.EventStream.WebEvents;
 
-public class AssetTypeHeaderMismatchEventArgs : WebEventArgs
+namespace Roblox.EventStream.WebEvents.EventArgs {
+    public class AssetTypeHeaderMismatchEventArgs : WebEventArgs
+
 {
 	public string ActualType { get; set; }
 
@@ -8,3 +10,12 @@ public class AssetTypeHeaderMismatchEventArgs : WebEventArgs
 
 	public string ExpectedType { get; set; }
 }
+
+
+}
+
+
+
+
+
+

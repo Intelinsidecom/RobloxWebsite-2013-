@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Roblox.OwnershipV2.Client.Models;
+using Roblox.Platform.OwnershipV2.Client.Models;
 using Roblox.DataV2.Core;
 
-namespace Roblox.OwnershipV2.Client
+namespace Roblox.Platform.OwnershipV2.Client
 {
     public interface IOwnershipV2Client
     {

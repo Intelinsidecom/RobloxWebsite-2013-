@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class BuildersClubExpiringModalResources_en_us : TranslationResourcesBase, IBuildersClubExpiringModalResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class BuildersClubExpiringModalResources_en_us : TranslationResourcesBase, IBuildersClubExpiringModalResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -139,4 +138,7 @@ internal class BuildersClubExpiringModalResources_en_us : TranslationResourcesBa
 	{
 		return "Don't Miss Out - Renew Now!";
 	}
+}
+
+
 }

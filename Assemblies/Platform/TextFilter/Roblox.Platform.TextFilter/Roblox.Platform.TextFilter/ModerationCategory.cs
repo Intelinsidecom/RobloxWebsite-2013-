@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+namespace Roblox.Platform.TextFilter {
+    public enum ModerationCategory
 
-public enum ModerationCategory
 {
 	Unknown,
 	GeneralRisk,
@@ -24,4 +24,7 @@ public enum ModerationCategory
 	Subversive,
 	Sentiment,
 	BlockedContent
+}
+
+
 }

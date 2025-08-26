@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameDetailsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class GameDetailsResources_es_es : GameDetailsResources_en_us, IGameDet
 	/// Key: "Heading.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string HeadingDescription => "Descripción";
+	public override string HeadingDescription => "DescripciÃ³n";
 
 	/// <summary>
 	/// Key: "Heading.RecommendedGames"
@@ -97,19 +97,19 @@ internal class GameDetailsResources_es_es : GameDetailsResources_en_us, IGameDet
 	/// Key: "Label.Genre"
 	/// English String: "Genre"
 	/// </summary>
-	public override string LabelGenre => "Género";
+	public override string LabelGenre => "GÃ©nero";
 
 	/// <summary>
 	/// Key: "Label.Leaderboards"
 	/// English String: "Leaderboards"
 	/// </summary>
-	public override string LabelLeaderboards => "Clasificación";
+	public override string LabelLeaderboards => "ClasificaciÃ³n";
 
 	/// <summary>
 	/// Key: "Label.MaxPlayers"
 	/// English String: "Max Players"
 	/// </summary>
-	public override string LabelMaxPlayers => "Máx. de jugadores";
+	public override string LabelMaxPlayers => "MÃ¡x. de jugadores";
 
 	/// <summary>
 	/// Key: "Label.NoRunningGames"
@@ -149,21 +149,21 @@ internal class GameDetailsResources_es_es : GameDetailsResources_en_us, IGameDet
 	/// Details the effects of making a game's source public.
 	/// English String: "By leaving this checkbox checked, you are agreeing to allow every other user of Roblox the right to use (in various ways) the content you are now making available, as set out in the Terms. If you do not want to grant this right, please uncheck this box."
 	/// </summary>
-	public override string LabelPublicPrivateSourceCheckBox => "Al dejar activada esta casilla, permitirás que todos los usuarios de Roblox utilicen (de varias maneras) el contenido que pones a disposición, como se describe en los términos. Si no quieres otorgar este derecho, desactiva la casilla.";
+	public override string LabelPublicPrivateSourceCheckBox => "Al dejar activada esta casilla, permitirÃ¡s que todos los usuarios de Roblox utilicen (de varias maneras) el contenido que pones a disposiciÃ³n, como se describe en los tÃ©rminos. Si no quieres otorgar este derecho, desactiva la casilla.";
 
 	/// <summary>
 	/// Key: "Label.PublicSource"
 	/// Name of the option to set a game's source as public.
 	/// English String: "Public Source"
 	/// </summary>
-	public override string LabelPublicSource => "Fuente pública";
+	public override string LabelPublicSource => "Fuente pÃºblica";
 
 	/// <summary>
 	/// Key: "Label.PublicSourceDescription"
 	/// Player-facing description for a game with public source. This shows up under a game's description.
 	/// English String: "This game's source is public"
 	/// </summary>
-	public override string LabelPublicSourceDescription => "La fuente de este juego es pública";
+	public override string LabelPublicSourceDescription => "La fuente de este juego es pÃºblica";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
@@ -211,17 +211,17 @@ internal class GameDetailsResources_es_es : GameDetailsResources_en_us, IGameDet
 	/// </summary>
 	public override string DescriptionAllowCopyingDisclaimer(string boldTagStart, string boldTagEnd, string boldTagStart2, string boldTagEnd2, string linkStart, string linkEnd)
 	{
-		return $"Al activar esta casilla, {boldTagStart}otorgarás a todos los usuarios de Roblox el derecho a utilizar{boldTagEnd} (de varias maneras) el contenido que compartes. {boldTagStart2}Si no quieres otorgarlo, no la actives{boldTagEnd2}. Para obtener más información sobre cómo se comparte el contenido, revisa los {linkStart}Términos de uso{linkEnd} de Roblox.";
+		return $"Al activar esta casilla, {boldTagStart}otorgarÃ¡s a todos los usuarios de Roblox el derecho a utilizar{boldTagEnd} (de varias maneras) el contenido que compartes. {boldTagStart2}Si no quieres otorgarlo, no la actives{boldTagEnd2}. Para obtener mÃ¡s informaciÃ³n sobre cÃ³mo se comparte el contenido, revisa los {linkStart}TÃ©rminos de uso{linkEnd} de Roblox.";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopyingDisclaimer()
 	{
-		return "Al activar esta casilla, {boldTagStart}otorgarás a todos los usuarios de Roblox el derecho a utilizar{boldTagEnd} (de varias maneras) el contenido que compartes. {boldTagStart2}Si no quieres otorgarlo, no la actives{boldTagEnd2}. Para obtener más información sobre cómo se comparte el contenido, revisa los {linkStart}Términos de uso{linkEnd} de Roblox.";
+		return "Al activar esta casilla, {boldTagStart}otorgarÃ¡s a todos los usuarios de Roblox el derecho a utilizar{boldTagEnd} (de varias maneras) el contenido que compartes. {boldTagStart2}Si no quieres otorgarlo, no la actives{boldTagEnd2}. Para obtener mÃ¡s informaciÃ³n sobre cÃ³mo se comparte el contenido, revisa los {linkStart}TÃ©rminos de uso{linkEnd} de Roblox.";
 	}
 
 	protected override string _GetTemplateForHeadingDescription()
 	{
-		return "Descripción";
+		return "DescripciÃ³n";
 	}
 
 	protected override string _GetTemplateForHeadingRecommendedGames()
@@ -314,17 +314,17 @@ internal class GameDetailsResources_es_es : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelGenre()
 	{
-		return "Género";
+		return "GÃ©nero";
 	}
 
 	protected override string _GetTemplateForLabelLeaderboards()
 	{
-		return "Clasificación";
+		return "ClasificaciÃ³n";
 	}
 
 	protected override string _GetTemplateForLabelMaxPlayers()
 	{
-		return "Máx. de jugadores";
+		return "MÃ¡x. de jugadores";
 	}
 
 	protected override string _GetTemplateForLabelNoRunningGames()
@@ -354,17 +354,17 @@ internal class GameDetailsResources_es_es : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelPublicPrivateSourceCheckBox()
 	{
-		return "Al dejar activada esta casilla, permitirás que todos los usuarios de Roblox utilicen (de varias maneras) el contenido que pones a disposición, como se describe en los términos. Si no quieres otorgar este derecho, desactiva la casilla.";
+		return "Al dejar activada esta casilla, permitirÃ¡s que todos los usuarios de Roblox utilicen (de varias maneras) el contenido que pones a disposiciÃ³n, como se describe en los tÃ©rminos. Si no quieres otorgar este derecho, desactiva la casilla.";
 	}
 
 	protected override string _GetTemplateForLabelPublicSource()
 	{
-		return "Fuente pública";
+		return "Fuente pÃºblica";
 	}
 
 	protected override string _GetTemplateForLabelPublicSourceDescription()
 	{
-		return "La fuente de este juego es pública";
+		return "La fuente de este juego es pÃºblica";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
@@ -391,4 +391,7 @@ internal class GameDetailsResources_es_es : GameDetailsResources_en_us, IGameDet
 	{
 		return "Visitas";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ItemModelResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,25 +10,25 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.AmazonExclusiveItem"
 	/// English String: "This is an Amazon exclusive item."
 	/// </summary>
-	public override string LabelAmazonExclusiveItem => "Il s'agit d'une exclusivité Amazon.";
+	public override string LabelAmazonExclusiveItem => "Il s'agit d'une exclusivitÃ© Amazon.";
 
 	/// <summary>
 	/// Key: "Label.AudioAssetBlockedCopyright"
 	/// English String: "This audio asset has been blocked due to copyright violations.\n"
 	/// </summary>
-	public override string LabelAudioAssetBlockedCopyright => "Cet élément audio a été bloqué en raison d'une infraction de copyright.\n";
+	public override string LabelAudioAssetBlockedCopyright => "Cet Ã©lÃ©ment audio a Ã©tÃ© bloquÃ© en raison d'une infraction de copyright.\n";
 
 	/// <summary>
 	/// Key: "Label.GooglePlayExclusiveItem"
 	/// English String: "This is a Google Play exclusive item."
 	/// </summary>
-	public override string LabelGooglePlayExclusiveItem => "Il s'agit d'une exclusivité Google Play.";
+	public override string LabelGooglePlayExclusiveItem => "Il s'agit d'une exclusivitÃ© Google Play.";
 
 	/// <summary>
 	/// Key: "Label.IosDeviceExclusiveItem"
 	/// English String: "This is an iOS exclusive item."
 	/// </summary>
-	public override string LabelIosDeviceExclusiveItem => "Il s'agit d'une exclusivité iOS.";
+	public override string LabelIosDeviceExclusiveItem => "Il s'agit d'une exclusivitÃ© iOS.";
 
 	/// <summary>
 	/// Key: "Label.ItemAvailableInventory"
@@ -40,7 +40,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.ItemHasBeenModerated"
 	/// English String: "This item has been moderated."
 	/// </summary>
-	public override string LabelItemHasBeenModerated => "Cet objet a été modéré.";
+	public override string LabelItemHasBeenModerated => "Cet objet a Ã©tÃ© modÃ©rÃ©.";
 
 	/// <summary>
 	/// Key: "Label.ItemNoLongerForSale"
@@ -58,7 +58,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.MobileDeviceExclusiveItem"
 	/// English String: "This is a mobile exclusive item."
 	/// </summary>
-	public override string LabelMobileDeviceExclusiveItem => "Il s'agit d'une exclusivité mobile.";
+	public override string LabelMobileDeviceExclusiveItem => "Il s'agit d'une exclusivitÃ© mobile.";
 
 	/// <summary>
 	/// Key: "Label.NoDescriptionAvailable"
@@ -88,7 +88,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.PurchasingTemporarilyUnavailable"
 	/// English String: "Purchasing is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string LabelPurchasingTemporarilyUnavailable => "Les achats sont temporairement indisponibles. Veuillez réessayer plus tard.";
+	public override string LabelPurchasingTemporarilyUnavailable => "Les achats sont temporairement indisponibles. Veuillez rÃ©essayer plus tard.";
 
 	/// <summary>
 	/// Key: "Label.Resellers"
@@ -100,7 +100,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.RobloxAsset"
 	/// English String: "Roblox Asset"
 	/// </summary>
-	public override string LabelRobloxAsset => "Élément Roblox";
+	public override string LabelRobloxAsset => "Ã‰lÃ©ment Roblox";
 
 	/// <summary>
 	/// Key: "Label.TakeOff"
@@ -124,7 +124,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.XboxOneExclusiveItem"
 	/// English String: "This is a Xbox One exclusive item."
 	/// </summary>
-	public override string LabelXboxOneExclusiveItem => "Il s'agit d'une exclusivité Xbox One.";
+	public override string LabelXboxOneExclusiveItem => "Il s'agit d'une exclusivitÃ© Xbox One.";
 
 	/// <summary>
 	/// Key: "Label.YouAreSelling"
@@ -139,7 +139,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelAmazonExclusiveItem()
 	{
-		return "Il s'agit d'une exclusivité Amazon.";
+		return "Il s'agit d'une exclusivitÃ© Amazon.";
 	}
 
 	/// <summary>
@@ -172,7 +172,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelAudioAssetBlockedCopyright()
 	{
-		return "Cet élément audio a été bloqué en raison d'une infraction de copyright.\n";
+		return "Cet Ã©lÃ©ment audio a Ã©tÃ© bloquÃ© en raison d'une infraction de copyright.\n";
 	}
 
 	/// <summary>
@@ -181,12 +181,12 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelBcRequirementExclusiveItem(string bcRequirementName)
 	{
-		return $"Exclusivité {bcRequirementName}";
+		return $"ExclusivitÃ© {bcRequirementName}";
 	}
 
 	protected override string _GetTemplateForLabelBcRequirementExclusiveItem()
 	{
-		return "Exclusivité {bcRequirementName}";
+		return "ExclusivitÃ© {bcRequirementName}";
 	}
 
 	/// <summary>
@@ -205,12 +205,12 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelGooglePlayExclusiveItem()
 	{
-		return "Il s'agit d'une exclusivité Google Play.";
+		return "Il s'agit d'une exclusivitÃ© Google Play.";
 	}
 
 	protected override string _GetTemplateForLabelIosDeviceExclusiveItem()
 	{
-		return "Il s'agit d'une exclusivité iOS.";
+		return "Il s'agit d'une exclusivitÃ© iOS.";
 	}
 
 	protected override string _GetTemplateForLabelItemAvailableInventory()
@@ -220,7 +220,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelItemHasBeenModerated()
 	{
-		return "Cet objet a été modéré.";
+		return "Cet objet a Ã©tÃ© modÃ©rÃ©.";
 	}
 
 	protected override string _GetTemplateForLabelItemNoLongerForSale()
@@ -239,22 +239,22 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelLimitedQuantity(string amount)
 	{
-		return $"Quantité limitée\u00a0: {amount}";
+		return $"QuantitÃ© limitÃ©e\u00a0: {amount}";
 	}
 
 	protected override string _GetTemplateForLabelLimitedQuantity()
 	{
-		return "Quantité limitée\u00a0: {amount}";
+		return "QuantitÃ© limitÃ©e\u00a0: {amount}";
 	}
 
 	public override string LabelMetaDescriptionCatalog(string assetName, string assetTypeLabel)
 	{
-		return $"Personnalise ton avatar grâce à l'élément {assetName} et des millions d'autres. Associe et mélange l'élément {assetTypeLabel} avec d'autres objets afin de créer un avatar qui t'est propre\u00a0!";
+		return $"Personnalise ton avatar grÃ¢ce Ã  l'Ã©lÃ©ment {assetName} et des millions d'autres. Associe et mÃ©lange l'Ã©lÃ©ment {assetTypeLabel} avec d'autres objets afin de crÃ©er un avatar qui t'est propre\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionCatalog()
 	{
-		return "Personnalise ton avatar grâce à l'élément {assetName} et des millions d'autres. Associe et mélange l'élément {assetTypeLabel} avec d'autres objets afin de créer un avatar qui t'est propre\u00a0!";
+		return "Personnalise ton avatar grÃ¢ce Ã  l'Ã©lÃ©ment {assetName} et des millions d'autres. Associe et mÃ©lange l'Ã©lÃ©ment {assetTypeLabel} avec d'autres objets afin de crÃ©er un avatar qui t'est propre\u00a0!";
 	}
 
 	/// <summary>
@@ -263,12 +263,12 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelMetaDescriptionLibrary(string assetName, string assetTypeLabel)
 	{
-		return $"Utilise l'élément {assetName} et des milliers d'autres {assetTypeLabel} pour créer une expérience de jeu immersive. Fais ton choix parmi une vaste gamme de modèles, d'insignes, de formes, de plugins et de sons pour exprimer ta créativité.";
+		return $"Utilise l'Ã©lÃ©ment {assetName} et des milliers d'autres {assetTypeLabel} pour crÃ©er une expÃ©rience de jeu immersive. Fais ton choix parmi une vaste gamme de modÃ¨les, d'insignes, de formes, de plugins et de sons pour exprimer ta crÃ©ativitÃ©.";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionLibrary()
 	{
-		return "Utilise l'élément {assetName} et des milliers d'autres {assetTypeLabel} pour créer une expérience de jeu immersive. Fais ton choix parmi une vaste gamme de modèles, d'insignes, de formes, de plugins et de sons pour exprimer ta créativité.";
+		return "Utilise l'Ã©lÃ©ment {assetName} et des milliers d'autres {assetTypeLabel} pour crÃ©er une expÃ©rience de jeu immersive. Fais ton choix parmi une vaste gamme de modÃ¨les, d'insignes, de formes, de plugins et de sons pour exprimer ta crÃ©ativitÃ©.";
 	}
 
 	/// <summary>
@@ -278,17 +278,17 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelMetaDescriptionLibraryV2(string assetName)
 	{
-		return $"Utilise l'élément {assetName} et des milliers d'autres pour créer une expérience de jeu immersive. Fais ton choix parmi une vaste gamme de modèles, d'insignes, de formes, de plugins et de sons pour exprimer ta créativité.";
+		return $"Utilise l'Ã©lÃ©ment {assetName} et des milliers d'autres pour crÃ©er une expÃ©rience de jeu immersive. Fais ton choix parmi une vaste gamme de modÃ¨les, d'insignes, de formes, de plugins et de sons pour exprimer ta crÃ©ativitÃ©.";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionLibraryV2()
 	{
-		return "Utilise l'élément {assetName} et des milliers d'autres pour créer une expérience de jeu immersive. Fais ton choix parmi une vaste gamme de modèles, d'insignes, de formes, de plugins et de sons pour exprimer ta créativité.";
+		return "Utilise l'Ã©lÃ©ment {assetName} et des milliers d'autres pour crÃ©er une expÃ©rience de jeu immersive. Fais ton choix parmi une vaste gamme de modÃ¨les, d'insignes, de formes, de plugins et de sons pour exprimer ta crÃ©ativitÃ©.";
 	}
 
 	protected override string _GetTemplateForLabelMobileDeviceExclusiveItem()
 	{
-		return "Il s'agit d'une exclusivité mobile.";
+		return "Il s'agit d'une exclusivitÃ© mobile.";
 	}
 
 	protected override string _GetTemplateForLabelNoDescriptionAvailable()
@@ -317,17 +317,17 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelPriceChangedFrom(string robuxAmount)
 	{
-		return $"Prix changé (anciennement {robuxAmount})";
+		return $"Prix changÃ© (anciennement {robuxAmount})";
 	}
 
 	protected override string _GetTemplateForLabelPriceChangedFrom()
 	{
-		return "Prix changé (anciennement {robuxAmount})";
+		return "Prix changÃ© (anciennement {robuxAmount})";
 	}
 
 	protected override string _GetTemplateForLabelPurchasingTemporarilyUnavailable()
 	{
-		return "Les achats sont temporairement indisponibles. Veuillez réessayer plus tard.";
+		return "Les achats sont temporairement indisponibles. Veuillez rÃ©essayer plus tard.";
 	}
 
 	protected override string _GetTemplateForLabelResellers()
@@ -337,7 +337,7 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelRobloxAsset()
 	{
-		return "Élément Roblox";
+		return "Ã‰lÃ©ment Roblox";
 	}
 
 	/// <summary>
@@ -385,11 +385,14 @@ internal class ItemModelResources_fr_fr : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelXboxOneExclusiveItem()
 	{
-		return "Il s'agit d'une exclusivité Xbox One.";
+		return "Il s'agit d'une exclusivitÃ© Xbox One.";
 	}
 
 	protected override string _GetTemplateForLabelYouAreSelling()
 	{
 		return "Vous vendez cet objet.";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLanguagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -28,13 +28,13 @@ internal class GameLanguagesResources_pt_br : GameLanguagesResources_en_us, IGam
 	/// Key: "Action.ManageTranslations"
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string ActionManageTranslations => "Gerenciar traduções";
+	public override string ActionManageTranslations => "Gerenciar traduÃ§Ãµes";
 
 	/// <summary>
 	/// Key: "Description.NoLanguages"
 	/// English String: "Please add languages you want your game to support."
 	/// </summary>
-	public override string DescriptionNoLanguages => "Adicione os idiomas que você quer ter no seu jogo.";
+	public override string DescriptionNoLanguages => "Adicione os idiomas que vocÃª quer ter no seu jogo.";
 
 	/// <summary>
 	/// Key: "Heading.DeleteLanguage"
@@ -70,7 +70,7 @@ internal class GameLanguagesResources_pt_br : GameLanguagesResources_en_us, IGam
 	/// Key: "Message.DeleteLanguageWarning"
 	/// English String: "All translations for this language will be deleted. This action is irreversible."
 	/// </summary>
-	public override string MessageDeleteLanguageWarning => "Todas as traduções para este idioma serão excluídas. Esta ação é irreversível.";
+	public override string MessageDeleteLanguageWarning => "Todas as traduÃ§Ãµes para este idioma serÃ£o excluÃ­das. Esta aÃ§Ã£o Ã© irreversÃ­vel.";
 
 	public GameLanguagesResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -94,12 +94,12 @@ internal class GameLanguagesResources_pt_br : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForActionManageTranslations()
 	{
-		return "Gerenciar traduções";
+		return "Gerenciar traduÃ§Ãµes";
 	}
 
 	protected override string _GetTemplateForDescriptionNoLanguages()
 	{
-		return "Adicione os idiomas que você quer ter no seu jogo.";
+		return "Adicione os idiomas que vocÃª quer ter no seu jogo.";
 	}
 
 	protected override string _GetTemplateForHeadingDeleteLanguage()
@@ -129,6 +129,9 @@ internal class GameLanguagesResources_pt_br : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForMessageDeleteLanguageWarning()
 	{
-		return "Todas as traduções para este idioma serão excluídas. Esta ação é irreversível.";
+		return "Todas as traduÃ§Ãµes para este idioma serÃ£o excluÃ­das. Esta aÃ§Ã£o Ã© irreversÃ­vel.";
 	}
+}
+
+
 }

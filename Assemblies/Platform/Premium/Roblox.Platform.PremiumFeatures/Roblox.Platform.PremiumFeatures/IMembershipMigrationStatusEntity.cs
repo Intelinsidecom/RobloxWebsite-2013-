@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Entities;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IMembershipMigrationStatusEntity : IUpdateableEntity<long>, IEntity<long>
 
-namespace Roblox.PremiumFeatures;
-
-public interface IMembershipMigrationStatusEntity : IUpdateableEntity<long>, IEntity<long>
 {
 	long AccountId { get; }
 
@@ -20,4 +19,7 @@ public interface IMembershipMigrationStatusEntity : IUpdateableEntity<long>, IEn
 	new DateTime Created { get; }
 
 	new DateTime Updated { get; }
+}
+
+
 }

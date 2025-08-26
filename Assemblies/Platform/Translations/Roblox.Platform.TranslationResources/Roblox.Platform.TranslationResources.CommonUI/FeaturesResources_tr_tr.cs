@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,20 +10,20 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Action.BackToTop"
 	/// English String: "Back To Top"
 	/// </summary>
-	public override string ActionBackToTop => "En Üste Dön";
+	public override string ActionBackToTop => "En Ãœste DÃ¶n";
 
 	/// <summary>
 	/// Key: "Action.BuyAccess"
 	/// Purchase access to the place button
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "Erişim Satın Al";
+	public override string ActionBuyAccess => "EriÅŸim SatÄ±n Al";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "İptal Et";
+	public override string ActionCancel => "Ä°ptal Et";
 
 	/// <summary>
 	/// Key: "Action.Ok"
@@ -35,27 +35,27 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Action.sUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionsUpgradeNow => "Hemen Yükselt";
+	public override string ActionsUpgradeNow => "Hemen YÃ¼kselt";
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, Roblox logosu ve Powering Imagination ABD ve diğer ülkelerde bizim tescilli ve tescilsiz ticari markalarımızdır.";
+	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, Roblox logosu ve Powering Imagination ABD ve diÄŸer Ã¼lkelerde bizim tescilli ve tescilsiz ticari markalarÄ±mÄ±zdÄ±r.";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
 	/// English String: "While some games may use the selected language, it is not fully supported by roblox.com."
 	/// </summary>
-	public override string DescriptionUnsupportedLanguage => "Bazı oyunlar seçilen dili kullanıyor olsa da bu dil roblox.com tam olarak desteklenmemektedir.";
+	public override string DescriptionUnsupportedLanguage => "BazÄ± oyunlar seÃ§ilen dili kullanÄ±yor olsa da bu dil roblox.com tam olarak desteklenmemektedir.";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// Purchase access to the place
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "Öğe Satın Al";
+	public override string HeadingBuyItem => "Ã–ÄŸe SatÄ±n Al";
 
 	/// <summary>
 	/// Key: "Heading.UnsupportedLanguage"
@@ -67,14 +67,14 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.AboutUs"
 	/// English String: "About Us"
 	/// </summary>
-	public override string LabelAboutUs => "Hakkımızda";
+	public override string LabelAboutUs => "HakkÄ±mÄ±zda";
 
 	/// <summary>
 	/// Key: "Label.AuthenticationError"
 	/// page title
 	/// English String: "Authentication Error"
 	/// </summary>
-	public override string LabelAuthenticationError => "Doğrulama Hatası";
+	public override string LabelAuthenticationError => "DoÄŸrulama HatasÄ±";
 
 	/// <summary>
 	/// Key: "Label.Badges"
@@ -94,62 +94,62 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Configure
 	/// English String: "Configure"
 	/// </summary>
-	public override string LabelConfigure => "Yapılandır";
+	public override string LabelConfigure => "YapÄ±landÄ±r";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGame"
 	/// configure game page title
 	/// English String: "Configure Game"
 	/// </summary>
-	public override string LabelConfigureGame => "Oyunu Yapılandır";
+	public override string LabelConfigureGame => "Oyunu YapÄ±landÄ±r";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePlace"
 	/// Configure Place
 	/// English String: "Configure Place"
 	/// </summary>
-	public override string LabelConfigurePlace => "Mekânı Yapılandır";
+	public override string LabelConfigurePlace => "MekÃ¢nÄ± YapÄ±landÄ±r";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePrivateServer"
 	/// page title
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string LabelConfigurePrivateServer => "VIP Sunucusunu Yapılandır";
+	public override string LabelConfigurePrivateServer => "VIP Sunucusunu YapÄ±landÄ±r";
 
 	/// <summary>
 	/// Key: "Label.ContactUs"
 	/// page title
 	/// English String: "Contact Us"
 	/// </summary>
-	public override string LabelContactUs => "Bizimle İletişime Geç";
+	public override string LabelContactUs => "Bizimle Ä°letiÅŸime GeÃ§";
 
 	/// <summary>
 	/// Key: "Label.Create"
 	/// Alternate name for the "Develop" section of the website
 	/// English String: "Create"
 	/// </summary>
-	public override string LabelCreate => "Oluştur";
+	public override string LabelCreate => "OluÅŸtur";
 
 	/// <summary>
 	/// Key: "Label.CreateGame"
 	/// Create Game
 	/// English String: "Create Game"
 	/// </summary>
-	public override string LabelCreateGame => "Oyun Oluştur";
+	public override string LabelCreateGame => "Oyun OluÅŸtur";
 
 	/// <summary>
 	/// Key: "Label.CreateGroup"
 	/// Create Group
 	/// English String: "Create Group"
 	/// </summary>
-	public override string LabelCreateGroup => "Grup Oluştur";
+	public override string LabelCreateGroup => "Grup OluÅŸtur";
 
 	/// <summary>
 	/// Key: "Label.Discover"
 	/// English String: "Discover"
 	/// </summary>
-	public override string LabelDiscover => "Keşfet";
+	public override string LabelDiscover => "KeÅŸfet";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
@@ -162,39 +162,39 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.Feeds"
 	/// English String: "My Feed"
 	/// </summary>
-	public override string LabelFeeds => "Akış Listem";
+	public override string LabelFeeds => "AkÄ±ÅŸ Listem";
 
 	/// <summary>
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now in side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "Akış Listem bölümünü mü arıyorsun? Artık yan menüde";
+	public override string LabelFindMyFeed => "AkÄ±ÅŸ Listem bÃ¶lÃ¼mÃ¼nÃ¼ mÃ¼ arÄ±yorsun? ArtÄ±k yan menÃ¼de";
 
 	/// <summary>
 	/// Key: "Label.Help"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelHelp => "Yardım";
+	public override string LabelHelp => "YardÄ±m";
 
 	/// <summary>
 	/// Key: "Label.Jobs"
 	/// jobs link in footer
 	/// English String: "Jobs"
 	/// </summary>
-	public override string LabelJobs => "Kariyer Fırsatları";
+	public override string LabelJobs => "Kariyer FÄ±rsatlarÄ±";
 
 	/// <summary>
 	/// Key: "Label.Library"
 	/// search context for inventory search
 	/// English String: "Library"
 	/// </summary>
-	public override string LabelLibrary => "Kütüphane";
+	public override string LabelLibrary => "KÃ¼tÃ¼phane";
 
 	/// <summary>
 	/// Key: "Label.Merch"
 	/// English String: "Merchandise"
 	/// </summary>
-	public override string LabelMerch => "Ürünler";
+	public override string LabelMerch => "ÃœrÃ¼nler";
 
 	/// <summary>
 	/// Key: "Label.Parents"
@@ -207,7 +207,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// page title
 	/// English String: "Place Statistics"
 	/// </summary>
-	public override string LabelPlaceStatistics => "Mekan İstatistikleri";
+	public override string LabelPlaceStatistics => "Mekan Ä°statistikleri";
 
 	/// <summary>
 	/// Key: "Label.Players"
@@ -227,7 +227,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// page title
 	/// English String: "Redeem Roblox Cards"
 	/// </summary>
-	public override string LabelRedeemRobloxCards => "Roblox Kartlarını Kullan";
+	public override string LabelRedeemRobloxCards => "Roblox KartlarÄ±nÄ± Kullan";
 
 	/// <summary>
 	/// Key: "Label.sAvatar"
@@ -251,7 +251,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sDevelop"
 	/// English String: "Develop"
 	/// </summary>
-	public override string LabelsDevelop => "Geliştir";
+	public override string LabelsDevelop => "GeliÅŸtir";
 
 	/// <summary>
 	/// Key: "Label.sEvents"
@@ -269,7 +269,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sFriends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelsFriends => "Arkadaşlar";
+	public override string LabelsFriends => "ArkadaÅŸlar";
 
 	/// <summary>
 	/// Key: "Label.sGames"
@@ -299,7 +299,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sLogin"
 	/// English String: "Log In"
 	/// </summary>
-	public override string LabelsLogin => "Giriş Yap";
+	public override string LabelsLogin => "GiriÅŸ Yap";
 
 	/// <summary>
 	/// Key: "Label.sMessages"
@@ -329,19 +329,19 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sShop"
 	/// English String: "Shop"
 	/// </summary>
-	public override string LabelsShop => "Mağaza";
+	public override string LabelsShop => "MaÄŸaza";
 
 	/// <summary>
 	/// Key: "Label.sSignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string LabelsSignUp => "Kayıt Ol";
+	public override string LabelsSignUp => "KayÄ±t Ol";
 
 	/// <summary>
 	/// Key: "Label.Store"
 	/// English String: "Store"
 	/// </summary>
-	public override string LabelStore => "Mağaza";
+	public override string LabelStore => "MaÄŸaza";
 
 	/// <summary>
 	/// Key: "Label.sTrade"
@@ -360,28 +360,28 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.Terms"
 	/// English String: "Terms"
 	/// </summary>
-	public override string LabelTerms => "Koşullar";
+	public override string LabelTerms => "KoÅŸullar";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "Kullanım Koşulları";
+	public override string LabelTermsOfUse => "KullanÄ±m KoÅŸullarÄ±";
 
 	/// <summary>
 	/// Key: "Label.Thanks"
 	/// page title
 	/// English String: "Thanks"
 	/// </summary>
-	public override string LabelThanks => "Teşekkürler";
+	public override string LabelThanks => "TeÅŸekkÃ¼rler";
 
 	/// <summary>
 	/// Key: "Label.Upgrade"
 	/// Upgrade
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string LabelUpgrade => "Yükselt";
+	public override string LabelUpgrade => "YÃ¼kselt";
 
 	public FeaturesResources_tr_tr(TranslationResourceState state)
 		: base(state)
@@ -390,17 +390,17 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForActionBackToTop()
 	{
-		return "En Üste Dön";
+		return "En Ãœste DÃ¶n";
 	}
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "Erişim Satın Al";
+		return "EriÅŸim SatÄ±n Al";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "İptal Et";
+		return "Ä°ptal Et";
 	}
 
 	protected override string _GetTemplateForActionOk()
@@ -410,7 +410,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForActionsUpgradeNow()
 	{
-		return "Hemen Yükselt";
+		return "Hemen YÃ¼kselt";
 	}
 
 	/// <summary>
@@ -419,37 +419,37 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string BuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"{robux} karşılığında {creatorName} tarafından {placeName} Mekanına erişim satın almak ister misin?";
+		return $"{robux} karÅŸÄ±lÄ±ÄŸÄ±nda {creatorName} tarafÄ±ndan {placeName} MekanÄ±na eriÅŸim satÄ±n almak ister misin?";
 	}
 
 	protected override string _GetTemplateForBuyAccessToGameForModal()
 	{
-		return "{robux} karşılığında {creatorName} tarafından {placeName} Mekanına erişim satın almak ister misin?";
+		return "{robux} karÅŸÄ±lÄ±ÄŸÄ±nda {creatorName} tarafÄ±ndan {placeName} MekanÄ±na eriÅŸim satÄ±n almak ister misin?";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "©2018 Roblox Corporation. Roblox, Roblox logosu ve Powering Imagination ABD ve diğer ülkelerde bizim tescilli ve tescilsiz ticari markalarımızdır.";
+		return "Â©2018 Roblox Corporation. Roblox, Roblox logosu ve Powering Imagination ABD ve diÄŸer Ã¼lkelerde bizim tescilli ve tescilsiz ticari markalarÄ±mÄ±zdÄ±r.";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"©{copyrightYear} Roblox Corporation. Roblox, Roblox logosu ve Powering Imagination ABD ve diğer ülkelerde bizim tescilli ve tescilsiz ticari markalarımızdır.";
+		return $"Â©{copyrightYear} Roblox Corporation. Roblox, Roblox logosu ve Powering Imagination ABD ve diÄŸer Ã¼lkelerde bizim tescilli ve tescilsiz ticari markalarÄ±mÄ±zdÄ±r.";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "©{copyrightYear} Roblox Corporation. Roblox, Roblox logosu ve Powering Imagination ABD ve diğer ülkelerde bizim tescilli ve tescilsiz ticari markalarımızdır.";
+		return "Â©{copyrightYear} Roblox Corporation. Roblox, Roblox logosu ve Powering Imagination ABD ve diÄŸer Ã¼lkelerde bizim tescilli ve tescilsiz ticari markalarÄ±mÄ±zdÄ±r.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
 	{
-		return "Bazı oyunlar seçilen dili kullanıyor olsa da bu dil roblox.com tam olarak desteklenmemektedir.";
+		return "BazÄ± oyunlar seÃ§ilen dili kullanÄ±yor olsa da bu dil roblox.com tam olarak desteklenmemektedir.";
 	}
 
 	/// <summary>
@@ -458,17 +458,17 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string DescriptionUnsupportedLanguageModal(string userLanguage, string platformLanguage)
 	{
-		return $"{userLanguage} şu anda roblox.com'da kullanılamıyor. Oyun içi içerikleri{platformLanguage} görürsünüz ve roblox.com İngilizce olarak ayarlanır.";
+		return $"{userLanguage} ÅŸu anda roblox.com'da kullanÄ±lamÄ±yor. Oyun iÃ§i iÃ§erikleri{platformLanguage} gÃ¶rÃ¼rsÃ¼nÃ¼z ve roblox.com Ä°ngilizce olarak ayarlanÄ±r.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguageModal()
 	{
-		return "{userLanguage} şu anda roblox.com'da kullanılamıyor. Oyun içi içerikleri{platformLanguage} görürsünüz ve roblox.com İngilizce olarak ayarlanır.";
+		return "{userLanguage} ÅŸu anda roblox.com'da kullanÄ±lamÄ±yor. Oyun iÃ§i iÃ§erikleri{platformLanguage} gÃ¶rÃ¼rsÃ¼nÃ¼z ve roblox.com Ä°ngilizce olarak ayarlanÄ±r.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "Öğe Satın Al";
+		return "Ã–ÄŸe SatÄ±n Al";
 	}
 
 	protected override string _GetTemplateForHeadingUnsupportedLanguage()
@@ -478,12 +478,12 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelAboutUs()
 	{
-		return "Hakkımızda";
+		return "HakkÄ±mÄ±zda";
 	}
 
 	protected override string _GetTemplateForLabelAuthenticationError()
 	{
-		return "Doğrulama Hatası";
+		return "DoÄŸrulama HatasÄ±";
 	}
 
 	protected override string _GetTemplateForLabelBadges()
@@ -498,47 +498,47 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelConfigure()
 	{
-		return "Yapılandır";
+		return "YapÄ±landÄ±r";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGame()
 	{
-		return "Oyunu Yapılandır";
+		return "Oyunu YapÄ±landÄ±r";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePlace()
 	{
-		return "Mekânı Yapılandır";
+		return "MekÃ¢nÄ± YapÄ±landÄ±r";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePrivateServer()
 	{
-		return "VIP Sunucusunu Yapılandır";
+		return "VIP Sunucusunu YapÄ±landÄ±r";
 	}
 
 	protected override string _GetTemplateForLabelContactUs()
 	{
-		return "Bizimle İletişime Geç";
+		return "Bizimle Ä°letiÅŸime GeÃ§";
 	}
 
 	protected override string _GetTemplateForLabelCreate()
 	{
-		return "Oluştur";
+		return "OluÅŸtur";
 	}
 
 	protected override string _GetTemplateForLabelCreateGame()
 	{
-		return "Oyun Oluştur";
+		return "Oyun OluÅŸtur";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroup()
 	{
-		return "Grup Oluştur";
+		return "Grup OluÅŸtur";
 	}
 
 	protected override string _GetTemplateForLabelDiscover()
 	{
-		return "Keşfet";
+		return "KeÅŸfet";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
@@ -548,32 +548,32 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelFeeds()
 	{
-		return "Akış Listem";
+		return "AkÄ±ÅŸ Listem";
 	}
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "Akış Listem bölümünü mü arıyorsun? Artık yan menüde";
+		return "AkÄ±ÅŸ Listem bÃ¶lÃ¼mÃ¼nÃ¼ mÃ¼ arÄ±yorsun? ArtÄ±k yan menÃ¼de";
 	}
 
 	protected override string _GetTemplateForLabelHelp()
 	{
-		return "Yardım";
+		return "YardÄ±m";
 	}
 
 	protected override string _GetTemplateForLabelJobs()
 	{
-		return "Kariyer Fırsatları";
+		return "Kariyer FÄ±rsatlarÄ±";
 	}
 
 	protected override string _GetTemplateForLabelLibrary()
 	{
-		return "Kütüphane";
+		return "KÃ¼tÃ¼phane";
 	}
 
 	protected override string _GetTemplateForLabelMerch()
 	{
-		return "Ürünler";
+		return "ÃœrÃ¼nler";
 	}
 
 	protected override string _GetTemplateForLabelParents()
@@ -583,7 +583,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelPlaceStatistics()
 	{
-		return "Mekan İstatistikleri";
+		return "Mekan Ä°statistikleri";
 	}
 
 	protected override string _GetTemplateForLabelPlayers()
@@ -598,7 +598,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelRedeemRobloxCards()
 	{
-		return "Roblox Kartlarını Kullan";
+		return "Roblox KartlarÄ±nÄ± Kullan";
 	}
 
 	protected override string _GetTemplateForLabelsAvatar()
@@ -618,7 +618,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsDevelop()
 	{
-		return "Geliştir";
+		return "GeliÅŸtir";
 	}
 
 	protected override string _GetTemplateForLabelsEvents()
@@ -633,7 +633,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsFriends()
 	{
-		return "Arkadaşlar";
+		return "ArkadaÅŸlar";
 	}
 
 	protected override string _GetTemplateForLabelsGames()
@@ -658,7 +658,7 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsLogin()
 	{
-		return "Giriş Yap";
+		return "GiriÅŸ Yap";
 	}
 
 	protected override string _GetTemplateForLabelsMessages()
@@ -687,27 +687,27 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string LabelsSearchPhrase(string phrase, string location)
 	{
-		return $"{location} içinde \"{phrase}\" ara";
+		return $"{location} iÃ§inde \"{phrase}\" ara";
 	}
 
 	protected override string _GetTemplateForLabelsSearchPhrase()
 	{
-		return "{location} içinde \"{phrase}\" ara";
+		return "{location} iÃ§inde \"{phrase}\" ara";
 	}
 
 	protected override string _GetTemplateForLabelsShop()
 	{
-		return "Mağaza";
+		return "MaÄŸaza";
 	}
 
 	protected override string _GetTemplateForLabelsSignUp()
 	{
-		return "Kayıt Ol";
+		return "KayÄ±t Ol";
 	}
 
 	protected override string _GetTemplateForLabelStore()
 	{
-		return "Mağaza";
+		return "MaÄŸaza";
 	}
 
 	protected override string _GetTemplateForLabelsTrade()
@@ -722,21 +722,24 @@ internal class FeaturesResources_tr_tr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelTerms()
 	{
-		return "Koşullar";
+		return "KoÅŸullar";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "Kullanım Koşulları";
+		return "KullanÄ±m KoÅŸullarÄ±";
 	}
 
 	protected override string _GetTemplateForLabelThanks()
 	{
-		return "Teşekkürler";
+		return "TeÅŸekkÃ¼rler";
 	}
 
 	protected override string _GetTemplateForLabelUpgrade()
 	{
-		return "Yükselt";
+		return "YÃ¼kselt";
 	}
+}
+
+
 }

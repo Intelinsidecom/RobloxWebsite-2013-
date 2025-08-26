@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,10 +13,9 @@ using Roblox.Http;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class GameInstancesClient : GuardedApiClientBase
 
-namespace Roblox.GameInstances.Client;
-
-public class GameInstancesClient : GuardedApiClientBase
 {
 	private const string _ProtobufContentType = "application/vnd.google.protobuf";
 
@@ -340,4 +339,7 @@ public class GameInstancesClient : GuardedApiClientBase
 	{
 		return Serializer.Deserialize<T>((Stream)new MemoryStream(bytes));
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PluginsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class PluginsResources_es_es : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.ErrorBody"
 	/// English String: "There was a problem installing this plugin. Please try again later."
 	/// </summary>
-	public override string LabelErrorBody => "Ha habido un problema al instalar este complemento. Inténtalo de nuevo más tarde.";
+	public override string LabelErrorBody => "Ha habido un problema al instalar este complemento. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Label.ErrorTitle"
@@ -40,7 +40,7 @@ internal class PluginsResources_es_es : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.UpdateErrorBody"
 	/// English String: "There was a problem updating this plugin. Please try again later."
 	/// </summary>
-	public override string LabelUpdateErrorBody => "Ha habido un problema al actualizar este complemento. Inténtalo de nuevo más tarde.";
+	public override string LabelUpdateErrorBody => "Ha habido un problema al actualizar este complemento. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Label.UpdateErrorTitle"
@@ -52,7 +52,7 @@ internal class PluginsResources_es_es : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.UpdateSuccessTitle"
 	/// English String: "Plugin Update"
 	/// </summary>
-	public override string LabelUpdateSuccessTitle => "Actualización del complemento";
+	public override string LabelUpdateSuccessTitle => "ActualizaciÃ³n del complemento";
 
 	/// <summary>
 	/// Key: "Label.UpdateText"
@@ -67,7 +67,7 @@ internal class PluginsResources_es_es : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelErrorBody()
 	{
-		return "Ha habido un problema al instalar este complemento. Inténtalo de nuevo más tarde.";
+		return "Ha habido un problema al instalar este complemento. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForLabelErrorTitle()
@@ -91,12 +91,12 @@ internal class PluginsResources_es_es : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelSuccessBody(string item)
 	{
-		return $"¡{item} se ha instalado correctamente!";
+		return $"Â¡{item} se ha instalado correctamente!";
 	}
 
 	protected override string _GetTemplateForLabelSuccessBody()
 	{
-		return "¡{item} se ha instalado correctamente!";
+		return "Â¡{item} se ha instalado correctamente!";
 	}
 
 	protected override string _GetTemplateForLabelSuccessTitle()
@@ -106,7 +106,7 @@ internal class PluginsResources_es_es : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelUpdateErrorBody()
 	{
-		return "Ha habido un problema al actualizar este complemento. Inténtalo de nuevo más tarde.";
+		return "Ha habido un problema al actualizar este complemento. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateErrorTitle()
@@ -120,21 +120,24 @@ internal class PluginsResources_es_es : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelUpdateSuccessBody(string item)
 	{
-		return $"¡{item} se ha actualizado correctamente! Abre una ventana nueva para aplicar los cambios.";
+		return $"Â¡{item} se ha actualizado correctamente! Abre una ventana nueva para aplicar los cambios.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessBody()
 	{
-		return "¡{item} se ha actualizado correctamente! Abre una ventana nueva para aplicar los cambios.";
+		return "Â¡{item} se ha actualizado correctamente! Abre una ventana nueva para aplicar los cambios.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessTitle()
 	{
-		return "Actualización del complemento";
+		return "ActualizaciÃ³n del complemento";
 	}
 
 	protected override string _GetTemplateForLabelUpdateText()
 	{
 		return "Actualizar";
 	}
+}
+
+
 }

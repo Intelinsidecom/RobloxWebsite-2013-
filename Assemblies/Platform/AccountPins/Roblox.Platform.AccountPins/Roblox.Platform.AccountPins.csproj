@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.AccountPins</AssemblyName>
@@ -61,10 +61,6 @@
       </Project>
     </ProjectReference>
     <ProjectReference Include="..\\..\\Demographics\\Roblox.Platform.Demographics\\Roblox.Platform.Demographics.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
       <Project>
       </Project>
     </ProjectReference>

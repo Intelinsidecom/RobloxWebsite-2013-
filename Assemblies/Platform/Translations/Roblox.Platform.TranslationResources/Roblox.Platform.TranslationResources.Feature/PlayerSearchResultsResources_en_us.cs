@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PlayerSearchResultsResources_en_us : TranslationResourcesBase, IPlayerSearchResultsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PlayerSearchResultsResources_en_us : TranslationResourcesBase, IPlayerSearchResultsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -291,4 +290,7 @@ internal class PlayerSearchResultsResources_en_us : TranslationResourcesBase, IP
 	{
 		return "You are friends";
 	}
+}
+
+
 }

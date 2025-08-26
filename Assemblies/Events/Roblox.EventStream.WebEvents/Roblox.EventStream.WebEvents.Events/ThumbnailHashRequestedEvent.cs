@@ -1,9 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
-using Roblox.Platform.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class ThumbnailHashRequestedEvent : BufferedEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class ThumbnailHashRequestedEvent : BufferedEventBase
 {
 	private const string _Name = "thumbnailHashRequested";
 
@@ -27,3 +26,12 @@ public class ThumbnailHashRequestedEvent : BufferedEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

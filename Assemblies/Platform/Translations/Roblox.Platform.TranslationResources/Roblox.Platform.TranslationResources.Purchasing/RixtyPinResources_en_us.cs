@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+    class RixtyPinResources_en_us : TranslationResourcesBase, IRixtyPinResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Purchasing;
-
-internal class RixtyPinResources_en_us : TranslationResourcesBase, IRixtyPinResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -616,4 +615,7 @@ internal class RixtyPinResources_en_us : TranslationResourcesBase, IRixtyPinReso
 	{
 		return "You have successfully redeemed your PIN!";
 	}
+}
+
+
 }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Caching;
@@ -8,10 +8,9 @@ using Roblox.Data.Interfaces;
 using Roblox.EventLog;
 using Roblox.Locking;
 using Roblox.Properties;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class AccountAddOnActivationTask : IRobloxEntity<long, AccountAddOnActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
-namespace Roblox.PremiumFeatures;
-
-public class AccountAddOnActivationTask : IRobloxEntity<long, AccountAddOnActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 {
 	private AccountAddOnActivationTaskDAL _EntityDAL;
 
@@ -411,4 +410,7 @@ public class AccountAddOnActivationTask : IRobloxEntity<long, AccountAddOnActiva
 		}
 		return baseExpiration.AddDays(3.0);
 	}
+}
+
+
 }

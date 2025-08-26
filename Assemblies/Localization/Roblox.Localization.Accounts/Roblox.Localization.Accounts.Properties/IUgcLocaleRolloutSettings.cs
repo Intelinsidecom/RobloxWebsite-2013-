@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Accounts.Properties;
+﻿namespace Roblox.Localization.Accounts.Propertiespublic {
+    interface IUgcLocaleRolloutSettings
 
-public interface IUgcLocaleRolloutSettings
 {
 	bool IsUgcSpanishLocaleEnabledForSoothsayers { get; }
 
@@ -57,4 +57,7 @@ public interface IUgcLocaleRolloutSettings
 	bool IsUgcSimplifiedChineseLocaleEnabledForAll { get; }
 
 	bool IsUgcTraditionalChineseLocaleEnabledForAll { get; }
+}
+
+
 }

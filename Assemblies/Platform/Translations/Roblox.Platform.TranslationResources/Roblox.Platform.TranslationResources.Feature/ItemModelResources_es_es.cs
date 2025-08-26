@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ItemModelResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -34,7 +34,7 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.ItemAvailableInventory"
 	/// English String: "This item is available in your inventory."
 	/// </summary>
-	public override string LabelItemAvailableInventory => "Este objeto está disponible en tu inventario.";
+	public override string LabelItemAvailableInventory => "Este objeto estÃ¡ disponible en tu inventario.";
 
 	/// <summary>
 	/// Key: "Label.ItemHasBeenModerated"
@@ -46,25 +46,25 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.ItemNoLongerForSale"
 	/// English String: "This item is no longer for sale."
 	/// </summary>
-	public override string LabelItemNoLongerForSale => "Este objeto ya no está en venta.";
+	public override string LabelItemNoLongerForSale => "Este objeto ya no estÃ¡ en venta.";
 
 	/// <summary>
 	/// Key: "Label.ItemNotCurrentlyForSale"
 	/// English String: "This item is not currently for sale."
 	/// </summary>
-	public override string LabelItemNotCurrentlyForSale => "Este objeto no está en venta en este momento.";
+	public override string LabelItemNotCurrentlyForSale => "Este objeto no estÃ¡ en venta en este momento.";
 
 	/// <summary>
 	/// Key: "Label.MobileDeviceExclusiveItem"
 	/// English String: "This is a mobile exclusive item."
 	/// </summary>
-	public override string LabelMobileDeviceExclusiveItem => "Este es un objeto exclusivo en móviles.";
+	public override string LabelMobileDeviceExclusiveItem => "Este es un objeto exclusivo en mÃ³viles.";
 
 	/// <summary>
 	/// Key: "Label.NoDescriptionAvailable"
 	/// English String: "No description available."
 	/// </summary>
-	public override string LabelNoDescriptionAvailable => "Sin descripción disponible.";
+	public override string LabelNoDescriptionAvailable => "Sin descripciÃ³n disponible.";
 
 	/// <summary>
 	/// Key: "Label.NoOneCurrentlySelling"
@@ -88,7 +88,7 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.PurchasingTemporarilyUnavailable"
 	/// English String: "Purchasing is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string LabelPurchasingTemporarilyUnavailable => "Las compras no están disponibles temporalmente. Inténtalo de nuevo más tarde.";
+	public override string LabelPurchasingTemporarilyUnavailable => "Las compras no estÃ¡n disponibles temporalmente. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Label.Resellers"
@@ -112,7 +112,7 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.ToInstallOpenStudio"
 	/// English String: "To install, open this page in Roblox Studio."
 	/// </summary>
-	public override string LabelToInstallOpenStudio => "Para instalarlo, abre esta página en Roblox Studio.";
+	public override string LabelToInstallOpenStudio => "Para instalarlo, abre esta pÃ¡gina en Roblox Studio.";
 
 	/// <summary>
 	/// Key: "Label.Wear"
@@ -130,7 +130,7 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.YouAreSelling"
 	/// English String: "You are selling this item."
 	/// </summary>
-	public override string LabelYouAreSelling => "Tú vendes este objeto.";
+	public override string LabelYouAreSelling => "TÃº vendes este objeto.";
 
 	public ItemModelResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -215,7 +215,7 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelItemAvailableInventory()
 	{
-		return "Este objeto está disponible en tu inventario.";
+		return "Este objeto estÃ¡ disponible en tu inventario.";
 	}
 
 	protected override string _GetTemplateForLabelItemHasBeenModerated()
@@ -225,12 +225,12 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelItemNoLongerForSale()
 	{
-		return "Este objeto ya no está en venta.";
+		return "Este objeto ya no estÃ¡ en venta.";
 	}
 
 	protected override string _GetTemplateForLabelItemNotCurrentlyForSale()
 	{
-		return "Este objeto no está en venta en este momento.";
+		return "Este objeto no estÃ¡ en venta en este momento.";
 	}
 
 	/// <summary>
@@ -249,12 +249,12 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 
 	public override string LabelMetaDescriptionCatalog(string assetName, string assetTypeLabel)
 	{
-		return $"Personaliza tu avatar con el objeto {assetName} y millones de objetos más. ¡Mezcla y conjunta este objeto de la clase {assetTypeLabel} con otros objetos para crear un avatar exclusivamente tuyo!";
+		return $"Personaliza tu avatar con el objeto {assetName} y millones de objetos mÃ¡s. Â¡Mezcla y conjunta este objeto de la clase {assetTypeLabel} con otros objetos para crear un avatar exclusivamente tuyo!";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionCatalog()
 	{
-		return "Personaliza tu avatar con el objeto {assetName} y millones de objetos más. ¡Mezcla y conjunta este objeto de la clase {assetTypeLabel} con otros objetos para crear un avatar exclusivamente tuyo!";
+		return "Personaliza tu avatar con el objeto {assetName} y millones de objetos mÃ¡s. Â¡Mezcla y conjunta este objeto de la clase {assetTypeLabel} con otros objetos para crear un avatar exclusivamente tuyo!";
 	}
 
 	/// <summary>
@@ -263,12 +263,12 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelMetaDescriptionLibrary(string assetName, string assetTypeLabel)
 	{
-		return $"Usa el objeto {assetName} y miles de otros objetos de la clase {assetTypeLabel} para construir un juego o una experiencia inmersivos. Elige entre un amplio abanico de modelos, adhesivos, mallas, complementos o sonidos que ayudarán a convertir en realidad todo lo que imagines.";
+		return $"Usa el objeto {assetName} y miles de otros objetos de la clase {assetTypeLabel} para construir un juego o una experiencia inmersivos. Elige entre un amplio abanico de modelos, adhesivos, mallas, complementos o sonidos que ayudarÃ¡n a convertir en realidad todo lo que imagines.";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionLibrary()
 	{
-		return "Usa el objeto {assetName} y miles de otros objetos de la clase {assetTypeLabel} para construir un juego o una experiencia inmersivos. Elige entre un amplio abanico de modelos, adhesivos, mallas, complementos o sonidos que ayudarán a convertir en realidad todo lo que imagines.";
+		return "Usa el objeto {assetName} y miles de otros objetos de la clase {assetTypeLabel} para construir un juego o una experiencia inmersivos. Elige entre un amplio abanico de modelos, adhesivos, mallas, complementos o sonidos que ayudarÃ¡n a convertir en realidad todo lo que imagines.";
 	}
 
 	/// <summary>
@@ -278,22 +278,22 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelMetaDescriptionLibraryV2(string assetName)
 	{
-		return $"Usa el objeto {assetName} y miles de otros recursos para construir un juego o una experiencia inmersivos. Elige entre un amplio abanico de modelos, adhesivos, mallas, complementos o sonidos que ayudarán a convertir en realidad todo lo que imagines.";
+		return $"Usa el objeto {assetName} y miles de otros recursos para construir un juego o una experiencia inmersivos. Elige entre un amplio abanico de modelos, adhesivos, mallas, complementos o sonidos que ayudarÃ¡n a convertir en realidad todo lo que imagines.";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionLibraryV2()
 	{
-		return "Usa el objeto {assetName} y miles de otros recursos para construir un juego o una experiencia inmersivos. Elige entre un amplio abanico de modelos, adhesivos, mallas, complementos o sonidos que ayudarán a convertir en realidad todo lo que imagines.";
+		return "Usa el objeto {assetName} y miles de otros recursos para construir un juego o una experiencia inmersivos. Elige entre un amplio abanico de modelos, adhesivos, mallas, complementos o sonidos que ayudarÃ¡n a convertir en realidad todo lo que imagines.";
 	}
 
 	protected override string _GetTemplateForLabelMobileDeviceExclusiveItem()
 	{
-		return "Este es un objeto exclusivo en móviles.";
+		return "Este es un objeto exclusivo en mÃ³viles.";
 	}
 
 	protected override string _GetTemplateForLabelNoDescriptionAvailable()
 	{
-		return "Sin descripción disponible.";
+		return "Sin descripciÃ³n disponible.";
 	}
 
 	protected override string _GetTemplateForLabelNoOneCurrentlySelling()
@@ -327,7 +327,7 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelPurchasingTemporarilyUnavailable()
 	{
-		return "Las compras no están disponibles temporalmente. Inténtalo de nuevo más tarde.";
+		return "Las compras no estÃ¡n disponibles temporalmente. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForLabelResellers()
@@ -346,12 +346,12 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelSeeMoreResellers(string resellers)
 	{
-		return $"Ver más {resellers}";
+		return $"Ver mÃ¡s {resellers}";
 	}
 
 	protected override string _GetTemplateForLabelSeeMoreResellers()
 	{
-		return "Ver más {resellers}";
+		return "Ver mÃ¡s {resellers}";
 	}
 
 	/// <summary>
@@ -375,7 +375,7 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelToInstallOpenStudio()
 	{
-		return "Para instalarlo, abre esta página en Roblox Studio.";
+		return "Para instalarlo, abre esta pÃ¡gina en Roblox Studio.";
 	}
 
 	protected override string _GetTemplateForLabelWear()
@@ -390,6 +390,9 @@ internal class ItemModelResources_es_es : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelYouAreSelling()
 	{
-		return "Tú vendes este objeto.";
+		return "TÃº vendes este objeto.";
 	}
+}
+
+
 }

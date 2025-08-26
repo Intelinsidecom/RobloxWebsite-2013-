@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.PremiumFeatures.Interfaces;
 using Roblox.PremiumFeatures.Properties;
+namespace Roblox.Platform.PremiumFeatures.Implementation {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Implementation;
-
-/// <summary>
 /// Factory for AccountAddOns
 /// </summary>
 public class AccountAddOnFactory : IAccountAddOnFactory
@@ -164,4 +163,7 @@ public class AccountAddOnFactory : IAccountAddOnFactory
 	{
 		return AccountFeatureSet.GetByAccountId(accountId);
 	}
+}
+
+
 }

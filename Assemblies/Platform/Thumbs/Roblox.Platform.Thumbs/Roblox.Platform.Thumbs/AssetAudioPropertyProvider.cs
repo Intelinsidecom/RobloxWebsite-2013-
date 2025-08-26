@@ -1,8 +1,7 @@
-using Roblox.Thumbs.Properties;
+﻿using Roblox.Thumbs.Properties;
+namespace Roblox.Platform.Thumbs {
+    /// <summary>
 
-namespace Roblox.Thumbs;
-
-/// <summary>
 /// Provider of Properties from this project
 /// </summary>
 public class AssetAudioPropertyProvider : IAssetAudioPropertyProvider
@@ -14,4 +13,7 @@ public class AssetAudioPropertyProvider : IAssetAudioPropertyProvider
 	{
 		return Settings.Default.AudioPlaybackEnabled;
 	}
+}
+
+
 }

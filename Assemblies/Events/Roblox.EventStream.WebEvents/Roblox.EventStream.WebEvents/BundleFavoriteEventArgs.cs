@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class BundleFavoriteEventArgs : WebEventArgs
 
-public class BundleFavoriteEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The id of the budnle being favorited
@@ -33,3 +34,12 @@ public class BundleFavoriteEventArgs : WebEventArgs
 	/// </summary>
 	public long FavoriteCount { get; set; }
 }
+
+
+}
+
+
+
+
+
+

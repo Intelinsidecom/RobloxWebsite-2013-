@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,21 +18,21 @@ internal class BuildersClubResources_de_de : BuildersClubResources_en_us, IBuild
 	/// membership type name
 	/// English String: "Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembership => "„Builders Club“-Mitgliedschaft";
+	public override string LabelBuildersClubMembership => "â€žBuilders Clubâ€œ-Mitgliedschaft";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipOutrageous"
 	/// membership type
 	/// English String: "Outrageous Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipOutrageous => "„Outrageous Builders Club“-Mitgliedschaft";
+	public override string LabelBuildersClubMembershipOutrageous => "â€žOutrageous Builders Clubâ€œ-Mitgliedschaft";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipTurbo"
 	/// membership type
 	/// English String: "Turbo Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipTurbo => "„Turbo Builders Club“-Mitgliedschaft";
+	public override string LabelBuildersClubMembershipTurbo => "â€žTurbo Builders Clubâ€œ-Mitgliedschaft";
 
 	/// <summary>
 	/// Key: "Label.ClassicBuildersClub"
@@ -137,17 +137,17 @@ internal class BuildersClubResources_de_de : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelBuildersClubMembership()
 	{
-		return "„Builders Club“-Mitgliedschaft";
+		return "â€žBuilders Clubâ€œ-Mitgliedschaft";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipOutrageous()
 	{
-		return "„Outrageous Builders Club“-Mitgliedschaft";
+		return "â€žOutrageous Builders Clubâ€œ-Mitgliedschaft";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipTurbo()
 	{
-		return "„Turbo Builders Club“-Mitgliedschaft";
+		return "â€žTurbo Builders Clubâ€œ-Mitgliedschaft";
 	}
 
 	protected override string _GetTemplateForLabelClassicBuildersClub()
@@ -215,3 +215,5 @@ internal class BuildersClubResources_de_de : BuildersClubResources_en_us, IBuild
 		return "Ja";
 	}
 }
+
+

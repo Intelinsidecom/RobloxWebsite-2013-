@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Corepublic {
+    class SupportedLocaleIdentifier : ISupportedLocaleIdentifier
 
-public class SupportedLocaleIdentifier : ISupportedLocaleIdentifier
 {
 	public int Id { get; }
 
@@ -8,4 +8,7 @@ public class SupportedLocaleIdentifier : ISupportedLocaleIdentifier
 	{
 		Id = id;
 	}
+}
+
+
 }

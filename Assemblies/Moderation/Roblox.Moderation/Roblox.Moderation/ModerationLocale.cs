@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Moderation.Entities;
+namespace Roblox.Moderationinternal {
+    class ModerationLocale : IModerationLocale
 
-namespace Roblox.Platform.Moderation;
-
-internal class ModerationLocale : IModerationLocale
 {
 	private readonly ModerationDomainFactories _DomainFactories;
 
@@ -41,4 +40,7 @@ internal class ModerationLocale : IModerationLocale
 		obj.Update();
 		IsActive = isActive;
 	}
+}
+
+
 }

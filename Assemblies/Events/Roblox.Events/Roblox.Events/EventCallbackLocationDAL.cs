@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
-using Roblox.Platform.Events.Properties;
+using Roblox.Events.Properties;
+namespace Roblox.Events {
+    internal class EventCallbackLocationDAL
 
-namespace Roblox.Platform.Events;
-
-internal class EventCallbackLocationDAL
 {
 	internal long ID { get; set; }
 
@@ -70,7 +69,7 @@ internal class EventCallbackLocationDAL
 		{
 			new SqlParameter("@ID", ID)
 		};
-		EntityHelper.DoEntityDALDelete(new DbInfo(_DbConnectionString, "EventCallbackLocations_DeleteEventCallbackLocationByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(_DbConnectionString, "EventCallbackLocations_DeleteEventCallbackLocationByID", queryParameters));
 	}
 
 	internal static EventCallbackLocationDAL Get(long id)
@@ -152,4 +151,7 @@ internal class EventCallbackLocationDAL
 		};
 		return EntityHelper.GetOrCreateEntityDAL(new DbInfo(_DbConnectionString, "EventCallbackLocations_GetOrCreateEventCallbackLocation", queryParameters), BuildDAL);
 	}
+}
+
+
 }

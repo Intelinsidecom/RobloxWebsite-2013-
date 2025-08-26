@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ServerListResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -47,7 +47,7 @@ internal class ServerListResources_de_de : ServerListResources_en_us, IServerLis
 	/// Key: "Label.InsufficientFunds"
 	/// English String: "This Server has been deactivated. We were not able to process the recurring payment due to insufficient funds in your account."
 	/// </summary>
-	public override string LabelInsufficientFunds => "Dieser Server wurde deaktiviert. Wir konnten die wiederkehrende Bezahlung nicht bearbeiten, da du nicht genügend Guthaben auf deinem Konto hast.";
+	public override string LabelInsufficientFunds => "Dieser Server wurde deaktiviert. Wir konnten die wiederkehrende Bezahlung nicht bearbeiten, da du nicht genÃ¼gend Guthaben auf deinem Konto hast.";
 
 	/// <summary>
 	/// Key: "Label.MyVipServer"
@@ -92,7 +92,7 @@ internal class ServerListResources_de_de : ServerListResources_en_us, IServerLis
 	/// Key: "Label.ServerListRenew"
 	/// English String: "Renew"
 	/// </summary>
-	public override string LabelServerListRenew => "Verlängern";
+	public override string LabelServerListRenew => "VerlÃ¤ngern";
 
 	/// <summary>
 	/// Key: "Label.ShutDownServer"
@@ -158,7 +158,7 @@ internal class ServerListResources_de_de : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForLabelInsufficientFunds()
 	{
-		return "Dieser Server wurde deaktiviert. Wir konnten die wiederkehrende Bezahlung nicht bearbeiten, da du nicht genügend Guthaben auf deinem Konto hast.";
+		return "Dieser Server wurde deaktiviert. Wir konnten die wiederkehrende Bezahlung nicht bearbeiten, da du nicht genÃ¼gend Guthaben auf deinem Konto hast.";
 	}
 
 	protected override string _GetTemplateForLabelMyVipServer()
@@ -193,7 +193,7 @@ internal class ServerListResources_de_de : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForLabelServerListRenew()
 	{
-		return "Verlängern";
+		return "VerlÃ¤ngern";
 	}
 
 	protected override string _GetTemplateForLabelShutDownServer()
@@ -205,4 +205,7 @@ internal class ServerListResources_de_de : ServerListResources_en_us, IServerLis
 	{
 		return "Langsames Spiel";
 	}
+}
+
+
 }

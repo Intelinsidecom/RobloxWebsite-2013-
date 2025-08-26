@@ -37,7 +37,7 @@ public sealed class StackSampler : IDisposable
 		if (Interlocked.Exchange(ref _SampleIt, 0) == 1)
 		{
 			string message = $"StackSampler {_Name}\r\n{info()}\r\n\r\n{new StackTrace(2)}";
-			EventLog.WriteEntry("StackSampler", message, EventLogEntryType.Information, 1991);
+			System.Diagnostics.EventLog.WriteEntry("StackSampler", message, EventLogEntryType.Information, 1991);
 		}
 	}
 

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.TranslationResources.Feature;
+namespace Roblox.Platform.TranslationResourcesinternal {
+    class FeatureResources : IFeatureResources, ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-internal class FeatureResources : IFeatureResources, ITranslationResourcesNamespacesGroup
 {
 	private readonly Lazy<IAccountSettingsResources> _IAccountSettingsResources;
 
@@ -494,4 +493,7 @@ internal class FeatureResources : IFeatureResources, ITranslationResourcesNamesp
 			_ => null, 
 		};
 	}
+}
+
+
 }

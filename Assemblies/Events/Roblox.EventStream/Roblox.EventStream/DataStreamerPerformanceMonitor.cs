@@ -1,9 +1,8 @@
 using System;
 using Roblox.Instrumentation;
+namespace Roblox.EventStream {
+    class DataStreamerPerformanceMonitor
 
-namespace Roblox.Platform.EventStream;
-
-internal class DataStreamerPerformanceMonitor
 {
 	private const string _PerformanceCategory = "Roblox.DataStreamerV1";
 
@@ -17,4 +16,7 @@ internal class DataStreamerPerformanceMonitor
 		}
 		AssetHandlerDataAttemptedToSentPerSecond = counterRegistry.GetRateOfCountsPerSecondCounter("Roblox.DataStreamerV1", "AssetHandlerDataAttemptedToSentPerSecond");
 	}
+}
+
+
 }

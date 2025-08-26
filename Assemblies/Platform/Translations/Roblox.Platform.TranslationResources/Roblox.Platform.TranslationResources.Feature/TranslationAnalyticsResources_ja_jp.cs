@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationAnalyticsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,53 +11,53 @@ internal class TranslationAnalyticsResources_ja_jp : TranslationAnalyticsResourc
 	/// button text to download report
 	/// English String: "Download"
 	/// </summary>
-	public override string ActionDownload => "ダウンロード";
+	public override string ActionDownload => "ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Action.Request"
 	/// button text to request report
 	/// English String: "Request"
 	/// </summary>
-	public override string ActionRequest => "リクエスト";
+	public override string ActionRequest => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆ";
 
 	/// <summary>
 	/// Key: "Description.ReportHint"
 	/// English String: "Please note: Once requested, downloads may take a few minutes to prepare."
 	/// </summary>
-	public override string DescriptionReportHint => "ご注意：一度リクエストすると、ダウンロードの準備に数分かかるかもしれません。";
+	public override string DescriptionReportHint => "ã”æ³¨æ„ï¼šä¸€åº¦ãƒªã‚¯ã‚¨ã‚¹ãƒˆã™ã‚‹ã¨ã€ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã®æº–å‚™ã«æ•°åˆ†ã‹ã‹ã‚‹ã‹ã‚‚ã—ã‚Œã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.TranslationAnalytics"
 	/// section heading
 	/// English String: "Translator Contribution Report"
 	/// </summary>
-	public override string HeadingTranslationAnalytics => "翻訳者の貢献レポート";
+	public override string HeadingTranslationAnalytics => "ç¿»è¨³è€…ã®è²¢çŒ®ãƒ¬ãƒãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.Pending"
 	/// status of report generation
 	/// English String: "Pending"
 	/// </summary>
-	public override string LabelPending => "保留中です";
+	public override string LabelPending => "ä¿ç•™ä¸­ã§ã™";
 
 	/// <summary>
 	/// Key: "Label.SelectDates"
 	/// label for date selection dropdown
 	/// English String: "Select Date Range"
 	/// </summary>
-	public override string LabelSelectDates => "日付の範囲を選択";
+	public override string LabelSelectDates => "æ—¥ä»˜ã®ç¯„å›²ã‚’é¸æŠž";
 
 	/// <summary>
 	/// Key: "Message.GenericError"
 	/// English String: "There was a problem with your request. Please try again later."
 	/// </summary>
-	public override string MessageGenericError => "リクエストに問題があります。後でもう一度お試しください。";
+	public override string MessageGenericError => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«å•é¡ŒãŒã‚ã‚Šã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PermissionError"
 	/// English String: "You do not have sufficient permission to download this report."
 	/// </summary>
-	public override string MessagePermissionError => "このレポートをダウンロードする権限がありません。";
+	public override string MessagePermissionError => "ã“ã®ãƒ¬ãƒãƒ¼ãƒˆã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	public TranslationAnalyticsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -66,41 +66,44 @@ internal class TranslationAnalyticsResources_ja_jp : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForActionDownload()
 	{
-		return "ダウンロード";
+		return "ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForActionRequest()
 	{
-		return "リクエスト";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆ";
 	}
 
 	protected override string _GetTemplateForDescriptionReportHint()
 	{
-		return "ご注意：一度リクエストすると、ダウンロードの準備に数分かかるかもしれません。";
+		return "ã”æ³¨æ„ï¼šä¸€åº¦ãƒªã‚¯ã‚¨ã‚¹ãƒˆã™ã‚‹ã¨ã€ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã®æº–å‚™ã«æ•°åˆ†ã‹ã‹ã‚‹ã‹ã‚‚ã—ã‚Œã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationAnalytics()
 	{
-		return "翻訳者の貢献レポート";
+		return "ç¿»è¨³è€…ã®è²¢çŒ®ãƒ¬ãƒãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelPending()
 	{
-		return "保留中です";
+		return "ä¿ç•™ä¸­ã§ã™";
 	}
 
 	protected override string _GetTemplateForLabelSelectDates()
 	{
-		return "日付の範囲を選択";
+		return "æ—¥ä»˜ã®ç¯„å›²ã‚’é¸æŠž";
 	}
 
 	protected override string _GetTemplateForMessageGenericError()
 	{
-		return "リクエストに問題があります。後でもう一度お試しください。";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«å•é¡ŒãŒã‚ã‚Šã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
-		return "このレポートをダウンロードする権限がありません。";
+		return "ã“ã®ãƒ¬ãƒãƒ¼ãƒˆã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
+}
+
+
 }

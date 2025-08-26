@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources;
+﻿namespace Roblox.Platform.TranslationResources {
+    /// <summary>
 
-/// <summary>
 /// A translation namespace.
 /// </summary>
 public interface ITranslationResourcesNamespacesGroup
@@ -13,3 +13,5 @@ public interface ITranslationResourcesNamespacesGroup
 	/// <exception cref="T:System.ArgumentException"><paramref name="fullTranslationResourceNamespace" /> is null or whitespace.</exception>
 	ITranslationResources GetByFullNamespace(string fullTranslationResourceNamespace);
 }
+
+

@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
 using Roblox.Platform.Demographics;
 using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountCountryBuilder : IAccountCountryBuilder
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountCountryBuilder : IAccountCountryBuilder
 {
 	private readonly IAccountCountryEntityFactory _AccountCountryEntityFactory;
 
@@ -143,4 +142,7 @@ internal class AccountCountryBuilder : IAccountCountryBuilder
 		{
 		}
 	}
+}
+
+
 }

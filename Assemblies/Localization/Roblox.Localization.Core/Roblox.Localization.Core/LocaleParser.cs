@@ -1,10 +1,9 @@
-using System.Linq;
+﻿using System.Linq;
 using System.Net.Http.Headers;
 using Roblox.Common;
+namespace Roblox.Localization.Coreinternal {
+    class LocaleParser : ILocaleParser
 
-namespace Roblox.Platform.Localization.Core;
-
-internal class LocaleParser : ILocaleParser
 {
 	public string GetLanguageCodeFromStandardizedLocale(string standardizedLocale)
 	{
@@ -45,4 +44,7 @@ internal class LocaleParser : ILocaleParser
 		}
 		return parsedValue;
 	}
+}
+
+
 }

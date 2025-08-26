@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "Freund hinzufügen";
+	public override string ActionAddFriend => "Freund hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.BlockUser"
@@ -41,7 +41,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// close modal
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "Schließen";
+	public override string ActionClose => "SchlieÃŸen";
 
 	/// <summary>
 	/// Key: "Action.ConfirmBlockUser"
@@ -173,13 +173,13 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// Key: "Description.BlockUserFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string DescriptionBlockUserFooter => "Wenn du einen Benutzer sperrst, könnt ihr euch nicht mehr gegenseitig kontaktieren.";
+	public override string DescriptionBlockUserFooter => "Wenn du einen Benutzer sperrst, kÃ¶nnt ihr euch nicht mehr gegenseitig kontaktieren.";
 
 	/// <summary>
 	/// Key: "Description.BlockUserPrompt"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string DescriptionBlockUserPrompt => "Möchtest du diesen Benutzer wirklich sperren?";
+	public override string DescriptionBlockUserPrompt => "MÃ¶chtest du diesen Benutzer wirklich sperren?";
 
 	/// <summary>
 	/// Key: "Description.ChangeAlias"
@@ -191,7 +191,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// Key: "Description.UnblockUserPrompt"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string DescriptionUnblockUserPrompt => "Möchtest du diesen Benutzer wirklich nicht mehr sperren?";
+	public override string DescriptionUnblockUserPrompt => "MÃ¶chtest du diesen Benutzer wirklich nicht mehr sperren?";
 
 	/// <summary>
 	/// Key: "Heading.AboutTab"
@@ -313,7 +313,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.BlockWarningBody"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string LabelBlockWarningBody => "Möchtest du diesen Benutzer wirklich sperren?";
+	public override string LabelBlockWarningBody => "MÃ¶chtest du diesen Benutzer wirklich sperren?";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningConfirm"
@@ -325,7 +325,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.BlockWarningFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string LabelBlockWarningFooter => "Wenn du einen Benutzer sperrst, könnt ihr euch nicht mehr gegenseitig kontaktieren.";
+	public override string LabelBlockWarningFooter => "Wenn du einen Benutzer sperrst, kÃ¶nnt ihr euch nicht mehr gegenseitig kontaktieren.";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
@@ -434,7 +434,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "Verstoß melden";
+	public override string LabelReportAbuse => "VerstoÃŸ melden";
 
 	/// <summary>
 	/// Key: "Label.ShowLess"
@@ -452,7 +452,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.UnblockWarningBody"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string LabelUnblockWarningBody => "Möchtest du diesen Benutzer wirklich nicht mehr sperren?";
+	public override string LabelUnblockWarningBody => "MÃ¶chtest du diesen Benutzer wirklich nicht mehr sperren?";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningConfirm"
@@ -476,13 +476,13 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// Key: "Message.AliasHasError"
 	/// English String: "An error has occurred. Please try again later"
 	/// </summary>
-	public override string MessageAliasHasError => "Ein Fehler ist aufgetreten. Bitte versuche es später erneut";
+	public override string MessageAliasHasError => "Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut";
 
 	/// <summary>
 	/// Key: "Message.AliasIsModerated"
 	/// English String: "Please avoid using full names or offensive language."
 	/// </summary>
-	public override string MessageAliasIsModerated => "Bitte keine vollständige Namen oder anstößige Sprache verwenden.";
+	public override string MessageAliasIsModerated => "Bitte keine vollstÃ¤ndige Namen oder anstÃ¶ÃŸige Sprache verwenden.";
 
 	/// <summary>
 	/// Key: "Message.ChangeStatus"
@@ -527,7 +527,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "Freund hinzufügen";
+		return "Freund hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionBlockUser()
@@ -547,7 +547,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "Schließen";
+		return "SchlieÃŸen";
 	}
 
 	protected override string _GetTemplateForActionConfirmBlockUser()
@@ -657,12 +657,12 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForDescriptionBlockUserFooter()
 	{
-		return "Wenn du einen Benutzer sperrst, könnt ihr euch nicht mehr gegenseitig kontaktieren.";
+		return "Wenn du einen Benutzer sperrst, kÃ¶nnt ihr euch nicht mehr gegenseitig kontaktieren.";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserPrompt()
 	{
-		return "Möchtest du diesen Benutzer wirklich sperren?";
+		return "MÃ¶chtest du diesen Benutzer wirklich sperren?";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeAlias()
@@ -672,7 +672,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForDescriptionUnblockUserPrompt()
 	{
-		return "Möchtest du diesen Benutzer wirklich nicht mehr sperren?";
+		return "MÃ¶chtest du diesen Benutzer wirklich nicht mehr sperren?";
 	}
 
 	protected override string _GetTemplateForHeadingAboutTab()
@@ -786,7 +786,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelBlockWarningBody()
 	{
-		return "Möchtest du diesen Benutzer wirklich sperren?";
+		return "MÃ¶chtest du diesen Benutzer wirklich sperren?";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningConfirm()
@@ -796,7 +796,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelBlockWarningFooter()
 	{
-		return "Wenn du einen Benutzer sperrst, könnt ihr euch nicht mehr gegenseitig kontaktieren.";
+		return "Wenn du einen Benutzer sperrst, kÃ¶nnt ihr euch nicht mehr gegenseitig kontaktieren.";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
@@ -876,17 +876,17 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
+	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	public override string LabelQuotation(string userStatus)
 	{
-		return $"„{userStatus}“";
+		return $"â€ž{userStatus}â€œ";
 	}
 
 	protected override string _GetTemplateForLabelQuotation()
 	{
-		return "„{userStatus}“";
+		return "â€ž{userStatus}â€œ";
 	}
 
 	protected override string _GetTemplateForLabelRank()
@@ -901,7 +901,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "Verstoß melden";
+		return "VerstoÃŸ melden";
 	}
 
 	protected override string _GetTemplateForLabelShowLess()
@@ -916,7 +916,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelUnblockWarningBody()
 	{
-		return "Möchtest du diesen Benutzer wirklich nicht mehr sperren?";
+		return "MÃ¶chtest du diesen Benutzer wirklich nicht mehr sperren?";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningConfirm()
@@ -936,12 +936,12 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForMessageAliasHasError()
 	{
-		return "Ein Fehler ist aufgetreten. Bitte versuche es später erneut";
+		return "Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut";
 	}
 
 	protected override string _GetTemplateForMessageAliasIsModerated()
 	{
-		return "Bitte keine vollständige Namen oder anstößige Sprache verwenden.";
+		return "Bitte keine vollstÃ¤ndige Namen oder anstÃ¶ÃŸige Sprache verwenden.";
 	}
 
 	protected override string _GetTemplateForMessageChangeStatus()
@@ -982,4 +982,7 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	{
 		return "Zu viele Versuche";
 	}
+}
+
+
 }

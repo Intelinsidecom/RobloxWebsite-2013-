@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides InventoryResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -45,7 +45,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 	/// Key: "Label.BodyParts"
 	/// English String: "Body Parts"
 	/// </summary>
-	public override string LabelBodyParts => "Körperteile";
+	public override string LabelBodyParts => "KÃ¶rperteile";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
@@ -131,7 +131,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 	/// Key: "Message.UserHasNoFavoritesCategory"
 	/// English String: "This user has not favorited items in this category."
 	/// </summary>
-	public override string MessageUserHasNoFavoritesCategory => "Dieser Benutzer hat keine Artikel in dieser Kategorie zu seinen Favoriten hinzugefügt.";
+	public override string MessageUserHasNoFavoritesCategory => "Dieser Benutzer hat keine Artikel in dieser Kategorie zu seinen Favoriten hinzugefÃ¼gt.";
 
 	/// <summary>
 	/// Key: "Message.UserHasNoItemsCategory"
@@ -204,7 +204,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForLabelBodyParts()
 	{
-		return "Körperteile";
+		return "KÃ¶rperteile";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
@@ -264,12 +264,12 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string LabelRentalExpireTime(string expireTime)
 	{
-		return $"Läuft ab: {expireTime}";
+		return $"LÃ¤uft ab: {expireTime}";
 	}
 
 	protected override string _GetTemplateForLabelRentalExpireTime()
 	{
-		return "Läuft ab: {expireTime}";
+		return "LÃ¤uft ab: {expireTime}";
 	}
 
 	protected override string _GetTemplateForLabelVipServers()
@@ -349,7 +349,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForMessageUserHasNoFavoritesCategory()
 	{
-		return "Dieser Benutzer hat keine Artikel in dieser Kategorie zu seinen Favoriten hinzugefügt.";
+		return "Dieser Benutzer hat keine Artikel in dieser Kategorie zu seinen Favoriten hinzugefÃ¼gt.";
 	}
 
 	/// <summary>
@@ -431,4 +431,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 	{
 		return "Du hast keine {itemsPlural} als Favoriten festgelegt.";
 	}
+}
+
+
 }

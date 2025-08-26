@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// An interferface representing a request to validate text submitted for an object name in <see cref="M:Roblox.TextFilter.ITextFilter.ValidateObjectName(Roblox.TextFilter.IObjectNameValidationRequest)" />
 /// </summary>
 public interface IObjectNameValidationRequest
@@ -9,4 +9,7 @@ public interface IObjectNameValidationRequest
 	/// The name being requested for validation
 	/// </summary>
 	string RequestedName { get; }
+}
+
+
 }

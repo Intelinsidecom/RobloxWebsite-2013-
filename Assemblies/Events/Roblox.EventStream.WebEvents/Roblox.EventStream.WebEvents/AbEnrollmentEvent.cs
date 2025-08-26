@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class AbEnrollmentEvent : WebEventBase
 
-public class AbEnrollmentEvent : WebEventBase
 {
 	private const string _Name = "abEnrollment";
 
@@ -15,3 +16,12 @@ public class AbEnrollmentEvent : WebEventBase
 		AddEventArg("stid", args.SubjectTargetId.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

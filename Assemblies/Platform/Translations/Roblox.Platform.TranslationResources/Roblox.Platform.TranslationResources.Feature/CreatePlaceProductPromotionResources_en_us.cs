@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class CreatePlaceProductPromotionResources_en_us : TranslationResourcesBase, ICreatePlaceProductPromotionResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class CreatePlaceProductPromotionResources_en_us : TranslationResourcesBase, ICreatePlaceProductPromotionResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -252,4 +251,7 @@ internal class CreatePlaceProductPromotionResources_en_us : TranslationResources
 	{
 		return "What is adding gear to a game? This item is displayed on your game page, and automatically allowed in your game. If someone buys this item from your game page, you'll earn {affiliateSaleTotal} Robux!";
 	}
+}
+
+
 }

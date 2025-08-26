@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameGearResources_en_us : TranslationResourcesBase, IGameGearResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameGearResources_en_us : TranslationResourcesBase, IGameGearResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -240,4 +239,7 @@ internal class GameGearResources_en_us : TranslationResourcesBase, IGameGearReso
 	{
 		return "Success!";
 	}
+}
+
+
 }

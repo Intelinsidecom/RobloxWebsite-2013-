@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationAnalyticsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -51,7 +51,7 @@ internal class TranslationAnalyticsResources_es_es : TranslationAnalyticsResourc
 	/// Key: "Message.GenericError"
 	/// English String: "There was a problem with your request. Please try again later."
 	/// </summary>
-	public override string MessageGenericError => "Ha habido un problema con tu solicitud. Inténtalo de nuevo más tarde.";
+	public override string MessageGenericError => "Ha habido un problema con tu solicitud. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.PermissionError"
@@ -96,11 +96,14 @@ internal class TranslationAnalyticsResources_es_es : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForMessageGenericError()
 	{
-		return "Ha habido un problema con tu solicitud. Inténtalo de nuevo más tarde.";
+		return "Ha habido un problema con tu solicitud. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
 		return "No tienes los permisos necesarios para descargar este informe.";
 	}
+}
+
+
 }

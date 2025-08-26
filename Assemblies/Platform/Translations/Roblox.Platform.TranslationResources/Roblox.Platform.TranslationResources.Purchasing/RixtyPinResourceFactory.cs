@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+    static class RixtyPinResourceFactory
 
-internal static class RixtyPinResourceFactory
 {
 	public const string FullNamespace = "Purchasing.RixtyPin";
 
@@ -21,4 +21,7 @@ internal static class RixtyPinResourceFactory
 			_ => new RixtyPinResources_en_us(state), 
 		};
 	}
+}
+
+
 }

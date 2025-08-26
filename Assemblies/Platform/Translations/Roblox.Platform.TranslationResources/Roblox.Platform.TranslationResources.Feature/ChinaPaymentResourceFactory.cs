@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class ChinaPaymentResourceFactory
 
-internal static class ChinaPaymentResourceFactory
 {
 	public const string FullNamespace = "Feature.ChinaPayment";
 
@@ -21,4 +21,7 @@ internal static class ChinaPaymentResourceFactory
 			_ => new ChinaPaymentResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,10 +1,12 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models.Requests {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models.Requests;
-
-[DataContract]
 public class GetMembershipMigrationAuditLogRequest
 {
 	[DataMember(Name = "userId")]
 	public long UserId;
+}
+
+
 }

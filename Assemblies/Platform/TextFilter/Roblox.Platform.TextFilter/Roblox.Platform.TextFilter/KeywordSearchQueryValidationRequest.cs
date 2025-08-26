@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Default implementation of <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest" />.
 /// </summary>
 public class KeywordSearchQueryValidationRequest : IKeywordSearchQueryValidationRequest
@@ -21,4 +21,7 @@ public class KeywordSearchQueryValidationRequest : IKeywordSearchQueryValidation
 		Keyword = keyword;
 		Author = author;
 	}
+}
+
+
 }

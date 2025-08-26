@@ -7,11 +7,9 @@ using Roblox.Configuration;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Core.Implementations;
 using Roblox.Platform.Localization.Core.Properties;
-
-namespace Roblox.Platform.Localization.Core;
-
-internal class CoreLocalizationAccessor : ICoreLocalizationAccessor
-{
+namespace Roblox.Platform.Localization.Core {
+    internal class CoreLocalizationAccessor : ICoreLocalizationAccessor
+    {
 	private const int _PageSizeForSupportedLocale = 1000;
 
 	private readonly ILanguageEntityFactory _LanguageEntityFactory;
@@ -199,11 +197,14 @@ internal class CoreLocalizationAccessor : ICoreLocalizationAccessor
 	}
 
 	internal static ILanguageFamily ToLanguage(ILanguageEntity languageEntity)
-	{
-		if (languageEntity != null)
-		{
-			return new LanguageFamily(languageEntity.Id, languageEntity.Name, languageEntity.NativeName, languageEntity.LanguageCode);
-		}
-		return null;
-	}
+    {
+        if (languageEntity != null)
+        {
+            return new LanguageFamily(languageEntity.Id, languageEntity.Name, languageEntity.NativeName, languageEntity.LanguageCode);
+        }
+        return null;
+    }
 }
+
+}
+

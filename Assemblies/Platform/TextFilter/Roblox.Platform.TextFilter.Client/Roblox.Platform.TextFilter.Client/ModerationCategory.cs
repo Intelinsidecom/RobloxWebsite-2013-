@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter.Client;
+namespace Roblox.Platform.TextFilter.Client {
+    public enum ModerationCategory
 
-public enum ModerationCategory
 {
 	Unknown,
 	GeneralRisk,
@@ -36,4 +36,7 @@ public enum ModerationCategory
 	NumericString,
 	TencentFilter,
 	ObjectNameRegex
+}
+
+
 }

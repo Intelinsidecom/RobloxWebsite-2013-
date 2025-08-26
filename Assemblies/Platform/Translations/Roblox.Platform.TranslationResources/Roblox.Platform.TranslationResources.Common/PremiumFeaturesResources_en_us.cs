@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class PremiumFeaturesResources_en_us : TranslationResourcesBase, IPremiumFeaturesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class PremiumFeaturesResources_en_us : TranslationResourcesBase, IPremiumFeaturesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -75,4 +74,7 @@ internal class PremiumFeaturesResources_en_us : TranslationResourcesBase, IPremi
 	{
 		return "{amount} Robux";
 	}
+}
+
+
 }

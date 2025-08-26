@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ProfileResources_en_us : TranslationResourcesBase, IProfileResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ProfileResources_en_us : TranslationResourcesBase, IProfileResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1238,7 +1237,7 @@ internal class ProfileResources_en_us : TranslationResourcesBase, IProfileResour
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
+	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	public virtual string LabelQuotation(string userStatus)
@@ -1344,4 +1343,7 @@ internal class ProfileResources_en_us : TranslationResourcesBase, IProfileResour
 	{
 		return "Too Many Attempts";
 	}
+}
+
+
 }

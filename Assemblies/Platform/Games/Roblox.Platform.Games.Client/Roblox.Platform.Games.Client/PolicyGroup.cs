@@ -1,6 +1,6 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    class PolicyGroup
 
-public class PolicyGroup
 {
 	public int Id { get; set; }
 
@@ -9,4 +9,7 @@ public class PolicyGroup
 	public string RccVersion { get; set; }
 
 	public string ApplicationName { get; set; }
+}
+
+
 }

@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class StudioToolboxSearchEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class StudioToolboxSearchEvent : WebEventBase
 {
 	private const string _Name = "studioToolboxSearch";
 
@@ -29,3 +29,12 @@ public class StudioToolboxSearchEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

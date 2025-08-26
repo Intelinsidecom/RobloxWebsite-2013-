@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.Games.Clientpublic {
+    class ReservationResult
 
-namespace Roblox.Games.Client;
-
-public class ReservationResult
 {
 	public GameConnection GameConnection { get; set; }
 
@@ -13,4 +12,7 @@ public class ReservationResult
 	public DateTime? ReservationExpiry { get; set; }
 
 	public JoinType JoinType { get; set; }
+}
+
+
 }

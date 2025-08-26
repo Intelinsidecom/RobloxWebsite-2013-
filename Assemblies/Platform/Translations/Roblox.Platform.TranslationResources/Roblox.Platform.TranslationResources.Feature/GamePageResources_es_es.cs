@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GamePageResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -40,13 +40,13 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// Key: "Label.MoreResults"
 	/// English String: "more results"
 	/// </summary>
-	public override string LabelMoreResults => "más resultados";
+	public override string LabelMoreResults => "mÃ¡s resultados";
 
 	/// <summary>
 	/// Key: "Label.MoreResultsFor"
 	/// English String: "More Results For"
 	/// </summary>
-	public override string LabelMoreResultsFor => "Más resultados para";
+	public override string LabelMoreResultsFor => "MÃ¡s resultados para";
 
 	/// <summary>
 	/// Key: "Label.SponsoredAd"
@@ -77,7 +77,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelExperimentalHelpText"
 	/// English String: "What's this?"
 	/// </summary>
-	public override string LabelExperimentalHelpText => "¿Qué es esto?";
+	public override string LabelExperimentalHelpText => "Â¿QuÃ© es esto?";
 
 	/// <summary>
 	/// Key: "LabelExperimentalMode"
@@ -137,7 +137,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelFilterGenre"
 	/// English String: "Genre"
 	/// </summary>
-	public override string LabelFilterGenre => "Género";
+	public override string LabelFilterGenre => "GÃ©nero";
 
 	/// <summary>
 	/// Key: "LabelFilterMyFavorite"
@@ -167,7 +167,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelFilterPastDay"
 	/// English String: "Past Day"
 	/// </summary>
-	public override string LabelFilterPastDay => "Día anterior";
+	public override string LabelFilterPastDay => "DÃ­a anterior";
 
 	/// <summary>
 	/// Key: "LabelFilterPastWeek"
@@ -179,7 +179,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelFilterPersonalizedByLiked"
 	/// English String: "Because You Liked"
 	/// </summary>
-	public override string LabelFilterPersonalizedByLiked => "Porque te gustó";
+	public override string LabelFilterPersonalizedByLiked => "Porque te gustÃ³";
 
 	/// <summary>
 	/// Key: "LabelFilterPersonalServer"
@@ -233,13 +233,13 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelFilterTopFavorite"
 	/// English String: "Top Favorite"
 	/// </summary>
-	public override string LabelFilterTopFavorite => "Más favoritos";
+	public override string LabelFilterTopFavorite => "MÃ¡s favoritos";
 
 	/// <summary>
 	/// Key: "LabelFilterTopGrossing"
 	/// English String: "Top Earning"
 	/// </summary>
-	public override string LabelFilterTopGrossing => "Más rentables";
+	public override string LabelFilterTopGrossing => "MÃ¡s rentables";
 
 	/// <summary>
 	/// Key: "LabelFilterTopPaid"
@@ -263,7 +263,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelNoSearchResults"
 	/// English String: "No Search Results Found"
 	/// </summary>
-	public override string LabelNoSearchResults => "La búsqueda no ha dado resultados.";
+	public override string LabelNoSearchResults => "La bÃºsqueda no ha dado resultados.";
 
 	/// <summary>
 	/// Key: "LabelSearchField"
@@ -281,7 +281,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelSearchYouMightMean"
 	/// English String: "Did you mean:"
 	/// </summary>
-	public override string LabelSearchYouMightMean => "Búsqueda alternativa:";
+	public override string LabelSearchYouMightMean => "BÃºsqueda alternativa:";
 
 	/// <summary>
 	/// Key: "LabelShowingResultsFor"
@@ -321,12 +321,12 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelMoreResults()
 	{
-		return "más resultados";
+		return "mÃ¡s resultados";
 	}
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
 	{
-		return "Más resultados para";
+		return "MÃ¡s resultados para";
 	}
 
 	protected override string _GetTemplateForLabelSponsoredAd()
@@ -365,7 +365,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelExperimentalHelpText()
 	{
-		return "¿Qué es esto?";
+		return "Â¿QuÃ© es esto?";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalMode()
@@ -389,12 +389,12 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelFilterBecauseYouLiked(string gameName)
 	{
-		return $"Porque te gustó {gameName}";
+		return $"Porque te gustÃ³ {gameName}";
 	}
 
 	protected override string _GetTemplateForLabelFilterBecauseYouLiked()
 	{
-		return "Porque te gustó {gameName}";
+		return "Porque te gustÃ³ {gameName}";
 	}
 
 	protected override string _GetTemplateForLabelFilterBuildersClub()
@@ -429,7 +429,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelFilterGenre()
 	{
-		return "Género";
+		return "GÃ©nero";
 	}
 
 	protected override string _GetTemplateForLabelFilterMyFavorite()
@@ -454,7 +454,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelFilterPastDay()
 	{
-		return "Día anterior";
+		return "DÃ­a anterior";
 	}
 
 	protected override string _GetTemplateForLabelFilterPastWeek()
@@ -464,7 +464,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelFilterPersonalizedByLiked()
 	{
-		return "Porque te gustó";
+		return "Porque te gustÃ³";
 	}
 
 	protected override string _GetTemplateForLabelFilterPersonalServer()
@@ -523,12 +523,12 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelFilterTopFavorite()
 	{
-		return "Más favoritos";
+		return "MÃ¡s favoritos";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopGrossing()
 	{
-		return "Más rentables";
+		return "MÃ¡s rentables";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopPaid()
@@ -548,7 +548,7 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelNoSearchResults()
 	{
-		return "La búsqueda no ha dado resultados.";
+		return "La bÃºsqueda no ha dado resultados.";
 	}
 
 	/// <summary>
@@ -577,11 +577,14 @@ internal class GamePageResources_es_es : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelSearchYouMightMean()
 	{
-		return "Búsqueda alternativa:";
+		return "BÃºsqueda alternativa:";
 	}
 
 	protected override string _GetTemplateForLabelShowingResultsFor()
 	{
 		return "Resultados de";
 	}
+}
+
+
 }

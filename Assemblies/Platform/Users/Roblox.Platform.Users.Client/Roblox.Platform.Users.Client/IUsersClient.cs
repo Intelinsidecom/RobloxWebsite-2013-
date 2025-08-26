@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Roblox.DataV2.Core;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public interface IUsersClient
 {
 	bool AcquirePlaceholderUsername(long accountId, string name);
@@ -120,3 +119,6 @@ public interface IUsersClient
 
 	Task<HistoricalDisplayName[]> GetDisplayNameHistoryByUserIdAsync(long userId, int count, SortOrder sortOrder, long? exclusiveStartId, CancellationToken cancellationToken);
 }
+
+}
+

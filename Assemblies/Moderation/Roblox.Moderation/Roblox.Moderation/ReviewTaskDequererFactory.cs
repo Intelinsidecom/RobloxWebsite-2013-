@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.TrackingQueue;
+namespace Roblox.Moderationpublic {
+    class ReviewTaskDequererFactory : IReviewTaskDequeuerFactory
 
-namespace Roblox.Platform.Moderation;
-
-public class ReviewTaskDequererFactory : IReviewTaskDequeuerFactory
 {
 	private readonly IQueueTrackerFactory _QueueTrackerFactory;
 
@@ -20,4 +19,7 @@ public class ReviewTaskDequererFactory : IReviewTaskDequeuerFactory
 		}
 		return new ReviewTaskDequeuer<TTask>(_QueueTrackerFactory.Create(trackingKey));
 	}
+}
+
+
 }

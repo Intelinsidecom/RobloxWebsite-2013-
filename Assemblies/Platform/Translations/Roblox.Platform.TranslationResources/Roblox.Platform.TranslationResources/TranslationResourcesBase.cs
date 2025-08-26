@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources;
+﻿namespace Roblox.Platform.TranslationResources {
+    /// <summary>
 
-/// <summary>
 /// Base class for all resource implementation classes.
 /// </summary>
 public class TranslationResourcesBase
@@ -15,4 +15,7 @@ public class TranslationResourcesBase
 	{
 		State = state;
 	}
+}
+
+
 }

@@ -1,8 +1,10 @@
-namespace Roblox.Users.Client;
-
-public enum ChangeDisplayNameResult
+namespace Roblox.Platform.Users.Client
 {
-	Unknown,
-	Changed,
-	Unchanged
+    public enum ChangeDisplayNameResult
+    {
+        Unknown,
+        Changed,
+        Unchanged
+    }
 }
+

@@ -1,8 +1,7 @@
-using Roblox.Platform.EventStream.WebEvents.EventArgs;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class LoginFormEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class LoginFormEvent : WebEventBase
 {
 	private const string _Name = "loginFormEvent";
 
@@ -29,3 +28,12 @@ public class LoginFormEvent : WebEventBase
 		AddEventArg("ctx", args.Context);
 	}
 }
+
+
+}
+
+
+
+
+
+

@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using Roblox.Configuration;
 using Roblox.Thumbnails.RequestValidation.Properties;
+namespace Roblox.Platform.Thumbnails.RequestValidationpublic {
+    class ThumbnailRequestValidator
 
-namespace Roblox.Thumbnails.RequestValidation;
-
-public class ThumbnailRequestValidator
 {
 	private static readonly HashSet<string> _ExtraDimensions = new HashSet<string>();
 
@@ -52,4 +51,7 @@ public class ThumbnailRequestValidator
 		}
 		return valid;
 	}
+}
+
+
 }

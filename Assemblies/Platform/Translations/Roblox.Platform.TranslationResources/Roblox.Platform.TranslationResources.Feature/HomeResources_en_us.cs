@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class HomeResources_en_us : TranslationResourcesBase, IHomeResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class HomeResources_en_us : TranslationResourcesBase, IHomeResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -390,4 +389,7 @@ internal class HomeResources_en_us : TranslationResourcesBase, IHomeResources, I
 	{
 		return "Too many updates. Please try again later.";
 	}
+}
+
+
 }

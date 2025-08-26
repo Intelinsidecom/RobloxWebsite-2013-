@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides HomeResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class HomeResources_de_de : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "Action.BackToTop"
 	/// English String: "Back To Top"
 	/// </summary>
-	public override string ActionBackToTop => "Zurück zum Seitenanfang";
+	public override string ActionBackToTop => "ZurÃ¼ck zum Seitenanfang";
 
 	/// <summary>
 	/// Key: "ActionLearnMore"
@@ -58,7 +58,7 @@ internal class HomeResources_de_de : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "HeadingFriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string HeadingFriendActivity => "Freundesaktivität";
+	public override string HeadingFriendActivity => "FreundesaktivitÃ¤t";
 
 	/// <summary>
 	/// Key: "HeadingFriendsTitle"
@@ -88,13 +88,13 @@ internal class HomeResources_de_de : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now on the side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "Wo ist „Mein Feed“? Sieh im Seitenmenü nach!";
+	public override string LabelFindMyFeed => "Wo ist â€žMein Feedâ€œ? Sieh im SeitenmenÃ¼ nach!";
 
 	/// <summary>
 	/// Key: "LabelAnnouncement"
 	/// English String: "Announcement"
 	/// </summary>
-	public override string LabelAnnouncement => "Ankündigung";
+	public override string LabelAnnouncement => "AnkÃ¼ndigung";
 
 	/// <summary>
 	/// Key: "LabelCreateEarn"
@@ -130,13 +130,13 @@ internal class HomeResources_de_de : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "ResponseErrorOther"
 	/// English String: "System issue. Please try again later, then contact Support."
 	/// </summary>
-	public override string ResponseErrorOther => "Problem mit dem System. Bitte versuche es später erneut und kontaktiere den Support bei weiteren Problemen.";
+	public override string ResponseErrorOther => "Problem mit dem System. Bitte versuche es spÃ¤ter erneut und kontaktiere den Support bei weiteren Problemen.";
 
 	/// <summary>
 	/// Key: "ResponseErrorTooManyUpdates"
 	/// English String: "Too many updates. Please try again later."
 	/// </summary>
-	public override string ResponseErrorTooManyUpdates => "Zu viele Aktualisierungen. Bitte versuche es später erneut.";
+	public override string ResponseErrorTooManyUpdates => "Zu viele Aktualisierungen. Bitte versuche es spÃ¤ter erneut.";
 
 	public HomeResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -145,7 +145,7 @@ internal class HomeResources_de_de : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForActionBackToTop()
 	{
-		return "Zurück zum Seitenanfang";
+		return "ZurÃ¼ck zum Seitenanfang";
 	}
 
 	protected override string _GetTemplateForActionLearnMore()
@@ -185,7 +185,7 @@ internal class HomeResources_de_de : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForHeadingFriendActivity()
 	{
-		return "Freundesaktivität";
+		return "FreundesaktivitÃ¤t";
 	}
 
 	/// <summary>
@@ -224,12 +224,12 @@ internal class HomeResources_de_de : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "Wo ist „Mein Feed“? Sieh im Seitenmenü nach!";
+		return "Wo ist â€žMein Feedâ€œ? Sieh im SeitenmenÃ¼ nach!";
 	}
 
 	protected override string _GetTemplateForLabelAnnouncement()
 	{
-		return "Ankündigung";
+		return "AnkÃ¼ndigung";
 	}
 
 	protected override string _GetTemplateForLabelCreateEarn()
@@ -273,11 +273,14 @@ internal class HomeResources_de_de : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForResponseErrorOther()
 	{
-		return "Problem mit dem System. Bitte versuche es später erneut und kontaktiere den Support bei weiteren Problemen.";
+		return "Problem mit dem System. Bitte versuche es spÃ¤ter erneut und kontaktiere den Support bei weiteren Problemen.";
 	}
 
 	protected override string _GetTemplateForResponseErrorTooManyUpdates()
 	{
-		return "Zu viele Aktualisierungen. Bitte versuche es später erneut.";
+		return "Zu viele Aktualisierungen. Bitte versuche es spÃ¤ter erneut.";
 	}
+}
+
+
 }

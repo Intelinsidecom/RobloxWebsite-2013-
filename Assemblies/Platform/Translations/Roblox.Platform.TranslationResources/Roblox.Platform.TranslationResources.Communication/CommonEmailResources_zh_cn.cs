@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Communication;
+﻿namespace Roblox.Platform.TranslationResources.Communication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CommonEmailResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,11 +18,14 @@ internal class CommonEmailResources_zh_cn : CommonEmailResources_en_us, ICommonE
 	/// </summary>
 	public override string DescriptionMessageGenerationContent(string environmentIdentifier)
 	{
-		return $"此信息由 {environmentIdentifier} 生成。";
+		return $"æ­¤ä¿¡æ¯ç”± {environmentIdentifier} ç”Ÿæˆã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionMessageGenerationContent()
 	{
-		return "此信息由 {environmentIdentifier} 生成。";
+		return "æ­¤ä¿¡æ¯ç”± {environmentIdentifier} ç”Ÿæˆã€‚";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameSortsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -22,19 +22,19 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.Contest"
 	/// English String: "Contest"
 	/// </summary>
-	public override string LabelContest => "Compétition";
+	public override string LabelContest => "CompÃ©tition";
 
 	/// <summary>
 	/// Key: "Label.ContinuePlaying"
 	/// English String: "Continue Playing"
 	/// </summary>
-	public override string LabelContinuePlaying => "Continuer à jouer";
+	public override string LabelContinuePlaying => "Continuer Ã  jouer";
 
 	/// <summary>
 	/// Key: "Label.Experimental"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelExperimental => "Recommandés";
+	public override string LabelExperimental => "RecommandÃ©s";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
@@ -58,7 +58,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.FriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string LabelFriendActivity => "Activité des amis";
+	public override string LabelFriendActivity => "ActivitÃ© des amis";
 
 	/// <summary>
 	/// Key: "Label.FriendsPlaying"
@@ -70,13 +70,13 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.GamesForYou"
 	/// English String: "Games for You"
 	/// </summary>
-	public override string LabelGamesForYou => "Jeux sélectionnés pour vous";
+	public override string LabelGamesForYou => "Jeux sÃ©lectionnÃ©s pour vous";
 
 	/// <summary>
 	/// Key: "Label.MoreResultsFor"
 	/// English String: "More Results for"
 	/// </summary>
-	public override string LabelMoreResultsFor => "Plus de résultats pour";
+	public override string LabelMoreResultsFor => "Plus de rÃ©sultats pour";
 
 	/// <summary>
 	/// Key: "Label.MostEngaging"
@@ -100,7 +100,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.MyRecent"
 	/// English String: "My Recent"
 	/// </summary>
-	public override string LabelMyRecent => "Mes jeux récents";
+	public override string LabelMyRecent => "Mes jeux rÃ©cents";
 
 	/// <summary>
 	/// Key: "Label.Obby"
@@ -112,7 +112,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.PersonalizedByLiked"
 	/// English String: "Because You Liked"
 	/// </summary>
-	public override string LabelPersonalizedByLiked => "Car vous avez aimé";
+	public override string LabelPersonalizedByLiked => "Car vous avez aimÃ©";
 
 	/// <summary>
 	/// Key: "Label.PersonalServer"
@@ -142,7 +142,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.PopularNearYou"
 	/// English String: "Popular Near You"
 	/// </summary>
-	public override string LabelPopularNearYou => "Populaires près de vous";
+	public override string LabelPopularNearYou => "Populaires prÃ¨s de vous";
 
 	/// <summary>
 	/// Key: "Label.PopularWorldwide"
@@ -154,13 +154,13 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.Purchased"
 	/// English String: "Purchased"
 	/// </summary>
-	public override string LabelPurchased => "Achetés";
+	public override string LabelPurchased => "AchetÃ©s";
 
 	/// <summary>
 	/// Key: "Label.Roleplay"
 	/// English String: "Roleplay"
 	/// </summary>
-	public override string LabelRoleplay => "Jeu de rôles";
+	public override string LabelRoleplay => "Jeu de rÃ´les";
 
 	/// <summary>
 	/// Key: "Label.Simulator"
@@ -172,7 +172,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.SuggestedGames"
 	/// English String: "Suggested Games"
 	/// </summary>
-	public override string LabelSuggestedGames => "Jeux suggérés";
+	public override string LabelSuggestedGames => "Jeux suggÃ©rÃ©s";
 
 	/// <summary>
 	/// Key: "Label.TopFavorite"
@@ -202,13 +202,13 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.TopResult"
 	/// English String: "Top Result"
 	/// </summary>
-	public override string LabelTopResult => "Meilleur résultat";
+	public override string LabelTopResult => "Meilleur rÃ©sultat";
 
 	/// <summary>
 	/// Key: "Label.TopRetaining"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelTopRetaining => "Recommandés";
+	public override string LabelTopRetaining => "RecommandÃ©s";
 
 	/// <summary>
 	/// Key: "Label.Tycoon"
@@ -226,7 +226,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "MoreResultsFor"
 	/// English String: "More Results for"
 	/// </summary>
-	public override string MoreResultsFor => "Plus de résultats pour";
+	public override string MoreResultsFor => "Plus de rÃ©sultats pour";
 
 	public GameSortsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -245,17 +245,17 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelContest()
 	{
-		return "Compétition";
+		return "CompÃ©tition";
 	}
 
 	protected override string _GetTemplateForLabelContinuePlaying()
 	{
-		return "Continuer à jouer";
+		return "Continuer Ã  jouer";
 	}
 
 	protected override string _GetTemplateForLabelExperimental()
 	{
-		return "Recommandés";
+		return "RecommandÃ©s";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
@@ -275,7 +275,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelFriendActivity()
 	{
-		return "Activité des amis";
+		return "ActivitÃ© des amis";
 	}
 
 	protected override string _GetTemplateForLabelFriendsPlaying()
@@ -285,12 +285,12 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelGamesForYou()
 	{
-		return "Jeux sélectionnés pour vous";
+		return "Jeux sÃ©lectionnÃ©s pour vous";
 	}
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
 	{
-		return "Plus de résultats pour";
+		return "Plus de rÃ©sultats pour";
 	}
 
 	protected override string _GetTemplateForLabelMostEngaging()
@@ -310,7 +310,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelMyRecent()
 	{
-		return "Mes jeux récents";
+		return "Mes jeux rÃ©cents";
 	}
 
 	protected override string _GetTemplateForLabelObby()
@@ -320,7 +320,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelPersonalizedByLiked()
 	{
-		return "Car vous avez aimé";
+		return "Car vous avez aimÃ©";
 	}
 
 	protected override string _GetTemplateForLabelPersonalServer()
@@ -359,7 +359,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelPopularNearYou()
 	{
-		return "Populaires près de vous";
+		return "Populaires prÃ¨s de vous";
 	}
 
 	protected override string _GetTemplateForLabelPopularWorldwide()
@@ -369,12 +369,12 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelPurchased()
 	{
-		return "Achetés";
+		return "AchetÃ©s";
 	}
 
 	protected override string _GetTemplateForLabelRoleplay()
 	{
-		return "Jeu de rôles";
+		return "Jeu de rÃ´les";
 	}
 
 	protected override string _GetTemplateForLabelSimulator()
@@ -384,7 +384,7 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelSuggestedGames()
 	{
-		return "Jeux suggérés";
+		return "Jeux suggÃ©rÃ©s";
 	}
 
 	protected override string _GetTemplateForLabelTopFavorite()
@@ -409,12 +409,12 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelTopResult()
 	{
-		return "Meilleur résultat";
+		return "Meilleur rÃ©sultat";
 	}
 
 	protected override string _GetTemplateForLabelTopRetaining()
 	{
-		return "Recommandés";
+		return "RecommandÃ©s";
 	}
 
 	protected override string _GetTemplateForLabelTycoon()
@@ -429,6 +429,9 @@ internal class GameSortsResources_fr_fr : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForMoreResultsFor()
 	{
-		return "Plus de résultats pour";
+		return "Plus de rÃ©sultats pour";
 	}
+}
+
+
 }

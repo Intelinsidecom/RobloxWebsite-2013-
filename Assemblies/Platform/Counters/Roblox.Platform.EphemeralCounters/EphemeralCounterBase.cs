@@ -1,8 +1,7 @@
-using Roblox.EphemeralCounters.Client;
+﻿using Roblox.EphemeralCounters.Client;
+namespace Roblox.Platform.EphemeralCountersinternal {
+    abstract class EphemeralCounterBase
 
-namespace Roblox.EphemeralCounters;
-
-internal abstract class EphemeralCounterBase
 {
 	protected readonly EphemeralCountersClient Client;
 
@@ -10,4 +9,7 @@ internal abstract class EphemeralCounterBase
 	{
 		Client = client;
 	}
+}
+
+
 }

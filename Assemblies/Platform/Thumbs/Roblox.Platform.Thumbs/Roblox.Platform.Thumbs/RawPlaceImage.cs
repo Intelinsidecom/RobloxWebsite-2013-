@@ -1,11 +1,10 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Web.UI;
 using Roblox.Controls;
+namespace Roblox.Platform.Thumbs {
+    /// <summary>
 
-namespace Roblox.Thumbs;
-
-/// <summary>
 /// Renders an Asset thumbnail
 /// This control is coupled with AssetImage.js and the Asset.cs web service
 /// </summary>
@@ -32,4 +31,7 @@ public abstract class RawPlaceImage : AssetImage
 		IAsset iAsset = asset2;
 		return ThumbnailDomainFactories.Asset.GetPlaceThumbIgnoreAssetMedia(iAsset, imageParameters, OverrideModeration);
 	}
+}
+
+
 }

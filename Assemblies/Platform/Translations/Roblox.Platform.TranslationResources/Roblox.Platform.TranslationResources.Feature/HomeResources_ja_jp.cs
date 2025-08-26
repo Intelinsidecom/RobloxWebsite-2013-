@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides HomeResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,43 +10,43 @@ internal class HomeResources_ja_jp : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "Action.BackToTop"
 	/// English String: "Back To Top"
 	/// </summary>
-	public override string ActionBackToTop => "トップに戻る";
+	public override string ActionBackToTop => "ãƒˆãƒƒãƒ—ã«æˆ»ã‚‹";
 
 	/// <summary>
 	/// Key: "ActionLearnMore"
 	/// English String: "Learn More"
 	/// </summary>
-	public override string ActionLearnMore => "もっと詳しく";
+	public override string ActionLearnMore => "ã‚‚ã£ã¨è©³ã—ã";
 
 	/// <summary>
 	/// Key: "ActionSeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "すべて見る";
+	public override string ActionSeeAll => "ã™ã¹ã¦è¦‹ã‚‹";
 
 	/// <summary>
 	/// Key: "ActionSeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string ActionSeeMore => "もっと見る";
+	public override string ActionSeeMore => "ã‚‚ã£ã¨è¦‹ã‚‹";
 
 	/// <summary>
 	/// Key: "ActionShare"
 	/// English String: "Share"
 	/// </summary>
-	public override string ActionShare => "シェア";
+	public override string ActionShare => "ã‚·ã‚§ã‚¢";
 
 	/// <summary>
 	/// Key: "ActionWhatAreYouUpto"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string ActionWhatAreYouUpto => "何をしていますか？";
+	public override string ActionWhatAreYouUpto => "ä½•ã‚’ã—ã¦ã„ã¾ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "HeadingBlogNews"
 	/// English String: "Blog News"
 	/// </summary>
-	public override string HeadingBlogNews => "ブログニュース";
+	public override string HeadingBlogNews => "ãƒ–ãƒ­ã‚°ãƒ‹ãƒ¥ãƒ¼ã‚¹";
 
 	/// <summary>
 	/// Key: "HeadingDeveloperExchange"
@@ -58,85 +58,85 @@ internal class HomeResources_ja_jp : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "HeadingFriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string HeadingFriendActivity => "友達のアクティビティ";
+	public override string HeadingFriendActivity => "å‹é”ã®ã‚¢ã‚¯ãƒ†ã‚£ãƒ“ãƒ†ã‚£";
 
 	/// <summary>
 	/// Key: "HeadingFriendsTitle"
 	/// English String: "Friends"
 	/// </summary>
-	public override string HeadingFriendsTitle => "友達";
+	public override string HeadingFriendsTitle => "å‹é”";
 
 	/// <summary>
 	/// Key: "HeadingMyFavorites"
 	/// English String: "My Favorites"
 	/// </summary>
-	public override string HeadingMyFavorites => "あなたのお気に入り";
+	public override string HeadingMyFavorites => "ã‚ãªãŸã®ãŠæ°—ã«å…¥ã‚Š";
 
 	/// <summary>
 	/// Key: "HeadingMyFeed"
 	/// English String: "My Feed"
 	/// </summary>
-	public override string HeadingMyFeed => "マイフィード";
+	public override string HeadingMyFeed => "ãƒžã‚¤ãƒ•ã‚£ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "HeadingRecentlyPlayed"
 	/// English String: "Recently Played"
 	/// </summary>
-	public override string HeadingRecentlyPlayed => "最近プレイしたゲーム";
+	public override string HeadingRecentlyPlayed => "æœ€è¿‘ãƒ—ãƒ¬ã‚¤ã—ãŸã‚²ãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now on the side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "マイフィードをお探しですか？サイドメニューに表示されています";
+	public override string LabelFindMyFeed => "ãƒžã‚¤ãƒ•ã‚£ãƒ¼ãƒ‰ã‚’ãŠæŽ¢ã—ã§ã™ã‹ï¼Ÿã‚µã‚¤ãƒ‰ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«è¡¨ç¤ºã•ã‚Œã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "LabelAnnouncement"
 	/// English String: "Announcement"
 	/// </summary>
-	public override string LabelAnnouncement => "告知";
+	public override string LabelAnnouncement => "å‘ŠçŸ¥";
 
 	/// <summary>
 	/// Key: "LabelCreateEarn"
 	/// English String: "Create games, earn money"
 	/// </summary>
-	public override string LabelCreateEarn => "ゲームを制作してお金を稼ごう";
+	public override string LabelCreateEarn => "ã‚²ãƒ¼ãƒ ã‚’åˆ¶ä½œã—ã¦ãŠé‡‘ã‚’ç¨¼ã”ã†";
 
 	/// <summary>
 	/// Key: "LabelSharing"
 	/// English String: "Sharing..."
 	/// </summary>
-	public override string LabelSharing => "シェアしています...";
+	public override string LabelSharing => "ã‚·ã‚§ã‚¢ã—ã¦ã„ã¾ã™...";
 
 	/// <summary>
 	/// Key: "LabelStatusUpdateFailed"
 	/// English String: "Status update failed."
 	/// </summary>
-	public override string LabelStatusUpdateFailed => "状況をアップデートできませんでした。";
+	public override string LabelStatusUpdateFailed => "çŠ¶æ³ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoBlank"
 	/// English String: "Update cannot be blank. Please try again."
 	/// </summary>
-	public override string ResponseErrorNoBlank => "アップデートは空白にできません。もう一度お試しください";
+	public override string ResponseErrorNoBlank => "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoLogin"
 	/// English String: "Please log into your account."
 	/// </summary>
-	public override string ResponseErrorNoLogin => "アカウントにログインしてください。";
+	public override string ResponseErrorNoLogin => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "ResponseErrorOther"
 	/// English String: "System issue. Please try again later, then contact Support."
 	/// </summary>
-	public override string ResponseErrorOther => "システムに問題があります。後でもう一度お試しください。問題が再発する場合は、サポートまでご連絡ください。";
+	public override string ResponseErrorOther => "ã‚·ã‚¹ãƒ†ãƒ ã«å•é¡ŒãŒã‚ã‚Šã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚å•é¡ŒãŒå†ç™ºã™ã‚‹å ´åˆã¯ã€ã‚µãƒãƒ¼ãƒˆã¾ã§ã”é€£çµ¡ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "ResponseErrorTooManyUpdates"
 	/// English String: "Too many updates. Please try again later."
 	/// </summary>
-	public override string ResponseErrorTooManyUpdates => "アップデートが多すぎます。後でもう一度お試しください。";
+	public override string ResponseErrorTooManyUpdates => "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	public HomeResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -145,37 +145,37 @@ internal class HomeResources_ja_jp : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForActionBackToTop()
 	{
-		return "トップに戻る";
+		return "ãƒˆãƒƒãƒ—ã«æˆ»ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionLearnMore()
 	{
-		return "もっと詳しく";
+		return "ã‚‚ã£ã¨è©³ã—ã";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "すべて見る";
+		return "ã™ã¹ã¦è¦‹ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionSeeMore()
 	{
-		return "もっと見る";
+		return "ã‚‚ã£ã¨è¦‹ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionShare()
 	{
-		return "シェア";
+		return "ã‚·ã‚§ã‚¢";
 	}
 
 	protected override string _GetTemplateForActionWhatAreYouUpto()
 	{
-		return "何をしていますか？";
+		return "ä½•ã‚’ã—ã¦ã„ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForHeadingBlogNews()
 	{
-		return "ブログニュース";
+		return "ãƒ–ãƒ­ã‚°ãƒ‹ãƒ¥ãƒ¼ã‚¹";
 	}
 
 	protected override string _GetTemplateForHeadingDeveloperExchange()
@@ -185,7 +185,7 @@ internal class HomeResources_ja_jp : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForHeadingFriendActivity()
 	{
-		return "友達のアクティビティ";
+		return "å‹é”ã®ã‚¢ã‚¯ãƒ†ã‚£ãƒ“ãƒ†ã‚£";
 	}
 
 	/// <summary>
@@ -194,47 +194,47 @@ internal class HomeResources_ja_jp : HomeResources_en_us, IHomeResources, ITrans
 	/// </summary>
 	public override string HeadingFriends(string friendCount)
 	{
-		return $"友達（{friendCount} 人）";
+		return $"å‹é”ï¼ˆ{friendCount} äººï¼‰";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()
 	{
-		return "友達（{friendCount} 人）";
+		return "å‹é”ï¼ˆ{friendCount} äººï¼‰";
 	}
 
 	protected override string _GetTemplateForHeadingFriendsTitle()
 	{
-		return "友達";
+		return "å‹é”";
 	}
 
 	protected override string _GetTemplateForHeadingMyFavorites()
 	{
-		return "あなたのお気に入り";
+		return "ã‚ãªãŸã®ãŠæ°—ã«å…¥ã‚Š";
 	}
 
 	protected override string _GetTemplateForHeadingMyFeed()
 	{
-		return "マイフィード";
+		return "ãƒžã‚¤ãƒ•ã‚£ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForHeadingRecentlyPlayed()
 	{
-		return "最近プレイしたゲーム";
+		return "æœ€è¿‘ãƒ—ãƒ¬ã‚¤ã—ãŸã‚²ãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "マイフィードをお探しですか？サイドメニューに表示されています";
+		return "ãƒžã‚¤ãƒ•ã‚£ãƒ¼ãƒ‰ã‚’ãŠæŽ¢ã—ã§ã™ã‹ï¼Ÿã‚µã‚¤ãƒ‰ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«è¡¨ç¤ºã•ã‚Œã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelAnnouncement()
 	{
-		return "告知";
+		return "å‘ŠçŸ¥";
 	}
 
 	protected override string _GetTemplateForLabelCreateEarn()
 	{
-		return "ゲームを制作してお金を稼ごう";
+		return "ã‚²ãƒ¼ãƒ ã‚’åˆ¶ä½œã—ã¦ãŠé‡‘ã‚’ç¨¼ã”ã†";
 	}
 
 	/// <summary>
@@ -243,41 +243,44 @@ internal class HomeResources_ja_jp : HomeResources_en_us, IHomeResources, ITrans
 	/// </summary>
 	public override string LabelGreeting(string username)
 	{
-		return $"こんにちは、{username}さん！";
+		return $"ã“ã‚“ã«ã¡ã¯ã€{username}ã•ã‚“ï¼";
 	}
 
 	protected override string _GetTemplateForLabelGreeting()
 	{
-		return "こんにちは、{username}さん！";
+		return "ã“ã‚“ã«ã¡ã¯ã€{username}ã•ã‚“ï¼";
 	}
 
 	protected override string _GetTemplateForLabelSharing()
 	{
-		return "シェアしています...";
+		return "ã‚·ã‚§ã‚¢ã—ã¦ã„ã¾ã™...";
 	}
 
 	protected override string _GetTemplateForLabelStatusUpdateFailed()
 	{
-		return "状況をアップデートできませんでした。";
+		return "çŠ¶æ³ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoBlank()
 	{
-		return "アップデートは空白にできません。もう一度お試しください";
+		return "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoLogin()
 	{
-		return "アカウントにログインしてください。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseErrorOther()
 	{
-		return "システムに問題があります。後でもう一度お試しください。問題が再発する場合は、サポートまでご連絡ください。";
+		return "ã‚·ã‚¹ãƒ†ãƒ ã«å•é¡ŒãŒã‚ã‚Šã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚å•é¡ŒãŒå†ç™ºã™ã‚‹å ´åˆã¯ã€ã‚µãƒãƒ¼ãƒˆã¾ã§ã”é€£çµ¡ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseErrorTooManyUpdates()
 	{
-		return "アップデートが多すぎます。後でもう一度お試しください。";
+		return "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
+}
+
+
 }

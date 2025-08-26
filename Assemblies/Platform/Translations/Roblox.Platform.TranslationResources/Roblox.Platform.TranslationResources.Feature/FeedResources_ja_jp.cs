@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeedResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,49 +10,49 @@ internal class FeedResources_ja_jp : FeedResources_en_us, IFeedResources, ITrans
 	/// Key: "HeadingBuildSomething"
 	/// English String: "Build Something"
 	/// </summary>
-	public override string HeadingBuildSomething => "自分で作ってみよう";
+	public override string HeadingBuildSomething => "è‡ªåˆ†ã§ä½œã£ã¦ã¿ã‚ˆã†";
 
 	/// <summary>
 	/// Key: "HeadingCustomizeAvatar"
 	/// English String: "Customize Your Avatar"
 	/// </summary>
-	public override string HeadingCustomizeAvatar => "アバターをカスタマイズ";
+	public override string HeadingCustomizeAvatar => "ã‚¢ãƒã‚¿ãƒ¼ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚º";
 
 	/// <summary>
 	/// Key: "HeadingForumHelp"
 	/// English String: "Roblox forums for help"
 	/// </summary>
-	public override string HeadingForumHelp => "Robloxヘルプフォーラム";
+	public override string HeadingForumHelp => "Robloxãƒ˜ãƒ«ãƒ—ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ";
 
 	/// <summary>
 	/// Key: "HeadingMakeFriends"
 	/// English String: "Make Friends"
 	/// </summary>
-	public override string HeadingMakeFriends => "友達を作ろう";
+	public override string HeadingMakeFriends => "å‹é”ã‚’ä½œã‚ã†";
 
 	/// <summary>
 	/// Key: "HeadingPlayGames"
 	/// English String: "Play Games"
 	/// </summary>
-	public override string HeadingPlayGames => "ゲームをプレイ";
+	public override string HeadingPlayGames => "ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤";
 
 	/// <summary>
 	/// Key: "LabelNoFeedLink"
 	/// English String: "make some best friends now."
 	/// </summary>
-	public override string LabelNoFeedLink => "今すぐ親友を作ろう。";
+	public override string LabelNoFeedLink => "ä»Šã™ãè¦ªå‹ã‚’ä½œã‚ã†ã€‚";
 
 	/// <summary>
 	/// Key: "LabelNoFeedText"
 	/// English String: "No news about your best friends... want to know what your best friends are up to?"
 	/// </summary>
-	public override string LabelNoFeedText => "親友に関する最新情報はありません... 親友の状況を確認しますか？";
+	public override string LabelNoFeedText => "è¦ªå‹ã«é–¢ã™ã‚‹æœ€æ–°æƒ…å ±ã¯ã‚ã‚Šã¾ã›ã‚“... è¦ªå‹ã®çŠ¶æ³ã‚’ç¢ºèªã—ã¾ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "LabelPlayGames"
 	/// English String: "Nearly all Roblox games are built by players like you. Here are some of our favorites:"
 	/// </summary>
-	public override string LabelPlayGames => "Robloxのほとんどのゲームは、あなたのようなプレイヤーが制作したものです。人気ゲームの一部をご紹介します:";
+	public override string LabelPlayGames => "Robloxã®ã»ã¨ã‚“ã©ã®ã‚²ãƒ¼ãƒ ã¯ã€ã‚ãªãŸã®ã‚ˆã†ãªãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒåˆ¶ä½œã—ãŸã‚‚ã®ã§ã™ã€‚äººæ°—ã‚²ãƒ¼ãƒ ã®ä¸€éƒ¨ã‚’ã”ç´¹ä»‹ã—ã¾ã™:";
 
 	public FeedResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -61,27 +61,27 @@ internal class FeedResources_ja_jp : FeedResources_en_us, IFeedResources, ITrans
 
 	protected override string _GetTemplateForHeadingBuildSomething()
 	{
-		return "自分で作ってみよう";
+		return "è‡ªåˆ†ã§ä½œã£ã¦ã¿ã‚ˆã†";
 	}
 
 	protected override string _GetTemplateForHeadingCustomizeAvatar()
 	{
-		return "アバターをカスタマイズ";
+		return "ã‚¢ãƒã‚¿ãƒ¼ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚º";
 	}
 
 	protected override string _GetTemplateForHeadingForumHelp()
 	{
-		return "Robloxヘルプフォーラム";
+		return "Robloxãƒ˜ãƒ«ãƒ—ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ";
 	}
 
 	protected override string _GetTemplateForHeadingMakeFriends()
 	{
-		return "友達を作ろう";
+		return "å‹é”ã‚’ä½œã‚ã†";
 	}
 
 	protected override string _GetTemplateForHeadingPlayGames()
 	{
-		return "ゲームをプレイ";
+		return "ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤";
 	}
 
 	/// <summary>
@@ -90,12 +90,12 @@ internal class FeedResources_ja_jp : FeedResources_en_us, IFeedResources, ITrans
 	/// </summary>
 	public override string LabelBuildSomething(string linkStart, string linkEnd)
 	{
-		return $"ビルダーはマルチプレイヤー用ビルディングゲームをプレイするのが大好きです。プロのビルダーが、Roblox Studioや、あなたの{linkStart}開発ページ{linkEnd}のゲーム開発環境に興味を持ってくれるかもしれません。";
+		return $"ãƒ“ãƒ«ãƒ€ãƒ¼ã¯ãƒžãƒ«ãƒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ç”¨ãƒ“ãƒ«ãƒ‡ã‚£ãƒ³ã‚°ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã®ãŒå¤§å¥½ãã§ã™ã€‚ãƒ—ãƒ­ã®ãƒ“ãƒ«ãƒ€ãƒ¼ãŒã€Roblox Studioã‚„ã€ã‚ãªãŸã®{linkStart}é–‹ç™ºãƒšãƒ¼ã‚¸{linkEnd}ã®ã‚²ãƒ¼ãƒ é–‹ç™ºç’°å¢ƒã«èˆˆå‘³ã‚’æŒã£ã¦ãã‚Œã‚‹ã‹ã‚‚ã—ã‚Œã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelBuildSomething()
 	{
-		return "ビルダーはマルチプレイヤー用ビルディングゲームをプレイするのが大好きです。プロのビルダーが、Roblox Studioや、あなたの{linkStart}開発ページ{linkEnd}のゲーム開発環境に興味を持ってくれるかもしれません。";
+		return "ãƒ“ãƒ«ãƒ€ãƒ¼ã¯ãƒžãƒ«ãƒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ç”¨ãƒ“ãƒ«ãƒ‡ã‚£ãƒ³ã‚°ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã®ãŒå¤§å¥½ãã§ã™ã€‚ãƒ—ãƒ­ã®ãƒ“ãƒ«ãƒ€ãƒ¼ãŒã€Roblox Studioã‚„ã€ã‚ãªãŸã®{linkStart}é–‹ç™ºãƒšãƒ¼ã‚¸{linkEnd}ã®ã‚²ãƒ¼ãƒ é–‹ç™ºç’°å¢ƒã«èˆˆå‘³ã‚’æŒã£ã¦ãã‚Œã‚‹ã‹ã‚‚ã—ã‚Œã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -104,12 +104,12 @@ internal class FeedResources_ja_jp : FeedResources_en_us, IFeedResources, ITrans
 	/// </summary>
 	public override string LabelCustomizeAvatarDesktop(string avatarLinkStart, string avatarLinkEnd, string catalogLinkStart, string catalogLinkEnd)
 	{
-		return $"{avatarLinkStart}アバターページ{avatarLinkEnd}にアクセスして、アバターをカスタマイズしよう。{catalogLinkStart}カタログ{catalogLinkEnd}で新しいコスチュームをゲットしよう。";
+		return $"{avatarLinkStart}ã‚¢ãƒã‚¿ãƒ¼ãƒšãƒ¼ã‚¸{avatarLinkEnd}ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€ã‚¢ãƒã‚¿ãƒ¼ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã—ã‚ˆã†ã€‚{catalogLinkStart}ã‚«ã‚¿ãƒ­ã‚°{catalogLinkEnd}ã§æ–°ã—ã„ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ã‚’ã‚²ãƒƒãƒˆã—ã‚ˆã†ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarDesktop()
 	{
-		return "{avatarLinkStart}アバターページ{avatarLinkEnd}にアクセスして、アバターをカスタマイズしよう。{catalogLinkStart}カタログ{catalogLinkEnd}で新しいコスチュームをゲットしよう。";
+		return "{avatarLinkStart}ã‚¢ãƒã‚¿ãƒ¼ãƒšãƒ¼ã‚¸{avatarLinkEnd}ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€ã‚¢ãƒã‚¿ãƒ¼ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã—ã‚ˆã†ã€‚{catalogLinkStart}ã‚«ã‚¿ãƒ­ã‚°{catalogLinkEnd}ã§æ–°ã—ã„ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ã‚’ã‚²ãƒƒãƒˆã—ã‚ˆã†ã€‚";
 	}
 
 	/// <summary>
@@ -118,12 +118,12 @@ internal class FeedResources_ja_jp : FeedResources_en_us, IFeedResources, ITrans
 	/// </summary>
 	public override string LabelCustomizeAvatarPhone(string linkStart, string linkEnd)
 	{
-		return $"{linkStart} カタログ {linkEnd} でコスチュームをゲットしてアバターをカスタマイズしよう。";
+		return $"{linkStart} ã‚«ã‚¿ãƒ­ã‚° {linkEnd} ã§ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ã‚’ã‚²ãƒƒãƒˆã—ã¦ã‚¢ãƒã‚¿ãƒ¼ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã—ã‚ˆã†ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarPhone()
 	{
-		return "{linkStart} カタログ {linkEnd} でコスチュームをゲットしてアバターをカスタマイズしよう。";
+		return "{linkStart} ã‚«ã‚¿ãƒ­ã‚° {linkEnd} ã§ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ã‚’ã‚²ãƒƒãƒˆã—ã¦ã‚¢ãƒã‚¿ãƒ¼ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã—ã‚ˆã†ã€‚";
 	}
 
 	/// <summary>
@@ -132,12 +132,12 @@ internal class FeedResources_ja_jp : FeedResources_en_us, IFeedResources, ITrans
 	/// </summary>
 	public override string LabelForumHelp(string linkStart, string linkEnd)
 	{
-		return $"どんなものを探す場合でも、Robloxに関連したものであれば、{linkStart}こちら{linkEnd}で話題に上ることがあります。";
+		return $"ã©ã‚“ãªã‚‚ã®ã‚’æŽ¢ã™å ´åˆã§ã‚‚ã€Robloxã«é–¢é€£ã—ãŸã‚‚ã®ã§ã‚ã‚Œã°ã€{linkStart}ã“ã¡ã‚‰{linkEnd}ã§è©±é¡Œã«ä¸Šã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelForumHelp()
 	{
-		return "どんなものを探す場合でも、Robloxに関連したものであれば、{linkStart}こちら{linkEnd}で話題に上ることがあります。";
+		return "ã©ã‚“ãªã‚‚ã®ã‚’æŽ¢ã™å ´åˆã§ã‚‚ã€Robloxã«é–¢é€£ã—ãŸã‚‚ã®ã§ã‚ã‚Œã°ã€{linkStart}ã“ã¡ã‚‰{linkEnd}ã§è©±é¡Œã«ä¸Šã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -146,26 +146,29 @@ internal class FeedResources_ja_jp : FeedResources_en_us, IFeedResources, ITrans
 	/// </summary>
 	public override string LabelMakeFriends(string linkStart, string linkEnd)
 	{
-		return $"ゲーム内で他のプレイヤーと知り合いになって友達リクエストをしよう。タイミングを逃した場合でも、ユーザープロフィールで {linkStart}検索{linkEnd} して、いつでもまたリクエストできます。";
+		return $"ã‚²ãƒ¼ãƒ å†…ã§ä»–ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¨çŸ¥ã‚Šåˆã„ã«ãªã£ã¦å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’ã—ã‚ˆã†ã€‚ã‚¿ã‚¤ãƒŸãƒ³ã‚°ã‚’é€ƒã—ãŸå ´åˆã§ã‚‚ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã§ {linkStart}æ¤œç´¢{linkEnd} ã—ã¦ã€ã„ã¤ã§ã‚‚ã¾ãŸãƒªã‚¯ã‚¨ã‚¹ãƒˆã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelMakeFriends()
 	{
-		return "ゲーム内で他のプレイヤーと知り合いになって友達リクエストをしよう。タイミングを逃した場合でも、ユーザープロフィールで {linkStart}検索{linkEnd} して、いつでもまたリクエストできます。";
+		return "ã‚²ãƒ¼ãƒ å†…ã§ä»–ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¨çŸ¥ã‚Šåˆã„ã«ãªã£ã¦å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’ã—ã‚ˆã†ã€‚ã‚¿ã‚¤ãƒŸãƒ³ã‚°ã‚’é€ƒã—ãŸå ´åˆã§ã‚‚ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã§ {linkStart}æ¤œç´¢{linkEnd} ã—ã¦ã€ã„ã¤ã§ã‚‚ã¾ãŸãƒªã‚¯ã‚¨ã‚¹ãƒˆã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedLink()
 	{
-		return "今すぐ親友を作ろう。";
+		return "ä»Šã™ãè¦ªå‹ã‚’ä½œã‚ã†ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedText()
 	{
-		return "親友に関する最新情報はありません... 親友の状況を確認しますか？";
+		return "è¦ªå‹ã«é–¢ã™ã‚‹æœ€æ–°æƒ…å ±ã¯ã‚ã‚Šã¾ã›ã‚“... è¦ªå‹ã®çŠ¶æ³ã‚’ç¢ºèªã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelPlayGames()
 	{
-		return "Robloxのほとんどのゲームは、あなたのようなプレイヤーが制作したものです。人気ゲームの一部をご紹介します:";
+		return "Robloxã®ã»ã¨ã‚“ã©ã®ã‚²ãƒ¼ãƒ ã¯ã€ã‚ãªãŸã®ã‚ˆã†ãªãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒåˆ¶ä½œã—ãŸã‚‚ã®ã§ã™ã€‚äººæ°—ã‚²ãƒ¼ãƒ ã®ä¸€éƒ¨ã‚’ã”ç´¹ä»‹ã—ã¾ã™:";
 	}
+}
+
+
 }

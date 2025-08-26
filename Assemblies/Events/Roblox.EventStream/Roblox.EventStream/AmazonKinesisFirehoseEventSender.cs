@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using Roblox.Amazon.Firehose;
 using Roblox.EventLog;
-using Roblox.Platform.EventStream.Properties;
+using Roblox.EventStream.Properties;
+namespace Roblox.EventStream {
+    class AmazonKinesisFirehoseEventSender : IEventSender
 
-namespace Roblox.Platform.EventStream;
-
-internal class AmazonKinesisFirehoseEventSender : IEventSender
 {
 	private readonly AmazonKinesisFirehoseBatchEventSender _AmazonKinesisFirehoseBatchEventSender;
 
@@ -32,4 +31,7 @@ internal class AmazonKinesisFirehoseEventSender : IEventSender
 		string eventParametersAsQueryString = string.Join("&", parts);
 		return string.Join("\t", target, eventType, clientIp, isTrustedSource, DateTime.UtcNow.ToString("O"), eventParametersAsQueryString) + "\r\n";
 	}
+}
+
+
 }

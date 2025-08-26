@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class CreditCardExpiringModalResources_en_us : TranslationResourcesBase, ICreditCardExpiringModalResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class CreditCardExpiringModalResources_en_us : TranslationResourcesBase, ICreditCardExpiringModalResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -107,4 +106,7 @@ internal class CreditCardExpiringModalResources_en_us : TranslationResourcesBase
 	{
 		return "Credit Card Expiration";
 	}
+}
+
+
 }

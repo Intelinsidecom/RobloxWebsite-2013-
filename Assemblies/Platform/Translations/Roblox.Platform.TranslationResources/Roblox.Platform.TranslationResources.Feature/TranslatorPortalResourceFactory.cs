@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class TranslatorPortalResourceFactory
 
-internal static class TranslatorPortalResourceFactory
 {
 	public const string FullNamespace = "Feature.TranslatorPortal";
 
@@ -21,4 +21,7 @@ internal static class TranslatorPortalResourceFactory
 			_ => new TranslatorPortalResources_en_us(state), 
 		};
 	}
+}
+
+
 }

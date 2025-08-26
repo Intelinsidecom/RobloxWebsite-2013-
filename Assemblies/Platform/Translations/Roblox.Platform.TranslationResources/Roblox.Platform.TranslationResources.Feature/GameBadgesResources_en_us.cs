@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameBadgesResources_en_us : TranslationResourcesBase, IGameBadgesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameBadgesResources_en_us : TranslationResourcesBase, IGameBadgesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -243,4 +242,7 @@ internal class GameBadgesResources_en_us : TranslationResourcesBase, IGameBadges
 	{
 		return "Won Yesterday";
 	}
+}
+
+
 }

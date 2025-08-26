@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -6,10 +6,9 @@ using Roblox.Configuration;
 using Roblox.EventLog;
 using Roblox.Platform.Moderation.Properties;
 using Roblox.TrackingQueue;
+namespace Roblox.Moderationinternal {
+    class ModerationQueueMetrics : ModerationTaskClientBase<IDictionary<string, ITrackingQueueMetrics>>, IModerationQueueMetrics
 
-namespace Roblox.Platform.Moderation;
-
-internal class ModerationQueueMetrics : ModerationTaskClientBase<IDictionary<string, ITrackingQueueMetrics>>, IModerationQueueMetrics
 {
 	private readonly ISqsSettings _Settings;
 
@@ -154,4 +153,7 @@ internal class ModerationQueueMetrics : ModerationTaskClientBase<IDictionary<str
 		}
 		throw new ArgumentException($"The metrics for {localeId} is not supported");
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface IAccountRecoveryResources : ITranslationResources
 
-public interface IAccountRecoveryResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "ActionSubmit"
@@ -91,4 +91,7 @@ public interface IAccountRecoveryResources : ITranslationResources
 	/// English String: "Do {styleFront}not{styleEnd} use your old password."
 	/// </summary>
 	string MessageDontUseOldPassword(string styleFront, string styleEnd);
+}
+
+
 }

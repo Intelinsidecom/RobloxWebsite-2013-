@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class BuildersClubPageResourceFactory
 
-internal static class BuildersClubPageResourceFactory
 {
 	public const string FullNamespace = "Feature.BuildersClubPage";
 
@@ -21,4 +21,7 @@ internal static class BuildersClubPageResourceFactory
 			_ => new BuildersClubPageResources_en_us(state), 
 		};
 	}
+}
+
+
 }

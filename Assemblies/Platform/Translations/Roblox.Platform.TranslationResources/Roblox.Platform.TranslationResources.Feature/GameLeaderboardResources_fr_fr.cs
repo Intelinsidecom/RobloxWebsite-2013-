@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLeaderboardResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -52,7 +52,7 @@ internal class GameLeaderboardResources_fr_fr : GameLeaderboardResources_en_us, 
 	/// Key: "Label.GoGetPoints"
 	/// English String: "You are not yet ranked for this time period. Go earn some Points!"
 	/// </summary>
-	public override string LabelGoGetPoints => "Vous n'êtes pas encore dans le classement pour cette période. Marquez des points\u00a0!";
+	public override string LabelGoGetPoints => "Vous n'Ãªtes pas encore dans le classement pour cette pÃ©riode. Marquez des points\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.Leader"
@@ -70,13 +70,13 @@ internal class GameLeaderboardResources_fr_fr : GameLeaderboardResources_en_us, 
 	/// Key: "Label.NoResults"
 	/// English String: "No results found"
 	/// </summary>
-	public override string LabelNoResults => "Aucun résultat trouvé";
+	public override string LabelNoResults => "Aucun rÃ©sultat trouvÃ©";
 
 	/// <summary>
 	/// Key: "Label.Owner"
 	/// English String: "Owner"
 	/// </summary>
-	public override string LabelOwner => "Propriétaire";
+	public override string LabelOwner => "PropriÃ©taire";
 
 	/// <summary>
 	/// Key: "Label.PastMonth"
@@ -88,7 +88,7 @@ internal class GameLeaderboardResources_fr_fr : GameLeaderboardResources_en_us, 
 	/// Key: "Label.PastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelPastWeek => "Semaine dernière";
+	public override string LabelPastWeek => "Semaine derniÃ¨re";
 
 	/// <summary>
 	/// Key: "Label.Points"
@@ -124,13 +124,13 @@ internal class GameLeaderboardResources_fr_fr : GameLeaderboardResources_en_us, 
 	/// Key: "Label.UpdatedOneHour"
 	/// English String: "Updated approx. 1 hour ago"
 	/// </summary>
-	public override string LabelUpdatedOneHour => "Mis à jour il y a ~1\u00a0h";
+	public override string LabelUpdatedOneHour => "Mis Ã  jour il y a ~1\u00a0h";
 
 	/// <summary>
 	/// Key: "Label.UpdatedTenMinutes"
 	/// English String: "Updated approx. 10 minutes ago"
 	/// </summary>
-	public override string LabelUpdatedTenMinutes => "Mis à jour il y a ~10\u00a0min";
+	public override string LabelUpdatedTenMinutes => "Mis Ã  jour il y a ~10\u00a0min";
 
 	public GameLeaderboardResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -174,7 +174,7 @@ internal class GameLeaderboardResources_fr_fr : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelGoGetPoints()
 	{
-		return "Vous n'êtes pas encore dans le classement pour cette période. Marquez des points\u00a0!";
+		return "Vous n'Ãªtes pas encore dans le classement pour cette pÃ©riode. Marquez des points\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelLeader()
@@ -189,12 +189,12 @@ internal class GameLeaderboardResources_fr_fr : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelNoResults()
 	{
-		return "Aucun résultat trouvé";
+		return "Aucun rÃ©sultat trouvÃ©";
 	}
 
 	protected override string _GetTemplateForLabelOwner()
 	{
-		return "Propriétaire";
+		return "PropriÃ©taire";
 	}
 
 	protected override string _GetTemplateForLabelPastMonth()
@@ -204,7 +204,7 @@ internal class GameLeaderboardResources_fr_fr : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelPastWeek()
 	{
-		return "Semaine dernière";
+		return "Semaine derniÃ¨re";
 	}
 
 	protected override string _GetTemplateForLabelPoints()
@@ -234,11 +234,14 @@ internal class GameLeaderboardResources_fr_fr : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelUpdatedOneHour()
 	{
-		return "Mis à jour il y a ~1\u00a0h";
+		return "Mis Ã  jour il y a ~1\u00a0h";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedTenMinutes()
 	{
-		return "Mis à jour il y a ~10\u00a0min";
+		return "Mis Ã  jour il y a ~10\u00a0min";
 	}
+}
+
+
 }

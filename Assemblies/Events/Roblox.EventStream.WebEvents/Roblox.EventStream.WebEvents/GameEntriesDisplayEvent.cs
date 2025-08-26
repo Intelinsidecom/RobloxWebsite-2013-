@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System.Linq;
+namespace Roblox.EventStream.WebEvents {
+    public class GameEntriesDisplayEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class GameEntriesDisplayEvent : WebEventBase
 {
 	private const string _Name = "gameEntriesDisplay";
 
@@ -35,3 +35,12 @@ public class GameEntriesDisplayEvent : WebEventBase
 		return $"[{csv}]";
 	}
 }
+
+
+}
+
+
+
+
+
+

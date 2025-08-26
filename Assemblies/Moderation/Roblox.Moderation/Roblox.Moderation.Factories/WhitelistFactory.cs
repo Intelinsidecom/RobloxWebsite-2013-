@@ -1,10 +1,9 @@
-using Roblox.ContentFilterApi.Client;
+﻿using Roblox.ContentFilterApi.Client;
 using Roblox.Platform.Moderation.Implementation;
 using Roblox.Platform.Moderation.Interfaces;
+namespace Roblox.Moderation.Factoriespublic {
+    class WhitelistFactory
 
-namespace Roblox.Platform.Moderation.Factories;
-
-public class WhitelistFactory
 {
 	private readonly ContentFilterClient _Client;
 
@@ -17,4 +16,7 @@ public class WhitelistFactory
 	{
 		return new Whitelist(_Client, categoryType, categoryTargetId);
 	}
+}
+
+
 }

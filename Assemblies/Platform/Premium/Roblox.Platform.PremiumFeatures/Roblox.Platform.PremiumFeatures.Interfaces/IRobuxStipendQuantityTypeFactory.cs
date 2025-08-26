@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures.Interfaces;
+﻿namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-/// <summary>
 /// Robux stipend quantity type factory
 /// </summary>
 public interface IRobuxStipendQuantityTypeFactory
@@ -41,4 +41,7 @@ public interface IRobuxStipendQuantityTypeFactory
 	/// <param name="id">Id</param>
 	/// <returns><see cref="T:Roblox.PremiumFeatures.Interfaces.IRobuxStipendQuantityTypeModel" /></returns>
 	IRobuxStipendQuantityTypeModel Get(byte id);
+}
+
+
 }

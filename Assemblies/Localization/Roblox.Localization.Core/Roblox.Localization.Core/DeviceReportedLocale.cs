@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Coreinternal {
+    class DeviceReportedLocale : IDeviceReportedLocale
 
-internal class DeviceReportedLocale : IDeviceReportedLocale
 {
 	public IDeviceReportedLocaleIdentifier DeviceReportedLocaleId { get; set; }
 
@@ -9,4 +9,7 @@ internal class DeviceReportedLocale : IDeviceReportedLocale
 	public ILanguageFamily LanguageFamily { get; set; }
 
 	public ISupportedLocale SupportedLocale { get; set; }
+}
+
+
 }

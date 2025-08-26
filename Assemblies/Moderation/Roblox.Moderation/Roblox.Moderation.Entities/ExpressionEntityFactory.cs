@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Roblox.Moderation;
+namespace Roblox.Moderation.Entities {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Moderation.Entities;
-
-[ExcludeFromCodeCoverage]
 internal class ExpressionEntityFactory : IExpressionEntityFactory
 {
 	public IExpressionEntity GetOrCreate(string value)
@@ -38,4 +37,7 @@ internal class ExpressionEntityFactory : IExpressionEntityFactory
 		}
 		return null;
 	}
+}
+
+
 }

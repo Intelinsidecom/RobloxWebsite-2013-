@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TencentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -34,4 +34,7 @@ internal class TencentResources_it_it : TencentResources_en_us, ITencentResource
 	{
 		return "Accesso a WeChat";
 	}
+}
+
+
 }

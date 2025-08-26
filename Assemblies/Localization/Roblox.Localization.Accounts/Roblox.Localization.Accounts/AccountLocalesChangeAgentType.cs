@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accounts {
+    /// <summary>
 
-/// <summary>
 /// An enum that describes the agent which changed a user's account locale.
 /// </summary>
 public enum AccountLocalesChangeAgentType : byte
@@ -8,4 +8,7 @@ public enum AccountLocalesChangeAgentType : byte
 	User,
 	CsAgent,
 	Automation
+}
+
+
 }

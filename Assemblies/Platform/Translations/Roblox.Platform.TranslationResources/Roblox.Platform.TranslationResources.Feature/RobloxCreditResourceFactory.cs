@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class RobloxCreditResourceFactory
 
-internal static class RobloxCreditResourceFactory
 {
 	public const string FullNamespace = "Feature.RobloxCredit";
 
@@ -21,4 +21,7 @@ internal static class RobloxCreditResourceFactory
 			_ => new RobloxCreditResources_en_us(state), 
 		};
 	}
+}
+
+
 }

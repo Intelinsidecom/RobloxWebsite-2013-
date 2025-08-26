@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasingpublic {
+    interface IRobloxProductsResources : ITranslationResources
 
-public interface IRobloxProductsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Heading.Sorry"
@@ -19,4 +19,7 @@ public interface IRobloxProductsResources : ITranslationResources
 	/// English String: "Robux purchases are temporarily disabled. Please try again later."
 	/// </summary>
 	string MessageTryAgainLater { get; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IBuildersClubResources : ITranslationResources
 
-public interface IBuildersClubResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.BuildersClub"
@@ -121,3 +121,5 @@ public interface IBuildersClubResources : ITranslationResources
 	/// </summary>
 	string LabelYes { get; }
 }
+
+

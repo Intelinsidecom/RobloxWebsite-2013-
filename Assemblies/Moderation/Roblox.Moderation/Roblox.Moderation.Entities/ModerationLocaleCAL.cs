@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Moderation.Entities {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Moderation.Entities;
-
-[ExcludeFromCodeCoverage]
 internal class ModerationLocaleCAL : IRobloxEntity<int, ModerationLocaleDAL>, ICacheableObject<int>, ICacheableObject, IRemoteCacheableObject
 {
 	private ModerationLocaleDAL _EntityDAL;
@@ -161,4 +160,7 @@ internal class ModerationLocaleCAL : IRobloxEntity<int, ModerationLocaleDAL>, IC
 	{
 		return $"IsActive:{isActive}";
 	}
+}
+
+
 }

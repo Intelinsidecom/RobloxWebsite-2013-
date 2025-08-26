@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IServerListResources : ITranslationResources
 
-public interface IServerListResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.ConfigureServer"
@@ -108,4 +108,7 @@ public interface IServerListResources : ITranslationResources
 	/// English String: "{currentPlayers} of {maximumAllowedPlayers} players max"
 	/// </summary>
 	string LabelCurrentPlayerCount(string currentPlayers, string maximumAllowedPlayers);
+}
+
+
 }

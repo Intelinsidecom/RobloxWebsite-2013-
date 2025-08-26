@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using Amazon;
@@ -7,10 +7,9 @@ using Roblox.Amazon.Sqs;
 using Roblox.Configuration;
 using Roblox.Platform.Core;
 using Roblox.Thumbs.Properties;
+namespace Roblox.Platform.Thumbspublic {
+    class ThumbnailDependenciesInvalidator : DomainObjectBase<ThumbnailDomainFactories>, IThumbnailDependenciesInvalidator
 
-namespace Roblox.Thumbs;
-
-public class ThumbnailDependenciesInvalidator : DomainObjectBase<ThumbnailDomainFactories>, IThumbnailDependenciesInvalidator
 {
 	private const int _MaximumRowsPerDatabaseTrip = 100;
 
@@ -130,4 +129,7 @@ public class ThumbnailDependenciesInvalidator : DomainObjectBase<ThumbnailDomain
 	{
 		SqsOperations.SendSingleMessage(_SqsClient, Settings.Default.InvalidationQueueUrl, assetReferenceId.ToString());
 	}
+}
+
+
 }

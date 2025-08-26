@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.EventStream {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream;
-
-/// <summary>
 /// Interface for push notification data to be streamed to AWS Kinesis Firehose
 /// </summary>
 public interface IPushNotificationData
@@ -36,4 +35,7 @@ public interface IPushNotificationData
 	/// The notification source type
 	/// </summary>
 	string NotificationSourceType { get; set; }
+}
+
+
 }

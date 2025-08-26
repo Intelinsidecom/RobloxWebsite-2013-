@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class MigrationStateConverter
 
-namespace Roblox.PremiumFeatures;
-
-public class MigrationStateConverter
 {
 	private ILogger _Logger;
 
@@ -32,4 +31,7 @@ public class MigrationStateConverter
 		}
 		return byValue.Id;
 	}
+}
+
+
 }

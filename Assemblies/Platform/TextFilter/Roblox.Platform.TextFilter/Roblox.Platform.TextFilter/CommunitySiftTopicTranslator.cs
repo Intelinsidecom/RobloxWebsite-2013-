@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.CommunitySift;
+namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-namespace Roblox.TextFilter;
-
-/// <summary>
 /// Translates Community Sift specific moderation topics into standardised Roblox topics
 /// </summary>
 internal static class CommunitySiftTopicTranslator
@@ -54,4 +53,7 @@ internal static class CommunitySiftTopicTranslator
 			_ => null, 
 		};
 	}
+}
+
+
 }

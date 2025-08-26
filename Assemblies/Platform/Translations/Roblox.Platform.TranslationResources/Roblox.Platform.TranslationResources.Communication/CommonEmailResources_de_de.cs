@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Communication;
+﻿namespace Roblox.Platform.TranslationResources.Communication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CommonEmailResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -25,4 +25,7 @@ internal class CommonEmailResources_de_de : CommonEmailResources_en_us, ICommonE
 	{
 		return "Diese Nachricht wurde von {environmentIdentifier} erstellt.";
 	}
+}
+
+
 }

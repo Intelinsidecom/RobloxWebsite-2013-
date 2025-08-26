@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -6,10 +6,9 @@ using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 using Roblox.Platform.Core;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountCountriesAuditEntryDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxAccountCountriesAudit;
@@ -121,4 +120,7 @@ internal class AccountCountriesAuditEntryDAL
 		};
 		return RobloxDatabase.RobloxAccountCountriesAudit.Lookup("AccountCountriesAuditEntries_GetAccountCountriesAuditEntryByPublicID", BuildDAL, queryParameters);
 	}
+}
+
+
 }

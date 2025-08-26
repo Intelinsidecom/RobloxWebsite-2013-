@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.ContentRatingspublic {
+    class ContentRatingType : IRobloxEntity<byte, ContentRatingTypeDAL>, ICacheableObject<byte>, ICacheableObject
 
-namespace Roblox.ContentRatings;
-
-public class ContentRatingType : IRobloxEntity<byte, ContentRatingTypeDAL>, ICacheableObject<byte>, ICacheableObject
 {
 	private static List<ContentRatingType> _ContentTypes;
 
@@ -140,4 +139,7 @@ public class ContentRatingType : IRobloxEntity<byte, ContentRatingTypeDAL>, ICac
 	{
 		yield break;
 	}
+}
+
+
 }

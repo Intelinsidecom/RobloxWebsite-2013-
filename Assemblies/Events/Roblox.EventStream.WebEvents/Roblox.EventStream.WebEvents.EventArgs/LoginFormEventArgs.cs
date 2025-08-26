@@ -1,6 +1,8 @@
-namespace Roblox.Platform.EventStream.WebEvents.EventArgs;
+ using Roblox.EventStream.WebEvents;
 
-public class LoginFormEventArgs : WebEventArgs
+namespace Roblox.EventStream.WebEvents.EventArgs {
+    public class LoginFormEventArgs : WebEventArgs
+
 {
 	/// <summary>
 	/// The email entered if any
@@ -22,3 +24,12 @@ public class LoginFormEventArgs : WebEventArgs
 	/// </summary>
 	public string Context { get; set; }
 }
+
+
+}
+
+
+
+
+
+

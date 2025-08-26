@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter.Client.Models.Common;
+﻿namespace Roblox.Platform.TextFilter.Client.Models.Commonpublic {
+    static class TextFilterServerType
 
-public static class TextFilterServerType
 {
 	public static readonly string WebChat = "web_chat";
 
@@ -11,4 +11,7 @@ public static class TextFilterServerType
 	public static readonly string WebPm = "web_pm";
 
 	public static readonly string WebUniverse = "web_universe";
+}
+
+
 }

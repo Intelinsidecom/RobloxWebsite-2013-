@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures;
+﻿namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IGrantedItemListEntityFactory
 
-public interface IGrantedItemListEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.PremiumFeatures.IGrantedItemListEntity" /> by its ID.
@@ -13,4 +13,7 @@ public interface IGrantedItemListEntityFactory
 	/// Creates an <see cref="T:Roblox.PremiumFeatures.IGrantedItemListEntity" />
 	/// </summary>
 	IGrantedItemListEntity Create(string name);
+}
+
+
 }

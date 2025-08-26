@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures.Models.Enums;
+﻿namespace Roblox.Platform.PremiumFeatures.Models.Enums {
+    /// <summary>
 
-/// <summary>
 /// Represents a type of currency.
 /// </summary>
 public enum CurrencyType : byte
@@ -229,4 +229,7 @@ public enum CurrencyType : byte
 	/// Vietnamese Dong
 	/// </summary>
 	VND
+}
+
+
 }

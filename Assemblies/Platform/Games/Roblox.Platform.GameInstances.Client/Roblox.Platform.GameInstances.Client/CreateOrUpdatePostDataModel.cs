@@ -1,8 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class CreateOrUpdatePostDataModel
 
-namespace Roblox.GameInstances.Client;
-
-public class CreateOrUpdatePostDataModel
 {
 	public IEnumerable<RawGameSessionModel> GameSessions { get; set; }
+}
+
+
 }

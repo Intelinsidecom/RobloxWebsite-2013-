@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Marketing.Core.Entitiesinternal {
+    class TakeoverContentItem : IRobloxEntity<int, TakeoverContentItemDAL>, ICacheableObject<int>, ICacheableObject
 
-namespace Roblox.Platform.Marketing.Core.Entities;
-
-internal class TakeoverContentItem : IRobloxEntity<int, TakeoverContentItemDAL>, ICacheableObject<int>, ICacheableObject
 {
 	private TakeoverContentItemDAL _EntityDAL;
 
@@ -155,4 +154,7 @@ internal class TakeoverContentItem : IRobloxEntity<int, TakeoverContentItemDAL>,
 		yield return new StateToken($"TakeoverID:{TakeoverID}");
 		yield return new StateToken($"ContentItemTypeID:{ContentItemTypeID}_ContentItemTargetID:{ContentItemTargetID}");
 	}
+}
+
+
 }

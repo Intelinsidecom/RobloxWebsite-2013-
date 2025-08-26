@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface IResetPasswordResources : ITranslationResources
 
-public interface IResetPasswordResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -469,4 +469,7 @@ public interface IResetPasswordResources : ITranslationResources
 	/// English String: "Enter Code ({codeLength}-digit)"
 	/// </summary>
 	string PlaceholderEnterCode(string codeLength);
+}
+
+
 }

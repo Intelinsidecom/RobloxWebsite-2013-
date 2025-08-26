@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ResetPasswordResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "キャンセル";
+	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.EmailToResetPassword"
 	/// English String: "Use email to reset password"
 	/// </summary>
-	public override string ActionEmailToResetPassword => "メールアドレスを使用してパスワードをリセットする";
+	public override string ActionEmailToResetPassword => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ä½¿ç”¨ã—ã¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.EmailToRetriveUsername"
 	/// English String: "Use email to retrieve username"
 	/// </summary>
-	public override string ActionEmailToRetriveUsername => "メールアドレスを使用してユーザーネームを再確認する";
+	public override string ActionEmailToRetriveUsername => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ä½¿ç”¨ã—ã¦ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å†ç¢ºèªã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.Ok"
@@ -35,107 +35,107 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// Key: "Action.PhoneToResetPassword"
 	/// English String: "Use phone number to reset password"
 	/// </summary>
-	public override string ActionPhoneToResetPassword => "電話番号を使用してパスワードをリセットする";
+	public override string ActionPhoneToResetPassword => "é›»è©±ç•ªå·ã‚’ä½¿ç”¨ã—ã¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.PhoneToRetriveUsername"
 	/// English String: "Use phone number to retrieve username"
 	/// </summary>
-	public override string ActionPhoneToRetriveUsername => "電話番号を使用してユーザーネームを再確認する";
+	public override string ActionPhoneToRetriveUsername => "é›»è©±ç•ªå·ã‚’ä½¿ç”¨ã—ã¦ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å†ç¢ºèªã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionVerify => "確認";
+	public override string ActionVerify => "ç¢ºèª";
 
 	/// <summary>
 	/// Key: "Description.EmailToResetPassword"
 	/// English String: "Enter your email to reset your password."
 	/// </summary>
-	public override string DescriptionEmailToResetPassword => "パスワードをリセットするにはメールアドレスを入力してください。";
+	public override string DescriptionEmailToResetPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹ã«ã¯ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.EmailToRetriveUsername"
 	/// English String: "Enter your email to retrieve your username."
 	/// </summary>
-	public override string DescriptionEmailToRetriveUsername => "ユーザーネームを再確認するにはメールアドレスを入力してください。";
+	public override string DescriptionEmailToRetriveUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å†ç¢ºèªã™ã‚‹ã«ã¯ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.PasswordChangeEmail.Subject"
 	/// email subject to change password
 	/// English String: "Roblox Password Reset"
 	/// </summary>
-	public override string DescriptionPasswordChangeEmailSubject => "Robloxパスワードリセット";
+	public override string DescriptionPasswordChangeEmailSubject => "Robloxãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ";
 
 	/// <summary>
 	/// Key: "Description.PasswordResetEmail.Subject"
 	/// Subject for password reset email
 	/// English String: "Roblox Account Password Reset"
 	/// </summary>
-	public override string DescriptionPasswordResetEmailSubject => "Robloxアカウントのパスワードリセット";
+	public override string DescriptionPasswordResetEmailSubject => "Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ";
 
 	/// <summary>
 	/// Key: "Description.PhoneToResetPassword"
 	/// English String: "Enter your phone number to reset your password."
 	/// </summary>
-	public override string DescriptionPhoneToResetPassword => "パスワードをリセットするには電話番号を入力してください。";
+	public override string DescriptionPhoneToResetPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹ã«ã¯é›»è©±ç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.PhoneToRetriveUsername"
 	/// English String: "Enter your phone number to retrieve your username."
 	/// </summary>
-	public override string DescriptionPhoneToRetriveUsername => "ユーザーネームを再確認するには電話番号を入力してください。";
+	public override string DescriptionPhoneToRetriveUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å†ç¢ºèªã™ã‚‹ã«ã¯é›»è©±ç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.VerifyCode"
 	/// verify code heading
 	/// English String: "Verify Code"
 	/// </summary>
-	public override string HeadingVerifyCode => "認証コード";
+	public override string HeadingVerifyCode => "èªè¨¼ã‚³ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Heading.VerifyPhone"
 	/// English String: "Verify Phone"
 	/// </summary>
-	public override string HeadingVerifyPhone => "電話を確認";
+	public override string HeadingVerifyPhone => "é›»è©±ã‚’ç¢ºèª";
 
 	/// <summary>
 	/// Key: "HeadingForgetPasswordOrUsername"
 	/// English String: "Forgot Password or Username"
 	/// </summary>
-	public override string HeadingForgetPasswordOrUsername => "パスワード、またはユーザネームを忘れた場合";
+	public override string HeadingForgetPasswordOrUsername => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€ã¾ãŸã¯ãƒ¦ãƒ¼ã‚¶ãƒãƒ¼ãƒ ã‚’å¿˜ã‚ŒãŸå ´åˆ";
 
 	/// <summary>
 	/// Key: "Label.ActionButtonYes"
 	/// button label
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelActionButtonYes => "はい";
+	public override string LabelActionButtonYes => "ã¯ã„";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyPassword"
 	/// English String: "Forgot My Password"
 	/// </summary>
-	public override string LabelForgetMyPassword => "パスワードを忘れた";
+	public override string LabelForgetMyPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¿˜ã‚ŒãŸ";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyUsername"
 	/// English String: "Forgot My Username"
 	/// </summary>
-	public override string LabelForgetMyUsername => "ユーザーネームを忘れた場合";
+	public override string LabelForgetMyUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¿˜ã‚ŒãŸå ´åˆ";
 
 	/// <summary>
 	/// Key: "Label.InvalidEmail"
 	/// English String: "Invalid email"
 	/// </summary>
-	public override string LabelInvalidEmail => "無効なメールアドレス";
+	public override string LabelInvalidEmail => "ç„¡åŠ¹ãªãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
 
 	/// <summary>
 	/// Key: "Label.InvalidPhoneNumber"
 	/// English String: "Invalid phone number"
 	/// </summary>
-	public override string LabelInvalidPhoneNumber => "無効な電話番号";
+	public override string LabelInvalidPhoneNumber => "ç„¡åŠ¹ãªé›»è©±ç•ªå·";
 
 	/// <summary>
 	/// Key: "Label.NeutralButtonOk"
@@ -149,173 +149,173 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// label
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "パスワード";
+	public override string LabelPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Label.ResendCode"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string LabelResendCode => "コードを再送信";
+	public override string LabelResendCode => "ã‚³ãƒ¼ãƒ‰ã‚’å†é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Label.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string LabelSubmit => "送信";
+	public override string LabelSubmit => "é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanFindMeByPhone"
 	/// English String: "This setting controls who can find you using the phone number you provided."
 	/// </summary>
-	public override string LabelToolTipWhoCanFindMeByPhone => "この設定でお使いの電話番号からあなたを見つけられる人を指定できます。";
+	public override string LabelToolTipWhoCanFindMeByPhone => "ã“ã®è¨­å®šã§ãŠä½¿ã„ã®é›»è©±ç•ªå·ã‹ã‚‰ã‚ãªãŸã‚’è¦‹ã¤ã‘ã‚‰ã‚Œã‚‹äººã‚’æŒ‡å®šã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "ユーザーネーム";
+	public override string LabelUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Label.WhoCanFindMeByPhone"
 	/// English String: "Who can find me by my phone number?"
 	/// </summary>
-	public override string LabelWhoCanFindMeByPhone => "電話番号からの検索を許可する対象。";
+	public override string LabelWhoCanFindMeByPhone => "é›»è©±ç•ªå·ã‹ã‚‰ã®æ¤œç´¢ã‚’è¨±å¯ã™ã‚‹å¯¾è±¡ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error occurred, try again later."
 	/// </summary>
-	public override string MessageDefaultError => "エラーが発生しました。しばらくしてからやり直してください。";
+	public override string MessageDefaultError => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.EmailForUsernameSuccessBody"
 	/// success message
 	/// English String: "An email with your username(s) has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailForUsernameSuccessBody => "メールアドレスがすでにアカウントに保存されている場合は、ユーザーネームが記載されたメールを送信しています。";
+	public override string MessageEmailForUsernameSuccessBody => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒã™ã§ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒè¨˜è¼‰ã•ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessBody"
 	/// English String: "An email with instructions has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailSuccessBody => "メールアドレスがすでにアカウントに保存されている場合は、必要な手順が記載されたメールを送信しています。";
+	public override string MessageEmailSuccessBody => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒã™ã§ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€å¿…è¦ãªæ‰‹é †ãŒè¨˜è¼‰ã•ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessTitle"
 	/// English String: "Email Sent"
 	/// </summary>
-	public override string MessageEmailSuccessTitle => "メールが送信されました";
+	public override string MessageEmailSuccessTitle => "ãƒ¡ãƒ¼ãƒ«ãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Message.EnterCode"
 	/// English String: "A code was sent to your phone if it was previously verified on your account. Please enter it below"
 	/// </summary>
-	public override string MessageEnterCode => "過去にアカウントで認証を行ったことがある場合は、コードを携帯電話に送信しています。送信されたコードを入力してください";
+	public override string MessageEnterCode => "éŽåŽ»ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§èªè¨¼ã‚’è¡Œã£ãŸã“ã¨ãŒã‚ã‚‹å ´åˆã¯ã€ã‚³ãƒ¼ãƒ‰ã‚’æºå¸¯é›»è©±ã«é€ä¿¡ã—ã¦ã„ã¾ã™ã€‚é€ä¿¡ã•ã‚ŒãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Message.EnterCodeSentToEmail"
 	/// Enter the code we just sent to your email.
 	/// English String: "Enter the code we just sent to your email."
 	/// </summary>
-	public override string MessageEnterCodeSentToEmail => "メールに記載されたコードを入力してください。";
+	public override string MessageEnterCodeSentToEmail => "ãƒ¡ãƒ¼ãƒ«ã«è¨˜è¼‰ã•ã‚ŒãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessBody"
 	/// English String: "An SMS with your username(s) has been sent to you if the phone number was previously verified on your account."
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessBody => "過去にアカウントで電話番号の認証を行ったことがある場合は、ユーザーネームが記載されたSMSメッセージを送信しています。";
+	public override string MessagePhoneForUsernameSuccessBody => "éŽåŽ»ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§é›»è©±ç•ªå·ã®èªè¨¼ã‚’è¡Œã£ãŸã“ã¨ãŒã‚ã‚‹å ´åˆã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒè¨˜è¼‰ã•ã‚ŒãŸSMSãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã—ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessTitle"
 	/// English String: "SMS Sent"
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessTitle => "SMSが送信されました";
+	public override string MessagePhoneForUsernameSuccessTitle => "SMSãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "MessageAccountDoesNotHaveAnEmail"
 	/// English String: "There is no email linked to this account"
 	/// </summary>
-	public override string MessageAccountDoesNotHaveAnEmail => "このアカウントにリンク済みのメールアドレスはありません";
+	public override string MessageAccountDoesNotHaveAnEmail => "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ãƒªãƒ³ã‚¯æ¸ˆã¿ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã‚ã‚Šã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByEmail"
 	/// No account found. Please use a different email.
 	/// English String: "No account found. Please use a different email."
 	/// </summary>
-	public override string MessageAccountNotFoundByEmail => "アカウントが見つかりませんでした。別のメールアドレスをご利用ください。";
+	public override string MessageAccountNotFoundByEmail => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚åˆ¥ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã”åˆ©ç”¨ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByPhone"
 	/// No account found. Please use a different phone number.
 	/// English String: "No account found. Please use a different phone number."
 	/// </summary>
-	public override string MessageAccountNotFoundByPhone => "アカウントが見つかりませんでした。別の電話番号をご利用ください。";
+	public override string MessageAccountNotFoundByPhone => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚åˆ¥ã®é›»è©±ç•ªå·ã‚’ã”åˆ©ç”¨ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageAccountRecoveryUnknownError"
 	/// English String: "System error. Account could not be restored to this state."
 	/// </summary>
-	public override string MessageAccountRecoveryUnknownError => "システムエラーが発生しました。アカウントをこの状態に復旧できませんでした。";
+	public override string MessageAccountRecoveryUnknownError => "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ã“ã®çŠ¶æ…‹ã«å¾©æ—§ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "MessageCaptchaError"
 	/// English String: "We need to make sure you're not a robot!"
 	/// </summary>
-	public override string MessageCaptchaError => "ロボット入力ではないことを確認する必要があります！";
+	public override string MessageCaptchaError => "ãƒ­ãƒœãƒƒãƒˆå…¥åŠ›ã§ã¯ãªã„ã“ã¨ã‚’ç¢ºèªã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ï¼";
 
 	/// <summary>
 	/// Key: "MessageCaptchaFailError"
 	/// English String: "The words you typed didn't match the picture. Please try again."
 	/// </summary>
-	public override string MessageCaptchaFailError => "画像の文字と入力した文字が一致していません。もう一度お試しください。";
+	public override string MessageCaptchaFailError => "ç”»åƒã®æ–‡å­—ã¨å…¥åŠ›ã—ãŸæ–‡å­—ãŒä¸€è‡´ã—ã¦ã„ã¾ã›ã‚“ã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageCredentialsError"
 	/// English String: "Your username or password is incorrect. Please check them and try again."
 	/// </summary>
-	public override string MessageCredentialsError => "ユーザーネーム、またはパスワードが間違っています。もう一度チェックしてからやり直してください。";
+	public override string MessageCredentialsError => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã€ã¾ãŸã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ã‚‚ã†ä¸€åº¦ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageFloodCheckedError"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string MessageFloodCheckedError => "試行回数が多すぎます。しばらくしてからやり直してください。";
+	public override string MessageFloodCheckedError => "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordFeatureDisabled"
 	/// English String: "Feature temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageForgotPasswordFeatureDisabled => "機能が一時的に無効になっています。しばらくしてからやり直してください。";
+	public override string MessageForgotPasswordFeatureDisabled => "æ©Ÿèƒ½ãŒä¸€æ™‚çš„ã«ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordSuccess"
 	/// English String: "Check your email for login instructions"
 	/// </summary>
-	public override string MessageForgotPasswordSuccess => "ログイン方法についてはメールをごらんください";
+	public override string MessageForgotPasswordSuccess => "ãƒ­ã‚°ã‚¤ãƒ³æ–¹æ³•ã«ã¤ã„ã¦ã¯ãƒ¡ãƒ¼ãƒ«ã‚’ã”ã‚‰ã‚“ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "MessageInvalidAccountStatus"
 	/// English String: "Account status prevents resetting password"
 	/// </summary>
-	public override string MessageInvalidAccountStatus => "アカウントステータスによりパスワードのリセットはできません";
+	public override string MessageInvalidAccountStatus => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã«ã‚ˆã‚Šãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆã¯ã§ãã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "MessageInvalidPassword"
 	/// English String: "Invalid password"
 	/// </summary>
-	public override string MessageInvalidPassword => "無効なパスワード";
+	public override string MessageInvalidPassword => "ç„¡åŠ¹ãªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "MessageInvalidTicket"
 	/// English String: "We couldn't load this security ticket."
 	/// </summary>
-	public override string MessageInvalidTicket => "このセキュリティチケットを読み込めませんでした。";
+	public override string MessageInvalidTicket => "ã“ã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ãƒã‚±ãƒƒãƒˆã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "MessageInvalidUserNameOrEmail"
 	/// English String: "Invalid username, or no email exists"
 	/// </summary>
-	public override string MessageInvalidUserNameOrEmail => "ユーザーネームが無効であるか、メールアドレスが存在しません";
+	public override string MessageInvalidUserNameOrEmail => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒç„¡åŠ¹ã§ã‚ã‚‹ã‹ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå­˜åœ¨ã—ã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "MessageMobileResetPasswordSuccess"
@@ -327,92 +327,92 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// Key: "MessageNoAccountsLinkedToEmail"
 	/// English String: "There are no accounts linked to this email address"
 	/// </summary>
-	public override string MessageNoAccountsLinkedToEmail => "このメールアドレスにリンク済みのアカウントはありません";
+	public override string MessageNoAccountsLinkedToEmail => "ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«ãƒªãƒ³ã‚¯æ¸ˆã¿ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ã‚ã‚Šã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "MessageOldUsernameError"
 	/// English String: "It looks like you are trying to log in with a username that has changed. Please log in with your new username."
 	/// </summary>
-	public override string MessageOldUsernameError => "古いユーザーネームが入力されたようです。新しいユーザーネームでログインしてください。";
+	public override string MessageOldUsernameError => "å¤ã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒå…¥åŠ›ã•ã‚ŒãŸã‚ˆã†ã§ã™ã€‚æ–°ã—ã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessagePasswordCannotBeUsed"
 	/// English String: "Sorry, that password cannot be used."
 	/// </summary>
-	public override string MessagePasswordCannotBeUsed => "申し訳ありませんが、そのパスワードは使用できません。";
+	public override string MessagePasswordCannotBeUsed => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ãã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ä½¿ç”¨ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "MessagePasswordsDoNotMatch"
 	/// English String: "Passwords do not match"
 	/// </summary>
-	public override string MessagePasswordsDoNotMatch => "パスワードが一致しません";
+	public override string MessagePasswordsDoNotMatch => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒä¸€è‡´ã—ã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "MessageSamlUnauthenticated"
 	/// English String: "You must log in to Roblox to finish authenticating."
 	/// </summary>
-	public override string MessageSamlUnauthenticated => "認証を完了するにはRobloxにログインする必要があります。";
+	public override string MessageSamlUnauthenticated => "èªè¨¼ã‚’å®Œäº†ã™ã‚‹ã«ã¯Robloxã«ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "MessageUnknownError"
 	/// English String: "Unknown Error"
 	/// </summary>
-	public override string MessageUnknownError => "不明なエラーが発生しました";
+	public override string MessageUnknownError => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "MessageUnknownSystemError"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string MessageUnknownSystemError => "システムエラーが発生しました。ログイン画面にお戻りください。";
+	public override string MessageUnknownSystemError => "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«ãŠæˆ»ã‚Šãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Placeholder.Email"
 	/// English String: "Email"
 	/// </summary>
-	public override string PlaceholderEmail => "メールアドレス";
+	public override string PlaceholderEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
 
 	/// <summary>
 	/// Key: "Placeholder.PhoneNumber"
 	/// English String: "Phone Number"
 	/// </summary>
-	public override string PlaceholderPhoneNumber => "電話番号";
+	public override string PlaceholderPhoneNumber => "é›»è©±ç•ªå·";
 
 	/// <summary>
 	/// Key: "Response.PasswordResetSuccess"
 	/// Password reset success! Please login again.
 	/// English String: "Password reset success! Please login again."
 	/// </summary>
-	public override string ResponsePasswordResetSuccess => "パスワードのリセットに成功しました！もう一度ログインしてください。";
+	public override string ResponsePasswordResetSuccess => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆã«æˆåŠŸã—ã¾ã—ãŸï¼ã‚‚ã†ä¸€åº¦ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string ResponseSuccess => "成功";
+	public override string ResponseSuccess => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordFlooded"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseUpdatePasswordFlooded => "試行回数が多すぎます。しばらくしてからやり直してください。";
+	public override string ResponseUpdatePasswordFlooded => "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordIncorrect"
 	/// English String: "Your current password is incorrect, the password was not changed."
 	/// </summary>
-	public override string ResponseUpdatePasswordIncorrect => "現在のパスワードが間違っています。パスワードは変更されませんでした。";
+	public override string ResponseUpdatePasswordIncorrect => "ç¾åœ¨ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordInputMissing"
 	/// English String: "Must include new password and confirm password"
 	/// </summary>
-	public override string ResponseUpdatePasswordInputMissing => "新しいパスワードと確認パスワードを含む必要があります";
+	public override string ResponseUpdatePasswordInputMissing => "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¨ç¢ºèªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å«ã‚€å¿…è¦ãŒã‚ã‚Šã¾ã™";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordMismatch"
 	/// English String: "Your new password and confirm password must match"
 	/// </summary>
-	public override string ResponseUpdatePasswordMismatch => "新しいパスワードと確認パスワードが一致している必要があります";
+	public override string ResponseUpdatePasswordMismatch => "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¨ç¢ºèªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒä¸€è‡´ã—ã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 
 	public ResetPasswordResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -421,17 +421,17 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionEmailToResetPassword()
 	{
-		return "メールアドレスを使用してパスワードをリセットする";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ä½¿ç”¨ã—ã¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionEmailToRetriveUsername()
 	{
-		return "メールアドレスを使用してユーザーネームを再確認する";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ä½¿ç”¨ã—ã¦ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å†ç¢ºèªã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionOk()
@@ -441,17 +441,17 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForActionPhoneToResetPassword()
 	{
-		return "電話番号を使用してパスワードをリセットする";
+		return "é›»è©±ç•ªå·ã‚’ä½¿ç”¨ã—ã¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionPhoneToRetriveUsername()
 	{
-		return "電話番号を使用してユーザーネームを再確認する";
+		return "é›»è©±ç•ªå·ã‚’ä½¿ç”¨ã—ã¦ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å†ç¢ºèªã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionVerify()
 	{
-		return "確認";
+		return "ç¢ºèª";
 	}
 
 	/// <summary>
@@ -461,22 +461,22 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionChangePasswordEmailHtmlBody1(string userName, string lineBreak, string actionLink)
 	{
-		return $"お使いのRobloxアカウント（{userName}）でパスワード変更が行われています。変更するつもりがなかったり、他の誰かが間違って変更したと思われる場合、以下のリンクをクリックして操作を取り消してください:{lineBreak} {actionLink} {lineBreak}{lineBreak}新しいRobloxのパスワードに問題がなければ、何もする必要はありません。新しいパスワードはすでに設定されています。何か質問があれば、Robloxのヘルプページ(https://www.roblox.com/help)を見てください。";
+		return $"ãŠä½¿ã„ã®Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆï¼ˆ{userName}ï¼‰ã§ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å¤‰æ›´ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã™ã€‚å¤‰æ›´ã™ã‚‹ã¤ã‚‚ã‚ŠãŒãªã‹ã£ãŸã‚Šã€ä»–ã®èª°ã‹ãŒé–“é•ã£ã¦å¤‰æ›´ã—ãŸã¨æ€ã‚ã‚Œã‚‹å ´åˆã€ä»¥ä¸‹ã®ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦æ“ä½œã‚’å–ã‚Šæ¶ˆã—ã¦ãã ã•ã„:{lineBreak} {actionLink} {lineBreak}{lineBreak}æ–°ã—ã„Robloxã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€ä½•ã‚‚ã™ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ã™ã§ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ä½•ã‹è³ªå•ãŒã‚ã‚Œã°ã€Robloxã®ãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸(https://www.roblox.com/help)ã‚’è¦‹ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionChangePasswordEmailHtmlBody1()
 	{
-		return "お使いのRobloxアカウント（{userName}）でパスワード変更が行われています。変更するつもりがなかったり、他の誰かが間違って変更したと思われる場合、以下のリンクをクリックして操作を取り消してください:{lineBreak} {actionLink} {lineBreak}{lineBreak}新しいRobloxのパスワードに問題がなければ、何もする必要はありません。新しいパスワードはすでに設定されています。何か質問があれば、Robloxのヘルプページ(https://www.roblox.com/help)を見てください。";
+		return "ãŠä½¿ã„ã®Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆï¼ˆ{userName}ï¼‰ã§ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å¤‰æ›´ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã™ã€‚å¤‰æ›´ã™ã‚‹ã¤ã‚‚ã‚ŠãŒãªã‹ã£ãŸã‚Šã€ä»–ã®èª°ã‹ãŒé–“é•ã£ã¦å¤‰æ›´ã—ãŸã¨æ€ã‚ã‚Œã‚‹å ´åˆã€ä»¥ä¸‹ã®ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦æ“ä½œã‚’å–ã‚Šæ¶ˆã—ã¦ãã ã•ã„:{lineBreak} {actionLink} {lineBreak}{lineBreak}æ–°ã—ã„Robloxã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€ä½•ã‚‚ã™ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ã™ã§ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ä½•ã‹è³ªå•ãŒã‚ã‚Œã°ã€Robloxã®ãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸(https://www.roblox.com/help)ã‚’è¦‹ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToResetPassword()
 	{
-		return "パスワードをリセットするにはメールアドレスを入力してください。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹ã«ã¯ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToRetriveUsername()
 	{
-		return "ユーザーネームを再確認するにはメールアドレスを入力してください。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å†ç¢ºèªã™ã‚‹ã«ã¯ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -486,12 +486,12 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailBodyPlainText(string userName, string urlWithTicket)
 	{
-		return $"お使いのRobloxアカウント（{userName}）でパスワード変更が行われています。変更するつもりがなかったり、他の誰かが間違って変更したと思われる場合、以下のリンクをクリックして操作を取り消してください:\n{urlWithTicket}\n\n新しいRobloxのパスワードに問題がなければ、何もする必要はありません。新しいパスワードはすでに設定されています。何か質問があれば、Robloxのヘルプページ(https://www.roblox.com/help)を見てください。";
+		return $"ãŠä½¿ã„ã®Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆï¼ˆ{userName}ï¼‰ã§ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å¤‰æ›´ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã™ã€‚å¤‰æ›´ã™ã‚‹ã¤ã‚‚ã‚ŠãŒãªã‹ã£ãŸã‚Šã€ä»–ã®èª°ã‹ãŒé–“é•ã£ã¦å¤‰æ›´ã—ãŸã¨æ€ã‚ã‚Œã‚‹å ´åˆã€ä»¥ä¸‹ã®ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦æ“ä½œã‚’å–ã‚Šæ¶ˆã—ã¦ãã ã•ã„:\n{urlWithTicket}\n\næ–°ã—ã„Robloxã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€ä½•ã‚‚ã™ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ã™ã§ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ä½•ã‹è³ªå•ãŒã‚ã‚Œã°ã€Robloxã®ãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸(https://www.roblox.com/help)ã‚’è¦‹ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailBodyPlainText()
 	{
-		return "お使いのRobloxアカウント（{userName}）でパスワード変更が行われています。変更するつもりがなかったり、他の誰かが間違って変更したと思われる場合、以下のリンクをクリックして操作を取り消してください:\n{urlWithTicket}\n\n新しいRobloxのパスワードに問題がなければ、何もする必要はありません。新しいパスワードはすでに設定されています。何か質問があれば、Robloxのヘルプページ(https://www.roblox.com/help)を見てください。";
+		return "ãŠä½¿ã„ã®Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆï¼ˆ{userName}ï¼‰ã§ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å¤‰æ›´ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã™ã€‚å¤‰æ›´ã™ã‚‹ã¤ã‚‚ã‚ŠãŒãªã‹ã£ãŸã‚Šã€ä»–ã®èª°ã‹ãŒé–“é•ã£ã¦å¤‰æ›´ã—ãŸã¨æ€ã‚ã‚Œã‚‹å ´åˆã€ä»¥ä¸‹ã®ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦æ“ä½œã‚’å–ã‚Šæ¶ˆã—ã¦ãã ã•ã„:\n{urlWithTicket}\n\næ–°ã—ã„Robloxã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€ä½•ã‚‚ã™ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ã™ã§ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ä½•ã‹è³ªå•ãŒã‚ã‚Œã°ã€Robloxã®ãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸(https://www.roblox.com/help)ã‚’è¦‹ã¦ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -501,17 +501,17 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailFrom(string fromEmailAddress)
 	{
-		return $"\"Robloxパスワードリセット\"{fromEmailAddress}";
+		return $"\"Robloxãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ\"{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailFrom()
 	{
-		return "\"Robloxパスワードリセット\"{fromEmailAddress}";
+		return "\"Robloxãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ\"{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailSubject()
 	{
-		return "Robloxパスワードリセット";
+		return "Robloxãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ";
 	}
 
 	/// <summary>
@@ -521,12 +521,12 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Robloxパスワードリセット{escapeLiteralEnd}{fromEmailAddress}";
+		return $"{escapeLiteralStart}Robloxãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailFrom()
 	{
-		return "{escapeLiteralStart}Robloxパスワードリセット{escapeLiteralEnd}{fromEmailAddress}";
+		return "{escapeLiteralStart}Robloxãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -536,12 +536,12 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailHtmlBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string aTagWithStartHref, string resetPasswordUrl, string hrefEnd, string buttonStart, string buttonEnd, string aTagEnd)
 	{
-		return $"Roblox アカウントに対してパスワードリセットのリクエストが届きました：{emailOrUsername}{lineBreak}{lineBreak}このリクエストを送信した場合は、下のボタンをクリックするか、ウェブブラウザに貼り付けて続行してください。{lineBreak}このリンクの期限は{passwordResetTicketHours}時間{passwordResetTicketMinutes}分です。 パスワードをリセットしたくない場合は、この通知を無視してください。{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}パスワードリセット{buttonEnd}{aTagEnd}";
+		return $"Roblox ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«å¯¾ã—ã¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸï¼š{emailOrUsername}{lineBreak}{lineBreak}ã“ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’é€ä¿¡ã—ãŸå ´åˆã¯ã€ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã‹ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã«è²¼ã‚Šä»˜ã‘ã¦ç¶šè¡Œã—ã¦ãã ã•ã„ã€‚{lineBreak}ã“ã®ãƒªãƒ³ã‚¯ã®æœŸé™ã¯{passwordResetTicketHours}æ™‚é–“{passwordResetTicketMinutes}åˆ†ã§ã™ã€‚ ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã—ãŸããªã„å ´åˆã¯ã€ã“ã®é€šçŸ¥ã‚’ç„¡è¦–ã—ã¦ãã ã•ã„ã€‚{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ{buttonEnd}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailHtmlBody()
 	{
-		return "Roblox アカウントに対してパスワードリセットのリクエストが届きました：{emailOrUsername}{lineBreak}{lineBreak}このリクエストを送信した場合は、下のボタンをクリックするか、ウェブブラウザに貼り付けて続行してください。{lineBreak}このリンクの期限は{passwordResetTicketHours}時間{passwordResetTicketMinutes}分です。 パスワードをリセットしたくない場合は、この通知を無視してください。{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}パスワードリセット{buttonEnd}{aTagEnd}";
+		return "Roblox ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«å¯¾ã—ã¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸï¼š{emailOrUsername}{lineBreak}{lineBreak}ã“ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’é€ä¿¡ã—ãŸå ´åˆã¯ã€ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã‹ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã«è²¼ã‚Šä»˜ã‘ã¦ç¶šè¡Œã—ã¦ãã ã•ã„ã€‚{lineBreak}ã“ã®ãƒªãƒ³ã‚¯ã®æœŸé™ã¯{passwordResetTicketHours}æ™‚é–“{passwordResetTicketMinutes}åˆ†ã§ã™ã€‚ ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã—ãŸããªã„å ´åˆã¯ã€ã“ã®é€šçŸ¥ã‚’ç„¡è¦–ã—ã¦ãã ã•ã„ã€‚{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ{buttonEnd}{aTagEnd}";
 	}
 
 	/// <summary>
@@ -551,67 +551,67 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailPlainBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string resetPasswordUrl)
 	{
-		return $"Roblox アカウントに対してパスワードリセットのリクエストが届きました：{emailOrUsername}{lineBreak}{lineBreak}このリクエストを送信した場合は、下のリンクをクリックするか、ウェブブラウザに貼り付けて続行してください。{lineBreak}このリンクの期限は{passwordResetTicketHours}時間{passwordResetTicketMinutes}分です。 パスワードをリセットしたくない場合は、この通知を無視してください。{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return $"Roblox ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«å¯¾ã—ã¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸï¼š{emailOrUsername}{lineBreak}{lineBreak}ã“ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’é€ä¿¡ã—ãŸå ´åˆã¯ã€ä¸‹ã®ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã‹ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã«è²¼ã‚Šä»˜ã‘ã¦ç¶šè¡Œã—ã¦ãã ã•ã„ã€‚{lineBreak}ã“ã®ãƒªãƒ³ã‚¯ã®æœŸé™ã¯{passwordResetTicketHours}æ™‚é–“{passwordResetTicketMinutes}åˆ†ã§ã™ã€‚ ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã—ãŸããªã„å ´åˆã¯ã€ã“ã®é€šçŸ¥ã‚’ç„¡è¦–ã—ã¦ãã ã•ã„ã€‚{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailPlainBody()
 	{
-		return "Roblox アカウントに対してパスワードリセットのリクエストが届きました：{emailOrUsername}{lineBreak}{lineBreak}このリクエストを送信した場合は、下のリンクをクリックするか、ウェブブラウザに貼り付けて続行してください。{lineBreak}このリンクの期限は{passwordResetTicketHours}時間{passwordResetTicketMinutes}分です。 パスワードをリセットしたくない場合は、この通知を無視してください。{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return "Roblox ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«å¯¾ã—ã¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸï¼š{emailOrUsername}{lineBreak}{lineBreak}ã“ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’é€ä¿¡ã—ãŸå ´åˆã¯ã€ä¸‹ã®ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã‹ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã«è²¼ã‚Šä»˜ã‘ã¦ç¶šè¡Œã—ã¦ãã ã•ã„ã€‚{lineBreak}ã“ã®ãƒªãƒ³ã‚¯ã®æœŸé™ã¯{passwordResetTicketHours}æ™‚é–“{passwordResetTicketMinutes}åˆ†ã§ã™ã€‚ ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã—ãŸããªã„å ´åˆã¯ã€ã“ã®é€šçŸ¥ã‚’ç„¡è¦–ã—ã¦ãã ã•ã„ã€‚{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailSubject()
 	{
-		return "Robloxアカウントのパスワードリセット";
+		return "Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆ";
 	}
 
 	protected override string _GetTemplateForDescriptionPhoneToResetPassword()
 	{
-		return "パスワードをリセットするには電話番号を入力してください。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹ã«ã¯é›»è©±ç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionPhoneToRetriveUsername()
 	{
-		return "ユーザーネームを再確認するには電話番号を入力してください。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å†ç¢ºèªã™ã‚‹ã«ã¯é›»è©±ç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingVerifyCode()
 	{
-		return "認証コード";
+		return "èªè¨¼ã‚³ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForHeadingVerifyPhone()
 	{
-		return "電話を確認";
+		return "é›»è©±ã‚’ç¢ºèª";
 	}
 
 	protected override string _GetTemplateForHeadingForgetPasswordOrUsername()
 	{
-		return "パスワード、またはユーザネームを忘れた場合";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€ã¾ãŸã¯ãƒ¦ãƒ¼ã‚¶ãƒãƒ¼ãƒ ã‚’å¿˜ã‚ŒãŸå ´åˆ";
 	}
 
 	protected override string _GetTemplateForLabelActionButtonYes()
 	{
-		return "はい";
+		return "ã¯ã„";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyPassword()
 	{
-		return "パスワードを忘れた";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¿˜ã‚ŒãŸ";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyUsername()
 	{
-		return "ユーザーネームを忘れた場合";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¿˜ã‚ŒãŸå ´åˆ";
 	}
 
 	protected override string _GetTemplateForLabelInvalidEmail()
 	{
-		return "無効なメールアドレス";
+		return "ç„¡åŠ¹ãªãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPhoneNumber()
 	{
-		return "無効な電話番号";
+		return "ç„¡åŠ¹ãªé›»è©±ç•ªå·";
 	}
 
 	protected override string _GetTemplateForLabelNeutralButtonOk()
@@ -621,32 +621,32 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "パスワード";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelResendCode()
 	{
-		return "コードを再送信";
+		return "ã‚³ãƒ¼ãƒ‰ã‚’å†é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForLabelSubmit()
 	{
-		return "送信";
+		return "é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanFindMeByPhone()
 	{
-		return "この設定でお使いの電話番号からあなたを見つけられる人を指定できます。";
+		return "ã“ã®è¨­å®šã§ãŠä½¿ã„ã®é›»è©±ç•ªå·ã‹ã‚‰ã‚ãªãŸã‚’è¦‹ã¤ã‘ã‚‰ã‚Œã‚‹äººã‚’æŒ‡å®šã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ユーザーネーム";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanFindMeByPhone()
 	{
-		return "電話番号からの検索を許可する対象。";
+		return "é›»è©±ç•ªå·ã‹ã‚‰ã®æ¤œç´¢ã‚’è¨±å¯ã™ã‚‹å¯¾è±¡ã€‚";
 	}
 
 	/// <summary>
@@ -655,122 +655,122 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string MessageCantSendEmailWarning(string styleStart, string styleEnd)
 	{
-		return $"アカウント作成時に{styleStart}本物のメールアドレス{styleEnd}を入力していないと、こちらからメールを送ることができません。";
+		return $"ã‚¢ã‚«ã‚¦ãƒ³ãƒˆä½œæˆæ™‚ã«{styleStart}æœ¬ç‰©ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹{styleEnd}ã‚’å…¥åŠ›ã—ã¦ã„ãªã„ã¨ã€ã“ã¡ã‚‰ã‹ã‚‰ãƒ¡ãƒ¼ãƒ«ã‚’é€ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCantSendEmailWarning()
 	{
-		return "アカウント作成時に{styleStart}本物のメールアドレス{styleEnd}を入力していないと、こちらからメールを送ることができません。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆä½œæˆæ™‚ã«{styleStart}æœ¬ç‰©ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹{styleEnd}ã‚’å…¥åŠ›ã—ã¦ã„ãªã„ã¨ã€ã“ã¡ã‚‰ã‹ã‚‰ãƒ¡ãƒ¼ãƒ«ã‚’é€ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "エラーが発生しました。しばらくしてからやり直してください。";
+		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEmailForUsernameSuccessBody()
 	{
-		return "メールアドレスがすでにアカウントに保存されている場合は、ユーザーネームが記載されたメールを送信しています。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒã™ã§ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒè¨˜è¼‰ã•ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessBody()
 	{
-		return "メールアドレスがすでにアカウントに保存されている場合は、必要な手順が記載されたメールを送信しています。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒã™ã§ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€å¿…è¦ãªæ‰‹é †ãŒè¨˜è¼‰ã•ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessTitle()
 	{
-		return "メールが送信されました";
+		return "ãƒ¡ãƒ¼ãƒ«ãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageEnterCode()
 	{
-		return "過去にアカウントで認証を行ったことがある場合は、コードを携帯電話に送信しています。送信されたコードを入力してください";
+		return "éŽåŽ»ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§èªè¨¼ã‚’è¡Œã£ãŸã“ã¨ãŒã‚ã‚‹å ´åˆã¯ã€ã‚³ãƒ¼ãƒ‰ã‚’æºå¸¯é›»è©±ã«é€ä¿¡ã—ã¦ã„ã¾ã™ã€‚é€ä¿¡ã•ã‚ŒãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForMessageEnterCodeSentToEmail()
 	{
-		return "メールに記載されたコードを入力してください。";
+		return "ãƒ¡ãƒ¼ãƒ«ã«è¨˜è¼‰ã•ã‚ŒãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessBody()
 	{
-		return "過去にアカウントで電話番号の認証を行ったことがある場合は、ユーザーネームが記載されたSMSメッセージを送信しています。";
+		return "éŽåŽ»ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§é›»è©±ç•ªå·ã®èªè¨¼ã‚’è¡Œã£ãŸã“ã¨ãŒã‚ã‚‹å ´åˆã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒè¨˜è¼‰ã•ã‚ŒãŸSMSãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã—ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessTitle()
 	{
-		return "SMSが送信されました";
+		return "SMSãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageAccountDoesNotHaveAnEmail()
 	{
-		return "このアカウントにリンク済みのメールアドレスはありません";
+		return "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ãƒªãƒ³ã‚¯æ¸ˆã¿ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã‚ã‚Šã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByEmail()
 	{
-		return "アカウントが見つかりませんでした。別のメールアドレスをご利用ください。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚åˆ¥ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã”åˆ©ç”¨ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByPhone()
 	{
-		return "アカウントが見つかりませんでした。別の電話番号をご利用ください。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚åˆ¥ã®é›»è©±ç•ªå·ã‚’ã”åˆ©ç”¨ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAccountRecoveryUnknownError()
 	{
-		return "システムエラーが発生しました。アカウントをこの状態に復旧できませんでした。";
+		return "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ã“ã®çŠ¶æ…‹ã«å¾©æ—§ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaError()
 	{
-		return "ロボット入力ではないことを確認する必要があります！";
+		return "ãƒ­ãƒœãƒƒãƒˆå…¥åŠ›ã§ã¯ãªã„ã“ã¨ã‚’ç¢ºèªã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaFailError()
 	{
-		return "画像の文字と入力した文字が一致していません。もう一度お試しください。";
+		return "ç”»åƒã®æ–‡å­—ã¨å…¥åŠ›ã—ãŸæ–‡å­—ãŒä¸€è‡´ã—ã¦ã„ã¾ã›ã‚“ã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCredentialsError()
 	{
-		return "ユーザーネーム、またはパスワードが間違っています。もう一度チェックしてからやり直してください。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã€ã¾ãŸã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ã‚‚ã†ä¸€åº¦ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFloodCheckedError()
 	{
-		return "試行回数が多すぎます。しばらくしてからやり直してください。";
+		return "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordFeatureDisabled()
 	{
-		return "機能が一時的に無効になっています。しばらくしてからやり直してください。";
+		return "æ©Ÿèƒ½ãŒä¸€æ™‚çš„ã«ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordSuccess()
 	{
-		return "ログイン方法についてはメールをごらんください";
+		return "ãƒ­ã‚°ã‚¤ãƒ³æ–¹æ³•ã«ã¤ã„ã¦ã¯ãƒ¡ãƒ¼ãƒ«ã‚’ã”ã‚‰ã‚“ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForMessageInvalidAccountStatus()
 	{
-		return "アカウントステータスによりパスワードのリセットはできません";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã«ã‚ˆã‚Šãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆã¯ã§ãã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPassword()
 	{
-		return "無効なパスワード";
+		return "ç„¡åŠ¹ãªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForMessageInvalidTicket()
 	{
-		return "このセキュリティチケットを読み込めませんでした。";
+		return "ã“ã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ãƒã‚±ãƒƒãƒˆã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidUserNameOrEmail()
 	{
-		return "ユーザーネームが無効であるか、メールアドレスが存在しません";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒç„¡åŠ¹ã§ã‚ã‚‹ã‹ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå­˜åœ¨ã—ã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageMobileResetPasswordSuccess()
@@ -780,17 +780,17 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageNoAccountsLinkedToEmail()
 	{
-		return "このメールアドレスにリンク済みのアカウントはありません";
+		return "ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«ãƒªãƒ³ã‚¯æ¸ˆã¿ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ã‚ã‚Šã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageOldUsernameError()
 	{
-		return "古いユーザーネームが入力されたようです。新しいユーザーネームでログインしてください。";
+		return "å¤ã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒå…¥åŠ›ã•ã‚ŒãŸã‚ˆã†ã§ã™ã€‚æ–°ã—ã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePasswordCannotBeUsed()
 	{
-		return "申し訳ありませんが、そのパスワードは使用できません。";
+		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ãã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ä½¿ç”¨ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -799,37 +799,37 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string MessagePasswordResetTicketExpired(string expirationHour, string expirationMinute)
 	{
-		return $"申し訳ございません。パスワードリセットのリクエストは、ご依頼から{expirationHour}時間{expirationMinute}分で期限切れとなります。再度パスワードリセットをリクエストしてください。";
+		return $"ç”³ã—è¨³ã”ã–ã„ã¾ã›ã‚“ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ã€ã”ä¾é ¼ã‹ã‚‰{expirationHour}æ™‚é–“{expirationMinute}åˆ†ã§æœŸé™åˆ‡ã‚Œã¨ãªã‚Šã¾ã™ã€‚å†åº¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã‚’ãƒªã‚¯ã‚¨ã‚¹ãƒˆã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePasswordResetTicketExpired()
 	{
-		return "申し訳ございません。パスワードリセットのリクエストは、ご依頼から{expirationHour}時間{expirationMinute}分で期限切れとなります。再度パスワードリセットをリクエストしてください。";
+		return "ç”³ã—è¨³ã”ã–ã„ã¾ã›ã‚“ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ã€ã”ä¾é ¼ã‹ã‚‰{expirationHour}æ™‚é–“{expirationMinute}åˆ†ã§æœŸé™åˆ‡ã‚Œã¨ãªã‚Šã¾ã™ã€‚å†åº¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã‚’ãƒªã‚¯ã‚¨ã‚¹ãƒˆã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePasswordsDoNotMatch()
 	{
-		return "パスワードが一致しません";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒä¸€è‡´ã—ã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageSamlUnauthenticated()
 	{
-		return "認証を完了するにはRobloxにログインする必要があります。";
+		return "èªè¨¼ã‚’å®Œäº†ã™ã‚‹ã«ã¯Robloxã«ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "不明なエラーが発生しました";
+		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageUnknownSystemError()
 	{
-		return "システムエラーが発生しました。ログイン画面にお戻りください。";
+		return "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«ãŠæˆ»ã‚Šãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForPlaceholderEmail()
 	{
-		return "メールアドレス";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
 	}
 
 	/// <summary>
@@ -838,46 +838,49 @@ internal class ResetPasswordResources_ja_jp : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string PlaceholderEnterCode(string codeLength)
 	{
-		return $"コードを入力 ({codeLength}-桁)";
+		return $"ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ› ({codeLength}-æ¡)";
 	}
 
 	protected override string _GetTemplateForPlaceholderEnterCode()
 	{
-		return "コードを入力 ({codeLength}-桁)";
+		return "ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ› ({codeLength}-æ¡)";
 	}
 
 	protected override string _GetTemplateForPlaceholderPhoneNumber()
 	{
-		return "電話番号";
+		return "é›»è©±ç•ªå·";
 	}
 
 	protected override string _GetTemplateForResponsePasswordResetSuccess()
 	{
-		return "パスワードのリセットに成功しました！もう一度ログインしてください。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆã«æˆåŠŸã—ã¾ã—ãŸï¼ã‚‚ã†ä¸€åº¦ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseSuccess()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordFlooded()
 	{
-		return "試行回数が多すぎます。しばらくしてからやり直してください。";
+		return "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordIncorrect()
 	{
-		return "現在のパスワードが間違っています。パスワードは変更されませんでした。";
+		return "ç¾åœ¨ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordInputMissing()
 	{
-		return "新しいパスワードと確認パスワードを含む必要があります";
+		return "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¨ç¢ºèªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å«ã‚€å¿…è¦ãŒã‚ã‚Šã¾ã™";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordMismatch()
 	{
-		return "新しいパスワードと確認パスワードが一致している必要があります";
+		return "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¨ç¢ºèªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒä¸€è‡´ã—ã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CrowdSourcedTranslationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// Key: "Action.AddTranslationEntry"
 	/// English String: "Add New Entry"
 	/// </summary>
-	public override string ActionAddTranslationEntry => "Neuen Eintrag hinzufügen";
+	public override string ActionAddTranslationEntry => "Neuen Eintrag hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -22,13 +22,13 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "Löschen";
+	public override string ActionDelete => "LÃ¶schen";
 
 	/// <summary>
 	/// Key: "Action.Dialog.DiscardChanges"
 	/// English String: "Discard Changes"
 	/// </summary>
-	public override string ActionDialogDiscardChanges => "Änderungen verwerfen";
+	public override string ActionDialogDiscardChanges => "Ã„nderungen verwerfen";
 
 	/// <summary>
 	/// Key: "Action.DownloadCSV"
@@ -68,58 +68,58 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// description for no content case
 	/// English String: "No source content found for this game. You can enable Auto-Scraping or manually upload content from Developer Studio to view and manage translations here."
 	/// </summary>
-	public override string DescriptionNoContent => "Für dieses Spiel wurde kein Inhalt gefunden. Du kannst Auto-Scraping aktivieren oder manuell Inhalt aus dem Developer Studio hochladen, um hier Übersetzungen anzusehen und zu verwalten.";
+	public override string DescriptionNoContent => "FÃ¼r dieses Spiel wurde kein Inhalt gefunden. Du kannst Auto-Scraping aktivieren oder manuell Inhalt aus dem Developer Studio hochladen, um hier Ãœbersetzungen anzusehen und zu verwalten.";
 
 	/// <summary>
 	/// Key: "Description.NoContentDeveloper"
 	/// English String: "No source content found for this game. Please contact the Developer if you think this is an error."
 	/// </summary>
-	public override string DescriptionNoContentDeveloper => "Kein Quellinhalt für dieses Spiel gefunden. Wende dich an den Entwickler, wenn du glaubst, dass dies ein Fehler ist.";
+	public override string DescriptionNoContentDeveloper => "Kein Quellinhalt fÃ¼r dieses Spiel gefunden. Wende dich an den Entwickler, wenn du glaubst, dass dies ein Fehler ist.";
 
 	/// <summary>
 	/// Key: "Description.NoEntriesFound"
 	/// message shown when no entries are found while doing a search or filter
 	/// English String: "No entries were found based on current search filters"
 	/// </summary>
-	public override string DescriptionNoEntriesFound => "Für die aktuellen Suchfilter wurden keine Einträge gefunden";
+	public override string DescriptionNoEntriesFound => "FÃ¼r die aktuellen Suchfilter wurden keine EintrÃ¤ge gefunden";
 
 	/// <summary>
 	/// Key: "Description.UnsavedChanges"
 	/// English String: "You have unsaved changes. Do you want to proceed?"
 	/// </summary>
-	public override string DescriptionUnsavedChanges => "Du hast nicht gespeicherte Änderungen. Möchtest du fortfahren?";
+	public override string DescriptionUnsavedChanges => "Du hast nicht gespeicherte Ã„nderungen. MÃ¶chtest du fortfahren?";
 
 	/// <summary>
 	/// Key: "Example.EnterTranslationHere"
 	/// placeholder text
 	/// English String: "Enter Translation Here"
 	/// </summary>
-	public override string ExampleEnterTranslationHere => "Übersetzung hier eingeben";
+	public override string ExampleEnterTranslationHere => "Ãœbersetzung hier eingeben";
 
 	/// <summary>
 	/// Key: "Heading.AddTranslationEntry"
 	/// English String: "Add a Translation Entry"
 	/// </summary>
-	public override string HeadingAddTranslationEntry => "Neuen Übersetzungseintrag hinzufügen";
+	public override string HeadingAddTranslationEntry => "Neuen Ãœbersetzungseintrag hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.UnsavedChanges"
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingDialogUnsavedChanges => "Nicht gespeicherte Änderungen";
+	public override string HeadingDialogUnsavedChanges => "Nicht gespeicherte Ã„nderungen";
 
 	/// <summary>
 	/// Key: "Heading.ManageTranslations"
 	/// heading for the page
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string HeadingManageTranslations => "Übersetzungen verwalten";
+	public override string HeadingManageTranslations => "Ãœbersetzungen verwalten";
 
 	/// <summary>
 	/// Key: "Heading.Modal.DeleteEntry"
 	/// English String: "Are you sure you want to delete this entry?"
 	/// </summary>
-	public override string HeadingModalDeleteEntry => "Möchtest du diesen Eintrag wirklich löschen?";
+	public override string HeadingModalDeleteEntry => "MÃ¶chtest du diesen Eintrag wirklich lÃ¶schen?";
 
 	/// <summary>
 	/// Key: "Heading.NoContent"
@@ -132,19 +132,19 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// Key: "Heading.TranslationHistory"
 	/// English String: "Translation History"
 	/// </summary>
-	public override string HeadingTranslationHistory => "Übersetzungsverlauf";
+	public override string HeadingTranslationHistory => "Ãœbersetzungsverlauf";
 
 	/// <summary>
 	/// Key: "Label.ActionIrreversibleWarning"
 	/// English String: "Please note that this action is irreversible."
 	/// </summary>
-	public override string LabelActionIrreversibleWarning => "Bitte beachte, dass diese Aktion nicht rückgängig gemacht werden kann.";
+	public override string LabelActionIrreversibleWarning => "Bitte beachte, dass diese Aktion nicht rÃ¼ckgÃ¤ngig gemacht werden kann.";
 
 	/// <summary>
 	/// Key: "Label.CompletedTranslations"
 	/// English String: "Completed Translations:"
 	/// </summary>
-	public override string LabelCompletedTranslations => "Fertige Übersetzungen:";
+	public override string LabelCompletedTranslations => "Fertige Ãœbersetzungen:";
 
 	/// <summary>
 	/// Key: "Label.Context"
@@ -157,7 +157,7 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// Key: "Label.Deleting"
 	/// English String: "Deleting"
 	/// </summary>
-	public override string LabelDeleting => "Löschen";
+	public override string LabelDeleting => "LÃ¶schen";
 
 	/// <summary>
 	/// Key: "Label.Example"
@@ -170,21 +170,21 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// Key: "Label.FollowingTranslationsDeleted"
 	/// English String: "The following translations will be deleted."
 	/// </summary>
-	public override string LabelFollowingTranslationsDeleted => "Die folgenden Übersetzungen werden gelöscht.";
+	public override string LabelFollowingTranslationsDeleted => "Die folgenden Ãœbersetzungen werden gelÃ¶scht.";
 
 	/// <summary>
 	/// Key: "Label.Key"
 	/// label for the key of text to be translated
 	/// English String: "Key:"
 	/// </summary>
-	public override string LabelKey => "Schlüssel:";
+	public override string LabelKey => "SchlÃ¼ssel:";
 
 	/// <summary>
 	/// Key: "Label.LastModified"
 	/// form label
 	/// English String: "Last Modified:"
 	/// </summary>
-	public override string LabelLastModified => "Zuletzt geändert:";
+	public override string LabelLastModified => "Zuletzt geÃ¤ndert:";
 
 	/// <summary>
 	/// Key: "Label.LocationsInGame"
@@ -231,7 +231,7 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// sorting label
 	/// English String: "Untranslated First"
 	/// </summary>
-	public override string LabelSortingUntranslatedFirst => "Nicht übersetzt zuerst";
+	public override string LabelSortingUntranslatedFirst => "Nicht Ã¼bersetzt zuerst";
 
 	/// <summary>
 	/// Key: "Label.SourceText"
@@ -244,41 +244,41 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// form label
 	/// English String: "Text to Translate:"
 	/// </summary>
-	public override string LabelTextToTranslate => "Text zum Übersetzen:";
+	public override string LabelTextToTranslate => "Text zum Ãœbersetzen:";
 
 	/// <summary>
 	/// Key: "Label.Translated"
 	/// tooltip help text
 	/// English String: "Translated"
 	/// </summary>
-	public override string LabelTranslated => "Übersetzt";
+	public override string LabelTranslated => "Ãœbersetzt";
 
 	/// <summary>
 	/// Key: "Label.TranslationCleared"
 	/// English String: "Translation cleared"
 	/// </summary>
-	public override string LabelTranslationCleared => "Übersetzung wurde gelöscht";
+	public override string LabelTranslationCleared => "Ãœbersetzung wurde gelÃ¶scht";
 
 	/// <summary>
 	/// Key: "Label.Translator"
 	/// form label
 	/// English String: "Translator:"
 	/// </summary>
-	public override string LabelTranslator => "Übersetzer:";
+	public override string LabelTranslator => "Ãœbersetzer:";
 
 	/// <summary>
 	/// Key: "Label.Untranslated"
 	/// tooltip help text
 	/// English String: "Untranslated"
 	/// </summary>
-	public override string LabelUntranslated => "Nicht übersetzt";
+	public override string LabelUntranslated => "Nicht Ã¼bersetzt";
 
 	/// <summary>
 	/// Key: "Response.AccessDenied"
 	/// message if user does not have permission to access the UI
 	/// English String: "You don't have permission to access this page"
 	/// </summary>
-	public override string ResponseAccessDenied => "Du hast nicht die nötigen Rechte, um diese Seite aufzurufen.";
+	public override string ResponseAccessDenied => "Du hast nicht die nÃ¶tigen Rechte, um diese Seite aufzurufen.";
 
 	/// <summary>
 	/// Key: "Response.NoContextAvailable"
@@ -302,19 +302,19 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 	/// Key: "Response.NoKeyAvailable"
 	/// English String: "No key available"
 	/// </summary>
-	public override string ResponseNoKeyAvailable => "Kein Schlüssel verfügbar";
+	public override string ResponseNoKeyAvailable => "Kein SchlÃ¼ssel verfÃ¼gbar";
 
 	/// <summary>
 	/// Key: "Response.NoTranslationHistory"
 	/// English String: "No translation history available."
 	/// </summary>
-	public override string ResponseNoTranslationHistory => "Kein Übersetzungsverlauf vorhanden.";
+	public override string ResponseNoTranslationHistory => "Kein Ãœbersetzungsverlauf vorhanden.";
 
 	/// <summary>
 	/// Key: "Response.ProblemDeletingEntry"
 	/// English String: "There was a problem deleting entry."
 	/// </summary>
-	public override string ResponseProblemDeletingEntry => "Beim Löschen des Eintrags ist ein Problem aufgetreten.";
+	public override string ResponseProblemDeletingEntry => "Beim LÃ¶schen des Eintrags ist ein Problem aufgetreten.";
 
 	public CrowdSourcedTranslationResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -323,7 +323,7 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForActionAddTranslationEntry()
 	{
-		return "Neuen Eintrag hinzufügen";
+		return "Neuen Eintrag hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -333,12 +333,12 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "Löschen";
+		return "LÃ¶schen";
 	}
 
 	protected override string _GetTemplateForActionDialogDiscardChanges()
 	{
-		return "Änderungen verwerfen";
+		return "Ã„nderungen verwerfen";
 	}
 
 	protected override string _GetTemplateForActionDownloadCSV()
@@ -368,47 +368,47 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForDescriptionNoContent()
 	{
-		return "Für dieses Spiel wurde kein Inhalt gefunden. Du kannst Auto-Scraping aktivieren oder manuell Inhalt aus dem Developer Studio hochladen, um hier Übersetzungen anzusehen und zu verwalten.";
+		return "FÃ¼r dieses Spiel wurde kein Inhalt gefunden. Du kannst Auto-Scraping aktivieren oder manuell Inhalt aus dem Developer Studio hochladen, um hier Ãœbersetzungen anzusehen und zu verwalten.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoContentDeveloper()
 	{
-		return "Kein Quellinhalt für dieses Spiel gefunden. Wende dich an den Entwickler, wenn du glaubst, dass dies ein Fehler ist.";
+		return "Kein Quellinhalt fÃ¼r dieses Spiel gefunden. Wende dich an den Entwickler, wenn du glaubst, dass dies ein Fehler ist.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoEntriesFound()
 	{
-		return "Für die aktuellen Suchfilter wurden keine Einträge gefunden";
+		return "FÃ¼r die aktuellen Suchfilter wurden keine EintrÃ¤ge gefunden";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsavedChanges()
 	{
-		return "Du hast nicht gespeicherte Änderungen. Möchtest du fortfahren?";
+		return "Du hast nicht gespeicherte Ã„nderungen. MÃ¶chtest du fortfahren?";
 	}
 
 	protected override string _GetTemplateForExampleEnterTranslationHere()
 	{
-		return "Übersetzung hier eingeben";
+		return "Ãœbersetzung hier eingeben";
 	}
 
 	protected override string _GetTemplateForHeadingAddTranslationEntry()
 	{
-		return "Neuen Übersetzungseintrag hinzufügen";
+		return "Neuen Ãœbersetzungseintrag hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForHeadingDialogUnsavedChanges()
 	{
-		return "Nicht gespeicherte Änderungen";
+		return "Nicht gespeicherte Ã„nderungen";
 	}
 
 	protected override string _GetTemplateForHeadingManageTranslations()
 	{
-		return "Übersetzungen verwalten";
+		return "Ãœbersetzungen verwalten";
 	}
 
 	protected override string _GetTemplateForHeadingModalDeleteEntry()
 	{
-		return "Möchtest du diesen Eintrag wirklich löschen?";
+		return "MÃ¶chtest du diesen Eintrag wirklich lÃ¶schen?";
 	}
 
 	protected override string _GetTemplateForHeadingNoContent()
@@ -418,17 +418,17 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForHeadingTranslationHistory()
 	{
-		return "Übersetzungsverlauf";
+		return "Ãœbersetzungsverlauf";
 	}
 
 	protected override string _GetTemplateForLabelActionIrreversibleWarning()
 	{
-		return "Bitte beachte, dass diese Aktion nicht rückgängig gemacht werden kann.";
+		return "Bitte beachte, dass diese Aktion nicht rÃ¼ckgÃ¤ngig gemacht werden kann.";
 	}
 
 	protected override string _GetTemplateForLabelCompletedTranslations()
 	{
-		return "Fertige Übersetzungen:";
+		return "Fertige Ãœbersetzungen:";
 	}
 
 	protected override string _GetTemplateForLabelContext()
@@ -438,7 +438,7 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelDeleting()
 	{
-		return "Löschen";
+		return "LÃ¶schen";
 	}
 
 	protected override string _GetTemplateForLabelExample()
@@ -448,17 +448,17 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelFollowingTranslationsDeleted()
 	{
-		return "Die folgenden Übersetzungen werden gelöscht.";
+		return "Die folgenden Ãœbersetzungen werden gelÃ¶scht.";
 	}
 
 	protected override string _GetTemplateForLabelKey()
 	{
-		return "Schlüssel:";
+		return "SchlÃ¼ssel:";
 	}
 
 	protected override string _GetTemplateForLabelLastModified()
 	{
-		return "Zuletzt geändert:";
+		return "Zuletzt geÃ¤ndert:";
 	}
 
 	protected override string _GetTemplateForLabelLocationsInGame()
@@ -507,7 +507,7 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelSortingUntranslatedFirst()
 	{
-		return "Nicht übersetzt zuerst";
+		return "Nicht Ã¼bersetzt zuerst";
 	}
 
 	protected override string _GetTemplateForLabelSourceText()
@@ -517,32 +517,32 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelTextToTranslate()
 	{
-		return "Text zum Übersetzen:";
+		return "Text zum Ãœbersetzen:";
 	}
 
 	protected override string _GetTemplateForLabelTranslated()
 	{
-		return "Übersetzt";
+		return "Ãœbersetzt";
 	}
 
 	protected override string _GetTemplateForLabelTranslationCleared()
 	{
-		return "Übersetzung wurde gelöscht";
+		return "Ãœbersetzung wurde gelÃ¶scht";
 	}
 
 	protected override string _GetTemplateForLabelTranslator()
 	{
-		return "Übersetzer:";
+		return "Ãœbersetzer:";
 	}
 
 	protected override string _GetTemplateForLabelUntranslated()
 	{
-		return "Nicht übersetzt";
+		return "Nicht Ã¼bersetzt";
 	}
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "Du hast nicht die nötigen Rechte, um diese Seite aufzurufen.";
+		return "Du hast nicht die nÃ¶tigen Rechte, um diese Seite aufzurufen.";
 	}
 
 	protected override string _GetTemplateForResponseNoContextAvailable()
@@ -562,16 +562,19 @@ internal class CrowdSourcedTranslationResources_de_de : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForResponseNoKeyAvailable()
 	{
-		return "Kein Schlüssel verfügbar";
+		return "Kein SchlÃ¼ssel verfÃ¼gbar";
 	}
 
 	protected override string _GetTemplateForResponseNoTranslationHistory()
 	{
-		return "Kein Übersetzungsverlauf vorhanden.";
+		return "Kein Ãœbersetzungsverlauf vorhanden.";
 	}
 
 	protected override string _GetTemplateForResponseProblemDeletingEntry()
 	{
-		return "Beim Löschen des Eintrags ist ein Problem aufgetreten.";
+		return "Beim LÃ¶schen des Eintrags ist ein Problem aufgetreten.";
 	}
+}
+
+
 }

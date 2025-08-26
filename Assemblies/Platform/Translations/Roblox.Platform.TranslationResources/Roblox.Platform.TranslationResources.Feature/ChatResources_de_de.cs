@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ChatResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Action.Add"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "Hinzufügen";
+	public override string ActionAdd => "HinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.BuyAccess"
@@ -99,7 +99,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// button label
 	/// English String: "Start a Party"
 	/// </summary>
-	public override string ActionStartParty => "Gründe ein Team";
+	public override string ActionStartParty => "GrÃ¼nde ein Team";
 
 	/// <summary>
 	/// Key: "Action.Stay"
@@ -138,7 +138,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Heading.ConfirmLeaving"
 	/// English String: "Are you sure to leave this chat group?"
 	/// </summary>
-	public override string HeadingConfirmLeaving => "Möchtest du diese Chatgruppe wirklich verlassen?";
+	public override string HeadingConfirmLeaving => "MÃ¶chtest du diese Chatgruppe wirklich verlassen?";
 
 	/// <summary>
 	/// Key: "Heading.ContinueToReport"
@@ -187,7 +187,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.AddFriends"
 	/// English String: "Add Friends"
 	/// </summary>
-	public override string LabelAddFriends => "Freunde hinzufügen";
+	public override string LabelAddFriends => "Freunde hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.BuyButton"
@@ -217,7 +217,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string LabelClose => "Schließen";
+	public override string LabelClose => "SchlieÃŸen";
 
 	/// <summary>
 	/// Key: "Label.ConversationNotifications"
@@ -249,7 +249,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.GameNotAvailableButton"
 	/// English String: "Not Available"
 	/// </summary>
-	public override string LabelGameNotAvailableButton => "Nicht verfügbar";
+	public override string LabelGameNotAvailableButton => "Nicht verfÃ¼gbar";
 
 	/// <summary>
 	/// Key: "Label.General"
@@ -355,13 +355,13 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.MuteConversationNotificationsForGroup"
 	/// English String: "Mute notifications for this chat group"
 	/// </summary>
-	public override string LabelMuteConversationNotificationsForGroup => "Benachrichtigungen für diese Chatgruppe stummschalten";
+	public override string LabelMuteConversationNotificationsForGroup => "Benachrichtigungen fÃ¼r diese Chatgruppe stummschalten";
 
 	/// <summary>
 	/// Key: "Label.MuteConversationNotificationsForOneToOne"
 	/// English String: "Mute notifications for this conversation"
 	/// </summary>
-	public override string LabelMuteConversationNotificationsForOneToOne => "Benachrichtigungen für diese Konversation stummschalten";
+	public override string LabelMuteConversationNotificationsForOneToOne => "Benachrichtigungen fÃ¼r diese Konversation stummschalten";
 
 	/// <summary>
 	/// Key: "Label.MuteInfinite"
@@ -460,7 +460,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.SpanTitle.CreateGroupNeeds2More"
 	/// English String: "Add at least 2 people to create chat group"
 	/// </summary>
-	public override string LabelSpanTitleCreateGroupNeeds2More => "Füge mindestens 2 Leute hinzu, um eine Chatgruppe zu erstellen.";
+	public override string LabelSpanTitleCreateGroupNeeds2More => "FÃ¼ge mindestens 2 Leute hinzu, um eine Chatgruppe zu erstellen.";
 
 	/// <summary>
 	/// Key: "Label.SpanTitle.Loading"
@@ -484,7 +484,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.TurnOnConversationNotificationsPrompt"
 	/// English String: "Do you want to turn on notifications?"
 	/// </summary>
-	public override string LabelTurnOnConversationNotificationsPrompt => "Möchtest du Benachrichtigungen aktivieren?";
+	public override string LabelTurnOnConversationNotificationsPrompt => "MÃ¶chtest du Benachrichtigungen aktivieren?";
 
 	/// <summary>
 	/// Key: "Label.UnpinGameTooltip"
@@ -546,7 +546,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Message.MakeFriendsToChatNPlay"
 	/// English String: "Make friends to start chatting and partying!"
 	/// </summary>
-	public override string MessageMakeFriendsToChatNPlay => "Finde Freunde für Teams und zum Chatten!";
+	public override string MessageMakeFriendsToChatNPlay => "Finde Freunde fÃ¼r Teams und zum Chatten!";
 
 	/// <summary>
 	/// Key: "Message.MessageContentModerated"
@@ -611,7 +611,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "Hinzufügen";
+		return "HinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionBuyAccess()
@@ -681,7 +681,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForActionStartParty()
 	{
-		return "Gründe ein Team";
+		return "GrÃ¼nde ein Team";
 	}
 
 	protected override string _GetTemplateForActionStay()
@@ -716,7 +716,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForHeadingConfirmLeaving()
 	{
-		return "Möchtest du diese Chatgruppe wirklich verlassen?";
+		return "MÃ¶chtest du diese Chatgruppe wirklich verlassen?";
 	}
 
 	protected override string _GetTemplateForHeadingContinueToReport()
@@ -756,7 +756,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelAddFriends()
 	{
-		return "Freunde hinzufügen";
+		return "Freunde hinzufÃ¼gen";
 	}
 
 	/// <summary>
@@ -765,12 +765,12 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelBuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"Möchtest du Zugang zu diesem Ort kaufen: {placeName} von {creatorName} für {robux}?";
+		return $"MÃ¶chtest du Zugang zu diesem Ort kaufen: {placeName} von {creatorName} fÃ¼r {robux}?";
 	}
 
 	protected override string _GetTemplateForLabelBuyAccessToGameForModal()
 	{
-		return "Möchtest du Zugang zu diesem Ort kaufen: {placeName} von {creatorName} für {robux}?";
+		return "MÃ¶chtest du Zugang zu diesem Ort kaufen: {placeName} von {creatorName} fÃ¼r {robux}?";
 	}
 
 	protected override string _GetTemplateForLabelBuyButton()
@@ -795,7 +795,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelClose()
 	{
-		return "Schließen";
+		return "SchlieÃŸen";
 	}
 
 	protected override string _GetTemplateForLabelConversationNotifications()
@@ -820,7 +820,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelGameNotAvailableButton()
 	{
-		return "Nicht verfügbar";
+		return "Nicht verfÃ¼gbar";
 	}
 
 	protected override string _GetTemplateForLabelGeneral()
@@ -919,12 +919,12 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelMuteConversationNotificationsForGroup()
 	{
-		return "Benachrichtigungen für diese Chatgruppe stummschalten";
+		return "Benachrichtigungen fÃ¼r diese Chatgruppe stummschalten";
 	}
 
 	protected override string _GetTemplateForLabelMuteConversationNotificationsForOneToOne()
 	{
-		return "Benachrichtigungen für diese Konversation stummschalten";
+		return "Benachrichtigungen fÃ¼r diese Konversation stummschalten";
 	}
 
 	protected override string _GetTemplateForLabelMuteInfinite()
@@ -1088,7 +1088,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelSpanTitleCreateGroupNeeds2More()
 	{
-		return "Füge mindestens 2 Leute hinzu, um eine Chatgruppe zu erstellen.";
+		return "FÃ¼ge mindestens 2 Leute hinzu, um eine Chatgruppe zu erstellen.";
 	}
 
 	protected override string _GetTemplateForLabelSpanTitleLoading()
@@ -1122,7 +1122,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelTurnOnConversationNotificationsPrompt()
 	{
-		return "Möchtest du Benachrichtigungen aktivieren?";
+		return "MÃ¶chtest du Benachrichtigungen aktivieren?";
 	}
 
 	protected override string _GetTemplateForLabelUnpinGameTooltip()
@@ -1242,7 +1242,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForMessageMakeFriendsToChatNPlay()
 	{
-		return "Finde Freunde für Teams und zum Chatten!";
+		return "Finde Freunde fÃ¼r Teams und zum Chatten!";
 	}
 
 	protected override string _GetTemplateForMessageMessageContentModerated()
@@ -1272,12 +1272,12 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessagePinGameUpdate(string userName, string gameName)
 	{
-		return $"{userName} hat ein Spiel zum gemeinsamen Spielen gewählt: {gameName}";
+		return $"{userName} hat ein Spiel zum gemeinsamen Spielen gewÃ¤hlt: {gameName}";
 	}
 
 	protected override string _GetTemplateForMessagePinGameUpdate()
 	{
-		return "{userName} hat ein Spiel zum gemeinsamen Spielen gewählt: {gameName}";
+		return "{userName} hat ein Spiel zum gemeinsamen Spielen gewÃ¤hlt: {gameName}";
 	}
 
 	protected override string _GetTemplateForMessagePlayGameUpdate()
@@ -1318,4 +1318,7 @@ internal class ChatResources_de_de : ChatResources_en_us, IChatResources, ITrans
 	{
 		return "Du hast eine Teameinladung erhalten.";
 	}
+}
+
+
 }

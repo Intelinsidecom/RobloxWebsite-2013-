@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationManagementResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,286 +11,286 @@ internal class TranslationManagementResources_ko_kr : TranslationManagementResou
 	/// A clickable text which allows user to reload the image and see if it is available.
 	/// English String: "Please reload."
 	/// </summary>
-	public override string ActionPleaseReload => "다시 불러오세요.";
+	public override string ActionPleaseReload => "ë‹¤ì‹œ ë¶ˆëŸ¬ì˜¤ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Description.AcceptableFilesForIcon"
 	/// Tell the developer what types of files their images should be for upload.
 	/// English String: "Acceptable files: jpg, jpeg, png"
 	/// </summary>
-	public override string DescriptionAcceptableFilesForIcon => "가능한 파일 형식: jpg, jpeg, png";
+	public override string DescriptionAcceptableFilesForIcon => "ê°€ëŠ¥í•œ íŒŒì¼ í˜•ì‹: jpg, jpeg, png";
 
 	/// <summary>
 	/// Key: "Description.AcceptableFilesForThumbnail"
 	/// English String: "Acceptable files: jpg, jpeg, png"
 	/// </summary>
-	public override string DescriptionAcceptableFilesForThumbnail => "가능한 파일 형식: jpg, jpeg, png";
+	public override string DescriptionAcceptableFilesForThumbnail => "ê°€ëŠ¥í•œ íŒŒì¼ í˜•ì‹: jpg, jpeg, png";
 
 	/// <summary>
 	/// Key: "Description.EnterTranslationHere"
 	/// Placeholder text for the input text area of name/description
 	/// English String: "Enter translation here"
 	/// </summary>
-	public override string DescriptionEnterTranslationHere => "여기에 번역 입력";
+	public override string DescriptionEnterTranslationHere => "ì—¬ê¸°ì— ë²ˆì—­ ìž…ë ¥";
 
 	/// <summary>
 	/// Key: "Description.IconWillBeReviewed"
 	/// Tell developers that their game icon image needs to be reviewed by moderators before the public can see it
 	/// English String: "Image will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionIconWillBeReviewed => "이미지는 검열팀의 검토가 끝난 후에 다른 사용자에게 공개됩니다";
+	public override string DescriptionIconWillBeReviewed => "ì´ë¯¸ì§€ëŠ” ê²€ì—´íŒ€ì˜ ê²€í† ê°€ ëë‚œ í›„ì— ë‹¤ë¥¸ ì‚¬ìš©ìžì—ê²Œ ê³µê°œë©ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Description.ImageNotAvailable"
 	/// Message that tells the user their image is still being prepared
 	/// English String: "Image not available."
 	/// </summary>
-	public override string DescriptionImageNotAvailable => "이미지 사용 불가.";
+	public override string DescriptionImageNotAvailable => "ì´ë¯¸ì§€ ì‚¬ìš© ë¶ˆê°€.";
 
 	/// <summary>
 	/// Key: "Description.MaximumSizeForIcon"
 	/// The maximum file size for the icon
 	/// English String: "Maximum file size: 4 MB"
 	/// </summary>
-	public override string DescriptionMaximumSizeForIcon => "최대 파일 크기: 4MB";
+	public override string DescriptionMaximumSizeForIcon => "ìµœëŒ€ íŒŒì¼ í¬ê¸°: 4MB";
 
 	/// <summary>
 	/// Key: "Description.MaximumSizeForThumbnail"
 	/// English String: "Maximum file size: 4 MB"
 	/// </summary>
-	public override string DescriptionMaximumSizeForThumbnail => "최대 파일 크기: 4MB";
+	public override string DescriptionMaximumSizeForThumbnail => "ìµœëŒ€ íŒŒì¼ í¬ê¸°: 4MB";
 
 	/// <summary>
 	/// Key: "Description.NoGameProducts"
 	/// English String: "No game products found for this game"
 	/// </summary>
-	public override string DescriptionNoGameProducts => "이 게임의 상품을 찾을 수 없습니다";
+	public override string DescriptionNoGameProducts => "ì´ ê²Œìž„ì˜ ìƒí’ˆì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Description.RecommendedResolution"
 	/// The recommended resolution for icon image
 	/// English String: "Recommended resolution: 512 x 512"
 	/// </summary>
-	public override string DescriptionRecommendedResolution => "권장 해상도: 512 x 512";
+	public override string DescriptionRecommendedResolution => "ê¶Œìž¥ í•´ìƒë„: 512 x 512";
 
 	/// <summary>
 	/// Key: "Description.RecommendedResolutionForIcon"
 	/// English String: "Recommended resolution: 512 x 512"
 	/// </summary>
-	public override string DescriptionRecommendedResolutionForIcon => "권장 해상도: 512 x 512";
+	public override string DescriptionRecommendedResolutionForIcon => "ê¶Œìž¥ í•´ìƒë„: 512 x 512";
 
 	/// <summary>
 	/// Key: "Description.RecommendedResolutionForThumbnail"
 	/// English String: "Recommended resolution: 1920 x 1080"
 	/// </summary>
-	public override string DescriptionRecommendedResolutionForThumbnail => "권장 해상도: 1920 x 1080";
+	public override string DescriptionRecommendedResolutionForThumbnail => "ê¶Œìž¥ í•´ìƒë„: 1920 x 1080";
 
 	/// <summary>
 	/// Key: "Description.ScreenshotsLimitForThumbnail"
 	/// English String: "You can set up to 10 screenshots"
 	/// </summary>
-	public override string DescriptionScreenshotsLimitForThumbnail => "최대 10개의 스크린샷을 설정할 수 있어요.";
+	public override string DescriptionScreenshotsLimitForThumbnail => "ìµœëŒ€ 10ê°œì˜ ìŠ¤í¬ë¦°ìƒ·ì„ ì„¤ì •í•  ìˆ˜ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Description.UnsavedChanges"
 	/// The body of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Unsaved changes will be discarded. Are you sure?"
 	/// </summary>
-	public override string DescriptionUnsavedChanges => "저장하지 않은 변경 사항이 삭제됩니다. 진행할까요?";
+	public override string DescriptionUnsavedChanges => "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­ì´ ì‚­ì œë©ë‹ˆë‹¤. ì§„í–‰í• ê¹Œìš”?";
 
 	/// <summary>
 	/// Key: "Heading.BadgeDescription"
 	/// Badge Description localization tool heading
 	/// English String: "Badge Description"
 	/// </summary>
-	public override string HeadingBadgeDescription => "배지 설명";
+	public override string HeadingBadgeDescription => "ë°°ì§€ ì„¤ëª…";
 
 	/// <summary>
 	/// Key: "Heading.BadgeName"
 	/// Badge Name localization tool heading
 	/// English String: "Badge Name"
 	/// </summary>
-	public override string HeadingBadgeName => "배지 이름";
+	public override string HeadingBadgeName => "ë°°ì§€ ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Heading.GameDescription"
 	/// Game Description localization tool heading
 	/// English String: "Game Description"
 	/// </summary>
-	public override string HeadingGameDescription => "게임 설명";
+	public override string HeadingGameDescription => "ê²Œìž„ ì„¤ëª…";
 
 	/// <summary>
 	/// Key: "Heading.GameIcon"
 	/// Game Icon localization tool heading
 	/// English String: "Game Icon"
 	/// </summary>
-	public override string HeadingGameIcon => "게임 아이콘";
+	public override string HeadingGameIcon => "ê²Œìž„ ì•„ì´ì½˜";
 
 	/// <summary>
 	/// Key: "Heading.GameName"
 	/// Game Name localization tool heading
 	/// English String: "Game Name"
 	/// </summary>
-	public override string HeadingGameName => "게임 이름";
+	public override string HeadingGameName => "ê²Œìž„ ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Heading.GameThumbnails"
 	/// Game Thumbnails localization tool heading
 	/// English String: "Game Thumbnails"
 	/// </summary>
-	public override string HeadingGameThumbnails => "게임 섬네일";
+	public override string HeadingGameThumbnails => "ê²Œìž„ ì„¬ë„¤ì¼";
 
 	/// <summary>
 	/// Key: "Heading.ManageTranslations"
 	/// heading of the manage translations page. Please reuse same translation as crowdsource localization page. We are still working on consolidating these two pages.
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string HeadingManageTranslations => "번역 관리";
+	public override string HeadingManageTranslations => "ë²ˆì—­ ê´€ë¦¬";
 
 	/// <summary>
 	/// Key: "Heading.NoContent"
 	/// English String: "No Content"
 	/// </summary>
-	public override string HeadingNoContent => "콘텐츠 없음";
+	public override string HeadingNoContent => "ì½˜í…ì¸  ì—†ìŒ";
 
 	/// <summary>
 	/// Key: "Heading.Thumbnails"
 	/// Title for configuring Game Thumbnails which are shown to user in Game Details page to showcase the game's experiences, aesthetics, marketing, and gameplay.
 	/// English String: "Thumbnails"
 	/// </summary>
-	public override string HeadingThumbnails => "섬네일";
+	public override string HeadingThumbnails => "ì„¬ë„¤ì¼";
 
 	/// <summary>
 	/// Key: "Heading.TranslationHistory"
 	/// Heading for the translation history section of name/description
 	/// English String: "Translation History"
 	/// </summary>
-	public override string HeadingTranslationHistory => "번역 내역";
+	public override string HeadingTranslationHistory => "ë²ˆì—­ ë‚´ì—­";
 
 	/// <summary>
 	/// Key: "Heading.TranslationManagement"
 	/// The title of the translation management page
 	/// English String: "Translation Management"
 	/// </summary>
-	public override string HeadingTranslationManagement => "번역 관리";
+	public override string HeadingTranslationManagement => "ë²ˆì—­ ê´€ë¦¬";
 
 	/// <summary>
 	/// Key: "Heading.UnsavedChanges"
 	/// The heading of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingUnsavedChanges => "저장하지 않은 변경 사항";
+	public override string HeadingUnsavedChanges => "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// The label for Description I18n sub navigation tab
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelDescription => "설명";
+	public override string LabelDescription => "ì„¤ëª…";
 
 	/// <summary>
 	/// Key: "Label.GameInformation"
 	/// The label for Game Information I18n navigation tab
 	/// English String: "Game Information"
 	/// </summary>
-	public override string LabelGameInformation => "게임 정보";
+	public override string LabelGameInformation => "ê²Œìž„ ì •ë³´";
 
 	/// <summary>
 	/// Key: "Label.GameProducts"
 	/// The label for Game Products I18n navigation tab
 	/// English String: "Game Products"
 	/// </summary>
-	public override string LabelGameProducts => "게임 상품";
+	public override string LabelGameProducts => "ê²Œìž„ ìƒí’ˆ";
 
 	/// <summary>
 	/// Key: "Label.GameStrings"
 	/// The label for Game Strings I18n navigation tab
 	/// English String: "Game Strings"
 	/// </summary>
-	public override string LabelGameStrings => "게임 문자열";
+	public override string LabelGameStrings => "ê²Œìž„ ë¬¸ìžì—´";
 
 	/// <summary>
 	/// Key: "Label.Icon"
 	/// The label for Icon I18n sub navigation tab
 	/// English String: "Icon"
 	/// </summary>
-	public override string LabelIcon => "아이콘";
+	public override string LabelIcon => "ì•„ì´ì½˜";
 
 	/// <summary>
 	/// Key: "Label.ImageHoverText"
 	/// User is hovering over a localized image. Describes screen for user with accessibility settings.
 	/// English String: "Localized Image"
 	/// </summary>
-	public override string LabelImageHoverText => "현지화된 이미지";
+	public override string LabelImageHoverText => "í˜„ì§€í™”ëœ ì´ë¯¸ì§€";
 
 	/// <summary>
 	/// Key: "Label.Name"
 	/// The label for Name I18n sub navigation tab
 	/// English String: "Name"
 	/// </summary>
-	public override string LabelName => "이름";
+	public override string LabelName => "ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.TextToTranslate"
 	/// Label for the source name/description text
 	/// English String: "Text to translate"
 	/// </summary>
-	public override string LabelTextToTranslate => "번역할 텍스트";
+	public override string LabelTextToTranslate => "ë²ˆì—­í•  í…ìŠ¤íŠ¸";
 
 	/// <summary>
 	/// Key: "Label.Thumbnails"
 	/// The label for Thumbnails I18n sub navigation tab
 	/// English String: "Thumbnails"
 	/// </summary>
-	public override string LabelThumbnails => "섬네일";
+	public override string LabelThumbnails => "ì„¬ë„¤ì¼";
 
 	/// <summary>
 	/// Key: "Response.AccessDenied"
 	/// Message if user does not have permission to access the UI
 	/// English String: "You don't have permission to access this page"
 	/// </summary>
-	public override string ResponseAccessDenied => "본 페이지에 대한 접근 권한이 없습니다";
+	public override string ResponseAccessDenied => "ë³¸ íŽ˜ì´ì§€ì— ëŒ€í•œ ì ‘ê·¼ ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.ContentModerationError"
 	/// The error text when user's input does not pass the text filter
 	/// English String: "Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string ResponseContentModerationError => "저장 실패. 콘텐츠에 문제의 소지가 있는지 확인하고 다시 시도하세요.";
+	public override string ResponseContentModerationError => "ì €ìž¥ ì‹¤íŒ¨. ì½˜í…ì¸ ì— ë¬¸ì œì˜ ì†Œì§€ê°€ ìžˆëŠ”ì§€ í™•ì¸í•˜ê³  ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// Message for general errors
 	/// English String: "An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "오류가 발생했어요. 나중에 다시 시도하세요.";
+	public override string ResponseGeneralError => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.IncorrectFormatOrSize"
 	/// Response shows to user when their icon image fails to save due to incorrect format or size too large
 	/// English String: "Could not save. Please make sure files are the correct size and format."
 	/// </summary>
-	public override string ResponseIncorrectFormatOrSize => "저장하지 못했어요. 파일의 크기와 형식이 맞는지 확인하세요.";
+	public override string ResponseIncorrectFormatOrSize => "ì €ìž¥í•˜ì§€ ëª»í–ˆì–´ìš”. íŒŒì¼ì˜ í¬ê¸°ì™€ í˜•ì‹ì´ ë§žëŠ”ì§€ í™•ì¸í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.NoTranslationLanguageAvailable"
 	/// The feedback when user trying to access the Translation Management page without adding a language other than their source language first
 	/// English String: "Translated content does not exist. Add a translation language in Configure Localization to translate game content."
 	/// </summary>
-	public override string ResponseNoTranslationLanguageAvailable => "번역된 콘텐츠가 없습니다. 게임 콘텐츠를 번역하려면 '로컬리제이션 구성'에서 번역할 언어를 추가하세요.";
+	public override string ResponseNoTranslationLanguageAvailable => "ë²ˆì—­ëœ ì½˜í…ì¸ ê°€ ì—†ìŠµë‹ˆë‹¤. ê²Œìž„ ì½˜í…ì¸ ë¥¼ ë²ˆì—­í•˜ë ¤ë©´ 'ë¡œì»¬ë¦¬ì œì´ì…˜ êµ¬ì„±'ì—ì„œ ë²ˆì—­í•  ì–¸ì–´ë¥¼ ì¶”ê°€í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.SaveFailure"
 	/// Feedback message if a change cannot be saved
 	/// English String: "Could not save. Please try again."
 	/// </summary>
-	public override string ResponseSaveFailure => "저장할 수 없습니다. 다시 시도하세요.";
+	public override string ResponseSaveFailure => "ì €ìž¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.TooManyFiles"
 	/// English String: "Too many files. Please upload up to 10 files only."
 	/// </summary>
-	public override string ResponseTooManyFiles => "파일이 너무 많습니다. 한 번에 파일 10개씩만 업로드하세요.";
+	public override string ResponseTooManyFiles => "íŒŒì¼ì´ ë„ˆë¬´ ë§ŽìŠµë‹ˆë‹¤. í•œ ë²ˆì— íŒŒì¼ 10ê°œì”©ë§Œ ì—…ë¡œë“œí•˜ì„¸ìš”.";
 
 	public TranslationManagementResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -299,17 +299,17 @@ internal class TranslationManagementResources_ko_kr : TranslationManagementResou
 
 	protected override string _GetTemplateForActionPleaseReload()
 	{
-		return "다시 불러오세요.";
+		return "ë‹¤ì‹œ ë¶ˆëŸ¬ì˜¤ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFilesForIcon()
 	{
-		return "가능한 파일 형식: jpg, jpeg, png";
+		return "ê°€ëŠ¥í•œ íŒŒì¼ í˜•ì‹: jpg, jpeg, png";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFilesForThumbnail()
 	{
-		return "가능한 파일 형식: jpg, jpeg, png";
+		return "ê°€ëŠ¥í•œ íŒŒì¼ í˜•ì‹: jpg, jpeg, png";
 	}
 
 	/// <summary>
@@ -319,206 +319,209 @@ internal class TranslationManagementResources_ko_kr : TranslationManagementResou
 	/// </summary>
 	public override string DescriptionCharacterLimit(string limitNumber)
 	{
-		return $"{limitNumber}자";
+		return $"{limitNumber}ìž";
 	}
 
 	protected override string _GetTemplateForDescriptionCharacterLimit()
 	{
-		return "{limitNumber}자";
+		return "{limitNumber}ìž";
 	}
 
 	protected override string _GetTemplateForDescriptionEnterTranslationHere()
 	{
-		return "여기에 번역 입력";
+		return "ì—¬ê¸°ì— ë²ˆì—­ ìž…ë ¥";
 	}
 
 	protected override string _GetTemplateForDescriptionIconWillBeReviewed()
 	{
-		return "이미지는 검열팀의 검토가 끝난 후에 다른 사용자에게 공개됩니다";
+		return "ì´ë¯¸ì§€ëŠ” ê²€ì—´íŒ€ì˜ ê²€í† ê°€ ëë‚œ í›„ì— ë‹¤ë¥¸ ì‚¬ìš©ìžì—ê²Œ ê³µê°œë©ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForDescriptionImageNotAvailable()
 	{
-		return "이미지 사용 불가.";
+		return "ì´ë¯¸ì§€ ì‚¬ìš© ë¶ˆê°€.";
 	}
 
 	protected override string _GetTemplateForDescriptionMaximumSizeForIcon()
 	{
-		return "최대 파일 크기: 4MB";
+		return "ìµœëŒ€ íŒŒì¼ í¬ê¸°: 4MB";
 	}
 
 	protected override string _GetTemplateForDescriptionMaximumSizeForThumbnail()
 	{
-		return "최대 파일 크기: 4MB";
+		return "ìµœëŒ€ íŒŒì¼ í¬ê¸°: 4MB";
 	}
 
 	protected override string _GetTemplateForDescriptionNoGameProducts()
 	{
-		return "이 게임의 상품을 찾을 수 없습니다";
+		return "ì´ ê²Œìž„ì˜ ìƒí’ˆì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForDescriptionRecommendedResolution()
 	{
-		return "권장 해상도: 512 x 512";
+		return "ê¶Œìž¥ í•´ìƒë„: 512 x 512";
 	}
 
 	protected override string _GetTemplateForDescriptionRecommendedResolutionForIcon()
 	{
-		return "권장 해상도: 512 x 512";
+		return "ê¶Œìž¥ í•´ìƒë„: 512 x 512";
 	}
 
 	protected override string _GetTemplateForDescriptionRecommendedResolutionForThumbnail()
 	{
-		return "권장 해상도: 1920 x 1080";
+		return "ê¶Œìž¥ í•´ìƒë„: 1920 x 1080";
 	}
 
 	protected override string _GetTemplateForDescriptionScreenshotsLimitForThumbnail()
 	{
-		return "최대 10개의 스크린샷을 설정할 수 있어요.";
+		return "ìµœëŒ€ 10ê°œì˜ ìŠ¤í¬ë¦°ìƒ·ì„ ì„¤ì •í•  ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsavedChanges()
 	{
-		return "저장하지 않은 변경 사항이 삭제됩니다. 진행할까요?";
+		return "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­ì´ ì‚­ì œë©ë‹ˆë‹¤. ì§„í–‰í• ê¹Œìš”?";
 	}
 
 	protected override string _GetTemplateForHeadingBadgeDescription()
 	{
-		return "배지 설명";
+		return "ë°°ì§€ ì„¤ëª…";
 	}
 
 	protected override string _GetTemplateForHeadingBadgeName()
 	{
-		return "배지 이름";
+		return "ë°°ì§€ ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForHeadingGameDescription()
 	{
-		return "게임 설명";
+		return "ê²Œìž„ ì„¤ëª…";
 	}
 
 	protected override string _GetTemplateForHeadingGameIcon()
 	{
-		return "게임 아이콘";
+		return "ê²Œìž„ ì•„ì´ì½˜";
 	}
 
 	protected override string _GetTemplateForHeadingGameName()
 	{
-		return "게임 이름";
+		return "ê²Œìž„ ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForHeadingGameThumbnails()
 	{
-		return "게임 섬네일";
+		return "ê²Œìž„ ì„¬ë„¤ì¼";
 	}
 
 	protected override string _GetTemplateForHeadingManageTranslations()
 	{
-		return "번역 관리";
+		return "ë²ˆì—­ ê´€ë¦¬";
 	}
 
 	protected override string _GetTemplateForHeadingNoContent()
 	{
-		return "콘텐츠 없음";
+		return "ì½˜í…ì¸  ì—†ìŒ";
 	}
 
 	protected override string _GetTemplateForHeadingThumbnails()
 	{
-		return "섬네일";
+		return "ì„¬ë„¤ì¼";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationHistory()
 	{
-		return "번역 내역";
+		return "ë²ˆì—­ ë‚´ì—­";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationManagement()
 	{
-		return "번역 관리";
+		return "ë²ˆì—­ ê´€ë¦¬";
 	}
 
 	protected override string _GetTemplateForHeadingUnsavedChanges()
 	{
-		return "저장하지 않은 변경 사항";
+		return "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "설명";
+		return "ì„¤ëª…";
 	}
 
 	protected override string _GetTemplateForLabelGameInformation()
 	{
-		return "게임 정보";
+		return "ê²Œìž„ ì •ë³´";
 	}
 
 	protected override string _GetTemplateForLabelGameProducts()
 	{
-		return "게임 상품";
+		return "ê²Œìž„ ìƒí’ˆ";
 	}
 
 	protected override string _GetTemplateForLabelGameStrings()
 	{
-		return "게임 문자열";
+		return "ê²Œìž„ ë¬¸ìžì—´";
 	}
 
 	protected override string _GetTemplateForLabelIcon()
 	{
-		return "아이콘";
+		return "ì•„ì´ì½˜";
 	}
 
 	protected override string _GetTemplateForLabelImageHoverText()
 	{
-		return "현지화된 이미지";
+		return "í˜„ì§€í™”ëœ ì´ë¯¸ì§€";
 	}
 
 	protected override string _GetTemplateForLabelName()
 	{
-		return "이름";
+		return "ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelTextToTranslate()
 	{
-		return "번역할 텍스트";
+		return "ë²ˆì—­í•  í…ìŠ¤íŠ¸";
 	}
 
 	protected override string _GetTemplateForLabelThumbnails()
 	{
-		return "섬네일";
+		return "ì„¬ë„¤ì¼";
 	}
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "본 페이지에 대한 접근 권한이 없습니다";
+		return "ë³¸ íŽ˜ì´ì§€ì— ëŒ€í•œ ì ‘ê·¼ ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseContentModerationError()
 	{
-		return "저장 실패. 콘텐츠에 문제의 소지가 있는지 확인하고 다시 시도하세요.";
+		return "ì €ìž¥ ì‹¤íŒ¨. ì½˜í…ì¸ ì— ë¬¸ì œì˜ ì†Œì§€ê°€ ìžˆëŠ”ì§€ í™•ì¸í•˜ê³  ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "오류가 발생했어요. 나중에 다시 시도하세요.";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectFormatOrSize()
 	{
-		return "저장하지 못했어요. 파일의 크기와 형식이 맞는지 확인하세요.";
+		return "ì €ìž¥í•˜ì§€ ëª»í–ˆì–´ìš”. íŒŒì¼ì˜ í¬ê¸°ì™€ í˜•ì‹ì´ ë§žëŠ”ì§€ í™•ì¸í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseNoTranslationLanguageAvailable()
 	{
-		return "번역된 콘텐츠가 없습니다. 게임 콘텐츠를 번역하려면 '로컬리제이션 구성'에서 번역할 언어를 추가하세요.";
+		return "ë²ˆì—­ëœ ì½˜í…ì¸ ê°€ ì—†ìŠµë‹ˆë‹¤. ê²Œìž„ ì½˜í…ì¸ ë¥¼ ë²ˆì—­í•˜ë ¤ë©´ 'ë¡œì»¬ë¦¬ì œì´ì…˜ êµ¬ì„±'ì—ì„œ ë²ˆì—­í•  ì–¸ì–´ë¥¼ ì¶”ê°€í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseSaveFailure()
 	{
-		return "저장할 수 없습니다. 다시 시도하세요.";
+		return "ì €ìž¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyFiles()
 	{
-		return "파일이 너무 많습니다. 한 번에 파일 10개씩만 업로드하세요.";
+		return "íŒŒì¼ì´ ë„ˆë¬´ ë§ŽìŠµë‹ˆë‹¤. í•œ ë²ˆì— íŒŒì¼ 10ê°œì”©ë§Œ ì—…ë¡œë“œí•˜ì„¸ìš”.";
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Localization.Core.Implementationsinternal {
+    class LanguageFamily : IEquatable<LanguageFamily>, ILanguageFamily, ILanguageFamilyIdentifier
 
-namespace Roblox.Platform.Localization.Core.Implementations;
-
-internal class LanguageFamily : IEquatable<LanguageFamily>, ILanguageFamily, ILanguageFamilyIdentifier
 {
 	public int Id { get; }
 
@@ -38,4 +37,7 @@ internal class LanguageFamily : IEquatable<LanguageFamily>, ILanguageFamily, ILa
 	{
 		return 0x17 ^ Id.GetHashCode() ^ Name.GetHashCode() ^ NativeName.GetHashCode() ^ LanguageCode.GetHashCode();
 	}
+}
+
+
 }

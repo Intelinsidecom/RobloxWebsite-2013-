@@ -1,10 +1,12 @@
-using Roblox.Platform.Localization.Audit;
+﻿using Roblox.Platform.Localization.Audit;
+namespace Roblox.Localization.Accountsinternal {
+    interface IAccountLocalesChangeAgentTypeConverter
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal interface IAccountLocalesChangeAgentTypeConverter
 {
 	byte GetEntityIdFromEnum(AccountLocalesChangeAgentType changeAgentType);
 
 	AccountLocalesChangeAgentType GetEnumFromEntity(IAccountLocalesChangeAgentTypeEntity changeAgentTypeEntity);
+}
+
+
 }

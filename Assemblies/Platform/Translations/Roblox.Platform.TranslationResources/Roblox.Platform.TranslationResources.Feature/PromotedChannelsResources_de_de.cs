@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PromotedChannelsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,7 +11,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	/// The button text for adding an additional social link.
 	/// English String: "Add Link"
 	/// </summary>
-	public override string ActionAddLink => "Link hinzufügen";
+	public override string ActionAddLink => "Link hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.Remove"
@@ -74,14 +74,14 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	/// The message displayed when the social link has been removed.
 	/// English String: "The social media link has been deleted."
 	/// </summary>
-	public override string MessageSocialLinkRemoved => "Der Link zum sozialen Netzwerk wurde gelöscht.";
+	public override string MessageSocialLinkRemoved => "Der Link zum sozialen Netzwerk wurde gelÃ¶scht.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinksEditDisabledError"
 	/// The error message displayed when the social links feature is disabled and attempt to be edited.
 	/// English String: "Social links may not be edited at this time."
 	/// </summary>
-	public override string MessageSocialLinksEditDisabledError => "Links zu sozialen Netzwerken können derzeit nicht bearbeitet werden.";
+	public override string MessageSocialLinksEditDisabledError => "Links zu sozialen Netzwerken kÃ¶nnen derzeit nicht bearbeitet werden.";
 
 	/// <summary>
 	/// Key: "Message.TitleEmptyError"
@@ -132,7 +132,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForActionAddLink()
 	{
-		return "Link hinzufügen";
+		return "Link hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionRemove()
@@ -162,12 +162,12 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string LabelLimits(string socialLinkLimit)
 	{
-		return $"Du kannst bis zu {socialLinkLimit} Links zu sozialen Netzwerken hinzufügen.";
+		return $"Du kannst bis zu {socialLinkLimit} Links zu sozialen Netzwerken hinzufÃ¼gen.";
 	}
 
 	protected override string _GetTemplateForLabelLimits()
 	{
-		return "Du kannst bis zu {socialLinkLimit} Links zu sozialen Netzwerken hinzufügen.";
+		return "Du kannst bis zu {socialLinkLimit} Links zu sozialen Netzwerken hinzufÃ¼gen.";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
@@ -192,7 +192,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageSocialLinkRemoved()
 	{
-		return "Der Link zum sozialen Netzwerk wurde gelöscht.";
+		return "Der Link zum sozialen Netzwerk wurde gelÃ¶scht.";
 	}
 
 	/// <summary>
@@ -212,7 +212,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageSocialLinksEditDisabledError()
 	{
-		return "Links zu sozialen Netzwerken können derzeit nicht bearbeitet werden.";
+		return "Links zu sozialen Netzwerken kÃ¶nnen derzeit nicht bearbeitet werden.";
 	}
 
 	/// <summary>
@@ -222,12 +222,12 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkTypeLimitError(string socialMediaType)
 	{
-		return $"Du kannst höchstens einen Link zum sozialen Netzwerk „{socialMediaType}“ haben.";
+		return $"Du kannst hÃ¶chstens einen Link zum sozialen Netzwerk â€ž{socialMediaType}â€œ haben.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkTypeLimitError()
 	{
-		return "Du kannst höchstens einen Link zum sozialen Netzwerk „{socialMediaType}“ haben.";
+		return "Du kannst hÃ¶chstens einen Link zum sozialen Netzwerk â€ž{socialMediaType}â€œ haben.";
 	}
 
 	protected override string _GetTemplateForMessageTitleEmptyError()
@@ -259,4 +259,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	{
 		return "Die URL muss zur Art des sozialen Netzwerks passen.";
 	}
+}
+
+
 }

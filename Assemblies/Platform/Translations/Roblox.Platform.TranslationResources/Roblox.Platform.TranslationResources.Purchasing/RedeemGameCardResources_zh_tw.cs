@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RedeemGameCardResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,126 +11,126 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 	/// button text
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionDialogClose => "關閉";
+	public override string ActionDialogClose => "é—œé–‰";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Login"
 	/// button text
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionDialogLogin => "登入";
+	public override string ActionDialogLogin => "ç™»å…¥";
 
 	/// <summary>
 	/// Key: "Action.Dialog.SignUp"
 	/// button text
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string ActionDialogSignUp => "註冊";
+	public override string ActionDialogSignUp => "è¨»å†Š";
 
 	/// <summary>
 	/// Key: "Action.PurchaseCard"
 	/// link text
 	/// English String: "Purchase Card"
 	/// </summary>
-	public override string ActionPurchaseCard => "購買點數卡";
+	public override string ActionPurchaseCard => "è³¼è²·é»žæ•¸å¡";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
 	/// button text
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "兌換";
+	public override string ActionRedeem => "å…Œæ›";
 
 	/// <summary>
 	/// Key: "Description.CombineCards"
 	/// bullet point in a list
 	/// English String: "Combine cards for more Roblox credit."
 	/// </summary>
-	public override string DescriptionCombineCards => "合併點數卡，取得更多 Roblox 點數。";
+	public override string DescriptionCombineCards => "åˆä½µé»žæ•¸å¡ï¼Œå–å¾—æ›´å¤š Roblox é»žæ•¸ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.RobloxRedeemCard"
 	/// diglog main text
 	/// English String: "You must be logged in to your Roblox account to redeem your Game Card!"
 	/// </summary>
-	public override string DescriptionDialogRobloxRedeemCard => "若要兌換點數卡，請先登入 Roblox 帳號。";
+	public override string DescriptionDialogRobloxRedeemCard => "è‹¥è¦å…Œæ›é»žæ•¸å¡ï¼Œè«‹å…ˆç™»å…¥ Roblox å¸³è™Ÿã€‚";
 
 	/// <summary>
 	/// Key: "Description.LegalDisclaimer"
 	/// descrption text
 	/// English String: "Purchases can be made with only one form of payment. Game card credits cannot be combined with other forms of payment."
 	/// </summary>
-	public override string DescriptionLegalDisclaimer => "限以一種付款形式進行購買。點數卡點數無法與其他付款形式合併。";
+	public override string DescriptionLegalDisclaimer => "é™ä»¥ä¸€ç¨®ä»˜æ¬¾å½¢å¼é€²è¡Œè³¼è²·ã€‚é»žæ•¸å¡é»žæ•¸ç„¡æ³•èˆ‡å…¶ä»–ä»˜æ¬¾å½¢å¼åˆä½µã€‚";
 
 	/// <summary>
 	/// Key: "Description.RetailersInfo"
 	/// bullet point of a list
 	/// English String: "Buy a Roblox game card at one of the participating retailers or receive a Roblox gift card from someone."
 	/// </summary>
-	public override string DescriptionRetailersInfo => "請從合作商家購買 Roblox 點數卡，或者向他人取得 Roblox 點數卡。";
+	public override string DescriptionRetailersInfo => "è«‹å¾žåˆä½œå•†å®¶è³¼è²· Roblox é»žæ•¸å¡ï¼Œæˆ–è€…å‘ä»–äººå–å¾— Roblox é»žæ•¸å¡ã€‚";
 
 	/// <summary>
 	/// Key: "Description.SpendRobloxCredit"
 	/// bullet point of a list
 	/// English String: "Spend your Roblox credit on Robux and Builders Club!"
 	/// </summary>
-	public override string DescriptionSpendRobloxCredit => "您可以將 Roblox 點數用在 Robux 和 Builders Club！";
+	public override string DescriptionSpendRobloxCredit => "æ‚¨å¯ä»¥å°‡ Roblox é»žæ•¸ç”¨åœ¨ Robux å’Œ Builders Clubï¼";
 
 	/// <summary>
 	/// Key: "Description.TypeCardPin"
 	/// bullet point in a list
 	/// English String: "Type in your card PIN in the redeem section."
 	/// </summary>
-	public override string DescriptionTypeCardPin => "請在兌換區輸入點數卡上的 PIN。";
+	public override string DescriptionTypeCardPin => "è«‹åœ¨å…Œæ›å€è¼¸å…¥é»žæ•¸å¡ä¸Šçš„ PINã€‚";
 
 	/// <summary>
 	/// Key: "Heading.EnterPin"
 	/// section heading  - please keep PIN capitalized if the languiage supports it
 	/// English String: "Enter PIN"
 	/// </summary>
-	public override string HeadingEnterPin => "輸入 PIN";
+	public override string HeadingEnterPin => "è¼¸å…¥ PIN";
 
 	/// <summary>
 	/// Key: "Heading.GetRobloxCreditFor"
 	/// section heading
 	/// English String: "Get Roblox credit for"
 	/// </summary>
-	public override string HeadingGetRobloxCreditFor => "取得 Roblox 點數，用在";
+	public override string HeadingGetRobloxCreditFor => "å–å¾— Roblox é»žæ•¸ï¼Œç”¨åœ¨";
 
 	/// <summary>
 	/// Key: "Heading.HowToRedeem"
 	/// modal(dialog box) heading
 	/// English String: "How to Redeem"
 	/// </summary>
-	public override string HeadingHowToRedeem => "兌換方式";
+	public override string HeadingHowToRedeem => "å…Œæ›æ–¹å¼";
 
 	/// <summary>
 	/// Key: "Heading.HowToUse"
 	/// section heading
 	/// English String: "How to Use"
 	/// </summary>
-	public override string HeadingHowToUse => "使用說明";
+	public override string HeadingHowToUse => "ä½¿ç”¨èªªæ˜Ž";
 
 	/// <summary>
 	/// Key: "Heading.RedeemRobloxCards"
 	/// page heading
 	/// English String: "Redeem Roblox cards"
 	/// </summary>
-	public override string HeadingRedeemRobloxCards => "兌換 Roblox 點數卡";
+	public override string HeadingRedeemRobloxCards => "å…Œæ› Roblox é»žæ•¸å¡";
 
 	/// <summary>
 	/// Key: "Label.Dialog.RedeemGameCard"
 	/// dialog title
 	/// English String: "Redeem Roblox Game Card"
 	/// </summary>
-	public override string LabelDialogRedeemGameCard => "兌換 Roblox 點數卡";
+	public override string LabelDialogRedeemGameCard => "å…Œæ› Roblox é»žæ•¸å¡";
 
 	/// <summary>
 	/// Key: "Label.NeedGameCard"
 	/// label
 	/// English String: "Need a Roblox game card?"
 	/// </summary>
-	public override string LabelNeedGameCard => "需要 Roblox 點數卡？";
+	public override string LabelNeedGameCard => "éœ€è¦ Roblox é»žæ•¸å¡ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.PinCode"
@@ -143,119 +143,119 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 	/// Key: "Label.RobuxRedeemed"
 	/// English String: "Robux Redeemed:"
 	/// </summary>
-	public override string LabelRobuxRedeemed => "已兌換 Robux：";
+	public override string LabelRobuxRedeemed => "å·²å…Œæ› Robuxï¼š";
 
 	/// <summary>
 	/// Key: "Label.YourBalance"
 	/// label
 	/// English String: "Your Credit Balance:"
 	/// </summary>
-	public override string LabelYourBalance => "您的點數餘額：";
+	public override string LabelYourBalance => "æ‚¨çš„é»žæ•¸é¤˜é¡ï¼š";
 
 	/// <summary>
 	/// Key: "Response.AlreadyRedeemedError"
 	/// error message
 	/// English String: "This gift card has already been redeemed."
 	/// </summary>
-	public override string ResponseAlreadyRedeemedError => "此點數卡已被兌換。";
+	public override string ResponseAlreadyRedeemedError => "æ­¤é»žæ•¸å¡å·²è¢«å…Œæ›ã€‚";
 
 	/// <summary>
 	/// Key: "Response.BonusPreview"
 	/// success message upsell text
 	/// English String: "Redeem one more Roblox card from GameStop to receive your bonus Robux."
 	/// </summary>
-	public override string ResponseBonusPreview => "您只要再兌換一張 GameStop 的 Roblox 點數卡，就可以獲得獎勵 Robux。";
+	public override string ResponseBonusPreview => "æ‚¨åªè¦å†å…Œæ›ä¸€å¼µ GameStop çš„ Roblox é»žæ•¸å¡ï¼Œå°±å¯ä»¥ç²å¾—çŽå‹µ Robuxã€‚";
 
 	/// <summary>
 	/// Key: "Response.BuildersClubExtended"
 	/// success message
 	/// English String: "Your Builders Club Membership has successfully been extended!"
 	/// </summary>
-	public override string ResponseBuildersClubExtended => "成功延長 Builders Club 會員資格！";
+	public override string ResponseBuildersClubExtended => "æˆåŠŸå»¶é•· Builders Club æœƒå“¡è³‡æ ¼ï¼";
 
 	/// <summary>
 	/// Key: "Response.BuildersClubExtendedSubText"
 	/// sub text on success message
 	/// English String: "Please allow up to 5 minutes for the changes to take effect."
 	/// </summary>
-	public override string ResponseBuildersClubExtendedSubText => "更新將在 5 分鐘內生效。";
+	public override string ResponseBuildersClubExtendedSubText => "æ›´æ–°å°‡åœ¨ 5 åˆ†é˜å…§ç”Ÿæ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Response.BuildersClubRedeemed"
 	/// success message
 	/// English String: "Your Builders Club Membership has successfully been redeemed!"
 	/// </summary>
-	public override string ResponseBuildersClubRedeemed => "成功兌換 Builders Club 會員資格！";
+	public override string ResponseBuildersClubRedeemed => "æˆåŠŸå…Œæ› Builders Club æœƒå“¡è³‡æ ¼ï¼";
 
 	/// <summary>
 	/// Key: "Response.CodeNotFoundError"
 	/// error message
 	/// English String: "No matching code found."
 	/// </summary>
-	public override string ResponseCodeNotFoundError => "沒有找到相符代碼。";
+	public override string ResponseCodeNotFoundError => "æ²’æœ‰æ‰¾åˆ°ç›¸ç¬¦ä»£ç¢¼ã€‚";
 
 	/// <summary>
 	/// Key: "Response.CouldNotFindObject"
 	/// error message
 	/// English String: "Could not find requested object."
 	/// </summary>
-	public override string ResponseCouldNotFindObject => "找不到請求的物件。";
+	public override string ResponseCouldNotFindObject => "æ‰¾ä¸åˆ°è«‹æ±‚çš„ç‰©ä»¶ã€‚";
 
 	/// <summary>
 	/// Key: "Response.FeatureDisabledError"
 	/// error message
 	/// English String: "This feature is currently disabled."
 	/// </summary>
-	public override string ResponseFeatureDisabledError => "此功能目前停用。";
+	public override string ResponseFeatureDisabledError => "æ­¤åŠŸèƒ½ç›®å‰åœç”¨ã€‚";
 
 	/// <summary>
 	/// Key: "Response.GenericError"
 	/// error message
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string ResponseGenericError => "發生錯誤，請稍後再試。";
+	public override string ResponseGenericError => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.InvalidPIN"
 	/// error message
 	/// English String: "Invalid PIN"
 	/// </summary>
-	public override string ResponseInvalidPIN => "PIN 無效";
+	public override string ResponseInvalidPIN => "PIN ç„¡æ•ˆ";
 
 	/// <summary>
 	/// Key: "Response.LoginRequiredError"
 	/// error message
 	/// English String: "You must be logged in to perform this action."
 	/// </summary>
-	public override string ResponseLoginRequiredError => "若要執行此動作，請先登入。";
+	public override string ResponseLoginRequiredError => "è‹¥è¦åŸ·è¡Œæ­¤å‹•ä½œï¼Œè«‹å…ˆç™»å…¥ã€‚";
 
 	/// <summary>
 	/// Key: "Response.ObjectNotFoundError"
 	/// error message
 	/// English String: "Could not find the requested object. Please try your request again and contact customer service if this problem persists."
 	/// </summary>
-	public override string ResponseObjectNotFoundError => "找不到請求的物件，請重新嘗試。若此問題持續，請聯絡客服人員。";
+	public override string ResponseObjectNotFoundError => "æ‰¾ä¸åˆ°è«‹æ±‚çš„ç‰©ä»¶ï¼Œè«‹é‡æ–°å˜—è©¦ã€‚è‹¥æ­¤å•é¡ŒæŒçºŒï¼Œè«‹è¯çµ¡å®¢æœäººå“¡ã€‚";
 
 	/// <summary>
 	/// Key: "Response.RedeemSuccess"
 	/// success message
 	/// English String: "You have successfully redeemed your card!"
 	/// </summary>
-	public override string ResponseRedeemSuccess => "成功兌換點數卡！";
+	public override string ResponseRedeemSuccess => "æˆåŠŸå…Œæ›é»žæ•¸å¡ï¼";
 
 	/// <summary>
 	/// Key: "Response.TooManyCodesRedeemedError"
 	/// error message
 	/// English String: "Too many codes redeemed. Try your request again later."
 	/// </summary>
-	public override string ResponseTooManyCodesRedeemedError => "已兌換過多代碼，請稍後再試。";
+	public override string ResponseTooManyCodesRedeemedError => "å·²å…Œæ›éŽå¤šä»£ç¢¼ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.TooManyRequestsError"
 	/// error messages
 	/// English String: "Too many failed request attempts. Try your request again later."
 	/// </summary>
-	public override string ResponseTooManyRequestsError => "請求失敗次數過多，請稍後再試。";
+	public override string ResponseTooManyRequestsError => "è«‹æ±‚å¤±æ•—æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	public RedeemGameCardResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -264,42 +264,42 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForActionDialogClose()
 	{
-		return "關閉";
+		return "é—œé–‰";
 	}
 
 	protected override string _GetTemplateForActionDialogLogin()
 	{
-		return "登入";
+		return "ç™»å…¥";
 	}
 
 	protected override string _GetTemplateForActionDialogSignUp()
 	{
-		return "註冊";
+		return "è¨»å†Š";
 	}
 
 	protected override string _GetTemplateForActionPurchaseCard()
 	{
-		return "購買點數卡";
+		return "è³¼è²·é»žæ•¸å¡";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "兌換";
+		return "å…Œæ›";
 	}
 
 	protected override string _GetTemplateForDescriptionCombineCards()
 	{
-		return "合併點數卡，取得更多 Roblox 點數。";
+		return "åˆä½µé»žæ•¸å¡ï¼Œå–å¾—æ›´å¤š Roblox é»žæ•¸ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogRobloxRedeemCard()
 	{
-		return "若要兌換點數卡，請先登入 Roblox 帳號。";
+		return "è‹¥è¦å…Œæ›é»žæ•¸å¡ï¼Œè«‹å…ˆç™»å…¥ Roblox å¸³è™Ÿã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionLegalDisclaimer()
 	{
-		return "限以一種付款形式進行購買。點數卡點數無法與其他付款形式合併。";
+		return "é™ä»¥ä¸€ç¨®ä»˜æ¬¾å½¢å¼é€²è¡Œè³¼è²·ã€‚é»žæ•¸å¡é»žæ•¸ç„¡æ³•èˆ‡å…¶ä»–ä»˜æ¬¾å½¢å¼åˆä½µã€‚";
 	}
 
 	/// <summary>
@@ -309,62 +309,62 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string DescriptionRetailerLink(string retailerLinkStart, string retailerLinkEnd)
 	{
-		return $"請從{retailerLinkStart}合作商家{retailerLinkEnd}購買 Roblox 點數卡，或者向他人取得 Roblox 點數卡。 ";
+		return $"è«‹å¾ž{retailerLinkStart}åˆä½œå•†å®¶{retailerLinkEnd}è³¼è²· Roblox é»žæ•¸å¡ï¼Œæˆ–è€…å‘ä»–äººå–å¾— Roblox é»žæ•¸å¡ã€‚ ";
 	}
 
 	protected override string _GetTemplateForDescriptionRetailerLink()
 	{
-		return "請從{retailerLinkStart}合作商家{retailerLinkEnd}購買 Roblox 點數卡，或者向他人取得 Roblox 點數卡。 ";
+		return "è«‹å¾ž{retailerLinkStart}åˆä½œå•†å®¶{retailerLinkEnd}è³¼è²· Roblox é»žæ•¸å¡ï¼Œæˆ–è€…å‘ä»–äººå–å¾— Roblox é»žæ•¸å¡ã€‚ ";
 	}
 
 	protected override string _GetTemplateForDescriptionRetailersInfo()
 	{
-		return "請從合作商家購買 Roblox 點數卡，或者向他人取得 Roblox 點數卡。";
+		return "è«‹å¾žåˆä½œå•†å®¶è³¼è²· Roblox é»žæ•¸å¡ï¼Œæˆ–è€…å‘ä»–äººå–å¾— Roblox é»žæ•¸å¡ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSpendRobloxCredit()
 	{
-		return "您可以將 Roblox 點數用在 Robux 和 Builders Club！";
+		return "æ‚¨å¯ä»¥å°‡ Roblox é»žæ•¸ç”¨åœ¨ Robux å’Œ Builders Clubï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionTypeCardPin()
 	{
-		return "請在兌換區輸入點數卡上的 PIN。";
+		return "è«‹åœ¨å…Œæ›å€è¼¸å…¥é»žæ•¸å¡ä¸Šçš„ PINã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingEnterPin()
 	{
-		return "輸入 PIN";
+		return "è¼¸å…¥ PIN";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobloxCreditFor()
 	{
-		return "取得 Roblox 點數，用在";
+		return "å–å¾— Roblox é»žæ•¸ï¼Œç”¨åœ¨";
 	}
 
 	protected override string _GetTemplateForHeadingHowToRedeem()
 	{
-		return "兌換方式";
+		return "å…Œæ›æ–¹å¼";
 	}
 
 	protected override string _GetTemplateForHeadingHowToUse()
 	{
-		return "使用說明";
+		return "ä½¿ç”¨èªªæ˜Ž";
 	}
 
 	protected override string _GetTemplateForHeadingRedeemRobloxCards()
 	{
-		return "兌換 Roblox 點數卡";
+		return "å…Œæ› Roblox é»žæ•¸å¡";
 	}
 
 	protected override string _GetTemplateForLabelDialogRedeemGameCard()
 	{
-		return "兌換 Roblox 點數卡";
+		return "å…Œæ› Roblox é»žæ•¸å¡";
 	}
 
 	protected override string _GetTemplateForLabelNeedGameCard()
 	{
-		return "需要 Roblox 點數卡？";
+		return "éœ€è¦ Roblox é»žæ•¸å¡ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelPinCode()
@@ -374,67 +374,67 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForLabelRobuxRedeemed()
 	{
-		return "已兌換 Robux：";
+		return "å·²å…Œæ› Robuxï¼š";
 	}
 
 	protected override string _GetTemplateForLabelYourBalance()
 	{
-		return "您的點數餘額：";
+		return "æ‚¨çš„é»žæ•¸é¤˜é¡ï¼š";
 	}
 
 	protected override string _GetTemplateForResponseAlreadyRedeemedError()
 	{
-		return "此點數卡已被兌換。";
+		return "æ­¤é»žæ•¸å¡å·²è¢«å…Œæ›ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseBonusPreview()
 	{
-		return "您只要再兌換一張 GameStop 的 Roblox 點數卡，就可以獲得獎勵 Robux。";
+		return "æ‚¨åªè¦å†å…Œæ›ä¸€å¼µ GameStop çš„ Roblox é»žæ•¸å¡ï¼Œå°±å¯ä»¥ç²å¾—çŽå‹µ Robuxã€‚";
 	}
 
 	protected override string _GetTemplateForResponseBuildersClubExtended()
 	{
-		return "成功延長 Builders Club 會員資格！";
+		return "æˆåŠŸå»¶é•· Builders Club æœƒå“¡è³‡æ ¼ï¼";
 	}
 
 	protected override string _GetTemplateForResponseBuildersClubExtendedSubText()
 	{
-		return "更新將在 5 分鐘內生效。";
+		return "æ›´æ–°å°‡åœ¨ 5 åˆ†é˜å…§ç”Ÿæ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForResponseBuildersClubRedeemed()
 	{
-		return "成功兌換 Builders Club 會員資格！";
+		return "æˆåŠŸå…Œæ› Builders Club æœƒå“¡è³‡æ ¼ï¼";
 	}
 
 	protected override string _GetTemplateForResponseCodeNotFoundError()
 	{
-		return "沒有找到相符代碼。";
+		return "æ²’æœ‰æ‰¾åˆ°ç›¸ç¬¦ä»£ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseCouldNotFindObject()
 	{
-		return "找不到請求的物件。";
+		return "æ‰¾ä¸åˆ°è«‹æ±‚çš„ç‰©ä»¶ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseFeatureDisabledError()
 	{
-		return "此功能目前停用。";
+		return "æ­¤åŠŸèƒ½ç›®å‰åœç”¨ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseGenericError()
 	{
-		return "發生錯誤，請稍後再試。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseInvalidPIN()
 	{
-		return "PIN 無效";
+		return "PIN ç„¡æ•ˆ";
 	}
 
 	protected override string _GetTemplateForResponseLoginRequiredError()
 	{
-		return "若要執行此動作，請先登入。";
+		return "è‹¥è¦åŸ·è¡Œæ­¤å‹•ä½œï¼Œè«‹å…ˆç™»å…¥ã€‚";
 	}
 
 	/// <summary>
@@ -444,22 +444,22 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string ResponseMerchantNotFoundError(string authenticatedUserId, string cardPin)
 	{
-		return $"使用者嘗試兌換 PIN，但商家不存在。使用者 ID：{authenticatedUserId} PIN：{cardPin}";
+		return $"ä½¿ç”¨è€…å˜—è©¦å…Œæ› PINï¼Œä½†å•†å®¶ä¸å­˜åœ¨ã€‚ä½¿ç”¨è€… IDï¼š{authenticatedUserId} PINï¼š{cardPin}";
 	}
 
 	protected override string _GetTemplateForResponseMerchantNotFoundError()
 	{
-		return "使用者嘗試兌換 PIN，但商家不存在。使用者 ID：{authenticatedUserId} PIN：{cardPin}";
+		return "ä½¿ç”¨è€…å˜—è©¦å…Œæ› PINï¼Œä½†å•†å®¶ä¸å­˜åœ¨ã€‚ä½¿ç”¨è€… IDï¼š{authenticatedUserId} PINï¼š{cardPin}";
 	}
 
 	protected override string _GetTemplateForResponseObjectNotFoundError()
 	{
-		return "找不到請求的物件，請重新嘗試。若此問題持續，請聯絡客服人員。";
+		return "æ‰¾ä¸åˆ°è«‹æ±‚çš„ç‰©ä»¶ï¼Œè«‹é‡æ–°å˜—è©¦ã€‚è‹¥æ­¤å•é¡ŒæŒçºŒï¼Œè«‹è¯çµ¡å®¢æœäººå“¡ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccess()
 	{
-		return "成功兌換點數卡！";
+		return "æˆåŠŸå…Œæ›é»žæ•¸å¡ï¼";
 	}
 
 	/// <summary>
@@ -469,22 +469,22 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string ResponseRedeemSuccessForProduct(string productName)
 	{
-		return $"您已成功兌換{productName}！";
+		return $"æ‚¨å·²æˆåŠŸå…Œæ›{productName}ï¼";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccessForProduct()
 	{
-		return "您已成功兌換{productName}！";
+		return "æ‚¨å·²æˆåŠŸå…Œæ›{productName}ï¼";
 	}
 
 	protected override string _GetTemplateForResponseTooManyCodesRedeemedError()
 	{
-		return "已兌換過多代碼，請稍後再試。";
+		return "å·²å…Œæ›éŽå¤šä»£ç¢¼ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseTooManyRequestsError()
 	{
-		return "請求失敗次數過多，請稍後再試。";
+		return "è«‹æ±‚å¤±æ•—æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	/// <summary>
@@ -494,12 +494,12 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string ResponseTwoCardsBonus(string robuxCount)
 	{
-		return $"謝謝您兌換兩張 GameStop 的 Roblox 點數卡，已新增 {robuxCount} Robux 到您的帳號。";
+		return $"è¬è¬æ‚¨å…Œæ›å…©å¼µ GameStop çš„ Roblox é»žæ•¸å¡ï¼Œå·²æ–°å¢ž {robuxCount} Robux åˆ°æ‚¨çš„å¸³è™Ÿã€‚";
 	}
 
 	protected override string _GetTemplateForResponseTwoCardsBonus()
 	{
-		return "謝謝您兌換兩張 GameStop 的 Roblox 點數卡，已新增 {robuxCount} Robux 到您的帳號。";
+		return "è¬è¬æ‚¨å…Œæ›å…©å¼µ GameStop çš„ Roblox é»žæ•¸å¡ï¼Œå·²æ–°å¢ž {robuxCount} Robux åˆ°æ‚¨çš„å¸³è™Ÿã€‚";
 	}
 
 	/// <summary>
@@ -509,11 +509,14 @@ internal class RedeemGameCardResources_zh_tw : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string ResponseWalmartRewardUpsell(string rewardName)
 	{
-		return $"您只要再兌換一張 Walmart 的 Roblox 點數卡，就可以獲得{rewardName}。";
+		return $"æ‚¨åªè¦å†å…Œæ›ä¸€å¼µ Walmart çš„ Roblox é»žæ•¸å¡ï¼Œå°±å¯ä»¥ç²å¾—{rewardName}ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseWalmartRewardUpsell()
 	{
-		return "您只要再兌換一張 Walmart 的 Roblox 點數卡，就可以獲得{rewardName}。";
+		return "æ‚¨åªè¦å†å…Œæ›ä¸€å¼µ Walmart çš„ Roblox é»žæ•¸å¡ï¼Œå°±å¯ä»¥ç²å¾—{rewardName}ã€‚";
 	}
+}
+
+
 }

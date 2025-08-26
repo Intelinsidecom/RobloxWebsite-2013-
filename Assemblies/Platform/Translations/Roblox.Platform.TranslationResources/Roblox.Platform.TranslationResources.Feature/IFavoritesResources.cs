@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IFavoritesResources : ITranslationResources
 
-public interface IFavoritesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "ActionAddToFavorites"
@@ -90,4 +90,7 @@ public interface IFavoritesResources : ITranslationResources
 	/// English String: "{username}'s Favorites"
 	/// </summary>
 	string HeadingUserFavorites(string username);
+}
+
+
 }

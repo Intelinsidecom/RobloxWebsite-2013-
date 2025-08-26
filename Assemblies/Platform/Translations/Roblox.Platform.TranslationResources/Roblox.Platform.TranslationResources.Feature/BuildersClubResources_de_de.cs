@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -22,13 +22,13 @@ internal class BuildersClubResources_de_de : BuildersClubResources_en_us, IBuild
 	/// Key: "Heading.BuildersClubOnly"
 	/// English String: "Builders Club Only"
 	/// </summary>
-	public override string HeadingBuildersClubOnly => "Nur für „Builders Club“-Mitglieder";
+	public override string HeadingBuildersClubOnly => "Nur fÃ¼r â€žBuilders Clubâ€œ-Mitglieder";
 
 	/// <summary>
 	/// Key: "Label.BuidlersClubOnlyClose"
 	/// English String: "Close"
 	/// </summary>
-	public override string LabelBuidlersClubOnlyClose => "Schließen";
+	public override string LabelBuidlersClubOnlyClose => "SchlieÃŸen";
 
 	public BuildersClubResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -51,21 +51,24 @@ internal class BuildersClubResources_de_de : BuildersClubResources_en_us, IBuild
 	/// </summary>
 	public override string DescriptionBuildersClubOnlyModel(string bcRequirementName)
 	{
-		return $"Dies ist ein Premium-Artikel, der nur für unsere {bcRequirementName}-Mitglieder verfügbar ist.";
+		return $"Dies ist ein Premium-Artikel, der nur fÃ¼r unsere {bcRequirementName}-Mitglieder verfÃ¼gbar ist.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubOnlyModel()
 	{
-		return "Dies ist ein Premium-Artikel, der nur für unsere {bcRequirementName}-Mitglieder verfügbar ist.";
+		return "Dies ist ein Premium-Artikel, der nur fÃ¼r unsere {bcRequirementName}-Mitglieder verfÃ¼gbar ist.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubOnly()
 	{
-		return "Nur für „Builders Club“-Mitglieder";
+		return "Nur fÃ¼r â€žBuilders Clubâ€œ-Mitglieder";
 	}
 
 	protected override string _GetTemplateForLabelBuidlersClubOnlyClose()
 	{
-		return "Schließen";
+		return "SchlieÃŸen";
 	}
+}
+
+
 }

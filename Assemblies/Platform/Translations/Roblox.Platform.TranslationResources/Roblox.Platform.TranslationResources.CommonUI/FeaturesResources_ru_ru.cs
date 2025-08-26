@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,20 +10,20 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Action.BackToTop"
 	/// English String: "Back To Top"
 	/// </summary>
-	public override string ActionBackToTop => "Наверх";
+	public override string ActionBackToTop => "ÐÐ°Ð²ÐµÑ€Ñ…";
 
 	/// <summary>
 	/// Key: "Action.BuyAccess"
 	/// Purchase access to the place button
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "Купить доступ";
+	public override string ActionBuyAccess => "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ Ð´Ð¾ÑÑ‚ÑƒÐ¿";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "Отмена";
+	public override string ActionCancel => "ÐžÑ‚Ð¼ÐµÐ½Ð°";
 
 	/// <summary>
 	/// Key: "Action.Ok"
@@ -35,283 +35,283 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Action.sUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionsUpgradeNow => "Улучшить";
+	public override string ActionsUpgradeNow => "Ð£Ð»ÑƒÑ‡ÑˆÐ¸Ñ‚ÑŒ";
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, логотип Roblox и Powering Imagination входят в число зарегистрированных и незарегистрированных товарных знаков в США и других странах.";
+	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿ Roblox Ð¸ Powering Imagination Ð²Ñ…Ð¾Ð´ÑÑ‚ Ð² Ñ‡Ð¸ÑÐ»Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð¸ Ð½ÐµÐ·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð½Ñ‹Ñ… Ð·Ð½Ð°ÐºÐ¾Ð² Ð² Ð¡Ð¨Ð Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… ÑÑ‚Ñ€Ð°Ð½Ð°Ñ….";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
 	/// English String: "While some games may use the selected language, it is not fully supported by roblox.com."
 	/// </summary>
-	public override string DescriptionUnsupportedLanguage => "Выбранный язык может использоваться в некоторых играх, однако roblox.com не поддерживает его в полной мере.";
+	public override string DescriptionUnsupportedLanguage => "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ ÑÐ·Ñ‹Ðº Ð¼Ð¾Ð¶ÐµÑ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ Ð² Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð¸Ð³Ñ€Ð°Ñ…, Ð¾Ð´Ð½Ð°ÐºÐ¾ roblox.com Ð½Ðµ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÑ‚ ÐµÐ³Ð¾ Ð² Ð¿Ð¾Ð»Ð½Ð¾Ð¹ Ð¼ÐµÑ€Ðµ.";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// Purchase access to the place
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "Купить предмет";
+	public override string HeadingBuyItem => "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚";
 
 	/// <summary>
 	/// Key: "Heading.UnsupportedLanguage"
 	/// English String: "Unsupported Language"
 	/// </summary>
-	public override string HeadingUnsupportedLanguage => "Язык не поддерживается";
+	public override string HeadingUnsupportedLanguage => "Ð¯Ð·Ñ‹Ðº Ð½Ðµ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÑ‚ÑÑ";
 
 	/// <summary>
 	/// Key: "Label.AboutUs"
 	/// English String: "About Us"
 	/// </summary>
-	public override string LabelAboutUs => "О нас";
+	public override string LabelAboutUs => "Ðž Ð½Ð°Ñ";
 
 	/// <summary>
 	/// Key: "Label.AuthenticationError"
 	/// page title
 	/// English String: "Authentication Error"
 	/// </summary>
-	public override string LabelAuthenticationError => "Ошибка авторизации";
+	public override string LabelAuthenticationError => "ÐžÑˆÐ¸Ð±ÐºÐ° Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸";
 
 	/// <summary>
 	/// Key: "Label.Badges"
 	/// page title
 	/// English String: "Badges"
 	/// </summary>
-	public override string LabelBadges => "Значки";
+	public override string LabelBadges => "Ð—Ð½Ð°Ñ‡ÐºÐ¸";
 
 	/// <summary>
 	/// Key: "Label.Careers"
 	/// English String: "Careers"
 	/// </summary>
-	public override string LabelCareers => "Работа";
+	public override string LabelCareers => "Ð Ð°Ð±Ð¾Ñ‚Ð°";
 
 	/// <summary>
 	/// Key: "Label.Configure"
 	/// Configure
 	/// English String: "Configure"
 	/// </summary>
-	public override string LabelConfigure => "Создать";
+	public override string LabelConfigure => "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGame"
 	/// configure game page title
 	/// English String: "Configure Game"
 	/// </summary>
-	public override string LabelConfigureGame => "Создать игру";
+	public override string LabelConfigureGame => "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¸Ð³Ñ€Ñƒ";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePlace"
 	/// Configure Place
 	/// English String: "Configure Place"
 	/// </summary>
-	public override string LabelConfigurePlace => "Настроить место";
+	public override string LabelConfigurePlace => "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÑŒ Ð¼ÐµÑÑ‚Ð¾";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePrivateServer"
 	/// page title
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string LabelConfigurePrivateServer => "Создать VIP сервер";
+	public override string LabelConfigurePrivateServer => "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ VIP ÑÐµÑ€Ð²ÐµÑ€";
 
 	/// <summary>
 	/// Key: "Label.ContactUs"
 	/// page title
 	/// English String: "Contact Us"
 	/// </summary>
-	public override string LabelContactUs => "Связаться с нами";
+	public override string LabelContactUs => "Ð¡Ð²ÑÐ·Ð°Ñ‚ÑŒÑÑ Ñ Ð½Ð°Ð¼Ð¸";
 
 	/// <summary>
 	/// Key: "Label.Create"
 	/// Alternate name for the "Develop" section of the website
 	/// English String: "Create"
 	/// </summary>
-	public override string LabelCreate => "Создать";
+	public override string LabelCreate => "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ";
 
 	/// <summary>
 	/// Key: "Label.CreateGame"
 	/// Create Game
 	/// English String: "Create Game"
 	/// </summary>
-	public override string LabelCreateGame => "Создать игру";
+	public override string LabelCreateGame => "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¸Ð³Ñ€Ñƒ";
 
 	/// <summary>
 	/// Key: "Label.CreateGroup"
 	/// Create Group
 	/// English String: "Create Group"
 	/// </summary>
-	public override string LabelCreateGroup => "Создать группу";
+	public override string LabelCreateGroup => "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ";
 
 	/// <summary>
 	/// Key: "Label.Discover"
 	/// English String: "Discover"
 	/// </summary>
-	public override string LabelDiscover => "Исследовать";
+	public override string LabelDiscover => "Ð˜ÑÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÑŒ";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// Favorites
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "Избранные";
+	public override string LabelFavorites => "Ð˜Ð·Ð±Ñ€Ð°Ð½Ð½Ñ‹Ðµ";
 
 	/// <summary>
 	/// Key: "Label.Feeds"
 	/// English String: "My Feed"
 	/// </summary>
-	public override string LabelFeeds => "Лента";
+	public override string LabelFeeds => "Ð›ÐµÐ½Ñ‚Ð°";
 
 	/// <summary>
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now in side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "Видите мою ленту? Тепрь она на боковом меню.";
+	public override string LabelFindMyFeed => "Ð’Ð¸Ð´Ð¸Ñ‚Ðµ Ð¼Ð¾ÑŽ Ð»ÐµÐ½Ñ‚Ñƒ? Ð¢ÐµÐ¿Ñ€ÑŒ Ð¾Ð½Ð° Ð½Ð° Ð±Ð¾ÐºÐ¾Ð²Ð¾Ð¼ Ð¼ÐµÐ½ÑŽ.";
 
 	/// <summary>
 	/// Key: "Label.Help"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelHelp => "Справка";
+	public override string LabelHelp => "Ð¡Ð¿Ñ€Ð°Ð²ÐºÐ°";
 
 	/// <summary>
 	/// Key: "Label.Jobs"
 	/// jobs link in footer
 	/// English String: "Jobs"
 	/// </summary>
-	public override string LabelJobs => "Вакансии";
+	public override string LabelJobs => "Ð’Ð°ÐºÐ°Ð½ÑÐ¸Ð¸";
 
 	/// <summary>
 	/// Key: "Label.Library"
 	/// search context for inventory search
 	/// English String: "Library"
 	/// </summary>
-	public override string LabelLibrary => "Библиотека";
+	public override string LabelLibrary => "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°";
 
 	/// <summary>
 	/// Key: "Label.Merch"
 	/// English String: "Merchandise"
 	/// </summary>
-	public override string LabelMerch => "Товар";
+	public override string LabelMerch => "Ð¢Ð¾Ð²Ð°Ñ€";
 
 	/// <summary>
 	/// Key: "Label.Parents"
 	/// English String: "Parents"
 	/// </summary>
-	public override string LabelParents => "Родители";
+	public override string LabelParents => "Ð Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ð¸";
 
 	/// <summary>
 	/// Key: "Label.PlaceStatistics"
 	/// page title
 	/// English String: "Place Statistics"
 	/// </summary>
-	public override string LabelPlaceStatistics => "Разместить статистику";
+	public override string LabelPlaceStatistics => "Ð Ð°Ð·Ð¼ÐµÑÑ‚Ð¸Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÑƒ";
 
 	/// <summary>
 	/// Key: "Label.Players"
 	/// search context for user search
 	/// English String: "Players"
 	/// </summary>
-	public override string LabelPlayers => "Игроки";
+	public override string LabelPlayers => "Ð˜Ð³Ñ€Ð¾ÐºÐ¸";
 
 	/// <summary>
 	/// Key: "Label.Privacy"
 	/// English String: "Privacy"
 	/// </summary>
-	public override string LabelPrivacy => "Конфиденциальность";
+	public override string LabelPrivacy => "ÐšÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ";
 
 	/// <summary>
 	/// Key: "Label.RedeemRobloxCards"
 	/// page title
 	/// English String: "Redeem Roblox Cards"
 	/// </summary>
-	public override string LabelRedeemRobloxCards => "Купите карты Roblox";
+	public override string LabelRedeemRobloxCards => "ÐšÑƒÐ¿Ð¸Ñ‚Ðµ ÐºÐ°Ñ€Ñ‚Ñ‹ Roblox";
 
 	/// <summary>
 	/// Key: "Label.sAvatar"
 	/// English String: "Avatar"
 	/// </summary>
-	public override string LabelsAvatar => "Аватар";
+	public override string LabelsAvatar => "ÐÐ²Ð°Ñ‚Ð°Ñ€";
 
 	/// <summary>
 	/// Key: "Label.sBlog"
 	/// English String: "Blog"
 	/// </summary>
-	public override string LabelsBlog => "Блог";
+	public override string LabelsBlog => "Ð‘Ð»Ð¾Ð³";
 
 	/// <summary>
 	/// Key: "Label.sCatalog"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string LabelsCatalog => "Каталог";
+	public override string LabelsCatalog => "ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³";
 
 	/// <summary>
 	/// Key: "Label.sDevelop"
 	/// English String: "Develop"
 	/// </summary>
-	public override string LabelsDevelop => "Разработка";
+	public override string LabelsDevelop => "Ð Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ°";
 
 	/// <summary>
 	/// Key: "Label.sEvents"
 	/// English String: "Events"
 	/// </summary>
-	public override string LabelsEvents => "События";
+	public override string LabelsEvents => "Ð¡Ð¾Ð±Ñ‹Ñ‚Ð¸Ñ";
 
 	/// <summary>
 	/// Key: "Label.sForum"
 	/// English String: "Forum"
 	/// </summary>
-	public override string LabelsForum => "Форум";
+	public override string LabelsForum => "Ð¤Ð¾Ñ€ÑƒÐ¼";
 
 	/// <summary>
 	/// Key: "Label.sFriends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelsFriends => "Друзья";
+	public override string LabelsFriends => "Ð”Ñ€ÑƒÐ·ÑŒÑ";
 
 	/// <summary>
 	/// Key: "Label.sGames"
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelsGames => "Игры";
+	public override string LabelsGames => "Ð˜Ð³Ñ€Ñ‹";
 
 	/// <summary>
 	/// Key: "Label.sGroups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string LabelsGroups => "Группы";
+	public override string LabelsGroups => "Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹";
 
 	/// <summary>
 	/// Key: "Label.sHome"
 	/// English String: "Home"
 	/// </summary>
-	public override string LabelsHome => "Главная";
+	public override string LabelsHome => "Ð“Ð»Ð°Ð²Ð½Ð°Ñ";
 
 	/// <summary>
 	/// Key: "Label.sInventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string LabelsInventory => "Инвентарь";
+	public override string LabelsInventory => "Ð˜Ð½Ð²ÐµÐ½Ñ‚Ð°Ñ€ÑŒ";
 
 	/// <summary>
 	/// Key: "Label.sLogin"
 	/// English String: "Log In"
 	/// </summary>
-	public override string LabelsLogin => "Вход";
+	public override string LabelsLogin => "Ð’Ñ…Ð¾Ð´";
 
 	/// <summary>
 	/// Key: "Label.sMessages"
 	/// English String: "Messages"
 	/// </summary>
-	public override string LabelsMessages => "Сообщения";
+	public override string LabelsMessages => "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
 
 	/// <summary>
 	/// Key: "Label.sProfile"
 	/// English String: "Profile"
 	/// </summary>
-	public override string LabelsProfile => "Профиль";
+	public override string LabelsProfile => "ÐŸÑ€Ð¾Ñ„Ð¸Ð»ÑŒ";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -323,65 +323,65 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sSearch"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelsSearch => "Поиск";
+	public override string LabelsSearch => "ÐŸÐ¾Ð¸ÑÐº";
 
 	/// <summary>
 	/// Key: "Label.sShop"
 	/// English String: "Shop"
 	/// </summary>
-	public override string LabelsShop => "Магазин";
+	public override string LabelsShop => "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
 
 	/// <summary>
 	/// Key: "Label.sSignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string LabelsSignUp => "Регистрация";
+	public override string LabelsSignUp => "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ";
 
 	/// <summary>
 	/// Key: "Label.Store"
 	/// English String: "Store"
 	/// </summary>
-	public override string LabelStore => "Магазин";
+	public override string LabelStore => "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
 
 	/// <summary>
 	/// Key: "Label.sTrade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string LabelsTrade => "Торговля";
+	public override string LabelsTrade => "Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ð»Ñ";
 
 	/// <summary>
 	/// Key: "Label.Support"
 	/// page title
 	/// English String: "Support"
 	/// </summary>
-	public override string LabelSupport => "Поддержка";
+	public override string LabelSupport => "ÐŸÐ¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ°";
 
 	/// <summary>
 	/// Key: "Label.Terms"
 	/// English String: "Terms"
 	/// </summary>
-	public override string LabelTerms => "Условия";
+	public override string LabelTerms => "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "Условия использования";
+	public override string LabelTermsOfUse => "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ";
 
 	/// <summary>
 	/// Key: "Label.Thanks"
 	/// page title
 	/// English String: "Thanks"
 	/// </summary>
-	public override string LabelThanks => "Спасибо";
+	public override string LabelThanks => "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾";
 
 	/// <summary>
 	/// Key: "Label.Upgrade"
 	/// Upgrade
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string LabelUpgrade => "Улучшить";
+	public override string LabelUpgrade => "Ð£Ð»ÑƒÑ‡ÑˆÐ¸Ñ‚ÑŒ";
 
 	public FeaturesResources_ru_ru(TranslationResourceState state)
 		: base(state)
@@ -390,17 +390,17 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForActionBackToTop()
 	{
-		return "Наверх";
+		return "ÐÐ°Ð²ÐµÑ€Ñ…";
 	}
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "Купить доступ";
+		return "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ Ð´Ð¾ÑÑ‚ÑƒÐ¿";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "Отмена";
+		return "ÐžÑ‚Ð¼ÐµÐ½Ð°";
 	}
 
 	protected override string _GetTemplateForActionOk()
@@ -410,7 +410,7 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForActionsUpgradeNow()
 	{
-		return "Улучшить";
+		return "Ð£Ð»ÑƒÑ‡ÑˆÐ¸Ñ‚ÑŒ";
 	}
 
 	/// <summary>
@@ -419,37 +419,37 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string BuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"Хотите купить доступ: {placeName} от {creatorName} за {robux}?";
+		return $"Ð¥Ð¾Ñ‚Ð¸Ñ‚Ðµ ÐºÑƒÐ¿Ð¸Ñ‚ÑŒ Ð´Ð¾ÑÑ‚ÑƒÐ¿: {placeName} Ð¾Ñ‚ {creatorName} Ð·Ð° {robux}?";
 	}
 
 	protected override string _GetTemplateForBuyAccessToGameForModal()
 	{
-		return "Хотите купить доступ: {placeName} от {creatorName} за {robux}?";
+		return "Ð¥Ð¾Ñ‚Ð¸Ñ‚Ðµ ÐºÑƒÐ¿Ð¸Ñ‚ÑŒ Ð´Ð¾ÑÑ‚ÑƒÐ¿: {placeName} Ð¾Ñ‚ {creatorName} Ð·Ð° {robux}?";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "©2018 Roblox Corporation. Roblox, логотип Roblox и Powering Imagination входят в число зарегистрированных и незарегистрированных товарных знаков в США и других странах.";
+		return "Â©2018 Roblox Corporation. Roblox, Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿ Roblox Ð¸ Powering Imagination Ð²Ñ…Ð¾Ð´ÑÑ‚ Ð² Ñ‡Ð¸ÑÐ»Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð¸ Ð½ÐµÐ·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð½Ñ‹Ñ… Ð·Ð½Ð°ÐºÐ¾Ð² Ð² Ð¡Ð¨Ð Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… ÑÑ‚Ñ€Ð°Ð½Ð°Ñ….";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"©{copyrightYear} Roblox Corporation. Roblox, логотип Roblox и Powering Imagination входят в число зарегистрированных и незарегистрированных товарных знаков в США и других странах.";
+		return $"Â©{copyrightYear} Roblox Corporation. Roblox, Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿ Roblox Ð¸ Powering Imagination Ð²Ñ…Ð¾Ð´ÑÑ‚ Ð² Ñ‡Ð¸ÑÐ»Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð¸ Ð½ÐµÐ·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð½Ñ‹Ñ… Ð·Ð½Ð°ÐºÐ¾Ð² Ð² Ð¡Ð¨Ð Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… ÑÑ‚Ñ€Ð°Ð½Ð°Ñ….";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "©{copyrightYear} Roblox Corporation. Roblox, логотип Roblox и Powering Imagination входят в число зарегистрированных и незарегистрированных товарных знаков в США и других странах.";
+		return "Â©{copyrightYear} Roblox Corporation. Roblox, Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿ Roblox Ð¸ Powering Imagination Ð²Ñ…Ð¾Ð´ÑÑ‚ Ð² Ñ‡Ð¸ÑÐ»Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð¸ Ð½ÐµÐ·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð½Ñ‹Ñ… Ð·Ð½Ð°ÐºÐ¾Ð² Ð² Ð¡Ð¨Ð Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… ÑÑ‚Ñ€Ð°Ð½Ð°Ñ….";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
 	{
-		return "Выбранный язык может использоваться в некоторых играх, однако roblox.com не поддерживает его в полной мере.";
+		return "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ ÑÐ·Ñ‹Ðº Ð¼Ð¾Ð¶ÐµÑ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ Ð² Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð¸Ð³Ñ€Ð°Ñ…, Ð¾Ð´Ð½Ð°ÐºÐ¾ roblox.com Ð½Ðµ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÑ‚ ÐµÐ³Ð¾ Ð² Ð¿Ð¾Ð»Ð½Ð¾Ð¹ Ð¼ÐµÑ€Ðµ.";
 	}
 
 	/// <summary>
@@ -458,217 +458,217 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string DescriptionUnsupportedLanguageModal(string userLanguage, string platformLanguage)
 	{
-		return $"Данный язык ({userLanguage}) в настоящее время недоступен на roblox.com. Вы сможете играть в игры на этом языке ({platformLanguage}), однако для roblox.com будет установлен английский язык.";
+		return $"Ð”Ð°Ð½Ð½Ñ‹Ð¹ ÑÐ·Ñ‹Ðº ({userLanguage}) Ð² Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð²Ñ€ÐµÐ¼Ñ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ð½Ð° roblox.com. Ð’Ñ‹ ÑÐ¼Ð¾Ð¶ÐµÑ‚Ðµ Ð¸Ð³Ñ€Ð°Ñ‚ÑŒ Ð² Ð¸Ð³Ñ€Ñ‹ Ð½Ð° ÑÑ‚Ð¾Ð¼ ÑÐ·Ñ‹ÐºÐµ ({platformLanguage}), Ð¾Ð´Ð½Ð°ÐºÐ¾ Ð´Ð»Ñ roblox.com Ð±ÑƒÐ´ÐµÑ‚ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½ Ð°Ð½Ð³Ð»Ð¸Ð¹ÑÐºÐ¸Ð¹ ÑÐ·Ñ‹Ðº.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguageModal()
 	{
-		return "Данный язык ({userLanguage}) в настоящее время недоступен на roblox.com. Вы сможете играть в игры на этом языке ({platformLanguage}), однако для roblox.com будет установлен английский язык.";
+		return "Ð”Ð°Ð½Ð½Ñ‹Ð¹ ÑÐ·Ñ‹Ðº ({userLanguage}) Ð² Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð²Ñ€ÐµÐ¼Ñ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ð½Ð° roblox.com. Ð’Ñ‹ ÑÐ¼Ð¾Ð¶ÐµÑ‚Ðµ Ð¸Ð³Ñ€Ð°Ñ‚ÑŒ Ð² Ð¸Ð³Ñ€Ñ‹ Ð½Ð° ÑÑ‚Ð¾Ð¼ ÑÐ·Ñ‹ÐºÐµ ({platformLanguage}), Ð¾Ð´Ð½Ð°ÐºÐ¾ Ð´Ð»Ñ roblox.com Ð±ÑƒÐ´ÐµÑ‚ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½ Ð°Ð½Ð³Ð»Ð¸Ð¹ÑÐºÐ¸Ð¹ ÑÐ·Ñ‹Ðº.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "Купить предмет";
+		return "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚";
 	}
 
 	protected override string _GetTemplateForHeadingUnsupportedLanguage()
 	{
-		return "Язык не поддерживается";
+		return "Ð¯Ð·Ñ‹Ðº Ð½Ðµ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÑ‚ÑÑ";
 	}
 
 	protected override string _GetTemplateForLabelAboutUs()
 	{
-		return "О нас";
+		return "Ðž Ð½Ð°Ñ";
 	}
 
 	protected override string _GetTemplateForLabelAuthenticationError()
 	{
-		return "Ошибка авторизации";
+		return "ÐžÑˆÐ¸Ð±ÐºÐ° Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸";
 	}
 
 	protected override string _GetTemplateForLabelBadges()
 	{
-		return "Значки";
+		return "Ð—Ð½Ð°Ñ‡ÐºÐ¸";
 	}
 
 	protected override string _GetTemplateForLabelCareers()
 	{
-		return "Работа";
+		return "Ð Ð°Ð±Ð¾Ñ‚Ð°";
 	}
 
 	protected override string _GetTemplateForLabelConfigure()
 	{
-		return "Создать";
+		return "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGame()
 	{
-		return "Создать игру";
+		return "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¸Ð³Ñ€Ñƒ";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePlace()
 	{
-		return "Настроить место";
+		return "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÑŒ Ð¼ÐµÑÑ‚Ð¾";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePrivateServer()
 	{
-		return "Создать VIP сервер";
+		return "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ VIP ÑÐµÑ€Ð²ÐµÑ€";
 	}
 
 	protected override string _GetTemplateForLabelContactUs()
 	{
-		return "Связаться с нами";
+		return "Ð¡Ð²ÑÐ·Ð°Ñ‚ÑŒÑÑ Ñ Ð½Ð°Ð¼Ð¸";
 	}
 
 	protected override string _GetTemplateForLabelCreate()
 	{
-		return "Создать";
+		return "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGame()
 	{
-		return "Создать игру";
+		return "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¸Ð³Ñ€Ñƒ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroup()
 	{
-		return "Создать группу";
+		return "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ";
 	}
 
 	protected override string _GetTemplateForLabelDiscover()
 	{
-		return "Исследовать";
+		return "Ð˜ÑÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÑŒ";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "Избранные";
+		return "Ð˜Ð·Ð±Ñ€Ð°Ð½Ð½Ñ‹Ðµ";
 	}
 
 	protected override string _GetTemplateForLabelFeeds()
 	{
-		return "Лента";
+		return "Ð›ÐµÐ½Ñ‚Ð°";
 	}
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "Видите мою ленту? Тепрь она на боковом меню.";
+		return "Ð’Ð¸Ð´Ð¸Ñ‚Ðµ Ð¼Ð¾ÑŽ Ð»ÐµÐ½Ñ‚Ñƒ? Ð¢ÐµÐ¿Ñ€ÑŒ Ð¾Ð½Ð° Ð½Ð° Ð±Ð¾ÐºÐ¾Ð²Ð¾Ð¼ Ð¼ÐµÐ½ÑŽ.";
 	}
 
 	protected override string _GetTemplateForLabelHelp()
 	{
-		return "Справка";
+		return "Ð¡Ð¿Ñ€Ð°Ð²ÐºÐ°";
 	}
 
 	protected override string _GetTemplateForLabelJobs()
 	{
-		return "Вакансии";
+		return "Ð’Ð°ÐºÐ°Ð½ÑÐ¸Ð¸";
 	}
 
 	protected override string _GetTemplateForLabelLibrary()
 	{
-		return "Библиотека";
+		return "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°";
 	}
 
 	protected override string _GetTemplateForLabelMerch()
 	{
-		return "Товар";
+		return "Ð¢Ð¾Ð²Ð°Ñ€";
 	}
 
 	protected override string _GetTemplateForLabelParents()
 	{
-		return "Родители";
+		return "Ð Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ð¸";
 	}
 
 	protected override string _GetTemplateForLabelPlaceStatistics()
 	{
-		return "Разместить статистику";
+		return "Ð Ð°Ð·Ð¼ÐµÑÑ‚Ð¸Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÑƒ";
 	}
 
 	protected override string _GetTemplateForLabelPlayers()
 	{
-		return "Игроки";
+		return "Ð˜Ð³Ñ€Ð¾ÐºÐ¸";
 	}
 
 	protected override string _GetTemplateForLabelPrivacy()
 	{
-		return "Конфиденциальность";
+		return "ÐšÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ";
 	}
 
 	protected override string _GetTemplateForLabelRedeemRobloxCards()
 	{
-		return "Купите карты Roblox";
+		return "ÐšÑƒÐ¿Ð¸Ñ‚Ðµ ÐºÐ°Ñ€Ñ‚Ñ‹ Roblox";
 	}
 
 	protected override string _GetTemplateForLabelsAvatar()
 	{
-		return "Аватар";
+		return "ÐÐ²Ð°Ñ‚Ð°Ñ€";
 	}
 
 	protected override string _GetTemplateForLabelsBlog()
 	{
-		return "Блог";
+		return "Ð‘Ð»Ð¾Ð³";
 	}
 
 	protected override string _GetTemplateForLabelsCatalog()
 	{
-		return "Каталог";
+		return "ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³";
 	}
 
 	protected override string _GetTemplateForLabelsDevelop()
 	{
-		return "Разработка";
+		return "Ð Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ°";
 	}
 
 	protected override string _GetTemplateForLabelsEvents()
 	{
-		return "События";
+		return "Ð¡Ð¾Ð±Ñ‹Ñ‚Ð¸Ñ";
 	}
 
 	protected override string _GetTemplateForLabelsForum()
 	{
-		return "Форум";
+		return "Ð¤Ð¾Ñ€ÑƒÐ¼";
 	}
 
 	protected override string _GetTemplateForLabelsFriends()
 	{
-		return "Друзья";
+		return "Ð”Ñ€ÑƒÐ·ÑŒÑ";
 	}
 
 	protected override string _GetTemplateForLabelsGames()
 	{
-		return "Игры";
+		return "Ð˜Ð³Ñ€Ñ‹";
 	}
 
 	protected override string _GetTemplateForLabelsGroups()
 	{
-		return "Группы";
+		return "Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹";
 	}
 
 	protected override string _GetTemplateForLabelsHome()
 	{
-		return "Главная";
+		return "Ð“Ð»Ð°Ð²Ð½Ð°Ñ";
 	}
 
 	protected override string _GetTemplateForLabelsInventory()
 	{
-		return "Инвентарь";
+		return "Ð˜Ð½Ð²ÐµÐ½Ñ‚Ð°Ñ€ÑŒ";
 	}
 
 	protected override string _GetTemplateForLabelsLogin()
 	{
-		return "Вход";
+		return "Ð’Ñ…Ð¾Ð´";
 	}
 
 	protected override string _GetTemplateForLabelsMessages()
 	{
-		return "Сообщения";
+		return "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
 	}
 
 	protected override string _GetTemplateForLabelsProfile()
 	{
-		return "Профиль";
+		return "ÐŸÑ€Ð¾Ñ„Ð¸Ð»ÑŒ";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -678,7 +678,7 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsSearch()
 	{
-		return "Поиск";
+		return "ÐŸÐ¾Ð¸ÑÐº";
 	}
 
 	/// <summary>
@@ -687,56 +687,59 @@ internal class FeaturesResources_ru_ru : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string LabelsSearchPhrase(string phrase, string location)
 	{
-		return $"Поиск \"{phrase}\" в {location}";
+		return $"ÐŸÐ¾Ð¸ÑÐº \"{phrase}\" Ð² {location}";
 	}
 
 	protected override string _GetTemplateForLabelsSearchPhrase()
 	{
-		return "Поиск \"{phrase}\" в {location}";
+		return "ÐŸÐ¾Ð¸ÑÐº \"{phrase}\" Ð² {location}";
 	}
 
 	protected override string _GetTemplateForLabelsShop()
 	{
-		return "Магазин";
+		return "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
 	}
 
 	protected override string _GetTemplateForLabelsSignUp()
 	{
-		return "Регистрация";
+		return "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ";
 	}
 
 	protected override string _GetTemplateForLabelStore()
 	{
-		return "Магазин";
+		return "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
 	}
 
 	protected override string _GetTemplateForLabelsTrade()
 	{
-		return "Торговля";
+		return "Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ð»Ñ";
 	}
 
 	protected override string _GetTemplateForLabelSupport()
 	{
-		return "Поддержка";
+		return "ÐŸÐ¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ°";
 	}
 
 	protected override string _GetTemplateForLabelTerms()
 	{
-		return "Условия";
+		return "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "Условия использования";
+		return "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ";
 	}
 
 	protected override string _GetTemplateForLabelThanks()
 	{
-		return "Спасибо";
+		return "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾";
 	}
 
 	protected override string _GetTemplateForLabelUpgrade()
 	{
-		return "Улучшить";
+		return "Ð£Ð»ÑƒÑ‡ÑˆÐ¸Ñ‚ÑŒ";
 	}
+}
+
+
 }

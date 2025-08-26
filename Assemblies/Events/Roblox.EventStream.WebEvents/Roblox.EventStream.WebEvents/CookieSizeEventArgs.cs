@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Event arguments for CookieSizeEvent class
 /// </summary>
 public class CookieSizeEventArgs : WebEventArgs
@@ -23,3 +24,12 @@ public class CookieSizeEventArgs : WebEventArgs
 	/// <value>The raw cookies.</value>
 	public string RawCookies { get; set; }
 }
+
+
+}
+
+
+
+
+
+

@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IMembershipMigrationStatusEntityFactory
 
-namespace Roblox.PremiumFeatures;
-
-public interface IMembershipMigrationStatusEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStatusEntity" /> by its ID.
@@ -117,4 +116,7 @@ public interface IMembershipMigrationStatusEntityFactory
 	/// <param name="robuxDistributionAmount"></param>
 	/// <returns></returns>
 	IMembershipMigrationStatusEntity UpdateRobuxDistributionAmountByAccountId(long accountId, int robuxDistributionAmount);
+}
+
+
 }

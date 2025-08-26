@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Marketing;
+﻿namespace Roblox.Marketing {
+    /// <summary>
 
-/// <summary>
 /// Defines which type of content can be targeted by Takeovers
 ///
 /// This class is backed by a database table:
@@ -15,4 +15,7 @@ public enum ContentItemType
 	/// The takeover is targeted at an Asset, the ContentItemTarget is an AssetId.
 	/// </summary>
 	Asset = 1
+}
+
+
 }

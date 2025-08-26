@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class LanguageDefaultSupportedLocaleCachedMssqlEntity : ILanguageDefaultSupportedLocaleEntity, IUpdateableEntity<int>, IEntity<int>
 {
 	public int Id { get; set; }
@@ -34,4 +33,7 @@ internal class LanguageDefaultSupportedLocaleCachedMssqlEntity : ILanguageDefaul
 	{
 		(LanguageDefaultSupportedLocale.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

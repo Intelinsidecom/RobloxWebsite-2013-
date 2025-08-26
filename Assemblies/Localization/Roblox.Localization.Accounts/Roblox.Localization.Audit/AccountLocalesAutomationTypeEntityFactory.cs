@@ -1,8 +1,7 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocalesAutomationTypeEntityFactory : IAccountLocalesAutomationTypeEntityFactory
 {
 	public IAccountLocalesAutomationTypeEntity Get(byte id)
@@ -35,4 +34,7 @@ internal class AccountLocalesAutomationTypeEntityFactory : IAccountLocalesAutoma
 		}
 		return null;
 	}
+}
+
+
 }

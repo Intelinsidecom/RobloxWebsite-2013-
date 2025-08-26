@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class CaptchaResourceFactory
 
-internal static class CaptchaResourceFactory
 {
 	public const string FullNamespace = "Authentication.Captcha";
 
@@ -27,4 +27,7 @@ internal static class CaptchaResourceFactory
 			_ => new CaptchaResources_en_us(state), 
 		};
 	}
+}
+
+
 }

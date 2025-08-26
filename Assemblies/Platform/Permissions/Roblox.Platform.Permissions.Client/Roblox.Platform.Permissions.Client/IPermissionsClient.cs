@@ -1,8 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.Permissions.Client {
 
-namespace Roblox.Permissions.Client
-{
     // Minimal DTOs and client interface used by Roblox.Platform.Permissions.Core and CloudEdit
     public interface IPermissionsClient
     {
@@ -98,4 +97,7 @@ namespace Roblox.Permissions.Client
         public string PermissionType { get; set; }
         public long? PermissionTypeTargetId { get; set; }
     }
+}
+
+
 }

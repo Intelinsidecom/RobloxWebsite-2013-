@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using Roblox.EventLog;
 using Roblox.RealTimeNotifications.Properties;
 using Roblox.Redis;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    class UserNotificationPublisher<T> : IUserNotificationPublisher<T> where T : UserNotificationMessageBase
 
-namespace Roblox.RealTimeNotifications;
-
-public class UserNotificationPublisher<T> : IUserNotificationPublisher<T> where T : UserNotificationMessageBase
 {
 	/// <summary>
 	/// Event handler for user notification publish.
@@ -176,3 +175,5 @@ public class UserNotificationPublisher<T> : IUserNotificationPublisher<T> where 
 		}
 	}
 }
+
+

@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models;
-
-[DataContract]
 public class MembershipMigrationErrorResponse : MembershipMigrationResponse
 {
 	/// <summary>
@@ -16,4 +15,7 @@ public class MembershipMigrationErrorResponse : MembershipMigrationResponse
 	/// </summary>
 	[DataMember(Name = "errorMessage", EmitDefaultValue = false, IsRequired = false)]
 	public string ErrorMessage { get; set; }
+}
+
+
 }

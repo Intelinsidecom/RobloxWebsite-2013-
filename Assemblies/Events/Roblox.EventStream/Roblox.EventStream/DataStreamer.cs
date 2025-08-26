@@ -2,10 +2,9 @@ using System;
 using System.Collections.Generic;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
+namespace Roblox.EventStream {
+    class DataStreamer : IDataStreamer
 
-namespace Roblox.Platform.EventStream;
-
-public class DataStreamer : IDataStreamer
 {
 	private readonly IDataSender _DataSender;
 
@@ -26,4 +25,7 @@ public class DataStreamer : IDataStreamer
 		_Perfmon.AssetHandlerDataAttemptedToSentPerSecond.Increment();
 		_DataSender.PublishData(dataList);
 	}
+}
+
+
 }

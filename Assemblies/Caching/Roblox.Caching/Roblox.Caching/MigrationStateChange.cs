@@ -94,15 +94,11 @@ public class MigrationStateChange : IEquatable<MigrationStateChange>
 		{
 			return false;
 		}
-		if (this == obj)
+		if (ReferenceEquals(this, obj))
 		{
 			return true;
 		}
-		if (obj.GetType() == GetType())
-		{
-			return Equals((MigrationStateChange)obj);
-		}
-		return false;
+		return obj is MigrationStateChange other && Equals(other);
 	}
 
 	public override int GetHashCode()

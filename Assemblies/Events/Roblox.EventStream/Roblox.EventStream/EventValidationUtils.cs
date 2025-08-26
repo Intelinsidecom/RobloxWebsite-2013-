@@ -1,8 +1,7 @@
 using System.Text;
+namespace Roblox.EventStream {
+    static class EventValidationUtils
 
-namespace Roblox.Platform.EventStream;
-
-public static class EventValidationUtils
 {
 	private const int _TargetMaxLength = 50;
 
@@ -43,4 +42,7 @@ public static class EventValidationUtils
 		}
 		return false;
 	}
+}
+
+
 }

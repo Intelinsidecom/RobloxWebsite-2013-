@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides VisitGameResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,247 +11,247 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// button label
 	/// English String: "Retry"
 	/// </summary>
-	public override string ActionRetry => "重试";
+	public override string ActionRetry => "é‡è¯•";
 
 	/// <summary>
 	/// Key: "Heading.ErrorStartingGame"
 	/// Error starting game
 	/// English String: "Error starting game"
 	/// </summary>
-	public override string HeadingErrorStartingGame => "启动游戏时出错。";
+	public override string HeadingErrorStartingGame => "å¯åŠ¨æ¸¸æˆæ—¶å‡ºé”™ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.SwitchToDesktopToPlay"
 	/// Switch to Desktop Mode to Play Games
 	/// English String: "Switch to Desktop Mode to Play Games"
 	/// </summary>
-	public override string HeadingSwitchToDesktopToPlay => "切换至桌面模式以开始游戏";
+	public override string HeadingSwitchToDesktopToPlay => "åˆ‡æ¢è‡³æ¡Œé¢æ¨¡å¼ä»¥å¼€å§‹æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// Cancel
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "取消";
+	public override string LabelCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Label.CheckingForStudio"
 	/// We are checking if user has Roblox Studio installed
 	/// English String: "Checking for Roblox Studio..."
 	/// </summary>
-	public override string LabelCheckingForStudio => "正在检查 Roblox Studio...";
+	public override string LabelCheckingForStudio => "æ­£åœ¨æ£€æŸ¥ Roblox Studio...";
 
 	/// <summary>
 	/// Key: "Label.ClickHereForHelp"
 	/// Click here for help
 	/// English String: "Click here for help"
 	/// </summary>
-	public override string LabelClickHereForHelp => "点击此处获取帮助";
+	public override string LabelClickHereForHelp => "ç‚¹å‡»æ­¤å¤„èŽ·å–å¸®åŠ©";
 
 	/// <summary>
 	/// Key: "Label.ConnectingToPlayers"
 	/// Joining a game network with other players
 	/// English String: "Connecting to Players..."
 	/// </summary>
-	public override string LabelConnectingToPlayers => "正在连接玩家...";
+	public override string LabelConnectingToPlayers => "æ­£åœ¨è¿žæŽ¥çŽ©å®¶...";
 
 	/// <summary>
 	/// Key: "Label.DevelopPageTitle"
 	/// English String: "Develop"
 	/// </summary>
-	public override string LabelDevelopPageTitle => "开发";
+	public override string LabelDevelopPageTitle => "å¼€å‘";
 
 	/// <summary>
 	/// Key: "Label.DownloadInstallRoblox"
 	/// Download and Install Roblox
 	/// English String: "Download and Install Roblox"
 	/// </summary>
-	public override string LabelDownloadInstallRoblox => "下载并安装 Roblox";
+	public override string LabelDownloadInstallRoblox => "ä¸‹è½½å¹¶å®‰è£… Roblox";
 
 	/// <summary>
 	/// Key: "Label.DownloadStudio"
 	/// Download Roblox Studio to start creating games
 	/// English String: "Download Studio"
 	/// </summary>
-	public override string LabelDownloadStudio => "下载 Studio";
+	public override string LabelDownloadStudio => "ä¸‹è½½ Studio";
 
 	/// <summary>
 	/// Key: "Label.GameConfigurePageTitle"
 	/// English String: "Game Configure"
 	/// </summary>
-	public override string LabelGameConfigurePageTitle => "游戏配置";
+	public override string LabelGameConfigurePageTitle => "æ¸¸æˆé…ç½®";
 
 	/// <summary>
 	/// Key: "Label.GameFreeSoothsayer"
 	/// English String: "Free because you are a soothsayer"
 	/// </summary>
-	public override string LabelGameFreeSoothsayer => "免费，由于你是 Soothsayer 用户";
+	public override string LabelGameFreeSoothsayer => "å…è´¹ï¼Œç”±äºŽä½ æ˜¯ Soothsayer ç”¨æˆ·";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableAccountResrictions"
 	/// English String: "The game is unavailable due to account restrictions settings."
 	/// </summary>
-	public override string LabelGameUnavailableAccountResrictions => "由于帐户限制设置，此游戏不可用。";
+	public override string LabelGameUnavailableAccountResrictions => "ç”±äºŽå¸æˆ·é™åˆ¶è®¾ç½®ï¼Œæ­¤æ¸¸æˆä¸å¯ç”¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableCannotPlayGamesStudio"
 	/// English String: "You cannot play games from Studio. Please use a web browser to play this game."
 	/// </summary>
-	public override string LabelGameUnavailableCannotPlayGamesStudio => "你无法玩 Studio 上的游戏。请使用网络浏览器开始此游戏。";
+	public override string LabelGameUnavailableCannotPlayGamesStudio => "ä½ æ— æ³•çŽ© Studio ä¸Šçš„æ¸¸æˆã€‚è¯·ä½¿ç”¨ç½‘ç»œæµè§ˆå™¨å¼€å§‹æ­¤æ¸¸æˆã€‚";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableClosedToVisitors"
 	/// English String: "Sorry, this place is currently closed to visitors."
 	/// </summary>
-	public override string LabelGameUnavailableClosedToVisitors => "抱歉，此场景当前不对访客开放。";
+	public override string LabelGameUnavailableClosedToVisitors => "æŠ±æ­‰ï¼Œæ­¤åœºæ™¯å½“å‰ä¸å¯¹è®¿å®¢å¼€æ”¾ã€‚";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableCurrentlyIsPrivateVisitor"
 	/// When a game is private, this message is shown to visitors.
 	/// English String: "Sorry, this game is private."
 	/// </summary>
-	public override string LabelGameUnavailableCurrentlyIsPrivateVisitor => "抱歉，这是私人游戏。";
+	public override string LabelGameUnavailableCurrentlyIsPrivateVisitor => "æŠ±æ­‰ï¼Œè¿™æ˜¯ç§äººæ¸¸æˆã€‚";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableGameInsecure"
 	/// U13 users cannot play insecure games unless they are the creator or friends with the creator.
 	/// English String: "Sorry, your account is restricted from playing Experimental Games unless you are friends with the creator."
 	/// </summary>
-	public override string LabelGameUnavailableGameInsecure => "抱歉，你与创作者还不是好友，因此你无法加入实验性游戏。";
+	public override string LabelGameUnavailableGameInsecure => "æŠ±æ­‰ï¼Œä½ ä¸Žåˆ›ä½œè€…è¿˜ä¸æ˜¯å¥½å‹ï¼Œå› æ­¤ä½ æ— æ³•åŠ å…¥å®žéªŒæ€§æ¸¸æˆã€‚";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePermissionLevels"
 	/// English String: "The permission levels on this place prevent you from entering."
 	/// </summary>
-	public override string LabelGameUnavailablePermissionLevels => "你的权限不足，无法进入此场景。";
+	public override string LabelGameUnavailablePermissionLevels => "ä½ çš„æƒé™ä¸è¶³ï¼Œæ— æ³•è¿›å…¥æ­¤åœºæ™¯ã€‚";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePlaceUnderReview"
 	/// English String: "Sorry, this place is currently under review. Try again later."
 	/// </summary>
-	public override string LabelGameUnavailablePlaceUnderReview => "抱歉，此场景当前正接受审核。请稍后重试。";
+	public override string LabelGameUnavailablePlaceUnderReview => "æŠ±æ­‰ï¼Œæ­¤åœºæ™¯å½“å‰æ­£æŽ¥å—å®¡æ ¸ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePlatform"
 	/// English String: "This game is not available on your platform.  Check the games page to see all playable games."
 	/// </summary>
-	public override string LabelGameUnavailablePlatform => "此游戏无法再你的平台上运行。请在游戏页面查看全部可玩的游戏。";
+	public override string LabelGameUnavailablePlatform => "æ­¤æ¸¸æˆæ— æ³•å†ä½ çš„å¹³å°ä¸Šè¿è¡Œã€‚è¯·åœ¨æ¸¸æˆé¡µé¢æŸ¥çœ‹å…¨éƒ¨å¯çŽ©çš„æ¸¸æˆã€‚";
 
 	/// <summary>
 	/// Key: "Label.GameWarning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string LabelGameWarning => "警告";
+	public override string LabelGameWarning => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Label.InstallationInstructions"
 	/// Installation Instructions
 	/// English String: "Installation Instructions"
 	/// </summary>
-	public override string LabelInstallationInstructions => "安装说明";
+	public override string LabelInstallationInstructions => "å®‰è£…è¯´æ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.LaunchApplication"
 	/// Launch Application
 	/// English String: "Launch Application"
 	/// </summary>
-	public override string LabelLaunchApplication => "启动应用程序";
+	public override string LabelLaunchApplication => "å¯åŠ¨åº”ç”¨ç¨‹åº";
 
 	/// <summary>
 	/// Key: "Label.PersuadeToDevelopRoblox"
 	/// Persuade user to begin developing their own games using Roblox Studio
 	/// English String: "Get started creating your own games!"
 	/// </summary>
-	public override string LabelPersuadeToDevelopRoblox => "开始创作你自己的游戏！";
+	public override string LabelPersuadeToDevelopRoblox => "å¼€å§‹åˆ›ä½œä½ è‡ªå·±çš„æ¸¸æˆï¼";
 
 	/// <summary>
 	/// Key: "Label.PersuadeToInstallRoblox"
 	/// We are exciting the user about Roblox so that they will be persuaded to download and install it.
 	/// English String: "You're moments away from getting into the game!"
 	/// </summary>
-	public override string LabelPersuadeToInstallRoblox => "你很快就要进入游戏啦！";
+	public override string LabelPersuadeToInstallRoblox => "ä½ å¾ˆå¿«å°±è¦è¿›å…¥æ¸¸æˆå•¦ï¼";
 
 	/// <summary>
 	/// Key: "Label.Play"
 	/// English String: "Play"
 	/// </summary>
-	public override string LabelPlay => "开始游戏";
+	public override string LabelPlay => "å¼€å§‹æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.PlayInApp"
 	/// English String: "Play in App"
 	/// </summary>
-	public override string LabelPlayInApp => "在 App 中玩";
+	public override string LabelPlayInApp => "åœ¨ App ä¸­çŽ©";
 
 	/// <summary>
 	/// Key: "Label.RobloxLoadingToPlay"
 	/// Roblox is loading, so the user is getting excited to start playing a game
 	/// English String: "Roblox is now loading. Get ready to play!"
 	/// </summary>
-	public override string LabelRobloxLoadingToPlay => "正在加载 Roblox。准备好，游戏马上开始！";
+	public override string LabelRobloxLoadingToPlay => "æ­£åœ¨åŠ è½½ Robloxã€‚å‡†å¤‡å¥½ï¼Œæ¸¸æˆé©¬ä¸Šå¼€å§‹ï¼";
 
 	/// <summary>
 	/// Key: "Label.StartingRoblox"
 	/// Game launch process has started
 	/// English String: "Starting Roblox..."
 	/// </summary>
-	public override string LabelStartingRoblox => "正在启动 Roblox...";
+	public override string LabelStartingRoblox => "æ­£åœ¨å¯åŠ¨ Roblox...";
 
 	/// <summary>
 	/// Key: "Label.SwitchToDesktopMode"
 	/// Switch to Desktop Mode
 	/// English String: "Switch to Desktop Mode"
 	/// </summary>
-	public override string LabelSwitchToDesktopMode => "切换至桌面模式";
+	public override string LabelSwitchToDesktopMode => "åˆ‡æ¢è‡³æ¡Œé¢æ¨¡å¼";
 
 	/// <summary>
 	/// Key: "Label.UniverseConfigurePageTitle"
 	/// The name of the universe configuration page
 	/// English String: "Universe Configuration"
 	/// </summary>
-	public override string LabelUniverseConfigurePageTitle => "通用配置";
+	public override string LabelUniverseConfigurePageTitle => "é€šç”¨é…ç½®";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ClickHere"
 	/// Click here!
 	/// English String: "Click here!"
 	/// </summary>
-	public override string ResponseDialogClickHere => "点按此处！";
+	public override string ResponseDialogClickHere => "ç‚¹æŒ‰æ­¤å¤„ï¼";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ErrorLaunching"
 	/// An error occurred trying to launch the game.  Please try again later.
 	/// English String: "An error occurred trying to launch the game.  Please try again later."
 	/// </summary>
-	public override string ResponseDialogErrorLaunching => "尝试启动游戏时发生错误。请稍后重试。";
+	public override string ResponseDialogErrorLaunching => "å°è¯•å¯åŠ¨æ¸¸æˆæ—¶å‘ç”Ÿé”™è¯¯ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.HavingTroubleInstallQuestion"
 	/// (Are you) having trouble installing Roblox?
 	/// English String: "Having trouble installing Roblox?"
 	/// </summary>
-	public override string ResponseDialogHavingTroubleInstallQuestion => "安装 Roblox 时遇到问题？";
+	public override string ResponseDialogHavingTroubleInstallQuestion => "å®‰è£… Roblox æ—¶é‡åˆ°é—®é¢˜ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.MacChromeSecondInstruction"
 	/// Double-click the Roblox app icon to begin the installation process.
 	/// English String: "Double-click the Roblox app icon to begin the installation process."
 	/// </summary>
-	public override string ResponseDialogMacChromeSecondInstruction => "连按 Roblox App 图标以开始安装程序。";
+	public override string ResponseDialogMacChromeSecondInstruction => "è¿žæŒ‰ Roblox App å›¾æ ‡ä»¥å¼€å§‹å®‰è£…ç¨‹åºã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ThanksForPlayingRoblox"
 	/// Thanks for playing Roblox
 	/// English String: "Thanks for playing Roblox"
 	/// </summary>
-	public override string ResponseDialogThanksForPlayingRoblox => "谢谢你玩 Roblox";
+	public override string ResponseDialogThanksForPlayingRoblox => "è°¢è°¢ä½ çŽ© Roblox";
 
 	/// <summary>
 	/// Key: "Response.GameTemporarilyUnavailable"
 	/// error message (will be followed by link with Action.Retry label)
 	/// English String: "Unable to verify that you have access to this game.  Please try again later."
 	/// </summary>
-	public override string ResponseGameTemporarilyUnavailable => "无法验证你是否有权访问此游戏。请稍后重试。";
+	public override string ResponseGameTemporarilyUnavailable => "æ— æ³•éªŒè¯ä½ æ˜¯å¦æœ‰æƒè®¿é—®æ­¤æ¸¸æˆã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	public VisitGameResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -264,27 +264,27 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ActionGamePerformPoorly(string warning)
 	{
-		return $"{warning} 此游戏可能在你的设备上运行不佳。";
+		return $"{warning} æ­¤æ¸¸æˆå¯èƒ½åœ¨ä½ çš„è®¾å¤‡ä¸Šè¿è¡Œä¸ä½³ã€‚";
 	}
 
 	protected override string _GetTemplateForActionGamePerformPoorly()
 	{
-		return "{warning} 此游戏可能在你的设备上运行不佳。";
+		return "{warning} æ­¤æ¸¸æˆå¯èƒ½åœ¨ä½ çš„è®¾å¤‡ä¸Šè¿è¡Œä¸ä½³ã€‚";
 	}
 
 	protected override string _GetTemplateForActionRetry()
 	{
-		return "重试";
+		return "é‡è¯•";
 	}
 
 	protected override string _GetTemplateForHeadingErrorStartingGame()
 	{
-		return "启动游戏时出错。";
+		return "å¯åŠ¨æ¸¸æˆæ—¶å‡ºé”™ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingSwitchToDesktopToPlay()
 	{
-		return "切换至桌面模式以开始游戏";
+		return "åˆ‡æ¢è‡³æ¡Œé¢æ¨¡å¼ä»¥å¼€å§‹æ¸¸æˆ";
 	}
 
 	/// <summary>
@@ -293,57 +293,57 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelBuyAccess(string robux)
 	{
-		return $"以 {robux} Robux 购买通行证";
+		return $"ä»¥ {robux} Robux è´­ä¹°é€šè¡Œè¯";
 	}
 
 	protected override string _GetTemplateForLabelBuyAccess()
 	{
-		return "以 {robux} Robux 购买通行证";
+		return "ä»¥ {robux} Robux è´­ä¹°é€šè¡Œè¯";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForLabelCheckingForStudio()
 	{
-		return "正在检查 Roblox Studio...";
+		return "æ­£åœ¨æ£€æŸ¥ Roblox Studio...";
 	}
 
 	protected override string _GetTemplateForLabelClickHereForHelp()
 	{
-		return "点击此处获取帮助";
+		return "ç‚¹å‡»æ­¤å¤„èŽ·å–å¸®åŠ©";
 	}
 
 	protected override string _GetTemplateForLabelConnectingToPlayers()
 	{
-		return "正在连接玩家...";
+		return "æ­£åœ¨è¿žæŽ¥çŽ©å®¶...";
 	}
 
 	protected override string _GetTemplateForLabelDevelopPageTitle()
 	{
-		return "开发";
+		return "å¼€å‘";
 	}
 
 	protected override string _GetTemplateForLabelDownloadInstallRoblox()
 	{
-		return "下载并安装 Roblox";
+		return "ä¸‹è½½å¹¶å®‰è£… Roblox";
 	}
 
 	protected override string _GetTemplateForLabelDownloadStudio()
 	{
-		return "下载 Studio";
+		return "ä¸‹è½½ Studio";
 	}
 
 	protected override string _GetTemplateForLabelGameConfigurePageTitle()
 	{
-		return "游戏配置";
+		return "æ¸¸æˆé…ç½®";
 	}
 
 	protected override string _GetTemplateForLabelGameFreeSoothsayer()
 	{
-		return "免费，由于你是 Soothsayer 用户";
+		return "å…è´¹ï¼Œç”±äºŽä½ æ˜¯ Soothsayer ç”¨æˆ·";
 	}
 
 	/// <summary>
@@ -353,12 +353,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelGameIsPrivatePlayableByGroupOnly(string linkStart, string linkEnd)
 	{
-		return $"这是私人游戏，只有开发者能玩。请在{linkStart}配置游戏{linkEnd}页面将其设为公开。";
+		return $"è¿™æ˜¯ç§äººæ¸¸æˆï¼Œåªæœ‰å¼€å‘è€…èƒ½çŽ©ã€‚è¯·åœ¨{linkStart}é…ç½®æ¸¸æˆ{linkEnd}é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameIsPrivatePlayableByGroupOnly()
 	{
-		return "这是私人游戏，只有开发者能玩。请在{linkStart}配置游戏{linkEnd}页面将其设为公开。";
+		return "è¿™æ˜¯ç§äººæ¸¸æˆï¼Œåªæœ‰å¼€å‘è€…èƒ½çŽ©ã€‚è¯·åœ¨{linkStart}é…ç½®æ¸¸æˆ{linkEnd}é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ã€‚";
 	}
 
 	/// <summary>
@@ -368,27 +368,27 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelGameIsPrivatePlayableByOwnerOnly(string linkStart, string linkEnd)
 	{
-		return $"这是私人游戏，只有你能玩。请在{linkStart}配置游戏{linkEnd}页面将其设为公开。";
+		return $"è¿™æ˜¯ç§äººæ¸¸æˆï¼Œåªæœ‰ä½ èƒ½çŽ©ã€‚è¯·åœ¨{linkStart}é…ç½®æ¸¸æˆ{linkEnd}é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameIsPrivatePlayableByOwnerOnly()
 	{
-		return "这是私人游戏，只有你能玩。请在{linkStart}配置游戏{linkEnd}页面将其设为公开。";
+		return "è¿™æ˜¯ç§äººæ¸¸æˆï¼Œåªæœ‰ä½ èƒ½çŽ©ã€‚è¯·åœ¨{linkStart}é…ç½®æ¸¸æˆ{linkEnd}é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableAccountResrictions()
 	{
-		return "由于帐户限制设置，此游戏不可用。";
+		return "ç”±äºŽå¸æˆ·é™åˆ¶è®¾ç½®ï¼Œæ­¤æ¸¸æˆä¸å¯ç”¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCannotPlayGamesStudio()
 	{
-		return "你无法玩 Studio 上的游戏。请使用网络浏览器开始此游戏。";
+		return "ä½ æ— æ³•çŽ© Studio ä¸Šçš„æ¸¸æˆã€‚è¯·ä½¿ç”¨ç½‘ç»œæµè§ˆå™¨å¼€å§‹æ­¤æ¸¸æˆã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableClosedToVisitors()
 	{
-		return "抱歉，此场景当前不对访客开放。";
+		return "æŠ±æ­‰ï¼Œæ­¤åœºæ™¯å½“å‰ä¸å¯¹è®¿å®¢å¼€æ”¾ã€‚";
 	}
 
 	/// <summary>
@@ -398,12 +398,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyIsPrivateGroup(string linkStart, string linkEnd)
 	{
-		return $"这是四人游戏，只有开发者可以玩。请在{linkStart}创建{linkEnd}页面将其设为公开。";
+		return $"è¿™æ˜¯å››äººæ¸¸æˆï¼Œåªæœ‰å¼€å‘è€…å¯ä»¥çŽ©ã€‚è¯·åœ¨{linkStart}åˆ›å»º{linkEnd}é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateGroup()
 	{
-		return "这是四人游戏，只有开发者可以玩。请在{linkStart}创建{linkEnd}页面将其设为公开。";
+		return "è¿™æ˜¯å››äººæ¸¸æˆï¼Œåªæœ‰å¼€å‘è€…å¯ä»¥çŽ©ã€‚è¯·åœ¨{linkStart}åˆ›å»º{linkEnd}é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ã€‚";
 	}
 
 	/// <summary>
@@ -413,17 +413,17 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyIsPrivateOwner(string linkStart, string linkEnd)
 	{
-		return $"这是私人游戏，只有你能玩。请在{linkStart}创建{linkEnd}页面将其设为公开。";
+		return $"è¿™æ˜¯ç§äººæ¸¸æˆï¼Œåªæœ‰ä½ èƒ½çŽ©ã€‚è¯·åœ¨{linkStart}åˆ›å»º{linkEnd}é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateOwner()
 	{
-		return "这是私人游戏，只有你能玩。请在{linkStart}创建{linkEnd}页面将其设为公开。";
+		return "è¿™æ˜¯ç§äººæ¸¸æˆï¼Œåªæœ‰ä½ èƒ½çŽ©ã€‚è¯·åœ¨{linkStart}åˆ›å»º{linkEnd}é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateVisitor()
 	{
-		return "抱歉，这是私人游戏。";
+		return "æŠ±æ­‰ï¼Œè¿™æ˜¯ç§äººæ¸¸æˆã€‚";
 	}
 
 	/// <summary>
@@ -433,17 +433,17 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyPrivate(string gameTypeName, string developPageLink)
 	{
-		return $"此“{gameTypeName}”当前为私人模式。请在 {developPageLink} 页面将其设为公开，使它成为可玩状态。";
+		return $"æ­¤â€œ{gameTypeName}â€å½“å‰ä¸ºç§äººæ¨¡å¼ã€‚è¯·åœ¨ {developPageLink} é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ï¼Œä½¿å®ƒæˆä¸ºå¯çŽ©çŠ¶æ€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyPrivate()
 	{
-		return "此“{gameTypeName}”当前为私人模式。请在 {developPageLink} 页面将其设为公开，使它成为可玩状态。";
+		return "æ­¤â€œ{gameTypeName}â€å½“å‰ä¸ºç§äººæ¨¡å¼ã€‚è¯·åœ¨ {developPageLink} é¡µé¢å°†å…¶è®¾ä¸ºå…¬å¼€ï¼Œä½¿å®ƒæˆä¸ºå¯çŽ©çŠ¶æ€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableGameInsecure()
 	{
-		return "抱歉，你与创作者还不是好友，因此你无法加入实验性游戏。";
+		return "æŠ±æ­‰ï¼Œä½ ä¸Žåˆ›ä½œè€…è¿˜ä¸æ˜¯å¥½å‹ï¼Œå› æ­¤ä½ æ— æ³•åŠ å…¥å®žéªŒæ€§æ¸¸æˆã€‚";
 	}
 
 	/// <summary>
@@ -452,17 +452,17 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelGameUnavailableNoRootPlace(string gameConfigureLink)
 	{
-		return $"此场景所在的游戏没有根场景。在 {gameConfigureLink} 页面添加根场景，使它成为可玩状态。";
+		return $"æ­¤åœºæ™¯æ‰€åœ¨çš„æ¸¸æˆæ²¡æœ‰æ ¹åœºæ™¯ã€‚åœ¨ {gameConfigureLink} é¡µé¢æ·»åŠ æ ¹åœºæ™¯ï¼Œä½¿å®ƒæˆä¸ºå¯çŽ©çŠ¶æ€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableNoRootPlace()
 	{
-		return "此场景所在的游戏没有根场景。在 {gameConfigureLink} 页面添加根场景，使它成为可玩状态。";
+		return "æ­¤åœºæ™¯æ‰€åœ¨çš„æ¸¸æˆæ²¡æœ‰æ ¹åœºæ™¯ã€‚åœ¨ {gameConfigureLink} é¡µé¢æ·»åŠ æ ¹åœºæ™¯ï¼Œä½¿å®ƒæˆä¸ºå¯çŽ©çŠ¶æ€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePermissionLevels()
 	{
-		return "你的权限不足，无法进入此场景。";
+		return "ä½ çš„æƒé™ä¸è¶³ï¼Œæ— æ³•è¿›å…¥æ­¤åœºæ™¯ã€‚";
 	}
 
 	/// <summary>
@@ -471,37 +471,37 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelGameUnavailablePlaceNotPartOfGame(string developPageLink)
 	{
-		return $"此场景当前不属于任何游戏。请在 {developPageLink} 页面将其添加至一款游戏中，使它成为可玩状态。";
+		return $"æ­¤åœºæ™¯å½“å‰ä¸å±žäºŽä»»ä½•æ¸¸æˆã€‚è¯·åœ¨ {developPageLink} é¡µé¢å°†å…¶æ·»åŠ è‡³ä¸€æ¬¾æ¸¸æˆä¸­ï¼Œä½¿å®ƒæˆä¸ºå¯çŽ©çŠ¶æ€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlaceNotPartOfGame()
 	{
-		return "此场景当前不属于任何游戏。请在 {developPageLink} 页面将其添加至一款游戏中，使它成为可玩状态。";
+		return "æ­¤åœºæ™¯å½“å‰ä¸å±žäºŽä»»ä½•æ¸¸æˆã€‚è¯·åœ¨ {developPageLink} é¡µé¢å°†å…¶æ·»åŠ è‡³ä¸€æ¬¾æ¸¸æˆä¸­ï¼Œä½¿å®ƒæˆä¸ºå¯çŽ©çŠ¶æ€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlaceUnderReview()
 	{
-		return "抱歉，此场景当前正接受审核。请稍后重试。";
+		return "æŠ±æ­‰ï¼Œæ­¤åœºæ™¯å½“å‰æ­£æŽ¥å—å®¡æ ¸ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlatform()
 	{
-		return "此游戏无法再你的平台上运行。请在游戏页面查看全部可玩的游戏。";
+		return "æ­¤æ¸¸æˆæ— æ³•å†ä½ çš„å¹³å°ä¸Šè¿è¡Œã€‚è¯·åœ¨æ¸¸æˆé¡µé¢æŸ¥çœ‹å…¨éƒ¨å¯çŽ©çš„æ¸¸æˆã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameWarning()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	protected override string _GetTemplateForLabelInstallationInstructions()
 	{
-		return "安装说明";
+		return "å®‰è£…è¯´æ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelLaunchApplication()
 	{
-		return "启动应用程序";
+		return "å¯åŠ¨åº”ç”¨ç¨‹åº";
 	}
 
 	/// <summary>
@@ -511,52 +511,52 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string LabelOperaInstallSteps(string startBold, string endBold, string breakLine)
 	{
-		return $"1) 窗口将会打开。点按{startBold}打开{endBold}。{breakLine}2) 连按 Roblox 图标。";
+		return $"1) çª—å£å°†ä¼šæ‰“å¼€ã€‚ç‚¹æŒ‰{startBold}æ‰“å¼€{endBold}ã€‚{breakLine}2) è¿žæŒ‰ Roblox å›¾æ ‡ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelOperaInstallSteps()
 	{
-		return "1) 窗口将会打开。点按{startBold}打开{endBold}。{breakLine}2) 连按 Roblox 图标。";
+		return "1) çª—å£å°†ä¼šæ‰“å¼€ã€‚ç‚¹æŒ‰{startBold}æ‰“å¼€{endBold}ã€‚{breakLine}2) è¿žæŒ‰ Roblox å›¾æ ‡ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelPersuadeToDevelopRoblox()
 	{
-		return "开始创作你自己的游戏！";
+		return "å¼€å§‹åˆ›ä½œä½ è‡ªå·±çš„æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForLabelPersuadeToInstallRoblox()
 	{
-		return "你很快就要进入游戏啦！";
+		return "ä½ å¾ˆå¿«å°±è¦è¿›å…¥æ¸¸æˆå•¦ï¼";
 	}
 
 	protected override string _GetTemplateForLabelPlay()
 	{
-		return "开始游戏";
+		return "å¼€å§‹æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelPlayInApp()
 	{
-		return "在 App 中玩";
+		return "åœ¨ App ä¸­çŽ©";
 	}
 
 	protected override string _GetTemplateForLabelRobloxLoadingToPlay()
 	{
-		return "正在加载 Roblox。准备好，游戏马上开始！";
+		return "æ­£åœ¨åŠ è½½ Robloxã€‚å‡†å¤‡å¥½ï¼Œæ¸¸æˆé©¬ä¸Šå¼€å§‹ï¼";
 	}
 
 	protected override string _GetTemplateForLabelStartingRoblox()
 	{
-		return "正在启动 Roblox...";
+		return "æ­£åœ¨å¯åŠ¨ Roblox...";
 	}
 
 	protected override string _GetTemplateForLabelSwitchToDesktopMode()
 	{
-		return "切换至桌面模式";
+		return "åˆ‡æ¢è‡³æ¡Œé¢æ¨¡å¼";
 	}
 
 	protected override string _GetTemplateForLabelUniverseConfigurePageTitle()
 	{
-		return "通用配置";
+		return "é€šç”¨é…ç½®";
 	}
 
 	/// <summary>
@@ -566,12 +566,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseCheckAlwaysOpenRoblox(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"选中{startBold}始终打开 Roblox 链接{endBold}，并在上方对话框中点按{startBold2}打开 Roblox{endBold2}，之后就可以更快加入游戏！";
+		return $"é€‰ä¸­{startBold}å§‹ç»ˆæ‰“å¼€ Roblox é“¾æŽ¥{endBold}ï¼Œå¹¶åœ¨ä¸Šæ–¹å¯¹è¯æ¡†ä¸­ç‚¹æŒ‰{startBold2}æ‰“å¼€ Roblox{endBold2}ï¼Œä¹‹åŽå°±å¯ä»¥æ›´å¿«åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForResponseCheckAlwaysOpenRoblox()
 	{
-		return "选中{startBold}始终打开 Roblox 链接{endBold}，并在上方对话框中点按{startBold2}打开 Roblox{endBold2}，之后就可以更快加入游戏！";
+		return "é€‰ä¸­{startBold}å§‹ç»ˆæ‰“å¼€ Roblox é“¾æŽ¥{endBold}ï¼Œå¹¶åœ¨ä¸Šæ–¹å¯¹è¯æ¡†ä¸­ç‚¹æŒ‰{startBold2}æ‰“å¼€ Roblox{endBold2}ï¼Œä¹‹åŽå°±å¯ä»¥æ›´å¿«åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	/// <summary>
@@ -581,12 +581,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseCheckAlwaysOpenRobloxURL(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"选中{startBold}始终打开 URL：Roblox 协议链接{endBold}，并在上方对话框中点按{startBold2}打开 URL：Roblox 协议{endBold2}，之后就可以更快加入游戏！";
+		return $"é€‰ä¸­{startBold}å§‹ç»ˆæ‰“å¼€ URLï¼šRoblox åè®®é“¾æŽ¥{endBold}ï¼Œå¹¶åœ¨ä¸Šæ–¹å¯¹è¯æ¡†ä¸­ç‚¹æŒ‰{startBold2}æ‰“å¼€ URLï¼šRoblox åè®®{endBold2}ï¼Œä¹‹åŽå°±å¯ä»¥æ›´å¿«åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForResponseCheckAlwaysOpenRobloxURL()
 	{
-		return "选中{startBold}始终打开 URL：Roblox 协议链接{endBold}，并在上方对话框中点按{startBold2}打开 URL：Roblox 协议{endBold2}，之后就可以更快加入游戏！";
+		return "é€‰ä¸­{startBold}å§‹ç»ˆæ‰“å¼€ URLï¼šRoblox åè®®é“¾æŽ¥{endBold}ï¼Œå¹¶åœ¨ä¸Šæ–¹å¯¹è¯æ¡†ä¸­ç‚¹æŒ‰{startBold2}æ‰“å¼€ URLï¼šRoblox åè®®{endBold2}ï¼Œä¹‹åŽå°±å¯ä»¥æ›´å¿«åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	/// <summary>
@@ -596,42 +596,42 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseCheckRememberMyChoiceOK(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"选中{startBold}记住我的选择{endBold}，并在上方对话框中点按{startBold2}确定{endBold2}，之后就可以更快加入游戏！";
+		return $"é€‰ä¸­{startBold}è®°ä½æˆ‘çš„é€‰æ‹©{endBold}ï¼Œå¹¶åœ¨ä¸Šæ–¹å¯¹è¯æ¡†ä¸­ç‚¹æŒ‰{startBold2}ç¡®å®š{endBold2}ï¼Œä¹‹åŽå°±å¯ä»¥æ›´å¿«åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForResponseCheckRememberMyChoiceOK()
 	{
-		return "选中{startBold}记住我的选择{endBold}，并在上方对话框中点按{startBold2}确定{endBold2}，之后就可以更快加入游戏！";
+		return "é€‰ä¸­{startBold}è®°ä½æˆ‘çš„é€‰æ‹©{endBold}ï¼Œå¹¶åœ¨ä¸Šæ–¹å¯¹è¯æ¡†ä¸­ç‚¹æŒ‰{startBold2}ç¡®å®š{endBold2}ï¼Œä¹‹åŽå°±å¯ä»¥æ›´å¿«åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogClickHere()
 	{
-		return "点按此处！";
+		return "ç‚¹æŒ‰æ­¤å¤„ï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogErrorLaunching()
 	{
-		return "尝试启动游戏时发生错误。请稍后重试。";
+		return "å°è¯•å¯åŠ¨æ¸¸æˆæ—¶å‘ç”Ÿé”™è¯¯ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogHavingTroubleInstallQuestion()
 	{
-		return "安装 Roblox 时遇到问题？";
+		return "å®‰è£… Roblox æ—¶é‡åˆ°é—®é¢˜ï¼Ÿ";
 	}
 
 	/// <summary>
 	/// Key: "Response.Dialog.InstallingMessageWithLink"
 	/// Note: For this translation, please move the linkStart and linkEnd variables with the translation for download now.
-	/// English String: "The Roblox installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}"
+	/// English String: "The Roblox installer should download shortly. If it doesnâ€™t, start the {linkStart}download now.{linkEnd}"
 	/// </summary>
 	public override string ResponseDialogInstallingMessageWithLink(string linkStart, string linkEnd)
 	{
-		return $"Roblox 安装程序很快就会开始下载。如果下载没有开始，请手动{linkStart}开始下载{linkEnd}。";
+		return $"Roblox å®‰è£…ç¨‹åºå¾ˆå¿«å°±ä¼šå¼€å§‹ä¸‹è½½ã€‚å¦‚æžœä¸‹è½½æ²¡æœ‰å¼€å§‹ï¼Œè¯·æ‰‹åŠ¨{linkStart}å¼€å§‹ä¸‹è½½{linkEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogInstallingMessageWithLink()
 	{
-		return "Roblox 安装程序很快就会开始下载。如果下载没有开始，请手动{linkStart}开始下载{linkEnd}。";
+		return "Roblox å®‰è£…ç¨‹åºå¾ˆå¿«å°±ä¼šå¼€å§‹ä¸‹è½½ã€‚å¦‚æžœä¸‹è½½æ²¡æœ‰å¼€å§‹ï¼Œè¯·æ‰‹åŠ¨{linkStart}å¼€å§‹ä¸‹è½½{linkEnd}ã€‚";
 	}
 
 	/// <summary>
@@ -641,12 +641,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacChromeFifthInstruction(string startBold, string endBold)
 	{
-		return $"安装完毕后，点按下面的{startBold}开始游戏{endBold}即可加入游戏！";
+		return $"å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰ä¸‹é¢çš„{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFifthInstruction()
 	{
-		return "安装完毕后，点按下面的{startBold}开始游戏{endBold}即可加入游戏！";
+		return "å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰ä¸‹é¢çš„{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	/// <summary>
@@ -656,12 +656,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacChromeFirstInstruction(string startBold, string endBold)
 	{
-		return $"点按 {startBold}Roblox.dmg{endBold}，运行刚刚通过网络浏览器下载的 Roblox 安装程序。";
+		return $"ç‚¹æŒ‰ {startBold}Roblox.dmg{endBold}ï¼Œè¿è¡Œåˆšåˆšé€šè¿‡ç½‘ç»œæµè§ˆå™¨ä¸‹è½½çš„ Roblox å®‰è£…ç¨‹åºã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFirstInstruction()
 	{
-		return "点按 {startBold}Roblox.dmg{endBold}，运行刚刚通过网络浏览器下载的 Roblox 安装程序。";
+		return "ç‚¹æŒ‰ {startBold}Roblox.dmg{endBold}ï¼Œè¿è¡Œåˆšåˆšé€šè¿‡ç½‘ç»œæµè§ˆå™¨ä¸‹è½½çš„ Roblox å®‰è£…ç¨‹åºã€‚";
 	}
 
 	/// <summary>
@@ -671,17 +671,17 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacChromeFourthInstruction(string startBold, string endBold)
 	{
-		return $"成功安装 Roblox 后，点按{startBold}好{endBold}。";
+		return $"æˆåŠŸå®‰è£… Roblox åŽï¼Œç‚¹æŒ‰{startBold}å¥½{endBold}ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFourthInstruction()
 	{
-		return "成功安装 Roblox 后，点按{startBold}好{endBold}。";
+		return "æˆåŠŸå®‰è£… Roblox åŽï¼Œç‚¹æŒ‰{startBold}å¥½{endBold}ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeSecondInstruction()
 	{
-		return "连按 Roblox App 图标以开始安装程序。";
+		return "è¿žæŒ‰ Roblox App å›¾æ ‡ä»¥å¼€å§‹å®‰è£…ç¨‹åºã€‚";
 	}
 
 	/// <summary>
@@ -691,12 +691,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacChromeThirdInstruction(string startBold, string endBold)
 	{
-		return $"按你的电脑提示，点按{startBold}打开{endBold}。";
+		return $"æŒ‰ä½ çš„ç”µè„‘æç¤ºï¼Œç‚¹æŒ‰{startBold}æ‰“å¼€{endBold}ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeThirdInstruction()
 	{
-		return "按你的电脑提示，点按{startBold}打开{endBold}。";
+		return "æŒ‰ä½ çš„ç”µè„‘æç¤ºï¼Œç‚¹æŒ‰{startBold}æ‰“å¼€{endBold}ã€‚";
 	}
 
 	/// <summary>
@@ -706,12 +706,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacFirefoxFifthInstruction(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"然后选中{startBold}记住我的选择...{endBold}复选框，并点按{startBold2}确定{endBold2}";
+		return $"ç„¶åŽé€‰ä¸­{startBold}è®°ä½æˆ‘çš„é€‰æ‹©...{endBold}å¤é€‰æ¡†ï¼Œå¹¶ç‚¹æŒ‰{startBold2}ç¡®å®š{endBold2}";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxFifthInstruction()
 	{
-		return "然后选中{startBold}记住我的选择...{endBold}复选框，并点按{startBold2}确定{endBold2}";
+		return "ç„¶åŽé€‰ä¸­{startBold}è®°ä½æˆ‘çš„é€‰æ‹©...{endBold}å¤é€‰æ¡†ï¼Œå¹¶ç‚¹æŒ‰{startBold2}ç¡®å®š{endBold2}";
 	}
 
 	/// <summary>
@@ -721,12 +721,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacFirefoxFirstInstruction(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"选择{startBold}打开方式{endBold}，并点按{startBold2}好{endBold2}";
+		return $"é€‰æ‹©{startBold}æ‰“å¼€æ–¹å¼{endBold}ï¼Œå¹¶ç‚¹æŒ‰{startBold2}å¥½{endBold2}";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxFirstInstruction()
 	{
-		return "选择{startBold}打开方式{endBold}，并点按{startBold2}好{endBold2}";
+		return "é€‰æ‹©{startBold}æ‰“å¼€æ–¹å¼{endBold}ï¼Œå¹¶ç‚¹æŒ‰{startBold2}å¥½{endBold2}";
 	}
 
 	/// <summary>
@@ -736,12 +736,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacFirefoxFourthInstruction(string startBold, string endBold)
 	{
-		return $"安装完毕后，点按{startBold}开始游戏{endBold}即可进入 Roblox 的世界！";
+		return $"å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯è¿›å…¥ Roblox çš„ä¸–ç•Œï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxFourthInstruction()
 	{
-		return "安装完毕后，点按{startBold}开始游戏{endBold}即可进入 Roblox 的世界！";
+		return "å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯è¿›å…¥ Roblox çš„ä¸–ç•Œï¼";
 	}
 
 	/// <summary>
@@ -751,12 +751,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacFirefoxSecondInstruction(string startBold, string endBold)
 	{
-		return $"连按 {startBold}Roblox 图标{endBold}以开始安装程序";
+		return $"è¿žæŒ‰ {startBold}Roblox å›¾æ ‡{endBold}ä»¥å¼€å§‹å®‰è£…ç¨‹åº";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxSecondInstruction()
 	{
-		return "连按 {startBold}Roblox 图标{endBold}以开始安装程序";
+		return "è¿žæŒ‰ {startBold}Roblox å›¾æ ‡{endBold}ä»¥å¼€å§‹å®‰è£…ç¨‹åº";
 	}
 
 	/// <summary>
@@ -766,12 +766,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacFirefoxThirdInstruction(string startBold, string endBold)
 	{
-		return $"你会收到警告，点按{startBold}打开{endBold}";
+		return $"ä½ ä¼šæ”¶åˆ°è­¦å‘Šï¼Œç‚¹æŒ‰{startBold}æ‰“å¼€{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxThirdInstruction()
 	{
-		return "你会收到警告，点按{startBold}打开{endBold}";
+		return "ä½ ä¼šæ”¶åˆ°è­¦å‘Šï¼Œç‚¹æŒ‰{startBold}æ‰“å¼€{endBold}";
 	}
 
 	/// <summary>
@@ -781,12 +781,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacSafariFirstInstruction(string startBold, string endBold)
 	{
-		return $"前往“下载”并连按 {startBold}Roblox.dmg{endBold}";
+		return $"å‰å¾€â€œä¸‹è½½â€å¹¶è¿žæŒ‰ {startBold}Roblox.dmg{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariFirstInstruction()
 	{
-		return "前往“下载”并连按 {startBold}Roblox.dmg{endBold}";
+		return "å‰å¾€â€œä¸‹è½½â€å¹¶è¿žæŒ‰ {startBold}Roblox.dmg{endBold}";
 	}
 
 	/// <summary>
@@ -796,12 +796,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacSafariFourthInstruction(string startBold, string endBold)
 	{
-		return $"安装完毕后，点按{startBold}开始游戏{endBold}即可进入 Roblox 的世界！";
+		return $"å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯è¿›å…¥ Roblox çš„ä¸–ç•Œï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariFourthInstruction()
 	{
-		return "安装完毕后，点按{startBold}开始游戏{endBold}即可进入 Roblox 的世界！";
+		return "å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯è¿›å…¥ Roblox çš„ä¸–ç•Œï¼";
 	}
 
 	/// <summary>
@@ -811,12 +811,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacSafariSecondInstruction(string startBold, string endBold)
 	{
-		return $"连按 {startBold}Roblox 图标{endBold}以开始安装程序";
+		return $"è¿žæŒ‰ {startBold}Roblox å›¾æ ‡{endBold}ä»¥å¼€å§‹å®‰è£…ç¨‹åº";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariSecondInstruction()
 	{
-		return "连按 {startBold}Roblox 图标{endBold}以开始安装程序";
+		return "è¿žæŒ‰ {startBold}Roblox å›¾æ ‡{endBold}ä»¥å¼€å§‹å®‰è£…ç¨‹åº";
 	}
 
 	/// <summary>
@@ -826,12 +826,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogMacSafariThirdInstruction(string startBold, string endBold)
 	{
-		return $"你会收到警告，点按{startBold}打开{endBold}";
+		return $"ä½ ä¼šæ”¶åˆ°è­¦å‘Šï¼Œç‚¹æŒ‰{startBold}æ‰“å¼€{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariThirdInstruction()
 	{
-		return "你会收到警告，点按{startBold}打开{endBold}";
+		return "ä½ ä¼šæ”¶åˆ°è­¦å‘Šï¼Œç‚¹æŒ‰{startBold}æ‰“å¼€{endBold}";
 	}
 
 	/// <summary>
@@ -841,12 +841,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcChromeFirstInstruction(string startBold, string endBold)
 	{
-		return $"点按 {startBold}RobloxPlayer.exe{endBold}，运行刚刚通过网络浏览器下载的 Roblox 安装程序。";
+		return $"ç‚¹æŒ‰ {startBold}RobloxPlayer.exe{endBold}ï¼Œè¿è¡Œåˆšåˆšé€šè¿‡ç½‘ç»œæµè§ˆå™¨ä¸‹è½½çš„ Roblox å®‰è£…ç¨‹åºã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeFirstInstruction()
 	{
-		return "点按 {startBold}RobloxPlayer.exe{endBold}，运行刚刚通过网络浏览器下载的 Roblox 安装程序。";
+		return "ç‚¹æŒ‰ {startBold}RobloxPlayer.exe{endBold}ï¼Œè¿è¡Œåˆšåˆšé€šè¿‡ç½‘ç»œæµè§ˆå™¨ä¸‹è½½çš„ Roblox å®‰è£…ç¨‹åºã€‚";
 	}
 
 	/// <summary>
@@ -856,12 +856,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcChromeFourthInstruction(string startBold, string endBold)
 	{
-		return $"安装完毕后，点按下面的{startBold}开始游戏{endBold}即可加入游戏！";
+		return $"å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰ä¸‹é¢çš„{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeFourthInstruction()
 	{
-		return "安装完毕后，点按下面的{startBold}开始游戏{endBold}即可加入游戏！";
+		return "å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰ä¸‹é¢çš„{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	/// <summary>
@@ -871,12 +871,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcChromeSecondInstruction(string startBold, string endBold)
 	{
-		return $"按电脑提示，点按{startBold}运行{endBold}。";
+		return $"æŒ‰ç”µè„‘æç¤ºï¼Œç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeSecondInstruction()
 	{
-		return "按电脑提示，点按{startBold}运行{endBold}。";
+		return "æŒ‰ç”µè„‘æç¤ºï¼Œç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}ã€‚";
 	}
 
 	/// <summary>
@@ -886,12 +886,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcChromeThirdInstruction(string startBold, string endBold)
 	{
-		return $"成功安装 Roblox 后，点按{startBold}确定{endBold}。";
+		return $"æˆåŠŸå®‰è£… Roblox åŽï¼Œç‚¹æŒ‰{startBold}ç¡®å®š{endBold}ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeThirdInstruction()
 	{
-		return "成功安装 Roblox 后，点按{startBold}确定{endBold}。";
+		return "æˆåŠŸå®‰è£… Roblox åŽï¼Œç‚¹æŒ‰{startBold}ç¡®å®š{endBold}ã€‚";
 	}
 
 	/// <summary>
@@ -901,12 +901,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcEdgeFirstInstruction(string startBold, string endBold)
 	{
-		return $"下载结束后，点按{startBold}运行{endBold}安装 Roblox";
+		return $"ä¸‹è½½ç»“æŸåŽï¼Œç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}å®‰è£… Roblox";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcEdgeFirstInstruction()
 	{
-		return "下载结束后，点按{startBold}运行{endBold}安装 Roblox";
+		return "ä¸‹è½½ç»“æŸåŽï¼Œç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}å®‰è£… Roblox";
 	}
 
 	/// <summary>
@@ -916,12 +916,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcEdgeSecondInstruction(string startBold, string endBold)
 	{
-		return $"点按{startBold}确定{endBold}以结束安装 Roblox";
+		return $"ç‚¹æŒ‰{startBold}ç¡®å®š{endBold}ä»¥ç»“æŸå®‰è£… Roblox";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcEdgeSecondInstruction()
 	{
-		return "点按{startBold}确定{endBold}以结束安装 Roblox";
+		return "ç‚¹æŒ‰{startBold}ç¡®å®š{endBold}ä»¥ç»“æŸå®‰è£… Roblox";
 	}
 
 	/// <summary>
@@ -931,12 +931,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcEdgeThirdInstruction(string startBold, string endBold)
 	{
-		return $"点按{startBold}开始游戏{endBold}按钮即可加入游戏！";
+		return $"ç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}æŒ‰é’®å³å¯åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcEdgeThirdInstruction()
 	{
-		return "点按{startBold}开始游戏{endBold}按钮即可加入游戏！";
+		return "ç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}æŒ‰é’®å³å¯åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	/// <summary>
@@ -946,12 +946,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFifthInstruction(string startBold, string endBold)
 	{
-		return $"提醒弹出时，点按{startBold}确定{endBold}";
+		return $"æé†’å¼¹å‡ºæ—¶ï¼Œç‚¹æŒ‰{startBold}ç¡®å®š{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFifthInstruction()
 	{
-		return "提醒弹出时，点按{startBold}确定{endBold}";
+		return "æé†’å¼¹å‡ºæ—¶ï¼Œç‚¹æŒ‰{startBold}ç¡®å®š{endBold}";
 	}
 
 	/// <summary>
@@ -961,12 +961,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFirstInstruction(string startBold, string endBold)
 	{
-		return $"下载窗口弹出时，点按{startBold}保存文件{endBold}";
+		return $"ä¸‹è½½çª—å£å¼¹å‡ºæ—¶ï¼Œç‚¹æŒ‰{startBold}ä¿å­˜æ–‡ä»¶{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFirstInstruction()
 	{
-		return "下载窗口弹出时，点按{startBold}保存文件{endBold}";
+		return "ä¸‹è½½çª—å£å¼¹å‡ºæ—¶ï¼Œç‚¹æŒ‰{startBold}ä¿å­˜æ–‡ä»¶{endBold}";
 	}
 
 	/// <summary>
@@ -976,12 +976,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFourthInstruction(string startBold, string endBold)
 	{
-		return $"安装完毕后，点按{startBold}开始游戏{endBold}即可进入 Roblox 的世界！";
+		return $"å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯è¿›å…¥ Roblox çš„ä¸–ç•Œï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFourthInstruction()
 	{
-		return "安装完毕后，点按{startBold}开始游戏{endBold}即可进入 Roblox 的世界！";
+		return "å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯è¿›å…¥ Roblox çš„ä¸–ç•Œï¼";
 	}
 
 	/// <summary>
@@ -991,12 +991,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcFirefoxSecondInstruction(string startBold, string endBold)
 	{
-		return $"前往“下载”并连按 {startBold}RobloxPlayer.exe{endBold}";
+		return $"å‰å¾€â€œä¸‹è½½â€å¹¶è¿žæŒ‰ {startBold}RobloxPlayer.exe{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxSecondInstruction()
 	{
-		return "前往“下载”并连按 {startBold}RobloxPlayer.exe{endBold}";
+		return "å‰å¾€â€œä¸‹è½½â€å¹¶è¿žæŒ‰ {startBold}RobloxPlayer.exe{endBold}";
 	}
 
 	/// <summary>
@@ -1006,12 +1006,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcFirefoxThirdInstruction(string startBold, string endBold)
 	{
-		return $"点按{startBold}运行{endBold}";
+		return $"ç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxThirdInstruction()
 	{
-		return "点按{startBold}运行{endBold}";
+		return "ç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}";
 	}
 
 	/// <summary>
@@ -1021,12 +1021,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcIEFirstInstruction(string startBold, string endBold)
 	{
-		return $"你会收到警告，点按{startBold}运行{endBold}";
+		return $"ä½ ä¼šæ”¶åˆ°è­¦å‘Šï¼Œç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIEFirstInstruction()
 	{
-		return "你会收到警告，点按{startBold}运行{endBold}";
+		return "ä½ ä¼šæ”¶åˆ°è­¦å‘Šï¼Œç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}";
 	}
 
 	/// <summary>
@@ -1036,12 +1036,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcIeInstructionOne(string startBold, string endBold)
 	{
-		return $"你会收到警告，点按{startBold}运行{endBold}";
+		return $"ä½ ä¼šæ”¶åˆ°è­¦å‘Šï¼Œç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIeInstructionOne()
 	{
-		return "你会收到警告，点按{startBold}运行{endBold}";
+		return "ä½ ä¼šæ”¶åˆ°è­¦å‘Šï¼Œç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}";
 	}
 
 	/// <summary>
@@ -1051,12 +1051,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcIeInstructionThree(string startBold, string endBold)
 	{
-		return $"点按{startBold}运行{endBold}";
+		return $"ç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIeInstructionThree()
 	{
-		return "点按{startBold}运行{endBold}";
+		return "ç‚¹æŒ‰{startBold}è¿è¡Œ{endBold}";
 	}
 
 	/// <summary>
@@ -1066,12 +1066,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcIeInstructionTwo(string startBold, string endBold)
 	{
-		return $"前往“下载”并连按 {startBold}RobloxPlayer.exe{endBold}";
+		return $"å‰å¾€â€œä¸‹è½½â€å¹¶è¿žæŒ‰ {startBold}RobloxPlayer.exe{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIeInstructionTwo()
 	{
-		return "前往“下载”并连按 {startBold}RobloxPlayer.exe{endBold}";
+		return "å‰å¾€â€œä¸‹è½½â€å¹¶è¿žæŒ‰ {startBold}RobloxPlayer.exe{endBold}";
 	}
 
 	/// <summary>
@@ -1081,12 +1081,12 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcIESecondInstruction(string startBold, string endBold)
 	{
-		return $"安装 Roblox 后，点按{startBold}确定{endBold}";
+		return $"å®‰è£… Roblox åŽï¼Œç‚¹æŒ‰{startBold}ç¡®å®š{endBold}";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIESecondInstruction()
 	{
-		return "安装 Roblox 后，点按{startBold}确定{endBold}";
+		return "å®‰è£… Roblox åŽï¼Œç‚¹æŒ‰{startBold}ç¡®å®š{endBold}";
 	}
 
 	/// <summary>
@@ -1096,22 +1096,22 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseDialogPcIEThirdInstruction(string startBold, string endBold)
 	{
-		return $"安装完毕后，点按{startBold}开始游戏{endBold}即可进入 Roblox 的世界！";
+		return $"å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯è¿›å…¥ Roblox çš„ä¸–ç•Œï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIEThirdInstruction()
 	{
-		return "安装完毕后，点按{startBold}开始游戏{endBold}即可进入 Roblox 的世界！";
+		return "å®‰è£…å®Œæ¯•åŽï¼Œç‚¹æŒ‰{startBold}å¼€å§‹æ¸¸æˆ{endBold}å³å¯è¿›å…¥ Roblox çš„ä¸–ç•Œï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogThanksForPlayingRoblox()
 	{
-		return "谢谢你玩 Roblox";
+		return "è°¢è°¢ä½ çŽ© Roblox";
 	}
 
 	protected override string _GetTemplateForResponseGameTemporarilyUnavailable()
 	{
-		return "无法验证你是否有权访问此游戏。请稍后重试。";
+		return "æ— æ³•éªŒè¯ä½ æ˜¯å¦æœ‰æƒè®¿é—®æ­¤æ¸¸æˆã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	/// <summary>
@@ -1121,11 +1121,14 @@ internal class VisitGameResources_zh_cjv : VisitGameResources_en_us, IVisitGameR
 	/// </summary>
 	public override string ResponseRememberMyChoiceAppLaunch(string startBold, string endBold, string appLaunchLink)
 	{
-		return $"选中{startBold}记住我的选择{endBold}，并点按上方对话框中的{appLaunchLink}，之后就可以更快加入游戏！";
+		return $"é€‰ä¸­{startBold}è®°ä½æˆ‘çš„é€‰æ‹©{endBold}ï¼Œå¹¶ç‚¹æŒ‰ä¸Šæ–¹å¯¹è¯æ¡†ä¸­çš„{appLaunchLink}ï¼Œä¹‹åŽå°±å¯ä»¥æ›´å¿«åŠ å…¥æ¸¸æˆï¼";
 	}
 
 	protected override string _GetTemplateForResponseRememberMyChoiceAppLaunch()
 	{
-		return "选中{startBold}记住我的选择{endBold}，并点按上方对话框中的{appLaunchLink}，之后就可以更快加入游戏！";
+		return "é€‰ä¸­{startBold}è®°ä½æˆ‘çš„é€‰æ‹©{endBold}ï¼Œå¹¶ç‚¹æŒ‰ä¸Šæ–¹å¯¹è¯æ¡†ä¸­çš„{appLaunchLink}ï¼Œä¹‹åŽå°±å¯ä»¥æ›´å¿«åŠ å…¥æ¸¸æˆï¼";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SocialResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,43 +10,43 @@ internal class SocialResources_zh_cn : SocialResources_en_us, ISocialResources, 
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Unlink"
 	/// English String: "Unlink"
 	/// </summary>
-	public override string ActionUnlink => "解除连接";
+	public override string ActionUnlink => "è§£é™¤è¿žæŽ¥";
 
 	/// <summary>
 	/// Key: "Description.ConnectedAccounts"
 	/// English String: "Disconnect your connected accounts here. Unlinking an account will log you out of Roblox."
 	/// </summary>
-	public override string DescriptionConnectedAccounts => "在这里解除与你关联帐户的连接。取消帐户关联后，你也将登出 Roblox。";
+	public override string DescriptionConnectedAccounts => "åœ¨è¿™é‡Œè§£é™¤ä¸Žä½ å…³è”å¸æˆ·çš„è¿žæŽ¥ã€‚å–æ¶ˆå¸æˆ·å…³è”åŽï¼Œä½ ä¹Ÿå°†ç™»å‡º Robloxã€‚";
 
 	/// <summary>
 	/// Key: "Description.UnlinkLogOutWarning"
 	/// English String: "Unlinking this account will log you out of Roblox. You will have to link your account again to log back in."
 	/// </summary>
-	public override string DescriptionUnlinkLogOutWarning => "解除与此帐户的连接将导致你登出 Roblox。你需要重新连接你的帐户以登录。";
+	public override string DescriptionUnlinkLogOutWarning => "è§£é™¤ä¸Žæ­¤å¸æˆ·çš„è¿žæŽ¥å°†å¯¼è‡´ä½ ç™»å‡º Robloxã€‚ä½ éœ€è¦é‡æ–°è¿žæŽ¥ä½ çš„å¸æˆ·ä»¥ç™»å½•ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.ConnectedAccounts"
 	/// English String: "Connected Accounts"
 	/// </summary>
-	public override string HeadingConnectedAccounts => "关联帐户";
+	public override string HeadingConnectedAccounts => "å…³è”å¸æˆ·";
 
 	/// <summary>
 	/// Key: "Placeholder.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string PlaceholderPassword => "密码";
+	public override string PlaceholderPassword => "å¯†ç ";
 
 	/// <summary>
 	/// Key: "Response.InvalidPassword"
 	/// English String: "Invalid Password."
 	/// </summary>
-	public override string ResponseInvalidPassword => "密码无效。";
+	public override string ResponseInvalidPassword => "å¯†ç æ— æ•ˆã€‚";
 
 	public SocialResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -55,27 +55,27 @@ internal class SocialResources_zh_cn : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionUnlink()
 	{
-		return "解除连接";
+		return "è§£é™¤è¿žæŽ¥";
 	}
 
 	protected override string _GetTemplateForDescriptionConnectedAccounts()
 	{
-		return "在这里解除与你关联帐户的连接。取消帐户关联后，你也将登出 Roblox。";
+		return "åœ¨è¿™é‡Œè§£é™¤ä¸Žä½ å…³è”å¸æˆ·çš„è¿žæŽ¥ã€‚å–æ¶ˆå¸æˆ·å…³è”åŽï¼Œä½ ä¹Ÿå°†ç™»å‡º Robloxã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionUnlinkLogOutWarning()
 	{
-		return "解除与此帐户的连接将导致你登出 Roblox。你需要重新连接你的帐户以登录。";
+		return "è§£é™¤ä¸Žæ­¤å¸æˆ·çš„è¿žæŽ¥å°†å¯¼è‡´ä½ ç™»å‡º Robloxã€‚ä½ éœ€è¦é‡æ–°è¿žæŽ¥ä½ çš„å¸æˆ·ä»¥ç™»å½•ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingConnectedAccounts()
 	{
-		return "关联帐户";
+		return "å…³è”å¸æˆ·";
 	}
 
 	/// <summary>
@@ -84,21 +84,24 @@ internal class SocialResources_zh_cn : SocialResources_en_us, ISocialResources, 
 	/// </summary>
 	public override string HeadingUnlink(string provider)
 	{
-		return $"解除连接 {provider}";
+		return $"è§£é™¤è¿žæŽ¥ {provider}";
 	}
 
 	protected override string _GetTemplateForHeadingUnlink()
 	{
-		return "解除连接 {provider}";
+		return "è§£é™¤è¿žæŽ¥ {provider}";
 	}
 
 	protected override string _GetTemplateForPlaceholderPassword()
 	{
-		return "密码";
+		return "å¯†ç ";
 	}
 
 	protected override string _GetTemplateForResponseInvalidPassword()
 	{
-		return "密码无效。";
+		return "å¯†ç æ— æ•ˆã€‚";
 	}
+}
+
+
 }

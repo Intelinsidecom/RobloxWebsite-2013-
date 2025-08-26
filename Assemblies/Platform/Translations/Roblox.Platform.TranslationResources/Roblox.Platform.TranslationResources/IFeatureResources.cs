@@ -1,8 +1,7 @@
-using Roblox.TranslationResources.Feature;
+﻿using Roblox.TranslationResources.Feature;
+namespace Roblox.Platform.TranslationResourcespublic {
+    interface IFeatureResources : ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-public interface IFeatureResources : ITranslationResourcesNamespacesGroup
 {
 	IAccountSettingsResources AccountSettings { get; }
 
@@ -161,4 +160,7 @@ public interface IFeatureResources : ITranslationResourcesNamespacesGroup
 	IVIPServerResources VIPServer { get; }
 
 	IVotingPanelResources VotingPanel { get; }
+}
+
+
 }

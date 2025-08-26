@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Outfits;
+namespace Roblox.Platform.Thumbspublic {
+    interface IAvatarThumbnail
 
-namespace Roblox.Thumbs;
-
-public interface IAvatarThumbnail
 {
 	ThumbnailDomainFactories DomainFactories { get; }
 
@@ -50,4 +49,7 @@ public interface IAvatarThumbnail
 	ThumbResult GetOutfit3DThumbnailUrl(IOutfit outfit);
 
 	ThumbResult GetOutfitThumbnailUrl(IOutfit outfit, ImageParameters imageParameters);
+}
+
+
 }

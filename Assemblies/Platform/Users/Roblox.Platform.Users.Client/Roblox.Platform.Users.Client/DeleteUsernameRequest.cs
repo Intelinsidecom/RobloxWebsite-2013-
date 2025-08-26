@@ -1,8 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 internal class DeleteUsernameRequest
@@ -12,4 +11,6 @@ internal class DeleteUsernameRequest
 
 	[DataMember(Name = "name")]
 	public string Name { get; set; }
+}
+
 }

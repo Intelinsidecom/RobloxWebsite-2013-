@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-namespace Roblox.TextFilter;
-
-/// <summary>
 /// This TextFilter operation was unavailable for some reason.
 /// </summary>
 public class TextFilterOperationUnavailableException : Exception
@@ -16,4 +15,7 @@ public class TextFilterOperationUnavailableException : Exception
 		: base(message, innerException)
 	{
 	}
+}
+
+
 }

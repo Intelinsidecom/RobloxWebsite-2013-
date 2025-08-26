@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IEngagementPayoutResources : ITranslationResources
 
-public interface IEngagementPayoutResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Description.EngagementPayoutSubtitle"
@@ -55,4 +55,7 @@ public interface IEngagementPayoutResources : ITranslationResources
 	/// English String: "Weekly"
 	/// </summary>
 	string LabelWeekly { get; }
+}
+
+
 }

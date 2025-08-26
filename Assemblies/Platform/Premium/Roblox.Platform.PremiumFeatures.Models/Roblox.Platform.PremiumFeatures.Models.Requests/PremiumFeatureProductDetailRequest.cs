@@ -1,11 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Roblox.PremiumFeatures.Models.Core;
 using Roblox.PremiumFeatures.Models.Enums;
+namespace Roblox.Platform.PremiumFeatures.Models.Requests {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models.Requests;
-
-[DataContract]
 public class PremiumFeatureProductDetailRequest
 {
 	[DataMember(Name = "premiumFeatureProducts", EmitDefaultValue = false, IsRequired = true)]
@@ -22,4 +21,7 @@ public class PremiumFeatureProductDetailRequest
 
 	[DataMember(Name = "platformType", EmitDefaultValue = true, IsRequired = false)]
 	public PremiumFeaturesProductPlatformType PlatformType { get; set; }
+}
+
+
 }

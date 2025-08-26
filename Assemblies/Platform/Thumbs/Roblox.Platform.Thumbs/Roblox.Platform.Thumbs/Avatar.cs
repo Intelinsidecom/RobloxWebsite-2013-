@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Web;
 using System.Web.Script.Services;
 using System.Web.Services;
 using Roblox.Common;
+namespace Roblox.Platform.Thumbs {
+    [WebService(Namespace = "http://roblox.com/")]
 
-namespace Roblox.Thumbs;
-
-[WebService(Namespace = "http://roblox.com/")]
 [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 [GenerateScriptType(typeof(ScriptThumbResult))]
 [ScriptService]
@@ -39,3 +38,5 @@ public class Avatar : WebService
 		return new ScriptThumbResult(DomainFactories.Avatar.GetThumbnailUrl(user, imageParameters), ProtocolResolver.IsRequestSecure(base.Context.Request));
 	}
 }
+
+

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Concurrent;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    class UpdateDebouncer<T> : IUpdateDebouncer<T>
 
-namespace Roblox.RealTimeNotifications;
-
-public class UpdateDebouncer<T> : IUpdateDebouncer<T>
 {
 	private readonly int _NumberOfAttemptsToDebounce;
 
@@ -38,4 +37,7 @@ public class UpdateDebouncer<T> : IUpdateDebouncer<T>
 	{
 		return _NumberOfAttemptsToDebounce;
 	}
+}
+
+
 }

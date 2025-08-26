@@ -1,6 +1,9 @@
-namespace Roblox.Platform.Events;
+namespace Roblox.Events {
+    internal interface IEventPublisher
 
-internal interface IEventPublisher
 {
 	void PublishMessage(object message);
+}
+
+
 }

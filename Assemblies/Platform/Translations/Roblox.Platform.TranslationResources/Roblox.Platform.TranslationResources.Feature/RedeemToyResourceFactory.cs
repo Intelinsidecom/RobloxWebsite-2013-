@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class RedeemToyResourceFactory
 
-internal static class RedeemToyResourceFactory
 {
 	public const string FullNamespace = "Feature.RedeemToy";
 
@@ -21,4 +21,7 @@ internal static class RedeemToyResourceFactory
 			_ => new RedeemToyResources_en_us(state), 
 		};
 	}
+}
+
+
 }

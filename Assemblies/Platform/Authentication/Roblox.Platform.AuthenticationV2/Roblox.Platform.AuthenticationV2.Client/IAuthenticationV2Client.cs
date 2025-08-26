@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.AuthenticationV2.Client {
+    /// <summary>
 
-namespace Roblox.AuthenticationV2.Client;
-
-/// <summary>
 /// A client to communicate with the AuthenticationV2 Service
 /// </summary>
 public interface IAuthenticationV2Client
@@ -31,4 +30,7 @@ public interface IAuthenticationV2Client
 	/// <param name="type">The type of user</param>
 	/// <param name="user">Unique identifier for the user</param>
 	void DeleteAllRobloxUserSessions(string type, string user);
+}
+
+
 }

@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Moderationpublic {
+    class BadMessageException : Exception
 
-namespace Roblox.Platform.Moderation;
-
-public class BadMessageException : Exception
 {
 	public BadMessageException(string message)
 		: base(message)
@@ -13,4 +12,7 @@ public class BadMessageException : Exception
 		: base(message, e)
 	{
 	}
+}
+
+
 }

@@ -1,7 +1,6 @@
 using System;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public enum UserModerationStatus
 {
 	Ok = 1,
@@ -12,4 +11,6 @@ public enum UserModerationStatus
 	[Obsolete]
 	MustValidateEmail,
 	Forgotten
+}
+
 }

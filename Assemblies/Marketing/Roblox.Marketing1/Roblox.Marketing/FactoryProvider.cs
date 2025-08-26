@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Marketing;
+﻿namespace Roblox.Marketingpublic {
+    static class FactoryProvider
 
-public static class FactoryProvider
 {
 	private static IBrowserTrackerFactory _browserTrackerFactory = new BrowserTrackerFactory();
 
@@ -19,4 +19,7 @@ public static class FactoryProvider
 	}
 
 	public static RandomNumberFactory RandomNumberFactory => _randomNumberFactory;
+}
+
+
 }

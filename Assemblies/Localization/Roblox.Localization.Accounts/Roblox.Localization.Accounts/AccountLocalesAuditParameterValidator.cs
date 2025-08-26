@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountLocalesAuditParameterValidator : IAccountLocalesAuditParameterValidator
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountLocalesAuditParameterValidator : IAccountLocalesAuditParameterValidator
 {
 	private readonly ISettings _Settings;
 
@@ -52,4 +51,7 @@ internal class AccountLocalesAuditParameterValidator : IAccountLocalesAuditParam
 			throw new NotImplementedException($"Pleaes define validation behavior for {changeAgentType.ToString()}.");
 		}
 	}
+}
+
+
 }

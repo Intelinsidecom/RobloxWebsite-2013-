@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+    class PurchaseDialogResources_en_us : TranslationResourcesBase, IPurchaseDialogResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Purchasing;
-
-internal class PurchaseDialogResources_en_us : TranslationResourcesBase, IPurchaseDialogResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -645,4 +644,7 @@ internal class PurchaseDialogResources_en_us : TranslationResourcesBase, IPurcha
 	{
 		return "You have successfully rented access to the {assetName} {assetType} from {seller} for {robux}.";
 	}
+}
+
+
 }

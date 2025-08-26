@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ChatResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Action.Add"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "Añadir";
+	public override string ActionAdd => "AÃ±adir";
 
 	/// <summary>
 	/// Key: "Action.BuyAccess"
@@ -68,7 +68,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Action.MuteMic"
 	/// English String: "Mute Your Microphone"
 	/// </summary>
-	public override string ActionMuteMic => "Desactivar tu micrófono";
+	public override string ActionMuteMic => "Desactivar tu micrÃ³fono";
 
 	/// <summary>
 	/// Key: "Action.Remove"
@@ -130,7 +130,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Action.UnmuteMic"
 	/// English String: "Unmute Your Microphone"
 	/// </summary>
-	public override string ActionUnmuteMic => "Reactivar tu micrófono";
+	public override string ActionUnmuteMic => "Reactivar tu micrÃ³fono";
 
 	/// <summary>
 	/// Key: "Description.JoinInVoiceChat"
@@ -149,7 +149,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// User is actively in voice chat
 	/// English String: "You are in the voice chat"
 	/// </summary>
-	public override string DescriptionUserInVoice => "Estás en el chat de voz";
+	public override string DescriptionUserInVoice => "EstÃ¡s en el chat de voz";
 
 	/// <summary>
 	/// Key: "Description.VoiceNotConnect"
@@ -176,13 +176,13 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Heading.ConfirmLeaving"
 	/// English String: "Are you sure to leave this chat group?"
 	/// </summary>
-	public override string HeadingConfirmLeaving => "¿Seguro que quieres salir de este grupo de chat?";
+	public override string HeadingConfirmLeaving => "Â¿Seguro que quieres salir de este grupo de chat?";
 
 	/// <summary>
 	/// Key: "Heading.ContinueToReport"
 	/// English String: "Continue to report?"
 	/// </summary>
-	public override string HeadingContinueToReport => "¿Ver la denuncia?";
+	public override string HeadingContinueToReport => "Â¿Ver la denuncia?";
 
 	/// <summary>
 	/// Key: "Heading.CreateParty"
@@ -200,7 +200,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Heading.LeaveChatGroupQ"
 	/// English String: "Leave Chat Group?"
 	/// </summary>
-	public override string HeadingLeaveChatGroupQ => "¿Salir del grupo de chat?";
+	public override string HeadingLeaveChatGroupQ => "Â¿Salir del grupo de chat?";
 
 	/// <summary>
 	/// Key: "Heading.NewChatGroup"
@@ -212,7 +212,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Heading.RemoveUser"
 	/// English String: "Remove User?"
 	/// </summary>
-	public override string HeadingRemoveUser => "¿Eliminar usuario?";
+	public override string HeadingRemoveUser => "Â¿Eliminar usuario?";
 
 	/// <summary>
 	/// Key: "Heading.Report"
@@ -225,7 +225,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.AddFriends"
 	/// English String: "Add Friends"
 	/// </summary>
-	public override string LabelAddFriends => "Añadir amigos";
+	public override string LabelAddFriends => "AÃ±adir amigos";
 
 	/// <summary>
 	/// Key: "Label.BuyButton"
@@ -269,7 +269,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// conversation notification is on
 	/// English String: "On"
 	/// </summary>
-	public override string LabelConversationNotificationsOn => "Sí";
+	public override string LabelConversationNotificationsOn => "SÃ­";
 
 	/// <summary>
 	/// Key: "Label.Details.PlayTogether"
@@ -387,7 +387,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Mute conversation for a day
 	/// English String: "For a day"
 	/// </summary>
-	public override string LabelMute24Hours => "Por 1 día";
+	public override string LabelMute24Hours => "Por 1 dÃ­a";
 
 	/// <summary>
 	/// Key: "Label.Mute8Hours"
@@ -406,7 +406,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.MuteConversationNotificationsForOneToOne"
 	/// English String: "Mute notifications for this conversation"
 	/// </summary>
-	public override string LabelMuteConversationNotificationsForOneToOne => "Silenciar las notificaciones para esta conversación";
+	public override string LabelMuteConversationNotificationsForOneToOne => "Silenciar las notificaciones para esta conversaciÃ³n";
 
 	/// <summary>
 	/// Key: "Label.MuteInfinite"
@@ -438,13 +438,13 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.NotInCall"
 	/// English String: "Not in call"
 	/// </summary>
-	public override string LabelNotInCall => "No está en la llamada";
+	public override string LabelNotInCall => "No estÃ¡ en la llamada";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "Sin conexión";
+	public override string LabelOffline => "Sin conexiÃ³n";
 
 	/// <summary>
 	/// Key: "Label.Online"
@@ -499,7 +499,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "Ver más";
+	public override string LabelSeeMore => "Ver mÃ¡s";
 
 	/// <summary>
 	/// Key: "Label.ShowLessGames"
@@ -511,7 +511,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.SpanTitle.CreateGroupNeeds2More"
 	/// English String: "Add at least 2 people to create chat group"
 	/// </summary>
-	public override string LabelSpanTitleCreateGroupNeeds2More => "Añade al menos a 2\u00a0personas para crear un grupo de chat.";
+	public override string LabelSpanTitleCreateGroupNeeds2More => "AÃ±ade al menos a 2\u00a0personas para crear un grupo de chat.";
 
 	/// <summary>
 	/// Key: "Label.SpanTitle.Loading"
@@ -523,7 +523,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.TimestampOffUntilTomorrow"
 	/// English String: "Off until tomorrow"
 	/// </summary>
-	public override string LabelTimestampOffUntilTomorrow => "Desactivadas hasta mañana";
+	public override string LabelTimestampOffUntilTomorrow => "Desactivadas hasta maÃ±ana";
 
 	/// <summary>
 	/// Key: "Label.TimestampOffUntilTurnedBackOn"
@@ -535,7 +535,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Label.TurnOnConversationNotificationsPrompt"
 	/// English String: "Do you want to turn on notifications?"
 	/// </summary>
-	public override string LabelTurnOnConversationNotificationsPrompt => "¿Quieres activar las notificaciones?";
+	public override string LabelTurnOnConversationNotificationsPrompt => "Â¿Quieres activar las notificaciones?";
 
 	/// <summary>
 	/// Key: "Label.UnpinGameTooltip"
@@ -560,7 +560,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Voice chat setting label
 	/// English String: "Voice Settings"
 	/// </summary>
-	public override string LabelVoiceSetting => "Configuración de voz";
+	public override string LabelVoiceSetting => "ConfiguraciÃ³n de voz";
 
 	/// <summary>
 	/// Key: "Label.Yesterday"
@@ -598,7 +598,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Message.JoinPartyText"
 	/// English String: "The party leader is finding a game to play."
 	/// </summary>
-	public override string MessageJoinPartyText => "El líder del equipo está buscando una partida.";
+	public override string MessageJoinPartyText => "El lÃ­der del equipo estÃ¡ buscando una partida.";
 
 	/// <summary>
 	/// Key: "Message.MakeFriendsToChatNPlay"
@@ -628,13 +628,13 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Message.PartyInviteMsg"
 	/// English String: "PARTY INVITE!"
 	/// </summary>
-	public override string MessagePartyInviteMsg => "INVITACIÓN A UN EQUIPO";
+	public override string MessagePartyInviteMsg => "INVITACIÃ“N A UN EQUIPO";
 
 	/// <summary>
 	/// Key: "Message.PlayGameUpdate"
 	/// English String: " is playing the pinned game: "
 	/// </summary>
-	public override string MessagePlayGameUpdate => " está jugando al juego anclado: ";
+	public override string MessagePlayGameUpdate => " estÃ¡ jugando al juego anclado: ";
 
 	/// <summary>
 	/// Key: "Message.TextTooLong"
@@ -660,7 +660,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// notification message
 	/// English String: "You received a party Invite."
 	/// </summary>
-	public override string ResponsePartyInvite => "Has recibido una invitación para unirte a un equipo.";
+	public override string ResponsePartyInvite => "Has recibido una invitaciÃ³n para unirte a un equipo.";
 
 	public ChatResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -669,7 +669,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "Añadir";
+		return "AÃ±adir";
 	}
 
 	protected override string _GetTemplateForActionBuyAccess()
@@ -714,7 +714,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForActionMuteMic()
 	{
-		return "Desactivar tu micrófono";
+		return "Desactivar tu micrÃ³fono";
 	}
 
 	protected override string _GetTemplateForActionRemove()
@@ -764,7 +764,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForActionUnmuteMic()
 	{
-		return "Reactivar tu micrófono";
+		return "Reactivar tu micrÃ³fono";
 	}
 
 	protected override string _GetTemplateForDescriptionJoinInVoiceChat()
@@ -779,7 +779,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForDescriptionUserInVoice()
 	{
-		return "Estás en el chat de voz";
+		return "EstÃ¡s en el chat de voz";
 	}
 
 	protected override string _GetTemplateForDescriptionVoiceNotConnect()
@@ -804,12 +804,12 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForHeadingConfirmLeaving()
 	{
-		return "¿Seguro que quieres salir de este grupo de chat?";
+		return "Â¿Seguro que quieres salir de este grupo de chat?";
 	}
 
 	protected override string _GetTemplateForHeadingContinueToReport()
 	{
-		return "¿Ver la denuncia?";
+		return "Â¿Ver la denuncia?";
 	}
 
 	protected override string _GetTemplateForHeadingCreateParty()
@@ -824,7 +824,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForHeadingLeaveChatGroupQ()
 	{
-		return "¿Salir del grupo de chat?";
+		return "Â¿Salir del grupo de chat?";
 	}
 
 	protected override string _GetTemplateForHeadingNewChatGroup()
@@ -834,7 +834,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForHeadingRemoveUser()
 	{
-		return "¿Eliminar usuario?";
+		return "Â¿Eliminar usuario?";
 	}
 
 	protected override string _GetTemplateForHeadingReport()
@@ -844,7 +844,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelAddFriends()
 	{
-		return "Añadir amigos";
+		return "AÃ±adir amigos";
 	}
 
 	/// <summary>
@@ -853,12 +853,12 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelBuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"¿Quieres comprarle el acceso al lugar: {placeName} de {creatorName} por {robux}?";
+		return $"Â¿Quieres comprarle el acceso al lugar: {placeName} de {creatorName} por {robux}?";
 	}
 
 	protected override string _GetTemplateForLabelBuyAccessToGameForModal()
 	{
-		return "¿Quieres comprarle el acceso al lugar: {placeName} de {creatorName} por {robux}?";
+		return "Â¿Quieres comprarle el acceso al lugar: {placeName} de {creatorName} por {robux}?";
 	}
 
 	protected override string _GetTemplateForLabelBuyButton()
@@ -893,7 +893,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelConversationNotificationsOn()
 	{
-		return "Sí";
+		return "SÃ­";
 	}
 
 	protected override string _GetTemplateForLabelDetailsPlayTogether()
@@ -1002,7 +1002,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelMute24Hours()
 	{
-		return "Por 1 día";
+		return "Por 1 dÃ­a";
 	}
 
 	protected override string _GetTemplateForLabelMute8Hours()
@@ -1017,7 +1017,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelMuteConversationNotificationsForOneToOne()
 	{
-		return "Silenciar las notificaciones para esta conversación";
+		return "Silenciar las notificaciones para esta conversaciÃ³n";
 	}
 
 	protected override string _GetTemplateForLabelMuteInfinite()
@@ -1042,12 +1042,12 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelNotInCall()
 	{
-		return "No está en la llamada";
+		return "No estÃ¡ en la llamada";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "Sin conexión";
+		return "Sin conexiÃ³n";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
@@ -1061,12 +1061,12 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelPartyLeaderTooltip(string userName)
 	{
-		return $"{userName} es el líder del equipo.";
+		return $"{userName} es el lÃ­der del equipo.";
 	}
 
 	protected override string _GetTemplateForLabelPartyLeaderTooltip()
 	{
-		return "{userName} es el líder del equipo.";
+		return "{userName} es el lÃ­der del equipo.";
 	}
 
 	/// <summary>
@@ -1075,12 +1075,12 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelPartyMemberTooltip(string userName)
 	{
-		return $"{userName} está en el equipo.";
+		return $"{userName} estÃ¡ en el equipo.";
 	}
 
 	protected override string _GetTemplateForLabelPartyMemberTooltip()
 	{
-		return "{userName} está en el equipo.";
+		return "{userName} estÃ¡ en el equipo.";
 	}
 
 	/// <summary>
@@ -1103,12 +1103,12 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelPendingMemberTooltip(string userName)
 	{
-		return $"{userName} no está en el equipo.";
+		return $"{userName} no estÃ¡ en el equipo.";
 	}
 
 	protected override string _GetTemplateForLabelPendingMemberTooltip()
 	{
-		return "{userName} no está en el equipo.";
+		return "{userName} no estÃ¡ en el equipo.";
 	}
 
 	protected override string _GetTemplateForLabelPinGameTooltip()
@@ -1162,7 +1162,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "Ver más";
+		return "Ver mÃ¡s";
 	}
 
 	protected override string _GetTemplateForLabelShowLessGames()
@@ -1176,17 +1176,17 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelShowMoreGames(string count)
 	{
-		return $"Mostrar más (+{count})";
+		return $"Mostrar mÃ¡s (+{count})";
 	}
 
 	protected override string _GetTemplateForLabelShowMoreGames()
 	{
-		return "Mostrar más (+{count})";
+		return "Mostrar mÃ¡s (+{count})";
 	}
 
 	protected override string _GetTemplateForLabelSpanTitleCreateGroupNeeds2More()
 	{
-		return "Añade al menos a 2\u00a0personas para crear un grupo de chat.";
+		return "AÃ±ade al menos a 2\u00a0personas para crear un grupo de chat.";
 	}
 
 	protected override string _GetTemplateForLabelSpanTitleLoading()
@@ -1210,7 +1210,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelTimestampOffUntilTomorrow()
 	{
-		return "Desactivadas hasta mañana";
+		return "Desactivadas hasta maÃ±ana";
 	}
 
 	protected override string _GetTemplateForLabelTimestampOffUntilTurnedBackOn()
@@ -1220,7 +1220,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelTurnOnConversationNotificationsPrompt()
 	{
-		return "¿Quieres activar las notificaciones?";
+		return "Â¿Quieres activar las notificaciones?";
 	}
 
 	protected override string _GetTemplateForLabelUnpinGameTooltip()
@@ -1240,7 +1240,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForLabelVoiceSetting()
 	{
-		return "Configuración de voz";
+		return "ConfiguraciÃ³n de voz";
 	}
 
 	protected override string _GetTemplateForLabelYesterday()
@@ -1254,12 +1254,12 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessageChatPrivacySetting(string frontLink, string endLink)
 	{
-		return $"Para chatear con tus amigos, activa el chat en la {frontLink}configuración de privacidad{endLink}.";
+		return $"Para chatear con tus amigos, activa el chat en la {frontLink}configuraciÃ³n de privacidad{endLink}.";
 	}
 
 	protected override string _GetTemplateForMessageChatPrivacySetting()
 	{
-		return "Para chatear con tus amigos, activa el chat en la {frontLink}configuración de privacidad{endLink}.";
+		return "Para chatear con tus amigos, activa el chat en la {frontLink}configuraciÃ³n de privacidad{endLink}.";
 	}
 
 	/// <summary>
@@ -1340,7 +1340,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForMessageJoinPartyText()
 	{
-		return "El líder del equipo está buscando una partida.";
+		return "El lÃ­der del equipo estÃ¡ buscando una partida.";
 	}
 
 	protected override string _GetTemplateForMessageMakeFriendsToChatNPlay()
@@ -1365,7 +1365,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForMessagePartyInviteMsg()
 	{
-		return "INVITACIÓN A UN EQUIPO";
+		return "INVITACIÃ“N A UN EQUIPO";
 	}
 
 	/// <summary>
@@ -1385,7 +1385,7 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForMessagePlayGameUpdate()
 	{
-		return " está jugando al juego anclado: ";
+		return " estÃ¡ jugando al juego anclado: ";
 	}
 
 	protected override string _GetTemplateForMessageTextTooLong()
@@ -1419,6 +1419,9 @@ internal class ChatResources_es_es : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForResponsePartyInvite()
 	{
-		return "Has recibido una invitación para unirte a un equipo.";
+		return "Has recibido una invitaciÃ³n para unirte a un equipo.";
 	}
+}
+
+
 }

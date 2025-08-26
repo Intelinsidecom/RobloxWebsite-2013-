@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// When user is upvoting/downvoting or removing his/her vote for an asset, we can publish this event to EventStream.
 /// </summary>
 public class VoteEvent : WebEventBase
@@ -10,7 +11,7 @@ public class VoteEvent : WebEventBase
 	/// <summary>
 	/// The event that represents voting an asset.
 	/// </summary>
-	public VoteEvent(EventStreamer streamer, VoteEventArgs eventArgs)
+	public VoteEvent(IEventStreamer streamer, VoteEventArgs eventArgs)
 		: base(streamer, "vote", eventArgs)
 	{
 		if (eventArgs.AssetId.HasValue)
@@ -60,3 +61,12 @@ public class VoteEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

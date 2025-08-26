@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CreatePlaceProductPromotionResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,31 +10,31 @@ internal class CreatePlaceProductPromotionResources_ja_jp : CreatePlaceProductPr
 	/// Key: "Label.AddToGame"
 	/// English String: "Add to Game"
 	/// </summary>
-	public override string LabelAddToGame => "ゲームに追加";
+	public override string LabelAddToGame => "ã‚²ãƒ¼ãƒ ã«è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "キャンセル";
+	public override string LabelCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "エラー";
+	public override string LabelError => "ã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Label.ErrorOccured"
 	/// English String: "An error occurred, please try again."
 	/// </summary>
-	public override string LabelErrorOccured => "エラーが発生しました。もう一度お試しください。";
+	public override string LabelErrorOccured => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NotForSale"
 	/// English String: "This item is not for sale."
 	/// </summary>
-	public override string LabelNotForSale => "このアイテムは売られていません。";
+	public override string LabelNotForSale => "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯å£²ã‚‰ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Ok"
@@ -46,49 +46,49 @@ internal class CreatePlaceProductPromotionResources_ja_jp : CreatePlaceProductPr
 	/// Key: "Label.PromoteOnYourGame"
 	/// English String: "Promote on your Game"
 	/// </summary>
-	public override string LabelPromoteOnYourGame => "ゲームを宣伝する";
+	public override string LabelPromoteOnYourGame => "ã‚²ãƒ¼ãƒ ã‚’å®£ä¼ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.Rent"
 	/// English String: "Rent"
 	/// </summary>
-	public override string LabelRent => "レンタル";
+	public override string LabelRent => "ãƒ¬ãƒ³ã‚¿ãƒ«";
 
 	/// <summary>
 	/// Key: "Label.SelectGroup"
 	/// English String: "Select Group"
 	/// </summary>
-	public override string LabelSelectGroup => "グループを選択";
+	public override string LabelSelectGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’é¸æŠž";
 
 	/// <summary>
 	/// Key: "Label.SelectNone"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelSelectNone => "なし";
+	public override string LabelSelectNone => "ãªã—";
 
 	/// <summary>
 	/// Key: "Label.SelectYourGame"
 	/// English String: "Select Your Game"
 	/// </summary>
-	public override string LabelSelectYourGame => "ゲームを選択する";
+	public override string LabelSelectYourGame => "ã‚²ãƒ¼ãƒ ã‚’é¸æŠžã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.SelectYourGameSemicolon"
 	/// English String: "Select Your Game:"
 	/// </summary>
-	public override string LabelSelectYourGameSemicolon => "ゲームを選択:";
+	public override string LabelSelectYourGameSemicolon => "ã‚²ãƒ¼ãƒ ã‚’é¸æŠž:";
 
 	/// <summary>
 	/// Key: "Label.SorryWeCouldnt"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorryWeCouldnt => "申し訳ありませんが、ゲームからアイテムを削除できませんでした。もう一度お試しください。";
+	public override string LabelSorryWeCouldnt => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã‚²ãƒ¼ãƒ ã‹ã‚‰ã‚¢ã‚¤ãƒ†ãƒ ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success!"
 	/// </summary>
-	public override string LabelSuccess => "成功！";
+	public override string LabelSuccess => "æˆåŠŸï¼";
 
 	public CreatePlaceProductPromotionResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -97,27 +97,27 @@ internal class CreatePlaceProductPromotionResources_ja_jp : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelAddToGame()
 	{
-		return "ゲームに追加";
+		return "ã‚²ãƒ¼ãƒ ã«è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "エラー";
+		return "ã‚¨ãƒ©ãƒ¼";
 	}
 
 	protected override string _GetTemplateForLabelErrorOccured()
 	{
-		return "エラーが発生しました。もう一度お試しください。";
+		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
 	{
-		return "このアイテムは売られていません。";
+		return "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯å£²ã‚‰ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelOk()
@@ -127,42 +127,42 @@ internal class CreatePlaceProductPromotionResources_ja_jp : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelPromoteOnYourGame()
 	{
-		return "ゲームを宣伝する";
+		return "ã‚²ãƒ¼ãƒ ã‚’å®£ä¼ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelRent()
 	{
-		return "レンタル";
+		return "ãƒ¬ãƒ³ã‚¿ãƒ«";
 	}
 
 	protected override string _GetTemplateForLabelSelectGroup()
 	{
-		return "グループを選択";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’é¸æŠž";
 	}
 
 	protected override string _GetTemplateForLabelSelectNone()
 	{
-		return "なし";
+		return "ãªã—";
 	}
 
 	protected override string _GetTemplateForLabelSelectYourGame()
 	{
-		return "ゲームを選択する";
+		return "ã‚²ãƒ¼ãƒ ã‚’é¸æŠžã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelSelectYourGameSemicolon()
 	{
-		return "ゲームを選択:";
+		return "ã‚²ãƒ¼ãƒ ã‚’é¸æŠž:";
 	}
 
 	protected override string _GetTemplateForLabelSorryWeCouldnt()
 	{
-		return "申し訳ありませんが、ゲームからアイテムを削除できませんでした。もう一度お試しください。";
+		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã‚²ãƒ¼ãƒ ã‹ã‚‰ã‚¢ã‚¤ãƒ†ãƒ ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "成功！";
+		return "æˆåŠŸï¼";
 	}
 
 	/// <summary>
@@ -171,11 +171,14 @@ internal class CreatePlaceProductPromotionResources_ja_jp : CreatePlaceProductPr
 	/// </summary>
 	public override string MessageWhatIsAddingGear(string affiliateSaleTotal)
 	{
-		return $"ゲームに追加できるギアを設定します。このアイテムはゲームページに表示され、ゲーム内で自動的に許可されます。誰かがゲームページでこのアイテムを買うと、{affiliateSaleTotal} Robuxがもらえます！";
+		return $"ã‚²ãƒ¼ãƒ ã«è¿½åŠ ã§ãã‚‹ã‚®ã‚¢ã‚’è¨­å®šã—ã¾ã™ã€‚ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã«è¡¨ç¤ºã•ã‚Œã€ã‚²ãƒ¼ãƒ å†…ã§è‡ªå‹•çš„ã«è¨±å¯ã•ã‚Œã¾ã™ã€‚èª°ã‹ãŒã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã§ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è²·ã†ã¨ã€{affiliateSaleTotal} RobuxãŒã‚‚ã‚‰ãˆã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForMessageWhatIsAddingGear()
 	{
-		return "ゲームに追加できるギアを設定します。このアイテムはゲームページに表示され、ゲーム内で自動的に許可されます。誰かがゲームページでこのアイテムを買うと、{affiliateSaleTotal} Robuxがもらえます！";
+		return "ã‚²ãƒ¼ãƒ ã«è¿½åŠ ã§ãã‚‹ã‚®ã‚¢ã‚’è¨­å®šã—ã¾ã™ã€‚ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã«è¡¨ç¤ºã•ã‚Œã€ã‚²ãƒ¼ãƒ å†…ã§è‡ªå‹•çš„ã«è¨±å¯ã•ã‚Œã¾ã™ã€‚èª°ã‹ãŒã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã§ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è²·ã†ã¨ã€{affiliateSaleTotal} RobuxãŒã‚‚ã‚‰ãˆã¾ã™ï¼";
 	}
+}
+
+
 }

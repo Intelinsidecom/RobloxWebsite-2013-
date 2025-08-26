@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class LogoutProcessorLogoutEvent : WebEventBase
 
-public class LogoutProcessorLogoutEvent : WebEventBase
 {
 	private const string _Name = "logoutProcessorLogout";
 
@@ -10,3 +11,12 @@ public class LogoutProcessorLogoutEvent : WebEventBase
 		AddEventArg("success", eventArgs.Success.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

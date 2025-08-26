@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GamesPageLoadEvent : WebEventBase
 
-public class GamesPageLoadEvent : WebEventBase
 {
 	private const string _Name = "gamesPageLoad";
 
@@ -13,3 +14,12 @@ public class GamesPageLoadEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

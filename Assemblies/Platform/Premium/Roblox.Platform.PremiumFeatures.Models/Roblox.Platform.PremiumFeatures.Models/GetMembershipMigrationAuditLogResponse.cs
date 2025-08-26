@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Runtime.Serialization;
 using Roblox.PremiumFeatures.Models.Core;
+namespace Roblox.Platform.PremiumFeatures.Models {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models;
-
-/// <summary>
 /// Membership Migration Record Response
 /// </summary>
 [DataContract]
@@ -56,4 +55,7 @@ public class GetMembershipMigrationAuditLogResponse : MembershipMigrationRespons
 		UpdatedMembershipStartDate = model.UpdatedMembershipStartDate;
 		Created = model.Created;
 	}
+}
+
+
 }

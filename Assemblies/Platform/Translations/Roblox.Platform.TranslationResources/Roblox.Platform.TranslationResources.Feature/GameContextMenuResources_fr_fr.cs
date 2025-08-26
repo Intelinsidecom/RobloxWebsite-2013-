@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameContextMenuResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -60,7 +60,7 @@ internal class GameContextMenuResources_fr_fr : GameContextMenuResources_en_us, 
 	/// Key: "LabelDeveloperStats"
 	/// English String: "Developer Stats"
 	/// </summary>
-	public override string LabelDeveloperStats => "Statistiques de développeur";
+	public override string LabelDeveloperStats => "Statistiques de dÃ©veloppeur";
 
 	/// <summary>
 	/// Key: "LabelEdit"
@@ -145,7 +145,7 @@ internal class GameContextMenuResources_fr_fr : GameContextMenuResources_en_us, 
 
 	protected override string _GetTemplateForLabelDeveloperStats()
 	{
-		return "Statistiques de développeur";
+		return "Statistiques de dÃ©veloppeur";
 	}
 
 	protected override string _GetTemplateForLabelEdit()
@@ -177,4 +177,7 @@ internal class GameContextMenuResources_fr_fr : GameContextMenuResources_en_us, 
 	{
 		return "Fermeture des serveurs impossible.";
 	}
+}
+
+
 }

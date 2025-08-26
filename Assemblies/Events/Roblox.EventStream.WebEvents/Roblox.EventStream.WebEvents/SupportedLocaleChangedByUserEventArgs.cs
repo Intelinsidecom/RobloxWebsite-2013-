@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class SupportedLocaleChangedByUserEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class SupportedLocaleChangedByUserEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The Id of the user's new supported locale setting.
@@ -25,3 +25,12 @@ public class SupportedLocaleChangedByUserEventArgs : WebEventArgs
 	/// </summary>
 	public DateTime EventTime { get; set; }
 }
+
+
+}
+
+
+
+
+
+

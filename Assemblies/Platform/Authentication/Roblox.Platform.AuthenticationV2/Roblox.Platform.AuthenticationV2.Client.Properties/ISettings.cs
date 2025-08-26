@@ -1,9 +1,8 @@
-using Roblox.Http.Client;
+﻿using Roblox.Http.Client;
 using Roblox.Sentinels.CircuitBreakerPolicy;
+namespace Roblox.Platform.AuthenticationV2.Client.Properties {
+    /// <summary>
 
-namespace Roblox.AuthenticationV2.Client.Properties;
-
-/// <summary>
 /// Settings specific to an <see cref="T:Roblox.Http.Client.IHttpClient" /> used for the AuthenticationV2 Service.
 /// </summary>
 public interface ISettings : IHttpClientSettings, IDefaultCircuitBreakerPolicyConfig
@@ -28,4 +27,7 @@ public interface ISettings : IHttpClientSettings, IDefaultCircuitBreakerPolicyCo
 	/// It should be entirely alphanumeric.
 	/// </remarks>
 	string ClientName { get; }
+}
+
+
 }

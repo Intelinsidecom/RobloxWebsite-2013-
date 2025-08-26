@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLocalizationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,219 +11,219 @@ internal class GameLocalizationResources_ja_jp : GameLocalizationResources_en_us
 	/// The label for the cancel button
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "キャンセル";
+	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Clear"
 	/// The label for the clear button
 	/// English String: "Clear"
 	/// </summary>
-	public override string ActionClear => "消す";
+	public override string ActionClear => "æ¶ˆã™";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// The label for the confirm button
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "確定";
+	public override string ActionConfirm => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// The label for the save button
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "保存";
+	public override string ActionSave => "ä¿å­˜";
 
 	/// <summary>
 	/// Key: "Description.ContentModerationError"
 	/// The error text when user's input does not pass the backend text filter
 	/// English String: "Error: Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string DescriptionContentModerationError => "エラー: 保存できませんでした。コンテンツが規制対象になっていないかチェックしてからやり直してください。";
+	public override string DescriptionContentModerationError => "ã‚¨ãƒ©ãƒ¼: ä¿å­˜ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒè¦åˆ¶å¯¾è±¡ã«ãªã£ã¦ã„ãªã„ã‹ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.GeneralError"
 	/// The error text for all the other backend error codes
 	/// English String: "Error: Could not save."
 	/// </summary>
-	public override string DescriptionGeneralError => "エラー: 保存できませんでした。";
+	public override string DescriptionGeneralError => "ã‚¨ãƒ©ãƒ¼: ä¿å­˜ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Description.NonSourceLanguageForm"
 	/// The info shown to user when they are viewing the name and description in the source language
 	/// English String: "If no translations are provided, users will see the source language values."
 	/// </summary>
-	public override string DescriptionNonSourceLanguageForm => "翻訳がない場合、ソース言語の値が表示されます。";
+	public override string DescriptionNonSourceLanguageForm => "ç¿»è¨³ãŒãªã„å ´åˆã€ã‚½ãƒ¼ã‚¹è¨€èªžã®å€¤ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Save"
 	/// The content for unsaved changes warning modal
 	/// English String: "You have unsaved changes. Are you sure you want to switch language?"
 	/// </summary>
-	public override string DescriptionSave => "保存していない変更があります。言語を変更してよろしいですか？";
+	public override string DescriptionSave => "ä¿å­˜ã—ã¦ã„ãªã„å¤‰æ›´ãŒã‚ã‚Šã¾ã™ã€‚è¨€èªžã‚’å¤‰æ›´ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.SaveSuccess"
 	/// The feedback for user when saving has succeeded
 	/// English String: "Name and Description saved."
 	/// </summary>
-	public override string DescriptionSaveSuccess => "名前と詳細を保存しました。";
+	public override string DescriptionSaveSuccess => "åå‰ã¨è©³ç´°ã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Description.SourceLanguageForm"
 	/// The info shown to user when they are viewing the name and description in the source language
 	/// English String: "Source language values are shown as a reference. They can only be viewed here."
 	/// </summary>
-	public override string DescriptionSourceLanguageForm => "ソース言語の値は、参考用に表示されます。ここにしか、表示されません。";
+	public override string DescriptionSourceLanguageForm => "ã‚½ãƒ¼ã‚¹è¨€èªžã®å€¤ã¯ã€å‚è€ƒç”¨ã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ã“ã“ã«ã—ã‹ã€è¡¨ç¤ºã•ã‚Œã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.Clear"
 	/// The modal title for clear confirmation modal
 	/// English String: "Clear Values"
 	/// </summary>
-	public override string HeadingClear => "値を消す";
+	public override string HeadingClear => "å€¤ã‚’æ¶ˆã™";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureLocalization"
 	/// page heading
 	/// English String: "Configure Localization"
 	/// </summary>
-	public override string HeadingConfigureLocalization => "翻訳の環境設定";
+	public override string HeadingConfigureLocalization => "ç¿»è¨³ã®ç’°å¢ƒè¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.GameNameDescriptionTranslations"
 	/// The header for the game info section in localization page
 	/// English String: "Game Name and Description Translations"
 	/// </summary>
-	public override string HeadingGameNameDescriptionTranslations => "ゲーム名と詳細の翻訳";
+	public override string HeadingGameNameDescriptionTranslations => "ã‚²ãƒ¼ãƒ åã¨è©³ç´°ã®ç¿»è¨³";
 
 	/// <summary>
 	/// Key: "Heading.Save"
 	/// The content for unsaved changes warning modal
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingSave => "保存されていない変更内容";
+	public override string HeadingSave => "ä¿å­˜ã•ã‚Œã¦ã„ãªã„å¤‰æ›´å†…å®¹";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// The label for the game name input field
 	/// English String: "Description: "
 	/// </summary>
-	public override string LabelDescription => "詳細: ";
+	public override string LabelDescription => "è©³ç´°: ";
 
 	/// <summary>
 	/// Key: "Label.GameDescriptionPlaceholder"
 	/// The placeholder for the game description input field
 	/// English String: "Enter game description here"
 	/// </summary>
-	public override string LabelGameDescriptionPlaceholder => "ゲーム詳細の入力はこちら";
+	public override string LabelGameDescriptionPlaceholder => "ã‚²ãƒ¼ãƒ è©³ç´°ã®å…¥åŠ›ã¯ã“ã¡ã‚‰";
 
 	/// <summary>
 	/// Key: "Label.GameInfo"
 	/// The label for the game info sub tab in localization tab
 	/// English String: "Game Info"
 	/// </summary>
-	public override string LabelGameInfo => "ゲーム情報";
+	public override string LabelGameInfo => "ã‚²ãƒ¼ãƒ æƒ…å ±";
 
 	/// <summary>
 	/// Key: "Label.GameNameDescriptionTranslations"
 	/// The label for the game info tab in localization page
 	/// English String: "Game Name and Description Translations"
 	/// </summary>
-	public override string LabelGameNameDescriptionTranslations => "ゲーム名と詳細の翻訳";
+	public override string LabelGameNameDescriptionTranslations => "ã‚²ãƒ¼ãƒ åã¨è©³ç´°ã®ç¿»è¨³";
 
 	/// <summary>
 	/// Key: "Label.GameNamePlaceholder"
 	/// The placeholder for the game name input field
 	/// English String: "Enter game name here (required)"
 	/// </summary>
-	public override string LabelGameNamePlaceholder => "ゲーム名の入力はこちら（必須）";
+	public override string LabelGameNamePlaceholder => "ã‚²ãƒ¼ãƒ åã®å…¥åŠ›ã¯ã“ã¡ã‚‰ï¼ˆå¿…é ˆï¼‰";
 
 	/// <summary>
 	/// Key: "Label.GameTitlePlaceholder"
 	/// placeholder text for entering game title in a text input
 	/// English String: "Enter game name here"
 	/// </summary>
-	public override string LabelGameTitlePlaceholder => "ゲーム名の入力はこちら";
+	public override string LabelGameTitlePlaceholder => "ã‚²ãƒ¼ãƒ åã®å…¥åŠ›ã¯ã“ã¡ã‚‰";
 
 	/// <summary>
 	/// Key: "Label.Localization"
 	/// The label for localization tab and its header in configure game page
 	/// English String: "Localization"
 	/// </summary>
-	public override string LabelLocalization => "翻訳";
+	public override string LabelLocalization => "ç¿»è¨³";
 
 	/// <summary>
 	/// Key: "Label.Name"
 	/// The label for the game name input field
 	/// English String: "Name: "
 	/// </summary>
-	public override string LabelName => "名前: ";
+	public override string LabelName => "åå‰: ";
 
 	/// <summary>
 	/// Key: "Label.SupportedLanguages"
 	/// The label for the supported languages sub tab in localization tab
 	/// English String: "Supported Languages"
 	/// </summary>
-	public override string LabelSupportedLanguages => "対応言語";
+	public override string LabelSupportedLanguages => "å¯¾å¿œè¨€èªž";
 
 	/// <summary>
 	/// Key: "Label.TabGameInfo"
 	/// English String: "Game Info"
 	/// </summary>
-	public override string LabelTabGameInfo => "ゲーム情報";
+	public override string LabelTabGameInfo => "ã‚²ãƒ¼ãƒ æƒ…å ±";
 
 	/// <summary>
 	/// Key: "Label.TabLanguages"
 	/// English String: "Languages"
 	/// </summary>
-	public override string LabelTabLanguages => "言語";
+	public override string LabelTabLanguages => "è¨€èªž";
 
 	/// <summary>
 	/// Key: "Label.TabReports"
 	/// English String: "Reports"
 	/// </summary>
-	public override string LabelTabReports => "報告";
+	public override string LabelTabReports => "å ±å‘Š";
 
 	/// <summary>
 	/// Key: "Label.TabSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelTabSettings => "設定";
+	public override string LabelTabSettings => "è¨­å®š";
 
 	/// <summary>
 	/// Key: "Label.TabTranslators"
 	/// English String: "Translators"
 	/// </summary>
-	public override string LabelTabTranslators => "翻訳者";
+	public override string LabelTabTranslators => "ç¿»è¨³è€…";
 
 	/// <summary>
 	/// Key: "Label.Title"
 	/// Game Title (or Name) field label, corresponding text area editable by game developer
 	/// English String: "Title"
 	/// </summary>
-	public override string LabelTitle => "タイトル";
+	public override string LabelTitle => "ã‚¿ã‚¤ãƒˆãƒ«";
 
 	/// <summary>
 	/// Key: "Response.ContentModerationError"
 	/// The error text when user's input does not pass the backend text filter
 	/// English String: "Error: Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string ResponseContentModerationError => "エラー: 保存できませんでした。コンテンツが規制対象になっていないかチェックしてからやり直してください。";
+	public override string ResponseContentModerationError => "ã‚¨ãƒ©ãƒ¼: ä¿å­˜ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒè¦åˆ¶å¯¾è±¡ã«ãªã£ã¦ã„ãªã„ã‹ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "エラー: エラーが発生しました。後でもう一度お試しください。";
+	public override string ResponseGeneralError => "ã‚¨ãƒ©ãƒ¼: ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.GeneralSaveError"
 	/// The error text for all the other backend error code during save
 	/// English String: "Error: Could not save."
 	/// </summary>
-	public override string ResponseGeneralSaveError => "エラー: 保存できませんでした。";
+	public override string ResponseGeneralSaveError => "ã‚¨ãƒ©ãƒ¼: ä¿å­˜ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	public GameLocalizationResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -232,22 +232,22 @@ internal class GameLocalizationResources_ja_jp : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionClear()
 	{
-		return "消す";
+		return "æ¶ˆã™";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "保存";
+		return "ä¿å­˜";
 	}
 
 	/// <summary>
@@ -257,151 +257,154 @@ internal class GameLocalizationResources_ja_jp : GameLocalizationResources_en_us
 	/// </summary>
 	public override string DescriptionClear(string languageName)
 	{
-		return $"{languageName} の翻訳を消してよろしいですか？ゲーム名や詳細は、ソース言語で表示されます。";
+		return $"{languageName} ã®ç¿»è¨³ã‚’æ¶ˆã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿã‚²ãƒ¼ãƒ åã‚„è©³ç´°ã¯ã€ã‚½ãƒ¼ã‚¹è¨€èªžã§è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionClear()
 	{
-		return "{languageName} の翻訳を消してよろしいですか？ゲーム名や詳細は、ソース言語で表示されます。";
+		return "{languageName} ã®ç¿»è¨³ã‚’æ¶ˆã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿã‚²ãƒ¼ãƒ åã‚„è©³ç´°ã¯ã€ã‚½ãƒ¼ã‚¹è¨€èªžã§è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionContentModerationError()
 	{
-		return "エラー: 保存できませんでした。コンテンツが規制対象になっていないかチェックしてからやり直してください。";
+		return "ã‚¨ãƒ©ãƒ¼: ä¿å­˜ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒè¦åˆ¶å¯¾è±¡ã«ãªã£ã¦ã„ãªã„ã‹ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionGeneralError()
 	{
-		return "エラー: 保存できませんでした。";
+		return "ã‚¨ãƒ©ãƒ¼: ä¿å­˜ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionNonSourceLanguageForm()
 	{
-		return "翻訳がない場合、ソース言語の値が表示されます。";
+		return "ç¿»è¨³ãŒãªã„å ´åˆã€ã‚½ãƒ¼ã‚¹è¨€èªžã®å€¤ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSave()
 	{
-		return "保存していない変更があります。言語を変更してよろしいですか？";
+		return "ä¿å­˜ã—ã¦ã„ãªã„å¤‰æ›´ãŒã‚ã‚Šã¾ã™ã€‚è¨€èªžã‚’å¤‰æ›´ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionSaveSuccess()
 	{
-		return "名前と詳細を保存しました。";
+		return "åå‰ã¨è©³ç´°ã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSourceLanguageForm()
 	{
-		return "ソース言語の値は、参考用に表示されます。ここにしか、表示されません。";
+		return "ã‚½ãƒ¼ã‚¹è¨€èªžã®å€¤ã¯ã€å‚è€ƒç”¨ã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ã“ã“ã«ã—ã‹ã€è¡¨ç¤ºã•ã‚Œã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingClear()
 	{
-		return "値を消す";
+		return "å€¤ã‚’æ¶ˆã™";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureLocalization()
 	{
-		return "翻訳の環境設定";
+		return "ç¿»è¨³ã®ç’°å¢ƒè¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingGameNameDescriptionTranslations()
 	{
-		return "ゲーム名と詳細の翻訳";
+		return "ã‚²ãƒ¼ãƒ åã¨è©³ç´°ã®ç¿»è¨³";
 	}
 
 	protected override string _GetTemplateForHeadingSave()
 	{
-		return "保存されていない変更内容";
+		return "ä¿å­˜ã•ã‚Œã¦ã„ãªã„å¤‰æ›´å†…å®¹";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "詳細: ";
+		return "è©³ç´°: ";
 	}
 
 	protected override string _GetTemplateForLabelGameDescriptionPlaceholder()
 	{
-		return "ゲーム詳細の入力はこちら";
+		return "ã‚²ãƒ¼ãƒ è©³ç´°ã®å…¥åŠ›ã¯ã“ã¡ã‚‰";
 	}
 
 	protected override string _GetTemplateForLabelGameInfo()
 	{
-		return "ゲーム情報";
+		return "ã‚²ãƒ¼ãƒ æƒ…å ±";
 	}
 
 	protected override string _GetTemplateForLabelGameNameDescriptionTranslations()
 	{
-		return "ゲーム名と詳細の翻訳";
+		return "ã‚²ãƒ¼ãƒ åã¨è©³ç´°ã®ç¿»è¨³";
 	}
 
 	protected override string _GetTemplateForLabelGameNamePlaceholder()
 	{
-		return "ゲーム名の入力はこちら（必須）";
+		return "ã‚²ãƒ¼ãƒ åã®å…¥åŠ›ã¯ã“ã¡ã‚‰ï¼ˆå¿…é ˆï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelGameTitlePlaceholder()
 	{
-		return "ゲーム名の入力はこちら";
+		return "ã‚²ãƒ¼ãƒ åã®å…¥åŠ›ã¯ã“ã¡ã‚‰";
 	}
 
 	protected override string _GetTemplateForLabelLocalization()
 	{
-		return "翻訳";
+		return "ç¿»è¨³";
 	}
 
 	protected override string _GetTemplateForLabelName()
 	{
-		return "名前: ";
+		return "åå‰: ";
 	}
 
 	protected override string _GetTemplateForLabelSupportedLanguages()
 	{
-		return "対応言語";
+		return "å¯¾å¿œè¨€èªž";
 	}
 
 	protected override string _GetTemplateForLabelTabGameInfo()
 	{
-		return "ゲーム情報";
+		return "ã‚²ãƒ¼ãƒ æƒ…å ±";
 	}
 
 	protected override string _GetTemplateForLabelTabLanguages()
 	{
-		return "言語";
+		return "è¨€èªž";
 	}
 
 	protected override string _GetTemplateForLabelTabReports()
 	{
-		return "報告";
+		return "å ±å‘Š";
 	}
 
 	protected override string _GetTemplateForLabelTabSettings()
 	{
-		return "設定";
+		return "è¨­å®š";
 	}
 
 	protected override string _GetTemplateForLabelTabTranslators()
 	{
-		return "翻訳者";
+		return "ç¿»è¨³è€…";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
 	{
-		return "タイトル";
+		return "ã‚¿ã‚¤ãƒˆãƒ«";
 	}
 
 	protected override string _GetTemplateForResponseContentModerationError()
 	{
-		return "エラー: 保存できませんでした。コンテンツが規制対象になっていないかチェックしてからやり直してください。";
+		return "ã‚¨ãƒ©ãƒ¼: ä¿å­˜ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒè¦åˆ¶å¯¾è±¡ã«ãªã£ã¦ã„ãªã„ã‹ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "エラー: エラーが発生しました。後でもう一度お試しください。";
+		return "ã‚¨ãƒ©ãƒ¼: ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseGeneralSaveError()
 	{
-		return "エラー: 保存できませんでした。";
+		return "ã‚¨ãƒ©ãƒ¼: ä¿å­˜ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
+}
+
+
 }

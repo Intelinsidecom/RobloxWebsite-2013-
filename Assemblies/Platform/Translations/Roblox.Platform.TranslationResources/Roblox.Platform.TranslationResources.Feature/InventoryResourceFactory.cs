@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class InventoryResourceFactory
 
-internal static class InventoryResourceFactory
 {
 	public const string FullNamespace = "Feature.Inventory";
 
@@ -21,4 +21,7 @@ internal static class InventoryResourceFactory
 			_ => new InventoryResources_en_us(state), 
 		};
 	}
+}
+
+
 }

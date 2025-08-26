@@ -3,32 +3,33 @@ using System.ComponentModel;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Sentinels.CircuitBreakerPolicy;
-
-namespace Roblox.Users.Client.Properties;
-
-public interface ISettings : IServiceClientSettings, IHttpClientSettings, IDefaultCircuitBreakerPolicyConfig, INotifyPropertyChanged
+namespace Roblox.Platform.Users.Client.Properties
 {
-	TimeSpan AgentLocalCacheExpiry { get; }
+    public interface ISettings : IServiceClientSettings, IHttpClientSettings, IDefaultCircuitBreakerPolicyConfig, INotifyPropertyChanged
+    {
+        TimeSpan AgentLocalCacheExpiry { get; }
 
-	TimeSpan UserLocalCacheExpiry { get; }
+        TimeSpan UserLocalCacheExpiry { get; }
 
-	TimeSpan UsernameHistoryCacheExpiry { get; }
+        TimeSpan UsernameHistoryCacheExpiry { get; }
 
-	TimeSpan GetRecentlyUpdatedUsersInterval { get; }
+        TimeSpan GetRecentlyUpdatedUsersInterval { get; }
 
-	TimeSpan UserLocalCachePurgeLeeway { get; }
+        TimeSpan UserLocalCachePurgeLeeway { get; }
 
-	int MaxCheckFailuresBeforeClearLocalCache { get; }
+        int MaxCheckFailuresBeforeClearLocalCache { get; }
 
-	bool UsersClientLocalCacheEnabled { get; }
+        bool UsersClientLocalCacheEnabled { get; }
 
-	bool PerEndpointCircuitBreakerEnabled { get; }
+        bool PerEndpointCircuitBreakerEnabled { get; }
 
-	bool ApiKeyViaHeaderEnabled { get; }
+        bool ApiKeyViaHeaderEnabled { get; }
 
-	TimeSpan UserCreatedCacheThreshold { get; }
+        TimeSpan UserCreatedCacheThreshold { get; }
 
-	int DatabaseMaxUsernameLength { get; }
+        int DatabaseMaxUsernameLength { get; }
 
-	TimeSpan DisplayNameHistoryCacheExpiry { get; }
+        TimeSpan DisplayNameHistoryCacheExpiry { get; }
+    }
 }
+

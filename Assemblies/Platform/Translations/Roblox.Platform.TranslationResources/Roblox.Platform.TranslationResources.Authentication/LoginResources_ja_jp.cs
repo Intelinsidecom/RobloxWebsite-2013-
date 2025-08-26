@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides LoginResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,7 +11,7 @@ internal class LoginResources_ja_jp : LoginResources_en_us, ILoginResources, ITr
 	/// Cancel button text
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "キャンセル";
+	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Facebook"
@@ -24,27 +24,27 @@ internal class LoginResources_ja_jp : LoginResources_en_us, ILoginResources, ITr
 	/// Key: "Action.ForgotPasswordOrUsernameQuestion"
 	/// English String: "Forgot password or username?"
 	/// </summary>
-	public override string ActionForgotPasswordOrUsernameQuestion => "パスワード、またはユーザーネームをお忘れですか？";
+	public override string ActionForgotPasswordOrUsernameQuestion => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€ã¾ãŸã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’ãŠå¿˜ã‚Œã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Action.ForgotPasswordOrUsernameQuestionCapitalized"
 	/// link under login form
 	/// English String: "Forgot Password or Username?"
 	/// </summary>
-	public override string ActionForgotPasswordOrUsernameQuestionCapitalized => "パスワード、またはユーザーネームをお忘れですか？";
+	public override string ActionForgotPasswordOrUsernameQuestionCapitalized => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€ã¾ãŸã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’ãŠå¿˜ã‚Œã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Action.Login"
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "ログイン";
+	public override string ActionLogin => "ãƒ­ã‚°ã‚¤ãƒ³";
 
 	/// <summary>
 	/// Key: "Action.LogInCapitalized"
 	/// login button label. please note this is different from 'Login' or 'Log in'.
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionLogInCapitalized => "ログイン";
+	public override string ActionLogInCapitalized => "ãƒ­ã‚°ã‚¤ãƒ³";
 
 	/// <summary>
 	/// Key: "Action.Ok"
@@ -58,376 +58,376 @@ internal class LoginResources_ja_jp : LoginResources_en_us, ILoginResources, ITr
 	/// Play as Guest
 	/// English String: "Play as Guest"
 	/// </summary>
-	public override string ActionPlayAsGuest => "ゲストとしてプレイする";
+	public override string ActionPlayAsGuest => "ã‚²ã‚¹ãƒˆã¨ã—ã¦ãƒ—ãƒ¬ã‚¤ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.Resend"
 	/// button text for resending verification email
 	/// English String: "Resend"
 	/// </summary>
-	public override string ActionResend => "再送信";
+	public override string ActionResend => "å†é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Action.ResendEmail"
 	/// link that resends verification email to user
 	/// English String: "Resend Email"
 	/// </summary>
-	public override string ActionResendEmail => "メールを再送信";
+	public override string ActionResendEmail => "ãƒ¡ãƒ¼ãƒ«ã‚’å†é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Action.SendVerificationEmail"
 	/// button user can click to send a verification link to their email
 	/// English String: "Send Verification Email"
 	/// </summary>
-	public override string ActionSendVerificationEmail => "確認メールを送信";
+	public override string ActionSendVerificationEmail => "ç¢ºèªãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Action.SignIn"
 	/// Sign In button text
 	/// English String: "Sign In"
 	/// </summary>
-	public override string ActionSignIn => "サインイン";
+	public override string ActionSignIn => "ã‚µã‚¤ãƒ³ã‚¤ãƒ³";
 
 	/// <summary>
 	/// Key: "Action.SignInWithFacebook"
 	/// Sign In with Facebook
 	/// English String: "Sign In with Facebook"
 	/// </summary>
-	public override string ActionSignInWithFacebook => "Facebookでサインインする";
+	public override string ActionSignInWithFacebook => "Facebookã§ã‚µã‚¤ãƒ³ã‚¤ãƒ³ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
 	/// English String: "Sign up"
 	/// </summary>
-	public override string ActionSignUp => "新規登録";
+	public override string ActionSignUp => "æ–°è¦ç™»éŒ²";
 
 	/// <summary>
 	/// Key: "Action.SignUpCapitalized"
 	/// link which takes user to sign up page
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string ActionSignUpCapitalized => "新規登録";
+	public override string ActionSignUpCapitalized => "æ–°è¦ç™»éŒ²";
 
 	/// <summary>
 	/// Key: "Action.WeChatLogin"
 	/// button text for logging in with WeChat
 	/// English String: "WeChat Login"
 	/// </summary>
-	public override string ActionWeChatLogin => "WeChatログイン";
+	public override string ActionWeChatLogin => "WeChatãƒ­ã‚°ã‚¤ãƒ³";
 
 	/// <summary>
 	/// Key: "Heading.Login"
 	/// heading on the login page
 	/// English String: "Login"
 	/// </summary>
-	public override string HeadingLogin => "ログイン";
+	public override string HeadingLogin => "ãƒ­ã‚°ã‚¤ãƒ³";
 
 	/// <summary>
 	/// Key: "Heading.LoginRoblox"
 	/// current login page heading
 	/// English String: "Login to Roblox"
 	/// </summary>
-	public override string HeadingLoginRoblox => "Robloxにログインする";
+	public override string HeadingLoginRoblox => "Robloxã«ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹";
 
-	public override string HeadingSignUpMakeFriends => "新規登録してゲーム制作したり、友達を作る";
+	public override string HeadingSignUpMakeFriends => "æ–°è¦ç™»éŒ²ã—ã¦ã‚²ãƒ¼ãƒ åˆ¶ä½œã—ãŸã‚Šã€å‹é”ã‚’ä½œã‚‹";
 
 	/// <summary>
 	/// Key: "Label.AccountNotNeeded"
 	/// You don't need an account to play Roblox
 	/// English String: "You don't need an account to play Roblox"
 	/// </summary>
-	public override string LabelAccountNotNeeded => "Robloxをプレイするのにアカウントは必要ありません。";
+	public override string LabelAccountNotNeeded => "Robloxã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã®ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯å¿…è¦ã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.EmailNeedsVerification"
 	/// modal header used for prompting user they need to verify their email in order to log in with it
 	/// English String: "Your email needs verification"
 	/// </summary>
-	public override string LabelEmailNeedsVerification => "メール確認の手続きが必要です";
+	public override string LabelEmailNeedsVerification => "ãƒ¡ãƒ¼ãƒ«ç¢ºèªã®æ‰‹ç¶šããŒå¿…è¦ã§ã™";
 
 	/// <summary>
 	/// Key: "Label.FacebookCreatePasswordWarning"
 	/// If you have been signing in with Facebook, you must set a password.
 	/// English String: "If you have been signing in with Facebook, you must set a password."
 	/// </summary>
-	public override string LabelFacebookCreatePasswordWarning => "Facebookでサインインしている場合には、パスワードの設定が必要です。";
+	public override string LabelFacebookCreatePasswordWarning => "Facebookã§ã‚µã‚¤ãƒ³ã‚¤ãƒ³ã—ã¦ã„ã‚‹å ´åˆã«ã¯ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®è¨­å®šãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ForgotUsernamePassword"
 	/// landing page top right link for password reset
 	/// English String: "Forgot Username/Password?"
 	/// </summary>
-	public override string LabelForgotUsernamePassword => "ユーザーネームかパスワードをお忘れですか？";
+	public override string LabelForgotUsernamePassword => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‹ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãŠå¿˜ã‚Œã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
 	/// learn more link text
 	/// English String: "Learn more"
 	/// </summary>
-	public override string LabelLearnMore => "詳しく知る";
+	public override string LabelLearnMore => "è©³ã—ãçŸ¥ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging in…"
+	/// English String: "Logging inâ€¦"
 	/// </summary>
-	public override string LabelLoggingInSpinnerText => "ログイン中…";
+	public override string LabelLoggingInSpinnerText => "ãƒ­ã‚°ã‚¤ãƒ³ä¸­â€¦";
 
 	/// <summary>
 	/// Key: "Label.Login"
 	/// English String: "Log in"
 	/// </summary>
-	public override string LabelLogin => "ログイン";
+	public override string LabelLogin => "ãƒ­ã‚°ã‚¤ãƒ³";
 
 	/// <summary>
 	/// Key: "Label.LoginWithYour"
 	/// Label for a partition line between login with email and facebook login. Please keep the text in lowercase for roman characters.
 	/// English String: "login with your"
 	/// </summary>
-	public override string LabelLoginWithYour => "以下でログインしてください";
+	public override string LabelLoginWithYour => "ä»¥ä¸‹ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Label.NoAccount"
 	/// Don't have an account?
 	/// English String: "Don't have an account?"
 	/// </summary>
-	public override string LabelNoAccount => "アカウントをお持ちではありませんか？";
+	public override string LabelNoAccount => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ãŠæŒã¡ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.NonAMemberQuestion"
 	/// The question heading for the section on the login page to take use to sign up page.
 	/// English String: "Not a member?"
 	/// </summary>
-	public override string LabelNonAMemberQuestion => "メンバーではありませんか？";
+	public override string LabelNonAMemberQuestion => "ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.NotReceived"
 	/// prompt for allowing users to resend verification email
 	/// English String: "Didn't receive it?"
 	/// </summary>
-	public override string LabelNotReceived => "受信できませんでしたか？";
+	public override string LabelNotReceived => "å—ä¿¡ã§ãã¾ã›ã‚“ã§ã—ãŸã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.Or"
 	/// partition between email login and facebook login
 	/// English String: "Or"
 	/// </summary>
-	public override string LabelOr => "または";
+	public override string LabelOr => "ã¾ãŸã¯";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// Password
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "パスワード";
+	public override string LabelPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Label.PasswordWithColumn"
 	/// label for the password field on the login page
 	/// English String: "Password:"
 	/// </summary>
-	public override string LabelPasswordWithColumn => "パスワード：";
+	public override string LabelPasswordWithColumn => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¼š";
 
 	/// <summary>
 	/// Key: "Label.StartPlaying"
 	/// You can start playing right now, in guest mode!
 	/// English String: "You can start playing right now, in guest mode!"
 	/// </summary>
-	public override string LabelStartPlaying => "ゲストモードで今すぐプレイできます！";
+	public override string LabelStartPlaying => "ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ä»Šã™ããƒ—ãƒ¬ã‚¤ã§ãã¾ã™ï¼";
 
 	/// <summary>
 	/// Key: "Label.UnverifiedEmailInstructions"
 	/// message shown in a modal when user logs in with unverified email
 	/// English String: "To log in with your email, it must be verified. You can also log in with your username."
 	/// </summary>
-	public override string LabelUnverifiedEmailInstructions => "メールアドレスでログインするためには、まず認証が必要です。ユーザーネームでログインすることもできます。";
+	public override string LabelUnverifiedEmailInstructions => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã§ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹ãŸã‚ã«ã¯ã€ã¾ãšèªè¨¼ãŒå¿…è¦ã§ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "ユーザーネーム";
+	public override string LabelUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Label.UsernameEmail"
 	/// placeholder text for input field that accepts username or email
 	/// English String: "Username/Email"
 	/// </summary>
-	public override string LabelUsernameEmail => "ユーザーネーム/メールアドレス";
+	public override string LabelUsernameEmail => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ /ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
 
 	/// <summary>
 	/// Key: "Label.UsernameEmailPhone"
 	/// placeholder text for input fields that accept username, email or phone
 	/// English String: "Username/Email/Phone"
 	/// </summary>
-	public override string LabelUsernameEmailPhone => "ユーザーネーム/メールアドレス/電話番号";
+	public override string LabelUsernameEmailPhone => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ /ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹/é›»è©±ç•ªå·";
 
 	/// <summary>
 	/// Key: "Label.UsernamePhone"
 	/// placeholder text for input field that accepts username or phone
 	/// English String: "Username/Phone"
 	/// </summary>
-	public override string LabelUsernamePhone => "ユーザーネーム/電話番号";
+	public override string LabelUsernamePhone => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ /é›»è©±ç•ªå·";
 
 	/// <summary>
 	/// Key: "Label.UsernameWithColumn"
 	/// label for username field on login page
 	/// English String: "Username:"
 	/// </summary>
-	public override string LabelUsernameWithColumn => "ユーザーネーム:";
+	public override string LabelUsernameWithColumn => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ :";
 
 	/// <summary>
 	/// Key: "Label.VerificationEmailSent"
 	/// message telling user a verification email was sent to them
 	/// English String: "Verification Email Sent!"
 	/// </summary>
-	public override string LabelVerificationEmailSent => "確認メールが送信されました！";
+	public override string LabelVerificationEmailSent => "ç¢ºèªãƒ¡ãƒ¼ãƒ«ãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸï¼";
 
 	/// <summary>
 	/// Key: "Label.WeChatAntiAddictionText"
 	/// English String: "Boycott bad games, refuse pirated games. Be aware of self-defense and being deceived. Playing games is good for your brain, but too much game play can harm your health. Manage your time well and enjoy a healthy lifestyle."
 	/// </summary>
-	public override string LabelWeChatAntiAddictionText => "不適切なゲームには参加しないように心掛け、海賊版は拒否しましょう。自衛意識を高め、騙されないようにしましょう。ゲームをプレイすることは脳の働きを高めてくれますが、プレイしすぎると健康を害する恐れがあります。時間管理をきちんと行い、健康的なライフスタイルをお楽しみください。";
+	public override string LabelWeChatAntiAddictionText => "ä¸é©åˆ‡ãªã‚²ãƒ¼ãƒ ã«ã¯å‚åŠ ã—ãªã„ã‚ˆã†ã«å¿ƒæŽ›ã‘ã€æµ·è³Šç‰ˆã¯æ‹’å¦ã—ã¾ã—ã‚‡ã†ã€‚è‡ªè¡›æ„è­˜ã‚’é«˜ã‚ã€é¨™ã•ã‚Œãªã„ã‚ˆã†ã«ã—ã¾ã—ã‚‡ã†ã€‚ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã“ã¨ã¯è„³ã®åƒãã‚’é«˜ã‚ã¦ãã‚Œã¾ã™ãŒã€ãƒ—ãƒ¬ã‚¤ã—ã™ãŽã‚‹ã¨å¥åº·ã‚’å®³ã™ã‚‹æã‚ŒãŒã‚ã‚Šã¾ã™ã€‚æ™‚é–“ç®¡ç†ã‚’ãã¡ã‚“ã¨è¡Œã„ã€å¥åº·çš„ãªãƒ©ã‚¤ãƒ•ã‚¹ã‚¿ã‚¤ãƒ«ã‚’ãŠæ¥½ã—ã¿ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnknownErrorTryAgain"
 	/// An unknown error occurred. Please try again.
 	/// English String: "An unknown error occurred. Please try again."
 	/// </summary>
-	public override string MessageUnknownErrorTryAgain => "不明なエラーが発生しました。もう一度お試しください。";
+	public override string MessageUnknownErrorTryAgain => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UsernameAndPasswordRequired"
 	/// message shown to user when they attempt to login without entering a username or password
 	/// English String: "Username and password required"
 	/// </summary>
-	public override string MessageUsernameAndPasswordRequired => "ユーザーネームとパスワードが必要です";
+	public override string MessageUsernameAndPasswordRequired => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒå¿…è¦ã§ã™";
 
 	/// <summary>
 	/// Key: "Response.AccountIssueErrorContactSupport"
 	/// English String: "Account issue. Please contact Support."
 	/// </summary>
-	public override string ResponseAccountIssueErrorContactSupport => "アカウントに関する問題が発生しました。サポートにお問い合わせください。";
+	public override string ResponseAccountIssueErrorContactSupport => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«é–¢ã™ã‚‹å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚µãƒãƒ¼ãƒˆã«ãŠå•ã„åˆã‚ã›ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.AccountLockedRequestReset"
 	/// Account has been locked. Please request a password reset.
 	/// English String: "Account has been locked. Please request a password reset."
 	/// </summary>
-	public override string ResponseAccountLockedRequestReset => "アカウントがロックされています。パスワードリセットをリクエストしてください。";
+	public override string ResponseAccountLockedRequestReset => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã‚’ãƒªã‚¯ã‚¨ã‚¹ãƒˆã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.AccountNotFound"
 	/// Account not found. Please try again.
 	/// English String: "Account not found. Please try again."
 	/// </summary>
-	public override string ResponseAccountNotFound => "アカウントが見つかりませんでした。もう一度お試しください。";
+	public override string ResponseAccountNotFound => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.EmailLinkedToMultipleAccountsLoginWithUsername"
 	/// error message displayed when user attempts to log in with an email that is linked to multiple accounts
 	/// English String: "Your email is associated with more than 1 username. Please login with your username."
 	/// </summary>
-	public override string ResponseEmailLinkedToMultipleAccountsLoginWithUsername => "メールアドレスが複数のユーザーネームに関連付けられています。ユーザーネームでログインしてください。";
+	public override string ResponseEmailLinkedToMultipleAccountsLoginWithUsername => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒè¤‡æ•°ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã«é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.EmailSent"
 	/// response telling user that a verification email has been sent to them
 	/// English String: "Email sent!"
 	/// </summary>
-	public override string ResponseEmailSent => "メールが送信されました！";
+	public override string ResponseEmailSent => "ãƒ¡ãƒ¼ãƒ«ãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸï¼";
 
 	/// <summary>
 	/// Key: "Response.IncorrectEmailOrPassword"
 	/// error message displayed when user logs in with an invalid email or password
 	/// English String: "Incorrect email or password."
 	/// </summary>
-	public override string ResponseIncorrectEmailOrPassword => "メールアドレスまたはパスワードが間違っています。";
+	public override string ResponseIncorrectEmailOrPassword => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¾ãŸã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.IncorrectPhoneOrPassword"
 	/// error message displayed when user logs in with an invalid phone or password
 	/// English String: "Incorrect phone or password."
 	/// </summary>
-	public override string ResponseIncorrectPhoneOrPassword => "電話番号またはパスワードが間違っています。";
+	public override string ResponseIncorrectPhoneOrPassword => "é›»è©±ç•ªå·ã¾ãŸã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.IncorrectUsernamePassword"
 	/// English String: "Incorrect username or password."
 	/// </summary>
-	public override string ResponseIncorrectUsernamePassword => "ユーザーネーム、またはパスワードが間違っています。";
+	public override string ResponseIncorrectUsernamePassword => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã€ã¾ãŸã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.LoginWithUsername"
 	/// error message shown when user attempts to login with method other than username and an error occurred
 	/// English String: "Something went wrong. Please login with your username."
 	/// </summary>
-	public override string ResponseLoginWithUsername => "何らかの問題が発生しました。もう一度お試しください。";
+	public override string ResponseLoginWithUsername => "ä½•ã‚‰ã‹ã®å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.PasswordNotProvided"
 	/// password field is empty
 	/// English String: "You must enter a password."
 	/// </summary>
-	public override string ResponsePasswordNotProvided => "パスワードは必須です。";
+	public override string ResponsePasswordNotProvided => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯å¿…é ˆã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsPleaseWait"
 	/// English String: "Too many attempts. Please wait a bit."
 	/// </summary>
-	public override string ResponseTooManyAttemptsPleaseWait => "試行回数が多すぎます。しばらくしてからやり直してください。";
+	public override string ResponseTooManyAttemptsPleaseWait => "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Unknown Error"
 	/// </summary>
-	public override string ResponseUnknownError => "不明なエラーが発生しました";
+	public override string ResponseUnknownError => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Response.UnknownLoginError"
 	/// Unknown login failure.
 	/// English String: "Unknown login failure."
 	/// </summary>
-	public override string ResponseUnknownLoginError => "不明なログインの失敗。";
+	public override string ResponseUnknownLoginError => "ä¸æ˜Žãªãƒ­ã‚°ã‚¤ãƒ³ã®å¤±æ•—ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UnverifiedEmailLoginWithUsername"
 	/// error message shown when user attempts to login with unverified email
 	/// English String: "Your email is not verified. Please login with your username."
 	/// </summary>
-	public override string ResponseUnverifiedEmailLoginWithUsername => "メールアドレスが認証されていません。ユーザーネームでログインしてください。";
+	public override string ResponseUnverifiedEmailLoginWithUsername => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒèªè¨¼ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UnverifiedPhoneLoginWithUsername"
 	/// error message shown when user attempts to login with an unverified phone number
 	/// English String: "Your phone is not verified. Please login with your username."
 	/// </summary>
-	public override string ResponseUnverifiedPhoneLoginWithUsername => "電話番号が認証されていません。ユーザーネームでログインしてください。";
+	public override string ResponseUnverifiedPhoneLoginWithUsername => "é›»è©±ç•ªå·ãŒèªè¨¼ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotProvided"
 	/// username field is empty
 	/// English String: "You must enter a username."
 	/// </summary>
-	public override string ResponseUsernameNotProvided => "ユーザーネームは必須です。";
+	public override string ResponseUsernameNotProvided => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã¯å¿…é ˆã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UseSocialSignOn"
 	/// Unable to login. Please use Social Network sign on.
 	/// English String: "Unable to login. Please use Social Network sign on."
 	/// </summary>
-	public override string ResponseUseSocialSignOn => "ログインできませんでした。ソーシャルネットワーク・サインオンをご利用ください。";
+	public override string ResponseUseSocialSignOn => "ãƒ­ã‚°ã‚¤ãƒ³ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ãƒ»ã‚µã‚¤ãƒ³ã‚ªãƒ³ã‚’ã”åˆ©ç”¨ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "WeChat.AntiAddictionText"
 	/// English String: "Boycott bad games, refuse pirated games. Be aware of self-defense and being deceived. Playing games is good for your brain, but too much game play can harm your health. Manage your time well and enjoy a healthy lifestyle."
 	/// </summary>
-	public override string WeChatAntiAddictionText => "不適切なゲームには参加しないように心掛け、海賊版は拒否しましょう。自衛意識を高め、騙されないようにしましょう。ゲームをプレイすることは脳の働きを高めてくれますが、プレイしすぎると健康を害する恐れがあります。時間管理をきちんと行い、健康的なライフスタイルをお楽しみください。";
+	public override string WeChatAntiAddictionText => "ä¸é©åˆ‡ãªã‚²ãƒ¼ãƒ ã«ã¯å‚åŠ ã—ãªã„ã‚ˆã†ã«å¿ƒæŽ›ã‘ã€æµ·è³Šç‰ˆã¯æ‹’å¦ã—ã¾ã—ã‚‡ã†ã€‚è‡ªè¡›æ„è­˜ã‚’é«˜ã‚ã€é¨™ã•ã‚Œãªã„ã‚ˆã†ã«ã—ã¾ã—ã‚‡ã†ã€‚ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã“ã¨ã¯è„³ã®åƒãã‚’é«˜ã‚ã¦ãã‚Œã¾ã™ãŒã€ãƒ—ãƒ¬ã‚¤ã—ã™ãŽã‚‹ã¨å¥åº·ã‚’å®³ã™ã‚‹æã‚ŒãŒã‚ã‚Šã¾ã™ã€‚æ™‚é–“ç®¡ç†ã‚’ãã¡ã‚“ã¨è¡Œã„ã€å¥åº·çš„ãªãƒ©ã‚¤ãƒ•ã‚¹ã‚¿ã‚¤ãƒ«ã‚’ãŠæ¥½ã—ã¿ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "WeChat.RealNameNotVerified"
 	/// English String: "Your WeChat is not real-name verified. Please use a real-name verified WeChat account and try again. Please visit https://jiazhang.qq.com/zk/home.html"
 	/// </summary>
-	public override string WeChatRealNameNotVerified => "WeChatで、本名の認証が行われていません。本名の認証を行ったWeChatアカウントを使用してやり直してください。https://jiazhang.qq.com/zk/home.html にアクセスしてください。";
+	public override string WeChatRealNameNotVerified => "WeChatã§ã€æœ¬åã®èªè¨¼ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã›ã‚“ã€‚æœ¬åã®èªè¨¼ã‚’è¡Œã£ãŸWeChatã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚https://jiazhang.qq.com/zk/home.html ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ã€‚";
 
 	public LoginResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -436,7 +436,7 @@ internal class LoginResources_ja_jp : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionFacebook()
@@ -446,22 +446,22 @@ internal class LoginResources_ja_jp : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForActionForgotPasswordOrUsernameQuestion()
 	{
-		return "パスワード、またはユーザーネームをお忘れですか？";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€ã¾ãŸã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’ãŠå¿˜ã‚Œã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForActionForgotPasswordOrUsernameQuestionCapitalized()
 	{
-		return "パスワード、またはユーザーネームをお忘れですか？";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€ã¾ãŸã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’ãŠå¿˜ã‚Œã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "ログイン";
+		return "ãƒ­ã‚°ã‚¤ãƒ³";
 	}
 
 	protected override string _GetTemplateForActionLogInCapitalized()
 	{
-		return "ログイン";
+		return "ãƒ­ã‚°ã‚¤ãƒ³";
 	}
 
 	protected override string _GetTemplateForActionOk()
@@ -471,82 +471,82 @@ internal class LoginResources_ja_jp : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForActionPlayAsGuest()
 	{
-		return "ゲストとしてプレイする";
+		return "ã‚²ã‚¹ãƒˆã¨ã—ã¦ãƒ—ãƒ¬ã‚¤ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionResend()
 	{
-		return "再送信";
+		return "å†é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForActionResendEmail()
 	{
-		return "メールを再送信";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚’å†é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForActionSendVerificationEmail()
 	{
-		return "確認メールを送信";
+		return "ç¢ºèªãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForActionSignIn()
 	{
-		return "サインイン";
+		return "ã‚µã‚¤ãƒ³ã‚¤ãƒ³";
 	}
 
 	protected override string _GetTemplateForActionSignInWithFacebook()
 	{
-		return "Facebookでサインインする";
+		return "Facebookã§ã‚µã‚¤ãƒ³ã‚¤ãƒ³ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "新規登録";
+		return "æ–°è¦ç™»éŒ²";
 	}
 
 	protected override string _GetTemplateForActionSignUpCapitalized()
 	{
-		return "新規登録";
+		return "æ–°è¦ç™»éŒ²";
 	}
 
 	protected override string _GetTemplateForActionWeChatLogin()
 	{
-		return "WeChatログイン";
+		return "WeChatãƒ­ã‚°ã‚¤ãƒ³";
 	}
 
 	protected override string _GetTemplateForHeadingLogin()
 	{
-		return "ログイン";
+		return "ãƒ­ã‚°ã‚¤ãƒ³";
 	}
 
 	protected override string _GetTemplateForHeadingLoginRoblox()
 	{
-		return "Robloxにログインする";
+		return "Robloxã«ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForHeadingSignUpMakeFriends()
 	{
-		return "新規登録してゲーム制作したり、友達を作る";
+		return "æ–°è¦ç™»éŒ²ã—ã¦ã‚²ãƒ¼ãƒ åˆ¶ä½œã—ãŸã‚Šã€å‹é”ã‚’ä½œã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelAccountNotNeeded()
 	{
-		return "Robloxをプレイするのにアカウントは必要ありません。";
+		return "Robloxã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã®ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯å¿…è¦ã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelEmailNeedsVerification()
 	{
-		return "メール確認の手続きが必要です";
+		return "ãƒ¡ãƒ¼ãƒ«ç¢ºèªã®æ‰‹ç¶šããŒå¿…è¦ã§ã™";
 	}
 
 	protected override string _GetTemplateForLabelFacebookCreatePasswordWarning()
 	{
-		return "Facebookでサインインしている場合には、パスワードの設定が必要です。";
+		return "Facebookã§ã‚µã‚¤ãƒ³ã‚¤ãƒ³ã—ã¦ã„ã‚‹å ´åˆã«ã¯ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®è¨­å®šãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelForgotUsernamePassword()
 	{
-		return "ユーザーネームかパスワードをお忘れですか？";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‹ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãŠå¿˜ã‚Œã§ã™ã‹ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -556,202 +556,202 @@ internal class LoginResources_ja_jp : LoginResources_en_us, ILoginResources, ITr
 	/// </summary>
 	public override string LabelGreetingForNewAccount(string username, string linkStartSignup, string linkEndSignup)
 	{
-		return $"はじめまして、 {username}さん。 {linkStartSignup}アカウントを作りましょう! {linkEndSignup}";
+		return $"ã¯ã˜ã‚ã¾ã—ã¦ã€ {username}ã•ã‚“ã€‚ {linkStartSignup}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚Šã¾ã—ã‚‡ã†! {linkEndSignup}";
 	}
 
 	protected override string _GetTemplateForLabelGreetingForNewAccount()
 	{
-		return "はじめまして、 {username}さん。 {linkStartSignup}アカウントを作りましょう! {linkEndSignup}";
+		return "ã¯ã˜ã‚ã¾ã—ã¦ã€ {username}ã•ã‚“ã€‚ {linkStartSignup}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚Šã¾ã—ã‚‡ã†! {linkEndSignup}";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
 	{
-		return "詳しく知る";
+		return "è©³ã—ãçŸ¥ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelLoggingInSpinnerText()
 	{
-		return "ログイン中…";
+		return "ãƒ­ã‚°ã‚¤ãƒ³ä¸­â€¦";
 	}
 
 	protected override string _GetTemplateForLabelLogin()
 	{
-		return "ログイン";
+		return "ãƒ­ã‚°ã‚¤ãƒ³";
 	}
 
 	protected override string _GetTemplateForLabelLoginWithYour()
 	{
-		return "以下でログインしてください";
+		return "ä»¥ä¸‹ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelNoAccount()
 	{
-		return "アカウントをお持ちではありませんか？";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ãŠæŒã¡ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelNonAMemberQuestion()
 	{
-		return "メンバーではありませんか？";
+		return "ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelNotReceived()
 	{
-		return "受信できませんでしたか？";
+		return "å—ä¿¡ã§ãã¾ã›ã‚“ã§ã—ãŸã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelOr()
 	{
-		return "または";
+		return "ã¾ãŸã¯";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "パスワード";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelPasswordWithColumn()
 	{
-		return "パスワード：";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelStartPlaying()
 	{
-		return "ゲストモードで今すぐプレイできます！";
+		return "ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ä»Šã™ããƒ—ãƒ¬ã‚¤ã§ãã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForLabelUnverifiedEmailInstructions()
 	{
-		return "メールアドレスでログインするためには、まず認証が必要です。ユーザーネームでログインすることもできます。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã§ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹ãŸã‚ã«ã¯ã€ã¾ãšèªè¨¼ãŒå¿…è¦ã§ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ユーザーネーム";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForLabelUsernameEmail()
 	{
-		return "ユーザーネーム/メールアドレス";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ /ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
 	}
 
 	protected override string _GetTemplateForLabelUsernameEmailPhone()
 	{
-		return "ユーザーネーム/メールアドレス/電話番号";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ /ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹/é›»è©±ç•ªå·";
 	}
 
 	protected override string _GetTemplateForLabelUsernamePhone()
 	{
-		return "ユーザーネーム/電話番号";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ /é›»è©±ç•ªå·";
 	}
 
 	protected override string _GetTemplateForLabelUsernameWithColumn()
 	{
-		return "ユーザーネーム:";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ :";
 	}
 
 	protected override string _GetTemplateForLabelVerificationEmailSent()
 	{
-		return "確認メールが送信されました！";
+		return "ç¢ºèªãƒ¡ãƒ¼ãƒ«ãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForLabelWeChatAntiAddictionText()
 	{
-		return "不適切なゲームには参加しないように心掛け、海賊版は拒否しましょう。自衛意識を高め、騙されないようにしましょう。ゲームをプレイすることは脳の働きを高めてくれますが、プレイしすぎると健康を害する恐れがあります。時間管理をきちんと行い、健康的なライフスタイルをお楽しみください。";
+		return "ä¸é©åˆ‡ãªã‚²ãƒ¼ãƒ ã«ã¯å‚åŠ ã—ãªã„ã‚ˆã†ã«å¿ƒæŽ›ã‘ã€æµ·è³Šç‰ˆã¯æ‹’å¦ã—ã¾ã—ã‚‡ã†ã€‚è‡ªè¡›æ„è­˜ã‚’é«˜ã‚ã€é¨™ã•ã‚Œãªã„ã‚ˆã†ã«ã—ã¾ã—ã‚‡ã†ã€‚ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã“ã¨ã¯è„³ã®åƒãã‚’é«˜ã‚ã¦ãã‚Œã¾ã™ãŒã€ãƒ—ãƒ¬ã‚¤ã—ã™ãŽã‚‹ã¨å¥åº·ã‚’å®³ã™ã‚‹æã‚ŒãŒã‚ã‚Šã¾ã™ã€‚æ™‚é–“ç®¡ç†ã‚’ãã¡ã‚“ã¨è¡Œã„ã€å¥åº·çš„ãªãƒ©ã‚¤ãƒ•ã‚¹ã‚¿ã‚¤ãƒ«ã‚’ãŠæ¥½ã—ã¿ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownErrorTryAgain()
 	{
-		return "不明なエラーが発生しました。もう一度お試しください。";
+		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUsernameAndPasswordRequired()
 	{
-		return "ユーザーネームとパスワードが必要です";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒå¿…è¦ã§ã™";
 	}
 
 	protected override string _GetTemplateForResponseAccountIssueErrorContactSupport()
 	{
-		return "アカウントに関する問題が発生しました。サポートにお問い合わせください。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«é–¢ã™ã‚‹å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚µãƒãƒ¼ãƒˆã«ãŠå•ã„åˆã‚ã›ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseAccountLockedRequestReset()
 	{
-		return "アカウントがロックされています。パスワードリセットをリクエストしてください。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒªã‚»ãƒƒãƒˆã‚’ãƒªã‚¯ã‚¨ã‚¹ãƒˆã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseAccountNotFound()
 	{
-		return "アカウントが見つかりませんでした。もう一度お試しください。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseEmailLinkedToMultipleAccountsLoginWithUsername()
 	{
-		return "メールアドレスが複数のユーザーネームに関連付けられています。ユーザーネームでログインしてください。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒè¤‡æ•°ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã«é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseEmailSent()
 	{
-		return "メールが送信されました！";
+		return "ãƒ¡ãƒ¼ãƒ«ãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectEmailOrPassword()
 	{
-		return "メールアドレスまたはパスワードが間違っています。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¾ãŸã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectPhoneOrPassword()
 	{
-		return "電話番号またはパスワードが間違っています。";
+		return "é›»è©±ç•ªå·ã¾ãŸã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectUsernamePassword()
 	{
-		return "ユーザーネーム、またはパスワードが間違っています。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã€ã¾ãŸã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseLoginWithUsername()
 	{
-		return "何らかの問題が発生しました。もう一度お試しください。";
+		return "ä½•ã‚‰ã‹ã®å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponsePasswordNotProvided()
 	{
-		return "パスワードは必須です。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯å¿…é ˆã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsPleaseWait()
 	{
-		return "試行回数が多すぎます。しばらくしてからやり直してください。";
+		return "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "不明なエラーが発生しました";
+		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForResponseUnknownLoginError()
 	{
-		return "不明なログインの失敗。";
+		return "ä¸æ˜Žãªãƒ­ã‚°ã‚¤ãƒ³ã®å¤±æ•—ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUnverifiedEmailLoginWithUsername()
 	{
-		return "メールアドレスが認証されていません。ユーザーネームでログインしてください。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒèªè¨¼ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUnverifiedPhoneLoginWithUsername()
 	{
-		return "電話番号が認証されていません。ユーザーネームでログインしてください。";
+		return "é›»è©±ç•ªå·ãŒèªè¨¼ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotProvided()
 	{
-		return "ユーザーネームは必須です。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã¯å¿…é ˆã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUseSocialSignOn()
 	{
-		return "ログインできませんでした。ソーシャルネットワーク・サインオンをご利用ください。";
+		return "ãƒ­ã‚°ã‚¤ãƒ³ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ãƒ»ã‚µã‚¤ãƒ³ã‚ªãƒ³ã‚’ã”åˆ©ç”¨ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -760,21 +760,24 @@ internal class LoginResources_ja_jp : LoginResources_en_us, ILoginResources, ITr
 	/// </summary>
 	public override string ResponseWeChatNotRealNameVerified(string url)
 	{
-		return $"WeChatで、本名の認証が行われていません。本名の認証を行ったWeChatアカウントを使用してやり直してください。 {url} にアクセスしてください。";
+		return $"WeChatã§ã€æœ¬åã®èªè¨¼ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã›ã‚“ã€‚æœ¬åã®èªè¨¼ã‚’è¡Œã£ãŸWeChatã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚ {url} ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseWeChatNotRealNameVerified()
 	{
-		return "WeChatで、本名の認証が行われていません。本名の認証を行ったWeChatアカウントを使用してやり直してください。 {url} にアクセスしてください。";
+		return "WeChatã§ã€æœ¬åã®èªè¨¼ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã›ã‚“ã€‚æœ¬åã®èªè¨¼ã‚’è¡Œã£ãŸWeChatã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚ {url} ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForWeChatAntiAddictionText()
 	{
-		return "不適切なゲームには参加しないように心掛け、海賊版は拒否しましょう。自衛意識を高め、騙されないようにしましょう。ゲームをプレイすることは脳の働きを高めてくれますが、プレイしすぎると健康を害する恐れがあります。時間管理をきちんと行い、健康的なライフスタイルをお楽しみください。";
+		return "ä¸é©åˆ‡ãªã‚²ãƒ¼ãƒ ã«ã¯å‚åŠ ã—ãªã„ã‚ˆã†ã«å¿ƒæŽ›ã‘ã€æµ·è³Šç‰ˆã¯æ‹’å¦ã—ã¾ã—ã‚‡ã†ã€‚è‡ªè¡›æ„è­˜ã‚’é«˜ã‚ã€é¨™ã•ã‚Œãªã„ã‚ˆã†ã«ã—ã¾ã—ã‚‡ã†ã€‚ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã“ã¨ã¯è„³ã®åƒãã‚’é«˜ã‚ã¦ãã‚Œã¾ã™ãŒã€ãƒ—ãƒ¬ã‚¤ã—ã™ãŽã‚‹ã¨å¥åº·ã‚’å®³ã™ã‚‹æã‚ŒãŒã‚ã‚Šã¾ã™ã€‚æ™‚é–“ç®¡ç†ã‚’ãã¡ã‚“ã¨è¡Œã„ã€å¥åº·çš„ãªãƒ©ã‚¤ãƒ•ã‚¹ã‚¿ã‚¤ãƒ«ã‚’ãŠæ¥½ã—ã¿ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForWeChatRealNameNotVerified()
 	{
-		return "WeChatで、本名の認証が行われていません。本名の認証を行ったWeChatアカウントを使用してやり直してください。https://jiazhang.qq.com/zk/home.html にアクセスしてください。";
+		return "WeChatã§ã€æœ¬åã®èªè¨¼ãŒè¡Œã‚ã‚Œã¦ã„ã¾ã›ã‚“ã€‚æœ¬åã®èªè¨¼ã‚’è¡Œã£ãŸWeChatã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ã¦ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚https://jiazhang.qq.com/zk/home.html ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ã€‚";
 	}
+}
+
+
 }

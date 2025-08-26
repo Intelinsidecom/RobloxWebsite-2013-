@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUIinternal {
+    static class FeaturesResourceFactory
 
-internal static class FeaturesResourceFactory
 {
 	public const string FullNamespace = "CommonUI.Features";
 
@@ -27,4 +27,7 @@ internal static class FeaturesResourceFactory
 			_ => new FeaturesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

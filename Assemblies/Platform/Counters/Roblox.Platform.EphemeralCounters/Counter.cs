@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.EphemeralCounters.Client;
+namespace Roblox.Platform.EphemeralCountersinternal {
+    class Counter : EphemeralCounterBase, ICounter
 
-namespace Roblox.EphemeralCounters;
-
-internal class Counter : EphemeralCounterBase, ICounter
 {
 	private readonly string _CounterName;
 
@@ -53,4 +52,7 @@ internal class Counter : EphemeralCounterBase, ICounter
 	{
 		Client.Delete(_CounterName);
 	}
+}
+
+
 }

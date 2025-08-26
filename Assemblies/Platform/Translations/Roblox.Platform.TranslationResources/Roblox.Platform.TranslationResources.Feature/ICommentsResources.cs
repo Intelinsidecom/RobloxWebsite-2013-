@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ICommentsResources : ITranslationResources
 
-public interface ICommentsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Login"
@@ -181,4 +181,7 @@ public interface ICommentsResources : ITranslationResources
 	/// English String: "{numberOfHours} hours ago"
 	/// </summary>
 	string LabelXHoursAgo(string numberOfHours);
+}
+
+
 }

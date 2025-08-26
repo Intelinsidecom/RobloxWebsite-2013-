@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.Marketing;
+namespace Roblox.Marketing {
+    /// <summary>
 
-namespace Roblox.Platform.Marketing;
-
-/// <summary>
 /// An interface for a SponsoredPage provider.
 /// </summary>
 public interface ISponsoredPageProvider
@@ -30,4 +29,7 @@ public interface ISponsoredPageProvider
 	/// <param name="overrideUrl">The navigation override url.</param>
 	/// <returns>The <see cref="T:Roblox.Marketing.SponsoredPage" /> with the given override url.</returns>
 	SponsoredPage GetSponsoredPageByOverrideUrl(string overrideUrl);
+}
+
+
 }

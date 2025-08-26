@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.FloodCheckers;
 using Roblox.Locking;
@@ -9,10 +9,9 @@ using Roblox.Platform.Membership;
 using Roblox.Platform.Outfits;
 using Roblox.Thumbnails.Client;
 using Roblox.WebsiteSettings.Properties;
+namespace Roblox.Platform.Thumbspublic {
+    class AvatarThumbnail : DomainObjectBase<ThumbnailDomainFactories>, IAvatarThumbnail
 
-namespace Roblox.Thumbs;
-
-public class AvatarThumbnail : DomainObjectBase<ThumbnailDomainFactories>, IAvatarThumbnail
 {
 	private readonly Guid _LeaseHolder = Guid.NewGuid();
 
@@ -333,4 +332,7 @@ public class AvatarThumbnail : DomainObjectBase<ThumbnailDomainFactories>, IAvat
 		IUserAvatar userAvatar = base.DomainFactories.AvatarDomainFactories.UserAvatarFactory.GetOrCreate(userId);
 		return new FloodChecker("AvatarInvalidation", $"AvatarInvalidation_AssetHashId:{userAvatar.NewAvatarAssetHashID}", Settings.Default.CharacterThumbnailInvalidationLimit, Settings.Default.CharacterThumbnailInvalidationInterval);
 	}
+}
+
+
 }

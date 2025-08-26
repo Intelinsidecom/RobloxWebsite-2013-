@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Default implementation of <see cref="T:Roblox.TextFilter.IModeratedTextRequest" />.
 /// </summary>
 public class ModeratedTextRequest : IModeratedTextRequest
@@ -51,4 +51,7 @@ public class ModeratedTextRequest : IModeratedTextRequest
 		Client = client;
 		TrackDetailedClientStatistics = trackDetailedClientStatistics;
 	}
+}
+
+
 }

@@ -1,7 +1,10 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accountspublic {
+    enum AccountCountriesAutomationType : byte
 
-public enum AccountCountriesAutomationType : byte
 {
 	Backfill,
 	IpOnSignup
+}
+
+
 }

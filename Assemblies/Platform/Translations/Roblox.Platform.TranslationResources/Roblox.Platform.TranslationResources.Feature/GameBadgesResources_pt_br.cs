@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameBadgesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -31,7 +31,7 @@ internal class GameBadgesResources_pt_br : GameBadgesResources_en_us, IGameBadge
 	/// It would be easy for the user to accomplish this goal.
 	/// English String: "Easy"
 	/// </summary>
-	public override string LabelRarityEasy => "Fácil";
+	public override string LabelRarityEasy => "FÃ¡cil";
 
 	/// <summary>
 	/// Key: "Label.RarityExtreme"
@@ -52,14 +52,14 @@ internal class GameBadgesResources_pt_br : GameBadgesResources_en_us, IGameBadge
 	/// It would be difficult for the user to accomplish this goal.
 	/// English String: "Hard"
 	/// </summary>
-	public override string LabelRarityHard => "Difícil";
+	public override string LabelRarityHard => "DifÃ­cil";
 
 	/// <summary>
 	/// Key: "Label.RarityImpossible"
 	/// It is impossible for the user to accomplish this goal.
 	/// English String: "Impossible"
 	/// </summary>
-	public override string LabelRarityImpossible => "Impossível";
+	public override string LabelRarityImpossible => "ImpossÃ­vel";
 
 	/// <summary>
 	/// Key: "Label.RarityInsane"
@@ -121,7 +121,7 @@ internal class GameBadgesResources_pt_br : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityEasy()
 	{
-		return "Fácil";
+		return "FÃ¡cil";
 	}
 
 	protected override string _GetTemplateForLabelRarityExtreme()
@@ -136,12 +136,12 @@ internal class GameBadgesResources_pt_br : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityHard()
 	{
-		return "Difícil";
+		return "DifÃ­cil";
 	}
 
 	protected override string _GetTemplateForLabelRarityImpossible()
 	{
-		return "Impossível";
+		return "ImpossÃ­vel";
 	}
 
 	protected override string _GetTemplateForLabelRarityInsane()
@@ -173,4 +173,7 @@ internal class GameBadgesResources_pt_br : GameBadgesResources_en_us, IGameBadge
 	{
 		return "Ganhou ontem";
 	}
+}
+
+
 }

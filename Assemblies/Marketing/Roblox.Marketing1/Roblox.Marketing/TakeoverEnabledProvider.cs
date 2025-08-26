@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Caching.Shared;
@@ -6,10 +6,9 @@ using Roblox.Marketing;
 using Roblox.Platform.Marketing.Core;
 using Roblox.Platform.Marketing.Properties;
 using Roblox.Platform.Membership;
+namespace Roblox.Marketing {
+    /// <summary>
 
-namespace Roblox.Platform.Marketing;
-
-/// <summary>
 /// Provides methods for determining whether or not a takeover is enabled.
 /// </summary>
 public class TakeoverEnabledProvider : ITakeoverEnabledProvider
@@ -199,4 +198,7 @@ public class TakeoverEnabledProvider : ITakeoverEnabledProvider
 		}
 		return userAge.GetValueOrDefault().Days / 365;
 	}
+}
+
+
 }

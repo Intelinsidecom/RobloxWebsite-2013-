@@ -1,9 +1,8 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using Roblox.PremiumFeatures.Models.Enums;
+namespace Roblox.Platform.PremiumFeatures.Models.Responses {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models.Responses;
-
-/// <summary>
 /// Error response model for PremiumFeatureProductModel
 /// </summary>
 [DataContract]
@@ -20,4 +19,7 @@ public class PremiumFeatureProductModelErrorResponse : PremiumFeatureProductMode
 	/// </summary>
 	[DataMember(Name = "errorMessage", EmitDefaultValue = false, IsRequired = false)]
 	public string ErrorMessage { get; set; }
+}
+
+
 }

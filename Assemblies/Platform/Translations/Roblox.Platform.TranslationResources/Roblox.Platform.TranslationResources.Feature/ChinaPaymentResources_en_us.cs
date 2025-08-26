@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ChinaPaymentResources_en_us : TranslationResourcesBase, IChinaPaymentResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ChinaPaymentResources_en_us : TranslationResourcesBase, IChinaPaymentResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -69,4 +68,7 @@ internal class ChinaPaymentResources_en_us : TranslationResourcesBase, IChinaPay
 	{
 		return "Looks like your WeChat session is expired and we cannot process your request. Please log out and log in again.";
 	}
+}
+
+
 }

@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class RobuxPageClickEventArgs : WebEventArgs
 
-public class RobuxPageClickEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The page (Robux grid view or list view) which user clicks on.
@@ -12,3 +13,12 @@ public class RobuxPageClickEventArgs : WebEventArgs
 	/// </summary>
 	public string Context { get; set; }
 }
+
+
+}
+
+
+
+
+
+

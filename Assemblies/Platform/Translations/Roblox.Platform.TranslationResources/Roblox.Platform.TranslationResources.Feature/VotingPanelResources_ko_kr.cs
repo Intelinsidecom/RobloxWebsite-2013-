@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides VotingPanelResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,151 +10,151 @@ internal class VotingPanelResources_ko_kr : VotingPanelResources_en_us, IVotingP
 	/// Key: "Label.Accept"
 	/// English String: "Verify"
 	/// </summary>
-	public override string LabelAccept => "확인";
+	public override string LabelAccept => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Label.AccountPageTitle"
 	/// English String: "Account"
 	/// </summary>
-	public override string LabelAccountPageTitle => "계정";
+	public override string LabelAccountPageTitle => "ê³„ì •";
 
 	/// <summary>
 	/// Key: "Label.AccountUnderDayOneMessage"
 	/// English String: "You will be able to vote on Games and Studio Models later, after you've had a chance to experience Roblox a bit more. Come back to this page in a couple days."
 	/// </summary>
-	public override string LabelAccountUnderDayOneMessage => "Roblox를 조금만 더 사용하시면 Roblox 게임 및 Studio 모델에 투표할 수 있습니다. 며칠 후 다시 방문해 주세요.";
+	public override string LabelAccountUnderDayOneMessage => "Robloxë¥¼ ì¡°ê¸ˆë§Œ ë” ì‚¬ìš©í•˜ì‹œë©´ Roblox ê²Œìž„ ë° Studio ëª¨ë¸ì— íˆ¬í‘œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë©°ì¹  í›„ ë‹¤ì‹œ ë°©ë¬¸í•´ ì£¼ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.AccountUnderDayOneTitle"
 	/// English String: "Voter Feedback"
 	/// </summary>
-	public override string LabelAccountUnderDayOneTitle => "투표자 피드백";
+	public override string LabelAccountUnderDayOneTitle => "íˆ¬í‘œìž í”¼ë“œë°±";
 
 	/// <summary>
 	/// Key: "Label.AssetNotVoteableMessage"
 	/// English String: "This asset may not be voted on at this time."
 	/// </summary>
-	public override string LabelAssetNotVoteableMessage => "지금은 본 애셋에 투표할 수 없어요.";
+	public override string LabelAssetNotVoteableMessage => "ì§€ê¸ˆì€ ë³¸ ì• ì…‹ì— íˆ¬í‘œí•  ìˆ˜ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.AssetNotVoteableTitle"
 	/// English String: "Unable to Vote"
 	/// </summary>
-	public override string LabelAssetNotVoteableTitle => "투표 불가";
+	public override string LabelAssetNotVoteableTitle => "íˆ¬í‘œ ë¶ˆê°€";
 
 	/// <summary>
 	/// Key: "Label.BuyGamePassMessage"
 	/// English String: "You must own this game pass before you can vote on it."
 	/// </summary>
-	public override string LabelBuyGamePassMessage => "투표하려면 먼저 본 게임패스를 보유해야 합니다.";
+	public override string LabelBuyGamePassMessage => "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ë³¸ ê²Œìž„íŒ¨ìŠ¤ë¥¼ ë³´ìœ í•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Label.BuyGamePassTitle"
 	/// English String: "Buy Game Pass"
 	/// </summary>
-	public override string LabelBuyGamePassTitle => "게임패스 구매";
+	public override string LabelBuyGamePassTitle => "ê²Œìž„íŒ¨ìŠ¤ êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Label.Decline"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelDecline => "취소";
+	public override string LabelDecline => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Label.EmailVerifiedTitle"
 	/// English String: "Verify Your Email"
 	/// </summary>
-	public override string LabelEmailVerifiedTitle => "이메일 인증";
+	public override string LabelEmailVerifiedTitle => "ì´ë©”ì¼ ì¸ì¦";
 
 	/// <summary>
 	/// Key: "Label.FloodCheckMessage"
 	/// English String: "You're voting too quickly. Come back later and try again."
 	/// </summary>
-	public override string LabelFloodCheckMessage => "너무 자주 투표를 하시는군요. 나중에 다시 시도하세요.";
+	public override string LabelFloodCheckMessage => "ë„ˆë¬´ ìžì£¼ íˆ¬í‘œë¥¼ í•˜ì‹œëŠ”êµ°ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.FloodCheckTitle"
 	/// English String: "Slow Down"
 	/// </summary>
-	public override string LabelFloodCheckTitle => "조금만 천천히!";
+	public override string LabelFloodCheckTitle => "ì¡°ê¸ˆë§Œ ì²œì²œížˆ!";
 
 	/// <summary>
 	/// Key: "Label.GuestUserTitle"
 	/// English String: "Login to Vote"
 	/// </summary>
-	public override string LabelGuestUserTitle => "로그인 및 투표";
+	public override string LabelGuestUserTitle => "ë¡œê·¸ì¸ ë° íˆ¬í‘œ";
 
 	/// <summary>
 	/// Key: "Label.InstallPluginMessage"
 	/// English String: "You must install this plugin before you can vote on it."
 	/// </summary>
-	public override string LabelInstallPluginMessage => "투표하려면 먼저 본 플러그인을 사용해야 합니다.";
+	public override string LabelInstallPluginMessage => "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ë³¸ í”ŒëŸ¬ê·¸ì¸ì„ ì‚¬ìš©í•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Label.InstallPluginTitle"
 	/// English String: "Install Plugin"
 	/// </summary>
-	public override string LabelInstallPluginTitle => "플러그인 설치";
+	public override string LabelInstallPluginTitle => "í”ŒëŸ¬ê·¸ì¸ ì„¤ì¹˜";
 
 	/// <summary>
 	/// Key: "Label.Login"
 	/// English String: "Login"
 	/// </summary>
-	public override string LabelLogin => "로그인";
+	public override string LabelLogin => "ë¡œê·¸ì¸";
 
 	/// <summary>
 	/// Key: "Label.LoginOrRegisterPageTitle"
 	/// English String: "login or register"
 	/// </summary>
-	public override string LabelLoginOrRegisterPageTitle => "로그인 또는 가입";
+	public override string LabelLoginOrRegisterPageTitle => "ë¡œê·¸ì¸ ë˜ëŠ” ê°€ìž…";
 
 	/// <summary>
 	/// Key: "Label.Ok"
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelOk => "확인";
+	public override string LabelOk => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Label.PlayGameMessage"
 	/// English String: "You must play the game before you can vote on it."
 	/// </summary>
-	public override string LabelPlayGameMessage => "투표하려면 먼저 게임을 플레이해야 합니다.";
+	public override string LabelPlayGameMessage => "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ê²Œìž„ì„ í”Œë ˆì´í•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Label.PlayGameTitle"
 	/// English String: "Play Game"
 	/// </summary>
-	public override string LabelPlayGameTitle => "게임 플레이";
+	public override string LabelPlayGameTitle => "ê²Œìž„ í”Œë ˆì´";
 
 	/// <summary>
 	/// Key: "Label.UnknownProblemMessage"
 	/// English String: "There was an unknown problem voting. Please try again."
 	/// </summary>
-	public override string LabelUnknownProblemMessage => "투표 중 알 수 없는 오류가 발생했어요. 다시 시도하세요.";
+	public override string LabelUnknownProblemMessage => "íˆ¬í‘œ ì¤‘ ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.UnknownProblemTitle"
 	/// English String: "Something Broke"
 	/// </summary>
-	public override string LabelUnknownProblemTitle => "오류가 발생했어요";
+	public override string LabelUnknownProblemTitle => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”";
 
 	/// <summary>
 	/// Key: "Label.UseModelMessage"
 	/// English String: "You must use this model before you can vote on it."
 	/// </summary>
-	public override string LabelUseModelMessage => "투표하려면 먼저 본 모델을 사용해야 합니다.";
+	public override string LabelUseModelMessage => "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ë³¸ ëª¨ë¸ì„ ì‚¬ìš©í•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Label.UseModelTitle"
 	/// English String: "Use Model"
 	/// </summary>
-	public override string LabelUseModelTitle => "모델 사용";
+	public override string LabelUseModelTitle => "ëª¨ë¸ ì‚¬ìš©";
 
 	/// <summary>
 	/// Key: "Label.YouMustLoginToVote"
 	/// English String: "You must login to vote."
 	/// </summary>
-	public override string LabelYouMustLoginToVote => "투표하려면 로그인하세요.";
+	public override string LabelYouMustLoginToVote => "íˆ¬í‘œí•˜ë ¤ë©´ ë¡œê·¸ì¸í•˜ì„¸ìš”.";
 
 	public VotingPanelResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -163,47 +163,47 @@ internal class VotingPanelResources_ko_kr : VotingPanelResources_en_us, IVotingP
 
 	protected override string _GetTemplateForLabelAccept()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForLabelAccountPageTitle()
 	{
-		return "계정";
+		return "ê³„ì •";
 	}
 
 	protected override string _GetTemplateForLabelAccountUnderDayOneMessage()
 	{
-		return "Roblox를 조금만 더 사용하시면 Roblox 게임 및 Studio 모델에 투표할 수 있습니다. 며칠 후 다시 방문해 주세요.";
+		return "Robloxë¥¼ ì¡°ê¸ˆë§Œ ë” ì‚¬ìš©í•˜ì‹œë©´ Roblox ê²Œìž„ ë° Studio ëª¨ë¸ì— íˆ¬í‘œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë©°ì¹  í›„ ë‹¤ì‹œ ë°©ë¬¸í•´ ì£¼ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelAccountUnderDayOneTitle()
 	{
-		return "투표자 피드백";
+		return "íˆ¬í‘œìž í”¼ë“œë°±";
 	}
 
 	protected override string _GetTemplateForLabelAssetNotVoteableMessage()
 	{
-		return "지금은 본 애셋에 투표할 수 없어요.";
+		return "ì§€ê¸ˆì€ ë³¸ ì• ì…‹ì— íˆ¬í‘œí•  ìˆ˜ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelAssetNotVoteableTitle()
 	{
-		return "투표 불가";
+		return "íˆ¬í‘œ ë¶ˆê°€";
 	}
 
 	protected override string _GetTemplateForLabelBuyGamePassMessage()
 	{
-		return "투표하려면 먼저 본 게임패스를 보유해야 합니다.";
+		return "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ë³¸ ê²Œìž„íŒ¨ìŠ¤ë¥¼ ë³´ìœ í•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelBuyGamePassTitle()
 	{
-		return "게임패스 구매";
+		return "ê²Œìž„íŒ¨ìŠ¤ êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForLabelDecline()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	/// <summary>
@@ -212,27 +212,27 @@ internal class VotingPanelResources_ko_kr : VotingPanelResources_en_us, IVotingP
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"투표하려면 먼저 이메일을 인증해야 합니다. {accountPageLink} 페이지에서 이메일 인증을 하실 수 있어요.";
+		return $"íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ì´ë©”ì¼ì„ ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤. {accountPageLink} íŽ˜ì´ì§€ì—ì„œ ì´ë©”ì¼ ì¸ì¦ì„ í•˜ì‹¤ ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "투표하려면 먼저 이메일을 인증해야 합니다. {accountPageLink} 페이지에서 이메일 인증을 하실 수 있어요.";
+		return "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ì´ë©”ì¼ì„ ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤. {accountPageLink} íŽ˜ì´ì§€ì—ì„œ ì´ë©”ì¼ ì¸ì¦ì„ í•˜ì‹¤ ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
 	{
-		return "이메일 인증";
+		return "ì´ë©”ì¼ ì¸ì¦";
 	}
 
 	protected override string _GetTemplateForLabelFloodCheckMessage()
 	{
-		return "너무 자주 투표를 하시는군요. 나중에 다시 시도하세요.";
+		return "ë„ˆë¬´ ìžì£¼ íˆ¬í‘œë¥¼ í•˜ì‹œëŠ”êµ°ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelFloodCheckTitle()
 	{
-		return "조금만 천천히!";
+		return "ì¡°ê¸ˆë§Œ ì²œì²œížˆ!";
 	}
 
 	/// <summary>
@@ -241,76 +241,79 @@ internal class VotingPanelResources_ko_kr : VotingPanelResources_en_us, IVotingP
 	/// </summary>
 	public override string LabelGuestUserMessage(string loginOrRegisterPageLink)
 	{
-		return $"계속하려면 {loginOrRegisterPageLink}하세요.";
+		return $"ê³„ì†í•˜ë ¤ë©´ {loginOrRegisterPageLink}í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelGuestUserMessage()
 	{
-		return "계속하려면 {loginOrRegisterPageLink}하세요.";
+		return "ê³„ì†í•˜ë ¤ë©´ {loginOrRegisterPageLink}í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelGuestUserTitle()
 	{
-		return "로그인 및 투표";
+		return "ë¡œê·¸ì¸ ë° íˆ¬í‘œ";
 	}
 
 	protected override string _GetTemplateForLabelInstallPluginMessage()
 	{
-		return "투표하려면 먼저 본 플러그인을 사용해야 합니다.";
+		return "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ë³¸ í”ŒëŸ¬ê·¸ì¸ì„ ì‚¬ìš©í•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelInstallPluginTitle()
 	{
-		return "플러그인 설치";
+		return "í”ŒëŸ¬ê·¸ì¸ ì„¤ì¹˜";
 	}
 
 	protected override string _GetTemplateForLabelLogin()
 	{
-		return "로그인";
+		return "ë¡œê·¸ì¸";
 	}
 
 	protected override string _GetTemplateForLabelLoginOrRegisterPageTitle()
 	{
-		return "로그인 또는 가입";
+		return "ë¡œê·¸ì¸ ë˜ëŠ” ê°€ìž…";
 	}
 
 	protected override string _GetTemplateForLabelOk()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForLabelPlayGameMessage()
 	{
-		return "투표하려면 먼저 게임을 플레이해야 합니다.";
+		return "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ê²Œìž„ì„ í”Œë ˆì´í•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelPlayGameTitle()
 	{
-		return "게임 플레이";
+		return "ê²Œìž„ í”Œë ˆì´";
 	}
 
 	protected override string _GetTemplateForLabelUnknownProblemMessage()
 	{
-		return "투표 중 알 수 없는 오류가 발생했어요. 다시 시도하세요.";
+		return "íˆ¬í‘œ ì¤‘ ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelUnknownProblemTitle()
 	{
-		return "오류가 발생했어요";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForLabelUseModelMessage()
 	{
-		return "투표하려면 먼저 본 모델을 사용해야 합니다.";
+		return "íˆ¬í‘œí•˜ë ¤ë©´ ë¨¼ì € ë³¸ ëª¨ë¸ì„ ì‚¬ìš©í•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelUseModelTitle()
 	{
-		return "모델 사용";
+		return "ëª¨ë¸ ì‚¬ìš©";
 	}
 
 	protected override string _GetTemplateForLabelYouMustLoginToVote()
 	{
-		return "투표하려면 로그인하세요.";
+		return "íˆ¬í‘œí•˜ë ¤ë©´ ë¡œê·¸ì¸í•˜ì„¸ìš”.";
 	}
+}
+
+
 }

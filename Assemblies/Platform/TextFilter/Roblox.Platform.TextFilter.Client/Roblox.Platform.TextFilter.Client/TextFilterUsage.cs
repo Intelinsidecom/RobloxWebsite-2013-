@@ -1,10 +1,9 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+namespace Roblox.Platform.TextFilter.Client {
+    [DataContract(Name = "usageType")]
 
-namespace Roblox.TextFilter.Client;
-
-[DataContract(Name = "usageType")]
 [JsonConverter(typeof(StringEnumConverter))]
 public enum TextFilterUsage
 {
@@ -56,4 +55,7 @@ public enum TextFilterUsage
 	Other,
 	[EnumMember(Value = "unknown")]
 	Unknown
+}
+
+
 }

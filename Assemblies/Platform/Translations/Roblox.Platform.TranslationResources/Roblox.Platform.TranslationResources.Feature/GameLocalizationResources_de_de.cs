@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLocalizationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,14 +18,14 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// The label for the clear button
 	/// English String: "Clear"
 	/// </summary>
-	public override string ActionClear => "Löschen";
+	public override string ActionClear => "LÃ¶schen";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// The label for the confirm button
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "Bestätigen";
+	public override string ActionConfirm => "BestÃ¤tigen";
 
 	/// <summary>
 	/// Key: "Action.Save"
@@ -39,7 +39,7 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// The error text when user's input does not pass the backend text filter
 	/// English String: "Error: Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string DescriptionContentModerationError => "Fehler: Konnte nicht speichern. Bitte überprüfe den Inhalt auf Moderation und versuche es erneut.";
+	public override string DescriptionContentModerationError => "Fehler: Konnte nicht speichern. Bitte Ã¼berprÃ¼fe den Inhalt auf Moderation und versuche es erneut.";
 
 	/// <summary>
 	/// Key: "Description.GeneralError"
@@ -53,14 +53,14 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// The info shown to user when they are viewing the name and description in the source language
 	/// English String: "If no translations are provided, users will see the source language values."
 	/// </summary>
-	public override string DescriptionNonSourceLanguageForm => "Wenn keine Übersetzungen bereitgestellt werden, sehen Benutzer die Werte der Quellsprache.";
+	public override string DescriptionNonSourceLanguageForm => "Wenn keine Ãœbersetzungen bereitgestellt werden, sehen Benutzer die Werte der Quellsprache.";
 
 	/// <summary>
 	/// Key: "Description.Save"
 	/// The content for unsaved changes warning modal
 	/// English String: "You have unsaved changes. Are you sure you want to switch language?"
 	/// </summary>
-	public override string DescriptionSave => "Du hast nicht gespeicherte Änderungen. Möchtest du die Sprache wirklich wechseln?";
+	public override string DescriptionSave => "Du hast nicht gespeicherte Ã„nderungen. MÃ¶chtest du die Sprache wirklich wechseln?";
 
 	/// <summary>
 	/// Key: "Description.SaveSuccess"
@@ -74,14 +74,14 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// The info shown to user when they are viewing the name and description in the source language
 	/// English String: "Source language values are shown as a reference. They can only be viewed here."
 	/// </summary>
-	public override string DescriptionSourceLanguageForm => "Werte der Quellsprache werden als Referenz angezeigt. Sie können nur hier gesehen werden.";
+	public override string DescriptionSourceLanguageForm => "Werte der Quellsprache werden als Referenz angezeigt. Sie kÃ¶nnen nur hier gesehen werden.";
 
 	/// <summary>
 	/// Key: "Heading.Clear"
 	/// The modal title for clear confirmation modal
 	/// English String: "Clear Values"
 	/// </summary>
-	public override string HeadingClear => "Werte löschen";
+	public override string HeadingClear => "Werte lÃ¶schen";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureLocalization"
@@ -95,14 +95,14 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// The header for the game info section in localization page
 	/// English String: "Game Name and Description Translations"
 	/// </summary>
-	public override string HeadingGameNameDescriptionTranslations => "Spielname und Beschreibungsübersetzungen";
+	public override string HeadingGameNameDescriptionTranslations => "Spielname und BeschreibungsÃ¼bersetzungen";
 
 	/// <summary>
 	/// Key: "Heading.Save"
 	/// The content for unsaved changes warning modal
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingSave => "Nicht gespeicherte Änderungen";
+	public override string HeadingSave => "Nicht gespeicherte Ã„nderungen";
 
 	/// <summary>
 	/// Key: "Label.Description"
@@ -130,7 +130,7 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// The label for the game info tab in localization page
 	/// English String: "Game Name and Description Translations"
 	/// </summary>
-	public override string LabelGameNameDescriptionTranslations => "Spielname und Beschreibungsübersetzungen";
+	public override string LabelGameNameDescriptionTranslations => "Spielname und BeschreibungsÃ¼bersetzungen";
 
 	/// <summary>
 	/// Key: "Label.GameNamePlaceholder"
@@ -165,7 +165,7 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// The label for the supported languages sub tab in localization tab
 	/// English String: "Supported Languages"
 	/// </summary>
-	public override string LabelSupportedLanguages => "Unterstützte Sprachen";
+	public override string LabelSupportedLanguages => "UnterstÃ¼tzte Sprachen";
 
 	/// <summary>
 	/// Key: "Label.TabGameInfo"
@@ -195,7 +195,7 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// Key: "Label.TabTranslators"
 	/// English String: "Translators"
 	/// </summary>
-	public override string LabelTabTranslators => "Übersetzer";
+	public override string LabelTabTranslators => "Ãœbersetzer";
 
 	/// <summary>
 	/// Key: "Label.Title"
@@ -209,14 +209,14 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// The error text when user's input does not pass the backend text filter
 	/// English String: "Error: Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string ResponseContentModerationError => "Fehler: Konnte nicht speichern. Bitte überprüfe den Inhalt auf Moderation und versuche es erneut.";
+	public override string ResponseContentModerationError => "Fehler: Konnte nicht speichern. Bitte Ã¼berprÃ¼fe den Inhalt auf Moderation und versuche es erneut.";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "Fehler: Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
+	public override string ResponseGeneralError => "Fehler: Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Response.GeneralSaveError"
@@ -237,12 +237,12 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForActionClear()
 	{
-		return "Löschen";
+		return "LÃ¶schen";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "Bestätigen";
+		return "BestÃ¤tigen";
 	}
 
 	protected override string _GetTemplateForActionSave()
@@ -257,17 +257,17 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 	/// </summary>
 	public override string DescriptionClear(string languageName)
 	{
-		return $"Möchtest du die Übersetzungen für {languageName} wirklich löschen? Benutzer werden den Namen und die Beschreibung in der Quellsprache des Spiels sehen.";
+		return $"MÃ¶chtest du die Ãœbersetzungen fÃ¼r {languageName} wirklich lÃ¶schen? Benutzer werden den Namen und die Beschreibung in der Quellsprache des Spiels sehen.";
 	}
 
 	protected override string _GetTemplateForDescriptionClear()
 	{
-		return "Möchtest du die Übersetzungen für {languageName} wirklich löschen? Benutzer werden den Namen und die Beschreibung in der Quellsprache des Spiels sehen.";
+		return "MÃ¶chtest du die Ãœbersetzungen fÃ¼r {languageName} wirklich lÃ¶schen? Benutzer werden den Namen und die Beschreibung in der Quellsprache des Spiels sehen.";
 	}
 
 	protected override string _GetTemplateForDescriptionContentModerationError()
 	{
-		return "Fehler: Konnte nicht speichern. Bitte überprüfe den Inhalt auf Moderation und versuche es erneut.";
+		return "Fehler: Konnte nicht speichern. Bitte Ã¼berprÃ¼fe den Inhalt auf Moderation und versuche es erneut.";
 	}
 
 	protected override string _GetTemplateForDescriptionGeneralError()
@@ -277,12 +277,12 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForDescriptionNonSourceLanguageForm()
 	{
-		return "Wenn keine Übersetzungen bereitgestellt werden, sehen Benutzer die Werte der Quellsprache.";
+		return "Wenn keine Ãœbersetzungen bereitgestellt werden, sehen Benutzer die Werte der Quellsprache.";
 	}
 
 	protected override string _GetTemplateForDescriptionSave()
 	{
-		return "Du hast nicht gespeicherte Änderungen. Möchtest du die Sprache wirklich wechseln?";
+		return "Du hast nicht gespeicherte Ã„nderungen. MÃ¶chtest du die Sprache wirklich wechseln?";
 	}
 
 	protected override string _GetTemplateForDescriptionSaveSuccess()
@@ -292,12 +292,12 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForDescriptionSourceLanguageForm()
 	{
-		return "Werte der Quellsprache werden als Referenz angezeigt. Sie können nur hier gesehen werden.";
+		return "Werte der Quellsprache werden als Referenz angezeigt. Sie kÃ¶nnen nur hier gesehen werden.";
 	}
 
 	protected override string _GetTemplateForHeadingClear()
 	{
-		return "Werte löschen";
+		return "Werte lÃ¶schen";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureLocalization()
@@ -307,12 +307,12 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForHeadingGameNameDescriptionTranslations()
 	{
-		return "Spielname und Beschreibungsübersetzungen";
+		return "Spielname und BeschreibungsÃ¼bersetzungen";
 	}
 
 	protected override string _GetTemplateForHeadingSave()
 	{
-		return "Nicht gespeicherte Änderungen";
+		return "Nicht gespeicherte Ã„nderungen";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
@@ -332,7 +332,7 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForLabelGameNameDescriptionTranslations()
 	{
-		return "Spielname und Beschreibungsübersetzungen";
+		return "Spielname und BeschreibungsÃ¼bersetzungen";
 	}
 
 	protected override string _GetTemplateForLabelGameNamePlaceholder()
@@ -357,7 +357,7 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForLabelSupportedLanguages()
 	{
-		return "Unterstützte Sprachen";
+		return "UnterstÃ¼tzte Sprachen";
 	}
 
 	protected override string _GetTemplateForLabelTabGameInfo()
@@ -382,7 +382,7 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForLabelTabTranslators()
 	{
-		return "Übersetzer";
+		return "Ãœbersetzer";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
@@ -392,16 +392,19 @@ internal class GameLocalizationResources_de_de : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForResponseContentModerationError()
 	{
-		return "Fehler: Konnte nicht speichern. Bitte überprüfe den Inhalt auf Moderation und versuche es erneut.";
+		return "Fehler: Konnte nicht speichern. Bitte Ã¼berprÃ¼fe den Inhalt auf Moderation und versuche es erneut.";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "Fehler: Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
+		return "Fehler: Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForResponseGeneralSaveError()
 	{
 		return "Fehler: Konnte nicht speichern.";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Audit;
+﻿namespace Roblox.Localization.Auditinternal {
+    interface IAccountLocalesChangeAgentTypeEntityFactory
 
-internal interface IAccountLocalesChangeAgentTypeEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntity" /> by its ID.
@@ -22,4 +22,7 @@ internal interface IAccountLocalesChangeAgentTypeEntityFactory
 	/// <param name="value">The value of the change agent type.</param>
 	/// <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesChangeAgentTypeEntity" /> with the given value.</returns>
 	IAccountLocalesChangeAgentTypeEntity GetOrCreate(string value);
+}
+
+
 }

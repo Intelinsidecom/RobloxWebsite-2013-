@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class GrantedItemListActivationTaskCachedMssqlEntity : IGrantedItemListActivationTaskEntity, IUpdateableEntity<long>, IEntity<long>
 {
 	public long Id { get; set; }
@@ -43,4 +42,7 @@ internal class GrantedItemListActivationTaskCachedMssqlEntity : IGrantedItemList
 	{
 		(GrantedItemListActivationTaskEntity.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

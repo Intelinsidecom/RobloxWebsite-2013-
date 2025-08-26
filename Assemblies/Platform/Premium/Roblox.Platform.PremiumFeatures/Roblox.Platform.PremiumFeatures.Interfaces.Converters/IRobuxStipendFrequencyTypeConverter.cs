@@ -1,8 +1,7 @@
-using Roblox.PremiumFeatures.Enums;
+﻿using Roblox.PremiumFeatures.Enums;
+namespace Roblox.Platform.PremiumFeatures.Interfaces.Converters {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Interfaces.Converters;
-
-/// <summary>
 /// Provides a common interface for an object that can convert a <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType" /> into an ID.
 /// </summary>
 public interface IRobuxStipendFrequencyTypeConverter
@@ -20,4 +19,7 @@ public interface IRobuxStipendFrequencyTypeConverter
 	/// <param name="id">The ID of the <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType" /> to get.</param>
 	/// <returns>The <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType" /> for the given ID, or null if no <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType" /> is associated with the given ID.</returns>
 	RobuxStipendFrequencyType? GetTypeById(byte id);
+}
+
+
 }

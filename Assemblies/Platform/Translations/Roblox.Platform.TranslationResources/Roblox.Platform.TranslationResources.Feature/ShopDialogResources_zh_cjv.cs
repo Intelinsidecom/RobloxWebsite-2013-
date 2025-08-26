@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ShopDialogResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,46 +11,46 @@ internal class ShopDialogResources_zh_cjv : ShopDialogResources_en_us, IShopDial
 	/// button text
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Continue"
 	/// English String: "Continue"
 	/// </summary>
-	public override string ActionContinue => "继续";
+	public override string ActionContinue => "ç»§ç»­";
 
 	/// <summary>
 	/// Key: "Action.ContinueToShop"
 	/// button text
 	/// English String: "Continue to Shop"
 	/// </summary>
-	public override string ActionContinueToShop => "继续购物";
+	public override string ActionContinueToShop => "ç»§ç»­è´­ç‰©";
 
 	/// <summary>
 	/// Key: "Description.AgeWarning"
 	/// age warning message
 	/// English String: "Please note that you need to be over 18 to purchase products online. The Amazon store is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionAgeWarning => "请注意，你必须年满 18 岁才能在线购买产品。Amazon 商店不属于 Roblox.com，受单独隐私政策的监管。";
+	public override string DescriptionAgeWarning => "è¯·æ³¨æ„ï¼Œä½ å¿…é¡»å¹´æ»¡ 18 å²æ‰èƒ½åœ¨çº¿è´­ä¹°äº§å“ã€‚Amazon å•†åº—ä¸å±žäºŽ Roblox.comï¼Œå—å•ç‹¬éšç§æ”¿ç­–çš„ç›‘ç®¡ã€‚";
 
 	/// <summary>
 	/// Key: "Description.PurchaseAgeWarning"
 	/// English String: "Please note that you need to be over 18 to purchase products online. We hope to see you again soon!"
 	/// </summary>
-	public override string DescriptionPurchaseAgeWarning => "你必须年满 18 岁才能在网络上购买商品。";
+	public override string DescriptionPurchaseAgeWarning => "ä½ å¿…é¡»å¹´æ»¡ 18 å²æ‰èƒ½åœ¨ç½‘ç»œä¸Šè´­ä¹°å•†å“ã€‚";
 
 	/// <summary>
 	/// Key: "Description.RetailWebsiteRedirect"
-	/// English String: "Heads up, Robloxian – by clicking “continue,” you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
+	/// English String: "Heads up, Robloxian â€“ by clicking â€œcontinue,â€ you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
 	/// </summary>
-	public override string DescriptionRetailWebsiteRedirect => "请注意，如果点按“继续”，你将会重新导向至并非由 Roblox 运营并操作的零售网站，该网站可能受不同的条款及隐私政策约束。";
+	public override string DescriptionRetailWebsiteRedirect => "è¯·æ³¨æ„ï¼Œå¦‚æžœç‚¹æŒ‰â€œç»§ç»­â€ï¼Œä½ å°†ä¼šé‡æ–°å¯¼å‘è‡³å¹¶éžç”± Roblox è¿è¥å¹¶æ“ä½œçš„é›¶å”®ç½‘ç«™ï¼Œè¯¥ç½‘ç«™å¯èƒ½å—ä¸åŒçš„æ¡æ¬¾åŠéšç§æ”¿ç­–çº¦æŸã€‚";
 
 	/// <summary>
 	/// Key: "Heading.LeavingRoblox"
 	/// dialog heading
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingLeavingRoblox => "你即将离开 Roblox";
+	public override string HeadingLeavingRoblox => "ä½ å³å°†ç¦»å¼€ Roblox";
 
 	public ShopDialogResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -59,22 +59,22 @@ internal class ShopDialogResources_zh_cjv : ShopDialogResources_en_us, IShopDial
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionContinue()
 	{
-		return "继续";
+		return "ç»§ç»­";
 	}
 
 	protected override string _GetTemplateForActionContinueToShop()
 	{
-		return "继续购物";
+		return "ç»§ç»­è´­ç‰©";
 	}
 
 	protected override string _GetTemplateForDescriptionAgeWarning()
 	{
-		return "请注意，你必须年满 18 岁才能在线购买产品。Amazon 商店不属于 Roblox.com，受单独隐私政策的监管。";
+		return "è¯·æ³¨æ„ï¼Œä½ å¿…é¡»å¹´æ»¡ 18 å²æ‰èƒ½åœ¨çº¿è´­ä¹°äº§å“ã€‚Amazon å•†åº—ä¸å±žäºŽ Roblox.comï¼Œå—å•ç‹¬éšç§æ”¿ç­–çš„ç›‘ç®¡ã€‚";
 	}
 
 	/// <summary>
@@ -84,26 +84,29 @@ internal class ShopDialogResources_zh_cjv : ShopDialogResources_en_us, IShopDial
 	/// </summary>
 	public override string DescriptionAmazonRedirect(string shopLink)
 	{
-		return $"你即将访问我们的 Amazon 商店。你将会重新导向至位于 {shopLink} 的 Roblox 周边商店。";
+		return $"ä½ å³å°†è®¿é—®æˆ‘ä»¬çš„ Amazon å•†åº—ã€‚ä½ å°†ä¼šé‡æ–°å¯¼å‘è‡³ä½äºŽ {shopLink} çš„ Roblox å‘¨è¾¹å•†åº—ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAmazonRedirect()
 	{
-		return "你即将访问我们的 Amazon 商店。你将会重新导向至位于 {shopLink} 的 Roblox 周边商店。";
+		return "ä½ å³å°†è®¿é—®æˆ‘ä»¬çš„ Amazon å•†åº—ã€‚ä½ å°†ä¼šé‡æ–°å¯¼å‘è‡³ä½äºŽ {shopLink} çš„ Roblox å‘¨è¾¹å•†åº—ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionPurchaseAgeWarning()
 	{
-		return "你必须年满 18 岁才能在网络上购买商品。";
+		return "ä½ å¿…é¡»å¹´æ»¡ 18 å²æ‰èƒ½åœ¨ç½‘ç»œä¸Šè´­ä¹°å•†å“ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionRetailWebsiteRedirect()
 	{
-		return "请注意，如果点按“继续”，你将会重新导向至并非由 Roblox 运营并操作的零售网站，该网站可能受不同的条款及隐私政策约束。";
+		return "è¯·æ³¨æ„ï¼Œå¦‚æžœç‚¹æŒ‰â€œç»§ç»­â€ï¼Œä½ å°†ä¼šé‡æ–°å¯¼å‘è‡³å¹¶éžç”± Roblox è¿è¥å¹¶æ“ä½œçš„é›¶å”®ç½‘ç«™ï¼Œè¯¥ç½‘ç«™å¯èƒ½å—ä¸åŒçš„æ¡æ¬¾åŠéšç§æ”¿ç­–çº¦æŸã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingLeavingRoblox()
 	{
-		return "你即将离开 Roblox";
+		return "ä½ å³å°†ç¦»å¼€ Roblox";
 	}
+}
+
+
 }

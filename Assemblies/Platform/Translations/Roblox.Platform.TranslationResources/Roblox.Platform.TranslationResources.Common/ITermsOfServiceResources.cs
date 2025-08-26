@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface ITermsOfServiceResources : ITranslationResources
 
-public interface ITermsOfServiceResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Heading.TosAgreementTitle"
@@ -37,4 +37,7 @@ public interface ITermsOfServiceResources : ITranslationResources
 	/// English String: "By clicking \"I Agree\", you are agreeing to the {tosLinkStart}Roblox Terms of Use{tosLinkEnd}. This includes the license to Roblox of past and future content you provide to the service for our use online, offline, and in tangible items. You can learn more about what is changing {legalChangesLinkStart}here{legalChangesLinkEnd}."
 	/// </summary>
 	string MessageTosAgreementBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,308 +10,308 @@ internal class FeaturesResources_zh_cn : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Action.BackToTop"
 	/// English String: "Back To Top"
 	/// </summary>
-	public override string ActionBackToTop => "返回顶部";
+	public override string ActionBackToTop => "è¿”å›žé¡¶éƒ¨";
 
 	/// <summary>
 	/// Key: "Action.BuyAccess"
 	/// Purchase access to the place button
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "购买访问权限";
+	public override string ActionBuyAccess => "è´­ä¹°è®¿é—®æƒé™";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// English String: "Ok"
 	/// </summary>
-	public override string ActionOk => "好";
+	public override string ActionOk => "å¥½";
 
 	/// <summary>
 	/// Key: "Action.sUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionsUpgradeNow => "立即升级";
+	public override string ActionsUpgradeNow => "ç«‹å³å‡çº§";
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation。Roblox、Roblox 标志、Robux、Bloxy 及 Powering Imagination 是我们在美国及其他国家或地区的部分注册与未注册商标。";
+	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporationã€‚Robloxã€Roblox æ ‡å¿—ã€Robuxã€Bloxy åŠ Powering Imagination æ˜¯æˆ‘ä»¬åœ¨ç¾Žå›½åŠå…¶ä»–å›½å®¶æˆ–åœ°åŒºçš„éƒ¨åˆ†æ³¨å†Œä¸Žæœªæ³¨å†Œå•†æ ‡ã€‚";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
 	/// English String: "While some games may use the selected language, it is not fully supported by roblox.com."
 	/// </summary>
-	public override string DescriptionUnsupportedLanguage => "有些游戏可能会使用已选择的语言，但 roblox.com 并未完全支持该语言。";
+	public override string DescriptionUnsupportedLanguage => "æœ‰äº›æ¸¸æˆå¯èƒ½ä¼šä½¿ç”¨å·²é€‰æ‹©çš„è¯­è¨€ï¼Œä½† roblox.com å¹¶æœªå®Œå…¨æ”¯æŒè¯¥è¯­è¨€ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// Purchase access to the place
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "购买物品";
+	public override string HeadingBuyItem => "è´­ä¹°ç‰©å“";
 
 	/// <summary>
 	/// Key: "Heading.UnsupportedLanguage"
 	/// English String: "Unsupported Language"
 	/// </summary>
-	public override string HeadingUnsupportedLanguage => "未支持的语言";
+	public override string HeadingUnsupportedLanguage => "æœªæ”¯æŒçš„è¯­è¨€";
 
 	/// <summary>
 	/// Key: "Label.AboutUs"
 	/// English String: "About Us"
 	/// </summary>
-	public override string LabelAboutUs => "关于我们";
+	public override string LabelAboutUs => "å…³äºŽæˆ‘ä»¬";
 
 	/// <summary>
 	/// Key: "Label.AuthenticationError"
 	/// page title
 	/// English String: "Authentication Error"
 	/// </summary>
-	public override string LabelAuthenticationError => "身份验证错误";
+	public override string LabelAuthenticationError => "èº«ä»½éªŒè¯é”™è¯¯";
 
 	/// <summary>
 	/// Key: "Label.Badges"
 	/// page title
 	/// English String: "Badges"
 	/// </summary>
-	public override string LabelBadges => "徽章";
+	public override string LabelBadges => "å¾½ç« ";
 
 	/// <summary>
 	/// Key: "Label.Careers"
 	/// English String: "Careers"
 	/// </summary>
-	public override string LabelCareers => "职位";
+	public override string LabelCareers => "èŒä½";
 
 	/// <summary>
 	/// Key: "Label.Configure"
 	/// Configure
 	/// English String: "Configure"
 	/// </summary>
-	public override string LabelConfigure => "配置";
+	public override string LabelConfigure => "é…ç½®";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGame"
 	/// configure game page title
 	/// English String: "Configure Game"
 	/// </summary>
-	public override string LabelConfigureGame => "配置游戏";
+	public override string LabelConfigureGame => "é…ç½®æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePlace"
 	/// Configure Place
 	/// English String: "Configure Place"
 	/// </summary>
-	public override string LabelConfigurePlace => "配置场景";
+	public override string LabelConfigurePlace => "é…ç½®åœºæ™¯";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePrivateServer"
 	/// page title
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string LabelConfigurePrivateServer => "配置 VIP 服务器";
+	public override string LabelConfigurePrivateServer => "é…ç½® VIP æœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "Label.ContactUs"
 	/// page title
 	/// English String: "Contact Us"
 	/// </summary>
-	public override string LabelContactUs => "联系我们";
+	public override string LabelContactUs => "è”ç³»æˆ‘ä»¬";
 
 	/// <summary>
 	/// Key: "Label.Create"
 	/// Alternate name for the "Develop" section of the website
 	/// English String: "Create"
 	/// </summary>
-	public override string LabelCreate => "创作";
+	public override string LabelCreate => "åˆ›ä½œ";
 
 	/// <summary>
 	/// Key: "Label.CreateGame"
 	/// Create Game
 	/// English String: "Create Game"
 	/// </summary>
-	public override string LabelCreateGame => "创建游戏";
+	public override string LabelCreateGame => "åˆ›å»ºæ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.CreateGroup"
 	/// Create Group
 	/// English String: "Create Group"
 	/// </summary>
-	public override string LabelCreateGroup => "创建群组";
+	public override string LabelCreateGroup => "åˆ›å»ºç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Label.Discover"
 	/// English String: "Discover"
 	/// </summary>
-	public override string LabelDiscover => "探索";
+	public override string LabelDiscover => "æŽ¢ç´¢";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// Favorites
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "最爱";
+	public override string LabelFavorites => "æœ€çˆ±";
 
 	/// <summary>
 	/// Key: "Label.Feeds"
 	/// English String: "My Feed"
 	/// </summary>
-	public override string LabelFeeds => "我的推送";
+	public override string LabelFeeds => "æˆ‘çš„æŽ¨é€";
 
 	/// <summary>
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now in side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "在找“我的推送”？它现在移到了侧边菜单";
+	public override string LabelFindMyFeed => "åœ¨æ‰¾â€œæˆ‘çš„æŽ¨é€â€ï¼Ÿå®ƒçŽ°åœ¨ç§»åˆ°äº†ä¾§è¾¹èœå•";
 
 	/// <summary>
 	/// Key: "Label.Help"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelHelp => "帮助";
+	public override string LabelHelp => "å¸®åŠ©";
 
 	/// <summary>
 	/// Key: "Label.Jobs"
 	/// jobs link in footer
 	/// English String: "Jobs"
 	/// </summary>
-	public override string LabelJobs => "工作机会";
+	public override string LabelJobs => "å·¥ä½œæœºä¼š";
 
 	/// <summary>
 	/// Key: "Label.Library"
 	/// search context for inventory search
 	/// English String: "Library"
 	/// </summary>
-	public override string LabelLibrary => "档案库";
+	public override string LabelLibrary => "æ¡£æ¡ˆåº“";
 
 	/// <summary>
 	/// Key: "Label.Merch"
 	/// English String: "Merchandise"
 	/// </summary>
-	public override string LabelMerch => "商品";
+	public override string LabelMerch => "å•†å“";
 
 	/// <summary>
 	/// Key: "Label.Parents"
 	/// English String: "Parents"
 	/// </summary>
-	public override string LabelParents => "家长";
+	public override string LabelParents => "å®¶é•¿";
 
 	/// <summary>
 	/// Key: "Label.PlaceStatistics"
 	/// page title
 	/// English String: "Place Statistics"
 	/// </summary>
-	public override string LabelPlaceStatistics => "场景统计资料";
+	public override string LabelPlaceStatistics => "åœºæ™¯ç»Ÿè®¡èµ„æ–™";
 
 	/// <summary>
 	/// Key: "Label.Players"
 	/// search context for user search
 	/// English String: "Players"
 	/// </summary>
-	public override string LabelPlayers => "玩家";
+	public override string LabelPlayers => "çŽ©å®¶";
 
 	/// <summary>
 	/// Key: "Label.Privacy"
 	/// English String: "Privacy"
 	/// </summary>
-	public override string LabelPrivacy => "隐私";
+	public override string LabelPrivacy => "éšç§";
 
 	/// <summary>
 	/// Key: "Label.RedeemRobloxCards"
 	/// page title
 	/// English String: "Redeem Roblox Cards"
 	/// </summary>
-	public override string LabelRedeemRobloxCards => "兑换 Roblox 卡";
+	public override string LabelRedeemRobloxCards => "å…‘æ¢ Roblox å¡";
 
 	/// <summary>
 	/// Key: "Label.sAvatar"
 	/// English String: "Avatar"
 	/// </summary>
-	public override string LabelsAvatar => "虚拟形象";
+	public override string LabelsAvatar => "è™šæ‹Ÿå½¢è±¡";
 
 	/// <summary>
 	/// Key: "Label.sBlog"
 	/// English String: "Blog"
 	/// </summary>
-	public override string LabelsBlog => "博客";
+	public override string LabelsBlog => "åšå®¢";
 
 	/// <summary>
 	/// Key: "Label.sCatalog"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string LabelsCatalog => "商店";
+	public override string LabelsCatalog => "å•†åº—";
 
 	/// <summary>
 	/// Key: "Label.sDevelop"
 	/// English String: "Develop"
 	/// </summary>
-	public override string LabelsDevelop => "开发";
+	public override string LabelsDevelop => "å¼€å‘";
 
 	/// <summary>
 	/// Key: "Label.sEvents"
 	/// English String: "Events"
 	/// </summary>
-	public override string LabelsEvents => "活动";
+	public override string LabelsEvents => "æ´»åŠ¨";
 
 	/// <summary>
 	/// Key: "Label.sForum"
 	/// English String: "Forum"
 	/// </summary>
-	public override string LabelsForum => "论坛";
+	public override string LabelsForum => "è®ºå›";
 
 	/// <summary>
 	/// Key: "Label.sFriends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelsFriends => "好友";
+	public override string LabelsFriends => "å¥½å‹";
 
 	/// <summary>
 	/// Key: "Label.sGames"
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelsGames => "游戏";
+	public override string LabelsGames => "æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.sGroups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string LabelsGroups => "群组";
+	public override string LabelsGroups => "ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Label.sHome"
 	/// English String: "Home"
 	/// </summary>
-	public override string LabelsHome => "首页";
+	public override string LabelsHome => "é¦–é¡µ";
 
 	/// <summary>
 	/// Key: "Label.sInventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string LabelsInventory => "道具";
+	public override string LabelsInventory => "é“å…·";
 
 	/// <summary>
 	/// Key: "Label.sLogin"
 	/// English String: "Log In"
 	/// </summary>
-	public override string LabelsLogin => "登录";
+	public override string LabelsLogin => "ç™»å½•";
 
 	/// <summary>
 	/// Key: "Label.sMessages"
 	/// English String: "Messages"
 	/// </summary>
-	public override string LabelsMessages => "信息";
+	public override string LabelsMessages => "ä¿¡æ¯";
 
 	/// <summary>
 	/// Key: "Label.sProfile"
 	/// English String: "Profile"
 	/// </summary>
-	public override string LabelsProfile => "个人资料";
+	public override string LabelsProfile => "ä¸ªäººèµ„æ–™";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -323,65 +323,65 @@ internal class FeaturesResources_zh_cn : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sSearch"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelsSearch => "搜索";
+	public override string LabelsSearch => "æœç´¢";
 
 	/// <summary>
 	/// Key: "Label.sShop"
 	/// English String: "Shop"
 	/// </summary>
-	public override string LabelsShop => "周边";
+	public override string LabelsShop => "å‘¨è¾¹";
 
 	/// <summary>
 	/// Key: "Label.sSignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string LabelsSignUp => "注册";
+	public override string LabelsSignUp => "æ³¨å†Œ";
 
 	/// <summary>
 	/// Key: "Label.Store"
 	/// English String: "Store"
 	/// </summary>
-	public override string LabelStore => "商店";
+	public override string LabelStore => "å•†åº—";
 
 	/// <summary>
 	/// Key: "Label.sTrade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string LabelsTrade => "交易";
+	public override string LabelsTrade => "äº¤æ˜“";
 
 	/// <summary>
 	/// Key: "Label.Support"
 	/// page title
 	/// English String: "Support"
 	/// </summary>
-	public override string LabelSupport => "支持";
+	public override string LabelSupport => "æ”¯æŒ";
 
 	/// <summary>
 	/// Key: "Label.Terms"
 	/// English String: "Terms"
 	/// </summary>
-	public override string LabelTerms => "条款";
+	public override string LabelTerms => "æ¡æ¬¾";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "使用条款";
+	public override string LabelTermsOfUse => "ä½¿ç”¨æ¡æ¬¾";
 
 	/// <summary>
 	/// Key: "Label.Thanks"
 	/// page title
 	/// English String: "Thanks"
 	/// </summary>
-	public override string LabelThanks => "谢谢";
+	public override string LabelThanks => "è°¢è°¢";
 
 	/// <summary>
 	/// Key: "Label.Upgrade"
 	/// Upgrade
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string LabelUpgrade => "升级";
+	public override string LabelUpgrade => "å‡çº§";
 
 	public FeaturesResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -390,27 +390,27 @@ internal class FeaturesResources_zh_cn : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForActionBackToTop()
 	{
-		return "返回顶部";
+		return "è¿”å›žé¡¶éƒ¨";
 	}
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "购买访问权限";
+		return "è´­ä¹°è®¿é—®æƒé™";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "好";
+		return "å¥½";
 	}
 
 	protected override string _GetTemplateForActionsUpgradeNow()
 	{
-		return "立即升级";
+		return "ç«‹å³å‡çº§";
 	}
 
 	/// <summary>
@@ -419,37 +419,37 @@ internal class FeaturesResources_zh_cn : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string BuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"你是否要以 {robux} 的价格向”{creatorName}“购买场景“{placeName}”的通行证？";
+		return $"ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€{creatorName}â€œè´­ä¹°åœºæ™¯â€œ{placeName}â€çš„é€šè¡Œè¯ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForBuyAccessToGameForModal()
 	{
-		return "你是否要以 {robux} 的价格向”{creatorName}“购买场景“{placeName}”的通行证？";
+		return "ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€{creatorName}â€œè´­ä¹°åœºæ™¯â€œ{placeName}â€çš„é€šè¡Œè¯ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "©2018 Roblox Corporation。Roblox、Roblox 标志、Robux、Bloxy 及 Powering Imagination 是我们在美国及其他国家或地区的部分注册与未注册商标。";
+		return "Â©2018 Roblox Corporationã€‚Robloxã€Roblox æ ‡å¿—ã€Robuxã€Bloxy åŠ Powering Imagination æ˜¯æˆ‘ä»¬åœ¨ç¾Žå›½åŠå…¶ä»–å›½å®¶æˆ–åœ°åŒºçš„éƒ¨åˆ†æ³¨å†Œä¸Žæœªæ³¨å†Œå•†æ ‡ã€‚";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"©{copyrightYear} Roblox Corporation。Roblox、Roblox 标志、Robux、Bloxy 及 Powering Imagination 是我们在美国及其他国家或地区的部分注册与未注册商标。";
+		return $"Â©{copyrightYear} Roblox Corporationã€‚Robloxã€Roblox æ ‡å¿—ã€Robuxã€Bloxy åŠ Powering Imagination æ˜¯æˆ‘ä»¬åœ¨ç¾Žå›½åŠå…¶ä»–å›½å®¶æˆ–åœ°åŒºçš„éƒ¨åˆ†æ³¨å†Œä¸Žæœªæ³¨å†Œå•†æ ‡ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "©{copyrightYear} Roblox Corporation。Roblox、Roblox 标志、Robux、Bloxy 及 Powering Imagination 是我们在美国及其他国家或地区的部分注册与未注册商标。";
+		return "Â©{copyrightYear} Roblox Corporationã€‚Robloxã€Roblox æ ‡å¿—ã€Robuxã€Bloxy åŠ Powering Imagination æ˜¯æˆ‘ä»¬åœ¨ç¾Žå›½åŠå…¶ä»–å›½å®¶æˆ–åœ°åŒºçš„éƒ¨åˆ†æ³¨å†Œä¸Žæœªæ³¨å†Œå•†æ ‡ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
 	{
-		return "有些游戏可能会使用已选择的语言，但 roblox.com 并未完全支持该语言。";
+		return "æœ‰äº›æ¸¸æˆå¯èƒ½ä¼šä½¿ç”¨å·²é€‰æ‹©çš„è¯­è¨€ï¼Œä½† roblox.com å¹¶æœªå®Œå…¨æ”¯æŒè¯¥è¯­è¨€ã€‚";
 	}
 
 	/// <summary>
@@ -458,217 +458,217 @@ internal class FeaturesResources_zh_cn : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string DescriptionUnsupportedLanguageModal(string userLanguage, string platformLanguage)
 	{
-		return $"roblox.com 目前不支持“{userLanguage}”。游戏内容将以“{platformLanguage}”显示，roblox.com 将以“英文”显示。";
+		return $"roblox.com ç›®å‰ä¸æ”¯æŒâ€œ{userLanguage}â€ã€‚æ¸¸æˆå†…å®¹å°†ä»¥â€œ{platformLanguage}â€æ˜¾ç¤ºï¼Œroblox.com å°†ä»¥â€œè‹±æ–‡â€æ˜¾ç¤ºã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguageModal()
 	{
-		return "roblox.com 目前不支持“{userLanguage}”。游戏内容将以“{platformLanguage}”显示，roblox.com 将以“英文”显示。";
+		return "roblox.com ç›®å‰ä¸æ”¯æŒâ€œ{userLanguage}â€ã€‚æ¸¸æˆå†…å®¹å°†ä»¥â€œ{platformLanguage}â€æ˜¾ç¤ºï¼Œroblox.com å°†ä»¥â€œè‹±æ–‡â€æ˜¾ç¤ºã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "购买物品";
+		return "è´­ä¹°ç‰©å“";
 	}
 
 	protected override string _GetTemplateForHeadingUnsupportedLanguage()
 	{
-		return "未支持的语言";
+		return "æœªæ”¯æŒçš„è¯­è¨€";
 	}
 
 	protected override string _GetTemplateForLabelAboutUs()
 	{
-		return "关于我们";
+		return "å…³äºŽæˆ‘ä»¬";
 	}
 
 	protected override string _GetTemplateForLabelAuthenticationError()
 	{
-		return "身份验证错误";
+		return "èº«ä»½éªŒè¯é”™è¯¯";
 	}
 
 	protected override string _GetTemplateForLabelBadges()
 	{
-		return "徽章";
+		return "å¾½ç« ";
 	}
 
 	protected override string _GetTemplateForLabelCareers()
 	{
-		return "职位";
+		return "èŒä½";
 	}
 
 	protected override string _GetTemplateForLabelConfigure()
 	{
-		return "配置";
+		return "é…ç½®";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGame()
 	{
-		return "配置游戏";
+		return "é…ç½®æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePlace()
 	{
-		return "配置场景";
+		return "é…ç½®åœºæ™¯";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePrivateServer()
 	{
-		return "配置 VIP 服务器";
+		return "é…ç½® VIP æœåŠ¡å™¨";
 	}
 
 	protected override string _GetTemplateForLabelContactUs()
 	{
-		return "联系我们";
+		return "è”ç³»æˆ‘ä»¬";
 	}
 
 	protected override string _GetTemplateForLabelCreate()
 	{
-		return "创作";
+		return "åˆ›ä½œ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGame()
 	{
-		return "创建游戏";
+		return "åˆ›å»ºæ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroup()
 	{
-		return "创建群组";
+		return "åˆ›å»ºç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelDiscover()
 	{
-		return "探索";
+		return "æŽ¢ç´¢";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "最爱";
+		return "æœ€çˆ±";
 	}
 
 	protected override string _GetTemplateForLabelFeeds()
 	{
-		return "我的推送";
+		return "æˆ‘çš„æŽ¨é€";
 	}
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "在找“我的推送”？它现在移到了侧边菜单";
+		return "åœ¨æ‰¾â€œæˆ‘çš„æŽ¨é€â€ï¼Ÿå®ƒçŽ°åœ¨ç§»åˆ°äº†ä¾§è¾¹èœå•";
 	}
 
 	protected override string _GetTemplateForLabelHelp()
 	{
-		return "帮助";
+		return "å¸®åŠ©";
 	}
 
 	protected override string _GetTemplateForLabelJobs()
 	{
-		return "工作机会";
+		return "å·¥ä½œæœºä¼š";
 	}
 
 	protected override string _GetTemplateForLabelLibrary()
 	{
-		return "档案库";
+		return "æ¡£æ¡ˆåº“";
 	}
 
 	protected override string _GetTemplateForLabelMerch()
 	{
-		return "商品";
+		return "å•†å“";
 	}
 
 	protected override string _GetTemplateForLabelParents()
 	{
-		return "家长";
+		return "å®¶é•¿";
 	}
 
 	protected override string _GetTemplateForLabelPlaceStatistics()
 	{
-		return "场景统计资料";
+		return "åœºæ™¯ç»Ÿè®¡èµ„æ–™";
 	}
 
 	protected override string _GetTemplateForLabelPlayers()
 	{
-		return "玩家";
+		return "çŽ©å®¶";
 	}
 
 	protected override string _GetTemplateForLabelPrivacy()
 	{
-		return "隐私";
+		return "éšç§";
 	}
 
 	protected override string _GetTemplateForLabelRedeemRobloxCards()
 	{
-		return "兑换 Roblox 卡";
+		return "å…‘æ¢ Roblox å¡";
 	}
 
 	protected override string _GetTemplateForLabelsAvatar()
 	{
-		return "虚拟形象";
+		return "è™šæ‹Ÿå½¢è±¡";
 	}
 
 	protected override string _GetTemplateForLabelsBlog()
 	{
-		return "博客";
+		return "åšå®¢";
 	}
 
 	protected override string _GetTemplateForLabelsCatalog()
 	{
-		return "商店";
+		return "å•†åº—";
 	}
 
 	protected override string _GetTemplateForLabelsDevelop()
 	{
-		return "开发";
+		return "å¼€å‘";
 	}
 
 	protected override string _GetTemplateForLabelsEvents()
 	{
-		return "活动";
+		return "æ´»åŠ¨";
 	}
 
 	protected override string _GetTemplateForLabelsForum()
 	{
-		return "论坛";
+		return "è®ºå›";
 	}
 
 	protected override string _GetTemplateForLabelsFriends()
 	{
-		return "好友";
+		return "å¥½å‹";
 	}
 
 	protected override string _GetTemplateForLabelsGames()
 	{
-		return "游戏";
+		return "æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelsGroups()
 	{
-		return "群组";
+		return "ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelsHome()
 	{
-		return "首页";
+		return "é¦–é¡µ";
 	}
 
 	protected override string _GetTemplateForLabelsInventory()
 	{
-		return "道具";
+		return "é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelsLogin()
 	{
-		return "登录";
+		return "ç™»å½•";
 	}
 
 	protected override string _GetTemplateForLabelsMessages()
 	{
-		return "信息";
+		return "ä¿¡æ¯";
 	}
 
 	protected override string _GetTemplateForLabelsProfile()
 	{
-		return "个人资料";
+		return "ä¸ªäººèµ„æ–™";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -678,7 +678,7 @@ internal class FeaturesResources_zh_cn : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsSearch()
 	{
-		return "搜索";
+		return "æœç´¢";
 	}
 
 	/// <summary>
@@ -687,56 +687,59 @@ internal class FeaturesResources_zh_cn : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string LabelsSearchPhrase(string phrase, string location)
 	{
-		return $"在{location}中搜索“{phrase}”";
+		return $"åœ¨{location}ä¸­æœç´¢â€œ{phrase}â€";
 	}
 
 	protected override string _GetTemplateForLabelsSearchPhrase()
 	{
-		return "在{location}中搜索“{phrase}”";
+		return "åœ¨{location}ä¸­æœç´¢â€œ{phrase}â€";
 	}
 
 	protected override string _GetTemplateForLabelsShop()
 	{
-		return "周边";
+		return "å‘¨è¾¹";
 	}
 
 	protected override string _GetTemplateForLabelsSignUp()
 	{
-		return "注册";
+		return "æ³¨å†Œ";
 	}
 
 	protected override string _GetTemplateForLabelStore()
 	{
-		return "商店";
+		return "å•†åº—";
 	}
 
 	protected override string _GetTemplateForLabelsTrade()
 	{
-		return "交易";
+		return "äº¤æ˜“";
 	}
 
 	protected override string _GetTemplateForLabelSupport()
 	{
-		return "支持";
+		return "æ”¯æŒ";
 	}
 
 	protected override string _GetTemplateForLabelTerms()
 	{
-		return "条款";
+		return "æ¡æ¬¾";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "使用条款";
+		return "ä½¿ç”¨æ¡æ¬¾";
 	}
 
 	protected override string _GetTemplateForLabelThanks()
 	{
-		return "谢谢";
+		return "è°¢è°¢";
 	}
 
 	protected override string _GetTemplateForLabelUpgrade()
 	{
-		return "升级";
+		return "å‡çº§";
 	}
+}
+
+
 }

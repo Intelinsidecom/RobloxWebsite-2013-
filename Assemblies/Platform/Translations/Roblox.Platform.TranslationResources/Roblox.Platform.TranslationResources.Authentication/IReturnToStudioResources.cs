@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface IReturnToStudioResources : ITranslationResources
 
-public interface IReturnToStudioResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Logout"
@@ -48,4 +48,7 @@ public interface IReturnToStudioResources : ITranslationResources
 	/// English String: "Hello, {username}!"
 	/// </summary>
 	string HeadingGreeting(string username);
+}
+
+
 }

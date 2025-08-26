@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class LoginAttemptedEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class LoginAttemptedEvent : WebEventBase
 {
 	private const string _Name = "loginAttempted";
 
@@ -31,3 +31,12 @@ public class LoginAttemptedEvent : WebEventBase
 		AddEventArg("lt", loginAttemptedEventArgs.EventTime.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

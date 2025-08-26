@@ -1,10 +1,12 @@
-using Roblox.FloodCheckers.Core;
+﻿using Roblox.FloodCheckers.Core;
+namespace Roblox.Localization.Accountsinternal {
+    interface IAccountLocaleFloodCheckerFactory
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal interface IAccountLocaleFloodCheckerFactory
 {
 	IFloodChecker GetSupportedLocaleUpdateFloodChecker(long accountId);
 
 	IFloodChecker GetObservedLocaleUpdateFloodChecker(long accountId);
+}
+
+
 }

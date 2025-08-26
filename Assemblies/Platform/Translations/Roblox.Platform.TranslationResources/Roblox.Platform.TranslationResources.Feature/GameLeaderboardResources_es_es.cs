@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLeaderboardResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -52,13 +52,13 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 	/// Key: "Label.GoGetPoints"
 	/// English String: "You are not yet ranked for this time period. Go earn some Points!"
 	/// </summary>
-	public override string LabelGoGetPoints => "Todavía no te has clasificado en este período de tiempo. ¡Ve a ganar puntos!";
+	public override string LabelGoGetPoints => "TodavÃ­a no te has clasificado en este perÃ­odo de tiempo. Â¡Ve a ganar puntos!";
 
 	/// <summary>
 	/// Key: "Label.Leader"
 	/// English String: "Leader"
 	/// </summary>
-	public override string LabelLeader => "Líder";
+	public override string LabelLeader => "LÃ­der";
 
 	/// <summary>
 	/// Key: "Label.Loading"
@@ -76,7 +76,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 	/// Key: "Label.Owner"
 	/// English String: "Owner"
 	/// </summary>
-	public override string LabelOwner => "Dueño";
+	public override string LabelOwner => "DueÃ±o";
 
 	/// <summary>
 	/// Key: "Label.PastMonth"
@@ -112,7 +112,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "Ver más";
+	public override string LabelSeeMore => "Ver mÃ¡s";
 
 	/// <summary>
 	/// Key: "Label.Today"
@@ -174,12 +174,12 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelGoGetPoints()
 	{
-		return "Todavía no te has clasificado en este período de tiempo. ¡Ve a ganar puntos!";
+		return "TodavÃ­a no te has clasificado en este perÃ­odo de tiempo. Â¡Ve a ganar puntos!";
 	}
 
 	protected override string _GetTemplateForLabelLeader()
 	{
-		return "Líder";
+		return "LÃ­der";
 	}
 
 	protected override string _GetTemplateForLabelLoading()
@@ -194,7 +194,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelOwner()
 	{
-		return "Dueño";
+		return "DueÃ±o";
 	}
 
 	protected override string _GetTemplateForLabelPastMonth()
@@ -224,7 +224,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "Ver más";
+		return "Ver mÃ¡s";
 	}
 
 	protected override string _GetTemplateForLabelToday()
@@ -241,4 +241,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 	{
 		return "Actualizado hace 10 minutos aprox.";
 	}
+}
+
+
 }

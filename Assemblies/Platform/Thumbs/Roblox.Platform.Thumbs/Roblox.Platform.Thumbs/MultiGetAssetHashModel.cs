@@ -1,6 +1,6 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbs {
+    /// <summary>
 
-/// <summary>
 /// Contains information about an asset used to fetch it's thumbnail from the Thumbnail Service
 /// </summary>
 public class MultiGetAssetHashModel
@@ -24,4 +24,7 @@ public class MultiGetAssetHashModel
 	/// If the fetch worked then the <see cref="T:Roblox.Thumbs.ThumbResult" /> will be here
 	/// </summary>
 	public ThumbResult Result;
+}
+
+
 }

@@ -1,12 +1,11 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocalesAuditMetadataEntityFactory : IAccountLocalesAuditMetadataEntityFactory
 {
 	private readonly IAccountLocalesAuditMetadataTypeConverter _MetadataTypeConverter;
@@ -72,4 +71,7 @@ internal class AccountLocalesAuditMetadataEntityFactory : IAccountLocalesAuditMe
 		}
 		return null;
 	}
+}
+
+
 }

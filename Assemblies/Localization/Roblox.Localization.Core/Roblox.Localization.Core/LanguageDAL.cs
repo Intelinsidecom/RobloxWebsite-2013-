@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class LanguageDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxLocalization;
@@ -109,4 +108,7 @@ internal class LanguageDAL
 		};
 		return RobloxDatabase.RobloxLocalization.Lookup("Languages_GetLanguageByLanguageCode", BuildDAL, queryParameters);
 	}
+}
+
+
 }

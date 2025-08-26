@@ -1,6 +1,6 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbspublic {
+    enum ImageType
 
-public enum ImageType
 {
 	ItemSmall,
 	ItemLarge,
@@ -12,4 +12,7 @@ public enum ImageType
 	PlaceSmall,
 	PlaceLarge,
 	GameIcon
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameGearOptionsDisplayResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,13 +10,13 @@ internal class GameGearOptionsDisplayResources_zh_tw : GameGearOptionsDisplayRes
 	/// Key: "LabelAllGenreAllowed"
 	/// English String: "All Genres Allowed"
 	/// </summary>
-	public override string LabelAllGenreAllowed => "允許所有類別";
+	public override string LabelAllGenreAllowed => "å…è¨±æ‰€æœ‰é¡žåˆ¥";
 
 	/// <summary>
 	/// Key: "LabelNoGear"
 	/// English String: "No Gear Allowed"
 	/// </summary>
-	public override string LabelNoGear => "不允許裝備";
+	public override string LabelNoGear => "ä¸å…è¨±è£å‚™";
 
 	public GameGearOptionsDisplayResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -25,7 +25,7 @@ internal class GameGearOptionsDisplayResources_zh_tw : GameGearOptionsDisplayRes
 
 	protected override string _GetTemplateForLabelAllGenreAllowed()
 	{
-		return "允許所有類別";
+		return "å…è¨±æ‰€æœ‰é¡žåˆ¥";
 	}
 
 	/// <summary>
@@ -34,16 +34,19 @@ internal class GameGearOptionsDisplayResources_zh_tw : GameGearOptionsDisplayRes
 	/// </summary>
 	public override string LabelGearOnly(string GearName)
 	{
-		return $"限定{GearName}裝備";
+		return $"é™å®š{GearName}è£å‚™";
 	}
 
 	protected override string _GetTemplateForLabelGearOnly()
 	{
-		return "限定{GearName}裝備";
+		return "é™å®š{GearName}è£å‚™";
 	}
 
 	protected override string _GetTemplateForLabelNoGear()
 	{
-		return "不允許裝備";
+		return "ä¸å…è¨±è£å‚™";
 	}
+}
+
+
 }

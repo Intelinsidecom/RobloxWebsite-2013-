@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderation {
+    /// <summary>
 
-/// <summary>
 /// An interface for exposing the expression platform object. 
 /// Expressions are a either user or moderator entered strings that are persisted.
 /// </summary>
@@ -15,4 +15,7 @@ public interface IExpression
 	/// Gets the value.
 	/// </summary>
 	string Value { get; }
+}
+
+
 }

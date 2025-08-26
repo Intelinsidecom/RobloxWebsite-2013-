@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -86,7 +86,7 @@ internal class ControlsResources_es_es : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "Sí";
+	public override string ActionYes => "SÃ­";
 
 	/// <summary>
 	/// Key: "Birthdaypicker.Label.Date"
@@ -111,7 +111,7 @@ internal class ControlsResources_es_es : ControlsResources_en_us, IControlsResou
 	/// day of the month label
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "Día";
+	public override string LabelDay => "DÃ­a";
 
 	/// <summary>
 	/// Key: "Label.December"
@@ -197,7 +197,7 @@ internal class ControlsResources_es_es : ControlsResources_en_us, IControlsResou
 	/// Year
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "Año";
+	public override string LabelYear => "AÃ±o";
 
 	public ControlsResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -266,7 +266,7 @@ internal class ControlsResources_es_es : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "Sí";
+		return "SÃ­";
 	}
 
 	protected override string _GetTemplateForBirthdaypickerLabelDate()
@@ -291,17 +291,17 @@ internal class ControlsResources_es_es : ControlsResources_en_us, IControlsResou
 	/// </summary>
 	public override string LabelCurrentPage(string currentPage)
 	{
-		return $"Página {currentPage}";
+		return $"PÃ¡gina {currentPage}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPage()
 	{
-		return "Página {currentPage}";
+		return "PÃ¡gina {currentPage}";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "Día";
+		return "DÃ­a";
 	}
 
 	protected override string _GetTemplateForLabelDecember()
@@ -371,6 +371,9 @@ internal class ControlsResources_es_es : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "Año";
+		return "AÃ±o";
 	}
+}
+
+
 }

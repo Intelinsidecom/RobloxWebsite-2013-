@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// TODO : CTR Enhancement. Rename class to GameSearchEvent.
 /// </summary>
 public class GameSearchV2Event : GameSortSearchBaseEvent
@@ -71,3 +71,12 @@ public class GameSearchV2Event : GameSortSearchBaseEvent
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

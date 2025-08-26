@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TermsOfServiceResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class TermsOfServiceResources_fr_fr : TermsOfServiceResources_en_us, IT
 	/// Key: "Heading.TosHaveChangedTitle"
 	/// English String: "TERMS OF USE HAVE CHANGED"
 	/// </summary>
-	public override string HeadingTosHaveChangedTitle => "LES CONDITIONS D'UTILISATION ONT CHANGÉ";
+	public override string HeadingTosHaveChangedTitle => "LES CONDITIONS D'UTILISATION ONT CHANGÃ‰";
 
 	/// <summary>
 	/// Key: "Label.IAgree"
@@ -36,7 +36,7 @@ internal class TermsOfServiceResources_fr_fr : TermsOfServiceResources_en_us, IT
 
 	protected override string _GetTemplateForHeadingTosHaveChangedTitle()
 	{
-		return "LES CONDITIONS D'UTILISATION ONT CHANGÉ";
+		return "LES CONDITIONS D'UTILISATION ONT CHANGÃ‰";
 	}
 
 	protected override string _GetTemplateForLabelIAgree()
@@ -50,12 +50,12 @@ internal class TermsOfServiceResources_fr_fr : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageAgreeToTosAndPrivacyBody(string tosLinkStart, string tosLinkEnd, string privacyLinkStart, string privacyLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"En cliquant sur «\u00a0J'accepte\u00a0», vous déclarez accepter les {tosLinkStart}Conditions d'utilisation{tosLinkEnd} ainsi que la {privacyLinkStart}Politique de confidentialité{privacyLinkEnd}. Pour en savoir plus sur les changements apportés, reportez-vous à {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
+		return $"En cliquant sur Â«\u00a0J'accepte\u00a0Â», vous dÃ©clarez accepter les {tosLinkStart}Conditions d'utilisation{tosLinkEnd} ainsi que la {privacyLinkStart}Politique de confidentialitÃ©{privacyLinkEnd}. Pour en savoir plus sur les changements apportÃ©s, reportez-vous Ã  {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageAgreeToTosAndPrivacyBody()
 	{
-		return "En cliquant sur «\u00a0J'accepte\u00a0», vous déclarez accepter les {tosLinkStart}Conditions d'utilisation{tosLinkEnd} ainsi que la {privacyLinkStart}Politique de confidentialité{privacyLinkEnd}. Pour en savoir plus sur les changements apportés, reportez-vous à {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
+		return "En cliquant sur Â«\u00a0J'accepte\u00a0Â», vous dÃ©clarez accepter les {tosLinkStart}Conditions d'utilisation{tosLinkEnd} ainsi que la {privacyLinkStart}Politique de confidentialitÃ©{privacyLinkEnd}. Pour en savoir plus sur les changements apportÃ©s, reportez-vous Ã  {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
 	}
 
 	/// <summary>
@@ -64,12 +64,12 @@ internal class TermsOfServiceResources_fr_fr : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreeChangeBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"En cliquant sur «\u00a0J'accepte\u00a0», vous déclarez accepter les {tosLinkStart}Conditions d'utilisation{tosLinkEnd}, qui incluent la licence que vous accordez à Roblox pour le contenu passé et à venir fourni au service en vue de son utilisation en ligne et hors ligne (par exemple les objets réels). Pour en savoir plus sur les changements apportés, reportez-vous à {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
+		return $"En cliquant sur Â«\u00a0J'accepte\u00a0Â», vous dÃ©clarez accepter les {tosLinkStart}Conditions d'utilisation{tosLinkEnd}, qui incluent la licence que vous accordez Ã  Roblox pour le contenu passÃ© et Ã  venir fourni au service en vue de son utilisation en ligne et hors ligne (par exemple les objets rÃ©els). Pour en savoir plus sur les changements apportÃ©s, reportez-vous Ã  {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreeChangeBody()
 	{
-		return "En cliquant sur «\u00a0J'accepte\u00a0», vous déclarez accepter les {tosLinkStart}Conditions d'utilisation{tosLinkEnd}, qui incluent la licence que vous accordez à Roblox pour le contenu passé et à venir fourni au service en vue de son utilisation en ligne et hors ligne (par exemple les objets réels). Pour en savoir plus sur les changements apportés, reportez-vous à {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
+		return "En cliquant sur Â«\u00a0J'accepte\u00a0Â», vous dÃ©clarez accepter les {tosLinkStart}Conditions d'utilisation{tosLinkEnd}, qui incluent la licence que vous accordez Ã  Roblox pour le contenu passÃ© et Ã  venir fourni au service en vue de son utilisation en ligne et hors ligne (par exemple les objets rÃ©els). Pour en savoir plus sur les changements apportÃ©s, reportez-vous Ã  {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
 	}
 
 	/// <summary>
@@ -78,11 +78,14 @@ internal class TermsOfServiceResources_fr_fr : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreementBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"En cliquant sur «\u00a0J'accepte\u00a0», vous déclarez accepter les {tosLinkStart}Conditions d'utilisation de Roblox{tosLinkEnd}. Celles-ci incluent la licence que vous accordez à Roblox pour le contenu passé et à venir fourni au service en vue de son utilisation en ligne, hors ligne et sur support physique. Pour en savoir plus sur les changements apportés, reportez-vous à {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
+		return $"En cliquant sur Â«\u00a0J'accepte\u00a0Â», vous dÃ©clarez accepter les {tosLinkStart}Conditions d'utilisation de Roblox{tosLinkEnd}. Celles-ci incluent la licence que vous accordez Ã  Roblox pour le contenu passÃ© et Ã  venir fourni au service en vue de son utilisation en ligne, hors ligne et sur support physique. Pour en savoir plus sur les changements apportÃ©s, reportez-vous Ã  {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreementBody()
 	{
-		return "En cliquant sur «\u00a0J'accepte\u00a0», vous déclarez accepter les {tosLinkStart}Conditions d'utilisation de Roblox{tosLinkEnd}. Celles-ci incluent la licence que vous accordez à Roblox pour le contenu passé et à venir fourni au service en vue de son utilisation en ligne, hors ligne et sur support physique. Pour en savoir plus sur les changements apportés, reportez-vous à {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
+		return "En cliquant sur Â«\u00a0J'accepte\u00a0Â», vous dÃ©clarez accepter les {tosLinkStart}Conditions d'utilisation de Roblox{tosLinkEnd}. Celles-ci incluent la licence que vous accordez Ã  Roblox pour le contenu passÃ© et Ã  venir fourni au service en vue de son utilisation en ligne, hors ligne et sur support physique. Pour en savoir plus sur les changements apportÃ©s, reportez-vous Ã  {legalChangesLinkStart}cette adresse{legalChangesLinkEnd}.";
 	}
+}
+
+
 }

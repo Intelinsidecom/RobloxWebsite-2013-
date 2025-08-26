@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.EphemeralCounters.Client;
+namespace Roblox.Platform.EphemeralCountersinternal {
+    class Sequence : ISequence
 
-namespace Roblox.EphemeralCounters;
-
-internal class Sequence : ISequence
 {
 	private readonly EphemeralCountersClient _Client;
 
@@ -37,4 +36,7 @@ internal class Sequence : ISequence
 	{
 		return new SequenceStatistics(_Client.FlushSequenceStatistics(_SequenceName));
 	}
+}
+
+
 }

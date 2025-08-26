@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SocialMetaTagsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,21 +18,21 @@ internal class SocialMetaTagsResources_de_de : SocialMetaTagsResources_en_us, IS
 	/// description shown when Games page is shared on Facebook or Twitter
 	/// English String: "Play millions of free games on your smartphone, tablet, computer, Xbox One, Oculus Rift, and more."
 	/// </summary>
-	public override string DescriptionGamesPage => "Millionen von kostenlosen Spielen für dein Smartphone, Tablet, deinen Computer, die Xbox One, Oculus Rift und viele andere Geräte warten auf dich.";
+	public override string DescriptionGamesPage => "Millionen von kostenlosen Spielen fÃ¼r dein Smartphone, Tablet, deinen Computer, die Xbox One, Oculus Rift und viele andere GerÃ¤te warten auf dich.";
 
 	/// <summary>
 	/// Key: "Description.Roblox"
 	/// description shown on Facebook or Twitter when Roblox landing page is shared
 	/// English String: "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of players across an infinite variety of immersive, user-generated 3D worlds."
 	/// </summary>
-	public override string DescriptionRoblox => "Roblox läutet die nächste Generation von Unterhaltung ein. Lasse deiner Fantasie freien Lauf und gestalte und spiele mit Millionen von anderen Spielern in einer unendlichen Vielfalt an immersiven, von Benutzern erstellten 3D-Welten.";
+	public override string DescriptionRoblox => "Roblox lÃ¤utet die nÃ¤chste Generation von Unterhaltung ein. Lasse deiner Fantasie freien Lauf und gestalte und spiele mit Millionen von anderen Spielern in einer unendlichen Vielfalt an immersiven, von Benutzern erstellten 3D-Welten.";
 
 	/// <summary>
 	/// Key: "Label.CatalogPage"
 	/// Description shown when the catalog page is shared on Facebook or Twitter
 	/// English String: "Customize your avatar with a never-ending variety of clothing options, accessories, gear, and more!"
 	/// </summary>
-	public override string LabelCatalogPage => "Passe deinen Avatar mit zahllosen Kleidungsmöglichkeiten, Accessoires, Ausrüstungsgegenständen und mehr an!";
+	public override string LabelCatalogPage => "Passe deinen Avatar mit zahllosen KleidungsmÃ¶glichkeiten, Accessoires, AusrÃ¼stungsgegenstÃ¤nden und mehr an!";
 
 	/// <summary>
 	/// Key: "Label.CatalogPageTItle"
@@ -61,56 +61,56 @@ internal class SocialMetaTagsResources_de_de : SocialMetaTagsResources_en_us, IS
 	/// <summary>
 	/// Key: "Description.FavoritesPage"
 	/// social meta tag
-	/// English String: "Visit {userName}’s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
+	/// English String: "Visit {userName}â€™s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
 	/// </summary>
 	public override string DescriptionFavoritesPage(string userName)
 	{
-		return $"Rufe die Favoriten von {userName} auf und finde heraus, was andere Benutzer mögen. Durchsuche Lieblingsplätze, Accessoires und viel mehr. Außerdem siehst du dort auch die Lieblingsausrüstung für Spiele, dann kannst du dir gleich selbst eine holen!";
+		return $"Rufe die Favoriten von {userName} auf und finde heraus, was andere Benutzer mÃ¶gen. Durchsuche LieblingsplÃ¤tze, Accessoires und viel mehr. AuÃŸerdem siehst du dort auch die LieblingsausrÃ¼stung fÃ¼r Spiele, dann kannst du dir gleich selbst eine holen!";
 	}
 
 	protected override string _GetTemplateForDescriptionFavoritesPage()
 	{
-		return "Rufe die Favoriten von {userName} auf und finde heraus, was andere Benutzer mögen. Durchsuche Lieblingsplätze, Accessoires und viel mehr. Außerdem siehst du dort auch die Lieblingsausrüstung für Spiele, dann kannst du dir gleich selbst eine holen!";
+		return "Rufe die Favoriten von {userName} auf und finde heraus, was andere Benutzer mÃ¶gen. Durchsuche LieblingsplÃ¤tze, Accessoires und viel mehr. AuÃŸerdem siehst du dort auch die LieblingsausrÃ¼stung fÃ¼r Spiele, dann kannst du dir gleich selbst eine holen!";
 	}
 
 	/// <summary>
 	/// Key: "Description.GamePage"
 	/// The game description which shows on social media, when shared
-	/// English String: "Check out {gameName}. It’s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
+	/// English String: "Check out {gameName}. Itâ€™s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
 	/// </summary>
 	public override string DescriptionGamePage(string gameName, string gameDescription)
 	{
-		return $"Probiere „{gameName}“ aus. Das ist nur eines von Millionen einzigartiger 3D-Abenteuer, die von anderen Benutzern auf Roblox erstellt wurden. {gameDescription}";
+		return $"Probiere â€ž{gameName}â€œ aus. Das ist nur eines von Millionen einzigartiger 3D-Abenteuer, die von anderen Benutzern auf Roblox erstellt wurden. {gameDescription}";
 	}
 
 	protected override string _GetTemplateForDescriptionGamePage()
 	{
-		return "Probiere „{gameName}“ aus. Das ist nur eines von Millionen einzigartiger 3D-Abenteuer, die von anderen Benutzern auf Roblox erstellt wurden. {gameDescription}";
+		return "Probiere â€ž{gameName}â€œ aus. Das ist nur eines von Millionen einzigartiger 3D-Abenteuer, die von anderen Benutzern auf Roblox erstellt wurden. {gameDescription}";
 	}
 
 	protected override string _GetTemplateForDescriptionGamesPage()
 	{
-		return "Millionen von kostenlosen Spielen für dein Smartphone, Tablet, deinen Computer, die Xbox One, Oculus Rift und viele andere Geräte warten auf dich.";
+		return "Millionen von kostenlosen Spielen fÃ¼r dein Smartphone, Tablet, deinen Computer, die Xbox One, Oculus Rift und viele andere GerÃ¤te warten auf dich.";
 	}
 
 	/// <summary>
 	/// Key: "Description.InventoryPage"
 	/// social meta tag
-	/// English String: "Visit {userName1}’s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}’s collection of hats, shirts, gear, and more."
+	/// English String: "Visit {userName1}â€™s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}â€™s collection of hats, shirts, gear, and more."
 	/// </summary>
 	public override string DescriptionInventoryPage(string userName1, string userName2)
 	{
-		return $"Rufe das Inventar von {userName1} auf und sieh dir die tollen gesammelten Artikel an. Wirf einen Blick auf die Spielpässe und hol dir selbst einen! Durchsuche die Sammlung von {userName2} und bewundere Hüte, Hemden, Ausrüstungsgegenstände und mehr.";
+		return $"Rufe das Inventar von {userName1} auf und sieh dir die tollen gesammelten Artikel an. Wirf einen Blick auf die SpielpÃ¤sse und hol dir selbst einen! Durchsuche die Sammlung von {userName2} und bewundere HÃ¼te, Hemden, AusrÃ¼stungsgegenstÃ¤nde und mehr.";
 	}
 
 	protected override string _GetTemplateForDescriptionInventoryPage()
 	{
-		return "Rufe das Inventar von {userName1} auf und sieh dir die tollen gesammelten Artikel an. Wirf einen Blick auf die Spielpässe und hol dir selbst einen! Durchsuche die Sammlung von {userName2} und bewundere Hüte, Hemden, Ausrüstungsgegenstände und mehr.";
+		return "Rufe das Inventar von {userName1} auf und sieh dir die tollen gesammelten Artikel an. Wirf einen Blick auf die SpielpÃ¤sse und hol dir selbst einen! Durchsuche die Sammlung von {userName2} und bewundere HÃ¼te, Hemden, AusrÃ¼stungsgegenstÃ¤nde und mehr.";
 	}
 
 	protected override string _GetTemplateForDescriptionRoblox()
 	{
-		return "Roblox läutet die nächste Generation von Unterhaltung ein. Lasse deiner Fantasie freien Lauf und gestalte und spiele mit Millionen von anderen Spielern in einer unendlichen Vielfalt an immersiven, von Benutzern erstellten 3D-Welten.";
+		return "Roblox lÃ¤utet die nÃ¤chste Generation von Unterhaltung ein. Lasse deiner Fantasie freien Lauf und gestalte und spiele mit Millionen von anderen Spielern in einer unendlichen Vielfalt an immersiven, von Benutzern erstellten 3D-Welten.";
 	}
 
 	/// <summary>
@@ -120,17 +120,17 @@ internal class SocialMetaTagsResources_de_de : SocialMetaTagsResources_en_us, IS
 	/// </summary>
 	public override string DescriptionUserProfilePage(string userName1, string userName2)
 	{
-		return $"{userName1} ist Teil der Community aus Millionen von Benutzern, die spielen, entwickeln und die endlosen Möglichkeiten von Roblox erkunden. Begib dich gemeinsam mit {userName2} auf Entdeckungsreise!";
+		return $"{userName1} ist Teil der Community aus Millionen von Benutzern, die spielen, entwickeln und die endlosen MÃ¶glichkeiten von Roblox erkunden. Begib dich gemeinsam mit {userName2} auf Entdeckungsreise!";
 	}
 
 	protected override string _GetTemplateForDescriptionUserProfilePage()
 	{
-		return "{userName1} ist Teil der Community aus Millionen von Benutzern, die spielen, entwickeln und die endlosen Möglichkeiten von Roblox erkunden. Begib dich gemeinsam mit {userName2} auf Entdeckungsreise!";
+		return "{userName1} ist Teil der Community aus Millionen von Benutzern, die spielen, entwickeln und die endlosen MÃ¶glichkeiten von Roblox erkunden. Begib dich gemeinsam mit {userName2} auf Entdeckungsreise!";
 	}
 
 	protected override string _GetTemplateForLabelCatalogPage()
 	{
-		return "Passe deinen Avatar mit zahllosen Kleidungsmöglichkeiten, Accessoires, Ausrüstungsgegenständen und mehr an!";
+		return "Passe deinen Avatar mit zahllosen KleidungsmÃ¶glichkeiten, Accessoires, AusrÃ¼stungsgegenstÃ¤nden und mehr an!";
 	}
 
 	protected override string _GetTemplateForLabelCatalogPageTItle()
@@ -157,4 +157,7 @@ internal class SocialMetaTagsResources_de_de : SocialMetaTagsResources_en_us, IS
 	{
 		return "Profil von {userName}";
 	}
+}
+
+
 }

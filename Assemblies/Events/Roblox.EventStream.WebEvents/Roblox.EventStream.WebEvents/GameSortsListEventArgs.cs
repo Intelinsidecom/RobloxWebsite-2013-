@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameSortsListEventArgs : WebEventArgs
 
-public class GameSortsListEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// Version Id
@@ -19,3 +20,12 @@ public class GameSortsListEventArgs : WebEventArgs
 	/// </summary>
 	public string GameSorts { get; set; }
 }
+
+
+}
+
+
+
+
+
+

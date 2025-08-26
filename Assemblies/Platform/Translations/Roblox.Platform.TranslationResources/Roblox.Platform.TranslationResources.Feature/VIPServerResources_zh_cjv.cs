@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides VIPServerResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,187 +10,187 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// Key: "Action.Add"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "添加";
+	public override string ActionAdd => "æ·»åŠ ";
 
 	/// <summary>
 	/// Key: "Action.AddPlayers"
 	/// English String: "Add Players"
 	/// </summary>
-	public override string ActionAddPlayers => "添加玩家";
+	public override string ActionAddPlayers => "æ·»åŠ çŽ©å®¶";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.CancelPayments"
 	/// English String: "Cancel Payments"
 	/// </summary>
-	public override string ActionCancelPayments => "取消付款";
+	public override string ActionCancelPayments => "å–æ¶ˆä»˜æ¬¾";
 
 	/// <summary>
 	/// Key: "Action.ChangeName"
 	/// English String: "Change Name"
 	/// </summary>
-	public override string ActionChangeName => "更改名称";
+	public override string ActionChangeName => "æ›´æ”¹åç§°";
 
 	/// <summary>
 	/// Key: "Action.GoBack"
 	/// English String: "Go Back"
 	/// </summary>
-	public override string ActionGoBack => "返回";
+	public override string ActionGoBack => "è¿”å›ž";
 
 	/// <summary>
 	/// Key: "Action.RegenerateJoinLink"
 	/// English String: "Regenerate"
 	/// </summary>
-	public override string ActionRegenerateJoinLink => "再生";
+	public override string ActionRegenerateJoinLink => "å†ç”Ÿ";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "移除";
+	public override string ActionRemove => "ç§»é™¤";
 
 	/// <summary>
 	/// Key: "Action.RenewVipServer"
 	/// English String: "Renew VIP Server"
 	/// </summary>
-	public override string ActionRenewVipServer => "续订 VIP 服务器";
+	public override string ActionRenewVipServer => "ç»­è®¢ VIP æœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "查看全部";
+	public override string ActionSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
 
 	/// <summary>
 	/// Key: "Heading.CancelPayments"
 	/// English String: "Cancel Payments"
 	/// </summary>
-	public override string HeadingCancelPayments => "取消付款";
+	public override string HeadingCancelPayments => "å–æ¶ˆä»˜æ¬¾";
 
 	/// <summary>
 	/// Key: "Heading.ChangeName"
 	/// English String: "Change VIP Server Name"
 	/// </summary>
-	public override string HeadingChangeName => "更改 VIP 服务器名称";
+	public override string HeadingChangeName => "æ›´æ”¹ VIP æœåŠ¡å™¨åç§°";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureVipServer"
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string HeadingConfigureVipServer => "配置 VIP 服务器";
+	public override string HeadingConfigureVipServer => "é…ç½® VIP æœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "Heading.RemovePlayer"
 	/// English String: "Remove Player"
 	/// </summary>
-	public override string HeadingRemovePlayer => "移除玩家";
+	public override string HeadingRemovePlayer => "ç§»é™¤çŽ©å®¶";
 
 	/// <summary>
 	/// Key: "Heading.RenewVipServer"
 	/// English String: "Renew VIP Server"
 	/// </summary>
-	public override string HeadingRenewVipServer => "续订 VIP 服务器";
+	public override string HeadingRenewVipServer => "ç»­è®¢ VIP æœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "Label.ChangeNamePlaceholder"
 	/// English String: "VIP Server Name (1-50 Characters)"
 	/// </summary>
-	public override string LabelChangeNamePlaceholder => "VIP 服务器名称（1-50 个字符）";
+	public override string LabelChangeNamePlaceholder => "VIP æœåŠ¡å™¨åç§°ï¼ˆ1-50 ä¸ªå­—ç¬¦ï¼‰";
 
 	/// <summary>
 	/// Key: "Label.ClanAccess"
 	/// English String: "Clan Access"
 	/// </summary>
-	public override string LabelClanAccess => "部落通行证";
+	public override string LabelClanAccess => "éƒ¨è½é€šè¡Œè¯";
 
 	/// <summary>
 	/// Key: "Label.FriendsAllowed"
 	/// English String: "Friends Allowed"
 	/// </summary>
-	public override string LabelFriendsAllowed => "允许好友";
+	public override string LabelFriendsAllowed => "å…è®¸å¥½å‹";
 
 	/// <summary>
 	/// Key: "Label.GameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelGameName => "游戏名称";
+	public override string LabelGameName => "æ¸¸æˆåç§°";
 
 	/// <summary>
 	/// Key: "Label.JoinGameLink"
 	/// English String: "Join Game Link..."
 	/// </summary>
-	public override string LabelJoinGameLink => "加入游戏链接...";
+	public override string LabelJoinGameLink => "åŠ å…¥æ¸¸æˆé“¾æŽ¥...";
 
 	/// <summary>
 	/// Key: "Label.None"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelNone => "无";
+	public override string LabelNone => "æ— ";
 
 	/// <summary>
 	/// Key: "Label.Off"
 	/// English String: "Off"
 	/// </summary>
-	public override string LabelOff => "关闭";
+	public override string LabelOff => "å…³é—­";
 
 	/// <summary>
 	/// Key: "Label.On"
 	/// English String: "On"
 	/// </summary>
-	public override string LabelOn => "开启";
+	public override string LabelOn => "å¼€å¯";
 
 	/// <summary>
 	/// Key: "Label.PickEnemyClan"
 	/// English String: "Pick Enemy Clan"
 	/// </summary>
-	public override string LabelPickEnemyClan => "挑选敌人部落";
+	public override string LabelPickEnemyClan => "æŒ‘é€‰æ•Œäººéƒ¨è½";
 
 	/// <summary>
 	/// Key: "Label.SearchForPlayers"
 	/// English String: "Search for Players"
 	/// </summary>
-	public override string LabelSearchForPlayers => "搜索玩家";
+	public override string LabelSearchForPlayers => "æœç´¢çŽ©å®¶";
 
 	/// <summary>
 	/// Key: "Label.Server"
 	/// English String: "Server"
 	/// </summary>
-	public override string LabelServer => "服务器";
+	public override string LabelServer => "æœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "Label.ServerMembers"
 	/// English String: "Server Members"
 	/// </summary>
-	public override string LabelServerMembers => "服务器成员";
+	public override string LabelServerMembers => "æœåŠ¡å™¨æˆå‘˜";
 
 	/// <summary>
 	/// Key: "Label.SubscriptionStatus"
 	/// English String: "Subscription Status"
 	/// </summary>
-	public override string LabelSubscriptionStatus => "订阅状态";
+	public override string LabelSubscriptionStatus => "è®¢é˜…çŠ¶æ€";
 
 	/// <summary>
 	/// Key: "Label.VIPServerLink"
 	/// English String: "VIP Server Link"
 	/// </summary>
-	public override string LabelVIPServerLink => "VIP 服务器链接";
+	public override string LabelVIPServerLink => "VIP æœåŠ¡å™¨é“¾æŽ¥";
 
 	/// <summary>
 	/// Key: "Label.VIPServerStatus"
 	/// English String: "VIP Server Status"
 	/// </summary>
-	public override string LabelVIPServerStatus => "VIP 服务器状态";
+	public override string LabelVIPServerStatus => "VIP æœåŠ¡å™¨çŠ¶æ€";
 
 	/// <summary>
 	/// Key: "Label.YourClan"
 	/// English String: "Your Clan"
 	/// </summary>
-	public override string LabelYourClan => "你的部落";
+	public override string LabelYourClan => "ä½ çš„éƒ¨è½";
 
 	public VIPServerResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -199,77 +199,77 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "添加";
+		return "æ·»åŠ ";
 	}
 
 	protected override string _GetTemplateForActionAddPlayers()
 	{
-		return "添加玩家";
+		return "æ·»åŠ çŽ©å®¶";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionCancelPayments()
 	{
-		return "取消付款";
+		return "å–æ¶ˆä»˜æ¬¾";
 	}
 
 	protected override string _GetTemplateForActionChangeName()
 	{
-		return "更改名称";
+		return "æ›´æ”¹åç§°";
 	}
 
 	protected override string _GetTemplateForActionGoBack()
 	{
-		return "返回";
+		return "è¿”å›ž";
 	}
 
 	protected override string _GetTemplateForActionRegenerateJoinLink()
 	{
-		return "再生";
+		return "å†ç”Ÿ";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "移除";
+		return "ç§»é™¤";
 	}
 
 	protected override string _GetTemplateForActionRenewVipServer()
 	{
-		return "续订 VIP 服务器";
+		return "ç»­è®¢ VIP æœåŠ¡å™¨";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "查看全部";
+		return "æŸ¥çœ‹å…¨éƒ¨";
 	}
 
 	protected override string _GetTemplateForHeadingCancelPayments()
 	{
-		return "取消付款";
+		return "å–æ¶ˆä»˜æ¬¾";
 	}
 
 	protected override string _GetTemplateForHeadingChangeName()
 	{
-		return "更改 VIP 服务器名称";
+		return "æ›´æ”¹ VIP æœåŠ¡å™¨åç§°";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureVipServer()
 	{
-		return "配置 VIP 服务器";
+		return "é…ç½® VIP æœåŠ¡å™¨";
 	}
 
 	protected override string _GetTemplateForHeadingRemovePlayer()
 	{
-		return "移除玩家";
+		return "ç§»é™¤çŽ©å®¶";
 	}
 
 	protected override string _GetTemplateForHeadingRenewVipServer()
 	{
-		return "续订 VIP 服务器";
+		return "ç»­è®¢ VIP æœåŠ¡å™¨";
 	}
 
 	/// <summary>
@@ -278,57 +278,57 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelChangeNameBodyMessage(string name, string creator, string date)
 	{
-		return $"是否确定要取消“{creator}”所创作的“{name}”私人 VIP 服务器的预付款？如果取消，你的 VIP 服务器将于 {date} 失效。";
+		return $"æ˜¯å¦ç¡®å®šè¦å–æ¶ˆâ€œ{creator}â€æ‰€åˆ›ä½œçš„â€œ{name}â€ç§äºº VIP æœåŠ¡å™¨çš„é¢„ä»˜æ¬¾ï¼Ÿå¦‚æžœå–æ¶ˆï¼Œä½ çš„ VIP æœåŠ¡å™¨å°†äºŽ {date} å¤±æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForLabelChangeNameBodyMessage()
 	{
-		return "是否确定要取消“{creator}”所创作的“{name}”私人 VIP 服务器的预付款？如果取消，你的 VIP 服务器将于 {date} 失效。";
+		return "æ˜¯å¦ç¡®å®šè¦å–æ¶ˆâ€œ{creator}â€æ‰€åˆ›ä½œçš„â€œ{name}â€ç§äºº VIP æœåŠ¡å™¨çš„é¢„ä»˜æ¬¾ï¼Ÿå¦‚æžœå–æ¶ˆï¼Œä½ çš„ VIP æœåŠ¡å™¨å°†äºŽ {date} å¤±æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForLabelChangeNamePlaceholder()
 	{
-		return "VIP 服务器名称（1-50 个字符）";
+		return "VIP æœåŠ¡å™¨åç§°ï¼ˆ1-50 ä¸ªå­—ç¬¦ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelClanAccess()
 	{
-		return "部落通行证";
+		return "éƒ¨è½é€šè¡Œè¯";
 	}
 
 	protected override string _GetTemplateForLabelFriendsAllowed()
 	{
-		return "允许好友";
+		return "å…è®¸å¥½å‹";
 	}
 
 	protected override string _GetTemplateForLabelGameName()
 	{
-		return "游戏名称";
+		return "æ¸¸æˆåç§°";
 	}
 
 	protected override string _GetTemplateForLabelJoinGameLink()
 	{
-		return "加入游戏链接...";
+		return "åŠ å…¥æ¸¸æˆé“¾æŽ¥...";
 	}
 
 	protected override string _GetTemplateForLabelNone()
 	{
-		return "无";
+		return "æ— ";
 	}
 
 	protected override string _GetTemplateForLabelOff()
 	{
-		return "关闭";
+		return "å…³é—­";
 	}
 
 	protected override string _GetTemplateForLabelOn()
 	{
-		return "开启";
+		return "å¼€å¯";
 	}
 
 	protected override string _GetTemplateForLabelPickEnemyClan()
 	{
-		return "挑选敌人部落";
+		return "æŒ‘é€‰æ•Œäººéƒ¨è½";
 	}
 
 	/// <summary>
@@ -337,12 +337,12 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelRemovePlayerBodyMessage(string name)
 	{
-		return $"是否确定要从你的 VIP 服务器移除 {name}？对方将无法再加入你的 VIP 服务器。";
+		return $"æ˜¯å¦ç¡®å®šè¦ä»Žä½ çš„ VIP æœåŠ¡å™¨ç§»é™¤ {name}ï¼Ÿå¯¹æ–¹å°†æ— æ³•å†åŠ å…¥ä½ çš„ VIP æœåŠ¡å™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelRemovePlayerBodyMessage()
 	{
-		return "是否确定要从你的 VIP 服务器移除 {name}？对方将无法再加入你的 VIP 服务器。";
+		return "æ˜¯å¦ç¡®å®šè¦ä»Žä½ çš„ VIP æœåŠ¡å™¨ç§»é™¤ {name}ï¼Ÿå¯¹æ–¹å°†æ— æ³•å†åŠ å…¥ä½ çš„ VIP æœåŠ¡å™¨ã€‚";
 	}
 
 	/// <summary>
@@ -351,12 +351,12 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelRenewVipServerBodyMessageConfirmation(string name, string creator)
 	{
-		return $"是否确定为“{creator}”所创作的“{name}”启用私人 VIP 服务器版本预付款？";
+		return $"æ˜¯å¦ç¡®å®šä¸ºâ€œ{creator}â€æ‰€åˆ›ä½œçš„â€œ{name}â€å¯ç”¨ç§äºº VIP æœåŠ¡å™¨ç‰ˆæœ¬é¢„ä»˜æ¬¾ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelRenewVipServerBodyMessageConfirmation()
 	{
-		return "是否确定为“{creator}”所创作的“{name}”启用私人 VIP 服务器版本预付款？";
+		return "æ˜¯å¦ç¡®å®šä¸ºâ€œ{creator}â€æ‰€åˆ›ä½œçš„â€œ{name}â€å¯ç”¨ç§äºº VIP æœåŠ¡å™¨ç‰ˆæœ¬é¢„ä»˜æ¬¾ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -365,22 +365,22 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelRenewVipServerBodyMessageStart(string date)
 	{
-		return $"此 VIP 服务器将于每月 {date} 续订，直至你取消。";
+		return $"æ­¤ VIP æœåŠ¡å™¨å°†äºŽæ¯æœˆ {date} ç»­è®¢ï¼Œç›´è‡³ä½ å–æ¶ˆã€‚";
 	}
 
 	protected override string _GetTemplateForLabelRenewVipServerBodyMessageStart()
 	{
-		return "此 VIP 服务器将于每月 {date} 续订，直至你取消。";
+		return "æ­¤ VIP æœåŠ¡å™¨å°†äºŽæ¯æœˆ {date} ç»­è®¢ï¼Œç›´è‡³ä½ å–æ¶ˆã€‚";
 	}
 
 	protected override string _GetTemplateForLabelSearchForPlayers()
 	{
-		return "搜索玩家";
+		return "æœç´¢çŽ©å®¶";
 	}
 
 	protected override string _GetTemplateForLabelServer()
 	{
-		return "服务器";
+		return "æœåŠ¡å™¨";
 	}
 
 	/// <summary>
@@ -389,17 +389,17 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelServerExpirationDate(string date)
 	{
-		return $"你 VIP 服务器的失效日期为 {date}";
+		return $"ä½  VIP æœåŠ¡å™¨çš„å¤±æ•ˆæ—¥æœŸä¸º {date}";
 	}
 
 	protected override string _GetTemplateForLabelServerExpirationDate()
 	{
-		return "你 VIP 服务器的失效日期为 {date}";
+		return "ä½  VIP æœåŠ¡å™¨çš„å¤±æ•ˆæ—¥æœŸä¸º {date}";
 	}
 
 	protected override string _GetTemplateForLabelServerMembers()
 	{
-		return "服务器成员";
+		return "æœåŠ¡å™¨æˆå‘˜";
 	}
 
 	/// <summary>
@@ -408,12 +408,12 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelSubscriptionChargeDate(string date)
 	{
-		return $"你将于 {date} 被再次收费";
+		return $"ä½ å°†äºŽ {date} è¢«å†æ¬¡æ”¶è´¹";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionChargeDate()
 	{
-		return "你将于 {date} 被再次收费";
+		return "ä½ å°†äºŽ {date} è¢«å†æ¬¡æ”¶è´¹";
 	}
 
 	/// <summary>
@@ -422,31 +422,34 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelSubscriptionMonthlyPaymentDue(string value)
 	{
-		return $"你的 VIP 服务器月费为 {value}";
+		return $"ä½ çš„ VIP æœåŠ¡å™¨æœˆè´¹ä¸º {value}";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionMonthlyPaymentDue()
 	{
-		return "你的 VIP 服务器月费为 {value}";
+		return "ä½ çš„ VIP æœåŠ¡å™¨æœˆè´¹ä¸º {value}";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionStatus()
 	{
-		return "订阅状态";
+		return "è®¢é˜…çŠ¶æ€";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerLink()
 	{
-		return "VIP 服务器链接";
+		return "VIP æœåŠ¡å™¨é“¾æŽ¥";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerStatus()
 	{
-		return "VIP 服务器状态";
+		return "VIP æœåŠ¡å™¨çŠ¶æ€";
 	}
 
 	protected override string _GetTemplateForLabelYourClan()
 	{
-		return "你的部落";
+		return "ä½ çš„éƒ¨è½";
 	}
+}
+
+
 }

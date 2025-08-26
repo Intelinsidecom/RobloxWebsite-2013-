@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class MatchUserContactsByPhoneEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class MatchUserContactsByPhoneEvent : WebEventBase
 {
 	private const string _Name = "contactFriendFinderContactsMatched";
 
@@ -24,3 +24,12 @@ public class MatchUserContactsByPhoneEvent : WebEventBase
 		AddEventArg("matches", matchUserContactsEventArgs.Matches.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

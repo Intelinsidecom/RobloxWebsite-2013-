@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+namespace Roblox.EventStream {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream;
-
-/// <summary>
 /// Interface for chat training data object to be streamed to AWS Kinesis firehose
 /// </summary>
 public interface IChatTrainingData
@@ -94,4 +93,7 @@ public interface IChatTrainingData
 
 	[JsonProperty(PropertyName = "o13moderationLevel")]
 	int? Over13ModerationLevel { get; set; }
+}
+
+
 }

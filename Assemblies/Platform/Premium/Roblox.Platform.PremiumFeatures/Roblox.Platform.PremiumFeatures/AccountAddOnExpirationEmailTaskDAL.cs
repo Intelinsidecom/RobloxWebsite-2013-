@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class AccountAddOnExpirationEmailTaskDAL
 
-namespace Roblox.PremiumFeatures;
-
-public class AccountAddOnExpirationEmailTaskDAL
 {
 	private long _id;
 
@@ -116,4 +115,7 @@ public class AccountAddOnExpirationEmailTaskDAL
 		};
 		return EntityHelper.GetEntityDAL(new DbInfo(ConnectionString, "[dbo].[AccountAddOnExpirationEmailTasks_GetAccountAddOnExpirationEmailTaskByAccountAddOnID]", queryParameters), BuildDAL);
 	}
+}
+
+
 }

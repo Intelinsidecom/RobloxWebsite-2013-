@@ -1,8 +1,7 @@
-using Roblox.Platform.Membership;
+﻿using Roblox.Platform.Membership;
+namespace Roblox.Marketingpublic {
+    class BrowserTrackerDetailProvider : IBrowserTrackerDetailProvider
 
-namespace Roblox.Platform.Marketing;
-
-public class BrowserTrackerDetailProvider : IBrowserTrackerDetailProvider
 {
 	private IAccountBrowserTrackerEntityFactory _Factory;
 
@@ -19,4 +18,7 @@ public class BrowserTrackerDetailProvider : IBrowserTrackerDetailProvider
 		}
 		return _Factory.GetByAccountIdAndBrowserTrackerId(user.AccountId, browserTracker.Id) != null;
 	}
+}
+
+
 }

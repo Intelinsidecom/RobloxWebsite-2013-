@@ -1,6 +1,6 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbs {
+    /// <summary>
 
-/// <summary>
 /// A json-serializable version of ThumbResult
 /// </summary>
 public class ScriptThumbResult
@@ -18,4 +18,7 @@ public class ScriptThumbResult
 	public ScriptThumbResult()
 	{
 	}
+}
+
+
 }

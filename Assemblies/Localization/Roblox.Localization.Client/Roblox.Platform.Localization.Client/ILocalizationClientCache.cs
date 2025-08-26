@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.Localization.Clientpublic {
+    interface ILocalizationClientCache
 
-namespace Roblox.Localization.Client;
-
-public interface ILocalizationClientCache
 {
 	bool TryGetLanguageFamilyById(int id, out LanguageFamily languageFamily);
 
@@ -31,4 +30,7 @@ public interface ILocalizationClientCache
 	void SaveAllSupportedLocale(IEnumerable<SupportedLocale> allSupportedLocale);
 
 	void SaveDeviceReportedLocaleId(string rawDeviceReportedLocaleCode, int deviceReportedLocaleId);
+}
+
+
 }

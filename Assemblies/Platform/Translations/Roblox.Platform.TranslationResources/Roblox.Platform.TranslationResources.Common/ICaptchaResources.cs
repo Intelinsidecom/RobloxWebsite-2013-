@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface ICaptchaResources : ITranslationResources
 
-public interface ICaptchaResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Response.CaptchaErrorFailedToLoad"
@@ -22,4 +22,7 @@ public interface ICaptchaResources : ITranslationResources
 	/// English String: "Temporary error. Please try again in a few minutes"
 	/// </summary>
 	string ResponseCaptchaErrorVerifyFailed { get; }
+}
+
+
 }

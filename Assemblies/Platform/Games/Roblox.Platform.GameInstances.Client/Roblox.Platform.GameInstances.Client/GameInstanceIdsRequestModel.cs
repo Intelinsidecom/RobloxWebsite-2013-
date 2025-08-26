@@ -1,8 +1,10 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class GameInstanceIdsRequestModel
 
-namespace Roblox.GameInstances.Client;
-
-public class GameInstanceIdsRequestModel
 {
 	public Guid[] GameInstanceIds { get; set; }
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class AvatarResources_en_us : TranslationResourcesBase, IAvatarResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class AvatarResources_en_us : TranslationResourcesBase, IAvatarResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -3110,4 +3109,7 @@ internal class AvatarResources_en_us : TranslationResourcesBase, IAvatarResource
 	{
 		return "Warning";
 	}
+}
+
+
 }

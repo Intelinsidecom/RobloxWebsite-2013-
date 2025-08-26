@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// Represents an Event stream event for Cookie upgrade.
 /// </summary>
 public class CookieUpgraderEvent : WebEventBase
@@ -12,7 +12,7 @@ public class CookieUpgraderEvent : WebEventBase
 	/// <summary>
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEvent" /> class.
 	/// </summary>
-	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer" />.</param>
 	/// <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieUpgraderEventArgs" /> instance containing the event data.</param>
 	/// <exception cref="!:PlatformArgumentNullException">
 	/// streamer
@@ -46,3 +46,12 @@ public class CookieUpgraderEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

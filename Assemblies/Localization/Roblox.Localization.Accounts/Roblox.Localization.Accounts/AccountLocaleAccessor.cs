@@ -1,12 +1,11 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts.Implementations;
 using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Membership;
 using Roblox.TranslationResources;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountLocaleAccessor : IAccountLocaleAccessor
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountLocaleAccessor : IAccountLocaleAccessor
 {
 	private readonly IAccountLocaleEntityFactory _AccountLocaleEntityFactory;
 
@@ -48,4 +47,7 @@ internal class AccountLocaleAccessor : IAccountLocaleAccessor
 	{
 		return TranslationResourceState.Standard;
 	}
+}
+
+
 }

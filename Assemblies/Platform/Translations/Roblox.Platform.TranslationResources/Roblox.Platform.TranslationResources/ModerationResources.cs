@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.TranslationResources.Moderation;
+namespace Roblox.Platform.TranslationResourcesinternal {
+    class ModerationResources : IModerationResources, ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-internal class ModerationResources : IModerationResources, ITranslationResourcesNamespacesGroup
 {
 	private readonly Lazy<IModeratorActionsResources> _IModeratorActionsResources;
 
@@ -26,4 +25,7 @@ internal class ModerationResources : IModerationResources, ITranslationResources
 		}
 		return null;
 	}
+}
+
+
 }

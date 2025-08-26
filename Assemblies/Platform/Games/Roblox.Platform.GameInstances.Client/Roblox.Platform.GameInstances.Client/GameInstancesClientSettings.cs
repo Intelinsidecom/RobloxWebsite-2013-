@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using Roblox.Configuration;
 using Roblox.GameInstances.Client.Properties;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Sentinels.CircuitBreakerPolicy;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class GameInstancesClientSettings : DefaultHttpClientSettings, IServiceClientSettings, IHttpClientSettings, IDefaultCircuitBreakerPolicyConfig
 
-namespace Roblox.GameInstances.Client;
-
-public class GameInstancesClientSettings : DefaultHttpClientSettings, IServiceClientSettings, IHttpClientSettings, IDefaultCircuitBreakerPolicyConfig
 {
 	private readonly Func<string> _GameInstancesServiceUrl;
 
@@ -25,4 +24,7 @@ public class GameInstancesClientSettings : DefaultHttpClientSettings, IServiceCl
 	{
 		_GameInstancesServiceUrl = serviceUrlGetter ?? ((Func<string>)(() => RobloxEnvironment.GetApiEndpoint("gameinstances")));
 	}
+}
+
+
 }

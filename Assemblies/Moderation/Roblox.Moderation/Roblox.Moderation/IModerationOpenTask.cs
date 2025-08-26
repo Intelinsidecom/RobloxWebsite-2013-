@@ -1,9 +1,8 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Membership.Core;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// An interface represents an open moderation task that is to be worked on by a moderator.
 /// An effective wrapper around <see cref="T:Roblox.Platform.Moderation.ISqsOpenTask" /> as well associated review task entity 
 /// in order for a moderator to work on and then to perform the removal of the message from the queue
@@ -34,4 +33,7 @@ public interface IModerationOpenTask : ISqsOpenTask, IOpenTask
 	/// <param name="newLocaleIdentifier">The locale to associate this Report with. May be null, indicating that the locale is 'unknown'.</param>
 	/// <param name="moderatorIdentity">The moderator who is changing the locale associated with this Report. If null, no change is made, and this task is deleted and recreated at the back of the queue.</param>
 	void Republish(ISupportedLocaleIdentifier newLocaleIdentifier = null, IUserIdentifier moderatorIdentity = null);
+}
+
+
 }

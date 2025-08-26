@@ -1,14 +1,13 @@
-using Roblox.EventLog;
+﻿using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
 using Roblox.Platform.Demographics;
 using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountspublic {
+    class AccountCountryBuilderFactory
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public class AccountCountryBuilderFactory
 {
 	private IUserFactory _UserFactory;
 
@@ -29,4 +28,7 @@ public class AccountCountryBuilderFactory
 		AccountCountriesChangeAgentTypeConverter changeAgentTypeConverter = new AccountCountriesChangeAgentTypeConverter(new AccountCountriesChangeAgentTypeEntityFactory());
 		return new AccountCountryBuilder(new AccountCountryEntityFactory(), new CountryFactory(), Settings.Default, new AccountCountriesAuditEntryEntityFactory(), new AccountCountriesAuditMetadataEntityFactory(metadataTypeConverter, changeAgentTypeConverter), new AccountCountriesAutomationTypeEntityFactory(), _UserFactory, new AccountCountryFloodCheckerFactory(_FloodCheckerFactory, Settings.Default, _Logger));
 	}
+}
+
+
 }

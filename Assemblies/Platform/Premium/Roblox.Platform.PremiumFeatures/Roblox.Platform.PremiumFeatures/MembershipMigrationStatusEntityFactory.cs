@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 public class MembershipMigrationStatusEntityFactory : IMembershipMigrationStatusEntityFactory
 {
 	private MigrationStateConverter _MigrationStateConverter;
@@ -165,4 +164,7 @@ public class MembershipMigrationStatusEntityFactory : IMembershipMigrationStatus
 		}
 		return null;
 	}
+}
+
+
 }

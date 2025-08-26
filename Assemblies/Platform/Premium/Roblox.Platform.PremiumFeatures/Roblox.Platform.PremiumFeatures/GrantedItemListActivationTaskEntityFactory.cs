@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 public class GrantedItemListActivationTaskEntityFactory : IGrantedItemListActivationTaskEntityFactory
 {
 	public IGrantedItemListActivationTaskEntity Get(long id)
@@ -49,4 +48,7 @@ public class GrantedItemListActivationTaskEntityFactory : IGrantedItemListActiva
 		}
 		return null;
 	}
+}
+
+
 }

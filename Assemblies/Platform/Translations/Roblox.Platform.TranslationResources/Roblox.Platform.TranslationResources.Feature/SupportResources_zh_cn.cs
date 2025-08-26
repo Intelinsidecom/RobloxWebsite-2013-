@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SupportResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,151 +11,151 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Cancel
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionDialogCancel => "取消";
+	public override string ActionDialogCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.OK"
 	/// OK
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogOK => "好";
+	public override string ActionDialogOK => "å¥½";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Send"
 	/// Send
 	/// English String: "Send"
 	/// </summary>
-	public override string ActionDialogSend => "发送";
+	public override string ActionDialogSend => "å‘é€";
 
 	/// <summary>
 	/// Key: "Heading.ContactInformation"
 	/// Contact Information
 	/// English String: "Contact Information"
 	/// </summary>
-	public override string HeadingContactInformation => "联系信息";
+	public override string HeadingContactInformation => "è”ç³»ä¿¡æ¯";
 
 	/// <summary>
 	/// Key: "Heading.DescriptionOfIssue"
 	/// Description of issue
 	/// English String: "Description of issue"
 	/// </summary>
-	public override string HeadingDescriptionOfIssue => "问题描述";
+	public override string HeadingDescriptionOfIssue => "é—®é¢˜æè¿°";
 
 	/// <summary>
 	/// Key: "Heading.DeviceWithProblem"
 	/// What device are you having the problem on?
 	/// English String: "What device are you having the problem on?"
 	/// </summary>
-	public override string HeadingDeviceWithProblem => "你在什么设备上遇到问题？";
+	public override string HeadingDeviceWithProblem => "ä½ åœ¨ä»€ä¹ˆè®¾å¤‡ä¸Šé‡åˆ°é—®é¢˜ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ErrorWithoutContext"
 	/// Error
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingDialogErrorWithoutContext => "错误";
+	public override string HeadingDialogErrorWithoutContext => "é”™è¯¯";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.InvalidUsername"
 	/// Invalid Username
 	/// English String: "Invalid Username"
 	/// </summary>
-	public override string HeadingDialogInvalidUsername => "用户名无效";
+	public override string HeadingDialogInvalidUsername => "ç”¨æˆ·åæ— æ•ˆ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.RequestReceived"
 	/// Request Received
 	/// English String: "Request Received"
 	/// </summary>
-	public override string HeadingDialogRequestReceived => "请求已收到";
+	public override string HeadingDialogRequestReceived => "è¯·æ±‚å·²æ”¶åˆ°";
 
 	/// <summary>
 	/// Key: "Heading.HelpCategoryType"
 	/// Type of help category
 	/// English String: "Type of help category"
 	/// </summary>
-	public override string HeadingHelpCategoryType => "所需帮助类别";
+	public override string HeadingHelpCategoryType => "æ‰€éœ€å¸®åŠ©ç±»åˆ«";
 
 	/// <summary>
 	/// Key: "Heading.IssueDetails"
 	/// Issue Details
 	/// English String: "Issue Details"
 	/// </summary>
-	public override string HeadingIssueDetails => "问题详情";
+	public override string HeadingIssueDetails => "é—®é¢˜è¯¦æƒ…";
 
 	/// <summary>
 	/// Key: "Heading.PageTitle"
 	/// Contact Us
 	/// English String: "Contact Us"
 	/// </summary>
-	public override string HeadingPageTitle => "联系我们";
+	public override string HeadingPageTitle => "è”ç³»æˆ‘ä»¬";
 
 	/// <summary>
 	/// Key: "Label.AccountHacked"
 	/// Account Hacked
 	/// English String: "Account Hacked"
 	/// </summary>
-	public override string LabelAccountHacked => "帐户遭到黑客入侵";
+	public override string LabelAccountHacked => "å¸æˆ·é­åˆ°é»‘å®¢å…¥ä¾µ";
 
 	/// <summary>
 	/// Key: "Label.AccountOwnership"
 	/// Account Hacked or Can't Log in
 	/// English String: "Account Hacked or Can't Log in"
 	/// </summary>
-	public override string LabelAccountOwnership => "帐户遭到黑客入侵或无法登录";
+	public override string LabelAccountOwnership => "å¸æˆ·é­åˆ°é»‘å®¢å…¥ä¾µæˆ–æ— æ³•ç™»å½•";
 
 	/// <summary>
 	/// Key: "Label.AccountPin"
 	/// Account PIN
 	/// English String: "Account PIN"
 	/// </summary>
-	public override string LabelAccountPin => "帐户 PIN";
+	public override string LabelAccountPin => "å¸æˆ· PIN";
 
-	public override string LabelAdjustChildSettings => "调整儿童隐私和安全性设置";
+	public override string LabelAdjustChildSettings => "è°ƒæ•´å„¿ç«¥éšç§å’Œå®‰å…¨æ€§è®¾ç½®";
 
 	/// <summary>
 	/// Key: "Label.AmazonDevice"
 	/// Amazon Device
 	/// English String: "Amazon Device"
 	/// </summary>
-	public override string LabelAmazonDevice => "Amazon 设备";
+	public override string LabelAmazonDevice => "Amazon è®¾å¤‡";
 
 	/// <summary>
 	/// Key: "Label.AndroidPhone"
 	/// Android Phone
 	/// English String: "Android Phone"
 	/// </summary>
-	public override string LabelAndroidPhone => "Android 手机";
+	public override string LabelAndroidPhone => "Android æ‰‹æœº";
 
 	/// <summary>
 	/// Key: "Label.AndroidTablet"
 	/// Android Tablet
 	/// English String: "Android Tablet"
 	/// </summary>
-	public override string LabelAndroidTablet => "Android 平板电脑";
+	public override string LabelAndroidTablet => "Android å¹³æ¿ç”µè„‘";
 
 	/// <summary>
 	/// Key: "Label.AppealAccountContent"
 	/// Appeal Account or Content
 	/// English String: "Appeal Account or Content"
 	/// </summary>
-	public override string LabelAppealAccountContent => "帐户或内容申诉";
+	public override string LabelAppealAccountContent => "å¸æˆ·æˆ–å†…å®¹ç”³è¯‰";
 
 	/// <summary>
 	/// Key: "Label.AppealFriend"
 	/// Appeal for Friend
 	/// English String: "Appeal for Friend"
 	/// </summary>
-	public override string LabelAppealFriend => "为好友申诉";
+	public override string LabelAppealFriend => "ä¸ºå¥½å‹ç”³è¯‰";
 
-	public override string LabelBilling => "账单与付款";
+	public override string LabelBilling => "è´¦å•ä¸Žä»˜æ¬¾";
 
 	/// <summary>
 	/// Key: "Label.BugReport"
 	/// Bug Report
 	/// English String: "Bug Report"
 	/// </summary>
-	public override string LabelBugReport => "漏洞报告";
+	public override string LabelBugReport => "æ¼æ´žæŠ¥å‘Š";
 
 	/// <summary>
 	/// Key: "Label.BuildersClub"
@@ -169,30 +169,30 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Cancel Membership
 	/// English String: "Cancel Membership"
 	/// </summary>
-	public override string LabelCancelMembership => "取消会员资格";
+	public override string LabelCancelMembership => "å–æ¶ˆä¼šå‘˜èµ„æ ¼";
 
 	/// <summary>
 	/// Key: "Label.CannotInstall"
 	/// Cannot Install Roblox or Studio
 	/// English String: "Cannot Install Roblox or Studio"
 	/// </summary>
-	public override string LabelCannotInstall => "无法安装 Roblox 或 Studio";
+	public override string LabelCannotInstall => "æ— æ³•å®‰è£… Roblox æˆ– Studio";
 
 	/// <summary>
 	/// Key: "Label.CannotPlayGame"
 	/// Cannot Play Game
 	/// English String: "Cannot Play Game"
 	/// </summary>
-	public override string LabelCannotPlayGame => "无法玩游戏";
+	public override string LabelCannotPlayGame => "æ— æ³•çŽ©æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.ChangeChildAge"
 	/// Change Child Age
 	/// English String: "Change Child Age"
 	/// </summary>
-	public override string LabelChangeChildAge => "更改儿童年龄";
+	public override string LabelChangeChildAge => "æ›´æ”¹å„¿ç«¥å¹´é¾„";
 
-	public override string LabelChatAgeSettings => "聊天和年龄设置";
+	public override string LabelChatAgeSettings => "èŠå¤©å’Œå¹´é¾„è®¾ç½®";
 
 	/// <summary>
 	/// Key: "Label.Chromebook"
@@ -206,23 +206,23 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Confirm Email Address
 	/// English String: "Confirm Email Address"
 	/// </summary>
-	public override string LabelConfirmEmail => "确认电子邮件地址";
+	public override string LabelConfirmEmail => "ç¡®è®¤ç”µå­é‚®ä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.ContentAbuseReport"
 	/// Report Content Breaking Rules
 	/// English String: "Report Content Breaking Rules"
 	/// </summary>
-	public override string LabelContentAbuseReport => "举报违规内容";
+	public override string LabelContentAbuseReport => "ä¸¾æŠ¥è¿è§„å†…å®¹";
 
-	public override string LabelContest => "竞赛和活动";
+	public override string LabelContest => "ç«žèµ›å’Œæ´»åŠ¨";
 
 	/// <summary>
 	/// Key: "Label.ContestEventQuestion"
 	/// Question or Issue
 	/// English String: "Question or Issue"
 	/// </summary>
-	public override string LabelContestEventQuestion => "问题或困难";
+	public override string LabelContestEventQuestion => "é—®é¢˜æˆ–å›°éš¾";
 
 	/// <summary>
 	/// Key: "Label.CSCharacter"
@@ -236,7 +236,7 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Please describe your issue
 	/// English String: "Please describe your issue"
 	/// </summary>
-	public override string LabelDescribeIssue => "请描述你的问题";
+	public override string LabelDescribeIssue => "è¯·æè¿°ä½ çš„é—®é¢˜";
 
 	/// <summary>
 	/// Key: "Label.DevEx"
@@ -250,14 +250,14 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// DevEx How To
 	/// English String: "DevEx How To"
 	/// </summary>
-	public override string LabelDevExHowTo => "DevEx 使用说明";
+	public override string LabelDevExHowTo => "DevEx ä½¿ç”¨è¯´æ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.DevExMyRequest"
 	/// DevEx My Request
 	/// English String: "DevEx My Request"
 	/// </summary>
-	public override string LabelDevExMyRequest => "DevEx 我的请求";
+	public override string LabelDevExMyRequest => "DevEx æˆ‘çš„è¯·æ±‚";
 
 	/// <summary>
 	/// Key: "Label.DMCA"
@@ -271,86 +271,86 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Email Address
 	/// English String: "Email Address"
 	/// </summary>
-	public override string LabelEmailAddress => "电子邮件地址";
+	public override string LabelEmailAddress => "ç”µå­é‚®ä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.ExploitReport"
 	/// Exploit Report
 	/// English String: "Exploit Report"
 	/// </summary>
-	public override string LabelExploitReport => "举报外挂";
+	public override string LabelExploitReport => "ä¸¾æŠ¥å¤–æŒ‚";
 
 	/// <summary>
 	/// Key: "Label.FirstName"
 	/// First Name
 	/// English String: "First Name"
 	/// </summary>
-	public override string LabelFirstName => "名字";
+	public override string LabelFirstName => "åå­—";
 
 	/// <summary>
 	/// Key: "Label.ForgotPassword"
 	/// Forgot Password
 	/// English String: "Forgot Password"
 	/// </summary>
-	public override string LabelForgotPassword => "忘记密码";
+	public override string LabelForgotPassword => "å¿˜è®°å¯†ç ";
 
 	/// <summary>
 	/// Key: "Label.FreeRobux"
 	/// Free Robux
 	/// English String: "Free Robux"
 	/// </summary>
-	public override string LabelFreeRobux => "免费 Robux";
+	public override string LabelFreeRobux => "å…è´¹ Robux";
 
 	/// <summary>
 	/// Key: "Label.GameCredit"
 	/// Game Card
 	/// English String: "Game Card"
 	/// </summary>
-	public override string LabelGameCredit => "礼品卡";
+	public override string LabelGameCredit => "ç¤¼å“å¡";
 
 	/// <summary>
 	/// Key: "Label.GCPartialPayment"
 	/// Purchase - Split Payment
 	/// English String: "Purchase - Split Payment"
 	/// </summary>
-	public override string LabelGCPartialPayment => "购买 - 分期付款";
+	public override string LabelGCPartialPayment => "è´­ä¹° - åˆ†æœŸä»˜æ¬¾";
 
 	/// <summary>
 	/// Key: "Label.GCRedeem"
 	/// Game Card - Redeem
 	/// English String: "Game Card - Redeem"
 	/// </summary>
-	public override string LabelGCRedeem => "礼品卡 - 兑换";
+	public override string LabelGCRedeem => "ç¤¼å“å¡ - å…‘æ¢";
 
 	/// <summary>
 	/// Key: "Label.GCSpendCredit"
 	/// Game Card - Spend Credit
 	/// English String: "Game Card - Spend Credit"
 	/// </summary>
-	public override string LabelGCSpendCredit => "礼品卡 - 使用点数";
+	public override string LabelGCSpendCredit => "ç¤¼å“å¡ - ä½¿ç”¨ç‚¹æ•°";
 
 	/// <summary>
 	/// Key: "Label.HowTo"
 	/// How To
 	/// English String: "How To"
 	/// </summary>
-	public override string LabelHowTo => "使用说明";
+	public override string LabelHowTo => "ä½¿ç”¨è¯´æ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.HowToGeneral"
 	/// How To - General
 	/// English String: "How To - General"
 	/// </summary>
-	public override string LabelHowToGeneral => "使用说明 - 一般";
+	public override string LabelHowToGeneral => "ä½¿ç”¨è¯´æ˜Ž - ä¸€èˆ¬";
 
 	/// <summary>
 	/// Key: "Label.HowToOther"
 	/// How To - Other
 	/// English String: "How To - Other"
 	/// </summary>
-	public override string LabelHowToOther => "使用说明 - 其他";
+	public override string LabelHowToOther => "ä½¿ç”¨è¯´æ˜Ž - å…¶ä»–";
 
-	public override string LabelIdeasSuggestions => "创意和建议";
+	public override string LabelIdeasSuggestions => "åˆ›æ„å’Œå»ºè®®";
 
 	/// <summary>
 	/// Key: "Label.IPad"
@@ -371,14 +371,14 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Please describe the issue that you are facing. Include any relevant information like where the issue is occurring or the error message.
 	/// English String: "Please describe the issue that you are facing. Include any relevant information like where the issue is occurring or the error message."
 	/// </summary>
-	public override string LabelIssueDescription => "请描述你面临的问题。请附上任何相关信息，例如问题发生的位置或错误信息。";
+	public override string LabelIssueDescription => "è¯·æè¿°ä½ é¢ä¸´çš„é—®é¢˜ã€‚è¯·é™„ä¸Šä»»ä½•ç›¸å…³ä¿¡æ¯ï¼Œä¾‹å¦‚é—®é¢˜å‘ç”Ÿçš„ä½ç½®æˆ–é”™è¯¯ä¿¡æ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Label.IWasScammed"
 	/// I was Scammed
 	/// English String: "I was Scammed"
 	/// </summary>
-	public override string LabelIWasScammed => "我受到诈骗";
+	public override string LabelIWasScammed => "æˆ‘å—åˆ°è¯ˆéª—";
 
 	/// <summary>
 	/// Key: "Label.Mac"
@@ -392,28 +392,28 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Support page. Membership {{dc.field_membership}} stop_memb.
 	/// English String: "Membership"
 	/// </summary>
-	public override string LabelMembership => "会员资格";
+	public override string LabelMembership => "ä¼šå‘˜èµ„æ ¼";
 
 	/// <summary>
 	/// Key: "Label.Moderation"
 	/// Moderation
 	/// English String: "Moderation"
 	/// </summary>
-	public override string LabelModeration => "过滤";
+	public override string LabelModeration => "è¿‡æ»¤";
 
 	/// <summary>
 	/// Key: "Label.OtherSiteClaim"
 	/// Other Site Claim
 	/// English String: "Other Site Claim"
 	/// </summary>
-	public override string LabelOtherSiteClaim => "其他网站声明";
+	public override string LabelOtherSiteClaim => "å…¶ä»–ç½‘ç«™å£°æ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.OwnerDMCAClaim"
 	/// Owner DMCA Claim
 	/// English String: "Owner DMCA Claim"
 	/// </summary>
-	public override string LabelOwnerDMCAClaim => "数字千年版权法（DMCA）声明";
+	public override string LabelOwnerDMCAClaim => "æ•°å­—åƒå¹´ç‰ˆæƒæ³•ï¼ˆDMCAï¼‰å£°æ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.PC"
@@ -427,63 +427,63 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Physical Toy Issue
 	/// English String: "Physical Toy Issue"
 	/// </summary>
-	public override string LabelPhysicalToyIssue => "实物玩具问题";
+	public override string LabelPhysicalToyIssue => "å®žç‰©çŽ©å…·é—®é¢˜";
 
 	/// <summary>
 	/// Key: "Label.PleaseSelect"
 	/// Please Select...
 	/// English String: "Please Select..."
 	/// </summary>
-	public override string LabelPleaseSelect => "请选择...";
+	public override string LabelPleaseSelect => "è¯·é€‰æ‹©...";
 
 	/// <summary>
 	/// Key: "Label.PrizeNotReceived"
 	/// Prize Not Received
 	/// English String: "Prize Not Received"
 	/// </summary>
-	public override string LabelPrizeNotReceived => "奖品未收到";
+	public override string LabelPrizeNotReceived => "å¥–å“æœªæ”¶åˆ°";
 
 	/// <summary>
 	/// Key: "Label.PurchaseDeclined"
 	/// Purchase - Declined
 	/// English String: "Purchase - Declined"
 	/// </summary>
-	public override string LabelPurchaseDeclined => "购买 - 遭拒";
+	public override string LabelPurchaseDeclined => "è´­ä¹° - é­æ‹’";
 
 	/// <summary>
 	/// Key: "Label.PurchaseDidNotReceive"
 	/// Purchase - Did Not Receive
 	/// English String: "Purchase - Did Not Receive"
 	/// </summary>
-	public override string LabelPurchaseDidNotReceive => "购买 - 未收到";
+	public override string LabelPurchaseDidNotReceive => "è´­ä¹° - æœªæ”¶åˆ°";
 
 	/// <summary>
 	/// Key: "Label.PurchaseUnauthorizedCharge"
 	/// Purchase - Unauthorized Charge
 	/// English String: "Purchase - Unauthorized Charge"
 	/// </summary>
-	public override string LabelPurchaseUnauthorizedCharge => "购买 - 未许可收费";
+	public override string LabelPurchaseUnauthorizedCharge => "è´­ä¹° - æœªè®¸å¯æ”¶è´¹";
 
 	/// <summary>
 	/// Key: "Label.ReportPhish"
 	/// Report Phishing Site
 	/// English String: "Report Phishing Site"
 	/// </summary>
-	public override string LabelReportPhish => "举报网络钓鱼网站";
+	public override string LabelReportPhish => "ä¸¾æŠ¥ç½‘ç»œé’“é±¼ç½‘ç«™";
 
 	/// <summary>
 	/// Key: "Label.RobloxCrashing"
 	/// Roblox Crashing
 	/// English String: "Roblox Crashing"
 	/// </summary>
-	public override string LabelRobloxCrashing => "Roblox 崩溃";
+	public override string LabelRobloxCrashing => "Roblox å´©æºƒ";
 
 	/// <summary>
 	/// Key: "Label.RobloxToys"
 	/// Roblox Toys
 	/// English String: "Roblox Toys"
 	/// </summary>
-	public override string LabelRobloxToys => "Roblox 玩具";
+	public override string LabelRobloxToys => "Roblox çŽ©å…·";
 
 	/// <summary>
 	/// Key: "Label.Robux"
@@ -497,98 +497,98 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Robux - Purchase Issue
 	/// English String: "Robux - Purchase Issue"
 	/// </summary>
-	public override string LabelRobuxPurchaseIssue => "Robux - 购买问题";
+	public override string LabelRobuxPurchaseIssue => "Robux - è´­ä¹°é—®é¢˜";
 
 	/// <summary>
 	/// Key: "Label.SafetyInquiry"
 	/// Inappropriate game or user behavior
 	/// English String: "Inappropriate game or user behavior"
 	/// </summary>
-	public override string LabelSafetyInquiry => "游戏或用户行为不当";
+	public override string LabelSafetyInquiry => "æ¸¸æˆæˆ–ç”¨æˆ·è¡Œä¸ºä¸å½“";
 
 	/// <summary>
 	/// Key: "Label.SafetyQueueTicket"
 	/// User Safety Concern
 	/// English String: "User Safety Concern"
 	/// </summary>
-	public override string LabelSafetyQueueTicket => "用户安全疑虑";
+	public override string LabelSafetyQueueTicket => "ç”¨æˆ·å®‰å…¨ç–‘è™‘";
 
 	/// <summary>
 	/// Key: "Label.SpecificGameIssue"
 	/// Specific Game Issue
 	/// English String: "Specific Game Issue"
 	/// </summary>
-	public override string LabelSpecificGameIssue => "特定游戏问题";
+	public override string LabelSpecificGameIssue => "ç‰¹å®šæ¸¸æˆé—®é¢˜";
 
 	/// <summary>
 	/// Key: "Label.Submit"
 	/// Submit
 	/// English String: "Submit"
 	/// </summary>
-	public override string LabelSubmit => "提交";
+	public override string LabelSubmit => "æäº¤";
 
 	/// <summary>
 	/// Key: "Label.SuggestFeature"
 	/// Feature Suggestion
 	/// English String: "Feature Suggestion"
 	/// </summary>
-	public override string LabelSuggestFeature => "功能建议";
+	public override string LabelSuggestFeature => "åŠŸèƒ½å»ºè®®";
 
 	/// <summary>
 	/// Key: "Label.SuggestFeedback"
 	/// Feedback
 	/// English String: "Feedback"
 	/// </summary>
-	public override string LabelSuggestFeedback => "反馈";
+	public override string LabelSuggestFeedback => "åé¦ˆ";
 
 	/// <summary>
 	/// Key: "Label.TechnicalSupport"
 	/// Technical Support
 	/// English String: "Technical Support"
 	/// </summary>
-	public override string LabelTechnicalSupport => "技术支持";
+	public override string LabelTechnicalSupport => "æŠ€æœ¯æ”¯æŒ";
 
 	/// <summary>
 	/// Key: "Label.ToyCodeIssue"
 	/// Toy Code Issue
 	/// English String: "Toy Code Issue"
 	/// </summary>
-	public override string LabelToyCodeIssue => "玩具代码问题";
+	public override string LabelToyCodeIssue => "çŽ©å…·ä»£ç é—®é¢˜";
 
 	/// <summary>
 	/// Key: "Label.TwoStepV"
 	/// 2-Step Verification
 	/// English String: "2-Step Verification"
 	/// </summary>
-	public override string LabelTwoStepV => "两步验证";
+	public override string LabelTwoStepV => "ä¸¤æ­¥éªŒè¯";
 
 	/// <summary>
 	/// Key: "Label.UserAbuseReport"
 	/// Report User Breaking Rules
 	/// English String: "Report User Breaking Rules"
 	/// </summary>
-	public override string LabelUserAbuseReport => "举报违规用户";
+	public override string LabelUserAbuseReport => "ä¸¾æŠ¥è¿è§„ç”¨æˆ·";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// Username
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "用户名";
+	public override string LabelUsername => "ç”¨æˆ·å";
 
 	/// <summary>
 	/// Key: "Label.VCCatalog"
 	/// Website Item
 	/// English String: "Website Item"
 	/// </summary>
-	public override string LabelVCCatalog => "网站道具";
+	public override string LabelVCCatalog => "ç½‘ç«™é“å…·";
 
 	/// <summary>
 	/// Key: "Label.VCInGame"
 	/// In-Game Item
 	/// English String: "In-Game Item"
 	/// </summary>
-	public override string LabelVCInGame => "游戏内道具";
+	public override string LabelVCInGame => "æ¸¸æˆå†…é“å…·";
 
 	/// <summary>
 	/// Key: "Label.Xbox"
@@ -602,70 +602,70 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 	/// Something went wrong, please try again later.
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string ResponseDialogErrorWithoutContext => "发生错误，请稍后重试。";
+	public override string ResponseDialogErrorWithoutContext => "å‘ç”Ÿé”™è¯¯ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidUsername"
 	/// Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker.
 	/// English String: "Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker."
 	/// </summary>
-	public override string ResponseDialogInvalidUsername => "按下“发送”提交票单，或按下“取消”编辑用户名。用户名是非常重要的信息，有助于加快解决你的问题。";
+	public override string ResponseDialogInvalidUsername => "æŒ‰ä¸‹â€œå‘é€â€æäº¤ç¥¨å•ï¼Œæˆ–æŒ‰ä¸‹â€œå–æ¶ˆâ€ç¼–è¾‘ç”¨æˆ·åã€‚ç”¨æˆ·åæ˜¯éžå¸¸é‡è¦çš„ä¿¡æ¯ï¼Œæœ‰åŠ©äºŽåŠ å¿«è§£å†³ä½ çš„é—®é¢˜ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.RequestReceived"
 	/// Thank you for contacting Roblox. Please check your email for a message from Customer Service.
 	/// English String: "Thank you for contacting Roblox. Please check your email for a message from Customer Service."
 	/// </summary>
-	public override string ResponseDialogRequestReceived => "感谢你联系 Roblox。请查看你的电子邮件以查看客户服务发来的信息。";
+	public override string ResponseDialogRequestReceived => "æ„Ÿè°¢ä½ è”ç³» Robloxã€‚è¯·æŸ¥çœ‹ä½ çš„ç”µå­é‚®ä»¶ä»¥æŸ¥çœ‹å®¢æˆ·æœåŠ¡å‘æ¥çš„ä¿¡æ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TooManyAttemptsError"
 	/// Too many attempts. Try again later.
 	/// English String: "Too many attempts. Try again later."
 	/// </summary>
-	public override string ResponseDialogTooManyAttemptsError => "尝试次数过多，请稍后重试。";
+	public override string ResponseDialogTooManyAttemptsError => "å°è¯•æ¬¡æ•°è¿‡å¤šï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TryAgainError"
 	/// An error occurred. Try again later.
 	/// English String: "An error occurred. Try again later."
 	/// </summary>
-	public override string ResponseDialogTryAgainError => "发生错误，请稍后重试。";
+	public override string ResponseDialogTryAgainError => "å‘ç”Ÿé”™è¯¯ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Response.EmailFormatError"
 	/// Please enter a properly formatted email address
 	/// English String: "Please enter a properly formatted email address"
 	/// </summary>
-	public override string ResponseEmailFormatError => "请输入格式正确的电子邮件地址";
+	public override string ResponseEmailFormatError => "è¯·è¾“å…¥æ ¼å¼æ­£ç¡®çš„ç”µå­é‚®ä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Response.EmailNotMatching"
 	/// Email address does not match
 	/// English String: "Email address does not match"
 	/// </summary>
-	public override string ResponseEmailNotMatching => "电子邮件地址不符";
+	public override string ResponseEmailNotMatching => "ç”µå­é‚®ä»¶åœ°å€ä¸ç¬¦";
 
 	/// <summary>
 	/// Key: "Response.InvalidFirstName"
 	/// Please enter a valid first name
 	/// English String: "Please enter a valid first name"
 	/// </summary>
-	public override string ResponseInvalidFirstName => "请输入有效名字";
+	public override string ResponseInvalidFirstName => "è¯·è¾“å…¥æœ‰æ•ˆåå­—";
 
 	/// <summary>
 	/// Key: "Response.InvalidUsername"
 	/// That doesn't appear to be a valid Roblox username.
 	/// English String: "That doesn't appear to be a valid Roblox username."
 	/// </summary>
-	public override string ResponseInvalidUsername => "那好像不是有效的 Roblox 用户名。";
+	public override string ResponseInvalidUsername => "é‚£å¥½åƒä¸æ˜¯æœ‰æ•ˆçš„ Roblox ç”¨æˆ·åã€‚";
 
 	/// <summary>
 	/// Key: "Response.Under13Email"
 	/// If you are under 13 years old, please provide your parent's email address
 	/// English String: "If you are under 13 years old, please provide your parent's email address"
 	/// </summary>
-	public override string ResponseUnder13Email => "如果你未满 13 岁，请提供家长的电子邮件地址";
+	public override string ResponseUnder13Email => "å¦‚æžœä½ æœªæ»¡ 13 å²ï¼Œè¯·æä¾›å®¶é•¿çš„ç”µå­é‚®ä»¶åœ°å€";
 
 	public SupportResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -674,117 +674,117 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForActionDialogCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionDialogOK()
 	{
-		return "好";
+		return "å¥½";
 	}
 
 	protected override string _GetTemplateForActionDialogSend()
 	{
-		return "发送";
+		return "å‘é€";
 	}
 
 	protected override string _GetTemplateForHeadingContactInformation()
 	{
-		return "联系信息";
+		return "è”ç³»ä¿¡æ¯";
 	}
 
 	protected override string _GetTemplateForHeadingDescriptionOfIssue()
 	{
-		return "问题描述";
+		return "é—®é¢˜æè¿°";
 	}
 
 	protected override string _GetTemplateForHeadingDeviceWithProblem()
 	{
-		return "你在什么设备上遇到问题？";
+		return "ä½ åœ¨ä»€ä¹ˆè®¾å¤‡ä¸Šé‡åˆ°é—®é¢˜ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogErrorWithoutContext()
 	{
-		return "错误";
+		return "é”™è¯¯";
 	}
 
 	protected override string _GetTemplateForHeadingDialogInvalidUsername()
 	{
-		return "用户名无效";
+		return "ç”¨æˆ·åæ— æ•ˆ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogRequestReceived()
 	{
-		return "请求已收到";
+		return "è¯·æ±‚å·²æ”¶åˆ°";
 	}
 
 	protected override string _GetTemplateForHeadingHelpCategoryType()
 	{
-		return "所需帮助类别";
+		return "æ‰€éœ€å¸®åŠ©ç±»åˆ«";
 	}
 
 	protected override string _GetTemplateForHeadingIssueDetails()
 	{
-		return "问题详情";
+		return "é—®é¢˜è¯¦æƒ…";
 	}
 
 	protected override string _GetTemplateForHeadingPageTitle()
 	{
-		return "联系我们";
+		return "è”ç³»æˆ‘ä»¬";
 	}
 
 	protected override string _GetTemplateForLabelAccountHacked()
 	{
-		return "帐户遭到黑客入侵";
+		return "å¸æˆ·é­åˆ°é»‘å®¢å…¥ä¾µ";
 	}
 
 	protected override string _GetTemplateForLabelAccountOwnership()
 	{
-		return "帐户遭到黑客入侵或无法登录";
+		return "å¸æˆ·é­åˆ°é»‘å®¢å…¥ä¾µæˆ–æ— æ³•ç™»å½•";
 	}
 
 	protected override string _GetTemplateForLabelAccountPin()
 	{
-		return "帐户 PIN";
+		return "å¸æˆ· PIN";
 	}
 
 	protected override string _GetTemplateForLabelAdjustChildSettings()
 	{
-		return "调整儿童隐私和安全性设置";
+		return "è°ƒæ•´å„¿ç«¥éšç§å’Œå®‰å…¨æ€§è®¾ç½®";
 	}
 
 	protected override string _GetTemplateForLabelAmazonDevice()
 	{
-		return "Amazon 设备";
+		return "Amazon è®¾å¤‡";
 	}
 
 	protected override string _GetTemplateForLabelAndroidPhone()
 	{
-		return "Android 手机";
+		return "Android æ‰‹æœº";
 	}
 
 	protected override string _GetTemplateForLabelAndroidTablet()
 	{
-		return "Android 平板电脑";
+		return "Android å¹³æ¿ç”µè„‘";
 	}
 
 	protected override string _GetTemplateForLabelAppealAccountContent()
 	{
-		return "帐户或内容申诉";
+		return "å¸æˆ·æˆ–å†…å®¹ç”³è¯‰";
 	}
 
 	protected override string _GetTemplateForLabelAppealFriend()
 	{
-		return "为好友申诉";
+		return "ä¸ºå¥½å‹ç”³è¯‰";
 	}
 
 	protected override string _GetTemplateForLabelBilling()
 	{
-		return "账单与付款";
+		return "è´¦å•ä¸Žä»˜æ¬¾";
 	}
 
 	protected override string _GetTemplateForLabelBugReport()
 	{
-		return "漏洞报告";
+		return "æ¼æ´žæŠ¥å‘Š";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClub()
@@ -794,27 +794,27 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelCancelMembership()
 	{
-		return "取消会员资格";
+		return "å–æ¶ˆä¼šå‘˜èµ„æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelCannotInstall()
 	{
-		return "无法安装 Roblox 或 Studio";
+		return "æ— æ³•å®‰è£… Roblox æˆ– Studio";
 	}
 
 	protected override string _GetTemplateForLabelCannotPlayGame()
 	{
-		return "无法玩游戏";
+		return "æ— æ³•çŽ©æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelChangeChildAge()
 	{
-		return "更改儿童年龄";
+		return "æ›´æ”¹å„¿ç«¥å¹´é¾„";
 	}
 
 	protected override string _GetTemplateForLabelChatAgeSettings()
 	{
-		return "聊天和年龄设置";
+		return "èŠå¤©å’Œå¹´é¾„è®¾ç½®";
 	}
 
 	protected override string _GetTemplateForLabelChromebook()
@@ -824,22 +824,22 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelConfirmEmail()
 	{
-		return "确认电子邮件地址";
+		return "ç¡®è®¤ç”µå­é‚®ä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelContentAbuseReport()
 	{
-		return "举报违规内容";
+		return "ä¸¾æŠ¥è¿è§„å†…å®¹";
 	}
 
 	protected override string _GetTemplateForLabelContest()
 	{
-		return "竞赛和活动";
+		return "ç«žèµ›å’Œæ´»åŠ¨";
 	}
 
 	protected override string _GetTemplateForLabelContestEventQuestion()
 	{
-		return "问题或困难";
+		return "é—®é¢˜æˆ–å›°éš¾";
 	}
 
 	protected override string _GetTemplateForLabelCSCharacter()
@@ -849,7 +849,7 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelDescribeIssue()
 	{
-		return "请描述你的问题";
+		return "è¯·æè¿°ä½ çš„é—®é¢˜";
 	}
 
 	protected override string _GetTemplateForLabelDevEx()
@@ -859,12 +859,12 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelDevExHowTo()
 	{
-		return "DevEx 使用说明";
+		return "DevEx ä½¿ç”¨è¯´æ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelDevExMyRequest()
 	{
-		return "DevEx 我的请求";
+		return "DevEx æˆ‘çš„è¯·æ±‚";
 	}
 
 	protected override string _GetTemplateForLabelDMCA()
@@ -874,67 +874,67 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelEmailAddress()
 	{
-		return "电子邮件地址";
+		return "ç”µå­é‚®ä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelExploitReport()
 	{
-		return "举报外挂";
+		return "ä¸¾æŠ¥å¤–æŒ‚";
 	}
 
 	protected override string _GetTemplateForLabelFirstName()
 	{
-		return "名字";
+		return "åå­—";
 	}
 
 	protected override string _GetTemplateForLabelForgotPassword()
 	{
-		return "忘记密码";
+		return "å¿˜è®°å¯†ç ";
 	}
 
 	protected override string _GetTemplateForLabelFreeRobux()
 	{
-		return "免费 Robux";
+		return "å…è´¹ Robux";
 	}
 
 	protected override string _GetTemplateForLabelGameCredit()
 	{
-		return "礼品卡";
+		return "ç¤¼å“å¡";
 	}
 
 	protected override string _GetTemplateForLabelGCPartialPayment()
 	{
-		return "购买 - 分期付款";
+		return "è´­ä¹° - åˆ†æœŸä»˜æ¬¾";
 	}
 
 	protected override string _GetTemplateForLabelGCRedeem()
 	{
-		return "礼品卡 - 兑换";
+		return "ç¤¼å“å¡ - å…‘æ¢";
 	}
 
 	protected override string _GetTemplateForLabelGCSpendCredit()
 	{
-		return "礼品卡 - 使用点数";
+		return "ç¤¼å“å¡ - ä½¿ç”¨ç‚¹æ•°";
 	}
 
 	protected override string _GetTemplateForLabelHowTo()
 	{
-		return "使用说明";
+		return "ä½¿ç”¨è¯´æ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelHowToGeneral()
 	{
-		return "使用说明 - 一般";
+		return "ä½¿ç”¨è¯´æ˜Ž - ä¸€èˆ¬";
 	}
 
 	protected override string _GetTemplateForLabelHowToOther()
 	{
-		return "使用说明 - 其他";
+		return "ä½¿ç”¨è¯´æ˜Ž - å…¶ä»–";
 	}
 
 	protected override string _GetTemplateForLabelIdeasSuggestions()
 	{
-		return "创意和建议";
+		return "åˆ›æ„å’Œå»ºè®®";
 	}
 
 	protected override string _GetTemplateForLabelIPad()
@@ -949,12 +949,12 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelIssueDescription()
 	{
-		return "请描述你面临的问题。请附上任何相关信息，例如问题发生的位置或错误信息。";
+		return "è¯·æè¿°ä½ é¢ä¸´çš„é—®é¢˜ã€‚è¯·é™„ä¸Šä»»ä½•ç›¸å…³ä¿¡æ¯ï¼Œä¾‹å¦‚é—®é¢˜å‘ç”Ÿçš„ä½ç½®æˆ–é”™è¯¯ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelIWasScammed()
 	{
-		return "我受到诈骗";
+		return "æˆ‘å—åˆ°è¯ˆéª—";
 	}
 
 	protected override string _GetTemplateForLabelMac()
@@ -964,22 +964,22 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelMembership()
 	{
-		return "会员资格";
+		return "ä¼šå‘˜èµ„æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelModeration()
 	{
-		return "过滤";
+		return "è¿‡æ»¤";
 	}
 
 	protected override string _GetTemplateForLabelOtherSiteClaim()
 	{
-		return "其他网站声明";
+		return "å…¶ä»–ç½‘ç«™å£°æ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelOwnerDMCAClaim()
 	{
-		return "数字千年版权法（DMCA）声明";
+		return "æ•°å­—åƒå¹´ç‰ˆæƒæ³•ï¼ˆDMCAï¼‰å£°æ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelPC()
@@ -989,47 +989,47 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelPhysicalToyIssue()
 	{
-		return "实物玩具问题";
+		return "å®žç‰©çŽ©å…·é—®é¢˜";
 	}
 
 	protected override string _GetTemplateForLabelPleaseSelect()
 	{
-		return "请选择...";
+		return "è¯·é€‰æ‹©...";
 	}
 
 	protected override string _GetTemplateForLabelPrizeNotReceived()
 	{
-		return "奖品未收到";
+		return "å¥–å“æœªæ”¶åˆ°";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseDeclined()
 	{
-		return "购买 - 遭拒";
+		return "è´­ä¹° - é­æ‹’";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseDidNotReceive()
 	{
-		return "购买 - 未收到";
+		return "è´­ä¹° - æœªæ”¶åˆ°";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseUnauthorizedCharge()
 	{
-		return "购买 - 未许可收费";
+		return "è´­ä¹° - æœªè®¸å¯æ”¶è´¹";
 	}
 
 	protected override string _GetTemplateForLabelReportPhish()
 	{
-		return "举报网络钓鱼网站";
+		return "ä¸¾æŠ¥ç½‘ç»œé’“é±¼ç½‘ç«™";
 	}
 
 	protected override string _GetTemplateForLabelRobloxCrashing()
 	{
-		return "Roblox 崩溃";
+		return "Roblox å´©æºƒ";
 	}
 
 	protected override string _GetTemplateForLabelRobloxToys()
 	{
-		return "Roblox 玩具";
+		return "Roblox çŽ©å…·";
 	}
 
 	protected override string _GetTemplateForLabelRobux()
@@ -1039,72 +1039,72 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelRobuxPurchaseIssue()
 	{
-		return "Robux - 购买问题";
+		return "Robux - è´­ä¹°é—®é¢˜";
 	}
 
 	protected override string _GetTemplateForLabelSafetyInquiry()
 	{
-		return "游戏或用户行为不当";
+		return "æ¸¸æˆæˆ–ç”¨æˆ·è¡Œä¸ºä¸å½“";
 	}
 
 	protected override string _GetTemplateForLabelSafetyQueueTicket()
 	{
-		return "用户安全疑虑";
+		return "ç”¨æˆ·å®‰å…¨ç–‘è™‘";
 	}
 
 	protected override string _GetTemplateForLabelSpecificGameIssue()
 	{
-		return "特定游戏问题";
+		return "ç‰¹å®šæ¸¸æˆé—®é¢˜";
 	}
 
 	protected override string _GetTemplateForLabelSubmit()
 	{
-		return "提交";
+		return "æäº¤";
 	}
 
 	protected override string _GetTemplateForLabelSuggestFeature()
 	{
-		return "功能建议";
+		return "åŠŸèƒ½å»ºè®®";
 	}
 
 	protected override string _GetTemplateForLabelSuggestFeedback()
 	{
-		return "反馈";
+		return "åé¦ˆ";
 	}
 
 	protected override string _GetTemplateForLabelTechnicalSupport()
 	{
-		return "技术支持";
+		return "æŠ€æœ¯æ”¯æŒ";
 	}
 
 	protected override string _GetTemplateForLabelToyCodeIssue()
 	{
-		return "玩具代码问题";
+		return "çŽ©å…·ä»£ç é—®é¢˜";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepV()
 	{
-		return "两步验证";
+		return "ä¸¤æ­¥éªŒè¯";
 	}
 
 	protected override string _GetTemplateForLabelUserAbuseReport()
 	{
-		return "举报违规用户";
+		return "ä¸¾æŠ¥è¿è§„ç”¨æˆ·";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "用户名";
+		return "ç”¨æˆ·å";
 	}
 
 	protected override string _GetTemplateForLabelVCCatalog()
 	{
-		return "网站道具";
+		return "ç½‘ç«™é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelVCInGame()
 	{
-		return "游戏内道具";
+		return "æ¸¸æˆå†…é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelXbox()
@@ -1114,51 +1114,54 @@ internal class SupportResources_zh_cn : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForResponseDialogErrorWithoutContext()
 	{
-		return "发生错误，请稍后重试。";
+		return "å‘ç”Ÿé”™è¯¯ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidUsername()
 	{
-		return "按下“发送”提交票单，或按下“取消”编辑用户名。用户名是非常重要的信息，有助于加快解决你的问题。";
+		return "æŒ‰ä¸‹â€œå‘é€â€æäº¤ç¥¨å•ï¼Œæˆ–æŒ‰ä¸‹â€œå–æ¶ˆâ€ç¼–è¾‘ç”¨æˆ·åã€‚ç”¨æˆ·åæ˜¯éžå¸¸é‡è¦çš„ä¿¡æ¯ï¼Œæœ‰åŠ©äºŽåŠ å¿«è§£å†³ä½ çš„é—®é¢˜ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogRequestReceived()
 	{
-		return "感谢你联系 Roblox。请查看你的电子邮件以查看客户服务发来的信息。";
+		return "æ„Ÿè°¢ä½ è”ç³» Robloxã€‚è¯·æŸ¥çœ‹ä½ çš„ç”µå­é‚®ä»¶ä»¥æŸ¥çœ‹å®¢æˆ·æœåŠ¡å‘æ¥çš„ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogTooManyAttemptsError()
 	{
-		return "尝试次数过多，请稍后重试。";
+		return "å°è¯•æ¬¡æ•°è¿‡å¤šï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogTryAgainError()
 	{
-		return "发生错误，请稍后重试。";
+		return "å‘ç”Ÿé”™è¯¯ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseEmailFormatError()
 	{
-		return "请输入格式正确的电子邮件地址";
+		return "è¯·è¾“å…¥æ ¼å¼æ­£ç¡®çš„ç”µå­é‚®ä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForResponseEmailNotMatching()
 	{
-		return "电子邮件地址不符";
+		return "ç”µå­é‚®ä»¶åœ°å€ä¸ç¬¦";
 	}
 
 	protected override string _GetTemplateForResponseInvalidFirstName()
 	{
-		return "请输入有效名字";
+		return "è¯·è¾“å…¥æœ‰æ•ˆåå­—";
 	}
 
 	protected override string _GetTemplateForResponseInvalidUsername()
 	{
-		return "那好像不是有效的 Roblox 用户名。";
+		return "é‚£å¥½åƒä¸æ˜¯æœ‰æ•ˆçš„ Roblox ç”¨æˆ·åã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUnder13Email()
 	{
-		return "如果你未满 13 岁，请提供家长的电子邮件地址";
+		return "å¦‚æžœä½ æœªæ»¡ 13 å²ï¼Œè¯·æä¾›å®¶é•¿çš„ç”µå­é‚®ä»¶åœ°å€";
 	}
+}
+
+
 }

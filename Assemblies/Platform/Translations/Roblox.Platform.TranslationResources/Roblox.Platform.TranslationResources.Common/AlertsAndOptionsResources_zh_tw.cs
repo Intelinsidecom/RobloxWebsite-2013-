@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class AlertsAndOptionsResources_zh_tw : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sBuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string LabelsBuyRobux => "購買 Robux";
+	public override string LabelsBuyRobux => "è³¼è²· Robux";
 
 	/// <summary>
 	/// Key: "Label.sHelp"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelsHelp => "協助";
+	public override string LabelsHelp => "å”åŠ©";
 
 	/// <summary>
 	/// Key: "Label.sLogout"
 	/// English String: "Logout"
 	/// </summary>
-	public override string LabelsLogout => "登出";
+	public override string LabelsLogout => "ç™»å‡º";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -34,7 +34,7 @@ internal class AlertsAndOptionsResources_zh_tw : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelsSettings => "設定";
+	public override string LabelsSettings => "è¨­å®š";
 
 	public AlertsAndOptionsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -43,17 +43,17 @@ internal class AlertsAndOptionsResources_zh_tw : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsBuyRobux()
 	{
-		return "購買 Robux";
+		return "è³¼è²· Robux";
 	}
 
 	protected override string _GetTemplateForLabelsHelp()
 	{
-		return "協助";
+		return "å”åŠ©";
 	}
 
 	protected override string _GetTemplateForLabelsLogout()
 	{
-		return "登出";
+		return "ç™»å‡º";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -63,7 +63,7 @@ internal class AlertsAndOptionsResources_zh_tw : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue} Robux"
+	/// English String: "{robuxValue}Â Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{
@@ -77,6 +77,9 @@ internal class AlertsAndOptionsResources_zh_tw : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsSettings()
 	{
-		return "設定";
+		return "è¨­å®š";
 	}
+}
+
+
 }

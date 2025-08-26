@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,13 +16,13 @@ internal class AlertsAndOptionsResources_vi_vn : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sHelp"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelsHelp => "Trợ giúp";
+	public override string LabelsHelp => "Trá»£ giÃºp";
 
 	/// <summary>
 	/// Key: "Label.sLogout"
 	/// English String: "Logout"
 	/// </summary>
-	public override string LabelsLogout => "Đăng xuất";
+	public override string LabelsLogout => "ÄÄƒng xuáº¥t";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -34,7 +34,7 @@ internal class AlertsAndOptionsResources_vi_vn : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelsSettings => "Cài đặt";
+	public override string LabelsSettings => "CÃ i Ä‘áº·t";
 
 	public AlertsAndOptionsResources_vi_vn(TranslationResourceState state)
 		: base(state)
@@ -48,12 +48,12 @@ internal class AlertsAndOptionsResources_vi_vn : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsHelp()
 	{
-		return "Trợ giúp";
+		return "Trá»£ giÃºp";
 	}
 
 	protected override string _GetTemplateForLabelsLogout()
 	{
-		return "Đăng xuất";
+		return "ÄÄƒng xuáº¥t";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -63,7 +63,7 @@ internal class AlertsAndOptionsResources_vi_vn : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue} Robux"
+	/// English String: "{robuxValue}Â Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{
@@ -77,6 +77,9 @@ internal class AlertsAndOptionsResources_vi_vn : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsSettings()
 	{
-		return "Cài đặt";
+		return "CÃ i Ä‘áº·t";
 	}
+}
+
+
 }

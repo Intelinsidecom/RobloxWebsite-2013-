@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLanguagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,67 +10,67 @@ internal class GameLanguagesResources_ja_jp : GameLanguagesResources_en_us, IGam
 	/// Key: "Action.AddLanguage"
 	/// English String: "Add Language"
 	/// </summary>
-	public override string ActionAddLanguage => "言語を追加";
+	public override string ActionAddLanguage => "è¨€èªžã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "キャンセル";
+	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "削除";
+	public override string ActionDelete => "å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Action.ManageTranslations"
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string ActionManageTranslations => "翻訳を管理";
+	public override string ActionManageTranslations => "ç¿»è¨³ã‚’ç®¡ç†";
 
 	/// <summary>
 	/// Key: "Description.NoLanguages"
 	/// English String: "Please add languages you want your game to support."
 	/// </summary>
-	public override string DescriptionNoLanguages => "対応させたい言語を追加してください。";
+	public override string DescriptionNoLanguages => "å¯¾å¿œã•ã›ãŸã„è¨€èªžã‚’è¿½åŠ ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.DeleteLanguage"
 	/// English String: "Delete Language"
 	/// </summary>
-	public override string HeadingDeleteLanguage => "言語を削除";
+	public override string HeadingDeleteLanguage => "è¨€èªžã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Heading.SupportedLanguages"
 	/// English String: "Supported Languages"
 	/// </summary>
-	public override string HeadingSupportedLanguages => "対応言語";
+	public override string HeadingSupportedLanguages => "å¯¾å¿œè¨€èªž";
 
 	/// <summary>
 	/// Key: "Heading.TranslatedLanguages"
 	/// English String: "Translated Languages"
 	/// </summary>
-	public override string HeadingTranslatedLanguages => "翻訳済みの言語";
+	public override string HeadingTranslatedLanguages => "ç¿»è¨³æ¸ˆã¿ã®è¨€èªž";
 
 	/// <summary>
 	/// Key: "Label.Languages"
 	/// English String: "Languages"
 	/// </summary>
-	public override string LabelLanguages => "言語";
+	public override string LabelLanguages => "è¨€èªž";
 
 	/// <summary>
 	/// Key: "Label.SelectLanguage"
 	/// English String: "Select Language"
 	/// </summary>
-	public override string LabelSelectLanguage => "言語を選択";
+	public override string LabelSelectLanguage => "è¨€èªžã‚’é¸æŠž";
 
 	/// <summary>
 	/// Key: "Message.DeleteLanguageWarning"
 	/// English String: "All translations for this language will be deleted. This action is irreversible."
 	/// </summary>
-	public override string MessageDeleteLanguageWarning => "この言語のすべての翻訳が削除されます。この操作は元に戻せません。";
+	public override string MessageDeleteLanguageWarning => "ã“ã®è¨€èªžã®ã™ã¹ã¦ã®ç¿»è¨³ãŒå‰Šé™¤ã•ã‚Œã¾ã™ã€‚ã“ã®æ“ä½œã¯å…ƒã«æˆ»ã›ã¾ã›ã‚“ã€‚";
 
 	public GameLanguagesResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -79,56 +79,59 @@ internal class GameLanguagesResources_ja_jp : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForActionAddLanguage()
 	{
-		return "言語を追加";
+		return "è¨€èªžã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "削除";
+		return "å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForActionManageTranslations()
 	{
-		return "翻訳を管理";
+		return "ç¿»è¨³ã‚’ç®¡ç†";
 	}
 
 	protected override string _GetTemplateForDescriptionNoLanguages()
 	{
-		return "対応させたい言語を追加してください。";
+		return "å¯¾å¿œã•ã›ãŸã„è¨€èªžã‚’è¿½åŠ ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingDeleteLanguage()
 	{
-		return "言語を削除";
+		return "è¨€èªžã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForHeadingSupportedLanguages()
 	{
-		return "対応言語";
+		return "å¯¾å¿œè¨€èªž";
 	}
 
 	protected override string _GetTemplateForHeadingTranslatedLanguages()
 	{
-		return "翻訳済みの言語";
+		return "ç¿»è¨³æ¸ˆã¿ã®è¨€èªž";
 	}
 
 	protected override string _GetTemplateForLabelLanguages()
 	{
-		return "言語";
+		return "è¨€èªž";
 	}
 
 	protected override string _GetTemplateForLabelSelectLanguage()
 	{
-		return "言語を選択";
+		return "è¨€èªžã‚’é¸æŠž";
 	}
 
 	protected override string _GetTemplateForMessageDeleteLanguageWarning()
 	{
-		return "この言語のすべての翻訳が削除されます。この操作は元に戻せません。";
+		return "ã“ã®è¨€èªžã®ã™ã¹ã¦ã®ç¿»è¨³ãŒå‰Šé™¤ã•ã‚Œã¾ã™ã€‚ã“ã®æ“ä½œã¯å…ƒã«æˆ»ã›ã¾ã›ã‚“ã€‚";
 	}
+}
+
+
 }

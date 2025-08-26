@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Moderation;
+﻿namespace Roblox.Platform.TranslationResources.Moderation {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ModeratorActionsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -21,4 +21,7 @@ internal class ModeratorActionsResources_es_es : ModeratorActionsResources_en_us
 	{
 		return "[contenido eliminado]";
 	}
+}
+
+
 }

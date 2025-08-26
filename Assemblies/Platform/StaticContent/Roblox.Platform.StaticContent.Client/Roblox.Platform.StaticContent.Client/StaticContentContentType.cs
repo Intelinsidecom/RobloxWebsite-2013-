@@ -1,8 +1,9 @@
-namespace Roblox.StaticContent.Client;
-
-public enum StaticContentContentType
+namespace Roblox.Platform.StaticContent.Client
 {
-	JavaScript,
-	Css,
-	Image
+    public enum StaticContentContentType
+    {
+        JavaScript,
+        Css,
+        Image
+    }
 }

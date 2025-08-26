@@ -1,5 +1,8 @@
-namespace Roblox.PremiumFeatures.Models;
+﻿namespace Roblox.Platform.PremiumFeatures.Modelspublic {
+    class MembershipMigrationResponse
 
-public class MembershipMigrationResponse
 {
+}
+
+
 }

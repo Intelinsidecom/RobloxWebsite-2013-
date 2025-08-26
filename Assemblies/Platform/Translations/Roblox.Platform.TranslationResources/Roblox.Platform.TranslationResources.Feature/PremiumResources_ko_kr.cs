@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PremiumResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,74 +10,74 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Action.Bought"
 	/// English String: "Bought"
 	/// </summary>
-	public override string ActionBought => "구매함";
+	public override string ActionBought => "êµ¬ë§¤í•¨";
 
 	/// <summary>
 	/// Key: "Action.BuyNow"
 	/// English String: "Buy Now!"
 	/// </summary>
-	public override string ActionBuyNow => "지금 구매하세요!";
+	public override string ActionBuyNow => "ì§€ê¸ˆ êµ¬ë§¤í•˜ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "Robux 구매";
+	public override string ActionBuyRobux => "Robux êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Description.GetMoreRobux"
 	/// English String: "Get 10% more when purchasing Robux"
 	/// </summary>
-	public override string DescriptionGetMoreRobux => "Robux 구매 시 10% 더 획득";
+	public override string DescriptionGetMoreRobux => "Robux êµ¬ë§¤ ì‹œ 10% ë” íšë“";
 
 	/// <summary>
 	/// Key: "Description.RobloxPremiumSubtitle"
 	/// English String: "Joining Roblox Premium gets you a monthly Robux allowance and a 10% bonus when buying Robux. You will also get access to Roblox's economy features including buying, selling, and trading items, as well as increased revenue share on all sales in your games."
 	/// </summary>
-	public override string DescriptionRobloxPremiumSubtitle => "Roblox Premium에 가입하면 매월 일정한 Robux를 지급받게 되며, Robux 구매 시 10% 보너스 혜택을 받을 수 있습니다. 또한 아이템 구입, 판매, 거래와 같은 Roblox 경제 기능을 사용할 수 있을 뿐 아니라, 게임 내 판매 시 보다 높은 비율로 수익을 얻을 수 있습니다.";
+	public override string DescriptionRobloxPremiumSubtitle => "Roblox Premiumì— ê°€ìž…í•˜ë©´ ë§¤ì›” ì¼ì •í•œ Robuxë¥¼ ì§€ê¸‰ë°›ê²Œ ë˜ë©°, Robux êµ¬ë§¤ ì‹œ 10% ë³´ë„ˆìŠ¤ í˜œíƒì„ ë°›ì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë˜í•œ ì•„ì´í…œ êµ¬ìž…, íŒë§¤, ê±°ëž˜ì™€ ê°™ì€ Roblox ê²½ì œ ê¸°ëŠ¥ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆì„ ë¿ ì•„ë‹ˆë¼, ê²Œìž„ ë‚´ íŒë§¤ ì‹œ ë³´ë‹¤ ë†’ì€ ë¹„ìœ¨ë¡œ ìˆ˜ìµì„ ì–»ì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Description.SellMoreItems"
 	/// English String: "Resell items and get more Robux selling your creations"
 	/// </summary>
-	public override string DescriptionSellMoreItems => "아이템을 다시 판매하여 여러분의 작품에 대해 더 많은 Robux를 획득해보세요.";
+	public override string DescriptionSellMoreItems => "ì•„ì´í…œì„ ë‹¤ì‹œ íŒë§¤í•˜ì—¬ ì—¬ëŸ¬ë¶„ì˜ ìž‘í’ˆì— ëŒ€í•´ ë” ë§Žì€ Robuxë¥¼ íšë“í•´ë³´ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Description.Trade"
 	/// English String: "Trade items with other Premium members"
 	/// </summary>
-	public override string DescriptionTrade => "다른 Premium 멤버와 아이템 거래";
+	public override string DescriptionTrade => "ë‹¤ë¥¸ Premium ë©¤ë²„ì™€ ì•„ì´í…œ ê±°ëž˜";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobux"
 	/// The title of Robux page
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string HeadingBuyRobux => "Robux 구매";
+	public override string HeadingBuyRobux => "Robux êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Heading.ConfirmCancellation"
 	/// English String: "Confirm Cancellation"
 	/// </summary>
-	public override string HeadingConfirmCancellation => "취소 확인";
+	public override string HeadingConfirmCancellation => "ì·¨ì†Œ í™•ì¸";
 
 	/// <summary>
 	/// Key: "Heading.EvenMoreFeatures"
 	/// English String: "Even more Features"
 	/// </summary>
-	public override string HeadingEvenMoreFeatures => "더 많은 기능";
+	public override string HeadingEvenMoreFeatures => "ë” ë§Žì€ ê¸°ëŠ¥";
 
 	/// <summary>
 	/// Key: "Heading.GeneralError"
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingGeneralError => "오류";
+	public override string HeadingGeneralError => "ì˜¤ë¥˜";
 
 	/// <summary>
 	/// Key: "Heading.PremiumRobuxDiscounts"
 	/// English String: "As a Premium user, you get discounts on Robux!"
 	/// </summary>
-	public override string HeadingPremiumRobuxDiscounts => "Premium 회원이셔서, Robux 구매 시 할인받을 수 있어요!";
+	public override string HeadingPremiumRobuxDiscounts => "Premium íšŒì›ì´ì…”ì„œ, Robux êµ¬ë§¤ ì‹œ í• ì¸ë°›ì„ ìˆ˜ ìžˆì–´ìš”!";
 
 	/// <summary>
 	/// Key: "Heading.RobloxPremium"
@@ -90,110 +90,110 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.ServerError"
 	/// English String: "Server Error"
 	/// </summary>
-	public override string HeadingServerError => "서버 오류";
+	public override string HeadingServerError => "ì„œë²„ ì˜¤ë¥˜";
 
 	/// <summary>
 	/// Key: "Heading.SubscriptionUnavailable"
 	/// English String: "Subscription Unavailable"
 	/// </summary>
-	public override string HeadingSubscriptionUnavailable => "가입 신청 불가";
+	public override string HeadingSubscriptionUnavailable => "ê°€ìž… ì‹ ì²­ ë¶ˆê°€";
 
 	/// <summary>
 	/// Key: "Heading.SwitchPlanModal"
 	/// English String: "Confirm Subscription Update"
 	/// </summary>
-	public override string HeadingSwitchPlanModal => "가입 업데이트 확인";
+	public override string HeadingSwitchPlanModal => "ê°€ìž… ì—…ë°ì´íŠ¸ í™•ì¸";
 
 	/// <summary>
 	/// Key: "Heading.UnableToFindBc"
 	/// English String: "Cannot find Builders Club"
 	/// </summary>
-	public override string HeadingUnableToFindBc => "Builders Club을 찾을 수 없습니다";
+	public override string HeadingUnableToFindBc => "Builders Clubì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Heading.UpgradeToPremium"
 	/// English String: "Upgrade to Roblox Premium"
 	/// </summary>
-	public override string HeadingUpgradeToPremium => "Roblox Premium으로 업그레이드";
+	public override string HeadingUpgradeToPremium => "Roblox Premiumìœ¼ë¡œ ì—…ê·¸ë ˆì´ë“œ";
 
 	/// <summary>
 	/// Key: "Heading.UpgradeUnavailable"
 	/// English String: "Upgrade Unavailable"
 	/// </summary>
-	public override string HeadingUpgradeUnavailable => "업그레이드 이용 불가";
+	public override string HeadingUpgradeUnavailable => "ì—…ê·¸ë ˆì´ë“œ ì´ìš© ë¶ˆê°€";
 
 	/// <summary>
 	/// Key: "Label.10PercentMoreRobux"
 	/// Part 1 of a two part label (Label.SinceYouSubscribed)
 	/// English String: "You'll get 10% more Robux"
 	/// </summary>
-	public override string Label10PercentMoreRobux => "Robux가 10% 더 추가됩니다";
+	public override string Label10PercentMoreRobux => "Robuxê°€ 10% ë” ì¶”ê°€ë©ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Label.AndGetMore"
 	/// English String: "and get more!"
 	/// </summary>
-	public override string LabelAndGetMore => "더 많이 받으세요!";
+	public override string LabelAndGetMore => "ë” ë§Žì´ ë°›ìœ¼ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Label.BecauseYouSubscribed"
 	/// English String: "Because you Subscribed!"
 	/// </summary>
-	public override string LabelBecauseYouSubscribed => "가입 기반 추천!";
+	public override string LabelBecauseYouSubscribed => "ê°€ìž… ê¸°ë°˜ ì¶”ì²œ!";
 
 	/// <summary>
 	/// Key: "Label.BuyOnce"
 	/// English String: "Buy Once"
 	/// </summary>
-	public override string LabelBuyOnce => "1회 구매";
+	public override string LabelBuyOnce => "1íšŒ êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Label.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string LabelBuyRobux => "Robux 구매";
+	public override string LabelBuyRobux => "Robux êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "취소";
+	public override string LabelCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Label.Confirm"
 	/// English String: "Confirm"
 	/// </summary>
-	public override string LabelConfirm => "확인";
+	public override string LabelConfirm => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Label.CurrentPlan"
 	/// English String: "Your Current Plan"
 	/// </summary>
-	public override string LabelCurrentPlan => "회원님의 현재 플랜";
+	public override string LabelCurrentPlan => "íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœ";
 
 	/// <summary>
 	/// Key: "Label.Get10PercentOffRobux"
 	/// English String: "Get 10% off Robux"
 	/// </summary>
-	public override string LabelGet10PercentOffRobux => "Robux 10% 할인 받기";
+	public override string LabelGet10PercentOffRobux => "Robux 10% í• ì¸ ë°›ê¸°";
 
 	/// <summary>
 	/// Key: "Label.GetMoreRobux"
 	/// English String: "Get More Robux"
 	/// </summary>
-	public override string LabelGetMoreRobux => "더 많은 Robux 획득";
+	public override string LabelGetMoreRobux => "ë” ë§Žì€ Robux íšë“";
 
 	/// <summary>
 	/// Key: "Label.MembershipManagementRecurring"
 	/// English String: "To manage your Premium subscription, please go to your Billing settings using a browser."
 	/// </summary>
-	public override string LabelMembershipManagementRecurring => "Premium 가입을 관리하려면, 브라우저에서 청구 설정으로 이동하세요.";
+	public override string LabelMembershipManagementRecurring => "Premium ê°€ìž…ì„ ê´€ë¦¬í•˜ë ¤ë©´, ë¸Œë¼ìš°ì €ì—ì„œ ì²­êµ¬ ì„¤ì •ìœ¼ë¡œ ì´ë™í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.No"
 	/// English String: "No"
 	/// </summary>
-	public override string LabelNo => "아니요";
+	public override string LabelNo => "ì•„ë‹ˆìš”";
 
 	/// <summary>
 	/// Key: "Label.PremiumClub2200"
@@ -217,7 +217,7 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.RobloxPremium1000OneMonth"
 	/// English String: "Roblox Premium 1000 One Month"
 	/// </summary>
-	public override string LabelRobloxPremium1000OneMonth => "Roblox Premium 1000 1개월";
+	public override string LabelRobloxPremium1000OneMonth => "Roblox Premium 1000 1ê°œì›”";
 
 	/// <summary>
 	/// Key: "Label.RobloxPremium2200"
@@ -229,7 +229,7 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.RobloxPremium2200OneMonth"
 	/// English String: "Roblox Premium 2200 One Month"
 	/// </summary>
-	public override string LabelRobloxPremium2200OneMonth => "Roblox Premium 2200 1개월";
+	public override string LabelRobloxPremium2200OneMonth => "Roblox Premium 2200 1ê°œì›”";
 
 	/// <summary>
 	/// Key: "Label.RobloxPremium450"
@@ -241,87 +241,87 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.RobloxPremium450OneMonth"
 	/// English String: "Roblox Premium 450 One Month"
 	/// </summary>
-	public override string LabelRobloxPremium450OneMonth => "Roblox Premium 450 1개월";
+	public override string LabelRobloxPremium450OneMonth => "Roblox Premium 450 1ê°œì›”";
 
 	/// <summary>
 	/// Key: "Label.SellMore"
 	/// English String: "Sell More"
 	/// </summary>
-	public override string LabelSellMore => "판매 금액 증가";
+	public override string LabelSellMore => "íŒë§¤ ê¸ˆì•¡ ì¦ê°€";
 
 	/// <summary>
 	/// Key: "Label.SinceYouSubscribed"
 	/// Part 2 of a 2 part label
 	/// English String: "since you subscribed"
 	/// </summary>
-	public override string LabelSinceYouSubscribed => "가입하셨으니까요";
+	public override string LabelSinceYouSubscribed => "ê°€ìž…í•˜ì…¨ìœ¼ë‹ˆê¹Œìš”";
 
 	/// <summary>
 	/// Key: "Label.Subscribe"
 	/// English String: "Subscribe"
 	/// </summary>
-	public override string LabelSubscribe => "가입";
+	public override string LabelSubscribe => "ê°€ìž…";
 
 	/// <summary>
 	/// Key: "Label.Trade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string LabelTrade => "거래";
+	public override string LabelTrade => "ê±°ëž˜";
 
 	/// <summary>
 	/// Key: "Label.ValuePacks"
 	/// English String: "Value Packs"
 	/// </summary>
-	public override string LabelValuePacks => "밸류 팩";
+	public override string LabelValuePacks => "ë°¸ë¥˜ íŒ©";
 
 	/// <summary>
 	/// Key: "Label.WantMoreRobux"
 	/// English String: "Want more Robux?"
 	/// </summary>
-	public override string LabelWantMoreRobux => "더 많은 Robux를 원하시나요?";
+	public override string LabelWantMoreRobux => "ë” ë§Žì€ Robuxë¥¼ ì›í•˜ì‹œë‚˜ìš”?";
 
 	/// <summary>
 	/// Key: "Label.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelYes => "예";
+	public override string LabelYes => "ì˜ˆ";
 
 	/// <summary>
 	/// Key: "Message.GeneralError"
 	/// English String: "An error occurred while updating your subscription. Please try again later."
 	/// </summary>
-	public override string MessageGeneralError => "가입 업데이트 중 오류가 발생했어요. 나중에 다시 시도하세요.";
+	public override string MessageGeneralError => "ê°€ìž… ì—…ë°ì´íŠ¸ ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.NoDataError"
 	/// English String: "No subscriptions information."
 	/// </summary>
-	public override string MessageNoDataError => "가입 정보가 없어요.";
+	public override string MessageNoDataError => "ê°€ìž… ì •ë³´ê°€ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.ServerError"
 	/// English String: "A server error occurred while updating your subscription. Please try again later."
 	/// </summary>
-	public override string MessageServerError => "가입 업데이트 중 서버 오류가 발생했어요. 나중에 다시 시도하세요.";
+	public override string MessageServerError => "ê°€ìž… ì—…ë°ì´íŠ¸ ì¤‘ ì„œë²„ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.UnableToFindBc"
 	/// English String: "Cannot find Builders Club information for this user."
 	/// </summary>
-	public override string MessageUnableToFindBc => "본 사용자의 Builders Club 정보를 찾을 수 없어요.";
+	public override string MessageUnableToFindBc => "ë³¸ ì‚¬ìš©ìžì˜ Builders Club ì •ë³´ë¥¼ ì°¾ì„ ìˆ˜ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.UpgradeUnavailableModal"
 	/// English String: "We are sorry, we cannot change your subscription because there is currently no package equivalent to Lifetime Builders Club."
 	/// </summary>
-	public override string MessageUpgradeUnavailableModal => "죄송합니다. 평생 Builders Club과 대등한 패키지가 존재하지 않아 플랜을 변경할 수 없어요.";
+	public override string MessageUpgradeUnavailableModal => "ì£„ì†¡í•©ë‹ˆë‹¤. í‰ìƒ Builders Clubê³¼ ëŒ€ë“±í•œ íŒ¨í‚¤ì§€ê°€ ì¡´ìž¬í•˜ì§€ ì•Šì•„ í”Œëžœì„ ë³€ê²½í•  ìˆ˜ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "SwitchPlanTitle"
 	/// Wrong string. Do translate this.
 	/// English String: "Confirm Subscription Update"
 	/// </summary>
-	public override string SwitchPlanTitle => "가입 업데이트 확인";
+	public override string SwitchPlanTitle => "ê°€ìž… ì—…ë°ì´íŠ¸ í™•ì¸";
 
 	public PremiumResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -330,17 +330,17 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForActionBought()
 	{
-		return "구매함";
+		return "êµ¬ë§¤í•¨";
 	}
 
 	protected override string _GetTemplateForActionBuyNow()
 	{
-		return "지금 구매하세요!";
+		return "ì§€ê¸ˆ êµ¬ë§¤í•˜ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "Robux 구매";
+		return "Robux êµ¬ë§¤";
 	}
 
 	/// <summary>
@@ -349,12 +349,12 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionBuyMoreRobuxSubtitle(string lineBreak, string learnMoreLinkStart, string learnMoreLinkEnd)
 	{
-		return $"Robux를 구매하면 아바타 업그레이드 혹은 특수 능력을 구매할 수 있습니다.{lineBreak} Roblox Premium에 가입해 매월 추가 Robux 및 보너스 기능을 획득하세요. Premium 비용은 취소할 때까지 매달 부과됩니다. {learnMoreLinkStart}여기{learnMoreLinkEnd}에서 더 자세히 알아보세요.";
+		return $"Robuxë¥¼ êµ¬ë§¤í•˜ë©´ ì•„ë°”íƒ€ ì—…ê·¸ë ˆì´ë“œ í˜¹ì€ íŠ¹ìˆ˜ ëŠ¥ë ¥ì„ êµ¬ë§¤í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.{lineBreak} Roblox Premiumì— ê°€ìž…í•´ ë§¤ì›” ì¶”ê°€ Robux ë° ë³´ë„ˆìŠ¤ ê¸°ëŠ¥ì„ íšë“í•˜ì„¸ìš”. Premium ë¹„ìš©ì€ ì·¨ì†Œí•  ë•Œê¹Œì§€ ë§¤ë‹¬ ë¶€ê³¼ë©ë‹ˆë‹¤. {learnMoreLinkStart}ì—¬ê¸°{learnMoreLinkEnd}ì—ì„œ ë” ìžì„¸ížˆ ì•Œì•„ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyMoreRobuxSubtitle()
 	{
-		return "Robux를 구매하면 아바타 업그레이드 혹은 특수 능력을 구매할 수 있습니다.{lineBreak} Roblox Premium에 가입해 매월 추가 Robux 및 보너스 기능을 획득하세요. Premium 비용은 취소할 때까지 매달 부과됩니다. {learnMoreLinkStart}여기{learnMoreLinkEnd}에서 더 자세히 알아보세요.";
+		return "Robuxë¥¼ êµ¬ë§¤í•˜ë©´ ì•„ë°”íƒ€ ì—…ê·¸ë ˆì´ë“œ í˜¹ì€ íŠ¹ìˆ˜ ëŠ¥ë ¥ì„ êµ¬ë§¤í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.{lineBreak} Roblox Premiumì— ê°€ìž…í•´ ë§¤ì›” ì¶”ê°€ Robux ë° ë³´ë„ˆìŠ¤ ê¸°ëŠ¥ì„ íšë“í•˜ì„¸ìš”. Premium ë¹„ìš©ì€ ì·¨ì†Œí•  ë•Œê¹Œì§€ ë§¤ë‹¬ ë¶€ê³¼ë©ë‹ˆë‹¤. {learnMoreLinkStart}ì—¬ê¸°{learnMoreLinkEnd}ì—ì„œ ë” ìžì„¸ížˆ ì•Œì•„ë³´ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -363,17 +363,17 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionBuyRobuxSubtitle(string helpLinkStart, string helpLinkEnd, string paragraphBreaker, string learnMoreLinkStart, string learnMoreLinkEnd)
 	{
-		return $"Robux를 획득하여 아바타를 업그레이드하거나 게임 내 특수 기능을 구매해보세요! Robux 획득 방법에 대한 자세한 내용은 {helpLinkStart}Robux 도움말 페이지{helpLinkEnd}를 참조하시기 바랍니다. {paragraphBreaker}Roblox Premium을 구매하면 같은 가격에 더 많은 Robux를 얻으실 수 있어요. Roblox Premium은 취소할 때까지 매월 결제됩니다. {learnMoreLinkStart}여기에서 자세히 알아보세요{learnMoreLinkEnd}.";
+		return $"Robuxë¥¼ íšë“í•˜ì—¬ ì•„ë°”íƒ€ë¥¼ ì—…ê·¸ë ˆì´ë“œí•˜ê±°ë‚˜ ê²Œìž„ ë‚´ íŠ¹ìˆ˜ ê¸°ëŠ¥ì„ êµ¬ë§¤í•´ë³´ì„¸ìš”! Robux íšë“ ë°©ë²•ì— ëŒ€í•œ ìžì„¸í•œ ë‚´ìš©ì€ {helpLinkStart}Robux ë„ì›€ë§ íŽ˜ì´ì§€{helpLinkEnd}ë¥¼ ì°¸ì¡°í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤. {paragraphBreaker}Roblox Premiumì„ êµ¬ë§¤í•˜ë©´ ê°™ì€ ê°€ê²©ì— ë” ë§Žì€ Robuxë¥¼ ì–»ìœ¼ì‹¤ ìˆ˜ ìžˆì–´ìš”. Roblox Premiumì€ ì·¨ì†Œí•  ë•Œê¹Œì§€ ë§¤ì›” ê²°ì œë©ë‹ˆë‹¤. {learnMoreLinkStart}ì—¬ê¸°ì—ì„œ ìžì„¸ížˆ ì•Œì•„ë³´ì„¸ìš”{learnMoreLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyRobuxSubtitle()
 	{
-		return "Robux를 획득하여 아바타를 업그레이드하거나 게임 내 특수 기능을 구매해보세요! Robux 획득 방법에 대한 자세한 내용은 {helpLinkStart}Robux 도움말 페이지{helpLinkEnd}를 참조하시기 바랍니다. {paragraphBreaker}Roblox Premium을 구매하면 같은 가격에 더 많은 Robux를 얻으실 수 있어요. Roblox Premium은 취소할 때까지 매월 결제됩니다. {learnMoreLinkStart}여기에서 자세히 알아보세요{learnMoreLinkEnd}.";
+		return "Robuxë¥¼ íšë“í•˜ì—¬ ì•„ë°”íƒ€ë¥¼ ì—…ê·¸ë ˆì´ë“œí•˜ê±°ë‚˜ ê²Œìž„ ë‚´ íŠ¹ìˆ˜ ê¸°ëŠ¥ì„ êµ¬ë§¤í•´ë³´ì„¸ìš”! Robux íšë“ ë°©ë²•ì— ëŒ€í•œ ìžì„¸í•œ ë‚´ìš©ì€ {helpLinkStart}Robux ë„ì›€ë§ íŽ˜ì´ì§€{helpLinkEnd}ë¥¼ ì°¸ì¡°í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤. {paragraphBreaker}Roblox Premiumì„ êµ¬ë§¤í•˜ë©´ ê°™ì€ ê°€ê²©ì— ë” ë§Žì€ Robuxë¥¼ ì–»ìœ¼ì‹¤ ìˆ˜ ìžˆì–´ìš”. Roblox Premiumì€ ì·¨ì†Œí•  ë•Œê¹Œì§€ ë§¤ì›” ê²°ì œë©ë‹ˆë‹¤. {learnMoreLinkStart}ì—¬ê¸°ì—ì„œ ìžì„¸ížˆ ì•Œì•„ë³´ì„¸ìš”{learnMoreLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionGetMoreRobux()
 	{
-		return "Robux 구매 시 10% 더 획득";
+		return "Robux êµ¬ë§¤ ì‹œ 10% ë” íšë“";
 	}
 
 	/// <summary>
@@ -382,12 +382,12 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionIosMonthlySubscriptionDisclosure(string costPrice, string renewalPrice)
 	{
-		return $"Roblox Premium은 매월 {costPrice}의 가입 서비스로, 구매 완료 시 iTunes 계정으로 비용이 청구됩니다. Roblox Premium은 매월 자동으로 갱신되며, 해지하고 싶을 경우 현재의 가입 만료일을 기준으로 최소 24시간 이전에 자동 갱신을 끄면 됩니다. 현재 가입 기간 종료 전 24시간 이내에 {renewalPrice}의 비용이 청구되며 가입이 갱신됩니다. 계정 설정 페이지에서 가입을 관리하고 자동 갱신을 끌 수 있습니다. 18세 미만의 사용자라면 구매하기 전에 부모 또는 법적 보호자의 허락을 받아야 하며, 허락 없이 구매하면 계정이 삭제될 수 있습니다.";
+		return $"Roblox Premiumì€ ë§¤ì›” {costPrice}ì˜ ê°€ìž… ì„œë¹„ìŠ¤ë¡œ, êµ¬ë§¤ ì™„ë£Œ ì‹œ iTunes ê³„ì •ìœ¼ë¡œ ë¹„ìš©ì´ ì²­êµ¬ë©ë‹ˆë‹¤. Roblox Premiumì€ ë§¤ì›” ìžë™ìœ¼ë¡œ ê°±ì‹ ë˜ë©°, í•´ì§€í•˜ê³  ì‹¶ì„ ê²½ìš° í˜„ìž¬ì˜ ê°€ìž… ë§Œë£Œì¼ì„ ê¸°ì¤€ìœ¼ë¡œ ìµœì†Œ 24ì‹œê°„ ì´ì „ì— ìžë™ ê°±ì‹ ì„ ë„ë©´ ë©ë‹ˆë‹¤. í˜„ìž¬ ê°€ìž… ê¸°ê°„ ì¢…ë£Œ ì „ 24ì‹œê°„ ì´ë‚´ì— {renewalPrice}ì˜ ë¹„ìš©ì´ ì²­êµ¬ë˜ë©° ê°€ìž…ì´ ê°±ì‹ ë©ë‹ˆë‹¤. ê³„ì • ì„¤ì • íŽ˜ì´ì§€ì—ì„œ ê°€ìž…ì„ ê´€ë¦¬í•˜ê³  ìžë™ ê°±ì‹ ì„ ëŒ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 18ì„¸ ë¯¸ë§Œì˜ ì‚¬ìš©ìžë¼ë©´ êµ¬ë§¤í•˜ê¸° ì „ì— ë¶€ëª¨ ë˜ëŠ” ë²•ì  ë³´í˜¸ìžì˜ í—ˆë½ì„ ë°›ì•„ì•¼ í•˜ë©°, í—ˆë½ ì—†ì´ êµ¬ë§¤í•˜ë©´ ê³„ì •ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionIosMonthlySubscriptionDisclosure()
 	{
-		return "Roblox Premium은 매월 {costPrice}의 가입 서비스로, 구매 완료 시 iTunes 계정으로 비용이 청구됩니다. Roblox Premium은 매월 자동으로 갱신되며, 해지하고 싶을 경우 현재의 가입 만료일을 기준으로 최소 24시간 이전에 자동 갱신을 끄면 됩니다. 현재 가입 기간 종료 전 24시간 이내에 {renewalPrice}의 비용이 청구되며 가입이 갱신됩니다. 계정 설정 페이지에서 가입을 관리하고 자동 갱신을 끌 수 있습니다. 18세 미만의 사용자라면 구매하기 전에 부모 또는 법적 보호자의 허락을 받아야 하며, 허락 없이 구매하면 계정이 삭제될 수 있습니다.";
+		return "Roblox Premiumì€ ë§¤ì›” {costPrice}ì˜ ê°€ìž… ì„œë¹„ìŠ¤ë¡œ, êµ¬ë§¤ ì™„ë£Œ ì‹œ iTunes ê³„ì •ìœ¼ë¡œ ë¹„ìš©ì´ ì²­êµ¬ë©ë‹ˆë‹¤. Roblox Premiumì€ ë§¤ì›” ìžë™ìœ¼ë¡œ ê°±ì‹ ë˜ë©°, í•´ì§€í•˜ê³  ì‹¶ì„ ê²½ìš° í˜„ìž¬ì˜ ê°€ìž… ë§Œë£Œì¼ì„ ê¸°ì¤€ìœ¼ë¡œ ìµœì†Œ 24ì‹œê°„ ì´ì „ì— ìžë™ ê°±ì‹ ì„ ë„ë©´ ë©ë‹ˆë‹¤. í˜„ìž¬ ê°€ìž… ê¸°ê°„ ì¢…ë£Œ ì „ 24ì‹œê°„ ì´ë‚´ì— {renewalPrice}ì˜ ë¹„ìš©ì´ ì²­êµ¬ë˜ë©° ê°€ìž…ì´ ê°±ì‹ ë©ë‹ˆë‹¤. ê³„ì • ì„¤ì • íŽ˜ì´ì§€ì—ì„œ ê°€ìž…ì„ ê´€ë¦¬í•˜ê³  ìžë™ ê°±ì‹ ì„ ëŒ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 18ì„¸ ë¯¸ë§Œì˜ ì‚¬ìš©ìžë¼ë©´ êµ¬ë§¤í•˜ê¸° ì „ì— ë¶€ëª¨ ë˜ëŠ” ë²•ì  ë³´í˜¸ìžì˜ í—ˆë½ì„ ë°›ì•„ì•¼ í•˜ë©°, í—ˆë½ ì—†ì´ êµ¬ë§¤í•˜ë©´ ê³„ì •ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -396,12 +396,12 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionIosSubscriptionDisclosure(string durationType, string costPrice, string renewalPrice)
 	{
-		return $"Roblox Premium은 {durationType} {costPrice}의 가입 서비스로, 구매 완료 시 iTunes 계정으로 비용이 청구됩니다. Roblox Premium은 매월 자동으로 갱신되며, 해지하고 싶을 경우 현재의 가입 만료일을 기준으로 최소 24시간 이전에 자동 갱신을 끄면 됩니다. 현재 가입 기간 종료 전 24시간 이내에 {renewalPrice}의 비용이 청구되며 가입이 갱신됩니다. 계정 설정 페이지에서 가입을 관리하고 자동 갱신을 끌 수 있습니다.";
+		return $"Roblox Premiumì€ {durationType} {costPrice}ì˜ ê°€ìž… ì„œë¹„ìŠ¤ë¡œ, êµ¬ë§¤ ì™„ë£Œ ì‹œ iTunes ê³„ì •ìœ¼ë¡œ ë¹„ìš©ì´ ì²­êµ¬ë©ë‹ˆë‹¤. Roblox Premiumì€ ë§¤ì›” ìžë™ìœ¼ë¡œ ê°±ì‹ ë˜ë©°, í•´ì§€í•˜ê³  ì‹¶ì„ ê²½ìš° í˜„ìž¬ì˜ ê°€ìž… ë§Œë£Œì¼ì„ ê¸°ì¤€ìœ¼ë¡œ ìµœì†Œ 24ì‹œê°„ ì´ì „ì— ìžë™ ê°±ì‹ ì„ ë„ë©´ ë©ë‹ˆë‹¤. í˜„ìž¬ ê°€ìž… ê¸°ê°„ ì¢…ë£Œ ì „ 24ì‹œê°„ ì´ë‚´ì— {renewalPrice}ì˜ ë¹„ìš©ì´ ì²­êµ¬ë˜ë©° ê°€ìž…ì´ ê°±ì‹ ë©ë‹ˆë‹¤. ê³„ì • ì„¤ì • íŽ˜ì´ì§€ì—ì„œ ê°€ìž…ì„ ê´€ë¦¬í•˜ê³  ìžë™ ê°±ì‹ ì„ ëŒ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionIosSubscriptionDisclosure()
 	{
-		return "Roblox Premium은 {durationType} {costPrice}의 가입 서비스로, 구매 완료 시 iTunes 계정으로 비용이 청구됩니다. Roblox Premium은 매월 자동으로 갱신되며, 해지하고 싶을 경우 현재의 가입 만료일을 기준으로 최소 24시간 이전에 자동 갱신을 끄면 됩니다. 현재 가입 기간 종료 전 24시간 이내에 {renewalPrice}의 비용이 청구되며 가입이 갱신됩니다. 계정 설정 페이지에서 가입을 관리하고 자동 갱신을 끌 수 있습니다.";
+		return "Roblox Premiumì€ {durationType} {costPrice}ì˜ ê°€ìž… ì„œë¹„ìŠ¤ë¡œ, êµ¬ë§¤ ì™„ë£Œ ì‹œ iTunes ê³„ì •ìœ¼ë¡œ ë¹„ìš©ì´ ì²­êµ¬ë©ë‹ˆë‹¤. Roblox Premiumì€ ë§¤ì›” ìžë™ìœ¼ë¡œ ê°±ì‹ ë˜ë©°, í•´ì§€í•˜ê³  ì‹¶ì„ ê²½ìš° í˜„ìž¬ì˜ ê°€ìž… ë§Œë£Œì¼ì„ ê¸°ì¤€ìœ¼ë¡œ ìµœì†Œ 24ì‹œê°„ ì´ì „ì— ìžë™ ê°±ì‹ ì„ ë„ë©´ ë©ë‹ˆë‹¤. í˜„ìž¬ ê°€ìž… ê¸°ê°„ ì¢…ë£Œ ì „ 24ì‹œê°„ ì´ë‚´ì— {renewalPrice}ì˜ ë¹„ìš©ì´ ì²­êµ¬ë˜ë©° ê°€ìž…ì´ ê°±ì‹ ë©ë‹ˆë‹¤. ê³„ì • ì„¤ì • íŽ˜ì´ì§€ì—ì„œ ê°€ìž…ì„ ê´€ë¦¬í•˜ê³  ìžë™ ê°±ì‹ ì„ ëŒ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -410,81 +410,81 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionlegalDisclosuresPremiumRobuxPage(string termsLinkStart, string termsLinkEnd)
 	{
-		return $"Robux를 구매하면, 이를 사용하기 위해 제한적이고 환불 및 양도가 불가능하며, 철회 가능한 라이선스를 받게 됩니다. Robux에는 실제 통화 가치가 없습니다. 그 외 제한 사항은 {termsLinkStart}이용 약관{termsLinkEnd}에서 확인하세요. 18세 미만의 사용자라면 구매하기 전에 부모 또는 법적 보호자의 허락을 받아야 하며, 허락 없이 구매하면 계정이 삭제될 수 있습니다.";
+		return $"Robuxë¥¼ êµ¬ë§¤í•˜ë©´, ì´ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ ì œí•œì ì´ê³  í™˜ë¶ˆ ë° ì–‘ë„ê°€ ë¶ˆê°€ëŠ¥í•˜ë©°, ì² íšŒ ê°€ëŠ¥í•œ ë¼ì´ì„ ìŠ¤ë¥¼ ë°›ê²Œ ë©ë‹ˆë‹¤. Robuxì—ëŠ” ì‹¤ì œ í†µí™” ê°€ì¹˜ê°€ ì—†ìŠµë‹ˆë‹¤. ê·¸ ì™¸ ì œí•œ ì‚¬í•­ì€ {termsLinkStart}ì´ìš© ì•½ê´€{termsLinkEnd}ì—ì„œ í™•ì¸í•˜ì„¸ìš”. 18ì„¸ ë¯¸ë§Œì˜ ì‚¬ìš©ìžë¼ë©´ êµ¬ë§¤í•˜ê¸° ì „ì— ë¶€ëª¨ ë˜ëŠ” ë²•ì  ë³´í˜¸ìžì˜ í—ˆë½ì„ ë°›ì•„ì•¼ í•˜ë©°, í—ˆë½ ì—†ì´ êµ¬ë§¤í•˜ë©´ ê³„ì •ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionlegalDisclosuresPremiumRobuxPage()
 	{
-		return "Robux를 구매하면, 이를 사용하기 위해 제한적이고 환불 및 양도가 불가능하며, 철회 가능한 라이선스를 받게 됩니다. Robux에는 실제 통화 가치가 없습니다. 그 외 제한 사항은 {termsLinkStart}이용 약관{termsLinkEnd}에서 확인하세요. 18세 미만의 사용자라면 구매하기 전에 부모 또는 법적 보호자의 허락을 받아야 하며, 허락 없이 구매하면 계정이 삭제될 수 있습니다.";
+		return "Robuxë¥¼ êµ¬ë§¤í•˜ë©´, ì´ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ ì œí•œì ì´ê³  í™˜ë¶ˆ ë° ì–‘ë„ê°€ ë¶ˆê°€ëŠ¥í•˜ë©°, ì² íšŒ ê°€ëŠ¥í•œ ë¼ì´ì„ ìŠ¤ë¥¼ ë°›ê²Œ ë©ë‹ˆë‹¤. Robuxì—ëŠ” ì‹¤ì œ í†µí™” ê°€ì¹˜ê°€ ì—†ìŠµë‹ˆë‹¤. ê·¸ ì™¸ ì œí•œ ì‚¬í•­ì€ {termsLinkStart}ì´ìš© ì•½ê´€{termsLinkEnd}ì—ì„œ í™•ì¸í•˜ì„¸ìš”. 18ì„¸ ë¯¸ë§Œì˜ ì‚¬ìš©ìžë¼ë©´ êµ¬ë§¤í•˜ê¸° ì „ì— ë¶€ëª¨ ë˜ëŠ” ë²•ì  ë³´í˜¸ìžì˜ í—ˆë½ì„ ë°›ì•„ì•¼ í•˜ë©°, í—ˆë½ ì—†ì´ êµ¬ë§¤í•˜ë©´ ê³„ì •ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	/// <summary>
 	/// Key: "Description.legalDisclosuresPremiumUpgradePage"
-	/// English String: "If you are under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking “Submit Order” (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {termsLinkStart}Terms of Use{termsLinkEnd} and {privacyLinkStart}Privacy Policy{privatyLinkEnd}. You can cancel at any time by clicking “Cancel membership” on the {billingLinkStart}billing tab{billingLinkEnd}  of the setting page. If you cancel, you will still be charged for the current billing period."
+	/// English String: "If you are under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking â€œSubmit Orderâ€ (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {termsLinkStart}Terms of Use{termsLinkEnd} and {privacyLinkStart}Privacy Policy{privatyLinkEnd}. You can cancel at any time by clicking â€œCancel membershipâ€ on the {billingLinkStart}billing tab{billingLinkEnd}  of the setting page. If you cancel, you will still be charged for the current billing period."
 	/// </summary>
 	public override string DescriptionlegalDisclosuresPremiumUpgradePage(string termsLinkStart, string termsLinkEnd, string privacyLinkStart, string privatyLinkEnd, string billingLinkStart, string billingLinkEnd)
 	{
-		return $"18세 미만의 사용자라면 Premium을 구매하기 전에 부모 또는 법적 보호자의 허락을 받아야 하며, 허락 없이 구매하면 계정이 삭제될 수 있습니다. '주문 확인'을 클릭하면 회원님은 (1) 가입을 취소할 때까지 Roblox가 계정에 요금을 청구할 수 있는 권한을 부여하며, (2) {termsLinkStart}이용 약관{termsLinkEnd} 및 {privacyLinkStart}개인정보 처리방침{privatyLinkEnd}을 이해하고 이에 동의하는 것으로 간주됩니다. 설정 페이지의 {billingLinkStart}청구 탭{billingLinkEnd}에서 '멤버십 취소'를 클릭하면 언제든지 취소할 수 있습니다. 취소한 후에도 현재 청구 기간에 대한 비용은 그대로 유지됩니다.";
+		return $"18ì„¸ ë¯¸ë§Œì˜ ì‚¬ìš©ìžë¼ë©´ Premiumì„ êµ¬ë§¤í•˜ê¸° ì „ì— ë¶€ëª¨ ë˜ëŠ” ë²•ì  ë³´í˜¸ìžì˜ í—ˆë½ì„ ë°›ì•„ì•¼ í•˜ë©°, í—ˆë½ ì—†ì´ êµ¬ë§¤í•˜ë©´ ê³„ì •ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 'ì£¼ë¬¸ í™•ì¸'ì„ í´ë¦­í•˜ë©´ íšŒì›ë‹˜ì€ (1) ê°€ìž…ì„ ì·¨ì†Œí•  ë•Œê¹Œì§€ Robloxê°€ ê³„ì •ì— ìš”ê¸ˆì„ ì²­êµ¬í•  ìˆ˜ ìžˆëŠ” ê¶Œí•œì„ ë¶€ì—¬í•˜ë©°, (2) {termsLinkStart}ì´ìš© ì•½ê´€{termsLinkEnd} ë° {privacyLinkStart}ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨{privatyLinkEnd}ì„ ì´í•´í•˜ê³  ì´ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤. ì„¤ì • íŽ˜ì´ì§€ì˜ {billingLinkStart}ì²­êµ¬ íƒ­{billingLinkEnd}ì—ì„œ 'ë©¤ë²„ì‹­ ì·¨ì†Œ'ë¥¼ í´ë¦­í•˜ë©´ ì–¸ì œë“ ì§€ ì·¨ì†Œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì·¨ì†Œí•œ í›„ì—ë„ í˜„ìž¬ ì²­êµ¬ ê¸°ê°„ì— ëŒ€í•œ ë¹„ìš©ì€ ê·¸ëŒ€ë¡œ ìœ ì§€ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionlegalDisclosuresPremiumUpgradePage()
 	{
-		return "18세 미만의 사용자라면 Premium을 구매하기 전에 부모 또는 법적 보호자의 허락을 받아야 하며, 허락 없이 구매하면 계정이 삭제될 수 있습니다. '주문 확인'을 클릭하면 회원님은 (1) 가입을 취소할 때까지 Roblox가 계정에 요금을 청구할 수 있는 권한을 부여하며, (2) {termsLinkStart}이용 약관{termsLinkEnd} 및 {privacyLinkStart}개인정보 처리방침{privatyLinkEnd}을 이해하고 이에 동의하는 것으로 간주됩니다. 설정 페이지의 {billingLinkStart}청구 탭{billingLinkEnd}에서 '멤버십 취소'를 클릭하면 언제든지 취소할 수 있습니다. 취소한 후에도 현재 청구 기간에 대한 비용은 그대로 유지됩니다.";
+		return "18ì„¸ ë¯¸ë§Œì˜ ì‚¬ìš©ìžë¼ë©´ Premiumì„ êµ¬ë§¤í•˜ê¸° ì „ì— ë¶€ëª¨ ë˜ëŠ” ë²•ì  ë³´í˜¸ìžì˜ í—ˆë½ì„ ë°›ì•„ì•¼ í•˜ë©°, í—ˆë½ ì—†ì´ êµ¬ë§¤í•˜ë©´ ê³„ì •ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 'ì£¼ë¬¸ í™•ì¸'ì„ í´ë¦­í•˜ë©´ íšŒì›ë‹˜ì€ (1) ê°€ìž…ì„ ì·¨ì†Œí•  ë•Œê¹Œì§€ Robloxê°€ ê³„ì •ì— ìš”ê¸ˆì„ ì²­êµ¬í•  ìˆ˜ ìžˆëŠ” ê¶Œí•œì„ ë¶€ì—¬í•˜ë©°, (2) {termsLinkStart}ì´ìš© ì•½ê´€{termsLinkEnd} ë° {privacyLinkStart}ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨{privatyLinkEnd}ì„ ì´í•´í•˜ê³  ì´ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤. ì„¤ì • íŽ˜ì´ì§€ì˜ {billingLinkStart}ì²­êµ¬ íƒ­{billingLinkEnd}ì—ì„œ 'ë©¤ë²„ì‹­ ì·¨ì†Œ'ë¥¼ í´ë¦­í•˜ë©´ ì–¸ì œë“ ì§€ ì·¨ì†Œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì·¨ì†Œí•œ í›„ì—ë„ í˜„ìž¬ ì²­êµ¬ ê¸°ê°„ì— ëŒ€í•œ ë¹„ìš©ì€ ê·¸ëŒ€ë¡œ ìœ ì§€ë©ë‹ˆë‹¤.";
 	}
 
 	/// <summary>
 	/// Key: "Description.PremiumSubscriptionDisclosure"
 	/// Duplicated
-	/// English String: "If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking “Submit Order” (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {teamOfUseLinkStart}Terms of Use{teamOfUseLinkEnd} and {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You can cancel at any time by clicking “Cancel membership” on the {billingTabLinkStart}billing tab{billingTabLinkEnd} of the setting page. If you cancel, you will still be charged for the current billing period."
+	/// English String: "If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking â€œSubmit Orderâ€ (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {teamOfUseLinkStart}Terms of Use{teamOfUseLinkEnd} and {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You can cancel at any time by clicking â€œCancel membershipâ€ on the {billingTabLinkStart}billing tab{billingTabLinkEnd} of the setting page. If you cancel, you will still be charged for the current billing period."
 	/// </summary>
 	public override string DescriptionPremiumSubscriptionDisclosure(string teamOfUseLinkStart, string teamOfUseLinkEnd, string privacyPolicyLinkStart, string privacyPolicyLinkEnd, string billingTabLinkStart, string billingTabLinkEnd)
 	{
-		return $"18세 미만의 사용자라면 Premium을 구매하기 전에 부모 또는 법적 보호자의 허락을 받아야 하며, 허락 없이 구매하면 계정이 삭제될 수 있습니다. '주문 확인'을 클릭하면 회원님은 (1) 가입을 취소할 때까지 Roblox가 계정에 요금을 청구할 수 있는 권한을 부여하며, (2) {teamOfUseLinkStart}이용 약관{teamOfUseLinkEnd} 및 {privacyPolicyLinkStart}개인정보 처리방침{privacyPolicyLinkEnd}을 이해하고 이에 동의하는 것으로 간주됩니다. 설정 페이지의 {billingTabLinkStart}청구 탭{billingTabLinkEnd}에서 '멤버십 취소'를 클릭하면 언제든지 취소할 수 있습니다. 취소한 후에도 현재 청구 기간에 대한 비용은 그대로 유지됩니다.";
+		return $"18ì„¸ ë¯¸ë§Œì˜ ì‚¬ìš©ìžë¼ë©´ Premiumì„ êµ¬ë§¤í•˜ê¸° ì „ì— ë¶€ëª¨ ë˜ëŠ” ë²•ì  ë³´í˜¸ìžì˜ í—ˆë½ì„ ë°›ì•„ì•¼ í•˜ë©°, í—ˆë½ ì—†ì´ êµ¬ë§¤í•˜ë©´ ê³„ì •ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 'ì£¼ë¬¸ í™•ì¸'ì„ í´ë¦­í•˜ë©´ íšŒì›ë‹˜ì€ (1) ê°€ìž…ì„ ì·¨ì†Œí•  ë•Œê¹Œì§€ Robloxê°€ ê³„ì •ì— ìš”ê¸ˆì„ ì²­êµ¬í•  ìˆ˜ ìžˆëŠ” ê¶Œí•œì„ ë¶€ì—¬í•˜ë©°, (2) {teamOfUseLinkStart}ì´ìš© ì•½ê´€{teamOfUseLinkEnd} ë° {privacyPolicyLinkStart}ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨{privacyPolicyLinkEnd}ì„ ì´í•´í•˜ê³  ì´ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤. ì„¤ì • íŽ˜ì´ì§€ì˜ {billingTabLinkStart}ì²­êµ¬ íƒ­{billingTabLinkEnd}ì—ì„œ 'ë©¤ë²„ì‹­ ì·¨ì†Œ'ë¥¼ í´ë¦­í•˜ë©´ ì–¸ì œë“ ì§€ ì·¨ì†Œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì·¨ì†Œí•œ í›„ì—ë„ í˜„ìž¬ ì²­êµ¬ ê¸°ê°„ì— ëŒ€í•œ ë¹„ìš©ì€ ê·¸ëŒ€ë¡œ ìœ ì§€ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionPremiumSubscriptionDisclosure()
 	{
-		return "18세 미만의 사용자라면 Premium을 구매하기 전에 부모 또는 법적 보호자의 허락을 받아야 하며, 허락 없이 구매하면 계정이 삭제될 수 있습니다. '주문 확인'을 클릭하면 회원님은 (1) 가입을 취소할 때까지 Roblox가 계정에 요금을 청구할 수 있는 권한을 부여하며, (2) {teamOfUseLinkStart}이용 약관{teamOfUseLinkEnd} 및 {privacyPolicyLinkStart}개인정보 처리방침{privacyPolicyLinkEnd}을 이해하고 이에 동의하는 것으로 간주됩니다. 설정 페이지의 {billingTabLinkStart}청구 탭{billingTabLinkEnd}에서 '멤버십 취소'를 클릭하면 언제든지 취소할 수 있습니다. 취소한 후에도 현재 청구 기간에 대한 비용은 그대로 유지됩니다.";
+		return "18ì„¸ ë¯¸ë§Œì˜ ì‚¬ìš©ìžë¼ë©´ Premiumì„ êµ¬ë§¤í•˜ê¸° ì „ì— ë¶€ëª¨ ë˜ëŠ” ë²•ì  ë³´í˜¸ìžì˜ í—ˆë½ì„ ë°›ì•„ì•¼ í•˜ë©°, í—ˆë½ ì—†ì´ êµ¬ë§¤í•˜ë©´ ê³„ì •ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 'ì£¼ë¬¸ í™•ì¸'ì„ í´ë¦­í•˜ë©´ íšŒì›ë‹˜ì€ (1) ê°€ìž…ì„ ì·¨ì†Œí•  ë•Œê¹Œì§€ Robloxê°€ ê³„ì •ì— ìš”ê¸ˆì„ ì²­êµ¬í•  ìˆ˜ ìžˆëŠ” ê¶Œí•œì„ ë¶€ì—¬í•˜ë©°, (2) {teamOfUseLinkStart}ì´ìš© ì•½ê´€{teamOfUseLinkEnd} ë° {privacyPolicyLinkStart}ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨{privacyPolicyLinkEnd}ì„ ì´í•´í•˜ê³  ì´ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤. ì„¤ì • íŽ˜ì´ì§€ì˜ {billingTabLinkStart}ì²­êµ¬ íƒ­{billingTabLinkEnd}ì—ì„œ 'ë©¤ë²„ì‹­ ì·¨ì†Œ'ë¥¼ í´ë¦­í•˜ë©´ ì–¸ì œë“ ì§€ ì·¨ì†Œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì·¨ì†Œí•œ í›„ì—ë„ í˜„ìž¬ ì²­êµ¬ ê¸°ê°„ì— ëŒ€í•œ ë¹„ìš©ì€ ê·¸ëŒ€ë¡œ ìœ ì§€ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxPremiumSubtitle()
 	{
-		return "Roblox Premium에 가입하면 매월 일정한 Robux를 지급받게 되며, Robux 구매 시 10% 보너스 혜택을 받을 수 있습니다. 또한 아이템 구입, 판매, 거래와 같은 Roblox 경제 기능을 사용할 수 있을 뿐 아니라, 게임 내 판매 시 보다 높은 비율로 수익을 얻을 수 있습니다.";
+		return "Roblox Premiumì— ê°€ìž…í•˜ë©´ ë§¤ì›” ì¼ì •í•œ Robuxë¥¼ ì§€ê¸‰ë°›ê²Œ ë˜ë©°, Robux êµ¬ë§¤ ì‹œ 10% ë³´ë„ˆìŠ¤ í˜œíƒì„ ë°›ì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë˜í•œ ì•„ì´í…œ êµ¬ìž…, íŒë§¤, ê±°ëž˜ì™€ ê°™ì€ Roblox ê²½ì œ ê¸°ëŠ¥ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆì„ ë¿ ì•„ë‹ˆë¼, ê²Œìž„ ë‚´ íŒë§¤ ì‹œ ë³´ë‹¤ ë†’ì€ ë¹„ìœ¨ë¡œ ìˆ˜ìµì„ ì–»ì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionSellMoreItems()
 	{
-		return "아이템을 다시 판매하여 여러분의 작품에 대해 더 많은 Robux를 획득해보세요.";
+		return "ì•„ì´í…œì„ ë‹¤ì‹œ íŒë§¤í•˜ì—¬ ì—¬ëŸ¬ë¶„ì˜ ìž‘í’ˆì— ëŒ€í•´ ë” ë§Žì€ Robuxë¥¼ íšë“í•´ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionTrade()
 	{
-		return "다른 Premium 멤버와 아이템 거래";
+		return "ë‹¤ë¥¸ Premium ë©¤ë²„ì™€ ì•„ì´í…œ ê±°ëž˜";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobux()
 	{
-		return "Robux 구매";
+		return "Robux êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForHeadingConfirmCancellation()
 	{
-		return "취소 확인";
+		return "ì·¨ì†Œ í™•ì¸";
 	}
 
 	protected override string _GetTemplateForHeadingEvenMoreFeatures()
 	{
-		return "더 많은 기능";
+		return "ë” ë§Žì€ ê¸°ëŠ¥";
 	}
 
 	protected override string _GetTemplateForHeadingGeneralError()
 	{
-		return "오류";
+		return "ì˜¤ë¥˜";
 	}
 
 	protected override string _GetTemplateForHeadingPremiumRobuxDiscounts()
 	{
-		return "Premium 회원이셔서, Robux 구매 시 할인받을 수 있어요!";
+		return "Premium íšŒì›ì´ì…”ì„œ, Robux êµ¬ë§¤ ì‹œ í• ì¸ë°›ì„ ìˆ˜ ìžˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxPremium()
@@ -494,87 +494,87 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingServerError()
 	{
-		return "서버 오류";
+		return "ì„œë²„ ì˜¤ë¥˜";
 	}
 
 	protected override string _GetTemplateForHeadingSubscriptionUnavailable()
 	{
-		return "가입 신청 불가";
+		return "ê°€ìž… ì‹ ì²­ ë¶ˆê°€";
 	}
 
 	protected override string _GetTemplateForHeadingSwitchPlanModal()
 	{
-		return "가입 업데이트 확인";
+		return "ê°€ìž… ì—…ë°ì´íŠ¸ í™•ì¸";
 	}
 
 	protected override string _GetTemplateForHeadingUnableToFindBc()
 	{
-		return "Builders Club을 찾을 수 없습니다";
+		return "Builders Clubì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForHeadingUpgradeToPremium()
 	{
-		return "Roblox Premium으로 업그레이드";
+		return "Roblox Premiumìœ¼ë¡œ ì—…ê·¸ë ˆì´ë“œ";
 	}
 
 	protected override string _GetTemplateForHeadingUpgradeUnavailable()
 	{
-		return "업그레이드 이용 불가";
+		return "ì—…ê·¸ë ˆì´ë“œ ì´ìš© ë¶ˆê°€";
 	}
 
 	protected override string _GetTemplateForLabel10PercentMoreRobux()
 	{
-		return "Robux가 10% 더 추가됩니다";
+		return "Robuxê°€ 10% ë” ì¶”ê°€ë©ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForLabelAndGetMore()
 	{
-		return "더 많이 받으세요!";
+		return "ë” ë§Žì´ ë°›ìœ¼ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForLabelBecauseYouSubscribed()
 	{
-		return "가입 기반 추천!";
+		return "ê°€ìž… ê¸°ë°˜ ì¶”ì²œ!";
 	}
 
 	protected override string _GetTemplateForLabelBuyOnce()
 	{
-		return "1회 구매";
+		return "1íšŒ êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForLabelBuyRobux()
 	{
-		return "Robux 구매";
+		return "Robux êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForLabelConfirm()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPlan()
 	{
-		return "회원님의 현재 플랜";
+		return "íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœ";
 	}
 
 	protected override string _GetTemplateForLabelGet10PercentOffRobux()
 	{
-		return "Robux 10% 할인 받기";
+		return "Robux 10% í• ì¸ ë°›ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelGetMoreRobux()
 	{
-		return "더 많은 Robux 획득";
+		return "ë” ë§Žì€ Robux íšë“";
 	}
 
 	protected override string _GetTemplateForLabelMembershipManagementRecurring()
 	{
-		return "Premium 가입을 관리하려면, 브라우저에서 청구 설정으로 이동하세요.";
+		return "Premium ê°€ìž…ì„ ê´€ë¦¬í•˜ë ¤ë©´, ë¸Œë¼ìš°ì €ì—ì„œ ì²­êµ¬ ì„¤ì •ìœ¼ë¡œ ì´ë™í•˜ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -583,12 +583,12 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatus(string premiumSubscription, string expirationDate)
 	{
-		return $"회원님의 현재 플랜은 {premiumSubscription}입니다. 종료일은 {expirationDate}입니다.";
+		return $"íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœì€ {premiumSubscription}ìž…ë‹ˆë‹¤. ì¢…ë£Œì¼ì€ {expirationDate}ìž…ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatus()
 	{
-		return "회원님의 현재 플랜은 {premiumSubscription}입니다. 종료일은 {expirationDate}입니다.";
+		return "íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœì€ {premiumSubscription}ìž…ë‹ˆë‹¤. ì¢…ë£Œì¼ì€ {expirationDate}ìž…ë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -597,12 +597,12 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatusExpiration(string premiumSubscription, string expirationDate)
 	{
-		return $"회원님의 현재 플랜은 {premiumSubscription}이며, {expirationDate}에 종료됩니다. 멤버십 종료 이후 같은 플랜에 재가입할 수도 있고, 새로운 플랜을 선택하실 수도 있습니다.";
+		return $"íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœì€ {premiumSubscription}ì´ë©°, {expirationDate}ì— ì¢…ë£Œë©ë‹ˆë‹¤. ë©¤ë²„ì‹­ ì¢…ë£Œ ì´í›„ ê°™ì€ í”Œëžœì— ìž¬ê°€ìž…í•  ìˆ˜ë„ ìžˆê³ , ìƒˆë¡œìš´ í”Œëžœì„ ì„ íƒí•˜ì‹¤ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusExpiration()
 	{
-		return "회원님의 현재 플랜은 {premiumSubscription}이며, {expirationDate}에 종료됩니다. 멤버십 종료 이후 같은 플랜에 재가입할 수도 있고, 새로운 플랜을 선택하실 수도 있습니다.";
+		return "íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœì€ {premiumSubscription}ì´ë©°, {expirationDate}ì— ì¢…ë£Œë©ë‹ˆë‹¤. ë©¤ë²„ì‹­ ì¢…ë£Œ ì´í›„ ê°™ì€ í”Œëžœì— ìž¬ê°€ìž…í•  ìˆ˜ë„ ìžˆê³ , ìƒˆë¡œìš´ í”Œëžœì„ ì„ íƒí•˜ì‹¤ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -611,17 +611,17 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatusRecurring(string premiumSubscription, string renewal)
 	{
-		return $"회원님의 현재 플랜은 {premiumSubscription}입니다. 갱신일은 {renewal}입니다.";
+		return $"íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœì€ {premiumSubscription}ìž…ë‹ˆë‹¤. ê°±ì‹ ì¼ì€ {renewal}ìž…ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusRecurring()
 	{
-		return "회원님의 현재 플랜은 {premiumSubscription}입니다. 갱신일은 {renewal}입니다.";
+		return "íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœì€ {premiumSubscription}ìž…ë‹ˆë‹¤. ê°±ì‹ ì¼ì€ {renewal}ìž…ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelNo()
 	{
-		return "아니요";
+		return "ì•„ë‹ˆìš”";
 	}
 
 	protected override string _GetTemplateForLabelPremiumClub2200()
@@ -635,12 +635,12 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelPriceMonth(string robux, string subTextStart, string subTextEnd)
 	{
-		return $"{robux}{subTextStart}/월{subTextEnd}";
+		return $"{robux}{subTextStart}/ì›”{subTextEnd}";
 	}
 
 	protected override string _GetTemplateForLabelPriceMonth()
 	{
-		return "{robux}{subTextStart}/월{subTextEnd}";
+		return "{robux}{subTextStart}/ì›”{subTextEnd}";
 	}
 
 	/// <summary>
@@ -650,12 +650,12 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelPricePerMonth(string robuxAmount)
 	{
-		return $"{robuxAmount}/월";
+		return $"{robuxAmount}/ì›”";
 	}
 
 	protected override string _GetTemplateForLabelPricePerMonth()
 	{
-		return "{robuxAmount}/월";
+		return "{robuxAmount}/ì›”";
 	}
 
 	protected override string _GetTemplateForLabelRobloxPremium()
@@ -670,7 +670,7 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelRobloxPremium1000OneMonth()
 	{
-		return "Roblox Premium 1000 1개월";
+		return "Roblox Premium 1000 1ê°œì›”";
 	}
 
 	protected override string _GetTemplateForLabelRobloxPremium2200()
@@ -680,7 +680,7 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelRobloxPremium2200OneMonth()
 	{
-		return "Roblox Premium 2200 1개월";
+		return "Roblox Premium 2200 1ê°œì›”";
 	}
 
 	protected override string _GetTemplateForLabelRobloxPremium450()
@@ -690,22 +690,22 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelRobloxPremium450OneMonth()
 	{
-		return "Roblox Premium 450 1개월";
+		return "Roblox Premium 450 1ê°œì›”";
 	}
 
 	protected override string _GetTemplateForLabelSellMore()
 	{
-		return "판매 금액 증가";
+		return "íŒë§¤ ê¸ˆì•¡ ì¦ê°€";
 	}
 
 	protected override string _GetTemplateForLabelSinceYouSubscribed()
 	{
-		return "가입하셨으니까요";
+		return "ê°€ìž…í•˜ì…¨ìœ¼ë‹ˆê¹Œìš”";
 	}
 
 	protected override string _GetTemplateForLabelSubscribe()
 	{
-		return "가입";
+		return "ê°€ìž…";
 	}
 
 	/// <summary>
@@ -714,32 +714,32 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelSubscribeUpsell(string upsellLinkStart, string upsellLinkEnd)
 	{
-		return $"{upsellLinkStart}에 가입해 더 자세히 알아보세요! {upsellLinkEnd}";
+		return $"{upsellLinkStart}ì— ê°€ìž…í•´ ë” ìžì„¸ížˆ ì•Œì•„ë³´ì„¸ìš”! {upsellLinkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelSubscribeUpsell()
 	{
-		return "{upsellLinkStart}에 가입해 더 자세히 알아보세요! {upsellLinkEnd}";
+		return "{upsellLinkStart}ì— ê°€ìž…í•´ ë” ìžì„¸ížˆ ì•Œì•„ë³´ì„¸ìš”! {upsellLinkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelTrade()
 	{
-		return "거래";
+		return "ê±°ëž˜";
 	}
 
 	protected override string _GetTemplateForLabelValuePacks()
 	{
-		return "밸류 팩";
+		return "ë°¸ë¥˜ íŒ©";
 	}
 
 	protected override string _GetTemplateForLabelWantMoreRobux()
 	{
-		return "더 많은 Robux를 원하시나요?";
+		return "ë” ë§Žì€ Robuxë¥¼ ì›í•˜ì‹œë‚˜ìš”?";
 	}
 
 	protected override string _GetTemplateForLabelYes()
 	{
-		return "예";
+		return "ì˜ˆ";
 	}
 
 	/// <summary>
@@ -748,27 +748,27 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageConfirmCancellationModal(string newLine, string robuxAmount)
 	{
-		return $"'확인'을 클릭하면 현 Builders Club 멤버십이 종료되어 Roblox Premium에 가입할 수 있어요.{newLine} 일시불로 {robuxAmount}이(가) 청구됩니다.";
+		return $"'í™•ì¸'ì„ í´ë¦­í•˜ë©´ í˜„ Builders Club ë©¤ë²„ì‹­ì´ ì¢…ë£Œë˜ì–´ Roblox Premiumì— ê°€ìž…í•  ìˆ˜ ìžˆì–´ìš”.{newLine} ì¼ì‹œë¶ˆë¡œ {robuxAmount}ì´(ê°€) ì²­êµ¬ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageConfirmCancellationModal()
 	{
-		return "'확인'을 클릭하면 현 Builders Club 멤버십이 종료되어 Roblox Premium에 가입할 수 있어요.{newLine} 일시불로 {robuxAmount}이(가) 청구됩니다.";
+		return "'í™•ì¸'ì„ í´ë¦­í•˜ë©´ í˜„ Builders Club ë©¤ë²„ì‹­ì´ ì¢…ë£Œë˜ì–´ Roblox Premiumì— ê°€ìž…í•  ìˆ˜ ìžˆì–´ìš”.{newLine} ì¼ì‹œë¶ˆë¡œ {robuxAmount}ì´(ê°€) ì²­êµ¬ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageGeneralError()
 	{
-		return "가입 업데이트 중 오류가 발생했어요. 나중에 다시 시도하세요.";
+		return "ê°€ìž… ì—…ë°ì´íŠ¸ ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageNoDataError()
 	{
-		return "가입 정보가 없어요.";
+		return "ê°€ìž… ì •ë³´ê°€ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageServerError()
 	{
-		return "가입 업데이트 중 서버 오류가 발생했어요. 나중에 다시 시도하세요.";
+		return "ê°€ìž… ì—…ë°ì´íŠ¸ ì¤‘ ì„œë²„ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -777,12 +777,12 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageSubscriptionUnavailableModal(string expiredDate)
 	{
-		return $"죄송합니다. 취소한 현재 플랜의 만료일까지 가입 신청을 하실 수 없습니다. {expiredDate}에 다시 가입 신청하세요.";
+		return $"ì£„ì†¡í•©ë‹ˆë‹¤. ì·¨ì†Œí•œ í˜„ìž¬ í”Œëžœì˜ ë§Œë£Œì¼ê¹Œì§€ ê°€ìž… ì‹ ì²­ì„ í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. {expiredDate}ì— ë‹¤ì‹œ ê°€ìž… ì‹ ì²­í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageSubscriptionUnavailableModal()
 	{
-		return "죄송합니다. 취소한 현재 플랜의 만료일까지 가입 신청을 하실 수 없습니다. {expiredDate}에 다시 가입 신청하세요.";
+		return "ì£„ì†¡í•©ë‹ˆë‹¤. ì·¨ì†Œí•œ í˜„ìž¬ í”Œëžœì˜ ë§Œë£Œì¼ê¹Œì§€ ê°€ìž… ì‹ ì²­ì„ í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. {expiredDate}ì— ë‹¤ì‹œ ê°€ìž… ì‹ ì²­í•˜ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -791,26 +791,29 @@ internal class PremiumResources_ko_kr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageSwitchPlanBody(string price, string renewalDate)
 	{
-		return $"'확인'을 클릭하면 가입을 취소하거나 전환하기 전까지 {renewalDate}부터 매월 {price}의 금액이 부과됩니다.";
+		return $"'í™•ì¸'ì„ í´ë¦­í•˜ë©´ ê°€ìž…ì„ ì·¨ì†Œí•˜ê±°ë‚˜ ì „í™˜í•˜ê¸° ì „ê¹Œì§€ {renewalDate}ë¶€í„° ë§¤ì›” {price}ì˜ ê¸ˆì•¡ì´ ë¶€ê³¼ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageSwitchPlanBody()
 	{
-		return "'확인'을 클릭하면 가입을 취소하거나 전환하기 전까지 {renewalDate}부터 매월 {price}의 금액이 부과됩니다.";
+		return "'í™•ì¸'ì„ í´ë¦­í•˜ë©´ ê°€ìž…ì„ ì·¨ì†Œí•˜ê±°ë‚˜ ì „í™˜í•˜ê¸° ì „ê¹Œì§€ {renewalDate}ë¶€í„° ë§¤ì›” {price}ì˜ ê¸ˆì•¡ì´ ë¶€ê³¼ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageUnableToFindBc()
 	{
-		return "본 사용자의 Builders Club 정보를 찾을 수 없어요.";
+		return "ë³¸ ì‚¬ìš©ìžì˜ Builders Club ì •ë³´ë¥¼ ì°¾ì„ ìˆ˜ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageUpgradeUnavailableModal()
 	{
-		return "죄송합니다. 평생 Builders Club과 대등한 패키지가 존재하지 않아 플랜을 변경할 수 없어요.";
+		return "ì£„ì†¡í•©ë‹ˆë‹¤. í‰ìƒ Builders Clubê³¼ ëŒ€ë“±í•œ íŒ¨í‚¤ì§€ê°€ ì¡´ìž¬í•˜ì§€ ì•Šì•„ í”Œëžœì„ ë³€ê²½í•  ìˆ˜ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForSwitchPlanTitle()
 	{
-		return "가입 업데이트 확인";
+		return "ê°€ìž… ì—…ë°ì´íŠ¸ í™•ì¸";
 	}
+}
+
+
 }

@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class GrantedItemEntity : IRobloxEntity<long, GrantedItemDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 {
 	private GrantedItemDAL _EntityDAL;
@@ -153,4 +152,7 @@ internal class GrantedItemEntity : IRobloxEntity<long, GrantedItemDAL>, ICacheab
 	{
 		return $"GrantedItemListID:{grantedItemListId}";
 	}
+}
+
+
 }

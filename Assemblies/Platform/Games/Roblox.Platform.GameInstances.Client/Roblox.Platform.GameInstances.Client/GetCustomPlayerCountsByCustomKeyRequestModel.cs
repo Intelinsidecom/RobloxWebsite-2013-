@@ -1,11 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class GetCustomPlayerCountsByCustomKeyRequestModel
 
-namespace Roblox.GameInstances.Client;
-
-public class GetCustomPlayerCountsByCustomKeyRequestModel
 {
 	private static readonly int _MaxNumberOfDimensions = 3;
 
@@ -46,4 +45,7 @@ public class GetCustomPlayerCountsByCustomKeyRequestModel
 		stringBuilder.Append(":counts:" + string.Join(",", Counts));
 		return stringBuilder.ToString();
 	}
+}
+
+
 }

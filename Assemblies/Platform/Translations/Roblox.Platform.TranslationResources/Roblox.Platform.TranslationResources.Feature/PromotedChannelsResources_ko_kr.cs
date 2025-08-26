@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PromotedChannelsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,42 +11,42 @@ internal class PromotedChannelsResources_ko_kr : PromotedChannelsResources_en_us
 	/// The button text for adding an additional social link.
 	/// English String: "Add Link"
 	/// </summary>
-	public override string ActionAddLink => "링크 추가";
+	public override string ActionAddLink => "ë§í¬ ì¶”ê°€";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// The remove button text for configuring social links.
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "삭제";
+	public override string ActionRemove => "ì‚­ì œ";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// The save button text for updating a social link.
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "저장";
+	public override string ActionSave => "ì €ìž¥";
 
 	/// <summary>
 	/// Key: "HeadingSocialLinks"
 	/// The heading of the social links panel on the game details page
 	/// English String: "Social Links"
 	/// </summary>
-	public override string HeadingSocialLinks => "소셜 링크";
+	public override string HeadingSocialLinks => "ì†Œì…œ ë§í¬";
 
 	/// <summary>
 	/// Key: "HeadingSocialMedia"
 	/// The heading of the social media panel on the game details page
 	/// English String: "Social Media"
 	/// </summary>
-	public override string HeadingSocialMedia => "소셜 미디어";
+	public override string HeadingSocialMedia => "ì†Œì…œ ë¯¸ë””ì–´";
 
 	/// <summary>
 	/// Key: "Label.Title"
 	/// Placeholder text for inputting a title for a social link.
 	/// English String: "Title"
 	/// </summary>
-	public override string LabelTitle => "제목";
+	public override string LabelTitle => "ì œëª©";
 
 	/// <summary>
 	/// Key: "Label.Url"
@@ -60,70 +60,70 @@ internal class PromotedChannelsResources_ko_kr : PromotedChannelsResources_en_us
 	/// The error message displayed when the user does not have permission to the group they are trying to add.
 	/// English String: "You do not have permission to configure this group."
 	/// </summary>
-	public override string MessageNoGroupPermission => "본 그룹을 구성할 권한이 없습니다.";
+	public override string MessageNoGroupPermission => "ë³¸ ê·¸ë£¹ì„ êµ¬ì„±í•  ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinkInvalidError"
 	/// The error message displayed when a social link attempts to be saved but no longer exists.
 	/// English String: "The social link no longer exists."
 	/// </summary>
-	public override string MessageSocialLinkInvalidError => "소셜 링크가 더 이상 존재하지 않네요.";
+	public override string MessageSocialLinkInvalidError => "ì†Œì…œ ë§í¬ê°€ ë” ì´ìƒ ì¡´ìž¬í•˜ì§€ ì•Šë„¤ìš”.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinkRemoved"
 	/// The message displayed when the social link has been removed.
 	/// English String: "The social media link has been deleted."
 	/// </summary>
-	public override string MessageSocialLinkRemoved => "소셜 미디어 링크가 삭제되었습니다.";
+	public override string MessageSocialLinkRemoved => "ì†Œì…œ ë¯¸ë””ì–´ ë§í¬ê°€ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinksEditDisabledError"
 	/// The error message displayed when the social links feature is disabled and attempt to be edited.
 	/// English String: "Social links may not be edited at this time."
 	/// </summary>
-	public override string MessageSocialLinksEditDisabledError => "지금은 소셜 링크를 수정할 수 없어요.";
+	public override string MessageSocialLinksEditDisabledError => "ì§€ê¸ˆì€ ì†Œì…œ ë§í¬ë¥¼ ìˆ˜ì •í•  ìˆ˜ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.TitleEmptyError"
 	/// The error message displayed when the title input is empty.
 	/// English String: "The title cannot be empty."
 	/// </summary>
-	public override string MessageTitleEmptyError => "제목을 입력하셔야 합니다.";
+	public override string MessageTitleEmptyError => "ì œëª©ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.TitleModeratedError"
 	/// The error message displayed when a title is moderated while being edited.
 	/// English String: "The title has been moderated, please try something else."
 	/// </summary>
-	public override string MessageTitleModeratedError => "제목이 검열을 통과하지 못했습니다. 다른 제목으로 시도해 주세요.";
+	public override string MessageTitleModeratedError => "ì œëª©ì´ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ë‹¤ë¥¸ ì œëª©ìœ¼ë¡œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedError"
 	/// The error message displayed when an action is attempted against a social link but the user does not have permission to edit social links.
 	/// English String: "You do not have permission to update social links."
 	/// </summary>
-	public override string MessageUnauthorizedError => "소셜 링크를 업데이트할 권한이 없습니다.";
+	public override string MessageUnauthorizedError => "ì†Œì…œ ë§í¬ë¥¼ ì—…ë°ì´íŠ¸í•  ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// The error message displayed when something unknown goes wrong trying to manage a social link.
 	/// English String: "Something went wrong, please try again."
 	/// </summary>
-	public override string MessageUnknownError => "오류가 발생했어요. 다시 시도해 주세요.";
+	public override string MessageUnknownError => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.UrlEmptyError"
 	/// The error message displayed when the url input is empty.
 	/// English String: "The url cannot be empty."
 	/// </summary>
-	public override string MessageUrlEmptyError => "URL을 입력하셔야 합니다.";
+	public override string MessageUrlEmptyError => "URLì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.UrlSocialMediaTypeMismatchError"
 	/// The error message displayed when the url input is not a valid url for the social media type selected.
 	/// English String: "The url must match the social media type."
 	/// </summary>
-	public override string MessageUrlSocialMediaTypeMismatchError => "URL이 소셜 미디어 유형과 일치해야 합니다.";
+	public override string MessageUrlSocialMediaTypeMismatchError => "URLì´ ì†Œì…œ ë¯¸ë””ì–´ ìœ í˜•ê³¼ ì¼ì¹˜í•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	public PromotedChannelsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -132,27 +132,27 @@ internal class PromotedChannelsResources_ko_kr : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForActionAddLink()
 	{
-		return "링크 추가";
+		return "ë§í¬ ì¶”ê°€";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "삭제";
+		return "ì‚­ì œ";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "저장";
+		return "ì €ìž¥";
 	}
 
 	protected override string _GetTemplateForHeadingSocialLinks()
 	{
-		return "소셜 링크";
+		return "ì†Œì…œ ë§í¬";
 	}
 
 	protected override string _GetTemplateForHeadingSocialMedia()
 	{
-		return "소셜 미디어";
+		return "ì†Œì…œ ë¯¸ë””ì–´";
 	}
 
 	/// <summary>
@@ -162,17 +162,17 @@ internal class PromotedChannelsResources_ko_kr : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string LabelLimits(string socialLinkLimit)
 	{
-		return $"소셜 미디어 링크를 {socialLinkLimit}개까지 추가할 수 있습니다.";
+		return $"ì†Œì…œ ë¯¸ë””ì–´ ë§í¬ë¥¼ {socialLinkLimit}ê°œê¹Œì§€ ì¶”ê°€í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelLimits()
 	{
-		return "소셜 미디어 링크를 {socialLinkLimit}개까지 추가할 수 있습니다.";
+		return "ì†Œì…œ ë¯¸ë””ì–´ ë§í¬ë¥¼ {socialLinkLimit}ê°œê¹Œì§€ ì¶”ê°€í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
 	{
-		return "제목";
+		return "ì œëª©";
 	}
 
 	protected override string _GetTemplateForLabelUrl()
@@ -182,17 +182,17 @@ internal class PromotedChannelsResources_ko_kr : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageNoGroupPermission()
 	{
-		return "본 그룹을 구성할 권한이 없습니다.";
+		return "ë³¸ ê·¸ë£¹ì„ êµ¬ì„±í•  ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkInvalidError()
 	{
-		return "소셜 링크가 더 이상 존재하지 않네요.";
+		return "ì†Œì…œ ë§í¬ê°€ ë” ì´ìƒ ì¡´ìž¬í•˜ì§€ ì•Šë„¤ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkRemoved()
 	{
-		return "소셜 미디어 링크가 삭제되었습니다.";
+		return "ì†Œì…œ ë¯¸ë””ì–´ ë§í¬ê°€ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -202,17 +202,17 @@ internal class PromotedChannelsResources_ko_kr : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkSaved(string title)
 	{
-		return $"{title}이(가) 저장되었습니다.";
+		return $"{title}ì´(ê°€) ì €ìž¥ë˜ì—ˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkSaved()
 	{
-		return "{title}이(가) 저장되었습니다.";
+		return "{title}ì´(ê°€) ì €ìž¥ë˜ì—ˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinksEditDisabledError()
 	{
-		return "지금은 소셜 링크를 수정할 수 없어요.";
+		return "ì§€ê¸ˆì€ ì†Œì…œ ë§í¬ë¥¼ ìˆ˜ì •í•  ìˆ˜ ì—†ì–´ìš”.";
 	}
 
 	/// <summary>
@@ -222,41 +222,44 @@ internal class PromotedChannelsResources_ko_kr : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkTypeLimitError(string socialMediaType)
 	{
-		return $"1개의 {socialMediaType} 소셜 미디어 링크만 허용됩니다.";
+		return $"1ê°œì˜ {socialMediaType} ì†Œì…œ ë¯¸ë””ì–´ ë§í¬ë§Œ í—ˆìš©ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkTypeLimitError()
 	{
-		return "1개의 {socialMediaType} 소셜 미디어 링크만 허용됩니다.";
+		return "1ê°œì˜ {socialMediaType} ì†Œì…œ ë¯¸ë””ì–´ ë§í¬ë§Œ í—ˆìš©ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageTitleEmptyError()
 	{
-		return "제목을 입력하셔야 합니다.";
+		return "ì œëª©ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageTitleModeratedError()
 	{
-		return "제목이 검열을 통과하지 못했습니다. 다른 제목으로 시도해 주세요.";
+		return "ì œëª©ì´ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ë‹¤ë¥¸ ì œëª©ìœ¼ë¡œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedError()
 	{
-		return "소셜 링크를 업데이트할 권한이 없습니다.";
+		return "ì†Œì…œ ë§í¬ë¥¼ ì—…ë°ì´íŠ¸í•  ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "오류가 발생했어요. 다시 시도해 주세요.";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageUrlEmptyError()
 	{
-		return "URL을 입력하셔야 합니다.";
+		return "URLì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageUrlSocialMediaTypeMismatchError()
 	{
-		return "URL이 소셜 미디어 유형과 일치해야 합니다.";
+		return "URLì´ ì†Œì…œ ë¯¸ë””ì–´ ìœ í˜•ê³¼ ì¼ì¹˜í•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
+}
+
+
 }

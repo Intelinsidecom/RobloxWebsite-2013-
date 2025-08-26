@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TencentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,14 +11,14 @@ internal class TencentResources_th_th : TencentResources_en_us, ITencentResource
 	/// button text for logging in with QQ (social network application)
 	/// English String: "QQ Login"
 	/// </summary>
-	public override string ActionQQLogin => "เข\u0e49าส\u0e39\u0e48ระบบ QQ";
+	public override string ActionQQLogin => "à¹€à¸‚\u0e49à¸²à¸ª\u0e39\u0e48à¸£à¸°à¸šà¸š QQ";
 
 	/// <summary>
 	/// Key: "Action.WeChatLogin"
 	/// button text for logging in with WeChat (social network application)
 	/// English String: "WeChat Login"
 	/// </summary>
-	public override string ActionWeChatLogin => "เข\u0e49าส\u0e39\u0e48ระบบ WeChat";
+	public override string ActionWeChatLogin => "à¹€à¸‚\u0e49à¸²à¸ª\u0e39\u0e48à¸£à¸°à¸šà¸š WeChat";
 
 	public TencentResources_th_th(TranslationResourceState state)
 		: base(state)
@@ -27,11 +27,14 @@ internal class TencentResources_th_th : TencentResources_en_us, ITencentResource
 
 	protected override string _GetTemplateForActionQQLogin()
 	{
-		return "เข\u0e49าส\u0e39\u0e48ระบบ QQ";
+		return "à¹€à¸‚\u0e49à¸²à¸ª\u0e39\u0e48à¸£à¸°à¸šà¸š QQ";
 	}
 
 	protected override string _GetTemplateForActionWeChatLogin()
 	{
-		return "เข\u0e49าส\u0e39\u0e48ระบบ WeChat";
+		return "à¹€à¸‚\u0e49à¸²à¸ª\u0e39\u0e48à¸£à¸°à¸šà¸š WeChat";
 	}
+}
+
+
 }

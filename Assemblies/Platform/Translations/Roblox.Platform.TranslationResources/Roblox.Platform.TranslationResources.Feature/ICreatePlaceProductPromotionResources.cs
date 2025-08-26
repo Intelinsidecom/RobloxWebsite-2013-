@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ICreatePlaceProductPromotionResources : ITranslationResources
 
-public interface ICreatePlaceProductPromotionResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.AddToGame"
@@ -91,4 +91,7 @@ public interface ICreatePlaceProductPromotionResources : ITranslationResources
 	/// English String: "What is adding gear to a game? This item is displayed on your game page, and automatically allowed in your game. If someone buys this item from your game page, you'll earn {affiliateSaleTotal} Robux!"
 	/// </summary>
 	string MessageWhatIsAddingGear(string affiliateSaleTotal);
+}
+
+
 }

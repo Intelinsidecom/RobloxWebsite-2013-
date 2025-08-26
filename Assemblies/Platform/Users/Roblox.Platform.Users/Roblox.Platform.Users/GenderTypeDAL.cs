@@ -5,10 +5,9 @@ using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.Users {
+    class GenderTypeDAL
 
-namespace Roblox.Users;
-
-public class GenderTypeDAL
 {
 	private byte _ID;
 
@@ -96,4 +95,7 @@ public class GenderTypeDAL
 		queryParameters.Add(new SqlParameter("@Value", value));
 		return EntityHelper.GetEntityDAL(new DbInfo(dbConnectionString_GenderTypeDAL, "GenderTypes_GetGenderTypeByValue", queryParameters), BuildDAL);
 	}
+}
+
+
 }

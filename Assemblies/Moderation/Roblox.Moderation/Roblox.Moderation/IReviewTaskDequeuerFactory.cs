@@ -1,6 +1,9 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderationpublic {
+    interface IReviewTaskDequeuerFactory
 
-public interface IReviewTaskDequeuerFactory
 {
 	IReviewTaskDequeuer<TTask> Create<TTask>(string trackingKey) where TTask : IReviewTask;
+}
+
+
 }

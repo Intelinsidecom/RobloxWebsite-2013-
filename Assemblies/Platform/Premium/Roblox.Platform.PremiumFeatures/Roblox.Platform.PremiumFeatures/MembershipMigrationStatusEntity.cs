@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
@@ -6,10 +6,9 @@ using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.PremiumFeatures.Properties;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class MembershipMigrationStatusEntity : IRobloxEntity<long, MembershipMigrationStatusDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 {
 	private MembershipMigrationStatusDAL _EntityDAL;
@@ -241,4 +240,7 @@ internal class MembershipMigrationStatusEntity : IRobloxEntity<long, MembershipM
 	{
 		return EntityHelper.DoGetOrCreate<long, MembershipMigrationStatusDAL, MembershipMigrationStatusEntity>(() => MembershipMigrationStatusDAL.GetOrCreateMembershipMigrationStatus(accountId, originalPremiumFeatureId, updatedPremiumFeatureId, premiumStartDate, robuxDistributionAmount, migrationStateId));
 	}
+}
+
+
 }

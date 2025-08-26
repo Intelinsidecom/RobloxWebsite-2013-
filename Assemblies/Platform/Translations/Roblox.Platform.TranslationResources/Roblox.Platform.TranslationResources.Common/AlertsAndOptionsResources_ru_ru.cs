@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class AlertsAndOptionsResources_ru_ru : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sBuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string LabelsBuyRobux => "Купить Robux";
+	public override string LabelsBuyRobux => "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ Robux";
 
 	/// <summary>
 	/// Key: "Label.sHelp"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelsHelp => "Справка";
+	public override string LabelsHelp => "Ð¡Ð¿Ñ€Ð°Ð²ÐºÐ°";
 
 	/// <summary>
 	/// Key: "Label.sLogout"
 	/// English String: "Logout"
 	/// </summary>
-	public override string LabelsLogout => "Выход";
+	public override string LabelsLogout => "Ð’Ñ‹Ñ…Ð¾Ð´";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -34,7 +34,7 @@ internal class AlertsAndOptionsResources_ru_ru : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelsSettings => "Настройки";
+	public override string LabelsSettings => "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
 
 	public AlertsAndOptionsResources_ru_ru(TranslationResourceState state)
 		: base(state)
@@ -43,17 +43,17 @@ internal class AlertsAndOptionsResources_ru_ru : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsBuyRobux()
 	{
-		return "Купить Robux";
+		return "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ Robux";
 	}
 
 	protected override string _GetTemplateForLabelsHelp()
 	{
-		return "Справка";
+		return "Ð¡Ð¿Ñ€Ð°Ð²ÐºÐ°";
 	}
 
 	protected override string _GetTemplateForLabelsLogout()
 	{
-		return "Выход";
+		return "Ð’Ñ‹Ñ…Ð¾Ð´";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -63,7 +63,7 @@ internal class AlertsAndOptionsResources_ru_ru : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue} Robux"
+	/// English String: "{robuxValue}Â Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{
@@ -77,6 +77,9 @@ internal class AlertsAndOptionsResources_ru_ru : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsSettings()
 	{
-		return "Настройки";
+		return "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
 	}
+}
+
+
 }

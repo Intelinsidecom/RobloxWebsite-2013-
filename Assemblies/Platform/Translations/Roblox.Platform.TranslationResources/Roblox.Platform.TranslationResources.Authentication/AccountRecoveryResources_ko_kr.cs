@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AccountRecoveryResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,79 +10,79 @@ internal class AccountRecoveryResources_ko_kr : AccountRecoveryResources_en_us, 
 	/// Key: "ActionSubmit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "저장";
+	public override string ActionSubmit => "ì €ìž¥";
 
 	/// <summary>
 	/// Key: "DescriptionResetFollowing"
 	/// English String: "This will reset the following settings:"
 	/// </summary>
-	public override string DescriptionResetFollowing => "계정을 복구하면 다음 설정이 초기화됩니다:";
+	public override string DescriptionResetFollowing => "ê³„ì •ì„ ë³µêµ¬í•˜ë©´ ë‹¤ìŒ ì„¤ì •ì´ ì´ˆê¸°í™”ë©ë‹ˆë‹¤:";
 
 	/// <summary>
 	/// Key: "DescriptionRevertAccount"
 	/// English String: "You are about to revert your account to a past state.\nTo revert your account you must set a new password."
 	/// </summary>
-	public override string DescriptionRevertAccount => "계정을 이전 상태로 복구합니다.\n계정을 복구하려면 새로운 비밀번호를 설정해야 합니다.";
+	public override string DescriptionRevertAccount => "ê³„ì •ì„ ì´ì „ ìƒíƒœë¡œ ë³µêµ¬í•©ë‹ˆë‹¤.\nê³„ì •ì„ ë³µêµ¬í•˜ë ¤ë©´ ìƒˆë¡œìš´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì„¤ì •í•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "HeadingAccountRecovery"
 	/// English String: "Reset Password"
 	/// </summary>
-	public override string HeadingAccountRecovery => "비밀번호 재설정";
+	public override string HeadingAccountRecovery => "ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •";
 
 	/// <summary>
 	/// Key: "HeadingChooseAccount"
 	/// English String: "Choose an Account"
 	/// </summary>
-	public override string HeadingChooseAccount => "계정을 선택하세요";
+	public override string HeadingChooseAccount => "ê³„ì •ì„ ì„ íƒí•˜ì„¸ìš”";
 
 	/// <summary>
 	/// Key: "HeadingRevertAccount"
 	/// English String: "Revert Account"
 	/// </summary>
-	public override string HeadingRevertAccount => "계정 복구";
+	public override string HeadingRevertAccount => "ê³„ì • ë³µêµ¬";
 
 	/// <summary>
 	/// Key: "LabelConfirmNewPassword"
 	/// English String: "Confirm New Password"
 	/// </summary>
-	public override string LabelConfirmNewPassword => "새 비밀번호 확인";
+	public override string LabelConfirmNewPassword => "ìƒˆ ë¹„ë°€ë²ˆí˜¸ í™•ì¸";
 
 	/// <summary>
 	/// Key: "LabelEmail"
 	/// English String: "Email"
 	/// </summary>
-	public override string LabelEmail => "이메일";
+	public override string LabelEmail => "ì´ë©”ì¼";
 
 	/// <summary>
 	/// Key: "LabelNewPassword"
 	/// English String: "New Password"
 	/// </summary>
-	public override string LabelNewPassword => "새 비밀번호";
+	public override string LabelNewPassword => "ìƒˆ ë¹„ë°€ë²ˆí˜¸";
 
 	/// <summary>
 	/// Key: "LabelPassword"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "비밀번호";
+	public override string LabelPassword => "ë¹„ë°€ë²ˆí˜¸";
 
 	/// <summary>
 	/// Key: "LabelTwoStepVerification"
 	/// English String: "Two Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "2단계 인증";
+	public override string LabelTwoStepVerification => "2ë‹¨ê³„ ì¸ì¦";
 
 	/// <summary>
 	/// Key: "MessageDisableTwoStepVerification"
 	/// English String: "This will disable two step verification."
 	/// </summary>
-	public override string MessageDisableTwoStepVerification => "2단계 인증이 비활성화됩니다.";
+	public override string MessageDisableTwoStepVerification => "2ë‹¨ê³„ ì¸ì¦ì´ ë¹„í™œì„±í™”ë©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "MessageRevertToUnverifiedEmail"
 	/// English String: "You are reverting your email to an unverified email."
 	/// </summary>
-	public override string MessageRevertToUnverifiedEmail => "이메일이 미인증 상태로 다시 전환됩니다.";
+	public override string MessageRevertToUnverifiedEmail => "ì´ë©”ì¼ì´ ë¯¸ì¸ì¦ ìƒíƒœë¡œ ë‹¤ì‹œ ì „í™˜ë©ë‹ˆë‹¤.";
 
 	public AccountRecoveryResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -91,57 +91,57 @@ internal class AccountRecoveryResources_ko_kr : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "저장";
+		return "ì €ìž¥";
 	}
 
 	protected override string _GetTemplateForDescriptionResetFollowing()
 	{
-		return "계정을 복구하면 다음 설정이 초기화됩니다:";
+		return "ê³„ì •ì„ ë³µêµ¬í•˜ë©´ ë‹¤ìŒ ì„¤ì •ì´ ì´ˆê¸°í™”ë©ë‹ˆë‹¤:";
 	}
 
 	protected override string _GetTemplateForDescriptionRevertAccount()
 	{
-		return "계정을 이전 상태로 복구합니다.\n계정을 복구하려면 새로운 비밀번호를 설정해야 합니다.";
+		return "ê³„ì •ì„ ì´ì „ ìƒíƒœë¡œ ë³µêµ¬í•©ë‹ˆë‹¤.\nê³„ì •ì„ ë³µêµ¬í•˜ë ¤ë©´ ìƒˆë¡œìš´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì„¤ì •í•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForHeadingAccountRecovery()
 	{
-		return "비밀번호 재설정";
+		return "ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAccount()
 	{
-		return "계정을 선택하세요";
+		return "ê³„ì •ì„ ì„ íƒí•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForHeadingRevertAccount()
 	{
-		return "계정 복구";
+		return "ê³„ì • ë³µêµ¬";
 	}
 
 	protected override string _GetTemplateForLabelConfirmNewPassword()
 	{
-		return "새 비밀번호 확인";
+		return "ìƒˆ ë¹„ë°€ë²ˆí˜¸ í™•ì¸";
 	}
 
 	protected override string _GetTemplateForLabelEmail()
 	{
-		return "이메일";
+		return "ì´ë©”ì¼";
 	}
 
 	protected override string _GetTemplateForLabelNewPassword()
 	{
-		return "새 비밀번호";
+		return "ìƒˆ ë¹„ë°€ë²ˆí˜¸";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "비밀번호";
+		return "ë¹„ë°€ë²ˆí˜¸";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "2단계 인증";
+		return "2ë‹¨ê³„ ì¸ì¦";
 	}
 
 	/// <summary>
@@ -150,17 +150,17 @@ internal class AccountRecoveryResources_ko_kr : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageCreateNewPasswordDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"새 비밀번호를 설정하세요. 이전 비밀번호를 사용하지 {styleFront}마세요{styleEnd}.";
+		return $"ìƒˆ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì„¤ì •í•˜ì„¸ìš”. ì´ì „ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì§€ {styleFront}ë§ˆì„¸ìš”{styleEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageCreateNewPasswordDontUseOldPassword()
 	{
-		return "새 비밀번호를 설정하세요. 이전 비밀번호를 사용하지 {styleFront}마세요{styleEnd}.";
+		return "ìƒˆ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì„¤ì •í•˜ì„¸ìš”. ì´ì „ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì§€ {styleFront}ë§ˆì„¸ìš”{styleEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageDisableTwoStepVerification()
 	{
-		return "2단계 인증이 비활성화됩니다.";
+		return "2ë‹¨ê³„ ì¸ì¦ì´ ë¹„í™œì„±í™”ë©ë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -169,16 +169,19 @@ internal class AccountRecoveryResources_ko_kr : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"기존 비밀번호를 사용하지 {styleFront}마세요{styleEnd}.";
+		return $"ê¸°ì¡´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì§€ {styleFront}ë§ˆì„¸ìš”{styleEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageDontUseOldPassword()
 	{
-		return "기존 비밀번호를 사용하지 {styleFront}마세요{styleEnd}.";
+		return "ê¸°ì¡´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì§€ {styleFront}ë§ˆì„¸ìš”{styleEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageRevertToUnverifiedEmail()
 	{
-		return "이메일이 미인증 상태로 다시 전환됩니다.";
+		return "ì´ë©”ì¼ì´ ë¯¸ì¸ì¦ ìƒíƒœë¡œ ë‹¤ì‹œ ì „í™˜ë©ë‹ˆë‹¤.";
 	}
+}
+
+
 }

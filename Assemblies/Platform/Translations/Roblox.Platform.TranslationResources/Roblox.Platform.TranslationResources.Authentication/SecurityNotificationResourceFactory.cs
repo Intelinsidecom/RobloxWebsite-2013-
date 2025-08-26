@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class SecurityNotificationResourceFactory
 
-internal static class SecurityNotificationResourceFactory
 {
 	public const string FullNamespace = "Authentication.SecurityNotification";
 
@@ -19,4 +19,7 @@ internal static class SecurityNotificationResourceFactory
 			_ => new SecurityNotificationResources_en_us(state), 
 		};
 	}
+}
+
+
 }

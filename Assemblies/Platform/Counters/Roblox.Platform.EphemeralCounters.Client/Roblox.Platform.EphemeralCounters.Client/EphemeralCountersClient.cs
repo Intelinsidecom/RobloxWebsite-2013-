@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Roblox.ApiClientBase;
 using Roblox.Configuration;
 using Roblox.EphemeralCounters.Client.Properties;
 using Roblox.Instrumentation;
+namespace Roblox.Platform.EphemeralCounters.Clientpublic {
+    class EphemeralCountersClient : GuardedApiClientBase
 
-namespace Roblox.EphemeralCounters.Client;
-
-public class EphemeralCountersClient : GuardedApiClientBase
 {
 	private readonly Func<string> _ApiKeyGetter;
 
@@ -166,4 +165,7 @@ public class EphemeralCountersClient : GuardedApiClientBase
 	{
 		return RobloxEnvironment.GetApiEndpoint("ephemeralcounters");
 	}
+}
+
+
 }

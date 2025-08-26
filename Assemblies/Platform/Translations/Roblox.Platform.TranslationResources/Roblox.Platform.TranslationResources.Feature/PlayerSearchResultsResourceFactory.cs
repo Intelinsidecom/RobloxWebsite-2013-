@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class PlayerSearchResultsResourceFactory
 
-internal static class PlayerSearchResultsResourceFactory
 {
 	public const string FullNamespace = "Feature.PlayerSearchResults";
 
@@ -21,4 +21,7 @@ internal static class PlayerSearchResultsResourceFactory
 			_ => new PlayerSearchResultsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PurchaseDialogResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,127 +10,127 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// Key: "Action.BuyAccess"
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "购买通行证";
+	public override string ActionBuyAccess => "è´­ä¹°é€šè¡Œè¯";
 
 	/// <summary>
 	/// Key: "Action.BuyNow"
 	/// English String: "Buy Now"
 	/// </summary>
-	public override string ActionBuyNow => "立即购买";
+	public override string ActionBuyNow => "ç«‹å³è´­ä¹°";
 
 	/// <summary>
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "购买 Robux";
+	public override string ActionBuyRobux => "è´­ä¹° Robux";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Configure"
 	/// English String: "Configure"
 	/// </summary>
-	public override string ActionConfigure => "配置";
+	public override string ActionConfigure => "é…ç½®";
 
 	/// <summary>
 	/// Key: "Action.Continue"
 	/// English String: "Continue"
 	/// </summary>
-	public override string ActionContinue => "继续";
+	public override string ActionContinue => "ç»§ç»­";
 
 	/// <summary>
 	/// Key: "Action.Customize"
 	/// English String: "Customize"
 	/// </summary>
-	public override string ActionCustomize => "自定义";
+	public override string ActionCustomize => "è‡ªå®šä¹‰";
 
 	/// <summary>
 	/// Key: "Action.GetNow"
 	/// English String: "Get Now"
 	/// </summary>
-	public override string ActionGetNow => "立即获取";
+	public override string ActionGetNow => "ç«‹å³èŽ·å–";
 
 	/// <summary>
 	/// Key: "Action.NotNow"
 	/// English String: "Not Now"
 	/// </summary>
-	public override string ActionNotNow => "以后再说";
+	public override string ActionNotNow => "ä»¥åŽå†è¯´";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOk => "好";
+	public override string ActionOk => "å¥½";
 
 	/// <summary>
 	/// Key: "Action.RentNow"
 	/// English String: "Rent Now"
 	/// </summary>
-	public override string ActionRentNow => "立即租用";
+	public override string ActionRentNow => "ç«‹å³ç§Ÿç”¨";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "购买物品";
+	public override string HeadingBuyItem => "è´­ä¹°ç‰©å“";
 
 	/// <summary>
 	/// Key: "Heading.ErrorOccured"
 	/// English String: "Error Occured"
 	/// </summary>
-	public override string HeadingErrorOccured => "发生错误";
+	public override string HeadingErrorOccured => "å‘ç”Ÿé”™è¯¯";
 
 	/// <summary>
 	/// Key: "Heading.GetItem"
 	/// English String: "Get Item"
 	/// </summary>
-	public override string HeadingGetItem => "获取道具";
+	public override string HeadingGetItem => "èŽ·å–é“å…·";
 
 	/// <summary>
 	/// Key: "Heading.InsufficientFunds"
 	/// English String: "Insufficient Funds"
 	/// </summary>
-	public override string HeadingInsufficientFunds => "资金不足";
+	public override string HeadingInsufficientFunds => "èµ„é‡‘ä¸è¶³";
 
 	/// <summary>
 	/// Key: "Heading.PriceChanged"
 	/// English String: "Item Price Has Changed"
 	/// </summary>
-	public override string HeadingPriceChanged => "道具价格已更改";
+	public override string HeadingPriceChanged => "é“å…·ä»·æ ¼å·²æ›´æ”¹";
 
 	/// <summary>
 	/// Key: "Heading.PurchaseComplete"
 	/// English String: "Purchase Complete"
 	/// </summary>
-	public override string HeadingPurchaseComplete => "购买完成";
+	public override string HeadingPurchaseComplete => "è´­ä¹°å®Œæˆ";
 
 	/// <summary>
 	/// Key: "Heading.RentItem"
 	/// English String: "Rent Item"
 	/// </summary>
-	public override string HeadingRentItem => "租用道具";
+	public override string HeadingRentItem => "ç§Ÿç”¨é“å…·";
 
 	/// <summary>
 	/// Key: "Label.AgreeAndPay"
 	/// English String: "Agree and Pay"
 	/// </summary>
-	public override string LabelAgreeAndPay => "同意并付款";
+	public override string LabelAgreeAndPay => "åŒæ„å¹¶ä»˜æ¬¾";
 
 	/// <summary>
 	/// Key: "Label.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "免费";
+	public override string LabelFree => "å…è´¹";
 
 	/// <summary>
 	/// Key: "Message.PurchasingUnavailable"
 	/// English String: "Purchasing is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string MessagePurchasingUnavailable => "暂时无法购买。请稍后重试。";
+	public override string MessagePurchasingUnavailable => "æš‚æ—¶æ— æ³•è´­ä¹°ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	public PurchaseDialogResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -139,102 +139,102 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "购买通行证";
+		return "è´­ä¹°é€šè¡Œè¯";
 	}
 
 	protected override string _GetTemplateForActionBuyNow()
 	{
-		return "立即购买";
+		return "ç«‹å³è´­ä¹°";
 	}
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "购买 Robux";
+		return "è´­ä¹° Robux";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionConfigure()
 	{
-		return "配置";
+		return "é…ç½®";
 	}
 
 	protected override string _GetTemplateForActionContinue()
 	{
-		return "继续";
+		return "ç»§ç»­";
 	}
 
 	protected override string _GetTemplateForActionCustomize()
 	{
-		return "自定义";
+		return "è‡ªå®šä¹‰";
 	}
 
 	protected override string _GetTemplateForActionGetNow()
 	{
-		return "立即获取";
+		return "ç«‹å³èŽ·å–";
 	}
 
 	protected override string _GetTemplateForActionNotNow()
 	{
-		return "以后再说";
+		return "ä»¥åŽå†è¯´";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "好";
+		return "å¥½";
 	}
 
 	protected override string _GetTemplateForActionRentNow()
 	{
-		return "立即租用";
+		return "ç«‹å³ç§Ÿç”¨";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "购买物品";
+		return "è´­ä¹°ç‰©å“";
 	}
 
 	protected override string _GetTemplateForHeadingErrorOccured()
 	{
-		return "发生错误";
+		return "å‘ç”Ÿé”™è¯¯";
 	}
 
 	protected override string _GetTemplateForHeadingGetItem()
 	{
-		return "获取道具";
+		return "èŽ·å–é“å…·";
 	}
 
 	protected override string _GetTemplateForHeadingInsufficientFunds()
 	{
-		return "资金不足";
+		return "èµ„é‡‘ä¸è¶³";
 	}
 
 	protected override string _GetTemplateForHeadingPriceChanged()
 	{
-		return "道具价格已更改";
+		return "é“å…·ä»·æ ¼å·²æ›´æ”¹";
 	}
 
 	protected override string _GetTemplateForHeadingPurchaseComplete()
 	{
-		return "购买完成";
+		return "è´­ä¹°å®Œæˆ";
 	}
 
 	protected override string _GetTemplateForHeadingRentItem()
 	{
-		return "租用道具";
+		return "ç§Ÿç”¨é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelAgreeAndPay()
 	{
-		return "同意并付款";
+		return "åŒæ„å¹¶ä»˜æ¬¾";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "免费";
+		return "å…è´¹";
 	}
 
 	/// <summary>
@@ -243,12 +243,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageBalanceAfter(string robuxBalance)
 	{
-		return $"你在此次交易后的余额将为 {robuxBalance}";
+		return $"ä½ åœ¨æ­¤æ¬¡äº¤æ˜“åŽçš„ä½™é¢å°†ä¸º {robuxBalance}";
 	}
 
 	protected override string _GetTemplateForMessageBalanceAfter()
 	{
-		return "你在此次交易后的余额将为 {robuxBalance}";
+		return "ä½ åœ¨æ­¤æ¬¡äº¤æ˜“åŽçš„ä½™é¢å°†ä¸º {robuxBalance}";
 	}
 
 	/// <summary>
@@ -257,12 +257,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageInsufficientFunds(string robux)
 	{
-		return $"你还需要 {robux} 才能购买此道具。";
+		return $"ä½ è¿˜éœ€è¦ {robux} æ‰èƒ½è´­ä¹°æ­¤é“å…·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientFunds()
 	{
-		return "你还需要 {robux} 才能购买此道具。";
+		return "ä½ è¿˜éœ€è¦ {robux} æ‰èƒ½è´­ä¹°æ­¤é“å…·ã€‚";
 	}
 
 	/// <summary>
@@ -271,12 +271,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessagePriceChanged(string robuxBefore, string robuxAfter)
 	{
-		return $"在你购物时，此道具的价格已从 {robuxBefore} 更改为 {robuxAfter}。";
+		return $"åœ¨ä½ è´­ç‰©æ—¶ï¼Œæ­¤é“å…·çš„ä»·æ ¼å·²ä»Ž {robuxBefore} æ›´æ”¹ä¸º {robuxAfter}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePriceChanged()
 	{
-		return "在你购物时，此道具的价格已从 {robuxBefore} 更改为 {robuxAfter}。";
+		return "åœ¨ä½ è´­ç‰©æ—¶ï¼Œæ­¤é“å…·çš„ä»·æ ¼å·²ä»Ž {robuxBefore} æ›´æ”¹ä¸º {robuxAfter}ã€‚";
 	}
 
 	/// <summary>
@@ -285,12 +285,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessagePromptBuy(string assetType, string assetName, string seller, string robux)
 	{
-		return $"你是否要以 {robux} 的价格向“{seller}”购买{assetType}“{assetName}”？";
+		return $"ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€œ{seller}â€è´­ä¹°{assetType}â€œ{assetName}â€ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForMessagePromptBuy()
 	{
-		return "你是否要以 {robux} 的价格向“{seller}”购买{assetType}“{assetName}”？";
+		return "ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€œ{seller}â€è´­ä¹°{assetType}â€œ{assetName}â€ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -299,12 +299,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessagePromptBuyAccess(string assetType, string assetName, string seller, string robux)
 	{
-		return $"你是否要以 {robux} 的价格向“{seller}”购买{assetType}“{assetName}”的使用权？";
+		return $"ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€œ{seller}â€è´­ä¹°{assetType}â€œ{assetName}â€çš„ä½¿ç”¨æƒï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForMessagePromptBuyAccess()
 	{
-		return "你是否要以 {robux} 的价格向“{seller}”购买{assetType}“{assetName}”的使用权？";
+		return "ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€œ{seller}â€è´­ä¹°{assetType}â€œ{assetName}â€çš„ä½¿ç”¨æƒï¼Ÿ";
 	}
 
 	/// <summary>
@@ -313,12 +313,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessagePromptGetFree(string assetType, string assetName, string seller, string freeTextStart, string freeTextEnd)
 	{
-		return $"你是否要{freeTextStart}免费{freeTextEnd}向 {seller} 获取{assetType}“{assetName}”？";
+		return $"ä½ æ˜¯å¦è¦{freeTextStart}å…è´¹{freeTextEnd}å‘ {seller} èŽ·å–{assetType}â€œ{assetName}â€ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForMessagePromptGetFree()
 	{
-		return "你是否要{freeTextStart}免费{freeTextEnd}向 {seller} 获取{assetType}“{assetName}”？";
+		return "ä½ æ˜¯å¦è¦{freeTextStart}å…è´¹{freeTextEnd}å‘ {seller} èŽ·å–{assetType}â€œ{assetName}â€ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -327,12 +327,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessagePromptGetFreeAccess(string assetType, string assetName, string seller, string freeTextStart, string freeTextEnd)
 	{
-		return $"你是否要{freeTextStart}免费{freeTextEnd}向 {seller} 获取{assetType}“{assetName}”的通行证？";
+		return $"ä½ æ˜¯å¦è¦{freeTextStart}å…è´¹{freeTextEnd}å‘ {seller} èŽ·å–{assetType}â€œ{assetName}â€çš„é€šè¡Œè¯ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForMessagePromptGetFreeAccess()
 	{
-		return "你是否要{freeTextStart}免费{freeTextEnd}向 {seller} 获取{assetType}“{assetName}”的通行证？";
+		return "ä½ æ˜¯å¦è¦{freeTextStart}å…è´¹{freeTextEnd}å‘ {seller} èŽ·å–{assetType}â€œ{assetName}â€çš„é€šè¡Œè¯ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -341,12 +341,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessagePromptRent(string assetType, string assetName, string seller, string robux)
 	{
-		return $"你是否要以 {robux} 的价格向“{seller}”租用{assetType}“{assetName}”？";
+		return $"ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€œ{seller}â€ç§Ÿç”¨{assetType}â€œ{assetName}â€ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForMessagePromptRent()
 	{
-		return "你是否要以 {robux} 的价格向“{seller}”租用{assetType}“{assetName}”？";
+		return "ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€œ{seller}â€ç§Ÿç”¨{assetType}â€œ{assetName}â€ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -355,17 +355,17 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessagePromptRentAccess(string assetType, string assetName, string seller, string robux)
 	{
-		return $"你是否要以 {robux} 的价格向“{seller}“租用{assetType}“{assetName}”的使用权？";
+		return $"ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€œ{seller}â€œç§Ÿç”¨{assetType}â€œ{assetName}â€çš„ä½¿ç”¨æƒï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForMessagePromptRentAccess()
 	{
-		return "你是否要以 {robux} 的价格向“{seller}“租用{assetType}“{assetName}”的使用权？";
+		return "ä½ æ˜¯å¦è¦ä»¥ {robux} çš„ä»·æ ¼å‘â€œ{seller}â€œç§Ÿç”¨{assetType}â€œ{assetName}â€çš„ä½¿ç”¨æƒï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForMessagePurchasingUnavailable()
 	{
-		return "暂时无法购买。请稍后重试。";
+		return "æš‚æ—¶æ— æ³•è´­ä¹°ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	/// <summary>
@@ -374,12 +374,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageSuccessfullyAcquired(string assetName, string assetType, string seller, string robux)
 	{
-		return $"你已成功以 {robux} 的价格向 {seller} 获取 {assetName} {assetType}。";
+		return $"ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} èŽ·å– {assetName} {assetType}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyAcquired()
 	{
-		return "你已成功以 {robux} 的价格向 {seller} 获取 {assetName} {assetType}。";
+		return "ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} èŽ·å– {assetName} {assetType}ã€‚";
 	}
 
 	/// <summary>
@@ -388,12 +388,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageSuccessfullyAcquiredAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"你已成功以 {robux} 的价格向 {seller} 获取 {assetName} {assetType} 的使用权。";
+		return $"ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} èŽ·å– {assetName} {assetType} çš„ä½¿ç”¨æƒã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyAcquiredAccess()
 	{
-		return "你已成功以 {robux} 的价格向 {seller} 获取 {assetName} {assetType} 的使用权。";
+		return "ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} èŽ·å– {assetName} {assetType} çš„ä½¿ç”¨æƒã€‚";
 	}
 
 	/// <summary>
@@ -402,12 +402,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageSuccessfullyBought(string assetName, string assetType, string seller, string robux)
 	{
-		return $"你已成功以 {robux} 的价格向 {seller} 购买 {assetName} {assetType}。";
+		return $"ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} è´­ä¹° {assetName} {assetType}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyBought()
 	{
-		return "你已成功以 {robux} 的价格向 {seller} 购买 {assetName} {assetType}。";
+		return "ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} è´­ä¹° {assetName} {assetType}ã€‚";
 	}
 
 	/// <summary>
@@ -416,12 +416,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageSuccessfullyBoughtAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"你已成功以 {robux} 的价格向 {seller} 购买 {assetName} {assetType} 的使用权。";
+		return $"ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} è´­ä¹° {assetName} {assetType} çš„ä½¿ç”¨æƒã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyBoughtAccess()
 	{
-		return "你已成功以 {robux} 的价格向 {seller} 购买 {assetName} {assetType} 的使用权。";
+		return "ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} è´­ä¹° {assetName} {assetType} çš„ä½¿ç”¨æƒã€‚";
 	}
 
 	/// <summary>
@@ -430,12 +430,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageSuccessfullyRenewed(string assetName, string assetType, string seller, string robux)
 	{
-		return $"你已成功以 {robux} 的价格向 {seller} 续订 {assetName} {assetType}。";
+		return $"ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} ç»­è®¢ {assetName} {assetType}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRenewed()
 	{
-		return "你已成功以 {robux} 的价格向 {seller} 续订 {assetName} {assetType}。";
+		return "ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} ç»­è®¢ {assetName} {assetType}ã€‚";
 	}
 
 	/// <summary>
@@ -444,12 +444,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageSuccessfullyRenewedAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"你已成功以 {robux} 的价格向 {seller} 续订 {assetName} {assetType} 的使用权。";
+		return $"ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} ç»­è®¢ {assetName} {assetType} çš„ä½¿ç”¨æƒã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRenewedAccess()
 	{
-		return "你已成功以 {robux} 的价格向 {seller} 续订 {assetName} {assetType} 的使用权。";
+		return "ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} ç»­è®¢ {assetName} {assetType} çš„ä½¿ç”¨æƒã€‚";
 	}
 
 	/// <summary>
@@ -458,12 +458,12 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageSuccessfullyRented(string assetName, string assetType, string seller, string robux)
 	{
-		return $"你已成功以 {robux} 的价格向 {seller} 租用 {assetName} {assetType}。";
+		return $"ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} ç§Ÿç”¨ {assetName} {assetType}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRented()
 	{
-		return "你已成功以 {robux} 的价格向 {seller} 租用 {assetName} {assetType}。";
+		return "ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} ç§Ÿç”¨ {assetName} {assetType}ã€‚";
 	}
 
 	/// <summary>
@@ -472,11 +472,14 @@ internal class PurchaseDialogResources_zh_cjv : PurchaseDialogResources_en_us, I
 	/// </summary>
 	public override string MessageSuccessfullyRentedAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"你已成功以 {robux} 的价格向 {seller} 租用 {assetName} {assetType} 的使用权。";
+		return $"ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} ç§Ÿç”¨ {assetName} {assetType} çš„ä½¿ç”¨æƒã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRentedAccess()
 	{
-		return "你已成功以 {robux} 的价格向 {seller} 租用 {assetName} {assetType} 的使用权。";
+		return "ä½ å·²æˆåŠŸä»¥ {robux} çš„ä»·æ ¼å‘ {seller} ç§Ÿç”¨ {assetName} {assetType} çš„ä½¿ç”¨æƒã€‚";
 	}
+}
+
+
 }

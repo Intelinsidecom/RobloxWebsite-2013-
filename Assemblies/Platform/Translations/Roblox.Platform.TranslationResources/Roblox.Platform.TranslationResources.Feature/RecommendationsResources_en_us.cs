@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class RecommendationsResources_en_us : TranslationResourcesBase, IRecommendationsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class RecommendationsResources_en_us : TranslationResourcesBase, IRecommendationsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -220,4 +219,7 @@ internal class RecommendationsResources_en_us : TranslationResourcesBase, IRecom
 	{
 		return "Off sale";
 	}
+}
+
+
 }

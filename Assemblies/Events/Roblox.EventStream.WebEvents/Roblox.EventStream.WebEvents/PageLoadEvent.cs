@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// Represents an event for when a page is loaded.
 /// </summary>
 public class PageLoadEvent : WebEventBase
@@ -33,3 +33,12 @@ public class PageLoadEvent : WebEventBase
 		AddEventArg("url", eventArgs.PageUrl);
 	}
 }
+
+
+}
+
+
+
+
+
+

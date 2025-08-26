@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GamePageResources_en_us : TranslationResourcesBase, IGamePageResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GamePageResources_en_us : TranslationResourcesBase, IGamePageResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -802,4 +801,7 @@ internal class GamePageResources_en_us : TranslationResourcesBase, IGamePageReso
 	{
 		return "Showing results for";
 	}
+}
+
+
 }

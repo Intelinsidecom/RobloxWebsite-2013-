@@ -1,8 +1,11 @@
-namespace Roblox.PremiumFeatures;
+﻿namespace Roblox.Platform.PremiumFeaturespublic {
+    enum MembershipMigrationsErrorCode
 
-public enum MembershipMigrationsErrorCode
 {
 	Unknown = 0,
 	Disabled = 10,
 	ServerError = 20
+}
+
+
 }

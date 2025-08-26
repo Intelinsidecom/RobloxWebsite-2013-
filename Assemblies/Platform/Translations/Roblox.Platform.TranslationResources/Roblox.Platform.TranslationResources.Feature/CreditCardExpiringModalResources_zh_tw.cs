@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CreditCardExpiringModalResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,28 +11,28 @@ internal class CreditCardExpiringModalResources_zh_tw : CreditCardExpiringModalR
 	/// link text
 	/// English String: "Don't remind me again"
 	/// </summary>
-	public override string ActionDontRemindAgain => "不要再提醒我";
+	public override string ActionDontRemindAgain => "ä¸è¦å†æé†’æˆ‘";
 
 	/// <summary>
 	/// Key: "Action.UpdateNow"
 	/// button text
 	/// English String: "Update Now"
 	/// </summary>
-	public override string ActionUpdateNow => "現在更新";
+	public override string ActionUpdateNow => "ç¾åœ¨æ›´æ–°";
 
 	/// <summary>
 	/// Key: "Description.UpdateYourCreditCard"
 	/// description text
 	/// English String: "Please update your credit card information to make sure your Builders Club membership doesn't expire!"
 	/// </summary>
-	public override string DescriptionUpdateYourCreditCard => "請更新您的信用卡資料，避免您的 Builders Club 會員資格到期！";
+	public override string DescriptionUpdateYourCreditCard => "è«‹æ›´æ–°æ‚¨çš„ä¿¡ç”¨å¡è³‡æ–™ï¼Œé¿å…æ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼åˆ°æœŸï¼";
 
 	/// <summary>
 	/// Key: "Heading.CreditCardExpiration"
 	/// modal heading
 	/// English String: "Credit Card Expiration"
 	/// </summary>
-	public override string HeadingCreditCardExpiration => "信用卡到期";
+	public override string HeadingCreditCardExpiration => "ä¿¡ç”¨å¡åˆ°æœŸ";
 
 	public CreditCardExpiringModalResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -41,12 +41,12 @@ internal class CreditCardExpiringModalResources_zh_tw : CreditCardExpiringModalR
 
 	protected override string _GetTemplateForActionDontRemindAgain()
 	{
-		return "不要再提醒我";
+		return "ä¸è¦å†æé†’æˆ‘";
 	}
 
 	protected override string _GetTemplateForActionUpdateNow()
 	{
-		return "現在更新";
+		return "ç¾åœ¨æ›´æ–°";
 	}
 
 	/// <summary>
@@ -56,21 +56,24 @@ internal class CreditCardExpiringModalResources_zh_tw : CreditCardExpiringModalR
 	/// </summary>
 	public override string DescriptionCreditCardExpiration(string expirationDate)
 	{
-		return $"您的信用卡將於 {expirationDate} 到期！";
+		return $"æ‚¨çš„ä¿¡ç”¨å¡å°‡æ–¼ {expirationDate} åˆ°æœŸï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionCreditCardExpiration()
 	{
-		return "您的信用卡將於 {expirationDate} 到期！";
+		return "æ‚¨çš„ä¿¡ç”¨å¡å°‡æ–¼ {expirationDate} åˆ°æœŸï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionUpdateYourCreditCard()
 	{
-		return "請更新您的信用卡資料，避免您的 Builders Club 會員資格到期！";
+		return "è«‹æ›´æ–°æ‚¨çš„ä¿¡ç”¨å¡è³‡æ–™ï¼Œé¿å…æ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼åˆ°æœŸï¼";
 	}
 
 	protected override string _GetTemplateForHeadingCreditCardExpiration()
 	{
-		return "信用卡到期";
+		return "ä¿¡ç”¨å¡åˆ°æœŸ";
 	}
+}
+
+
 }

@@ -1,8 +1,10 @@
+﻿using System;
 using System.Collections.Generic;
+using Roblox.EventStream.WebEvents.EventArgs;
+using Roblox.EventStream.WebEvents;
+namespace Roblox.EventStream.WebEvents {
+    public class CatalogSearchEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class CatalogSearchEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// Sort of the result
@@ -72,3 +74,11 @@ public class CatalogSearchEventArgs : WebEventArgs
 	/// </summary>
 	public string UserItemModelName { get; set; }
 }
+
+
+}
+
+
+
+
+

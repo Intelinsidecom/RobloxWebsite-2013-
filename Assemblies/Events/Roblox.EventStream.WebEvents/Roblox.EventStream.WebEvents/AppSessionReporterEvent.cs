@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// Represents an EventStream event for app session/crash reporter events.
 /// </summary>
 public class AppSessionReporterEvent : WebEventBase
@@ -26,3 +26,12 @@ public class AppSessionReporterEvent : WebEventBase
 		AddEventArg("lt", args.EventTime.ToUniversalTime().ToString("o"));
 	}
 }
+
+
+}
+
+
+
+
+
+

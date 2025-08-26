@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IFriendsResources : ITranslationResources
 
-public interface IFriendsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Accept"
@@ -305,4 +305,7 @@ public interface IFriendsResources : ITranslationResources
 	/// English String: "You have no pending friend requests. To add friends, check out {startSpan}Nearby{endSpan}."
 	/// </summary>
 	string LabelNearbyUpsell(string startSpan, string endSpan);
+}
+
+
 }

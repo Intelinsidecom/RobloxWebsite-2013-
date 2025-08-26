@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IEmailConfirmationResources : ITranslationResources
 
-public interface IEmailConfirmationResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Done"
@@ -36,4 +36,7 @@ public interface IEmailConfirmationResources : ITranslationResources
 	/// English String: "Your email has been verified. Enjoy the free hat!"
 	/// </summary>
 	string MessageEmailVerifiedEnjoyFreeHat { get; }
+}
+
+
 }

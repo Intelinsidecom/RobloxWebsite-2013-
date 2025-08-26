@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderation {
+    /// <summary>
 
-/// <summary>
 /// An interface represents an object that uniquely identifies a moderation task queue.
 /// </summary>
 public interface ITaskQueueIdentifier
@@ -12,4 +12,7 @@ public interface ITaskQueueIdentifier
 	/// Note: depending on the usage, the client can be a task publisher, or a task consumer etc.
 	/// </summary>
 	string GetKey();
+}
+
+
 }

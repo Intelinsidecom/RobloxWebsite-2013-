@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notificationspublic {
+    interface IPushNotificationsResources : ITranslationResources
 
-public interface IPushNotificationsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Message.AddedToPrivateServerWhiteList.Default"
@@ -153,4 +153,7 @@ public interface IPushNotificationsResources : ITranslationResources
 	/// English String: "{actorUsername} chose a game to play together: {universeName}"
 	/// </summary>
 	string MessagesPlayTogether(string actorUsername, string universeName);
+}
+
+
 }

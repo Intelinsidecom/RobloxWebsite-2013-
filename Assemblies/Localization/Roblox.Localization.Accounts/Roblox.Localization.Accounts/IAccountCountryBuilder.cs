@@ -1,8 +1,7 @@
-using Roblox.Platform.Demographics;
+﻿using Roblox.Platform.Demographics;
+namespace Roblox.Localization.Accountspublic {
+    interface IAccountCountryBuilder
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public interface IAccountCountryBuilder
 {
 	/// <summary>
 	/// Fires when the user's country is changed.
@@ -30,4 +29,7 @@ public interface IAccountCountryBuilder
 	/// <param name="changeAgent">The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent" /> which contains the <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesChangeAgentType" /> and target id.</param>
 	/// /// <exception cref="T:Roblox.Platform.Core.PlatformException">This is thrown when changeAgent is not properly validated.</exception>
 	void SetDerivedCountry(long accountId, ICountryIdentifier countryId, IAccountCountriesChangeAgent changeAgent);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Moderation;
+﻿namespace Roblox.Platform.TranslationResources.Moderationinternal {
+    static class ModeratorActionsResourceFactory
 
-internal static class ModeratorActionsResourceFactory
 {
 	public const string FullNamespace = "Moderation.ModeratorActions";
 
@@ -21,4 +21,7 @@ internal static class ModeratorActionsResourceFactory
 			_ => new ModeratorActionsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

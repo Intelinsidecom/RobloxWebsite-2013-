@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ILandingResources : ITranslationResources
 
-public interface ILandingResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Description.RobloxOnDeviceParagraphOne"
@@ -19,7 +19,7 @@ public interface ILandingResources : ITranslationResources
 	/// <summary>
 	/// Key: "Description.WhatIsRobloxParagraphOne"
 	/// first paragraph under what's Roblox heading on landing page
-	/// English String: "Roblox helps power the imagination of people around the world. As the largest growing social platform for play, over 44 million players come to Roblox every month to create adventures, play games, roleplay, and learn with friends. We call it the ‘Imagination Platform’ and believe everyone should have the right to play on it."
+	/// English String: "Roblox helps power the imagination of people around the world. As the largest growing social platform for play, over 44 million players come to Roblox every month to create adventures, play games, roleplay, and learn with friends. We call it the â€˜Imagination Platformâ€™ and believe everyone should have the right to play on it."
 	/// </summary>
 	string DescriptionWhatIsRobloxParagraphOne { get; }
 
@@ -99,4 +99,7 @@ public interface ILandingResources : ITranslationResources
 	/// English String: "Roblox on Windows Store"
 	/// </summary>
 	string LabelRobloxWindowsStore { get; }
+}
+
+
 }

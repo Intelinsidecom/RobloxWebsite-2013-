@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class ShopDialogResourceFactory
 
-internal static class ShopDialogResourceFactory
 {
 	public const string FullNamespace = "Feature.ShopDialog";
 
@@ -21,4 +21,7 @@ internal static class ShopDialogResourceFactory
 			_ => new ShopDialogResources_en_us(state), 
 		};
 	}
+}
+
+
 }

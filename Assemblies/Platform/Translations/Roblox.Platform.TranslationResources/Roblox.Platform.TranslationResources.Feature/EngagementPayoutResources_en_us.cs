@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class EngagementPayoutResources_en_us : TranslationResourcesBase, IEngagementPayoutResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class EngagementPayoutResources_en_us : TranslationResourcesBase, IEngagementPayoutResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -159,4 +158,7 @@ internal class EngagementPayoutResources_en_us : TranslationResourcesBase, IEnga
 	{
 		return "Weekly";
 	}
+}
+
+
 }

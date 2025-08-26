@@ -1,8 +1,11 @@
-namespace Roblox.RealTimeNotifications;
+﻿namespace Roblox.Platform.RealTimeNotificationspublic {
+    enum SubscriptionEvent
 
-public enum SubscriptionEvent
 {
 	Subscribed,
 	ConnectionLost,
 	Reconnected
+}
+
+
 }

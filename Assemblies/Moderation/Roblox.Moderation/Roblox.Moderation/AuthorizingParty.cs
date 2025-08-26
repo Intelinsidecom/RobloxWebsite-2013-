@@ -1,7 +1,10 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderationpublic {
+    enum AuthorizingParty
 
-public enum AuthorizingParty
 {
 	ModerationActionCreator = 1,
 	CSWebsite
+}
+
+
 }

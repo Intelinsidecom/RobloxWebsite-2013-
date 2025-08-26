@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.Demographicspublic {
+    class PhoneNumberDAL
 
-namespace Roblox.Demographics;
-
-public class PhoneNumberDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxDemographics;
 	internal int ID { get; set; }
@@ -27,4 +26,7 @@ public class PhoneNumberDAL
 	internal static PhoneNumberDAL GetPhoneNumberByValue(string value) { if (string.IsNullOrEmpty(value)) { return null; } SqlParameter[] queryParameters = new SqlParameter[1] { new SqlParameter("@Value", value) }; return RobloxDatabase.RobloxDemographics.Lookup("PhoneNumbers_GetPhoneNumberByValue", BuildDAL, queryParameters); }
 	internal static EntityHelper.GetOrCreateDALWrapper<PhoneNumberDAL> GetOrCreatePhoneNumber(string value) { if (string.IsNullOrEmpty(value)) { return null; } SqlParameter[] queryParameters = new SqlParameter[2] { new SqlParameter("@CreatedNewEntity", SqlDbType.Bit){ Direction = ParameterDirection.Output }, new SqlParameter("@Value", value) }; return RobloxDatabase.RobloxDemographics.GetOrCreate("PhoneNumbers_GetOrCreatePhoneNumber", BuildDAL, queryParameters); }
 	internal static PhoneNumberDAL GetPhoneNumberByPhoneNumberInternationalPrefixIDAndNationalPhoneNumber(short? phoneNumberInternationalPrefixId, string nationalPhoneNumber) { if (phoneNumberInternationalPrefixId == 0) { return null; } if (string.IsNullOrEmpty(nationalPhoneNumber)) { return null; } SqlParameter[] queryParameters = new SqlParameter[2] { new SqlParameter("@PhoneNumberInternationalPrefixID", phoneNumberInternationalPrefixId.HasValue ? (object)phoneNumberInternationalPrefixId : DBNull.Value), new SqlParameter("@NationalPhoneNumber", string.IsNullOrEmpty(nationalPhoneNumber) ? (IConvertible)DBNull.Value : (IConvertible)nationalPhoneNumber) }; return RobloxDatabase.RobloxDemographics.Lookup("PhoneNumbers_GetPhoneNumberByPhoneNumberInternationalPrefixIDAndNationalPhoneNumber", BuildDAL, queryParameters); }
+}
+
+
 }

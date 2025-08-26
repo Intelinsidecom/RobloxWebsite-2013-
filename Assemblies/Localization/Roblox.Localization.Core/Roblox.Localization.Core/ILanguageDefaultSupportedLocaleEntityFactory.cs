@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Coreinternal {
+    interface ILanguageDefaultSupportedLocaleEntityFactory
 
-internal interface ILanguageDefaultSupportedLocaleEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntity" /> by its ID.
@@ -23,4 +23,7 @@ internal interface ILanguageDefaultSupportedLocaleEntityFactory
 	/// <param name="supportedLocaleId">supported locale is must be positive and present in valid list of supported locales</param>
 	/// <returns>The <see cref="T:Roblox.Platform.Localization.Core.ILanguageDefaultSupportedLocaleEntity" /> with given language id and supported locale id </returns>
 	ILanguageDefaultSupportedLocaleEntity Create(int languageId, int supportedLocaleId);
+}
+
+
 }

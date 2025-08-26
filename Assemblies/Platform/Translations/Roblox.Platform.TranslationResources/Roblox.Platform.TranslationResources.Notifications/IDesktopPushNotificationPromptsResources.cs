@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notificationspublic {
+    interface IDesktopPushNotificationPromptsResources : ITranslationResources
 
-public interface IDesktopPushNotificationPromptsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.AcceptNotificationPrompt"
@@ -92,4 +92,7 @@ public interface IDesktopPushNotificationPromptsResources : ITranslationResource
 	/// English String: "Click the drop-down arrow next to Notifications in the {startBold}Permissions{endBold} tab."
 	/// </summary>
 	string LabelInstructionClickPermissionDropdown(string startBold, string endBold);
+}
+
+
 }

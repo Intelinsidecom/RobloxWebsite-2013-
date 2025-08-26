@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ITranslatorPortalResources : ITranslationResources
 
-public interface ITranslatorPortalResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Reports"
@@ -138,4 +138,7 @@ public interface ITranslatorPortalResources : ITranslationResources
 	/// English String: "Translation Progress ({translatedEntriesCount}/{totalEntriesCount})"
 	/// </summary>
 	string LabelTranslationProgress(string translatedEntriesCount, string totalEntriesCount);
+}
+
+
 }

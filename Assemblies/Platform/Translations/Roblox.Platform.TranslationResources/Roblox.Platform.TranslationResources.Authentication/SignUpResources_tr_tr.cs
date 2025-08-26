@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SignUpResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,34 +11,34 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 	/// create account button label
 	/// English String: "Create Account"
 	/// </summary>
-	public override string ActionCreateAccount => "Hesap Oluştur";
+	public override string ActionCreateAccount => "Hesap OluÅŸtur";
 
 	/// <summary>
 	/// Key: "Action.LinkAccount"
 	/// Button text to link 3rd Party Account to a Roblox Account
 	/// English String: "Link Account"
 	/// </summary>
-	public override string ActionLinkAccount => "Hesabı Bağla";
+	public override string ActionLinkAccount => "HesabÄ± BaÄŸla";
 
 	/// <summary>
 	/// Key: "Action.LogInCapitalized"
 	/// button label for capitalized words for Log In
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionLogInCapitalized => "Giriş Yap";
+	public override string ActionLogInCapitalized => "GiriÅŸ Yap";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button label to return the user to home page
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "Girişe Dön";
+	public override string ActionReturnHome => "GiriÅŸe DÃ¶n";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
 	/// English String: "Sign up"
 	/// </summary>
-	public override string ActionSignUp => "Kayıt ol";
+	public override string ActionSignUp => "KayÄ±t ol";
 
 	public override string ActionSignupAndSync => "Kaydol ve Senkronize Et";
 
@@ -46,139 +46,139 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "Gönder";
+	public override string ActionSubmit => "GÃ¶nder";
 
 	/// <summary>
 	/// Key: "Description.AccountLinkingWarning"
 	/// instructions for linking account on signup page for FB based account
 	/// English String: "To link to an existing Roblox account, sign in and link them on the account settings page."
 	/// </summary>
-	public override string DescriptionAccountLinkingWarning => "Mevcut bir Roblox hesabını bağlamak için giriş yap ve hesap ayarları sayfasından bağlantıyı kur.";
+	public override string DescriptionAccountLinkingWarning => "Mevcut bir Roblox hesabÄ±nÄ± baÄŸlamak iÃ§in giriÅŸ yap ve hesap ayarlarÄ± sayfasÄ±ndan baÄŸlantÄ±yÄ± kur.";
 
 	/// <summary>
 	/// Key: "Description.NoRealName"
 	/// description
 	/// English String: "Do not use your real name."
 	/// </summary>
-	public override string DescriptionNoRealName => "Gerçek adını kullanma.";
+	public override string DescriptionNoRealName => "GerÃ§ek adÄ±nÄ± kullanma.";
 
 	/// <summary>
 	/// Key: "Description.PrivacyPolicy"
 	/// English String: "Privacy Policy"
 	/// </summary>
-	public override string DescriptionPrivacyPolicy => "Gizlilik Politikası";
+	public override string DescriptionPrivacyPolicy => "Gizlilik PolitikasÄ±";
 
 	/// <summary>
 	/// Key: "Description.TermsOfService"
 	/// English String: "Terms of Service"
 	/// </summary>
-	public override string DescriptionTermsOfService => "Hizmet Koşulları";
+	public override string DescriptionTermsOfService => "Hizmet KoÅŸullarÄ±";
 
 	/// <summary>
 	/// Key: "GuestSignUpAB.Action.SignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string GuestSignUpABActionSignUp => "Kayıt Ol";
+	public override string GuestSignUpABActionSignUp => "KayÄ±t Ol";
 
 	/// <summary>
 	/// Key: "Heading.ConnectFacebook"
 	/// section heading
 	/// English String: "Connect to Facebook"
 	/// </summary>
-	public override string HeadingConnectFacebook => "Facebook'a Bağlan";
+	public override string HeadingConnectFacebook => "Facebook'a BaÄŸlan";
 
 	/// <summary>
 	/// Key: "Heading.CreateAnAccount"
 	/// should be capitalized if the language supports capitalization
 	/// English String: "CREATE AN ACCOUNT"
 	/// </summary>
-	public override string HeadingCreateAnAccount => "BİR HESAP OLUŞTUR";
+	public override string HeadingCreateAnAccount => "BÄ°R HESAP OLUÅžTUR";
 
 	/// <summary>
 	/// Key: "Heading.LoginHaveFun"
 	/// heading for login container
 	/// English String: "Log in and start having fun!"
 	/// </summary>
-	public override string HeadingLoginHaveFun => "Giriş yap ve eğlenmeye başla!";
+	public override string HeadingLoginHaveFun => "GiriÅŸ yap ve eÄŸlenmeye baÅŸla!";
 
 	/// <summary>
 	/// Key: "Heading.SignupHaveFun"
 	/// signup form heading
 	/// English String: "Sign up and start having fun!"
 	/// </summary>
-	public override string HeadingSignupHaveFun => "Kaydol ve eğlenmeye başla!";
+	public override string HeadingSignupHaveFun => "Kaydol ve eÄŸlenmeye baÅŸla!";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// About link on roller coaster page
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "Hakkında";
+	public override string LabelAbout => "HakkÄ±nda";
 
 	/// <summary>
 	/// Key: "Label.AlreadyHaveRobloxAccount"
 	/// English String: "Already have a Roblox account?"
 	/// </summary>
-	public override string LabelAlreadyHaveRobloxAccount => "Zaten bir Roblox hesabın var mı?";
+	public override string LabelAlreadyHaveRobloxAccount => "Zaten bir Roblox hesabÄ±n var mÄ±?";
 
 	/// <summary>
 	/// Key: "Label.AlreadyRegistered"
 	/// label
 	/// English String: "Already registered?"
 	/// </summary>
-	public override string LabelAlreadyRegistered => "Zaten kayıtlı mısın?";
+	public override string LabelAlreadyRegistered => "Zaten kayÄ±tlÄ± mÄ±sÄ±n?";
 
 	/// <summary>
 	/// Key: "Label.Birthday"
 	/// English String: "Birthday"
 	/// </summary>
-	public override string LabelBirthday => "Doğum Günü";
+	public override string LabelBirthday => "DoÄŸum GÃ¼nÃ¼";
 
 	/// <summary>
 	/// Key: "Label.BirthdayWithColumn"
 	/// should have column if the language supports it
 	/// English String: "Birthday:"
 	/// </summary>
-	public override string LabelBirthdayWithColumn => "Doğum Günü:";
+	public override string LabelBirthdayWithColumn => "DoÄŸum GÃ¼nÃ¼:";
 
 	/// <summary>
 	/// Key: "Label.ConfirmPassword"
 	/// English String: "Confirm password"
 	/// </summary>
-	public override string LabelConfirmPassword => "Şifreyi doğrula";
+	public override string LabelConfirmPassword => "Åžifreyi doÄŸrula";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "Gün";
+	public override string LabelDay => "GÃ¼n";
 
 	/// <summary>
 	/// Key: "Label.DesiredUsername"
 	/// should have a column if the language supports it
 	/// English String: "Desired Username:"
 	/// </summary>
-	public override string LabelDesiredUsername => "İstenen Kullanıcı Adı:";
+	public override string LabelDesiredUsername => "Ä°stenen KullanÄ±cÄ± AdÄ±:";
 
 	/// <summary>
 	/// Key: "Label.FacebookNotLinked"
 	/// English String: "Your Facebook account is not linked to any Roblox account. Please sign up for a Roblox account."
 	/// </summary>
-	public override string LabelFacebookNotLinked => "Facebook hesabın herhangi bir Roblox hesabına bağlı değil. Bir Roblox hesabı için lütfen kaydol.";
+	public override string LabelFacebookNotLinked => "Facebook hesabÄ±n herhangi bir Roblox hesabÄ±na baÄŸlÄ± deÄŸil. Bir Roblox hesabÄ± iÃ§in lÃ¼tfen kaydol.";
 
 	/// <summary>
 	/// Key: "Label.FacebookSignupUsername"
 	/// username field label for FB signup
 	/// English String: "Create Roblox username:"
 	/// </summary>
-	public override string LabelFacebookSignupUsername => "Roblox kullanıcı adı oluştur:";
+	public override string LabelFacebookSignupUsername => "Roblox kullanÄ±cÄ± adÄ± oluÅŸtur:";
 
 	/// <summary>
 	/// Key: "Label.Female"
 	/// label
 	/// English String: "Female"
 	/// </summary>
-	public override string LabelFemale => "Kadın";
+	public override string LabelFemale => "KadÄ±n";
 
 	/// <summary>
 	/// Key: "Label.Gender"
@@ -216,13 +216,13 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "Şifre";
+	public override string LabelPassword => "Åžifre";
 
 	/// <summary>
 	/// Key: "Label.PasswordRequirements"
 	/// English String: "Password (min length 8)"
 	/// </summary>
-	public override string LabelPasswordRequirements => "Şifre (en az 8 karakter)";
+	public override string LabelPasswordRequirements => "Åžifre (en az 8 karakter)";
 
 	/// <summary>
 	/// Key: "Label.Platforms"
@@ -242,7 +242,7 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.PleaseAgreeToTerms"
 	/// English String: "Please agree to our Terms of Use and Privacy Policy."
 	/// </summary>
-	public override string LabelPleaseAgreeToTerms => "Lütfen Hizmet Koşulları ve Gizlilik Politikamızı kabul et.";
+	public override string LabelPleaseAgreeToTerms => "LÃ¼tfen Hizmet KoÅŸullarÄ± ve Gizlilik PolitikamÄ±zÄ± kabul et.";
 
 	/// <summary>
 	/// Key: "Label.Required"
@@ -268,46 +268,46 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 	/// [facebook button]
 	/// English String: "or sign up with"
 	/// </summary>
-	public override string LabelSignUpWith => "veya şununla kaydol:";
+	public override string LabelSignUpWith => "veya ÅŸununla kaydol:";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "Kullanım Koşulları";
+	public override string LabelTermsOfUse => "KullanÄ±m KoÅŸullarÄ±";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "Kullanıcı Adı";
+	public override string LabelUsername => "KullanÄ±cÄ± AdÄ±";
 
 	/// <summary>
 	/// Key: "Label.UsernameCharacterLimit"
 	/// label
 	/// English String: "3-20 alphanumeric characters, no spaces."
 	/// </summary>
-	public override string LabelUsernameCharacterLimit => "Boşluk kullanmadan 3-20 alfanümerik karakter.";
+	public override string LabelUsernameCharacterLimit => "BoÅŸluk kullanmadan 3-20 alfanÃ¼merik karakter.";
 
 	/// <summary>
 	/// Key: "Label.UsernameHint"
 	/// placeholder for username field
 	/// English String: "Username (don't use your real name)"
 	/// </summary>
-	public override string LabelUsernameHint => "Kullanıcı Adı (gerçek adını kullanma)";
+	public override string LabelUsernameHint => "KullanÄ±cÄ± AdÄ± (gerÃ§ek adÄ±nÄ± kullanma)";
 
 	/// <summary>
 	/// Key: "Label.UsernameRequirements"
 	/// English String: "Username (length 3-20, _ is allowed)"
 	/// </summary>
-	public override string LabelUsernameRequirements => "Kullanıcı Adı (uzunluk 3-20 karakter, _ kullanılabilir)";
+	public override string LabelUsernameRequirements => "KullanÄ±cÄ± AdÄ± (uzunluk 3-20 karakter, _ kullanÄ±labilir)";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "Yıl";
+	public override string LabelYear => "YÄ±l";
 
 	/// <summary>
 	/// Key: "Message.Password.MinLength"
@@ -319,237 +319,237 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Message.Username.NoRealNameUse"
 	/// English String: "Don't use your real name"
 	/// </summary>
-	public override string MessageUsernameNoRealNameUse => "Gerçek adını kullanma";
+	public override string MessageUsernameNoRealNameUse => "GerÃ§ek adÄ±nÄ± kullanma";
 
 	/// <summary>
 	/// Key: "Response.BadUsername"
 	/// English String: "Username not appropriate for Roblox."
 	/// </summary>
-	public override string ResponseBadUsername => "Kullanıcı adı Roblox için uygun değil.";
+	public override string ResponseBadUsername => "KullanÄ±cÄ± adÄ± Roblox iÃ§in uygun deÄŸil.";
 
 	/// <summary>
 	/// Key: "Response.BadUsernameForWeChat"
 	/// message shown when signing up with an inappropriate username
 	/// English String: "Username is not appropriate"
 	/// </summary>
-	public override string ResponseBadUsernameForWeChat => "Kullanıcı adı uygun değil";
+	public override string ResponseBadUsernameForWeChat => "KullanÄ±cÄ± adÄ± uygun deÄŸil";
 
 	/// <summary>
 	/// Key: "Response.BirthdayInvalid"
 	/// English String: "This birthday is invalid."
 	/// </summary>
-	public override string ResponseBirthdayInvalid => "Bu doğum günü geçersiz.";
+	public override string ResponseBirthdayInvalid => "Bu doÄŸum gÃ¼nÃ¼ geÃ§ersiz.";
 
 	/// <summary>
 	/// Key: "Response.BirthdayMustBeSetFirst"
 	/// English String: "Birthday must be set first."
 	/// </summary>
-	public override string ResponseBirthdayMustBeSetFirst => "Önce doğum günü ayarlanmalı.";
+	public override string ResponseBirthdayMustBeSetFirst => "Ã–nce doÄŸum gÃ¼nÃ¼ ayarlanmalÄ±.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaMismatchError"
 	/// error message
 	/// English String: "Words do not match."
 	/// </summary>
-	public override string ResponseCaptchaMismatchError => "Sözcükler eşleşmiyor.";
+	public override string ResponseCaptchaMismatchError => "SÃ¶zcÃ¼kler eÅŸleÅŸmiyor.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaNotEnteredError"
 	/// validation error message
 	/// English String: "Please fill out the Captcha"
 	/// </summary>
-	public override string ResponseCaptchaNotEnteredError => "Lütfen Captcha'yı doldur";
+	public override string ResponseCaptchaNotEnteredError => "LÃ¼tfen Captcha'yÄ± doldur";
 
 	/// <summary>
 	/// Key: "Response.FacebookConnectionError"
 	/// error message
 	/// English String: "Error while retrieving values from Facebook."
 	/// </summary>
-	public override string ResponseFacebookConnectionError => "Facebook'tan değerler getirilirken bir hata oluştu.";
+	public override string ResponseFacebookConnectionError => "Facebook'tan deÄŸerler getirilirken bir hata oluÅŸtu.";
 
 	/// <summary>
 	/// Key: "Response.FacebookLoginAge"
 	/// English String: "Facebook login can only be used by users above 13."
 	/// </summary>
-	public override string ResponseFacebookLoginAge => "Facebook ile girişi, sadece 13 yaşının üzerindeki kullanıcılar kullanabilir.";
+	public override string ResponseFacebookLoginAge => "Facebook ile giriÅŸi, sadece 13 yaÅŸÄ±nÄ±n Ã¼zerindeki kullanÄ±cÄ±lar kullanabilir.";
 
 	/// <summary>
 	/// Key: "Response.InvalidBirthday"
 	/// English String: "Invalid birthday."
 	/// </summary>
-	public override string ResponseInvalidBirthday => "Geçersiz doğum günü.";
+	public override string ResponseInvalidBirthday => "GeÃ§ersiz doÄŸum gÃ¼nÃ¼.";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmail"
 	/// English String: "Invalid email address."
 	/// </summary>
-	public override string ResponseInvalidEmail => "Geçersiz e-posta adresi.";
+	public override string ResponseInvalidEmail => "GeÃ§ersiz e-posta adresi.";
 
 	/// <summary>
 	/// Key: "Response.JavaScriptRequired"
 	/// error to show that JavaScipt is required for the form to work
 	/// English String: "JavaScript is required to submit this form."
 	/// </summary>
-	public override string ResponseJavaScriptRequired => "Bu formu göndermek için JavaScript gereklidir.";
+	public override string ResponseJavaScriptRequired => "Bu formu gÃ¶ndermek iÃ§in JavaScript gereklidir.";
 
 	/// <summary>
 	/// Key: "Response.PasswordComplexity"
 	/// English String: "Please create a more complex password."
 	/// </summary>
-	public override string ResponsePasswordComplexity => "Lütfen daha karmaşık bir şifre oluştur.";
+	public override string ResponsePasswordComplexity => "LÃ¼tfen daha karmaÅŸÄ±k bir ÅŸifre oluÅŸtur.";
 
 	/// <summary>
 	/// Key: "Response.PasswordConfirmation"
 	/// validation message for password confirmation
 	/// English String: "Please enter a password confirmation."
 	/// </summary>
-	public override string ResponsePasswordConfirmation => "Lütfen bir şifre onayı gir.";
+	public override string ResponsePasswordConfirmation => "LÃ¼tfen bir ÅŸifre onayÄ± gir.";
 
 	/// <summary>
 	/// Key: "Response.PasswordContainsUsernameError"
 	/// error when passsword has username in it
 	/// English String: "Password shouldn't match username."
 	/// </summary>
-	public override string ResponsePasswordContainsUsernameError => "Şifreler ve kullanıcı adları aynı olmamalı.";
+	public override string ResponsePasswordContainsUsernameError => "Åžifreler ve kullanÄ±cÄ± adlarÄ± aynÄ± olmamalÄ±.";
 
 	/// <summary>
 	/// Key: "Response.PasswordMismatch"
 	/// English String: "Passwords do not match."
 	/// </summary>
-	public override string ResponsePasswordMismatch => "Şifreler eşleşmiyor.";
+	public override string ResponsePasswordMismatch => "Åžifreler eÅŸleÅŸmiyor.";
 
 	/// <summary>
 	/// Key: "Response.PasswordWrongShort"
 	/// English String: "Passwords must be at least 8 characters long."
 	/// </summary>
-	public override string ResponsePasswordWrongShort => "Şifre en az 8 karakter olmalıdır.";
+	public override string ResponsePasswordWrongShort => "Åžifre en az 8 karakter olmalÄ±dÄ±r.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterPassword"
 	/// English String: "Please enter a password."
 	/// </summary>
-	public override string ResponsePleaseEnterPassword => "Lütfen bir şifre gir.";
+	public override string ResponsePleaseEnterPassword => "LÃ¼tfen bir ÅŸifre gir.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterUsername"
 	/// English String: "Please enter a username."
 	/// </summary>
-	public override string ResponsePleaseEnterUsername => "Lütfen bir kullanıcı adı gir.";
+	public override string ResponsePleaseEnterUsername => "LÃ¼tfen bir kullanÄ±cÄ± adÄ± gir.";
 
 	/// <summary>
 	/// Key: "Response.SocialAccountCreationFailed"
 	/// error message
 	/// English String: "Account creation failed"
 	/// </summary>
-	public override string ResponseSocialAccountCreationFailed => "Hesap oluşturma başarısız";
+	public override string ResponseSocialAccountCreationFailed => "Hesap oluÅŸturma baÅŸarÄ±sÄ±z";
 
 	/// <summary>
 	/// Key: "Response.SpaceOrSpecialCharaterError"
 	/// Spaces and special characters are not allowed error message
 	/// English String: "Spaces and special characters are not allowed."
 	/// </summary>
-	public override string ResponseSpaceOrSpecialCharaterError => "Boşluklara ve özel karakterlere izin verilmez.";
+	public override string ResponseSpaceOrSpecialCharaterError => "BoÅŸluklara ve Ã¶zel karakterlere izin verilmez.";
 
 	/// <summary>
 	/// Key: "Response.TooManyAccountsWithSameEmailError"
 	/// Too many accounts use this email error message
 	/// English String: "Too many accounts use this email."
 	/// </summary>
-	public override string ResponseTooManyAccountsWithSameEmailError => "Bu e-posta adresi çok fazla hesap tarafından kullanılıyor.";
+	public override string ResponseTooManyAccountsWithSameEmailError => "Bu e-posta adresi Ã§ok fazla hesap tarafÄ±ndan kullanÄ±lÄ±yor.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry! An unknown error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnknownError => "Özrü dileriz! Bilinmeyen bir hata meydana geldi. Lütfen daha sonra tekrar dene.";
+	public override string ResponseUnknownError => "Ã–zrÃ¼ dileriz! Bilinmeyen bir hata meydana geldi. LÃ¼tfen daha sonra tekrar dene.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAllowedCharactersError"
 	/// error showing which characters are allowed for username
 	/// English String: "Usernames may only contain letters, numbers, and _."
 	/// </summary>
-	public override string ResponseUsernameAllowedCharactersError => "Kullanıcı adları sadece harf, sayı ve _ içerebilir.";
+	public override string ResponseUsernameAllowedCharactersError => "KullanÄ±cÄ± adlarÄ± sadece harf, sayÄ± ve _ iÃ§erebilir.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAlreadyInUse"
 	/// English String: "This username is already in use."
 	/// </summary>
-	public override string ResponseUsernameAlreadyInUse => "Bu kullanıcı adı zaten kullanılıyor.";
+	public override string ResponseUsernameAlreadyInUse => "Bu kullanÄ±cÄ± adÄ± zaten kullanÄ±lÄ±yor.";
 
 	/// <summary>
 	/// Key: "Response.UsernameExplicit"
 	/// English String: "This username is not allowed, please try another."
 	/// </summary>
-	public override string ResponseUsernameExplicit => "Bu kullanıcı adına izin verilmiyor, lütfen başka bir tane dene.";
+	public override string ResponseUsernameExplicit => "Bu kullanÄ±cÄ± adÄ±na izin verilmiyor, lÃ¼tfen baÅŸka bir tane dene.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalid"
 	/// English String: "Please enter a valid username."
 	/// </summary>
-	public override string ResponseUsernameInvalid => "Lütfen geçerli bir kullanıcı adı gir.";
+	public override string ResponseUsernameInvalid => "LÃ¼tfen geÃ§erli bir kullanÄ±cÄ± adÄ± gir.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidCharacters"
 	/// English String: "Only a-z, A-Z, 0-9 and _ are allowed."
 	/// </summary>
-	public override string ResponseUsernameInvalidCharacters => "Sadece a-z, A-Z, 0-9 ve _ kullanılabilir.";
+	public override string ResponseUsernameInvalidCharacters => "Sadece a-z, A-Z, 0-9 ve _ kullanÄ±labilir.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidLength"
 	/// English String: "Usernames can be 3 to 20 characters long."
 	/// </summary>
-	public override string ResponseUsernameInvalidLength => "Kullanıcı adları 3 ila 20 karakter uzunluğunda olabilir.";
+	public override string ResponseUsernameInvalidLength => "KullanÄ±cÄ± adlarÄ± 3 ila 20 karakter uzunluÄŸunda olabilir.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidUnderscore"
 	/// English String: "Usernames cannot start or end with _."
 	/// </summary>
-	public override string ResponseUsernameInvalidUnderscore => "Kullanıcı adları _ ile başlayamaz veya bitemez.";
+	public override string ResponseUsernameInvalidUnderscore => "KullanÄ±cÄ± adlarÄ± _ ile baÅŸlayamaz veya bitemez.";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotAvailable"
 	/// English String: "Username not available. Please try again."
 	/// </summary>
-	public override string ResponseUsernameNotAvailable => "Kullanıcı adı uygun değil. Lütfen tekrar dene.";
+	public override string ResponseUsernameNotAvailable => "KullanÄ±cÄ± adÄ± uygun deÄŸil. LÃ¼tfen tekrar dene.";
 
 	/// <summary>
 	/// Key: "Response.UsernameOrPasswordIncorrect"
 	/// Your username or password is incorrect
 	/// English String: "Your username or password is incorrect."
 	/// </summary>
-	public override string ResponseUsernameOrPasswordIncorrect => "Kullanıcı adın ya da şifren hatalı.";
+	public override string ResponseUsernameOrPasswordIncorrect => "KullanÄ±cÄ± adÄ±n ya da ÅŸifren hatalÄ±.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePasswordRequired"
 	/// Username and Password are required error message
 	/// English String: "Username and Password are required."
 	/// </summary>
-	public override string ResponseUsernamePasswordRequired => "Kullanıcı Adı ve Şifre gereklidir.";
+	public override string ResponseUsernamePasswordRequired => "KullanÄ±cÄ± AdÄ± ve Åžifre gereklidir.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePrivateInfo"
 	/// English String: "Username might contain private information."
 	/// </summary>
-	public override string ResponseUsernamePrivateInfo => "Kullanıcı adı özel bilgiler içeriyor olabilir.";
+	public override string ResponseUsernamePrivateInfo => "KullanÄ±cÄ± adÄ± Ã¶zel bilgiler iÃ§eriyor olabilir.";
 
 	/// <summary>
 	/// Key: "Response.UsernameRequired"
 	/// validation error message
 	/// English String: "Username is required."
 	/// </summary>
-	public override string ResponseUsernameRequired => "Kullanıcı adı gereklidir.";
+	public override string ResponseUsernameRequired => "KullanÄ±cÄ± adÄ± gereklidir.";
 
 	/// <summary>
 	/// Key: "Response.UsernameTakenTryAgain"
 	/// English String: "This username is already taken! Please try a different one."
 	/// </summary>
-	public override string ResponseUsernameTakenTryAgain => "Bu kullanıcı adı alınmış! Lütfen farklı bir tane dene.";
+	public override string ResponseUsernameTakenTryAgain => "Bu kullanÄ±cÄ± adÄ± alÄ±nmÄ±ÅŸ! LÃ¼tfen farklÄ± bir tane dene.";
 
 	/// <summary>
 	/// Key: "Response.UsernameTooManyUnderscores"
 	/// English String: "Usernames can have at most one _."
 	/// </summary>
-	public override string ResponseUsernameTooManyUnderscores => "Kullanıcı adında en fazla bir tane _ olabilir.";
+	public override string ResponseUsernameTooManyUnderscores => "KullanÄ±cÄ± adÄ±nda en fazla bir tane _ olabilir.";
 
 	public SignUpResources_tr_tr(TranslationResourceState state)
 		: base(state)
@@ -558,27 +558,27 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForActionCreateAccount()
 	{
-		return "Hesap Oluştur";
+		return "Hesap OluÅŸtur";
 	}
 
 	protected override string _GetTemplateForActionLinkAccount()
 	{
-		return "Hesabı Bağla";
+		return "HesabÄ± BaÄŸla";
 	}
 
 	protected override string _GetTemplateForActionLogInCapitalized()
 	{
-		return "Giriş Yap";
+		return "GiriÅŸ Yap";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "Girişe Dön";
+		return "GiriÅŸe DÃ¶n";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "Kayıt ol";
+		return "KayÄ±t ol";
 	}
 
 	protected override string _GetTemplateForActionSignupAndSync()
@@ -588,22 +588,22 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "Gönder";
+		return "GÃ¶nder";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountLinkingWarning()
 	{
-		return "Mevcut bir Roblox hesabını bağlamak için giriş yap ve hesap ayarları sayfasından bağlantıyı kur.";
+		return "Mevcut bir Roblox hesabÄ±nÄ± baÄŸlamak iÃ§in giriÅŸ yap ve hesap ayarlarÄ± sayfasÄ±ndan baÄŸlantÄ±yÄ± kur.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoRealName()
 	{
-		return "Gerçek adını kullanma.";
+		return "GerÃ§ek adÄ±nÄ± kullanma.";
 	}
 
 	protected override string _GetTemplateForDescriptionPrivacyPolicy()
 	{
-		return "Gizlilik Politikası";
+		return "Gizlilik PolitikasÄ±";
 	}
 
 	/// <summary>
@@ -613,32 +613,32 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 	/// </summary>
 	public override string DescriptionSignUpAgreement(string spanStart, string spanEnd, string termsOfUseLink, string privacyPolicyLink)
 	{
-		return $"{spanStart}Kaydol{spanEnd}'a tıklayarak şunları kabul etmiş ve onaylamış sayılırsın: {termsOfUseLink} ve {privacyPolicyLink}";
+		return $"{spanStart}Kaydol{spanEnd}'a tÄ±klayarak ÅŸunlarÄ± kabul etmiÅŸ ve onaylamÄ±ÅŸ sayÄ±lÄ±rsÄ±n: {termsOfUseLink} ve {privacyPolicyLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionSignUpAgreement()
 	{
-		return "{spanStart}Kaydol{spanEnd}'a tıklayarak şunları kabul etmiş ve onaylamış sayılırsın: {termsOfUseLink} ve {privacyPolicyLink}";
+		return "{spanStart}Kaydol{spanEnd}'a tÄ±klayarak ÅŸunlarÄ± kabul etmiÅŸ ve onaylamÄ±ÅŸ sayÄ±lÄ±rsÄ±n: {termsOfUseLink} ve {privacyPolicyLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionTermsOfService()
 	{
-		return "Hizmet Koşulları";
+		return "Hizmet KoÅŸullarÄ±";
 	}
 
 	protected override string _GetTemplateForGuestSignUpABActionSignUp()
 	{
-		return "Kayıt Ol";
+		return "KayÄ±t Ol";
 	}
 
 	protected override string _GetTemplateForHeadingConnectFacebook()
 	{
-		return "Facebook'a Bağlan";
+		return "Facebook'a BaÄŸlan";
 	}
 
 	protected override string _GetTemplateForHeadingCreateAnAccount()
 	{
-		return "BİR HESAP OLUŞTUR";
+		return "BÄ°R HESAP OLUÅžTUR";
 	}
 
 	/// <summary>
@@ -658,67 +658,67 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForHeadingLoginHaveFun()
 	{
-		return "Giriş yap ve eğlenmeye başla!";
+		return "GiriÅŸ yap ve eÄŸlenmeye baÅŸla!";
 	}
 
 	protected override string _GetTemplateForHeadingSignupHaveFun()
 	{
-		return "Kaydol ve eğlenmeye başla!";
+		return "Kaydol ve eÄŸlenmeye baÅŸla!";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "Hakkında";
+		return "HakkÄ±nda";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyHaveRobloxAccount()
 	{
-		return "Zaten bir Roblox hesabın var mı?";
+		return "Zaten bir Roblox hesabÄ±n var mÄ±?";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyRegistered()
 	{
-		return "Zaten kayıtlı mısın?";
+		return "Zaten kayÄ±tlÄ± mÄ±sÄ±n?";
 	}
 
 	protected override string _GetTemplateForLabelBirthday()
 	{
-		return "Doğum Günü";
+		return "DoÄŸum GÃ¼nÃ¼";
 	}
 
 	protected override string _GetTemplateForLabelBirthdayWithColumn()
 	{
-		return "Doğum Günü:";
+		return "DoÄŸum GÃ¼nÃ¼:";
 	}
 
 	protected override string _GetTemplateForLabelConfirmPassword()
 	{
-		return "Şifreyi doğrula";
+		return "Åžifreyi doÄŸrula";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "Gün";
+		return "GÃ¼n";
 	}
 
 	protected override string _GetTemplateForLabelDesiredUsername()
 	{
-		return "İstenen Kullanıcı Adı:";
+		return "Ä°stenen KullanÄ±cÄ± AdÄ±:";
 	}
 
 	protected override string _GetTemplateForLabelFacebookNotLinked()
 	{
-		return "Facebook hesabın herhangi bir Roblox hesabına bağlı değil. Bir Roblox hesabı için lütfen kaydol.";
+		return "Facebook hesabÄ±n herhangi bir Roblox hesabÄ±na baÄŸlÄ± deÄŸil. Bir Roblox hesabÄ± iÃ§in lÃ¼tfen kaydol.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookSignupUsername()
 	{
-		return "Roblox kullanıcı adı oluştur:";
+		return "Roblox kullanÄ±cÄ± adÄ± oluÅŸtur:";
 	}
 
 	protected override string _GetTemplateForLabelFemale()
 	{
-		return "Kadın";
+		return "KadÄ±n";
 	}
 
 	protected override string _GetTemplateForLabelGender()
@@ -748,12 +748,12 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "Şifre";
+		return "Åžifre";
 	}
 
 	protected override string _GetTemplateForLabelPasswordRequirements()
 	{
-		return "Şifre (en az 8 karakter)";
+		return "Åžifre (en az 8 karakter)";
 	}
 
 	protected override string _GetTemplateForLabelPlatforms()
@@ -768,7 +768,7 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelPleaseAgreeToTerms()
 	{
-		return "Lütfen Hizmet Koşulları ve Gizlilik Politikamızı kabul et.";
+		return "LÃ¼tfen Hizmet KoÅŸullarÄ± ve Gizlilik PolitikamÄ±zÄ± kabul et.";
 	}
 
 	protected override string _GetTemplateForLabelRequired()
@@ -783,37 +783,37 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelSignUpWith()
 	{
-		return "veya şununla kaydol:";
+		return "veya ÅŸununla kaydol:";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "Kullanım Koşulları";
+		return "KullanÄ±m KoÅŸullarÄ±";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "Kullanıcı Adı";
+		return "KullanÄ±cÄ± AdÄ±";
 	}
 
 	protected override string _GetTemplateForLabelUsernameCharacterLimit()
 	{
-		return "Boşluk kullanmadan 3-20 alfanümerik karakter.";
+		return "BoÅŸluk kullanmadan 3-20 alfanÃ¼merik karakter.";
 	}
 
 	protected override string _GetTemplateForLabelUsernameHint()
 	{
-		return "Kullanıcı Adı (gerçek adını kullanma)";
+		return "KullanÄ±cÄ± AdÄ± (gerÃ§ek adÄ±nÄ± kullanma)";
 	}
 
 	protected override string _GetTemplateForLabelUsernameRequirements()
 	{
-		return "Kullanıcı Adı (uzunluk 3-20 karakter, _ kullanılabilir)";
+		return "KullanÄ±cÄ± AdÄ± (uzunluk 3-20 karakter, _ kullanÄ±labilir)";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "Yıl";
+		return "YÄ±l";
 	}
 
 	protected override string _GetTemplateForMessagePasswordMinLength()
@@ -823,186 +823,189 @@ internal class SignUpResources_tr_tr : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForMessageUsernameNoRealNameUse()
 	{
-		return "Gerçek adını kullanma";
+		return "GerÃ§ek adÄ±nÄ± kullanma";
 	}
 
 	protected override string _GetTemplateForResponseBadUsername()
 	{
-		return "Kullanıcı adı Roblox için uygun değil.";
+		return "KullanÄ±cÄ± adÄ± Roblox iÃ§in uygun deÄŸil.";
 	}
 
 	protected override string _GetTemplateForResponseBadUsernameForWeChat()
 	{
-		return "Kullanıcı adı uygun değil";
+		return "KullanÄ±cÄ± adÄ± uygun deÄŸil";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayInvalid()
 	{
-		return "Bu doğum günü geçersiz.";
+		return "Bu doÄŸum gÃ¼nÃ¼ geÃ§ersiz.";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayMustBeSetFirst()
 	{
-		return "Önce doğum günü ayarlanmalı.";
+		return "Ã–nce doÄŸum gÃ¼nÃ¼ ayarlanmalÄ±.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaMismatchError()
 	{
-		return "Sözcükler eşleşmiyor.";
+		return "SÃ¶zcÃ¼kler eÅŸleÅŸmiyor.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaNotEnteredError()
 	{
-		return "Lütfen Captcha'yı doldur";
+		return "LÃ¼tfen Captcha'yÄ± doldur";
 	}
 
 	protected override string _GetTemplateForResponseFacebookConnectionError()
 	{
-		return "Facebook'tan değerler getirilirken bir hata oluştu.";
+		return "Facebook'tan deÄŸerler getirilirken bir hata oluÅŸtu.";
 	}
 
 	protected override string _GetTemplateForResponseFacebookLoginAge()
 	{
-		return "Facebook ile girişi, sadece 13 yaşının üzerindeki kullanıcılar kullanabilir.";
+		return "Facebook ile giriÅŸi, sadece 13 yaÅŸÄ±nÄ±n Ã¼zerindeki kullanÄ±cÄ±lar kullanabilir.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidBirthday()
 	{
-		return "Geçersiz doğum günü.";
+		return "GeÃ§ersiz doÄŸum gÃ¼nÃ¼.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmail()
 	{
-		return "Geçersiz e-posta adresi.";
+		return "GeÃ§ersiz e-posta adresi.";
 	}
 
 	protected override string _GetTemplateForResponseJavaScriptRequired()
 	{
-		return "Bu formu göndermek için JavaScript gereklidir.";
+		return "Bu formu gÃ¶ndermek iÃ§in JavaScript gereklidir.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordComplexity()
 	{
-		return "Lütfen daha karmaşık bir şifre oluştur.";
+		return "LÃ¼tfen daha karmaÅŸÄ±k bir ÅŸifre oluÅŸtur.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordConfirmation()
 	{
-		return "Lütfen bir şifre onayı gir.";
+		return "LÃ¼tfen bir ÅŸifre onayÄ± gir.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordContainsUsernameError()
 	{
-		return "Şifreler ve kullanıcı adları aynı olmamalı.";
+		return "Åžifreler ve kullanÄ±cÄ± adlarÄ± aynÄ± olmamalÄ±.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordMismatch()
 	{
-		return "Şifreler eşleşmiyor.";
+		return "Åžifreler eÅŸleÅŸmiyor.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordWrongShort()
 	{
-		return "Şifre en az 8 karakter olmalıdır.";
+		return "Åžifre en az 8 karakter olmalÄ±dÄ±r.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterPassword()
 	{
-		return "Lütfen bir şifre gir.";
+		return "LÃ¼tfen bir ÅŸifre gir.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterUsername()
 	{
-		return "Lütfen bir kullanıcı adı gir.";
+		return "LÃ¼tfen bir kullanÄ±cÄ± adÄ± gir.";
 	}
 
 	protected override string _GetTemplateForResponseSocialAccountCreationFailed()
 	{
-		return "Hesap oluşturma başarısız";
+		return "Hesap oluÅŸturma baÅŸarÄ±sÄ±z";
 	}
 
 	protected override string _GetTemplateForResponseSpaceOrSpecialCharaterError()
 	{
-		return "Boşluklara ve özel karakterlere izin verilmez.";
+		return "BoÅŸluklara ve Ã¶zel karakterlere izin verilmez.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAccountsWithSameEmailError()
 	{
-		return "Bu e-posta adresi çok fazla hesap tarafından kullanılıyor.";
+		return "Bu e-posta adresi Ã§ok fazla hesap tarafÄ±ndan kullanÄ±lÄ±yor.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "Özrü dileriz! Bilinmeyen bir hata meydana geldi. Lütfen daha sonra tekrar dene.";
+		return "Ã–zrÃ¼ dileriz! Bilinmeyen bir hata meydana geldi. LÃ¼tfen daha sonra tekrar dene.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAllowedCharactersError()
 	{
-		return "Kullanıcı adları sadece harf, sayı ve _ içerebilir.";
+		return "KullanÄ±cÄ± adlarÄ± sadece harf, sayÄ± ve _ iÃ§erebilir.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAlreadyInUse()
 	{
-		return "Bu kullanıcı adı zaten kullanılıyor.";
+		return "Bu kullanÄ±cÄ± adÄ± zaten kullanÄ±lÄ±yor.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameExplicit()
 	{
-		return "Bu kullanıcı adına izin verilmiyor, lütfen başka bir tane dene.";
+		return "Bu kullanÄ±cÄ± adÄ±na izin verilmiyor, lÃ¼tfen baÅŸka bir tane dene.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalid()
 	{
-		return "Lütfen geçerli bir kullanıcı adı gir.";
+		return "LÃ¼tfen geÃ§erli bir kullanÄ±cÄ± adÄ± gir.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidCharacters()
 	{
-		return "Sadece a-z, A-Z, 0-9 ve _ kullanılabilir.";
+		return "Sadece a-z, A-Z, 0-9 ve _ kullanÄ±labilir.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidLength()
 	{
-		return "Kullanıcı adları 3 ila 20 karakter uzunluğunda olabilir.";
+		return "KullanÄ±cÄ± adlarÄ± 3 ila 20 karakter uzunluÄŸunda olabilir.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidUnderscore()
 	{
-		return "Kullanıcı adları _ ile başlayamaz veya bitemez.";
+		return "KullanÄ±cÄ± adlarÄ± _ ile baÅŸlayamaz veya bitemez.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotAvailable()
 	{
-		return "Kullanıcı adı uygun değil. Lütfen tekrar dene.";
+		return "KullanÄ±cÄ± adÄ± uygun deÄŸil. LÃ¼tfen tekrar dene.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameOrPasswordIncorrect()
 	{
-		return "Kullanıcı adın ya da şifren hatalı.";
+		return "KullanÄ±cÄ± adÄ±n ya da ÅŸifren hatalÄ±.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePasswordRequired()
 	{
-		return "Kullanıcı Adı ve Şifre gereklidir.";
+		return "KullanÄ±cÄ± AdÄ± ve Åžifre gereklidir.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePrivateInfo()
 	{
-		return "Kullanıcı adı özel bilgiler içeriyor olabilir.";
+		return "KullanÄ±cÄ± adÄ± Ã¶zel bilgiler iÃ§eriyor olabilir.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameRequired()
 	{
-		return "Kullanıcı adı gereklidir.";
+		return "KullanÄ±cÄ± adÄ± gereklidir.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTakenTryAgain()
 	{
-		return "Bu kullanıcı adı alınmış! Lütfen farklı bir tane dene.";
+		return "Bu kullanÄ±cÄ± adÄ± alÄ±nmÄ±ÅŸ! LÃ¼tfen farklÄ± bir tane dene.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTooManyUnderscores()
 	{
-		return "Kullanıcı adında en fazla bir tane _ olabilir.";
+		return "KullanÄ±cÄ± adÄ±nda en fazla bir tane _ olabilir.";
 	}
+}
+
+
 }

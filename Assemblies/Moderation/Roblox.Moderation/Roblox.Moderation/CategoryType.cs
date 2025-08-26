@@ -1,7 +1,10 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderationpublic {
+    enum CategoryType
 
-public enum CategoryType
 {
 	Language,
 	AbuseType
+}
+
+
 }

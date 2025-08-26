@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasingpublic {
+    interface IRixtyPinResources : ITranslationResources
 
-public interface IRixtyPinResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.BuyNow"
@@ -233,4 +233,7 @@ public interface IRixtyPinResources : ITranslationResources
 	/// English String: "{startLink}Go to your local store{endLink} and get a Rixty Card."
 	/// </summary>
 	string LabelGetPhysicalRixtyCard(string startLink, string endLink);
+}
+
+
 }

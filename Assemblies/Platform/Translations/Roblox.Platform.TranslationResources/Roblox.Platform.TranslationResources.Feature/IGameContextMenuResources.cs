@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameContextMenuResources : ITranslationResources
 
-public interface IGameContextMenuResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "ActionDialogAccept"
@@ -93,4 +93,7 @@ public interface IGameContextMenuResources : ITranslationResources
 	/// English String: "Could not shut down servers."
 	/// </summary>
 	string MessageServerShutDownError { get; }
+}
+
+
 }

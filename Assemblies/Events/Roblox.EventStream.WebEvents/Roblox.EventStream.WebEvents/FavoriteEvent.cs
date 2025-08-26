@@ -1,16 +1,17 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class FavoriteEvent : WebEventBase
 
-public class FavoriteEvent : WebEventBase
 {
 	private const string _Name = "favorite";
 
 	/// <summary>
 	/// Initializes a new instance of the <see cref="!:deviceHandleRequestedEvent" /> class.
 	/// </summary>
-	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer" />.</param>
 	/// <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.FavoriteEventArgs" /> instance containing the event data.</param>
 	/// <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target" /> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Www" />.</exception>
-	public FavoriteEvent(EventStreamer streamer, FavoriteEventArgs args)
+	public FavoriteEvent(IEventStreamer streamer, FavoriteEventArgs args)
 		: base(streamer, "favorite", args)
 	{
 		AddEventArg("assetId", args.AssetId.ToString());
@@ -30,3 +31,12 @@ public class FavoriteEvent : WebEventBase
 		AddEventArg("favoriteCount", args.FavoriteCount.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

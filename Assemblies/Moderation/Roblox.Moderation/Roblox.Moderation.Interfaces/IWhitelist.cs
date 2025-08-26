@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.Platform.Moderation.Implementation;
+namespace Roblox.Moderation.Interfaces {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation.Interfaces;
-
-/// <summary>
 /// Provides a common interface for an object that defines a white list.
 /// </summary>
 public interface IWhitelist
@@ -25,4 +24,7 @@ public interface IWhitelist
 	/// </summary>
 	/// <returns>All terms in the <see cref="T:Roblox.Platform.Moderation.Implementation.Whitelist" /> </returns>
 	IEnumerable<string> GetAllTerms();
+}
+
+
 }

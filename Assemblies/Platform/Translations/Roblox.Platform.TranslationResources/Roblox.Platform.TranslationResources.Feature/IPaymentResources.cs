@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPaymentResources : ITranslationResources
 
-public interface IPaymentResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Message.FraudBlockedPaymentCheckInfoErrorMessage"
@@ -26,4 +26,7 @@ public interface IPaymentResources : ITranslationResources
 	/// English String: "Make sure you have your parents permission before using their credit cards. Card owners may be contacted for confirmation.{lineStart}Using a card without permission will result in your account being deleted.{lineEnd}"
 	/// </summary>
 	string MessageFraudForUnder13UsingCreditCard(string lineStart, string lineEnd);
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notificationsinternal {
+    class PushNotificationsResources_en_us : TranslationResourcesBase, IPushNotificationsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Notifications;
-
-internal class PushNotificationsResources_en_us : TranslationResourcesBase, IPushNotificationsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -410,4 +409,7 @@ internal class PushNotificationsResources_en_us : TranslationResourcesBase, IPus
 	{
 		return "{actorUsername} chose a game to play together: {universeName}";
 	}
+}
+
+
 }

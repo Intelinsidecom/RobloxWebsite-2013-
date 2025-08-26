@@ -1,10 +1,13 @@
-namespace Roblox.Platform.EventStream;
+namespace Roblox.EventStream {
+    interface IPushNotificationDataSender
 
-public interface IPushNotificationDataSender
 {
 	/// <summary>
 	/// Publish push notification data to AmazonKinesisFirehose
 	/// </summary>
 	/// <param name="pushNotificationData">The push notification data</param>
 	void PublishData(IPushNotificationData pushNotificationData);
+}
+
+
 }

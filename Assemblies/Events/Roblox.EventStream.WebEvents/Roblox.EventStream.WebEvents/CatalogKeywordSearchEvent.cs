@@ -1,9 +1,9 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
 using System.Collections.Generic;
+namespace Roblox.EventStream.WebEvents {
+    public class CatalogKeywordSearchEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class CatalogKeywordSearchEvent : WebEventBase
 {
 	private const string _Name = "catalogSearch";
 
@@ -74,12 +74,21 @@ public class CatalogKeywordSearchEvent : WebEventBase
 	/// Sends catalog search events to event stream.
 	/// </summary>
 	/// <param name="eventArgs"></param>
-	/// <param name="eventStreamer"></param>
-	public static void SendCatalogKeywordSearchEvent(CatalogKeywordSearchEventArgs eventArgs, IEventStreamer eventStreamer)
+	/// <param name="IEventStreamer"></param>
+	public static void SendCatalogKeywordSearchEvent(CatalogKeywordSearchEventArgs eventArgs, IEventStreamer IEventStreamer)
 	{
 		if (!string.IsNullOrEmpty(eventArgs.Keyword))
 		{
-			new CatalogKeywordSearchEvent(eventStreamer, eventArgs).Stream();
+			new CatalogKeywordSearchEvent(IEventStreamer, eventArgs).Stream();
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

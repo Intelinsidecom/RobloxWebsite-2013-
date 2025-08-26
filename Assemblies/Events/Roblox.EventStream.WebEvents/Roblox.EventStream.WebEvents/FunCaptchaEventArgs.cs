@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class FunCaptchaEventArgs : WebEventArgs
 
-public class FunCaptchaEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// If FunCaptcha was solved
@@ -71,3 +72,12 @@ public class FunCaptchaEventArgs : WebEventArgs
 	/// </summary>
 	public bool VerificationBlocked { get; set; }
 }
+
+
+}
+
+
+
+
+
+

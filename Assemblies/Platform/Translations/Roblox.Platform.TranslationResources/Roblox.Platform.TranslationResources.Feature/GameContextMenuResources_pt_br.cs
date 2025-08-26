@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameContextMenuResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class GameContextMenuResources_pt_br : GameContextMenuResources_en_us, 
 	/// Key: "ActionDialogDecline"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionDialogDecline => "Não";
+	public override string ActionDialogDecline => "NÃ£o";
 
 	/// <summary>
 	/// Key: "ActionDialogOk"
@@ -29,7 +29,7 @@ internal class GameContextMenuResources_pt_br : GameContextMenuResources_en_us, 
 	/// The label in context menu that will direct game owner to configure localization page
 	/// English String: "Configure Localization"
 	/// </summary>
-	public override string LabelConfigureLocalization => "Configurar localização";
+	public override string LabelConfigureLocalization => "Configurar localizaÃ§Ã£o";
 
 	/// <summary>
 	/// Key: "Label.TranslateThisGame"
@@ -60,7 +60,7 @@ internal class GameContextMenuResources_pt_br : GameContextMenuResources_en_us, 
 	/// Key: "LabelDeveloperStats"
 	/// English String: "Developer Stats"
 	/// </summary>
-	public override string LabelDeveloperStats => "Estatísticas do desenvolvedor";
+	public override string LabelDeveloperStats => "EstatÃ­sticas do desenvolvedor";
 
 	/// <summary>
 	/// Key: "LabelEdit"
@@ -96,7 +96,7 @@ internal class GameContextMenuResources_pt_br : GameContextMenuResources_en_us, 
 	/// Key: "MessageServerShutDownError"
 	/// English String: "Could not shut down servers."
 	/// </summary>
-	public override string MessageServerShutDownError => "Não foi possível desligar os servidores.";
+	public override string MessageServerShutDownError => "NÃ£o foi possÃ­vel desligar os servidores.";
 
 	public GameContextMenuResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -110,7 +110,7 @@ internal class GameContextMenuResources_pt_br : GameContextMenuResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogDecline()
 	{
-		return "Não";
+		return "NÃ£o";
 	}
 
 	protected override string _GetTemplateForActionDialogOk()
@@ -120,7 +120,7 @@ internal class GameContextMenuResources_pt_br : GameContextMenuResources_en_us, 
 
 	protected override string _GetTemplateForLabelConfigureLocalization()
 	{
-		return "Configurar localização";
+		return "Configurar localizaÃ§Ã£o";
 	}
 
 	protected override string _GetTemplateForLabelTranslateThisGame()
@@ -145,7 +145,7 @@ internal class GameContextMenuResources_pt_br : GameContextMenuResources_en_us, 
 
 	protected override string _GetTemplateForLabelDeveloperStats()
 	{
-		return "Estatísticas do desenvolvedor";
+		return "EstatÃ­sticas do desenvolvedor";
 	}
 
 	protected override string _GetTemplateForLabelEdit()
@@ -175,6 +175,9 @@ internal class GameContextMenuResources_pt_br : GameContextMenuResources_en_us, 
 
 	protected override string _GetTemplateForMessageServerShutDownError()
 	{
-		return "Não foi possível desligar os servidores.";
+		return "NÃ£o foi possÃ­vel desligar os servidores.";
 	}
+}
+
+
 }

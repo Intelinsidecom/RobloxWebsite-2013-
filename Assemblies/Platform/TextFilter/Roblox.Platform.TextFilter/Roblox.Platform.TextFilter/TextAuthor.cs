@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Default implementation of <see cref="T:Roblox.TextFilter.ITextAuthor" />.
 /// </summary>
 public class TextAuthor : ITextAuthor
@@ -32,4 +32,7 @@ public class TextAuthor : ITextAuthor
 		Name = name;
 		IsUnder13 = isUnder13;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IPremiumFeaturesResources : ITranslationResources
 
-public interface IPremiumFeaturesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.RobloxPremiumName"
@@ -19,4 +19,7 @@ public interface IPremiumFeaturesResources : ITranslationResources
 	/// English String: "{amount} Robux"
 	/// </summary>
 	string LabelRobuxPackage(string amount);
+}
+
+
 }

@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Platform.Localization.Accounts;
+namespace Roblox.Localization.Auditinternal {
+    interface IAccountCountriesAuditEntryEntityFactory
 
-namespace Roblox.Platform.Localization.Audit;
-
-internal interface IAccountCountriesAuditEntryEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity" /> by its ID.
@@ -43,4 +42,7 @@ internal interface IAccountCountriesAuditEntryEntityFactory
 	/// <param name="entity">The entity to base the audit on.</param>
 	/// <returns>The newly created <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity" />.</returns>
 	IAccountCountriesAuditEntryEntity Create(IAccountCountryEntity entity);
+}
+
+
 }

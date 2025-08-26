@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Diagnostics;
 using Roblox.EventLog;
 using Roblox.RealTimeNotifications.Properties;
 using StackExchange.Redis;
+namespace Roblox.Platform.RealTimeNotifications {
+    /// <summary>
 
-namespace Roblox.RealTimeNotifications;
-
-/// <summary>
 /// Performance monitor for <see cref="T:Roblox.RealTimeNotifications.SubscriptionProxy`3" />
 /// </summary>
 public class SubscriptionProxyPerformanceMonitor
@@ -102,4 +101,7 @@ public class SubscriptionProxyPerformanceMonitor
 		});
 		counterBuilder.Create();
 	}
+}
+
+
 }

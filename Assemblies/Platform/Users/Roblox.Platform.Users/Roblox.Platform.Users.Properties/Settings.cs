@@ -1,14 +1,13 @@
-using System.CodeDom.Compiler;
+﻿using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
+namespace Roblox.Platform.Users.Properties {
+    /// <summary>
 
-namespace Roblox.Users.Properties;
-
-/// <summary>
 /// Configuration that uses Roblox.Configuration.Provider
 /// </summary>
 [CompilerGenerated]
@@ -62,4 +61,7 @@ public sealed class Settings : ApplicationSettingsBase
 	{
 		_Properties.TryRemove(propertyChangeEvent.PropertyName, out var _);
 	}
+}
+
+
 }

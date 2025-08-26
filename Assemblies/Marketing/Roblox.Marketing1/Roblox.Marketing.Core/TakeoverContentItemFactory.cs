@@ -1,11 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Roblox.Common.NetStandard;
 using Roblox.Platform.Marketing.Core.Entities;
+namespace Roblox.Marketing.Corepublic {
+    class TakeoverContentItemFactory : ITakeoverContentItemFactory
 
-namespace Roblox.Platform.Marketing.Core;
-
-public class TakeoverContentItemFactory : ITakeoverContentItemFactory
 {
 	private const int PageSize = 10;
 
@@ -54,4 +53,7 @@ public class TakeoverContentItemFactory : ITakeoverContentItemFactory
 		takeoverContentItem.Save();
 		return takeoverContentItem;
 	}
+}
+
+
 }

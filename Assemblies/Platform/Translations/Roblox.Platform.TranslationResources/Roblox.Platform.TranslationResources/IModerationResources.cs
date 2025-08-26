@@ -1,8 +1,10 @@
-using Roblox.TranslationResources.Moderation;
+﻿using Roblox.TranslationResources.Moderation;
+namespace Roblox.Platform.TranslationResourcespublic {
+    interface IModerationResources : ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-public interface IModerationResources : ITranslationResourcesNamespacesGroup
 {
 	IModeratorActionsResources ModeratorActions { get; }
+}
+
+
 }

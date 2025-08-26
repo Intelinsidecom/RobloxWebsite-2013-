@@ -1,9 +1,12 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderationpublic {
+    enum AssetModerationStatus
 
-public enum AssetModerationStatus
 {
 	Green,
 	Yellow,
 	Orange,
 	Red
+}
+
+
 }

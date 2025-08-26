@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+namespace Roblox.Platform.TextFilter {
+    class ObjectNameValidationResult : IObjectNameValidationResult
 
-internal class ObjectNameValidationResult : IObjectNameValidationResult
 {
 	public bool IsValid { get; }
 
@@ -8,4 +8,7 @@ internal class ObjectNameValidationResult : IObjectNameValidationResult
 	{
 		IsValid = isValid;
 	}
+}
+
+
 }

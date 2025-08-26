@@ -1,6 +1,6 @@
-namespace Roblox.EphemeralCounters;
+﻿namespace Roblox.Platform.EphemeralCounterspublic {
+    interface ISequenceStatistics
 
-public interface ISequenceStatistics
 {
 	double Maximum { get; }
 
@@ -29,4 +29,7 @@ public interface ISequenceStatistics
 	double P99 { get; }
 
 	double GetStatisticByName(string statisticName);
+}
+
+
 }

@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Core.Implementations;
 using Roblox.Platform.Localization.Core.Properties;
+namespace Roblox.Localization.Coreinternal {
+    class SupportedLocaleEntityTranslator : ISupportedLocaleEntityTranslator
 
-namespace Roblox.Platform.Localization.Core;
-
-internal class SupportedLocaleEntityTranslator : ISupportedLocaleEntityTranslator
 {
 	private ISupportedLocale _DefaultSupportedLocale;
 
@@ -82,4 +81,7 @@ internal class SupportedLocaleEntityTranslator : ISupportedLocaleEntityTranslato
 			LocaleCode = _Settings.DefaultSupportedLocale
 		};
 	}
+}
+
+
 }

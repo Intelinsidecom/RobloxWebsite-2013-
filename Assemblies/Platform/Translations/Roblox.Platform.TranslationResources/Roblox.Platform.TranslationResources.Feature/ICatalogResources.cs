@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ICatalogResources : ITranslationResources
 
-public interface ICatalogResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.BuyRobux"
@@ -923,4 +923,7 @@ public interface ICatalogResources : ITranslationResources
 	/// English String: "Featured Items on {spanStart}{roblox}{spanEnd}"
 	/// </summary>
 	string LabelFeaturedItemsOnRoblox(string spanStart, string roblox, string spanEnd);
+}
+
+
 }

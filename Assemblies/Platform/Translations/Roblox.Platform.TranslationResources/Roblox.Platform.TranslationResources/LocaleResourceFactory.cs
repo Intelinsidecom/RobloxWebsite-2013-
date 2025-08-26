@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Concurrent;
+namespace Roblox.Platform.TranslationResources {
+    /// <summary>
 
-namespace Roblox.TranslationResources;
-
-/// <summary>
 /// Resource factory get resources.
 /// </summary>
 public class LocaleResourceFactory : ILocaleResourceFactory
@@ -30,4 +29,7 @@ public class LocaleResourceFactory : ILocaleResourceFactory
 	{
 		return new MasterResources(supportedLocaleEnum, translationResourceState);
 	}
+}
+
+
 }

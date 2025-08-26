@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationAnalyticsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -31,7 +31,7 @@ internal class TranslationAnalyticsResources_de_de : TranslationAnalyticsResourc
 	/// section heading
 	/// English String: "Translator Contribution Report"
 	/// </summary>
-	public override string HeadingTranslationAnalytics => "Übersetzer-Beitragsbericht";
+	public override string HeadingTranslationAnalytics => "Ãœbersetzer-Beitragsbericht";
 
 	/// <summary>
 	/// Key: "Label.Pending"
@@ -45,13 +45,13 @@ internal class TranslationAnalyticsResources_de_de : TranslationAnalyticsResourc
 	/// label for date selection dropdown
 	/// English String: "Select Date Range"
 	/// </summary>
-	public override string LabelSelectDates => "Datumsbereich auswählen";
+	public override string LabelSelectDates => "Datumsbereich auswÃ¤hlen";
 
 	/// <summary>
 	/// Key: "Message.GenericError"
 	/// English String: "There was a problem with your request. Please try again later."
 	/// </summary>
-	public override string MessageGenericError => "Es gab ein Problem mit deiner Anfrage. Bitte versuch es später erneut.";
+	public override string MessageGenericError => "Es gab ein Problem mit deiner Anfrage. Bitte versuch es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.PermissionError"
@@ -81,7 +81,7 @@ internal class TranslationAnalyticsResources_de_de : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForHeadingTranslationAnalytics()
 	{
-		return "Übersetzer-Beitragsbericht";
+		return "Ãœbersetzer-Beitragsbericht";
 	}
 
 	protected override string _GetTemplateForLabelPending()
@@ -91,16 +91,19 @@ internal class TranslationAnalyticsResources_de_de : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForLabelSelectDates()
 	{
-		return "Datumsbereich auswählen";
+		return "Datumsbereich auswÃ¤hlen";
 	}
 
 	protected override string _GetTemplateForMessageGenericError()
 	{
-		return "Es gab ein Problem mit deiner Anfrage. Bitte versuch es später erneut.";
+		return "Es gab ein Problem mit deiner Anfrage. Bitte versuch es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
 		return "Du hast keine ausreichende Berechtigung zum Herunterladen dieses Berichts.";
 	}
+}
+
+
 }

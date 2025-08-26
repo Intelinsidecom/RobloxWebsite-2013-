@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// The exception thrown when an operation failed due to moderation.
 /// </summary>
 public class ModeratedOperationException : PlatformInvalidOperationException
@@ -21,4 +20,7 @@ public class ModeratedOperationException : PlatformInvalidOperationException
 		: base(message, innerException)
 	{
 	}
+}
+
+
 }

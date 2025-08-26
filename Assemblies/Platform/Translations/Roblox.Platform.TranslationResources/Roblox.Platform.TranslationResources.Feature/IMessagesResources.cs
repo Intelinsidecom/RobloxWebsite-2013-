@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IMessagesResources : ITranslationResources
 
-public interface IMessagesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Archive"
@@ -266,4 +266,7 @@ public interface IMessagesResources : ITranslationResources
 	/// English String: "You must verify your email on the {frontLink}Account Settings{endLink} page before you can send messages."
 	/// </summary>
 	string MessageVerifySenderEmail(string frontLink, string endLink);
+}
+
+
 }

@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Web;
 using System.Web.Script.Services;
 using System.Web.Services;
 using Roblox.Common;
+namespace Roblox.Platform.Thumbs {
+    /// <summary>
 
-namespace Roblox.Thumbs;
-
-/// <summary>
 /// Creates Asset thumbnails and provides Urls to the thumbnails
 /// This web service is coupled with AssetImage.js and the AssetImage control
 /// </summary>
@@ -52,3 +51,5 @@ public class Asset : WebService
 		return RequestThumbnail(assetId, assetVersionId, width, height, imageFormat, thumbnailFormatId, overrideModeration);
 	}
 }
+
+

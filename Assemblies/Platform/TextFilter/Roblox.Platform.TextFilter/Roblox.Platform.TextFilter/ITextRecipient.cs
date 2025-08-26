@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Wrapper for features relevant to the recipient of the message.
 /// </summary>
 public interface ITextRecipient
@@ -9,4 +9,7 @@ public interface ITextRecipient
 	/// Is the recipient under 13?
 	/// </summary>
 	bool IsUnder13 { get; }
+}
+
+
 }

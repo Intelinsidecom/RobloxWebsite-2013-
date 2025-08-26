@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameBadgesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -59,7 +59,7 @@ internal class GameBadgesResources_de_de : GameBadgesResources_en_us, IGameBadge
 	/// It is impossible for the user to accomplish this goal.
 	/// English String: "Impossible"
 	/// </summary>
-	public override string LabelRarityImpossible => "Unmöglich";
+	public override string LabelRarityImpossible => "UnmÃ¶glich";
 
 	/// <summary>
 	/// Key: "Label.RarityInsane"
@@ -73,7 +73,7 @@ internal class GameBadgesResources_de_de : GameBadgesResources_en_us, IGameBadge
 	/// It would be moderate for the user to accomplish this goal. It is neither easy nor hard.
 	/// English String: "Moderate"
 	/// </summary>
-	public override string LabelRarityModerate => "Mittelmäßig";
+	public override string LabelRarityModerate => "MittelmÃ¤ÃŸig";
 
 	/// <summary>
 	/// Key: "LabelRarity"
@@ -141,7 +141,7 @@ internal class GameBadgesResources_de_de : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityImpossible()
 	{
-		return "Unmöglich";
+		return "UnmÃ¶glich";
 	}
 
 	protected override string _GetTemplateForLabelRarityInsane()
@@ -151,7 +151,7 @@ internal class GameBadgesResources_de_de : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityModerate()
 	{
-		return "Mittelmäßig";
+		return "MittelmÃ¤ÃŸig";
 	}
 
 	protected override string _GetTemplateForLabelRarity()
@@ -173,4 +173,7 @@ internal class GameBadgesResources_de_de : GameBadgesResources_en_us, IGameBadge
 	{
 		return "Gestern gewonnen";
 	}
+}
+
+
 }

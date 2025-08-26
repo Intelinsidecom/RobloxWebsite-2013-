@@ -1,8 +1,7 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
+namespace Roblox.Platform.PremiumFeatures {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures;
-
-/// <summary>
 /// MembershipMigration states, DescriptionAttributes have to match values in RobloxPremiumFeatures table
 /// </summary>
 public enum MembershipMigrationState
@@ -29,4 +28,7 @@ public enum MembershipMigrationState
 	MessageSent = 90,
 	[Description("Completed")]
 	Completed = 100
+}
+
+
 }

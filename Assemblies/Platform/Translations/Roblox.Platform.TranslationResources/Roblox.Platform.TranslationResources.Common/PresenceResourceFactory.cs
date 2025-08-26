@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class PresenceResourceFactory
 
-internal static class PresenceResourceFactory
 {
 	public const string FullNamespace = "Common.Presence";
 
@@ -21,4 +21,7 @@ internal static class PresenceResourceFactory
 			_ => new PresenceResources_en_us(state), 
 		};
 	}
+}
+
+
 }

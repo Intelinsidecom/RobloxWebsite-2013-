@@ -1,8 +1,18 @@
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class BasicEventArgs
+namespace Roblox.EventStream.WebEvents
 {
-	public EventTarget Target { get; set; }
+    public class BasicEventArgs
 
-	public string ClientIp { get; set; }
+{
+    public EventTarget Target { get; set; }
+
+    public string ClientIp { get; set; }
 }
+
+
+}
+
+
+
+
+
+

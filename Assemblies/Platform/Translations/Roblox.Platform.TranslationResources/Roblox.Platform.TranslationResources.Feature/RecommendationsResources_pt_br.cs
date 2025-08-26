@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RecommendationsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -32,7 +32,7 @@ internal class RecommendationsResources_pt_br : RecommendationsResources_en_us, 
 	/// heading for inventory page recommendations section.
 	/// English String: "Recommendations"
 	/// </summary>
-	public override string HeadingRecommendationsTitle => "Recomendações";
+	public override string HeadingRecommendationsTitle => "RecomendaÃ§Ãµes";
 
 	/// <summary>
 	/// Key: "Heading.RecommendedItems"
@@ -51,7 +51,7 @@ internal class RecommendationsResources_pt_br : RecommendationsResources_en_us, 
 	/// Key: "Label.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "Grátis";
+	public override string LabelFree => "GrÃ¡tis";
 
 	/// <summary>
 	/// Key: "Label.NoReSellers"
@@ -63,7 +63,7 @@ internal class RecommendationsResources_pt_br : RecommendationsResources_en_us, 
 	/// Key: "Label.OffSale"
 	/// English String: "Off sale"
 	/// </summary>
-	public override string LabelOffSale => "Indisponível";
+	public override string LabelOffSale => "IndisponÃ­vel";
 
 	public RecommendationsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -87,7 +87,7 @@ internal class RecommendationsResources_pt_br : RecommendationsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingRecommendationsTitle()
 	{
-		return "Recomendações";
+		return "RecomendaÃ§Ãµes";
 	}
 
 	/// <summary>
@@ -146,7 +146,7 @@ internal class RecommendationsResources_pt_br : RecommendationsResources_en_us, 
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "Grátis";
+		return "GrÃ¡tis";
 	}
 
 	protected override string _GetTemplateForLabelNoReSellers()
@@ -156,6 +156,9 @@ internal class RecommendationsResources_pt_br : RecommendationsResources_en_us, 
 
 	protected override string _GetTemplateForLabelOffSale()
 	{
-		return "Indisponível";
+		return "IndisponÃ­vel";
 	}
+}
+
+
 }

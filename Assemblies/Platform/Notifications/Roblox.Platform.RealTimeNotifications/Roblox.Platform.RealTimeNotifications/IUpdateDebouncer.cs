@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    interface IUpdateDebouncer<T>
 
-namespace Roblox.RealTimeNotifications;
-
-public interface IUpdateDebouncer<T>
 {
 	void AddToDebouncedSet(T updateIdentifier);
 
@@ -11,4 +10,7 @@ public interface IUpdateDebouncer<T>
 	void ExecuteWithDebounce(T updateIdentifier, Action actionToExecute);
 
 	long GetNumberOfAttemptsToDebounce();
+}
+
+
 }

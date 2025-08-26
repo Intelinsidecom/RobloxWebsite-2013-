@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class GrantedBadgeListExpirationTaskDAL
 
-namespace Roblox.PremiumFeatures;
-
-public class GrantedBadgeListExpirationTaskDAL
 {
 	private long _ID;
 
@@ -200,4 +199,7 @@ public class GrantedBadgeListExpirationTaskDAL
 		queryParameters.Add(new SqlParameter("@DurationInMinutes", leaseDurationInMinutes));
 		return EntityHelper.GetDataEntityIDCollection<long>(new DbInfo(ConnectionString, "[dbo].[GrantedBadgeListExpirationTasks_LeaseTasks]", queryParameters));
 	}
+}
+
+
 }

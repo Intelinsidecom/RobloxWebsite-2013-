@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.EventStream {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream;
-
-/// <summary>
 /// Defines interface for streaming data.
 /// </summary>
 public interface IDataStreamer
@@ -12,4 +11,7 @@ public interface IDataStreamer
 	/// </summary>
 	/// <param name="dataList">Data list</param>
 	void StreamData(List<string> dataList);
+}
+
+
 }

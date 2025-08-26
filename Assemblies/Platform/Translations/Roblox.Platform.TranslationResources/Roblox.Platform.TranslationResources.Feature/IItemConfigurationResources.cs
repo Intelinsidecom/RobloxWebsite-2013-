@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IItemConfigurationResources : ITranslationResources
 
-public interface IItemConfigurationResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Description.AllowCopying"
@@ -486,4 +486,7 @@ public interface IItemConfigurationResources : ITranslationResources
 	/// English String: "Successfully reverted to version {versionNumber}"
 	/// </summary>
 	string MessageRevertSuccess(string versionNumber);
+}
+
+
 }

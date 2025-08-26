@@ -1,7 +1,6 @@
 using Roblox.DataV2.Core;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public interface IUsersClientCache
 {
 	void SaveUser(UserData userData);
@@ -30,3 +29,6 @@ public interface IUsersClientCache
 
 	void ClearDisplayNameHistory(long userId);
 }
+
+}
+

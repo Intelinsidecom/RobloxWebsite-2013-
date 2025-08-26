@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IChinaPaymentResources : ITranslationResources
 
-public interface IChinaPaymentResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Heading.Error"
@@ -19,4 +19,7 @@ public interface IChinaPaymentResources : ITranslationResources
 	/// English String: "Looks like your WeChat session is expired and we cannot process your request. Please log out and log in again."
 	/// </summary>
 	string MessageSessionExpiredError { get; }
+}
+
+
 }

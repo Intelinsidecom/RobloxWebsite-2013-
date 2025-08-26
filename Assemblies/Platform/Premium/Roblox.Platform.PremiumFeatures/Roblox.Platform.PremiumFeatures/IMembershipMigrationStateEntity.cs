@@ -1,13 +1,15 @@
-using System;
+﻿using System;
 using Roblox.Entities;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IMembershipMigrationStateEntity : IUpdateableEntity<int>, IEntity<int>
 
-namespace Roblox.PremiumFeatures;
-
-public interface IMembershipMigrationStateEntity : IUpdateableEntity<int>, IEntity<int>
 {
 	string Value { get; set; }
 
 	new DateTime Created { get; set; }
 
 	new DateTime Updated { get; set; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notificationspublic {
+    interface INotificationStreamResources : ITranslationResources
 
-public interface INotificationStreamResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Accept"
@@ -201,4 +201,7 @@ public interface INotificationStreamResources : ITranslationResources
 	/// English String: "Unfollowed {gameName}"
 	/// </summary>
 	string MessageUnfollowedGame(string gameName);
+}
+
+
 }

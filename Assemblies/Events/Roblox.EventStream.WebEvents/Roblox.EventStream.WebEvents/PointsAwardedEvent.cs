@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using Roblox.Common;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// An event fired whenever points are awarded in a game.
 /// </summary>
 public class PointsAwardedEvent : EventBase
@@ -12,10 +12,10 @@ public class PointsAwardedEvent : EventBase
 	/// <summary>
 	/// Constructs a new <see cref="T:Roblox.Platform.EventStream.WebEvents.PointsAwardedEvent" />.
 	/// </summary>
-	/// <param name="eventStreamer">An <see cref="T:Roblox.Platform.EventStream.IEventStreamer" />.</param>
+	/// <param name="IEventStreamer">An <see cref="T:Roblox.Platform.EventStream.IEventStreamer" />.</param>
 	/// <param name="eventArgs">The arguments describing the event.</param>
-	public PointsAwardedEvent(IEventStreamer eventStreamer, PointsAwardedEventArgs eventArgs)
-		: base(eventStreamer, "pointsAwarded", eventArgs)
+	public PointsAwardedEvent(IEventStreamer IEventStreamer, PointsAwardedEventArgs eventArgs)
+		: base(IEventStreamer, "pointsAwarded", eventArgs)
 	{
 		AddEventArg("uid", eventArgs.RecipientUserId.ToString());
 		AddEventArg("pid", eventArgs.PlaceId.ToString());
@@ -24,3 +24,12 @@ public class PointsAwardedEvent : EventBase
 		AddEventArg("utcTime", eventArgs.EventTime.ToUnixEpochTime().TotalSeconds.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PrivateServersResources_en_us : TranslationResourcesBase, IPrivateServersResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PrivateServersResources_en_us : TranslationResourcesBase, IPrivateServersResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -393,4 +392,7 @@ internal class PrivateServersResources_en_us : TranslationResourcesBase, IPrivat
 	{
 		return "This VIP Server link is no longer valid.";
 	}
+}
+
+
 }

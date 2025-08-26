@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Entities;
+namespace Roblox.Localization.Auditinternal {
+    interface IAccountLocalesAuditEntryEntity : IEntity<long>
 
-namespace Roblox.Platform.Localization.Audit;
-
-internal interface IAccountLocalesAuditEntryEntity : IEntity<long>
 {
 	Guid PublicId { get; }
 
@@ -18,4 +17,7 @@ internal interface IAccountLocalesAuditEntryEntity : IEntity<long>
 	DateTime AuditCreated { get; }
 
 	DateTime AuditUpdated { get; }
+}
+
+
 }

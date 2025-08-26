@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Platform.Moderation.Properties;
+namespace Roblox.Moderationpublic {
+    class WatchDogWhitelistedAssetHashDAL
 
-namespace Roblox.Platform.Moderation;
-
-public class WatchDogWhitelistedAssetHashDAL
 {
 	private long _ID;
 
@@ -133,4 +132,7 @@ public class WatchDogWhitelistedAssetHashDAL
 		};
 		return EntityHelper.GetEntityDAL(new DbInfo(_DbConnectionString, "WatchDogWhitelistedAssetHashes_GetWatchDogWhitelistedAssetHashByAssetHashID", queryParameters), BuildDAL);
 	}
+}
+
+
 }

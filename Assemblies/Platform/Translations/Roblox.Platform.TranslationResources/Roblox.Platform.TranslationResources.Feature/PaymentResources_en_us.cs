@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PaymentResources_en_us : TranslationResourcesBase, IPaymentResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PaymentResources_en_us : TranslationResourcesBase, IPaymentResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -91,4 +90,7 @@ internal class PaymentResources_en_us : TranslationResourcesBase, IPaymentResour
 	{
 		return "Make sure you have your parents permission before using their credit cards. Card owners may be contacted for confirmation. Using a card without permission will result in your account being deleted.";
 	}
+}
+
+
 }

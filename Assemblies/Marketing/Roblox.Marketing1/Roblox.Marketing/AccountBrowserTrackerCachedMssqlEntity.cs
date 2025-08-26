@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
 using Roblox.Marketing.BLL;
+namespace Roblox.Marketing {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Marketing;
-
-[ExcludeFromCodeCoverage]
 internal class AccountBrowserTrackerCachedMssqlEntity : IAccountBrowserTrackerEntity, IUpdateableEntity<long>, IEntity<long>
 {
 	public long Id { get; set; }
@@ -35,4 +34,7 @@ internal class AccountBrowserTrackerCachedMssqlEntity : IAccountBrowserTrackerEn
 	{
 		(AccountBrowserTracker.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

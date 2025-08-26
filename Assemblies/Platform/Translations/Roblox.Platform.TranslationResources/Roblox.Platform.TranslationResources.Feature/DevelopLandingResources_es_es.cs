@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DevelopLandingResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -38,83 +38,83 @@ internal class DevelopLandingResources_es_es : DevelopLandingResources_en_us, ID
 	/// description
 	/// English String: "Creators like you are getting paid for what they love to do. Our top developers are earning over $2M a year by providing in-game purchases"
 	/// </summary>
-	public override string DescriptionEarnSeriousCash => "Creadores como tú ganan dinero por hacer algo que les apasiona. Nuestros mejores desarrolladores reciben ingresos de más de 2 millones de dólares al año por proporcionar compras dentro de la aplicación.";
+	public override string DescriptionEarnSeriousCash => "Creadores como tÃº ganan dinero por hacer algo que les apasiona. Nuestros mejores desarrolladores reciben ingresos de mÃ¡s de 2 millones de dÃ³lares al aÃ±o por proporcionar compras dentro de la aplicaciÃ³n.";
 
 	/// <summary>
 	/// Key: "Description.FreeImmersiveCreationEngine"
 	/// subtext
 	/// English String: "With our FREE and immersive creation engine"
 	/// </summary>
-	public override string DescriptionFreeImmersiveCreationEngine => "Con nuestro motor de creación GRATUITO e inmersivo";
+	public override string DescriptionFreeImmersiveCreationEngine => "Con nuestro motor de creaciÃ³n GRATUITO e inmersivo";
 
 	/// <summary>
 	/// Key: "Description.MakeAnything"
 	/// text paragraph on page
 	/// English String: "Roblox Studio lets you create anything and release with one click to smartphones, tablets, desktops, consoles, and virtual reality devices"
 	/// </summary>
-	public override string DescriptionMakeAnything => "Roblox te permite crear cualquier cosa y publicarla con un solo clic en teléfonos inteligentes, tablets, ordenadores de sobremesa y dispositivos de realidad virtual.";
+	public override string DescriptionMakeAnything => "Roblox te permite crear cualquier cosa y publicarla con un solo clic en telÃ©fonos inteligentes, tablets, ordenadores de sobremesa y dispositivos de realidad virtual.";
 
 	/// <summary>
 	/// Key: "Description.ReachMillionsPlayers"
 	/// description
 	/// English String: "Connect with a massive audience by tapping into an incredibly enthusiastic and international community of over 50 million monthly players"
 	/// </summary>
-	public override string DescriptionReachMillionsPlayers => "Conéctate con una audiencia masiva, accediendo a una apasionada comunidad internacional de más de 50 millones de jugadores mensuales.";
+	public override string DescriptionReachMillionsPlayers => "ConÃ©ctate con una audiencia masiva, accediendo a una apasionada comunidad internacional de mÃ¡s de 50 millones de jugadores mensuales.";
 
 	/// <summary>
 	/// Key: "Description.RobloxDevHub"
 	/// English String: "The Developer Hub is your one-stop shop for publishing on Roblox. Learn from a wide set of tutorials, connect with other developers, get platform updates, browse our API references, and much more."
 	/// </summary>
-	public override string DescriptionRobloxDevHub => "El centro para desarrolladores es un sitio integral para la publicación en Roblox. Ahí puedes encontrar tutoriales; conectarte con otros programadores; obtener actualizaciones de la plataforma; navegar por nuestras referencias de API y mucho más.";
+	public override string DescriptionRobloxDevHub => "El centro para desarrolladores es un sitio integral para la publicaciÃ³n en Roblox. AhÃ­ puedes encontrar tutoriales; conectarte con otros programadores; obtener actualizaciones de la plataforma; navegar por nuestras referencias de API y mucho mÃ¡s.";
 
 	/// <summary>
 	/// Key: "Description.RobloxWiki"
 	/// description
 	/// English String: "The Roblox Wiki is the ultimate resource for documentation, tutorials, and samples which will help you learn to make games with Roblox Studio"
 	/// </summary>
-	public override string DescriptionRobloxWiki => "La wiki de Roblox es el mejor recurso para encontrar documentación, tutoriales y muestras con las que aprenderás a desarrollar juegos en Roblox Studio";
+	public override string DescriptionRobloxWiki => "La wiki de Roblox es el mejor recurso para encontrar documentaciÃ³n, tutoriales y muestras con las que aprenderÃ¡s a desarrollar juegos en Roblox Studio";
 
 	/// <summary>
 	/// Key: "Description.TestimonialAlexBalfanz"
 	/// testimonial
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
-	public override string DescriptionTestimonialAlexBalfanz => "Fue muy fácil empezar en Roblox. Se puede convertir en una carrera profesional porque la plataforma es muy completa y el equipo que la respalda proporciona increíbles recursos a los desarrolladores.";
+	public override string DescriptionTestimonialAlexBalfanz => "Fue muy fÃ¡cil empezar en Roblox. Se puede convertir en una carrera profesional porque la plataforma es muy completa y el equipo que la respalda proporciona increÃ­bles recursos a los desarrolladores.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialAndrewBereza"
 	/// testimonial text
 	/// English String: "Roblox allows me to focus on my game development and potential future career without having to worry about the financial hardships of being a college student."
 	/// </summary>
-	public override string DescriptionTestimonialAndrewBereza => "Gracias a Roblox me puedo enfocar en crear mis propios juegos y hacer una carrera como desarrollador, sin tener las dificultades económicas típicas de un estudiante universitario.";
+	public override string DescriptionTestimonialAndrewBereza => "Gracias a Roblox me puedo enfocar en crear mis propios juegos y hacer una carrera como desarrollador, sin tener las dificultades econÃ³micas tÃ­picas de un estudiante universitario.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialJacksonMunsell"
 	/// testimonial
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
-	public override string DescriptionTestimonialJacksonMunsell => "Me apasiona crear juegos en Roblox por su aspecto social. Roblox lleva la socialización de plataformas como Facebook a otro nivel, gracias a los juegos y a la creatividad de la comunidad.";
+	public override string DescriptionTestimonialJacksonMunsell => "Me apasiona crear juegos en Roblox por su aspecto social. Roblox lleva la socializaciÃ³n de plataformas como Facebook a otro nivel, gracias a los juegos y a la creatividad de la comunidad.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialOne"
 	/// testimonial content
 	/// English String: "Roblox allows me to focus on my game development and potential future career without having to worry about the financial hardships of being a college student."
 	/// </summary>
-	public override string DescriptionTestimonialOne => "Gracias a Roblox me puedo enfocar en crear mis propios juegos y hacer una carrera como desarrollador, sin tener las dificultades económicas típicas de un estudiante universitario.";
+	public override string DescriptionTestimonialOne => "Gracias a Roblox me puedo enfocar en crear mis propios juegos y hacer una carrera como desarrollador, sin tener las dificultades econÃ³micas tÃ­picas de un estudiante universitario.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialThree"
 	/// testimonial text
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
-	public override string DescriptionTestimonialThree => "Fue muy fácil empezar en Roblox. Se puede convertir en una carrera profesional porque la plataforma es muy completa y el equipo que la respalda proporciona increíbles recursos a los desarrolladores.";
+	public override string DescriptionTestimonialThree => "Fue muy fÃ¡cil empezar en Roblox. Se puede convertir en una carrera profesional porque la plataforma es muy completa y el equipo que la respalda proporciona increÃ­bles recursos a los desarrolladores.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialTwo"
 	/// description
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
-	public override string DescriptionTestimonialTwo => "Me apasiona crear juegos en Roblox por su aspecto social. Roblox lleva la socialización de plataformas como Facebook a otro nivel, gracias a los juegos y a la creatividad de la comunidad.";
+	public override string DescriptionTestimonialTwo => "Me apasiona crear juegos en Roblox por su aspecto social. Roblox lleva la socializaciÃ³n de plataformas como Facebook a otro nivel, gracias a los juegos y a la creatividad de la comunidad.";
 
 	/// <summary>
 	/// Key: "Heading.EarnSeriousCash"
@@ -169,7 +169,7 @@ internal class DevelopLandingResources_es_es : DevelopLandingResources_en_us, ID
 	/// heading
 	/// English String: "Roblox Studio is FREE! Try it out today!"
 	/// </summary>
-	public override string HeadingTryFreeRobloxStudioToday => "¡Roblox Studio es GRATIS! ¡Pruébalo ya!";
+	public override string HeadingTryFreeRobloxStudioToday => "Â¡Roblox Studio es GRATIS! Â¡PruÃ©balo ya!";
 
 	/// <summary>
 	/// Key: "Heading.WhatCreatorsSaying"
@@ -211,7 +211,7 @@ internal class DevelopLandingResources_es_es : DevelopLandingResources_en_us, ID
 	/// label
 	/// English String: "Roblox Studio is available on Windows and Mac"
 	/// </summary>
-	public override string LabelRobloxStudioOnWindowsAndMac => "Roblox Studio está disponible en Windows y Mac.";
+	public override string LabelRobloxStudioOnWindowsAndMac => "Roblox Studio estÃ¡ disponible en Windows y Mac.";
 
 	/// <summary>
 	/// Key: "Label.TestimonialOneName"
@@ -261,62 +261,62 @@ internal class DevelopLandingResources_es_es : DevelopLandingResources_en_us, ID
 
 	protected override string _GetTemplateForDescriptionEarnSeriousCash()
 	{
-		return "Creadores como tú ganan dinero por hacer algo que les apasiona. Nuestros mejores desarrolladores reciben ingresos de más de 2 millones de dólares al año por proporcionar compras dentro de la aplicación.";
+		return "Creadores como tÃº ganan dinero por hacer algo que les apasiona. Nuestros mejores desarrolladores reciben ingresos de mÃ¡s de 2 millones de dÃ³lares al aÃ±o por proporcionar compras dentro de la aplicaciÃ³n.";
 	}
 
 	protected override string _GetTemplateForDescriptionFreeImmersiveCreationEngine()
 	{
-		return "Con nuestro motor de creación GRATUITO e inmersivo";
+		return "Con nuestro motor de creaciÃ³n GRATUITO e inmersivo";
 	}
 
 	protected override string _GetTemplateForDescriptionMakeAnything()
 	{
-		return "Roblox te permite crear cualquier cosa y publicarla con un solo clic en teléfonos inteligentes, tablets, ordenadores de sobremesa y dispositivos de realidad virtual.";
+		return "Roblox te permite crear cualquier cosa y publicarla con un solo clic en telÃ©fonos inteligentes, tablets, ordenadores de sobremesa y dispositivos de realidad virtual.";
 	}
 
 	protected override string _GetTemplateForDescriptionReachMillionsPlayers()
 	{
-		return "Conéctate con una audiencia masiva, accediendo a una apasionada comunidad internacional de más de 50 millones de jugadores mensuales.";
+		return "ConÃ©ctate con una audiencia masiva, accediendo a una apasionada comunidad internacional de mÃ¡s de 50 millones de jugadores mensuales.";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxDevHub()
 	{
-		return "El centro para desarrolladores es un sitio integral para la publicación en Roblox. Ahí puedes encontrar tutoriales; conectarte con otros programadores; obtener actualizaciones de la plataforma; navegar por nuestras referencias de API y mucho más.";
+		return "El centro para desarrolladores es un sitio integral para la publicaciÃ³n en Roblox. AhÃ­ puedes encontrar tutoriales; conectarte con otros programadores; obtener actualizaciones de la plataforma; navegar por nuestras referencias de API y mucho mÃ¡s.";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxWiki()
 	{
-		return "La wiki de Roblox es el mejor recurso para encontrar documentación, tutoriales y muestras con las que aprenderás a desarrollar juegos en Roblox Studio";
+		return "La wiki de Roblox es el mejor recurso para encontrar documentaciÃ³n, tutoriales y muestras con las que aprenderÃ¡s a desarrollar juegos en Roblox Studio";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialAlexBalfanz()
 	{
-		return "Fue muy fácil empezar en Roblox. Se puede convertir en una carrera profesional porque la plataforma es muy completa y el equipo que la respalda proporciona increíbles recursos a los desarrolladores.";
+		return "Fue muy fÃ¡cil empezar en Roblox. Se puede convertir en una carrera profesional porque la plataforma es muy completa y el equipo que la respalda proporciona increÃ­bles recursos a los desarrolladores.";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialAndrewBereza()
 	{
-		return "Gracias a Roblox me puedo enfocar en crear mis propios juegos y hacer una carrera como desarrollador, sin tener las dificultades económicas típicas de un estudiante universitario.";
+		return "Gracias a Roblox me puedo enfocar en crear mis propios juegos y hacer una carrera como desarrollador, sin tener las dificultades econÃ³micas tÃ­picas de un estudiante universitario.";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialJacksonMunsell()
 	{
-		return "Me apasiona crear juegos en Roblox por su aspecto social. Roblox lleva la socialización de plataformas como Facebook a otro nivel, gracias a los juegos y a la creatividad de la comunidad.";
+		return "Me apasiona crear juegos en Roblox por su aspecto social. Roblox lleva la socializaciÃ³n de plataformas como Facebook a otro nivel, gracias a los juegos y a la creatividad de la comunidad.";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialOne()
 	{
-		return "Gracias a Roblox me puedo enfocar en crear mis propios juegos y hacer una carrera como desarrollador, sin tener las dificultades económicas típicas de un estudiante universitario.";
+		return "Gracias a Roblox me puedo enfocar en crear mis propios juegos y hacer una carrera como desarrollador, sin tener las dificultades econÃ³micas tÃ­picas de un estudiante universitario.";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialThree()
 	{
-		return "Fue muy fácil empezar en Roblox. Se puede convertir en una carrera profesional porque la plataforma es muy completa y el equipo que la respalda proporciona increíbles recursos a los desarrolladores.";
+		return "Fue muy fÃ¡cil empezar en Roblox. Se puede convertir en una carrera profesional porque la plataforma es muy completa y el equipo que la respalda proporciona increÃ­bles recursos a los desarrolladores.";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialTwo()
 	{
-		return "Me apasiona crear juegos en Roblox por su aspecto social. Roblox lleva la socialización de plataformas como Facebook a otro nivel, gracias a los juegos y a la creatividad de la comunidad.";
+		return "Me apasiona crear juegos en Roblox por su aspecto social. Roblox lleva la socializaciÃ³n de plataformas como Facebook a otro nivel, gracias a los juegos y a la creatividad de la comunidad.";
 	}
 
 	protected override string _GetTemplateForHeadingEarnSeriousCash()
@@ -356,7 +356,7 @@ internal class DevelopLandingResources_es_es : DevelopLandingResources_en_us, ID
 
 	protected override string _GetTemplateForHeadingTryFreeRobloxStudioToday()
 	{
-		return "¡Roblox Studio es GRATIS! ¡Pruébalo ya!";
+		return "Â¡Roblox Studio es GRATIS! Â¡PruÃ©balo ya!";
 	}
 
 	protected override string _GetTemplateForHeadingWhatCreatorsSaying()
@@ -386,7 +386,7 @@ internal class DevelopLandingResources_es_es : DevelopLandingResources_en_us, ID
 
 	protected override string _GetTemplateForLabelRobloxStudioOnWindowsAndMac()
 	{
-		return "Roblox Studio está disponible en Windows y Mac.";
+		return "Roblox Studio estÃ¡ disponible en Windows y Mac.";
 	}
 
 	protected override string _GetTemplateForLabelTestimonialOneName()
@@ -403,4 +403,7 @@ internal class DevelopLandingResources_es_es : DevelopLandingResources_en_us, ID
 	{
 		return "Jackson Munsell";
 	}
+}
+
+
 }

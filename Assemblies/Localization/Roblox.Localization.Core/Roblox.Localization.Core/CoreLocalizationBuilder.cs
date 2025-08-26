@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
 using Roblox.Platform.Core;
+namespace Roblox.Localization.Coreinternal {
+    class CoreLocalizationBuilder : ICoreLocalizationBuilder
 
-namespace Roblox.Platform.Localization.Core;
-
-internal class CoreLocalizationBuilder : ICoreLocalizationBuilder
 {
 	private static readonly List<string> _TraditionalChineseLanguageIndicators = new List<string> { "zh_hant", "zh_tw", "zh_hk" };
 
@@ -125,4 +124,7 @@ internal class CoreLocalizationBuilder : ICoreLocalizationBuilder
 		}
 		return true;
 	}
+}
+
+
 }

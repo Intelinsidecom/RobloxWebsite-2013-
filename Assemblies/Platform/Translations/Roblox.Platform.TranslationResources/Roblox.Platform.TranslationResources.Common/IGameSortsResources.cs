@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IGameSortsResources : ITranslationResources
 
-public interface IGameSortsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.Adventure"
@@ -229,4 +229,7 @@ public interface IGameSortsResources : ITranslationResources
 	/// English String: "Popular in {CountryName}"
 	/// </summary>
 	string LabelPopularInCountry(string CountryName);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -373,4 +373,7 @@ internal class ControlsResources_id_id : ControlsResources_en_us, IControlsResou
 	{
 		return "Tahun";
 	}
+}
+
+
 }

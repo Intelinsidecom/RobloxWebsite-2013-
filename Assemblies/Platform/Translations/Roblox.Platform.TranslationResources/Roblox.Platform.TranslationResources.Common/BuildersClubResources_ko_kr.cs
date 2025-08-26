@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,21 +18,21 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 	/// membership type name
 	/// English String: "Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembership => "Builders Club 멤버십";
+	public override string LabelBuildersClubMembership => "Builders Club ë©¤ë²„ì‹­";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipOutrageous"
 	/// membership type
 	/// English String: "Outrageous Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipOutrageous => "Outrageous Builders Club 멤버십";
+	public override string LabelBuildersClubMembershipOutrageous => "Outrageous Builders Club ë©¤ë²„ì‹­";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipTurbo"
 	/// membership type
 	/// English String: "Turbo Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipTurbo => "Turbo Builders Club 멤버십";
+	public override string LabelBuildersClubMembershipTurbo => "Turbo Builders Club ë©¤ë²„ì‹­";
 
 	/// <summary>
 	/// Key: "Label.ClassicBuildersClub"
@@ -46,28 +46,28 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 	/// This signifies a lifetime subscription to builders club or some other product.
 	/// English String: "Lifetime"
 	/// </summary>
-	public override string LabelLifetime => "평생";
+	public override string LabelLifetime => "í‰ìƒ";
 
 	/// <summary>
 	/// Key: "Label.Membership"
 	/// use Feature.Support namespace instead
 	/// English String: "Membership"
 	/// </summary>
-	public override string LabelMembership => "멤버십";
+	public override string LabelMembership => "ë©¤ë²„ì‹­";
 
 	/// <summary>
 	/// Key: "Label.NeverUppercase"
 	/// label - if language supports capitalization, please keep it uppercase
 	/// English String: "NEVER"
 	/// </summary>
-	public override string LabelNeverUppercase => "절대 안 함";
+	public override string LabelNeverUppercase => "ì ˆëŒ€ ì•ˆ í•¨";
 
 	/// <summary>
 	/// Key: "Label.No"
 	/// label
 	/// English String: "No"
 	/// </summary>
-	public override string LabelNo => "아니요";
+	public override string LabelNo => "ì•„ë‹ˆìš”";
 
 	/// <summary>
 	/// Key: "Label.OutrageousBuildersClub"
@@ -88,7 +88,7 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 	/// Builders club membership type
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelPlanFree => "무료";
+	public override string LabelPlanFree => "ë¬´ë£Œ";
 
 	/// <summary>
 	/// Key: "Label.PlanOutrageous"
@@ -123,7 +123,7 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 	/// label
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelYes => "예";
+	public override string LabelYes => "ì˜ˆ";
 
 	public BuildersClubResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -137,17 +137,17 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelBuildersClubMembership()
 	{
-		return "Builders Club 멤버십";
+		return "Builders Club ë©¤ë²„ì‹­";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipOutrageous()
 	{
-		return "Outrageous Builders Club 멤버십";
+		return "Outrageous Builders Club ë©¤ë²„ì‹­";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipTurbo()
 	{
-		return "Turbo Builders Club 멤버십";
+		return "Turbo Builders Club ë©¤ë²„ì‹­";
 	}
 
 	protected override string _GetTemplateForLabelClassicBuildersClub()
@@ -157,22 +157,22 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelLifetime()
 	{
-		return "평생";
+		return "í‰ìƒ";
 	}
 
 	protected override string _GetTemplateForLabelMembership()
 	{
-		return "멤버십";
+		return "ë©¤ë²„ì‹­";
 	}
 
 	protected override string _GetTemplateForLabelNeverUppercase()
 	{
-		return "절대 안 함";
+		return "ì ˆëŒ€ ì•ˆ í•¨";
 	}
 
 	protected override string _GetTemplateForLabelNo()
 	{
-		return "아니요";
+		return "ì•„ë‹ˆìš”";
 	}
 
 	protected override string _GetTemplateForLabelOutrageousBuildersClub()
@@ -187,7 +187,7 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelPlanFree()
 	{
-		return "무료";
+		return "ë¬´ë£Œ";
 	}
 
 	protected override string _GetTemplateForLabelPlanOutrageous()
@@ -212,6 +212,8 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelYes()
 	{
-		return "예";
+		return "ì˜ˆ";
 	}
 }
+
+

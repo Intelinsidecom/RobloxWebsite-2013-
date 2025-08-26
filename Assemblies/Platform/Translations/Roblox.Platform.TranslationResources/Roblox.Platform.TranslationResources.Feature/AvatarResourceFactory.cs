@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class AvatarResourceFactory
 
-internal static class AvatarResourceFactory
 {
 	public const string FullNamespace = "Feature.Avatar";
 
@@ -21,4 +21,7 @@ internal static class AvatarResourceFactory
 			_ => new AvatarResources_en_us(state), 
 		};
 	}
+}
+
+
 }

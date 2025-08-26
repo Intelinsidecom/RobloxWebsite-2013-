@@ -1,11 +1,10 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountspublic {
+    class AccountLocalesAuditCompositeEntryAccessorFactory
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public class AccountLocalesAuditCompositeEntryAccessorFactory
 {
 	private readonly IUserFactory _UserFactory;
 
@@ -29,4 +28,7 @@ public class AccountLocalesAuditCompositeEntryAccessorFactory
 	{
 		return new AccountLocalesAuditCompositeEntryAccessor(new AccountLocalesAuditMetadataEntityFactory(_MetadataTypeConverter, _ChangeAgentTypeConverter), new AccountLocalesAuditEntryEntityFactory(), new AccountLocaleEntityFactory(), new Settings(), _AuditCompositeEntryFactory, _MetadataTypeConverter);
 	}
+}
+
+
 }

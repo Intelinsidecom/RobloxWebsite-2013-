@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notificationsinternal {
+    class NotificationStreamResources_en_us : TranslationResourcesBase, INotificationStreamResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Notifications;
-
-internal class NotificationStreamResources_en_us : TranslationResourcesBase, INotificationStreamResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -647,4 +646,7 @@ internal class NotificationStreamResources_en_us : TranslationResourcesBase, INo
 	{
 		return "You received {numberOfMessagesText} {numberOfMessages, plural, =1 {message} other {messages}}";
 	}
+}
+
+
 }

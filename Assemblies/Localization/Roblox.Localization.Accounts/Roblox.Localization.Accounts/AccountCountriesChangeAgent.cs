@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accountsinternal {
+    class AccountCountriesChangeAgent : IAccountCountriesChangeAgent
 
-internal class AccountCountriesChangeAgent : IAccountCountriesChangeAgent
 {
 	public AccountCountriesChangeAgentType ChangeAgentType { get; }
 
@@ -11,4 +11,7 @@ internal class AccountCountriesChangeAgent : IAccountCountriesChangeAgent
 		ChangeAgentType = changeAgentType;
 		ChangeAgentTargetId = changeAgentTargetId;
 	}
+}
+
+
 }

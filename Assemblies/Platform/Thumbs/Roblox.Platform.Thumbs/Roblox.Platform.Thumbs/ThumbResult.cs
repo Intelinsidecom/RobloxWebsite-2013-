@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Thumbnails.Client;
+namespace Roblox.Platform.Thumbspublic {
+    class ThumbResult
 
-namespace Roblox.Thumbs;
-
-public class ThumbResult
 {
 	public bool final;
 
@@ -36,4 +35,7 @@ public class ThumbResult
 	{
 		return domainFactories.ThumbnailRepository.GetThumbnailUrl(hash, secure);
 	}
+}
+
+
 }

@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class FunCaptchaEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class FunCaptchaEvent : WebEventBase
 {
 	private const string _Name = "funCaptcha";
 
@@ -43,3 +43,12 @@ public class FunCaptchaEvent : WebEventBase
 		AddEventArg("verificationBlocked", args.VerificationBlocked.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

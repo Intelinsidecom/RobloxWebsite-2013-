@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class PageLoadEventArgs : WebEventArgs
 
-public class PageLoadEventArgs : WebEventArgs
 {
 	public string PageUrl { get; set; }
 
@@ -8,3 +9,12 @@ public class PageLoadEventArgs : WebEventArgs
 
 	public string EffectiveLocale { get; set; }
 }
+
+
+}
+
+
+
+
+
+

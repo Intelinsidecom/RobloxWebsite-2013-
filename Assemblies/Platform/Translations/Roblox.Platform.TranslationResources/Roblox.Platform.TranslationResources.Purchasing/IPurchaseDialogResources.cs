@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasingpublic {
+    interface IPurchaseDialogResources : ITranslationResources
 
-public interface IPurchaseDialogResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.BuyAccess"
@@ -229,4 +229,7 @@ public interface IPurchaseDialogResources : ITranslationResources
 	/// English String: "You have successfully rented access to the {assetName} {assetType} from {seller} for {robux}."
 	/// </summary>
 	string MessageSuccessfullyRentedAccess(string assetName, string assetType, string seller, string robux);
+}
+
+
 }

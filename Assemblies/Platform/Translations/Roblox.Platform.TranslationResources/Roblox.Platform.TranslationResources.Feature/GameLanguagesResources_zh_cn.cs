@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLanguagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,67 +10,67 @@ internal class GameLanguagesResources_zh_cn : GameLanguagesResources_en_us, IGam
 	/// Key: "Action.AddLanguage"
 	/// English String: "Add Language"
 	/// </summary>
-	public override string ActionAddLanguage => "添加语言";
+	public override string ActionAddLanguage => "æ·»åŠ è¯­è¨€";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "删除";
+	public override string ActionDelete => "åˆ é™¤";
 
 	/// <summary>
 	/// Key: "Action.ManageTranslations"
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string ActionManageTranslations => "管理翻译";
+	public override string ActionManageTranslations => "ç®¡ç†ç¿»è¯‘";
 
 	/// <summary>
 	/// Key: "Description.NoLanguages"
 	/// English String: "Please add languages you want your game to support."
 	/// </summary>
-	public override string DescriptionNoLanguages => "请添加你希望游戏支持的语言。";
+	public override string DescriptionNoLanguages => "è¯·æ·»åŠ ä½ å¸Œæœ›æ¸¸æˆæ”¯æŒçš„è¯­è¨€ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.DeleteLanguage"
 	/// English String: "Delete Language"
 	/// </summary>
-	public override string HeadingDeleteLanguage => "删除语言";
+	public override string HeadingDeleteLanguage => "åˆ é™¤è¯­è¨€";
 
 	/// <summary>
 	/// Key: "Heading.SupportedLanguages"
 	/// English String: "Supported Languages"
 	/// </summary>
-	public override string HeadingSupportedLanguages => "支持语言";
+	public override string HeadingSupportedLanguages => "æ”¯æŒè¯­è¨€";
 
 	/// <summary>
 	/// Key: "Heading.TranslatedLanguages"
 	/// English String: "Translated Languages"
 	/// </summary>
-	public override string HeadingTranslatedLanguages => "已翻译语言";
+	public override string HeadingTranslatedLanguages => "å·²ç¿»è¯‘è¯­è¨€";
 
 	/// <summary>
 	/// Key: "Label.Languages"
 	/// English String: "Languages"
 	/// </summary>
-	public override string LabelLanguages => "语言";
+	public override string LabelLanguages => "è¯­è¨€";
 
 	/// <summary>
 	/// Key: "Label.SelectLanguage"
 	/// English String: "Select Language"
 	/// </summary>
-	public override string LabelSelectLanguage => "选择语言";
+	public override string LabelSelectLanguage => "é€‰æ‹©è¯­è¨€";
 
 	/// <summary>
 	/// Key: "Message.DeleteLanguageWarning"
 	/// English String: "All translations for this language will be deleted. This action is irreversible."
 	/// </summary>
-	public override string MessageDeleteLanguageWarning => "此语言的所有翻译将被删除。此操作不可撤销。";
+	public override string MessageDeleteLanguageWarning => "æ­¤è¯­è¨€çš„æ‰€æœ‰ç¿»è¯‘å°†è¢«åˆ é™¤ã€‚æ­¤æ“ä½œä¸å¯æ’¤é”€ã€‚";
 
 	public GameLanguagesResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -79,56 +79,59 @@ internal class GameLanguagesResources_zh_cn : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForActionAddLanguage()
 	{
-		return "添加语言";
+		return "æ·»åŠ è¯­è¨€";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "删除";
+		return "åˆ é™¤";
 	}
 
 	protected override string _GetTemplateForActionManageTranslations()
 	{
-		return "管理翻译";
+		return "ç®¡ç†ç¿»è¯‘";
 	}
 
 	protected override string _GetTemplateForDescriptionNoLanguages()
 	{
-		return "请添加你希望游戏支持的语言。";
+		return "è¯·æ·»åŠ ä½ å¸Œæœ›æ¸¸æˆæ”¯æŒçš„è¯­è¨€ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingDeleteLanguage()
 	{
-		return "删除语言";
+		return "åˆ é™¤è¯­è¨€";
 	}
 
 	protected override string _GetTemplateForHeadingSupportedLanguages()
 	{
-		return "支持语言";
+		return "æ”¯æŒè¯­è¨€";
 	}
 
 	protected override string _GetTemplateForHeadingTranslatedLanguages()
 	{
-		return "已翻译语言";
+		return "å·²ç¿»è¯‘è¯­è¨€";
 	}
 
 	protected override string _GetTemplateForLabelLanguages()
 	{
-		return "语言";
+		return "è¯­è¨€";
 	}
 
 	protected override string _GetTemplateForLabelSelectLanguage()
 	{
-		return "选择语言";
+		return "é€‰æ‹©è¯­è¨€";
 	}
 
 	protected override string _GetTemplateForMessageDeleteLanguageWarning()
 	{
-		return "此语言的所有翻译将被删除。此操作不可撤销。";
+		return "æ­¤è¯­è¨€çš„æ‰€æœ‰ç¿»è¯‘å°†è¢«åˆ é™¤ã€‚æ­¤æ“ä½œä¸å¯æ’¤é”€ã€‚";
 	}
+}
+
+
 }

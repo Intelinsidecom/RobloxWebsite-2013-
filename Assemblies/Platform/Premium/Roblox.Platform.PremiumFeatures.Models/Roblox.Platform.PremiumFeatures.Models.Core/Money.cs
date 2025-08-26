@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models.Core {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models.Core;
-
-/// <summary>
 /// Represents a monetary value.
 /// </summary>
 [DataContract]
@@ -26,4 +25,7 @@ public struct Money
 	/// </summary>
 	[DataMember(Name = "currency")]
 	public Currency Currency;
+}
+
+
 }

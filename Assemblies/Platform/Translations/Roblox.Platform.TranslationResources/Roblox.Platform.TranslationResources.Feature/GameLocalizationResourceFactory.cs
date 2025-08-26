@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GameLocalizationResourceFactory
 
-internal static class GameLocalizationResourceFactory
 {
 	public const string FullNamespace = "Feature.GameLocalization";
 
@@ -21,4 +21,7 @@ internal static class GameLocalizationResourceFactory
 			_ => new GameLocalizationResources_en_us(state), 
 		};
 	}
+}
+
+
 }

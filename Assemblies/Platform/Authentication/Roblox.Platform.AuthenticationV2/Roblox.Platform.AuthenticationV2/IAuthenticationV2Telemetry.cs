@@ -1,6 +1,6 @@
-namespace Roblox.AuthenticationV2;
+﻿namespace Roblox.Platform.AuthenticationV2 {
+    /// <summary>
 
-/// <summary>
 /// Writes telemetry for AuthenticationV2
 /// </summary>
 public interface IAuthenticationV2Telemetry
@@ -11,4 +11,7 @@ public interface IAuthenticationV2Telemetry
 	/// <param name="counter">The counter to increment</param>
 	/// <param name="instance">The instance to increment</param>
 	void Increment(Counter counter, Instance instance);
+}
+
+
 }

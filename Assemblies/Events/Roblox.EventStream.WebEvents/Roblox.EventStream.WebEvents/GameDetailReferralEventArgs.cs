@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameDetailReferralEventArgs : WebEventArgs
 
-public class GameDetailReferralEventArgs : WebEventArgs
 {
 	public string Page { get; set; }
 
@@ -16,3 +17,12 @@ public class GameDetailReferralEventArgs : WebEventArgs
 
 	public string ExperimentalContext { get; set; }
 }
+
+
+}
+
+
+
+
+
+

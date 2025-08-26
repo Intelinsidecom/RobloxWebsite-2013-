@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,21 +18,21 @@ internal class BuildersClubResources_zh_tw : BuildersClubResources_en_us, IBuild
 	/// membership type name
 	/// English String: "Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembership => "Builders Club 會員資格";
+	public override string LabelBuildersClubMembership => "Builders Club æœƒå“¡è³‡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipOutrageous"
 	/// membership type
 	/// English String: "Outrageous Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipOutrageous => "Outrageous Builders Club 會員資格";
+	public override string LabelBuildersClubMembershipOutrageous => "Outrageous Builders Club æœƒå“¡è³‡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubMembershipTurbo"
 	/// membership type
 	/// English String: "Turbo Builders Club Membership"
 	/// </summary>
-	public override string LabelBuildersClubMembershipTurbo => "Turbo Builders Club 會員資格";
+	public override string LabelBuildersClubMembershipTurbo => "Turbo Builders Club æœƒå“¡è³‡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.ClassicBuildersClub"
@@ -53,21 +53,21 @@ internal class BuildersClubResources_zh_tw : BuildersClubResources_en_us, IBuild
 	/// use Feature.Support namespace instead
 	/// English String: "Membership"
 	/// </summary>
-	public override string LabelMembership => "會員資格";
+	public override string LabelMembership => "æœƒå“¡è³‡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.NeverUppercase"
 	/// label - if language supports capitalization, please keep it uppercase
 	/// English String: "NEVER"
 	/// </summary>
-	public override string LabelNeverUppercase => "永不";
+	public override string LabelNeverUppercase => "æ°¸ä¸";
 
 	/// <summary>
 	/// Key: "Label.No"
 	/// label
 	/// English String: "No"
 	/// </summary>
-	public override string LabelNo => "否";
+	public override string LabelNo => "å¦";
 
 	/// <summary>
 	/// Key: "Label.OutrageousBuildersClub"
@@ -88,7 +88,7 @@ internal class BuildersClubResources_zh_tw : BuildersClubResources_en_us, IBuild
 	/// Builders club membership type
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelPlanFree => "免費";
+	public override string LabelPlanFree => "å…è²»";
 
 	/// <summary>
 	/// Key: "Label.PlanOutrageous"
@@ -123,7 +123,7 @@ internal class BuildersClubResources_zh_tw : BuildersClubResources_en_us, IBuild
 	/// label
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelYes => "是";
+	public override string LabelYes => "æ˜¯";
 
 	public BuildersClubResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -137,17 +137,17 @@ internal class BuildersClubResources_zh_tw : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelBuildersClubMembership()
 	{
-		return "Builders Club 會員資格";
+		return "Builders Club æœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipOutrageous()
 	{
-		return "Outrageous Builders Club 會員資格";
+		return "Outrageous Builders Club æœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubMembershipTurbo()
 	{
-		return "Turbo Builders Club 會員資格";
+		return "Turbo Builders Club æœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelClassicBuildersClub()
@@ -162,17 +162,17 @@ internal class BuildersClubResources_zh_tw : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelMembership()
 	{
-		return "會員資格";
+		return "æœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelNeverUppercase()
 	{
-		return "永不";
+		return "æ°¸ä¸";
 	}
 
 	protected override string _GetTemplateForLabelNo()
 	{
-		return "否";
+		return "å¦";
 	}
 
 	protected override string _GetTemplateForLabelOutrageousBuildersClub()
@@ -187,7 +187,7 @@ internal class BuildersClubResources_zh_tw : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelPlanFree()
 	{
-		return "免費";
+		return "å…è²»";
 	}
 
 	protected override string _GetTemplateForLabelPlanOutrageous()
@@ -212,6 +212,8 @@ internal class BuildersClubResources_zh_tw : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForLabelYes()
 	{
-		return "是";
+		return "æ˜¯";
 	}
 }
+
+

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notifications {
+    /// <summary>
 
-/// <summary>
 /// This class overrides NotificationStreamResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -42,14 +42,14 @@ internal class NotificationStreamResources_de_de : NotificationStreamResources_e
 	/// Label for link to report a game update message
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "Verstoß melden";
+	public override string ActionReportAbuse => "VerstoÃŸ melden";
 
 	/// <summary>
 	/// Key: "Action.Undo"
 	/// Label for Undo link to reverse the unfollow action
 	/// English String: "Undo"
 	/// </summary>
-	public override string ActionUndo => "Rückgängig machen";
+	public override string ActionUndo => "RÃ¼ckgÃ¤ngig machen";
 
 	/// <summary>
 	/// Key: "Action.View"
@@ -99,7 +99,7 @@ internal class NotificationStreamResources_de_de : NotificationStreamResources_e
 	/// Message displayed on game update card when the game is not playable on the device type.
 	/// English String: "Not playable on this device"
 	/// </summary>
-	public override string MessageGameNotPlayableOnDevice => "Auf diesem Gerät nicht spielbar";
+	public override string MessageGameNotPlayableOnDevice => "Auf diesem GerÃ¤t nicht spielbar";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsOther"
@@ -145,12 +145,12 @@ internal class NotificationStreamResources_de_de : NotificationStreamResources_e
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "Verstoß melden";
+		return "VerstoÃŸ melden";
 	}
 
 	protected override string _GetTemplateForActionUndo()
 	{
-		return "Rückgängig machen";
+		return "RÃ¼ckgÃ¤ngig machen";
 	}
 
 	/// <summary>
@@ -295,17 +295,17 @@ internal class NotificationStreamResources_de_de : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailable(string month, string year, string gameName)
 	{
-		return $"{month} {year} Analysebericht für {gameName} verfügbar.";
+		return $"{month} {year} Analysebericht fÃ¼r {gameName} verfÃ¼gbar.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailable()
 	{
-		return "{month} {year} Analysebericht für {gameName} verfügbar.";
+		return "{month} {year} Analysebericht fÃ¼r {gameName} verfÃ¼gbar.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple()
 	{
-		return "{month} {year} Analysebericht für {gameName} und {otherCount, plural, =1 {# andere Spiel} other {# andere Spiele}} verfügbar";
+		return "{month} {year} Analysebericht fÃ¼r {gameName} und {otherCount, plural, =1 {# andere Spiel} other {# andere Spiele}} verfÃ¼gbar";
 	}
 
 	/// <summary>
@@ -314,12 +314,12 @@ internal class NotificationStreamResources_de_de : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailableMultiple2(string month, string year, string gameCount)
 	{
-		return $"{month} {year} Analysebericht für {gameCount} Spiele verfügbar.";
+		return $"{month} {year} Analysebericht fÃ¼r {gameCount} Spiele verfÃ¼gbar.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple2()
 	{
-		return "{month} {year} Analysebericht für {gameCount} Spiele verfügbar.";
+		return "{month} {year} Analysebericht fÃ¼r {gameCount} Spiele verfÃ¼gbar.";
 	}
 
 	/// <summary>
@@ -390,7 +390,7 @@ internal class NotificationStreamResources_de_de : NotificationStreamResources_e
 
 	protected override string _GetTemplateForMessageGameNotPlayableOnDevice()
 	{
-		return "Auf diesem Gerät nicht spielbar";
+		return "Auf diesem GerÃ¤t nicht spielbar";
 	}
 
 	/// <summary>
@@ -465,4 +465,7 @@ internal class NotificationStreamResources_de_de : NotificationStreamResources_e
 	{
 		return "Du hast {numberOfMessagesText} {numberOfMessages, plural, =1 {Nachricht} other {Nachrichten}} erhalten.";
 	}
+}
+
+
 }

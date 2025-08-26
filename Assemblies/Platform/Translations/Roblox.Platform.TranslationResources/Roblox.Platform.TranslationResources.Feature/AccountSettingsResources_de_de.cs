@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AccountSettingsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,19 +16,19 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Action.CancelRenewal"
 	/// English String: "Cancel Renewal"
 	/// </summary>
-	public override string ActionCancelRenewal => "Verlängerung abbrechen";
+	public override string ActionCancelRenewal => "VerlÃ¤ngerung abbrechen";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddEmail"
 	/// English String: "Add Email"
 	/// </summary>
-	public override string ActionDialogAddEmail => "E-Mail-Adresse hinzufügen";
+	public override string ActionDialogAddEmail => "E-Mail-Adresse hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string ActionDialogAddPhone => "Handy hinzufügen";
+	public override string ActionDialogAddPhone => "Handy hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Cancel"
@@ -40,7 +40,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Action.Dialog.ChangeEmail"
 	/// English String: "Change Email"
 	/// </summary>
-	public override string ActionDialogChangeEmail => "E-Mail-Adresse ändern";
+	public override string ActionDialogChangeEmail => "E-Mail-Adresse Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangeEmailConfirmation"
@@ -70,7 +70,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Action.Dialog.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionDialogClose => "Schließen";
+	public override string ActionDialogClose => "SchlieÃŸen";
 
 	/// <summary>
 	/// Key: "Action.Dialog.EditPhonePrimary"
@@ -100,7 +100,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Action.Dialog.PinCreate"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionDialogPinCreate => "Hinzufügen";
+	public override string ActionDialogPinCreate => "HinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.Dialog.PinCreateOk"
@@ -251,20 +251,20 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Description.AccountControls"
 	/// English String: "You can setup account restrictions on this account to restrict access to account settings and uncurated content"
 	/// </summary>
-	public override string DescriptionAccountControls => "Du kannst Kontoeinschränkungen für dieses Konto einrichten, um den Zugriff auf Kontoeinstellungen und ungeprüfte Inhalte einzuschränken.";
+	public override string DescriptionAccountControls => "Du kannst KontoeinschrÃ¤nkungen fÃ¼r dieses Konto einrichten, um den Zugriff auf Kontoeinstellungen und ungeprÃ¼fte Inhalte einzuschrÃ¤nken.";
 
 	/// <summary>
 	/// Key: "Description.AccountEmailRevertEmail.Subject"
 	/// Subject for account email revert email that is sent out to the old account when the new account email is verified.
 	/// English String: "Roblox Email Reset"
 	/// </summary>
-	public override string DescriptionAccountEmailRevertEmailSubject => "Roblox-E-Mail zurückgesetzt";
+	public override string DescriptionAccountEmailRevertEmailSubject => "Roblox-E-Mail zurÃ¼ckgesetzt";
 
 	/// <summary>
 	/// Key: "Description.DesktopPush1"
 	/// English String: "See notifications on this computer even when Roblox is closed."
 	/// </summary>
-	public override string DescriptionDesktopPush1 => "Erhalte selbst dann Benachrichtigungen auf diesem Computer, wenn Roblox nicht geöffnet ist.";
+	public override string DescriptionDesktopPush1 => "Erhalte selbst dann Benachrichtigungen auf diesem Computer, wenn Roblox nicht geÃ¶ffnet ist.";
 
 	/// <summary>
 	/// Key: "Description.DesktopPush2"
@@ -276,13 +276,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Description.DesktopPush3"
 	/// English String: "Desktop notifications for this device."
 	/// </summary>
-	public override string DescriptionDesktopPush3 => "Desktop-Benachrichtigungen für dieses Gerät.";
+	public override string DescriptionDesktopPush3 => "Desktop-Benachrichtigungen fÃ¼r dieses GerÃ¤t.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.AddPhone"
 	/// English String: "Please confirm your country code and enter your phone number. We will send a text message to complete verification. (Note: Text messaging charges may apply)"
 	/// </summary>
-	public override string DescriptionDialogAddPhone => "Bitte bestätige deine Ländervorwahl und gib deine Handynummer ein. Wir werden dir eine SMS schicken, um die Verifizierung abzuschließen. (Hinweis: Es können SMS-Kosten anfallen.)";
+	public override string DescriptionDialogAddPhone => "Bitte bestÃ¤tige deine LÃ¤ndervorwahl und gib deine Handynummer ein. Wir werden dir eine SMS schicken, um die Verifizierung abzuschlieÃŸen. (Hinweis: Es kÃ¶nnen SMS-Kosten anfallen.)";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeEmailConfirmation"
@@ -300,32 +300,32 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Description.Dialog.ChangePasswordConfirmation"
 	/// English String: "You have successfully changed your password."
 	/// </summary>
-	public override string DescriptionDialogChangePasswordConfirmation => "Du hast dein Passwort erfolgreich geändert.";
+	public override string DescriptionDialogChangePasswordConfirmation => "Du hast dein Passwort erfolgreich geÃ¤ndert.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameDisclaimer"
 	/// English String: "Important: Original account creation date will carry over to your new username."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameDisclaimer => "Wichtig: Das ursprüngliche Kontoerstellungsdatum wird auf deinen neuen Benutzernamen übertragen.";
+	public override string DescriptionDialogChangeUsernameDisclaimer => "Wichtig: Das ursprÃ¼ngliche Kontoerstellungsdatum wird auf deinen neuen Benutzernamen Ã¼bertragen.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameForFree"
 	/// Description notifying the user that this username change is free
 	/// English String: "Change username once for free."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameForFree => "Du kannst deinen Benutzernamen einmal kostenlos ändern.";
+	public override string DescriptionDialogChangeUsernameForFree => "Du kannst deinen Benutzernamen einmal kostenlos Ã¤ndern.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameHistory"
 	/// English String: "Previous forum posts will appear under your old username and will NOT carry over to your new username."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameHistory => "Bisherige Forumposts werden weiterhin unter deinem alten Benutzernamen geführt und werden NICHT auf deinen neuen Benutzernamen übertragen.";
+	public override string DescriptionDialogChangeUsernameHistory => "Bisherige Forumposts werden weiterhin unter deinem alten Benutzernamen gefÃ¼hrt und werden NICHT auf deinen neuen Benutzernamen Ã¼bertragen.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameTitle"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameTitle => "Benutzernamen ändern";
+	public override string DescriptionDialogChangeUsernameTitle => "Benutzernamen Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EditPhoneWarning"
@@ -338,7 +338,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// warning message when user doesn't have email address on file at the time of changing username
 	/// English String: "You must provide and verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogEmailProvideAndVerifyWarning => "Bevor du deinen Benutzernamen ändern kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
+	public override string DescriptionDialogEmailProvideAndVerifyWarning => "Bevor du deinen Benutzernamen Ã¤ndern kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EmailVerificationSent"
@@ -350,20 +350,20 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Description.Dialog.EmailVerifyWarning"
 	/// English String: "You must verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogEmailVerifyWarning => "Bevor du deinen Benutzernamen ändern kannst, musst du deine E-Mail-Adresse verifizieren.";
+	public override string DescriptionDialogEmailVerifyWarning => "Bevor du deinen Benutzernamen Ã¤ndern kannst, musst du deine E-Mail-Adresse verifizieren.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.FacebookDisconnectWarning"
 	/// English String: "Please add password to secure your account before disconnecting from Facebook."
 	/// </summary>
-	public override string DescriptionDialogFacebookDisconnectWarning => "Bitte füge ein Passwort hinzu, um dein Konto zu sichern, bevor du die Verbindung zu Facebook trennst.";
+	public override string DescriptionDialogFacebookDisconnectWarning => "Bitte fÃ¼ge ein Passwort hinzu, um dein Konto zu sichern, bevor du die Verbindung zu Facebook trennst.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.MissingEmailAccountPin"
 	/// error message
 	/// English String: "You must provide and verify your email before you can add an Account PIN."
 	/// </summary>
-	public override string DescriptionDialogMissingEmailAccountPin => "Bevor du eine Konto-PIN hinzufügen kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
+	public override string DescriptionDialogMissingEmailAccountPin => "Bevor du eine Konto-PIN hinzufÃ¼gen kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.MissingEmailTwoStepVerification"
@@ -377,20 +377,20 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// error message
 	/// English String: "You must provide and verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogMissingEmailUsername => "Bevor du deinen Benutzernamen ändern kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
+	public override string DescriptionDialogMissingEmailUsername => "Bevor du deinen Benutzernamen Ã¤ndern kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.PinUnlock"
 	/// English String: "Enter the Account PIN attached to your account"
 	/// </summary>
-	public override string DescriptionDialogPinUnlock => "Gib die Konto-PIN für dein Konto ein.";
+	public override string DescriptionDialogPinUnlock => "Gib die Konto-PIN fÃ¼r dein Konto ein.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.UnverifiedEmailAccountPin"
 	/// error message
 	/// English String: "You must verify your email before you can add an Account PIN."
 	/// </summary>
-	public override string DescriptionDialogUnverifiedEmailAccountPin => "Bevor du eine Konto-PIN hinzufügen kannst, musst du deine E-Mail-Adresse verifizieren.";
+	public override string DescriptionDialogUnverifiedEmailAccountPin => "Bevor du eine Konto-PIN hinzufÃ¼gen kannst, musst du deine E-Mail-Adresse verifizieren.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.UnverifiedEmailTwoStepVerification"
@@ -404,14 +404,14 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// error message
 	/// English String: "You must verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogUnverifiedEmailUsername => "Bevor du deinen Benutzernamen ändern kannst, musst du deine E-Mail-Adresse verifizieren.";
+	public override string DescriptionDialogUnverifiedEmailUsername => "Bevor du deinen Benutzernamen Ã¤ndern kannst, musst du deine E-Mail-Adresse verifizieren.";
 
 	/// <summary>
 	/// Key: "Description.FastTrack"
 	/// A description of the Fast Track program that is intended to help users understand why they are part of the program and how they can best be involved.
 	/// English String: "You have been enrolled in the Fast Track reporting program for making good abuse reports.  Your abuse reports are now Fast Tracked for review.  Stay in the program by continuing to make good abuse reports. Thank you for helping to make Roblox a positive experience!"
 	/// </summary>
-	public override string DescriptionFastTrack => "Da du gute Arbeit bei der Meldung von Verstößen geleistet hast, wurdest du ins Expressmeldungsprogramm aufgenommen. Deine Meldungen werden ab sofort bevorzugt geprüft. Wenn du weiterhin gute Arbeit leistest, verbleibst du im Programm. Danke für deine Hilfe, Roblox zu einer positiven Erfahrung für alle zu machen!";
+	public override string DescriptionFastTrack => "Da du gute Arbeit bei der Meldung von VerstÃ¶ÃŸen geleistet hast, wurdest du ins Expressmeldungsprogramm aufgenommen. Deine Meldungen werden ab sofort bevorzugt geprÃ¼ft. Wenn du weiterhin gute Arbeit leistest, verbleibst du im Programm. Danke fÃ¼r deine Hilfe, Roblox zu einer positiven Erfahrung fÃ¼r alle zu machen!";
 
 	/// <summary>
 	/// Key: "Description.FastTrack.Statistics"
@@ -424,32 +424,32 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Description.HelpText.Description"
 	/// English String: "Do not provide any details that can be used to identify you outside Roblox."
 	/// </summary>
-	public override string DescriptionHelpTextDescription => "Gib keine Informationen an, mit denen du außerhalb von Roblox identifiziert werden könntest.";
+	public override string DescriptionHelpTextDescription => "Gib keine Informationen an, mit denen du auÃŸerhalb von Roblox identifiziert werden kÃ¶nntest.";
 
 	/// <summary>
 	/// Key: "Description.HelpText.FastTrack.Accuracy"
 	/// Help text that explains to users how we define Accuracy of abuse reports for the Fast Track program. Intention is to help avoid user confusion about the meaning of the scores.
 	/// English String: "Accuracy is how often moderation agreed with abuse reports. Your number will show after you submit several reports. 'Everyone' means all of the Fast Track members as a group."
 	/// </summary>
-	public override string DescriptionHelpTextFastTrackAccuracy => "Die Genauigkeit spiegelt wider, wie häufig unser Moderationsteam deine Meldungen über Verstöße bestätigt. Dieser Wert wird erst angezeigt, nachdem du einige Meldungen eingereicht hast. „Jeder“ bezeichnet alle Expressmeldungsmitglieder zusammengenommen.";
+	public override string DescriptionHelpTextFastTrackAccuracy => "Die Genauigkeit spiegelt wider, wie hÃ¤ufig unser Moderationsteam deine Meldungen Ã¼ber VerstÃ¶ÃŸe bestÃ¤tigt. Dieser Wert wird erst angezeigt, nachdem du einige Meldungen eingereicht hast. â€žJederâ€œ bezeichnet alle Expressmeldungsmitglieder zusammengenommen.";
 
 	/// <summary>
 	/// Key: "Description.HelpText.PrivacyMode"
 	/// English String: "Updating age to under 13 will enable Privacy Mode."
 	/// </summary>
-	public override string DescriptionHelpTextPrivacyMode => "Wenn das Alter zu unter 13 Jahren geändert wird, wird der Datenschutzmodus aktiviert.";
+	public override string DescriptionHelpTextPrivacyMode => "Wenn das Alter zu unter 13 Jahren geÃ¤ndert wird, wird der Datenschutzmodus aktiviert.";
 
 	/// <summary>
 	/// Key: "Description.HoverText.ChangePassword"
 	/// English String: "Change Password"
 	/// </summary>
-	public override string DescriptionHoverTextChangePassword => "Passwort ändern";
+	public override string DescriptionHoverTextChangePassword => "Passwort Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Description.HoverText.ChangeUsername"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string DescriptionHoverTextChangeUsername => "Benutzernamen ändern";
+	public override string DescriptionHoverTextChangeUsername => "Benutzernamen Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Description.HoverText.UpdateEmail"
@@ -461,7 +461,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Description.MembershipHelp"
 	/// English String: "For billing and payment questions: info@roblox.com"
 	/// </summary>
-	public override string DescriptionMembershipHelp => "Für Fragen zu Zahlungen: info@roblox.com";
+	public override string DescriptionMembershipHelp => "FÃ¼r Fragen zu Zahlungen: info@roblox.com";
 
 	/// <summary>
 	/// Key: "Description.MembershipStatus"
@@ -479,13 +479,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Description.MobilePush1"
 	/// English String: "See notifications on your devices' home screens. You can turn them on or off from the Roblox app."
 	/// </summary>
-	public override string DescriptionMobilePush1 => "Erhalte Benachrichtigungen auf den Startbildschirmen deiner Geräte. Du kannst sie über die Roblox-App an- oder ausschalten.";
+	public override string DescriptionMobilePush1 => "Erhalte Benachrichtigungen auf den Startbildschirmen deiner GerÃ¤te. Du kannst sie Ã¼ber die Roblox-App an- oder ausschalten.";
 
 	/// <summary>
 	/// Key: "Description.MobilePush2"
 	/// English String: "Mobile push notifications for this device."
 	/// </summary>
-	public override string DescriptionMobilePush2 => "Mobilgerät-Push-Benachrichtigung für dieses Gerät.";
+	public override string DescriptionMobilePush2 => "MobilgerÃ¤t-Push-Benachrichtigung fÃ¼r dieses GerÃ¤t.";
 
 	/// <summary>
 	/// Key: "Description.NotificationStream1"
@@ -503,7 +503,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Description.RenevalFromWebsiteOnly"
 	/// English String: "Note: If you would like to cancel your renewal membership, please log in from the website."
 	/// </summary>
-	public override string DescriptionRenevalFromWebsiteOnly => "Hinweis: Falls du deine Mitgliedschaft nicht mehr verlängern möchtest, melde dich bitte über die Website an.";
+	public override string DescriptionRenevalFromWebsiteOnly => "Hinweis: Falls du deine Mitgliedschaft nicht mehr verlÃ¤ngern mÃ¶chtest, melde dich bitte Ã¼ber die Website an.";
 
 	/// <summary>
 	/// Key: "Description.SuccessDialogMessage"
@@ -522,7 +522,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Subject for username change email that is sent out on a successful change of username
 	/// English String: "Roblox Username Change"
 	/// </summary>
-	public override string DescriptionUsernameChangeEmailSubject => "Änderung des Roblox-Benutzernamens";
+	public override string DescriptionUsernameChangeEmailSubject => "Ã„nderung des Roblox-Benutzernamens";
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.Subject.Over13"
@@ -614,31 +614,31 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.Dialog.AddPassword"
 	/// English String: "Add Password"
 	/// </summary>
-	public override string HeadingDialogAddPassword => "Passwort hinzufügen";
+	public override string HeadingDialogAddPassword => "Passwort hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string HeadingDialogAddPhone => "Handy hinzufügen";
+	public override string HeadingDialogAddPhone => "Handy hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangeEmail"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string HeadingDialogChangeEmail => "Meine E-Mail-Adresse ändern";
+	public override string HeadingDialogChangeEmail => "Meine E-Mail-Adresse Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangeEmailConfirmation"
 	/// English String: "Email Address Changed"
 	/// </summary>
-	public override string HeadingDialogChangeEmailConfirmation => "E-Mail-Adresse geändert";
+	public override string HeadingDialogChangeEmailConfirmation => "E-Mail-Adresse geÃ¤ndert";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangePassword"
 	/// English String: "Change Password"
 	/// </summary>
-	public override string HeadingDialogChangePassword => "Passwort ändern";
+	public override string HeadingDialogChangePassword => "Passwort Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangePasswordConfirmation"
@@ -656,7 +656,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.Dialog.ChangeUsername"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string HeadingDialogChangeUsername => "Benutzernamen ändern";
+	public override string HeadingDialogChangeUsername => "Benutzernamen Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.DefaultError"
@@ -680,20 +680,20 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.Dialog.InsufficientFunds"
 	/// English String: "Insufficient Funds"
 	/// </summary>
-	public override string HeadingDialogInsufficientFunds => "Nicht genügend Guthaben";
+	public override string HeadingDialogInsufficientFunds => "Nicht genÃ¼gend Guthaben";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.InvalidUsername"
 	/// Invalid Username
 	/// English String: "Invalid Username"
 	/// </summary>
-	public override string HeadingDialogInvalidUsername => "Ungültiger Benutzername";
+	public override string HeadingDialogInvalidUsername => "UngÃ¼ltiger Benutzername";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.PinCreate"
 	/// English String: "Add PIN"
 	/// </summary>
-	public override string HeadingDialogPinCreate => "PIN hinzufügen";
+	public override string HeadingDialogPinCreate => "PIN hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.PinCreateSuccessConfirmation"
@@ -748,7 +748,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.NotificationOptions"
 	/// English String: "Notify me when"
 	/// </summary>
-	public override string HeadingNotificationOptions => "Ich möchte eine Benachrichtigung, wenn:";
+	public override string HeadingNotificationOptions => "Ich mÃ¶chte eine Benachrichtigung, wenn:";
 
 	/// <summary>
 	/// Key: "Heading.Notifications"
@@ -760,7 +760,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.Notifications.ActionWhen"
 	/// English String: "Notify me when"
 	/// </summary>
-	public override string HeadingNotificationsActionWhen => "Ich möchte eine Benachrichtigung, wenn:";
+	public override string HeadingNotificationsActionWhen => "Ich mÃ¶chte eine Benachrichtigung, wenn:";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.DesktopPush"
@@ -772,7 +772,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.Notifications.MobilePush"
 	/// English String: "Mobile Push"
 	/// </summary>
-	public override string HeadingNotificationsMobilePush => "Mobilgerät-Push-Benachrichtigung";
+	public override string HeadingNotificationsMobilePush => "MobilgerÃ¤t-Push-Benachrichtigung";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.Stream"
@@ -802,7 +802,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.Personal"
 	/// English String: "Personal"
 	/// </summary>
-	public override string HeadingPersonal => "Persönliches";
+	public override string HeadingPersonal => "PersÃ¶nliches";
 
 	/// <summary>
 	/// Key: "Heading.Pin"
@@ -820,13 +820,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.RenevalDate"
 	/// English String: "Renewal date"
 	/// </summary>
-	public override string HeadingRenevalDate => "Verlängerungsdatum";
+	public override string HeadingRenevalDate => "VerlÃ¤ngerungsdatum";
 
 	/// <summary>
 	/// Key: "Heading.Restrictions"
 	/// English String: "Account Restrictions"
 	/// </summary>
-	public override string HeadingRestrictions => "Kontoeinschränkungen";
+	public override string HeadingRestrictions => "KontoeinschrÃ¤nkungen";
 
 	/// <summary>
 	/// Key: "Heading.SecureSignOut"
@@ -844,7 +844,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Heading.SocialSignOn"
 	/// English String: "Social Sign On"
 	/// </summary>
-	public override string HeadingSocialSignOn => "Über soziales Netzwerk anmelden";
+	public override string HeadingSocialSignOn => "Ãœber soziales Netzwerk anmelden";
 
 	/// <summary>
 	/// Key: "Heading.SuccessDialogTitle"
@@ -923,19 +923,19 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.AccountRestrictionDisabled"
 	/// English String: "Account Restrictions is currently disabled"
 	/// </summary>
-	public override string LabelAccountRestrictionDisabled => "Kontoeinschränkungen sind derzeit deaktiviert";
+	public override string LabelAccountRestrictionDisabled => "KontoeinschrÃ¤nkungen sind derzeit deaktiviert";
 
 	/// <summary>
 	/// Key: "Label.AccountRestrictionEnabled"
 	/// English String: "Account Restrictions is currently enabled"
 	/// </summary>
-	public override string LabelAccountRestrictionEnabled => "Kontoeinschränkungen sind derzeit aktiviert";
+	public override string LabelAccountRestrictionEnabled => "KontoeinschrÃ¤nkungen sind derzeit aktiviert";
 
 	/// <summary>
 	/// Key: "Label.AddEmail"
 	/// English String: "Add Email"
 	/// </summary>
-	public override string LabelAddEmail => "E-Mail-Adresse hinzufügen";
+	public override string LabelAddEmail => "E-Mail-Adresse hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.AddEmailParent"
@@ -947,25 +947,25 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.AddPassword"
 	/// English String: "Add Password:"
 	/// </summary>
-	public override string LabelAddPassword => "Passwort hinzufügen:";
+	public override string LabelAddPassword => "Passwort hinzufÃ¼gen:";
 
 	/// <summary>
 	/// Key: "Label.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string LabelAddPhone => "Handy hinzufügen";
+	public override string LabelAddPhone => "Handy hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.AddPhoneLink"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string LabelAddPhoneLink => "Handy hinzufügen";
+	public override string LabelAddPhoneLink => "Handy hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.BillingHelp"
 	/// English String: "For billing and payment questions:"
 	/// </summary>
-	public override string LabelBillingHelp => "Für Fragen zu Zahlungen:";
+	public override string LabelBillingHelp => "FÃ¼r Fragen zu Zahlungen:";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryCost"
@@ -990,7 +990,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// error message
 	/// English String: "Service is currently disabled, please try again later."
 	/// </summary>
-	public override string LabelBillingHistoryGeneralErrors => "Dienst ist derzeit deaktiviert. Bitte versuche es später erneut.";
+	public override string LabelBillingHistoryGeneralErrors => "Dienst ist derzeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryNoTransactions"
@@ -1020,13 +1020,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.ChangeYourUsername"
 	/// English String: "change your username"
 	/// </summary>
-	public override string LabelChangeYourUsername => "Ändere deinen Benutzernamen";
+	public override string LabelChangeYourUsername => "Ã„ndere deinen Benutzernamen";
 
 	/// <summary>
 	/// Key: "Label.ChooseLanguage"
 	/// English String: "Choose Language"
 	/// </summary>
-	public override string LabelChooseLanguage => "Sprache wählen";
+	public override string LabelChooseLanguage => "Sprache wÃ¤hlen";
 
 	/// <summary>
 	/// Key: "Label.ClassicTheme"
@@ -1045,7 +1045,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.Country"
 	/// English String: "Choose a Country/Region"
 	/// </summary>
-	public override string LabelCountry => "Land/Region wählen";
+	public override string LabelCountry => "Land/Region wÃ¤hlen";
 
 	/// <summary>
 	/// Key: "Label.CountryTitle"
@@ -1065,13 +1065,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.Dialog.AddEmailOver13"
 	/// English String: "Add My Email"
 	/// </summary>
-	public override string LabelDialogAddEmailOver13 => "Meine E-Mail-Adresse hinzufügen";
+	public override string LabelDialogAddEmailOver13 => "Meine E-Mail-Adresse hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddEmailUnder13"
 	/// English String: "Add Parent's Email"
 	/// </summary>
-	public override string LabelDialogAddEmailUnder13 => "E-Mail-Adresse deiner Eltern hinzufügen";
+	public override string LabelDialogAddEmailUnder13 => "E-Mail-Adresse deiner Eltern hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddPhoneField"
@@ -1089,25 +1089,25 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.Dialog.ChangeEmailField"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailField => "Meine E-Mail-Adresse ändern";
+	public override string LabelDialogChangeEmailField => "Meine E-Mail-Adresse Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeEmailOver13"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailOver13 => "Meine E-Mail-Adresse ändern";
+	public override string LabelDialogChangeEmailOver13 => "Meine E-Mail-Adresse Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeEmailUnder13"
 	/// English String: "Change Parent's Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailUnder13 => "E-Mail-Adresse deiner Eltern ändern";
+	public override string LabelDialogChangeEmailUnder13 => "E-Mail-Adresse deiner Eltern Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangePasswordConfirm"
 	/// English String: "Confirm Password"
 	/// </summary>
-	public override string LabelDialogChangePasswordConfirm => "Passwort bestätigen";
+	public override string LabelDialogChangePasswordConfirm => "Passwort bestÃ¤tigen";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangePasswordCurrent"
@@ -1131,13 +1131,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.Dialog.ChangeUsernameField"
 	/// English String: "Desired Username (3-20 characters)"
 	/// </summary>
-	public override string LabelDialogChangeUsernameField => "Gewünschter Benutzername (3-20 Zeichen)";
+	public override string LabelDialogChangeUsernameField => "GewÃ¼nschter Benutzername (3-20 Zeichen)";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ConfirmPin"
 	/// English String: "Confirm your PIN"
 	/// </summary>
-	public override string LabelDialogConfirmPin => "Bestätige deine PIN";
+	public override string LabelDialogConfirmPin => "BestÃ¤tige deine PIN";
 
 	/// <summary>
 	/// Key: "Label.Dialog.EditPhoneCurrentNumber"
@@ -1149,7 +1149,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.Dialog.EmailAddressChanged"
 	/// English String: "Email Address Changed"
 	/// </summary>
-	public override string LabelDialogEmailAddressChanged => "E-Mail-Adresse geändert";
+	public override string LabelDialogEmailAddressChanged => "E-Mail-Adresse geÃ¤ndert";
 
 	/// <summary>
 	/// Key: "Label.Dialog.EmailRequired"
@@ -1380,7 +1380,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.Notifications.DeveloperMetricsAvailable"
 	/// English String: "Analytics report becomes available"
 	/// </summary>
-	public override string LabelNotificationsDeveloperMetricsAvailable => "Analysebericht wird verfügbar";
+	public override string LabelNotificationsDeveloperMetricsAvailable => "Analysebericht wird verfÃ¼gbar";
 
 	/// <summary>
 	/// Key: "Label.Notifications.FriendRequestAccepted"
@@ -1399,13 +1399,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Checkbox label for enabling game update notifications in the notification stream
 	/// English String: "I receive update notifications"
 	/// </summary>
-	public override string LabelNotificationsGameUpdate => "Benachrichtigungen über Updates erhalten";
+	public override string LabelNotificationsGameUpdate => "Benachrichtigungen Ã¼ber Updates erhalten";
 
 	/// <summary>
 	/// Key: "Label.Notifications.PartyInvited"
 	/// English String: "Someone invites me to a party"
 	/// </summary>
-	public override string LabelNotificationsPartyInvited => "Jemand mich in ein Team einlädt";
+	public override string LabelNotificationsPartyInvited => "Jemand mich in ein Team einlÃ¤dt";
 
 	/// <summary>
 	/// Key: "Label.Notifications.PartyJoined"
@@ -1423,7 +1423,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.Notifications.TeamCreateInvite"
 	/// English String: "Someone invites me to edit a game"
 	/// </summary>
-	public override string LabelNotificationsTeamCreateInvite => "Jemand mich zum Bearbeiten eines Spiels einlädt";
+	public override string LabelNotificationsTeamCreateInvite => "Jemand mich zum Bearbeiten eines Spiels einlÃ¤dt";
 
 	/// <summary>
 	/// Key: "Label.Password"
@@ -1471,7 +1471,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.RenevalDate"
 	/// English String: "Renewal date"
 	/// </summary>
-	public override string LabelRenevalDate => "Verlängerungsdatum";
+	public override string LabelRenevalDate => "VerlÃ¤ngerungsdatum";
 
 	/// <summary>
 	/// Key: "Label.SignOutAllSessions"
@@ -1495,7 +1495,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.ToolTip.ContactSettings"
 	/// English String: "Custom - Control your own settings. Default - Enable chat and messages with Friends. Off - Disables chat and messages."
 	/// </summary>
-	public override string LabelToolTipContactSettings => "Benutzerdefiniert\u00a0– Lege deine Einstellungen selbst fest. Standard\u00a0– Ermöglicht Chats und Nachrichten mit Freunden. Aus\u00a0– Deaktiviert Chats und Nachrichten.";
+	public override string LabelToolTipContactSettings => "Benutzerdefiniert\u00a0â€“ Lege deine Einstellungen selbst fest. Standard\u00a0â€“ ErmÃ¶glicht Chats und Nachrichten mit Freunden. Aus\u00a0â€“ Deaktiviert Chats und Nachrichten.";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.PinLocked"
@@ -1513,13 +1513,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.ToolTip.PrivacyMode"
 	/// English String: "Click here for more information"
 	/// </summary>
-	public override string LabelToolTipPrivacyMode => "Klicke hier für weitere Infos";
+	public override string LabelToolTipPrivacyMode => "Klicke hier fÃ¼r weitere Infos";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanChatInApp"
 	/// English String: "This setting controls who this user will be allowed to chat with in the app and on the web (separate from in game). The setting also prevents this user from posting on Forums and group walls."
 	/// </summary>
-	public override string LabelToolTipWhoCanChatInApp => "Diese Einstellung bestimmt, mit wem dieser Benutzer in der App und im Internet (nicht im Spiel selbst) chatten darf. Mit dieser Einstellung wird zudem verhindert, dass dieser Benutzer in Foren und auf Gruppenpinnwänden posten kann.";
+	public override string LabelToolTipWhoCanChatInApp => "Diese Einstellung bestimmt, mit wem dieser Benutzer in der App und im Internet (nicht im Spiel selbst) chatten darf. Mit dieser Einstellung wird zudem verhindert, dass dieser Benutzer in Foren und auf GruppenpinnwÃ¤nden posten kann.";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanChatInGame"
@@ -1532,19 +1532,19 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// This setting controls who can find you using the phone number you provided.
 	/// English String: "This setting controls who can find you using the phone number you provided."
 	/// </summary>
-	public override string LabelToolTipWhoCanFindMeByPhone => "Mit dieser Einstellung kannst du festlegen, wer dich über die von dir angegebene Handynummer finden kann.";
+	public override string LabelToolTipWhoCanFindMeByPhone => "Mit dieser Einstellung kannst du festlegen, wer dich Ã¼ber die von dir angegebene Handynummer finden kann.";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanInviteVIP"
 	/// English String: "This setting controls who can join this user in VIP servers - servers that can only be joined by invitation of the server owner."
 	/// </summary>
-	public override string LabelToolTipWhoCanInviteVIP => "Diese Einstellung bestimmt, wer mit diesem Benutzer auf VIP-Servern spielen darf. Diese Server können nur über eine Einladung des Serverbesitzers betreten werden.";
+	public override string LabelToolTipWhoCanInviteVIP => "Diese Einstellung bestimmt, wer mit diesem Benutzer auf VIP-Servern spielen darf. Diese Server kÃ¶nnen nur Ã¼ber eine Einladung des Serverbesitzers betreten werden.";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanJoinGame"
 	/// English String: "This setting controls who can see which game I'm in and join me in my server. Selecting no one means no one can follow me into my specific server, but I will be playing with other users."
 	/// </summary>
-	public override string LabelToolTipWhoCanJoinGame => "Diese Einstellung bestimmt, wer sehen kann, in welchem Spiel ich mich befinde und wer meinen Server betreten darf. Wenn ich „Niemand“ auswähle, bedeutet dies, dass mir niemand auf den von mir festgelegten Server folgen kann. Ich kann jedoch mit anderen Benutzern spielen.";
+	public override string LabelToolTipWhoCanJoinGame => "Diese Einstellung bestimmt, wer sehen kann, in welchem Spiel ich mich befinde und wer meinen Server betreten darf. Wenn ich â€žNiemandâ€œ auswÃ¤hle, bedeutet dies, dass mir niemand auf den von mir festgelegten Server folgen kann. Ich kann jedoch mit anderen Benutzern spielen.";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanMessageMe"
@@ -1562,7 +1562,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.TradeFilter"
 	/// English String: "Trade quality filter"
 	/// </summary>
-	public override string LabelTradeFilter => "Filter für Handelsqualität";
+	public override string LabelTradeFilter => "Filter fÃ¼r HandelsqualitÃ¤t";
 
 	/// <summary>
 	/// Key: "Label.Twitch"
@@ -1592,13 +1592,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Label.TwoStepVerification"
 	/// English String: "Improve your account security. A code will be required when you login from a new device."
 	/// </summary>
-	public override string LabelTwoStepVerification => "Mach dein Konto sicherer. Wenn du dich von einem neuen Gerät aus anmeldest, benötigst du einen Code.";
+	public override string LabelTwoStepVerification => "Mach dein Konto sicherer. Wenn du dich von einem neuen GerÃ¤t aus anmeldest, benÃ¶tigst du einen Code.";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerificationEnabled"
 	/// English String: "Your account is protected!"
 	/// </summary>
-	public override string LabelTwoStepVerificationEnabled => "Dein Konto ist geschützt!";
+	public override string LabelTwoStepVerificationEnabled => "Dein Konto ist geschÃ¼tzt!";
 
 	/// <summary>
 	/// Key: "Label.UpdateEmail"
@@ -1617,7 +1617,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Allow user to use device language
 	/// English String: "Use Device Language"
 	/// </summary>
-	public override string LabelUseDeviceLanguage => "Gerätesprache verwenden";
+	public override string LabelUseDeviceLanguage => "GerÃ¤tesprache verwenden";
 
 	/// <summary>
 	/// Key: "Label.Username"
@@ -1654,7 +1654,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Who can find me by my phone number?
 	/// English String: "Who can find me by my phone number?"
 	/// </summary>
-	public override string LabelWhoCanFindMeByPhone => "Wer kann mich über meine Handynummer finden?";
+	public override string LabelWhoCanFindMeByPhone => "Wer kann mich Ã¼ber meine Handynummer finden?";
 
 	/// <summary>
 	/// Key: "Label.WhoCanInviteVIP"
@@ -1703,7 +1703,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "LabelInsufficientRobux"
 	/// English String: "Insufficient Robux"
 	/// </summary>
-	public override string LabelInsufficientRobux => "Nicht genügend Robux";
+	public override string LabelInsufficientRobux => "Nicht genÃ¼gend Robux";
 
 	/// <summary>
 	/// Key: "Message.Error.AccountHasPin"
@@ -1715,13 +1715,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Message.Error.AccountLocked"
 	/// English String: "The account is locked. Unlock the acount before performing the action."
 	/// </summary>
-	public override string MessageErrorAccountLocked => "Das Konto ist gesperrt. Entsperre das Konto, bevor du die Handlung durchführst.";
+	public override string MessageErrorAccountLocked => "Das Konto ist gesperrt. Entsperre das Konto, bevor du die Handlung durchfÃ¼hrst.";
 
 	/// <summary>
 	/// Key: "Message.Error.Default"
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string MessageErrorDefault => "Ein Problem ist aufgetreten. Bitte versuche es später erneut.";
+	public override string MessageErrorDefault => "Ein Problem ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.AlreadyVerified"
@@ -1733,7 +1733,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Message.Error.Email.FeatureDisabled"
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailFeatureDisabled => "Dieses Feature ist zur Zeit deaktiviert. Bitte versuche es später erneut.";
+	public override string MessageErrorEmailFeatureDisabled => "Dieses Feature ist zur Zeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.IncorrectPassword"
@@ -1745,7 +1745,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Message.Error.Email.InvalidEmail"
 	/// English String: "Invalid email address."
 	/// </summary>
-	public override string MessageErrorEmailInvalidEmail => "Ungültige E-Mail-Adresse.";
+	public override string MessageErrorEmailInvalidEmail => "UngÃ¼ltige E-Mail-Adresse.";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.NoEmailAssociated"
@@ -1775,13 +1775,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Message.Error.Email.TooManyUpdates"
 	/// English String: "Too many attempts to update email. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailTooManyUpdates => "Zu viele Versuche, die E-Mail-Adresse zu aktualisieren. Bitte versuche es später erneut.";
+	public override string MessageErrorEmailTooManyUpdates => "Zu viele Versuche, die E-Mail-Adresse zu aktualisieren. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.TooManyVerify"
 	/// English String: "Too many attempts to send verification email. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailTooManyVerify => "Zu viele Versuche, die E-Mail zur Verifizierung zu senden. Bitte versuche es später erneut.";
+	public override string MessageErrorEmailTooManyVerify => "Zu viele Versuche, die E-Mail zur Verifizierung zu senden. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.Unknown"
@@ -1799,13 +1799,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Message.Error.InvalidPinFormat"
 	/// English String: "Invalid PIN format."
 	/// </summary>
-	public override string MessageErrorInvalidPinFormat => "Ungültiges PIN-Format.";
+	public override string MessageErrorInvalidPinFormat => "UngÃ¼ltiges PIN-Format.";
 
 	/// <summary>
 	/// Key: "Message.Error.NoPin"
 	/// English String: "No PIN exists on the account."
 	/// </summary>
-	public override string MessageErrorNoPin => "Für das Konto existiert keine PIN.";
+	public override string MessageErrorNoPin => "FÃ¼r das Konto existiert keine PIN.";
 
 	/// <summary>
 	/// Key: "Message.Error.NoVerifiedEmail"
@@ -1823,13 +1823,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Message.Error.TooManyRequests"
 	/// English String: "Too many requests made. Try again later."
 	/// </summary>
-	public override string MessageErrorTooManyRequests => "Zu viele Anfragen gestellt. Versuche es später erneut.";
+	public override string MessageErrorTooManyRequests => "Zu viele Anfragen gestellt. Versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "MessageEmailAddSuccess"
 	/// English String: "Email Added"
 	/// </summary>
-	public override string MessageEmailAddSuccess => "E-Mail-Adresse hinzugefügt";
+	public override string MessageEmailAddSuccess => "E-Mail-Adresse hinzugefÃ¼gt";
 
 	/// <summary>
 	/// Key: "MessageEmailAlreadyVerifiedError"
@@ -1841,20 +1841,20 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "MessageFeatureDisabledError"
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string MessageFeatureDisabledError => "Dieses Feature ist derzeit deaktiviert. Bitte versuche es später erneut.";
+	public override string MessageFeatureDisabledError => "Dieses Feature ist derzeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "MessageInsufficientRobuxErrorForUserName"
 	/// You don't have enough Robux to change your username.
 	/// English String: "You don't have enough Robux to change your username."
 	/// </summary>
-	public override string MessageInsufficientRobuxErrorForUserName => "Du hast nicht genügend Robux, um deinen Benutzernamen zu ändern.";
+	public override string MessageInsufficientRobuxErrorForUserName => "Du hast nicht genÃ¼gend Robux, um deinen Benutzernamen zu Ã¤ndern.";
 
 	/// <summary>
 	/// Key: "MessageInvalidEmail"
 	/// English String: "Invalid Email"
 	/// </summary>
-	public override string MessageInvalidEmail => "Ungültige E-Mail-Adresse";
+	public override string MessageInvalidEmail => "UngÃ¼ltige E-Mail-Adresse";
 
 	/// <summary>
 	/// Key: "MessageNoEmailAssociatedError"
@@ -1866,7 +1866,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "MessagePermissionError"
 	/// English String: "You don't have enough Robux to change your username."
 	/// </summary>
-	public override string MessagePermissionError => "Du hast nicht genügend Robux, um deinen Benutzernamen zu ändern.";
+	public override string MessagePermissionError => "Du hast nicht genÃ¼gend Robux, um deinen Benutzernamen zu Ã¤ndern.";
 
 	/// <summary>
 	/// Key: "MessagePinLockedError"
@@ -1896,7 +1896,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "MessageTooManyAttemptsError"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttemptsError => "Zu viele Versuche. Bitte versuche es später erneut.";
+	public override string MessageTooManyAttemptsError => "Zu viele Versuche. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "MessageUnknownError"
@@ -1915,13 +1915,13 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// error message
 	/// English String: "Code is invalid. Please check your phone and try again."
 	/// </summary>
-	public override string ResponesInvalidCodePhone => "Code ist ungültig. Bitte überprüfe dein Handy und versuche es erneut.";
+	public override string ResponesInvalidCodePhone => "Code ist ungÃ¼ltig. Bitte Ã¼berprÃ¼fe dein Handy und versuche es erneut.";
 
 	/// <summary>
 	/// Key: "Respones.InventoryAndTradePrivacyConflictError"
 	/// English String: "The value for \"Who can trade with me\" should be the same or more restrictive than the value for \"Who can see my inventory\"."
 	/// </summary>
-	public override string ResponesInventoryAndTradePrivacyConflictError => "Der Wert bei „Wer kann mit mir handeln“ sollte im gleichen Maße oder eingeschränkter sein, als der Wert bei „Wer kann mein Inventar sehen“.";
+	public override string ResponesInventoryAndTradePrivacyConflictError => "Der Wert bei â€žWer kann mit mir handelnâ€œ sollte im gleichen MaÃŸe oder eingeschrÃ¤nkter sein, als der Wert bei â€žWer kann mein Inventar sehenâ€œ.";
 
 	/// <summary>
 	/// Key: "Response.CodeRequired"
@@ -1934,38 +1934,38 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Response.Dialog.BirthdayChangeDefaultWarning"
 	/// English String: "Changing your birthday to under age 13 cannot be un-done. Are you sure you want to continue?"
 	/// </summary>
-	public override string ResponseDialogBirthdayChangeDefaultWarning => "Wenn du dein Alter auf unter 13 Jahre änderst, kannst du das nicht mehr rückgängig machen. Möchtest du wirklich fortfahren?";
+	public override string ResponseDialogBirthdayChangeDefaultWarning => "Wenn du dein Alter auf unter 13 Jahre Ã¤nderst, kannst du das nicht mehr rÃ¼ckgÃ¤ngig machen. MÃ¶chtest du wirklich fortfahren?";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangePasswordBody"
 	/// English String: "You must add a password to your Roblox account to change your birthday."
 	/// </summary>
-	public override string ResponseDialogBirthdayChangePasswordBody => "Du musst ein Passwort zu deinem Roblox-Konto hinzufügen, um deinen Geburtstag ändern zu können.";
+	public override string ResponseDialogBirthdayChangePasswordBody => "Du musst ein Passwort zu deinem Roblox-Konto hinzufÃ¼gen, um deinen Geburtstag Ã¤ndern zu kÃ¶nnen.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangePasswordTitle"
 	/// English String: "Must Add Password"
 	/// </summary>
-	public override string ResponseDialogBirthdayChangePasswordTitle => "Passwort muss hinzugefügt werden";
+	public override string ResponseDialogBirthdayChangePasswordTitle => "Passwort muss hinzugefÃ¼gt werden";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangeSocialWarning"
 	/// English String: "Changing your birthday to under age 13 cannot be un-done. Your Social Sign On from Facebook will be disabled and you will need to sign on using your Roblox password."
 	/// </summary>
-	public override string ResponseDialogBirthdayChangeSocialWarning => "Wenn du dein Alter auf unter 13 Jahre änderst, kannst du das nicht mehr rückgängig machen. Deine Anmeldung über das soziale Netzwerk Facebook wird deaktiviert und du musst dich mit deinem Roblox-Passwort anmelden.";
+	public override string ResponseDialogBirthdayChangeSocialWarning => "Wenn du dein Alter auf unter 13 Jahre Ã¤nderst, kannst du das nicht mehr rÃ¼ckgÃ¤ngig machen. Deine Anmeldung Ã¼ber das soziale Netzwerk Facebook wird deaktiviert und du musst dich mit deinem Roblox-Passwort anmelden.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordIncorrectPassword"
 	/// Your current password is incorrect, the password was not changed.
 	/// English String: "Your current password is incorrect, the password was not changed."
 	/// </summary>
-	public override string ResponseDialogChangePasswordIncorrectPassword => "Dein aktuelles Passwort ist falsch, das Passwort wurde nicht geändert.";
+	public override string ResponseDialogChangePasswordIncorrectPassword => "Dein aktuelles Passwort ist falsch, das Passwort wurde nicht geÃ¤ndert.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordNoMatch"
 	/// English String: "Passwords do not match"
 	/// </summary>
-	public override string ResponseDialogChangePasswordNoMatch => "Passwörter stimmen nicht überein";
+	public override string ResponseDialogChangePasswordNoMatch => "PasswÃ¶rter stimmen nicht Ã¼berein";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordTooShortError"
@@ -1984,7 +1984,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// error message
 	/// English String: "Username not appropriate for Roblox."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameNotAllowed => "Der Benutzername ist nicht geeignet für Roblox.";
+	public override string ResponseDialogChangeUsernameNotAllowed => "Der Benutzername ist nicht geeignet fÃ¼r Roblox.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameNotAvailable"
@@ -1997,25 +1997,25 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// success message
 	/// English String: "Successfully changed username."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameSuccess => "Benutzername wurde erfolgreich geändert.";
+	public override string ResponseDialogChangeUsernameSuccess => "Benutzername wurde erfolgreich geÃ¤ndert.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.CountryListError"
 	/// English String: "Error loading country list"
 	/// </summary>
-	public override string ResponseDialogCountryListError => "Fehler beim Laden der Länderliste";
+	public override string ResponseDialogCountryListError => "Fehler beim Laden der LÃ¤nderliste";
 
 	/// <summary>
 	/// Key: "Response.Dialog.CurrencyServiceError"
 	/// English String: "There was an error with the currency service. Try again later."
 	/// </summary>
-	public override string ResponseDialogCurrencyServiceError => "Beim Währungssystem ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+	public override string ResponseDialogCurrencyServiceError => "Beim WÃ¤hrungssystem ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DefaultErrorMessage"
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string ResponseDialogDefaultErrorMessage => "Etwas ist schiefgelaufen. Bitte versuche es später erneut.";
+	public override string ResponseDialogDefaultErrorMessage => "Etwas ist schiefgelaufen. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DefaultErrorTitle"
@@ -2033,7 +2033,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Response.Dialog.DisconnectXBoxError"
 	/// English String: "There was an error disconnecting your Xbox account, please try again later."
 	/// </summary>
-	public override string ResponseDialogDisconnectXBoxError => "Beim Aufheben der Verbindung zu deinem Xbox-Konto ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+	public override string ResponseDialogDisconnectXBoxError => "Beim Aufheben der Verbindung zu deinem Xbox-Konto ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.EmailSentForVerification"
@@ -2045,20 +2045,20 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Response.Dialog.InvalidEmailAddress"
 	/// English String: "Invalid Email Address"
 	/// </summary>
-	public override string ResponseDialogInvalidEmailAddress => "Ungültige E-Mail-Adresse";
+	public override string ResponseDialogInvalidEmailAddress => "UngÃ¼ltige E-Mail-Adresse";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidPhoneNumber"
 	/// English String: "Invalid phone number"
 	/// </summary>
-	public override string ResponseDialogInvalidPhoneNumber => "Ungültige Handynummer";
+	public override string ResponseDialogInvalidPhoneNumber => "UngÃ¼ltige Handynummer";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidUsername"
 	/// Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker.
 	/// English String: "Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker."
 	/// </summary>
-	public override string ResponseDialogInvalidUsername => "Wähle „Senden“, um das Ticket einzureichen oder „Abbrechen“, um den Benutzernamen zu bearbeiten. Bei deinem Benutzernamen handelt es sich um eine wichtige Information, durch die dein Problem schneller bearbeitet werden kann.";
+	public override string ResponseDialogInvalidUsername => "WÃ¤hle â€žSendenâ€œ, um das Ticket einzureichen oder â€žAbbrechenâ€œ, um den Benutzernamen zu bearbeiten. Bei deinem Benutzernamen handelt es sich um eine wichtige Information, durch die dein Problem schneller bearbeitet werden kann.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PasswordRulesError"
@@ -2070,19 +2070,19 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Response.Dialog.PinCreateConfirmation"
 	/// English String: "Your PIN is now set. You will need to enter this PIN before accessing the Settings page in the future."
 	/// </summary>
-	public override string ResponseDialogPinCreateConfirmation => "Deine PIN wurde festgelegt. Um in Zukunft auf deine Einstellungsseite zugreifen zu können, musst du diese PIN eingeben.";
+	public override string ResponseDialogPinCreateConfirmation => "Deine PIN wurde festgelegt. Um in Zukunft auf deine Einstellungsseite zugreifen zu kÃ¶nnen, musst du diese PIN eingeben.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PinCreateMismatch"
 	/// English String: "PINs do not match"
 	/// </summary>
-	public override string ResponseDialogPinCreateMismatch => "Die PINs stimmen nicht überein.";
+	public override string ResponseDialogPinCreateMismatch => "Die PINs stimmen nicht Ã¼berein.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.SignoutSessionFailed"
 	/// English String: "There was an error signing you out of all other sessions, please try again later."
 	/// </summary>
-	public override string ResponseDialogSignoutSessionFailed => "Beim Abmelden von allen anderen Sitzungen ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+	public override string ResponseDialogSignoutSessionFailed => "Beim Abmelden von allen anderen Sitzungen ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.SignoutSessionsConfirmation"
@@ -2094,7 +2094,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Response.Dialog.TwoStepDisableWarning"
 	/// English String: "If you turn off 2-Step Verification, only your password will be needed when you login from a new device. Are you sure?"
 	/// </summary>
-	public override string ResponseDialogTwoStepDisableWarning => "Wenn du die Verifizierung in 2 Schritten ausschaltest, benötigst du nur dein Passwort, um dich über ein neues Gerät anzumelden. Bist du dir sicher?";
+	public override string ResponseDialogTwoStepDisableWarning => "Wenn du die Verifizierung in 2 Schritten ausschaltest, benÃ¶tigst du nur dein Passwort, um dich Ã¼ber ein neues GerÃ¤t anzumelden. Bist du dir sicher?";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TwoStepSuccessTitle"
@@ -2106,31 +2106,31 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// Key: "Response.Dialog.TwoStepSucessBody"
 	/// English String: "Your account is now protected! No further action is required at this time. A security code will be sent next time you login from a new device."
 	/// </summary>
-	public override string ResponseDialogTwoStepSucessBody => "Dein Konto ist jetzt geschützt! Derzeit sind keine weiteren Aktionen erforderlich. Wenn du dich das nächste Mal über ein neues Gerät anmeldest, senden wir dir einen Sicherheitscode.";
+	public override string ResponseDialogTwoStepSucessBody => "Dein Konto ist jetzt geschÃ¼tzt! Derzeit sind keine weiteren Aktionen erforderlich. Wenn du dich das nÃ¤chste Mal Ã¼ber ein neues GerÃ¤t anmeldest, senden wir dir einen Sicherheitscode.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateInventorySetting"
 	/// English String: "We have updated your inventory privacy setting. The inventory and trade settings must be consistent."
 	/// </summary>
-	public override string ResponseDialogUpdateInventorySetting => "Wir haben deine Inventar-Datenschutzeinstellungen aktualisiert. Die Einstellungen für Inventar und Handel müssen übereinstimmen.";
+	public override string ResponseDialogUpdateInventorySetting => "Wir haben deine Inventar-Datenschutzeinstellungen aktualisiert. Die Einstellungen fÃ¼r Inventar und Handel mÃ¼ssen Ã¼bereinstimmen.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateNotificationSettingsError"
 	/// English String: "There was an error updating your notification settings, please try again later."
 	/// </summary>
-	public override string ResponseDialogUpdateNotificationSettingsError => "Beim Aktualisieren deiner Benachrichtigungseinstellungen ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+	public override string ResponseDialogUpdateNotificationSettingsError => "Beim Aktualisieren deiner Benachrichtigungseinstellungen ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateTradeSetting"
 	/// English String: "We have updated your trade privacy setting. The inventory and trade settings must be consistent."
 	/// </summary>
-	public override string ResponseDialogUpdateTradeSetting => "Wir haben deine Handel-Datenschutzeinstellungen aktualisiert. Die Einstellungen für Inventar und Handel müssen übereinstimmen.";
+	public override string ResponseDialogUpdateTradeSetting => "Wir haben deine Handel-Datenschutzeinstellungen aktualisiert. Die Einstellungen fÃ¼r Inventar und Handel mÃ¼ssen Ã¼bereinstimmen.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.VerifyPhoneInvalidCode"
 	/// English String: "Code is invalid. Please check your phone and try again."
 	/// </summary>
-	public override string ResponseDialogVerifyPhoneInvalidCode => "Code ist ungültig. Bitte überprüfe dein Handy und versuche es erneut.";
+	public override string ResponseDialogVerifyPhoneInvalidCode => "Code ist ungÃ¼ltig. Bitte Ã¼berprÃ¼fe dein Handy und versuche es erneut.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.Warning"
@@ -2143,7 +2143,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// error message
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string ResponseFeatureDisabled => "Dieses Feature ist derzeit deaktiviert. Bitte versuche es später erneut.";
+	public override string ResponseFeatureDisabled => "Dieses Feature ist derzeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
@@ -2164,14 +2164,14 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// error message
 	/// English String: "Incorrect password. Please check your password and try again."
 	/// </summary>
-	public override string ResponseIncorrectPasswordTryAgain => "Falsches Passwort. Bitte überprüfe dein Passwort und versuche es erneut.";
+	public override string ResponseIncorrectPasswordTryAgain => "Falsches Passwort. Bitte Ã¼berprÃ¼fe dein Passwort und versuche es erneut.";
 
 	/// <summary>
 	/// Key: "Response.InvalidPhoneTryAgain"
 	/// error message
 	/// English String: "Phone number format is invalid. Please check and try again."
 	/// </summary>
-	public override string ResponseInvalidPhoneTryAgain => "Format der Handynummer ist ungültig. Bitte überprüfe die Nummer und versuche es erneut.";
+	public override string ResponseInvalidPhoneTryAgain => "Format der Handynummer ist ungÃ¼ltig. Bitte Ã¼berprÃ¼fe die Nummer und versuche es erneut.";
 
 	/// <summary>
 	/// Key: "Response.NotificationBar.PhoneRemovedConfirmation"
@@ -2197,19 +2197,19 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// error
 	/// English String: "Please enter your PIN to change your settings."
 	/// </summary>
-	public override string ResponsePinRequired => "Bitte gib deine PIN ein, um deine Einstellungen zu ändern.";
+	public override string ResponsePinRequired => "Bitte gib deine PIN ein, um deine Einstellungen zu Ã¤ndern.";
 
 	/// <summary>
 	/// Key: "Response.SocialMedia.ValidationError"
 	/// English String: "The social network link is not valid."
 	/// </summary>
-	public override string ResponseSocialMediaValidationError => "Der Link über das soziale Netzwerk ist nicht gültig.";
+	public override string ResponseSocialMediaValidationError => "Der Link Ã¼ber das soziale Netzwerk ist nicht gÃ¼ltig.";
 
 	/// <summary>
 	/// Key: "ResponseAgeDownError"
 	/// English String: "Sorry but you cannot change your age to under 13.  If you are under 13, please create a new account and contact support to delete your old account."
 	/// </summary>
-	public override string ResponseAgeDownError => "Du kannst dein Alter leider nicht auf unter 13 Jahre ändern. Falls du unter 13 bist, erstelle bitte ein neues Konto und kontaktiere den Support, um das alte zu löschen.";
+	public override string ResponseAgeDownError => "Du kannst dein Alter leider nicht auf unter 13 Jahre Ã¤ndern. Falls du unter 13 bist, erstelle bitte ein neues Konto und kontaktiere den Support, um das alte zu lÃ¶schen.";
 
 	public AccountSettingsResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -2223,17 +2223,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionCancelRenewal()
 	{
-		return "Verlängerung abbrechen";
+		return "VerlÃ¤ngerung abbrechen";
 	}
 
 	protected override string _GetTemplateForActionDialogAddEmail()
 	{
-		return "E-Mail-Adresse hinzufügen";
+		return "E-Mail-Adresse hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionDialogAddPhone()
 	{
-		return "Handy hinzufügen";
+		return "Handy hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionDialogCancel()
@@ -2243,7 +2243,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogChangeEmail()
 	{
-		return "E-Mail-Adresse ändern";
+		return "E-Mail-Adresse Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForActionDialogChangeEmailConfirmation()
@@ -2268,7 +2268,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogClose()
 	{
-		return "Schließen";
+		return "SchlieÃŸen";
 	}
 
 	protected override string _GetTemplateForActionDialogEditPhonePrimary()
@@ -2293,7 +2293,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogPinCreate()
 	{
-		return "Hinzufügen";
+		return "HinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionDialogPinCreateOk()
@@ -2418,7 +2418,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionAccountControls()
 	{
-		return "Du kannst Kontoeinschränkungen für dieses Konto einrichten, um den Zugriff auf Kontoeinstellungen und ungeprüfte Inhalte einzuschränken.";
+		return "Du kannst KontoeinschrÃ¤nkungen fÃ¼r dieses Konto einrichten, um den Zugriff auf Kontoeinstellungen und ungeprÃ¼fte Inhalte einzuschrÃ¤nken.";
 	}
 
 	/// <summary>
@@ -2428,12 +2428,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Roblox-E-Mail zurückgesetzt{escapeLiteralEnd} {fromEmailAddress}";
+		return $"{escapeLiteralStart}Roblox-E-Mail zurÃ¼ckgesetzt{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailFrom()
 	{
-		return "{escapeLiteralStart}Roblox-E-Mail zurückgesetzt{escapeLiteralEnd} {fromEmailAddress}";
+		return "{escapeLiteralStart}Roblox-E-Mail zurÃ¼ckgesetzt{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -2443,12 +2443,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailHtmlBody(string lineBreak, string username, string oldEmailAddress, string newEmailAddress, string aTagWithHref, string revertAccountEmailLinkWithTicket, string hrefEnd, string revertAccountEmailLink, string aTagEnd, string robloxInfoEmailAddress)
 	{
-		return $"Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir haben festgestellt, dass du die E-Mail-Adresse für dein Konto {username} von {oldEmailAddress} auf {newEmailAddress} geändert hast. Falls dies nicht beabsichtigt war oder du glaubst, dass jemand die E-Mail-Adresse aus Versehen geändert hat, klicke auf diesen Link{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}, um die E-Mail-Adresse wiederherzustellen. Du musst außerdem ein neues Passwort angeben, damit wir ganz sicher sein können, dass dein Konto geschützt ist.{lineBreak}{lineBreak}Wenn du mit deiner neuen E-Mail-Adresse für Roblox zufrieden bist, brauchst du nichts zu tun! Sie ist bereits eingestellt.{lineBreak}{lineBreak}Bitte antworte nicht auf diese Nachricht. Falls Du Fragen hast, sende uns bitte eine E-Mail {robloxInfoEmailAddress}.";
+		return $"Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir haben festgestellt, dass du die E-Mail-Adresse fÃ¼r dein Konto {username} von {oldEmailAddress} auf {newEmailAddress} geÃ¤ndert hast. Falls dies nicht beabsichtigt war oder du glaubst, dass jemand die E-Mail-Adresse aus Versehen geÃ¤ndert hat, klicke auf diesen Link{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}, um die E-Mail-Adresse wiederherzustellen. Du musst auÃŸerdem ein neues Passwort angeben, damit wir ganz sicher sein kÃ¶nnen, dass dein Konto geschÃ¼tzt ist.{lineBreak}{lineBreak}Wenn du mit deiner neuen E-Mail-Adresse fÃ¼r Roblox zufrieden bist, brauchst du nichts zu tun! Sie ist bereits eingestellt.{lineBreak}{lineBreak}Bitte antworte nicht auf diese Nachricht. Falls Du Fragen hast, sende uns bitte eine E-Mail {robloxInfoEmailAddress}.";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailHtmlBody()
 	{
-		return "Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir haben festgestellt, dass du die E-Mail-Adresse für dein Konto {username} von {oldEmailAddress} auf {newEmailAddress} geändert hast. Falls dies nicht beabsichtigt war oder du glaubst, dass jemand die E-Mail-Adresse aus Versehen geändert hat, klicke auf diesen Link{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}, um die E-Mail-Adresse wiederherzustellen. Du musst außerdem ein neues Passwort angeben, damit wir ganz sicher sein können, dass dein Konto geschützt ist.{lineBreak}{lineBreak}Wenn du mit deiner neuen E-Mail-Adresse für Roblox zufrieden bist, brauchst du nichts zu tun! Sie ist bereits eingestellt.{lineBreak}{lineBreak}Bitte antworte nicht auf diese Nachricht. Falls Du Fragen hast, sende uns bitte eine E-Mail {robloxInfoEmailAddress}.";
+		return "Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir haben festgestellt, dass du die E-Mail-Adresse fÃ¼r dein Konto {username} von {oldEmailAddress} auf {newEmailAddress} geÃ¤ndert hast. Falls dies nicht beabsichtigt war oder du glaubst, dass jemand die E-Mail-Adresse aus Versehen geÃ¤ndert hat, klicke auf diesen Link{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}, um die E-Mail-Adresse wiederherzustellen. Du musst auÃŸerdem ein neues Passwort angeben, damit wir ganz sicher sein kÃ¶nnen, dass dein Konto geschÃ¼tzt ist.{lineBreak}{lineBreak}Wenn du mit deiner neuen E-Mail-Adresse fÃ¼r Roblox zufrieden bist, brauchst du nichts zu tun! Sie ist bereits eingestellt.{lineBreak}{lineBreak}Bitte antworte nicht auf diese Nachricht. Falls Du Fragen hast, sende uns bitte eine E-Mail {robloxInfoEmailAddress}.";
 	}
 
 	/// <summary>
@@ -2458,17 +2458,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailPlainBody(string lineBreak, string username, string oldEmailAddress, string newEmailAddress, string revertAccountEmailLink, string robloxInfoEmailAddress)
 	{
-		return $"Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir haben festgestellt, dass du die E-Mail-Adresse für dein Konto {username} von {oldEmailAddress} auf {newEmailAddress} geändert hast. Falls dies nicht beabsichtigt war oder du glaubst, dass jemand die E-Mail-Adresse aus Versehen geändert hat, klicke auf diesen Link{lineBreak}{revertAccountEmailLink}{lineBreak}, um die E-Mail-Adresse wiederherzustellen. Du musst außerdem ein neues Passwort angeben, damit wir ganz sicher sein können, dass dein Konto geschützt ist.{lineBreak}{lineBreak}Wenn du mit deiner neuen E-Mail-Adresse für Roblox zufrieden bist, brauchst du nichts zu tun! Sie ist bereits eingestellt.{lineBreak}Bitte antworte nicht auf diese Nachricht. Falls Du Fragen hast, sende uns bitte eine E-Mail {robloxInfoEmailAddress}.";
+		return $"Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir haben festgestellt, dass du die E-Mail-Adresse fÃ¼r dein Konto {username} von {oldEmailAddress} auf {newEmailAddress} geÃ¤ndert hast. Falls dies nicht beabsichtigt war oder du glaubst, dass jemand die E-Mail-Adresse aus Versehen geÃ¤ndert hat, klicke auf diesen Link{lineBreak}{revertAccountEmailLink}{lineBreak}, um die E-Mail-Adresse wiederherzustellen. Du musst auÃŸerdem ein neues Passwort angeben, damit wir ganz sicher sein kÃ¶nnen, dass dein Konto geschÃ¼tzt ist.{lineBreak}{lineBreak}Wenn du mit deiner neuen E-Mail-Adresse fÃ¼r Roblox zufrieden bist, brauchst du nichts zu tun! Sie ist bereits eingestellt.{lineBreak}Bitte antworte nicht auf diese Nachricht. Falls Du Fragen hast, sende uns bitte eine E-Mail {robloxInfoEmailAddress}.";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailPlainBody()
 	{
-		return "Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir haben festgestellt, dass du die E-Mail-Adresse für dein Konto {username} von {oldEmailAddress} auf {newEmailAddress} geändert hast. Falls dies nicht beabsichtigt war oder du glaubst, dass jemand die E-Mail-Adresse aus Versehen geändert hat, klicke auf diesen Link{lineBreak}{revertAccountEmailLink}{lineBreak}, um die E-Mail-Adresse wiederherzustellen. Du musst außerdem ein neues Passwort angeben, damit wir ganz sicher sein können, dass dein Konto geschützt ist.{lineBreak}{lineBreak}Wenn du mit deiner neuen E-Mail-Adresse für Roblox zufrieden bist, brauchst du nichts zu tun! Sie ist bereits eingestellt.{lineBreak}Bitte antworte nicht auf diese Nachricht. Falls Du Fragen hast, sende uns bitte eine E-Mail {robloxInfoEmailAddress}.";
+		return "Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir haben festgestellt, dass du die E-Mail-Adresse fÃ¼r dein Konto {username} von {oldEmailAddress} auf {newEmailAddress} geÃ¤ndert hast. Falls dies nicht beabsichtigt war oder du glaubst, dass jemand die E-Mail-Adresse aus Versehen geÃ¤ndert hat, klicke auf diesen Link{lineBreak}{revertAccountEmailLink}{lineBreak}, um die E-Mail-Adresse wiederherzustellen. Du musst auÃŸerdem ein neues Passwort angeben, damit wir ganz sicher sein kÃ¶nnen, dass dein Konto geschÃ¼tzt ist.{lineBreak}{lineBreak}Wenn du mit deiner neuen E-Mail-Adresse fÃ¼r Roblox zufrieden bist, brauchst du nichts zu tun! Sie ist bereits eingestellt.{lineBreak}Bitte antworte nicht auf diese Nachricht. Falls Du Fragen hast, sende uns bitte eine E-Mail {robloxInfoEmailAddress}.";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailSubject()
 	{
-		return "Roblox-E-Mail zurückgesetzt";
+		return "Roblox-E-Mail zurÃ¼ckgesetzt";
 	}
 
 	/// <summary>
@@ -2477,12 +2477,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountRestrictionsEnabled(string linkStart, string linkEnd)
 	{
-		return $"Mit diesem Konto kann nur auf unsere geprüften Inhalte auf der Plattform zugegriffen werden. Außerdem werden Kontakteinstellungen (siehe Seite {linkStart}Datenschutz{linkEnd}) auf „Aus“ gestellt.";
+		return $"Mit diesem Konto kann nur auf unsere geprÃ¼ften Inhalte auf der Plattform zugegriffen werden. AuÃŸerdem werden Kontakteinstellungen (siehe Seite {linkStart}Datenschutz{linkEnd}) auf â€žAusâ€œ gestellt.";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountRestrictionsEnabled()
 	{
-		return "Mit diesem Konto kann nur auf unsere geprüften Inhalte auf der Plattform zugegriffen werden. Außerdem werden Kontakteinstellungen (siehe Seite {linkStart}Datenschutz{linkEnd}) auf „Aus“ gestellt.";
+		return "Mit diesem Konto kann nur auf unsere geprÃ¼ften Inhalte auf der Plattform zugegriffen werden. AuÃŸerdem werden Kontakteinstellungen (siehe Seite {linkStart}Datenschutz{linkEnd}) auf â€žAusâ€œ gestellt.";
 	}
 
 	/// <summary>
@@ -2505,17 +2505,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionContactSetting(string linkStart, string linkEnd)
 	{
-		return $"Die Kontakteinstellungen sind gesperrt, da die Kontoeinschränkungen (siehe Seite {linkStart}Sicherheit{linkEnd}) aktiviert sind.";
+		return $"Die Kontakteinstellungen sind gesperrt, da die KontoeinschrÃ¤nkungen (siehe Seite {linkStart}Sicherheit{linkEnd}) aktiviert sind.";
 	}
 
 	protected override string _GetTemplateForDescriptionContactSetting()
 	{
-		return "Die Kontakteinstellungen sind gesperrt, da die Kontoeinschränkungen (siehe Seite {linkStart}Sicherheit{linkEnd}) aktiviert sind.";
+		return "Die Kontakteinstellungen sind gesperrt, da die KontoeinschrÃ¤nkungen (siehe Seite {linkStart}Sicherheit{linkEnd}) aktiviert sind.";
 	}
 
 	protected override string _GetTemplateForDescriptionDesktopPush1()
 	{
-		return "Erhalte selbst dann Benachrichtigungen auf diesem Computer, wenn Roblox nicht geöffnet ist.";
+		return "Erhalte selbst dann Benachrichtigungen auf diesem Computer, wenn Roblox nicht geÃ¶ffnet ist.";
 	}
 
 	protected override string _GetTemplateForDescriptionDesktopPush2()
@@ -2525,12 +2525,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionDesktopPush3()
 	{
-		return "Desktop-Benachrichtigungen für dieses Gerät.";
+		return "Desktop-Benachrichtigungen fÃ¼r dieses GerÃ¤t.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogAddPhone()
 	{
-		return "Bitte bestätige deine Ländervorwahl und gib deine Handynummer ein. Wir werden dir eine SMS schicken, um die Verifizierung abzuschließen. (Hinweis: Es können SMS-Kosten anfallen.)";
+		return "Bitte bestÃ¤tige deine LÃ¤ndervorwahl und gib deine Handynummer ein. Wir werden dir eine SMS schicken, um die Verifizierung abzuschlieÃŸen. (Hinweis: Es kÃ¶nnen SMS-Kosten anfallen.)";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeEmailConfirmation()
@@ -2545,22 +2545,22 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionDialogChangePasswordConfirmation()
 	{
-		return "Du hast dein Passwort erfolgreich geändert.";
+		return "Du hast dein Passwort erfolgreich geÃ¤ndert.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameDisclaimer()
 	{
-		return "Wichtig: Das ursprüngliche Kontoerstellungsdatum wird auf deinen neuen Benutzernamen übertragen.";
+		return "Wichtig: Das ursprÃ¼ngliche Kontoerstellungsdatum wird auf deinen neuen Benutzernamen Ã¼bertragen.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameForFree()
 	{
-		return "Du kannst deinen Benutzernamen einmal kostenlos ändern.";
+		return "Du kannst deinen Benutzernamen einmal kostenlos Ã¤ndern.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameHistory()
 	{
-		return "Bisherige Forumposts werden weiterhin unter deinem alten Benutzernamen geführt und werden NICHT auf deinen neuen Benutzernamen übertragen.";
+		return "Bisherige Forumposts werden weiterhin unter deinem alten Benutzernamen gefÃ¼hrt und werden NICHT auf deinen neuen Benutzernamen Ã¼bertragen.";
 	}
 
 	/// <summary>
@@ -2569,17 +2569,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogChangeUsernamePageText(string robuxIcon, string price)
 	{
-		return $"Benutzernamen für {price} {robuxIcon} ändern?";
+		return $"Benutzernamen fÃ¼r {price} {robuxIcon} Ã¤ndern?";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernamePageText()
 	{
-		return "Benutzernamen für {price} {robuxIcon} ändern?";
+		return "Benutzernamen fÃ¼r {price} {robuxIcon} Ã¤ndern?";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameTitle()
 	{
-		return "Benutzernamen ändern";
+		return "Benutzernamen Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEditPhoneWarning()
@@ -2589,7 +2589,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionDialogEmailProvideAndVerifyWarning()
 	{
-		return "Bevor du deinen Benutzernamen ändern kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
+		return "Bevor du deinen Benutzernamen Ã¤ndern kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEmailVerificationSent()
@@ -2599,12 +2599,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionDialogEmailVerifyWarning()
 	{
-		return "Bevor du deinen Benutzernamen ändern kannst, musst du deine E-Mail-Adresse verifizieren.";
+		return "Bevor du deinen Benutzernamen Ã¤ndern kannst, musst du deine E-Mail-Adresse verifizieren.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogFacebookDisconnectWarning()
 	{
-		return "Bitte füge ein Passwort hinzu, um dein Konto zu sichern, bevor du die Verbindung zu Facebook trennst.";
+		return "Bitte fÃ¼ge ein Passwort hinzu, um dein Konto zu sichern, bevor du die Verbindung zu Facebook trennst.";
 	}
 
 	/// <summary>
@@ -2613,17 +2613,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogInsufficientFundsWarning(string robuxToBuy)
 	{
-		return $"Du benötigst noch {robuxToBuy}, um deinen Benutzernamen zu ändern. Möchtest du mehr Robux kaufen?";
+		return $"Du benÃ¶tigst noch {robuxToBuy}, um deinen Benutzernamen zu Ã¤ndern. MÃ¶chtest du mehr Robux kaufen?";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogInsufficientFundsWarning()
 	{
-		return "Du benötigst noch {robuxToBuy}, um deinen Benutzernamen zu ändern. Möchtest du mehr Robux kaufen?";
+		return "Du benÃ¶tigst noch {robuxToBuy}, um deinen Benutzernamen zu Ã¤ndern. MÃ¶chtest du mehr Robux kaufen?";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailAccountPin()
 	{
-		return "Bevor du eine Konto-PIN hinzufügen kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
+		return "Bevor du eine Konto-PIN hinzufÃ¼gen kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailTwoStepVerification()
@@ -2633,12 +2633,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailUsername()
 	{
-		return "Bevor du deinen Benutzernamen ändern kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
+		return "Bevor du deinen Benutzernamen Ã¤ndern kannst, musst du deine E-Mail-Adresse angeben und verifizieren.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogPinUnlock()
 	{
-		return "Gib die Konto-PIN für dein Konto ein.";
+		return "Gib die Konto-PIN fÃ¼r dein Konto ein.";
 	}
 
 	/// <summary>
@@ -2647,17 +2647,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogRemovePhoneWarning(string phoneLast4)
 	{
-		return $"Möchtest du deine Handynummer, die auf {phoneLast4} endet, wirklich entfernen?";
+		return $"MÃ¶chtest du deine Handynummer, die auf {phoneLast4} endet, wirklich entfernen?";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogRemovePhoneWarning()
 	{
-		return "Möchtest du deine Handynummer, die auf {phoneLast4} endet, wirklich entfernen?";
+		return "MÃ¶chtest du deine Handynummer, die auf {phoneLast4} endet, wirklich entfernen?";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailAccountPin()
 	{
-		return "Bevor du eine Konto-PIN hinzufügen kannst, musst du deine E-Mail-Adresse verifizieren.";
+		return "Bevor du eine Konto-PIN hinzufÃ¼gen kannst, musst du deine E-Mail-Adresse verifizieren.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailTwoStepVerification()
@@ -2667,12 +2667,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailUsername()
 	{
-		return "Bevor du deinen Benutzernamen ändern kannst, musst du deine E-Mail-Adresse verifizieren.";
+		return "Bevor du deinen Benutzernamen Ã¤ndern kannst, musst du deine E-Mail-Adresse verifizieren.";
 	}
 
 	protected override string _GetTemplateForDescriptionFastTrack()
 	{
-		return "Da du gute Arbeit bei der Meldung von Verstößen geleistet hast, wurdest du ins Expressmeldungsprogramm aufgenommen. Deine Meldungen werden ab sofort bevorzugt geprüft. Wenn du weiterhin gute Arbeit leistest, verbleibst du im Programm. Danke für deine Hilfe, Roblox zu einer positiven Erfahrung für alle zu machen!";
+		return "Da du gute Arbeit bei der Meldung von VerstÃ¶ÃŸen geleistet hast, wurdest du ins Expressmeldungsprogramm aufgenommen. Deine Meldungen werden ab sofort bevorzugt geprÃ¼ft. Wenn du weiterhin gute Arbeit leistest, verbleibst du im Programm. Danke fÃ¼r deine Hilfe, Roblox zu einer positiven Erfahrung fÃ¼r alle zu machen!";
 	}
 
 	protected override string _GetTemplateForDescriptionFastTrackStatistics()
@@ -2682,27 +2682,27 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionHelpTextDescription()
 	{
-		return "Gib keine Informationen an, mit denen du außerhalb von Roblox identifiziert werden könntest.";
+		return "Gib keine Informationen an, mit denen du auÃŸerhalb von Roblox identifiziert werden kÃ¶nntest.";
 	}
 
 	protected override string _GetTemplateForDescriptionHelpTextFastTrackAccuracy()
 	{
-		return "Die Genauigkeit spiegelt wider, wie häufig unser Moderationsteam deine Meldungen über Verstöße bestätigt. Dieser Wert wird erst angezeigt, nachdem du einige Meldungen eingereicht hast. „Jeder“ bezeichnet alle Expressmeldungsmitglieder zusammengenommen.";
+		return "Die Genauigkeit spiegelt wider, wie hÃ¤ufig unser Moderationsteam deine Meldungen Ã¼ber VerstÃ¶ÃŸe bestÃ¤tigt. Dieser Wert wird erst angezeigt, nachdem du einige Meldungen eingereicht hast. â€žJederâ€œ bezeichnet alle Expressmeldungsmitglieder zusammengenommen.";
 	}
 
 	protected override string _GetTemplateForDescriptionHelpTextPrivacyMode()
 	{
-		return "Wenn das Alter zu unter 13 Jahren geändert wird, wird der Datenschutzmodus aktiviert.";
+		return "Wenn das Alter zu unter 13 Jahren geÃ¤ndert wird, wird der Datenschutzmodus aktiviert.";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextChangePassword()
 	{
-		return "Passwort ändern";
+		return "Passwort Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextChangeUsername()
 	{
-		return "Benutzernamen ändern";
+		return "Benutzernamen Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextUpdateEmail()
@@ -2712,7 +2712,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionMembershipHelp()
 	{
-		return "Für Fragen zu Zahlungen: info@roblox.com";
+		return "FÃ¼r Fragen zu Zahlungen: info@roblox.com";
 	}
 
 	protected override string _GetTemplateForDescriptionMembershipStatus()
@@ -2727,12 +2727,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionMobilePush1()
 	{
-		return "Erhalte Benachrichtigungen auf den Startbildschirmen deiner Geräte. Du kannst sie über die Roblox-App an- oder ausschalten.";
+		return "Erhalte Benachrichtigungen auf den Startbildschirmen deiner GerÃ¤te. Du kannst sie Ã¼ber die Roblox-App an- oder ausschalten.";
 	}
 
 	protected override string _GetTemplateForDescriptionMobilePush2()
 	{
-		return "Mobilgerät-Push-Benachrichtigung für dieses Gerät.";
+		return "MobilgerÃ¤t-Push-Benachrichtigung fÃ¼r dieses GerÃ¤t.";
 	}
 
 	protected override string _GetTemplateForDescriptionNotificationStream1()
@@ -2747,7 +2747,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionRenevalFromWebsiteOnly()
 	{
-		return "Hinweis: Falls du deine Mitgliedschaft nicht mehr verlängern möchtest, melde dich bitte über die Website an.";
+		return "Hinweis: Falls du deine Mitgliedschaft nicht mehr verlÃ¤ngern mÃ¶chtest, melde dich bitte Ã¼ber die Website an.";
 	}
 
 	protected override string _GetTemplateForDescriptionSuccessDialogMessage()
@@ -2766,12 +2766,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionTwoStepverificationSecondaryEnabled(string email)
 	{
-		return $"Wenn du dich von einem neuen Gerät aus anmeldest, werden Codes an {email} gesendet.";
+		return $"Wenn du dich von einem neuen GerÃ¤t aus anmeldest, werden Codes an {email} gesendet.";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepverificationSecondaryEnabled()
 	{
-		return "Wenn du dich von einem neuen Gerät aus anmeldest, werden Codes an {email} gesendet.";
+		return "Wenn du dich von einem neuen GerÃ¤t aus anmeldest, werden Codes an {email} gesendet.";
 	}
 
 	/// <summary>
@@ -2781,12 +2781,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionUsernameChangeEmailBody(string lineBreaks, string oldUsername, string newUsername, string robloxInfoEmailAddress)
 	{
-		return $"Hallo Roblox-Benutzer,{lineBreaks}dein Benutzername wurde vor Kurzem von „{oldUsername}“ zu „{newUsername}“ geändert. Solltest du diese Änderung nicht selbst vorgenommen haben, wende dich bitte per E-Mail an {robloxInfoEmailAddress}.";
+		return $"Hallo Roblox-Benutzer,{lineBreaks}dein Benutzername wurde vor Kurzem von â€ž{oldUsername}â€œ zu â€ž{newUsername}â€œ geÃ¤ndert. Solltest du diese Ã„nderung nicht selbst vorgenommen haben, wende dich bitte per E-Mail an {robloxInfoEmailAddress}.";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailBody()
 	{
-		return "Hallo Roblox-Benutzer,{lineBreaks}dein Benutzername wurde vor Kurzem von „{oldUsername}“ zu „{newUsername}“ geändert. Solltest du diese Änderung nicht selbst vorgenommen haben, wende dich bitte per E-Mail an {robloxInfoEmailAddress}.";
+		return "Hallo Roblox-Benutzer,{lineBreaks}dein Benutzername wurde vor Kurzem von â€ž{oldUsername}â€œ zu â€ž{newUsername}â€œ geÃ¤ndert. Solltest du diese Ã„nderung nicht selbst vorgenommen haben, wende dich bitte per E-Mail an {robloxInfoEmailAddress}.";
 	}
 
 	/// <summary>
@@ -2796,17 +2796,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionUsernameChangeEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Änderung des Roblox-Benutzernamens{escapeLiteralEnd} {fromEmailAddress}";
+		return $"{escapeLiteralStart}Ã„nderung des Roblox-Benutzernamens{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailFrom()
 	{
-		return "{escapeLiteralStart}Änderung des Roblox-Benutzernamens{escapeLiteralEnd} {fromEmailAddress}";
+		return "{escapeLiteralStart}Ã„nderung des Roblox-Benutzernamens{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailSubject()
 	{
-		return "Änderung des Roblox-Benutzernamens";
+		return "Ã„nderung des Roblox-Benutzernamens";
 	}
 
 	/// <summary>
@@ -2846,42 +2846,42 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyOver13(string lineBreak, string username, string aTagStartWithHref, string verificationLink, string targetBlank, string buttonStart, string buttonEnd, string aTagEnd)
 	{
-		return $"Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir freuen uns, dass du dein Konto ({username}) durch eine E-Mail-Adresse schützen möchtest.{lineBreak}Wenn du die E-Mail-Adresse, die mit deinem Roblox-Konto verknüpft ist, verifizierst, machst du dein Konto sicherer.{lineBreak}Bitte klicke auf die Schaltfläche unten, um die Verifizierung abzuschließen.{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}E-Mail-Adresse verifizieren{buttonEnd}{aTagEnd}";
+		return $"Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir freuen uns, dass du dein Konto ({username}) durch eine E-Mail-Adresse schÃ¼tzen mÃ¶chtest.{lineBreak}Wenn du die E-Mail-Adresse, die mit deinem Roblox-Konto verknÃ¼pft ist, verifizierst, machst du dein Konto sicherer.{lineBreak}Bitte klicke auf die SchaltflÃ¤che unten, um die Verifizierung abzuschlieÃŸen.{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}E-Mail-Adresse verifizieren{buttonEnd}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyOver13()
 	{
-		return "Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir freuen uns, dass du dein Konto ({username}) durch eine E-Mail-Adresse schützen möchtest.{lineBreak}Wenn du die E-Mail-Adresse, die mit deinem Roblox-Konto verknüpft ist, verifizierst, machst du dein Konto sicherer.{lineBreak}Bitte klicke auf die Schaltfläche unten, um die Verifizierung abzuschließen.{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}E-Mail-Adresse verifizieren{buttonEnd}{aTagEnd}";
+		return "Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir freuen uns, dass du dein Konto ({username}) durch eine E-Mail-Adresse schÃ¼tzen mÃ¶chtest.{lineBreak}Wenn du die E-Mail-Adresse, die mit deinem Roblox-Konto verknÃ¼pft ist, verifizierst, machst du dein Konto sicherer.{lineBreak}Bitte klicke auf die SchaltflÃ¤che unten, um die Verifizierung abzuschlieÃŸen.{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}E-Mail-Adresse verifizieren{buttonEnd}{aTagEnd}";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.HtmlBody.Under13"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account
-	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {boldTagStart}{username}{boldTagEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called “Roblox Studio” that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what it’s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parent’s email address. The parent’s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the child’s account access. To verify your email address, please click the button below: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}Verify Email{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}About Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox also offers {boldTagStart}parental controls{boldTagEnd}. Parents can enable a parent PIN and change their child’s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
+	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {boldTagStart}{username}{boldTagEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called â€œRoblox Studioâ€ that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what itâ€™s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parentâ€™s email address. The parentâ€™s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the childâ€™s account access. To verify your email address, please click the button below: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}Verify Email{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}About Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parentâ€™s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox also offers {boldTagStart}parental controls{boldTagEnd}. Parents can enable a parent PIN and change their childâ€™s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyUnder13(string lineBreak, string boldTagStart, string username, string boldTagEnd, string aTagStartWithHref, string verificationLink, string hrefEnd, string buttonStart, string buttonEnd, string aTagEnd, string parentalPageLink, string accountSecurityLink, string accountPrivacyLink, string supportPageLink, string privacyPageLink, string robloxWebsiteLink)
 	{
-		return $"Hallo,{lineBreak}{lineBreak}Ihr Kind hat das Konto {boldTagStart}{username}{boldTagEnd} auf Roblox erstellt. Roblox ist eine Online-Unterhaltungsplattform, auf der Kinder ihrer Fantasie freien Lauf lassen und gemeinsam in immersiven, von unseren Benutzern erschaffenen 3D-Welten spielen und Inhalte erstellen können. Unsere Plattform bietet auch ein kostenloses Entwickler-Tool namens „Roblox Studio“, mit dem Benutzer alles in ihrer Vorstellungskraft entwickeln können: von simplen Drag-and-Drop-Konstruktionen bis hin zu komplexen Mehrspielerspielen. Millionen von Kindern nutzen Roblox, um selbst zu erleben, wie es sich anfühlt, den ultimativen Vergnügungspark zu bauen, als professioneller Rennfahrer anzutreten, bei einer Modenschau zu glänzen oder einfach nur ein Traumhaus zu bauen und sich dort mit Freunden zu treffen.{lineBreak}{lineBreak}Durch diese E-Mail möchten wir Ihnen mitteilen, dass Ihr Kind seinen Benutzernamen, Geburtstag und die E-Mail-Adresse seiner Eltern angegeben hat. Die E-Mail-Adresse der Eltern wird nur verwendet, um das Konto zu verwalten, vergessene Passwörter zurückzusetzen und die Eltern darüber zu benachrichtigen, wenn sich der Kontozugriff des Kinds ändert. Um Ihre E-Mail-Adresse zu verifizieren, klicken Sie bitte auf die Schaltfläche unten:{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}E-Mail-Adresse verifizieren{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Über Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox setzt sich dafür ein, eine unterhaltsame, familienfreundliche Umgebung bereitzustellen. Wir verbessern unsere Sicherheitsmaßnahmen fortwährend und arbeiten mit Experten für digitale Sicherheit zusammen, um dafür zu sorgen, dass allen Spielern ein sicherer, angenehmer Ort zum Spielen und Chatten sowie für gemeinsame, kreative Projekte zur Verfügung steht. Wir empfehlen Ihnen, unseren Elternratgeber zu lesen, um sich mit unserer Plattform vertraut zu machen. Dort finden Sie auch hilfreiche Tipps, mit denen Sie ein positives Erlebnis für Ihre Kinder auf Roblox gewährleisten können: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox bietet auch {boldTagStart}Jugendschutzeinstellungen{boldTagEnd}. Eltern können eine Eltern-PIN aktivieren und die Kommunikations- und Chateinstellungen für ihre Kinder anpassen. Diese Einstellungen finden Sie in den Reitern für Sicherheit und Datenschutz in den Kontoeinstellungen, während Sie beim Konto Ihres Kindes angemeldet sind.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufügen, besuchen Sie bitte: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuchen Sie bitte: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Datenschutz{boldTagEnd}{lineBreak}{lineBreak}Sie können das Konto Ihres Kindes entfernen, indem Sie den Kundenservice hier kontaktieren: {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persönlichen Daten, die wir von Ihrem Kind erhalten haben, verknüpft. Weitere Informationen können Sie unseren Datenschutzrichtlinien hier entnehmen: {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team {lineBreak}{lineBreak} Bitte antworten Sie nicht direkt auf diese E-Mail. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return $"Hallo,{lineBreak}{lineBreak}Ihr Kind hat das Konto {boldTagStart}{username}{boldTagEnd} auf Roblox erstellt. Roblox ist eine Online-Unterhaltungsplattform, auf der Kinder ihrer Fantasie freien Lauf lassen und gemeinsam in immersiven, von unseren Benutzern erschaffenen 3D-Welten spielen und Inhalte erstellen kÃ¶nnen. Unsere Plattform bietet auch ein kostenloses Entwickler-Tool namens â€žRoblox Studioâ€œ, mit dem Benutzer alles in ihrer Vorstellungskraft entwickeln kÃ¶nnen: von simplen Drag-and-Drop-Konstruktionen bis hin zu komplexen Mehrspielerspielen. Millionen von Kindern nutzen Roblox, um selbst zu erleben, wie es sich anfÃ¼hlt, den ultimativen VergnÃ¼gungspark zu bauen, als professioneller Rennfahrer anzutreten, bei einer Modenschau zu glÃ¤nzen oder einfach nur ein Traumhaus zu bauen und sich dort mit Freunden zu treffen.{lineBreak}{lineBreak}Durch diese E-Mail mÃ¶chten wir Ihnen mitteilen, dass Ihr Kind seinen Benutzernamen, Geburtstag und die E-Mail-Adresse seiner Eltern angegeben hat. Die E-Mail-Adresse der Eltern wird nur verwendet, um das Konto zu verwalten, vergessene PasswÃ¶rter zurÃ¼ckzusetzen und die Eltern darÃ¼ber zu benachrichtigen, wenn sich der Kontozugriff des Kinds Ã¤ndert. Um Ihre E-Mail-Adresse zu verifizieren, klicken Sie bitte auf die SchaltflÃ¤che unten:{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}E-Mail-Adresse verifizieren{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Ãœber Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox setzt sich dafÃ¼r ein, eine unterhaltsame, familienfreundliche Umgebung bereitzustellen. Wir verbessern unsere SicherheitsmaÃŸnahmen fortwÃ¤hrend und arbeiten mit Experten fÃ¼r digitale Sicherheit zusammen, um dafÃ¼r zu sorgen, dass allen Spielern ein sicherer, angenehmer Ort zum Spielen und Chatten sowie fÃ¼r gemeinsame, kreative Projekte zur VerfÃ¼gung steht. Wir empfehlen Ihnen, unseren Elternratgeber zu lesen, um sich mit unserer Plattform vertraut zu machen. Dort finden Sie auch hilfreiche Tipps, mit denen Sie ein positives Erlebnis fÃ¼r Ihre Kinder auf Roblox gewÃ¤hrleisten kÃ¶nnen: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox bietet auch {boldTagStart}Jugendschutzeinstellungen{boldTagEnd}. Eltern kÃ¶nnen eine Eltern-PIN aktivieren und die Kommunikations- und Chateinstellungen fÃ¼r ihre Kinder anpassen. Diese Einstellungen finden Sie in den Reitern fÃ¼r Sicherheit und Datenschutz in den Kontoeinstellungen, wÃ¤hrend Sie beim Konto Ihres Kindes angemeldet sind.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufÃ¼gen, besuchen Sie bitte: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuchen Sie bitte: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Datenschutz{boldTagEnd}{lineBreak}{lineBreak}Sie kÃ¶nnen das Konto Ihres Kindes entfernen, indem Sie den Kundenservice hier kontaktieren: {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persÃ¶nlichen Daten, die wir von Ihrem Kind erhalten haben, verknÃ¼pft. Weitere Informationen kÃ¶nnen Sie unseren Datenschutzrichtlinien hier entnehmen: {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team {lineBreak}{lineBreak} Bitte antworten Sie nicht direkt auf diese E-Mail. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyUnder13()
 	{
-		return "Hallo,{lineBreak}{lineBreak}Ihr Kind hat das Konto {boldTagStart}{username}{boldTagEnd} auf Roblox erstellt. Roblox ist eine Online-Unterhaltungsplattform, auf der Kinder ihrer Fantasie freien Lauf lassen und gemeinsam in immersiven, von unseren Benutzern erschaffenen 3D-Welten spielen und Inhalte erstellen können. Unsere Plattform bietet auch ein kostenloses Entwickler-Tool namens „Roblox Studio“, mit dem Benutzer alles in ihrer Vorstellungskraft entwickeln können: von simplen Drag-and-Drop-Konstruktionen bis hin zu komplexen Mehrspielerspielen. Millionen von Kindern nutzen Roblox, um selbst zu erleben, wie es sich anfühlt, den ultimativen Vergnügungspark zu bauen, als professioneller Rennfahrer anzutreten, bei einer Modenschau zu glänzen oder einfach nur ein Traumhaus zu bauen und sich dort mit Freunden zu treffen.{lineBreak}{lineBreak}Durch diese E-Mail möchten wir Ihnen mitteilen, dass Ihr Kind seinen Benutzernamen, Geburtstag und die E-Mail-Adresse seiner Eltern angegeben hat. Die E-Mail-Adresse der Eltern wird nur verwendet, um das Konto zu verwalten, vergessene Passwörter zurückzusetzen und die Eltern darüber zu benachrichtigen, wenn sich der Kontozugriff des Kinds ändert. Um Ihre E-Mail-Adresse zu verifizieren, klicken Sie bitte auf die Schaltfläche unten:{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}E-Mail-Adresse verifizieren{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Über Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox setzt sich dafür ein, eine unterhaltsame, familienfreundliche Umgebung bereitzustellen. Wir verbessern unsere Sicherheitsmaßnahmen fortwährend und arbeiten mit Experten für digitale Sicherheit zusammen, um dafür zu sorgen, dass allen Spielern ein sicherer, angenehmer Ort zum Spielen und Chatten sowie für gemeinsame, kreative Projekte zur Verfügung steht. Wir empfehlen Ihnen, unseren Elternratgeber zu lesen, um sich mit unserer Plattform vertraut zu machen. Dort finden Sie auch hilfreiche Tipps, mit denen Sie ein positives Erlebnis für Ihre Kinder auf Roblox gewährleisten können: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox bietet auch {boldTagStart}Jugendschutzeinstellungen{boldTagEnd}. Eltern können eine Eltern-PIN aktivieren und die Kommunikations- und Chateinstellungen für ihre Kinder anpassen. Diese Einstellungen finden Sie in den Reitern für Sicherheit und Datenschutz in den Kontoeinstellungen, während Sie beim Konto Ihres Kindes angemeldet sind.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufügen, besuchen Sie bitte: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuchen Sie bitte: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Datenschutz{boldTagEnd}{lineBreak}{lineBreak}Sie können das Konto Ihres Kindes entfernen, indem Sie den Kundenservice hier kontaktieren: {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persönlichen Daten, die wir von Ihrem Kind erhalten haben, verknüpft. Weitere Informationen können Sie unseren Datenschutzrichtlinien hier entnehmen: {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team {lineBreak}{lineBreak} Bitte antworten Sie nicht direkt auf diese E-Mail. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return "Hallo,{lineBreak}{lineBreak}Ihr Kind hat das Konto {boldTagStart}{username}{boldTagEnd} auf Roblox erstellt. Roblox ist eine Online-Unterhaltungsplattform, auf der Kinder ihrer Fantasie freien Lauf lassen und gemeinsam in immersiven, von unseren Benutzern erschaffenen 3D-Welten spielen und Inhalte erstellen kÃ¶nnen. Unsere Plattform bietet auch ein kostenloses Entwickler-Tool namens â€žRoblox Studioâ€œ, mit dem Benutzer alles in ihrer Vorstellungskraft entwickeln kÃ¶nnen: von simplen Drag-and-Drop-Konstruktionen bis hin zu komplexen Mehrspielerspielen. Millionen von Kindern nutzen Roblox, um selbst zu erleben, wie es sich anfÃ¼hlt, den ultimativen VergnÃ¼gungspark zu bauen, als professioneller Rennfahrer anzutreten, bei einer Modenschau zu glÃ¤nzen oder einfach nur ein Traumhaus zu bauen und sich dort mit Freunden zu treffen.{lineBreak}{lineBreak}Durch diese E-Mail mÃ¶chten wir Ihnen mitteilen, dass Ihr Kind seinen Benutzernamen, Geburtstag und die E-Mail-Adresse seiner Eltern angegeben hat. Die E-Mail-Adresse der Eltern wird nur verwendet, um das Konto zu verwalten, vergessene PasswÃ¶rter zurÃ¼ckzusetzen und die Eltern darÃ¼ber zu benachrichtigen, wenn sich der Kontozugriff des Kinds Ã¤ndert. Um Ihre E-Mail-Adresse zu verifizieren, klicken Sie bitte auf die SchaltflÃ¤che unten:{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}E-Mail-Adresse verifizieren{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Ãœber Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox setzt sich dafÃ¼r ein, eine unterhaltsame, familienfreundliche Umgebung bereitzustellen. Wir verbessern unsere SicherheitsmaÃŸnahmen fortwÃ¤hrend und arbeiten mit Experten fÃ¼r digitale Sicherheit zusammen, um dafÃ¼r zu sorgen, dass allen Spielern ein sicherer, angenehmer Ort zum Spielen und Chatten sowie fÃ¼r gemeinsame, kreative Projekte zur VerfÃ¼gung steht. Wir empfehlen Ihnen, unseren Elternratgeber zu lesen, um sich mit unserer Plattform vertraut zu machen. Dort finden Sie auch hilfreiche Tipps, mit denen Sie ein positives Erlebnis fÃ¼r Ihre Kinder auf Roblox gewÃ¤hrleisten kÃ¶nnen: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox bietet auch {boldTagStart}Jugendschutzeinstellungen{boldTagEnd}. Eltern kÃ¶nnen eine Eltern-PIN aktivieren und die Kommunikations- und Chateinstellungen fÃ¼r ihre Kinder anpassen. Diese Einstellungen finden Sie in den Reitern fÃ¼r Sicherheit und Datenschutz in den Kontoeinstellungen, wÃ¤hrend Sie beim Konto Ihres Kindes angemeldet sind.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufÃ¼gen, besuchen Sie bitte: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuchen Sie bitte: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Datenschutz{boldTagEnd}{lineBreak}{lineBreak}Sie kÃ¶nnen das Konto Ihres Kindes entfernen, indem Sie den Kundenservice hier kontaktieren: {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persÃ¶nlichen Daten, die wir von Ihrem Kind erhalten haben, verknÃ¼pft. Weitere Informationen kÃ¶nnen Sie unseren Datenschutzrichtlinien hier entnehmen: {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team {lineBreak}{lineBreak} Bitte antworten Sie nicht direkt auf diese E-Mail. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.HtmlBody.Under13.Part2"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account part 2
-	/// English String: "You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
+	/// English String: "You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyUnder13Part2(string lineBreak, string aTagStartWithHref, string accountSecurityLink, string hrefEnd, string aTagEnd, string accountPrivacyLink, string boldTagStart, string boldTagEnd, string supportPageLink, string privacyPageLink, string robloxWebsiteLink)
 	{
-		return $"Diese Einstellungen findest du in den Reitern für Sicherheit und Datenschutz in den Kontoeinstellungen, während du beim Konto deines Kindes angemeldet bist.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufügen, besuche bitte: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuche bitte: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Datenschutz{boldTagEnd}{lineBreak}{lineBreak}Du kannst das Konto deines Kindes entfernen, indem du den Kundenservice hier kontaktierst: {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Deine E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persönlichen Daten, die wir von deinem Kind erhalten haben, verknüpft. Weitere Informationen kannst du unseren Datenschutzrichtlinien hier entnehmen: {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team {lineBreak}{lineBreak} Bitte antworte nicht direkt auf diese E-Mail. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return $"Diese Einstellungen findest du in den Reitern fÃ¼r Sicherheit und Datenschutz in den Kontoeinstellungen, wÃ¤hrend du beim Konto deines Kindes angemeldet bist.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufÃ¼gen, besuche bitte: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuche bitte: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Datenschutz{boldTagEnd}{lineBreak}{lineBreak}Du kannst das Konto deines Kindes entfernen, indem du den Kundenservice hier kontaktierst: {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Deine E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persÃ¶nlichen Daten, die wir von deinem Kind erhalten haben, verknÃ¼pft. Weitere Informationen kannst du unseren Datenschutzrichtlinien hier entnehmen: {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team {lineBreak}{lineBreak} Bitte antworte nicht direkt auf diese E-Mail. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyUnder13Part2()
 	{
-		return "Diese Einstellungen findest du in den Reitern für Sicherheit und Datenschutz in den Kontoeinstellungen, während du beim Konto deines Kindes angemeldet bist.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufügen, besuche bitte: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuche bitte: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Datenschutz{boldTagEnd}{lineBreak}{lineBreak}Du kannst das Konto deines Kindes entfernen, indem du den Kundenservice hier kontaktierst: {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Deine E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persönlichen Daten, die wir von deinem Kind erhalten haben, verknüpft. Weitere Informationen kannst du unseren Datenschutzrichtlinien hier entnehmen: {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team {lineBreak}{lineBreak} Bitte antworte nicht direkt auf diese E-Mail. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return "Diese Einstellungen findest du in den Reitern fÃ¼r Sicherheit und Datenschutz in den Kontoeinstellungen, wÃ¤hrend du beim Konto deines Kindes angemeldet bist.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufÃ¼gen, besuche bitte: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuche bitte: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Datenschutz{boldTagEnd}{lineBreak}{lineBreak}Du kannst das Konto deines Kindes entfernen, indem du den Kundenservice hier kontaktierst: {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Deine E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persÃ¶nlichen Daten, die wir von deinem Kind erhalten haben, verknÃ¼pft. Weitere Informationen kannst du unseren Datenschutzrichtlinien hier entnehmen: {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team {lineBreak}{lineBreak} Bitte antworte nicht direkt auf diese E-Mail. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	/// <summary>
@@ -2891,27 +2891,27 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyOver13(string lineBreak, string username, string verificationLink)
 	{
-		return $"Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir freuen uns, dass du dein Konto ({username}) durch eine E-Mail-Adresse schützen möchtest.{lineBreak}Wenn du die E-Mail-Adresse, die mit deinem Roblox-Konto verknüpft ist, verifizierst, machst du dein Konto sicherer.{lineBreak}Bitte klicke auf den folgenden Link, um die Verifizierung abzuschließen:{lineBreak}{verificationLink}\n";
+		return $"Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir freuen uns, dass du dein Konto ({username}) durch eine E-Mail-Adresse schÃ¼tzen mÃ¶chtest.{lineBreak}Wenn du die E-Mail-Adresse, die mit deinem Roblox-Konto verknÃ¼pft ist, verifizierst, machst du dein Konto sicherer.{lineBreak}Bitte klicke auf den folgenden Link, um die Verifizierung abzuschlieÃŸen:{lineBreak}{verificationLink}\n";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyOver13()
 	{
-		return "Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir freuen uns, dass du dein Konto ({username}) durch eine E-Mail-Adresse schützen möchtest.{lineBreak}Wenn du die E-Mail-Adresse, die mit deinem Roblox-Konto verknüpft ist, verifizierst, machst du dein Konto sicherer.{lineBreak}Bitte klicke auf den folgenden Link, um die Verifizierung abzuschließen:{lineBreak}{verificationLink}\n";
+		return "Lieber Roblox-Benutzer,{lineBreak}{lineBreak}wir freuen uns, dass du dein Konto ({username}) durch eine E-Mail-Adresse schÃ¼tzen mÃ¶chtest.{lineBreak}Wenn du die E-Mail-Adresse, die mit deinem Roblox-Konto verknÃ¼pft ist, verifizierst, machst du dein Konto sicherer.{lineBreak}Bitte klicke auf den folgenden Link, um die Verifizierung abzuschlieÃŸen:{lineBreak}{verificationLink}\n";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.PlainBody.Under13"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account
-	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {username} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called “Roblox Studio” that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what it’s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parent’s email address. The parent’s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the child’s account access. To verify your email address, please click the button below:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}About Roblox{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {parentalPageLink}{lineBreak}{lineBreak}Roblox also offers parental controls. Parents can enable a parent PIN and change their child’s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {accountSecurityLink}{lineBreak}{lineBreak}To change chat settings, please visit: {chatPrivacyLink} {lineBreak}{lineBreak}Privacy{lineBreak}{lineBreak} You may remove your child's account by contacting customer service at {supportPageLink}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {privacyPageLink}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team{lineBreak}Do not reply to this email directly.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}"
+	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {username} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called â€œRoblox Studioâ€ that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what itâ€™s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parentâ€™s email address. The parentâ€™s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the childâ€™s account access. To verify your email address, please click the button below:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}About Roblox{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parentâ€™s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {parentalPageLink}{lineBreak}{lineBreak}Roblox also offers parental controls. Parents can enable a parent PIN and change their childâ€™s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {accountSecurityLink}{lineBreak}{lineBreak}To change chat settings, please visit: {chatPrivacyLink} {lineBreak}{lineBreak}Privacy{lineBreak}{lineBreak} You may remove your child's account by contacting customer service at {supportPageLink}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {privacyPageLink}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team{lineBreak}Do not reply to this email directly.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}"
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyUnder13(string lineBreak, string username, string verificationLink, string parentalPageLink, string accountSecurityLink, string chatPrivacyLink, string supportPageLink, string privacyPageLink, string robloxWebiteLink)
 	{
-		return $"Hallo,{lineBreak}{lineBreak}Ihr Kind hat das Konto {username} auf Roblox erstellt. Roblox ist eine Online-Unterhaltungsplattform, auf der Kinder ihrer Fantasie freien Lauf lassen und gemeinsam in immersiven, von unseren Benutzern erschaffenen 3D-Welten spielen und Inhalte erstellen können. Unsere Plattform bietet auch ein kostenloses Entwickler-Tool namens „Roblox Studio“, mit dem Benutzer alles in ihrer Vorstellungskraft entwickeln können: von simplen Drag-and-Drop-Konstruktionen bis hin zu komplexen Mehrspielerspielen. Millionen von Kindern nutzen Roblox, um selbst zu erleben, wie es sich anfühlt, den ultimativen Vergnügungspark zu bauen, als professioneller Rennfahrer anzutreten, bei einer Modenschau zu glänzen oder einfach nur ein Traumhaus zu bauen und sich dort mit Freunden zu treffen.{lineBreak}{lineBreak}Durch diese E-Mail möchten wir Ihnen mitteilen, dass Ihr Kind seinen Benutzernamen, Geburtstag und die E-Mail-Adresse seiner Eltern angegeben hat. Die E-Mail-Adresse der Eltern wird nur verwendet, um das Konto zu verwalten, vergessene Passwörter zurückzusetzen und die Eltern darüber zu benachrichtigen, wenn sich der Kontozugriff des Kinds ändert. Um Ihre E-Mail-Adresse zu verifizieren, klicken Sie bitte auf die Schaltfläche unten:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Über Roblox{lineBreak}{lineBreak}Roblox setzt sich dafür ein, eine unterhaltsame, familienfreundliche Umgebung bereitzustellen. Wir verbessern unsere Sicherheitsmaßnahmen fortwährend und arbeiten mit Experten für digitale Sicherheit zusammen, um dafür zu sorgen, dass allen Spielern ein sicherer, angenehmer Ort zum Spielen und Chatten sowie für gemeinsame, kreative Projekte zur Verfügung steht. Wir empfehlen Ihnen, unseren Elternratgeber zu lesen, um sich mit unserer Plattform vertraut zu machen. Dort finden Sie auch hilfreiche Tipps, mit denen Sie ein positives Erlebnis für Ihre Kinder auf Roblox gewährleisten können: {parentalPageLink}{lineBreak}{lineBreak}Roblox bietet auch Jugendschutzeinstellungen. Eltern können eine Eltern-PIN aktivieren und die Kommunikations- und Chateinstellungen für ihre Kinder anpassen. Diese Einstellungen finden Sie in den Reitern für Sicherheit und Datenschutz in den Kontoeinstellungen, während Sie beim Konto Ihres Kindes angemeldet sind.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufügen, besuchen Sie bitte: {accountSecurityLink}{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuchen Sie bitte: {chatPrivacyLink}{lineBreak}{lineBreak}Datenschutz{lineBreak}{lineBreak}Sie können das Konto deines Kindes entfernen, indem Sie den Kundenservice hier kontaktieren: {supportPageLink}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persönlichen Daten, die wir von Ihrem Kind erhalten haben, verknüpft. Weitere Informationen können Sie unseren Datenschutzrichtlinien hier entnehmen: {privacyPageLink}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team{lineBreak}Bitte antworten Sie nicht direkt auf diese E-Mail.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return $"Hallo,{lineBreak}{lineBreak}Ihr Kind hat das Konto {username} auf Roblox erstellt. Roblox ist eine Online-Unterhaltungsplattform, auf der Kinder ihrer Fantasie freien Lauf lassen und gemeinsam in immersiven, von unseren Benutzern erschaffenen 3D-Welten spielen und Inhalte erstellen kÃ¶nnen. Unsere Plattform bietet auch ein kostenloses Entwickler-Tool namens â€žRoblox Studioâ€œ, mit dem Benutzer alles in ihrer Vorstellungskraft entwickeln kÃ¶nnen: von simplen Drag-and-Drop-Konstruktionen bis hin zu komplexen Mehrspielerspielen. Millionen von Kindern nutzen Roblox, um selbst zu erleben, wie es sich anfÃ¼hlt, den ultimativen VergnÃ¼gungspark zu bauen, als professioneller Rennfahrer anzutreten, bei einer Modenschau zu glÃ¤nzen oder einfach nur ein Traumhaus zu bauen und sich dort mit Freunden zu treffen.{lineBreak}{lineBreak}Durch diese E-Mail mÃ¶chten wir Ihnen mitteilen, dass Ihr Kind seinen Benutzernamen, Geburtstag und die E-Mail-Adresse seiner Eltern angegeben hat. Die E-Mail-Adresse der Eltern wird nur verwendet, um das Konto zu verwalten, vergessene PasswÃ¶rter zurÃ¼ckzusetzen und die Eltern darÃ¼ber zu benachrichtigen, wenn sich der Kontozugriff des Kinds Ã¤ndert. Um Ihre E-Mail-Adresse zu verifizieren, klicken Sie bitte auf die SchaltflÃ¤che unten:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Ãœber Roblox{lineBreak}{lineBreak}Roblox setzt sich dafÃ¼r ein, eine unterhaltsame, familienfreundliche Umgebung bereitzustellen. Wir verbessern unsere SicherheitsmaÃŸnahmen fortwÃ¤hrend und arbeiten mit Experten fÃ¼r digitale Sicherheit zusammen, um dafÃ¼r zu sorgen, dass allen Spielern ein sicherer, angenehmer Ort zum Spielen und Chatten sowie fÃ¼r gemeinsame, kreative Projekte zur VerfÃ¼gung steht. Wir empfehlen Ihnen, unseren Elternratgeber zu lesen, um sich mit unserer Plattform vertraut zu machen. Dort finden Sie auch hilfreiche Tipps, mit denen Sie ein positives Erlebnis fÃ¼r Ihre Kinder auf Roblox gewÃ¤hrleisten kÃ¶nnen: {parentalPageLink}{lineBreak}{lineBreak}Roblox bietet auch Jugendschutzeinstellungen. Eltern kÃ¶nnen eine Eltern-PIN aktivieren und die Kommunikations- und Chateinstellungen fÃ¼r ihre Kinder anpassen. Diese Einstellungen finden Sie in den Reitern fÃ¼r Sicherheit und Datenschutz in den Kontoeinstellungen, wÃ¤hrend Sie beim Konto Ihres Kindes angemeldet sind.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufÃ¼gen, besuchen Sie bitte: {accountSecurityLink}{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuchen Sie bitte: {chatPrivacyLink}{lineBreak}{lineBreak}Datenschutz{lineBreak}{lineBreak}Sie kÃ¶nnen das Konto deines Kindes entfernen, indem Sie den Kundenservice hier kontaktieren: {supportPageLink}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persÃ¶nlichen Daten, die wir von Ihrem Kind erhalten haben, verknÃ¼pft. Weitere Informationen kÃ¶nnen Sie unseren Datenschutzrichtlinien hier entnehmen: {privacyPageLink}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team{lineBreak}Bitte antworten Sie nicht direkt auf diese E-Mail.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyUnder13()
 	{
-		return "Hallo,{lineBreak}{lineBreak}Ihr Kind hat das Konto {username} auf Roblox erstellt. Roblox ist eine Online-Unterhaltungsplattform, auf der Kinder ihrer Fantasie freien Lauf lassen und gemeinsam in immersiven, von unseren Benutzern erschaffenen 3D-Welten spielen und Inhalte erstellen können. Unsere Plattform bietet auch ein kostenloses Entwickler-Tool namens „Roblox Studio“, mit dem Benutzer alles in ihrer Vorstellungskraft entwickeln können: von simplen Drag-and-Drop-Konstruktionen bis hin zu komplexen Mehrspielerspielen. Millionen von Kindern nutzen Roblox, um selbst zu erleben, wie es sich anfühlt, den ultimativen Vergnügungspark zu bauen, als professioneller Rennfahrer anzutreten, bei einer Modenschau zu glänzen oder einfach nur ein Traumhaus zu bauen und sich dort mit Freunden zu treffen.{lineBreak}{lineBreak}Durch diese E-Mail möchten wir Ihnen mitteilen, dass Ihr Kind seinen Benutzernamen, Geburtstag und die E-Mail-Adresse seiner Eltern angegeben hat. Die E-Mail-Adresse der Eltern wird nur verwendet, um das Konto zu verwalten, vergessene Passwörter zurückzusetzen und die Eltern darüber zu benachrichtigen, wenn sich der Kontozugriff des Kinds ändert. Um Ihre E-Mail-Adresse zu verifizieren, klicken Sie bitte auf die Schaltfläche unten:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Über Roblox{lineBreak}{lineBreak}Roblox setzt sich dafür ein, eine unterhaltsame, familienfreundliche Umgebung bereitzustellen. Wir verbessern unsere Sicherheitsmaßnahmen fortwährend und arbeiten mit Experten für digitale Sicherheit zusammen, um dafür zu sorgen, dass allen Spielern ein sicherer, angenehmer Ort zum Spielen und Chatten sowie für gemeinsame, kreative Projekte zur Verfügung steht. Wir empfehlen Ihnen, unseren Elternratgeber zu lesen, um sich mit unserer Plattform vertraut zu machen. Dort finden Sie auch hilfreiche Tipps, mit denen Sie ein positives Erlebnis für Ihre Kinder auf Roblox gewährleisten können: {parentalPageLink}{lineBreak}{lineBreak}Roblox bietet auch Jugendschutzeinstellungen. Eltern können eine Eltern-PIN aktivieren und die Kommunikations- und Chateinstellungen für ihre Kinder anpassen. Diese Einstellungen finden Sie in den Reitern für Sicherheit und Datenschutz in den Kontoeinstellungen, während Sie beim Konto Ihres Kindes angemeldet sind.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufügen, besuchen Sie bitte: {accountSecurityLink}{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuchen Sie bitte: {chatPrivacyLink}{lineBreak}{lineBreak}Datenschutz{lineBreak}{lineBreak}Sie können das Konto deines Kindes entfernen, indem Sie den Kundenservice hier kontaktieren: {supportPageLink}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persönlichen Daten, die wir von Ihrem Kind erhalten haben, verknüpft. Weitere Informationen können Sie unseren Datenschutzrichtlinien hier entnehmen: {privacyPageLink}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team{lineBreak}Bitte antworten Sie nicht direkt auf diese E-Mail.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return "Hallo,{lineBreak}{lineBreak}Ihr Kind hat das Konto {username} auf Roblox erstellt. Roblox ist eine Online-Unterhaltungsplattform, auf der Kinder ihrer Fantasie freien Lauf lassen und gemeinsam in immersiven, von unseren Benutzern erschaffenen 3D-Welten spielen und Inhalte erstellen kÃ¶nnen. Unsere Plattform bietet auch ein kostenloses Entwickler-Tool namens â€žRoblox Studioâ€œ, mit dem Benutzer alles in ihrer Vorstellungskraft entwickeln kÃ¶nnen: von simplen Drag-and-Drop-Konstruktionen bis hin zu komplexen Mehrspielerspielen. Millionen von Kindern nutzen Roblox, um selbst zu erleben, wie es sich anfÃ¼hlt, den ultimativen VergnÃ¼gungspark zu bauen, als professioneller Rennfahrer anzutreten, bei einer Modenschau zu glÃ¤nzen oder einfach nur ein Traumhaus zu bauen und sich dort mit Freunden zu treffen.{lineBreak}{lineBreak}Durch diese E-Mail mÃ¶chten wir Ihnen mitteilen, dass Ihr Kind seinen Benutzernamen, Geburtstag und die E-Mail-Adresse seiner Eltern angegeben hat. Die E-Mail-Adresse der Eltern wird nur verwendet, um das Konto zu verwalten, vergessene PasswÃ¶rter zurÃ¼ckzusetzen und die Eltern darÃ¼ber zu benachrichtigen, wenn sich der Kontozugriff des Kinds Ã¤ndert. Um Ihre E-Mail-Adresse zu verifizieren, klicken Sie bitte auf die SchaltflÃ¤che unten:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Ãœber Roblox{lineBreak}{lineBreak}Roblox setzt sich dafÃ¼r ein, eine unterhaltsame, familienfreundliche Umgebung bereitzustellen. Wir verbessern unsere SicherheitsmaÃŸnahmen fortwÃ¤hrend und arbeiten mit Experten fÃ¼r digitale Sicherheit zusammen, um dafÃ¼r zu sorgen, dass allen Spielern ein sicherer, angenehmer Ort zum Spielen und Chatten sowie fÃ¼r gemeinsame, kreative Projekte zur VerfÃ¼gung steht. Wir empfehlen Ihnen, unseren Elternratgeber zu lesen, um sich mit unserer Plattform vertraut zu machen. Dort finden Sie auch hilfreiche Tipps, mit denen Sie ein positives Erlebnis fÃ¼r Ihre Kinder auf Roblox gewÃ¤hrleisten kÃ¶nnen: {parentalPageLink}{lineBreak}{lineBreak}Roblox bietet auch Jugendschutzeinstellungen. Eltern kÃ¶nnen eine Eltern-PIN aktivieren und die Kommunikations- und Chateinstellungen fÃ¼r ihre Kinder anpassen. Diese Einstellungen finden Sie in den Reitern fÃ¼r Sicherheit und Datenschutz in den Kontoeinstellungen, wÃ¤hrend Sie beim Konto Ihres Kindes angemeldet sind.{lineBreak}{lineBreak}Um eine Eltern-PIN hinzuzufÃ¼gen, besuchen Sie bitte: {accountSecurityLink}{lineBreak}{lineBreak}Um die Chateinstellungen anzupassen, besuchen Sie bitte: {chatPrivacyLink}{lineBreak}{lineBreak}Datenschutz{lineBreak}{lineBreak}Sie kÃ¶nnen das Konto deines Kindes entfernen, indem Sie den Kundenservice hier kontaktieren: {supportPageLink}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persÃ¶nlichen Daten, die wir von Ihrem Kind erhalten haben, verknÃ¼pft. Weitere Informationen kÃ¶nnen Sie unseren Datenschutzrichtlinien hier entnehmen: {privacyPageLink}{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team{lineBreak}Bitte antworten Sie nicht direkt auf diese E-Mail.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	/// <summary>
@@ -2921,12 +2921,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyUnder13Part2(string chatPrivacyLink, string lineBreak, string supportPageLink, string privacyPageLink, string robloxWebiteLink)
 	{
-		return $"Um die Chateinstellungen anzupassen, besuchen Sie bitte: {chatPrivacyLink} {lineBreak}{lineBreak}Datenschutz{lineBreak}{lineBreak}Sie können das Konto Ihres Kindes löschen, indem Sie den Kundenservice hier kontaktieren: {supportPageLink}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persönlichen Daten, die wir von Ihrem Kind erhalten haben, verknüpft. Weitere Informationen können Sie unseren Datenschutzrichtlinien hier entnehmen: {privacyPageLink}.{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team{lineBreak}Bitte antworten Sie nicht direkt auf diese E-Mail.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return $"Um die Chateinstellungen anzupassen, besuchen Sie bitte: {chatPrivacyLink} {lineBreak}{lineBreak}Datenschutz{lineBreak}{lineBreak}Sie kÃ¶nnen das Konto Ihres Kindes lÃ¶schen, indem Sie den Kundenservice hier kontaktieren: {supportPageLink}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persÃ¶nlichen Daten, die wir von Ihrem Kind erhalten haben, verknÃ¼pft. Weitere Informationen kÃ¶nnen Sie unseren Datenschutzrichtlinien hier entnehmen: {privacyPageLink}.{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team{lineBreak}Bitte antworten Sie nicht direkt auf diese E-Mail.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyUnder13Part2()
 	{
-		return "Um die Chateinstellungen anzupassen, besuchen Sie bitte: {chatPrivacyLink} {lineBreak}{lineBreak}Datenschutz{lineBreak}{lineBreak}Sie können das Konto Ihres Kindes löschen, indem Sie den Kundenservice hier kontaktieren: {supportPageLink}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persönlichen Daten, die wir von Ihrem Kind erhalten haben, verknüpft. Weitere Informationen können Sie unseren Datenschutzrichtlinien hier entnehmen: {privacyPageLink}.{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team{lineBreak}Bitte antworten Sie nicht direkt auf diese E-Mail.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return "Um die Chateinstellungen anzupassen, besuchen Sie bitte: {chatPrivacyLink} {lineBreak}{lineBreak}Datenschutz{lineBreak}{lineBreak}Sie kÃ¶nnen das Konto Ihres Kindes lÃ¶schen, indem Sie den Kundenservice hier kontaktieren: {supportPageLink}. Ihre E-Mail-Adresse wird zu keinen anderen Zwecken verwendet und nicht an Dritte weitergegeben oder mit anderen persÃ¶nlichen Daten, die wir von Ihrem Kind erhalten haben, verknÃ¼pft. Weitere Informationen kÃ¶nnen Sie unseren Datenschutzrichtlinien hier entnehmen: {privacyPageLink}.{lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team{lineBreak}Bitte antworten Sie nicht direkt auf diese E-Mail.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailSubjectOver13()
@@ -3001,27 +3001,27 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingDialogAddPassword()
 	{
-		return "Passwort hinzufügen";
+		return "Passwort hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForHeadingDialogAddPhone()
 	{
-		return "Handy hinzufügen";
+		return "Handy hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangeEmail()
 	{
-		return "Meine E-Mail-Adresse ändern";
+		return "Meine E-Mail-Adresse Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangeEmailConfirmation()
 	{
-		return "E-Mail-Adresse geändert";
+		return "E-Mail-Adresse geÃ¤ndert";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangePassword()
 	{
-		return "Passwort ändern";
+		return "Passwort Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangePasswordConfirmation()
@@ -3036,7 +3036,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingDialogChangeUsername()
 	{
-		return "Benutzernamen ändern";
+		return "Benutzernamen Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForHeadingDialogDefaultError()
@@ -3056,17 +3056,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingDialogInsufficientFunds()
 	{
-		return "Nicht genügend Guthaben";
+		return "Nicht genÃ¼gend Guthaben";
 	}
 
 	protected override string _GetTemplateForHeadingDialogInvalidUsername()
 	{
-		return "Ungültiger Benutzername";
+		return "UngÃ¼ltiger Benutzername";
 	}
 
 	protected override string _GetTemplateForHeadingDialogPinCreate()
 	{
-		return "PIN hinzufügen";
+		return "PIN hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForHeadingDialogPinCreateSuccessConfirmation()
@@ -3111,7 +3111,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingNotificationOptions()
 	{
-		return "Ich möchte eine Benachrichtigung, wenn:";
+		return "Ich mÃ¶chte eine Benachrichtigung, wenn:";
 	}
 
 	protected override string _GetTemplateForHeadingNotifications()
@@ -3121,7 +3121,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingNotificationsActionWhen()
 	{
-		return "Ich möchte eine Benachrichtigung, wenn:";
+		return "Ich mÃ¶chte eine Benachrichtigung, wenn:";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsDesktopPush()
@@ -3131,7 +3131,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingNotificationsMobilePush()
 	{
-		return "Mobilgerät-Push-Benachrichtigung";
+		return "MobilgerÃ¤t-Push-Benachrichtigung";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsStream()
@@ -3156,7 +3156,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingPersonal()
 	{
-		return "Persönliches";
+		return "PersÃ¶nliches";
 	}
 
 	protected override string _GetTemplateForHeadingPin()
@@ -3171,12 +3171,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingRenevalDate()
 	{
-		return "Verlängerungsdatum";
+		return "VerlÃ¤ngerungsdatum";
 	}
 
 	protected override string _GetTemplateForHeadingRestrictions()
 	{
-		return "Kontoeinschränkungen";
+		return "KontoeinschrÃ¤nkungen";
 	}
 
 	protected override string _GetTemplateForHeadingSecureSignOut()
@@ -3191,7 +3191,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingSocialSignOn()
 	{
-		return "Über soziales Netzwerk anmelden";
+		return "Ãœber soziales Netzwerk anmelden";
 	}
 
 	protected override string _GetTemplateForHeadingSuccessDialogTitle()
@@ -3256,17 +3256,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelAccountRestrictionDisabled()
 	{
-		return "Kontoeinschränkungen sind derzeit deaktiviert";
+		return "KontoeinschrÃ¤nkungen sind derzeit deaktiviert";
 	}
 
 	protected override string _GetTemplateForLabelAccountRestrictionEnabled()
 	{
-		return "Kontoeinschränkungen sind derzeit aktiviert";
+		return "KontoeinschrÃ¤nkungen sind derzeit aktiviert";
 	}
 
 	protected override string _GetTemplateForLabelAddEmail()
 	{
-		return "E-Mail-Adresse hinzufügen";
+		return "E-Mail-Adresse hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelAddEmailParent()
@@ -3276,22 +3276,22 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelAddPassword()
 	{
-		return "Passwort hinzufügen:";
+		return "Passwort hinzufÃ¼gen:";
 	}
 
 	protected override string _GetTemplateForLabelAddPhone()
 	{
-		return "Handy hinzufügen";
+		return "Handy hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelAddPhoneLink()
 	{
-		return "Handy hinzufügen";
+		return "Handy hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelBillingHelp()
 	{
-		return "Für Fragen zu Zahlungen:";
+		return "FÃ¼r Fragen zu Zahlungen:";
 	}
 
 	/// <summary>
@@ -3300,12 +3300,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelBillingHelpWithLink(string aTagStartWithHref, string billingHelpPagesLink, string hrefEnd, string aTagEnd)
 	{
-		return $"Für Fragen zu Zahlungen besuche bitte die {aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}Hilfeseiten zu Zahlungen{aTagEnd}.";
+		return $"FÃ¼r Fragen zu Zahlungen besuche bitte die {aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}Hilfeseiten zu Zahlungen{aTagEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelBillingHelpWithLink()
 	{
-		return "Für Fragen zu Zahlungen besuche bitte die {aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}Hilfeseiten zu Zahlungen{aTagEnd}.";
+		return "FÃ¼r Fragen zu Zahlungen besuche bitte die {aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}Hilfeseiten zu Zahlungen{aTagEnd}.";
 	}
 
 	/// <summary>
@@ -3339,7 +3339,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelBillingHistoryGeneralErrors()
 	{
-		return "Dienst ist derzeit deaktiviert. Bitte versuche es später erneut.";
+		return "Dienst ist derzeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryNoTransactions()
@@ -3378,12 +3378,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelChangeYourUsername()
 	{
-		return "Ändere deinen Benutzernamen";
+		return "Ã„ndere deinen Benutzernamen";
 	}
 
 	protected override string _GetTemplateForLabelChooseLanguage()
 	{
-		return "Sprache wählen";
+		return "Sprache wÃ¤hlen";
 	}
 
 	protected override string _GetTemplateForLabelClassicTheme()
@@ -3398,7 +3398,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelCountry()
 	{
-		return "Land/Region wählen";
+		return "Land/Region wÃ¤hlen";
 	}
 
 	protected override string _GetTemplateForLabelCountryTitle()
@@ -3413,12 +3413,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelDialogAddEmailOver13()
 	{
-		return "Meine E-Mail-Adresse hinzufügen";
+		return "Meine E-Mail-Adresse hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddEmailUnder13()
 	{
-		return "E-Mail-Adresse deiner Eltern hinzufügen";
+		return "E-Mail-Adresse deiner Eltern hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddPhoneField()
@@ -3433,22 +3433,22 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelDialogChangeEmailField()
 	{
-		return "Meine E-Mail-Adresse ändern";
+		return "Meine E-Mail-Adresse Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeEmailOver13()
 	{
-		return "Meine E-Mail-Adresse ändern";
+		return "Meine E-Mail-Adresse Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeEmailUnder13()
 	{
-		return "E-Mail-Adresse deiner Eltern ändern";
+		return "E-Mail-Adresse deiner Eltern Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangePasswordConfirm()
 	{
-		return "Passwort bestätigen";
+		return "Passwort bestÃ¤tigen";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangePasswordCurrent()
@@ -3468,12 +3468,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelDialogChangeUsernameField()
 	{
-		return "Gewünschter Benutzername (3-20 Zeichen)";
+		return "GewÃ¼nschter Benutzername (3-20 Zeichen)";
 	}
 
 	protected override string _GetTemplateForLabelDialogConfirmPin()
 	{
-		return "Bestätige deine PIN";
+		return "BestÃ¤tige deine PIN";
 	}
 
 	/// <summary>
@@ -3497,7 +3497,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelDialogEmailAddressChanged()
 	{
-		return "E-Mail-Adresse geändert";
+		return "E-Mail-Adresse geÃ¤ndert";
 	}
 
 	protected override string _GetTemplateForLabelDialogEmailRequired()
@@ -3625,12 +3625,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelExpirationDateMessage(string startSpan, string expirationDate, string endSpan)
 	{
-		return $"Läuft am {startSpan}{expirationDate}{endSpan} ab";
+		return $"LÃ¤uft am {startSpan}{expirationDate}{endSpan} ab";
 	}
 
 	protected override string _GetTemplateForLabelExpirationDateMessage()
 	{
-		return "Läuft am {startSpan}{expirationDate}{endSpan} ab";
+		return "LÃ¤uft am {startSpan}{expirationDate}{endSpan} ab";
 	}
 
 	protected override string _GetTemplateForLabelFacebook()
@@ -3694,12 +3694,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelMembershipName(string startSpan, string endSpan)
 	{
-		return $"{startSpan}„Builders Club“{endSpan}-Mitgliedschaft";
+		return $"{startSpan}â€žBuilders Clubâ€œ{endSpan}-Mitgliedschaft";
 	}
 
 	protected override string _GetTemplateForLabelMembershipName()
 	{
-		return "{startSpan}„Builders Club“{endSpan}-Mitgliedschaft";
+		return "{startSpan}â€žBuilders Clubâ€œ{endSpan}-Mitgliedschaft";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusRobloxPremium()
@@ -3724,7 +3724,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelNotificationsDeveloperMetricsAvailable()
 	{
-		return "Analysebericht wird verfügbar";
+		return "Analysebericht wird verfÃ¼gbar";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsFriendRequestAccepted()
@@ -3739,12 +3739,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelNotificationsGameUpdate()
 	{
-		return "Benachrichtigungen über Updates erhalten";
+		return "Benachrichtigungen Ã¼ber Updates erhalten";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsPartyInvited()
 	{
-		return "Jemand mich in ein Team einlädt";
+		return "Jemand mich in ein Team einlÃ¤dt";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsPartyJoined()
@@ -3759,7 +3759,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelNotificationsTeamCreateInvite()
 	{
-		return "Jemand mich zum Bearbeiten eines Spiels einlädt";
+		return "Jemand mich zum Bearbeiten eines Spiels einlÃ¤dt";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
@@ -3813,7 +3813,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelRenevalDate()
 	{
-		return "Verlängerungsdatum";
+		return "VerlÃ¤ngerungsdatum";
 	}
 
 	/// <summary>
@@ -3822,12 +3822,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelRenevalDateMessage(string startSpan, string expirationDate, string endSpan)
 	{
-		return $"Automatische Verlängerung am {startSpan}{expirationDate}{endSpan}.";
+		return $"Automatische VerlÃ¤ngerung am {startSpan}{expirationDate}{endSpan}.";
 	}
 
 	protected override string _GetTemplateForLabelRenevalDateMessage()
 	{
-		return "Automatische Verlängerung am {startSpan}{expirationDate}{endSpan}.";
+		return "Automatische VerlÃ¤ngerung am {startSpan}{expirationDate}{endSpan}.";
 	}
 
 	/// <summary>
@@ -3890,7 +3890,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelToolTipContactSettings()
 	{
-		return "Benutzerdefiniert\u00a0– Lege deine Einstellungen selbst fest. Standard\u00a0– Ermöglicht Chats und Nachrichten mit Freunden. Aus\u00a0– Deaktiviert Chats und Nachrichten.";
+		return "Benutzerdefiniert\u00a0â€“ Lege deine Einstellungen selbst fest. Standard\u00a0â€“ ErmÃ¶glicht Chats und Nachrichten mit Freunden. Aus\u00a0â€“ Deaktiviert Chats und Nachrichten.";
 	}
 
 	protected override string _GetTemplateForLabelToolTipPinLocked()
@@ -3905,12 +3905,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelToolTipPrivacyMode()
 	{
-		return "Klicke hier für weitere Infos";
+		return "Klicke hier fÃ¼r weitere Infos";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanChatInApp()
 	{
-		return "Diese Einstellung bestimmt, mit wem dieser Benutzer in der App und im Internet (nicht im Spiel selbst) chatten darf. Mit dieser Einstellung wird zudem verhindert, dass dieser Benutzer in Foren und auf Gruppenpinnwänden posten kann.";
+		return "Diese Einstellung bestimmt, mit wem dieser Benutzer in der App und im Internet (nicht im Spiel selbst) chatten darf. Mit dieser Einstellung wird zudem verhindert, dass dieser Benutzer in Foren und auf GruppenpinnwÃ¤nden posten kann.";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanChatInGame()
@@ -3920,17 +3920,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelToolTipWhoCanFindMeByPhone()
 	{
-		return "Mit dieser Einstellung kannst du festlegen, wer dich über die von dir angegebene Handynummer finden kann.";
+		return "Mit dieser Einstellung kannst du festlegen, wer dich Ã¼ber die von dir angegebene Handynummer finden kann.";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanInviteVIP()
 	{
-		return "Diese Einstellung bestimmt, wer mit diesem Benutzer auf VIP-Servern spielen darf. Diese Server können nur über eine Einladung des Serverbesitzers betreten werden.";
+		return "Diese Einstellung bestimmt, wer mit diesem Benutzer auf VIP-Servern spielen darf. Diese Server kÃ¶nnen nur Ã¼ber eine Einladung des Serverbesitzers betreten werden.";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanJoinGame()
 	{
-		return "Diese Einstellung bestimmt, wer sehen kann, in welchem Spiel ich mich befinde und wer meinen Server betreten darf. Wenn ich „Niemand“ auswähle, bedeutet dies, dass mir niemand auf den von mir festgelegten Server folgen kann. Ich kann jedoch mit anderen Benutzern spielen.";
+		return "Diese Einstellung bestimmt, wer sehen kann, in welchem Spiel ich mich befinde und wer meinen Server betreten darf. Wenn ich â€žNiemandâ€œ auswÃ¤hle, bedeutet dies, dass mir niemand auf den von mir festgelegten Server folgen kann. Ich kann jedoch mit anderen Benutzern spielen.";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanMessageMe()
@@ -3945,7 +3945,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelTradeFilter()
 	{
-		return "Filter für Handelsqualität";
+		return "Filter fÃ¼r HandelsqualitÃ¤t";
 	}
 
 	protected override string _GetTemplateForLabelTwitch()
@@ -3970,12 +3970,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "Mach dein Konto sicherer. Wenn du dich von einem neuen Gerät aus anmeldest, benötigst du einen Code.";
+		return "Mach dein Konto sicherer. Wenn du dich von einem neuen GerÃ¤t aus anmeldest, benÃ¶tigst du einen Code.";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerificationEnabled()
 	{
-		return "Dein Konto ist geschützt!";
+		return "Dein Konto ist geschÃ¼tzt!";
 	}
 
 	protected override string _GetTemplateForLabelUpdateEmail()
@@ -3990,7 +3990,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelUseDeviceLanguage()
 	{
-		return "Gerätesprache verwenden";
+		return "GerÃ¤tesprache verwenden";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
@@ -4020,7 +4020,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelWhoCanFindMeByPhone()
 	{
-		return "Wer kann mich über meine Handynummer finden?";
+		return "Wer kann mich Ã¼ber meine Handynummer finden?";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanInviteVIP()
@@ -4060,7 +4060,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelInsufficientRobux()
 	{
-		return "Nicht genügend Robux";
+		return "Nicht genÃ¼gend Robux";
 	}
 
 	protected override string _GetTemplateForMessageErrorAccountHasPin()
@@ -4070,12 +4070,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessageErrorAccountLocked()
 	{
-		return "Das Konto ist gesperrt. Entsperre das Konto, bevor du die Handlung durchführst.";
+		return "Das Konto ist gesperrt. Entsperre das Konto, bevor du die Handlung durchfÃ¼hrst.";
 	}
 
 	protected override string _GetTemplateForMessageErrorDefault()
 	{
-		return "Ein Problem ist aufgetreten. Bitte versuche es später erneut.";
+		return "Ein Problem ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailAlreadyVerified()
@@ -4085,7 +4085,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessageErrorEmailFeatureDisabled()
 	{
-		return "Dieses Feature ist zur Zeit deaktiviert. Bitte versuche es später erneut.";
+		return "Dieses Feature ist zur Zeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailIncorrectPassword()
@@ -4095,7 +4095,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessageErrorEmailInvalidEmail()
 	{
-		return "Ungültige E-Mail-Adresse.";
+		return "UngÃ¼ltige E-Mail-Adresse.";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailNoEmailAssociated()
@@ -4120,12 +4120,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessageErrorEmailTooManyUpdates()
 	{
-		return "Zu viele Versuche, die E-Mail-Adresse zu aktualisieren. Bitte versuche es später erneut.";
+		return "Zu viele Versuche, die E-Mail-Adresse zu aktualisieren. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailTooManyVerify()
 	{
-		return "Zu viele Versuche, die E-Mail zur Verifizierung zu senden. Bitte versuche es später erneut.";
+		return "Zu viele Versuche, die E-Mail zur Verifizierung zu senden. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailUnknown()
@@ -4140,12 +4140,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessageErrorInvalidPinFormat()
 	{
-		return "Ungültiges PIN-Format.";
+		return "UngÃ¼ltiges PIN-Format.";
 	}
 
 	protected override string _GetTemplateForMessageErrorNoPin()
 	{
-		return "Für das Konto existiert keine PIN.";
+		return "FÃ¼r das Konto existiert keine PIN.";
 	}
 
 	protected override string _GetTemplateForMessageErrorNoVerifiedEmail()
@@ -4160,12 +4160,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessageErrorTooManyRequests()
 	{
-		return "Zu viele Anfragen gestellt. Versuche es später erneut.";
+		return "Zu viele Anfragen gestellt. Versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageEmailAddSuccess()
 	{
-		return "E-Mail-Adresse hinzugefügt";
+		return "E-Mail-Adresse hinzugefÃ¼gt";
 	}
 
 	protected override string _GetTemplateForMessageEmailAlreadyVerifiedError()
@@ -4175,17 +4175,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessageFeatureDisabledError()
 	{
-		return "Dieses Feature ist derzeit deaktiviert. Bitte versuche es später erneut.";
+		return "Dieses Feature ist derzeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientRobuxErrorForUserName()
 	{
-		return "Du hast nicht genügend Robux, um deinen Benutzernamen zu ändern.";
+		return "Du hast nicht genÃ¼gend Robux, um deinen Benutzernamen zu Ã¤ndern.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidEmail()
 	{
-		return "Ungültige E-Mail-Adresse";
+		return "UngÃ¼ltige E-Mail-Adresse";
 	}
 
 	protected override string _GetTemplateForMessageNoEmailAssociatedError()
@@ -4195,7 +4195,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
-		return "Du hast nicht genügend Robux, um deinen Benutzernamen zu ändern.";
+		return "Du hast nicht genÃ¼gend Robux, um deinen Benutzernamen zu Ã¤ndern.";
 	}
 
 	protected override string _GetTemplateForMessagePinLockedError()
@@ -4220,7 +4220,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForMessageTooManyAttemptsError()
 	{
-		return "Zu viele Versuche. Bitte versuche es später erneut.";
+		return "Zu viele Versuche. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
@@ -4235,12 +4235,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponesInvalidCodePhone()
 	{
-		return "Code ist ungültig. Bitte überprüfe dein Handy und versuche es erneut.";
+		return "Code ist ungÃ¼ltig. Bitte Ã¼berprÃ¼fe dein Handy und versuche es erneut.";
 	}
 
 	protected override string _GetTemplateForResponesInventoryAndTradePrivacyConflictError()
 	{
-		return "Der Wert bei „Wer kann mit mir handeln“ sollte im gleichen Maße oder eingeschränkter sein, als der Wert bei „Wer kann mein Inventar sehen“.";
+		return "Der Wert bei â€žWer kann mit mir handelnâ€œ sollte im gleichen MaÃŸe oder eingeschrÃ¤nkter sein, als der Wert bei â€žWer kann mein Inventar sehenâ€œ.";
 	}
 
 	protected override string _GetTemplateForResponseCodeRequired()
@@ -4250,32 +4250,32 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangeDefaultWarning()
 	{
-		return "Wenn du dein Alter auf unter 13 Jahre änderst, kannst du das nicht mehr rückgängig machen. Möchtest du wirklich fortfahren?";
+		return "Wenn du dein Alter auf unter 13 Jahre Ã¤nderst, kannst du das nicht mehr rÃ¼ckgÃ¤ngig machen. MÃ¶chtest du wirklich fortfahren?";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangePasswordBody()
 	{
-		return "Du musst ein Passwort zu deinem Roblox-Konto hinzufügen, um deinen Geburtstag ändern zu können.";
+		return "Du musst ein Passwort zu deinem Roblox-Konto hinzufÃ¼gen, um deinen Geburtstag Ã¤ndern zu kÃ¶nnen.";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangePasswordTitle()
 	{
-		return "Passwort muss hinzugefügt werden";
+		return "Passwort muss hinzugefÃ¼gt werden";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangeSocialWarning()
 	{
-		return "Wenn du dein Alter auf unter 13 Jahre änderst, kannst du das nicht mehr rückgängig machen. Deine Anmeldung über das soziale Netzwerk Facebook wird deaktiviert und du musst dich mit deinem Roblox-Passwort anmelden.";
+		return "Wenn du dein Alter auf unter 13 Jahre Ã¤nderst, kannst du das nicht mehr rÃ¼ckgÃ¤ngig machen. Deine Anmeldung Ã¼ber das soziale Netzwerk Facebook wird deaktiviert und du musst dich mit deinem Roblox-Passwort anmelden.";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordIncorrectPassword()
 	{
-		return "Dein aktuelles Passwort ist falsch, das Passwort wurde nicht geändert.";
+		return "Dein aktuelles Passwort ist falsch, das Passwort wurde nicht geÃ¤ndert.";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordNoMatch()
 	{
-		return "Passwörter stimmen nicht überein";
+		return "PasswÃ¶rter stimmen nicht Ã¼berein";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordTooShortError()
@@ -4290,7 +4290,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameNotAllowed()
 	{
-		return "Der Benutzername ist nicht geeignet für Roblox.";
+		return "Der Benutzername ist nicht geeignet fÃ¼r Roblox.";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameNotAvailable()
@@ -4300,22 +4300,22 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameSuccess()
 	{
-		return "Benutzername wurde erfolgreich geändert.";
+		return "Benutzername wurde erfolgreich geÃ¤ndert.";
 	}
 
 	protected override string _GetTemplateForResponseDialogCountryListError()
 	{
-		return "Fehler beim Laden der Länderliste";
+		return "Fehler beim Laden der LÃ¤nderliste";
 	}
 
 	protected override string _GetTemplateForResponseDialogCurrencyServiceError()
 	{
-		return "Beim Währungssystem ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+		return "Beim WÃ¤hrungssystem ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForResponseDialogDefaultErrorMessage()
 	{
-		return "Etwas ist schiefgelaufen. Bitte versuche es später erneut.";
+		return "Etwas ist schiefgelaufen. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForResponseDialogDefaultErrorTitle()
@@ -4330,7 +4330,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseDialogDisconnectXBoxError()
 	{
-		return "Beim Aufheben der Verbindung zu deinem Xbox-Konto ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+		return "Beim Aufheben der Verbindung zu deinem Xbox-Konto ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForResponseDialogEmailSentForVerification()
@@ -4340,17 +4340,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseDialogInvalidEmailAddress()
 	{
-		return "Ungültige E-Mail-Adresse";
+		return "UngÃ¼ltige E-Mail-Adresse";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidPhoneNumber()
 	{
-		return "Ungültige Handynummer";
+		return "UngÃ¼ltige Handynummer";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidUsername()
 	{
-		return "Wähle „Senden“, um das Ticket einzureichen oder „Abbrechen“, um den Benutzernamen zu bearbeiten. Bei deinem Benutzernamen handelt es sich um eine wichtige Information, durch die dein Problem schneller bearbeitet werden kann.";
+		return "WÃ¤hle â€žSendenâ€œ, um das Ticket einzureichen oder â€žAbbrechenâ€œ, um den Benutzernamen zu bearbeiten. Bei deinem Benutzernamen handelt es sich um eine wichtige Information, durch die dein Problem schneller bearbeitet werden kann.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPasswordRulesError()
@@ -4360,17 +4360,17 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseDialogPinCreateConfirmation()
 	{
-		return "Deine PIN wurde festgelegt. Um in Zukunft auf deine Einstellungsseite zugreifen zu können, musst du diese PIN eingeben.";
+		return "Deine PIN wurde festgelegt. Um in Zukunft auf deine Einstellungsseite zugreifen zu kÃ¶nnen, musst du diese PIN eingeben.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPinCreateMismatch()
 	{
-		return "Die PINs stimmen nicht überein.";
+		return "Die PINs stimmen nicht Ã¼berein.";
 	}
 
 	protected override string _GetTemplateForResponseDialogSignoutSessionFailed()
 	{
-		return "Beim Abmelden von allen anderen Sitzungen ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+		return "Beim Abmelden von allen anderen Sitzungen ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForResponseDialogSignoutSessionsConfirmation()
@@ -4380,7 +4380,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseDialogTwoStepDisableWarning()
 	{
-		return "Wenn du die Verifizierung in 2 Schritten ausschaltest, benötigst du nur dein Passwort, um dich über ein neues Gerät anzumelden. Bist du dir sicher?";
+		return "Wenn du die Verifizierung in 2 Schritten ausschaltest, benÃ¶tigst du nur dein Passwort, um dich Ã¼ber ein neues GerÃ¤t anzumelden. Bist du dir sicher?";
 	}
 
 	protected override string _GetTemplateForResponseDialogTwoStepSuccessTitle()
@@ -4390,27 +4390,27 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseDialogTwoStepSucessBody()
 	{
-		return "Dein Konto ist jetzt geschützt! Derzeit sind keine weiteren Aktionen erforderlich. Wenn du dich das nächste Mal über ein neues Gerät anmeldest, senden wir dir einen Sicherheitscode.";
+		return "Dein Konto ist jetzt geschÃ¼tzt! Derzeit sind keine weiteren Aktionen erforderlich. Wenn du dich das nÃ¤chste Mal Ã¼ber ein neues GerÃ¤t anmeldest, senden wir dir einen Sicherheitscode.";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateInventorySetting()
 	{
-		return "Wir haben deine Inventar-Datenschutzeinstellungen aktualisiert. Die Einstellungen für Inventar und Handel müssen übereinstimmen.";
+		return "Wir haben deine Inventar-Datenschutzeinstellungen aktualisiert. Die Einstellungen fÃ¼r Inventar und Handel mÃ¼ssen Ã¼bereinstimmen.";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateNotificationSettingsError()
 	{
-		return "Beim Aktualisieren deiner Benachrichtigungseinstellungen ist ein Fehler aufgetreten. Bitte versuche es später erneut.";
+		return "Beim Aktualisieren deiner Benachrichtigungseinstellungen ist ein Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateTradeSetting()
 	{
-		return "Wir haben deine Handel-Datenschutzeinstellungen aktualisiert. Die Einstellungen für Inventar und Handel müssen übereinstimmen.";
+		return "Wir haben deine Handel-Datenschutzeinstellungen aktualisiert. Die Einstellungen fÃ¼r Inventar und Handel mÃ¼ssen Ã¼bereinstimmen.";
 	}
 
 	protected override string _GetTemplateForResponseDialogVerifyPhoneInvalidCode()
 	{
-		return "Code ist ungültig. Bitte überprüfe dein Handy und versuche es erneut.";
+		return "Code ist ungÃ¼ltig. Bitte Ã¼berprÃ¼fe dein Handy und versuche es erneut.";
 	}
 
 	protected override string _GetTemplateForResponseDialogWarning()
@@ -4420,7 +4420,7 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseFeatureDisabled()
 	{
-		return "Dieses Feature ist derzeit deaktiviert. Bitte versuche es später erneut.";
+		return "Dieses Feature ist derzeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
@@ -4435,12 +4435,12 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponseIncorrectPasswordTryAgain()
 	{
-		return "Falsches Passwort. Bitte überprüfe dein Passwort und versuche es erneut.";
+		return "Falsches Passwort. Bitte Ã¼berprÃ¼fe dein Passwort und versuche es erneut.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidPhoneTryAgain()
 	{
-		return "Format der Handynummer ist ungültig. Bitte überprüfe die Nummer und versuche es erneut.";
+		return "Format der Handynummer ist ungÃ¼ltig. Bitte Ã¼berprÃ¼fe die Nummer und versuche es erneut.";
 	}
 
 	protected override string _GetTemplateForResponseNotificationBarPhoneRemovedConfirmation()
@@ -4460,16 +4460,19 @@ internal class AccountSettingsResources_de_de : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForResponsePinRequired()
 	{
-		return "Bitte gib deine PIN ein, um deine Einstellungen zu ändern.";
+		return "Bitte gib deine PIN ein, um deine Einstellungen zu Ã¤ndern.";
 	}
 
 	protected override string _GetTemplateForResponseSocialMediaValidationError()
 	{
-		return "Der Link über das soziale Netzwerk ist nicht gültig.";
+		return "Der Link Ã¼ber das soziale Netzwerk ist nicht gÃ¼ltig.";
 	}
 
 	protected override string _GetTemplateForResponseAgeDownError()
 	{
-		return "Du kannst dein Alter leider nicht auf unter 13 Jahre ändern. Falls du unter 13 bist, erstelle bitte ein neues Konto und kontaktiere den Support, um das alte zu löschen.";
+		return "Du kannst dein Alter leider nicht auf unter 13 Jahre Ã¤ndern. Falls du unter 13 bist, erstelle bitte ein neues Konto und kontaktiere den Support, um das alte zu lÃ¶schen.";
 	}
+}
+
+
 }

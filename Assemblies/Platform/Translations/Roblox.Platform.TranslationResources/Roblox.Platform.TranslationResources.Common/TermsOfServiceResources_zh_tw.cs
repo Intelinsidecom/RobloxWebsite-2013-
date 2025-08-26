@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TermsOfServiceResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class TermsOfServiceResources_zh_tw : TermsOfServiceResources_en_us, IT
 	/// Key: "Heading.TosAgreementTitle"
 	/// English String: "TERMS OF USE AGREEMENT"
 	/// </summary>
-	public override string HeadingTosAgreementTitle => "使用條款合約";
+	public override string HeadingTosAgreementTitle => "ä½¿ç”¨æ¢æ¬¾åˆç´„";
 
 	/// <summary>
 	/// Key: "Heading.TosHaveChangedTitle"
 	/// English String: "TERMS OF USE HAVE CHANGED"
 	/// </summary>
-	public override string HeadingTosHaveChangedTitle => "使用條款已變更";
+	public override string HeadingTosHaveChangedTitle => "ä½¿ç”¨æ¢æ¬¾å·²è®Šæ›´";
 
 	/// <summary>
 	/// Key: "Label.IAgree"
 	/// English String: "I AGREE"
 	/// </summary>
-	public override string LabelIAgree => "我同意";
+	public override string LabelIAgree => "æˆ‘åŒæ„";
 
 	public TermsOfServiceResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -31,17 +31,17 @@ internal class TermsOfServiceResources_zh_tw : TermsOfServiceResources_en_us, IT
 
 	protected override string _GetTemplateForHeadingTosAgreementTitle()
 	{
-		return "使用條款合約";
+		return "ä½¿ç”¨æ¢æ¬¾åˆç´„";
 	}
 
 	protected override string _GetTemplateForHeadingTosHaveChangedTitle()
 	{
-		return "使用條款已變更";
+		return "ä½¿ç”¨æ¢æ¬¾å·²è®Šæ›´";
 	}
 
 	protected override string _GetTemplateForLabelIAgree()
 	{
-		return "我同意";
+		return "æˆ‘åŒæ„";
 	}
 
 	/// <summary>
@@ -50,12 +50,12 @@ internal class TermsOfServiceResources_zh_tw : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageAgreeToTosAndPrivacyBody(string tosLinkStart, string tosLinkEnd, string privacyLinkStart, string privacyLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"按下「我同意」表示您同意{tosLinkStart}使用條款{tosLinkEnd}和{privacyLinkStart}隱私權政策{privacyLinkEnd}。若您想進一步了解所有更動，請前往{legalChangesLinkStart}此處{legalChangesLinkEnd}。";
+		return $"æŒ‰ä¸‹ã€Œæˆ‘åŒæ„ã€è¡¨ç¤ºæ‚¨åŒæ„{tosLinkStart}ä½¿ç”¨æ¢æ¬¾{tosLinkEnd}å’Œ{privacyLinkStart}éš±ç§æ¬Šæ”¿ç­–{privacyLinkEnd}ã€‚è‹¥æ‚¨æƒ³é€²ä¸€æ­¥äº†è§£æ‰€æœ‰æ›´å‹•ï¼Œè«‹å‰å¾€{legalChangesLinkStart}æ­¤è™•{legalChangesLinkEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAgreeToTosAndPrivacyBody()
 	{
-		return "按下「我同意」表示您同意{tosLinkStart}使用條款{tosLinkEnd}和{privacyLinkStart}隱私權政策{privacyLinkEnd}。若您想進一步了解所有更動，請前往{legalChangesLinkStart}此處{legalChangesLinkEnd}。";
+		return "æŒ‰ä¸‹ã€Œæˆ‘åŒæ„ã€è¡¨ç¤ºæ‚¨åŒæ„{tosLinkStart}ä½¿ç”¨æ¢æ¬¾{tosLinkEnd}å’Œ{privacyLinkStart}éš±ç§æ¬Šæ”¿ç­–{privacyLinkEnd}ã€‚è‹¥æ‚¨æƒ³é€²ä¸€æ­¥äº†è§£æ‰€æœ‰æ›´å‹•ï¼Œè«‹å‰å¾€{legalChangesLinkStart}æ­¤è™•{legalChangesLinkEnd}ã€‚";
 	}
 
 	/// <summary>
@@ -64,12 +64,12 @@ internal class TermsOfServiceResources_zh_tw : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreeChangeBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"按下「我同意」表示您同意{tosLinkStart}使用條款{tosLinkEnd}。您將授權 Roblox 在線上、線下及實體商品上使用您在 Roblox 創作的內容。若您想進一步了解所有更動，請前往{legalChangesLinkStart}此處{legalChangesLinkEnd}。";
+		return $"æŒ‰ä¸‹ã€Œæˆ‘åŒæ„ã€è¡¨ç¤ºæ‚¨åŒæ„{tosLinkStart}ä½¿ç”¨æ¢æ¬¾{tosLinkEnd}ã€‚æ‚¨å°‡æŽˆæ¬Š Roblox åœ¨ç·šä¸Šã€ç·šä¸‹åŠå¯¦é«”å•†å“ä¸Šä½¿ç”¨æ‚¨åœ¨ Roblox å‰µä½œçš„å…§å®¹ã€‚è‹¥æ‚¨æƒ³é€²ä¸€æ­¥äº†è§£æ‰€æœ‰æ›´å‹•ï¼Œè«‹å‰å¾€{legalChangesLinkStart}æ­¤è™•{legalChangesLinkEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreeChangeBody()
 	{
-		return "按下「我同意」表示您同意{tosLinkStart}使用條款{tosLinkEnd}。您將授權 Roblox 在線上、線下及實體商品上使用您在 Roblox 創作的內容。若您想進一步了解所有更動，請前往{legalChangesLinkStart}此處{legalChangesLinkEnd}。";
+		return "æŒ‰ä¸‹ã€Œæˆ‘åŒæ„ã€è¡¨ç¤ºæ‚¨åŒæ„{tosLinkStart}ä½¿ç”¨æ¢æ¬¾{tosLinkEnd}ã€‚æ‚¨å°‡æŽˆæ¬Š Roblox åœ¨ç·šä¸Šã€ç·šä¸‹åŠå¯¦é«”å•†å“ä¸Šä½¿ç”¨æ‚¨åœ¨ Roblox å‰µä½œçš„å…§å®¹ã€‚è‹¥æ‚¨æƒ³é€²ä¸€æ­¥äº†è§£æ‰€æœ‰æ›´å‹•ï¼Œè«‹å‰å¾€{legalChangesLinkStart}æ­¤è™•{legalChangesLinkEnd}ã€‚";
 	}
 
 	/// <summary>
@@ -78,11 +78,14 @@ internal class TermsOfServiceResources_zh_tw : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreementBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"按下「我同意」表示您同意{tosLinkStart}使用條款{tosLinkEnd}。您將授權 Roblox 在線上、線下及實體商品上使用您在 Roblox 創作的內容。若您想進一步了解所有更動，請前往{legalChangesLinkStart}此處{legalChangesLinkEnd}。";
+		return $"æŒ‰ä¸‹ã€Œæˆ‘åŒæ„ã€è¡¨ç¤ºæ‚¨åŒæ„{tosLinkStart}ä½¿ç”¨æ¢æ¬¾{tosLinkEnd}ã€‚æ‚¨å°‡æŽˆæ¬Š Roblox åœ¨ç·šä¸Šã€ç·šä¸‹åŠå¯¦é«”å•†å“ä¸Šä½¿ç”¨æ‚¨åœ¨ Roblox å‰µä½œçš„å…§å®¹ã€‚è‹¥æ‚¨æƒ³é€²ä¸€æ­¥äº†è§£æ‰€æœ‰æ›´å‹•ï¼Œè«‹å‰å¾€{legalChangesLinkStart}æ­¤è™•{legalChangesLinkEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreementBody()
 	{
-		return "按下「我同意」表示您同意{tosLinkStart}使用條款{tosLinkEnd}。您將授權 Roblox 在線上、線下及實體商品上使用您在 Roblox 創作的內容。若您想進一步了解所有更動，請前往{legalChangesLinkStart}此處{legalChangesLinkEnd}。";
+		return "æŒ‰ä¸‹ã€Œæˆ‘åŒæ„ã€è¡¨ç¤ºæ‚¨åŒæ„{tosLinkStart}ä½¿ç”¨æ¢æ¬¾{tosLinkEnd}ã€‚æ‚¨å°‡æŽˆæ¬Š Roblox åœ¨ç·šä¸Šã€ç·šä¸‹åŠå¯¦é«”å•†å“ä¸Šä½¿ç”¨æ‚¨åœ¨ Roblox å‰µä½œçš„å…§å®¹ã€‚è‹¥æ‚¨æƒ³é€²ä¸€æ­¥äº†è§£æ‰€æœ‰æ›´å‹•ï¼Œè«‹å‰å¾€{legalChangesLinkStart}æ­¤è™•{legalChangesLinkEnd}ã€‚";
 	}
+}
+
+
 }

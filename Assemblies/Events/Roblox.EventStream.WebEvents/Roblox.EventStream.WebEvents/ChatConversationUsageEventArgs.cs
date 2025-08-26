@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using Roblox.EventStream.WebEvents.EventArgs;
+using Roblox.EventStream.WebEvents;
+namespace Roblox.EventStream.WebEvents {
+    public class ChatConversationUsageEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class ChatConversationUsageEventArgs : WebEventArgs
 {
 	public DateTime EventTime { get; set; }
 
@@ -13,3 +14,10 @@ public class ChatConversationUsageEventArgs : WebEventArgs
 
 	public IReadOnlyCollection<long> ParticipantUserIds { get; set; }
 }
+
+
+}
+
+
+
+

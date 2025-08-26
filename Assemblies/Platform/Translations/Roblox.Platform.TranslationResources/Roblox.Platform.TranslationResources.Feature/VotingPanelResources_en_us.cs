@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class VotingPanelResources_en_us : TranslationResourcesBase, IVotingPanelResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class VotingPanelResources_en_us : TranslationResourcesBase, IVotingPanelResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -435,4 +434,7 @@ internal class VotingPanelResources_en_us : TranslationResourcesBase, IVotingPan
 	{
 		return "You must login to vote.";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ShopDialogResources_en_us : TranslationResourcesBase, IShopDialogResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ShopDialogResources_en_us : TranslationResourcesBase, IShopDialogResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -42,9 +41,9 @@ internal class ShopDialogResources_en_us : TranslationResourcesBase, IShopDialog
 
 	/// <summary>
 	/// Key: "Description.RetailWebsiteRedirect"
-	/// English String: "Heads up, Robloxian – by clicking “continue,” you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
+	/// English String: "Heads up, Robloxian â€“ by clicking â€œcontinue,â€ you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
 	/// </summary>
-	public virtual string DescriptionRetailWebsiteRedirect => "Heads up, Robloxian – by clicking “continue,” you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies.";
+	public virtual string DescriptionRetailWebsiteRedirect => "Heads up, Robloxian â€“ by clicking â€œcontinue,â€ you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies.";
 
 	/// <summary>
 	/// Key: "Heading.LeavingRoblox"
@@ -145,11 +144,14 @@ internal class ShopDialogResources_en_us : TranslationResourcesBase, IShopDialog
 
 	protected virtual string _GetTemplateForDescriptionRetailWebsiteRedirect()
 	{
-		return "Heads up, Robloxian – by clicking “continue,” you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies.";
+		return "Heads up, Robloxian â€“ by clicking â€œcontinue,â€ you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies.";
 	}
 
 	protected virtual string _GetTemplateForHeadingLeavingRoblox()
 	{
 		return "You are leaving Roblox";
 	}
+}
+
+
 }

@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Base class for events when a purchase was attempted
 /// </summary>
 public abstract class PurchaseEventBase : WebEventBase
@@ -13,3 +14,12 @@ public abstract class PurchaseEventBase : WebEventBase
 		AddEventArg("failureReason", args.FailureReason ?? string.Empty);
 	}
 }
+
+
+}
+
+
+
+
+
+

@@ -1,10 +1,13 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface ICaptchaResources : ITranslationResources
 
-public interface ICaptchaResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Response.CaptchaNotEnteredError"
 	/// English String: "Please fill out the Captcha"
 	/// </summary>
 	string ResponseCaptchaNotEnteredError { get; }
+}
+
+
 }

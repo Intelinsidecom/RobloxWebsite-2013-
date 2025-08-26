@@ -1,8 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 internal class SetUserGenderRequest
@@ -12,4 +11,6 @@ internal class SetUserGenderRequest
 
 	[DataMember(Name = "gender")]
 	public UserGender Gender { get; set; }
+}
+
 }

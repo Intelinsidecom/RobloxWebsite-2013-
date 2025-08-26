@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class CountryChangedByUserEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class CountryChangedByUserEvent : WebEventBase
 {
 	private const string _EventName = "countryChanged";
 
@@ -30,3 +30,12 @@ public class CountryChangedByUserEvent : WebEventBase
 		AddEventArg("actorId", countryChangedByUserEventArgs.ActorId.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

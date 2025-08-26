@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Localization.Accounts {
+    /// <summary>
 
-namespace Roblox.Platform.Localization.Accounts;
-
-/// <summary>
 /// Audit information on the AccountLocales data entry, comprising of the raw data (prefixed with "Audit") and additional metadata.
 /// </summary>
 public interface IAccountLocalesAuditCompositeEntry
@@ -62,4 +61,7 @@ public interface IAccountLocalesAuditCompositeEntry
 	/// </summary>
 	/// <returns>The name of our change agent, null if it can't be found.</returns>
 	string GetChangeAgentName();
+}
+
+
 }

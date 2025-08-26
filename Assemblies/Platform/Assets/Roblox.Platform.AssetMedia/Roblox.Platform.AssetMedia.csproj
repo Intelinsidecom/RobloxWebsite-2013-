@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.AssetMedia</AssemblyName>
@@ -47,10 +47,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
       <Project>
       </Project>
@@ -72,10 +68,6 @@
       </Project>
     </ProjectReference>
     <ProjectReference Include="..\\..\\Devices\\Roblox.Platform.Devices\\Roblox.Platform.Devices.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
       <Project>
       </Project>
     </ProjectReference>

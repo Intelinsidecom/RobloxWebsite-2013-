@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using Roblox.Configuration;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.RealTimeNotifications.Properties;
 using Roblox.Redis;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    static class UserNotificationRedisClientProvider
 
-namespace Roblox.RealTimeNotifications;
-
-public static class UserNotificationRedisClientProvider
 {
 	private const string _PerformanceCategory = "Roblox.Platform.Notifications.Redis";
 
@@ -36,4 +35,7 @@ public static class UserNotificationRedisClientProvider
 			Settings.Default.MonitorChanges((Settings s) => s.UserNotificationsRedisEndpointsV2, refresh);
 		}, "Roblox.Platform.Notifications.Redis", logger.Error);
 	}
+}
+
+
 }

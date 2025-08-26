@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PromotedChannelsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -39,7 +39,7 @@ internal class PromotedChannelsResources_fr_fr : PromotedChannelsResources_en_us
 	/// The heading of the social media panel on the game details page
 	/// English String: "Social Media"
 	/// </summary>
-	public override string HeadingSocialMedia => "Réseaux sociaux";
+	public override string HeadingSocialMedia => "RÃ©seaux sociaux";
 
 	/// <summary>
 	/// Key: "Label.Title"
@@ -74,56 +74,56 @@ internal class PromotedChannelsResources_fr_fr : PromotedChannelsResources_en_us
 	/// The message displayed when the social link has been removed.
 	/// English String: "The social media link has been deleted."
 	/// </summary>
-	public override string MessageSocialLinkRemoved => "Le lien vers les réseaux sociaux a été effacé.";
+	public override string MessageSocialLinkRemoved => "Le lien vers les rÃ©seaux sociaux a Ã©tÃ© effacÃ©.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinksEditDisabledError"
 	/// The error message displayed when the social links feature is disabled and attempt to be edited.
 	/// English String: "Social links may not be edited at this time."
 	/// </summary>
-	public override string MessageSocialLinksEditDisabledError => "Les liens sociaux ne peuvent être modifiés pour le moment.";
+	public override string MessageSocialLinksEditDisabledError => "Les liens sociaux ne peuvent Ãªtre modifiÃ©s pour le moment.";
 
 	/// <summary>
 	/// Key: "Message.TitleEmptyError"
 	/// The error message displayed when the title input is empty.
 	/// English String: "The title cannot be empty."
 	/// </summary>
-	public override string MessageTitleEmptyError => "Le titre ne peut pas être vide.";
+	public override string MessageTitleEmptyError => "Le titre ne peut pas Ãªtre vide.";
 
 	/// <summary>
 	/// Key: "Message.TitleModeratedError"
 	/// The error message displayed when a title is moderated while being edited.
 	/// English String: "The title has been moderated, please try something else."
 	/// </summary>
-	public override string MessageTitleModeratedError => "Le titre a été modéré, veuillez en essayer un autre.";
+	public override string MessageTitleModeratedError => "Le titre a Ã©tÃ© modÃ©rÃ©, veuillez en essayer un autre.";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedError"
 	/// The error message displayed when an action is attempted against a social link but the user does not have permission to edit social links.
 	/// English String: "You do not have permission to update social links."
 	/// </summary>
-	public override string MessageUnauthorizedError => "Vous n'avez pas la permission de mettre à jour les liens sociaux.";
+	public override string MessageUnauthorizedError => "Vous n'avez pas la permission de mettre Ã  jour les liens sociaux.";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// The error message displayed when something unknown goes wrong trying to manage a social link.
 	/// English String: "Something went wrong, please try again."
 	/// </summary>
-	public override string MessageUnknownError => "Un problème est survenu, veuillez réessayer.";
+	public override string MessageUnknownError => "Un problÃ¨me est survenu, veuillez rÃ©essayer.";
 
 	/// <summary>
 	/// Key: "Message.UrlEmptyError"
 	/// The error message displayed when the url input is empty.
 	/// English String: "The url cannot be empty."
 	/// </summary>
-	public override string MessageUrlEmptyError => "L'URL ne peut être vide.";
+	public override string MessageUrlEmptyError => "L'URL ne peut Ãªtre vide.";
 
 	/// <summary>
 	/// Key: "Message.UrlSocialMediaTypeMismatchError"
 	/// The error message displayed when the url input is not a valid url for the social media type selected.
 	/// English String: "The url must match the social media type."
 	/// </summary>
-	public override string MessageUrlSocialMediaTypeMismatchError => "L'URL doit correspondre au type de réseau social.";
+	public override string MessageUrlSocialMediaTypeMismatchError => "L'URL doit correspondre au type de rÃ©seau social.";
 
 	public PromotedChannelsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -152,7 +152,7 @@ internal class PromotedChannelsResources_fr_fr : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForHeadingSocialMedia()
 	{
-		return "Réseaux sociaux";
+		return "RÃ©seaux sociaux";
 	}
 
 	/// <summary>
@@ -162,12 +162,12 @@ internal class PromotedChannelsResources_fr_fr : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string LabelLimits(string socialLinkLimit)
 	{
-		return $"Vous pouvez ajouter jusqu'à {socialLinkLimit} liens sociaux.";
+		return $"Vous pouvez ajouter jusqu'Ã  {socialLinkLimit} liens sociaux.";
 	}
 
 	protected override string _GetTemplateForLabelLimits()
 	{
-		return "Vous pouvez ajouter jusqu'à {socialLinkLimit} liens sociaux.";
+		return "Vous pouvez ajouter jusqu'Ã  {socialLinkLimit} liens sociaux.";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
@@ -192,7 +192,7 @@ internal class PromotedChannelsResources_fr_fr : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageSocialLinkRemoved()
 	{
-		return "Le lien vers les réseaux sociaux a été effacé.";
+		return "Le lien vers les rÃ©seaux sociaux a Ã©tÃ© effacÃ©.";
 	}
 
 	/// <summary>
@@ -202,17 +202,17 @@ internal class PromotedChannelsResources_fr_fr : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkSaved(string title)
 	{
-		return $"{title} a été sauvegardé.";
+		return $"{title} a Ã©tÃ© sauvegardÃ©.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkSaved()
 	{
-		return "{title} a été sauvegardé.";
+		return "{title} a Ã©tÃ© sauvegardÃ©.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinksEditDisabledError()
 	{
-		return "Les liens sociaux ne peuvent être modifiés pour le moment.";
+		return "Les liens sociaux ne peuvent Ãªtre modifiÃ©s pour le moment.";
 	}
 
 	/// <summary>
@@ -222,41 +222,44 @@ internal class PromotedChannelsResources_fr_fr : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkTypeLimitError(string socialMediaType)
 	{
-		return $"Impossible d'avoir plus d'un lien pour le réseau social {socialMediaType}.";
+		return $"Impossible d'avoir plus d'un lien pour le rÃ©seau social {socialMediaType}.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkTypeLimitError()
 	{
-		return "Impossible d'avoir plus d'un lien pour le réseau social {socialMediaType}.";
+		return "Impossible d'avoir plus d'un lien pour le rÃ©seau social {socialMediaType}.";
 	}
 
 	protected override string _GetTemplateForMessageTitleEmptyError()
 	{
-		return "Le titre ne peut pas être vide.";
+		return "Le titre ne peut pas Ãªtre vide.";
 	}
 
 	protected override string _GetTemplateForMessageTitleModeratedError()
 	{
-		return "Le titre a été modéré, veuillez en essayer un autre.";
+		return "Le titre a Ã©tÃ© modÃ©rÃ©, veuillez en essayer un autre.";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedError()
 	{
-		return "Vous n'avez pas la permission de mettre à jour les liens sociaux.";
+		return "Vous n'avez pas la permission de mettre Ã  jour les liens sociaux.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "Un problème est survenu, veuillez réessayer.";
+		return "Un problÃ¨me est survenu, veuillez rÃ©essayer.";
 	}
 
 	protected override string _GetTemplateForMessageUrlEmptyError()
 	{
-		return "L'URL ne peut être vide.";
+		return "L'URL ne peut Ãªtre vide.";
 	}
 
 	protected override string _GetTemplateForMessageUrlSocialMediaTypeMismatchError()
 	{
-		return "L'URL doit correspondre au type de réseau social.";
+		return "L'URL doit correspondre au type de rÃ©seau social.";
 	}
+}
+
+
 }

@@ -1,13 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountCountriesAuditCompositeEntryAccessor : IAccountCountriesAuditCompositeEntryAccessor
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountCountriesAuditCompositeEntryAccessor : IAccountCountriesAuditCompositeEntryAccessor
 {
 	private readonly IAccountCountriesAuditMetadataEntityFactory _AccountCountriesAuditMetadataEntityFactory;
 
@@ -71,4 +70,7 @@ internal class AccountCountriesAuditCompositeEntryAccessor : IAccountCountriesAu
 	{
 		return _AuditCompositeEntryFactory.Create(metadata, entry);
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IDownloadAppResources : ITranslationResources
 
-public interface IDownloadAppResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.ContinueInApp"
@@ -71,4 +71,7 @@ public interface IDownloadAppResources : ITranslationResources
 	/// English String: "{reviewCount} reviews"
 	/// </summary>
 	string LabelReviewsCount(string reviewCount);
+}
+
+
 }

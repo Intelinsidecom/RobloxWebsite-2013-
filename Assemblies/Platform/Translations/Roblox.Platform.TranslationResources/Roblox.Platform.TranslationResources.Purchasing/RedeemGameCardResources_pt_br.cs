@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RedeemGameCardResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -32,7 +32,7 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// link text
 	/// English String: "Purchase Card"
 	/// </summary>
-	public override string ActionPurchaseCard => "Comprar cartão";
+	public override string ActionPurchaseCard => "Comprar cartÃ£o";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
@@ -46,42 +46,42 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// bullet point in a list
 	/// English String: "Combine cards for more Roblox credit."
 	/// </summary>
-	public override string DescriptionCombineCards => "Combine cartões para obter mais créditos Roblox.";
+	public override string DescriptionCombineCards => "Combine cartÃµes para obter mais crÃ©ditos Roblox.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.RobloxRedeemCard"
 	/// diglog main text
 	/// English String: "You must be logged in to your Roblox account to redeem your Game Card!"
 	/// </summary>
-	public override string DescriptionDialogRobloxRedeemCard => "Você precisa estar conectado com sua conta Roblox para utilizar seu cartão do jogo!";
+	public override string DescriptionDialogRobloxRedeemCard => "VocÃª precisa estar conectado com sua conta Roblox para utilizar seu cartÃ£o do jogo!";
 
 	/// <summary>
 	/// Key: "Description.LegalDisclaimer"
 	/// descrption text
 	/// English String: "Purchases can be made with only one form of payment. Game card credits cannot be combined with other forms of payment."
 	/// </summary>
-	public override string DescriptionLegalDisclaimer => "Compras podem ser feitas com apenas uma forma de pagamento. Créditos de cartão do jogo não podem ser combinados com outras formas de pagamento.";
+	public override string DescriptionLegalDisclaimer => "Compras podem ser feitas com apenas uma forma de pagamento. CrÃ©ditos de cartÃ£o do jogo nÃ£o podem ser combinados com outras formas de pagamento.";
 
 	/// <summary>
 	/// Key: "Description.RetailersInfo"
 	/// bullet point of a list
 	/// English String: "Buy a Roblox game card at one of the participating retailers or receive a Roblox gift card from someone."
 	/// </summary>
-	public override string DescriptionRetailersInfo => "Compre um cartão do jogo Roblox em um dos estabelecimentos participantes ou receba um cartão de presente de alguém.";
+	public override string DescriptionRetailersInfo => "Compre um cartÃ£o do jogo Roblox em um dos estabelecimentos participantes ou receba um cartÃ£o de presente de alguÃ©m.";
 
 	/// <summary>
 	/// Key: "Description.SpendRobloxCredit"
 	/// bullet point of a list
 	/// English String: "Spend your Roblox credit on Robux and Builders Club!"
 	/// </summary>
-	public override string DescriptionSpendRobloxCredit => "Gaste seus créditos Roblox com Robux e Builders Club!";
+	public override string DescriptionSpendRobloxCredit => "Gaste seus crÃ©ditos Roblox com Robux e Builders Club!";
 
 	/// <summary>
 	/// Key: "Description.TypeCardPin"
 	/// bullet point in a list
 	/// English String: "Type in your card PIN in the redeem section."
 	/// </summary>
-	public override string DescriptionTypeCardPin => "Digite o PIN do seu cartão na seção de utilizar.";
+	public override string DescriptionTypeCardPin => "Digite o PIN do seu cartÃ£o na seÃ§Ã£o de utilizar.";
 
 	/// <summary>
 	/// Key: "Heading.EnterPin"
@@ -95,7 +95,7 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// section heading
 	/// English String: "Get Roblox credit for"
 	/// </summary>
-	public override string HeadingGetRobloxCreditFor => "Obtenha créditos Roblox por";
+	public override string HeadingGetRobloxCreditFor => "Obtenha crÃ©ditos Roblox por";
 
 	/// <summary>
 	/// Key: "Heading.HowToRedeem"
@@ -116,28 +116,28 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// page heading
 	/// English String: "Redeem Roblox cards"
 	/// </summary>
-	public override string HeadingRedeemRobloxCards => "Utilizar cartões Roblox";
+	public override string HeadingRedeemRobloxCards => "Utilizar cartÃµes Roblox";
 
 	/// <summary>
 	/// Key: "Label.Dialog.RedeemGameCard"
 	/// dialog title
 	/// English String: "Redeem Roblox Game Card"
 	/// </summary>
-	public override string LabelDialogRedeemGameCard => "Utilizar cartão do jogo Roblox";
+	public override string LabelDialogRedeemGameCard => "Utilizar cartÃ£o do jogo Roblox";
 
 	/// <summary>
 	/// Key: "Label.NeedGameCard"
 	/// label
 	/// English String: "Need a Roblox game card?"
 	/// </summary>
-	public override string LabelNeedGameCard => "Precisa de um cartão do jogo Roblox?";
+	public override string LabelNeedGameCard => "Precisa de um cartÃ£o do jogo Roblox?";
 
 	/// <summary>
 	/// Key: "Label.PinCode"
 	/// please keep PIN capitalized if language supports capitalization
 	/// English String: "PIN Code"
 	/// </summary>
-	public override string LabelPinCode => "Código PIN";
+	public override string LabelPinCode => "CÃ³digo PIN";
 
 	/// <summary>
 	/// Key: "Label.RobuxRedeemed"
@@ -150,21 +150,21 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// label
 	/// English String: "Your Credit Balance:"
 	/// </summary>
-	public override string LabelYourBalance => "Seu saldo de créditos:";
+	public override string LabelYourBalance => "Seu saldo de crÃ©ditos:";
 
 	/// <summary>
 	/// Key: "Response.AlreadyRedeemedError"
 	/// error message
 	/// English String: "This gift card has already been redeemed."
 	/// </summary>
-	public override string ResponseAlreadyRedeemedError => "Este cartão de presente já foi utilizado.";
+	public override string ResponseAlreadyRedeemedError => "Este cartÃ£o de presente jÃ¡ foi utilizado.";
 
 	/// <summary>
 	/// Key: "Response.BonusPreview"
 	/// success message upsell text
 	/// English String: "Redeem one more Roblox card from GameStop to receive your bonus Robux."
 	/// </summary>
-	public override string ResponseBonusPreview => "Utilize mais um cartão Roblox da GameStop para receber seus Robux bônus.";
+	public override string ResponseBonusPreview => "Utilize mais um cartÃ£o Roblox da GameStop para receber seus Robux bÃ´nus.";
 
 	/// <summary>
 	/// Key: "Response.BuildersClubExtended"
@@ -178,7 +178,7 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// sub text on success message
 	/// English String: "Please allow up to 5 minutes for the changes to take effect."
 	/// </summary>
-	public override string ResponseBuildersClubExtendedSubText => "Dê-nos 5 minutos para que as alterações sejam realizadas.";
+	public override string ResponseBuildersClubExtendedSubText => "DÃª-nos 5 minutos para que as alteraÃ§Ãµes sejam realizadas.";
 
 	/// <summary>
 	/// Key: "Response.BuildersClubRedeemed"
@@ -192,21 +192,21 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// error message
 	/// English String: "No matching code found."
 	/// </summary>
-	public override string ResponseCodeNotFoundError => "O código não confere.";
+	public override string ResponseCodeNotFoundError => "O cÃ³digo nÃ£o confere.";
 
 	/// <summary>
 	/// Key: "Response.CouldNotFindObject"
 	/// error message
 	/// English String: "Could not find requested object."
 	/// </summary>
-	public override string ResponseCouldNotFindObject => "Impossível encontrar objeto solicitado.";
+	public override string ResponseCouldNotFindObject => "ImpossÃ­vel encontrar objeto solicitado.";
 
 	/// <summary>
 	/// Key: "Response.FeatureDisabledError"
 	/// error message
 	/// English String: "This feature is currently disabled."
 	/// </summary>
-	public override string ResponseFeatureDisabledError => "Esta funcionalidade está desabilitada.";
+	public override string ResponseFeatureDisabledError => "Esta funcionalidade estÃ¡ desabilitada.";
 
 	/// <summary>
 	/// Key: "Response.GenericError"
@@ -220,42 +220,42 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// error message
 	/// English String: "Invalid PIN"
 	/// </summary>
-	public override string ResponseInvalidPIN => "PIN inválido";
+	public override string ResponseInvalidPIN => "PIN invÃ¡lido";
 
 	/// <summary>
 	/// Key: "Response.LoginRequiredError"
 	/// error message
 	/// English String: "You must be logged in to perform this action."
 	/// </summary>
-	public override string ResponseLoginRequiredError => "Você precisa estar conectado para realizar esta ação.";
+	public override string ResponseLoginRequiredError => "VocÃª precisa estar conectado para realizar esta aÃ§Ã£o.";
 
 	/// <summary>
 	/// Key: "Response.ObjectNotFoundError"
 	/// error message
 	/// English String: "Could not find the requested object. Please try your request again and contact customer service if this problem persists."
 	/// </summary>
-	public override string ResponseObjectNotFoundError => "Impossível encontrar objeto solicitado. Tente solicitar novamente e contate o serviço ao cliente se o problema persistir.";
+	public override string ResponseObjectNotFoundError => "ImpossÃ­vel encontrar objeto solicitado. Tente solicitar novamente e contate o serviÃ§o ao cliente se o problema persistir.";
 
 	/// <summary>
 	/// Key: "Response.RedeemSuccess"
 	/// success message
 	/// English String: "You have successfully redeemed your card!"
 	/// </summary>
-	public override string ResponseRedeemSuccess => "Você utilizou seu cartão com sucesso!";
+	public override string ResponseRedeemSuccess => "VocÃª utilizou seu cartÃ£o com sucesso!";
 
 	/// <summary>
 	/// Key: "Response.TooManyCodesRedeemedError"
 	/// error message
 	/// English String: "Too many codes redeemed. Try your request again later."
 	/// </summary>
-	public override string ResponseTooManyCodesRedeemedError => "Códigos demais utilizados. Tente mais tarde.";
+	public override string ResponseTooManyCodesRedeemedError => "CÃ³digos demais utilizados. Tente mais tarde.";
 
 	/// <summary>
 	/// Key: "Response.TooManyRequestsError"
 	/// error messages
 	/// English String: "Too many failed request attempts. Try your request again later."
 	/// </summary>
-	public override string ResponseTooManyRequestsError => "Tentativas demais de solicitação fracassadas. Tente mais tarde.";
+	public override string ResponseTooManyRequestsError => "Tentativas demais de solicitaÃ§Ã£o fracassadas. Tente mais tarde.";
 
 	public RedeemGameCardResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -279,7 +279,7 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForActionPurchaseCard()
 	{
-		return "Comprar cartão";
+		return "Comprar cartÃ£o";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
@@ -289,17 +289,17 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForDescriptionCombineCards()
 	{
-		return "Combine cartões para obter mais créditos Roblox.";
+		return "Combine cartÃµes para obter mais crÃ©ditos Roblox.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogRobloxRedeemCard()
 	{
-		return "Você precisa estar conectado com sua conta Roblox para utilizar seu cartão do jogo!";
+		return "VocÃª precisa estar conectado com sua conta Roblox para utilizar seu cartÃ£o do jogo!";
 	}
 
 	protected override string _GetTemplateForDescriptionLegalDisclaimer()
 	{
-		return "Compras podem ser feitas com apenas uma forma de pagamento. Créditos de cartão do jogo não podem ser combinados com outras formas de pagamento.";
+		return "Compras podem ser feitas com apenas uma forma de pagamento. CrÃ©ditos de cartÃ£o do jogo nÃ£o podem ser combinados com outras formas de pagamento.";
 	}
 
 	/// <summary>
@@ -309,27 +309,27 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string DescriptionRetailerLink(string retailerLinkStart, string retailerLinkEnd)
 	{
-		return $"Compre um cartão do jogo Roblox em um dos {retailerLinkStart}estabelecimentos participantes{retailerLinkEnd} ou receba um cartão de presente de alguém. ";
+		return $"Compre um cartÃ£o do jogo Roblox em um dos {retailerLinkStart}estabelecimentos participantes{retailerLinkEnd} ou receba um cartÃ£o de presente de alguÃ©m. ";
 	}
 
 	protected override string _GetTemplateForDescriptionRetailerLink()
 	{
-		return "Compre um cartão do jogo Roblox em um dos {retailerLinkStart}estabelecimentos participantes{retailerLinkEnd} ou receba um cartão de presente de alguém. ";
+		return "Compre um cartÃ£o do jogo Roblox em um dos {retailerLinkStart}estabelecimentos participantes{retailerLinkEnd} ou receba um cartÃ£o de presente de alguÃ©m. ";
 	}
 
 	protected override string _GetTemplateForDescriptionRetailersInfo()
 	{
-		return "Compre um cartão do jogo Roblox em um dos estabelecimentos participantes ou receba um cartão de presente de alguém.";
+		return "Compre um cartÃ£o do jogo Roblox em um dos estabelecimentos participantes ou receba um cartÃ£o de presente de alguÃ©m.";
 	}
 
 	protected override string _GetTemplateForDescriptionSpendRobloxCredit()
 	{
-		return "Gaste seus créditos Roblox com Robux e Builders Club!";
+		return "Gaste seus crÃ©ditos Roblox com Robux e Builders Club!";
 	}
 
 	protected override string _GetTemplateForDescriptionTypeCardPin()
 	{
-		return "Digite o PIN do seu cartão na seção de utilizar.";
+		return "Digite o PIN do seu cartÃ£o na seÃ§Ã£o de utilizar.";
 	}
 
 	protected override string _GetTemplateForHeadingEnterPin()
@@ -339,7 +339,7 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForHeadingGetRobloxCreditFor()
 	{
-		return "Obtenha créditos Roblox por";
+		return "Obtenha crÃ©ditos Roblox por";
 	}
 
 	protected override string _GetTemplateForHeadingHowToRedeem()
@@ -354,22 +354,22 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForHeadingRedeemRobloxCards()
 	{
-		return "Utilizar cartões Roblox";
+		return "Utilizar cartÃµes Roblox";
 	}
 
 	protected override string _GetTemplateForLabelDialogRedeemGameCard()
 	{
-		return "Utilizar cartão do jogo Roblox";
+		return "Utilizar cartÃ£o do jogo Roblox";
 	}
 
 	protected override string _GetTemplateForLabelNeedGameCard()
 	{
-		return "Precisa de um cartão do jogo Roblox?";
+		return "Precisa de um cartÃ£o do jogo Roblox?";
 	}
 
 	protected override string _GetTemplateForLabelPinCode()
 	{
-		return "Código PIN";
+		return "CÃ³digo PIN";
 	}
 
 	protected override string _GetTemplateForLabelRobuxRedeemed()
@@ -379,17 +379,17 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForLabelYourBalance()
 	{
-		return "Seu saldo de créditos:";
+		return "Seu saldo de crÃ©ditos:";
 	}
 
 	protected override string _GetTemplateForResponseAlreadyRedeemedError()
 	{
-		return "Este cartão de presente já foi utilizado.";
+		return "Este cartÃ£o de presente jÃ¡ foi utilizado.";
 	}
 
 	protected override string _GetTemplateForResponseBonusPreview()
 	{
-		return "Utilize mais um cartão Roblox da GameStop para receber seus Robux bônus.";
+		return "Utilize mais um cartÃ£o Roblox da GameStop para receber seus Robux bÃ´nus.";
 	}
 
 	protected override string _GetTemplateForResponseBuildersClubExtended()
@@ -399,7 +399,7 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForResponseBuildersClubExtendedSubText()
 	{
-		return "Dê-nos 5 minutos para que as alterações sejam realizadas.";
+		return "DÃª-nos 5 minutos para que as alteraÃ§Ãµes sejam realizadas.";
 	}
 
 	protected override string _GetTemplateForResponseBuildersClubRedeemed()
@@ -409,17 +409,17 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForResponseCodeNotFoundError()
 	{
-		return "O código não confere.";
+		return "O cÃ³digo nÃ£o confere.";
 	}
 
 	protected override string _GetTemplateForResponseCouldNotFindObject()
 	{
-		return "Impossível encontrar objeto solicitado.";
+		return "ImpossÃ­vel encontrar objeto solicitado.";
 	}
 
 	protected override string _GetTemplateForResponseFeatureDisabledError()
 	{
-		return "Esta funcionalidade está desabilitada.";
+		return "Esta funcionalidade estÃ¡ desabilitada.";
 	}
 
 	protected override string _GetTemplateForResponseGenericError()
@@ -429,12 +429,12 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 
 	protected override string _GetTemplateForResponseInvalidPIN()
 	{
-		return "PIN inválido";
+		return "PIN invÃ¡lido";
 	}
 
 	protected override string _GetTemplateForResponseLoginRequiredError()
 	{
-		return "Você precisa estar conectado para realizar esta ação.";
+		return "VocÃª precisa estar conectado para realizar esta aÃ§Ã£o.";
 	}
 
 	/// <summary>
@@ -444,22 +444,22 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string ResponseMerchantNotFoundError(string authenticatedUserId, string cardPin)
 	{
-		return $"Usuário tentou utilizar Pin, mas o estabelecimento não existe. ID de usuário: {authenticatedUserId} Número de Pin: {cardPin}";
+		return $"UsuÃ¡rio tentou utilizar Pin, mas o estabelecimento nÃ£o existe. ID de usuÃ¡rio: {authenticatedUserId} NÃºmero de Pin: {cardPin}";
 	}
 
 	protected override string _GetTemplateForResponseMerchantNotFoundError()
 	{
-		return "Usuário tentou utilizar Pin, mas o estabelecimento não existe. ID de usuário: {authenticatedUserId} Número de Pin: {cardPin}";
+		return "UsuÃ¡rio tentou utilizar Pin, mas o estabelecimento nÃ£o existe. ID de usuÃ¡rio: {authenticatedUserId} NÃºmero de Pin: {cardPin}";
 	}
 
 	protected override string _GetTemplateForResponseObjectNotFoundError()
 	{
-		return "Impossível encontrar objeto solicitado. Tente solicitar novamente e contate o serviço ao cliente se o problema persistir.";
+		return "ImpossÃ­vel encontrar objeto solicitado. Tente solicitar novamente e contate o serviÃ§o ao cliente se o problema persistir.";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccess()
 	{
-		return "Você utilizou seu cartão com sucesso!";
+		return "VocÃª utilizou seu cartÃ£o com sucesso!";
 	}
 
 	/// <summary>
@@ -469,22 +469,22 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string ResponseRedeemSuccessForProduct(string productName)
 	{
-		return $"Você utilizou seu cartão com sucesso para {productName}";
+		return $"VocÃª utilizou seu cartÃ£o com sucesso para {productName}";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccessForProduct()
 	{
-		return "Você utilizou seu cartão com sucesso para {productName}";
+		return "VocÃª utilizou seu cartÃ£o com sucesso para {productName}";
 	}
 
 	protected override string _GetTemplateForResponseTooManyCodesRedeemedError()
 	{
-		return "Códigos demais utilizados. Tente mais tarde.";
+		return "CÃ³digos demais utilizados. Tente mais tarde.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyRequestsError()
 	{
-		return "Tentativas demais de solicitação fracassadas. Tente mais tarde.";
+		return "Tentativas demais de solicitaÃ§Ã£o fracassadas. Tente mais tarde.";
 	}
 
 	/// <summary>
@@ -494,12 +494,12 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string ResponseTwoCardsBonus(string robuxCount)
 	{
-		return $"Obrigado por utilizar dois cartões Roblox da GameStop. {robuxCount} Robux foram adicionados à sua conta.";
+		return $"Obrigado por utilizar dois cartÃµes Roblox da GameStop. {robuxCount} Robux foram adicionados Ã  sua conta.";
 	}
 
 	protected override string _GetTemplateForResponseTwoCardsBonus()
 	{
-		return "Obrigado por utilizar dois cartões Roblox da GameStop. {robuxCount} Robux foram adicionados à sua conta.";
+		return "Obrigado por utilizar dois cartÃµes Roblox da GameStop. {robuxCount} Robux foram adicionados Ã  sua conta.";
 	}
 
 	/// <summary>
@@ -509,11 +509,14 @@ internal class RedeemGameCardResources_pt_br : RedeemGameCardResources_en_us, IR
 	/// </summary>
 	public override string ResponseWalmartRewardUpsell(string rewardName)
 	{
-		return $"Utilize mais um cartão Roblox do Walmart para receber {rewardName}.";
+		return $"Utilize mais um cartÃ£o Roblox do Walmart para receber {rewardName}.";
 	}
 
 	protected override string _GetTemplateForResponseWalmartRewardUpsell()
 	{
-		return "Utilize mais um cartão Roblox do Walmart para receber {rewardName}.";
+		return "Utilize mais um cartÃ£o Roblox do Walmart para receber {rewardName}.";
 	}
+}
+
+
 }

@@ -3,11 +3,10 @@ using Newtonsoft.Json;
 using Roblox.Amazon.Sqs;
 using Roblox.Configuration;
 using Roblox.EventLog;
-using Roblox.Platform.Events.Properties;
+using Roblox.Events.Properties;
+namespace Roblox.Events {
+    internal class SqsEventPublisher : IEventPublisher
 
-namespace Roblox.Platform.Events;
-
-internal class SqsEventPublisher : IEventPublisher
 {
 	private SqsBatchSender _SqsPublisher;
 
@@ -60,4 +59,7 @@ internal class SqsEventPublisher : IEventPublisher
 		};
 		_SqsPublisher.SendMessage(JsonConvert.SerializeObject(wrapper));
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// An interface that contains details about the filtered text.
 /// </summary>
 /// <seealso cref="T:Roblox.TextFilter.ITextFilterResultModerationDetails" />
@@ -13,4 +13,7 @@ public interface ITextFilterRuleResult : ITextFilterResultModerationDetails
 	/// The filtered text.
 	/// </value>
 	string FilteredText { get; }
+}
+
+
 }

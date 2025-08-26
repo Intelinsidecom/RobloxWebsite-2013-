@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "Añadir amigo";
+	public override string ActionAddFriend => "AÃ±adir amigo";
 
 	/// <summary>
 	/// Key: "Action.BlockUser"
@@ -125,7 +125,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string ActionSeeMore => "Ver más";
+	public override string ActionSeeMore => "Ver mÃ¡s";
 
 	/// <summary>
 	/// Key: "Action.SlideshowView"
@@ -179,26 +179,26 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Description.BlockUserPrompt"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string DescriptionBlockUserPrompt => "¿Seguro que quieres bloquear a este usuario?";
+	public override string DescriptionBlockUserPrompt => "Â¿Seguro que quieres bloquear a este usuario?";
 
 	/// <summary>
 	/// Key: "Description.ChangeAlias"
 	/// English String: "Only you can see this information"
 	/// </summary>
-	public override string DescriptionChangeAlias => "Solo tú puedes ver esta información";
+	public override string DescriptionChangeAlias => "Solo tÃº puedes ver esta informaciÃ³n";
 
 	/// <summary>
 	/// Key: "Description.UnblockUserPrompt"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string DescriptionUnblockUserPrompt => "¿Seguro que quieres desbloquear a este usuario?";
+	public override string DescriptionUnblockUserPrompt => "Â¿Seguro que quieres desbloquear a este usuario?";
 
 	/// <summary>
 	/// Key: "Heading.AboutTab"
 	/// this is for the heading under About tab on profile page
 	/// English String: "About"
 	/// </summary>
-	public override string HeadingAboutTab => "Sobre mí";
+	public override string HeadingAboutTab => "Sobre mÃ­";
 
 	/// <summary>
 	/// Key: "Heading.BlockUserTitle"
@@ -294,13 +294,13 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Heading.Statistics"
 	/// English String: "Statistics"
 	/// </summary>
-	public override string HeadingStatistics => "Estadísticas";
+	public override string HeadingStatistics => "EstadÃ­sticas";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "Información";
+	public override string LabelAbout => "InformaciÃ³n";
 
 	/// <summary>
 	/// Key: "Label.Alias"
@@ -313,7 +313,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.BlockWarningBody"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string LabelBlockWarningBody => "¿Seguro que quieres bloquear a este usuario?";
+	public override string LabelBlockWarningBody => "Â¿Seguro que quieres bloquear a este usuario?";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningConfirm"
@@ -386,7 +386,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string LabelLoadMore => "Cargar más";
+	public override string LabelLoadMore => "Cargar mÃ¡s";
 
 	/// <summary>
 	/// Key: "Label.Members"
@@ -428,7 +428,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.ReadMore"
 	/// English String: "Read More"
 	/// </summary>
-	public override string LabelReadMore => "Más detalles";
+	public override string LabelReadMore => "MÃ¡s detalles";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
@@ -452,7 +452,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.UnblockWarningBody"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string LabelUnblockWarningBody => "¿Seguro que quieres desbloquear a este usuario?";
+	public override string LabelUnblockWarningBody => "Â¿Seguro que quieres desbloquear a este usuario?";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningConfirm"
@@ -476,7 +476,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Message.AliasHasError"
 	/// English String: "An error has occurred. Please try again later"
 	/// </summary>
-	public override string MessageAliasHasError => "Se ha producido un error. Inténtalo de nuevo más tarde";
+	public override string MessageAliasHasError => "Se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde";
 
 	/// <summary>
 	/// Key: "Message.AliasIsModerated"
@@ -488,13 +488,13 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Message.ChangeStatus"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string MessageChangeStatus => "¿Qué cuentas?";
+	public override string MessageChangeStatus => "Â¿QuÃ© cuentas?";
 
 	/// <summary>
 	/// Key: "Message.ErrorBlockLimit"
 	/// English String: "Operation failed! You may have blocked too many people."
 	/// </summary>
-	public override string MessageErrorBlockLimit => "No se ha podido llevar a cabo la operación. Quizá hayas bloqueado a demasiadas personas.";
+	public override string MessageErrorBlockLimit => "No se ha podido llevar a cabo la operaciÃ³n. QuizÃ¡ hayas bloqueado a demasiadas personas.";
 
 	/// <summary>
 	/// Key: "Message.ErrorGeneral"
@@ -527,7 +527,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "Añadir amigo";
+		return "AÃ±adir amigo";
 	}
 
 	protected override string _GetTemplateForActionBlockUser()
@@ -617,7 +617,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionSeeMore()
 	{
-		return "Ver más";
+		return "Ver mÃ¡s";
 	}
 
 	protected override string _GetTemplateForActionSlideshowView()
@@ -662,22 +662,22 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForDescriptionBlockUserPrompt()
 	{
-		return "¿Seguro que quieres bloquear a este usuario?";
+		return "Â¿Seguro que quieres bloquear a este usuario?";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeAlias()
 	{
-		return "Solo tú puedes ver esta información";
+		return "Solo tÃº puedes ver esta informaciÃ³n";
 	}
 
 	protected override string _GetTemplateForDescriptionUnblockUserPrompt()
 	{
-		return "¿Seguro que quieres desbloquear a este usuario?";
+		return "Â¿Seguro que quieres desbloquear a este usuario?";
 	}
 
 	protected override string _GetTemplateForHeadingAboutTab()
 	{
-		return "Sobre mí";
+		return "Sobre mÃ­";
 	}
 
 	protected override string _GetTemplateForHeadingBlockUserTitle()
@@ -771,12 +771,12 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForHeadingStatistics()
 	{
-		return "Estadísticas";
+		return "EstadÃ­sticas";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "Información";
+		return "InformaciÃ³n";
 	}
 
 	protected override string _GetTemplateForLabelAlias()
@@ -786,7 +786,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelBlockWarningBody()
 	{
-		return "¿Seguro que quieres bloquear a este usuario?";
+		return "Â¿Seguro que quieres bloquear a este usuario?";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningConfirm()
@@ -846,7 +846,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelLoadMore()
 	{
-		return "Cargar más";
+		return "Cargar mÃ¡s";
 	}
 
 	protected override string _GetTemplateForLabelMembers()
@@ -876,7 +876,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
+	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	public override string LabelQuotation(string userStatus)
@@ -896,7 +896,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelReadMore()
 	{
-		return "Más detalles";
+		return "MÃ¡s detalles";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
@@ -916,7 +916,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelUnblockWarningBody()
 	{
-		return "¿Seguro que quieres desbloquear a este usuario?";
+		return "Â¿Seguro que quieres desbloquear a este usuario?";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningConfirm()
@@ -936,7 +936,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForMessageAliasHasError()
 	{
-		return "Se ha producido un error. Inténtalo de nuevo más tarde";
+		return "Se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde";
 	}
 
 	protected override string _GetTemplateForMessageAliasIsModerated()
@@ -946,12 +946,12 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForMessageChangeStatus()
 	{
-		return "¿Qué cuentas?";
+		return "Â¿QuÃ© cuentas?";
 	}
 
 	protected override string _GetTemplateForMessageErrorBlockLimit()
 	{
-		return "No se ha podido llevar a cabo la operación. Quizá hayas bloqueado a demasiadas personas.";
+		return "No se ha podido llevar a cabo la operaciÃ³n. QuizÃ¡ hayas bloqueado a demasiadas personas.";
 	}
 
 	protected override string _GetTemplateForMessageErrorGeneral()
@@ -982,4 +982,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	{
 		return "Demasiados intentos";
 	}
+}
+
+
 }

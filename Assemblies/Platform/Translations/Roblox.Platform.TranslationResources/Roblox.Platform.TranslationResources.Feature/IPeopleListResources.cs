@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPeopleListResources : ITranslationResources
 
-public interface IPeopleListResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Buy"
@@ -48,4 +48,7 @@ public interface IPeopleListResources : ITranslationResources
 	/// English String: "Chat with {username}"
 	/// </summary>
 	string LabelChat(string username);
+}
+
+
 }

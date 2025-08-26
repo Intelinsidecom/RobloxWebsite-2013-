@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ISurveysGameRatingsResources : ITranslationResources
 
-public interface ISurveysGameRatingsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Description.AnswerToDoesThisGameContain.Frequently"
@@ -225,4 +225,7 @@ public interface ISurveysGameRatingsResources : ITranslationResources
 	/// English String: "Some realistic violence"
 	/// </summary>
 	string DescriptionViolenceQuestionSomeRealisticViolence { get; }
+}
+
+
 }

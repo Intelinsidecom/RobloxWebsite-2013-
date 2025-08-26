@@ -1,8 +1,7 @@
-using Roblox.Platform.Demographics;
+﻿using Roblox.Platform.Demographics;
+namespace Roblox.Localization.Accountspublic {
+    interface IAccountCountry
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public interface IAccountCountry
 {
 	/// <summary>
 	/// Account Id of a user
@@ -18,4 +17,7 @@ public interface IAccountCountry
 	/// If country set by user explicitly then field returns true
 	/// </summary>
 	bool IsVerified { get; }
+}
+
+
 }

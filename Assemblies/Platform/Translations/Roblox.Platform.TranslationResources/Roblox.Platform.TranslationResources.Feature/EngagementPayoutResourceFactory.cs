@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class EngagementPayoutResourceFactory
 
-internal static class EngagementPayoutResourceFactory
 {
 	public const string FullNamespace = "Feature.EngagementPayout";
 
@@ -21,4 +21,7 @@ internal static class EngagementPayoutResourceFactory
 			_ => new EngagementPayoutResources_en_us(state), 
 		};
 	}
+}
+
+
 }

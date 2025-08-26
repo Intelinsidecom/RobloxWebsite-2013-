@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class SocialResources_en_us : TranslationResourcesBase, ISocialResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class SocialResources_en_us : TranslationResourcesBase, ISocialResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -147,4 +146,7 @@ internal class SocialResources_en_us : TranslationResourcesBase, ISocialResource
 	{
 		return "Invalid Password.";
 	}
+}
+
+
 }

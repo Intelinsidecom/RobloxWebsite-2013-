@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.EphemeralCounterspublic {
+    interface ICounter
 
-namespace Roblox.EphemeralCounters;
-
-public interface ICounter
 {
 	long GetCount();
 
@@ -17,4 +16,7 @@ public interface ICounter
 	void DecrementInBackground(int value = 1, Action<Exception> exceptionHandler = null);
 
 	void Delete();
+}
+
+
 }

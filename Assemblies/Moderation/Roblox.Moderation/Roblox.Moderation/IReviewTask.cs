@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Membership.Core;
+namespace Roblox.Moderationpublic {
+    interface IReviewTask
 
-namespace Roblox.Platform.Moderation;
-
-public interface IReviewTask
 {
 	/// <summary>
 	/// The Id
@@ -25,4 +24,7 @@ public interface IReviewTask
 	/// The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleIdentifier">identifier</see> of the task's (supported) locale
 	/// </summary>
 	ISupportedLocaleIdentifier LocaleIdentifier { get; }
+}
+
+
 }

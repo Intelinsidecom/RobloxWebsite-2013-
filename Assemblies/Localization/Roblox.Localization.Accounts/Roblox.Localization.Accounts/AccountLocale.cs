@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Localization.Accounts {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Accounts;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocale : IRobloxEntity<long, AccountLocaleDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 {
 	private AccountLocaleDAL _EntityDAL;
@@ -157,4 +156,7 @@ internal class AccountLocale : IRobloxEntity<long, AccountLocaleDAL>, ICacheable
 	{
 		return $"AccountID:{accountId}";
 	}
+}
+
+
 }

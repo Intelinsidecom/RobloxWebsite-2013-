@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PremiumResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Action.Bought"
 	/// English String: "Bought"
 	/// </summary>
-	public override string ActionBought => "Achat effectué";
+	public override string ActionBought => "Achat effectuÃ©";
 
 	/// <summary>
 	/// Key: "Action.BuyNow"
@@ -28,25 +28,25 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Description.GetMoreRobux"
 	/// English String: "Get 10% more when purchasing Robux"
 	/// </summary>
-	public override string DescriptionGetMoreRobux => "Obtenez 10\u00a0% de Robux en plus pour le même prix.";
+	public override string DescriptionGetMoreRobux => "Obtenez 10\u00a0% de Robux en plus pour le mÃªme prix.";
 
 	/// <summary>
 	/// Key: "Description.RobloxPremiumSubtitle"
 	/// English String: "Joining Roblox Premium gets you a monthly Robux allowance and a 10% bonus when buying Robux. You will also get access to Roblox's economy features including buying, selling, and trading items, as well as increased revenue share on all sales in your games."
 	/// </summary>
-	public override string DescriptionRobloxPremiumSubtitle => "Rejoindre Roblox Premium te donne des Robux tous les mois et un bonus de 10% lorsque tu achètes des Robux. Tu auras également accès aux fonctionnalitées économiques de Roblox, incluant l'achat, la vent et l'échange d'objets. Ainsi qu'une part de revenu plus élevée pour toutes les ventes faites dans tes jeux.";
+	public override string DescriptionRobloxPremiumSubtitle => "Rejoindre Roblox Premium te donne des Robux tous les mois et un bonus de 10% lorsque tu achÃ¨tes des Robux. Tu auras Ã©galement accÃ¨s aux fonctionnalitÃ©es Ã©conomiques de Roblox, incluant l'achat, la vent et l'Ã©change d'objets. Ainsi qu'une part de revenu plus Ã©levÃ©e pour toutes les ventes faites dans tes jeux.";
 
 	/// <summary>
 	/// Key: "Description.SellMoreItems"
 	/// English String: "Resell items and get more Robux selling your creations"
 	/// </summary>
-	public override string DescriptionSellMoreItems => "Revendez des objets et obtenez plus de Robux grâce à vos créations.";
+	public override string DescriptionSellMoreItems => "Revendez des objets et obtenez plus de Robux grÃ¢ce Ã  vos crÃ©ations.";
 
 	/// <summary>
 	/// Key: "Description.Trade"
 	/// English String: "Trade items with other Premium members"
 	/// </summary>
-	public override string DescriptionTrade => "Échangez des objets avec les autres membres premium.";
+	public override string DescriptionTrade => "Ã‰changez des objets avec les autres membres premium.";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobux"
@@ -65,7 +65,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.EvenMoreFeatures"
 	/// English String: "Even more Features"
 	/// </summary>
-	public override string HeadingEvenMoreFeatures => "Encore plus de fonctionnalités";
+	public override string HeadingEvenMoreFeatures => "Encore plus de fonctionnalitÃ©s";
 
 	/// <summary>
 	/// Key: "Heading.GeneralError"
@@ -77,7 +77,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.PremiumRobuxDiscounts"
 	/// English String: "As a Premium user, you get discounts on Robux!"
 	/// </summary>
-	public override string HeadingPremiumRobuxDiscounts => "En tant qu'utilisateur premium, vous bénéficiez de réductions sur les Robux\u00a0!";
+	public override string HeadingPremiumRobuxDiscounts => "En tant qu'utilisateur premium, vous bÃ©nÃ©ficiez de rÃ©ductions sur les Robux\u00a0!";
 
 	/// <summary>
 	/// Key: "Heading.RobloxPremium"
@@ -102,7 +102,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.SwitchPlanModal"
 	/// English String: "Confirm Subscription Update"
 	/// </summary>
-	public override string HeadingSwitchPlanModal => "Confirmer la mise à jour de l'abonnement";
+	public override string HeadingSwitchPlanModal => "Confirmer la mise Ã  jour de l'abonnement";
 
 	/// <summary>
 	/// Key: "Heading.UnableToFindBc"
@@ -114,13 +114,13 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.UpgradeToPremium"
 	/// English String: "Upgrade to Roblox Premium"
 	/// </summary>
-	public override string HeadingUpgradeToPremium => "Abonne-toi à Roblox Premium";
+	public override string HeadingUpgradeToPremium => "Abonne-toi Ã  Roblox Premium";
 
 	/// <summary>
 	/// Key: "Heading.UpgradeUnavailable"
 	/// English String: "Upgrade Unavailable"
 	/// </summary>
-	public override string HeadingUpgradeUnavailable => "Mise à jour indisponible";
+	public override string HeadingUpgradeUnavailable => "Mise Ã  jour indisponible";
 
 	/// <summary>
 	/// Key: "Label.10PercentMoreRobux"
@@ -175,7 +175,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.Get10PercentOffRobux"
 	/// English String: "Get 10% off Robux"
 	/// </summary>
-	public override string LabelGet10PercentOffRobux => "Obtenez 10\u00a0% de réduction sur les Robux";
+	public override string LabelGet10PercentOffRobux => "Obtenez 10\u00a0% de rÃ©duction sur les Robux";
 
 	/// <summary>
 	/// Key: "Label.GetMoreRobux"
@@ -187,7 +187,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.MembershipManagementRecurring"
 	/// English String: "To manage your Premium subscription, please go to your Billing settings using a browser."
 	/// </summary>
-	public override string LabelMembershipManagementRecurring => "Pour gérer ton abonnement Premium, utilise les paramètres de facturation depuis un navigateur.";
+	public override string LabelMembershipManagementRecurring => "Pour gÃ©rer ton abonnement Premium, utilise les paramÃ¨tres de facturation depuis un navigateur.";
 
 	/// <summary>
 	/// Key: "Label.No"
@@ -254,7 +254,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Part 2 of a 2 part label
 	/// English String: "since you subscribed"
 	/// </summary>
-	public override string LabelSinceYouSubscribed => "grâce à votre abonnement";
+	public override string LabelSinceYouSubscribed => "grÃ¢ce Ã  votre abonnement";
 
 	/// <summary>
 	/// Key: "Label.Subscribe"
@@ -266,7 +266,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.Trade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string LabelTrade => "Échange";
+	public override string LabelTrade => "Ã‰change";
 
 	/// <summary>
 	/// Key: "Label.ValuePacks"
@@ -290,7 +290,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Message.GeneralError"
 	/// English String: "An error occurred while updating your subscription. Please try again later."
 	/// </summary>
-	public override string MessageGeneralError => "Une erreur est survenue lors de la mise à jour de votre abonnement. Veuillez réessayer plus tard.";
+	public override string MessageGeneralError => "Une erreur est survenue lors de la mise Ã  jour de votre abonnement. Veuillez rÃ©essayer plus tard.";
 
 	/// <summary>
 	/// Key: "Message.NoDataError"
@@ -302,7 +302,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Message.ServerError"
 	/// English String: "A server error occurred while updating your subscription. Please try again later."
 	/// </summary>
-	public override string MessageServerError => "Une erreur serveur est survenue lors de la mise à jour de votre abonnement. Veuillez réessayer plus tard.";
+	public override string MessageServerError => "Une erreur serveur est survenue lors de la mise Ã  jour de votre abonnement. Veuillez rÃ©essayer plus tard.";
 
 	/// <summary>
 	/// Key: "Message.UnableToFindBc"
@@ -314,14 +314,14 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// Key: "Message.UpgradeUnavailableModal"
 	/// English String: "We are sorry, we cannot change your subscription because there is currently no package equivalent to Lifetime Builders Club."
 	/// </summary>
-	public override string MessageUpgradeUnavailableModal => "Nous ne pouvons malheureusement pas modifier votre abonnement car il n'existe actuellement aucune option équivalente au Builders Club à vie.";
+	public override string MessageUpgradeUnavailableModal => "Nous ne pouvons malheureusement pas modifier votre abonnement car il n'existe actuellement aucune option Ã©quivalente au Builders Club Ã  vie.";
 
 	/// <summary>
 	/// Key: "SwitchPlanTitle"
 	/// Wrong string. Do translate this.
 	/// English String: "Confirm Subscription Update"
 	/// </summary>
-	public override string SwitchPlanTitle => "Confirmer la mise à jour de l'abonnement";
+	public override string SwitchPlanTitle => "Confirmer la mise Ã  jour de l'abonnement";
 
 	public PremiumResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -330,7 +330,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForActionBought()
 	{
-		return "Achat effectué";
+		return "Achat effectuÃ©";
 	}
 
 	protected override string _GetTemplateForActionBuyNow()
@@ -349,12 +349,12 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionBuyMoreRobuxSubtitle(string lineBreak, string learnMoreLinkStart, string learnMoreLinkEnd)
 	{
-		return $"Achetez des Robux pour acheter des améliorations d'avatar ou des capacités spéciales dans vos jeux.{lineBreak} Abonnez-vous à Roblox Premium pour obtenir plus de Robux chaque mois, en plus de fonctionnalités exclusives. Roblox Premium vous sera facturé chaque mois jusqu'à son annulation. {learnMoreLinkStart}En savoir plus{learnMoreLinkEnd}.";
+		return $"Achetez des Robux pour acheter des amÃ©liorations d'avatar ou des capacitÃ©s spÃ©ciales dans vos jeux.{lineBreak} Abonnez-vous Ã  Roblox Premium pour obtenir plus de Robux chaque mois, en plus de fonctionnalitÃ©s exclusives. Roblox Premium vous sera facturÃ© chaque mois jusqu'Ã  son annulation. {learnMoreLinkStart}En savoir plus{learnMoreLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyMoreRobuxSubtitle()
 	{
-		return "Achetez des Robux pour acheter des améliorations d'avatar ou des capacités spéciales dans vos jeux.{lineBreak} Abonnez-vous à Roblox Premium pour obtenir plus de Robux chaque mois, en plus de fonctionnalités exclusives. Roblox Premium vous sera facturé chaque mois jusqu'à son annulation. {learnMoreLinkStart}En savoir plus{learnMoreLinkEnd}.";
+		return "Achetez des Robux pour acheter des amÃ©liorations d'avatar ou des capacitÃ©s spÃ©ciales dans vos jeux.{lineBreak} Abonnez-vous Ã  Roblox Premium pour obtenir plus de Robux chaque mois, en plus de fonctionnalitÃ©s exclusives. Roblox Premium vous sera facturÃ© chaque mois jusqu'Ã  son annulation. {learnMoreLinkStart}En savoir plus{learnMoreLinkEnd}.";
 	}
 
 	/// <summary>
@@ -363,17 +363,17 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionBuyRobuxSubtitle(string helpLinkStart, string helpLinkEnd, string paragraphBreaker, string learnMoreLinkStart, string learnMoreLinkEnd)
 	{
-		return $"Obtenez des Robux pour acheter des améliorations d'avatar ou des capacités spéciales dans vos jeux. Pour plus d'informations sur comment gagner des Robux, rendez-vous sur la {helpLinkStart}page d'aide Robux{helpLinkEnd}.{paragraphBreaker}Achetez Roblox Premium pour obtenir plus de Robux par achat. Roblox Premium vous sera facturé chaque mois jusqu'à son annulation. {learnMoreLinkStart}En savoir plus\u00a0: {learnMoreLinkEnd}.";
+		return $"Obtenez des Robux pour acheter des amÃ©liorations d'avatar ou des capacitÃ©s spÃ©ciales dans vos jeux. Pour plus d'informations sur comment gagner des Robux, rendez-vous sur la {helpLinkStart}page d'aide Robux{helpLinkEnd}.{paragraphBreaker}Achetez Roblox Premium pour obtenir plus de Robux par achat. Roblox Premium vous sera facturÃ© chaque mois jusqu'Ã  son annulation. {learnMoreLinkStart}En savoir plus\u00a0: {learnMoreLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyRobuxSubtitle()
 	{
-		return "Obtenez des Robux pour acheter des améliorations d'avatar ou des capacités spéciales dans vos jeux. Pour plus d'informations sur comment gagner des Robux, rendez-vous sur la {helpLinkStart}page d'aide Robux{helpLinkEnd}.{paragraphBreaker}Achetez Roblox Premium pour obtenir plus de Robux par achat. Roblox Premium vous sera facturé chaque mois jusqu'à son annulation. {learnMoreLinkStart}En savoir plus\u00a0: {learnMoreLinkEnd}.";
+		return "Obtenez des Robux pour acheter des amÃ©liorations d'avatar ou des capacitÃ©s spÃ©ciales dans vos jeux. Pour plus d'informations sur comment gagner des Robux, rendez-vous sur la {helpLinkStart}page d'aide Robux{helpLinkEnd}.{paragraphBreaker}Achetez Roblox Premium pour obtenir plus de Robux par achat. Roblox Premium vous sera facturÃ© chaque mois jusqu'Ã  son annulation. {learnMoreLinkStart}En savoir plus\u00a0: {learnMoreLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionGetMoreRobux()
 	{
-		return "Obtenez 10\u00a0% de Robux en plus pour le même prix.";
+		return "Obtenez 10\u00a0% de Robux en plus pour le mÃªme prix.";
 	}
 
 	/// <summary>
@@ -382,12 +382,12 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionIosMonthlySubscriptionDisclosure(string costPrice, string renewalPrice)
 	{
-		return $"Roblox Premium est un abonnement mensuel qui coûte {costPrice}. Ce montant sera facturé au compte iTunes dès la confirmation de l'achat. Roblox Premium se renouvellera automatiquement, à moins que cette option soit désactivée au moins 24\u00a0heures avant la fin de la période actuelle. Un montant de {renewalPrice} sera facturé à votre compte pour le renouvellement dans les 24\u00a0heures précédant la fin de la période actuelle. Il est possible de gérer les abonnements et de désactiver le renouvellement automatique dans les paramètres de votre compte. Si vous avez moins de 18\u00a0ans, vérifiez d'avoir l'autorisation de vos parents ou de votre tuteur légal avant d'effectuer un achat. Tout achat non autorisé peut entraîner la suppression de votre compte.";
+		return $"Roblox Premium est un abonnement mensuel qui coÃ»te {costPrice}. Ce montant sera facturÃ© au compte iTunes dÃ¨s la confirmation de l'achat. Roblox Premium se renouvellera automatiquement, Ã  moins que cette option soit dÃ©sactivÃ©e au moins 24\u00a0heures avant la fin de la pÃ©riode actuelle. Un montant de {renewalPrice} sera facturÃ© Ã  votre compte pour le renouvellement dans les 24\u00a0heures prÃ©cÃ©dant la fin de la pÃ©riode actuelle. Il est possible de gÃ©rer les abonnements et de dÃ©sactiver le renouvellement automatique dans les paramÃ¨tres de votre compte. Si vous avez moins de 18\u00a0ans, vÃ©rifiez d'avoir l'autorisation de vos parents ou de votre tuteur lÃ©gal avant d'effectuer un achat. Tout achat non autorisÃ© peut entraÃ®ner la suppression de votre compte.";
 	}
 
 	protected override string _GetTemplateForDescriptionIosMonthlySubscriptionDisclosure()
 	{
-		return "Roblox Premium est un abonnement mensuel qui coûte {costPrice}. Ce montant sera facturé au compte iTunes dès la confirmation de l'achat. Roblox Premium se renouvellera automatiquement, à moins que cette option soit désactivée au moins 24\u00a0heures avant la fin de la période actuelle. Un montant de {renewalPrice} sera facturé à votre compte pour le renouvellement dans les 24\u00a0heures précédant la fin de la période actuelle. Il est possible de gérer les abonnements et de désactiver le renouvellement automatique dans les paramètres de votre compte. Si vous avez moins de 18\u00a0ans, vérifiez d'avoir l'autorisation de vos parents ou de votre tuteur légal avant d'effectuer un achat. Tout achat non autorisé peut entraîner la suppression de votre compte.";
+		return "Roblox Premium est un abonnement mensuel qui coÃ»te {costPrice}. Ce montant sera facturÃ© au compte iTunes dÃ¨s la confirmation de l'achat. Roblox Premium se renouvellera automatiquement, Ã  moins que cette option soit dÃ©sactivÃ©e au moins 24\u00a0heures avant la fin de la pÃ©riode actuelle. Un montant de {renewalPrice} sera facturÃ© Ã  votre compte pour le renouvellement dans les 24\u00a0heures prÃ©cÃ©dant la fin de la pÃ©riode actuelle. Il est possible de gÃ©rer les abonnements et de dÃ©sactiver le renouvellement automatique dans les paramÃ¨tres de votre compte. Si vous avez moins de 18\u00a0ans, vÃ©rifiez d'avoir l'autorisation de vos parents ou de votre tuteur lÃ©gal avant d'effectuer un achat. Tout achat non autorisÃ© peut entraÃ®ner la suppression de votre compte.";
 	}
 
 	/// <summary>
@@ -396,12 +396,12 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionIosSubscriptionDisclosure(string durationType, string costPrice, string renewalPrice)
 	{
-		return $"Roblox Premium est un abonnement de {durationType} qui coûte {costPrice}. Ce montant sera facturé au compte iTunes dès la confirmation de l'achat. Roblox Premium se renouvellera automatiquement, à moins que cette option soit désactivée au moins 24\u00a0heures avant la fin de la période actuelle. Un montant de {renewalPrice} sera facturé à votre compte pour le renouvellement dans les 24\u00a0heures précédant la fin de la période actuelle. Il est possible de gérer les abonnements et de désactiver le renouvellement automatique dans les paramètres de votre compte.";
+		return $"Roblox Premium est un abonnement de {durationType} qui coÃ»te {costPrice}. Ce montant sera facturÃ© au compte iTunes dÃ¨s la confirmation de l'achat. Roblox Premium se renouvellera automatiquement, Ã  moins que cette option soit dÃ©sactivÃ©e au moins 24\u00a0heures avant la fin de la pÃ©riode actuelle. Un montant de {renewalPrice} sera facturÃ© Ã  votre compte pour le renouvellement dans les 24\u00a0heures prÃ©cÃ©dant la fin de la pÃ©riode actuelle. Il est possible de gÃ©rer les abonnements et de dÃ©sactiver le renouvellement automatique dans les paramÃ¨tres de votre compte.";
 	}
 
 	protected override string _GetTemplateForDescriptionIosSubscriptionDisclosure()
 	{
-		return "Roblox Premium est un abonnement de {durationType} qui coûte {costPrice}. Ce montant sera facturé au compte iTunes dès la confirmation de l'achat. Roblox Premium se renouvellera automatiquement, à moins que cette option soit désactivée au moins 24\u00a0heures avant la fin de la période actuelle. Un montant de {renewalPrice} sera facturé à votre compte pour le renouvellement dans les 24\u00a0heures précédant la fin de la période actuelle. Il est possible de gérer les abonnements et de désactiver le renouvellement automatique dans les paramètres de votre compte.";
+		return "Roblox Premium est un abonnement de {durationType} qui coÃ»te {costPrice}. Ce montant sera facturÃ© au compte iTunes dÃ¨s la confirmation de l'achat. Roblox Premium se renouvellera automatiquement, Ã  moins que cette option soit dÃ©sactivÃ©e au moins 24\u00a0heures avant la fin de la pÃ©riode actuelle. Un montant de {renewalPrice} sera facturÃ© Ã  votre compte pour le renouvellement dans les 24\u00a0heures prÃ©cÃ©dant la fin de la pÃ©riode actuelle. Il est possible de gÃ©rer les abonnements et de dÃ©sactiver le renouvellement automatique dans les paramÃ¨tres de votre compte.";
 	}
 
 	/// <summary>
@@ -410,56 +410,56 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionlegalDisclosuresPremiumRobuxPage(string termsLinkStart, string termsLinkEnd)
 	{
-		return $"En achetant des Robux, vous recevez une autorisation limitée, non remboursable, non transférable et révocable d'utiliser des Robux qui n'ont aucune valeur en tant que monnaie réelle. Consultez les {termsLinkStart}Conditions d'utilisation{termsLinkEnd} pour plus de détails. Si vous avez moins de 18\u00a0ans, vérifiez d'avoir l'autorisation de vos parents ou de votre tuteur légal avant d'effectuer un achat. Tout achat non autorisé peut entraîner la suppression de votre compte.";
+		return $"En achetant des Robux, vous recevez une autorisation limitÃ©e, non remboursable, non transfÃ©rable et rÃ©vocable d'utiliser des Robux qui n'ont aucune valeur en tant que monnaie rÃ©elle. Consultez les {termsLinkStart}Conditions d'utilisation{termsLinkEnd} pour plus de dÃ©tails. Si vous avez moins de 18\u00a0ans, vÃ©rifiez d'avoir l'autorisation de vos parents ou de votre tuteur lÃ©gal avant d'effectuer un achat. Tout achat non autorisÃ© peut entraÃ®ner la suppression de votre compte.";
 	}
 
 	protected override string _GetTemplateForDescriptionlegalDisclosuresPremiumRobuxPage()
 	{
-		return "En achetant des Robux, vous recevez une autorisation limitée, non remboursable, non transférable et révocable d'utiliser des Robux qui n'ont aucune valeur en tant que monnaie réelle. Consultez les {termsLinkStart}Conditions d'utilisation{termsLinkEnd} pour plus de détails. Si vous avez moins de 18\u00a0ans, vérifiez d'avoir l'autorisation de vos parents ou de votre tuteur légal avant d'effectuer un achat. Tout achat non autorisé peut entraîner la suppression de votre compte.";
+		return "En achetant des Robux, vous recevez une autorisation limitÃ©e, non remboursable, non transfÃ©rable et rÃ©vocable d'utiliser des Robux qui n'ont aucune valeur en tant que monnaie rÃ©elle. Consultez les {termsLinkStart}Conditions d'utilisation{termsLinkEnd} pour plus de dÃ©tails. Si vous avez moins de 18\u00a0ans, vÃ©rifiez d'avoir l'autorisation de vos parents ou de votre tuteur lÃ©gal avant d'effectuer un achat. Tout achat non autorisÃ© peut entraÃ®ner la suppression de votre compte.";
 	}
 
 	/// <summary>
 	/// Key: "Description.legalDisclosuresPremiumUpgradePage"
-	/// English String: "If you are under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking “Submit Order” (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {termsLinkStart}Terms of Use{termsLinkEnd} and {privacyLinkStart}Privacy Policy{privatyLinkEnd}. You can cancel at any time by clicking “Cancel membership” on the {billingLinkStart}billing tab{billingLinkEnd}  of the setting page. If you cancel, you will still be charged for the current billing period."
+	/// English String: "If you are under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking â€œSubmit Orderâ€ (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {termsLinkStart}Terms of Use{termsLinkEnd} and {privacyLinkStart}Privacy Policy{privatyLinkEnd}. You can cancel at any time by clicking â€œCancel membershipâ€ on the {billingLinkStart}billing tab{billingLinkEnd}  of the setting page. If you cancel, you will still be charged for the current billing period."
 	/// </summary>
 	public override string DescriptionlegalDisclosuresPremiumUpgradePage(string termsLinkStart, string termsLinkEnd, string privacyLinkStart, string privatyLinkEnd, string billingLinkStart, string billingLinkEnd)
 	{
-		return $"Si vous avez moins de 18\u00a0ans, vérifiez d'avoir l'autorisation de vos parents ou de votre tuteur légal avant d'effectuer un achat. Tout achat non autorisé peut entraîner la suppression de votre compte. En cliquant sur «\u00a0Envoyer la commande\u00a0», (1) vous nous autorisez à facturer votre compte tous les mois jusqu'à annulation de l'abonnement, et (2) vous certifiez avoir lu et accepté les {termsLinkStart}Conditions d'utilisation{termsLinkEnd} et la {privacyLinkStart}Politique de confidentialité{privatyLinkEnd}. Vous pouvez annuler l'abonnement en cliquant sur le bouton «\u00a0Annulation d'abonnement\u00a0» situé dans l'{billingLinkStart}onglet de facturation{billingLinkEnd} de la page des paramètres. En cas d'annulation, la période en cours vous sera tout de même facturée.";
+		return $"Si vous avez moins de 18\u00a0ans, vÃ©rifiez d'avoir l'autorisation de vos parents ou de votre tuteur lÃ©gal avant d'effectuer un achat. Tout achat non autorisÃ© peut entraÃ®ner la suppression de votre compte. En cliquant sur Â«\u00a0Envoyer la commande\u00a0Â», (1) vous nous autorisez Ã  facturer votre compte tous les mois jusqu'Ã  annulation de l'abonnement, et (2) vous certifiez avoir lu et acceptÃ© les {termsLinkStart}Conditions d'utilisation{termsLinkEnd} et la {privacyLinkStart}Politique de confidentialitÃ©{privatyLinkEnd}. Vous pouvez annuler l'abonnement en cliquant sur le bouton Â«\u00a0Annulation d'abonnement\u00a0Â» situÃ© dans l'{billingLinkStart}onglet de facturation{billingLinkEnd} de la page des paramÃ¨tres. En cas d'annulation, la pÃ©riode en cours vous sera tout de mÃªme facturÃ©e.";
 	}
 
 	protected override string _GetTemplateForDescriptionlegalDisclosuresPremiumUpgradePage()
 	{
-		return "Si vous avez moins de 18\u00a0ans, vérifiez d'avoir l'autorisation de vos parents ou de votre tuteur légal avant d'effectuer un achat. Tout achat non autorisé peut entraîner la suppression de votre compte. En cliquant sur «\u00a0Envoyer la commande\u00a0», (1) vous nous autorisez à facturer votre compte tous les mois jusqu'à annulation de l'abonnement, et (2) vous certifiez avoir lu et accepté les {termsLinkStart}Conditions d'utilisation{termsLinkEnd} et la {privacyLinkStart}Politique de confidentialité{privatyLinkEnd}. Vous pouvez annuler l'abonnement en cliquant sur le bouton «\u00a0Annulation d'abonnement\u00a0» situé dans l'{billingLinkStart}onglet de facturation{billingLinkEnd} de la page des paramètres. En cas d'annulation, la période en cours vous sera tout de même facturée.";
+		return "Si vous avez moins de 18\u00a0ans, vÃ©rifiez d'avoir l'autorisation de vos parents ou de votre tuteur lÃ©gal avant d'effectuer un achat. Tout achat non autorisÃ© peut entraÃ®ner la suppression de votre compte. En cliquant sur Â«\u00a0Envoyer la commande\u00a0Â», (1) vous nous autorisez Ã  facturer votre compte tous les mois jusqu'Ã  annulation de l'abonnement, et (2) vous certifiez avoir lu et acceptÃ© les {termsLinkStart}Conditions d'utilisation{termsLinkEnd} et la {privacyLinkStart}Politique de confidentialitÃ©{privatyLinkEnd}. Vous pouvez annuler l'abonnement en cliquant sur le bouton Â«\u00a0Annulation d'abonnement\u00a0Â» situÃ© dans l'{billingLinkStart}onglet de facturation{billingLinkEnd} de la page des paramÃ¨tres. En cas d'annulation, la pÃ©riode en cours vous sera tout de mÃªme facturÃ©e.";
 	}
 
 	/// <summary>
 	/// Key: "Description.PremiumSubscriptionDisclosure"
 	/// Duplicated
-	/// English String: "If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking “Submit Order” (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {teamOfUseLinkStart}Terms of Use{teamOfUseLinkEnd} and {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You can cancel at any time by clicking “Cancel membership” on the {billingTabLinkStart}billing tab{billingTabLinkEnd} of the setting page. If you cancel, you will still be charged for the current billing period."
+	/// English String: "If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking â€œSubmit Orderâ€ (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {teamOfUseLinkStart}Terms of Use{teamOfUseLinkEnd} and {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You can cancel at any time by clicking â€œCancel membershipâ€ on the {billingTabLinkStart}billing tab{billingTabLinkEnd} of the setting page. If you cancel, you will still be charged for the current billing period."
 	/// </summary>
 	public override string DescriptionPremiumSubscriptionDisclosure(string teamOfUseLinkStart, string teamOfUseLinkEnd, string privacyPolicyLinkStart, string privacyPolicyLinkEnd, string billingTabLinkStart, string billingTabLinkEnd)
 	{
-		return $"Si vous avez moins de 18\u00a0ans, vérifiez d'avoir l'autorisation de vos parents ou de votre tuteur légal avant d'effectuer un achat. Tout achat non autorisé peut entraîner la suppression de votre compte. En cliquant sur «\u00a0Envoyer la commande\u00a0», (1) vous nous autorisez à facturer votre compte tous les mois jusqu'à annulation de l'abonnement, et (2) vous certifiez avoir lu et accepté les {teamOfUseLinkStart}Conditions d'utilisation{teamOfUseLinkEnd} et la {privacyPolicyLinkStart}Politique de confidentialité{privacyPolicyLinkEnd}. Vous pouvez annuler l'abonnement en cliquant sur le bouton «\u00a0Annulation d'abonnement\u00a0» situé dans l'{billingTabLinkStart}onglet de facturation{billingTabLinkEnd} de la page des paramètres. En cas d'annulation, la période en cours vous sera tout de même facturée.";
+		return $"Si vous avez moins de 18\u00a0ans, vÃ©rifiez d'avoir l'autorisation de vos parents ou de votre tuteur lÃ©gal avant d'effectuer un achat. Tout achat non autorisÃ© peut entraÃ®ner la suppression de votre compte. En cliquant sur Â«\u00a0Envoyer la commande\u00a0Â», (1) vous nous autorisez Ã  facturer votre compte tous les mois jusqu'Ã  annulation de l'abonnement, et (2) vous certifiez avoir lu et acceptÃ© les {teamOfUseLinkStart}Conditions d'utilisation{teamOfUseLinkEnd} et la {privacyPolicyLinkStart}Politique de confidentialitÃ©{privacyPolicyLinkEnd}. Vous pouvez annuler l'abonnement en cliquant sur le bouton Â«\u00a0Annulation d'abonnement\u00a0Â» situÃ© dans l'{billingTabLinkStart}onglet de facturation{billingTabLinkEnd} de la page des paramÃ¨tres. En cas d'annulation, la pÃ©riode en cours vous sera tout de mÃªme facturÃ©e.";
 	}
 
 	protected override string _GetTemplateForDescriptionPremiumSubscriptionDisclosure()
 	{
-		return "Si vous avez moins de 18\u00a0ans, vérifiez d'avoir l'autorisation de vos parents ou de votre tuteur légal avant d'effectuer un achat. Tout achat non autorisé peut entraîner la suppression de votre compte. En cliquant sur «\u00a0Envoyer la commande\u00a0», (1) vous nous autorisez à facturer votre compte tous les mois jusqu'à annulation de l'abonnement, et (2) vous certifiez avoir lu et accepté les {teamOfUseLinkStart}Conditions d'utilisation{teamOfUseLinkEnd} et la {privacyPolicyLinkStart}Politique de confidentialité{privacyPolicyLinkEnd}. Vous pouvez annuler l'abonnement en cliquant sur le bouton «\u00a0Annulation d'abonnement\u00a0» situé dans l'{billingTabLinkStart}onglet de facturation{billingTabLinkEnd} de la page des paramètres. En cas d'annulation, la période en cours vous sera tout de même facturée.";
+		return "Si vous avez moins de 18\u00a0ans, vÃ©rifiez d'avoir l'autorisation de vos parents ou de votre tuteur lÃ©gal avant d'effectuer un achat. Tout achat non autorisÃ© peut entraÃ®ner la suppression de votre compte. En cliquant sur Â«\u00a0Envoyer la commande\u00a0Â», (1) vous nous autorisez Ã  facturer votre compte tous les mois jusqu'Ã  annulation de l'abonnement, et (2) vous certifiez avoir lu et acceptÃ© les {teamOfUseLinkStart}Conditions d'utilisation{teamOfUseLinkEnd} et la {privacyPolicyLinkStart}Politique de confidentialitÃ©{privacyPolicyLinkEnd}. Vous pouvez annuler l'abonnement en cliquant sur le bouton Â«\u00a0Annulation d'abonnement\u00a0Â» situÃ© dans l'{billingTabLinkStart}onglet de facturation{billingTabLinkEnd} de la page des paramÃ¨tres. En cas d'annulation, la pÃ©riode en cours vous sera tout de mÃªme facturÃ©e.";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxPremiumSubtitle()
 	{
-		return "Rejoindre Roblox Premium te donne des Robux tous les mois et un bonus de 10% lorsque tu achètes des Robux. Tu auras également accès aux fonctionnalitées économiques de Roblox, incluant l'achat, la vent et l'échange d'objets. Ainsi qu'une part de revenu plus élevée pour toutes les ventes faites dans tes jeux.";
+		return "Rejoindre Roblox Premium te donne des Robux tous les mois et un bonus de 10% lorsque tu achÃ¨tes des Robux. Tu auras Ã©galement accÃ¨s aux fonctionnalitÃ©es Ã©conomiques de Roblox, incluant l'achat, la vent et l'Ã©change d'objets. Ainsi qu'une part de revenu plus Ã©levÃ©e pour toutes les ventes faites dans tes jeux.";
 	}
 
 	protected override string _GetTemplateForDescriptionSellMoreItems()
 	{
-		return "Revendez des objets et obtenez plus de Robux grâce à vos créations.";
+		return "Revendez des objets et obtenez plus de Robux grÃ¢ce Ã  vos crÃ©ations.";
 	}
 
 	protected override string _GetTemplateForDescriptionTrade()
 	{
-		return "Échangez des objets avec les autres membres premium.";
+		return "Ã‰changez des objets avec les autres membres premium.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobux()
@@ -474,7 +474,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingEvenMoreFeatures()
 	{
-		return "Encore plus de fonctionnalités";
+		return "Encore plus de fonctionnalitÃ©s";
 	}
 
 	protected override string _GetTemplateForHeadingGeneralError()
@@ -484,7 +484,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingPremiumRobuxDiscounts()
 	{
-		return "En tant qu'utilisateur premium, vous bénéficiez de réductions sur les Robux\u00a0!";
+		return "En tant qu'utilisateur premium, vous bÃ©nÃ©ficiez de rÃ©ductions sur les Robux\u00a0!";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxPremium()
@@ -504,7 +504,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingSwitchPlanModal()
 	{
-		return "Confirmer la mise à jour de l'abonnement";
+		return "Confirmer la mise Ã  jour de l'abonnement";
 	}
 
 	protected override string _GetTemplateForHeadingUnableToFindBc()
@@ -514,12 +514,12 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingUpgradeToPremium()
 	{
-		return "Abonne-toi à Roblox Premium";
+		return "Abonne-toi Ã  Roblox Premium";
 	}
 
 	protected override string _GetTemplateForHeadingUpgradeUnavailable()
 	{
-		return "Mise à jour indisponible";
+		return "Mise Ã  jour indisponible";
 	}
 
 	protected override string _GetTemplateForLabel10PercentMoreRobux()
@@ -564,7 +564,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelGet10PercentOffRobux()
 	{
-		return "Obtenez 10\u00a0% de réduction sur les Robux";
+		return "Obtenez 10\u00a0% de rÃ©duction sur les Robux";
 	}
 
 	protected override string _GetTemplateForLabelGetMoreRobux()
@@ -574,7 +574,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelMembershipManagementRecurring()
 	{
-		return "Pour gérer ton abonnement Premium, utilise les paramètres de facturation depuis un navigateur.";
+		return "Pour gÃ©rer ton abonnement Premium, utilise les paramÃ¨tres de facturation depuis un navigateur.";
 	}
 
 	/// <summary>
@@ -597,12 +597,12 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatusExpiration(string premiumSubscription, string expirationDate)
 	{
-		return $"Ton plan actuel est: {premiumSubscription}. Il expirera le {expirationDate}. Tu peux le renouveler ou acheter un nouveau plan une fois le plan actuel expiré. ";
+		return $"Ton plan actuel est: {premiumSubscription}. Il expirera le {expirationDate}. Tu peux le renouveler ou acheter un nouveau plan une fois le plan actuel expirÃ©. ";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusExpiration()
 	{
-		return "Ton plan actuel est: {premiumSubscription}. Il expirera le {expirationDate}. Tu peux le renouveler ou acheter un nouveau plan une fois le plan actuel expiré. ";
+		return "Ton plan actuel est: {premiumSubscription}. Il expirera le {expirationDate}. Tu peux le renouveler ou acheter un nouveau plan une fois le plan actuel expirÃ©. ";
 	}
 
 	/// <summary>
@@ -611,12 +611,12 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatusRecurring(string premiumSubscription, string renewal)
 	{
-		return $"Ton abonnement actuel est {premiumSubscription}. Il sera renouvellé le {renewal}";
+		return $"Ton abonnement actuel est {premiumSubscription}. Il sera renouvellÃ© le {renewal}";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusRecurring()
 	{
-		return "Ton abonnement actuel est {premiumSubscription}. Il sera renouvellé le {renewal}";
+		return "Ton abonnement actuel est {premiumSubscription}. Il sera renouvellÃ© le {renewal}";
 	}
 
 	protected override string _GetTemplateForLabelNo()
@@ -700,7 +700,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelSinceYouSubscribed()
 	{
-		return "grâce à votre abonnement";
+		return "grÃ¢ce Ã  votre abonnement";
 	}
 
 	protected override string _GetTemplateForLabelSubscribe()
@@ -724,7 +724,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelTrade()
 	{
-		return "Échange";
+		return "Ã‰change";
 	}
 
 	protected override string _GetTemplateForLabelValuePacks()
@@ -748,17 +748,17 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageConfirmCancellationModal(string newLine, string robuxAmount)
 	{
-		return $"En cliquant sur «\u00a0Confirmer\u00a0», vous mettrez fin à votre abonnement au Builders Club afin de vous inscrire à Roblox Premium.{newLine} Vous recevrez un paiement unique de {robuxAmount}";
+		return $"En cliquant sur Â«\u00a0Confirmer\u00a0Â», vous mettrez fin Ã  votre abonnement au Builders Club afin de vous inscrire Ã  Roblox Premium.{newLine} Vous recevrez un paiement unique de {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForMessageConfirmCancellationModal()
 	{
-		return "En cliquant sur «\u00a0Confirmer\u00a0», vous mettrez fin à votre abonnement au Builders Club afin de vous inscrire à Roblox Premium.{newLine} Vous recevrez un paiement unique de {robuxAmount}";
+		return "En cliquant sur Â«\u00a0Confirmer\u00a0Â», vous mettrez fin Ã  votre abonnement au Builders Club afin de vous inscrire Ã  Roblox Premium.{newLine} Vous recevrez un paiement unique de {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForMessageGeneralError()
 	{
-		return "Une erreur est survenue lors de la mise à jour de votre abonnement. Veuillez réessayer plus tard.";
+		return "Une erreur est survenue lors de la mise Ã  jour de votre abonnement. Veuillez rÃ©essayer plus tard.";
 	}
 
 	protected override string _GetTemplateForMessageNoDataError()
@@ -768,7 +768,7 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForMessageServerError()
 	{
-		return "Une erreur serveur est survenue lors de la mise à jour de votre abonnement. Veuillez réessayer plus tard.";
+		return "Une erreur serveur est survenue lors de la mise Ã  jour de votre abonnement. Veuillez rÃ©essayer plus tard.";
 	}
 
 	/// <summary>
@@ -777,12 +777,12 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageSubscriptionUnavailableModal(string expiredDate)
 	{
-		return $"Vous ne pouvez malheureusement pas vous abonner avant l'expiration de votre plan annulé. Veuillez vous abonner de nouveau le {expiredDate}.";
+		return $"Vous ne pouvez malheureusement pas vous abonner avant l'expiration de votre plan annulÃ©. Veuillez vous abonner de nouveau le {expiredDate}.";
 	}
 
 	protected override string _GetTemplateForMessageSubscriptionUnavailableModal()
 	{
-		return "Vous ne pouvez malheureusement pas vous abonner avant l'expiration de votre plan annulé. Veuillez vous abonner de nouveau le {expiredDate}.";
+		return "Vous ne pouvez malheureusement pas vous abonner avant l'expiration de votre plan annulÃ©. Veuillez vous abonner de nouveau le {expiredDate}.";
 	}
 
 	/// <summary>
@@ -791,12 +791,12 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageSwitchPlanBody(string price, string renewalDate)
 	{
-		return $"En cliquant sur «\u00a0Confirmer\u00a0», vous nous autorisez à vous facturer {price} tous les mois jusqu'à ce que vous annuliez ou modifiez votre abonnement, à partir du {renewalDate}";
+		return $"En cliquant sur Â«\u00a0Confirmer\u00a0Â», vous nous autorisez Ã  vous facturer {price} tous les mois jusqu'Ã  ce que vous annuliez ou modifiez votre abonnement, Ã  partir du {renewalDate}";
 	}
 
 	protected override string _GetTemplateForMessageSwitchPlanBody()
 	{
-		return "En cliquant sur «\u00a0Confirmer\u00a0», vous nous autorisez à vous facturer {price} tous les mois jusqu'à ce que vous annuliez ou modifiez votre abonnement, à partir du {renewalDate}";
+		return "En cliquant sur Â«\u00a0Confirmer\u00a0Â», vous nous autorisez Ã  vous facturer {price} tous les mois jusqu'Ã  ce que vous annuliez ou modifiez votre abonnement, Ã  partir du {renewalDate}";
 	}
 
 	protected override string _GetTemplateForMessageUnableToFindBc()
@@ -806,11 +806,14 @@ internal class PremiumResources_fr_fr : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForMessageUpgradeUnavailableModal()
 	{
-		return "Nous ne pouvons malheureusement pas modifier votre abonnement car il n'existe actuellement aucune option équivalente au Builders Club à vie.";
+		return "Nous ne pouvons malheureusement pas modifier votre abonnement car il n'existe actuellement aucune option Ã©quivalente au Builders Club Ã  vie.";
 	}
 
 	protected override string _GetTemplateForSwitchPlanTitle()
 	{
-		return "Confirmer la mise à jour de l'abonnement";
+		return "Confirmer la mise Ã  jour de l'abonnement";
 	}
+}
+
+
 }

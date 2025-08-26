@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class CaptchaResources_en_us : TranslationResourcesBase, ICaptchaResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class CaptchaResources_en_us : TranslationResourcesBase, ICaptchaResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -37,4 +36,7 @@ internal class CaptchaResources_en_us : TranslationResourcesBase, ICaptchaResour
 	{
 		return "Please fill out the Captcha";
 	}
+}
+
+
 }

@@ -133,13 +133,17 @@
           "dependencies": {
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.2, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
             }
           },
           "imports": [

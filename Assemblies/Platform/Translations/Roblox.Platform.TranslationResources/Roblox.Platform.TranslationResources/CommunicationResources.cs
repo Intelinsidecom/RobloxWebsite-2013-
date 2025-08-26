@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.TranslationResources.Communication;
+namespace Roblox.Platform.TranslationResourcesinternal {
+    class CommunicationResources : ICommunicationResources, ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-internal class CommunicationResources : ICommunicationResources, ITranslationResourcesNamespacesGroup
 {
 	private readonly Lazy<ICommonEmailResources> _ICommonEmailResources;
 
@@ -26,4 +25,7 @@ internal class CommunicationResources : ICommunicationResources, ITranslationRes
 		}
 		return null;
 	}
+}
+
+
 }

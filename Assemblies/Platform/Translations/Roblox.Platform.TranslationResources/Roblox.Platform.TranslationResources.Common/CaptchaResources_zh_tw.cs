@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CaptchaResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,21 +11,21 @@ internal class CaptchaResources_zh_tw : CaptchaResources_en_us, ICaptchaResource
 	/// Displayed when we fail to load captcha javascript from a third party provider. This has been known to occur in FireFox when "block trackers" is enabled - we need to let the user know that it might be due to their browser without implying that we are intentionally forcing them to turn off their ad/content blockers.
 	/// English String: "We need to verify that you are human. Please disable your browser blocker or try a different browser."
 	/// </summary>
-	public override string ResponseCaptchaErrorFailedToLoad => "我們需要進行真人驗證，請停用運作中的瀏覽器外掛或使用其它瀏覽器。";
+	public override string ResponseCaptchaErrorFailedToLoad => "æˆ‘å€‘éœ€è¦é€²è¡ŒçœŸäººé©—è­‰ï¼Œè«‹åœç”¨é‹ä½œä¸­çš„ç€è¦½å™¨å¤–æŽ›æˆ–ä½¿ç”¨å…¶å®ƒç€è¦½å™¨ã€‚";
 
 	/// <summary>
 	/// Key: "Response.CaptchaErrorFailedToVerify"
 	/// Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.
 	/// English String: "Temporary error. Please try again in a few minutes."
 	/// </summary>
-	public override string ResponseCaptchaErrorFailedToVerify => "發生錯誤，請稍後再試。";
+	public override string ResponseCaptchaErrorFailedToVerify => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.CaptchaErrorVerifyFailed"
 	/// Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.
 	/// English String: "Temporary error. Please try again in a few minutes"
 	/// </summary>
-	public override string ResponseCaptchaErrorVerifyFailed => "發生錯誤，請稍後再試。";
+	public override string ResponseCaptchaErrorVerifyFailed => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	public CaptchaResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -34,16 +34,19 @@ internal class CaptchaResources_zh_tw : CaptchaResources_en_us, ICaptchaResource
 
 	protected override string _GetTemplateForResponseCaptchaErrorFailedToLoad()
 	{
-		return "我們需要進行真人驗證，請停用運作中的瀏覽器外掛或使用其它瀏覽器。";
+		return "æˆ‘å€‘éœ€è¦é€²è¡ŒçœŸäººé©—è­‰ï¼Œè«‹åœç”¨é‹ä½œä¸­çš„ç€è¦½å™¨å¤–æŽ›æˆ–ä½¿ç”¨å…¶å®ƒç€è¦½å™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaErrorFailedToVerify()
 	{
-		return "發生錯誤，請稍後再試。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaErrorVerifyFailed()
 	{
-		return "發生錯誤，請稍後再試。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
+}
+
+
 }

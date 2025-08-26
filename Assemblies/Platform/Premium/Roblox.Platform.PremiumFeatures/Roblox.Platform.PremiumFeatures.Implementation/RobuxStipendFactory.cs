@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.PremiumFeatures.Interfaces;
+namespace Roblox.Platform.PremiumFeatures.Implementation {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Implementation;
-
-/// <summary>
 /// RobuxStipendFactory
 /// </summary>
 public class RobuxStipendFactory : IRobuxStipendFactory
@@ -53,4 +52,7 @@ public class RobuxStipendFactory : IRobuxStipendFactory
 		}
 		return null;
 	}
+}
+
+
 }

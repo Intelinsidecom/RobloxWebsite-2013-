@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class TranslationManagementResources_en_us : TranslationResourcesBase, ITranslationManagementResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class TranslationManagementResources_en_us : TranslationResourcesBase, ITranslationManagementResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -707,4 +706,7 @@ internal class TranslationManagementResources_en_us : TranslationResourcesBase, 
 	{
 		return "Too many files. Please upload up to 10 files only.";
 	}
+}
+
+
 }

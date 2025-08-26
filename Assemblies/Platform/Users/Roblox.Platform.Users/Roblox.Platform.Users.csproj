@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Users</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -11,25 +11,25 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.1" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\\..\\..\\Data\\Roblox.Data\\Roblox.Data.csproj">
+    <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
+    <ProjectReference Include="..\..\..\Caching\Roblox.Caching\Roblox.Caching.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj">
+    <ProjectReference Include="..\..\..\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj">
       <Project>
       </Project>
     </ProjectReference>

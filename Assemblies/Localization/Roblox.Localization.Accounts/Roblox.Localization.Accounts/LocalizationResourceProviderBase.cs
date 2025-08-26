@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Membership;
 using Roblox.TranslationResources;
+namespace Roblox.Localization.Accounts {
+    /// <inheritdoc />
 
-namespace Roblox.Platform.Localization.Accounts;
-
-/// <inheritdoc />
 /// <summary>
 /// An abstract class that implements the <see cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider" />.
 /// </summary>
@@ -46,4 +45,7 @@ public abstract class LocalizationResourceProviderBase : ILocalizationResourcePr
 
 	/// <inheritdoc cref="M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResourcesForSpecificLocale(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)" />
 	public abstract IMasterResources GetLocalizationResourcesForSpecificLocale(IUser user, SupportedLocaleEnum locale);
+}
+
+
 }

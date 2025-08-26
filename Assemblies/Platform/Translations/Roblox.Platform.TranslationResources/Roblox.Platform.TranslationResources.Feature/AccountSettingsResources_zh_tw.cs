@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AccountSettingsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,896 +10,896 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// Key: "Action.BillingHistoryLoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string ActionBillingHistoryLoadMore => "載入更多";
+	public override string ActionBillingHistoryLoadMore => "è¼‰å…¥æ›´å¤š";
 
 	/// <summary>
 	/// Key: "Action.CancelRenewal"
 	/// English String: "Cancel Renewal"
 	/// </summary>
-	public override string ActionCancelRenewal => "取消續訂";
+	public override string ActionCancelRenewal => "å–æ¶ˆçºŒè¨‚";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddEmail"
 	/// English String: "Add Email"
 	/// </summary>
-	public override string ActionDialogAddEmail => "新增電子郵件地址";
+	public override string ActionDialogAddEmail => "æ–°å¢žé›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string ActionDialogAddPhone => "新增手機號碼";
+	public override string ActionDialogAddPhone => "æ–°å¢žæ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionDialogCancel => "取消";
+	public override string ActionDialogCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangeEmail"
 	/// English String: "Change Email"
 	/// </summary>
-	public override string ActionDialogChangeEmail => "變更電子郵件地址";
+	public override string ActionDialogChangeEmail => "è®Šæ›´é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangeEmailConfirmation"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogChangeEmailConfirmation => "確定";
+	public override string ActionDialogChangeEmailConfirmation => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangePassword"
 	/// English String: "Update"
 	/// </summary>
-	public override string ActionDialogChangePassword => "更新";
+	public override string ActionDialogChangePassword => "æ›´æ–°";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangePasswordConfirmation"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogChangePasswordConfirmation => "確定";
+	public override string ActionDialogChangePasswordConfirmation => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangeUsernameBuy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionDialogChangeUsernameBuy => "購買";
+	public override string ActionDialogChangeUsernameBuy => "è³¼è²·";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionDialogClose => "關閉";
+	public override string ActionDialogClose => "é—œé–‰";
 
 	/// <summary>
 	/// Key: "Action.Dialog.EditPhonePrimary"
 	/// English String: "Edit Phone"
 	/// </summary>
-	public override string ActionDialogEditPhonePrimary => "編輯手機號碼";
+	public override string ActionDialogEditPhonePrimary => "ç·¨è¼¯æ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Action.Dialog.EditPhoneSecondary"
 	/// English String: "Remove Phone Number"
 	/// </summary>
-	public override string ActionDialogEditPhoneSecondary => "移除手機號碼";
+	public override string ActionDialogEditPhoneSecondary => "ç§»é™¤æ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Action.Dialog.InsufficientFundsBuy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionDialogInsufficientFundsBuy => "購買";
+	public override string ActionDialogInsufficientFundsBuy => "è³¼è²·";
 
 	/// <summary>
 	/// Key: "Action.Dialog.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionDialogNo => "否";
+	public override string ActionDialogNo => "å¦";
 
 	/// <summary>
 	/// Key: "Action.Dialog.PinCreate"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionDialogPinCreate => "新增";
+	public override string ActionDialogPinCreate => "æ–°å¢ž";
 
 	/// <summary>
 	/// Key: "Action.Dialog.PinCreateOk"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogPinCreateOk => "確定";
+	public override string ActionDialogPinCreateOk => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Dialog.PinUnlock"
 	/// English String: "Unlock"
 	/// </summary>
-	public override string ActionDialogPinUnlock => "解鎖";
+	public override string ActionDialogPinUnlock => "è§£éŽ–";
 
 	/// <summary>
 	/// Key: "Action.Dialog.RemovePhonePrimary"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionDialogRemovePhonePrimary => "移除";
+	public override string ActionDialogRemovePhonePrimary => "ç§»é™¤";
 
 	/// <summary>
 	/// Key: "Action.Dialog.RemovePhoneSecondary"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionDialogRemovePhoneSecondary => "取消";
+	public override string ActionDialogRemovePhoneSecondary => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Send"
 	/// Send
 	/// English String: "Send"
 	/// </summary>
-	public override string ActionDialogSend => "傳送";
+	public override string ActionDialogSend => "å‚³é€";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Success"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogSuccess => "確定";
+	public override string ActionDialogSuccess => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Update"
 	/// English String: "Update"
 	/// </summary>
-	public override string ActionDialogUpdate => "更新";
+	public override string ActionDialogUpdate => "æ›´æ–°";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyEmailOk"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogVerifyEmailOk => "確定";
+	public override string ActionDialogVerifyEmailOk => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyEmailPrimary"
 	/// English String: "Verify Email"
 	/// </summary>
-	public override string ActionDialogVerifyEmailPrimary => "驗證電子郵件地址";
+	public override string ActionDialogVerifyEmailPrimary => "é©—è­‰é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyEmailRetry"
 	/// English String: "Retry"
 	/// </summary>
-	public override string ActionDialogVerifyEmailRetry => "重試";
+	public override string ActionDialogVerifyEmailRetry => "é‡è©¦";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyPhonePrimary"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionDialogVerifyPhonePrimary => "驗證";
+	public override string ActionDialogVerifyPhonePrimary => "é©—è­‰";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyPhoneResendLink"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string ActionDialogVerifyPhoneResendLink => "重新傳送驗證碼";
+	public override string ActionDialogVerifyPhoneResendLink => "é‡æ–°å‚³é€é©—è­‰ç¢¼";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyPhoneSecondary"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionDialogVerifyPhoneSecondary => "取消";
+	public override string ActionDialogVerifyPhoneSecondary => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionDialogYes => "是";
+	public override string ActionDialogYes => "æ˜¯";
 
 	/// <summary>
 	/// Key: "Action.Hide"
 	/// English String: "Hide"
 	/// </summary>
-	public override string ActionHide => "隱藏";
+	public override string ActionHide => "éš±è—";
 
 	/// <summary>
 	/// Key: "Action.Join"
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoin => "加入";
+	public override string ActionJoin => "åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Action.JoinBuildersClub"
 	/// English String: "Join Builders Club"
 	/// </summary>
-	public override string ActionJoinBuildersClub => "加入 Builders Club";
+	public override string ActionJoinBuildersClub => "åŠ å…¥ Builders Club";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "儲存";
+	public override string ActionSave => "å„²å­˜";
 
 	/// <summary>
 	/// Key: "Action.Show"
 	/// English String: "Show"
 	/// </summary>
-	public override string ActionShow => "顯示";
+	public override string ActionShow => "é¡¯ç¤º";
 
 	/// <summary>
 	/// Key: "Action.SignoutAllSessions"
 	/// English String: "Sign out"
 	/// </summary>
-	public override string ActionSignoutAllSessions => "登出";
+	public override string ActionSignoutAllSessions => "ç™»å‡º";
 
 	/// <summary>
 	/// Key: "Action.SocialDisconnect"
 	/// English String: "Disconnect"
 	/// </summary>
-	public override string ActionSocialDisconnect => "中斷連線";
+	public override string ActionSocialDisconnect => "ä¸­æ–·é€£ç·š";
 
 	/// <summary>
 	/// Key: "Action.SuccessDialogButtonText"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionSuccessDialogButtonText => "確定";
+	public override string ActionSuccessDialogButtonText => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Unblock"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string ActionUnblock => "解除封鎖";
+	public override string ActionUnblock => "è§£é™¤å°éŽ–";
 
 	/// <summary>
 	/// Key: "Action.UpgradeMembership"
 	/// English String: "Upgrade Membership"
 	/// </summary>
-	public override string ActionUpgradeMembership => "升級會員資格";
+	public override string ActionUpgradeMembership => "å‡ç´šæœƒå“¡è³‡æ ¼";
 
 	/// <summary>
 	/// Key: "Description.AccountControls"
 	/// English String: "You can setup account restrictions on this account to restrict access to account settings and uncurated content"
 	/// </summary>
-	public override string DescriptionAccountControls => "您可以設定帳號限制，限制使用帳號設定及未篩選的內容";
+	public override string DescriptionAccountControls => "æ‚¨å¯ä»¥è¨­å®šå¸³è™Ÿé™åˆ¶ï¼Œé™åˆ¶ä½¿ç”¨å¸³è™Ÿè¨­å®šåŠæœªç¯©é¸çš„å…§å®¹";
 
 	/// <summary>
 	/// Key: "Description.AccountEmailRevertEmail.Subject"
 	/// Subject for account email revert email that is sent out to the old account when the new account email is verified.
 	/// English String: "Roblox Email Reset"
 	/// </summary>
-	public override string DescriptionAccountEmailRevertEmailSubject => "重置 Roblox 電子郵件地址";
+	public override string DescriptionAccountEmailRevertEmailSubject => "é‡ç½® Roblox é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Description.DesktopPush1"
 	/// English String: "See notifications on this computer even when Roblox is closed."
 	/// </summary>
-	public override string DescriptionDesktopPush1 => "Roblox 未開啟時仍可收到電腦通知。";
+	public override string DescriptionDesktopPush1 => "Roblox æœªé–‹å•Ÿæ™‚ä»å¯æ”¶åˆ°é›»è…¦é€šçŸ¥ã€‚";
 
 	/// <summary>
 	/// Key: "Description.DesktopPush2"
 	/// English String: "To see notifications, you may be prompted to turn on push notifications on your browser."
 	/// </summary>
-	public override string DescriptionDesktopPush2 => "若要看見通知，請在您的瀏覽器允許通知。";
+	public override string DescriptionDesktopPush2 => "è‹¥è¦çœ‹è¦‹é€šçŸ¥ï¼Œè«‹åœ¨æ‚¨çš„ç€è¦½å™¨å…è¨±é€šçŸ¥ã€‚";
 
 	/// <summary>
 	/// Key: "Description.DesktopPush3"
 	/// English String: "Desktop notifications for this device."
 	/// </summary>
-	public override string DescriptionDesktopPush3 => "此裝置的桌面通知。";
+	public override string DescriptionDesktopPush3 => "æ­¤è£ç½®çš„æ¡Œé¢é€šçŸ¥ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.AddPhone"
 	/// English String: "Please confirm your country code and enter your phone number. We will send a text message to complete verification. (Note: Text messaging charges may apply)"
 	/// </summary>
-	public override string DescriptionDialogAddPhone => "請確認您的國碼，並輸入您的手機號碼。我們會傳送一則簡訊完成驗證程序。（注意：可能會收取簡訊費用）";
+	public override string DescriptionDialogAddPhone => "è«‹ç¢ºèªæ‚¨çš„åœ‹ç¢¼ï¼Œä¸¦è¼¸å…¥æ‚¨çš„æ‰‹æ©Ÿè™Ÿç¢¼ã€‚æˆ‘å€‘æœƒå‚³é€ä¸€å‰‡ç°¡è¨Šå®Œæˆé©—è­‰ç¨‹åºã€‚ï¼ˆæ³¨æ„ï¼šå¯èƒ½æœƒæ”¶å–ç°¡è¨Šè²»ç”¨ï¼‰";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeEmailConfirmation"
 	/// English String: "An email has been sent for verification"
 	/// </summary>
-	public override string DescriptionDialogChangeEmailConfirmation => "已傳送驗證電子郵件";
+	public override string DescriptionDialogChangeEmailConfirmation => "å·²å‚³é€é©—è­‰é›»å­éƒµä»¶";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeEmailWarning"
 	/// English String: "The account email will not change until the new email has been verified."
 	/// </summary>
-	public override string DescriptionDialogChangeEmailWarning => "新的電子郵件地址驗證後才會生效。";
+	public override string DescriptionDialogChangeEmailWarning => "æ–°çš„é›»å­éƒµä»¶åœ°å€é©—è­‰å¾Œæ‰æœƒç”Ÿæ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangePasswordConfirmation"
 	/// English String: "You have successfully changed your password."
 	/// </summary>
-	public override string DescriptionDialogChangePasswordConfirmation => "您已成功變更密碼。";
+	public override string DescriptionDialogChangePasswordConfirmation => "æ‚¨å·²æˆåŠŸè®Šæ›´å¯†ç¢¼ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameDisclaimer"
 	/// English String: "Important: Original account creation date will carry over to your new username."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameDisclaimer => "重要：帳號建立日期將會轉移到新的使用者名稱。";
+	public override string DescriptionDialogChangeUsernameDisclaimer => "é‡è¦ï¼šå¸³è™Ÿå»ºç«‹æ—¥æœŸå°‡æœƒè½‰ç§»åˆ°æ–°çš„ä½¿ç”¨è€…åç¨±ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameForFree"
 	/// Description notifying the user that this username change is free
 	/// English String: "Change username once for free."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameForFree => "免費變更使用者名稱一次。";
+	public override string DescriptionDialogChangeUsernameForFree => "å…è²»è®Šæ›´ä½¿ç”¨è€…åç¨±ä¸€æ¬¡ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameHistory"
 	/// English String: "Previous forum posts will appear under your old username and will NOT carry over to your new username."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameHistory => "之前的論壇發文會顯示在您過去的使用者名稱之下，不會轉到您新的使用者名稱。";
+	public override string DescriptionDialogChangeUsernameHistory => "ä¹‹å‰çš„è«–å£‡ç™¼æ–‡æœƒé¡¯ç¤ºåœ¨æ‚¨éŽåŽ»çš„ä½¿ç”¨è€…åç¨±ä¹‹ä¸‹ï¼Œä¸æœƒè½‰åˆ°æ‚¨æ–°çš„ä½¿ç”¨è€…åç¨±ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameTitle"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameTitle => "變更使用者名稱";
+	public override string DescriptionDialogChangeUsernameTitle => "è®Šæ›´ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EditPhoneWarning"
 	/// English String: "The phone number will not change until the new phone number has been verified."
 	/// </summary>
-	public override string DescriptionDialogEditPhoneWarning => "新的手機號碼驗證完畢後，手機號碼才會變更。";
+	public override string DescriptionDialogEditPhoneWarning => "æ–°çš„æ‰‹æ©Ÿè™Ÿç¢¼é©—è­‰å®Œç•¢å¾Œï¼Œæ‰‹æ©Ÿè™Ÿç¢¼æ‰æœƒè®Šæ›´ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EmailProvideAndVerifyWarning"
 	/// warning message when user doesn't have email address on file at the time of changing username
 	/// English String: "You must provide and verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogEmailProvideAndVerifyWarning => "若要變更使用者名稱，請先提供並驗證您的電子郵件地址。";
+	public override string DescriptionDialogEmailProvideAndVerifyWarning => "è‹¥è¦è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹å…ˆæä¾›ä¸¦é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EmailVerificationSent"
 	/// English String: "Thanks! Your verification email has been sent."
 	/// </summary>
-	public override string DescriptionDialogEmailVerificationSent => "謝謝，已傳送驗證電子郵件。";
+	public override string DescriptionDialogEmailVerificationSent => "è¬è¬ï¼Œå·²å‚³é€é©—è­‰é›»å­éƒµä»¶ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EmailVerifyWarning"
 	/// English String: "You must verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogEmailVerifyWarning => "若要變更使用者名稱，請先驗證電子郵件地址。";
+	public override string DescriptionDialogEmailVerifyWarning => "è‹¥è¦è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹å…ˆé©—è­‰é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.FacebookDisconnectWarning"
 	/// English String: "Please add password to secure your account before disconnecting from Facebook."
 	/// </summary>
-	public override string DescriptionDialogFacebookDisconnectWarning => "在您解除 Facebook 帳號連接之前，請新增密碼保護您的帳號。";
+	public override string DescriptionDialogFacebookDisconnectWarning => "åœ¨æ‚¨è§£é™¤ Facebook å¸³è™Ÿé€£æŽ¥ä¹‹å‰ï¼Œè«‹æ–°å¢žå¯†ç¢¼ä¿è­·æ‚¨çš„å¸³è™Ÿã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.MissingEmailAccountPin"
 	/// error message
 	/// English String: "You must provide and verify your email before you can add an Account PIN."
 	/// </summary>
-	public override string DescriptionDialogMissingEmailAccountPin => "若要新增帳號 PIN，請先提供並驗證您的電子郵件地址。";
+	public override string DescriptionDialogMissingEmailAccountPin => "è‹¥è¦æ–°å¢žå¸³è™Ÿ PINï¼Œè«‹å…ˆæä¾›ä¸¦é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.MissingEmailTwoStepVerification"
 	/// error message
 	/// English String: "You must provide and verify your email before you can enable 2 Step Verification."
 	/// </summary>
-	public override string DescriptionDialogMissingEmailTwoStepVerification => "若要啟用兩步驟驗證，請先提供並驗證您的電子郵件地址。";
+	public override string DescriptionDialogMissingEmailTwoStepVerification => "è‹¥è¦å•Ÿç”¨å…©æ­¥é©Ÿé©—è­‰ï¼Œè«‹å…ˆæä¾›ä¸¦é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.MissingEmailUsername"
 	/// error message
 	/// English String: "You must provide and verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogMissingEmailUsername => "若要變更使用者名稱，請先提供並驗證您的電子郵件地址。";
+	public override string DescriptionDialogMissingEmailUsername => "è‹¥è¦è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹å…ˆæä¾›ä¸¦é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.PinUnlock"
 	/// English String: "Enter the Account PIN attached to your account"
 	/// </summary>
-	public override string DescriptionDialogPinUnlock => "輸入您的帳號的 PIN";
+	public override string DescriptionDialogPinUnlock => "è¼¸å…¥æ‚¨çš„å¸³è™Ÿçš„ PIN";
 
 	/// <summary>
 	/// Key: "Description.Dialog.UnverifiedEmailAccountPin"
 	/// error message
 	/// English String: "You must verify your email before you can add an Account PIN."
 	/// </summary>
-	public override string DescriptionDialogUnverifiedEmailAccountPin => "若要新增帳號 PIN，請先驗證您的電子郵件地址。";
+	public override string DescriptionDialogUnverifiedEmailAccountPin => "è‹¥è¦æ–°å¢žå¸³è™Ÿ PINï¼Œè«‹å…ˆé©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.UnverifiedEmailTwoStepVerification"
 	/// error message
 	/// English String: "You must verify your email before you can enable 2 Step Verification."
 	/// </summary>
-	public override string DescriptionDialogUnverifiedEmailTwoStepVerification => "若要啟用雙步驟驗證，請先驗證電子郵件地址。";
+	public override string DescriptionDialogUnverifiedEmailTwoStepVerification => "è‹¥è¦å•Ÿç”¨é›™æ­¥é©Ÿé©—è­‰ï¼Œè«‹å…ˆé©—è­‰é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.UnverifiedEmailUsername"
 	/// error message
 	/// English String: "You must verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogUnverifiedEmailUsername => "若要變更使用者名稱，請先驗證電子郵件地址。";
+	public override string DescriptionDialogUnverifiedEmailUsername => "è‹¥è¦è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹å…ˆé©—è­‰é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Description.FastTrack"
 	/// A description of the Fast Track program that is intended to help users understand why they are part of the program and how they can best be involved.
 	/// English String: "You have been enrolled in the Fast Track reporting program for making good abuse reports.  Your abuse reports are now Fast Tracked for review.  Stay in the program by continuing to make good abuse reports. Thank you for helping to make Roblox a positive experience!"
 	/// </summary>
-	public override string DescriptionFastTrack => "由於您持續提交良好的檢舉報告，您已被加到快速通道企劃。您的檢舉報告將會更快受到審核。繼續提交良好的檢舉報告，即可留在快速通道計畫。感謝您協助維護 Roblox 的環境！";
+	public override string DescriptionFastTrack => "ç”±æ–¼æ‚¨æŒçºŒæäº¤è‰¯å¥½çš„æª¢èˆ‰å ±å‘Šï¼Œæ‚¨å·²è¢«åŠ åˆ°å¿«é€Ÿé€šé“ä¼åŠƒã€‚æ‚¨çš„æª¢èˆ‰å ±å‘Šå°‡æœƒæ›´å¿«å—åˆ°å¯©æ ¸ã€‚ç¹¼çºŒæäº¤è‰¯å¥½çš„æª¢èˆ‰å ±å‘Šï¼Œå³å¯ç•™åœ¨å¿«é€Ÿé€šé“è¨ˆç•«ã€‚æ„Ÿè¬æ‚¨å”åŠ©ç¶­è­· Roblox çš„ç’°å¢ƒï¼";
 
 	/// <summary>
 	/// Key: "Description.FastTrack.Statistics"
 	/// A section of the page dedicated to reporting, analysis, and charting of Fast Track contributor quality.
 	/// English String: "Statistics"
 	/// </summary>
-	public override string DescriptionFastTrackStatistics => "數據";
+	public override string DescriptionFastTrackStatistics => "æ•¸æ“š";
 
 	/// <summary>
 	/// Key: "Description.HelpText.Description"
 	/// English String: "Do not provide any details that can be used to identify you outside Roblox."
 	/// </summary>
-	public override string DescriptionHelpTextDescription => "請勿提供任何可以在 Roblox 以外用來識別您的身分的詳細資料。";
+	public override string DescriptionHelpTextDescription => "è«‹å‹¿æä¾›ä»»ä½•å¯ä»¥åœ¨ Roblox ä»¥å¤–ç”¨ä¾†è­˜åˆ¥æ‚¨çš„èº«åˆ†çš„è©³ç´°è³‡æ–™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.HelpText.FastTrack.Accuracy"
 	/// Help text that explains to users how we define Accuracy of abuse reports for the Fast Track program. Intention is to help avoid user confusion about the meaning of the scores.
 	/// English String: "Accuracy is how often moderation agreed with abuse reports. Your number will show after you submit several reports. 'Everyone' means all of the Fast Track members as a group."
 	/// </summary>
-	public override string DescriptionHelpTextFastTrackAccuracy => "準確度為管理員同意檢舉報告的頻率，在您提交一定數量檢舉報告後將會開始顯示。「所有人」指所有快速通道成員合在一起。";
+	public override string DescriptionHelpTextFastTrackAccuracy => "æº–ç¢ºåº¦ç‚ºç®¡ç†å“¡åŒæ„æª¢èˆ‰å ±å‘Šçš„é »çŽ‡ï¼Œåœ¨æ‚¨æäº¤ä¸€å®šæ•¸é‡æª¢èˆ‰å ±å‘Šå¾Œå°‡æœƒé–‹å§‹é¡¯ç¤ºã€‚ã€Œæ‰€æœ‰äººã€æŒ‡æ‰€æœ‰å¿«é€Ÿé€šé“æˆå“¡åˆåœ¨ä¸€èµ·ã€‚";
 
 	/// <summary>
 	/// Key: "Description.HelpText.PrivacyMode"
 	/// English String: "Updating age to under 13 will enable Privacy Mode."
 	/// </summary>
-	public override string DescriptionHelpTextPrivacyMode => "更新年齡為 13 歲以下會啟用隱私模式。";
+	public override string DescriptionHelpTextPrivacyMode => "æ›´æ–°å¹´é½¡ç‚º 13 æ­²ä»¥ä¸‹æœƒå•Ÿç”¨éš±ç§æ¨¡å¼ã€‚";
 
 	/// <summary>
 	/// Key: "Description.HoverText.ChangePassword"
 	/// English String: "Change Password"
 	/// </summary>
-	public override string DescriptionHoverTextChangePassword => "變更密碼";
+	public override string DescriptionHoverTextChangePassword => "è®Šæ›´å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Description.HoverText.ChangeUsername"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string DescriptionHoverTextChangeUsername => "變更使用者名稱";
+	public override string DescriptionHoverTextChangeUsername => "è®Šæ›´ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Description.HoverText.UpdateEmail"
 	/// English String: "Update Email"
 	/// </summary>
-	public override string DescriptionHoverTextUpdateEmail => "更新電子郵件地址";
+	public override string DescriptionHoverTextUpdateEmail => "æ›´æ–°é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Description.MembershipHelp"
 	/// English String: "For billing and payment questions: info@roblox.com"
 	/// </summary>
-	public override string DescriptionMembershipHelp => "帳務和付款問題：info@roblox.com";
+	public override string DescriptionMembershipHelp => "å¸³å‹™å’Œä»˜æ¬¾å•é¡Œï¼šinfo@roblox.com";
 
 	/// <summary>
 	/// Key: "Description.MembershipStatus"
 	/// English String: "You're not a member yet. Join Builders Club today!"
 	/// </summary>
-	public override string DescriptionMembershipStatus => "您還不是會員，現在加入 Builders Club！";
+	public override string DescriptionMembershipStatus => "æ‚¨é‚„ä¸æ˜¯æœƒå“¡ï¼Œç¾åœ¨åŠ å…¥ Builders Clubï¼";
 
 	/// <summary>
 	/// Key: "Description.MembershipStatusRobloxPremium"
 	/// English String: "You're not a member yet. Join Roblox Premium today!"
 	/// </summary>
-	public override string DescriptionMembershipStatusRobloxPremium => "您還不是會員，現在加入 Roblox Premium！";
+	public override string DescriptionMembershipStatusRobloxPremium => "æ‚¨é‚„ä¸æ˜¯æœƒå“¡ï¼Œç¾åœ¨åŠ å…¥ Roblox Premiumï¼";
 
 	/// <summary>
 	/// Key: "Description.MobilePush1"
 	/// English String: "See notifications on your devices' home screens. You can turn them on or off from the Roblox app."
 	/// </summary>
-	public override string DescriptionMobilePush1 => "在裝置首頁看見通知；您可以從 Roblox App 開啟或關閉。";
+	public override string DescriptionMobilePush1 => "åœ¨è£ç½®é¦–é çœ‹è¦‹é€šçŸ¥ï¼›æ‚¨å¯ä»¥å¾ž Roblox App é–‹å•Ÿæˆ–é—œé–‰ã€‚";
 
 	/// <summary>
 	/// Key: "Description.MobilePush2"
 	/// English String: "Mobile push notifications for this device."
 	/// </summary>
-	public override string DescriptionMobilePush2 => "此裝置的行動裝置推播通知。";
+	public override string DescriptionMobilePush2 => "æ­¤è£ç½®çš„è¡Œå‹•è£ç½®æŽ¨æ’­é€šçŸ¥ã€‚";
 
 	/// <summary>
 	/// Key: "Description.NotificationStream1"
 	/// English String: "See notifications in my stream. Click the notifications icon in the top bar to view these notifications."
 	/// </summary>
-	public override string DescriptionNotificationStream1 => "在我的動態消息中看見通知。按下頂端列的通知圖示檢視這些通知。";
+	public override string DescriptionNotificationStream1 => "åœ¨æˆ‘çš„å‹•æ…‹æ¶ˆæ¯ä¸­çœ‹è¦‹é€šçŸ¥ã€‚æŒ‰ä¸‹é ‚ç«¯åˆ—çš„é€šçŸ¥åœ–ç¤ºæª¢è¦–é€™äº›é€šçŸ¥ã€‚";
 
 	/// <summary>
 	/// Key: "Description.NotificationStream2"
 	/// English String: "After you turn off a notification type, we won't send you any new notifications of that type."
 	/// </summary>
-	public override string DescriptionNotificationStream2 => "您關閉一種通知類型之後，我們將不會傳送該類型的新通知給您。";
+	public override string DescriptionNotificationStream2 => "æ‚¨é—œé–‰ä¸€ç¨®é€šçŸ¥é¡žåž‹ä¹‹å¾Œï¼Œæˆ‘å€‘å°‡ä¸æœƒå‚³é€è©²é¡žåž‹çš„æ–°é€šçŸ¥çµ¦æ‚¨ã€‚";
 
 	/// <summary>
 	/// Key: "Description.RenevalFromWebsiteOnly"
 	/// English String: "Note: If you would like to cancel your renewal membership, please log in from the website."
 	/// </summary>
-	public override string DescriptionRenevalFromWebsiteOnly => "注意：若您想取消續訂會員資格，請從網站登入。";
+	public override string DescriptionRenevalFromWebsiteOnly => "æ³¨æ„ï¼šè‹¥æ‚¨æƒ³å–æ¶ˆçºŒè¨‚æœƒå“¡è³‡æ ¼ï¼Œè«‹å¾žç¶²ç«™ç™»å…¥ã€‚";
 
 	/// <summary>
 	/// Key: "Description.SuccessDialogMessage"
 	/// English String: "Saved  Successfully!"
 	/// </summary>
-	public override string DescriptionSuccessDialogMessage => "已成功儲存！";
+	public override string DescriptionSuccessDialogMessage => "å·²æˆåŠŸå„²å­˜ï¼";
 
 	/// <summary>
 	/// Key: "Description.TwoStepVerificationSecondary"
 	/// English String: "A verified email is required"
 	/// </summary>
-	public override string DescriptionTwoStepVerificationSecondary => "需要已驗證的電子郵件地址";
+	public override string DescriptionTwoStepVerificationSecondary => "éœ€è¦å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Description.UsernameChangeEmail.Subject"
 	/// Subject for username change email that is sent out on a successful change of username
 	/// English String: "Roblox Username Change"
 	/// </summary>
-	public override string DescriptionUsernameChangeEmailSubject => "Roblox 使用者名稱變更";
+	public override string DescriptionUsernameChangeEmailSubject => "Roblox ä½¿ç”¨è€…åç¨±è®Šæ›´";
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.Subject.Over13"
 	/// Subject for verification email that is sent out when an over 13 user adds an email to the account
 	/// English String: "Roblox Email Verification"
 	/// </summary>
-	public override string DescriptionVerificationEmailSubjectOver13 => "Roblox 電子郵件地址驗證";
+	public override string DescriptionVerificationEmailSubjectOver13 => "Roblox é›»å­éƒµä»¶åœ°å€é©—è­‰";
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.Subject.Under13"
 	/// Subject for verification email that is sent out when an under 13 user adds an email to the account
 	/// English String: "Roblox Account Authorization"
 	/// </summary>
-	public override string DescriptionVerificationEmailSubjectUnder13 => "Roblox 帳號許可";
+	public override string DescriptionVerificationEmailSubjectUnder13 => "Roblox å¸³è™Ÿè¨±å¯";
 
 	/// <summary>
 	/// Key: "Example.Description"
 	/// English String: "Describe yourself(1000 character limit)"
 	/// </summary>
-	public override string ExampleDescription => "自我介紹（最多 1000 個字元）";
+	public override string ExampleDescription => "è‡ªæˆ‘ä»‹ç´¹ï¼ˆæœ€å¤š 1000 å€‹å­—å…ƒï¼‰";
 
 	/// <summary>
 	/// Key: "Example.Facebook"
 	/// English String: "e.g. www.facebook.com/Roblox"
 	/// </summary>
-	public override string ExampleFacebook => "例如 www.facebook.com/Roblox";
+	public override string ExampleFacebook => "ä¾‹å¦‚ www.facebook.com/Roblox";
 
 	/// <summary>
 	/// Key: "Example.GooglePlus"
 	/// English String: "e.g. http://plus.google.com/profileId"
 	/// </summary>
-	public override string ExampleGooglePlus => "例如 http://plus.google.com/profileId";
+	public override string ExampleGooglePlus => "ä¾‹å¦‚ http://plus.google.com/profileId";
 
 	/// <summary>
 	/// Key: "Example.Twitch"
 	/// English String: "e.g. www.twitch.tv/roblox/profile"
 	/// </summary>
-	public override string ExampleTwitch => "例如 www.twitch.tv/roblox/profile";
+	public override string ExampleTwitch => "ä¾‹å¦‚ www.twitch.tv/roblox/profile";
 
 	/// <summary>
 	/// Key: "Example.Twitter"
 	/// English String: "e.g. @Roblox"
 	/// </summary>
-	public override string ExampleTwitter => "例如 @Roblox";
+	public override string ExampleTwitter => "ä¾‹å¦‚ @Roblox";
 
 	/// <summary>
 	/// Key: "Example.YouTube"
 	/// English String: "e.g. www.youtube.com/user/roblox"
 	/// </summary>
-	public override string ExampleYouTube => "例如 www.youtube.com/user/roblox";
+	public override string ExampleYouTube => "ä¾‹å¦‚ www.youtube.com/user/roblox";
 
 	/// <summary>
 	/// Key: "Heading.AccountControls"
 	/// English String: "What are Account Controls?"
 	/// </summary>
-	public override string HeadingAccountControls => "什麼是帳號控制？";
+	public override string HeadingAccountControls => "ä»€éº¼æ˜¯å¸³è™ŸæŽ§åˆ¶ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Heading.AccountInfo"
 	/// English String: "Account Info"
 	/// </summary>
-	public override string HeadingAccountInfo => "帳號資訊";
+	public override string HeadingAccountInfo => "å¸³è™Ÿè³‡è¨Š";
 
 	/// <summary>
 	/// Key: "Heading.Billing"
 	/// English String: "Billing"
 	/// </summary>
-	public override string HeadingBilling => "帳務";
+	public override string HeadingBilling => "å¸³å‹™";
 
 	/// <summary>
 	/// Key: "Heading.BlockedUsers"
 	/// English String: "Blocked Users"
 	/// </summary>
-	public override string HeadingBlockedUsers => "封鎖的使用者";
+	public override string HeadingBlockedUsers => "å°éŽ–çš„ä½¿ç”¨è€…";
 
 	/// <summary>
 	/// Key: "Heading.ContactSettings"
 	/// English String: "Contact Settings"
 	/// </summary>
-	public override string HeadingContactSettings => "聯絡設定";
+	public override string HeadingContactSettings => "è¯çµ¡è¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.DesktopPush"
 	/// English String: "Desktop Push"
 	/// </summary>
-	public override string HeadingDesktopPush => "桌面推播";
+	public override string HeadingDesktopPush => "æ¡Œé¢æŽ¨æ’­";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.AddPassword"
 	/// English String: "Add Password"
 	/// </summary>
-	public override string HeadingDialogAddPassword => "新增密碼";
+	public override string HeadingDialogAddPassword => "æ–°å¢žå¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string HeadingDialogAddPhone => "新增手機號碼";
+	public override string HeadingDialogAddPhone => "æ–°å¢žæ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangeEmail"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string HeadingDialogChangeEmail => "變更我的電子郵件地址";
+	public override string HeadingDialogChangeEmail => "è®Šæ›´æˆ‘çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangeEmailConfirmation"
 	/// English String: "Email Address Changed"
 	/// </summary>
-	public override string HeadingDialogChangeEmailConfirmation => "電子郵件地址已變更";
+	public override string HeadingDialogChangeEmailConfirmation => "é›»å­éƒµä»¶åœ°å€å·²è®Šæ›´";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangePassword"
 	/// English String: "Change Password"
 	/// </summary>
-	public override string HeadingDialogChangePassword => "變更密碼";
+	public override string HeadingDialogChangePassword => "è®Šæ›´å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangePasswordConfirmation"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingDialogChangePasswordConfirmation => "成功";
+	public override string HeadingDialogChangePasswordConfirmation => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangePasswordSuccess"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingDialogChangePasswordSuccess => "成功";
+	public override string HeadingDialogChangePasswordSuccess => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangeUsername"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string HeadingDialogChangeUsername => "變更使用者名稱";
+	public override string HeadingDialogChangeUsername => "è®Šæ›´ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.DefaultError"
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingDialogDefaultError => "錯誤";
+	public override string HeadingDialogDefaultError => "éŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.DefaultSuccess"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingDialogDefaultSuccess => "成功";
+	public override string HeadingDialogDefaultSuccess => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.EditPhone"
 	/// English String: "Edit Phone"
 	/// </summary>
-	public override string HeadingDialogEditPhone => "編輯手機號碼";
+	public override string HeadingDialogEditPhone => "ç·¨è¼¯æ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.InsufficientFunds"
 	/// English String: "Insufficient Funds"
 	/// </summary>
-	public override string HeadingDialogInsufficientFunds => "資金不足";
+	public override string HeadingDialogInsufficientFunds => "è³‡é‡‘ä¸è¶³";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.InvalidUsername"
 	/// Invalid Username
 	/// English String: "Invalid Username"
 	/// </summary>
-	public override string HeadingDialogInvalidUsername => "使用者名稱無效";
+	public override string HeadingDialogInvalidUsername => "ä½¿ç”¨è€…åç¨±ç„¡æ•ˆ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.PinCreate"
 	/// English String: "Add PIN"
 	/// </summary>
-	public override string HeadingDialogPinCreate => "新增 PIN";
+	public override string HeadingDialogPinCreate => "æ–°å¢ž PIN";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.PinCreateSuccessConfirmation"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingDialogPinCreateSuccessConfirmation => "成功";
+	public override string HeadingDialogPinCreateSuccessConfirmation => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.PinUnlock"
 	/// English String: "Account PIN Required"
 	/// </summary>
-	public override string HeadingDialogPinUnlock => "需要帳號 PIN";
+	public override string HeadingDialogPinUnlock => "éœ€è¦å¸³è™Ÿ PIN";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.RemovePhone"
 	/// English String: "Remove Phone"
 	/// </summary>
-	public override string HeadingDialogRemovePhone => "移除手機號碼";
+	public override string HeadingDialogRemovePhone => "ç§»é™¤æ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.VerifiedEmailRequired"
 	/// English String: "Verified Email Required"
 	/// </summary>
-	public override string HeadingDialogVerifiedEmailRequired => "需要已驗證的電子郵件地址";
+	public override string HeadingDialogVerifiedEmailRequired => "éœ€è¦å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.VerifyEmail"
 	/// English String: "Verify Email"
 	/// </summary>
-	public override string HeadingDialogVerifyEmail => "驗證電子郵件地址";
+	public override string HeadingDialogVerifyEmail => "é©—è­‰é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.VerifyPhone"
 	/// English String: "Verify Phone"
 	/// </summary>
-	public override string HeadingDialogVerifyPhone => "驗證手機號碼";
+	public override string HeadingDialogVerifyPhone => "é©—è­‰æ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Heading.FastTrack"
 	/// Fast Track is the name of the limited access community moderation program.
 	/// English String: "Fast Track"
 	/// </summary>
-	public override string HeadingFastTrack => "快速通道";
+	public override string HeadingFastTrack => "å¿«é€Ÿé€šé“";
 
 	/// <summary>
 	/// Key: "Heading.MembershipStatus"
 	/// English String: "Membership status"
 	/// </summary>
-	public override string HeadingMembershipStatus => "會員資格狀態";
+	public override string HeadingMembershipStatus => "æœƒå“¡è³‡æ ¼ç‹€æ…‹";
 
 	/// <summary>
 	/// Key: "Heading.NotificationOptions"
 	/// English String: "Notify me when"
 	/// </summary>
-	public override string HeadingNotificationOptions => "有以下情形時通知我";
+	public override string HeadingNotificationOptions => "æœ‰ä»¥ä¸‹æƒ…å½¢æ™‚é€šçŸ¥æˆ‘";
 
 	/// <summary>
 	/// Key: "Heading.Notifications"
 	/// English String: "Notifications"
 	/// </summary>
-	public override string HeadingNotifications => "通知";
+	public override string HeadingNotifications => "é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.ActionWhen"
 	/// English String: "Notify me when"
 	/// </summary>
-	public override string HeadingNotificationsActionWhen => "有以下情形時通知我";
+	public override string HeadingNotificationsActionWhen => "æœ‰ä»¥ä¸‹æƒ…å½¢æ™‚é€šçŸ¥æˆ‘";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.DesktopPush"
 	/// English String: "Desktop Push"
 	/// </summary>
-	public override string HeadingNotificationsDesktopPush => "桌面推播";
+	public override string HeadingNotificationsDesktopPush => "æ¡Œé¢æŽ¨æ’­";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.MobilePush"
 	/// English String: "Mobile Push"
 	/// </summary>
-	public override string HeadingNotificationsMobilePush => "行動裝置推播";
+	public override string HeadingNotificationsMobilePush => "è¡Œå‹•è£ç½®æŽ¨æ’­";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.Stream"
 	/// English String: "Notification Stream"
 	/// </summary>
-	public override string HeadingNotificationsStream => "動態消息";
+	public override string HeadingNotificationsStream => "å‹•æ…‹æ¶ˆæ¯";
 
 	/// <summary>
 	/// Key: "Heading.NotificationStream"
 	/// English String: "Notification Stream"
 	/// </summary>
-	public override string HeadingNotificationStream => "動態消息";
+	public override string HeadingNotificationStream => "å‹•æ…‹æ¶ˆæ¯";
 
 	/// <summary>
 	/// Key: "Heading.OtherSettings"
 	/// English String: "Other Settings"
 	/// </summary>
-	public override string HeadingOtherSettings => "其它設定";
+	public override string HeadingOtherSettings => "å…¶å®ƒè¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.PageTitle"
 	/// English String: "My Settings"
 	/// </summary>
-	public override string HeadingPageTitle => "我的設定";
+	public override string HeadingPageTitle => "æˆ‘çš„è¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.Personal"
 	/// English String: "Personal"
 	/// </summary>
-	public override string HeadingPersonal => "個人資訊";
+	public override string HeadingPersonal => "å€‹äººè³‡è¨Š";
 
 	/// <summary>
 	/// Key: "Heading.Pin"
 	/// English String: "Account PIN"
 	/// </summary>
-	public override string HeadingPin => "帳號 PIN";
+	public override string HeadingPin => "å¸³è™Ÿ PIN";
 
 	/// <summary>
 	/// Key: "Heading.PrivacySettings"
 	/// English String: "Privacy Settings"
 	/// </summary>
-	public override string HeadingPrivacySettings => "隱私權設定";
+	public override string HeadingPrivacySettings => "éš±ç§æ¬Šè¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.RenevalDate"
 	/// English String: "Renewal date"
 	/// </summary>
-	public override string HeadingRenevalDate => "續訂日期";
+	public override string HeadingRenevalDate => "çºŒè¨‚æ—¥æœŸ";
 
 	/// <summary>
 	/// Key: "Heading.Restrictions"
 	/// English String: "Account Restrictions"
 	/// </summary>
-	public override string HeadingRestrictions => "帳號限制";
+	public override string HeadingRestrictions => "å¸³è™Ÿé™åˆ¶";
 
 	/// <summary>
 	/// Key: "Heading.SecureSignOut"
 	/// English String: "Secure Sign Out"
 	/// </summary>
-	public override string HeadingSecureSignOut => "安全登出";
+	public override string HeadingSecureSignOut => "å®‰å…¨ç™»å‡º";
 
 	/// <summary>
 	/// Key: "Heading.SocialNetworks"
 	/// English String: "Social Networks"
 	/// </summary>
-	public override string HeadingSocialNetworks => "社交網路";
+	public override string HeadingSocialNetworks => "ç¤¾äº¤ç¶²è·¯";
 
 	/// <summary>
 	/// Key: "Heading.SocialSignOn"
 	/// English String: "Social Sign On"
 	/// </summary>
-	public override string HeadingSocialSignOn => "社交登入";
+	public override string HeadingSocialSignOn => "ç¤¾äº¤ç™»å…¥";
 
 	/// <summary>
 	/// Key: "Heading.SuccessDialogTitle"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingSuccessDialogTitle => "成功";
+	public override string HeadingSuccessDialogTitle => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Tab.AccountInfo"
 	/// English String: "Account Info"
 	/// </summary>
-	public override string HeadingTabAccountInfo => "帳號資訊";
+	public override string HeadingTabAccountInfo => "å¸³è™Ÿè³‡è¨Š";
 
 	/// <summary>
 	/// Key: "Heading.Tab.Billing"
 	/// English String: "Billing"
 	/// </summary>
-	public override string HeadingTabBilling => "帳務";
+	public override string HeadingTabBilling => "å¸³å‹™";
 
 	/// <summary>
 	/// Key: "Heading.Tab.FastTrack"
 	/// Fast Track is the name of the limited access community moderation program.
 	/// English String: "Fast Track"
 	/// </summary>
-	public override string HeadingTabFastTrack => "快速通道";
+	public override string HeadingTabFastTrack => "å¿«é€Ÿé€šé“";
 
 	/// <summary>
 	/// Key: "Heading.Tab.Notifications"
 	/// English String: "Notifications"
 	/// </summary>
-	public override string HeadingTabNotifications => "通知";
+	public override string HeadingTabNotifications => "é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Heading.Tab.Privacy"
 	/// English String: "Privacy"
 	/// </summary>
-	public override string HeadingTabPrivacy => "隱私權";
+	public override string HeadingTabPrivacy => "éš±ç§æ¬Š";
 
 	/// <summary>
 	/// Key: "Heading.Tab.Security"
 	/// English String: "Security"
 	/// </summary>
-	public override string HeadingTabSecurity => "安全";
+	public override string HeadingTabSecurity => "å®‰å…¨";
 
 	/// <summary>
 	/// Key: "Heading.Transactions"
 	/// English String: "Transactions"
 	/// </summary>
-	public override string HeadingTransactions => "交易";
+	public override string HeadingTransactions => "äº¤æ˜“";
 
 	/// <summary>
 	/// Key: "Heading.TwoStepVerification"
 	/// English String: "2 Step Verification"
 	/// </summary>
-	public override string HeadingTwoStepVerification => "雙步驟驗證";
+	public override string HeadingTwoStepVerification => "é›™æ­¥é©Ÿé©—è­‰";
 
 	/// <summary>
 	/// Key: "Heading.Xbox"
@@ -911,104 +911,104 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// Key: "Label.AccountPinDisabled"
 	/// English String: "Account PIN is currently disabled"
 	/// </summary>
-	public override string LabelAccountPinDisabled => "帳號 PIN 目前停用";
+	public override string LabelAccountPinDisabled => "å¸³è™Ÿ PIN ç›®å‰åœç”¨";
 
 	/// <summary>
 	/// Key: "Label.AccountPinEnabled"
 	/// English String: "Account PIN is currently enabled"
 	/// </summary>
-	public override string LabelAccountPinEnabled => "帳號 PIN 目前啟用";
+	public override string LabelAccountPinEnabled => "å¸³è™Ÿ PIN ç›®å‰å•Ÿç”¨";
 
 	/// <summary>
 	/// Key: "Label.AccountRestrictionDisabled"
 	/// English String: "Account Restrictions is currently disabled"
 	/// </summary>
-	public override string LabelAccountRestrictionDisabled => "帳號限制目前停用";
+	public override string LabelAccountRestrictionDisabled => "å¸³è™Ÿé™åˆ¶ç›®å‰åœç”¨";
 
 	/// <summary>
 	/// Key: "Label.AccountRestrictionEnabled"
 	/// English String: "Account Restrictions is currently enabled"
 	/// </summary>
-	public override string LabelAccountRestrictionEnabled => "帳號限制目前啟用";
+	public override string LabelAccountRestrictionEnabled => "å¸³è™Ÿé™åˆ¶ç›®å‰å•Ÿç”¨";
 
 	/// <summary>
 	/// Key: "Label.AddEmail"
 	/// English String: "Add Email"
 	/// </summary>
-	public override string LabelAddEmail => "新增電子郵件地址";
+	public override string LabelAddEmail => "æ–°å¢žé›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.AddEmailParent"
 	/// English String: "Add Parent's Email"
 	/// </summary>
-	public override string LabelAddEmailParent => "新增家長的電子郵件地址";
+	public override string LabelAddEmailParent => "æ–°å¢žå®¶é•·çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.AddPassword"
 	/// English String: "Add Password:"
 	/// </summary>
-	public override string LabelAddPassword => "新增密碼：";
+	public override string LabelAddPassword => "æ–°å¢žå¯†ç¢¼ï¼š";
 
 	/// <summary>
 	/// Key: "Label.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string LabelAddPhone => "新增手機號碼";
+	public override string LabelAddPhone => "æ–°å¢žæ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Label.AddPhoneLink"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string LabelAddPhoneLink => "新增手機號碼";
+	public override string LabelAddPhoneLink => "æ–°å¢žæ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Label.BillingHelp"
 	/// English String: "For billing and payment questions:"
 	/// </summary>
-	public override string LabelBillingHelp => "帳務和付款問題：";
+	public override string LabelBillingHelp => "å¸³å‹™å’Œä»˜æ¬¾å•é¡Œï¼š";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryCost"
 	/// English String: "Cost"
 	/// </summary>
-	public override string LabelBillingHistoryCost => "費用";
+	public override string LabelBillingHistoryCost => "è²»ç”¨";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryDate"
 	/// English String: "Date"
 	/// </summary>
-	public override string LabelBillingHistoryDate => "日期";
+	public override string LabelBillingHistoryDate => "æ—¥æœŸ";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryDescription"
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelBillingHistoryDescription => "說明";
+	public override string LabelBillingHistoryDescription => "èªªæ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryGeneralErrors"
 	/// error message
 	/// English String: "Service is currently disabled, please try again later."
 	/// </summary>
-	public override string LabelBillingHistoryGeneralErrors => "此服務目前停用，請稍後再試。";
+	public override string LabelBillingHistoryGeneralErrors => "æ­¤æœå‹™ç›®å‰åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryNoTransactions"
 	/// English String: "No Transactions"
 	/// </summary>
-	public override string LabelBillingHistoryNoTransactions => "無交易";
+	public override string LabelBillingHistoryNoTransactions => "ç„¡äº¤æ˜“";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryPaymentType"
 	/// English String: "Payment Type"
 	/// </summary>
-	public override string LabelBillingHistoryPaymentType => "付款方式";
+	public override string LabelBillingHistoryPaymentType => "ä»˜æ¬¾æ–¹å¼";
 
 	/// <summary>
 	/// Key: "Label.Birthday"
 	/// English String: "Birthday"
 	/// </summary>
-	public override string LabelBirthday => "生日";
+	public override string LabelBirthday => "ç”Ÿæ—¥";
 
 	/// <summary>
 	/// Key: "Label.BuildersClub"
@@ -1020,1196 +1020,1196 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// Key: "Label.ChangeYourUsername"
 	/// English String: "change your username"
 	/// </summary>
-	public override string LabelChangeYourUsername => "變更您的使用者名稱";
+	public override string LabelChangeYourUsername => "è®Šæ›´æ‚¨çš„ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Label.ChooseLanguage"
 	/// English String: "Choose Language"
 	/// </summary>
-	public override string LabelChooseLanguage => "選擇語言";
+	public override string LabelChooseLanguage => "é¸æ“‡èªžè¨€";
 
 	/// <summary>
 	/// Key: "Label.ClassicTheme"
 	/// name of Theme, classic theme
 	/// English String: "Off"
 	/// </summary>
-	public override string LabelClassicTheme => "關閉";
+	public override string LabelClassicTheme => "é—œé–‰";
 
 	/// <summary>
 	/// Key: "Label.ConnectAccount"
 	/// English String: "Connect account:"
 	/// </summary>
-	public override string LabelConnectAccount => "連接帳號：";
+	public override string LabelConnectAccount => "é€£æŽ¥å¸³è™Ÿï¼š";
 
 	/// <summary>
 	/// Key: "Label.Country"
 	/// English String: "Choose a Country/Region"
 	/// </summary>
-	public override string LabelCountry => "選擇國家或地區";
+	public override string LabelCountry => "é¸æ“‡åœ‹å®¶æˆ–åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.CountryTitle"
 	/// label for country on account settings page
 	/// English String: "Location"
 	/// </summary>
-	public override string LabelCountryTitle => "位置";
+	public override string LabelCountryTitle => "ä½ç½®";
 
 	/// <summary>
 	/// Key: "Label.DarkTheme"
 	/// Dark Theme
 	/// English String: "Dark"
 	/// </summary>
-	public override string LabelDarkTheme => "黑暗";
+	public override string LabelDarkTheme => "é»‘æš—";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddEmailOver13"
 	/// English String: "Add My Email"
 	/// </summary>
-	public override string LabelDialogAddEmailOver13 => "新增我的電子郵件地址";
+	public override string LabelDialogAddEmailOver13 => "æ–°å¢žæˆ‘çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddEmailUnder13"
 	/// English String: "Add Parent's Email"
 	/// </summary>
-	public override string LabelDialogAddEmailUnder13 => "新增家長的電子郵件地址";
+	public override string LabelDialogAddEmailUnder13 => "æ–°å¢žå®¶é•·çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddPhoneField"
 	/// English String: "Phone Number"
 	/// </summary>
-	public override string LabelDialogAddPhoneField => "手機號碼";
+	public override string LabelDialogAddPhoneField => "æ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddPhonePassword"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelDialogAddPhonePassword => "輸入此帳號的密碼";
+	public override string LabelDialogAddPhonePassword => "è¼¸å…¥æ­¤å¸³è™Ÿçš„å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeEmailField"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailField => "輸入新的電子郵件地址";
+	public override string LabelDialogChangeEmailField => "è¼¸å…¥æ–°çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeEmailOver13"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailOver13 => "輸入新的電子郵件地址";
+	public override string LabelDialogChangeEmailOver13 => "è¼¸å…¥æ–°çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeEmailUnder13"
 	/// English String: "Change Parent's Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailUnder13 => "變更家長的電子郵件地址";
+	public override string LabelDialogChangeEmailUnder13 => "è®Šæ›´å®¶é•·çš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangePasswordConfirm"
 	/// English String: "Confirm Password"
 	/// </summary>
-	public override string LabelDialogChangePasswordConfirm => "確認密碼";
+	public override string LabelDialogChangePasswordConfirm => "ç¢ºèªå¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangePasswordCurrent"
 	/// English String: "Current Password"
 	/// </summary>
-	public override string LabelDialogChangePasswordCurrent => "目前密碼";
+	public override string LabelDialogChangePasswordCurrent => "ç›®å‰å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangePasswordNew"
 	/// English String: "New Password"
 	/// </summary>
-	public override string LabelDialogChangePasswordNew => "新密碼";
+	public override string LabelDialogChangePasswordNew => "æ–°å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeUsernameAccountPassword"
 	/// English String: "Account Password"
 	/// </summary>
-	public override string LabelDialogChangeUsernameAccountPassword => "帳號密碼";
+	public override string LabelDialogChangeUsernameAccountPassword => "å¸³è™Ÿå¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeUsernameField"
 	/// English String: "Desired Username (3-20 characters)"
 	/// </summary>
-	public override string LabelDialogChangeUsernameField => "欲使用的使用者名稱 （3 到 20 個字元）";
+	public override string LabelDialogChangeUsernameField => "æ¬²ä½¿ç”¨çš„ä½¿ç”¨è€…åç¨± ï¼ˆ3 åˆ° 20 å€‹å­—å…ƒï¼‰";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ConfirmPin"
 	/// English String: "Confirm your PIN"
 	/// </summary>
-	public override string LabelDialogConfirmPin => "確認您的 PIN";
+	public override string LabelDialogConfirmPin => "ç¢ºèªæ‚¨çš„ PIN";
 
 	/// <summary>
 	/// Key: "Label.Dialog.EditPhoneCurrentNumber"
 	/// English String: "Current Number:"
 	/// </summary>
-	public override string LabelDialogEditPhoneCurrentNumber => "目前號碼：";
+	public override string LabelDialogEditPhoneCurrentNumber => "ç›®å‰è™Ÿç¢¼ï¼š";
 
 	/// <summary>
 	/// Key: "Label.Dialog.EmailAddressChanged"
 	/// English String: "Email Address Changed"
 	/// </summary>
-	public override string LabelDialogEmailAddressChanged => "電子郵件地址已變更";
+	public override string LabelDialogEmailAddressChanged => "é›»å­éƒµä»¶åœ°å€å·²è®Šæ›´";
 
 	/// <summary>
 	/// Key: "Label.Dialog.EmailRequired"
 	/// English String: "Email Required"
 	/// </summary>
-	public override string LabelDialogEmailRequired => "需要電子郵件地址";
+	public override string LabelDialogEmailRequired => "éœ€è¦é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.Dialog.VerifiedEmail"
 	/// English String: "Verified email:"
 	/// </summary>
-	public override string LabelDialogVerifiedEmail => "已驗證的電子郵件地址：";
+	public override string LabelDialogVerifiedEmail => "å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€ï¼š";
 
 	/// <summary>
 	/// Key: "Label.Dialog.VerifyPassword"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelDialogVerifyPassword => "輸入此帳號的密碼";
+	public override string LabelDialogVerifyPassword => "è¼¸å…¥æ­¤å¸³è™Ÿçš„å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.VerifyPhoneCodeLabel"
 	/// English String: "Enter the code we just sent to your phone"
 	/// </summary>
-	public override string LabelDialogVerifyPhoneCodeLabel => "請輸入傳送到您的手機的驗證碼";
+	public override string LabelDialogVerifyPhoneCodeLabel => "è«‹è¼¸å…¥å‚³é€åˆ°æ‚¨çš„æ‰‹æ©Ÿçš„é©—è­‰ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.VerifySms"
 	/// English String: "Verify SMS"
 	/// </summary>
-	public override string LabelDialogVerifySms => "驗證簡訊";
+	public override string LabelDialogVerifySms => "é©—è­‰ç°¡è¨Š";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Custom"
 	/// English String: "Custom"
 	/// </summary>
-	public override string LabelDropDownCustom => "自訂";
+	public override string LabelDropDownCustom => "è‡ªè¨‚";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Default"
 	/// English String: "Default"
 	/// </summary>
-	public override string LabelDropDownDefault => "預設";
+	public override string LabelDropDownDefault => "é è¨­";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Everyone"
 	/// English String: "Everyone"
 	/// </summary>
-	public override string LabelDropDownEveryone => "所有人";
+	public override string LabelDropDownEveryone => "æ‰€æœ‰äºº";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Followers"
 	/// English String: "Friends, Users I Follow, and Followers"
 	/// </summary>
-	public override string LabelDropDownFollowers => "好友、我追蹤的使用者及追蹤者";
+	public override string LabelDropDownFollowers => "å¥½å‹ã€æˆ‘è¿½è¹¤çš„ä½¿ç”¨è€…åŠè¿½è¹¤è€…";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Following"
 	/// English String: "Friends and Users I Follow"
 	/// </summary>
-	public override string LabelDropDownFollowing => "好友及我追蹤的使用者";
+	public override string LabelDropDownFollowing => "å¥½å‹åŠæˆ‘è¿½è¹¤çš„ä½¿ç”¨è€…";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelDropDownFriends => "好友";
+	public override string LabelDropDownFriends => "å¥½å‹";
 
 	/// <summary>
 	/// Key: "Label.DropDown.High"
 	/// English String: "High"
 	/// </summary>
-	public override string LabelDropDownHigh => "高";
+	public override string LabelDropDownHigh => "é«˜";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Low"
 	/// English String: "Low"
 	/// </summary>
-	public override string LabelDropDownLow => "低";
+	public override string LabelDropDownLow => "ä½Ž";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Medium"
 	/// English String: "Medium"
 	/// </summary>
-	public override string LabelDropDownMedium => "中";
+	public override string LabelDropDownMedium => "ä¸­";
 
 	/// <summary>
 	/// Key: "Label.DropDown.None"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelDropDownNone => "無";
+	public override string LabelDropDownNone => "ç„¡";
 
 	/// <summary>
 	/// Key: "Label.DropDown.NoOne"
 	/// English String: "No one"
 	/// </summary>
-	public override string LabelDropDownNoOne => "沒有人";
+	public override string LabelDropDownNoOne => "æ²’æœ‰äºº";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Off"
 	/// English String: "Off"
 	/// </summary>
-	public override string LabelDropDownOff => "關閉";
+	public override string LabelDropDownOff => "é—œé–‰";
 
 	/// <summary>
 	/// Key: "Label.Email"
 	/// English String: "Email address:"
 	/// </summary>
-	public override string LabelEmail => "電子郵件地址：";
+	public override string LabelEmail => "é›»å­éƒµä»¶åœ°å€ï¼š";
 
 	/// <summary>
 	/// Key: "Label.EmailParent"
 	/// English String: "Parent's Email address:"
 	/// </summary>
-	public override string LabelEmailParent => "家長的電子郵件地址：";
+	public override string LabelEmailParent => "å®¶é•·çš„é›»å­éƒµä»¶åœ°å€ï¼š";
 
 	/// <summary>
 	/// Key: "Label.EmailVerificationPending"
 	/// English String: "Pending verification"
 	/// </summary>
-	public override string LabelEmailVerificationPending => "待驗證";
+	public override string LabelEmailVerificationPending => "å¾…é©—è­‰";
 
 	/// <summary>
 	/// Key: "Label.ExpirationDate"
 	/// English String: "Expiration date"
 	/// </summary>
-	public override string LabelExpirationDate => "有效期限";
+	public override string LabelExpirationDate => "æœ‰æ•ˆæœŸé™";
 
 	/// <summary>
 	/// Key: "Label.Facebook"
 	/// English String: "Facebook:"
 	/// </summary>
-	public override string LabelFacebook => "Facebook：";
+	public override string LabelFacebook => "Facebookï¼š";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.Accuracy"
 	/// A label above a report of the Fast Track member's reporting accuracy compared to other Fast Track members.
 	/// English String: "Accuracy"
 	/// </summary>
-	public override string LabelFastTrackAccuracy => "準確度";
+	public override string LabelFastTrackAccuracy => "æº–ç¢ºåº¦";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.AllFastTrackMembers"
 	/// The group of Roblox community members who are part of the Fast Track Member Role. These users, together, represent some of our most useful community reporters and their reports are given special attention.
 	/// English String: "Everyone"
 	/// </summary>
-	public override string LabelFastTrackAllFastTrackMembers => "所有人";
+	public override string LabelFastTrackAllFastTrackMembers => "æ‰€æœ‰äºº";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.ReportMonth"
 	/// A label for a column in a report that indicates that the column will contain months. For example "January" or "March".
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelFastTrackReportMonth => "月";
+	public override string LabelFastTrackReportMonth => "æœˆ";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.ReportYear"
 	/// A label used as a column header in a report table. This column contains "years". These will be localized. Examples for en-us "2015" and "2020"
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelFastTrackReportYear => "年";
+	public override string LabelFastTrackReportYear => "å¹´";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.Statistics"
 	/// Title of a section of the Fast Track member page that includes reporting and statistical data.
 	/// English String: "Statistics"
 	/// </summary>
-	public override string LabelFastTrackStatistics => "數據";
+	public override string LabelFastTrackStatistics => "æ•¸æ“š";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.You"
 	/// Pronoun for the current user, who in this context is a Fast Track member. The usage here is intended to be as a heading for a column in a table.
 	/// English String: "You"
 	/// </summary>
-	public override string LabelFastTrackYou => "您";
+	public override string LabelFastTrackYou => "æ‚¨";
 
 	/// <summary>
 	/// Key: "Label.Gender"
 	/// English String: "Gender"
 	/// </summary>
-	public override string LabelGender => "性別";
+	public override string LabelGender => "æ€§åˆ¥";
 
 	/// <summary>
 	/// Key: "Label.GooglePlus"
 	/// English String: "Google+:"
 	/// </summary>
-	public override string LabelGooglePlus => "Google+：";
+	public override string LabelGooglePlus => "Google+ï¼š";
 
 	/// <summary>
 	/// Key: "Label.LightTheme"
 	/// Light Theme
 	/// English String: "Light"
 	/// </summary>
-	public override string LabelLightTheme => "燈光";
+	public override string LabelLightTheme => "ç‡ˆå…‰";
 
 	/// <summary>
 	/// Key: "Label.LocaleTitle"
 	/// text label for locale select on account setting's page
 	/// English String: "Language"
 	/// </summary>
-	public override string LabelLocaleTitle => "語言";
+	public override string LabelLocaleTitle => "èªžè¨€";
 
 	/// <summary>
 	/// Key: "Label.MembershipStatusRobloxPremium"
 	/// English String: "You're not a member yet. Join Roblox Premium today!"
 	/// </summary>
-	public override string LabelMembershipStatusRobloxPremium => "您還不是會員，現在加入 Roblox Premium！";
+	public override string LabelMembershipStatusRobloxPremium => "æ‚¨é‚„ä¸æ˜¯æœƒå“¡ï¼Œç¾åœ¨åŠ å…¥ Roblox Premiumï¼";
 
 	/// <summary>
 	/// Key: "Label.Notifications.AddedToPrivateServer"
 	/// English String: "I am invited to a VIP server"
 	/// </summary>
-	public override string LabelNotificationsAddedToPrivateServer => "有人邀請我加入 VIP 伺服器";
+	public override string LabelNotificationsAddedToPrivateServer => "æœ‰äººé‚€è«‹æˆ‘åŠ å…¥ VIP ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Label.Notifications.Chat"
 	/// English String: "Someone chats with me"
 	/// </summary>
-	public override string LabelNotificationsChat => "有人與我聊天";
+	public override string LabelNotificationsChat => "æœ‰äººèˆ‡æˆ‘èŠå¤©";
 
 	/// <summary>
 	/// Key: "Label.Notifications.ConversationUniverseChanged"
 	/// label for notification settings
 	/// English String: "Someone pins a new game to play together"
 	/// </summary>
-	public override string LabelNotificationsConversationUniverseChanged => "有人置頂新遊戲一起玩";
+	public override string LabelNotificationsConversationUniverseChanged => "æœ‰äººç½®é ‚æ–°éŠæˆ²ä¸€èµ·çŽ©";
 
 	/// <summary>
 	/// Key: "Label.Notifications.DeveloperMetricsAvailable"
 	/// English String: "Analytics report becomes available"
 	/// </summary>
-	public override string LabelNotificationsDeveloperMetricsAvailable => "有新的分析報告";
+	public override string LabelNotificationsDeveloperMetricsAvailable => "æœ‰æ–°çš„åˆ†æžå ±å‘Š";
 
 	/// <summary>
 	/// Key: "Label.Notifications.FriendRequestAccepted"
 	/// English String: "Someone accepts my friend request"
 	/// </summary>
-	public override string LabelNotificationsFriendRequestAccepted => "有人接受我的好友邀請";
+	public override string LabelNotificationsFriendRequestAccepted => "æœ‰äººæŽ¥å—æˆ‘çš„å¥½å‹é‚€è«‹";
 
 	/// <summary>
 	/// Key: "Label.Notifications.FriendRequestReceived"
 	/// English String: "I receive a friend request"
 	/// </summary>
-	public override string LabelNotificationsFriendRequestReceived => "我收到一則好友邀請";
+	public override string LabelNotificationsFriendRequestReceived => "æˆ‘æ”¶åˆ°ä¸€å‰‡å¥½å‹é‚€è«‹";
 
 	/// <summary>
 	/// Key: "Label.Notifications.GameUpdate"
 	/// Checkbox label for enabling game update notifications in the notification stream
 	/// English String: "I receive update notifications"
 	/// </summary>
-	public override string LabelNotificationsGameUpdate => "我收到遊戲更新通知";
+	public override string LabelNotificationsGameUpdate => "æˆ‘æ”¶åˆ°éŠæˆ²æ›´æ–°é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Label.Notifications.PartyInvited"
 	/// English String: "Someone invites me to a party"
 	/// </summary>
-	public override string LabelNotificationsPartyInvited => "有人邀請我加入隊伍";
+	public override string LabelNotificationsPartyInvited => "æœ‰äººé‚€è«‹æˆ‘åŠ å…¥éšŠä¼";
 
 	/// <summary>
 	/// Key: "Label.Notifications.PartyJoined"
 	/// English String: "Someone joins a party I'm in"
 	/// </summary>
-	public override string LabelNotificationsPartyJoined => "有人加入我目前的隊伍";
+	public override string LabelNotificationsPartyJoined => "æœ‰äººåŠ å…¥æˆ‘ç›®å‰çš„éšŠä¼";
 
 	/// <summary>
 	/// Key: "Label.Notifications.PrivateMessage"
 	/// English String: "I receive a private message"
 	/// </summary>
-	public override string LabelNotificationsPrivateMessage => "我收到私人訊息";
+	public override string LabelNotificationsPrivateMessage => "æˆ‘æ”¶åˆ°ç§äººè¨Šæ¯";
 
 	/// <summary>
 	/// Key: "Label.Notifications.TeamCreateInvite"
 	/// English String: "Someone invites me to edit a game"
 	/// </summary>
-	public override string LabelNotificationsTeamCreateInvite => "有人邀請我編輯遊戲";
+	public override string LabelNotificationsTeamCreateInvite => "æœ‰äººé‚€è«‹æˆ‘ç·¨è¼¯éŠæˆ²";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// English String: "Password:"
 	/// </summary>
-	public override string LabelPassword => "密碼：";
+	public override string LabelPassword => "å¯†ç¢¼ï¼š";
 
 	/// <summary>
 	/// Key: "Label.Phone"
 	/// English String: "Phone Number:"
 	/// </summary>
-	public override string LabelPhone => "手機號碼：";
+	public override string LabelPhone => "æ‰‹æ©Ÿè™Ÿç¢¼ï¼š";
 
 	/// <summary>
 	/// Key: "Label.PinTimeMins"
 	/// English String: "min"
 	/// </summary>
-	public override string LabelPinTimeMins => "分";
+	public override string LabelPinTimeMins => "åˆ†";
 
 	/// <summary>
 	/// Key: "Label.PinTimeRemaining"
 	/// English String: "Time Remaining"
 	/// </summary>
-	public override string LabelPinTimeRemaining => "剩餘時間";
+	public override string LabelPinTimeRemaining => "å‰©é¤˜æ™‚é–“";
 
 	/// <summary>
 	/// Key: "Label.PinTimeSecs"
 	/// English String: "sec"
 	/// </summary>
-	public override string LabelPinTimeSecs => "秒";
+	public override string LabelPinTimeSecs => "ç§’";
 
 	/// <summary>
 	/// Key: "Label.PreviousUsernames"
 	/// English String: "Previous usernames:"
 	/// </summary>
-	public override string LabelPreviousUsernames => "之前的使用者名稱：";
+	public override string LabelPreviousUsernames => "ä¹‹å‰çš„ä½¿ç”¨è€…åç¨±ï¼š";
 
 	/// <summary>
 	/// Key: "Label.PrivacyMode"
 	/// English String: "Privacy Mode"
 	/// </summary>
-	public override string LabelPrivacyMode => "隱私模式";
+	public override string LabelPrivacyMode => "éš±ç§æ¨¡å¼";
 
 	/// <summary>
 	/// Key: "Label.RenevalDate"
 	/// English String: "Renewal date"
 	/// </summary>
-	public override string LabelRenevalDate => "續訂日期";
+	public override string LabelRenevalDate => "çºŒè¨‚æ—¥æœŸ";
 
 	/// <summary>
 	/// Key: "Label.SignOutAllSessions"
 	/// English String: "Sign out of all other sessions"
 	/// </summary>
-	public override string LabelSignOutAllSessions => "登出其它在線作業";
+	public override string LabelSignOutAllSessions => "ç™»å‡ºå…¶å®ƒåœ¨ç·šä½œæ¥­";
 
 	/// <summary>
 	/// Key: "Label.SocialLinksVisibility"
 	/// English String: "Visible to:"
 	/// </summary>
-	public override string LabelSocialLinksVisibility => "開放顯示對象：";
+	public override string LabelSocialLinksVisibility => "é–‹æ”¾é¡¯ç¤ºå°è±¡ï¼š";
 
 	/// <summary>
 	/// Key: "Label.ThemeTitle"
 	/// English String: "Theme"
 	/// </summary>
-	public override string LabelThemeTitle => "主題";
+	public override string LabelThemeTitle => "ä¸»é¡Œ";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.ContactSettings"
 	/// English String: "Custom - Control your own settings. Default - Enable chat and messages with Friends. Off - Disables chat and messages."
 	/// </summary>
-	public override string LabelToolTipContactSettings => "自訂：控制您自己的設定。預設 ：啟用好友聊天與訊息。關閉：停用聊天與訊息。";
+	public override string LabelToolTipContactSettings => "è‡ªè¨‚ï¼šæŽ§åˆ¶æ‚¨è‡ªå·±çš„è¨­å®šã€‚é è¨­ ï¼šå•Ÿç”¨å¥½å‹èŠå¤©èˆ‡è¨Šæ¯ã€‚é—œé–‰ï¼šåœç”¨èŠå¤©èˆ‡è¨Šæ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.PinLocked"
 	/// English String: "All settings are locked. To edit, please unlock with your PIN"
 	/// </summary>
-	public override string LabelToolTipPinLocked => "所有設定已鎖定。若要編輯，請輸入 PIN 解鎖";
+	public override string LabelToolTipPinLocked => "æ‰€æœ‰è¨­å®šå·²éŽ–å®šã€‚è‹¥è¦ç·¨è¼¯ï¼Œè«‹è¼¸å…¥ PIN è§£éŽ–";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.PinUnlocked"
 	/// English String: "Click to lock your Settings page"
 	/// </summary>
-	public override string LabelToolTipPinUnlocked => "按下鎖定您的設定頁面";
+	public override string LabelToolTipPinUnlocked => "æŒ‰ä¸‹éŽ–å®šæ‚¨çš„è¨­å®šé é¢";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.PrivacyMode"
 	/// English String: "Click here for more information"
 	/// </summary>
-	public override string LabelToolTipPrivacyMode => "按下此處取得更多資訊";
+	public override string LabelToolTipPrivacyMode => "æŒ‰ä¸‹æ­¤è™•å–å¾—æ›´å¤šè³‡è¨Š";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanChatInApp"
 	/// English String: "This setting controls who this user will be allowed to chat with in the app and on the web (separate from in game). The setting also prevents this user from posting on Forums and group walls."
 	/// </summary>
-	public override string LabelToolTipWhoCanChatInApp => "此設定控制此使用者可以在 App 及網頁中的聊天對象（但無法控制遊戲中的聊天對象）。此設定也禁止此使用者在論壇和群組留言板上貼文。";
+	public override string LabelToolTipWhoCanChatInApp => "æ­¤è¨­å®šæŽ§åˆ¶æ­¤ä½¿ç”¨è€…å¯ä»¥åœ¨ App åŠç¶²é ä¸­çš„èŠå¤©å°è±¡ï¼ˆä½†ç„¡æ³•æŽ§åˆ¶éŠæˆ²ä¸­çš„èŠå¤©å°è±¡ï¼‰ã€‚æ­¤è¨­å®šä¹Ÿç¦æ­¢æ­¤ä½¿ç”¨è€…åœ¨è«–å£‡å’Œç¾¤çµ„ç•™è¨€æ¿ä¸Šè²¼æ–‡ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanChatInGame"
 	/// English String: "This setting controls who this user will be allowed to chat with in game."
 	/// </summary>
-	public override string LabelToolTipWhoCanChatInGame => "此設定控制此使用者可以在遊戲中聊天的對象。";
+	public override string LabelToolTipWhoCanChatInGame => "æ­¤è¨­å®šæŽ§åˆ¶æ­¤ä½¿ç”¨è€…å¯ä»¥åœ¨éŠæˆ²ä¸­èŠå¤©çš„å°è±¡ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanFindMeByPhone"
 	/// This setting controls who can find you using the phone number you provided.
 	/// English String: "This setting controls who can find you using the phone number you provided."
 	/// </summary>
-	public override string LabelToolTipWhoCanFindMeByPhone => "此設定控制誰可以使用您提供的手機號碼找到您。";
+	public override string LabelToolTipWhoCanFindMeByPhone => "æ­¤è¨­å®šæŽ§åˆ¶èª°å¯ä»¥ä½¿ç”¨æ‚¨æä¾›çš„æ‰‹æ©Ÿè™Ÿç¢¼æ‰¾åˆ°æ‚¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanInviteVIP"
 	/// English String: "This setting controls who can join this user in VIP servers - servers that can only be joined by invitation of the server owner."
 	/// </summary>
-	public override string LabelToolTipWhoCanInviteVIP => "此設定控制誰可以在 VIP 伺服器中加入這位使用者；VIP 伺服器是只可以透過伺服器主人邀請加入的伺服器。";
+	public override string LabelToolTipWhoCanInviteVIP => "æ­¤è¨­å®šæŽ§åˆ¶èª°å¯ä»¥åœ¨ VIP ä¼ºæœå™¨ä¸­åŠ å…¥é€™ä½ä½¿ç”¨è€…ï¼›VIP ä¼ºæœå™¨æ˜¯åªå¯ä»¥é€éŽä¼ºæœå™¨ä¸»äººé‚€è«‹åŠ å…¥çš„ä¼ºæœå™¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanJoinGame"
 	/// English String: "This setting controls who can see which game I'm in and join me in my server. Selecting no one means no one can follow me into my specific server, but I will be playing with other users."
 	/// </summary>
-	public override string LabelToolTipWhoCanJoinGame => "此設定控制誰可以看到我在玩的遊戲，並加入我的伺服器。若選擇「沒有人」，將不會有人跟隨我加入我的伺服器，但我仍會和其他使用者玩遊戲。";
+	public override string LabelToolTipWhoCanJoinGame => "æ­¤è¨­å®šæŽ§åˆ¶èª°å¯ä»¥çœ‹åˆ°æˆ‘åœ¨çŽ©çš„éŠæˆ²ï¼Œä¸¦åŠ å…¥æˆ‘çš„ä¼ºæœå™¨ã€‚è‹¥é¸æ“‡ã€Œæ²’æœ‰äººã€ï¼Œå°‡ä¸æœƒæœ‰äººè·Ÿéš¨æˆ‘åŠ å…¥æˆ‘çš„ä¼ºæœå™¨ï¼Œä½†æˆ‘ä»æœƒå’Œå…¶ä»–ä½¿ç”¨è€…çŽ©éŠæˆ²ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanMessageMe"
 	/// English String: "This setting controls who this user can receive messages from in their messages inbox."
 	/// </summary>
-	public override string LabelToolTipWhoCanMessageMe => "此設定控制此使用者可以從哪些使用者收到訊息。";
+	public override string LabelToolTipWhoCanMessageMe => "æ­¤è¨­å®šæŽ§åˆ¶æ­¤ä½¿ç”¨è€…å¯ä»¥å¾žå“ªäº›ä½¿ç”¨è€…æ”¶åˆ°è¨Šæ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanSeeInventory"
 	/// English String: "This setting controls who can see your inventory."
 	/// </summary>
-	public override string LabelToolTipWhoCanSeeInventory => "此設定控制誰可以看到您的道具欄。";
+	public override string LabelToolTipWhoCanSeeInventory => "æ­¤è¨­å®šæŽ§åˆ¶èª°å¯ä»¥çœ‹åˆ°æ‚¨çš„é“å…·æ¬„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.TradeFilter"
 	/// English String: "Trade quality filter"
 	/// </summary>
-	public override string LabelTradeFilter => "交易品質篩選器";
+	public override string LabelTradeFilter => "äº¤æ˜“å“è³ªç¯©é¸å™¨";
 
 	/// <summary>
 	/// Key: "Label.Twitch"
 	/// English String: "Twitch"
 	/// </summary>
-	public override string LabelTwitch => "Twitch：";
+	public override string LabelTwitch => "Twitchï¼š";
 
 	/// <summary>
 	/// Key: "Label.Twitter"
 	/// English String: "Twitter:"
 	/// </summary>
-	public override string LabelTwitter => "Twitter：";
+	public override string LabelTwitter => "Twitterï¼š";
 
 	/// <summary>
 	/// Key: "Label.TwoStepEmail"
 	/// English String: "enable 2 Step Verification"
 	/// </summary>
-	public override string LabelTwoStepEmail => "啟用雙步驟驗證";
+	public override string LabelTwoStepEmail => "å•Ÿç”¨é›™æ­¥é©Ÿé©—è­‰";
 
 	/// <summary>
 	/// Key: "Label.TwoStepPrerequisite"
 	/// English String: "A verified email is required."
 	/// </summary>
-	public override string LabelTwoStepPrerequisite => "需要已驗證的電子郵件地址。";
+	public override string LabelTwoStepPrerequisite => "éœ€è¦å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerification"
 	/// English String: "Improve your account security. A code will be required when you login from a new device."
 	/// </summary>
-	public override string LabelTwoStepVerification => "進一步保護您的帳號。當您從新裝置登入時，您將需要輸入驗證碼。";
+	public override string LabelTwoStepVerification => "é€²ä¸€æ­¥ä¿è­·æ‚¨çš„å¸³è™Ÿã€‚ç•¶æ‚¨å¾žæ–°è£ç½®ç™»å…¥æ™‚ï¼Œæ‚¨å°‡éœ€è¦è¼¸å…¥é©—è­‰ç¢¼ã€‚";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerificationEnabled"
 	/// English String: "Your account is protected!"
 	/// </summary>
-	public override string LabelTwoStepVerificationEnabled => "您的帳號已受保護！";
+	public override string LabelTwoStepVerificationEnabled => "æ‚¨çš„å¸³è™Ÿå·²å—ä¿è­·ï¼";
 
 	/// <summary>
 	/// Key: "Label.UpdateEmail"
 	/// English String: "Update Email"
 	/// </summary>
-	public override string LabelUpdateEmail => "更新電子郵件地址";
+	public override string LabelUpdateEmail => "æ›´æ–°é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.UpdatePhone"
 	/// English String: "Update Phone"
 	/// </summary>
-	public override string LabelUpdatePhone => "更新手機號碼";
+	public override string LabelUpdatePhone => "æ›´æ–°æ‰‹æ©Ÿè™Ÿç¢¼";
 
 	/// <summary>
 	/// Key: "Label.UseDeviceLanguage"
 	/// Allow user to use device language
 	/// English String: "Use Device Language"
 	/// </summary>
-	public override string LabelUseDeviceLanguage => "使用裝置語言";
+	public override string LabelUseDeviceLanguage => "ä½¿ç”¨è£ç½®èªžè¨€";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username:"
 	/// </summary>
-	public override string LabelUsername => "使用者名稱：";
+	public override string LabelUsername => "ä½¿ç”¨è€…åç¨±ï¼š";
 
 	/// <summary>
 	/// Key: "Label.Verified"
 	/// English String: "Verified"
 	/// </summary>
-	public override string LabelVerified => "已驗證";
+	public override string LabelVerified => "å·²é©—è­‰";
 
 	/// <summary>
 	/// Key: "Label.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string LabelVerify => "驗證";
+	public override string LabelVerify => "é©—è­‰";
 
 	/// <summary>
 	/// Key: "Label.WhoCanChatInApp"
 	/// English String: "Who can chat with me in app?"
 	/// </summary>
-	public override string LabelWhoCanChatInApp => "誰可以在 App 與我聊天？";
+	public override string LabelWhoCanChatInApp => "èª°å¯ä»¥åœ¨ App èˆ‡æˆ‘èŠå¤©ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.WhoCanChatInGame"
 	/// English String: "Who can chat with me?"
 	/// </summary>
-	public override string LabelWhoCanChatInGame => "誰可以與我聊天？";
+	public override string LabelWhoCanChatInGame => "èª°å¯ä»¥èˆ‡æˆ‘èŠå¤©ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.WhoCanFindMeByPhone"
 	/// Who can find me by my phone number?
 	/// English String: "Who can find me by my phone number?"
 	/// </summary>
-	public override string LabelWhoCanFindMeByPhone => "誰可以透過我的手機號碼找到我？";
+	public override string LabelWhoCanFindMeByPhone => "èª°å¯ä»¥é€éŽæˆ‘çš„æ‰‹æ©Ÿè™Ÿç¢¼æ‰¾åˆ°æˆ‘ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.WhoCanInviteVIP"
 	/// English String: "Who can invite me to VIP Servers?"
 	/// </summary>
-	public override string LabelWhoCanInviteVIP => "誰可以邀請我到 VIP 伺服器？";
+	public override string LabelWhoCanInviteVIP => "èª°å¯ä»¥é‚€è«‹æˆ‘åˆ° VIP ä¼ºæœå™¨ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.WhoCanJoinGame"
 	/// English String: "Who can join me?"
 	/// </summary>
-	public override string LabelWhoCanJoinGame => "誰可以加入我？";
+	public override string LabelWhoCanJoinGame => "èª°å¯ä»¥åŠ å…¥æˆ‘ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.WhoCanMessageMe"
 	/// English String: "Who can message me?"
 	/// </summary>
-	public override string LabelWhoCanMessageMe => "誰可以傳送訊息給我？";
+	public override string LabelWhoCanMessageMe => "èª°å¯ä»¥å‚³é€è¨Šæ¯çµ¦æˆ‘ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.WhoCanSeeInventory"
 	/// This setting controls who can see the user's inventory.
 	/// English String: "Who can see my inventory?"
 	/// </summary>
-	public override string LabelWhoCanSeeInventory => "誰可以看到我的道具欄？";
+	public override string LabelWhoCanSeeInventory => "èª°å¯ä»¥çœ‹åˆ°æˆ‘çš„é“å…·æ¬„ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.WhoCanTradeWithMe"
 	/// English String: "Who can trade with me?"
 	/// </summary>
-	public override string LabelWhoCanTradeWithMe => "誰可以與我交易？";
+	public override string LabelWhoCanTradeWithMe => "èª°å¯ä»¥èˆ‡æˆ‘äº¤æ˜“ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.XboxConnected"
 	/// English String: "Connected with an Xbox account"
 	/// </summary>
-	public override string LabelXboxConnected => "已連接 Xbox 帳號";
+	public override string LabelXboxConnected => "å·²é€£æŽ¥ Xbox å¸³è™Ÿ";
 
 	/// <summary>
 	/// Key: "Label.YouTube"
 	/// English String: "YouTube:"
 	/// </summary>
-	public override string LabelYouTube => "YouTube：";
+	public override string LabelYouTube => "YouTubeï¼š";
 
 	/// <summary>
 	/// Key: "LabelInsufficientRobux"
 	/// English String: "Insufficient Robux"
 	/// </summary>
-	public override string LabelInsufficientRobux => "Robux 不足";
+	public override string LabelInsufficientRobux => "Robux ä¸è¶³";
 
 	/// <summary>
 	/// Key: "Message.Error.AccountHasPin"
 	/// English String: "The account already has a PIN. Try making a different request."
 	/// </summary>
-	public override string MessageErrorAccountHasPin => "此帳號已設置 PIN，請嘗試其他請求。";
+	public override string MessageErrorAccountHasPin => "æ­¤å¸³è™Ÿå·²è¨­ç½® PINï¼Œè«‹å˜—è©¦å…¶ä»–è«‹æ±‚ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.AccountLocked"
 	/// English String: "The account is locked. Unlock the acount before performing the action."
 	/// </summary>
-	public override string MessageErrorAccountLocked => "此帳號遭到封鎖，請在執行此動作前解鎖此帳號。";
+	public override string MessageErrorAccountLocked => "æ­¤å¸³è™Ÿé­åˆ°å°éŽ–ï¼Œè«‹åœ¨åŸ·è¡Œæ­¤å‹•ä½œå‰è§£éŽ–æ­¤å¸³è™Ÿã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Default"
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string MessageErrorDefault => "發生錯誤，請稍後再試。";
+	public override string MessageErrorDefault => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.AlreadyVerified"
 	/// English String: "The email is already verified."
 	/// </summary>
-	public override string MessageErrorEmailAlreadyVerified => "此電子郵件地址已驗證。";
+	public override string MessageErrorEmailAlreadyVerified => "æ­¤é›»å­éƒµä»¶åœ°å€å·²é©—è­‰ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.FeatureDisabled"
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailFeatureDisabled => "此功能目前停用，請稍後再試。";
+	public override string MessageErrorEmailFeatureDisabled => "æ­¤åŠŸèƒ½ç›®å‰åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.IncorrectPassword"
 	/// English String: "Password is incorrect."
 	/// </summary>
-	public override string MessageErrorEmailIncorrectPassword => "密碼不正確。";
+	public override string MessageErrorEmailIncorrectPassword => "å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.InvalidEmail"
 	/// English String: "Invalid email address."
 	/// </summary>
-	public override string MessageErrorEmailInvalidEmail => "電子郵件地址無效。";
+	public override string MessageErrorEmailInvalidEmail => "é›»å­éƒµä»¶åœ°å€ç„¡æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.NoEmailAssociated"
 	/// English String: "No email address is associated with the account."
 	/// </summary>
-	public override string MessageErrorEmailNoEmailAssociated => "此帳號沒有加入電子郵件地址。";
+	public override string MessageErrorEmailNoEmailAssociated => "æ­¤å¸³è™Ÿæ²’æœ‰åŠ å…¥é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.PinLocked"
 	/// English String: "PIN is locked."
 	/// </summary>
-	public override string MessageErrorEmailPinLocked => "PIN 已鎖定。";
+	public override string MessageErrorEmailPinLocked => "PIN å·²éŽ–å®šã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.SameEmail"
 	/// English String: "This is already the current email."
 	/// </summary>
-	public override string MessageErrorEmailSameEmail => "這已是目前的電子郵件地址。";
+	public override string MessageErrorEmailSameEmail => "é€™å·²æ˜¯ç›®å‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.TooManyAccounts"
 	/// English String: "There are too many accounts associated with this email address."
 	/// </summary>
-	public override string MessageErrorEmailTooManyAccounts => "加入此電子郵件地址的帳號過多。";
+	public override string MessageErrorEmailTooManyAccounts => "åŠ å…¥æ­¤é›»å­éƒµä»¶åœ°å€çš„å¸³è™ŸéŽå¤šã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.TooManyUpdates"
 	/// English String: "Too many attempts to update email. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailTooManyUpdates => "更新電子郵件地址次數過多，請稍後再試。";
+	public override string MessageErrorEmailTooManyUpdates => "æ›´æ–°é›»å­éƒµä»¶åœ°å€æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.TooManyVerify"
 	/// English String: "Too many attempts to send verification email. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailTooManyVerify => "傳送驗證電子郵件次數過多，請稍後再試。";
+	public override string MessageErrorEmailTooManyVerify => "å‚³é€é©—è­‰é›»å­éƒµä»¶æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.Unknown"
 	/// English String: "An unknown error occured."
 	/// </summary>
-	public override string MessageErrorEmailUnknown => "發生未知錯誤。";
+	public override string MessageErrorEmailUnknown => "ç™¼ç”ŸæœªçŸ¥éŒ¯èª¤ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.IncorrectPin"
 	/// English String: "Incorrect PIN."
 	/// </summary>
-	public override string MessageErrorIncorrectPin => "PIN 碼錯誤。";
+	public override string MessageErrorIncorrectPin => "PIN ç¢¼éŒ¯èª¤ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.InvalidPinFormat"
 	/// English String: "Invalid PIN format."
 	/// </summary>
-	public override string MessageErrorInvalidPinFormat => "PIN 格式無效。";
+	public override string MessageErrorInvalidPinFormat => "PIN æ ¼å¼ç„¡æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.NoPin"
 	/// English String: "No PIN exists on the account."
 	/// </summary>
-	public override string MessageErrorNoPin => "帳號沒有 PIN。";
+	public override string MessageErrorNoPin => "å¸³è™Ÿæ²’æœ‰ PINã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.NoVerifiedEmail"
 	/// English String: "The account does not have a verified email."
 	/// </summary>
-	public override string MessageErrorNoVerifiedEmail => "此帳號沒有已驗證的電子郵件地址。";
+	public override string MessageErrorNoVerifiedEmail => "æ­¤å¸³è™Ÿæ²’æœ‰å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.System"
 	/// English String: "System error."
 	/// </summary>
-	public override string MessageErrorSystem => "系統錯誤。";
+	public override string MessageErrorSystem => "ç³»çµ±éŒ¯èª¤ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.TooManyRequests"
 	/// English String: "Too many requests made. Try again later."
 	/// </summary>
-	public override string MessageErrorTooManyRequests => "請求次數過多，請稍後再試。";
+	public override string MessageErrorTooManyRequests => "è«‹æ±‚æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "MessageEmailAddSuccess"
 	/// English String: "Email Added"
 	/// </summary>
-	public override string MessageEmailAddSuccess => "已新增電子郵件地址";
+	public override string MessageEmailAddSuccess => "å·²æ–°å¢žé›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "MessageEmailAlreadyVerifiedError"
 	/// English String: "Your email is already verified!"
 	/// </summary>
-	public override string MessageEmailAlreadyVerifiedError => "您的電子郵件地址已驗證！";
+	public override string MessageEmailAlreadyVerifiedError => "æ‚¨çš„é›»å­éƒµä»¶åœ°å€å·²é©—è­‰ï¼";
 
 	/// <summary>
 	/// Key: "MessageFeatureDisabledError"
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string MessageFeatureDisabledError => "此功能目前停用，請稍後再試。";
+	public override string MessageFeatureDisabledError => "æ­¤åŠŸèƒ½ç›®å‰åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "MessageInsufficientRobuxErrorForUserName"
 	/// You don't have enough Robux to change your username.
 	/// English String: "You don't have enough Robux to change your username."
 	/// </summary>
-	public override string MessageInsufficientRobuxErrorForUserName => "您的 Robux 不足，無法變更使用者名稱。";
+	public override string MessageInsufficientRobuxErrorForUserName => "æ‚¨çš„ Robux ä¸è¶³ï¼Œç„¡æ³•è®Šæ›´ä½¿ç”¨è€…åç¨±ã€‚";
 
 	/// <summary>
 	/// Key: "MessageInvalidEmail"
 	/// English String: "Invalid Email"
 	/// </summary>
-	public override string MessageInvalidEmail => "電子郵件地址無效";
+	public override string MessageInvalidEmail => "é›»å­éƒµä»¶åœ°å€ç„¡æ•ˆ";
 
 	/// <summary>
 	/// Key: "MessageNoEmailAssociatedError"
 	/// English String: "You must associate an email address with your account"
 	/// </summary>
-	public override string MessageNoEmailAssociatedError => "您必須在此帳號新增電子郵件地址";
+	public override string MessageNoEmailAssociatedError => "æ‚¨å¿…é ˆåœ¨æ­¤å¸³è™Ÿæ–°å¢žé›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "MessagePermissionError"
 	/// English String: "You don't have enough Robux to change your username."
 	/// </summary>
-	public override string MessagePermissionError => "您的 Robux 不足，無法變更使用者名稱。";
+	public override string MessagePermissionError => "æ‚¨çš„ Robux ä¸è¶³ï¼Œç„¡æ³•è®Šæ›´ä½¿ç”¨è€…åç¨±ã€‚";
 
 	/// <summary>
 	/// Key: "MessagePinLockedError"
 	/// English String: "PIN is locked."
 	/// </summary>
-	public override string MessagePinLockedError => "PIN 已鎖定。";
+	public override string MessagePinLockedError => "PIN å·²éŽ–å®šã€‚";
 
 	/// <summary>
 	/// Key: "MessageSameEmailError"
 	/// English String: "This is already the current verified email."
 	/// </summary>
-	public override string MessageSameEmailError => "這已是目前已驗證的電子郵件地址。";
+	public override string MessageSameEmailError => "é€™å·²æ˜¯ç›®å‰å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "MessageSettingsUpdateSuccess"
 	/// English String: "Your settings have been updated."
 	/// </summary>
-	public override string MessageSettingsUpdateSuccess => "您的設定已更新。";
+	public override string MessageSettingsUpdateSuccess => "æ‚¨çš„è¨­å®šå·²æ›´æ–°ã€‚";
 
 	/// <summary>
 	/// Key: "MessageTooManyAccountsOnEmailError"
 	/// English String: "There are too many accounts associated with this email address."
 	/// </summary>
-	public override string MessageTooManyAccountsOnEmailError => "加入此電子郵件地址的帳號過多。";
+	public override string MessageTooManyAccountsOnEmailError => "åŠ å…¥æ­¤é›»å­éƒµä»¶åœ°å€çš„å¸³è™ŸéŽå¤šã€‚";
 
 	/// <summary>
 	/// Key: "MessageTooManyAttemptsError"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttemptsError => "嘗試次數過多，請稍後再試。";
+	public override string MessageTooManyAttemptsError => "å˜—è©¦æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "MessageUnknownError"
 	/// English String: "An unknown error occurred."
 	/// </summary>
-	public override string MessageUnknownError => "發生未知錯誤。";
+	public override string MessageUnknownError => "ç™¼ç”ŸæœªçŸ¥éŒ¯èª¤ã€‚";
 
 	/// <summary>
 	/// Key: "MessageWrongPassword"
 	/// English String: "Your password is incorrect."
 	/// </summary>
-	public override string MessageWrongPassword => "您的密碼不正確。";
+	public override string MessageWrongPassword => "æ‚¨çš„å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
 
 	/// <summary>
 	/// Key: "Respones.InvalidCodePhone"
 	/// error message
 	/// English String: "Code is invalid. Please check your phone and try again."
 	/// </summary>
-	public override string ResponesInvalidCodePhone => "驗證碼無效，請檢查您的手機後重新嘗試。";
+	public override string ResponesInvalidCodePhone => "é©—è­‰ç¢¼ç„¡æ•ˆï¼Œè«‹æª¢æŸ¥æ‚¨çš„æ‰‹æ©Ÿå¾Œé‡æ–°å˜—è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Respones.InventoryAndTradePrivacyConflictError"
 	/// English String: "The value for \"Who can trade with me\" should be the same or more restrictive than the value for \"Who can see my inventory\"."
 	/// </summary>
-	public override string ResponesInventoryAndTradePrivacyConflictError => "「誰可以與我交易」的值應在「誰可以看到我的道具欄」的值以下。";
+	public override string ResponesInventoryAndTradePrivacyConflictError => "ã€Œèª°å¯ä»¥èˆ‡æˆ‘äº¤æ˜“ã€çš„å€¼æ‡‰åœ¨ã€Œèª°å¯ä»¥çœ‹åˆ°æˆ‘çš„é“å…·æ¬„ã€çš„å€¼ä»¥ä¸‹ã€‚";
 
 	/// <summary>
 	/// Key: "Response.CodeRequired"
 	/// error message
 	/// English String: "A code is required. Please enter your code."
 	/// </summary>
-	public override string ResponseCodeRequired => "需要驗證碼，請輸入您的驗證碼。";
+	public override string ResponseCodeRequired => "éœ€è¦é©—è­‰ç¢¼ï¼Œè«‹è¼¸å…¥æ‚¨çš„é©—è­‰ç¢¼ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangeDefaultWarning"
 	/// English String: "Changing your birthday to under age 13 cannot be un-done. Are you sure you want to continue?"
 	/// </summary>
-	public override string ResponseDialogBirthdayChangeDefaultWarning => "若變更生日為 13 歲以下，之後將無法還原。確定？";
+	public override string ResponseDialogBirthdayChangeDefaultWarning => "è‹¥è®Šæ›´ç”Ÿæ—¥ç‚º 13 æ­²ä»¥ä¸‹ï¼Œä¹‹å¾Œå°‡ç„¡æ³•é‚„åŽŸã€‚ç¢ºå®šï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangePasswordBody"
 	/// English String: "You must add a password to your Roblox account to change your birthday."
 	/// </summary>
-	public override string ResponseDialogBirthdayChangePasswordBody => "若要變更生日，請先新增 Roblox 帳號密碼。";
+	public override string ResponseDialogBirthdayChangePasswordBody => "è‹¥è¦è®Šæ›´ç”Ÿæ—¥ï¼Œè«‹å…ˆæ–°å¢ž Roblox å¸³è™Ÿå¯†ç¢¼ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangePasswordTitle"
 	/// English String: "Must Add Password"
 	/// </summary>
-	public override string ResponseDialogBirthdayChangePasswordTitle => "必須新增密碼";
+	public override string ResponseDialogBirthdayChangePasswordTitle => "å¿…é ˆæ–°å¢žå¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangeSocialWarning"
 	/// English String: "Changing your birthday to under age 13 cannot be un-done. Your Social Sign On from Facebook will be disabled and you will need to sign on using your Roblox password."
 	/// </summary>
-	public override string ResponseDialogBirthdayChangeSocialWarning => "若變更生日為 13 歲以下，之後將無法還原。您的 Facebook 社交登入將會被停用，之後必須使用 Roblox 密碼登入。";
+	public override string ResponseDialogBirthdayChangeSocialWarning => "è‹¥è®Šæ›´ç”Ÿæ—¥ç‚º 13 æ­²ä»¥ä¸‹ï¼Œä¹‹å¾Œå°‡ç„¡æ³•é‚„åŽŸã€‚æ‚¨çš„ Facebook ç¤¾äº¤ç™»å…¥å°‡æœƒè¢«åœç”¨ï¼Œä¹‹å¾Œå¿…é ˆä½¿ç”¨ Roblox å¯†ç¢¼ç™»å…¥ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordIncorrectPassword"
 	/// Your current password is incorrect, the password was not changed.
 	/// English String: "Your current password is incorrect, the password was not changed."
 	/// </summary>
-	public override string ResponseDialogChangePasswordIncorrectPassword => "您目前的密碼不正確，密碼並未變更。";
+	public override string ResponseDialogChangePasswordIncorrectPassword => "æ‚¨ç›®å‰çš„å¯†ç¢¼ä¸æ­£ç¢ºï¼Œå¯†ç¢¼ä¸¦æœªè®Šæ›´ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordNoMatch"
 	/// English String: "Passwords do not match"
 	/// </summary>
-	public override string ResponseDialogChangePasswordNoMatch => "密碼不相符";
+	public override string ResponseDialogChangePasswordNoMatch => "å¯†ç¢¼ä¸ç›¸ç¬¦";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordTooShortError"
 	/// English String: "Must be at least 8 characters long"
 	/// </summary>
-	public override string ResponseDialogChangePasswordTooShortError => "需要 8 個字元以上";
+	public override string ResponseDialogChangePasswordTooShortError => "éœ€è¦ 8 å€‹å­—å…ƒä»¥ä¸Š";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameNoInput"
 	/// English String: "Please enter a username."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameNoInput => "請輸入使用者名稱。";
+	public override string ResponseDialogChangeUsernameNoInput => "è«‹è¼¸å…¥ä½¿ç”¨è€…åç¨±ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameNotAllowed"
 	/// error message
 	/// English String: "Username not appropriate for Roblox."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameNotAllowed => "此使用者名稱含有不當內容。";
+	public override string ResponseDialogChangeUsernameNotAllowed => "æ­¤ä½¿ç”¨è€…åç¨±å«æœ‰ä¸ç•¶å…§å®¹ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameNotAvailable"
 	/// English String: "This username is already in use."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameNotAvailable => "此使用者名稱已被使用。";
+	public override string ResponseDialogChangeUsernameNotAvailable => "æ­¤ä½¿ç”¨è€…åç¨±å·²è¢«ä½¿ç”¨ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameSuccess"
 	/// success message
 	/// English String: "Successfully changed username."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameSuccess => "已成功變更使用者名稱。";
+	public override string ResponseDialogChangeUsernameSuccess => "å·²æˆåŠŸè®Šæ›´ä½¿ç”¨è€…åç¨±ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.CountryListError"
 	/// English String: "Error loading country list"
 	/// </summary>
-	public override string ResponseDialogCountryListError => "載入國家清單時發生錯誤";
+	public override string ResponseDialogCountryListError => "è¼‰å…¥åœ‹å®¶æ¸…å–®æ™‚ç™¼ç”ŸéŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Response.Dialog.CurrencyServiceError"
 	/// English String: "There was an error with the currency service. Try again later."
 	/// </summary>
-	public override string ResponseDialogCurrencyServiceError => "貨幣服務發生錯誤，請稍後再試。";
+	public override string ResponseDialogCurrencyServiceError => "è²¨å¹£æœå‹™ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DefaultErrorMessage"
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string ResponseDialogDefaultErrorMessage => "發生錯誤，請稍後再試。";
+	public override string ResponseDialogDefaultErrorMessage => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DefaultErrorTitle"
 	/// English String: "Error occured"
 	/// </summary>
-	public override string ResponseDialogDefaultErrorTitle => "發生錯誤";
+	public override string ResponseDialogDefaultErrorTitle => "ç™¼ç”ŸéŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DefaultSuccessMessage"
 	/// English String: "Saved Successfully!"
 	/// </summary>
-	public override string ResponseDialogDefaultSuccessMessage => "已成功儲存！";
+	public override string ResponseDialogDefaultSuccessMessage => "å·²æˆåŠŸå„²å­˜ï¼";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DisconnectXBoxError"
 	/// English String: "There was an error disconnecting your Xbox account, please try again later."
 	/// </summary>
-	public override string ResponseDialogDisconnectXBoxError => "解除您的 Xbox 帳號連接時發生錯誤，請稍後再試。";
+	public override string ResponseDialogDisconnectXBoxError => "è§£é™¤æ‚¨çš„ Xbox å¸³è™Ÿé€£æŽ¥æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.EmailSentForVerification"
 	/// English String: "An email has been sent for verification."
 	/// </summary>
-	public override string ResponseDialogEmailSentForVerification => "已傳送驗證電子郵件。";
+	public override string ResponseDialogEmailSentForVerification => "å·²å‚³é€é©—è­‰é›»å­éƒµä»¶ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidEmailAddress"
 	/// English String: "Invalid Email Address"
 	/// </summary>
-	public override string ResponseDialogInvalidEmailAddress => "電子郵件地址無效";
+	public override string ResponseDialogInvalidEmailAddress => "é›»å­éƒµä»¶åœ°å€ç„¡æ•ˆ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidPhoneNumber"
 	/// English String: "Invalid phone number"
 	/// </summary>
-	public override string ResponseDialogInvalidPhoneNumber => "手機號碼無效";
+	public override string ResponseDialogInvalidPhoneNumber => "æ‰‹æ©Ÿè™Ÿç¢¼ç„¡æ•ˆ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidUsername"
 	/// Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker.
 	/// English String: "Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker."
 	/// </summary>
-	public override string ResponseDialogInvalidUsername => "按下「傳送」提交聯絡單，或按下「取消」編輯使用者名稱。提供正確的使用者名稱可以讓我們更快解決您的問題。";
+	public override string ResponseDialogInvalidUsername => "æŒ‰ä¸‹ã€Œå‚³é€ã€æäº¤è¯çµ¡å–®ï¼Œæˆ–æŒ‰ä¸‹ã€Œå–æ¶ˆã€ç·¨è¼¯ä½¿ç”¨è€…åç¨±ã€‚æä¾›æ­£ç¢ºçš„ä½¿ç”¨è€…åç¨±å¯ä»¥è®“æˆ‘å€‘æ›´å¿«è§£æ±ºæ‚¨çš„å•é¡Œã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PasswordRulesError"
 	/// English String: "Password must contain at least 2 digits, 4 letters, 1 symbol, and be at least 8 characters."
 	/// </summary>
-	public override string ResponseDialogPasswordRulesError => "密碼需要 8 個字元以上，其中應含有 2 個數字、4 個字母及 1 個符號。";
+	public override string ResponseDialogPasswordRulesError => "å¯†ç¢¼éœ€è¦ 8 å€‹å­—å…ƒä»¥ä¸Šï¼Œå…¶ä¸­æ‡‰å«æœ‰ 2 å€‹æ•¸å­—ã€4 å€‹å­—æ¯åŠ 1 å€‹ç¬¦è™Ÿã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PinCreateConfirmation"
 	/// English String: "Your PIN is now set. You will need to enter this PIN before accessing the Settings page in the future."
 	/// </summary>
-	public override string ResponseDialogPinCreateConfirmation => "您的 PIN 已成功設定。往後進入設定頁面之前，您將需要輸入此 PIN。";
+	public override string ResponseDialogPinCreateConfirmation => "æ‚¨çš„ PIN å·²æˆåŠŸè¨­å®šã€‚å¾€å¾Œé€²å…¥è¨­å®šé é¢ä¹‹å‰ï¼Œæ‚¨å°‡éœ€è¦è¼¸å…¥æ­¤ PINã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PinCreateMismatch"
 	/// English String: "PINs do not match"
 	/// </summary>
-	public override string ResponseDialogPinCreateMismatch => "PIN 不相符";
+	public override string ResponseDialogPinCreateMismatch => "PIN ä¸ç›¸ç¬¦";
 
 	/// <summary>
 	/// Key: "Response.Dialog.SignoutSessionFailed"
 	/// English String: "There was an error signing you out of all other sessions, please try again later."
 	/// </summary>
-	public override string ResponseDialogSignoutSessionFailed => "登出其它在線作業時發生錯誤，請稍後再試。";
+	public override string ResponseDialogSignoutSessionFailed => "ç™»å‡ºå…¶å®ƒåœ¨ç·šä½œæ¥­æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.SignoutSessionsConfirmation"
 	/// English String: "You have been signed out of all other sessions."
 	/// </summary>
-	public override string ResponseDialogSignoutSessionsConfirmation => "您已登出其它在線作業。";
+	public override string ResponseDialogSignoutSessionsConfirmation => "æ‚¨å·²ç™»å‡ºå…¶å®ƒåœ¨ç·šä½œæ¥­ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TwoStepDisableWarning"
 	/// English String: "If you turn off 2-Step Verification, only your password will be needed when you login from a new device. Are you sure?"
 	/// </summary>
-	public override string ResponseDialogTwoStepDisableWarning => "若您關閉雙步驟驗證，您使用新裝置登入時將只需輸入密碼。確定？";
+	public override string ResponseDialogTwoStepDisableWarning => "è‹¥æ‚¨é—œé–‰é›™æ­¥é©Ÿé©—è­‰ï¼Œæ‚¨ä½¿ç”¨æ–°è£ç½®ç™»å…¥æ™‚å°‡åªéœ€è¼¸å…¥å¯†ç¢¼ã€‚ç¢ºå®šï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TwoStepSuccessTitle"
 	/// English String: "2 Step Verification Enabled"
 	/// </summary>
-	public override string ResponseDialogTwoStepSuccessTitle => "雙步驟驗證已啟用";
+	public override string ResponseDialogTwoStepSuccessTitle => "é›™æ­¥é©Ÿé©—è­‰å·²å•Ÿç”¨";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TwoStepSucessBody"
 	/// English String: "Your account is now protected! No further action is required at this time. A security code will be sent next time you login from a new device."
 	/// </summary>
-	public override string ResponseDialogTwoStepSucessBody => "您的帳號已受到保護，目前不需進行其他動作。您下一次從新裝置登入時，我們將會送出安全碼。";
+	public override string ResponseDialogTwoStepSucessBody => "æ‚¨çš„å¸³è™Ÿå·²å—åˆ°ä¿è­·ï¼Œç›®å‰ä¸éœ€é€²è¡Œå…¶ä»–å‹•ä½œã€‚æ‚¨ä¸‹ä¸€æ¬¡å¾žæ–°è£ç½®ç™»å…¥æ™‚ï¼Œæˆ‘å€‘å°‡æœƒé€å‡ºå®‰å…¨ç¢¼ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateInventorySetting"
 	/// English String: "We have updated your inventory privacy setting. The inventory and trade settings must be consistent."
 	/// </summary>
-	public override string ResponseDialogUpdateInventorySetting => "我們已更新您的道具欄隱私權設定；道具欄設定必須和交易設定一致。";
+	public override string ResponseDialogUpdateInventorySetting => "æˆ‘å€‘å·²æ›´æ–°æ‚¨çš„é“å…·æ¬„éš±ç§æ¬Šè¨­å®šï¼›é“å…·æ¬„è¨­å®šå¿…é ˆå’Œäº¤æ˜“è¨­å®šä¸€è‡´ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateNotificationSettingsError"
 	/// English String: "There was an error updating your notification settings, please try again later."
 	/// </summary>
-	public override string ResponseDialogUpdateNotificationSettingsError => "更新您的通知設定時發生錯誤，請稍後再試。";
+	public override string ResponseDialogUpdateNotificationSettingsError => "æ›´æ–°æ‚¨çš„é€šçŸ¥è¨­å®šæ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateTradeSetting"
 	/// English String: "We have updated your trade privacy setting. The inventory and trade settings must be consistent."
 	/// </summary>
-	public override string ResponseDialogUpdateTradeSetting => "我們已更新您的交易隱私權設定；交易設定必須和道具欄設定一致。";
+	public override string ResponseDialogUpdateTradeSetting => "æˆ‘å€‘å·²æ›´æ–°æ‚¨çš„äº¤æ˜“éš±ç§æ¬Šè¨­å®šï¼›äº¤æ˜“è¨­å®šå¿…é ˆå’Œé“å…·æ¬„è¨­å®šä¸€è‡´ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.VerifyPhoneInvalidCode"
 	/// English String: "Code is invalid. Please check your phone and try again."
 	/// </summary>
-	public override string ResponseDialogVerifyPhoneInvalidCode => "驗證碼無效，請檢查您的手機後重新嘗試。";
+	public override string ResponseDialogVerifyPhoneInvalidCode => "é©—è­‰ç¢¼ç„¡æ•ˆï¼Œè«‹æª¢æŸ¥æ‚¨çš„æ‰‹æ©Ÿå¾Œé‡æ–°å˜—è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.Warning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string ResponseDialogWarning => "警告";
+	public override string ResponseDialogWarning => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Response.FeatureDisabled"
 	/// error message
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string ResponseFeatureDisabled => "此功能目前停用，請稍後再試。";
+	public override string ResponseFeatureDisabled => "æ­¤åŠŸèƒ½ç›®å‰åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// error
 	/// English String: "An error occurred. Please try again."
 	/// </summary>
-	public override string ResponseGeneralError => "發生錯誤，請重新嘗試。";
+	public override string ResponseGeneralError => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹é‡æ–°å˜—è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.IncorrectCodeTooManyTimes"
 	/// error message
 	/// English String: "You have entered the incorrect code too many times."
 	/// </summary>
-	public override string ResponseIncorrectCodeTooManyTimes => "您輸入錯誤驗證碼的次數過多。";
+	public override string ResponseIncorrectCodeTooManyTimes => "æ‚¨è¼¸å…¥éŒ¯èª¤é©—è­‰ç¢¼çš„æ¬¡æ•¸éŽå¤šã€‚";
 
 	/// <summary>
 	/// Key: "Response.IncorrectPasswordTryAgain"
 	/// error message
 	/// English String: "Incorrect password. Please check your password and try again."
 	/// </summary>
-	public override string ResponseIncorrectPasswordTryAgain => "密碼不正確，請檢查您的密碼後重新嘗試。";
+	public override string ResponseIncorrectPasswordTryAgain => "å¯†ç¢¼ä¸æ­£ç¢ºï¼Œè«‹æª¢æŸ¥æ‚¨çš„å¯†ç¢¼å¾Œé‡æ–°å˜—è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.InvalidPhoneTryAgain"
 	/// error message
 	/// English String: "Phone number format is invalid. Please check and try again."
 	/// </summary>
-	public override string ResponseInvalidPhoneTryAgain => "手機號碼格式無效，請檢查之後重新嘗試。";
+	public override string ResponseInvalidPhoneTryAgain => "æ‰‹æ©Ÿè™Ÿç¢¼æ ¼å¼ç„¡æ•ˆï¼Œè«‹æª¢æŸ¥ä¹‹å¾Œé‡æ–°å˜—è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.NotificationBar.PhoneRemovedConfirmation"
 	/// English String: "Phone has been removed"
 	/// </summary>
-	public override string ResponseNotificationBarPhoneRemovedConfirmation => "手機號碼已移除";
+	public override string ResponseNotificationBarPhoneRemovedConfirmation => "æ‰‹æ©Ÿè™Ÿç¢¼å·²ç§»é™¤";
 
 	/// <summary>
 	/// Key: "Response.NotificationBar.PhoneVerifyConfirmation"
 	/// English String: "Phone has been successfully updated!"
 	/// </summary>
-	public override string ResponseNotificationBarPhoneVerifyConfirmation => "手機號碼已成功更新！";
+	public override string ResponseNotificationBarPhoneVerifyConfirmation => "æ‰‹æ©Ÿè™Ÿç¢¼å·²æˆåŠŸæ›´æ–°ï¼";
 
 	/// <summary>
 	/// Key: "Response.NumberAlreadyAssociated"
 	/// error message
 	/// English String: "Number is already associated with another account."
 	/// </summary>
-	public override string ResponseNumberAlreadyAssociated => "已有帳號加入此手機號碼。";
+	public override string ResponseNumberAlreadyAssociated => "å·²æœ‰å¸³è™ŸåŠ å…¥æ­¤æ‰‹æ©Ÿè™Ÿç¢¼ã€‚";
 
 	/// <summary>
 	/// Key: "Response.PinRequired"
 	/// error
 	/// English String: "Please enter your PIN to change your settings."
 	/// </summary>
-	public override string ResponsePinRequired => "若要變更您的設定，請先輸入 PIN。";
+	public override string ResponsePinRequired => "è‹¥è¦è®Šæ›´æ‚¨çš„è¨­å®šï¼Œè«‹å…ˆè¼¸å…¥ PINã€‚";
 
 	/// <summary>
 	/// Key: "Response.SocialMedia.ValidationError"
 	/// English String: "The social network link is not valid."
 	/// </summary>
-	public override string ResponseSocialMediaValidationError => "此社交網路連結無效。";
+	public override string ResponseSocialMediaValidationError => "æ­¤ç¤¾äº¤ç¶²è·¯é€£çµç„¡æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "ResponseAgeDownError"
 	/// English String: "Sorry but you cannot change your age to under 13.  If you are under 13, please create a new account and contact support to delete your old account."
 	/// </summary>
-	public override string ResponseAgeDownError => "對不起，您不可以將年齡改為 13 歲以下。若您未滿 13 歲，請建立一個新帳號，並聯絡客服人員刪除您的舊帳號。";
+	public override string ResponseAgeDownError => "å°ä¸èµ·ï¼Œæ‚¨ä¸å¯ä»¥å°‡å¹´é½¡æ”¹ç‚º 13 æ­²ä»¥ä¸‹ã€‚è‹¥æ‚¨æœªæ»¿ 13 æ­²ï¼Œè«‹å»ºç«‹ä¸€å€‹æ–°å¸³è™Ÿï¼Œä¸¦è¯çµ¡å®¢æœäººå“¡åˆªé™¤æ‚¨çš„èˆŠå¸³è™Ÿã€‚";
 
 	public AccountSettingsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -2218,207 +2218,207 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionBillingHistoryLoadMore()
 	{
-		return "載入更多";
+		return "è¼‰å…¥æ›´å¤š";
 	}
 
 	protected override string _GetTemplateForActionCancelRenewal()
 	{
-		return "取消續訂";
+		return "å–æ¶ˆçºŒè¨‚";
 	}
 
 	protected override string _GetTemplateForActionDialogAddEmail()
 	{
-		return "新增電子郵件地址";
+		return "æ–°å¢žé›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForActionDialogAddPhone()
 	{
-		return "新增手機號碼";
+		return "æ–°å¢žæ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForActionDialogCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionDialogChangeEmail()
 	{
-		return "變更電子郵件地址";
+		return "è®Šæ›´é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForActionDialogChangeEmailConfirmation()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionDialogChangePassword()
 	{
-		return "更新";
+		return "æ›´æ–°";
 	}
 
 	protected override string _GetTemplateForActionDialogChangePasswordConfirmation()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionDialogChangeUsernameBuy()
 	{
-		return "購買";
+		return "è³¼è²·";
 	}
 
 	protected override string _GetTemplateForActionDialogClose()
 	{
-		return "關閉";
+		return "é—œé–‰";
 	}
 
 	protected override string _GetTemplateForActionDialogEditPhonePrimary()
 	{
-		return "編輯手機號碼";
+		return "ç·¨è¼¯æ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForActionDialogEditPhoneSecondary()
 	{
-		return "移除手機號碼";
+		return "ç§»é™¤æ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForActionDialogInsufficientFundsBuy()
 	{
-		return "購買";
+		return "è³¼è²·";
 	}
 
 	protected override string _GetTemplateForActionDialogNo()
 	{
-		return "否";
+		return "å¦";
 	}
 
 	protected override string _GetTemplateForActionDialogPinCreate()
 	{
-		return "新增";
+		return "æ–°å¢ž";
 	}
 
 	protected override string _GetTemplateForActionDialogPinCreateOk()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionDialogPinUnlock()
 	{
-		return "解鎖";
+		return "è§£éŽ–";
 	}
 
 	protected override string _GetTemplateForActionDialogRemovePhonePrimary()
 	{
-		return "移除";
+		return "ç§»é™¤";
 	}
 
 	protected override string _GetTemplateForActionDialogRemovePhoneSecondary()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionDialogSend()
 	{
-		return "傳送";
+		return "å‚³é€";
 	}
 
 	protected override string _GetTemplateForActionDialogSuccess()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionDialogUpdate()
 	{
-		return "更新";
+		return "æ›´æ–°";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyEmailOk()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyEmailPrimary()
 	{
-		return "驗證電子郵件地址";
+		return "é©—è­‰é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyEmailRetry()
 	{
-		return "重試";
+		return "é‡è©¦";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyPhonePrimary()
 	{
-		return "驗證";
+		return "é©—è­‰";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyPhoneResendLink()
 	{
-		return "重新傳送驗證碼";
+		return "é‡æ–°å‚³é€é©—è­‰ç¢¼";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyPhoneSecondary()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionDialogYes()
 	{
-		return "是";
+		return "æ˜¯";
 	}
 
 	protected override string _GetTemplateForActionHide()
 	{
-		return "隱藏";
+		return "éš±è—";
 	}
 
 	protected override string _GetTemplateForActionJoin()
 	{
-		return "加入";
+		return "åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForActionJoinBuildersClub()
 	{
-		return "加入 Builders Club";
+		return "åŠ å…¥ Builders Club";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "儲存";
+		return "å„²å­˜";
 	}
 
 	protected override string _GetTemplateForActionShow()
 	{
-		return "顯示";
+		return "é¡¯ç¤º";
 	}
 
 	protected override string _GetTemplateForActionSignoutAllSessions()
 	{
-		return "登出";
+		return "ç™»å‡º";
 	}
 
 	protected override string _GetTemplateForActionSocialDisconnect()
 	{
-		return "中斷連線";
+		return "ä¸­æ–·é€£ç·š";
 	}
 
 	protected override string _GetTemplateForActionSuccessDialogButtonText()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionUnblock()
 	{
-		return "解除封鎖";
+		return "è§£é™¤å°éŽ–";
 	}
 
 	protected override string _GetTemplateForActionUpgradeMembership()
 	{
-		return "升級會員資格";
+		return "å‡ç´šæœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountControls()
 	{
-		return "您可以設定帳號限制，限制使用帳號設定及未篩選的內容";
+		return "æ‚¨å¯ä»¥è¨­å®šå¸³è™Ÿé™åˆ¶ï¼Œé™åˆ¶ä½¿ç”¨å¸³è™Ÿè¨­å®šåŠæœªç¯©é¸çš„å…§å®¹";
 	}
 
 	/// <summary>
@@ -2428,12 +2428,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}重置 Roblox 電子郵件地址{escapeLiteralEnd} {fromEmailAddress}";
+		return $"{escapeLiteralStart}é‡ç½® Roblox é›»å­éƒµä»¶åœ°å€{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailFrom()
 	{
-		return "{escapeLiteralStart}重置 Roblox 電子郵件地址{escapeLiteralEnd} {fromEmailAddress}";
+		return "{escapeLiteralStart}é‡ç½® Roblox é›»å­éƒµä»¶åœ°å€{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -2443,12 +2443,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailHtmlBody(string lineBreak, string username, string oldEmailAddress, string newEmailAddress, string aTagWithHref, string revertAccountEmailLinkWithTicket, string hrefEnd, string revertAccountEmailLink, string aTagEnd, string robloxInfoEmailAddress)
 	{
-		return $"親愛的 Roblox 使用者您好，{lineBreak}{lineBreak}我們發現您將您的帳號 {username} 的電子郵件地址從 {oldEmailAddress} 變更為 {newEmailAddress}。若您沒有要變更你的電子郵件地址，或者認為有人不小心變更你的電子郵件地址，您可以按下 {lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak} 復原您原本的電子郵件地址。除此之外，您也需要輸入一組新的密碼，確保您的帳號的安全。{lineBreak}{lineBreak}若您有變更電子郵件地址，您的變更已經生效，您不需要採取任何動作。{lineBreak}{lineBreak}請勿回覆此電子郵件。若您有任何問題，請聯絡 {robloxInfoEmailAddress}。";
+		return $"è¦ªæ„›çš„ Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}æˆ‘å€‘ç™¼ç¾æ‚¨å°‡æ‚¨çš„å¸³è™Ÿ {username} çš„é›»å­éƒµä»¶åœ°å€å¾ž {oldEmailAddress} è®Šæ›´ç‚º {newEmailAddress}ã€‚è‹¥æ‚¨æ²’æœ‰è¦è®Šæ›´ä½ çš„é›»å­éƒµä»¶åœ°å€ï¼Œæˆ–è€…èªç‚ºæœ‰äººä¸å°å¿ƒè®Šæ›´ä½ çš„é›»å­éƒµä»¶åœ°å€ï¼Œæ‚¨å¯ä»¥æŒ‰ä¸‹ {lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak} å¾©åŽŸæ‚¨åŽŸæœ¬çš„é›»å­éƒµä»¶åœ°å€ã€‚é™¤æ­¤ä¹‹å¤–ï¼Œæ‚¨ä¹Ÿéœ€è¦è¼¸å…¥ä¸€çµ„æ–°çš„å¯†ç¢¼ï¼Œç¢ºä¿æ‚¨çš„å¸³è™Ÿçš„å®‰å…¨ã€‚{lineBreak}{lineBreak}è‹¥æ‚¨æœ‰è®Šæ›´é›»å­éƒµä»¶åœ°å€ï¼Œæ‚¨çš„è®Šæ›´å·²ç¶“ç”Ÿæ•ˆï¼Œæ‚¨ä¸éœ€è¦æŽ¡å–ä»»ä½•å‹•ä½œã€‚{lineBreak}{lineBreak}è«‹å‹¿å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚è‹¥æ‚¨æœ‰ä»»ä½•å•é¡Œï¼Œè«‹è¯çµ¡ {robloxInfoEmailAddress}ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailHtmlBody()
 	{
-		return "親愛的 Roblox 使用者您好，{lineBreak}{lineBreak}我們發現您將您的帳號 {username} 的電子郵件地址從 {oldEmailAddress} 變更為 {newEmailAddress}。若您沒有要變更你的電子郵件地址，或者認為有人不小心變更你的電子郵件地址，您可以按下 {lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak} 復原您原本的電子郵件地址。除此之外，您也需要輸入一組新的密碼，確保您的帳號的安全。{lineBreak}{lineBreak}若您有變更電子郵件地址，您的變更已經生效，您不需要採取任何動作。{lineBreak}{lineBreak}請勿回覆此電子郵件。若您有任何問題，請聯絡 {robloxInfoEmailAddress}。";
+		return "è¦ªæ„›çš„ Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}æˆ‘å€‘ç™¼ç¾æ‚¨å°‡æ‚¨çš„å¸³è™Ÿ {username} çš„é›»å­éƒµä»¶åœ°å€å¾ž {oldEmailAddress} è®Šæ›´ç‚º {newEmailAddress}ã€‚è‹¥æ‚¨æ²’æœ‰è¦è®Šæ›´ä½ çš„é›»å­éƒµä»¶åœ°å€ï¼Œæˆ–è€…èªç‚ºæœ‰äººä¸å°å¿ƒè®Šæ›´ä½ çš„é›»å­éƒµä»¶åœ°å€ï¼Œæ‚¨å¯ä»¥æŒ‰ä¸‹ {lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak} å¾©åŽŸæ‚¨åŽŸæœ¬çš„é›»å­éƒµä»¶åœ°å€ã€‚é™¤æ­¤ä¹‹å¤–ï¼Œæ‚¨ä¹Ÿéœ€è¦è¼¸å…¥ä¸€çµ„æ–°çš„å¯†ç¢¼ï¼Œç¢ºä¿æ‚¨çš„å¸³è™Ÿçš„å®‰å…¨ã€‚{lineBreak}{lineBreak}è‹¥æ‚¨æœ‰è®Šæ›´é›»å­éƒµä»¶åœ°å€ï¼Œæ‚¨çš„è®Šæ›´å·²ç¶“ç”Ÿæ•ˆï¼Œæ‚¨ä¸éœ€è¦æŽ¡å–ä»»ä½•å‹•ä½œã€‚{lineBreak}{lineBreak}è«‹å‹¿å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚è‹¥æ‚¨æœ‰ä»»ä½•å•é¡Œï¼Œè«‹è¯çµ¡ {robloxInfoEmailAddress}ã€‚";
 	}
 
 	/// <summary>
@@ -2458,17 +2458,17 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailPlainBody(string lineBreak, string username, string oldEmailAddress, string newEmailAddress, string revertAccountEmailLink, string robloxInfoEmailAddress)
 	{
-		return $"親愛的 Roblox 使用者您好，{lineBreak}{lineBreak}我們發現您將您的帳號 {username} 的電子郵件地址從 {oldEmailAddress} 變更為 {newEmailAddress}。若您沒有要變更你的電子郵件地址，或者認為有人不小心變更你的電子郵件地址，您可以按下 {lineBreak}{revertAccountEmailLink}{lineBreak} 復原您原本的電子郵件地址。除此之外，您也需要輸入一組新的密碼，確保您的帳號的安全。{lineBreak}{lineBreak}若您有變更電子郵件地址，您的變更已經生效，您不需要採取任何動作。{lineBreak}請勿回覆此電子郵件。若您有任何問題，請聯絡 {robloxInfoEmailAddress}。";
+		return $"è¦ªæ„›çš„ Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}æˆ‘å€‘ç™¼ç¾æ‚¨å°‡æ‚¨çš„å¸³è™Ÿ {username} çš„é›»å­éƒµä»¶åœ°å€å¾ž {oldEmailAddress} è®Šæ›´ç‚º {newEmailAddress}ã€‚è‹¥æ‚¨æ²’æœ‰è¦è®Šæ›´ä½ çš„é›»å­éƒµä»¶åœ°å€ï¼Œæˆ–è€…èªç‚ºæœ‰äººä¸å°å¿ƒè®Šæ›´ä½ çš„é›»å­éƒµä»¶åœ°å€ï¼Œæ‚¨å¯ä»¥æŒ‰ä¸‹ {lineBreak}{revertAccountEmailLink}{lineBreak} å¾©åŽŸæ‚¨åŽŸæœ¬çš„é›»å­éƒµä»¶åœ°å€ã€‚é™¤æ­¤ä¹‹å¤–ï¼Œæ‚¨ä¹Ÿéœ€è¦è¼¸å…¥ä¸€çµ„æ–°çš„å¯†ç¢¼ï¼Œç¢ºä¿æ‚¨çš„å¸³è™Ÿçš„å®‰å…¨ã€‚{lineBreak}{lineBreak}è‹¥æ‚¨æœ‰è®Šæ›´é›»å­éƒµä»¶åœ°å€ï¼Œæ‚¨çš„è®Šæ›´å·²ç¶“ç”Ÿæ•ˆï¼Œæ‚¨ä¸éœ€è¦æŽ¡å–ä»»ä½•å‹•ä½œã€‚{lineBreak}è«‹å‹¿å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚è‹¥æ‚¨æœ‰ä»»ä½•å•é¡Œï¼Œè«‹è¯çµ¡ {robloxInfoEmailAddress}ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailPlainBody()
 	{
-		return "親愛的 Roblox 使用者您好，{lineBreak}{lineBreak}我們發現您將您的帳號 {username} 的電子郵件地址從 {oldEmailAddress} 變更為 {newEmailAddress}。若您沒有要變更你的電子郵件地址，或者認為有人不小心變更你的電子郵件地址，您可以按下 {lineBreak}{revertAccountEmailLink}{lineBreak} 復原您原本的電子郵件地址。除此之外，您也需要輸入一組新的密碼，確保您的帳號的安全。{lineBreak}{lineBreak}若您有變更電子郵件地址，您的變更已經生效，您不需要採取任何動作。{lineBreak}請勿回覆此電子郵件。若您有任何問題，請聯絡 {robloxInfoEmailAddress}。";
+		return "è¦ªæ„›çš„ Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}æˆ‘å€‘ç™¼ç¾æ‚¨å°‡æ‚¨çš„å¸³è™Ÿ {username} çš„é›»å­éƒµä»¶åœ°å€å¾ž {oldEmailAddress} è®Šæ›´ç‚º {newEmailAddress}ã€‚è‹¥æ‚¨æ²’æœ‰è¦è®Šæ›´ä½ çš„é›»å­éƒµä»¶åœ°å€ï¼Œæˆ–è€…èªç‚ºæœ‰äººä¸å°å¿ƒè®Šæ›´ä½ çš„é›»å­éƒµä»¶åœ°å€ï¼Œæ‚¨å¯ä»¥æŒ‰ä¸‹ {lineBreak}{revertAccountEmailLink}{lineBreak} å¾©åŽŸæ‚¨åŽŸæœ¬çš„é›»å­éƒµä»¶åœ°å€ã€‚é™¤æ­¤ä¹‹å¤–ï¼Œæ‚¨ä¹Ÿéœ€è¦è¼¸å…¥ä¸€çµ„æ–°çš„å¯†ç¢¼ï¼Œç¢ºä¿æ‚¨çš„å¸³è™Ÿçš„å®‰å…¨ã€‚{lineBreak}{lineBreak}è‹¥æ‚¨æœ‰è®Šæ›´é›»å­éƒµä»¶åœ°å€ï¼Œæ‚¨çš„è®Šæ›´å·²ç¶“ç”Ÿæ•ˆï¼Œæ‚¨ä¸éœ€è¦æŽ¡å–ä»»ä½•å‹•ä½œã€‚{lineBreak}è«‹å‹¿å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚è‹¥æ‚¨æœ‰ä»»ä½•å•é¡Œï¼Œè«‹è¯çµ¡ {robloxInfoEmailAddress}ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailSubject()
 	{
-		return "重置 Roblox 電子郵件地址";
+		return "é‡ç½® Roblox é›»å­éƒµä»¶åœ°å€";
 	}
 
 	/// <summary>
@@ -2477,12 +2477,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountRestrictionsEnabled(string linkStart, string linkEnd)
 	{
-		return $"此帳號只能使用 Roblox 上經篩選的內容。另外，聯絡設定（在{linkStart}隱私權{linkEnd}頁面上方）將設為「關閉」。";
+		return $"æ­¤å¸³è™Ÿåªèƒ½ä½¿ç”¨ Roblox ä¸Šç¶“ç¯©é¸çš„å…§å®¹ã€‚å¦å¤–ï¼Œè¯çµ¡è¨­å®šï¼ˆåœ¨{linkStart}éš±ç§æ¬Š{linkEnd}é é¢ä¸Šæ–¹ï¼‰å°‡è¨­ç‚ºã€Œé—œé–‰ã€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountRestrictionsEnabled()
 	{
-		return "此帳號只能使用 Roblox 上經篩選的內容。另外，聯絡設定（在{linkStart}隱私權{linkEnd}頁面上方）將設為「關閉」。";
+		return "æ­¤å¸³è™Ÿåªèƒ½ä½¿ç”¨ Roblox ä¸Šç¶“ç¯©é¸çš„å…§å®¹ã€‚å¦å¤–ï¼Œè¯çµ¡è¨­å®šï¼ˆåœ¨{linkStart}éš±ç§æ¬Š{linkEnd}é é¢ä¸Šæ–¹ï¼‰å°‡è¨­ç‚ºã€Œé—œé–‰ã€ã€‚";
 	}
 
 	/// <summary>
@@ -2491,12 +2491,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionBlockedLimitMessage(string totalBlockedCount, string maxBlockedCount)
 	{
-		return $"您正在封鎖 {totalBlockedCount} 名使用者（最多 {maxBlockedCount} 名）：";
+		return $"æ‚¨æ­£åœ¨å°éŽ– {totalBlockedCount} åä½¿ç”¨è€…ï¼ˆæœ€å¤š {maxBlockedCount} åï¼‰ï¼š";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockedLimitMessage()
 	{
-		return "您正在封鎖 {totalBlockedCount} 名使用者（最多 {maxBlockedCount} 名）：";
+		return "æ‚¨æ­£åœ¨å°éŽ– {totalBlockedCount} åä½¿ç”¨è€…ï¼ˆæœ€å¤š {maxBlockedCount} åï¼‰ï¼š";
 	}
 
 	/// <summary>
@@ -2505,62 +2505,62 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionContactSetting(string linkStart, string linkEnd)
 	{
-		return $"因帳號限制（在{linkStart}安全性{linkEnd}頁面下）啟用中，聯絡設定已鎖定。";
+		return $"å› å¸³è™Ÿé™åˆ¶ï¼ˆåœ¨{linkStart}å®‰å…¨æ€§{linkEnd}é é¢ä¸‹ï¼‰å•Ÿç”¨ä¸­ï¼Œè¯çµ¡è¨­å®šå·²éŽ–å®šã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionContactSetting()
 	{
-		return "因帳號限制（在{linkStart}安全性{linkEnd}頁面下）啟用中，聯絡設定已鎖定。";
+		return "å› å¸³è™Ÿé™åˆ¶ï¼ˆåœ¨{linkStart}å®‰å…¨æ€§{linkEnd}é é¢ä¸‹ï¼‰å•Ÿç”¨ä¸­ï¼Œè¯çµ¡è¨­å®šå·²éŽ–å®šã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDesktopPush1()
 	{
-		return "Roblox 未開啟時仍可收到電腦通知。";
+		return "Roblox æœªé–‹å•Ÿæ™‚ä»å¯æ”¶åˆ°é›»è…¦é€šçŸ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDesktopPush2()
 	{
-		return "若要看見通知，請在您的瀏覽器允許通知。";
+		return "è‹¥è¦çœ‹è¦‹é€šçŸ¥ï¼Œè«‹åœ¨æ‚¨çš„ç€è¦½å™¨å…è¨±é€šçŸ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDesktopPush3()
 	{
-		return "此裝置的桌面通知。";
+		return "æ­¤è£ç½®çš„æ¡Œé¢é€šçŸ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogAddPhone()
 	{
-		return "請確認您的國碼，並輸入您的手機號碼。我們會傳送一則簡訊完成驗證程序。（注意：可能會收取簡訊費用）";
+		return "è«‹ç¢ºèªæ‚¨çš„åœ‹ç¢¼ï¼Œä¸¦è¼¸å…¥æ‚¨çš„æ‰‹æ©Ÿè™Ÿç¢¼ã€‚æˆ‘å€‘æœƒå‚³é€ä¸€å‰‡ç°¡è¨Šå®Œæˆé©—è­‰ç¨‹åºã€‚ï¼ˆæ³¨æ„ï¼šå¯èƒ½æœƒæ”¶å–ç°¡è¨Šè²»ç”¨ï¼‰";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeEmailConfirmation()
 	{
-		return "已傳送驗證電子郵件";
+		return "å·²å‚³é€é©—è­‰é›»å­éƒµä»¶";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeEmailWarning()
 	{
-		return "新的電子郵件地址驗證後才會生效。";
+		return "æ–°çš„é›»å­éƒµä»¶åœ°å€é©—è­‰å¾Œæ‰æœƒç”Ÿæ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangePasswordConfirmation()
 	{
-		return "您已成功變更密碼。";
+		return "æ‚¨å·²æˆåŠŸè®Šæ›´å¯†ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameDisclaimer()
 	{
-		return "重要：帳號建立日期將會轉移到新的使用者名稱。";
+		return "é‡è¦ï¼šå¸³è™Ÿå»ºç«‹æ—¥æœŸå°‡æœƒè½‰ç§»åˆ°æ–°çš„ä½¿ç”¨è€…åç¨±ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameForFree()
 	{
-		return "免費變更使用者名稱一次。";
+		return "å…è²»è®Šæ›´ä½¿ç”¨è€…åç¨±ä¸€æ¬¡ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameHistory()
 	{
-		return "之前的論壇發文會顯示在您過去的使用者名稱之下，不會轉到您新的使用者名稱。";
+		return "ä¹‹å‰çš„è«–å£‡ç™¼æ–‡æœƒé¡¯ç¤ºåœ¨æ‚¨éŽåŽ»çš„ä½¿ç”¨è€…åç¨±ä¹‹ä¸‹ï¼Œä¸æœƒè½‰åˆ°æ‚¨æ–°çš„ä½¿ç”¨è€…åç¨±ã€‚";
 	}
 
 	/// <summary>
@@ -2569,42 +2569,42 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogChangeUsernamePageText(string robuxIcon, string price)
 	{
-		return $"以 {robuxIcon} {price} 變更使用者名稱？";
+		return $"ä»¥ {robuxIcon} {price} è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernamePageText()
 	{
-		return "以 {robuxIcon} {price} 變更使用者名稱？";
+		return "ä»¥ {robuxIcon} {price} è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameTitle()
 	{
-		return "變更使用者名稱";
+		return "è®Šæ›´ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEditPhoneWarning()
 	{
-		return "新的手機號碼驗證完畢後，手機號碼才會變更。";
+		return "æ–°çš„æ‰‹æ©Ÿè™Ÿç¢¼é©—è­‰å®Œç•¢å¾Œï¼Œæ‰‹æ©Ÿè™Ÿç¢¼æ‰æœƒè®Šæ›´ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEmailProvideAndVerifyWarning()
 	{
-		return "若要變更使用者名稱，請先提供並驗證您的電子郵件地址。";
+		return "è‹¥è¦è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹å…ˆæä¾›ä¸¦é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEmailVerificationSent()
 	{
-		return "謝謝，已傳送驗證電子郵件。";
+		return "è¬è¬ï¼Œå·²å‚³é€é©—è­‰é›»å­éƒµä»¶ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEmailVerifyWarning()
 	{
-		return "若要變更使用者名稱，請先驗證電子郵件地址。";
+		return "è‹¥è¦è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹å…ˆé©—è­‰é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogFacebookDisconnectWarning()
 	{
-		return "在您解除 Facebook 帳號連接之前，請新增密碼保護您的帳號。";
+		return "åœ¨æ‚¨è§£é™¤ Facebook å¸³è™Ÿé€£æŽ¥ä¹‹å‰ï¼Œè«‹æ–°å¢žå¯†ç¢¼ä¿è­·æ‚¨çš„å¸³è™Ÿã€‚";
 	}
 
 	/// <summary>
@@ -2613,32 +2613,32 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogInsufficientFundsWarning(string robuxToBuy)
 	{
-		return $"您還需要 {robuxToBuy} 才能更改使用者名稱。您要加購 Robux 嗎？";
+		return $"æ‚¨é‚„éœ€è¦ {robuxToBuy} æ‰èƒ½æ›´æ”¹ä½¿ç”¨è€…åç¨±ã€‚æ‚¨è¦åŠ è³¼ Robux å—Žï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogInsufficientFundsWarning()
 	{
-		return "您還需要 {robuxToBuy} 才能更改使用者名稱。您要加購 Robux 嗎？";
+		return "æ‚¨é‚„éœ€è¦ {robuxToBuy} æ‰èƒ½æ›´æ”¹ä½¿ç”¨è€…åç¨±ã€‚æ‚¨è¦åŠ è³¼ Robux å—Žï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailAccountPin()
 	{
-		return "若要新增帳號 PIN，請先提供並驗證您的電子郵件地址。";
+		return "è‹¥è¦æ–°å¢žå¸³è™Ÿ PINï¼Œè«‹å…ˆæä¾›ä¸¦é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailTwoStepVerification()
 	{
-		return "若要啟用兩步驟驗證，請先提供並驗證您的電子郵件地址。";
+		return "è‹¥è¦å•Ÿç”¨å…©æ­¥é©Ÿé©—è­‰ï¼Œè«‹å…ˆæä¾›ä¸¦é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailUsername()
 	{
-		return "若要變更使用者名稱，請先提供並驗證您的電子郵件地址。";
+		return "è‹¥è¦è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹å…ˆæä¾›ä¸¦é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogPinUnlock()
 	{
-		return "輸入您的帳號的 PIN";
+		return "è¼¸å…¥æ‚¨çš„å¸³è™Ÿçš„ PIN";
 	}
 
 	/// <summary>
@@ -2647,117 +2647,117 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogRemovePhoneWarning(string phoneLast4)
 	{
-		return $"確定移除後四碼為 {phoneLast4} 的手機號碼？";
+		return $"ç¢ºå®šç§»é™¤å¾Œå››ç¢¼ç‚º {phoneLast4} çš„æ‰‹æ©Ÿè™Ÿç¢¼ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogRemovePhoneWarning()
 	{
-		return "確定移除後四碼為 {phoneLast4} 的手機號碼？";
+		return "ç¢ºå®šç§»é™¤å¾Œå››ç¢¼ç‚º {phoneLast4} çš„æ‰‹æ©Ÿè™Ÿç¢¼ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailAccountPin()
 	{
-		return "若要新增帳號 PIN，請先驗證您的電子郵件地址。";
+		return "è‹¥è¦æ–°å¢žå¸³è™Ÿ PINï¼Œè«‹å…ˆé©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailTwoStepVerification()
 	{
-		return "若要啟用雙步驟驗證，請先驗證電子郵件地址。";
+		return "è‹¥è¦å•Ÿç”¨é›™æ­¥é©Ÿé©—è­‰ï¼Œè«‹å…ˆé©—è­‰é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailUsername()
 	{
-		return "若要變更使用者名稱，請先驗證電子郵件地址。";
+		return "è‹¥è¦è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹å…ˆé©—è­‰é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionFastTrack()
 	{
-		return "由於您持續提交良好的檢舉報告，您已被加到快速通道企劃。您的檢舉報告將會更快受到審核。繼續提交良好的檢舉報告，即可留在快速通道計畫。感謝您協助維護 Roblox 的環境！";
+		return "ç”±æ–¼æ‚¨æŒçºŒæäº¤è‰¯å¥½çš„æª¢èˆ‰å ±å‘Šï¼Œæ‚¨å·²è¢«åŠ åˆ°å¿«é€Ÿé€šé“ä¼åŠƒã€‚æ‚¨çš„æª¢èˆ‰å ±å‘Šå°‡æœƒæ›´å¿«å—åˆ°å¯©æ ¸ã€‚ç¹¼çºŒæäº¤è‰¯å¥½çš„æª¢èˆ‰å ±å‘Šï¼Œå³å¯ç•™åœ¨å¿«é€Ÿé€šé“è¨ˆç•«ã€‚æ„Ÿè¬æ‚¨å”åŠ©ç¶­è­· Roblox çš„ç’°å¢ƒï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionFastTrackStatistics()
 	{
-		return "數據";
+		return "æ•¸æ“š";
 	}
 
 	protected override string _GetTemplateForDescriptionHelpTextDescription()
 	{
-		return "請勿提供任何可以在 Roblox 以外用來識別您的身分的詳細資料。";
+		return "è«‹å‹¿æä¾›ä»»ä½•å¯ä»¥åœ¨ Roblox ä»¥å¤–ç”¨ä¾†è­˜åˆ¥æ‚¨çš„èº«åˆ†çš„è©³ç´°è³‡æ–™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionHelpTextFastTrackAccuracy()
 	{
-		return "準確度為管理員同意檢舉報告的頻率，在您提交一定數量檢舉報告後將會開始顯示。「所有人」指所有快速通道成員合在一起。";
+		return "æº–ç¢ºåº¦ç‚ºç®¡ç†å“¡åŒæ„æª¢èˆ‰å ±å‘Šçš„é »çŽ‡ï¼Œåœ¨æ‚¨æäº¤ä¸€å®šæ•¸é‡æª¢èˆ‰å ±å‘Šå¾Œå°‡æœƒé–‹å§‹é¡¯ç¤ºã€‚ã€Œæ‰€æœ‰äººã€æŒ‡æ‰€æœ‰å¿«é€Ÿé€šé“æˆå“¡åˆåœ¨ä¸€èµ·ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionHelpTextPrivacyMode()
 	{
-		return "更新年齡為 13 歲以下會啟用隱私模式。";
+		return "æ›´æ–°å¹´é½¡ç‚º 13 æ­²ä»¥ä¸‹æœƒå•Ÿç”¨éš±ç§æ¨¡å¼ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextChangePassword()
 	{
-		return "變更密碼";
+		return "è®Šæ›´å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextChangeUsername()
 	{
-		return "變更使用者名稱";
+		return "è®Šæ›´ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextUpdateEmail()
 	{
-		return "更新電子郵件地址";
+		return "æ›´æ–°é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForDescriptionMembershipHelp()
 	{
-		return "帳務和付款問題：info@roblox.com";
+		return "å¸³å‹™å’Œä»˜æ¬¾å•é¡Œï¼šinfo@roblox.com";
 	}
 
 	protected override string _GetTemplateForDescriptionMembershipStatus()
 	{
-		return "您還不是會員，現在加入 Builders Club！";
+		return "æ‚¨é‚„ä¸æ˜¯æœƒå“¡ï¼Œç¾åœ¨åŠ å…¥ Builders Clubï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionMembershipStatusRobloxPremium()
 	{
-		return "您還不是會員，現在加入 Roblox Premium！";
+		return "æ‚¨é‚„ä¸æ˜¯æœƒå“¡ï¼Œç¾åœ¨åŠ å…¥ Roblox Premiumï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionMobilePush1()
 	{
-		return "在裝置首頁看見通知；您可以從 Roblox App 開啟或關閉。";
+		return "åœ¨è£ç½®é¦–é çœ‹è¦‹é€šçŸ¥ï¼›æ‚¨å¯ä»¥å¾ž Roblox App é–‹å•Ÿæˆ–é—œé–‰ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionMobilePush2()
 	{
-		return "此裝置的行動裝置推播通知。";
+		return "æ­¤è£ç½®çš„è¡Œå‹•è£ç½®æŽ¨æ’­é€šçŸ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionNotificationStream1()
 	{
-		return "在我的動態消息中看見通知。按下頂端列的通知圖示檢視這些通知。";
+		return "åœ¨æˆ‘çš„å‹•æ…‹æ¶ˆæ¯ä¸­çœ‹è¦‹é€šçŸ¥ã€‚æŒ‰ä¸‹é ‚ç«¯åˆ—çš„é€šçŸ¥åœ–ç¤ºæª¢è¦–é€™äº›é€šçŸ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionNotificationStream2()
 	{
-		return "您關閉一種通知類型之後，我們將不會傳送該類型的新通知給您。";
+		return "æ‚¨é—œé–‰ä¸€ç¨®é€šçŸ¥é¡žåž‹ä¹‹å¾Œï¼Œæˆ‘å€‘å°‡ä¸æœƒå‚³é€è©²é¡žåž‹çš„æ–°é€šçŸ¥çµ¦æ‚¨ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionRenevalFromWebsiteOnly()
 	{
-		return "注意：若您想取消續訂會員資格，請從網站登入。";
+		return "æ³¨æ„ï¼šè‹¥æ‚¨æƒ³å–æ¶ˆçºŒè¨‚æœƒå“¡è³‡æ ¼ï¼Œè«‹å¾žç¶²ç«™ç™»å…¥ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSuccessDialogMessage()
 	{
-		return "已成功儲存！";
+		return "å·²æˆåŠŸå„²å­˜ï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationSecondary()
 	{
-		return "需要已驗證的電子郵件地址";
+		return "éœ€è¦å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	/// <summary>
@@ -2766,12 +2766,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionTwoStepverificationSecondaryEnabled(string email)
 	{
-		return $"當您從新裝置登入時，驗證碼會傳送到 {email}";
+		return $"ç•¶æ‚¨å¾žæ–°è£ç½®ç™»å…¥æ™‚ï¼Œé©—è­‰ç¢¼æœƒå‚³é€åˆ° {email}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepverificationSecondaryEnabled()
 	{
-		return "當您從新裝置登入時，驗證碼會傳送到 {email}";
+		return "ç•¶æ‚¨å¾žæ–°è£ç½®ç™»å…¥æ™‚ï¼Œé©—è­‰ç¢¼æœƒå‚³é€åˆ° {email}";
 	}
 
 	/// <summary>
@@ -2781,12 +2781,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionUsernameChangeEmailBody(string lineBreaks, string oldUsername, string newUsername, string robloxInfoEmailAddress)
 	{
-		return $"Roblox 使用者您好，{lineBreaks}您的使用者名稱最近從 {oldUsername} 變更為 {newUsername}。若您沒有變更使用者名稱，請在 {robloxInfoEmailAddress} 通知我們。";
+		return $"Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreaks}æ‚¨çš„ä½¿ç”¨è€…åç¨±æœ€è¿‘å¾ž {oldUsername} è®Šæ›´ç‚º {newUsername}ã€‚è‹¥æ‚¨æ²’æœ‰è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹åœ¨ {robloxInfoEmailAddress} é€šçŸ¥æˆ‘å€‘ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailBody()
 	{
-		return "Roblox 使用者您好，{lineBreaks}您的使用者名稱最近從 {oldUsername} 變更為 {newUsername}。若您沒有變更使用者名稱，請在 {robloxInfoEmailAddress} 通知我們。";
+		return "Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreaks}æ‚¨çš„ä½¿ç”¨è€…åç¨±æœ€è¿‘å¾ž {oldUsername} è®Šæ›´ç‚º {newUsername}ã€‚è‹¥æ‚¨æ²’æœ‰è®Šæ›´ä½¿ç”¨è€…åç¨±ï¼Œè«‹åœ¨ {robloxInfoEmailAddress} é€šçŸ¥æˆ‘å€‘ã€‚";
 	}
 
 	/// <summary>
@@ -2796,17 +2796,17 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionUsernameChangeEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Roblox 使用者名稱變更{escapeLiteralEnd} {fromEmailAddress}";
+		return $"{escapeLiteralStart}Roblox ä½¿ç”¨è€…åç¨±è®Šæ›´{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailFrom()
 	{
-		return "{escapeLiteralStart}Roblox 使用者名稱變更{escapeLiteralEnd} {fromEmailAddress}";
+		return "{escapeLiteralStart}Roblox ä½¿ç”¨è€…åç¨±è®Šæ›´{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailSubject()
 	{
-		return "Roblox 使用者名稱變更";
+		return "Roblox ä½¿ç”¨è€…åç¨±è®Šæ›´";
 	}
 
 	/// <summary>
@@ -2816,12 +2816,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailFromOver13(string escapeLiteratStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteratStart}Roblox 電子郵件地址驗證{escapeLiteralEnd} {fromEmailAddress}";
+		return $"{escapeLiteratStart}Roblox é›»å­éƒµä»¶åœ°å€é©—è­‰{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailFromOver13()
 	{
-		return "{escapeLiteratStart}Roblox 電子郵件地址驗證{escapeLiteralEnd} {fromEmailAddress}";
+		return "{escapeLiteratStart}Roblox é›»å­éƒµä»¶åœ°å€é©—è­‰{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -2831,12 +2831,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailFromUnder13(string escapeLiteratStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteratStart}Roblox 帳號許可{escapeLiteralEnd} {fromEmailAddress}";
+		return $"{escapeLiteratStart}Roblox å¸³è™Ÿè¨±å¯{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailFromUnder13()
 	{
-		return "{escapeLiteratStart}Roblox 帳號許可{escapeLiteralEnd} {fromEmailAddress}";
+		return "{escapeLiteratStart}Roblox å¸³è™Ÿè¨±å¯{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -2846,42 +2846,42 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyOver13(string lineBreak, string username, string aTagStartWithHref, string verificationLink, string targetBlank, string buttonStart, string buttonEnd, string aTagEnd)
 	{
-		return $"親愛的 Roblox 使用者您好，{lineBreak}{lineBreak}很高興您提供電子郵件地址保護您的帳號 {username}。{lineBreak}電子郵件地址經過驗證後，您的帳號將會更安全。{lineBreak}請按下下方按鈕完成驗證程序。{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}驗證電子郵件{buttonEnd}{aTagEnd}";
+		return $"è¦ªæ„›çš„ Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}å¾ˆé«˜èˆˆæ‚¨æä¾›é›»å­éƒµä»¶åœ°å€ä¿è­·æ‚¨çš„å¸³è™Ÿ {username}ã€‚{lineBreak}é›»å­éƒµä»¶åœ°å€ç¶“éŽé©—è­‰å¾Œï¼Œæ‚¨çš„å¸³è™Ÿå°‡æœƒæ›´å®‰å…¨ã€‚{lineBreak}è«‹æŒ‰ä¸‹ä¸‹æ–¹æŒ‰éˆ•å®Œæˆé©—è­‰ç¨‹åºã€‚{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}é©—è­‰é›»å­éƒµä»¶{buttonEnd}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyOver13()
 	{
-		return "親愛的 Roblox 使用者您好，{lineBreak}{lineBreak}很高興您提供電子郵件地址保護您的帳號 {username}。{lineBreak}電子郵件地址經過驗證後，您的帳號將會更安全。{lineBreak}請按下下方按鈕完成驗證程序。{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}驗證電子郵件{buttonEnd}{aTagEnd}";
+		return "è¦ªæ„›çš„ Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}å¾ˆé«˜èˆˆæ‚¨æä¾›é›»å­éƒµä»¶åœ°å€ä¿è­·æ‚¨çš„å¸³è™Ÿ {username}ã€‚{lineBreak}é›»å­éƒµä»¶åœ°å€ç¶“éŽé©—è­‰å¾Œï¼Œæ‚¨çš„å¸³è™Ÿå°‡æœƒæ›´å®‰å…¨ã€‚{lineBreak}è«‹æŒ‰ä¸‹ä¸‹æ–¹æŒ‰éˆ•å®Œæˆé©—è­‰ç¨‹åºã€‚{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}é©—è­‰é›»å­éƒµä»¶{buttonEnd}{aTagEnd}";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.HtmlBody.Under13"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account
-	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {boldTagStart}{username}{boldTagEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called “Roblox Studio” that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what it’s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parent’s email address. The parent’s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the child’s account access. To verify your email address, please click the button below: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}Verify Email{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}About Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox also offers {boldTagStart}parental controls{boldTagEnd}. Parents can enable a parent PIN and change their child’s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
+	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {boldTagStart}{username}{boldTagEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called â€œRoblox Studioâ€ that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what itâ€™s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parentâ€™s email address. The parentâ€™s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the childâ€™s account access. To verify your email address, please click the button below: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}Verify Email{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}About Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parentâ€™s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox also offers {boldTagStart}parental controls{boldTagEnd}. Parents can enable a parent PIN and change their childâ€™s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyUnder13(string lineBreak, string boldTagStart, string username, string boldTagEnd, string aTagStartWithHref, string verificationLink, string hrefEnd, string buttonStart, string buttonEnd, string aTagEnd, string parentalPageLink, string accountSecurityLink, string accountPrivacyLink, string supportPageLink, string privacyPageLink, string robloxWebsiteLink)
 	{
-		return $"您好，{lineBreak}{lineBreak}您的小孩已在 Roblox 建立帳號，使用者名稱為 {boldTagStart}{username}{boldTagEnd}。Roblox 是一個網路娛樂平台，玩家可以在我們眾多身歷其境的 3D 世界裡一起發揮想像力和同樂。玩家也可以使用我們免費的開發工具 Roblox Studio 創作簡單的模組和設計複雜的多人遊戲，盡情揮灑創意。已經有幾百萬名兒童透過 Roblox 實現他們的幻想，其中包括設計華麗的主題公園、以職業賽車手之姿和其他人競賽、成為時裝秀的焦點、化身超級英雄、邀請好友到夢寐以求的房子等等。{lineBreak}{lineBreak}我們想讓您知道您的小孩已提供我們使用者名稱、出生日期和家長的電子郵件地址。家長的電子郵件地址只會用在帳號管理、密碼重置及通知帳號使用權限更改上。請按下此按鈕驗證您的電子郵件地址：{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}驗證電子郵件地址{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}關於 Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox 致力打造一個老少咸宜的愉快環境；我們持續地和數位安全專家增強我們的安全措施，確保所有玩家都能安心地同樂、聊天及合作。我們建議您閱讀以下的家長指南讓您更加熟悉我們的平台，並了解如何讓您的小孩的 Roblox 體驗更加豐富：{aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox 也備有{boldTagStart}家長監護功能{boldTagEnd}。家長可以啟用家長 PIN，變更小孩的通訊與聊天設定。若要尋找這些監護功能，您可於登入小孩的帳號，並前往帳號設定中的安全性及隱私權標籤。{lineBreak}{lineBreak}若要新增家長 PIN，請前往：{aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}若要變更聊天設定，請前往： {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}。{lineBreak}{lineBreak}{boldTagStart}隱私權{boldTagEnd}{lineBreak}{lineBreak}若要移除您的小孩的帳號，您可以前往此處聯絡客服人員：{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}。您的電子郵件地址不會用在其他用途、向第三方揭露或與您的小孩的個人資料合併。若您需要更多資訊，您可以前往此連結查看我們的隱私權政策：{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}。{lineBreak}{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊 {lineBreak}{lineBreak} 請勿直接回覆此電子郵件。{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return $"æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}æ‚¨çš„å°å­©å·²åœ¨ Roblox å»ºç«‹å¸³è™Ÿï¼Œä½¿ç”¨è€…åç¨±ç‚º {boldTagStart}{username}{boldTagEnd}ã€‚Roblox æ˜¯ä¸€å€‹ç¶²è·¯å¨›æ¨‚å¹³å°ï¼ŒçŽ©å®¶å¯ä»¥åœ¨æˆ‘å€‘çœ¾å¤šèº«æ­·å…¶å¢ƒçš„ 3D ä¸–ç•Œè£¡ä¸€èµ·ç™¼æ®æƒ³åƒåŠ›å’ŒåŒæ¨‚ã€‚çŽ©å®¶ä¹Ÿå¯ä»¥ä½¿ç”¨æˆ‘å€‘å…è²»çš„é–‹ç™¼å·¥å…· Roblox Studio å‰µä½œç°¡å–®çš„æ¨¡çµ„å’Œè¨­è¨ˆè¤‡é›œçš„å¤šäººéŠæˆ²ï¼Œç›¡æƒ…æ®ç‘å‰µæ„ã€‚å·²ç¶“æœ‰å¹¾ç™¾è¬åå…’ç«¥é€éŽ Roblox å¯¦ç¾ä»–å€‘çš„å¹»æƒ³ï¼Œå…¶ä¸­åŒ…æ‹¬è¨­è¨ˆè¯éº—çš„ä¸»é¡Œå…¬åœ’ã€ä»¥è·æ¥­è³½è»Šæ‰‹ä¹‹å§¿å’Œå…¶ä»–äººç«¶è³½ã€æˆç‚ºæ™‚è£ç§€çš„ç„¦é»žã€åŒ–èº«è¶…ç´šè‹±é›„ã€é‚€è«‹å¥½å‹åˆ°å¤¢å¯ä»¥æ±‚çš„æˆ¿å­ç­‰ç­‰ã€‚{lineBreak}{lineBreak}æˆ‘å€‘æƒ³è®“æ‚¨çŸ¥é“æ‚¨çš„å°å­©å·²æä¾›æˆ‘å€‘ä½¿ç”¨è€…åç¨±ã€å‡ºç”Ÿæ—¥æœŸå’Œå®¶é•·çš„é›»å­éƒµä»¶åœ°å€ã€‚å®¶é•·çš„é›»å­éƒµä»¶åœ°å€åªæœƒç”¨åœ¨å¸³è™Ÿç®¡ç†ã€å¯†ç¢¼é‡ç½®åŠé€šçŸ¥å¸³è™Ÿä½¿ç”¨æ¬Šé™æ›´æ”¹ä¸Šã€‚è«‹æŒ‰ä¸‹æ­¤æŒ‰éˆ•é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ï¼š{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}é©—è­‰é›»å­éƒµä»¶åœ°å€{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}é—œæ–¼ Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox è‡´åŠ›æ‰“é€ ä¸€å€‹è€å°‘å’¸å®œçš„æ„‰å¿«ç’°å¢ƒï¼›æˆ‘å€‘æŒçºŒåœ°å’Œæ•¸ä½å®‰å…¨å°ˆå®¶å¢žå¼·æˆ‘å€‘çš„å®‰å…¨æŽªæ–½ï¼Œç¢ºä¿æ‰€æœ‰çŽ©å®¶éƒ½èƒ½å®‰å¿ƒåœ°åŒæ¨‚ã€èŠå¤©åŠåˆä½œã€‚æˆ‘å€‘å»ºè­°æ‚¨é–±è®€ä»¥ä¸‹çš„å®¶é•·æŒ‡å—è®“æ‚¨æ›´åŠ ç†Ÿæ‚‰æˆ‘å€‘çš„å¹³å°ï¼Œä¸¦äº†è§£å¦‚ä½•è®“æ‚¨çš„å°å­©çš„ Roblox é«”é©—æ›´åŠ è±å¯Œï¼š{aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox ä¹Ÿå‚™æœ‰{boldTagStart}å®¶é•·ç›£è­·åŠŸèƒ½{boldTagEnd}ã€‚å®¶é•·å¯ä»¥å•Ÿç”¨å®¶é•· PINï¼Œè®Šæ›´å°å­©çš„é€šè¨Šèˆ‡èŠå¤©è¨­å®šã€‚è‹¥è¦å°‹æ‰¾é€™äº›ç›£è­·åŠŸèƒ½ï¼Œæ‚¨å¯æ–¼ç™»å…¥å°å­©çš„å¸³è™Ÿï¼Œä¸¦å‰å¾€å¸³è™Ÿè¨­å®šä¸­çš„å®‰å…¨æ€§åŠéš±ç§æ¬Šæ¨™ç±¤ã€‚{lineBreak}{lineBreak}è‹¥è¦æ–°å¢žå®¶é•· PINï¼Œè«‹å‰å¾€ï¼š{aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}è‹¥è¦è®Šæ›´èŠå¤©è¨­å®šï¼Œè«‹å‰å¾€ï¼š {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}{boldTagStart}éš±ç§æ¬Š{boldTagEnd}{lineBreak}{lineBreak}è‹¥è¦ç§»é™¤æ‚¨çš„å°å­©çš„å¸³è™Ÿï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤è™•è¯çµ¡å®¢æœäººå“¡ï¼š{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}ã€‚æ‚¨çš„é›»å­éƒµä»¶åœ°å€ä¸æœƒç”¨åœ¨å…¶ä»–ç”¨é€”ã€å‘ç¬¬ä¸‰æ–¹æ­éœ²æˆ–èˆ‡æ‚¨çš„å°å­©çš„å€‹äººè³‡æ–™åˆä½µã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤é€£çµæŸ¥çœ‹æˆ‘å€‘çš„éš±ç§æ¬Šæ”¿ç­–ï¼š{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}{lineBreak}è¬è¬æ‚¨ï¼Œ{lineBreak}{lineBreak}Roblox åœ˜éšŠ {lineBreak}{lineBreak} è«‹å‹¿ç›´æŽ¥å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyUnder13()
 	{
-		return "您好，{lineBreak}{lineBreak}您的小孩已在 Roblox 建立帳號，使用者名稱為 {boldTagStart}{username}{boldTagEnd}。Roblox 是一個網路娛樂平台，玩家可以在我們眾多身歷其境的 3D 世界裡一起發揮想像力和同樂。玩家也可以使用我們免費的開發工具 Roblox Studio 創作簡單的模組和設計複雜的多人遊戲，盡情揮灑創意。已經有幾百萬名兒童透過 Roblox 實現他們的幻想，其中包括設計華麗的主題公園、以職業賽車手之姿和其他人競賽、成為時裝秀的焦點、化身超級英雄、邀請好友到夢寐以求的房子等等。{lineBreak}{lineBreak}我們想讓您知道您的小孩已提供我們使用者名稱、出生日期和家長的電子郵件地址。家長的電子郵件地址只會用在帳號管理、密碼重置及通知帳號使用權限更改上。請按下此按鈕驗證您的電子郵件地址：{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}驗證電子郵件地址{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}關於 Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox 致力打造一個老少咸宜的愉快環境；我們持續地和數位安全專家增強我們的安全措施，確保所有玩家都能安心地同樂、聊天及合作。我們建議您閱讀以下的家長指南讓您更加熟悉我們的平台，並了解如何讓您的小孩的 Roblox 體驗更加豐富：{aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox 也備有{boldTagStart}家長監護功能{boldTagEnd}。家長可以啟用家長 PIN，變更小孩的通訊與聊天設定。若要尋找這些監護功能，您可於登入小孩的帳號，並前往帳號設定中的安全性及隱私權標籤。{lineBreak}{lineBreak}若要新增家長 PIN，請前往：{aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}若要變更聊天設定，請前往： {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}。{lineBreak}{lineBreak}{boldTagStart}隱私權{boldTagEnd}{lineBreak}{lineBreak}若要移除您的小孩的帳號，您可以前往此處聯絡客服人員：{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}。您的電子郵件地址不會用在其他用途、向第三方揭露或與您的小孩的個人資料合併。若您需要更多資訊，您可以前往此連結查看我們的隱私權政策：{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}。{lineBreak}{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊 {lineBreak}{lineBreak} 請勿直接回覆此電子郵件。{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return "æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}æ‚¨çš„å°å­©å·²åœ¨ Roblox å»ºç«‹å¸³è™Ÿï¼Œä½¿ç”¨è€…åç¨±ç‚º {boldTagStart}{username}{boldTagEnd}ã€‚Roblox æ˜¯ä¸€å€‹ç¶²è·¯å¨›æ¨‚å¹³å°ï¼ŒçŽ©å®¶å¯ä»¥åœ¨æˆ‘å€‘çœ¾å¤šèº«æ­·å…¶å¢ƒçš„ 3D ä¸–ç•Œè£¡ä¸€èµ·ç™¼æ®æƒ³åƒåŠ›å’ŒåŒæ¨‚ã€‚çŽ©å®¶ä¹Ÿå¯ä»¥ä½¿ç”¨æˆ‘å€‘å…è²»çš„é–‹ç™¼å·¥å…· Roblox Studio å‰µä½œç°¡å–®çš„æ¨¡çµ„å’Œè¨­è¨ˆè¤‡é›œçš„å¤šäººéŠæˆ²ï¼Œç›¡æƒ…æ®ç‘å‰µæ„ã€‚å·²ç¶“æœ‰å¹¾ç™¾è¬åå…’ç«¥é€éŽ Roblox å¯¦ç¾ä»–å€‘çš„å¹»æƒ³ï¼Œå…¶ä¸­åŒ…æ‹¬è¨­è¨ˆè¯éº—çš„ä¸»é¡Œå…¬åœ’ã€ä»¥è·æ¥­è³½è»Šæ‰‹ä¹‹å§¿å’Œå…¶ä»–äººç«¶è³½ã€æˆç‚ºæ™‚è£ç§€çš„ç„¦é»žã€åŒ–èº«è¶…ç´šè‹±é›„ã€é‚€è«‹å¥½å‹åˆ°å¤¢å¯ä»¥æ±‚çš„æˆ¿å­ç­‰ç­‰ã€‚{lineBreak}{lineBreak}æˆ‘å€‘æƒ³è®“æ‚¨çŸ¥é“æ‚¨çš„å°å­©å·²æä¾›æˆ‘å€‘ä½¿ç”¨è€…åç¨±ã€å‡ºç”Ÿæ—¥æœŸå’Œå®¶é•·çš„é›»å­éƒµä»¶åœ°å€ã€‚å®¶é•·çš„é›»å­éƒµä»¶åœ°å€åªæœƒç”¨åœ¨å¸³è™Ÿç®¡ç†ã€å¯†ç¢¼é‡ç½®åŠé€šçŸ¥å¸³è™Ÿä½¿ç”¨æ¬Šé™æ›´æ”¹ä¸Šã€‚è«‹æŒ‰ä¸‹æ­¤æŒ‰éˆ•é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ï¼š{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}é©—è­‰é›»å­éƒµä»¶åœ°å€{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}é—œæ–¼ Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox è‡´åŠ›æ‰“é€ ä¸€å€‹è€å°‘å’¸å®œçš„æ„‰å¿«ç’°å¢ƒï¼›æˆ‘å€‘æŒçºŒåœ°å’Œæ•¸ä½å®‰å…¨å°ˆå®¶å¢žå¼·æˆ‘å€‘çš„å®‰å…¨æŽªæ–½ï¼Œç¢ºä¿æ‰€æœ‰çŽ©å®¶éƒ½èƒ½å®‰å¿ƒåœ°åŒæ¨‚ã€èŠå¤©åŠåˆä½œã€‚æˆ‘å€‘å»ºè­°æ‚¨é–±è®€ä»¥ä¸‹çš„å®¶é•·æŒ‡å—è®“æ‚¨æ›´åŠ ç†Ÿæ‚‰æˆ‘å€‘çš„å¹³å°ï¼Œä¸¦äº†è§£å¦‚ä½•è®“æ‚¨çš„å°å­©çš„ Roblox é«”é©—æ›´åŠ è±å¯Œï¼š{aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox ä¹Ÿå‚™æœ‰{boldTagStart}å®¶é•·ç›£è­·åŠŸèƒ½{boldTagEnd}ã€‚å®¶é•·å¯ä»¥å•Ÿç”¨å®¶é•· PINï¼Œè®Šæ›´å°å­©çš„é€šè¨Šèˆ‡èŠå¤©è¨­å®šã€‚è‹¥è¦å°‹æ‰¾é€™äº›ç›£è­·åŠŸèƒ½ï¼Œæ‚¨å¯æ–¼ç™»å…¥å°å­©çš„å¸³è™Ÿï¼Œä¸¦å‰å¾€å¸³è™Ÿè¨­å®šä¸­çš„å®‰å…¨æ€§åŠéš±ç§æ¬Šæ¨™ç±¤ã€‚{lineBreak}{lineBreak}è‹¥è¦æ–°å¢žå®¶é•· PINï¼Œè«‹å‰å¾€ï¼š{aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}è‹¥è¦è®Šæ›´èŠå¤©è¨­å®šï¼Œè«‹å‰å¾€ï¼š {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}{boldTagStart}éš±ç§æ¬Š{boldTagEnd}{lineBreak}{lineBreak}è‹¥è¦ç§»é™¤æ‚¨çš„å°å­©çš„å¸³è™Ÿï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤è™•è¯çµ¡å®¢æœäººå“¡ï¼š{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}ã€‚æ‚¨çš„é›»å­éƒµä»¶åœ°å€ä¸æœƒç”¨åœ¨å…¶ä»–ç”¨é€”ã€å‘ç¬¬ä¸‰æ–¹æ­éœ²æˆ–èˆ‡æ‚¨çš„å°å­©çš„å€‹äººè³‡æ–™åˆä½µã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤é€£çµæŸ¥çœ‹æˆ‘å€‘çš„éš±ç§æ¬Šæ”¿ç­–ï¼š{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}{lineBreak}è¬è¬æ‚¨ï¼Œ{lineBreak}{lineBreak}Roblox åœ˜éšŠ {lineBreak}{lineBreak} è«‹å‹¿ç›´æŽ¥å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.HtmlBody.Under13.Part2"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account part 2
-	/// English String: "You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
+	/// English String: "You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyUnder13Part2(string lineBreak, string aTagStartWithHref, string accountSecurityLink, string hrefEnd, string aTagEnd, string accountPrivacyLink, string boldTagStart, string boldTagEnd, string supportPageLink, string privacyPageLink, string robloxWebsiteLink)
 	{
-		return $"若要尋找這些監護功能，您可於登入小孩的帳號，並前往帳號設定中的安全性及隱私權標籤。{lineBreak}{lineBreak}若要新增家長 PIN，請瀏覽：{aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}。{lineBreak}{lineBreak}若要變更聊天設定，請瀏覽：{aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}。{lineBreak}{lineBreak}{boldTagStart}隱私權{boldTagEnd}{lineBreak}{lineBreak}若要移除您的小孩的帳號，可前往此處聯絡客服人員：{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}。您的電子郵件地址不會用在其他用途、向第三方揭露或與您的小孩的個人資料合併。若您需要更多資訊，您可以前往此連結查看我們的隱私權政策：{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}。{lineBreak}{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊 {lineBreak}{lineBreak}請勿直接回覆此電子郵件。{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return $"è‹¥è¦å°‹æ‰¾é€™äº›ç›£è­·åŠŸèƒ½ï¼Œæ‚¨å¯æ–¼ç™»å…¥å°å­©çš„å¸³è™Ÿï¼Œä¸¦å‰å¾€å¸³è™Ÿè¨­å®šä¸­çš„å®‰å…¨æ€§åŠéš±ç§æ¬Šæ¨™ç±¤ã€‚{lineBreak}{lineBreak}è‹¥è¦æ–°å¢žå®¶é•· PINï¼Œè«‹ç€è¦½ï¼š{aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}è‹¥è¦è®Šæ›´èŠå¤©è¨­å®šï¼Œè«‹ç€è¦½ï¼š{aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}{boldTagStart}éš±ç§æ¬Š{boldTagEnd}{lineBreak}{lineBreak}è‹¥è¦ç§»é™¤æ‚¨çš„å°å­©çš„å¸³è™Ÿï¼Œå¯å‰å¾€æ­¤è™•è¯çµ¡å®¢æœäººå“¡ï¼š{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}ã€‚æ‚¨çš„é›»å­éƒµä»¶åœ°å€ä¸æœƒç”¨åœ¨å…¶ä»–ç”¨é€”ã€å‘ç¬¬ä¸‰æ–¹æ­éœ²æˆ–èˆ‡æ‚¨çš„å°å­©çš„å€‹äººè³‡æ–™åˆä½µã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤é€£çµæŸ¥çœ‹æˆ‘å€‘çš„éš±ç§æ¬Šæ”¿ç­–ï¼š{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}{lineBreak}è¬è¬æ‚¨ï¼Œ{lineBreak}{lineBreak}Roblox åœ˜éšŠ {lineBreak}{lineBreak}è«‹å‹¿ç›´æŽ¥å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyUnder13Part2()
 	{
-		return "若要尋找這些監護功能，您可於登入小孩的帳號，並前往帳號設定中的安全性及隱私權標籤。{lineBreak}{lineBreak}若要新增家長 PIN，請瀏覽：{aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}。{lineBreak}{lineBreak}若要變更聊天設定，請瀏覽：{aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}。{lineBreak}{lineBreak}{boldTagStart}隱私權{boldTagEnd}{lineBreak}{lineBreak}若要移除您的小孩的帳號，可前往此處聯絡客服人員：{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}。您的電子郵件地址不會用在其他用途、向第三方揭露或與您的小孩的個人資料合併。若您需要更多資訊，您可以前往此連結查看我們的隱私權政策：{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}。{lineBreak}{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊 {lineBreak}{lineBreak}請勿直接回覆此電子郵件。{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return "è‹¥è¦å°‹æ‰¾é€™äº›ç›£è­·åŠŸèƒ½ï¼Œæ‚¨å¯æ–¼ç™»å…¥å°å­©çš„å¸³è™Ÿï¼Œä¸¦å‰å¾€å¸³è™Ÿè¨­å®šä¸­çš„å®‰å…¨æ€§åŠéš±ç§æ¬Šæ¨™ç±¤ã€‚{lineBreak}{lineBreak}è‹¥è¦æ–°å¢žå®¶é•· PINï¼Œè«‹ç€è¦½ï¼š{aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}è‹¥è¦è®Šæ›´èŠå¤©è¨­å®šï¼Œè«‹ç€è¦½ï¼š{aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}{boldTagStart}éš±ç§æ¬Š{boldTagEnd}{lineBreak}{lineBreak}è‹¥è¦ç§»é™¤æ‚¨çš„å°å­©çš„å¸³è™Ÿï¼Œå¯å‰å¾€æ­¤è™•è¯çµ¡å®¢æœäººå“¡ï¼š{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}ã€‚æ‚¨çš„é›»å­éƒµä»¶åœ°å€ä¸æœƒç”¨åœ¨å…¶ä»–ç”¨é€”ã€å‘ç¬¬ä¸‰æ–¹æ­éœ²æˆ–èˆ‡æ‚¨çš„å°å­©çš„å€‹äººè³‡æ–™åˆä½µã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤é€£çµæŸ¥çœ‹æˆ‘å€‘çš„éš±ç§æ¬Šæ”¿ç­–ï¼š{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}ã€‚{lineBreak}{lineBreak}{lineBreak}è¬è¬æ‚¨ï¼Œ{lineBreak}{lineBreak}Roblox åœ˜éšŠ {lineBreak}{lineBreak}è«‹å‹¿ç›´æŽ¥å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	/// <summary>
@@ -2891,27 +2891,27 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyOver13(string lineBreak, string username, string verificationLink)
 	{
-		return $"親愛的 Roblox 使用者您好，{lineBreak}{lineBreak}很高興您提供電子郵件地址保護您的帳號 {username}。{lineBreak}電子郵件地址經過驗證後，您的帳號將會更安全。{lineBreak}請按下下方連結完成驗證程序：{lineBreak}{verificationLink}。";
+		return $"è¦ªæ„›çš„ Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}å¾ˆé«˜èˆˆæ‚¨æä¾›é›»å­éƒµä»¶åœ°å€ä¿è­·æ‚¨çš„å¸³è™Ÿ {username}ã€‚{lineBreak}é›»å­éƒµä»¶åœ°å€ç¶“éŽé©—è­‰å¾Œï¼Œæ‚¨çš„å¸³è™Ÿå°‡æœƒæ›´å®‰å…¨ã€‚{lineBreak}è«‹æŒ‰ä¸‹ä¸‹æ–¹é€£çµå®Œæˆé©—è­‰ç¨‹åºï¼š{lineBreak}{verificationLink}ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyOver13()
 	{
-		return "親愛的 Roblox 使用者您好，{lineBreak}{lineBreak}很高興您提供電子郵件地址保護您的帳號 {username}。{lineBreak}電子郵件地址經過驗證後，您的帳號將會更安全。{lineBreak}請按下下方連結完成驗證程序：{lineBreak}{verificationLink}。";
+		return "è¦ªæ„›çš„ Roblox ä½¿ç”¨è€…æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}å¾ˆé«˜èˆˆæ‚¨æä¾›é›»å­éƒµä»¶åœ°å€ä¿è­·æ‚¨çš„å¸³è™Ÿ {username}ã€‚{lineBreak}é›»å­éƒµä»¶åœ°å€ç¶“éŽé©—è­‰å¾Œï¼Œæ‚¨çš„å¸³è™Ÿå°‡æœƒæ›´å®‰å…¨ã€‚{lineBreak}è«‹æŒ‰ä¸‹ä¸‹æ–¹é€£çµå®Œæˆé©—è­‰ç¨‹åºï¼š{lineBreak}{verificationLink}ã€‚";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.PlainBody.Under13"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account
-	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {username} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called “Roblox Studio” that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what it’s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parent’s email address. The parent’s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the child’s account access. To verify your email address, please click the button below:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}About Roblox{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {parentalPageLink}{lineBreak}{lineBreak}Roblox also offers parental controls. Parents can enable a parent PIN and change their child’s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {accountSecurityLink}{lineBreak}{lineBreak}To change chat settings, please visit: {chatPrivacyLink} {lineBreak}{lineBreak}Privacy{lineBreak}{lineBreak} You may remove your child's account by contacting customer service at {supportPageLink}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {privacyPageLink}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team{lineBreak}Do not reply to this email directly.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}"
+	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {username} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called â€œRoblox Studioâ€ that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what itâ€™s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parentâ€™s email address. The parentâ€™s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the childâ€™s account access. To verify your email address, please click the button below:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}About Roblox{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parentâ€™s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {parentalPageLink}{lineBreak}{lineBreak}Roblox also offers parental controls. Parents can enable a parent PIN and change their childâ€™s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {accountSecurityLink}{lineBreak}{lineBreak}To change chat settings, please visit: {chatPrivacyLink} {lineBreak}{lineBreak}Privacy{lineBreak}{lineBreak} You may remove your child's account by contacting customer service at {supportPageLink}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {privacyPageLink}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team{lineBreak}Do not reply to this email directly.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}"
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyUnder13(string lineBreak, string username, string verificationLink, string parentalPageLink, string accountSecurityLink, string chatPrivacyLink, string supportPageLink, string privacyPageLink, string robloxWebiteLink)
 	{
-		return $"您好，{lineBreak}{lineBreak}您的小孩已在 Roblox 建立帳號，使用者名稱為 {username}。Roblox 是一個網路娛樂平台，玩家可以在我們眾多身歷其境的 3D 世界裡一起發揮想像力和同樂。玩家也可以使用我們免費的開發工具 Roblox Studio 創作簡單的模組和設計複雜的多人遊戲，盡情揮灑創意。已經有幾百萬名兒童透過 Roblox 實現他們的幻想，其中包括設計華麗的主題公園、以職業賽車手之姿和其他人競賽、成為時裝秀的焦點、化身超級英雄、邀請好友到夢寐以求的房子等等。{lineBreak}{lineBreak}我們想讓您知道您的小孩已提供我們使用者名稱、出生日期和家長的電子郵件地址。家長的電子郵件地址只會用在帳號管理、密碼重置及通知帳號使用權限更改上。請按下此按鈕驗證您的電子郵件地址：{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}關於 Roblox{lineBreak}{lineBreak}Roblox 致力打造一個老少咸宜的愉快環境；我們持續地和數位安全專家增強我們的安全措施，確保所有玩家都能安心地同樂、聊天及合作。我們建議您閱讀以下的家長指南讓您更加熟悉我們的平台，並了解如何讓您的小孩的 Roblox 體驗更加豐富：{parentalPageLink}{lineBreak}{lineBreak}Roblox 也備有家長監護功能。家長可以啟用家長 PIN，變更小孩的通訊與聊天設定。若要尋找這些監護功能，您可於登入小孩的帳號，並前往帳號設定中的安全性及隱私權標籤。{lineBreak}{lineBreak}若要新增家長 PIN，請前往：{accountSecurityLink}{lineBreak}{lineBreak}若要變更聊天設定，請前往： {chatPrivacyLink}{lineBreak}{lineBreak}隱私權{lineBreak}{lineBreak}若要移除您的小孩的帳號，可前往此處聯絡客服人員：{supportPageLink}。您的電子郵件地址不會用在其他用途、向第三方揭露或與您的小孩的個人資料合併。若您需要更多資訊，您可以前往此連結查看我們的隱私權政策：{privacyPageLink}。{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊 {lineBreak}請勿直接回覆此電子郵件。{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return $"æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}æ‚¨çš„å°å­©å·²åœ¨ Roblox å»ºç«‹å¸³è™Ÿï¼Œä½¿ç”¨è€…åç¨±ç‚º {username}ã€‚Roblox æ˜¯ä¸€å€‹ç¶²è·¯å¨›æ¨‚å¹³å°ï¼ŒçŽ©å®¶å¯ä»¥åœ¨æˆ‘å€‘çœ¾å¤šèº«æ­·å…¶å¢ƒçš„ 3D ä¸–ç•Œè£¡ä¸€èµ·ç™¼æ®æƒ³åƒåŠ›å’ŒåŒæ¨‚ã€‚çŽ©å®¶ä¹Ÿå¯ä»¥ä½¿ç”¨æˆ‘å€‘å…è²»çš„é–‹ç™¼å·¥å…· Roblox Studio å‰µä½œç°¡å–®çš„æ¨¡çµ„å’Œè¨­è¨ˆè¤‡é›œçš„å¤šäººéŠæˆ²ï¼Œç›¡æƒ…æ®ç‘å‰µæ„ã€‚å·²ç¶“æœ‰å¹¾ç™¾è¬åå…’ç«¥é€éŽ Roblox å¯¦ç¾ä»–å€‘çš„å¹»æƒ³ï¼Œå…¶ä¸­åŒ…æ‹¬è¨­è¨ˆè¯éº—çš„ä¸»é¡Œå…¬åœ’ã€ä»¥è·æ¥­è³½è»Šæ‰‹ä¹‹å§¿å’Œå…¶ä»–äººç«¶è³½ã€æˆç‚ºæ™‚è£ç§€çš„ç„¦é»žã€åŒ–èº«è¶…ç´šè‹±é›„ã€é‚€è«‹å¥½å‹åˆ°å¤¢å¯ä»¥æ±‚çš„æˆ¿å­ç­‰ç­‰ã€‚{lineBreak}{lineBreak}æˆ‘å€‘æƒ³è®“æ‚¨çŸ¥é“æ‚¨çš„å°å­©å·²æä¾›æˆ‘å€‘ä½¿ç”¨è€…åç¨±ã€å‡ºç”Ÿæ—¥æœŸå’Œå®¶é•·çš„é›»å­éƒµä»¶åœ°å€ã€‚å®¶é•·çš„é›»å­éƒµä»¶åœ°å€åªæœƒç”¨åœ¨å¸³è™Ÿç®¡ç†ã€å¯†ç¢¼é‡ç½®åŠé€šçŸ¥å¸³è™Ÿä½¿ç”¨æ¬Šé™æ›´æ”¹ä¸Šã€‚è«‹æŒ‰ä¸‹æ­¤æŒ‰éˆ•é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ï¼š{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}é—œæ–¼ Roblox{lineBreak}{lineBreak}Roblox è‡´åŠ›æ‰“é€ ä¸€å€‹è€å°‘å’¸å®œçš„æ„‰å¿«ç’°å¢ƒï¼›æˆ‘å€‘æŒçºŒåœ°å’Œæ•¸ä½å®‰å…¨å°ˆå®¶å¢žå¼·æˆ‘å€‘çš„å®‰å…¨æŽªæ–½ï¼Œç¢ºä¿æ‰€æœ‰çŽ©å®¶éƒ½èƒ½å®‰å¿ƒåœ°åŒæ¨‚ã€èŠå¤©åŠåˆä½œã€‚æˆ‘å€‘å»ºè­°æ‚¨é–±è®€ä»¥ä¸‹çš„å®¶é•·æŒ‡å—è®“æ‚¨æ›´åŠ ç†Ÿæ‚‰æˆ‘å€‘çš„å¹³å°ï¼Œä¸¦äº†è§£å¦‚ä½•è®“æ‚¨çš„å°å­©çš„ Roblox é«”é©—æ›´åŠ è±å¯Œï¼š{parentalPageLink}{lineBreak}{lineBreak}Roblox ä¹Ÿå‚™æœ‰å®¶é•·ç›£è­·åŠŸèƒ½ã€‚å®¶é•·å¯ä»¥å•Ÿç”¨å®¶é•· PINï¼Œè®Šæ›´å°å­©çš„é€šè¨Šèˆ‡èŠå¤©è¨­å®šã€‚è‹¥è¦å°‹æ‰¾é€™äº›ç›£è­·åŠŸèƒ½ï¼Œæ‚¨å¯æ–¼ç™»å…¥å°å­©çš„å¸³è™Ÿï¼Œä¸¦å‰å¾€å¸³è™Ÿè¨­å®šä¸­çš„å®‰å…¨æ€§åŠéš±ç§æ¬Šæ¨™ç±¤ã€‚{lineBreak}{lineBreak}è‹¥è¦æ–°å¢žå®¶é•· PINï¼Œè«‹å‰å¾€ï¼š{accountSecurityLink}{lineBreak}{lineBreak}è‹¥è¦è®Šæ›´èŠå¤©è¨­å®šï¼Œè«‹å‰å¾€ï¼š {chatPrivacyLink}{lineBreak}{lineBreak}éš±ç§æ¬Š{lineBreak}{lineBreak}è‹¥è¦ç§»é™¤æ‚¨çš„å°å­©çš„å¸³è™Ÿï¼Œå¯å‰å¾€æ­¤è™•è¯çµ¡å®¢æœäººå“¡ï¼š{supportPageLink}ã€‚æ‚¨çš„é›»å­éƒµä»¶åœ°å€ä¸æœƒç”¨åœ¨å…¶ä»–ç”¨é€”ã€å‘ç¬¬ä¸‰æ–¹æ­éœ²æˆ–èˆ‡æ‚¨çš„å°å­©çš„å€‹äººè³‡æ–™åˆä½µã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤é€£çµæŸ¥çœ‹æˆ‘å€‘çš„éš±ç§æ¬Šæ”¿ç­–ï¼š{privacyPageLink}ã€‚{lineBreak}{lineBreak}è¬è¬æ‚¨ï¼Œ{lineBreak}{lineBreak}Roblox åœ˜éšŠ {lineBreak}è«‹å‹¿ç›´æŽ¥å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyUnder13()
 	{
-		return "您好，{lineBreak}{lineBreak}您的小孩已在 Roblox 建立帳號，使用者名稱為 {username}。Roblox 是一個網路娛樂平台，玩家可以在我們眾多身歷其境的 3D 世界裡一起發揮想像力和同樂。玩家也可以使用我們免費的開發工具 Roblox Studio 創作簡單的模組和設計複雜的多人遊戲，盡情揮灑創意。已經有幾百萬名兒童透過 Roblox 實現他們的幻想，其中包括設計華麗的主題公園、以職業賽車手之姿和其他人競賽、成為時裝秀的焦點、化身超級英雄、邀請好友到夢寐以求的房子等等。{lineBreak}{lineBreak}我們想讓您知道您的小孩已提供我們使用者名稱、出生日期和家長的電子郵件地址。家長的電子郵件地址只會用在帳號管理、密碼重置及通知帳號使用權限更改上。請按下此按鈕驗證您的電子郵件地址：{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}關於 Roblox{lineBreak}{lineBreak}Roblox 致力打造一個老少咸宜的愉快環境；我們持續地和數位安全專家增強我們的安全措施，確保所有玩家都能安心地同樂、聊天及合作。我們建議您閱讀以下的家長指南讓您更加熟悉我們的平台，並了解如何讓您的小孩的 Roblox 體驗更加豐富：{parentalPageLink}{lineBreak}{lineBreak}Roblox 也備有家長監護功能。家長可以啟用家長 PIN，變更小孩的通訊與聊天設定。若要尋找這些監護功能，您可於登入小孩的帳號，並前往帳號設定中的安全性及隱私權標籤。{lineBreak}{lineBreak}若要新增家長 PIN，請前往：{accountSecurityLink}{lineBreak}{lineBreak}若要變更聊天設定，請前往： {chatPrivacyLink}{lineBreak}{lineBreak}隱私權{lineBreak}{lineBreak}若要移除您的小孩的帳號，可前往此處聯絡客服人員：{supportPageLink}。您的電子郵件地址不會用在其他用途、向第三方揭露或與您的小孩的個人資料合併。若您需要更多資訊，您可以前往此連結查看我們的隱私權政策：{privacyPageLink}。{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊 {lineBreak}請勿直接回覆此電子郵件。{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return "æ‚¨å¥½ï¼Œ{lineBreak}{lineBreak}æ‚¨çš„å°å­©å·²åœ¨ Roblox å»ºç«‹å¸³è™Ÿï¼Œä½¿ç”¨è€…åç¨±ç‚º {username}ã€‚Roblox æ˜¯ä¸€å€‹ç¶²è·¯å¨›æ¨‚å¹³å°ï¼ŒçŽ©å®¶å¯ä»¥åœ¨æˆ‘å€‘çœ¾å¤šèº«æ­·å…¶å¢ƒçš„ 3D ä¸–ç•Œè£¡ä¸€èµ·ç™¼æ®æƒ³åƒåŠ›å’ŒåŒæ¨‚ã€‚çŽ©å®¶ä¹Ÿå¯ä»¥ä½¿ç”¨æˆ‘å€‘å…è²»çš„é–‹ç™¼å·¥å…· Roblox Studio å‰µä½œç°¡å–®çš„æ¨¡çµ„å’Œè¨­è¨ˆè¤‡é›œçš„å¤šäººéŠæˆ²ï¼Œç›¡æƒ…æ®ç‘å‰µæ„ã€‚å·²ç¶“æœ‰å¹¾ç™¾è¬åå…’ç«¥é€éŽ Roblox å¯¦ç¾ä»–å€‘çš„å¹»æƒ³ï¼Œå…¶ä¸­åŒ…æ‹¬è¨­è¨ˆè¯éº—çš„ä¸»é¡Œå…¬åœ’ã€ä»¥è·æ¥­è³½è»Šæ‰‹ä¹‹å§¿å’Œå…¶ä»–äººç«¶è³½ã€æˆç‚ºæ™‚è£ç§€çš„ç„¦é»žã€åŒ–èº«è¶…ç´šè‹±é›„ã€é‚€è«‹å¥½å‹åˆ°å¤¢å¯ä»¥æ±‚çš„æˆ¿å­ç­‰ç­‰ã€‚{lineBreak}{lineBreak}æˆ‘å€‘æƒ³è®“æ‚¨çŸ¥é“æ‚¨çš„å°å­©å·²æä¾›æˆ‘å€‘ä½¿ç”¨è€…åç¨±ã€å‡ºç”Ÿæ—¥æœŸå’Œå®¶é•·çš„é›»å­éƒµä»¶åœ°å€ã€‚å®¶é•·çš„é›»å­éƒµä»¶åœ°å€åªæœƒç”¨åœ¨å¸³è™Ÿç®¡ç†ã€å¯†ç¢¼é‡ç½®åŠé€šçŸ¥å¸³è™Ÿä½¿ç”¨æ¬Šé™æ›´æ”¹ä¸Šã€‚è«‹æŒ‰ä¸‹æ­¤æŒ‰éˆ•é©—è­‰æ‚¨çš„é›»å­éƒµä»¶åœ°å€ï¼š{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}é—œæ–¼ Roblox{lineBreak}{lineBreak}Roblox è‡´åŠ›æ‰“é€ ä¸€å€‹è€å°‘å’¸å®œçš„æ„‰å¿«ç’°å¢ƒï¼›æˆ‘å€‘æŒçºŒåœ°å’Œæ•¸ä½å®‰å…¨å°ˆå®¶å¢žå¼·æˆ‘å€‘çš„å®‰å…¨æŽªæ–½ï¼Œç¢ºä¿æ‰€æœ‰çŽ©å®¶éƒ½èƒ½å®‰å¿ƒåœ°åŒæ¨‚ã€èŠå¤©åŠåˆä½œã€‚æˆ‘å€‘å»ºè­°æ‚¨é–±è®€ä»¥ä¸‹çš„å®¶é•·æŒ‡å—è®“æ‚¨æ›´åŠ ç†Ÿæ‚‰æˆ‘å€‘çš„å¹³å°ï¼Œä¸¦äº†è§£å¦‚ä½•è®“æ‚¨çš„å°å­©çš„ Roblox é«”é©—æ›´åŠ è±å¯Œï¼š{parentalPageLink}{lineBreak}{lineBreak}Roblox ä¹Ÿå‚™æœ‰å®¶é•·ç›£è­·åŠŸèƒ½ã€‚å®¶é•·å¯ä»¥å•Ÿç”¨å®¶é•· PINï¼Œè®Šæ›´å°å­©çš„é€šè¨Šèˆ‡èŠå¤©è¨­å®šã€‚è‹¥è¦å°‹æ‰¾é€™äº›ç›£è­·åŠŸèƒ½ï¼Œæ‚¨å¯æ–¼ç™»å…¥å°å­©çš„å¸³è™Ÿï¼Œä¸¦å‰å¾€å¸³è™Ÿè¨­å®šä¸­çš„å®‰å…¨æ€§åŠéš±ç§æ¬Šæ¨™ç±¤ã€‚{lineBreak}{lineBreak}è‹¥è¦æ–°å¢žå®¶é•· PINï¼Œè«‹å‰å¾€ï¼š{accountSecurityLink}{lineBreak}{lineBreak}è‹¥è¦è®Šæ›´èŠå¤©è¨­å®šï¼Œè«‹å‰å¾€ï¼š {chatPrivacyLink}{lineBreak}{lineBreak}éš±ç§æ¬Š{lineBreak}{lineBreak}è‹¥è¦ç§»é™¤æ‚¨çš„å°å­©çš„å¸³è™Ÿï¼Œå¯å‰å¾€æ­¤è™•è¯çµ¡å®¢æœäººå“¡ï¼š{supportPageLink}ã€‚æ‚¨çš„é›»å­éƒµä»¶åœ°å€ä¸æœƒç”¨åœ¨å…¶ä»–ç”¨é€”ã€å‘ç¬¬ä¸‰æ–¹æ­éœ²æˆ–èˆ‡æ‚¨çš„å°å­©çš„å€‹äººè³‡æ–™åˆä½µã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤é€£çµæŸ¥çœ‹æˆ‘å€‘çš„éš±ç§æ¬Šæ”¿ç­–ï¼š{privacyPageLink}ã€‚{lineBreak}{lineBreak}è¬è¬æ‚¨ï¼Œ{lineBreak}{lineBreak}Roblox åœ˜éšŠ {lineBreak}è«‹å‹¿ç›´æŽ¥å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	/// <summary>
@@ -2921,322 +2921,322 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyUnder13Part2(string chatPrivacyLink, string lineBreak, string supportPageLink, string privacyPageLink, string robloxWebiteLink)
 	{
-		return $"若要變更聊天設定，請瀏覽：{chatPrivacyLink}\u3000{lineBreak}{lineBreak}。隱私權{lineBreak}{lineBreak}若要移除您的小孩的帳號，可前往此處聯絡客服人員：{supportPageLink}。您的電子郵件地址不會用在其他用途、向第三方揭露或與您的小孩的個人資料合併。若您需要更多資訊，您可以前往此連結查看我們的隱私權政策：{privacyPageLink}。{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊{lineBreak}請勿直接回覆此電子郵件。{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return $"è‹¥è¦è®Šæ›´èŠå¤©è¨­å®šï¼Œè«‹ç€è¦½ï¼š{chatPrivacyLink}\u3000{lineBreak}{lineBreak}ã€‚éš±ç§æ¬Š{lineBreak}{lineBreak}è‹¥è¦ç§»é™¤æ‚¨çš„å°å­©çš„å¸³è™Ÿï¼Œå¯å‰å¾€æ­¤è™•è¯çµ¡å®¢æœäººå“¡ï¼š{supportPageLink}ã€‚æ‚¨çš„é›»å­éƒµä»¶åœ°å€ä¸æœƒç”¨åœ¨å…¶ä»–ç”¨é€”ã€å‘ç¬¬ä¸‰æ–¹æ­éœ²æˆ–èˆ‡æ‚¨çš„å°å­©çš„å€‹äººè³‡æ–™åˆä½µã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤é€£çµæŸ¥çœ‹æˆ‘å€‘çš„éš±ç§æ¬Šæ”¿ç­–ï¼š{privacyPageLink}ã€‚{lineBreak}{lineBreak}è¬è¬æ‚¨ï¼Œ{lineBreak}{lineBreak}Roblox åœ˜éšŠ{lineBreak}è«‹å‹¿ç›´æŽ¥å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyUnder13Part2()
 	{
-		return "若要變更聊天設定，請瀏覽：{chatPrivacyLink}\u3000{lineBreak}{lineBreak}。隱私權{lineBreak}{lineBreak}若要移除您的小孩的帳號，可前往此處聯絡客服人員：{supportPageLink}。您的電子郵件地址不會用在其他用途、向第三方揭露或與您的小孩的個人資料合併。若您需要更多資訊，您可以前往此連結查看我們的隱私權政策：{privacyPageLink}。{lineBreak}{lineBreak}謝謝您，{lineBreak}{lineBreak}Roblox 團隊{lineBreak}請勿直接回覆此電子郵件。{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return "è‹¥è¦è®Šæ›´èŠå¤©è¨­å®šï¼Œè«‹ç€è¦½ï¼š{chatPrivacyLink}\u3000{lineBreak}{lineBreak}ã€‚éš±ç§æ¬Š{lineBreak}{lineBreak}è‹¥è¦ç§»é™¤æ‚¨çš„å°å­©çš„å¸³è™Ÿï¼Œå¯å‰å¾€æ­¤è™•è¯çµ¡å®¢æœäººå“¡ï¼š{supportPageLink}ã€‚æ‚¨çš„é›»å­éƒµä»¶åœ°å€ä¸æœƒç”¨åœ¨å…¶ä»–ç”¨é€”ã€å‘ç¬¬ä¸‰æ–¹æ­éœ²æˆ–èˆ‡æ‚¨çš„å°å­©çš„å€‹äººè³‡æ–™åˆä½µã€‚è‹¥æ‚¨éœ€è¦æ›´å¤šè³‡è¨Šï¼Œæ‚¨å¯ä»¥å‰å¾€æ­¤é€£çµæŸ¥çœ‹æˆ‘å€‘çš„éš±ç§æ¬Šæ”¿ç­–ï¼š{privacyPageLink}ã€‚{lineBreak}{lineBreak}è¬è¬æ‚¨ï¼Œ{lineBreak}{lineBreak}Roblox åœ˜éšŠ{lineBreak}è«‹å‹¿ç›´æŽ¥å›žè¦†æ­¤é›»å­éƒµä»¶ã€‚{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailSubjectOver13()
 	{
-		return "Roblox 電子郵件地址驗證";
+		return "Roblox é›»å­éƒµä»¶åœ°å€é©—è­‰";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailSubjectUnder13()
 	{
-		return "Roblox 帳號許可";
+		return "Roblox å¸³è™Ÿè¨±å¯";
 	}
 
 	protected override string _GetTemplateForExampleDescription()
 	{
-		return "自我介紹（最多 1000 個字元）";
+		return "è‡ªæˆ‘ä»‹ç´¹ï¼ˆæœ€å¤š 1000 å€‹å­—å…ƒï¼‰";
 	}
 
 	protected override string _GetTemplateForExampleFacebook()
 	{
-		return "例如 www.facebook.com/Roblox";
+		return "ä¾‹å¦‚ www.facebook.com/Roblox";
 	}
 
 	protected override string _GetTemplateForExampleGooglePlus()
 	{
-		return "例如 http://plus.google.com/profileId";
+		return "ä¾‹å¦‚ http://plus.google.com/profileId";
 	}
 
 	protected override string _GetTemplateForExampleTwitch()
 	{
-		return "例如 www.twitch.tv/roblox/profile";
+		return "ä¾‹å¦‚ www.twitch.tv/roblox/profile";
 	}
 
 	protected override string _GetTemplateForExampleTwitter()
 	{
-		return "例如 @Roblox";
+		return "ä¾‹å¦‚ @Roblox";
 	}
 
 	protected override string _GetTemplateForExampleYouTube()
 	{
-		return "例如 www.youtube.com/user/roblox";
+		return "ä¾‹å¦‚ www.youtube.com/user/roblox";
 	}
 
 	protected override string _GetTemplateForHeadingAccountControls()
 	{
-		return "什麼是帳號控制？";
+		return "ä»€éº¼æ˜¯å¸³è™ŸæŽ§åˆ¶ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForHeadingAccountInfo()
 	{
-		return "帳號資訊";
+		return "å¸³è™Ÿè³‡è¨Š";
 	}
 
 	protected override string _GetTemplateForHeadingBilling()
 	{
-		return "帳務";
+		return "å¸³å‹™";
 	}
 
 	protected override string _GetTemplateForHeadingBlockedUsers()
 	{
-		return "封鎖的使用者";
+		return "å°éŽ–çš„ä½¿ç”¨è€…";
 	}
 
 	protected override string _GetTemplateForHeadingContactSettings()
 	{
-		return "聯絡設定";
+		return "è¯çµ¡è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingDesktopPush()
 	{
-		return "桌面推播";
+		return "æ¡Œé¢æŽ¨æ’­";
 	}
 
 	protected override string _GetTemplateForHeadingDialogAddPassword()
 	{
-		return "新增密碼";
+		return "æ–°å¢žå¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForHeadingDialogAddPhone()
 	{
-		return "新增手機號碼";
+		return "æ–°å¢žæ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangeEmail()
 	{
-		return "變更我的電子郵件地址";
+		return "è®Šæ›´æˆ‘çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangeEmailConfirmation()
 	{
-		return "電子郵件地址已變更";
+		return "é›»å­éƒµä»¶åœ°å€å·²è®Šæ›´";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangePassword()
 	{
-		return "變更密碼";
+		return "è®Šæ›´å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangePasswordConfirmation()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangePasswordSuccess()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangeUsername()
 	{
-		return "變更使用者名稱";
+		return "è®Šæ›´ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForHeadingDialogDefaultError()
 	{
-		return "錯誤";
+		return "éŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForHeadingDialogDefaultSuccess()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogEditPhone()
 	{
-		return "編輯手機號碼";
+		return "ç·¨è¼¯æ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForHeadingDialogInsufficientFunds()
 	{
-		return "資金不足";
+		return "è³‡é‡‘ä¸è¶³";
 	}
 
 	protected override string _GetTemplateForHeadingDialogInvalidUsername()
 	{
-		return "使用者名稱無效";
+		return "ä½¿ç”¨è€…åç¨±ç„¡æ•ˆ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogPinCreate()
 	{
-		return "新增 PIN";
+		return "æ–°å¢ž PIN";
 	}
 
 	protected override string _GetTemplateForHeadingDialogPinCreateSuccessConfirmation()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogPinUnlock()
 	{
-		return "需要帳號 PIN";
+		return "éœ€è¦å¸³è™Ÿ PIN";
 	}
 
 	protected override string _GetTemplateForHeadingDialogRemovePhone()
 	{
-		return "移除手機號碼";
+		return "ç§»é™¤æ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForHeadingDialogVerifiedEmailRequired()
 	{
-		return "需要已驗證的電子郵件地址";
+		return "éœ€è¦å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForHeadingDialogVerifyEmail()
 	{
-		return "驗證電子郵件地址";
+		return "é©—è­‰é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForHeadingDialogVerifyPhone()
 	{
-		return "驗證手機號碼";
+		return "é©—è­‰æ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForHeadingFastTrack()
 	{
-		return "快速通道";
+		return "å¿«é€Ÿé€šé“";
 	}
 
 	protected override string _GetTemplateForHeadingMembershipStatus()
 	{
-		return "會員資格狀態";
+		return "æœƒå“¡è³‡æ ¼ç‹€æ…‹";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationOptions()
 	{
-		return "有以下情形時通知我";
+		return "æœ‰ä»¥ä¸‹æƒ…å½¢æ™‚é€šçŸ¥æˆ‘";
 	}
 
 	protected override string _GetTemplateForHeadingNotifications()
 	{
-		return "通知";
+		return "é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsActionWhen()
 	{
-		return "有以下情形時通知我";
+		return "æœ‰ä»¥ä¸‹æƒ…å½¢æ™‚é€šçŸ¥æˆ‘";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsDesktopPush()
 	{
-		return "桌面推播";
+		return "æ¡Œé¢æŽ¨æ’­";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsMobilePush()
 	{
-		return "行動裝置推播";
+		return "è¡Œå‹•è£ç½®æŽ¨æ’­";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsStream()
 	{
-		return "動態消息";
+		return "å‹•æ…‹æ¶ˆæ¯";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationStream()
 	{
-		return "動態消息";
+		return "å‹•æ…‹æ¶ˆæ¯";
 	}
 
 	protected override string _GetTemplateForHeadingOtherSettings()
 	{
-		return "其它設定";
+		return "å…¶å®ƒè¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingPageTitle()
 	{
-		return "我的設定";
+		return "æˆ‘çš„è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingPersonal()
 	{
-		return "個人資訊";
+		return "å€‹äººè³‡è¨Š";
 	}
 
 	protected override string _GetTemplateForHeadingPin()
 	{
-		return "帳號 PIN";
+		return "å¸³è™Ÿ PIN";
 	}
 
 	protected override string _GetTemplateForHeadingPrivacySettings()
 	{
-		return "隱私權設定";
+		return "éš±ç§æ¬Šè¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingRenevalDate()
 	{
-		return "續訂日期";
+		return "çºŒè¨‚æ—¥æœŸ";
 	}
 
 	protected override string _GetTemplateForHeadingRestrictions()
 	{
-		return "帳號限制";
+		return "å¸³è™Ÿé™åˆ¶";
 	}
 
 	protected override string _GetTemplateForHeadingSecureSignOut()
 	{
-		return "安全登出";
+		return "å®‰å…¨ç™»å‡º";
 	}
 
 	protected override string _GetTemplateForHeadingSocialNetworks()
 	{
-		return "社交網路";
+		return "ç¤¾äº¤ç¶²è·¯";
 	}
 
 	protected override string _GetTemplateForHeadingSocialSignOn()
 	{
-		return "社交登入";
+		return "ç¤¾äº¤ç™»å…¥";
 	}
 
 	protected override string _GetTemplateForHeadingSuccessDialogTitle()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingTabAccountInfo()
 	{
-		return "帳號資訊";
+		return "å¸³è™Ÿè³‡è¨Š";
 	}
 
 	protected override string _GetTemplateForHeadingTabBilling()
 	{
-		return "帳務";
+		return "å¸³å‹™";
 	}
 
 	protected override string _GetTemplateForHeadingTabFastTrack()
 	{
-		return "快速通道";
+		return "å¿«é€Ÿé€šé“";
 	}
 
 	protected override string _GetTemplateForHeadingTabNotifications()
 	{
-		return "通知";
+		return "é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForHeadingTabPrivacy()
 	{
-		return "隱私權";
+		return "éš±ç§æ¬Š";
 	}
 
 	protected override string _GetTemplateForHeadingTabSecurity()
 	{
-		return "安全";
+		return "å®‰å…¨";
 	}
 
 	protected override string _GetTemplateForHeadingTransactions()
 	{
-		return "交易";
+		return "äº¤æ˜“";
 	}
 
 	protected override string _GetTemplateForHeadingTwoStepVerification()
 	{
-		return "雙步驟驗證";
+		return "é›™æ­¥é©Ÿé©—è­‰";
 	}
 
 	protected override string _GetTemplateForHeadingXbox()
@@ -3246,52 +3246,52 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelAccountPinDisabled()
 	{
-		return "帳號 PIN 目前停用";
+		return "å¸³è™Ÿ PIN ç›®å‰åœç”¨";
 	}
 
 	protected override string _GetTemplateForLabelAccountPinEnabled()
 	{
-		return "帳號 PIN 目前啟用";
+		return "å¸³è™Ÿ PIN ç›®å‰å•Ÿç”¨";
 	}
 
 	protected override string _GetTemplateForLabelAccountRestrictionDisabled()
 	{
-		return "帳號限制目前停用";
+		return "å¸³è™Ÿé™åˆ¶ç›®å‰åœç”¨";
 	}
 
 	protected override string _GetTemplateForLabelAccountRestrictionEnabled()
 	{
-		return "帳號限制目前啟用";
+		return "å¸³è™Ÿé™åˆ¶ç›®å‰å•Ÿç”¨";
 	}
 
 	protected override string _GetTemplateForLabelAddEmail()
 	{
-		return "新增電子郵件地址";
+		return "æ–°å¢žé›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelAddEmailParent()
 	{
-		return "新增家長的電子郵件地址";
+		return "æ–°å¢žå®¶é•·çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelAddPassword()
 	{
-		return "新增密碼：";
+		return "æ–°å¢žå¯†ç¢¼ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelAddPhone()
 	{
-		return "新增手機號碼";
+		return "æ–°å¢žæ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelAddPhoneLink()
 	{
-		return "新增手機號碼";
+		return "æ–°å¢žæ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelBillingHelp()
 	{
-		return "帳務和付款問題：";
+		return "å¸³å‹™å’Œä»˜æ¬¾å•é¡Œï¼š";
 	}
 
 	/// <summary>
@@ -3300,12 +3300,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelBillingHelpWithLink(string aTagStartWithHref, string billingHelpPagesLink, string hrefEnd, string aTagEnd)
 	{
-		return $"若有帳務和付款問題，請前往{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}帳務協助頁面{aTagEnd}。";
+		return $"è‹¥æœ‰å¸³å‹™å’Œä»˜æ¬¾å•é¡Œï¼Œè«‹å‰å¾€{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}å¸³å‹™å”åŠ©é é¢{aTagEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelBillingHelpWithLink()
 	{
-		return "若有帳務和付款問題，請前往{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}帳務協助頁面{aTagEnd}。";
+		return "è‹¥æœ‰å¸³å‹™å’Œä»˜æ¬¾å•é¡Œï¼Œè«‹å‰å¾€{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}å¸³å‹™å”åŠ©é é¢{aTagEnd}ã€‚";
 	}
 
 	/// <summary>
@@ -3314,47 +3314,47 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelBillingHistoryCardNumber(string lastFourCard)
 	{
-		return $"末四碼為 {lastFourCard}";
+		return $"æœ«å››ç¢¼ç‚º {lastFourCard}";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryCardNumber()
 	{
-		return "末四碼為 {lastFourCard}";
+		return "æœ«å››ç¢¼ç‚º {lastFourCard}";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryCost()
 	{
-		return "費用";
+		return "è²»ç”¨";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryDate()
 	{
-		return "日期";
+		return "æ—¥æœŸ";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryDescription()
 	{
-		return "說明";
+		return "èªªæ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryGeneralErrors()
 	{
-		return "此服務目前停用，請稍後再試。";
+		return "æ­¤æœå‹™ç›®å‰åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryNoTransactions()
 	{
-		return "無交易";
+		return "ç„¡äº¤æ˜“";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryPaymentType()
 	{
-		return "付款方式";
+		return "ä»˜æ¬¾æ–¹å¼";
 	}
 
 	protected override string _GetTemplateForLabelBirthday()
 	{
-		return "生日";
+		return "ç”Ÿæ—¥";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClub()
@@ -3368,112 +3368,112 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelBuildersClubJoin(string startSpan, string endSpan)
 	{
-		return $"您還不是會員，現在加入 {startSpan}Builders Club{endSpan}！";
+		return $"æ‚¨é‚„ä¸æ˜¯æœƒå“¡ï¼Œç¾åœ¨åŠ å…¥ {startSpan}Builders Club{endSpan}ï¼";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubJoin()
 	{
-		return "您還不是會員，現在加入 {startSpan}Builders Club{endSpan}！";
+		return "æ‚¨é‚„ä¸æ˜¯æœƒå“¡ï¼Œç¾åœ¨åŠ å…¥ {startSpan}Builders Club{endSpan}ï¼";
 	}
 
 	protected override string _GetTemplateForLabelChangeYourUsername()
 	{
-		return "變更您的使用者名稱";
+		return "è®Šæ›´æ‚¨çš„ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelChooseLanguage()
 	{
-		return "選擇語言";
+		return "é¸æ“‡èªžè¨€";
 	}
 
 	protected override string _GetTemplateForLabelClassicTheme()
 	{
-		return "關閉";
+		return "é—œé–‰";
 	}
 
 	protected override string _GetTemplateForLabelConnectAccount()
 	{
-		return "連接帳號：";
+		return "é€£æŽ¥å¸³è™Ÿï¼š";
 	}
 
 	protected override string _GetTemplateForLabelCountry()
 	{
-		return "選擇國家或地區";
+		return "é¸æ“‡åœ‹å®¶æˆ–åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelCountryTitle()
 	{
-		return "位置";
+		return "ä½ç½®";
 	}
 
 	protected override string _GetTemplateForLabelDarkTheme()
 	{
-		return "黑暗";
+		return "é»‘æš—";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddEmailOver13()
 	{
-		return "新增我的電子郵件地址";
+		return "æ–°å¢žæˆ‘çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddEmailUnder13()
 	{
-		return "新增家長的電子郵件地址";
+		return "æ–°å¢žå®¶é•·çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddPhoneField()
 	{
-		return "手機號碼";
+		return "æ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddPhonePassword()
 	{
-		return "輸入此帳號的密碼";
+		return "è¼¸å…¥æ­¤å¸³è™Ÿçš„å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeEmailField()
 	{
-		return "輸入新的電子郵件地址";
+		return "è¼¸å…¥æ–°çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeEmailOver13()
 	{
-		return "輸入新的電子郵件地址";
+		return "è¼¸å…¥æ–°çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeEmailUnder13()
 	{
-		return "變更家長的電子郵件地址";
+		return "è®Šæ›´å®¶é•·çš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangePasswordConfirm()
 	{
-		return "確認密碼";
+		return "ç¢ºèªå¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangePasswordCurrent()
 	{
-		return "目前密碼";
+		return "ç›®å‰å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangePasswordNew()
 	{
-		return "新密碼";
+		return "æ–°å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeUsernameAccountPassword()
 	{
-		return "帳號密碼";
+		return "å¸³è™Ÿå¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeUsernameField()
 	{
-		return "欲使用的使用者名稱 （3 到 20 個字元）";
+		return "æ¬²ä½¿ç”¨çš„ä½¿ç”¨è€…åç¨± ï¼ˆ3 åˆ° 20 å€‹å­—å…ƒï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogConfirmPin()
 	{
-		return "確認您的 PIN";
+		return "ç¢ºèªæ‚¨çš„ PIN";
 	}
 
 	/// <summary>
@@ -3482,37 +3482,37 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelDialogCreatePin(string digitCount)
 	{
-		return $"建立 {digitCount} 碼 PIN";
+		return $"å»ºç«‹ {digitCount} ç¢¼ PIN";
 	}
 
 	protected override string _GetTemplateForLabelDialogCreatePin()
 	{
-		return "建立 {digitCount} 碼 PIN";
+		return "å»ºç«‹ {digitCount} ç¢¼ PIN";
 	}
 
 	protected override string _GetTemplateForLabelDialogEditPhoneCurrentNumber()
 	{
-		return "目前號碼：";
+		return "ç›®å‰è™Ÿç¢¼ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelDialogEmailAddressChanged()
 	{
-		return "電子郵件地址已變更";
+		return "é›»å­éƒµä»¶åœ°å€å·²è®Šæ›´";
 	}
 
 	protected override string _GetTemplateForLabelDialogEmailRequired()
 	{
-		return "需要電子郵件地址";
+		return "éœ€è¦é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifiedEmail()
 	{
-		return "已驗證的電子郵件地址：";
+		return "å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifyPassword()
 	{
-		return "輸入此帳號的密碼";
+		return "è¼¸å…¥æ­¤å¸³è™Ÿçš„å¯†ç¢¼";
 	}
 
 	/// <summary>
@@ -3521,102 +3521,102 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelDialogVerifyPhoneCode(string digitCount)
 	{
-		return $"輸入驗證碼（{digitCount} 位）";
+		return $"è¼¸å…¥é©—è­‰ç¢¼ï¼ˆ{digitCount} ä½ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifyPhoneCode()
 	{
-		return "輸入驗證碼（{digitCount} 位）";
+		return "è¼¸å…¥é©—è­‰ç¢¼ï¼ˆ{digitCount} ä½ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifyPhoneCodeLabel()
 	{
-		return "請輸入傳送到您的手機的驗證碼";
+		return "è«‹è¼¸å…¥å‚³é€åˆ°æ‚¨çš„æ‰‹æ©Ÿçš„é©—è­‰ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifySms()
 	{
-		return "驗證簡訊";
+		return "é©—è­‰ç°¡è¨Š";
 	}
 
 	protected override string _GetTemplateForLabelDropDownCustom()
 	{
-		return "自訂";
+		return "è‡ªè¨‚";
 	}
 
 	protected override string _GetTemplateForLabelDropDownDefault()
 	{
-		return "預設";
+		return "é è¨­";
 	}
 
 	protected override string _GetTemplateForLabelDropDownEveryone()
 	{
-		return "所有人";
+		return "æ‰€æœ‰äºº";
 	}
 
 	protected override string _GetTemplateForLabelDropDownFollowers()
 	{
-		return "好友、我追蹤的使用者及追蹤者";
+		return "å¥½å‹ã€æˆ‘è¿½è¹¤çš„ä½¿ç”¨è€…åŠè¿½è¹¤è€…";
 	}
 
 	protected override string _GetTemplateForLabelDropDownFollowing()
 	{
-		return "好友及我追蹤的使用者";
+		return "å¥½å‹åŠæˆ‘è¿½è¹¤çš„ä½¿ç”¨è€…";
 	}
 
 	protected override string _GetTemplateForLabelDropDownFriends()
 	{
-		return "好友";
+		return "å¥½å‹";
 	}
 
 	protected override string _GetTemplateForLabelDropDownHigh()
 	{
-		return "高";
+		return "é«˜";
 	}
 
 	protected override string _GetTemplateForLabelDropDownLow()
 	{
-		return "低";
+		return "ä½Ž";
 	}
 
 	protected override string _GetTemplateForLabelDropDownMedium()
 	{
-		return "中";
+		return "ä¸­";
 	}
 
 	protected override string _GetTemplateForLabelDropDownNone()
 	{
-		return "無";
+		return "ç„¡";
 	}
 
 	protected override string _GetTemplateForLabelDropDownNoOne()
 	{
-		return "沒有人";
+		return "æ²’æœ‰äºº";
 	}
 
 	protected override string _GetTemplateForLabelDropDownOff()
 	{
-		return "關閉";
+		return "é—œé–‰";
 	}
 
 	protected override string _GetTemplateForLabelEmail()
 	{
-		return "電子郵件地址：";
+		return "é›»å­éƒµä»¶åœ°å€ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelEmailParent()
 	{
-		return "家長的電子郵件地址：";
+		return "å®¶é•·çš„é›»å­éƒµä»¶åœ°å€ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerificationPending()
 	{
-		return "待驗證";
+		return "å¾…é©—è­‰";
 	}
 
 	protected override string _GetTemplateForLabelExpirationDate()
 	{
-		return "有效期限";
+		return "æœ‰æ•ˆæœŸé™";
 	}
 
 	/// <summary>
@@ -3625,67 +3625,67 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelExpirationDateMessage(string startSpan, string expirationDate, string endSpan)
 	{
-		return $"{startSpan}{expirationDate}{endSpan} 到期";
+		return $"{startSpan}{expirationDate}{endSpan} åˆ°æœŸ";
 	}
 
 	protected override string _GetTemplateForLabelExpirationDateMessage()
 	{
-		return "{startSpan}{expirationDate}{endSpan} 到期";
+		return "{startSpan}{expirationDate}{endSpan} åˆ°æœŸ";
 	}
 
 	protected override string _GetTemplateForLabelFacebook()
 	{
-		return "Facebook：";
+		return "Facebookï¼š";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackAccuracy()
 	{
-		return "準確度";
+		return "æº–ç¢ºåº¦";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackAllFastTrackMembers()
 	{
-		return "所有人";
+		return "æ‰€æœ‰äºº";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackReportMonth()
 	{
-		return "月";
+		return "æœˆ";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackReportYear()
 	{
-		return "年";
+		return "å¹´";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackStatistics()
 	{
-		return "數據";
+		return "æ•¸æ“š";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackYou()
 	{
-		return "您";
+		return "æ‚¨";
 	}
 
 	protected override string _GetTemplateForLabelGender()
 	{
-		return "性別";
+		return "æ€§åˆ¥";
 	}
 
 	protected override string _GetTemplateForLabelGooglePlus()
 	{
-		return "Google+：";
+		return "Google+ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelLightTheme()
 	{
-		return "燈光";
+		return "ç‡ˆå…‰";
 	}
 
 	protected override string _GetTemplateForLabelLocaleTitle()
 	{
-		return "語言";
+		return "èªžè¨€";
 	}
 
 	/// <summary>
@@ -3694,97 +3694,97 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelMembershipName(string startSpan, string endSpan)
 	{
-		return $"{startSpan}Builders Club{endSpan} 會員資格";
+		return $"{startSpan}Builders Club{endSpan} æœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelMembershipName()
 	{
-		return "{startSpan}Builders Club{endSpan} 會員資格";
+		return "{startSpan}Builders Club{endSpan} æœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusRobloxPremium()
 	{
-		return "您還不是會員，現在加入 Roblox Premium！";
+		return "æ‚¨é‚„ä¸æ˜¯æœƒå“¡ï¼Œç¾åœ¨åŠ å…¥ Roblox Premiumï¼";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsAddedToPrivateServer()
 	{
-		return "有人邀請我加入 VIP 伺服器";
+		return "æœ‰äººé‚€è«‹æˆ‘åŠ å…¥ VIP ä¼ºæœå™¨";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsChat()
 	{
-		return "有人與我聊天";
+		return "æœ‰äººèˆ‡æˆ‘èŠå¤©";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsConversationUniverseChanged()
 	{
-		return "有人置頂新遊戲一起玩";
+		return "æœ‰äººç½®é ‚æ–°éŠæˆ²ä¸€èµ·çŽ©";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsDeveloperMetricsAvailable()
 	{
-		return "有新的分析報告";
+		return "æœ‰æ–°çš„åˆ†æžå ±å‘Š";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsFriendRequestAccepted()
 	{
-		return "有人接受我的好友邀請";
+		return "æœ‰äººæŽ¥å—æˆ‘çš„å¥½å‹é‚€è«‹";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsFriendRequestReceived()
 	{
-		return "我收到一則好友邀請";
+		return "æˆ‘æ”¶åˆ°ä¸€å‰‡å¥½å‹é‚€è«‹";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsGameUpdate()
 	{
-		return "我收到遊戲更新通知";
+		return "æˆ‘æ”¶åˆ°éŠæˆ²æ›´æ–°é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsPartyInvited()
 	{
-		return "有人邀請我加入隊伍";
+		return "æœ‰äººé‚€è«‹æˆ‘åŠ å…¥éšŠä¼";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsPartyJoined()
 	{
-		return "有人加入我目前的隊伍";
+		return "æœ‰äººåŠ å…¥æˆ‘ç›®å‰çš„éšŠä¼";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsPrivateMessage()
 	{
-		return "我收到私人訊息";
+		return "æˆ‘æ”¶åˆ°ç§äººè¨Šæ¯";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsTeamCreateInvite()
 	{
-		return "有人邀請我編輯遊戲";
+		return "æœ‰äººé‚€è«‹æˆ‘ç·¨è¼¯éŠæˆ²";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "密碼：";
+		return "å¯†ç¢¼ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelPhone()
 	{
-		return "手機號碼：";
+		return "æ‰‹æ©Ÿè™Ÿç¢¼ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelPinTimeMins()
 	{
-		return "分";
+		return "åˆ†";
 	}
 
 	protected override string _GetTemplateForLabelPinTimeRemaining()
 	{
-		return "剩餘時間";
+		return "å‰©é¤˜æ™‚é–“";
 	}
 
 	protected override string _GetTemplateForLabelPinTimeSecs()
 	{
-		return "秒";
+		return "ç§’";
 	}
 
 	/// <summary>
@@ -3803,17 +3803,17 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelPreviousUsernames()
 	{
-		return "之前的使用者名稱：";
+		return "ä¹‹å‰çš„ä½¿ç”¨è€…åç¨±ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelPrivacyMode()
 	{
-		return "隱私模式";
+		return "éš±ç§æ¨¡å¼";
 	}
 
 	protected override string _GetTemplateForLabelRenevalDate()
 	{
-		return "續訂日期";
+		return "çºŒè¨‚æ—¥æœŸ";
 	}
 
 	/// <summary>
@@ -3822,12 +3822,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelRenevalDateMessage(string startSpan, string expirationDate, string endSpan)
 	{
-		return $"於 {startSpan}{expirationDate}{endSpan} 自動續訂。";
+		return $"æ–¼ {startSpan}{expirationDate}{endSpan} è‡ªå‹•çºŒè¨‚ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelRenevalDateMessage()
 	{
-		return "於 {startSpan}{expirationDate}{endSpan} 自動續訂。";
+		return "æ–¼ {startSpan}{expirationDate}{endSpan} è‡ªå‹•çºŒè¨‚ã€‚";
 	}
 
 	/// <summary>
@@ -3861,12 +3861,12 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelSignOutAllSessions()
 	{
-		return "登出其它在線作業";
+		return "ç™»å‡ºå…¶å®ƒåœ¨ç·šä½œæ¥­";
 	}
 
 	protected override string _GetTemplateForLabelSocialLinksVisibility()
 	{
-		return "開放顯示對象：";
+		return "é–‹æ”¾é¡¯ç¤ºå°è±¡ï¼š";
 	}
 
 	/// <summary>
@@ -3875,601 +3875,604 @@ internal class AccountSettingsResources_zh_tw : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelSocialUsername(string socialUsername)
 	{
-		return $"以 {socialUsername} 連線";
+		return $"ä»¥ {socialUsername} é€£ç·š";
 	}
 
 	protected override string _GetTemplateForLabelSocialUsername()
 	{
-		return "以 {socialUsername} 連線";
+		return "ä»¥ {socialUsername} é€£ç·š";
 	}
 
 	protected override string _GetTemplateForLabelThemeTitle()
 	{
-		return "主題";
+		return "ä¸»é¡Œ";
 	}
 
 	protected override string _GetTemplateForLabelToolTipContactSettings()
 	{
-		return "自訂：控制您自己的設定。預設 ：啟用好友聊天與訊息。關閉：停用聊天與訊息。";
+		return "è‡ªè¨‚ï¼šæŽ§åˆ¶æ‚¨è‡ªå·±çš„è¨­å®šã€‚é è¨­ ï¼šå•Ÿç”¨å¥½å‹èŠå¤©èˆ‡è¨Šæ¯ã€‚é—œé–‰ï¼šåœç”¨èŠå¤©èˆ‡è¨Šæ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipPinLocked()
 	{
-		return "所有設定已鎖定。若要編輯，請輸入 PIN 解鎖";
+		return "æ‰€æœ‰è¨­å®šå·²éŽ–å®šã€‚è‹¥è¦ç·¨è¼¯ï¼Œè«‹è¼¸å…¥ PIN è§£éŽ–";
 	}
 
 	protected override string _GetTemplateForLabelToolTipPinUnlocked()
 	{
-		return "按下鎖定您的設定頁面";
+		return "æŒ‰ä¸‹éŽ–å®šæ‚¨çš„è¨­å®šé é¢";
 	}
 
 	protected override string _GetTemplateForLabelToolTipPrivacyMode()
 	{
-		return "按下此處取得更多資訊";
+		return "æŒ‰ä¸‹æ­¤è™•å–å¾—æ›´å¤šè³‡è¨Š";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanChatInApp()
 	{
-		return "此設定控制此使用者可以在 App 及網頁中的聊天對象（但無法控制遊戲中的聊天對象）。此設定也禁止此使用者在論壇和群組留言板上貼文。";
+		return "æ­¤è¨­å®šæŽ§åˆ¶æ­¤ä½¿ç”¨è€…å¯ä»¥åœ¨ App åŠç¶²é ä¸­çš„èŠå¤©å°è±¡ï¼ˆä½†ç„¡æ³•æŽ§åˆ¶éŠæˆ²ä¸­çš„èŠå¤©å°è±¡ï¼‰ã€‚æ­¤è¨­å®šä¹Ÿç¦æ­¢æ­¤ä½¿ç”¨è€…åœ¨è«–å£‡å’Œç¾¤çµ„ç•™è¨€æ¿ä¸Šè²¼æ–‡ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanChatInGame()
 	{
-		return "此設定控制此使用者可以在遊戲中聊天的對象。";
+		return "æ­¤è¨­å®šæŽ§åˆ¶æ­¤ä½¿ç”¨è€…å¯ä»¥åœ¨éŠæˆ²ä¸­èŠå¤©çš„å°è±¡ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanFindMeByPhone()
 	{
-		return "此設定控制誰可以使用您提供的手機號碼找到您。";
+		return "æ­¤è¨­å®šæŽ§åˆ¶èª°å¯ä»¥ä½¿ç”¨æ‚¨æä¾›çš„æ‰‹æ©Ÿè™Ÿç¢¼æ‰¾åˆ°æ‚¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanInviteVIP()
 	{
-		return "此設定控制誰可以在 VIP 伺服器中加入這位使用者；VIP 伺服器是只可以透過伺服器主人邀請加入的伺服器。";
+		return "æ­¤è¨­å®šæŽ§åˆ¶èª°å¯ä»¥åœ¨ VIP ä¼ºæœå™¨ä¸­åŠ å…¥é€™ä½ä½¿ç”¨è€…ï¼›VIP ä¼ºæœå™¨æ˜¯åªå¯ä»¥é€éŽä¼ºæœå™¨ä¸»äººé‚€è«‹åŠ å…¥çš„ä¼ºæœå™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanJoinGame()
 	{
-		return "此設定控制誰可以看到我在玩的遊戲，並加入我的伺服器。若選擇「沒有人」，將不會有人跟隨我加入我的伺服器，但我仍會和其他使用者玩遊戲。";
+		return "æ­¤è¨­å®šæŽ§åˆ¶èª°å¯ä»¥çœ‹åˆ°æˆ‘åœ¨çŽ©çš„éŠæˆ²ï¼Œä¸¦åŠ å…¥æˆ‘çš„ä¼ºæœå™¨ã€‚è‹¥é¸æ“‡ã€Œæ²’æœ‰äººã€ï¼Œå°‡ä¸æœƒæœ‰äººè·Ÿéš¨æˆ‘åŠ å…¥æˆ‘çš„ä¼ºæœå™¨ï¼Œä½†æˆ‘ä»æœƒå’Œå…¶ä»–ä½¿ç”¨è€…çŽ©éŠæˆ²ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanMessageMe()
 	{
-		return "此設定控制此使用者可以從哪些使用者收到訊息。";
+		return "æ­¤è¨­å®šæŽ§åˆ¶æ­¤ä½¿ç”¨è€…å¯ä»¥å¾žå“ªäº›ä½¿ç”¨è€…æ”¶åˆ°è¨Šæ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanSeeInventory()
 	{
-		return "此設定控制誰可以看到您的道具欄。";
+		return "æ­¤è¨­å®šæŽ§åˆ¶èª°å¯ä»¥çœ‹åˆ°æ‚¨çš„é“å…·æ¬„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelTradeFilter()
 	{
-		return "交易品質篩選器";
+		return "äº¤æ˜“å“è³ªç¯©é¸å™¨";
 	}
 
 	protected override string _GetTemplateForLabelTwitch()
 	{
-		return "Twitch：";
+		return "Twitchï¼š";
 	}
 
 	protected override string _GetTemplateForLabelTwitter()
 	{
-		return "Twitter：";
+		return "Twitterï¼š";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepEmail()
 	{
-		return "啟用雙步驟驗證";
+		return "å•Ÿç”¨é›™æ­¥é©Ÿé©—è­‰";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepPrerequisite()
 	{
-		return "需要已驗證的電子郵件地址。";
+		return "éœ€è¦å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "進一步保護您的帳號。當您從新裝置登入時，您將需要輸入驗證碼。";
+		return "é€²ä¸€æ­¥ä¿è­·æ‚¨çš„å¸³è™Ÿã€‚ç•¶æ‚¨å¾žæ–°è£ç½®ç™»å…¥æ™‚ï¼Œæ‚¨å°‡éœ€è¦è¼¸å…¥é©—è­‰ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerificationEnabled()
 	{
-		return "您的帳號已受保護！";
+		return "æ‚¨çš„å¸³è™Ÿå·²å—ä¿è­·ï¼";
 	}
 
 	protected override string _GetTemplateForLabelUpdateEmail()
 	{
-		return "更新電子郵件地址";
+		return "æ›´æ–°é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelUpdatePhone()
 	{
-		return "更新手機號碼";
+		return "æ›´æ–°æ‰‹æ©Ÿè™Ÿç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelUseDeviceLanguage()
 	{
-		return "使用裝置語言";
+		return "ä½¿ç”¨è£ç½®èªžè¨€";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "使用者名稱：";
+		return "ä½¿ç”¨è€…åç¨±ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelVerified()
 	{
-		return "已驗證";
+		return "å·²é©—è­‰";
 	}
 
 	protected override string _GetTemplateForLabelVerify()
 	{
-		return "驗證";
+		return "é©—è­‰";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanChatInApp()
 	{
-		return "誰可以在 App 與我聊天？";
+		return "èª°å¯ä»¥åœ¨ App èˆ‡æˆ‘èŠå¤©ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanChatInGame()
 	{
-		return "誰可以與我聊天？";
+		return "èª°å¯ä»¥èˆ‡æˆ‘èŠå¤©ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanFindMeByPhone()
 	{
-		return "誰可以透過我的手機號碼找到我？";
+		return "èª°å¯ä»¥é€éŽæˆ‘çš„æ‰‹æ©Ÿè™Ÿç¢¼æ‰¾åˆ°æˆ‘ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanInviteVIP()
 	{
-		return "誰可以邀請我到 VIP 伺服器？";
+		return "èª°å¯ä»¥é‚€è«‹æˆ‘åˆ° VIP ä¼ºæœå™¨ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanJoinGame()
 	{
-		return "誰可以加入我？";
+		return "èª°å¯ä»¥åŠ å…¥æˆ‘ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanMessageMe()
 	{
-		return "誰可以傳送訊息給我？";
+		return "èª°å¯ä»¥å‚³é€è¨Šæ¯çµ¦æˆ‘ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanSeeInventory()
 	{
-		return "誰可以看到我的道具欄？";
+		return "èª°å¯ä»¥çœ‹åˆ°æˆ‘çš„é“å…·æ¬„ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanTradeWithMe()
 	{
-		return "誰可以與我交易？";
+		return "èª°å¯ä»¥èˆ‡æˆ‘äº¤æ˜“ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelXboxConnected()
 	{
-		return "已連接 Xbox 帳號";
+		return "å·²é€£æŽ¥ Xbox å¸³è™Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelYouTube()
 	{
-		return "YouTube：";
+		return "YouTubeï¼š";
 	}
 
 	protected override string _GetTemplateForLabelInsufficientRobux()
 	{
-		return "Robux 不足";
+		return "Robux ä¸è¶³";
 	}
 
 	protected override string _GetTemplateForMessageErrorAccountHasPin()
 	{
-		return "此帳號已設置 PIN，請嘗試其他請求。";
+		return "æ­¤å¸³è™Ÿå·²è¨­ç½® PINï¼Œè«‹å˜—è©¦å…¶ä»–è«‹æ±‚ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorAccountLocked()
 	{
-		return "此帳號遭到封鎖，請在執行此動作前解鎖此帳號。";
+		return "æ­¤å¸³è™Ÿé­åˆ°å°éŽ–ï¼Œè«‹åœ¨åŸ·è¡Œæ­¤å‹•ä½œå‰è§£éŽ–æ­¤å¸³è™Ÿã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorDefault()
 	{
-		return "發生錯誤，請稍後再試。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailAlreadyVerified()
 	{
-		return "此電子郵件地址已驗證。";
+		return "æ­¤é›»å­éƒµä»¶åœ°å€å·²é©—è­‰ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailFeatureDisabled()
 	{
-		return "此功能目前停用，請稍後再試。";
+		return "æ­¤åŠŸèƒ½ç›®å‰åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailIncorrectPassword()
 	{
-		return "密碼不正確。";
+		return "å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailInvalidEmail()
 	{
-		return "電子郵件地址無效。";
+		return "é›»å­éƒµä»¶åœ°å€ç„¡æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailNoEmailAssociated()
 	{
-		return "此帳號沒有加入電子郵件地址。";
+		return "æ­¤å¸³è™Ÿæ²’æœ‰åŠ å…¥é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailPinLocked()
 	{
-		return "PIN 已鎖定。";
+		return "PIN å·²éŽ–å®šã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailSameEmail()
 	{
-		return "這已是目前的電子郵件地址。";
+		return "é€™å·²æ˜¯ç›®å‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailTooManyAccounts()
 	{
-		return "加入此電子郵件地址的帳號過多。";
+		return "åŠ å…¥æ­¤é›»å­éƒµä»¶åœ°å€çš„å¸³è™ŸéŽå¤šã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailTooManyUpdates()
 	{
-		return "更新電子郵件地址次數過多，請稍後再試。";
+		return "æ›´æ–°é›»å­éƒµä»¶åœ°å€æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailTooManyVerify()
 	{
-		return "傳送驗證電子郵件次數過多，請稍後再試。";
+		return "å‚³é€é©—è­‰é›»å­éƒµä»¶æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailUnknown()
 	{
-		return "發生未知錯誤。";
+		return "ç™¼ç”ŸæœªçŸ¥éŒ¯èª¤ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorIncorrectPin()
 	{
-		return "PIN 碼錯誤。";
+		return "PIN ç¢¼éŒ¯èª¤ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorInvalidPinFormat()
 	{
-		return "PIN 格式無效。";
+		return "PIN æ ¼å¼ç„¡æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorNoPin()
 	{
-		return "帳號沒有 PIN。";
+		return "å¸³è™Ÿæ²’æœ‰ PINã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorNoVerifiedEmail()
 	{
-		return "此帳號沒有已驗證的電子郵件地址。";
+		return "æ­¤å¸³è™Ÿæ²’æœ‰å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorSystem()
 	{
-		return "系統錯誤。";
+		return "ç³»çµ±éŒ¯èª¤ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorTooManyRequests()
 	{
-		return "請求次數過多，請稍後再試。";
+		return "è«‹æ±‚æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEmailAddSuccess()
 	{
-		return "已新增電子郵件地址";
+		return "å·²æ–°å¢žé›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForMessageEmailAlreadyVerifiedError()
 	{
-		return "您的電子郵件地址已驗證！";
+		return "æ‚¨çš„é›»å­éƒµä»¶åœ°å€å·²é©—è­‰ï¼";
 	}
 
 	protected override string _GetTemplateForMessageFeatureDisabledError()
 	{
-		return "此功能目前停用，請稍後再試。";
+		return "æ­¤åŠŸèƒ½ç›®å‰åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientRobuxErrorForUserName()
 	{
-		return "您的 Robux 不足，無法變更使用者名稱。";
+		return "æ‚¨çš„ Robux ä¸è¶³ï¼Œç„¡æ³•è®Šæ›´ä½¿ç”¨è€…åç¨±ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidEmail()
 	{
-		return "電子郵件地址無效";
+		return "é›»å­éƒµä»¶åœ°å€ç„¡æ•ˆ";
 	}
 
 	protected override string _GetTemplateForMessageNoEmailAssociatedError()
 	{
-		return "您必須在此帳號新增電子郵件地址";
+		return "æ‚¨å¿…é ˆåœ¨æ­¤å¸³è™Ÿæ–°å¢žé›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
-		return "您的 Robux 不足，無法變更使用者名稱。";
+		return "æ‚¨çš„ Robux ä¸è¶³ï¼Œç„¡æ³•è®Šæ›´ä½¿ç”¨è€…åç¨±ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePinLockedError()
 	{
-		return "PIN 已鎖定。";
+		return "PIN å·²éŽ–å®šã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSameEmailError()
 	{
-		return "這已是目前已驗證的電子郵件地址。";
+		return "é€™å·²æ˜¯ç›®å‰å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSettingsUpdateSuccess()
 	{
-		return "您的設定已更新。";
+		return "æ‚¨çš„è¨­å®šå·²æ›´æ–°ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAccountsOnEmailError()
 	{
-		return "加入此電子郵件地址的帳號過多。";
+		return "åŠ å…¥æ­¤é›»å­éƒµä»¶åœ°å€çš„å¸³è™ŸéŽå¤šã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAttemptsError()
 	{
-		return "嘗試次數過多，請稍後再試。";
+		return "å˜—è©¦æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "發生未知錯誤。";
+		return "ç™¼ç”ŸæœªçŸ¥éŒ¯èª¤ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageWrongPassword()
 	{
-		return "您的密碼不正確。";
+		return "æ‚¨çš„å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
 	}
 
 	protected override string _GetTemplateForResponesInvalidCodePhone()
 	{
-		return "驗證碼無效，請檢查您的手機後重新嘗試。";
+		return "é©—è­‰ç¢¼ç„¡æ•ˆï¼Œè«‹æª¢æŸ¥æ‚¨çš„æ‰‹æ©Ÿå¾Œé‡æ–°å˜—è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponesInventoryAndTradePrivacyConflictError()
 	{
-		return "「誰可以與我交易」的值應在「誰可以看到我的道具欄」的值以下。";
+		return "ã€Œèª°å¯ä»¥èˆ‡æˆ‘äº¤æ˜“ã€çš„å€¼æ‡‰åœ¨ã€Œèª°å¯ä»¥çœ‹åˆ°æˆ‘çš„é“å…·æ¬„ã€çš„å€¼ä»¥ä¸‹ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseCodeRequired()
 	{
-		return "需要驗證碼，請輸入您的驗證碼。";
+		return "éœ€è¦é©—è­‰ç¢¼ï¼Œè«‹è¼¸å…¥æ‚¨çš„é©—è­‰ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangeDefaultWarning()
 	{
-		return "若變更生日為 13 歲以下，之後將無法還原。確定？";
+		return "è‹¥è®Šæ›´ç”Ÿæ—¥ç‚º 13 æ­²ä»¥ä¸‹ï¼Œä¹‹å¾Œå°‡ç„¡æ³•é‚„åŽŸã€‚ç¢ºå®šï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangePasswordBody()
 	{
-		return "若要變更生日，請先新增 Roblox 帳號密碼。";
+		return "è‹¥è¦è®Šæ›´ç”Ÿæ—¥ï¼Œè«‹å…ˆæ–°å¢ž Roblox å¸³è™Ÿå¯†ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangePasswordTitle()
 	{
-		return "必須新增密碼";
+		return "å¿…é ˆæ–°å¢žå¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangeSocialWarning()
 	{
-		return "若變更生日為 13 歲以下，之後將無法還原。您的 Facebook 社交登入將會被停用，之後必須使用 Roblox 密碼登入。";
+		return "è‹¥è®Šæ›´ç”Ÿæ—¥ç‚º 13 æ­²ä»¥ä¸‹ï¼Œä¹‹å¾Œå°‡ç„¡æ³•é‚„åŽŸã€‚æ‚¨çš„ Facebook ç¤¾äº¤ç™»å…¥å°‡æœƒè¢«åœç”¨ï¼Œä¹‹å¾Œå¿…é ˆä½¿ç”¨ Roblox å¯†ç¢¼ç™»å…¥ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordIncorrectPassword()
 	{
-		return "您目前的密碼不正確，密碼並未變更。";
+		return "æ‚¨ç›®å‰çš„å¯†ç¢¼ä¸æ­£ç¢ºï¼Œå¯†ç¢¼ä¸¦æœªè®Šæ›´ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordNoMatch()
 	{
-		return "密碼不相符";
+		return "å¯†ç¢¼ä¸ç›¸ç¬¦";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordTooShortError()
 	{
-		return "需要 8 個字元以上";
+		return "éœ€è¦ 8 å€‹å­—å…ƒä»¥ä¸Š";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameNoInput()
 	{
-		return "請輸入使用者名稱。";
+		return "è«‹è¼¸å…¥ä½¿ç”¨è€…åç¨±ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameNotAllowed()
 	{
-		return "此使用者名稱含有不當內容。";
+		return "æ­¤ä½¿ç”¨è€…åç¨±å«æœ‰ä¸ç•¶å…§å®¹ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameNotAvailable()
 	{
-		return "此使用者名稱已被使用。";
+		return "æ­¤ä½¿ç”¨è€…åç¨±å·²è¢«ä½¿ç”¨ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameSuccess()
 	{
-		return "已成功變更使用者名稱。";
+		return "å·²æˆåŠŸè®Šæ›´ä½¿ç”¨è€…åç¨±ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogCountryListError()
 	{
-		return "載入國家清單時發生錯誤";
+		return "è¼‰å…¥åœ‹å®¶æ¸…å–®æ™‚ç™¼ç”ŸéŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForResponseDialogCurrencyServiceError()
 	{
-		return "貨幣服務發生錯誤，請稍後再試。";
+		return "è²¨å¹£æœå‹™ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogDefaultErrorMessage()
 	{
-		return "發生錯誤，請稍後再試。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogDefaultErrorTitle()
 	{
-		return "發生錯誤";
+		return "ç™¼ç”ŸéŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForResponseDialogDefaultSuccessMessage()
 	{
-		return "已成功儲存！";
+		return "å·²æˆåŠŸå„²å­˜ï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogDisconnectXBoxError()
 	{
-		return "解除您的 Xbox 帳號連接時發生錯誤，請稍後再試。";
+		return "è§£é™¤æ‚¨çš„ Xbox å¸³è™Ÿé€£æŽ¥æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogEmailSentForVerification()
 	{
-		return "已傳送驗證電子郵件。";
+		return "å·²å‚³é€é©—è­‰é›»å­éƒµä»¶ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidEmailAddress()
 	{
-		return "電子郵件地址無效";
+		return "é›»å­éƒµä»¶åœ°å€ç„¡æ•ˆ";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidPhoneNumber()
 	{
-		return "手機號碼無效";
+		return "æ‰‹æ©Ÿè™Ÿç¢¼ç„¡æ•ˆ";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidUsername()
 	{
-		return "按下「傳送」提交聯絡單，或按下「取消」編輯使用者名稱。提供正確的使用者名稱可以讓我們更快解決您的問題。";
+		return "æŒ‰ä¸‹ã€Œå‚³é€ã€æäº¤è¯çµ¡å–®ï¼Œæˆ–æŒ‰ä¸‹ã€Œå–æ¶ˆã€ç·¨è¼¯ä½¿ç”¨è€…åç¨±ã€‚æä¾›æ­£ç¢ºçš„ä½¿ç”¨è€…åç¨±å¯ä»¥è®“æˆ‘å€‘æ›´å¿«è§£æ±ºæ‚¨çš„å•é¡Œã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPasswordRulesError()
 	{
-		return "密碼需要 8 個字元以上，其中應含有 2 個數字、4 個字母及 1 個符號。";
+		return "å¯†ç¢¼éœ€è¦ 8 å€‹å­—å…ƒä»¥ä¸Šï¼Œå…¶ä¸­æ‡‰å«æœ‰ 2 å€‹æ•¸å­—ã€4 å€‹å­—æ¯åŠ 1 å€‹ç¬¦è™Ÿã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPinCreateConfirmation()
 	{
-		return "您的 PIN 已成功設定。往後進入設定頁面之前，您將需要輸入此 PIN。";
+		return "æ‚¨çš„ PIN å·²æˆåŠŸè¨­å®šã€‚å¾€å¾Œé€²å…¥è¨­å®šé é¢ä¹‹å‰ï¼Œæ‚¨å°‡éœ€è¦è¼¸å…¥æ­¤ PINã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPinCreateMismatch()
 	{
-		return "PIN 不相符";
+		return "PIN ä¸ç›¸ç¬¦";
 	}
 
 	protected override string _GetTemplateForResponseDialogSignoutSessionFailed()
 	{
-		return "登出其它在線作業時發生錯誤，請稍後再試。";
+		return "ç™»å‡ºå…¶å®ƒåœ¨ç·šä½œæ¥­æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogSignoutSessionsConfirmation()
 	{
-		return "您已登出其它在線作業。";
+		return "æ‚¨å·²ç™»å‡ºå…¶å®ƒåœ¨ç·šä½œæ¥­ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogTwoStepDisableWarning()
 	{
-		return "若您關閉雙步驟驗證，您使用新裝置登入時將只需輸入密碼。確定？";
+		return "è‹¥æ‚¨é—œé–‰é›™æ­¥é©Ÿé©—è­‰ï¼Œæ‚¨ä½¿ç”¨æ–°è£ç½®ç™»å…¥æ™‚å°‡åªéœ€è¼¸å…¥å¯†ç¢¼ã€‚ç¢ºå®šï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForResponseDialogTwoStepSuccessTitle()
 	{
-		return "雙步驟驗證已啟用";
+		return "é›™æ­¥é©Ÿé©—è­‰å·²å•Ÿç”¨";
 	}
 
 	protected override string _GetTemplateForResponseDialogTwoStepSucessBody()
 	{
-		return "您的帳號已受到保護，目前不需進行其他動作。您下一次從新裝置登入時，我們將會送出安全碼。";
+		return "æ‚¨çš„å¸³è™Ÿå·²å—åˆ°ä¿è­·ï¼Œç›®å‰ä¸éœ€é€²è¡Œå…¶ä»–å‹•ä½œã€‚æ‚¨ä¸‹ä¸€æ¬¡å¾žæ–°è£ç½®ç™»å…¥æ™‚ï¼Œæˆ‘å€‘å°‡æœƒé€å‡ºå®‰å…¨ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateInventorySetting()
 	{
-		return "我們已更新您的道具欄隱私權設定；道具欄設定必須和交易設定一致。";
+		return "æˆ‘å€‘å·²æ›´æ–°æ‚¨çš„é“å…·æ¬„éš±ç§æ¬Šè¨­å®šï¼›é“å…·æ¬„è¨­å®šå¿…é ˆå’Œäº¤æ˜“è¨­å®šä¸€è‡´ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateNotificationSettingsError()
 	{
-		return "更新您的通知設定時發生錯誤，請稍後再試。";
+		return "æ›´æ–°æ‚¨çš„é€šçŸ¥è¨­å®šæ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateTradeSetting()
 	{
-		return "我們已更新您的交易隱私權設定；交易設定必須和道具欄設定一致。";
+		return "æˆ‘å€‘å·²æ›´æ–°æ‚¨çš„äº¤æ˜“éš±ç§æ¬Šè¨­å®šï¼›äº¤æ˜“è¨­å®šå¿…é ˆå’Œé“å…·æ¬„è¨­å®šä¸€è‡´ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogVerifyPhoneInvalidCode()
 	{
-		return "驗證碼無效，請檢查您的手機後重新嘗試。";
+		return "é©—è­‰ç¢¼ç„¡æ•ˆï¼Œè«‹æª¢æŸ¥æ‚¨çš„æ‰‹æ©Ÿå¾Œé‡æ–°å˜—è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogWarning()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	protected override string _GetTemplateForResponseFeatureDisabled()
 	{
-		return "此功能目前停用，請稍後再試。";
+		return "æ­¤åŠŸèƒ½ç›®å‰åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "發生錯誤，請重新嘗試。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹é‡æ–°å˜—è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectCodeTooManyTimes()
 	{
-		return "您輸入錯誤驗證碼的次數過多。";
+		return "æ‚¨è¼¸å…¥éŒ¯èª¤é©—è­‰ç¢¼çš„æ¬¡æ•¸éŽå¤šã€‚";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectPasswordTryAgain()
 	{
-		return "密碼不正確，請檢查您的密碼後重新嘗試。";
+		return "å¯†ç¢¼ä¸æ­£ç¢ºï¼Œè«‹æª¢æŸ¥æ‚¨çš„å¯†ç¢¼å¾Œé‡æ–°å˜—è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseInvalidPhoneTryAgain()
 	{
-		return "手機號碼格式無效，請檢查之後重新嘗試。";
+		return "æ‰‹æ©Ÿè™Ÿç¢¼æ ¼å¼ç„¡æ•ˆï¼Œè«‹æª¢æŸ¥ä¹‹å¾Œé‡æ–°å˜—è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseNotificationBarPhoneRemovedConfirmation()
 	{
-		return "手機號碼已移除";
+		return "æ‰‹æ©Ÿè™Ÿç¢¼å·²ç§»é™¤";
 	}
 
 	protected override string _GetTemplateForResponseNotificationBarPhoneVerifyConfirmation()
 	{
-		return "手機號碼已成功更新！";
+		return "æ‰‹æ©Ÿè™Ÿç¢¼å·²æˆåŠŸæ›´æ–°ï¼";
 	}
 
 	protected override string _GetTemplateForResponseNumberAlreadyAssociated()
 	{
-		return "已有帳號加入此手機號碼。";
+		return "å·²æœ‰å¸³è™ŸåŠ å…¥æ­¤æ‰‹æ©Ÿè™Ÿç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForResponsePinRequired()
 	{
-		return "若要變更您的設定，請先輸入 PIN。";
+		return "è‹¥è¦è®Šæ›´æ‚¨çš„è¨­å®šï¼Œè«‹å…ˆè¼¸å…¥ PINã€‚";
 	}
 
 	protected override string _GetTemplateForResponseSocialMediaValidationError()
 	{
-		return "此社交網路連結無效。";
+		return "æ­¤ç¤¾äº¤ç¶²è·¯é€£çµç„¡æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForResponseAgeDownError()
 	{
-		return "對不起，您不可以將年齡改為 13 歲以下。若您未滿 13 歲，請建立一個新帳號，並聯絡客服人員刪除您的舊帳號。";
+		return "å°ä¸èµ·ï¼Œæ‚¨ä¸å¯ä»¥å°‡å¹´é½¡æ”¹ç‚º 13 æ­²ä»¥ä¸‹ã€‚è‹¥æ‚¨æœªæ»¿ 13 æ­²ï¼Œè«‹å»ºç«‹ä¸€å€‹æ–°å¸³è™Ÿï¼Œä¸¦è¯çµ¡å®¢æœäººå“¡åˆªé™¤æ‚¨çš„èˆŠå¸³è™Ÿã€‚";
 	}
+}
+
+
 }

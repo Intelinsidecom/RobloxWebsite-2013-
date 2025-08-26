@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderationpublic {
+    interface IExternallyAuthorizedPrincipal<TId>
 
-public interface IExternallyAuthorizedPrincipal<TId>
 {
 	/// <summary>
 	/// The approved external service that authorized the action for the principal
@@ -19,4 +19,7 @@ public interface IExternallyAuthorizedPrincipal<TId>
 	/// The operation that the external authorizing party has authorized the principal to perform
 	/// </summary>
 	ExternallyAuthorizedOperation ExternallyAuthorizedOperation { get; }
+}
+
+
 }

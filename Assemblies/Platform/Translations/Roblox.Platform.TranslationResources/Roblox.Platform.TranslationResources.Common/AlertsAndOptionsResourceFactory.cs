@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class AlertsAndOptionsResourceFactory
 
-internal static class AlertsAndOptionsResourceFactory
 {
 	public const string FullNamespace = "Common.AlertsAndOptions";
 
@@ -27,4 +27,7 @@ internal static class AlertsAndOptionsResourceFactory
 			_ => new AlertsAndOptionsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

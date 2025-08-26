@@ -1,8 +1,7 @@
-using Roblox.Entities;
+﻿using Roblox.Entities;
+namespace Roblox.Platform.PremiumFeatures.Interfaces.Entities {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Interfaces.Entities;
-
-/// <summary>
 /// An interface for the <see cref="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity" />
 /// </summary>
 public interface IRobuxStipendFrequencyTypeEntity : IUpdateableEntity<byte>, IEntity<byte>
@@ -11,4 +10,7 @@ public interface IRobuxStipendFrequencyTypeEntity : IUpdateableEntity<byte>, IEn
 	/// The value of the <see cref="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity" />
 	/// </summary>
 	string Value { get; set; }
+}
+
+
 }

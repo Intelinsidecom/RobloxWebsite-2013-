@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GroupsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,1403 +10,1403 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Action.AdvertiseGroup"
 	/// English String: "Advertise Group"
 	/// </summary>
-	public override string ActionAdvertiseGroup => "宣传群组";
+	public override string ActionAdvertiseGroup => "å®£ä¼ ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Action.AuditLog"
 	/// English String: "Audit Log"
 	/// </summary>
-	public override string ActionAuditLog => "管理记录";
+	public override string ActionAuditLog => "ç®¡ç†è®°å½•";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.CancelRequest"
 	/// English String: "Cancel Request"
 	/// </summary>
-	public override string ActionCancelRequest => "取消请求";
+	public override string ActionCancelRequest => "å–æ¶ˆè¯·æ±‚";
 
 	/// <summary>
 	/// Key: "Action.ClaimOwnership"
 	/// English String: "Claim Ownership"
 	/// </summary>
-	public override string ActionClaimOwnership => "成为群主";
+	public override string ActionClaimOwnership => "æˆä¸ºç¾¤ä¸»";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "关闭";
+	public override string ActionClose => "å…³é—­";
 
 	/// <summary>
 	/// Key: "Action.ConfigureGroup"
 	/// English String: "Configure Group"
 	/// </summary>
-	public override string ActionConfigureGroup => "配置群组";
+	public override string ActionConfigureGroup => "é…ç½®ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Action.CreateGroup"
 	/// English String: "Create Group"
 	/// </summary>
-	public override string ActionCreateGroup => "创建群组";
+	public override string ActionCreateGroup => "åˆ›å»ºç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "删除";
+	public override string ActionDelete => "åˆ é™¤";
 
 	/// <summary>
 	/// Key: "Action.Exile"
 	/// English String: "Exile"
 	/// </summary>
-	public override string ActionExile => "驱逐";
+	public override string ActionExile => "é©±é€";
 
 	/// <summary>
 	/// Key: "Action.ExileUser"
 	/// English String: "Exile User"
 	/// </summary>
-	public override string ActionExileUser => "驱逐用户";
+	public override string ActionExileUser => "é©±é€ç”¨æˆ·";
 
 	/// <summary>
 	/// Key: "Action.GroupAdmin"
 	/// English String: "Group Admin"
 	/// </summary>
-	public override string ActionGroupAdmin => "群组管理员";
+	public override string ActionGroupAdmin => "ç¾¤ç»„ç®¡ç†å‘˜";
 
 	/// <summary>
 	/// Key: "Action.GroupShout"
 	/// Text on the button for sending / posting a group shout
 	/// English String: "Group Shout"
 	/// </summary>
-	public override string ActionGroupShout => "群组广播";
+	public override string ActionGroupShout => "ç¾¤ç»„å¹¿æ’­";
 
 	/// <summary>
 	/// Key: "Action.JoinGroup"
 	/// English String: "Join Group"
 	/// </summary>
-	public override string ActionJoinGroup => "加入群组";
+	public override string ActionJoinGroup => "åŠ å…¥ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Action.LeaveGroup"
 	/// English String: "Leave Group"
 	/// </summary>
-	public override string ActionLeaveGroup => "离开群组";
+	public override string ActionLeaveGroup => "ç¦»å¼€ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Action.MakePrimary"
 	/// English String: "Make Primary"
 	/// </summary>
-	public override string ActionMakePrimary => "设为主要群组";
+	public override string ActionMakePrimary => "è®¾ä¸ºä¸»è¦ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Action.MakePrimaryGroup"
 	/// Set the current group as the users primary group
 	/// English String: "Make Primary Group"
 	/// </summary>
-	public override string ActionMakePrimaryGroup => "设为主要群组";
+	public override string ActionMakePrimaryGroup => "è®¾ä¸ºä¸»è¦ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Action.Post"
 	/// English String: "Post"
 	/// </summary>
-	public override string ActionPost => "发布";
+	public override string ActionPost => "å‘å¸ƒ";
 
 	/// <summary>
 	/// Key: "Action.Purchase"
 	/// English String: "Purchase"
 	/// </summary>
-	public override string ActionPurchase => "购买";
+	public override string ActionPurchase => "è´­ä¹°";
 
 	/// <summary>
 	/// Key: "Action.RemovePrimary"
 	/// English String: "Remove Primary"
 	/// </summary>
-	public override string ActionRemovePrimary => "移除主要群组";
+	public override string ActionRemovePrimary => "ç§»é™¤ä¸»è¦ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Action.Report"
 	/// English String: "Report"
 	/// </summary>
-	public override string ActionReport => "举报";
+	public override string ActionReport => "ä¸¾æŠ¥";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "报告滥用行为";
+	public override string ActionReportAbuse => "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
 
 	/// <summary>
 	/// Key: "Action.Upgrade"
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string ActionUpgrade => "升级";
+	public override string ActionUpgrade => "å‡çº§";
 
 	/// <summary>
 	/// Key: "Action.UpgradeToJoin"
 	/// English String: "Upgrade to Join"
 	/// </summary>
-	public override string ActionUpgradeToJoin => "升级后即可加入";
+	public override string ActionUpgradeToJoin => "å‡çº§åŽå³å¯åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "是";
+	public override string ActionYes => "æ˜¯";
 
 	/// <summary>
 	/// Key: "Description.ClothingRevenue"
 	/// English String: "Groups have the ability to create and sell official shirts, pants, and t-shirts! All revenue goes to group funds."
 	/// </summary>
-	public override string DescriptionClothingRevenue => "群组可创作并发售官方版衬衫，裤子及 T 恤，所有收入将作为资金归入群组。";
+	public override string DescriptionClothingRevenue => "ç¾¤ç»„å¯åˆ›ä½œå¹¶å‘å”®å®˜æ–¹ç‰ˆè¡¬è¡«ï¼Œè£¤å­åŠ T æ¤ï¼Œæ‰€æœ‰æ”¶å…¥å°†ä½œä¸ºèµ„é‡‘å½’å…¥ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.DeleteAllPostsByUser"
 	/// English String: "Also delete all posts by this user."
 	/// </summary>
-	public override string DescriptionDeleteAllPostsByUser => "同时删除此用户的所有帖子。";
+	public override string DescriptionDeleteAllPostsByUser => "åŒæ—¶åˆ é™¤æ­¤ç”¨æˆ·çš„æ‰€æœ‰å¸–å­ã€‚";
 
 	/// <summary>
 	/// Key: "Description.ExileUserWarning"
 	/// English String: "Are you sure you want to exile this user?"
 	/// </summary>
-	public override string DescriptionExileUserWarning => "是否确定要驱逐此用户？";
+	public override string DescriptionExileUserWarning => "æ˜¯å¦ç¡®å®šè¦é©±é€æ­¤ç”¨æˆ·ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.LeaveGroupAsOwnerWarning"
 	/// English String: "This will leave the group ownerless."
 	/// </summary>
-	public override string DescriptionLeaveGroupAsOwnerWarning => "此群组将会没有群主。";
+	public override string DescriptionLeaveGroupAsOwnerWarning => "æ­¤ç¾¤ç»„å°†ä¼šæ²¡æœ‰ç¾¤ä¸»ã€‚";
 
 	/// <summary>
 	/// Key: "Description.LeaveGroupWarning"
 	/// English String: "Are you sure you want to leave this group?"
 	/// </summary>
-	public override string DescriptionLeaveGroupWarning => "是否确定要离开此群组？";
+	public override string DescriptionLeaveGroupWarning => "æ˜¯å¦ç¡®å®šè¦ç¦»å¼€æ­¤ç¾¤ç»„ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.MakePrimaryGroupWarning"
 	/// English String: "Are you sure you want to make this your primary group?"
 	/// </summary>
-	public override string DescriptionMakePrimaryGroupWarning => "确定要将此群组设为你的主要群组？";
+	public override string DescriptionMakePrimaryGroupWarning => "ç¡®å®šè¦å°†æ­¤ç¾¤ç»„è®¾ä¸ºä½ çš„ä¸»è¦ç¾¤ç»„ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.NoneMaxGroups"
 	/// English String: "Upgrade to Builders Club to join more groups."
 	/// </summary>
-	public override string DescriptionNoneMaxGroups => "若要加入更多群组，请先升级为 Builders Club 会员。";
+	public override string DescriptionNoneMaxGroups => "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§ä¸º Builders Club ä¼šå‘˜ã€‚";
 
 	/// <summary>
 	/// Key: "Description.NoneMaxGroupsPremium"
 	/// English String: "Upgrade to Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionNoneMaxGroupsPremium => "若要加入更多群组，请先升级至 Roblox Premium 会员。";
+	public override string DescriptionNoneMaxGroupsPremium => "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§è‡³ Roblox Premium ä¼šå‘˜ã€‚";
 
 	/// <summary>
 	/// Key: "Description.noneMaxGroupsPremiumText"
 	/// English String: "Upgrade to Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionnoneMaxGroupsPremiumText => "若要加入更多群组，请先升级至 Roblox Premium 会员。";
+	public override string DescriptionnoneMaxGroupsPremiumText => "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§è‡³ Roblox Premium ä¼šå‘˜ã€‚";
 
 	/// <summary>
 	/// Key: "Description.ObcMaxGroups"
 	/// English String: "You have joined the maximum number of groups."
 	/// </summary>
-	public override string DescriptionObcMaxGroups => "你加入的群组数量已达上限。";
+	public override string DescriptionObcMaxGroups => "ä½ åŠ å…¥çš„ç¾¤ç»„æ•°é‡å·²è¾¾ä¸Šé™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.OtherBcMaxGroups"
 	/// English String: "Upgrade your Builders Club to join more groups."
 	/// </summary>
-	public override string DescriptionOtherBcMaxGroups => "若要加入更多群组，请先升级你的 Builders Club 会员资格。";
+	public override string DescriptionOtherBcMaxGroups => "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§ä½ çš„ Builders Club ä¼šå‘˜èµ„æ ¼ã€‚";
 
 	/// <summary>
 	/// Key: "Description.otherPremiumMaxGroupsText"
 	/// English String: "Upgrade your Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionotherPremiumMaxGroupsText => "若要加入更多群组，请先升级你的 Roblox Premium 会员资格。";
+	public override string DescriptionotherPremiumMaxGroupsText => "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§ä½ çš„ Roblox Premium ä¼šå‘˜èµ„æ ¼ã€‚";
 
 	/// <summary>
 	/// Key: "Description.PremiumMaxGroups"
 	/// English String: "You have joined the maximum number of groups."
 	/// </summary>
-	public override string DescriptionPremiumMaxGroups => "你加入的群组数量已达上限。";
+	public override string DescriptionPremiumMaxGroups => "ä½ åŠ å…¥çš„ç¾¤ç»„æ•°é‡å·²è¾¾ä¸Šé™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.PurchaseBody"
 	/// English String: "Would you like to create this group for"
 	/// </summary>
-	public override string DescriptionPurchaseBody => "确定要创建此群组吗？费用为：";
+	public override string DescriptionPurchaseBody => "ç¡®å®šè¦åˆ›å»ºæ­¤ç¾¤ç»„å—ï¼Ÿè´¹ç”¨ä¸ºï¼š";
 
 	/// <summary>
 	/// Key: "Description.RemovePrimaryGroupWarning"
 	/// English String: "Are you sure you want to remove your primary group?"
 	/// </summary>
-	public override string DescriptionRemovePrimaryGroupWarning => "是否确定要移除你的主要群组？";
+	public override string DescriptionRemovePrimaryGroupWarning => "æ˜¯å¦ç¡®å®šè¦ç§»é™¤ä½ çš„ä¸»è¦ç¾¤ç»„ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.ReportAbuseDescription"
 	/// English String: "What would you like to report?"
 	/// </summary>
-	public override string DescriptionReportAbuseDescription => "你想要举报哪些问题？";
+	public override string DescriptionReportAbuseDescription => "ä½ æƒ³è¦ä¸¾æŠ¥å“ªäº›é—®é¢˜ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.WallPrivacySettings"
 	/// English String: "Your privacy settings do not allow you to post to group walls. Click here to adjust these settings."
 	/// </summary>
-	public override string DescriptionWallPrivacySettings => "你的隐私设置不允许你发布帖子，请点按此处更改你的设置。";
+	public override string DescriptionWallPrivacySettings => "ä½ çš„éšç§è®¾ç½®ä¸å…è®¸ä½ å‘å¸ƒå¸–å­ï¼Œè¯·ç‚¹æŒ‰æ­¤å¤„æ›´æ”¹ä½ çš„è®¾ç½®ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.About"
 	/// English String: "About"
 	/// </summary>
-	public override string HeadingAbout => "简介";
+	public override string HeadingAbout => "ç®€ä»‹";
 
 	/// <summary>
 	/// Key: "Heading.Affiliates"
 	/// English String: "Affiliates"
 	/// </summary>
-	public override string HeadingAffiliates => "伙伴";
+	public override string HeadingAffiliates => "ä¼™ä¼´";
 
 	/// <summary>
 	/// Key: "Heading.Allies"
 	/// English String: "Allies"
 	/// </summary>
-	public override string HeadingAllies => "盟友";
+	public override string HeadingAllies => "ç›Ÿå‹";
 
 	/// <summary>
 	/// Key: "Heading.Date"
 	/// English String: "Date"
 	/// </summary>
-	public override string HeadingDate => "日期";
+	public override string HeadingDate => "æ—¥æœŸ";
 
 	/// <summary>
 	/// Key: "Heading.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string HeadingDescription => "描述";
+	public override string HeadingDescription => "æè¿°";
 
 	/// <summary>
 	/// Key: "Heading.Enemies"
 	/// English String: "Enemies"
 	/// </summary>
-	public override string HeadingEnemies => "敌人";
+	public override string HeadingEnemies => "æ•Œäºº";
 
 	/// <summary>
 	/// Key: "Heading.ExileUserWarning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string HeadingExileUserWarning => "警告";
+	public override string HeadingExileUserWarning => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Heading.Funds"
 	/// English String: "Funds"
 	/// </summary>
-	public override string HeadingFunds => "资金";
+	public override string HeadingFunds => "èµ„é‡‘";
 
 	/// <summary>
 	/// Key: "Heading.Games"
 	/// English String: "Games"
 	/// </summary>
-	public override string HeadingGames => "游戏";
+	public override string HeadingGames => "æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Heading.GroupPurchase"
 	/// English String: "Group Purchase Confirmation"
 	/// </summary>
-	public override string HeadingGroupPurchase => "群组购买确认";
+	public override string HeadingGroupPurchase => "ç¾¤ç»„è´­ä¹°ç¡®è®¤";
 
 	/// <summary>
 	/// Key: "Heading.GroupShout"
 	/// English String: "Group Shout"
 	/// </summary>
-	public override string HeadingGroupShout => "群组广播";
+	public override string HeadingGroupShout => "ç¾¤ç»„å¹¿æ’­";
 
 	/// <summary>
 	/// Key: "Heading.LeaveGroup"
 	/// English String: "Leave Group"
 	/// </summary>
-	public override string HeadingLeaveGroup => "离开群组";
+	public override string HeadingLeaveGroup => "ç¦»å¼€ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Heading.MakePrimaryGroup"
 	/// Heading of make primary group modal
 	/// English String: "Make Primary Group"
 	/// </summary>
-	public override string HeadingMakePrimaryGroup => "设为主要群组";
+	public override string HeadingMakePrimaryGroup => "è®¾ä¸ºä¸»è¦ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Heading.Members"
 	/// English String: "Members"
 	/// </summary>
-	public override string HeadingMembers => "成员";
+	public override string HeadingMembers => "æˆå‘˜";
 
 	/// <summary>
 	/// Key: "Heading.NameOrDescription"
 	/// Selection option for what to report when reporting something in a group
 	/// English String: "Name or Description"
 	/// </summary>
-	public override string HeadingNameOrDescription => "名称或描述";
+	public override string HeadingNameOrDescription => "åç§°æˆ–æè¿°";
 
 	/// <summary>
 	/// Key: "Heading.Payouts"
 	/// English String: "Payouts"
 	/// </summary>
-	public override string HeadingPayouts => "支出";
+	public override string HeadingPayouts => "æ”¯å‡º";
 
 	/// <summary>
 	/// Key: "Heading.Primary"
 	/// English String: "Primary"
 	/// </summary>
-	public override string HeadingPrimary => "主要";
+	public override string HeadingPrimary => "ä¸»è¦";
 
 	/// <summary>
 	/// Key: "Heading.Rank"
 	/// English String: "Rank"
 	/// </summary>
-	public override string HeadingRank => "等级";
+	public override string HeadingRank => "ç­‰çº§";
 
 	/// <summary>
 	/// Key: "Heading.RemovePrimaryGroup"
 	/// English String: "Remove Primary Group"
 	/// </summary>
-	public override string HeadingRemovePrimaryGroup => "移除主要群组";
+	public override string HeadingRemovePrimaryGroup => "ç§»é™¤ä¸»è¦ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Heading.Role"
 	/// English String: "Role"
 	/// </summary>
-	public override string HeadingRole => "角色";
+	public override string HeadingRole => "è§’è‰²";
 
 	/// <summary>
 	/// Key: "Heading.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string HeadingSettings => "设置";
+	public override string HeadingSettings => "è®¾ç½®";
 
 	/// <summary>
 	/// Key: "Heading.Shout"
 	/// To be displayed above the group shout (the current status for a group set by admins)
 	/// English String: "Shout"
 	/// </summary>
-	public override string HeadingShout => "广播";
+	public override string HeadingShout => "å¹¿æ’­";
 
 	/// <summary>
 	/// Key: "Heading.Store"
 	/// English String: "Store"
 	/// </summary>
-	public override string HeadingStore => "商店";
+	public override string HeadingStore => "å•†åº—";
 
 	/// <summary>
 	/// Key: "Heading.User"
 	/// English String: "User"
 	/// </summary>
-	public override string HeadingUser => "用户";
+	public override string HeadingUser => "ç”¨æˆ·";
 
 	/// <summary>
 	/// Key: "Heading.Wall"
 	/// English String: "Wall"
 	/// </summary>
-	public override string HeadingWall => "留言板";
+	public override string HeadingWall => "ç•™è¨€æ¿";
 
 	/// <summary>
 	/// Key: "Label.Abandon"
 	/// English String: "Abandon"
 	/// </summary>
-	public override string LabelAbandon => "舍弃";
+	public override string LabelAbandon => "èˆå¼ƒ";
 
 	/// <summary>
 	/// Key: "Label.AcceptAllyRequest"
 	/// English String: "Accept Ally Request"
 	/// </summary>
-	public override string LabelAcceptAllyRequest => "接受盟友邀请";
+	public override string LabelAcceptAllyRequest => "æŽ¥å—ç›Ÿå‹é‚€è¯·";
 
 	/// <summary>
 	/// Key: "Label.AcceptJoinRequest"
 	/// English String: "Accept Join Request"
 	/// </summary>
-	public override string LabelAcceptJoinRequest => "接受加入邀请";
+	public override string LabelAcceptJoinRequest => "æŽ¥å—åŠ å…¥é‚€è¯·";
 
 	/// <summary>
 	/// Key: "Label.AddGroupPlace"
 	/// English String: "Add Group Place"
 	/// </summary>
-	public override string LabelAddGroupPlace => "添加群组空间";
+	public override string LabelAddGroupPlace => "æ·»åŠ ç¾¤ç»„ç©ºé—´";
 
 	/// <summary>
 	/// Key: "Label.AdjustCurrencyAmounts"
 	/// English String: "Adjust Currency Amounts"
 	/// </summary>
-	public override string LabelAdjustCurrencyAmounts => "调整货币金额";
+	public override string LabelAdjustCurrencyAmounts => "è°ƒæ•´è´§å¸é‡‘é¢";
 
 	/// <summary>
 	/// Key: "Label.All"
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "全部";
+	public override string LabelAll => "å…¨éƒ¨";
 
 	/// <summary>
 	/// Key: "Label.AnyoneCanJoin"
 	/// English String: "Anyone Can Join"
 	/// </summary>
-	public override string LabelAnyoneCanJoin => "任何人都可以加入";
+	public override string LabelAnyoneCanJoin => "ä»»ä½•äººéƒ½å¯ä»¥åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Label.BuyAd"
 	/// English String: "Buy Ad"
 	/// </summary>
-	public override string LabelBuyAd => "购买广告";
+	public override string LabelBuyAd => "è´­ä¹°å¹¿å‘Š";
 
 	/// <summary>
 	/// Key: "Label.BuyClan"
 	/// English String: "Buy Clan"
 	/// </summary>
-	public override string LabelBuyClan => "购买公会";
+	public override string LabelBuyClan => "è´­ä¹°å…¬ä¼š";
 
 	/// <summary>
 	/// Key: "Label.ByOwner"
 	/// Prefix to either the owner of the group, or "No One!" if the group has no owner. Could not properly format like By {ownerName} because ownerName is a link in this case
 	/// English String: "By"
 	/// </summary>
-	public override string LabelByOwner => "创建者";
+	public override string LabelByOwner => "åˆ›å»ºè€…";
 
 	/// <summary>
 	/// Key: "Label.CancelClanInvite"
 	/// English String: "Cancel Clan Invite"
 	/// </summary>
-	public override string LabelCancelClanInvite => "取消公会邀请";
+	public override string LabelCancelClanInvite => "å–æ¶ˆå…¬ä¼šé‚€è¯·";
 
 	/// <summary>
 	/// Key: "Label.ChangeDescription"
 	/// English String: "Change Description"
 	/// </summary>
-	public override string LabelChangeDescription => "更改描述";
+	public override string LabelChangeDescription => "æ›´æ”¹æè¿°";
 
 	/// <summary>
 	/// Key: "Label.ChangeOwner"
 	/// English String: "Change Owner"
 	/// </summary>
-	public override string LabelChangeOwner => "变更群主";
+	public override string LabelChangeOwner => "å˜æ›´ç¾¤ä¸»";
 
 	/// <summary>
 	/// Key: "Label.ChangeRank"
 	/// English String: "Change Rank"
 	/// </summary>
-	public override string LabelChangeRank => "更改等级";
+	public override string LabelChangeRank => "æ›´æ”¹ç­‰çº§";
 
 	/// <summary>
 	/// Key: "Label.Claim"
 	/// English String: "Claim"
 	/// </summary>
-	public override string LabelClaim => "获取";
+	public override string LabelClaim => "èŽ·å–";
 
 	/// <summary>
 	/// Key: "Label.ConfigureBadge"
 	/// English String: "Configure Badge"
 	/// </summary>
-	public override string LabelConfigureBadge => "设置徽章";
+	public override string LabelConfigureBadge => "è®¾ç½®å¾½ç« ";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGroupAsset"
 	/// English String: "Configure Group Asset"
 	/// </summary>
-	public override string LabelConfigureGroupAsset => "设置群组素材";
+	public override string LabelConfigureGroupAsset => "è®¾ç½®ç¾¤ç»„ç´ æ";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGroupDevelopmentItem"
 	/// English String: "Configure Group Development Item"
 	/// </summary>
-	public override string LabelConfigureGroupDevelopmentItem => "设置群组开发道具";
+	public override string LabelConfigureGroupDevelopmentItem => "è®¾ç½®ç¾¤ç»„å¼€å‘é“å…·";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGroupGame"
 	/// English String: "Configure Group Game"
 	/// </summary>
-	public override string LabelConfigureGroupGame => "设置群组名称";
+	public override string LabelConfigureGroupGame => "è®¾ç½®ç¾¤ç»„åç§°";
 
 	/// <summary>
 	/// Key: "Label.ConfigureItems"
 	/// English String: "Configure Items"
 	/// </summary>
-	public override string LabelConfigureItems => "设置道具";
+	public override string LabelConfigureItems => "è®¾ç½®é“å…·";
 
 	/// <summary>
 	/// Key: "Label.CreateBadge"
 	/// English String: "Create Badge"
 	/// </summary>
-	public override string LabelCreateBadge => "创建徽章";
+	public override string LabelCreateBadge => "åˆ›å»ºå¾½ç« ";
 
 	/// <summary>
 	/// Key: "Label.CreateEnemy"
 	/// English String: "Create Enemy"
 	/// </summary>
-	public override string LabelCreateEnemy => "设定敌人";
+	public override string LabelCreateEnemy => "è®¾å®šæ•Œäºº";
 
 	/// <summary>
 	/// Key: "Label.CreateGamePass"
 	/// English String: "Create Game Pass"
 	/// </summary>
-	public override string LabelCreateGamePass => "创建游戏通行证";
+	public override string LabelCreateGamePass => "åˆ›å»ºæ¸¸æˆé€šè¡Œè¯";
 
 	/// <summary>
 	/// Key: "Label.CreateGroup"
 	/// English String: "Create Group"
 	/// </summary>
-	public override string LabelCreateGroup => "创建群组";
+	public override string LabelCreateGroup => "åˆ›å»ºç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupAsset"
 	/// English String: "Create Group Asset"
 	/// </summary>
-	public override string LabelCreateGroupAsset => "创建群组素材";
+	public override string LabelCreateGroupAsset => "åˆ›å»ºç¾¤ç»„ç´ æ";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupBuildersClubTooltip"
 	/// English String: "Creating a group requires a Builders Club membership."
 	/// </summary>
-	public override string LabelCreateGroupBuildersClubTooltip => "需要拥有 Builders Club 会员资格才能创建群组。";
+	public override string LabelCreateGroupBuildersClubTooltip => "éœ€è¦æ‹¥æœ‰ Builders Club ä¼šå‘˜èµ„æ ¼æ‰èƒ½åˆ›å»ºç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupDescription"
 	/// English String: "Description (optional)"
 	/// </summary>
-	public override string LabelCreateGroupDescription => "描述（可省略）";
+	public override string LabelCreateGroupDescription => "æè¿°ï¼ˆå¯çœç•¥ï¼‰";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupDeveloperProduct"
 	/// English String: "Create Group Developer Product"
 	/// </summary>
-	public override string LabelCreateGroupDeveloperProduct => "创建群组开发者产品";
+	public override string LabelCreateGroupDeveloperProduct => "åˆ›å»ºç¾¤ç»„å¼€å‘è€…äº§å“";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupEmblem"
 	/// English String: "Emblem"
 	/// </summary>
-	public override string LabelCreateGroupEmblem => "标志";
+	public override string LabelCreateGroupEmblem => "æ ‡å¿—";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupFee"
 	/// English String: "Group Creation Fee"
 	/// </summary>
-	public override string LabelCreateGroupFee => "创建群组费用";
+	public override string LabelCreateGroupFee => "åˆ›å»ºç¾¤ç»„è´¹ç”¨";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupName"
 	/// English String: "Name your group"
 	/// </summary>
-	public override string LabelCreateGroupName => "命名你的群组";
+	public override string LabelCreateGroupName => "å‘½åä½ çš„ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupPremiumTooltip"
 	/// English String: "Creating a group requires a Roblox Premium membership."
 	/// </summary>
-	public override string LabelCreateGroupPremiumTooltip => "需要拥有 Roblox Premium 会员资格才能创建群组。";
+	public override string LabelCreateGroupPremiumTooltip => "éœ€è¦æ‹¥æœ‰ Roblox Premium ä¼šå‘˜èµ„æ ¼æ‰èƒ½åˆ›å»ºç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupTooltip"
 	/// English String: "Create a new group"
 	/// </summary>
-	public override string LabelCreateGroupTooltip => "创建新群组";
+	public override string LabelCreateGroupTooltip => "åˆ›å»ºæ–°ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Label.CreateItems"
 	/// English String: "Create Items"
 	/// </summary>
-	public override string LabelCreateItems => "创建道具";
+	public override string LabelCreateItems => "åˆ›å»ºé“å…·";
 
 	/// <summary>
 	/// Key: "Label.DeclineAllyRequest"
 	/// English String: "Decline Ally Request"
 	/// </summary>
-	public override string LabelDeclineAllyRequest => "拒绝盟友邀请";
+	public override string LabelDeclineAllyRequest => "æ‹’ç»ç›Ÿå‹é‚€è¯·";
 
 	/// <summary>
 	/// Key: "Label.DeclineJoinRequest"
 	/// English String: "Decline Join Request"
 	/// </summary>
-	public override string LabelDeclineJoinRequest => "拒绝加入邀请";
+	public override string LabelDeclineJoinRequest => "æ‹’ç»åŠ å…¥é‚€è¯·";
 
 	/// <summary>
 	/// Key: "Label.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string LabelDelete => "删除";
+	public override string LabelDelete => "åˆ é™¤";
 
 	/// <summary>
 	/// Key: "Label.DeleteAllPostsByUser"
 	/// English String: "Also delete all posts by this user."
 	/// </summary>
-	public override string LabelDeleteAllPostsByUser => "同时删除此用户的所有帖子。";
+	public override string LabelDeleteAllPostsByUser => "åŒæ—¶åˆ é™¤æ­¤ç”¨æˆ·çš„æ‰€æœ‰å¸–å­ã€‚";
 
 	/// <summary>
 	/// Key: "Label.DeleteAlly"
 	/// English String: "Delete Ally"
 	/// </summary>
-	public override string LabelDeleteAlly => "删除盟友";
+	public override string LabelDeleteAlly => "åˆ é™¤ç›Ÿå‹";
 
 	/// <summary>
 	/// Key: "Label.DeleteEnemy"
 	/// English String: "Delete Enemy"
 	/// </summary>
-	public override string LabelDeleteEnemy => "删除敌人";
+	public override string LabelDeleteEnemy => "åˆ é™¤æ•Œäºº";
 
 	/// <summary>
 	/// Key: "Label.DeleteGroupPlace"
 	/// English String: "Delete Group Place"
 	/// </summary>
-	public override string LabelDeleteGroupPlace => "删除群组空间";
+	public override string LabelDeleteGroupPlace => "åˆ é™¤ç¾¤ç»„ç©ºé—´";
 
 	/// <summary>
 	/// Key: "Label.DeletePost"
 	/// English String: "Delete Post"
 	/// </summary>
-	public override string LabelDeletePost => "删除帖子";
+	public override string LabelDeletePost => "åˆ é™¤å¸–å­";
 
 	/// <summary>
 	/// Key: "Label.Funds"
 	/// English String: "Funds"
 	/// </summary>
-	public override string LabelFunds => "资金";
+	public override string LabelFunds => "èµ„é‡‘";
 
 	/// <summary>
 	/// Key: "Label.GroupClosed"
 	/// English String: "Group Closed"
 	/// </summary>
-	public override string LabelGroupClosed => "群组已关闭";
+	public override string LabelGroupClosed => "ç¾¤ç»„å·²å…³é—­";
 
 	/// <summary>
 	/// Key: "Label.GroupLocked"
 	/// English String: "This group has been locked"
 	/// </summary>
-	public override string LabelGroupLocked => "此群组已被锁定";
+	public override string LabelGroupLocked => "æ­¤ç¾¤ç»„å·²è¢«é”å®š";
 
 	/// <summary>
 	/// Key: "Label.InviteToClan"
 	/// English String: "Invite to Clan"
 	/// </summary>
-	public override string LabelInviteToClan => "邀请至公会";
+	public override string LabelInviteToClan => "é‚€è¯·è‡³å…¬ä¼š";
 
 	/// <summary>
 	/// Key: "Label.KickFromClan"
 	/// English String: "Kick from Clan"
 	/// </summary>
-	public override string LabelKickFromClan => "踢出公会";
+	public override string LabelKickFromClan => "è¸¢å‡ºå…¬ä¼š";
 
 	/// <summary>
 	/// Key: "Label.Loading"
 	/// English String: "Loading..."
 	/// </summary>
-	public override string LabelLoading => "正在加载...";
+	public override string LabelLoading => "æ­£åœ¨åŠ è½½...";
 
 	/// <summary>
 	/// Key: "Label.Lock"
 	/// English String: "Lock"
 	/// </summary>
-	public override string LabelLock => "锁定";
+	public override string LabelLock => "é”å®š";
 
 	/// <summary>
 	/// Key: "Label.ManageGroupCreations"
 	/// English String: "Create or manage group items."
 	/// </summary>
-	public override string LabelManageGroupCreations => "创建或管理群组内容。";
+	public override string LabelManageGroupCreations => "åˆ›å»ºæˆ–ç®¡ç†ç¾¤ç»„å†…å®¹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ManualApproval"
 	/// English String: "Manual Approval"
 	/// </summary>
-	public override string LabelManualApproval => "手动批准";
+	public override string LabelManualApproval => "æ‰‹åŠ¨æ‰¹å‡†";
 
 	/// <summary>
 	/// Key: "Label.ModerateDiscussion"
 	/// English String: "Moderate Discussion"
 	/// </summary>
-	public override string LabelModerateDiscussion => "管理对话";
+	public override string LabelModerateDiscussion => "ç®¡ç†å¯¹è¯";
 
 	/// <summary>
 	/// Key: "Label.NoAllies"
 	/// English String: "This group does not have any allies."
 	/// </summary>
-	public override string LabelNoAllies => "此群组没有任何盟友。";
+	public override string LabelNoAllies => "æ­¤ç¾¤ç»„æ²¡æœ‰ä»»ä½•ç›Ÿå‹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoEnemies"
 	/// English String: "This group does not have any enemies."
 	/// </summary>
-	public override string LabelNoEnemies => "此群组没有任何敌人。";
+	public override string LabelNoEnemies => "æ­¤ç¾¤ç»„æ²¡æœ‰ä»»ä½•æ•Œäººã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoGames"
 	/// English String: "No games are associated with this group."
 	/// </summary>
-	public override string LabelNoGames => "没有与此群组相关联的游戏。";
+	public override string LabelNoGames => "æ²¡æœ‰ä¸Žæ­¤ç¾¤ç»„ç›¸å…³è”çš„æ¸¸æˆã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoMembersInRole"
 	/// English String: "No group members are in this role."
 	/// </summary>
-	public override string LabelNoMembersInRole => "没有此角色的群组成员。";
+	public override string LabelNoMembersInRole => "æ²¡æœ‰æ­¤è§’è‰²çš„ç¾¤ç»„æˆå‘˜ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoOne"
 	/// English String: "No One!"
 	/// </summary>
-	public override string LabelNoOne => "没有人！";
+	public override string LabelNoOne => "æ²¡æœ‰äººï¼";
 
 	/// <summary>
 	/// Key: "Label.NoStoreItems"
 	/// English String: "No items are for sale in this group."
 	/// </summary>
-	public override string LabelNoStoreItems => "此群组没有待售物品。";
+	public override string LabelNoStoreItems => "æ­¤ç¾¤ç»„æ²¡æœ‰å¾…å”®ç‰©å“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoWallPosts"
 	/// English String: "Nobody has said anything yet..."
 	/// </summary>
-	public override string LabelNoWallPosts => "还没有人发言...";
+	public override string LabelNoWallPosts => "è¿˜æ²¡æœ‰äººå‘è¨€...";
 
 	/// <summary>
 	/// Key: "Label.OnlyBcCanJoin"
 	/// English String: "Only Builders Club members can join"
 	/// </summary>
-	public override string LabelOnlyBcCanJoin => "只有 Builders Club 会员才能加入";
+	public override string LabelOnlyBcCanJoin => "åªæœ‰ Builders Club ä¼šå‘˜æ‰èƒ½åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Label.OnlyPremiumCanJoin"
 	/// English String: "Only users with membership can join"
 	/// </summary>
-	public override string LabelOnlyPremiumCanJoin => "仅限会员";
+	public override string LabelOnlyPremiumCanJoin => "ä»…é™ä¼šå‘˜";
 
 	/// <summary>
 	/// Key: "Label.PrivateGroup"
 	/// If group is invite only
 	/// English String: "Private"
 	/// </summary>
-	public override string LabelPrivateGroup => "私人";
+	public override string LabelPrivateGroup => "ç§äºº";
 
 	/// <summary>
 	/// Key: "Label.PublicGroup"
 	/// If group is open for anyone to join
 	/// English String: "Public"
 	/// </summary>
-	public override string LabelPublicGroup => "公开";
+	public override string LabelPublicGroup => "å…¬å¼€";
 
 	/// <summary>
 	/// Key: "Label.PublishPlace"
 	/// English String: "Publish Place"
 	/// </summary>
-	public override string LabelPublishPlace => "发布空间";
+	public override string LabelPublishPlace => "å‘å¸ƒç©ºé—´";
 
 	/// <summary>
 	/// Key: "Label.RemoveGroupPlace"
 	/// English String: "Remove Group Place"
 	/// </summary>
-	public override string LabelRemoveGroupPlace => "移除群组空间";
+	public override string LabelRemoveGroupPlace => "ç§»é™¤ç¾¤ç»„ç©ºé—´";
 
 	/// <summary>
 	/// Key: "Label.RemoveMember"
 	/// English String: "Remove Member"
 	/// </summary>
-	public override string LabelRemoveMember => "移除成员";
+	public override string LabelRemoveMember => "ç§»é™¤æˆå‘˜";
 
 	/// <summary>
 	/// Key: "Label.Rename"
 	/// English String: "Rename"
 	/// </summary>
-	public override string LabelRename => "重命名";
+	public override string LabelRename => "é‡å‘½å";
 
 	/// <summary>
 	/// Key: "Label.RevertGroupAsset"
 	/// English String: "Revert Group Asset"
 	/// </summary>
-	public override string LabelRevertGroupAsset => "还原群组素材";
+	public override string LabelRevertGroupAsset => "è¿˜åŽŸç¾¤ç»„ç´ æ";
 
 	/// <summary>
 	/// Key: "Label.SavePlace"
 	/// English String: "Save Place"
 	/// </summary>
-	public override string LabelSavePlace => "保存空间";
+	public override string LabelSavePlace => "ä¿å­˜ç©ºé—´";
 
 	/// <summary>
 	/// Key: "Label.SearchGroups"
 	/// English String: "Search All Groups"
 	/// </summary>
-	public override string LabelSearchGroups => "搜索全部群组";
+	public override string LabelSearchGroups => "æœç´¢å…¨éƒ¨ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Label.SearchUsers"
 	/// English String: "Search Users"
 	/// </summary>
-	public override string LabelSearchUsers => "搜索用户";
+	public override string LabelSearchUsers => "æœç´¢ç”¨æˆ·";
 
 	/// <summary>
 	/// Key: "Label.SendAllyRequest"
 	/// English String: "Send Ally Request"
 	/// </summary>
-	public override string LabelSendAllyRequest => "发送盟友邀请";
+	public override string LabelSendAllyRequest => "å‘é€ç›Ÿå‹é‚€è¯·";
 
 	/// <summary>
 	/// Key: "Label.ShoutPlaceholder"
 	/// English String: "Enter your shout"
 	/// </summary>
-	public override string LabelShoutPlaceholder => "输入你的广播内容";
+	public override string LabelShoutPlaceholder => "è¾“å…¥ä½ çš„å¹¿æ’­å†…å®¹";
 
 	/// <summary>
 	/// Key: "Label.SpendGroupFunds"
 	/// English String: "Spend Group Funds"
 	/// </summary>
-	public override string LabelSpendGroupFunds => "使用群组资金";
+	public override string LabelSpendGroupFunds => "ä½¿ç”¨ç¾¤ç»„èµ„é‡‘";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string LabelSuccess => "成功";
+	public override string LabelSuccess => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Label.Unlock"
 	/// English String: "Unlock"
 	/// </summary>
-	public override string LabelUnlock => "解锁";
+	public override string LabelUnlock => "è§£é”";
 
 	/// <summary>
 	/// Key: "Label.UpdateGroupAsset"
 	/// English String: "Update Group Asset"
 	/// </summary>
-	public override string LabelUpdateGroupAsset => "更新群组素材";
+	public override string LabelUpdateGroupAsset => "æ›´æ–°ç¾¤ç»„ç´ æ";
 
 	/// <summary>
 	/// Key: "Label.WallPostPlaceholder"
 	/// English String: "Say something..."
 	/// </summary>
-	public override string LabelWallPostPlaceholder => "说点什么...";
+	public override string LabelWallPostPlaceholder => "è¯´ç‚¹ä»€ä¹ˆ...";
 
 	/// <summary>
 	/// Key: "Label.WallPostsUnavailable"
 	/// Displayed in the group wall area when we cannot successfully load wall posts
 	/// English String: "Wall posts are temporarily unavailable, please check back later."
 	/// </summary>
-	public override string LabelWallPostsUnavailable => "留言板帖子暂时不可用，请稍后重试。";
+	public override string LabelWallPostsUnavailable => "ç•™è¨€æ¿å¸–å­æš‚æ—¶ä¸å¯ç”¨ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Warning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string LabelWarning => "警告";
+	public override string LabelWarning => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Message.AlreadyMember"
 	/// English String: "You are already a member of this group."
 	/// </summary>
-	public override string MessageAlreadyMember => "你已加入此群组。";
+	public override string MessageAlreadyMember => "ä½ å·²åŠ å…¥æ­¤ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.AlreadyRequested"
 	/// English String: "You have already requested to join this group."
 	/// </summary>
-	public override string MessageAlreadyRequested => "你已请求加入此群组。";
+	public override string MessageAlreadyRequested => "ä½ å·²è¯·æ±‚åŠ å…¥æ­¤ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.BuildGroupRolesListError"
 	/// English String: "Unable to load members for selected role."
 	/// </summary>
-	public override string MessageBuildGroupRolesListError => "无法加载所选角色的成员。";
+	public override string MessageBuildGroupRolesListError => "æ— æ³•åŠ è½½æ‰€é€‰è§’è‰²çš„æˆå‘˜ã€‚";
 
 	/// <summary>
 	/// Key: "Message.CannotClaimGroupWithOwner"
 	/// English String: "This group already has an owner."
 	/// </summary>
-	public override string MessageCannotClaimGroupWithOwner => "此群组已有群主。";
+	public override string MessageCannotClaimGroupWithOwner => "æ­¤ç¾¤ç»„å·²æœ‰ç¾¤ä¸»ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ChangeOwnerEmpty"
 	/// English String: "There is no owner of the group"
 	/// </summary>
-	public override string MessageChangeOwnerEmpty => "群组没有群主";
+	public override string MessageChangeOwnerEmpty => "ç¾¤ç»„æ²¡æœ‰ç¾¤ä¸»";
 
 	/// <summary>
 	/// Key: "Message.ClaimOwnershipError"
 	/// English String: "Unable to claim ownership of group."
 	/// </summary>
-	public override string MessageClaimOwnershipError => "无法成为群主。";
+	public override string MessageClaimOwnershipError => "æ— æ³•æˆä¸ºç¾¤ä¸»ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ClaimOwnershipSuccess"
 	/// English String: "Successfully claimed ownership of group."
 	/// </summary>
-	public override string MessageClaimOwnershipSuccess => "成功成为群主。";
+	public override string MessageClaimOwnershipSuccess => "æˆåŠŸæˆä¸ºç¾¤ä¸»ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error occurred."
 	/// </summary>
-	public override string MessageDefaultError => "发生错误。";
+	public override string MessageDefaultError => "å‘ç”Ÿé”™è¯¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DeleteWallPostError"
 	/// English String: "Unable to delete wall post."
 	/// </summary>
-	public override string MessageDeleteWallPostError => "无法删除留言板帖子。";
+	public override string MessageDeleteWallPostError => "æ— æ³•åˆ é™¤ç•™è¨€æ¿å¸–å­ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DeleteWallPostsByUserError"
 	/// English String: "Unable to delete wall posts by user."
 	/// </summary>
-	public override string MessageDeleteWallPostsByUserError => "无法删除此用户的帖子。";
+	public override string MessageDeleteWallPostsByUserError => "æ— æ³•åˆ é™¤æ­¤ç”¨æˆ·çš„å¸–å­ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DeleteWallPostSuccess"
 	/// English String: "Successfully deleted wall post."
 	/// </summary>
-	public override string MessageDeleteWallPostSuccess => "成功删除帖子。";
+	public override string MessageDeleteWallPostSuccess => "æˆåŠŸåˆ é™¤å¸–å­ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DescriptionTooLong"
 	/// English String: "The description is too long."
 	/// </summary>
-	public override string MessageDescriptionTooLong => "描述过长。";
+	public override string MessageDescriptionTooLong => "æè¿°è¿‡é•¿ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DuplicateName"
 	/// English String: "Name is already taken. Please try another."
 	/// </summary>
-	public override string MessageDuplicateName => "名称已被使用，请输入新的名称。";
+	public override string MessageDuplicateName => "åç§°å·²è¢«ä½¿ç”¨ï¼Œè¯·è¾“å…¥æ–°çš„åç§°ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ExileUserError"
 	/// English String: "Unable to exile user."
 	/// </summary>
-	public override string MessageExileUserError => "无法驱逐用户。";
+	public override string MessageExileUserError => "æ— æ³•é©±é€ç”¨æˆ·ã€‚";
 
 	/// <summary>
 	/// Key: "Message.FeatureDisabled"
 	/// English String: "The feature is disabled."
 	/// </summary>
-	public override string MessageFeatureDisabled => "此功能已停用。";
+	public override string MessageFeatureDisabled => "æ­¤åŠŸèƒ½å·²åœç”¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GetGroupRelationshipsError"
 	/// English String: "Unable to load group affiliates."
 	/// </summary>
-	public override string MessageGetGroupRelationshipsError => "无法加载群组伙伴。";
+	public override string MessageGetGroupRelationshipsError => "æ— æ³•åŠ è½½ç¾¤ç»„ä¼™ä¼´ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupClosed"
 	/// English String: "You cannot join a closed group."
 	/// </summary>
-	public override string MessageGroupClosed => "你不能加入已关闭的群组。";
+	public override string MessageGroupClosed => "ä½ ä¸èƒ½åŠ å…¥å·²å…³é—­çš„ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupCreationDisabled"
 	/// English String: "Group creation is currently disabled."
 	/// </summary>
-	public override string MessageGroupCreationDisabled => "当前无法创建群组。";
+	public override string MessageGroupCreationDisabled => "å½“å‰æ— æ³•åˆ›å»ºç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupIconInvalid"
 	/// English String: "Icon is missing or invalid."
 	/// </summary>
-	public override string MessageGroupIconInvalid => "图标缺失或无效。";
+	public override string MessageGroupIconInvalid => "å›¾æ ‡ç¼ºå¤±æˆ–æ— æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupMembershipsUnavailableError"
 	/// Error displayed on group details view when the system is in read-only mode for maintenance and you try to perform an action.
 	/// English String: "The group membership system is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string MessageGroupMembershipsUnavailableError => "群组会员系统当前不可用。请稍后重试。";
+	public override string MessageGroupMembershipsUnavailableError => "ç¾¤ç»„ä¼šå‘˜ç³»ç»Ÿå½“å‰ä¸å¯ç”¨ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientFunds"
 	/// English String: "Insufficient Robux funds."
 	/// </summary>
-	public override string MessageInsufficientFunds => "Robux 不足。";
+	public override string MessageInsufficientFunds => "Robux ä¸è¶³ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientGroupSpace"
 	/// English String: "You are already in the maximum number of groups."
 	/// </summary>
-	public override string MessageInsufficientGroupSpace => "你加入的群组数量已达上限。";
+	public override string MessageInsufficientGroupSpace => "ä½ åŠ å…¥çš„ç¾¤ç»„æ•°é‡å·²è¾¾ä¸Šé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientMembership"
 	/// English String: "You do not have the builders club membership necessary to join this group."
 	/// </summary>
-	public override string MessageInsufficientMembership => "你的 Builders Club 会员资格不足，无法加入此群组。";
+	public override string MessageInsufficientMembership => "ä½ çš„ Builders Club ä¼šå‘˜èµ„æ ¼ä¸è¶³ï¼Œæ— æ³•åŠ å…¥æ­¤ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientPermission"
 	/// English String: "Insufficient permissions to complete the request."
 	/// </summary>
-	public override string MessageInsufficientPermission => "权限不足，无法完成请求。";
+	public override string MessageInsufficientPermission => "æƒé™ä¸è¶³ï¼Œæ— æ³•å®Œæˆè¯·æ±‚ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientPermissionsForRelationships"
 	/// English String: "You don't have permission to manage this group's relationships."
 	/// </summary>
-	public override string MessageInsufficientPermissionsForRelationships => "你没有权限管理群组关系。";
+	public override string MessageInsufficientPermissionsForRelationships => "ä½ æ²¡æœ‰æƒé™ç®¡ç†ç¾¤ç»„å…³ç³»ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientRobux"
 	/// English String: "You do not have enough Robux to create the group."
 	/// </summary>
-	public override string MessageInsufficientRobux => "你的 Robux 不足，无法创建群组。";
+	public override string MessageInsufficientRobux => "ä½ çš„ Robux ä¸è¶³ï¼Œæ— æ³•åˆ›å»ºç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidAmount"
 	/// English String: "The amount is invalid."
 	/// </summary>
-	public override string MessageInvalidAmount => "金额无效。";
+	public override string MessageInvalidAmount => "é‡‘é¢æ— æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroup"
 	/// English String: "Group is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroup => "群组无效或不存在。";
+	public override string MessageInvalidGroup => "ç¾¤ç»„æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupIcon"
 	/// English String: "The group icon is invalid."
 	/// </summary>
-	public override string MessageInvalidGroupIcon => "群组图标无效。";
+	public override string MessageInvalidGroupIcon => "ç¾¤ç»„å›¾æ ‡æ— æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupId"
 	/// English String: "The group is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroupId => "群组无效或不存在。";
+	public override string MessageInvalidGroupId => "ç¾¤ç»„æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupWallPostId"
 	/// English String: "The group wall post id is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroupWallPostId => "群组页面帖子 ID 无效或不存在。";
+	public override string MessageInvalidGroupWallPostId => "ç¾¤ç»„é¡µé¢å¸–å­ ID æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidIds"
 	/// English String: "Ids could not be parsed from request."
 	/// </summary>
-	public override string MessageInvalidIds => "无法从请求取出 ID。";
+	public override string MessageInvalidIds => "æ— æ³•ä»Žè¯·æ±‚å–å‡º IDã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidIdsError"
 	/// English String: "Ids could not be parsed from request."
 	/// </summary>
-	public override string MessageInvalidIdsError => "无法从请求取出 ID。";
+	public override string MessageInvalidIdsError => "æ— æ³•ä»Žè¯·æ±‚å–å‡º IDã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidMembership"
 	/// English String: "User must have builders club membership."
 	/// </summary>
-	public override string MessageInvalidMembership => "用户必须是 Builders Club 会员。";
+	public override string MessageInvalidMembership => "ç”¨æˆ·å¿…é¡»æ˜¯ Builders Club ä¼šå‘˜ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidName"
 	/// English String: "The name is invalid."
 	/// </summary>
-	public override string MessageInvalidName => "名称无效。";
+	public override string MessageInvalidName => "åç§°æ— æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidPaginationParameters"
 	/// English String: "Invalid or missing pagination parameters."
 	/// </summary>
-	public override string MessageInvalidPaginationParameters => "分页参数无效或不存在。";
+	public override string MessageInvalidPaginationParameters => "åˆ†é¡µå‚æ•°æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidPayoutType"
 	/// English String: "Invalid payout type."
 	/// </summary>
-	public override string MessageInvalidPayoutType => "支付类型无效。";
+	public override string MessageInvalidPayoutType => "æ”¯ä»˜ç±»åž‹æ— æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidRecipient"
 	/// English String: "The recipient is invalid."
 	/// </summary>
-	public override string MessageInvalidRecipient => "收件人无效。";
+	public override string MessageInvalidRecipient => "æ”¶ä»¶äººæ— æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidRelationshipType"
 	/// English String: "Group relationship type is invalid."
 	/// </summary>
-	public override string MessageInvalidRelationshipType => "群组关系类型无效。";
+	public override string MessageInvalidRelationshipType => "ç¾¤ç»„å…³ç³»ç±»åž‹æ— æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidRoleSetId"
 	/// English String: "The roleset is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidRoleSetId => "等级无效或不存在。";
+	public override string MessageInvalidRoleSetId => "ç­‰çº§æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidUser"
 	/// English String: "The user is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidUser => "用户无效或不存在。";
+	public override string MessageInvalidUser => "ç”¨æˆ·æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidWallPostContent"
 	/// English String: "Your post was empty, white space, or more than 500 characters."
 	/// </summary>
-	public override string MessageInvalidWallPostContent => "你的帖子可能为空白、包含空格，或超过 500 个字符。";
+	public override string MessageInvalidWallPostContent => "ä½ çš„å¸–å­å¯èƒ½ä¸ºç©ºç™½ã€åŒ…å«ç©ºæ ¼ï¼Œæˆ–è¶…è¿‡ 500 ä¸ªå­—ç¬¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.JoinGroupError"
 	/// English String: "Unable to join group."
 	/// </summary>
-	public override string MessageJoinGroupError => "无法加入群组。";
+	public override string MessageJoinGroupError => "æ— æ³•åŠ å…¥ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.JoinGroupPendingSuccess"
 	/// English String: "Requested to join group, your request is pending."
 	/// </summary>
-	public override string MessageJoinGroupPendingSuccess => "加入群组请求已发送，请等待审核。";
+	public override string MessageJoinGroupPendingSuccess => "åŠ å…¥ç¾¤ç»„è¯·æ±‚å·²å‘é€ï¼Œè¯·ç­‰å¾…å®¡æ ¸ã€‚";
 
 	/// <summary>
 	/// Key: "Message.JoinGroupSuccess"
 	/// English String: "Successfully joined the group."
 	/// </summary>
-	public override string MessageJoinGroupSuccess => "成功加入群组。";
+	public override string MessageJoinGroupSuccess => "æˆåŠŸåŠ å…¥ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LeaveGroupError"
 	/// English String: "Unable to leave group."
 	/// </summary>
-	public override string MessageLeaveGroupError => "无法离开群组。";
+	public override string MessageLeaveGroupError => "æ— æ³•ç¦»å¼€ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupError"
 	/// English String: "Unable to load group."
 	/// </summary>
-	public override string MessageLoadGroupError => "无法加载群组。";
+	public override string MessageLoadGroupError => "æ— æ³•åŠ è½½ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupGamesError"
 	/// English String: "Unable to load games."
 	/// </summary>
-	public override string MessageLoadGroupGamesError => "无法加载游戏。";
+	public override string MessageLoadGroupGamesError => "æ— æ³•åŠ è½½æ¸¸æˆã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupListError"
 	/// English String: "Unable to load group list."
 	/// </summary>
-	public override string MessageLoadGroupListError => "无法加载群组列表。";
+	public override string MessageLoadGroupListError => "æ— æ³•åŠ è½½ç¾¤ç»„åˆ—è¡¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupMembershipsError"
 	/// English String: "Unable to load user membership information."
 	/// </summary>
-	public override string MessageLoadGroupMembershipsError => "无法加载用户会员资格信息。";
+	public override string MessageLoadGroupMembershipsError => "æ— æ³•åŠ è½½ç”¨æˆ·ä¼šå‘˜èµ„æ ¼ä¿¡æ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupMetadataError"
 	/// English String: "Unable to load group info."
 	/// </summary>
-	public override string MessageLoadGroupMetadataError => "无法加载群组信息。";
+	public override string MessageLoadGroupMetadataError => "æ— æ³•åŠ è½½ç¾¤ç»„ä¿¡æ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupStoreItemsError"
 	/// English String: "Unable to load store items."
 	/// </summary>
-	public override string MessageLoadGroupStoreItemsError => "无法加载商店道具。";
+	public override string MessageLoadGroupStoreItemsError => "æ— æ³•åŠ è½½å•†åº—é“å…·ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadUserGroupMembershipError"
 	/// English String: "Unable to load group member information."
 	/// </summary>
-	public override string MessageLoadUserGroupMembershipError => "无法加载群组成员信息。";
+	public override string MessageLoadUserGroupMembershipError => "æ— æ³•åŠ è½½ç¾¤ç»„æˆå‘˜ä¿¡æ¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadWallPostsError"
 	/// English String: "Unable to load wall posts."
 	/// </summary>
-	public override string MessageLoadWallPostsError => "无法加载帖子。";
+	public override string MessageLoadWallPostsError => "æ— æ³•åŠ è½½å¸–å­ã€‚";
 
 	/// <summary>
 	/// Key: "Message.MakePrimaryError"
 	/// English String: "Unable to make primary group."
 	/// </summary>
-	public override string MessageMakePrimaryError => "无法设为主要群组。";
+	public override string MessageMakePrimaryError => "æ— æ³•è®¾ä¸ºä¸»è¦ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.MaxGroups"
 	/// English String: "User is in maximum number of groups."
 	/// </summary>
-	public override string MessageMaxGroups => "用户加入的群组数量已达上限。";
+	public override string MessageMaxGroups => "ç”¨æˆ·åŠ å…¥çš„ç¾¤ç»„æ•°é‡å·²è¾¾ä¸Šé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.MissingGroupIcon"
 	/// English String: "The group icon is missing from the request."
 	/// </summary>
-	public override string MessageMissingGroupIcon => "请求中找不到群组图标。";
+	public override string MessageMissingGroupIcon => "è¯·æ±‚ä¸­æ‰¾ä¸åˆ°ç¾¤ç»„å›¾æ ‡ã€‚";
 
 	/// <summary>
 	/// Key: "Message.MissingGroupStatusContent"
 	/// English String: "Missing group status content."
 	/// </summary>
-	public override string MessageMissingGroupStatusContent => "群组状态内容不存在。";
+	public override string MessageMissingGroupStatusContent => "ç¾¤ç»„çŠ¶æ€å†…å®¹ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameInvalid"
 	/// English String: "Name is missing or has invalid characters."
 	/// </summary>
-	public override string MessageNameInvalid => "名称缺失或包含无效字符。";
+	public override string MessageNameInvalid => "åç§°ç¼ºå¤±æˆ–åŒ…å«æ— æ•ˆå­—ç¬¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameModerated"
 	/// English String: "The name is moderated."
 	/// </summary>
-	public override string MessageNameModerated => "名称已被过滤。";
+	public override string MessageNameModerated => "åç§°å·²è¢«è¿‡æ»¤ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameTaken"
 	/// English String: "The name has been taken."
 	/// </summary>
-	public override string MessageNameTaken => "名称已占用。";
+	public override string MessageNameTaken => "åç§°å·²å ç”¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameTooLong"
 	/// English String: "The name is too long."
 	/// </summary>
-	public override string MessageNameTooLong => "名称过长。";
+	public override string MessageNameTooLong => "åç§°è¿‡é•¿ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NoPrimary"
 	/// English String: "The user specified does not have a primary group."
 	/// </summary>
-	public override string MessageNoPrimary => "该用户没有主要群组。";
+	public override string MessageNoPrimary => "è¯¥ç”¨æˆ·æ²¡æœ‰ä¸»è¦ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PassCaptchaToJoin"
 	/// English String: "You must pass the captcha test before joining this group."
 	/// </summary>
-	public override string MessagePassCaptchaToJoin => "若要加入此群组，请先通过 Captcha 验证。";
+	public override string MessagePassCaptchaToJoin => "è‹¥è¦åŠ å…¥æ­¤ç¾¤ç»„ï¼Œè¯·å…ˆé€šè¿‡ Captcha éªŒè¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PassCaptchaToPost"
 	/// English String: "Captcha must be solved to post to the group wall."
 	/// </summary>
-	public override string MessagePassCaptchaToPost => "若要在群组页面发布帖子，请先通过 Captcha 验证。";
+	public override string MessagePassCaptchaToPost => "è‹¥è¦åœ¨ç¾¤ç»„é¡µé¢å‘å¸ƒå¸–å­ï¼Œè¯·å…ˆé€šè¿‡ Captcha éªŒè¯ã€‚";
 
 	/// <summary>
 	/// Key: "Message.RemovePrimaryError"
 	/// English String: "Unable to remove primary group."
 	/// </summary>
-	public override string MessageRemovePrimaryError => "无法移除主要群组。";
+	public override string MessageRemovePrimaryError => "æ— æ³•ç§»é™¤ä¸»è¦ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SearchTermCharactersLimit"
 	/// English String: "The search term needs to be between 2 and 50 characters"
 	/// </summary>
-	public override string MessageSearchTermCharactersLimit => "搜索字符须为 2 到 50 个字符之间";
+	public override string MessageSearchTermCharactersLimit => "æœç´¢å­—ç¬¦é¡»ä¸º 2 åˆ° 50 ä¸ªå­—ç¬¦ä¹‹é—´";
 
 	/// <summary>
 	/// Key: "Message.SearchTermEmptyError"
 	/// English String: "Search term is empty"
 	/// </summary>
-	public override string MessageSearchTermEmptyError => "搜索字符为空";
+	public override string MessageSearchTermEmptyError => "æœç´¢å­—ç¬¦ä¸ºç©º";
 
 	/// <summary>
 	/// Key: "Message.SearchTermFilteredError"
 	/// English String: "Search term was filtered"
 	/// </summary>
-	public override string MessageSearchTermFilteredError => "搜索字符已被过滤";
+	public override string MessageSearchTermFilteredError => "æœç´¢å­—ç¬¦å·²è¢«è¿‡æ»¤";
 
 	/// <summary>
 	/// Key: "Message.SendGroupShoutError"
 	/// English String: "Unable to send group shout."
 	/// </summary>
-	public override string MessageSendGroupShoutError => "无法发送群组广播。";
+	public override string MessageSendGroupShoutError => "æ— æ³•å‘é€ç¾¤ç»„å¹¿æ’­ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SendPostError"
 	/// English String: "Unable to send post."
 	/// </summary>
-	public override string MessageSendPostError => "无法发送帖子。";
+	public override string MessageSendPostError => "æ— æ³•å‘é€å¸–å­ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyAttempts"
 	/// English String: "Too many attempts to join the group. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttempts => "尝试加入群组的次数过多。请稍后重试。";
+	public override string MessageTooManyAttempts => "å°è¯•åŠ å…¥ç¾¤ç»„çš„æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyAttemptsToClaimGroups"
 	/// English String: "Too many attempts to claim groups. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttemptsToClaimGroups => "尝试认领群组的次数过多。请稍后重试。";
+	public override string MessageTooManyAttemptsToClaimGroups => "å°è¯•è®¤é¢†ç¾¤ç»„çš„æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyGroups"
 	/// English String: "You have reached the group capacity. Please leave a group before creating a new one."
 	/// </summary>
-	public override string MessageTooManyGroups => "你加入的群组已达上限。创建新群组前，请先离开一个群组。";
+	public override string MessageTooManyGroups => "ä½ åŠ å…¥çš„ç¾¤ç»„å·²è¾¾ä¸Šé™ã€‚åˆ›å»ºæ–°ç¾¤ç»„å‰ï¼Œè¯·å…ˆç¦»å¼€ä¸€ä¸ªç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyIds"
 	/// English String: "Too many ids in request."
 	/// </summary>
-	public override string MessageTooManyIds => "请求 ID 数量过多。";
+	public override string MessageTooManyIds => "è¯·æ±‚ ID æ•°é‡è¿‡å¤šã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyPosts"
 	/// English String: "You are posting too fast, please try again in a few minutes."
 	/// </summary>
-	public override string MessageTooManyPosts => "你的帖子发布频率过高，请稍候重试。";
+	public override string MessageTooManyPosts => "ä½ çš„å¸–å­å‘å¸ƒé¢‘çŽ‡è¿‡é«˜ï¼Œè¯·ç¨å€™é‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyRequests"
 	/// English String: "Too many requests."
 	/// </summary>
-	public override string MessageTooManyRequests => "请求过多。";
+	public override string MessageTooManyRequests => "è¯·æ±‚è¿‡å¤šã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedForPostStatus"
 	/// English String: "You are not authorized to set the status of this group."
 	/// </summary>
-	public override string MessageUnauthorizedForPostStatus => "你没有权限来限定此群组的状态。";
+	public override string MessageUnauthorizedForPostStatus => "ä½ æ²¡æœ‰æƒé™æ¥é™å®šæ­¤ç¾¤ç»„çš„çŠ¶æ€ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedForViewGroupPayouts"
 	/// English String: "You don't have permission to view this group's payouts."
 	/// </summary>
-	public override string MessageUnauthorizedForViewGroupPayouts => "你没有权限查看此群组的支付。";
+	public override string MessageUnauthorizedForViewGroupPayouts => "ä½ æ²¡æœ‰æƒé™æŸ¥çœ‹æ­¤ç¾¤ç»„çš„æ”¯ä»˜ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToClaimGroup"
 	/// English String: "You are not authorized to claim this group."
 	/// </summary>
-	public override string MessageUnauthorizedToClaimGroup => "你没有权限认领此群组。";
+	public override string MessageUnauthorizedToClaimGroup => "ä½ æ²¡æœ‰æƒé™è®¤é¢†æ­¤ç¾¤ç»„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToManageMember"
 	/// English String: "You do not have permission to manage this member."
 	/// </summary>
-	public override string MessageUnauthorizedToManageMember => "你没有管理此成员的权限。";
+	public override string MessageUnauthorizedToManageMember => "ä½ æ²¡æœ‰ç®¡ç†æ­¤æˆå‘˜çš„æƒé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToViewRolesetPermissions"
 	/// English String: "You are not authorized to view permissions for this roleset."
 	/// </summary>
-	public override string MessageUnauthorizedToViewRolesetPermissions => "你没有权限查看此等级的权限。";
+	public override string MessageUnauthorizedToViewRolesetPermissions => "ä½ æ²¡æœ‰æƒé™æŸ¥çœ‹æ­¤ç­‰çº§çš„æƒé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToViewWall"
 	/// English String: "You do not have permission to access this group wall."
 	/// </summary>
-	public override string MessageUnauthorizedToViewWall => "你没有访问此群组页面的权限。";
+	public override string MessageUnauthorizedToViewWall => "ä½ æ²¡æœ‰è®¿é—®æ­¤ç¾¤ç»„é¡µé¢çš„æƒé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// English String: "Unknown error"
 	/// </summary>
-	public override string MessageUnknownError => "未知错误";
+	public override string MessageUnknownError => "æœªçŸ¥é”™è¯¯";
 
 	/// <summary>
 	/// Key: "Message.UserNotInGroup"
 	/// English String: "You aren't a member of the group specified."
 	/// </summary>
-	public override string MessageUserNotInGroup => "你不是指定群组的成员。";
+	public override string MessageUserNotInGroup => "ä½ ä¸æ˜¯æŒ‡å®šç¾¤ç»„çš„æˆå‘˜ã€‚";
 
 	public GroupsResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -1415,227 +1415,227 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForActionAdvertiseGroup()
 	{
-		return "宣传群组";
+		return "å®£ä¼ ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForActionAuditLog()
 	{
-		return "管理记录";
+		return "ç®¡ç†è®°å½•";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionCancelRequest()
 	{
-		return "取消请求";
+		return "å–æ¶ˆè¯·æ±‚";
 	}
 
 	protected override string _GetTemplateForActionClaimOwnership()
 	{
-		return "成为群主";
+		return "æˆä¸ºç¾¤ä¸»";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "关闭";
+		return "å…³é—­";
 	}
 
 	protected override string _GetTemplateForActionConfigureGroup()
 	{
-		return "配置群组";
+		return "é…ç½®ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForActionCreateGroup()
 	{
-		return "创建群组";
+		return "åˆ›å»ºç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "删除";
+		return "åˆ é™¤";
 	}
 
 	protected override string _GetTemplateForActionExile()
 	{
-		return "驱逐";
+		return "é©±é€";
 	}
 
 	protected override string _GetTemplateForActionExileUser()
 	{
-		return "驱逐用户";
+		return "é©±é€ç”¨æˆ·";
 	}
 
 	protected override string _GetTemplateForActionGroupAdmin()
 	{
-		return "群组管理员";
+		return "ç¾¤ç»„ç®¡ç†å‘˜";
 	}
 
 	protected override string _GetTemplateForActionGroupShout()
 	{
-		return "群组广播";
+		return "ç¾¤ç»„å¹¿æ’­";
 	}
 
 	protected override string _GetTemplateForActionJoinGroup()
 	{
-		return "加入群组";
+		return "åŠ å…¥ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForActionLeaveGroup()
 	{
-		return "离开群组";
+		return "ç¦»å¼€ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForActionMakePrimary()
 	{
-		return "设为主要群组";
+		return "è®¾ä¸ºä¸»è¦ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForActionMakePrimaryGroup()
 	{
-		return "设为主要群组";
+		return "è®¾ä¸ºä¸»è¦ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForActionPost()
 	{
-		return "发布";
+		return "å‘å¸ƒ";
 	}
 
 	protected override string _GetTemplateForActionPurchase()
 	{
-		return "购买";
+		return "è´­ä¹°";
 	}
 
 	protected override string _GetTemplateForActionRemovePrimary()
 	{
-		return "移除主要群组";
+		return "ç§»é™¤ä¸»è¦ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForActionReport()
 	{
-		return "举报";
+		return "ä¸¾æŠ¥";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "报告滥用行为";
+		return "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
 	}
 
 	protected override string _GetTemplateForActionUpgrade()
 	{
-		return "升级";
+		return "å‡çº§";
 	}
 
 	protected override string _GetTemplateForActionUpgradeToJoin()
 	{
-		return "升级后即可加入";
+		return "å‡çº§åŽå³å¯åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "是";
+		return "æ˜¯";
 	}
 
 	protected override string _GetTemplateForDescriptionClothingRevenue()
 	{
-		return "群组可创作并发售官方版衬衫，裤子及 T 恤，所有收入将作为资金归入群组。";
+		return "ç¾¤ç»„å¯åˆ›ä½œå¹¶å‘å”®å®˜æ–¹ç‰ˆè¡¬è¡«ï¼Œè£¤å­åŠ T æ¤ï¼Œæ‰€æœ‰æ”¶å…¥å°†ä½œä¸ºèµ„é‡‘å½’å…¥ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDeleteAllPostsByUser()
 	{
-		return "同时删除此用户的所有帖子。";
+		return "åŒæ—¶åˆ é™¤æ­¤ç”¨æˆ·çš„æ‰€æœ‰å¸–å­ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionExileUserWarning()
 	{
-		return "是否确定要驱逐此用户？";
+		return "æ˜¯å¦ç¡®å®šè¦é©±é€æ­¤ç”¨æˆ·ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveGroupAsOwnerWarning()
 	{
-		return "此群组将会没有群主。";
+		return "æ­¤ç¾¤ç»„å°†ä¼šæ²¡æœ‰ç¾¤ä¸»ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveGroupWarning()
 	{
-		return "是否确定要离开此群组？";
+		return "æ˜¯å¦ç¡®å®šè¦ç¦»å¼€æ­¤ç¾¤ç»„ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionMakePrimaryGroupWarning()
 	{
-		return "确定要将此群组设为你的主要群组？";
+		return "ç¡®å®šè¦å°†æ­¤ç¾¤ç»„è®¾ä¸ºä½ çš„ä¸»è¦ç¾¤ç»„ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionNoneMaxGroups()
 	{
-		return "若要加入更多群组，请先升级为 Builders Club 会员。";
+		return "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§ä¸º Builders Club ä¼šå‘˜ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionNoneMaxGroupsPremium()
 	{
-		return "若要加入更多群组，请先升级至 Roblox Premium 会员。";
+		return "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§è‡³ Roblox Premium ä¼šå‘˜ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionnoneMaxGroupsPremiumText()
 	{
-		return "若要加入更多群组，请先升级至 Roblox Premium 会员。";
+		return "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§è‡³ Roblox Premium ä¼šå‘˜ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionObcMaxGroups()
 	{
-		return "你加入的群组数量已达上限。";
+		return "ä½ åŠ å…¥çš„ç¾¤ç»„æ•°é‡å·²è¾¾ä¸Šé™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionOtherBcMaxGroups()
 	{
-		return "若要加入更多群组，请先升级你的 Builders Club 会员资格。";
+		return "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§ä½ çš„ Builders Club ä¼šå‘˜èµ„æ ¼ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionotherPremiumMaxGroupsText()
 	{
-		return "若要加入更多群组，请先升级你的 Roblox Premium 会员资格。";
+		return "è‹¥è¦åŠ å…¥æ›´å¤šç¾¤ç»„ï¼Œè¯·å…ˆå‡çº§ä½ çš„ Roblox Premium ä¼šå‘˜èµ„æ ¼ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionPremiumMaxGroups()
 	{
-		return "你加入的群组数量已达上限。";
+		return "ä½ åŠ å…¥çš„ç¾¤ç»„æ•°é‡å·²è¾¾ä¸Šé™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionPurchaseBody()
 	{
-		return "确定要创建此群组吗？费用为：";
+		return "ç¡®å®šè¦åˆ›å»ºæ­¤ç¾¤ç»„å—ï¼Ÿè´¹ç”¨ä¸ºï¼š";
 	}
 
 	protected override string _GetTemplateForDescriptionRemovePrimaryGroupWarning()
 	{
-		return "是否确定要移除你的主要群组？";
+		return "æ˜¯å¦ç¡®å®šè¦ç§»é™¤ä½ çš„ä¸»è¦ç¾¤ç»„ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionReportAbuseDescription()
 	{
-		return "你想要举报哪些问题？";
+		return "ä½ æƒ³è¦ä¸¾æŠ¥å“ªäº›é—®é¢˜ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionWallPrivacySettings()
 	{
-		return "你的隐私设置不允许你发布帖子，请点按此处更改你的设置。";
+		return "ä½ çš„éšç§è®¾ç½®ä¸å…è®¸ä½ å‘å¸ƒå¸–å­ï¼Œè¯·ç‚¹æŒ‰æ­¤å¤„æ›´æ”¹ä½ çš„è®¾ç½®ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingAbout()
 	{
-		return "简介";
+		return "ç®€ä»‹";
 	}
 
 	protected override string _GetTemplateForHeadingAffiliates()
 	{
-		return "伙伴";
+		return "ä¼™ä¼´";
 	}
 
 	protected override string _GetTemplateForHeadingAllies()
 	{
-		return "盟友";
+		return "ç›Ÿå‹";
 	}
 
 	/// <summary>
@@ -1644,347 +1644,347 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string HeadingConfigureGroup(string groupName)
 	{
-		return $"配置{groupName}";
+		return $"é…ç½®{groupName}";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureGroup()
 	{
-		return "配置{groupName}";
+		return "é…ç½®{groupName}";
 	}
 
 	protected override string _GetTemplateForHeadingDate()
 	{
-		return "日期";
+		return "æ—¥æœŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDescription()
 	{
-		return "描述";
+		return "æè¿°";
 	}
 
 	protected override string _GetTemplateForHeadingEnemies()
 	{
-		return "敌人";
+		return "æ•Œäºº";
 	}
 
 	protected override string _GetTemplateForHeadingExileUserWarning()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	protected override string _GetTemplateForHeadingFunds()
 	{
-		return "资金";
+		return "èµ„é‡‘";
 	}
 
 	protected override string _GetTemplateForHeadingGames()
 	{
-		return "游戏";
+		return "æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForHeadingGroupPurchase()
 	{
-		return "群组购买确认";
+		return "ç¾¤ç»„è´­ä¹°ç¡®è®¤";
 	}
 
 	protected override string _GetTemplateForHeadingGroupShout()
 	{
-		return "群组广播";
+		return "ç¾¤ç»„å¹¿æ’­";
 	}
 
 	protected override string _GetTemplateForHeadingLeaveGroup()
 	{
-		return "离开群组";
+		return "ç¦»å¼€ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForHeadingMakePrimaryGroup()
 	{
-		return "设为主要群组";
+		return "è®¾ä¸ºä¸»è¦ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForHeadingMembers()
 	{
-		return "成员";
+		return "æˆå‘˜";
 	}
 
 	protected override string _GetTemplateForHeadingNameOrDescription()
 	{
-		return "名称或描述";
+		return "åç§°æˆ–æè¿°";
 	}
 
 	protected override string _GetTemplateForHeadingPayouts()
 	{
-		return "支出";
+		return "æ”¯å‡º";
 	}
 
 	protected override string _GetTemplateForHeadingPrimary()
 	{
-		return "主要";
+		return "ä¸»è¦";
 	}
 
 	protected override string _GetTemplateForHeadingRank()
 	{
-		return "等级";
+		return "ç­‰çº§";
 	}
 
 	protected override string _GetTemplateForHeadingRemovePrimaryGroup()
 	{
-		return "移除主要群组";
+		return "ç§»é™¤ä¸»è¦ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForHeadingRole()
 	{
-		return "角色";
+		return "è§’è‰²";
 	}
 
 	protected override string _GetTemplateForHeadingSettings()
 	{
-		return "设置";
+		return "è®¾ç½®";
 	}
 
 	protected override string _GetTemplateForHeadingShout()
 	{
-		return "广播";
+		return "å¹¿æ’­";
 	}
 
 	protected override string _GetTemplateForHeadingStore()
 	{
-		return "商店";
+		return "å•†åº—";
 	}
 
 	protected override string _GetTemplateForHeadingUser()
 	{
-		return "用户";
+		return "ç”¨æˆ·";
 	}
 
 	protected override string _GetTemplateForHeadingWall()
 	{
-		return "留言板";
+		return "ç•™è¨€æ¿";
 	}
 
 	protected override string _GetTemplateForLabelAbandon()
 	{
-		return "舍弃";
+		return "èˆå¼ƒ";
 	}
 
 	protected override string _GetTemplateForLabelAcceptAllyRequest()
 	{
-		return "接受盟友邀请";
+		return "æŽ¥å—ç›Ÿå‹é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForLabelAcceptJoinRequest()
 	{
-		return "接受加入邀请";
+		return "æŽ¥å—åŠ å…¥é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForLabelAddGroupPlace()
 	{
-		return "添加群组空间";
+		return "æ·»åŠ ç¾¤ç»„ç©ºé—´";
 	}
 
 	protected override string _GetTemplateForLabelAdjustCurrencyAmounts()
 	{
-		return "调整货币金额";
+		return "è°ƒæ•´è´§å¸é‡‘é¢";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "全部";
+		return "å…¨éƒ¨";
 	}
 
 	protected override string _GetTemplateForLabelAnyoneCanJoin()
 	{
-		return "任何人都可以加入";
+		return "ä»»ä½•äººéƒ½å¯ä»¥åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForLabelBuyAd()
 	{
-		return "购买广告";
+		return "è´­ä¹°å¹¿å‘Š";
 	}
 
 	protected override string _GetTemplateForLabelBuyClan()
 	{
-		return "购买公会";
+		return "è´­ä¹°å…¬ä¼š";
 	}
 
 	protected override string _GetTemplateForLabelByOwner()
 	{
-		return "创建者";
+		return "åˆ›å»ºè€…";
 	}
 
 	protected override string _GetTemplateForLabelCancelClanInvite()
 	{
-		return "取消公会邀请";
+		return "å–æ¶ˆå…¬ä¼šé‚€è¯·";
 	}
 
 	protected override string _GetTemplateForLabelChangeDescription()
 	{
-		return "更改描述";
+		return "æ›´æ”¹æè¿°";
 	}
 
 	protected override string _GetTemplateForLabelChangeOwner()
 	{
-		return "变更群主";
+		return "å˜æ›´ç¾¤ä¸»";
 	}
 
 	protected override string _GetTemplateForLabelChangeRank()
 	{
-		return "更改等级";
+		return "æ›´æ”¹ç­‰çº§";
 	}
 
 	protected override string _GetTemplateForLabelClaim()
 	{
-		return "获取";
+		return "èŽ·å–";
 	}
 
 	protected override string _GetTemplateForLabelConfigureBadge()
 	{
-		return "设置徽章";
+		return "è®¾ç½®å¾½ç« ";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGroupAsset()
 	{
-		return "设置群组素材";
+		return "è®¾ç½®ç¾¤ç»„ç´ æ";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGroupDevelopmentItem()
 	{
-		return "设置群组开发道具";
+		return "è®¾ç½®ç¾¤ç»„å¼€å‘é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGroupGame()
 	{
-		return "设置群组名称";
+		return "è®¾ç½®ç¾¤ç»„åç§°";
 	}
 
 	protected override string _GetTemplateForLabelConfigureItems()
 	{
-		return "设置道具";
+		return "è®¾ç½®é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelCreateBadge()
 	{
-		return "创建徽章";
+		return "åˆ›å»ºå¾½ç« ";
 	}
 
 	protected override string _GetTemplateForLabelCreateEnemy()
 	{
-		return "设定敌人";
+		return "è®¾å®šæ•Œäºº";
 	}
 
 	protected override string _GetTemplateForLabelCreateGamePass()
 	{
-		return "创建游戏通行证";
+		return "åˆ›å»ºæ¸¸æˆé€šè¡Œè¯";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroup()
 	{
-		return "创建群组";
+		return "åˆ›å»ºç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupAsset()
 	{
-		return "创建群组素材";
+		return "åˆ›å»ºç¾¤ç»„ç´ æ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupBuildersClubTooltip()
 	{
-		return "需要拥有 Builders Club 会员资格才能创建群组。";
+		return "éœ€è¦æ‹¥æœ‰ Builders Club ä¼šå‘˜èµ„æ ¼æ‰èƒ½åˆ›å»ºç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupDescription()
 	{
-		return "描述（可省略）";
+		return "æè¿°ï¼ˆå¯çœç•¥ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupDeveloperProduct()
 	{
-		return "创建群组开发者产品";
+		return "åˆ›å»ºç¾¤ç»„å¼€å‘è€…äº§å“";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupEmblem()
 	{
-		return "标志";
+		return "æ ‡å¿—";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupFee()
 	{
-		return "创建群组费用";
+		return "åˆ›å»ºç¾¤ç»„è´¹ç”¨";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupName()
 	{
-		return "命名你的群组";
+		return "å‘½åä½ çš„ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupPremiumTooltip()
 	{
-		return "需要拥有 Roblox Premium 会员资格才能创建群组。";
+		return "éœ€è¦æ‹¥æœ‰ Roblox Premium ä¼šå‘˜èµ„æ ¼æ‰èƒ½åˆ›å»ºç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupTooltip()
 	{
-		return "创建新群组";
+		return "åˆ›å»ºæ–°ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelCreateItems()
 	{
-		return "创建道具";
+		return "åˆ›å»ºé“å…·";
 	}
 
 	protected override string _GetTemplateForLabelDeclineAllyRequest()
 	{
-		return "拒绝盟友邀请";
+		return "æ‹’ç»ç›Ÿå‹é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForLabelDeclineJoinRequest()
 	{
-		return "拒绝加入邀请";
+		return "æ‹’ç»åŠ å…¥é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForLabelDelete()
 	{
-		return "删除";
+		return "åˆ é™¤";
 	}
 
 	protected override string _GetTemplateForLabelDeleteAllPostsByUser()
 	{
-		return "同时删除此用户的所有帖子。";
+		return "åŒæ—¶åˆ é™¤æ­¤ç”¨æˆ·çš„æ‰€æœ‰å¸–å­ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelDeleteAlly()
 	{
-		return "删除盟友";
+		return "åˆ é™¤ç›Ÿå‹";
 	}
 
 	protected override string _GetTemplateForLabelDeleteEnemy()
 	{
-		return "删除敌人";
+		return "åˆ é™¤æ•Œäºº";
 	}
 
 	protected override string _GetTemplateForLabelDeleteGroupPlace()
 	{
-		return "删除群组空间";
+		return "åˆ é™¤ç¾¤ç»„ç©ºé—´";
 	}
 
 	protected override string _GetTemplateForLabelDeletePost()
 	{
-		return "删除帖子";
+		return "åˆ é™¤å¸–å­";
 	}
 
 	protected override string _GetTemplateForLabelFunds()
 	{
-		return "资金";
+		return "èµ„é‡‘";
 	}
 
 	protected override string _GetTemplateForLabelGroupClosed()
 	{
-		return "群组已关闭";
+		return "ç¾¤ç»„å·²å…³é—­";
 	}
 
 	protected override string _GetTemplateForLabelGroupLocked()
 	{
-		return "此群组已被锁定";
+		return "æ­¤ç¾¤ç»„å·²è¢«é”å®š";
 	}
 
 	/// <summary>
@@ -1993,42 +1993,42 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string LabelGroupSearchResults(string searchTerm)
 	{
-		return $"搜索群组“{searchTerm}”的结果";
+		return $"æœç´¢ç¾¤ç»„â€œ{searchTerm}â€çš„ç»“æžœ";
 	}
 
 	protected override string _GetTemplateForLabelGroupSearchResults()
 	{
-		return "搜索群组“{searchTerm}”的结果";
+		return "æœç´¢ç¾¤ç»„â€œ{searchTerm}â€çš„ç»“æžœ";
 	}
 
 	protected override string _GetTemplateForLabelInviteToClan()
 	{
-		return "邀请至公会";
+		return "é‚€è¯·è‡³å…¬ä¼š";
 	}
 
 	protected override string _GetTemplateForLabelKickFromClan()
 	{
-		return "踢出公会";
+		return "è¸¢å‡ºå…¬ä¼š";
 	}
 
 	protected override string _GetTemplateForLabelLoading()
 	{
-		return "正在加载...";
+		return "æ­£åœ¨åŠ è½½...";
 	}
 
 	protected override string _GetTemplateForLabelLock()
 	{
-		return "锁定";
+		return "é”å®š";
 	}
 
 	protected override string _GetTemplateForLabelManageGroupCreations()
 	{
-		return "创建或管理群组内容。";
+		return "åˆ›å»ºæˆ–ç®¡ç†ç¾¤ç»„å†…å®¹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelManualApproval()
 	{
-		return "手动批准";
+		return "æ‰‹åŠ¨æ‰¹å‡†";
 	}
 
 	/// <summary>
@@ -2037,47 +2037,47 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string LabelMaxGroupsTooltip(string maxGroups)
 	{
-		return $"你可能只能同时加入 {maxGroups} 个群组";
+		return $"ä½ å¯èƒ½åªèƒ½åŒæ—¶åŠ å…¥ {maxGroups} ä¸ªç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelMaxGroupsTooltip()
 	{
-		return "你可能只能同时加入 {maxGroups} 个群组";
+		return "ä½ å¯èƒ½åªèƒ½åŒæ—¶åŠ å…¥ {maxGroups} ä¸ªç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelMembers()
 	{
-		return "{memberCount, plural, =0 {# 名成员} =1 {# 名成员} other {# 名成员}}";
+		return "{memberCount, plural, =0 {# åæˆå‘˜} =1 {# åæˆå‘˜} other {# åæˆå‘˜}}";
 	}
 
 	protected override string _GetTemplateForLabelModerateDiscussion()
 	{
-		return "管理对话";
+		return "ç®¡ç†å¯¹è¯";
 	}
 
 	protected override string _GetTemplateForLabelNoAllies()
 	{
-		return "此群组没有任何盟友。";
+		return "æ­¤ç¾¤ç»„æ²¡æœ‰ä»»ä½•ç›Ÿå‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoEnemies()
 	{
-		return "此群组没有任何敌人。";
+		return "æ­¤ç¾¤ç»„æ²¡æœ‰ä»»ä½•æ•Œäººã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoGames()
 	{
-		return "没有与此群组相关联的游戏。";
+		return "æ²¡æœ‰ä¸Žæ­¤ç¾¤ç»„ç›¸å…³è”çš„æ¸¸æˆã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoMembersInRole()
 	{
-		return "没有此角色的群组成员。";
+		return "æ²¡æœ‰æ­¤è§’è‰²çš„ç¾¤ç»„æˆå‘˜ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoOne()
 	{
-		return "没有人！";
+		return "æ²¡æœ‰äººï¼";
 	}
 
 	/// <summary>
@@ -2086,127 +2086,127 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string LabelNoResults(string searchTerm)
 	{
-		return $"搜索不到关于“{searchTerm}”的结果";
+		return $"æœç´¢ä¸åˆ°å…³äºŽâ€œ{searchTerm}â€çš„ç»“æžœ";
 	}
 
 	protected override string _GetTemplateForLabelNoResults()
 	{
-		return "搜索不到关于“{searchTerm}”的结果";
+		return "æœç´¢ä¸åˆ°å…³äºŽâ€œ{searchTerm}â€çš„ç»“æžœ";
 	}
 
 	protected override string _GetTemplateForLabelNoStoreItems()
 	{
-		return "此群组没有待售物品。";
+		return "æ­¤ç¾¤ç»„æ²¡æœ‰å¾…å”®ç‰©å“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoWallPosts()
 	{
-		return "还没有人发言...";
+		return "è¿˜æ²¡æœ‰äººå‘è¨€...";
 	}
 
 	protected override string _GetTemplateForLabelOnlyBcCanJoin()
 	{
-		return "只有 Builders Club 会员才能加入";
+		return "åªæœ‰ Builders Club ä¼šå‘˜æ‰èƒ½åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForLabelOnlyPremiumCanJoin()
 	{
-		return "仅限会员";
+		return "ä»…é™ä¼šå‘˜";
 	}
 
 	protected override string _GetTemplateForLabelPrivateGroup()
 	{
-		return "私人";
+		return "ç§äºº";
 	}
 
 	protected override string _GetTemplateForLabelPublicGroup()
 	{
-		return "公开";
+		return "å…¬å¼€";
 	}
 
 	protected override string _GetTemplateForLabelPublishPlace()
 	{
-		return "发布空间";
+		return "å‘å¸ƒç©ºé—´";
 	}
 
 	protected override string _GetTemplateForLabelRemoveGroupPlace()
 	{
-		return "移除群组空间";
+		return "ç§»é™¤ç¾¤ç»„ç©ºé—´";
 	}
 
 	protected override string _GetTemplateForLabelRemoveMember()
 	{
-		return "移除成员";
+		return "ç§»é™¤æˆå‘˜";
 	}
 
 	protected override string _GetTemplateForLabelRename()
 	{
-		return "重命名";
+		return "é‡å‘½å";
 	}
 
 	protected override string _GetTemplateForLabelRevertGroupAsset()
 	{
-		return "还原群组素材";
+		return "è¿˜åŽŸç¾¤ç»„ç´ æ";
 	}
 
 	protected override string _GetTemplateForLabelSavePlace()
 	{
-		return "保存空间";
+		return "ä¿å­˜ç©ºé—´";
 	}
 
 	protected override string _GetTemplateForLabelSearchGroups()
 	{
-		return "搜索全部群组";
+		return "æœç´¢å…¨éƒ¨ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelSearchUsers()
 	{
-		return "搜索用户";
+		return "æœç´¢ç”¨æˆ·";
 	}
 
 	protected override string _GetTemplateForLabelSendAllyRequest()
 	{
-		return "发送盟友邀请";
+		return "å‘é€ç›Ÿå‹é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForLabelShoutPlaceholder()
 	{
-		return "输入你的广播内容";
+		return "è¾“å…¥ä½ çš„å¹¿æ’­å†…å®¹";
 	}
 
 	protected override string _GetTemplateForLabelSpendGroupFunds()
 	{
-		return "使用群组资金";
+		return "ä½¿ç”¨ç¾¤ç»„èµ„é‡‘";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForLabelUnlock()
 	{
-		return "解锁";
+		return "è§£é”";
 	}
 
 	protected override string _GetTemplateForLabelUpdateGroupAsset()
 	{
-		return "更新群组素材";
+		return "æ›´æ–°ç¾¤ç»„ç´ æ";
 	}
 
 	protected override string _GetTemplateForLabelWallPostPlaceholder()
 	{
-		return "说点什么...";
+		return "è¯´ç‚¹ä»€ä¹ˆ...";
 	}
 
 	protected override string _GetTemplateForLabelWallPostsUnavailable()
 	{
-		return "留言板帖子暂时不可用，请稍后重试。";
+		return "ç•™è¨€æ¿å¸–å­æš‚æ—¶ä¸å¯ç”¨ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelWarning()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	/// <summary>
@@ -2215,12 +2215,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAbandon(string actor)
 	{
-		return $"“{actor}”（群主）已舍弃群组";
+		return $"â€œ{actor}â€ï¼ˆç¾¤ä¸»ï¼‰å·²èˆå¼ƒç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForMessageAbandon()
 	{
-		return "“{actor}”（群主）已舍弃群组";
+		return "â€œ{actor}â€ï¼ˆç¾¤ä¸»ï¼‰å·²èˆå¼ƒç¾¤ç»„";
 	}
 
 	/// <summary>
@@ -2229,12 +2229,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAcceptAllyRequest(string actor, string group)
 	{
-		return $"“{actor}”已接受群组“{group}”的盟友邀请";
+		return $"â€œ{actor}â€å·²æŽ¥å—ç¾¤ç»„â€œ{group}â€çš„ç›Ÿå‹é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForMessageAcceptAllyRequest()
 	{
-		return "“{actor}”已接受群组“{group}”的盟友邀请";
+		return "â€œ{actor}â€å·²æŽ¥å—ç¾¤ç»„â€œ{group}â€çš„ç›Ÿå‹é‚€è¯·";
 	}
 
 	/// <summary>
@@ -2243,12 +2243,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAcceptJoinRequest(string actor, string user)
 	{
-		return $"“{actor}”已接受了用户“{user}”的加入请求";
+		return $"â€œ{actor}â€å·²æŽ¥å—äº†ç”¨æˆ·â€œ{user}â€çš„åŠ å…¥è¯·æ±‚";
 	}
 
 	protected override string _GetTemplateForMessageAcceptJoinRequest()
 	{
-		return "“{actor}”已接受了用户“{user}”的加入请求";
+		return "â€œ{actor}â€å·²æŽ¥å—äº†ç”¨æˆ·â€œ{user}â€çš„åŠ å…¥è¯·æ±‚";
 	}
 
 	/// <summary>
@@ -2257,12 +2257,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAddGroupPlace(string actor, string game)
 	{
-		return $"“{actor}”已添加游戏“{game}”为群组游戏";
+		return $"â€œ{actor}â€å·²æ·»åŠ æ¸¸æˆâ€œ{game}â€ä¸ºç¾¤ç»„æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForMessageAddGroupPlace()
 	{
-		return "“{actor}”已添加游戏“{game}”为群组游戏";
+		return "â€œ{actor}â€å·²æ·»åŠ æ¸¸æˆâ€œ{game}â€ä¸ºç¾¤ç»„æ¸¸æˆ";
 	}
 
 	/// <summary>
@@ -2271,12 +2271,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAdjustCurrencyAmountsDecreased(string actor, string amount)
 	{
-		return $"“{actor}”已将群组资金减少 {amount}";
+		return $"â€œ{actor}â€å·²å°†ç¾¤ç»„èµ„é‡‘å‡å°‘ {amount}";
 	}
 
 	protected override string _GetTemplateForMessageAdjustCurrencyAmountsDecreased()
 	{
-		return "“{actor}”已将群组资金减少 {amount}";
+		return "â€œ{actor}â€å·²å°†ç¾¤ç»„èµ„é‡‘å‡å°‘ {amount}";
 	}
 
 	/// <summary>
@@ -2285,27 +2285,27 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAdjustCurrencyAmountsIncreased(string actor, string amount)
 	{
-		return $"“{actor}”已将群组资金增加 {amount}";
+		return $"â€œ{actor}â€å·²å°†ç¾¤ç»„èµ„é‡‘å¢žåŠ  {amount}";
 	}
 
 	protected override string _GetTemplateForMessageAdjustCurrencyAmountsIncreased()
 	{
-		return "“{actor}”已将群组资金增加 {amount}";
+		return "â€œ{actor}â€å·²å°†ç¾¤ç»„èµ„é‡‘å¢žåŠ  {amount}";
 	}
 
 	protected override string _GetTemplateForMessageAlreadyMember()
 	{
-		return "你已加入此群组。";
+		return "ä½ å·²åŠ å…¥æ­¤ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAlreadyRequested()
 	{
-		return "你已请求加入此群组。";
+		return "ä½ å·²è¯·æ±‚åŠ å…¥æ­¤ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageBuildGroupRolesListError()
 	{
-		return "无法加载所选角色的成员。";
+		return "æ— æ³•åŠ è½½æ‰€é€‰è§’è‰²çš„æˆå‘˜ã€‚";
 	}
 
 	/// <summary>
@@ -2314,12 +2314,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageBuyAd(string actor, string bid, string adName)
 	{
-		return $"“{actor}”已在群组广告“{adName}”竞拍 {bid}";
+		return $"â€œ{actor}â€å·²åœ¨ç¾¤ç»„å¹¿å‘Šâ€œ{adName}â€ç«žæ‹ {bid}";
 	}
 
 	protected override string _GetTemplateForMessageBuyAd()
 	{
-		return "“{actor}”已在群组广告“{adName}”竞拍 {bid}";
+		return "â€œ{actor}â€å·²åœ¨ç¾¤ç»„å¹¿å‘Šâ€œ{adName}â€ç«žæ‹ {bid}";
 	}
 
 	/// <summary>
@@ -2328,12 +2328,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageBuyClan(string actor)
 	{
-		return $"“{actor}”已购买群组公会";
+		return $"â€œ{actor}â€å·²è´­ä¹°ç¾¤ç»„å…¬ä¼š";
 	}
 
 	protected override string _GetTemplateForMessageBuyClan()
 	{
-		return "“{actor}”已购买群组公会";
+		return "â€œ{actor}â€å·²è´­ä¹°ç¾¤ç»„å…¬ä¼š";
 	}
 
 	/// <summary>
@@ -2342,17 +2342,17 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCancelClanInvite(string actor, string user)
 	{
-		return $"“{actor}”已取消“{user}”的公会邀请";
+		return $"â€œ{actor}â€å·²å–æ¶ˆâ€œ{user}â€çš„å…¬ä¼šé‚€è¯·";
 	}
 
 	protected override string _GetTemplateForMessageCancelClanInvite()
 	{
-		return "“{actor}”已取消“{user}”的公会邀请";
+		return "â€œ{actor}â€å·²å–æ¶ˆâ€œ{user}â€çš„å…¬ä¼šé‚€è¯·";
 	}
 
 	protected override string _GetTemplateForMessageCannotClaimGroupWithOwner()
 	{
-		return "此群组已有群主。";
+		return "æ­¤ç¾¤ç»„å·²æœ‰ç¾¤ä¸»ã€‚";
 	}
 
 	/// <summary>
@@ -2361,12 +2361,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageChangeDescription(string actor, string newDescription)
 	{
-		return $"“{actor}”已将描述改为“{newDescription}”";
+		return $"â€œ{actor}â€å·²å°†æè¿°æ”¹ä¸ºâ€œ{newDescription}â€";
 	}
 
 	protected override string _GetTemplateForMessageChangeDescription()
 	{
-		return "“{actor}”已将描述改为“{newDescription}”";
+		return "â€œ{actor}â€å·²å°†æè¿°æ”¹ä¸ºâ€œ{newDescription}â€";
 	}
 
 	/// <summary>
@@ -2375,17 +2375,17 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageChangeOwner(string actor, string user)
 	{
-		return $"“{actor}”已更改群主。新的群主为“{user}”";
+		return $"â€œ{actor}â€å·²æ›´æ”¹ç¾¤ä¸»ã€‚æ–°çš„ç¾¤ä¸»ä¸ºâ€œ{user}â€";
 	}
 
 	protected override string _GetTemplateForMessageChangeOwner()
 	{
-		return "“{actor}”已更改群主。新的群主为“{user}”";
+		return "â€œ{actor}â€å·²æ›´æ”¹ç¾¤ä¸»ã€‚æ–°çš„ç¾¤ä¸»ä¸ºâ€œ{user}â€";
 	}
 
 	protected override string _GetTemplateForMessageChangeOwnerEmpty()
 	{
-		return "群组没有群主";
+		return "ç¾¤ç»„æ²¡æœ‰ç¾¤ä¸»";
 	}
 
 	/// <summary>
@@ -2394,12 +2394,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageChangeRank(string actor, string user, string oldRoleSet, string newRoleSet)
 	{
-		return $"“{actor}”已将用户“{user}”的等级从{oldRoleSet}更改为{newRoleSet}";
+		return $"â€œ{actor}â€å·²å°†ç”¨æˆ·â€œ{user}â€çš„ç­‰çº§ä»Ž{oldRoleSet}æ›´æ”¹ä¸º{newRoleSet}";
 	}
 
 	protected override string _GetTemplateForMessageChangeRank()
 	{
-		return "“{actor}”已将用户“{user}”的等级从{oldRoleSet}更改为{newRoleSet}";
+		return "â€œ{actor}â€å·²å°†ç”¨æˆ·â€œ{user}â€çš„ç­‰çº§ä»Ž{oldRoleSet}æ›´æ”¹ä¸º{newRoleSet}";
 	}
 
 	/// <summary>
@@ -2408,22 +2408,22 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageClaim(string actor)
 	{
-		return $"“{actor}”已成为群主";
+		return $"â€œ{actor}â€å·²æˆä¸ºç¾¤ä¸»";
 	}
 
 	protected override string _GetTemplateForMessageClaim()
 	{
-		return "“{actor}”已成为群主";
+		return "â€œ{actor}â€å·²æˆä¸ºç¾¤ä¸»";
 	}
 
 	protected override string _GetTemplateForMessageClaimOwnershipError()
 	{
-		return "无法成为群主。";
+		return "æ— æ³•æˆä¸ºç¾¤ä¸»ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageClaimOwnershipSuccess()
 	{
-		return "成功成为群主。";
+		return "æˆåŠŸæˆä¸ºç¾¤ä¸»ã€‚";
 	}
 
 	/// <summary>
@@ -2432,12 +2432,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureAsset(string actor, string item, string actions)
 	{
-		return $"“{actor}”已更新素材“{item}”：{actions}\n";
+		return $"â€œ{actor}â€å·²æ›´æ–°ç´ æâ€œ{item}â€ï¼š{actions}\n";
 	}
 
 	protected override string _GetTemplateForMessageConfigureAsset()
 	{
-		return "“{actor}”已更新素材“{item}”：{actions}\n";
+		return "â€œ{actor}â€å·²æ›´æ–°ç´ æâ€œ{item}â€ï¼š{actions}\n";
 	}
 
 	/// <summary>
@@ -2446,12 +2446,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureBadgeDisabled(string actor, string badge)
 	{
-		return $"“{actor}”已停用徽章“{badge}”";
+		return $"â€œ{actor}â€å·²åœç”¨å¾½ç« â€œ{badge}â€";
 	}
 
 	protected override string _GetTemplateForMessageConfigureBadgeDisabled()
 	{
-		return "“{actor}”已停用徽章“{badge}”";
+		return "â€œ{actor}â€å·²åœç”¨å¾½ç« â€œ{badge}â€";
 	}
 
 	/// <summary>
@@ -2460,12 +2460,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureBadgeEnabled(string actor, string badge)
 	{
-		return $"“{actor}”已启用徽章“{badge}”";
+		return $"â€œ{actor}â€å·²å¯ç”¨å¾½ç« â€œ{badge}â€";
 	}
 
 	protected override string _GetTemplateForMessageConfigureBadgeEnabled()
 	{
-		return "“{actor}”已启用徽章“{badge}”";
+		return "â€œ{actor}â€å·²å¯ç”¨å¾½ç« â€œ{badge}â€";
 	}
 
 	/// <summary>
@@ -2474,12 +2474,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureBadgeUpdate(string actor, string badge)
 	{
-		return $"“{actor}”已设置徽章“{badge}”";
+		return $"â€œ{actor}â€å·²è®¾ç½®å¾½ç« â€œ{badge}â€";
 	}
 
 	protected override string _GetTemplateForMessageConfigureBadgeUpdate()
 	{
-		return "“{actor}”已设置徽章“{badge}”";
+		return "â€œ{actor}â€å·²è®¾ç½®å¾½ç« â€œ{badge}â€";
 	}
 
 	/// <summary>
@@ -2488,12 +2488,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureGame(string actor, string game, string actions)
 	{
-		return $"“{actor}”已更新素材“{game}”：{actions}\n";
+		return $"â€œ{actor}â€å·²æ›´æ–°ç´ æâ€œ{game}â€ï¼š{actions}\n";
 	}
 
 	protected override string _GetTemplateForMessageConfigureGame()
 	{
-		return "“{actor}”已更新素材“{game}”：{actions}\n";
+		return "â€œ{actor}â€å·²æ›´æ–°ç´ æâ€œ{game}â€ï¼š{actions}\n";
 	}
 
 	/// <summary>
@@ -2502,12 +2502,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureGameDeveloperProduct(string actor, string id, string actions)
 	{
-		return $"“{actor}”已更新 ID 为 {id} 的开发者产品：{actions}\n";
+		return $"â€œ{actor}â€å·²æ›´æ–° ID ä¸º {id} çš„å¼€å‘è€…äº§å“ï¼š{actions}\n";
 	}
 
 	protected override string _GetTemplateForMessageConfigureGameDeveloperProduct()
 	{
-		return "“{actor}”已更新 ID 为 {id} 的开发者产品：{actions}\n";
+		return "â€œ{actor}â€å·²æ›´æ–° ID ä¸º {id} çš„å¼€å‘è€…äº§å“ï¼š{actions}\n";
 	}
 
 	/// <summary>
@@ -2516,12 +2516,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureItems(string actor, string item)
 	{
-		return $"“{actor}”已设置群组道具“{item}”";
+		return $"â€œ{actor}â€å·²è®¾ç½®ç¾¤ç»„é“å…·â€œ{item}â€";
 	}
 
 	protected override string _GetTemplateForMessageConfigureItems()
 	{
-		return "“{actor}”已设置群组道具“{item}”";
+		return "â€œ{actor}â€å·²è®¾ç½®ç¾¤ç»„é“å…·â€œ{item}â€";
 	}
 
 	/// <summary>
@@ -2530,12 +2530,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateAsset(string actor, string item)
 	{
-		return $"“{actor}”已创建素材“{item}”";
+		return $"â€œ{actor}â€å·²åˆ›å»ºç´ æâ€œ{item}â€";
 	}
 
 	protected override string _GetTemplateForMessageCreateAsset()
 	{
-		return "“{actor}”已创建素材“{item}”";
+		return "â€œ{actor}â€å·²åˆ›å»ºç´ æâ€œ{item}â€";
 	}
 
 	/// <summary>
@@ -2544,12 +2544,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateBadge(string actor, string badge)
 	{
-		return $"“{actor}”已建立徽章“{badge}”";
+		return $"â€œ{actor}â€å·²å»ºç«‹å¾½ç« â€œ{badge}â€";
 	}
 
 	protected override string _GetTemplateForMessageCreateBadge()
 	{
-		return "“{actor}”已建立徽章“{badge}”";
+		return "â€œ{actor}â€å·²å»ºç«‹å¾½ç« â€œ{badge}â€";
 	}
 
 	/// <summary>
@@ -2558,12 +2558,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateDeveloperProduct(string actor, string id)
 	{
-		return $"“{actor}”已创建开发者产品，ID 为 {id}";
+		return $"â€œ{actor}â€å·²åˆ›å»ºå¼€å‘è€…äº§å“ï¼ŒID ä¸º {id}";
 	}
 
 	protected override string _GetTemplateForMessageCreateDeveloperProduct()
 	{
-		return "“{actor}”已创建开发者产品，ID 为 {id}";
+		return "â€œ{actor}â€å·²åˆ›å»ºå¼€å‘è€…äº§å“ï¼ŒID ä¸º {id}";
 	}
 
 	/// <summary>
@@ -2572,12 +2572,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateEnemy(string actor, string group)
 	{
-		return $"“{actor}”已宣布“{group}”为敌人";
+		return $"â€œ{actor}â€å·²å®£å¸ƒâ€œ{group}â€ä¸ºæ•Œäºº";
 	}
 
 	protected override string _GetTemplateForMessageCreateEnemy()
 	{
-		return "“{actor}”已宣布“{group}”为敌人";
+		return "â€œ{actor}â€å·²å®£å¸ƒâ€œ{group}â€ä¸ºæ•Œäºº";
 	}
 
 	/// <summary>
@@ -2586,12 +2586,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateGamePass(string actor, string game, string gamePass)
 	{
-		return $"“{actor}”已为“{game}”创建游戏通行证：{gamePass}";
+		return $"â€œ{actor}â€å·²ä¸ºâ€œ{game}â€åˆ›å»ºæ¸¸æˆé€šè¡Œè¯ï¼š{gamePass}";
 	}
 
 	protected override string _GetTemplateForMessageCreateGamePass()
 	{
-		return "“{actor}”已为“{game}”创建游戏通行证：{gamePass}";
+		return "â€œ{actor}â€å·²ä¸ºâ€œ{game}â€åˆ›å»ºæ¸¸æˆé€šè¡Œè¯ï¼š{gamePass}";
 	}
 
 	/// <summary>
@@ -2600,12 +2600,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateItems(string actor, string item)
 	{
-		return $"“{actor}”已创建群组物品“{item}”";
+		return $"â€œ{actor}â€å·²åˆ›å»ºç¾¤ç»„ç‰©å“â€œ{item}â€";
 	}
 
 	protected override string _GetTemplateForMessageCreateItems()
 	{
-		return "“{actor}”已创建群组物品“{item}”";
+		return "â€œ{actor}â€å·²åˆ›å»ºç¾¤ç»„ç‰©å“â€œ{item}â€";
 	}
 
 	/// <summary>
@@ -2614,12 +2614,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeclineAllyRequest(string actor, string group)
 	{
-		return $"“{actor}”已拒绝群组“{group}”的盟友邀请";
+		return $"â€œ{actor}â€å·²æ‹’ç»ç¾¤ç»„â€œ{group}â€çš„ç›Ÿå‹é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForMessageDeclineAllyRequest()
 	{
-		return "“{actor}”已拒绝群组“{group}”的盟友邀请";
+		return "â€œ{actor}â€å·²æ‹’ç»ç¾¤ç»„â€œ{group}â€çš„ç›Ÿå‹é‚€è¯·";
 	}
 
 	/// <summary>
@@ -2628,17 +2628,17 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeclineJoinRequest(string actor, string user)
 	{
-		return $"“{actor}”已拒绝用户“{user}”的加入请求";
+		return $"â€œ{actor}â€å·²æ‹’ç»ç”¨æˆ·â€œ{user}â€çš„åŠ å…¥è¯·æ±‚";
 	}
 
 	protected override string _GetTemplateForMessageDeclineJoinRequest()
 	{
-		return "“{actor}”已拒绝用户“{user}”的加入请求";
+		return "â€œ{actor}â€å·²æ‹’ç»ç”¨æˆ·â€œ{user}â€çš„åŠ å…¥è¯·æ±‚";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "发生错误。";
+		return "å‘ç”Ÿé”™è¯¯ã€‚";
 	}
 
 	/// <summary>
@@ -2647,12 +2647,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDelete(string actor)
 	{
-		return $"“{actor}”已删除当前群组";
+		return $"â€œ{actor}â€å·²åˆ é™¤å½“å‰ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForMessageDelete()
 	{
-		return "“{actor}”已删除当前群组";
+		return "â€œ{actor}â€å·²åˆ é™¤å½“å‰ç¾¤ç»„";
 	}
 
 	/// <summary>
@@ -2661,12 +2661,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeleteAlly(string actor, string group)
 	{
-		return $"“{actor}”已将群组“{group}”从盟友移除";
+		return $"â€œ{actor}â€å·²å°†ç¾¤ç»„â€œ{group}â€ä»Žç›Ÿå‹ç§»é™¤";
 	}
 
 	protected override string _GetTemplateForMessageDeleteAlly()
 	{
-		return "“{actor}”已将群组“{group}”从盟友移除";
+		return "â€œ{actor}â€å·²å°†ç¾¤ç»„â€œ{group}â€ä»Žç›Ÿå‹ç§»é™¤";
 	}
 
 	/// <summary>
@@ -2675,12 +2675,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeleteEnemy(string actor, string group)
 	{
-		return $"“{actor}”已将群组“{group}”从敌人移除";
+		return $"â€œ{actor}â€å·²å°†ç¾¤ç»„â€œ{group}â€ä»Žæ•Œäººç§»é™¤";
 	}
 
 	protected override string _GetTemplateForMessageDeleteEnemy()
 	{
-		return "“{actor}”已将群组“{group}”从敌人移除";
+		return "â€œ{actor}â€å·²å°†ç¾¤ç»„â€œ{group}â€ä»Žæ•Œäººç§»é™¤";
 	}
 
 	/// <summary>
@@ -2689,12 +2689,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeleteGroupPlace(string actor, string game)
 	{
-		return $"“{actor}”已移除群组游戏“{game}”";
+		return $"â€œ{actor}â€å·²ç§»é™¤ç¾¤ç»„æ¸¸æˆâ€œ{game}â€";
 	}
 
 	protected override string _GetTemplateForMessageDeleteGroupPlace()
 	{
-		return "“{actor}”已移除群组游戏“{game}”";
+		return "â€œ{actor}â€å·²ç§»é™¤ç¾¤ç»„æ¸¸æˆâ€œ{game}â€";
 	}
 
 	/// <summary>
@@ -2703,67 +2703,67 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeletePost(string actor, string postDesc, string user)
 	{
-		return $"“{actor}”已将用户“{user}”的帖子“{postDesc}”删除";
+		return $"â€œ{actor}â€å·²å°†ç”¨æˆ·â€œ{user}â€çš„å¸–å­â€œ{postDesc}â€åˆ é™¤";
 	}
 
 	protected override string _GetTemplateForMessageDeletePost()
 	{
-		return "“{actor}”已将用户“{user}”的帖子“{postDesc}”删除";
+		return "â€œ{actor}â€å·²å°†ç”¨æˆ·â€œ{user}â€çš„å¸–å­â€œ{postDesc}â€åˆ é™¤";
 	}
 
 	protected override string _GetTemplateForMessageDeleteWallPostError()
 	{
-		return "无法删除留言板帖子。";
+		return "æ— æ³•åˆ é™¤ç•™è¨€æ¿å¸–å­ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDeleteWallPostsByUserError()
 	{
-		return "无法删除此用户的帖子。";
+		return "æ— æ³•åˆ é™¤æ­¤ç”¨æˆ·çš„å¸–å­ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDeleteWallPostSuccess()
 	{
-		return "成功删除帖子。";
+		return "æˆåŠŸåˆ é™¤å¸–å­ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionTooLong()
 	{
-		return "描述过长。";
+		return "æè¿°è¿‡é•¿ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDuplicateName()
 	{
-		return "名称已被使用，请输入新的名称。";
+		return "åç§°å·²è¢«ä½¿ç”¨ï¼Œè¯·è¾“å…¥æ–°çš„åç§°ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageExileUserError()
 	{
-		return "无法驱逐用户。";
+		return "æ— æ³•é©±é€ç”¨æˆ·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFeatureDisabled()
 	{
-		return "此功能已停用。";
+		return "æ­¤åŠŸèƒ½å·²åœç”¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGetGroupRelationshipsError()
 	{
-		return "无法加载群组伙伴。";
+		return "æ— æ³•åŠ è½½ç¾¤ç»„ä¼™ä¼´ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupClosed()
 	{
-		return "你不能加入已关闭的群组。";
+		return "ä½ ä¸èƒ½åŠ å…¥å·²å…³é—­çš„ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupCreationDisabled()
 	{
-		return "当前无法创建群组。";
+		return "å½“å‰æ— æ³•åˆ›å»ºç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupIconInvalid()
 	{
-		return "图标缺失或无效。";
+		return "å›¾æ ‡ç¼ºå¤±æˆ–æ— æ•ˆã€‚";
 	}
 
 	/// <summary>
@@ -2772,127 +2772,127 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageGroupIconTooLarge(string maxSize)
 	{
-		return $"图标大小不可超过 {maxSize} MB。";
+		return $"å›¾æ ‡å¤§å°ä¸å¯è¶…è¿‡ {maxSize} MBã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupIconTooLarge()
 	{
-		return "图标大小不可超过 {maxSize} MB。";
+		return "å›¾æ ‡å¤§å°ä¸å¯è¶…è¿‡ {maxSize} MBã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupMembershipsUnavailableError()
 	{
-		return "群组会员系统当前不可用。请稍后重试。";
+		return "ç¾¤ç»„ä¼šå‘˜ç³»ç»Ÿå½“å‰ä¸å¯ç”¨ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientFunds()
 	{
-		return "Robux 不足。";
+		return "Robux ä¸è¶³ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientGroupSpace()
 	{
-		return "你加入的群组数量已达上限。";
+		return "ä½ åŠ å…¥çš„ç¾¤ç»„æ•°é‡å·²è¾¾ä¸Šé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientMembership()
 	{
-		return "你的 Builders Club 会员资格不足，无法加入此群组。";
+		return "ä½ çš„ Builders Club ä¼šå‘˜èµ„æ ¼ä¸è¶³ï¼Œæ— æ³•åŠ å…¥æ­¤ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientPermission()
 	{
-		return "权限不足，无法完成请求。";
+		return "æƒé™ä¸è¶³ï¼Œæ— æ³•å®Œæˆè¯·æ±‚ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientPermissionsForRelationships()
 	{
-		return "你没有权限管理群组关系。";
+		return "ä½ æ²¡æœ‰æƒé™ç®¡ç†ç¾¤ç»„å…³ç³»ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientRobux()
 	{
-		return "你的 Robux 不足，无法创建群组。";
+		return "ä½ çš„ Robux ä¸è¶³ï¼Œæ— æ³•åˆ›å»ºç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidAmount()
 	{
-		return "金额无效。";
+		return "é‡‘é¢æ— æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroup()
 	{
-		return "群组无效或不存在。";
+		return "ç¾¤ç»„æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupIcon()
 	{
-		return "群组图标无效。";
+		return "ç¾¤ç»„å›¾æ ‡æ— æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupId()
 	{
-		return "群组无效或不存在。";
+		return "ç¾¤ç»„æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupWallPostId()
 	{
-		return "群组页面帖子 ID 无效或不存在。";
+		return "ç¾¤ç»„é¡µé¢å¸–å­ ID æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidIds()
 	{
-		return "无法从请求取出 ID。";
+		return "æ— æ³•ä»Žè¯·æ±‚å–å‡º IDã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidIdsError()
 	{
-		return "无法从请求取出 ID。";
+		return "æ— æ³•ä»Žè¯·æ±‚å–å‡º IDã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidMembership()
 	{
-		return "用户必须是 Builders Club 会员。";
+		return "ç”¨æˆ·å¿…é¡»æ˜¯ Builders Club ä¼šå‘˜ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidName()
 	{
-		return "名称无效。";
+		return "åç§°æ— æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPaginationParameters()
 	{
-		return "分页参数无效或不存在。";
+		return "åˆ†é¡µå‚æ•°æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPayoutType()
 	{
-		return "支付类型无效。";
+		return "æ”¯ä»˜ç±»åž‹æ— æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRecipient()
 	{
-		return "收件人无效。";
+		return "æ”¶ä»¶äººæ— æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRelationshipType()
 	{
-		return "群组关系类型无效。";
+		return "ç¾¤ç»„å…³ç³»ç±»åž‹æ— æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRoleSetId()
 	{
-		return "等级无效或不存在。";
+		return "ç­‰çº§æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidUser()
 	{
-		return "用户无效或不存在。";
+		return "ç”¨æˆ·æ— æ•ˆæˆ–ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidWallPostContent()
 	{
-		return "你的帖子可能为空白、包含空格，或超过 500 个字符。";
+		return "ä½ çš„å¸–å­å¯èƒ½ä¸ºç©ºç™½ã€åŒ…å«ç©ºæ ¼ï¼Œæˆ–è¶…è¿‡ 500 ä¸ªå­—ç¬¦ã€‚";
 	}
 
 	/// <summary>
@@ -2901,27 +2901,27 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageInviteToClan(string actor, string user)
 	{
-		return $"“{actor}”已邀请用户“{user}”至工会";
+		return $"â€œ{actor}â€å·²é‚€è¯·ç”¨æˆ·â€œ{user}â€è‡³å·¥ä¼š";
 	}
 
 	protected override string _GetTemplateForMessageInviteToClan()
 	{
-		return "“{actor}”已邀请用户“{user}”至工会";
+		return "â€œ{actor}â€å·²é‚€è¯·ç”¨æˆ·â€œ{user}â€è‡³å·¥ä¼š";
 	}
 
 	protected override string _GetTemplateForMessageJoinGroupError()
 	{
-		return "无法加入群组。";
+		return "æ— æ³•åŠ å…¥ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageJoinGroupPendingSuccess()
 	{
-		return "加入群组请求已发送，请等待审核。";
+		return "åŠ å…¥ç¾¤ç»„è¯·æ±‚å·²å‘é€ï¼Œè¯·ç­‰å¾…å®¡æ ¸ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageJoinGroupSuccess()
 	{
-		return "成功加入群组。";
+		return "æˆåŠŸåŠ å…¥ç¾¤ç»„ã€‚";
 	}
 
 	/// <summary>
@@ -2930,57 +2930,57 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageKickFromClan(string actor, string user)
 	{
-		return $"“{actor}”已将用户“{user}”踢出公会";
+		return $"â€œ{actor}â€å·²å°†ç”¨æˆ·â€œ{user}â€è¸¢å‡ºå…¬ä¼š";
 	}
 
 	protected override string _GetTemplateForMessageKickFromClan()
 	{
-		return "“{actor}”已将用户“{user}”踢出公会";
+		return "â€œ{actor}â€å·²å°†ç”¨æˆ·â€œ{user}â€è¸¢å‡ºå…¬ä¼š";
 	}
 
 	protected override string _GetTemplateForMessageLeaveGroupError()
 	{
-		return "无法离开群组。";
+		return "æ— æ³•ç¦»å¼€ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupError()
 	{
-		return "无法加载群组。";
+		return "æ— æ³•åŠ è½½ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupGamesError()
 	{
-		return "无法加载游戏。";
+		return "æ— æ³•åŠ è½½æ¸¸æˆã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupListError()
 	{
-		return "无法加载群组列表。";
+		return "æ— æ³•åŠ è½½ç¾¤ç»„åˆ—è¡¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupMembershipsError()
 	{
-		return "无法加载用户会员资格信息。";
+		return "æ— æ³•åŠ è½½ç”¨æˆ·ä¼šå‘˜èµ„æ ¼ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupMetadataError()
 	{
-		return "无法加载群组信息。";
+		return "æ— æ³•åŠ è½½ç¾¤ç»„ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupStoreItemsError()
 	{
-		return "无法加载商店道具。";
+		return "æ— æ³•åŠ è½½å•†åº—é“å…·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadUserGroupMembershipError()
 	{
-		return "无法加载群组成员信息。";
+		return "æ— æ³•åŠ è½½ç¾¤ç»„æˆå‘˜ä¿¡æ¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadWallPostsError()
 	{
-		return "无法加载帖子。";
+		return "æ— æ³•åŠ è½½å¸–å­ã€‚";
 	}
 
 	/// <summary>
@@ -2989,67 +2989,67 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageLock(string actor)
 	{
-		return $"“{actor}”已锁定群组";
+		return $"â€œ{actor}â€å·²é”å®šç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForMessageLock()
 	{
-		return "“{actor}”已锁定群组";
+		return "â€œ{actor}â€å·²é”å®šç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForMessageMakePrimaryError()
 	{
-		return "无法设为主要群组。";
+		return "æ— æ³•è®¾ä¸ºä¸»è¦ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageMaxGroups()
 	{
-		return "用户加入的群组数量已达上限。";
+		return "ç”¨æˆ·åŠ å…¥çš„ç¾¤ç»„æ•°é‡å·²è¾¾ä¸Šé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageMissingGroupIcon()
 	{
-		return "请求中找不到群组图标。";
+		return "è¯·æ±‚ä¸­æ‰¾ä¸åˆ°ç¾¤ç»„å›¾æ ‡ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageMissingGroupStatusContent()
 	{
-		return "群组状态内容不存在。";
+		return "ç¾¤ç»„çŠ¶æ€å†…å®¹ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNameInvalid()
 	{
-		return "名称缺失或包含无效字符。";
+		return "åç§°ç¼ºå¤±æˆ–åŒ…å«æ— æ•ˆå­—ç¬¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNameModerated()
 	{
-		return "名称已被过滤。";
+		return "åç§°å·²è¢«è¿‡æ»¤ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNameTaken()
 	{
-		return "名称已占用。";
+		return "åç§°å·²å ç”¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNameTooLong()
 	{
-		return "名称过长。";
+		return "åç§°è¿‡é•¿ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNoPrimary()
 	{
-		return "该用户没有主要群组。";
+		return "è¯¥ç”¨æˆ·æ²¡æœ‰ä¸»è¦ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePassCaptchaToJoin()
 	{
-		return "若要加入此群组，请先通过 Captcha 验证。";
+		return "è‹¥è¦åŠ å…¥æ­¤ç¾¤ç»„ï¼Œè¯·å…ˆé€šè¿‡ Captcha éªŒè¯ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePassCaptchaToPost()
 	{
-		return "若要在群组页面发布帖子，请先通过 Captcha 验证。";
+		return "è‹¥è¦åœ¨ç¾¤ç»„é¡µé¢å‘å¸ƒå¸–å­ï¼Œè¯·å…ˆé€šè¿‡ Captcha éªŒè¯ã€‚";
 	}
 
 	/// <summary>
@@ -3058,12 +3058,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessagePostStatus(string actor, string groupStatus)
 	{
-		return $"“{actor}”已将群组状态更改为“{groupStatus}”";
+		return $"â€œ{actor}â€å·²å°†ç¾¤ç»„çŠ¶æ€æ›´æ”¹ä¸ºâ€œ{groupStatus}â€";
 	}
 
 	protected override string _GetTemplateForMessagePostStatus()
 	{
-		return "“{actor}”已将群组状态更改为“{groupStatus}”";
+		return "â€œ{actor}â€å·²å°†ç¾¤ç»„çŠ¶æ€æ›´æ”¹ä¸ºâ€œ{groupStatus}â€";
 	}
 
 	/// <summary>
@@ -3072,17 +3072,17 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageRemoveMember(string actor, string user)
 	{
-		return $"“{actor}”已将用户“{user}”踢出";
+		return $"â€œ{actor}â€å·²å°†ç”¨æˆ·â€œ{user}â€è¸¢å‡º";
 	}
 
 	protected override string _GetTemplateForMessageRemoveMember()
 	{
-		return "“{actor}”已将用户“{user}”踢出";
+		return "â€œ{actor}â€å·²å°†ç”¨æˆ·â€œ{user}â€è¸¢å‡º";
 	}
 
 	protected override string _GetTemplateForMessageRemovePrimaryError()
 	{
-		return "无法移除主要群组。";
+		return "æ— æ³•ç§»é™¤ä¸»è¦ç¾¤ç»„ã€‚";
 	}
 
 	/// <summary>
@@ -3091,27 +3091,27 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageRename(string actor, string newName)
 	{
-		return $"“{actor}”已将当前群组名称更改为“{newName}”";
+		return $"â€œ{actor}â€å·²å°†å½“å‰ç¾¤ç»„åç§°æ›´æ”¹ä¸ºâ€œ{newName}â€";
 	}
 
 	protected override string _GetTemplateForMessageRename()
 	{
-		return "“{actor}”已将当前群组名称更改为“{newName}”";
+		return "â€œ{actor}â€å·²å°†å½“å‰ç¾¤ç»„åç§°æ›´æ”¹ä¸ºâ€œ{newName}â€";
 	}
 
 	protected override string _GetTemplateForMessageSearchTermCharactersLimit()
 	{
-		return "搜索字符须为 2 到 50 个字符之间";
+		return "æœç´¢å­—ç¬¦é¡»ä¸º 2 åˆ° 50 ä¸ªå­—ç¬¦ä¹‹é—´";
 	}
 
 	protected override string _GetTemplateForMessageSearchTermEmptyError()
 	{
-		return "搜索字符为空";
+		return "æœç´¢å­—ç¬¦ä¸ºç©º";
 	}
 
 	protected override string _GetTemplateForMessageSearchTermFilteredError()
 	{
-		return "搜索字符已被过滤";
+		return "æœç´¢å­—ç¬¦å·²è¢«è¿‡æ»¤";
 	}
 
 	/// <summary>
@@ -3120,22 +3120,22 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageSendAllyRequest(string actor, string group)
 	{
-		return $"“{actor}”向群组“{group}”发送了盟友邀请";
+		return $"â€œ{actor}â€å‘ç¾¤ç»„â€œ{group}â€å‘é€äº†ç›Ÿå‹é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForMessageSendAllyRequest()
 	{
-		return "“{actor}”向群组“{group}”发送了盟友邀请";
+		return "â€œ{actor}â€å‘ç¾¤ç»„â€œ{group}â€å‘é€äº†ç›Ÿå‹é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForMessageSendGroupShoutError()
 	{
-		return "无法发送群组广播。";
+		return "æ— æ³•å‘é€ç¾¤ç»„å¹¿æ’­ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSendPostError()
 	{
-		return "无法发送帖子。";
+		return "æ— æ³•å‘é€å¸–å­ã€‚";
 	}
 
 	/// <summary>
@@ -3144,77 +3144,77 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageSpendGroupFunds(string actor, string amount, string item)
 	{
-		return $"“{actor}”已使用 {amount} 群组资金购买“{item}”";
+		return $"â€œ{actor}â€å·²ä½¿ç”¨ {amount} ç¾¤ç»„èµ„é‡‘è´­ä¹°â€œ{item}â€";
 	}
 
 	protected override string _GetTemplateForMessageSpendGroupFunds()
 	{
-		return "“{actor}”已使用 {amount} 群组资金购买“{item}”";
+		return "â€œ{actor}â€å·²ä½¿ç”¨ {amount} ç¾¤ç»„èµ„é‡‘è´­ä¹°â€œ{item}â€";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAttempts()
 	{
-		return "尝试加入群组的次数过多。请稍后重试。";
+		return "å°è¯•åŠ å…¥ç¾¤ç»„çš„æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAttemptsToClaimGroups()
 	{
-		return "尝试认领群组的次数过多。请稍后重试。";
+		return "å°è¯•è®¤é¢†ç¾¤ç»„çš„æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyGroups()
 	{
-		return "你加入的群组已达上限。创建新群组前，请先离开一个群组。";
+		return "ä½ åŠ å…¥çš„ç¾¤ç»„å·²è¾¾ä¸Šé™ã€‚åˆ›å»ºæ–°ç¾¤ç»„å‰ï¼Œè¯·å…ˆç¦»å¼€ä¸€ä¸ªç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyIds()
 	{
-		return "请求 ID 数量过多。";
+		return "è¯·æ±‚ ID æ•°é‡è¿‡å¤šã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyPosts()
 	{
-		return "你的帖子发布频率过高，请稍候重试。";
+		return "ä½ çš„å¸–å­å‘å¸ƒé¢‘çŽ‡è¿‡é«˜ï¼Œè¯·ç¨å€™é‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyRequests()
 	{
-		return "请求过多。";
+		return "è¯·æ±‚è¿‡å¤šã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedForPostStatus()
 	{
-		return "你没有权限来限定此群组的状态。";
+		return "ä½ æ²¡æœ‰æƒé™æ¥é™å®šæ­¤ç¾¤ç»„çš„çŠ¶æ€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedForViewGroupPayouts()
 	{
-		return "你没有权限查看此群组的支付。";
+		return "ä½ æ²¡æœ‰æƒé™æŸ¥çœ‹æ­¤ç¾¤ç»„çš„æ”¯ä»˜ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToClaimGroup()
 	{
-		return "你没有权限认领此群组。";
+		return "ä½ æ²¡æœ‰æƒé™è®¤é¢†æ­¤ç¾¤ç»„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToManageMember()
 	{
-		return "你没有管理此成员的权限。";
+		return "ä½ æ²¡æœ‰ç®¡ç†æ­¤æˆå‘˜çš„æƒé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToViewRolesetPermissions()
 	{
-		return "你没有权限查看此等级的权限。";
+		return "ä½ æ²¡æœ‰æƒé™æŸ¥çœ‹æ­¤ç­‰çº§çš„æƒé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToViewWall()
 	{
-		return "你没有访问此群组页面的权限。";
+		return "ä½ æ²¡æœ‰è®¿é—®æ­¤ç¾¤ç»„é¡µé¢çš„æƒé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "未知错误";
+		return "æœªçŸ¥é”™è¯¯";
 	}
 
 	/// <summary>
@@ -3223,12 +3223,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageUnlock(string actor)
 	{
-		return $"“{actor}”已解锁群组";
+		return $"â€œ{actor}â€å·²è§£é”ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForMessageUnlock()
 	{
-		return "“{actor}”已解锁群组";
+		return "â€œ{actor}â€å·²è§£é”ç¾¤ç»„";
 	}
 
 	/// <summary>
@@ -3237,12 +3237,12 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageUpdateAsset(string actor, string version, string item)
 	{
-		return $"“{actor}”已创建素材“{item}”的新版本 {version}";
+		return $"â€œ{actor}â€å·²åˆ›å»ºç´ æâ€œ{item}â€çš„æ–°ç‰ˆæœ¬ {version}";
 	}
 
 	protected override string _GetTemplateForMessageUpdateAsset()
 	{
-		return "“{actor}”已创建素材“{item}”的新版本 {version}";
+		return "â€œ{actor}â€å·²åˆ›å»ºç´ æâ€œ{item}â€çš„æ–°ç‰ˆæœ¬ {version}";
 	}
 
 	/// <summary>
@@ -3251,16 +3251,19 @@ internal class GroupsResources_zh_cn : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageUpdateAssetRevert(string actor, string item, string version, string oldVersion)
 	{
-		return $"“{actor}”已将素材“{item}”的版本从 {version} 还原为 {oldVersion}";
+		return $"â€œ{actor}â€å·²å°†ç´ æâ€œ{item}â€çš„ç‰ˆæœ¬ä»Ž {version} è¿˜åŽŸä¸º {oldVersion}";
 	}
 
 	protected override string _GetTemplateForMessageUpdateAssetRevert()
 	{
-		return "“{actor}”已将素材“{item}”的版本从 {version} 还原为 {oldVersion}";
+		return "â€œ{actor}â€å·²å°†ç´ æâ€œ{item}â€çš„ç‰ˆæœ¬ä»Ž {version} è¿˜åŽŸä¸º {oldVersion}";
 	}
 
 	protected override string _GetTemplateForMessageUserNotInGroup()
 	{
-		return "你不是指定群组的成员。";
+		return "ä½ ä¸æ˜¯æŒ‡å®šç¾¤ç»„çš„æˆå‘˜ã€‚";
 	}
+}
+
+
 }

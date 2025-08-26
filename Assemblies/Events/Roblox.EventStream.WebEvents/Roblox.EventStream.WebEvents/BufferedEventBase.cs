@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// Used to force people to pass in a BufferedEventStreamer and delayed event args construction if you want to use certain types of high-volume events.
 /// Otherwise identical to a <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase" />.
 /// </summary>
@@ -28,3 +28,12 @@ public abstract class BufferedEventBase : EventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using Roblox.EventStream.WebEvents.EventArgs;
+using Roblox.EventStream.WebEvents;
+using Roblox.EventStream;
 using Roblox.Common;
+namespace Roblox.EventStream.WebEvents {
+    public abstract class EventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public abstract class EventBase
 {
 	private readonly Lazy<List<KeyValuePair<string, string>>> _ExtraParameters = new Lazy<List<KeyValuePair<string, string>>>(() => new List<KeyValuePair<string, string>>());
 
@@ -23,7 +25,7 @@ public abstract class EventBase
 	/// <summary>
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase" /> class.
 	/// </summary>
-	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" /> used to stream the event.</param>
+	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer" /> used to stream the event.</param>
 	/// <param name="eventName">The name of the event.</param>
 	/// <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.EventBase" /> containing event info.</param>
 	/// <exception cref="!:PlatformArgumentNullException">Thrown if <paramref name="streamer" />, <paramref name="eventName" />, or <paramref name="args" /> is null.</exception>
@@ -135,3 +137,10 @@ public abstract class EventBase
 		_Streamer.StreamEvent(_Target, _EventName, keyValuePairs, _ClientIp, IsTrustedSource);
 	}
 }
+
+
+}
+
+
+
+

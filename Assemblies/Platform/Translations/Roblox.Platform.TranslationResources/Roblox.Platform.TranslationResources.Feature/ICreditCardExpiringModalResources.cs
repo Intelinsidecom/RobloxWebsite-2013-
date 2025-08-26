@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ICreditCardExpiringModalResources : ITranslationResources
 
-public interface ICreditCardExpiringModalResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.DontRemindAgain"
@@ -36,4 +36,7 @@ public interface ICreditCardExpiringModalResources : ITranslationResources
 	/// English String: "Your Credit Card will expire on {expirationDate}!"
 	/// </summary>
 	string DescriptionCreditCardExpiration(string expirationDate);
+}
+
+
 }

@@ -1,12 +1,14 @@
-using Roblox.Platform.Demographics;
+﻿using Roblox.Platform.Demographics;
+namespace Roblox.Localization.Accounts.Implementationsinternal {
+    class AccountCountry : IAccountCountry
 
-namespace Roblox.Platform.Localization.Accounts.Implementations;
-
-internal class AccountCountry : IAccountCountry
 {
 	public long AccountId { get; set; }
 
 	public ICountryIdentifier CountryId { get; set; }
 
 	public bool IsVerified { get; set; }
+}
+
+
 }

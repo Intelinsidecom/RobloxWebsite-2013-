@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.AuthenticationV2.Propertiesinternal {
+    interface ISettings
 
-namespace Roblox.AuthenticationV2.Properties;
-
-internal interface ISettings
 {
 	string AuthenticationV2CookieName { get; }
 
@@ -15,4 +14,7 @@ internal interface ISettings
 	bool IsAuthenticationV2ForEveryoneEnabled { get; }
 
 	int AuthenticationV2RolloutPerMyriad { get; }
+}
+
+
 }

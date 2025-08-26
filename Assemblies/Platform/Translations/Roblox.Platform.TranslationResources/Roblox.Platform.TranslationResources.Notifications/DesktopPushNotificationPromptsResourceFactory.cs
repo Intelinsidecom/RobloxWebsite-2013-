@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notificationsinternal {
+    static class DesktopPushNotificationPromptsResourceFactory
 
-internal static class DesktopPushNotificationPromptsResourceFactory
 {
 	public const string FullNamespace = "Notifications.DesktopPushNotificationPrompts";
 
@@ -21,4 +21,7 @@ internal static class DesktopPushNotificationPromptsResourceFactory
 			_ => new DesktopPushNotificationPromptsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface ITencentResources : ITranslationResources
 
-public interface ITencentResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.QQLogin"
@@ -15,4 +15,7 @@ public interface ITencentResources : ITranslationResources
 	/// English String: "WeChat Login"
 	/// </summary>
 	string ActionWeChatLogin { get; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides InventoryResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,151 +11,151 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// Call to action button for the user to get more items or assets
 	/// English String: "Get More"
 	/// </summary>
-	public override string ActionGetMore => "获取更多";
+	public override string ActionGetMore => "èŽ·å–æ›´å¤š";
 
 	/// <summary>
 	/// Key: "Heading.Category"
 	/// These categories include different item and asset types such as Accessories, Meshes, Badges, Audio assets, and Pants
 	/// English String: "Category"
 	/// </summary>
-	public override string HeadingCategory => "类别";
+	public override string HeadingCategory => "ç±»åˆ«";
 
 	/// <summary>
 	/// Key: "Heading.Inventory"
 	/// This is the button that users will click on the navigation menu to go to the Inventory page, which contains items and assets that the user has to improve their appearance or use to develop games.
 	/// English String: "Inventory"
 	/// </summary>
-	public override string HeadingInventory => "道具";
+	public override string HeadingInventory => "é“å…·";
 
 	/// <summary>
 	/// Key: "Heading.MyInventory"
 	/// This is the page title referring to your own inventory. This page contains the user's items and assets.
 	/// English String: "My Inventory"
 	/// </summary>
-	public override string HeadingMyInventory => "我的道具";
+	public override string HeadingMyInventory => "æˆ‘çš„é“å…·";
 
 	/// <summary>
 	/// Key: "Heading.Subcategory"
 	/// These subcategories include different sub-types of asset types. The subcategories under Accessories could be Hats, Hair, and Face.
 	/// English String: "Subcategory"
 	/// </summary>
-	public override string HeadingSubcategory => "子类别";
+	public override string HeadingSubcategory => "å­ç±»åˆ«";
 
 	/// <summary>
 	/// Key: "Label.BodyParts"
 	/// English String: "Body Parts"
 	/// </summary>
-	public override string LabelBodyParts => "身体部件";
+	public override string LabelBodyParts => "èº«ä½“éƒ¨ä»¶";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
 	/// English String: "Bundles"
 	/// </summary>
-	public override string LabelBundles => "套装";
+	public override string LabelBundles => "å¥—è£…";
 
 	/// <summary>
 	/// Key: "Label.CreatedByMe"
 	/// English String: "Created by Me"
 	/// </summary>
-	public override string LabelCreatedByMe => "我的创作";
+	public override string LabelCreatedByMe => "æˆ‘çš„åˆ›ä½œ";
 
 	/// <summary>
 	/// Key: "Label.MyGames"
 	/// English String: "My Games"
 	/// </summary>
-	public override string LabelMyGames => "我的游戏";
+	public override string LabelMyGames => "æˆ‘çš„æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.MyVipServers"
 	/// English String: "My VIP Servers"
 	/// </summary>
-	public override string LabelMyVipServers => "我的 VIP 服务器";
+	public override string LabelMyVipServers => "æˆ‘çš„ VIP æœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "Label.Offsale"
 	/// An item with this label is no longer on sale and cannot be obtained.
 	/// English String: "Offsale"
 	/// </summary>
-	public override string LabelOffsale => "下架";
+	public override string LabelOffsale => "ä¸‹æž¶";
 
 	/// <summary>
 	/// Key: "Label.OtherGames"
 	/// English String: "Other Games"
 	/// </summary>
-	public override string LabelOtherGames => "其他游戏";
+	public override string LabelOtherGames => "å…¶ä»–æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.OtherVipServers"
 	/// English String: "Other VIP Servers"
 	/// </summary>
-	public override string LabelOtherVipServers => "其他 VIP 服务器";
+	public override string LabelOtherVipServers => "å…¶ä»– VIP æœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "Label.OwnershipPreposition"
 	/// This word is used to show that an item was created "By" someone or some entity.
 	/// English String: "By"
 	/// </summary>
-	public override string LabelOwnershipPreposition => "作者";
+	public override string LabelOwnershipPreposition => "ä½œè€…";
 
 	/// <summary>
 	/// Key: "Label.Places"
 	/// English String: "Places"
 	/// </summary>
-	public override string LabelPlaces => "游戏场景";
+	public override string LabelPlaces => "æ¸¸æˆåœºæ™¯";
 
 	/// <summary>
 	/// Key: "Label.Purchased"
 	/// English String: "Purchased"
 	/// </summary>
-	public override string LabelPurchased => "已购买";
+	public override string LabelPurchased => "å·²è´­ä¹°";
 
 	/// <summary>
 	/// Key: "Label.VipServers"
 	/// English String: "VIP Servers"
 	/// </summary>
-	public override string LabelVipServers => "VIP 服务器";
+	public override string LabelVipServers => "VIP æœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "Message.TryCatalogForItems"
 	/// English String: "Try using the catalog to find new items."
 	/// </summary>
-	public override string MessageTryCatalogForItems => "尝试在商店中寻找新物品。";
+	public override string MessageTryCatalogForItems => "å°è¯•åœ¨å•†åº—ä¸­å¯»æ‰¾æ–°ç‰©å“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TryLibraryForItems"
 	/// English String: "Try using the library to find new items."
 	/// </summary>
-	public override string MessageTryLibraryForItems => "请试试在资料库中发现新物品。";
+	public override string MessageTryLibraryForItems => "è¯·è¯•è¯•åœ¨èµ„æ–™åº“ä¸­å‘çŽ°æ–°ç‰©å“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UserHasNoFavoritesCategory"
 	/// English String: "This user has not favorited items in this category."
 	/// </summary>
-	public override string MessageUserHasNoFavoritesCategory => "此用户在此类别没有设为最爱的项目。";
+	public override string MessageUserHasNoFavoritesCategory => "æ­¤ç”¨æˆ·åœ¨æ­¤ç±»åˆ«æ²¡æœ‰è®¾ä¸ºæœ€çˆ±çš„é¡¹ç›®ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UserHasNoItemsCategory"
 	/// English String: "This user doesn't have items in this category."
 	/// </summary>
-	public override string MessageUserHasNoItemsCategory => "此用户没有此类别的物品。";
+	public override string MessageUserHasNoItemsCategory => "æ­¤ç”¨æˆ·æ²¡æœ‰æ­¤ç±»åˆ«çš„ç‰©å“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UserInventoryHidden"
 	/// English String: "You cannot see this player's inventory."
 	/// </summary>
-	public override string MessageUserInventoryHidden => "你无法查看此玩家的道具。";
+	public override string MessageUserInventoryHidden => "ä½ æ— æ³•æŸ¥çœ‹æ­¤çŽ©å®¶çš„é“å…·ã€‚";
 
 	/// <summary>
 	/// Key: "Message.YouHaveNoFavoritesCategory"
 	/// English String: "You have not favorited items in this category."
 	/// </summary>
-	public override string MessageYouHaveNoFavoritesCategory => "你在此类别中没有任何最爱的物品。";
+	public override string MessageYouHaveNoFavoritesCategory => "ä½ åœ¨æ­¤ç±»åˆ«ä¸­æ²¡æœ‰ä»»ä½•æœ€çˆ±çš„ç‰©å“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.YouHaveNoItemsCategory"
 	/// English String: "You don't have items in this category."
 	/// </summary>
-	public override string MessageYouHaveNoItemsCategory => "你没有此类别的项目。";
+	public override string MessageYouHaveNoItemsCategory => "ä½ æ²¡æœ‰æ­¤ç±»åˆ«çš„é¡¹ç›®ã€‚";
 
 	public InventoryResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -164,27 +164,27 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 
 	protected override string _GetTemplateForActionGetMore()
 	{
-		return "获取更多";
+		return "èŽ·å–æ›´å¤š";
 	}
 
 	protected override string _GetTemplateForHeadingCategory()
 	{
-		return "类别";
+		return "ç±»åˆ«";
 	}
 
 	protected override string _GetTemplateForHeadingInventory()
 	{
-		return "道具";
+		return "é“å…·";
 	}
 
 	protected override string _GetTemplateForHeadingMyInventory()
 	{
-		return "我的道具";
+		return "æˆ‘çš„é“å…·";
 	}
 
 	protected override string _GetTemplateForHeadingSubcategory()
 	{
-		return "子类别";
+		return "å­ç±»åˆ«";
 	}
 
 	/// <summary>
@@ -194,67 +194,67 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string HeadingUserInventory(string username)
 	{
-		return $"“{username}”的道具";
+		return $"â€œ{username}â€çš„é“å…·";
 	}
 
 	protected override string _GetTemplateForHeadingUserInventory()
 	{
-		return "“{username}”的道具";
+		return "â€œ{username}â€çš„é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelBodyParts()
 	{
-		return "身体部件";
+		return "èº«ä½“éƒ¨ä»¶";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
 	{
-		return "套装";
+		return "å¥—è£…";
 	}
 
 	protected override string _GetTemplateForLabelCreatedByMe()
 	{
-		return "我的创作";
+		return "æˆ‘çš„åˆ›ä½œ";
 	}
 
 	protected override string _GetTemplateForLabelMyGames()
 	{
-		return "我的游戏";
+		return "æˆ‘çš„æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelMyVipServers()
 	{
-		return "我的 VIP 服务器";
+		return "æˆ‘çš„ VIP æœåŠ¡å™¨";
 	}
 
 	protected override string _GetTemplateForLabelOffsale()
 	{
-		return "下架";
+		return "ä¸‹æž¶";
 	}
 
 	protected override string _GetTemplateForLabelOtherGames()
 	{
-		return "其他游戏";
+		return "å…¶ä»–æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelOtherVipServers()
 	{
-		return "其他 VIP 服务器";
+		return "å…¶ä»– VIP æœåŠ¡å™¨";
 	}
 
 	protected override string _GetTemplateForLabelOwnershipPreposition()
 	{
-		return "作者";
+		return "ä½œè€…";
 	}
 
 	protected override string _GetTemplateForLabelPlaces()
 	{
-		return "游戏场景";
+		return "æ¸¸æˆåœºæ™¯";
 	}
 
 	protected override string _GetTemplateForLabelPurchased()
 	{
-		return "已购买";
+		return "å·²è´­ä¹°";
 	}
 
 	/// <summary>
@@ -264,17 +264,17 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string LabelRentalExpireTime(string expireTime)
 	{
-		return $"失效时间：{expireTime}";
+		return $"å¤±æ•ˆæ—¶é—´ï¼š{expireTime}";
 	}
 
 	protected override string _GetTemplateForLabelRentalExpireTime()
 	{
-		return "失效时间：{expireTime}";
+		return "å¤±æ•ˆæ—¶é—´ï¼š{expireTime}";
 	}
 
 	protected override string _GetTemplateForLabelVipServers()
 	{
-		return "VIP 服务器";
+		return "VIP æœåŠ¡å™¨";
 	}
 
 	/// <summary>
@@ -284,12 +284,12 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string MessageExploreCatalogForItems(string itemsPlural)
 	{
-		return $"探索商店，发现更多{itemsPlural}！";
+		return $"æŽ¢ç´¢å•†åº—ï¼Œå‘çŽ°æ›´å¤š{itemsPlural}ï¼";
 	}
 
 	protected override string _GetTemplateForMessageExploreCatalogForItems()
 	{
-		return "探索商店，发现更多{itemsPlural}！";
+		return "æŽ¢ç´¢å•†åº—ï¼Œå‘çŽ°æ›´å¤š{itemsPlural}ï¼";
 	}
 
 	/// <summary>
@@ -299,17 +299,17 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string MessageExploreLibraryForItems(string itemsPlural)
 	{
-		return $"探索资料库，发现更多{itemsPlural}！";
+		return $"æŽ¢ç´¢èµ„æ–™åº“ï¼Œå‘çŽ°æ›´å¤š{itemsPlural}ï¼";
 	}
 
 	protected override string _GetTemplateForMessageExploreLibraryForItems()
 	{
-		return "探索资料库，发现更多{itemsPlural}！";
+		return "æŽ¢ç´¢èµ„æ–™åº“ï¼Œå‘çŽ°æ›´å¤š{itemsPlural}ï¼";
 	}
 
 	protected override string _GetTemplateForMessageTryCatalogForItems()
 	{
-		return "尝试在商店中寻找新物品。";
+		return "å°è¯•åœ¨å•†åº—ä¸­å¯»æ‰¾æ–°ç‰©å“ã€‚";
 	}
 
 	/// <summary>
@@ -319,17 +319,17 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string MessageTryCatalogLink(string startLink, string endLink)
 	{
-		return $"请试试在{startLink}商店{endLink}中发现新物品。";
+		return $"è¯·è¯•è¯•åœ¨{startLink}å•†åº—{endLink}ä¸­å‘çŽ°æ–°ç‰©å“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTryCatalogLink()
 	{
-		return "请试试在{startLink}商店{endLink}中发现新物品。";
+		return "è¯·è¯•è¯•åœ¨{startLink}å•†åº—{endLink}ä¸­å‘çŽ°æ–°ç‰©å“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTryLibraryForItems()
 	{
-		return "请试试在资料库中发现新物品。";
+		return "è¯·è¯•è¯•åœ¨èµ„æ–™åº“ä¸­å‘çŽ°æ–°ç‰©å“ã€‚";
 	}
 
 	/// <summary>
@@ -339,17 +339,17 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string MessageTryLibraryLink(string startLink, string endLink)
 	{
-		return $"请试试使用{startLink}资料库{endLink}来发现新物品。";
+		return $"è¯·è¯•è¯•ä½¿ç”¨{startLink}èµ„æ–™åº“{endLink}æ¥å‘çŽ°æ–°ç‰©å“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTryLibraryLink()
 	{
-		return "请试试使用{startLink}资料库{endLink}来发现新物品。";
+		return "è¯·è¯•è¯•ä½¿ç”¨{startLink}èµ„æ–™åº“{endLink}æ¥å‘çŽ°æ–°ç‰©å“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNoFavoritesCategory()
 	{
-		return "此用户在此类别没有设为最爱的项目。";
+		return "æ­¤ç”¨æˆ·åœ¨æ­¤ç±»åˆ«æ²¡æœ‰è®¾ä¸ºæœ€çˆ±çš„é¡¹ç›®ã€‚";
 	}
 
 	/// <summary>
@@ -359,22 +359,22 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string MessageUserHasNoItems(string itemsPlural)
 	{
-		return $"此用户没有任何“{itemsPlural}”。";
+		return $"æ­¤ç”¨æˆ·æ²¡æœ‰ä»»ä½•â€œ{itemsPlural}â€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNoItems()
 	{
-		return "此用户没有任何“{itemsPlural}”。";
+		return "æ­¤ç”¨æˆ·æ²¡æœ‰ä»»ä½•â€œ{itemsPlural}â€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNoItemsCategory()
 	{
-		return "此用户没有此类别的物品。";
+		return "æ­¤ç”¨æˆ·æ²¡æœ‰æ­¤ç±»åˆ«çš„ç‰©å“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUserInventoryHidden()
 	{
-		return "你无法查看此玩家的道具。";
+		return "ä½ æ— æ³•æŸ¥çœ‹æ­¤çŽ©å®¶çš„é“å…·ã€‚";
 	}
 
 	/// <summary>
@@ -384,17 +384,17 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string MessageUserNotFavoritedItems(string itemsPlural)
 	{
-		return $"此用户没有最爱的“{itemsPlural}”。";
+		return $"æ­¤ç”¨æˆ·æ²¡æœ‰æœ€çˆ±çš„â€œ{itemsPlural}â€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUserNotFavoritedItems()
 	{
-		return "此用户没有最爱的“{itemsPlural}”。";
+		return "æ­¤ç”¨æˆ·æ²¡æœ‰æœ€çˆ±çš„â€œ{itemsPlural}â€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNoFavoritesCategory()
 	{
-		return "你在此类别中没有任何最爱的物品。";
+		return "ä½ åœ¨æ­¤ç±»åˆ«ä¸­æ²¡æœ‰ä»»ä½•æœ€çˆ±çš„ç‰©å“ã€‚";
 	}
 
 	/// <summary>
@@ -404,17 +404,17 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string MessageYouHaveNoItems(string itemsPlural)
 	{
-		return $"你没有任何“{itemsPlural}”。";
+		return $"ä½ æ²¡æœ‰ä»»ä½•â€œ{itemsPlural}â€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNoItems()
 	{
-		return "你没有任何“{itemsPlural}”。";
+		return "ä½ æ²¡æœ‰ä»»ä½•â€œ{itemsPlural}â€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNoItemsCategory()
 	{
-		return "你没有此类别的项目。";
+		return "ä½ æ²¡æœ‰æ­¤ç±»åˆ«çš„é¡¹ç›®ã€‚";
 	}
 
 	/// <summary>
@@ -424,11 +424,14 @@ internal class InventoryResources_zh_cjv : InventoryResources_en_us, IInventoryR
 	/// </summary>
 	public override string MessageYouNotFavoritedItems(string itemsPlural)
 	{
-		return $"你没有任何最爱的“{itemsPlural}”。";
+		return $"ä½ æ²¡æœ‰ä»»ä½•æœ€çˆ±çš„â€œ{itemsPlural}â€ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageYouNotFavoritedItems()
 	{
-		return "你没有任何最爱的“{itemsPlural}”。";
+		return "ä½ æ²¡æœ‰ä»»ä½•æœ€çˆ±çš„â€œ{itemsPlural}â€ã€‚";
 	}
+}
+
+
 }

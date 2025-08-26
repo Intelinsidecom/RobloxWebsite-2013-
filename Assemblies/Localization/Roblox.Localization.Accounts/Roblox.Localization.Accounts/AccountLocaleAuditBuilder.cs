@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Audit;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountLocaleAuditBuilder : IAccountLocaleAuditBuilder
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountLocaleAuditBuilder : IAccountLocaleAuditBuilder
 {
 	private readonly IAccountLocalesAuditEntryEntityFactory _AccountLocalesAuditEntryEntityFactory;
 
@@ -39,4 +38,7 @@ internal class AccountLocaleAuditBuilder : IAccountLocaleAuditBuilder
 			_Logger.Error($"Error trying to create audit records. Message: {e}");
 		}
 	}
+}
+
+
 }

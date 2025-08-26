@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.TextFilter.Client {
+    [DataContract]
 
-namespace Roblox.TextFilter.Client;
-
-[DataContract]
 public class FilterUsernameRequest
 {
 	[DataMember(Name = "text")]
@@ -13,4 +12,7 @@ public class FilterUsernameRequest
 
 	[DataMember(Name = "canBypassReservedUsername")]
 	public virtual bool CanBypassReservedUsername { get; set; }
+}
+
+
 }

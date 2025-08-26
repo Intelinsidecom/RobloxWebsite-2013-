@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class DevExHomeResourceFactory
 
-internal static class DevExHomeResourceFactory
 {
 	public const string FullNamespace = "Feature.DevExHome";
 
@@ -21,4 +21,7 @@ internal static class DevExHomeResourceFactory
 			_ => new DevExHomeResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class SurveysGameRatingsResourceFactory
 
-internal static class SurveysGameRatingsResourceFactory
 {
 	public const string FullNamespace = "Feature.SurveysGameRatings";
 
@@ -21,4 +21,7 @@ internal static class SurveysGameRatingsResourceFactory
 			_ => new SurveysGameRatingsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

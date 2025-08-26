@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocalesAuditEntryCachedMssqlEntity : IAccountLocalesAuditEntryEntity, IEntity<long>
 {
 	public long Id { get; set; }
@@ -29,4 +28,7 @@ internal class AccountLocalesAuditEntryCachedMssqlEntity : IAccountLocalesAuditE
 	{
 		(AccountLocalesAuditEntry.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Moderationpublic {
+    interface IReviewTaskLease
 
-namespace Roblox.Platform.Moderation;
-
-public interface IReviewTaskLease
 {
 	/// <summary>
 	/// The Expiration date time for the lease
@@ -18,4 +17,7 @@ public interface IReviewTaskLease
 	/// The Id of the ReviewTask
 	/// </summary>
 	long ReviewTaskId { get; }
+}
+
+
 }

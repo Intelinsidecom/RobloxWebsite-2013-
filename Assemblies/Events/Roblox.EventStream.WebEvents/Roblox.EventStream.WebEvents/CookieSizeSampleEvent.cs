@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// Represents an EventStream event for CookieSizeV2Event. Does not use the cookieSizeThreshold parameter.
 /// </summary>
 public class CookieSizeSampleEvent : WebEventBase
@@ -12,7 +12,7 @@ public class CookieSizeSampleEvent : WebEventBase
 	/// <summary>
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieSizeSampleEvent" /> class.
 	/// </summary>
-	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer" />.</param>
 	/// <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.CookieSizeEventArgs" /> instance containing the event data.</param>
 	/// <exception cref="!:PlatformArgumentNullException">
 	/// streamer
@@ -22,7 +22,7 @@ public class CookieSizeSampleEvent : WebEventBase
 	/// args.RawCookies
 	/// </exception>
 	/// <exception cref="!:PlatformInvalidEnumArgumentException">Thrown if <paramref name="args.Target.Target" /> is not <see cref="F:Roblox.Platform.EventStream.WebEvents.EventTarget.Diagnostic" />.</exception>
-	public CookieSizeSampleEvent(EventStreamer streamer, CookieSizeEventArgs args)
+	public CookieSizeSampleEvent(IEventStreamer streamer, CookieSizeEventArgs args)
 		: base(streamer, "cookieSizeSample", args)
 	{
 		if (args.RawCookies == null)
@@ -37,3 +37,12 @@ public class CookieSizeSampleEvent : WebEventBase
 		AddEventArg("rawCookies", args.RawCookies);
 	}
 }
+
+
+}
+
+
+
+
+
+

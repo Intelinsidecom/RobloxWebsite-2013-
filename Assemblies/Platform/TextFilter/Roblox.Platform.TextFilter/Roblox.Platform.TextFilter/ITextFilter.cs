@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Provides an interface for filtering textual user content.
 /// </summary>
 public interface ITextFilter
@@ -104,4 +104,7 @@ public interface ITextFilter
 	/// <param name="filteredText">Text that has been filtered for comparison</param>
 	/// <returns></returns>
 	ModerationLevel GetModerationLevelOfFilteredText(string originalText, string filteredText);
+}
+
+
 }

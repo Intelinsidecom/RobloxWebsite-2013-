@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ChinaPaymentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -22,7 +22,7 @@ internal class ChinaPaymentResources_pt_br : ChinaPaymentResources_en_us, IChina
 	/// Key: "Message.SessionExpiredError"
 	/// English String: "Looks like your WeChat session is expired and we cannot process your request. Please log out and log in again."
 	/// </summary>
-	public override string MessageSessionExpiredError => "Parece que sua sessão de WeChat expirou e não podemos processar sua solicitação. Desconecte-se e reconecte-se.";
+	public override string MessageSessionExpiredError => "Parece que sua sessÃ£o de WeChat expirou e nÃ£o podemos processar sua solicitaÃ§Ã£o. Desconecte-se e reconecte-se.";
 
 	public ChinaPaymentResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -41,6 +41,9 @@ internal class ChinaPaymentResources_pt_br : ChinaPaymentResources_en_us, IChina
 
 	protected override string _GetTemplateForMessageSessionExpiredError()
 	{
-		return "Parece que sua sessão de WeChat expirou e não podemos processar sua solicitação. Desconecte-se e reconecte-se.";
+		return "Parece que sua sessÃ£o de WeChat expirou e nÃ£o podemos processar sua solicitaÃ§Ã£o. Desconecte-se e reconecte-se.";
 	}
+}
+
+
 }

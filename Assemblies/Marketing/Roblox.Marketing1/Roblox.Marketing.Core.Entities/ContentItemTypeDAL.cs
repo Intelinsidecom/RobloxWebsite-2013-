@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Marketing.Core.Entitiesinternal {
+    class ContentItemTypeDAL
 
-namespace Roblox.Platform.Marketing.Core.Entities;
-
-internal class ContentItemTypeDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxMarketing;
 
@@ -89,4 +88,7 @@ internal class ContentItemTypeDAL
 		};
 		return RobloxDatabase.RobloxMarketing.GetOrCreate("ContentItemTypes_GetOrCreateContentItemType", BuildDAL, queryParameters);
 	}
+}
+
+
 }

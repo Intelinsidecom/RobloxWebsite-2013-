@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class VisitGameResourceFactory
 
-internal static class VisitGameResourceFactory
 {
 	public const string FullNamespace = "Common.VisitGame";
 
@@ -21,4 +21,7 @@ internal static class VisitGameResourceFactory
 			_ => new VisitGameResources_en_us(state), 
 		};
 	}
+}
+
+
 }

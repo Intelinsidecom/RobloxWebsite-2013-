@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -30,7 +30,7 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "Zurück";
+	public override string ActionBack => "ZurÃ¼ck";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -43,13 +43,13 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "Bestätigen";
+	public override string ActionConfirm => "BestÃ¤tigen";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "Löschen";
+	public override string ActionDelete => "LÃ¶schen";
 
 	/// <summary>
 	/// Key: "Action.Discard"
@@ -147,7 +147,7 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.March"
 	/// English String: "March"
 	/// </summary>
-	public override string LabelMarch => "März";
+	public override string LabelMarch => "MÃ¤rz";
 
 	/// <summary>
 	/// Key: "Label.May"
@@ -184,7 +184,7 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "Zurück";
+	public override string LabelPrevious => "ZurÃ¼ck";
 
 	/// <summary>
 	/// Key: "Label.September"
@@ -221,7 +221,7 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "Zurück";
+		return "ZurÃ¼ck";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -231,12 +231,12 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "Bestätigen";
+		return "BestÃ¤tigen";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "Löschen";
+		return "LÃ¶schen";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
@@ -331,7 +331,7 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelMarch()
 	{
-		return "März";
+		return "MÃ¤rz";
 	}
 
 	protected override string _GetTemplateForLabelMay()
@@ -361,7 +361,7 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "Zurück";
+		return "ZurÃ¼ck";
 	}
 
 	protected override string _GetTemplateForLabelSeptember()
@@ -373,4 +373,7 @@ internal class ControlsResources_de_de : ControlsResources_en_us, IControlsResou
 	{
 		return "Jahr";
 	}
+}
+
+
 }

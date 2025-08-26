@@ -1,6 +1,6 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    enum JoinType
 
-public enum JoinType
 {
 	Unknown,
 	NewGame_NoAvailableSlots,
@@ -13,4 +13,7 @@ public enum JoinType
 	ExistingReservation,
 	Disabled,
 	MatchMade
+}
+
+
 }

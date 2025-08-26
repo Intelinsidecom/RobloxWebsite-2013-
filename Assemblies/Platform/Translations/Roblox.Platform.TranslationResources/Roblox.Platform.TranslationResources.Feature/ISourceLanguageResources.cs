@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ISourceLanguageResources : ITranslationResources
 
-public interface ISourceLanguageResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -64,4 +64,7 @@ public interface ISourceLanguageResources : ITranslationResources
 	/// English String: "Are you sure you want to change the source language of this game to {languageName}? This should reflect the language the game has been written in."
 	/// </summary>
 	string DescriptionChangeSourceLanguage(string languageName);
+}
+
+
 }

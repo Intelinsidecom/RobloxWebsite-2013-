@@ -1,9 +1,8 @@
 using System;
 using Newtonsoft.Json;
+namespace Roblox.EventStream {
+    class PushNotificationData : IPushNotificationData
 
-namespace Roblox.Platform.EventStream;
-
-public class PushNotificationData : IPushNotificationData
 {
 	[JsonProperty(PropertyName = "evt")]
 	public string Event { get; set; }
@@ -22,4 +21,7 @@ public class PushNotificationData : IPushNotificationData
 
 	[JsonProperty(PropertyName = "notificationSourceType")]
 	public string NotificationSourceType { get; set; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,63 +11,63 @@ internal class DownloadAppResources_ja_jp : DownloadAppResources_en_us, IDownloa
 	/// button label
 	/// English String: "Continue in App"
 	/// </summary>
-	public override string ActionContinueInApp => "アプリで続ける";
+	public override string ActionContinueInApp => "ã‚¢ãƒ—ãƒªã§ç¶šã‘ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.ContinueInBrowser"
 	/// button label
 	/// English String: "Continue in browser"
 	/// </summary>
-	public override string ActionContinueInBrowser => "ブラウザで続ける";
+	public override string ActionContinueInBrowser => "ãƒ–ãƒ©ã‚¦ã‚¶ã§ç¶šã‘ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.Play"
 	/// Button that takes the user to the game.
 	/// English String: "Play"
 	/// </summary>
-	public override string ActionPlay => "プレイ";
+	public override string ActionPlay => "ãƒ—ãƒ¬ã‚¤";
 
 	/// <summary>
 	/// Key: "Heading.RobloxForAndroid"
 	/// heading for the page
 	/// English String: "Roblox for Android"
 	/// </summary>
-	public override string HeadingRobloxForAndroid => "Roblox（Android版）";
+	public override string HeadingRobloxForAndroid => "Robloxï¼ˆAndroidç‰ˆï¼‰";
 
 	/// <summary>
 	/// Key: "Heading.RobloxForIos"
 	/// heading for page
 	/// English String: "Roblox for iOS"
 	/// </summary>
-	public override string HeadingRobloxForIos => "Roblox（iOS版）";
+	public override string HeadingRobloxForIos => "Robloxï¼ˆiOSç‰ˆï¼‰";
 
 	/// <summary>
 	/// Key: "Label.PlayGamesInMobile"
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "モバイルアプリでRobloxをプレイする！";
+	public override string LabelPlayGamesInMobile => "ãƒ¢ãƒã‚¤ãƒ«ã‚¢ãƒ—ãƒªã§Robloxã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ï¼";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
 	/// The user is being encouraged to play on the native mobile Android app
 	/// English String: "Play Roblox in our Android app!"
 	/// </summary>
-	public override string MessageAppBumpAndroidDevice => "AndroidのアプリでRobloxをプレイする！";
+	public override string MessageAppBumpAndroidDevice => "Androidã®ã‚¢ãƒ—ãƒªã§Robloxã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ï¼";
 
 	/// <summary>
 	/// Key: "Message.AppBumperUpsell"
 	/// The user is being encouraged to play through the mobile app.
 	/// English String: "Millions of games by players like you"
 	/// </summary>
-	public override string MessageAppBumperUpsell => "あなたのようなプレイヤーが制作した数百万ものゲーム";
+	public override string MessageAppBumperUpsell => "ã‚ãªãŸã®ã‚ˆã†ãªãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒåˆ¶ä½œã—ãŸæ•°ç™¾ä¸‡ã‚‚ã®ã‚²ãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Message.AppBumpIOSDevice"
 	/// The user is being encouraged to play on the native mobile iOS app
 	/// English String: "Play Roblox in our iOS app!"
 	/// </summary>
-	public override string MessageAppBumpIOSDevice => "iOSのアプリで Robloxをプレイする！";
+	public override string MessageAppBumpIOSDevice => "iOSã®ã‚¢ãƒ—ãƒªã§ Robloxã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ï¼";
 
 	public DownloadAppResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -76,32 +76,32 @@ internal class DownloadAppResources_ja_jp : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForActionContinueInApp()
 	{
-		return "アプリで続ける";
+		return "ã‚¢ãƒ—ãƒªã§ç¶šã‘ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionContinueInBrowser()
 	{
-		return "ブラウザで続ける";
+		return "ãƒ–ãƒ©ã‚¦ã‚¶ã§ç¶šã‘ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionPlay()
 	{
-		return "プレイ";
+		return "ãƒ—ãƒ¬ã‚¤";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxForAndroid()
 	{
-		return "Roblox（Android版）";
+		return "Robloxï¼ˆAndroidç‰ˆï¼‰";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxForIos()
 	{
-		return "Roblox（iOS版）";
+		return "Robloxï¼ˆiOSç‰ˆï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "モバイルアプリでRobloxをプレイする！";
+		return "ãƒ¢ãƒã‚¤ãƒ«ã‚¢ãƒ—ãƒªã§Robloxã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ï¼";
 	}
 
 	/// <summary>
@@ -111,26 +111,29 @@ internal class DownloadAppResources_ja_jp : DownloadAppResources_en_us, IDownloa
 	/// </summary>
 	public override string LabelReviewsCount(string reviewCount)
 	{
-		return $"{reviewCount} 件のレビュー";
+		return $"{reviewCount} ä»¶ã®ãƒ¬ãƒ“ãƒ¥ãƒ¼";
 	}
 
 	protected override string _GetTemplateForLabelReviewsCount()
 	{
-		return "{reviewCount} 件のレビュー";
+		return "{reviewCount} ä»¶ã®ãƒ¬ãƒ“ãƒ¥ãƒ¼";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpAndroidDevice()
 	{
-		return "AndroidのアプリでRobloxをプレイする！";
+		return "Androidã®ã‚¢ãƒ—ãƒªã§Robloxã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ï¼";
 	}
 
 	protected override string _GetTemplateForMessageAppBumperUpsell()
 	{
-		return "あなたのようなプレイヤーが制作した数百万ものゲーム";
+		return "ã‚ãªãŸã®ã‚ˆã†ãªãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒåˆ¶ä½œã—ãŸæ•°ç™¾ä¸‡ã‚‚ã®ã‚²ãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpIOSDevice()
 	{
-		return "iOSのアプリで Robloxをプレイする！";
+		return "iOSã®ã‚¢ãƒ—ãƒªã§ Robloxã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ï¼";
 	}
+}
+
+
 }

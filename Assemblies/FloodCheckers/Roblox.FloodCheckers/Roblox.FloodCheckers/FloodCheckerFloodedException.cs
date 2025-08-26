@@ -1,8 +1,7 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
+namespace Roblox.FloodCheckerspublic {
+    class FloodCheckerFloodedException : PlatformException
 
-namespace Roblox.Platform.Floodcheckers;
-
-public class FloodCheckerFloodedException : PlatformException
 {
 	public new string UserFacingMessage;
 
@@ -11,4 +10,7 @@ public class FloodCheckerFloodedException : PlatformException
 	{
 		UserFacingMessage = userFacingMessage;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SecurityNotificationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class SecurityNotificationResources_zh_cjv : SecurityNotificationResour
 	/// Key: "Heading.Important"
 	/// English String: "Important"
 	/// </summary>
-	public override string HeadingImportant => "重要";
+	public override string HeadingImportant => "é‡è¦";
 
 	public SecurityNotificationResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -47,6 +47,9 @@ internal class SecurityNotificationResources_zh_cjv : SecurityNotificationResour
 
 	protected override string _GetTemplateForHeadingImportant()
 	{
-		return "重要";
+		return "é‡è¦";
 	}
+}
+
+
 }

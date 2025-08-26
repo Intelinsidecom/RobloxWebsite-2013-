@@ -1,6 +1,9 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderationpublic {
+    enum ExternallyAuthorizedOperation
 
-public enum ExternallyAuthorizedOperation
 {
 	SequesterPlace = 1
+}
+
+
 }

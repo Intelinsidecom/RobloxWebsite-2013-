@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Event arguments for tracking Cookie Conversion.
 /// </summary>
 public class CookieUpgraderEventArgs : WebEventArgs
@@ -37,3 +38,12 @@ public class CookieUpgraderEventArgs : WebEventArgs
 	/// </value>
 	public string NewCookieName { get; set; }
 }
+
+
+}
+
+
+
+
+
+

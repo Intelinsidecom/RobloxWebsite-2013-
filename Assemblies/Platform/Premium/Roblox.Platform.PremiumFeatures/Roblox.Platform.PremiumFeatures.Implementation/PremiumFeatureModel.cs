@@ -1,8 +1,7 @@
-using Roblox.PremiumFeatures.Interfaces;
+﻿using Roblox.PremiumFeatures.Interfaces;
+namespace Roblox.Platform.PremiumFeatures.Implementation {
+    /// <inheritdoc />
 
-namespace Roblox.PremiumFeatures.Implementation;
-
-/// <inheritdoc />
 public class PremiumFeatureModel : IPremiumFeatureModel
 {
 	/// <inheritdoc />
@@ -101,4 +100,7 @@ public class PremiumFeatureModel : IPremiumFeatureModel
 		IsTurboBuildersClub = isTurboBuildersClub;
 		IsOutrageousBuildersClub = isOutrageousBuildersClub;
 	}
+}
+
+
 }

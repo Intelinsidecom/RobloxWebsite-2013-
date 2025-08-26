@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Roblox.Platform.Moderation.Interfaces;
 using Roblox.Platform.Moderation.Properties;
+namespace Roblox.Moderationpublic {
+    class RegularExpressionValidator : IRegularExpressionValidator
 
-namespace Roblox.Platform.Moderation;
-
-public class RegularExpressionValidator : IRegularExpressionValidator
 {
 	private readonly IEnumerable<string> _WhitelistWords;
 
@@ -62,4 +61,7 @@ public class RegularExpressionValidator : IRegularExpressionValidator
 			return false;
 		}
 	}
+}
+
+
 }

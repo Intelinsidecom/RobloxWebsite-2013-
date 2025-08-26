@@ -1,11 +1,10 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Demographics;
 using Roblox.Platform.Localization.Accounts.Implementations;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountCountryAccessor : IAccountCountryAccessor
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountCountryAccessor : IAccountCountryAccessor
 {
 	private readonly IAccountCountryEntityFactory _AccountCountryEntityFactory;
 
@@ -53,4 +52,7 @@ internal class AccountCountryAccessor : IAccountCountryAccessor
 		}
 		return null;
 	}
+}
+
+
 }

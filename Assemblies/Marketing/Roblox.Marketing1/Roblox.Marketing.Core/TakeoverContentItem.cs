@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
 using Roblox.Platform.Marketing.Core.Entities;
+namespace Roblox.Marketing.Coreinternal {
+    class TakeoverContentItem : ITakeoverContentItem
 
-namespace Roblox.Platform.Marketing.Core;
-
-internal class TakeoverContentItem : ITakeoverContentItem
 {
 	public int Id { get; internal set; }
 
@@ -59,4 +58,7 @@ internal class TakeoverContentItem : ITakeoverContentItem
 	{
 		Roblox.Platform.Marketing.Core.Entities.TakeoverContentItem.Get(Id)?.Delete();
 	}
+}
+
+
 }

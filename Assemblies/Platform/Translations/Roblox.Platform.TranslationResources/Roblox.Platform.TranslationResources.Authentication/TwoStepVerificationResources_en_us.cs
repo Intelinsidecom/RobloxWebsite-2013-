@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class TwoStepVerificationResources_en_us : TranslationResourcesBase, ITwoStepVerificationResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class TwoStepVerificationResources_en_us : TranslationResourcesBase, ITwoStepVerificationResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -814,4 +813,7 @@ internal class TwoStepVerificationResources_en_us : TranslationResourcesBase, IT
 	{
 		return "Too many characters";
 	}
+}
+
+
 }

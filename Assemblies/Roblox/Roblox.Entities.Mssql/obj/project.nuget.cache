@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "xUqTVOmg2Qc=",
-  "success": false,
+  "dgSpecHash": "5j+sMLcJZUQ=",
+  "success": true,
   "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Intel\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\consul\\1.6.10.4\\consul.1.6.10.4.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\dnsclient\\1.7.0\\dnsclient.1.7.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.0\\microsoft.data.sqlclient.5.2.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.2\\microsoft.data.sqlclient.5.2.2.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.2.0\\microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.identity.client\\4.56.0\\microsoft.identity.client.4.56.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.56.0\\microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.identity.client\\4.61.3\\microsoft.identity.client.4.61.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.61.3\\microsoft.identity.client.extensions.msal.4.61.3.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.35.0\\microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\microsoft.identitymodel.logging\\6.35.0\\microsoft.identitymodel.logging.6.35.0.nupkg.sha512",
@@ -47,10 +47,11 @@
     "C:\\Users\\Intel\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\stackexchange.redis\\1.2.6\\stackexchange.redis.1.2.6.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
@@ -99,7 +100,7 @@
     "C:\\Users\\Intel\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\system.security.cryptography.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.security.cryptography.openssl\\4.3.0\\system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.security.principal\\4.3.0\\system.security.principal.4.3.0.nupkg.sha512",
@@ -116,17 +117,5 @@
     "C:\\Users\\Intel\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: System.Configuration.ConfigurationManager from 6.0.1 to 4.7.0. Reference the package directly from the project to select a different version. \r\n Roblox.Entities.Mssql -> Roblox.MssqlDatabases -> Roblox.Mssql -> Microsoft.Data.SqlClient 5.2.0 -> System.Configuration.ConfigurationManager (>= 6.0.1) \r\n Roblox.Entities.Mssql -> Roblox.MssqlDatabases -> System.Configuration.ConfigurationManager (>= 4.7.0)",
-      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj",
-      "filePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj",
-      "libraryId": "System.Configuration.ConfigurationManager",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  "logs": []
 }

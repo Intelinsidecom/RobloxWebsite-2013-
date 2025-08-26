@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IReportAbuseResources : ITranslationResources
 
-public interface IReportAbuseResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Close"
@@ -337,4 +337,7 @@ public interface IReportAbuseResources : ITranslationResources
 	/// English String: "Tell us how you think {creatorName} is breaking the rules of Roblox."
 	/// </summary>
 	string LabelTellUsHow(string creatorName);
+}
+
+
 }

@@ -1,12 +1,12 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class DownloadTheAppEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class DownloadTheAppEvent : WebEventBase
 {
 	private const string _Name = "downloadTheApp";
 
-	public DownloadTheAppEvent(EventStreamer streamer, DownloadTheAppEventArgs eventArgs)
+	public DownloadTheAppEvent(IEventStreamer streamer, DownloadTheAppEventArgs eventArgs)
 		: base(streamer, "downloadTheApp", eventArgs)
 	{
 		if (string.IsNullOrWhiteSpace(eventArgs.Context))
@@ -16,3 +16,12 @@ public class DownloadTheAppEvent : WebEventBase
 		AddEventArg("ctx", eventArgs.Context);
 	}
 }
+
+
+}
+
+
+
+
+
+

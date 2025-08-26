@@ -1,10 +1,9 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using Newtonsoft.Json.Linq;
+namespace Roblox.Platform.RealTimeNotifications.Client {
+    [DataContract]
 
-namespace Roblox.RealTimeNotifications.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 internal class PublishUserNotificationRequest
 {
@@ -19,4 +18,7 @@ internal class PublishUserNotificationRequest
 
 	[DataMember(Name = "isIncrementSequenceNumberEnabled")]
 	public bool? IsIncrementSequenceNumberEnabled { get; set; }
+}
+
+
 }

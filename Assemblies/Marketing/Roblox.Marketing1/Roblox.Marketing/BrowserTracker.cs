@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Marketingpublic {
+    class BrowserTracker : IBrowserTracker
 
-namespace Roblox.Platform.Marketing;
-
-public class BrowserTracker : IBrowserTracker
 {
 	public long Id { get; private set; }
 
@@ -16,4 +15,7 @@ public class BrowserTracker : IBrowserTracker
 		Created = created;
 		Updated = updated;
 	}
+}
+
+
 }

@@ -1,7 +1,10 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    enum LocationType
 
-public enum LocationType
 {
 	Country,
 	UserGroup
+}
+
+
 }

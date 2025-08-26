@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 
@@ -105,7 +105,7 @@ public class MeasurementDAL
 		}
 		List<SqlParameter> queryParameters = new List<SqlParameter>();
 		queryParameters.Add(new SqlParameter("@ID", _ID));
-		EntityHelper.DoEntityDALDelete(new DbInfo(Helper.DBConnectionString, "[dbo].[Measurements_DeleteMeasurementByID]", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(Helper.DBConnectionString, "[dbo].[Measurements_DeleteMeasurementByID]", queryParameters));
 	}
 
 	internal void Insert()

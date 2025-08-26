@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderation {
+    /// <summary>
 
-/// <summary>
 /// Interface for a review task republisher that accepts a type parameter for the type of review task that it republishes
 /// </summary>
 /// <typeparam name="TTask"></typeparam>
@@ -12,4 +12,7 @@ public interface IReviewTaskRepublisher<out TTask> where TTask : IReviewTask
 	/// </summary>
 	/// <returns></returns>
 	IReviewTaskRepublishResult<TTask> RepublishOldestTasksInQueue();
+}
+
+
 }

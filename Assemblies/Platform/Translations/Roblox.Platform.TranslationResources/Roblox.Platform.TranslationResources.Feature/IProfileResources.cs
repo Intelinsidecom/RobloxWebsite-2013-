@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IProfileResources : ITranslationResources
 
-public interface IProfileResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Accept"
@@ -519,7 +519,7 @@ public interface IProfileResources : ITranslationResources
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
+	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	string LabelQuotation(string userStatus);
@@ -529,4 +529,7 @@ public interface IProfileResources : ITranslationResources
 	/// English String: "{username} has no creations."
 	/// </summary>
 	string MessageNoCreation(string username);
+}
+
+
 }

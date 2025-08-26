@@ -1,8 +1,7 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 public class GrantedItemListEntityFactory : IGrantedItemListEntityFactory
 {
 	public IGrantedItemListEntity Get(long id)
@@ -32,4 +31,7 @@ public class GrantedItemListEntityFactory : IGrantedItemListEntityFactory
 		}
 		return null;
 	}
+}
+
+
 }

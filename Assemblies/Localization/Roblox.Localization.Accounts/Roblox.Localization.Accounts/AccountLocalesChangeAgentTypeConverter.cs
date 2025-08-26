@@ -1,10 +1,9 @@
-using Roblox.Common;
+﻿using Roblox.Common;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Audit;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountLocalesChangeAgentTypeConverter : IAccountLocalesChangeAgentTypeConverter
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountLocalesChangeAgentTypeConverter : IAccountLocalesChangeAgentTypeConverter
 {
 	private readonly IAccountLocalesChangeAgentTypeEntityFactory _ChangeAgentTypeEntityFactory;
 
@@ -31,4 +30,7 @@ internal class AccountLocalesChangeAgentTypeConverter : IAccountLocalesChangeAge
 		}
 		return changeAgentTypeEnum.Value;
 	}
+}
+
+
 }

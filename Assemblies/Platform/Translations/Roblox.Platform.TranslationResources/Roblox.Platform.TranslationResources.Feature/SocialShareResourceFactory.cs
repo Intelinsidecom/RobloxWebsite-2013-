@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class SocialShareResourceFactory
 
-internal static class SocialShareResourceFactory
 {
 	public const string FullNamespace = "Feature.SocialShare";
 
@@ -21,4 +21,7 @@ internal static class SocialShareResourceFactory
 			_ => new SocialShareResources_en_us(state), 
 		};
 	}
+}
+
+
 }

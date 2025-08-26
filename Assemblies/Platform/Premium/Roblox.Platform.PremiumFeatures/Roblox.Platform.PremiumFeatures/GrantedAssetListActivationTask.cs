@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
@@ -6,10 +6,9 @@ using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.EventLog;
 using Roblox.Platform.AssetOwnership;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class GrantedAssetListActivationTask : IRobloxEntity<long, GrantedAssetListActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
-namespace Roblox.PremiumFeatures;
-
-public class GrantedAssetListActivationTask : IRobloxEntity<long, GrantedAssetListActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 {
 	private GrantedAssetListActivationTaskDAL _EntityDAL;
 
@@ -173,4 +172,7 @@ public class GrantedAssetListActivationTask : IRobloxEntity<long, GrantedAssetLi
 		Completed = DateTime.Now;
 		Save();
 	}
+}
+
+
 }

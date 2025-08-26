@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3udvWXw9nf0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Translations\\Roblox.Platform.TranslationStorage.Client\\Roblox.Platform.TranslationStorage.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net471\\1.0.3\\microsoft.netframework.referenceassemblies.net471.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

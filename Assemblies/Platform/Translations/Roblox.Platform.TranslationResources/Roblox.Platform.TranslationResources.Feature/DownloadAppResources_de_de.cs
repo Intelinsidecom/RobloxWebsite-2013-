@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -32,21 +32,21 @@ internal class DownloadAppResources_de_de : DownloadAppResources_en_us, IDownloa
 	/// heading for the page
 	/// English String: "Roblox for Android"
 	/// </summary>
-	public override string HeadingRobloxForAndroid => "Roblox für Android";
+	public override string HeadingRobloxForAndroid => "Roblox fÃ¼r Android";
 
 	/// <summary>
 	/// Key: "Heading.RobloxForIos"
 	/// heading for page
 	/// English String: "Roblox for iOS"
 	/// </summary>
-	public override string HeadingRobloxForIos => "Roblox für iOS";
+	public override string HeadingRobloxForIos => "Roblox fÃ¼r iOS";
 
 	/// <summary>
 	/// Key: "Label.PlayGamesInMobile"
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "Spiele Roblox in unserer App für Mobilgeräte!";
+	public override string LabelPlayGamesInMobile => "Spiele Roblox in unserer App fÃ¼r MobilgerÃ¤te!";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
@@ -91,17 +91,17 @@ internal class DownloadAppResources_de_de : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForHeadingRobloxForAndroid()
 	{
-		return "Roblox für Android";
+		return "Roblox fÃ¼r Android";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxForIos()
 	{
-		return "Roblox für iOS";
+		return "Roblox fÃ¼r iOS";
 	}
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "Spiele Roblox in unserer App für Mobilgeräte!";
+		return "Spiele Roblox in unserer App fÃ¼r MobilgerÃ¤te!";
 	}
 
 	/// <summary>
@@ -133,4 +133,7 @@ internal class DownloadAppResources_de_de : DownloadAppResources_en_us, IDownloa
 	{
 		return "Spiele Roblox in unserer iOS-App!";
 	}
+}
+
+
 }

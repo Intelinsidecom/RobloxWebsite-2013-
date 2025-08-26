@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RecommendationsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -39,13 +39,13 @@ internal class RecommendationsResources_fr_fr : RecommendationsResources_en_us, 
 	/// heading for Item page recommendations section.
 	/// English String: "Recommended items"
 	/// </summary>
-	public override string HeadingRecommendedItems => "Objets recommandés";
+	public override string HeadingRecommendedItems => "Objets recommandÃ©s";
 
 	/// <summary>
 	/// Key: "Heading.RecommendedTitle"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string HeadingRecommendedTitle => "Recommandés";
+	public override string HeadingRecommendedTitle => "RecommandÃ©s";
 
 	/// <summary>
 	/// Key: "Label.Free"
@@ -106,12 +106,12 @@ internal class RecommendationsResources_fr_fr : RecommendationsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingRecommendedItems()
 	{
-		return "Objets recommandés";
+		return "Objets recommandÃ©s";
 	}
 
 	protected override string _GetTemplateForHeadingRecommendedTitle()
 	{
-		return "Recommandés";
+		return "RecommandÃ©s";
 	}
 
 	/// <summary>
@@ -158,4 +158,7 @@ internal class RecommendationsResources_fr_fr : RecommendationsResources_en_us, 
 	{
 		return "Hors d'offre";
 	}
+}
+
+
 }

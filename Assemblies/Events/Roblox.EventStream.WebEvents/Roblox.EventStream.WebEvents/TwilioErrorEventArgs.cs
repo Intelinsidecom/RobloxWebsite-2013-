@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class TwilioErrorEventArgs : WebEventArgs
 
-public class TwilioErrorEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The error code specified by Twilio
@@ -17,3 +18,12 @@ public class TwilioErrorEventArgs : WebEventArgs
 	/// </summary>
 	public string PhoneNumber { get; set; }
 }
+
+
+}
+
+
+
+
+
+

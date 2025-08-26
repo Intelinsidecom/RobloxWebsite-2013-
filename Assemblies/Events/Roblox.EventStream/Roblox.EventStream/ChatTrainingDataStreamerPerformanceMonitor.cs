@@ -1,9 +1,8 @@
 using System;
 using Roblox.Instrumentation;
+namespace Roblox.EventStream {
+    class ChatTrainingDataStreamerPerformanceMonitor
 
-namespace Roblox.Platform.EventStream;
-
-internal class ChatTrainingDataStreamerPerformanceMonitor
 {
 	private const string _PerformanceCategory = "Roblox.ChatDataStreamerV1";
 
@@ -20,4 +19,7 @@ internal class ChatTrainingDataStreamerPerformanceMonitor
 		GdprRegionChatDataAttemptedToSentPerSecond = counterRegistry.GetRateOfCountsPerSecondCounter("Roblox.ChatDataStreamerV1", "GdprRegionChatDataAttemptedToSentPerSecond");
 		UnitedStatesRegionChatDataAttemptedToSentPerSecond = counterRegistry.GetRateOfCountsPerSecondCounter("Roblox.ChatDataStreamerV1", "UnitedStatesRegionChatDataAttemptedToSentPerSecond");
 	}
+}
+
+
 }

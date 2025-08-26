@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class PremiumMigrationWebResourceFactory
 
-internal static class PremiumMigrationWebResourceFactory
 {
 	public const string FullNamespace = "Feature.PremiumMigrationWeb";
 
@@ -21,4 +21,7 @@ internal static class PremiumMigrationWebResourceFactory
 			_ => new PremiumMigrationWebResources_en_us(state), 
 		};
 	}
+}
+
+
 }

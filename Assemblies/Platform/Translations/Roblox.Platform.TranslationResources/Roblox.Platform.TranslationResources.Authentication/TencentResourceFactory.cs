@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class TencentResourceFactory
 
-internal static class TencentResourceFactory
 {
 	public const string FullNamespace = "Authentication.Tencent";
 
@@ -27,4 +27,7 @@ internal static class TencentResourceFactory
 			_ => new TencentResources_en_us(state), 
 		};
 	}
+}
+
+
 }

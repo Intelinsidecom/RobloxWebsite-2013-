@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notificationsinternal {
+    static class PushNotificationsResourceFactory
 
-internal static class PushNotificationsResourceFactory
 {
 	public const string FullNamespace = "Notifications.PushNotifications";
 
@@ -21,4 +21,7 @@ internal static class PushNotificationsResourceFactory
 			_ => new PushNotificationsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

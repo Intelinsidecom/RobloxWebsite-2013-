@@ -1,6 +1,6 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbspublic {
+    interface IStaticImages
 
-public interface IStaticImages
 {
 	ThumbnailDomainFactories DomainFactories { get; }
 
@@ -33,4 +33,7 @@ public interface IStaticImages
 	/// <param name="index">The index of the game media item. Minimum value is 1 and maximum value is 12.</param>
 	/// <returns>Returns the game media item thumbanil result by given size, format and index.</returns>
 	ThumbResult GetGameMediaItemThumbResult(int width, int height, string format, int index);
+}
+
+
 }

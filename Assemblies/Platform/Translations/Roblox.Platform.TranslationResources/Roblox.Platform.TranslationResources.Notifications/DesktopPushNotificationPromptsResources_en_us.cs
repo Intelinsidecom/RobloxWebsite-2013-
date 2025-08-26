@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notificationsinternal {
+    class DesktopPushNotificationPromptsResources_en_us : TranslationResourcesBase, IDesktopPushNotificationPromptsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Notifications;
-
-internal class DesktopPushNotificationPromptsResources_en_us : TranslationResourcesBase, IDesktopPushNotificationPromptsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -247,4 +246,7 @@ internal class DesktopPushNotificationPromptsResources_en_us : TranslationResour
 	{
 		return "Can we send you notifications on this computer?";
 	}
+}
+
+
 }

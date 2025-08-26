@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.ContentRatings.Properties;
+namespace Roblox.Platform.ContentRatingspublic {
+    static class ContentRatingManager
 
-namespace Roblox.ContentRatings;
-
-public static class ContentRatingManager
 {
 	public static void CreateOrUpdateAssetRating(long assetHashID, byte newRatingID)
 	{
@@ -46,4 +45,7 @@ public static class ContentRatingManager
 	{
 		return AssetContentRating.GetByAssetHashID(assetHashID);
 	}
+}
+
+
 }

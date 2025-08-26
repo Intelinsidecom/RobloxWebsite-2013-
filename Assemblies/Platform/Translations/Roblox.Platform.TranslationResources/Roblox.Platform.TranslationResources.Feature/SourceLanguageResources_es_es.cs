@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SourceLanguageResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -60,7 +60,7 @@ internal class SourceLanguageResources_es_es : SourceLanguageResources_en_us, IS
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "Error: no se ha podido guardar. Inténtalo de nuevo más tarde.";
+	public override string ResponseGeneralError => "Error: no se ha podido guardar. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	public SourceLanguageResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -84,12 +84,12 @@ internal class SourceLanguageResources_es_es : SourceLanguageResources_en_us, IS
 	/// </summary>
 	public override string DescriptionChangeSourceLanguage(string languageName)
 	{
-		return $"¿Seguro que quieres cambiar el idioma de origen de este juego a {languageName}? Este debería corresponder al idioma en el cual se ha escrito el juego.";
+		return $"Â¿Seguro que quieres cambiar el idioma de origen de este juego a {languageName}? Este deberÃ­a corresponder al idioma en el cual se ha escrito el juego.";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeSourceLanguage()
 	{
-		return "¿Seguro que quieres cambiar el idioma de origen de este juego a {languageName}? Este debería corresponder al idioma en el cual se ha escrito el juego.";
+		return "Â¿Seguro que quieres cambiar el idioma de origen de este juego a {languageName}? Este deberÃ­a corresponder al idioma en el cual se ha escrito el juego.";
 	}
 
 	protected override string _GetTemplateForDescriptionSourceLanguage()
@@ -119,6 +119,9 @@ internal class SourceLanguageResources_es_es : SourceLanguageResources_en_us, IS
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "Error: no se ha podido guardar. Inténtalo de nuevo más tarde.";
+		return "Error: no se ha podido guardar. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
+}
+
+
 }

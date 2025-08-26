@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Moderation.Entities;
+namespace Roblox.Moderation {
+    /// <inheritdoc />
 
-namespace Roblox.Platform.Moderation;
-
-/// <inheritdoc />
 internal class ModerationLocaleFactory : IModerationLocaleFactory
 {
 	private readonly ModerationDomainFactories _DomainFactories;
@@ -58,4 +57,7 @@ internal class ModerationLocaleFactory : IModerationLocaleFactory
 	{
 		return new SupportedLocaleIdentifier(supportedLocaleId);
 	}
+}
+
+
 }

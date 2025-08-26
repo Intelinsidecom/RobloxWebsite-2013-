@@ -1,12 +1,13 @@
-namespace Roblox.StaticContent.Client;
-
-public enum StaticContentError
+namespace Roblox.Platform.StaticContent.Client
 {
-	MissingRequestParameters,
-	InvalidContentHash,
-	InvalidContentType,
-	InvalidComponent,
-	InvalidBundleContents,
-	UploadUnavailable,
-	InvalidContentPackItem
+    public enum StaticContentError
+    {
+        MissingRequestParameters,
+        InvalidContentHash,
+        InvalidContentType,
+        InvalidComponent,
+        InvalidBundleContents,
+        UploadUnavailable,
+        InvalidContentPackItem
+    }
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class BuildersClubPageResources_en_us : TranslationResourcesBase, IBuildersClubPageResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class BuildersClubPageResources_en_us : TranslationResourcesBase, IBuildersClubPageResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -471,4 +470,7 @@ internal class BuildersClubPageResources_en_us : TranslationResourcesBase, IBuil
 	{
 		return "Your Current Plan";
 	}
+}
+
+
 }

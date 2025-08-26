@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SourceLanguageResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,21 +18,21 @@ internal class SourceLanguageResources_de_de : SourceLanguageResources_en_us, IS
 	/// The label for the confirm button
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "Bestätigen";
+	public override string ActionConfirm => "BestÃ¤tigen";
 
 	/// <summary>
 	/// Key: "Description.SourceLanguage"
 	/// The label for source language tooltip
 	/// English String: "The source language represents the language the game has been written in."
 	/// </summary>
-	public override string DescriptionSourceLanguage => "Die Quellsprache steht für die Sprache, in der das Spiel geschrieben wurde.";
+	public override string DescriptionSourceLanguage => "Die Quellsprache steht fÃ¼r die Sprache, in der das Spiel geschrieben wurde.";
 
 	/// <summary>
 	/// Key: "Heading.ChangeSourceLanguage"
 	/// The modal title for change source language modal
 	/// English String: "Change Source Language"
 	/// </summary>
-	public override string HeadingChangeSourceLanguage => "Quellsprache ändern";
+	public override string HeadingChangeSourceLanguage => "Quellsprache Ã¤ndern";
 
 	/// <summary>
 	/// Key: "Label.GameSourceLanguage"
@@ -60,7 +60,7 @@ internal class SourceLanguageResources_de_de : SourceLanguageResources_en_us, IS
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "Fehler: Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
+	public override string ResponseGeneralError => "Fehler: Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	public SourceLanguageResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -74,7 +74,7 @@ internal class SourceLanguageResources_de_de : SourceLanguageResources_en_us, IS
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "Bestätigen";
+		return "BestÃ¤tigen";
 	}
 
 	/// <summary>
@@ -84,22 +84,22 @@ internal class SourceLanguageResources_de_de : SourceLanguageResources_en_us, IS
 	/// </summary>
 	public override string DescriptionChangeSourceLanguage(string languageName)
 	{
-		return $"Möchtest du die Quellsprache dieses Spiels wirklich zu {languageName} ändern? Dies sollte der Sprache entsprechen, in der das Spiel geschrieben wurde.";
+		return $"MÃ¶chtest du die Quellsprache dieses Spiels wirklich zu {languageName} Ã¤ndern? Dies sollte der Sprache entsprechen, in der das Spiel geschrieben wurde.";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeSourceLanguage()
 	{
-		return "Möchtest du die Quellsprache dieses Spiels wirklich zu {languageName} ändern? Dies sollte der Sprache entsprechen, in der das Spiel geschrieben wurde.";
+		return "MÃ¶chtest du die Quellsprache dieses Spiels wirklich zu {languageName} Ã¤ndern? Dies sollte der Sprache entsprechen, in der das Spiel geschrieben wurde.";
 	}
 
 	protected override string _GetTemplateForDescriptionSourceLanguage()
 	{
-		return "Die Quellsprache steht für die Sprache, in der das Spiel geschrieben wurde.";
+		return "Die Quellsprache steht fÃ¼r die Sprache, in der das Spiel geschrieben wurde.";
 	}
 
 	protected override string _GetTemplateForHeadingChangeSourceLanguage()
 	{
-		return "Quellsprache ändern";
+		return "Quellsprache Ã¤ndern";
 	}
 
 	protected override string _GetTemplateForLabelGameSourceLanguage()
@@ -119,6 +119,9 @@ internal class SourceLanguageResources_de_de : SourceLanguageResources_en_us, IS
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "Fehler: Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
+		return "Fehler: Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
+}
+
+
 }

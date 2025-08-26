@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Roblox.Platform.Core;
+namespace Roblox.Localization.Accounts {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Accounts;
-
-[ExcludeFromCodeCoverage]
 internal class AccountCountryEntityFactory : IAccountCountryEntityFactory
 {
 	public IAccountCountryEntity Get(long id)
@@ -49,4 +48,7 @@ internal class AccountCountryEntityFactory : IAccountCountryEntityFactory
 		}
 		return null;
 	}
+}
+
+
 }

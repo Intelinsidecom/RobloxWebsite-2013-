@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides EngagementPayoutResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -28,7 +28,7 @@ internal class EngagementPayoutResources_zh_cjv : EngagementPayoutResources_en_u
 	/// Key: "Heading.EngagementPayout"
 	/// English String: "Engagement and Payout"
 	/// </summary>
-	public override string HeadingEngagementPayout => "约定及支付";
+	public override string HeadingEngagementPayout => "çº¦å®šåŠæ”¯ä»˜";
 
 	/// <summary>
 	/// Key: "Label.Custom"
@@ -82,7 +82,7 @@ internal class EngagementPayoutResources_zh_cjv : EngagementPayoutResources_en_u
 
 	protected override string _GetTemplateForHeadingEngagementPayout()
 	{
-		return "约定及支付";
+		return "çº¦å®šåŠæ”¯ä»˜";
 	}
 
 	protected override string _GetTemplateForLabelCustom()
@@ -109,4 +109,7 @@ internal class EngagementPayoutResources_zh_cjv : EngagementPayoutResources_en_u
 	{
 		return "";
 	}
+}
+
+
 }

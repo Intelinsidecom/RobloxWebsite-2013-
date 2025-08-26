@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides EmailConfirmationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,35 +11,35 @@ internal class EmailConfirmationResources_zh_cjv : EmailConfirmationResources_en
 	/// button label
 	/// English String: "Done"
 	/// </summary>
-	public override string ActionDone => "完成";
+	public override string ActionDone => "å®Œæˆ";
 
 	/// <summary>
 	/// Key: "Action.ViewItem"
 	/// button which takes user to item details page
 	/// English String: "View Item"
 	/// </summary>
-	public override string ActionViewItem => "查看物品";
+	public override string ActionViewItem => "æŸ¥çœ‹ç‰©å“";
 
 	/// <summary>
 	/// Key: "Heading.ThankYou"
 	/// heading
 	/// English String: "Thank You!"
 	/// </summary>
-	public override string HeadingThankYou => "谢谢！";
+	public override string HeadingThankYou => "è°¢è°¢ï¼";
 
 	/// <summary>
 	/// Key: "Message.EmailVerified"
 	/// success message confirmation
 	/// English String: "Your email has been verified"
 	/// </summary>
-	public override string MessageEmailVerified => "你的电子邮件已完成验证";
+	public override string MessageEmailVerified => "ä½ çš„ç”µå­é‚®ä»¶å·²å®ŒæˆéªŒè¯";
 
 	/// <summary>
 	/// Key: "Message.EmailVerifiedEnjoyFreeHat"
 	/// success message confirmation notifying user they have verified their email and have received a free hat
 	/// English String: "Your email has been verified. Enjoy the free hat!"
 	/// </summary>
-	public override string MessageEmailVerifiedEnjoyFreeHat => "你的电子邮件已完成验证。恭喜你获得这顶免费的帽子！";
+	public override string MessageEmailVerifiedEnjoyFreeHat => "ä½ çš„ç”µå­é‚®ä»¶å·²å®ŒæˆéªŒè¯ã€‚æ­å–œä½ èŽ·å¾—è¿™é¡¶å…è´¹çš„å¸½å­ï¼";
 
 	public EmailConfirmationResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -48,26 +48,29 @@ internal class EmailConfirmationResources_zh_cjv : EmailConfirmationResources_en
 
 	protected override string _GetTemplateForActionDone()
 	{
-		return "完成";
+		return "å®Œæˆ";
 	}
 
 	protected override string _GetTemplateForActionViewItem()
 	{
-		return "查看物品";
+		return "æŸ¥çœ‹ç‰©å“";
 	}
 
 	protected override string _GetTemplateForHeadingThankYou()
 	{
-		return "谢谢！";
+		return "è°¢è°¢ï¼";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerified()
 	{
-		return "你的电子邮件已完成验证";
+		return "ä½ çš„ç”µå­é‚®ä»¶å·²å®ŒæˆéªŒè¯";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerifiedEnjoyFreeHat()
 	{
-		return "你的电子邮件已完成验证。恭喜你获得这顶免费的帽子！";
+		return "ä½ çš„ç”µå­é‚®ä»¶å·²å®ŒæˆéªŒè¯ã€‚æ­å–œä½ èŽ·å¾—è¿™é¡¶å…è´¹çš„å¸½å­ï¼";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PeopleListResources_en_us : TranslationResourcesBase, IPeopleListResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PeopleListResources_en_us : TranslationResourcesBase, IPeopleListResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -137,4 +136,7 @@ internal class PeopleListResources_en_us : TranslationResourcesBase, IPeopleList
 	{
 		return "View Profile";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class FileUploadComponentResourceFactory
 
-internal static class FileUploadComponentResourceFactory
 {
 	public const string FullNamespace = "Feature.FileUploadComponent";
 
@@ -21,4 +21,7 @@ internal static class FileUploadComponentResourceFactory
 			_ => new FileUploadComponentResources_en_us(state), 
 		};
 	}
+}
+
+
 }

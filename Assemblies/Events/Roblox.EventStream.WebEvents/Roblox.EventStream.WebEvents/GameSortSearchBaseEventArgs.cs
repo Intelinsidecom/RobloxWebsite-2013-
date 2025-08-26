@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public abstract class GameSortSearchBaseEventArgs : WebEventArgs
 
-public abstract class GameSortSearchBaseEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// Start index of games to search.
@@ -23,3 +24,12 @@ public abstract class GameSortSearchBaseEventArgs : WebEventArgs
 	/// <summary>The assets returned. It will be Ids for the GameSortEvent and Id and name for GameSearchEvent.</summary>
 	public string AssetsReturned { get; set; }
 }
+
+
+}
+
+
+
+
+
+

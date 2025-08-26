@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationAnalyticsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,53 +11,53 @@ internal class TranslationAnalyticsResources_zh_cn : TranslationAnalyticsResourc
 	/// button text to download report
 	/// English String: "Download"
 	/// </summary>
-	public override string ActionDownload => "下载";
+	public override string ActionDownload => "ä¸‹è½½";
 
 	/// <summary>
 	/// Key: "Action.Request"
 	/// button text to request report
 	/// English String: "Request"
 	/// </summary>
-	public override string ActionRequest => "请求";
+	public override string ActionRequest => "è¯·æ±‚";
 
 	/// <summary>
 	/// Key: "Description.ReportHint"
 	/// English String: "Please note: Once requested, downloads may take a few minutes to prepare."
 	/// </summary>
-	public override string DescriptionReportHint => "请注意：请求后，下载将需要几分钟的时间准备。";
+	public override string DescriptionReportHint => "è¯·æ³¨æ„ï¼šè¯·æ±‚åŽï¼Œä¸‹è½½å°†éœ€è¦å‡ åˆ†é’Ÿçš„æ—¶é—´å‡†å¤‡ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.TranslationAnalytics"
 	/// section heading
 	/// English String: "Translator Contribution Report"
 	/// </summary>
-	public override string HeadingTranslationAnalytics => "译者贡献报告";
+	public override string HeadingTranslationAnalytics => "è¯‘è€…è´¡çŒ®æŠ¥å‘Š";
 
 	/// <summary>
 	/// Key: "Label.Pending"
 	/// status of report generation
 	/// English String: "Pending"
 	/// </summary>
-	public override string LabelPending => "处理中";
+	public override string LabelPending => "å¤„ç†ä¸­";
 
 	/// <summary>
 	/// Key: "Label.SelectDates"
 	/// label for date selection dropdown
 	/// English String: "Select Date Range"
 	/// </summary>
-	public override string LabelSelectDates => "选择日期范围";
+	public override string LabelSelectDates => "é€‰æ‹©æ—¥æœŸèŒƒå›´";
 
 	/// <summary>
 	/// Key: "Message.GenericError"
 	/// English String: "There was a problem with your request. Please try again later."
 	/// </summary>
-	public override string MessageGenericError => "处理请求时遇到问题，请稍后重试。";
+	public override string MessageGenericError => "å¤„ç†è¯·æ±‚æ—¶é‡åˆ°é—®é¢˜ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PermissionError"
 	/// English String: "You do not have sufficient permission to download this report."
 	/// </summary>
-	public override string MessagePermissionError => "你的权限不足，无法下载此报告。";
+	public override string MessagePermissionError => "ä½ çš„æƒé™ä¸è¶³ï¼Œæ— æ³•ä¸‹è½½æ­¤æŠ¥å‘Šã€‚";
 
 	public TranslationAnalyticsResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -66,41 +66,44 @@ internal class TranslationAnalyticsResources_zh_cn : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForActionDownload()
 	{
-		return "下载";
+		return "ä¸‹è½½";
 	}
 
 	protected override string _GetTemplateForActionRequest()
 	{
-		return "请求";
+		return "è¯·æ±‚";
 	}
 
 	protected override string _GetTemplateForDescriptionReportHint()
 	{
-		return "请注意：请求后，下载将需要几分钟的时间准备。";
+		return "è¯·æ³¨æ„ï¼šè¯·æ±‚åŽï¼Œä¸‹è½½å°†éœ€è¦å‡ åˆ†é’Ÿçš„æ—¶é—´å‡†å¤‡ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationAnalytics()
 	{
-		return "译者贡献报告";
+		return "è¯‘è€…è´¡çŒ®æŠ¥å‘Š";
 	}
 
 	protected override string _GetTemplateForLabelPending()
 	{
-		return "处理中";
+		return "å¤„ç†ä¸­";
 	}
 
 	protected override string _GetTemplateForLabelSelectDates()
 	{
-		return "选择日期范围";
+		return "é€‰æ‹©æ—¥æœŸèŒƒå›´";
 	}
 
 	protected override string _GetTemplateForMessageGenericError()
 	{
-		return "处理请求时遇到问题，请稍后重试。";
+		return "å¤„ç†è¯·æ±‚æ—¶é‡åˆ°é—®é¢˜ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
-		return "你的权限不足，无法下载此报告。";
+		return "ä½ çš„æƒé™ä¸è¶³ï¼Œæ— æ³•ä¸‹è½½æ­¤æŠ¥å‘Šã€‚";
 	}
+}
+
+
 }

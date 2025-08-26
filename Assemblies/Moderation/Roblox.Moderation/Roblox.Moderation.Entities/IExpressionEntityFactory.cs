@@ -1,10 +1,13 @@
-namespace Roblox.Platform.Moderation.Entities;
+﻿namespace Roblox.Moderation.Entitiesinternal {
+    interface IExpressionEntityFactory
 
-internal interface IExpressionEntityFactory
 {
 	IExpressionEntity GetOrCreate(string value);
 
 	IExpressionEntity Get(long id);
 
 	IExpressionEntity Get(string value);
+}
+
+
 }

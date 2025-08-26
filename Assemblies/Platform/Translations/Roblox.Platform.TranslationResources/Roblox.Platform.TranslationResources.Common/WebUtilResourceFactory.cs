@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class WebUtilResourceFactory
 
-internal static class WebUtilResourceFactory
 {
 	public const string FullNamespace = "Common.WebUtil";
 
@@ -21,4 +21,7 @@ internal static class WebUtilResourceFactory
 			_ => new WebUtilResources_en_us(state), 
 		};
 	}
+}
+
+
 }

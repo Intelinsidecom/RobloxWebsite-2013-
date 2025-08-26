@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameLaunchGuestModeResources_en_us : TranslationResourcesBase, IGameLaunchGuestModeResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameLaunchGuestModeResources_en_us : TranslationResourcesBase, IGameLaunchGuestModeResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -270,4 +269,7 @@ internal class GameLaunchGuestModeResources_en_us : TranslationResourcesBase, IG
 	{
 		return "I have an account";
 	}
+}
+
+
 }

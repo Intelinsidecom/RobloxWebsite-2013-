@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Roblox.Platform.Core;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class LanguageDefaultSupportedLocaleEntityFactory : ILanguageDefaultSupportedLocaleEntityFactory
 {
 	public ILanguageDefaultSupportedLocaleEntity Get(int id)
@@ -54,4 +53,7 @@ internal class LanguageDefaultSupportedLocaleEntityFactory : ILanguageDefaultSup
 			throw new PlatformArgumentException(string.Format("'{0}' must be positive", "languageId"));
 		}
 	}
+}
+
+
 }

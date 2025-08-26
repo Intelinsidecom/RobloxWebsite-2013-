@@ -1,6 +1,6 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbspublic {
+    class Overlay
 
-public class Overlay
 {
 	private const string _BuildersClubOverlaySmall = "~/images/AssetIcons/img-overlay-bc-sm.png";
 
@@ -63,4 +63,7 @@ public class Overlay
 			_ => string.Empty, 
 		};
 	}
+}
+
+
 }

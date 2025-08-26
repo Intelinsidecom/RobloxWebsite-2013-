@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class SupportedLanguagesResourceFactory
 
-internal static class SupportedLanguagesResourceFactory
 {
 	public const string FullNamespace = "Feature.SupportedLanguages";
 
@@ -21,4 +21,7 @@ internal static class SupportedLanguagesResourceFactory
 			_ => new SupportedLanguagesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

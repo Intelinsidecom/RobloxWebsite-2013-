@@ -1,8 +1,7 @@
-using Roblox.TranslationResources.Purchasing;
+﻿using Roblox.TranslationResources.Purchasing;
+namespace Roblox.Platform.TranslationResourcespublic {
+    interface IPurchasingResources : ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-public interface IPurchasingResources : ITranslationResourcesNamespacesGroup
 {
 	IPurchaseDialogResources PurchaseDialog { get; }
 
@@ -11,4 +10,7 @@ public interface IPurchasingResources : ITranslationResourcesNamespacesGroup
 	IRixtyPinResources RixtyPin { get; }
 
 	IRobloxProductsResources RobloxProducts { get; }
+}
+
+
 }

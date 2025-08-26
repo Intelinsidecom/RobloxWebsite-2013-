@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Drawing.Imaging;
 using System.Web;
 using System.Web.UI.WebControls;
+namespace Roblox.Platform.Thumbspublic {
+    class ImageParameters : IEquatable<ImageParameters>, IComparable<ImageParameters>
 
-namespace Roblox.Thumbs;
-
-public class ImageParameters : IEquatable<ImageParameters>, IComparable<ImageParameters>
 {
 	private static readonly ImageParameters _ImageParameters110X110 = new ImageParameters(110, 110, ImageFormat.Png);
 
@@ -318,4 +317,7 @@ public class ImageParameters : IEquatable<ImageParameters>, IComparable<ImagePar
 			_ => throw new ApplicationException($"Bad ImageType: {type}"), 
 		};
 	}
+}
+
+
 }

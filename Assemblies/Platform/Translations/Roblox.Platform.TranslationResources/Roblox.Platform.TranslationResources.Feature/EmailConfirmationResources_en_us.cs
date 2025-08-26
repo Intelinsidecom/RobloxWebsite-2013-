@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class EmailConfirmationResources_en_us : TranslationResourcesBase, IEmailConfirmationResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class EmailConfirmationResources_en_us : TranslationResourcesBase, IEmailConfirmationResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -104,4 +103,7 @@ internal class EmailConfirmationResources_en_us : TranslationResourcesBase, IEma
 	{
 		return "Your email has been verified. Enjoy the free hat!";
 	}
+}
+
+
 }

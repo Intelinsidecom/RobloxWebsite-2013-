@@ -1,4 +1,6 @@
-extern alias ConfMan;
+﻿namespace extern {
+    alias ConfMan;
+
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
@@ -95,3 +97,4 @@ internal sealed class Settings : ApplicationSettingsBase, IXboxLiveSettings
 		Provider.RegisterSettings(e, this);
 	}
 }
+

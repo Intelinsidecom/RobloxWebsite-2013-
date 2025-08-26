@@ -1,12 +1,12 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class LibrarySearchEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class LibrarySearchEvent : WebEventBase
 {
 	private const string _Name = "librarySearch";
 
-	public LibrarySearchEvent(EventStreamer streamer, CatalogKeywordSearchEventArgs eventArgs)
+	public LibrarySearchEvent(IEventStreamer streamer, CatalogKeywordSearchEventArgs eventArgs)
 		: base(streamer, "librarySearch", eventArgs)
 	{
 		if (string.IsNullOrWhiteSpace(eventArgs.Keyword))
@@ -36,14 +36,14 @@ public class LibrarySearchEvent : WebEventBase
 	/// Sends library search events to event stream.
 	/// </summary>
 	/// <param name="eventArgs"></param>
-	/// <param name="eventStreamer"></param>
+	/// <param name="IEventStreamer"></param>
 	/// <param name="assetReturned"></param>
 	/// <param name="keyword"></param>
 	/// <param name="page"></param>
 	/// <param name="category"></param>
 	/// <param name="subCategory"></param>
 	/// <param name="sortType"></param>
-	public static void SendLibrarySearchEvent(CatalogKeywordSearchEventArgs eventArgs, EventStreamer eventStreamer, string assetReturned, string keyword, string page, string category, string subCategory = null, string sortType = null)
+	public static void SendLibrarySearchEvent(CatalogKeywordSearchEventArgs eventArgs, IEventStreamer IEventStreamer, string assetReturned, string keyword, string page, string category, string subCategory = null, string sortType = null)
 	{
 		if (!string.IsNullOrEmpty(keyword))
 		{
@@ -59,7 +59,16 @@ public class LibrarySearchEvent : WebEventBase
 			{
 				eventArgs.SubCategory = subCategory;
 			}
-			new LibrarySearchEvent(eventStreamer, eventArgs).Stream();
+			new LibrarySearchEvent(IEventStreamer, eventArgs).Stream();
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

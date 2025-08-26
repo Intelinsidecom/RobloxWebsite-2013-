@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.TranslationResources.Purchasing;
+namespace Roblox.Platform.TranslationResourcesinternal {
+    class PurchasingResources : IPurchasingResources, ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-internal class PurchasingResources : IPurchasingResources, ITranslationResourcesNamespacesGroup
 {
 	private readonly Lazy<IPurchaseDialogResources> _IPurchaseDialogResources;
 
@@ -44,4 +43,7 @@ internal class PurchasingResources : IPurchasingResources, ITranslationResources
 			_ => null, 
 		};
 	}
+}
+
+
 }

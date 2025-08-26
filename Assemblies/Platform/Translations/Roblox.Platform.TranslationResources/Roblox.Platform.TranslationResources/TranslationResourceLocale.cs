@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources;
+﻿namespace Roblox.Platform.TranslationResourcespublic {
+    enum TranslationResourceLocale
 
-public enum TranslationResourceLocale
 {
 	en_us,
 	de_de,
@@ -18,4 +18,7 @@ public enum TranslationResourceLocale
 	tr_tr,
 	vi_vn,
 	zh_cjv
+}
+
+
 }

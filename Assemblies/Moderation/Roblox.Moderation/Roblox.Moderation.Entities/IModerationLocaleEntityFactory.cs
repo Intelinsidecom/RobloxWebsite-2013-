@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.Platform.Core;
+namespace Roblox.Moderation.Entitiesinternal {
+    interface IModerationLocaleEntityFactory : IDomainFactory<ModerationDomainFactories>, IDomainObject<ModerationDomainFactories>
 
-namespace Roblox.Platform.Moderation.Entities;
-
-internal interface IModerationLocaleEntityFactory : IDomainFactory<ModerationDomainFactories>, IDomainObject<ModerationDomainFactories>
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Moderation.Entities.IModerationLocaleEntity" /> by its ID.
@@ -33,4 +32,7 @@ internal interface IModerationLocaleEntityFactory : IDomainFactory<ModerationDom
 	/// </summary>
 	/// <returns>The <see cref="T:Roblox.Platform.Moderation.Entities.IModerationLocaleEntity" /></returns>
 	IModerationLocaleEntity GetOrCreate(int supportedLocaleId);
+}
+
+
 }

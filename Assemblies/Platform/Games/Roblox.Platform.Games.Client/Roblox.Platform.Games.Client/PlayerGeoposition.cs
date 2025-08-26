@@ -1,6 +1,6 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    class PlayerGeoposition
 
-public class PlayerGeoposition
 {
 	public double Latitude { get; }
 
@@ -14,4 +14,7 @@ public class PlayerGeoposition
 		Longitude = longitude;
 		CountryId = countryId;
 	}
+}
+
+
 }

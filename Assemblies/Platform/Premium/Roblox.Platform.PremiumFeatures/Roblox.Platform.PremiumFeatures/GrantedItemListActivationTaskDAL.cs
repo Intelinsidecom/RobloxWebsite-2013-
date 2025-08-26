@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -6,10 +6,9 @@ using System.Diagnostics.CodeAnalysis;
 using Roblox.Common;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class GrantedItemListActivationTaskDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxPremiumFeatures;
@@ -128,4 +127,7 @@ internal class GrantedItemListActivationTaskDAL
 		};
 		return RobloxDatabase.RobloxPremiumFeatures.GetIDCollection<long>("GrantedItemListActivationTasks_LeaseTasks", queryParameters);
 	}
+}
+
+
 }

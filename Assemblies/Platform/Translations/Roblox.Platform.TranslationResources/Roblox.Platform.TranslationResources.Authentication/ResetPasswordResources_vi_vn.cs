@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ResetPasswordResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "Hủy";
+	public override string ActionCancel => "Há»§y";
 
 	/// <summary>
 	/// Key: "Action.EmailToResetPassword"
 	/// English String: "Use email to reset password"
 	/// </summary>
-	public override string ActionEmailToResetPassword => "Dùng email để đặt lại mật khẩu";
+	public override string ActionEmailToResetPassword => "DÃ¹ng email Ä‘á»ƒ Ä‘áº·t láº¡i máº­t kháº©u";
 
 	/// <summary>
 	/// Key: "Action.EmailToRetriveUsername"
 	/// English String: "Use email to retrieve username"
 	/// </summary>
-	public override string ActionEmailToRetriveUsername => "Dùng email để truy xuất tên người dùng";
+	public override string ActionEmailToRetriveUsername => "DÃ¹ng email Ä‘á»ƒ truy xuáº¥t tÃªn ngÆ°á»i dÃ¹ng";
 
 	/// <summary>
 	/// Key: "Action.Ok"
@@ -35,107 +35,107 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// Key: "Action.PhoneToResetPassword"
 	/// English String: "Use phone number to reset password"
 	/// </summary>
-	public override string ActionPhoneToResetPassword => "Dùng số điện thoại để đặt lại mật khẩu";
+	public override string ActionPhoneToResetPassword => "DÃ¹ng sá»‘ Ä‘iá»‡n thoáº¡i Ä‘á»ƒ Ä‘áº·t láº¡i máº­t kháº©u";
 
 	/// <summary>
 	/// Key: "Action.PhoneToRetriveUsername"
 	/// English String: "Use phone number to retrieve username"
 	/// </summary>
-	public override string ActionPhoneToRetriveUsername => "Dùng số điện thoại để truy xuất tên người dùng";
+	public override string ActionPhoneToRetriveUsername => "DÃ¹ng sá»‘ Ä‘iá»‡n thoáº¡i Ä‘á»ƒ truy xuáº¥t tÃªn ngÆ°á»i dÃ¹ng";
 
 	/// <summary>
 	/// Key: "Action.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionVerify => "Xác minh";
+	public override string ActionVerify => "XÃ¡c minh";
 
 	/// <summary>
 	/// Key: "Description.EmailToResetPassword"
 	/// English String: "Enter your email to reset your password."
 	/// </summary>
-	public override string DescriptionEmailToResetPassword => "Nhập email để đặt lại mật khẩu của bạn.";
+	public override string DescriptionEmailToResetPassword => "Nháº­p email Ä‘á»ƒ Ä‘áº·t láº¡i máº­t kháº©u cá»§a báº¡n.";
 
 	/// <summary>
 	/// Key: "Description.EmailToRetriveUsername"
 	/// English String: "Enter your email to retrieve your username."
 	/// </summary>
-	public override string DescriptionEmailToRetriveUsername => "Nhập email để truy xuất tên người dùng của bạn.";
+	public override string DescriptionEmailToRetriveUsername => "Nháº­p email Ä‘á»ƒ truy xuáº¥t tÃªn ngÆ°á»i dÃ¹ng cá»§a báº¡n.";
 
 	/// <summary>
 	/// Key: "Description.PasswordChangeEmail.Subject"
 	/// email subject to change password
 	/// English String: "Roblox Password Reset"
 	/// </summary>
-	public override string DescriptionPasswordChangeEmailSubject => "Đặt lại Mật khẩu Roblox";
+	public override string DescriptionPasswordChangeEmailSubject => "Äáº·t láº¡i Máº­t kháº©u Roblox";
 
 	/// <summary>
 	/// Key: "Description.PasswordResetEmail.Subject"
 	/// Subject for password reset email
 	/// English String: "Roblox Account Password Reset"
 	/// </summary>
-	public override string DescriptionPasswordResetEmailSubject => "Đặt lại Mật khẩu Tài khoản Roblox";
+	public override string DescriptionPasswordResetEmailSubject => "Äáº·t láº¡i Máº­t kháº©u TÃ i khoáº£n Roblox";
 
 	/// <summary>
 	/// Key: "Description.PhoneToResetPassword"
 	/// English String: "Enter your phone number to reset your password."
 	/// </summary>
-	public override string DescriptionPhoneToResetPassword => "Nhập số điện thoại để đặt lại mật khẩu của bạn.";
+	public override string DescriptionPhoneToResetPassword => "Nháº­p sá»‘ Ä‘iá»‡n thoáº¡i Ä‘á»ƒ Ä‘áº·t láº¡i máº­t kháº©u cá»§a báº¡n.";
 
 	/// <summary>
 	/// Key: "Description.PhoneToRetriveUsername"
 	/// English String: "Enter your phone number to retrieve your username."
 	/// </summary>
-	public override string DescriptionPhoneToRetriveUsername => "Nhập số điện thoại để truy xuất tên người dùng của bạn.";
+	public override string DescriptionPhoneToRetriveUsername => "Nháº­p sá»‘ Ä‘iá»‡n thoáº¡i Ä‘á»ƒ truy xuáº¥t tÃªn ngÆ°á»i dÃ¹ng cá»§a báº¡n.";
 
 	/// <summary>
 	/// Key: "Heading.VerifyCode"
 	/// verify code heading
 	/// English String: "Verify Code"
 	/// </summary>
-	public override string HeadingVerifyCode => "Xác minh mã";
+	public override string HeadingVerifyCode => "XÃ¡c minh mÃ£";
 
 	/// <summary>
 	/// Key: "Heading.VerifyPhone"
 	/// English String: "Verify Phone"
 	/// </summary>
-	public override string HeadingVerifyPhone => "Xác minh qua điện thoại";
+	public override string HeadingVerifyPhone => "XÃ¡c minh qua Ä‘iá»‡n thoáº¡i";
 
 	/// <summary>
 	/// Key: "HeadingForgetPasswordOrUsername"
 	/// English String: "Forgot Password or Username"
 	/// </summary>
-	public override string HeadingForgetPasswordOrUsername => "Quên Mật khẩu hoặc Tên người dùng";
+	public override string HeadingForgetPasswordOrUsername => "QuÃªn Máº­t kháº©u hoáº·c TÃªn ngÆ°á»i dÃ¹ng";
 
 	/// <summary>
 	/// Key: "Label.ActionButtonYes"
 	/// button label
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelActionButtonYes => "Có";
+	public override string LabelActionButtonYes => "CÃ³";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyPassword"
 	/// English String: "Forgot My Password"
 	/// </summary>
-	public override string LabelForgetMyPassword => "Quên mật khẩu của tôi";
+	public override string LabelForgetMyPassword => "QuÃªn máº­t kháº©u cá»§a tÃ´i";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyUsername"
 	/// English String: "Forgot My Username"
 	/// </summary>
-	public override string LabelForgetMyUsername => "Quên tên người dùng của tôi";
+	public override string LabelForgetMyUsername => "QuÃªn tÃªn ngÆ°á»i dÃ¹ng cá»§a tÃ´i";
 
 	/// <summary>
 	/// Key: "Label.InvalidEmail"
 	/// English String: "Invalid email"
 	/// </summary>
-	public override string LabelInvalidEmail => "Email không hợp lệ";
+	public override string LabelInvalidEmail => "Email khÃ´ng há»£p lá»‡";
 
 	/// <summary>
 	/// Key: "Label.InvalidPhoneNumber"
 	/// English String: "Invalid phone number"
 	/// </summary>
-	public override string LabelInvalidPhoneNumber => "Số điện thoại không hợp lệ";
+	public override string LabelInvalidPhoneNumber => "Sá»‘ Ä‘iá»‡n thoáº¡i khÃ´ng há»£p lá»‡";
 
 	/// <summary>
 	/// Key: "Label.NeutralButtonOk"
@@ -149,173 +149,173 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// label
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "Mật khẩu";
+	public override string LabelPassword => "Máº­t kháº©u";
 
 	/// <summary>
 	/// Key: "Label.ResendCode"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string LabelResendCode => "Gửi lại mã";
+	public override string LabelResendCode => "Gá»­i láº¡i mÃ£";
 
 	/// <summary>
 	/// Key: "Label.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string LabelSubmit => "Gửi";
+	public override string LabelSubmit => "Gá»­i";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanFindMeByPhone"
 	/// English String: "This setting controls who can find you using the phone number you provided."
 	/// </summary>
-	public override string LabelToolTipWhoCanFindMeByPhone => "Cài đặt này kiểm soát người có thể tìm bạn theo số điện thoại mà bạn đã cung cấp.";
+	public override string LabelToolTipWhoCanFindMeByPhone => "CÃ i Ä‘áº·t nÃ y kiá»ƒm soÃ¡t ngÆ°á»i cÃ³ thá»ƒ tÃ¬m báº¡n theo sá»‘ Ä‘iá»‡n thoáº¡i mÃ  báº¡n Ä‘Ã£ cung cáº¥p.";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "Tên người dùng";
+	public override string LabelUsername => "TÃªn ngÆ°á»i dÃ¹ng";
 
 	/// <summary>
 	/// Key: "Label.WhoCanFindMeByPhone"
 	/// English String: "Who can find me by my phone number?"
 	/// </summary>
-	public override string LabelWhoCanFindMeByPhone => "Ai có thể tìm tôi theo số điện thoại?";
+	public override string LabelWhoCanFindMeByPhone => "Ai cÃ³ thá»ƒ tÃ¬m tÃ´i theo sá»‘ Ä‘iá»‡n thoáº¡i?";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error occurred, try again later."
 	/// </summary>
-	public override string MessageDefaultError => "Đã xảy ra lỗi, vui lòng thử lại sau.";
+	public override string MessageDefaultError => "ÄÃ£ xáº£y ra lá»—i, vui lÃ²ng thá»­ láº¡i sau.";
 
 	/// <summary>
 	/// Key: "Message.EmailForUsernameSuccessBody"
 	/// success message
 	/// English String: "An email with your username(s) has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailForUsernameSuccessBody => "Chúng tôi đã gửi email kèm tên người dùng cho bạn nếu bạn đã lưu địa chỉ email trên tài khoản của mình trước đó.";
+	public override string MessageEmailForUsernameSuccessBody => "ChÃºng tÃ´i Ä‘Ã£ gá»­i email kÃ¨m tÃªn ngÆ°á»i dÃ¹ng cho báº¡n náº¿u báº¡n Ä‘Ã£ lÆ°u Ä‘á»‹a chá»‰ email trÃªn tÃ i khoáº£n cá»§a mÃ¬nh trÆ°á»›c Ä‘Ã³.";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessBody"
 	/// English String: "An email with instructions has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailSuccessBody => "Chúng tôi đã gửi email kèm hướng dẫn cho bạn nếu bạn đã lưu địa chỉ email trên tài khoản của bạn trước đó.";
+	public override string MessageEmailSuccessBody => "ChÃºng tÃ´i Ä‘Ã£ gá»­i email kÃ¨m hÆ°á»›ng dáº«n cho báº¡n náº¿u báº¡n Ä‘Ã£ lÆ°u Ä‘á»‹a chá»‰ email trÃªn tÃ i khoáº£n cá»§a báº¡n trÆ°á»›c Ä‘Ã³.";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessTitle"
 	/// English String: "Email Sent"
 	/// </summary>
-	public override string MessageEmailSuccessTitle => "Đã gửi Email";
+	public override string MessageEmailSuccessTitle => "ÄÃ£ gá»­i Email";
 
 	/// <summary>
 	/// Key: "Message.EnterCode"
 	/// English String: "A code was sent to your phone if it was previously verified on your account. Please enter it below"
 	/// </summary>
-	public override string MessageEnterCode => "Chúng tôi đã gửi một mã vào điện thoại của bạn nếu bạn đã xác minh số điện thoại trên tài khoản của mình trước đó. Vui lòng nhập mã đó vào phần bên dưới";
+	public override string MessageEnterCode => "ChÃºng tÃ´i Ä‘Ã£ gá»­i má»™t mÃ£ vÃ o Ä‘iá»‡n thoáº¡i cá»§a báº¡n náº¿u báº¡n Ä‘Ã£ xÃ¡c minh sá»‘ Ä‘iá»‡n thoáº¡i trÃªn tÃ i khoáº£n cá»§a mÃ¬nh trÆ°á»›c Ä‘Ã³. Vui lÃ²ng nháº­p mÃ£ Ä‘Ã³ vÃ o pháº§n bÃªn dÆ°á»›i";
 
 	/// <summary>
 	/// Key: "Message.EnterCodeSentToEmail"
 	/// Enter the code we just sent to your email.
 	/// English String: "Enter the code we just sent to your email."
 	/// </summary>
-	public override string MessageEnterCodeSentToEmail => "Nhập mã chúng tôi vừa gửi tới email của bạn.";
+	public override string MessageEnterCodeSentToEmail => "Nháº­p mÃ£ chÃºng tÃ´i vá»«a gá»­i tá»›i email cá»§a báº¡n.";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessBody"
 	/// English String: "An SMS with your username(s) has been sent to you if the phone number was previously verified on your account."
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessBody => "Bạn đã nhận được một tin nhắn SMS chứa tên người dùng nếu bạn đã xác minh số điện thoại trên tài khoản của mình trước đó.";
+	public override string MessagePhoneForUsernameSuccessBody => "Báº¡n Ä‘Ã£ nháº­n Ä‘Æ°á»£c má»™t tin nháº¯n SMS chá»©a tÃªn ngÆ°á»i dÃ¹ng náº¿u báº¡n Ä‘Ã£ xÃ¡c minh sá»‘ Ä‘iá»‡n thoáº¡i trÃªn tÃ i khoáº£n cá»§a mÃ¬nh trÆ°á»›c Ä‘Ã³.";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessTitle"
 	/// English String: "SMS Sent"
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessTitle => "Đã gửi SMS";
+	public override string MessagePhoneForUsernameSuccessTitle => "ÄÃ£ gá»­i SMS";
 
 	/// <summary>
 	/// Key: "MessageAccountDoesNotHaveAnEmail"
 	/// English String: "There is no email linked to this account"
 	/// </summary>
-	public override string MessageAccountDoesNotHaveAnEmail => "Không có email nào được liên kết với tài khoản này";
+	public override string MessageAccountDoesNotHaveAnEmail => "KhÃ´ng cÃ³ email nÃ o Ä‘Æ°á»£c liÃªn káº¿t vá»›i tÃ i khoáº£n nÃ y";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByEmail"
 	/// No account found. Please use a different email.
 	/// English String: "No account found. Please use a different email."
 	/// </summary>
-	public override string MessageAccountNotFoundByEmail => "Không tìm thấy tài khoản. Vui lòng sử dụng email khác.";
+	public override string MessageAccountNotFoundByEmail => "KhÃ´ng tÃ¬m tháº¥y tÃ i khoáº£n. Vui lÃ²ng sá»­ dá»¥ng email khÃ¡c.";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByPhone"
 	/// No account found. Please use a different phone number.
 	/// English String: "No account found. Please use a different phone number."
 	/// </summary>
-	public override string MessageAccountNotFoundByPhone => "Không tìm thấy tài khoản. Vui lòng sử dụng một số điện thoại khác.";
+	public override string MessageAccountNotFoundByPhone => "KhÃ´ng tÃ¬m tháº¥y tÃ i khoáº£n. Vui lÃ²ng sá»­ dá»¥ng má»™t sá»‘ Ä‘iá»‡n thoáº¡i khÃ¡c.";
 
 	/// <summary>
 	/// Key: "MessageAccountRecoveryUnknownError"
 	/// English String: "System error. Account could not be restored to this state."
 	/// </summary>
-	public override string MessageAccountRecoveryUnknownError => "Lỗi hệ thống. Không thể khôi phục tài khoản về trạng thái này.";
+	public override string MessageAccountRecoveryUnknownError => "Lá»—i há»‡ thá»‘ng. KhÃ´ng thá»ƒ khÃ´i phá»¥c tÃ i khoáº£n vá» tráº¡ng thÃ¡i nÃ y.";
 
 	/// <summary>
 	/// Key: "MessageCaptchaError"
 	/// English String: "We need to make sure you're not a robot!"
 	/// </summary>
-	public override string MessageCaptchaError => "Chúng tôi cần đảm bảo rằng bạn không phải là người máy!";
+	public override string MessageCaptchaError => "ChÃºng tÃ´i cáº§n Ä‘áº£m báº£o ráº±ng báº¡n khÃ´ng pháº£i lÃ  ngÆ°á»i mÃ¡y!";
 
 	/// <summary>
 	/// Key: "MessageCaptchaFailError"
 	/// English String: "The words you typed didn't match the picture. Please try again."
 	/// </summary>
-	public override string MessageCaptchaFailError => "Các từ bạn nhập không khớp vời hình. Vui lòng thử lại.";
+	public override string MessageCaptchaFailError => "CÃ¡c tá»« báº¡n nháº­p khÃ´ng khá»›p vá»i hÃ¬nh. Vui lÃ²ng thá»­ láº¡i.";
 
 	/// <summary>
 	/// Key: "MessageCredentialsError"
 	/// English String: "Your username or password is incorrect. Please check them and try again."
 	/// </summary>
-	public override string MessageCredentialsError => "Sai tên người dùng hoặc mật khẩu. Vui lòng kiểm tra các thông tin đó và thử lại.";
+	public override string MessageCredentialsError => "Sai tÃªn ngÆ°á»i dÃ¹ng hoáº·c máº­t kháº©u. Vui lÃ²ng kiá»ƒm tra cÃ¡c thÃ´ng tin Ä‘Ã³ vÃ  thá»­ láº¡i.";
 
 	/// <summary>
 	/// Key: "MessageFloodCheckedError"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string MessageFloodCheckedError => "Quá nhiều lần thử. Vui lòng thử lại sau.";
+	public override string MessageFloodCheckedError => "QuÃ¡ nhiá»u láº§n thá»­. Vui lÃ²ng thá»­ láº¡i sau.";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordFeatureDisabled"
 	/// English String: "Feature temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageForgotPasswordFeatureDisabled => "Tính năng tạm thời bị khóa. Vui lòng thử lại sau.";
+	public override string MessageForgotPasswordFeatureDisabled => "TÃ­nh nÄƒng táº¡m thá»i bá»‹ khÃ³a. Vui lÃ²ng thá»­ láº¡i sau.";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordSuccess"
 	/// English String: "Check your email for login instructions"
 	/// </summary>
-	public override string MessageForgotPasswordSuccess => "Kiểm tra email của bạn để xem hướng dẫn đăng nhập";
+	public override string MessageForgotPasswordSuccess => "Kiá»ƒm tra email cá»§a báº¡n Ä‘á»ƒ xem hÆ°á»›ng dáº«n Ä‘Äƒng nháº­p";
 
 	/// <summary>
 	/// Key: "MessageInvalidAccountStatus"
 	/// English String: "Account status prevents resetting password"
 	/// </summary>
-	public override string MessageInvalidAccountStatus => "Trạng thái tài khoản không cho phép đặt lại mật khẩu";
+	public override string MessageInvalidAccountStatus => "Tráº¡ng thÃ¡i tÃ i khoáº£n khÃ´ng cho phÃ©p Ä‘áº·t láº¡i máº­t kháº©u";
 
 	/// <summary>
 	/// Key: "MessageInvalidPassword"
 	/// English String: "Invalid password"
 	/// </summary>
-	public override string MessageInvalidPassword => "Mật khẩu không hợp lệ";
+	public override string MessageInvalidPassword => "Máº­t kháº©u khÃ´ng há»£p lá»‡";
 
 	/// <summary>
 	/// Key: "MessageInvalidTicket"
 	/// English String: "We couldn't load this security ticket."
 	/// </summary>
-	public override string MessageInvalidTicket => "Chúng tôi không thể tải vé bảo mật này.";
+	public override string MessageInvalidTicket => "ChÃºng tÃ´i khÃ´ng thá»ƒ táº£i vÃ© báº£o máº­t nÃ y.";
 
 	/// <summary>
 	/// Key: "MessageInvalidUserNameOrEmail"
 	/// English String: "Invalid username, or no email exists"
 	/// </summary>
-	public override string MessageInvalidUserNameOrEmail => "Tên người dùng không hợp lệ hoặc email không tồn tại";
+	public override string MessageInvalidUserNameOrEmail => "TÃªn ngÆ°á»i dÃ¹ng khÃ´ng há»£p lá»‡ hoáº·c email khÃ´ng tá»“n táº¡i";
 
 	/// <summary>
 	/// Key: "MessageMobileResetPasswordSuccess"
@@ -327,43 +327,43 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// Key: "MessageNoAccountsLinkedToEmail"
 	/// English String: "There are no accounts linked to this email address"
 	/// </summary>
-	public override string MessageNoAccountsLinkedToEmail => "Không có tài khoản nào được liên kết với địa chỉ email này";
+	public override string MessageNoAccountsLinkedToEmail => "KhÃ´ng cÃ³ tÃ i khoáº£n nÃ o Ä‘Æ°á»£c liÃªn káº¿t vá»›i Ä‘á»‹a chá»‰ email nÃ y";
 
 	/// <summary>
 	/// Key: "MessageOldUsernameError"
 	/// English String: "It looks like you are trying to log in with a username that has changed. Please log in with your new username."
 	/// </summary>
-	public override string MessageOldUsernameError => "Có vẻ như bạn đang đăng nhập bằng tên người dùng đã thay đổi. Vui lòng đăng nhập bằng tên người dùng mới.";
+	public override string MessageOldUsernameError => "CÃ³ váº» nhÆ° báº¡n Ä‘ang Ä‘Äƒng nháº­p báº±ng tÃªn ngÆ°á»i dÃ¹ng Ä‘Ã£ thay Ä‘á»•i. Vui lÃ²ng Ä‘Äƒng nháº­p báº±ng tÃªn ngÆ°á»i dÃ¹ng má»›i.";
 
 	/// <summary>
 	/// Key: "MessagePasswordCannotBeUsed"
 	/// English String: "Sorry, that password cannot be used."
 	/// </summary>
-	public override string MessagePasswordCannotBeUsed => "Rất tiếc, bạn không thể sử dụng mật khẩu đó.";
+	public override string MessagePasswordCannotBeUsed => "Ráº¥t tiáº¿c, báº¡n khÃ´ng thá»ƒ sá»­ dá»¥ng máº­t kháº©u Ä‘Ã³.";
 
 	/// <summary>
 	/// Key: "MessagePasswordsDoNotMatch"
 	/// English String: "Passwords do not match"
 	/// </summary>
-	public override string MessagePasswordsDoNotMatch => "Mật khẩu không trùng nhau";
+	public override string MessagePasswordsDoNotMatch => "Máº­t kháº©u khÃ´ng trÃ¹ng nhau";
 
 	/// <summary>
 	/// Key: "MessageSamlUnauthenticated"
 	/// English String: "You must log in to Roblox to finish authenticating."
 	/// </summary>
-	public override string MessageSamlUnauthenticated => "Bạn phải đăng nhập vào Roblox để hoàn tất xác thực.";
+	public override string MessageSamlUnauthenticated => "Báº¡n pháº£i Ä‘Äƒng nháº­p vÃ o Roblox Ä‘á»ƒ hoÃ n táº¥t xÃ¡c thá»±c.";
 
 	/// <summary>
 	/// Key: "MessageUnknownError"
 	/// English String: "Unknown Error"
 	/// </summary>
-	public override string MessageUnknownError => "Lỗi không xác định";
+	public override string MessageUnknownError => "Lá»—i khÃ´ng xÃ¡c Ä‘á»‹nh";
 
 	/// <summary>
 	/// Key: "MessageUnknownSystemError"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string MessageUnknownSystemError => "Lỗi hệ thống. Vui lòng quay lại màn hình đăng nhập.";
+	public override string MessageUnknownSystemError => "Lá»—i há»‡ thá»‘ng. Vui lÃ²ng quay láº¡i mÃ n hÃ¬nh Ä‘Äƒng nháº­p.";
 
 	/// <summary>
 	/// Key: "Placeholder.Email"
@@ -375,44 +375,44 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// Key: "Placeholder.PhoneNumber"
 	/// English String: "Phone Number"
 	/// </summary>
-	public override string PlaceholderPhoneNumber => "Số điện thoại";
+	public override string PlaceholderPhoneNumber => "Sá»‘ Ä‘iá»‡n thoáº¡i";
 
 	/// <summary>
 	/// Key: "Response.PasswordResetSuccess"
 	/// Password reset success! Please login again.
 	/// English String: "Password reset success! Please login again."
 	/// </summary>
-	public override string ResponsePasswordResetSuccess => "Mật khẩu được đặt lại thành công! Vui lòng đăng nhập lại.";
+	public override string ResponsePasswordResetSuccess => "Máº­t kháº©u Ä‘Æ°á»£c Ä‘áº·t láº¡i thÃ nh cÃ´ng! Vui lÃ²ng Ä‘Äƒng nháº­p láº¡i.";
 
 	/// <summary>
 	/// Key: "Response.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string ResponseSuccess => "Thành công";
+	public override string ResponseSuccess => "ThÃ nh cÃ´ng";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordFlooded"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseUpdatePasswordFlooded => "Quá nhiều lần thử. Vui lòng thử lại sau.";
+	public override string ResponseUpdatePasswordFlooded => "QuÃ¡ nhiá»u láº§n thá»­. Vui lÃ²ng thá»­ láº¡i sau.";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordIncorrect"
 	/// English String: "Your current password is incorrect, the password was not changed."
 	/// </summary>
-	public override string ResponseUpdatePasswordIncorrect => "Mật khẩu đang dùng không đúng, mật khẩu chưa được đổi.";
+	public override string ResponseUpdatePasswordIncorrect => "Máº­t kháº©u Ä‘ang dÃ¹ng khÃ´ng Ä‘Ãºng, máº­t kháº©u chÆ°a Ä‘Æ°á»£c Ä‘á»•i.";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordInputMissing"
 	/// English String: "Must include new password and confirm password"
 	/// </summary>
-	public override string ResponseUpdatePasswordInputMissing => "Phải có mật khẩu mới và mật khẩu xác nhận";
+	public override string ResponseUpdatePasswordInputMissing => "Pháº£i cÃ³ máº­t kháº©u má»›i vÃ  máº­t kháº©u xÃ¡c nháº­n";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordMismatch"
 	/// English String: "Your new password and confirm password must match"
 	/// </summary>
-	public override string ResponseUpdatePasswordMismatch => "Mật khẩu mới và mật khẩu xác nhận phải trùng nhau";
+	public override string ResponseUpdatePasswordMismatch => "Máº­t kháº©u má»›i vÃ  máº­t kháº©u xÃ¡c nháº­n pháº£i trÃ¹ng nhau";
 
 	public ResetPasswordResources_vi_vn(TranslationResourceState state)
 		: base(state)
@@ -421,17 +421,17 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "Hủy";
+		return "Há»§y";
 	}
 
 	protected override string _GetTemplateForActionEmailToResetPassword()
 	{
-		return "Dùng email để đặt lại mật khẩu";
+		return "DÃ¹ng email Ä‘á»ƒ Ä‘áº·t láº¡i máº­t kháº©u";
 	}
 
 	protected override string _GetTemplateForActionEmailToRetriveUsername()
 	{
-		return "Dùng email để truy xuất tên người dùng";
+		return "DÃ¹ng email Ä‘á»ƒ truy xuáº¥t tÃªn ngÆ°á»i dÃ¹ng";
 	}
 
 	protected override string _GetTemplateForActionOk()
@@ -441,17 +441,17 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForActionPhoneToResetPassword()
 	{
-		return "Dùng số điện thoại để đặt lại mật khẩu";
+		return "DÃ¹ng sá»‘ Ä‘iá»‡n thoáº¡i Ä‘á»ƒ Ä‘áº·t láº¡i máº­t kháº©u";
 	}
 
 	protected override string _GetTemplateForActionPhoneToRetriveUsername()
 	{
-		return "Dùng số điện thoại để truy xuất tên người dùng";
+		return "DÃ¹ng sá»‘ Ä‘iá»‡n thoáº¡i Ä‘á»ƒ truy xuáº¥t tÃªn ngÆ°á»i dÃ¹ng";
 	}
 
 	protected override string _GetTemplateForActionVerify()
 	{
-		return "Xác minh";
+		return "XÃ¡c minh";
 	}
 
 	/// <summary>
@@ -461,22 +461,22 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionChangePasswordEmailHtmlBody1(string userName, string lineBreak, string actionLink)
 	{
-		return $"Chúng tôi thấy rằng mật khẩu của tài khoản Roblox của bạn đã thay đổi: {userName}. Nếu bạn không có ý định thay đổi mật khẩu hoặc bạn cho rằng ai đó đã vô tình thay đổi, vui lòng bấm vào liên kết này để hoàn tác hành động:{lineBreak} {actionLink} {lineBreak}{lineBreak}Nếu bạn hài lòng với mật khẩu Roblox mới của mình thì bạn không cần làm gì! Mật khẩu đã được cài đặt. Vui lòng không trả lời tin nhắn này. Nếu bạn có bất kỳ câu hỏi nào, vui lòng truy cập trang trợ giúp của Roblox (https://www.roblox.com/help).";
+		return $"ChÃºng tÃ´i tháº¥y ráº±ng máº­t kháº©u cá»§a tÃ i khoáº£n Roblox cá»§a báº¡n Ä‘Ã£ thay Ä‘á»•i: {userName}. Náº¿u báº¡n khÃ´ng cÃ³ Ã½ Ä‘á»‹nh thay Ä‘á»•i máº­t kháº©u hoáº·c báº¡n cho ráº±ng ai Ä‘Ã³ Ä‘Ã£ vÃ´ tÃ¬nh thay Ä‘á»•i, vui lÃ²ng báº¥m vÃ o liÃªn káº¿t nÃ y Ä‘á»ƒ hoÃ n tÃ¡c hÃ nh Ä‘á»™ng:{lineBreak} {actionLink} {lineBreak}{lineBreak}Náº¿u báº¡n hÃ i lÃ²ng vá»›i máº­t kháº©u Roblox má»›i cá»§a mÃ¬nh thÃ¬ báº¡n khÃ´ng cáº§n lÃ m gÃ¬! Máº­t kháº©u Ä‘Ã£ Ä‘Æ°á»£c cÃ i Ä‘áº·t. Vui lÃ²ng khÃ´ng tráº£ lá»i tin nháº¯n nÃ y. Náº¿u báº¡n cÃ³ báº¥t ká»³ cÃ¢u há»i nÃ o, vui lÃ²ng truy cáº­p trang trá»£ giÃºp cá»§a Roblox (https://www.roblox.com/help).";
 	}
 
 	protected override string _GetTemplateForDescriptionChangePasswordEmailHtmlBody1()
 	{
-		return "Chúng tôi thấy rằng mật khẩu của tài khoản Roblox của bạn đã thay đổi: {userName}. Nếu bạn không có ý định thay đổi mật khẩu hoặc bạn cho rằng ai đó đã vô tình thay đổi, vui lòng bấm vào liên kết này để hoàn tác hành động:{lineBreak} {actionLink} {lineBreak}{lineBreak}Nếu bạn hài lòng với mật khẩu Roblox mới của mình thì bạn không cần làm gì! Mật khẩu đã được cài đặt. Vui lòng không trả lời tin nhắn này. Nếu bạn có bất kỳ câu hỏi nào, vui lòng truy cập trang trợ giúp của Roblox (https://www.roblox.com/help).";
+		return "ChÃºng tÃ´i tháº¥y ráº±ng máº­t kháº©u cá»§a tÃ i khoáº£n Roblox cá»§a báº¡n Ä‘Ã£ thay Ä‘á»•i: {userName}. Náº¿u báº¡n khÃ´ng cÃ³ Ã½ Ä‘á»‹nh thay Ä‘á»•i máº­t kháº©u hoáº·c báº¡n cho ráº±ng ai Ä‘Ã³ Ä‘Ã£ vÃ´ tÃ¬nh thay Ä‘á»•i, vui lÃ²ng báº¥m vÃ o liÃªn káº¿t nÃ y Ä‘á»ƒ hoÃ n tÃ¡c hÃ nh Ä‘á»™ng:{lineBreak} {actionLink} {lineBreak}{lineBreak}Náº¿u báº¡n hÃ i lÃ²ng vá»›i máº­t kháº©u Roblox má»›i cá»§a mÃ¬nh thÃ¬ báº¡n khÃ´ng cáº§n lÃ m gÃ¬! Máº­t kháº©u Ä‘Ã£ Ä‘Æ°á»£c cÃ i Ä‘áº·t. Vui lÃ²ng khÃ´ng tráº£ lá»i tin nháº¯n nÃ y. Náº¿u báº¡n cÃ³ báº¥t ká»³ cÃ¢u há»i nÃ o, vui lÃ²ng truy cáº­p trang trá»£ giÃºp cá»§a Roblox (https://www.roblox.com/help).";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToResetPassword()
 	{
-		return "Nhập email để đặt lại mật khẩu của bạn.";
+		return "Nháº­p email Ä‘á»ƒ Ä‘áº·t láº¡i máº­t kháº©u cá»§a báº¡n.";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToRetriveUsername()
 	{
-		return "Nhập email để truy xuất tên người dùng của bạn.";
+		return "Nháº­p email Ä‘á»ƒ truy xuáº¥t tÃªn ngÆ°á»i dÃ¹ng cá»§a báº¡n.";
 	}
 
 	/// <summary>
@@ -486,12 +486,12 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailBodyPlainText(string userName, string urlWithTicket)
 	{
-		return $"Chúng tôi thấy rằng mật khẩu của tài khoản Roblox của bạn đã thay đổi: {userName}. Nếu bạn không có ý định thay đổi mật khẩu hoặc bạn cho rằng ai đó đã vô tình thay đổi, vui lòng bấm vào liên kết này để hoàn tác hành động:\n{urlWithTicket}\n\nNếu bạn hài lòng với mật khẩu Roblox mới của mình thì bạn không cần làm gì! Mật khẩu đã được cài đặt. Vui lòng không trả lời tin nhắn này. Nếu bạn có bất kỳ câu hỏi nào, vui lòng truy cập trang trợ giúp của Roblox (https://www.roblox.com/help).";
+		return $"ChÃºng tÃ´i tháº¥y ráº±ng máº­t kháº©u cá»§a tÃ i khoáº£n Roblox cá»§a báº¡n Ä‘Ã£ thay Ä‘á»•i: {userName}. Náº¿u báº¡n khÃ´ng cÃ³ Ã½ Ä‘á»‹nh thay Ä‘á»•i máº­t kháº©u hoáº·c báº¡n cho ráº±ng ai Ä‘Ã³ Ä‘Ã£ vÃ´ tÃ¬nh thay Ä‘á»•i, vui lÃ²ng báº¥m vÃ o liÃªn káº¿t nÃ y Ä‘á»ƒ hoÃ n tÃ¡c hÃ nh Ä‘á»™ng:\n{urlWithTicket}\n\nNáº¿u báº¡n hÃ i lÃ²ng vá»›i máº­t kháº©u Roblox má»›i cá»§a mÃ¬nh thÃ¬ báº¡n khÃ´ng cáº§n lÃ m gÃ¬! Máº­t kháº©u Ä‘Ã£ Ä‘Æ°á»£c cÃ i Ä‘áº·t. Vui lÃ²ng khÃ´ng tráº£ lá»i tin nháº¯n nÃ y. Náº¿u báº¡n cÃ³ báº¥t ká»³ cÃ¢u há»i nÃ o, vui lÃ²ng truy cáº­p trang trá»£ giÃºp cá»§a Roblox (https://www.roblox.com/help).";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailBodyPlainText()
 	{
-		return "Chúng tôi thấy rằng mật khẩu của tài khoản Roblox của bạn đã thay đổi: {userName}. Nếu bạn không có ý định thay đổi mật khẩu hoặc bạn cho rằng ai đó đã vô tình thay đổi, vui lòng bấm vào liên kết này để hoàn tác hành động:\n{urlWithTicket}\n\nNếu bạn hài lòng với mật khẩu Roblox mới của mình thì bạn không cần làm gì! Mật khẩu đã được cài đặt. Vui lòng không trả lời tin nhắn này. Nếu bạn có bất kỳ câu hỏi nào, vui lòng truy cập trang trợ giúp của Roblox (https://www.roblox.com/help).";
+		return "ChÃºng tÃ´i tháº¥y ráº±ng máº­t kháº©u cá»§a tÃ i khoáº£n Roblox cá»§a báº¡n Ä‘Ã£ thay Ä‘á»•i: {userName}. Náº¿u báº¡n khÃ´ng cÃ³ Ã½ Ä‘á»‹nh thay Ä‘á»•i máº­t kháº©u hoáº·c báº¡n cho ráº±ng ai Ä‘Ã³ Ä‘Ã£ vÃ´ tÃ¬nh thay Ä‘á»•i, vui lÃ²ng báº¥m vÃ o liÃªn káº¿t nÃ y Ä‘á»ƒ hoÃ n tÃ¡c hÃ nh Ä‘á»™ng:\n{urlWithTicket}\n\nNáº¿u báº¡n hÃ i lÃ²ng vá»›i máº­t kháº©u Roblox má»›i cá»§a mÃ¬nh thÃ¬ báº¡n khÃ´ng cáº§n lÃ m gÃ¬! Máº­t kháº©u Ä‘Ã£ Ä‘Æ°á»£c cÃ i Ä‘áº·t. Vui lÃ²ng khÃ´ng tráº£ lá»i tin nháº¯n nÃ y. Náº¿u báº¡n cÃ³ báº¥t ká»³ cÃ¢u há»i nÃ o, vui lÃ²ng truy cáº­p trang trá»£ giÃºp cá»§a Roblox (https://www.roblox.com/help).";
 	}
 
 	/// <summary>
@@ -501,17 +501,17 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailFrom(string fromEmailAddress)
 	{
-		return $"\"Đặt lại Mật khẩu Roblox\" {fromEmailAddress}";
+		return $"\"Äáº·t láº¡i Máº­t kháº©u Roblox\" {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailFrom()
 	{
-		return "\"Đặt lại Mật khẩu Roblox\" {fromEmailAddress}";
+		return "\"Äáº·t láº¡i Máº­t kháº©u Roblox\" {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailSubject()
 	{
-		return "Đặt lại Mật khẩu Roblox";
+		return "Äáº·t láº¡i Máº­t kháº©u Roblox";
 	}
 
 	/// <summary>
@@ -521,12 +521,12 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Đặt lại Mật khẩu Roblox{escapeLiteralEnd} {fromEmailAddress}";
+		return $"{escapeLiteralStart}Äáº·t láº¡i Máº­t kháº©u Roblox{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailFrom()
 	{
-		return "{escapeLiteralStart}Đặt lại Mật khẩu Roblox{escapeLiteralEnd} {fromEmailAddress}";
+		return "{escapeLiteralStart}Äáº·t láº¡i Máº­t kháº©u Roblox{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -536,12 +536,12 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailHtmlBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string aTagWithStartHref, string resetPasswordUrl, string hrefEnd, string buttonStart, string buttonEnd, string aTagEnd)
 	{
-		return $"Chúng tôi đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản Roblox của bạn: {emailOrUsername}{lineBreak}{lineBreak}Nếu bạn gửi yêu cầu này, vui lòng bấm vào nút bên dưới để tiếp tục.{lineBreak}Nút này sẽ hoạt động trong vòng {passwordResetTicketHours} giờ, {passwordResetTicketMinutes} phút. Nếu bạn không muốn đặt lại mật khẩu, vui lòng bỏ qua thông báo này.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}Đặt lại mật khẩu{buttonEnd}{aTagEnd}";
+		return $"ChÃºng tÃ´i Ä‘Ã£ nháº­n Ä‘Æ°á»£c yÃªu cáº§u Ä‘áº·t láº¡i máº­t kháº©u cho tÃ i khoáº£n Roblox cá»§a báº¡n: {emailOrUsername}{lineBreak}{lineBreak}Náº¿u báº¡n gá»­i yÃªu cáº§u nÃ y, vui lÃ²ng báº¥m vÃ o nÃºt bÃªn dÆ°á»›i Ä‘á»ƒ tiáº¿p tá»¥c.{lineBreak}NÃºt nÃ y sáº½ hoáº¡t Ä‘á»™ng trong vÃ²ng {passwordResetTicketHours} giá», {passwordResetTicketMinutes} phÃºt. Náº¿u báº¡n khÃ´ng muá»‘n Ä‘áº·t láº¡i máº­t kháº©u, vui lÃ²ng bá» qua thÃ´ng bÃ¡o nÃ y.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}Äáº·t láº¡i máº­t kháº©u{buttonEnd}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailHtmlBody()
 	{
-		return "Chúng tôi đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản Roblox của bạn: {emailOrUsername}{lineBreak}{lineBreak}Nếu bạn gửi yêu cầu này, vui lòng bấm vào nút bên dưới để tiếp tục.{lineBreak}Nút này sẽ hoạt động trong vòng {passwordResetTicketHours} giờ, {passwordResetTicketMinutes} phút. Nếu bạn không muốn đặt lại mật khẩu, vui lòng bỏ qua thông báo này.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}Đặt lại mật khẩu{buttonEnd}{aTagEnd}";
+		return "ChÃºng tÃ´i Ä‘Ã£ nháº­n Ä‘Æ°á»£c yÃªu cáº§u Ä‘áº·t láº¡i máº­t kháº©u cho tÃ i khoáº£n Roblox cá»§a báº¡n: {emailOrUsername}{lineBreak}{lineBreak}Náº¿u báº¡n gá»­i yÃªu cáº§u nÃ y, vui lÃ²ng báº¥m vÃ o nÃºt bÃªn dÆ°á»›i Ä‘á»ƒ tiáº¿p tá»¥c.{lineBreak}NÃºt nÃ y sáº½ hoáº¡t Ä‘á»™ng trong vÃ²ng {passwordResetTicketHours} giá», {passwordResetTicketMinutes} phÃºt. Náº¿u báº¡n khÃ´ng muá»‘n Ä‘áº·t láº¡i máº­t kháº©u, vui lÃ²ng bá» qua thÃ´ng bÃ¡o nÃ y.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}Äáº·t láº¡i máº­t kháº©u{buttonEnd}{aTagEnd}";
 	}
 
 	/// <summary>
@@ -551,67 +551,67 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailPlainBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string resetPasswordUrl)
 	{
-		return $"Chúng tôi đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản Roblox của bạn: {emailOrUsername}{lineBreak}{lineBreak}Nếu bạn gửi yêu cầu này, vui lòng bấm vào hoặc dán liên kết bên dưới vào trình duyệt web để tiếp tục.{lineBreak}Liên kết này sẽ hoạt động trong vòng {passwordResetTicketHours} giờ, {passwordResetTicketMinutes} phút. Nếu bạn không muốn đặt lại mật khẩu, vui lòng bỏ qua thông báo này.{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return $"ChÃºng tÃ´i Ä‘Ã£ nháº­n Ä‘Æ°á»£c yÃªu cáº§u Ä‘áº·t láº¡i máº­t kháº©u cho tÃ i khoáº£n Roblox cá»§a báº¡n: {emailOrUsername}{lineBreak}{lineBreak}Náº¿u báº¡n gá»­i yÃªu cáº§u nÃ y, vui lÃ²ng báº¥m vÃ o hoáº·c dÃ¡n liÃªn káº¿t bÃªn dÆ°á»›i vÃ o trÃ¬nh duyá»‡t web Ä‘á»ƒ tiáº¿p tá»¥c.{lineBreak}LiÃªn káº¿t nÃ y sáº½ hoáº¡t Ä‘á»™ng trong vÃ²ng {passwordResetTicketHours} giá», {passwordResetTicketMinutes} phÃºt. Náº¿u báº¡n khÃ´ng muá»‘n Ä‘áº·t láº¡i máº­t kháº©u, vui lÃ²ng bá» qua thÃ´ng bÃ¡o nÃ y.{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailPlainBody()
 	{
-		return "Chúng tôi đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản Roblox của bạn: {emailOrUsername}{lineBreak}{lineBreak}Nếu bạn gửi yêu cầu này, vui lòng bấm vào hoặc dán liên kết bên dưới vào trình duyệt web để tiếp tục.{lineBreak}Liên kết này sẽ hoạt động trong vòng {passwordResetTicketHours} giờ, {passwordResetTicketMinutes} phút. Nếu bạn không muốn đặt lại mật khẩu, vui lòng bỏ qua thông báo này.{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return "ChÃºng tÃ´i Ä‘Ã£ nháº­n Ä‘Æ°á»£c yÃªu cáº§u Ä‘áº·t láº¡i máº­t kháº©u cho tÃ i khoáº£n Roblox cá»§a báº¡n: {emailOrUsername}{lineBreak}{lineBreak}Náº¿u báº¡n gá»­i yÃªu cáº§u nÃ y, vui lÃ²ng báº¥m vÃ o hoáº·c dÃ¡n liÃªn káº¿t bÃªn dÆ°á»›i vÃ o trÃ¬nh duyá»‡t web Ä‘á»ƒ tiáº¿p tá»¥c.{lineBreak}LiÃªn káº¿t nÃ y sáº½ hoáº¡t Ä‘á»™ng trong vÃ²ng {passwordResetTicketHours} giá», {passwordResetTicketMinutes} phÃºt. Náº¿u báº¡n khÃ´ng muá»‘n Ä‘áº·t láº¡i máº­t kháº©u, vui lÃ²ng bá» qua thÃ´ng bÃ¡o nÃ y.{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailSubject()
 	{
-		return "Đặt lại Mật khẩu Tài khoản Roblox";
+		return "Äáº·t láº¡i Máº­t kháº©u TÃ i khoáº£n Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionPhoneToResetPassword()
 	{
-		return "Nhập số điện thoại để đặt lại mật khẩu của bạn.";
+		return "Nháº­p sá»‘ Ä‘iá»‡n thoáº¡i Ä‘á»ƒ Ä‘áº·t láº¡i máº­t kháº©u cá»§a báº¡n.";
 	}
 
 	protected override string _GetTemplateForDescriptionPhoneToRetriveUsername()
 	{
-		return "Nhập số điện thoại để truy xuất tên người dùng của bạn.";
+		return "Nháº­p sá»‘ Ä‘iá»‡n thoáº¡i Ä‘á»ƒ truy xuáº¥t tÃªn ngÆ°á»i dÃ¹ng cá»§a báº¡n.";
 	}
 
 	protected override string _GetTemplateForHeadingVerifyCode()
 	{
-		return "Xác minh mã";
+		return "XÃ¡c minh mÃ£";
 	}
 
 	protected override string _GetTemplateForHeadingVerifyPhone()
 	{
-		return "Xác minh qua điện thoại";
+		return "XÃ¡c minh qua Ä‘iá»‡n thoáº¡i";
 	}
 
 	protected override string _GetTemplateForHeadingForgetPasswordOrUsername()
 	{
-		return "Quên Mật khẩu hoặc Tên người dùng";
+		return "QuÃªn Máº­t kháº©u hoáº·c TÃªn ngÆ°á»i dÃ¹ng";
 	}
 
 	protected override string _GetTemplateForLabelActionButtonYes()
 	{
-		return "Có";
+		return "CÃ³";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyPassword()
 	{
-		return "Quên mật khẩu của tôi";
+		return "QuÃªn máº­t kháº©u cá»§a tÃ´i";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyUsername()
 	{
-		return "Quên tên người dùng của tôi";
+		return "QuÃªn tÃªn ngÆ°á»i dÃ¹ng cá»§a tÃ´i";
 	}
 
 	protected override string _GetTemplateForLabelInvalidEmail()
 	{
-		return "Email không hợp lệ";
+		return "Email khÃ´ng há»£p lá»‡";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPhoneNumber()
 	{
-		return "Số điện thoại không hợp lệ";
+		return "Sá»‘ Ä‘iá»‡n thoáº¡i khÃ´ng há»£p lá»‡";
 	}
 
 	protected override string _GetTemplateForLabelNeutralButtonOk()
@@ -621,32 +621,32 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "Mật khẩu";
+		return "Máº­t kháº©u";
 	}
 
 	protected override string _GetTemplateForLabelResendCode()
 	{
-		return "Gửi lại mã";
+		return "Gá»­i láº¡i mÃ£";
 	}
 
 	protected override string _GetTemplateForLabelSubmit()
 	{
-		return "Gửi";
+		return "Gá»­i";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanFindMeByPhone()
 	{
-		return "Cài đặt này kiểm soát người có thể tìm bạn theo số điện thoại mà bạn đã cung cấp.";
+		return "CÃ i Ä‘áº·t nÃ y kiá»ƒm soÃ¡t ngÆ°á»i cÃ³ thá»ƒ tÃ¬m báº¡n theo sá»‘ Ä‘iá»‡n thoáº¡i mÃ  báº¡n Ä‘Ã£ cung cáº¥p.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "Tên người dùng";
+		return "TÃªn ngÆ°á»i dÃ¹ng";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanFindMeByPhone()
 	{
-		return "Ai có thể tìm tôi theo số điện thoại?";
+		return "Ai cÃ³ thá»ƒ tÃ¬m tÃ´i theo sá»‘ Ä‘iá»‡n thoáº¡i?";
 	}
 
 	/// <summary>
@@ -655,122 +655,122 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string MessageCantSendEmailWarning(string styleStart, string styleEnd)
 	{
-		return $"Nếu bạn không cung cấp {styleStart}địa chỉ email thật{styleEnd} cho chúng tôi khi bạn tạo tài khoản thì chúng tôi không thể gửi email cho bạn.";
+		return $"Náº¿u báº¡n khÃ´ng cung cáº¥p {styleStart}Ä‘á»‹a chá»‰ email tháº­t{styleEnd} cho chÃºng tÃ´i khi báº¡n táº¡o tÃ i khoáº£n thÃ¬ chÃºng tÃ´i khÃ´ng thá»ƒ gá»­i email cho báº¡n.";
 	}
 
 	protected override string _GetTemplateForMessageCantSendEmailWarning()
 	{
-		return "Nếu bạn không cung cấp {styleStart}địa chỉ email thật{styleEnd} cho chúng tôi khi bạn tạo tài khoản thì chúng tôi không thể gửi email cho bạn.";
+		return "Náº¿u báº¡n khÃ´ng cung cáº¥p {styleStart}Ä‘á»‹a chá»‰ email tháº­t{styleEnd} cho chÃºng tÃ´i khi báº¡n táº¡o tÃ i khoáº£n thÃ¬ chÃºng tÃ´i khÃ´ng thá»ƒ gá»­i email cho báº¡n.";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "Đã xảy ra lỗi, vui lòng thử lại sau.";
+		return "ÄÃ£ xáº£y ra lá»—i, vui lÃ²ng thá»­ láº¡i sau.";
 	}
 
 	protected override string _GetTemplateForMessageEmailForUsernameSuccessBody()
 	{
-		return "Chúng tôi đã gửi email kèm tên người dùng cho bạn nếu bạn đã lưu địa chỉ email trên tài khoản của mình trước đó.";
+		return "ChÃºng tÃ´i Ä‘Ã£ gá»­i email kÃ¨m tÃªn ngÆ°á»i dÃ¹ng cho báº¡n náº¿u báº¡n Ä‘Ã£ lÆ°u Ä‘á»‹a chá»‰ email trÃªn tÃ i khoáº£n cá»§a mÃ¬nh trÆ°á»›c Ä‘Ã³.";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessBody()
 	{
-		return "Chúng tôi đã gửi email kèm hướng dẫn cho bạn nếu bạn đã lưu địa chỉ email trên tài khoản của bạn trước đó.";
+		return "ChÃºng tÃ´i Ä‘Ã£ gá»­i email kÃ¨m hÆ°á»›ng dáº«n cho báº¡n náº¿u báº¡n Ä‘Ã£ lÆ°u Ä‘á»‹a chá»‰ email trÃªn tÃ i khoáº£n cá»§a báº¡n trÆ°á»›c Ä‘Ã³.";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessTitle()
 	{
-		return "Đã gửi Email";
+		return "ÄÃ£ gá»­i Email";
 	}
 
 	protected override string _GetTemplateForMessageEnterCode()
 	{
-		return "Chúng tôi đã gửi một mã vào điện thoại của bạn nếu bạn đã xác minh số điện thoại trên tài khoản của mình trước đó. Vui lòng nhập mã đó vào phần bên dưới";
+		return "ChÃºng tÃ´i Ä‘Ã£ gá»­i má»™t mÃ£ vÃ o Ä‘iá»‡n thoáº¡i cá»§a báº¡n náº¿u báº¡n Ä‘Ã£ xÃ¡c minh sá»‘ Ä‘iá»‡n thoáº¡i trÃªn tÃ i khoáº£n cá»§a mÃ¬nh trÆ°á»›c Ä‘Ã³. Vui lÃ²ng nháº­p mÃ£ Ä‘Ã³ vÃ o pháº§n bÃªn dÆ°á»›i";
 	}
 
 	protected override string _GetTemplateForMessageEnterCodeSentToEmail()
 	{
-		return "Nhập mã chúng tôi vừa gửi tới email của bạn.";
+		return "Nháº­p mÃ£ chÃºng tÃ´i vá»«a gá»­i tá»›i email cá»§a báº¡n.";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessBody()
 	{
-		return "Bạn đã nhận được một tin nhắn SMS chứa tên người dùng nếu bạn đã xác minh số điện thoại trên tài khoản của mình trước đó.";
+		return "Báº¡n Ä‘Ã£ nháº­n Ä‘Æ°á»£c má»™t tin nháº¯n SMS chá»©a tÃªn ngÆ°á»i dÃ¹ng náº¿u báº¡n Ä‘Ã£ xÃ¡c minh sá»‘ Ä‘iá»‡n thoáº¡i trÃªn tÃ i khoáº£n cá»§a mÃ¬nh trÆ°á»›c Ä‘Ã³.";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessTitle()
 	{
-		return "Đã gửi SMS";
+		return "ÄÃ£ gá»­i SMS";
 	}
 
 	protected override string _GetTemplateForMessageAccountDoesNotHaveAnEmail()
 	{
-		return "Không có email nào được liên kết với tài khoản này";
+		return "KhÃ´ng cÃ³ email nÃ o Ä‘Æ°á»£c liÃªn káº¿t vá»›i tÃ i khoáº£n nÃ y";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByEmail()
 	{
-		return "Không tìm thấy tài khoản. Vui lòng sử dụng email khác.";
+		return "KhÃ´ng tÃ¬m tháº¥y tÃ i khoáº£n. Vui lÃ²ng sá»­ dá»¥ng email khÃ¡c.";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByPhone()
 	{
-		return "Không tìm thấy tài khoản. Vui lòng sử dụng một số điện thoại khác.";
+		return "KhÃ´ng tÃ¬m tháº¥y tÃ i khoáº£n. Vui lÃ²ng sá»­ dá»¥ng má»™t sá»‘ Ä‘iá»‡n thoáº¡i khÃ¡c.";
 	}
 
 	protected override string _GetTemplateForMessageAccountRecoveryUnknownError()
 	{
-		return "Lỗi hệ thống. Không thể khôi phục tài khoản về trạng thái này.";
+		return "Lá»—i há»‡ thá»‘ng. KhÃ´ng thá»ƒ khÃ´i phá»¥c tÃ i khoáº£n vá» tráº¡ng thÃ¡i nÃ y.";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaError()
 	{
-		return "Chúng tôi cần đảm bảo rằng bạn không phải là người máy!";
+		return "ChÃºng tÃ´i cáº§n Ä‘áº£m báº£o ráº±ng báº¡n khÃ´ng pháº£i lÃ  ngÆ°á»i mÃ¡y!";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaFailError()
 	{
-		return "Các từ bạn nhập không khớp vời hình. Vui lòng thử lại.";
+		return "CÃ¡c tá»« báº¡n nháº­p khÃ´ng khá»›p vá»i hÃ¬nh. Vui lÃ²ng thá»­ láº¡i.";
 	}
 
 	protected override string _GetTemplateForMessageCredentialsError()
 	{
-		return "Sai tên người dùng hoặc mật khẩu. Vui lòng kiểm tra các thông tin đó và thử lại.";
+		return "Sai tÃªn ngÆ°á»i dÃ¹ng hoáº·c máº­t kháº©u. Vui lÃ²ng kiá»ƒm tra cÃ¡c thÃ´ng tin Ä‘Ã³ vÃ  thá»­ láº¡i.";
 	}
 
 	protected override string _GetTemplateForMessageFloodCheckedError()
 	{
-		return "Quá nhiều lần thử. Vui lòng thử lại sau.";
+		return "QuÃ¡ nhiá»u láº§n thá»­. Vui lÃ²ng thá»­ láº¡i sau.";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordFeatureDisabled()
 	{
-		return "Tính năng tạm thời bị khóa. Vui lòng thử lại sau.";
+		return "TÃ­nh nÄƒng táº¡m thá»i bá»‹ khÃ³a. Vui lÃ²ng thá»­ láº¡i sau.";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordSuccess()
 	{
-		return "Kiểm tra email của bạn để xem hướng dẫn đăng nhập";
+		return "Kiá»ƒm tra email cá»§a báº¡n Ä‘á»ƒ xem hÆ°á»›ng dáº«n Ä‘Äƒng nháº­p";
 	}
 
 	protected override string _GetTemplateForMessageInvalidAccountStatus()
 	{
-		return "Trạng thái tài khoản không cho phép đặt lại mật khẩu";
+		return "Tráº¡ng thÃ¡i tÃ i khoáº£n khÃ´ng cho phÃ©p Ä‘áº·t láº¡i máº­t kháº©u";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPassword()
 	{
-		return "Mật khẩu không hợp lệ";
+		return "Máº­t kháº©u khÃ´ng há»£p lá»‡";
 	}
 
 	protected override string _GetTemplateForMessageInvalidTicket()
 	{
-		return "Chúng tôi không thể tải vé bảo mật này.";
+		return "ChÃºng tÃ´i khÃ´ng thá»ƒ táº£i vÃ© báº£o máº­t nÃ y.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidUserNameOrEmail()
 	{
-		return "Tên người dùng không hợp lệ hoặc email không tồn tại";
+		return "TÃªn ngÆ°á»i dÃ¹ng khÃ´ng há»£p lá»‡ hoáº·c email khÃ´ng tá»“n táº¡i";
 	}
 
 	protected override string _GetTemplateForMessageMobileResetPasswordSuccess()
@@ -780,17 +780,17 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageNoAccountsLinkedToEmail()
 	{
-		return "Không có tài khoản nào được liên kết với địa chỉ email này";
+		return "KhÃ´ng cÃ³ tÃ i khoáº£n nÃ o Ä‘Æ°á»£c liÃªn káº¿t vá»›i Ä‘á»‹a chá»‰ email nÃ y";
 	}
 
 	protected override string _GetTemplateForMessageOldUsernameError()
 	{
-		return "Có vẻ như bạn đang đăng nhập bằng tên người dùng đã thay đổi. Vui lòng đăng nhập bằng tên người dùng mới.";
+		return "CÃ³ váº» nhÆ° báº¡n Ä‘ang Ä‘Äƒng nháº­p báº±ng tÃªn ngÆ°á»i dÃ¹ng Ä‘Ã£ thay Ä‘á»•i. Vui lÃ²ng Ä‘Äƒng nháº­p báº±ng tÃªn ngÆ°á»i dÃ¹ng má»›i.";
 	}
 
 	protected override string _GetTemplateForMessagePasswordCannotBeUsed()
 	{
-		return "Rất tiếc, bạn không thể sử dụng mật khẩu đó.";
+		return "Ráº¥t tiáº¿c, báº¡n khÃ´ng thá»ƒ sá»­ dá»¥ng máº­t kháº©u Ä‘Ã³.";
 	}
 
 	/// <summary>
@@ -799,32 +799,32 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string MessagePasswordResetTicketExpired(string expirationHour, string expirationMinute)
 	{
-		return $"Rất tiếc, yêu cầu đặt lại mật khẩu hết hạn {expirationHour} giờ, {expirationMinute} phút sau khi cấp. Thử yêu cầu lại vé đặt lại mật khẩu khác.";
+		return $"Ráº¥t tiáº¿c, yÃªu cáº§u Ä‘áº·t láº¡i máº­t kháº©u háº¿t háº¡n {expirationHour} giá», {expirationMinute} phÃºt sau khi cáº¥p. Thá»­ yÃªu cáº§u láº¡i vÃ© Ä‘áº·t láº¡i máº­t kháº©u khÃ¡c.";
 	}
 
 	protected override string _GetTemplateForMessagePasswordResetTicketExpired()
 	{
-		return "Rất tiếc, yêu cầu đặt lại mật khẩu hết hạn {expirationHour} giờ, {expirationMinute} phút sau khi cấp. Thử yêu cầu lại vé đặt lại mật khẩu khác.";
+		return "Ráº¥t tiáº¿c, yÃªu cáº§u Ä‘áº·t láº¡i máº­t kháº©u háº¿t háº¡n {expirationHour} giá», {expirationMinute} phÃºt sau khi cáº¥p. Thá»­ yÃªu cáº§u láº¡i vÃ© Ä‘áº·t láº¡i máº­t kháº©u khÃ¡c.";
 	}
 
 	protected override string _GetTemplateForMessagePasswordsDoNotMatch()
 	{
-		return "Mật khẩu không trùng nhau";
+		return "Máº­t kháº©u khÃ´ng trÃ¹ng nhau";
 	}
 
 	protected override string _GetTemplateForMessageSamlUnauthenticated()
 	{
-		return "Bạn phải đăng nhập vào Roblox để hoàn tất xác thực.";
+		return "Báº¡n pháº£i Ä‘Äƒng nháº­p vÃ o Roblox Ä‘á»ƒ hoÃ n táº¥t xÃ¡c thá»±c.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "Lỗi không xác định";
+		return "Lá»—i khÃ´ng xÃ¡c Ä‘á»‹nh";
 	}
 
 	protected override string _GetTemplateForMessageUnknownSystemError()
 	{
-		return "Lỗi hệ thống. Vui lòng quay lại màn hình đăng nhập.";
+		return "Lá»—i há»‡ thá»‘ng. Vui lÃ²ng quay láº¡i mÃ n hÃ¬nh Ä‘Äƒng nháº­p.";
 	}
 
 	protected override string _GetTemplateForPlaceholderEmail()
@@ -838,46 +838,49 @@ internal class ResetPasswordResources_vi_vn : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string PlaceholderEnterCode(string codeLength)
 	{
-		return $"Nhập mã ({codeLength} chữ số)";
+		return $"Nháº­p mÃ£ ({codeLength} chá»¯ sá»‘)";
 	}
 
 	protected override string _GetTemplateForPlaceholderEnterCode()
 	{
-		return "Nhập mã ({codeLength} chữ số)";
+		return "Nháº­p mÃ£ ({codeLength} chá»¯ sá»‘)";
 	}
 
 	protected override string _GetTemplateForPlaceholderPhoneNumber()
 	{
-		return "Số điện thoại";
+		return "Sá»‘ Ä‘iá»‡n thoáº¡i";
 	}
 
 	protected override string _GetTemplateForResponsePasswordResetSuccess()
 	{
-		return "Mật khẩu được đặt lại thành công! Vui lòng đăng nhập lại.";
+		return "Máº­t kháº©u Ä‘Æ°á»£c Ä‘áº·t láº¡i thÃ nh cÃ´ng! Vui lÃ²ng Ä‘Äƒng nháº­p láº¡i.";
 	}
 
 	protected override string _GetTemplateForResponseSuccess()
 	{
-		return "Thành công";
+		return "ThÃ nh cÃ´ng";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordFlooded()
 	{
-		return "Quá nhiều lần thử. Vui lòng thử lại sau.";
+		return "QuÃ¡ nhiá»u láº§n thá»­. Vui lÃ²ng thá»­ láº¡i sau.";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordIncorrect()
 	{
-		return "Mật khẩu đang dùng không đúng, mật khẩu chưa được đổi.";
+		return "Máº­t kháº©u Ä‘ang dÃ¹ng khÃ´ng Ä‘Ãºng, máº­t kháº©u chÆ°a Ä‘Æ°á»£c Ä‘á»•i.";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordInputMissing()
 	{
-		return "Phải có mật khẩu mới và mật khẩu xác nhận";
+		return "Pháº£i cÃ³ máº­t kháº©u má»›i vÃ  máº­t kháº©u xÃ¡c nháº­n";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordMismatch()
 	{
-		return "Mật khẩu mới và mật khẩu xác nhận phải trùng nhau";
+		return "Máº­t kháº©u má»›i vÃ  máº­t kháº©u xÃ¡c nháº­n pháº£i trÃ¹ng nhau";
 	}
+}
+
+
 }

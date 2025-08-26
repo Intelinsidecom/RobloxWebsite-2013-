@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
@@ -6,10 +6,9 @@ using Roblox.Common;
 using Roblox.Configuration;
 using Roblox.Data.Interfaces;
 using Roblox.Demographics.Properties;
+namespace Roblox.Platform.Demographicspublic {
+    class IPAddressGeoposition : IRobloxEntity<long, IPAddressGeopositionDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 
-namespace Roblox.Demographics;
-
-public class IPAddressGeoposition : IRobloxEntity<long, IPAddressGeopositionDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 {
 	private IPAddressGeopositionDAL _EntityDAL;
 
@@ -45,4 +44,7 @@ public class IPAddressGeoposition : IRobloxEntity<long, IPAddressGeopositionDAL>
 	private static IPAddressGeoposition DoGetOrCreate(int ipAddressId, long? geopositionId) { return EntityHelper.DoGetOrCreate<long, IPAddressGeopositionDAL, IPAddressGeoposition>(() => IPAddressGeopositionDAL.GetOrCreateIPAddressGeoposition(ipAddressId, geopositionId)); }
 	private static string GetCacheQualifierByIpAddressIdAndGeopositionId(int ipAddressId, long? geopositionId) { return $"IPAddressID:{ipAddressId}_GeopositionID:{geopositionId}"; }
 	private static string GetCacheQualifierByIpAddressId(int ipAddressId) { return $"IPAddressID:{ipAddressId}"; }
+}
+
+
 }

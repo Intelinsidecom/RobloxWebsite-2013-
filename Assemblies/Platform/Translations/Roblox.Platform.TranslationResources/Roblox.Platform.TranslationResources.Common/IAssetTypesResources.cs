@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IAssetTypesResources : ITranslationResources
 
-public interface IAssetTypesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.Accessories"
@@ -442,4 +442,7 @@ public interface IAssetTypesResources : ITranslationResources
 	/// English String: "Walk"
 	/// </summary>
 	string LabelWalk { get; }
+}
+
+
 }

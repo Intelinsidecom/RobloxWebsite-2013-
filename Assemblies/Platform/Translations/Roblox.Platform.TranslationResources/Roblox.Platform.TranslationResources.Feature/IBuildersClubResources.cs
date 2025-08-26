@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IBuildersClubResources : ITranslationResources
 
-public interface IBuildersClubResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.BuidlersClubOnlyCancel"
@@ -31,4 +31,7 @@ public interface IBuildersClubResources : ITranslationResources
 	/// English String: "This is a premium item only available to our {bcRequirementName} members."
 	/// </summary>
 	string DescriptionBuildersClubOnlyModel(string bcRequirementName);
+}
+
+
 }

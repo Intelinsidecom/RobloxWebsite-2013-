@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IVotingPanelResources : ITranslationResources
 
-public interface IVotingPanelResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.Accept"
@@ -163,4 +163,7 @@ public interface IVotingPanelResources : ITranslationResources
 	/// English String: "Please {loginOrRegisterPageLink} to continue."
 	/// </summary>
 	string LabelGuestUserMessage(string loginOrRegisterPageLink);
+}
+
+
 }

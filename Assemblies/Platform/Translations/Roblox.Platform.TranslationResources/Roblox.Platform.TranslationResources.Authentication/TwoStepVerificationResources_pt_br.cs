@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TwoStepVerificationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,14 +16,14 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// Key: "Action.Resend"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string ActionResend => "Reenviar código";
+	public override string ActionResend => "Reenviar cÃ³digo";
 
 	/// <summary>
 	/// Key: "Action.StartOver"
 	/// link text to restart verification
 	/// English String: "Start Over"
 	/// </summary>
-	public override string ActionStartOver => "Recomeçar";
+	public override string ActionStartOver => "RecomeÃ§ar";
 
 	/// <summary>
 	/// Key: "Action.Submit"
@@ -43,45 +43,45 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// verification code for 2 factor authentication
 	/// English String: "Code"
 	/// </summary>
-	public override string LabelCode => "Código";
+	public override string LabelCode => "CÃ³digo";
 
 	/// <summary>
 	/// Key: "Label.DidNotReceive"
 	/// English String: "Didn't receive the code?"
 	/// </summary>
-	public override string LabelDidNotReceive => "Não recebeu o código?";
+	public override string LabelDidNotReceive => "NÃ£o recebeu o cÃ³digo?";
 
 	/// <summary>
 	/// Key: "Label.EnterCode"
 	/// English String: "Enter Code (6-digit)"
 	/// </summary>
-	public override string LabelEnterCode => "Insira o código (6 dígitos)";
+	public override string LabelEnterCode => "Insira o cÃ³digo (6 dÃ­gitos)";
 
 	/// <summary>
 	/// Key: "Label.EnterEmailCode"
 	/// English String: "Enter the code we just sent you via email"
 	/// </summary>
-	public override string LabelEnterEmailCode => "Insira o código que enviamos por e-mail";
+	public override string LabelEnterEmailCode => "Insira o cÃ³digo que enviamos por e-mail";
 
 	/// <summary>
 	/// Key: "Label.EnterTextCode"
 	/// English String: "Enter the code we just sent you via text message"
 	/// </summary>
-	public override string LabelEnterTextCode => "Insira o código que enviamos por mensagem de texto";
+	public override string LabelEnterTextCode => "Insira o cÃ³digo que enviamos por mensagem de texto";
 
 	/// <summary>
 	/// Key: "Label.EnterTwoStepVerificationCode"
 	/// Enter your two step verification code.
 	/// English String: "Enter your two step verification code."
 	/// </summary>
-	public override string LabelEnterTwoStepVerificationCode => "Insira seu código de verificação de duas etapas.";
+	public override string LabelEnterTwoStepVerificationCode => "Insira seu cÃ³digo de verificaÃ§Ã£o de duas etapas.";
 
 	/// <summary>
 	/// Key: "Label.FacebookPasswordWarning"
 	/// If you have been signing in with Facebook, you must set a password.
 	/// English String: "If you have been signing in with Facebook, you must set a password."
 	/// </summary>
-	public override string LabelFacebookPasswordWarning => "Se você tem se conectado com o Facebook, você precisa definir uma senha.";
+	public override string LabelFacebookPasswordWarning => "Se vocÃª tem se conectado com o Facebook, vocÃª precisa definir uma senha.";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
@@ -95,7 +95,7 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// verification code resent, label changes to new code
 	/// English String: "New Code"
 	/// </summary>
-	public override string LabelNewCode => "Novo código";
+	public override string LabelNewCode => "Novo cÃ³digo";
 
 	/// <summary>
 	/// Key: "Label.RobloxSupport"
@@ -113,31 +113,31 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// Key: "Label.TwoStepVerification"
 	/// English String: "2-Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "Verificação de 2 passos";
+	public override string LabelTwoStepVerification => "VerificaÃ§Ã£o de 2 passos";
 
 	/// <summary>
 	/// Key: "Response.CodeSent"
 	/// English String: "Code Sent"
 	/// </summary>
-	public override string ResponseCodeSent => "Código enviado";
+	public override string ResponseCodeSent => "CÃ³digo enviado";
 
 	/// <summary>
 	/// Key: "Response.FeatureNotAvailable"
 	/// English String: "Feature not available. Please contact support."
 	/// </summary>
-	public override string ResponseFeatureNotAvailable => "Funcionalidade não disponível. Contate o suporte.";
+	public override string ResponseFeatureNotAvailable => "Funcionalidade nÃ£o disponÃ­vel. Contate o suporte.";
 
 	/// <summary>
 	/// Key: "Response.InvalidCode"
 	/// English String: "Invalid code."
 	/// </summary>
-	public override string ResponseInvalidCode => "Código inválido.";
+	public override string ResponseInvalidCode => "CÃ³digo invÃ¡lido.";
 
 	/// <summary>
 	/// Key: "Response.SystemErrorReturnToLogin"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string ResponseSystemErrorReturnToLogin => "Erro do sistema. Volte para a tela de conexão.";
+	public override string ResponseSystemErrorReturnToLogin => "Erro do sistema. Volte para a tela de conexÃ£o.";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
@@ -164,12 +164,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 
 	protected override string _GetTemplateForActionResend()
 	{
-		return "Reenviar código";
+		return "Reenviar cÃ³digo";
 	}
 
 	protected override string _GetTemplateForActionStartOver()
 	{
-		return "Recomeçar";
+		return "RecomeÃ§ar";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
@@ -189,12 +189,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"Olá {accountName},{lineBreak}{lineBreak}Você ativou a verificação de 2 passos para a sua conta Roblox. Na próxima vez que você se conectar em um novo dispositivo, precisará inserir um código de segurança de 6 dígitos que o Roblox envia para você por e-mail.{lineBreak}{lineBreak}Roblox";
+		return $"OlÃ¡ {accountName},{lineBreak}{lineBreak}VocÃª ativou a verificaÃ§Ã£o de 2 passos para a sua conta Roblox. Na prÃ³xima vez que vocÃª se conectar em um novo dispositivo, precisarÃ¡ inserir um cÃ³digo de seguranÃ§a de 6 dÃ­gitos que o Roblox envia para vocÃª por e-mail.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyOver13()
 	{
-		return "Olá {accountName},{lineBreak}{lineBreak}Você ativou a verificação de 2 passos para a sua conta Roblox. Na próxima vez que você se conectar em um novo dispositivo, precisará inserir um código de segurança de 6 dígitos que o Roblox envia para você por e-mail.{lineBreak}{lineBreak}Roblox";
+		return "OlÃ¡ {accountName},{lineBreak}{lineBreak}VocÃª ativou a verificaÃ§Ã£o de 2 passos para a sua conta Roblox. Na prÃ³xima vez que vocÃª se conectar em um novo dispositivo, precisarÃ¡ inserir um cÃ³digo de seguranÃ§a de 6 dÃ­gitos que o Roblox envia para vocÃª por e-mail.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -204,12 +204,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"Olá ,{lineBreak}{lineBreak}A verificação de 2 passos foi ativada para a conta Roblox do seu filho(a), {accountName}. Na próxima vez que ele(a) se conectar em um novo dispositivo, precisará inserir um código de segurança de 6 dígitos que o Roblox envia para você por e-mail.{lineBreak}{lineBreak}Roblox";
+		return $"OlÃ¡ ,{lineBreak}{lineBreak}A verificaÃ§Ã£o de 2 passos foi ativada para a conta Roblox do seu filho(a), {accountName}. Na prÃ³xima vez que ele(a) se conectar em um novo dispositivo, precisarÃ¡ inserir um cÃ³digo de seguranÃ§a de 6 dÃ­gitos que o Roblox envia para vocÃª por e-mail.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyUnder13()
 	{
-		return "Olá ,{lineBreak}{lineBreak}A verificação de 2 passos foi ativada para a conta Roblox do seu filho(a), {accountName}. Na próxima vez que ele(a) se conectar em um novo dispositivo, precisará inserir um código de segurança de 6 dígitos que o Roblox envia para você por e-mail.{lineBreak}{lineBreak}Roblox";
+		return "OlÃ¡ ,{lineBreak}{lineBreak}A verificaÃ§Ã£o de 2 passos foi ativada para a conta Roblox do seu filho(a), {accountName}. Na prÃ³xima vez que ele(a) se conectar em um novo dispositivo, precisarÃ¡ inserir um cÃ³digo de seguranÃ§a de 6 dÃ­gitos que o Roblox envia para vocÃª por e-mail.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -219,12 +219,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailSubject(string accountName)
 	{
-		return $"Verificação de 2 passos ativada para a conta Roblox: {accountName}";
+		return $"VerificaÃ§Ã£o de 2 passos ativada para a conta Roblox: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailSubject()
 	{
-		return "Verificação de 2 passos ativada para a conta Roblox: {accountName}";
+		return "VerificaÃ§Ã£o de 2 passos ativada para a conta Roblox: {accountName}";
 	}
 
 	/// <summary>
@@ -234,12 +234,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"Olá {accountName},{lineBreak}{lineBreak}Você desativou a verificação de 2 passos para sua conta Roblox. Um código de segurança não será mais necessário quando você se conectar na sua conta.{lineBreak}{lineBreak}Roblox";
+		return $"OlÃ¡ {accountName},{lineBreak}{lineBreak}VocÃª desativou a verificaÃ§Ã£o de 2 passos para sua conta Roblox. Um cÃ³digo de seguranÃ§a nÃ£o serÃ¡ mais necessÃ¡rio quando vocÃª se conectar na sua conta.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyOver13()
 	{
-		return "Olá {accountName},{lineBreak}{lineBreak}Você desativou a verificação de 2 passos para sua conta Roblox. Um código de segurança não será mais necessário quando você se conectar na sua conta.{lineBreak}{lineBreak}Roblox";
+		return "OlÃ¡ {accountName},{lineBreak}{lineBreak}VocÃª desativou a verificaÃ§Ã£o de 2 passos para sua conta Roblox. Um cÃ³digo de seguranÃ§a nÃ£o serÃ¡ mais necessÃ¡rio quando vocÃª se conectar na sua conta.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -249,12 +249,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"Olá ,{lineBreak}{lineBreak}A verificação de 2 passos foi desativada para a conta Roblox do seu filho(a), {accountName}. Um código de segurança não será mais necessário quando ele(a) se conectar na conta.{lineBreak}{lineBreak}Roblox";
+		return $"OlÃ¡ ,{lineBreak}{lineBreak}A verificaÃ§Ã£o de 2 passos foi desativada para a conta Roblox do seu filho(a), {accountName}. Um cÃ³digo de seguranÃ§a nÃ£o serÃ¡ mais necessÃ¡rio quando ele(a) se conectar na conta.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyUnder13()
 	{
-		return "Olá ,{lineBreak}{lineBreak}A verificação de 2 passos foi desativada para a conta Roblox do seu filho(a), {accountName}. Um código de segurança não será mais necessário quando ele(a) se conectar na conta.{lineBreak}{lineBreak}Roblox";
+		return "OlÃ¡ ,{lineBreak}{lineBreak}A verificaÃ§Ã£o de 2 passos foi desativada para a conta Roblox do seu filho(a), {accountName}. Um cÃ³digo de seguranÃ§a nÃ£o serÃ¡ mais necessÃ¡rio quando ele(a) se conectar na conta.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -264,12 +264,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailSubject(string accountName)
 	{
-		return $"Verificação de 2 passos desativada para a conta Roblox: {accountName}";
+		return $"VerificaÃ§Ã£o de 2 passos desativada para a conta Roblox: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailSubject()
 	{
-		return "Verificação de 2 passos desativada para a conta Roblox: {accountName}";
+		return "VerificaÃ§Ã£o de 2 passos desativada para a conta Roblox: {accountName}";
 	}
 
 	/// <summary>
@@ -279,12 +279,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo1(string spanStartTagWithBold, string username, string region, string country, string ipAddress, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}Solicitação de login recebida de {username} em {region}, {country} ({ipAddress}).{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {region}, {country} ({ipAddress}).{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo1()
 	{
-		return "{spanStartTagWithBold}Solicitação de login recebida de {username} em {region}, {country} ({ipAddress}).{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {region}, {country} ({ipAddress}).{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -294,12 +294,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo2(string spanStartTagWithBold, string username, string country, string ipAddress, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}Solicitação de login recebida de {username} em {country} ({ipAddress}).{spanEndTag}{lineBreak}{lineBreak}\t";
+		return $"{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {country} ({ipAddress}).{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo2()
 	{
-		return "{spanStartTagWithBold}Solicitação de login recebida de {username} em {country} ({ipAddress}).{spanEndTag}{lineBreak}{lineBreak}\t";
+		return "{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {country} ({ipAddress}).{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	/// <summary>
@@ -309,12 +309,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo3(string spanStartTagWithBold, string username, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}Solicitação de login recebida de {username} (Roblox interno).{spanEndTag}{lineBreak}{lineBreak}\t";
+		return $"{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} (Roblox interno).{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo3()
 	{
-		return "{spanStartTagWithBold}Solicitação de login recebida de {username} (Roblox interno).{spanEndTag}{lineBreak}{lineBreak}\t";
+		return "{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} (Roblox interno).{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	/// <summary>
@@ -324,12 +324,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo4(string spanStartTagWithBold, string username, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}Solicitação de login recebida de {username} em {country}.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {country}.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo4()
 	{
-		return "{spanStartTagWithBold}Solicitação de login recebida de {username} em {country}.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {country}.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -339,12 +339,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo5(string spanStartTagWithBold, string username, string region, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}Solicitação de login recebida de {username} em {region}, {country}.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {region}, {country}.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo5()
 	{
-		return "{spanStartTagWithBold}Solicitação de login recebida de {username} em {region}, {country}.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {region}, {country}.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -354,12 +354,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo6(string spanStartTagWithBold, string username, string city, string region, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}Solicitação de login recebida de {username} em {city}, {region}, {country}.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {city}, {region}, {country}.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo6()
 	{
-		return "{spanStartTagWithBold}Solicitação de login recebida de {username} em {city}, {region}, {country}.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}SolicitaÃ§Ã£o de login recebida de {username} em {city}, {region}, {country}.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -369,12 +369,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlBody(string geoLocationInformation, string spanStartTagWithBold, string accountName, string lineBreak, string code, string spanEndTag, string aTagStartWithHref, string ChangePasswordLink, string hrefEnd, string aTagEnd, string TwoStepVerificationArticleLink, string AccountSafetyArticleLink, string SupportLink)
 	{
-		return $"{geoLocationInformation}{spanStartTagWithBold}Código de login para {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Insira este código na tela de verificação de 2 passos para terminar de se conectar. Este código irá expirar em 15 minutos.{lineBreak}{lineBreak}Este e-mail foi enviado porque você tentou conectar com sua conta no Roblox a partir de um novo dispositivo ou navegador. Caso não tenha tentado se conectar no Roblox, além pode estar tentando acessar a sua conta. Altere sua senha imediatamente caso não tenha gerado esta solicitação.{lineBreak}{lineBreak}Recursos:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Alterar sua senha{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Saiba mais sobre a verificação de 2 passos{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Mantendo sua conta segura{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Suporte geral do Roblox{aTagEnd} {lineBreak}{lineBreak}Atenciosamente,{lineBreak}{lineBreak}A equipe Roblox";
+		return $"{geoLocationInformation}{spanStartTagWithBold}CÃ³digo de login para {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Insira este cÃ³digo na tela de verificaÃ§Ã£o de 2 passos para terminar de se conectar. Este cÃ³digo irÃ¡ expirar em 15 minutos.{lineBreak}{lineBreak}Este e-mail foi enviado porque vocÃª tentou conectar com sua conta no Roblox a partir de um novo dispositivo ou navegador. Caso nÃ£o tenha tentado se conectar no Roblox, alÃ©m pode estar tentando acessar a sua conta. Altere sua senha imediatamente caso nÃ£o tenha gerado esta solicitaÃ§Ã£o.{lineBreak}{lineBreak}Recursos:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Alterar sua senha{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Saiba mais sobre a verificaÃ§Ã£o de 2 passos{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Mantendo sua conta segura{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Suporte geral do Roblox{aTagEnd} {lineBreak}{lineBreak}Atenciosamente,{lineBreak}{lineBreak}A equipe Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlBody()
 	{
-		return "{geoLocationInformation}{spanStartTagWithBold}Código de login para {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Insira este código na tela de verificação de 2 passos para terminar de se conectar. Este código irá expirar em 15 minutos.{lineBreak}{lineBreak}Este e-mail foi enviado porque você tentou conectar com sua conta no Roblox a partir de um novo dispositivo ou navegador. Caso não tenha tentado se conectar no Roblox, além pode estar tentando acessar a sua conta. Altere sua senha imediatamente caso não tenha gerado esta solicitação.{lineBreak}{lineBreak}Recursos:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Alterar sua senha{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Saiba mais sobre a verificação de 2 passos{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Mantendo sua conta segura{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Suporte geral do Roblox{aTagEnd} {lineBreak}{lineBreak}Atenciosamente,{lineBreak}{lineBreak}A equipe Roblox";
+		return "{geoLocationInformation}{spanStartTagWithBold}CÃ³digo de login para {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Insira este cÃ³digo na tela de verificaÃ§Ã£o de 2 passos para terminar de se conectar. Este cÃ³digo irÃ¡ expirar em 15 minutos.{lineBreak}{lineBreak}Este e-mail foi enviado porque vocÃª tentou conectar com sua conta no Roblox a partir de um novo dispositivo ou navegador. Caso nÃ£o tenha tentado se conectar no Roblox, alÃ©m pode estar tentando acessar a sua conta. Altere sua senha imediatamente caso nÃ£o tenha gerado esta solicitaÃ§Ã£o.{lineBreak}{lineBreak}Recursos:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Alterar sua senha{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Saiba mais sobre a verificaÃ§Ã£o de 2 passos{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Mantendo sua conta segura{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Suporte geral do Roblox{aTagEnd} {lineBreak}{lineBreak}Atenciosamente,{lineBreak}{lineBreak}A equipe Roblox";
 	}
 
 	/// <summary>
@@ -384,12 +384,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainBody(string geoLocationInformation, string accountName, string lineBreak, string code, string accountInfoPageLink, string twoStepVerificationHelpArticleLink, string keepAccountSafeArticleLink, string supportPageLink)
 	{
-		return $"{geoLocationInformation} Código de login para {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Insira este código na tela de verificação de 2 passos para terminar de se conectar. Este código irá expirar em 15 minutos. {lineBreak}{lineBreak}Este e-mail foi enviado porque você tentou conectar com sua conta no Roblox a partir de um novo dispositivo ou navegador. Caso não tenha tentado se conectar no Roblox, além pode estar tentando acessar a sua conta. Altere sua senha imediatamente caso não tenha gerado esta solicitação. {lineBreak}{lineBreak}Recursos:{lineBreak}Alterar sua senha [{accountInfoPageLink}] {lineBreak}Saiba mais sobre a verificação de 2 passos [{twoStepVerificationHelpArticleLink}]{lineBreak}Mantendo sua conta segura [{keepAccountSafeArticleLink}] {lineBreak}Suporte geral do Roblox [{supportPageLink}] {lineBreak}{lineBreak}Atenciosamente, {lineBreak}{lineBreak}A equipe do Roblox";
+		return $"{geoLocationInformation} CÃ³digo de login para {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Insira este cÃ³digo na tela de verificaÃ§Ã£o de 2 passos para terminar de se conectar. Este cÃ³digo irÃ¡ expirar em 15 minutos. {lineBreak}{lineBreak}Este e-mail foi enviado porque vocÃª tentou conectar com sua conta no Roblox a partir de um novo dispositivo ou navegador. Caso nÃ£o tenha tentado se conectar no Roblox, alÃ©m pode estar tentando acessar a sua conta. Altere sua senha imediatamente caso nÃ£o tenha gerado esta solicitaÃ§Ã£o. {lineBreak}{lineBreak}Recursos:{lineBreak}Alterar sua senha [{accountInfoPageLink}] {lineBreak}Saiba mais sobre a verificaÃ§Ã£o de 2 passos [{twoStepVerificationHelpArticleLink}]{lineBreak}Mantendo sua conta segura [{keepAccountSafeArticleLink}] {lineBreak}Suporte geral do Roblox [{supportPageLink}] {lineBreak}{lineBreak}Atenciosamente, {lineBreak}{lineBreak}A equipe do Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainBody()
 	{
-		return "{geoLocationInformation} Código de login para {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Insira este código na tela de verificação de 2 passos para terminar de se conectar. Este código irá expirar em 15 minutos. {lineBreak}{lineBreak}Este e-mail foi enviado porque você tentou conectar com sua conta no Roblox a partir de um novo dispositivo ou navegador. Caso não tenha tentado se conectar no Roblox, além pode estar tentando acessar a sua conta. Altere sua senha imediatamente caso não tenha gerado esta solicitação. {lineBreak}{lineBreak}Recursos:{lineBreak}Alterar sua senha [{accountInfoPageLink}] {lineBreak}Saiba mais sobre a verificação de 2 passos [{twoStepVerificationHelpArticleLink}]{lineBreak}Mantendo sua conta segura [{keepAccountSafeArticleLink}] {lineBreak}Suporte geral do Roblox [{supportPageLink}] {lineBreak}{lineBreak}Atenciosamente, {lineBreak}{lineBreak}A equipe do Roblox";
+		return "{geoLocationInformation} CÃ³digo de login para {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Insira este cÃ³digo na tela de verificaÃ§Ã£o de 2 passos para terminar de se conectar. Este cÃ³digo irÃ¡ expirar em 15 minutos. {lineBreak}{lineBreak}Este e-mail foi enviado porque vocÃª tentou conectar com sua conta no Roblox a partir de um novo dispositivo ou navegador. Caso nÃ£o tenha tentado se conectar no Roblox, alÃ©m pode estar tentando acessar a sua conta. Altere sua senha imediatamente caso nÃ£o tenha gerado esta solicitaÃ§Ã£o. {lineBreak}{lineBreak}Recursos:{lineBreak}Alterar sua senha [{accountInfoPageLink}] {lineBreak}Saiba mais sobre a verificaÃ§Ã£o de 2 passos [{twoStepVerificationHelpArticleLink}]{lineBreak}Mantendo sua conta segura [{keepAccountSafeArticleLink}] {lineBreak}Suporte geral do Roblox [{supportPageLink}] {lineBreak}{lineBreak}Atenciosamente, {lineBreak}{lineBreak}A equipe do Roblox";
 	}
 
 	/// <summary>
@@ -399,12 +399,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo1(string username, string region, string country, string ipAddress, string lineBreak)
 	{
-		return $"Solicitação de login recebida de {username} em {region}, {country} ({ipAddress}).{lineBreak}{lineBreak}";
+		return $"SolicitaÃ§Ã£o de login recebida de {username} em {region}, {country} ({ipAddress}).{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo1()
 	{
-		return "Solicitação de login recebida de {username} em {region}, {country} ({ipAddress}).{lineBreak}{lineBreak}";
+		return "SolicitaÃ§Ã£o de login recebida de {username} em {region}, {country} ({ipAddress}).{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -414,12 +414,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo2(string username, string country, string ipAddress, string lineBreak)
 	{
-		return $"Solicitação de login recebida de {username} em {country} ({ipAddress}).{lineBreak}{lineBreak}";
+		return $"SolicitaÃ§Ã£o de login recebida de {username} em {country} ({ipAddress}).{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo2()
 	{
-		return "Solicitação de login recebida de {username} em {country} ({ipAddress}).{lineBreak}{lineBreak}";
+		return "SolicitaÃ§Ã£o de login recebida de {username} em {country} ({ipAddress}).{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -429,12 +429,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo3(string username, string lineBreak)
 	{
-		return $"Solicitação de login recebida de {username} (Roblox interno).{lineBreak}{lineBreak}";
+		return $"SolicitaÃ§Ã£o de login recebida de {username} (Roblox interno).{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo3()
 	{
-		return "Solicitação de login recebida de {username} (Roblox interno).{lineBreak}{lineBreak}";
+		return "SolicitaÃ§Ã£o de login recebida de {username} (Roblox interno).{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -444,12 +444,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo4(string username, string country, string lineBreak)
 	{
-		return $"Solicitação de login recebida de {username} em {country}.{lineBreak}{lineBreak}";
+		return $"SolicitaÃ§Ã£o de login recebida de {username} em {country}.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo4()
 	{
-		return "Solicitação de login recebida de {username} em {country}.{lineBreak}{lineBreak}";
+		return "SolicitaÃ§Ã£o de login recebida de {username} em {country}.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -459,12 +459,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo5(string username, string region, string country, string lineBreak)
 	{
-		return $"Solicitação de login recebida de {username} em {region}, {country}.{lineBreak}{lineBreak}";
+		return $"SolicitaÃ§Ã£o de login recebida de {username} em {region}, {country}.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo5()
 	{
-		return "Solicitação de login recebida de {username} em {region}, {country}.{lineBreak}{lineBreak}";
+		return "SolicitaÃ§Ã£o de login recebida de {username} em {region}, {country}.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -474,12 +474,12 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo6(string username, string city, string region, string country, string lineBreak)
 	{
-		return $"Solicitação de login recebida de {username} em {city}, {region}, {country}.{lineBreak}{lineBreak}";
+		return $"SolicitaÃ§Ã£o de login recebida de {username} em {city}, {region}, {country}.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo6()
 	{
-		return "Solicitação de login recebida de {username} em {city}, {region}, {country}.{lineBreak}{lineBreak}";
+		return "SolicitaÃ§Ã£o de login recebida de {username} em {city}, {region}, {country}.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -489,17 +489,17 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailSubject(string accountName)
 	{
-		return $"Código de verificação da conta Roblox: {accountName}";
+		return $"CÃ³digo de verificaÃ§Ã£o da conta Roblox: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailSubject()
 	{
-		return "Código de verificação da conta Roblox: {accountName}";
+		return "CÃ³digo de verificaÃ§Ã£o da conta Roblox: {accountName}";
 	}
 
 	protected override string _GetTemplateForLabelCode()
 	{
-		return "Código";
+		return "CÃ³digo";
 	}
 
 	/// <summary>
@@ -509,42 +509,42 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	/// </summary>
 	public override string LabelCodeInputPlaceholderText(string codeLength)
 	{
-		return $"Insira o código de {codeLength} digitos";
+		return $"Insira o cÃ³digo de {codeLength} digitos";
 	}
 
 	protected override string _GetTemplateForLabelCodeInputPlaceholderText()
 	{
-		return "Insira o código de {codeLength} digitos";
+		return "Insira o cÃ³digo de {codeLength} digitos";
 	}
 
 	protected override string _GetTemplateForLabelDidNotReceive()
 	{
-		return "Não recebeu o código?";
+		return "NÃ£o recebeu o cÃ³digo?";
 	}
 
 	protected override string _GetTemplateForLabelEnterCode()
 	{
-		return "Insira o código (6 dígitos)";
+		return "Insira o cÃ³digo (6 dÃ­gitos)";
 	}
 
 	protected override string _GetTemplateForLabelEnterEmailCode()
 	{
-		return "Insira o código que enviamos por e-mail";
+		return "Insira o cÃ³digo que enviamos por e-mail";
 	}
 
 	protected override string _GetTemplateForLabelEnterTextCode()
 	{
-		return "Insira o código que enviamos por mensagem de texto";
+		return "Insira o cÃ³digo que enviamos por mensagem de texto";
 	}
 
 	protected override string _GetTemplateForLabelEnterTwoStepVerificationCode()
 	{
-		return "Insira seu código de verificação de duas etapas.";
+		return "Insira seu cÃ³digo de verificaÃ§Ã£o de duas etapas.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookPasswordWarning()
 	{
-		return "Se você tem se conectado com o Facebook, você precisa definir uma senha.";
+		return "Se vocÃª tem se conectado com o Facebook, vocÃª precisa definir uma senha.";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
@@ -569,7 +569,7 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 
 	protected override string _GetTemplateForLabelNewCode()
 	{
-		return "Novo código";
+		return "Novo cÃ³digo";
 	}
 
 	protected override string _GetTemplateForLabelRobloxSupport()
@@ -584,27 +584,27 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "Verificação de 2 passos";
+		return "VerificaÃ§Ã£o de 2 passos";
 	}
 
 	protected override string _GetTemplateForResponseCodeSent()
 	{
-		return "Código enviado";
+		return "CÃ³digo enviado";
 	}
 
 	protected override string _GetTemplateForResponseFeatureNotAvailable()
 	{
-		return "Funcionalidade não disponível. Contate o suporte.";
+		return "Funcionalidade nÃ£o disponÃ­vel. Contate o suporte.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidCode()
 	{
-		return "Código inválido.";
+		return "CÃ³digo invÃ¡lido.";
 	}
 
 	protected override string _GetTemplateForResponseSystemErrorReturnToLogin()
 	{
-		return "Erro do sistema. Volte para a tela de conexão.";
+		return "Erro do sistema. Volte para a tela de conexÃ£o.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
@@ -616,4 +616,7 @@ internal class TwoStepVerificationResources_pt_br : TwoStepVerificationResources
 	{
 		return "Caracteres em excesso";
 	}
+}
+
+
 }

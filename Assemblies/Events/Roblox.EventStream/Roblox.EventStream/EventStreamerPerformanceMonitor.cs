@@ -1,9 +1,8 @@
 using System;
 using Roblox.Instrumentation;
+namespace Roblox.EventStream {
+    class EventStreamerPerformanceMonitor
 
-namespace Roblox.Platform.EventStream;
-
-internal class EventStreamerPerformanceMonitor
 {
 	private const string _PerformanceCategory = "Roblox.EventStreamerV1";
 
@@ -17,4 +16,7 @@ internal class EventStreamerPerformanceMonitor
 		}
 		MessagesAttemptedToSentPerSecond = counterRegistry.GetRateOfCountsPerSecondCounter("Roblox.EventStreamerV1", "MessagesAttemptedToSentPerSecond");
 	}
+}
+
+
 }

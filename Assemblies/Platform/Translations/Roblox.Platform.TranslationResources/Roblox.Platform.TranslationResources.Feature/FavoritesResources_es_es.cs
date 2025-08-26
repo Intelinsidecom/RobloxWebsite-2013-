@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FavoritesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "ActionAddToFavorites"
 	/// English String: "Add to Favorites"
 	/// </summary>
-	public override string ActionAddToFavorites => "Añadir a favoritos";
+	public override string ActionAddToFavorites => "AÃ±adir a favoritos";
 
 	/// <summary>
 	/// Key: "ActionCancel"
@@ -22,7 +22,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "ActionLogin"
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "Iniciar sesión";
+	public override string ActionLogin => "Iniciar sesiÃ³n";
 
 	/// <summary>
 	/// Key: "ActionRemoveFromFavorites"
@@ -34,7 +34,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "DescriptionLoginRequired"
 	/// English String: "You must be logged in to add this to your favorites. Please Login or Register to continue"
 	/// </summary>
-	public override string DescriptionLoginRequired => "Para añadir esto a favoritos tienes que iniciar sesión o registrarte.";
+	public override string DescriptionLoginRequired => "Para aÃ±adir esto a favoritos tienes que iniciar sesiÃ³n o registrarte.";
 
 	/// <summary>
 	/// Key: "Heading.Favorites"
@@ -54,7 +54,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "Label.AddToFavorites"
 	/// English String: "Add to Favorites"
 	/// </summary>
-	public override string LabelAddToFavorites => "Añadir a favoritos";
+	public override string LabelAddToFavorites => "AÃ±adir a favoritos";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
@@ -80,7 +80,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "LabelLoginRequired"
 	/// English String: "Login Required"
 	/// </summary>
-	public override string LabelLoginRequired => "Inicio de sesión obligatorio";
+	public override string LabelLoginRequired => "Inicio de sesiÃ³n obligatorio";
 
 	/// <summary>
 	/// Key: "MessageAssetNotFoundError"
@@ -95,7 +95,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForActionAddToFavorites()
 	{
-		return "Añadir a favoritos";
+		return "AÃ±adir a favoritos";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -105,7 +105,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "Iniciar sesión";
+		return "Iniciar sesiÃ³n";
 	}
 
 	protected override string _GetTemplateForActionRemoveFromFavorites()
@@ -115,7 +115,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForDescriptionLoginRequired()
 	{
-		return "Para añadir esto a favoritos tienes que iniciar sesión o registrarte.";
+		return "Para aÃ±adir esto a favoritos tienes que iniciar sesiÃ³n o registrarte.";
 	}
 
 	protected override string _GetTemplateForHeadingFavorites()
@@ -145,7 +145,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForLabelAddToFavorites()
 	{
-		return "Añadir a favoritos";
+		return "AÃ±adir a favoritos";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
@@ -165,11 +165,14 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForLabelLoginRequired()
 	{
-		return "Inicio de sesión obligatorio";
+		return "Inicio de sesiÃ³n obligatorio";
 	}
 
 	protected override string _GetTemplateForMessageAssetNotFoundError()
 	{
 		return "No se ha encontrado el recurso que quieres marcar como favorito.";
 	}
+}
+
+
 }

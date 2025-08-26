@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameDetailsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -41,7 +41,7 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 	/// Key: "Label.AllowedGear"
 	/// English String: "Allowed Gear"
 	/// </summary>
-	public override string LabelAllowedGear => "Erlaubte Ausrüstung";
+	public override string LabelAllowedGear => "Erlaubte AusrÃ¼stung";
 
 	/// <summary>
 	/// Key: "Label.By"
@@ -79,19 +79,19 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 	/// Key: "Label.GameCopyLocked"
 	/// English String: "This game is copylocked"
 	/// </summary>
-	public override string LabelGameCopyLocked => "Dieses Spiel ist kopiergeschützt.";
+	public override string LabelGameCopyLocked => "Dieses Spiel ist kopiergeschÃ¼tzt.";
 
 	/// <summary>
 	/// Key: "Label.GameDoesNotSell"
 	/// English String: "No virtual items or power-ups available."
 	/// </summary>
-	public override string LabelGameDoesNotSell => "Keine virtuellen Artikel oder Power-ups verfügbar.";
+	public override string LabelGameDoesNotSell => "Keine virtuellen Artikel oder Power-ups verfÃ¼gbar.";
 
 	/// <summary>
 	/// Key: "Label.GameRequiresBuildersClub"
 	/// English String: "This Game requires Builders Club"
 	/// </summary>
-	public override string LabelGameRequiresBuildersClub => "Für dieses Spiel ist eine „Builders Club“-Mitgliedschaft erforderlich.";
+	public override string LabelGameRequiresBuildersClub => "FÃ¼r dieses Spiel ist eine â€žBuilders Clubâ€œ-Mitgliedschaft erforderlich.";
 
 	/// <summary>
 	/// Key: "Label.Genre"
@@ -149,27 +149,27 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 	/// Details the effects of making a game's source public.
 	/// English String: "By leaving this checkbox checked, you are agreeing to allow every other user of Roblox the right to use (in various ways) the content you are now making available, as set out in the Terms. If you do not want to grant this right, please uncheck this box."
 	/// </summary>
-	public override string LabelPublicPrivateSourceCheckBox => "Wenn du dieses Kontrollkästchen aktiviert lässt, gewährst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade zur Verfügung stellst, auf unterschiedliche Art und Weise und gemäß der Nutzungsbedingungen zu verwenden. Wenn du dieses Recht nicht gewähren möchtest, deaktiviere dieses Kontrollkästchen bitte.";
+	public override string LabelPublicPrivateSourceCheckBox => "Wenn du dieses KontrollkÃ¤stchen aktiviert lÃ¤sst, gewÃ¤hrst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade zur VerfÃ¼gung stellst, auf unterschiedliche Art und Weise und gemÃ¤ÃŸ der Nutzungsbedingungen zu verwenden. Wenn du dieses Recht nicht gewÃ¤hren mÃ¶chtest, deaktiviere dieses KontrollkÃ¤stchen bitte.";
 
 	/// <summary>
 	/// Key: "Label.PublicSource"
 	/// Name of the option to set a game's source as public.
 	/// English String: "Public Source"
 	/// </summary>
-	public override string LabelPublicSource => "Öffentliches Quellmaterial";
+	public override string LabelPublicSource => "Ã–ffentliches Quellmaterial";
 
 	/// <summary>
 	/// Key: "Label.PublicSourceDescription"
 	/// Player-facing description for a game with public source. This shows up under a game's description.
 	/// English String: "This game's source is public"
 	/// </summary>
-	public override string LabelPublicSourceDescription => "Das Quellmaterial dieses Spiels ist öffentlich.";
+	public override string LabelPublicSourceDescription => "Das Quellmaterial dieses Spiels ist Ã¶ffentlich.";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "Verstoß melden";
+	public override string LabelReportAbuse => "VerstoÃŸ melden";
 
 	/// <summary>
 	/// Key: "Label.Servers"
@@ -211,12 +211,12 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 	/// </summary>
 	public override string DescriptionAllowCopyingDisclaimer(string boldTagStart, string boldTagEnd, string boldTagStart2, string boldTagEnd2, string linkStart, string linkEnd)
 	{
-		return $"Wenn du dieses Kontrollkästchen aktivierst, {boldTagStart}gewährst du allen anderen Roblox-Benutzern das Recht{boldTagEnd}, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. {boldTagStart2}Wenn du dieses Recht nicht gewähren möchtest, aktiviere dieses Kontrollkästchen bitte nicht{boldTagEnd2}. Weitere Informationen zum Teilen von Inhalten findest du in den {linkStart}Nutzungsbedingungen{linkEnd} von Roblox.";
+		return $"Wenn du dieses KontrollkÃ¤stchen aktivierst, {boldTagStart}gewÃ¤hrst du allen anderen Roblox-Benutzern das Recht{boldTagEnd}, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. {boldTagStart2}Wenn du dieses Recht nicht gewÃ¤hren mÃ¶chtest, aktiviere dieses KontrollkÃ¤stchen bitte nicht{boldTagEnd2}. Weitere Informationen zum Teilen von Inhalten findest du in den {linkStart}Nutzungsbedingungen{linkEnd} von Roblox.";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopyingDisclaimer()
 	{
-		return "Wenn du dieses Kontrollkästchen aktivierst, {boldTagStart}gewährst du allen anderen Roblox-Benutzern das Recht{boldTagEnd}, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. {boldTagStart2}Wenn du dieses Recht nicht gewähren möchtest, aktiviere dieses Kontrollkästchen bitte nicht{boldTagEnd2}. Weitere Informationen zum Teilen von Inhalten findest du in den {linkStart}Nutzungsbedingungen{linkEnd} von Roblox.";
+		return "Wenn du dieses KontrollkÃ¤stchen aktivierst, {boldTagStart}gewÃ¤hrst du allen anderen Roblox-Benutzern das Recht{boldTagEnd}, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. {boldTagStart2}Wenn du dieses Recht nicht gewÃ¤hren mÃ¶chtest, aktiviere dieses KontrollkÃ¤stchen bitte nicht{boldTagEnd2}. Weitere Informationen zum Teilen von Inhalten findest du in den {linkStart}Nutzungsbedingungen{linkEnd} von Roblox.";
 	}
 
 	protected override string _GetTemplateForHeadingDescription()
@@ -241,7 +241,7 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelAllowedGear()
 	{
-		return "Erlaubte Ausrüstung";
+		return "Erlaubte AusrÃ¼stung";
 	}
 
 	protected override string _GetTemplateForLabelBy()
@@ -284,12 +284,12 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 	/// </summary>
 	public override string LabelExperimentalWarning(string aTagStartWithHref, string ExperimentalGamesInfoLink, string hrefEnd, string aTagEnd)
 	{
-		return $"{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}Dieses Spiel funktioniert möglicherweise nicht wie geplant.{aTagEnd} Der Entwickler muss das Spiel aktualisieren.";
+		return $"{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}Dieses Spiel funktioniert mÃ¶glicherweise nicht wie geplant.{aTagEnd} Der Entwickler muss das Spiel aktualisieren.";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalWarning()
 	{
-		return "{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}Dieses Spiel funktioniert möglicherweise nicht wie geplant.{aTagEnd} Der Entwickler muss das Spiel aktualisieren.";
+		return "{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}Dieses Spiel funktioniert mÃ¶glicherweise nicht wie geplant.{aTagEnd} Der Entwickler muss das Spiel aktualisieren.";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
@@ -299,17 +299,17 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelGameCopyLocked()
 	{
-		return "Dieses Spiel ist kopiergeschützt.";
+		return "Dieses Spiel ist kopiergeschÃ¼tzt.";
 	}
 
 	protected override string _GetTemplateForLabelGameDoesNotSell()
 	{
-		return "Keine virtuellen Artikel oder Power-ups verfügbar.";
+		return "Keine virtuellen Artikel oder Power-ups verfÃ¼gbar.";
 	}
 
 	protected override string _GetTemplateForLabelGameRequiresBuildersClub()
 	{
-		return "Für dieses Spiel ist eine „Builders Club“-Mitgliedschaft erforderlich.";
+		return "FÃ¼r dieses Spiel ist eine â€žBuilders Clubâ€œ-Mitgliedschaft erforderlich.";
 	}
 
 	protected override string _GetTemplateForLabelGenre()
@@ -354,22 +354,22 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelPublicPrivateSourceCheckBox()
 	{
-		return "Wenn du dieses Kontrollkästchen aktiviert lässt, gewährst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade zur Verfügung stellst, auf unterschiedliche Art und Weise und gemäß der Nutzungsbedingungen zu verwenden. Wenn du dieses Recht nicht gewähren möchtest, deaktiviere dieses Kontrollkästchen bitte.";
+		return "Wenn du dieses KontrollkÃ¤stchen aktiviert lÃ¤sst, gewÃ¤hrst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade zur VerfÃ¼gung stellst, auf unterschiedliche Art und Weise und gemÃ¤ÃŸ der Nutzungsbedingungen zu verwenden. Wenn du dieses Recht nicht gewÃ¤hren mÃ¶chtest, deaktiviere dieses KontrollkÃ¤stchen bitte.";
 	}
 
 	protected override string _GetTemplateForLabelPublicSource()
 	{
-		return "Öffentliches Quellmaterial";
+		return "Ã–ffentliches Quellmaterial";
 	}
 
 	protected override string _GetTemplateForLabelPublicSourceDescription()
 	{
-		return "Das Quellmaterial dieses Spiels ist öffentlich.";
+		return "Das Quellmaterial dieses Spiels ist Ã¶ffentlich.";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "Verstoß melden";
+		return "VerstoÃŸ melden";
 	}
 
 	protected override string _GetTemplateForLabelServers()
@@ -391,4 +391,7 @@ internal class GameDetailsResources_de_de : GameDetailsResources_en_us, IGameDet
 	{
 		return "Besuche";
 	}
+}
+
+
 }

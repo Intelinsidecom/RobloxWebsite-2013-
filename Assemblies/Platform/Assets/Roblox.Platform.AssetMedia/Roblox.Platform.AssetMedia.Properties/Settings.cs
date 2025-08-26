@@ -1,4 +1,6 @@
-extern alias ConfMan;
+﻿namespace extern {
+    alias ConfMan;
+
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
@@ -112,3 +114,5 @@ public sealed class Settings : ConfManSystemConfiguration.ApplicationSettingsBas
 		Provider.RegisterSettings(e, this);
 	}
 }
+
+

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CashOutResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -92,13 +92,13 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 	/// Key: "Label.BuilderClubForCash"
 	/// English String: "You'll need Outrageous Builder's Club to exchange Robux for cash."
 	/// </summary>
-	public override string LabelBuilderClubForCash => "Du musst „Outrageous Builders Club“-Mitglied sein, um Robux gegen echtes Geld eintauschen zu können.";
+	public override string LabelBuilderClubForCash => "Du musst â€žOutrageous Builders Clubâ€œ-Mitglied sein, um Robux gegen echtes Geld eintauschen zu kÃ¶nnen.";
 
 	/// <summary>
 	/// Key: "Label.BuildersCludForCashout"
 	/// English String: "You need Outrageous Builders Club to Cash Out."
 	/// </summary>
-	public override string LabelBuildersCludForCashout => "Du musst „Outrageous Builders Club“-Mitglied sein, um Auszahlungen erhalten zu können.";
+	public override string LabelBuildersCludForCashout => "Du musst â€žOutrageous Builders Clubâ€œ-Mitglied sein, um Auszahlungen erhalten zu kÃ¶nnen.";
 
 	/// <summary>
 	/// Key: "Label.CurrentExchangeRate"
@@ -131,7 +131,7 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 	/// Key: "Label.NeedVerifiedEmail"
 	/// English String: "You need a verified email address to use DevEx."
 	/// </summary>
-	public override string LabelNeedVerifiedEmail => "Für die Nutzung von DevEx benötigst du eine verifizierte E-Mail-Adresse.";
+	public override string LabelNeedVerifiedEmail => "FÃ¼r die Nutzung von DevEx benÃ¶tigst du eine verifizierte E-Mail-Adresse.";
 
 	/// <summary>
 	/// Key: "Label.NotEligible"
@@ -143,13 +143,13 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 	/// Key: "Label.NotEnoughRobuxForCashout"
 	/// English String: "You don't have enough Robux to Cash Out."
 	/// </summary>
-	public override string LabelNotEnoughRobuxForCashout => "Du hast nicht genügend Robux für eine Auszahlung.";
+	public override string LabelNotEnoughRobuxForCashout => "Du hast nicht genÃ¼gend Robux fÃ¼r eine Auszahlung.";
 
 	/// <summary>
 	/// Key: "Label.PremiumForCash"
 	/// English String: "You'll need Roblox Premium to exchange Robux for cash."
 	/// </summary>
-	public override string LabelPremiumForCash => "Du benötigst Roblox-Premium, um Robux gegen Bargeld einzutauschen.";
+	public override string LabelPremiumForCash => "Du benÃ¶tigst Roblox-Premium, um Robux gegen Bargeld einzutauschen.";
 
 	/// <summary>
 	/// Key: "Label.Robux"
@@ -277,12 +277,12 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionLearnMoreAboutDevEx(string startDevExLink, string endDevExLink)
 	{
-		return $"{startDevExLink}Erfahre mehr{endDevExLink} über Developer Exchange.";
+		return $"{startDevExLink}Erfahre mehr{endDevExLink} Ã¼ber Developer Exchange.";
 	}
 
 	protected override string _GetTemplateForDescriptionLearnMoreAboutDevEx()
 	{
-		return "{startDevExLink}Erfahre mehr{endDevExLink} über Developer Exchange.";
+		return "{startDevExLink}Erfahre mehr{endDevExLink} Ã¼ber Developer Exchange.";
 	}
 
 	/// <summary>
@@ -337,12 +337,12 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForLabelBuilderClubForCash()
 	{
-		return "Du musst „Outrageous Builders Club“-Mitglied sein, um Robux gegen echtes Geld eintauschen zu können.";
+		return "Du musst â€žOutrageous Builders Clubâ€œ-Mitglied sein, um Robux gegen echtes Geld eintauschen zu kÃ¶nnen.";
 	}
 
 	protected override string _GetTemplateForLabelBuildersCludForCashout()
 	{
-		return "Du musst „Outrageous Builders Club“-Mitglied sein, um Auszahlungen erhalten zu können.";
+		return "Du musst â€žOutrageous Builders Clubâ€œ-Mitglied sein, um Auszahlungen erhalten zu kÃ¶nnen.";
 	}
 
 	protected override string _GetTemplateForLabelCurrentExchangeRate()
@@ -356,12 +356,12 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string LabelCurrentRateCaption(string minimumDevexRobuxAmount)
 	{
-		return $"Der aktuelle Kurs gilt für alle Beträge, die größer als {minimumDevexRobuxAmount} Robux sind";
+		return $"Der aktuelle Kurs gilt fÃ¼r alle BetrÃ¤ge, die grÃ¶ÃŸer als {minimumDevexRobuxAmount} Robux sind";
 	}
 
 	protected override string _GetTemplateForLabelCurrentRateCaption()
 	{
-		return "Der aktuelle Kurs gilt für alle Beträge, die größer als {minimumDevexRobuxAmount} Robux sind";
+		return "Der aktuelle Kurs gilt fÃ¼r alle BetrÃ¤ge, die grÃ¶ÃŸer als {minimumDevexRobuxAmount} Robux sind";
 	}
 
 	protected override string _GetTemplateForLabelDevExStatusCompleted()
@@ -381,7 +381,7 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForLabelNeedVerifiedEmail()
 	{
-		return "Für die Nutzung von DevEx benötigst du eine verifizierte E-Mail-Adresse.";
+		return "FÃ¼r die Nutzung von DevEx benÃ¶tigst du eine verifizierte E-Mail-Adresse.";
 	}
 
 	protected override string _GetTemplateForLabelNotEligible()
@@ -391,12 +391,12 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForLabelNotEnoughRobuxForCashout()
 	{
-		return "Du hast nicht genügend Robux für eine Auszahlung.";
+		return "Du hast nicht genÃ¼gend Robux fÃ¼r eine Auszahlung.";
 	}
 
 	protected override string _GetTemplateForLabelPremiumForCash()
 	{
-		return "Du benötigst Roblox-Premium, um Robux gegen Bargeld einzutauschen.";
+		return "Du benÃ¶tigst Roblox-Premium, um Robux gegen Bargeld einzutauschen.";
 	}
 
 	protected override string _GetTemplateForLabelRobux()
@@ -411,12 +411,12 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string LabelRobuxToUSD(string robuxAmount, string usdAmount)
 	{
-		return $"{robuxAmount} Robux für {usdAmount}";
+		return $"{robuxAmount} Robux fÃ¼r {usdAmount}";
 	}
 
 	protected override string _GetTemplateForLabelRobuxToUSD()
 	{
-		return "{robuxAmount} Robux für {usdAmount}";
+		return "{robuxAmount} Robux fÃ¼r {usdAmount}";
 	}
 
 	protected override string _GetTemplateForLabelTradingRobux()
@@ -433,4 +433,7 @@ internal class CashOutResources_de_de : CashOutResources_en_us, ICashOutResource
 	{
 		return "Bevor du Auszahlungen erhalten kannst, musst du deine E-Mail-Adresse verifizieren.";
 	}
+}
+
+
 }

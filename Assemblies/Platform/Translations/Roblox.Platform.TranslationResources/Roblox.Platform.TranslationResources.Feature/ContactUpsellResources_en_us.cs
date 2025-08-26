@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ContactUpsellResources_en_us : TranslationResourcesBase, IContactUpsellResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ContactUpsellResources_en_us : TranslationResourcesBase, IContactUpsellResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1137,4 +1136,7 @@ internal class ContactUpsellResources_en_us : TranslationResourcesBase, IContact
 	{
 		return "Code must be {number} digits";
 	}
+}
+
+
 }

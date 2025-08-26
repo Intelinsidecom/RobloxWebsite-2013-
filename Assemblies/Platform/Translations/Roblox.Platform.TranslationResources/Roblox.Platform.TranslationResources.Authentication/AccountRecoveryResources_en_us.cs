@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class AccountRecoveryResources_en_us : TranslationResourcesBase, IAccountRecoveryResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class AccountRecoveryResources_en_us : TranslationResourcesBase, IAccountRecoveryResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -255,4 +254,7 @@ internal class AccountRecoveryResources_en_us : TranslationResourcesBase, IAccou
 	{
 		return "You are reverting your email to an unverified email.";
 	}
+}
+
+
 }

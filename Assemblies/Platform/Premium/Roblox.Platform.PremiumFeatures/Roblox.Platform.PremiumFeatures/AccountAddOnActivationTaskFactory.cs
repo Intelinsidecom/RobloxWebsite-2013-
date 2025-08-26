@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class AccountAddOnActivationTaskFactory : IAccountAddOnActivationTaskFactory
 
-namespace Roblox.PremiumFeatures;
-
-public class AccountAddOnActivationTaskFactory : IAccountAddOnActivationTaskFactory
 {
 	public DateTime CalculateBuildersClubUpgradeExpiration(AccountAddOn currentBuildersClubMembershipAddOn, int newPremiumFeatureId, bool isBaseExpiration = false)
 	{
@@ -13,4 +12,7 @@ public class AccountAddOnActivationTaskFactory : IAccountAddOnActivationTaskFact
 	{
 		return AccountAddOnActivationTask.CalculateGracePeriodAwareExpiration(baseExpiration, isRenewal);
 	}
+}
+
+
 }

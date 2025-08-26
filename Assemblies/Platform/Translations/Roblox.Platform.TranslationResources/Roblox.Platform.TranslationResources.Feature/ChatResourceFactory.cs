@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class ChatResourceFactory
 
-internal static class ChatResourceFactory
 {
 	public const string FullNamespace = "Feature.Chat";
 
@@ -21,4 +21,7 @@ internal static class ChatResourceFactory
 			_ => new ChatResources_en_us(state), 
 		};
 	}
+}
+
+
 }

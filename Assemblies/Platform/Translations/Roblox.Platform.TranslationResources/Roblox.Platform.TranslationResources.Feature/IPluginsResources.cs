@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPluginsResources : ITranslationResources
 
-public interface IPluginsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.ErrorBody"
@@ -67,4 +67,7 @@ public interface IPluginsResources : ITranslationResources
 	/// English String: "{item} has been successfully updated! Please open a new window for the changes to take effect."
 	/// </summary>
 	string LabelUpdateSuccessBody(string item);
+}
+
+
 }

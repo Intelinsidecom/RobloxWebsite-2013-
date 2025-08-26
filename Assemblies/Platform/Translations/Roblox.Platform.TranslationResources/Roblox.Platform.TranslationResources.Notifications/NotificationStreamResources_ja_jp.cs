@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notifications {
+    /// <summary>
 
-/// <summary>
 /// This class overrides NotificationStreamResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,108 +10,108 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "承認する";
+	public override string ActionAccept => "æ‰¿èªã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "キャンセル";
+	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string ActionChat => "チャット";
+	public override string ActionChat => "ãƒãƒ£ãƒƒãƒˆ";
 
 	/// <summary>
 	/// Key: "Action.Ignore"
 	/// English String: "Ignore"
 	/// </summary>
-	public override string ActionIgnore => "無視する";
+	public override string ActionIgnore => "ç„¡è¦–ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.Play"
 	/// Label for button to launch game.
 	/// English String: "Play"
 	/// </summary>
-	public override string ActionPlay => "プレイ";
+	public override string ActionPlay => "ãƒ—ãƒ¬ã‚¤";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// Label for link to report a game update message
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "規約違反を報告";
+	public override string ActionReportAbuse => "è¦ç´„é•åã‚’å ±å‘Š";
 
 	/// <summary>
 	/// Key: "Action.Undo"
 	/// Label for Undo link to reverse the unfollow action
 	/// English String: "Undo"
 	/// </summary>
-	public override string ActionUndo => "取り消す";
+	public override string ActionUndo => "å–ã‚Šæ¶ˆã™";
 
 	/// <summary>
 	/// Key: "Action.View"
 	/// English String: "View"
 	/// </summary>
-	public override string ActionView => "表示";
+	public override string ActionView => "è¡¨ç¤º";
 
 	/// <summary>
 	/// Key: "Action.ViewAll"
 	/// English String: "View All"
 	/// </summary>
-	public override string ActionViewAll => "すべて表示";
+	public override string ActionViewAll => "ã™ã¹ã¦è¡¨ç¤º";
 
 	/// <summary>
 	/// Key: "Heading.BackToAllNotifications"
 	/// Heading displayed in game updates view, containing back link to notifications main view.
 	/// English String: "All Notifications"
 	/// </summary>
-	public override string HeadingBackToAllNotifications => "すべての通知";
+	public override string HeadingBackToAllNotifications => "ã™ã¹ã¦ã®é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Label.NoNetworkConnectionText"
 	/// English String: "Connecting..."
 	/// </summary>
-	public override string LabelNoNetworkConnectionText => "接続中...";
+	public override string LabelNoNetworkConnectionText => "æŽ¥ç¶šä¸­...";
 
 	/// <summary>
 	/// Key: "Label.NoNotifications"
 	/// English String: "No Notifications"
 	/// </summary>
-	public override string LabelNoNotifications => "通知はありません";
+	public override string LabelNoNotifications => "é€šçŸ¥ã¯ã‚ã‚Šã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Label.Notifications"
 	/// English String: "Notifications"
 	/// </summary>
-	public override string LabelNotifications => "通知";
+	public override string LabelNotifications => "é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Label.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelSettings => "設定";
+	public override string LabelSettings => "è¨­å®š";
 
 	/// <summary>
 	/// Key: "Message.GameNotPlayableOnDevice"
 	/// Message displayed on game update card when the game is not playable on the device type.
 	/// English String: "Not playable on this device"
 	/// </summary>
-	public override string MessageGameNotPlayableOnDevice => "このデバイスではプレイできません";
+	public override string MessageGameNotPlayableOnDevice => "ã“ã®ãƒ‡ãƒã‚¤ã‚¹ã§ã¯ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsOther"
 	/// English String: "That user already has the max number of friends."
 	/// </summary>
-	public override string MessageTooManyFriendsOther => "そのユーザーは、これ以上友達を増やせません。";
+	public override string MessageTooManyFriendsOther => "ãã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã“ã‚Œä»¥ä¸Šå‹é”ã‚’å¢—ã‚„ã›ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsSelf"
 	/// English String: "You already have the max number of friends."
 	/// </summary>
-	public override string MessageTooManyFriendsSelf => "これ以上友達を増やせません。";
+	public override string MessageTooManyFriendsSelf => "ã“ã‚Œä»¥ä¸Šå‹é”ã‚’å¢—ã‚„ã›ã¾ã›ã‚“ã€‚";
 
 	public NotificationStreamResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -120,37 +120,37 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "承認する";
+		return "æ‰¿èªã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionChat()
 	{
-		return "チャット";
+		return "ãƒãƒ£ãƒƒãƒˆ";
 	}
 
 	protected override string _GetTemplateForActionIgnore()
 	{
-		return "無視する";
+		return "ç„¡è¦–ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionPlay()
 	{
-		return "プレイ";
+		return "ãƒ—ãƒ¬ã‚¤";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "規約違反を報告";
+		return "è¦ç´„é•åã‚’å ±å‘Š";
 	}
 
 	protected override string _GetTemplateForActionUndo()
 	{
-		return "取り消す";
+		return "å–ã‚Šæ¶ˆã™";
 	}
 
 	/// <summary>
@@ -160,47 +160,47 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string ActionUnfollowGame(string gameName)
 	{
-		return $"{gameName}のフォローをやめる";
+		return $"{gameName}ã®ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionUnfollowGame()
 	{
-		return "{gameName}のフォローをやめる";
+		return "{gameName}ã®ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionView()
 	{
-		return "表示";
+		return "è¡¨ç¤º";
 	}
 
 	protected override string _GetTemplateForActionViewAll()
 	{
-		return "すべて表示";
+		return "ã™ã¹ã¦è¡¨ç¤º";
 	}
 
 	protected override string _GetTemplateForHeadingBackToAllNotifications()
 	{
-		return "すべての通知";
+		return "ã™ã¹ã¦ã®é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForLabelNoNetworkConnectionText()
 	{
-		return "接続中...";
+		return "æŽ¥ç¶šä¸­...";
 	}
 
 	protected override string _GetTemplateForLabelNoNotifications()
 	{
-		return "通知はありません";
+		return "é€šçŸ¥ã¯ã‚ã‚Šã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForLabelNotifications()
 	{
-		return "通知";
+		return "é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForLabelSettings()
 	{
-		return "設定";
+		return "è¨­å®š";
 	}
 
 	/// <summary>
@@ -210,17 +210,17 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageAggregatedGameUpdateDouble(string gameOne, string gameTwo)
 	{
-		return $"{gameOne}と{gameTwo}がアップデートを送信しました。";
+		return $"{gameOne}ã¨{gameTwo}ãŒã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAggregatedGameUpdateDouble()
 	{
-		return "{gameOne}と{gameTwo}がアップデートを送信しました。";
+		return "{gameOne}ã¨{gameTwo}ãŒã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAggregatedGameUpdateMultiple()
 	{
-		return "{gameOne}、{gameTwo}、他{otherCount, plural, =1 {# 種類のゲーム} other {# 種類のゲーム}}がアップデートを送信しました。";
+		return "{gameOne}ã€{gameTwo}ã€ä»–{otherCount, plural, =1 {# ç¨®é¡žã®ã‚²ãƒ¼ãƒ } other {# ç¨®é¡žã®ã‚²ãƒ¼ãƒ }}ãŒã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
 	}
 
 	/// <summary>
@@ -229,17 +229,17 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmAcceptedDouble(string userOne, string userTwo)
 	{
-		return $"{userOne}さんと{userTwo}さん";
+		return $"{userOne}ã•ã‚“ã¨{userTwo}ã•ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageConfirmAcceptedDouble()
 	{
-		return "{userOne}さんと{userTwo}さん";
+		return "{userOne}ã•ã‚“ã¨{userTwo}ã•ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageConfirmAcceptedMultiple()
 	{
-		return "{userOne}さん、{userTwo}さん、他{userMultipleCount, plural, =1 {人} other {人}}";
+		return "{userOne}ã•ã‚“ã€{userTwo}ã•ã‚“ã€ä»–{userMultipleCount, plural, =1 {äºº} other {äºº}}";
 	}
 
 	/// <summary>
@@ -262,17 +262,17 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmSentDouble(string userOne, string userTwo)
 	{
-		return $"{userOne}さんと{userTwo}さんが友達になりました！";
+		return $"{userOne}ã•ã‚“ã¨{userTwo}ã•ã‚“ãŒå‹é”ã«ãªã‚Šã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentDouble()
 	{
-		return "{userOne}さんと{userTwo}さんが友達になりました！";
+		return "{userOne}ã•ã‚“ã¨{userTwo}ã•ã‚“ãŒå‹é”ã«ãªã‚Šã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentMultiple()
 	{
-		return "{userOne}さん、{userTwo}さん、他{userMultipleCount, plural, =1 {人} other {人}}が、友達になりました！";
+		return "{userOne}ã•ã‚“ã€{userTwo}ã•ã‚“ã€ä»–{userMultipleCount, plural, =1 {äºº} other {äºº}}ãŒã€å‹é”ã«ãªã‚Šã¾ã—ãŸï¼";
 	}
 
 	/// <summary>
@@ -281,12 +281,12 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmSentSingle(string userOne)
 	{
-		return $"{userOne}さんが友達になりました！";
+		return $"{userOne}ã•ã‚“ãŒå‹é”ã«ãªã‚Šã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentSingle()
 	{
-		return "{userOne}さんが友達になりました！";
+		return "{userOne}ã•ã‚“ãŒå‹é”ã«ãªã‚Šã¾ã—ãŸï¼";
 	}
 
 	/// <summary>
@@ -295,17 +295,17 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailable(string month, string year, string gameName)
 	{
-		return $"{month} {year} の{gameName} の解析レポートが存在します.";
+		return $"{month} {year} ã®{gameName} ã®è§£æžãƒ¬ãƒãƒ¼ãƒˆãŒå­˜åœ¨ã—ã¾ã™.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailable()
 	{
-		return "{month} {year} の{gameName} の解析レポートが存在します.";
+		return "{month} {year} ã®{gameName} ã®è§£æžãƒ¬ãƒãƒ¼ãƒˆãŒå­˜åœ¨ã—ã¾ã™.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple()
 	{
-		return "{gameName} の {year} {month} の解析レポートと {otherCount, plural, =1 {# 件の他のゲーム} other {# 件の他のゲーム}}のものがあります";
+		return "{gameName} ã® {year} {month} ã®è§£æžãƒ¬ãƒãƒ¼ãƒˆã¨ {otherCount, plural, =1 {# ä»¶ã®ä»–ã®ã‚²ãƒ¼ãƒ } other {# ä»¶ã®ä»–ã®ã‚²ãƒ¼ãƒ }}ã®ã‚‚ã®ãŒã‚ã‚Šã¾ã™";
 	}
 
 	/// <summary>
@@ -314,12 +314,12 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailableMultiple2(string month, string year, string gameCount)
 	{
-		return $"{year} {month} の {gameCount} 件のゲーム解析レポートがあります。";
+		return $"{year} {month} ã® {gameCount} ä»¶ã®ã‚²ãƒ¼ãƒ è§£æžãƒ¬ãƒãƒ¼ãƒˆãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple2()
 	{
-		return "{year} {month} の {gameCount} 件のゲーム解析レポートがあります。";
+		return "{year} {month} ã® {gameCount} ä»¶ã®ã‚²ãƒ¼ãƒ è§£æžãƒ¬ãƒãƒ¼ãƒˆãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -328,17 +328,17 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestAcceptedDouble(string userOne, string userTwo)
 	{
-		return $"{userOne}さんと{userTwo}さんが、あなたの友達リクエストを承認しました。";
+		return $"{userOne}ã•ã‚“ã¨{userTwo}ã•ã‚“ãŒã€ã‚ãªãŸã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedDouble()
 	{
-		return "{userOne}さんと{userTwo}さんが、あなたの友達リクエストを承認しました。";
+		return "{userOne}ã•ã‚“ã¨{userTwo}ã•ã‚“ãŒã€ã‚ãªãŸã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedMultiple()
 	{
-		return "{userOne}さん、{userTwo}さん、他{userMultipleCount, plural, =1 {# 人} other {# 人}}が、あなたの友達リクエストを承認しました。";
+		return "{userOne}ã•ã‚“ã€{userTwo}ã•ã‚“ã€ä»–{userMultipleCount, plural, =1 {# äºº} other {# äºº}}ãŒã€ã‚ãªãŸã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸã€‚";
 	}
 
 	/// <summary>
@@ -347,12 +347,12 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestAcceptedSingle(string userOne)
 	{
-		return $"{userOne}さんが、あなたの友達リクエストを承認しました。";
+		return $"{userOne}ã•ã‚“ãŒã€ã‚ãªãŸã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedSingle()
 	{
-		return "{userOne}さんが、あなたの友達リクエストを承認しました。";
+		return "{userOne}ã•ã‚“ãŒã€ã‚ãªãŸã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸã€‚";
 	}
 
 	/// <summary>
@@ -361,17 +361,17 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestSentDouble(string userOne, string userTwo)
 	{
-		return $"{userOne} さんと{userTwo} さんから友達リクエストが届きました。";
+		return $"{userOne} ã•ã‚“ã¨{userTwo} ã•ã‚“ã‹ã‚‰å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentDouble()
 	{
-		return "{userOne} さんと{userTwo} さんから友達リクエストが届きました。";
+		return "{userOne} ã•ã‚“ã¨{userTwo} ã•ã‚“ã‹ã‚‰å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentMultiple()
 	{
-		return "{userOne}さん、{userTwo}さん、他{userMultipleCount, plural, =1 {人} other {人}}から友達リクエストが届きました。";
+		return "{userOne}ã•ã‚“ã€{userTwo}ã•ã‚“ã€ä»–{userMultipleCount, plural, =1 {äºº} other {äºº}}ã‹ã‚‰å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸã€‚";
 	}
 
 	/// <summary>
@@ -380,17 +380,17 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestSentSingle(string userOne)
 	{
-		return $"{userOne} さんから友達リクエストが届きました。";
+		return $"{userOne} ã•ã‚“ã‹ã‚‰å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentSingle()
 	{
-		return "{userOne} さんから友達リクエストが届きました。";
+		return "{userOne} ã•ã‚“ã‹ã‚‰å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGameNotPlayableOnDevice()
 	{
-		return "このデバイスではプレイできません";
+		return "ã“ã®ãƒ‡ãƒã‚¤ã‚¹ã§ã¯ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“";
 	}
 
 	/// <summary>
@@ -399,12 +399,12 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageMessageAndPreview(string titleStart, string username, string titleEnd, string message)
 	{
-		return $"{titleStart}{username}さんからのメッセージ:{titleEnd} {message}";
+		return $"{titleStart}{username}ã•ã‚“ã‹ã‚‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸:{titleEnd} {message}";
 	}
 
 	protected override string _GetTemplateForMessageMessageAndPreview()
 	{
-		return "{titleStart}{username}さんからのメッセージ:{titleEnd} {message}";
+		return "{titleStart}{username}ã•ã‚“ã‹ã‚‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸:{titleEnd} {message}";
 	}
 
 	/// <summary>
@@ -413,27 +413,27 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageMessageFrom(string username)
 	{
-		return $"{username}さんからのメッセージ:";
+		return $"{username}ã•ã‚“ã‹ã‚‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸:";
 	}
 
 	protected override string _GetTemplateForMessageMessageFrom()
 	{
-		return "{username}さんからのメッセージ:";
+		return "{username}ã•ã‚“ã‹ã‚‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸:";
 	}
 
 	protected override string _GetTemplateForMessageNumberofNewNotifications()
 	{
-		return "{notificationCount, plural, =1 {# 新着通知} other {# 新着通知}}";
+		return "{notificationCount, plural, =1 {# æ–°ç€é€šçŸ¥} other {# æ–°ç€é€šçŸ¥}}";
 	}
 
 	protected override string _GetTemplateForMessageTooManyFriendsOther()
 	{
-		return "そのユーザーは、これ以上友達を増やせません。";
+		return "ãã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã“ã‚Œä»¥ä¸Šå‹é”ã‚’å¢—ã‚„ã›ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyFriendsSelf()
 	{
-		return "これ以上友達を増やせません。";
+		return "ã“ã‚Œä»¥ä¸Šå‹é”ã‚’å¢—ã‚„ã›ã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -443,26 +443,29 @@ internal class NotificationStreamResources_ja_jp : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageUnfollowedGame(string gameName)
 	{
-		return $"{gameName}のフォローをやめました";
+		return $"{gameName}ã®ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageUnfollowedGame()
 	{
-		return "{gameName}のフォローをやめました";
+		return "{gameName}ã®ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNewFriendRequests()
 	{
-		return "{numberOfRequests}件の{numberOfRequests, plural, =1 {友達リクエスト} other {友達リクエスト}}が届きました。";
+		return "{numberOfRequests}ä»¶ã®{numberOfRequests, plural, =1 {å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆ} other {å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆ}}ãŒå±Šãã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNewFriends()
 	{
-		return "{numberOfFriends}人の{numberOfFriends, plural, =1 {友達} other {友達}}ができました。";
+		return "{numberOfFriends}äººã®{numberOfFriends, plural, =1 {å‹é”} other {å‹é”}}ãŒã§ãã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageYouReceivedMessages()
 	{
-		return "{numberOfMessagesText}件の{numberOfMessages, plural, =1 {メッセージ} other {メッセージ}}が届きました";
+		return "{numberOfMessagesText}ä»¶ã®{numberOfMessages, plural, =1 {ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸} other {ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸}}ãŒå±Šãã¾ã—ãŸ";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPrivateSalesResources : ITranslationResources
 
-public interface IPrivateSalesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Buy"
@@ -80,4 +80,7 @@ public interface IPrivateSalesResources : ITranslationResources
 	/// English String: "{numberOfDays} Days"
 	/// </summary>
 	string LabelXDays(string numberOfDays);
+}
+
+
 }

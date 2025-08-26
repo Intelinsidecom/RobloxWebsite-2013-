@@ -1,7 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Assets.Client;
 
-class TestAssetsClient
+namespace class {
+    TestAssetsClient
+
 {
     public static void Test()
     {
@@ -9,3 +11,5 @@ class TestAssetsClient
         Console.WriteLine("Roblox.Assets.Client namespace is accessible");
     }
 }
+
+

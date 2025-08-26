@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ReturnToStudioResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -30,7 +30,7 @@ internal class ReturnToStudioResources_pt_br : ReturnToStudioResources_en_us, IR
 	/// Key: "Label.StudioHelp"
 	/// English String: "If Studio does not open, click here for help"
 	/// </summary>
-	public override string LabelStudioHelp => "Se o Studio não abrir, clique aqui para obter ajuda";
+	public override string LabelStudioHelp => "Se o Studio nÃ£o abrir, clique aqui para obter ajuda";
 
 	public ReturnToStudioResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -54,12 +54,12 @@ internal class ReturnToStudioResources_pt_br : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionAttemptedUsername(string username)
 	{
-		return $"Você estava tentando entrar no Studio como {username}";
+		return $"VocÃª estava tentando entrar no Studio como {username}";
 	}
 
 	protected override string _GetTemplateForDescriptionAttemptedUsername()
 	{
-		return "Você estava tentando entrar no Studio como {username}";
+		return "VocÃª estava tentando entrar no Studio como {username}";
 	}
 
 	protected override string _GetTemplateForDescriptionOpeningStudio()
@@ -89,16 +89,19 @@ internal class ReturnToStudioResources_pt_br : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string HeadingGreeting(string username)
 	{
-		return $"Olá, {username}!";
+		return $"OlÃ¡, {username}!";
 	}
 
 	protected override string _GetTemplateForHeadingGreeting()
 	{
-		return "Olá, {username}!";
+		return "OlÃ¡, {username}!";
 	}
 
 	protected override string _GetTemplateForLabelStudioHelp()
 	{
-		return "Se o Studio não abrir, clique aqui para obter ajuda";
+		return "Se o Studio nÃ£o abrir, clique aqui para obter ajuda";
 	}
+}
+
+
 }

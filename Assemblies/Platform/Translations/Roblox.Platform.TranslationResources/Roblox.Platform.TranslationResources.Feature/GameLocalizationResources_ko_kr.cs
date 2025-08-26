@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLocalizationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,219 +11,219 @@ internal class GameLocalizationResources_ko_kr : GameLocalizationResources_en_us
 	/// The label for the cancel button
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "취소";
+	public override string ActionCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Clear"
 	/// The label for the clear button
 	/// English String: "Clear"
 	/// </summary>
-	public override string ActionClear => "삭제";
+	public override string ActionClear => "ì‚­ì œ";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// The label for the confirm button
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "확인";
+	public override string ActionConfirm => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// The label for the save button
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "저장";
+	public override string ActionSave => "ì €ìž¥";
 
 	/// <summary>
 	/// Key: "Description.ContentModerationError"
 	/// The error text when user's input does not pass the backend text filter
 	/// English String: "Error: Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string DescriptionContentModerationError => "오류: 저장 실패. 콘텐츠에 문제의 소지가 있는지 확인하고 다시 시도하세요.";
+	public override string DescriptionContentModerationError => "ì˜¤ë¥˜: ì €ìž¥ ì‹¤íŒ¨. ì½˜í…ì¸ ì— ë¬¸ì œì˜ ì†Œì§€ê°€ ìžˆëŠ”ì§€ í™•ì¸í•˜ê³  ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Description.GeneralError"
 	/// The error text for all the other backend error codes
 	/// English String: "Error: Could not save."
 	/// </summary>
-	public override string DescriptionGeneralError => "오류: 저장 실패.";
+	public override string DescriptionGeneralError => "ì˜¤ë¥˜: ì €ìž¥ ì‹¤íŒ¨.";
 
 	/// <summary>
 	/// Key: "Description.NonSourceLanguageForm"
 	/// The info shown to user when they are viewing the name and description in the source language
 	/// English String: "If no translations are provided, users will see the source language values."
 	/// </summary>
-	public override string DescriptionNonSourceLanguageForm => "번역이 없으면 사용자는 소스 언어 값을 보게 됩니다.";
+	public override string DescriptionNonSourceLanguageForm => "ë²ˆì—­ì´ ì—†ìœ¼ë©´ ì‚¬ìš©ìžëŠ” ì†ŒìŠ¤ ì–¸ì–´ ê°’ì„ ë³´ê²Œ ë©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Description.Save"
 	/// The content for unsaved changes warning modal
 	/// English String: "You have unsaved changes. Are you sure you want to switch language?"
 	/// </summary>
-	public override string DescriptionSave => "저장되지 않은 변경 사항이 있어요. 언어를 전환하시겠습니까?";
+	public override string DescriptionSave => "ì €ìž¥ë˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­ì´ ìžˆì–´ìš”. ì–¸ì–´ë¥¼ ì „í™˜í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 
 	/// <summary>
 	/// Key: "Description.SaveSuccess"
 	/// The feedback for user when saving has succeeded
 	/// English String: "Name and Description saved."
 	/// </summary>
-	public override string DescriptionSaveSuccess => "이름 및 설명이 저장되었습니다.";
+	public override string DescriptionSaveSuccess => "ì´ë¦„ ë° ì„¤ëª…ì´ ì €ìž¥ë˜ì—ˆìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Description.SourceLanguageForm"
 	/// The info shown to user when they are viewing the name and description in the source language
 	/// English String: "Source language values are shown as a reference. They can only be viewed here."
 	/// </summary>
-	public override string DescriptionSourceLanguageForm => "소스 언어 값이 참조로 표시됩니다. 여기에서만 볼 수 있어요.";
+	public override string DescriptionSourceLanguageForm => "ì†ŒìŠ¤ ì–¸ì–´ ê°’ì´ ì°¸ì¡°ë¡œ í‘œì‹œë©ë‹ˆë‹¤. ì—¬ê¸°ì—ì„œë§Œ ë³¼ ìˆ˜ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Heading.Clear"
 	/// The modal title for clear confirmation modal
 	/// English String: "Clear Values"
 	/// </summary>
-	public override string HeadingClear => "값 지우기";
+	public override string HeadingClear => "ê°’ ì§€ìš°ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureLocalization"
 	/// page heading
 	/// English String: "Configure Localization"
 	/// </summary>
-	public override string HeadingConfigureLocalization => "로컬리제이션 구성";
+	public override string HeadingConfigureLocalization => "ë¡œì»¬ë¦¬ì œì´ì…˜ êµ¬ì„±";
 
 	/// <summary>
 	/// Key: "Heading.GameNameDescriptionTranslations"
 	/// The header for the game info section in localization page
 	/// English String: "Game Name and Description Translations"
 	/// </summary>
-	public override string HeadingGameNameDescriptionTranslations => "게임 이름 및 설명 번역";
+	public override string HeadingGameNameDescriptionTranslations => "ê²Œìž„ ì´ë¦„ ë° ì„¤ëª… ë²ˆì—­";
 
 	/// <summary>
 	/// Key: "Heading.Save"
 	/// The content for unsaved changes warning modal
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingSave => "저장하지 않은 변경 사항";
+	public override string HeadingSave => "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// The label for the game name input field
 	/// English String: "Description: "
 	/// </summary>
-	public override string LabelDescription => "설명:";
+	public override string LabelDescription => "ì„¤ëª…:";
 
 	/// <summary>
 	/// Key: "Label.GameDescriptionPlaceholder"
 	/// The placeholder for the game description input field
 	/// English String: "Enter game description here"
 	/// </summary>
-	public override string LabelGameDescriptionPlaceholder => "여기에 게임 설명 입력";
+	public override string LabelGameDescriptionPlaceholder => "ì—¬ê¸°ì— ê²Œìž„ ì„¤ëª… ìž…ë ¥";
 
 	/// <summary>
 	/// Key: "Label.GameInfo"
 	/// The label for the game info sub tab in localization tab
 	/// English String: "Game Info"
 	/// </summary>
-	public override string LabelGameInfo => "게임 정보";
+	public override string LabelGameInfo => "ê²Œìž„ ì •ë³´";
 
 	/// <summary>
 	/// Key: "Label.GameNameDescriptionTranslations"
 	/// The label for the game info tab in localization page
 	/// English String: "Game Name and Description Translations"
 	/// </summary>
-	public override string LabelGameNameDescriptionTranslations => "게임 이름 및 설명 번역";
+	public override string LabelGameNameDescriptionTranslations => "ê²Œìž„ ì´ë¦„ ë° ì„¤ëª… ë²ˆì—­";
 
 	/// <summary>
 	/// Key: "Label.GameNamePlaceholder"
 	/// The placeholder for the game name input field
 	/// English String: "Enter game name here (required)"
 	/// </summary>
-	public override string LabelGameNamePlaceholder => "여기에 게임 이름을 입력하세요(필수)";
+	public override string LabelGameNamePlaceholder => "ì—¬ê¸°ì— ê²Œìž„ ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”(í•„ìˆ˜)";
 
 	/// <summary>
 	/// Key: "Label.GameTitlePlaceholder"
 	/// placeholder text for entering game title in a text input
 	/// English String: "Enter game name here"
 	/// </summary>
-	public override string LabelGameTitlePlaceholder => "여기에 게임 이름 입력";
+	public override string LabelGameTitlePlaceholder => "ì—¬ê¸°ì— ê²Œìž„ ì´ë¦„ ìž…ë ¥";
 
 	/// <summary>
 	/// Key: "Label.Localization"
 	/// The label for localization tab and its header in configure game page
 	/// English String: "Localization"
 	/// </summary>
-	public override string LabelLocalization => "로컬리제이션";
+	public override string LabelLocalization => "ë¡œì»¬ë¦¬ì œì´ì…˜";
 
 	/// <summary>
 	/// Key: "Label.Name"
 	/// The label for the game name input field
 	/// English String: "Name: "
 	/// </summary>
-	public override string LabelName => "이름: ";
+	public override string LabelName => "ì´ë¦„: ";
 
 	/// <summary>
 	/// Key: "Label.SupportedLanguages"
 	/// The label for the supported languages sub tab in localization tab
 	/// English String: "Supported Languages"
 	/// </summary>
-	public override string LabelSupportedLanguages => "지원 언어";
+	public override string LabelSupportedLanguages => "ì§€ì› ì–¸ì–´";
 
 	/// <summary>
 	/// Key: "Label.TabGameInfo"
 	/// English String: "Game Info"
 	/// </summary>
-	public override string LabelTabGameInfo => "게임 정보";
+	public override string LabelTabGameInfo => "ê²Œìž„ ì •ë³´";
 
 	/// <summary>
 	/// Key: "Label.TabLanguages"
 	/// English String: "Languages"
 	/// </summary>
-	public override string LabelTabLanguages => "언어";
+	public override string LabelTabLanguages => "ì–¸ì–´";
 
 	/// <summary>
 	/// Key: "Label.TabReports"
 	/// English String: "Reports"
 	/// </summary>
-	public override string LabelTabReports => "신고";
+	public override string LabelTabReports => "ì‹ ê³ ";
 
 	/// <summary>
 	/// Key: "Label.TabSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelTabSettings => "설정";
+	public override string LabelTabSettings => "ì„¤ì •";
 
 	/// <summary>
 	/// Key: "Label.TabTranslators"
 	/// English String: "Translators"
 	/// </summary>
-	public override string LabelTabTranslators => "번역자";
+	public override string LabelTabTranslators => "ë²ˆì—­ìž";
 
 	/// <summary>
 	/// Key: "Label.Title"
 	/// Game Title (or Name) field label, corresponding text area editable by game developer
 	/// English String: "Title"
 	/// </summary>
-	public override string LabelTitle => "제목";
+	public override string LabelTitle => "ì œëª©";
 
 	/// <summary>
 	/// Key: "Response.ContentModerationError"
 	/// The error text when user's input does not pass the backend text filter
 	/// English String: "Error: Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string ResponseContentModerationError => "오류: 저장 실패. 콘텐츠에 문제의 소지가 있는지 확인하고 다시 시도하세요.";
+	public override string ResponseContentModerationError => "ì˜¤ë¥˜: ì €ìž¥ ì‹¤íŒ¨. ì½˜í…ì¸ ì— ë¬¸ì œì˜ ì†Œì§€ê°€ ìžˆëŠ”ì§€ í™•ì¸í•˜ê³  ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "오류: 오류가 발생했어요. 나중에 다시 시도하세요.";
+	public override string ResponseGeneralError => "ì˜¤ë¥˜: ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.GeneralSaveError"
 	/// The error text for all the other backend error code during save
 	/// English String: "Error: Could not save."
 	/// </summary>
-	public override string ResponseGeneralSaveError => "오류: 저장 실패.";
+	public override string ResponseGeneralSaveError => "ì˜¤ë¥˜: ì €ìž¥ ì‹¤íŒ¨.";
 
 	public GameLocalizationResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -232,22 +232,22 @@ internal class GameLocalizationResources_ko_kr : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionClear()
 	{
-		return "삭제";
+		return "ì‚­ì œ";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "저장";
+		return "ì €ìž¥";
 	}
 
 	/// <summary>
@@ -257,151 +257,154 @@ internal class GameLocalizationResources_ko_kr : GameLocalizationResources_en_us
 	/// </summary>
 	public override string DescriptionClear(string languageName)
 	{
-		return $"{languageName}의 번역을 지우시겠습니까? 사용자들은 게임의 소스 언어로 이름과 설명을 보게 됩니다.";
+		return $"{languageName}ì˜ ë²ˆì—­ì„ ì§€ìš°ì‹œê² ìŠµë‹ˆê¹Œ? ì‚¬ìš©ìžë“¤ì€ ê²Œìž„ì˜ ì†ŒìŠ¤ ì–¸ì–´ë¡œ ì´ë¦„ê³¼ ì„¤ëª…ì„ ë³´ê²Œ ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionClear()
 	{
-		return "{languageName}의 번역을 지우시겠습니까? 사용자들은 게임의 소스 언어로 이름과 설명을 보게 됩니다.";
+		return "{languageName}ì˜ ë²ˆì—­ì„ ì§€ìš°ì‹œê² ìŠµë‹ˆê¹Œ? ì‚¬ìš©ìžë“¤ì€ ê²Œìž„ì˜ ì†ŒìŠ¤ ì–¸ì–´ë¡œ ì´ë¦„ê³¼ ì„¤ëª…ì„ ë³´ê²Œ ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionContentModerationError()
 	{
-		return "오류: 저장 실패. 콘텐츠에 문제의 소지가 있는지 확인하고 다시 시도하세요.";
+		return "ì˜¤ë¥˜: ì €ìž¥ ì‹¤íŒ¨. ì½˜í…ì¸ ì— ë¬¸ì œì˜ ì†Œì§€ê°€ ìžˆëŠ”ì§€ í™•ì¸í•˜ê³  ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionGeneralError()
 	{
-		return "오류: 저장 실패.";
+		return "ì˜¤ë¥˜: ì €ìž¥ ì‹¤íŒ¨.";
 	}
 
 	protected override string _GetTemplateForDescriptionNonSourceLanguageForm()
 	{
-		return "번역이 없으면 사용자는 소스 언어 값을 보게 됩니다.";
+		return "ë²ˆì—­ì´ ì—†ìœ¼ë©´ ì‚¬ìš©ìžëŠ” ì†ŒìŠ¤ ì–¸ì–´ ê°’ì„ ë³´ê²Œ ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionSave()
 	{
-		return "저장되지 않은 변경 사항이 있어요. 언어를 전환하시겠습니까?";
+		return "ì €ìž¥ë˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­ì´ ìžˆì–´ìš”. ì–¸ì–´ë¥¼ ì „í™˜í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
 	}
 
 	protected override string _GetTemplateForDescriptionSaveSuccess()
 	{
-		return "이름 및 설명이 저장되었습니다.";
+		return "ì´ë¦„ ë° ì„¤ëª…ì´ ì €ìž¥ë˜ì—ˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionSourceLanguageForm()
 	{
-		return "소스 언어 값이 참조로 표시됩니다. 여기에서만 볼 수 있어요.";
+		return "ì†ŒìŠ¤ ì–¸ì–´ ê°’ì´ ì°¸ì¡°ë¡œ í‘œì‹œë©ë‹ˆë‹¤. ì—¬ê¸°ì—ì„œë§Œ ë³¼ ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForHeadingClear()
 	{
-		return "값 지우기";
+		return "ê°’ ì§€ìš°ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureLocalization()
 	{
-		return "로컬리제이션 구성";
+		return "ë¡œì»¬ë¦¬ì œì´ì…˜ êµ¬ì„±";
 	}
 
 	protected override string _GetTemplateForHeadingGameNameDescriptionTranslations()
 	{
-		return "게임 이름 및 설명 번역";
+		return "ê²Œìž„ ì´ë¦„ ë° ì„¤ëª… ë²ˆì—­";
 	}
 
 	protected override string _GetTemplateForHeadingSave()
 	{
-		return "저장하지 않은 변경 사항";
+		return "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "설명:";
+		return "ì„¤ëª…:";
 	}
 
 	protected override string _GetTemplateForLabelGameDescriptionPlaceholder()
 	{
-		return "여기에 게임 설명 입력";
+		return "ì—¬ê¸°ì— ê²Œìž„ ì„¤ëª… ìž…ë ¥";
 	}
 
 	protected override string _GetTemplateForLabelGameInfo()
 	{
-		return "게임 정보";
+		return "ê²Œìž„ ì •ë³´";
 	}
 
 	protected override string _GetTemplateForLabelGameNameDescriptionTranslations()
 	{
-		return "게임 이름 및 설명 번역";
+		return "ê²Œìž„ ì´ë¦„ ë° ì„¤ëª… ë²ˆì—­";
 	}
 
 	protected override string _GetTemplateForLabelGameNamePlaceholder()
 	{
-		return "여기에 게임 이름을 입력하세요(필수)";
+		return "ì—¬ê¸°ì— ê²Œìž„ ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”(í•„ìˆ˜)";
 	}
 
 	protected override string _GetTemplateForLabelGameTitlePlaceholder()
 	{
-		return "여기에 게임 이름 입력";
+		return "ì—¬ê¸°ì— ê²Œìž„ ì´ë¦„ ìž…ë ¥";
 	}
 
 	protected override string _GetTemplateForLabelLocalization()
 	{
-		return "로컬리제이션";
+		return "ë¡œì»¬ë¦¬ì œì´ì…˜";
 	}
 
 	protected override string _GetTemplateForLabelName()
 	{
-		return "이름: ";
+		return "ì´ë¦„: ";
 	}
 
 	protected override string _GetTemplateForLabelSupportedLanguages()
 	{
-		return "지원 언어";
+		return "ì§€ì› ì–¸ì–´";
 	}
 
 	protected override string _GetTemplateForLabelTabGameInfo()
 	{
-		return "게임 정보";
+		return "ê²Œìž„ ì •ë³´";
 	}
 
 	protected override string _GetTemplateForLabelTabLanguages()
 	{
-		return "언어";
+		return "ì–¸ì–´";
 	}
 
 	protected override string _GetTemplateForLabelTabReports()
 	{
-		return "신고";
+		return "ì‹ ê³ ";
 	}
 
 	protected override string _GetTemplateForLabelTabSettings()
 	{
-		return "설정";
+		return "ì„¤ì •";
 	}
 
 	protected override string _GetTemplateForLabelTabTranslators()
 	{
-		return "번역자";
+		return "ë²ˆì—­ìž";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
 	{
-		return "제목";
+		return "ì œëª©";
 	}
 
 	protected override string _GetTemplateForResponseContentModerationError()
 	{
-		return "오류: 저장 실패. 콘텐츠에 문제의 소지가 있는지 확인하고 다시 시도하세요.";
+		return "ì˜¤ë¥˜: ì €ìž¥ ì‹¤íŒ¨. ì½˜í…ì¸ ì— ë¬¸ì œì˜ ì†Œì§€ê°€ ìžˆëŠ”ì§€ í™•ì¸í•˜ê³  ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "오류: 오류가 발생했어요. 나중에 다시 시도하세요.";
+		return "ì˜¤ë¥˜: ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseGeneralSaveError()
 	{
-		return "오류: 저장 실패.";
+		return "ì˜¤ë¥˜: ì €ìž¥ ì‹¤íŒ¨.";
 	}
+}
+
+
 }

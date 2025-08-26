@@ -1,11 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using Newtonsoft.Json.Linq;
+namespace Roblox.Platform.RealTimeNotifications.Client {
+    [DataContract]
 
-namespace Roblox.RealTimeNotifications.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 internal class MultiPublishUserNotificationRequest
 {
@@ -20,4 +19,7 @@ internal class MultiPublishUserNotificationRequest
 
 	[DataMember(Name = "isIncrementSequenceNumberEnabled")]
 	public bool? IsIncrementSequenceNumberEnabled { get; set; }
+}
+
+
 }

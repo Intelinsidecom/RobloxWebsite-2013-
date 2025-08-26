@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class CrowdSourcedTranslationResourceFactory
 
-internal static class CrowdSourcedTranslationResourceFactory
 {
 	public const string FullNamespace = "Feature.CrowdSourcedTranslation";
 
@@ -21,4 +21,7 @@ internal static class CrowdSourcedTranslationResourceFactory
 			_ => new CrowdSourcedTranslationResources_en_us(state), 
 		};
 	}
+}
+
+
 }

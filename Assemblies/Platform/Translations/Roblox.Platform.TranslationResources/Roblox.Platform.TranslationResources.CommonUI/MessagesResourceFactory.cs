@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUIinternal {
+    static class MessagesResourceFactory
 
-internal static class MessagesResourceFactory
 {
 	public const string FullNamespace = "CommonUI.Messages";
 
@@ -27,4 +27,7 @@ internal static class MessagesResourceFactory
 			_ => new MessagesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

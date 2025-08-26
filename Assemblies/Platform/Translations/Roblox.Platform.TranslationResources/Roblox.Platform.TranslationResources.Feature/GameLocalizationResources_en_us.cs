@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameLocalizationResources_en_us : TranslationResourcesBase, IGameLocalizationResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameLocalizationResources_en_us : TranslationResourcesBase, IGameLocalizationResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -550,4 +549,7 @@ internal class GameLocalizationResources_en_us : TranslationResourcesBase, IGame
 	{
 		return "Error: Could not save.";
 	}
+}
+
+
 }

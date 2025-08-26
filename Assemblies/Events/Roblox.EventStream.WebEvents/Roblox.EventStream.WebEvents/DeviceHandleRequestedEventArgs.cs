@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class DeviceHandleRequestedEventArgs : WebEventArgs
 
-public class DeviceHandleRequestedEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// Url of the action for which the device handle was evaluated.
@@ -42,3 +43,12 @@ public class DeviceHandleRequestedEventArgs : WebEventArgs
 	/// </summary>
 	public bool Failed { get; set; }
 }
+
+
+}
+
+
+
+
+
+

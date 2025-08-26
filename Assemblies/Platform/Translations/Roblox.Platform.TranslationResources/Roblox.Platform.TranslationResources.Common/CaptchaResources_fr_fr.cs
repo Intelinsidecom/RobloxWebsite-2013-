@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CaptchaResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,21 +11,21 @@ internal class CaptchaResources_fr_fr : CaptchaResources_en_us, ICaptchaResource
 	/// Displayed when we fail to load captcha javascript from a third party provider. This has been known to occur in FireFox when "block trackers" is enabled - we need to let the user know that it might be due to their browser without implying that we are intentionally forcing them to turn off their ad/content blockers.
 	/// English String: "We need to verify that you are human. Please disable your browser blocker or try a different browser."
 	/// </summary>
-	public override string ResponseCaptchaErrorFailedToLoad => "Nous devons vérifier que vous n'êtes pas un robot. Veuillez désactiver le bloqueur de votre navigateur ou essayer un autre navigateur.";
+	public override string ResponseCaptchaErrorFailedToLoad => "Nous devons vÃ©rifier que vous n'Ãªtes pas un robot. Veuillez dÃ©sactiver le bloqueur de votre navigateur ou essayer un autre navigateur.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaErrorFailedToVerify"
 	/// Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.
 	/// English String: "Temporary error. Please try again in a few minutes."
 	/// </summary>
-	public override string ResponseCaptchaErrorFailedToVerify => "Erreur temporaire. Veuillez réessayer dans quelques minutes.";
+	public override string ResponseCaptchaErrorFailedToVerify => "Erreur temporaire. Veuillez rÃ©essayer dans quelques minutes.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaErrorVerifyFailed"
 	/// Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.
 	/// English String: "Temporary error. Please try again in a few minutes"
 	/// </summary>
-	public override string ResponseCaptchaErrorVerifyFailed => "Erreur temporaire. Veuillez réessayer dans quelques minutes.";
+	public override string ResponseCaptchaErrorVerifyFailed => "Erreur temporaire. Veuillez rÃ©essayer dans quelques minutes.";
 
 	public CaptchaResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -34,16 +34,19 @@ internal class CaptchaResources_fr_fr : CaptchaResources_en_us, ICaptchaResource
 
 	protected override string _GetTemplateForResponseCaptchaErrorFailedToLoad()
 	{
-		return "Nous devons vérifier que vous n'êtes pas un robot. Veuillez désactiver le bloqueur de votre navigateur ou essayer un autre navigateur.";
+		return "Nous devons vÃ©rifier que vous n'Ãªtes pas un robot. Veuillez dÃ©sactiver le bloqueur de votre navigateur ou essayer un autre navigateur.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaErrorFailedToVerify()
 	{
-		return "Erreur temporaire. Veuillez réessayer dans quelques minutes.";
+		return "Erreur temporaire. Veuillez rÃ©essayer dans quelques minutes.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaErrorVerifyFailed()
 	{
-		return "Erreur temporaire. Veuillez réessayer dans quelques minutes.";
+		return "Erreur temporaire. Veuillez rÃ©essayer dans quelques minutes.";
 	}
+}
+
+
 }

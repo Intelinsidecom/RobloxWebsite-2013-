@@ -1,4 +1,4 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
@@ -6,10 +6,9 @@ using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accounts {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Accounts;
-
-[ExcludeFromCodeCoverage]
 public class AccountLocalizationFactory
 {
 	private readonly IAccountLocaleEntityFactory _AccountLocaleEntityFactory;
@@ -76,4 +75,7 @@ public class AccountLocalizationFactory
 	{
 		return new AccountLocaleBuilder(_AccountLocaleEntityFactory, _SupportedLocaleAndLanguageMapper, _AccountLocaleFloodCheckerFactory, _Settings, _AccountLocaleAuditBuilder, _AccountLocalesAuditParameterValidator, _CoreLocalizationBuilder, _Logger);
 	}
+}
+
+
 }

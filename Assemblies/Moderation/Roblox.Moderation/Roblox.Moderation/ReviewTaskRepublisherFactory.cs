@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderationinternal {
+    class ReviewTaskRepublisherFactory : IReviewTaskRepublisherFactory
 
-namespace Roblox.Platform.Moderation;
-
-internal class ReviewTaskRepublisherFactory : IReviewTaskRepublisherFactory
 {
 	private readonly Func<int> _GetMaximumNumberOfOpenTasksToRepublish;
 
@@ -39,4 +38,7 @@ internal class ReviewTaskRepublisherFactory : IReviewTaskRepublisherFactory
 		}
 		return new ReviewTaskRepublisher<TTask>(_Logger, reviewTaskFactory, _ModerationLocaleFactory, reviewTaskPublisher, new ReviewTaskRepublisherPerformanceCounters(_CounterRegistry, taskType), priority, localeIdentifier, _GetMaximumNumberOfOpenTasksToRepublish);
 	}
+}
+
+
 }

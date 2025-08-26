@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class PlaceThumbnailsResourceFactory
 
-internal static class PlaceThumbnailsResourceFactory
 {
 	public const string FullNamespace = "Feature.PlaceThumbnails";
 
@@ -21,4 +21,7 @@ internal static class PlaceThumbnailsResourceFactory
 			_ => new PlaceThumbnailsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

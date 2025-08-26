@@ -1,10 +1,11 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class PlaySessionEvent : WebEventBase
 
-public class PlaySessionEvent : WebEventBase
 {
 	private const string _Name = "playSession";
 
-	public PlaySessionEvent(EventStreamer streamer, PlaySessionEventArgs args)
+	public PlaySessionEvent(IEventStreamer streamer, PlaySessionEventArgs args)
 		: base(streamer, "playSession", args)
 	{
 		AddEventArg("pid", args.PlaceId.ToString());
@@ -22,3 +23,12 @@ public class PlaySessionEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

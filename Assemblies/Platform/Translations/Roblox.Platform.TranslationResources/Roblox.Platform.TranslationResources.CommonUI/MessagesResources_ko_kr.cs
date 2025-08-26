@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,51 +11,51 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// button title
 	/// English String: "Go to the Previous Page"
 	/// </summary>
-	public override string ActionPreviousPage => "이전 페이지로 이동";
+	public override string ActionPreviousPage => "ì´ì „ íŽ˜ì´ì§€ë¡œ ì´ë™";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button title
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "홈으로 돌아가기";
+	public override string ActionReturnHome => "í™ˆìœ¼ë¡œ ëŒì•„ê°€ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "오류";
+	public override string LabelError => "ì˜¤ë¥˜";
 
 	/// <summary>
 	/// Key: "Label.ErrorImage"
 	/// alternate text shown for error image
 	/// English String: "Error Image"
 	/// </summary>
-	public override string LabelErrorImage => "오류 이미지";
+	public override string LabelErrorImage => "ì˜¤ë¥˜ ì´ë¯¸ì§€";
 
 	/// <summary>
 	/// Key: "Label.TooManyCharacters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyCharacters => "글자 수가 너무 많아요!";
+	public override string LabelTooManyCharacters => "ê¸€ìž ìˆ˜ê°€ ë„ˆë¬´ ë§Žì•„ìš”!";
 
 	/// <summary>
 	/// Key: "Message.AlwaysAllowed"
 	/// English String: "Always allowed"
 	/// </summary>
-	public override string MessageAlwaysAllowed => "항상 허용";
+	public override string MessageAlwaysAllowed => "í•­ìƒ í—ˆìš©";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookies"
 	/// English String: "Analytics Cookies"
 	/// </summary>
-	public override string MessageAnalyiticsCookies => "분석 쿠키";
+	public override string MessageAnalyiticsCookies => "ë¶„ì„ ì¿ í‚¤";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesDescription"
 	/// English String: "These cookies used for improving site performance or understanding site usage."
 	/// </summary>
-	public override string MessageAnalyiticsCookiesDescription => "본 쿠키는 사이트 성능을 개선하거나 사이트 사용 정보를 파악하는 데 이용됩니다.";
+	public override string MessageAnalyiticsCookiesDescription => "ë³¸ ì¿ í‚¤ëŠ” ì‚¬ì´íŠ¸ ì„±ëŠ¥ì„ ê°œì„ í•˜ê±°ë‚˜ ì‚¬ì´íŠ¸ ì‚¬ìš© ì •ë³´ë¥¼ íŒŒì•…í•˜ëŠ” ë° ì´ìš©ë©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem1"
@@ -73,13 +73,13 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.EssentialCookies"
 	/// English String: "Essential Cookies"
 	/// </summary>
-	public override string MessageEssentialCookies => "필수 쿠키";
+	public override string MessageEssentialCookies => "í•„ìˆ˜ ì¿ í‚¤";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "쿠키는 사용자 인증, 시스템 보안 또는 쿠키 환경 설정 저장 등의 기능을 사이트에 제공하기 위해 필요합니다.";
+	public override string MessageEssentialCookiesDescription => "ì¿ í‚¤ëŠ” ì‚¬ìš©ìž ì¸ì¦, ì‹œìŠ¤í…œ ë³´ì•ˆ ë˜ëŠ” ì¿ í‚¤ í™˜ê²½ ì„¤ì • ì €ìž¥ ë“±ì˜ ê¸°ëŠ¥ì„ ì‚¬ì´íŠ¸ì— ì œê³µí•˜ê¸° ìœ„í•´ í•„ìš”í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -97,7 +97,7 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.ManageCookies"
 	/// English String: "Manage Cookies"
 	/// </summary>
-	public override string MessageManageCookies => "쿠키 관리";
+	public override string MessageManageCookies => "ì¿ í‚¤ ê´€ë¦¬";
 
 	/// <summary>
 	/// Key: "MessageEssentialCookiesItem3"
@@ -110,83 +110,83 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// 403 error message
 	/// English String: "Access Denied"
 	/// </summary>
-	public override string ResponseAccessDenied => "접근 거부됨";
+	public override string ResponseAccessDenied => "ì ‘ê·¼ ê±°ë¶€ë¨";
 
 	/// <summary>
 	/// Key: "Response.AccessDeniedDescription"
 	/// 403 error message detail
 	/// English String: "You don't have permission to view this page"
 	/// </summary>
-	public override string ResponseAccessDeniedDescription => "이 페이지를 볼 수 있는 권한이 없습니다";
+	public override string ResponseAccessDeniedDescription => "ì´ íŽ˜ì´ì§€ë¥¼ ë³¼ ìˆ˜ ìžˆëŠ” ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.BadRequest"
 	/// 400 error message title
 	/// English String: "Bad Request"
 	/// </summary>
-	public override string ResponseBadRequest => "요청 실패";
+	public override string ResponseBadRequest => "ìš”ì²­ ì‹¤íŒ¨";
 
 	/// <summary>
 	/// Key: "Response.BadRequestDescription"
 	/// error message detail for 400 error
 	/// English String: "There was a problem with your request"
 	/// </summary>
-	public override string ResponseBadRequestDescription => "요청에 오류가 있습니다";
+	public override string ResponseBadRequestDescription => "ìš”ì²­ì— ì˜¤ë¥˜ê°€ ìžˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.InternalServerError"
 	/// 500 error message title
 	/// English String: "Internal Server Error"
 	/// </summary>
-	public override string ResponseInternalServerError => "내부 서버 오류";
+	public override string ResponseInternalServerError => "ë‚´ë¶€ ì„œë²„ ì˜¤ë¥˜";
 
 	/// <summary>
 	/// Key: "Response.InternalServerErrorDescription"
 	/// 500 error message description
 	/// English String: "An unexpected error occurred"
 	/// </summary>
-	public override string ResponseInternalServerErrorDescription => "예기치 못한 오류 발생";
+	public override string ResponseInternalServerErrorDescription => "ì˜ˆê¸°ì¹˜ ëª»í•œ ì˜¤ë¥˜ ë°œìƒ";
 
 	/// <summary>
 	/// Key: "Response.PageNotFound"
 	/// 404 error message title
 	/// English String: "Page Not found"
 	/// </summary>
-	public override string ResponsePageNotFound => "페이지를 찾을 수 없음";
+	public override string ResponsePageNotFound => "íŽ˜ì´ì§€ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŒ";
 
 	/// <summary>
 	/// Key: "Response.PageNotFoundDescrition"
 	/// 404 error message description
 	/// English String: "Page cannot be found or no longer exists"
 	/// </summary>
-	public override string ResponsePageNotFoundDescrition => "페이지를 찾을 수 없거나 존재하지 않습니다";
+	public override string ResponsePageNotFoundDescrition => "íŽ˜ì´ì§€ë¥¼ ì°¾ì„ ìˆ˜ ì—†ê±°ë‚˜ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.RequestError"
 	/// error message for incorrect request
 	/// English String: "Error with your request"
 	/// </summary>
-	public override string ResponseRequestError => "요청 관련 오류";
+	public override string ResponseRequestError => "ìš”ì²­ ê´€ë ¨ ì˜¤ë¥˜";
 
 	/// <summary>
 	/// Key: "Response.SomethingWentWrong"
 	/// default error message
 	/// English String: "Something went wrong"
 	/// </summary>
-	public override string ResponseSomethingWentWrong => "오류가 발생했어요";
+	public override string ResponseSomethingWentWrong => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsText"
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttemptsText => "시도 가능 횟수를 초과했습니다";
+	public override string ResponseTooManyAttemptsText => "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Response.UnexpectedError"
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "예기치 못한 오류가 발생했어요. 나중에 다시 시도하세요.";
+	public override string ResponseUnexpectedError => "ì˜ˆê¸°ì¹˜ ëª»í•œ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	public MessagesResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -195,12 +195,12 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionPreviousPage()
 	{
-		return "이전 페이지로 이동";
+		return "ì´ì „ íŽ˜ì´ì§€ë¡œ ì´ë™";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "홈으로 돌아가기";
+		return "í™ˆìœ¼ë¡œ ëŒì•„ê°€ê¸°";
 	}
 
 	/// <summary>
@@ -210,12 +210,12 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox는 맞춤형 콘텐츠, 소셜 미디어 기능 제공 및 사이트 트래픽을 분석을 위해 쿠키를 사용합니다. Roblox의 쿠키 사용 방법 및 {startLink}쿠키 환경설정 관리{endLink} 방법에 대한 상세 정보는 {startLink2}개인정보 및 쿠키 정책{endLink2}을 참고하세요.";
+		return $"RobloxëŠ” ë§žì¶¤í˜• ì½˜í…ì¸ , ì†Œì…œ ë¯¸ë””ì–´ ê¸°ëŠ¥ ì œê³µ ë° ì‚¬ì´íŠ¸ íŠ¸ëž˜í”½ì„ ë¶„ì„ì„ ìœ„í•´ ì¿ í‚¤ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤. Robloxì˜ ì¿ í‚¤ ì‚¬ìš© ë°©ë²• ë° {startLink}ì¿ í‚¤ í™˜ê²½ì„¤ì • ê´€ë¦¬{endLink} ë°©ë²•ì— ëŒ€í•œ ìƒì„¸ ì •ë³´ëŠ” {startLink2}ê°œì¸ì •ë³´ ë° ì¿ í‚¤ ì •ì±…{endLink2}ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Roblox는 맞춤형 콘텐츠, 소셜 미디어 기능 제공 및 사이트 트래픽을 분석을 위해 쿠키를 사용합니다. Roblox의 쿠키 사용 방법 및 {startLink}쿠키 환경설정 관리{endLink} 방법에 대한 상세 정보는 {startLink2}개인정보 및 쿠키 정책{endLink2}을 참고하세요.";
+		return "RobloxëŠ” ë§žì¶¤í˜• ì½˜í…ì¸ , ì†Œì…œ ë¯¸ë””ì–´ ê¸°ëŠ¥ ì œê³µ ë° ì‚¬ì´íŠ¸ íŠ¸ëž˜í”½ì„ ë¶„ì„ì„ ìœ„í•´ ì¿ í‚¤ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤. Robloxì˜ ì¿ í‚¤ ì‚¬ìš© ë°©ë²• ë° {startLink}ì¿ í‚¤ í™˜ê²½ì„¤ì • ê´€ë¦¬{endLink} ë°©ë²•ì— ëŒ€í•œ ìƒì„¸ ì •ë³´ëŠ” {startLink2}ê°œì¸ì •ë³´ ë° ì¿ í‚¤ ì •ì±…{endLink2}ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -225,42 +225,42 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string DescriptionContactCustomerService(string emailLink)
 	{
-		return $"이 페이지가 계속해서 나타나는 경우 {emailLink}을(를) 통해 문의하세요";
+		return $"ì´ íŽ˜ì´ì§€ê°€ ê³„ì†í•´ì„œ ë‚˜íƒ€ë‚˜ëŠ” ê²½ìš° {emailLink}ì„(ë¥¼) í†µí•´ ë¬¸ì˜í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForDescriptionContactCustomerService()
 	{
-		return "이 페이지가 계속해서 나타나는 경우 {emailLink}을(를) 통해 문의하세요";
+		return "ì´ íŽ˜ì´ì§€ê°€ ê³„ì†í•´ì„œ ë‚˜íƒ€ë‚˜ëŠ” ê²½ìš° {emailLink}ì„(ë¥¼) í†µí•´ ë¬¸ì˜í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "오류";
+		return "ì˜¤ë¥˜";
 	}
 
 	protected override string _GetTemplateForLabelErrorImage()
 	{
-		return "오류 이미지";
+		return "ì˜¤ë¥˜ ì´ë¯¸ì§€";
 	}
 
 	protected override string _GetTemplateForLabelTooManyCharacters()
 	{
-		return "글자 수가 너무 많아요!";
+		return "ê¸€ìž ìˆ˜ê°€ ë„ˆë¬´ ë§Žì•„ìš”!";
 	}
 
 	protected override string _GetTemplateForMessageAlwaysAllowed()
 	{
-		return "항상 허용";
+		return "í•­ìƒ í—ˆìš©";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookies()
 	{
-		return "분석 쿠키";
+		return "ë¶„ì„ ì¿ í‚¤";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesDescription()
 	{
-		return "본 쿠키는 사이트 성능을 개선하거나 사이트 사용 정보를 파악하는 데 이용됩니다.";
+		return "ë³¸ ì¿ í‚¤ëŠ” ì‚¬ì´íŠ¸ ì„±ëŠ¥ì„ ê°œì„ í•˜ê±°ë‚˜ ì‚¬ì´íŠ¸ ì‚¬ìš© ì •ë³´ë¥¼ íŒŒì•…í•˜ëŠ” ë° ì´ìš©ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem1()
@@ -280,12 +280,12 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNotice(string startLink, string endLink)
 	{
-		return $"Roblox는 더 나은 환경을 제공하기 위해 쿠키를 사용합니다. Roblox에서의 쿠키 사용 동의 취소 방법 및 쿠키 사용 관리 방법에 대한 자세한 정보는 {startLink}개인정보 및 쿠키 정책{endLink}을 확인하세요.";
+		return $"RobloxëŠ” ë” ë‚˜ì€ í™˜ê²½ì„ ì œê³µí•˜ê¸° ìœ„í•´ ì¿ í‚¤ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤. Robloxì—ì„œì˜ ì¿ í‚¤ ì‚¬ìš© ë™ì˜ ì·¨ì†Œ ë°©ë²• ë° ì¿ í‚¤ ì‚¬ìš© ê´€ë¦¬ ë°©ë²•ì— ëŒ€í•œ ìžì„¸í•œ ì •ë³´ëŠ” {startLink}ê°œì¸ì •ë³´ ë° ì¿ í‚¤ ì •ì±…{endLink}ì„ í™•ì¸í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNotice()
 	{
-		return "Roblox는 더 나은 환경을 제공하기 위해 쿠키를 사용합니다. Roblox에서의 쿠키 사용 동의 취소 방법 및 쿠키 사용 관리 방법에 대한 자세한 정보는 {startLink}개인정보 및 쿠키 정책{endLink}을 확인하세요.";
+		return "RobloxëŠ” ë” ë‚˜ì€ í™˜ê²½ì„ ì œê³µí•˜ê¸° ìœ„í•´ ì¿ í‚¤ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤. Robloxì—ì„œì˜ ì¿ í‚¤ ì‚¬ìš© ë™ì˜ ì·¨ì†Œ ë°©ë²• ë° ì¿ í‚¤ ì‚¬ìš© ê´€ë¦¬ ë°©ë²•ì— ëŒ€í•œ ìžì„¸í•œ ì •ë³´ëŠ” {startLink}ê°œì¸ì •ë³´ ë° ì¿ í‚¤ ì •ì±…{endLink}ì„ í™•ì¸í•˜ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -294,12 +294,12 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox는 맞춤형 콘텐츠, 소셜 미디어 기능 제공 및 사이트 트래픽 분석을 위해 쿠키를 사용합니다. Roblox의 쿠키 사용 방법 및 {startLink}쿠키 환경설정 관리{endLink} 방법에 대한 상세 정보는 {startLink2}개인정보 및 쿠키 정책{endLink2}을 참고하세요.";
+		return $"RobloxëŠ” ë§žì¶¤í˜• ì½˜í…ì¸ , ì†Œì…œ ë¯¸ë””ì–´ ê¸°ëŠ¥ ì œê³µ ë° ì‚¬ì´íŠ¸ íŠ¸ëž˜í”½ ë¶„ì„ì„ ìœ„í•´ ì¿ í‚¤ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤. Robloxì˜ ì¿ í‚¤ ì‚¬ìš© ë°©ë²• ë° {startLink}ì¿ í‚¤ í™˜ê²½ì„¤ì • ê´€ë¦¬{endLink} ë°©ë²•ì— ëŒ€í•œ ìƒì„¸ ì •ë³´ëŠ” {startLink2}ê°œì¸ì •ë³´ ë° ì¿ í‚¤ ì •ì±…{endLink2}ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Roblox는 맞춤형 콘텐츠, 소셜 미디어 기능 제공 및 사이트 트래픽 분석을 위해 쿠키를 사용합니다. Roblox의 쿠키 사용 방법 및 {startLink}쿠키 환경설정 관리{endLink} 방법에 대한 상세 정보는 {startLink2}개인정보 및 쿠키 정책{endLink2}을 참고하세요.";
+		return "RobloxëŠ” ë§žì¶¤í˜• ì½˜í…ì¸ , ì†Œì…œ ë¯¸ë””ì–´ ê¸°ëŠ¥ ì œê³µ ë° ì‚¬ì´íŠ¸ íŠ¸ëž˜í”½ ë¶„ì„ì„ ìœ„í•´ ì¿ í‚¤ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤. Robloxì˜ ì¿ í‚¤ ì‚¬ìš© ë°©ë²• ë° {startLink}ì¿ í‚¤ í™˜ê²½ì„¤ì • ê´€ë¦¬{endLink} ë°©ë²•ì— ëŒ€í•œ ìƒì„¸ ì •ë³´ëŠ” {startLink2}ê°œì¸ì •ë³´ ë° ì¿ í‚¤ ì •ì±…{endLink2}ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -308,22 +308,22 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieModalText(string startLink, string endLink)
 	{
-		return $"아래 설명에 따른 본 사이트의 쿠키 사용 여부를 선택하세요. 본 사이트의 쿠키 사용 방법과 관련 기술에 대한 상세 정보는 {startLink}개인정보 처리방침{endLink}을 참고하세요.";
+		return $"ì•„ëž˜ ì„¤ëª…ì— ë”°ë¥¸ ë³¸ ì‚¬ì´íŠ¸ì˜ ì¿ í‚¤ ì‚¬ìš© ì—¬ë¶€ë¥¼ ì„ íƒí•˜ì„¸ìš”. ë³¸ ì‚¬ì´íŠ¸ì˜ ì¿ í‚¤ ì‚¬ìš© ë°©ë²•ê³¼ ê´€ë ¨ ê¸°ìˆ ì— ëŒ€í•œ ìƒì„¸ ì •ë³´ëŠ” {startLink}ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨{endLink}ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageCookieModalText()
 	{
-		return "아래 설명에 따른 본 사이트의 쿠키 사용 여부를 선택하세요. 본 사이트의 쿠키 사용 방법과 관련 기술에 대한 상세 정보는 {startLink}개인정보 처리방침{endLink}을 참고하세요.";
+		return "ì•„ëž˜ ì„¤ëª…ì— ë”°ë¥¸ ë³¸ ì‚¬ì´íŠ¸ì˜ ì¿ í‚¤ ì‚¬ìš© ì—¬ë¶€ë¥¼ ì„ íƒí•˜ì„¸ìš”. ë³¸ ì‚¬ì´íŠ¸ì˜ ì¿ í‚¤ ì‚¬ìš© ë°©ë²•ê³¼ ê´€ë ¨ ê¸°ìˆ ì— ëŒ€í•œ ìƒì„¸ ì •ë³´ëŠ” {startLink}ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨{endLink}ì„ ì°¸ê³ í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookies()
 	{
-		return "필수 쿠키";
+		return "í•„ìˆ˜ ì¿ í‚¤";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "쿠키는 사용자 인증, 시스템 보안 또는 쿠키 환경 설정 저장 등의 기능을 사이트에 제공하기 위해 필요합니다.";
+		return "ì¿ í‚¤ëŠ” ì‚¬ìš©ìž ì¸ì¦, ì‹œìŠ¤í…œ ë³´ì•ˆ ë˜ëŠ” ì¿ í‚¤ í™˜ê²½ ì„¤ì • ì €ìž¥ ë“±ì˜ ê¸°ëŠ¥ì„ ì‚¬ì´íŠ¸ì— ì œê³µí•˜ê¸° ìœ„í•´ í•„ìš”í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -338,7 +338,7 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageManageCookies()
 	{
-		return "쿠키 관리";
+		return "ì¿ í‚¤ ê´€ë¦¬";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem3()
@@ -348,61 +348,64 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "접근 거부됨";
+		return "ì ‘ê·¼ ê±°ë¶€ë¨";
 	}
 
 	protected override string _GetTemplateForResponseAccessDeniedDescription()
 	{
-		return "이 페이지를 볼 수 있는 권한이 없습니다";
+		return "ì´ íŽ˜ì´ì§€ë¥¼ ë³¼ ìˆ˜ ìžˆëŠ” ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseBadRequest()
 	{
-		return "요청 실패";
+		return "ìš”ì²­ ì‹¤íŒ¨";
 	}
 
 	protected override string _GetTemplateForResponseBadRequestDescription()
 	{
-		return "요청에 오류가 있습니다";
+		return "ìš”ì²­ì— ì˜¤ë¥˜ê°€ ìžˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerError()
 	{
-		return "내부 서버 오류";
+		return "ë‚´ë¶€ ì„œë²„ ì˜¤ë¥˜";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerErrorDescription()
 	{
-		return "예기치 못한 오류 발생";
+		return "ì˜ˆê¸°ì¹˜ ëª»í•œ ì˜¤ë¥˜ ë°œìƒ";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFound()
 	{
-		return "페이지를 찾을 수 없음";
+		return "íŽ˜ì´ì§€ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŒ";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFoundDescrition()
 	{
-		return "페이지를 찾을 수 없거나 존재하지 않습니다";
+		return "íŽ˜ì´ì§€ë¥¼ ì°¾ì„ ìˆ˜ ì—†ê±°ë‚˜ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseRequestError()
 	{
-		return "요청 관련 오류";
+		return "ìš”ì²­ ê´€ë ¨ ì˜¤ë¥˜";
 	}
 
 	protected override string _GetTemplateForResponseSomethingWentWrong()
 	{
-		return "오류가 발생했어요";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsText()
 	{
-		return "시도 가능 횟수를 초과했습니다";
+		return "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "예기치 못한 오류가 발생했어요. 나중에 다시 시도하세요.";
+		return "ì˜ˆê¸°ì¹˜ ëª»í•œ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
+}
+
+
 }

@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class CountryChangedByUserEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class CountryChangedByUserEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The Id of the user's new country.
@@ -25,3 +25,12 @@ public class CountryChangedByUserEventArgs : WebEventArgs
 	/// </summary>
 	public DateTime EventTime { get; set; }
 }
+
+
+}
+
+
+
+
+
+

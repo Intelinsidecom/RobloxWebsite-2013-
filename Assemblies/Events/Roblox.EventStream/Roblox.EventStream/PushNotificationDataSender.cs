@@ -3,11 +3,10 @@ using System.Diagnostics.CodeAnalysis;
 using Newtonsoft.Json;
 using Roblox.Amazon.Firehose;
 using Roblox.EventLog;
-using Roblox.Platform.EventStream.Properties;
+using Roblox.EventStream.Properties;
+namespace Roblox.EventStream {
+    class PushNotificationDataSender : IPushNotificationDataSender
 
-namespace Roblox.Platform.EventStream;
-
-public class PushNotificationDataSender : IPushNotificationDataSender
 {
 	private readonly AmazonKinesisFirehoseBatchEventSender _AmazonKinesisFirehoseBatchEventSender;
 
@@ -23,7 +22,7 @@ public class PushNotificationDataSender : IPushNotificationDataSender
 		_AmazonKinesisFirehoseBatchEventSender = new AmazonKinesisFirehoseBatchEventSender(logger, Settings.Default.AmazonKinesisFirehoseAwsPushNotificationAccessKey, Settings.Default.AmazonKinesisFirehoseAwsPushNotificationAccessSecretKey, Settings.Default.AmazonKinesisFirehosePushNotificationStreamName, Settings.Default.AmazonKinesisFirehoseMaxBufferSizeOfRecord, Settings.Default.AmazonKinesisFirehoseMaxMessagesPerBatchRequest, Settings.Default.AmazonKinesisFirehoseMaxTimeoutPerMessage);
 	}
 
-	/// <inheritdoc cref="M:Roblox.Platform.EventStream.IPushNotificationDataSender.PublishData(Roblox.Platform.EventStream.IPushNotificationData)" />
+	/// <inheritdoc cref="M:Roblox.EventStream.IPushNotificationDataSender.PublishData(Roblox.EventStream.IPushNotificationData)" />
 	public void PublishData(IPushNotificationData pushNotificationData)
 	{
 		if (Settings.Default.IsStreamPushNotificationDataEnabled)
@@ -46,4 +45,7 @@ public class PushNotificationDataSender : IPushNotificationDataSender
 	{
 		_AmazonKinesisFirehoseBatchEventSender.EnqueueWork(data);
 	}
+}
+
+
 }

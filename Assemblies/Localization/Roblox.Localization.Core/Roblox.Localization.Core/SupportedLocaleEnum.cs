@@ -1,8 +1,7 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
+namespace Roblox.Localization.Core {
+    /// <summary>
 
-namespace Roblox.Platform.Localization.Core;
-
-/// <summary>
 /// Supported locales Enum. Locale Enum like en_us.
 /// </summary>
 public enum SupportedLocaleEnum
@@ -99,4 +98,7 @@ public enum SupportedLocaleEnum
 	sv_se,
 	[Description("zh_cjv")]
 	zh_cjv
+}
+
+
 }

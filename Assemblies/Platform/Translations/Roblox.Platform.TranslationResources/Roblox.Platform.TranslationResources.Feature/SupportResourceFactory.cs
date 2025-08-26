@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class SupportResourceFactory
 
-internal static class SupportResourceFactory
 {
 	public const string FullNamespace = "Feature.Support";
 
@@ -21,4 +21,7 @@ internal static class SupportResourceFactory
 			_ => new SupportResources_en_us(state), 
 		};
 	}
+}
+
+
 }

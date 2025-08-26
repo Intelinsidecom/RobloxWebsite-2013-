@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class AlertsAndOptionsResources_en_us : TranslationResourcesBase, IAlertsAndOptionsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class AlertsAndOptionsResources_en_us : TranslationResourcesBase, IAlertsAndOptionsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -101,7 +100,7 @@ internal class AlertsAndOptionsResources_en_us : TranslationResourcesBase, IAler
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue} Robux"
+	/// English String: "{robuxValue}Â Robux"
 	/// </summary>
 	public virtual string LabelsRobuxMessage(string robuxValue)
 	{
@@ -117,4 +116,7 @@ internal class AlertsAndOptionsResources_en_us : TranslationResourcesBase, IAler
 	{
 		return "Settings";
 	}
+}
+
+
 }

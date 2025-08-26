@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PresenceResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class PresenceResources_es_es : PresenceResources_en_us, IPresenceResou
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "Sin conexión";
+	public override string LabelOffline => "Sin conexiÃ³n";
 
 	/// <summary>
 	/// Key: "Label.Online"
@@ -56,7 +56,7 @@ internal class PresenceResources_es_es : PresenceResources_en_us, IPresenceResou
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "Sin conexión";
+		return "Sin conexiÃ³n";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
@@ -82,4 +82,7 @@ internal class PresenceResources_es_es : PresenceResources_en_us, IPresenceResou
 	{
 		return "Jugando a {placeName}";
 	}
+}
+
+
 }

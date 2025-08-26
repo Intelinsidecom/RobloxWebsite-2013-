@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class ReportAbuseResourceFactory
 
-internal static class ReportAbuseResourceFactory
 {
 	public const string FullNamespace = "Feature.ReportAbuse";
 
@@ -21,4 +21,7 @@ internal static class ReportAbuseResourceFactory
 			_ => new ReportAbuseResources_en_us(state), 
 		};
 	}
+}
+
+
 }

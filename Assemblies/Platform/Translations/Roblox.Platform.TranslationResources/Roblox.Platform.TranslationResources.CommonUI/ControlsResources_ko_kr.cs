@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,194 +10,194 @@ internal class ControlsResources_ko_kr : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "수락";
+	public override string ActionAccept => "ìˆ˜ë½";
 
 	/// <summary>
 	/// Key: "Action.Agree"
 	/// button label
 	/// English String: "Agree"
 	/// </summary>
-	public override string ActionAgree => "동의";
+	public override string ActionAgree => "ë™ì˜";
 
 	/// <summary>
 	/// Key: "Action.Allow"
 	/// Allow
 	/// English String: "Allow"
 	/// </summary>
-	public override string ActionAllow => "허용";
+	public override string ActionAllow => "í—ˆìš©";
 
 	/// <summary>
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "뒤로";
+	public override string ActionBack => "ë’¤ë¡œ";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "취소";
+	public override string ActionCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "확인";
+	public override string ActionConfirm => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "삭제";
+	public override string ActionDelete => "ì‚­ì œ";
 
 	/// <summary>
 	/// Key: "Action.Discard"
 	/// The button label of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "취소";
+	public override string ActionDiscard => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "아니요";
+	public override string ActionNo => "ì•„ë‹ˆìš”";
 
 	/// <summary>
 	/// Key: "Action.OK"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOK => "확인";
+	public override string ActionOK => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "저장";
+	public override string ActionSave => "ì €ìž¥";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "제출";
+	public override string ActionSubmit => "ì œì¶œ";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "예";
+	public override string ActionYes => "ì˜ˆ";
 
 	/// <summary>
 	/// Key: "Birthdaypicker.Label.Date"
 	/// English String: "Date"
 	/// </summary>
-	public override string BirthdaypickerLabelDate => "날짜";
+	public override string BirthdaypickerLabelDate => "ë‚ ì§œ";
 
 	/// <summary>
 	/// Key: "Label.April"
 	/// English String: "April"
 	/// </summary>
-	public override string LabelApril => "4월";
+	public override string LabelApril => "4ì›”";
 
 	/// <summary>
 	/// Key: "Label.August"
 	/// English String: "August"
 	/// </summary>
-	public override string LabelAugust => "8월";
+	public override string LabelAugust => "8ì›”";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// day of the month label
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "일";
+	public override string LabelDay => "ì¼";
 
 	/// <summary>
 	/// Key: "Label.December"
 	/// English String: "December"
 	/// </summary>
-	public override string LabelDecember => "12월";
+	public override string LabelDecember => "12ì›”";
 
 	/// <summary>
 	/// Key: "Label.February"
 	/// English String: "February"
 	/// </summary>
-	public override string LabelFebruary => "2월";
+	public override string LabelFebruary => "2ì›”";
 
 	/// <summary>
 	/// Key: "Label.January"
 	/// English String: "January"
 	/// </summary>
-	public override string LabelJanuary => "1월";
+	public override string LabelJanuary => "1ì›”";
 
 	/// <summary>
 	/// Key: "Label.July"
 	/// English String: "July"
 	/// </summary>
-	public override string LabelJuly => "7월";
+	public override string LabelJuly => "7ì›”";
 
 	/// <summary>
 	/// Key: "Label.June"
 	/// English String: "June"
 	/// </summary>
-	public override string LabelJune => "6월";
+	public override string LabelJune => "6ì›”";
 
 	/// <summary>
 	/// Key: "Label.March"
 	/// English String: "March"
 	/// </summary>
-	public override string LabelMarch => "3월";
+	public override string LabelMarch => "3ì›”";
 
 	/// <summary>
 	/// Key: "Label.May"
 	/// English String: "May"
 	/// </summary>
-	public override string LabelMay => "5월";
+	public override string LabelMay => "5ì›”";
 
 	/// <summary>
 	/// Key: "Label.Month"
 	/// Month
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "월";
+	public override string LabelMonth => "ì›”";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "다음";
+	public override string LabelNext => "ë‹¤ìŒ";
 
 	/// <summary>
 	/// Key: "Label.November"
 	/// English String: "November"
 	/// </summary>
-	public override string LabelNovember => "11월";
+	public override string LabelNovember => "11ì›”";
 
 	/// <summary>
 	/// Key: "Label.October"
 	/// English String: "October"
 	/// </summary>
-	public override string LabelOctober => "10월";
+	public override string LabelOctober => "10ì›”";
 
 	/// <summary>
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "이전";
+	public override string LabelPrevious => "ì´ì „";
 
 	/// <summary>
 	/// Key: "Label.September"
 	/// English String: "September"
 	/// </summary>
-	public override string LabelSeptember => "9월";
+	public override string LabelSeptember => "9ì›”";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// Year
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "년";
+	public override string LabelYear => "ë…„";
 
 	public ControlsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -206,82 +206,82 @@ internal class ControlsResources_ko_kr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "수락";
+		return "ìˆ˜ë½";
 	}
 
 	protected override string _GetTemplateForActionAgree()
 	{
-		return "동의";
+		return "ë™ì˜";
 	}
 
 	protected override string _GetTemplateForActionAllow()
 	{
-		return "허용";
+		return "í—ˆìš©";
 	}
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "뒤로";
+		return "ë’¤ë¡œ";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "삭제";
+		return "ì‚­ì œ";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "아니요";
+		return "ì•„ë‹ˆìš”";
 	}
 
 	protected override string _GetTemplateForActionOK()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "저장";
+		return "ì €ìž¥";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "제출";
+		return "ì œì¶œ";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "예";
+		return "ì˜ˆ";
 	}
 
 	protected override string _GetTemplateForBirthdaypickerLabelDate()
 	{
-		return "날짜";
+		return "ë‚ ì§œ";
 	}
 
 	protected override string _GetTemplateForLabelApril()
 	{
-		return "4월";
+		return "4ì›”";
 	}
 
 	protected override string _GetTemplateForLabelAugust()
 	{
-		return "8월";
+		return "8ì›”";
 	}
 
 	/// <summary>
@@ -291,86 +291,89 @@ internal class ControlsResources_ko_kr : ControlsResources_en_us, IControlsResou
 	/// </summary>
 	public override string LabelCurrentPage(string currentPage)
 	{
-		return $"{currentPage}페이지";
+		return $"{currentPage}íŽ˜ì´ì§€";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPage()
 	{
-		return "{currentPage}페이지";
+		return "{currentPage}íŽ˜ì´ì§€";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "일";
+		return "ì¼";
 	}
 
 	protected override string _GetTemplateForLabelDecember()
 	{
-		return "12월";
+		return "12ì›”";
 	}
 
 	protected override string _GetTemplateForLabelFebruary()
 	{
-		return "2월";
+		return "2ì›”";
 	}
 
 	protected override string _GetTemplateForLabelJanuary()
 	{
-		return "1월";
+		return "1ì›”";
 	}
 
 	protected override string _GetTemplateForLabelJuly()
 	{
-		return "7월";
+		return "7ì›”";
 	}
 
 	protected override string _GetTemplateForLabelJune()
 	{
-		return "6월";
+		return "6ì›”";
 	}
 
 	protected override string _GetTemplateForLabelMarch()
 	{
-		return "3월";
+		return "3ì›”";
 	}
 
 	protected override string _GetTemplateForLabelMay()
 	{
-		return "5월";
+		return "5ì›”";
 	}
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "월";
+		return "ì›”";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "다음";
+		return "ë‹¤ìŒ";
 	}
 
 	protected override string _GetTemplateForLabelNovember()
 	{
-		return "11월";
+		return "11ì›”";
 	}
 
 	protected override string _GetTemplateForLabelOctober()
 	{
-		return "10월";
+		return "10ì›”";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "이전";
+		return "ì´ì „";
 	}
 
 	protected override string _GetTemplateForLabelSeptember()
 	{
-		return "9월";
+		return "9ì›”";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "년";
+		return "ë…„";
 	}
+}
+
+
 }

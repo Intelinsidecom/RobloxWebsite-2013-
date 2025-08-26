@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RobloxCreditResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -28,19 +28,19 @@ internal class RobloxCreditResources_es_es : RobloxCreditResources_en_us, IRoblo
 	/// Key: "Heading.RobloxCredit"
 	/// English String: "Roblox credit"
 	/// </summary>
-	public override string HeadingRobloxCredit => "Crédito de Roblox";
+	public override string HeadingRobloxCredit => "CrÃ©dito de Roblox";
 
 	/// <summary>
 	/// Key: "Message.FailedDebitRobloxCredit"
 	/// English String: "There has been an issue processing your Roblox credit. Please try again later!"
 	/// </summary>
-	public override string MessageFailedDebitRobloxCredit => "Hubo un problema al procesar tus créditos de Roblox. Inténtalo de nuevo más tarde.";
+	public override string MessageFailedDebitRobloxCredit => "Hubo un problema al procesar tus crÃ©ditos de Roblox. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.FailedGrantingRobux"
-	/// English String: "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
+	/// English String: "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
 	/// </summary>
-	public override string MessageFailedGrantingRobux => "Hemos abonado tus créditos de Roblox, pero hubo un problema al procesar los Robux. Contacta con Atención al cliente para obtenerlos.";
+	public override string MessageFailedGrantingRobux => "Hemos abonado tus crÃ©ditos de Roblox, pero hubo un problema al procesar los Robux. Contacta con AtenciÃ³n al cliente para obtenerlos.";
 
 	public RobloxCreditResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -63,12 +63,12 @@ internal class RobloxCreditResources_es_es : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRobloxCreditToRobuxRedemption(string balance, string iconRobux, string robuxAmount)
 	{
-		return $"Canjea tu crédito de Roblox de {balance} a {iconRobux}{robuxAmount}";
+		return $"Canjea tu crÃ©dito de Roblox de {balance} a {iconRobux}{robuxAmount}";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRobloxCreditToRobuxRedemption()
 	{
-		return "Canjea tu crédito de Roblox de {balance} a {iconRobux}{robuxAmount}";
+		return "Canjea tu crÃ©dito de Roblox de {balance} a {iconRobux}{robuxAmount}";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobux()
@@ -78,7 +78,7 @@ internal class RobloxCreditResources_es_es : RobloxCreditResources_en_us, IRoblo
 
 	protected override string _GetTemplateForHeadingRobloxCredit()
 	{
-		return "Crédito de Roblox";
+		return "CrÃ©dito de Roblox";
 	}
 
 	/// <summary>
@@ -98,12 +98,12 @@ internal class RobloxCreditResources_es_es : RobloxCreditResources_en_us, IRoblo
 
 	protected override string _GetTemplateForMessageFailedDebitRobloxCredit()
 	{
-		return "Hubo un problema al procesar tus créditos de Roblox. Inténtalo de nuevo más tarde.";
+		return "Hubo un problema al procesar tus crÃ©ditos de Roblox. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageFailedGrantingRobux()
 	{
-		return "Hemos abonado tus créditos de Roblox, pero hubo un problema al procesar los Robux. Contacta con Atención al cliente para obtenerlos.";
+		return "Hemos abonado tus crÃ©ditos de Roblox, pero hubo un problema al procesar los Robux. Contacta con AtenciÃ³n al cliente para obtenerlos.";
 	}
 
 	/// <summary>
@@ -119,4 +119,7 @@ internal class RobloxCreditResources_es_es : RobloxCreditResources_en_us, IRoblo
 	{
 		return "Has canjeado correctamente {robuxAmount} Robux.";
 	}
+}
+
+
 }

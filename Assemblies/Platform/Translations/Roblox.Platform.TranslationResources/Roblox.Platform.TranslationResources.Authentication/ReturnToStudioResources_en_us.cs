@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class ReturnToStudioResources_en_us : TranslationResourcesBase, IReturnToStudioResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class ReturnToStudioResources_en_us : TranslationResourcesBase, IReturnToStudioResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -143,4 +142,7 @@ internal class ReturnToStudioResources_en_us : TranslationResourcesBase, IReturn
 	{
 		return "If Studio does not open, click here for help";
 	}
+}
+
+
 }

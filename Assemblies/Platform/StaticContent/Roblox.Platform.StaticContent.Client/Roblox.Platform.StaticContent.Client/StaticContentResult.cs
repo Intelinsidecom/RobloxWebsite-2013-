@@ -1,11 +1,12 @@
-namespace Roblox.StaticContent.Client;
-
-public enum StaticContentResult
+namespace Roblox.Platform.StaticContent.Client
 {
-	Unknown,
-	Created,
-	Duplicate,
-	Reserved,
-	Updated,
-	Unchanged
+    public enum StaticContentResult
+    {
+        Unknown,
+        Created,
+        Duplicate,
+        Reserved,
+        Updated,
+        Unchanged
+    }
 }

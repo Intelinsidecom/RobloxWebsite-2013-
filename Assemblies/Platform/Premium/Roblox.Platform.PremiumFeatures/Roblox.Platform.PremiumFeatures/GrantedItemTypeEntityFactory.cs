@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Roblox.Data;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 public class GrantedItemTypeEntityFactory : IGrantedItemTypeEntityFactory
 {
 	public IGrantedItemTypeEntity Asset => MustGetByValue("Asset");
@@ -39,4 +38,7 @@ public class GrantedItemTypeEntityFactory : IGrantedItemTypeEntityFactory
 		}
 		return null;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,14 +11,14 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// button title
 	/// English String: "Go to the Previous Page"
 	/// </summary>
-	public override string ActionPreviousPage => "Önceki Sayfaya Git";
+	public override string ActionPreviousPage => "Ã–nceki Sayfaya Git";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button title
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "Girişe Dön";
+	public override string ActionReturnHome => "GiriÅŸe DÃ¶n";
 
 	/// <summary>
 	/// Key: "Label.Error"
@@ -31,13 +31,13 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// alternate text shown for error image
 	/// English String: "Error Image"
 	/// </summary>
-	public override string LabelErrorImage => "Hata Görseli";
+	public override string LabelErrorImage => "Hata GÃ¶rseli";
 
 	/// <summary>
 	/// Key: "Label.TooManyCharacters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyCharacters => "Çok fazla karakter!";
+	public override string LabelTooManyCharacters => "Ã‡ok fazla karakter!";
 
 	/// <summary>
 	/// Key: "Message.AlwaysAllowed"
@@ -49,13 +49,13 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.AnalyiticsCookies"
 	/// English String: "Analytics Cookies"
 	/// </summary>
-	public override string MessageAnalyiticsCookies => "Analiz Çerezleri";
+	public override string MessageAnalyiticsCookies => "Analiz Ã‡erezleri";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesDescription"
 	/// English String: "These cookies used for improving site performance or understanding site usage."
 	/// </summary>
-	public override string MessageAnalyiticsCookiesDescription => "Bu çerezler, site performansını iyileştirmek veya site kullanımını anlamak için kullanılır.";
+	public override string MessageAnalyiticsCookiesDescription => "Bu Ã§erezler, site performansÄ±nÄ± iyileÅŸtirmek veya site kullanÄ±mÄ±nÄ± anlamak iÃ§in kullanÄ±lÄ±r.";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem1"
@@ -73,13 +73,13 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.EssentialCookies"
 	/// English String: "Essential Cookies"
 	/// </summary>
-	public override string MessageEssentialCookies => "Temel Çerezler";
+	public override string MessageEssentialCookies => "Temel Ã‡erezler";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "Bu çerezler, kullanıcı doğrulama, sistemi güvende tutma veya çerez tercihlerini kaydetme gibi işlevleri sitede sağlayabilmek için gereklidir.";
+	public override string MessageEssentialCookiesDescription => "Bu Ã§erezler, kullanÄ±cÄ± doÄŸrulama, sistemi gÃ¼vende tutma veya Ã§erez tercihlerini kaydetme gibi iÅŸlevleri sitede saÄŸlayabilmek iÃ§in gereklidir.";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -97,7 +97,7 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.ManageCookies"
 	/// English String: "Manage Cookies"
 	/// </summary>
-	public override string MessageManageCookies => "Çerezleri Yönet";
+	public override string MessageManageCookies => "Ã‡erezleri YÃ¶net";
 
 	/// <summary>
 	/// Key: "MessageEssentialCookiesItem3"
@@ -110,35 +110,35 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// 403 error message
 	/// English String: "Access Denied"
 	/// </summary>
-	public override string ResponseAccessDenied => "Erişim Reddedildi";
+	public override string ResponseAccessDenied => "EriÅŸim Reddedildi";
 
 	/// <summary>
 	/// Key: "Response.AccessDeniedDescription"
 	/// 403 error message detail
 	/// English String: "You don't have permission to view this page"
 	/// </summary>
-	public override string ResponseAccessDeniedDescription => "Bu sayfayı görüntüleme iznin yok";
+	public override string ResponseAccessDeniedDescription => "Bu sayfayÄ± gÃ¶rÃ¼ntÃ¼leme iznin yok";
 
 	/// <summary>
 	/// Key: "Response.BadRequest"
 	/// 400 error message title
 	/// English String: "Bad Request"
 	/// </summary>
-	public override string ResponseBadRequest => "Geçersiz İstek";
+	public override string ResponseBadRequest => "GeÃ§ersiz Ä°stek";
 
 	/// <summary>
 	/// Key: "Response.BadRequestDescription"
 	/// error message detail for 400 error
 	/// English String: "There was a problem with your request"
 	/// </summary>
-	public override string ResponseBadRequestDescription => "İsteğinle ilgili bir sorun çıktı";
+	public override string ResponseBadRequestDescription => "Ä°steÄŸinle ilgili bir sorun Ã§Ä±ktÄ±";
 
 	/// <summary>
 	/// Key: "Response.InternalServerError"
 	/// 500 error message title
 	/// English String: "Internal Server Error"
 	/// </summary>
-	public override string ResponseInternalServerError => "Dahili Sunucu Hatası";
+	public override string ResponseInternalServerError => "Dahili Sunucu HatasÄ±";
 
 	/// <summary>
 	/// Key: "Response.InternalServerErrorDescription"
@@ -152,41 +152,41 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// 404 error message title
 	/// English String: "Page Not found"
 	/// </summary>
-	public override string ResponsePageNotFound => "Sayfa Bulunamadı";
+	public override string ResponsePageNotFound => "Sayfa BulunamadÄ±";
 
 	/// <summary>
 	/// Key: "Response.PageNotFoundDescrition"
 	/// 404 error message description
 	/// English String: "Page cannot be found or no longer exists"
 	/// </summary>
-	public override string ResponsePageNotFoundDescrition => "Sayfa bulunamadı veya artık mevcut değil";
+	public override string ResponsePageNotFoundDescrition => "Sayfa bulunamadÄ± veya artÄ±k mevcut deÄŸil";
 
 	/// <summary>
 	/// Key: "Response.RequestError"
 	/// error message for incorrect request
 	/// English String: "Error with your request"
 	/// </summary>
-	public override string ResponseRequestError => "İsteğinle ilgili hata";
+	public override string ResponseRequestError => "Ä°steÄŸinle ilgili hata";
 
 	/// <summary>
 	/// Key: "Response.SomethingWentWrong"
 	/// default error message
 	/// English String: "Something went wrong"
 	/// </summary>
-	public override string ResponseSomethingWentWrong => "Bir şeyler yanlış gitti";
+	public override string ResponseSomethingWentWrong => "Bir ÅŸeyler yanlÄ±ÅŸ gitti";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsText"
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttemptsText => "Çok Sayıda Deneme";
+	public override string ResponseTooManyAttemptsText => "Ã‡ok SayÄ±da Deneme";
 
 	/// <summary>
 	/// Key: "Response.UnexpectedError"
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "Beklenmedik bir hata meydana geldi. Lütfen daha sonra tekrar dene.";
+	public override string ResponseUnexpectedError => "Beklenmedik bir hata meydana geldi. LÃ¼tfen daha sonra tekrar dene.";
 
 	public MessagesResources_tr_tr(TranslationResourceState state)
 		: base(state)
@@ -195,12 +195,12 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionPreviousPage()
 	{
-		return "Önceki Sayfaya Git";
+		return "Ã–nceki Sayfaya Git";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "Girişe Dön";
+		return "GiriÅŸe DÃ¶n";
 	}
 
 	/// <summary>
@@ -210,12 +210,12 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox, içeriği kişiselleştirmek, sosyal medya özellikleri sunmak ve sitemizdeki trafiği analiz etmek için çerezleri kullanır. Çerezleri nasıl kullandığımızı ve {startLink}çerez tercihlerini nasıl yönetebileceğini{endLink} öğrenmek için lütfen {startLink2}Gizlilik ve Çerez Politikamızı{endLink2} incele.";
+		return $"Roblox, iÃ§eriÄŸi kiÅŸiselleÅŸtirmek, sosyal medya Ã¶zellikleri sunmak ve sitemizdeki trafiÄŸi analiz etmek iÃ§in Ã§erezleri kullanÄ±r. Ã‡erezleri nasÄ±l kullandÄ±ÄŸÄ±mÄ±zÄ± ve {startLink}Ã§erez tercihlerini nasÄ±l yÃ¶netebileceÄŸini{endLink} Ã¶ÄŸrenmek iÃ§in lÃ¼tfen {startLink2}Gizlilik ve Ã‡erez PolitikamÄ±zÄ±{endLink2} incele.";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Roblox, içeriği kişiselleştirmek, sosyal medya özellikleri sunmak ve sitemizdeki trafiği analiz etmek için çerezleri kullanır. Çerezleri nasıl kullandığımızı ve {startLink}çerez tercihlerini nasıl yönetebileceğini{endLink} öğrenmek için lütfen {startLink2}Gizlilik ve Çerez Politikamızı{endLink2} incele.";
+		return "Roblox, iÃ§eriÄŸi kiÅŸiselleÅŸtirmek, sosyal medya Ã¶zellikleri sunmak ve sitemizdeki trafiÄŸi analiz etmek iÃ§in Ã§erezleri kullanÄ±r. Ã‡erezleri nasÄ±l kullandÄ±ÄŸÄ±mÄ±zÄ± ve {startLink}Ã§erez tercihlerini nasÄ±l yÃ¶netebileceÄŸini{endLink} Ã¶ÄŸrenmek iÃ§in lÃ¼tfen {startLink2}Gizlilik ve Ã‡erez PolitikamÄ±zÄ±{endLink2} incele.";
 	}
 
 	/// <summary>
@@ -225,12 +225,12 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string DescriptionContactCustomerService(string emailLink)
 	{
-		return $"Bu sayfayı almaya devam edersen lütfen {emailLink} bağlantısından müşteri hizmetleriyle iletişime geç";
+		return $"Bu sayfayÄ± almaya devam edersen lÃ¼tfen {emailLink} baÄŸlantÄ±sÄ±ndan mÃ¼ÅŸteri hizmetleriyle iletiÅŸime geÃ§";
 	}
 
 	protected override string _GetTemplateForDescriptionContactCustomerService()
 	{
-		return "Bu sayfayı almaya devam edersen lütfen {emailLink} bağlantısından müşteri hizmetleriyle iletişime geç";
+		return "Bu sayfayÄ± almaya devam edersen lÃ¼tfen {emailLink} baÄŸlantÄ±sÄ±ndan mÃ¼ÅŸteri hizmetleriyle iletiÅŸime geÃ§";
 	}
 
 	protected override string _GetTemplateForLabelError()
@@ -240,12 +240,12 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForLabelErrorImage()
 	{
-		return "Hata Görseli";
+		return "Hata GÃ¶rseli";
 	}
 
 	protected override string _GetTemplateForLabelTooManyCharacters()
 	{
-		return "Çok fazla karakter!";
+		return "Ã‡ok fazla karakter!";
 	}
 
 	protected override string _GetTemplateForMessageAlwaysAllowed()
@@ -255,12 +255,12 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageAnalyiticsCookies()
 	{
-		return "Analiz Çerezleri";
+		return "Analiz Ã‡erezleri";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesDescription()
 	{
-		return "Bu çerezler, site performansını iyileştirmek veya site kullanımını anlamak için kullanılır.";
+		return "Bu Ã§erezler, site performansÄ±nÄ± iyileÅŸtirmek veya site kullanÄ±mÄ±nÄ± anlamak iÃ§in kullanÄ±lÄ±r.";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem1()
@@ -280,12 +280,12 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNotice(string startLink, string endLink)
 	{
-		return $"Roblox, sana daha iyi bir deneyim sunabilmek için çerezler kullanır. Rızanı nasıl geri çekeceğine ve Roblox'ta çerezlerin kullanımını nasıl yönetebileceğine dair daha fazla bilgi için lütfen {startLink}Gizlilik ve Çerez Politikamıza{endLink} göz at.";
+		return $"Roblox, sana daha iyi bir deneyim sunabilmek iÃ§in Ã§erezler kullanÄ±r. RÄ±zanÄ± nasÄ±l geri Ã§ekeceÄŸine ve Roblox'ta Ã§erezlerin kullanÄ±mÄ±nÄ± nasÄ±l yÃ¶netebileceÄŸine dair daha fazla bilgi iÃ§in lÃ¼tfen {startLink}Gizlilik ve Ã‡erez PolitikamÄ±za{endLink} gÃ¶z at.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNotice()
 	{
-		return "Roblox, sana daha iyi bir deneyim sunabilmek için çerezler kullanır. Rızanı nasıl geri çekeceğine ve Roblox'ta çerezlerin kullanımını nasıl yönetebileceğine dair daha fazla bilgi için lütfen {startLink}Gizlilik ve Çerez Politikamıza{endLink} göz at.";
+		return "Roblox, sana daha iyi bir deneyim sunabilmek iÃ§in Ã§erezler kullanÄ±r. RÄ±zanÄ± nasÄ±l geri Ã§ekeceÄŸine ve Roblox'ta Ã§erezlerin kullanÄ±mÄ±nÄ± nasÄ±l yÃ¶netebileceÄŸine dair daha fazla bilgi iÃ§in lÃ¼tfen {startLink}Gizlilik ve Ã‡erez PolitikamÄ±za{endLink} gÃ¶z at.";
 	}
 
 	/// <summary>
@@ -294,12 +294,12 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox, içeriği kişiselleştirmek, sosyal medya özellikleri sunmak ve sitemizdeki trafiği analiz etmek için çerezleri kullanır. Çerezleri nasıl kullandığımızı ve {startLink}çerez tercihlerini nasıl yönetebileceğini{endLink} öğrenmek için lütfen {startLink2}Gizlilik ve Çerez Politikamızı{endLink2} incele.";
+		return $"Roblox, iÃ§eriÄŸi kiÅŸiselleÅŸtirmek, sosyal medya Ã¶zellikleri sunmak ve sitemizdeki trafiÄŸi analiz etmek iÃ§in Ã§erezleri kullanÄ±r. Ã‡erezleri nasÄ±l kullandÄ±ÄŸÄ±mÄ±zÄ± ve {startLink}Ã§erez tercihlerini nasÄ±l yÃ¶netebileceÄŸini{endLink} Ã¶ÄŸrenmek iÃ§in lÃ¼tfen {startLink2}Gizlilik ve Ã‡erez PolitikamÄ±zÄ±{endLink2} incele.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Roblox, içeriği kişiselleştirmek, sosyal medya özellikleri sunmak ve sitemizdeki trafiği analiz etmek için çerezleri kullanır. Çerezleri nasıl kullandığımızı ve {startLink}çerez tercihlerini nasıl yönetebileceğini{endLink} öğrenmek için lütfen {startLink2}Gizlilik ve Çerez Politikamızı{endLink2} incele.";
+		return "Roblox, iÃ§eriÄŸi kiÅŸiselleÅŸtirmek, sosyal medya Ã¶zellikleri sunmak ve sitemizdeki trafiÄŸi analiz etmek iÃ§in Ã§erezleri kullanÄ±r. Ã‡erezleri nasÄ±l kullandÄ±ÄŸÄ±mÄ±zÄ± ve {startLink}Ã§erez tercihlerini nasÄ±l yÃ¶netebileceÄŸini{endLink} Ã¶ÄŸrenmek iÃ§in lÃ¼tfen {startLink2}Gizlilik ve Ã‡erez PolitikamÄ±zÄ±{endLink2} incele.";
 	}
 
 	/// <summary>
@@ -308,22 +308,22 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieModalText(string startLink, string endLink)
 	{
-		return $"Lütfen bu sitenin çerezleri aşağıda tarif edildiği şekilde kullanıp kullanamayacağını seç. Bu sitenin çerezleri ve ilgili teknolojileri nasıl kullandığına dair daha fazla bilgiyi {startLink}gizlilik politikamızı{endLink} okuyarak edinebilirsin.";
+		return $"LÃ¼tfen bu sitenin Ã§erezleri aÅŸaÄŸÄ±da tarif edildiÄŸi ÅŸekilde kullanÄ±p kullanamayacaÄŸÄ±nÄ± seÃ§. Bu sitenin Ã§erezleri ve ilgili teknolojileri nasÄ±l kullandÄ±ÄŸÄ±na dair daha fazla bilgiyi {startLink}gizlilik politikamÄ±zÄ±{endLink} okuyarak edinebilirsin.";
 	}
 
 	protected override string _GetTemplateForMessageCookieModalText()
 	{
-		return "Lütfen bu sitenin çerezleri aşağıda tarif edildiği şekilde kullanıp kullanamayacağını seç. Bu sitenin çerezleri ve ilgili teknolojileri nasıl kullandığına dair daha fazla bilgiyi {startLink}gizlilik politikamızı{endLink} okuyarak edinebilirsin.";
+		return "LÃ¼tfen bu sitenin Ã§erezleri aÅŸaÄŸÄ±da tarif edildiÄŸi ÅŸekilde kullanÄ±p kullanamayacaÄŸÄ±nÄ± seÃ§. Bu sitenin Ã§erezleri ve ilgili teknolojileri nasÄ±l kullandÄ±ÄŸÄ±na dair daha fazla bilgiyi {startLink}gizlilik politikamÄ±zÄ±{endLink} okuyarak edinebilirsin.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookies()
 	{
-		return "Temel Çerezler";
+		return "Temel Ã‡erezler";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "Bu çerezler, kullanıcı doğrulama, sistemi güvende tutma veya çerez tercihlerini kaydetme gibi işlevleri sitede sağlayabilmek için gereklidir.";
+		return "Bu Ã§erezler, kullanÄ±cÄ± doÄŸrulama, sistemi gÃ¼vende tutma veya Ã§erez tercihlerini kaydetme gibi iÅŸlevleri sitede saÄŸlayabilmek iÃ§in gereklidir.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -338,7 +338,7 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageManageCookies()
 	{
-		return "Çerezleri Yönet";
+		return "Ã‡erezleri YÃ¶net";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem3()
@@ -348,27 +348,27 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "Erişim Reddedildi";
+		return "EriÅŸim Reddedildi";
 	}
 
 	protected override string _GetTemplateForResponseAccessDeniedDescription()
 	{
-		return "Bu sayfayı görüntüleme iznin yok";
+		return "Bu sayfayÄ± gÃ¶rÃ¼ntÃ¼leme iznin yok";
 	}
 
 	protected override string _GetTemplateForResponseBadRequest()
 	{
-		return "Geçersiz İstek";
+		return "GeÃ§ersiz Ä°stek";
 	}
 
 	protected override string _GetTemplateForResponseBadRequestDescription()
 	{
-		return "İsteğinle ilgili bir sorun çıktı";
+		return "Ä°steÄŸinle ilgili bir sorun Ã§Ä±ktÄ±";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerError()
 	{
-		return "Dahili Sunucu Hatası";
+		return "Dahili Sunucu HatasÄ±";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerErrorDescription()
@@ -378,31 +378,34 @@ internal class MessagesResources_tr_tr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponsePageNotFound()
 	{
-		return "Sayfa Bulunamadı";
+		return "Sayfa BulunamadÄ±";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFoundDescrition()
 	{
-		return "Sayfa bulunamadı veya artık mevcut değil";
+		return "Sayfa bulunamadÄ± veya artÄ±k mevcut deÄŸil";
 	}
 
 	protected override string _GetTemplateForResponseRequestError()
 	{
-		return "İsteğinle ilgili hata";
+		return "Ä°steÄŸinle ilgili hata";
 	}
 
 	protected override string _GetTemplateForResponseSomethingWentWrong()
 	{
-		return "Bir şeyler yanlış gitti";
+		return "Bir ÅŸeyler yanlÄ±ÅŸ gitti";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsText()
 	{
-		return "Çok Sayıda Deneme";
+		return "Ã‡ok SayÄ±da Deneme";
 	}
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "Beklenmedik bir hata meydana geldi. Lütfen daha sonra tekrar dene.";
+		return "Beklenmedik bir hata meydana geldi. LÃ¼tfen daha sonra tekrar dene.";
 	}
+}
+
+
 }

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.resources.extensions\7.0.0\buildTransitive\net462\System.Resources.Extensions.targets" Condition="Exists('$(NuGetPackageRoot)system.resources.extensions\7.0.0\buildTransitive\net462\System.Resources.Extensions.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netframework.referenceassemblies.net471\1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net471.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.netframework.referenceassemblies.net471\1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net471.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.data.sqlclient.sni\5.2.0\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.data.sqlclient.sni\5.2.0\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.targets')" />
+  </ImportGroup>
+</Project>

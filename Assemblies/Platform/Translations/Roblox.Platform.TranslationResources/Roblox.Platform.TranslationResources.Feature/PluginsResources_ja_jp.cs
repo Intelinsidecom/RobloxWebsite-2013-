@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PluginsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,13 +10,13 @@ internal class PluginsResources_ja_jp : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.ErrorBody"
 	/// English String: "There was a problem installing this plugin. Please try again later."
 	/// </summary>
-	public override string LabelErrorBody => "問題が発生したためプラグインをインストールできません。後でもう一度お試しください。";
+	public override string LabelErrorBody => "å•é¡ŒãŒç™ºç”Ÿã—ãŸãŸã‚ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ErrorTitle"
 	/// English String: "Error Installing Plugin"
 	/// </summary>
-	public override string LabelErrorTitle => "プラグインのインストールエラー";
+	public override string LabelErrorTitle => "ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Label.Ok"
@@ -28,37 +28,37 @@ internal class PluginsResources_ja_jp : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.Reinstall"
 	/// English String: "Reinstall"
 	/// </summary>
-	public override string LabelReinstall => "再インストール";
+	public override string LabelReinstall => "å†ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«";
 
 	/// <summary>
 	/// Key: "Label.SuccessTitle"
 	/// English String: "Plugin Installed"
 	/// </summary>
-	public override string LabelSuccessTitle => "プラグインをインストールしました";
+	public override string LabelSuccessTitle => "ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.UpdateErrorBody"
 	/// English String: "There was a problem updating this plugin. Please try again later."
 	/// </summary>
-	public override string LabelUpdateErrorBody => "問題が発生したため、このプラグインをアップデートできません。後でもう一度お試しください。";
+	public override string LabelUpdateErrorBody => "å•é¡ŒãŒç™ºç”Ÿã—ãŸãŸã‚ã€ã“ã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.UpdateErrorTitle"
 	/// English String: "Error Updating Plugin"
 	/// </summary>
-	public override string LabelUpdateErrorTitle => "プラグインのアップデートエラー";
+	public override string LabelUpdateErrorTitle => "ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Label.UpdateSuccessTitle"
 	/// English String: "Plugin Update"
 	/// </summary>
-	public override string LabelUpdateSuccessTitle => "プラグインのアップデート";
+	public override string LabelUpdateSuccessTitle => "ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.UpdateText"
 	/// English String: "Update"
 	/// </summary>
-	public override string LabelUpdateText => "アップデート";
+	public override string LabelUpdateText => "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 
 	public PluginsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -67,12 +67,12 @@ internal class PluginsResources_ja_jp : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelErrorBody()
 	{
-		return "問題が発生したためプラグインをインストールできません。後でもう一度お試しください。";
+		return "å•é¡ŒãŒç™ºç”Ÿã—ãŸãŸã‚ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelErrorTitle()
 	{
-		return "プラグインのインストールエラー";
+		return "ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚¨ãƒ©ãƒ¼";
 	}
 
 	protected override string _GetTemplateForLabelOk()
@@ -82,7 +82,7 @@ internal class PluginsResources_ja_jp : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelReinstall()
 	{
-		return "再インストール";
+		return "å†ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«";
 	}
 
 	/// <summary>
@@ -91,27 +91,27 @@ internal class PluginsResources_ja_jp : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelSuccessBody(string item)
 	{
-		return $"{item} をインストールしました！";
+		return $"{item} ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForLabelSuccessBody()
 	{
-		return "{item} をインストールしました！";
+		return "{item} ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForLabelSuccessTitle()
 	{
-		return "プラグインをインストールしました";
+		return "ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelUpdateErrorBody()
 	{
-		return "問題が発生したため、このプラグインをアップデートできません。後でもう一度お試しください。";
+		return "å•é¡ŒãŒç™ºç”Ÿã—ãŸãŸã‚ã€ã“ã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUpdateErrorTitle()
 	{
-		return "プラグインのアップデートエラー";
+		return "ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã‚¨ãƒ©ãƒ¼";
 	}
 
 	/// <summary>
@@ -120,21 +120,24 @@ internal class PluginsResources_ja_jp : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelUpdateSuccessBody(string item)
 	{
-		return $"{item} をアップデートしました！変更内容を反映させるには、新しいウィンドウを開いてください。";
+		return $"{item} ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸï¼å¤‰æ›´å†…å®¹ã‚’åæ˜ ã•ã›ã‚‹ã«ã¯ã€æ–°ã—ã„ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’é–‹ã„ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessBody()
 	{
-		return "{item} をアップデートしました！変更内容を反映させるには、新しいウィンドウを開いてください。";
+		return "{item} ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸï¼å¤‰æ›´å†…å®¹ã‚’åæ˜ ã•ã›ã‚‹ã«ã¯ã€æ–°ã—ã„ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’é–‹ã„ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessTitle()
 	{
-		return "プラグインのアップデート";
+		return "ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelUpdateText()
 	{
-		return "アップデート";
+		return "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 	}
+}
+
+
 }

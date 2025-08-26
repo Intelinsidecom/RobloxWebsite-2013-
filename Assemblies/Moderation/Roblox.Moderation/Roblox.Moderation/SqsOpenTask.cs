@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Amazon.Sqs;
+namespace Roblox.Moderationinternal {
+    class SqsOpenTask : ISqsOpenTask, IOpenTask
 
-namespace Roblox.Platform.Moderation;
-
-internal class SqsOpenTask : ISqsOpenTask, IOpenTask
 {
 	/// <summary>
 	/// <inheritdoc cref="P:Roblox.Platform.Moderation.IOpenTask.QueueIdentifier" />
@@ -68,4 +67,7 @@ internal class SqsOpenTask : ISqsOpenTask, IOpenTask
 		Worker = worker;
 		TaskIdentifier = taskIdentifier;
 	}
+}
+
+
 }

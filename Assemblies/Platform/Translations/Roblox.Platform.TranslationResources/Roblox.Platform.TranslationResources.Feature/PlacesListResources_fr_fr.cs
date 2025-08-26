@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PlacesListResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -24,7 +24,7 @@ internal class PlacesListResources_fr_fr : PlacesListResources_en_us, IPlacesLis
 	/// check game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "Voir les détails";
+	public override string ActionViewDetails => "Voir les dÃ©tails";
 
 	/// <summary>
 	/// Key: "Label.ContextMenuTitle"
@@ -56,7 +56,7 @@ internal class PlacesListResources_fr_fr : PlacesListResources_en_us, IPlacesLis
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "Voir les détails";
+		return "Voir les dÃ©tails";
 	}
 
 	protected override string _GetTemplateForLabelContextMenuTitle()
@@ -97,4 +97,7 @@ internal class PlacesListResources_fr_fr : PlacesListResources_en_us, IPlacesLis
 	{
 		return "{playerCount}\u00a0en jeu";
 	}
+}
+
+
 }

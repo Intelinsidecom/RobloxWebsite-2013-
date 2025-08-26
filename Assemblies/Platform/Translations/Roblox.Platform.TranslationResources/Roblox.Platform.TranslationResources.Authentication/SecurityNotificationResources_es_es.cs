@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SecurityNotificationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -23,12 +23,12 @@ internal class SecurityNotificationResources_es_es : SecurityNotificationResourc
 	/// </summary>
 	public override string DescriptionSecurityNotificationText(string aTagStartWithHref, string emailMailToLink, string hrefEnd, string emailText, string aTagEnd)
 	{
-		return $"Se ha cambiado la contraseña para proteger tu cuenta. Para acceder a ella, escribe tu correo electrónico o número de teléfono y haz clic en el botón Enviar. Si no hay correos electrónicos o teléfonos asociados a la cuenta, contacta Atención al cliente de Roblox en {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.";
+		return $"Se ha cambiado la contraseÃ±a para proteger tu cuenta. Para acceder a ella, escribe tu correo electrÃ³nico o nÃºmero de telÃ©fono y haz clic en el botÃ³n Enviar. Si no hay correos electrÃ³nicos o telÃ©fonos asociados a la cuenta, contacta AtenciÃ³n al cliente de Roblox en {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionSecurityNotificationText()
 	{
-		return "Se ha cambiado la contraseña para proteger tu cuenta. Para acceder a ella, escribe tu correo electrónico o número de teléfono y haz clic en el botón Enviar. Si no hay correos electrónicos o teléfonos asociados a la cuenta, contacta Atención al cliente de Roblox en {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.";
+		return "Se ha cambiado la contraseÃ±a para proteger tu cuenta. Para acceder a ella, escribe tu correo electrÃ³nico o nÃºmero de telÃ©fono y haz clic en el botÃ³n Enviar. Si no hay correos electrÃ³nicos o telÃ©fonos asociados a la cuenta, contacta AtenciÃ³n al cliente de Roblox en {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.";
 	}
 
 	/// <summary>
@@ -37,16 +37,19 @@ internal class SecurityNotificationResources_es_es : SecurityNotificationResourc
 	/// </summary>
 	public override string DescriptionSecurityNotificationTextWarning(string startSpan, string endSpan)
 	{
-		return $"Escoge una contraseña que sea {startSpan}nueva{endSpan} y {startSpan}única{endSpan} para tu cuenta de Roblox. No uses esa contraseña en ningún otro sitio. Esta es la mejor manera para proteger tu cuenta.";
+		return $"Escoge una contraseÃ±a que sea {startSpan}nueva{endSpan} y {startSpan}Ãºnica{endSpan} para tu cuenta de Roblox. No uses esa contraseÃ±a en ningÃºn otro sitio. Esta es la mejor manera para proteger tu cuenta.";
 	}
 
 	protected override string _GetTemplateForDescriptionSecurityNotificationTextWarning()
 	{
-		return "Escoge una contraseña que sea {startSpan}nueva{endSpan} y {startSpan}única{endSpan} para tu cuenta de Roblox. No uses esa contraseña en ningún otro sitio. Esta es la mejor manera para proteger tu cuenta.";
+		return "Escoge una contraseÃ±a que sea {startSpan}nueva{endSpan} y {startSpan}Ãºnica{endSpan} para tu cuenta de Roblox. No uses esa contraseÃ±a en ningÃºn otro sitio. Esta es la mejor manera para proteger tu cuenta.";
 	}
 
 	protected override string _GetTemplateForHeadingImportant()
 	{
 		return "Importante";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPromotedProductResources : ITranslationResources
 
-public interface IPromotedProductResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Heading.GearForThisGame"
@@ -92,4 +92,7 @@ public interface IPromotedProductResources : ITranslationResources
 	/// English String: "You have removed {item} from your game."
 	/// </summary>
 	string LabelItemRemovedFromGame(string item);
+}
+
+
 }

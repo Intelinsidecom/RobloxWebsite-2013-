@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PlacesListResources_en_us : TranslationResourcesBase, IPlacesListResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PlacesListResources_en_us : TranslationResourcesBase, IPlacesListResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -139,4 +138,7 @@ internal class PlacesListResources_en_us : TranslationResourcesBase, IPlacesList
 	{
 		return "{playerCount} Playing";
 	}
+}
+
+
 }

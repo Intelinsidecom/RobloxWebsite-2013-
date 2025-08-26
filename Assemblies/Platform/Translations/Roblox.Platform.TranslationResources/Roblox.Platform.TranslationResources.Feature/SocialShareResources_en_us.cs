@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class SocialShareResources_en_us : TranslationResourcesBase, ISocialShareResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class SocialShareResources_en_us : TranslationResourcesBase, ISocialShareResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -38,4 +37,7 @@ internal class SocialShareResources_en_us : TranslationResourcesBase, ISocialSha
 	{
 		return "Share";
 	}
+}
+
+
 }

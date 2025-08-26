@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Represents an event for when a new user is signed up.
 /// </summary>
 public class UserCreatedEvent : WebEventBase
@@ -10,7 +11,7 @@ public class UserCreatedEvent : WebEventBase
 	/// <summary>
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.UserCreatedEvent" />  class.
 	/// </summary>
-	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" /> used to stream the event.</param>
+	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer" /> used to stream the event.</param>
 	/// <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.BasicEventArgs" /> containing event info.</param>
 	public UserCreatedEvent(IEventStreamer streamer, UserCreatedEventArgs args)
 		: base(streamer, "userCreated", args)
@@ -30,3 +31,12 @@ public class UserCreatedEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

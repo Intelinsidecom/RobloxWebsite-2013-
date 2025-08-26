@@ -1,9 +1,8 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using Roblox.PremiumFeatures.Models.Enums;
+namespace Roblox.Platform.PremiumFeatures.Models.Core {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models.Core;
-
-/// <summary>
 /// PremiumFeature Product Model
 /// </summary>
 [DataContract]
@@ -50,4 +49,7 @@ public class PremiumFeatureProductModel
 	/// </summary>
 	[DataMember(Name = "description", EmitDefaultValue = true, IsRequired = true)]
 	public string Description { get; set; }
+}
+
+
 }

@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs" /> for <see cref="T:Roblox.Platform.EventStream.WebEvents.LogoutProcessorLogoutEvent" />
 /// </summary>
 public class LogoutProcessorLogoutEventArgs : WebEventArgs
@@ -10,3 +11,12 @@ public class LogoutProcessorLogoutEventArgs : WebEventArgs
 	/// </summary>
 	public bool Success { get; set; }
 }
+
+
+}
+
+
+
+
+
+

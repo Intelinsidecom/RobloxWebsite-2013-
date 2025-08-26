@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// An interface representing a text filter for usernames.
 ///
 /// This does NOT cover any other business logic for username validation, such as:
@@ -18,4 +18,7 @@ internal interface IUsernameFilter
 	/// Evaluates a username against the under-13 username filter
 	/// </summary>
 	IUsernameValidationResult EvaluateU13Username(string username);
+}
+
+
 }

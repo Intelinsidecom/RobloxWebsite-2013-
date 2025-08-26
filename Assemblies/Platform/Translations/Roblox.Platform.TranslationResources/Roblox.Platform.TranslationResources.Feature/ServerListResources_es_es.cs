@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ServerListResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -17,7 +17,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 	/// Key: "Action.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string ActionLoadMore => "Cargar más";
+	public override string ActionLoadMore => "Cargar mÃ¡s";
 
 	/// <summary>
 	/// Key: "Heading.OtherServers"
@@ -35,7 +35,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 	/// Key: "Heading.ServersMyFriendsAreIn"
 	/// English String: "Servers My Friends Are In"
 	/// </summary>
-	public override string HeadingServersMyFriendsAreIn => "Servidores en los que están mis amigos";
+	public override string HeadingServersMyFriendsAreIn => "Servidores en los que estÃ¡n mis amigos";
 
 	/// <summary>
 	/// Key: "Label.Inactive"
@@ -119,7 +119,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForActionLoadMore()
 	{
-		return "Cargar más";
+		return "Cargar mÃ¡s";
 	}
 
 	protected override string _GetTemplateForHeadingOtherServers()
@@ -134,7 +134,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForHeadingServersMyFriendsAreIn()
 	{
-		return "Servidores en los que están mis amigos";
+		return "Servidores en los que estÃ¡n mis amigos";
 	}
 
 	/// <summary>
@@ -143,12 +143,12 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 	/// </summary>
 	public override string LabelCurrentPlayerCount(string currentPlayers, string maximumAllowedPlayers)
 	{
-		return $"{currentPlayers} de un máx. de {maximumAllowedPlayers} jugadores";
+		return $"{currentPlayers} de un mÃ¡x. de {maximumAllowedPlayers} jugadores";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPlayerCount()
 	{
-		return "{currentPlayers} de un máx. de {maximumAllowedPlayers} jugadores";
+		return "{currentPlayers} de un mÃ¡x. de {maximumAllowedPlayers} jugadores";
 	}
 
 	protected override string _GetTemplateForLabelInactive()
@@ -205,4 +205,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 	{
 		return "Juego lento";
 	}
+}
+
+
 }

@@ -1,10 +1,9 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Membership;
 using Roblox.TranslationResources;
+namespace Roblox.Localization.Accounts {
+    /// <inheritdoc cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider" />.
 
-namespace Roblox.Platform.Localization.Accounts;
-
-/// <inheritdoc cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider" />.
 /// <summary>
 /// An implementation of <see cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider" /> that is not aware of the context.
 /// This needs to be used in all places where context cannot be loaded.
@@ -40,4 +39,7 @@ public class ContextAgnosticLocalizationResourceProvider : LocalizationResourceP
 		TranslationResourceLocale resourceLocale = MapToResourceLocale(locale);
 		return LocaleResourceFactory.GetMasterResources(resourceLocale, AccountLocaleAccessor.GetTranslationResourcesState(user));
 	}
+}
+
+
 }

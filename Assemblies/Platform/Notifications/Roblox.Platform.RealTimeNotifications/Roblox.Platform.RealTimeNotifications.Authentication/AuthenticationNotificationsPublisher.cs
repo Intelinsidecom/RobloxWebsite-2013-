@@ -1,8 +1,7 @@
-using Roblox.EventLog;
+﻿using Roblox.EventLog;
+namespace Roblox.Platform.RealTimeNotifications.Authenticationpublic {
+    class AuthenticationNotificationsPublisher : IAuthenticationNotificationsPublisher
 
-namespace Roblox.RealTimeNotifications.Authentication;
-
-public class AuthenticationNotificationsPublisher : IAuthenticationNotificationsPublisher
 {
 	private readonly UserNotificationPublisher<AuthenticationNotificationMessage> _UserNotificationPublisher;
 
@@ -21,4 +20,7 @@ public class AuthenticationNotificationsPublisher : IAuthenticationNotifications
 		AuthenticationNotificationMessage message = new AuthenticationNotificationMessage(signedOutUserId, AuthenticationEventType.SignOut.ToString());
 		return _UserNotificationPublisher.Publish(recipientUserId, message).IsSuccess();
 	}
+}
+
+
 }

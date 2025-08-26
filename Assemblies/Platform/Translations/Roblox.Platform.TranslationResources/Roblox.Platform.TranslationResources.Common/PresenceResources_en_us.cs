@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class PresenceResources_en_us : TranslationResourcesBase, IPresenceResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class PresenceResources_en_us : TranslationResourcesBase, IPresenceResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -120,4 +119,7 @@ internal class PresenceResources_en_us : TranslationResourcesBase, IPresenceReso
 	{
 		return "Playing {placeName}";
 	}
+}
+
+
 }

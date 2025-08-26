@@ -1,10 +1,9 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountspublic {
+    class AccountCountriesChangeAgentFactory : IAccountCountriesChangeAgentFactory
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public class AccountCountriesChangeAgentFactory : IAccountCountriesChangeAgentFactory
 {
 	private readonly IAccountCountriesAutomationTypeConverter _AutomationTypeConverter;
 
@@ -37,4 +36,7 @@ public class AccountCountriesChangeAgentFactory : IAccountCountriesChangeAgentFa
 		byte changeAgentTargetId = _AutomationTypeConverter.GetEntityIdFromEnum(changeAgentAutomationType);
 		return new AccountCountriesChangeAgent(AccountCountriesChangeAgentType.Automation, changeAgentTargetId);
 	}
+}
+
+
 }

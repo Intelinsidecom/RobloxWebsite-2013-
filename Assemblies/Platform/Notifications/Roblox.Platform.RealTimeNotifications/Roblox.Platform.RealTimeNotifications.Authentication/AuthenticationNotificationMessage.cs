@@ -1,6 +1,6 @@
-namespace Roblox.RealTimeNotifications.Authentication;
+﻿namespace Roblox.Platform.RealTimeNotifications.Authenticationpublic {
+    class AuthenticationNotificationMessage : UserNotificationMessageBase
 
-public class AuthenticationNotificationMessage : UserNotificationMessageBase
 {
 	public long UserId { get; }
 
@@ -11,4 +11,7 @@ public class AuthenticationNotificationMessage : UserNotificationMessageBase
 		UserId = userId;
 		Type = type;
 	}
+}
+
+
 }

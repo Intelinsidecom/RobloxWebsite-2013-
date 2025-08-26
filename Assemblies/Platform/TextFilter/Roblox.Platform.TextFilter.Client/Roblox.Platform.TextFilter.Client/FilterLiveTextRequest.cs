@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.TextFilter.Client {
+    [DataContract]
 
-namespace Roblox.TextFilter.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 public class FilterLiveTextRequest
 {
@@ -25,4 +24,7 @@ public class FilterLiveTextRequest
 
 	[DataMember(Name = "instanceId")]
 	public virtual string InstanceIdentifier { get; set; }
+}
+
+
 }

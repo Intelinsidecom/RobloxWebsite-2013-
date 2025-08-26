@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs" /> for <see cref="T:Roblox.Platform.EventStream.WebEvents.LogoutEvent" />
 /// </summary>
 public class LogoutEventArgs : WebEventArgs
@@ -15,3 +16,12 @@ public class LogoutEventArgs : WebEventArgs
 	/// </summary>
 	public byte LogoutReason { get; set; }
 }
+
+
+}
+
+
+
+
+
+

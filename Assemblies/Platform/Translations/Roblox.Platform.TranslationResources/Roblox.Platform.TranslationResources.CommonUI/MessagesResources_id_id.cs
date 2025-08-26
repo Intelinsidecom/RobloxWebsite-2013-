@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -405,4 +405,7 @@ internal class MessagesResources_id_id : MessagesResources_en_us, IMessagesResou
 	{
 		return "Terjadi kesalahan tak terduga. Harap coba lagi nanti.";
 	}
+}
+
+
 }

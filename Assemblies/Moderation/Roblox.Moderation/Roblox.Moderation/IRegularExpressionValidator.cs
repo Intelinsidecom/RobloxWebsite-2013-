@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// Provides a common interface for a regular expression validator.
 /// </summary>
 public interface IRegularExpressionValidator
@@ -16,4 +15,7 @@ public interface IRegularExpressionValidator
 	/// <param name="matchedWords">matched words in white list</param>
 	/// <returns>True if it's a valid regular expression for blacklist, otherwise false</returns>
 	bool IsValidBlacklistRegularExpression(string regularExpression, out string message, out IEnumerable<string> matchedWords);
+}
+
+
 }

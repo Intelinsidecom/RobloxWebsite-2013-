@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLanguagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class GameLanguagesResources_de_de : GameLanguagesResources_en_us, IGam
 	/// Key: "Action.AddLanguage"
 	/// English String: "Add Language"
 	/// </summary>
-	public override string ActionAddLanguage => "Sprache hinzufügen";
+	public override string ActionAddLanguage => "Sprache hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -22,37 +22,37 @@ internal class GameLanguagesResources_de_de : GameLanguagesResources_en_us, IGam
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "Löschen";
+	public override string ActionDelete => "LÃ¶schen";
 
 	/// <summary>
 	/// Key: "Action.ManageTranslations"
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string ActionManageTranslations => "Übersetzungen verwalten";
+	public override string ActionManageTranslations => "Ãœbersetzungen verwalten";
 
 	/// <summary>
 	/// Key: "Description.NoLanguages"
 	/// English String: "Please add languages you want your game to support."
 	/// </summary>
-	public override string DescriptionNoLanguages => "Bitte füge Sprachen hinzu, die dein Spiel unterstützen soll.";
+	public override string DescriptionNoLanguages => "Bitte fÃ¼ge Sprachen hinzu, die dein Spiel unterstÃ¼tzen soll.";
 
 	/// <summary>
 	/// Key: "Heading.DeleteLanguage"
 	/// English String: "Delete Language"
 	/// </summary>
-	public override string HeadingDeleteLanguage => "Sprache löschen";
+	public override string HeadingDeleteLanguage => "Sprache lÃ¶schen";
 
 	/// <summary>
 	/// Key: "Heading.SupportedLanguages"
 	/// English String: "Supported Languages"
 	/// </summary>
-	public override string HeadingSupportedLanguages => "Unterstützte Sprachen";
+	public override string HeadingSupportedLanguages => "UnterstÃ¼tzte Sprachen";
 
 	/// <summary>
 	/// Key: "Heading.TranslatedLanguages"
 	/// English String: "Translated Languages"
 	/// </summary>
-	public override string HeadingTranslatedLanguages => "Übersetzte Sprachen";
+	public override string HeadingTranslatedLanguages => "Ãœbersetzte Sprachen";
 
 	/// <summary>
 	/// Key: "Label.Languages"
@@ -64,13 +64,13 @@ internal class GameLanguagesResources_de_de : GameLanguagesResources_en_us, IGam
 	/// Key: "Label.SelectLanguage"
 	/// English String: "Select Language"
 	/// </summary>
-	public override string LabelSelectLanguage => "Sprache auswählen";
+	public override string LabelSelectLanguage => "Sprache auswÃ¤hlen";
 
 	/// <summary>
 	/// Key: "Message.DeleteLanguageWarning"
 	/// English String: "All translations for this language will be deleted. This action is irreversible."
 	/// </summary>
-	public override string MessageDeleteLanguageWarning => "Alle Übersetzungen für diese Sprache werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.";
+	public override string MessageDeleteLanguageWarning => "Alle Ãœbersetzungen fÃ¼r diese Sprache werden gelÃ¶scht. Diese Aktion kann nicht rÃ¼ckgÃ¤ngig gemacht werden.";
 
 	public GameLanguagesResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -79,7 +79,7 @@ internal class GameLanguagesResources_de_de : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForActionAddLanguage()
 	{
-		return "Sprache hinzufügen";
+		return "Sprache hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -89,32 +89,32 @@ internal class GameLanguagesResources_de_de : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "Löschen";
+		return "LÃ¶schen";
 	}
 
 	protected override string _GetTemplateForActionManageTranslations()
 	{
-		return "Übersetzungen verwalten";
+		return "Ãœbersetzungen verwalten";
 	}
 
 	protected override string _GetTemplateForDescriptionNoLanguages()
 	{
-		return "Bitte füge Sprachen hinzu, die dein Spiel unterstützen soll.";
+		return "Bitte fÃ¼ge Sprachen hinzu, die dein Spiel unterstÃ¼tzen soll.";
 	}
 
 	protected override string _GetTemplateForHeadingDeleteLanguage()
 	{
-		return "Sprache löschen";
+		return "Sprache lÃ¶schen";
 	}
 
 	protected override string _GetTemplateForHeadingSupportedLanguages()
 	{
-		return "Unterstützte Sprachen";
+		return "UnterstÃ¼tzte Sprachen";
 	}
 
 	protected override string _GetTemplateForHeadingTranslatedLanguages()
 	{
-		return "Übersetzte Sprachen";
+		return "Ãœbersetzte Sprachen";
 	}
 
 	protected override string _GetTemplateForLabelLanguages()
@@ -124,11 +124,14 @@ internal class GameLanguagesResources_de_de : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForLabelSelectLanguage()
 	{
-		return "Sprache auswählen";
+		return "Sprache auswÃ¤hlen";
 	}
 
 	protected override string _GetTemplateForMessageDeleteLanguageWarning()
 	{
-		return "Alle Übersetzungen für diese Sprache werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.";
+		return "Alle Ãœbersetzungen fÃ¼r diese Sprache werden gelÃ¶scht. Diese Aktion kann nicht rÃ¼ckgÃ¤ngig gemacht werden.";
 	}
+}
+
+
 }

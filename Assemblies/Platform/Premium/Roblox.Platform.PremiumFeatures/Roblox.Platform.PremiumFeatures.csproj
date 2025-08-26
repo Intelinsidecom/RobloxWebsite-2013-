@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.PremiumFeatures</AssemblyName>
@@ -30,7 +30,6 @@
     <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj" />
     <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj" />
     <ProjectReference Include="..\\..\\..\\Economy\\Roblox.Economy.Common\\Roblox.Economy.Common.csproj" />
-    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />

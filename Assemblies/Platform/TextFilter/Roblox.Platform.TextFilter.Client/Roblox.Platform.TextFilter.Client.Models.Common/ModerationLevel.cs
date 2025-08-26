@@ -1,8 +1,11 @@
-namespace Roblox.TextFilter.Client.Models.Common;
+﻿namespace Roblox.Platform.TextFilter.Client.Models.Commonpublic {
+    enum ModerationLevel
 
-public enum ModerationLevel
 {
 	FullyAcceptable = 1,
 	PartiallyModerated,
 	FullyModerated
+}
+
+
 }

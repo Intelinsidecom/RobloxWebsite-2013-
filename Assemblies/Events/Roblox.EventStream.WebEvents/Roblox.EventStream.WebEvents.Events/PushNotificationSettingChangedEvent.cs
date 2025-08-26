@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class PushNotificationSettingChangedEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class PushNotificationSettingChangedEvent : WebEventBase
 {
 	private const string _Name = "pushNotificationSettingsChanged";
 
@@ -14,8 +14,8 @@ public class PushNotificationSettingChangedEvent : WebEventBase
 
 	private const string _EventTime = "lt";
 
-	public PushNotificationSettingChangedEvent(IEventStreamer eventStreamer, PushNotificationSettingChangedEventArgs pushNotificationSettingChangedEventArgs)
-		: base(eventStreamer, "pushNotificationSettingsChanged", pushNotificationSettingChangedEventArgs)
+	public PushNotificationSettingChangedEvent(IEventStreamer IEventStreamer, PushNotificationSettingChangedEventArgs pushNotificationSettingChangedEventArgs)
+		: base(IEventStreamer, "pushNotificationSettingsChanged", pushNotificationSettingChangedEventArgs)
 	{
 		if (!pushNotificationSettingChangedEventArgs.UserId.HasValue)
 		{
@@ -27,3 +27,12 @@ public class PushNotificationSettingChangedEvent : WebEventBase
 		AddEventArg("destinationId", pushNotificationSettingChangedEventArgs.ReceiverDestinationId);
 	}
 }
+
+
+}
+
+
+
+
+
+

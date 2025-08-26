@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures.Models.Enums;
+﻿namespace Roblox.Platform.PremiumFeatures.Models.Enums {
+    /// <summary>
 
-/// <summary>
 /// Error code getting responses back from the PremiumFeatures Service
 /// </summary>
 public enum PremiumFeaturesErrorCode
@@ -53,4 +53,7 @@ public enum PremiumFeaturesErrorCode
 	/// Unknown
 	/// </summary>
 	Unknown = int.MaxValue
+}
+
+
 }

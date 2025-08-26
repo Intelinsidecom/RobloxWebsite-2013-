@@ -1,6 +1,6 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    class SummaryResult
 
-public class SummaryResult
 {
 	public int PlaceCount { get; set; }
 
@@ -13,4 +13,7 @@ public class SummaryResult
 	public int PrivateGamePlayerCount { get; set; }
 
 	public int ReservationCount { get; set; }
+}
+
+
 }

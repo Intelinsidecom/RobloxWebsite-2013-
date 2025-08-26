@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents.EventArgs;
+ 
+namespace Roblox.EventStream.WebEvents.EventArgs {
+    public class PrivateModuleRequiredEventArgs : WebEventArgs
 
-public class PrivateModuleRequiredEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The ID of the place which required the module.
@@ -12,3 +13,12 @@ public class PrivateModuleRequiredEventArgs : WebEventArgs
 	/// </summary>
 	public long AssetId { get; set; }
 }
+
+
+}
+
+
+
+
+
+

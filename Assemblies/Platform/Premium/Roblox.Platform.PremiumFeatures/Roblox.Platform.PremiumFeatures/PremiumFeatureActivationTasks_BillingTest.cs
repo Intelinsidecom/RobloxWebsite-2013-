@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class PremiumFeatureActivationTasks_BillingTest : IRobloxEntity<long, PremiumFeatureActivationTasks_BillingTestDAL>, ICacheableObject<long>, ICacheableObject
 
-namespace Roblox.PremiumFeatures;
-
-public class PremiumFeatureActivationTasks_BillingTest : IRobloxEntity<long, PremiumFeatureActivationTasks_BillingTestDAL>, ICacheableObject<long>, ICacheableObject
 {
 	private PremiumFeatureActivationTasks_BillingTestDAL _EntityDAL;
 
@@ -152,4 +151,7 @@ public class PremiumFeatureActivationTasks_BillingTest : IRobloxEntity<long, Pre
 	{
 		yield break;
 	}
+}
+
+
 }

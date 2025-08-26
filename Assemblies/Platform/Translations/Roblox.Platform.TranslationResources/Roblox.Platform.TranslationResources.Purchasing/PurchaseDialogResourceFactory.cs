@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+    static class PurchaseDialogResourceFactory
 
-internal static class PurchaseDialogResourceFactory
 {
 	public const string FullNamespace = "Purchasing.PurchaseDialog";
 
@@ -21,4 +21,7 @@ internal static class PurchaseDialogResourceFactory
 			_ => new PurchaseDialogResources_en_us(state), 
 		};
 	}
+}
+
+
 }

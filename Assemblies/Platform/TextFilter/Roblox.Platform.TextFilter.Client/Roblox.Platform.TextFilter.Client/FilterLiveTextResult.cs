@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.TextFilter.Client {
+    [DataContract]
 
-namespace Roblox.TextFilter.Client;
-
-[DataContract]
 public class FilterLiveTextResult
 {
 	[DataMember(Name = "filteredResult")]
@@ -10,4 +9,7 @@ public class FilterLiveTextResult
 
 	[DataMember(Name = "filteredResultUnderage")]
 	public virtual FilterTextResult FilteredResultUnderage { get; set; }
+}
+
+
 }

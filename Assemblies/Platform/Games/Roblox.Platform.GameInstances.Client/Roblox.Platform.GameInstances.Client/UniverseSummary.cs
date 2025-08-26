@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.GameInstances.Interfaces;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class UniverseSummary : IUniverseSummary
 
-namespace Roblox.GameInstances.Client;
-
-public class UniverseSummary : IUniverseSummary
 {
 	public static readonly UniverseSummary Empty = new UniverseSummary();
 
@@ -28,4 +27,7 @@ public class UniverseSummary : IUniverseSummary
 	public int VrPlayerCount { get; set; }
 
 	public IDictionary<string, int> PlayerCountByBotCheckStatus { get; set; }
+}
+
+
 }

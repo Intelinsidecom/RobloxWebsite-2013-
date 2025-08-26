@@ -1,9 +1,8 @@
 using System.Threading;
 using System.Threading.Tasks;
+namespace Roblox.Platform.TextFilter.Client {
+    public interface ITextFilterClientV2
 
-namespace Roblox.TextFilter.Client;
-
-public interface ITextFilterClientV2
 {
 	FilterLiveTextResult FilterLiveText(string text, IClientTextAuthor author, TextFilterUsage usage, string server, string instanceId);
 
@@ -24,4 +23,7 @@ public interface ITextFilterClientV2
 	FilterUsernameResult FilterUsername(string text, IClientTextAuthor author, bool canBypassReservedUsername);
 
 	Task<FilterUsernameResult> FilterUsernameAsync(string text, IClientTextAuthor author, bool canBypassReservedUsername, CancellationToken cancellationToken);
+}
+
+
 }

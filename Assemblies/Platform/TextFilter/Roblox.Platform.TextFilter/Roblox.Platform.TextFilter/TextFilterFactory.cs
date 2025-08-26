@@ -1,11 +1,10 @@
 using System;
 using Roblox.CommunitySift;
 using Roblox.ContentFilterApi.Client;
-using Roblox.TextFilter.Properties;
+using Roblox.Platform.TextFilter.Properties;
+namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-namespace Roblox.TextFilter;
-
-/// <summary>
 /// Factory for generating <see cref="T:Roblox.TextFilter.ITextFilter" /> objects.
 /// </summary>
 public class TextFilterFactory : ITextFilterFactory
@@ -33,4 +32,7 @@ public class TextFilterFactory : ITextFilterFactory
 		UsernameFilter usernameFilter = new UsernameFilter(@default, contentFilterClient);
 		return new MetricTrackingTextFilterDecorator(new BasicTextFilter(@default, communitySiftClient, contentFilterClient, usernameFilter));
 	}
+}
+
+
 }

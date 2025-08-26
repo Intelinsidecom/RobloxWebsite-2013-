@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface ILoginResources : ITranslationResources
 
-public interface ILoginResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -164,7 +164,7 @@ public interface ILoginResources : ITranslationResources
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging in…"
+	/// English String: "Logging inâ€¦"
 	/// </summary>
 	string LabelLoggingInSpinnerText { get; }
 
@@ -437,4 +437,7 @@ public interface ILoginResources : ITranslationResources
 	/// English String: "Your WeChat is not real-name verified. Please use a real-name verified WeChat account and try again. Please visit {url}"
 	/// </summary>
 	string ResponseWeChatNotRealNameVerified(string url);
+}
+
+
 }

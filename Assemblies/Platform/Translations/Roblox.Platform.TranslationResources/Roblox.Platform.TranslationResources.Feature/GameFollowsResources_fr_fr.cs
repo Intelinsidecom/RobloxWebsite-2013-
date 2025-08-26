@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameFollowsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -25,7 +25,7 @@ internal class GameFollowsResources_fr_fr : GameFollowsResources_en_us, IGameFol
 	/// Login dialog text for guest user
 	/// English String: "You must be logged in to follow this game. Please Login or Register to continue."
 	/// </summary>
-	public override string DescriptionLoginRequired => "Vous devez être connecté(e) pour suivre ce jeu. Veuillez vous connecter ou vous inscrire pour continuer.";
+	public override string DescriptionLoginRequired => "Vous devez Ãªtre connectÃ©(e) pour suivre ce jeu. Veuillez vous connecter ou vous inscrire pour continuer.";
 
 	/// <summary>
 	/// Key: "LabelFollow"
@@ -39,7 +39,7 @@ internal class GameFollowsResources_fr_fr : GameFollowsResources_en_us, IGameFol
 	/// Label for follow game button
 	/// English String: "Following"
 	/// </summary>
-	public override string LabelFollowing => "Abonné";
+	public override string LabelFollowing => "AbonnÃ©";
 
 	/// <summary>
 	/// Key: "LabelLoginRequired"
@@ -60,14 +60,14 @@ internal class GameFollowsResources_fr_fr : GameFollowsResources_en_us, IGameFol
 	/// Tooltip for follow game button
 	/// English String: "Limit reached. Please unfollow other games to follow this one."
 	/// </summary>
-	public override string TooltipFollowLimitReached => "Limite atteinte. Veuillez vous désabonner d'autre jeux pour pouvoir le suivre.";
+	public override string TooltipFollowLimitReached => "Limite atteinte. Veuillez vous dÃ©sabonner d'autre jeux pour pouvoir le suivre.";
 
 	/// <summary>
 	/// Key: "TooltipUnfollowGame"
 	/// Tooltip for follow game button
 	/// English String: "Unfollow Game"
 	/// </summary>
-	public override string TooltipUnfollowGame => "Se désabonner du jeu";
+	public override string TooltipUnfollowGame => "Se dÃ©sabonner du jeu";
 
 	public GameFollowsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -86,7 +86,7 @@ internal class GameFollowsResources_fr_fr : GameFollowsResources_en_us, IGameFol
 
 	protected override string _GetTemplateForDescriptionLoginRequired()
 	{
-		return "Vous devez être connecté(e) pour suivre ce jeu. Veuillez vous connecter ou vous inscrire pour continuer.";
+		return "Vous devez Ãªtre connectÃ©(e) pour suivre ce jeu. Veuillez vous connecter ou vous inscrire pour continuer.";
 	}
 
 	protected override string _GetTemplateForLabelFollow()
@@ -96,7 +96,7 @@ internal class GameFollowsResources_fr_fr : GameFollowsResources_en_us, IGameFol
 
 	protected override string _GetTemplateForLabelFollowing()
 	{
-		return "Abonné";
+		return "AbonnÃ©";
 	}
 
 	protected override string _GetTemplateForLabelLoginRequired()
@@ -111,11 +111,14 @@ internal class GameFollowsResources_fr_fr : GameFollowsResources_en_us, IGameFol
 
 	protected override string _GetTemplateForTooltipFollowLimitReached()
 	{
-		return "Limite atteinte. Veuillez vous désabonner d'autre jeux pour pouvoir le suivre.";
+		return "Limite atteinte. Veuillez vous dÃ©sabonner d'autre jeux pour pouvoir le suivre.";
 	}
 
 	protected override string _GetTemplateForTooltipUnfollowGame()
 	{
-		return "Se désabonner du jeu";
+		return "Se dÃ©sabonner du jeu";
 	}
+}
+
+
 }

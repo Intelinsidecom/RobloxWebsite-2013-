@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SourceLanguageResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,56 +11,56 @@ internal class SourceLanguageResources_zh_cjv : SourceLanguageResources_en_us, I
 	/// The label for the cancel button
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// The label for the confirm button
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "确认";
+	public override string ActionConfirm => "ç¡®è®¤";
 
 	/// <summary>
 	/// Key: "Description.SourceLanguage"
 	/// The label for source language tooltip
 	/// English String: "The source language represents the language the game has been written in."
 	/// </summary>
-	public override string DescriptionSourceLanguage => "源语言代表此游戏所使用的语言。";
+	public override string DescriptionSourceLanguage => "æºè¯­è¨€ä»£è¡¨æ­¤æ¸¸æˆæ‰€ä½¿ç”¨çš„è¯­è¨€ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.ChangeSourceLanguage"
 	/// The modal title for change source language modal
 	/// English String: "Change Source Language"
 	/// </summary>
-	public override string HeadingChangeSourceLanguage => "更改源语言";
+	public override string HeadingChangeSourceLanguage => "æ›´æ”¹æºè¯­è¨€";
 
 	/// <summary>
 	/// Key: "Label.GameSourceLanguage"
 	/// The label for source language selection dropdown
 	/// English String: "Game Source Language: "
 	/// </summary>
-	public override string LabelGameSourceLanguage => "游戏源语言：";
+	public override string LabelGameSourceLanguage => "æ¸¸æˆæºè¯­è¨€ï¼š";
 
 	/// <summary>
 	/// Key: "Label.NotSpecified"
 	/// The label for not specified in source language dropdown
 	/// English String: "Not Specified"
 	/// </summary>
-	public override string LabelNotSpecified => "未指定";
+	public override string LabelNotSpecified => "æœªæŒ‡å®š";
 
 	/// <summary>
 	/// Key: "Label.SourceLanguage"
 	/// The label for source language selection dropdown
 	/// English String: "Source Language"
 	/// </summary>
-	public override string LabelSourceLanguage => "源语言";
+	public override string LabelSourceLanguage => "æºè¯­è¨€";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "错误：发生错误。请稍后重试。";
+	public override string ResponseGeneralError => "é”™è¯¯ï¼šå‘ç”Ÿé”™è¯¯ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 
 	public SourceLanguageResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -69,12 +69,12 @@ internal class SourceLanguageResources_zh_cjv : SourceLanguageResources_en_us, I
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "确认";
+		return "ç¡®è®¤";
 	}
 
 	/// <summary>
@@ -84,41 +84,44 @@ internal class SourceLanguageResources_zh_cjv : SourceLanguageResources_en_us, I
 	/// </summary>
 	public override string DescriptionChangeSourceLanguage(string languageName)
 	{
-		return $"是否确认将此游戏的源语言更改为{languageName}？此动作应更改此游戏所使用的语言。";
+		return $"æ˜¯å¦ç¡®è®¤å°†æ­¤æ¸¸æˆçš„æºè¯­è¨€æ›´æ”¹ä¸º{languageName}ï¼Ÿæ­¤åŠ¨ä½œåº”æ›´æ”¹æ­¤æ¸¸æˆæ‰€ä½¿ç”¨çš„è¯­è¨€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeSourceLanguage()
 	{
-		return "是否确认将此游戏的源语言更改为{languageName}？此动作应更改此游戏所使用的语言。";
+		return "æ˜¯å¦ç¡®è®¤å°†æ­¤æ¸¸æˆçš„æºè¯­è¨€æ›´æ”¹ä¸º{languageName}ï¼Ÿæ­¤åŠ¨ä½œåº”æ›´æ”¹æ­¤æ¸¸æˆæ‰€ä½¿ç”¨çš„è¯­è¨€ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSourceLanguage()
 	{
-		return "源语言代表此游戏所使用的语言。";
+		return "æºè¯­è¨€ä»£è¡¨æ­¤æ¸¸æˆæ‰€ä½¿ç”¨çš„è¯­è¨€ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingChangeSourceLanguage()
 	{
-		return "更改源语言";
+		return "æ›´æ”¹æºè¯­è¨€";
 	}
 
 	protected override string _GetTemplateForLabelGameSourceLanguage()
 	{
-		return "游戏源语言：";
+		return "æ¸¸æˆæºè¯­è¨€ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelNotSpecified()
 	{
-		return "未指定";
+		return "æœªæŒ‡å®š";
 	}
 
 	protected override string _GetTemplateForLabelSourceLanguage()
 	{
-		return "源语言";
+		return "æºè¯­è¨€";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "错误：发生错误。请稍后重试。";
+		return "é”™è¯¯ï¼šå‘ç”Ÿé”™è¯¯ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
 	}
+}
+
+
 }

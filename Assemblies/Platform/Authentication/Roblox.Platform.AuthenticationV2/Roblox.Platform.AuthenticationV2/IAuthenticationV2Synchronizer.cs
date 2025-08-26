@@ -1,8 +1,7 @@
-using System.Web;
+﻿using System.Web;
+namespace Roblox.Platform.AuthenticationV2 {
+    /// <summary>
 
-namespace Roblox.AuthenticationV2;
-
-/// <summary>
 /// Synchronizes AuthenticationV1 sessions with AuthenticationV2
 /// </summary>
 public interface IAuthenticationV2Synchronizer
@@ -14,4 +13,7 @@ public interface IAuthenticationV2Synchronizer
 	/// <param name="request">The <see cref="T:System.Web.HttpRequestBase" /></param>
 	/// <param name="response">The <see cref="T:System.Web.HttpResponseBase" /></param>
 	void PreSendRequestHeaders(HttpRequestBase request, HttpResponseBase response);
+}
+
+
 }

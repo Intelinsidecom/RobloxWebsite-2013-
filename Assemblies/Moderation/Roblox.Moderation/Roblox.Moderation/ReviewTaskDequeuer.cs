@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.TrackingQueue;
+namespace Roblox.Moderationinternal {
+    class ReviewTaskDequeuer<TTask> : IReviewTaskDequeuer<TTask> where TTask : IReviewTask
 
-namespace Roblox.Platform.Moderation;
-
-internal class ReviewTaskDequeuer<TTask> : IReviewTaskDequeuer<TTask> where TTask : IReviewTask
 {
 	private readonly IQueueTracker _QueueTracker;
 
@@ -16,4 +15,7 @@ internal class ReviewTaskDequeuer<TTask> : IReviewTaskDequeuer<TTask> where TTas
 	{
 		return _QueueTracker.TryDequeueOldestItemInQueue(out message, out age);
 	}
+}
+
+
 }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
@@ -7,10 +7,9 @@ using Newtonsoft.Json;
 using Roblox.ApiClientBase;
 using Roblox.Configuration;
 using Roblox.Games.Client.Properties;
+namespace Roblox.Platform.Games.Clientpublic {
+    class GamesAuthority : GuardedApiClientBase, IGamesAuthority
 
-namespace Roblox.Games.Client;
-
-public class GamesAuthority : GuardedApiClientBase, IGamesAuthority
 {
 	private readonly Func<string> _ApiKeyGetter;
 
@@ -194,4 +193,7 @@ public class GamesAuthority : GuardedApiClientBase, IGamesAuthority
 		};
 		return Get<IDictionary<string, ServerLastUpdateInfo>>("/v1.0/GetLastUpdatedTimeForServers", queryStringParameters);
 	}
+}
+
+
 }

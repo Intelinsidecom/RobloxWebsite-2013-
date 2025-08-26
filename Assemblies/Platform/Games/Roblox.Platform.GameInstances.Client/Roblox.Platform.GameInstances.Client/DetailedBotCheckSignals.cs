@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.GameInstances.Interfaces;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class DetailedBotCheckSignals : Dictionary<DetailedBotCheckSignalKey, DetailedBotCheckSignalValue>, IDetailedBotCheckSignals
 
-namespace Roblox.GameInstances.Client;
-
-public class DetailedBotCheckSignals : Dictionary<DetailedBotCheckSignalKey, DetailedBotCheckSignalValue>, IDetailedBotCheckSignals
 {
 	public DetailedBotCheckSignals()
 	{
@@ -30,4 +29,7 @@ public class DetailedBotCheckSignals : Dictionary<DetailedBotCheckSignalKey, Det
 	{
 		return input.ToDictionary((KeyValuePair<DetailedBotCheckSignalKey, DetailedBotCheckSignalValue> entry) => (int)entry.Key, (KeyValuePair<DetailedBotCheckSignalKey, DetailedBotCheckSignalValue> entry) => (int)entry.Value);
 	}
+}
+
+
 }

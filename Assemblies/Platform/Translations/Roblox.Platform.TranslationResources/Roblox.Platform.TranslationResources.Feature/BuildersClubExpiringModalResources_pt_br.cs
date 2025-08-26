@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubExpiringModalResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,7 +11,7 @@ internal class BuildersClubExpiringModalResources_pt_br : BuildersClubExpiringMo
 	/// button text
 	/// English String: "No, thanks."
 	/// </summary>
-	public override string ActionNoThanks => "Não, obrigado.";
+	public override string ActionNoThanks => "NÃ£o, obrigado.";
 
 	/// <summary>
 	/// Key: "Action.WantToRenew"
@@ -25,28 +25,28 @@ internal class BuildersClubExpiringModalResources_pt_br : BuildersClubExpiringMo
 	/// description text
 	/// English String: "Oh, no! Your Builders Club membership has expired!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpired => "Ah não! Sua assinatura do Builders Club expirou!";
+	public override string DescriptionBuildersClubExpired => "Ah nÃ£o! Sua assinatura do Builders Club expirou!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringOneDay"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring in one day!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringOneDay => "Ah não! Sua assinatura do Builders Club expira em um dia!";
+	public override string DescriptionBuildersClubExpiringOneDay => "Ah nÃ£o! Sua assinatura do Builders Club expira em um dia!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringToday"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring today!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringToday => "Ah não! Sua assinatura do Builders Club expira hoje!";
+	public override string DescriptionBuildersClubExpiringToday => "Ah nÃ£o! Sua assinatura do Builders Club expira hoje!";
 
 	/// <summary>
 	/// Key: "Heading.DontMissRenewNow"
 	/// modal heading
 	/// English String: "Don't Miss Out - Renew Now!"
 	/// </summary>
-	public override string HeadingDontMissRenewNow => "Não perca tempo. Renove agora!";
+	public override string HeadingDontMissRenewNow => "NÃ£o perca tempo. Renove agora!";
 
 	public BuildersClubExpiringModalResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -55,7 +55,7 @@ internal class BuildersClubExpiringModalResources_pt_br : BuildersClubExpiringMo
 
 	protected override string _GetTemplateForActionNoThanks()
 	{
-		return "Não, obrigado.";
+		return "NÃ£o, obrigado.";
 	}
 
 	protected override string _GetTemplateForActionWantToRenew()
@@ -65,12 +65,12 @@ internal class BuildersClubExpiringModalResources_pt_br : BuildersClubExpiringMo
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpired()
 	{
-		return "Ah não! Sua assinatura do Builders Club expirou!";
+		return "Ah nÃ£o! Sua assinatura do Builders Club expirou!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringOneDay()
 	{
-		return "Ah não! Sua assinatura do Builders Club expira em um dia!";
+		return "Ah nÃ£o! Sua assinatura do Builders Club expira em um dia!";
 	}
 
 	/// <summary>
@@ -80,21 +80,24 @@ internal class BuildersClubExpiringModalResources_pt_br : BuildersClubExpiringMo
 	/// </summary>
 	public override string DescriptionBuildersClubExpiringSomeDays(string numDays)
 	{
-		return $"Ah não! Sua assinatura do Builders Club expira em {numDays} dias!";
+		return $"Ah nÃ£o! Sua assinatura do Builders Club expira em {numDays} dias!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringSomeDays()
 	{
-		return "Ah não! Sua assinatura do Builders Club expira em {numDays} dias!";
+		return "Ah nÃ£o! Sua assinatura do Builders Club expira em {numDays} dias!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringToday()
 	{
-		return "Ah não! Sua assinatura do Builders Club expira hoje!";
+		return "Ah nÃ£o! Sua assinatura do Builders Club expira hoje!";
 	}
 
 	protected override string _GetTemplateForHeadingDontMissRenewNow()
 	{
-		return "Não perca tempo. Renove agora!";
+		return "NÃ£o perca tempo. Renove agora!";
 	}
+}
+
+
 }

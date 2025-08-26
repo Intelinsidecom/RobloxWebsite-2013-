@@ -5,10 +5,9 @@ using Newtonsoft.Json;
 using Roblox.Collections;
 using Roblox.EventLog;
 using Roblox.Random;
+namespace Roblox.EventStream {
+    public class BufferedEventStreamer : BufferedCounterBase<string>, IEventStreamer
 
-namespace Roblox.Platform.EventStream;
-
-public class BufferedEventStreamer : BufferedCounterBase<string>, IEventStreamer
 {
 	private IEventStreamer _Streamer;
 
@@ -100,4 +99,7 @@ public class BufferedEventStreamer : BufferedCounterBase<string>, IEventStreamer
 			_Logger.Error(ex);
 		}
 	}
+}
+
+
 }

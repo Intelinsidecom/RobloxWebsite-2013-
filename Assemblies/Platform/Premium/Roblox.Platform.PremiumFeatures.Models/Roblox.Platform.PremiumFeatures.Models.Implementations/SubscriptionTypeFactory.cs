@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.PremiumFeatures.Models.Enums;
 using Roblox.PremiumFeatures.Models.Interfaces;
+namespace Roblox.Platform.PremiumFeatures.Models.Implementations {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models.Implementations;
-
-/// <summary>
 /// GetSubscriptionType
 /// </summary>
 public class SubscriptionTypeFactory : ISubscriptionTypeFactory
@@ -39,4 +38,7 @@ public class SubscriptionTypeFactory : ISubscriptionTypeFactory
 			_ => SubscriptionType.Unknown, 
 		};
 	}
+}
+
+
 }

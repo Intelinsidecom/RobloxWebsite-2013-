@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using Roblox.AuthenticationV2.Client.Properties;
 using Roblox.Http;
 using Roblox.Http.Client;
 using Roblox.Instrumentation;
+namespace Roblox.Platform.AuthenticationV2.Client {
+    /// <inheritdoc cref="T:Roblox.AuthenticationV2.Client.IAuthenticationV2Client" />
 
-namespace Roblox.AuthenticationV2.Client;
-
-/// <inheritdoc cref="T:Roblox.AuthenticationV2.Client.IAuthenticationV2Client" />
 public class AuthenticationV2Client : HttpRequestSender, IAuthenticationV2Client
 {
 	public AuthenticationV2Client(ICounterRegistry counterRegistry)
@@ -63,4 +62,7 @@ public class AuthenticationV2Client : HttpRequestSender, IAuthenticationV2Client
 		};
 		SendRequestWithJsonBody(HttpMethod.Post, "authentication/DeleteAllRobloxUserSessions", request);
 	}
+}
+
+
 }

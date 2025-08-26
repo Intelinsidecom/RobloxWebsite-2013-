@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PaymentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,13 +10,13 @@ internal class PaymentResources_pt_br : PaymentResources_en_us, IPaymentResource
 	/// Key: "Message.FraudBlockedPaymentCheckInfoErrorMessage"
 	/// English String: "Unfortunately we are unable to process your payment. Please confirm the billing information entered matches the card provided and try again. If this fails, please try another card or different payment method.\t"
 	/// </summary>
-	public override string MessageFraudBlockedPaymentCheckInfoErrorMessage => "Infelizmente, não conseguimos processar seu pagamento. Verifique se as informações de cobrança estão de acordo com o cartão fornecido e tente novamente. Se isto não funcionar, tente com um cartão ou método de pagamento diferente.\t";
+	public override string MessageFraudBlockedPaymentCheckInfoErrorMessage => "Infelizmente, nÃ£o conseguimos processar seu pagamento. Verifique se as informaÃ§Ãµes de cobranÃ§a estÃ£o de acordo com o cartÃ£o fornecido e tente novamente. Se isto nÃ£o funcionar, tente com um cartÃ£o ou mÃ©todo de pagamento diferente.\t";
 
 	/// <summary>
 	/// Key: "Message.FraudWarningForUnder13WithCreditCard"
 	/// English String: "Make sure you have your parents permission before using their credit cards. Card owners may be contacted for confirmation. Using a card without permission will result in your account being deleted."
 	/// </summary>
-	public override string MessageFraudWarningForUnder13WithCreditCard => "Certifique-se de ter a permissão dos seus responsáveis antes de usar seu cartão de crédito. Os donos do cartão podem ser contatados para confirmar a compra. Usar um cartão sem permissão fará com que sua conta seja apagada.";
+	public override string MessageFraudWarningForUnder13WithCreditCard => "Certifique-se de ter a permissÃ£o dos seus responsÃ¡veis antes de usar seu cartÃ£o de crÃ©dito. Os donos do cartÃ£o podem ser contatados para confirmar a compra. Usar um cartÃ£o sem permissÃ£o farÃ¡ com que sua conta seja apagada.";
 
 	public PaymentResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -25,7 +25,7 @@ internal class PaymentResources_pt_br : PaymentResources_en_us, IPaymentResource
 
 	protected override string _GetTemplateForMessageFraudBlockedPaymentCheckInfoErrorMessage()
 	{
-		return "Infelizmente, não conseguimos processar seu pagamento. Verifique se as informações de cobrança estão de acordo com o cartão fornecido e tente novamente. Se isto não funcionar, tente com um cartão ou método de pagamento diferente.\t";
+		return "Infelizmente, nÃ£o conseguimos processar seu pagamento. Verifique se as informaÃ§Ãµes de cobranÃ§a estÃ£o de acordo com o cartÃ£o fornecido e tente novamente. Se isto nÃ£o funcionar, tente com um cartÃ£o ou mÃ©todo de pagamento diferente.\t";
 	}
 
 	/// <summary>
@@ -34,12 +34,12 @@ internal class PaymentResources_pt_br : PaymentResources_en_us, IPaymentResource
 	/// </summary>
 	public override string MessageFraudBlockedPaymentErrorMessage(string linkStart, string linkEnd)
 	{
-		return $"Sua cobrança foi bloqueada devido a atividade suspeita. Se você acha que isto é um erro, contate-nos em {linkStart}roblox.com/support{linkEnd}.";
+		return $"Sua cobranÃ§a foi bloqueada devido a atividade suspeita. Se vocÃª acha que isto Ã© um erro, contate-nos em {linkStart}roblox.com/support{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageFraudBlockedPaymentErrorMessage()
 	{
-		return "Sua cobrança foi bloqueada devido a atividade suspeita. Se você acha que isto é um erro, contate-nos em {linkStart}roblox.com/support{linkEnd}.";
+		return "Sua cobranÃ§a foi bloqueada devido a atividade suspeita. Se vocÃª acha que isto Ã© um erro, contate-nos em {linkStart}roblox.com/support{linkEnd}.";
 	}
 
 	/// <summary>
@@ -49,16 +49,19 @@ internal class PaymentResources_pt_br : PaymentResources_en_us, IPaymentResource
 	/// </summary>
 	public override string MessageFraudForUnder13UsingCreditCard(string lineStart, string lineEnd)
 	{
-		return $"Certifique-se de ter a permissão dos seus responsáveis antes de usar seu cartão de crédito. Os donos do cartão podem ser contatados para confirmar a compra.{lineStart}Usar um cartão sem permissão fará com que sua conta seja apagada.{lineEnd}";
+		return $"Certifique-se de ter a permissÃ£o dos seus responsÃ¡veis antes de usar seu cartÃ£o de crÃ©dito. Os donos do cartÃ£o podem ser contatados para confirmar a compra.{lineStart}Usar um cartÃ£o sem permissÃ£o farÃ¡ com que sua conta seja apagada.{lineEnd}";
 	}
 
 	protected override string _GetTemplateForMessageFraudForUnder13UsingCreditCard()
 	{
-		return "Certifique-se de ter a permissão dos seus responsáveis antes de usar seu cartão de crédito. Os donos do cartão podem ser contatados para confirmar a compra.{lineStart}Usar um cartão sem permissão fará com que sua conta seja apagada.{lineEnd}";
+		return "Certifique-se de ter a permissÃ£o dos seus responsÃ¡veis antes de usar seu cartÃ£o de crÃ©dito. Os donos do cartÃ£o podem ser contatados para confirmar a compra.{lineStart}Usar um cartÃ£o sem permissÃ£o farÃ¡ com que sua conta seja apagada.{lineEnd}";
 	}
 
 	protected override string _GetTemplateForMessageFraudWarningForUnder13WithCreditCard()
 	{
-		return "Certifique-se de ter a permissão dos seus responsáveis antes de usar seu cartão de crédito. Os donos do cartão podem ser contatados para confirmar a compra. Usar um cartão sem permissão fará com que sua conta seja apagada.";
+		return "Certifique-se de ter a permissÃ£o dos seus responsÃ¡veis antes de usar seu cartÃ£o de crÃ©dito. Os donos do cartÃ£o podem ser contatados para confirmar a compra. Usar um cartÃ£o sem permissÃ£o farÃ¡ com que sua conta seja apagada.";
 	}
+}
+
+
 }

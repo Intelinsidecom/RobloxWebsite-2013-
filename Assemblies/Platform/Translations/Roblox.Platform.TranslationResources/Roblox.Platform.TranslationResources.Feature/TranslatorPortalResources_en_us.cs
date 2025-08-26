@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class TranslatorPortalResources_en_us : TranslationResourcesBase, ITranslatorPortalResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class TranslatorPortalResources_en_us : TranslationResourcesBase, ITranslatorPortalResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -374,4 +373,7 @@ internal class TranslatorPortalResources_en_us : TranslationResourcesBase, ITran
 	{
 		return "Translator";
 	}
+}
+
+
 }

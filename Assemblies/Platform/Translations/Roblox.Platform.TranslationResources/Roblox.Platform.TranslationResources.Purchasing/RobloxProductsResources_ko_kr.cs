@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RobloxProductsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class RobloxProductsResources_ko_kr : RobloxProductsResources_en_us, IR
 	/// Key: "Heading.Sorry"
 	/// English String: "Sorry"
 	/// </summary>
-	public override string HeadingSorry => "죄송합니다";
+	public override string HeadingSorry => "ì£„ì†¡í•©ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Message.BuyRobuxToCustomizeAvatar"
 	/// English String: "Buy Robux to customize your avatar and get items in game!"
 	/// </summary>
-	public override string MessageBuyRobuxToCustomizeAvatar => "Robux를 구매하여 아바타도 꾸미고 게임 아이템도 구입해보세요!";
+	public override string MessageBuyRobuxToCustomizeAvatar => "Robuxë¥¼ êµ¬ë§¤í•˜ì—¬ ì•„ë°”íƒ€ë„ ê¾¸ë¯¸ê³  ê²Œìž„ ì•„ì´í…œë„ êµ¬ìž…í•´ë³´ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Message.TryAgainLater"
 	/// English String: "Robux purchases are temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageTryAgainLater => "일시적으로 Robux를 구입할 수 없습니다. 나중에 다시 시도하세요.";
+	public override string MessageTryAgainLater => "ì¼ì‹œì ìœ¼ë¡œ Robuxë¥¼ êµ¬ìž…í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	public RobloxProductsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -31,16 +31,19 @@ internal class RobloxProductsResources_ko_kr : RobloxProductsResources_en_us, IR
 
 	protected override string _GetTemplateForHeadingSorry()
 	{
-		return "죄송합니다";
+		return "ì£„ì†¡í•©ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForMessageBuyRobuxToCustomizeAvatar()
 	{
-		return "Robux를 구매하여 아바타도 꾸미고 게임 아이템도 구입해보세요!";
+		return "Robuxë¥¼ êµ¬ë§¤í•˜ì—¬ ì•„ë°”íƒ€ë„ ê¾¸ë¯¸ê³  ê²Œìž„ ì•„ì´í…œë„ êµ¬ìž…í•´ë³´ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForMessageTryAgainLater()
 	{
-		return "일시적으로 Robux를 구입할 수 없습니다. 나중에 다시 시도하세요.";
+		return "ì¼ì‹œì ìœ¼ë¡œ Robuxë¥¼ êµ¬ìž…í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
+}
+
+
 }

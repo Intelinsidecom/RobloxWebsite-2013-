@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGroupsResources : ITranslationResources
 
-public interface IGroupsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.AdvertiseGroup"
@@ -1697,4 +1697,7 @@ public interface IGroupsResources : ITranslationResources
 	/// English String: "{actor} reverted asset {item} from version {version} to {oldVersion}"
 	/// </summary>
 	string MessageUpdateAssetRevert(string actor, string item, string version, string oldVersion);
+}
+
+
 }

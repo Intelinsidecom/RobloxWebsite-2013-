@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class PremiumFeatureActivationTaskFactory : IPremiumFeatureActivationTaskFactory
 
-namespace Roblox.PremiumFeatures;
-
-public class PremiumFeatureActivationTaskFactory : IPremiumFeatureActivationTaskFactory
 {
 	public PremiumFeature RequestPremiumFeatureActivation(long accountId, int premiumFeatureId)
 	{
@@ -14,4 +13,7 @@ public class PremiumFeatureActivationTaskFactory : IPremiumFeatureActivationTask
 		PremiumFeatureActivationTask.CreateNew(accountId, premiumFeature);
 		return premiumFeature;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Marketing;
+﻿namespace Roblox.Marketing {
+    /// <summary>
 
-/// <summary>
 /// Creates and Gets SponsoredPageDeviceTypes which are used to target sponsored page based on device types.  
 /// </summary>
 public interface ISponsoredPageDeviceTypeFactory
@@ -17,4 +17,7 @@ public interface ISponsoredPageDeviceTypeFactory
 	/// <param name="sponsoredPageId">The sponsored page id.</param>
 	/// <param name="deviceTypesBitMasked">Bit masked device types.</param>
 	ISponsoredPageDeviceType CreateSponsoredPageDeviceType(int sponsoredPageId, long deviceTypesBitMasked);
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class BuildersClubPanelResources_en_us : TranslationResourcesBase, IBuildersClubPanelResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class BuildersClubPanelResources_en_us : TranslationResourcesBase, IBuildersClubPanelResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -45,9 +44,9 @@ internal class BuildersClubPanelResources_en_us : TranslationResourcesBase, IBui
 	/// <summary>
 	/// Key: "Description.BuyRobux"
 	/// description text
-	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. You’ll need Robux to make it all happen. What are you waiting for?"
+	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. Youâ€™ll need Robux to make it all happen. What are you waiting for?"
 	/// </summary>
-	public virtual string DescriptionBuyRobux => "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. You’ll need Robux to make it all happen. What are you waiting for?";
+	public virtual string DescriptionBuyRobux => "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. Youâ€™ll need Robux to make it all happen. What are you waiting for?";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobux"
@@ -245,7 +244,7 @@ internal class BuildersClubPanelResources_en_us : TranslationResourcesBase, IBui
 
 	protected virtual string _GetTemplateForDescriptionBuyRobux()
 	{
-		return "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. You’ll need Robux to make it all happen. What are you waiting for?";
+		return "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. Youâ€™ll need Robux to make it all happen. What are you waiting for?";
 	}
 
 	/// <summary>
@@ -360,4 +359,7 @@ internal class BuildersClubPanelResources_en_us : TranslationResourcesBase, IBui
 	{
 		return "Roblox Gamecards";
 	}
+}
+
+
 }

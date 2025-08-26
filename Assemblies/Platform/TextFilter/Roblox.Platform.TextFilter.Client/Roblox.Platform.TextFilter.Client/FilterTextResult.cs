@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.TextFilter.Client {
+    [DataContract]
 
-namespace Roblox.TextFilter.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 public class FilterTextResult
 {
@@ -16,4 +15,7 @@ public class FilterTextResult
 
 	[DataMember(Name = "triggeredModerationCategories")]
 	public virtual ICollection<int> TriggeredModerationCategories { get; set; }
+}
+
+
 }

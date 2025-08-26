@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PresenceResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class PresenceResources_fr_fr : PresenceResources_en_us, IPresenceResou
 	/// Key: "Label.Creating"
 	/// English String: "Creating"
 	/// </summary>
-	public override string LabelCreating => "Création";
+	public override string LabelCreating => "CrÃ©ation";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "Déconnecté";
+	public override string LabelOffline => "DÃ©connectÃ©";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "Connecté";
+	public override string LabelOnline => "ConnectÃ©";
 
 	/// <summary>
 	/// Key: "Label.Playing"
@@ -37,7 +37,7 @@ internal class PresenceResources_fr_fr : PresenceResources_en_us, IPresenceResou
 
 	protected override string _GetTemplateForLabelCreating()
 	{
-		return "Création";
+		return "CrÃ©ation";
 	}
 
 	/// <summary>
@@ -46,22 +46,22 @@ internal class PresenceResources_fr_fr : PresenceResources_en_us, IPresenceResou
 	/// </summary>
 	public override string LabelCreatingGame(string placeName)
 	{
-		return $"Crée {placeName}";
+		return $"CrÃ©e {placeName}";
 	}
 
 	protected override string _GetTemplateForLabelCreatingGame()
 	{
-		return "Crée {placeName}";
+		return "CrÃ©e {placeName}";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "Déconnecté";
+		return "DÃ©connectÃ©";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "Connecté";
+		return "ConnectÃ©";
 	}
 
 	protected override string _GetTemplateForLabelPlaying()
@@ -75,11 +75,14 @@ internal class PresenceResources_fr_fr : PresenceResources_en_us, IPresenceResou
 	/// </summary>
 	public override string LabelPlayingGame(string placeName)
 	{
-		return $"Joue à {placeName}";
+		return $"Joue Ã  {placeName}";
 	}
 
 	protected override string _GetTemplateForLabelPlayingGame()
 	{
-		return "Joue à {placeName}";
+		return "Joue Ã  {placeName}";
 	}
+}
+
+
 }

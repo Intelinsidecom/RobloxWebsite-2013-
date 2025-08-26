@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides HomeResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -40,7 +40,7 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "ActionWhatAreYouUpto"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string ActionWhatAreYouUpto => "O que você está fazendo?";
+	public override string ActionWhatAreYouUpto => "O que vocÃª estÃ¡ fazendo?";
 
 	/// <summary>
 	/// Key: "HeadingBlogNews"
@@ -94,7 +94,7 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "LabelAnnouncement"
 	/// English String: "Announcement"
 	/// </summary>
-	public override string LabelAnnouncement => "Anúncio";
+	public override string LabelAnnouncement => "AnÃºncio";
 
 	/// <summary>
 	/// Key: "LabelCreateEarn"
@@ -112,19 +112,19 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "LabelStatusUpdateFailed"
 	/// English String: "Status update failed."
 	/// </summary>
-	public override string LabelStatusUpdateFailed => "Falha na atualização do status.";
+	public override string LabelStatusUpdateFailed => "Falha na atualizaÃ§Ã£o do status.";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoBlank"
 	/// English String: "Update cannot be blank. Please try again."
 	/// </summary>
-	public override string ResponseErrorNoBlank => "Atualização não pode ficar em branco. Tente novamente.";
+	public override string ResponseErrorNoBlank => "AtualizaÃ§Ã£o nÃ£o pode ficar em branco. Tente novamente.";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoLogin"
 	/// English String: "Please log into your account."
 	/// </summary>
-	public override string ResponseErrorNoLogin => "Conecte-se à sua conta.";
+	public override string ResponseErrorNoLogin => "Conecte-se Ã  sua conta.";
 
 	/// <summary>
 	/// Key: "ResponseErrorOther"
@@ -136,7 +136,7 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "ResponseErrorTooManyUpdates"
 	/// English String: "Too many updates. Please try again later."
 	/// </summary>
-	public override string ResponseErrorTooManyUpdates => "Atualizações excessivas. Tente de novo mais tarde.";
+	public override string ResponseErrorTooManyUpdates => "AtualizaÃ§Ãµes excessivas. Tente de novo mais tarde.";
 
 	public HomeResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -170,7 +170,7 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForActionWhatAreYouUpto()
 	{
-		return "O que você está fazendo?";
+		return "O que vocÃª estÃ¡ fazendo?";
 	}
 
 	protected override string _GetTemplateForHeadingBlogNews()
@@ -229,7 +229,7 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForLabelAnnouncement()
 	{
-		return "Anúncio";
+		return "AnÃºncio";
 	}
 
 	protected override string _GetTemplateForLabelCreateEarn()
@@ -243,12 +243,12 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 	/// </summary>
 	public override string LabelGreeting(string username)
 	{
-		return $"Olá, {username}!";
+		return $"OlÃ¡, {username}!";
 	}
 
 	protected override string _GetTemplateForLabelGreeting()
 	{
-		return "Olá, {username}!";
+		return "OlÃ¡, {username}!";
 	}
 
 	protected override string _GetTemplateForLabelSharing()
@@ -258,17 +258,17 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForLabelStatusUpdateFailed()
 	{
-		return "Falha na atualização do status.";
+		return "Falha na atualizaÃ§Ã£o do status.";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoBlank()
 	{
-		return "Atualização não pode ficar em branco. Tente novamente.";
+		return "AtualizaÃ§Ã£o nÃ£o pode ficar em branco. Tente novamente.";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoLogin()
 	{
-		return "Conecte-se à sua conta.";
+		return "Conecte-se Ã  sua conta.";
 	}
 
 	protected override string _GetTemplateForResponseErrorOther()
@@ -278,6 +278,9 @@ internal class HomeResources_pt_br : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForResponseErrorTooManyUpdates()
 	{
-		return "Atualizações excessivas. Tente de novo mais tarde.";
+		return "AtualizaÃ§Ãµes excessivas. Tente de novo mais tarde.";
 	}
+}
+
+
 }

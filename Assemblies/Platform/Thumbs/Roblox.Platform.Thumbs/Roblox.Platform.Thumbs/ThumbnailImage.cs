@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Imaging;
@@ -10,10 +10,9 @@ using Roblox.Common;
 using Roblox.Controls;
 using Roblox.Platform.Assets;
 using Roblox.Platform.AudioRightsManagement;
+namespace Roblox.Platform.Thumbs {
+    /// <summary>
 
-namespace Roblox.Thumbs;
-
-/// <summary>
 /// Base class for Thumbnail image controls
 /// </summary>
 public abstract class ThumbnailImage : Roblox.Controls.Image, IScriptControl
@@ -216,4 +215,7 @@ public abstract class ThumbnailImage : Roblox.Controls.Image, IScriptControl
 		yield return new ScriptReference("Roblox.Thumbs.Image.js", "Roblox.Thumbs");
 		yield return GetThumbsScriptReference();
 	}
+}
+
+
 }

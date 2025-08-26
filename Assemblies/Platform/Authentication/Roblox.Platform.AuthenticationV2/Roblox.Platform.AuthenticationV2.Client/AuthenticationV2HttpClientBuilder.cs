@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Net;
 using Roblox.AuthenticationV2.Client.Properties;
 using Roblox.Http;
@@ -7,10 +7,9 @@ using Roblox.Http.Client.Monitoring;
 using Roblox.Instrumentation;
 using Roblox.Pipeline;
 using Roblox.Sentinels.CircuitBreakerPolicy;
+namespace Roblox.Platform.AuthenticationV2.Client {
+    /// <inheritdoc />
 
-namespace Roblox.AuthenticationV2.Client;
-
-/// <inheritdoc />
 /// <summary>
 /// A class for building <see cref="T:Roblox.Http.Client.IHttpClient" />s for the AuthenticationV2 Service
 /// </summary>
@@ -50,4 +49,7 @@ internal class AuthenticationV2HttpClientBuilder : HttpClientBuilder
 		new CircuitBreakerPolicyMetricsEventHandler(counterRegistry).RegisterEvents(circuitBreakerPolicy, "Roblox.GuardedApiClientV2", clientSettings.ClientName);
 		AddHandlerAfter<RequestFailureThrowsHandler>(new CircuitBreakerHandler(circuitBreakerPolicy));
 	}
+}
+
+
 }

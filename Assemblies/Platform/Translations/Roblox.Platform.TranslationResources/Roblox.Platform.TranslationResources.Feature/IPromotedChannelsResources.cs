@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPromotedChannelsResources : ITranslationResources
 
-public interface IPromotedChannelsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.AddLink"
@@ -141,4 +141,7 @@ public interface IPromotedChannelsResources : ITranslationResources
 	/// English String: "Cannot have more than one {socialMediaType} social media links."
 	/// </summary>
 	string MessageSocialLinkTypeLimitError(string socialMediaType);
+}
+
+
 }

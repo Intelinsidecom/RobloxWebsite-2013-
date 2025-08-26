@@ -1,8 +1,10 @@
+﻿using System;
 using System.Collections.Generic;
+using Roblox.EventStream.WebEvents.EventArgs;
+using Roblox.EventStream.WebEvents;
+namespace Roblox.EventStream.WebEvents {
+    public class GameEntriesDisplayEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class GameEntriesDisplayEventArgs : WebEventArgs
 {
 	public byte? SortFilter { get; set; }
 
@@ -16,3 +18,11 @@ public class GameEntriesDisplayEventArgs : WebEventArgs
 
 	public IReadOnlyCollection<long> PlaceIds { get; set; }
 }
+
+
+}
+
+
+
+
+

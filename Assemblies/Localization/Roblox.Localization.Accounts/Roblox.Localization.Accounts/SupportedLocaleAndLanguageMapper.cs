@@ -1,10 +1,9 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Core;
+namespace Roblox.Localization.Accountsinternal {
+    class SupportedLocaleAndLanguageMapper : ISupportedLocaleAndLanguageMapper
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class SupportedLocaleAndLanguageMapper : ISupportedLocaleAndLanguageMapper
 {
 	private readonly ICoreLocalizationAccessor _CoreLocalizationAccessor;
 
@@ -46,4 +45,7 @@ internal class SupportedLocaleAndLanguageMapper : ISupportedLocaleAndLanguageMap
 		}
 		return _CoreLocalizationAccessor.GetDeviceReportedLocale(new DeviceReportedLocaleIdentifier(accountLocaleEntity.ObservedLocaleId))?.LanguageFamily;
 	}
+}
+
+
 }

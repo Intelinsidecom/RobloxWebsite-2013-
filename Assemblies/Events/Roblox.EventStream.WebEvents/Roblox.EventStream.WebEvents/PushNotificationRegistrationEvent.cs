@@ -1,10 +1,11 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class PushNotificationRegistrationEvent : WebEventBase
 
-public class PushNotificationRegistrationEvent : WebEventBase
 {
 	private const string _Name = "pushNotificationRegistration";
 
-	public PushNotificationRegistrationEvent(EventStreamer streamer, PushNotificationRegistrationEventArgs args)
+	public PushNotificationRegistrationEvent(IEventStreamer streamer, PushNotificationRegistrationEventArgs args)
 		: base(streamer, "pushNotificationRegistration", args)
 	{
 		base.IsTrustedSource = true;
@@ -12,3 +13,12 @@ public class PushNotificationRegistrationEvent : WebEventBase
 		AddEventArg("platformType", args.PlatformType);
 	}
 }
+
+
+}
+
+
+
+
+
+

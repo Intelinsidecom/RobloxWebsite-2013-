@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ContactUpsellResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,70 +11,70 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// This action will allow the user to add their email.
 	/// English String: "Add Email"
 	/// </summary>
-	public override string ActionAddEmail => "E-Mail-Adresse hinzufügen";
+	public override string ActionAddEmail => "E-Mail-Adresse hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.AddEmailLink"
 	/// This action will guide the user to add their email.
 	/// English String: "Add email"
 	/// </summary>
-	public override string ActionAddEmailLink => "E-Mail-Adresse hinzufügen";
+	public override string ActionAddEmailLink => "E-Mail-Adresse hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.AddEmailNow"
 	/// This action will launch a modal where the user can enter their email
 	/// English String: "Add Email Now"
 	/// </summary>
-	public override string ActionAddEmailNow => "E-Mail-Adresse jetzt hinzufügen";
+	public override string ActionAddEmailNow => "E-Mail-Adresse jetzt hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.AddNow"
 	/// Add Now
 	/// English String: "Add Now"
 	/// </summary>
-	public override string ActionAddNow => "Jetzt hinzufügen";
+	public override string ActionAddNow => "Jetzt hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.AddParentsEmail"
 	/// This action will allow the user to add their parent's email.
 	/// English String: "Add Parent's Email"
 	/// </summary>
-	public override string ActionAddParentsEmail => "E-Mail-Adresse deiner Eltern hinzufügen";
+	public override string ActionAddParentsEmail => "E-Mail-Adresse deiner Eltern hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.AddParentsEmailNow"
 	/// This action will launch a modal where the user can enter their parent's email
 	/// English String: "Add Parent's Email Now"
 	/// </summary>
-	public override string ActionAddParentsEmailNow => "E-Mail-Adresse deiner Eltern jetzt hinzufügen";
+	public override string ActionAddParentsEmailNow => "E-Mail-Adresse deiner Eltern jetzt hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.AddPhone"
 	/// This action will allow the user to add their phone number.
 	/// English String: "Add Phone Number"
 	/// </summary>
-	public override string ActionAddPhone => "Handynummer hinzufügen";
+	public override string ActionAddPhone => "Handynummer hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.AddPhoneNow"
 	/// This action will launch a modal where the user can enter their phone number
 	/// English String: "Add Phone Now"
 	/// </summary>
-	public override string ActionAddPhoneNow => "Handynummer jetzt hinzufügen";
+	public override string ActionAddPhoneNow => "Handynummer jetzt hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// This action will allow the user to close the dialog box.
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "Schließen";
+	public override string ActionClose => "SchlieÃŸen";
 
 	/// <summary>
 	/// Key: "Action.ConfirmEmail"
 	/// This action will allow the user to confirm their email
 	/// English String: "Confirm Email"
 	/// </summary>
-	public override string ActionConfirmEmail => "E-Mail-Adresse bestätigen";
+	public override string ActionConfirmEmail => "E-Mail-Adresse bestÃ¤tigen";
 
 	/// <summary>
 	/// Key: "Action.EditPhoneNumber"
@@ -130,14 +130,14 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// Do not use. Use Action.AddParentsEmail instead.
 	/// English String: "Add Parent's Email"
 	/// </summary>
-	public override string ActionsAddParentsEmail => "E-Mail-Adresse deiner Eltern hinzufügen";
+	public override string ActionsAddParentsEmail => "E-Mail-Adresse deiner Eltern hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Heading.AddEmail"
 	/// Add Email
 	/// English String: "Add Email"
 	/// </summary>
-	public override string HeadingAddEmail => "E-Mail-Adresse hinzufügen";
+	public override string HeadingAddEmail => "E-Mail-Adresse hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Heading.DefaultHeader"
@@ -151,7 +151,7 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// This heading entices users to confirm their email in order to receive a free hat
 	/// English String: "Don't forget to confirm!"
 	/// </summary>
-	public override string HeadingDontForgetToConfirm => "Bestätigung nicht vergessen!";
+	public override string HeadingDontForgetToConfirm => "BestÃ¤tigung nicht vergessen!";
 
 	/// <summary>
 	/// Key: "Heading.Error"
@@ -193,7 +193,7 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// AddPhone
 	/// English String: "AddPhone"
 	/// </summary>
-	public override string LabelAddPhone => "Handy hinzufügen";
+	public override string LabelAddPhone => "Handy hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.EmailPlaceholder"
@@ -214,14 +214,14 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// Invalid email
 	/// English String: "Invalid email"
 	/// </summary>
-	public override string LabelInvalidEmail => "Ungültige E-Mail-Adresse";
+	public override string LabelInvalidEmail => "UngÃ¼ltige E-Mail-Adresse";
 
 	/// <summary>
 	/// Key: "Label.InvalidPhoneNumber"
 	/// Invalid phone number
 	/// English String: "Invalid phone number"
 	/// </summary>
-	public override string LabelInvalidPhoneNumber => "Ungültige Handynummer";
+	public override string LabelInvalidPhoneNumber => "UngÃ¼ltige Handynummer";
 
 	/// <summary>
 	/// Key: "Label.NoEmail"
@@ -277,21 +277,21 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// shown to user when we try to upsell them on linking an email to their account
 	/// English String: "Protect your account with an email!"
 	/// </summary>
-	public override string LabelProtectAccountWithEmail => "Schütze dein Konto mit einer E-Mail-Adresse!";
+	public override string LabelProtectAccountWithEmail => "SchÃ¼tze dein Konto mit einer E-Mail-Adresse!";
 
 	/// <summary>
 	/// Key: "Label.ProtectAccountWithParentsEmail"
 	/// shown to user when we try to upsell them on linking their parent's email to their account
 	/// English String: "Protect your account with your parent's email!"
 	/// </summary>
-	public override string LabelProtectAccountWithParentsEmail => "Schütze dein Konto mit der E-Mail-Adresse deiner Eltern!";
+	public override string LabelProtectAccountWithParentsEmail => "SchÃ¼tze dein Konto mit der E-Mail-Adresse deiner Eltern!";
 
 	/// <summary>
 	/// Key: "Label.ProtectAccountWithPhone"
 	/// shown to user when we try to upsell them on linking a phone number to their account
 	/// English String: "Protect your account with a phone number!"
 	/// </summary>
-	public override string LabelProtectAccountWithPhone => "Schütze dein Konto mit einer Telefonnummer!";
+	public override string LabelProtectAccountWithPhone => "SchÃ¼tze dein Konto mit einer Telefonnummer!";
 
 	/// <summary>
 	/// Key: "Label.ResendEmail"
@@ -305,14 +305,14 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// shown to user when we try to get them to verify their email
 	/// English String: "Verify your email to protect your account!"
 	/// </summary>
-	public override string LabelVerifyEmailToProtectAccount => "Verifiziere deine E-Mail-Adresse, um dein Konto zu schützen!";
+	public override string LabelVerifyEmailToProtectAccount => "Verifiziere deine E-Mail-Adresse, um dein Konto zu schÃ¼tzen!";
 
 	/// <summary>
 	/// Key: "Label.VerifyParentsEmailToProtectAccount"
 	/// shown to user when we try to get them to verify their parent's email
 	/// English String: "Verify your parent's email to protect your account!"
 	/// </summary>
-	public override string LabelVerifyParentsEmailToProtectAccount => "Verifiziere die E-Mail-Adresse deiner Eltern, um dein Konto zu schützen!";
+	public override string LabelVerifyParentsEmailToProtectAccount => "Verifiziere die E-Mail-Adresse deiner Eltern, um dein Konto zu schÃ¼tzen!";
 
 	/// <summary>
 	/// Key: "Label.VerifyPasswordPlaceholder"
@@ -326,21 +326,21 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// error message
 	/// English String: "An error occurred loading the country list"
 	/// </summary>
-	public override string ResponseCountryListError => "Beim Laden der Länderliste ist ein Fehler aufgetreten.";
+	public override string ResponseCountryListError => "Beim Laden der LÃ¤nderliste ist ein Fehler aufgetreten.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.AddEmailForFreeHatOver13"
 	/// This message is to persuade the user to add their email address to their account for a free hat.
 	/// English String: "Please add your email to receive a free hat and ensure that you never get locked out of your account!"
 	/// </summary>
-	public override string ResponseDialogAddEmailForFreeHatOver13 => "Bitte füge deine E-Mail-Adresse hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
+	public override string ResponseDialogAddEmailForFreeHatOver13 => "Bitte fÃ¼ge deine E-Mail-Adresse hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
 
 	/// <summary>
 	/// Key: "Response.Dialog.AddEmailForFreeHatUnder13"
 	/// This message is to persuade the user to add their parent's email address to their account for a free hat.
 	/// English String: "Please add your parent's email to receive a free hat and ensure that you never get locked out of your account!"
 	/// </summary>
-	public override string ResponseDialogAddEmailForFreeHatUnder13 => "Bitte füge die E-Mail-Adresse deiner Eltern hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
+	public override string ResponseDialogAddEmailForFreeHatUnder13 => "Bitte fÃ¼ge die E-Mail-Adresse deiner Eltern hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
 
 	/// <summary>
 	/// Key: "Response.Dialog.AddEmailInstructionsOver13"
@@ -361,70 +361,70 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// This message is to persuade the user to add their email address to their account.
 	/// English String: "Please add an email address to your account to ensure that you can always access your Roblox account."
 	/// </summary>
-	public override string ResponseDialogAddEmailOver13 => "Bitte füge eine E-Mail-Adresse zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Roblox-Konto zugreifen kannst.";
+	public override string ResponseDialogAddEmailOver13 => "Bitte fÃ¼ge eine E-Mail-Adresse zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Roblox-Konto zugreifen kannst.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.AddEmailUnder13"
 	/// This message is to persuade the user to add their email address to their account.
 	/// English String: "Please add your parent's email address to your account to ensure that you can always access your Roblox account."
 	/// </summary>
-	public override string ResponseDialogAddEmailUnder13 => "Bitte füge die E-Mail-Adresse deiner Eltern zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Roblox-Konto zugreifen kannst.";
+	public override string ResponseDialogAddEmailUnder13 => "Bitte fÃ¼ge die E-Mail-Adresse deiner Eltern zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Roblox-Konto zugreifen kannst.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.AddPhone"
 	/// This message is to persuade the user to add their phone number to their account.
 	/// English String: "Please add a phone number to your account to ensure that you never get locked out of your account."
 	/// </summary>
-	public override string ResponseDialogAddPhone => "Bitte füge eine Handynummer zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Konto zugreifen kannst.";
+	public override string ResponseDialogAddPhone => "Bitte fÃ¼ge eine Handynummer zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Konto zugreifen kannst.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.AddPhoneForFreeHat"
 	/// This message is to persuade the user to add their phone number to their account for a free hat.
 	/// English String: "Please add your phone number to receive a free hat and ensure that you never get locked out of your account!"
 	/// </summary>
-	public override string ResponseDialogAddPhoneForFreeHat => "Bitte füge deine Handynummer hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
+	public override string ResponseDialogAddPhoneForFreeHat => "Bitte fÃ¼ge deine Handynummer hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
 
 	/// <summary>
 	/// Key: "Response.Dialog.AddPhoneInstructions"
 	/// This message is to instruct the user on how to add their phone number to their account.
 	/// English String: "Please confirm your country code and enter your phone number. We will send a text message to complete verification. (Note: Text messaging charges may apply)"
 	/// </summary>
-	public override string ResponseDialogAddPhoneInstructions => "Bitte bestätige deine Ländervorwahl und gib deine Handynummer ein. Wir werden dir eine SMS schicken, um die Verifizierung abzuschließen. (Hinweis: Es können SMS-Kosten anfallen.)";
+	public override string ResponseDialogAddPhoneInstructions => "Bitte bestÃ¤tige deine LÃ¤ndervorwahl und gib deine Handynummer ein. Wir werden dir eine SMS schicken, um die Verifizierung abzuschlieÃŸen. (Hinweis: Es kÃ¶nnen SMS-Kosten anfallen.)";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ConfirmEmailForFreeHatOver13"
 	/// This message is to persuade the user to verify their email address on their account for a free hat.
 	/// English String: "Remember to confirm your email address to receive the free hat!"
 	/// </summary>
-	public override string ResponseDialogConfirmEmailForFreeHatOver13 => "Denk daran, deine E-Mail-Adresse zu bestätigen, um den kostenlosen Hut zu erhalten!";
+	public override string ResponseDialogConfirmEmailForFreeHatOver13 => "Denk daran, deine E-Mail-Adresse zu bestÃ¤tigen, um den kostenlosen Hut zu erhalten!";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ConfirmEmailForFreeHatUnder13"
 	/// This message is to persuade the user to verify their parent's email address on their account for a free hat.
 	/// English String: "Remember to confirm your parent's email address to receive the free hat!"
 	/// </summary>
-	public override string ResponseDialogConfirmEmailForFreeHatUnder13 => "Denk daran, die E-Mail-Adresse deiner Eltern zu bestätigen, um den kostenlosen Hut zu erhalten!";
+	public override string ResponseDialogConfirmEmailForFreeHatUnder13 => "Denk daran, die E-Mail-Adresse deiner Eltern zu bestÃ¤tigen, um den kostenlosen Hut zu erhalten!";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ContactFriendFinderPhoneUpsell"
 	/// This message is to persuade the user to add their phone number to their account by saying that friends will more easily connect with them on the platform if they do so.
 	/// English String: "Please add a phone number to your account so that your friends can find you!"
 	/// </summary>
-	public override string ResponseDialogContactFriendFinderPhoneUpsell => "Bitte füge eine Handynummer zu deinem Konto hinzu, damit deine Freunde dich finden können!";
+	public override string ResponseDialogContactFriendFinderPhoneUpsell => "Bitte fÃ¼ge eine Handynummer zu deinem Konto hinzu, damit deine Freunde dich finden kÃ¶nnen!";
 
 	/// <summary>
 	/// Key: "Response.Dialog.FreeHatForAddingPhone"
 	/// This message is to notify the user that their phone number has successfully been updated and they will get a free hat.
 	/// English String: "Your phone number has been confirmed. Enjoy the free hat!"
 	/// </summary>
-	public override string ResponseDialogFreeHatForAddingPhone => "Deine Handynummer wurde bestätigt. Viel Spaß mit deinem kostenlosen Hut!";
+	public override string ResponseDialogFreeHatForAddingPhone => "Deine Handynummer wurde bestÃ¤tigt. Viel SpaÃŸ mit deinem kostenlosen Hut!";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PhoneAdded"
 	/// This message is to notify the user that their phone number has successfully been updated.
 	/// English String: "Phone has been successfully added."
 	/// </summary>
-	public override string ResponseDialogPhoneAdded => "Handynummer wurde erfolgreich hinzugefügt.";
+	public override string ResponseDialogPhoneAdded => "Handynummer wurde erfolgreich hinzugefÃ¼gt.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.VerifyEmail13AndOverSuccessMessage"
@@ -466,7 +466,7 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	/// generic error message
 	/// English String: "An error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGenericError => "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
+	public override string ResponseGenericError => "Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	public ContactUpsellResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -475,52 +475,52 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForActionAddEmail()
 	{
-		return "E-Mail-Adresse hinzufügen";
+		return "E-Mail-Adresse hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionAddEmailLink()
 	{
-		return "E-Mail-Adresse hinzufügen";
+		return "E-Mail-Adresse hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionAddEmailNow()
 	{
-		return "E-Mail-Adresse jetzt hinzufügen";
+		return "E-Mail-Adresse jetzt hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionAddNow()
 	{
-		return "Jetzt hinzufügen";
+		return "Jetzt hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionAddParentsEmail()
 	{
-		return "E-Mail-Adresse deiner Eltern hinzufügen";
+		return "E-Mail-Adresse deiner Eltern hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionAddParentsEmailNow()
 	{
-		return "E-Mail-Adresse deiner Eltern jetzt hinzufügen";
+		return "E-Mail-Adresse deiner Eltern jetzt hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionAddPhone()
 	{
-		return "Handynummer hinzufügen";
+		return "Handynummer hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionAddPhoneNow()
 	{
-		return "Handynummer jetzt hinzufügen";
+		return "Handynummer jetzt hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "Schließen";
+		return "SchlieÃŸen";
 	}
 
 	protected override string _GetTemplateForActionConfirmEmail()
 	{
-		return "E-Mail-Adresse bestätigen";
+		return "E-Mail-Adresse bestÃ¤tigen";
 	}
 
 	protected override string _GetTemplateForActionEditPhoneNumber()
@@ -560,12 +560,12 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForActionsAddParentsEmail()
 	{
-		return "E-Mail-Adresse deiner Eltern hinzufügen";
+		return "E-Mail-Adresse deiner Eltern hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForHeadingAddEmail()
 	{
-		return "E-Mail-Adresse hinzufügen";
+		return "E-Mail-Adresse hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForHeadingDefaultHeader()
@@ -575,7 +575,7 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForHeadingDontForgetToConfirm()
 	{
-		return "Bestätigung nicht vergessen!";
+		return "BestÃ¤tigung nicht vergessen!";
 	}
 
 	protected override string _GetTemplateForHeadingError()
@@ -605,7 +605,7 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForLabelAddPhone()
 	{
-		return "Handy hinzufügen";
+		return "Handy hinzufÃ¼gen";
 	}
 
 	/// <summary>
@@ -635,12 +635,12 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForLabelInvalidEmail()
 	{
-		return "Ungültige E-Mail-Adresse";
+		return "UngÃ¼ltige E-Mail-Adresse";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPhoneNumber()
 	{
-		return "Ungültige Handynummer";
+		return "UngÃ¼ltige Handynummer";
 	}
 
 	protected override string _GetTemplateForLabelNoEmail()
@@ -680,17 +680,17 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForLabelProtectAccountWithEmail()
 	{
-		return "Schütze dein Konto mit einer E-Mail-Adresse!";
+		return "SchÃ¼tze dein Konto mit einer E-Mail-Adresse!";
 	}
 
 	protected override string _GetTemplateForLabelProtectAccountWithParentsEmail()
 	{
-		return "Schütze dein Konto mit der E-Mail-Adresse deiner Eltern!";
+		return "SchÃ¼tze dein Konto mit der E-Mail-Adresse deiner Eltern!";
 	}
 
 	protected override string _GetTemplateForLabelProtectAccountWithPhone()
 	{
-		return "Schütze dein Konto mit einer Telefonnummer!";
+		return "SchÃ¼tze dein Konto mit einer Telefonnummer!";
 	}
 
 	protected override string _GetTemplateForLabelResendEmail()
@@ -700,12 +700,12 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForLabelVerifyEmailToProtectAccount()
 	{
-		return "Verifiziere deine E-Mail-Adresse, um dein Konto zu schützen!";
+		return "Verifiziere deine E-Mail-Adresse, um dein Konto zu schÃ¼tzen!";
 	}
 
 	protected override string _GetTemplateForLabelVerifyParentsEmailToProtectAccount()
 	{
-		return "Verifiziere die E-Mail-Adresse deiner Eltern, um dein Konto zu schützen!";
+		return "Verifiziere die E-Mail-Adresse deiner Eltern, um dein Konto zu schÃ¼tzen!";
 	}
 
 	protected override string _GetTemplateForLabelVerifyPasswordPlaceholder()
@@ -715,17 +715,17 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForResponseCountryListError()
 	{
-		return "Beim Laden der Länderliste ist ein Fehler aufgetreten.";
+		return "Beim Laden der LÃ¤nderliste ist ein Fehler aufgetreten.";
 	}
 
 	protected override string _GetTemplateForResponseDialogAddEmailForFreeHatOver13()
 	{
-		return "Bitte füge deine E-Mail-Adresse hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
+		return "Bitte fÃ¼ge deine E-Mail-Adresse hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
 	}
 
 	protected override string _GetTemplateForResponseDialogAddEmailForFreeHatUnder13()
 	{
-		return "Bitte füge die E-Mail-Adresse deiner Eltern hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
+		return "Bitte fÃ¼ge die E-Mail-Adresse deiner Eltern hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
 	}
 
 	protected override string _GetTemplateForResponseDialogAddEmailInstructionsOver13()
@@ -740,42 +740,42 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForResponseDialogAddEmailOver13()
 	{
-		return "Bitte füge eine E-Mail-Adresse zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Roblox-Konto zugreifen kannst.";
+		return "Bitte fÃ¼ge eine E-Mail-Adresse zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Roblox-Konto zugreifen kannst.";
 	}
 
 	protected override string _GetTemplateForResponseDialogAddEmailUnder13()
 	{
-		return "Bitte füge die E-Mail-Adresse deiner Eltern zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Roblox-Konto zugreifen kannst.";
+		return "Bitte fÃ¼ge die E-Mail-Adresse deiner Eltern zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Roblox-Konto zugreifen kannst.";
 	}
 
 	protected override string _GetTemplateForResponseDialogAddPhone()
 	{
-		return "Bitte füge eine Handynummer zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Konto zugreifen kannst.";
+		return "Bitte fÃ¼ge eine Handynummer zu deinem Konto hinzu, um sicherzustellen, dass du immer auf dein Konto zugreifen kannst.";
 	}
 
 	protected override string _GetTemplateForResponseDialogAddPhoneForFreeHat()
 	{
-		return "Bitte füge deine Handynummer hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
+		return "Bitte fÃ¼ge deine Handynummer hinzu, um einen kostenlosen Hut zu erhalten und sicherzustellen, dass du immer auf dein Konto zugreifen kannst!";
 	}
 
 	protected override string _GetTemplateForResponseDialogAddPhoneInstructions()
 	{
-		return "Bitte bestätige deine Ländervorwahl und gib deine Handynummer ein. Wir werden dir eine SMS schicken, um die Verifizierung abzuschließen. (Hinweis: Es können SMS-Kosten anfallen.)";
+		return "Bitte bestÃ¤tige deine LÃ¤ndervorwahl und gib deine Handynummer ein. Wir werden dir eine SMS schicken, um die Verifizierung abzuschlieÃŸen. (Hinweis: Es kÃ¶nnen SMS-Kosten anfallen.)";
 	}
 
 	protected override string _GetTemplateForResponseDialogConfirmEmailForFreeHatOver13()
 	{
-		return "Denk daran, deine E-Mail-Adresse zu bestätigen, um den kostenlosen Hut zu erhalten!";
+		return "Denk daran, deine E-Mail-Adresse zu bestÃ¤tigen, um den kostenlosen Hut zu erhalten!";
 	}
 
 	protected override string _GetTemplateForResponseDialogConfirmEmailForFreeHatUnder13()
 	{
-		return "Denk daran, die E-Mail-Adresse deiner Eltern zu bestätigen, um den kostenlosen Hut zu erhalten!";
+		return "Denk daran, die E-Mail-Adresse deiner Eltern zu bestÃ¤tigen, um den kostenlosen Hut zu erhalten!";
 	}
 
 	protected override string _GetTemplateForResponseDialogContactFriendFinderPhoneUpsell()
 	{
-		return "Bitte füge eine Handynummer zu deinem Konto hinzu, damit deine Freunde dich finden können!";
+		return "Bitte fÃ¼ge eine Handynummer zu deinem Konto hinzu, damit deine Freunde dich finden kÃ¶nnen!";
 	}
 
 	/// <summary>
@@ -795,12 +795,12 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForResponseDialogFreeHatForAddingPhone()
 	{
-		return "Deine Handynummer wurde bestätigt. Viel Spaß mit deinem kostenlosen Hut!";
+		return "Deine Handynummer wurde bestÃ¤tigt. Viel SpaÃŸ mit deinem kostenlosen Hut!";
 	}
 
 	protected override string _GetTemplateForResponseDialogPhoneAdded()
 	{
-		return "Handynummer wurde erfolgreich hinzugefügt.";
+		return "Handynummer wurde erfolgreich hinzugefÃ¼gt.";
 	}
 
 	protected override string _GetTemplateForResponseDialogVerifyEmail13AndOverSuccessMessage()
@@ -830,7 +830,7 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 
 	protected override string _GetTemplateForResponseGenericError()
 	{
-		return "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
+		return "Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	/// <summary>
@@ -847,4 +847,7 @@ internal class ContactUpsellResources_de_de : ContactUpsellResources_en_us, ICon
 	{
 		return "Code muss aus {number} Ziffern bestehen.";
 	}
+}
+
+
 }

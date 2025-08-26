@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class MessagesResources_en_us : TranslationResourcesBase, IMessagesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class MessagesResources_en_us : TranslationResourcesBase, IMessagesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -697,4 +696,7 @@ internal class MessagesResources_en_us : TranslationResourcesBase, IMessagesReso
 	{
 		return "Write your message...";
 	}
+}
+
+
 }

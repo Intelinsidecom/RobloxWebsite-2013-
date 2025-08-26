@@ -1,7 +1,9 @@
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public enum ReindexUserResult
 {
 	Unknown,
 	Queued
+}
+
 }

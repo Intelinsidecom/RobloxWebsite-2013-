@@ -1,8 +1,7 @@
 using System;
+namespace Roblox.Platform.TextFilter.Client {
+    internal static class EnumHelper
 
-namespace Roblox.TextFilter.Client;
-
-public static class EnumHelper
 {
 	public static T GetAttributeOfType<T>(this Enum enumVal) where T : Attribute
 	{
@@ -13,4 +12,7 @@ public static class EnumHelper
 		}
 		return (T)customAttributes[0];
 	}
+}
+
+
 }

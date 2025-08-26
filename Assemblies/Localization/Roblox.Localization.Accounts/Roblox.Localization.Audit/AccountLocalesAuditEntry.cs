@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -6,10 +6,9 @@ using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocalesAuditEntry : IRobloxEntity<long, AccountLocalesAuditEntryDAL>, ICacheableObject<long>, ICacheableObject, IRobloxEntity<Guid, AccountLocalesAuditEntryDAL>, ICacheableObject<Guid>
 {
 	private AccountLocalesAuditEntryDAL _EntityDAL;
@@ -204,4 +203,7 @@ internal class AccountLocalesAuditEntry : IRobloxEntity<long, AccountLocalesAudi
 	{
 		return $"AuditId:{auditId}";
 	}
+}
+
+
 }

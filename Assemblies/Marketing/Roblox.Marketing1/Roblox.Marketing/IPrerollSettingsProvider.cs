@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Marketingpublic {
+    interface IPrerollSettingsProvider
 
-namespace Roblox.Platform.Marketing;
-
-public interface IPrerollSettingsProvider
 {
 	string HidePrerollForFirstNDaysExperimentName { get; }
 
@@ -13,4 +12,7 @@ public interface IPrerollSettingsProvider
 	double PrerollSimplePercentageChanceForDFP { get; }
 
 	bool IsPrerollShownEveryXMinutesEnabled { get; }
+}
+
+
 }

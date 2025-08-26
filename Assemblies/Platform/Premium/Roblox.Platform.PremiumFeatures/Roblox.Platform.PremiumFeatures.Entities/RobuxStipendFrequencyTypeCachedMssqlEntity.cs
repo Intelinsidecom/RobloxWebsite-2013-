@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Entities;
 using Roblox.PremiumFeatures.Interfaces.Entities;
+namespace Roblox.Platform.PremiumFeatures.Entitiesinternal {
+    class RobuxStipendFrequencyTypeCachedMssqlEntity : IRobuxStipendFrequencyTypeEntity, IUpdateableEntity<byte>, IEntity<byte>
 
-namespace Roblox.PremiumFeatures.Entities;
-
-internal class RobuxStipendFrequencyTypeCachedMssqlEntity : IRobuxStipendFrequencyTypeEntity, IUpdateableEntity<byte>, IEntity<byte>
 {
 	public byte Id { get; set; }
 
@@ -30,4 +29,7 @@ internal class RobuxStipendFrequencyTypeCachedMssqlEntity : IRobuxStipendFrequen
 	{
 		(RobuxStipendFrequencyTypeEntity.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using Roblox.TranslationResources.Authentication;
+﻿using Roblox.TranslationResources.Authentication;
+namespace Roblox.Platform.TranslationResourcespublic {
+    interface IAuthenticationResources : ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-public interface IAuthenticationResources : ITranslationResourcesNamespacesGroup
 {
 	IAccountRecoveryResources AccountRecovery { get; }
 
@@ -25,4 +24,7 @@ public interface IAuthenticationResources : ITranslationResourcesNamespacesGroup
 	ITwoStepVerificationResources TwoStepVerification { get; }
 
 	IWeChatResources WeChat { get; }
+}
+
+
 }

@@ -1,11 +1,10 @@
 using System;
 using System.Linq;
 using Roblox.ContentFilterApi.Client;
-using Roblox.TextFilter.Properties;
+using Roblox.Platform.TextFilter.Properties;
+namespace Roblox.Platform.TextFilter {
+    class UsernameFilter : IUsernameFilter
 
-namespace Roblox.TextFilter;
-
-internal class UsernameFilter : IUsernameFilter
 {
 	/// <summary>
 	/// Settings for the library.
@@ -75,4 +74,7 @@ internal class UsernameFilter : IUsernameFilter
 		}
 		return result;
 	}
+}
+
+
 }

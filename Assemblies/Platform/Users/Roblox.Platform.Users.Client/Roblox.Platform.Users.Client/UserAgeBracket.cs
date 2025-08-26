@@ -1,8 +1,10 @@
-namespace Roblox.Users.Client;
-
-public enum UserAgeBracket
+namespace Roblox.Platform.Users.Client
 {
-	Unknown,
-	AgeUnder13,
-	Age13OrOver
+    public enum UserAgeBracket
+    {
+        Unknown,
+        AgeUnder13,
+        Age13OrOver
+    }
 }
+

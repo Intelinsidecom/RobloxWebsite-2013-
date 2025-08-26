@@ -1,7 +1,6 @@
 using System;
+namespace Roblox.Platform.Currency.Client {
 
-namespace Roblox.Currency.Client
-{
     // Minimal factory to satisfy callers. Can be expanded to wire real HTTP clients if needed.
     public sealed class CurrencyAuthorityFactory
     {

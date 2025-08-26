@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountCountriesAuditEntryEntityFactory : IAccountCountriesAuditEntryEntityFactory
 {
 	public IAccountCountriesAuditEntryEntity GetById(long id)
@@ -79,4 +78,7 @@ internal class AccountCountriesAuditEntryEntityFactory : IAccountCountriesAuditE
 		}
 		return null;
 	}
+}
+
+
 }

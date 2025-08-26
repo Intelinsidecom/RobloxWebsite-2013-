@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GameBadgesResourceFactory
 
-internal static class GameBadgesResourceFactory
 {
 	public const string FullNamespace = "Feature.GameBadges";
 
@@ -21,4 +21,7 @@ internal static class GameBadgesResourceFactory
 			_ => new GameBadgesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

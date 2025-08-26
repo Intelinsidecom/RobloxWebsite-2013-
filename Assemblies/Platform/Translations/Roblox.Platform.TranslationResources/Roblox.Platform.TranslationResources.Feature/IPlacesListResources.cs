@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPlacesListResources : ITranslationResources
 
-public interface IPlacesListResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.JoinGame"
@@ -47,4 +47,7 @@ public interface IPlacesListResources : ITranslationResources
 	/// English String: "{playerCount} Playing"
 	/// </summary>
 	string LabelPlayingPhrase(string playerCount);
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.PremiumFeatures.Interfaces;
+namespace Roblox.Platform.PremiumFeatures.Implementation {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Implementation;
-
-/// <summary>
 /// RobuxStipendModel
 /// </summary>
 public class RobuxStipendModel : IRobuxStipendModel
@@ -49,4 +48,7 @@ public class RobuxStipendModel : IRobuxStipendModel
 		RobuxStipendFrequencyTypeID = robuxStipendFrequencyTypeID;
 		NextDistribution = nextDistribution;
 	}
+}
+
+
 }

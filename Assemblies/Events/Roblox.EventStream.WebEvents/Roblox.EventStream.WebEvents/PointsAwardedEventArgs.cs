@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// All arguments for the <see cref="T:Roblox.Platform.EventStream.WebEvents.PointsAwardedEvent" /> event.
 /// </summary>
 public class PointsAwardedEventArgs : BasicEventArgs
@@ -32,3 +32,12 @@ public class PointsAwardedEventArgs : BasicEventArgs
 	/// </summary>
 	public DateTime EventTime { get; set; }
 }
+
+
+}
+
+
+
+
+
+

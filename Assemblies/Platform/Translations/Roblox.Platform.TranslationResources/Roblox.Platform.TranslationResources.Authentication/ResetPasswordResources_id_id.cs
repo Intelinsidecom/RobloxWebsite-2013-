@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ResetPasswordResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -880,4 +880,7 @@ internal class ResetPasswordResources_id_id : ResetPasswordResources_en_us, IRes
 	{
 		return "Kata sandi baru dan kata sandi konfirmasimu harus sesuai";
 	}
+}
+
+
 }

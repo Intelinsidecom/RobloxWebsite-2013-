@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameBadgesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -17,14 +17,14 @@ internal class GameBadgesResources_fr_fr : GameBadgesResources_en_us, IGameBadge
 	/// It would be extremely easy for the user to accomplish this goal.
 	/// English String: "Cake Walk"
 	/// </summary>
-	public override string LabelRarityCakeWalk => "Promenade de santé";
+	public override string LabelRarityCakeWalk => "Promenade de santÃ©";
 
 	/// <summary>
 	/// Key: "Label.RarityChallenging"
 	/// It would be somewhat difficult for the user to accomplish this goal.
 	/// English String: "Challenging"
 	/// </summary>
-	public override string LabelRarityChallenging => "Compliqué";
+	public override string LabelRarityChallenging => "CompliquÃ©";
 
 	/// <summary>
 	/// Key: "Label.RarityEasy"
@@ -38,7 +38,7 @@ internal class GameBadgesResources_fr_fr : GameBadgesResources_en_us, IGameBadge
 	/// It would be extremely difficult for the user to accomplish this goal.
 	/// English String: "Extreme"
 	/// </summary>
-	public override string LabelRarityExtreme => "Extrême";
+	public override string LabelRarityExtreme => "ExtrÃªme";
 
 	/// <summary>
 	/// Key: "Label.RarityFreebie"
@@ -79,7 +79,7 @@ internal class GameBadgesResources_fr_fr : GameBadgesResources_en_us, IGameBadge
 	/// Key: "LabelRarity"
 	/// English String: "Rarity"
 	/// </summary>
-	public override string LabelRarity => "Rareté";
+	public override string LabelRarity => "RaretÃ©";
 
 	/// <summary>
 	/// Key: "LabelSeeMore"
@@ -91,13 +91,13 @@ internal class GameBadgesResources_fr_fr : GameBadgesResources_en_us, IGameBadge
 	/// Key: "LabelWonEver"
 	/// English String: "Won Ever"
 	/// </summary>
-	public override string LabelWonEver => "Gagné (tous les temps)";
+	public override string LabelWonEver => "GagnÃ© (tous les temps)";
 
 	/// <summary>
 	/// Key: "LabelWonYesterday"
 	/// English String: "Won Yesterday"
 	/// </summary>
-	public override string LabelWonYesterday => "Gagné hier";
+	public override string LabelWonYesterday => "GagnÃ© hier";
 
 	public GameBadgesResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -111,12 +111,12 @@ internal class GameBadgesResources_fr_fr : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityCakeWalk()
 	{
-		return "Promenade de santé";
+		return "Promenade de santÃ©";
 	}
 
 	protected override string _GetTemplateForLabelRarityChallenging()
 	{
-		return "Compliqué";
+		return "CompliquÃ©";
 	}
 
 	protected override string _GetTemplateForLabelRarityEasy()
@@ -126,7 +126,7 @@ internal class GameBadgesResources_fr_fr : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityExtreme()
 	{
-		return "Extrême";
+		return "ExtrÃªme";
 	}
 
 	protected override string _GetTemplateForLabelRarityFreebie()
@@ -156,7 +156,7 @@ internal class GameBadgesResources_fr_fr : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarity()
 	{
-		return "Rareté";
+		return "RaretÃ©";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
@@ -166,11 +166,14 @@ internal class GameBadgesResources_fr_fr : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelWonEver()
 	{
-		return "Gagné (tous les temps)";
+		return "GagnÃ© (tous les temps)";
 	}
 
 	protected override string _GetTemplateForLabelWonYesterday()
 	{
-		return "Gagné hier";
+		return "GagnÃ© hier";
 	}
+}
+
+
 }

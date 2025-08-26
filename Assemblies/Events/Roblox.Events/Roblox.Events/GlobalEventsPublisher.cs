@@ -4,11 +4,10 @@ using Roblox.Configuration;
 using Roblox.Data;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-using Roblox.Platform.Events.Properties;
+using Roblox.Events.Properties;
+namespace Roblox.Events {
+    public class GlobalEventsPublisher : IGlobalEventsPublisher
 
-namespace Roblox.Platform.Events;
-
-public class GlobalEventsPublisher : IGlobalEventsPublisher
 {
 	private string _AwsAccessKey;
 
@@ -89,4 +88,7 @@ public class GlobalEventsPublisher : IGlobalEventsPublisher
 	{
 		return EventCallbackLocation.GetOrCreate(eventDestinationName, (byte)eventDestinationType).ID;
 	}
+}
+
+
 }

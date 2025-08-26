@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IFeedResources : ITranslationResources
 
-public interface IFeedResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "HeadingBuildSomething"
@@ -79,4 +79,7 @@ public interface IFeedResources : ITranslationResources
 	/// English String: "Meet other players in-game and send them a friend request. If you miss your opportunity you can always send a request later by {linkStart}searching{linkEnd} for their user profile."
 	/// </summary>
 	string LabelMakeFriends(string linkStart, string linkEnd);
+}
+
+
 }

@@ -1,8 +1,7 @@
 using System.Collections.Generic;
+namespace Roblox.Platform.Users.Interfaces {
+    public interface ICountryFactory
 
-namespace Roblox.Users.Interfaces;
-
-public interface ICountryFactory
 {
 	ICountryModel CreateNew(string value, string code, bool active);
 
@@ -17,4 +16,7 @@ public interface ICountryFactory
 	ICollection<ICountryModel> GetCountriesPaged(byte startRowIndex, byte maximumRows);
 
 	ICountryModel GetByCode(string code);
+}
+
+
 }

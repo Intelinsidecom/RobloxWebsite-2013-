@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -8,10 +8,9 @@ using Roblox.Configuration;
 using Roblox.EventLog;
 using Roblox.Platform.Moderation.Properties;
 using Roblox.TrackingQueue;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// A base class for reading and/or deleting various types of moderation tasks from the SQS queue. 
 /// This class centralizes on how the Sqs client is created from config settings, as well as the 
 /// business logic of using the right client to read/delete a task based on the input locale and priority.
@@ -196,4 +195,7 @@ internal abstract class ModerationTaskConsumerBase : ModerationTaskClientBase<IT
 		}
 		ConsumerWithReceipts.Clear();
 	}
+}
+
+
 }

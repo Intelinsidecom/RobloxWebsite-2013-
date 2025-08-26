@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ExternalLinksResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -58,4 +58,7 @@ internal class ExternalLinksResources_es_es : ExternalLinksResources_en_us, IExt
 	{
 		return "https://en.help.roblox.com/hc/es/articles/115004647846-T%C3%A9rminos-de-uso-de-Roblox";
 	}
+}
+
+
 }

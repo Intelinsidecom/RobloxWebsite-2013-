@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class LandingResourceFactory
 
-internal static class LandingResourceFactory
 {
 	public const string FullNamespace = "Feature.Landing";
 
@@ -21,4 +21,7 @@ internal static class LandingResourceFactory
 			_ => new LandingResources_en_us(state), 
 		};
 	}
+}
+
+
 }

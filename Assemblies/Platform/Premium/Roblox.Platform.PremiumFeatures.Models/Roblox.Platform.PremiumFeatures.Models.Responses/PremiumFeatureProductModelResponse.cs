@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Roblox.PremiumFeatures.Models.Core;
+namespace Roblox.Platform.PremiumFeatures.Models.Responses {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models.Responses;
-
-/// <summary>
 /// Response model for PremiumFeature Products
 /// </summary>
 [DataContract]
@@ -15,4 +14,7 @@ public class PremiumFeatureProductModelResponse
 	/// </summary>
 	[DataMember(Name = "premiumFeatureProducts", EmitDefaultValue = true, IsRequired = true)]
 	public ICollection<PremiumFeatureProductModel> PremiumFeatureProducts { get; set; }
+}
+
+
 }

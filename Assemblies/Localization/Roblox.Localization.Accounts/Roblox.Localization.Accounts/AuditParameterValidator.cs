@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using Roblox.Common;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Accounts.Properties;
 using Roblox.Platform.Localization.Audit;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountsinternal {
+    class AuditParameterValidator : IAuditParameterValidator
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AuditParameterValidator : IAuditParameterValidator
 {
 	private readonly ISettings _Settings;
 
@@ -60,4 +59,7 @@ internal class AuditParameterValidator : IAuditParameterValidator
 			throw new NotImplementedException($"Please define the validation for this new type of AccountCountriesChangeAgent: {changeAgentType.ToString()}.");
 		}
 	}
+}
+
+
 }

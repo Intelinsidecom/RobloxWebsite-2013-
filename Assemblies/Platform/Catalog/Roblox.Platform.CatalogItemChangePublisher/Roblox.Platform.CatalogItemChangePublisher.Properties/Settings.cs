@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -6,10 +6,9 @@ using System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
+namespace Roblox.Platform.CatalogItemChangePublisher.Properties {
+    /// <summary>
 
-namespace Roblox.CatalogItemChangePublisher.Properties;
-
-/// <summary>
 /// Configuration that uses Roblox.Configuration.Provider
 /// </summary>
 [SettingsProvider(typeof(Provider))]
@@ -78,4 +77,7 @@ internal sealed class Settings : ApplicationSettingsBase
 	{
 		_Properties.TryRemove(propertyChangeEvent.PropertyName, out var _);
 	}
+}
+
+
 }

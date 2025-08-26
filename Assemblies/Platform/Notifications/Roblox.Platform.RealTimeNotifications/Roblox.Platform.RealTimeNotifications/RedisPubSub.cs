@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Net;
 using Newtonsoft.Json;
 using Roblox.Redis;
 using StackExchange.Redis;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    abstract class RedisPubSub<TKeyInput, TPublishMessage> : IPubSub<TKeyInput, TPublishMessage>, IPublisher<TKeyInput, TPublishMessage>, ISubscriber<TKeyInput, TPublishMessage>
 
-namespace Roblox.RealTimeNotifications;
-
-public abstract class RedisPubSub<TKeyInput, TPublishMessage> : IPubSub<TKeyInput, TPublishMessage>, IPublisher<TKeyInput, TPublishMessage>, ISubscriber<TKeyInput, TPublishMessage>
 {
 	private readonly IRedisClient _RedisClient;
 
@@ -83,4 +82,7 @@ public abstract class RedisPubSub<TKeyInput, TPublishMessage> : IPubSub<TKeyInpu
 		return string.Join(",", from x in subscriber.Multiplexer.GetEndPoints()
 			select x.Serialize());
 	}
+}
+
+
 }

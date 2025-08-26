@@ -1,12 +1,14 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    struct UpdateResult
 
-namespace Roblox.GameInstances.Client;
-
-public struct UpdateResult
 {
 	public IReadOnlyCollection<PlaySession> PlayersJoined;
 
 	public IReadOnlyCollection<PlaySession> PlayersLeft;
 
 	public bool IsOutOfOrderUpdate;
+}
+
+
 }

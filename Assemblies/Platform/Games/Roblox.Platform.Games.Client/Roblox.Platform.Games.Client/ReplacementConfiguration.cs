@@ -1,10 +1,13 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    class ReplacementConfiguration
 
-public class ReplacementConfiguration
 {
 	public long CreatorId { get; set; }
 
 	public string CreatorType { get; set; }
 
 	public int PlaceVersion { get; set; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUIpublic {
+    interface IControlsResources : ITranslationResources
 
-public interface IControlsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Accept"
@@ -201,4 +201,7 @@ public interface IControlsResources : ITranslationResources
 	/// English String: "Page {currentPage}"
 	/// </summary>
 	string LabelCurrentPage(string currentPage);
+}
+
+
 }

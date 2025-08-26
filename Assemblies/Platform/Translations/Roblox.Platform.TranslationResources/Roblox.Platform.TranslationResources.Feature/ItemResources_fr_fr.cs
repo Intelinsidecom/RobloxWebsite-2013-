@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ItemResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -29,7 +29,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Action.Advertise"
 	/// English String: "Advertise"
 	/// </summary>
-	public override string ActionAdvertise => "Faire la publicité";
+	public override string ActionAdvertise => "Faire la publicitÃ©";
 
 	/// <summary>
 	/// Key: "Action.Agree"
@@ -74,7 +74,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Action.DisableBadge"
 	/// English String: "Disable Badge"
 	/// </summary>
-	public override string ActionDisableBadge => "Désactiver badge";
+	public override string ActionDisableBadge => "DÃ©sactiver badge";
 
 	/// <summary>
 	/// Key: "Action.EditAvatar"
@@ -180,7 +180,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Action.Upgrade"
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string ActionUpgrade => "Améliorer";
+	public override string ActionUpgrade => "AmÃ©liorer";
 
 	/// <summary>
 	/// Key: "Action.Wear"
@@ -226,13 +226,13 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Label.AssetGrantedModalTitle"
 	/// English String: "This item is now yours"
 	/// </summary>
-	public override string LabelAssetGrantedModalTitle => "Cet objet est désormais en ta possession";
+	public override string LabelAssetGrantedModalTitle => "Cet objet est dÃ©sormais en ta possession";
 
 	/// <summary>
 	/// Key: "Label.Attributes"
 	/// English String: "Attributes"
 	/// </summary>
-	public override string LabelAttributes => "Caractéristiques";
+	public override string LabelAttributes => "CaractÃ©ristiques";
 
 	/// <summary>
 	/// Key: "Label.BestPrice"
@@ -245,14 +245,14 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// label for Builders Club requirement
 	/// English String: "Builders Club exclusive."
 	/// </summary>
-	public override string LabelBuildersClubExclusive => "Exclusivité du Builders Club.";
+	public override string LabelBuildersClubExclusive => "ExclusivitÃ© du Builders Club.";
 
 	/// <summary>
 	/// Key: "Label.DeleteFromInventoryConfirm"
 	/// confirmation message before deletion
 	/// English String: "Are you sure you want to permanently DELETE this item from your inventory?"
 	/// </summary>
-	public override string LabelDeleteFromInventoryConfirm => "Voulez-vous vraiment SUPPRIMER cet objet de façon définitive\u00a0?";
+	public override string LabelDeleteFromInventoryConfirm => "Voulez-vous vraiment SUPPRIMER cet objet de faÃ§on dÃ©finitive\u00a0?";
 
 	/// <summary>
 	/// Key: "Label.DeleteItem"
@@ -272,14 +272,14 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Are you sure you want to disable this Badge?
 	/// English String: "Are you sure you want to disable this Badge?"
 	/// </summary>
-	public override string LabelDisableBadgeConfirm => "Voulez-vous vraiment désactiver ce badge\u00a0?";
+	public override string LabelDisableBadgeConfirm => "Voulez-vous vraiment dÃ©sactiver ce badge\u00a0?";
 
 	/// <summary>
 	/// Key: "Label.DiscontinuedItem"
 	/// label
 	/// English String: "Discontinued item, resellable."
 	/// </summary>
-	public override string LabelDiscontinuedItem => "Objet plus disponible, peut être revendu.";
+	public override string LabelDiscontinuedItem => "Objet plus disponible, peut Ãªtre revendu.";
 
 	/// <summary>
 	/// Key: "Label.EnableBadgeConfirm"
@@ -311,13 +311,13 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Only Builders Club members can re-sell collectible items. Get Builders Club today!
 	/// English String: "Only Builders Club members can re-sell collectible items. Get Builders Club today!"
 	/// </summary>
-	public override string LabelGetBuildersClub => "Seuls les membres du Builders Club peuvent revendre des objets de collection. Rejoignez le Builders Club dès maintenant\u00a0!";
+	public override string LabelGetBuildersClub => "Seuls les membres du Builders Club peuvent revendre des objets de collection. Rejoignez le Builders Club dÃ¨s maintenant\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.GetPremiumMembership"
 	/// English String: "Only Premium members can re-sell collectible items. Get Premium today!"
 	/// </summary>
-	public override string LabelGetPremiumMembership => "Seuls les membres premium peuvent revendre des objets de collection. Passez au statut premium dès maintenant\u00a0!";
+	public override string LabelGetPremiumMembership => "Seuls les membres premium peuvent revendre des objets de collection. Passez au statut premium dÃ¨s maintenant\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.InvalidPlace"
@@ -351,7 +351,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Label.ItemOwned"
 	/// English String: "Item Owned"
 	/// </summary>
-	public override string LabelItemOwned => "Objet possédé";
+	public override string LabelItemOwned => "Objet possÃ©dÃ©";
 
 	/// <summary>
 	/// Key: "Label.None"
@@ -387,13 +387,13 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Label.PurchaseCompleted"
 	/// English String: "Purchase Completed"
 	/// </summary>
-	public override string LabelPurchaseCompleted => "Achat effectué";
+	public override string LabelPurchaseCompleted => "Achat effectuÃ©";
 
 	/// <summary>
 	/// Key: "Label.Rarity"
 	/// English String: "Rarity"
 	/// </summary>
-	public override string LabelRarity => "Rareté";
+	public override string LabelRarity => "RaretÃ©";
 
 	/// <summary>
 	/// Key: "Label.ReadMore"
@@ -426,19 +426,19 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// label
 	/// English String: "Serialized limited release, resellable."
 	/// </summary>
-	public override string LabelSerializedLimitedRelease => "Parution en édition limitée, peut être revendu.";
+	public override string LabelSerializedLimitedRelease => "Parution en Ã©dition limitÃ©e, peut Ãªtre revendu.";
 
 	/// <summary>
 	/// Key: "Label.SerialNotAvailable"
 	/// English String: "Serial N/A"
 	/// </summary>
-	public override string LabelSerialNotAvailable => "Nº de série non disponible";
+	public override string LabelSerialNotAvailable => "NÂº de sÃ©rie non disponible";
 
 	/// <summary>
 	/// Key: "Label.SerialNumber"
 	/// English String: "Serial Number"
 	/// </summary>
-	public override string LabelSerialNumber => "Numéro de série";
+	public override string LabelSerialNumber => "NumÃ©ro de sÃ©rie";
 
 	/// <summary>
 	/// Key: "Label.ShowLess"
@@ -472,7 +472,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// label
 	/// English String: "13+ Only."
 	/// </summary>
-	public override string LabelThirteenPlusOnly => "Réservé aux 13 ans et +.";
+	public override string LabelThirteenPlusOnly => "RÃ©servÃ© aux 13 ans et +.";
 
 	/// <summary>
 	/// Key: "Label.Type"
@@ -484,7 +484,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Label.Updated"
 	/// English String: "Updated"
 	/// </summary>
-	public override string LabelUpdated => "Mis à jour";
+	public override string LabelUpdated => "Mis Ã  jour";
 
 	/// <summary>
 	/// Key: "Label.YouGet"
@@ -498,35 +498,35 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// success message when item is added to profile
 	/// English String: "Added to your profile"
 	/// </summary>
-	public override string ResponseAddedToProfile => "Ajouté à ton profil";
+	public override string ResponseAddedToProfile => "AjoutÃ© Ã  ton profil";
 
 	/// <summary>
 	/// Key: "Response.AddedToYourAvater"
 	/// Added to your Avatar
 	/// English String: "Added to your Avatar"
 	/// </summary>
-	public override string ResponseAddedToYourAvater => "Ajouté à ton avatar";
+	public override string ResponseAddedToYourAvater => "AjoutÃ© Ã  ton avatar";
 
 	/// <summary>
 	/// Key: "Response.AlreadyHaveMaxItems"
 	/// error message
 	/// English String: "You already have the maximum number of items on your game!"
 	/// </summary>
-	public override string ResponseAlreadyHaveMaxItems => "Ton jeu comporte déjà le nombre maximum d'objets!";
+	public override string ResponseAlreadyHaveMaxItems => "Ton jeu comporte dÃ©jÃ  le nombre maximum d'objets!";
 
 	/// <summary>
 	/// Key: "Response.DisabledBadge"
 	/// Successfully disabled the badge
 	/// English String: "Successfully disabled the badge"
 	/// </summary>
-	public override string ResponseDisabledBadge => "Badge désactivé";
+	public override string ResponseDisabledBadge => "Badge dÃ©sactivÃ©";
 
 	/// <summary>
 	/// Key: "Response.EnabledBadge"
 	/// Successfully enabled the badge
 	/// English String: "Successfully enabled the badge"
 	/// </summary>
-	public override string ResponseEnabledBadge => "Badge activé";
+	public override string ResponseEnabledBadge => "Badge activÃ©";
 
 	/// <summary>
 	/// Key: "Response.FailedToAddToProfile"
@@ -547,7 +547,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Failed to disable badge
 	/// English String: "Failed to disable badge"
 	/// </summary>
-	public override string ResponseFailedToDisableBadge => "Impossible de désactiver le badge";
+	public override string ResponseFailedToDisableBadge => "Impossible de dÃ©sactiver le badge";
 
 	/// <summary>
 	/// Key: "Response.FailedToEnableBadge"
@@ -568,21 +568,21 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// Successfully removed from your inventory
 	/// English String: "Successfully removed from your inventory"
 	/// </summary>
-	public override string ResponseRemovedFromInventory => "Retiré de ton inventaire";
+	public override string ResponseRemovedFromInventory => "RetirÃ© de ton inventaire";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromProfile"
 	/// message when an item is removed from profile
 	/// English String: "Removed from your profile"
 	/// </summary>
-	public override string ResponseRemovedFromProfile => "Retiré de ton profil";
+	public override string ResponseRemovedFromProfile => "RetirÃ© de ton profil";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromYourAvater"
 	/// Removed from your Avatar
 	/// English String: "Removed from your Avatar"
 	/// </summary>
-	public override string ResponseRemovedFromYourAvater => "Retiré de ton avatar";
+	public override string ResponseRemovedFromYourAvater => "RetirÃ© de ton avatar";
 
 	public ItemResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -606,7 +606,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForActionAdvertise()
 	{
-		return "Faire la publicité";
+		return "Faire la publicitÃ©";
 	}
 
 	protected override string _GetTemplateForActionAgree()
@@ -641,7 +641,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForActionDisableBadge()
 	{
-		return "Désactiver badge";
+		return "DÃ©sactiver badge";
 	}
 
 	protected override string _GetTemplateForActionEditAvatar()
@@ -726,7 +726,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForActionUpgrade()
 	{
-		return "Améliorer";
+		return "AmÃ©liorer";
 	}
 
 	protected override string _GetTemplateForActionWear()
@@ -755,12 +755,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelAllowPlayersPlusEarn(string affiliateSaleTotal)
 	{
-		return $"Permet aux joueurs d'utiliser cet équipement dans ton jeu et te rapporte {affiliateSaleTotal} lorsqu'il est acheté depuis la page de ton jeu.";
+		return $"Permet aux joueurs d'utiliser cet Ã©quipement dans ton jeu et te rapporte {affiliateSaleTotal} lorsqu'il est achetÃ© depuis la page de ton jeu.";
 	}
 
 	protected override string _GetTemplateForLabelAllowPlayersPlusEarn()
 	{
-		return "Permet aux joueurs d'utiliser cet équipement dans ton jeu et te rapporte {affiliateSaleTotal} lorsqu'il est acheté depuis la page de ton jeu.";
+		return "Permet aux joueurs d'utiliser cet Ã©quipement dans ton jeu et te rapporte {affiliateSaleTotal} lorsqu'il est achetÃ© depuis la page de ton jeu.";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalAcceptText()
@@ -775,12 +775,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelAssetGrantedModalTitle()
 	{
-		return "Cet objet est désormais en ta possession";
+		return "Cet objet est dÃ©sormais en ta possession";
 	}
 
 	protected override string _GetTemplateForLabelAttributes()
 	{
-		return "Caractéristiques";
+		return "CaractÃ©ristiques";
 	}
 
 	protected override string _GetTemplateForLabelBestPrice()
@@ -790,7 +790,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelBuildersClubExclusive()
 	{
-		return "Exclusivité du Builders Club.";
+		return "ExclusivitÃ© du Builders Club.";
 	}
 
 	/// <summary>
@@ -824,7 +824,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelDeleteFromInventoryConfirm()
 	{
-		return "Voulez-vous vraiment SUPPRIMER cet objet de façon définitive\u00a0?";
+		return "Voulez-vous vraiment SUPPRIMER cet objet de faÃ§on dÃ©finitive\u00a0?";
 	}
 
 	protected override string _GetTemplateForLabelDeleteItem()
@@ -839,12 +839,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelDisableBadgeConfirm()
 	{
-		return "Voulez-vous vraiment désactiver ce badge\u00a0?";
+		return "Voulez-vous vraiment dÃ©sactiver ce badge\u00a0?";
 	}
 
 	protected override string _GetTemplateForLabelDiscontinuedItem()
 	{
-		return "Objet plus disponible, peut être revendu.";
+		return "Objet plus disponible, peut Ãªtre revendu.";
 	}
 
 	/// <summary>
@@ -884,12 +884,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelGetBuildersClub()
 	{
-		return "Seuls les membres du Builders Club peuvent revendre des objets de collection. Rejoignez le Builders Club dès maintenant\u00a0!";
+		return "Seuls les membres du Builders Club peuvent revendre des objets de collection. Rejoignez le Builders Club dÃ¨s maintenant\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelGetPremiumMembership()
 	{
-		return "Seuls les membres premium peuvent revendre des objets de collection. Passez au statut premium dès maintenant\u00a0!";
+		return "Seuls les membres premium peuvent revendre des objets de collection. Passez au statut premium dÃ¨s maintenant\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPlace()
@@ -914,7 +914,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelItemOwned()
 	{
-		return "Objet possédé";
+		return "Objet possÃ©dÃ©";
 	}
 
 	/// <summary>
@@ -923,12 +923,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelItemOwnedAmount(string amount)
 	{
-		return $"Objet possédé ({amount})";
+		return $"Objet possÃ©dÃ© ({amount})";
 	}
 
 	protected override string _GetTemplateForLabelItemOwnedAmount()
 	{
-		return "Objet possédé ({amount})";
+		return "Objet possÃ©dÃ© ({amount})";
 	}
 
 	/// <summary>
@@ -937,12 +937,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelItemRecentPrice(string name, string price)
 	{
-		return $"Le prix moyen récent de l'objet {name} est de {price}.";
+		return $"Le prix moyen rÃ©cent de l'objet {name} est de {price}.";
 	}
 
 	protected override string _GetTemplateForLabelItemRecentPrice()
 	{
-		return "Le prix moyen récent de l'objet {name} est de {price}.";
+		return "Le prix moyen rÃ©cent de l'objet {name} est de {price}.";
 	}
 
 	/// <summary>
@@ -952,12 +952,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelMarketplaceFee(string percent)
 	{
-		return $"Frais du marché (à {percent}\u00a0%)";
+		return $"Frais du marchÃ© (Ã  {percent}\u00a0%)";
 	}
 
 	protected override string _GetTemplateForLabelMarketplaceFee()
 	{
-		return "Frais du marché (à {percent}\u00a0%)";
+		return "Frais du marchÃ© (Ã  {percent}\u00a0%)";
 	}
 
 	protected override string _GetTemplateForLabelNone()
@@ -1002,12 +1002,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelPurchaseCompleted()
 	{
-		return "Achat effectué";
+		return "Achat effectuÃ©";
 	}
 
 	protected override string _GetTemplateForLabelRarity()
 	{
-		return "Rareté";
+		return "RaretÃ©";
 	}
 
 	protected override string _GetTemplateForLabelReadMore()
@@ -1046,17 +1046,17 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelSerializedLimitedRelease()
 	{
-		return "Parution en édition limitée, peut être revendu.";
+		return "Parution en Ã©dition limitÃ©e, peut Ãªtre revendu.";
 	}
 
 	protected override string _GetTemplateForLabelSerialNotAvailable()
 	{
-		return "Nº de série non disponible";
+		return "NÂº de sÃ©rie non disponible";
 	}
 
 	protected override string _GetTemplateForLabelSerialNumber()
 	{
-		return "Numéro de série";
+		return "NumÃ©ro de sÃ©rie";
 	}
 
 	/// <summary>
@@ -1065,12 +1065,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelSerialNumberOfTotal(string number, string total)
 	{
-		return $"Nº de série {number} sur {total}";
+		return $"NÂº de sÃ©rie {number} sur {total}";
 	}
 
 	protected override string _GetTemplateForLabelSerialNumberOfTotal()
 	{
-		return "Nº de série {number} sur {total}";
+		return "NÂº de sÃ©rie {number} sur {total}";
 	}
 
 	protected override string _GetTemplateForLabelShowLess()
@@ -1095,7 +1095,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelThirteenPlusOnly()
 	{
-		return "Réservé aux 13 ans et +.";
+		return "RÃ©servÃ© aux 13 ans et +.";
 	}
 
 	protected override string _GetTemplateForLabelType()
@@ -1105,7 +1105,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelUpdated()
 	{
-		return "Mis à jour";
+		return "Mis Ã  jour";
 	}
 
 	/// <summary>
@@ -1144,27 +1144,27 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForResponseAddedToProfile()
 	{
-		return "Ajouté à ton profil";
+		return "AjoutÃ© Ã  ton profil";
 	}
 
 	protected override string _GetTemplateForResponseAddedToYourAvater()
 	{
-		return "Ajouté à ton avatar";
+		return "AjoutÃ© Ã  ton avatar";
 	}
 
 	protected override string _GetTemplateForResponseAlreadyHaveMaxItems()
 	{
-		return "Ton jeu comporte déjà le nombre maximum d'objets!";
+		return "Ton jeu comporte dÃ©jÃ  le nombre maximum d'objets!";
 	}
 
 	protected override string _GetTemplateForResponseDisabledBadge()
 	{
-		return "Badge désactivé";
+		return "Badge dÃ©sactivÃ©";
 	}
 
 	protected override string _GetTemplateForResponseEnabledBadge()
 	{
-		return "Badge activé";
+		return "Badge activÃ©";
 	}
 
 	protected override string _GetTemplateForResponseFailedToAddToProfile()
@@ -1179,7 +1179,7 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForResponseFailedToDisableBadge()
 	{
-		return "Impossible de désactiver le badge";
+		return "Impossible de dÃ©sactiver le badge";
 	}
 
 	protected override string _GetTemplateForResponseFailedToEnableBadge()
@@ -1199,12 +1199,12 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string ResponseGearAddSuccess(string placeName)
 	{
-		return $"Ajouté à ton jeu, {placeName}.";
+		return $"AjoutÃ© Ã  ton jeu, {placeName}.";
 	}
 
 	protected override string _GetTemplateForResponseGearAddSuccess()
 	{
-		return "Ajouté à ton jeu, {placeName}.";
+		return "AjoutÃ© Ã  ton jeu, {placeName}.";
 	}
 
 	/// <summary>
@@ -1214,26 +1214,29 @@ internal class ItemResources_fr_fr : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string ResponseGearAlreadyAdded(string placeName)
 	{
-		return $"Vous avez déjà ajouté cet équipement à {placeName}.";
+		return $"Vous avez dÃ©jÃ  ajoutÃ© cet Ã©quipement Ã  {placeName}.";
 	}
 
 	protected override string _GetTemplateForResponseGearAlreadyAdded()
 	{
-		return "Vous avez déjà ajouté cet équipement à {placeName}.";
+		return "Vous avez dÃ©jÃ  ajoutÃ© cet Ã©quipement Ã  {placeName}.";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromInventory()
 	{
-		return "Retiré de ton inventaire";
+		return "RetirÃ© de ton inventaire";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromProfile()
 	{
-		return "Retiré de ton profil";
+		return "RetirÃ© de ton profil";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromYourAvater()
 	{
-		return "Retiré de ton avatar";
+		return "RetirÃ© de ton avatar";
 	}
+}
+
+
 }

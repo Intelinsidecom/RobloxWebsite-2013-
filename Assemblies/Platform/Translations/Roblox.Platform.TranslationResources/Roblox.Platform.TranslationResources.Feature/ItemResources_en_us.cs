@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ItemResources_en_us : TranslationResourcesBase, IItemResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ItemResources_en_us : TranslationResourcesBase, IItemResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1662,4 +1661,7 @@ internal class ItemResources_en_us : TranslationResourcesBase, IItemResources, I
 	{
 		return "Removed from your Avatar";
 	}
+}
+
+
 }

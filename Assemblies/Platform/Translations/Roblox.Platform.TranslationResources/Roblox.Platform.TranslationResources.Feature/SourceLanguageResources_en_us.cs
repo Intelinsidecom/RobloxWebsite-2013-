@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class SourceLanguageResources_en_us : TranslationResourcesBase, ISourceLanguageResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class SourceLanguageResources_en_us : TranslationResourcesBase, ISourceLanguageResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -171,4 +170,7 @@ internal class SourceLanguageResources_en_us : TranslationResourcesBase, ISource
 	{
 		return "Error: An error has occurred. Please try again later.";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameLocalizationResources : ITranslationResources
 
-public interface IGameLocalizationResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -227,4 +227,7 @@ public interface IGameLocalizationResources : ITranslationResources
 	/// English String: "Are you sure you want to clear the translations for {languageName}? Users will see name and description in the source language of the game."
 	/// </summary>
 	string DescriptionClear(string languageName);
+}
+
+
 }

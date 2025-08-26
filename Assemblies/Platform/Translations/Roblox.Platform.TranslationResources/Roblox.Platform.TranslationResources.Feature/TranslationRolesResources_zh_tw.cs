@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationRolesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,170 +10,170 @@ internal class TranslationRolesResources_zh_tw : TranslationRolesResources_en_us
 	/// Key: "Description.Modal.DeleteTranslator"
 	/// English String: "Are you sure you want to delete this translator?"
 	/// </summary>
-	public override string DescriptionModalDeleteTranslator => "確定刪除此譯者？";
+	public override string DescriptionModalDeleteTranslator => "ç¢ºå®šåˆªé™¤æ­¤è­¯è€…ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.TranslatorTooltip"
 	/// English String: "Add translators by username or user ID. You can also add a specific role set from a Group you own as translators. Users with translator access will be able to view game content and provide translations."
 	/// </summary>
-	public override string DescriptionTranslatorTooltip => "以使用者名稱或使用者 ID 新增譯者。您也可以從您管理的群組裡面為特定階級啟用譯者權限。擁有譯者權限的使用者將可以檢視遊戲內容與提供翻譯。";
+	public override string DescriptionTranslatorTooltip => "ä»¥ä½¿ç”¨è€…åç¨±æˆ–ä½¿ç”¨è€… ID æ–°å¢žè­¯è€…ã€‚æ‚¨ä¹Ÿå¯ä»¥å¾žæ‚¨ç®¡ç†çš„ç¾¤çµ„è£¡é¢ç‚ºç‰¹å®šéšŽç´šå•Ÿç”¨è­¯è€…æ¬Šé™ã€‚æ“æœ‰è­¯è€…æ¬Šé™çš„ä½¿ç”¨è€…å°‡å¯ä»¥æª¢è¦–éŠæˆ²å…§å®¹èˆ‡æä¾›ç¿»è­¯ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.Modal.DeleteTranslator"
 	/// English String: "Delete Translator"
 	/// </summary>
-	public override string HeadingModalDeleteTranslator => "刪除譯者";
+	public override string HeadingModalDeleteTranslator => "åˆªé™¤è­¯è€…";
 
 	/// <summary>
 	/// Key: "Heading.Translators"
 	/// English String: "Translators"
 	/// </summary>
-	public override string HeadingTranslators => "譯者";
+	public override string HeadingTranslators => "è­¯è€…";
 
 	/// <summary>
 	/// Key: "Label.AddUser"
 	/// English String: "Click to add translator"
 	/// </summary>
-	public override string LabelAddUser => "按下新增譯者";
+	public override string LabelAddUser => "æŒ‰ä¸‹æ–°å¢žè­¯è€…";
 
 	/// <summary>
 	/// Key: "Label.EnterGroupIdPlaceholder"
 	/// English String: "Enter Translator Group ID"
 	/// </summary>
-	public override string LabelEnterGroupIdPlaceholder => "輸入譯者群組 ID";
+	public override string LabelEnterGroupIdPlaceholder => "è¼¸å…¥è­¯è€…ç¾¤çµ„ ID";
 
 	/// <summary>
 	/// Key: "Label.EnterUserIdPlaceholder"
 	/// English String: "Enter Translator's UserID"
 	/// </summary>
-	public override string LabelEnterUserIdPlaceholder => "輸入譯者的使用者 ID";
+	public override string LabelEnterUserIdPlaceholder => "è¼¸å…¥è­¯è€…çš„ä½¿ç”¨è€… ID";
 
 	/// <summary>
 	/// Key: "Label.EnterUsernamePlaceholder"
 	/// English String: "Enter Translator's Username"
 	/// </summary>
-	public override string LabelEnterUsernamePlaceholder => "輸入譯者使用者名稱";
+	public override string LabelEnterUsernamePlaceholder => "è¼¸å…¥è­¯è€…ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Label.EntireGroup"
 	/// English String: "Entire Group"
 	/// </summary>
-	public override string LabelEntireGroup => "整個群組";
+	public override string LabelEntireGroup => "æ•´å€‹ç¾¤çµ„";
 
 	/// <summary>
 	/// Key: "Label.GroupId"
 	/// English String: "Group ID"
 	/// </summary>
-	public override string LabelGroupId => "群組 ID";
+	public override string LabelGroupId => "ç¾¤çµ„ ID";
 
 	/// <summary>
 	/// Key: "Label.Groups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string LabelGroups => "群組";
+	public override string LabelGroups => "ç¾¤çµ„";
 
 	/// <summary>
 	/// Key: "Label.PrivateGroup"
 	/// English String: "Private Group"
 	/// </summary>
-	public override string LabelPrivateGroup => "私人群組";
+	public override string LabelPrivateGroup => "ç§äººç¾¤çµ„";
 
 	/// <summary>
 	/// Key: "Label.PublicGroup"
 	/// English String: "Public Group"
 	/// </summary>
-	public override string LabelPublicGroup => "公開群組";
+	public override string LabelPublicGroup => "å…¬é–‹ç¾¤çµ„";
 
 	/// <summary>
 	/// Key: "Label.RemoveUser"
 	/// English String: "Click to remove translator"
 	/// </summary>
-	public override string LabelRemoveUser => "按下移除譯者";
+	public override string LabelRemoveUser => "æŒ‰ä¸‹ç§»é™¤è­¯è€…";
 
 	/// <summary>
 	/// Key: "Label.SelectGroupRole"
 	/// English String: "Select Group Role"
 	/// </summary>
-	public override string LabelSelectGroupRole => "選擇群組階級";
+	public override string LabelSelectGroupRole => "é¸æ“‡ç¾¤çµ„éšŽç´š";
 
 	/// <summary>
 	/// Key: "Label.TranslatorsTooltip"
 	/// English String: "Users and groups with translator access will be able to view game content and provide translations."
 	/// </summary>
-	public override string LabelTranslatorsTooltip => "擁有譯者權限的使用者將可以檢視遊戲內容與提供翻譯。";
+	public override string LabelTranslatorsTooltip => "æ“æœ‰è­¯è€…æ¬Šé™çš„ä½¿ç”¨è€…å°‡å¯ä»¥æª¢è¦–éŠæˆ²å…§å®¹èˆ‡æä¾›ç¿»è­¯ã€‚";
 
 	/// <summary>
 	/// Key: "Label.UserId"
 	/// English String: "User ID"
 	/// </summary>
-	public override string LabelUserId => "使用者 ID";
+	public override string LabelUserId => "ä½¿ç”¨è€… ID";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "使用者名稱";
+	public override string LabelUsername => "ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Label.Users"
 	/// English String: "Users"
 	/// </summary>
-	public override string LabelUsers => "使用者";
+	public override string LabelUsers => "ä½¿ç”¨è€…";
 
 	/// <summary>
 	/// Key: "Message.EnterTranslatorGroupID"
 	/// English String: "Please enter Group ID of the group you like to add as translator"
 	/// </summary>
-	public override string MessageEnterTranslatorGroupID => "請輸入欲設為譯者的群組的 ID";
+	public override string MessageEnterTranslatorGroupID => "è«‹è¼¸å…¥æ¬²è¨­ç‚ºè­¯è€…çš„ç¾¤çµ„çš„ ID";
 
 	/// <summary>
 	/// Key: "Message.EnterTranslatorUserId"
 	/// English String: "Please enter a translator's User ID"
 	/// </summary>
-	public override string MessageEnterTranslatorUserId => "請輸入譯者使用者 ID。";
+	public override string MessageEnterTranslatorUserId => "è«‹è¼¸å…¥è­¯è€…ä½¿ç”¨è€… IDã€‚";
 
 	/// <summary>
 	/// Key: "Message.EnterTranslatorUsername"
 	/// English String: "Please enter a translator's username"
 	/// </summary>
-	public override string MessageEnterTranslatorUsername => "請輸入譯者使用者名稱";
+	public override string MessageEnterTranslatorUsername => "è«‹è¼¸å…¥è­¯è€…ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Message.GroupAlreadyAdded"
 	/// English String: "The group is already added."
 	/// </summary>
-	public override string MessageGroupAlreadyAdded => "此群組已加入。";
+	public override string MessageGroupAlreadyAdded => "æ­¤ç¾¤çµ„å·²åŠ å…¥ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupAlreadyAddedWithRoleset"
 	/// English String: "Group with specified role set is already added. "
 	/// </summary>
-	public override string MessageGroupAlreadyAddedWithRoleset => "已為此群組設定指定權限。";
+	public override string MessageGroupAlreadyAddedWithRoleset => "å·²ç‚ºæ­¤ç¾¤çµ„è¨­å®šæŒ‡å®šæ¬Šé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroup"
 	/// English String: "Group not found. Please check Group ID entered."
 	/// </summary>
-	public override string MessageInvalidGroup => "找不到群組，請確認群組 ID。";
+	public override string MessageInvalidGroup => "æ‰¾ä¸åˆ°ç¾¤çµ„ï¼Œè«‹ç¢ºèªç¾¤çµ„ IDã€‚";
 
 	/// <summary>
 	/// Key: "Message.RolesServerError"
 	/// This error message is shown when we are unable to show information to the user. We ask them to refresh or try again later because our services might be down.
 	/// English String: "Unable to retrieve data. Please refresh or try again later."
 	/// </summary>
-	public override string MessageRolesServerError => "無法擷取資料，請重新整理或稍後再試。";
+	public override string MessageRolesServerError => "ç„¡æ³•æ“·å–è³‡æ–™ï¼Œè«‹é‡æ–°æ•´ç†æˆ–ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UserAlreadyAdded"
 	/// English String: "This user is already added"
 	/// </summary>
-	public override string MessageUserAlreadyAdded => "此使用者已加入";
+	public override string MessageUserAlreadyAdded => "æ­¤ä½¿ç”¨è€…å·²åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Message.UserNotFound"
 	/// English String: "User not found. Please check Username or User ID entered."
 	/// </summary>
-	public override string MessageUserNotFound => "找不到使用者，請檢查輸入的使用者名稱或使用者 ID。";
+	public override string MessageUserNotFound => "æ‰¾ä¸åˆ°ä½¿ç”¨è€…ï¼Œè«‹æª¢æŸ¥è¼¸å…¥çš„ä½¿ç”¨è€…åç¨±æˆ–ä½¿ç”¨è€… IDã€‚";
 
 	public TranslationRolesResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -182,72 +182,72 @@ internal class TranslationRolesResources_zh_tw : TranslationRolesResources_en_us
 
 	protected override string _GetTemplateForDescriptionModalDeleteTranslator()
 	{
-		return "確定刪除此譯者？";
+		return "ç¢ºå®šåˆªé™¤æ­¤è­¯è€…ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionTranslatorTooltip()
 	{
-		return "以使用者名稱或使用者 ID 新增譯者。您也可以從您管理的群組裡面為特定階級啟用譯者權限。擁有譯者權限的使用者將可以檢視遊戲內容與提供翻譯。";
+		return "ä»¥ä½¿ç”¨è€…åç¨±æˆ–ä½¿ç”¨è€… ID æ–°å¢žè­¯è€…ã€‚æ‚¨ä¹Ÿå¯ä»¥å¾žæ‚¨ç®¡ç†çš„ç¾¤çµ„è£¡é¢ç‚ºç‰¹å®šéšŽç´šå•Ÿç”¨è­¯è€…æ¬Šé™ã€‚æ“æœ‰è­¯è€…æ¬Šé™çš„ä½¿ç”¨è€…å°‡å¯ä»¥æª¢è¦–éŠæˆ²å…§å®¹èˆ‡æä¾›ç¿»è­¯ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingModalDeleteTranslator()
 	{
-		return "刪除譯者";
+		return "åˆªé™¤è­¯è€…";
 	}
 
 	protected override string _GetTemplateForHeadingTranslators()
 	{
-		return "譯者";
+		return "è­¯è€…";
 	}
 
 	protected override string _GetTemplateForLabelAddUser()
 	{
-		return "按下新增譯者";
+		return "æŒ‰ä¸‹æ–°å¢žè­¯è€…";
 	}
 
 	protected override string _GetTemplateForLabelEnterGroupIdPlaceholder()
 	{
-		return "輸入譯者群組 ID";
+		return "è¼¸å…¥è­¯è€…ç¾¤çµ„ ID";
 	}
 
 	protected override string _GetTemplateForLabelEnterUserIdPlaceholder()
 	{
-		return "輸入譯者的使用者 ID";
+		return "è¼¸å…¥è­¯è€…çš„ä½¿ç”¨è€… ID";
 	}
 
 	protected override string _GetTemplateForLabelEnterUsernamePlaceholder()
 	{
-		return "輸入譯者使用者名稱";
+		return "è¼¸å…¥è­¯è€…ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelEntireGroup()
 	{
-		return "整個群組";
+		return "æ•´å€‹ç¾¤çµ„";
 	}
 
 	protected override string _GetTemplateForLabelGroupId()
 	{
-		return "群組 ID";
+		return "ç¾¤çµ„ ID";
 	}
 
 	protected override string _GetTemplateForLabelGroups()
 	{
-		return "群組";
+		return "ç¾¤çµ„";
 	}
 
 	protected override string _GetTemplateForLabelPrivateGroup()
 	{
-		return "私人群組";
+		return "ç§äººç¾¤çµ„";
 	}
 
 	protected override string _GetTemplateForLabelPublicGroup()
 	{
-		return "公開群組";
+		return "å…¬é–‹ç¾¤çµ„";
 	}
 
 	protected override string _GetTemplateForLabelRemoveUser()
 	{
-		return "按下移除譯者";
+		return "æŒ‰ä¸‹ç§»é™¤è­¯è€…";
 	}
 
 	/// <summary>
@@ -256,81 +256,84 @@ internal class TranslationRolesResources_zh_tw : TranslationRolesResources_en_us
 	/// </summary>
 	public override string LabelRolesetName(string rolesetName)
 	{
-		return $"階級：{rolesetName}";
+		return $"éšŽç´šï¼š{rolesetName}";
 	}
 
 	protected override string _GetTemplateForLabelRolesetName()
 	{
-		return "階級：{rolesetName}";
+		return "éšŽç´šï¼š{rolesetName}";
 	}
 
 	protected override string _GetTemplateForLabelSelectGroupRole()
 	{
-		return "選擇群組階級";
+		return "é¸æ“‡ç¾¤çµ„éšŽç´š";
 	}
 
 	protected override string _GetTemplateForLabelTranslatorsTooltip()
 	{
-		return "擁有譯者權限的使用者將可以檢視遊戲內容與提供翻譯。";
+		return "æ“æœ‰è­¯è€…æ¬Šé™çš„ä½¿ç”¨è€…å°‡å¯ä»¥æª¢è¦–éŠæˆ²å…§å®¹èˆ‡æä¾›ç¿»è­¯ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUserId()
 	{
-		return "使用者 ID";
+		return "ä½¿ç”¨è€… ID";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "使用者名稱";
+		return "ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelUsers()
 	{
-		return "使用者";
+		return "ä½¿ç”¨è€…";
 	}
 
 	protected override string _GetTemplateForMessageEnterTranslatorGroupID()
 	{
-		return "請輸入欲設為譯者的群組的 ID";
+		return "è«‹è¼¸å…¥æ¬²è¨­ç‚ºè­¯è€…çš„ç¾¤çµ„çš„ ID";
 	}
 
 	protected override string _GetTemplateForMessageEnterTranslatorUserId()
 	{
-		return "請輸入譯者使用者 ID。";
+		return "è«‹è¼¸å…¥è­¯è€…ä½¿ç”¨è€… IDã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEnterTranslatorUsername()
 	{
-		return "請輸入譯者使用者名稱";
+		return "è«‹è¼¸å…¥è­¯è€…ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForMessageGroupAlreadyAdded()
 	{
-		return "此群組已加入。";
+		return "æ­¤ç¾¤çµ„å·²åŠ å…¥ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupAlreadyAddedWithRoleset()
 	{
-		return "已為此群組設定指定權限。";
+		return "å·²ç‚ºæ­¤ç¾¤çµ„è¨­å®šæŒ‡å®šæ¬Šé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroup()
 	{
-		return "找不到群組，請確認群組 ID。";
+		return "æ‰¾ä¸åˆ°ç¾¤çµ„ï¼Œè«‹ç¢ºèªç¾¤çµ„ IDã€‚";
 	}
 
 	protected override string _GetTemplateForMessageRolesServerError()
 	{
-		return "無法擷取資料，請重新整理或稍後再試。";
+		return "ç„¡æ³•æ“·å–è³‡æ–™ï¼Œè«‹é‡æ–°æ•´ç†æˆ–ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUserAlreadyAdded()
 	{
-		return "此使用者已加入";
+		return "æ­¤ä½¿ç”¨è€…å·²åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForMessageUserNotFound()
 	{
-		return "找不到使用者，請檢查輸入的使用者名稱或使用者 ID。";
+		return "æ‰¾ä¸åˆ°ä½¿ç”¨è€…ï¼Œè«‹æª¢æŸ¥è¼¸å…¥çš„ä½¿ç”¨è€…åç¨±æˆ–ä½¿ç”¨è€… IDã€‚";
 	}
+}
+
+
 }

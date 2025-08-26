@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Event arguments for tracking BrowserTracker creation.
 /// </summary>
 public class BrowserTrackerCreatedEventArgs : WebEventArgs
@@ -13,3 +14,12 @@ public class BrowserTrackerCreatedEventArgs : WebEventArgs
 	/// </value>
 	public string RequestUrl { get; set; }
 }
+
+
+}
+
+
+
+
+
+

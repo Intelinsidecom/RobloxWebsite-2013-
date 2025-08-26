@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IFileUploadComponentResources : ITranslationResources
 
-public interface IFileUploadComponentResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.DragFile"
@@ -70,4 +70,7 @@ public interface IFileUploadComponentResources : ITranslationResources
 	/// English String: "Invalid file type. Must be a {fileTypes} file."
 	/// </summary>
 	string MessageInvalidFile(string fileTypes);
+}
+
+
 }

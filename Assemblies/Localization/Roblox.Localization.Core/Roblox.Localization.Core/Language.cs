@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class Language : IRobloxEntity<int, LanguageDAL>, ICacheableObject<int>, ICacheableObject, IRemoteCacheableObject
 {
 	private LanguageDAL _EntityDAL;
@@ -173,4 +172,7 @@ internal class Language : IRobloxEntity<int, LanguageDAL>, ICacheableObject<int>
 	{
 		return "GetAll";
 	}
+}
+
+
 }

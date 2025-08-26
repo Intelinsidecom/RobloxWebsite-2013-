@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class SupportedLocaleChangedByUserEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class SupportedLocaleChangedByUserEvent : WebEventBase
 {
 	private const string _EventName = "supportedLocaleChanged";
 
@@ -33,3 +33,12 @@ public class SupportedLocaleChangedByUserEvent : WebEventBase
 		AddEventArg("actorId", supportedLocaleChangedByUserEventArgs.ActorId.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

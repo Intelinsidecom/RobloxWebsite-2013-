@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Coreinternal {
+    interface IObservedLocaleEntityTranslator
 
-internal interface IObservedLocaleEntityTranslator
 {
 	/// <summary>
 	/// Converts IObservedLocaleEntity to ILocaleInformation.
@@ -19,4 +19,7 @@ internal interface IObservedLocaleEntityTranslator
 	/// <param name="observedLocaleEntity"></param>
 	/// <returns>ILocaleInformation</returns>
 	IDeviceReportedLocale TranslateObservedLocaleEntity(IObservedLocaleEntity observedLocaleEntity);
+}
+
+
 }

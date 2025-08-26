@@ -1,12 +1,11 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Roblox.ApiClientBase;
 using Roblox.ContentFilterApi.Client;
 using Roblox.Platform.Moderation.Interfaces;
+namespace Roblox.Moderation.Implementationinternal {
+    class Whitelist : IWhitelist
 
-namespace Roblox.Platform.Moderation.Implementation;
-
-internal class Whitelist : IWhitelist
 {
 	private ContentFilterClient _Client { get; set; }
 
@@ -73,4 +72,7 @@ internal class Whitelist : IWhitelist
 		while (currentResult.PageItems.Count() != 0);
 		return whitelistWords;
 	}
+}
+
+
 }

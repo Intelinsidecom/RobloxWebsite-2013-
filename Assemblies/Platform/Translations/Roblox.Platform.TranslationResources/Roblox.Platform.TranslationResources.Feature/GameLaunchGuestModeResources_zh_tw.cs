@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLaunchGuestModeResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,91 +11,91 @@ internal class GameLaunchGuestModeResources_zh_tw : GameLaunchGuestModeResources
 	/// button text
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionDialogClose => "關閉";
+	public override string ActionDialogClose => "é—œé–‰";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Login"
 	/// button text
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionDialogLogin => "登入";
+	public override string ActionDialogLogin => "ç™»å…¥";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Ok"
 	/// button text
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogOk => "確定";
+	public override string ActionDialogOk => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Dialog.SignUp"
 	/// button text
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string ActionDialogSignUp => "註冊";
+	public override string ActionDialogSignUp => "è¨»å†Š";
 
 	/// <summary>
 	/// Key: "Action.Dialog.SignUpNow"
 	/// button text
 	/// English String: "Sign up now!"
 	/// </summary>
-	public override string ActionDialogSignUpNow => "現在註冊！";
+	public override string ActionDialogSignUpNow => "ç¾åœ¨è¨»å†Šï¼";
 
 	/// <summary>
 	/// Key: "Description.Dialog.SignUpOrLogin"
 	/// modal body text
 	/// English String: "To play games, chat with friends, or customize your avatar, you'll need an account. Sign up for a free account or log in to play now."
 	/// </summary>
-	public override string DescriptionDialogSignUpOrLogin => "您需要申請帳號才可以玩遊戲、與好友聊天及自訂您的虛擬人偶。登入或註冊免費帳號，馬上開始玩。";
+	public override string DescriptionDialogSignUpOrLogin => "æ‚¨éœ€è¦ç”³è«‹å¸³è™Ÿæ‰å¯ä»¥çŽ©éŠæˆ²ã€èˆ‡å¥½å‹èŠå¤©åŠè‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶ã€‚ç™»å…¥æˆ–è¨»å†Šå…è²»å¸³è™Ÿï¼Œé¦¬ä¸Šé–‹å§‹çŽ©ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.SignUpTodayOneDayRemaining"
 	/// description text
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have less than a day left before we require free sign up."
 	/// </summary>
-	public override string DescriptionDialogSignUpTodayOneDayRemaining => "您正在以訪客模式遊玩。若要使用所有 Roblox 功能，您將需要建立帳號。在需要免費註冊之前，您還可以玩一天。";
+	public override string DescriptionDialogSignUpTodayOneDayRemaining => "æ‚¨æ­£åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ã€‚è‹¥è¦ä½¿ç”¨æ‰€æœ‰ Roblox åŠŸèƒ½ï¼Œæ‚¨å°‡éœ€è¦å»ºç«‹å¸³è™Ÿã€‚åœ¨éœ€è¦å…è²»è¨»å†Šä¹‹å‰ï¼Œæ‚¨é‚„å¯ä»¥çŽ©ä¸€å¤©ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.TrialOver"
 	/// description
 	/// English String: "Your trial period has ended. Please sign up to play games - it's free!"
 	/// </summary>
-	public override string DescriptionDialogTrialOver => "您的試用期已結束，請註冊免費帳號繼續玩。";
+	public override string DescriptionDialogTrialOver => "æ‚¨çš„è©¦ç”¨æœŸå·²çµæŸï¼Œè«‹è¨»å†Šå…è²»å¸³è™Ÿç¹¼çºŒçŽ©ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.YouArePlayingOneDayRemaining"
 	/// description
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have 1 gameplay left before we require free sign up."
 	/// </summary>
-	public override string DescriptionDialogYouArePlayingOneDayRemaining => "您正在以訪客模式遊玩。若要使用所有 Roblox 功能，您將需要建立帳號。在需要免費註冊之前，您還可以遊玩一次。";
+	public override string DescriptionDialogYouArePlayingOneDayRemaining => "æ‚¨æ­£åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ã€‚è‹¥è¦ä½¿ç”¨æ‰€æœ‰ Roblox åŠŸèƒ½ï¼Œæ‚¨å°‡éœ€è¦å»ºç«‹å¸³è™Ÿã€‚åœ¨éœ€è¦å…è²»è¨»å†Šä¹‹å‰ï¼Œæ‚¨é‚„å¯ä»¥éŠçŽ©ä¸€æ¬¡ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.ChooseAvatar"
 	/// modal heading
 	/// English String: "Choose Your Avatar"
 	/// </summary>
-	public override string HeadingChooseAvatar => "選擇您的虛擬人偶";
+	public override string HeadingChooseAvatar => "é¸æ“‡æ‚¨çš„è™›æ“¬äººå¶";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.SignUpOrLogin"
 	/// modal heading
 	/// English String: "Sign up for a free account or log in!"
 	/// </summary>
-	public override string HeadingDialogSignUpOrLogin => "登入或註冊免費帳號！";
+	public override string HeadingDialogSignUpOrLogin => "ç™»å…¥æˆ–è¨»å†Šå…è²»å¸³è™Ÿï¼";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.SignUpToday"
 	/// modal heading
 	/// English String: "Sign Up Today!"
 	/// </summary>
-	public override string HeadingDialogSignUpToday => "現在註冊！";
+	public override string HeadingDialogSignUpToday => "ç¾åœ¨è¨»å†Šï¼";
 
 	/// <summary>
 	/// Key: "Label.HaveAccount"
 	/// label
 	/// English String: "I have an account"
 	/// </summary>
-	public override string LabelHaveAccount => "我有帳號";
+	public override string LabelHaveAccount => "æˆ‘æœ‰å¸³è™Ÿ";
 
 	public GameLaunchGuestModeResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -104,37 +104,37 @@ internal class GameLaunchGuestModeResources_zh_tw : GameLaunchGuestModeResources
 
 	protected override string _GetTemplateForActionDialogClose()
 	{
-		return "關閉";
+		return "é—œé–‰";
 	}
 
 	protected override string _GetTemplateForActionDialogLogin()
 	{
-		return "登入";
+		return "ç™»å…¥";
 	}
 
 	protected override string _GetTemplateForActionDialogOk()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionDialogSignUp()
 	{
-		return "註冊";
+		return "è¨»å†Š";
 	}
 
 	protected override string _GetTemplateForActionDialogSignUpNow()
 	{
-		return "現在註冊！";
+		return "ç¾åœ¨è¨»å†Šï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpOrLogin()
 	{
-		return "您需要申請帳號才可以玩遊戲、與好友聊天及自訂您的虛擬人偶。登入或註冊免費帳號，馬上開始玩。";
+		return "æ‚¨éœ€è¦ç”³è«‹å¸³è™Ÿæ‰å¯ä»¥çŽ©éŠæˆ²ã€èˆ‡å¥½å‹èŠå¤©åŠè‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶ã€‚ç™»å…¥æˆ–è¨»å†Šå…è²»å¸³è™Ÿï¼Œé¦¬ä¸Šé–‹å§‹çŽ©ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpTodayOneDayRemaining()
 	{
-		return "您正在以訪客模式遊玩。若要使用所有 Roblox 功能，您將需要建立帳號。在需要免費註冊之前，您還可以玩一天。";
+		return "æ‚¨æ­£åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ã€‚è‹¥è¦ä½¿ç”¨æ‰€æœ‰ Roblox åŠŸèƒ½ï¼Œæ‚¨å°‡éœ€è¦å»ºç«‹å¸³è™Ÿã€‚åœ¨éœ€è¦å…è²»è¨»å†Šä¹‹å‰ï¼Œæ‚¨é‚„å¯ä»¥çŽ©ä¸€å¤©ã€‚";
 	}
 
 	/// <summary>
@@ -144,22 +144,22 @@ internal class GameLaunchGuestModeResources_zh_tw : GameLaunchGuestModeResources
 	/// </summary>
 	public override string DescriptionDialogSignUpTodaySomeDaysRemaining(string numDays)
 	{
-		return $"您正在以訪客模式遊玩。若要使用所有 Roblox 功能，您將需要建立帳號。在需要免費註冊之前，您還可以玩 {numDays} 天。";
+		return $"æ‚¨æ­£åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ã€‚è‹¥è¦ä½¿ç”¨æ‰€æœ‰ Roblox åŠŸèƒ½ï¼Œæ‚¨å°‡éœ€è¦å»ºç«‹å¸³è™Ÿã€‚åœ¨éœ€è¦å…è²»è¨»å†Šä¹‹å‰ï¼Œæ‚¨é‚„å¯ä»¥çŽ© {numDays} å¤©ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpTodaySomeDaysRemaining()
 	{
-		return "您正在以訪客模式遊玩。若要使用所有 Roblox 功能，您將需要建立帳號。在需要免費註冊之前，您還可以玩 {numDays} 天。";
+		return "æ‚¨æ­£åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ã€‚è‹¥è¦ä½¿ç”¨æ‰€æœ‰ Roblox åŠŸèƒ½ï¼Œæ‚¨å°‡éœ€è¦å»ºç«‹å¸³è™Ÿã€‚åœ¨éœ€è¦å…è²»è¨»å†Šä¹‹å‰ï¼Œæ‚¨é‚„å¯ä»¥çŽ© {numDays} å¤©ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogTrialOver()
 	{
-		return "您的試用期已結束，請註冊免費帳號繼續玩。";
+		return "æ‚¨çš„è©¦ç”¨æœŸå·²çµæŸï¼Œè«‹è¨»å†Šå…è²»å¸³è™Ÿç¹¼çºŒçŽ©ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogYouArePlayingOneDayRemaining()
 	{
-		return "您正在以訪客模式遊玩。若要使用所有 Roblox 功能，您將需要建立帳號。在需要免費註冊之前，您還可以遊玩一次。";
+		return "æ‚¨æ­£åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ã€‚è‹¥è¦ä½¿ç”¨æ‰€æœ‰ Roblox åŠŸèƒ½ï¼Œæ‚¨å°‡éœ€è¦å»ºç«‹å¸³è™Ÿã€‚åœ¨éœ€è¦å…è²»è¨»å†Šä¹‹å‰ï¼Œæ‚¨é‚„å¯ä»¥éŠçŽ©ä¸€æ¬¡ã€‚";
 	}
 
 	/// <summary>
@@ -169,31 +169,34 @@ internal class GameLaunchGuestModeResources_zh_tw : GameLaunchGuestModeResources
 	/// </summary>
 	public override string DescriptionDialogYouArePlayingSomeDaysRemaining(string numDays)
 	{
-		return $"您正在以訪客模式遊玩。若要使用所有 Roblox 功能，您將需要建立帳號。在需要免費註冊之前，您還可以遊玩 {numDays} 次。";
+		return $"æ‚¨æ­£åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ã€‚è‹¥è¦ä½¿ç”¨æ‰€æœ‰ Roblox åŠŸèƒ½ï¼Œæ‚¨å°‡éœ€è¦å»ºç«‹å¸³è™Ÿã€‚åœ¨éœ€è¦å…è²»è¨»å†Šä¹‹å‰ï¼Œæ‚¨é‚„å¯ä»¥éŠçŽ© {numDays} æ¬¡ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogYouArePlayingSomeDaysRemaining()
 	{
-		return "您正在以訪客模式遊玩。若要使用所有 Roblox 功能，您將需要建立帳號。在需要免費註冊之前，您還可以遊玩 {numDays} 次。";
+		return "æ‚¨æ­£åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ã€‚è‹¥è¦ä½¿ç”¨æ‰€æœ‰ Roblox åŠŸèƒ½ï¼Œæ‚¨å°‡éœ€è¦å»ºç«‹å¸³è™Ÿã€‚åœ¨éœ€è¦å…è²»è¨»å†Šä¹‹å‰ï¼Œæ‚¨é‚„å¯ä»¥éŠçŽ© {numDays} æ¬¡ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAvatar()
 	{
-		return "選擇您的虛擬人偶";
+		return "é¸æ“‡æ‚¨çš„è™›æ“¬äººå¶";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSignUpOrLogin()
 	{
-		return "登入或註冊免費帳號！";
+		return "ç™»å…¥æˆ–è¨»å†Šå…è²»å¸³è™Ÿï¼";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSignUpToday()
 	{
-		return "現在註冊！";
+		return "ç¾åœ¨è¨»å†Šï¼";
 	}
 
 	protected override string _GetTemplateForLabelHaveAccount()
 	{
-		return "我有帳號";
+		return "æˆ‘æœ‰å¸³è™Ÿ";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class CreditCardExpiringModalResourceFactory
 
-internal static class CreditCardExpiringModalResourceFactory
 {
 	public const string FullNamespace = "Feature.CreditCardExpiringModal";
 
@@ -21,4 +21,7 @@ internal static class CreditCardExpiringModalResourceFactory
 			_ => new CreditCardExpiringModalResources_en_us(state), 
 		};
 	}
+}
+
+
 }

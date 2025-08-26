@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class AssetTypesResourceFactory
 
-internal static class AssetTypesResourceFactory
 {
 	public const string FullNamespace = "Common.AssetTypes";
 
@@ -21,4 +21,7 @@ internal static class AssetTypesResourceFactory
 			_ => new AssetTypesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

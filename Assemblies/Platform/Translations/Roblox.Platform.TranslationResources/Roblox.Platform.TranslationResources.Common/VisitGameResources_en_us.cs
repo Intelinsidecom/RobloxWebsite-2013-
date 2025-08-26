@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class VisitGameResources_en_us : TranslationResourcesBase, IVisitGameResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class VisitGameResources_en_us : TranslationResourcesBase, IVisitGameResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -968,16 +967,16 @@ internal class VisitGameResources_en_us : TranslationResourcesBase, IVisitGameRe
 	/// <summary>
 	/// Key: "Response.Dialog.InstallingMessageWithLink"
 	/// Note: For this translation, please move the linkStart and linkEnd variables with the translation for download now.
-	/// English String: "The Roblox installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}"
+	/// English String: "The Roblox installer should download shortly. If it doesnâ€™t, start the {linkStart}download now.{linkEnd}"
 	/// </summary>
 	public virtual string ResponseDialogInstallingMessageWithLink(string linkStart, string linkEnd)
 	{
-		return $"The Roblox installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}";
+		return $"The Roblox installer should download shortly. If it doesnâ€™t, start the {linkStart}download now.{linkEnd}";
 	}
 
 	protected virtual string _GetTemplateForResponseDialogInstallingMessageWithLink()
 	{
-		return "The Roblox installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}";
+		return "The Roblox installer should download shortly. If it doesnâ€™t, start the {linkStart}download now.{linkEnd}";
 	}
 
 	/// <summary>
@@ -1474,4 +1473,7 @@ internal class VisitGameResources_en_us : TranslationResourcesBase, IVisitGameRe
 	{
 		return "Check {startBold}Remember my choice{endBold} and click {appLaunchLink} in the dialog box above to join games faster in the future!";
 	}
+}
+
+
 }

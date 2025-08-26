@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DevexCashOutResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.EmailAddressLabel"
 	/// English String: "Email Address"
 	/// </summary>
-	public override string CashOutFormEmailAddressLabel => "Dirección de correo electrónico";
+	public override string CashOutFormEmailAddressLabel => "DirecciÃ³n de correo electrÃ³nico";
 
 	/// <summary>
 	/// Key: "CashOutForm.ExchangeRateLabel"
@@ -52,19 +52,19 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.YouGetLabel"
 	/// English String: "You get up to:"
 	/// </summary>
-	public override string CashOutFormYouGetLabel => "Recibirás hasta:";
+	public override string CashOutFormYouGetLabel => "RecibirÃ¡s hasta:";
 
 	/// <summary>
 	/// Key: "Label.PasswordLabel"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPasswordLabel => "Contraseña";
+	public override string LabelPasswordLabel => "ContraseÃ±a";
 
 	/// <summary>
 	/// Key: "Label.PasswordPlaceholder"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelPasswordPlaceholder => "Verificar contraseña de la cuenta";
+	public override string LabelPasswordPlaceholder => "Verificar contraseÃ±a de la cuenta";
 
 	/// <summary>
 	/// Key: "PageHeader.Description"
@@ -82,13 +82,13 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.CannotLoadExchangeRate"
 	/// English String: "Sorry, we were unable to load the current exchange rate. Please try again."
 	/// </summary>
-	public override string ResponseCannotLoadExchangeRate => "Lo sentimos, pero en este momento no podemos cargar la tasa de cambio actual. Inténtalo de nuevo.";
+	public override string ResponseCannotLoadExchangeRate => "Lo sentimos, pero en este momento no podemos cargar la tasa de cambio actual. IntÃ©ntalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Response.CurrencyOperationUnavailable"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseCurrencyOperationUnavailable => "Algo ha ido mal. Inténtalo de nuevo.";
+	public override string ResponseCurrencyOperationUnavailable => "Algo ha ido mal. IntÃ©ntalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Response.FirstNameRequiredErrorMessage"
@@ -100,19 +100,19 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.IncorrectCredentials"
 	/// English String: "Invalid password."
 	/// </summary>
-	public override string ResponseIncorrectCredentials => "Contraseña no válida.";
+	public override string ResponseIncorrectCredentials => "ContraseÃ±a no vÃ¡lida.";
 
 	/// <summary>
 	/// Key: "Response.InsufficientFunds"
 	/// English String: "You do not have enough Robux to complete this transaction."
 	/// </summary>
-	public override string ResponseInsufficientFunds => "No tienes suficientes Robux finalizar esta transacción.";
+	public override string ResponseInsufficientFunds => "No tienes suficientes Robux finalizar esta transacciÃ³n.";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmailErrorMessage"
 	/// English String: "Please enter a valid email address."
 	/// </summary>
-	public override string ResponseInvalidEmailErrorMessage => "Introduce una dirección de correo electrónico válida.";
+	public override string ResponseInvalidEmailErrorMessage => "Introduce una direcciÃ³n de correo electrÃ³nico vÃ¡lida.";
 
 	/// <summary>
 	/// Key: "Response.LastNameRequiredErrorMessage"
@@ -124,19 +124,19 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.RobuxAmountIsBelowMinimumCashoutThreshold"
 	/// English String: "Robux amount below minimum cash out threshold."
 	/// </summary>
-	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "La cantidad de Robux está por debajo del monto mínimo establecido para convertir en efectivo.";
+	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "La cantidad de Robux estÃ¡ por debajo del monto mÃ­nimo establecido para convertir en efectivo.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseUnknownError => "Algo ha ido mal. Inténtalo de nuevo.";
+	public override string ResponseUnknownError => "Algo ha ido mal. IntÃ©ntalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Response.UserBalanceDoesNotHaveMoreRobuxThanMinimumCashout"
 	/// English String: "You cannot cash out for less than the minimum amount."
 	/// </summary>
-	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "No puedes convertir en efectivo si tienes una cantidad de Robux menor a la mínima establecida para la conversión.";
+	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "No puedes convertir en efectivo si tienes una cantidad de Robux menor a la mÃ­nima establecida para la conversiÃ³n.";
 
 	/// <summary>
 	/// Key: "Response.UserCannotCashout"
@@ -148,13 +148,13 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.UserDoesNotHavePremium"
 	/// English String: "You need a Roblox Premium subscription to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHavePremium => "Necesitas una suscripción a Roblox Premium para convertir en efectivo.";
+	public override string ResponseUserDoesNotHavePremium => "Necesitas una suscripciÃ³n a Roblox Premium para convertir en efectivo.";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHaveVerifiedEmail"
 	/// English String: "You need a verified email address to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHaveVerifiedEmail => "Necesitas una dirección de correo electrónico verificada para convertir en efectivo.";
+	public override string ResponseUserDoesNotHaveVerifiedEmail => "Necesitas una direcciÃ³n de correo electrÃ³nico verificada para convertir en efectivo.";
 
 	/// <summary>
 	/// Key: "Response.UserMustProvideFirstAndLastName"
@@ -184,17 +184,17 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormDescription(string linkStart, string linkEnd)
 	{
-		return $"Llena este formulario para que se empiece a procesar tu pago. La dirección de correo electrónico que ingresas aquí deberá coincidir con aquella que proporcionaste en tu cuenta del Portal de Roblox DevEx. Si necesitas ayuda para llenarlo, {linkStart}visita nuestro Centro de ayuda.{linkEnd}";
+		return $"Llena este formulario para que se empiece a procesar tu pago. La direcciÃ³n de correo electrÃ³nico que ingresas aquÃ­ deberÃ¡ coincidir con aquella que proporcionaste en tu cuenta del Portal de Roblox DevEx. Si necesitas ayuda para llenarlo, {linkStart}visita nuestro Centro de ayuda.{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormDescription()
 	{
-		return "Llena este formulario para que se empiece a procesar tu pago. La dirección de correo electrónico que ingresas aquí deberá coincidir con aquella que proporcionaste en tu cuenta del Portal de Roblox DevEx. Si necesitas ayuda para llenarlo, {linkStart}visita nuestro Centro de ayuda.{linkEnd}";
+		return "Llena este formulario para que se empiece a procesar tu pago. La direcciÃ³n de correo electrÃ³nico que ingresas aquÃ­ deberÃ¡ coincidir con aquella que proporcionaste en tu cuenta del Portal de Roblox DevEx. Si necesitas ayuda para llenarlo, {linkStart}visita nuestro Centro de ayuda.{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormEmailAddressLabel()
 	{
-		return "Dirección de correo electrónico";
+		return "DirecciÃ³n de correo electrÃ³nico";
 	}
 
 	protected override string _GetTemplateForCashOutFormExchangeRateLabel()
@@ -228,27 +228,27 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormTermsOfService(string linkStart, string linkEnd)
 	{
-		return $"He leído y acepto los {linkStart}Términos de uso{linkEnd}";
+		return $"He leÃ­do y acepto los {linkStart}TÃ©rminos de uso{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormTermsOfService()
 	{
-		return "He leído y acepto los {linkStart}Términos de uso{linkEnd}";
+		return "He leÃ­do y acepto los {linkStart}TÃ©rminos de uso{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormYouGetLabel()
 	{
-		return "Recibirás hasta:";
+		return "RecibirÃ¡s hasta:";
 	}
 
 	protected override string _GetTemplateForLabelPasswordLabel()
 	{
-		return "Contraseña";
+		return "ContraseÃ±a";
 	}
 
 	protected override string _GetTemplateForLabelPasswordPlaceholder()
 	{
-		return "Verificar contraseña de la cuenta";
+		return "Verificar contraseÃ±a de la cuenta";
 	}
 
 	protected override string _GetTemplateForPageHeaderDescription()
@@ -263,12 +263,12 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseCannotLoadExchangeRate()
 	{
-		return "Lo sentimos, pero en este momento no podemos cargar la tasa de cambio actual. Inténtalo de nuevo.";
+		return "Lo sentimos, pero en este momento no podemos cargar la tasa de cambio actual. IntÃ©ntalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForResponseCurrencyOperationUnavailable()
 	{
-		return "Algo ha ido mal. Inténtalo de nuevo.";
+		return "Algo ha ido mal. IntÃ©ntalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForResponseFirstNameRequiredErrorMessage()
@@ -278,17 +278,17 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseIncorrectCredentials()
 	{
-		return "Contraseña no válida.";
+		return "ContraseÃ±a no vÃ¡lida.";
 	}
 
 	protected override string _GetTemplateForResponseInsufficientFunds()
 	{
-		return "No tienes suficientes Robux finalizar esta transacción.";
+		return "No tienes suficientes Robux finalizar esta transacciÃ³n.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmailErrorMessage()
 	{
-		return "Introduce una dirección de correo electrónico válida.";
+		return "Introduce una direcciÃ³n de correo electrÃ³nico vÃ¡lida.";
 	}
 
 	protected override string _GetTemplateForResponseLastNameRequiredErrorMessage()
@@ -298,17 +298,17 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseRobuxAmountIsBelowMinimumCashoutThreshold()
 	{
-		return "La cantidad de Robux está por debajo del monto mínimo establecido para convertir en efectivo.";
+		return "La cantidad de Robux estÃ¡ por debajo del monto mÃ­nimo establecido para convertir en efectivo.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "Algo ha ido mal. Inténtalo de nuevo.";
+		return "Algo ha ido mal. IntÃ©ntalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout()
 	{
-		return "No puedes convertir en efectivo si tienes una cantidad de Robux menor a la mínima establecida para la conversión.";
+		return "No puedes convertir en efectivo si tienes una cantidad de Robux menor a la mÃ­nima establecida para la conversiÃ³n.";
 	}
 
 	protected override string _GetTemplateForResponseUserCannotCashout()
@@ -318,12 +318,12 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseUserDoesNotHavePremium()
 	{
-		return "Necesitas una suscripción a Roblox Premium para convertir en efectivo.";
+		return "Necesitas una suscripciÃ³n a Roblox Premium para convertir en efectivo.";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHaveVerifiedEmail()
 	{
-		return "Necesitas una dirección de correo electrónico verificada para convertir en efectivo.";
+		return "Necesitas una direcciÃ³n de correo electrÃ³nico verificada para convertir en efectivo.";
 	}
 
 	protected override string _GetTemplateForResponseUserMustProvideFirstAndLastName()
@@ -335,4 +335,7 @@ internal class DevexCashOutResources_es_es : DevexCashOutResources_en_us, IDevex
 	{
 		return "Lo sentimos, pero no eres elegible para convertir en efectivo en este momento.";
 	}
+}
+
+
 }

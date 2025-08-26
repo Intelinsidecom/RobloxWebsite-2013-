@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IAvatarResources : ITranslationResources
 
-public interface IAvatarResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Advanced"
@@ -1260,4 +1260,7 @@ public interface IAvatarResources : ITranslationResources
 	/// English String: "Do you want to update this {outfitType1}? This will overwrite the {outfitType2} with your avatar's current appearance."
 	/// </summary>
 	string MessageUpdateOutfit(string outfitType1, string outfitType2);
+}
+
+
 }

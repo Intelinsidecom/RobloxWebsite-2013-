@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.TextFilter.Client {
+    [DataContract]
 
-namespace Roblox.TextFilter.Client;
-
-[DataContract]
 public class FilterUsernameResult
 {
 	[DataMember(Name = "filteredText")]
@@ -14,4 +13,7 @@ public class FilterUsernameResult
 
 	[DataMember(Name = "triggeredModerationCategories")]
 	public ICollection<int> TriggeredModerationCategories { get; set; }
+}
+
+
 }

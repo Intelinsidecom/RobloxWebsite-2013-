@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Moderation.Implementationpublic {
+    class PagedResult<TPageItem>
 
-namespace Roblox.Platform.Moderation.Implementation;
-
-public class PagedResult<TPageItem>
 {
 	private int _PageSize = 100;
 
@@ -16,4 +15,7 @@ public class PagedResult<TPageItem>
 		PageItems = pageItems;
 		TotalPages = Math.Max(1L, (long)Math.Ceiling((double)totalItems / (double)_PageSize));
 	}
+}
+
+
 }

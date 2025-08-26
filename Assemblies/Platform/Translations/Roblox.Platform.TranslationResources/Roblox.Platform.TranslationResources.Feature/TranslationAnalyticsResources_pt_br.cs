@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationAnalyticsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,7 +18,7 @@ internal class TranslationAnalyticsResources_pt_br : TranslationAnalyticsResourc
 	/// button text to request report
 	/// English String: "Request"
 	/// </summary>
-	public override string ActionRequest => "Solicitação";
+	public override string ActionRequest => "SolicitaÃ§Ã£o";
 
 	/// <summary>
 	/// Key: "Description.ReportHint"
@@ -31,7 +31,7 @@ internal class TranslationAnalyticsResources_pt_br : TranslationAnalyticsResourc
 	/// section heading
 	/// English String: "Translator Contribution Report"
 	/// </summary>
-	public override string HeadingTranslationAnalytics => "Relatório de contribuição de tradutor";
+	public override string HeadingTranslationAnalytics => "RelatÃ³rio de contribuiÃ§Ã£o de tradutor";
 
 	/// <summary>
 	/// Key: "Label.Pending"
@@ -57,7 +57,7 @@ internal class TranslationAnalyticsResources_pt_br : TranslationAnalyticsResourc
 	/// Key: "Message.PermissionError"
 	/// English String: "You do not have sufficient permission to download this report."
 	/// </summary>
-	public override string MessagePermissionError => "Você não tem permissão para baixar este relatório.";
+	public override string MessagePermissionError => "VocÃª nÃ£o tem permissÃ£o para baixar este relatÃ³rio.";
 
 	public TranslationAnalyticsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -71,7 +71,7 @@ internal class TranslationAnalyticsResources_pt_br : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForActionRequest()
 	{
-		return "Solicitação";
+		return "SolicitaÃ§Ã£o";
 	}
 
 	protected override string _GetTemplateForDescriptionReportHint()
@@ -81,7 +81,7 @@ internal class TranslationAnalyticsResources_pt_br : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForHeadingTranslationAnalytics()
 	{
-		return "Relatório de contribuição de tradutor";
+		return "RelatÃ³rio de contribuiÃ§Ã£o de tradutor";
 	}
 
 	protected override string _GetTemplateForLabelPending()
@@ -101,6 +101,9 @@ internal class TranslationAnalyticsResources_pt_br : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
-		return "Você não tem permissão para baixar este relatório.";
+		return "VocÃª nÃ£o tem permissÃ£o para baixar este relatÃ³rio.";
 	}
+}
+
+
 }

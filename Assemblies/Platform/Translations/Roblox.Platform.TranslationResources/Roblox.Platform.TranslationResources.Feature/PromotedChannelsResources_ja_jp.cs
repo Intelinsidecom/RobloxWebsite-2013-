@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PromotedChannelsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,42 +11,42 @@ internal class PromotedChannelsResources_ja_jp : PromotedChannelsResources_en_us
 	/// The button text for adding an additional social link.
 	/// English String: "Add Link"
 	/// </summary>
-	public override string ActionAddLink => "リンクを追加";
+	public override string ActionAddLink => "ãƒªãƒ³ã‚¯ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// The remove button text for configuring social links.
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "削除";
+	public override string ActionRemove => "å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// The save button text for updating a social link.
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "保存";
+	public override string ActionSave => "ä¿å­˜";
 
 	/// <summary>
 	/// Key: "HeadingSocialLinks"
 	/// The heading of the social links panel on the game details page
 	/// English String: "Social Links"
 	/// </summary>
-	public override string HeadingSocialLinks => "SNSリンク";
+	public override string HeadingSocialLinks => "SNSãƒªãƒ³ã‚¯";
 
 	/// <summary>
 	/// Key: "HeadingSocialMedia"
 	/// The heading of the social media panel on the game details page
 	/// English String: "Social Media"
 	/// </summary>
-	public override string HeadingSocialMedia => "ソーシャルメディア";
+	public override string HeadingSocialMedia => "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢";
 
 	/// <summary>
 	/// Key: "Label.Title"
 	/// Placeholder text for inputting a title for a social link.
 	/// English String: "Title"
 	/// </summary>
-	public override string LabelTitle => "タイトル";
+	public override string LabelTitle => "ã‚¿ã‚¤ãƒˆãƒ«";
 
 	/// <summary>
 	/// Key: "Label.Url"
@@ -60,70 +60,70 @@ internal class PromotedChannelsResources_ja_jp : PromotedChannelsResources_en_us
 	/// The error message displayed when the user does not have permission to the group they are trying to add.
 	/// English String: "You do not have permission to configure this group."
 	/// </summary>
-	public override string MessageNoGroupPermission => "このグループの環境設定をする権限がありません。";
+	public override string MessageNoGroupPermission => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®ç’°å¢ƒè¨­å®šã‚’ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SocialLinkInvalidError"
 	/// The error message displayed when a social link attempts to be saved but no longer exists.
 	/// English String: "The social link no longer exists."
 	/// </summary>
-	public override string MessageSocialLinkInvalidError => "そのSNSリンクは現在はありません。";
+	public override string MessageSocialLinkInvalidError => "ãã®SNSãƒªãƒ³ã‚¯ã¯ç¾åœ¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SocialLinkRemoved"
 	/// The message displayed when the social link has been removed.
 	/// English String: "The social media link has been deleted."
 	/// </summary>
-	public override string MessageSocialLinkRemoved => "ソーシャルメディアリンクが削除されました。";
+	public override string MessageSocialLinkRemoved => "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢ãƒªãƒ³ã‚¯ãŒå‰Šé™¤ã•ã‚Œã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.SocialLinksEditDisabledError"
 	/// The error message displayed when the social links feature is disabled and attempt to be edited.
 	/// English String: "Social links may not be edited at this time."
 	/// </summary>
-	public override string MessageSocialLinksEditDisabledError => "現在、SNSリンクは編集できない可能性があります。";
+	public override string MessageSocialLinksEditDisabledError => "ç¾åœ¨ã€SNSãƒªãƒ³ã‚¯ã¯ç·¨é›†ã§ããªã„å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TitleEmptyError"
 	/// The error message displayed when the title input is empty.
 	/// English String: "The title cannot be empty."
 	/// </summary>
-	public override string MessageTitleEmptyError => "タイトルは空白にできません。";
+	public override string MessageTitleEmptyError => "ã‚¿ã‚¤ãƒˆãƒ«ã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TitleModeratedError"
 	/// The error message displayed when a title is moderated while being edited.
 	/// English String: "The title has been moderated, please try something else."
 	/// </summary>
-	public override string MessageTitleModeratedError => "タイトルが規制対象です。他のタイトルをお試しください。";
+	public override string MessageTitleModeratedError => "ã‚¿ã‚¤ãƒˆãƒ«ãŒè¦åˆ¶å¯¾è±¡ã§ã™ã€‚ä»–ã®ã‚¿ã‚¤ãƒˆãƒ«ã‚’ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedError"
 	/// The error message displayed when an action is attempted against a social link but the user does not have permission to edit social links.
 	/// English String: "You do not have permission to update social links."
 	/// </summary>
-	public override string MessageUnauthorizedError => "SNSリンクのアップデートは許可されていません。";
+	public override string MessageUnauthorizedError => "SNSãƒªãƒ³ã‚¯ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã¯è¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// The error message displayed when something unknown goes wrong trying to manage a social link.
 	/// English String: "Something went wrong, please try again."
 	/// </summary>
-	public override string MessageUnknownError => "問題が発生しました。もう一度お試しください。";
+	public override string MessageUnknownError => "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UrlEmptyError"
 	/// The error message displayed when the url input is empty.
 	/// English String: "The url cannot be empty."
 	/// </summary>
-	public override string MessageUrlEmptyError => "URLは空白にできません。";
+	public override string MessageUrlEmptyError => "URLã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UrlSocialMediaTypeMismatchError"
 	/// The error message displayed when the url input is not a valid url for the social media type selected.
 	/// English String: "The url must match the social media type."
 	/// </summary>
-	public override string MessageUrlSocialMediaTypeMismatchError => "URLはソーシャルメディアタイプと一致している必要があります。";
+	public override string MessageUrlSocialMediaTypeMismatchError => "URLã¯ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢ã‚¿ã‚¤ãƒ—ã¨ä¸€è‡´ã—ã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	public PromotedChannelsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -132,27 +132,27 @@ internal class PromotedChannelsResources_ja_jp : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForActionAddLink()
 	{
-		return "リンクを追加";
+		return "ãƒªãƒ³ã‚¯ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "削除";
+		return "å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "保存";
+		return "ä¿å­˜";
 	}
 
 	protected override string _GetTemplateForHeadingSocialLinks()
 	{
-		return "SNSリンク";
+		return "SNSãƒªãƒ³ã‚¯";
 	}
 
 	protected override string _GetTemplateForHeadingSocialMedia()
 	{
-		return "ソーシャルメディア";
+		return "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢";
 	}
 
 	/// <summary>
@@ -162,17 +162,17 @@ internal class PromotedChannelsResources_ja_jp : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string LabelLimits(string socialLinkLimit)
 	{
-		return $"ソーシャルリンクは{socialLinkLimit}個まで追加できます。";
+		return $"ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒªãƒ³ã‚¯ã¯{socialLinkLimit}å€‹ã¾ã§è¿½åŠ ã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelLimits()
 	{
-		return "ソーシャルリンクは{socialLinkLimit}個まで追加できます。";
+		return "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒªãƒ³ã‚¯ã¯{socialLinkLimit}å€‹ã¾ã§è¿½åŠ ã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
 	{
-		return "タイトル";
+		return "ã‚¿ã‚¤ãƒˆãƒ«";
 	}
 
 	protected override string _GetTemplateForLabelUrl()
@@ -182,17 +182,17 @@ internal class PromotedChannelsResources_ja_jp : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageNoGroupPermission()
 	{
-		return "このグループの環境設定をする権限がありません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®ç’°å¢ƒè¨­å®šã‚’ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkInvalidError()
 	{
-		return "そのSNSリンクは現在はありません。";
+		return "ãã®SNSãƒªãƒ³ã‚¯ã¯ç¾åœ¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkRemoved()
 	{
-		return "ソーシャルメディアリンクが削除されました。";
+		return "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢ãƒªãƒ³ã‚¯ãŒå‰Šé™¤ã•ã‚Œã¾ã—ãŸã€‚";
 	}
 
 	/// <summary>
@@ -202,17 +202,17 @@ internal class PromotedChannelsResources_ja_jp : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkSaved(string title)
 	{
-		return $"{title}を保存しました。";
+		return $"{title}ã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkSaved()
 	{
-		return "{title}を保存しました。";
+		return "{title}ã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinksEditDisabledError()
 	{
-		return "現在、SNSリンクは編集できない可能性があります。";
+		return "ç¾åœ¨ã€SNSãƒªãƒ³ã‚¯ã¯ç·¨é›†ã§ããªã„å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -222,41 +222,44 @@ internal class PromotedChannelsResources_ja_jp : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkTypeLimitError(string socialMediaType)
 	{
-		return $"{socialMediaType}のソーシャルメディアリンクは、1つしか登録できません。";
+		return $"{socialMediaType}ã®ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢ãƒªãƒ³ã‚¯ã¯ã€1ã¤ã—ã‹ç™»éŒ²ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkTypeLimitError()
 	{
-		return "{socialMediaType}のソーシャルメディアリンクは、1つしか登録できません。";
+		return "{socialMediaType}ã®ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢ãƒªãƒ³ã‚¯ã¯ã€1ã¤ã—ã‹ç™»éŒ²ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTitleEmptyError()
 	{
-		return "タイトルは空白にできません。";
+		return "ã‚¿ã‚¤ãƒˆãƒ«ã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTitleModeratedError()
 	{
-		return "タイトルが規制対象です。他のタイトルをお試しください。";
+		return "ã‚¿ã‚¤ãƒˆãƒ«ãŒè¦åˆ¶å¯¾è±¡ã§ã™ã€‚ä»–ã®ã‚¿ã‚¤ãƒˆãƒ«ã‚’ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedError()
 	{
-		return "SNSリンクのアップデートは許可されていません。";
+		return "SNSãƒªãƒ³ã‚¯ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã¯è¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "問題が発生しました。もう一度お試しください。";
+		return "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUrlEmptyError()
 	{
-		return "URLは空白にできません。";
+		return "URLã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUrlSocialMediaTypeMismatchError()
 	{
-		return "URLはソーシャルメディアタイプと一致している必要があります。";
+		return "URLã¯ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢ã‚¿ã‚¤ãƒ—ã¨ä¸€è‡´ã—ã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
+}
+
+
 }

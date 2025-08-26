@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Default implementation of <see cref="T:Roblox.TextFilter.ITextAuthor" /> specifically for an unknown user.
 /// By default this user will be under 13 and with a distinct ID.
 /// </summary>
@@ -23,4 +23,7 @@ public class UnknownTextAuthor : ITextAuthor
 	/// Defaults to true, unknown people are assumed to be children.
 	/// </summary>
 	public bool IsUnder13 => true;
+}
+
+
 }

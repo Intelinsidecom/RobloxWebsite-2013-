@@ -1,8 +1,10 @@
-using Roblox.Entities;
+﻿using Roblox.Entities;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IGrantedItemTypeEntity : IUpdateableEntity<byte>, IEntity<byte>
 
-namespace Roblox.PremiumFeatures;
-
-public interface IGrantedItemTypeEntity : IUpdateableEntity<byte>, IEntity<byte>
 {
 	string Value { get; set; }
+}
+
+
 }

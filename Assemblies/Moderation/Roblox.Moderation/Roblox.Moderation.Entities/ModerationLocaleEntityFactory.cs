@@ -1,11 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Roblox.Platform.Core;
+namespace Roblox.Moderation.Entities {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Moderation.Entities;
-
-[ExcludeFromCodeCoverage]
 internal class ModerationLocaleEntityFactory : IModerationLocaleEntityFactory, IDomainFactory<ModerationDomainFactories>, IDomainObject<ModerationDomainFactories>
 {
 	public ModerationDomainFactories DomainFactories { get; }
@@ -54,4 +53,7 @@ internal class ModerationLocaleEntityFactory : IModerationLocaleEntityFactory, I
 		}
 		return null;
 	}
+}
+
+
 }

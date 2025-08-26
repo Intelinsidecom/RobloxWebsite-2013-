@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Localization.Accounts {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Accounts;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocaleDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxAccountLocalization;
@@ -96,4 +95,7 @@ internal class AccountLocaleDAL
 		};
 		return RobloxDatabase.RobloxAccountLocalization.Lookup("AccountLocales_GetAccountLocaleByAccountID", BuildDAL, queryParameters);
 	}
+}
+
+
 }

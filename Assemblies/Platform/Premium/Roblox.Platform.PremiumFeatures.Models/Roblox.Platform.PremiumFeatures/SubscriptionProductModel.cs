@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures;
-
-/// <summary>
 /// User's subscription product
 /// </summary>
 [DataContract]
@@ -56,4 +55,7 @@ public class SubscriptionProductModel
 	/// </summary>
 	[DataMember(Name = "purchasePlatform")]
 	public string PurchasePlatform { get; set; }
+}
+
+
 }

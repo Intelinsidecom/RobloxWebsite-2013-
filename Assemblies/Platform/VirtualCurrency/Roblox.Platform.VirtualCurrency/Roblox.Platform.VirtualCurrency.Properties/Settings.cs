@@ -1,61 +1,61 @@
-extern alias ConfMan;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
-using ConfMan::System.Configuration;
+using System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
 
-namespace Roblox.Platform.VirtualCurrency.Properties;
-
-/// <summary>
-/// Configuration that uses Roblox.Configuration.Provider
-/// </summary>
-[SettingsProvider(typeof(Provider))]
-[CompilerGenerated]
-[GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
-public sealed class Settings : ApplicationSettingsBase
+namespace Roblox.Platform.VirtualCurrency.Properties
 {
-	private readonly ConcurrentDictionary<string, object> _Properties = new ConcurrentDictionary<string, object>();
+    /// <summary>
+    /// Configuration that uses Roblox.Configuration.Provider
+    /// </summary>
+    [SettingsProvider(typeof(Provider))]
+    [CompilerGenerated]
+    [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
+    public sealed class Settings : ApplicationSettingsBase
+    {
+        private readonly ConcurrentDictionary<string, object> _Properties = new ConcurrentDictionary<string, object>();
 
-	private static Settings defaultInstance = (Settings)SettingsBase.Synchronized(new Settings());
+        private static Settings defaultInstance = (Settings)SettingsBase.Synchronized(new Settings());
 
-	public override object this[string propertyName]
-	{
-		get
-		{
-			return _Properties.GetOrAdd(propertyName, (string propName) => base[propName]);
-		}
-		set
-		{
-			base[propertyName] = value;
-		}
-	}
+        public override object this[string propertyName]
+        {
+            get
+            {
+                return _Properties.GetOrAdd(propertyName, (string propName) => base[propName]);
+            }
+            set
+            {
+                base[propertyName] = value;
+            }
+        }
 
-	public static Settings Default => defaultInstance;
+        public static Settings Default => defaultInstance;
 
-	[ApplicationScopedSetting]
-	[DebuggerNonUserCode]
-	[DefaultSettingValue("False")]
-	public bool UseGetCurrencyBalancesServiceMethod => (bool)this["UseGetCurrencyBalancesServiceMethod"];
+        [ApplicationScopedSetting]
+        [DebuggerNonUserCode]
+        [DefaultSettingValue("False")]
+        public bool UseGetCurrencyBalancesServiceMethod => (bool)this["UseGetCurrencyBalancesServiceMethod"];
 
-	internal Settings()
-	{
-		base.PropertyChanged += delegate(object sender, PropertyChangedEventArgs propertyChangeEvent)
-		{
-			_Properties.TryRemove(propertyChangeEvent.PropertyName, out var _);
-		};
-	}
+        internal Settings()
+        {
+            base.PropertyChanged += delegate(object sender, PropertyChangedEventArgs propertyChangeEvent)
+            {
+                _Properties.TryRemove(propertyChangeEvent.PropertyName, out var _);
+            };
+        }
 
-	protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
-	{
-		base.OnSettingsLoaded(sender, e);
-		Provider.RegisterSettings(e, this);
-	}
+        protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
+        {
+            base.OnSettingsLoaded(sender, e);
+            Provider.RegisterSettings(e, this);
+        }
 
-	private void UpdateProperty(object sender, PropertyChangedEventArgs propertyChangeEvent)
-	{
-		_Properties.TryRemove(propertyChangeEvent.PropertyName, out var _);
-	}
+        private void UpdateProperty(object sender, PropertyChangedEventArgs propertyChangeEvent)
+        {
+            _Properties.TryRemove(propertyChangeEvent.PropertyName, out var _);
+        }
+    }
 }

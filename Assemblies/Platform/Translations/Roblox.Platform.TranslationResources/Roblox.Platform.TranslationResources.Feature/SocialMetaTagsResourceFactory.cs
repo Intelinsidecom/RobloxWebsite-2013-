@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class SocialMetaTagsResourceFactory
 
-internal static class SocialMetaTagsResourceFactory
 {
 	public const string FullNamespace = "Feature.SocialMetaTags";
 
@@ -21,4 +21,7 @@ internal static class SocialMetaTagsResourceFactory
 			_ => new SocialMetaTagsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

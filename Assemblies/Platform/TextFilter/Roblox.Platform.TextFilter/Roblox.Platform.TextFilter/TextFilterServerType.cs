@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// List of constants for the type of text being sent.
 /// </summary>
 public static class TextFilterServerType
@@ -29,4 +29,7 @@ public static class TextFilterServerType
 	/// Text connected with universe creation.
 	/// </summary>
 	public static readonly string WebUniverse = "web_universe";
+}
+
+
 }

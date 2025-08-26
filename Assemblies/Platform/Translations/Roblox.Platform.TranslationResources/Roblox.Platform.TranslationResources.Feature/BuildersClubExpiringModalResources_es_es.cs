@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubExpiringModalResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,35 +18,35 @@ internal class BuildersClubExpiringModalResources_es_es : BuildersClubExpiringMo
 	/// button text
 	/// English String: "I Want To Renew!"
 	/// </summary>
-	public override string ActionWantToRenew => "¡Quiero renovar!";
+	public override string ActionWantToRenew => "Â¡Quiero renovar!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpired"
 	/// description text
 	/// English String: "Oh, no! Your Builders Club membership has expired!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpired => "¡Oh, no! ¡Tu suscripción al Builders Club ha caducado!";
+	public override string DescriptionBuildersClubExpired => "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club ha caducado!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringOneDay"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring in one day!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringOneDay => "¡Oh, no! ¡Tu suscripción al Builders Club caduca en un día!";
+	public override string DescriptionBuildersClubExpiringOneDay => "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca en un dÃ­a!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringToday"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring today!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringToday => "¡Oh, no! ¡Tu suscripción al Builders Club caduca hoy!";
+	public override string DescriptionBuildersClubExpiringToday => "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca hoy!";
 
 	/// <summary>
 	/// Key: "Heading.DontMissRenewNow"
 	/// modal heading
 	/// English String: "Don't Miss Out - Renew Now!"
 	/// </summary>
-	public override string HeadingDontMissRenewNow => "¡No te pierdas nada! ¡Renueva ya!";
+	public override string HeadingDontMissRenewNow => "Â¡No te pierdas nada! Â¡Renueva ya!";
 
 	public BuildersClubExpiringModalResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -60,17 +60,17 @@ internal class BuildersClubExpiringModalResources_es_es : BuildersClubExpiringMo
 
 	protected override string _GetTemplateForActionWantToRenew()
 	{
-		return "¡Quiero renovar!";
+		return "Â¡Quiero renovar!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpired()
 	{
-		return "¡Oh, no! ¡Tu suscripción al Builders Club ha caducado!";
+		return "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club ha caducado!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringOneDay()
 	{
-		return "¡Oh, no! ¡Tu suscripción al Builders Club caduca en un día!";
+		return "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca en un dÃ­a!";
 	}
 
 	/// <summary>
@@ -80,21 +80,24 @@ internal class BuildersClubExpiringModalResources_es_es : BuildersClubExpiringMo
 	/// </summary>
 	public override string DescriptionBuildersClubExpiringSomeDays(string numDays)
 	{
-		return $"¡Oh, no! ¡Tu suscripción al Builders Club caduca en {numDays} días!";
+		return $"Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca en {numDays} dÃ­as!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringSomeDays()
 	{
-		return "¡Oh, no! ¡Tu suscripción al Builders Club caduca en {numDays} días!";
+		return "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca en {numDays} dÃ­as!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringToday()
 	{
-		return "¡Oh, no! ¡Tu suscripción al Builders Club caduca hoy!";
+		return "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca hoy!";
 	}
 
 	protected override string _GetTemplateForHeadingDontMissRenewNow()
 	{
-		return "¡No te pierdas nada! ¡Renueva ya!";
+		return "Â¡No te pierdas nada! Â¡Renueva ya!";
 	}
+}
+
+
 }

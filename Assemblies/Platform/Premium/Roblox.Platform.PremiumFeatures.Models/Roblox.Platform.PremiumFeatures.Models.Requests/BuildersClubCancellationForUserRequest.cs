@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models.Requests {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models.Requests;
-
-[DataContract]
 public class BuildersClubCancellationForUserRequest
 {
 	[DataMember(Name = "userId", EmitDefaultValue = true, IsRequired = true)]
@@ -10,4 +9,7 @@ public class BuildersClubCancellationForUserRequest
 
 	[DataMember(Name = "accountId", EmitDefaultValue = true, IsRequired = true)]
 	public long AccountId { get; set; }
+}
+
+
 }

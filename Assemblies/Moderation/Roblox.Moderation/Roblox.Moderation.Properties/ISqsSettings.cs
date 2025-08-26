@@ -1,8 +1,7 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
+namespace Roblox.Moderation.Propertiespublic {
+    interface ISqsSettings : INotifyPropertyChanged
 
-namespace Roblox.Platform.Moderation.Properties;
-
-public interface ISqsSettings : INotifyPropertyChanged
 {
 	string SqsTaskClientConfigSettingsUnk { get; }
 
@@ -19,4 +18,7 @@ public interface ISqsSettings : INotifyPropertyChanged
 	string SqsTaskClientConfigSettingsFr { get; }
 
 	string SqsTaskClientConfigSettingsKo { get; }
+}
+
+
 }

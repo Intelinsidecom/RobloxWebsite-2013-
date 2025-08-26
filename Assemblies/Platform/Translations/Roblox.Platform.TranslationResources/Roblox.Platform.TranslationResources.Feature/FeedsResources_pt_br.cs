@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeedsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -22,13 +22,13 @@ internal class FeedsResources_pt_br : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Heading.ForumHelp"
 	/// English String: "Roblox forums for help"
 	/// </summary>
-	public override string HeadingForumHelp => "Visite os fóruns Roblox para obter ajuda";
+	public override string HeadingForumHelp => "Visite os fÃ³runs Roblox para obter ajuda";
 
 	/// <summary>
 	/// Key: "Heading.MakeFriends"
 	/// English String: "Make Friends"
 	/// </summary>
-	public override string HeadingMakeFriends => "Faça amizades";
+	public override string HeadingMakeFriends => "FaÃ§a amizades";
 
 	/// <summary>
 	/// Key: "Heading.PlayGames"
@@ -40,19 +40,19 @@ internal class FeedsResources_pt_br : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Label.NoFeedLink"
 	/// English String: "make some best friends now."
 	/// </summary>
-	public override string LabelNoFeedLink => "Faça alguns amigos agora.";
+	public override string LabelNoFeedLink => "FaÃ§a alguns amigos agora.";
 
 	/// <summary>
 	/// Key: "Label.NoFeedText"
 	/// English String: "No news about your best friends... want to know what your best friends are up to?"
 	/// </summary>
-	public override string LabelNoFeedText => "Nenhuma notícia sobre seus melhores amigos... quer saber o que eles estão fazendo?";
+	public override string LabelNoFeedText => "Nenhuma notÃ­cia sobre seus melhores amigos... quer saber o que eles estÃ£o fazendo?";
 
 	/// <summary>
 	/// Key: "Label.PlayGames"
 	/// English String: "Nearly all Roblox games are built by players like you. Here are some of our favorites:"
 	/// </summary>
-	public override string LabelPlayGames => "Quase todos os jogos Roblox são feitos por jogadores como você. Aqui estão alguns dos nossos favoritos:";
+	public override string LabelPlayGames => "Quase todos os jogos Roblox sÃ£o feitos por jogadores como vocÃª. Aqui estÃ£o alguns dos nossos favoritos:";
 
 	public FeedsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -71,12 +71,12 @@ internal class FeedsResources_pt_br : FeedsResources_en_us, IFeedsResources, ITr
 
 	protected override string _GetTemplateForHeadingForumHelp()
 	{
-		return "Visite os fóruns Roblox para obter ajuda";
+		return "Visite os fÃ³runs Roblox para obter ajuda";
 	}
 
 	protected override string _GetTemplateForHeadingMakeFriends()
 	{
-		return "Faça amizades";
+		return "FaÃ§a amizades";
 	}
 
 	protected override string _GetTemplateForHeadingPlayGames()
@@ -90,12 +90,12 @@ internal class FeedsResources_pt_br : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelBuildSomething(string linkStart, string linkEnd)
 	{
-		return $"Construtores vão adorar jogar nosso jogo de construção multijogador. Construtores profissionais não podem deixar de conferir o Roblox Studio, nosso ambiente de desenvolvimento de jogo, na {linkStart}página de Desenvolvimento{linkEnd}.";
+		return $"Construtores vÃ£o adorar jogar nosso jogo de construÃ§Ã£o multijogador. Construtores profissionais nÃ£o podem deixar de conferir o Roblox Studio, nosso ambiente de desenvolvimento de jogo, na {linkStart}pÃ¡gina de Desenvolvimento{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelBuildSomething()
 	{
-		return "Construtores vão adorar jogar nosso jogo de construção multijogador. Construtores profissionais não podem deixar de conferir o Roblox Studio, nosso ambiente de desenvolvimento de jogo, na {linkStart}página de Desenvolvimento{linkEnd}.";
+		return "Construtores vÃ£o adorar jogar nosso jogo de construÃ§Ã£o multijogador. Construtores profissionais nÃ£o podem deixar de conferir o Roblox Studio, nosso ambiente de desenvolvimento de jogo, na {linkStart}pÃ¡gina de Desenvolvimento{linkEnd}.";
 	}
 
 	/// <summary>
@@ -104,12 +104,12 @@ internal class FeedsResources_pt_br : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelCustomizeAvatarDesktop(string avatarLinkStart, string avatarLinkEnd, string catalogLinkStart, string catalogLinkEnd)
 	{
-		return $"Visite o {avatarLinkStart}Editor de Avatar{avatarLinkEnd} para personalizar seu personagem. Compre peças de roupa no {catalogLinkStart}Catálogo{catalogLinkEnd}.";
+		return $"Visite o {avatarLinkStart}Editor de Avatar{avatarLinkEnd} para personalizar seu personagem. Compre peÃ§as de roupa no {catalogLinkStart}CatÃ¡logo{catalogLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarDesktop()
 	{
-		return "Visite o {avatarLinkStart}Editor de Avatar{avatarLinkEnd} para personalizar seu personagem. Compre peças de roupa no {catalogLinkStart}Catálogo{catalogLinkEnd}.";
+		return "Visite o {avatarLinkStart}Editor de Avatar{avatarLinkEnd} para personalizar seu personagem. Compre peÃ§as de roupa no {catalogLinkStart}CatÃ¡logo{catalogLinkEnd}.";
 	}
 
 	/// <summary>
@@ -118,12 +118,12 @@ internal class FeedsResources_pt_br : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelCustomizeAvatarPhone(string linkStart, string linkEnd)
 	{
-		return $"Obtenha novas roupas no {linkStart} catálogo {linkEnd} e personalize seu avatar.";
+		return $"Obtenha novas roupas no {linkStart} catÃ¡logo {linkEnd} e personalize seu avatar.";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarPhone()
 	{
-		return "Obtenha novas roupas no {linkStart} catálogo {linkEnd} e personalize seu avatar.";
+		return "Obtenha novas roupas no {linkStart} catÃ¡logo {linkEnd} e personalize seu avatar.";
 	}
 
 	/// <summary>
@@ -132,12 +132,12 @@ internal class FeedsResources_pt_br : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelForumHelp(string linkStart, string linkEnd)
 	{
-		return $"Não importa qual seja o assunto, se for relacionado ao Roblox, tem gente falando sobre ele {linkStart}aqui{linkEnd}.";
+		return $"NÃ£o importa qual seja o assunto, se for relacionado ao Roblox, tem gente falando sobre ele {linkStart}aqui{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelForumHelp()
 	{
-		return "Não importa qual seja o assunto, se for relacionado ao Roblox, tem gente falando sobre ele {linkStart}aqui{linkEnd}.";
+		return "NÃ£o importa qual seja o assunto, se for relacionado ao Roblox, tem gente falando sobre ele {linkStart}aqui{linkEnd}.";
 	}
 
 	/// <summary>
@@ -146,26 +146,29 @@ internal class FeedsResources_pt_br : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelMakeFriends(string linkStart, string linkEnd)
 	{
-		return $"Encontre outros jogadores no jogo e envie para eles uma solicitação de amizade. Se perder a oportunidade, você pode enviar uma solicitação mais tarde {linkStart}pesquisando{linkEnd} seu perfil de usuário.";
+		return $"Encontre outros jogadores no jogo e envie para eles uma solicitaÃ§Ã£o de amizade. Se perder a oportunidade, vocÃª pode enviar uma solicitaÃ§Ã£o mais tarde {linkStart}pesquisando{linkEnd} seu perfil de usuÃ¡rio.";
 	}
 
 	protected override string _GetTemplateForLabelMakeFriends()
 	{
-		return "Encontre outros jogadores no jogo e envie para eles uma solicitação de amizade. Se perder a oportunidade, você pode enviar uma solicitação mais tarde {linkStart}pesquisando{linkEnd} seu perfil de usuário.";
+		return "Encontre outros jogadores no jogo e envie para eles uma solicitaÃ§Ã£o de amizade. Se perder a oportunidade, vocÃª pode enviar uma solicitaÃ§Ã£o mais tarde {linkStart}pesquisando{linkEnd} seu perfil de usuÃ¡rio.";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedLink()
 	{
-		return "Faça alguns amigos agora.";
+		return "FaÃ§a alguns amigos agora.";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedText()
 	{
-		return "Nenhuma notícia sobre seus melhores amigos... quer saber o que eles estão fazendo?";
+		return "Nenhuma notÃ­cia sobre seus melhores amigos... quer saber o que eles estÃ£o fazendo?";
 	}
 
 	protected override string _GetTemplateForLabelPlayGames()
 	{
-		return "Quase todos os jogos Roblox são feitos por jogadores como você. Aqui estão alguns dos nossos favoritos:";
+		return "Quase todos os jogos Roblox sÃ£o feitos por jogadores como vocÃª. Aqui estÃ£o alguns dos nossos favoritos:";
 	}
+}
+
+
 }

@@ -1,15 +1,15 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class DeviceHandleRequestedEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class DeviceHandleRequestedEvent : WebEventBase
 {
 	private const string _Name = "deviceHandle";
 
 	/// <summary>
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEvent" /> class.
 	/// </summary>
-	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" />.</param>
+	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer" />.</param>
 	/// <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.DeviceHandleRequestedEventArgs" /> instance containing the event data.</param>
 	/// <exception cref="!:PlatformArgumentException">Throw if <paramref name="args.PageUrl.PageUrl" /> is not provided.</exception>
 	public DeviceHandleRequestedEvent(IEventStreamer streamer, DeviceHandleRequestedEventArgs args)
@@ -28,3 +28,12 @@ public class DeviceHandleRequestedEvent : WebEventBase
 		AddEventArg("diagFailed", args.Failed.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class DownloadAppResourceFactory
 
-internal static class DownloadAppResourceFactory
 {
 	public const string FullNamespace = "Feature.DownloadApp";
 
@@ -21,4 +21,7 @@ internal static class DownloadAppResourceFactory
 			_ => new DownloadAppResources_en_us(state), 
 		};
 	}
+}
+
+
 }

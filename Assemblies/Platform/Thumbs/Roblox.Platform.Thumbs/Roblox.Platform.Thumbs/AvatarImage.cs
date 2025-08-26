@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Web.UI;
 using Roblox.Controls;
 using Roblox.Platform.Membership;
+namespace Roblox.Platform.Thumbs {
+    [DefaultProperty("User")]
 
-namespace Roblox.Thumbs;
-
-[DefaultProperty("User")]
 [ToolboxData("<{0}:AvatarImage runat=server></{0}:AvatarImage>")]
 [Designer(typeof(ImageDesigner), typeof(IDesigner))]
 public abstract class AvatarImage : ThumbnailImage
@@ -134,4 +133,7 @@ public abstract class AvatarImage : ThumbnailImage
 			writer.RenderEndTag();
 		}
 	}
+}
+
+
 }

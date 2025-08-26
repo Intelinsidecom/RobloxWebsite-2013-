@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IChatResources : ITranslationResources
 
-public interface IChatResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Add"
@@ -774,4 +774,7 @@ public interface IChatResources : ITranslationResources
 	/// English String: "You can have up to {friendNum} friends in chat group."
 	/// </summary>
 	string MessageToastText(string friendNum);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GameGearOptionsDisplayResourceFactory
 
-internal static class GameGearOptionsDisplayResourceFactory
 {
 	public const string FullNamespace = "Feature.GameGearOptionsDisplay";
 
@@ -21,4 +21,7 @@ internal static class GameGearOptionsDisplayResourceFactory
 			_ => new GameGearOptionsDisplayResources_en_us(state), 
 		};
 	}
+}
+
+
 }

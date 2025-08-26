@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Users.Interfaces;
+namespace Roblox.Platform.Users.Implementation {
+    /// <summary>
 
-namespace Roblox.Users.Implementation;
-
-/// <summary>
 /// This is the interface for CountryModel
 /// </summary>
 public class CountryModel : ICountryModel
@@ -29,4 +28,7 @@ public class CountryModel : ICountryModel
 		Created = created;
 		Updated = updated;
 	}
+}
+
+
 }

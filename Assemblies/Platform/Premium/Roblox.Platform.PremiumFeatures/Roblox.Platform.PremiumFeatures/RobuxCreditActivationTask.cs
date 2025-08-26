@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.Economy.Common;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class RobuxCreditActivationTask : IRobloxEntity<long, RobuxCreditActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
-namespace Roblox.PremiumFeatures;
-
-public class RobuxCreditActivationTask : IRobloxEntity<long, RobuxCreditActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 {
 	public delegate void RobuxCreditPayoutHandler(long userId, long balanceBefore, long amount, EventArgs e);
 
@@ -178,4 +177,7 @@ public class RobuxCreditActivationTask : IRobloxEntity<long, RobuxCreditActivati
 	{
 		RobuxCreditActivationTask.RobuxCreditPayout?.Invoke(userId, balanceBefore, amount, e);
 	}
+}
+
+
 }

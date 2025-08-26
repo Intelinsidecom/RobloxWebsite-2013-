@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IItemResources : ITranslationResources
 
-public interface IItemResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Add"
@@ -670,4 +670,7 @@ public interface IItemResources : ITranslationResources
 	/// English String: "You have already added this gear to {placeName}."
 	/// </summary>
 	string ResponseGearAlreadyAdded(string placeName);
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Marketing.BLL;
+namespace Roblox.Marketingpublic {
+    class BrowserTrackerFactory : IBrowserTrackerFactory
 
-namespace Roblox.Platform.Marketing;
-
-public class BrowserTrackerFactory : IBrowserTrackerFactory
 {
 	/// <summary>
 	/// Occurs when a new BrowserTracker is created.
@@ -37,4 +36,7 @@ public class BrowserTrackerFactory : IBrowserTrackerFactory
 	{
 		return GetBrowserTracker(Roblox.Marketing.BLL.BrowserTracker.Get(id));
 	}
+}
+
+
 }

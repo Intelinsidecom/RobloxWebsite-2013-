@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CatalogResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,67 +10,67 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "Robux 구매";
+	public override string ActionBuyRobux => "Robux êµ¬ë§¤";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddGearOk"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogAddGearOk => "확인";
+	public override string ActionDialogAddGearOk => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Action.Filter.Apply"
 	/// English String: "Apply"
 	/// </summary>
-	public override string ActionFilterApply => "적용";
+	public override string ActionFilterApply => "ì ìš©";
 
 	/// <summary>
 	/// Key: "Action.Filter.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionFilterCancel => "취소";
+	public override string ActionFilterCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Go"
 	/// English String: "Go"
 	/// </summary>
-	public override string ActionGo => "이동";
+	public override string ActionGo => "ì´ë™";
 
 	/// <summary>
 	/// Key: "Action.ViewAllItems"
 	/// English String: "View All Items"
 	/// </summary>
-	public override string ActionViewAllItems => "아이템 전체 보기";
+	public override string ActionViewAllItems => "ì•„ì´í…œ ì „ì²´ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Description.Dialog.AddGearBody"
 	/// English String: "To add gear to your game, find an item in the catalog and click the Add to Game button. The item will automatically be allowed in game, and you'll receive a commission on every copy sold from your game page. (You can only add gear that's for sale.)"
 	/// </summary>
-	public override string DescriptionDialogAddGearBody => "게임에 장비를 추가하고 싶나요? 카탈로그에서 아이템을 검색해 '게임에 추가' 버튼을 클릭하세요. 아이템은 게임에 자동적으로 표시되며, 회원님의 게임 페이지에서 판매가 이루어질 때마다 수수료가 지급됩니다. 판매용 장비만 추가할 수 있어요.";
+	public override string DescriptionDialogAddGearBody => "ê²Œìž„ì— ìž¥ë¹„ë¥¼ ì¶”ê°€í•˜ê³  ì‹¶ë‚˜ìš”? ì¹´íƒˆë¡œê·¸ì—ì„œ ì•„ì´í…œì„ ê²€ìƒ‰í•´ 'ê²Œìž„ì— ì¶”ê°€' ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”. ì•„ì´í…œì€ ê²Œìž„ì— ìžë™ì ìœ¼ë¡œ í‘œì‹œë˜ë©°, íšŒì›ë‹˜ì˜ ê²Œìž„ íŽ˜ì´ì§€ì—ì„œ íŒë§¤ê°€ ì´ë£¨ì–´ì§ˆ ë•Œë§ˆë‹¤ ìˆ˜ìˆ˜ë£Œê°€ ì§€ê¸‰ë©ë‹ˆë‹¤. íŒë§¤ìš© ìž¥ë¹„ë§Œ ì¶”ê°€í•  ìˆ˜ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Heading.CatalogCategory"
 	/// English String: "Category"
 	/// </summary>
-	public override string HeadingCatalogCategory => "카테고리";
+	public override string HeadingCatalogCategory => "ì¹´í…Œê³ ë¦¬";
 
 	/// <summary>
 	/// Key: "Heading.CatalogPage"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string HeadingCatalogPage => "카탈로그";
+	public override string HeadingCatalogPage => "ì¹´íƒˆë¡œê·¸";
 
 	/// <summary>
 	/// Key: "Label.AllFeaturedItems"
 	/// English String: "View All Featured Items"
 	/// </summary>
-	public override string LabelAllFeaturedItems => "주목 아이템 전체 보기";
+	public override string LabelAllFeaturedItems => "ì£¼ëª© ì•„ì´í…œ ì „ì²´ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.AllGenres"
 	/// English String: "All Genres"
 	/// </summary>
-	public override string LabelAllGenres => "전체 장르";
+	public override string LabelAllGenres => "ì „ì²´ ìž¥ë¥´";
 
 	/// <summary>
 	/// Key: "Label.Amazon"
@@ -83,157 +83,157 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Label.BreadCrumb.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelBreadCrumbFree => "무료";
+	public override string LabelBreadCrumbFree => "ë¬´ë£Œ";
 
 	/// <summary>
 	/// Key: "Label.BreadCrumb.Group"
 	/// English String: "Group:"
 	/// </summary>
-	public override string LabelBreadCrumbGroup => "그룹:";
+	public override string LabelBreadCrumbGroup => "ê·¸ë£¹:";
 
 	/// <summary>
 	/// Key: "Label.Bundle"
 	/// Bundle
 	/// English String: "Bundle"
 	/// </summary>
-	public override string LabelBundle => "번들";
+	public override string LabelBundle => "ë²ˆë“¤";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
 	/// Bundles
 	/// English String: "Bundles"
 	/// </summary>
-	public override string LabelBundles => "번들";
+	public override string LabelBundles => "ë²ˆë“¤";
 
 	/// <summary>
 	/// Key: "Label.Card.CreatorBy"
 	/// English String: "By"
 	/// </summary>
-	public override string LabelCardCreatorBy => "개발:";
+	public override string LabelCardCreatorBy => "ê°œë°œ:";
 
 	/// <summary>
 	/// Key: "Label.Card.PriceWas"
 	/// English String: "Was"
 	/// </summary>
-	public override string LabelCardPriceWas => "이전 가격:";
+	public override string LabelCardPriceWas => "ì´ì „ ê°€ê²©:";
 
 	/// <summary>
 	/// Key: "Label.Card.Remaining"
 	/// English String: "Remaining:"
 	/// </summary>
-	public override string LabelCardRemaining => "잔여:";
+	public override string LabelCardRemaining => "ìž”ì—¬:";
 
 	/// <summary>
 	/// Key: "Label.CategoryAttributes"
 	/// English String: "Attributes"
 	/// </summary>
-	public override string LabelCategoryAttributes => "속성";
+	public override string LabelCategoryAttributes => "ì†ì„±";
 
 	/// <summary>
 	/// Key: "Label.CategoryType"
 	/// English String: "Type"
 	/// </summary>
-	public override string LabelCategoryType => "종류";
+	public override string LabelCategoryType => "ì¢…ë¥˜";
 
 	/// <summary>
 	/// Key: "Label.CommunityCreations"
 	/// UGC items
 	/// English String: " Community Creations"
 	/// </summary>
-	public override string LabelCommunityCreations => "커뮤니티 작품";
+	public override string LabelCommunityCreations => "ì»¤ë®¤ë‹ˆí‹° ìž‘í’ˆ";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddGearTitle"
 	/// English String: "Add Gear to Your Game"
 	/// </summary>
-	public override string LabelDialogAddGearTitle => "게임에 장비를 추가하세요";
+	public override string LabelDialogAddGearTitle => "ê²Œìž„ì— ìž¥ë¹„ë¥¼ ì¶”ê°€í•˜ì„¸ìš”";
 
 	/// <summary>
 	/// Key: "Label.Emotes"
 	/// Emotes
 	/// English String: "Emotes"
 	/// </summary>
-	public override string LabelEmotes => "감정 표현";
+	public override string LabelEmotes => "ê°ì • í‘œí˜„";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "즐겨찾기";
+	public override string LabelFavorites => "ì¦ê²¨ì°¾ê¸°";
 
 	/// <summary>
 	/// Key: "Label.FeaturedBundles"
 	/// Featured Bundles
 	/// English String: "Featured Bundles"
 	/// </summary>
-	public override string LabelFeaturedBundles => "주목 번들";
+	public override string LabelFeaturedBundles => "ì£¼ëª© ë²ˆë“¤";
 
 	/// <summary>
 	/// Key: "Label.FeaturedEmotes"
 	/// Featured Emotes
 	/// English String: "Featured Emotes"
 	/// </summary>
-	public override string LabelFeaturedEmotes => "주목 감정 표현";
+	public override string LabelFeaturedEmotes => "ì£¼ëª© ê°ì • í‘œí˜„";
 
 	/// <summary>
 	/// Key: "Label.Filter.ByTime"
 	/// English String: "By Time"
 	/// </summary>
-	public override string LabelFilterByTime => "시간 순";
+	public override string LabelFilterByTime => "ì‹œê°„ ìˆœ";
 
 	/// <summary>
 	/// Key: "Label.Filter.Category"
 	/// English String: "Category"
 	/// </summary>
-	public override string LabelFilterCategory => "카테고리";
+	public override string LabelFilterCategory => "ì¹´í…Œê³ ë¦¬";
 
 	/// <summary>
 	/// Key: "Label.Filter.Creator"
 	/// English String: "Creator"
 	/// </summary>
-	public override string LabelFilterCreator => "개발자";
+	public override string LabelFilterCreator => "ê°œë°œìž";
 
 	/// <summary>
 	/// Key: "Label.Filter.Filter"
 	/// English String: "Filter"
 	/// </summary>
-	public override string LabelFilterFilter => "필터";
+	public override string LabelFilterFilter => "í•„í„°";
 
 	/// <summary>
 	/// Key: "Label.Filter.Filters"
 	/// English String: "Filters"
 	/// </summary>
-	public override string LabelFilterFilters => "필터";
+	public override string LabelFilterFilters => "í•„í„°";
 
 	/// <summary>
 	/// Key: "Label.Filter.Genre"
 	/// English String: "Genre"
 	/// </summary>
-	public override string LabelFilterGenre => "장르";
+	public override string LabelFilterGenre => "ìž¥ë¥´";
 
 	/// <summary>
 	/// Key: "Label.Filter.Hide"
 	/// English String: "Hide"
 	/// </summary>
-	public override string LabelFilterHide => "감추기";
+	public override string LabelFilterHide => "ê°ì¶”ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Filter.Price"
 	/// English String: "Price"
 	/// </summary>
-	public override string LabelFilterPrice => "가격";
+	public override string LabelFilterPrice => "ê°€ê²©";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceMax"
 	/// English String: "Max"
 	/// </summary>
-	public override string LabelFilterPriceMax => "최고";
+	public override string LabelFilterPriceMax => "ìµœê³ ";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceMin"
 	/// English String: "Min"
 	/// </summary>
-	public override string LabelFilterPriceMin => "최저";
+	public override string LabelFilterPriceMin => "ìµœì €";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceTo"
@@ -245,26 +245,26 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Label.Filter.Show"
 	/// English String: "Show"
 	/// </summary>
-	public override string LabelFilterShow => "보이기";
+	public override string LabelFilterShow => "ë³´ì´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Filter.Sorting"
 	/// English String: "Sorting"
 	/// </summary>
-	public override string LabelFilterSorting => "정렬";
+	public override string LabelFilterSorting => "ì •ë ¬";
 
 	/// <summary>
 	/// Key: "Label.Filter.UnavailableItems"
 	/// English String: "Unavailable Items"
 	/// </summary>
-	public override string LabelFilterUnavailableItems => "이용 불가 아이템";
+	public override string LabelFilterUnavailableItems => "ì´ìš© ë¶ˆê°€ ì•„ì´í…œ";
 
 	/// <summary>
 	/// Key: "Label.GoogleOnly"
 	/// label
 	/// English String: "Google Only"
 	/// </summary>
-	public override string LabelGoogleOnly => "Google 전용";
+	public override string LabelGoogleOnly => "Google ì „ìš©";
 
 	/// <summary>
 	/// Key: "Label.Ios"
@@ -278,14 +278,14 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// label
 	/// English String: "Mobile"
 	/// </summary>
-	public override string LabelMobile => "모바일";
+	public override string LabelMobile => "ëª¨ë°”ì¼";
 
 	/// <summary>
 	/// Key: "Label.New"
 	/// label
 	/// English String: "New"
 	/// </summary>
-	public override string LabelNew => "신규";
+	public override string LabelNew => "ì‹ ê·œ";
 
 	/// <summary>
 	/// Key: "Label.Rthro"
@@ -299,25 +299,25 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// label
 	/// English String: "Sale"
 	/// </summary>
-	public override string LabelSale => "판매";
+	public override string LabelSale => "íŒë§¤";
 
 	/// <summary>
 	/// Key: "Label.SearchField"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearchField => "검색";
+	public override string LabelSearchField => "ê²€ìƒ‰";
 
 	/// <summary>
 	/// Key: "Label.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string LabelSeeAll => "전체 보기";
+	public override string LabelSeeAll => "ì „ì²´ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "사용자 이름";
+	public override string LabelUsername => "ì‚¬ìš©ìž ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.Xbox"
@@ -330,325 +330,325 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelAccessories"
 	/// English String: "Accessories"
 	/// </summary>
-	public override string LabelAccessories => "장신구";
+	public override string LabelAccessories => "ìž¥ì‹ êµ¬";
 
 	/// <summary>
 	/// Key: "LabelAccessoryAll"
 	/// English String: "All Accessories"
 	/// </summary>
-	public override string LabelAccessoryAll => "전체 장신구";
+	public override string LabelAccessoryAll => "ì „ì²´ ìž¥ì‹ êµ¬";
 
 	/// <summary>
 	/// Key: "LabelAccessoryBack"
 	/// English String: "Back"
 	/// </summary>
-	public override string LabelAccessoryBack => "등";
+	public override string LabelAccessoryBack => "ë“±";
 
 	/// <summary>
 	/// Key: "LabelAccessoryFace"
 	/// English String: "Face"
 	/// </summary>
-	public override string LabelAccessoryFace => "얼굴";
+	public override string LabelAccessoryFace => "ì–¼êµ´";
 
 	/// <summary>
 	/// Key: "LabelAccessoryFront"
 	/// English String: "Front"
 	/// </summary>
-	public override string LabelAccessoryFront => "가슴";
+	public override string LabelAccessoryFront => "ê°€ìŠ´";
 
 	/// <summary>
 	/// Key: "LabelAccessoryHair"
 	/// English String: "Hair"
 	/// </summary>
-	public override string LabelAccessoryHair => "헤어";
+	public override string LabelAccessoryHair => "í—¤ì–´";
 
 	/// <summary>
 	/// Key: "LabelAccessoryHats"
 	/// English String: "Hats"
 	/// </summary>
-	public override string LabelAccessoryHats => "모자";
+	public override string LabelAccessoryHats => "ëª¨ìž";
 
 	/// <summary>
 	/// Key: "LabelAccessoryNeck"
 	/// English String: "Neck"
 	/// </summary>
-	public override string LabelAccessoryNeck => "목";
+	public override string LabelAccessoryNeck => "ëª©";
 
 	/// <summary>
 	/// Key: "LabelAccessoryShoulder"
 	/// English String: "Shoulder"
 	/// </summary>
-	public override string LabelAccessoryShoulder => "어깨";
+	public override string LabelAccessoryShoulder => "ì–´ê¹¨";
 
 	/// <summary>
 	/// Key: "LabelAccessoryWaist"
 	/// English String: "Waist"
 	/// </summary>
-	public override string LabelAccessoryWaist => "허리";
+	public override string LabelAccessoryWaist => "í—ˆë¦¬";
 
 	/// <summary>
 	/// Key: "LabelAll"
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "전체";
+	public override string LabelAll => "ì „ì²´";
 
 	/// <summary>
 	/// Key: "LabelAllBodyParts"
 	/// English String: "All Body Parts"
 	/// </summary>
-	public override string LabelAllBodyParts => "전체 신체 부위";
+	public override string LabelAllBodyParts => "ì „ì²´ ì‹ ì²´ ë¶€ìœ„";
 
 	/// <summary>
 	/// Key: "LabelAllCategories"
 	/// English String: "All Categories"
 	/// </summary>
-	public override string LabelAllCategories => "전체 카테고리";
+	public override string LabelAllCategories => "ì „ì²´ ì¹´í…Œê³ ë¦¬";
 
 	/// <summary>
 	/// Key: "LabelAllClothing"
 	/// English String: "All Clothing"
 	/// </summary>
-	public override string LabelAllClothing => "전체 복장";
+	public override string LabelAllClothing => "ì „ì²´ ë³µìž¥";
 
 	/// <summary>
 	/// Key: "LabelAllCollectibles"
 	/// English String: "All Collectibles"
 	/// </summary>
-	public override string LabelAllCollectibles => "전체 한정판 아이템";
+	public override string LabelAllCollectibles => "ì „ì²´ í•œì •íŒ ì•„ì´í…œ";
 
 	/// <summary>
 	/// Key: "LabelAllCreators"
 	/// English String: "All Creators"
 	/// </summary>
-	public override string LabelAllCreators => "전체 개발자";
+	public override string LabelAllCreators => "ì „ì²´ ê°œë°œìž";
 
 	/// <summary>
 	/// Key: "LabelAllCurrency"
 	/// English String: "All Currency"
 	/// </summary>
-	public override string LabelAllCurrency => "전체 통화";
+	public override string LabelAllCurrency => "ì „ì²´ í†µí™”";
 
 	/// <summary>
 	/// Key: "LabelAllFeatured"
 	/// English String: "All Featured Items"
 	/// </summary>
-	public override string LabelAllFeatured => "전체 주목 아이템";
+	public override string LabelAllFeatured => "ì „ì²´ ì£¼ëª© ì•„ì´í…œ";
 
 	/// <summary>
 	/// Key: "LabelAllTime"
 	/// English String: "All Time"
 	/// </summary>
-	public override string LabelAllTime => "전체 기간";
+	public override string LabelAllTime => "ì „ì²´ ê¸°ê°„";
 
 	/// <summary>
 	/// Key: "LabelAnimations"
 	/// English String: "Animations"
 	/// </summary>
-	public override string LabelAnimations => "애니메이션";
+	public override string LabelAnimations => "ì• ë‹ˆë©”ì´ì…˜";
 
 	/// <summary>
 	/// Key: "LabelAnyPrice"
 	/// English String: "Any Price"
 	/// </summary>
-	public override string LabelAnyPrice => "전체 가격";
+	public override string LabelAnyPrice => "ì „ì²´ ê°€ê²©";
 
 	/// <summary>
 	/// Key: "LabelAvatarAnimations"
 	/// English String: "Avatar Animations"
 	/// </summary>
-	public override string LabelAvatarAnimations => "아바타 애니메이션";
+	public override string LabelAvatarAnimations => "ì•„ë°”íƒ€ ì• ë‹ˆë©”ì´ì…˜";
 
 	/// <summary>
 	/// Key: "LabelBestselling"
 	/// English String: "Bestselling"
 	/// </summary>
-	public override string LabelBestselling => "판매도 순";
+	public override string LabelBestselling => "íŒë§¤ë„ ìˆœ";
 
 	/// <summary>
 	/// Key: "LabelBodyParts"
 	/// English String: "Body Parts"
 	/// </summary>
-	public override string LabelBodyParts => "신체 부위";
+	public override string LabelBodyParts => "ì‹ ì²´ ë¶€ìœ„";
 
 	/// <summary>
 	/// Key: "LabelClothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string LabelClothing => "복장";
+	public override string LabelClothing => "ë³µìž¥";
 
 	/// <summary>
 	/// Key: "LabelCollectibleAccessories"
 	/// English String: "Collectible Accessories"
 	/// </summary>
-	public override string LabelCollectibleAccessories => "수집 가능 장신구";
+	public override string LabelCollectibleAccessories => "ìˆ˜ì§‘ ê°€ëŠ¥ ìž¥ì‹ êµ¬";
 
 	/// <summary>
 	/// Key: "LabelCollectibleFaces"
 	/// English String: "Collectible Faces"
 	/// </summary>
-	public override string LabelCollectibleFaces => "한정판 얼굴";
+	public override string LabelCollectibleFaces => "í•œì •íŒ ì–¼êµ´";
 
 	/// <summary>
 	/// Key: "LabelCollectibleGear"
 	/// English String: "Collectible Gear"
 	/// </summary>
-	public override string LabelCollectibleGear => "한정판 장비";
+	public override string LabelCollectibleGear => "í•œì •íŒ ìž¥ë¹„";
 
 	/// <summary>
 	/// Key: "LabelCollectibles"
 	/// English String: "Collectibles"
 	/// </summary>
-	public override string LabelCollectibles => "한정판 아이템";
+	public override string LabelCollectibles => "í•œì •íŒ ì•„ì´í…œ";
 
 	/// <summary>
 	/// Key: "LabelFaces"
 	/// English String: "Faces"
 	/// </summary>
-	public override string LabelFaces => "얼굴";
+	public override string LabelFaces => "ì–¼êµ´";
 
 	/// <summary>
 	/// Key: "LabelFeatured"
 	/// English String: "Featured"
 	/// </summary>
-	public override string LabelFeatured => "주목 아이템";
+	public override string LabelFeatured => "ì£¼ëª© ì•„ì´í…œ";
 
 	/// <summary>
 	/// Key: "LabelFeaturedAccesories"
 	/// English String: "Featured Accessories"
 	/// </summary>
-	public override string LabelFeaturedAccesories => "주목 장신구";
+	public override string LabelFeaturedAccesories => "ì£¼ëª© ìž¥ì‹ êµ¬";
 
 	/// <summary>
 	/// Key: "LabelFeaturedAnimations"
 	/// English String: "Featured Animations"
 	/// </summary>
-	public override string LabelFeaturedAnimations => "주목 애니메이션";
+	public override string LabelFeaturedAnimations => "ì£¼ëª© ì• ë‹ˆë©”ì´ì…˜";
 
 	/// <summary>
 	/// Key: "LabelFeaturedFaces"
 	/// English String: "Featured Faces"
 	/// </summary>
-	public override string LabelFeaturedFaces => "주목 얼굴";
+	public override string LabelFeaturedFaces => "ì£¼ëª© ì–¼êµ´";
 
 	/// <summary>
 	/// Key: "LabelFeaturedGear"
 	/// English String: "Featured Gear"
 	/// </summary>
-	public override string LabelFeaturedGear => "주목 장비";
+	public override string LabelFeaturedGear => "ì£¼ëª© ìž¥ë¹„";
 
 	/// <summary>
 	/// Key: "LabelFeaturedPackages"
 	/// English String: "Featured Packages"
 	/// </summary>
-	public override string LabelFeaturedPackages => "주목 패키지";
+	public override string LabelFeaturedPackages => "ì£¼ëª© íŒ¨í‚¤ì§€";
 
 	/// <summary>
 	/// Key: "LabelFree"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "무료";
+	public override string LabelFree => "ë¬´ë£Œ";
 
 	/// <summary>
 	/// Key: "LabelGear"
 	/// English String: "Gear"
 	/// </summary>
-	public override string LabelGear => "장비";
+	public override string LabelGear => "ìž¥ë¹„";
 
 	/// <summary>
 	/// Key: "LabelGearAll"
 	/// English String: "All Gear"
 	/// </summary>
-	public override string LabelGearAll => "전체 장비";
+	public override string LabelGearAll => "ì „ì²´ ìž¥ë¹„";
 
 	/// <summary>
 	/// Key: "LabelGearBuilding"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGearBuilding => "건물";
+	public override string LabelGearBuilding => "ê±´ë¬¼";
 
 	/// <summary>
 	/// Key: "LabelGearExplosive"
 	/// English String: "Explosive"
 	/// </summary>
-	public override string LabelGearExplosive => "폭발물";
+	public override string LabelGearExplosive => "í­ë°œë¬¼";
 
 	/// <summary>
 	/// Key: "LabelGearMelee"
 	/// English String: "Melee"
 	/// </summary>
-	public override string LabelGearMelee => "근접";
+	public override string LabelGearMelee => "ê·¼ì ‘";
 
 	/// <summary>
 	/// Key: "LabelGearMusical"
 	/// English String: "Musical"
 	/// </summary>
-	public override string LabelGearMusical => "음악";
+	public override string LabelGearMusical => "ìŒì•…";
 
 	/// <summary>
 	/// Key: "LabelGearNavigation"
 	/// English String: "Navigation"
 	/// </summary>
-	public override string LabelGearNavigation => "내비게이션";
+	public override string LabelGearNavigation => "ë‚´ë¹„ê²Œì´ì…˜";
 
 	/// <summary>
 	/// Key: "LabelGearPersonalTransport"
 	/// English String: "Transport"
 	/// </summary>
-	public override string LabelGearPersonalTransport => "이동수단";
+	public override string LabelGearPersonalTransport => "ì´ë™ìˆ˜ë‹¨";
 
 	/// <summary>
 	/// Key: "LabelGearPowerUps"
 	/// English String: "Power Up"
 	/// </summary>
-	public override string LabelGearPowerUps => "파워업";
+	public override string LabelGearPowerUps => "íŒŒì›Œì—…";
 
 	/// <summary>
 	/// Key: "LabelGearRanged"
 	/// English String: "Ranged"
 	/// </summary>
-	public override string LabelGearRanged => "원거리";
+	public override string LabelGearRanged => "ì›ê±°ë¦¬";
 
 	/// <summary>
 	/// Key: "LabelGearSocial"
 	/// English String: "Social"
 	/// </summary>
-	public override string LabelGearSocial => "소셜";
+	public override string LabelGearSocial => "ì†Œì…œ";
 
 	/// <summary>
 	/// Key: "LabelGenreAdventure"
 	/// English String: "Adventure"
 	/// </summary>
-	public override string LabelGenreAdventure => "모험";
+	public override string LabelGenreAdventure => "ëª¨í—˜";
 
 	/// <summary>
 	/// Key: "LabelGenreAll"
 	/// English String: "All Genres"
 	/// </summary>
-	public override string LabelGenreAll => "전체 장르";
+	public override string LabelGenreAll => "ì „ì²´ ìž¥ë¥´";
 
 	/// <summary>
 	/// Key: "LabelGenreBuilding"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGenreBuilding => "건설";
+	public override string LabelGenreBuilding => "ê±´ì„¤";
 
 	/// <summary>
 	/// Key: "LabelGenreComedy"
 	/// English String: "Comedy"
 	/// </summary>
-	public override string LabelGenreComedy => "코미디";
+	public override string LabelGenreComedy => "ì½”ë¯¸ë””";
 
 	/// <summary>
 	/// Key: "LabelGenreFantasy"
 	/// English String: "Medieval"
 	/// </summary>
-	public override string LabelGenreFantasy => "중세";
+	public override string LabelGenreFantasy => "ì¤‘ì„¸";
 
 	/// <summary>
 	/// Key: "LabelGenreFighting"
 	/// English String: "Fighting"
 	/// </summary>
-	public override string LabelGenreFighting => "대전";
+	public override string LabelGenreFighting => "ëŒ€ì „";
 
 	/// <summary>
 	/// Key: "LabelGenreFPS"
@@ -660,43 +660,43 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreFunny"
 	/// English String: "Comedy"
 	/// </summary>
-	public override string LabelGenreFunny => "코미디";
+	public override string LabelGenreFunny => "ì½”ë¯¸ë””";
 
 	/// <summary>
 	/// Key: "LabelGenreHorror"
 	/// English String: "Horror"
 	/// </summary>
-	public override string LabelGenreHorror => "공포";
+	public override string LabelGenreHorror => "ê³µí¬";
 
 	/// <summary>
 	/// Key: "LabelGenreMedieval"
 	/// English String: "Medieval"
 	/// </summary>
-	public override string LabelGenreMedieval => "중세";
+	public override string LabelGenreMedieval => "ì¤‘ì„¸";
 
 	/// <summary>
 	/// Key: "LabelGenreMilitary"
 	/// English String: "Military"
 	/// </summary>
-	public override string LabelGenreMilitary => "군사";
+	public override string LabelGenreMilitary => "êµ°ì‚¬";
 
 	/// <summary>
 	/// Key: "LabelGenreNaval"
 	/// English String: "Naval"
 	/// </summary>
-	public override string LabelGenreNaval => "해군";
+	public override string LabelGenreNaval => "í•´êµ°";
 
 	/// <summary>
 	/// Key: "LabelGenreNinja"
 	/// English String: "Fighting"
 	/// </summary>
-	public override string LabelGenreNinja => "대전";
+	public override string LabelGenreNinja => "ëŒ€ì „";
 
 	/// <summary>
 	/// Key: "LabelGenrePirate"
 	/// English String: "Naval"
 	/// </summary>
-	public override string LabelGenrePirate => "해군";
+	public override string LabelGenrePirate => "í•´êµ°";
 
 	/// <summary>
 	/// Key: "LabelGenreRPG"
@@ -708,7 +708,7 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreScary"
 	/// English String: "Horror"
 	/// </summary>
-	public override string LabelGenreScary => "공포";
+	public override string LabelGenreScary => "ê³µí¬";
 
 	/// <summary>
 	/// Key: "LabelGenreSciFi"
@@ -720,109 +720,109 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreSports"
 	/// English String: "Sports"
 	/// </summary>
-	public override string LabelGenreSports => "스포츠";
+	public override string LabelGenreSports => "ìŠ¤í¬ì¸ ";
 
 	/// <summary>
 	/// Key: "LabelGenreTownAndCity"
 	/// English String: "Town and City"
 	/// </summary>
-	public override string LabelGenreTownAndCity => "마을 및 도시";
+	public override string LabelGenreTownAndCity => "ë§ˆì„ ë° ë„ì‹œ";
 
 	/// <summary>
 	/// Key: "LabelGenreTutorial"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGenreTutorial => "건설";
+	public override string LabelGenreTutorial => "ê±´ì„¤";
 
 	/// <summary>
 	/// Key: "LabelGenreWar"
 	/// English String: "Military"
 	/// </summary>
-	public override string LabelGenreWar => "군사";
+	public override string LabelGenreWar => "êµ°ì‚¬";
 
 	/// <summary>
 	/// Key: "LabelGenreWestern"
 	/// English String: "Western"
 	/// </summary>
-	public override string LabelGenreWestern => "서부";
+	public override string LabelGenreWestern => "ì„œë¶€";
 
 	/// <summary>
 	/// Key: "LabelGenreWildWest"
 	/// English String: "Western"
 	/// </summary>
-	public override string LabelGenreWildWest => "서부";
+	public override string LabelGenreWildWest => "ì„œë¶€";
 
 	/// <summary>
 	/// Key: "LabelHeads"
 	/// English String: "Heads"
 	/// </summary>
-	public override string LabelHeads => "머리";
+	public override string LabelHeads => "ë¨¸ë¦¬";
 
 	/// <summary>
 	/// Key: "LabelMostFavorited"
 	/// English String: "Most Favorited"
 	/// </summary>
-	public override string LabelMostFavorited => "인기 상품 순";
+	public override string LabelMostFavorited => "ì¸ê¸° ìƒí’ˆ ìˆœ";
 
 	/// <summary>
 	/// Key: "LabelNoResellers"
 	/// English String: "No Resellers"
 	/// </summary>
-	public override string LabelNoResellers => "재판매자 없음";
+	public override string LabelNoResellers => "ìž¬íŒë§¤ìž ì—†ìŒ";
 
 	/// <summary>
 	/// Key: "LabelOffSale"
 	/// English String: "Offsale"
 	/// </summary>
-	public override string LabelOffSale => "판매 중단";
+	public override string LabelOffSale => "íŒë§¤ ì¤‘ë‹¨";
 
 	/// <summary>
 	/// Key: "LabelPackages"
 	/// English String: "Packages"
 	/// </summary>
-	public override string LabelPackages => "패키지";
+	public override string LabelPackages => "íŒ¨í‚¤ì§€";
 
 	/// <summary>
 	/// Key: "LabelPants"
 	/// English String: "Pants"
 	/// </summary>
-	public override string LabelPants => "바지";
+	public override string LabelPants => "ë°”ì§€";
 
 	/// <summary>
 	/// Key: "LabelPastDay"
 	/// English String: "Past Day"
 	/// </summary>
-	public override string LabelPastDay => "어제";
+	public override string LabelPastDay => "ì–´ì œ";
 
 	/// <summary>
 	/// Key: "LabelPastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelPastWeek => "지난주";
+	public override string LabelPastWeek => "ì§€ë‚œì£¼";
 
 	/// <summary>
 	/// Key: "LabelPriceHighFirst"
 	/// English String: "Price (High to Low)"
 	/// </summary>
-	public override string LabelPriceHighFirst => "높은 가격 순";
+	public override string LabelPriceHighFirst => "ë†’ì€ ê°€ê²© ìˆœ";
 
 	/// <summary>
 	/// Key: "LabelPriceLowFirst"
 	/// English String: "Price (Low to High)"
 	/// </summary>
-	public override string LabelPriceLowFirst => "낮은 가격 순";
+	public override string LabelPriceLowFirst => "ë‚®ì€ ê°€ê²© ìˆœ";
 
 	/// <summary>
 	/// Key: "LabelRecentlyUpdated"
 	/// English String: "Recently Updated"
 	/// </summary>
-	public override string LabelRecentlyUpdated => "신상품 순";
+	public override string LabelRecentlyUpdated => "ì‹ ìƒí’ˆ ìˆœ";
 
 	/// <summary>
 	/// Key: "LabelRelevance"
 	/// English String: "Relevance"
 	/// </summary>
-	public override string LabelRelevance => "관련도 순";
+	public override string LabelRelevance => "ê´€ë ¨ë„ ìˆœ";
 
 	/// <summary>
 	/// Key: "LabelRoblox"
@@ -840,50 +840,50 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelShirts"
 	/// English String: "Shirts"
 	/// </summary>
-	public override string LabelShirts => "셔츠";
+	public override string LabelShirts => "ì…”ì¸ ";
 
 	/// <summary>
 	/// Key: "LabelTShirts"
 	/// English String: "T-Shirts"
 	/// </summary>
-	public override string LabelTShirts => "티셔츠";
+	public override string LabelTShirts => "í‹°ì…”ì¸ ";
 
 	/// <summary>
 	/// Key: "Response.Error.Filter"
 	/// English String: "Errors exist in Filter tab"
 	/// </summary>
-	public override string ResponseErrorFilter => "필터 탭에 오류 있음";
+	public override string ResponseErrorFilter => "í•„í„° íƒ­ì— ì˜¤ë¥˜ ìžˆìŒ";
 
 	/// <summary>
 	/// Key: "Response.GenericError"
 	/// English String: "An error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGenericError => "오류가 발생했어요. 나중에 다시 시도하세요.";
+	public override string ResponseGenericError => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.NoItemsFound"
 	/// English String: "No items found."
 	/// </summary>
-	public override string ResponseNoItemsFound => "아이템을 찾을 수 없습니다.";
+	public override string ResponseNoItemsFound => "ì•„ì´í…œì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Response.NoSaleItemsFromSearch"
 	/// English String: "Your search did not find items for sale. Unavailable items displayed below."
 	/// </summary>
-	public override string ResponseNoSaleItemsFromSearch => "검색 결과에 판매 중인 아이템이 존재하지 않습니다. 판매 불가 아이템은 하단을 확인하세요.";
+	public override string ResponseNoSaleItemsFromSearch => "ê²€ìƒ‰ ê²°ê³¼ì— íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. íŒë§¤ ë¶ˆê°€ ì•„ì´í…œì€ í•˜ë‹¨ì„ í™•ì¸í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.TemporarilyUnavailable"
 	/// English String: "Catalog temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string ResponseTemporarilyUnavailable => "일시적으로 카탈로그 이용 불가. 나중에 다시 시도하세요.";
+	public override string ResponseTemporarilyUnavailable => "ì¼ì‹œì ìœ¼ë¡œ ì¹´íƒˆë¡œê·¸ ì´ìš© ë¶ˆê°€. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.Throttled"
 	/// Shown to users when they have made too many requests in a minute and are being throttled.
 	/// English String: "You're going too fast! Try again in a minute."
 	/// </summary>
-	public override string ResponseThrottled => "요청 횟수가 너무 많아요! 1분 후에 다시 시도하세요.";
+	public override string ResponseThrottled => "ìš”ì²­ íšŸìˆ˜ê°€ ë„ˆë¬´ ë§Žì•„ìš”! 1ë¶„ í›„ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	public CatalogResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -892,57 +892,57 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "Robux 구매";
+		return "Robux êµ¬ë§¤";
 	}
 
 	protected override string _GetTemplateForActionDialogAddGearOk()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	protected override string _GetTemplateForActionFilterApply()
 	{
-		return "적용";
+		return "ì ìš©";
 	}
 
 	protected override string _GetTemplateForActionFilterCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionGo()
 	{
-		return "이동";
+		return "ì´ë™";
 	}
 
 	protected override string _GetTemplateForActionViewAllItems()
 	{
-		return "아이템 전체 보기";
+		return "ì•„ì´í…œ ì „ì²´ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogAddGearBody()
 	{
-		return "게임에 장비를 추가하고 싶나요? 카탈로그에서 아이템을 검색해 '게임에 추가' 버튼을 클릭하세요. 아이템은 게임에 자동적으로 표시되며, 회원님의 게임 페이지에서 판매가 이루어질 때마다 수수료가 지급됩니다. 판매용 장비만 추가할 수 있어요.";
+		return "ê²Œìž„ì— ìž¥ë¹„ë¥¼ ì¶”ê°€í•˜ê³  ì‹¶ë‚˜ìš”? ì¹´íƒˆë¡œê·¸ì—ì„œ ì•„ì´í…œì„ ê²€ìƒ‰í•´ 'ê²Œìž„ì— ì¶”ê°€' ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”. ì•„ì´í…œì€ ê²Œìž„ì— ìžë™ì ìœ¼ë¡œ í‘œì‹œë˜ë©°, íšŒì›ë‹˜ì˜ ê²Œìž„ íŽ˜ì´ì§€ì—ì„œ íŒë§¤ê°€ ì´ë£¨ì–´ì§ˆ ë•Œë§ˆë‹¤ ìˆ˜ìˆ˜ë£Œê°€ ì§€ê¸‰ë©ë‹ˆë‹¤. íŒë§¤ìš© ìž¥ë¹„ë§Œ ì¶”ê°€í•  ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForHeadingCatalogCategory()
 	{
-		return "카테고리";
+		return "ì¹´í…Œê³ ë¦¬";
 	}
 
 	protected override string _GetTemplateForHeadingCatalogPage()
 	{
-		return "카탈로그";
+		return "ì¹´íƒˆë¡œê·¸";
 	}
 
 	protected override string _GetTemplateForLabelAllFeaturedItems()
 	{
-		return "주목 아이템 전체 보기";
+		return "ì£¼ëª© ì•„ì´í…œ ì „ì²´ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelAllGenres()
 	{
-		return "전체 장르";
+		return "ì „ì²´ ìž¥ë¥´";
 	}
 
 	protected override string _GetTemplateForLabelAmazon()
@@ -952,7 +952,7 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelBreadCrumbFree()
 	{
-		return "무료";
+		return "ë¬´ë£Œ";
 	}
 
 	/// <summary>
@@ -961,12 +961,12 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbGenreOrText(string genreName1, string genreName2)
 	{
-		return $"{genreName1} 또는 {genreName2}";
+		return $"{genreName1} ë˜ëŠ” {genreName2}";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGenreOrText()
 	{
-		return "{genreName1} 또는 {genreName2}";
+		return "{genreName1} ë˜ëŠ” {genreName2}";
 	}
 
 	/// <summary>
@@ -975,17 +975,17 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbGenreSelectedText(string genreCount)
 	{
-		return $"장르: {genreCount}개 선택됨";
+		return $"ìž¥ë¥´: {genreCount}ê°œ ì„ íƒë¨";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGenreSelectedText()
 	{
-		return "장르: {genreCount}개 선택됨";
+		return "ìž¥ë¥´: {genreCount}ê°œ ì„ íƒë¨";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGroup()
 	{
-		return "그룹:";
+		return "ê·¸ë£¹:";
 	}
 
 	/// <summary>
@@ -994,12 +994,12 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbPriceAbove(string price)
 	{
-		return $"{price} 이상";
+		return $"{price} ì´ìƒ";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbPriceAbove()
 	{
-		return "{price} 이상";
+		return "{price} ì´ìƒ";
 	}
 
 	/// <summary>
@@ -1008,12 +1008,12 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbPriceBelow(string price)
 	{
-		return $"{price} 이하";
+		return $"{price} ì´í•˜";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbPriceBelow()
 	{
-		return "{price} 이하";
+		return "{price} ì´í•˜";
 	}
 
 	/// <summary>
@@ -1022,22 +1022,22 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbResultsCount(string startNumber, string endNumber, string resultsCount)
 	{
-		return $"{startNumber} ~ {endNumber} / {resultsCount}개 결과";
+		return $"{startNumber} ~ {endNumber} / {resultsCount}ê°œ ê²°ê³¼";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbResultsCount()
 	{
-		return "{startNumber} ~ {endNumber} / {resultsCount}개 결과";
+		return "{startNumber} ~ {endNumber} / {resultsCount}ê°œ ê²°ê³¼";
 	}
 
 	protected override string _GetTemplateForLabelBundle()
 	{
-		return "번들";
+		return "ë²ˆë“¤";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
 	{
-		return "번들";
+		return "ë²ˆë“¤";
 	}
 
 	/// <summary>
@@ -1047,67 +1047,67 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelByCreatorLink(string linkStart, string creator, string linkEnd)
 	{
-		return $"제작: {linkStart}{creator}{linkEnd}";
+		return $"ì œìž‘: {linkStart}{creator}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelByCreatorLink()
 	{
-		return "제작: {linkStart}{creator}{linkEnd}";
+		return "ì œìž‘: {linkStart}{creator}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelCardCreatorBy()
 	{
-		return "개발:";
+		return "ê°œë°œ:";
 	}
 
 	protected override string _GetTemplateForLabelCardPriceWas()
 	{
-		return "이전 가격:";
+		return "ì´ì „ ê°€ê²©:";
 	}
 
 	protected override string _GetTemplateForLabelCardRemaining()
 	{
-		return "잔여:";
+		return "ìž”ì—¬:";
 	}
 
 	protected override string _GetTemplateForLabelCategoryAttributes()
 	{
-		return "속성";
+		return "ì†ì„±";
 	}
 
 	protected override string _GetTemplateForLabelCategoryType()
 	{
-		return "종류";
+		return "ì¢…ë¥˜";
 	}
 
 	protected override string _GetTemplateForLabelCommunityCreations()
 	{
-		return "커뮤니티 작품";
+		return "ì»¤ë®¤ë‹ˆí‹° ìž‘í’ˆ";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddGearTitle()
 	{
-		return "게임에 장비를 추가하세요";
+		return "ê²Œìž„ì— ìž¥ë¹„ë¥¼ ì¶”ê°€í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelEmotes()
 	{
-		return "감정 표현";
+		return "ê°ì • í‘œí˜„";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "즐겨찾기";
+		return "ì¦ê²¨ì°¾ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedBundles()
 	{
-		return "주목 번들";
+		return "ì£¼ëª© ë²ˆë“¤";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedEmotes()
 	{
-		return "주목 감정 표현";
+		return "ì£¼ëª© ê°ì • í‘œí˜„";
 	}
 
 	/// <summary>
@@ -1116,62 +1116,62 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelFeaturedItemsOnRoblox(string spanStart, string roblox, string spanEnd)
 	{
-		return $"{spanStart}{roblox}{spanEnd}의 주목 아이템";
+		return $"{spanStart}{roblox}{spanEnd}ì˜ ì£¼ëª© ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedItemsOnRoblox()
 	{
-		return "{spanStart}{roblox}{spanEnd}의 주목 아이템";
+		return "{spanStart}{roblox}{spanEnd}ì˜ ì£¼ëª© ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForLabelFilterByTime()
 	{
-		return "시간 순";
+		return "ì‹œê°„ ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelFilterCategory()
 	{
-		return "카테고리";
+		return "ì¹´í…Œê³ ë¦¬";
 	}
 
 	protected override string _GetTemplateForLabelFilterCreator()
 	{
-		return "개발자";
+		return "ê°œë°œìž";
 	}
 
 	protected override string _GetTemplateForLabelFilterFilter()
 	{
-		return "필터";
+		return "í•„í„°";
 	}
 
 	protected override string _GetTemplateForLabelFilterFilters()
 	{
-		return "필터";
+		return "í•„í„°";
 	}
 
 	protected override string _GetTemplateForLabelFilterGenre()
 	{
-		return "장르";
+		return "ìž¥ë¥´";
 	}
 
 	protected override string _GetTemplateForLabelFilterHide()
 	{
-		return "감추기";
+		return "ê°ì¶”ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelFilterPrice()
 	{
-		return "가격";
+		return "ê°€ê²©";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceMax()
 	{
-		return "최고";
+		return "ìµœê³ ";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceMin()
 	{
-		return "최저";
+		return "ìµœì €";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceTo()
@@ -1181,22 +1181,22 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelFilterShow()
 	{
-		return "보이기";
+		return "ë³´ì´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelFilterSorting()
 	{
-		return "정렬";
+		return "ì •ë ¬";
 	}
 
 	protected override string _GetTemplateForLabelFilterUnavailableItems()
 	{
-		return "이용 불가 아이템";
+		return "ì´ìš© ë¶ˆê°€ ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForLabelGoogleOnly()
 	{
-		return "Google 전용";
+		return "Google ì „ìš©";
 	}
 
 	protected override string _GetTemplateForLabelIos()
@@ -1206,12 +1206,12 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelMobile()
 	{
-		return "모바일";
+		return "ëª¨ë°”ì¼";
 	}
 
 	protected override string _GetTemplateForLabelNew()
 	{
-		return "신규";
+		return "ì‹ ê·œ";
 	}
 
 	protected override string _GetTemplateForLabelRthro()
@@ -1221,22 +1221,22 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelSale()
 	{
-		return "판매";
+		return "íŒë§¤";
 	}
 
 	protected override string _GetTemplateForLabelSearchField()
 	{
-		return "검색";
+		return "ê²€ìƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelSeeAll()
 	{
-		return "전체 보기";
+		return "ì „ì²´ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "사용자 이름";
+		return "ì‚¬ìš©ìž ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelXbox()
@@ -1246,272 +1246,272 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelAccessories()
 	{
-		return "장신구";
+		return "ìž¥ì‹ êµ¬";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryAll()
 	{
-		return "전체 장신구";
+		return "ì „ì²´ ìž¥ì‹ êµ¬";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryBack()
 	{
-		return "등";
+		return "ë“±";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryFace()
 	{
-		return "얼굴";
+		return "ì–¼êµ´";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryFront()
 	{
-		return "가슴";
+		return "ê°€ìŠ´";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryHair()
 	{
-		return "헤어";
+		return "í—¤ì–´";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryHats()
 	{
-		return "모자";
+		return "ëª¨ìž";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryNeck()
 	{
-		return "목";
+		return "ëª©";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryShoulder()
 	{
-		return "어깨";
+		return "ì–´ê¹¨";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryWaist()
 	{
-		return "허리";
+		return "í—ˆë¦¬";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "전체";
+		return "ì „ì²´";
 	}
 
 	protected override string _GetTemplateForLabelAllBodyParts()
 	{
-		return "전체 신체 부위";
+		return "ì „ì²´ ì‹ ì²´ ë¶€ìœ„";
 	}
 
 	protected override string _GetTemplateForLabelAllCategories()
 	{
-		return "전체 카테고리";
+		return "ì „ì²´ ì¹´í…Œê³ ë¦¬";
 	}
 
 	protected override string _GetTemplateForLabelAllClothing()
 	{
-		return "전체 복장";
+		return "ì „ì²´ ë³µìž¥";
 	}
 
 	protected override string _GetTemplateForLabelAllCollectibles()
 	{
-		return "전체 한정판 아이템";
+		return "ì „ì²´ í•œì •íŒ ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForLabelAllCreators()
 	{
-		return "전체 개발자";
+		return "ì „ì²´ ê°œë°œìž";
 	}
 
 	protected override string _GetTemplateForLabelAllCurrency()
 	{
-		return "전체 통화";
+		return "ì „ì²´ í†µí™”";
 	}
 
 	protected override string _GetTemplateForLabelAllFeatured()
 	{
-		return "전체 주목 아이템";
+		return "ì „ì²´ ì£¼ëª© ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForLabelAllTime()
 	{
-		return "전체 기간";
+		return "ì „ì²´ ê¸°ê°„";
 	}
 
 	protected override string _GetTemplateForLabelAnimations()
 	{
-		return "애니메이션";
+		return "ì• ë‹ˆë©”ì´ì…˜";
 	}
 
 	protected override string _GetTemplateForLabelAnyPrice()
 	{
-		return "전체 가격";
+		return "ì „ì²´ ê°€ê²©";
 	}
 
 	protected override string _GetTemplateForLabelAvatarAnimations()
 	{
-		return "아바타 애니메이션";
+		return "ì•„ë°”íƒ€ ì• ë‹ˆë©”ì´ì…˜";
 	}
 
 	protected override string _GetTemplateForLabelBestselling()
 	{
-		return "판매도 순";
+		return "íŒë§¤ë„ ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelBodyParts()
 	{
-		return "신체 부위";
+		return "ì‹ ì²´ ë¶€ìœ„";
 	}
 
 	protected override string _GetTemplateForLabelClothing()
 	{
-		return "복장";
+		return "ë³µìž¥";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleAccessories()
 	{
-		return "수집 가능 장신구";
+		return "ìˆ˜ì§‘ ê°€ëŠ¥ ìž¥ì‹ êµ¬";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleFaces()
 	{
-		return "한정판 얼굴";
+		return "í•œì •íŒ ì–¼êµ´";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleGear()
 	{
-		return "한정판 장비";
+		return "í•œì •íŒ ìž¥ë¹„";
 	}
 
 	protected override string _GetTemplateForLabelCollectibles()
 	{
-		return "한정판 아이템";
+		return "í•œì •íŒ ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForLabelFaces()
 	{
-		return "얼굴";
+		return "ì–¼êµ´";
 	}
 
 	protected override string _GetTemplateForLabelFeatured()
 	{
-		return "주목 아이템";
+		return "ì£¼ëª© ì•„ì´í…œ";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedAccesories()
 	{
-		return "주목 장신구";
+		return "ì£¼ëª© ìž¥ì‹ êµ¬";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedAnimations()
 	{
-		return "주목 애니메이션";
+		return "ì£¼ëª© ì• ë‹ˆë©”ì´ì…˜";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedFaces()
 	{
-		return "주목 얼굴";
+		return "ì£¼ëª© ì–¼êµ´";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedGear()
 	{
-		return "주목 장비";
+		return "ì£¼ëª© ìž¥ë¹„";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedPackages()
 	{
-		return "주목 패키지";
+		return "ì£¼ëª© íŒ¨í‚¤ì§€";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "무료";
+		return "ë¬´ë£Œ";
 	}
 
 	protected override string _GetTemplateForLabelGear()
 	{
-		return "장비";
+		return "ìž¥ë¹„";
 	}
 
 	protected override string _GetTemplateForLabelGearAll()
 	{
-		return "전체 장비";
+		return "ì „ì²´ ìž¥ë¹„";
 	}
 
 	protected override string _GetTemplateForLabelGearBuilding()
 	{
-		return "건물";
+		return "ê±´ë¬¼";
 	}
 
 	protected override string _GetTemplateForLabelGearExplosive()
 	{
-		return "폭발물";
+		return "í­ë°œë¬¼";
 	}
 
 	protected override string _GetTemplateForLabelGearMelee()
 	{
-		return "근접";
+		return "ê·¼ì ‘";
 	}
 
 	protected override string _GetTemplateForLabelGearMusical()
 	{
-		return "음악";
+		return "ìŒì•…";
 	}
 
 	protected override string _GetTemplateForLabelGearNavigation()
 	{
-		return "내비게이션";
+		return "ë‚´ë¹„ê²Œì´ì…˜";
 	}
 
 	protected override string _GetTemplateForLabelGearPersonalTransport()
 	{
-		return "이동수단";
+		return "ì´ë™ìˆ˜ë‹¨";
 	}
 
 	protected override string _GetTemplateForLabelGearPowerUps()
 	{
-		return "파워업";
+		return "íŒŒì›Œì—…";
 	}
 
 	protected override string _GetTemplateForLabelGearRanged()
 	{
-		return "원거리";
+		return "ì›ê±°ë¦¬";
 	}
 
 	protected override string _GetTemplateForLabelGearSocial()
 	{
-		return "소셜";
+		return "ì†Œì…œ";
 	}
 
 	protected override string _GetTemplateForLabelGenreAdventure()
 	{
-		return "모험";
+		return "ëª¨í—˜";
 	}
 
 	protected override string _GetTemplateForLabelGenreAll()
 	{
-		return "전체 장르";
+		return "ì „ì²´ ìž¥ë¥´";
 	}
 
 	protected override string _GetTemplateForLabelGenreBuilding()
 	{
-		return "건설";
+		return "ê±´ì„¤";
 	}
 
 	protected override string _GetTemplateForLabelGenreComedy()
 	{
-		return "코미디";
+		return "ì½”ë¯¸ë””";
 	}
 
 	protected override string _GetTemplateForLabelGenreFantasy()
 	{
-		return "중세";
+		return "ì¤‘ì„¸";
 	}
 
 	protected override string _GetTemplateForLabelGenreFighting()
 	{
-		return "대전";
+		return "ëŒ€ì „";
 	}
 
 	protected override string _GetTemplateForLabelGenreFPS()
@@ -1521,37 +1521,37 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreFunny()
 	{
-		return "코미디";
+		return "ì½”ë¯¸ë””";
 	}
 
 	protected override string _GetTemplateForLabelGenreHorror()
 	{
-		return "공포";
+		return "ê³µí¬";
 	}
 
 	protected override string _GetTemplateForLabelGenreMedieval()
 	{
-		return "중세";
+		return "ì¤‘ì„¸";
 	}
 
 	protected override string _GetTemplateForLabelGenreMilitary()
 	{
-		return "군사";
+		return "êµ°ì‚¬";
 	}
 
 	protected override string _GetTemplateForLabelGenreNaval()
 	{
-		return "해군";
+		return "í•´êµ°";
 	}
 
 	protected override string _GetTemplateForLabelGenreNinja()
 	{
-		return "대전";
+		return "ëŒ€ì „";
 	}
 
 	protected override string _GetTemplateForLabelGenrePirate()
 	{
-		return "해군";
+		return "í•´êµ°";
 	}
 
 	protected override string _GetTemplateForLabelGenreRPG()
@@ -1561,7 +1561,7 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreScary()
 	{
-		return "공포";
+		return "ê³µí¬";
 	}
 
 	protected override string _GetTemplateForLabelGenreSciFi()
@@ -1571,92 +1571,92 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreSports()
 	{
-		return "스포츠";
+		return "ìŠ¤í¬ì¸ ";
 	}
 
 	protected override string _GetTemplateForLabelGenreTownAndCity()
 	{
-		return "마을 및 도시";
+		return "ë§ˆì„ ë° ë„ì‹œ";
 	}
 
 	protected override string _GetTemplateForLabelGenreTutorial()
 	{
-		return "건설";
+		return "ê±´ì„¤";
 	}
 
 	protected override string _GetTemplateForLabelGenreWar()
 	{
-		return "군사";
+		return "êµ°ì‚¬";
 	}
 
 	protected override string _GetTemplateForLabelGenreWestern()
 	{
-		return "서부";
+		return "ì„œë¶€";
 	}
 
 	protected override string _GetTemplateForLabelGenreWildWest()
 	{
-		return "서부";
+		return "ì„œë¶€";
 	}
 
 	protected override string _GetTemplateForLabelHeads()
 	{
-		return "머리";
+		return "ë¨¸ë¦¬";
 	}
 
 	protected override string _GetTemplateForLabelMostFavorited()
 	{
-		return "인기 상품 순";
+		return "ì¸ê¸° ìƒí’ˆ ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelNoResellers()
 	{
-		return "재판매자 없음";
+		return "ìž¬íŒë§¤ìž ì—†ìŒ";
 	}
 
 	protected override string _GetTemplateForLabelOffSale()
 	{
-		return "판매 중단";
+		return "íŒë§¤ ì¤‘ë‹¨";
 	}
 
 	protected override string _GetTemplateForLabelPackages()
 	{
-		return "패키지";
+		return "íŒ¨í‚¤ì§€";
 	}
 
 	protected override string _GetTemplateForLabelPants()
 	{
-		return "바지";
+		return "ë°”ì§€";
 	}
 
 	protected override string _GetTemplateForLabelPastDay()
 	{
-		return "어제";
+		return "ì–´ì œ";
 	}
 
 	protected override string _GetTemplateForLabelPastWeek()
 	{
-		return "지난주";
+		return "ì§€ë‚œì£¼";
 	}
 
 	protected override string _GetTemplateForLabelPriceHighFirst()
 	{
-		return "높은 가격 순";
+		return "ë†’ì€ ê°€ê²© ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelPriceLowFirst()
 	{
-		return "낮은 가격 순";
+		return "ë‚®ì€ ê°€ê²© ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelRecentlyUpdated()
 	{
-		return "신상품 순";
+		return "ì‹ ìƒí’ˆ ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelRelevance()
 	{
-		return "관련도 순";
+		return "ê´€ë ¨ë„ ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelRoblox()
@@ -1671,41 +1671,44 @@ internal class CatalogResources_ko_kr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelShirts()
 	{
-		return "셔츠";
+		return "ì…”ì¸ ";
 	}
 
 	protected override string _GetTemplateForLabelTShirts()
 	{
-		return "티셔츠";
+		return "í‹°ì…”ì¸ ";
 	}
 
 	protected override string _GetTemplateForResponseErrorFilter()
 	{
-		return "필터 탭에 오류 있음";
+		return "í•„í„° íƒ­ì— ì˜¤ë¥˜ ìžˆìŒ";
 	}
 
 	protected override string _GetTemplateForResponseGenericError()
 	{
-		return "오류가 발생했어요. 나중에 다시 시도하세요.";
+		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseNoItemsFound()
 	{
-		return "아이템을 찾을 수 없습니다.";
+		return "ì•„ì´í…œì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForResponseNoSaleItemsFromSearch()
 	{
-		return "검색 결과에 판매 중인 아이템이 존재하지 않습니다. 판매 불가 아이템은 하단을 확인하세요.";
+		return "ê²€ìƒ‰ ê²°ê³¼ì— íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. íŒë§¤ ë¶ˆê°€ ì•„ì´í…œì€ í•˜ë‹¨ì„ í™•ì¸í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseTemporarilyUnavailable()
 	{
-		return "일시적으로 카탈로그 이용 불가. 나중에 다시 시도하세요.";
+		return "ì¼ì‹œì ìœ¼ë¡œ ì¹´íƒˆë¡œê·¸ ì´ìš© ë¶ˆê°€. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseThrottled()
 	{
-		return "요청 횟수가 너무 많아요! 1분 후에 다시 시도하세요.";
+		return "ìš”ì²­ íšŸìˆ˜ê°€ ë„ˆë¬´ ë§Žì•„ìš”! 1ë¶„ í›„ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
+}
+
+
 }

@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Amazon.Sqs;
 using Roblox.EventLog;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// The default implementation of <see cref="T:Roblox.Platform.Moderation.ISqsOpenTaskFactory" />.
 /// </summary>
 internal class SqsOpenTaskFactory : ISqsOpenTaskFactory
@@ -55,4 +54,7 @@ internal class SqsOpenTaskFactory : ISqsOpenTaskFactory
 		ISqsReceipt receipt = SqsReceiptFactory.GetSqsReceipt(taskIdentifier.ReceiptHandle, taskIdentifier.ReceiptRegionName);
 		return new SqsOpenTask(queueIdentifier, message, taskExpiry, worker, receipt);
 	}
+}
+
+
 }

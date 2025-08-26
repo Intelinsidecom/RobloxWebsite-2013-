@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -10,10 +10,9 @@ using Roblox.Configuration;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Sentinels.CircuitBreakerPolicy;
+namespace Roblox.Platform.RealTimeNotifications.Client.Properties {
+    [SettingsProvider(typeof(Provider))]
 
-namespace Roblox.RealTimeNotifications.Client.Properties;
-
-[SettingsProvider(typeof(Provider))]
 [ExcludeFromCodeCoverage]
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
@@ -81,4 +80,7 @@ internal sealed class Settings : ApplicationSettingsBase, IServiceClientSettings
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
 	}
+}
+
+
 }

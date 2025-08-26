@@ -1,10 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class GetPlacePlayerCountByCountryIdAndMappedPlatformIdRequestModel
 
-namespace Roblox.GameInstances.Client;
-
-public class GetPlacePlayerCountByCountryIdAndMappedPlatformIdRequestModel
 {
 	public long PlaceId { get; set; }
 
 	public Dictionary<int, int> PlatformMappings { get; set; }
+}
+
+
 }

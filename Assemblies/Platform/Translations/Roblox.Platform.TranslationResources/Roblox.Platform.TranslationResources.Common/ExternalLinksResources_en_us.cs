@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class ExternalLinksResources_en_us : TranslationResourcesBase, IExternalLinksResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class ExternalLinksResources_en_us : TranslationResourcesBase, IExternalLinksResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -104,4 +103,7 @@ internal class ExternalLinksResources_en_us : TranslationResourcesBase, IExterna
 	{
 		return "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use";
 	}
+}
+
+
 }

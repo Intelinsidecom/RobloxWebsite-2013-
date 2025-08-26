@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PromotedProductResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,13 +10,13 @@ internal class PromotedProductResources_de_de : PromotedProductResources_en_us, 
 	/// Key: "Heading.GearForThisGame"
 	/// English String: "Gear for this game"
 	/// </summary>
-	public override string HeadingGearForThisGame => "Ausrüstung für dieses Spiel";
+	public override string HeadingGearForThisGame => "AusrÃ¼stung fÃ¼r dieses Spiel";
 
 	/// <summary>
 	/// Key: "Label.AddGear"
 	/// English String: "Add Gear"
 	/// </summary>
-	public override string LabelAddGear => "Ausrüstung hinzufügen";
+	public override string LabelAddGear => "AusrÃ¼stung hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.Buy"
@@ -92,12 +92,12 @@ internal class PromotedProductResources_de_de : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForHeadingGearForThisGame()
 	{
-		return "Ausrüstung für dieses Spiel";
+		return "AusrÃ¼stung fÃ¼r dieses Spiel";
 	}
 
 	protected override string _GetTemplateForLabelAddGear()
 	{
-		return "Ausrüstung hinzufügen";
+		return "AusrÃ¼stung hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
@@ -121,12 +121,12 @@ internal class PromotedProductResources_de_de : PromotedProductResources_en_us, 
 	/// </summary>
 	public override string LabelItemAddedToGame(string item)
 	{
-		return $"Du hast „{item}“ zu deinem Spiel hinzugefügt.";
+		return $"Du hast â€ž{item}â€œ zu deinem Spiel hinzugefÃ¼gt.";
 	}
 
 	protected override string _GetTemplateForLabelItemAddedToGame()
 	{
-		return "Du hast „{item}“ zu deinem Spiel hinzugefügt.";
+		return "Du hast â€ž{item}â€œ zu deinem Spiel hinzugefÃ¼gt.";
 	}
 
 	/// <summary>
@@ -135,12 +135,12 @@ internal class PromotedProductResources_de_de : PromotedProductResources_en_us, 
 	/// </summary>
 	public override string LabelItemRemovedFromGame(string item)
 	{
-		return $"Du hast „{item}“ aus deinem Spiel entfernt.";
+		return $"Du hast â€ž{item}â€œ aus deinem Spiel entfernt.";
 	}
 
 	protected override string _GetTemplateForLabelItemRemovedFromGame()
 	{
-		return "Du hast „{item}“ aus deinem Spiel entfernt.";
+		return "Du hast â€ž{item}â€œ aus deinem Spiel entfernt.";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
@@ -182,4 +182,7 @@ internal class PromotedProductResources_de_de : PromotedProductResources_en_us, 
 	{
 		return "Erfolg!";
 	}
+}
+
+
 }

@@ -1,6 +1,9 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accountsinternal {
+    interface IAccountLocaleAuditBuilder
 
-internal interface IAccountLocaleAuditBuilder
 {
 	void CreateAuditRecords(IAccountLocaleEntity accountLocaleEntity, IAccountLocalesChangeAgent changeAgent, AccountLocalesAuditEntryMetadataType metadataType);
+}
+
+
 }

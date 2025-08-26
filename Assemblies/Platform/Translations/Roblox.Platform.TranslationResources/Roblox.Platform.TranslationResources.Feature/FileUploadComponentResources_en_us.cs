@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class FileUploadComponentResources_en_us : TranslationResourcesBase, IFileUploadComponentResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class FileUploadComponentResources_en_us : TranslationResourcesBase, IFileUploadComponentResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -198,4 +197,7 @@ internal class FileUploadComponentResources_en_us : TranslationResourcesBase, IF
 	{
 		return "Invalid file type. Must be a {fileTypes} file.";
 	}
+}
+
+
 }

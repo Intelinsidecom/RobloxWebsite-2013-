@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    class SignUpResources_en_us : TranslationResourcesBase, ISignUpResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Authentication;
-
-internal class SignUpResources_en_us : TranslationResourcesBase, ISignUpResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1363,4 +1362,7 @@ internal class SignUpResources_en_us : TranslationResourcesBase, ISignUpResource
 	{
 		return "Usernames can have at most one _.";
 	}
+}
+
+
 }

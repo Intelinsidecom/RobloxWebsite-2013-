@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Audit;
+﻿namespace Roblox.Localization.Auditinternal {
+    interface IAccountLocalesAutomationTypeEntityFactory
 
-internal interface IAccountLocalesAutomationTypeEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntity" /> by its ID.
@@ -22,4 +22,7 @@ internal interface IAccountLocalesAutomationTypeEntityFactory
 	/// <param name="value">The value of the automation type.</param>
 	/// <returns>The <see cref="T:Roblox.Platform.Localization.Audit.IAccountLocalesAutomationTypeEntity" /> with the given value.</returns>
 	IAccountLocalesAutomationTypeEntity GetOrCreate(string value);
+}
+
+
 }

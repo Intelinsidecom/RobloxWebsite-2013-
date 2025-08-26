@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.Linq;
@@ -12,10 +12,9 @@ using Roblox.Platform.Universes;
 using Roblox.Thumbnails.Client;
 using Roblox.Thumbs.Properties;
 using Roblox.WebsiteSettings.Properties;
+namespace Roblox.Platform.Thumbspublic {
+    class AssetThumbnail : DomainObjectBase<ThumbnailDomainFactories>, IAssetThumbnail
 
-namespace Roblox.Thumbs;
-
-public class AssetThumbnail : DomainObjectBase<ThumbnailDomainFactories>, IAssetThumbnail
 {
 	private readonly IBadgeReader _BadgeReader;
 
@@ -766,4 +765,7 @@ public class AssetThumbnail : DomainObjectBase<ThumbnailDomainFactories>, IAsset
 		}
 		return base.DomainFactories.StaticImages.GetGameIconThumbResult(imageParameters.Width, imageParameters.Height, imageParameters.FileExtension, (int)(placeId % 12 + 1));
 	}
+}
+
+
 }

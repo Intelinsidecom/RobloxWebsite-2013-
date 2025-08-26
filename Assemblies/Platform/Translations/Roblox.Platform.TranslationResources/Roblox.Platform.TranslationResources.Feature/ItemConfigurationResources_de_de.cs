@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ItemConfigurationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,32 +10,32 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// Key: "Description.AllowCopying"
 	/// English String: "By switching on, you are granting every other user of Roblox the right to use (in various ways) the content you are now sharing. If you do not want to grant this right, please do not check this box. For more information about sharing content, please review the Roblox Terms of Use."
 	/// </summary>
-	public override string DescriptionAllowCopying => "Wenn du dieses Kontrollkästchen aktivierst, gewährst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. Wenn du dieses Recht nicht gewähren möchtest, aktiviere dieses Kontrollkästchen bitte nicht. Weitere Informationen zum Teilen von Inhalten findest du in den Nutzungsbedingungen von Roblox.";
+	public override string DescriptionAllowCopying => "Wenn du dieses KontrollkÃ¤stchen aktivierst, gewÃ¤hrst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. Wenn du dieses Recht nicht gewÃ¤hren mÃ¶chtest, aktiviere dieses KontrollkÃ¤stchen bitte nicht. Weitere Informationen zum Teilen von Inhalten findest du in den Nutzungsbedingungen von Roblox.";
 
 	/// <summary>
 	/// Key: "Description.ArchiveWarning"
 	/// English String: "Archiving this asset will prevent it from being used in game. Archived assets can be restored."
 	/// </summary>
-	public override string DescriptionArchiveWarning => "Das Archivieren dieses Assets verhindert, dass es im Spiel verwendet wird. Archivierte Assets können wiederhergestellt werden.";
+	public override string DescriptionArchiveWarning => "Das Archivieren dieses Assets verhindert, dass es im Spiel verwendet wird. Archivierte Assets kÃ¶nnen wiederhergestellt werden.";
 
 	/// <summary>
 	/// Key: "Description.ClickToAddTag"
 	/// Hover text on the button that adds a tag to an item
 	/// English String: "Click to add tag"
 	/// </summary>
-	public override string DescriptionClickToAddTag => "Klicke hier, um Tag hinzufügen";
+	public override string DescriptionClickToAddTag => "Klicke hier, um Tag hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Description.ModeratorFileReview"
 	/// English String: "* Uploaded file will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionModeratorFileReview => "* Die hochgeladene Datei wird von unseren Moderatoren überprüft, bevor sie für andere Benutzer angezeigt wird";
+	public override string DescriptionModeratorFileReview => "* Die hochgeladene Datei wird von unseren Moderatoren Ã¼berprÃ¼ft, bevor sie fÃ¼r andere Benutzer angezeigt wird";
 
 	/// <summary>
 	/// Key: "Description.ModeratorReview"
 	/// English String: "* Uploaded image will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionModeratorReview => "* Das hochgeladene Bild wird von unseren Moderatoren überprüft, bevor es für andere Benutzer angezeigt wird.";
+	public override string DescriptionModeratorReview => "* Das hochgeladene Bild wird von unseren Moderatoren Ã¼berprÃ¼ft, bevor es fÃ¼r andere Benutzer angezeigt wird.";
 
 	/// <summary>
 	/// Key: "Heading.Archive"
@@ -111,7 +111,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// Key: "Label.CurrentPublishedVersion"
 	/// English String: "Current published version"
 	/// </summary>
-	public override string LabelCurrentPublishedVersion => "Aktuelle veröffentlichte Version";
+	public override string LabelCurrentPublishedVersion => "Aktuelle verÃ¶ffentlichte Version";
 
 	/// <summary>
 	/// Key: "Label.Description"
@@ -124,7 +124,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// device term
 	/// English String: "Device"
 	/// </summary>
-	public override string LabelDevice => "Gerät";
+	public override string LabelDevice => "GerÃ¤t";
 
 	/// <summary>
 	/// Key: "Label.EnterItemTag"
@@ -187,7 +187,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// Key: "Label.MarketplaceFee"
 	/// English String: "Marketplace Fee"
 	/// </summary>
-	public override string LabelMarketplaceFee => "Marktplatzgebühr";
+	public override string LabelMarketplaceFee => "MarktplatzgebÃ¼hr";
 
 	/// <summary>
 	/// Key: "Label.Name"
@@ -248,7 +248,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// Placeholder for dropdown in create asset page. Options are image, mesh, hair accessory, etc
 	/// English String: "Select a type"
 	/// </summary>
-	public override string LabelSelectType => "Wähle eine Art aus";
+	public override string LabelSelectType => "WÃ¤hle eine Art aus";
 
 	/// <summary>
 	/// Key: "Label.Tags"
@@ -311,7 +311,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// error message
 	/// English String: "Text filtering service is unavailable at this time."
 	/// </summary>
-	public override string MessageFilteringServiceUnavailableError => "Der Textfilterdienst ist derzeit nicht verfügbar.";
+	public override string MessageFilteringServiceUnavailableError => "Der Textfilterdienst ist derzeit nicht verfÃ¼gbar.";
 
 	/// <summary>
 	/// Key: "Message.GamePassConfigDisabledError"
@@ -339,7 +339,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// error message
 	/// English String: "Failed to save image. Please try again later."
 	/// </summary>
-	public override string MessageImageSavingFailedError => "Speichern des Bilds fehlgeschlagen. Bitte versuche es später erneut.";
+	public override string MessageImageSavingFailedError => "Speichern des Bilds fehlgeschlagen. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.InappropriateTextError"
@@ -383,14 +383,14 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// Key: "Message.SaveError"
 	/// English String: "Something failed. Please try again later"
 	/// </summary>
-	public override string MessageSaveError => "Etwas ist schiefgelaufen. Bitte versuche es später erneut.";
+	public override string MessageSaveError => "Etwas ist schiefgelaufen. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.TooManyUploads"
 	/// error message
 	/// English String: "You are uploading too much. Please try again later."
 	/// </summary>
-	public override string MessageTooManyUploads => "Du lädst zu viel hoch. Bitte versuche es später erneut.";
+	public override string MessageTooManyUploads => "Du lÃ¤dst zu viel hoch. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Message.UpdatePriceError"
@@ -421,12 +421,12 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAcceptableFileFormats(string fileExtensions)
 	{
-		return $"* Zulässige Dateiformate: {fileExtensions}";
+		return $"* ZulÃ¤ssige Dateiformate: {fileExtensions}";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFileFormats()
 	{
-		return "* Zulässige Dateiformate: {fileExtensions}";
+		return "* ZulÃ¤ssige Dateiformate: {fileExtensions}";
 	}
 
 	/// <summary>
@@ -435,17 +435,17 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAcceptableFiles(string lineBreak, string fileExtensions, string fileSizes)
 	{
-		return $"* Zulässige Dateien{lineBreak}Format: {fileExtensions}   |   Größe: {fileSizes}";
+		return $"* ZulÃ¤ssige Dateien{lineBreak}Format: {fileExtensions}   |   GrÃ¶ÃŸe: {fileSizes}";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFiles()
 	{
-		return "* Zulässige Dateien{lineBreak}Format: {fileExtensions}   |   Größe: {fileSizes}";
+		return "* ZulÃ¤ssige Dateien{lineBreak}Format: {fileExtensions}   |   GrÃ¶ÃŸe: {fileSizes}";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopying()
 	{
-		return "Wenn du dieses Kontrollkästchen aktivierst, gewährst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. Wenn du dieses Recht nicht gewähren möchtest, aktiviere dieses Kontrollkästchen bitte nicht. Weitere Informationen zum Teilen von Inhalten findest du in den Nutzungsbedingungen von Roblox.";
+		return "Wenn du dieses KontrollkÃ¤stchen aktivierst, gewÃ¤hrst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. Wenn du dieses Recht nicht gewÃ¤hren mÃ¶chtest, aktiviere dieses KontrollkÃ¤stchen bitte nicht. Weitere Informationen zum Teilen von Inhalten findest du in den Nutzungsbedingungen von Roblox.";
 	}
 
 	/// <summary>
@@ -454,22 +454,22 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAllowCopyingWarning(string linkStart, string linkEnd)
 	{
-		return $"Wenn du dieses Kontrollkästchen aktivierst, gewährst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. Wenn du dieses Recht nicht gewähren möchtest, aktiviere dieses Kontrollkästchen bitte nicht. Weitere Informationen zum Teilen von Inhalten findest du in den {linkStart}Roblox-Nutzungsbedingungen{linkEnd}.";
+		return $"Wenn du dieses KontrollkÃ¤stchen aktivierst, gewÃ¤hrst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. Wenn du dieses Recht nicht gewÃ¤hren mÃ¶chtest, aktiviere dieses KontrollkÃ¤stchen bitte nicht. Weitere Informationen zum Teilen von Inhalten findest du in den {linkStart}Roblox-Nutzungsbedingungen{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopyingWarning()
 	{
-		return "Wenn du dieses Kontrollkästchen aktivierst, gewährst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. Wenn du dieses Recht nicht gewähren möchtest, aktiviere dieses Kontrollkästchen bitte nicht. Weitere Informationen zum Teilen von Inhalten findest du in den {linkStart}Roblox-Nutzungsbedingungen{linkEnd}.";
+		return "Wenn du dieses KontrollkÃ¤stchen aktivierst, gewÃ¤hrst du allen anderen Roblox-Benutzern das Recht, die Inhalte, die du gerade teilst, auf unterschiedliche Art und Weise zu verwenden. Wenn du dieses Recht nicht gewÃ¤hren mÃ¶chtest, aktiviere dieses KontrollkÃ¤stchen bitte nicht. Weitere Informationen zum Teilen von Inhalten findest du in den {linkStart}Roblox-Nutzungsbedingungen{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionArchiveWarning()
 	{
-		return "Das Archivieren dieses Assets verhindert, dass es im Spiel verwendet wird. Archivierte Assets können wiederhergestellt werden.";
+		return "Das Archivieren dieses Assets verhindert, dass es im Spiel verwendet wird. Archivierte Assets kÃ¶nnen wiederhergestellt werden.";
 	}
 
 	protected override string _GetTemplateForDescriptionClickToAddTag()
 	{
-		return "Klicke hier, um Tag hinzufügen";
+		return "Klicke hier, um Tag hinzufÃ¼gen";
 	}
 
 	/// <summary>
@@ -478,22 +478,22 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionMarketplaceExplanation(string marketplaceFeePercentage, string minimumPrice)
 	{
-		return $"(Roblox behält {marketplaceFeePercentage}\u00a0% ein, mindestens jedoch {minimumPrice})";
+		return $"(Roblox behÃ¤lt {marketplaceFeePercentage}\u00a0% ein, mindestens jedoch {minimumPrice})";
 	}
 
 	protected override string _GetTemplateForDescriptionMarketplaceExplanation()
 	{
-		return "(Roblox behält {marketplaceFeePercentage}\u00a0% ein, mindestens jedoch {minimumPrice})";
+		return "(Roblox behÃ¤lt {marketplaceFeePercentage}\u00a0% ein, mindestens jedoch {minimumPrice})";
 	}
 
 	protected override string _GetTemplateForDescriptionModeratorFileReview()
 	{
-		return "* Die hochgeladene Datei wird von unseren Moderatoren überprüft, bevor sie für andere Benutzer angezeigt wird";
+		return "* Die hochgeladene Datei wird von unseren Moderatoren Ã¼berprÃ¼ft, bevor sie fÃ¼r andere Benutzer angezeigt wird";
 	}
 
 	protected override string _GetTemplateForDescriptionModeratorReview()
 	{
-		return "* Das hochgeladene Bild wird von unseren Moderatoren überprüft, bevor es für andere Benutzer angezeigt wird.";
+		return "* Das hochgeladene Bild wird von unseren Moderatoren Ã¼berprÃ¼ft, bevor es fÃ¼r andere Benutzer angezeigt wird.";
 	}
 
 	/// <summary>
@@ -503,22 +503,22 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionSelectItemTags(string itemTagLimit)
 	{
-		return $"Wähle bis zu {itemTagLimit} Tags aus.";
+		return $"WÃ¤hle bis zu {itemTagLimit} Tags aus.";
 	}
 
 	protected override string _GetTemplateForDescriptionSelectItemTags()
 	{
-		return "Wähle bis zu {itemTagLimit} Tags aus.";
+		return "WÃ¤hle bis zu {itemTagLimit} Tags aus.";
 	}
 
 	public override string DescriptionVerifiedCreatorEmail(string linkStart, string linkEnd)
 	{
-		return $"Um Inhalte auf dem Markt zu teilen, musst du deinem Konto eine E-Mail-Adresse hinzufügen und diese bestätigen. Dies kann in den {linkStart}Kontoeinstellungen{linkEnd} vorgenommen werden.";
+		return $"Um Inhalte auf dem Markt zu teilen, musst du deinem Konto eine E-Mail-Adresse hinzufÃ¼gen und diese bestÃ¤tigen. Dies kann in den {linkStart}Kontoeinstellungen{linkEnd} vorgenommen werden.";
 	}
 
 	protected override string _GetTemplateForDescriptionVerifiedCreatorEmail()
 	{
-		return "Um Inhalte auf dem Markt zu teilen, musst du deinem Konto eine E-Mail-Adresse hinzufügen und diese bestätigen. Dies kann in den {linkStart}Kontoeinstellungen{linkEnd} vorgenommen werden.";
+		return "Um Inhalte auf dem Markt zu teilen, musst du deinem Konto eine E-Mail-Adresse hinzufÃ¼gen und diese bestÃ¤tigen. Dies kann in den {linkStart}Kontoeinstellungen{linkEnd} vorgenommen werden.";
 	}
 
 	protected override string _GetTemplateForHeadingArchive()
@@ -592,7 +592,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelCurrentPublishedVersion()
 	{
-		return "Aktuelle veröffentlichte Version";
+		return "Aktuelle verÃ¶ffentlichte Version";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
@@ -602,7 +602,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelDevice()
 	{
-		return "Gerät";
+		return "GerÃ¤t";
 	}
 
 	protected override string _GetTemplateForLabelEnterItemTag()
@@ -616,12 +616,12 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	/// </summary>
 	public override string LabelForItem(string itemType)
 	{
-		return $"Für {itemType}";
+		return $"FÃ¼r {itemType}";
 	}
 
 	protected override string _GetTemplateForLabelForItem()
 	{
-		return "Für {itemType}";
+		return "FÃ¼r {itemType}";
 	}
 
 	protected override string _GetTemplateForLabelGame()
@@ -666,7 +666,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelMarketplaceFee()
 	{
-		return "Marktplatzgebühr";
+		return "MarktplatzgebÃ¼hr";
 	}
 
 	protected override string _GetTemplateForLabelName()
@@ -716,7 +716,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelSelectType()
 	{
-		return "Wähle eine Art aus";
+		return "WÃ¤hle eine Art aus";
 	}
 
 	protected override string _GetTemplateForLabelTags()
@@ -794,7 +794,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForMessageFilteringServiceUnavailableError()
 	{
-		return "Der Textfilterdienst ist derzeit nicht verfügbar.";
+		return "Der Textfilterdienst ist derzeit nicht verfÃ¼gbar.";
 	}
 
 	protected override string _GetTemplateForMessageGamePassConfigDisabledError()
@@ -814,7 +814,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForMessageImageSavingFailedError()
 	{
-		return "Speichern des Bilds fehlgeschlagen. Bitte versuche es später erneut.";
+		return "Speichern des Bilds fehlgeschlagen. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageInappropriateTextError()
@@ -905,12 +905,12 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForMessageSaveError()
 	{
-		return "Etwas ist schiefgelaufen. Bitte versuche es später erneut.";
+		return "Etwas ist schiefgelaufen. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageTooManyUploads()
 	{
-		return "Du lädst zu viel hoch. Bitte versuche es später erneut.";
+		return "Du lÃ¤dst zu viel hoch. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForMessageUpdatePriceError()
@@ -927,4 +927,7 @@ internal class ItemConfigurationResources_de_de : ItemConfigurationResources_en_
 	{
 		return "Erfolgreich aktualisiert";
 	}
+}
+
+
 }

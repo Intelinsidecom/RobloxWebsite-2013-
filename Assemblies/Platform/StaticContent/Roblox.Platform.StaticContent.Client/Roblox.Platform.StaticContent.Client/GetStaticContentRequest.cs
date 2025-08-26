@@ -1,10 +1,9 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using Roblox.DataV2.Core;
+namespace Roblox.Platform.StaticContent.Client {
+    [DataContract]
 
-namespace Roblox.StaticContent.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 internal class GetStaticContentRequest
 {
@@ -28,4 +27,7 @@ internal class GetStaticContentRequest
 
 	[DataMember(Name = "count")]
 	public int Count { get; set; }
+}
+
+
 }

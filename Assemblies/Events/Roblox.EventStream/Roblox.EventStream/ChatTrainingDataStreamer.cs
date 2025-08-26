@@ -1,10 +1,9 @@
 using System;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
+namespace Roblox.EventStream {
+    class ChatTrainingDataStreamer : IChatTrainingDataStreamer
 
-namespace Roblox.Platform.EventStream;
-
-internal class ChatTrainingDataStreamer : IChatTrainingDataStreamer
 {
 	private readonly IChatTrainingDataSender _UnitedStatesRegionDataSender;
 
@@ -53,4 +52,7 @@ internal class ChatTrainingDataStreamer : IChatTrainingDataStreamer
 		}
 		return false;
 	}
+}
+
+
 }

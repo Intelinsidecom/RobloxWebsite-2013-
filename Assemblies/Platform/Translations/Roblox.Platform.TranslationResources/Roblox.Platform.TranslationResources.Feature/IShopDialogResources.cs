@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IShopDialogResources : ITranslationResources
 
-public interface IShopDialogResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -37,7 +37,7 @@ public interface IShopDialogResources : ITranslationResources
 
 	/// <summary>
 	/// Key: "Description.RetailWebsiteRedirect"
-	/// English String: "Heads up, Robloxian – by clicking “continue,” you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
+	/// English String: "Heads up, Robloxian â€“ by clicking â€œcontinue,â€ you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
 	/// </summary>
 	string DescriptionRetailWebsiteRedirect { get; }
 
@@ -54,4 +54,7 @@ public interface IShopDialogResources : ITranslationResources
 	/// English String: "Your are about to visit our amazon store. You will be redirected to Roblox merchandise store on {shopLink}."
 	/// </summary>
 	string DescriptionAmazonRedirect(string shopLink);
+}
+
+
 }

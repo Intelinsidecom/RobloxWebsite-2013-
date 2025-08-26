@@ -1,8 +1,7 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
+namespace Roblox.Localization.Coreinternal {
+    class ObservedLocaleEntityTranslator : IObservedLocaleEntityTranslator
 
-namespace Roblox.Platform.Localization.Core;
-
-internal class ObservedLocaleEntityTranslator : IObservedLocaleEntityTranslator
 {
 	private const string _DefaultLanguage = "en";
 
@@ -82,4 +81,7 @@ internal class ObservedLocaleEntityTranslator : IObservedLocaleEntityTranslator
 		}
 		return deviceReportedLocale;
 	}
+}
+
+
 }

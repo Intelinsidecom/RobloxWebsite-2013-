@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-
-namespace Roblox.OwnershipV2.Client.Models
+namespace Roblox.Platform.OwnershipV2.Client.Models
 {
+
     public enum OwnershipV2OperationResult
     {
         Success = 0,
@@ -69,4 +69,3 @@ namespace Roblox.OwnershipV2.Client.Models
         public long Id { get; set; }
     }
 }
-

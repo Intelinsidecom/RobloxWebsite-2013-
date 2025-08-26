@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.EventStream {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream;
-
-/// <summary>
 /// Common interface for streaming events.
 /// </summary>
 public interface IEventStreamer
@@ -17,4 +16,7 @@ public interface IEventStreamer
 	/// <param name="isTrustedSource">Is the event source trusted?</param>
 	/// <param name="partitionKey"></param>
 	void StreamEvent(string target, string eventType, IReadOnlyCollection<KeyValuePair<string, string>> eventParameters, string clientIp, bool isTrustedSource, string partitionKey = null);
+}
+
+
 }

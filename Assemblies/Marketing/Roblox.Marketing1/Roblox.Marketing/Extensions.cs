@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Marketing;
+﻿namespace Roblox.Marketingpublic {
+    static class Extensions
 
-public static class Extensions
 {
 	internal static void VerifyIsNotNull(this IBrowserTracker browserTracker)
 	{
@@ -9,4 +9,7 @@ public static class Extensions
 			throw new UnknownBrowserTrackerException();
 		}
 	}
+}
+
+
 }

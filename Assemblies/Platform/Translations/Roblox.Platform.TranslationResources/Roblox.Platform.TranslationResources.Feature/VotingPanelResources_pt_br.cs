@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides VotingPanelResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -22,31 +22,31 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 	/// Key: "Label.AccountUnderDayOneMessage"
 	/// English String: "You will be able to vote on Games and Studio Models later, after you've had a chance to experience Roblox a bit more. Come back to this page in a couple days."
 	/// </summary>
-	public override string LabelAccountUnderDayOneMessage => "Você poderá votar em jogos e modelos do Studio mais tarde, depois de ter tido a chance de conhecer um pouco mais sobre o Roblox. Volte a esta página em alguns dias.";
+	public override string LabelAccountUnderDayOneMessage => "VocÃª poderÃ¡ votar em jogos e modelos do Studio mais tarde, depois de ter tido a chance de conhecer um pouco mais sobre o Roblox. Volte a esta pÃ¡gina em alguns dias.";
 
 	/// <summary>
 	/// Key: "Label.AccountUnderDayOneTitle"
 	/// English String: "Voter Feedback"
 	/// </summary>
-	public override string LabelAccountUnderDayOneTitle => "Opinião de votante";
+	public override string LabelAccountUnderDayOneTitle => "OpiniÃ£o de votante";
 
 	/// <summary>
 	/// Key: "Label.AssetNotVoteableMessage"
 	/// English String: "This asset may not be voted on at this time."
 	/// </summary>
-	public override string LabelAssetNotVoteableMessage => "Você não pode votar neste elemento no momento.";
+	public override string LabelAssetNotVoteableMessage => "VocÃª nÃ£o pode votar neste elemento no momento.";
 
 	/// <summary>
 	/// Key: "Label.AssetNotVoteableTitle"
 	/// English String: "Unable to Vote"
 	/// </summary>
-	public override string LabelAssetNotVoteableTitle => "Impossível votar";
+	public override string LabelAssetNotVoteableTitle => "ImpossÃ­vel votar";
 
 	/// <summary>
 	/// Key: "Label.BuyGamePassMessage"
 	/// English String: "You must own this game pass before you can vote on it."
 	/// </summary>
-	public override string LabelBuyGamePassMessage => "Você precisa ter esse passe de jogo antes de poder votar nele.";
+	public override string LabelBuyGamePassMessage => "VocÃª precisa ter esse passe de jogo antes de poder votar nele.";
 
 	/// <summary>
 	/// Key: "Label.BuyGamePassTitle"
@@ -70,7 +70,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 	/// Key: "Label.FloodCheckMessage"
 	/// English String: "You're voting too quickly. Come back later and try again."
 	/// </summary>
-	public override string LabelFloodCheckMessage => "Você está votando rápido demais. Volte mais tarde e tente novamente.";
+	public override string LabelFloodCheckMessage => "VocÃª estÃ¡ votando rÃ¡pido demais. Volte mais tarde e tente novamente.";
 
 	/// <summary>
 	/// Key: "Label.FloodCheckTitle"
@@ -88,7 +88,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 	/// Key: "Label.InstallPluginMessage"
 	/// English String: "You must install this plugin before you can vote on it."
 	/// </summary>
-	public override string LabelInstallPluginMessage => "Você precisa instalar este plugin antes de poder votar nele.";
+	public override string LabelInstallPluginMessage => "VocÃª precisa instalar este plugin antes de poder votar nele.";
 
 	/// <summary>
 	/// Key: "Label.InstallPluginTitle"
@@ -118,7 +118,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 	/// Key: "Label.PlayGameMessage"
 	/// English String: "You must play the game before you can vote on it."
 	/// </summary>
-	public override string LabelPlayGameMessage => "Você precisa jogar o jogo para poder votar nele.";
+	public override string LabelPlayGameMessage => "VocÃª precisa jogar o jogo para poder votar nele.";
 
 	/// <summary>
 	/// Key: "Label.PlayGameTitle"
@@ -130,7 +130,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 	/// Key: "Label.UnknownProblemMessage"
 	/// English String: "There was an unknown problem voting. Please try again."
 	/// </summary>
-	public override string LabelUnknownProblemMessage => "Ocorreu um erro desconhecido na votação. Tente novamente.";
+	public override string LabelUnknownProblemMessage => "Ocorreu um erro desconhecido na votaÃ§Ã£o. Tente novamente.";
 
 	/// <summary>
 	/// Key: "Label.UnknownProblemTitle"
@@ -142,7 +142,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 	/// Key: "Label.UseModelMessage"
 	/// English String: "You must use this model before you can vote on it."
 	/// </summary>
-	public override string LabelUseModelMessage => "Você precisa usar este modelo antes de poder votar nele.";
+	public override string LabelUseModelMessage => "VocÃª precisa usar este modelo antes de poder votar nele.";
 
 	/// <summary>
 	/// Key: "Label.UseModelTitle"
@@ -154,7 +154,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 	/// Key: "Label.YouMustLoginToVote"
 	/// English String: "You must login to vote."
 	/// </summary>
-	public override string LabelYouMustLoginToVote => "Você precisa se conectar para votar.";
+	public override string LabelYouMustLoginToVote => "VocÃª precisa se conectar para votar.";
 
 	public VotingPanelResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -173,27 +173,27 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 
 	protected override string _GetTemplateForLabelAccountUnderDayOneMessage()
 	{
-		return "Você poderá votar em jogos e modelos do Studio mais tarde, depois de ter tido a chance de conhecer um pouco mais sobre o Roblox. Volte a esta página em alguns dias.";
+		return "VocÃª poderÃ¡ votar em jogos e modelos do Studio mais tarde, depois de ter tido a chance de conhecer um pouco mais sobre o Roblox. Volte a esta pÃ¡gina em alguns dias.";
 	}
 
 	protected override string _GetTemplateForLabelAccountUnderDayOneTitle()
 	{
-		return "Opinião de votante";
+		return "OpiniÃ£o de votante";
 	}
 
 	protected override string _GetTemplateForLabelAssetNotVoteableMessage()
 	{
-		return "Você não pode votar neste elemento no momento.";
+		return "VocÃª nÃ£o pode votar neste elemento no momento.";
 	}
 
 	protected override string _GetTemplateForLabelAssetNotVoteableTitle()
 	{
-		return "Impossível votar";
+		return "ImpossÃ­vel votar";
 	}
 
 	protected override string _GetTemplateForLabelBuyGamePassMessage()
 	{
-		return "Você precisa ter esse passe de jogo antes de poder votar nele.";
+		return "VocÃª precisa ter esse passe de jogo antes de poder votar nele.";
 	}
 
 	protected override string _GetTemplateForLabelBuyGamePassTitle()
@@ -212,12 +212,12 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"Você precisa validar o seu e-mail antes de poder votar. Você pode verificar seu e-mail na página {accountPageLink}.";
+		return $"VocÃª precisa validar o seu e-mail antes de poder votar. VocÃª pode verificar seu e-mail na pÃ¡gina {accountPageLink}.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "Você precisa validar o seu e-mail antes de poder votar. Você pode verificar seu e-mail na página {accountPageLink}.";
+		return "VocÃª precisa validar o seu e-mail antes de poder votar. VocÃª pode verificar seu e-mail na pÃ¡gina {accountPageLink}.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
@@ -227,7 +227,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 
 	protected override string _GetTemplateForLabelFloodCheckMessage()
 	{
-		return "Você está votando rápido demais. Volte mais tarde e tente novamente.";
+		return "VocÃª estÃ¡ votando rÃ¡pido demais. Volte mais tarde e tente novamente.";
 	}
 
 	protected override string _GetTemplateForLabelFloodCheckTitle()
@@ -256,7 +256,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 
 	protected override string _GetTemplateForLabelInstallPluginMessage()
 	{
-		return "Você precisa instalar este plugin antes de poder votar nele.";
+		return "VocÃª precisa instalar este plugin antes de poder votar nele.";
 	}
 
 	protected override string _GetTemplateForLabelInstallPluginTitle()
@@ -281,7 +281,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 
 	protected override string _GetTemplateForLabelPlayGameMessage()
 	{
-		return "Você precisa jogar o jogo para poder votar nele.";
+		return "VocÃª precisa jogar o jogo para poder votar nele.";
 	}
 
 	protected override string _GetTemplateForLabelPlayGameTitle()
@@ -291,7 +291,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 
 	protected override string _GetTemplateForLabelUnknownProblemMessage()
 	{
-		return "Ocorreu um erro desconhecido na votação. Tente novamente.";
+		return "Ocorreu um erro desconhecido na votaÃ§Ã£o. Tente novamente.";
 	}
 
 	protected override string _GetTemplateForLabelUnknownProblemTitle()
@@ -301,7 +301,7 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 
 	protected override string _GetTemplateForLabelUseModelMessage()
 	{
-		return "Você precisa usar este modelo antes de poder votar nele.";
+		return "VocÃª precisa usar este modelo antes de poder votar nele.";
 	}
 
 	protected override string _GetTemplateForLabelUseModelTitle()
@@ -311,6 +311,9 @@ internal class VotingPanelResources_pt_br : VotingPanelResources_en_us, IVotingP
 
 	protected override string _GetTemplateForLabelYouMustLoginToVote()
 	{
-		return "Você precisa se conectar para votar.";
+		return "VocÃª precisa se conectar para votar.";
 	}
+}
+
+
 }

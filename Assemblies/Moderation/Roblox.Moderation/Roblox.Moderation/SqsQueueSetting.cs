@@ -1,8 +1,7 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// The Sqs publish/receive access settings of a particular SQS queue
 /// uniquely identified by a key.
 /// </summary>
@@ -56,4 +55,7 @@ public class SqsQueueSetting
 	/// </summary>
 	[JsonProperty("receive_sqs_setting")]
 	public SqsAccessSetting ReceiveSqsAccessSetting { get; set; }
+}
+
+
 }

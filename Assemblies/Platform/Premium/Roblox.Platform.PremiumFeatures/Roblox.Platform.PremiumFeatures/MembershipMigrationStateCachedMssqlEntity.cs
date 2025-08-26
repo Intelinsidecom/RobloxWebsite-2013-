@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class MembershipMigrationStateCachedMssqlEntity : IMembershipMigrationStateEntity, IUpdateableEntity<int>, IEntity<int>
 {
 	public int Id { get; set; }
@@ -33,4 +32,7 @@ internal class MembershipMigrationStateCachedMssqlEntity : IMembershipMigrationS
 	{
 		(MembershipMigrationStateEntity.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
 	}
+}
+
+
 }

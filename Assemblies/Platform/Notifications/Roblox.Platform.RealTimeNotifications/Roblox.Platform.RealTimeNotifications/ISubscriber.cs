@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    interface ISubscriber<TKeyInput, TPublishMessage>
 
-namespace Roblox.RealTimeNotifications;
-
-public interface ISubscriber<TKeyInput, TPublishMessage>
 {
 	ISubscriptionResult Subscribe(TKeyInput key, Action<string, TPublishMessage> successCallback, Action<Exception> errorCallback = null);
 
@@ -15,4 +14,7 @@ public interface ISubscriber<TKeyInput, TPublishMessage>
 	string KeyToChannelName(TKeyInput input);
 
 	TKeyInput ChannelNameToKey(string channelName);
+}
+
+
 }

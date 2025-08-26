@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameLanguagesResources_en_us : TranslationResourcesBase, IGameLanguagesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameLanguagesResources_en_us : TranslationResourcesBase, IGameLanguagesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -189,4 +188,7 @@ internal class GameLanguagesResources_en_us : TranslationResourcesBase, IGameLan
 	{
 		return "All translations for this language will be deleted. This action is irreversible.";
 	}
+}
+
+
 }

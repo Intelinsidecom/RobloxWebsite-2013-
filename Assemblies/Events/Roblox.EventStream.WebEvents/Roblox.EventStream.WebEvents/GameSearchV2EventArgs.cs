@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameSearchV2EventArgs : GameSortSearchBaseEventArgs
 
-public class GameSearchV2EventArgs : GameSortSearchBaseEventArgs
 {
 	/// <summary>
 	/// The keyword for the search.
@@ -47,3 +48,12 @@ public class GameSearchV2EventArgs : GameSortSearchBaseEventArgs
 	/// </summary>
 	public string FilteredKeyword { get; set; }
 }
+
+
+}
+
+
+
+
+
+

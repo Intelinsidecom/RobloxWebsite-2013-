@@ -1,8 +1,10 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using Roblox.EventStream;
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 /// Represents an event's target environment.
 ///
 /// Some represent a specific web source, but others represent a conceptual grouping of event sources.  (e.g. Chat, Avatar)
@@ -147,3 +149,11 @@ public enum EventTarget
 	[Description("logoutFromAllSessionsProcessor")]
 	LogoutFromAllSessionsProcessor = 68
 }
+
+
+}
+
+
+
+
+

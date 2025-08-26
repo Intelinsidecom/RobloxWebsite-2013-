@@ -1,8 +1,8 @@
 using System;
 
-namespace Roblox.Platform.EventStream.WebEvents;
+namespace Roblox.EventStream.WebEvents {
+    public class WebEventArgs : BasicEventArgs
 
-public class WebEventArgs : BasicEventArgs
 {
 	/// <summary>
 	/// The pageId to tie various things on a page.
@@ -23,3 +23,12 @@ public class WebEventArgs : BasicEventArgs
 
 	public string UserAgent { get; set; }
 }
+
+
+}
+
+
+
+
+
+

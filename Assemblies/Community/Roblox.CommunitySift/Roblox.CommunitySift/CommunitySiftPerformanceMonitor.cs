@@ -88,6 +88,7 @@ internal class CommunitySiftPerformanceMonitor : ICommunitySiftPerformanceMonito
 			throw new ArgumentException("settings");
 		}
 		_Settings = settings;
+		#pragma warning disable CS0618 // 'CounterCreator' is obsolete: 'Use Roblox.Instrumentation instead of Windows Perfmon counters'
 		CounterDescriptor[] counters = new CounterDescriptor[4]
 		{
 			new CounterDescriptor(() => OutgoingRequestsPerSecond, delegate(PerformanceCounter v)
@@ -232,6 +233,7 @@ internal class CommunitySiftPerformanceMonitor : ICommunitySiftPerformanceMonito
 			}, PerformanceCounterType.RateOfCountsPerSecond32)
 		};
 		CounterCreator.InitializeMultiInstance("Roblox.CommunitySiftV7", _ApiName, counters7);
+		#pragma warning restore CS0618 // 'CounterCreator' is obsolete: 'Use Roblox.Instrumentation instead of Windows Perfmon counters'
 	}
 
 	public virtual void Increment(TimeSpan requestTime, PerformanceCounterRequestType requestType)

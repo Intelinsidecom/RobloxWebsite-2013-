@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using ProtoBuf;
+namespace Roblox.Platform.GameInstances.Client {
+    [ProtoContract]
 
-namespace Roblox.GameInstances.Client;
-
-[ProtoContract]
 public class GameIdentifier
 {
 	[ProtoMember(1)]
@@ -11,4 +10,7 @@ public class GameIdentifier
 
 	[ProtoMember(2)]
 	public long PlaceId { get; set; }
+}
+
+
 }

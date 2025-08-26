@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ITranslationLanguageSwitchResources : ITranslationResources
 
-public interface ITranslationLanguageSwitchResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Description.ChangeDefault"
@@ -197,4 +197,7 @@ public interface ITranslationLanguageSwitchResources : ITranslationResources
 	/// English String: "Source ({languageName})"
 	/// </summary>
 	string LabelSourceWithLanguageName(string languageName);
+}
+
+
 }

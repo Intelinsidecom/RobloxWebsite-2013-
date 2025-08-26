@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IRecommendationsResources : ITranslationResources
 
-public interface IRecommendationsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Buy"
@@ -80,4 +80,7 @@ public interface IRecommendationsResources : ITranslationResources
 	/// English String: "By {linkStart}{creator}{linkEnd}"
 	/// </summary>
 	string LabelByCreatorLink(string linkStart, string creator, string linkEnd);
+}
+
+
 }

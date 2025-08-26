@@ -1,8 +1,11 @@
-namespace Roblox.TextFilter;
+namespace Roblox.Platform.TextFilter {
+    enum TextAudience
 
-internal enum TextAudience
 {
 	AuthorUnder13,
 	Author13AndOverTo13AndOver,
 	Author13AndOverToUnder13
+}
+
+
 }

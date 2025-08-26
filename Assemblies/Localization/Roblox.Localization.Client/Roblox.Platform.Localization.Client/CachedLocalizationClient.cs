@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+namespace Roblox.Platform.Localization.Clientpublic {
+    class CachedLocalizationClient : ILocalizationClient
 
-namespace Roblox.Localization.Client;
-
-public class CachedLocalizationClient : ILocalizationClient
 {
 	private ILocalizationClient _LocalizationClient;
 
@@ -268,4 +267,7 @@ public class CachedLocalizationClient : ILocalizationClient
 		_LocalizationClientCache.SaveDeviceReportedLocaleByCode(rawLocaleCode, getDeviceReportedLocaleByCodeResponse.DeviceReportedLocale);
 		return getDeviceReportedLocaleByCodeResponse;
 	}
+}
+
+
 }

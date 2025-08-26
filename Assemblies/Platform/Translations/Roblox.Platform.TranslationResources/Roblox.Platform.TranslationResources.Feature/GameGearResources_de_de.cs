@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameGearResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,13 +10,13 @@ internal class GameGearResources_de_de : GameGearResources_en_us, IGameGearResou
 	/// Key: "Heading.GearForThisGame"
 	/// English String: "Gear"
 	/// </summary>
-	public override string HeadingGearForThisGame => "Ausrüstung";
+	public override string HeadingGearForThisGame => "AusrÃ¼stung";
 
 	/// <summary>
 	/// Key: "Label.AddGear"
 	/// English String: "Add Gear"
 	/// </summary>
-	public override string LabelAddGear => "Ausrüstung hinzufügen";
+	public override string LabelAddGear => "AusrÃ¼stung hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.Buy"
@@ -85,12 +85,12 @@ internal class GameGearResources_de_de : GameGearResources_en_us, IGameGearResou
 
 	protected override string _GetTemplateForHeadingGearForThisGame()
 	{
-		return "Ausrüstung";
+		return "AusrÃ¼stung";
 	}
 
 	protected override string _GetTemplateForLabelAddGear()
 	{
-		return "Ausrüstung hinzufügen";
+		return "AusrÃ¼stung hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
@@ -114,12 +114,12 @@ internal class GameGearResources_de_de : GameGearResources_en_us, IGameGearResou
 	/// </summary>
 	public override string LabelItemAddedToGame(string item)
 	{
-		return $"Du hast „{item}“ zu deinem Spiel hinzugefügt.";
+		return $"Du hast â€ž{item}â€œ zu deinem Spiel hinzugefÃ¼gt.";
 	}
 
 	protected override string _GetTemplateForLabelItemAddedToGame()
 	{
-		return "Du hast „{item}“ zu deinem Spiel hinzugefügt.";
+		return "Du hast â€ž{item}â€œ zu deinem Spiel hinzugefÃ¼gt.";
 	}
 
 	/// <summary>
@@ -128,12 +128,12 @@ internal class GameGearResources_de_de : GameGearResources_en_us, IGameGearResou
 	/// </summary>
 	public override string LabelItemRemovedFromGame(string item)
 	{
-		return $"Du hast „{item}“ aus deinem Spiel entfernt.";
+		return $"Du hast â€ž{item}â€œ aus deinem Spiel entfernt.";
 	}
 
 	protected override string _GetTemplateForLabelItemRemovedFromGame()
 	{
-		return "Du hast „{item}“ aus deinem Spiel entfernt.";
+		return "Du hast â€ž{item}â€œ aus deinem Spiel entfernt.";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
@@ -170,4 +170,7 @@ internal class GameGearResources_de_de : GameGearResources_en_us, IGameGearResou
 	{
 		return "Erfolg!";
 	}
+}
+
+
 }

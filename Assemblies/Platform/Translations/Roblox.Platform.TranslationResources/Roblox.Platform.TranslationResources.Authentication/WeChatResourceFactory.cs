@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class WeChatResourceFactory
 
-internal static class WeChatResourceFactory
 {
 	public const string FullNamespace = "Authentication.WeChat";
 
@@ -27,4 +27,7 @@ internal static class WeChatResourceFactory
 			_ => new WeChatResources_en_us(state), 
 		};
 	}
+}
+
+
 }

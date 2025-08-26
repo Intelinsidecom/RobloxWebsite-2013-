@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FileUploadComponentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class FileUploadComponentResources_pt_br : FileUploadComponentResources
 	/// Key: "Label.DragFile"
 	/// English String: "Drag a file here"
 	/// </summary>
-	public override string LabelDragFile => "Arraste um arquivo para cá";
+	public override string LabelDragFile => "Arraste um arquivo para cÃ¡";
 
 	/// <summary>
 	/// Key: "Label.DragImage"
 	/// English String: "Drag an image here"
 	/// </summary>
-	public override string LabelDragImage => "Arraste uma imagem para cá";
+	public override string LabelDragImage => "Arraste uma imagem para cÃ¡";
 
 	/// <summary>
 	/// Key: "Label.DragImageOr"
 	/// English String: "Drag an image here or select a file to upload"
 	/// </summary>
-	public override string LabelDragImageOr => "Arraste uma imagem para cá ou selecione um arquivo para fazer upload";
+	public override string LabelDragImageOr => "Arraste uma imagem para cÃ¡ ou selecione um arquivo para fazer upload";
 
 	/// <summary>
 	/// Key: "Label.NoFileChosen"
@@ -70,17 +70,17 @@ internal class FileUploadComponentResources_pt_br : FileUploadComponentResources
 
 	protected override string _GetTemplateForLabelDragFile()
 	{
-		return "Arraste um arquivo para cá";
+		return "Arraste um arquivo para cÃ¡";
 	}
 
 	protected override string _GetTemplateForLabelDragImage()
 	{
-		return "Arraste uma imagem para cá";
+		return "Arraste uma imagem para cÃ¡";
 	}
 
 	protected override string _GetTemplateForLabelDragImageOr()
 	{
-		return "Arraste uma imagem para cá ou selecione um arquivo para fazer upload";
+		return "Arraste uma imagem para cÃ¡ ou selecione um arquivo para fazer upload";
 	}
 
 	protected override string _GetTemplateForLabelNoFileChosen()
@@ -133,11 +133,14 @@ internal class FileUploadComponentResources_pt_br : FileUploadComponentResources
 	/// </summary>
 	public override string MessageInvalidFile(string fileTypes)
 	{
-		return $"Tipo de arquivo inválido. Deve ser um arquivo {fileTypes}.";
+		return $"Tipo de arquivo invÃ¡lido. Deve ser um arquivo {fileTypes}.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidFile()
 	{
-		return "Tipo de arquivo inválido. Deve ser um arquivo {fileTypes}.";
+		return "Tipo de arquivo invÃ¡lido. Deve ser um arquivo {fileTypes}.";
 	}
+}
+
+
 }

@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.ContentRatingspublic {
+    class AssetContentRating : IRobloxEntity<long, AssetContentRatingDAL>, ICacheableObject<long>, ICacheableObject
 
-namespace Roblox.ContentRatings;
-
-public class AssetContentRating : IRobloxEntity<long, AssetContentRatingDAL>, ICacheableObject<long>, ICacheableObject
 {
 	private AssetContentRatingDAL _EntityDAL;
 
@@ -122,4 +121,7 @@ public class AssetContentRating : IRobloxEntity<long, AssetContentRatingDAL>, IC
 	{
 		yield break;
 	}
+}
+
+
 }

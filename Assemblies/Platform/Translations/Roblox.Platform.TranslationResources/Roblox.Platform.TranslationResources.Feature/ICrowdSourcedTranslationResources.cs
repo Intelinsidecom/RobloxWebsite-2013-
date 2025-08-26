@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ICrowdSourcedTranslationResources : ITranslationResources
 
-public interface ICrowdSourcedTranslationResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.AddTranslationEntry"
@@ -317,4 +317,7 @@ public interface ICrowdSourcedTranslationResources : ITranslationResources
 	/// English String: "{remainingCharacters} Characters"
 	/// </summary>
 	string LabelRemainingCharacters(string remainingCharacters);
+}
+
+
 }

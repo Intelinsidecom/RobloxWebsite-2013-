@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class SupportedLanguagesResources_en_us : TranslationResourcesBase, ISupportedLanguagesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class SupportedLanguagesResources_en_us : TranslationResourcesBase, ISupportedLanguagesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -538,4 +537,7 @@ internal class SupportedLanguagesResources_en_us : TranslationResourcesBase, ISu
 	{
 		return "Error: Could not change setting. Please try again.";
 	}
+}
+
+
 }

@@ -5,92 +5,92 @@ using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
 
-namespace Roblox.Users;
-
-public class GenderType : IRobloxEntity<byte, GenderTypeDAL>, ICacheableObject<byte>, ICacheableObject
+namespace Roblox.Platform.Users
 {
-	private GenderTypeDAL _EntityDAL;
+    class GenderType : IRobloxEntity<byte, GenderTypeDAL>, ICacheableObject<byte>, ICacheableObject
+    {
+        private GenderTypeDAL _EntityDAL;
 
-	private const string UnknownValue = "Unknown";
+        private const string UnknownValue = "Unknown";
 
-	public static readonly byte UnknownID;
+        public static readonly byte UnknownID;
 
-	private const string MaleValue = "Male";
+        private const string MaleValue = "Male";
 
-	public static readonly byte MaleID;
+        public static readonly byte MaleID;
 
-	private const string FemaleValue = "Female";
+        private const string FemaleValue = "Female";
 
-	public static readonly byte FemaleID;
+        public static readonly byte FemaleID;
 
-	public static CacheInfo EntityCacheInfo;
+        public static CacheInfo EntityCacheInfo;
 
-	public byte ID => _EntityDAL.ID;
+        public byte ID => _EntityDAL.ID;
 
-	public string Value
-	{
-		get
-		{
-			return _EntityDAL.Value;
-		}
-		set
-		{
-			_EntityDAL.Value = value;
-		}
-	}
+        public string Value
+        {
+            get
+            {
+                return _EntityDAL.Value;
+            }
+            set
+            {
+                _EntityDAL.Value = value;
+            }
+        }
 
-	public DateTime Created
-	{
-		get
-		{
-			return _EntityDAL.Created;
-		}
-		set
-		{
-			_EntityDAL.Created = value;
-		}
-	}
+        public DateTime Created
+        {
+            get
+            {
+                return _EntityDAL.Created;
+            }
+            set
+            {
+                _EntityDAL.Created = value;
+            }
+        }
 
-	public DateTime Updated
-	{
-		get
-		{
-			return _EntityDAL.Updated;
-		}
-		set
-		{
-			_EntityDAL.Updated = value;
-		}
-	}
+        public DateTime Updated
+        {
+            get
+            {
+                return _EntityDAL.Updated;
+            }
+            set
+            {
+                _EntityDAL.Updated = value;
+            }
+        }
 
-	public CacheInfo CacheInfo => EntityCacheInfo;
+        public CacheInfo CacheInfo => EntityCacheInfo;
 
-	public GenderType()
-	{
-		_EntityDAL = new GenderTypeDAL();
-	}
+        public GenderType()
+        {
+            _EntityDAL = new GenderTypeDAL();
+        }
 
-	static GenderType()
-	{
-		EntityCacheInfo = new CacheInfo(new CacheabilitySettings(collectionsAreCacheable: true, countsAreCacheable: true, entityIsCacheable: true, idLookupsAreCacheable: true), "Roblox.GenderType", isNullCacheable: true);
-		UnknownID = Get("Unknown").ID;
-		MaleID = Get("Male").ID;
-		FemaleID = Get("Female").ID;
-	}
+        static GenderType()
+        {
+            EntityCacheInfo = new CacheInfo(new CacheabilitySettings(collectionsAreCacheable: true, countsAreCacheable: true, entityIsCacheable: true, idLookupsAreCacheable: true), "Roblox.GenderType", isNullCacheable: true);
+            UnknownID = Get("Unknown").ID;
+            MaleID = Get("Male").ID;
+            FemaleID = Get("Female").ID;
+        }
 
-	public void Save()
-	{
-		EntityHelper.SaveEntity(this, delegate
-		{
-			_EntityDAL.Created = DateTime.Now;
-			_EntityDAL.Updated = Created;
-			_EntityDAL.Insert();
-		}, delegate
-		{
-			_EntityDAL.Updated = DateTime.Now;
-			_EntityDAL.Update();
-		});
-	}
+        public void Save()
+        {
+            EntityHelper.SaveEntity(this, delegate
+            {
+                _EntityDAL.Created = DateTime.Now;
+                _EntityDAL.Updated = Created;
+                _EntityDAL.Insert();
+            }, delegate
+            {
+                _EntityDAL.Updated = DateTime.Now;
+                _EntityDAL.Update();
+            });
+        }
 
 	public static GenderType Get(byte id)
 	{
@@ -116,4 +116,7 @@ public class GenderType : IRobloxEntity<byte, GenderTypeDAL>, ICacheableObject<b
 	{
 		yield break;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Marketing;
+﻿namespace Roblox.Marketing {
+    /// <summary>
 
-/// <summary>
 /// An interface for a BrowserTracker factory.
 /// </summary>
 public interface IBrowserTrackerFactory
@@ -23,4 +23,7 @@ public interface IBrowserTrackerFactory
 	/// An instance of <see cref="T:Roblox.Platform.Marketing.IBrowserTracker" />.
 	/// </returns>
 	IBrowserTracker Get(long id);
+}
+
+
 }

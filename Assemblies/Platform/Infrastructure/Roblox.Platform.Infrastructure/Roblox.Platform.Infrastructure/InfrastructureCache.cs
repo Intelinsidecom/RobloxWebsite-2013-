@@ -4,7 +4,8 @@ using System.Linq;
 using System.Runtime.Caching;
 using Newtonsoft.Json;
 using Roblox.Redis;
-using Roblox.Redis.Lru;
+using Roblox.Instrumentation;
+using Roblox.Redis.Lru.Properties;
 using StackExchange.Redis;
 
 namespace Roblox.Platform.Infrastructure;
@@ -13,7 +14,7 @@ internal static class InfrastructureCache
 {
 	private static readonly MemoryCache _Cache = new MemoryCache("InfrastructureCache");
 
-	private static readonly IRedisClient _RedisClient = RedisLruClient.GetInstance();
+	private static readonly IRedisClient _RedisClient = CreateRedisClient();
 
 	internal static T FetchItem<T>(string key, TimeSpan cacheDuration, Func<T> getter)
 	{
@@ -28,6 +29,19 @@ internal static class InfrastructureCache
 			}
 		}
 		return (T)result;
+	}
+
+	internal static IRedisClient CreateRedisClient()
+	{
+		// Use shared LRU endpoints CSV setting to build a dedicated Redis client for Infrastructure.
+		string endpointsCsv = Settings.Default.SharedLruCacheRedisEndpointsCsv;
+		string[] endpoints = string.IsNullOrWhiteSpace(endpointsCsv)
+			? Array.Empty<string>()
+			: endpointsCsv.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+		// Disable subscriptions like the legacy LRU client did.
+		var clientOptions = new RedisClientOptions(null, null, null, disableSubscriptions: true);
+		var client = new RedisClient(StaticCounterRegistry.Instance, endpoints, "Roblox.Platform.Infrastructure", null, clientOptions);
+		return client;
 	}
 
 	internal static string[] GetStringArrayFromRedis(string redisKey)

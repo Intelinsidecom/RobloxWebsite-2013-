@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class StudioToolboxSearchEventArgs : WebEventArgs
 
-public class StudioToolboxSearchEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The keyword for the search.
@@ -32,3 +33,12 @@ public class StudioToolboxSearchEventArgs : WebEventArgs
 	/// </summary>
 	public string PageNumber { get; set; }
 }
+
+
+}
+
+
+
+
+
+

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SourceLanguageResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -46,7 +46,7 @@ internal class SourceLanguageResources_pt_br : SourceLanguageResources_en_us, IS
 	/// The label for not specified in source language dropdown
 	/// English String: "Not Specified"
 	/// </summary>
-	public override string LabelNotSpecified => "Não especificado";
+	public override string LabelNotSpecified => "NÃ£o especificado";
 
 	/// <summary>
 	/// Key: "Label.SourceLanguage"
@@ -109,7 +109,7 @@ internal class SourceLanguageResources_pt_br : SourceLanguageResources_en_us, IS
 
 	protected override string _GetTemplateForLabelNotSpecified()
 	{
-		return "Não especificado";
+		return "NÃ£o especificado";
 	}
 
 	protected override string _GetTemplateForLabelSourceLanguage()
@@ -121,4 +121,7 @@ internal class SourceLanguageResources_pt_br : SourceLanguageResources_en_us, IS
 	{
 		return "Erro: ocorreu um erro. Tente novamente mais tarde.";
 	}
+}
+
+
 }

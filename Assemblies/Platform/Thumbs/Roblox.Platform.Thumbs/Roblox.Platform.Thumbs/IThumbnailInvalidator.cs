@@ -1,8 +1,11 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbspublic {
+    interface IThumbnailInvalidator
 
-public interface IThumbnailInvalidator
 {
 	ThumbnailDomainFactories DomainFactories { get; }
 
 	void InvalidateThumbnailsByAssetHashIds(params long[] assetHashIds);
+}
+
+
 }

@@ -1,8 +1,7 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
+namespace Roblox.Localization.Accountspublic {
+    interface IAccountLocaleBuilder
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public interface IAccountLocaleBuilder
 {
 	/// <summary>
 	/// Fires when a user's supported locale is changed.
@@ -36,4 +35,7 @@ public interface IAccountLocaleBuilder
 	///   <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale" /> with give account id and supported locale.
 	/// </returns>
 	IAccountLocale CreateAccountLocale(long accountId, IDeviceReportedLocaleIdentifier deviceReportedLocale, ISupportedLocale supportedLocale, IAccountLocalesChangeAgent changeAgent);
+}
+
+
 }

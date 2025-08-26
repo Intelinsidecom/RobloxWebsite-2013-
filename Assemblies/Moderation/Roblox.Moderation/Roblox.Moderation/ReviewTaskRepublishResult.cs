@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderationinternal {
+    class ReviewTaskRepublishResult<TTask> : IReviewTaskRepublishResult<TTask> where TTask : IReviewTask
 
-namespace Roblox.Platform.Moderation;
-
-internal class ReviewTaskRepublishResult<TTask> : IReviewTaskRepublishResult<TTask> where TTask : IReviewTask
 {
 	public bool Success { get; }
 
@@ -18,4 +17,7 @@ internal class ReviewTaskRepublishResult<TTask> : IReviewTaskRepublishResult<TTa
 		TasksRepublishedForDesiredLocale = tasksRepublishedForDesiredLocale ?? throw new ArgumentNullException("tasksRepublishedForDesiredLocale");
 		AllTasksRepublishedByLocaleIdentifier = allTasksRepublishedByLocaleIdentifier ?? throw new ArgumentNullException("allTasksRepublishedByLocaleIdentifier");
 	}
+}
+
+
 }

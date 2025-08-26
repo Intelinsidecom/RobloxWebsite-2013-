@@ -1,8 +1,7 @@
 using System.Collections.Generic;
+namespace Roblox.Platform.TextFilter {
+    class TextFilterForRecipientResult : ITextFilterRuleResult, ITextFilterResultModerationDetails
 
-namespace Roblox.TextFilter;
-
-internal class TextFilterForRecipientResult : ITextFilterRuleResult, ITextFilterResultModerationDetails
 {
 	public string FilteredText { get; }
 
@@ -16,4 +15,7 @@ internal class TextFilterForRecipientResult : ITextFilterRuleResult, ITextFilter
 		FilteredText = text;
 		ModerationLevel = moderationLevel;
 	}
+}
+
+
 }

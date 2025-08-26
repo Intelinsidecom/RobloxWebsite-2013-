@@ -1,0 +1,683 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "prometheus-net/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Prometheus.NetStandard.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Prometheus.NetStandard.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Configuration",
+          "System.Drawing",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net461/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Permissions/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Configuration",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.Security",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "WindowsBase",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Roblox.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.EventLog": "1.0.0",
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Configuration.dll": {}
+        }
+      },
+      "Roblox.EventLog/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        }
+      },
+      "Roblox.Http/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Http.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Http.dll": {}
+        }
+      },
+      "Roblox.Http.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.Http": "1.0.0",
+          "Roblox.Pipeline": "1.0.0",
+          "Roblox.Sentinels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Http.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Http.Client.dll": {}
+        }
+      },
+      "Roblox.Http.Client.Monitoring/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.Http": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Pipeline": "1.0.0",
+          "Roblox.Sentinels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Http.Client.Monitoring.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Http.Client.Monitoring.dll": {}
+        }
+      },
+      "Roblox.Http.ServiceClient/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.Http": "1.0.0",
+          "Roblox.Http.Client": "1.0.0",
+          "Roblox.Http.Client.Monitoring": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Pipeline": "1.0.0",
+          "Roblox.RequestContext": "1.0.0",
+          "Roblox.Sentinels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Http.ServiceClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Http.ServiceClient.dll": {}
+        }
+      },
+      "Roblox.Instrumentation/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "prometheus-net": "4.2.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Instrumentation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Instrumentation.dll": {}
+        }
+      },
+      "Roblox.Pipeline/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Pipeline.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Pipeline.dll": {}
+        }
+      },
+      "Roblox.RequestContext/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.RequestContext.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.RequestContext.dll": {}
+        }
+      },
+      "Roblox.Sentinels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Sentinels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Sentinels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "prometheus-net/4.2.0": {
+      "sha512": "1u9aEPHnp3qrY9KsJRTZ1FmaBiOxEzEeEuHzmTyEnudd0KKB5KSG9enkEIeyaptFVu/B43pLwLwS1FqF/fXdCg==",
+      "type": "package",
+      "path": "prometheus-net/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/prometheus-net-logo.png",
+        "lib/net461/Prometheus.NetStandard.dll",
+        "lib/net461/Prometheus.NetStandard.pdb",
+        "lib/net461/Prometheus.NetStandard.xml",
+        "lib/netcoreapp2.1/Prometheus.NetCore.deps.json",
+        "lib/netcoreapp2.1/Prometheus.NetCore.dll",
+        "lib/netcoreapp2.1/Prometheus.NetCore.pdb",
+        "lib/netcoreapp2.1/Prometheus.NetCore.xml",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.deps.json",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.dll",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.pdb",
+        "lib/netcoreapp2.1/Prometheus.NetStandard.xml",
+        "lib/netstandard2.0/Prometheus.NetStandard.deps.json",
+        "lib/netstandard2.0/Prometheus.NetStandard.dll",
+        "lib/netstandard2.0/Prometheus.NetStandard.pdb",
+        "lib/netstandard2.0/Prometheus.NetStandard.xml",
+        "prometheus-net.4.2.0.nupkg.sha512",
+        "prometheus-net.nuspec"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/4.7.0": {
+      "sha512": "/anOTeSZCNNI2zDilogWrZ8pNqCmYbzGNexUnNhjW8k0sHqEZ2nHJBp147jBV3hGYswu5lINpNg1vxR7bnqvVA==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/net461/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "ref/net461/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.xml",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.AccessControl/4.7.0": {
+      "sha512": "JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "type": "package",
+      "path": "system.security.accesscontrol/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.xml",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.4.7.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Permissions/4.7.0": {
+      "sha512": "dkOV6YYVBnYRa15/yv004eCGRBVADXw8qRbbNiCn/XpdJSUXkkUeIvdvFHkvnko4CdKMqG8yRHC4ox83LSlMsQ==",
+      "type": "package",
+      "path": "system.security.permissions/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/net461/System.Security.Permissions.xml",
+        "lib/netcoreapp3.0/System.Security.Permissions.dll",
+        "lib/netcoreapp3.0/System.Security.Permissions.xml",
+        "lib/netstandard2.0/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.xml",
+        "ref/net461/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.xml",
+        "ref/netcoreapp3.0/System.Security.Permissions.dll",
+        "ref/netcoreapp3.0/System.Security.Permissions.xml",
+        "ref/netstandard2.0/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.xml",
+        "system.security.permissions.4.7.0.nupkg.sha512",
+        "system.security.permissions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "sha512": "ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "type": "package",
+      "path": "system.security.principal.windows/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.4.7.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Roblox.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../../../Configuration/Roblox.Configuration/Roblox.Configuration.csproj",
+      "msbuildProject": "../../../Configuration/Roblox.Configuration/Roblox.Configuration.csproj"
+    },
+    "Roblox.EventLog/1.0.0": {
+      "type": "project",
+      "path": "../../../Events/Roblox.EventLog/Roblox.EventLog.csproj",
+      "msbuildProject": "../../../Events/Roblox.EventLog/Roblox.EventLog.csproj"
+    },
+    "Roblox.Http/1.0.0": {
+      "type": "project",
+      "path": "../../../Http/Roblox.Http/Roblox.Http.csproj",
+      "msbuildProject": "../../../Http/Roblox.Http/Roblox.Http.csproj"
+    },
+    "Roblox.Http.Client/1.0.0": {
+      "type": "project",
+      "path": "../../../Http/Roblox.Http.Client/Roblox.Http.Client.csproj",
+      "msbuildProject": "../../../Http/Roblox.Http.Client/Roblox.Http.Client.csproj"
+    },
+    "Roblox.Http.Client.Monitoring/1.0.0": {
+      "type": "project",
+      "path": "../../../Http/Roblox.Http.Client.Monitoring/Roblox.Http.Client.Monitoring.csproj",
+      "msbuildProject": "../../../Http/Roblox.Http.Client.Monitoring/Roblox.Http.Client.Monitoring.csproj"
+    },
+    "Roblox.Http.ServiceClient/1.0.0": {
+      "type": "project",
+      "path": "../../../Http/Roblox.Http.ServiceClient/Roblox.Http.ServiceClient.csproj",
+      "msbuildProject": "../../../Http/Roblox.Http.ServiceClient/Roblox.Http.ServiceClient.csproj"
+    },
+    "Roblox.Instrumentation/1.0.0": {
+      "type": "project",
+      "path": "../../../Instrumentation/Roblox.Instrumentation/Roblox.Instrumentation.csproj",
+      "msbuildProject": "../../../Instrumentation/Roblox.Instrumentation/Roblox.Instrumentation.csproj"
+    },
+    "Roblox.Pipeline/1.0.0": {
+      "type": "project",
+      "path": "../../../Roblox/Roblox.Pipeline/Roblox.Pipeline.csproj",
+      "msbuildProject": "../../../Roblox/Roblox.Pipeline/Roblox.Pipeline.csproj"
+    },
+    "Roblox.RequestContext/1.0.0": {
+      "type": "project",
+      "path": "../../../RequestContext/Roblox.RequestContext/Roblox.RequestContext.csproj",
+      "msbuildProject": "../../../RequestContext/Roblox.RequestContext/Roblox.RequestContext.csproj"
+    },
+    "Roblox.Sentinels/1.0.0": {
+      "type": "project",
+      "path": "../../../Sentinels/Roblox.Sentinels/Roblox.Sentinels.csproj",
+      "msbuildProject": "../../../Sentinels/Roblox.Sentinels/Roblox.Sentinels.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Newtonsoft.Json >= 13.0.3",
+      "Roblox.Configuration >= 1.0.0",
+      "Roblox.Http >= 1.0.0",
+      "Roblox.Http.Client >= 1.0.0",
+      "Roblox.Http.ServiceClient >= 1.0.0",
+      "Roblox.Instrumentation >= 1.0.0",
+      "Roblox.RequestContext >= 1.0.0",
+      "Roblox.Sentinels >= 1.0.0",
+      "System.Configuration.ConfigurationManager >= 4.7.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Intel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj",
+      "projectName": "Roblox.Platform.TextFilter.Client",
+      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj",
+      "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter.Client\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http.Client\\Roblox.Http.Client.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http.Client\\Roblox.Http.Client.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http.ServiceClient\\Roblox.Http.ServiceClient.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http.ServiceClient\\Roblox.Http.ServiceClient.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http\\Roblox.Http.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http\\Roblox.Http.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[4.7.0, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

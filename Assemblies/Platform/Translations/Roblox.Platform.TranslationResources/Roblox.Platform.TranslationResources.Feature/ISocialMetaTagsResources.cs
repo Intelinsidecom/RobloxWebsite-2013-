@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ISocialMetaTagsResources : ITranslationResources
 
-public interface ISocialMetaTagsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Description.DevelopLanding"
@@ -47,21 +47,21 @@ public interface ISocialMetaTagsResources : ITranslationResources
 	/// <summary>
 	/// Key: "Description.FavoritesPage"
 	/// social meta tag
-	/// English String: "Visit {userName}’s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
+	/// English String: "Visit {userName}â€™s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
 	/// </summary>
 	string DescriptionFavoritesPage(string userName);
 
 	/// <summary>
 	/// Key: "Description.GamePage"
 	/// The game description which shows on social media, when shared
-	/// English String: "Check out {gameName}. It’s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
+	/// English String: "Check out {gameName}. Itâ€™s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
 	/// </summary>
 	string DescriptionGamePage(string gameName, string gameDescription);
 
 	/// <summary>
 	/// Key: "Description.InventoryPage"
 	/// social meta tag
-	/// English String: "Visit {userName1}’s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}’s collection of hats, shirts, gear, and more."
+	/// English String: "Visit {userName1}â€™s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}â€™s collection of hats, shirts, gear, and more."
 	/// </summary>
 	string DescriptionInventoryPage(string userName1, string userName2);
 
@@ -78,4 +78,7 @@ public interface ISocialMetaTagsResources : ITranslationResources
 	/// English String: "{userName}'s Profile"
 	/// </summary>
 	string LabelUserProfile(string userName);
+}
+
+
 }

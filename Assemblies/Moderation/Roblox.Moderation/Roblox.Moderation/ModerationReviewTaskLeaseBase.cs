@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Moderationpublic {
+    abstract class ModerationReviewTaskLeaseBase<TEntityFactory, TEntity> : IReviewTaskLease_Internal, IReviewTaskLease where TEntityFactory : IReviewTaskLeaseEntityFactory<TEntity> where TEntity : IReviewTaskLeaseEntity
 
-namespace Roblox.Platform.Moderation;
-
-public abstract class ModerationReviewTaskLeaseBase<TEntityFactory, TEntity> : IReviewTaskLease_Internal, IReviewTaskLease where TEntityFactory : IReviewTaskLeaseEntityFactory<TEntity> where TEntity : IReviewTaskLeaseEntity
 {
 	private readonly TEntityFactory _EntityFactory;
 
@@ -41,4 +40,7 @@ public abstract class ModerationReviewTaskLeaseBase<TEntityFactory, TEntity> : I
 		}
 		entity.Delete();
 	}
+}
+
+
 }

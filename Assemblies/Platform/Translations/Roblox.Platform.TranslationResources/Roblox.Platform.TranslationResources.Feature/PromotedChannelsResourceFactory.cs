@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class PromotedChannelsResourceFactory
 
-internal static class PromotedChannelsResourceFactory
 {
 	public const string FullNamespace = "Feature.PromotedChannels";
 
@@ -21,4 +21,7 @@ internal static class PromotedChannelsResourceFactory
 			_ => new PromotedChannelsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

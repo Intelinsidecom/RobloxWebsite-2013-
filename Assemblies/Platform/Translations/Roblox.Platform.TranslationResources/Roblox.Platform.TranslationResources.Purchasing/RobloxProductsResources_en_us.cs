@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+    class RobloxProductsResources_en_us : TranslationResourcesBase, IRobloxProductsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Purchasing;
-
-internal class RobloxProductsResources_en_us : TranslationResourcesBase, IRobloxProductsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -69,4 +68,7 @@ internal class RobloxProductsResources_en_us : TranslationResourcesBase, IRoblox
 	{
 		return "Robux purchases are temporarily disabled. Please try again later.";
 	}
+}
+
+
 }

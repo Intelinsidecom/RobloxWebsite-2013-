@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderation {
+    /// <summary>
 
-/// <summary>
 /// An interface for <see cref="T:Roblox.Platform.Moderation.IReviewTaskLease" /> that is only exposed internally.
 /// </summary>
 internal interface IReviewTaskLease_Internal : IReviewTaskLease
@@ -10,4 +10,7 @@ internal interface IReviewTaskLease_Internal : IReviewTaskLease
 	/// </summary>
 	/// <exception><inheritdoc cref="M:Roblox.Entities.IEntity`1.Delete" /></exception>
 	void Delete();
+}
+
+
 }

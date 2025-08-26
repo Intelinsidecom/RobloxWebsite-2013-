@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IVisitGameResources : ITranslationResources
 
-public interface IVisitGameResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Retry"
@@ -339,7 +339,7 @@ public interface IVisitGameResources : ITranslationResources
 	/// <summary>
 	/// Key: "Response.Dialog.InstallingMessageWithLink"
 	/// Note: For this translation, please move the linkStart and linkEnd variables with the translation for download now.
-	/// English String: "The Roblox installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}"
+	/// English String: "The Roblox installer should download shortly. If it doesnâ€™t, start the {linkStart}download now.{linkEnd}"
 	/// </summary>
 	string ResponseDialogInstallingMessageWithLink(string linkStart, string linkEnd);
 
@@ -566,4 +566,7 @@ public interface IVisitGameResources : ITranslationResources
 	/// English String: "Check {startBold}Remember my choice{endBold} and click {appLaunchLink} in the dialog box above to join games faster in the future!"
 	/// </summary>
 	string ResponseRememberMyChoiceAppLaunch(string startBold, string endBold, string appLaunchLink);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class AlertsAndOptionsResources_th_th : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sBuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string LabelsBuyRobux => "ซ\u0e37\u0e49อ Robux";
+	public override string LabelsBuyRobux => "à¸‹\u0e37\u0e49à¸­ Robux";
 
 	/// <summary>
 	/// Key: "Label.sHelp"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelsHelp => "ช\u0e48วยเหล\u0e37อ";
+	public override string LabelsHelp => "à¸Š\u0e48à¸§à¸¢à¹€à¸«à¸¥\u0e37à¸­";
 
 	/// <summary>
 	/// Key: "Label.sLogout"
 	/// English String: "Logout"
 	/// </summary>
-	public override string LabelsLogout => "ออกจากระบบ";
+	public override string LabelsLogout => "à¸­à¸­à¸à¸ˆà¸²à¸à¸£à¸°à¸šà¸š";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -34,7 +34,7 @@ internal class AlertsAndOptionsResources_th_th : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelsSettings => "การต\u0e31\u0e49งค\u0e48า";
+	public override string LabelsSettings => "à¸à¸²à¸£à¸•\u0e31\u0e49à¸‡à¸„\u0e48à¸²";
 
 	public AlertsAndOptionsResources_th_th(TranslationResourceState state)
 		: base(state)
@@ -43,17 +43,17 @@ internal class AlertsAndOptionsResources_th_th : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsBuyRobux()
 	{
-		return "ซ\u0e37\u0e49อ Robux";
+		return "à¸‹\u0e37\u0e49à¸­ Robux";
 	}
 
 	protected override string _GetTemplateForLabelsHelp()
 	{
-		return "ช\u0e48วยเหล\u0e37อ";
+		return "à¸Š\u0e48à¸§à¸¢à¹€à¸«à¸¥\u0e37à¸­";
 	}
 
 	protected override string _GetTemplateForLabelsLogout()
 	{
-		return "ออกจากระบบ";
+		return "à¸­à¸­à¸à¸ˆà¸²à¸à¸£à¸°à¸šà¸š";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -63,7 +63,7 @@ internal class AlertsAndOptionsResources_th_th : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue} Robux"
+	/// English String: "{robuxValue}Â Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{
@@ -77,6 +77,9 @@ internal class AlertsAndOptionsResources_th_th : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsSettings()
 	{
-		return "การต\u0e31\u0e49งค\u0e48า";
+		return "à¸à¸²à¸£à¸•\u0e31\u0e49à¸‡à¸„\u0e48à¸²";
 	}
+}
+
+
 }

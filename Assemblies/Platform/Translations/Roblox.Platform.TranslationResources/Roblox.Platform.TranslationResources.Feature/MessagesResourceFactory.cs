@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class MessagesResourceFactory
 
-internal static class MessagesResourceFactory
 {
 	public const string FullNamespace = "Feature.Messages";
 
@@ -21,4 +21,7 @@ internal static class MessagesResourceFactory
 			_ => new MessagesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

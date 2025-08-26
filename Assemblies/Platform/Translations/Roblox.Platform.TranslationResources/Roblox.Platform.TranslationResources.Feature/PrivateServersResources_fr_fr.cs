@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PrivateServersResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	/// Key: "Action.CreateVipServer"
 	/// English String: "Create VIP Server"
 	/// </summary>
-	public override string ActionCreateVipServer => "Créer un serveur\u00a0VIP";
+	public override string ActionCreateVipServer => "CrÃ©er un serveur\u00a0VIP";
 
 	/// <summary>
 	/// Key: "Action.Refresh"
@@ -55,13 +55,13 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	/// No VIP Server Instances Found.
 	/// English String: "No VIP Server Instances Found."
 	/// </summary>
-	public override string LabelNoVipServers => "Aucune instance de serveur\u00a0VIP trouvée.";
+	public override string LabelNoVipServers => "Aucune instance de serveur\u00a0VIP trouvÃ©e.";
 
 	/// <summary>
 	/// Key: "Label.PlayWithOthers"
 	/// English String: "Play this game with friends and other people you invite."
 	/// </summary>
-	public override string LabelPlayWithOthers => "Jouez avec vos amis ou vos invités.";
+	public override string LabelPlayWithOthers => "Jouez avec vos amis ou vos invitÃ©s.";
 
 	/// <summary>
 	/// Key: "Label.Renew"
@@ -73,7 +73,7 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	/// Key: "Label.RenewPrivateServer"
 	/// English String: "Renew Private Server"
 	/// </summary>
-	public override string LabelRenewPrivateServer => "Renouveler le serveur privé";
+	public override string LabelRenewPrivateServer => "Renouveler le serveur privÃ©";
 
 	/// <summary>
 	/// Key: "Label.ServerName"
@@ -99,13 +99,13 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	/// Error when user wants to join a VIP server when the game is marked private
 	/// English String: "You cannot join this VIP server because the game is private."
 	/// </summary>
-	public override string LabelVipServerJoinGamePrivateError => "Vous ne pouvez pas rejoindre ce serveur VIP car ce jeu est privé.";
+	public override string LabelVipServerJoinGamePrivateError => "Vous ne pouvez pas rejoindre ce serveur VIP car ce jeu est privÃ©.";
 
 	/// <summary>
 	/// Key: "Label.VipServersAbout"
 	/// English String: "VIP servers let you play this game privately with friends, your clan, or people you invite!"
 	/// </summary>
-	public override string LabelVipServersAbout => "Les serveurs\u00a0VIP te permettent de jouer à ce jeu en privé avec tes amis, ton clan ou tes invités\u00a0!";
+	public override string LabelVipServersAbout => "Les serveurs\u00a0VIP te permettent de jouer Ã  ce jeu en privÃ© avec tes amis, ton clan ou tes invitÃ©s\u00a0!";
 
 	/// <summary>
 	/// Key: "Message.InvalidLink"
@@ -121,7 +121,7 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 
 	protected override string _GetTemplateForActionCreateVipServer()
 	{
-		return "Créer un serveur\u00a0VIP";
+		return "CrÃ©er un serveur\u00a0VIP";
 	}
 
 	protected override string _GetTemplateForActionRefresh()
@@ -150,12 +150,12 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelConfirmEnableFuturePayments(string placeName, string creatorName)
 	{
-		return $"Veux-tu vraiment autoriser les paiements futurs pour ta version\u00a0VIP privée de l'emplacement {placeName} par {creatorName}\u00a0?";
+		return $"Veux-tu vraiment autoriser les paiements futurs pour ta version\u00a0VIP privÃ©e de l'emplacement {placeName} par {creatorName}\u00a0?";
 	}
 
 	protected override string _GetTemplateForLabelConfirmEnableFuturePayments()
 	{
-		return "Veux-tu vraiment autoriser les paiements futurs pour ta version\u00a0VIP privée de l'emplacement {placeName} par {creatorName}\u00a0?";
+		return "Veux-tu vraiment autoriser les paiements futurs pour ta version\u00a0VIP privÃ©e de l'emplacement {placeName} par {creatorName}\u00a0?";
 	}
 
 	/// <summary>
@@ -164,12 +164,12 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelCreateVipServerFor(string target)
 	{
-		return $"Créer un serveur\u00a0VIP pour {target}\u00a0?";
+		return $"CrÃ©er un serveur\u00a0VIP pour {target}\u00a0?";
 	}
 
 	protected override string _GetTemplateForLabelCreateVipServerFor()
 	{
-		return "Créer un serveur\u00a0VIP pour {target}\u00a0?";
+		return "CrÃ©er un serveur\u00a0VIP pour {target}\u00a0?";
 	}
 
 	/// <summary>
@@ -178,12 +178,12 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelFooterText(string robuxIcon)
 	{
-		return $"Ton solde après cette transaction sera de {robuxIcon}. Il s'agit d'une fonctionnalité par abonnement\u00a0; elle sera renouvelée automatiquement tous les mois jusqu'à ce que tu annules l'abonnement.";
+		return $"Ton solde aprÃ¨s cette transaction sera de {robuxIcon}. Il s'agit d'une fonctionnalitÃ© par abonnement\u00a0; elle sera renouvelÃ©e automatiquement tous les mois jusqu'Ã  ce que tu annules l'abonnement.";
 	}
 
 	protected override string _GetTemplateForLabelFooterText()
 	{
-		return "Ton solde après cette transaction sera de {robuxIcon}. Il s'agit d'une fonctionnalité par abonnement\u00a0; elle sera renouvelée automatiquement tous les mois jusqu'à ce que tu annules l'abonnement.";
+		return "Ton solde aprÃ¨s cette transaction sera de {robuxIcon}. Il s'agit d'une fonctionnalitÃ© par abonnement\u00a0; elle sera renouvelÃ©e automatiquement tous les mois jusqu'Ã  ce que tu annules l'abonnement.";
 	}
 
 	protected override string _GetTemplateForLabelGameJoinPrivateErrorTitle()
@@ -198,12 +198,12 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 
 	protected override string _GetTemplateForLabelNoVipServers()
 	{
-		return "Aucune instance de serveur\u00a0VIP trouvée.";
+		return "Aucune instance de serveur\u00a0VIP trouvÃ©e.";
 	}
 
 	protected override string _GetTemplateForLabelPlayWithOthers()
 	{
-		return "Jouez avec vos amis ou vos invités.";
+		return "Jouez avec vos amis ou vos invitÃ©s.";
 	}
 
 	protected override string _GetTemplateForLabelRenew()
@@ -213,7 +213,7 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 
 	protected override string _GetTemplateForLabelRenewPrivateServer()
 	{
-		return "Renouveler le serveur privé";
+		return "Renouveler le serveur privÃ©";
 	}
 
 	/// <summary>
@@ -246,12 +246,12 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelStartRenewingPrice(string price)
 	{
-		return $"Ce serveur\u00a0VIP sera renouvelé tous les mois au prix de {price} jusqu'à annulation.";
+		return $"Ce serveur\u00a0VIP sera renouvelÃ© tous les mois au prix de {price} jusqu'Ã  annulation.";
 	}
 
 	protected override string _GetTemplateForLabelStartRenewingPrice()
 	{
-		return "Ce serveur\u00a0VIP sera renouvelé tous les mois au prix de {price} jusqu'à annulation.";
+		return "Ce serveur\u00a0VIP sera renouvelÃ© tous les mois au prix de {price} jusqu'Ã  annulation.";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerGameJoinErrorAcknowledgement()
@@ -261,12 +261,12 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 
 	protected override string _GetTemplateForLabelVipServerJoinGamePrivateError()
 	{
-		return "Vous ne pouvez pas rejoindre ce serveur VIP car ce jeu est privé.";
+		return "Vous ne pouvez pas rejoindre ce serveur VIP car ce jeu est privÃ©.";
 	}
 
 	protected override string _GetTemplateForLabelVipServersAbout()
 	{
-		return "Les serveurs\u00a0VIP te permettent de jouer à ce jeu en privé avec tes amis, ton clan ou tes invités\u00a0!";
+		return "Les serveurs\u00a0VIP te permettent de jouer Ã  ce jeu en privÃ© avec tes amis, ton clan ou tes invitÃ©s\u00a0!";
 	}
 
 	/// <summary>
@@ -287,4 +287,7 @@ internal class PrivateServersResources_fr_fr : PrivateServersResources_en_us, IP
 	{
 		return "Ce lien de serveur\u00a0VIP n'est plus valide.";
 	}
+}
+
+
 }

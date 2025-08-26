@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TwoStepVerificationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,147 +10,147 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "취소";
+	public override string ActionCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.Resend"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string ActionResend => "코드 재전송";
+	public override string ActionResend => "ì½”ë“œ ìž¬ì „ì†¡";
 
 	/// <summary>
 	/// Key: "Action.StartOver"
 	/// link text to restart verification
 	/// English String: "Start Over"
 	/// </summary>
-	public override string ActionStartOver => "시작하기";
+	public override string ActionStartOver => "ì‹œìž‘í•˜ê¸°";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// submit button text
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "입력";
+	public override string ActionSubmit => "ìž…ë ¥";
 
 	/// <summary>
 	/// Key: "Action.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionVerify => "확인";
+	public override string ActionVerify => "í™•ì¸";
 
 	/// <summary>
 	/// Key: "Label.Code"
 	/// verification code for 2 factor authentication
 	/// English String: "Code"
 	/// </summary>
-	public override string LabelCode => "코드";
+	public override string LabelCode => "ì½”ë“œ";
 
 	/// <summary>
 	/// Key: "Label.DidNotReceive"
 	/// English String: "Didn't receive the code?"
 	/// </summary>
-	public override string LabelDidNotReceive => "코드를 받지 못하셨나요?";
+	public override string LabelDidNotReceive => "ì½”ë“œë¥¼ ë°›ì§€ ëª»í•˜ì…¨ë‚˜ìš”?";
 
 	/// <summary>
 	/// Key: "Label.EnterCode"
 	/// English String: "Enter Code (6-digit)"
 	/// </summary>
-	public override string LabelEnterCode => "코드 입력 (6자리)";
+	public override string LabelEnterCode => "ì½”ë“œ ìž…ë ¥ (6ìžë¦¬)";
 
 	/// <summary>
 	/// Key: "Label.EnterEmailCode"
 	/// English String: "Enter the code we just sent you via email"
 	/// </summary>
-	public override string LabelEnterEmailCode => "방금 이메일로 전송된 코드를 입력하세요.";
+	public override string LabelEnterEmailCode => "ë°©ê¸ˆ ì´ë©”ì¼ë¡œ ì „ì†¡ëœ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.EnterTextCode"
 	/// English String: "Enter the code we just sent you via text message"
 	/// </summary>
-	public override string LabelEnterTextCode => "방금 문자 메시지로 전송된 코드를 입력하세요.";
+	public override string LabelEnterTextCode => "ë°©ê¸ˆ ë¬¸ìž ë©”ì‹œì§€ë¡œ ì „ì†¡ëœ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.EnterTwoStepVerificationCode"
 	/// Enter your two step verification code.
 	/// English String: "Enter your two step verification code."
 	/// </summary>
-	public override string LabelEnterTwoStepVerificationCode => "2단계 인증 코드를 입력하세요.";
+	public override string LabelEnterTwoStepVerificationCode => "2ë‹¨ê³„ ì¸ì¦ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.FacebookPasswordWarning"
 	/// If you have been signing in with Facebook, you must set a password.
 	/// English String: "If you have been signing in with Facebook, you must set a password."
 	/// </summary>
-	public override string LabelFacebookPasswordWarning => "Facebook으로 로그인한 경우, 비밀번호를 설정해야 합니다.";
+	public override string LabelFacebookPasswordWarning => "Facebookìœ¼ë¡œ ë¡œê·¸ì¸í•œ ê²½ìš°, ë¹„ë°€ë²ˆí˜¸ë¥¼ ì„¤ì •í•´ì•¼ í•©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
 	/// Learn More link text
 	/// English String: "Learn More"
 	/// </summary>
-	public override string LabelLearnMore => "더 알아보기";
+	public override string LabelLearnMore => "ë” ì•Œì•„ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.NewCode"
 	/// verification code resent, label changes to new code
 	/// English String: "New Code"
 	/// </summary>
-	public override string LabelNewCode => "새 코드";
+	public override string LabelNewCode => "ìƒˆ ì½”ë“œ";
 
 	/// <summary>
 	/// Key: "Label.RobloxSupport"
 	/// English String: "Roblox Support"
 	/// </summary>
-	public override string LabelRobloxSupport => "Roblox 고객지원";
+	public override string LabelRobloxSupport => "Roblox ê³ ê°ì§€ì›";
 
 	/// <summary>
 	/// Key: "Label.TrustThisDevice"
 	/// English String: "Trust this device for 30 days"
 	/// </summary>
-	public override string LabelTrustThisDevice => "30일 동안 본 기기 신뢰";
+	public override string LabelTrustThisDevice => "30ì¼ ë™ì•ˆ ë³¸ ê¸°ê¸° ì‹ ë¢°";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerification"
 	/// English String: "2-Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "2단계 인증";
+	public override string LabelTwoStepVerification => "2ë‹¨ê³„ ì¸ì¦";
 
 	/// <summary>
 	/// Key: "Response.CodeSent"
 	/// English String: "Code Sent"
 	/// </summary>
-	public override string ResponseCodeSent => "코드 전송 완료";
+	public override string ResponseCodeSent => "ì½”ë“œ ì „ì†¡ ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Response.FeatureNotAvailable"
 	/// English String: "Feature not available. Please contact support."
 	/// </summary>
-	public override string ResponseFeatureNotAvailable => "사용할 수 없는 기능.\u00a0고객지원으로 문의하세요.";
+	public override string ResponseFeatureNotAvailable => "ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ê¸°ëŠ¥.\u00a0ê³ ê°ì§€ì›ìœ¼ë¡œ ë¬¸ì˜í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.InvalidCode"
 	/// English String: "Invalid code."
 	/// </summary>
-	public override string ResponseInvalidCode => "유효하지 않은 코드";
+	public override string ResponseInvalidCode => "ìœ íš¨í•˜ì§€ ì•Šì€ ì½”ë“œ";
 
 	/// <summary>
 	/// Key: "Response.SystemErrorReturnToLogin"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string ResponseSystemErrorReturnToLogin => "시스템 오류.\u00a0로그인 화면으로 돌아가세요.";
+	public override string ResponseSystemErrorReturnToLogin => "ì‹œìŠ¤í…œ ì˜¤ë¥˜.\u00a0ë¡œê·¸ì¸ í™”ë©´ìœ¼ë¡œ ëŒì•„ê°€ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseTooManyAttempts => "시도 가능 횟수를 초과했습니다.\u00a0나중에 다시 시도하세요.";
+	public override string ResponseTooManyAttempts => "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤.\u00a0ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.TooManyCharacters"
 	/// error message
 	/// English String: "Too many characters"
 	/// </summary>
-	public override string ResponseTooManyCharacters => "입력 가능 글자 수를 초과했습니다";
+	public override string ResponseTooManyCharacters => "ìž…ë ¥ ê°€ëŠ¥ ê¸€ìž ìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤";
 
 	public TwoStepVerificationResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -159,27 +159,27 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionResend()
 	{
-		return "코드 재전송";
+		return "ì½”ë“œ ìž¬ì „ì†¡";
 	}
 
 	protected override string _GetTemplateForActionStartOver()
 	{
-		return "시작하기";
+		return "ì‹œìž‘í•˜ê¸°";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "입력";
+		return "ìž…ë ¥";
 	}
 
 	protected override string _GetTemplateForActionVerify()
 	{
-		return "확인";
+		return "í™•ì¸";
 	}
 
 	/// <summary>
@@ -189,12 +189,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"{accountName} 님 안녕하세요,{lineBreak}{lineBreak}귀하의 Roblox 계정 에 대한 2단계 인증이 활성화되었습니다. 다음 번에 새 기기에서 로그인할 때 Roblox에서 이메일을 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox";
+		return $"{accountName} ë‹˜ ì•ˆë…•í•˜ì„¸ìš”,{lineBreak}{lineBreak}ê·€í•˜ì˜ Roblox ê³„ì • ì— ëŒ€í•œ 2ë‹¨ê³„ ì¸ì¦ì´ í™œì„±í™”ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ìŒ ë²ˆì— ìƒˆ ê¸°ê¸°ì—ì„œ ë¡œê·¸ì¸í•  ë•Œ Robloxì—ì„œ ì´ë©”ì¼ì„ í†µí•´ ë³´ë‚´ëŠ” 6ìžë¦¬ ë³´ì•ˆ ì½”ë“œë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyOver13()
 	{
-		return "{accountName} 님 안녕하세요,{lineBreak}{lineBreak}귀하의 Roblox 계정 에 대한 2단계 인증이 활성화되었습니다. 다음 번에 새 기기에서 로그인할 때 Roblox에서 이메일을 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox";
+		return "{accountName} ë‹˜ ì•ˆë…•í•˜ì„¸ìš”,{lineBreak}{lineBreak}ê·€í•˜ì˜ Roblox ê³„ì • ì— ëŒ€í•œ 2ë‹¨ê³„ ì¸ì¦ì´ í™œì„±í™”ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ìŒ ë²ˆì— ìƒˆ ê¸°ê¸°ì—ì„œ ë¡œê·¸ì¸í•  ë•Œ Robloxì—ì„œ ì´ë©”ì¼ì„ í†µí•´ ë³´ë‚´ëŠ” 6ìžë¦¬ ë³´ì•ˆ ì½”ë“œë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -204,12 +204,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"안녕하세요,{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증이 활성화되었습니다. 다음 번에 새 기기에서 로그인할 때 Roblox에서 이메일을 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox";
+		return $"ì•ˆë…•í•˜ì„¸ìš”,{lineBreak}{lineBreak}ìžë…€ì˜ Roblox ê³„ì • {accountName}ì— ëŒ€í•œ 2ë‹¨ê³„ ì¸ì¦ì´ í™œì„±í™”ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ìŒ ë²ˆì— ìƒˆ ê¸°ê¸°ì—ì„œ ë¡œê·¸ì¸í•  ë•Œ Robloxì—ì„œ ì´ë©”ì¼ì„ í†µí•´ ë³´ë‚´ëŠ” 6ìžë¦¬ ë³´ì•ˆ ì½”ë“œë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyUnder13()
 	{
-		return "안녕하세요,{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증이 활성화되었습니다. 다음 번에 새 기기에서 로그인할 때 Roblox에서 이메일을 통해 보내는 6자리 보안 코드를 입력해야 합니다.{lineBreak}{lineBreak}Roblox";
+		return "ì•ˆë…•í•˜ì„¸ìš”,{lineBreak}{lineBreak}ìžë…€ì˜ Roblox ê³„ì • {accountName}ì— ëŒ€í•œ 2ë‹¨ê³„ ì¸ì¦ì´ í™œì„±í™”ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ìŒ ë²ˆì— ìƒˆ ê¸°ê¸°ì—ì„œ ë¡œê·¸ì¸í•  ë•Œ Robloxì—ì„œ ì´ë©”ì¼ì„ í†µí•´ ë³´ë‚´ëŠ” 6ìžë¦¬ ë³´ì•ˆ ì½”ë“œë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -219,12 +219,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailSubject(string accountName)
 	{
-		return $"Roblox 계정 {accountName}의 2단계 인증 활성화 완료 ";
+		return $"Roblox ê³„ì • {accountName}ì˜ 2ë‹¨ê³„ ì¸ì¦ í™œì„±í™” ì™„ë£Œ ";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailSubject()
 	{
-		return "Roblox 계정 {accountName}의 2단계 인증 활성화 완료 ";
+		return "Roblox ê³„ì • {accountName}ì˜ 2ë‹¨ê³„ ì¸ì¦ í™œì„±í™” ì™„ë£Œ ";
 	}
 
 	/// <summary>
@@ -234,12 +234,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"{accountName} 님 안녕하세요,{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증을 비활성화했습니다. 로그인 시 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox";
+		return $"{accountName} ë‹˜ ì•ˆë…•í•˜ì„¸ìš”,{lineBreak}{lineBreak}íšŒì›ë‹˜ì˜ Roblox ê³„ì •ì— ëŒ€í•œ 2ë‹¨ê³„ ì¸ì¦ì„ ë¹„í™œì„±í™”í–ˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸ ì‹œ ë³´ì•ˆ ì½”ë“œê°€ ë” ì´ìƒ í•„ìš”í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyOver13()
 	{
-		return "{accountName} 님 안녕하세요,{lineBreak}{lineBreak}회원님의 Roblox 계정에 대한 2단계 인증을 비활성화했습니다. 로그인 시 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox";
+		return "{accountName} ë‹˜ ì•ˆë…•í•˜ì„¸ìš”,{lineBreak}{lineBreak}íšŒì›ë‹˜ì˜ Roblox ê³„ì •ì— ëŒ€í•œ 2ë‹¨ê³„ ì¸ì¦ì„ ë¹„í™œì„±í™”í–ˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸ ì‹œ ë³´ì•ˆ ì½”ë“œê°€ ë” ì´ìƒ í•„ìš”í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -249,12 +249,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"안녕하세요,{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증을 비활성화했습니다. 로그인 시 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox";
+		return $"ì•ˆë…•í•˜ì„¸ìš”,{lineBreak}{lineBreak}ìžë…€ì˜ Roblox ê³„ì • {accountName}ì— ëŒ€í•œ 2ë‹¨ê³„ ì¸ì¦ì„ ë¹„í™œì„±í™”í–ˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸ ì‹œ ë³´ì•ˆ ì½”ë“œê°€ ë” ì´ìƒ í•„ìš”í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyUnder13()
 	{
-		return "안녕하세요,{lineBreak}{lineBreak}자녀의 Roblox 계정 {accountName}에 대한 2단계 인증을 비활성화했습니다. 로그인 시 보안 코드가 더 이상 필요하지 않습니다.{lineBreak}{lineBreak}Roblox";
+		return "ì•ˆë…•í•˜ì„¸ìš”,{lineBreak}{lineBreak}ìžë…€ì˜ Roblox ê³„ì • {accountName}ì— ëŒ€í•œ 2ë‹¨ê³„ ì¸ì¦ì„ ë¹„í™œì„±í™”í–ˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸ ì‹œ ë³´ì•ˆ ì½”ë“œê°€ ë” ì´ìƒ í•„ìš”í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -264,12 +264,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailSubject(string accountName)
 	{
-		return $"Roblox 계정 {accountName}의 2단계 인증 비활성화 완료: ";
+		return $"Roblox ê³„ì • {accountName}ì˜ 2ë‹¨ê³„ ì¸ì¦ ë¹„í™œì„±í™” ì™„ë£Œ: ";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailSubject()
 	{
-		return "Roblox 계정 {accountName}의 2단계 인증 비활성화 완료: ";
+		return "Roblox ê³„ì • {accountName}ì˜ 2ë‹¨ê³„ ì¸ì¦ ë¹„í™œì„±í™” ì™„ë£Œ: ";
 	}
 
 	/// <summary>
@@ -279,12 +279,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo1(string spanStartTagWithBold, string username, string region, string country, string ipAddress, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{username} 님이 {region}, {country}({ipAddress})에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{username} ë‹˜ì´ {region}, {country}({ipAddress})ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo1()
 	{
-		return "{spanStartTagWithBold}{username} 님이 {region}, {country}({ipAddress})에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{username} ë‹˜ì´ {region}, {country}({ipAddress})ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -294,12 +294,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo2(string spanStartTagWithBold, string username, string country, string ipAddress, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{username} 님이 {country}({ipAddress})에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}\t";
+		return $"{spanStartTagWithBold}{username} ë‹˜ì´ {country}({ipAddress})ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo2()
 	{
-		return "{spanStartTagWithBold}{username} 님이 {country}({ipAddress})에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}\t";
+		return "{spanStartTagWithBold}{username} ë‹˜ì´ {country}({ipAddress})ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	/// <summary>
@@ -309,12 +309,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo3(string spanStartTagWithBold, string username, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}(Roblox 내부의) {username} 님이 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}\t";
+		return $"{spanStartTagWithBold}(Roblox ë‚´ë¶€ì˜) {username} ë‹˜ì´ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo3()
 	{
-		return "{spanStartTagWithBold}(Roblox 내부의) {username} 님이 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}\t";
+		return "{spanStartTagWithBold}(Roblox ë‚´ë¶€ì˜) {username} ë‹˜ì´ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	/// <summary>
@@ -324,12 +324,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo4(string spanStartTagWithBold, string username, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{username} 님이 {country}에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{username} ë‹˜ì´ {country}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo4()
 	{
-		return "{spanStartTagWithBold}{username} 님이 {country}에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{username} ë‹˜ì´ {country}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -339,12 +339,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo5(string spanStartTagWithBold, string username, string region, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{username} 님이 {country} {region}에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{username} ë‹˜ì´ {country} {region}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo5()
 	{
-		return "{spanStartTagWithBold}{username} 님이 {country} {region}에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{username} ë‹˜ì´ {country} {region}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -354,12 +354,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo6(string spanStartTagWithBold, string username, string city, string region, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{username} 님이 {country} {region} {city}에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{username} ë‹˜ì´ {country} {region} {city}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo6()
 	{
-		return "{spanStartTagWithBold}{username} 님이 {country} {region} {city}에서 로그인을 요청했어요.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{username} ë‹˜ì´ {country} {region} {city}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -369,12 +369,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlBody(string geoLocationInformation, string spanStartTagWithBold, string accountName, string lineBreak, string code, string spanEndTag, string aTagStartWithHref, string ChangePasswordLink, string hrefEnd, string aTagEnd, string TwoStepVerificationArticleLink, string AccountSafetyArticleLink, string SupportLink)
 	{
-		return $"{geoLocationInformation}{spanStartTagWithBold}{accountName}의 로그인 코드: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}로그인을 완료하려면 본 코드를 2단계 인증 화면에 입력하세요. 코드는 15분 후 만료됩니다.{lineBreak}{lineBreak}본 이메일은 새로운 브라우저 또는 기기에서 회원님의 계정으로 Roblox에 로그인하려 했기 때문에 보내드립니다. Roblox에 로그인하려 한 적이 없으셨다면, 다른 누군가가 회원님의 계정에 접속하려 했을 수도 있습니다. 로그인 요청을 한 적이 없는 경우 비밀번호를 바꾸길 강력하게 권고드립니다.{lineBreak}{lineBreak}리소스:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}비밀번호 변경{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2단계 인증 더 알아보기{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}계정 보호 방법{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}일반적인 Roblox 고객지원{aTagEnd} {lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 팀";
+		return $"{geoLocationInformation}{spanStartTagWithBold}{accountName}ì˜ ë¡œê·¸ì¸ ì½”ë“œ: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}ë¡œê·¸ì¸ì„ ì™„ë£Œí•˜ë ¤ë©´ ë³¸ ì½”ë“œë¥¼ 2ë‹¨ê³„ ì¸ì¦ í™”ë©´ì— ìž…ë ¥í•˜ì„¸ìš”. ì½”ë“œëŠ” 15ë¶„ í›„ ë§Œë£Œë©ë‹ˆë‹¤.{lineBreak}{lineBreak}ë³¸ ì´ë©”ì¼ì€ ìƒˆë¡œìš´ ë¸Œë¼ìš°ì € ë˜ëŠ” ê¸°ê¸°ì—ì„œ íšŒì›ë‹˜ì˜ ê³„ì •ìœ¼ë¡œ Robloxì— ë¡œê·¸ì¸í•˜ë ¤ í–ˆê¸° ë•Œë¬¸ì— ë³´ë‚´ë“œë¦½ë‹ˆë‹¤. Robloxì— ë¡œê·¸ì¸í•˜ë ¤ í•œ ì ì´ ì—†ìœ¼ì…¨ë‹¤ë©´, ë‹¤ë¥¸ ëˆ„êµ°ê°€ê°€ íšŒì›ë‹˜ì˜ ê³„ì •ì— ì ‘ì†í•˜ë ¤ í–ˆì„ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸ ìš”ì²­ì„ í•œ ì ì´ ì—†ëŠ” ê²½ìš° ë¹„ë°€ë²ˆí˜¸ë¥¼ ë°”ê¾¸ê¸¸ ê°•ë ¥í•˜ê²Œ ê¶Œê³ ë“œë¦½ë‹ˆë‹¤.{lineBreak}{lineBreak}ë¦¬ì†ŒìŠ¤:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}ë¹„ë°€ë²ˆí˜¸ ë³€ê²½{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2ë‹¨ê³„ ì¸ì¦ ë” ì•Œì•„ë³´ê¸°{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}ê³„ì • ë³´í˜¸ ë°©ë²•{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}ì¼ë°˜ì ì¸ Roblox ê³ ê°ì§€ì›{aTagEnd} {lineBreak}{lineBreak}ê°ì‚¬í•©ë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox íŒ€";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlBody()
 	{
-		return "{geoLocationInformation}{spanStartTagWithBold}{accountName}의 로그인 코드: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}로그인을 완료하려면 본 코드를 2단계 인증 화면에 입력하세요. 코드는 15분 후 만료됩니다.{lineBreak}{lineBreak}본 이메일은 새로운 브라우저 또는 기기에서 회원님의 계정으로 Roblox에 로그인하려 했기 때문에 보내드립니다. Roblox에 로그인하려 한 적이 없으셨다면, 다른 누군가가 회원님의 계정에 접속하려 했을 수도 있습니다. 로그인 요청을 한 적이 없는 경우 비밀번호를 바꾸길 강력하게 권고드립니다.{lineBreak}{lineBreak}리소스:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}비밀번호 변경{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2단계 인증 더 알아보기{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}계정 보호 방법{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}일반적인 Roblox 고객지원{aTagEnd} {lineBreak}{lineBreak}감사합니다.{lineBreak}{lineBreak}Roblox 팀";
+		return "{geoLocationInformation}{spanStartTagWithBold}{accountName}ì˜ ë¡œê·¸ì¸ ì½”ë“œ: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}ë¡œê·¸ì¸ì„ ì™„ë£Œí•˜ë ¤ë©´ ë³¸ ì½”ë“œë¥¼ 2ë‹¨ê³„ ì¸ì¦ í™”ë©´ì— ìž…ë ¥í•˜ì„¸ìš”. ì½”ë“œëŠ” 15ë¶„ í›„ ë§Œë£Œë©ë‹ˆë‹¤.{lineBreak}{lineBreak}ë³¸ ì´ë©”ì¼ì€ ìƒˆë¡œìš´ ë¸Œë¼ìš°ì € ë˜ëŠ” ê¸°ê¸°ì—ì„œ íšŒì›ë‹˜ì˜ ê³„ì •ìœ¼ë¡œ Robloxì— ë¡œê·¸ì¸í•˜ë ¤ í–ˆê¸° ë•Œë¬¸ì— ë³´ë‚´ë“œë¦½ë‹ˆë‹¤. Robloxì— ë¡œê·¸ì¸í•˜ë ¤ í•œ ì ì´ ì—†ìœ¼ì…¨ë‹¤ë©´, ë‹¤ë¥¸ ëˆ„êµ°ê°€ê°€ íšŒì›ë‹˜ì˜ ê³„ì •ì— ì ‘ì†í•˜ë ¤ í–ˆì„ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸ ìš”ì²­ì„ í•œ ì ì´ ì—†ëŠ” ê²½ìš° ë¹„ë°€ë²ˆí˜¸ë¥¼ ë°”ê¾¸ê¸¸ ê°•ë ¥í•˜ê²Œ ê¶Œê³ ë“œë¦½ë‹ˆë‹¤.{lineBreak}{lineBreak}ë¦¬ì†ŒìŠ¤:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}ë¹„ë°€ë²ˆí˜¸ ë³€ê²½{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2ë‹¨ê³„ ì¸ì¦ ë” ì•Œì•„ë³´ê¸°{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}ê³„ì • ë³´í˜¸ ë°©ë²•{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}ì¼ë°˜ì ì¸ Roblox ê³ ê°ì§€ì›{aTagEnd} {lineBreak}{lineBreak}ê°ì‚¬í•©ë‹ˆë‹¤.{lineBreak}{lineBreak}Roblox íŒ€";
 	}
 
 	/// <summary>
@@ -384,12 +384,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainBody(string geoLocationInformation, string accountName, string lineBreak, string code, string accountInfoPageLink, string twoStepVerificationHelpArticleLink, string keepAccountSafeArticleLink, string supportPageLink)
 	{
-		return $"{geoLocationInformation}{accountName}의 로그인 코드: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}로그인을 완료하려면 본 코드를 2단계 인증 화면에 입력하세요. 코드는 15분 후 만료됩니다. {lineBreak}{lineBreak}본 이메일은 새로운 브라우저 또는 기기에서 회원님의 계정으로 Roblox에 로그인하려 했기 때문에 보내드립니다. Roblox에 로그인하려 한 적이 없으셨다면, 다른 누군가가 회원님의 계정에 접속하려 했을 수도 있습니다. 로그인 요청을 한 적이 없는 경우 비밀번호를 바꾸길 강력하게 권고드립니다. {lineBreak}{lineBreak}리소스: {lineBreak}비밀번호 변경 [{accountInfoPageLink}] {lineBreak}2단계 인증 더 알아보기 [{twoStepVerificationHelpArticleLink}]{lineBreak}계정 보호 방법 [{keepAccountSafeArticleLink}] {lineBreak}일반적인 Roblox 고객지원 [{supportPageLink}] {lineBreak}{lineBreak}감사합니다. {lineBreak}{lineBreak}Roblox 팀";
+		return $"{geoLocationInformation}{accountName}ì˜ ë¡œê·¸ì¸ ì½”ë“œ: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}ë¡œê·¸ì¸ì„ ì™„ë£Œí•˜ë ¤ë©´ ë³¸ ì½”ë“œë¥¼ 2ë‹¨ê³„ ì¸ì¦ í™”ë©´ì— ìž…ë ¥í•˜ì„¸ìš”. ì½”ë“œëŠ” 15ë¶„ í›„ ë§Œë£Œë©ë‹ˆë‹¤. {lineBreak}{lineBreak}ë³¸ ì´ë©”ì¼ì€ ìƒˆë¡œìš´ ë¸Œë¼ìš°ì € ë˜ëŠ” ê¸°ê¸°ì—ì„œ íšŒì›ë‹˜ì˜ ê³„ì •ìœ¼ë¡œ Robloxì— ë¡œê·¸ì¸í•˜ë ¤ í–ˆê¸° ë•Œë¬¸ì— ë³´ë‚´ë“œë¦½ë‹ˆë‹¤. Robloxì— ë¡œê·¸ì¸í•˜ë ¤ í•œ ì ì´ ì—†ìœ¼ì…¨ë‹¤ë©´, ë‹¤ë¥¸ ëˆ„êµ°ê°€ê°€ íšŒì›ë‹˜ì˜ ê³„ì •ì— ì ‘ì†í•˜ë ¤ í–ˆì„ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸ ìš”ì²­ì„ í•œ ì ì´ ì—†ëŠ” ê²½ìš° ë¹„ë°€ë²ˆí˜¸ë¥¼ ë°”ê¾¸ê¸¸ ê°•ë ¥í•˜ê²Œ ê¶Œê³ ë“œë¦½ë‹ˆë‹¤. {lineBreak}{lineBreak}ë¦¬ì†ŒìŠ¤: {lineBreak}ë¹„ë°€ë²ˆí˜¸ ë³€ê²½ [{accountInfoPageLink}] {lineBreak}2ë‹¨ê³„ ì¸ì¦ ë” ì•Œì•„ë³´ê¸° [{twoStepVerificationHelpArticleLink}]{lineBreak}ê³„ì • ë³´í˜¸ ë°©ë²• [{keepAccountSafeArticleLink}] {lineBreak}ì¼ë°˜ì ì¸ Roblox ê³ ê°ì§€ì› [{supportPageLink}] {lineBreak}{lineBreak}ê°ì‚¬í•©ë‹ˆë‹¤. {lineBreak}{lineBreak}Roblox íŒ€";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainBody()
 	{
-		return "{geoLocationInformation}{accountName}의 로그인 코드: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}로그인을 완료하려면 본 코드를 2단계 인증 화면에 입력하세요. 코드는 15분 후 만료됩니다. {lineBreak}{lineBreak}본 이메일은 새로운 브라우저 또는 기기에서 회원님의 계정으로 Roblox에 로그인하려 했기 때문에 보내드립니다. Roblox에 로그인하려 한 적이 없으셨다면, 다른 누군가가 회원님의 계정에 접속하려 했을 수도 있습니다. 로그인 요청을 한 적이 없는 경우 비밀번호를 바꾸길 강력하게 권고드립니다. {lineBreak}{lineBreak}리소스: {lineBreak}비밀번호 변경 [{accountInfoPageLink}] {lineBreak}2단계 인증 더 알아보기 [{twoStepVerificationHelpArticleLink}]{lineBreak}계정 보호 방법 [{keepAccountSafeArticleLink}] {lineBreak}일반적인 Roblox 고객지원 [{supportPageLink}] {lineBreak}{lineBreak}감사합니다. {lineBreak}{lineBreak}Roblox 팀";
+		return "{geoLocationInformation}{accountName}ì˜ ë¡œê·¸ì¸ ì½”ë“œ: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}ë¡œê·¸ì¸ì„ ì™„ë£Œí•˜ë ¤ë©´ ë³¸ ì½”ë“œë¥¼ 2ë‹¨ê³„ ì¸ì¦ í™”ë©´ì— ìž…ë ¥í•˜ì„¸ìš”. ì½”ë“œëŠ” 15ë¶„ í›„ ë§Œë£Œë©ë‹ˆë‹¤. {lineBreak}{lineBreak}ë³¸ ì´ë©”ì¼ì€ ìƒˆë¡œìš´ ë¸Œë¼ìš°ì € ë˜ëŠ” ê¸°ê¸°ì—ì„œ íšŒì›ë‹˜ì˜ ê³„ì •ìœ¼ë¡œ Robloxì— ë¡œê·¸ì¸í•˜ë ¤ í–ˆê¸° ë•Œë¬¸ì— ë³´ë‚´ë“œë¦½ë‹ˆë‹¤. Robloxì— ë¡œê·¸ì¸í•˜ë ¤ í•œ ì ì´ ì—†ìœ¼ì…¨ë‹¤ë©´, ë‹¤ë¥¸ ëˆ„êµ°ê°€ê°€ íšŒì›ë‹˜ì˜ ê³„ì •ì— ì ‘ì†í•˜ë ¤ í–ˆì„ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸ ìš”ì²­ì„ í•œ ì ì´ ì—†ëŠ” ê²½ìš° ë¹„ë°€ë²ˆí˜¸ë¥¼ ë°”ê¾¸ê¸¸ ê°•ë ¥í•˜ê²Œ ê¶Œê³ ë“œë¦½ë‹ˆë‹¤. {lineBreak}{lineBreak}ë¦¬ì†ŒìŠ¤: {lineBreak}ë¹„ë°€ë²ˆí˜¸ ë³€ê²½ [{accountInfoPageLink}] {lineBreak}2ë‹¨ê³„ ì¸ì¦ ë” ì•Œì•„ë³´ê¸° [{twoStepVerificationHelpArticleLink}]{lineBreak}ê³„ì • ë³´í˜¸ ë°©ë²• [{keepAccountSafeArticleLink}] {lineBreak}ì¼ë°˜ì ì¸ Roblox ê³ ê°ì§€ì› [{supportPageLink}] {lineBreak}{lineBreak}ê°ì‚¬í•©ë‹ˆë‹¤. {lineBreak}{lineBreak}Roblox íŒ€";
 	}
 
 	/// <summary>
@@ -399,12 +399,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo1(string username, string region, string country, string ipAddress, string lineBreak)
 	{
-		return $"{username} 님이 {region}, {country}({ipAddress})에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return $"{username} ë‹˜ì´ {region}, {country}({ipAddress})ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo1()
 	{
-		return "{username} 님이 {region}, {country}({ipAddress})에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return "{username} ë‹˜ì´ {region}, {country}({ipAddress})ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -414,12 +414,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo2(string username, string country, string ipAddress, string lineBreak)
 	{
-		return $"{username} 님이 {country}({ipAddress})에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return $"{username} ë‹˜ì´ {country}({ipAddress})ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo2()
 	{
-		return "{username} 님이 {country}({ipAddress})에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return "{username} ë‹˜ì´ {country}({ipAddress})ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -429,12 +429,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo3(string username, string lineBreak)
 	{
-		return $"(Roblox 내부의) {username} 님이 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return $"(Roblox ë‚´ë¶€ì˜) {username} ë‹˜ì´ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo3()
 	{
-		return "(Roblox 내부의) {username} 님이 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return "(Roblox ë‚´ë¶€ì˜) {username} ë‹˜ì´ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -444,12 +444,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo4(string username, string country, string lineBreak)
 	{
-		return $"{username} 님이 {country}에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return $"{username} ë‹˜ì´ {country}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo4()
 	{
-		return "{username} 님이 {country}에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return "{username} ë‹˜ì´ {country}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -459,12 +459,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo5(string username, string region, string country, string lineBreak)
 	{
-		return $"{username} 님이 {country} {region}에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return $"{username} ë‹˜ì´ {country} {region}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo5()
 	{
-		return "{username} 님이 {country} {region}에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return "{username} ë‹˜ì´ {country} {region}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -474,12 +474,12 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo6(string username, string city, string region, string country, string lineBreak)
 	{
-		return $"{username} 님이 {country} {region} {city}에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return $"{username} ë‹˜ì´ {country} {region} {city}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo6()
 	{
-		return "{username} 님이 {country} {region} {city}에서 로그인을 요청했어요.{lineBreak}{lineBreak}";
+		return "{username} ë‹˜ì´ {country} {region} {city}ì—ì„œ ë¡œê·¸ì¸ì„ ìš”ì²­í–ˆì–´ìš”.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -489,17 +489,17 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailSubject(string accountName)
 	{
-		return $"Roblox 계정 {accountName}에 대한 인증 코드";
+		return $"Roblox ê³„ì • {accountName}ì— ëŒ€í•œ ì¸ì¦ ì½”ë“œ";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailSubject()
 	{
-		return "Roblox 계정 {accountName}에 대한 인증 코드";
+		return "Roblox ê³„ì • {accountName}ì— ëŒ€í•œ ì¸ì¦ ì½”ë“œ";
 	}
 
 	protected override string _GetTemplateForLabelCode()
 	{
-		return "코드";
+		return "ì½”ë“œ";
 	}
 
 	/// <summary>
@@ -509,47 +509,47 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string LabelCodeInputPlaceholderText(string codeLength)
 	{
-		return $"{codeLength}자리 코드 입력";
+		return $"{codeLength}ìžë¦¬ ì½”ë“œ ìž…ë ¥";
 	}
 
 	protected override string _GetTemplateForLabelCodeInputPlaceholderText()
 	{
-		return "{codeLength}자리 코드 입력";
+		return "{codeLength}ìžë¦¬ ì½”ë“œ ìž…ë ¥";
 	}
 
 	protected override string _GetTemplateForLabelDidNotReceive()
 	{
-		return "코드를 받지 못하셨나요?";
+		return "ì½”ë“œë¥¼ ë°›ì§€ ëª»í•˜ì…¨ë‚˜ìš”?";
 	}
 
 	protected override string _GetTemplateForLabelEnterCode()
 	{
-		return "코드 입력 (6자리)";
+		return "ì½”ë“œ ìž…ë ¥ (6ìžë¦¬)";
 	}
 
 	protected override string _GetTemplateForLabelEnterEmailCode()
 	{
-		return "방금 이메일로 전송된 코드를 입력하세요.";
+		return "ë°©ê¸ˆ ì´ë©”ì¼ë¡œ ì „ì†¡ëœ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelEnterTextCode()
 	{
-		return "방금 문자 메시지로 전송된 코드를 입력하세요.";
+		return "ë°©ê¸ˆ ë¬¸ìž ë©”ì‹œì§€ë¡œ ì „ì†¡ëœ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelEnterTwoStepVerificationCode()
 	{
-		return "2단계 인증 코드를 입력하세요.";
+		return "2ë‹¨ê³„ ì¸ì¦ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookPasswordWarning()
 	{
-		return "Facebook으로 로그인한 경우, 비밀번호를 설정해야 합니다.";
+		return "Facebookìœ¼ë¡œ ë¡œê·¸ì¸í•œ ê²½ìš°, ë¹„ë°€ë²ˆí˜¸ë¥¼ ì„¤ì •í•´ì•¼ í•©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
 	{
-		return "더 알아보기";
+		return "ë” ì•Œì•„ë³´ê¸°";
 	}
 
 	/// <summary>
@@ -559,61 +559,64 @@ internal class TwoStepVerificationResources_ko_kr : TwoStepVerificationResources
 	/// </summary>
 	public override string LabelNeedHelpContactSupport(string supportLink)
 	{
-		return $"도움이 필요하세요? {supportLink}(으)로 문의하세요";
+		return $"ë„ì›€ì´ í•„ìš”í•˜ì„¸ìš”? {supportLink}(ìœ¼)ë¡œ ë¬¸ì˜í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelNeedHelpContactSupport()
 	{
-		return "도움이 필요하세요? {supportLink}(으)로 문의하세요";
+		return "ë„ì›€ì´ í•„ìš”í•˜ì„¸ìš”? {supportLink}(ìœ¼)ë¡œ ë¬¸ì˜í•˜ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelNewCode()
 	{
-		return "새 코드";
+		return "ìƒˆ ì½”ë“œ";
 	}
 
 	protected override string _GetTemplateForLabelRobloxSupport()
 	{
-		return "Roblox 고객지원";
+		return "Roblox ê³ ê°ì§€ì›";
 	}
 
 	protected override string _GetTemplateForLabelTrustThisDevice()
 	{
-		return "30일 동안 본 기기 신뢰";
+		return "30ì¼ ë™ì•ˆ ë³¸ ê¸°ê¸° ì‹ ë¢°";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "2단계 인증";
+		return "2ë‹¨ê³„ ì¸ì¦";
 	}
 
 	protected override string _GetTemplateForResponseCodeSent()
 	{
-		return "코드 전송 완료";
+		return "ì½”ë“œ ì „ì†¡ ì™„ë£Œ";
 	}
 
 	protected override string _GetTemplateForResponseFeatureNotAvailable()
 	{
-		return "사용할 수 없는 기능.\u00a0고객지원으로 문의하세요.";
+		return "ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ê¸°ëŠ¥.\u00a0ê³ ê°ì§€ì›ìœ¼ë¡œ ë¬¸ì˜í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidCode()
 	{
-		return "유효하지 않은 코드";
+		return "ìœ íš¨í•˜ì§€ ì•Šì€ ì½”ë“œ";
 	}
 
 	protected override string _GetTemplateForResponseSystemErrorReturnToLogin()
 	{
-		return "시스템 오류.\u00a0로그인 화면으로 돌아가세요.";
+		return "ì‹œìŠ¤í…œ ì˜¤ë¥˜.\u00a0ë¡œê·¸ì¸ í™”ë©´ìœ¼ë¡œ ëŒì•„ê°€ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
 	{
-		return "시도 가능 횟수를 초과했습니다.\u00a0나중에 다시 시도하세요.";
+		return "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤.\u00a0ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyCharacters()
 	{
-		return "입력 가능 글자 수를 초과했습니다";
+		return "ìž…ë ¥ ê°€ëŠ¥ ê¸€ìž ìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using Roblox.Instrumentation;
+﻿using Roblox.Instrumentation;
 using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderationpublic {
+    interface IReviewTaskRepublisherPerformanceCounters
 
-namespace Roblox.Platform.Moderation;
-
-public interface IReviewTaskRepublisherPerformanceCounters
 {
 	/// <summary>
 	/// A counter that monitors the rate at which requests are made to republish to a queue
@@ -21,4 +20,7 @@ public interface IReviewTaskRepublisherPerformanceCounters
 	/// <param name="localeIdentifier"></param>
 	/// <returns></returns>
 	IRawValueCounter GetNumberOfRepublishedTasksForLocaleCounter(ISupportedLocaleIdentifier localeIdentifier);
+}
+
+
 }

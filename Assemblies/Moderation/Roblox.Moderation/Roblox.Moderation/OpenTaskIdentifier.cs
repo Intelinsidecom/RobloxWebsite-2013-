@@ -1,8 +1,7 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// An struct object that uniquely identify an open task in the task queue.
 /// </summary>
 public struct OpenTaskIdentifier
@@ -18,4 +17,7 @@ public struct OpenTaskIdentifier
 	/// </summary>
 	[JsonProperty("receipt_region_name")]
 	public string ReceiptRegionName { get; set; }
+}
+
+
 }

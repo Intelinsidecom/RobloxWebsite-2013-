@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GroupsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,1403 +10,1403 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Action.AdvertiseGroup"
 	/// English String: "Advertise Group"
 	/// </summary>
-	public override string ActionAdvertiseGroup => "グループを宣伝する";
+	public override string ActionAdvertiseGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å®£ä¼ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.AuditLog"
 	/// English String: "Audit Log"
 	/// </summary>
-	public override string ActionAuditLog => "審査ログ";
+	public override string ActionAuditLog => "å¯©æŸ»ãƒ­ã‚°";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "キャンセル";
+	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.CancelRequest"
 	/// English String: "Cancel Request"
 	/// </summary>
-	public override string ActionCancelRequest => "リクエストをキャンセル";
+	public override string ActionCancelRequest => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.ClaimOwnership"
 	/// English String: "Claim Ownership"
 	/// </summary>
-	public override string ActionClaimOwnership => "所有権を取得";
+	public override string ActionClaimOwnership => "æ‰€æœ‰æ¨©ã‚’å–å¾—";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "閉鎖する";
+	public override string ActionClose => "é–‰éŽ–ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.ConfigureGroup"
 	/// English String: "Configure Group"
 	/// </summary>
-	public override string ActionConfigureGroup => "グループを環境設定する";
+	public override string ActionConfigureGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.CreateGroup"
 	/// English String: "Create Group"
 	/// </summary>
-	public override string ActionCreateGroup => "グループを作成";
+	public override string ActionCreateGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "削除";
+	public override string ActionDelete => "å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Action.Exile"
 	/// English String: "Exile"
 	/// </summary>
-	public override string ActionExile => "追放";
+	public override string ActionExile => "è¿½æ”¾";
 
 	/// <summary>
 	/// Key: "Action.ExileUser"
 	/// English String: "Exile User"
 	/// </summary>
-	public override string ActionExileUser => "ユーザーを追放";
+	public override string ActionExileUser => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’è¿½æ”¾";
 
 	/// <summary>
 	/// Key: "Action.GroupAdmin"
 	/// English String: "Group Admin"
 	/// </summary>
-	public override string ActionGroupAdmin => "グループ管理";
+	public override string ActionGroupAdmin => "ã‚°ãƒ«ãƒ¼ãƒ—ç®¡ç†";
 
 	/// <summary>
 	/// Key: "Action.GroupShout"
 	/// Text on the button for sending / posting a group shout
 	/// English String: "Group Shout"
 	/// </summary>
-	public override string ActionGroupShout => "グループシャウト";
+	public override string ActionGroupShout => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚·ãƒ£ã‚¦ãƒˆ";
 
 	/// <summary>
 	/// Key: "Action.JoinGroup"
 	/// English String: "Join Group"
 	/// </summary>
-	public override string ActionJoinGroup => "グループに参加";
+	public override string ActionJoinGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ";
 
 	/// <summary>
 	/// Key: "Action.LeaveGroup"
 	/// English String: "Leave Group"
 	/// </summary>
-	public override string ActionLeaveGroup => "グループを終了";
+	public override string ActionLeaveGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†";
 
 	/// <summary>
 	/// Key: "Action.MakePrimary"
 	/// English String: "Make Primary"
 	/// </summary>
-	public override string ActionMakePrimary => "メイングループに設定";
+	public override string ActionMakePrimary => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«è¨­å®š";
 
 	/// <summary>
 	/// Key: "Action.MakePrimaryGroup"
 	/// Set the current group as the users primary group
 	/// English String: "Make Primary Group"
 	/// </summary>
-	public override string ActionMakePrimaryGroup => "メイングループに設定";
+	public override string ActionMakePrimaryGroup => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«è¨­å®š";
 
 	/// <summary>
 	/// Key: "Action.Post"
 	/// English String: "Post"
 	/// </summary>
-	public override string ActionPost => "投稿";
+	public override string ActionPost => "æŠ•ç¨¿";
 
 	/// <summary>
 	/// Key: "Action.Purchase"
 	/// English String: "Purchase"
 	/// </summary>
-	public override string ActionPurchase => "購入";
+	public override string ActionPurchase => "è³¼å…¥";
 
 	/// <summary>
 	/// Key: "Action.RemovePrimary"
 	/// English String: "Remove Primary"
 	/// </summary>
-	public override string ActionRemovePrimary => "メイングループを削除";
+	public override string ActionRemovePrimary => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Action.Report"
 	/// English String: "Report"
 	/// </summary>
-	public override string ActionReport => "報告する";
+	public override string ActionReport => "å ±å‘Šã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "規約違反を報告";
+	public override string ActionReportAbuse => "è¦ç´„é•åã‚’å ±å‘Š";
 
 	/// <summary>
 	/// Key: "Action.Upgrade"
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string ActionUpgrade => "アップグレード";
+	public override string ActionUpgrade => "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Action.UpgradeToJoin"
 	/// English String: "Upgrade to Join"
 	/// </summary>
-	public override string ActionUpgradeToJoin => "アップグレードして参加";
+	public override string ActionUpgradeToJoin => "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦å‚åŠ ";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "はい";
+	public override string ActionYes => "ã¯ã„";
 
 	/// <summary>
 	/// Key: "Description.ClothingRevenue"
 	/// English String: "Groups have the ability to create and sell official shirts, pants, and t-shirts! All revenue goes to group funds."
 	/// </summary>
-	public override string DescriptionClothingRevenue => "グループでは、公式シャツ、パンツ、Tシャツなどを作ったり販売ができます！売上はグループの資金となります。";
+	public override string DescriptionClothingRevenue => "ã‚°ãƒ«ãƒ¼ãƒ—ã§ã¯ã€å…¬å¼ã‚·ãƒ£ãƒ„ã€ãƒ‘ãƒ³ãƒ„ã€Tã‚·ãƒ£ãƒ„ãªã©ã‚’ä½œã£ãŸã‚Šè²©å£²ãŒã§ãã¾ã™ï¼å£²ä¸Šã¯ã‚°ãƒ«ãƒ¼ãƒ—ã®è³‡é‡‘ã¨ãªã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.DeleteAllPostsByUser"
 	/// English String: "Also delete all posts by this user."
 	/// </summary>
-	public override string DescriptionDeleteAllPostsByUser => "このユーザーのすべての投稿も削除します。";
+	public override string DescriptionDeleteAllPostsByUser => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ã™ã¹ã¦ã®æŠ•ç¨¿ã‚‚å‰Šé™¤ã—ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.ExileUserWarning"
 	/// English String: "Are you sure you want to exile this user?"
 	/// </summary>
-	public override string DescriptionExileUserWarning => "このユーザーを追放してよろしいですか？";
+	public override string DescriptionExileUserWarning => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’è¿½æ”¾ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.LeaveGroupAsOwnerWarning"
 	/// English String: "This will leave the group ownerless."
 	/// </summary>
-	public override string DescriptionLeaveGroupAsOwnerWarning => "グループに所有者がいない状態になります。";
+	public override string DescriptionLeaveGroupAsOwnerWarning => "ã‚°ãƒ«ãƒ¼ãƒ—ã«æ‰€æœ‰è€…ãŒã„ãªã„çŠ¶æ…‹ã«ãªã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.LeaveGroupWarning"
 	/// English String: "Are you sure you want to leave this group?"
 	/// </summary>
-	public override string DescriptionLeaveGroupWarning => "このグループを終了してよろしいですか？";
+	public override string DescriptionLeaveGroupWarning => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.MakePrimaryGroupWarning"
 	/// English String: "Are you sure you want to make this your primary group?"
 	/// </summary>
-	public override string DescriptionMakePrimaryGroupWarning => "このグループをメイングループにしてよろしいですか？";
+	public override string DescriptionMakePrimaryGroupWarning => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.NoneMaxGroups"
 	/// English String: "Upgrade to Builders Club to join more groups."
 	/// </summary>
-	public override string DescriptionNoneMaxGroups => "他のグループにも参加するには、Builders Clubにアップグレードしてください。";
+	public override string DescriptionNoneMaxGroups => "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Builders Clubã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.NoneMaxGroupsPremium"
 	/// English String: "Upgrade to Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionNoneMaxGroupsPremium => "他のグループにも参加するには、Roblox Premiumにアップグレードしてください。";
+	public override string DescriptionNoneMaxGroupsPremium => "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Roblox Premiumã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.noneMaxGroupsPremiumText"
 	/// English String: "Upgrade to Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionnoneMaxGroupsPremiumText => "他のグループにも参加するには、Roblox Premiumにアップグレードしてください。";
+	public override string DescriptionnoneMaxGroupsPremiumText => "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Roblox Premiumã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.ObcMaxGroups"
 	/// English String: "You have joined the maximum number of groups."
 	/// </summary>
-	public override string DescriptionObcMaxGroups => "参加できるグループの最大数に到達しました。";
+	public override string DescriptionObcMaxGroups => "å‚åŠ ã§ãã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã®æœ€å¤§æ•°ã«åˆ°é”ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Description.OtherBcMaxGroups"
 	/// English String: "Upgrade your Builders Club to join more groups."
 	/// </summary>
-	public override string DescriptionOtherBcMaxGroups => "他のグループにも参加するには、Builders Clubをアップグレードしてください。";
+	public override string DescriptionOtherBcMaxGroups => "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Builders Clubã‚’ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.otherPremiumMaxGroupsText"
 	/// English String: "Upgrade your Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionotherPremiumMaxGroupsText => "他のグループにも参加するには、Roblox Premiumにアップグレードしてください。";
+	public override string DescriptionotherPremiumMaxGroupsText => "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Roblox Premiumã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.PremiumMaxGroups"
 	/// English String: "You have joined the maximum number of groups."
 	/// </summary>
-	public override string DescriptionPremiumMaxGroups => "参加できるグループの最大数に到達しました。";
+	public override string DescriptionPremiumMaxGroups => "å‚åŠ ã§ãã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã®æœ€å¤§æ•°ã«åˆ°é”ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Description.PurchaseBody"
 	/// English String: "Would you like to create this group for"
 	/// </summary>
-	public override string DescriptionPurchaseBody => "以下でこのグループを作成しますか：";
+	public override string DescriptionPurchaseBody => "ä»¥ä¸‹ã§ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½œæˆã—ã¾ã™ã‹ï¼š";
 
 	/// <summary>
 	/// Key: "Description.RemovePrimaryGroupWarning"
 	/// English String: "Are you sure you want to remove your primary group?"
 	/// </summary>
-	public override string DescriptionRemovePrimaryGroupWarning => "メイングループを削除してよろしいですか？";
+	public override string DescriptionRemovePrimaryGroupWarning => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.ReportAbuseDescription"
 	/// English String: "What would you like to report?"
 	/// </summary>
-	public override string DescriptionReportAbuseDescription => "何を報告しますか。";
+	public override string DescriptionReportAbuseDescription => "ä½•ã‚’å ±å‘Šã—ã¾ã™ã‹ã€‚";
 
 	/// <summary>
 	/// Key: "Description.WallPrivacySettings"
 	/// English String: "Your privacy settings do not allow you to post to group walls. Click here to adjust these settings."
 	/// </summary>
-	public override string DescriptionWallPrivacySettings => "プライバシー設定により、グループ掲示板への投稿が許可されていません。こちらをクリックして、設定を変更してください。";
+	public override string DescriptionWallPrivacySettings => "ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®šã«ã‚ˆã‚Šã€ã‚°ãƒ«ãƒ¼ãƒ—æŽ²ç¤ºæ¿ã¸ã®æŠ•ç¨¿ãŒè¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€è¨­å®šã‚’å¤‰æ›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.About"
 	/// English String: "About"
 	/// </summary>
-	public override string HeadingAbout => "情報";
+	public override string HeadingAbout => "æƒ…å ±";
 
 	/// <summary>
 	/// Key: "Heading.Affiliates"
 	/// English String: "Affiliates"
 	/// </summary>
-	public override string HeadingAffiliates => "仲間";
+	public override string HeadingAffiliates => "ä»²é–“";
 
 	/// <summary>
 	/// Key: "Heading.Allies"
 	/// English String: "Allies"
 	/// </summary>
-	public override string HeadingAllies => "仲間";
+	public override string HeadingAllies => "ä»²é–“";
 
 	/// <summary>
 	/// Key: "Heading.Date"
 	/// English String: "Date"
 	/// </summary>
-	public override string HeadingDate => "日付";
+	public override string HeadingDate => "æ—¥ä»˜";
 
 	/// <summary>
 	/// Key: "Heading.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string HeadingDescription => "詳細";
+	public override string HeadingDescription => "è©³ç´°";
 
 	/// <summary>
 	/// Key: "Heading.Enemies"
 	/// English String: "Enemies"
 	/// </summary>
-	public override string HeadingEnemies => "敵";
+	public override string HeadingEnemies => "æ•µ";
 
 	/// <summary>
 	/// Key: "Heading.ExileUserWarning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string HeadingExileUserWarning => "警告";
+	public override string HeadingExileUserWarning => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Heading.Funds"
 	/// English String: "Funds"
 	/// </summary>
-	public override string HeadingFunds => "資金";
+	public override string HeadingFunds => "è³‡é‡‘";
 
 	/// <summary>
 	/// Key: "Heading.Games"
 	/// English String: "Games"
 	/// </summary>
-	public override string HeadingGames => "ゲーム";
+	public override string HeadingGames => "ã‚²ãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Heading.GroupPurchase"
 	/// English String: "Group Purchase Confirmation"
 	/// </summary>
-	public override string HeadingGroupPurchase => "グループ購入の確認";
+	public override string HeadingGroupPurchase => "ã‚°ãƒ«ãƒ¼ãƒ—è³¼å…¥ã®ç¢ºèª";
 
 	/// <summary>
 	/// Key: "Heading.GroupShout"
 	/// English String: "Group Shout"
 	/// </summary>
-	public override string HeadingGroupShout => "グループシャウト";
+	public override string HeadingGroupShout => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚·ãƒ£ã‚¦ãƒˆ";
 
 	/// <summary>
 	/// Key: "Heading.LeaveGroup"
 	/// English String: "Leave Group"
 	/// </summary>
-	public override string HeadingLeaveGroup => "グループを終了";
+	public override string HeadingLeaveGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†";
 
 	/// <summary>
 	/// Key: "Heading.MakePrimaryGroup"
 	/// Heading of make primary group modal
 	/// English String: "Make Primary Group"
 	/// </summary>
-	public override string HeadingMakePrimaryGroup => "メイングループに設定";
+	public override string HeadingMakePrimaryGroup => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«è¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.Members"
 	/// English String: "Members"
 	/// </summary>
-	public override string HeadingMembers => "メンバー";
+	public override string HeadingMembers => "ãƒ¡ãƒ³ãƒãƒ¼";
 
 	/// <summary>
 	/// Key: "Heading.NameOrDescription"
 	/// Selection option for what to report when reporting something in a group
 	/// English String: "Name or Description"
 	/// </summary>
-	public override string HeadingNameOrDescription => "名前、または詳細";
+	public override string HeadingNameOrDescription => "åå‰ã€ã¾ãŸã¯è©³ç´°";
 
 	/// <summary>
 	/// Key: "Heading.Payouts"
 	/// English String: "Payouts"
 	/// </summary>
-	public override string HeadingPayouts => "ペイアウト";
+	public override string HeadingPayouts => "ãƒšã‚¤ã‚¢ã‚¦ãƒˆ";
 
 	/// <summary>
 	/// Key: "Heading.Primary"
 	/// English String: "Primary"
 	/// </summary>
-	public override string HeadingPrimary => "メイン";
+	public override string HeadingPrimary => "ãƒ¡ã‚¤ãƒ³";
 
 	/// <summary>
 	/// Key: "Heading.Rank"
 	/// English String: "Rank"
 	/// </summary>
-	public override string HeadingRank => "ランク";
+	public override string HeadingRank => "ãƒ©ãƒ³ã‚¯";
 
 	/// <summary>
 	/// Key: "Heading.RemovePrimaryGroup"
 	/// English String: "Remove Primary Group"
 	/// </summary>
-	public override string HeadingRemovePrimaryGroup => "メイングループを削除";
+	public override string HeadingRemovePrimaryGroup => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Heading.Role"
 	/// English String: "Role"
 	/// </summary>
-	public override string HeadingRole => "役割";
+	public override string HeadingRole => "å½¹å‰²";
 
 	/// <summary>
 	/// Key: "Heading.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string HeadingSettings => "設定";
+	public override string HeadingSettings => "è¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.Shout"
 	/// To be displayed above the group shout (the current status for a group set by admins)
 	/// English String: "Shout"
 	/// </summary>
-	public override string HeadingShout => "シャウト";
+	public override string HeadingShout => "ã‚·ãƒ£ã‚¦ãƒˆ";
 
 	/// <summary>
 	/// Key: "Heading.Store"
 	/// English String: "Store"
 	/// </summary>
-	public override string HeadingStore => "ストア";
+	public override string HeadingStore => "ã‚¹ãƒˆã‚¢";
 
 	/// <summary>
 	/// Key: "Heading.User"
 	/// English String: "User"
 	/// </summary>
-	public override string HeadingUser => "ユーザー";
+	public override string HeadingUser => "ãƒ¦ãƒ¼ã‚¶ãƒ¼";
 
 	/// <summary>
 	/// Key: "Heading.Wall"
 	/// English String: "Wall"
 	/// </summary>
-	public override string HeadingWall => "掲示板";
+	public override string HeadingWall => "æŽ²ç¤ºæ¿";
 
 	/// <summary>
 	/// Key: "Label.Abandon"
 	/// English String: "Abandon"
 	/// </summary>
-	public override string LabelAbandon => "破棄";
+	public override string LabelAbandon => "ç ´æ£„";
 
 	/// <summary>
 	/// Key: "Label.AcceptAllyRequest"
 	/// English String: "Accept Ally Request"
 	/// </summary>
-	public override string LabelAcceptAllyRequest => "同盟リクエストを承認する";
+	public override string LabelAcceptAllyRequest => "åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.AcceptJoinRequest"
 	/// English String: "Accept Join Request"
 	/// </summary>
-	public override string LabelAcceptJoinRequest => "参加リクエストを承認する";
+	public override string LabelAcceptJoinRequest => "å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.AddGroupPlace"
 	/// English String: "Add Group Place"
 	/// </summary>
-	public override string LabelAddGroupPlace => "グループプレースを追加";
+	public override string LabelAddGroupPlace => "ã‚°ãƒ«ãƒ¼ãƒ—ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.AdjustCurrencyAmounts"
 	/// English String: "Adjust Currency Amounts"
 	/// </summary>
-	public override string LabelAdjustCurrencyAmounts => "通貨の額を調整";
+	public override string LabelAdjustCurrencyAmounts => "é€šè²¨ã®é¡ã‚’èª¿æ•´";
 
 	/// <summary>
 	/// Key: "Label.All"
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "すべて";
+	public override string LabelAll => "ã™ã¹ã¦";
 
 	/// <summary>
 	/// Key: "Label.AnyoneCanJoin"
 	/// English String: "Anyone Can Join"
 	/// </summary>
-	public override string LabelAnyoneCanJoin => "誰でも参加できます";
+	public override string LabelAnyoneCanJoin => "èª°ã§ã‚‚å‚åŠ ã§ãã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.BuyAd"
 	/// English String: "Buy Ad"
 	/// </summary>
-	public override string LabelBuyAd => "広告を購入";
+	public override string LabelBuyAd => "åºƒå‘Šã‚’è³¼å…¥";
 
 	/// <summary>
 	/// Key: "Label.BuyClan"
 	/// English String: "Buy Clan"
 	/// </summary>
-	public override string LabelBuyClan => "クランを購入";
+	public override string LabelBuyClan => "ã‚¯ãƒ©ãƒ³ã‚’è³¼å…¥";
 
 	/// <summary>
 	/// Key: "Label.ByOwner"
 	/// Prefix to either the owner of the group, or "No One!" if the group has no owner. Could not properly format like By {ownerName} because ownerName is a link in this case
 	/// English String: "By"
 	/// </summary>
-	public override string LabelByOwner => "作：";
+	public override string LabelByOwner => "ä½œï¼š";
 
 	/// <summary>
 	/// Key: "Label.CancelClanInvite"
 	/// English String: "Cancel Clan Invite"
 	/// </summary>
-	public override string LabelCancelClanInvite => "クランの招待状をキャンセル";
+	public override string LabelCancelClanInvite => "ã‚¯ãƒ©ãƒ³ã®æ‹›å¾…çŠ¶ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Label.ChangeDescription"
 	/// English String: "Change Description"
 	/// </summary>
-	public override string LabelChangeDescription => "詳細を変更";
+	public override string LabelChangeDescription => "è©³ç´°ã‚’å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.ChangeOwner"
 	/// English String: "Change Owner"
 	/// </summary>
-	public override string LabelChangeOwner => "所有者を変更";
+	public override string LabelChangeOwner => "æ‰€æœ‰è€…ã‚’å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.ChangeRank"
 	/// English String: "Change Rank"
 	/// </summary>
-	public override string LabelChangeRank => "ランクを変更";
+	public override string LabelChangeRank => "ãƒ©ãƒ³ã‚¯ã‚’å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.Claim"
 	/// English String: "Claim"
 	/// </summary>
-	public override string LabelClaim => "取得";
+	public override string LabelClaim => "å–å¾—";
 
 	/// <summary>
 	/// Key: "Label.ConfigureBadge"
 	/// English String: "Configure Badge"
 	/// </summary>
-	public override string LabelConfigureBadge => "バッジを環境設定する";
+	public override string LabelConfigureBadge => "ãƒãƒƒã‚¸ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGroupAsset"
 	/// English String: "Configure Group Asset"
 	/// </summary>
-	public override string LabelConfigureGroupAsset => "グループアセットの環境設定";
+	public override string LabelConfigureGroupAsset => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚»ãƒƒãƒˆã®ç’°å¢ƒè¨­å®š";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGroupDevelopmentItem"
 	/// English String: "Configure Group Development Item"
 	/// </summary>
-	public override string LabelConfigureGroupDevelopmentItem => "グループ開発アイテムを環境設定する";
+	public override string LabelConfigureGroupDevelopmentItem => "ã‚°ãƒ«ãƒ¼ãƒ—é–‹ç™ºã‚¢ã‚¤ãƒ†ãƒ ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGroupGame"
 	/// English String: "Configure Group Game"
 	/// </summary>
-	public override string LabelConfigureGroupGame => "グループゲームを環境設定する";
+	public override string LabelConfigureGroupGame => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚²ãƒ¼ãƒ ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.ConfigureItems"
 	/// English String: "Configure Items"
 	/// </summary>
-	public override string LabelConfigureItems => "アイテムの環境設定";
+	public override string LabelConfigureItems => "ã‚¢ã‚¤ãƒ†ãƒ ã®ç’°å¢ƒè¨­å®š";
 
 	/// <summary>
 	/// Key: "Label.CreateBadge"
 	/// English String: "Create Badge"
 	/// </summary>
-	public override string LabelCreateBadge => "バッジを作成";
+	public override string LabelCreateBadge => "ãƒãƒƒã‚¸ã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Label.CreateEnemy"
 	/// English String: "Create Enemy"
 	/// </summary>
-	public override string LabelCreateEnemy => "敵を作成";
+	public override string LabelCreateEnemy => "æ•µã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Label.CreateGamePass"
 	/// English String: "Create Game Pass"
 	/// </summary>
-	public override string LabelCreateGamePass => "ゲームパスを作成";
+	public override string LabelCreateGamePass => "ã‚²ãƒ¼ãƒ ãƒ‘ã‚¹ã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Label.CreateGroup"
 	/// English String: "Create Group"
 	/// </summary>
-	public override string LabelCreateGroup => "グループを作成";
+	public override string LabelCreateGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupAsset"
 	/// English String: "Create Group Asset"
 	/// </summary>
-	public override string LabelCreateGroupAsset => "グループアセットを作成";
+	public override string LabelCreateGroupAsset => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚»ãƒƒãƒˆã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupBuildersClubTooltip"
 	/// English String: "Creating a group requires a Builders Club membership."
 	/// </summary>
-	public override string LabelCreateGroupBuildersClubTooltip => "グループの作成には、Builders Clubメンバーシップが必要です。";
+	public override string LabelCreateGroupBuildersClubTooltip => "ã‚°ãƒ«ãƒ¼ãƒ—ã®ä½œæˆã«ã¯ã€Builders Clubãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupDescription"
 	/// English String: "Description (optional)"
 	/// </summary>
-	public override string LabelCreateGroupDescription => "詳細（オプショナル）";
+	public override string LabelCreateGroupDescription => "è©³ç´°ï¼ˆã‚ªãƒ—ã‚·ãƒ§ãƒŠãƒ«ï¼‰";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupDeveloperProduct"
 	/// English String: "Create Group Developer Product"
 	/// </summary>
-	public override string LabelCreateGroupDeveloperProduct => "グループ開発者製品を作成";
+	public override string LabelCreateGroupDeveloperProduct => "ã‚°ãƒ«ãƒ¼ãƒ—é–‹ç™ºè€…è£½å“ã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupEmblem"
 	/// English String: "Emblem"
 	/// </summary>
-	public override string LabelCreateGroupEmblem => "エンブレム";
+	public override string LabelCreateGroupEmblem => "ã‚¨ãƒ³ãƒ–ãƒ¬ãƒ ";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupFee"
 	/// English String: "Group Creation Fee"
 	/// </summary>
-	public override string LabelCreateGroupFee => "グループ作成手数料";
+	public override string LabelCreateGroupFee => "ã‚°ãƒ«ãƒ¼ãƒ—ä½œæˆæ‰‹æ•°æ–™";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupName"
 	/// English String: "Name your group"
 	/// </summary>
-	public override string LabelCreateGroupName => "グループに名前を付ける";
+	public override string LabelCreateGroupName => "ã‚°ãƒ«ãƒ¼ãƒ—ã«åå‰ã‚’ä»˜ã‘ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupPremiumTooltip"
 	/// English String: "Creating a group requires a Roblox Premium membership."
 	/// </summary>
-	public override string LabelCreateGroupPremiumTooltip => "グループの作成には、Roblox Premiumメンバーシップが必要です。";
+	public override string LabelCreateGroupPremiumTooltip => "ã‚°ãƒ«ãƒ¼ãƒ—ã®ä½œæˆã«ã¯ã€Roblox Premiumãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupTooltip"
 	/// English String: "Create a new group"
 	/// </summary>
-	public override string LabelCreateGroupTooltip => "新しいグループを作成";
+	public override string LabelCreateGroupTooltip => "æ–°ã—ã„ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Label.CreateItems"
 	/// English String: "Create Items"
 	/// </summary>
-	public override string LabelCreateItems => "アイテムを作成";
+	public override string LabelCreateItems => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ä½œæˆ";
 
 	/// <summary>
 	/// Key: "Label.DeclineAllyRequest"
 	/// English String: "Decline Ally Request"
 	/// </summary>
-	public override string LabelDeclineAllyRequest => "同盟リクエストを却下";
+	public override string LabelDeclineAllyRequest => "åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å´ä¸‹";
 
 	/// <summary>
 	/// Key: "Label.DeclineJoinRequest"
 	/// English String: "Decline Join Request"
 	/// </summary>
-	public override string LabelDeclineJoinRequest => "参加リクエストを却下";
+	public override string LabelDeclineJoinRequest => "å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å´ä¸‹";
 
 	/// <summary>
 	/// Key: "Label.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string LabelDelete => "削除";
+	public override string LabelDelete => "å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Label.DeleteAllPostsByUser"
 	/// English String: "Also delete all posts by this user."
 	/// </summary>
-	public override string LabelDeleteAllPostsByUser => "このユーザーのすべての投稿も削除します。";
+	public override string LabelDeleteAllPostsByUser => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ã™ã¹ã¦ã®æŠ•ç¨¿ã‚‚å‰Šé™¤ã—ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.DeleteAlly"
 	/// English String: "Delete Ally"
 	/// </summary>
-	public override string LabelDeleteAlly => "味方を削除";
+	public override string LabelDeleteAlly => "å‘³æ–¹ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Label.DeleteEnemy"
 	/// English String: "Delete Enemy"
 	/// </summary>
-	public override string LabelDeleteEnemy => "敵を削除";
+	public override string LabelDeleteEnemy => "æ•µã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Label.DeleteGroupPlace"
 	/// English String: "Delete Group Place"
 	/// </summary>
-	public override string LabelDeleteGroupPlace => "グループプレースを削除";
+	public override string LabelDeleteGroupPlace => "ã‚°ãƒ«ãƒ¼ãƒ—ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Label.DeletePost"
 	/// English String: "Delete Post"
 	/// </summary>
-	public override string LabelDeletePost => "投稿を削除";
+	public override string LabelDeletePost => "æŠ•ç¨¿ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Label.Funds"
 	/// English String: "Funds"
 	/// </summary>
-	public override string LabelFunds => "資金";
+	public override string LabelFunds => "è³‡é‡‘";
 
 	/// <summary>
 	/// Key: "Label.GroupClosed"
 	/// English String: "Group Closed"
 	/// </summary>
-	public override string LabelGroupClosed => "グループを閉鎖しました";
+	public override string LabelGroupClosed => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’é–‰éŽ–ã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.GroupLocked"
 	/// English String: "This group has been locked"
 	/// </summary>
-	public override string LabelGroupLocked => "このグループはロックされています";
+	public override string LabelGroupLocked => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.InviteToClan"
 	/// English String: "Invite to Clan"
 	/// </summary>
-	public override string LabelInviteToClan => "クランに招待";
+	public override string LabelInviteToClan => "ã‚¯ãƒ©ãƒ³ã«æ‹›å¾…";
 
 	/// <summary>
 	/// Key: "Label.KickFromClan"
 	/// English String: "Kick from Clan"
 	/// </summary>
-	public override string LabelKickFromClan => "クランから追放";
+	public override string LabelKickFromClan => "ã‚¯ãƒ©ãƒ³ã‹ã‚‰è¿½æ”¾";
 
 	/// <summary>
 	/// Key: "Label.Loading"
 	/// English String: "Loading..."
 	/// </summary>
-	public override string LabelLoading => "読み込み中...";
+	public override string LabelLoading => "èª­ã¿è¾¼ã¿ä¸­...";
 
 	/// <summary>
 	/// Key: "Label.Lock"
 	/// English String: "Lock"
 	/// </summary>
-	public override string LabelLock => "ロック";
+	public override string LabelLock => "ãƒ­ãƒƒã‚¯";
 
 	/// <summary>
 	/// Key: "Label.ManageGroupCreations"
 	/// English String: "Create or manage group items."
 	/// </summary>
-	public override string LabelManageGroupCreations => "グループアイテムの作成と管理。";
+	public override string LabelManageGroupCreations => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ãƒ†ãƒ ã®ä½œæˆã¨ç®¡ç†ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ManualApproval"
 	/// English String: "Manual Approval"
 	/// </summary>
-	public override string LabelManualApproval => "マニュアル承認";
+	public override string LabelManualApproval => "ãƒžãƒ‹ãƒ¥ã‚¢ãƒ«æ‰¿èª";
 
 	/// <summary>
 	/// Key: "Label.ModerateDiscussion"
 	/// English String: "Moderate Discussion"
 	/// </summary>
-	public override string LabelModerateDiscussion => "ディスカッションをモデレートする";
+	public override string LabelModerateDiscussion => "ãƒ‡ã‚£ã‚¹ã‚«ãƒƒã‚·ãƒ§ãƒ³ã‚’ãƒ¢ãƒ‡ãƒ¬ãƒ¼ãƒˆã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.NoAllies"
 	/// English String: "This group does not have any allies."
 	/// </summary>
-	public override string LabelNoAllies => "このグループには仲間がいません。";
+	public override string LabelNoAllies => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯ä»²é–“ãŒã„ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoEnemies"
 	/// English String: "This group does not have any enemies."
 	/// </summary>
-	public override string LabelNoEnemies => "このグループには敵がいません。";
+	public override string LabelNoEnemies => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯æ•µãŒã„ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoGames"
 	/// English String: "No games are associated with this group."
 	/// </summary>
-	public override string LabelNoGames => "このグループに関連付けられたゲームはありません。";
+	public override string LabelNoGames => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸã‚²ãƒ¼ãƒ ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoMembersInRole"
 	/// English String: "No group members are in this role."
 	/// </summary>
-	public override string LabelNoMembersInRole => "この役割のグループメンバーはいません。";
+	public override string LabelNoMembersInRole => "ã“ã®å½¹å‰²ã®ã‚°ãƒ«ãƒ¼ãƒ—ãƒ¡ãƒ³ãƒãƒ¼ã¯ã„ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoOne"
 	/// English String: "No One!"
 	/// </summary>
-	public override string LabelNoOne => "誰もいません！";
+	public override string LabelNoOne => "èª°ã‚‚ã„ã¾ã›ã‚“ï¼";
 
 	/// <summary>
 	/// Key: "Label.NoStoreItems"
 	/// English String: "No items are for sale in this group."
 	/// </summary>
-	public override string LabelNoStoreItems => "このグループで販売中のアイテムはありません。";
+	public override string LabelNoStoreItems => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã§è²©å£²ä¸­ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoWallPosts"
 	/// English String: "Nobody has said anything yet..."
 	/// </summary>
-	public override string LabelNoWallPosts => "まだ誰も発言していません...";
+	public override string LabelNoWallPosts => "ã¾ã èª°ã‚‚ç™ºè¨€ã—ã¦ã„ã¾ã›ã‚“...";
 
 	/// <summary>
 	/// Key: "Label.OnlyBcCanJoin"
 	/// English String: "Only Builders Club members can join"
 	/// </summary>
-	public override string LabelOnlyBcCanJoin => "Builders Clubのメンバーだけが参加できます";
+	public override string LabelOnlyBcCanJoin => "Builders Clubã®ãƒ¡ãƒ³ãƒãƒ¼ã ã‘ãŒå‚åŠ ã§ãã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.OnlyPremiumCanJoin"
 	/// English String: "Only users with membership can join"
 	/// </summary>
-	public override string LabelOnlyPremiumCanJoin => "参加できるのはメンバーシップを持つユーザーだけです";
+	public override string LabelOnlyPremiumCanJoin => "å‚åŠ ã§ãã‚‹ã®ã¯ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’æŒã¤ãƒ¦ãƒ¼ã‚¶ãƒ¼ã ã‘ã§ã™";
 
 	/// <summary>
 	/// Key: "Label.PrivateGroup"
 	/// If group is invite only
 	/// English String: "Private"
 	/// </summary>
-	public override string LabelPrivateGroup => "プライベート";
+	public override string LabelPrivateGroup => "ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.PublicGroup"
 	/// If group is open for anyone to join
 	/// English String: "Public"
 	/// </summary>
-	public override string LabelPublicGroup => "公開";
+	public override string LabelPublicGroup => "å…¬é–‹";
 
 	/// <summary>
 	/// Key: "Label.PublishPlace"
 	/// English String: "Publish Place"
 	/// </summary>
-	public override string LabelPublishPlace => "プレースを公開する";
+	public override string LabelPublishPlace => "ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’å…¬é–‹ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.RemoveGroupPlace"
 	/// English String: "Remove Group Place"
 	/// </summary>
-	public override string LabelRemoveGroupPlace => "グループプレースを削除";
+	public override string LabelRemoveGroupPlace => "ã‚°ãƒ«ãƒ¼ãƒ—ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Label.RemoveMember"
 	/// English String: "Remove Member"
 	/// </summary>
-	public override string LabelRemoveMember => "メンバーを削除";
+	public override string LabelRemoveMember => "ãƒ¡ãƒ³ãƒãƒ¼ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Label.Rename"
 	/// English String: "Rename"
 	/// </summary>
-	public override string LabelRename => "名前を変更";
+	public override string LabelRename => "åå‰ã‚’å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.RevertGroupAsset"
 	/// English String: "Revert Group Asset"
 	/// </summary>
-	public override string LabelRevertGroupAsset => "グループアセットを元に戻す";
+	public override string LabelRevertGroupAsset => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚»ãƒƒãƒˆã‚’å…ƒã«æˆ»ã™";
 
 	/// <summary>
 	/// Key: "Label.SavePlace"
 	/// English String: "Save Place"
 	/// </summary>
-	public override string LabelSavePlace => "プレースを保存";
+	public override string LabelSavePlace => "ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’ä¿å­˜";
 
 	/// <summary>
 	/// Key: "Label.SearchGroups"
 	/// English String: "Search All Groups"
 	/// </summary>
-	public override string LabelSearchGroups => "すべてのグループを検索";
+	public override string LabelSearchGroups => "ã™ã¹ã¦ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’æ¤œç´¢";
 
 	/// <summary>
 	/// Key: "Label.SearchUsers"
 	/// English String: "Search Users"
 	/// </summary>
-	public override string LabelSearchUsers => "ユーザーを検索";
+	public override string LabelSearchUsers => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’æ¤œç´¢";
 
 	/// <summary>
 	/// Key: "Label.SendAllyRequest"
 	/// English String: "Send Ally Request"
 	/// </summary>
-	public override string LabelSendAllyRequest => "同盟リクエストを送信";
+	public override string LabelSendAllyRequest => "åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Label.ShoutPlaceholder"
 	/// English String: "Enter your shout"
 	/// </summary>
-	public override string LabelShoutPlaceholder => "シャウトを入力してください";
+	public override string LabelShoutPlaceholder => "ã‚·ãƒ£ã‚¦ãƒˆã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Label.SpendGroupFunds"
 	/// English String: "Spend Group Funds"
 	/// </summary>
-	public override string LabelSpendGroupFunds => "グループ資金を使う";
+	public override string LabelSpendGroupFunds => "ã‚°ãƒ«ãƒ¼ãƒ—è³‡é‡‘ã‚’ä½¿ã†";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string LabelSuccess => "成功";
+	public override string LabelSuccess => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Label.Unlock"
 	/// English String: "Unlock"
 	/// </summary>
-	public override string LabelUnlock => "アンロック";
+	public override string LabelUnlock => "ã‚¢ãƒ³ãƒ­ãƒƒã‚¯";
 
 	/// <summary>
 	/// Key: "Label.UpdateGroupAsset"
 	/// English String: "Update Group Asset"
 	/// </summary>
-	public override string LabelUpdateGroupAsset => "グループアセットをアップデート";
+	public override string LabelUpdateGroupAsset => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚»ãƒƒãƒˆã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.WallPostPlaceholder"
 	/// English String: "Say something..."
 	/// </summary>
-	public override string LabelWallPostPlaceholder => "発言してください...";
+	public override string LabelWallPostPlaceholder => "ç™ºè¨€ã—ã¦ãã ã•ã„...";
 
 	/// <summary>
 	/// Key: "Label.WallPostsUnavailable"
 	/// Displayed in the group wall area when we cannot successfully load wall posts
 	/// English String: "Wall posts are temporarily unavailable, please check back later."
 	/// </summary>
-	public override string LabelWallPostsUnavailable => "掲示板への投稿は一時的に利用できません。しばらくしてからもう一度お試しください。";
+	public override string LabelWallPostsUnavailable => "æŽ²ç¤ºæ¿ã¸ã®æŠ•ç¨¿ã¯ä¸€æ™‚çš„ã«åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Warning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string LabelWarning => "警告";
+	public override string LabelWarning => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Message.AlreadyMember"
 	/// English String: "You are already a member of this group."
 	/// </summary>
-	public override string MessageAlreadyMember => "すでにこのグループのメンバーです。";
+	public override string MessageAlreadyMember => "ã™ã§ã«ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ¡ãƒ³ãƒãƒ¼ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.AlreadyRequested"
 	/// English String: "You have already requested to join this group."
 	/// </summary>
-	public override string MessageAlreadyRequested => "このグループにはすでに参加リクエスト中です。";
+	public override string MessageAlreadyRequested => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯ã™ã§ã«å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆä¸­ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.BuildGroupRolesListError"
 	/// English String: "Unable to load members for selected role."
 	/// </summary>
-	public override string MessageBuildGroupRolesListError => "選択した役割のメンバーを読み込めません。";
+	public override string MessageBuildGroupRolesListError => "é¸æŠžã—ãŸå½¹å‰²ã®ãƒ¡ãƒ³ãƒãƒ¼ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.CannotClaimGroupWithOwner"
 	/// English String: "This group already has an owner."
 	/// </summary>
-	public override string MessageCannotClaimGroupWithOwner => "このグループには、すでに所有者が存在します。";
+	public override string MessageCannotClaimGroupWithOwner => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯ã€ã™ã§ã«æ‰€æœ‰è€…ãŒå­˜åœ¨ã—ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ChangeOwnerEmpty"
 	/// English String: "There is no owner of the group"
 	/// </summary>
-	public override string MessageChangeOwnerEmpty => "グループの所有者がいません";
+	public override string MessageChangeOwnerEmpty => "ã‚°ãƒ«ãƒ¼ãƒ—ã®æ‰€æœ‰è€…ãŒã„ã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Message.ClaimOwnershipError"
 	/// English String: "Unable to claim ownership of group."
 	/// </summary>
-	public override string MessageClaimOwnershipError => "グループの所有権を取得できません。";
+	public override string MessageClaimOwnershipError => "ã‚°ãƒ«ãƒ¼ãƒ—ã®æ‰€æœ‰æ¨©ã‚’å–å¾—ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ClaimOwnershipSuccess"
 	/// English String: "Successfully claimed ownership of group."
 	/// </summary>
-	public override string MessageClaimOwnershipSuccess => "グループの所有権を取得しました。";
+	public override string MessageClaimOwnershipSuccess => "ã‚°ãƒ«ãƒ¼ãƒ—ã®æ‰€æœ‰æ¨©ã‚’å–å¾—ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error occurred."
 	/// </summary>
-	public override string MessageDefaultError => "エラーが発生しました。";
+	public override string MessageDefaultError => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.DeleteWallPostError"
 	/// English String: "Unable to delete wall post."
 	/// </summary>
-	public override string MessageDeleteWallPostError => "掲示板投稿を削除できません。";
+	public override string MessageDeleteWallPostError => "æŽ²ç¤ºæ¿æŠ•ç¨¿ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DeleteWallPostsByUserError"
 	/// English String: "Unable to delete wall posts by user."
 	/// </summary>
-	public override string MessageDeleteWallPostsByUserError => "ユーザーの掲示板投稿を削除できません。";
+	public override string MessageDeleteWallPostsByUserError => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®æŽ²ç¤ºæ¿æŠ•ç¨¿ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DeleteWallPostSuccess"
 	/// English String: "Successfully deleted wall post."
 	/// </summary>
-	public override string MessageDeleteWallPostSuccess => "掲示板投稿を削除しました。";
+	public override string MessageDeleteWallPostSuccess => "æŽ²ç¤ºæ¿æŠ•ç¨¿ã‚’å‰Šé™¤ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.DescriptionTooLong"
 	/// English String: "The description is too long."
 	/// </summary>
-	public override string MessageDescriptionTooLong => "詳細が長すぎます。";
+	public override string MessageDescriptionTooLong => "è©³ç´°ãŒé•·ã™ãŽã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.DuplicateName"
 	/// English String: "Name is already taken. Please try another."
 	/// </summary>
-	public override string MessageDuplicateName => "名前はすでに使われています。他の名前をお試しください。";
+	public override string MessageDuplicateName => "åå‰ã¯ã™ã§ã«ä½¿ã‚ã‚Œã¦ã„ã¾ã™ã€‚ä»–ã®åå‰ã‚’ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ExileUserError"
 	/// English String: "Unable to exile user."
 	/// </summary>
-	public override string MessageExileUserError => "ユーザーを追放できません。";
+	public override string MessageExileUserError => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’è¿½æ”¾ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.FeatureDisabled"
 	/// English String: "The feature is disabled."
 	/// </summary>
-	public override string MessageFeatureDisabled => "この機能はオフになっています。";
+	public override string MessageFeatureDisabled => "ã“ã®æ©Ÿèƒ½ã¯ã‚ªãƒ•ã«ãªã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GetGroupRelationshipsError"
 	/// English String: "Unable to load group affiliates."
 	/// </summary>
-	public override string MessageGetGroupRelationshipsError => "グループの仲間を読み込めません。";
+	public override string MessageGetGroupRelationshipsError => "ã‚°ãƒ«ãƒ¼ãƒ—ã®ä»²é–“ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupClosed"
 	/// English String: "You cannot join a closed group."
 	/// </summary>
-	public override string MessageGroupClosed => "閉鎖されたグループに参加することはできません。";
+	public override string MessageGroupClosed => "é–‰éŽ–ã•ã‚ŒãŸã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupCreationDisabled"
 	/// English String: "Group creation is currently disabled."
 	/// </summary>
-	public override string MessageGroupCreationDisabled => "グループ作成は、現在無効になっています。";
+	public override string MessageGroupCreationDisabled => "ã‚°ãƒ«ãƒ¼ãƒ—ä½œæˆã¯ã€ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupIconInvalid"
 	/// English String: "Icon is missing or invalid."
 	/// </summary>
-	public override string MessageGroupIconInvalid => "アイコンが無効、または存在しません。";
+	public override string MessageGroupIconInvalid => "ã‚¢ã‚¤ã‚³ãƒ³ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GroupMembershipsUnavailableError"
 	/// Error displayed on group details view when the system is in read-only mode for maintenance and you try to perform an action.
 	/// English String: "The group membership system is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string MessageGroupMembershipsUnavailableError => "このグループメンバーシップのシステムは一時的にご利用できません。後でもう一度お試しください。";
+	public override string MessageGroupMembershipsUnavailableError => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã®ã‚·ã‚¹ãƒ†ãƒ ã¯ä¸€æ™‚çš„ã«ã”åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientFunds"
 	/// English String: "Insufficient Robux funds."
 	/// </summary>
-	public override string MessageInsufficientFunds => "Robuxが不足しています。";
+	public override string MessageInsufficientFunds => "RobuxãŒä¸è¶³ã—ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientGroupSpace"
 	/// English String: "You are already in the maximum number of groups."
 	/// </summary>
-	public override string MessageInsufficientGroupSpace => "参加できるグループの最大数に到達しました。";
+	public override string MessageInsufficientGroupSpace => "å‚åŠ ã§ãã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã®æœ€å¤§æ•°ã«åˆ°é”ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientMembership"
 	/// English String: "You do not have the builders club membership necessary to join this group."
 	/// </summary>
-	public override string MessageInsufficientMembership => "このグループへの参加に必要なBuilders Clubメンバーシップがありません。";
+	public override string MessageInsufficientMembership => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®å‚åŠ ã«å¿…è¦ãªBuilders Clubãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientPermission"
 	/// English String: "Insufficient permissions to complete the request."
 	/// </summary>
-	public override string MessageInsufficientPermission => "リクエストを完了する権限がありません。";
+	public override string MessageInsufficientPermission => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å®Œäº†ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientPermissionsForRelationships"
 	/// English String: "You don't have permission to manage this group's relationships."
 	/// </summary>
-	public override string MessageInsufficientPermissionsForRelationships => "このグループの関係を管理する権限がありません。";
+	public override string MessageInsufficientPermissionsForRelationships => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®é–¢ä¿‚ã‚’ç®¡ç†ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InsufficientRobux"
 	/// English String: "You do not have enough Robux to create the group."
 	/// </summary>
-	public override string MessageInsufficientRobux => "Robuxが不足しているためグループ作成できません。";
+	public override string MessageInsufficientRobux => "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ã‚°ãƒ«ãƒ¼ãƒ—ä½œæˆã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidAmount"
 	/// English String: "The amount is invalid."
 	/// </summary>
-	public override string MessageInvalidAmount => "この値は無効です。";
+	public override string MessageInvalidAmount => "ã“ã®å€¤ã¯ç„¡åŠ¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroup"
 	/// English String: "Group is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroup => "グループが無効、または存在しません。";
+	public override string MessageInvalidGroup => "ã‚°ãƒ«ãƒ¼ãƒ—ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupIcon"
 	/// English String: "The group icon is invalid."
 	/// </summary>
-	public override string MessageInvalidGroupIcon => "グループアイコンが無効です。";
+	public override string MessageInvalidGroupIcon => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ã‚³ãƒ³ãŒç„¡åŠ¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupId"
 	/// English String: "The group is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroupId => "グループが無効、または存在しません。";
+	public override string MessageInvalidGroupId => "ã‚°ãƒ«ãƒ¼ãƒ—ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupWallPostId"
 	/// English String: "The group wall post id is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroupWallPostId => "グループ掲示板への投稿IDが無効、または存在しません。";
+	public override string MessageInvalidGroupWallPostId => "ã‚°ãƒ«ãƒ¼ãƒ—æŽ²ç¤ºæ¿ã¸ã®æŠ•ç¨¿IDãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidIds"
 	/// English String: "Ids could not be parsed from request."
 	/// </summary>
-	public override string MessageInvalidIds => "リクエストからIDを解析できませんでした。";
+	public override string MessageInvalidIds => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‹ã‚‰IDã‚’è§£æžã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidIdsError"
 	/// English String: "Ids could not be parsed from request."
 	/// </summary>
-	public override string MessageInvalidIdsError => "リクエストからIDを解析できませんでした。";
+	public override string MessageInvalidIdsError => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‹ã‚‰IDã‚’è§£æžã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidMembership"
 	/// English String: "User must have builders club membership."
 	/// </summary>
-	public override string MessageInvalidMembership => "Builders Clubメンバーシップを持つユーザーである必要があります。";
+	public override string MessageInvalidMembership => "Builders Clubãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’æŒã¤ãƒ¦ãƒ¼ã‚¶ãƒ¼ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidName"
 	/// English String: "The name is invalid."
 	/// </summary>
-	public override string MessageInvalidName => "名前が無効です。";
+	public override string MessageInvalidName => "åå‰ãŒç„¡åŠ¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidPaginationParameters"
 	/// English String: "Invalid or missing pagination parameters."
 	/// </summary>
-	public override string MessageInvalidPaginationParameters => "ページネーションのパラメータが無効、または存在しません。";
+	public override string MessageInvalidPaginationParameters => "ãƒšãƒ¼ã‚¸ãƒãƒ¼ã‚·ãƒ§ãƒ³ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidPayoutType"
 	/// English String: "Invalid payout type."
 	/// </summary>
-	public override string MessageInvalidPayoutType => "このペイアウト方法は無効です。";
+	public override string MessageInvalidPayoutType => "ã“ã®ãƒšã‚¤ã‚¢ã‚¦ãƒˆæ–¹æ³•ã¯ç„¡åŠ¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidRecipient"
 	/// English String: "The recipient is invalid."
 	/// </summary>
-	public override string MessageInvalidRecipient => "この受信者は無効です。";
+	public override string MessageInvalidRecipient => "ã“ã®å—ä¿¡è€…ã¯ç„¡åŠ¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidRelationshipType"
 	/// English String: "Group relationship type is invalid."
 	/// </summary>
-	public override string MessageInvalidRelationshipType => "グループの関係タイプが無効です。";
+	public override string MessageInvalidRelationshipType => "ã‚°ãƒ«ãƒ¼ãƒ—ã®é–¢ä¿‚ã‚¿ã‚¤ãƒ—ãŒç„¡åŠ¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidRoleSetId"
 	/// English String: "The roleset is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidRoleSetId => "役割セットが無効、または存在しません。";
+	public override string MessageInvalidRoleSetId => "å½¹å‰²ã‚»ãƒƒãƒˆãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidUser"
 	/// English String: "The user is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidUser => "ユーザーが無効、または存在しません。";
+	public override string MessageInvalidUser => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InvalidWallPostContent"
 	/// English String: "Your post was empty, white space, or more than 500 characters."
 	/// </summary>
-	public override string MessageInvalidWallPostContent => "投稿が未入力か空白、または500文字を超えています。";
+	public override string MessageInvalidWallPostContent => "æŠ•ç¨¿ãŒæœªå…¥åŠ›ã‹ç©ºç™½ã€ã¾ãŸã¯500æ–‡å­—ã‚’è¶…ãˆã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.JoinGroupError"
 	/// English String: "Unable to join group."
 	/// </summary>
-	public override string MessageJoinGroupError => "グループに参加できません。";
+	public override string MessageJoinGroupError => "ã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.JoinGroupPendingSuccess"
 	/// English String: "Requested to join group, your request is pending."
 	/// </summary>
-	public override string MessageJoinGroupPendingSuccess => "グループへの参加をリクエストしました。リクエストは保留中です。";
+	public override string MessageJoinGroupPendingSuccess => "ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®å‚åŠ ã‚’ãƒªã‚¯ã‚¨ã‚¹ãƒˆã—ã¾ã—ãŸã€‚ãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ä¿ç•™ä¸­ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.JoinGroupSuccess"
 	/// English String: "Successfully joined the group."
 	/// </summary>
-	public override string MessageJoinGroupSuccess => "グループに参加しました。";
+	public override string MessageJoinGroupSuccess => "ã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.LeaveGroupError"
 	/// English String: "Unable to leave group."
 	/// </summary>
-	public override string MessageLeaveGroupError => "グループを終了できません。";
+	public override string MessageLeaveGroupError => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupError"
 	/// English String: "Unable to load group."
 	/// </summary>
-	public override string MessageLoadGroupError => "グループを読み込めません。";
+	public override string MessageLoadGroupError => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupGamesError"
 	/// English String: "Unable to load games."
 	/// </summary>
-	public override string MessageLoadGroupGamesError => "ゲームを読み込めません。";
+	public override string MessageLoadGroupGamesError => "ã‚²ãƒ¼ãƒ ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupListError"
 	/// English String: "Unable to load group list."
 	/// </summary>
-	public override string MessageLoadGroupListError => "グループリストを読み込めません。";
+	public override string MessageLoadGroupListError => "ã‚°ãƒ«ãƒ¼ãƒ—ãƒªã‚¹ãƒˆã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupMembershipsError"
 	/// English String: "Unable to load user membership information."
 	/// </summary>
-	public override string MessageLoadGroupMembershipsError => "ユーザーのメンバーシップ情報を読み込めません。";
+	public override string MessageLoadGroupMembershipsError => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—æƒ…å ±ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupMetadataError"
 	/// English String: "Unable to load group info."
 	/// </summary>
-	public override string MessageLoadGroupMetadataError => "グループ情報を読み込めません。";
+	public override string MessageLoadGroupMetadataError => "ã‚°ãƒ«ãƒ¼ãƒ—æƒ…å ±ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupStoreItemsError"
 	/// English String: "Unable to load store items."
 	/// </summary>
-	public override string MessageLoadGroupStoreItemsError => "ストアのアイテムを読み込めません。";
+	public override string MessageLoadGroupStoreItemsError => "ã‚¹ãƒˆã‚¢ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadUserGroupMembershipError"
 	/// English String: "Unable to load group member information."
 	/// </summary>
-	public override string MessageLoadUserGroupMembershipError => "グループのメンバー情報を読み込めません。";
+	public override string MessageLoadUserGroupMembershipError => "ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ¡ãƒ³ãƒãƒ¼æƒ…å ±ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.LoadWallPostsError"
 	/// English String: "Unable to load wall posts."
 	/// </summary>
-	public override string MessageLoadWallPostsError => "掲示板投稿を読み込めません。";
+	public override string MessageLoadWallPostsError => "æŽ²ç¤ºæ¿æŠ•ç¨¿ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.MakePrimaryError"
 	/// English String: "Unable to make primary group."
 	/// </summary>
-	public override string MessageMakePrimaryError => "メイングループに設定できません。";
+	public override string MessageMakePrimaryError => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«è¨­å®šã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.MaxGroups"
 	/// English String: "User is in maximum number of groups."
 	/// </summary>
-	public override string MessageMaxGroups => "ユーザーは、これ以上グループに参加できません。";
+	public override string MessageMaxGroups => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã“ã‚Œä»¥ä¸Šã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.MissingGroupIcon"
 	/// English String: "The group icon is missing from the request."
 	/// </summary>
-	public override string MessageMissingGroupIcon => "リクエストにグループアイコンが存在しません。";
+	public override string MessageMissingGroupIcon => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ã‚³ãƒ³ãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.MissingGroupStatusContent"
 	/// English String: "Missing group status content."
 	/// </summary>
-	public override string MessageMissingGroupStatusContent => "グループ状況コンテンツがありません。";
+	public override string MessageMissingGroupStatusContent => "ã‚°ãƒ«ãƒ¼ãƒ—çŠ¶æ³ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameInvalid"
 	/// English String: "Name is missing or has invalid characters."
 	/// </summary>
-	public override string MessageNameInvalid => "名前が無効、または存在しません。";
+	public override string MessageNameInvalid => "åå‰ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameModerated"
 	/// English String: "The name is moderated."
 	/// </summary>
-	public override string MessageNameModerated => "名前が規制対象です。";
+	public override string MessageNameModerated => "åå‰ãŒè¦åˆ¶å¯¾è±¡ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameTaken"
 	/// English String: "The name has been taken."
 	/// </summary>
-	public override string MessageNameTaken => "この名前はすでに使われています。";
+	public override string MessageNameTaken => "ã“ã®åå‰ã¯ã™ã§ã«ä½¿ã‚ã‚Œã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameTooLong"
 	/// English String: "The name is too long."
 	/// </summary>
-	public override string MessageNameTooLong => "名前が長すぎます。";
+	public override string MessageNameTooLong => "åå‰ãŒé•·ã™ãŽã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NoPrimary"
 	/// English String: "The user specified does not have a primary group."
 	/// </summary>
-	public override string MessageNoPrimary => "指定したユーザーには、メイングループが存在しません。";
+	public override string MessageNoPrimary => "æŒ‡å®šã—ãŸãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ã¯ã€ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PassCaptchaToJoin"
 	/// English String: "You must pass the captcha test before joining this group."
 	/// </summary>
-	public override string MessagePassCaptchaToJoin => "このグループに参加する前に、キャプチャを完了させる必要があります。";
+	public override string MessagePassCaptchaToJoin => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã™ã‚‹å‰ã«ã€ã‚­ãƒ£ãƒ—ãƒãƒ£ã‚’å®Œäº†ã•ã›ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PassCaptchaToPost"
 	/// English String: "Captcha must be solved to post to the group wall."
 	/// </summary>
-	public override string MessagePassCaptchaToPost => "グループ掲示板に投稿するには、キャプチャを完了させる必要があります。";
+	public override string MessagePassCaptchaToPost => "ã‚°ãƒ«ãƒ¼ãƒ—æŽ²ç¤ºæ¿ã«æŠ•ç¨¿ã™ã‚‹ã«ã¯ã€ã‚­ãƒ£ãƒ—ãƒãƒ£ã‚’å®Œäº†ã•ã›ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.RemovePrimaryError"
 	/// English String: "Unable to remove primary group."
 	/// </summary>
-	public override string MessageRemovePrimaryError => "メイングループを削除できません。";
+	public override string MessageRemovePrimaryError => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SearchTermCharactersLimit"
 	/// English String: "The search term needs to be between 2 and 50 characters"
 	/// </summary>
-	public override string MessageSearchTermCharactersLimit => "検索する語句は、2から50文字である必要があります";
+	public override string MessageSearchTermCharactersLimit => "æ¤œç´¢ã™ã‚‹èªžå¥ã¯ã€2ã‹ã‚‰50æ–‡å­—ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 
 	/// <summary>
 	/// Key: "Message.SearchTermEmptyError"
 	/// English String: "Search term is empty"
 	/// </summary>
-	public override string MessageSearchTermEmptyError => "検索する語句が空白です";
+	public override string MessageSearchTermEmptyError => "æ¤œç´¢ã™ã‚‹èªžå¥ãŒç©ºç™½ã§ã™";
 
 	/// <summary>
 	/// Key: "Message.SearchTermFilteredError"
 	/// English String: "Search term was filtered"
 	/// </summary>
-	public override string MessageSearchTermFilteredError => "検索する語句が規制対象です";
+	public override string MessageSearchTermFilteredError => "æ¤œç´¢ã™ã‚‹èªžå¥ãŒè¦åˆ¶å¯¾è±¡ã§ã™";
 
 	/// <summary>
 	/// Key: "Message.SendGroupShoutError"
 	/// English String: "Unable to send group shout."
 	/// </summary>
-	public override string MessageSendGroupShoutError => "グループシャウトを送信できません。";
+	public override string MessageSendGroupShoutError => "ã‚°ãƒ«ãƒ¼ãƒ—ã‚·ãƒ£ã‚¦ãƒˆã‚’é€ä¿¡ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SendPostError"
 	/// English String: "Unable to send post."
 	/// </summary>
-	public override string MessageSendPostError => "投稿を送信できません。";
+	public override string MessageSendPostError => "æŠ•ç¨¿ã‚’é€ä¿¡ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyAttempts"
 	/// English String: "Too many attempts to join the group. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttempts => "グループへの参加の試行回数が多すぎます。後でもう一度お試しください。";
+	public override string MessageTooManyAttempts => "ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®å‚åŠ ã®è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyAttemptsToClaimGroups"
 	/// English String: "Too many attempts to claim groups. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttemptsToClaimGroups => "グループ取得の試行回数が多すぎます。後でもう一度お試しください。";
+	public override string MessageTooManyAttemptsToClaimGroups => "ã‚°ãƒ«ãƒ¼ãƒ—å–å¾—ã®è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyGroups"
 	/// English String: "You have reached the group capacity. Please leave a group before creating a new one."
 	/// </summary>
-	public override string MessageTooManyGroups => "グループ数が上限に達しました。新しいものを作成する前にグループから抜けてください。";
+	public override string MessageTooManyGroups => "ã‚°ãƒ«ãƒ¼ãƒ—æ•°ãŒä¸Šé™ã«é”ã—ã¾ã—ãŸã€‚æ–°ã—ã„ã‚‚ã®ã‚’ä½œæˆã™ã‚‹å‰ã«ã‚°ãƒ«ãƒ¼ãƒ—ã‹ã‚‰æŠœã‘ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyIds"
 	/// English String: "Too many ids in request."
 	/// </summary>
-	public override string MessageTooManyIds => "リクエストしたIDが多すぎます。";
+	public override string MessageTooManyIds => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã—ãŸIDãŒå¤šã™ãŽã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyPosts"
 	/// English String: "You are posting too fast, please try again in a few minutes."
 	/// </summary>
-	public override string MessageTooManyPosts => "投稿の間隔が短すぎます。数分後にもう一度お試しください。";
+	public override string MessageTooManyPosts => "æŠ•ç¨¿ã®é–“éš”ãŒçŸ­ã™ãŽã¾ã™ã€‚æ•°åˆ†å¾Œã«ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TooManyRequests"
 	/// English String: "Too many requests."
 	/// </summary>
-	public override string MessageTooManyRequests => "リクエストが多すぎます。";
+	public override string MessageTooManyRequests => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå¤šã™ãŽã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedForPostStatus"
 	/// English String: "You are not authorized to set the status of this group."
 	/// </summary>
-	public override string MessageUnauthorizedForPostStatus => "このグループの状況を設定する権限がありません。";
+	public override string MessageUnauthorizedForPostStatus => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®çŠ¶æ³ã‚’è¨­å®šã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedForViewGroupPayouts"
 	/// English String: "You don't have permission to view this group's payouts."
 	/// </summary>
-	public override string MessageUnauthorizedForViewGroupPayouts => "このグループのペイアウトを見る権限がありません";
+	public override string MessageUnauthorizedForViewGroupPayouts => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒšã‚¤ã‚¢ã‚¦ãƒˆã‚’è¦‹ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToClaimGroup"
 	/// English String: "You are not authorized to claim this group."
 	/// </summary>
-	public override string MessageUnauthorizedToClaimGroup => "このグループを取得する権限がありません。";
+	public override string MessageUnauthorizedToClaimGroup => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å–å¾—ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToManageMember"
 	/// English String: "You do not have permission to manage this member."
 	/// </summary>
-	public override string MessageUnauthorizedToManageMember => "このメンバーの管理をする権限がありません。";
+	public override string MessageUnauthorizedToManageMember => "ã“ã®ãƒ¡ãƒ³ãƒãƒ¼ã®ç®¡ç†ã‚’ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToViewRolesetPermissions"
 	/// English String: "You are not authorized to view permissions for this roleset."
 	/// </summary>
-	public override string MessageUnauthorizedToViewRolesetPermissions => "この役割の許可レベルを見る権限がありません。";
+	public override string MessageUnauthorizedToViewRolesetPermissions => "ã“ã®å½¹å‰²ã®è¨±å¯ãƒ¬ãƒ™ãƒ«ã‚’è¦‹ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToViewWall"
 	/// English String: "You do not have permission to access this group wall."
 	/// </summary>
-	public override string MessageUnauthorizedToViewWall => "このグループの掲示板にアクセスする権限がありません。";
+	public override string MessageUnauthorizedToViewWall => "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®æŽ²ç¤ºæ¿ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// English String: "Unknown error"
 	/// </summary>
-	public override string MessageUnknownError => "不明なエラーが発生しました";
+	public override string MessageUnknownError => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Message.UserNotInGroup"
 	/// English String: "You aren't a member of the group specified."
 	/// </summary>
-	public override string MessageUserNotInGroup => "指定したグループのメンバーではありません。";
+	public override string MessageUserNotInGroup => "æŒ‡å®šã—ãŸã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	public GroupsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -1415,227 +1415,227 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForActionAdvertiseGroup()
 	{
-		return "グループを宣伝する";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å®£ä¼ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionAuditLog()
 	{
-		return "審査ログ";
+		return "å¯©æŸ»ãƒ­ã‚°";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionCancelRequest()
 	{
-		return "リクエストをキャンセル";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionClaimOwnership()
 	{
-		return "所有権を取得";
+		return "æ‰€æœ‰æ¨©ã‚’å–å¾—";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "閉鎖する";
+		return "é–‰éŽ–ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionConfigureGroup()
 	{
-		return "グループを環境設定する";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionCreateGroup()
 	{
-		return "グループを作成";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "削除";
+		return "å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForActionExile()
 	{
-		return "追放";
+		return "è¿½æ”¾";
 	}
 
 	protected override string _GetTemplateForActionExileUser()
 	{
-		return "ユーザーを追放";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’è¿½æ”¾";
 	}
 
 	protected override string _GetTemplateForActionGroupAdmin()
 	{
-		return "グループ管理";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ç®¡ç†";
 	}
 
 	protected override string _GetTemplateForActionGroupShout()
 	{
-		return "グループシャウト";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚·ãƒ£ã‚¦ãƒˆ";
 	}
 
 	protected override string _GetTemplateForActionJoinGroup()
 	{
-		return "グループに参加";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ";
 	}
 
 	protected override string _GetTemplateForActionLeaveGroup()
 	{
-		return "グループを終了";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†";
 	}
 
 	protected override string _GetTemplateForActionMakePrimary()
 	{
-		return "メイングループに設定";
+		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«è¨­å®š";
 	}
 
 	protected override string _GetTemplateForActionMakePrimaryGroup()
 	{
-		return "メイングループに設定";
+		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«è¨­å®š";
 	}
 
 	protected override string _GetTemplateForActionPost()
 	{
-		return "投稿";
+		return "æŠ•ç¨¿";
 	}
 
 	protected override string _GetTemplateForActionPurchase()
 	{
-		return "購入";
+		return "è³¼å…¥";
 	}
 
 	protected override string _GetTemplateForActionRemovePrimary()
 	{
-		return "メイングループを削除";
+		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForActionReport()
 	{
-		return "報告する";
+		return "å ±å‘Šã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "規約違反を報告";
+		return "è¦ç´„é•åã‚’å ±å‘Š";
 	}
 
 	protected override string _GetTemplateForActionUpgrade()
 	{
-		return "アップグレード";
+		return "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForActionUpgradeToJoin()
 	{
-		return "アップグレードして参加";
+		return "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦å‚åŠ ";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "はい";
+		return "ã¯ã„";
 	}
 
 	protected override string _GetTemplateForDescriptionClothingRevenue()
 	{
-		return "グループでは、公式シャツ、パンツ、Tシャツなどを作ったり販売ができます！売上はグループの資金となります。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã§ã¯ã€å…¬å¼ã‚·ãƒ£ãƒ„ã€ãƒ‘ãƒ³ãƒ„ã€Tã‚·ãƒ£ãƒ„ãªã©ã‚’ä½œã£ãŸã‚Šè²©å£²ãŒã§ãã¾ã™ï¼å£²ä¸Šã¯ã‚°ãƒ«ãƒ¼ãƒ—ã®è³‡é‡‘ã¨ãªã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDeleteAllPostsByUser()
 	{
-		return "このユーザーのすべての投稿も削除します。";
+		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ã™ã¹ã¦ã®æŠ•ç¨¿ã‚‚å‰Šé™¤ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionExileUserWarning()
 	{
-		return "このユーザーを追放してよろしいですか？";
+		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’è¿½æ”¾ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveGroupAsOwnerWarning()
 	{
-		return "グループに所有者がいない状態になります。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã«æ‰€æœ‰è€…ãŒã„ãªã„çŠ¶æ…‹ã«ãªã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveGroupWarning()
 	{
-		return "このグループを終了してよろしいですか？";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionMakePrimaryGroupWarning()
 	{
-		return "このグループをメイングループにしてよろしいですか？";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionNoneMaxGroups()
 	{
-		return "他のグループにも参加するには、Builders Clubにアップグレードしてください。";
+		return "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Builders Clubã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionNoneMaxGroupsPremium()
 	{
-		return "他のグループにも参加するには、Roblox Premiumにアップグレードしてください。";
+		return "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Roblox Premiumã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionnoneMaxGroupsPremiumText()
 	{
-		return "他のグループにも参加するには、Roblox Premiumにアップグレードしてください。";
+		return "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Roblox Premiumã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionObcMaxGroups()
 	{
-		return "参加できるグループの最大数に到達しました。";
+		return "å‚åŠ ã§ãã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã®æœ€å¤§æ•°ã«åˆ°é”ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionOtherBcMaxGroups()
 	{
-		return "他のグループにも参加するには、Builders Clubをアップグレードしてください。";
+		return "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Builders Clubã‚’ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionotherPremiumMaxGroupsText()
 	{
-		return "他のグループにも参加するには、Roblox Premiumにアップグレードしてください。";
+		return "ä»–ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚‚å‚åŠ ã™ã‚‹ã«ã¯ã€Roblox Premiumã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionPremiumMaxGroups()
 	{
-		return "参加できるグループの最大数に到達しました。";
+		return "å‚åŠ ã§ãã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã®æœ€å¤§æ•°ã«åˆ°é”ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionPurchaseBody()
 	{
-		return "以下でこのグループを作成しますか：";
+		return "ä»¥ä¸‹ã§ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½œæˆã—ã¾ã™ã‹ï¼š";
 	}
 
 	protected override string _GetTemplateForDescriptionRemovePrimaryGroupWarning()
 	{
-		return "メイングループを削除してよろしいですか？";
+		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionReportAbuseDescription()
 	{
-		return "何を報告しますか。";
+		return "ä½•ã‚’å ±å‘Šã—ã¾ã™ã‹ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionWallPrivacySettings()
 	{
-		return "プライバシー設定により、グループ掲示板への投稿が許可されていません。こちらをクリックして、設定を変更してください。";
+		return "ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®šã«ã‚ˆã‚Šã€ã‚°ãƒ«ãƒ¼ãƒ—æŽ²ç¤ºæ¿ã¸ã®æŠ•ç¨¿ãŒè¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€è¨­å®šã‚’å¤‰æ›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingAbout()
 	{
-		return "情報";
+		return "æƒ…å ±";
 	}
 
 	protected override string _GetTemplateForHeadingAffiliates()
 	{
-		return "仲間";
+		return "ä»²é–“";
 	}
 
 	protected override string _GetTemplateForHeadingAllies()
 	{
-		return "仲間";
+		return "ä»²é–“";
 	}
 
 	/// <summary>
@@ -1644,347 +1644,347 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string HeadingConfigureGroup(string groupName)
 	{
-		return $"{groupName} を環境設定する";
+		return $"{groupName} ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureGroup()
 	{
-		return "{groupName} を環境設定する";
+		return "{groupName} ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForHeadingDate()
 	{
-		return "日付";
+		return "æ—¥ä»˜";
 	}
 
 	protected override string _GetTemplateForHeadingDescription()
 	{
-		return "詳細";
+		return "è©³ç´°";
 	}
 
 	protected override string _GetTemplateForHeadingEnemies()
 	{
-		return "敵";
+		return "æ•µ";
 	}
 
 	protected override string _GetTemplateForHeadingExileUserWarning()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	protected override string _GetTemplateForHeadingFunds()
 	{
-		return "資金";
+		return "è³‡é‡‘";
 	}
 
 	protected override string _GetTemplateForHeadingGames()
 	{
-		return "ゲーム";
+		return "ã‚²ãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForHeadingGroupPurchase()
 	{
-		return "グループ購入の確認";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—è³¼å…¥ã®ç¢ºèª";
 	}
 
 	protected override string _GetTemplateForHeadingGroupShout()
 	{
-		return "グループシャウト";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚·ãƒ£ã‚¦ãƒˆ";
 	}
 
 	protected override string _GetTemplateForHeadingLeaveGroup()
 	{
-		return "グループを終了";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†";
 	}
 
 	protected override string _GetTemplateForHeadingMakePrimaryGroup()
 	{
-		return "メイングループに設定";
+		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingMembers()
 	{
-		return "メンバー";
+		return "ãƒ¡ãƒ³ãƒãƒ¼";
 	}
 
 	protected override string _GetTemplateForHeadingNameOrDescription()
 	{
-		return "名前、または詳細";
+		return "åå‰ã€ã¾ãŸã¯è©³ç´°";
 	}
 
 	protected override string _GetTemplateForHeadingPayouts()
 	{
-		return "ペイアウト";
+		return "ãƒšã‚¤ã‚¢ã‚¦ãƒˆ";
 	}
 
 	protected override string _GetTemplateForHeadingPrimary()
 	{
-		return "メイン";
+		return "ãƒ¡ã‚¤ãƒ³";
 	}
 
 	protected override string _GetTemplateForHeadingRank()
 	{
-		return "ランク";
+		return "ãƒ©ãƒ³ã‚¯";
 	}
 
 	protected override string _GetTemplateForHeadingRemovePrimaryGroup()
 	{
-		return "メイングループを削除";
+		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForHeadingRole()
 	{
-		return "役割";
+		return "å½¹å‰²";
 	}
 
 	protected override string _GetTemplateForHeadingSettings()
 	{
-		return "設定";
+		return "è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingShout()
 	{
-		return "シャウト";
+		return "ã‚·ãƒ£ã‚¦ãƒˆ";
 	}
 
 	protected override string _GetTemplateForHeadingStore()
 	{
-		return "ストア";
+		return "ã‚¹ãƒˆã‚¢";
 	}
 
 	protected override string _GetTemplateForHeadingUser()
 	{
-		return "ユーザー";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼";
 	}
 
 	protected override string _GetTemplateForHeadingWall()
 	{
-		return "掲示板";
+		return "æŽ²ç¤ºæ¿";
 	}
 
 	protected override string _GetTemplateForLabelAbandon()
 	{
-		return "破棄";
+		return "ç ´æ£„";
 	}
 
 	protected override string _GetTemplateForLabelAcceptAllyRequest()
 	{
-		return "同盟リクエストを承認する";
+		return "åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelAcceptJoinRequest()
 	{
-		return "参加リクエストを承認する";
+		return "å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelAddGroupPlace()
 	{
-		return "グループプレースを追加";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelAdjustCurrencyAmounts()
 	{
-		return "通貨の額を調整";
+		return "é€šè²¨ã®é¡ã‚’èª¿æ•´";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "すべて";
+		return "ã™ã¹ã¦";
 	}
 
 	protected override string _GetTemplateForLabelAnyoneCanJoin()
 	{
-		return "誰でも参加できます";
+		return "èª°ã§ã‚‚å‚åŠ ã§ãã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelBuyAd()
 	{
-		return "広告を購入";
+		return "åºƒå‘Šã‚’è³¼å…¥";
 	}
 
 	protected override string _GetTemplateForLabelBuyClan()
 	{
-		return "クランを購入";
+		return "ã‚¯ãƒ©ãƒ³ã‚’è³¼å…¥";
 	}
 
 	protected override string _GetTemplateForLabelByOwner()
 	{
-		return "作：";
+		return "ä½œï¼š";
 	}
 
 	protected override string _GetTemplateForLabelCancelClanInvite()
 	{
-		return "クランの招待状をキャンセル";
+		return "ã‚¯ãƒ©ãƒ³ã®æ‹›å¾…çŠ¶ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForLabelChangeDescription()
 	{
-		return "詳細を変更";
+		return "è©³ç´°ã‚’å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelChangeOwner()
 	{
-		return "所有者を変更";
+		return "æ‰€æœ‰è€…ã‚’å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelChangeRank()
 	{
-		return "ランクを変更";
+		return "ãƒ©ãƒ³ã‚¯ã‚’å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelClaim()
 	{
-		return "取得";
+		return "å–å¾—";
 	}
 
 	protected override string _GetTemplateForLabelConfigureBadge()
 	{
-		return "バッジを環境設定する";
+		return "ãƒãƒƒã‚¸ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGroupAsset()
 	{
-		return "グループアセットの環境設定";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚»ãƒƒãƒˆã®ç’°å¢ƒè¨­å®š";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGroupDevelopmentItem()
 	{
-		return "グループ開発アイテムを環境設定する";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—é–‹ç™ºã‚¢ã‚¤ãƒ†ãƒ ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGroupGame()
 	{
-		return "グループゲームを環境設定する";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚²ãƒ¼ãƒ ã‚’ç’°å¢ƒè¨­å®šã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelConfigureItems()
 	{
-		return "アイテムの環境設定";
+		return "ã‚¢ã‚¤ãƒ†ãƒ ã®ç’°å¢ƒè¨­å®š";
 	}
 
 	protected override string _GetTemplateForLabelCreateBadge()
 	{
-		return "バッジを作成";
+		return "ãƒãƒƒã‚¸ã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelCreateEnemy()
 	{
-		return "敵を作成";
+		return "æ•µã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGamePass()
 	{
-		return "ゲームパスを作成";
+		return "ã‚²ãƒ¼ãƒ ãƒ‘ã‚¹ã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroup()
 	{
-		return "グループを作成";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupAsset()
 	{
-		return "グループアセットを作成";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚»ãƒƒãƒˆã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupBuildersClubTooltip()
 	{
-		return "グループの作成には、Builders Clubメンバーシップが必要です。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã®ä½œæˆã«ã¯ã€Builders Clubãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupDescription()
 	{
-		return "詳細（オプショナル）";
+		return "è©³ç´°ï¼ˆã‚ªãƒ—ã‚·ãƒ§ãƒŠãƒ«ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupDeveloperProduct()
 	{
-		return "グループ開発者製品を作成";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—é–‹ç™ºè€…è£½å“ã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupEmblem()
 	{
-		return "エンブレム";
+		return "ã‚¨ãƒ³ãƒ–ãƒ¬ãƒ ";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupFee()
 	{
-		return "グループ作成手数料";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ä½œæˆæ‰‹æ•°æ–™";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupName()
 	{
-		return "グループに名前を付ける";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã«åå‰ã‚’ä»˜ã‘ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupPremiumTooltip()
 	{
-		return "グループの作成には、Roblox Premiumメンバーシップが必要です。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã®ä½œæˆã«ã¯ã€Roblox Premiumãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupTooltip()
 	{
-		return "新しいグループを作成";
+		return "æ–°ã—ã„ã‚°ãƒ«ãƒ¼ãƒ—ã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelCreateItems()
 	{
-		return "アイテムを作成";
+		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelDeclineAllyRequest()
 	{
-		return "同盟リクエストを却下";
+		return "åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å´ä¸‹";
 	}
 
 	protected override string _GetTemplateForLabelDeclineJoinRequest()
 	{
-		return "参加リクエストを却下";
+		return "å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å´ä¸‹";
 	}
 
 	protected override string _GetTemplateForLabelDelete()
 	{
-		return "削除";
+		return "å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForLabelDeleteAllPostsByUser()
 	{
-		return "このユーザーのすべての投稿も削除します。";
+		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ã™ã¹ã¦ã®æŠ•ç¨¿ã‚‚å‰Šé™¤ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelDeleteAlly()
 	{
-		return "味方を削除";
+		return "å‘³æ–¹ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForLabelDeleteEnemy()
 	{
-		return "敵を削除";
+		return "æ•µã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForLabelDeleteGroupPlace()
 	{
-		return "グループプレースを削除";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForLabelDeletePost()
 	{
-		return "投稿を削除";
+		return "æŠ•ç¨¿ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForLabelFunds()
 	{
-		return "資金";
+		return "è³‡é‡‘";
 	}
 
 	protected override string _GetTemplateForLabelGroupClosed()
 	{
-		return "グループを閉鎖しました";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’é–‰éŽ–ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelGroupLocked()
 	{
-		return "このグループはロックされています";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™";
 	}
 
 	/// <summary>
@@ -1993,42 +1993,42 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string LabelGroupSearchResults(string searchTerm)
 	{
-		return $"{searchTerm} のグループでの結果";
+		return $"{searchTerm} ã®ã‚°ãƒ«ãƒ¼ãƒ—ã§ã®çµæžœ";
 	}
 
 	protected override string _GetTemplateForLabelGroupSearchResults()
 	{
-		return "{searchTerm} のグループでの結果";
+		return "{searchTerm} ã®ã‚°ãƒ«ãƒ¼ãƒ—ã§ã®çµæžœ";
 	}
 
 	protected override string _GetTemplateForLabelInviteToClan()
 	{
-		return "クランに招待";
+		return "ã‚¯ãƒ©ãƒ³ã«æ‹›å¾…";
 	}
 
 	protected override string _GetTemplateForLabelKickFromClan()
 	{
-		return "クランから追放";
+		return "ã‚¯ãƒ©ãƒ³ã‹ã‚‰è¿½æ”¾";
 	}
 
 	protected override string _GetTemplateForLabelLoading()
 	{
-		return "読み込み中...";
+		return "èª­ã¿è¾¼ã¿ä¸­...";
 	}
 
 	protected override string _GetTemplateForLabelLock()
 	{
-		return "ロック";
+		return "ãƒ­ãƒƒã‚¯";
 	}
 
 	protected override string _GetTemplateForLabelManageGroupCreations()
 	{
-		return "グループアイテムの作成と管理。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ãƒ†ãƒ ã®ä½œæˆã¨ç®¡ç†ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelManualApproval()
 	{
-		return "マニュアル承認";
+		return "ãƒžãƒ‹ãƒ¥ã‚¢ãƒ«æ‰¿èª";
 	}
 
 	/// <summary>
@@ -2037,47 +2037,47 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string LabelMaxGroupsTooltip(string maxGroups)
 	{
-		return $"同時に参加できるのは、 {maxGroups} グループまでです";
+		return $"åŒæ™‚ã«å‚åŠ ã§ãã‚‹ã®ã¯ã€ {maxGroups} ã‚°ãƒ«ãƒ¼ãƒ—ã¾ã§ã§ã™";
 	}
 
 	protected override string _GetTemplateForLabelMaxGroupsTooltip()
 	{
-		return "同時に参加できるのは、 {maxGroups} グループまでです";
+		return "åŒæ™‚ã«å‚åŠ ã§ãã‚‹ã®ã¯ã€ {maxGroups} ã‚°ãƒ«ãƒ¼ãƒ—ã¾ã§ã§ã™";
 	}
 
 	protected override string _GetTemplateForLabelMembers()
 	{
-		return "{memberCount, plural, =0 {# メンバー} =1 {# メンバー} other {# メンバー}}";
+		return "{memberCount, plural, =0 {# ãƒ¡ãƒ³ãƒãƒ¼} =1 {# ãƒ¡ãƒ³ãƒãƒ¼} other {# ãƒ¡ãƒ³ãƒãƒ¼}}";
 	}
 
 	protected override string _GetTemplateForLabelModerateDiscussion()
 	{
-		return "ディスカッションをモデレートする";
+		return "ãƒ‡ã‚£ã‚¹ã‚«ãƒƒã‚·ãƒ§ãƒ³ã‚’ãƒ¢ãƒ‡ãƒ¬ãƒ¼ãƒˆã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelNoAllies()
 	{
-		return "このグループには仲間がいません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯ä»²é–“ãŒã„ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoEnemies()
 	{
-		return "このグループには敵がいません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯æ•µãŒã„ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoGames()
 	{
-		return "このグループに関連付けられたゲームはありません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸã‚²ãƒ¼ãƒ ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoMembersInRole()
 	{
-		return "この役割のグループメンバーはいません。";
+		return "ã“ã®å½¹å‰²ã®ã‚°ãƒ«ãƒ¼ãƒ—ãƒ¡ãƒ³ãƒãƒ¼ã¯ã„ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoOne()
 	{
-		return "誰もいません！";
+		return "èª°ã‚‚ã„ã¾ã›ã‚“ï¼";
 	}
 
 	/// <summary>
@@ -2086,127 +2086,127 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string LabelNoResults(string searchTerm)
 	{
-		return $"「{searchTerm}」は見つかりませんでした";
+		return $"ã€Œ{searchTerm}ã€ã¯è¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNoResults()
 	{
-		return "「{searchTerm}」は見つかりませんでした";
+		return "ã€Œ{searchTerm}ã€ã¯è¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNoStoreItems()
 	{
-		return "このグループで販売中のアイテムはありません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã§è²©å£²ä¸­ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoWallPosts()
 	{
-		return "まだ誰も発言していません...";
+		return "ã¾ã èª°ã‚‚ç™ºè¨€ã—ã¦ã„ã¾ã›ã‚“...";
 	}
 
 	protected override string _GetTemplateForLabelOnlyBcCanJoin()
 	{
-		return "Builders Clubのメンバーだけが参加できます";
+		return "Builders Clubã®ãƒ¡ãƒ³ãƒãƒ¼ã ã‘ãŒå‚åŠ ã§ãã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelOnlyPremiumCanJoin()
 	{
-		return "参加できるのはメンバーシップを持つユーザーだけです";
+		return "å‚åŠ ã§ãã‚‹ã®ã¯ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’æŒã¤ãƒ¦ãƒ¼ã‚¶ãƒ¼ã ã‘ã§ã™";
 	}
 
 	protected override string _GetTemplateForLabelPrivateGroup()
 	{
-		return "プライベート";
+		return "ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelPublicGroup()
 	{
-		return "公開";
+		return "å…¬é–‹";
 	}
 
 	protected override string _GetTemplateForLabelPublishPlace()
 	{
-		return "プレースを公開する";
+		return "ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’å…¬é–‹ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelRemoveGroupPlace()
 	{
-		return "グループプレースを削除";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForLabelRemoveMember()
 	{
-		return "メンバーを削除";
+		return "ãƒ¡ãƒ³ãƒãƒ¼ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForLabelRename()
 	{
-		return "名前を変更";
+		return "åå‰ã‚’å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelRevertGroupAsset()
 	{
-		return "グループアセットを元に戻す";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚»ãƒƒãƒˆã‚’å…ƒã«æˆ»ã™";
 	}
 
 	protected override string _GetTemplateForLabelSavePlace()
 	{
-		return "プレースを保存";
+		return "ãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’ä¿å­˜";
 	}
 
 	protected override string _GetTemplateForLabelSearchGroups()
 	{
-		return "すべてのグループを検索";
+		return "ã™ã¹ã¦ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’æ¤œç´¢";
 	}
 
 	protected override string _GetTemplateForLabelSearchUsers()
 	{
-		return "ユーザーを検索";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’æ¤œç´¢";
 	}
 
 	protected override string _GetTemplateForLabelSendAllyRequest()
 	{
-		return "同盟リクエストを送信";
+		return "åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForLabelShoutPlaceholder()
 	{
-		return "シャウトを入力してください";
+		return "ã‚·ãƒ£ã‚¦ãƒˆã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelSpendGroupFunds()
 	{
-		return "グループ資金を使う";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—è³‡é‡‘ã‚’ä½¿ã†";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForLabelUnlock()
 	{
-		return "アンロック";
+		return "ã‚¢ãƒ³ãƒ­ãƒƒã‚¯";
 	}
 
 	protected override string _GetTemplateForLabelUpdateGroupAsset()
 	{
-		return "グループアセットをアップデート";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚»ãƒƒãƒˆã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelWallPostPlaceholder()
 	{
-		return "発言してください...";
+		return "ç™ºè¨€ã—ã¦ãã ã•ã„...";
 	}
 
 	protected override string _GetTemplateForLabelWallPostsUnavailable()
 	{
-		return "掲示板への投稿は一時的に利用できません。しばらくしてからもう一度お試しください。";
+		return "æŽ²ç¤ºæ¿ã¸ã®æŠ•ç¨¿ã¯ä¸€æ™‚çš„ã«åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelWarning()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	/// <summary>
@@ -2215,12 +2215,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAbandon(string actor)
 	{
-		return $"{actor} （グループ所有者）がグループを破棄しました";
+		return $"{actor} ï¼ˆã‚°ãƒ«ãƒ¼ãƒ—æ‰€æœ‰è€…ï¼‰ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚’ç ´æ£„ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageAbandon()
 	{
-		return "{actor} （グループ所有者）がグループを破棄しました";
+		return "{actor} ï¼ˆã‚°ãƒ«ãƒ¼ãƒ—æ‰€æœ‰è€…ï¼‰ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚’ç ´æ£„ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2229,12 +2229,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAcceptAllyRequest(string actor, string group)
 	{
-		return $"{actor} が {group} グループの同盟リクエストを承認しました";
+		return $"{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã®åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageAcceptAllyRequest()
 	{
-		return "{actor} が {group} グループの同盟リクエストを承認しました";
+		return "{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã®åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2243,12 +2243,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAcceptJoinRequest(string actor, string user)
 	{
-		return $"{actor} が ユーザーの {user} の参加リクエストを承認しました";
+		return $"{actor} ãŒ ãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã®å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageAcceptJoinRequest()
 	{
-		return "{actor} が ユーザーの {user} の参加リクエストを承認しました";
+		return "{actor} ãŒ ãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã®å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2257,12 +2257,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAddGroupPlace(string actor, string game)
 	{
-		return $"{actor} がゲームの {game} をグループゲームに追加しました";
+		return $"{actor} ãŒã‚²ãƒ¼ãƒ ã® {game} ã‚’ã‚°ãƒ«ãƒ¼ãƒ—ã‚²ãƒ¼ãƒ ã«è¿½åŠ ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageAddGroupPlace()
 	{
-		return "{actor} がゲームの {game} をグループゲームに追加しました";
+		return "{actor} ãŒã‚²ãƒ¼ãƒ ã® {game} ã‚’ã‚°ãƒ«ãƒ¼ãƒ—ã‚²ãƒ¼ãƒ ã«è¿½åŠ ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2271,12 +2271,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAdjustCurrencyAmountsDecreased(string actor, string amount)
 	{
-		return $"{actor} がグループ資金を {amount} 減らしました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—è³‡é‡‘ã‚’ {amount} æ¸›ã‚‰ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageAdjustCurrencyAmountsDecreased()
 	{
-		return "{actor} がグループ資金を {amount} 減らしました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—è³‡é‡‘ã‚’ {amount} æ¸›ã‚‰ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2285,27 +2285,27 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAdjustCurrencyAmountsIncreased(string actor, string amount)
 	{
-		return $"{actor} がグループ資金を {amount} 増やしました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—è³‡é‡‘ã‚’ {amount} å¢—ã‚„ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageAdjustCurrencyAmountsIncreased()
 	{
-		return "{actor} がグループ資金を {amount} 増やしました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—è³‡é‡‘ã‚’ {amount} å¢—ã‚„ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageAlreadyMember()
 	{
-		return "すでにこのグループのメンバーです。";
+		return "ã™ã§ã«ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ¡ãƒ³ãƒãƒ¼ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAlreadyRequested()
 	{
-		return "このグループにはすでに参加リクエスト中です。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯ã™ã§ã«å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆä¸­ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageBuildGroupRolesListError()
 	{
-		return "選択した役割のメンバーを読み込めません。";
+		return "é¸æŠžã—ãŸå½¹å‰²ã®ãƒ¡ãƒ³ãƒãƒ¼ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -2314,12 +2314,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageBuyAd(string actor, string bid, string adName)
 	{
-		return $"{actor} が {adName} のグループ広告を {bid} で入札";
+		return $"{actor} ãŒ {adName} ã®ã‚°ãƒ«ãƒ¼ãƒ—åºƒå‘Šã‚’ {bid} ã§å…¥æœ­";
 	}
 
 	protected override string _GetTemplateForMessageBuyAd()
 	{
-		return "{actor} が {adName} のグループ広告を {bid} で入札";
+		return "{actor} ãŒ {adName} ã®ã‚°ãƒ«ãƒ¼ãƒ—åºƒå‘Šã‚’ {bid} ã§å…¥æœ­";
 	}
 
 	/// <summary>
@@ -2328,12 +2328,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageBuyClan(string actor)
 	{
-		return $"{actor} がグループクランを購入しました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚¯ãƒ©ãƒ³ã‚’è³¼å…¥ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageBuyClan()
 	{
-		return "{actor} がグループクランを購入しました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚¯ãƒ©ãƒ³ã‚’è³¼å…¥ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2342,17 +2342,17 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCancelClanInvite(string actor, string user)
 	{
-		return $"{actor} が {user} へのクランへの招待状をキャンセルしました";
+		return $"{actor} ãŒ {user} ã¸ã®ã‚¯ãƒ©ãƒ³ã¸ã®æ‹›å¾…çŠ¶ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageCancelClanInvite()
 	{
-		return "{actor} が {user} へのクランへの招待状をキャンセルしました";
+		return "{actor} ãŒ {user} ã¸ã®ã‚¯ãƒ©ãƒ³ã¸ã®æ‹›å¾…çŠ¶ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageCannotClaimGroupWithOwner()
 	{
-		return "このグループには、すでに所有者が存在します。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯ã€ã™ã§ã«æ‰€æœ‰è€…ãŒå­˜åœ¨ã—ã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -2361,12 +2361,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageChangeDescription(string actor, string newDescription)
 	{
-		return $"{actor} が詳細を 「{newDescription}」に変更しました";
+		return $"{actor} ãŒè©³ç´°ã‚’ ã€Œ{newDescription}ã€ã«å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageChangeDescription()
 	{
-		return "{actor} が詳細を 「{newDescription}」に変更しました";
+		return "{actor} ãŒè©³ç´°ã‚’ ã€Œ{newDescription}ã€ã«å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2375,17 +2375,17 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageChangeOwner(string actor, string user)
 	{
-		return $"{actor} がグループ所有者を変更しました。 {user} が新しいグループ所有者です";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—æ‰€æœ‰è€…ã‚’å¤‰æ›´ã—ã¾ã—ãŸã€‚ {user} ãŒæ–°ã—ã„ã‚°ãƒ«ãƒ¼ãƒ—æ‰€æœ‰è€…ã§ã™";
 	}
 
 	protected override string _GetTemplateForMessageChangeOwner()
 	{
-		return "{actor} がグループ所有者を変更しました。 {user} が新しいグループ所有者です";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—æ‰€æœ‰è€…ã‚’å¤‰æ›´ã—ã¾ã—ãŸã€‚ {user} ãŒæ–°ã—ã„ã‚°ãƒ«ãƒ¼ãƒ—æ‰€æœ‰è€…ã§ã™";
 	}
 
 	protected override string _GetTemplateForMessageChangeOwnerEmpty()
 	{
-		return "グループの所有者がいません";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã®æ‰€æœ‰è€…ãŒã„ã¾ã›ã‚“";
 	}
 
 	/// <summary>
@@ -2394,12 +2394,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageChangeRank(string actor, string user, string oldRoleSet, string newRoleSet)
 	{
-		return $"{actor} がユーザーの {user} のランクを {oldRoleSet} から {newRoleSet} に変更しました";
+		return $"{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã®ãƒ©ãƒ³ã‚¯ã‚’ {oldRoleSet} ã‹ã‚‰ {newRoleSet} ã«å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageChangeRank()
 	{
-		return "{actor} がユーザーの {user} のランクを {oldRoleSet} から {newRoleSet} に変更しました";
+		return "{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã®ãƒ©ãƒ³ã‚¯ã‚’ {oldRoleSet} ã‹ã‚‰ {newRoleSet} ã«å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2408,22 +2408,22 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageClaim(string actor)
 	{
-		return $"{actor} がグループの所有権を取得しました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã®æ‰€æœ‰æ¨©ã‚’å–å¾—ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageClaim()
 	{
-		return "{actor} がグループの所有権を取得しました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã®æ‰€æœ‰æ¨©ã‚’å–å¾—ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageClaimOwnershipError()
 	{
-		return "グループの所有権を取得できません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã®æ‰€æœ‰æ¨©ã‚’å–å¾—ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageClaimOwnershipSuccess()
 	{
-		return "グループの所有権を取得しました。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã®æ‰€æœ‰æ¨©ã‚’å–å¾—ã—ã¾ã—ãŸã€‚";
 	}
 
 	/// <summary>
@@ -2432,12 +2432,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureAsset(string actor, string item, string actions)
 	{
-		return $"{actor} が {item} のアセットをアップデートしました: {actions}";
+		return $"{actor} ãŒ {item} ã®ã‚¢ã‚»ãƒƒãƒˆã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸ: {actions}";
 	}
 
 	protected override string _GetTemplateForMessageConfigureAsset()
 	{
-		return "{actor} が {item} のアセットをアップデートしました: {actions}";
+		return "{actor} ãŒ {item} ã®ã‚¢ã‚»ãƒƒãƒˆã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸ: {actions}";
 	}
 
 	/// <summary>
@@ -2446,12 +2446,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureBadgeDisabled(string actor, string badge)
 	{
-		return $"{actor} が {badge} バッジを無効化しました";
+		return $"{actor} ãŒ {badge} ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹åŒ–ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageConfigureBadgeDisabled()
 	{
-		return "{actor} が {badge} バッジを無効化しました";
+		return "{actor} ãŒ {badge} ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹åŒ–ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2460,12 +2460,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureBadgeEnabled(string actor, string badge)
 	{
-		return $"{actor} が {badge} バッジを有効化しました";
+		return $"{actor} ãŒ {badge} ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹åŒ–ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageConfigureBadgeEnabled()
 	{
-		return "{actor} が {badge} バッジを有効化しました";
+		return "{actor} ãŒ {badge} ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹åŒ–ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2474,12 +2474,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureBadgeUpdate(string actor, string badge)
 	{
-		return $"{actor} が {badge} バッジを環境設定しました";
+		return $"{actor} ãŒ {badge} ãƒãƒƒã‚¸ã‚’ç’°å¢ƒè¨­å®šã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageConfigureBadgeUpdate()
 	{
-		return "{actor} が {badge} バッジを環境設定しました";
+		return "{actor} ãŒ {badge} ãƒãƒƒã‚¸ã‚’ç’°å¢ƒè¨­å®šã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2488,12 +2488,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureGame(string actor, string game, string actions)
 	{
-		return $"{actor} が {game} をアップデートしました: {actions}";
+		return $"{actor} ãŒ {game} ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸ: {actions}";
 	}
 
 	protected override string _GetTemplateForMessageConfigureGame()
 	{
-		return "{actor} が {game} をアップデートしました: {actions}";
+		return "{actor} ãŒ {game} ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸ: {actions}";
 	}
 
 	/// <summary>
@@ -2502,12 +2502,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureGameDeveloperProduct(string actor, string id, string actions)
 	{
-		return $"{actor} がID {id} の開発者製品をアップデートしました: {actions}";
+		return $"{actor} ãŒID {id} ã®é–‹ç™ºè€…è£½å“ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸ: {actions}";
 	}
 
 	protected override string _GetTemplateForMessageConfigureGameDeveloperProduct()
 	{
-		return "{actor} がID {id} の開発者製品をアップデートしました: {actions}";
+		return "{actor} ãŒID {id} ã®é–‹ç™ºè€…è£½å“ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸ: {actions}";
 	}
 
 	/// <summary>
@@ -2516,12 +2516,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageConfigureItems(string actor, string item)
 	{
-		return $"{actor} がグループアイテムの {item} を環境設定しました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ãƒ†ãƒ ã® {item} ã‚’ç’°å¢ƒè¨­å®šã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageConfigureItems()
 	{
-		return "{actor} がグループアイテムの {item} を環境設定しました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ãƒ†ãƒ ã® {item} ã‚’ç’°å¢ƒè¨­å®šã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2530,12 +2530,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateAsset(string actor, string item)
 	{
-		return $"{actor} が {item} のアセットを作成しました";
+		return $"{actor} ãŒ {item} ã®ã‚¢ã‚»ãƒƒãƒˆã‚’ä½œæˆã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageCreateAsset()
 	{
-		return "{actor} が {item} のアセットを作成しました";
+		return "{actor} ãŒ {item} ã®ã‚¢ã‚»ãƒƒãƒˆã‚’ä½œæˆã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2544,12 +2544,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateBadge(string actor, string badge)
 	{
-		return $"{actor} が {badge} バッジを作成しました";
+		return $"{actor} ãŒ {badge} ãƒãƒƒã‚¸ã‚’ä½œæˆã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageCreateBadge()
 	{
-		return "{actor} が {badge} バッジを作成しました";
+		return "{actor} ãŒ {badge} ãƒãƒƒã‚¸ã‚’ä½œæˆã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2558,12 +2558,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateDeveloperProduct(string actor, string id)
 	{
-		return $"{actor} がID {id} の開発者製品を作成しました";
+		return $"{actor} ãŒID {id} ã®é–‹ç™ºè€…è£½å“ã‚’ä½œæˆã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageCreateDeveloperProduct()
 	{
-		return "{actor} がID {id} の開発者製品を作成しました";
+		return "{actor} ãŒID {id} ã®é–‹ç™ºè€…è£½å“ã‚’ä½œæˆã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2572,12 +2572,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateEnemy(string actor, string group)
 	{
-		return $"{actor} が {group} グループを敵に指定しました\u3000";
+		return $"{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã‚’æ•µã«æŒ‡å®šã—ã¾ã—ãŸ\u3000";
 	}
 
 	protected override string _GetTemplateForMessageCreateEnemy()
 	{
-		return "{actor} が {group} グループを敵に指定しました\u3000";
+		return "{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã‚’æ•µã«æŒ‡å®šã—ã¾ã—ãŸ\u3000";
 	}
 
 	/// <summary>
@@ -2586,12 +2586,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateGamePass(string actor, string game, string gamePass)
 	{
-		return $"{actor} が {game} のゲームパスを作成しました: {gamePass}";
+		return $"{actor} ãŒ {game} ã®ã‚²ãƒ¼ãƒ ãƒ‘ã‚¹ã‚’ä½œæˆã—ã¾ã—ãŸ: {gamePass}";
 	}
 
 	protected override string _GetTemplateForMessageCreateGamePass()
 	{
-		return "{actor} が {game} のゲームパスを作成しました: {gamePass}";
+		return "{actor} ãŒ {game} ã®ã‚²ãƒ¼ãƒ ãƒ‘ã‚¹ã‚’ä½œæˆã—ã¾ã—ãŸ: {gamePass}";
 	}
 
 	/// <summary>
@@ -2600,12 +2600,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCreateItems(string actor, string item)
 	{
-		return $"{actor} がグループアイテムの {item} を作成しました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ãƒ†ãƒ ã® {item} ã‚’ä½œæˆã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageCreateItems()
 	{
-		return "{actor} がグループアイテムの {item} を作成しました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ãƒ†ãƒ ã® {item} ã‚’ä½œæˆã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2614,12 +2614,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeclineAllyRequest(string actor, string group)
 	{
-		return $"{actor} が {group} グループの同盟リクエストを却下しました";
+		return $"{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã®åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å´ä¸‹ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageDeclineAllyRequest()
 	{
-		return "{actor} が {group} グループの同盟リクエストを却下しました";
+		return "{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã®åŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å´ä¸‹ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2628,17 +2628,17 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeclineJoinRequest(string actor, string user)
 	{
-		return $"{actor} が ユーザーの {user} の参加リクエストを却下しました";
+		return $"{actor} ãŒ ãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã®å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å´ä¸‹ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageDeclineJoinRequest()
 	{
-		return "{actor} が ユーザーの {user} の参加リクエストを却下しました";
+		return "{actor} ãŒ ãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã®å‚åŠ ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å´ä¸‹ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "エラーが発生しました。";
+		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 	}
 
 	/// <summary>
@@ -2647,12 +2647,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDelete(string actor)
 	{
-		return $"{actor} が現在のグループを削除しました";
+		return $"{actor} ãŒç¾åœ¨ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageDelete()
 	{
-		return "{actor} が現在のグループを削除しました";
+		return "{actor} ãŒç¾åœ¨ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2661,12 +2661,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeleteAlly(string actor, string group)
 	{
-		return $"{actor} が {group} グループを同盟から削除しました\u3000";
+		return $"{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã‚’åŒç›Ÿã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ\u3000";
 	}
 
 	protected override string _GetTemplateForMessageDeleteAlly()
 	{
-		return "{actor} が {group} グループを同盟から削除しました\u3000";
+		return "{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã‚’åŒç›Ÿã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ\u3000";
 	}
 
 	/// <summary>
@@ -2675,12 +2675,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeleteEnemy(string actor, string group)
 	{
-		return $"{actor} が {group} グループを敵から削除しました\u3000";
+		return $"{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã‚’æ•µã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ\u3000";
 	}
 
 	protected override string _GetTemplateForMessageDeleteEnemy()
 	{
-		return "{actor} が {group} グループを敵から削除しました\u3000";
+		return "{actor} ãŒ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã‚’æ•µã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ\u3000";
 	}
 
 	/// <summary>
@@ -2689,12 +2689,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeleteGroupPlace(string actor, string game)
 	{
-		return $"{actor} がゲームの {game} をグループゲームから削除しました";
+		return $"{actor} ãŒã‚²ãƒ¼ãƒ ã® {game} ã‚’ã‚°ãƒ«ãƒ¼ãƒ—ã‚²ãƒ¼ãƒ ã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageDeleteGroupPlace()
 	{
-		return "{actor} がゲームの {game} をグループゲームから削除しました";
+		return "{actor} ãŒã‚²ãƒ¼ãƒ ã® {game} ã‚’ã‚°ãƒ«ãƒ¼ãƒ—ã‚²ãƒ¼ãƒ ã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -2703,67 +2703,67 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeletePost(string actor, string postDesc, string user)
 	{
-		return $"{actor} がユーザーの {user} が投稿した「{postDesc}」を削除しました";
+		return $"{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ãŒæŠ•ç¨¿ã—ãŸã€Œ{postDesc}ã€ã‚’å‰Šé™¤ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageDeletePost()
 	{
-		return "{actor} がユーザーの {user} が投稿した「{postDesc}」を削除しました";
+		return "{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ãŒæŠ•ç¨¿ã—ãŸã€Œ{postDesc}ã€ã‚’å‰Šé™¤ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageDeleteWallPostError()
 	{
-		return "掲示板投稿を削除できません。";
+		return "æŽ²ç¤ºæ¿æŠ•ç¨¿ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDeleteWallPostsByUserError()
 	{
-		return "ユーザーの掲示板投稿を削除できません。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®æŽ²ç¤ºæ¿æŠ•ç¨¿ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDeleteWallPostSuccess()
 	{
-		return "掲示板投稿を削除しました。";
+		return "æŽ²ç¤ºæ¿æŠ•ç¨¿ã‚’å‰Šé™¤ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionTooLong()
 	{
-		return "詳細が長すぎます。";
+		return "è©³ç´°ãŒé•·ã™ãŽã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDuplicateName()
 	{
-		return "名前はすでに使われています。他の名前をお試しください。";
+		return "åå‰ã¯ã™ã§ã«ä½¿ã‚ã‚Œã¦ã„ã¾ã™ã€‚ä»–ã®åå‰ã‚’ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageExileUserError()
 	{
-		return "ユーザーを追放できません。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’è¿½æ”¾ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFeatureDisabled()
 	{
-		return "この機能はオフになっています。";
+		return "ã“ã®æ©Ÿèƒ½ã¯ã‚ªãƒ•ã«ãªã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGetGroupRelationshipsError()
 	{
-		return "グループの仲間を読み込めません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã®ä»²é–“ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupClosed()
 	{
-		return "閉鎖されたグループに参加することはできません。";
+		return "é–‰éŽ–ã•ã‚ŒãŸã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupCreationDisabled()
 	{
-		return "グループ作成は、現在無効になっています。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ä½œæˆã¯ã€ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupIconInvalid()
 	{
-		return "アイコンが無効、または存在しません。";
+		return "ã‚¢ã‚¤ã‚³ãƒ³ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -2772,127 +2772,127 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageGroupIconTooLarge(string maxSize)
 	{
-		return $"アイコンのサイズは最大 {maxSize} mbまでです。";
+		return $"ã‚¢ã‚¤ã‚³ãƒ³ã®ã‚µã‚¤ã‚ºã¯æœ€å¤§ {maxSize} mbã¾ã§ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupIconTooLarge()
 	{
-		return "アイコンのサイズは最大 {maxSize} mbまでです。";
+		return "ã‚¢ã‚¤ã‚³ãƒ³ã®ã‚µã‚¤ã‚ºã¯æœ€å¤§ {maxSize} mbã¾ã§ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGroupMembershipsUnavailableError()
 	{
-		return "このグループメンバーシップのシステムは一時的にご利用できません。後でもう一度お試しください。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã®ã‚·ã‚¹ãƒ†ãƒ ã¯ä¸€æ™‚çš„ã«ã”åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientFunds()
 	{
-		return "Robuxが不足しています。";
+		return "RobuxãŒä¸è¶³ã—ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientGroupSpace()
 	{
-		return "参加できるグループの最大数に到達しました。";
+		return "å‚åŠ ã§ãã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã®æœ€å¤§æ•°ã«åˆ°é”ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientMembership()
 	{
-		return "このグループへの参加に必要なBuilders Clubメンバーシップがありません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®å‚åŠ ã«å¿…è¦ãªBuilders Clubãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientPermission()
 	{
-		return "リクエストを完了する権限がありません。";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å®Œäº†ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientPermissionsForRelationships()
 	{
-		return "このグループの関係を管理する権限がありません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®é–¢ä¿‚ã‚’ç®¡ç†ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientRobux()
 	{
-		return "Robuxが不足しているためグループ作成できません。";
+		return "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ã‚°ãƒ«ãƒ¼ãƒ—ä½œæˆã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidAmount()
 	{
-		return "この値は無効です。";
+		return "ã“ã®å€¤ã¯ç„¡åŠ¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroup()
 	{
-		return "グループが無効、または存在しません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupIcon()
 	{
-		return "グループアイコンが無効です。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ã‚³ãƒ³ãŒç„¡åŠ¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupId()
 	{
-		return "グループが無効、または存在しません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupWallPostId()
 	{
-		return "グループ掲示板への投稿IDが無効、または存在しません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—æŽ²ç¤ºæ¿ã¸ã®æŠ•ç¨¿IDãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidIds()
 	{
-		return "リクエストからIDを解析できませんでした。";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‹ã‚‰IDã‚’è§£æžã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidIdsError()
 	{
-		return "リクエストからIDを解析できませんでした。";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‹ã‚‰IDã‚’è§£æžã§ãã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidMembership()
 	{
-		return "Builders Clubメンバーシップを持つユーザーである必要があります。";
+		return "Builders Clubãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’æŒã¤ãƒ¦ãƒ¼ã‚¶ãƒ¼ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidName()
 	{
-		return "名前が無効です。";
+		return "åå‰ãŒç„¡åŠ¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPaginationParameters()
 	{
-		return "ページネーションのパラメータが無効、または存在しません。";
+		return "ãƒšãƒ¼ã‚¸ãƒãƒ¼ã‚·ãƒ§ãƒ³ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPayoutType()
 	{
-		return "このペイアウト方法は無効です。";
+		return "ã“ã®ãƒšã‚¤ã‚¢ã‚¦ãƒˆæ–¹æ³•ã¯ç„¡åŠ¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRecipient()
 	{
-		return "この受信者は無効です。";
+		return "ã“ã®å—ä¿¡è€…ã¯ç„¡åŠ¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRelationshipType()
 	{
-		return "グループの関係タイプが無効です。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã®é–¢ä¿‚ã‚¿ã‚¤ãƒ—ãŒç„¡åŠ¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRoleSetId()
 	{
-		return "役割セットが無効、または存在しません。";
+		return "å½¹å‰²ã‚»ãƒƒãƒˆãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidUser()
 	{
-		return "ユーザーが無効、または存在しません。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidWallPostContent()
 	{
-		return "投稿が未入力か空白、または500文字を超えています。";
+		return "æŠ•ç¨¿ãŒæœªå…¥åŠ›ã‹ç©ºç™½ã€ã¾ãŸã¯500æ–‡å­—ã‚’è¶…ãˆã¦ã„ã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -2901,27 +2901,27 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageInviteToClan(string actor, string user)
 	{
-		return $"{actor} がユーザーの {user} をクランに招待しました";
+		return $"{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã‚’ã‚¯ãƒ©ãƒ³ã«æ‹›å¾…ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageInviteToClan()
 	{
-		return "{actor} がユーザーの {user} をクランに招待しました";
+		return "{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã‚’ã‚¯ãƒ©ãƒ³ã«æ‹›å¾…ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageJoinGroupError()
 	{
-		return "グループに参加できません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageJoinGroupPendingSuccess()
 	{
-		return "グループへの参加をリクエストしました。リクエストは保留中です。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®å‚åŠ ã‚’ãƒªã‚¯ã‚¨ã‚¹ãƒˆã—ã¾ã—ãŸã€‚ãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ä¿ç•™ä¸­ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageJoinGroupSuccess()
 	{
-		return "グループに参加しました。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã—ã¾ã—ãŸã€‚";
 	}
 
 	/// <summary>
@@ -2930,57 +2930,57 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageKickFromClan(string actor, string user)
 	{
-		return $"{actor} がユーザーの {user} をクランから追放しました";
+		return $"{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã‚’ã‚¯ãƒ©ãƒ³ã‹ã‚‰è¿½æ”¾ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageKickFromClan()
 	{
-		return "{actor} がユーザーの {user} をクランから追放しました";
+		return "{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã‚’ã‚¯ãƒ©ãƒ³ã‹ã‚‰è¿½æ”¾ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageLeaveGroupError()
 	{
-		return "グループを終了できません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’çµ‚äº†ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupError()
 	{
-		return "グループを読み込めません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupGamesError()
 	{
-		return "ゲームを読み込めません。";
+		return "ã‚²ãƒ¼ãƒ ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupListError()
 	{
-		return "グループリストを読み込めません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ãƒªã‚¹ãƒˆã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupMembershipsError()
 	{
-		return "ユーザーのメンバーシップ情報を読み込めません。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—æƒ…å ±ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupMetadataError()
 	{
-		return "グループ情報を読み込めません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—æƒ…å ±ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupStoreItemsError()
 	{
-		return "ストアのアイテムを読み込めません。";
+		return "ã‚¹ãƒˆã‚¢ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadUserGroupMembershipError()
 	{
-		return "グループのメンバー情報を読み込めません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ¡ãƒ³ãƒãƒ¼æƒ…å ±ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageLoadWallPostsError()
 	{
-		return "掲示板投稿を読み込めません。";
+		return "æŽ²ç¤ºæ¿æŠ•ç¨¿ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -2989,67 +2989,67 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageLock(string actor)
 	{
-		return $"{actor} がグループをロックしました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚’ãƒ­ãƒƒã‚¯ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageLock()
 	{
-		return "{actor} がグループをロックしました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚’ãƒ­ãƒƒã‚¯ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageMakePrimaryError()
 	{
-		return "メイングループに設定できません。";
+		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã«è¨­å®šã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageMaxGroups()
 	{
-		return "ユーザーは、これ以上グループに参加できません。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã“ã‚Œä»¥ä¸Šã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageMissingGroupIcon()
 	{
-		return "リクエストにグループアイコンが存在しません。";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«ã‚°ãƒ«ãƒ¼ãƒ—ã‚¢ã‚¤ã‚³ãƒ³ãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageMissingGroupStatusContent()
 	{
-		return "グループ状況コンテンツがありません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—çŠ¶æ³ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNameInvalid()
 	{
-		return "名前が無効、または存在しません。";
+		return "åå‰ãŒç„¡åŠ¹ã€ã¾ãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNameModerated()
 	{
-		return "名前が規制対象です。";
+		return "åå‰ãŒè¦åˆ¶å¯¾è±¡ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNameTaken()
 	{
-		return "この名前はすでに使われています。";
+		return "ã“ã®åå‰ã¯ã™ã§ã«ä½¿ã‚ã‚Œã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNameTooLong()
 	{
-		return "名前が長すぎます。";
+		return "åå‰ãŒé•·ã™ãŽã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNoPrimary()
 	{
-		return "指定したユーザーには、メイングループが存在しません。";
+		return "æŒ‡å®šã—ãŸãƒ¦ãƒ¼ã‚¶ãƒ¼ã«ã¯ã€ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePassCaptchaToJoin()
 	{
-		return "このグループに参加する前に、キャプチャを完了させる必要があります。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«å‚åŠ ã™ã‚‹å‰ã«ã€ã‚­ãƒ£ãƒ—ãƒãƒ£ã‚’å®Œäº†ã•ã›ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePassCaptchaToPost()
 	{
-		return "グループ掲示板に投稿するには、キャプチャを完了させる必要があります。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—æŽ²ç¤ºæ¿ã«æŠ•ç¨¿ã™ã‚‹ã«ã¯ã€ã‚­ãƒ£ãƒ—ãƒãƒ£ã‚’å®Œäº†ã•ã›ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -3058,12 +3058,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessagePostStatus(string actor, string groupStatus)
 	{
-		return $"{actor} がグループ状況を 「{groupStatus}」に変更しました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—çŠ¶æ³ã‚’ ã€Œ{groupStatus}ã€ã«å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessagePostStatus()
 	{
-		return "{actor} がグループ状況を 「{groupStatus}」に変更しました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—çŠ¶æ³ã‚’ ã€Œ{groupStatus}ã€ã«å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -3072,17 +3072,17 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageRemoveMember(string actor, string user)
 	{
-		return $"{actor} がユーザーの {user} を追放しました";
+		return $"{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã‚’è¿½æ”¾ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageRemoveMember()
 	{
-		return "{actor} がユーザーの {user} を追放しました";
+		return "{actor} ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼ã® {user} ã‚’è¿½æ”¾ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageRemovePrimaryError()
 	{
-		return "メイングループを削除できません。";
+		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -3091,27 +3091,27 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageRename(string actor, string newName)
 	{
-		return $"{actor} が現在のグループ名を {newName} に変更しました";
+		return $"{actor} ãŒç¾åœ¨ã®ã‚°ãƒ«ãƒ¼ãƒ—åã‚’ {newName} ã«å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageRename()
 	{
-		return "{actor} が現在のグループ名を {newName} に変更しました";
+		return "{actor} ãŒç¾åœ¨ã®ã‚°ãƒ«ãƒ¼ãƒ—åã‚’ {newName} ã«å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageSearchTermCharactersLimit()
 	{
-		return "検索する語句は、2から50文字である必要があります";
+		return "æ¤œç´¢ã™ã‚‹èªžå¥ã¯ã€2ã‹ã‚‰50æ–‡å­—ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 	}
 
 	protected override string _GetTemplateForMessageSearchTermEmptyError()
 	{
-		return "検索する語句が空白です";
+		return "æ¤œç´¢ã™ã‚‹èªžå¥ãŒç©ºç™½ã§ã™";
 	}
 
 	protected override string _GetTemplateForMessageSearchTermFilteredError()
 	{
-		return "検索する語句が規制対象です";
+		return "æ¤œç´¢ã™ã‚‹èªžå¥ãŒè¦åˆ¶å¯¾è±¡ã§ã™";
 	}
 
 	/// <summary>
@@ -3120,22 +3120,22 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageSendAllyRequest(string actor, string group)
 	{
-		return $"{actor} が同盟リクエストを {group} グループに送信しました";
+		return $"{actor} ãŒåŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã«é€ä¿¡ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageSendAllyRequest()
 	{
-		return "{actor} が同盟リクエストを {group} グループに送信しました";
+		return "{actor} ãŒåŒç›Ÿãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’ {group} ã‚°ãƒ«ãƒ¼ãƒ—ã«é€ä¿¡ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageSendGroupShoutError()
 	{
-		return "グループシャウトを送信できません。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã‚·ãƒ£ã‚¦ãƒˆã‚’é€ä¿¡ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSendPostError()
 	{
-		return "投稿を送信できません。";
+		return "æŠ•ç¨¿ã‚’é€ä¿¡ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -3144,77 +3144,77 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageSpendGroupFunds(string actor, string amount, string item)
 	{
-		return $"{actor} がグループ資金を {amount} 使ったアイテムは: {item}";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—è³‡é‡‘ã‚’ {amount} ä½¿ã£ãŸã‚¢ã‚¤ãƒ†ãƒ ã¯: {item}";
 	}
 
 	protected override string _GetTemplateForMessageSpendGroupFunds()
 	{
-		return "{actor} がグループ資金を {amount} 使ったアイテムは: {item}";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—è³‡é‡‘ã‚’ {amount} ä½¿ã£ãŸã‚¢ã‚¤ãƒ†ãƒ ã¯: {item}";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAttempts()
 	{
-		return "グループへの参加の試行回数が多すぎます。後でもう一度お試しください。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—ã¸ã®å‚åŠ ã®è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAttemptsToClaimGroups()
 	{
-		return "グループ取得の試行回数が多すぎます。後でもう一度お試しください。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—å–å¾—ã®è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyGroups()
 	{
-		return "グループ数が上限に達しました。新しいものを作成する前にグループから抜けてください。";
+		return "ã‚°ãƒ«ãƒ¼ãƒ—æ•°ãŒä¸Šé™ã«é”ã—ã¾ã—ãŸã€‚æ–°ã—ã„ã‚‚ã®ã‚’ä½œæˆã™ã‚‹å‰ã«ã‚°ãƒ«ãƒ¼ãƒ—ã‹ã‚‰æŠœã‘ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyIds()
 	{
-		return "リクエストしたIDが多すぎます。";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã—ãŸIDãŒå¤šã™ãŽã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyPosts()
 	{
-		return "投稿の間隔が短すぎます。数分後にもう一度お試しください。";
+		return "æŠ•ç¨¿ã®é–“éš”ãŒçŸ­ã™ãŽã¾ã™ã€‚æ•°åˆ†å¾Œã«ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyRequests()
 	{
-		return "リクエストが多すぎます。";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå¤šã™ãŽã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedForPostStatus()
 	{
-		return "このグループの状況を設定する権限がありません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®çŠ¶æ³ã‚’è¨­å®šã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedForViewGroupPayouts()
 	{
-		return "このグループのペイアウトを見る権限がありません";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒšã‚¤ã‚¢ã‚¦ãƒˆã‚’è¦‹ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToClaimGroup()
 	{
-		return "このグループを取得する権限がありません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å–å¾—ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToManageMember()
 	{
-		return "このメンバーの管理をする権限がありません。";
+		return "ã“ã®ãƒ¡ãƒ³ãƒãƒ¼ã®ç®¡ç†ã‚’ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToViewRolesetPermissions()
 	{
-		return "この役割の許可レベルを見る権限がありません。";
+		return "ã“ã®å½¹å‰²ã®è¨±å¯ãƒ¬ãƒ™ãƒ«ã‚’è¦‹ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToViewWall()
 	{
-		return "このグループの掲示板にアクセスする権限がありません。";
+		return "ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®æŽ²ç¤ºæ¿ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "不明なエラーが発生しました";
+		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -3223,12 +3223,12 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageUnlock(string actor)
 	{
-		return $"{actor} がグループをアンロックしました";
+		return $"{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚’ã‚¢ãƒ³ãƒ­ãƒƒã‚¯ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageUnlock()
 	{
-		return "{actor} がグループをアンロックしました";
+		return "{actor} ãŒã‚°ãƒ«ãƒ¼ãƒ—ã‚’ã‚¢ãƒ³ãƒ­ãƒƒã‚¯ã—ã¾ã—ãŸ";
 	}
 
 	/// <summary>
@@ -3237,16 +3237,19 @@ internal class GroupsResources_ja_jp : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageUpdateAssetRevert(string actor, string item, string version, string oldVersion)
 	{
-		return $"{actor} が {item} のアセットをバージョン {version} から {oldVersion} に戻しました";
+		return $"{actor} ãŒ {item} ã®ã‚¢ã‚»ãƒƒãƒˆã‚’ãƒãƒ¼ã‚¸ãƒ§ãƒ³ {version} ã‹ã‚‰ {oldVersion} ã«æˆ»ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageUpdateAssetRevert()
 	{
-		return "{actor} が {item} のアセットをバージョン {version} から {oldVersion} に戻しました";
+		return "{actor} ãŒ {item} ã®ã‚¢ã‚»ãƒƒãƒˆã‚’ãƒãƒ¼ã‚¸ãƒ§ãƒ³ {version} ã‹ã‚‰ {oldVersion} ã«æˆ»ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageUserNotInGroup()
 	{
-		return "指定したグループのメンバーではありません。";
+		return "æŒ‡å®šã—ãŸã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
+}
+
+
 }

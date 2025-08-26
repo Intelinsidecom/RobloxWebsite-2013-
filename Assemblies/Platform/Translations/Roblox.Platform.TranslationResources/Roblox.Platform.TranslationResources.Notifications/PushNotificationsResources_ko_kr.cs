@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notifications {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PushNotificationsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,14 +11,14 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// You have a been invited to a VIP server!
 	/// English String: "You have a been invited to a VIP server!"
 	/// </summary>
-	public override string MessageAddedToPrivateServerWhiteListDefault => "VIP 서버에 초대받았어요.";
+	public override string MessageAddedToPrivateServerWhiteListDefault => "VIP ì„œë²„ì— ì´ˆëŒ€ë°›ì•˜ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.DefaultSystemMessage.Body"
 	/// New activity on Roblox!
 	/// English String: "New activity on Roblox!"
 	/// </summary>
-	public override string MessageDefaultSystemMessageBody => "Roblox에 새로운 액티비티가 있어요!";
+	public override string MessageDefaultSystemMessageBody => "Robloxì— ìƒˆë¡œìš´ ì•¡í‹°ë¹„í‹°ê°€ ìžˆì–´ìš”!";
 
 	/// <summary>
 	/// Key: "Message.DefaultSystemMessage.Title"
@@ -32,49 +32,49 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// Your friend request has been accepted!
 	/// English String: "Your friend request has been accepted!"
 	/// </summary>
-	public override string MessageFriendRequestAcceptedDefault => "친구 요청이 수락되었어요.";
+	public override string MessageFriendRequestAcceptedDefault => "ì¹œêµ¬ ìš”ì²­ì´ ìˆ˜ë½ë˜ì—ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.FriendRequestReceived.Default"
 	/// You have a new friend request!
 	/// English String: "You have a new friend request!"
 	/// </summary>
-	public override string MessageFriendRequestReceivedDefault => "새로운 친구 요청이 있어요.";
+	public override string MessageFriendRequestReceivedDefault => "ìƒˆë¡œìš´ ì¹œêµ¬ ìš”ì²­ì´ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.NewChatMessage.Default"
 	/// You have a new chat message.
 	/// English String: "You have a new chat message."
 	/// </summary>
-	public override string MessageNewChatMessageDefault => "새로운 채팅 메시지가 있어요.";
+	public override string MessageNewChatMessageDefault => "ìƒˆë¡œìš´ ì±„íŒ… ë©”ì‹œì§€ê°€ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.PartyInvitation.Default"
 	/// You are invited to a party!
 	/// English String: "You are invited to a party!"
 	/// </summary>
-	public override string MessagePartyInvitationDefault => "파티 초대를 받았어요!";
+	public override string MessagePartyInvitationDefault => "íŒŒí‹° ì´ˆëŒ€ë¥¼ ë°›ì•˜ì–´ìš”!";
 
 	/// <summary>
 	/// Key: "Message.PartyMembersJoined.Default"
 	/// A new member joined your party!
 	/// English String: "A new member joined your party!"
 	/// </summary>
-	public override string MessagePartyMembersJoinedDefault => "새로운 멤버가 회원님이 파티에 참가했어요.";
+	public override string MessagePartyMembersJoinedDefault => "ìƒˆë¡œìš´ ë©¤ë²„ê°€ íšŒì›ë‹˜ì´ íŒŒí‹°ì— ì°¸ê°€í–ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.PrivateMessageReceived.Default"
 	/// You have a new private message.
 	/// English String: "You have a new private message."
 	/// </summary>
-	public override string MessagePrivateMessageReceivedDefault => "새 비공개 메시지가 있어요.";
+	public override string MessagePrivateMessageReceivedDefault => "ìƒˆ ë¹„ê³µê°œ ë©”ì‹œì§€ê°€ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.TeamCreateInvitation.Default"
 	/// A user invites another user to contribute to a team create game.
 	/// English String: "You are invited to edit a game!"
 	/// </summary>
-	public override string MessageTeamCreateInvitationDefault => "게임 편집에 초대받았어요.";
+	public override string MessageTeamCreateInvitationDefault => "ê²Œìž„ íŽ¸ì§‘ì— ì´ˆëŒ€ë°›ì•˜ì–´ìš”.";
 
 	public PushNotificationsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -88,22 +88,22 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageAddedToPrivateServerWhiteListAddedToWhiteListMessage(string vipInviter, string server, string place)
 	{
-		return $"{vipInviter}님이 회원님을 VIP 서버({server}, 장소: {place})에 추가했어요!";
+		return $"{vipInviter}ë‹˜ì´ íšŒì›ë‹˜ì„ VIP ì„œë²„({server}, ìž¥ì†Œ: {place})ì— ì¶”ê°€í–ˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListAddedToWhiteListMessage()
 	{
-		return "{vipInviter}님이 회원님을 VIP 서버({server}, 장소: {place})에 추가했어요!";
+		return "{vipInviter}ë‹˜ì´ íšŒì›ë‹˜ì„ VIP ì„œë²„({server}, ìž¥ì†Œ: {place})ì— ì¶”ê°€í–ˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListDefault()
 	{
-		return "VIP 서버에 초대받았어요.";
+		return "VIP ì„œë²„ì— ì´ˆëŒ€ë°›ì•˜ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageBody()
 	{
-		return "Roblox에 새로운 액티비티가 있어요!";
+		return "Robloxì— ìƒˆë¡œìš´ ì•¡í‹°ë¹„í‹°ê°€ ìžˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageTitle()
@@ -118,17 +118,17 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestAcceptedAcceptedMessage(string friend)
 	{
-		return $"{friend}님이 친구 요청을 수락했어요.";
+		return $"{friend}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedAcceptedMessage()
 	{
-		return "{friend}님이 친구 요청을 수락했어요.";
+		return "{friend}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedDefault()
 	{
-		return "친구 요청이 수락되었어요.";
+		return "ì¹œêµ¬ ìš”ì²­ì´ ìˆ˜ë½ë˜ì—ˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -138,17 +138,17 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestReceivedCompleteMessage(string friend)
 	{
-		return $"이제 {friend}님과 친구예요!";
+		return $"ì´ì œ {friend}ë‹˜ê³¼ ì¹œêµ¬ì˜ˆìš”!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedCompleteMessage()
 	{
-		return "이제 {friend}님과 친구예요!";
+		return "ì´ì œ {friend}ë‹˜ê³¼ ì¹œêµ¬ì˜ˆìš”!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedDefault()
 	{
-		return "새로운 친구 요청이 있어요.";
+		return "ìƒˆë¡œìš´ ì¹œêµ¬ ìš”ì²­ì´ ìžˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -158,17 +158,17 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestReceivedNewRequestMessage(string friend)
 	{
-		return $"{friend}님에게 친구 요청을 받았어요.";
+		return $"{friend}ë‹˜ì—ê²Œ ì¹œêµ¬ ìš”ì²­ì„ ë°›ì•˜ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedNewRequestMessage()
 	{
-		return "{friend}님에게 친구 요청을 받았어요.";
+		return "{friend}ë‹˜ì—ê²Œ ì¹œêµ¬ ìš”ì²­ì„ ë°›ì•˜ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageNewChatMessageDefault()
 	{
-		return "새로운 채팅 메시지가 있어요.";
+		return "ìƒˆë¡œìš´ ì±„íŒ… ë©”ì‹œì§€ê°€ ìžˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -203,7 +203,7 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 
 	protected override string _GetTemplateForMessagePartyInvitationDefault()
 	{
-		return "파티 초대를 받았어요!";
+		return "íŒŒí‹° ì´ˆëŒ€ë¥¼ ë°›ì•˜ì–´ìš”!";
 	}
 
 	/// <summary>
@@ -213,12 +213,12 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyInvitationPartyMessage(string partyInviter)
 	{
-		return $"{partyInviter}님이 회원님을 파티에 초대했어요.";
+		return $"{partyInviter}ë‹˜ì´ íšŒì›ë‹˜ì„ íŒŒí‹°ì— ì´ˆëŒ€í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationPartyMessage()
 	{
-		return "{partyInviter}님이 회원님을 파티에 초대했어요.";
+		return "{partyInviter}ë‹˜ì´ íšŒì›ë‹˜ì„ íŒŒí‹°ì— ì´ˆëŒ€í–ˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -228,17 +228,17 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyInvitationXBoxPartyMessage(string partyInviter)
 	{
-		return $"{partyInviter}님이 XBOX 파티에 회원님을 초대했어요!";
+		return $"{partyInviter}ë‹˜ì´ XBOX íŒŒí‹°ì— íšŒì›ë‹˜ì„ ì´ˆëŒ€í–ˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationXBoxPartyMessage()
 	{
-		return "{partyInviter}님이 XBOX 파티에 회원님을 초대했어요!";
+		return "{partyInviter}ë‹˜ì´ XBOX íŒŒí‹°ì— íšŒì›ë‹˜ì„ ì´ˆëŒ€í–ˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForMessagePartyMembersJoinedDefault()
 	{
-		return "새로운 멤버가 회원님이 파티에 참가했어요.";
+		return "ìƒˆë¡œìš´ ë©¤ë²„ê°€ íšŒì›ë‹˜ì´ íŒŒí‹°ì— ì°¸ê°€í–ˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -248,17 +248,17 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyMembersJoinedJoinMessage(string partyInvitee)
 	{
-		return $"{partyInvitee}님이 회원님의 파티에 참가했어요.";
+		return $"{partyInvitee}ë‹˜ì´ íšŒì›ë‹˜ì˜ íŒŒí‹°ì— ì°¸ê°€í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessagePartyMembersJoinedJoinMessage()
 	{
-		return "{partyInvitee}님이 회원님의 파티에 참가했어요.";
+		return "{partyInvitee}ë‹˜ì´ íšŒì›ë‹˜ì˜ íŒŒí‹°ì— ì°¸ê°€í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessagePrivateMessageReceivedDefault()
 	{
-		return "새 비공개 메시지가 있어요.";
+		return "ìƒˆ ë¹„ê³µê°œ ë©”ì‹œì§€ê°€ ìžˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -268,12 +268,12 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePrivateMessageReceivedMessageReceived(string messageSender)
 	{
-		return $"{messageSender}님이 새 비공개 메시지를 보냈어요.";
+		return $"{messageSender}ë‹˜ì´ ìƒˆ ë¹„ê³µê°œ ë©”ì‹œì§€ë¥¼ ë³´ëƒˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessagePrivateMessageReceivedMessageReceived()
 	{
-		return "{messageSender}님이 새 비공개 메시지를 보냈어요.";
+		return "{messageSender}ë‹˜ì´ ìƒˆ ë¹„ê³µê°œ ë©”ì‹œì§€ë¥¼ ë³´ëƒˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -282,17 +282,17 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageTeamCreateInvitation(string inviter, string gameName)
 	{
-		return $"{inviter}님이 {gameName} 편집에 초대했어요.";
+		return $"{inviter}ë‹˜ì´ {gameName} íŽ¸ì§‘ì— ì´ˆëŒ€í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageTeamCreateInvitation()
 	{
-		return "{inviter}님이 {gameName} 편집에 초대했어요.";
+		return "{inviter}ë‹˜ì´ {gameName} íŽ¸ì§‘ì— ì´ˆëŒ€í–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessageTeamCreateInvitationDefault()
 	{
-		return "게임 편집에 초대받았어요.";
+		return "ê²Œìž„ íŽ¸ì§‘ì— ì´ˆëŒ€ë°›ì•˜ì–´ìš”.";
 	}
 
 	/// <summary>
@@ -301,11 +301,14 @@ internal class PushNotificationsResources_ko_kr : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagesPlayTogether(string actorUsername, string universeName)
 	{
-		return $"{actorUsername}님이 선택한 게임: {universeName}";
+		return $"{actorUsername}ë‹˜ì´ ì„ íƒí•œ ê²Œìž„: {universeName}";
 	}
 
 	protected override string _GetTemplateForMessagesPlayTogether()
 	{
-		return "{actorUsername}님이 선택한 게임: {universeName}";
+		return "{actorUsername}ë‹˜ì´ ì„ íƒí•œ ê²Œìž„: {universeName}";
 	}
+}
+
+
 }

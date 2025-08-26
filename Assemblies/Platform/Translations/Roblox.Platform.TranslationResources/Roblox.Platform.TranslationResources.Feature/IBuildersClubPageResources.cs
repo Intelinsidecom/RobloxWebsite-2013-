@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IBuildersClubPageResources : ITranslationResources
 
-public interface IBuildersClubPageResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Description.SigningBonusDesclaimer"
@@ -190,4 +190,7 @@ public interface IBuildersClubPageResources : ITranslationResources
 	/// English String: "Renews: {renewalDate}"
 	/// </summary>
 	string LabelRenewsDate(string renewalDate);
+}
+
+
 }

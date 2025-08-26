@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IInventoryResources : ITranslationResources
 
-public interface IInventoryResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.GetMore"
@@ -222,4 +222,7 @@ public interface IInventoryResources : ITranslationResources
 	/// English String: "You have not favorited any {itemsPlural}."
 	/// </summary>
 	string MessageYouNotFavoritedItems(string itemsPlural);
+}
+
+
 }

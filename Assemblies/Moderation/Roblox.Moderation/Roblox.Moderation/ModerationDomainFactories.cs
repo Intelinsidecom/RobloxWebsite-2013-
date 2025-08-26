@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Moderation.Entities;
 using Roblox.Platform.Moderation.Factories;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// The domain factories class for holding reference of all factory objects needed for Platform.Moderation.
 /// </summary>
 public class ModerationDomainFactories : DomainFactoriesBase
@@ -39,4 +38,7 @@ public class ModerationDomainFactories : DomainFactoriesBase
 		ExpressionFactory = new ExpressionFactory(this);
 		ModerationLocaleFactory = new ModerationLocaleFactory(this, coreLocalizationAccessor);
 	}
+}
+
+
 }

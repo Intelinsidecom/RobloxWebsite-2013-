@@ -1,8 +1,7 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
+namespace Roblox.Moderationpublic {
+    enum PunishmentReason
 
-namespace Roblox.Platform.Moderation;
-
-public enum PunishmentReason
 {
 	[Description("Account Theft")]
 	AccountTheft = 1,
@@ -60,4 +59,7 @@ public enum PunishmentReason
 	BotAccount,
 	[Description("Discriminatory Content")]
 	DiscriminatoryContent
+}
+
+
 }

@@ -75,9 +75,9 @@ internal class EndpointResolver : IEndpointResolver
 	internal virtual ILookupClient CreateLookupClient(IMemcachedClientDnsSettings settings)
 	{
 		IPAddress[] nameservers = settings.Nameservers;
-		LookupClient obj = ((nameservers != null && nameservers.Length != 0) ? new LookupClient(settings.Nameservers) : new LookupClient());
-		obj.UseCache = false;
-		return obj;
+		LookupClientOptions options = ((nameservers != null && nameservers.Length != 0) ? new LookupClientOptions(settings.Nameservers) : new LookupClientOptions());
+		options.UseCache = false;
+		return new LookupClient(options);
 	}
 
 	internal virtual IPHostEntry LookupClientGetHostEntry(ILookupClient lookupClient, string host)

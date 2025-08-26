@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// Event triggered when an error occurs sending an SMS with Twilio
 /// </summary>
 public class TwilioErrorEvent : WebEventBase
@@ -18,11 +18,11 @@ public class TwilioErrorEvent : WebEventBase
 	/// <summary>
 	/// Constructs a <see cref="T:Roblox.Platform.EventStream.WebEvents.TwilioErrorEvent" /> with the given <see cref="T:Roblox.Platform.EventStream.IEventStreamer" /> and <see cref="T:Roblox.Platform.EventStream.WebEvents.TwilioErrorEventArgs" />
 	/// </summary>
-	/// <param name="eventStreamer">The streamer to send the event</param>
+	/// <param name="IEventStreamer">The streamer to send the event</param>
 	/// <param name="twilioErrorEventArgs">The arguments for this event</param>
 	/// <exception cref="T:System.ArgumentException">If the phone number is is not defined in the arguments</exception>
-	public TwilioErrorEvent(IEventStreamer eventStreamer, TwilioErrorEventArgs twilioErrorEventArgs)
-		: base(eventStreamer, "twilioError", twilioErrorEventArgs)
+	public TwilioErrorEvent(IEventStreamer IEventStreamer, TwilioErrorEventArgs twilioErrorEventArgs)
+		: base(IEventStreamer, "twilioError", twilioErrorEventArgs)
 	{
 		if (string.IsNullOrWhiteSpace(twilioErrorEventArgs.PhoneNumber))
 		{
@@ -39,3 +39,12 @@ public class TwilioErrorEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

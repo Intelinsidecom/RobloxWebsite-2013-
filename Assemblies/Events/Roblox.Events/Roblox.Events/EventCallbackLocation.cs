@@ -4,10 +4,9 @@ using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Events {
+    internal class EventCallbackLocation : IRobloxEntity<long, EventCallbackLocationDAL>, ICacheableObject<long>, ICacheableObject
 
-namespace Roblox.Platform.Events;
-
-internal class EventCallbackLocation : IRobloxEntity<long, EventCallbackLocationDAL>, ICacheableObject<long>, ICacheableObject
 {
 	private EventCallbackLocationDAL _EntityDAL;
 
@@ -128,4 +127,7 @@ internal class EventCallbackLocation : IRobloxEntity<long, EventCallbackLocation
 	{
 		yield break;
 	}
+}
+
+
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Assets.Properties;
 using Roblox.Common;
 using Roblox.Data;
@@ -70,7 +70,7 @@ public class RecentlyInsertedAssetDAL
 	{
 		List<SqlParameter> queryParameters = new List<SqlParameter>();
 		queryParameters.Add(new SqlParameter("@ID", ID));
-		EntityHelper.DoEntityDALDelete(new DbInfo(dbConnectionString_RecentlyInsertedAssetDAL, "RecentlyInsertedAssetsV2_DeleteRecentlyInsertedAssetByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(dbConnectionString_RecentlyInsertedAssetDAL, "RecentlyInsertedAssetsV2_DeleteRecentlyInsertedAssetByID", queryParameters));
 	}
 
 	public static RecentlyInsertedAssetDAL Get(long id)

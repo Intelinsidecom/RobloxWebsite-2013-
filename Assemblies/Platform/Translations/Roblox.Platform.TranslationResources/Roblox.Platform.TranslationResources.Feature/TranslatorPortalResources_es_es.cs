@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslatorPortalResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -60,7 +60,7 @@ internal class TranslatorPortalResources_es_es : TranslatorPortalResources_en_us
 	/// Key: "Label.OrderByAlphabetical"
 	/// English String: "Alphabetical"
 	/// </summary>
-	public override string LabelOrderByAlphabetical => "En orden alfabético";
+	public override string LabelOrderByAlphabetical => "En orden alfabÃ©tico";
 
 	/// <summary>
 	/// Key: "Label.OrderByFavorites"
@@ -201,12 +201,12 @@ internal class TranslatorPortalResources_es_es : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelLanguageNotSupportedByGame(string languageName)
 	{
-		return $" El {languageName} no está disponible para este juego";
+		return $" El {languageName} no estÃ¡ disponible para este juego";
 	}
 
 	protected override string _GetTemplateForLabelLanguageNotSupportedByGame()
 	{
-		return " El {languageName} no está disponible para este juego";
+		return " El {languageName} no estÃ¡ disponible para este juego";
 	}
 
 	protected override string _GetTemplateForLabelOrderBy()
@@ -216,7 +216,7 @@ internal class TranslatorPortalResources_es_es : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForLabelOrderByAlphabetical()
 	{
-		return "En orden alfabético";
+		return "En orden alfabÃ©tico";
 	}
 
 	protected override string _GetTemplateForLabelOrderByFavorites()
@@ -260,16 +260,19 @@ internal class TranslatorPortalResources_es_es : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelTranslationProgress(string translatedEntriesCount, string totalEntriesCount)
 	{
-		return $"Avance en la traducción ({translatedEntriesCount}/{totalEntriesCount})";
+		return $"Avance en la traducciÃ³n ({translatedEntriesCount}/{totalEntriesCount})";
 	}
 
 	protected override string _GetTemplateForLabelTranslationProgress()
 	{
-		return "Avance en la traducción ({translatedEntriesCount}/{totalEntriesCount})";
+		return "Avance en la traducciÃ³n ({translatedEntriesCount}/{totalEntriesCount})";
 	}
 
 	protected override string _GetTemplateForLabelTranslator()
 	{
 		return "Traductor";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Moderationinternal {
+    class ModeratorActionsResources_en_us : TranslationResourcesBase, IModeratorActionsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Moderation;
-
-internal class ModeratorActionsResources_en_us : TranslationResourcesBase, IModeratorActionsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -37,4 +36,7 @@ internal class ModeratorActionsResources_en_us : TranslationResourcesBase, IMode
 	{
 		return "[ Content Deleted ]";
 	}
+}
+
+
 }

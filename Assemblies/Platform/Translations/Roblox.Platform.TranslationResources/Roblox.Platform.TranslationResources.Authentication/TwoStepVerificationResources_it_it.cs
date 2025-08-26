@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TwoStepVerificationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -143,7 +143,7 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 	/// Key: "Response.TooManyAttempts"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseTooManyAttempts => "Troppi tentativi. Riprova più tardi.";
+	public override string ResponseTooManyAttempts => "Troppi tentativi. Riprova piÃ¹ tardi.";
 
 	/// <summary>
 	/// Key: "Response.TooManyCharacters"
@@ -189,12 +189,12 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"Salve {accountName},{lineBreak}{lineBreak}hai attivato la doppia verifica per il tuo account Roblox. La prossima volta che effettuerai l'accesso da un nuovo dispositivo, dovrai inserire un codice di sicurezza di 6 cifre, che Roblox ti invierà tramite e-mail.{lineBreak}{lineBreak}Roblox";
+		return $"Salve {accountName},{lineBreak}{lineBreak}hai attivato la doppia verifica per il tuo account Roblox. La prossima volta che effettuerai l'accesso da un nuovo dispositivo, dovrai inserire un codice di sicurezza di 6 cifre, che Roblox ti invierÃ  tramite e-mail.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyOver13()
 	{
-		return "Salve {accountName},{lineBreak}{lineBreak}hai attivato la doppia verifica per il tuo account Roblox. La prossima volta che effettuerai l'accesso da un nuovo dispositivo, dovrai inserire un codice di sicurezza di 6 cifre, che Roblox ti invierà tramite e-mail.{lineBreak}{lineBreak}Roblox";
+		return "Salve {accountName},{lineBreak}{lineBreak}hai attivato la doppia verifica per il tuo account Roblox. La prossima volta che effettuerai l'accesso da un nuovo dispositivo, dovrai inserire un codice di sicurezza di 6 cifre, che Roblox ti invierÃ  tramite e-mail.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -204,12 +204,12 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"Salve,{lineBreak}{lineBreak}la doppia verifica è stata attivata per l'account Roblox di tuo figlio, {accountName}. La prossima volta che effettuerà l'accesso da un nuovo dispositivo, dovrà inserire un codice di sicurezza di 6 cifre, che Roblox ti invierà tramite e-mail.{lineBreak}{lineBreak}Roblox";
+		return $"Salve,{lineBreak}{lineBreak}la doppia verifica Ã¨ stata attivata per l'account Roblox di tuo figlio, {accountName}. La prossima volta che effettuerÃ  l'accesso da un nuovo dispositivo, dovrÃ  inserire un codice di sicurezza di 6 cifre, che Roblox ti invierÃ  tramite e-mail.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyUnder13()
 	{
-		return "Salve,{lineBreak}{lineBreak}la doppia verifica è stata attivata per l'account Roblox di tuo figlio, {accountName}. La prossima volta che effettuerà l'accesso da un nuovo dispositivo, dovrà inserire un codice di sicurezza di 6 cifre, che Roblox ti invierà tramite e-mail.{lineBreak}{lineBreak}Roblox";
+		return "Salve,{lineBreak}{lineBreak}la doppia verifica Ã¨ stata attivata per l'account Roblox di tuo figlio, {accountName}. La prossima volta che effettuerÃ  l'accesso da un nuovo dispositivo, dovrÃ  inserire un codice di sicurezza di 6 cifre, che Roblox ti invierÃ  tramite e-mail.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -234,12 +234,12 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"Salve {accountName},{lineBreak}{lineBreak}hai disattivato la doppia verifica per il tuo account Roblox. Non sarà più necessario un codice di sicurezza per accedere al tuo account.{lineBreak}{lineBreak}Roblox";
+		return $"Salve {accountName},{lineBreak}{lineBreak}hai disattivato la doppia verifica per il tuo account Roblox. Non sarÃ  piÃ¹ necessario un codice di sicurezza per accedere al tuo account.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyOver13()
 	{
-		return "Salve {accountName},{lineBreak}{lineBreak}hai disattivato la doppia verifica per il tuo account Roblox. Non sarà più necessario un codice di sicurezza per accedere al tuo account.{lineBreak}{lineBreak}Roblox";
+		return "Salve {accountName},{lineBreak}{lineBreak}hai disattivato la doppia verifica per il tuo account Roblox. Non sarÃ  piÃ¹ necessario un codice di sicurezza per accedere al tuo account.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -249,12 +249,12 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"Salve,{lineBreak}{lineBreak}hai disattivato la doppia verifica per l'account Roblox di tuo figlio, {accountName}. Non sarà più necessario un codice di sicurezza per accedere al suo account.{lineBreak}{lineBreak}Roblox";
+		return $"Salve,{lineBreak}{lineBreak}hai disattivato la doppia verifica per l'account Roblox di tuo figlio, {accountName}. Non sarÃ  piÃ¹ necessario un codice di sicurezza per accedere al suo account.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyUnder13()
 	{
-		return "Salve,{lineBreak}{lineBreak}hai disattivato la doppia verifica per l'account Roblox di tuo figlio, {accountName}. Non sarà più necessario un codice di sicurezza per accedere al suo account.{lineBreak}{lineBreak}Roblox";
+		return "Salve,{lineBreak}{lineBreak}hai disattivato la doppia verifica per l'account Roblox di tuo figlio, {accountName}. Non sarÃ  piÃ¹ necessario un codice di sicurezza per accedere al suo account.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -369,12 +369,12 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlBody(string geoLocationInformation, string spanStartTagWithBold, string accountName, string lineBreak, string code, string spanEndTag, string aTagStartWithHref, string ChangePasswordLink, string hrefEnd, string aTagEnd, string TwoStepVerificationArticleLink, string AccountSafetyArticleLink, string SupportLink)
 	{
-		return $"{geoLocationInformation}{spanStartTagWithBold}Codice di accesso per {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Inserisci questo codice nella schermata della doppia verifica per completare l'accesso. Il codice scadrà tra 15 minuti.{lineBreak}{lineBreak}Hai ricevuto questa e-mail in seguito a un tentativo di accesso a Roblox con il tuo account da un nuovo browser o dispositivo. Se la richiesta non è partita da te, è possibile che qualcun altro abbia tentato di accedere al tuo account. In tal caso ti consigliamo vivamente di modificare la tua password.{lineBreak}{lineBreak}Risorse:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Modifica la password{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Maggiori informazioni sulla doppia verifica{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Garantire la sicurezza del tuo account{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Assistenza generale Roblox{aTagEnd} {lineBreak}{lineBreak}Grazie,{lineBreak}{lineBreak}la squadra Roblox";
+		return $"{geoLocationInformation}{spanStartTagWithBold}Codice di accesso per {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Inserisci questo codice nella schermata della doppia verifica per completare l'accesso. Il codice scadrÃ  tra 15 minuti.{lineBreak}{lineBreak}Hai ricevuto questa e-mail in seguito a un tentativo di accesso a Roblox con il tuo account da un nuovo browser o dispositivo. Se la richiesta non Ã¨ partita da te, Ã¨ possibile che qualcun altro abbia tentato di accedere al tuo account. In tal caso ti consigliamo vivamente di modificare la tua password.{lineBreak}{lineBreak}Risorse:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Modifica la password{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Maggiori informazioni sulla doppia verifica{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Garantire la sicurezza del tuo account{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Assistenza generale Roblox{aTagEnd} {lineBreak}{lineBreak}Grazie,{lineBreak}{lineBreak}la squadra Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlBody()
 	{
-		return "{geoLocationInformation}{spanStartTagWithBold}Codice di accesso per {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Inserisci questo codice nella schermata della doppia verifica per completare l'accesso. Il codice scadrà tra 15 minuti.{lineBreak}{lineBreak}Hai ricevuto questa e-mail in seguito a un tentativo di accesso a Roblox con il tuo account da un nuovo browser o dispositivo. Se la richiesta non è partita da te, è possibile che qualcun altro abbia tentato di accedere al tuo account. In tal caso ti consigliamo vivamente di modificare la tua password.{lineBreak}{lineBreak}Risorse:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Modifica la password{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Maggiori informazioni sulla doppia verifica{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Garantire la sicurezza del tuo account{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Assistenza generale Roblox{aTagEnd} {lineBreak}{lineBreak}Grazie,{lineBreak}{lineBreak}la squadra Roblox";
+		return "{geoLocationInformation}{spanStartTagWithBold}Codice di accesso per {accountName}: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Inserisci questo codice nella schermata della doppia verifica per completare l'accesso. Il codice scadrÃ  tra 15 minuti.{lineBreak}{lineBreak}Hai ricevuto questa e-mail in seguito a un tentativo di accesso a Roblox con il tuo account da un nuovo browser o dispositivo. Se la richiesta non Ã¨ partita da te, Ã¨ possibile che qualcun altro abbia tentato di accedere al tuo account. In tal caso ti consigliamo vivamente di modificare la tua password.{lineBreak}{lineBreak}Risorse:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Modifica la password{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Maggiori informazioni sulla doppia verifica{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Garantire la sicurezza del tuo account{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Assistenza generale Roblox{aTagEnd} {lineBreak}{lineBreak}Grazie,{lineBreak}{lineBreak}la squadra Roblox";
 	}
 
 	/// <summary>
@@ -384,12 +384,12 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainBody(string geoLocationInformation, string accountName, string lineBreak, string code, string accountInfoPageLink, string twoStepVerificationHelpArticleLink, string keepAccountSafeArticleLink, string supportPageLink)
 	{
-		return $"{geoLocationInformation}Codice di accesso per {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Inserisci questo codice nella schermata della doppia verifica per completare l'accesso. Il codice scadrà tra 15 minuti. {lineBreak}{lineBreak}Hai ricevuto questa e-mail in seguito a un tentativo di accesso a Roblox con il tuo account da un nuovo browser o dispositivo. Se la richiesta non è partita da te, è possibile che qualcun altro abbia tentato di accedere al tuo account. In tal caso, ti consigliamo vivamente di modificare la tua password. {lineBreak}{lineBreak}Risorse: {lineBreak}Modifica la password [{accountInfoPageLink}] {lineBreak}Maggiori informazioni sulla doppia verifica [{twoStepVerificationHelpArticleLink}]{lineBreak}Garantire la sicurezza del tuo account [{keepAccountSafeArticleLink}] {lineBreak}Assistenza generale Roblox [{supportPageLink}] {lineBreak}{lineBreak}Grazie, {lineBreak}{lineBreak}la squadra Roblox";
+		return $"{geoLocationInformation}Codice di accesso per {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Inserisci questo codice nella schermata della doppia verifica per completare l'accesso. Il codice scadrÃ  tra 15 minuti. {lineBreak}{lineBreak}Hai ricevuto questa e-mail in seguito a un tentativo di accesso a Roblox con il tuo account da un nuovo browser o dispositivo. Se la richiesta non Ã¨ partita da te, Ã¨ possibile che qualcun altro abbia tentato di accedere al tuo account. In tal caso, ti consigliamo vivamente di modificare la tua password. {lineBreak}{lineBreak}Risorse: {lineBreak}Modifica la password [{accountInfoPageLink}] {lineBreak}Maggiori informazioni sulla doppia verifica [{twoStepVerificationHelpArticleLink}]{lineBreak}Garantire la sicurezza del tuo account [{keepAccountSafeArticleLink}] {lineBreak}Assistenza generale Roblox [{supportPageLink}] {lineBreak}{lineBreak}Grazie, {lineBreak}{lineBreak}la squadra Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainBody()
 	{
-		return "{geoLocationInformation}Codice di accesso per {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Inserisci questo codice nella schermata della doppia verifica per completare l'accesso. Il codice scadrà tra 15 minuti. {lineBreak}{lineBreak}Hai ricevuto questa e-mail in seguito a un tentativo di accesso a Roblox con il tuo account da un nuovo browser o dispositivo. Se la richiesta non è partita da te, è possibile che qualcun altro abbia tentato di accedere al tuo account. In tal caso, ti consigliamo vivamente di modificare la tua password. {lineBreak}{lineBreak}Risorse: {lineBreak}Modifica la password [{accountInfoPageLink}] {lineBreak}Maggiori informazioni sulla doppia verifica [{twoStepVerificationHelpArticleLink}]{lineBreak}Garantire la sicurezza del tuo account [{keepAccountSafeArticleLink}] {lineBreak}Assistenza generale Roblox [{supportPageLink}] {lineBreak}{lineBreak}Grazie, {lineBreak}{lineBreak}la squadra Roblox";
+		return "{geoLocationInformation}Codice di accesso per {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Inserisci questo codice nella schermata della doppia verifica per completare l'accesso. Il codice scadrÃ  tra 15 minuti. {lineBreak}{lineBreak}Hai ricevuto questa e-mail in seguito a un tentativo di accesso a Roblox con il tuo account da un nuovo browser o dispositivo. Se la richiesta non Ã¨ partita da te, Ã¨ possibile che qualcun altro abbia tentato di accedere al tuo account. In tal caso, ti consigliamo vivamente di modificare la tua password. {lineBreak}{lineBreak}Risorse: {lineBreak}Modifica la password [{accountInfoPageLink}] {lineBreak}Maggiori informazioni sulla doppia verifica [{twoStepVerificationHelpArticleLink}]{lineBreak}Garantire la sicurezza del tuo account [{keepAccountSafeArticleLink}] {lineBreak}Assistenza generale Roblox [{supportPageLink}] {lineBreak}{lineBreak}Grazie, {lineBreak}{lineBreak}la squadra Roblox";
 	}
 
 	/// <summary>
@@ -489,12 +489,12 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailSubject(string accountName)
 	{
-		return $"Codice di verifica per l’account Roblox: {accountName}";
+		return $"Codice di verifica per lâ€™account Roblox: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailSubject()
 	{
-		return "Codice di verifica per l’account Roblox: {accountName}";
+		return "Codice di verifica per lâ€™account Roblox: {accountName}";
 	}
 
 	protected override string _GetTemplateForLabelCode()
@@ -609,11 +609,14 @@ internal class TwoStepVerificationResources_it_it : TwoStepVerificationResources
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
 	{
-		return "Troppi tentativi. Riprova più tardi.";
+		return "Troppi tentativi. Riprova piÃ¹ tardi.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyCharacters()
 	{
 		return "Troppi caratteri";
 	}
+}
+
+
 }

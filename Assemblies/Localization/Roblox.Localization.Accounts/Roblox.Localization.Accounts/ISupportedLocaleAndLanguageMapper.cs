@@ -1,10 +1,12 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
+namespace Roblox.Localization.Accountsinternal {
+    interface ISupportedLocaleAndLanguageMapper
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal interface ISupportedLocaleAndLanguageMapper
 {
 	ISupportedLocale MapSupportedLocale(IAccountLocaleEntity accountLocaleEntity);
 
 	ILanguageFamily MapLangauge(IAccountLocaleEntity accountLocaleEntity);
+}
+
+
 }

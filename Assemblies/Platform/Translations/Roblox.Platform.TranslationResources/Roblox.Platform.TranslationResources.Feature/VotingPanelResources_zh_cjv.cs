@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides VotingPanelResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,151 +10,151 @@ internal class VotingPanelResources_zh_cjv : VotingPanelResources_en_us, IVoting
 	/// Key: "Label.Accept"
 	/// English String: "Verify"
 	/// </summary>
-	public override string LabelAccept => "验证";
+	public override string LabelAccept => "éªŒè¯";
 
 	/// <summary>
 	/// Key: "Label.AccountPageTitle"
 	/// English String: "Account"
 	/// </summary>
-	public override string LabelAccountPageTitle => "帐户";
+	public override string LabelAccountPageTitle => "å¸æˆ·";
 
 	/// <summary>
 	/// Key: "Label.AccountUnderDayOneMessage"
 	/// English String: "You will be able to vote on Games and Studio Models later, after you've had a chance to experience Roblox a bit more. Come back to this page in a couple days."
 	/// </summary>
-	public override string LabelAccountUnderDayOneMessage => "待你有机会多体验 Roblox 后，你便能对游戏和 Studio 模型进行投票。请几天后再回到此页面。";
+	public override string LabelAccountUnderDayOneMessage => "å¾…ä½ æœ‰æœºä¼šå¤šä½“éªŒ Roblox åŽï¼Œä½ ä¾¿èƒ½å¯¹æ¸¸æˆå’Œ Studio æ¨¡åž‹è¿›è¡ŒæŠ•ç¥¨ã€‚è¯·å‡ å¤©åŽå†å›žåˆ°æ­¤é¡µé¢ã€‚";
 
 	/// <summary>
 	/// Key: "Label.AccountUnderDayOneTitle"
 	/// English String: "Voter Feedback"
 	/// </summary>
-	public override string LabelAccountUnderDayOneTitle => "投票者反馈";
+	public override string LabelAccountUnderDayOneTitle => "æŠ•ç¥¨è€…åé¦ˆ";
 
 	/// <summary>
 	/// Key: "Label.AssetNotVoteableMessage"
 	/// English String: "This asset may not be voted on at this time."
 	/// </summary>
-	public override string LabelAssetNotVoteableMessage => "目前无法对此素材投票。";
+	public override string LabelAssetNotVoteableMessage => "ç›®å‰æ— æ³•å¯¹æ­¤ç´ ææŠ•ç¥¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.AssetNotVoteableTitle"
 	/// English String: "Unable to Vote"
 	/// </summary>
-	public override string LabelAssetNotVoteableTitle => "无法投票";
+	public override string LabelAssetNotVoteableTitle => "æ— æ³•æŠ•ç¥¨";
 
 	/// <summary>
 	/// Key: "Label.BuyGamePassMessage"
 	/// English String: "You must own this game pass before you can vote on it."
 	/// </summary>
-	public override string LabelBuyGamePassMessage => "你必须先拥有此游戏通行证才能投票。";
+	public override string LabelBuyGamePassMessage => "ä½ å¿…é¡»å…ˆæ‹¥æœ‰æ­¤æ¸¸æˆé€šè¡Œè¯æ‰èƒ½æŠ•ç¥¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.BuyGamePassTitle"
 	/// English String: "Buy Game Pass"
 	/// </summary>
-	public override string LabelBuyGamePassTitle => "购买游戏通行证";
+	public override string LabelBuyGamePassTitle => "è´­ä¹°æ¸¸æˆé€šè¡Œè¯";
 
 	/// <summary>
 	/// Key: "Label.Decline"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelDecline => "取消";
+	public override string LabelDecline => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Label.EmailVerifiedTitle"
 	/// English String: "Verify Your Email"
 	/// </summary>
-	public override string LabelEmailVerifiedTitle => "验证你的电子邮件";
+	public override string LabelEmailVerifiedTitle => "éªŒè¯ä½ çš„ç”µå­é‚®ä»¶";
 
 	/// <summary>
 	/// Key: "Label.FloodCheckMessage"
 	/// English String: "You're voting too quickly. Come back later and try again."
 	/// </summary>
-	public override string LabelFloodCheckMessage => "你投票的次数过于频繁。请稍后回来重试。";
+	public override string LabelFloodCheckMessage => "ä½ æŠ•ç¥¨çš„æ¬¡æ•°è¿‡äºŽé¢‘ç¹ã€‚è¯·ç¨åŽå›žæ¥é‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Label.FloodCheckTitle"
 	/// English String: "Slow Down"
 	/// </summary>
-	public override string LabelFloodCheckTitle => "慢下来";
+	public override string LabelFloodCheckTitle => "æ…¢ä¸‹æ¥";
 
 	/// <summary>
 	/// Key: "Label.GuestUserTitle"
 	/// English String: "Login to Vote"
 	/// </summary>
-	public override string LabelGuestUserTitle => "登录以投票";
+	public override string LabelGuestUserTitle => "ç™»å½•ä»¥æŠ•ç¥¨";
 
 	/// <summary>
 	/// Key: "Label.InstallPluginMessage"
 	/// English String: "You must install this plugin before you can vote on it."
 	/// </summary>
-	public override string LabelInstallPluginMessage => "你必须先安装此插件才能投票。";
+	public override string LabelInstallPluginMessage => "ä½ å¿…é¡»å…ˆå®‰è£…æ­¤æ’ä»¶æ‰èƒ½æŠ•ç¥¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.InstallPluginTitle"
 	/// English String: "Install Plugin"
 	/// </summary>
-	public override string LabelInstallPluginTitle => "安装插件";
+	public override string LabelInstallPluginTitle => "å®‰è£…æ’ä»¶";
 
 	/// <summary>
 	/// Key: "Label.Login"
 	/// English String: "Login"
 	/// </summary>
-	public override string LabelLogin => "登录";
+	public override string LabelLogin => "ç™»å½•";
 
 	/// <summary>
 	/// Key: "Label.LoginOrRegisterPageTitle"
 	/// English String: "login or register"
 	/// </summary>
-	public override string LabelLoginOrRegisterPageTitle => "登录或注册";
+	public override string LabelLoginOrRegisterPageTitle => "ç™»å½•æˆ–æ³¨å†Œ";
 
 	/// <summary>
 	/// Key: "Label.Ok"
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelOk => "好";
+	public override string LabelOk => "å¥½";
 
 	/// <summary>
 	/// Key: "Label.PlayGameMessage"
 	/// English String: "You must play the game before you can vote on it."
 	/// </summary>
-	public override string LabelPlayGameMessage => "你必须先玩游戏才能投票。";
+	public override string LabelPlayGameMessage => "ä½ å¿…é¡»å…ˆçŽ©æ¸¸æˆæ‰èƒ½æŠ•ç¥¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.PlayGameTitle"
 	/// English String: "Play Game"
 	/// </summary>
-	public override string LabelPlayGameTitle => "玩游戏";
+	public override string LabelPlayGameTitle => "çŽ©æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.UnknownProblemMessage"
 	/// English String: "There was an unknown problem voting. Please try again."
 	/// </summary>
-	public override string LabelUnknownProblemMessage => "投票时发生未知问题。请重试。";
+	public override string LabelUnknownProblemMessage => "æŠ•ç¥¨æ—¶å‘ç”ŸæœªçŸ¥é—®é¢˜ã€‚è¯·é‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Label.UnknownProblemTitle"
 	/// English String: "Something Broke"
 	/// </summary>
-	public override string LabelUnknownProblemTitle => "出错了";
+	public override string LabelUnknownProblemTitle => "å‡ºé”™äº†";
 
 	/// <summary>
 	/// Key: "Label.UseModelMessage"
 	/// English String: "You must use this model before you can vote on it."
 	/// </summary>
-	public override string LabelUseModelMessage => "你必须先使用此模型才能投票。";
+	public override string LabelUseModelMessage => "ä½ å¿…é¡»å…ˆä½¿ç”¨æ­¤æ¨¡åž‹æ‰èƒ½æŠ•ç¥¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.UseModelTitle"
 	/// English String: "Use Model"
 	/// </summary>
-	public override string LabelUseModelTitle => "使用模型";
+	public override string LabelUseModelTitle => "ä½¿ç”¨æ¨¡åž‹";
 
 	/// <summary>
 	/// Key: "Label.YouMustLoginToVote"
 	/// English String: "You must login to vote."
 	/// </summary>
-	public override string LabelYouMustLoginToVote => "你必须登录才能投票。";
+	public override string LabelYouMustLoginToVote => "ä½ å¿…é¡»ç™»å½•æ‰èƒ½æŠ•ç¥¨ã€‚";
 
 	public VotingPanelResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -163,47 +163,47 @@ internal class VotingPanelResources_zh_cjv : VotingPanelResources_en_us, IVoting
 
 	protected override string _GetTemplateForLabelAccept()
 	{
-		return "验证";
+		return "éªŒè¯";
 	}
 
 	protected override string _GetTemplateForLabelAccountPageTitle()
 	{
-		return "帐户";
+		return "å¸æˆ·";
 	}
 
 	protected override string _GetTemplateForLabelAccountUnderDayOneMessage()
 	{
-		return "待你有机会多体验 Roblox 后，你便能对游戏和 Studio 模型进行投票。请几天后再回到此页面。";
+		return "å¾…ä½ æœ‰æœºä¼šå¤šä½“éªŒ Roblox åŽï¼Œä½ ä¾¿èƒ½å¯¹æ¸¸æˆå’Œ Studio æ¨¡åž‹è¿›è¡ŒæŠ•ç¥¨ã€‚è¯·å‡ å¤©åŽå†å›žåˆ°æ­¤é¡µé¢ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelAccountUnderDayOneTitle()
 	{
-		return "投票者反馈";
+		return "æŠ•ç¥¨è€…åé¦ˆ";
 	}
 
 	protected override string _GetTemplateForLabelAssetNotVoteableMessage()
 	{
-		return "目前无法对此素材投票。";
+		return "ç›®å‰æ— æ³•å¯¹æ­¤ç´ ææŠ•ç¥¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelAssetNotVoteableTitle()
 	{
-		return "无法投票";
+		return "æ— æ³•æŠ•ç¥¨";
 	}
 
 	protected override string _GetTemplateForLabelBuyGamePassMessage()
 	{
-		return "你必须先拥有此游戏通行证才能投票。";
+		return "ä½ å¿…é¡»å…ˆæ‹¥æœ‰æ­¤æ¸¸æˆé€šè¡Œè¯æ‰èƒ½æŠ•ç¥¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelBuyGamePassTitle()
 	{
-		return "购买游戏通行证";
+		return "è´­ä¹°æ¸¸æˆé€šè¡Œè¯";
 	}
 
 	protected override string _GetTemplateForLabelDecline()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	/// <summary>
@@ -212,27 +212,27 @@ internal class VotingPanelResources_zh_cjv : VotingPanelResources_en_us, IVoting
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"你先必须验证电子邮件才能投票。你可以在 {accountPageLink} 页面验证你的电子邮件。";
+		return $"ä½ å…ˆå¿…é¡»éªŒè¯ç”µå­é‚®ä»¶æ‰èƒ½æŠ•ç¥¨ã€‚ä½ å¯ä»¥åœ¨ {accountPageLink} é¡µé¢éªŒè¯ä½ çš„ç”µå­é‚®ä»¶ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "你先必须验证电子邮件才能投票。你可以在 {accountPageLink} 页面验证你的电子邮件。";
+		return "ä½ å…ˆå¿…é¡»éªŒè¯ç”µå­é‚®ä»¶æ‰èƒ½æŠ•ç¥¨ã€‚ä½ å¯ä»¥åœ¨ {accountPageLink} é¡µé¢éªŒè¯ä½ çš„ç”µå­é‚®ä»¶ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
 	{
-		return "验证你的电子邮件";
+		return "éªŒè¯ä½ çš„ç”µå­é‚®ä»¶";
 	}
 
 	protected override string _GetTemplateForLabelFloodCheckMessage()
 	{
-		return "你投票的次数过于频繁。请稍后回来重试。";
+		return "ä½ æŠ•ç¥¨çš„æ¬¡æ•°è¿‡äºŽé¢‘ç¹ã€‚è¯·ç¨åŽå›žæ¥é‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelFloodCheckTitle()
 	{
-		return "慢下来";
+		return "æ…¢ä¸‹æ¥";
 	}
 
 	/// <summary>
@@ -241,76 +241,79 @@ internal class VotingPanelResources_zh_cjv : VotingPanelResources_en_us, IVoting
 	/// </summary>
 	public override string LabelGuestUserMessage(string loginOrRegisterPageLink)
 	{
-		return $"请 {loginOrRegisterPageLink} 以继续。";
+		return $"è¯· {loginOrRegisterPageLink} ä»¥ç»§ç»­ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGuestUserMessage()
 	{
-		return "请 {loginOrRegisterPageLink} 以继续。";
+		return "è¯· {loginOrRegisterPageLink} ä»¥ç»§ç»­ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGuestUserTitle()
 	{
-		return "登录以投票";
+		return "ç™»å½•ä»¥æŠ•ç¥¨";
 	}
 
 	protected override string _GetTemplateForLabelInstallPluginMessage()
 	{
-		return "你必须先安装此插件才能投票。";
+		return "ä½ å¿…é¡»å…ˆå®‰è£…æ­¤æ’ä»¶æ‰èƒ½æŠ•ç¥¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelInstallPluginTitle()
 	{
-		return "安装插件";
+		return "å®‰è£…æ’ä»¶";
 	}
 
 	protected override string _GetTemplateForLabelLogin()
 	{
-		return "登录";
+		return "ç™»å½•";
 	}
 
 	protected override string _GetTemplateForLabelLoginOrRegisterPageTitle()
 	{
-		return "登录或注册";
+		return "ç™»å½•æˆ–æ³¨å†Œ";
 	}
 
 	protected override string _GetTemplateForLabelOk()
 	{
-		return "好";
+		return "å¥½";
 	}
 
 	protected override string _GetTemplateForLabelPlayGameMessage()
 	{
-		return "你必须先玩游戏才能投票。";
+		return "ä½ å¿…é¡»å…ˆçŽ©æ¸¸æˆæ‰èƒ½æŠ•ç¥¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelPlayGameTitle()
 	{
-		return "玩游戏";
+		return "çŽ©æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelUnknownProblemMessage()
 	{
-		return "投票时发生未知问题。请重试。";
+		return "æŠ•ç¥¨æ—¶å‘ç”ŸæœªçŸ¥é—®é¢˜ã€‚è¯·é‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUnknownProblemTitle()
 	{
-		return "出错了";
+		return "å‡ºé”™äº†";
 	}
 
 	protected override string _GetTemplateForLabelUseModelMessage()
 	{
-		return "你必须先使用此模型才能投票。";
+		return "ä½ å¿…é¡»å…ˆä½¿ç”¨æ­¤æ¨¡åž‹æ‰èƒ½æŠ•ç¥¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUseModelTitle()
 	{
-		return "使用模型";
+		return "ä½¿ç”¨æ¨¡åž‹";
 	}
 
 	protected override string _GetTemplateForLabelYouMustLoginToVote()
 	{
-		return "你必须登录才能投票。";
+		return "ä½ å¿…é¡»ç™»å½•æ‰èƒ½æŠ•ç¥¨ã€‚";
 	}
+}
+
+
 }

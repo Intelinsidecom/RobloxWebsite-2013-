@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-namespace Roblox.TextFilter;
-
-/// <summary>
 /// An interface to represent the details about moderation levels of the filtered text.
 /// </summary>
 public interface ITextFilterResultModerationDetails
@@ -22,4 +21,7 @@ public interface ITextFilterResultModerationDetails
 	/// The triggered moderation categories.
 	/// </value>
 	HashSet<ModerationCategory> TriggeredModerationCategories { get; }
+}
+
+
 }

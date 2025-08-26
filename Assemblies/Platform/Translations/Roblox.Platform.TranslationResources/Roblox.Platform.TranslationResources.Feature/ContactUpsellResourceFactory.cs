@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class ContactUpsellResourceFactory
 
-internal static class ContactUpsellResourceFactory
 {
 	public const string FullNamespace = "Feature.ContactUpsell";
 
@@ -21,4 +21,7 @@ internal static class ContactUpsellResourceFactory
 			_ => new ContactUpsellResources_en_us(state), 
 		};
 	}
+}
+
+
 }

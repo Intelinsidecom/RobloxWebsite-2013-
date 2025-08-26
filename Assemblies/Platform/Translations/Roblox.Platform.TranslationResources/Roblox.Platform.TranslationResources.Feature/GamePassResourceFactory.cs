@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GamePassResourceFactory
 
-internal static class GamePassResourceFactory
 {
 	public const string FullNamespace = "Feature.GamePass";
 
@@ -21,4 +21,7 @@ internal static class GamePassResourceFactory
 			_ => new GamePassResources_en_us(state), 
 		};
 	}
+}
+
+
 }

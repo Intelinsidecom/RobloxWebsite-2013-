@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
+namespace Roblox.Platform.AuthenticationV2.Client {
+    /// <summary>
 
-namespace Roblox.AuthenticationV2.Client;
-
-/// <summary>
 /// Request model for /SyncRobloxUserSession
 /// </summary>
 [DataContract]
@@ -53,4 +52,7 @@ public class SyncRobloxUserSessionRequest
 	[DataMember]
 	[JsonProperty("ttl")]
 	public TimeSpan TimeToLive { get; set; }
+}
+
+
 }

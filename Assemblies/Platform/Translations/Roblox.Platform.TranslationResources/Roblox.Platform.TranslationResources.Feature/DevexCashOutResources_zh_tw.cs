@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DevexCashOutResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,31 +10,31 @@ internal class DevexCashOutResources_zh_tw : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.CashOutSubmit"
 	/// English String: "Cash Out"
 	/// </summary>
-	public override string CashOutFormCashOutSubmit => "兌現";
+	public override string CashOutFormCashOutSubmit => "å…Œç¾";
 
 	/// <summary>
 	/// Key: "CashOutForm.EmailAddressLabel"
 	/// English String: "Email Address"
 	/// </summary>
-	public override string CashOutFormEmailAddressLabel => "電子郵件地址";
+	public override string CashOutFormEmailAddressLabel => "é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "CashOutForm.ExchangeRateLabel"
 	/// English String: "Exchange Rate"
 	/// </summary>
-	public override string CashOutFormExchangeRateLabel => "匯率";
+	public override string CashOutFormExchangeRateLabel => "åŒ¯çŽ‡";
 
 	/// <summary>
 	/// Key: "CashOutForm.FirstNameLabel"
 	/// English String: "First Name"
 	/// </summary>
-	public override string CashOutFormFirstNameLabel => "名";
+	public override string CashOutFormFirstNameLabel => "å";
 
 	/// <summary>
 	/// Key: "CashOutForm.LastNameLabel"
 	/// English String: "Last Name"
 	/// </summary>
-	public override string CashOutFormLastNameLabel => "姓";
+	public override string CashOutFormLastNameLabel => "å§“";
 
 	/// <summary>
 	/// Key: "CashOutForm.Robux"
@@ -46,31 +46,31 @@ internal class DevexCashOutResources_zh_tw : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.RobuxAmountLabel"
 	/// English String: "Robux Amount"
 	/// </summary>
-	public override string CashOutFormRobuxAmountLabel => "Robux 數量";
+	public override string CashOutFormRobuxAmountLabel => "Robux æ•¸é‡";
 
 	/// <summary>
 	/// Key: "CashOutForm.YouGetLabel"
 	/// English String: "You get up to:"
 	/// </summary>
-	public override string CashOutFormYouGetLabel => "您最多可獲得：";
+	public override string CashOutFormYouGetLabel => "æ‚¨æœ€å¤šå¯ç²å¾—ï¼š";
 
 	/// <summary>
 	/// Key: "Label.PasswordLabel"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPasswordLabel => "密碼";
+	public override string LabelPasswordLabel => "å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.PasswordPlaceholder"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelPasswordPlaceholder => "驗證帳號密碼";
+	public override string LabelPasswordPlaceholder => "é©—è­‰å¸³è™Ÿå¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "PageHeader.Description"
 	/// English String: "Create games, earn money."
 	/// </summary>
-	public override string PageHeaderDescription => "創作遊戲，賺取金錢！";
+	public override string PageHeaderDescription => "å‰µä½œéŠæˆ²ï¼Œè³ºå–é‡‘éŒ¢ï¼";
 
 	/// <summary>
 	/// Key: "PageHeader.Title"
@@ -82,91 +82,91 @@ internal class DevexCashOutResources_zh_tw : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.CannotLoadExchangeRate"
 	/// English String: "Sorry, we were unable to load the current exchange rate. Please try again."
 	/// </summary>
-	public override string ResponseCannotLoadExchangeRate => "對不起，無法載入目前匯率。請重新嘗試。";
+	public override string ResponseCannotLoadExchangeRate => "å°ä¸èµ·ï¼Œç„¡æ³•è¼‰å…¥ç›®å‰åŒ¯çŽ‡ã€‚è«‹é‡æ–°å˜—è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.CurrencyOperationUnavailable"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseCurrencyOperationUnavailable => "對不起，發生錯誤。請重新嘗試。";
+	public override string ResponseCurrencyOperationUnavailable => "å°ä¸èµ·ï¼Œç™¼ç”ŸéŒ¯èª¤ã€‚è«‹é‡æ–°å˜—è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.FirstNameRequiredErrorMessage"
 	/// English String: "Please enter your first name."
 	/// </summary>
-	public override string ResponseFirstNameRequiredErrorMessage => "請輸入您的名。";
+	public override string ResponseFirstNameRequiredErrorMessage => "è«‹è¼¸å…¥æ‚¨çš„åã€‚";
 
 	/// <summary>
 	/// Key: "Response.IncorrectCredentials"
 	/// English String: "Invalid password."
 	/// </summary>
-	public override string ResponseIncorrectCredentials => "密碼無效。";
+	public override string ResponseIncorrectCredentials => "å¯†ç¢¼ç„¡æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Response.InsufficientFunds"
 	/// English String: "You do not have enough Robux to complete this transaction."
 	/// </summary>
-	public override string ResponseInsufficientFunds => "您的 Robux 不足，無法完成交易。";
+	public override string ResponseInsufficientFunds => "æ‚¨çš„ Robux ä¸è¶³ï¼Œç„¡æ³•å®Œæˆäº¤æ˜“ã€‚";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmailErrorMessage"
 	/// English String: "Please enter a valid email address."
 	/// </summary>
-	public override string ResponseInvalidEmailErrorMessage => "請輸入有效的電子郵件地址。";
+	public override string ResponseInvalidEmailErrorMessage => "è«‹è¼¸å…¥æœ‰æ•ˆçš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	/// <summary>
 	/// Key: "Response.LastNameRequiredErrorMessage"
 	/// English String: "Please enter your last name."
 	/// </summary>
-	public override string ResponseLastNameRequiredErrorMessage => "請輸入您的姓。";
+	public override string ResponseLastNameRequiredErrorMessage => "è«‹è¼¸å…¥æ‚¨çš„å§“ã€‚";
 
 	/// <summary>
 	/// Key: "Response.RobuxAmountIsBelowMinimumCashoutThreshold"
 	/// English String: "Robux amount below minimum cash out threshold."
 	/// </summary>
-	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "Robux 金額小於最低兌現金額。";
+	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "Robux é‡‘é¡å°æ–¼æœ€ä½Žå…Œç¾é‡‘é¡ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseUnknownError => "對不起，發生錯誤。請重新嘗試。";
+	public override string ResponseUnknownError => "å°ä¸èµ·ï¼Œç™¼ç”ŸéŒ¯èª¤ã€‚è«‹é‡æ–°å˜—è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UserBalanceDoesNotHaveMoreRobuxThanMinimumCashout"
 	/// English String: "You cannot cash out for less than the minimum amount."
 	/// </summary>
-	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "兌現金額無法小於最低金額。";
+	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "å…Œç¾é‡‘é¡ç„¡æ³•å°æ–¼æœ€ä½Žé‡‘é¡ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UserCannotCashout"
 	/// English String: "Sorry, you are not eligible to cash out at this time."
 	/// </summary>
-	public override string ResponseUserCannotCashout => "對不起，您目前尚無兌現資格。";
+	public override string ResponseUserCannotCashout => "å°ä¸èµ·ï¼Œæ‚¨ç›®å‰å°šç„¡å…Œç¾è³‡æ ¼ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHavePremium"
 	/// English String: "You need a Roblox Premium subscription to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHavePremium => "您需要 Roblox Premium 才能兌現。";
+	public override string ResponseUserDoesNotHavePremium => "æ‚¨éœ€è¦ Roblox Premium æ‰èƒ½å…Œç¾ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHaveVerifiedEmail"
 	/// English String: "You need a verified email address to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHaveVerifiedEmail => "您需要已驗證的電子郵件地址才能兌現。";
+	public override string ResponseUserDoesNotHaveVerifiedEmail => "æ‚¨éœ€è¦å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€æ‰èƒ½å…Œç¾ã€‚";
 
 	/// <summary>
 	/// Key: "Response.UserMustProvideFirstAndLastName"
 	/// English String: "You need to provide your first and last name."
 	/// </summary>
-	public override string ResponseUserMustProvideFirstAndLastName => "請輸入您的名。";
+	public override string ResponseUserMustProvideFirstAndLastName => "è«‹è¼¸å…¥æ‚¨çš„åã€‚";
 
 	/// <summary>
 	/// Key: "Response.UserNotEligibleError"
 	/// English String: "Sorry, you are not eligible to cash out at this time."
 	/// </summary>
-	public override string ResponseUserNotEligibleError => "對不起，您目前尚無兌現資格。";
+	public override string ResponseUserNotEligibleError => "å°ä¸èµ·ï¼Œæ‚¨ç›®å‰å°šç„¡å…Œç¾è³‡æ ¼ã€‚";
 
 	public DevexCashOutResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -175,7 +175,7 @@ internal class DevexCashOutResources_zh_tw : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForCashOutFormCashOutSubmit()
 	{
-		return "兌現";
+		return "å…Œç¾";
 	}
 
 	/// <summary>
@@ -184,32 +184,32 @@ internal class DevexCashOutResources_zh_tw : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormDescription(string linkStart, string linkEnd)
 	{
-		return $"請完成此表格開始付款程序。您提供電子郵件的地址必須與您的 Roblox DevEx 平台帳號的電子郵件地址符合。若需更多協助，{linkStart}請前往協助中心。{linkEnd}";
+		return $"è«‹å®Œæˆæ­¤è¡¨æ ¼é–‹å§‹ä»˜æ¬¾ç¨‹åºã€‚æ‚¨æä¾›é›»å­éƒµä»¶çš„åœ°å€å¿…é ˆèˆ‡æ‚¨çš„ Roblox DevEx å¹³å°å¸³è™Ÿçš„é›»å­éƒµä»¶åœ°å€ç¬¦åˆã€‚è‹¥éœ€æ›´å¤šå”åŠ©ï¼Œ{linkStart}è«‹å‰å¾€å”åŠ©ä¸­å¿ƒã€‚{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormDescription()
 	{
-		return "請完成此表格開始付款程序。您提供電子郵件的地址必須與您的 Roblox DevEx 平台帳號的電子郵件地址符合。若需更多協助，{linkStart}請前往協助中心。{linkEnd}";
+		return "è«‹å®Œæˆæ­¤è¡¨æ ¼é–‹å§‹ä»˜æ¬¾ç¨‹åºã€‚æ‚¨æä¾›é›»å­éƒµä»¶çš„åœ°å€å¿…é ˆèˆ‡æ‚¨çš„ Roblox DevEx å¹³å°å¸³è™Ÿçš„é›»å­éƒµä»¶åœ°å€ç¬¦åˆã€‚è‹¥éœ€æ›´å¤šå”åŠ©ï¼Œ{linkStart}è«‹å‰å¾€å”åŠ©ä¸­å¿ƒã€‚{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormEmailAddressLabel()
 	{
-		return "電子郵件地址";
+		return "é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForCashOutFormExchangeRateLabel()
 	{
-		return "匯率";
+		return "åŒ¯çŽ‡";
 	}
 
 	protected override string _GetTemplateForCashOutFormFirstNameLabel()
 	{
-		return "名";
+		return "å";
 	}
 
 	protected override string _GetTemplateForCashOutFormLastNameLabel()
 	{
-		return "姓";
+		return "å§“";
 	}
 
 	protected override string _GetTemplateForCashOutFormRobux()
@@ -219,7 +219,7 @@ internal class DevexCashOutResources_zh_tw : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForCashOutFormRobuxAmountLabel()
 	{
-		return "Robux 數量";
+		return "Robux æ•¸é‡";
 	}
 
 	/// <summary>
@@ -228,32 +228,32 @@ internal class DevexCashOutResources_zh_tw : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormTermsOfService(string linkStart, string linkEnd)
 	{
-		return $"我已閱讀並同意{linkStart}使用條款{linkEnd}";
+		return $"æˆ‘å·²é–±è®€ä¸¦åŒæ„{linkStart}ä½¿ç”¨æ¢æ¬¾{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormTermsOfService()
 	{
-		return "我已閱讀並同意{linkStart}使用條款{linkEnd}";
+		return "æˆ‘å·²é–±è®€ä¸¦åŒæ„{linkStart}ä½¿ç”¨æ¢æ¬¾{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormYouGetLabel()
 	{
-		return "您最多可獲得：";
+		return "æ‚¨æœ€å¤šå¯ç²å¾—ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelPasswordLabel()
 	{
-		return "密碼";
+		return "å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelPasswordPlaceholder()
 	{
-		return "驗證帳號密碼";
+		return "é©—è­‰å¸³è™Ÿå¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForPageHeaderDescription()
 	{
-		return "創作遊戲，賺取金錢！";
+		return "å‰µä½œéŠæˆ²ï¼Œè³ºå–é‡‘éŒ¢ï¼";
 	}
 
 	protected override string _GetTemplateForPageHeaderTitle()
@@ -263,76 +263,79 @@ internal class DevexCashOutResources_zh_tw : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseCannotLoadExchangeRate()
 	{
-		return "對不起，無法載入目前匯率。請重新嘗試。";
+		return "å°ä¸èµ·ï¼Œç„¡æ³•è¼‰å…¥ç›®å‰åŒ¯çŽ‡ã€‚è«‹é‡æ–°å˜—è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseCurrencyOperationUnavailable()
 	{
-		return "對不起，發生錯誤。請重新嘗試。";
+		return "å°ä¸èµ·ï¼Œç™¼ç”ŸéŒ¯èª¤ã€‚è«‹é‡æ–°å˜—è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseFirstNameRequiredErrorMessage()
 	{
-		return "請輸入您的名。";
+		return "è«‹è¼¸å…¥æ‚¨çš„åã€‚";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectCredentials()
 	{
-		return "密碼無效。";
+		return "å¯†ç¢¼ç„¡æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForResponseInsufficientFunds()
 	{
-		return "您的 Robux 不足，無法完成交易。";
+		return "æ‚¨çš„ Robux ä¸è¶³ï¼Œç„¡æ³•å®Œæˆäº¤æ˜“ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmailErrorMessage()
 	{
-		return "請輸入有效的電子郵件地址。";
+		return "è«‹è¼¸å…¥æœ‰æ•ˆçš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseLastNameRequiredErrorMessage()
 	{
-		return "請輸入您的姓。";
+		return "è«‹è¼¸å…¥æ‚¨çš„å§“ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseRobuxAmountIsBelowMinimumCashoutThreshold()
 	{
-		return "Robux 金額小於最低兌現金額。";
+		return "Robux é‡‘é¡å°æ–¼æœ€ä½Žå…Œç¾é‡‘é¡ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "對不起，發生錯誤。請重新嘗試。";
+		return "å°ä¸èµ·ï¼Œç™¼ç”ŸéŒ¯èª¤ã€‚è«‹é‡æ–°å˜—è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout()
 	{
-		return "兌現金額無法小於最低金額。";
+		return "å…Œç¾é‡‘é¡ç„¡æ³•å°æ–¼æœ€ä½Žé‡‘é¡ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUserCannotCashout()
 	{
-		return "對不起，您目前尚無兌現資格。";
+		return "å°ä¸èµ·ï¼Œæ‚¨ç›®å‰å°šç„¡å…Œç¾è³‡æ ¼ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHavePremium()
 	{
-		return "您需要 Roblox Premium 才能兌現。";
+		return "æ‚¨éœ€è¦ Roblox Premium æ‰èƒ½å…Œç¾ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHaveVerifiedEmail()
 	{
-		return "您需要已驗證的電子郵件地址才能兌現。";
+		return "æ‚¨éœ€è¦å·²é©—è­‰çš„é›»å­éƒµä»¶åœ°å€æ‰èƒ½å…Œç¾ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUserMustProvideFirstAndLastName()
 	{
-		return "請輸入您的名。";
+		return "è«‹è¼¸å…¥æ‚¨çš„åã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUserNotEligibleError()
 	{
-		return "對不起，您目前尚無兌現資格。";
+		return "å°ä¸èµ·ï¼Œæ‚¨ç›®å‰å°šç„¡å…Œç¾è³‡æ ¼ã€‚";
 	}
+}
+
+
 }

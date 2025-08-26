@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Core {
+    /// <summary>
 
-/// <summary>
 /// A "Language Family" represents a collection of related locales.
 /// Eg. The American English (en_us) and British English (en_uk) locales would both be part of the "English" Language Family (en)
 /// </summary>
@@ -12,7 +12,7 @@ public interface ILanguageFamily : ILanguageFamilyIdentifier
 	string Name { get; }
 
 	/// <summary>
-	/// Name of the language in that native language (eg. Korean could be "한국어")
+	/// Name of the language in that native language (eg. Korean could be "í•œêµ­ì–´")
 	/// </summary>
 	string NativeName { get; }
 
@@ -20,4 +20,7 @@ public interface ILanguageFamily : ILanguageFamilyIdentifier
 	/// Language code, generally following ISO standards (eg. Korean could be "ko")
 	/// </summary>
 	string LanguageCode { get; }
+}
+
+
 }

@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.PremiumFeatures.Entitiesinternal {
+    class RobuxStipendFrequencyTypeDAL
 
-namespace Roblox.PremiumFeatures.Entities;
-
-internal class RobuxStipendFrequencyTypeDAL
 {
 	private static string ConnectionString => RobloxDatabase.RobloxRobuxStipends.GetConnectionString();
 
@@ -125,4 +124,7 @@ internal class RobuxStipendFrequencyTypeDAL
 		};
 		return EntityHelper.GetEntityDAL(new DbInfo(ConnectionString, "[dbo].[RobuxStipendFrequencyTypes_GetRobuxStipendFrequencyTypeByValue]", queryParameters), BuildDAL);
 	}
+}
+
+
 }

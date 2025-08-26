@@ -1,10 +1,12 @@
-using Roblox.Entities;
+﻿using Roblox.Entities;
+namespace Roblox.Moderation.Entitiesinternal {
+    interface IModerationLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 
-namespace Roblox.Platform.Moderation.Entities;
-
-internal interface IModerationLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 {
 	int SupportedLocaleId { get; set; }
 
 	bool IsActive { get; set; }
+}
+
+
 }

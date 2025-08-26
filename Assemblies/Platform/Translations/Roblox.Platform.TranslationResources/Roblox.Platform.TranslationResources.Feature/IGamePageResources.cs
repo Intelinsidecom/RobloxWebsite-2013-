@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGamePageResources : ITranslationResources
 
-public interface IGamePageResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "abelFilterDefault"
@@ -308,4 +308,7 @@ public interface IGamePageResources : ITranslationResources
 	/// English String: "{playerCount} Playing"
 	/// </summary>
 	string LabelPlayingPhrase(string playerCount);
+}
+
+
 }

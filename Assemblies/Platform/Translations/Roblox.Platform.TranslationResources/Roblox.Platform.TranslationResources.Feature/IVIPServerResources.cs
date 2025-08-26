@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IVIPServerResources : ITranslationResources
 
-public interface IVIPServerResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Add"
@@ -229,4 +229,7 @@ public interface IVIPServerResources : ITranslationResources
 	/// English String: "Your VIP Server monthly payment is {value}"
 	/// </summary>
 	string LabelSubscriptionMonthlyPaymentDue(string value);
+}
+
+
 }

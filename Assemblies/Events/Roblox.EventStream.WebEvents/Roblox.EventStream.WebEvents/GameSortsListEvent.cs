@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameSortsListEvent : WebEventBase
 
-public class GameSortsListEvent : WebEventBase
 {
 	private const string _Name = "gameSortsList";
 
@@ -24,3 +25,12 @@ public class GameSortsListEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

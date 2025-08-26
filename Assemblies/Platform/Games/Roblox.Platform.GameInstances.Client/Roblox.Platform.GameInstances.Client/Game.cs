@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using ProtoBuf;
 using Roblox.GameInstances.Interfaces;
+namespace Roblox.Platform.GameInstances.Client {
+    [ProtoContract]
 
-namespace Roblox.GameInstances.Client;
-
-[ProtoContract]
 public class Game : IGame
 {
 	[ProtoMember(1)]
@@ -66,4 +65,7 @@ public class Game : IGame
 
 	[ProtoMember(20)]
 	public long LastSequenceNumber { get; set; }
+}
+
+
 }

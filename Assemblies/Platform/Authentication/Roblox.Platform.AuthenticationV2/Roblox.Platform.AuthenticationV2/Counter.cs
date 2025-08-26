@@ -1,6 +1,6 @@
-namespace Roblox.AuthenticationV2;
+﻿namespace Roblox.Platform.AuthenticationV2 {
+    /// <summary>
 
-/// <summary>
 /// AuthenticationV2 flows to track
 /// </summary>
 public enum Counter
@@ -17,4 +17,7 @@ public enum Counter
 	/// Flow related to /DeleteAllRobloxUserSessions
 	/// </summary>
 	DeleteAllRobloxUserSessions
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubPanelResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -25,7 +25,7 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	/// button text
 	/// English String: "Redeem Card"
 	/// </summary>
-	public override string ActionRedeemCard => "Karte einlösen";
+	public override string ActionRedeemCard => "Karte einlÃ¶sen";
 
 	/// <summary>
 	/// Key: "Action.UpdateCreditCard"
@@ -39,14 +39,14 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	/// button text
 	/// English String: "Where to Buy"
 	/// </summary>
-	public override string ActionWhereToBuy => "Hier erhältlich";
+	public override string ActionWhereToBuy => "Hier erhÃ¤ltlich";
 
 	/// <summary>
 	/// Key: "Description.BuyRobux"
 	/// description text
-	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. You’ll need Robux to make it all happen. What are you waiting for?"
+	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. Youâ€™ll need Robux to make it all happen. What are you waiting for?"
 	/// </summary>
-	public override string DescriptionBuyRobux => "Robux ist die virtuelle Währung, die in vielen unserer Onlinespiele verwendet wird. Du kannst auch Robux ausgeben, um deinem Avatar einen tollen neuen Look zu verpassen. Oder hol dir coole Ausrüstung für Mehrspielerkämpfe. Oder kaufe limitierte Artikel, um sie weiterzuverkaufen oder mit ihnen zu handeln. Für all das brauchst du Robux. Worauf wartest du noch?";
+	public override string DescriptionBuyRobux => "Robux ist die virtuelle WÃ¤hrung, die in vielen unserer Onlinespiele verwendet wird. Du kannst auch Robux ausgeben, um deinem Avatar einen tollen neuen Look zu verpassen. Oder hol dir coole AusrÃ¼stung fÃ¼r MehrspielerkÃ¤mpfe. Oder kaufe limitierte Artikel, um sie weiterzuverkaufen oder mit ihnen zu handeln. FÃ¼r all das brauchst du Robux. Worauf wartest du noch?";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobux"
@@ -60,7 +60,7 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	/// section heading
 	/// English String: "Cancellation"
 	/// </summary>
-	public override string HeadingCancellations => "Kündigung";
+	public override string HeadingCancellations => "KÃ¼ndigung";
 
 	/// <summary>
 	/// Key: "Heading.GameCards"
@@ -121,7 +121,7 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 
 	protected override string _GetTemplateForActionRedeemCard()
 	{
-		return "Karte einlösen";
+		return "Karte einlÃ¶sen";
 	}
 
 	protected override string _GetTemplateForActionUpdateCreditCard()
@@ -131,7 +131,7 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 
 	protected override string _GetTemplateForActionWhereToBuy()
 	{
-		return "Hier erhältlich";
+		return "Hier erhÃ¤ltlich";
 	}
 
 	/// <summary>
@@ -141,17 +141,17 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionBillingPaymentHelp(string emailLink)
 	{
-		return $"Für Fragen zu Zahlungen: {emailLink}";
+		return $"FÃ¼r Fragen zu Zahlungen: {emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionBillingPaymentHelp()
 	{
-		return "Für Fragen zu Zahlungen: {emailLink}";
+		return "FÃ¼r Fragen zu Zahlungen: {emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyRobux()
 	{
-		return "Robux ist die virtuelle Währung, die in vielen unserer Onlinespiele verwendet wird. Du kannst auch Robux ausgeben, um deinem Avatar einen tollen neuen Look zu verpassen. Oder hol dir coole Ausrüstung für Mehrspielerkämpfe. Oder kaufe limitierte Artikel, um sie weiterzuverkaufen oder mit ihnen zu handeln. Für all das brauchst du Robux. Worauf wartest du noch?";
+		return "Robux ist die virtuelle WÃ¤hrung, die in vielen unserer Onlinespiele verwendet wird. Du kannst auch Robux ausgeben, um deinem Avatar einen tollen neuen Look zu verpassen. Oder hol dir coole AusrÃ¼stung fÃ¼r MehrspielerkÃ¤mpfe. Oder kaufe limitierte Artikel, um sie weiterzuverkaufen oder mit ihnen zu handeln. FÃ¼r all das brauchst du Robux. Worauf wartest du noch?";
 	}
 
 	/// <summary>
@@ -161,12 +161,12 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionCancellations(string linkStartTag, string linkEndTag)
 	{
-		return $"Du kannst die automatische Verlängerung der Mitgliedschaft jederzeit vor dem Verlängerungsdatum deaktivieren und die Vorteile des Builders Club bis zum Ende der bereits bezahlten Abonnementlaufzeit nutzen. Um die automatische Verlängerung der Mitgliedschaft zu deaktivieren, klicke bitte im Reiter {linkStartTag}Zahlungen{linkEndTag} auf der Einstellungsseite die Schaltfläche zur Kündigung der Mitgliedschaftsverlängerung an und bestätige die Kündigung dann.";
+		return $"Du kannst die automatische VerlÃ¤ngerung der Mitgliedschaft jederzeit vor dem VerlÃ¤ngerungsdatum deaktivieren und die Vorteile des Builders Club bis zum Ende der bereits bezahlten Abonnementlaufzeit nutzen. Um die automatische VerlÃ¤ngerung der Mitgliedschaft zu deaktivieren, klicke bitte im Reiter {linkStartTag}Zahlungen{linkEndTag} auf der Einstellungsseite die SchaltflÃ¤che zur KÃ¼ndigung der MitgliedschaftsverlÃ¤ngerung an und bestÃ¤tige die KÃ¼ndigung dann.";
 	}
 
 	protected override string _GetTemplateForDescriptionCancellations()
 	{
-		return "Du kannst die automatische Verlängerung der Mitgliedschaft jederzeit vor dem Verlängerungsdatum deaktivieren und die Vorteile des Builders Club bis zum Ende der bereits bezahlten Abonnementlaufzeit nutzen. Um die automatische Verlängerung der Mitgliedschaft zu deaktivieren, klicke bitte im Reiter {linkStartTag}Zahlungen{linkEndTag} auf der Einstellungsseite die Schaltfläche zur Kündigung der Mitgliedschaftsverlängerung an und bestätige die Kündigung dann.";
+		return "Du kannst die automatische VerlÃ¤ngerung der Mitgliedschaft jederzeit vor dem VerlÃ¤ngerungsdatum deaktivieren und die Vorteile des Builders Club bis zum Ende der bereits bezahlten Abonnementlaufzeit nutzen. Um die automatische VerlÃ¤ngerung der Mitgliedschaft zu deaktivieren, klicke bitte im Reiter {linkStartTag}Zahlungen{linkEndTag} auf der Einstellungsseite die SchaltflÃ¤che zur KÃ¼ndigung der MitgliedschaftsverlÃ¤ngerung an und bestÃ¤tige die KÃ¼ndigung dann.";
 	}
 
 	/// <summary>
@@ -175,12 +175,12 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionCancellationsPremium(string linkStartTag, string linkEndTag)
 	{
-		return $"Du kannst die automatische Verlängerung der Mitgliedschaft jederzeit vor dem Verlängerungsdatum deaktivieren und die Vorteile einer Premium-Mitgliedschaft bis zum Ende der bereits bezahlten Abonnementlaufzeit nutzen. Um die automatische Verlängerung der Mitgliedschaft zu deaktivieren, klicke bitte im Reiter {linkStartTag}Zahlungen{linkEndTag} auf der Einstellungsseite die Schaltfläche zur Kündigung der Mitgliedschaftsverlängerung an und bestätige die Kündigung dann.";
+		return $"Du kannst die automatische VerlÃ¤ngerung der Mitgliedschaft jederzeit vor dem VerlÃ¤ngerungsdatum deaktivieren und die Vorteile einer Premium-Mitgliedschaft bis zum Ende der bereits bezahlten Abonnementlaufzeit nutzen. Um die automatische VerlÃ¤ngerung der Mitgliedschaft zu deaktivieren, klicke bitte im Reiter {linkStartTag}Zahlungen{linkEndTag} auf der Einstellungsseite die SchaltflÃ¤che zur KÃ¼ndigung der MitgliedschaftsverlÃ¤ngerung an und bestÃ¤tige die KÃ¼ndigung dann.";
 	}
 
 	protected override string _GetTemplateForDescriptionCancellationsPremium()
 	{
-		return "Du kannst die automatische Verlängerung der Mitgliedschaft jederzeit vor dem Verlängerungsdatum deaktivieren und die Vorteile einer Premium-Mitgliedschaft bis zum Ende der bereits bezahlten Abonnementlaufzeit nutzen. Um die automatische Verlängerung der Mitgliedschaft zu deaktivieren, klicke bitte im Reiter {linkStartTag}Zahlungen{linkEndTag} auf der Einstellungsseite die Schaltfläche zur Kündigung der Mitgliedschaftsverlängerung an und bestätige die Kündigung dann.";
+		return "Du kannst die automatische VerlÃ¤ngerung der Mitgliedschaft jederzeit vor dem VerlÃ¤ngerungsdatum deaktivieren und die Vorteile einer Premium-Mitgliedschaft bis zum Ende der bereits bezahlten Abonnementlaufzeit nutzen. Um die automatische VerlÃ¤ngerung der Mitgliedschaft zu deaktivieren, klicke bitte im Reiter {linkStartTag}Zahlungen{linkEndTag} auf der Einstellungsseite die SchaltflÃ¤che zur KÃ¼ndigung der MitgliedschaftsverlÃ¤ngerung an und bestÃ¤tige die KÃ¼ndigung dann.";
 	}
 
 	/// <summary>
@@ -190,12 +190,12 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionLeanMoreKidsSafety(string startLinkTag, string endLinkTag)
 	{
-		return $"Erfahren Sie mehr über den Builders Club und wie wir die {startLinkTag}Sicherheit von Kindern{endLinkTag} gewährleisten.";
+		return $"Erfahren Sie mehr Ã¼ber den Builders Club und wie wir die {startLinkTag}Sicherheit von Kindern{endLinkTag} gewÃ¤hrleisten.";
 	}
 
 	protected override string _GetTemplateForDescriptionLeanMoreKidsSafety()
 	{
-		return "Erfahren Sie mehr über den Builders Club und wie wir die {startLinkTag}Sicherheit von Kindern{endLinkTag} gewährleisten.";
+		return "Erfahren Sie mehr Ã¼ber den Builders Club und wie wir die {startLinkTag}Sicherheit von Kindern{endLinkTag} gewÃ¤hrleisten.";
 	}
 
 	/// <summary>
@@ -204,12 +204,12 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionLearnMoreKidsSafetyPremium(string startLinkTag, string endLinkTag)
 	{
-		return $"Erfahre mehr über Premium und wie wir die {startLinkTag}Sicherheit von Kindern{endLinkTag} gewährleisten.";
+		return $"Erfahre mehr Ã¼ber Premium und wie wir die {startLinkTag}Sicherheit von Kindern{endLinkTag} gewÃ¤hrleisten.";
 	}
 
 	protected override string _GetTemplateForDescriptionLearnMoreKidsSafetyPremium()
 	{
-		return "Erfahre mehr über Premium und wie wir die {startLinkTag}Sicherheit von Kindern{endLinkTag} gewährleisten.";
+		return "Erfahre mehr Ã¼ber Premium und wie wir die {startLinkTag}Sicherheit von Kindern{endLinkTag} gewÃ¤hrleisten.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobux()
@@ -219,7 +219,7 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 
 	protected override string _GetTemplateForHeadingCancellations()
 	{
-		return "Kündigung";
+		return "KÃ¼ndigung";
 	}
 
 	protected override string _GetTemplateForHeadingGameCards()
@@ -266,4 +266,7 @@ internal class BuildersClubPanelResources_de_de : BuildersClubPanelResources_en_
 	{
 		return "Roblox-Spielkarten";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Entities;
+namespace Roblox.Localization.Auditinternal {
+    interface IAccountLocalesAuditMetadataEntity : IEntity<long>
 
-namespace Roblox.Platform.Localization.Audit;
-
-internal interface IAccountLocalesAuditMetadataEntity : IEntity<long>
 {
 	Guid AccountLocalesAuditEntryPublicId { get; }
 
@@ -14,4 +13,7 @@ internal interface IAccountLocalesAuditMetadataEntity : IEntity<long>
 	byte ChangeAgentTypeId { get; }
 
 	long? ChangeAgentTargetId { get; }
+}
+
+
 }

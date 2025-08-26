@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class WebAuthenticatorLoginEvent : WebEventBase
 
-public class WebAuthenticatorLoginEvent : WebEventBase
 {
 	private const string _Name = "webAuthenticatorLogin";
 
@@ -10,3 +11,12 @@ public class WebAuthenticatorLoginEvent : WebEventBase
 		AddEventArg("url", args.Url);
 	}
 }
+
+
+}
+
+
+
+
+
+

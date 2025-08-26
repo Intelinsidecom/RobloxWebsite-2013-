@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SupportResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -32,21 +32,21 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Contact Information
 	/// English String: "Contact Information"
 	/// </summary>
-	public override string HeadingContactInformation => "Informações de contato";
+	public override string HeadingContactInformation => "InformaÃ§Ãµes de contato";
 
 	/// <summary>
 	/// Key: "Heading.DescriptionOfIssue"
 	/// Description of issue
 	/// English String: "Description of issue"
 	/// </summary>
-	public override string HeadingDescriptionOfIssue => "Descrição do problema";
+	public override string HeadingDescriptionOfIssue => "DescriÃ§Ã£o do problema";
 
 	/// <summary>
 	/// Key: "Heading.DeviceWithProblem"
 	/// What device are you having the problem on?
 	/// English String: "What device are you having the problem on?"
 	/// </summary>
-	public override string HeadingDeviceWithProblem => "Em que dispositivo você está tendo problemas?";
+	public override string HeadingDeviceWithProblem => "Em que dispositivo vocÃª estÃ¡ tendo problemas?";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ErrorWithoutContext"
@@ -60,14 +60,14 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Invalid Username
 	/// English String: "Invalid Username"
 	/// </summary>
-	public override string HeadingDialogInvalidUsername => "Nome de usuário inválido";
+	public override string HeadingDialogInvalidUsername => "Nome de usuÃ¡rio invÃ¡lido";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.RequestReceived"
 	/// Request Received
 	/// English String: "Request Received"
 	/// </summary>
-	public override string HeadingDialogRequestReceived => "Solicitação recebida";
+	public override string HeadingDialogRequestReceived => "SolicitaÃ§Ã£o recebida";
 
 	/// <summary>
 	/// Key: "Heading.HelpCategoryType"
@@ -102,7 +102,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Account Hacked or Can't Log in
 	/// English String: "Account Hacked or Can't Log in"
 	/// </summary>
-	public override string LabelAccountOwnership => "Conta hackeada ou impossível se conectar";
+	public override string LabelAccountOwnership => "Conta hackeada ou impossÃ­vel se conectar";
 
 	/// <summary>
 	/// Key: "Label.AccountPin"
@@ -111,7 +111,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// </summary>
 	public override string LabelAccountPin => "PIN da conta";
 
-	public override string LabelAdjustChildSettings => "Ajustar as configurações de segurança e privacidade da criança";
+	public override string LabelAdjustChildSettings => "Ajustar as configuraÃ§Ãµes de seguranÃ§a e privacidade da crianÃ§a";
 
 	/// <summary>
 	/// Key: "Label.AmazonDevice"
@@ -139,23 +139,23 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Appeal Account or Content
 	/// English String: "Appeal Account or Content"
 	/// </summary>
-	public override string LabelAppealAccountContent => "Apelação de conta ou conteúdo";
+	public override string LabelAppealAccountContent => "ApelaÃ§Ã£o de conta ou conteÃºdo";
 
 	/// <summary>
 	/// Key: "Label.AppealFriend"
 	/// Appeal for Friend
 	/// English String: "Appeal for Friend"
 	/// </summary>
-	public override string LabelAppealFriend => "Apelação para um amigo";
+	public override string LabelAppealFriend => "ApelaÃ§Ã£o para um amigo";
 
-	public override string LabelBilling => "Cobrança e pagamentos";
+	public override string LabelBilling => "CobranÃ§a e pagamentos";
 
 	/// <summary>
 	/// Key: "Label.BugReport"
 	/// Bug Report
 	/// English String: "Bug Report"
 	/// </summary>
-	public override string LabelBugReport => "Relatório de erros";
+	public override string LabelBugReport => "RelatÃ³rio de erros";
 
 	/// <summary>
 	/// Key: "Label.BuildersClub"
@@ -176,23 +176,23 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Cannot Install Roblox or Studio
 	/// English String: "Cannot Install Roblox or Studio"
 	/// </summary>
-	public override string LabelCannotInstall => "Impossível instalar Roblox ou Studio";
+	public override string LabelCannotInstall => "ImpossÃ­vel instalar Roblox ou Studio";
 
 	/// <summary>
 	/// Key: "Label.CannotPlayGame"
 	/// Cannot Play Game
 	/// English String: "Cannot Play Game"
 	/// </summary>
-	public override string LabelCannotPlayGame => "Impossível jogar jogo";
+	public override string LabelCannotPlayGame => "ImpossÃ­vel jogar jogo";
 
 	/// <summary>
 	/// Key: "Label.ChangeChildAge"
 	/// Change Child Age
 	/// English String: "Change Child Age"
 	/// </summary>
-	public override string LabelChangeChildAge => "Alterar idade da criança";
+	public override string LabelChangeChildAge => "Alterar idade da crianÃ§a";
 
-	public override string LabelChatAgeSettings => "Configurações de chat e idade";
+	public override string LabelChatAgeSettings => "ConfiguraÃ§Ãµes de chat e idade";
 
 	/// <summary>
 	/// Key: "Label.Chromebook"
@@ -206,14 +206,14 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Confirm Email Address
 	/// English String: "Confirm Email Address"
 	/// </summary>
-	public override string LabelConfirmEmail => "Confirmar endereço de e-mail";
+	public override string LabelConfirmEmail => "Confirmar endereÃ§o de e-mail";
 
 	/// <summary>
 	/// Key: "Label.ContentAbuseReport"
 	/// Report Content Breaking Rules
 	/// English String: "Report Content Breaking Rules"
 	/// </summary>
-	public override string LabelContentAbuseReport => "Denunciar conteúdo por quebrar as regras";
+	public override string LabelContentAbuseReport => "Denunciar conteÃºdo por quebrar as regras";
 
 	public override string LabelContest => "Concursos e eventos";
 
@@ -257,7 +257,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// DevEx My Request
 	/// English String: "DevEx My Request"
 	/// </summary>
-	public override string LabelDevExMyRequest => "Minha solicitação do DevEx";
+	public override string LabelDevExMyRequest => "Minha solicitaÃ§Ã£o do DevEx";
 
 	/// <summary>
 	/// Key: "Label.DMCA"
@@ -271,14 +271,14 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Email Address
 	/// English String: "Email Address"
 	/// </summary>
-	public override string LabelEmailAddress => "Endereço de e-mail";
+	public override string LabelEmailAddress => "EndereÃ§o de e-mail";
 
 	/// <summary>
 	/// Key: "Label.ExploitReport"
 	/// Exploit Report
 	/// English String: "Exploit Report"
 	/// </summary>
-	public override string LabelExploitReport => "Denuncia de exploração indevida";
+	public override string LabelExploitReport => "Denuncia de exploraÃ§Ã£o indevida";
 
 	/// <summary>
 	/// Key: "Label.FirstName"
@@ -299,14 +299,14 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Free Robux
 	/// English String: "Free Robux"
 	/// </summary>
-	public override string LabelFreeRobux => "Robux grátis";
+	public override string LabelFreeRobux => "Robux grÃ¡tis";
 
 	/// <summary>
 	/// Key: "Label.GameCredit"
 	/// Game Card
 	/// English String: "Game Card"
 	/// </summary>
-	public override string LabelGameCredit => "Cartão do jogo";
+	public override string LabelGameCredit => "CartÃ£o do jogo";
 
 	/// <summary>
 	/// Key: "Label.GCPartialPayment"
@@ -320,14 +320,14 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Game Card - Redeem
 	/// English String: "Game Card - Redeem"
 	/// </summary>
-	public override string LabelGCRedeem => "Cartão do jogo - Retirar";
+	public override string LabelGCRedeem => "CartÃ£o do jogo - Retirar";
 
 	/// <summary>
 	/// Key: "Label.GCSpendCredit"
 	/// Game Card - Spend Credit
 	/// English String: "Game Card - Spend Credit"
 	/// </summary>
-	public override string LabelGCSpendCredit => "Cartão do jogo - Gastar créditos";
+	public override string LabelGCSpendCredit => "CartÃ£o do jogo - Gastar crÃ©ditos";
 
 	/// <summary>
 	/// Key: "Label.HowTo"
@@ -350,7 +350,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// </summary>
 	public override string LabelHowToOther => "Como fazer - Outros";
 
-	public override string LabelIdeasSuggestions => "Ideias e sugestões";
+	public override string LabelIdeasSuggestions => "Ideias e sugestÃµes";
 
 	/// <summary>
 	/// Key: "Label.IPad"
@@ -371,14 +371,14 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Please describe the issue that you are facing. Include any relevant information like where the issue is occurring or the error message.
 	/// English String: "Please describe the issue that you are facing. Include any relevant information like where the issue is occurring or the error message."
 	/// </summary>
-	public override string LabelIssueDescription => "Descreva o problema que você está enfrentando. Inclua todas as informações relevantes, como onde está ocorrendo o problema ou mensagem de erro.";
+	public override string LabelIssueDescription => "Descreva o problema que vocÃª estÃ¡ enfrentando. Inclua todas as informaÃ§Ãµes relevantes, como onde estÃ¡ ocorrendo o problema ou mensagem de erro.";
 
 	/// <summary>
 	/// Key: "Label.IWasScammed"
 	/// I was Scammed
 	/// English String: "I was Scammed"
 	/// </summary>
-	public override string LabelIWasScammed => "Fui vítima de um esquema malicioso";
+	public override string LabelIWasScammed => "Fui vÃ­tima de um esquema malicioso";
 
 	/// <summary>
 	/// Key: "Label.Mac"
@@ -399,21 +399,21 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Moderation
 	/// English String: "Moderation"
 	/// </summary>
-	public override string LabelModeration => "Moderação";
+	public override string LabelModeration => "ModeraÃ§Ã£o";
 
 	/// <summary>
 	/// Key: "Label.OtherSiteClaim"
 	/// Other Site Claim
 	/// English String: "Other Site Claim"
 	/// </summary>
-	public override string LabelOtherSiteClaim => "Reivindicação de outro site";
+	public override string LabelOtherSiteClaim => "ReivindicaÃ§Ã£o de outro site";
 
 	/// <summary>
 	/// Key: "Label.OwnerDMCAClaim"
 	/// Owner DMCA Claim
 	/// English String: "Owner DMCA Claim"
 	/// </summary>
-	public override string LabelOwnerDMCAClaim => "Reivindicação de DMCA do dono";
+	public override string LabelOwnerDMCAClaim => "ReivindicaÃ§Ã£o de DMCA do dono";
 
 	/// <summary>
 	/// Key: "Label.PC"
@@ -427,7 +427,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Physical Toy Issue
 	/// English String: "Physical Toy Issue"
 	/// </summary>
-	public override string LabelPhysicalToyIssue => "Problema com brinquedo físico";
+	public override string LabelPhysicalToyIssue => "Problema com brinquedo fÃ­sico";
 
 	/// <summary>
 	/// Key: "Label.PleaseSelect"
@@ -441,7 +441,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Prize Not Received
 	/// English String: "Prize Not Received"
 	/// </summary>
-	public override string LabelPrizeNotReceived => "Prêmio não recebido";
+	public override string LabelPrizeNotReceived => "PrÃªmio nÃ£o recebido";
 
 	/// <summary>
 	/// Key: "Label.PurchaseDeclined"
@@ -455,14 +455,14 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Purchase - Did Not Receive
 	/// English String: "Purchase - Did Not Receive"
 	/// </summary>
-	public override string LabelPurchaseDidNotReceive => "Compra - Produto não recebido";
+	public override string LabelPurchaseDidNotReceive => "Compra - Produto nÃ£o recebido";
 
 	/// <summary>
 	/// Key: "Label.PurchaseUnauthorizedCharge"
 	/// Purchase - Unauthorized Charge
 	/// English String: "Purchase - Unauthorized Charge"
 	/// </summary>
-	public override string LabelPurchaseUnauthorizedCharge => "Compra - Cobrança não autorizada";
+	public override string LabelPurchaseUnauthorizedCharge => "Compra - CobranÃ§a nÃ£o autorizada";
 
 	/// <summary>
 	/// Key: "Label.ReportPhish"
@@ -504,21 +504,21 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Inappropriate game or user behavior
 	/// English String: "Inappropriate game or user behavior"
 	/// </summary>
-	public override string LabelSafetyInquiry => "Comportamento de usuário ou jogo inapropriado";
+	public override string LabelSafetyInquiry => "Comportamento de usuÃ¡rio ou jogo inapropriado";
 
 	/// <summary>
 	/// Key: "Label.SafetyQueueTicket"
 	/// User Safety Concern
 	/// English String: "User Safety Concern"
 	/// </summary>
-	public override string LabelSafetyQueueTicket => "Cuidados com a segurança do usuário";
+	public override string LabelSafetyQueueTicket => "Cuidados com a seguranÃ§a do usuÃ¡rio";
 
 	/// <summary>
 	/// Key: "Label.SpecificGameIssue"
 	/// Specific Game Issue
 	/// English String: "Specific Game Issue"
 	/// </summary>
-	public override string LabelSpecificGameIssue => "Problema específico no jogo";
+	public override string LabelSpecificGameIssue => "Problema especÃ­fico no jogo";
 
 	/// <summary>
 	/// Key: "Label.Submit"
@@ -532,49 +532,49 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Feature Suggestion
 	/// English String: "Feature Suggestion"
 	/// </summary>
-	public override string LabelSuggestFeature => "Sugestão de funcionalidade";
+	public override string LabelSuggestFeature => "SugestÃ£o de funcionalidade";
 
 	/// <summary>
 	/// Key: "Label.SuggestFeedback"
 	/// Feedback
 	/// English String: "Feedback"
 	/// </summary>
-	public override string LabelSuggestFeedback => "Opinião";
+	public override string LabelSuggestFeedback => "OpiniÃ£o";
 
 	/// <summary>
 	/// Key: "Label.TechnicalSupport"
 	/// Technical Support
 	/// English String: "Technical Support"
 	/// </summary>
-	public override string LabelTechnicalSupport => "Suporte técnico";
+	public override string LabelTechnicalSupport => "Suporte tÃ©cnico";
 
 	/// <summary>
 	/// Key: "Label.ToyCodeIssue"
 	/// Toy Code Issue
 	/// English String: "Toy Code Issue"
 	/// </summary>
-	public override string LabelToyCodeIssue => "Problema com código do brinquedo";
+	public override string LabelToyCodeIssue => "Problema com cÃ³digo do brinquedo";
 
 	/// <summary>
 	/// Key: "Label.TwoStepV"
 	/// 2-Step Verification
 	/// English String: "2-Step Verification"
 	/// </summary>
-	public override string LabelTwoStepV => "Verificação de 2 passos";
+	public override string LabelTwoStepV => "VerificaÃ§Ã£o de 2 passos";
 
 	/// <summary>
 	/// Key: "Label.UserAbuseReport"
 	/// Report User Breaking Rules
 	/// English String: "Report User Breaking Rules"
 	/// </summary>
-	public override string LabelUserAbuseReport => "Denunciar usuário por quebrar as regras";
+	public override string LabelUserAbuseReport => "Denunciar usuÃ¡rio por quebrar as regras";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// Username
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "Nome de usuário";
+	public override string LabelUsername => "Nome de usuÃ¡rio";
 
 	/// <summary>
 	/// Key: "Label.VCCatalog"
@@ -609,14 +609,14 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker.
 	/// English String: "Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker."
 	/// </summary>
-	public override string ResponseDialogInvalidUsername => "Aperte Enviar para enviar a solicitação ou Cancelar para editar o nome de usuário. O nome de usuário é uma informação muito importante e pode ajudar a resolver seu problema mais rápido.";
+	public override string ResponseDialogInvalidUsername => "Aperte Enviar para enviar a solicitaÃ§Ã£o ou Cancelar para editar o nome de usuÃ¡rio. O nome de usuÃ¡rio Ã© uma informaÃ§Ã£o muito importante e pode ajudar a resolver seu problema mais rÃ¡pido.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.RequestReceived"
 	/// Thank you for contacting Roblox. Please check your email for a message from Customer Service.
 	/// English String: "Thank you for contacting Roblox. Please check your email for a message from Customer Service."
 	/// </summary>
-	public override string ResponseDialogRequestReceived => "Obrigado por contatar Roblox. Confira o seu e-mail para encontrar uma mensagem do Serviço ao Cliente.";
+	public override string ResponseDialogRequestReceived => "Obrigado por contatar Roblox. Confira o seu e-mail para encontrar uma mensagem do ServiÃ§o ao Cliente.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TooManyAttemptsError"
@@ -637,35 +637,35 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 	/// Please enter a properly formatted email address
 	/// English String: "Please enter a properly formatted email address"
 	/// </summary>
-	public override string ResponseEmailFormatError => "Insira um endereço de e-mail com formato correto";
+	public override string ResponseEmailFormatError => "Insira um endereÃ§o de e-mail com formato correto";
 
 	/// <summary>
 	/// Key: "Response.EmailNotMatching"
 	/// Email address does not match
 	/// English String: "Email address does not match"
 	/// </summary>
-	public override string ResponseEmailNotMatching => "Endereço de e-mail não confere";
+	public override string ResponseEmailNotMatching => "EndereÃ§o de e-mail nÃ£o confere";
 
 	/// <summary>
 	/// Key: "Response.InvalidFirstName"
 	/// Please enter a valid first name
 	/// English String: "Please enter a valid first name"
 	/// </summary>
-	public override string ResponseInvalidFirstName => "Insira um nome válido";
+	public override string ResponseInvalidFirstName => "Insira um nome vÃ¡lido";
 
 	/// <summary>
 	/// Key: "Response.InvalidUsername"
 	/// That doesn't appear to be a valid Roblox username.
 	/// English String: "That doesn't appear to be a valid Roblox username."
 	/// </summary>
-	public override string ResponseInvalidUsername => "Este não parece ser um nome de usuário do Roblox válido.";
+	public override string ResponseInvalidUsername => "Este nÃ£o parece ser um nome de usuÃ¡rio do Roblox vÃ¡lido.";
 
 	/// <summary>
 	/// Key: "Response.Under13Email"
 	/// If you are under 13 years old, please provide your parent's email address
 	/// English String: "If you are under 13 years old, please provide your parent's email address"
 	/// </summary>
-	public override string ResponseUnder13Email => "Se você tiver menos de 13 anos, forneça o endereço de e-mail do responsável";
+	public override string ResponseUnder13Email => "Se vocÃª tiver menos de 13 anos, forneÃ§a o endereÃ§o de e-mail do responsÃ¡vel";
 
 	public SupportResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -689,17 +689,17 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForHeadingContactInformation()
 	{
-		return "Informações de contato";
+		return "InformaÃ§Ãµes de contato";
 	}
 
 	protected override string _GetTemplateForHeadingDescriptionOfIssue()
 	{
-		return "Descrição do problema";
+		return "DescriÃ§Ã£o do problema";
 	}
 
 	protected override string _GetTemplateForHeadingDeviceWithProblem()
 	{
-		return "Em que dispositivo você está tendo problemas?";
+		return "Em que dispositivo vocÃª estÃ¡ tendo problemas?";
 	}
 
 	protected override string _GetTemplateForHeadingDialogErrorWithoutContext()
@@ -709,12 +709,12 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForHeadingDialogInvalidUsername()
 	{
-		return "Nome de usuário inválido";
+		return "Nome de usuÃ¡rio invÃ¡lido";
 	}
 
 	protected override string _GetTemplateForHeadingDialogRequestReceived()
 	{
-		return "Solicitação recebida";
+		return "SolicitaÃ§Ã£o recebida";
 	}
 
 	protected override string _GetTemplateForHeadingHelpCategoryType()
@@ -739,7 +739,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelAccountOwnership()
 	{
-		return "Conta hackeada ou impossível se conectar";
+		return "Conta hackeada ou impossÃ­vel se conectar";
 	}
 
 	protected override string _GetTemplateForLabelAccountPin()
@@ -749,7 +749,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelAdjustChildSettings()
 	{
-		return "Ajustar as configurações de segurança e privacidade da criança";
+		return "Ajustar as configuraÃ§Ãµes de seguranÃ§a e privacidade da crianÃ§a";
 	}
 
 	protected override string _GetTemplateForLabelAmazonDevice()
@@ -769,22 +769,22 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelAppealAccountContent()
 	{
-		return "Apelação de conta ou conteúdo";
+		return "ApelaÃ§Ã£o de conta ou conteÃºdo";
 	}
 
 	protected override string _GetTemplateForLabelAppealFriend()
 	{
-		return "Apelação para um amigo";
+		return "ApelaÃ§Ã£o para um amigo";
 	}
 
 	protected override string _GetTemplateForLabelBilling()
 	{
-		return "Cobrança e pagamentos";
+		return "CobranÃ§a e pagamentos";
 	}
 
 	protected override string _GetTemplateForLabelBugReport()
 	{
-		return "Relatório de erros";
+		return "RelatÃ³rio de erros";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClub()
@@ -799,22 +799,22 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelCannotInstall()
 	{
-		return "Impossível instalar Roblox ou Studio";
+		return "ImpossÃ­vel instalar Roblox ou Studio";
 	}
 
 	protected override string _GetTemplateForLabelCannotPlayGame()
 	{
-		return "Impossível jogar jogo";
+		return "ImpossÃ­vel jogar jogo";
 	}
 
 	protected override string _GetTemplateForLabelChangeChildAge()
 	{
-		return "Alterar idade da criança";
+		return "Alterar idade da crianÃ§a";
 	}
 
 	protected override string _GetTemplateForLabelChatAgeSettings()
 	{
-		return "Configurações de chat e idade";
+		return "ConfiguraÃ§Ãµes de chat e idade";
 	}
 
 	protected override string _GetTemplateForLabelChromebook()
@@ -824,12 +824,12 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelConfirmEmail()
 	{
-		return "Confirmar endereço de e-mail";
+		return "Confirmar endereÃ§o de e-mail";
 	}
 
 	protected override string _GetTemplateForLabelContentAbuseReport()
 	{
-		return "Denunciar conteúdo por quebrar as regras";
+		return "Denunciar conteÃºdo por quebrar as regras";
 	}
 
 	protected override string _GetTemplateForLabelContest()
@@ -864,7 +864,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelDevExMyRequest()
 	{
-		return "Minha solicitação do DevEx";
+		return "Minha solicitaÃ§Ã£o do DevEx";
 	}
 
 	protected override string _GetTemplateForLabelDMCA()
@@ -874,12 +874,12 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelEmailAddress()
 	{
-		return "Endereço de e-mail";
+		return "EndereÃ§o de e-mail";
 	}
 
 	protected override string _GetTemplateForLabelExploitReport()
 	{
-		return "Denuncia de exploração indevida";
+		return "Denuncia de exploraÃ§Ã£o indevida";
 	}
 
 	protected override string _GetTemplateForLabelFirstName()
@@ -894,12 +894,12 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelFreeRobux()
 	{
-		return "Robux grátis";
+		return "Robux grÃ¡tis";
 	}
 
 	protected override string _GetTemplateForLabelGameCredit()
 	{
-		return "Cartão do jogo";
+		return "CartÃ£o do jogo";
 	}
 
 	protected override string _GetTemplateForLabelGCPartialPayment()
@@ -909,12 +909,12 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelGCRedeem()
 	{
-		return "Cartão do jogo - Retirar";
+		return "CartÃ£o do jogo - Retirar";
 	}
 
 	protected override string _GetTemplateForLabelGCSpendCredit()
 	{
-		return "Cartão do jogo - Gastar créditos";
+		return "CartÃ£o do jogo - Gastar crÃ©ditos";
 	}
 
 	protected override string _GetTemplateForLabelHowTo()
@@ -934,7 +934,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelIdeasSuggestions()
 	{
-		return "Ideias e sugestões";
+		return "Ideias e sugestÃµes";
 	}
 
 	protected override string _GetTemplateForLabelIPad()
@@ -949,12 +949,12 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelIssueDescription()
 	{
-		return "Descreva o problema que você está enfrentando. Inclua todas as informações relevantes, como onde está ocorrendo o problema ou mensagem de erro.";
+		return "Descreva o problema que vocÃª estÃ¡ enfrentando. Inclua todas as informaÃ§Ãµes relevantes, como onde estÃ¡ ocorrendo o problema ou mensagem de erro.";
 	}
 
 	protected override string _GetTemplateForLabelIWasScammed()
 	{
-		return "Fui vítima de um esquema malicioso";
+		return "Fui vÃ­tima de um esquema malicioso";
 	}
 
 	protected override string _GetTemplateForLabelMac()
@@ -969,17 +969,17 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelModeration()
 	{
-		return "Moderação";
+		return "ModeraÃ§Ã£o";
 	}
 
 	protected override string _GetTemplateForLabelOtherSiteClaim()
 	{
-		return "Reivindicação de outro site";
+		return "ReivindicaÃ§Ã£o de outro site";
 	}
 
 	protected override string _GetTemplateForLabelOwnerDMCAClaim()
 	{
-		return "Reivindicação de DMCA do dono";
+		return "ReivindicaÃ§Ã£o de DMCA do dono";
 	}
 
 	protected override string _GetTemplateForLabelPC()
@@ -989,7 +989,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelPhysicalToyIssue()
 	{
-		return "Problema com brinquedo físico";
+		return "Problema com brinquedo fÃ­sico";
 	}
 
 	protected override string _GetTemplateForLabelPleaseSelect()
@@ -999,7 +999,7 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelPrizeNotReceived()
 	{
-		return "Prêmio não recebido";
+		return "PrÃªmio nÃ£o recebido";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseDeclined()
@@ -1009,12 +1009,12 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelPurchaseDidNotReceive()
 	{
-		return "Compra - Produto não recebido";
+		return "Compra - Produto nÃ£o recebido";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseUnauthorizedCharge()
 	{
-		return "Compra - Cobrança não autorizada";
+		return "Compra - CobranÃ§a nÃ£o autorizada";
 	}
 
 	protected override string _GetTemplateForLabelReportPhish()
@@ -1044,17 +1044,17 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelSafetyInquiry()
 	{
-		return "Comportamento de usuário ou jogo inapropriado";
+		return "Comportamento de usuÃ¡rio ou jogo inapropriado";
 	}
 
 	protected override string _GetTemplateForLabelSafetyQueueTicket()
 	{
-		return "Cuidados com a segurança do usuário";
+		return "Cuidados com a seguranÃ§a do usuÃ¡rio";
 	}
 
 	protected override string _GetTemplateForLabelSpecificGameIssue()
 	{
-		return "Problema específico no jogo";
+		return "Problema especÃ­fico no jogo";
 	}
 
 	protected override string _GetTemplateForLabelSubmit()
@@ -1064,37 +1064,37 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelSuggestFeature()
 	{
-		return "Sugestão de funcionalidade";
+		return "SugestÃ£o de funcionalidade";
 	}
 
 	protected override string _GetTemplateForLabelSuggestFeedback()
 	{
-		return "Opinião";
+		return "OpiniÃ£o";
 	}
 
 	protected override string _GetTemplateForLabelTechnicalSupport()
 	{
-		return "Suporte técnico";
+		return "Suporte tÃ©cnico";
 	}
 
 	protected override string _GetTemplateForLabelToyCodeIssue()
 	{
-		return "Problema com código do brinquedo";
+		return "Problema com cÃ³digo do brinquedo";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepV()
 	{
-		return "Verificação de 2 passos";
+		return "VerificaÃ§Ã£o de 2 passos";
 	}
 
 	protected override string _GetTemplateForLabelUserAbuseReport()
 	{
-		return "Denunciar usuário por quebrar as regras";
+		return "Denunciar usuÃ¡rio por quebrar as regras";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "Nome de usuário";
+		return "Nome de usuÃ¡rio";
 	}
 
 	protected override string _GetTemplateForLabelVCCatalog()
@@ -1119,12 +1119,12 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForResponseDialogInvalidUsername()
 	{
-		return "Aperte Enviar para enviar a solicitação ou Cancelar para editar o nome de usuário. O nome de usuário é uma informação muito importante e pode ajudar a resolver seu problema mais rápido.";
+		return "Aperte Enviar para enviar a solicitaÃ§Ã£o ou Cancelar para editar o nome de usuÃ¡rio. O nome de usuÃ¡rio Ã© uma informaÃ§Ã£o muito importante e pode ajudar a resolver seu problema mais rÃ¡pido.";
 	}
 
 	protected override string _GetTemplateForResponseDialogRequestReceived()
 	{
-		return "Obrigado por contatar Roblox. Confira o seu e-mail para encontrar uma mensagem do Serviço ao Cliente.";
+		return "Obrigado por contatar Roblox. Confira o seu e-mail para encontrar uma mensagem do ServiÃ§o ao Cliente.";
 	}
 
 	protected override string _GetTemplateForResponseDialogTooManyAttemptsError()
@@ -1139,26 +1139,29 @@ internal class SupportResources_pt_br : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForResponseEmailFormatError()
 	{
-		return "Insira um endereço de e-mail com formato correto";
+		return "Insira um endereÃ§o de e-mail com formato correto";
 	}
 
 	protected override string _GetTemplateForResponseEmailNotMatching()
 	{
-		return "Endereço de e-mail não confere";
+		return "EndereÃ§o de e-mail nÃ£o confere";
 	}
 
 	protected override string _GetTemplateForResponseInvalidFirstName()
 	{
-		return "Insira um nome válido";
+		return "Insira um nome vÃ¡lido";
 	}
 
 	protected override string _GetTemplateForResponseInvalidUsername()
 	{
-		return "Este não parece ser um nome de usuário do Roblox válido.";
+		return "Este nÃ£o parece ser um nome de usuÃ¡rio do Roblox vÃ¡lido.";
 	}
 
 	protected override string _GetTemplateForResponseUnder13Email()
 	{
-		return "Se você tiver menos de 13 anos, forneça o endereço de e-mail do responsável";
+		return "Se vocÃª tiver menos de 13 anos, forneÃ§a o endereÃ§o de e-mail do responsÃ¡vel";
 	}
+}
+
+
 }

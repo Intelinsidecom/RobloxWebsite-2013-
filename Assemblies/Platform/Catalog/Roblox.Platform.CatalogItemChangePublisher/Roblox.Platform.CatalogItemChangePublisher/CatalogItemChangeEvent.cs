@@ -1,6 +1,6 @@
-namespace Roblox.CatalogItemChangePublisher;
+﻿namespace Roblox.Platform.CatalogItemChangePublisherpublic {
+    class CatalogItemChangeEvent
 
-public class CatalogItemChangeEvent
 {
 	public long TargetId { get; }
 
@@ -11,4 +11,7 @@ public class CatalogItemChangeEvent
 		TargetId = targetId;
 		CatalogItemType = catalogItemType;
 	}
+}
+
+
 }

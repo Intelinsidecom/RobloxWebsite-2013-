@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Net;
 using System.Security.Cryptography;
 using Roblox.AuthenticationV2.Properties;
+namespace Roblox.Platform.AuthenticationV2 {
+    /// <inheritdoc />
 
-namespace Roblox.AuthenticationV2;
-
-/// <inheritdoc />
 public class IPAddressHasher : IIPAddressHasher
 {
 	private readonly IIPAddressHasherSettings _Settings;
@@ -33,4 +32,7 @@ public class IPAddressHasher : IIPAddressHasher
 		Buffer.BlockCopy(saltBytes, 0, bytesToHash, ipBytes.Length, saltBytes.Length);
 		return Convert.ToBase64String(sha256Hash.ComputeHash(bytesToHash));
 	}
+}
+
+
 }

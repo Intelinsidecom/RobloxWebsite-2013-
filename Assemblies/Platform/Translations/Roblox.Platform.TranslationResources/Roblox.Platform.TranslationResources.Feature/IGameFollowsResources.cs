@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameFollowsResources : ITranslationResources
 
-public interface IGameFollowsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "ActionCancel"
@@ -64,4 +64,7 @@ public interface IGameFollowsResources : ITranslationResources
 	/// English String: "Unfollow Game"
 	/// </summary>
 	string TooltipUnfollowGame { get; }
+}
+
+
 }

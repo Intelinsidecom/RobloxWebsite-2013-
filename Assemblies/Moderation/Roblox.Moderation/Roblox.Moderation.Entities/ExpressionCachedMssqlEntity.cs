@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
 using Roblox.Moderation;
 using Roblox.Platform.Core;
+namespace Roblox.Moderation.Entities {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Moderation.Entities;
-
-[ExcludeFromCodeCoverage]
 internal class ExpressionCachedMssqlEntity : IExpressionEntity, IUpdateableEntity<long>, IEntity<long>
 {
 	public long Id { get; set; }
@@ -33,4 +32,7 @@ internal class ExpressionCachedMssqlEntity : IExpressionEntity, IUpdateableEntit
 	{
 		(Roblox.Moderation.Expression.Get(Id) ?? throw new PlatformDataIntegrityException("Performing update on a non persisted entity.")).Delete();
 	}
+}
+
+
 }

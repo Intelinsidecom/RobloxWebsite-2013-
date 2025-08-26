@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeedsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,49 +10,49 @@ internal class FeedsResources_zh_tw : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Heading.BuildSomething"
 	/// English String: "Build Something"
 	/// </summary>
-	public override string HeadingBuildSomething => "開始創作";
+	public override string HeadingBuildSomething => "é–‹å§‹å‰µä½œ";
 
 	/// <summary>
 	/// Key: "Heading.CustomizeAvatar"
 	/// English String: "Customize Your Avatar"
 	/// </summary>
-	public override string HeadingCustomizeAvatar => "自訂您的虛擬人偶";
+	public override string HeadingCustomizeAvatar => "è‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶";
 
 	/// <summary>
 	/// Key: "Heading.ForumHelp"
 	/// English String: "Roblox forums for help"
 	/// </summary>
-	public override string HeadingForumHelp => "瀏覽 Roblox 論壇取得協助";
+	public override string HeadingForumHelp => "ç€è¦½ Roblox è«–å£‡å–å¾—å”åŠ©";
 
 	/// <summary>
 	/// Key: "Heading.MakeFriends"
 	/// English String: "Make Friends"
 	/// </summary>
-	public override string HeadingMakeFriends => "結交好友";
+	public override string HeadingMakeFriends => "çµäº¤å¥½å‹";
 
 	/// <summary>
 	/// Key: "Heading.PlayGames"
 	/// English String: "Play Games"
 	/// </summary>
-	public override string HeadingPlayGames => "玩遊戲";
+	public override string HeadingPlayGames => "çŽ©éŠæˆ²";
 
 	/// <summary>
 	/// Key: "Label.NoFeedLink"
 	/// English String: "make some best friends now."
 	/// </summary>
-	public override string LabelNoFeedLink => "現在開始結交好友。";
+	public override string LabelNoFeedLink => "ç¾åœ¨é–‹å§‹çµäº¤å¥½å‹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoFeedText"
 	/// English String: "No news about your best friends... want to know what your best friends are up to?"
 	/// </summary>
-	public override string LabelNoFeedText => "沒有您的好友的消息…想知道您的好友在做什麼嗎？";
+	public override string LabelNoFeedText => "æ²’æœ‰æ‚¨çš„å¥½å‹çš„æ¶ˆæ¯â€¦æƒ³çŸ¥é“æ‚¨çš„å¥½å‹åœ¨åšä»€éº¼å—Žï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.PlayGames"
 	/// English String: "Nearly all Roblox games are built by players like you. Here are some of our favorites:"
 	/// </summary>
-	public override string LabelPlayGames => "Roblox 遊戲幾乎都是由像您一樣的玩家創作。以下是幾個我們最愛的遊戲：";
+	public override string LabelPlayGames => "Roblox éŠæˆ²å¹¾ä¹Žéƒ½æ˜¯ç”±åƒæ‚¨ä¸€æ¨£çš„çŽ©å®¶å‰µä½œã€‚ä»¥ä¸‹æ˜¯å¹¾å€‹æˆ‘å€‘æœ€æ„›çš„éŠæˆ²ï¼š";
 
 	public FeedsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -61,27 +61,27 @@ internal class FeedsResources_zh_tw : FeedsResources_en_us, IFeedsResources, ITr
 
 	protected override string _GetTemplateForHeadingBuildSomething()
 	{
-		return "開始創作";
+		return "é–‹å§‹å‰µä½œ";
 	}
 
 	protected override string _GetTemplateForHeadingCustomizeAvatar()
 	{
-		return "自訂您的虛擬人偶";
+		return "è‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶";
 	}
 
 	protected override string _GetTemplateForHeadingForumHelp()
 	{
-		return "瀏覽 Roblox 論壇取得協助";
+		return "ç€è¦½ Roblox è«–å£‡å–å¾—å”åŠ©";
 	}
 
 	protected override string _GetTemplateForHeadingMakeFriends()
 	{
-		return "結交好友";
+		return "çµäº¤å¥½å‹";
 	}
 
 	protected override string _GetTemplateForHeadingPlayGames()
 	{
-		return "玩遊戲";
+		return "çŽ©éŠæˆ²";
 	}
 
 	/// <summary>
@@ -90,12 +90,12 @@ internal class FeedsResources_zh_tw : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelBuildSomething(string linkStart, string linkEnd)
 	{
-		return $"建築家都喜歡玩我們的多人建造遊戲。專業建築家可以前往{linkStart}開發頁面{linkEnd}看看我們的遊戲開發環境 Roblox Studio。";
+		return $"å»ºç¯‰å®¶éƒ½å–œæ­¡çŽ©æˆ‘å€‘çš„å¤šäººå»ºé€ éŠæˆ²ã€‚å°ˆæ¥­å»ºç¯‰å®¶å¯ä»¥å‰å¾€{linkStart}é–‹ç™¼é é¢{linkEnd}çœ‹çœ‹æˆ‘å€‘çš„éŠæˆ²é–‹ç™¼ç’°å¢ƒ Roblox Studioã€‚";
 	}
 
 	protected override string _GetTemplateForLabelBuildSomething()
 	{
-		return "建築家都喜歡玩我們的多人建造遊戲。專業建築家可以前往{linkStart}開發頁面{linkEnd}看看我們的遊戲開發環境 Roblox Studio。";
+		return "å»ºç¯‰å®¶éƒ½å–œæ­¡çŽ©æˆ‘å€‘çš„å¤šäººå»ºé€ éŠæˆ²ã€‚å°ˆæ¥­å»ºç¯‰å®¶å¯ä»¥å‰å¾€{linkStart}é–‹ç™¼é é¢{linkEnd}çœ‹çœ‹æˆ‘å€‘çš„éŠæˆ²é–‹ç™¼ç’°å¢ƒ Roblox Studioã€‚";
 	}
 
 	/// <summary>
@@ -104,12 +104,12 @@ internal class FeedsResources_zh_tw : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelCustomizeAvatarDesktop(string avatarLinkStart, string avatarLinkEnd, string catalogLinkStart, string catalogLinkEnd)
 	{
-		return $"前往{avatarLinkStart}虛擬人偶編輯器{avatarLinkEnd}自訂您的角色，或前往{catalogLinkStart}型錄{catalogLinkEnd}購買服裝。";
+		return $"å‰å¾€{avatarLinkStart}è™›æ“¬äººå¶ç·¨è¼¯å™¨{avatarLinkEnd}è‡ªè¨‚æ‚¨çš„è§’è‰²ï¼Œæˆ–å‰å¾€{catalogLinkStart}åž‹éŒ„{catalogLinkEnd}è³¼è²·æœè£ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarDesktop()
 	{
-		return "前往{avatarLinkStart}虛擬人偶編輯器{avatarLinkEnd}自訂您的角色，或前往{catalogLinkStart}型錄{catalogLinkEnd}購買服裝。";
+		return "å‰å¾€{avatarLinkStart}è™›æ“¬äººå¶ç·¨è¼¯å™¨{avatarLinkEnd}è‡ªè¨‚æ‚¨çš„è§’è‰²ï¼Œæˆ–å‰å¾€{catalogLinkStart}åž‹éŒ„{catalogLinkEnd}è³¼è²·æœè£ã€‚";
 	}
 
 	/// <summary>
@@ -118,12 +118,12 @@ internal class FeedsResources_zh_tw : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelCustomizeAvatarPhone(string linkStart, string linkEnd)
 	{
-		return $"從{linkStart}型錄{linkEnd}取得新服裝，自訂您的虛擬人偶";
+		return $"å¾ž{linkStart}åž‹éŒ„{linkEnd}å–å¾—æ–°æœè£ï¼Œè‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarPhone()
 	{
-		return "從{linkStart}型錄{linkEnd}取得新服裝，自訂您的虛擬人偶";
+		return "å¾ž{linkStart}åž‹éŒ„{linkEnd}å–å¾—æ–°æœè£ï¼Œè‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶";
 	}
 
 	/// <summary>
@@ -132,12 +132,12 @@ internal class FeedsResources_zh_tw : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelForumHelp(string linkStart, string linkEnd)
 	{
-		return $"不管您在找什麼，只要和 Roblox 有關，就有人在{linkStart}這裡{linkEnd}討論。";
+		return $"ä¸ç®¡æ‚¨åœ¨æ‰¾ä»€éº¼ï¼Œåªè¦å’Œ Roblox æœ‰é—œï¼Œå°±æœ‰äººåœ¨{linkStart}é€™è£¡{linkEnd}è¨Žè«–ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelForumHelp()
 	{
-		return "不管您在找什麼，只要和 Roblox 有關，就有人在{linkStart}這裡{linkEnd}討論。";
+		return "ä¸ç®¡æ‚¨åœ¨æ‰¾ä»€éº¼ï¼Œåªè¦å’Œ Roblox æœ‰é—œï¼Œå°±æœ‰äººåœ¨{linkStart}é€™è£¡{linkEnd}è¨Žè«–ã€‚";
 	}
 
 	/// <summary>
@@ -146,26 +146,29 @@ internal class FeedsResources_zh_tw : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelMakeFriends(string linkStart, string linkEnd)
 	{
-		return $"在遊戲中與其他玩家相會，並向對方傳送好友邀請。若您已離開遊戲，您可以{linkStart}搜尋{linkEnd}該玩家的個人檔案，再傳送邀請。";
+		return $"åœ¨éŠæˆ²ä¸­èˆ‡å…¶ä»–çŽ©å®¶ç›¸æœƒï¼Œä¸¦å‘å°æ–¹å‚³é€å¥½å‹é‚€è«‹ã€‚è‹¥æ‚¨å·²é›¢é–‹éŠæˆ²ï¼Œæ‚¨å¯ä»¥{linkStart}æœå°‹{linkEnd}è©²çŽ©å®¶çš„å€‹äººæª”æ¡ˆï¼Œå†å‚³é€é‚€è«‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelMakeFriends()
 	{
-		return "在遊戲中與其他玩家相會，並向對方傳送好友邀請。若您已離開遊戲，您可以{linkStart}搜尋{linkEnd}該玩家的個人檔案，再傳送邀請。";
+		return "åœ¨éŠæˆ²ä¸­èˆ‡å…¶ä»–çŽ©å®¶ç›¸æœƒï¼Œä¸¦å‘å°æ–¹å‚³é€å¥½å‹é‚€è«‹ã€‚è‹¥æ‚¨å·²é›¢é–‹éŠæˆ²ï¼Œæ‚¨å¯ä»¥{linkStart}æœå°‹{linkEnd}è©²çŽ©å®¶çš„å€‹äººæª”æ¡ˆï¼Œå†å‚³é€é‚€è«‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedLink()
 	{
-		return "現在開始結交好友。";
+		return "ç¾åœ¨é–‹å§‹çµäº¤å¥½å‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedText()
 	{
-		return "沒有您的好友的消息…想知道您的好友在做什麼嗎？";
+		return "æ²’æœ‰æ‚¨çš„å¥½å‹çš„æ¶ˆæ¯â€¦æƒ³çŸ¥é“æ‚¨çš„å¥½å‹åœ¨åšä»€éº¼å—Žï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelPlayGames()
 	{
-		return "Roblox 遊戲幾乎都是由像您一樣的玩家創作。以下是幾個我們最愛的遊戲：";
+		return "Roblox éŠæˆ²å¹¾ä¹Žéƒ½æ˜¯ç”±åƒæ‚¨ä¸€æ¨£çš„çŽ©å®¶å‰µä½œã€‚ä»¥ä¸‹æ˜¯å¹¾å€‹æˆ‘å€‘æœ€æ„›çš„éŠæˆ²ï¼š";
 	}
+}
+
+
 }

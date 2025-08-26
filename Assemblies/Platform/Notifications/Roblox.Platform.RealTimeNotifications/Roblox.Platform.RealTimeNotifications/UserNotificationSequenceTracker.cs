@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.EventLog;
 using Roblox.RealTimeNotifications.Properties;
 using Roblox.Redis;
 using StackExchange.Redis;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    class UserNotificationSequenceTracker
 
-namespace Roblox.RealTimeNotifications;
-
-public class UserNotificationSequenceTracker
 {
 	private const string UserKeyFormat = "RealTimeNotifications_User:{0}";
 
@@ -136,3 +135,5 @@ public class UserNotificationSequenceTracker
 		}
 	}
 }
+
+

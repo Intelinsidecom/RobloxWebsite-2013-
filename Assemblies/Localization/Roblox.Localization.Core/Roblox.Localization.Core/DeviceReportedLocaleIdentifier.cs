@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Corepublic {
+    class DeviceReportedLocaleIdentifier : IDeviceReportedLocaleIdentifier
 
-public class DeviceReportedLocaleIdentifier : IDeviceReportedLocaleIdentifier
 {
 	public int Id { get; }
 
@@ -8,4 +8,7 @@ public class DeviceReportedLocaleIdentifier : IDeviceReportedLocaleIdentifier
 	{
 		Id = id;
 	}
+}
+
+
 }

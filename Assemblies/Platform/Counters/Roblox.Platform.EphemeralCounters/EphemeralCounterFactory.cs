@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.EphemeralCounters.Client;
+namespace Roblox.Platform.EphemeralCounterspublic {
+    class EphemeralCounterFactory : IEphemeralCounterFactory
 
-namespace Roblox.EphemeralCounters;
-
-public class EphemeralCounterFactory : IEphemeralCounterFactory
 {
 	private readonly EphemeralCountersClient _Client;
 
@@ -68,4 +67,7 @@ public class EphemeralCounterFactory : IEphemeralCounterFactory
 			BatchAddToSequences(entries);
 		});
 	}
+}
+
+
 }

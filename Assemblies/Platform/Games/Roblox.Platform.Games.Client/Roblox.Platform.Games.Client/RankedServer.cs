@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.Games.Clientpublic {
+    class RankedServer
 
-namespace Roblox.Games.Client;
-
-public class RankedServer
 {
 	public string Ip { get; set; }
 
@@ -69,4 +68,7 @@ public class RankedServer
 	public int WorstPosition { get; set; }
 
 	public double Score { get; set; }
+}
+
+
 }

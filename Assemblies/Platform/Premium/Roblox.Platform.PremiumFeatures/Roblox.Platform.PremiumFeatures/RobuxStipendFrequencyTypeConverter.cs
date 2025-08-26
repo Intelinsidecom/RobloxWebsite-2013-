@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
 using Roblox.PremiumFeatures.Enums;
 using Roblox.PremiumFeatures.Interfaces.Converters;
 using Roblox.PremiumFeatures.Interfaces.Entities;
 using Roblox.PremiumFeatures.Interfaces.EntityFactories;
+namespace Roblox.Platform.PremiumFeatures {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures;
-
-/// <summary>
 /// Converts <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType" /> enums to IDs.
 /// </summary>
 /// <seealso cref="T:Roblox.PremiumFeatures.Interfaces.Converters.IRobuxStipendFrequencyTypeConverter" />
@@ -63,4 +62,7 @@ public class RobuxStipendFrequencyTypeConverter : IRobuxStipendFrequencyTypeConv
 		}
 		return result;
 	}
+}
+
+
 }

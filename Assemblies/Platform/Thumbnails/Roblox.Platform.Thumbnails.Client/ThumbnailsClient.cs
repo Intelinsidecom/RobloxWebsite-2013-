@@ -1,11 +1,9 @@
-// NOTE: Placeholder implementation to restore build without the original Roblox.Thumbnails.Client binary.
+﻿// NOTE: Placeholder implementation to restore build without the original Roblox.Thumbnails.Client binary.
 // This code should be replaced with the real implementation when available.
 using System;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-
-namespace Roblox.Thumbnails.Client
-{
+Roblox.Platform.Thumbnails.Client
     // Matches usage in Roblox.Web.Thumbnails
     public delegate void OnThumbnailHashRequestedEvent(int width, int height, string thumbnailTypeName, string formatType);
 
@@ -79,3 +77,4 @@ namespace Roblox.Thumbnails.Client
         }
     }
 }
+

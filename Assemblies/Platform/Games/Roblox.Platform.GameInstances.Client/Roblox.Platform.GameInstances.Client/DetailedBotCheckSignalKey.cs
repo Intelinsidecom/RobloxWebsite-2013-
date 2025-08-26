@@ -1,6 +1,6 @@
-namespace Roblox.GameInstances.Client;
+﻿namespace Roblox.Platform.GameInstances.Clientpublic {
+    enum DetailedBotCheckSignalKey
 
-public enum DetailedBotCheckSignalKey
 {
 	Unrecognized,
 	EqualMachineUuid,
@@ -8,4 +8,7 @@ public enum DetailedBotCheckSignalKey
 	DynLuaChallenge,
 	SimRadiusMissing,
 	SuspiciousOs
+}
+
+
 }

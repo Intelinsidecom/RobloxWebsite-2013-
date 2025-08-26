@@ -1,6 +1,6 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbspublic {
+    enum OverlayType
 
-public enum OverlayType
 {
 	BuildersClubSmall,
 	BuildersClubLarge,
@@ -20,4 +20,7 @@ public enum OverlayType
 	Mobile,
 	GooglePlay,
 	Amazon
+}
+
+
 }

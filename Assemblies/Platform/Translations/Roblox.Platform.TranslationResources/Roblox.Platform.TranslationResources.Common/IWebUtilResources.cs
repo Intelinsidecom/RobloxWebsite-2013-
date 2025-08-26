@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IWebUtilResources : ITranslationResources
 
-public interface IWebUtilResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "GetLabelDay"
@@ -92,4 +92,7 @@ public interface IWebUtilResources : ITranslationResources
 	/// English String: "{years} years"
 	/// </summary>
 	string GetLabelYears(string years);
+}
+
+
 }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using Roblox.Common;
 using Roblox.MssqlDatabases;
@@ -11,7 +11,7 @@ namespace Roblox.Entities.Mssql;
 
 public static class RobloxDataAccessPatternExtensions
 {
-	private static readonly SqlParameter[] _EmptySqlParameters = (SqlParameter[])(object)new SqlParameter[0];
+	private static readonly Microsoft.Data.SqlClient.SqlParameter[] _EmptySqlParameters = (Microsoft.Data.SqlClient.SqlParameter[])(object)new Microsoft.Data.SqlClient.SqlParameter[0];
 
 	public static void Delete<TIndex>(this RobloxDatabase database, string storedProcedureName, TIndex id, int? commandTimeout = null, bool includeApplicationIntent = false) where TIndex : struct
 	{
@@ -21,9 +21,9 @@ public static class RobloxDataAccessPatternExtensions
 		{
 			throw new ArgumentException("Required value not specified: ID.", "id");
 		}
-		database.ExecuteNonQuery(storedProcedureName, (SqlParameter[])(object)new SqlParameter[1]
+		database.ExecuteNonQuery(storedProcedureName, (Microsoft.Data.SqlClient.SqlParameter[])(object)new Microsoft.Data.SqlClient.SqlParameter[1]
 		{
-			new SqlParameter("@ID", (object)id)
+			new Microsoft.Data.SqlClient.SqlParameter("@ID", (object)id)
 		}, (CommandType)4, commandTimeout, includeApplicationIntent ? new ApplicationIntent?((ApplicationIntent)0) : null);
 	}
 
@@ -35,62 +35,62 @@ public static class RobloxDataAccessPatternExtensions
 		{
 			return null;
 		}
-		return BuildDALFromRecords(database.ExecuteReader(storedProcedureName, (SqlParameter[])(object)new SqlParameter[1]
+		return BuildDALFromRecords(database.ExecuteReader(storedProcedureName, (Microsoft.Data.SqlClient.SqlParameter[])(object)new Microsoft.Data.SqlClient.SqlParameter[1]
 		{
-			new SqlParameter("@ID", (object)id)
+			new Microsoft.Data.SqlClient.SqlParameter("@ID", (object)id)
 		}, (CommandType)4, commandTimeout, includeApplicationIntent ? new ApplicationIntent?((ApplicationIntent)1) : null), dalBuilder);
 	}
 
-	public static EntityHelper.GetOrCreateDALWrapper<TDal> GetOrCreate<TDal>(this RobloxDatabase database, string storedProcedurename, Func<IDictionary<string, object>, TDal> dalBuilder, params SqlParameter[] queryParameters) where TDal : class
+	public static EntityHelper.GetOrCreateDALWrapper<TDal> GetOrCreate<TDal>(this RobloxDatabase database, string storedProcedurename, Func<IDictionary<string, object>, TDal> dalBuilder, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TDal : class
 	{
 		return database.GetOrCreate(storedProcedurename, dalBuilder, null, includeApplicationIntent: false, queryParameters);
 	}
 
-	public static EntityHelper.GetOrCreateDALWrapper<TDal> GetOrCreate<TDal>(this RobloxDatabase database, string storedProcedurename, Func<IDictionary<string, object>, TDal> dalBuilder, int? commandTimeout = null, bool includeApplicationIntent = false, params SqlParameter[] queryParameters) where TDal : class
+	public static EntityHelper.GetOrCreateDALWrapper<TDal> GetOrCreate<TDal>(this RobloxDatabase database, string storedProcedurename, Func<IDictionary<string, object>, TDal> dalBuilder, int? commandTimeout = null, bool includeApplicationIntent = false, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TDal : class
 	{
-		SqlParameter obj = FindOutputSqlParameter(queryParameters, "@CreatedNewEntity");
+		Microsoft.Data.SqlClient.SqlParameter obj = FindOutputSqlParameter(queryParameters, "@CreatedNewEntity");
 		return new EntityHelper.GetOrCreateDALWrapper<TDal>(dal: BuildDALFromRecords(database.ExecuteReader(storedProcedurename, queryParameters, (CommandType)4, commandTimeout, includeApplicationIntent ? new ApplicationIntent?((ApplicationIntent)0) : null), dalBuilder), createdNewEntity: (bool)((DbParameter)obj).Value);
 	}
 
-	public static ICollection<TIndex> GetIDCollection<TIndex>(this RobloxDatabase database, string storedProcedureName, params SqlParameter[] queryParameters) where TIndex : struct
+	public static ICollection<TIndex> GetIDCollection<TIndex>(this RobloxDatabase database, string storedProcedureName, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TIndex : struct
 	{
 		return database.GetIDCollection<TIndex>(storedProcedureName, null, includeApplicationIntent: false, queryParameters);
 	}
 
-	public static ICollection<TIndex> GetIDCollection<TIndex>(this RobloxDatabase database, string storedProcedureName, int? commandTimeout = null, bool includeApplicationIntent = false, params SqlParameter[] queryParameters) where TIndex : struct
+	public static ICollection<TIndex> GetIDCollection<TIndex>(this RobloxDatabase database, string storedProcedureName, int? commandTimeout = null, bool includeApplicationIntent = false, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TIndex : struct
 	{
 		return (from record in database.ExecuteReader(storedProcedureName, queryParameters, (CommandType)4, commandTimeout, includeApplicationIntent ? new ApplicationIntent?((ApplicationIntent)1) : null)
 			select (TIndex)Convert.ChangeType(record["ID"], typeof(TIndex))).ToList();
 	}
 
-	public static TCount GetCount<TCount>(this RobloxDatabase database, string storedProcedureName, params SqlParameter[] queryParameters) where TCount : struct
+	public static TCount GetCount<TCount>(this RobloxDatabase database, string storedProcedureName, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TCount : struct
 	{
 		return database.GetCount<TCount>(storedProcedureName, null, includeApplicationIntent: false, queryParameters);
 	}
 
-	public static TCount GetCount<TCount>(this RobloxDatabase database, string storedProcedureName, int? commandTimeout = null, bool includeApplicationIntent = false, params SqlParameter[] queryParameters) where TCount : struct
+	public static TCount GetCount<TCount>(this RobloxDatabase database, string storedProcedureName, int? commandTimeout = null, bool includeApplicationIntent = false, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TCount : struct
 	{
 		return (TCount)database.ExecuteScalar(storedProcedureName, queryParameters, (CommandType)4, commandTimeout, includeApplicationIntent ? new ApplicationIntent?((ApplicationIntent)1) : null);
 	}
 
-	public static TIndex Insert<TIndex>(this RobloxDatabase database, string storedProcedureName, params SqlParameter[] queryParameters) where TIndex : struct
+	public static TIndex Insert<TIndex>(this RobloxDatabase database, string storedProcedureName, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TIndex : struct
 	{
 		return database.Insert<TIndex>(storedProcedureName, null, includeApplicationIntent: false, queryParameters);
 	}
 
-	public static TIndex Insert<TIndex>(this RobloxDatabase database, string storedProcedureName, int? commandTimeout = null, bool includeApplicationIntent = false, params SqlParameter[] queryParameters) where TIndex : struct
+	public static TIndex Insert<TIndex>(this RobloxDatabase database, string storedProcedureName, int? commandTimeout = null, bool includeApplicationIntent = false, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TIndex : struct
 	{
-		SqlParameter obj = FindOutputSqlParameter(queryParameters, "@ID");
+		Microsoft.Data.SqlClient.SqlParameter obj = FindOutputSqlParameter(queryParameters, "@ID");
 		database.ExecuteNonQuery(storedProcedureName, queryParameters, (CommandType)4, commandTimeout, includeApplicationIntent ? new ApplicationIntent?((ApplicationIntent)0) : null);
 		return (TIndex)((DbParameter)obj).Value;
 	}
 
-	public static TDal Lookup<TDal>(this RobloxDatabase database, string storedProcedureName, Func<IDictionary<string, object>, TDal> dalBuilder, params SqlParameter[] queryParameters) where TDal : class
+	public static TDal Lookup<TDal>(this RobloxDatabase database, string storedProcedureName, Func<IDictionary<string, object>, TDal> dalBuilder, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TDal : class
 	{
 		return database.Lookup(storedProcedureName, dalBuilder, null, includeApplicationIntent: false, queryParameters);
 	}
 
-	public static TDal Lookup<TDal>(this RobloxDatabase database, string storedProcedureName, Func<IDictionary<string, object>, TDal> dalBuilder, int? commandTimeout = null, bool includeApplicationIntent = false, params SqlParameter[] queryParameters) where TDal : class
+	public static TDal Lookup<TDal>(this RobloxDatabase database, string storedProcedureName, Func<IDictionary<string, object>, TDal> dalBuilder, int? commandTimeout = null, bool includeApplicationIntent = false, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters) where TDal : class
 	{
 		return BuildDALFromRecords(database.ExecuteReader(storedProcedureName, queryParameters, (CommandType)4, commandTimeout, includeApplicationIntent ? new ApplicationIntent?((ApplicationIntent)1) : null), dalBuilder);
 	}
@@ -101,11 +101,11 @@ public static class RobloxDataAccessPatternExtensions
 		{
 			throw new ArgumentException("Null was supplied for 'ids' parameter", "ids");
 		}
-		SqlParameter[] queryParameters = EntityHelper.GetMultiGetIDsSqlParameters(ids);
+		Microsoft.Data.SqlClient.SqlParameter[] queryParameters = EntityHelper.GetMultiGetIDsSqlParameters(ids);
 		return database.ExecuteReader(storedProcedureName, queryParameters, (CommandType)4, commandTimeout, includeApplicationIntent ? new ApplicationIntent?((ApplicationIntent)1) : null).Select(dalBuilder).ToList();
 	}
 
-	public static void Update(this RobloxDatabase database, string storedProcedureName, params SqlParameter[] queryParameters)
+	public static void Update(this RobloxDatabase database, string storedProcedureName, params Microsoft.Data.SqlClient.SqlParameter[] queryParameters)
 	{
 		database.Update(storedProcedureName, null, includeApplicationIntent: false, queryParameters);
 	}

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.RealTimeNotificationsinternal {
+    class SubscriptionStatus<TKey, TSubscriberId>
 
-namespace Roblox.RealTimeNotifications;
-
-internal class SubscriptionStatus<TKey, TSubscriberId>
 {
 	private readonly TKey _Key;
 
@@ -22,4 +21,7 @@ internal class SubscriptionStatus<TKey, TSubscriberId>
 		_Key = key;
 		_Consumers = new HashSet<TSubscriberId>();
 	}
+}
+
+
 }

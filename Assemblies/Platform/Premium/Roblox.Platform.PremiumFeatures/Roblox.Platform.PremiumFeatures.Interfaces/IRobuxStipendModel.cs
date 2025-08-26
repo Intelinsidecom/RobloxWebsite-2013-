@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Interfaces;
-
-/// <summary>
 /// IRobuxStipendModel interface
 /// </summary>
 public interface IRobuxStipendModel
@@ -41,4 +40,7 @@ public interface IRobuxStipendModel
 	/// NextDistribution DateTime
 	/// </summary>
 	DateTime? NextDistribution { get; }
+}
+
+
 }

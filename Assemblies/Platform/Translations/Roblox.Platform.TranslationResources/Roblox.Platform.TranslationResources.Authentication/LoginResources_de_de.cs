@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides LoginResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -136,7 +136,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 	/// You don't need an account to play Roblox
 	/// English String: "You don't need an account to play Roblox"
 	/// </summary>
-	public override string LabelAccountNotNeeded => "Du benötigst kein Konto, um Roblox zu spielen.";
+	public override string LabelAccountNotNeeded => "Du benÃ¶tigst kein Konto, um Roblox zu spielen.";
 
 	/// <summary>
 	/// Key: "Label.EmailNeedsVerification"
@@ -168,7 +168,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging in…"
+	/// English String: "Logging inâ€¦"
 	/// </summary>
 	public override string LabelLoggingInSpinnerText => "Anmelden\u00a0...";
 
@@ -239,7 +239,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 	/// message shown in a modal when user logs in with unverified email
 	/// English String: "To log in with your email, it must be verified. You can also log in with your username."
 	/// </summary>
-	public override string LabelUnverifiedEmailInstructions => "Um dich mit deiner E-Mail-Adresse anmelden zu können, musst du sie zuerst verifizieren. Du kannst dich auch mit deinem Benutzernamen anmelden.";
+	public override string LabelUnverifiedEmailInstructions => "Um dich mit deiner E-Mail-Adresse anmelden zu kÃ¶nnen, musst du sie zuerst verifizieren. Du kannst dich auch mit deinem Benutzernamen anmelden.";
 
 	/// <summary>
 	/// Key: "Label.Username"
@@ -286,7 +286,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 	/// Key: "Label.WeChatAntiAddictionText"
 	/// English String: "Boycott bad games, refuse pirated games. Be aware of self-defense and being deceived. Playing games is good for your brain, but too much game play can harm your health. Manage your time well and enjoy a healthy lifestyle."
 	/// </summary>
-	public override string LabelWeChatAntiAddictionText => "Boykottiere schlechte Spiele und lehne Raubkopien ab. Sei dir über Selbstverteidigung und Täuschungsversuche im Klaren. Spielen ist gut für dein Gehirn, aber zu viel des Guten kann deine Gesundheit beeinträchtigen. Teile dir deine Zeit gut ein und führe einen gesunden Lebensstil.";
+	public override string LabelWeChatAntiAddictionText => "Boykottiere schlechte Spiele und lehne Raubkopien ab. Sei dir Ã¼ber Selbstverteidigung und TÃ¤uschungsversuche im Klaren. Spielen ist gut fÃ¼r dein Gehirn, aber zu viel des Guten kann deine Gesundheit beeintrÃ¤chtigen. Teile dir deine Zeit gut ein und fÃ¼hre einen gesunden Lebensstil.";
 
 	/// <summary>
 	/// Key: "Message.UnknownErrorTryAgain"
@@ -313,7 +313,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 	/// Account has been locked. Please request a password reset.
 	/// English String: "Account has been locked. Please request a password reset."
 	/// </summary>
-	public override string ResponseAccountLockedRequestReset => "Konto wurde gesperrt. Bitte stelle eine Anfrage zum Zurücksetzen deines Passworts.";
+	public override string ResponseAccountLockedRequestReset => "Konto wurde gesperrt. Bitte stelle eine Anfrage zum ZurÃ¼cksetzen deines Passworts.";
 
 	/// <summary>
 	/// Key: "Response.AccountNotFound"
@@ -415,13 +415,13 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 	/// Unable to login. Please use Social Network sign on.
 	/// English String: "Unable to login. Please use Social Network sign on."
 	/// </summary>
-	public override string ResponseUseSocialSignOn => "Anmeldung gescheitert. Bitte melde dich über ein soziales Netzwerk an.";
+	public override string ResponseUseSocialSignOn => "Anmeldung gescheitert. Bitte melde dich Ã¼ber ein soziales Netzwerk an.";
 
 	/// <summary>
 	/// Key: "WeChat.AntiAddictionText"
 	/// English String: "Boycott bad games, refuse pirated games. Be aware of self-defense and being deceived. Playing games is good for your brain, but too much game play can harm your health. Manage your time well and enjoy a healthy lifestyle."
 	/// </summary>
-	public override string WeChatAntiAddictionText => "Boykottiere schlechte Spiele und lehne Raubkopien ab. Sei dir über Selbstverteidigung und Täuschungsversuche im Klaren. Spielen ist gut für dein Gehirn, aber zu viel des Guten kann deine Gesundheit beeinträchtigen. Teile dir deine Zeit gut ein und führe einen gesunden Lebensstil.";
+	public override string WeChatAntiAddictionText => "Boykottiere schlechte Spiele und lehne Raubkopien ab. Sei dir Ã¼ber Selbstverteidigung und TÃ¤uschungsversuche im Klaren. Spielen ist gut fÃ¼r dein Gehirn, aber zu viel des Guten kann deine Gesundheit beeintrÃ¤chtigen. Teile dir deine Zeit gut ein und fÃ¼hre einen gesunden Lebensstil.";
 
 	/// <summary>
 	/// Key: "WeChat.RealNameNotVerified"
@@ -531,7 +531,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelAccountNotNeeded()
 	{
-		return "Du benötigst kein Konto, um Roblox zu spielen.";
+		return "Du benÃ¶tigst kein Konto, um Roblox zu spielen.";
 	}
 
 	protected override string _GetTemplateForLabelEmailNeedsVerification()
@@ -621,7 +621,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelUnverifiedEmailInstructions()
 	{
-		return "Um dich mit deiner E-Mail-Adresse anmelden zu können, musst du sie zuerst verifizieren. Du kannst dich auch mit deinem Benutzernamen anmelden.";
+		return "Um dich mit deiner E-Mail-Adresse anmelden zu kÃ¶nnen, musst du sie zuerst verifizieren. Du kannst dich auch mit deinem Benutzernamen anmelden.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
@@ -656,7 +656,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelWeChatAntiAddictionText()
 	{
-		return "Boykottiere schlechte Spiele und lehne Raubkopien ab. Sei dir über Selbstverteidigung und Täuschungsversuche im Klaren. Spielen ist gut für dein Gehirn, aber zu viel des Guten kann deine Gesundheit beeinträchtigen. Teile dir deine Zeit gut ein und führe einen gesunden Lebensstil.";
+		return "Boykottiere schlechte Spiele und lehne Raubkopien ab. Sei dir Ã¼ber Selbstverteidigung und TÃ¤uschungsversuche im Klaren. Spielen ist gut fÃ¼r dein Gehirn, aber zu viel des Guten kann deine Gesundheit beeintrÃ¤chtigen. Teile dir deine Zeit gut ein und fÃ¼hre einen gesunden Lebensstil.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownErrorTryAgain()
@@ -676,7 +676,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseAccountLockedRequestReset()
 	{
-		return "Konto wurde gesperrt. Bitte stelle eine Anfrage zum Zurücksetzen deines Passworts.";
+		return "Konto wurde gesperrt. Bitte stelle eine Anfrage zum ZurÃ¼cksetzen deines Passworts.";
 	}
 
 	protected override string _GetTemplateForResponseAccountNotFound()
@@ -751,7 +751,7 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseUseSocialSignOn()
 	{
-		return "Anmeldung gescheitert. Bitte melde dich über ein soziales Netzwerk an.";
+		return "Anmeldung gescheitert. Bitte melde dich Ã¼ber ein soziales Netzwerk an.";
 	}
 
 	/// <summary>
@@ -770,11 +770,14 @@ internal class LoginResources_de_de : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForWeChatAntiAddictionText()
 	{
-		return "Boykottiere schlechte Spiele und lehne Raubkopien ab. Sei dir über Selbstverteidigung und Täuschungsversuche im Klaren. Spielen ist gut für dein Gehirn, aber zu viel des Guten kann deine Gesundheit beeinträchtigen. Teile dir deine Zeit gut ein und führe einen gesunden Lebensstil.";
+		return "Boykottiere schlechte Spiele und lehne Raubkopien ab. Sei dir Ã¼ber Selbstverteidigung und TÃ¤uschungsversuche im Klaren. Spielen ist gut fÃ¼r dein Gehirn, aber zu viel des Guten kann deine Gesundheit beeintrÃ¤chtigen. Teile dir deine Zeit gut ein und fÃ¼hre einen gesunden Lebensstil.";
 	}
 
 	protected override string _GetTemplateForWeChatRealNameNotVerified()
 	{
 		return "Dein WeChat-Konto ist nicht verifiziert. Bitte verwende ein verifiziertes WeChat-Konto und versuch es erneut. Besuche https://jiazhang.qq.com/zk/home.html";
 	}
+}
+
+
 }

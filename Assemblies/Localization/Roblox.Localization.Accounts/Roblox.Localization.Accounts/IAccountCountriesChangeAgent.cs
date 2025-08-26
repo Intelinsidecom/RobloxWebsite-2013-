@@ -1,8 +1,11 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accountspublic {
+    interface IAccountCountriesChangeAgent
 
-public interface IAccountCountriesChangeAgent
 {
 	AccountCountriesChangeAgentType ChangeAgentType { get; }
 
 	long ChangeAgentTargetId { get; }
+}
+
+
 }

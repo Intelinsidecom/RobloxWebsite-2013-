@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class PeopleListResourceFactory
 
-internal static class PeopleListResourceFactory
 {
 	public const string FullNamespace = "Feature.PeopleList";
 
@@ -21,4 +21,7 @@ internal static class PeopleListResourceFactory
 			_ => new PeopleListResources_en_us(state), 
 		};
 	}
+}
+
+
 }

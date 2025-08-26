@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ISupportResources : ITranslationResources
 
-public interface ISupportResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Dialog.Cancel"
@@ -662,4 +662,7 @@ public interface ISupportResources : ITranslationResources
 	/// English String: "If you are under 13 years old, please provide your parent's email address"
 	/// </summary>
 	string ResponseUnder13Email { get; }
+}
+
+
 }

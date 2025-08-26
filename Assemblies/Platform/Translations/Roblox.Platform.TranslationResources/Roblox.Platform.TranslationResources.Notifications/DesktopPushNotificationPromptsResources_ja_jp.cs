@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notifications {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DesktopPushNotificationPromptsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,56 +11,56 @@ internal class DesktopPushNotificationPromptsResources_ja_jp : DesktopPushNotifi
 	/// Notify Me
 	/// English String: "Notify Me"
 	/// </summary>
-	public override string ActionAcceptNotificationPrompt => "通知する";
+	public override string ActionAcceptNotificationPrompt => "é€šçŸ¥ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// Close
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "閉じる";
+	public override string ActionClose => "é–‰ã˜ã‚‹";
 
 	/// <summary>
 	/// Key: "Heading.TurnNotificationsBackOn"
 	/// Turn Push Notifications Back On
 	/// English String: "Turn Push Notifications Back On"
 	/// </summary>
-	public override string HeadingTurnNotificationsBackOn => "プッシュ通知をオンに戻す";
+	public override string HeadingTurnNotificationsBackOn => "ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã‚’ã‚ªãƒ³ã«æˆ»ã™";
 
 	/// <summary>
 	/// Key: "Heading.TurnNotificationsOn"
 	/// Enable Desktop Push Notifications
 	/// English String: "Enable Desktop Push Notifications"
 	/// </summary>
-	public override string HeadingTurnNotificationsOn => "デスクトッププッシュ通知を有効にする";
+	public override string HeadingTurnNotificationsOn => "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã‚’æœ‰åŠ¹ã«ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.ClickGreenLockOnUrl"
 	/// Click the green lock next to the URL bar to open up your site permissions.
 	/// English String: "Click the green lock next to the URL bar to open up your site permissions."
 	/// </summary>
-	public override string LabelClickGreenLockOnUrl => "URLバーの横にある緑色のカギをクリックして、サイトの許可を開きます。";
+	public override string LabelClickGreenLockOnUrl => "URLãƒãƒ¼ã®æ¨ªã«ã‚ã‚‹ç·‘è‰²ã®ã‚«ã‚®ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚µã‚¤ãƒˆã®è¨±å¯ã‚’é–‹ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.PushNotificationsDisabledSuccess"
 	/// Push notifications have been disabled.
 	/// English String: "Push notifications have been disabled."
 	/// </summary>
-	public override string MessagePushNotificationsDisabledSuccess => "プッシュ通知が無効になりました！";
+	public override string MessagePushNotificationsDisabledSuccess => "ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸï¼";
 
 	/// <summary>
 	/// Key: "Message.PushNotificationsEnabledSuccess"
 	/// Push notifications have been enabled!
 	/// English String: "Push notifications have been enabled!"
 	/// </summary>
-	public override string MessagePushNotificationsEnabledSuccess => "プッシュ通知が有効になりました！";
+	public override string MessagePushNotificationsEnabledSuccess => "ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã—ãŸï¼";
 
 	/// <summary>
 	/// Key: "Message.SendNotificationsPrompt"
 	/// Can we send you notifications on this computer?
 	/// English String: "Can we send you notifications on this computer?"
 	/// </summary>
-	public override string MessageSendNotificationsPrompt => "このパソコンで通知を受け取りますか。";
+	public override string MessageSendNotificationsPrompt => "ã“ã®ãƒ‘ã‚½ã‚³ãƒ³ã§é€šçŸ¥ã‚’å—ã‘å–ã‚Šã¾ã™ã‹ã€‚";
 
 	public DesktopPushNotificationPromptsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -69,27 +69,27 @@ internal class DesktopPushNotificationPromptsResources_ja_jp : DesktopPushNotifi
 
 	protected override string _GetTemplateForActionAcceptNotificationPrompt()
 	{
-		return "通知する";
+		return "é€šçŸ¥ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "閉じる";
+		return "é–‰ã˜ã‚‹";
 	}
 
 	protected override string _GetTemplateForHeadingTurnNotificationsBackOn()
 	{
-		return "プッシュ通知をオンに戻す";
+		return "ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã‚’ã‚ªãƒ³ã«æˆ»ã™";
 	}
 
 	protected override string _GetTemplateForHeadingTurnNotificationsOn()
 	{
-		return "デスクトッププッシュ通知を有効にする";
+		return "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã‚’æœ‰åŠ¹ã«ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelClickGreenLockOnUrl()
 	{
-		return "URLバーの横にある緑色のカギをクリックして、サイトの許可を開きます。";
+		return "URLãƒãƒ¼ã®æ¨ªã«ã‚ã‚‹ç·‘è‰²ã®ã‚«ã‚®ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚µã‚¤ãƒˆã®è¨±å¯ã‚’é–‹ãã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -99,12 +99,12 @@ internal class DesktopPushNotificationPromptsResources_ja_jp : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAllowNotificationsBackOn(string startBold, string endBold)
 	{
-		return $"通知をオンに戻すには、「{startBold}許可{endBold}」を選択してください。";
+		return $"é€šçŸ¥ã‚’ã‚ªãƒ³ã«æˆ»ã™ã«ã¯ã€ã€Œ{startBold}è¨±å¯{endBold}ã€ã‚’é¸æŠžã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAllowNotificationsBackOn()
 	{
-		return "通知をオンに戻すには、「{startBold}許可{endBold}」を選択してください。";
+		return "é€šçŸ¥ã‚’ã‚ªãƒ³ã«æˆ»ã™ã«ã¯ã€ã€Œ{startBold}è¨±å¯{endBold}ã€ã‚’é¸æŠžã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -114,12 +114,12 @@ internal class DesktopPushNotificationPromptsResources_ja_jp : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAllowReceiveNotifications(string startBold, string endBold)
 	{
-		return $"ブラウザで「{startBold}許可{endBold}」をクリックすると、プッシュ通知の送信を開始します！";
+		return $"ãƒ–ãƒ©ã‚¦ã‚¶ã§ã€Œ{startBold}è¨±å¯{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã®é€ä¿¡ã‚’é–‹å§‹ã—ã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAllowReceiveNotifications()
 	{
-		return "ブラウザで「{startBold}許可{endBold}」をクリックすると、プッシュ通知の送信を開始します！";
+		return "ãƒ–ãƒ©ã‚¦ã‚¶ã§ã€Œ{startBold}è¨±å¯{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã®é€ä¿¡ã‚’é–‹å§‹ã—ã¾ã™ï¼";
 	}
 
 	/// <summary>
@@ -129,12 +129,12 @@ internal class DesktopPushNotificationPromptsResources_ja_jp : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAlwaysAllowNotificationsBackOn(string startBold, string endBold)
 	{
-		return $"通知をオンに戻すには、「{startBold}このサイトでは常に許可{endBold}」を選択してください。";
+		return $"é€šçŸ¥ã‚’ã‚ªãƒ³ã«æˆ»ã™ã«ã¯ã€ã€Œ{startBold}ã“ã®ã‚µã‚¤ãƒˆã§ã¯å¸¸ã«è¨±å¯{endBold}ã€ã‚’é¸æŠžã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAlwaysAllowNotificationsBackOn()
 	{
-		return "通知をオンに戻すには、「{startBold}このサイトでは常に許可{endBold}」を選択してください。";
+		return "é€šçŸ¥ã‚’ã‚ªãƒ³ã«æˆ»ã™ã«ã¯ã€ã€Œ{startBold}ã“ã®ã‚µã‚¤ãƒˆã§ã¯å¸¸ã«è¨±å¯{endBold}ã€ã‚’é¸æŠžã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -144,12 +144,12 @@ internal class DesktopPushNotificationPromptsResources_ja_jp : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAlwaysReceiveNotifications(string startBold, string endBold)
 	{
-		return $"ブラウザで「{startBold}常に通知を受け取る{endBold}」をクリックすると、プッシュ通知の送信を開始します！";
+		return $"ãƒ–ãƒ©ã‚¦ã‚¶ã§ã€Œ{startBold}å¸¸ã«é€šçŸ¥ã‚’å—ã‘å–ã‚‹{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã®é€ä¿¡ã‚’é–‹å§‹ã—ã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAlwaysReceiveNotifications()
 	{
-		return "ブラウザで「{startBold}常に通知を受け取る{endBold}」をクリックすると、プッシュ通知の送信を開始します！";
+		return "ãƒ–ãƒ©ã‚¦ã‚¶ã§ã€Œ{startBold}å¸¸ã«é€šçŸ¥ã‚’å—ã‘å–ã‚‹{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã®é€ä¿¡ã‚’é–‹å§‹ã—ã¾ã™ï¼";
 	}
 
 	/// <summary>
@@ -159,26 +159,29 @@ internal class DesktopPushNotificationPromptsResources_ja_jp : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionClickPermissionDropdown(string startBold, string endBold)
 	{
-		return $"{startBold}許可{endBold}タブの「通知」の横にあるドロップダウンの矢印をクリックします。";
+		return $"{startBold}è¨±å¯{endBold}ã‚¿ãƒ–ã®ã€Œé€šçŸ¥ã€ã®æ¨ªã«ã‚ã‚‹ãƒ‰ãƒ­ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ã®çŸ¢å°ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelInstructionClickPermissionDropdown()
 	{
-		return "{startBold}許可{endBold}タブの「通知」の横にあるドロップダウンの矢印をクリックします。";
+		return "{startBold}è¨±å¯{endBold}ã‚¿ãƒ–ã®ã€Œé€šçŸ¥ã€ã®æ¨ªã«ã‚ã‚‹ãƒ‰ãƒ­ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ã®çŸ¢å°ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePushNotificationsDisabledSuccess()
 	{
-		return "プッシュ通知が無効になりました！";
+		return "ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForMessagePushNotificationsEnabledSuccess()
 	{
-		return "プッシュ通知が有効になりました！";
+		return "ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForMessageSendNotificationsPrompt()
 	{
-		return "このパソコンで通知を受け取りますか。";
+		return "ã“ã®ãƒ‘ã‚½ã‚³ãƒ³ã§é€šçŸ¥ã‚’å—ã‘å–ã‚Šã¾ã™ã‹ã€‚";
 	}
+}
+
+
 }

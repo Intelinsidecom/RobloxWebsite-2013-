@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class MembershipMigrationStateEntity : IRobloxEntity<int, MembershipMigrationStateDAL>, ICacheableObject<int>, ICacheableObject, IRemoteCacheableObject
 {
 	private MembershipMigrationStateDAL _EntityDAL;
@@ -123,4 +122,7 @@ internal class MembershipMigrationStateEntity : IRobloxEntity<int, MembershipMig
 	{
 		return $"MembershipMigrationStateValue:{value}";
 	}
+}
+
+
 }

@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Collections;
 using Roblox.EventLog;
 using Roblox.Localization.Client.Properties;
+namespace Roblox.Platform.Localization.Clientpublic {
+    class LocalizationClientCache : ILocalizationClientCache
 
-namespace Roblox.Localization.Client;
-
-public class LocalizationClientCache : ILocalizationClientCache
 {
 	private const string _AllSupportedLocaleKey = "AllSupportedLocaleKey";
 
@@ -186,4 +185,7 @@ public class LocalizationClientCache : ILocalizationClientCache
 		}
 		_RawDeviceReportedLocaleId.Set(rawLocaleCode, new NullableInt(deviceReportedLocaleId));
 	}
+}
+
+
 }

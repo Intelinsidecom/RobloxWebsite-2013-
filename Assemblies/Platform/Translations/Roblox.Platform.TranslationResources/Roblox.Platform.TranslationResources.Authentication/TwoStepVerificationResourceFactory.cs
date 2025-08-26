@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class TwoStepVerificationResourceFactory
 
-internal static class TwoStepVerificationResourceFactory
 {
 	public const string FullNamespace = "Authentication.TwoStepVerification";
 
@@ -27,4 +27,7 @@ internal static class TwoStepVerificationResourceFactory
 			_ => new TwoStepVerificationResources_en_us(state), 
 		};
 	}
+}
+
+
 }

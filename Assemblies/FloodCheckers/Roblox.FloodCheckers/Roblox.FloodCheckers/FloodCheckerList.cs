@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
+namespace Roblox.FloodCheckerspublic {
+    class FloodCheckerList : List<IFloodChecker>, IFloodChecker, IBasicFloodChecker
 
-namespace Roblox.Platform.Floodcheckers;
-
-public class FloodCheckerList : List<IFloodChecker>, IFloodChecker, IBasicFloodChecker
 {
 	public FloodCheckerList()
 	{
@@ -95,4 +94,7 @@ public class FloodCheckerList : List<IFloodChecker>, IFloodChecker, IBasicFloodC
 			enumerator.Current.Reset();
 		}
 	}
+}
+
+
 }

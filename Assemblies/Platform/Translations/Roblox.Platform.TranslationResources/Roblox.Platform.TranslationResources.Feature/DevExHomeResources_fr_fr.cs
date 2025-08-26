@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DevExHomeResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -28,25 +28,25 @@ internal class DevExHomeResources_fr_fr : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetActionUpgradeMembership"
 	/// English String: "Upgrade Membership"
 	/// </summary>
-	public override string GetActionUpgradeMembership => "Mettre à jour l'abonnement";
+	public override string GetActionUpgradeMembership => "Mettre Ã  jour l'abonnement";
 
 	/// <summary>
 	/// Key: "GetActionVerify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string GetActionVerify => "Vérifier";
+	public override string GetActionVerify => "VÃ©rifier";
 
 	/// <summary>
 	/// Key: "GetActionVerifyEmail"
 	/// English String: "Verify Email"
 	/// </summary>
-	public override string GetActionVerifyEmail => "Vérifier l'adresse e-mail";
+	public override string GetActionVerifyEmail => "VÃ©rifier l'adresse e-mail";
 
 	/// <summary>
 	/// Key: "GetActionVerifyNow"
 	/// English String: "Verify Now"
 	/// </summary>
-	public override string GetActionVerifyNow => "Vérifier maintenant";
+	public override string GetActionVerifyNow => "VÃ©rifier maintenant";
 
 	/// <summary>
 	/// Key: "GetActionVisitDevEx"
@@ -58,13 +58,13 @@ internal class DevExHomeResources_fr_fr : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelAlmostReady"
 	/// English String: "You're almost ready!"
 	/// </summary>
-	public override string GetLabelAlmostReady => "Vous êtes presque prêt(e)\u00a0!";
+	public override string GetLabelAlmostReady => "Vous Ãªtes presque prÃªt(e)\u00a0!";
 
 	/// <summary>
 	/// Key: "GetLabelBuilderClubForCash"
 	/// English String: "You'll need Outrageous Builder's Club to exchange Robux for cash."
 	/// </summary>
-	public override string GetLabelBuilderClubForCash => "Vous avez besoin d'Outrageous Builders Club afin d'échanger des Robux contre de l'argent.";
+	public override string GetLabelBuilderClubForCash => "Vous avez besoin d'Outrageous Builders Club afin d'Ã©changer des Robux contre de l'argent.";
 
 	/// <summary>
 	/// Key: "GetLabelBuildersCludForCashout"
@@ -82,13 +82,13 @@ internal class DevExHomeResources_fr_fr : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelNeedVerifiedEmail"
 	/// English String: "You need a verified email address to use DevEx."
 	/// </summary>
-	public override string GetLabelNeedVerifiedEmail => "Vous devez avoir une adresse e-mail vérifiée afin d'utiliser DevEx.";
+	public override string GetLabelNeedVerifiedEmail => "Vous devez avoir une adresse e-mail vÃ©rifiÃ©e afin d'utiliser DevEx.";
 
 	/// <summary>
 	/// Key: "GetLabelNotEligible"
 	/// English String: "You are not eligible currently."
 	/// </summary>
-	public override string GetLabelNotEligible => "Vous n'êtes pas admissible pour le moment.";
+	public override string GetLabelNotEligible => "Vous n'Ãªtes pas admissible pour le moment.";
 
 	/// <summary>
 	/// Key: "GetLabelNotEnoughRobuxForCashout"
@@ -106,19 +106,19 @@ internal class DevExHomeResources_fr_fr : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelTradingRobux"
 	/// English String: "You're on your way to trading Robux for cash!"
 	/// </summary>
-	public override string GetLabelTradingRobux => "Vous serez bientôt en mesure d'échanger des Robux contre de l'argent\u00a0!";
+	public override string GetLabelTradingRobux => "Vous serez bientÃ´t en mesure d'Ã©changer des Robux contre de l'argent\u00a0!";
 
 	/// <summary>
 	/// Key: "GetLabelTradingRobuxCash"
 	/// English String: "You're almost there! You almost qualify to trade your Robux for cash!"
 	/// </summary>
-	public override string GetLabelTradingRobuxCash => "Vous y êtes presque\u00a0! Vous serez bientôt admissible pour échanger des Robux contre de l'argent\u00a0!";
+	public override string GetLabelTradingRobuxCash => "Vous y Ãªtes presque\u00a0! Vous serez bientÃ´t admissible pour Ã©changer des Robux contre de l'argent\u00a0!";
 
 	/// <summary>
 	/// Key: "GetLabelVerifiedEmailForCashout"
 	/// English String: "You must verify your email before you can cash out."
 	/// </summary>
-	public override string GetLabelVerifiedEmailForCashout => "Tu dois vérifier ton adresse e-mail avant de pouvoir effectuer un encaissement.";
+	public override string GetLabelVerifiedEmailForCashout => "Tu dois vÃ©rifier ton adresse e-mail avant de pouvoir effectuer un encaissement.";
 
 	public DevExHomeResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -142,22 +142,22 @@ internal class DevExHomeResources_fr_fr : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetActionUpgradeMembership()
 	{
-		return "Mettre à jour l'abonnement";
+		return "Mettre Ã  jour l'abonnement";
 	}
 
 	protected override string _GetTemplateForGetActionVerify()
 	{
-		return "Vérifier";
+		return "VÃ©rifier";
 	}
 
 	protected override string _GetTemplateForGetActionVerifyEmail()
 	{
-		return "Vérifier l'adresse e-mail";
+		return "VÃ©rifier l'adresse e-mail";
 	}
 
 	protected override string _GetTemplateForGetActionVerifyNow()
 	{
-		return "Vérifier maintenant";
+		return "VÃ©rifier maintenant";
 	}
 
 	protected override string _GetTemplateForGetActionVisitDevEx()
@@ -167,12 +167,12 @@ internal class DevExHomeResources_fr_fr : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelAlmostReady()
 	{
-		return "Vous êtes presque prêt(e)\u00a0!";
+		return "Vous Ãªtes presque prÃªt(e)\u00a0!";
 	}
 
 	protected override string _GetTemplateForGetLabelBuilderClubForCash()
 	{
-		return "Vous avez besoin d'Outrageous Builders Club afin d'échanger des Robux contre de l'argent.";
+		return "Vous avez besoin d'Outrageous Builders Club afin d'Ã©changer des Robux contre de l'argent.";
 	}
 
 	protected override string _GetTemplateForGetLabelBuildersCludForCashout()
@@ -187,12 +187,12 @@ internal class DevExHomeResources_fr_fr : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelNeedVerifiedEmail()
 	{
-		return "Vous devez avoir une adresse e-mail vérifiée afin d'utiliser DevEx.";
+		return "Vous devez avoir une adresse e-mail vÃ©rifiÃ©e afin d'utiliser DevEx.";
 	}
 
 	protected override string _GetTemplateForGetLabelNotEligible()
 	{
-		return "Vous n'êtes pas admissible pour le moment.";
+		return "Vous n'Ãªtes pas admissible pour le moment.";
 	}
 
 	protected override string _GetTemplateForGetLabelNotEnoughRobuxForCashout()
@@ -207,16 +207,19 @@ internal class DevExHomeResources_fr_fr : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelTradingRobux()
 	{
-		return "Vous serez bientôt en mesure d'échanger des Robux contre de l'argent\u00a0!";
+		return "Vous serez bientÃ´t en mesure d'Ã©changer des Robux contre de l'argent\u00a0!";
 	}
 
 	protected override string _GetTemplateForGetLabelTradingRobuxCash()
 	{
-		return "Vous y êtes presque\u00a0! Vous serez bientôt admissible pour échanger des Robux contre de l'argent\u00a0!";
+		return "Vous y Ãªtes presque\u00a0! Vous serez bientÃ´t admissible pour Ã©changer des Robux contre de l'argent\u00a0!";
 	}
 
 	protected override string _GetTemplateForGetLabelVerifiedEmailForCashout()
 	{
-		return "Tu dois vérifier ton adresse e-mail avant de pouvoir effectuer un encaissement.";
+		return "Tu dois vÃ©rifier ton adresse e-mail avant de pouvoir effectuer un encaissement.";
 	}
+}
+
+
 }

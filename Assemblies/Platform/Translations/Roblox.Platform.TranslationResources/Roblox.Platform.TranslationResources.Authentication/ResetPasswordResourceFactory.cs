@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class ResetPasswordResourceFactory
 
-internal static class ResetPasswordResourceFactory
 {
 	public const string FullNamespace = "Authentication.ResetPassword";
 
@@ -27,4 +27,7 @@ internal static class ResetPasswordResourceFactory
 			_ => new ResetPasswordResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -40,9 +40,9 @@ internal class FeaturesResources_id_id : FeaturesResources_en_us, IFeaturesResou
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, logo Roblox dan Powering Imagination termasuk dalam merek-merek dagang kami yang terdaftar dan tidak terdaftar di AS dan negara lainnya.";
+	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, logo Roblox dan Powering Imagination termasuk dalam merek-merek dagang kami yang terdaftar dan tidak terdaftar di AS dan negara lainnya.";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
@@ -429,22 +429,22 @@ internal class FeaturesResources_id_id : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "©2018 Roblox Corporation. Roblox, logo Roblox dan Powering Imagination termasuk dalam merek-merek dagang kami yang terdaftar dan tidak terdaftar di AS dan negara lainnya.";
+		return "Â©2018 Roblox Corporation. Roblox, logo Roblox dan Powering Imagination termasuk dalam merek-merek dagang kami yang terdaftar dan tidak terdaftar di AS dan negara lainnya.";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"©{copyrightYear} Roblox Corporation. Roblox, logo Roblox, dan Powering Imagination termasuk dalam merek-merek dagang kami yang terdaftar dan tidak terdaftar di AS dan negara lainnya.";
+		return $"Â©{copyrightYear} Roblox Corporation. Roblox, logo Roblox, dan Powering Imagination termasuk dalam merek-merek dagang kami yang terdaftar dan tidak terdaftar di AS dan negara lainnya.";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "©{copyrightYear} Roblox Corporation. Roblox, logo Roblox, dan Powering Imagination termasuk dalam merek-merek dagang kami yang terdaftar dan tidak terdaftar di AS dan negara lainnya.";
+		return "Â©{copyrightYear} Roblox Corporation. Roblox, logo Roblox, dan Powering Imagination termasuk dalam merek-merek dagang kami yang terdaftar dan tidak terdaftar di AS dan negara lainnya.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
@@ -739,4 +739,7 @@ internal class FeaturesResources_id_id : FeaturesResources_en_us, IFeaturesResou
 	{
 		return "Tingkatkan";
 	}
+}
+
+
 }

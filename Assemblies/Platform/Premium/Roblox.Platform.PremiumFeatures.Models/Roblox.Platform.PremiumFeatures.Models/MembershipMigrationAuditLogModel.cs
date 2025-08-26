@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Runtime.Serialization;
 using Roblox.PremiumFeatures.Models.Core;
+namespace Roblox.Platform.PremiumFeatures.Models {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models;
-
-/// <summary>
 /// Membership Migration Audit Log Model
 /// </summary>
 [DataContract]
@@ -57,4 +56,7 @@ public class MembershipMigrationAuditLogModel
 
 	[DataMember(Name = "updated")]
 	public DateTime Updated;
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ITranslationRolesResources : ITranslationResources
 
-public interface ITranslationRolesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Description.Modal.DeleteTranslator"
@@ -176,4 +176,7 @@ public interface ITranslationRolesResources : ITranslationResources
 	/// English String: "Role: {rolesetName}"
 	/// </summary>
 	string LabelRolesetName(string rolesetName);
+}
+
+
 }

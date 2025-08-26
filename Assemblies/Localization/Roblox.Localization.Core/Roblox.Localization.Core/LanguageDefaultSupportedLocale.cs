@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class LanguageDefaultSupportedLocale : IRobloxEntity<int, LanguageDefaultSupportedLocaleDAL>, ICacheableObject<int>, ICacheableObject, IRemoteCacheableObject
 {
 	private LanguageDefaultSupportedLocaleDAL _EntityDAL;
@@ -144,4 +143,7 @@ internal class LanguageDefaultSupportedLocale : IRobloxEntity<int, LanguageDefau
 	{
 		return $"LanguageID:{languageId}";
 	}
+}
+
+
 }

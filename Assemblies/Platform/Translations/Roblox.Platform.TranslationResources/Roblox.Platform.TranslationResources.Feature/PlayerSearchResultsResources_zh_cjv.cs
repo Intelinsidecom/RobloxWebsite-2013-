@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PlayerSearchResultsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,79 +10,79 @@ internal class PlayerSearchResultsResources_zh_cjv : PlayerSearchResultsResource
 	/// Key: "Action.AcceptRequest"
 	/// English String: "Accept Request"
 	/// </summary>
-	public override string ActionAcceptRequest => "接受邀请";
+	public override string ActionAcceptRequest => "æŽ¥å—é‚€è¯·";
 
 	/// <summary>
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "添加好友";
+	public override string ActionAddFriend => "æ·»åŠ å¥½å‹";
 
 	/// <summary>
 	/// Key: "Action.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string ActionChat => "聊天";
+	public override string ActionChat => "èŠå¤©";
 
 	/// <summary>
 	/// Key: "Action.JoinGame"
 	/// English String: "Join Game"
 	/// </summary>
-	public override string ActionJoinGame => "加入游戏";
+	public override string ActionJoinGame => "åŠ å…¥æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Action.RequestSent"
 	/// English String: "Request Sent"
 	/// </summary>
-	public override string ActionRequestSent => "邀请已发送";
+	public override string ActionRequestSent => "é‚€è¯·å·²å‘é€";
 
 	/// <summary>
 	/// Key: "Label.AlsoKnownAsAbbreviation"
 	/// English String: "aka."
 	/// </summary>
-	public override string LabelAlsoKnownAsAbbreviation => "又名";
+	public override string LabelAlsoKnownAsAbbreviation => "åˆå";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "离线";
+	public override string LabelOffline => "ç¦»çº¿";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "在线";
+	public override string LabelOnline => "åœ¨çº¿";
 
 	/// <summary>
 	/// Key: "Label.Search"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearch => "搜索";
+	public override string LabelSearch => "æœç´¢";
 
 	/// <summary>
 	/// Key: "Label.ThisIsYou"
 	/// English String: "This is you"
 	/// </summary>
-	public override string LabelThisIsYou => "这是你";
+	public override string LabelThisIsYou => "è¿™æ˜¯ä½ ";
 
 	/// <summary>
 	/// Key: "Label.UnsafeInput"
 	/// English String: "You have entered unsafe input. Please try your search again."
 	/// </summary>
-	public override string LabelUnsafeInput => "你输入的内容不安全。请重新搜索。";
+	public override string LabelUnsafeInput => "ä½ è¾“å…¥çš„å†…å®¹ä¸å®‰å…¨ã€‚è¯·é‡æ–°æœç´¢ã€‚";
 
 	/// <summary>
 	/// Key: "Label.YouAreFollowing"
 	/// English String: "You are following"
 	/// </summary>
-	public override string LabelYouAreFollowing => "你正关注";
+	public override string LabelYouAreFollowing => "ä½ æ­£å…³æ³¨";
 
 	/// <summary>
 	/// Key: "Label.YouAreFriends"
 	/// English String: "You are friends"
 	/// </summary>
-	public override string LabelYouAreFriends => "你们是好友";
+	public override string LabelYouAreFriends => "ä½ ä»¬æ˜¯å¥½å‹";
 
 	public PlayerSearchResultsResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -91,27 +91,27 @@ internal class PlayerSearchResultsResources_zh_cjv : PlayerSearchResultsResource
 
 	protected override string _GetTemplateForActionAcceptRequest()
 	{
-		return "接受邀请";
+		return "æŽ¥å—é‚€è¯·";
 	}
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "添加好友";
+		return "æ·»åŠ å¥½å‹";
 	}
 
 	protected override string _GetTemplateForActionChat()
 	{
-		return "聊天";
+		return "èŠå¤©";
 	}
 
 	protected override string _GetTemplateForActionJoinGame()
 	{
-		return "加入游戏";
+		return "åŠ å…¥æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForActionRequestSent()
 	{
-		return "邀请已发送";
+		return "é‚€è¯·å·²å‘é€";
 	}
 
 	/// <summary>
@@ -120,17 +120,17 @@ internal class PlayerSearchResultsResources_zh_cjv : PlayerSearchResultsResource
 	/// </summary>
 	public override string HeadingPlayerResultsFor(string startSpan, string keyword, string endSpan)
 	{
-		return $"搜索玩家{startSpan}“{keyword}”{endSpan}的结果";
+		return $"æœç´¢çŽ©å®¶{startSpan}â€œ{keyword}â€{endSpan}çš„ç»“æžœ";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerResultsFor()
 	{
-		return "搜索玩家{startSpan}“{keyword}”{endSpan}的结果";
+		return "æœç´¢çŽ©å®¶{startSpan}â€œ{keyword}â€{endSpan}çš„ç»“æžœ";
 	}
 
 	protected override string _GetTemplateForLabelAlsoKnownAsAbbreviation()
 	{
-		return "又名";
+		return "åˆå";
 	}
 
 	/// <summary>
@@ -139,12 +139,12 @@ internal class PlayerSearchResultsResources_zh_cjv : PlayerSearchResultsResource
 	/// </summary>
 	public override string LabelEnterMinCharacters(string keywordMinLength)
 	{
-		return $"请输入至少 {keywordMinLength} 个字符。";
+		return $"è¯·è¾“å…¥è‡³å°‘ {keywordMinLength} ä¸ªå­—ç¬¦ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelEnterMinCharacters()
 	{
-		return "请输入至少 {keywordMinLength} 个字符。";
+		return "è¯·è¾“å…¥è‡³å°‘ {keywordMinLength} ä¸ªå­—ç¬¦ã€‚";
 	}
 
 	/// <summary>
@@ -153,27 +153,27 @@ internal class PlayerSearchResultsResources_zh_cjv : PlayerSearchResultsResource
 	/// </summary>
 	public override string LabelNoMatchesAvailable(string keyword)
 	{
-		return $"没有与“{keyword}”匹配的项目";
+		return $"æ²¡æœ‰ä¸Žâ€œ{keyword}â€åŒ¹é…çš„é¡¹ç›®";
 	}
 
 	protected override string _GetTemplateForLabelNoMatchesAvailable()
 	{
-		return "没有与“{keyword}”匹配的项目";
+		return "æ²¡æœ‰ä¸Žâ€œ{keyword}â€åŒ¹é…çš„é¡¹ç›®";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "离线";
+		return "ç¦»çº¿";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "在线";
+		return "åœ¨çº¿";
 	}
 
 	protected override string _GetTemplateForLabelSearch()
 	{
-		return "搜索";
+		return "æœç´¢";
 	}
 
 	/// <summary>
@@ -192,21 +192,24 @@ internal class PlayerSearchResultsResources_zh_cjv : PlayerSearchResultsResource
 
 	protected override string _GetTemplateForLabelThisIsYou()
 	{
-		return "这是你";
+		return "è¿™æ˜¯ä½ ";
 	}
 
 	protected override string _GetTemplateForLabelUnsafeInput()
 	{
-		return "你输入的内容不安全。请重新搜索。";
+		return "ä½ è¾“å…¥çš„å†…å®¹ä¸å®‰å…¨ã€‚è¯·é‡æ–°æœç´¢ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFollowing()
 	{
-		return "你正关注";
+		return "ä½ æ­£å…³æ³¨";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFriends()
 	{
-		return "你们是好友";
+		return "ä½ ä»¬æ˜¯å¥½å‹";
 	}
+}
+
+
 }

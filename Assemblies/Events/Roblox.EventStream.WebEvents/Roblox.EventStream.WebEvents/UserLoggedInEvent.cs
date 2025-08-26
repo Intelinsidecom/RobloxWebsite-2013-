@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class UserLoggedInEvent : WebEventBase
 
-public class UserLoggedInEvent : WebEventBase
 {
 	private const string _Name = "userLoggedIn";
 
@@ -10,3 +11,12 @@ public class UserLoggedInEvent : WebEventBase
 		AddEventArg("username", args.Username);
 	}
 }
+
+
+}
+
+
+
+
+
+

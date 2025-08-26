@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.CommunitySift;
 using Roblox.ContentFilterApi.Client;
+namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-namespace Roblox.TextFilter;
-
-/// <summary>
 /// Factory for generating TextFilters.
 /// </summary>
 public interface ITextFilterFactory
@@ -24,4 +23,7 @@ public interface ITextFilterFactory
 	/// <param name="contentFilterClient"></param>
 	/// <returns></returns>
 	ITextFilter GetTextFilter(ICommunitySiftClient communitySiftClient, IContentFilterClient contentFilterClient);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CreditCardExpiringModalResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -25,14 +25,14 @@ internal class CreditCardExpiringModalResources_es_es : CreditCardExpiringModalR
 	/// description text
 	/// English String: "Please update your credit card information to make sure your Builders Club membership doesn't expire!"
 	/// </summary>
-	public override string DescriptionUpdateYourCreditCard => "¡Actualiza la información de tu tarjeta de crédito para que tu suscripción al Builders Club no caduque!";
+	public override string DescriptionUpdateYourCreditCard => "Â¡Actualiza la informaciÃ³n de tu tarjeta de crÃ©dito para que tu suscripciÃ³n al Builders Club no caduque!";
 
 	/// <summary>
 	/// Key: "Heading.CreditCardExpiration"
 	/// modal heading
 	/// English String: "Credit Card Expiration"
 	/// </summary>
-	public override string HeadingCreditCardExpiration => "Fecha de vencimiento de la tarjeta de crédito";
+	public override string HeadingCreditCardExpiration => "Fecha de vencimiento de la tarjeta de crÃ©dito";
 
 	public CreditCardExpiringModalResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -56,21 +56,24 @@ internal class CreditCardExpiringModalResources_es_es : CreditCardExpiringModalR
 	/// </summary>
 	public override string DescriptionCreditCardExpiration(string expirationDate)
 	{
-		return $"¡Tu tarjeta de crédito se vencerá el {expirationDate}!";
+		return $"Â¡Tu tarjeta de crÃ©dito se vencerÃ¡ el {expirationDate}!";
 	}
 
 	protected override string _GetTemplateForDescriptionCreditCardExpiration()
 	{
-		return "¡Tu tarjeta de crédito se vencerá el {expirationDate}!";
+		return "Â¡Tu tarjeta de crÃ©dito se vencerÃ¡ el {expirationDate}!";
 	}
 
 	protected override string _GetTemplateForDescriptionUpdateYourCreditCard()
 	{
-		return "¡Actualiza la información de tu tarjeta de crédito para que tu suscripción al Builders Club no caduque!";
+		return "Â¡Actualiza la informaciÃ³n de tu tarjeta de crÃ©dito para que tu suscripciÃ³n al Builders Club no caduque!";
 	}
 
 	protected override string _GetTemplateForHeadingCreditCardExpiration()
 	{
-		return "Fecha de vencimiento de la tarjeta de crédito";
+		return "Fecha de vencimiento de la tarjeta de crÃ©dito";
 	}
+}
+
+
 }

@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Arguments class for <see cref="T:Roblox.Platform.EventStream.WebEvents.VoteEvent" />
 /// </summary>
 public class VoteEventArgs : WebEventArgs
@@ -65,3 +66,12 @@ public class VoteEventArgs : WebEventArgs
 	/// </summary>
 	public long? DownVoteCount { get; set; }
 }
+
+
+}
+
+
+
+
+
+

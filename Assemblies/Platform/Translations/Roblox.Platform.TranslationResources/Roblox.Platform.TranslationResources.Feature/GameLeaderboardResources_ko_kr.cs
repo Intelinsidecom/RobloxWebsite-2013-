@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLeaderboardResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,127 +10,127 @@ internal class GameLeaderboardResources_ko_kr : GameLeaderboardResources_en_us, 
 	/// Key: "Heading.Clans"
 	/// English String: "Clans"
 	/// </summary>
-	public override string HeadingClans => "클랜";
+	public override string HeadingClans => "í´ëžœ";
 
 	/// <summary>
 	/// Key: "Heading.Players"
 	/// English String: "Players"
 	/// </summary>
-	public override string HeadingPlayers => "플레이어";
+	public override string HeadingPlayers => "í”Œë ˆì´ì–´";
 
 	/// <summary>
 	/// Key: "Label.AllTime"
 	/// English String: "All Time"
 	/// </summary>
-	public override string LabelAllTime => "전체 기간";
+	public override string LabelAllTime => "ì „ì²´ ê¸°ê°„";
 
 	/// <summary>
 	/// Key: "Label.Clan"
 	/// English String: "Clan"
 	/// </summary>
-	public override string LabelClan => "클랜";
+	public override string LabelClan => "í´ëžœ";
 
 	/// <summary>
 	/// Key: "Label.Clans"
 	/// English String: "Clans"
 	/// </summary>
-	public override string LabelClans => "클랜";
+	public override string LabelClans => "í´ëžœ";
 
 	/// <summary>
 	/// Key: "Label.ErrorLoading"
 	/// English String: "Error loading rows..."
 	/// </summary>
-	public override string LabelErrorLoading => "리더보드 로딩 중 오류 발생...";
+	public override string LabelErrorLoading => "ë¦¬ë”ë³´ë“œ ë¡œë”© ì¤‘ ì˜¤ë¥˜ ë°œìƒ...";
 
 	/// <summary>
 	/// Key: "Label.ErrorLoadingRows"
 	/// English String: "Error loading rows."
 	/// </summary>
-	public override string LabelErrorLoadingRows => "리더보드 로드 중 오류 발생.";
+	public override string LabelErrorLoadingRows => "ë¦¬ë”ë³´ë“œ ë¡œë“œ ì¤‘ ì˜¤ë¥˜ ë°œìƒ.";
 
 	/// <summary>
 	/// Key: "Label.GoGetPoints"
 	/// English String: "You are not yet ranked for this time period. Go earn some Points!"
 	/// </summary>
-	public override string LabelGoGetPoints => "이번 기간에 아직 순위에 들지 못했군요. 점수를 좀 더 쌓아보세요!";
+	public override string LabelGoGetPoints => "ì´ë²ˆ ê¸°ê°„ì— ì•„ì§ ìˆœìœ„ì— ë“¤ì§€ ëª»í–ˆêµ°ìš”. ì ìˆ˜ë¥¼ ì¢€ ë” ìŒ“ì•„ë³´ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Label.Leader"
 	/// English String: "Leader"
 	/// </summary>
-	public override string LabelLeader => "리더";
+	public override string LabelLeader => "ë¦¬ë”";
 
 	/// <summary>
 	/// Key: "Label.Loading"
 	/// English String: "Loading..."
 	/// </summary>
-	public override string LabelLoading => "로딩 중...";
+	public override string LabelLoading => "ë¡œë”© ì¤‘...";
 
 	/// <summary>
 	/// Key: "Label.NoResults"
 	/// English String: "No results found"
 	/// </summary>
-	public override string LabelNoResults => "결과 없음";
+	public override string LabelNoResults => "ê²°ê³¼ ì—†ìŒ";
 
 	/// <summary>
 	/// Key: "Label.Owner"
 	/// English String: "Owner"
 	/// </summary>
-	public override string LabelOwner => "소유자";
+	public override string LabelOwner => "ì†Œìœ ìž";
 
 	/// <summary>
 	/// Key: "Label.PastMonth"
 	/// English String: "Past Month"
 	/// </summary>
-	public override string LabelPastMonth => "지난달";
+	public override string LabelPastMonth => "ì§€ë‚œë‹¬";
 
 	/// <summary>
 	/// Key: "Label.PastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelPastWeek => "지난주";
+	public override string LabelPastWeek => "ì§€ë‚œì£¼";
 
 	/// <summary>
 	/// Key: "Label.Points"
 	/// English String: "Points"
 	/// </summary>
-	public override string LabelPoints => "점수";
+	public override string LabelPoints => "ì ìˆ˜";
 
 	/// <summary>
 	/// Key: "Label.PrimaryGroup"
 	/// English String: "Primary Group"
 	/// </summary>
-	public override string LabelPrimaryGroup => "기본 그룹";
+	public override string LabelPrimaryGroup => "ê¸°ë³¸ ê·¸ë£¹";
 
 	/// <summary>
 	/// Key: "Label.Rank"
 	/// English String: "Rank"
 	/// </summary>
-	public override string LabelRank => "순위";
+	public override string LabelRank => "ìˆœìœ„";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "더 보기";
+	public override string LabelSeeMore => "ë” ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.Today"
 	/// English String: "Today"
 	/// </summary>
-	public override string LabelToday => "오늘";
+	public override string LabelToday => "ì˜¤ëŠ˜";
 
 	/// <summary>
 	/// Key: "Label.UpdatedOneHour"
 	/// English String: "Updated approx. 1 hour ago"
 	/// </summary>
-	public override string LabelUpdatedOneHour => "약 1시간 전에 업데이트됨";
+	public override string LabelUpdatedOneHour => "ì•½ 1ì‹œê°„ ì „ì— ì—…ë°ì´íŠ¸ë¨";
 
 	/// <summary>
 	/// Key: "Label.UpdatedTenMinutes"
 	/// English String: "Updated approx. 10 minutes ago"
 	/// </summary>
-	public override string LabelUpdatedTenMinutes => "약 10분 전에 업데이트됨";
+	public override string LabelUpdatedTenMinutes => "ì•½ 10ë¶„ ì „ì— ì—…ë°ì´íŠ¸ë¨";
 
 	public GameLeaderboardResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -139,106 +139,109 @@ internal class GameLeaderboardResources_ko_kr : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForHeadingClans()
 	{
-		return "클랜";
+		return "í´ëžœ";
 	}
 
 	protected override string _GetTemplateForHeadingPlayers()
 	{
-		return "플레이어";
+		return "í”Œë ˆì´ì–´";
 	}
 
 	protected override string _GetTemplateForLabelAllTime()
 	{
-		return "전체 기간";
+		return "ì „ì²´ ê¸°ê°„";
 	}
 
 	protected override string _GetTemplateForLabelClan()
 	{
-		return "클랜";
+		return "í´ëžœ";
 	}
 
 	protected override string _GetTemplateForLabelClans()
 	{
-		return "클랜";
+		return "í´ëžœ";
 	}
 
 	protected override string _GetTemplateForLabelErrorLoading()
 	{
-		return "리더보드 로딩 중 오류 발생...";
+		return "ë¦¬ë”ë³´ë“œ ë¡œë”© ì¤‘ ì˜¤ë¥˜ ë°œìƒ...";
 	}
 
 	protected override string _GetTemplateForLabelErrorLoadingRows()
 	{
-		return "리더보드 로드 중 오류 발생.";
+		return "ë¦¬ë”ë³´ë“œ ë¡œë“œ ì¤‘ ì˜¤ë¥˜ ë°œìƒ.";
 	}
 
 	protected override string _GetTemplateForLabelGoGetPoints()
 	{
-		return "이번 기간에 아직 순위에 들지 못했군요. 점수를 좀 더 쌓아보세요!";
+		return "ì´ë²ˆ ê¸°ê°„ì— ì•„ì§ ìˆœìœ„ì— ë“¤ì§€ ëª»í–ˆêµ°ìš”. ì ìˆ˜ë¥¼ ì¢€ ë” ìŒ“ì•„ë³´ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForLabelLeader()
 	{
-		return "리더";
+		return "ë¦¬ë”";
 	}
 
 	protected override string _GetTemplateForLabelLoading()
 	{
-		return "로딩 중...";
+		return "ë¡œë”© ì¤‘...";
 	}
 
 	protected override string _GetTemplateForLabelNoResults()
 	{
-		return "결과 없음";
+		return "ê²°ê³¼ ì—†ìŒ";
 	}
 
 	protected override string _GetTemplateForLabelOwner()
 	{
-		return "소유자";
+		return "ì†Œìœ ìž";
 	}
 
 	protected override string _GetTemplateForLabelPastMonth()
 	{
-		return "지난달";
+		return "ì§€ë‚œë‹¬";
 	}
 
 	protected override string _GetTemplateForLabelPastWeek()
 	{
-		return "지난주";
+		return "ì§€ë‚œì£¼";
 	}
 
 	protected override string _GetTemplateForLabelPoints()
 	{
-		return "점수";
+		return "ì ìˆ˜";
 	}
 
 	protected override string _GetTemplateForLabelPrimaryGroup()
 	{
-		return "기본 그룹";
+		return "ê¸°ë³¸ ê·¸ë£¹";
 	}
 
 	protected override string _GetTemplateForLabelRank()
 	{
-		return "순위";
+		return "ìˆœìœ„";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "더 보기";
+		return "ë” ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelToday()
 	{
-		return "오늘";
+		return "ì˜¤ëŠ˜";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedOneHour()
 	{
-		return "약 1시간 전에 업데이트됨";
+		return "ì•½ 1ì‹œê°„ ì „ì— ì—…ë°ì´íŠ¸ë¨";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedTenMinutes()
 	{
-		return "약 10분 전에 업데이트됨";
+		return "ì•½ 10ë¶„ ì „ì— ì—…ë°ì´íŠ¸ë¨";
 	}
+}
+
+
 }

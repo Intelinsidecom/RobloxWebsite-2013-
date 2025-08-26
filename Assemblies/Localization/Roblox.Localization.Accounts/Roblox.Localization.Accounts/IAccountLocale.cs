@@ -1,8 +1,7 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
+namespace Roblox.Localization.Accountspublic {
+    interface IAccountLocale
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public interface IAccountLocale
 {
 	/// <summary>
 	/// Account id of a user
@@ -18,4 +17,7 @@ public interface IAccountLocale
 	/// Native language associated with an account. Can be null.
 	/// </summary>
 	ILanguageFamily NativeLanguage { get; }
+}
+
+
 }

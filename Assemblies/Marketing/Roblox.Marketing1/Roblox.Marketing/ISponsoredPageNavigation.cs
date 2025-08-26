@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Marketing;
+﻿namespace Roblox.Marketing {
+    /// <summary>
 
-/// <summary>
 /// An interface for a SponsoredPage navigation.
 /// </summary>
 public interface ISponsoredPageNavigation
@@ -44,4 +44,7 @@ public interface ISponsoredPageNavigation
 	/// The path of the sponsored page.
 	/// </value>
 	string PagePath { get; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameLeaderboardResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,127 +10,127 @@ internal class GameLeaderboardResources_zh_cjv : GameLeaderboardResources_en_us,
 	/// Key: "Heading.Clans"
 	/// English String: "Clans"
 	/// </summary>
-	public override string HeadingClans => "部落";
+	public override string HeadingClans => "éƒ¨è½";
 
 	/// <summary>
 	/// Key: "Heading.Players"
 	/// English String: "Players"
 	/// </summary>
-	public override string HeadingPlayers => "玩家";
+	public override string HeadingPlayers => "çŽ©å®¶";
 
 	/// <summary>
 	/// Key: "Label.AllTime"
 	/// English String: "All Time"
 	/// </summary>
-	public override string LabelAllTime => "所有时间";
+	public override string LabelAllTime => "æ‰€æœ‰æ—¶é—´";
 
 	/// <summary>
 	/// Key: "Label.Clan"
 	/// English String: "Clan"
 	/// </summary>
-	public override string LabelClan => "部落";
+	public override string LabelClan => "éƒ¨è½";
 
 	/// <summary>
 	/// Key: "Label.Clans"
 	/// English String: "Clans"
 	/// </summary>
-	public override string LabelClans => "部落";
+	public override string LabelClans => "éƒ¨è½";
 
 	/// <summary>
 	/// Key: "Label.ErrorLoading"
 	/// English String: "Error loading rows..."
 	/// </summary>
-	public override string LabelErrorLoading => "加载行出错...";
+	public override string LabelErrorLoading => "åŠ è½½è¡Œå‡ºé”™...";
 
 	/// <summary>
 	/// Key: "Label.ErrorLoadingRows"
 	/// English String: "Error loading rows."
 	/// </summary>
-	public override string LabelErrorLoadingRows => "加载行出错。";
+	public override string LabelErrorLoadingRows => "åŠ è½½è¡Œå‡ºé”™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.GoGetPoints"
 	/// English String: "You are not yet ranked for this time period. Go earn some Points!"
 	/// </summary>
-	public override string LabelGoGetPoints => "你这段时间尚无排名。去赢一些点数吧！";
+	public override string LabelGoGetPoints => "ä½ è¿™æ®µæ—¶é—´å°šæ— æŽ’åã€‚åŽ»èµ¢ä¸€äº›ç‚¹æ•°å§ï¼";
 
 	/// <summary>
 	/// Key: "Label.Leader"
 	/// English String: "Leader"
 	/// </summary>
-	public override string LabelLeader => "队长";
+	public override string LabelLeader => "é˜Ÿé•¿";
 
 	/// <summary>
 	/// Key: "Label.Loading"
 	/// English String: "Loading..."
 	/// </summary>
-	public override string LabelLoading => "正在加载...";
+	public override string LabelLoading => "æ­£åœ¨åŠ è½½...";
 
 	/// <summary>
 	/// Key: "Label.NoResults"
 	/// English String: "No results found"
 	/// </summary>
-	public override string LabelNoResults => "未找到结果";
+	public override string LabelNoResults => "æœªæ‰¾åˆ°ç»“æžœ";
 
 	/// <summary>
 	/// Key: "Label.Owner"
 	/// English String: "Owner"
 	/// </summary>
-	public override string LabelOwner => "主人";
+	public override string LabelOwner => "ä¸»äºº";
 
 	/// <summary>
 	/// Key: "Label.PastMonth"
 	/// English String: "Past Month"
 	/// </summary>
-	public override string LabelPastMonth => "上个月";
+	public override string LabelPastMonth => "ä¸Šä¸ªæœˆ";
 
 	/// <summary>
 	/// Key: "Label.PastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelPastWeek => "上星期";
+	public override string LabelPastWeek => "ä¸Šæ˜ŸæœŸ";
 
 	/// <summary>
 	/// Key: "Label.Points"
 	/// English String: "Points"
 	/// </summary>
-	public override string LabelPoints => "点数";
+	public override string LabelPoints => "ç‚¹æ•°";
 
 	/// <summary>
 	/// Key: "Label.PrimaryGroup"
 	/// English String: "Primary Group"
 	/// </summary>
-	public override string LabelPrimaryGroup => "主要群组";
+	public override string LabelPrimaryGroup => "ä¸»è¦ç¾¤ç»„";
 
 	/// <summary>
 	/// Key: "Label.Rank"
 	/// English String: "Rank"
 	/// </summary>
-	public override string LabelRank => "排名";
+	public override string LabelRank => "æŽ’å";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "查看更多";
+	public override string LabelSeeMore => "æŸ¥çœ‹æ›´å¤š";
 
 	/// <summary>
 	/// Key: "Label.Today"
 	/// English String: "Today"
 	/// </summary>
-	public override string LabelToday => "今天";
+	public override string LabelToday => "ä»Šå¤©";
 
 	/// <summary>
 	/// Key: "Label.UpdatedOneHour"
 	/// English String: "Updated approx. 1 hour ago"
 	/// </summary>
-	public override string LabelUpdatedOneHour => "约 1 小时前更新";
+	public override string LabelUpdatedOneHour => "çº¦ 1 å°æ—¶å‰æ›´æ–°";
 
 	/// <summary>
 	/// Key: "Label.UpdatedTenMinutes"
 	/// English String: "Updated approx. 10 minutes ago"
 	/// </summary>
-	public override string LabelUpdatedTenMinutes => "约 10 分钟前更新";
+	public override string LabelUpdatedTenMinutes => "çº¦ 10 åˆ†é’Ÿå‰æ›´æ–°";
 
 	public GameLeaderboardResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -139,106 +139,109 @@ internal class GameLeaderboardResources_zh_cjv : GameLeaderboardResources_en_us,
 
 	protected override string _GetTemplateForHeadingClans()
 	{
-		return "部落";
+		return "éƒ¨è½";
 	}
 
 	protected override string _GetTemplateForHeadingPlayers()
 	{
-		return "玩家";
+		return "çŽ©å®¶";
 	}
 
 	protected override string _GetTemplateForLabelAllTime()
 	{
-		return "所有时间";
+		return "æ‰€æœ‰æ—¶é—´";
 	}
 
 	protected override string _GetTemplateForLabelClan()
 	{
-		return "部落";
+		return "éƒ¨è½";
 	}
 
 	protected override string _GetTemplateForLabelClans()
 	{
-		return "部落";
+		return "éƒ¨è½";
 	}
 
 	protected override string _GetTemplateForLabelErrorLoading()
 	{
-		return "加载行出错...";
+		return "åŠ è½½è¡Œå‡ºé”™...";
 	}
 
 	protected override string _GetTemplateForLabelErrorLoadingRows()
 	{
-		return "加载行出错。";
+		return "åŠ è½½è¡Œå‡ºé”™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGoGetPoints()
 	{
-		return "你这段时间尚无排名。去赢一些点数吧！";
+		return "ä½ è¿™æ®µæ—¶é—´å°šæ— æŽ’åã€‚åŽ»èµ¢ä¸€äº›ç‚¹æ•°å§ï¼";
 	}
 
 	protected override string _GetTemplateForLabelLeader()
 	{
-		return "队长";
+		return "é˜Ÿé•¿";
 	}
 
 	protected override string _GetTemplateForLabelLoading()
 	{
-		return "正在加载...";
+		return "æ­£åœ¨åŠ è½½...";
 	}
 
 	protected override string _GetTemplateForLabelNoResults()
 	{
-		return "未找到结果";
+		return "æœªæ‰¾åˆ°ç»“æžœ";
 	}
 
 	protected override string _GetTemplateForLabelOwner()
 	{
-		return "主人";
+		return "ä¸»äºº";
 	}
 
 	protected override string _GetTemplateForLabelPastMonth()
 	{
-		return "上个月";
+		return "ä¸Šä¸ªæœˆ";
 	}
 
 	protected override string _GetTemplateForLabelPastWeek()
 	{
-		return "上星期";
+		return "ä¸Šæ˜ŸæœŸ";
 	}
 
 	protected override string _GetTemplateForLabelPoints()
 	{
-		return "点数";
+		return "ç‚¹æ•°";
 	}
 
 	protected override string _GetTemplateForLabelPrimaryGroup()
 	{
-		return "主要群组";
+		return "ä¸»è¦ç¾¤ç»„";
 	}
 
 	protected override string _GetTemplateForLabelRank()
 	{
-		return "排名";
+		return "æŽ’å";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "查看更多";
+		return "æŸ¥çœ‹æ›´å¤š";
 	}
 
 	protected override string _GetTemplateForLabelToday()
 	{
-		return "今天";
+		return "ä»Šå¤©";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedOneHour()
 	{
-		return "约 1 小时前更新";
+		return "çº¦ 1 å°æ—¶å‰æ›´æ–°";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedTenMinutes()
 	{
-		return "约 10 分钟前更新";
+		return "çº¦ 10 åˆ†é’Ÿå‰æ›´æ–°";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PresenceResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,25 +10,25 @@ internal class PresenceResources_zh_cjv : PresenceResources_en_us, IPresenceReso
 	/// Key: "Label.Creating"
 	/// English String: "Creating"
 	/// </summary>
-	public override string LabelCreating => "正在创建";
+	public override string LabelCreating => "æ­£åœ¨åˆ›å»º";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "离线";
+	public override string LabelOffline => "ç¦»çº¿";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "在线";
+	public override string LabelOnline => "åœ¨çº¿";
 
 	/// <summary>
 	/// Key: "Label.Playing"
 	/// English String: "Playing"
 	/// </summary>
-	public override string LabelPlaying => "正在游戏";
+	public override string LabelPlaying => "æ­£åœ¨æ¸¸æˆ";
 
 	public PresenceResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -37,7 +37,7 @@ internal class PresenceResources_zh_cjv : PresenceResources_en_us, IPresenceReso
 
 	protected override string _GetTemplateForLabelCreating()
 	{
-		return "正在创建";
+		return "æ­£åœ¨åˆ›å»º";
 	}
 
 	/// <summary>
@@ -46,27 +46,27 @@ internal class PresenceResources_zh_cjv : PresenceResources_en_us, IPresenceReso
 	/// </summary>
 	public override string LabelCreatingGame(string placeName)
 	{
-		return $"正在创建“{placeName}”";
+		return $"æ­£åœ¨åˆ›å»ºâ€œ{placeName}â€";
 	}
 
 	protected override string _GetTemplateForLabelCreatingGame()
 	{
-		return "正在创建“{placeName}”";
+		return "æ­£åœ¨åˆ›å»ºâ€œ{placeName}â€";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "离线";
+		return "ç¦»çº¿";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "在线";
+		return "åœ¨çº¿";
 	}
 
 	protected override string _GetTemplateForLabelPlaying()
 	{
-		return "正在游戏";
+		return "æ­£åœ¨æ¸¸æˆ";
 	}
 
 	/// <summary>
@@ -75,11 +75,14 @@ internal class PresenceResources_zh_cjv : PresenceResources_en_us, IPresenceReso
 	/// </summary>
 	public override string LabelPlayingGame(string placeName)
 	{
-		return $"正在“{placeName}”玩";
+		return $"æ­£åœ¨â€œ{placeName}â€çŽ©";
 	}
 
 	protected override string _GetTemplateForLabelPlayingGame()
 	{
-		return "正在“{placeName}”玩";
+		return "æ­£åœ¨â€œ{placeName}â€çŽ©";
 	}
+}
+
+
 }

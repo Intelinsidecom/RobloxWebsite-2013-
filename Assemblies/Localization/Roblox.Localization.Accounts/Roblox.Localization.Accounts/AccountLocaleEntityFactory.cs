@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Roblox.Platform.Core;
+namespace Roblox.Localization.Accounts {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Accounts;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocaleEntityFactory : IAccountLocaleEntityFactory
 {
 	public IAccountLocaleEntity Get(long id)
@@ -59,4 +58,7 @@ internal class AccountLocaleEntityFactory : IAccountLocaleEntityFactory
 			throw new PlatformArgumentException(string.Format("'{0}' must be positive", "accountId"));
 		}
 	}
+}
+
+
 }

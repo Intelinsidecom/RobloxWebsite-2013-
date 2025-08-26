@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.Outfitspublic {
+    class BodyColorSetDAL
 
-namespace Roblox.Outfits;
-
-public class BodyColorSetDAL
 {
 	public long ID { get; set; }
 
@@ -148,4 +147,7 @@ public class BodyColorSetDAL
 		};
 		return EntityHelper.GetEntityDAL(new DbInfo(_DbConnectionString, "BodyColorSets_GetBodyColorSetByBodyColorSetHash", queryParameters), BuildDAL);
 	}
+}
+
+
 }

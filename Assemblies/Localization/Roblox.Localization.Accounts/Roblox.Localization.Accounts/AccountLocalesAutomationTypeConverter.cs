@@ -1,10 +1,9 @@
-using Roblox.Common;
+﻿using Roblox.Common;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Audit;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountLocalesAutomationTypeConverter : IAccountLocalesAutomationTypeConverter
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountLocalesAutomationTypeConverter : IAccountLocalesAutomationTypeConverter
 {
 	private readonly IAccountLocalesAutomationTypeEntityFactory _AutomationTypeEntityFactory;
 
@@ -31,4 +30,7 @@ internal class AccountLocalesAutomationTypeConverter : IAccountLocalesAutomation
 		}
 		return automationTypeEnum.Value;
 	}
+}
+
+
 }

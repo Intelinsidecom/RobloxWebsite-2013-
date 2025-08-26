@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CommentsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,161 +11,161 @@ internal class CommentsResources_ko_kr : CommentsResources_en_us, ICommentsResou
 	/// button text
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "로그인";
+	public override string ActionLogin => "ë¡œê·¸ì¸";
 
 	/// <summary>
 	/// Key: "Heading.Comments"
 	/// English String: "Comments"
 	/// </summary>
-	public override string HeadingComments => "코멘트";
+	public override string HeadingComments => "ì½”ë©˜íŠ¸";
 
 	/// <summary>
 	/// Key: "Heading.LoginToComment"
 	/// modal heading
 	/// English String: "Login to Comment"
 	/// </summary>
-	public override string HeadingLoginToComment => "로그인 및 코멘트";
+	public override string HeadingLoginToComment => "ë¡œê·¸ì¸ ë° ì½”ë©˜íŠ¸";
 
 	/// <summary>
 	/// Key: "Label.AccountPageTitle"
 	/// English String: "Account"
 	/// </summary>
-	public override string LabelAccountPageTitle => "계정";
+	public override string LabelAccountPageTitle => "ê³„ì •";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "취소";
+	public override string LabelCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Label.CharactersRemaining"
 	/// English String: "characters remaining"
 	/// </summary>
-	public override string LabelCharactersRemaining => "자 남음";
+	public override string LabelCharactersRemaining => "ìž ë‚¨ìŒ";
 
 	/// <summary>
 	/// Key: "Label.CommentModerated"
 	/// Feedback for user when their comment has been moderated
 	/// English String: "Your comment has been moderated."
 	/// </summary>
-	public override string LabelCommentModerated => "코멘트의 검토 요청을 받았어요.";
+	public override string LabelCommentModerated => "ì½”ë©˜íŠ¸ì˜ ê²€í†  ìš”ì²­ì„ ë°›ì•˜ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.EmailVerifiedTitle"
 	/// English String: "Verify Your Email"
 	/// </summary>
-	public override string LabelEmailVerifiedTitle => "이메일 인증";
+	public override string LabelEmailVerifiedTitle => "ì´ë©”ì¼ ì¸ì¦";
 
 	/// <summary>
 	/// Key: "Label.FeatureNotAvailable"
 	/// English String: "This feature is not available."
 	/// </summary>
-	public override string LabelFeatureNotAvailable => "이용할 수 없는 기능이에요.";
+	public override string LabelFeatureNotAvailable => "ì´ìš©í•  ìˆ˜ ì—†ëŠ” ê¸°ëŠ¥ì´ì—ìš”.";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedMessage"
 	/// English String: "Comments should be about the item or place on which you are commenting. Links are not permitted."
 	/// </summary>
-	public override string LabelLinksNotAllowedMessage => "코멘트는 아이템이나 장소에 관한 내용이어야 합니다. 링크는 사용하실 수 없어요.";
+	public override string LabelLinksNotAllowedMessage => "ì½”ë©˜íŠ¸ëŠ” ì•„ì´í…œì´ë‚˜ ìž¥ì†Œì— ê´€í•œ ë‚´ìš©ì´ì–´ì•¼ í•©ë‹ˆë‹¤. ë§í¬ëŠ” ì‚¬ìš©í•˜ì‹¤ ìˆ˜ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedTitle"
 	/// English String: "Links Not Allowed"
 	/// </summary>
-	public override string LabelLinksNotAllowedTitle => "링크 사용 금지";
+	public override string LabelLinksNotAllowedTitle => "ë§í¬ ì‚¬ìš© ê¸ˆì§€";
 
 	/// <summary>
 	/// Key: "Label.MoreComments"
 	/// English String: "More Comments"
 	/// </summary>
-	public override string LabelMoreComments => "코멘트 더 보기";
+	public override string LabelMoreComments => "ì½”ë©˜íŠ¸ ë” ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.NoCommentsFound"
 	/// English String: "No comments found."
 	/// </summary>
-	public override string LabelNoCommentsFound => "코멘트가 없어요.";
+	public override string LabelNoCommentsFound => "ì½”ë©˜íŠ¸ê°€ ì—†ì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.PostComment"
 	/// English String: "Post Comment"
 	/// </summary>
-	public override string LabelPostComment => "코멘트 달기";
+	public override string LabelPostComment => "ì½”ë©˜íŠ¸ ë‹¬ê¸°";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "신고하기";
+	public override string LabelReportAbuse => "ì‹ ê³ í•˜ê¸°";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "더 보기";
+	public override string LabelSeeMore => "ë” ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.SorryWrong"
 	/// English String: "Sorry, something went wrong."
 	/// </summary>
-	public override string LabelSorryWrong => "죄송합니다. 오류가 발생했어요.";
+	public override string LabelSorryWrong => "ì£„ì†¡í•©ë‹ˆë‹¤. ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.Text"
 	/// English String: "text"
 	/// </summary>
-	public override string LabelText => "텍스트";
+	public override string LabelText => "í…ìŠ¤íŠ¸";
 
 	/// <summary>
 	/// Key: "Label.TooManyChracters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyChracters => "글자 수가 너무 많아요!";
+	public override string LabelTooManyChracters => "ê¸€ìž ìˆ˜ê°€ ë„ˆë¬´ ë§Žì•„ìš”!";
 
 	/// <summary>
 	/// Key: "Label.TooManyNewLines"
 	/// English String: "Too many newlines!"
 	/// </summary>
-	public override string LabelTooManyNewLines => "줄 수가 너무 많아요!";
+	public override string LabelTooManyNewLines => "ì¤„ ìˆ˜ê°€ ë„ˆë¬´ ë§Žì•„ìš”!";
 
 	/// <summary>
 	/// Key: "Label.UnknownError"
 	/// English String: "Unknown error occurred."
 	/// </summary>
-	public override string LabelUnknownError => "알 수 없는 오류가 발생했어요.";
+	public override string LabelUnknownError => "ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.UserFlooded"
 	/// Feedback for users when they are flooded (both globally and per specific item) when posting comments for an item
 	/// English String: "You are posting comments too fast. Wait a while before your next comment."
 	/// </summary>
-	public override string LabelUserFlooded => "코멘트를 너무 빨리 달고 있어요. 다음 코멘트를 쓰기 전에 조금 기다리세요.";
+	public override string LabelUserFlooded => "ì½”ë©˜íŠ¸ë¥¼ ë„ˆë¬´ ë¹¨ë¦¬ ë‹¬ê³  ìžˆì–´ìš”. ë‹¤ìŒ ì½”ë©˜íŠ¸ë¥¼ ì“°ê¸° ì „ì— ì¡°ê¸ˆ ê¸°ë‹¤ë¦¬ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "username"
 	/// </summary>
-	public override string LabelUsername => "사용자 이름";
+	public override string LabelUsername => "ì‚¬ìš©ìž ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.UserTooNew"
 	/// Feedback for user when they try to post a comments for an item with a newly registered account
 	/// English String: "Accounts must be older than 1 day to post comments."
 	/// </summary>
-	public override string LabelUserTooNew => "계정을 만들고 하루가 지나야 코멘트를 작성할 수 있어요.";
+	public override string LabelUserTooNew => "ê³„ì •ì„ ë§Œë“¤ê³  í•˜ë£¨ê°€ ì§€ë‚˜ì•¼ ì½”ë©˜íŠ¸ë¥¼ ìž‘ì„±í•  ìˆ˜ ìžˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Label.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string LabelVerify => "인증";
+	public override string LabelVerify => "ì¸ì¦";
 
 	/// <summary>
 	/// Key: "Label.WriteAComment"
 	/// English String: "Write a comment!"
 	/// </summary>
-	public override string LabelWriteAComment => "코멘트를 달아주세요!";
+	public override string LabelWriteAComment => "ì½”ë©˜íŠ¸ë¥¼ ë‹¬ì•„ì£¼ì„¸ìš”!";
 
 	public CommentsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -174,7 +174,7 @@ internal class CommentsResources_ko_kr : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "로그인";
+		return "ë¡œê·¸ì¸";
 	}
 
 	/// <summary>
@@ -184,42 +184,42 @@ internal class CommentsResources_ko_kr : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string DescriptionLoginToComment(string linkStart, string linkEnd)
 	{
-		return $"코멘트를 남기려면 로그인해야 합니다. 계속하려면 {linkStart}로그인 또는 가입{linkEnd}하세요.";
+		return $"ì½”ë©˜íŠ¸ë¥¼ ë‚¨ê¸°ë ¤ë©´ ë¡œê·¸ì¸í•´ì•¼ í•©ë‹ˆë‹¤. ê³„ì†í•˜ë ¤ë©´ {linkStart}ë¡œê·¸ì¸ ë˜ëŠ” ê°€ìž…{linkEnd}í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionLoginToComment()
 	{
-		return "코멘트를 남기려면 로그인해야 합니다. 계속하려면 {linkStart}로그인 또는 가입{linkEnd}하세요.";
+		return "ì½”ë©˜íŠ¸ë¥¼ ë‚¨ê¸°ë ¤ë©´ ë¡œê·¸ì¸í•´ì•¼ í•©ë‹ˆë‹¤. ê³„ì†í•˜ë ¤ë©´ {linkStart}ë¡œê·¸ì¸ ë˜ëŠ” ê°€ìž…{linkEnd}í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForHeadingComments()
 	{
-		return "코멘트";
+		return "ì½”ë©˜íŠ¸";
 	}
 
 	protected override string _GetTemplateForHeadingLoginToComment()
 	{
-		return "로그인 및 코멘트";
+		return "ë¡œê·¸ì¸ ë° ì½”ë©˜íŠ¸";
 	}
 
 	protected override string _GetTemplateForLabelAccountPageTitle()
 	{
-		return "계정";
+		return "ê³„ì •";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForLabelCharactersRemaining()
 	{
-		return "자 남음";
+		return "ìž ë‚¨ìŒ";
 	}
 
 	protected override string _GetTemplateForLabelCommentModerated()
 	{
-		return "코멘트의 검토 요청을 받았어요.";
+		return "ì½”ë©˜íŠ¸ì˜ ê²€í†  ìš”ì²­ì„ ë°›ì•˜ì–´ìš”.";
 	}
 
 	/// <summary>
@@ -228,107 +228,107 @@ internal class CommentsResources_ko_kr : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"코멘트를 달려면 먼저 이메일 인증을 해야합니다. {accountPageLink} 페이지에서 이메일을 인증할 수 있어요.";
+		return $"ì½”ë©˜íŠ¸ë¥¼ ë‹¬ë ¤ë©´ ë¨¼ì € ì´ë©”ì¼ ì¸ì¦ì„ í•´ì•¼í•©ë‹ˆë‹¤. {accountPageLink} íŽ˜ì´ì§€ì—ì„œ ì´ë©”ì¼ì„ ì¸ì¦í•  ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "코멘트를 달려면 먼저 이메일 인증을 해야합니다. {accountPageLink} 페이지에서 이메일을 인증할 수 있어요.";
+		return "ì½”ë©˜íŠ¸ë¥¼ ë‹¬ë ¤ë©´ ë¨¼ì € ì´ë©”ì¼ ì¸ì¦ì„ í•´ì•¼í•©ë‹ˆë‹¤. {accountPageLink} íŽ˜ì´ì§€ì—ì„œ ì´ë©”ì¼ì„ ì¸ì¦í•  ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
 	{
-		return "이메일 인증";
+		return "ì´ë©”ì¼ ì¸ì¦";
 	}
 
 	protected override string _GetTemplateForLabelFeatureNotAvailable()
 	{
-		return "이용할 수 없는 기능이에요.";
+		return "ì´ìš©í•  ìˆ˜ ì—†ëŠ” ê¸°ëŠ¥ì´ì—ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedMessage()
 	{
-		return "코멘트는 아이템이나 장소에 관한 내용이어야 합니다. 링크는 사용하실 수 없어요.";
+		return "ì½”ë©˜íŠ¸ëŠ” ì•„ì´í…œì´ë‚˜ ìž¥ì†Œì— ê´€í•œ ë‚´ìš©ì´ì–´ì•¼ í•©ë‹ˆë‹¤. ë§í¬ëŠ” ì‚¬ìš©í•˜ì‹¤ ìˆ˜ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedTitle()
 	{
-		return "링크 사용 금지";
+		return "ë§í¬ ì‚¬ìš© ê¸ˆì§€";
 	}
 
 	protected override string _GetTemplateForLabelMoreComments()
 	{
-		return "코멘트 더 보기";
+		return "ì½”ë©˜íŠ¸ ë” ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelNoCommentsFound()
 	{
-		return "코멘트가 없어요.";
+		return "ì½”ë©˜íŠ¸ê°€ ì—†ì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelPostComment()
 	{
-		return "코멘트 달기";
+		return "ì½”ë©˜íŠ¸ ë‹¬ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "신고하기";
+		return "ì‹ ê³ í•˜ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "더 보기";
+		return "ë” ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelSorryWrong()
 	{
-		return "죄송합니다. 오류가 발생했어요.";
+		return "ì£„ì†¡í•©ë‹ˆë‹¤. ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelText()
 	{
-		return "텍스트";
+		return "í…ìŠ¤íŠ¸";
 	}
 
 	protected override string _GetTemplateForLabelTooManyChracters()
 	{
-		return "글자 수가 너무 많아요!";
+		return "ê¸€ìž ìˆ˜ê°€ ë„ˆë¬´ ë§Žì•„ìš”!";
 	}
 
 	protected override string _GetTemplateForLabelTooManyNewLines()
 	{
-		return "줄 수가 너무 많아요!";
+		return "ì¤„ ìˆ˜ê°€ ë„ˆë¬´ ë§Žì•„ìš”!";
 	}
 
 	protected override string _GetTemplateForLabelUnknownError()
 	{
-		return "알 수 없는 오류가 발생했어요.";
+		return "ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelUserFlooded()
 	{
-		return "코멘트를 너무 빨리 달고 있어요. 다음 코멘트를 쓰기 전에 조금 기다리세요.";
+		return "ì½”ë©˜íŠ¸ë¥¼ ë„ˆë¬´ ë¹¨ë¦¬ ë‹¬ê³  ìžˆì–´ìš”. ë‹¤ìŒ ì½”ë©˜íŠ¸ë¥¼ ì“°ê¸° ì „ì— ì¡°ê¸ˆ ê¸°ë‹¤ë¦¬ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "사용자 이름";
+		return "ì‚¬ìš©ìž ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelUserTooNew()
 	{
-		return "계정을 만들고 하루가 지나야 코멘트를 작성할 수 있어요.";
+		return "ê³„ì •ì„ ë§Œë“¤ê³  í•˜ë£¨ê°€ ì§€ë‚˜ì•¼ ì½”ë©˜íŠ¸ë¥¼ ìž‘ì„±í•  ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelVerify()
 	{
-		return "인증";
+		return "ì¸ì¦";
 	}
 
 	protected override string _GetTemplateForLabelWriteAComment()
 	{
-		return "코멘트를 달아주세요!";
+		return "ì½”ë©˜íŠ¸ë¥¼ ë‹¬ì•„ì£¼ì„¸ìš”!";
 	}
 
 	/// <summary>
@@ -337,11 +337,14 @@ internal class CommentsResources_ko_kr : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string LabelXHoursAgo(string numberOfHours)
 	{
-		return $"{numberOfHours}시간 전";
+		return $"{numberOfHours}ì‹œê°„ ì „";
 	}
 
 	protected override string _GetTemplateForLabelXHoursAgo()
 	{
-		return "{numberOfHours}시간 전";
+		return "{numberOfHours}ì‹œê°„ ì „";
 	}
+}
+
+
 }

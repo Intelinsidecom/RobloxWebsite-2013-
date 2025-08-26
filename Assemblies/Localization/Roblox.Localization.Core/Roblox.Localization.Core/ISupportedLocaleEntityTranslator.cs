@@ -1,8 +1,11 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Coreinternal {
+    interface ISupportedLocaleEntityTranslator
 
-internal interface ISupportedLocaleEntityTranslator
 {
 	ISupportedLocale GetDefaultSupportedLocale();
 
 	ISupportedLocale GetSupportedLocale(ISupportedLocaleEntity supportedLocaleEntity);
+}
+
+
 }

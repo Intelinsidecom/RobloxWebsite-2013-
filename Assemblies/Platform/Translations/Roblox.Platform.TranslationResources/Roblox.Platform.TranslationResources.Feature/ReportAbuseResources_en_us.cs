@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ReportAbuseResources_en_us : TranslationResourcesBase, IReportAbuseResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ReportAbuseResources_en_us : TranslationResourcesBase, IReportAbuseResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -876,4 +875,7 @@ internal class ReportAbuseResources_en_us : TranslationResourcesBase, IReportAbu
 	{
 		return "This account does not have enough permissions";
 	}
+}
+
+
 }

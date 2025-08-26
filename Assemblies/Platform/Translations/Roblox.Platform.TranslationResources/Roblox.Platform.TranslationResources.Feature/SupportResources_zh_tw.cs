@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SupportResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,151 +11,151 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 	/// Cancel
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionDialogCancel => "取消";
+	public override string ActionDialogCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.OK"
 	/// OK
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogOK => "確定";
+	public override string ActionDialogOK => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Send"
 	/// Send
 	/// English String: "Send"
 	/// </summary>
-	public override string ActionDialogSend => "傳送";
+	public override string ActionDialogSend => "å‚³é€";
 
 	/// <summary>
 	/// Key: "Heading.ContactInformation"
 	/// Contact Information
 	/// English String: "Contact Information"
 	/// </summary>
-	public override string HeadingContactInformation => "聯絡資訊";
+	public override string HeadingContactInformation => "è¯çµ¡è³‡è¨Š";
 
 	/// <summary>
 	/// Key: "Heading.DescriptionOfIssue"
 	/// Description of issue
 	/// English String: "Description of issue"
 	/// </summary>
-	public override string HeadingDescriptionOfIssue => "問題說明";
+	public override string HeadingDescriptionOfIssue => "å•é¡Œèªªæ˜Ž";
 
 	/// <summary>
 	/// Key: "Heading.DeviceWithProblem"
 	/// What device are you having the problem on?
 	/// English String: "What device are you having the problem on?"
 	/// </summary>
-	public override string HeadingDeviceWithProblem => "您遇到問題的裝置是？";
+	public override string HeadingDeviceWithProblem => "æ‚¨é‡åˆ°å•é¡Œçš„è£ç½®æ˜¯ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ErrorWithoutContext"
 	/// Error
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingDialogErrorWithoutContext => "錯誤";
+	public override string HeadingDialogErrorWithoutContext => "éŒ¯èª¤";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.InvalidUsername"
 	/// Invalid Username
 	/// English String: "Invalid Username"
 	/// </summary>
-	public override string HeadingDialogInvalidUsername => "使用者名稱無效";
+	public override string HeadingDialogInvalidUsername => "ä½¿ç”¨è€…åç¨±ç„¡æ•ˆ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.RequestReceived"
 	/// Request Received
 	/// English String: "Request Received"
 	/// </summary>
-	public override string HeadingDialogRequestReceived => "已收到請求";
+	public override string HeadingDialogRequestReceived => "å·²æ”¶åˆ°è«‹æ±‚";
 
 	/// <summary>
 	/// Key: "Heading.HelpCategoryType"
 	/// Type of help category
 	/// English String: "Type of help category"
 	/// </summary>
-	public override string HeadingHelpCategoryType => "說明類別的種類";
+	public override string HeadingHelpCategoryType => "èªªæ˜Žé¡žåˆ¥çš„ç¨®é¡ž";
 
 	/// <summary>
 	/// Key: "Heading.IssueDetails"
 	/// Issue Details
 	/// English String: "Issue Details"
 	/// </summary>
-	public override string HeadingIssueDetails => "問題詳細資料";
+	public override string HeadingIssueDetails => "å•é¡Œè©³ç´°è³‡æ–™";
 
 	/// <summary>
 	/// Key: "Heading.PageTitle"
 	/// Contact Us
 	/// English String: "Contact Us"
 	/// </summary>
-	public override string HeadingPageTitle => "聯絡我們";
+	public override string HeadingPageTitle => "è¯çµ¡æˆ‘å€‘";
 
 	/// <summary>
 	/// Key: "Label.AccountHacked"
 	/// Account Hacked
 	/// English String: "Account Hacked"
 	/// </summary>
-	public override string LabelAccountHacked => "帳號遭駭";
+	public override string LabelAccountHacked => "å¸³è™Ÿé­é§­";
 
 	/// <summary>
 	/// Key: "Label.AccountOwnership"
 	/// Account Hacked or Can't Log in
 	/// English String: "Account Hacked or Can't Log in"
 	/// </summary>
-	public override string LabelAccountOwnership => "帳號遭駭或無法登入";
+	public override string LabelAccountOwnership => "å¸³è™Ÿé­é§­æˆ–ç„¡æ³•ç™»å…¥";
 
 	/// <summary>
 	/// Key: "Label.AccountPin"
 	/// Account PIN
 	/// English String: "Account PIN"
 	/// </summary>
-	public override string LabelAccountPin => "帳號 PIN";
+	public override string LabelAccountPin => "å¸³è™Ÿ PIN";
 
-	public override string LabelAdjustChildSettings => "調整兒童隱私權及安全設定";
+	public override string LabelAdjustChildSettings => "èª¿æ•´å…’ç«¥éš±ç§æ¬ŠåŠå®‰å…¨è¨­å®š";
 
 	/// <summary>
 	/// Key: "Label.AmazonDevice"
 	/// Amazon Device
 	/// English String: "Amazon Device"
 	/// </summary>
-	public override string LabelAmazonDevice => "Amazon 裝置";
+	public override string LabelAmazonDevice => "Amazon è£ç½®";
 
 	/// <summary>
 	/// Key: "Label.AndroidPhone"
 	/// Android Phone
 	/// English String: "Android Phone"
 	/// </summary>
-	public override string LabelAndroidPhone => "Android 手機";
+	public override string LabelAndroidPhone => "Android æ‰‹æ©Ÿ";
 
 	/// <summary>
 	/// Key: "Label.AndroidTablet"
 	/// Android Tablet
 	/// English String: "Android Tablet"
 	/// </summary>
-	public override string LabelAndroidTablet => "Android 平板電腦";
+	public override string LabelAndroidTablet => "Android å¹³æ¿é›»è…¦";
 
 	/// <summary>
 	/// Key: "Label.AppealAccountContent"
 	/// Appeal Account or Content
 	/// English String: "Appeal Account or Content"
 	/// </summary>
-	public override string LabelAppealAccountContent => "帳號或內容上訴";
+	public override string LabelAppealAccountContent => "å¸³è™Ÿæˆ–å…§å®¹ä¸Šè¨´";
 
 	/// <summary>
 	/// Key: "Label.AppealFriend"
 	/// Appeal for Friend
 	/// English String: "Appeal for Friend"
 	/// </summary>
-	public override string LabelAppealFriend => "為好友上訴";
+	public override string LabelAppealFriend => "ç‚ºå¥½å‹ä¸Šè¨´";
 
-	public override string LabelBilling => "帳務和付款";
+	public override string LabelBilling => "å¸³å‹™å’Œä»˜æ¬¾";
 
 	/// <summary>
 	/// Key: "Label.BugReport"
 	/// Bug Report
 	/// English String: "Bug Report"
 	/// </summary>
-	public override string LabelBugReport => "舉報漏洞";
+	public override string LabelBugReport => "èˆ‰å ±æ¼æ´ž";
 
 	/// <summary>
 	/// Key: "Label.BuildersClub"
@@ -169,30 +169,30 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 	/// Cancel Membership
 	/// English String: "Cancel Membership"
 	/// </summary>
-	public override string LabelCancelMembership => "取消會員資格";
+	public override string LabelCancelMembership => "å–æ¶ˆæœƒå“¡è³‡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.CannotInstall"
 	/// Cannot Install Roblox or Studio
 	/// English String: "Cannot Install Roblox or Studio"
 	/// </summary>
-	public override string LabelCannotInstall => "無法安裝 Roblox 或 Studio";
+	public override string LabelCannotInstall => "ç„¡æ³•å®‰è£ Roblox æˆ– Studio";
 
 	/// <summary>
 	/// Key: "Label.CannotPlayGame"
 	/// Cannot Play Game
 	/// English String: "Cannot Play Game"
 	/// </summary>
-	public override string LabelCannotPlayGame => "無法玩遊戲";
+	public override string LabelCannotPlayGame => "ç„¡æ³•çŽ©éŠæˆ²";
 
 	/// <summary>
 	/// Key: "Label.ChangeChildAge"
 	/// Change Child Age
 	/// English String: "Change Child Age"
 	/// </summary>
-	public override string LabelChangeChildAge => "變更兒童年齡";
+	public override string LabelChangeChildAge => "è®Šæ›´å…’ç«¥å¹´é½¡";
 
-	public override string LabelChatAgeSettings => "聊天與年齡設定";
+	public override string LabelChatAgeSettings => "èŠå¤©èˆ‡å¹´é½¡è¨­å®š";
 
 	/// <summary>
 	/// Key: "Label.Chromebook"
@@ -206,37 +206,37 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 	/// Confirm Email Address
 	/// English String: "Confirm Email Address"
 	/// </summary>
-	public override string LabelConfirmEmail => "確認電子郵件地址";
+	public override string LabelConfirmEmail => "ç¢ºèªé›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.ContentAbuseReport"
 	/// Report Content Breaking Rules
 	/// English String: "Report Content Breaking Rules"
 	/// </summary>
-	public override string LabelContentAbuseReport => "舉報違規內容";
+	public override string LabelContentAbuseReport => "èˆ‰å ±é•è¦å…§å®¹";
 
-	public override string LabelContest => "比賽及活動";
+	public override string LabelContest => "æ¯”è³½åŠæ´»å‹•";
 
 	/// <summary>
 	/// Key: "Label.ContestEventQuestion"
 	/// Question or Issue
 	/// English String: "Question or Issue"
 	/// </summary>
-	public override string LabelContestEventQuestion => "問題或困難";
+	public override string LabelContestEventQuestion => "å•é¡Œæˆ–å›°é›£";
 
 	/// <summary>
 	/// Key: "Label.CSCharacter"
 	/// Customer Service Character
 	/// English String: "Customer Service Character"
 	/// </summary>
-	public override string LabelCSCharacter => "客服人員角色";
+	public override string LabelCSCharacter => "å®¢æœäººå“¡è§’è‰²";
 
 	/// <summary>
 	/// Key: "Label.DescribeIssue"
 	/// Please describe your issue
 	/// English String: "Please describe your issue"
 	/// </summary>
-	public override string LabelDescribeIssue => "請描述您的問題";
+	public override string LabelDescribeIssue => "è«‹æè¿°æ‚¨çš„å•é¡Œ";
 
 	/// <summary>
 	/// Key: "Label.DevEx"
@@ -250,107 +250,107 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 	/// DevEx How To
 	/// English String: "DevEx How To"
 	/// </summary>
-	public override string LabelDevExHowTo => "DevEx 說明";
+	public override string LabelDevExHowTo => "DevEx èªªæ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.DevExMyRequest"
 	/// DevEx My Request
 	/// English String: "DevEx My Request"
 	/// </summary>
-	public override string LabelDevExMyRequest => "DevEx 我的請求";
+	public override string LabelDevExMyRequest => "DevEx æˆ‘çš„è«‹æ±‚";
 
 	/// <summary>
 	/// Key: "Label.DMCA"
 	/// DMCA
 	/// English String: "DMCA"
 	/// </summary>
-	public override string LabelDMCA => "數位千禧年著作權法（DMCA）";
+	public override string LabelDMCA => "æ•¸ä½åƒç¦§å¹´è‘—ä½œæ¬Šæ³•ï¼ˆDMCAï¼‰";
 
 	/// <summary>
 	/// Key: "Label.EmailAddress"
 	/// Email Address
 	/// English String: "Email Address"
 	/// </summary>
-	public override string LabelEmailAddress => "電子郵件地址";
+	public override string LabelEmailAddress => "é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Label.ExploitReport"
 	/// Exploit Report
 	/// English String: "Exploit Report"
 	/// </summary>
-	public override string LabelExploitReport => "舉報外掛";
+	public override string LabelExploitReport => "èˆ‰å ±å¤–æŽ›";
 
 	/// <summary>
 	/// Key: "Label.FirstName"
 	/// First Name
 	/// English String: "First Name"
 	/// </summary>
-	public override string LabelFirstName => "名字";
+	public override string LabelFirstName => "åå­—";
 
 	/// <summary>
 	/// Key: "Label.ForgotPassword"
 	/// Forgot Password
 	/// English String: "Forgot Password"
 	/// </summary>
-	public override string LabelForgotPassword => "忘記密碼";
+	public override string LabelForgotPassword => "å¿˜è¨˜å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "Label.FreeRobux"
 	/// Free Robux
 	/// English String: "Free Robux"
 	/// </summary>
-	public override string LabelFreeRobux => "免費 Robux";
+	public override string LabelFreeRobux => "å…è²» Robux";
 
 	/// <summary>
 	/// Key: "Label.GameCredit"
 	/// Game Card
 	/// English String: "Game Card"
 	/// </summary>
-	public override string LabelGameCredit => "點數卡";
+	public override string LabelGameCredit => "é»žæ•¸å¡";
 
 	/// <summary>
 	/// Key: "Label.GCPartialPayment"
 	/// Purchase - Split Payment
 	/// English String: "Purchase - Split Payment"
 	/// </summary>
-	public override string LabelGCPartialPayment => "購買 - 拆分付款";
+	public override string LabelGCPartialPayment => "è³¼è²· - æ‹†åˆ†ä»˜æ¬¾";
 
 	/// <summary>
 	/// Key: "Label.GCRedeem"
 	/// Game Card - Redeem
 	/// English String: "Game Card - Redeem"
 	/// </summary>
-	public override string LabelGCRedeem => "點數卡 - 兌換";
+	public override string LabelGCRedeem => "é»žæ•¸å¡ - å…Œæ›";
 
 	/// <summary>
 	/// Key: "Label.GCSpendCredit"
 	/// Game Card - Spend Credit
 	/// English String: "Game Card - Spend Credit"
 	/// </summary>
-	public override string LabelGCSpendCredit => "點數卡 - 使用點數";
+	public override string LabelGCSpendCredit => "é»žæ•¸å¡ - ä½¿ç”¨é»žæ•¸";
 
 	/// <summary>
 	/// Key: "Label.HowTo"
 	/// How To
 	/// English String: "How To"
 	/// </summary>
-	public override string LabelHowTo => "說明";
+	public override string LabelHowTo => "èªªæ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.HowToGeneral"
 	/// How To - General
 	/// English String: "How To - General"
 	/// </summary>
-	public override string LabelHowToGeneral => "說明 - 一般";
+	public override string LabelHowToGeneral => "èªªæ˜Ž - ä¸€èˆ¬";
 
 	/// <summary>
 	/// Key: "Label.HowToOther"
 	/// How To - Other
 	/// English String: "How To - Other"
 	/// </summary>
-	public override string LabelHowToOther => "說明 - 其它";
+	public override string LabelHowToOther => "èªªæ˜Ž - å…¶å®ƒ";
 
-	public override string LabelIdeasSuggestions => "建議";
+	public override string LabelIdeasSuggestions => "å»ºè­°";
 
 	/// <summary>
 	/// Key: "Label.IPad"
@@ -371,14 +371,14 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 	/// Please describe the issue that you are facing. Include any relevant information like where the issue is occurring or the error message.
 	/// English String: "Please describe the issue that you are facing. Include any relevant information like where the issue is occurring or the error message."
 	/// </summary>
-	public override string LabelIssueDescription => "請描述您面臨的問題。請附上任何相關資訊，例如問題發生的所在及錯誤訊息文字。";
+	public override string LabelIssueDescription => "è«‹æè¿°æ‚¨é¢è‡¨çš„å•é¡Œã€‚è«‹é™„ä¸Šä»»ä½•ç›¸é—œè³‡è¨Šï¼Œä¾‹å¦‚å•é¡Œç™¼ç”Ÿçš„æ‰€åœ¨åŠéŒ¯èª¤è¨Šæ¯æ–‡å­—ã€‚";
 
 	/// <summary>
 	/// Key: "Label.IWasScammed"
 	/// I was Scammed
 	/// English String: "I was Scammed"
 	/// </summary>
-	public override string LabelIWasScammed => "我遭到詐騙";
+	public override string LabelIWasScammed => "æˆ‘é­åˆ°è©é¨™";
 
 	/// <summary>
 	/// Key: "Label.Mac"
@@ -392,98 +392,98 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 	/// Support page. Membership {{dc.field_membership}} stop_memb.
 	/// English String: "Membership"
 	/// </summary>
-	public override string LabelMembership => "會員資格";
+	public override string LabelMembership => "æœƒå“¡è³‡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.Moderation"
 	/// Moderation
 	/// English String: "Moderation"
 	/// </summary>
-	public override string LabelModeration => "過濾";
+	public override string LabelModeration => "éŽæ¿¾";
 
 	/// <summary>
 	/// Key: "Label.OtherSiteClaim"
 	/// Other Site Claim
 	/// English String: "Other Site Claim"
 	/// </summary>
-	public override string LabelOtherSiteClaim => "其它網站聲明";
+	public override string LabelOtherSiteClaim => "å…¶å®ƒç¶²ç«™è²æ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.OwnerDMCAClaim"
 	/// Owner DMCA Claim
 	/// English String: "Owner DMCA Claim"
 	/// </summary>
-	public override string LabelOwnerDMCAClaim => "數位千禧年著作權法（DMCA）所有權人聲明";
+	public override string LabelOwnerDMCAClaim => "æ•¸ä½åƒç¦§å¹´è‘—ä½œæ¬Šæ³•ï¼ˆDMCAï¼‰æ‰€æœ‰æ¬Šäººè²æ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.PC"
 	/// PC
 	/// English String: "PC"
 	/// </summary>
-	public override string LabelPC => "個人電腦";
+	public override string LabelPC => "å€‹äººé›»è…¦";
 
 	/// <summary>
 	/// Key: "Label.PhysicalToyIssue"
 	/// Physical Toy Issue
 	/// English String: "Physical Toy Issue"
 	/// </summary>
-	public override string LabelPhysicalToyIssue => "實體玩具問題";
+	public override string LabelPhysicalToyIssue => "å¯¦é«”çŽ©å…·å•é¡Œ";
 
 	/// <summary>
 	/// Key: "Label.PleaseSelect"
 	/// Please Select...
 	/// English String: "Please Select..."
 	/// </summary>
-	public override string LabelPleaseSelect => "請選擇…";
+	public override string LabelPleaseSelect => "è«‹é¸æ“‡â€¦";
 
 	/// <summary>
 	/// Key: "Label.PrizeNotReceived"
 	/// Prize Not Received
 	/// English String: "Prize Not Received"
 	/// </summary>
-	public override string LabelPrizeNotReceived => "未收到獎項";
+	public override string LabelPrizeNotReceived => "æœªæ”¶åˆ°çŽé …";
 
 	/// <summary>
 	/// Key: "Label.PurchaseDeclined"
 	/// Purchase - Declined
 	/// English String: "Purchase - Declined"
 	/// </summary>
-	public override string LabelPurchaseDeclined => "購買 - 遭拒";
+	public override string LabelPurchaseDeclined => "è³¼è²· - é­æ‹’";
 
 	/// <summary>
 	/// Key: "Label.PurchaseDidNotReceive"
 	/// Purchase - Did Not Receive
 	/// English String: "Purchase - Did Not Receive"
 	/// </summary>
-	public override string LabelPurchaseDidNotReceive => "購買 - 未收到";
+	public override string LabelPurchaseDidNotReceive => "è³¼è²· - æœªæ”¶åˆ°";
 
 	/// <summary>
 	/// Key: "Label.PurchaseUnauthorizedCharge"
 	/// Purchase - Unauthorized Charge
 	/// English String: "Purchase - Unauthorized Charge"
 	/// </summary>
-	public override string LabelPurchaseUnauthorizedCharge => "購買 - 未授權收費";
+	public override string LabelPurchaseUnauthorizedCharge => "è³¼è²· - æœªæŽˆæ¬Šæ”¶è²»";
 
 	/// <summary>
 	/// Key: "Label.ReportPhish"
 	/// Report Phishing Site
 	/// English String: "Report Phishing Site"
 	/// </summary>
-	public override string LabelReportPhish => "檢舉網路釣魚網站";
+	public override string LabelReportPhish => "æª¢èˆ‰ç¶²è·¯é‡£é­šç¶²ç«™";
 
 	/// <summary>
 	/// Key: "Label.RobloxCrashing"
 	/// Roblox Crashing
 	/// English String: "Roblox Crashing"
 	/// </summary>
-	public override string LabelRobloxCrashing => "Roblox 當機";
+	public override string LabelRobloxCrashing => "Roblox ç•¶æ©Ÿ";
 
 	/// <summary>
 	/// Key: "Label.RobloxToys"
 	/// Roblox Toys
 	/// English String: "Roblox Toys"
 	/// </summary>
-	public override string LabelRobloxToys => "Roblox 玩具";
+	public override string LabelRobloxToys => "Roblox çŽ©å…·";
 
 	/// <summary>
 	/// Key: "Label.Robux"
@@ -497,98 +497,98 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 	/// Robux - Purchase Issue
 	/// English String: "Robux - Purchase Issue"
 	/// </summary>
-	public override string LabelRobuxPurchaseIssue => "Robux - 購買問題";
+	public override string LabelRobuxPurchaseIssue => "Robux - è³¼è²·å•é¡Œ";
 
 	/// <summary>
 	/// Key: "Label.SafetyInquiry"
 	/// Inappropriate game or user behavior
 	/// English String: "Inappropriate game or user behavior"
 	/// </summary>
-	public override string LabelSafetyInquiry => "遊戲或使用者行為不當";
+	public override string LabelSafetyInquiry => "éŠæˆ²æˆ–ä½¿ç”¨è€…è¡Œç‚ºä¸ç•¶";
 
 	/// <summary>
 	/// Key: "Label.SafetyQueueTicket"
 	/// User Safety Concern
 	/// English String: "User Safety Concern"
 	/// </summary>
-	public override string LabelSafetyQueueTicket => "使用者安全疑慮";
+	public override string LabelSafetyQueueTicket => "ä½¿ç”¨è€…å®‰å…¨ç–‘æ…®";
 
 	/// <summary>
 	/// Key: "Label.SpecificGameIssue"
 	/// Specific Game Issue
 	/// English String: "Specific Game Issue"
 	/// </summary>
-	public override string LabelSpecificGameIssue => "特定遊戲問題";
+	public override string LabelSpecificGameIssue => "ç‰¹å®šéŠæˆ²å•é¡Œ";
 
 	/// <summary>
 	/// Key: "Label.Submit"
 	/// Submit
 	/// English String: "Submit"
 	/// </summary>
-	public override string LabelSubmit => "提交";
+	public override string LabelSubmit => "æäº¤";
 
 	/// <summary>
 	/// Key: "Label.SuggestFeature"
 	/// Feature Suggestion
 	/// English String: "Feature Suggestion"
 	/// </summary>
-	public override string LabelSuggestFeature => "功能建議";
+	public override string LabelSuggestFeature => "åŠŸèƒ½å»ºè­°";
 
 	/// <summary>
 	/// Key: "Label.SuggestFeedback"
 	/// Feedback
 	/// English String: "Feedback"
 	/// </summary>
-	public override string LabelSuggestFeedback => "回饋";
+	public override string LabelSuggestFeedback => "å›žé¥‹";
 
 	/// <summary>
 	/// Key: "Label.TechnicalSupport"
 	/// Technical Support
 	/// English String: "Technical Support"
 	/// </summary>
-	public override string LabelTechnicalSupport => "技術協助";
+	public override string LabelTechnicalSupport => "æŠ€è¡“å”åŠ©";
 
 	/// <summary>
 	/// Key: "Label.ToyCodeIssue"
 	/// Toy Code Issue
 	/// English String: "Toy Code Issue"
 	/// </summary>
-	public override string LabelToyCodeIssue => "玩具代碼問題";
+	public override string LabelToyCodeIssue => "çŽ©å…·ä»£ç¢¼å•é¡Œ";
 
 	/// <summary>
 	/// Key: "Label.TwoStepV"
 	/// 2-Step Verification
 	/// English String: "2-Step Verification"
 	/// </summary>
-	public override string LabelTwoStepV => "雙步驟驗證";
+	public override string LabelTwoStepV => "é›™æ­¥é©Ÿé©—è­‰";
 
 	/// <summary>
 	/// Key: "Label.UserAbuseReport"
 	/// Report User Breaking Rules
 	/// English String: "Report User Breaking Rules"
 	/// </summary>
-	public override string LabelUserAbuseReport => "舉報違規使用者";
+	public override string LabelUserAbuseReport => "èˆ‰å ±é•è¦ä½¿ç”¨è€…";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// Username
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "使用者名稱";
+	public override string LabelUsername => "ä½¿ç”¨è€…åç¨±";
 
 	/// <summary>
 	/// Key: "Label.VCCatalog"
 	/// Website Item
 	/// English String: "Website Item"
 	/// </summary>
-	public override string LabelVCCatalog => "網站道具";
+	public override string LabelVCCatalog => "ç¶²ç«™é“å…·";
 
 	/// <summary>
 	/// Key: "Label.VCInGame"
 	/// In-Game Item
 	/// English String: "In-Game Item"
 	/// </summary>
-	public override string LabelVCInGame => "遊戲中道具";
+	public override string LabelVCInGame => "éŠæˆ²ä¸­é“å…·";
 
 	/// <summary>
 	/// Key: "Label.Xbox"
@@ -602,70 +602,70 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 	/// Something went wrong, please try again later.
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string ResponseDialogErrorWithoutContext => "發生錯誤，請稍後再試。";
+	public override string ResponseDialogErrorWithoutContext => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidUsername"
 	/// Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker.
 	/// English String: "Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker."
 	/// </summary>
-	public override string ResponseDialogInvalidUsername => "按下「傳送」提交聯絡單，或按下「取消」編輯使用者名稱。提供正確的使用者名稱能讓我更快解決您的問題。";
+	public override string ResponseDialogInvalidUsername => "æŒ‰ä¸‹ã€Œå‚³é€ã€æäº¤è¯çµ¡å–®ï¼Œæˆ–æŒ‰ä¸‹ã€Œå–æ¶ˆã€ç·¨è¼¯ä½¿ç”¨è€…åç¨±ã€‚æä¾›æ­£ç¢ºçš„ä½¿ç”¨è€…åç¨±èƒ½è®“æˆ‘æ›´å¿«è§£æ±ºæ‚¨çš„å•é¡Œã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.RequestReceived"
 	/// Thank you for contacting Roblox. Please check your email for a message from Customer Service.
 	/// English String: "Thank you for contacting Roblox. Please check your email for a message from Customer Service."
 	/// </summary>
-	public override string ResponseDialogRequestReceived => "謝謝您聯絡 Roblox，客服人員將盡速透過電子郵件回覆您。";
+	public override string ResponseDialogRequestReceived => "è¬è¬æ‚¨è¯çµ¡ Robloxï¼Œå®¢æœäººå“¡å°‡ç›¡é€Ÿé€éŽé›»å­éƒµä»¶å›žè¦†æ‚¨ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TooManyAttemptsError"
 	/// Too many attempts. Try again later.
 	/// English String: "Too many attempts. Try again later."
 	/// </summary>
-	public override string ResponseDialogTooManyAttemptsError => "嘗試次數過多，請稍後再試。";
+	public override string ResponseDialogTooManyAttemptsError => "å˜—è©¦æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TryAgainError"
 	/// An error occurred. Try again later.
 	/// English String: "An error occurred. Try again later."
 	/// </summary>
-	public override string ResponseDialogTryAgainError => "發生錯誤，請稍後再試。";
+	public override string ResponseDialogTryAgainError => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Response.EmailFormatError"
 	/// Please enter a properly formatted email address
 	/// English String: "Please enter a properly formatted email address"
 	/// </summary>
-	public override string ResponseEmailFormatError => "請輸入格式正確的電子郵件地址";
+	public override string ResponseEmailFormatError => "è«‹è¼¸å…¥æ ¼å¼æ­£ç¢ºçš„é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "Response.EmailNotMatching"
 	/// Email address does not match
 	/// English String: "Email address does not match"
 	/// </summary>
-	public override string ResponseEmailNotMatching => "電子郵件地址不符";
+	public override string ResponseEmailNotMatching => "é›»å­éƒµä»¶åœ°å€ä¸ç¬¦";
 
 	/// <summary>
 	/// Key: "Response.InvalidFirstName"
 	/// Please enter a valid first name
 	/// English String: "Please enter a valid first name"
 	/// </summary>
-	public override string ResponseInvalidFirstName => "請輸入有效名字";
+	public override string ResponseInvalidFirstName => "è«‹è¼¸å…¥æœ‰æ•ˆåå­—";
 
 	/// <summary>
 	/// Key: "Response.InvalidUsername"
 	/// That doesn't appear to be a valid Roblox username.
 	/// English String: "That doesn't appear to be a valid Roblox username."
 	/// </summary>
-	public override string ResponseInvalidUsername => "Roblox 使用者名稱無效。";
+	public override string ResponseInvalidUsername => "Roblox ä½¿ç”¨è€…åç¨±ç„¡æ•ˆã€‚";
 
 	/// <summary>
 	/// Key: "Response.Under13Email"
 	/// If you are under 13 years old, please provide your parent's email address
 	/// English String: "If you are under 13 years old, please provide your parent's email address"
 	/// </summary>
-	public override string ResponseUnder13Email => "若您 13 歲以下，請提供您的家長的電子郵件地址";
+	public override string ResponseUnder13Email => "è‹¥æ‚¨ 13 æ­²ä»¥ä¸‹ï¼Œè«‹æä¾›æ‚¨çš„å®¶é•·çš„é›»å­éƒµä»¶åœ°å€";
 
 	public SupportResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -674,117 +674,117 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForActionDialogCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionDialogOK()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForActionDialogSend()
 	{
-		return "傳送";
+		return "å‚³é€";
 	}
 
 	protected override string _GetTemplateForHeadingContactInformation()
 	{
-		return "聯絡資訊";
+		return "è¯çµ¡è³‡è¨Š";
 	}
 
 	protected override string _GetTemplateForHeadingDescriptionOfIssue()
 	{
-		return "問題說明";
+		return "å•é¡Œèªªæ˜Ž";
 	}
 
 	protected override string _GetTemplateForHeadingDeviceWithProblem()
 	{
-		return "您遇到問題的裝置是？";
+		return "æ‚¨é‡åˆ°å•é¡Œçš„è£ç½®æ˜¯ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogErrorWithoutContext()
 	{
-		return "錯誤";
+		return "éŒ¯èª¤";
 	}
 
 	protected override string _GetTemplateForHeadingDialogInvalidUsername()
 	{
-		return "使用者名稱無效";
+		return "ä½¿ç”¨è€…åç¨±ç„¡æ•ˆ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogRequestReceived()
 	{
-		return "已收到請求";
+		return "å·²æ”¶åˆ°è«‹æ±‚";
 	}
 
 	protected override string _GetTemplateForHeadingHelpCategoryType()
 	{
-		return "說明類別的種類";
+		return "èªªæ˜Žé¡žåˆ¥çš„ç¨®é¡ž";
 	}
 
 	protected override string _GetTemplateForHeadingIssueDetails()
 	{
-		return "問題詳細資料";
+		return "å•é¡Œè©³ç´°è³‡æ–™";
 	}
 
 	protected override string _GetTemplateForHeadingPageTitle()
 	{
-		return "聯絡我們";
+		return "è¯çµ¡æˆ‘å€‘";
 	}
 
 	protected override string _GetTemplateForLabelAccountHacked()
 	{
-		return "帳號遭駭";
+		return "å¸³è™Ÿé­é§­";
 	}
 
 	protected override string _GetTemplateForLabelAccountOwnership()
 	{
-		return "帳號遭駭或無法登入";
+		return "å¸³è™Ÿé­é§­æˆ–ç„¡æ³•ç™»å…¥";
 	}
 
 	protected override string _GetTemplateForLabelAccountPin()
 	{
-		return "帳號 PIN";
+		return "å¸³è™Ÿ PIN";
 	}
 
 	protected override string _GetTemplateForLabelAdjustChildSettings()
 	{
-		return "調整兒童隱私權及安全設定";
+		return "èª¿æ•´å…’ç«¥éš±ç§æ¬ŠåŠå®‰å…¨è¨­å®š";
 	}
 
 	protected override string _GetTemplateForLabelAmazonDevice()
 	{
-		return "Amazon 裝置";
+		return "Amazon è£ç½®";
 	}
 
 	protected override string _GetTemplateForLabelAndroidPhone()
 	{
-		return "Android 手機";
+		return "Android æ‰‹æ©Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelAndroidTablet()
 	{
-		return "Android 平板電腦";
+		return "Android å¹³æ¿é›»è…¦";
 	}
 
 	protected override string _GetTemplateForLabelAppealAccountContent()
 	{
-		return "帳號或內容上訴";
+		return "å¸³è™Ÿæˆ–å…§å®¹ä¸Šè¨´";
 	}
 
 	protected override string _GetTemplateForLabelAppealFriend()
 	{
-		return "為好友上訴";
+		return "ç‚ºå¥½å‹ä¸Šè¨´";
 	}
 
 	protected override string _GetTemplateForLabelBilling()
 	{
-		return "帳務和付款";
+		return "å¸³å‹™å’Œä»˜æ¬¾";
 	}
 
 	protected override string _GetTemplateForLabelBugReport()
 	{
-		return "舉報漏洞";
+		return "èˆ‰å ±æ¼æ´ž";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClub()
@@ -794,27 +794,27 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelCancelMembership()
 	{
-		return "取消會員資格";
+		return "å–æ¶ˆæœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelCannotInstall()
 	{
-		return "無法安裝 Roblox 或 Studio";
+		return "ç„¡æ³•å®‰è£ Roblox æˆ– Studio";
 	}
 
 	protected override string _GetTemplateForLabelCannotPlayGame()
 	{
-		return "無法玩遊戲";
+		return "ç„¡æ³•çŽ©éŠæˆ²";
 	}
 
 	protected override string _GetTemplateForLabelChangeChildAge()
 	{
-		return "變更兒童年齡";
+		return "è®Šæ›´å…’ç«¥å¹´é½¡";
 	}
 
 	protected override string _GetTemplateForLabelChatAgeSettings()
 	{
-		return "聊天與年齡設定";
+		return "èŠå¤©èˆ‡å¹´é½¡è¨­å®š";
 	}
 
 	protected override string _GetTemplateForLabelChromebook()
@@ -824,32 +824,32 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelConfirmEmail()
 	{
-		return "確認電子郵件地址";
+		return "ç¢ºèªé›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelContentAbuseReport()
 	{
-		return "舉報違規內容";
+		return "èˆ‰å ±é•è¦å…§å®¹";
 	}
 
 	protected override string _GetTemplateForLabelContest()
 	{
-		return "比賽及活動";
+		return "æ¯”è³½åŠæ´»å‹•";
 	}
 
 	protected override string _GetTemplateForLabelContestEventQuestion()
 	{
-		return "問題或困難";
+		return "å•é¡Œæˆ–å›°é›£";
 	}
 
 	protected override string _GetTemplateForLabelCSCharacter()
 	{
-		return "客服人員角色";
+		return "å®¢æœäººå“¡è§’è‰²";
 	}
 
 	protected override string _GetTemplateForLabelDescribeIssue()
 	{
-		return "請描述您的問題";
+		return "è«‹æè¿°æ‚¨çš„å•é¡Œ";
 	}
 
 	protected override string _GetTemplateForLabelDevEx()
@@ -859,82 +859,82 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelDevExHowTo()
 	{
-		return "DevEx 說明";
+		return "DevEx èªªæ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelDevExMyRequest()
 	{
-		return "DevEx 我的請求";
+		return "DevEx æˆ‘çš„è«‹æ±‚";
 	}
 
 	protected override string _GetTemplateForLabelDMCA()
 	{
-		return "數位千禧年著作權法（DMCA）";
+		return "æ•¸ä½åƒç¦§å¹´è‘—ä½œæ¬Šæ³•ï¼ˆDMCAï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelEmailAddress()
 	{
-		return "電子郵件地址";
+		return "é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelExploitReport()
 	{
-		return "舉報外掛";
+		return "èˆ‰å ±å¤–æŽ›";
 	}
 
 	protected override string _GetTemplateForLabelFirstName()
 	{
-		return "名字";
+		return "åå­—";
 	}
 
 	protected override string _GetTemplateForLabelForgotPassword()
 	{
-		return "忘記密碼";
+		return "å¿˜è¨˜å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelFreeRobux()
 	{
-		return "免費 Robux";
+		return "å…è²» Robux";
 	}
 
 	protected override string _GetTemplateForLabelGameCredit()
 	{
-		return "點數卡";
+		return "é»žæ•¸å¡";
 	}
 
 	protected override string _GetTemplateForLabelGCPartialPayment()
 	{
-		return "購買 - 拆分付款";
+		return "è³¼è²· - æ‹†åˆ†ä»˜æ¬¾";
 	}
 
 	protected override string _GetTemplateForLabelGCRedeem()
 	{
-		return "點數卡 - 兌換";
+		return "é»žæ•¸å¡ - å…Œæ›";
 	}
 
 	protected override string _GetTemplateForLabelGCSpendCredit()
 	{
-		return "點數卡 - 使用點數";
+		return "é»žæ•¸å¡ - ä½¿ç”¨é»žæ•¸";
 	}
 
 	protected override string _GetTemplateForLabelHowTo()
 	{
-		return "說明";
+		return "èªªæ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelHowToGeneral()
 	{
-		return "說明 - 一般";
+		return "èªªæ˜Ž - ä¸€èˆ¬";
 	}
 
 	protected override string _GetTemplateForLabelHowToOther()
 	{
-		return "說明 - 其它";
+		return "èªªæ˜Ž - å…¶å®ƒ";
 	}
 
 	protected override string _GetTemplateForLabelIdeasSuggestions()
 	{
-		return "建議";
+		return "å»ºè­°";
 	}
 
 	protected override string _GetTemplateForLabelIPad()
@@ -949,12 +949,12 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelIssueDescription()
 	{
-		return "請描述您面臨的問題。請附上任何相關資訊，例如問題發生的所在及錯誤訊息文字。";
+		return "è«‹æè¿°æ‚¨é¢è‡¨çš„å•é¡Œã€‚è«‹é™„ä¸Šä»»ä½•ç›¸é—œè³‡è¨Šï¼Œä¾‹å¦‚å•é¡Œç™¼ç”Ÿçš„æ‰€åœ¨åŠéŒ¯èª¤è¨Šæ¯æ–‡å­—ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelIWasScammed()
 	{
-		return "我遭到詐騙";
+		return "æˆ‘é­åˆ°è©é¨™";
 	}
 
 	protected override string _GetTemplateForLabelMac()
@@ -964,72 +964,72 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelMembership()
 	{
-		return "會員資格";
+		return "æœƒå“¡è³‡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelModeration()
 	{
-		return "過濾";
+		return "éŽæ¿¾";
 	}
 
 	protected override string _GetTemplateForLabelOtherSiteClaim()
 	{
-		return "其它網站聲明";
+		return "å…¶å®ƒç¶²ç«™è²æ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelOwnerDMCAClaim()
 	{
-		return "數位千禧年著作權法（DMCA）所有權人聲明";
+		return "æ•¸ä½åƒç¦§å¹´è‘—ä½œæ¬Šæ³•ï¼ˆDMCAï¼‰æ‰€æœ‰æ¬Šäººè²æ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelPC()
 	{
-		return "個人電腦";
+		return "å€‹äººé›»è…¦";
 	}
 
 	protected override string _GetTemplateForLabelPhysicalToyIssue()
 	{
-		return "實體玩具問題";
+		return "å¯¦é«”çŽ©å…·å•é¡Œ";
 	}
 
 	protected override string _GetTemplateForLabelPleaseSelect()
 	{
-		return "請選擇…";
+		return "è«‹é¸æ“‡â€¦";
 	}
 
 	protected override string _GetTemplateForLabelPrizeNotReceived()
 	{
-		return "未收到獎項";
+		return "æœªæ”¶åˆ°çŽé …";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseDeclined()
 	{
-		return "購買 - 遭拒";
+		return "è³¼è²· - é­æ‹’";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseDidNotReceive()
 	{
-		return "購買 - 未收到";
+		return "è³¼è²· - æœªæ”¶åˆ°";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseUnauthorizedCharge()
 	{
-		return "購買 - 未授權收費";
+		return "è³¼è²· - æœªæŽˆæ¬Šæ”¶è²»";
 	}
 
 	protected override string _GetTemplateForLabelReportPhish()
 	{
-		return "檢舉網路釣魚網站";
+		return "æª¢èˆ‰ç¶²è·¯é‡£é­šç¶²ç«™";
 	}
 
 	protected override string _GetTemplateForLabelRobloxCrashing()
 	{
-		return "Roblox 當機";
+		return "Roblox ç•¶æ©Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelRobloxToys()
 	{
-		return "Roblox 玩具";
+		return "Roblox çŽ©å…·";
 	}
 
 	protected override string _GetTemplateForLabelRobux()
@@ -1039,72 +1039,72 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForLabelRobuxPurchaseIssue()
 	{
-		return "Robux - 購買問題";
+		return "Robux - è³¼è²·å•é¡Œ";
 	}
 
 	protected override string _GetTemplateForLabelSafetyInquiry()
 	{
-		return "遊戲或使用者行為不當";
+		return "éŠæˆ²æˆ–ä½¿ç”¨è€…è¡Œç‚ºä¸ç•¶";
 	}
 
 	protected override string _GetTemplateForLabelSafetyQueueTicket()
 	{
-		return "使用者安全疑慮";
+		return "ä½¿ç”¨è€…å®‰å…¨ç–‘æ…®";
 	}
 
 	protected override string _GetTemplateForLabelSpecificGameIssue()
 	{
-		return "特定遊戲問題";
+		return "ç‰¹å®šéŠæˆ²å•é¡Œ";
 	}
 
 	protected override string _GetTemplateForLabelSubmit()
 	{
-		return "提交";
+		return "æäº¤";
 	}
 
 	protected override string _GetTemplateForLabelSuggestFeature()
 	{
-		return "功能建議";
+		return "åŠŸèƒ½å»ºè­°";
 	}
 
 	protected override string _GetTemplateForLabelSuggestFeedback()
 	{
-		return "回饋";
+		return "å›žé¥‹";
 	}
 
 	protected override string _GetTemplateForLabelTechnicalSupport()
 	{
-		return "技術協助";
+		return "æŠ€è¡“å”åŠ©";
 	}
 
 	protected override string _GetTemplateForLabelToyCodeIssue()
 	{
-		return "玩具代碼問題";
+		return "çŽ©å…·ä»£ç¢¼å•é¡Œ";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepV()
 	{
-		return "雙步驟驗證";
+		return "é›™æ­¥é©Ÿé©—è­‰";
 	}
 
 	protected override string _GetTemplateForLabelUserAbuseReport()
 	{
-		return "舉報違規使用者";
+		return "èˆ‰å ±é•è¦ä½¿ç”¨è€…";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "使用者名稱";
+		return "ä½¿ç”¨è€…åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelVCCatalog()
 	{
-		return "網站道具";
+		return "ç¶²ç«™é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelVCInGame()
 	{
-		return "遊戲中道具";
+		return "éŠæˆ²ä¸­é“å…·";
 	}
 
 	protected override string _GetTemplateForLabelXbox()
@@ -1114,51 +1114,54 @@ internal class SupportResources_zh_tw : SupportResources_en_us, ISupportResource
 
 	protected override string _GetTemplateForResponseDialogErrorWithoutContext()
 	{
-		return "發生錯誤，請稍後再試。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidUsername()
 	{
-		return "按下「傳送」提交聯絡單，或按下「取消」編輯使用者名稱。提供正確的使用者名稱能讓我更快解決您的問題。";
+		return "æŒ‰ä¸‹ã€Œå‚³é€ã€æäº¤è¯çµ¡å–®ï¼Œæˆ–æŒ‰ä¸‹ã€Œå–æ¶ˆã€ç·¨è¼¯ä½¿ç”¨è€…åç¨±ã€‚æä¾›æ­£ç¢ºçš„ä½¿ç”¨è€…åç¨±èƒ½è®“æˆ‘æ›´å¿«è§£æ±ºæ‚¨çš„å•é¡Œã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogRequestReceived()
 	{
-		return "謝謝您聯絡 Roblox，客服人員將盡速透過電子郵件回覆您。";
+		return "è¬è¬æ‚¨è¯çµ¡ Robloxï¼Œå®¢æœäººå“¡å°‡ç›¡é€Ÿé€éŽé›»å­éƒµä»¶å›žè¦†æ‚¨ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogTooManyAttemptsError()
 	{
-		return "嘗試次數過多，請稍後再試。";
+		return "å˜—è©¦æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogTryAgainError()
 	{
-		return "發生錯誤，請稍後再試。";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseEmailFormatError()
 	{
-		return "請輸入格式正確的電子郵件地址";
+		return "è«‹è¼¸å…¥æ ¼å¼æ­£ç¢ºçš„é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForResponseEmailNotMatching()
 	{
-		return "電子郵件地址不符";
+		return "é›»å­éƒµä»¶åœ°å€ä¸ç¬¦";
 	}
 
 	protected override string _GetTemplateForResponseInvalidFirstName()
 	{
-		return "請輸入有效名字";
+		return "è«‹è¼¸å…¥æœ‰æ•ˆåå­—";
 	}
 
 	protected override string _GetTemplateForResponseInvalidUsername()
 	{
-		return "Roblox 使用者名稱無效。";
+		return "Roblox ä½¿ç”¨è€…åç¨±ç„¡æ•ˆã€‚";
 	}
 
 	protected override string _GetTemplateForResponseUnder13Email()
 	{
-		return "若您 13 歲以下，請提供您的家長的電子郵件地址";
+		return "è‹¥æ‚¨ 13 æ­²ä»¥ä¸‹ï¼Œè«‹æä¾›æ‚¨çš„å®¶é•·çš„é›»å­éƒµä»¶åœ°å€";
 	}
+}
+
+
 }

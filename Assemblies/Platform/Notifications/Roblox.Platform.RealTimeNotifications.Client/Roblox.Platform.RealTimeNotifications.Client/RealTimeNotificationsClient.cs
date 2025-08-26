@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -9,10 +9,9 @@ using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
 using Roblox.RealTimeNotifications.Client.Properties;
 using Roblox.RequestContext;
+namespace Roblox.Platform.RealTimeNotifications.Clientpublic {
+    class RealTimeNotificationsClient : IRealTimeNotificationsClient
 
-namespace Roblox.RealTimeNotifications.Client;
-
-public class RealTimeNotificationsClient : IRealTimeNotificationsClient
 {
 	private readonly IServiceRequestSender _ServiceRequestSender;
 
@@ -101,4 +100,7 @@ public class RealTimeNotificationsClient : IRealTimeNotificationsClient
 		};
 		return _ServiceRequestSender.SendPostRequestAsync<PublishBulkUserNotificationRequest, PublishUserNotificationResult>("/v1/PublishBulkUserNotification", requestData, cancellationToken);
 	}
+}
+
+
 }

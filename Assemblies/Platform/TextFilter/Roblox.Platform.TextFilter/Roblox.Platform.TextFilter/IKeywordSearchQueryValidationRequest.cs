@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Request for filtering a Keyword in a search query via the text filter.
 /// </summary>
 public interface IKeywordSearchQueryValidationRequest
@@ -14,4 +14,7 @@ public interface IKeywordSearchQueryValidationRequest
 	/// The user making the call.
 	/// </summary>
 	ITextAuthor Author { get; }
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class TranslationRolesResourceFactory
 
-internal static class TranslationRolesResourceFactory
 {
 	public const string FullNamespace = "Feature.TranslationRoles";
 
@@ -21,4 +21,7 @@ internal static class TranslationRolesResourceFactory
 			_ => new TranslationRolesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

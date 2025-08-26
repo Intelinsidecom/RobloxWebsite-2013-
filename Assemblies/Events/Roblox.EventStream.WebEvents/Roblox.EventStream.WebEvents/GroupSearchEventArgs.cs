@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GroupSearchEventArgs : WebEventArgs
 
-public class GroupSearchEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The keyword for the search.
@@ -15,3 +16,12 @@ public class GroupSearchEventArgs : WebEventArgs
 	/// </summary>
 	public string Page { get; set; }
 }
+
+
+}
+
+
+
+
+
+

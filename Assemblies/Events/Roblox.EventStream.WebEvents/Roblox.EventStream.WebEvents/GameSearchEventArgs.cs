@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameSearchEventArgs : WebEventArgs
 
-public class GameSearchEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The keyword for the search.
@@ -53,3 +54,12 @@ public class GameSearchEventArgs : WebEventArgs
 	/// </summary>
 	public long? FeaturedPlaceId { get; set; }
 }
+
+
+}
+
+
+
+
+
+

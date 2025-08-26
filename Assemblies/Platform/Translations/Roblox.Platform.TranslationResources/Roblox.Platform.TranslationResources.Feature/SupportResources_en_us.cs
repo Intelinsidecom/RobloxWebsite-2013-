@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class SupportResources_en_us : TranslationResourcesBase, ISupportResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class SupportResources_en_us : TranslationResourcesBase, ISupportResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1567,4 +1566,7 @@ internal class SupportResources_en_us : TranslationResourcesBase, ISupportResour
 	{
 		return "If you are under 13 years old, please provide your parent's email address";
 	}
+}
+
+
 }

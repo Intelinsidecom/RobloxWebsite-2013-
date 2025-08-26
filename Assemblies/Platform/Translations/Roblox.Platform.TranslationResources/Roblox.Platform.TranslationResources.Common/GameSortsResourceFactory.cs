@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class GameSortsResourceFactory
 
-internal static class GameSortsResourceFactory
 {
 	public const string FullNamespace = "Common.GameSorts";
 
@@ -21,4 +21,7 @@ internal static class GameSortsResourceFactory
 			_ => new GameSortsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

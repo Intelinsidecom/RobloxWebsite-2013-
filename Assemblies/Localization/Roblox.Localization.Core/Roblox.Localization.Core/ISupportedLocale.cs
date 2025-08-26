@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Corepublic {
+    interface ISupportedLocale : ISupportedLocaleIdentifier
 
-public interface ISupportedLocale : ISupportedLocaleIdentifier
 {
 	/// <summary>
 	/// <see cref="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum" />
@@ -27,4 +27,7 @@ public interface ISupportedLocale : ISupportedLocaleIdentifier
 	/// Language associated with supported locale
 	/// </summary>
 	ILanguageFamily Language { get; }
+}
+
+
 }

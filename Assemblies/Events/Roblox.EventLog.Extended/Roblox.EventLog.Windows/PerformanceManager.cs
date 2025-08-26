@@ -36,6 +36,8 @@ internal class PerformanceManager
 				TrimmedEventsLoggedPerSecond = v;
 			}, PerformanceCounterType.RateOfCountsPerSecond32, "Event logs per second that needed to be trimmed")
 		};
+		#pragma warning disable CS0618 // 'CounterCreator' is obsolete: Use Roblox.Instrumentation instead of Windows Perfmon counters
 		CounterCreator.InitializeMultiInstance("Roblox.EventLog.Metrics", logName, counters);
+		#pragma warning restore CS0618
 	}
 }

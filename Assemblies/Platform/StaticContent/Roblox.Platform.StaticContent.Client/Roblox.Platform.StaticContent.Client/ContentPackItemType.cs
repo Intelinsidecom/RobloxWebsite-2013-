@@ -1,8 +1,9 @@
-namespace Roblox.StaticContent.Client;
-
-public enum ContentPackItemType
+namespace Roblox.Platform.StaticContent.Client
 {
-	JavaScript = 1,
-	Css,
-	TranslationResourceNamespace
+    public enum ContentPackItemType
+    {
+        JavaScript = 1,
+        Css,
+        TranslationResourceNamespace
+    }
 }

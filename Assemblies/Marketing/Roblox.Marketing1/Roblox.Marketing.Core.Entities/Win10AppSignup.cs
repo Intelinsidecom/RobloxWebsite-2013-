@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Marketing.Core.Entitiesinternal {
+    class Win10AppSignup : IRobloxEntity<long, Win10AppSignupDAL>, ICacheableObject<long>, ICacheableObject
 
-namespace Roblox.Platform.Marketing.Core.Entities;
-
-internal class Win10AppSignup : IRobloxEntity<long, Win10AppSignupDAL>, ICacheableObject<long>, ICacheableObject
 {
 	private Win10AppSignupDAL _EntityDAL;
 
@@ -106,4 +105,7 @@ internal class Win10AppSignup : IRobloxEntity<long, Win10AppSignupDAL>, ICacheab
 	{
 		return $"UserID:{userID}";
 	}
+}
+
+
 }

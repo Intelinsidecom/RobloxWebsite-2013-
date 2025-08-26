@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accountsinternal {
+    interface IAccountLocaleEntityFactory
 
-internal interface IAccountLocaleEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleEntity" /> by its ID.
@@ -24,4 +24,7 @@ internal interface IAccountLocaleEntityFactory
 	/// <param name="supportedLocaleId">supported locale id associated with account, if not null then it must be positive and should present in valid list of supported locales.</param>
 	/// <returns></returns>
 	IAccountLocaleEntity Create(long accountId, int observedLocaleId, int? supportedLocaleId);
+}
+
+
 }

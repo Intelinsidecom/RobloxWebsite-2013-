@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Communication;
+﻿namespace Roblox.Platform.TranslationResources.Communicationinternal {
+    static class CommonEmailResourceFactory
 
-internal static class CommonEmailResourceFactory
 {
 	public const string FullNamespace = "Communication.CommonEmail";
 
@@ -21,4 +21,7 @@ internal static class CommonEmailResourceFactory
 			_ => new CommonEmailResources_en_us(state), 
 		};
 	}
+}
+
+
 }

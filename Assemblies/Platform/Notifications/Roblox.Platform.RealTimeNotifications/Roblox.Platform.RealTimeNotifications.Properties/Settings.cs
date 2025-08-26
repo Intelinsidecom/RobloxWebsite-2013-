@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -8,10 +8,9 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
 using Roblox.Redis;
+namespace Roblox.Platform.RealTimeNotifications.Properties {
+    [CompilerGenerated]
 
-namespace Roblox.RealTimeNotifications.Properties;
-
-[CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
 [SettingsProvider(typeof(Provider))]
 [ExcludeFromCodeCoverage]
@@ -122,4 +121,7 @@ internal sealed class Settings : ApplicationSettingsBase
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, this);
 	}
+}
+
+
 }

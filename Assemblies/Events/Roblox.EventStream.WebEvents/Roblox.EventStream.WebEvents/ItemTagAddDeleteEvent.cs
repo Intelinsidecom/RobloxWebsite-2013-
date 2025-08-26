@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class ItemTagAddDeleteEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class ItemTagAddDeleteEvent : WebEventBase
 {
 	private const string _Name = "itemTagAddDeleteEvent";
 
@@ -32,3 +32,12 @@ public class ItemTagAddDeleteEvent : WebEventBase
 		AddEventArgIfNotNullDoesNotThrow("tagName", eventArgs.TagName);
 	}
 }
+
+
+}
+
+
+
+
+
+

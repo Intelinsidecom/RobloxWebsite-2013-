@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Marketing.Core.Entitiesinternal {
+    class ContentItemType : IRobloxEntity<byte, ContentItemTypeDAL>, ICacheableObject<byte>, ICacheableObject
 
-namespace Roblox.Platform.Marketing.Core.Entities;
-
-internal class ContentItemType : IRobloxEntity<byte, ContentItemTypeDAL>, ICacheableObject<byte>, ICacheableObject
 {
 	private ContentItemTypeDAL _EntityDAL;
 
@@ -111,4 +110,7 @@ internal class ContentItemType : IRobloxEntity<byte, ContentItemTypeDAL>, ICache
 	{
 		yield break;
 	}
+}
+
+
 }

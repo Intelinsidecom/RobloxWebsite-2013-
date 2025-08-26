@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notifications {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DesktopPushNotificationPromptsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,7 +11,7 @@ internal class DesktopPushNotificationPromptsResources_es_es : DesktopPushNotifi
 	/// Notify Me
 	/// English String: "Notify Me"
 	/// </summary>
-	public override string ActionAcceptNotificationPrompt => "Notifícame";
+	public override string ActionAcceptNotificationPrompt => "NotifÃ­came";
 
 	/// <summary>
 	/// Key: "Action.Close"
@@ -53,14 +53,14 @@ internal class DesktopPushNotificationPromptsResources_es_es : DesktopPushNotifi
 	/// Push notifications have been enabled!
 	/// English String: "Push notifications have been enabled!"
 	/// </summary>
-	public override string MessagePushNotificationsEnabledSuccess => "¡Se han activado las notificaciones push!";
+	public override string MessagePushNotificationsEnabledSuccess => "Â¡Se han activado las notificaciones push!";
 
 	/// <summary>
 	/// Key: "Message.SendNotificationsPrompt"
 	/// Can we send you notifications on this computer?
 	/// English String: "Can we send you notifications on this computer?"
 	/// </summary>
-	public override string MessageSendNotificationsPrompt => "¿Podemos enviarte notificaciones a este ordenador?";
+	public override string MessageSendNotificationsPrompt => "Â¿Podemos enviarte notificaciones a este ordenador?";
 
 	public DesktopPushNotificationPromptsResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -69,7 +69,7 @@ internal class DesktopPushNotificationPromptsResources_es_es : DesktopPushNotifi
 
 	protected override string _GetTemplateForActionAcceptNotificationPrompt()
 	{
-		return "Notifícame";
+		return "NotifÃ­came";
 	}
 
 	protected override string _GetTemplateForActionClose()
@@ -159,12 +159,12 @@ internal class DesktopPushNotificationPromptsResources_es_es : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionClickPermissionDropdown(string startBold, string endBold)
 	{
-		return $"Haz clic en la flecha desplegable al lado de notificaciones en la pestaña de {startBold}Permisos{endBold}.";
+		return $"Haz clic en la flecha desplegable al lado de notificaciones en la pestaÃ±a de {startBold}Permisos{endBold}.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionClickPermissionDropdown()
 	{
-		return "Haz clic en la flecha desplegable al lado de notificaciones en la pestaña de {startBold}Permisos{endBold}.";
+		return "Haz clic en la flecha desplegable al lado de notificaciones en la pestaÃ±a de {startBold}Permisos{endBold}.";
 	}
 
 	protected override string _GetTemplateForMessagePushNotificationsDisabledSuccess()
@@ -174,11 +174,14 @@ internal class DesktopPushNotificationPromptsResources_es_es : DesktopPushNotifi
 
 	protected override string _GetTemplateForMessagePushNotificationsEnabledSuccess()
 	{
-		return "¡Se han activado las notificaciones push!";
+		return "Â¡Se han activado las notificaciones push!";
 	}
 
 	protected override string _GetTemplateForMessageSendNotificationsPrompt()
 	{
-		return "¿Podemos enviarte notificaciones a este ordenador?";
+		return "Â¿Podemos enviarte notificaciones a este ordenador?";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using Roblox.Platform.Membership;
+﻿using Roblox.Platform.Membership;
 using Roblox.TranslationResources;
+namespace Roblox.Localization.Accountspublic {
+    interface IAccountLocaleAccessor
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public interface IAccountLocaleAccessor
 {
 	/// <summary>
 	/// Get <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale" /> for given account id.
@@ -25,4 +24,7 @@ public interface IAccountLocaleAccessor
 	/// <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser" />.</param>
 	/// <returns>False if the <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale" /> from the AccountLocaleEntity based on the given <see cref="T:Roblox.Platform.Membership.IUser" /> is NULL. Otherwise, return true.</returns>
 	bool IsPreferredLocaleExplicitlySet(IUser user);
+}
+
+
 }

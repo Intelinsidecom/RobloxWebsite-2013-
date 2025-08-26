@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+namespace Roblox.Platform.Games.Clientpublic {
+    interface IGamesAuthority
 
-namespace Roblox.Games.Client;
-
-public interface IGamesAuthority
 {
 	void Close(long placeId, CloseGameReasonType closeGameReasonType, int[] excludedMatchmakingContextIds = null, ReplacementConfiguration replacementConfiguration = null);
 
@@ -30,4 +29,7 @@ public interface IGamesAuthority
 	Task<IDictionary<string, ServerLastUpdateInfo>> GetLastUpdatedTimeForServersAsync(string[] serverIps, CancellationToken cancellationToken = default(CancellationToken));
 
 	IDictionary<string, ServerLastUpdateInfo> GetLastUpdatedTimeForServers(string[] serverIps);
+}
+
+
 }

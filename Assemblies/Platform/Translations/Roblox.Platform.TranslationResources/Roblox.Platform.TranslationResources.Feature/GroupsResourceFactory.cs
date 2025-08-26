@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GroupsResourceFactory
 
-internal static class GroupsResourceFactory
 {
 	public const string FullNamespace = "Feature.Groups";
 
@@ -21,4 +21,7 @@ internal static class GroupsResourceFactory
 			_ => new GroupsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

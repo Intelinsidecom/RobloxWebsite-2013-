@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Interfaces;
-
-/// <summary>
 /// Interface for AccountAddOnFactory
 /// </summary>
 public interface IAccountAddOnFactory
@@ -97,4 +96,7 @@ public interface IAccountAddOnFactory
 	/// <param name="accountId"></param>
 	/// <returns></returns>
 	long GetRobuxStipendAmount(long accountId);
+}
+
+
 }

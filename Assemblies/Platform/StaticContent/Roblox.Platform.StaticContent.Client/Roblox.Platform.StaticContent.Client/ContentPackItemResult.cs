@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.StaticContent.Client {
+    [DataContract]
 
-namespace Roblox.StaticContent.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 public class ContentPackItemResult
 {
@@ -15,4 +14,7 @@ public class ContentPackItemResult
 
 	[DataMember(Name = "value")]
 	public string Value { get; set; }
+}
+
+
 }

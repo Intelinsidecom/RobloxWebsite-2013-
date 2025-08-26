@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GamePassResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,13 +10,13 @@ internal class GamePassResources_de_de : GamePassResources_en_us, IGamePassResou
 	/// Key: "Action.AddPass"
 	/// English String: "Add Pass"
 	/// </summary>
-	public override string ActionAddPass => "Pass hinzufügen";
+	public override string ActionAddPass => "Pass hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Heading.PassesForThisGame"
 	/// English String: "Passes"
 	/// </summary>
-	public override string HeadingPassesForThisGame => "Pässe";
+	public override string HeadingPassesForThisGame => "PÃ¤sse";
 
 	/// <summary>
 	/// Key: "Label.Buy"
@@ -37,12 +37,12 @@ internal class GamePassResources_de_de : GamePassResources_en_us, IGamePassResou
 
 	protected override string _GetTemplateForActionAddPass()
 	{
-		return "Pass hinzufügen";
+		return "Pass hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForHeadingPassesForThisGame()
 	{
-		return "Pässe";
+		return "PÃ¤sse";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
@@ -54,4 +54,7 @@ internal class GamePassResources_de_de : GamePassResources_en_us, IGamePassResou
 	{
 		return "In Besitz";
 	}
+}
+
+
 }

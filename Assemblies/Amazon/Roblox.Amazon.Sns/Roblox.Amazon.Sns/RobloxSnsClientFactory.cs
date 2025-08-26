@@ -67,7 +67,6 @@ public sealed class RobloxSnsClientFactory : IRobloxSnsClientFactory
 		config.CircuitBreakerPolicyConfig.RetryInterval = defaultSettings.CircuitBreakerRetryInterval;
 		config.CircuitBreakerPolicyConfig.FailuresAllowedBeforeTrip = defaultSettings.FailuresAllowedBeforeCircuitBreakerTrip;
 		config.IsAsyncRequestTimeoutEnabled = defaultSettings.IsAsyncRequestTimeoutEnabled;
-		((ClientConfig)config).ReadWriteTimeout = defaultSettings.ReadWriteTimeout;
 		((ClientConfig)config).Timeout = defaultSettings.RequestTimeout;
 		return (IAmazonSimpleNotificationService)(object)new RobloxSnsClient(credentials, config);
 	}

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Threading.Tasks;
+namespace Roblox.Platform.EphemeralCountersinternal {
+    static class BackgroundWorker
 
-namespace Roblox.EphemeralCounters;
-
-internal static class BackgroundWorker
 {
 	internal static void RunInBackground(Action action, Action<Exception> errorLogger = null)
 	{
@@ -30,4 +29,7 @@ internal static class BackgroundWorker
 			}
 		});
 	}
+}
+
+
 }

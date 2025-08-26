@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ItemConfigurationResources_en_us : TranslationResourcesBase, IItemConfigurationResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ItemConfigurationResources_en_us : TranslationResourcesBase, IItemConfigurationResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -1253,4 +1252,7 @@ internal class ItemConfigurationResources_en_us : TranslationResourcesBase, IIte
 	{
 		return "Successfully updated";
 	}
+}
+
+
 }

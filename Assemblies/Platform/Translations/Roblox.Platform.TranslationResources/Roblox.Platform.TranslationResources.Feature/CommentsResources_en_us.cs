@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class CommentsResources_en_us : TranslationResourcesBase, ICommentsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class CommentsResources_en_us : TranslationResourcesBase, ICommentsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -474,4 +473,7 @@ internal class CommentsResources_en_us : TranslationResourcesBase, ICommentsReso
 	{
 		return "{numberOfHours} hours ago";
 	}
+}
+
+
 }

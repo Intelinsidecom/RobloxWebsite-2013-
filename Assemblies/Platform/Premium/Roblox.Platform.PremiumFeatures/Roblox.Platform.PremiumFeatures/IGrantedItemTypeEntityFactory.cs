@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures;
+﻿namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IGrantedItemTypeEntityFactory
 
-public interface IGrantedItemTypeEntityFactory
 {
 	/// <summary>
 	/// The GrantedItemType for Assets 
@@ -24,4 +24,7 @@ public interface IGrantedItemTypeEntityFactory
 	/// </summary>
 	/// <returns>The <see cref="T:Roblox.PremiumFeatures.IGrantedItemTypeEntity" /> with the given value, or null if none existed.</returns>
 	IGrantedItemTypeEntity GetByValue(string value);
+}
+
+
 }

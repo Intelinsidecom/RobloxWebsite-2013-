@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class AccountRecoveryResourceFactory
 
-internal static class AccountRecoveryResourceFactory
 {
 	public const string FullNamespace = "Authentication.AccountRecovery";
 
@@ -21,4 +21,7 @@ internal static class AccountRecoveryResourceFactory
 			_ => new AccountRecoveryResources_en_us(state), 
 		};
 	}
+}
+
+
 }

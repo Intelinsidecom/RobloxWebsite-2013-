@@ -1,11 +1,13 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.RealTimeNotificationsinternal {
+    class PubSubSubcriptionException : Exception
 
-namespace Roblox.RealTimeNotifications;
-
-internal class PubSubSubcriptionException : Exception
 {
 	public PubSubSubcriptionException(string message)
 		: base(message)
 	{
 	}
+}
+
+
 }

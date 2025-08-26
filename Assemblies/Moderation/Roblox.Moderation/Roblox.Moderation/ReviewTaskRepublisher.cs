@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.EventLog;
 using Roblox.Platform.Localization.Core;
+namespace Roblox.Moderationinternal {
+    class ReviewTaskRepublisher<TTask> : IReviewTaskRepublisher<TTask> where TTask : IReviewTask
 
-namespace Roblox.Platform.Moderation;
-
-internal class ReviewTaskRepublisher<TTask> : IReviewTaskRepublisher<TTask> where TTask : IReviewTask
 {
 	private readonly ILogger _Logger;
 
@@ -84,4 +83,7 @@ internal class ReviewTaskRepublisher<TTask> : IReviewTaskRepublisher<TTask> wher
 			_Logger.Info($"There were {tasksForLocaleIdentifier.Value.Count} tasks republished for the locale: {tasksForLocaleIdentifier.Key}");
 		}
 	}
+}
+
+
 }

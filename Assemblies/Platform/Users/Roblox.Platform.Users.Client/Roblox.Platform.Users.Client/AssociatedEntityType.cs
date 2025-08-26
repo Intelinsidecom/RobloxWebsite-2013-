@@ -1,7 +1,9 @@
-namespace Roblox.Users.Client;
-
-public enum AssociatedEntityType
+namespace Roblox.Platform.Users.Client
 {
-	User = 1,
-	Group
+    public enum AssociatedEntityType
+    {
+        User = 1,
+        Group
+    }
 }
+

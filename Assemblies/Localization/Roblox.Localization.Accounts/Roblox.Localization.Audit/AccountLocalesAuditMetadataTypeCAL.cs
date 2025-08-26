@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountLocalesAuditMetadataTypeCAL : IRobloxEntity<byte, AccountLocalesAuditMetadataTypeDAL>, ICacheableObject<byte>, ICacheableObject, IRemoteCacheableObject
 {
 	private AccountLocalesAuditMetadataTypeDAL _EntityDAL;
@@ -150,4 +149,7 @@ internal class AccountLocalesAuditMetadataTypeCAL : IRobloxEntity<byte, AccountL
 	{
 		return $"Value:{value}";
 	}
+}
+
+
 }

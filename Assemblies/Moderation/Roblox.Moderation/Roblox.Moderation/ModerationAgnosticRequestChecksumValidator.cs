@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Linq.Expressions;
 using System.Security.Cryptography;
 using System.Text;
 using Roblox.Configuration;
 using Roblox.Platform.Core;
 using Roblox.Platform.Moderation.Properties;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// Computes and validates checksum hash wich is related to moderation agnostic request data 
 /// </summary>
 public class ModerationAgnosticRequestChecksumValidator
@@ -58,4 +57,7 @@ public class ModerationAgnosticRequestChecksumValidator
 		string validChecksum = ComputeChecksumString(correspondingValue);
 		return specifiedChecksum == validChecksum;
 	}
+}
+
+
 }

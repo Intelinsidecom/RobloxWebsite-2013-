@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using ProtoBuf;
 using Roblox.GameInstances.Interfaces;
+namespace Roblox.Platform.GameInstances.Client {
+    [ProtoContract]
 
-namespace Roblox.GameInstances.Client;
-
-[ProtoContract]
 public class PlaySession : IPlaySession
 {
 	[ProtoMember(1)]
@@ -57,4 +56,7 @@ public class PlaySession : IPlaySession
 
 	[ProtoMember(17)]
 	public DetailedBotCheckSignals DetailedBotCheckSignals { get; set; }
+}
+
+
 }

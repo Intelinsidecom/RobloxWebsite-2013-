@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameFollowsResources_en_us : TranslationResourcesBase, IGameFollowsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameFollowsResources_en_us : TranslationResourcesBase, IGameFollowsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -168,4 +167,7 @@ internal class GameFollowsResources_en_us : TranslationResourcesBase, IGameFollo
 	{
 		return "Unfollow Game";
 	}
+}
+
+
 }

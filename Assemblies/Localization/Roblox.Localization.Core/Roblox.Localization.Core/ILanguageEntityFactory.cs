@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Coreinternal {
+    interface ILanguageEntityFactory
 
-internal interface ILanguageEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.Platform.Localization.Core.ILanguageEntity" /> by its ID.
@@ -34,8 +34,11 @@ internal interface ILanguageEntityFactory
 	/// Create language by name, native name and language code.
 	/// </summary>
 	/// <param name="name">name of the language, example - korean </param>
-	/// <param name="nativeName">native name of the language, example - 한국어 </param>
+	/// <param name="nativeName">native name of the language, example - í•œêµ­ì–´ </param>
 	/// <param name="languageCode">language code, example - ko </param>
 	/// <returns></returns>
 	ILanguageEntity Create(string name, string nativeName, string languageCode);
+}
+
+
 }

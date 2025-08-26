@@ -1,9 +1,11 @@
-using System.Collections.Generic;
+﻿using System;
+using Roblox.EventStream.WebEvents.EventArgs;
+using Roblox.EventStream.WebEvents;
 using Roblox.Time;
+using System.Collections.Generic;
+namespace Roblox.EventStream.WebEvents {
+    public class ChatAllActivityUsageEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class ChatAllActivityUsageEventArgs : WebEventArgs
 {
 	public UtcInstant EventTime { get; set; }
 
@@ -15,3 +17,11 @@ public class ChatAllActivityUsageEventArgs : WebEventArgs
 
 	public string DeviceType { get; set; }
 }
+
+
+}
+
+
+
+
+

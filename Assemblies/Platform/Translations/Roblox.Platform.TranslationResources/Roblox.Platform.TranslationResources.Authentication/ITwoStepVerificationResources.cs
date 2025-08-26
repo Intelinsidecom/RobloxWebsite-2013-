@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface ITwoStepVerificationResources : ITranslationResources
 
-public interface ITwoStepVerificationResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -308,4 +308,7 @@ public interface ITwoStepVerificationResources : ITranslationResources
 	/// English String: "Need help? Contact {supportLink}"
 	/// </summary>
 	string LabelNeedHelpContactSupport(string supportLink);
+}
+
+
 }

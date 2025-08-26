@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
 using Newtonsoft.Json;
 using Roblox.Amazon.Sqs;
 using Roblox.CatalogItemChangePublisher.Properties;
+namespace Roblox.Platform.CatalogItemChangePublisherpublic {
+    class CatalogItemChangePublisher : ICatalogItemChangePublisher
 
-namespace Roblox.CatalogItemChangePublisher;
-
-public class CatalogItemChangePublisher : ICatalogItemChangePublisher
 {
 	private static SqsBatchSender _DelayedBatchSender;
 
@@ -104,4 +103,7 @@ public class CatalogItemChangePublisher : ICatalogItemChangePublisher
 		string message = JsonConvert.SerializeObject(new CatalogItemChangeEvent(targetId, catalogItemType));
 		(useDelay ? _DelayedBatchSender : _BatchSender).SendMessage(message);
 	}
+}
+
+
 }

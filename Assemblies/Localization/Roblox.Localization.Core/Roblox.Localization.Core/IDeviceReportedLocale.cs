@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Core {
+    /// <summary>
 
-/// <summary>
 /// Represents a locale that was provided to roblox by a device/client by a user of the system.
 /// Does not necessarily correspond to any Supported Locale that Roblox uses in the system
 /// </summary>
@@ -25,4 +25,7 @@ public interface IDeviceReportedLocale
 	/// Supported locale associated with locale. Can be null
 	/// </summary>
 	ISupportedLocale SupportedLocale { get; }
+}
+
+
 }

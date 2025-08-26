@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ServerListResources_en_us : TranslationResourcesBase, IServerListResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ServerListResources_en_us : TranslationResourcesBase, IServerListResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -287,4 +286,7 @@ internal class ServerListResources_en_us : TranslationResourcesBase, IServerList
 	{
 		return "Slow Game";
 	}
+}
+
+
 }

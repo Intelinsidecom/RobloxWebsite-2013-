@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameLanguagesResources : ITranslationResources
 
-public interface IGameLanguagesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.AddLanguage"
@@ -67,4 +67,7 @@ public interface IGameLanguagesResources : ITranslationResources
 	/// English String: "All translations for this language will be deleted. This action is irreversible."
 	/// </summary>
 	string MessageDeleteLanguageWarning { get; }
+}
+
+
 }

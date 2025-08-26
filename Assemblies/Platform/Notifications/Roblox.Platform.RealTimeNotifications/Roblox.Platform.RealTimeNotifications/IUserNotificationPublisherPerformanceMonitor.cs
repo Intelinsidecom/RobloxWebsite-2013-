@@ -1,6 +1,6 @@
-namespace Roblox.RealTimeNotifications;
+﻿namespace Roblox.Platform.RealTimeNotifications {
+    /// <summary>
 
-/// <summary>
 /// Performance monitor for <see cref="T:Roblox.RealTimeNotifications.UserNotificationPublisher`1" />
 /// </summary>
 public interface IUserNotificationPublisherPerformanceMonitor
@@ -11,4 +11,7 @@ public interface IUserNotificationPublisherPerformanceMonitor
 	/// <param name="result"></param>
 	/// <param name="recipients"></param>
 	void LogUserNotificationPublishResult(UserNotificationPublishResult result, long recipients);
+}
+
+
 }

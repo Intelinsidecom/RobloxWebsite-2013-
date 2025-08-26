@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ItemConfigurationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,405 +10,405 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// Key: "Description.AllowCopying"
 	/// English String: "By switching on, you are granting every other user of Roblox the right to use (in various ways) the content you are now sharing. If you do not want to grant this right, please do not check this box. For more information about sharing content, please review the Roblox Terms of Use."
 	/// </summary>
-	public override string DescriptionAllowCopying => "若開啟此選項，您將授權其他 Roblox 使用者授以不同方式使用您現在分享的內容。若您不想進行授權，請勿勾選此方塊。若需更多資訊，請參考 Roblox 使用條款。";
+	public override string DescriptionAllowCopying => "è‹¥é–‹å•Ÿæ­¤é¸é …ï¼Œæ‚¨å°‡æŽˆæ¬Šå…¶ä»– Roblox ä½¿ç”¨è€…æŽˆä»¥ä¸åŒæ–¹å¼ä½¿ç”¨æ‚¨ç¾åœ¨åˆ†äº«çš„å…§å®¹ã€‚è‹¥æ‚¨ä¸æƒ³é€²è¡ŒæŽˆæ¬Šï¼Œè«‹å‹¿å‹¾é¸æ­¤æ–¹å¡Šã€‚è‹¥éœ€æ›´å¤šè³‡è¨Šï¼Œè«‹åƒè€ƒ Roblox ä½¿ç”¨æ¢æ¬¾ã€‚";
 
 	/// <summary>
 	/// Key: "Description.ArchiveWarning"
 	/// English String: "Archiving this asset will prevent it from being used in game. Archived assets can be restored."
 	/// </summary>
-	public override string DescriptionArchiveWarning => "封存素材將無法使用在遊戲裡。封存素材之後可以復原。";
+	public override string DescriptionArchiveWarning => "å°å­˜ç´ æå°‡ç„¡æ³•ä½¿ç”¨åœ¨éŠæˆ²è£¡ã€‚å°å­˜ç´ æä¹‹å¾Œå¯ä»¥å¾©åŽŸã€‚";
 
 	/// <summary>
 	/// Key: "Description.ClickToAddTag"
 	/// Hover text on the button that adds a tag to an item
 	/// English String: "Click to add tag"
 	/// </summary>
-	public override string DescriptionClickToAddTag => "按下新增標籤";
+	public override string DescriptionClickToAddTag => "æŒ‰ä¸‹æ–°å¢žæ¨™ç±¤";
 
 	/// <summary>
 	/// Key: "Description.ModeratorFileReview"
 	/// English String: "* Uploaded file will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionModeratorFileReview => "＊上傳的檔案將先由管理員審核，才會開放其他使用者檢視";
+	public override string DescriptionModeratorFileReview => "ï¼Šä¸Šå‚³çš„æª”æ¡ˆå°‡å…ˆç”±ç®¡ç†å“¡å¯©æ ¸ï¼Œæ‰æœƒé–‹æ”¾å…¶ä»–ä½¿ç”¨è€…æª¢è¦–";
 
 	/// <summary>
 	/// Key: "Description.ModeratorReview"
 	/// English String: "* Uploaded image will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionModeratorReview => "＊上傳的圖像將先由管理員審核，才會開放其他使用者檢視";
+	public override string DescriptionModeratorReview => "ï¼Šä¸Šå‚³çš„åœ–åƒå°‡å…ˆç”±ç®¡ç†å“¡å¯©æ ¸ï¼Œæ‰æœƒé–‹æ”¾å…¶ä»–ä½¿ç”¨è€…æª¢è¦–";
 
 	/// <summary>
 	/// Key: "Heading.Archive"
 	/// header text for section about archiving assets
 	/// English String: "Archive"
 	/// </summary>
-	public override string HeadingArchive => "封存";
+	public override string HeadingArchive => "å°å­˜";
 
 	/// <summary>
 	/// Key: "Heading.Configure"
 	/// English String: "Configure"
 	/// </summary>
-	public override string HeadingConfigure => "設定";
+	public override string HeadingConfigure => "è¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureItemTags"
 	/// Heading on Configure Tags modal
 	/// English String: "Configure Tags"
 	/// </summary>
-	public override string HeadingConfigureItemTags => "設定標籤";
+	public override string HeadingConfigureItemTags => "è¨­å®šæ¨™ç±¤";
 
 	/// <summary>
 	/// Key: "Heading.Create"
 	/// English String: "Create"
 	/// </summary>
-	public override string HeadingCreate => "創作";
+	public override string HeadingCreate => "å‰µä½œ";
 
 	/// <summary>
 	/// Key: "Heading.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string HeadingSettings => "設定";
+	public override string HeadingSettings => "è¨­å®š";
 
 	/// <summary>
 	/// Key: "Label.AllowCopying"
 	/// English String: "Allow Copying"
 	/// </summary>
-	public override string LabelAllowCopying => "允許複製";
+	public override string LabelAllowCopying => "å…è¨±è¤‡è£½";
 
 	/// <summary>
 	/// Key: "Label.Archive"
 	/// Text on button for archiving an asset. Part of speech: verb
 	/// English String: "Archive"
 	/// </summary>
-	public override string LabelArchive => "封存";
+	public override string LabelArchive => "å°å­˜";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "取消";
+	public override string LabelCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Label.Computer"
 	/// computer term
 	/// English String: "Computer"
 	/// </summary>
-	public override string LabelComputer => "電腦";
+	public override string LabelComputer => "é›»è…¦";
 
 	/// <summary>
 	/// Key: "Label.Created"
 	/// English String: "Created"
 	/// </summary>
-	public override string LabelCreated => "創作時間";
+	public override string LabelCreated => "å‰µä½œæ™‚é–“";
 
 	/// <summary>
 	/// Key: "Label.Current"
 	/// English String: "Current"
 	/// </summary>
-	public override string LabelCurrent => "目前";
+	public override string LabelCurrent => "ç›®å‰";
 
 	/// <summary>
 	/// Key: "Label.CurrentPublishedVersion"
 	/// English String: "Current published version"
 	/// </summary>
-	public override string LabelCurrentPublishedVersion => "目前發佈版本";
+	public override string LabelCurrentPublishedVersion => "ç›®å‰ç™¼ä½ˆç‰ˆæœ¬";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelDescription => "說明";
+	public override string LabelDescription => "èªªæ˜Ž";
 
 	/// <summary>
 	/// Key: "Label.Device"
 	/// device term
 	/// English String: "Device"
 	/// </summary>
-	public override string LabelDevice => "裝置";
+	public override string LabelDevice => "è£ç½®";
 
 	/// <summary>
 	/// Key: "Label.EnterItemTag"
 	/// Placeholder for input field
 	/// English String: "Enter tag here..."
 	/// </summary>
-	public override string LabelEnterItemTag => "在此輸入標籤…";
+	public override string LabelEnterItemTag => "åœ¨æ­¤è¼¸å…¥æ¨™ç±¤â€¦";
 
 	/// <summary>
 	/// Key: "Label.Game"
 	/// English String: "Game"
 	/// </summary>
-	public override string LabelGame => "遊戲";
+	public override string LabelGame => "éŠæˆ²";
 
 	/// <summary>
 	/// Key: "Label.GamePass"
 	/// label
 	/// English String: "Game Pass"
 	/// </summary>
-	public override string LabelGamePass => "遊戲證";
+	public override string LabelGamePass => "éŠæˆ²è­‰";
 
 	/// <summary>
 	/// Key: "Label.General"
 	/// English String: "General"
 	/// </summary>
-	public override string LabelGeneral => "一般";
+	public override string LabelGeneral => "ä¸€èˆ¬";
 
 	/// <summary>
 	/// Key: "Label.GoToDetails"
 	/// Link to the item details page from the configure page
 	/// English String: "Go to Details"
 	/// </summary>
-	public override string LabelGoToDetails => "前往詳細資料";
+	public override string LabelGoToDetails => "å‰å¾€è©³ç´°è³‡æ–™";
 
 	/// <summary>
 	/// Key: "Label.ItemActive"
 	/// English String: "Item is Active"
 	/// </summary>
-	public override string LabelItemActive => "道具已啟用";
+	public override string LabelItemActive => "é“å…·å·²å•Ÿç”¨";
 
 	/// <summary>
 	/// Key: "Label.ItemForSale"
 	/// English String: "Item for Sale"
 	/// </summary>
-	public override string LabelItemForSale => "道具販賣中";
+	public override string LabelItemForSale => "é“å…·è²©è³£ä¸­";
 
 	/// <summary>
 	/// Key: "Label.LastUpdated"
 	/// English String: "Last Updated"
 	/// </summary>
-	public override string LabelLastUpdated => "最後更新";
+	public override string LabelLastUpdated => "æœ€å¾Œæ›´æ–°";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
 	/// English String: "Learn more"
 	/// </summary>
-	public override string LabelLearnMore => "了解更多";
+	public override string LabelLearnMore => "äº†è§£æ›´å¤š";
 
 	/// <summary>
 	/// Key: "Label.MarketplaceFee"
 	/// English String: "Marketplace Fee"
 	/// </summary>
-	public override string LabelMarketplaceFee => "市集費";
+	public override string LabelMarketplaceFee => "å¸‚é›†è²»";
 
 	/// <summary>
 	/// Key: "Label.Name"
 	/// English String: "Name"
 	/// </summary>
-	public override string LabelName => "名稱";
+	public override string LabelName => "åç¨±";
 
 	/// <summary>
 	/// Key: "Label.OpenForComments"
 	/// English String: "Open for Comments"
 	/// </summary>
-	public override string LabelOpenForComments => "開放留言";
+	public override string LabelOpenForComments => "é–‹æ”¾ç•™è¨€";
 
 	/// <summary>
 	/// Key: "Label.Preview"
 	/// English String: "Preview"
 	/// </summary>
-	public override string LabelPreview => "預覽";
+	public override string LabelPreview => "é è¦½";
 
 	/// <summary>
 	/// Key: "Label.Price"
 	/// English String: "Price"
 	/// </summary>
-	public override string LabelPrice => "價格";
+	public override string LabelPrice => "åƒ¹æ ¼";
 
 	/// <summary>
 	/// Key: "Label.Profit"
 	/// English String: "You Earn"
 	/// </summary>
-	public override string LabelProfit => "您賺取";
+	public override string LabelProfit => "æ‚¨è³ºå–";
 
 	/// <summary>
 	/// Key: "Label.Restore"
 	/// English String: "Restore"
 	/// </summary>
-	public override string LabelRestore => "復原";
+	public override string LabelRestore => "å¾©åŽŸ";
 
 	/// <summary>
 	/// Key: "Label.RevertVersion"
 	/// English String: "Revert to this version"
 	/// </summary>
-	public override string LabelRevertVersion => "還原到此版本";
+	public override string LabelRevertVersion => "é‚„åŽŸåˆ°æ­¤ç‰ˆæœ¬";
 
 	/// <summary>
 	/// Key: "Label.Sales"
 	/// English String: "Sales"
 	/// </summary>
-	public override string LabelSales => "買賣";
+	public override string LabelSales => "è²·è³£";
 
 	/// <summary>
 	/// Key: "Label.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string LabelSave => "儲存";
+	public override string LabelSave => "å„²å­˜";
 
 	/// <summary>
 	/// Key: "Label.SelectType"
 	/// Placeholder for dropdown in create asset page. Options are image, mesh, hair accessory, etc
 	/// English String: "Select a type"
 	/// </summary>
-	public override string LabelSelectType => "選擇類型";
+	public override string LabelSelectType => "é¸æ“‡é¡žåž‹";
 
 	/// <summary>
 	/// Key: "Label.Tags"
 	/// The label next to a list of item tags in the item configuration page
 	/// English String: "Tags"
 	/// </summary>
-	public override string LabelTags => "標籤";
+	public override string LabelTags => "æ¨™ç±¤";
 
 	/// <summary>
 	/// Key: "Label.Type"
 	/// English String: "Type"
 	/// </summary>
-	public override string LabelType => "類型";
+	public override string LabelType => "é¡žåž‹";
 
 	/// <summary>
 	/// Key: "Label.Updated"
 	/// English String: "Updated"
 	/// </summary>
-	public override string LabelUpdated => "更新時間";
+	public override string LabelUpdated => "æ›´æ–°æ™‚é–“";
 
 	/// <summary>
 	/// Key: "Label.Version"
 	/// English String: "Version"
 	/// </summary>
-	public override string LabelVersion => "版本";
+	public override string LabelVersion => "ç‰ˆæœ¬";
 
 	/// <summary>
 	/// Key: "Label.Versions"
 	/// English String: "Versions"
 	/// </summary>
-	public override string LabelVersions => "版本";
+	public override string LabelVersions => "ç‰ˆæœ¬";
 
 	/// <summary>
 	/// Key: "Message.ArchiveError"
 	/// English String: "Failed to archive"
 	/// </summary>
-	public override string MessageArchiveError => "封存失敗";
+	public override string MessageArchiveError => "å°å­˜å¤±æ•—";
 
 	/// <summary>
 	/// Key: "Message.ArchiveSuccess"
 	/// English String: "Successfully archived"
 	/// </summary>
-	public override string MessageArchiveSuccess => "封存成功";
+	public override string MessageArchiveSuccess => "å°å­˜æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Message.DescriptionFieldEmptyError"
 	/// English String: "Description cannot be empty"
 	/// </summary>
-	public override string MessageDescriptionFieldEmptyError => "說明不可空白";
+	public override string MessageDescriptionFieldEmptyError => "èªªæ˜Žä¸å¯ç©ºç™½";
 
 	/// <summary>
 	/// Key: "Message.DescriptionTooLongError"
 	/// error message
 	/// English String: "The description is too long."
 	/// </summary>
-	public override string MessageDescriptionTooLongError => "說明過長。";
+	public override string MessageDescriptionTooLongError => "èªªæ˜ŽéŽé•·ã€‚";
 
 	/// <summary>
 	/// Key: "Message.FilteringServiceUnavailableError"
 	/// error message
 	/// English String: "Text filtering service is unavailable at this time."
 	/// </summary>
-	public override string MessageFilteringServiceUnavailableError => "目前無法使用文字過濾服務。";
+	public override string MessageFilteringServiceUnavailableError => "ç›®å‰ç„¡æ³•ä½¿ç”¨æ–‡å­—éŽæ¿¾æœå‹™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GamePassConfigDisabledError"
 	/// error message
 	/// English String: "Game Pass configuration is not enabled yet."
 	/// </summary>
-	public override string MessageGamePassConfigDisabledError => "遊戲證設定尚未啟用。";
+	public override string MessageGamePassConfigDisabledError => "éŠæˆ²è­‰è¨­å®šå°šæœªå•Ÿç”¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.GamePassNotFoundError"
 	/// errormessage
 	/// English String: "The Game Pass does not exist."
 	/// </summary>
-	public override string MessageGamePassNotFoundError => "此遊戲證不存在。";
+	public override string MessageGamePassNotFoundError => "æ­¤éŠæˆ²è­‰ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.IconUpdateFailed"
 	/// error message
 	/// English String: "Failed to update icon."
 	/// </summary>
-	public override string MessageIconUpdateFailed => "無法更新圖示。";
+	public override string MessageIconUpdateFailed => "ç„¡æ³•æ›´æ–°åœ–ç¤ºã€‚";
 
 	/// <summary>
 	/// Key: "Message.ImageSavingFailedError"
 	/// error message
 	/// English String: "Failed to save image. Please try again later."
 	/// </summary>
-	public override string MessageImageSavingFailedError => "無法儲存圖像，請稍後再試。";
+	public override string MessageImageSavingFailedError => "ç„¡æ³•å„²å­˜åœ–åƒï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.InappropriateTextError"
 	/// error message
 	/// English String: "The name or description contains inappropriate text."
 	/// </summary>
-	public override string MessageInappropriateTextError => "名稱或說明中含有不當文字。";
+	public override string MessageInappropriateTextError => "åç¨±æˆ–èªªæ˜Žä¸­å«æœ‰ä¸ç•¶æ–‡å­—ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NameFieldEmpty"
 	/// English String: "Name cannot be empty"
 	/// </summary>
-	public override string MessageNameFieldEmpty => "名稱不可空白";
+	public override string MessageNameFieldEmpty => "åç¨±ä¸å¯ç©ºç™½";
 
 	/// <summary>
 	/// Key: "Message.NameRequiredError"
 	/// error message
 	/// English String: "The name cannot be empty."
 	/// </summary>
-	public override string MessageNameRequiredError => "名稱不可空白。";
+	public override string MessageNameRequiredError => "åç¨±ä¸å¯ç©ºç™½ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NoTagsFound"
 	/// English String: "No tags found"
 	/// </summary>
-	public override string MessageNoTagsFound => "找不到標籤";
+	public override string MessageNoTagsFound => "æ‰¾ä¸åˆ°æ¨™ç±¤";
 
 	/// <summary>
 	/// Key: "Message.RestoreError"
 	/// English String: "Failed to restore"
 	/// </summary>
-	public override string MessageRestoreError => "復原失敗";
+	public override string MessageRestoreError => "å¾©åŽŸå¤±æ•—";
 
 	/// <summary>
 	/// Key: "Message.RestoreSuccess"
 	/// English String: "Successfully restored"
 	/// </summary>
-	public override string MessageRestoreSuccess => "復原成功";
+	public override string MessageRestoreSuccess => "å¾©åŽŸæˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Message.SaveError"
 	/// English String: "Something failed. Please try again later"
 	/// </summary>
-	public override string MessageSaveError => "發生錯誤，請稍後再試";
+	public override string MessageSaveError => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦";
 
 	/// <summary>
 	/// Key: "Message.TooManyUploads"
 	/// error message
 	/// English String: "You are uploading too much. Please try again later."
 	/// </summary>
-	public override string MessageTooManyUploads => "您的上傳次數過多，請稍後再試。";
+	public override string MessageTooManyUploads => "æ‚¨çš„ä¸Šå‚³æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UpdatePriceError"
 	/// English String: "Failed to update price"
 	/// </summary>
-	public override string MessageUpdatePriceError => "無法更新價格";
+	public override string MessageUpdatePriceError => "ç„¡æ³•æ›´æ–°åƒ¹æ ¼";
 
 	/// <summary>
 	/// Key: "Message.UpdatePriceSuccess"
 	/// English String: "Successfully updated price"
 	/// </summary>
-	public override string MessageUpdatePriceSuccess => "成功更新價格";
+	public override string MessageUpdatePriceSuccess => "æˆåŠŸæ›´æ–°åƒ¹æ ¼";
 
 	/// <summary>
 	/// Key: "Message.UpdateSuccess"
 	/// English String: "Successfully updated"
 	/// </summary>
-	public override string MessageUpdateSuccess => "更新成功";
+	public override string MessageUpdateSuccess => "æ›´æ–°æˆåŠŸ";
 
 	public ItemConfigurationResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -421,12 +421,12 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAcceptableFileFormats(string fileExtensions)
 	{
-		return $"* 可接受檔案類型：{fileExtensions}";
+		return $"* å¯æŽ¥å—æª”æ¡ˆé¡žåž‹ï¼š{fileExtensions}";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFileFormats()
 	{
-		return "* 可接受檔案類型：{fileExtensions}";
+		return "* å¯æŽ¥å—æª”æ¡ˆé¡žåž‹ï¼š{fileExtensions}";
 	}
 
 	/// <summary>
@@ -435,17 +435,17 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAcceptableFiles(string lineBreak, string fileExtensions, string fileSizes)
 	{
-		return $"* 可接受的檔案{lineBreak}格式：{fileExtensions}\u3000｜\u3000大小：{fileSizes}";
+		return $"* å¯æŽ¥å—çš„æª”æ¡ˆ{lineBreak}æ ¼å¼ï¼š{fileExtensions}\u3000ï½œ\u3000å¤§å°ï¼š{fileSizes}";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFiles()
 	{
-		return "* 可接受的檔案{lineBreak}格式：{fileExtensions}\u3000｜\u3000大小：{fileSizes}";
+		return "* å¯æŽ¥å—çš„æª”æ¡ˆ{lineBreak}æ ¼å¼ï¼š{fileExtensions}\u3000ï½œ\u3000å¤§å°ï¼š{fileSizes}";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopying()
 	{
-		return "若開啟此選項，您將授權其他 Roblox 使用者授以不同方式使用您現在分享的內容。若您不想進行授權，請勿勾選此方塊。若需更多資訊，請參考 Roblox 使用條款。";
+		return "è‹¥é–‹å•Ÿæ­¤é¸é …ï¼Œæ‚¨å°‡æŽˆæ¬Šå…¶ä»– Roblox ä½¿ç”¨è€…æŽˆä»¥ä¸åŒæ–¹å¼ä½¿ç”¨æ‚¨ç¾åœ¨åˆ†äº«çš„å…§å®¹ã€‚è‹¥æ‚¨ä¸æƒ³é€²è¡ŒæŽˆæ¬Šï¼Œè«‹å‹¿å‹¾é¸æ­¤æ–¹å¡Šã€‚è‹¥éœ€æ›´å¤šè³‡è¨Šï¼Œè«‹åƒè€ƒ Roblox ä½¿ç”¨æ¢æ¬¾ã€‚";
 	}
 
 	/// <summary>
@@ -454,22 +454,22 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAllowCopyingWarning(string linkStart, string linkEnd)
 	{
-		return $"若開啟此選項，您將授權其他 Roblox 使用者授以不同方式使用您現在分享的內容。若您不想進行授權，請勿勾選此方塊。若需更多資訊，請參考 Roblox {linkStart}使用條款{linkEnd}。";
+		return $"è‹¥é–‹å•Ÿæ­¤é¸é …ï¼Œæ‚¨å°‡æŽˆæ¬Šå…¶ä»– Roblox ä½¿ç”¨è€…æŽˆä»¥ä¸åŒæ–¹å¼ä½¿ç”¨æ‚¨ç¾åœ¨åˆ†äº«çš„å…§å®¹ã€‚è‹¥æ‚¨ä¸æƒ³é€²è¡ŒæŽˆæ¬Šï¼Œè«‹å‹¿å‹¾é¸æ­¤æ–¹å¡Šã€‚è‹¥éœ€æ›´å¤šè³‡è¨Šï¼Œè«‹åƒè€ƒ Roblox {linkStart}ä½¿ç”¨æ¢æ¬¾{linkEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopyingWarning()
 	{
-		return "若開啟此選項，您將授權其他 Roblox 使用者授以不同方式使用您現在分享的內容。若您不想進行授權，請勿勾選此方塊。若需更多資訊，請參考 Roblox {linkStart}使用條款{linkEnd}。";
+		return "è‹¥é–‹å•Ÿæ­¤é¸é …ï¼Œæ‚¨å°‡æŽˆæ¬Šå…¶ä»– Roblox ä½¿ç”¨è€…æŽˆä»¥ä¸åŒæ–¹å¼ä½¿ç”¨æ‚¨ç¾åœ¨åˆ†äº«çš„å…§å®¹ã€‚è‹¥æ‚¨ä¸æƒ³é€²è¡ŒæŽˆæ¬Šï¼Œè«‹å‹¿å‹¾é¸æ­¤æ–¹å¡Šã€‚è‹¥éœ€æ›´å¤šè³‡è¨Šï¼Œè«‹åƒè€ƒ Roblox {linkStart}ä½¿ç”¨æ¢æ¬¾{linkEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionArchiveWarning()
 	{
-		return "封存素材將無法使用在遊戲裡。封存素材之後可以復原。";
+		return "å°å­˜ç´ æå°‡ç„¡æ³•ä½¿ç”¨åœ¨éŠæˆ²è£¡ã€‚å°å­˜ç´ æä¹‹å¾Œå¯ä»¥å¾©åŽŸã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionClickToAddTag()
 	{
-		return "按下新增標籤";
+		return "æŒ‰ä¸‹æ–°å¢žæ¨™ç±¤";
 	}
 
 	/// <summary>
@@ -478,22 +478,22 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionMarketplaceExplanation(string marketplaceFeePercentage, string minimumPrice)
 	{
-		return $"（Roblox 抽取 {marketplaceFeePercentage}%，最低 {minimumPrice}）";
+		return $"ï¼ˆRoblox æŠ½å– {marketplaceFeePercentage}%ï¼Œæœ€ä½Ž {minimumPrice}ï¼‰";
 	}
 
 	protected override string _GetTemplateForDescriptionMarketplaceExplanation()
 	{
-		return "（Roblox 抽取 {marketplaceFeePercentage}%，最低 {minimumPrice}）";
+		return "ï¼ˆRoblox æŠ½å– {marketplaceFeePercentage}%ï¼Œæœ€ä½Ž {minimumPrice}ï¼‰";
 	}
 
 	protected override string _GetTemplateForDescriptionModeratorFileReview()
 	{
-		return "＊上傳的檔案將先由管理員審核，才會開放其他使用者檢視";
+		return "ï¼Šä¸Šå‚³çš„æª”æ¡ˆå°‡å…ˆç”±ç®¡ç†å“¡å¯©æ ¸ï¼Œæ‰æœƒé–‹æ”¾å…¶ä»–ä½¿ç”¨è€…æª¢è¦–";
 	}
 
 	protected override string _GetTemplateForDescriptionModeratorReview()
 	{
-		return "＊上傳的圖像將先由管理員審核，才會開放其他使用者檢視";
+		return "ï¼Šä¸Šå‚³çš„åœ–åƒå°‡å…ˆç”±ç®¡ç†å“¡å¯©æ ¸ï¼Œæ‰æœƒé–‹æ”¾å…¶ä»–ä½¿ç”¨è€…æª¢è¦–";
 	}
 
 	/// <summary>
@@ -503,32 +503,32 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionSelectItemTags(string itemTagLimit)
 	{
-		return $"最多可選擇 {itemTagLimit} 個標籤。";
+		return $"æœ€å¤šå¯é¸æ“‡ {itemTagLimit} å€‹æ¨™ç±¤ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSelectItemTags()
 	{
-		return "最多可選擇 {itemTagLimit} 個標籤。";
+		return "æœ€å¤šå¯é¸æ“‡ {itemTagLimit} å€‹æ¨™ç±¤ã€‚";
 	}
 
 	public override string DescriptionVerifiedCreatorEmail(string linkStart, string linkEnd)
 	{
-		return $"若要在市集分享內容，您必須在帳號新增並驗證一個電子郵件地址。此動作可以在{linkStart}帳號設定{linkEnd}進行。";
+		return $"è‹¥è¦åœ¨å¸‚é›†åˆ†äº«å…§å®¹ï¼Œæ‚¨å¿…é ˆåœ¨å¸³è™Ÿæ–°å¢žä¸¦é©—è­‰ä¸€å€‹é›»å­éƒµä»¶åœ°å€ã€‚æ­¤å‹•ä½œå¯ä»¥åœ¨{linkStart}å¸³è™Ÿè¨­å®š{linkEnd}é€²è¡Œã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionVerifiedCreatorEmail()
 	{
-		return "若要在市集分享內容，您必須在帳號新增並驗證一個電子郵件地址。此動作可以在{linkStart}帳號設定{linkEnd}進行。";
+		return "è‹¥è¦åœ¨å¸‚é›†åˆ†äº«å…§å®¹ï¼Œæ‚¨å¿…é ˆåœ¨å¸³è™Ÿæ–°å¢žä¸¦é©—è­‰ä¸€å€‹é›»å­éƒµä»¶åœ°å€ã€‚æ­¤å‹•ä½œå¯ä»¥åœ¨{linkStart}å¸³è™Ÿè¨­å®š{linkEnd}é€²è¡Œã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingArchive()
 	{
-		return "封存";
+		return "å°å­˜";
 	}
 
 	protected override string _GetTemplateForHeadingConfigure()
 	{
-		return "設定";
+		return "è¨­å®š";
 	}
 
 	/// <summary>
@@ -537,77 +537,77 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string HeadingConfigureItem(string itemType)
 	{
-		return $"{itemType}設定";
+		return $"{itemType}è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureItem()
 	{
-		return "{itemType}設定";
+		return "{itemType}è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureItemTags()
 	{
-		return "設定標籤";
+		return "è¨­å®šæ¨™ç±¤";
 	}
 
 	protected override string _GetTemplateForHeadingCreate()
 	{
-		return "創作";
+		return "å‰µä½œ";
 	}
 
 	protected override string _GetTemplateForHeadingSettings()
 	{
-		return "設定";
+		return "è¨­å®š";
 	}
 
 	protected override string _GetTemplateForLabelAllowCopying()
 	{
-		return "允許複製";
+		return "å…è¨±è¤‡è£½";
 	}
 
 	protected override string _GetTemplateForLabelArchive()
 	{
-		return "封存";
+		return "å°å­˜";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForLabelComputer()
 	{
-		return "電腦";
+		return "é›»è…¦";
 	}
 
 	protected override string _GetTemplateForLabelCreated()
 	{
-		return "創作時間";
+		return "å‰µä½œæ™‚é–“";
 	}
 
 	protected override string _GetTemplateForLabelCurrent()
 	{
-		return "目前";
+		return "ç›®å‰";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPublishedVersion()
 	{
-		return "目前發佈版本";
+		return "ç›®å‰ç™¼ä½ˆç‰ˆæœ¬";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "說明";
+		return "èªªæ˜Ž";
 	}
 
 	protected override string _GetTemplateForLabelDevice()
 	{
-		return "裝置";
+		return "è£ç½®";
 	}
 
 	protected override string _GetTemplateForLabelEnterItemTag()
 	{
-		return "在此輸入標籤…";
+		return "åœ¨æ­¤è¼¸å…¥æ¨™ç±¤â€¦";
 	}
 
 	/// <summary>
@@ -616,142 +616,142 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string LabelForItem(string itemType)
 	{
-		return $"{itemType}用";
+		return $"{itemType}ç”¨";
 	}
 
 	protected override string _GetTemplateForLabelForItem()
 	{
-		return "{itemType}用";
+		return "{itemType}ç”¨";
 	}
 
 	protected override string _GetTemplateForLabelGame()
 	{
-		return "遊戲";
+		return "éŠæˆ²";
 	}
 
 	protected override string _GetTemplateForLabelGamePass()
 	{
-		return "遊戲證";
+		return "éŠæˆ²è­‰";
 	}
 
 	protected override string _GetTemplateForLabelGeneral()
 	{
-		return "一般";
+		return "ä¸€èˆ¬";
 	}
 
 	protected override string _GetTemplateForLabelGoToDetails()
 	{
-		return "前往詳細資料";
+		return "å‰å¾€è©³ç´°è³‡æ–™";
 	}
 
 	protected override string _GetTemplateForLabelItemActive()
 	{
-		return "道具已啟用";
+		return "é“å…·å·²å•Ÿç”¨";
 	}
 
 	protected override string _GetTemplateForLabelItemForSale()
 	{
-		return "道具販賣中";
+		return "é“å…·è²©è³£ä¸­";
 	}
 
 	protected override string _GetTemplateForLabelLastUpdated()
 	{
-		return "最後更新";
+		return "æœ€å¾Œæ›´æ–°";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
 	{
-		return "了解更多";
+		return "äº†è§£æ›´å¤š";
 	}
 
 	protected override string _GetTemplateForLabelMarketplaceFee()
 	{
-		return "市集費";
+		return "å¸‚é›†è²»";
 	}
 
 	protected override string _GetTemplateForLabelName()
 	{
-		return "名稱";
+		return "åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelOpenForComments()
 	{
-		return "開放留言";
+		return "é–‹æ”¾ç•™è¨€";
 	}
 
 	protected override string _GetTemplateForLabelPreview()
 	{
-		return "預覽";
+		return "é è¦½";
 	}
 
 	protected override string _GetTemplateForLabelPrice()
 	{
-		return "價格";
+		return "åƒ¹æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelProfit()
 	{
-		return "您賺取";
+		return "æ‚¨è³ºå–";
 	}
 
 	protected override string _GetTemplateForLabelRestore()
 	{
-		return "復原";
+		return "å¾©åŽŸ";
 	}
 
 	protected override string _GetTemplateForLabelRevertVersion()
 	{
-		return "還原到此版本";
+		return "é‚„åŽŸåˆ°æ­¤ç‰ˆæœ¬";
 	}
 
 	protected override string _GetTemplateForLabelSales()
 	{
-		return "買賣";
+		return "è²·è³£";
 	}
 
 	protected override string _GetTemplateForLabelSave()
 	{
-		return "儲存";
+		return "å„²å­˜";
 	}
 
 	protected override string _GetTemplateForLabelSelectType()
 	{
-		return "選擇類型";
+		return "é¸æ“‡é¡žåž‹";
 	}
 
 	protected override string _GetTemplateForLabelTags()
 	{
-		return "標籤";
+		return "æ¨™ç±¤";
 	}
 
 	protected override string _GetTemplateForLabelType()
 	{
-		return "類型";
+		return "é¡žåž‹";
 	}
 
 	protected override string _GetTemplateForLabelUpdated()
 	{
-		return "更新時間";
+		return "æ›´æ–°æ™‚é–“";
 	}
 
 	protected override string _GetTemplateForLabelVersion()
 	{
-		return "版本";
+		return "ç‰ˆæœ¬";
 	}
 
 	protected override string _GetTemplateForLabelVersions()
 	{
-		return "版本";
+		return "ç‰ˆæœ¬";
 	}
 
 	protected override string _GetTemplateForMessageArchiveError()
 	{
-		return "封存失敗";
+		return "å°å­˜å¤±æ•—";
 	}
 
 	protected override string _GetTemplateForMessageArchiveSuccess()
 	{
-		return "封存成功";
+		return "å°å­˜æˆåŠŸ";
 	}
 
 	/// <summary>
@@ -760,17 +760,17 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageDescriptionFieldEmpty(string maxDescriptionLength)
 	{
-		return $"{maxDescriptionLength} 字元上限";
+		return $"{maxDescriptionLength} å­—å…ƒä¸Šé™";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionFieldEmpty()
 	{
-		return "{maxDescriptionLength} 字元上限";
+		return "{maxDescriptionLength} å­—å…ƒä¸Šé™";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionFieldEmptyError()
 	{
-		return "說明不可空白";
+		return "èªªæ˜Žä¸å¯ç©ºç™½";
 	}
 
 	/// <summary>
@@ -779,47 +779,47 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageDescriptionFieldPopulated(string descriptionLength, string maxDescriptionLength)
 	{
-		return $"{descriptionLength}/{maxDescriptionLength} 個字元";
+		return $"{descriptionLength}/{maxDescriptionLength} å€‹å­—å…ƒ";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionFieldPopulated()
 	{
-		return "{descriptionLength}/{maxDescriptionLength} 個字元";
+		return "{descriptionLength}/{maxDescriptionLength} å€‹å­—å…ƒ";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionTooLongError()
 	{
-		return "說明過長。";
+		return "èªªæ˜ŽéŽé•·ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageFilteringServiceUnavailableError()
 	{
-		return "目前無法使用文字過濾服務。";
+		return "ç›®å‰ç„¡æ³•ä½¿ç”¨æ–‡å­—éŽæ¿¾æœå‹™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGamePassConfigDisabledError()
 	{
-		return "遊戲證設定尚未啟用。";
+		return "éŠæˆ²è­‰è¨­å®šå°šæœªå•Ÿç”¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageGamePassNotFoundError()
 	{
-		return "此遊戲證不存在。";
+		return "æ­¤éŠæˆ²è­‰ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageIconUpdateFailed()
 	{
-		return "無法更新圖示。";
+		return "ç„¡æ³•æ›´æ–°åœ–ç¤ºã€‚";
 	}
 
 	protected override string _GetTemplateForMessageImageSavingFailedError()
 	{
-		return "無法儲存圖像，請稍後再試。";
+		return "ç„¡æ³•å„²å­˜åœ–åƒï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInappropriateTextError()
 	{
-		return "名稱或說明中含有不當文字。";
+		return "åç¨±æˆ–èªªæ˜Žä¸­å«æœ‰ä¸ç•¶æ–‡å­—ã€‚";
 	}
 
 	/// <summary>
@@ -828,17 +828,17 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageMinimumPrice(string minimumPrice)
 	{
-		return $"價格無法低於最低價格 {minimumPrice}";
+		return $"åƒ¹æ ¼ç„¡æ³•ä½Žæ–¼æœ€ä½Žåƒ¹æ ¼ {minimumPrice}";
 	}
 
 	protected override string _GetTemplateForMessageMinimumPrice()
 	{
-		return "價格無法低於最低價格 {minimumPrice}";
+		return "åƒ¹æ ¼ç„¡æ³•ä½Žæ–¼æœ€ä½Žåƒ¹æ ¼ {minimumPrice}";
 	}
 
 	protected override string _GetTemplateForMessageNameFieldEmpty()
 	{
-		return "名稱不可空白";
+		return "åç¨±ä¸å¯ç©ºç™½";
 	}
 
 	/// <summary>
@@ -847,32 +847,32 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageNameFieldPopulated(string nameLength, string maxNameLength)
 	{
-		return $"{nameLength}/{maxNameLength} 個字元";
+		return $"{nameLength}/{maxNameLength} å€‹å­—å…ƒ";
 	}
 
 	protected override string _GetTemplateForMessageNameFieldPopulated()
 	{
-		return "{nameLength}/{maxNameLength} 個字元";
+		return "{nameLength}/{maxNameLength} å€‹å­—å…ƒ";
 	}
 
 	protected override string _GetTemplateForMessageNameRequiredError()
 	{
-		return "名稱不可空白。";
+		return "åç¨±ä¸å¯ç©ºç™½ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNoTagsFound()
 	{
-		return "找不到標籤";
+		return "æ‰¾ä¸åˆ°æ¨™ç±¤";
 	}
 
 	protected override string _GetTemplateForMessageRestoreError()
 	{
-		return "復原失敗";
+		return "å¾©åŽŸå¤±æ•—";
 	}
 
 	protected override string _GetTemplateForMessageRestoreSuccess()
 	{
-		return "復原成功";
+		return "å¾©åŽŸæˆåŠŸ";
 	}
 
 	/// <summary>
@@ -881,12 +881,12 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageRevertError(string versionNumber)
 	{
-		return $"無法還原到 {versionNumber}";
+		return $"ç„¡æ³•é‚„åŽŸåˆ° {versionNumber}";
 	}
 
 	protected override string _GetTemplateForMessageRevertError()
 	{
-		return "無法還原到 {versionNumber}";
+		return "ç„¡æ³•é‚„åŽŸåˆ° {versionNumber}";
 	}
 
 	/// <summary>
@@ -895,36 +895,39 @@ internal class ItemConfigurationResources_zh_tw : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageRevertSuccess(string versionNumber)
 	{
-		return $"成功還原到 {versionNumber}";
+		return $"æˆåŠŸé‚„åŽŸåˆ° {versionNumber}";
 	}
 
 	protected override string _GetTemplateForMessageRevertSuccess()
 	{
-		return "成功還原到 {versionNumber}";
+		return "æˆåŠŸé‚„åŽŸåˆ° {versionNumber}";
 	}
 
 	protected override string _GetTemplateForMessageSaveError()
 	{
-		return "發生錯誤，請稍後再試";
+		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦";
 	}
 
 	protected override string _GetTemplateForMessageTooManyUploads()
 	{
-		return "您的上傳次數過多，請稍後再試。";
+		return "æ‚¨çš„ä¸Šå‚³æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUpdatePriceError()
 	{
-		return "無法更新價格";
+		return "ç„¡æ³•æ›´æ–°åƒ¹æ ¼";
 	}
 
 	protected override string _GetTemplateForMessageUpdatePriceSuccess()
 	{
-		return "成功更新價格";
+		return "æˆåŠŸæ›´æ–°åƒ¹æ ¼";
 	}
 
 	protected override string _GetTemplateForMessageUpdateSuccess()
 	{
-		return "更新成功";
+		return "æ›´æ–°æˆåŠŸ";
 	}
+}
+
+
 }

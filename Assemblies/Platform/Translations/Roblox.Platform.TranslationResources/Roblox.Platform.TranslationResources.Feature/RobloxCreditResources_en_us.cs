@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class RobloxCreditResources_en_us : TranslationResourcesBase, IRobloxCreditResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class RobloxCreditResources_en_us : TranslationResourcesBase, IRobloxCreditResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -39,9 +38,9 @@ internal class RobloxCreditResources_en_us : TranslationResourcesBase, IRobloxCr
 
 	/// <summary>
 	/// Key: "Message.FailedGrantingRobux"
-	/// English String: "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
+	/// English String: "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
 	/// </summary>
-	public virtual string MessageFailedGrantingRobux => "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux.";
+	public virtual string MessageFailedGrantingRobux => "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux.";
 
 	public RobloxCreditResources_en_us(TranslationResourceState state)
 		: base(state)
@@ -172,7 +171,7 @@ internal class RobloxCreditResources_en_us : TranslationResourcesBase, IRobloxCr
 
 	protected virtual string _GetTemplateForMessageFailedGrantingRobux()
 	{
-		return "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux.";
+		return "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux.";
 	}
 
 	/// <summary>
@@ -188,4 +187,7 @@ internal class RobloxCreditResources_en_us : TranslationResourcesBase, IRobloxCr
 	{
 		return "You've successfully redeemed {robuxAmount} Robux!";
 	}
+}
+
+
 }

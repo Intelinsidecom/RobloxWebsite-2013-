@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface ISignUpResources : ITranslationResources
 
-public interface ISignUpResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.CreateAccount"
@@ -560,4 +560,7 @@ public interface ISignUpResources : ITranslationResources
 	/// English String: "{firstname}, YOU'RE ALMOST DONE"
 	/// </summary>
 	string HeadingFacebookSignupAlmostDone(string firstname);
+}
+
+
 }

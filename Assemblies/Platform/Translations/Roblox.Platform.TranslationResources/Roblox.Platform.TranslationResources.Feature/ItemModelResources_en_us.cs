@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class ItemModelResources_en_us : TranslationResourcesBase, IItemModelResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class ItemModelResources_en_us : TranslationResourcesBase, IItemModelResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -534,4 +533,7 @@ internal class ItemModelResources_en_us : TranslationResourcesBase, IItemModelRe
 	{
 		return "You are selling this item.";
 	}
+}
+
+
 }

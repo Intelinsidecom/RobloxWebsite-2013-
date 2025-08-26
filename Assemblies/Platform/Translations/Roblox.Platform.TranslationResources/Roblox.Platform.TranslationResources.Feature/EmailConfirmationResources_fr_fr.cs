@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides EmailConfirmationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,7 +11,7 @@ internal class EmailConfirmationResources_fr_fr : EmailConfirmationResources_en_
 	/// button label
 	/// English String: "Done"
 	/// </summary>
-	public override string ActionDone => "Terminé";
+	public override string ActionDone => "TerminÃ©";
 
 	/// <summary>
 	/// Key: "Action.ViewItem"
@@ -32,14 +32,14 @@ internal class EmailConfirmationResources_fr_fr : EmailConfirmationResources_en_
 	/// success message confirmation
 	/// English String: "Your email has been verified"
 	/// </summary>
-	public override string MessageEmailVerified => "Ton adresse e-mail a bien été vérifiée";
+	public override string MessageEmailVerified => "Ton adresse e-mail a bien Ã©tÃ© vÃ©rifiÃ©e";
 
 	/// <summary>
 	/// Key: "Message.EmailVerifiedEnjoyFreeHat"
 	/// success message confirmation notifying user they have verified their email and have received a free hat
 	/// English String: "Your email has been verified. Enjoy the free hat!"
 	/// </summary>
-	public override string MessageEmailVerifiedEnjoyFreeHat => "Ton adresse e-mail a été vérifiée. Profite bien du chapeau gratuit\u00a0!";
+	public override string MessageEmailVerifiedEnjoyFreeHat => "Ton adresse e-mail a Ã©tÃ© vÃ©rifiÃ©e. Profite bien du chapeau gratuit\u00a0!";
 
 	public EmailConfirmationResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -48,7 +48,7 @@ internal class EmailConfirmationResources_fr_fr : EmailConfirmationResources_en_
 
 	protected override string _GetTemplateForActionDone()
 	{
-		return "Terminé";
+		return "TerminÃ©";
 	}
 
 	protected override string _GetTemplateForActionViewItem()
@@ -63,11 +63,14 @@ internal class EmailConfirmationResources_fr_fr : EmailConfirmationResources_en_
 
 	protected override string _GetTemplateForMessageEmailVerified()
 	{
-		return "Ton adresse e-mail a bien été vérifiée";
+		return "Ton adresse e-mail a bien Ã©tÃ© vÃ©rifiÃ©e";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerifiedEnjoyFreeHat()
 	{
-		return "Ton adresse e-mail a été vérifiée. Profite bien du chapeau gratuit\u00a0!";
+		return "Ton adresse e-mail a Ã©tÃ© vÃ©rifiÃ©e. Profite bien du chapeau gratuit\u00a0!";
 	}
+}
+
+
 }

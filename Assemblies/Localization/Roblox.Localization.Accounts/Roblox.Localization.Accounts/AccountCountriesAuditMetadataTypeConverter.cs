@@ -1,10 +1,9 @@
-using Roblox.Common;
+﻿using Roblox.Common;
 using Roblox.Platform.Core;
 using Roblox.Platform.Localization.Audit;
+namespace Roblox.Localization.Accountsinternal {
+    class AccountCountriesAuditMetadataTypeConverter : IAccountCountriesAuditMetadataTypeConverter
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal class AccountCountriesAuditMetadataTypeConverter : IAccountCountriesAuditMetadataTypeConverter
 {
 	private readonly IAccountCountriesAuditMetadataTypeEntityFactory _MetadataTypeEntityFactory;
 
@@ -31,4 +30,7 @@ internal class AccountCountriesAuditMetadataTypeConverter : IAccountCountriesAud
 		}
 		return metadataTypeEnum.Value;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AvatarResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -69,13 +69,13 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// A call to action for the user to buy more clothes from the Catalog page. This could improve how their avatar looks.
 	/// English String: "Get More"
 	/// </summary>
-	public override string ActionGetMore => "Obtener más";
+	public override string ActionGetMore => "Obtener mÃ¡s";
 
 	/// <summary>
 	/// Key: "Action.OpenRobloxApp"
 	/// English String: "Open Roblox App"
 	/// </summary>
-	public override string ActionOpenRobloxApp => "Abrir aplicación de Roblox";
+	public override string ActionOpenRobloxApp => "Abrir aplicaciÃ³n de Roblox";
 
 	/// <summary>
 	/// Key: "Action.Redraw"
@@ -141,21 +141,21 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Key: "Description.AvatarEditorUpsell"
 	/// English String: "To change your look you will need to use the Avatar Editor on the App."
 	/// </summary>
-	public override string DescriptionAvatarEditorUpsell => "Para cambiar tu aspecto, tendrás que utilizar el Editor de avatares en la aplicación.";
+	public override string DescriptionAvatarEditorUpsell => "Para cambiar tu aspecto, tendrÃ¡s que utilizar el Editor de avatares en la aplicaciÃ³n.";
 
 	/// <summary>
 	/// Key: "Description.CreateNewCostume"
 	/// A costume will be created from your avatar's current appearance.
 	/// English String: "A costume will be created from your avatar's current appearance."
 	/// </summary>
-	public override string DescriptionCreateNewCostume => "El disfraz se creará según el aspecto actual de tu avatar.";
+	public override string DescriptionCreateNewCostume => "El disfraz se crearÃ¡ segÃºn el aspecto actual de tu avatar.";
 
 	/// <summary>
 	/// Key: "Description.CreateNewOutfit"
 	/// An outfit will be created from your avatar's current appearance.
 	/// English String: "An outfit will be created from your avatar's current appearance."
 	/// </summary>
-	public override string DescriptionCreateNewOutfit => "El conjunto se creará a partir del aspecto actual de tu avatar.";
+	public override string DescriptionCreateNewOutfit => "El conjunto se crearÃ¡ a partir del aspecto actual de tu avatar.";
 
 	/// <summary>
 	/// Key: "Description.RenameCostume"
@@ -364,7 +364,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Avatar isn't loading correctly?
 	/// English String: "Avatar isn't loading correctly?"
 	/// </summary>
-	public override string LabelAskIfLoadingCorrectly => "¿El avatar no se carga correctamente?";
+	public override string LabelAskIfLoadingCorrectly => "Â¿El avatar no se carga correctamente?";
 
 	/// <summary>
 	/// Key: "Label.AssetIDPlaceholder"
@@ -433,7 +433,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// This text entices users to shop for more things to wear on their avatar
 	/// English String: "Explore the catalog to find more clothes!"
 	/// </summary>
-	public override string LabelExploreCatalog => "¡Explora el catálogo para encontrar más ropa!";
+	public override string LabelExploreCatalog => "Â¡Explora el catÃ¡logo para encontrar mÃ¡s ropa!";
 
 	/// <summary>
 	/// Key: "Label.Face"
@@ -457,13 +457,13 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Key: "Label.Fall"
 	/// English String: "Fall"
 	/// </summary>
-	public override string LabelFall => "Caída";
+	public override string LabelFall => "CaÃ­da";
 
 	/// <summary>
 	/// Key: "Label.FallAnimations"
 	/// English String: "Fall Animations"
 	/// </summary>
-	public override string LabelFallAnimations => "Animaciones de caída";
+	public override string LabelFallAnimations => "Animaciones de caÃ­da";
 
 	/// <summary>
 	/// Key: "Label.Free"
@@ -661,7 +661,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Avatar redraw is unavailable
 	/// English String: "Avatar redraw is unavailable."
 	/// </summary>
-	public override string LabelRedrawUnavailable => "El redibujo del avatar no está disponible.";
+	public override string LabelRedrawUnavailable => "El redibujo del avatar no estÃ¡ disponible.";
 
 	/// <summary>
 	/// Key: "Label.RightArm"
@@ -746,7 +746,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// User is able to increase the number of joints in their avatar from 6 to 15. R15 moves better. See http://roblox.wikia.com/wiki/R15
 	/// English String: "Switch between classic R6 avatar and more expressive next generation R15 avatar"
 	/// </summary>
-	public override string LabelSwitchAvatarType => "Cambia entre la versión clásica de avatar R6 y la nueva generación R15 más expresiva.";
+	public override string LabelSwitchAvatarType => "Cambia entre la versiÃ³n clÃ¡sica de avatar R6 y la nueva generaciÃ³n R15 mÃ¡s expresiva.";
 
 	/// <summary>
 	/// Key: "Label.Torso"
@@ -806,7 +806,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Key: "Message.AccessoriesChange"
 	/// English String: "Are you sure you want to override your current look?"
 	/// </summary>
-	public override string MessageAccessoriesChange => "¿Seguro que quieres reemplazar tu aspecto actual?";
+	public override string MessageAccessoriesChange => "Â¿Seguro que quieres reemplazar tu aspecto actual?";
 
 	/// <summary>
 	/// Key: "Message.ChooseEmote"
@@ -838,13 +838,13 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// NOTE: Any instance of the word "outfit" will eventually be swapped out for "costume" This is not currently in the UI
 	/// English String: "Are you sure you want to delete this costume?"
 	/// </summary>
-	public override string MessageDeleteThisCostume => "¿Seguro que quieres eliminar este disfraz?";
+	public override string MessageDeleteThisCostume => "Â¿Seguro que quieres eliminar este disfraz?";
 
 	/// <summary>
 	/// Key: "Message.DeleteThisOutfit"
 	/// English String: "Are you sure you want to delete this outfit?"
 	/// </summary>
-	public override string MessageDeleteThisOutfit => "¿Seguro que quieres eliminar este conjunto?";
+	public override string MessageDeleteThisOutfit => "Â¿Seguro que quieres eliminar este conjunto?";
 
 	/// <summary>
 	/// Key: "Message.EmotesInstructions"
@@ -865,32 +865,32 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// The user is viewing an empty list of costumes to choose from. The application tells the user that they can create an costume.
 	/// English String: "You don't have any costumes. Try creating some!"
 	/// </summary>
-	public override string MessageEmptyListOfCostumes => "No tienes disfraces. ¡Crea algunos!";
+	public override string MessageEmptyListOfCostumes => "No tienes disfraces. Â¡Crea algunos!";
 
 	/// <summary>
 	/// Key: "Message.EmptyListOfOutfits"
 	/// The user is viewing an empty list of outfits to choose from. The application tells the user that they can create an outfit.
 	/// English String: "You don't have any outfits. Try creating some!"
 	/// </summary>
-	public override string MessageEmptyListOfOutfits => "No tienes conjuntos. ¡Crea algunos!";
+	public override string MessageEmptyListOfOutfits => "No tienes conjuntos. Â¡Crea algunos!";
 
 	/// <summary>
 	/// Key: "Message.EmptyRecentItems"
 	/// English String: "You don't have any recent items."
 	/// </summary>
-	public override string MessageEmptyRecentItems => "No tienes ningún objeto reciente.";
+	public override string MessageEmptyRecentItems => "No tienes ningÃºn objeto reciente.";
 
 	/// <summary>
 	/// Key: "Message.ErrorCreateCostume"
 	/// English String: "Unable to create costume, try again later."
 	/// </summary>
-	public override string MessageErrorCreateCostume => "No se ha podido crear el disfraz. Inténtalo de nuevo más tarde.";
+	public override string MessageErrorCreateCostume => "No se ha podido crear el disfraz. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.ErrorCreateOutfit"
 	/// English String: "Unable to create outfit, try again later."
 	/// </summary>
-	public override string MessageErrorCreateOutfit => "No se ha podido crear el conjunto. Inténtalo de nuevo más tarde.";
+	public override string MessageErrorCreateOutfit => "No se ha podido crear el conjunto. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.ErrorDeleteEmote"
@@ -902,7 +902,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Key: "Message.ErrorEquipEmote"
 	/// English String: "Failed to equip emote, please try again later."
 	/// </summary>
-	public override string MessageErrorEquipEmote => "Error al equipar el emoticono. Inténtalo de nuevo más tarde.";
+	public override string MessageErrorEquipEmote => "Error al equipar el emoticono. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.ErrorLoadCostume"
@@ -926,7 +926,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Key: "Message.ErrorOutfitName"
 	/// English String: "Name can contain letters, numbers, and spaces."
 	/// </summary>
-	public override string MessageErrorOutfitName => "El nombre puede contener letras, números y espacios.";
+	public override string MessageErrorOutfitName => "El nombre puede contener letras, nÃºmeros y espacios.";
 
 	/// <summary>
 	/// Key: "Message.ErrorRenameCostume"
@@ -950,19 +950,19 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Key: "Message.ErrorUpdateCostume"
 	/// English String: "Costume update failed, please try again later."
 	/// </summary>
-	public override string MessageErrorUpdateCostume => "No se ha podido actualizar el disfraz. Inténtalo de nuevo más tarde.";
+	public override string MessageErrorUpdateCostume => "No se ha podido actualizar el disfraz. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.ErrorUpdateEmote"
 	/// English String: "Updating emote slot failed, please try again later."
 	/// </summary>
-	public override string MessageErrorUpdateEmote => "Error al actualizar el espacio del emoticono. Inténtalo de nuevo más tarde.";
+	public override string MessageErrorUpdateEmote => "Error al actualizar el espacio del emoticono. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.ErrorUpdateOutfit"
 	/// English String: "Outfit update failed, please try again later."
 	/// </summary>
-	public override string MessageErrorUpdateOutfit => "No se ha podido actualizar el conjunto. Inténtalo de nuevo más tarde.";
+	public override string MessageErrorUpdateOutfit => "No se ha podido actualizar el conjunto. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.ErrorUpdateWorn"
@@ -1024,14 +1024,14 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// The user tried to update a deleted costume.
 	/// English String: "The costume you tried to update no longer exists."
 	/// </summary>
-	public override string MessageFailedUpdateDeletedCostume => "El disfraz que querías actualizar ya no existe.";
+	public override string MessageFailedUpdateDeletedCostume => "El disfraz que querÃ­as actualizar ya no existe.";
 
 	/// <summary>
 	/// Key: "Message.FailedUpdateDeletedOutfit"
 	/// The user tried to update a deleted outfit.
 	/// English String: "The outfit you tried to update no longer exists."
 	/// </summary>
-	public override string MessageFailedUpdateDeletedOutfit => "El conjunto que querías actualizar ya no existe.";
+	public override string MessageFailedUpdateDeletedOutfit => "El conjunto que querÃ­as actualizar ya no existe.";
 
 	/// <summary>
 	/// Key: "Message.FailedUpdateScales"
@@ -1075,38 +1075,38 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// Key: "Message.PageUnavailable"
 	/// English String: "The avatar page is temporarily unavailable."
 	/// </summary>
-	public override string MessagePageUnavailable => "La página de Avatar no está disponible temporalmente.";
+	public override string MessagePageUnavailable => "La pÃ¡gina de Avatar no estÃ¡ disponible temporalmente.";
 
 	/// <summary>
 	/// Key: "Message.PresetCostumesDelay"
 	/// One-time message that appears to the user first time they visit the Preset Costumes tab. The delay is caused by initial migration.
 	/// English String: "Note: We're doing some housekeeping, so it may take a few minutes for all your costumes to appear. Check again in a bit!"
 	/// </summary>
-	public override string MessagePresetCostumesDelay => "Nota: estamos haciendo trabajos de mantenimiento, por lo que los disfraces pueden tomar algunos minutos en cargarse. ¡Vuelve en un rato!";
+	public override string MessagePresetCostumesDelay => "Nota: estamos haciendo trabajos de mantenimiento, por lo que los disfraces pueden tomar algunos minutos en cargarse. Â¡Vuelve en un rato!";
 
 	/// <summary>
 	/// Key: "Message.ReachedMaxCostumes"
 	/// English String: "You have reached the maximum number of costumes."
 	/// </summary>
-	public override string MessageReachedMaxCostumes => "Has llegado a la cantidad máxima de disfraces.";
+	public override string MessageReachedMaxCostumes => "Has llegado a la cantidad mÃ¡xima de disfraces.";
 
 	/// <summary>
 	/// Key: "Message.ReachedMaxOutfits"
 	/// English String: "You have reached the maximum number of outfits."
 	/// </summary>
-	public override string MessageReachedMaxOutfits => "Has llegado a la cantidad máxima de conjuntos.";
+	public override string MessageReachedMaxOutfits => "Has llegado a la cantidad mÃ¡xima de conjuntos.";
 
 	/// <summary>
 	/// Key: "Message.RedirectAvatarSettings"
 	/// English String: "You can set Avatar Settings from your Roblox Studio project. In Roblox Studio, go to Home &gt; Game Settings &gt; Avatar"
 	/// </summary>
-	public override string MessageRedirectAvatarSettings => "Puedes acceder a la Configuración del avatar desde tu proyecto de Roblox Studio. En Roblox Studio, ve a Inicio > Configuración del juego > Avatar";
+	public override string MessageRedirectAvatarSettings => "Puedes acceder a la ConfiguraciÃ³n del avatar desde tu proyecto de Roblox Studio. En Roblox Studio, ve a Inicio > ConfiguraciÃ³n del juego > Avatar";
 
 	/// <summary>
 	/// Key: "Message.RedrawFloodchecked"
 	/// English String: "You have redrawn your avatar too many times, please try again later."
 	/// </summary>
-	public override string MessageRedrawFloodchecked => "Has redibujado tu avatar demasiadas veces. Inténtalo de nuevo más tarde.";
+	public override string MessageRedrawFloodchecked => "Has redibujado tu avatar demasiadas veces. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.RedrawThumbnailFailed"
@@ -1211,13 +1211,13 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// NOTE: Any instance of the word "outfit" will eventually be swapped out for "costume" This is not currently in the UI
 	/// English String: "Do you want to update this costume? This will overwrite the costume with your avatar's current appearance."
 	/// </summary>
-	public override string MessageUpdateThisCostume => "¿Quieres actualizar este disfraz? Esta acción sobrescribirá el disfraz con el aspecto actual de tu avatar.";
+	public override string MessageUpdateThisCostume => "Â¿Quieres actualizar este disfraz? Esta acciÃ³n sobrescribirÃ¡ el disfraz con el aspecto actual de tu avatar.";
 
 	/// <summary>
 	/// Key: "Message.UpdateThisOutfit"
 	/// English String: "Do you want to update this outfit? This will overwrite the outfit with your avatar's current appearance."
 	/// </summary>
-	public override string MessageUpdateThisOutfit => "¿Quieres actualizar este conjunto? Esta acción sobrescribirá el conjunto con el aspecto actual de tu avatar.";
+	public override string MessageUpdateThisOutfit => "Â¿Quieres actualizar este conjunto? Esta acciÃ³n sobrescribirÃ¡ el conjunto con el aspecto actual de tu avatar.";
 
 	/// <summary>
 	/// Key: "Message.Warning"
@@ -1277,12 +1277,12 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForActionGetMore()
 	{
-		return "Obtener más";
+		return "Obtener mÃ¡s";
 	}
 
 	protected override string _GetTemplateForActionOpenRobloxApp()
 	{
-		return "Abrir aplicación de Roblox";
+		return "Abrir aplicaciÃ³n de Roblox";
 	}
 
 	protected override string _GetTemplateForActionRedraw()
@@ -1332,17 +1332,17 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForDescriptionAvatarEditorUpsell()
 	{
-		return "Para cambiar tu aspecto, tendrás que utilizar el Editor de avatares en la aplicación.";
+		return "Para cambiar tu aspecto, tendrÃ¡s que utilizar el Editor de avatares en la aplicaciÃ³n.";
 	}
 
 	protected override string _GetTemplateForDescriptionCreateNewCostume()
 	{
-		return "El disfraz se creará según el aspecto actual de tu avatar.";
+		return "El disfraz se crearÃ¡ segÃºn el aspecto actual de tu avatar.";
 	}
 
 	protected override string _GetTemplateForDescriptionCreateNewOutfit()
 	{
-		return "El conjunto se creará a partir del aspecto actual de tu avatar.";
+		return "El conjunto se crearÃ¡ a partir del aspecto actual de tu avatar.";
 	}
 
 	protected override string _GetTemplateForDescriptionRenameCostume()
@@ -1507,7 +1507,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForLabelAskIfLoadingCorrectly()
 	{
-		return "¿El avatar no se carga correctamente?";
+		return "Â¿El avatar no se carga correctamente?";
 	}
 
 	protected override string _GetTemplateForLabelAssetIDPlaceholder()
@@ -1572,12 +1572,12 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string LabelDirectionsForScalingOptions(string startBold, string rightArrow, string endBold)
 	{
-		return $"Las opciones de escalado están disponibles en la categoría Cuerpo. Echa un vistazo a {startBold}Cuerpo{rightArrow}Escalado{endBold}";
+		return $"Las opciones de escalado estÃ¡n disponibles en la categorÃ­a Cuerpo. Echa un vistazo a {startBold}Cuerpo{rightArrow}Escalado{endBold}";
 	}
 
 	protected override string _GetTemplateForLabelDirectionsForScalingOptions()
 	{
-		return "Las opciones de escalado están disponibles en la categoría Cuerpo. Echa un vistazo a {startBold}Cuerpo{rightArrow}Escalado{endBold}";
+		return "Las opciones de escalado estÃ¡n disponibles en la categorÃ­a Cuerpo. Echa un vistazo a {startBold}Cuerpo{rightArrow}Escalado{endBold}";
 	}
 
 	protected override string _GetTemplateForlabelEmotes()
@@ -1592,7 +1592,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForLabelExploreCatalog()
 	{
-		return "¡Explora el catálogo para encontrar más ropa!";
+		return "Â¡Explora el catÃ¡logo para encontrar mÃ¡s ropa!";
 	}
 
 	protected override string _GetTemplateForLabelFace()
@@ -1612,12 +1612,12 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForLabelFall()
 	{
-		return "Caída";
+		return "CaÃ­da";
 	}
 
 	protected override string _GetTemplateForLabelFallAnimations()
 	{
-		return "Animaciones de caída";
+		return "Animaciones de caÃ­da";
 	}
 
 	protected override string _GetTemplateForLabelFree()
@@ -1777,7 +1777,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForLabelRedrawUnavailable()
 	{
-		return "El redibujo del avatar no está disponible.";
+		return "El redibujo del avatar no estÃ¡ disponible.";
 	}
 
 	protected override string _GetTemplateForLabelRightArm()
@@ -1847,7 +1847,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForLabelSwitchAvatarType()
 	{
-		return "Cambia entre la versión clásica de avatar R6 y la nueva generación R15 más expresiva.";
+		return "Cambia entre la versiÃ³n clÃ¡sica de avatar R6 y la nueva generaciÃ³n R15 mÃ¡s expresiva.";
 	}
 
 	protected override string _GetTemplateForLabelTorso()
@@ -1897,7 +1897,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForMessageAccessoriesChange()
 	{
-		return "¿Seguro que quieres reemplazar tu aspecto actual?";
+		return "Â¿Seguro que quieres reemplazar tu aspecto actual?";
 	}
 
 	protected override string _GetTemplateForMessageChooseEmote()
@@ -1926,22 +1926,22 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string MessageDeleteOutfit(string outfitType)
 	{
-		return $"¿Seguro que quieres eliminar este {outfitType}?";
+		return $"Â¿Seguro que quieres eliminar este {outfitType}?";
 	}
 
 	protected override string _GetTemplateForMessageDeleteOutfit()
 	{
-		return "¿Seguro que quieres eliminar este {outfitType}?";
+		return "Â¿Seguro que quieres eliminar este {outfitType}?";
 	}
 
 	protected override string _GetTemplateForMessageDeleteThisCostume()
 	{
-		return "¿Seguro que quieres eliminar este disfraz?";
+		return "Â¿Seguro que quieres eliminar este disfraz?";
 	}
 
 	protected override string _GetTemplateForMessageDeleteThisOutfit()
 	{
-		return "¿Seguro que quieres eliminar este conjunto?";
+		return "Â¿Seguro que quieres eliminar este conjunto?";
 	}
 
 	protected override string _GetTemplateForMessageEmotesInstructions()
@@ -1971,27 +1971,27 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForMessageEmptyListOfCostumes()
 	{
-		return "No tienes disfraces. ¡Crea algunos!";
+		return "No tienes disfraces. Â¡Crea algunos!";
 	}
 
 	protected override string _GetTemplateForMessageEmptyListOfOutfits()
 	{
-		return "No tienes conjuntos. ¡Crea algunos!";
+		return "No tienes conjuntos. Â¡Crea algunos!";
 	}
 
 	protected override string _GetTemplateForMessageEmptyRecentItems()
 	{
-		return "No tienes ningún objeto reciente.";
+		return "No tienes ningÃºn objeto reciente.";
 	}
 
 	protected override string _GetTemplateForMessageErrorCreateCostume()
 	{
-		return "No se ha podido crear el disfraz. Inténtalo de nuevo más tarde.";
+		return "No se ha podido crear el disfraz. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageErrorCreateOutfit()
 	{
-		return "No se ha podido crear el conjunto. Inténtalo de nuevo más tarde.";
+		return "No se ha podido crear el conjunto. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageErrorDeleteEmote()
@@ -2001,7 +2001,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForMessageErrorEquipEmote()
 	{
-		return "Error al equipar el emoticono. Inténtalo de nuevo más tarde.";
+		return "Error al equipar el emoticono. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageErrorLoadCostume()
@@ -2021,7 +2021,7 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForMessageErrorOutfitName()
 	{
-		return "El nombre puede contener letras, números y espacios.";
+		return "El nombre puede contener letras, nÃºmeros y espacios.";
 	}
 
 	protected override string _GetTemplateForMessageErrorRenameCostume()
@@ -2041,17 +2041,17 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForMessageErrorUpdateCostume()
 	{
-		return "No se ha podido actualizar el disfraz. Inténtalo de nuevo más tarde.";
+		return "No se ha podido actualizar el disfraz. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageErrorUpdateEmote()
 	{
-		return "Error al actualizar el espacio del emoticono. Inténtalo de nuevo más tarde.";
+		return "Error al actualizar el espacio del emoticono. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageErrorUpdateOutfit()
 	{
-		return "No se ha podido actualizar el conjunto. Inténtalo de nuevo más tarde.";
+		return "No se ha podido actualizar el conjunto. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageErrorUpdateWorn()
@@ -2101,12 +2101,12 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForMessageFailedUpdateDeletedCostume()
 	{
-		return "El disfraz que querías actualizar ya no existe.";
+		return "El disfraz que querÃ­as actualizar ya no existe.";
 	}
 
 	protected override string _GetTemplateForMessageFailedUpdateDeletedOutfit()
 	{
-		return "El conjunto que querías actualizar ya no existe.";
+		return "El conjunto que querÃ­as actualizar ya no existe.";
 	}
 
 	protected override string _GetTemplateForMessageFailedUpdateScales()
@@ -2146,42 +2146,42 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string MessageMissingItemsFromOutfit(string number)
 	{
-		return $"Número de objetos que te faltan para completar este conjunto: {number}";
+		return $"NÃºmero de objetos que te faltan para completar este conjunto: {number}";
 	}
 
 	protected override string _GetTemplateForMessageMissingItemsFromOutfit()
 	{
-		return "Número de objetos que te faltan para completar este conjunto: {number}";
+		return "NÃºmero de objetos que te faltan para completar este conjunto: {number}";
 	}
 
 	protected override string _GetTemplateForMessagePageUnavailable()
 	{
-		return "La página de Avatar no está disponible temporalmente.";
+		return "La pÃ¡gina de Avatar no estÃ¡ disponible temporalmente.";
 	}
 
 	protected override string _GetTemplateForMessagePresetCostumesDelay()
 	{
-		return "Nota: estamos haciendo trabajos de mantenimiento, por lo que los disfraces pueden tomar algunos minutos en cargarse. ¡Vuelve en un rato!";
+		return "Nota: estamos haciendo trabajos de mantenimiento, por lo que los disfraces pueden tomar algunos minutos en cargarse. Â¡Vuelve en un rato!";
 	}
 
 	protected override string _GetTemplateForMessageReachedMaxCostumes()
 	{
-		return "Has llegado a la cantidad máxima de disfraces.";
+		return "Has llegado a la cantidad mÃ¡xima de disfraces.";
 	}
 
 	protected override string _GetTemplateForMessageReachedMaxOutfits()
 	{
-		return "Has llegado a la cantidad máxima de conjuntos.";
+		return "Has llegado a la cantidad mÃ¡xima de conjuntos.";
 	}
 
 	protected override string _GetTemplateForMessageRedirectAvatarSettings()
 	{
-		return "Puedes acceder a la Configuración del avatar desde tu proyecto de Roblox Studio. En Roblox Studio, ve a Inicio > Configuración del juego > Avatar";
+		return "Puedes acceder a la ConfiguraciÃ³n del avatar desde tu proyecto de Roblox Studio. En Roblox Studio, ve a Inicio > ConfiguraciÃ³n del juego > Avatar";
 	}
 
 	protected override string _GetTemplateForMessageRedrawFloodchecked()
 	{
-		return "Has redibujado tu avatar demasiadas veces. Inténtalo de nuevo más tarde.";
+		return "Has redibujado tu avatar demasiadas veces. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageRedrawThumbnailFailed()
@@ -2270,26 +2270,29 @@ internal class AvatarResources_es_es : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string MessageUpdateOutfit(string outfitType1, string outfitType2)
 	{
-		return $"¿Quieres actualizar este {outfitType1}? Esta acción sobrescribirá el {outfitType2} con el aspecto actual de tu avatar.";
+		return $"Â¿Quieres actualizar este {outfitType1}? Esta acciÃ³n sobrescribirÃ¡ el {outfitType2} con el aspecto actual de tu avatar.";
 	}
 
 	protected override string _GetTemplateForMessageUpdateOutfit()
 	{
-		return "¿Quieres actualizar este {outfitType1}? Esta acción sobrescribirá el {outfitType2} con el aspecto actual de tu avatar.";
+		return "Â¿Quieres actualizar este {outfitType1}? Esta acciÃ³n sobrescribirÃ¡ el {outfitType2} con el aspecto actual de tu avatar.";
 	}
 
 	protected override string _GetTemplateForMessageUpdateThisCostume()
 	{
-		return "¿Quieres actualizar este disfraz? Esta acción sobrescribirá el disfraz con el aspecto actual de tu avatar.";
+		return "Â¿Quieres actualizar este disfraz? Esta acciÃ³n sobrescribirÃ¡ el disfraz con el aspecto actual de tu avatar.";
 	}
 
 	protected override string _GetTemplateForMessageUpdateThisOutfit()
 	{
-		return "¿Quieres actualizar este conjunto? Esta acción sobrescribirá el conjunto con el aspecto actual de tu avatar.";
+		return "Â¿Quieres actualizar este conjunto? Esta acciÃ³n sobrescribirÃ¡ el conjunto con el aspecto actual de tu avatar.";
 	}
 
 	protected override string _GetTemplateForMessageWarning()
 	{
 		return "Advertencia";
 	}
+}
+
+
 }

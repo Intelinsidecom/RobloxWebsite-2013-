@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ITranslationManagementResources : ITranslationResources
 
-public interface ITranslationManagementResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.PleaseReload"
@@ -294,4 +294,7 @@ public interface ITranslationManagementResources : ITranslationResources
 	/// English String: "{limitNumber} Characters"
 	/// </summary>
 	string DescriptionCharacterLimit(string limitNumber);
+}
+
+
 }

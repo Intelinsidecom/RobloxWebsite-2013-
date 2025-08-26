@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.TranslationResources.CommonUI;
+namespace Roblox.Platform.TranslationResourcesinternal {
+    class CommonUIResources : ICommonUIResources, ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-internal class CommonUIResources : ICommonUIResources, ITranslationResourcesNamespacesGroup
 {
 	private readonly Lazy<IControlsResources> _IControlsResources;
 
@@ -38,4 +37,7 @@ internal class CommonUIResources : ICommonUIResources, ITranslationResourcesName
 			_ => null, 
 		};
 	}
+}
+
+
 }

@@ -1,10 +1,13 @@
-namespace Roblox.RealTimeNotifications;
+﻿namespace Roblox.Platform.RealTimeNotificationspublic {
+    interface ISubscriptionResult
 
-public interface ISubscriptionResult
 {
 	string ChannelName { get; }
 
 	object CallbackAction { get; }
 
 	string ServerId { get; }
+}
+
+
 }

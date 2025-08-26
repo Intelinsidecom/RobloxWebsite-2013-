@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class FormValidationFailedEventArgs : WebEventArgs
 
-public class FormValidationFailedEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The field (e.g., username, password) which failed validation.
@@ -27,3 +28,12 @@ public class FormValidationFailedEventArgs : WebEventArgs
 	/// </summary>
 	public bool IsVisible { get; set; }
 }
+
+
+}
+
+
+
+
+
+

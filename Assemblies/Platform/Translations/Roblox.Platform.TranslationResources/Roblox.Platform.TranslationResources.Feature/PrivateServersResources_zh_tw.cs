@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PrivateServersResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,109 +10,109 @@ internal class PrivateServersResources_zh_tw : PrivateServersResources_en_us, IP
 	/// Key: "Action.CreateVipServer"
 	/// English String: "Create VIP Server"
 	/// </summary>
-	public override string ActionCreateVipServer => "建立 VIP 伺服器";
+	public override string ActionCreateVipServer => "å»ºç«‹ VIP ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Action.Refresh"
 	/// English String: "Refresh"
 	/// </summary>
-	public override string ActionRefresh => "重新整理";
+	public override string ActionRefresh => "é‡æ–°æ•´ç†";
 
 	/// <summary>
 	/// Key: "Heading.InvalidLink"
 	/// Dialog title when the link to a VIP server is invalid
 	/// English String: "Invalid Link"
 	/// </summary>
-	public override string HeadingInvalidLink => "連結無效";
+	public override string HeadingInvalidLink => "é€£çµç„¡æ•ˆ";
 
 	/// <summary>
 	/// Key: "Heading.VipServers"
 	/// English String: "VIP Servers"
 	/// </summary>
-	public override string HeadingVipServers => "VIP 伺服器";
+	public override string HeadingVipServers => "VIP ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "取消";
+	public override string LabelCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Label.GameJoinPrivateErrorTitle"
 	/// Title of error window when trying to join a private server user does not have access to.
 	/// English String: "Unable to join"
 	/// </summary>
-	public override string LabelGameJoinPrivateErrorTitle => "無法加入";
+	public override string LabelGameJoinPrivateErrorTitle => "ç„¡æ³•åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Label.GameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelGameName => "遊戲名稱";
+	public override string LabelGameName => "éŠæˆ²åç¨±";
 
 	/// <summary>
 	/// Key: "Label.NoVipServers"
 	/// No VIP Server Instances Found.
 	/// English String: "No VIP Server Instances Found."
 	/// </summary>
-	public override string LabelNoVipServers => "找不到 VIP 伺服器。";
+	public override string LabelNoVipServers => "æ‰¾ä¸åˆ° VIP ä¼ºæœå™¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.PlayWithOthers"
 	/// English String: "Play this game with friends and other people you invite."
 	/// </summary>
-	public override string LabelPlayWithOthers => "與好友及您邀請的對象玩此遊戲。";
+	public override string LabelPlayWithOthers => "èˆ‡å¥½å‹åŠæ‚¨é‚€è«‹çš„å°è±¡çŽ©æ­¤éŠæˆ²ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Renew"
 	/// English String: "Renew"
 	/// </summary>
-	public override string LabelRenew => "續訂";
+	public override string LabelRenew => "çºŒè¨‚";
 
 	/// <summary>
 	/// Key: "Label.RenewPrivateServer"
 	/// English String: "Renew Private Server"
 	/// </summary>
-	public override string LabelRenewPrivateServer => "續訂私人伺服器";
+	public override string LabelRenewPrivateServer => "çºŒè¨‚ç§äººä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Label.ServerName"
 	/// English String: "Server Name"
 	/// </summary>
-	public override string LabelServerName => "伺服器名稱";
+	public override string LabelServerName => "ä¼ºæœå™¨åç¨±";
 
 	/// <summary>
 	/// Key: "Label.Servers"
 	/// English String: "Servers"
 	/// </summary>
-	public override string LabelServers => "伺服器";
+	public override string LabelServers => "ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Label.VIPServerGameJoinErrorAcknowledgement"
 	/// Confirmation text for game join private error dialog.
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelVIPServerGameJoinErrorAcknowledgement => "確定";
+	public override string LabelVIPServerGameJoinErrorAcknowledgement => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Label.VipServerJoinGamePrivateError"
 	/// Error when user wants to join a VIP server when the game is marked private
 	/// English String: "You cannot join this VIP server because the game is private."
 	/// </summary>
-	public override string LabelVipServerJoinGamePrivateError => "此遊戲設為私人，您無法加入此 VIP 伺服器。";
+	public override string LabelVipServerJoinGamePrivateError => "æ­¤éŠæˆ²è¨­ç‚ºç§äººï¼Œæ‚¨ç„¡æ³•åŠ å…¥æ­¤ VIP ä¼ºæœå™¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.VipServersAbout"
 	/// English String: "VIP servers let you play this game privately with friends, your clan, or people you invite!"
 	/// </summary>
-	public override string LabelVipServersAbout => "VIP 伺服器能讓您私下與好友、公會或您邀請的對象玩此遊戲！";
+	public override string LabelVipServersAbout => "VIP ä¼ºæœå™¨èƒ½è®“æ‚¨ç§ä¸‹èˆ‡å¥½å‹ã€å…¬æœƒæˆ–æ‚¨é‚€è«‹çš„å°è±¡çŽ©æ­¤éŠæˆ²ï¼";
 
 	/// <summary>
 	/// Key: "Message.InvalidLink"
 	/// Dialog content when the link to a VIP server is invalid
 	/// English String: "This VIP Server link is no longer valid."
 	/// </summary>
-	public override string MessageInvalidLink => "此 VIP 伺服器連結已失效。";
+	public override string MessageInvalidLink => "æ­¤ VIP ä¼ºæœå™¨é€£çµå·²å¤±æ•ˆã€‚";
 
 	public PrivateServersResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -121,27 +121,27 @@ internal class PrivateServersResources_zh_tw : PrivateServersResources_en_us, IP
 
 	protected override string _GetTemplateForActionCreateVipServer()
 	{
-		return "建立 VIP 伺服器";
+		return "å»ºç«‹ VIP ä¼ºæœå™¨";
 	}
 
 	protected override string _GetTemplateForActionRefresh()
 	{
-		return "重新整理";
+		return "é‡æ–°æ•´ç†";
 	}
 
 	protected override string _GetTemplateForHeadingInvalidLink()
 	{
-		return "連結無效";
+		return "é€£çµç„¡æ•ˆ";
 	}
 
 	protected override string _GetTemplateForHeadingVipServers()
 	{
-		return "VIP 伺服器";
+		return "VIP ä¼ºæœå™¨";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	/// <summary>
@@ -150,12 +150,12 @@ internal class PrivateServersResources_zh_tw : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelConfirmEnableFuturePayments(string placeName, string creatorName)
 	{
-		return $"確定為 {creatorName} 所創作的 {placeName} 啟用私人 VIP 版本預期付款？";
+		return $"ç¢ºå®šç‚º {creatorName} æ‰€å‰µä½œçš„ {placeName} å•Ÿç”¨ç§äºº VIP ç‰ˆæœ¬é æœŸä»˜æ¬¾ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelConfirmEnableFuturePayments()
 	{
-		return "確定為 {creatorName} 所創作的 {placeName} 啟用私人 VIP 版本預期付款？";
+		return "ç¢ºå®šç‚º {creatorName} æ‰€å‰µä½œçš„ {placeName} å•Ÿç”¨ç§äºº VIP ç‰ˆæœ¬é æœŸä»˜æ¬¾ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -164,12 +164,12 @@ internal class PrivateServersResources_zh_tw : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelCreateVipServerFor(string target)
 	{
-		return $"以 {target} 建立 VIP 伺服器？";
+		return $"ä»¥ {target} å»ºç«‹ VIP ä¼ºæœå™¨ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelCreateVipServerFor()
 	{
-		return "以 {target} 建立 VIP 伺服器？";
+		return "ä»¥ {target} å»ºç«‹ VIP ä¼ºæœå™¨ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -178,42 +178,42 @@ internal class PrivateServersResources_zh_tw : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelFooterText(string robuxIcon)
 	{
-		return $"您在此交易後的餘額將為 {robuxIcon}。此訂閱將會每月自動續訂一次，直到您取消訂閱為止。";
+		return $"æ‚¨åœ¨æ­¤äº¤æ˜“å¾Œçš„é¤˜é¡å°‡ç‚º {robuxIcon}ã€‚æ­¤è¨‚é–±å°‡æœƒæ¯æœˆè‡ªå‹•çºŒè¨‚ä¸€æ¬¡ï¼Œç›´åˆ°æ‚¨å–æ¶ˆè¨‚é–±ç‚ºæ­¢ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelFooterText()
 	{
-		return "您在此交易後的餘額將為 {robuxIcon}。此訂閱將會每月自動續訂一次，直到您取消訂閱為止。";
+		return "æ‚¨åœ¨æ­¤äº¤æ˜“å¾Œçš„é¤˜é¡å°‡ç‚º {robuxIcon}ã€‚æ­¤è¨‚é–±å°‡æœƒæ¯æœˆè‡ªå‹•çºŒè¨‚ä¸€æ¬¡ï¼Œç›´åˆ°æ‚¨å–æ¶ˆè¨‚é–±ç‚ºæ­¢ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelGameJoinPrivateErrorTitle()
 	{
-		return "無法加入";
+		return "ç„¡æ³•åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForLabelGameName()
 	{
-		return "遊戲名稱";
+		return "éŠæˆ²åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelNoVipServers()
 	{
-		return "找不到 VIP 伺服器。";
+		return "æ‰¾ä¸åˆ° VIP ä¼ºæœå™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelPlayWithOthers()
 	{
-		return "與好友及您邀請的對象玩此遊戲。";
+		return "èˆ‡å¥½å‹åŠæ‚¨é‚€è«‹çš„å°è±¡çŽ©æ­¤éŠæˆ²ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelRenew()
 	{
-		return "續訂";
+		return "çºŒè¨‚";
 	}
 
 	protected override string _GetTemplateForLabelRenewPrivateServer()
 	{
-		return "續訂私人伺服器";
+		return "çºŒè¨‚ç§äººä¼ºæœå™¨";
 	}
 
 	/// <summary>
@@ -222,22 +222,22 @@ internal class PrivateServersResources_zh_tw : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelSeeAllServers(string serversLink)
 	{
-		return $"可以在{serversLink}標籤檢視您所有的 VIP 伺服器。";
+		return $"å¯ä»¥åœ¨{serversLink}æ¨™ç±¤æª¢è¦–æ‚¨æ‰€æœ‰çš„ VIP ä¼ºæœå™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelSeeAllServers()
 	{
-		return "可以在{serversLink}標籤檢視您所有的 VIP 伺服器。";
+		return "å¯ä»¥åœ¨{serversLink}æ¨™ç±¤æª¢è¦–æ‚¨æ‰€æœ‰çš„ VIP ä¼ºæœå™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelServerName()
 	{
-		return "伺服器名稱";
+		return "ä¼ºæœå™¨åç¨±";
 	}
 
 	protected override string _GetTemplateForLabelServers()
 	{
-		return "伺服器";
+		return "ä¼ºæœå™¨";
 	}
 
 	/// <summary>
@@ -246,27 +246,27 @@ internal class PrivateServersResources_zh_tw : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelStartRenewingPrice(string price)
 	{
-		return $"此 VIP 伺服器將會每月以 {price} 續訂，直到您取消為止。";
+		return $"æ­¤ VIP ä¼ºæœå™¨å°‡æœƒæ¯æœˆä»¥ {price} çºŒè¨‚ï¼Œç›´åˆ°æ‚¨å–æ¶ˆç‚ºæ­¢ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelStartRenewingPrice()
 	{
-		return "此 VIP 伺服器將會每月以 {price} 續訂，直到您取消為止。";
+		return "æ­¤ VIP ä¼ºæœå™¨å°‡æœƒæ¯æœˆä»¥ {price} çºŒè¨‚ï¼Œç›´åˆ°æ‚¨å–æ¶ˆç‚ºæ­¢ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerGameJoinErrorAcknowledgement()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForLabelVipServerJoinGamePrivateError()
 	{
-		return "此遊戲設為私人，您無法加入此 VIP 伺服器。";
+		return "æ­¤éŠæˆ²è¨­ç‚ºç§äººï¼Œæ‚¨ç„¡æ³•åŠ å…¥æ­¤ VIP ä¼ºæœå™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelVipServersAbout()
 	{
-		return "VIP 伺服器能讓您私下與好友、公會或您邀請的對象玩此遊戲！";
+		return "VIP ä¼ºæœå™¨èƒ½è®“æ‚¨ç§ä¸‹èˆ‡å¥½å‹ã€å…¬æœƒæˆ–æ‚¨é‚€è«‹çš„å°è±¡çŽ©æ­¤éŠæˆ²ï¼";
 	}
 
 	/// <summary>
@@ -275,16 +275,19 @@ internal class PrivateServersResources_zh_tw : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelVipServersNotSupported(string vipServersLink)
 	{
-		return $"此遊戲不支援 {vipServersLink}。";
+		return $"æ­¤éŠæˆ²ä¸æ”¯æ´ {vipServersLink}ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelVipServersNotSupported()
 	{
-		return "此遊戲不支援 {vipServersLink}。";
+		return "æ­¤éŠæˆ²ä¸æ”¯æ´ {vipServersLink}ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidLink()
 	{
-		return "此 VIP 伺服器連結已失效。";
+		return "æ­¤ VIP ä¼ºæœå™¨é€£çµå·²å¤±æ•ˆã€‚";
 	}
+}
+
+
 }

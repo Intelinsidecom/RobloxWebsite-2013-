@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GamePassResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -28,7 +28,7 @@ internal class GamePassResources_fr_fr : GamePassResources_en_us, IGamePassResou
 	/// Key: "Label.Owned"
 	/// English String: "Owned"
 	/// </summary>
-	public override string LabelOwned => "Possédé";
+	public override string LabelOwned => "PossÃ©dÃ©";
 
 	public GamePassResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -52,6 +52,9 @@ internal class GamePassResources_fr_fr : GamePassResources_en_us, IGamePassResou
 
 	protected override string _GetTemplateForLabelOwned()
 	{
-		return "Possédé";
+		return "PossÃ©dÃ©";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class DownloadAppResources_en_us : TranslationResourcesBase, IDownloadAppResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class DownloadAppResources_en_us : TranslationResourcesBase, IDownloadAppResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -187,4 +186,7 @@ internal class DownloadAppResources_en_us : TranslationResourcesBase, IDownloadA
 	{
 		return "Play Roblox in our iOS app!";
 	}
+}
+
+
 }

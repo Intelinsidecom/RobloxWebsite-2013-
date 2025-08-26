@@ -1,7 +1,15 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using System.Collections.Generic;
+namespace Roblox.EventStream.WebEvents {
+    public enum CookieUpgraderContextTypes
 
-public enum CookieUpgraderContextTypes
 {
 	DeletedRedundantCookie,
 	ConvertedCookie
 }
+
+
+}
+
+
+
+

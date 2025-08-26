@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class ObservedLocale : IRobloxEntity<int, ObservedLocaleDAL>, ICacheableObject<int>, ICacheableObject, IRemoteCacheableObject
 {
 	private ObservedLocaleDAL _EntityDAL;
@@ -157,4 +156,7 @@ internal class ObservedLocale : IRobloxEntity<int, ObservedLocaleDAL>, ICacheabl
 	{
 		return $"Locale:{locale}";
 	}
+}
+
+
 }

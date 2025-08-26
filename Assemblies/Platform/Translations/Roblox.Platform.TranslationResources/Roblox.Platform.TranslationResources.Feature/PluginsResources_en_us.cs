@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PluginsResources_en_us : TranslationResourcesBase, IPluginsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PluginsResources_en_us : TranslationResourcesBase, IPluginsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -195,4 +194,7 @@ internal class PluginsResources_en_us : TranslationResourcesBase, IPluginsResour
 	{
 		return "Update";
 	}
+}
+
+
 }

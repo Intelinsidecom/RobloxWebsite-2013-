@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 using Roblox.Caching;
 using Roblox.DataV2.Core;
 using Roblox.EventLog;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public class CachedUsersClient : IUsersClient
 {
 	private readonly IUsersClient _UsersClient;
@@ -683,4 +682,6 @@ public class CachedUsersClient : IUsersClient
 		_UsersClientCache.SaveUser(userData);
 		return userData;
 	}
+}
+
 }

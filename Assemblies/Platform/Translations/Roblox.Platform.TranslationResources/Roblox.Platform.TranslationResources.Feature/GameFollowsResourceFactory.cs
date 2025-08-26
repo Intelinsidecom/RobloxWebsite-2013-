@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GameFollowsResourceFactory
 
-internal static class GameFollowsResourceFactory
 {
 	public const string FullNamespace = "Feature.GameFollows";
 
@@ -21,4 +21,7 @@ internal static class GameFollowsResourceFactory
 			_ => new GameFollowsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

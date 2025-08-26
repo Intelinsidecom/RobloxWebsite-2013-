@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GameContextMenuResourceFactory
 
-internal static class GameContextMenuResourceFactory
 {
 	public const string FullNamespace = "Feature.GameContextMenu";
 
@@ -21,4 +21,7 @@ internal static class GameContextMenuResourceFactory
 			_ => new GameContextMenuResources_en_us(state), 
 		};
 	}
+}
+
+
 }

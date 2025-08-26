@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+namespace Roblox.Platform.Localization.Clientpublic {
+    interface ILocalizationClient
 
-namespace Roblox.Localization.Client;
-
-public interface ILocalizationClient
 {
 	GetLanguageFamilyByIdResponse GetLanguageFamilyById(int id);
 
@@ -53,4 +52,7 @@ public interface ILocalizationClient
 	GetDeviceReportedLocaleByCodeResponse GetDeviceReportedLocaleByCode(string deviceReportedLocaleCode);
 
 	Task<GetDeviceReportedLocaleByCodeResponse> GetDeviceReportedLocaleByCodeAsync(string deviceReportedLocaleCode, CancellationToken cancellationToken);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+    static class RobloxProductsResourceFactory
 
-internal static class RobloxProductsResourceFactory
 {
 	public const string FullNamespace = "Purchasing.RobloxProducts";
 
@@ -21,4 +21,7 @@ internal static class RobloxProductsResourceFactory
 			_ => new RobloxProductsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

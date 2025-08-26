@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IBuildersClubExpiringModalResources : ITranslationResources
 
-public interface IBuildersClubExpiringModalResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.NoThanks"
@@ -50,4 +50,7 @@ public interface IBuildersClubExpiringModalResources : ITranslationResources
 	/// English String: "Oh, no! Your Builders Club membership is expiring in {numDays} days!"
 	/// </summary>
 	string DescriptionBuildersClubExpiringSomeDays(string numDays);
+}
+
+
 }

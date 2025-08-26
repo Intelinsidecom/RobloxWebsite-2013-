@@ -1,6 +1,6 @@
-namespace Roblox.Platform.EventStream;
+﻿namespace Roblox.EventStream {
+    /// <summary>
 
-/// <summary>
 /// Enum of locations for IChatTrainingData objects
 /// </summary>
 public enum Region
@@ -9,4 +9,7 @@ public enum Region
 	GDPR,
 	Other,
 	UnitedStates
+}
+
+
 }

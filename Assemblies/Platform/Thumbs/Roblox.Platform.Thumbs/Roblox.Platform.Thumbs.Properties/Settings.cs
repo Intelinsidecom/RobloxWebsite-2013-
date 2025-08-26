@@ -1,14 +1,13 @@
-using System.CodeDom.Compiler;
+﻿using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
+namespace Roblox.Platform.Thumbs.Properties {
+    /// <summary>
 
-namespace Roblox.Thumbs.Properties;
-
-/// <summary>
 /// Configuration that uses Roblox.Configuration.Provider
 /// </summary>
 [SettingsProvider(typeof(Provider))]
@@ -132,4 +131,7 @@ internal sealed class Settings : ApplicationSettingsBase
 	{
 		_Properties.TryRemove(propertyChangeEvent.PropertyName, out var _);
 	}
+}
+
+
 }

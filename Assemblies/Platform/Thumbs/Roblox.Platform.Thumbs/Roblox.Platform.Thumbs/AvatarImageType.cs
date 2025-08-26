@@ -1,8 +1,11 @@
-namespace Roblox.Thumbs;
+﻿namespace Roblox.Platform.Thumbspublic {
+    enum AvatarImageType
 
-public enum AvatarImageType
 {
 	Normal,
 	Bust,
 	Headshot
+}
+
+
 }

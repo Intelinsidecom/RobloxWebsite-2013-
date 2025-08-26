@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class BotScoreCheckEventArgs : WebEventArgs
 
-public class BotScoreCheckEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The reason for the score given. Note, reason currently doesn't exist.
@@ -17,3 +18,12 @@ public class BotScoreCheckEventArgs : WebEventArgs
 	/// </summary>
 	public string Context { get; set; }
 }
+
+
+}
+
+
+
+
+
+

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ReturnToStudioResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -54,12 +54,12 @@ internal class ReturnToStudioResources_fr_fr : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionAttemptedUsername(string username)
 	{
-		return $"Vous essayiez de vous connecter à Studio en tant que {username}.";
+		return $"Vous essayiez de vous connecter Ã  Studio en tant que {username}.";
 	}
 
 	protected override string _GetTemplateForDescriptionAttemptedUsername()
 	{
-		return "Vous essayiez de vous connecter à Studio en tant que {username}.";
+		return "Vous essayiez de vous connecter Ã  Studio en tant que {username}.";
 	}
 
 	protected override string _GetTemplateForDescriptionOpeningStudio()
@@ -101,4 +101,7 @@ internal class ReturnToStudioResources_fr_fr : ReturnToStudioResources_en_us, IR
 	{
 		return "Si Studio ne se lance pas, cliquez ici pour obtenir de l'aide";
 	}
+}
+
+
 }

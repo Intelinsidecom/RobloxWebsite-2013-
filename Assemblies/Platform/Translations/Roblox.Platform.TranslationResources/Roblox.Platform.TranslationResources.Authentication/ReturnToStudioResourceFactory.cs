@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class ReturnToStudioResourceFactory
 
-internal static class ReturnToStudioResourceFactory
 {
 	public const string FullNamespace = "Authentication.ReturnToStudio";
 
@@ -21,4 +21,7 @@ internal static class ReturnToStudioResourceFactory
 			_ => new ReturnToStudioResources_en_us(state), 
 		};
 	}
+}
+
+
 }

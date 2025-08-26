@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DevExHomeResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -64,37 +64,37 @@ internal class DevExHomeResources_pt_br : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelBuilderClubForCash"
 	/// English String: "You'll need Outrageous Builder's Club to exchange Robux for cash."
 	/// </summary>
-	public override string GetLabelBuilderClubForCash => "Você precisa de Outrageous Builder's Club para trocar Robux por dinheiro.";
+	public override string GetLabelBuilderClubForCash => "VocÃª precisa de Outrageous Builder's Club para trocar Robux por dinheiro.";
 
 	/// <summary>
 	/// Key: "GetLabelBuildersCludForCashout"
 	/// English String: "You need Outrageous Builders Club to Cash Out."
 	/// </summary>
-	public override string GetLabelBuildersCludForCashout => "Você precisa do Outrageous Builder's Club para fazer uma retirada.";
+	public override string GetLabelBuildersCludForCashout => "VocÃª precisa do Outrageous Builder's Club para fazer uma retirada.";
 
 	/// <summary>
 	/// Key: "GetLabelCurrentExchangeRate"
 	/// English String: "Current Exchange Rates"
 	/// </summary>
-	public override string GetLabelCurrentExchangeRate => "Taxas de câmbio atuais";
+	public override string GetLabelCurrentExchangeRate => "Taxas de cÃ¢mbio atuais";
 
 	/// <summary>
 	/// Key: "GetLabelNeedVerifiedEmail"
 	/// English String: "You need a verified email address to use DevEx."
 	/// </summary>
-	public override string GetLabelNeedVerifiedEmail => "Você precisa de um endereço de e-mail verificado para usar DevEx.";
+	public override string GetLabelNeedVerifiedEmail => "VocÃª precisa de um endereÃ§o de e-mail verificado para usar DevEx.";
 
 	/// <summary>
 	/// Key: "GetLabelNotEligible"
 	/// English String: "You are not eligible currently."
 	/// </summary>
-	public override string GetLabelNotEligible => "Você não é elegível no momento.";
+	public override string GetLabelNotEligible => "VocÃª nÃ£o Ã© elegÃ­vel no momento.";
 
 	/// <summary>
 	/// Key: "GetLabelNotEnoughRobuxForCashout"
 	/// English String: "You don't have enough Robux to Cash Out."
 	/// </summary>
-	public override string GetLabelNotEnoughRobuxForCashout => "Você não tem Robux suficientes para fazer uma retirada.";
+	public override string GetLabelNotEnoughRobuxForCashout => "VocÃª nÃ£o tem Robux suficientes para fazer uma retirada.";
 
 	/// <summary>
 	/// Key: "GetLabelRobux"
@@ -106,19 +106,19 @@ internal class DevExHomeResources_pt_br : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelTradingRobux"
 	/// English String: "You're on your way to trading Robux for cash!"
 	/// </summary>
-	public override string GetLabelTradingRobux => "Você está prestes a trocar Robux por dinheiro!";
+	public override string GetLabelTradingRobux => "VocÃª estÃ¡ prestes a trocar Robux por dinheiro!";
 
 	/// <summary>
 	/// Key: "GetLabelTradingRobuxCash"
 	/// English String: "You're almost there! You almost qualify to trade your Robux for cash!"
 	/// </summary>
-	public override string GetLabelTradingRobuxCash => "Quase lá! Você está quase qualificado para trocar Robux por dinheiro!";
+	public override string GetLabelTradingRobuxCash => "Quase lÃ¡! VocÃª estÃ¡ quase qualificado para trocar Robux por dinheiro!";
 
 	/// <summary>
 	/// Key: "GetLabelVerifiedEmailForCashout"
 	/// English String: "You must verify your email before you can cash out."
 	/// </summary>
-	public override string GetLabelVerifiedEmailForCashout => "Você precisa validar o seu e-mail antes de poder fazer uma retirada.";
+	public override string GetLabelVerifiedEmailForCashout => "VocÃª precisa validar o seu e-mail antes de poder fazer uma retirada.";
 
 	public DevExHomeResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -172,32 +172,32 @@ internal class DevExHomeResources_pt_br : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelBuilderClubForCash()
 	{
-		return "Você precisa de Outrageous Builder's Club para trocar Robux por dinheiro.";
+		return "VocÃª precisa de Outrageous Builder's Club para trocar Robux por dinheiro.";
 	}
 
 	protected override string _GetTemplateForGetLabelBuildersCludForCashout()
 	{
-		return "Você precisa do Outrageous Builder's Club para fazer uma retirada.";
+		return "VocÃª precisa do Outrageous Builder's Club para fazer uma retirada.";
 	}
 
 	protected override string _GetTemplateForGetLabelCurrentExchangeRate()
 	{
-		return "Taxas de câmbio atuais";
+		return "Taxas de cÃ¢mbio atuais";
 	}
 
 	protected override string _GetTemplateForGetLabelNeedVerifiedEmail()
 	{
-		return "Você precisa de um endereço de e-mail verificado para usar DevEx.";
+		return "VocÃª precisa de um endereÃ§o de e-mail verificado para usar DevEx.";
 	}
 
 	protected override string _GetTemplateForGetLabelNotEligible()
 	{
-		return "Você não é elegível no momento.";
+		return "VocÃª nÃ£o Ã© elegÃ­vel no momento.";
 	}
 
 	protected override string _GetTemplateForGetLabelNotEnoughRobuxForCashout()
 	{
-		return "Você não tem Robux suficientes para fazer uma retirada.";
+		return "VocÃª nÃ£o tem Robux suficientes para fazer uma retirada.";
 	}
 
 	protected override string _GetTemplateForGetLabelRobux()
@@ -207,16 +207,19 @@ internal class DevExHomeResources_pt_br : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelTradingRobux()
 	{
-		return "Você está prestes a trocar Robux por dinheiro!";
+		return "VocÃª estÃ¡ prestes a trocar Robux por dinheiro!";
 	}
 
 	protected override string _GetTemplateForGetLabelTradingRobuxCash()
 	{
-		return "Quase lá! Você está quase qualificado para trocar Robux por dinheiro!";
+		return "Quase lÃ¡! VocÃª estÃ¡ quase qualificado para trocar Robux por dinheiro!";
 	}
 
 	protected override string _GetTemplateForGetLabelVerifiedEmailForCashout()
 	{
-		return "Você precisa validar o seu e-mail antes de poder fazer uma retirada.";
+		return "VocÃª precisa validar o seu e-mail antes de poder fazer uma retirada.";
 	}
+}
+
+
 }

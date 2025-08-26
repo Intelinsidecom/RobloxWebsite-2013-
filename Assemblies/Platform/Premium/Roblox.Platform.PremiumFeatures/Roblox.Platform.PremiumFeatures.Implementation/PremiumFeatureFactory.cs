@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Roblox.PremiumFeatures.Interfaces;
+namespace Roblox.Platform.PremiumFeatures.Implementation {
+    /// <inheritdoc />
 
-namespace Roblox.PremiumFeatures.Implementation;
-
-/// <inheritdoc />
 public class PremiumFeatureFactory : IPremiumFeatureFactory
 {
 	/// <inheritdoc />
@@ -314,4 +313,7 @@ public class PremiumFeatureFactory : IPremiumFeatureFactory
 		}
 		return null;
 	}
+}
+
+
 }

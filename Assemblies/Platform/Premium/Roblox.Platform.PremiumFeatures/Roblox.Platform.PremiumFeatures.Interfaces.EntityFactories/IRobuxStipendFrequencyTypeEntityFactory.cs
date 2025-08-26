@@ -1,8 +1,7 @@
-using Roblox.PremiumFeatures.Interfaces.Entities;
+﻿using Roblox.PremiumFeatures.Interfaces.Entities;
+namespace Roblox.Platform.PremiumFeatures.Interfaces.EntityFactories {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Interfaces.EntityFactories;
-
-/// <summary>
 /// The Entity Factory for <see cref="T:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity" />
 /// </summary>
 public interface IRobuxStipendFrequencyTypeEntityFactory
@@ -20,4 +19,7 @@ public interface IRobuxStipendFrequencyTypeEntityFactory
 	/// <param name="value">The value.</param>
 	/// <returns>The <see cref="T:Roblox.PremiumFeatures.Interfaces.Entities.IRobuxStipendFrequencyTypeEntity" /> with the given value, or null if none existed.</returns>
 	IRobuxStipendFrequencyTypeEntity GetByValue(string value);
+}
+
+
 }

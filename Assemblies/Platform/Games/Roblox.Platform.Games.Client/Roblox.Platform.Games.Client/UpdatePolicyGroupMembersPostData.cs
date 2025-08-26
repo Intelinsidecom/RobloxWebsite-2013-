@@ -1,8 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.Games.Clientpublic {
+    class UpdatePolicyGroupMembersPostData
 
-namespace Roblox.Games.Client;
-
-public class UpdatePolicyGroupMembersPostData
 {
 	public IReadOnlyCollection<PolicyGroupMember> PolicyGroupMembers { get; set; }
+}
+
+
 }

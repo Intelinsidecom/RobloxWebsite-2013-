@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -6,10 +6,9 @@ using System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
+namespace Roblox.Platform.GameInstances.Client.Properties {
+    [SettingsProvider(typeof(Provider))]
 
-namespace Roblox.GameInstances.Client.Properties;
-
-[SettingsProvider(typeof(Provider))]
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.3.0.0")]
 internal sealed class Settings : ApplicationSettingsBase
@@ -70,4 +69,7 @@ internal sealed class Settings : ApplicationSettingsBase
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, (ApplicationSettingsBase)(object)this);
 	}
+}
+
+
 }

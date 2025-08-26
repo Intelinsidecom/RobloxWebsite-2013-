@@ -1,6 +1,6 @@
-namespace Roblox.RealTimeNotifications;
+﻿namespace Roblox.Platform.RealTimeNotificationspublic {
+    class UserNotification
 
-public class UserNotification
 {
 	public string NotificationNamespace { get; set; }
 
@@ -14,4 +14,7 @@ public class UserNotification
 		NotificationDetail = notificationDetail;
 		SequenceNumber = sequenceNumber;
 	}
+}
+
+
 }

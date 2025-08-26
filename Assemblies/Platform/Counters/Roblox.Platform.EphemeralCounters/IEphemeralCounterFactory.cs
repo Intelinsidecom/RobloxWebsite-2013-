@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.EphemeralCounterspublic {
+    interface IEphemeralCounterFactory
 
-namespace Roblox.EphemeralCounters;
-
-public interface IEphemeralCounterFactory
 {
 	ISequence GetSequence(string sequenceName);
 
@@ -20,4 +19,7 @@ public interface IEphemeralCounterFactory
 	void BatchAddToSequences(IDictionary<string, double> entries);
 
 	void BatchAddToSequencesInBackground(IDictionary<string, double> entries, Action<Exception> exceptionHandler = null);
+}
+
+
 }

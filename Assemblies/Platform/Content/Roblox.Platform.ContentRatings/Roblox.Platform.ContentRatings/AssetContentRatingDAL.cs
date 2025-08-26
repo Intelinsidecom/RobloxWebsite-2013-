@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.ContentRatings.Properties;
 using Roblox.Data;
+namespace Roblox.Platform.ContentRatingspublic {
+    class AssetContentRatingDAL
 
-namespace Roblox.ContentRatings;
-
-public class AssetContentRatingDAL
 {
 	private long _ID;
 
@@ -101,4 +100,7 @@ public class AssetContentRatingDAL
 		queryParameters.Add(new SqlParameter("@AssetHashID", AssetHashID));
 		return EntityHelper.GetEntityDAL(new DbInfo(dbConnectionString_AssetContentRatingDAL, "AssetContentRatings_GetAssetContentRatingByAssetHashID", queryParameters), BuildDAL);
 	}
+}
+
+
 }

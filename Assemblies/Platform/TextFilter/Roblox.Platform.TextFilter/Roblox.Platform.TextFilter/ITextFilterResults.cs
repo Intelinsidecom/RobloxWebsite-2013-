@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Results from calling FilterText.
 /// </summary>
 public interface ITextFilterResults
@@ -18,4 +18,7 @@ public interface ITextFilterResults
 	ITextFilterRuleResult AgeUnder13Result { get; }
 
 	ITextFilterRuleResult Age13OrOverResult { get; }
+}
+
+
 }

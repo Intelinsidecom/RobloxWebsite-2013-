@@ -1,12 +1,12 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class RobuxPageClickEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class RobuxPageClickEvent : WebEventBase
 {
 	private const string _Name = "RobuxPageClick";
 
-	public RobuxPageClickEvent(EventStreamer streamer, RobuxPageClickEventArgs eventArgs)
+	public RobuxPageClickEvent(IEventStreamer streamer, RobuxPageClickEventArgs eventArgs)
 		: base(streamer, "RobuxPageClick", eventArgs)
 	{
 		if (string.IsNullOrWhiteSpace(eventArgs.Page))
@@ -21,3 +21,12 @@ public class RobuxPageClickEvent : WebEventBase
 		AddEventArg("ctx", eventArgs.Context);
 	}
 }
+
+
+}
+
+
+
+
+
+

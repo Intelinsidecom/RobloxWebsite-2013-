@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Roblox.Caching.Interfaces;
 using Roblox.DataV2.Core;
+namespace Roblox.Platform.Ownership.Client {
 
-namespace Roblox.Ownership.Client
-{
     public sealed class OwnershipAuthorityFactory
     {
         public static OwnershipAuthorityFactory Singleton { get; } = new OwnershipAuthorityFactory();
@@ -225,4 +224,5 @@ namespace Roblox.Ownership.Client
             }
         }
     }
+}
 }

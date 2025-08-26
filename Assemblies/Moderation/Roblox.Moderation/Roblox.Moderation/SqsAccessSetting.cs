@@ -1,8 +1,7 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// AWS SQS config settings.
 /// </summary>
 public class SqsAccessSetting
@@ -18,4 +17,7 @@ public class SqsAccessSetting
 	/// </summary>
 	[JsonProperty("sqs_secret_key")]
 	public string SqsSecretAccessKey { get; set; }
+}
+
+
 }

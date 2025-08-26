@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Represents the event arguments for an <see cref="T:Roblox.Platform.EventStream.WebEvents.AbEnrollmentEvent" />.
 /// </summary>
 public class AbEnrollmentEventArgs : WebEventArgs
@@ -35,3 +36,12 @@ public class AbEnrollmentEventArgs : WebEventArgs
 	/// </summary>
 	public long SubjectTargetId { get; set; }
 }
+
+
+}
+
+
+
+
+
+

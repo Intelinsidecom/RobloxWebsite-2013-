@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources;
+﻿namespace Roblox.Platform.TranslationResourcespublic {
+    interface IMasterResources
 
-public interface IMasterResources
 {
 	IAuthenticationResources Authentication { get; }
 
@@ -19,4 +19,7 @@ public interface IMasterResources
 	IModerationResources Moderation { get; }
 
 	ITranslationResources GetTranslationResourcesByFullNamespace(string fullTranslationResourceNamespace);
+}
+
+
 }

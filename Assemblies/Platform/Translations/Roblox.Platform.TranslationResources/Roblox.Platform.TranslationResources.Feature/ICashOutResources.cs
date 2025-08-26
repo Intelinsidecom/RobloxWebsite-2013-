@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface ICashOutResources : ITranslationResources
 
-public interface ICashOutResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -225,4 +225,7 @@ public interface ICashOutResources : ITranslationResources
 	/// English String: "{robuxAmount} Robux for {usdAmount}"
 	/// </summary>
 	string LabelRobuxToUSD(string robuxAmount, string usdAmount);
+}
+
+
 }

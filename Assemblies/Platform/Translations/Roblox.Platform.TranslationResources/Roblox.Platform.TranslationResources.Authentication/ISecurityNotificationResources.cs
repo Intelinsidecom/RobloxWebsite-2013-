@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
+    interface ISecurityNotificationResources : ITranslationResources
 
-public interface ISecurityNotificationResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Heading.Important"
@@ -19,4 +19,7 @@ public interface ISecurityNotificationResources : ITranslationResources
 	/// English String: "Please choose a password that is brand {startSpan}new{endSpan} and {startSpan}unique{endSpan} to Roblox, do not use this password on any other site. This is the best way to prevent your Roblox account from getting compromised."
 	/// </summary>
 	string DescriptionSecurityNotificationTextWarning(string startSpan, string endSpan);
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IPlayerSearchResultsResources : ITranslationResources
 
-public interface IPlayerSearchResultsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.AcceptRequest"
@@ -103,4 +103,7 @@ public interface IPlayerSearchResultsResources : ITranslationResources
 	/// English String: "{countStartSpan}{resultsStart} - {resultsInPage} of {countEndSpan}{totalStartSpan}{totalResults}{totalEndSpan}"
 	/// </summary>
 	string LabelShowingCountOfResults(string countStartSpan, string resultsStart, string resultsInPage, string countEndSpan, string totalStartSpan, string totalResults, string totalEndSpan);
+}
+
+
 }

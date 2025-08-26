@@ -2,11 +2,10 @@ using System;
 using System.Collections.Generic;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-using Roblox.Platform.EventStream.Properties;
+using Roblox.EventStream.Properties;
+namespace Roblox.EventStream {
+    public class EventStreamer : IEventStreamer
 
-namespace Roblox.Platform.EventStream;
-
-public class EventStreamer : IEventStreamer
 {
 	private readonly ILogger _Logger;
 
@@ -45,4 +44,7 @@ public class EventStreamer : IEventStreamer
 			_KinesisFirehoseSender.PublishEvent(target, eventType, eventParameters, clientIp, isTrustedSource);
 		}
 	}
+}
+
+
 }

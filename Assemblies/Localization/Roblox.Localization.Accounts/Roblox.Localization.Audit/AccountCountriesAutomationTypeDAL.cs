@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -6,10 +6,9 @@ using System.Diagnostics.CodeAnalysis;
 using Roblox.Common;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountCountriesAutomationTypeDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxAccountCountriesAudit;
@@ -109,4 +108,7 @@ internal class AccountCountriesAutomationTypeDAL
 		};
 		return RobloxDatabase.RobloxAccountCountriesAudit.GetOrCreate("AutomationTypes_GetOrCreateAutomationType", BuildDAL, queryParameters);
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SurveysGameRatingsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,7 +11,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 	/// A recurring possible answer choice to questions formatted as "Does this game contain ____?"
 	/// English String: "Frequently"
 	/// </summary>
-	public override string DescriptionAnswerToDoesThisGameContainFrequently => "Häufig";
+	public override string DescriptionAnswerToDoesThisGameContainFrequently => "HÃ¤ufig";
 
 	/// <summary>
 	/// Key: "Description.AnswerToDoesThisGameContain.Infrequently"
@@ -39,42 +39,42 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 	/// Answer choices are "No", "Yes"
 	/// English String: "Can users wager Robux, in game currency purchased with Robux or other items of real value?"
 	/// </summary>
-	public override string DescriptionCanUsersWagerRobuxInGameCurrencyPurchasedWithRobuxOrOtherItemsOfRealValue => "Können Benutzer Robux, mit Robux gekaufte Spielwährung oder andere Artikel mit materiellem Wert als Wetteinsatz verwenden?";
+	public override string DescriptionCanUsersWagerRobuxInGameCurrencyPurchasedWithRobuxOrOtherItemsOfRealValue => "KÃ¶nnen Benutzer Robux, mit Robux gekaufte SpielwÃ¤hrung oder andere Artikel mit materiellem Wert als Wetteinsatz verwenden?";
 
 	/// <summary>
 	/// Key: "Description.DefenselessViolenceQuestion"
 	/// Answer choices are "No", "Yes"
 	/// English String: "Does this game contain violence directed towards defenseless characters?"
 	/// </summary>
-	public override string DescriptionDefenselessViolenceQuestion => "Enthält dieses Spiel gewalttätige Handlungen gegenüber wehrlosen Charakteren?";
+	public override string DescriptionDefenselessViolenceQuestion => "EnthÃ¤lt dieses Spiel gewalttÃ¤tige Handlungen gegenÃ¼ber wehrlosen Charakteren?";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameContainBathroomHumor"
 	/// Answer choices are "No", "Infrequently", "Frequently"
 	/// English String: "Does this game contain bathroom humor?"
 	/// </summary>
-	public override string DescriptionDoesThisGameContainBathroomHumor => "Enthält dieses Spiel Fäkalhumor?";
+	public override string DescriptionDoesThisGameContainBathroomHumor => "EnthÃ¤lt dieses Spiel FÃ¤kalhumor?";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameContainCrudeHumor"
 	/// Answer choices are "No", "Infrequently", "Frequently"
 	/// English String: "Does this game contain crude humor?"
 	/// </summary>
-	public override string DescriptionDoesThisGameContainCrudeHumor => "Enthält dieses Spiel derben Humor?";
+	public override string DescriptionDoesThisGameContainCrudeHumor => "EnthÃ¤lt dieses Spiel derben Humor?";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameContainNudityOrDepictionsOfSex"
 	/// Answer choices are "No", "Yes"
 	/// English String: "Does this game contain nudity or depictions of sex?"
 	/// </summary>
-	public override string DescriptionDoesThisGameContainNudityOrDepictionsOfSex => "Enthält dieses Spiel Nacktheit oder die Darstellung sexueller Handlungen?";
+	public override string DescriptionDoesThisGameContainNudityOrDepictionsOfSex => "EnthÃ¤lt dieses Spiel Nacktheit oder die Darstellung sexueller Handlungen?";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameContainReferencesToAlcoholTobaccoOrDrugs"
 	/// This question has four possible answer choices: "No", "Infrequent references", "Frequent references", "Characters are shown using alcohol, tobacco or drugs"
 	/// English String: "Does this game contain references to alcohol, tobacco or drugs?"
 	/// </summary>
-	public override string DescriptionDoesThisGameContainReferencesToAlcoholTobaccoOrDrugs => "Enthält dieses Spiel Referenzen zu Alkohol, Tabakprodukten oder Drogen?";
+	public override string DescriptionDoesThisGameContainReferencesToAlcoholTobaccoOrDrugs => "EnthÃ¤lt dieses Spiel Referenzen zu Alkohol, Tabakprodukten oder Drogen?";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameContainReferencesToAlcoholTobaccoOrDrugs.CharactersAreShownUsingAlcoholTobac"
@@ -88,7 +88,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 	/// One of four possible answers to "Does this game contain references to alcohol, tobacco or drugs?", with an implied "Yes"
 	/// English String: "Frequent references"
 	/// </summary>
-	public override string DescriptionDoesThisGameContainReferencesToAlcoholTobaccoOrDrugsFrequentReferences => "Häufige Referenzen";
+	public override string DescriptionDoesThisGameContainReferencesToAlcoholTobaccoOrDrugsFrequentReferences => "HÃ¤ufige Referenzen";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameContainReferencesToAlcoholTobaccoOrDrugs.InfrequentReferences"
@@ -109,21 +109,21 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 	/// Answer choices are "No", "Yes"
 	/// English String: "Does this game contain simulated gambling or paid loot boxes?"
 	/// </summary>
-	public override string DescriptionDoesThisGameContainSimulatedGamblingOrPaidLootBoxes => "Enthält dieses Spiel simuliertes Glücksspiel oder Beutekisten, die gekauft werden können?";
+	public override string DescriptionDoesThisGameContainSimulatedGamblingOrPaidLootBoxes => "EnthÃ¤lt dieses Spiel simuliertes GlÃ¼cksspiel oder Beutekisten, die gekauft werden kÃ¶nnen?";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameContainSuggestiveSexualThemes"
 	/// Answer choices are "No", "Yes"
 	/// English String: "Does this game contain suggestive sexual themes?"
 	/// </summary>
-	public override string DescriptionDoesThisGameContainSuggestiveSexualThemes => "Enthält dieses Spiel anzügliche sexuelle Elemente?";
+	public override string DescriptionDoesThisGameContainSuggestiveSexualThemes => "EnthÃ¤lt dieses Spiel anzÃ¼gliche sexuelle Elemente?";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameFollowTheCommunityRules"
 	/// Answer choices are "No, "Yes"
 	/// English String: "Does this game follow the the community rules? "
 	/// </summary>
-	public override string DescriptionDoesThisGameFollowTheCommunityRules => "Hält dieses Spiel die Community-Regeln ein? ";
+	public override string DescriptionDoesThisGameFollowTheCommunityRules => "HÃ¤lt dieses Spiel die Community-Regeln ein? ";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameFollowTheCommunityRules.No"
@@ -151,7 +151,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 	/// One of four possible answers to "Does this game use profanity?", with an implied "Yes"
 	/// English String: "Frequent profanity"
 	/// </summary>
-	public override string DescriptionDoesThisGameUseProfanityFrequentProfanity => "Häufiges Fluchen";
+	public override string DescriptionDoesThisGameUseProfanityFrequentProfanity => "HÃ¤ufiges Fluchen";
 
 	/// <summary>
 	/// Key: "Description.DoesThisGameUseProfanity.InfrequentProfanity"
@@ -172,21 +172,21 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 	/// One of four possible answers to "Does this game use profanity?", with an implied "Yes"
 	/// English String: "Some mild bad language"
 	/// </summary>
-	public override string DescriptionDoesThisGameUseProfanitySomeMildBadLanguage => "Einige harmlose Flüche";
+	public override string DescriptionDoesThisGameUseProfanitySomeMildBadLanguage => "Einige harmlose FlÃ¼che";
 
 	/// <summary>
 	/// Key: "Description.ScaryForChildUnderEightQuestion"
 	/// Answer choices are "No", "Infrequently", "Frequently"
 	/// English String: "Does this game contain content that might be scary for a young child under 8 years old?"
 	/// </summary>
-	public override string DescriptionScaryForChildUnderEightQuestion => "Enthält dieses Spiel Darstellungen, die von Kindern unter 8 Jahren als furchterregend empfunden werden können?";
+	public override string DescriptionScaryForChildUnderEightQuestion => "EnthÃ¤lt dieses Spiel Darstellungen, die von Kindern unter 8 Jahren als furchterregend empfunden werden kÃ¶nnen?";
 
 	/// <summary>
 	/// Key: "Description.ScaryForChildUnderTwelveQuestion"
 	/// Answer choices are "No", "Infrequently", "Frequently"
 	/// English String: "Does this game contain content that might be scary for a young child under 12 years old?"
 	/// </summary>
-	public override string DescriptionScaryForChildUnderTwelveQuestion => "Enthält dieses Spiel Darstellungen, die von Kindern unter 12 Jahren als furchterregend empfunden werden können?";
+	public override string DescriptionScaryForChildUnderTwelveQuestion => "EnthÃ¤lt dieses Spiel Darstellungen, die von Kindern unter 12 Jahren als furchterregend empfunden werden kÃ¶nnen?";
 
 	/// <summary>
 	/// Key: "Description.ViolenceQuestion.ComicalViolence"
@@ -200,7 +200,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 	/// Note: This survey question lets user pick one of five possible responses, as opposed to being just a "Yes/No" question.
 	/// English String: "Does this game contain violent content?"
 	/// </summary>
-	public override string DescriptionViolenceQuestionDoesThisGameContainViolentContent => "Enthält dieses Spiel gewalttätige Elemente?";
+	public override string DescriptionViolenceQuestionDoesThisGameContainViolentContent => "EnthÃ¤lt dieses Spiel gewalttÃ¤tige Elemente?";
 
 	/// <summary>
 	/// Key: "Description.ViolenceQuestion.EasilyDistinguishableFromRealLife"
@@ -237,7 +237,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 
 	protected override string _GetTemplateForDescriptionAnswerToDoesThisGameContainFrequently()
 	{
-		return "Häufig";
+		return "HÃ¤ufig";
 	}
 
 	protected override string _GetTemplateForDescriptionAnswerToDoesThisGameContainInfrequently()
@@ -257,32 +257,32 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 
 	protected override string _GetTemplateForDescriptionCanUsersWagerRobuxInGameCurrencyPurchasedWithRobuxOrOtherItemsOfRealValue()
 	{
-		return "Können Benutzer Robux, mit Robux gekaufte Spielwährung oder andere Artikel mit materiellem Wert als Wetteinsatz verwenden?";
+		return "KÃ¶nnen Benutzer Robux, mit Robux gekaufte SpielwÃ¤hrung oder andere Artikel mit materiellem Wert als Wetteinsatz verwenden?";
 	}
 
 	protected override string _GetTemplateForDescriptionDefenselessViolenceQuestion()
 	{
-		return "Enthält dieses Spiel gewalttätige Handlungen gegenüber wehrlosen Charakteren?";
+		return "EnthÃ¤lt dieses Spiel gewalttÃ¤tige Handlungen gegenÃ¼ber wehrlosen Charakteren?";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainBathroomHumor()
 	{
-		return "Enthält dieses Spiel Fäkalhumor?";
+		return "EnthÃ¤lt dieses Spiel FÃ¤kalhumor?";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainCrudeHumor()
 	{
-		return "Enthält dieses Spiel derben Humor?";
+		return "EnthÃ¤lt dieses Spiel derben Humor?";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainNudityOrDepictionsOfSex()
 	{
-		return "Enthält dieses Spiel Nacktheit oder die Darstellung sexueller Handlungen?";
+		return "EnthÃ¤lt dieses Spiel Nacktheit oder die Darstellung sexueller Handlungen?";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainReferencesToAlcoholTobaccoOrDrugs()
 	{
-		return "Enthält dieses Spiel Referenzen zu Alkohol, Tabakprodukten oder Drogen?";
+		return "EnthÃ¤lt dieses Spiel Referenzen zu Alkohol, Tabakprodukten oder Drogen?";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainReferencesToAlcoholTobaccoOrDrugsCharactersAreShownUsingAlcoholTobac()
@@ -292,7 +292,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainReferencesToAlcoholTobaccoOrDrugsFrequentReferences()
 	{
-		return "Häufige Referenzen";
+		return "HÃ¤ufige Referenzen";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainReferencesToAlcoholTobaccoOrDrugsInfrequentReferences()
@@ -307,17 +307,17 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainSimulatedGamblingOrPaidLootBoxes()
 	{
-		return "Enthält dieses Spiel simuliertes Glücksspiel oder Beutekisten, die gekauft werden können?";
+		return "EnthÃ¤lt dieses Spiel simuliertes GlÃ¼cksspiel oder Beutekisten, die gekauft werden kÃ¶nnen?";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameContainSuggestiveSexualThemes()
 	{
-		return "Enthält dieses Spiel anzügliche sexuelle Elemente?";
+		return "EnthÃ¤lt dieses Spiel anzÃ¼gliche sexuelle Elemente?";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameFollowTheCommunityRules()
 	{
-		return "Hält dieses Spiel die Community-Regeln ein? ";
+		return "HÃ¤lt dieses Spiel die Community-Regeln ein? ";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameFollowTheCommunityRulesNo()
@@ -337,7 +337,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 
 	protected override string _GetTemplateForDescriptionDoesThisGameUseProfanityFrequentProfanity()
 	{
-		return "Häufiges Fluchen";
+		return "HÃ¤ufiges Fluchen";
 	}
 
 	protected override string _GetTemplateForDescriptionDoesThisGameUseProfanityInfrequentProfanity()
@@ -352,17 +352,17 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 
 	protected override string _GetTemplateForDescriptionDoesThisGameUseProfanitySomeMildBadLanguage()
 	{
-		return "Einige harmlose Flüche";
+		return "Einige harmlose FlÃ¼che";
 	}
 
 	protected override string _GetTemplateForDescriptionScaryForChildUnderEightQuestion()
 	{
-		return "Enthält dieses Spiel Darstellungen, die von Kindern unter 8 Jahren als furchterregend empfunden werden können?";
+		return "EnthÃ¤lt dieses Spiel Darstellungen, die von Kindern unter 8 Jahren als furchterregend empfunden werden kÃ¶nnen?";
 	}
 
 	protected override string _GetTemplateForDescriptionScaryForChildUnderTwelveQuestion()
 	{
-		return "Enthält dieses Spiel Darstellungen, die von Kindern unter 12 Jahren als furchterregend empfunden werden können?";
+		return "EnthÃ¤lt dieses Spiel Darstellungen, die von Kindern unter 12 Jahren als furchterregend empfunden werden kÃ¶nnen?";
 	}
 
 	protected override string _GetTemplateForDescriptionViolenceQuestionComicalViolence()
@@ -372,7 +372,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 
 	protected override string _GetTemplateForDescriptionViolenceQuestionDoesThisGameContainViolentContent()
 	{
-		return "Enthält dieses Spiel gewalttätige Elemente?";
+		return "EnthÃ¤lt dieses Spiel gewalttÃ¤tige Elemente?";
 	}
 
 	protected override string _GetTemplateForDescriptionViolenceQuestionEasilyDistinguishableFromRealLife()
@@ -394,4 +394,7 @@ internal class SurveysGameRatingsResources_de_de : SurveysGameRatingsResources_e
 	{
 		return "Teilweise realistische Gewaltdarstellung";
 	}
+}
+
+
 }

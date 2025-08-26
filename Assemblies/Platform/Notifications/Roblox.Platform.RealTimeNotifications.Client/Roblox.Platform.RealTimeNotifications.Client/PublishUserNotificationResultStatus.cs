@@ -1,7 +1,10 @@
-namespace Roblox.RealTimeNotifications.Client;
+﻿namespace Roblox.Platform.RealTimeNotifications.Clientpublic {
+    enum PublishUserNotificationResultStatus
 
-public enum PublishUserNotificationResultStatus
 {
 	UserReceivedNotification = 1,
 	UserDidNotReceiveNotification
+}
+
+
 }

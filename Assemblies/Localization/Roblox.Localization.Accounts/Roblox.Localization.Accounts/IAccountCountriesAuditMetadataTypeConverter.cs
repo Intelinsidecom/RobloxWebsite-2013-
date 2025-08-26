@@ -1,10 +1,12 @@
-using Roblox.Platform.Localization.Audit;
+﻿using Roblox.Platform.Localization.Audit;
+namespace Roblox.Localization.Accountsinternal {
+    interface IAccountCountriesAuditMetadataTypeConverter
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal interface IAccountCountriesAuditMetadataTypeConverter
 {
 	byte GetEntityIdFromEnum(AccountCountriesAuditEntryMetadataType metadataType);
 
 	AccountCountriesAuditEntryMetadataType GetEnumFromEntity(IAccountCountriesAuditMetadataTypeEntity metadataTypeEntity);
+}
+
+
 }

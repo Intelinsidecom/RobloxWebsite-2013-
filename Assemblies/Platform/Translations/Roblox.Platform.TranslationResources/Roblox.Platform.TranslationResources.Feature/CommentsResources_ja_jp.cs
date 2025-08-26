@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CommentsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,161 +11,161 @@ internal class CommentsResources_ja_jp : CommentsResources_en_us, ICommentsResou
 	/// button text
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "ログイン";
+	public override string ActionLogin => "ãƒ­ã‚°ã‚¤ãƒ³";
 
 	/// <summary>
 	/// Key: "Heading.Comments"
 	/// English String: "Comments"
 	/// </summary>
-	public override string HeadingComments => "コメント";
+	public override string HeadingComments => "ã‚³ãƒ¡ãƒ³ãƒˆ";
 
 	/// <summary>
 	/// Key: "Heading.LoginToComment"
 	/// modal heading
 	/// English String: "Login to Comment"
 	/// </summary>
-	public override string HeadingLoginToComment => "ログインしてコメントする";
+	public override string HeadingLoginToComment => "ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ã‚³ãƒ¡ãƒ³ãƒˆã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.AccountPageTitle"
 	/// English String: "Account"
 	/// </summary>
-	public override string LabelAccountPageTitle => "アカウント";
+	public override string LabelAccountPageTitle => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "キャンセル";
+	public override string LabelCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Label.CharactersRemaining"
 	/// English String: "characters remaining"
 	/// </summary>
-	public override string LabelCharactersRemaining => "文字残っています";
+	public override string LabelCharactersRemaining => "æ–‡å­—æ®‹ã£ã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.CommentModerated"
 	/// Feedback for user when their comment has been moderated
 	/// English String: "Your comment has been moderated."
 	/// </summary>
-	public override string LabelCommentModerated => "規制対象のコメントです。";
+	public override string LabelCommentModerated => "è¦åˆ¶å¯¾è±¡ã®ã‚³ãƒ¡ãƒ³ãƒˆã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.EmailVerifiedTitle"
 	/// English String: "Verify Your Email"
 	/// </summary>
-	public override string LabelEmailVerifiedTitle => "メールアドレスを認証";
+	public override string LabelEmailVerifiedTitle => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼";
 
 	/// <summary>
 	/// Key: "Label.FeatureNotAvailable"
 	/// English String: "This feature is not available."
 	/// </summary>
-	public override string LabelFeatureNotAvailable => "この機能はご利用いただけません。";
+	public override string LabelFeatureNotAvailable => "ã“ã®æ©Ÿèƒ½ã¯ã”åˆ©ç”¨ã„ãŸã ã‘ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedMessage"
 	/// English String: "Comments should be about the item or place on which you are commenting. Links are not permitted."
 	/// </summary>
-	public override string LabelLinksNotAllowedMessage => "コメントはアイテムやプレースに関するものである必要があります。リンクは許可されていません。";
+	public override string LabelLinksNotAllowedMessage => "ã‚³ãƒ¡ãƒ³ãƒˆã¯ã‚¢ã‚¤ãƒ†ãƒ ã‚„ãƒ—ãƒ¬ãƒ¼ã‚¹ã«é–¢ã™ã‚‹ã‚‚ã®ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ãƒªãƒ³ã‚¯ã¯è¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedTitle"
 	/// English String: "Links Not Allowed"
 	/// </summary>
-	public override string LabelLinksNotAllowedTitle => "リンクが許可されていません";
+	public override string LabelLinksNotAllowedTitle => "ãƒªãƒ³ã‚¯ãŒè¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Label.MoreComments"
 	/// English String: "More Comments"
 	/// </summary>
-	public override string LabelMoreComments => "他のコメント";
+	public override string LabelMoreComments => "ä»–ã®ã‚³ãƒ¡ãƒ³ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.NoCommentsFound"
 	/// English String: "No comments found."
 	/// </summary>
-	public override string LabelNoCommentsFound => "コメントが見つかりません。";
+	public override string LabelNoCommentsFound => "ã‚³ãƒ¡ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.PostComment"
 	/// English String: "Post Comment"
 	/// </summary>
-	public override string LabelPostComment => "コメントを投稿";
+	public override string LabelPostComment => "ã‚³ãƒ¡ãƒ³ãƒˆã‚’æŠ•ç¨¿";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "規約違反を報告";
+	public override string LabelReportAbuse => "è¦ç´„é•åã‚’å ±å‘Š";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "もっと見る";
+	public override string LabelSeeMore => "ã‚‚ã£ã¨è¦‹ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.SorryWrong"
 	/// English String: "Sorry, something went wrong."
 	/// </summary>
-	public override string LabelSorryWrong => "申し訳ありません。問題が発生しました。";
+	public override string LabelSorryWrong => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Label.Text"
 	/// English String: "text"
 	/// </summary>
-	public override string LabelText => "テキスト";
+	public override string LabelText => "ãƒ†ã‚­ã‚¹ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.TooManyChracters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyChracters => "文字数が多すぎます！";
+	public override string LabelTooManyChracters => "æ–‡å­—æ•°ãŒå¤šã™ãŽã¾ã™ï¼";
 
 	/// <summary>
 	/// Key: "Label.TooManyNewLines"
 	/// English String: "Too many newlines!"
 	/// </summary>
-	public override string LabelTooManyNewLines => "新しい行が多すぎます！";
+	public override string LabelTooManyNewLines => "æ–°ã—ã„è¡ŒãŒå¤šã™ãŽã¾ã™ï¼";
 
 	/// <summary>
 	/// Key: "Label.UnknownError"
 	/// English String: "Unknown error occurred."
 	/// </summary>
-	public override string LabelUnknownError => "不明なエラーが発生しました。";
+	public override string LabelUnknownError => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Label.UserFlooded"
 	/// Feedback for users when they are flooded (both globally and per specific item) when posting comments for an item
 	/// English String: "You are posting comments too fast. Wait a while before your next comment."
 	/// </summary>
-	public override string LabelUserFlooded => "コメント投稿の間隔が短かすぎます。しばらくしてから投稿してください。";
+	public override string LabelUserFlooded => "ã‚³ãƒ¡ãƒ³ãƒˆæŠ•ç¨¿ã®é–“éš”ãŒçŸ­ã‹ã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰æŠ•ç¨¿ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "username"
 	/// </summary>
-	public override string LabelUsername => "ユーザーネーム";
+	public override string LabelUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Label.UserTooNew"
 	/// Feedback for user when they try to post a comments for an item with a newly registered account
 	/// English String: "Accounts must be older than 1 day to post comments."
 	/// </summary>
-	public override string LabelUserTooNew => "コメントを投稿するには、1日以上経過したアカウントである必要があります。";
+	public override string LabelUserTooNew => "ã‚³ãƒ¡ãƒ³ãƒˆã‚’æŠ•ç¨¿ã™ã‚‹ã«ã¯ã€1æ—¥ä»¥ä¸ŠçµŒéŽã—ãŸã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string LabelVerify => "認証";
+	public override string LabelVerify => "èªè¨¼";
 
 	/// <summary>
 	/// Key: "Label.WriteAComment"
 	/// English String: "Write a comment!"
 	/// </summary>
-	public override string LabelWriteAComment => "コメントを書きましょう！";
+	public override string LabelWriteAComment => "ã‚³ãƒ¡ãƒ³ãƒˆã‚’æ›¸ãã¾ã—ã‚‡ã†ï¼";
 
 	public CommentsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -174,7 +174,7 @@ internal class CommentsResources_ja_jp : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "ログイン";
+		return "ãƒ­ã‚°ã‚¤ãƒ³";
 	}
 
 	/// <summary>
@@ -184,42 +184,42 @@ internal class CommentsResources_ja_jp : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string DescriptionLoginToComment(string linkStart, string linkEnd)
 	{
-		return $"コメントするにはログインする必要があります。 {linkStart}ログインまたは新規登録{linkEnd} してください。";
+		return $"ã‚³ãƒ¡ãƒ³ãƒˆã™ã‚‹ã«ã¯ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ {linkStart}ãƒ­ã‚°ã‚¤ãƒ³ã¾ãŸã¯æ–°è¦ç™»éŒ²{linkEnd} ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionLoginToComment()
 	{
-		return "コメントするにはログインする必要があります。 {linkStart}ログインまたは新規登録{linkEnd} してください。";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆã™ã‚‹ã«ã¯ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ {linkStart}ãƒ­ã‚°ã‚¤ãƒ³ã¾ãŸã¯æ–°è¦ç™»éŒ²{linkEnd} ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingComments()
 	{
-		return "コメント";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆ";
 	}
 
 	protected override string _GetTemplateForHeadingLoginToComment()
 	{
-		return "ログインしてコメントする";
+		return "ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ã‚³ãƒ¡ãƒ³ãƒˆã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelAccountPageTitle()
 	{
-		return "アカウント";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForLabelCharactersRemaining()
 	{
-		return "文字残っています";
+		return "æ–‡å­—æ®‹ã£ã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelCommentModerated()
 	{
-		return "規制対象のコメントです。";
+		return "è¦åˆ¶å¯¾è±¡ã®ã‚³ãƒ¡ãƒ³ãƒˆã§ã™ã€‚";
 	}
 
 	/// <summary>
@@ -228,107 +228,107 @@ internal class CommentsResources_ja_jp : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"コメントを行う前にメールアドレスの認証を行う必要があります。メールアドレスの認証は、{accountPageLink} ページで行えます。";
+		return $"ã‚³ãƒ¡ãƒ³ãƒˆã‚’è¡Œã†å‰ã«ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ã‚’è¡Œã†å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ã¯ã€{accountPageLink} ãƒšãƒ¼ã‚¸ã§è¡Œãˆã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "コメントを行う前にメールアドレスの認証を行う必要があります。メールアドレスの認証は、{accountPageLink} ページで行えます。";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆã‚’è¡Œã†å‰ã«ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ã‚’è¡Œã†å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ã¯ã€{accountPageLink} ãƒšãƒ¼ã‚¸ã§è¡Œãˆã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
 	{
-		return "メールアドレスを認証";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼";
 	}
 
 	protected override string _GetTemplateForLabelFeatureNotAvailable()
 	{
-		return "この機能はご利用いただけません。";
+		return "ã“ã®æ©Ÿèƒ½ã¯ã”åˆ©ç”¨ã„ãŸã ã‘ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedMessage()
 	{
-		return "コメントはアイテムやプレースに関するものである必要があります。リンクは許可されていません。";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆã¯ã‚¢ã‚¤ãƒ†ãƒ ã‚„ãƒ—ãƒ¬ãƒ¼ã‚¹ã«é–¢ã™ã‚‹ã‚‚ã®ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ãƒªãƒ³ã‚¯ã¯è¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedTitle()
 	{
-		return "リンクが許可されていません";
+		return "ãƒªãƒ³ã‚¯ãŒè¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForLabelMoreComments()
 	{
-		return "他のコメント";
+		return "ä»–ã®ã‚³ãƒ¡ãƒ³ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelNoCommentsFound()
 	{
-		return "コメントが見つかりません。";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelPostComment()
 	{
-		return "コメントを投稿";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆã‚’æŠ•ç¨¿";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "規約違反を報告";
+		return "è¦ç´„é•åã‚’å ±å‘Š";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "もっと見る";
+		return "ã‚‚ã£ã¨è¦‹ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelSorryWrong()
 	{
-		return "申し訳ありません。問題が発生しました。";
+		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForLabelText()
 	{
-		return "テキスト";
+		return "ãƒ†ã‚­ã‚¹ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelTooManyChracters()
 	{
-		return "文字数が多すぎます！";
+		return "æ–‡å­—æ•°ãŒå¤šã™ãŽã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForLabelTooManyNewLines()
 	{
-		return "新しい行が多すぎます！";
+		return "æ–°ã—ã„è¡ŒãŒå¤šã™ãŽã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForLabelUnknownError()
 	{
-		return "不明なエラーが発生しました。";
+		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUserFlooded()
 	{
-		return "コメント投稿の間隔が短かすぎます。しばらくしてから投稿してください。";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆæŠ•ç¨¿ã®é–“éš”ãŒçŸ­ã‹ã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰æŠ•ç¨¿ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ユーザーネーム";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForLabelUserTooNew()
 	{
-		return "コメントを投稿するには、1日以上経過したアカウントである必要があります。";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆã‚’æŠ•ç¨¿ã™ã‚‹ã«ã¯ã€1æ—¥ä»¥ä¸ŠçµŒéŽã—ãŸã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelVerify()
 	{
-		return "認証";
+		return "èªè¨¼";
 	}
 
 	protected override string _GetTemplateForLabelWriteAComment()
 	{
-		return "コメントを書きましょう！";
+		return "ã‚³ãƒ¡ãƒ³ãƒˆã‚’æ›¸ãã¾ã—ã‚‡ã†ï¼";
 	}
 
 	/// <summary>
@@ -337,11 +337,14 @@ internal class CommentsResources_ja_jp : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string LabelXHoursAgo(string numberOfHours)
 	{
-		return $"{numberOfHours} 時間前";
+		return $"{numberOfHours} æ™‚é–“å‰";
 	}
 
 	protected override string _GetTemplateForLabelXHoursAgo()
 	{
-		return "{numberOfHours} 時間前";
+		return "{numberOfHours} æ™‚é–“å‰";
 	}
+}
+
+
 }

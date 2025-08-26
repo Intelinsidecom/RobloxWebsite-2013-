@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Roblox.DataV2.Core;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public class UsersClientMergedCache : IUsersClientCache
 {
 	private readonly IReadOnlyCollection<IUsersClientCache> _UsersClientCaches;
@@ -142,3 +141,6 @@ public class UsersClientMergedCache : IUsersClientCache
 		}
 	}
 }
+
+}
+

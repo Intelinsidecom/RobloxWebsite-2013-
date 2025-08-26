@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ReturnToStudioResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -30,7 +30,7 @@ internal class ReturnToStudioResources_es_es : ReturnToStudioResources_en_us, IR
 	/// Key: "Label.StudioHelp"
 	/// English String: "If Studio does not open, click here for help"
 	/// </summary>
-	public override string LabelStudioHelp => "Si Studio no se abre, haz clic aquí para conseguir ayuda.";
+	public override string LabelStudioHelp => "Si Studio no se abre, haz clic aquÃ­ para conseguir ayuda.";
 
 	public ReturnToStudioResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -54,12 +54,12 @@ internal class ReturnToStudioResources_es_es : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionAttemptedUsername(string username)
 	{
-		return $"Estás intentando iniciar sesión en Studio como {username}.";
+		return $"EstÃ¡s intentando iniciar sesiÃ³n en Studio como {username}.";
 	}
 
 	protected override string _GetTemplateForDescriptionAttemptedUsername()
 	{
-		return "Estás intentando iniciar sesión en Studio como {username}.";
+		return "EstÃ¡s intentando iniciar sesiÃ³n en Studio como {username}.";
 	}
 
 	protected override string _GetTemplateForDescriptionOpeningStudio()
@@ -74,12 +74,12 @@ internal class ReturnToStudioResources_es_es : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionOpenStudioSuggestion(string username)
 	{
-		return $"¿Quieres abrir Studio como {username}?";
+		return $"Â¿Quieres abrir Studio como {username}?";
 	}
 
 	protected override string _GetTemplateForDescriptionOpenStudioSuggestion()
 	{
-		return "¿Quieres abrir Studio como {username}?";
+		return "Â¿Quieres abrir Studio como {username}?";
 	}
 
 	/// <summary>
@@ -89,16 +89,19 @@ internal class ReturnToStudioResources_es_es : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string HeadingGreeting(string username)
 	{
-		return $"¡Hola, {username}!";
+		return $"Â¡Hola, {username}!";
 	}
 
 	protected override string _GetTemplateForHeadingGreeting()
 	{
-		return "¡Hola, {username}!";
+		return "Â¡Hola, {username}!";
 	}
 
 	protected override string _GetTemplateForLabelStudioHelp()
 	{
-		return "Si Studio no se abre, haz clic aquí para conseguir ayuda.";
+		return "Si Studio no se abre, haz clic aquÃ­ para conseguir ayuda.";
 	}
+}
+
+
 }

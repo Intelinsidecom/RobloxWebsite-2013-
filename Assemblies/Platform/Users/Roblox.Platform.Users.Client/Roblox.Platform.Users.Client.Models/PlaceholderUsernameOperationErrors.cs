@@ -1,10 +1,11 @@
-namespace Roblox.Users.Client.Models;
-
-public enum PlaceholderUsernameOperationErrors
+namespace Roblox.Platform.Users.Client.Models
 {
-	UnknownError,
-	NotFound,
-	BadArgument,
-	AccountNameActive,
-	AccountNameInactive
+    public enum PlaceholderUsernameOperationErrors
+    {
+        UnknownError,
+        NotFound,
+        BadArgument,
+        AccountNameActive,
+        AccountNameInactive
+    }
 }

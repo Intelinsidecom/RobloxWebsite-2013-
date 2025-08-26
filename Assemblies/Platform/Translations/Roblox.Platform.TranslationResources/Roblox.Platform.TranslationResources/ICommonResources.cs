@@ -1,8 +1,7 @@
-using Roblox.TranslationResources.Common;
+﻿using Roblox.TranslationResources.Common;
+namespace Roblox.Platform.TranslationResourcespublic {
+    interface ICommonResources : ITranslationResourcesNamespacesGroup
 
-namespace Roblox.TranslationResources;
-
-public interface ICommonResources : ITranslationResourcesNamespacesGroup
 {
 	IAlertsAndOptionsResources AlertsAndOptions { get; }
 
@@ -25,4 +24,7 @@ public interface ICommonResources : ITranslationResourcesNamespacesGroup
 	IVisitGameResources VisitGame { get; }
 
 	IWebUtilResources WebUtil { get; }
+}
+
+
 }

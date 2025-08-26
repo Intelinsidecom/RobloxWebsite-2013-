@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResourcespublic {
+    class MasterResources : IMasterResources
 
-namespace Roblox.TranslationResources;
-
-public class MasterResources : IMasterResources
 {
 	private readonly IReadOnlyCollection<ITranslationResourcesNamespacesGroup> _TranslationResourcesNamespacesGroups;
 
@@ -53,4 +52,7 @@ public class MasterResources : IMasterResources
 		}
 		return null;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Marketing;
+﻿namespace Roblox.Marketing {
+    /// <summary>
 
-/// <summary>
 /// Provides common interface for an object that defines SponsoredPageDeviceType.
 /// </summary>
 public interface ISponsoredPageDeviceType
@@ -38,4 +38,7 @@ public interface ISponsoredPageDeviceType
 	/// Deletes underlying entity of SponsoredPageDeviceType from database.
 	/// </summary>
 	void Delete();
+}
+
+
 }

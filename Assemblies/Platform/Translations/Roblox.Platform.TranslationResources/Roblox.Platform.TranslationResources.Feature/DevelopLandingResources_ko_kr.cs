@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DevelopLandingResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,144 +11,144 @@ internal class DevelopLandingResources_ko_kr : DevelopLandingResources_en_us, ID
 	/// button label
 	/// English String: "Manage my games"
 	/// </summary>
-	public override string ActionManageMyGames => "내 게임 관리";
+	public override string ActionManageMyGames => "ë‚´ ê²Œìž„ ê´€ë¦¬";
 
 	/// <summary>
 	/// Key: "Action.RobloxDevHub"
 	/// English String: "Continue to the Developer Hub"
 	/// </summary>
-	public override string ActionRobloxDevHub => "개발자 허브로 계속";
+	public override string ActionRobloxDevHub => "ê°œë°œìž í—ˆë¸Œë¡œ ê³„ì†";
 
 	/// <summary>
 	/// Key: "Action.RobloxWiki"
 	/// button label
 	/// English String: "Continue to Roblox Wiki"
 	/// </summary>
-	public override string ActionRobloxWiki => "Roblox Wiki로 계속";
+	public override string ActionRobloxWiki => "Roblox Wikië¡œ ê³„ì†";
 
 	/// <summary>
 	/// Key: "Action.StartCreating"
 	/// button label
 	/// English String: "Start Creating"
 	/// </summary>
-	public override string ActionStartCreating => "만들기 시작";
+	public override string ActionStartCreating => "ë§Œë“¤ê¸° ì‹œìž‘";
 
 	/// <summary>
 	/// Key: "Description.EarnSeriousCash"
 	/// description
 	/// English String: "Creators like you are getting paid for what they love to do. Our top developers are earning over $2M a year by providing in-game purchases"
 	/// </summary>
-	public override string DescriptionEarnSeriousCash => "여러분과 같은 개발자들이 하고 싶은 일을 하면서 수익도 창출하고 있습니다. 게임 내 구매 기능 제공을 통해 일 년에 200만 달러 이상의 수익을 올리는 개발자도 있답니다. ";
+	public override string DescriptionEarnSeriousCash => "ì—¬ëŸ¬ë¶„ê³¼ ê°™ì€ ê°œë°œìžë“¤ì´ í•˜ê³  ì‹¶ì€ ì¼ì„ í•˜ë©´ì„œ ìˆ˜ìµë„ ì°½ì¶œí•˜ê³  ìžˆìŠµë‹ˆë‹¤. ê²Œìž„ ë‚´ êµ¬ë§¤ ê¸°ëŠ¥ ì œê³µì„ í†µí•´ ì¼ ë…„ì— 200ë§Œ ë‹¬ëŸ¬ ì´ìƒì˜ ìˆ˜ìµì„ ì˜¬ë¦¬ëŠ” ê°œë°œìžë„ ìžˆë‹µë‹ˆë‹¤. ";
 
 	/// <summary>
 	/// Key: "Description.FreeImmersiveCreationEngine"
 	/// subtext
 	/// English String: "With our FREE and immersive creation engine"
 	/// </summary>
-	public override string DescriptionFreeImmersiveCreationEngine => "몰입형 생성 엔진을 무료로 이용할 수 있어요";
+	public override string DescriptionFreeImmersiveCreationEngine => "ëª°ìž…í˜• ìƒì„± ì—”ì§„ì„ ë¬´ë£Œë¡œ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”";
 
 	/// <summary>
 	/// Key: "Description.MakeAnything"
 	/// text paragraph on page
 	/// English String: "Roblox Studio lets you create anything and release with one click to smartphones, tablets, desktops, consoles, and virtual reality devices"
 	/// </summary>
-	public override string DescriptionMakeAnything => "Roblox Studio를 이용해 무엇이든 만들 수 있을 뿐 아니라 클릭 한 번으로 스마트폰, 태블릿, 데스크톱, 콘솔 및 VR 기기에 공개할 수 있습니다.";
+	public override string DescriptionMakeAnything => "Roblox Studioë¥¼ ì´ìš©í•´ ë¬´ì—‡ì´ë“  ë§Œë“¤ ìˆ˜ ìžˆì„ ë¿ ì•„ë‹ˆë¼ í´ë¦­ í•œ ë²ˆìœ¼ë¡œ ìŠ¤ë§ˆíŠ¸í°, íƒœë¸”ë¦¿, ë°ìŠ¤í¬í†±, ì½˜ì†” ë° VR ê¸°ê¸°ì— ê³µê°œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Description.ReachMillionsPlayers"
 	/// description
 	/// English String: "Connect with a massive audience by tapping into an incredibly enthusiastic and international community of over 50 million monthly players"
 	/// </summary>
-	public override string DescriptionReachMillionsPlayers => "매월 전 세계 5,000만 이상의 플레이어들이 활발히 참여하고 있는 Roblox 커뮤니티에 접속해 수많은 플레이어들을 만나보세요   ";
+	public override string DescriptionReachMillionsPlayers => "ë§¤ì›” ì „ ì„¸ê³„ 5,000ë§Œ ì´ìƒì˜ í”Œë ˆì´ì–´ë“¤ì´ í™œë°œížˆ ì°¸ì—¬í•˜ê³  ìžˆëŠ” Roblox ì»¤ë®¤ë‹ˆí‹°ì— ì ‘ì†í•´ ìˆ˜ë§Žì€ í”Œë ˆì´ì–´ë“¤ì„ ë§Œë‚˜ë³´ì„¸ìš”   ";
 
 	/// <summary>
 	/// Key: "Description.RobloxDevHub"
 	/// English String: "The Developer Hub is your one-stop shop for publishing on Roblox. Learn from a wide set of tutorials, connect with other developers, get platform updates, browse our API references, and much more."
 	/// </summary>
-	public override string DescriptionRobloxDevHub => "개발자 허브는 Roblox 게임 게시에 관한 모든 것을 한곳에서 해결할 수 있는 공간입니다. 다양한 튜토리얼을 통해 폭넓게 배우고, 다른 개발자들을 만나며, 플랫폼 업데이트를 받아보고, API 참조서를 둘러보는 등 다채롭게 활용해 보세요.";
+	public override string DescriptionRobloxDevHub => "ê°œë°œìž í—ˆë¸ŒëŠ” Roblox ê²Œìž„ ê²Œì‹œì— ê´€í•œ ëª¨ë“  ê²ƒì„ í•œê³³ì—ì„œ í•´ê²°í•  ìˆ˜ ìžˆëŠ” ê³µê°„ìž…ë‹ˆë‹¤. ë‹¤ì–‘í•œ íŠœí† ë¦¬ì–¼ì„ í†µí•´ í­ë„“ê²Œ ë°°ìš°ê³ , ë‹¤ë¥¸ ê°œë°œìžë“¤ì„ ë§Œë‚˜ë©°, í”Œëž«í¼ ì—…ë°ì´íŠ¸ë¥¼ ë°›ì•„ë³´ê³ , API ì°¸ì¡°ì„œë¥¼ ë‘˜ëŸ¬ë³´ëŠ” ë“± ë‹¤ì±„ë¡­ê²Œ í™œìš©í•´ ë³´ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Description.RobloxWiki"
 	/// description
 	/// English String: "The Roblox Wiki is the ultimate resource for documentation, tutorials, and samples which will help you learn to make games with Roblox Studio"
 	/// </summary>
-	public override string DescriptionRobloxWiki => "Roblox Wiki는 Roblox Studio에서 게임을 만드는 데 도움을 주는 문서, 튜토리얼 및 샘플 등을 제공하는 최고의 리소스입니다";
+	public override string DescriptionRobloxWiki => "Roblox WikiëŠ” Roblox Studioì—ì„œ ê²Œìž„ì„ ë§Œë“œëŠ” ë° ë„ì›€ì„ ì£¼ëŠ” ë¬¸ì„œ, íŠœí† ë¦¬ì–¼ ë° ìƒ˜í”Œ ë“±ì„ ì œê³µí•˜ëŠ” ìµœê³ ì˜ ë¦¬ì†ŒìŠ¤ìž…ë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Description.TestimonialAlexBalfanz"
 	/// testimonial
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
-	public override string DescriptionTestimonialAlexBalfanz => "Roblox는 정말 사용하기 쉬운 플랫폼이예요. 인기있을 뿐 아니라 언제나 개발자를 위한 유용한 리소스를 제공해주니 경력을 쌓기에도 최고죠.";
+	public override string DescriptionTestimonialAlexBalfanz => "RobloxëŠ” ì •ë§ ì‚¬ìš©í•˜ê¸° ì‰¬ìš´ í”Œëž«í¼ì´ì˜ˆìš”. ì¸ê¸°ìžˆì„ ë¿ ì•„ë‹ˆë¼ ì–¸ì œë‚˜ ê°œë°œìžë¥¼ ìœ„í•œ ìœ ìš©í•œ ë¦¬ì†ŒìŠ¤ë¥¼ ì œê³µí•´ì£¼ë‹ˆ ê²½ë ¥ì„ ìŒ“ê¸°ì—ë„ ìµœê³ ì£ .";
 
 	/// <summary>
 	/// Key: "Description.TestimonialAndrewBereza"
 	/// testimonial text
 	/// English String: "Roblox allows me to focus on my game development and potential future career without having to worry about the financial hardships of being a college student."
 	/// </summary>
-	public override string DescriptionTestimonialAndrewBereza => "Roblox 덕분에 대학 학비에 대한 걱정 없이 게임 개발과 경력 쌓기에 집중할 수 있었어요.";
+	public override string DescriptionTestimonialAndrewBereza => "Roblox ë•ë¶„ì— ëŒ€í•™ í•™ë¹„ì— ëŒ€í•œ ê±±ì • ì—†ì´ ê²Œìž„ ê°œë°œê³¼ ê²½ë ¥ ìŒ“ê¸°ì— ì§‘ì¤‘í•  ìˆ˜ ìžˆì—ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialJacksonMunsell"
 	/// testimonial
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
-	public override string DescriptionTestimonialJacksonMunsell => "Roblox에서 게임을 만드는 일이 즐거운 이유는 이곳이 소셜 플랫폼이기 때문이죠. Facebook과 같은 소셜 플랫폼을 통해 새로운 차원의 게임을 개발할 수 있을 뿐 아니라 커뮤니티의 창의성을 이용할 수 있게 도와주니까요.";
+	public override string DescriptionTestimonialJacksonMunsell => "Robloxì—ì„œ ê²Œìž„ì„ ë§Œë“œëŠ” ì¼ì´ ì¦ê±°ìš´ ì´ìœ ëŠ” ì´ê³³ì´ ì†Œì…œ í”Œëž«í¼ì´ê¸° ë•Œë¬¸ì´ì£ . Facebookê³¼ ê°™ì€ ì†Œì…œ í”Œëž«í¼ì„ í†µí•´ ìƒˆë¡œìš´ ì°¨ì›ì˜ ê²Œìž„ì„ ê°œë°œí•  ìˆ˜ ìžˆì„ ë¿ ì•„ë‹ˆë¼ ì»¤ë®¤ë‹ˆí‹°ì˜ ì°½ì˜ì„±ì„ ì´ìš©í•  ìˆ˜ ìžˆê²Œ ë„ì™€ì£¼ë‹ˆê¹Œìš”.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialOne"
 	/// testimonial content
 	/// English String: "Roblox allows me to focus on my game development and potential future career without having to worry about the financial hardships of being a college student."
 	/// </summary>
-	public override string DescriptionTestimonialOne => "Roblox 덕분에 대학 학비 걱정 없이 게임 개발과 경력 쌓기에 집중할 수 있었어요.";
+	public override string DescriptionTestimonialOne => "Roblox ë•ë¶„ì— ëŒ€í•™ í•™ë¹„ ê±±ì • ì—†ì´ ê²Œìž„ ê°œë°œê³¼ ê²½ë ¥ ìŒ“ê¸°ì— ì§‘ì¤‘í•  ìˆ˜ ìžˆì—ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialThree"
 	/// testimonial text
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
-	public override string DescriptionTestimonialThree => "Roblox는 정말 사용하기 쉬운 플랫폼이예요. 인기있을 뿐 아니라 언제나 개발자를 위한 유용한 리소스를 제공해주니 경력을 쌓기에도 최고죠.";
+	public override string DescriptionTestimonialThree => "RobloxëŠ” ì •ë§ ì‚¬ìš©í•˜ê¸° ì‰¬ìš´ í”Œëž«í¼ì´ì˜ˆìš”. ì¸ê¸°ìžˆì„ ë¿ ì•„ë‹ˆë¼ ì–¸ì œë‚˜ ê°œë°œìžë¥¼ ìœ„í•œ ìœ ìš©í•œ ë¦¬ì†ŒìŠ¤ë¥¼ ì œê³µí•´ì£¼ë‹ˆ ê²½ë ¥ì„ ìŒ“ê¸°ì—ë„ ìµœê³ ì£ .";
 
 	/// <summary>
 	/// Key: "Description.TestimonialTwo"
 	/// description
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
-	public override string DescriptionTestimonialTwo => "Roblox에서 게임을 만드는 일이 즐거운 이유는 이곳이 소셜 플랫폼이기 때문이죠. Facebook과 같은 소셜 플랫폼을 통해 새로운 차원의 게임을 개발할 수 있을 뿐 아니라 커뮤니티의 창의성을 이용할 수 있게 도와주니까요";
+	public override string DescriptionTestimonialTwo => "Robloxì—ì„œ ê²Œìž„ì„ ë§Œë“œëŠ” ì¼ì´ ì¦ê±°ìš´ ì´ìœ ëŠ” ì´ê³³ì´ ì†Œì…œ í”Œëž«í¼ì´ê¸° ë•Œë¬¸ì´ì£ . Facebookê³¼ ê°™ì€ ì†Œì…œ í”Œëž«í¼ì„ í†µí•´ ìƒˆë¡œìš´ ì°¨ì›ì˜ ê²Œìž„ì„ ê°œë°œí•  ìˆ˜ ìžˆì„ ë¿ ì•„ë‹ˆë¼ ì»¤ë®¤ë‹ˆí‹°ì˜ ì°½ì˜ì„±ì„ ì´ìš©í•  ìˆ˜ ìžˆê²Œ ë„ì™€ì£¼ë‹ˆê¹Œìš”";
 
 	/// <summary>
 	/// Key: "Heading.EarnSeriousCash"
 	/// heading
 	/// English String: "Earn Serious Cash"
 	/// </summary>
-	public override string HeadingEarnSeriousCash => "상당한 수익까지";
+	public override string HeadingEarnSeriousCash => "ìƒë‹¹í•œ ìˆ˜ìµê¹Œì§€";
 
 	/// <summary>
 	/// Key: "Heading.MakeAnything"
 	/// heading
 	/// English String: "Make Anything You Can Imagine"
 	/// </summary>
-	public override string HeadingMakeAnything => "여러분이 상상하는 모든 것, 지금 만들어보세요! ";
+	public override string HeadingMakeAnything => "ì—¬ëŸ¬ë¶„ì´ ìƒìƒí•˜ëŠ” ëª¨ë“  ê²ƒ, ì§€ê¸ˆ ë§Œë“¤ì–´ë³´ì„¸ìš”! ";
 
 	/// <summary>
 	/// Key: "Heading.MakeAnythingSub"
 	/// section heading
 	/// English String: "Make Anything"
 	/// </summary>
-	public override string HeadingMakeAnythingSub => "상상을 현실로";
+	public override string HeadingMakeAnythingSub => "ìƒìƒì„ í˜„ì‹¤ë¡œ";
 
 	/// <summary>
 	/// Key: "Heading.ReachMillionsPlayers"
 	/// heading
 	/// English String: "Reach Millions of Players"
 	/// </summary>
-	public override string HeadingReachMillionsPlayers => "수많은 플레이어와의 소통";
+	public override string HeadingReachMillionsPlayers => "ìˆ˜ë§Žì€ í”Œë ˆì´ì–´ì™€ì˜ ì†Œí†µ";
 
 	/// <summary>
 	/// Key: "Heading.RobloxDevHub"
 	/// English String: "Developer Hub"
 	/// </summary>
-	public override string HeadingRobloxDevHub => "개발자 허브";
+	public override string HeadingRobloxDevHub => "ê°œë°œìž í—ˆë¸Œ";
 
 	/// <summary>
 	/// Key: "Heading.RobloxWiki"
@@ -169,49 +169,49 @@ internal class DevelopLandingResources_ko_kr : DevelopLandingResources_en_us, ID
 	/// heading
 	/// English String: "Roblox Studio is FREE! Try it out today!"
 	/// </summary>
-	public override string HeadingTryFreeRobloxStudioToday => "Roblox Studio는 무료입니다! 지금 이용해보세요!";
+	public override string HeadingTryFreeRobloxStudioToday => "Roblox StudioëŠ” ë¬´ë£Œìž…ë‹ˆë‹¤! ì§€ê¸ˆ ì´ìš©í•´ë³´ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Heading.WhatCreatorsSaying"
 	/// heading
 	/// English String: "What Our Creators Are Saying"
 	/// </summary>
-	public override string HeadingWhatCreatorsSaying => "Roblox 개발자들의 이야기";
+	public override string HeadingWhatCreatorsSaying => "Roblox ê°œë°œìžë“¤ì˜ ì´ì•¼ê¸°";
 
 	/// <summary>
 	/// Key: "Label.CreateWithFriends"
 	/// label
 	/// English String: "Create With Friends"
 	/// </summary>
-	public override string LabelCreateWithFriends => "친구와 만들기";
+	public override string LabelCreateWithFriends => "ì¹œêµ¬ì™€ ë§Œë“¤ê¸°";
 
 	/// <summary>
 	/// Key: "Label.GetStarted"
 	/// label
 	/// English String: "Get Started"
 	/// </summary>
-	public override string LabelGetStarted => "시작하기";
+	public override string LabelGetStarted => "ì‹œìž‘í•˜ê¸°";
 
 	/// <summary>
 	/// Key: "Label.GoToTop"
 	/// label
 	/// English String: "Go to top"
 	/// </summary>
-	public override string LabelGoToTop => "맨 위로 이동";
+	public override string LabelGoToTop => "ë§¨ ìœ„ë¡œ ì´ë™";
 
 	/// <summary>
 	/// Key: "Label.QuotationMark"
 	/// image alt text for accessibility
 	/// English String: "Quotation Mark"
 	/// </summary>
-	public override string LabelQuotationMark => "따옴표";
+	public override string LabelQuotationMark => "ë”°ì˜´í‘œ";
 
 	/// <summary>
 	/// Key: "Label.RobloxStudioOnWindowsAndMac"
 	/// label
 	/// English String: "Roblox Studio is available on Windows and Mac"
 	/// </summary>
-	public override string LabelRobloxStudioOnWindowsAndMac => "Roblox Studio는 Windows와 Mac에서 이용할 수 있습니다";
+	public override string LabelRobloxStudioOnWindowsAndMac => "Roblox StudioëŠ” Windowsì™€ Macì—ì„œ ì´ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤";
 
 	/// <summary>
 	/// Key: "Label.TestimonialOneName"
@@ -241,107 +241,107 @@ internal class DevelopLandingResources_ko_kr : DevelopLandingResources_en_us, ID
 
 	protected override string _GetTemplateForActionManageMyGames()
 	{
-		return "내 게임 관리";
+		return "ë‚´ ê²Œìž„ ê´€ë¦¬";
 	}
 
 	protected override string _GetTemplateForActionRobloxDevHub()
 	{
-		return "개발자 허브로 계속";
+		return "ê°œë°œìž í—ˆë¸Œë¡œ ê³„ì†";
 	}
 
 	protected override string _GetTemplateForActionRobloxWiki()
 	{
-		return "Roblox Wiki로 계속";
+		return "Roblox Wikië¡œ ê³„ì†";
 	}
 
 	protected override string _GetTemplateForActionStartCreating()
 	{
-		return "만들기 시작";
+		return "ë§Œë“¤ê¸° ì‹œìž‘";
 	}
 
 	protected override string _GetTemplateForDescriptionEarnSeriousCash()
 	{
-		return "여러분과 같은 개발자들이 하고 싶은 일을 하면서 수익도 창출하고 있습니다. 게임 내 구매 기능 제공을 통해 일 년에 200만 달러 이상의 수익을 올리는 개발자도 있답니다. ";
+		return "ì—¬ëŸ¬ë¶„ê³¼ ê°™ì€ ê°œë°œìžë“¤ì´ í•˜ê³  ì‹¶ì€ ì¼ì„ í•˜ë©´ì„œ ìˆ˜ìµë„ ì°½ì¶œí•˜ê³  ìžˆìŠµë‹ˆë‹¤. ê²Œìž„ ë‚´ êµ¬ë§¤ ê¸°ëŠ¥ ì œê³µì„ í†µí•´ ì¼ ë…„ì— 200ë§Œ ë‹¬ëŸ¬ ì´ìƒì˜ ìˆ˜ìµì„ ì˜¬ë¦¬ëŠ” ê°œë°œìžë„ ìžˆë‹µë‹ˆë‹¤. ";
 	}
 
 	protected override string _GetTemplateForDescriptionFreeImmersiveCreationEngine()
 	{
-		return "몰입형 생성 엔진을 무료로 이용할 수 있어요";
+		return "ëª°ìž…í˜• ìƒì„± ì—”ì§„ì„ ë¬´ë£Œë¡œ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”";
 	}
 
 	protected override string _GetTemplateForDescriptionMakeAnything()
 	{
-		return "Roblox Studio를 이용해 무엇이든 만들 수 있을 뿐 아니라 클릭 한 번으로 스마트폰, 태블릿, 데스크톱, 콘솔 및 VR 기기에 공개할 수 있습니다.";
+		return "Roblox Studioë¥¼ ì´ìš©í•´ ë¬´ì—‡ì´ë“  ë§Œë“¤ ìˆ˜ ìžˆì„ ë¿ ì•„ë‹ˆë¼ í´ë¦­ í•œ ë²ˆìœ¼ë¡œ ìŠ¤ë§ˆíŠ¸í°, íƒœë¸”ë¦¿, ë°ìŠ¤í¬í†±, ì½˜ì†” ë° VR ê¸°ê¸°ì— ê³µê°œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionReachMillionsPlayers()
 	{
-		return "매월 전 세계 5,000만 이상의 플레이어들이 활발히 참여하고 있는 Roblox 커뮤니티에 접속해 수많은 플레이어들을 만나보세요   ";
+		return "ë§¤ì›” ì „ ì„¸ê³„ 5,000ë§Œ ì´ìƒì˜ í”Œë ˆì´ì–´ë“¤ì´ í™œë°œížˆ ì°¸ì—¬í•˜ê³  ìžˆëŠ” Roblox ì»¤ë®¤ë‹ˆí‹°ì— ì ‘ì†í•´ ìˆ˜ë§Žì€ í”Œë ˆì´ì–´ë“¤ì„ ë§Œë‚˜ë³´ì„¸ìš”   ";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxDevHub()
 	{
-		return "개발자 허브는 Roblox 게임 게시에 관한 모든 것을 한곳에서 해결할 수 있는 공간입니다. 다양한 튜토리얼을 통해 폭넓게 배우고, 다른 개발자들을 만나며, 플랫폼 업데이트를 받아보고, API 참조서를 둘러보는 등 다채롭게 활용해 보세요.";
+		return "ê°œë°œìž í—ˆë¸ŒëŠ” Roblox ê²Œìž„ ê²Œì‹œì— ê´€í•œ ëª¨ë“  ê²ƒì„ í•œê³³ì—ì„œ í•´ê²°í•  ìˆ˜ ìžˆëŠ” ê³µê°„ìž…ë‹ˆë‹¤. ë‹¤ì–‘í•œ íŠœí† ë¦¬ì–¼ì„ í†µí•´ í­ë„“ê²Œ ë°°ìš°ê³ , ë‹¤ë¥¸ ê°œë°œìžë“¤ì„ ë§Œë‚˜ë©°, í”Œëž«í¼ ì—…ë°ì´íŠ¸ë¥¼ ë°›ì•„ë³´ê³ , API ì°¸ì¡°ì„œë¥¼ ë‘˜ëŸ¬ë³´ëŠ” ë“± ë‹¤ì±„ë¡­ê²Œ í™œìš©í•´ ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxWiki()
 	{
-		return "Roblox Wiki는 Roblox Studio에서 게임을 만드는 데 도움을 주는 문서, 튜토리얼 및 샘플 등을 제공하는 최고의 리소스입니다";
+		return "Roblox WikiëŠ” Roblox Studioì—ì„œ ê²Œìž„ì„ ë§Œë“œëŠ” ë° ë„ì›€ì„ ì£¼ëŠ” ë¬¸ì„œ, íŠœí† ë¦¬ì–¼ ë° ìƒ˜í”Œ ë“±ì„ ì œê³µí•˜ëŠ” ìµœê³ ì˜ ë¦¬ì†ŒìŠ¤ìž…ë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialAlexBalfanz()
 	{
-		return "Roblox는 정말 사용하기 쉬운 플랫폼이예요. 인기있을 뿐 아니라 언제나 개발자를 위한 유용한 리소스를 제공해주니 경력을 쌓기에도 최고죠.";
+		return "RobloxëŠ” ì •ë§ ì‚¬ìš©í•˜ê¸° ì‰¬ìš´ í”Œëž«í¼ì´ì˜ˆìš”. ì¸ê¸°ìžˆì„ ë¿ ì•„ë‹ˆë¼ ì–¸ì œë‚˜ ê°œë°œìžë¥¼ ìœ„í•œ ìœ ìš©í•œ ë¦¬ì†ŒìŠ¤ë¥¼ ì œê³µí•´ì£¼ë‹ˆ ê²½ë ¥ì„ ìŒ“ê¸°ì—ë„ ìµœê³ ì£ .";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialAndrewBereza()
 	{
-		return "Roblox 덕분에 대학 학비에 대한 걱정 없이 게임 개발과 경력 쌓기에 집중할 수 있었어요.";
+		return "Roblox ë•ë¶„ì— ëŒ€í•™ í•™ë¹„ì— ëŒ€í•œ ê±±ì • ì—†ì´ ê²Œìž„ ê°œë°œê³¼ ê²½ë ¥ ìŒ“ê¸°ì— ì§‘ì¤‘í•  ìˆ˜ ìžˆì—ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialJacksonMunsell()
 	{
-		return "Roblox에서 게임을 만드는 일이 즐거운 이유는 이곳이 소셜 플랫폼이기 때문이죠. Facebook과 같은 소셜 플랫폼을 통해 새로운 차원의 게임을 개발할 수 있을 뿐 아니라 커뮤니티의 창의성을 이용할 수 있게 도와주니까요.";
+		return "Robloxì—ì„œ ê²Œìž„ì„ ë§Œë“œëŠ” ì¼ì´ ì¦ê±°ìš´ ì´ìœ ëŠ” ì´ê³³ì´ ì†Œì…œ í”Œëž«í¼ì´ê¸° ë•Œë¬¸ì´ì£ . Facebookê³¼ ê°™ì€ ì†Œì…œ í”Œëž«í¼ì„ í†µí•´ ìƒˆë¡œìš´ ì°¨ì›ì˜ ê²Œìž„ì„ ê°œë°œí•  ìˆ˜ ìžˆì„ ë¿ ì•„ë‹ˆë¼ ì»¤ë®¤ë‹ˆí‹°ì˜ ì°½ì˜ì„±ì„ ì´ìš©í•  ìˆ˜ ìžˆê²Œ ë„ì™€ì£¼ë‹ˆê¹Œìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialOne()
 	{
-		return "Roblox 덕분에 대학 학비 걱정 없이 게임 개발과 경력 쌓기에 집중할 수 있었어요.";
+		return "Roblox ë•ë¶„ì— ëŒ€í•™ í•™ë¹„ ê±±ì • ì—†ì´ ê²Œìž„ ê°œë°œê³¼ ê²½ë ¥ ìŒ“ê¸°ì— ì§‘ì¤‘í•  ìˆ˜ ìžˆì—ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialThree()
 	{
-		return "Roblox는 정말 사용하기 쉬운 플랫폼이예요. 인기있을 뿐 아니라 언제나 개발자를 위한 유용한 리소스를 제공해주니 경력을 쌓기에도 최고죠.";
+		return "RobloxëŠ” ì •ë§ ì‚¬ìš©í•˜ê¸° ì‰¬ìš´ í”Œëž«í¼ì´ì˜ˆìš”. ì¸ê¸°ìžˆì„ ë¿ ì•„ë‹ˆë¼ ì–¸ì œë‚˜ ê°œë°œìžë¥¼ ìœ„í•œ ìœ ìš©í•œ ë¦¬ì†ŒìŠ¤ë¥¼ ì œê³µí•´ì£¼ë‹ˆ ê²½ë ¥ì„ ìŒ“ê¸°ì—ë„ ìµœê³ ì£ .";
 	}
 
 	protected override string _GetTemplateForDescriptionTestimonialTwo()
 	{
-		return "Roblox에서 게임을 만드는 일이 즐거운 이유는 이곳이 소셜 플랫폼이기 때문이죠. Facebook과 같은 소셜 플랫폼을 통해 새로운 차원의 게임을 개발할 수 있을 뿐 아니라 커뮤니티의 창의성을 이용할 수 있게 도와주니까요";
+		return "Robloxì—ì„œ ê²Œìž„ì„ ë§Œë“œëŠ” ì¼ì´ ì¦ê±°ìš´ ì´ìœ ëŠ” ì´ê³³ì´ ì†Œì…œ í”Œëž«í¼ì´ê¸° ë•Œë¬¸ì´ì£ . Facebookê³¼ ê°™ì€ ì†Œì…œ í”Œëž«í¼ì„ í†µí•´ ìƒˆë¡œìš´ ì°¨ì›ì˜ ê²Œìž„ì„ ê°œë°œí•  ìˆ˜ ìžˆì„ ë¿ ì•„ë‹ˆë¼ ì»¤ë®¤ë‹ˆí‹°ì˜ ì°½ì˜ì„±ì„ ì´ìš©í•  ìˆ˜ ìžˆê²Œ ë„ì™€ì£¼ë‹ˆê¹Œìš”";
 	}
 
 	protected override string _GetTemplateForHeadingEarnSeriousCash()
 	{
-		return "상당한 수익까지";
+		return "ìƒë‹¹í•œ ìˆ˜ìµê¹Œì§€";
 	}
 
 	protected override string _GetTemplateForHeadingMakeAnything()
 	{
-		return "여러분이 상상하는 모든 것, 지금 만들어보세요! ";
+		return "ì—¬ëŸ¬ë¶„ì´ ìƒìƒí•˜ëŠ” ëª¨ë“  ê²ƒ, ì§€ê¸ˆ ë§Œë“¤ì–´ë³´ì„¸ìš”! ";
 	}
 
 	protected override string _GetTemplateForHeadingMakeAnythingSub()
 	{
-		return "상상을 현실로";
+		return "ìƒìƒì„ í˜„ì‹¤ë¡œ";
 	}
 
 	protected override string _GetTemplateForHeadingReachMillionsPlayers()
 	{
-		return "수많은 플레이어와의 소통";
+		return "ìˆ˜ë§Žì€ í”Œë ˆì´ì–´ì™€ì˜ ì†Œí†µ";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxDevHub()
 	{
-		return "개발자 허브";
+		return "ê°œë°œìž í—ˆë¸Œ";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxWiki()
@@ -356,37 +356,37 @@ internal class DevelopLandingResources_ko_kr : DevelopLandingResources_en_us, ID
 
 	protected override string _GetTemplateForHeadingTryFreeRobloxStudioToday()
 	{
-		return "Roblox Studio는 무료입니다! 지금 이용해보세요!";
+		return "Roblox StudioëŠ” ë¬´ë£Œìž…ë‹ˆë‹¤! ì§€ê¸ˆ ì´ìš©í•´ë³´ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForHeadingWhatCreatorsSaying()
 	{
-		return "Roblox 개발자들의 이야기";
+		return "Roblox ê°œë°œìžë“¤ì˜ ì´ì•¼ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelCreateWithFriends()
 	{
-		return "친구와 만들기";
+		return "ì¹œêµ¬ì™€ ë§Œë“¤ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelGetStarted()
 	{
-		return "시작하기";
+		return "ì‹œìž‘í•˜ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelGoToTop()
 	{
-		return "맨 위로 이동";
+		return "ë§¨ ìœ„ë¡œ ì´ë™";
 	}
 
 	protected override string _GetTemplateForLabelQuotationMark()
 	{
-		return "따옴표";
+		return "ë”°ì˜´í‘œ";
 	}
 
 	protected override string _GetTemplateForLabelRobloxStudioOnWindowsAndMac()
 	{
-		return "Roblox Studio는 Windows와 Mac에서 이용할 수 있습니다";
+		return "Roblox StudioëŠ” Windowsì™€ Macì—ì„œ ì´ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤";
 	}
 
 	protected override string _GetTemplateForLabelTestimonialOneName()
@@ -403,4 +403,7 @@ internal class DevelopLandingResources_ko_kr : DevelopLandingResources_en_us, ID
 	{
 		return "Jackson Munsell";
 	}
+}
+
+
 }

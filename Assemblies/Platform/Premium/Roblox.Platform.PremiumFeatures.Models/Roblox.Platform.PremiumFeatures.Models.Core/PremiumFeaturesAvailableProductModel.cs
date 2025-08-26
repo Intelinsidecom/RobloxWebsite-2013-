@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models.Core {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Models.Core;
-
-/// <summary>
 /// Premium Feature Product
 /// </summary>
 [DataContract]
@@ -61,4 +60,7 @@ public class PremiumFeaturesAvailableProductModel
 	/// </summary>
 	[DataMember(Name = "description", EmitDefaultValue = true, IsRequired = true)]
 	public string Description { get; set; }
+}
+
+
 }

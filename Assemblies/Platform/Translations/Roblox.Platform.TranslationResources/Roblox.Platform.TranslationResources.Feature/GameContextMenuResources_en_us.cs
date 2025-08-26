@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameContextMenuResources_en_us : TranslationResourcesBase, IGameContextMenuResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameContextMenuResources_en_us : TranslationResourcesBase, IGameContextMenuResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -251,4 +250,7 @@ internal class GameContextMenuResources_en_us : TranslationResourcesBase, IGameC
 	{
 		return "Could not shut down servers.";
 	}
+}
+
+
 }

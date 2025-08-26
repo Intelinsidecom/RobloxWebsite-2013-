@@ -1,10 +1,9 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
-using Roblox.TextFilter.Properties;
+using Roblox.Platform.TextFilter.Properties;
+namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-namespace Roblox.TextFilter;
-
-/// <summary>
 /// Decorates an <see cref="T:Roblox.TextFilter.ITextFilter" /> instance and records metrics about the results that it returns.
 /// It passes through the results of the internal ITextFilter unaltered
 /// </summary>
@@ -116,4 +115,7 @@ internal class MetricTrackingTextFilterDecorator : ITextFilter
 		}
 		return TextAudience.Author13AndOverTo13AndOver;
 	}
+}
+
+
 }

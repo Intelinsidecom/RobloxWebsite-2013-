@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FileUploadComponentResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -22,13 +22,13 @@ internal class FileUploadComponentResources_de_de : FileUploadComponentResources
 	/// Key: "Label.DragImageOr"
 	/// English String: "Drag an image here or select a file to upload"
 	/// </summary>
-	public override string LabelDragImageOr => "Ziehe eine Datei hierher oder wähle eine Datei zum Hochladen aus";
+	public override string LabelDragImageOr => "Ziehe eine Datei hierher oder wÃ¤hle eine Datei zum Hochladen aus";
 
 	/// <summary>
 	/// Key: "Label.NoFileChosen"
 	/// English String: "No File Chosen"
 	/// </summary>
-	public override string LabelNoFileChosen => "Keine Datei gewählt";
+	public override string LabelNoFileChosen => "Keine Datei gewÃ¤hlt";
 
 	/// <summary>
 	/// Key: "Label.Or"
@@ -41,21 +41,21 @@ internal class FileUploadComponentResources_de_de : FileUploadComponentResources
 	/// Key: "Label.SelectFile"
 	/// English String: "Select a file"
 	/// </summary>
-	public override string LabelSelectFile => "Wähle eine Datei aus";
+	public override string LabelSelectFile => "WÃ¤hle eine Datei aus";
 
 	/// <summary>
 	/// Key: "Label.SelectFromComputer"
 	/// label
 	/// English String: "Select an image from your computer"
 	/// </summary>
-	public override string LabelSelectFromComputer => "Wähle ein Bild von deinem Computer.";
+	public override string LabelSelectFromComputer => "WÃ¤hle ein Bild von deinem Computer.";
 
 	/// <summary>
 	/// Key: "Label.SelectFromDevice"
 	/// label
 	/// English String: "Select an image from your device"
 	/// </summary>
-	public override string LabelSelectFromDevice => "Wähle ein Bild von deinem Gerät.";
+	public override string LabelSelectFromDevice => "WÃ¤hle ein Bild von deinem GerÃ¤t.";
 
 	/// <summary>
 	/// Key: "Label.Upload"
@@ -80,12 +80,12 @@ internal class FileUploadComponentResources_de_de : FileUploadComponentResources
 
 	protected override string _GetTemplateForLabelDragImageOr()
 	{
-		return "Ziehe eine Datei hierher oder wähle eine Datei zum Hochladen aus";
+		return "Ziehe eine Datei hierher oder wÃ¤hle eine Datei zum Hochladen aus";
 	}
 
 	protected override string _GetTemplateForLabelNoFileChosen()
 	{
-		return "Keine Datei gewählt";
+		return "Keine Datei gewÃ¤hlt";
 	}
 
 	protected override string _GetTemplateForLabelOr()
@@ -95,17 +95,17 @@ internal class FileUploadComponentResources_de_de : FileUploadComponentResources
 
 	protected override string _GetTemplateForLabelSelectFile()
 	{
-		return "Wähle eine Datei aus";
+		return "WÃ¤hle eine Datei aus";
 	}
 
 	protected override string _GetTemplateForLabelSelectFromComputer()
 	{
-		return "Wähle ein Bild von deinem Computer.";
+		return "WÃ¤hle ein Bild von deinem Computer.";
 	}
 
 	protected override string _GetTemplateForLabelSelectFromDevice()
 	{
-		return "Wähle ein Bild von deinem Gerät.";
+		return "WÃ¤hle ein Bild von deinem GerÃ¤t.";
 	}
 
 	/// <summary>
@@ -114,12 +114,12 @@ internal class FileUploadComponentResources_de_de : FileUploadComponentResources
 	/// </summary>
 	public override string LabelSelectImage(string deviceType)
 	{
-		return $"Wähle ein Bild von deinem/deiner {deviceType}.";
+		return $"WÃ¤hle ein Bild von deinem/deiner {deviceType}.";
 	}
 
 	protected override string _GetTemplateForLabelSelectImage()
 	{
-		return "Wähle ein Bild von deinem/deiner {deviceType}.";
+		return "WÃ¤hle ein Bild von deinem/deiner {deviceType}.";
 	}
 
 	protected override string _GetTemplateForLabelUpload()
@@ -133,11 +133,14 @@ internal class FileUploadComponentResources_de_de : FileUploadComponentResources
 	/// </summary>
 	public override string MessageInvalidFile(string fileTypes)
 	{
-		return $"Ungültiger Dateityp. Unterstützte Dateitypen: {fileTypes}.";
+		return $"UngÃ¼ltiger Dateityp. UnterstÃ¼tzte Dateitypen: {fileTypes}.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidFile()
 	{
-		return "Ungültiger Dateityp. Unterstützte Dateitypen: {fileTypes}.";
+		return "UngÃ¼ltiger Dateityp. UnterstÃ¼tzte Dateitypen: {fileTypes}.";
 	}
+}
+
+
 }

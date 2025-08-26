@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures.Interfaces;
+﻿namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-/// <summary>
 /// Robux stipend quantity type model
 /// </summary>
 public interface IRobuxStipendQuantityTypeModel
@@ -14,4 +14,7 @@ public interface IRobuxStipendQuantityTypeModel
 	/// Amount
 	/// </summary>
 	long Amount { get; }
+}
+
+
 }

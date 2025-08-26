@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -10,10 +10,9 @@ using Roblox.Http.Client;
 using Roblox.Platform.Authentication.Entities;
 using Roblox.Platform.Membership;
 using Roblox.Web.Authentication;
+namespace Roblox.Platform.AuthenticationV2 {
+    /// <inheritdoc />
 
-namespace Roblox.AuthenticationV2;
-
-/// <inheritdoc />
 public class AuthenticationV2Synchronizer : IAuthenticationV2Synchronizer
 {
 	private readonly WebAuthenticator _WebAuthenticator;
@@ -254,4 +253,7 @@ public class AuthenticationV2Synchronizer : IAuthenticationV2Synchronizer
 		cookie.Value = string.Empty;
 		HttpContext.Current.Response.Cookies.Set(cookie);
 	}
+}
+
+
 }

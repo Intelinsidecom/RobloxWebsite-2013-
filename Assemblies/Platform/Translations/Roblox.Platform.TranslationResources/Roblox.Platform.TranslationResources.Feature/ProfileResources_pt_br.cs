@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -22,7 +22,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.BlockUser"
 	/// English String: "Block User"
 	/// </summary>
-	public override string ActionBlockUser => "Bloquear usuário";
+	public override string ActionBlockUser => "Bloquear usuÃ¡rio";
 
 	/// <summary>
 	/// Key: "Action.CancelBlockUser"
@@ -71,19 +71,19 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.GridView"
 	/// English String: "Grid View"
 	/// </summary>
-	public override string ActionGridView => "Visão de grade";
+	public override string ActionGridView => "VisÃ£o de grade";
 
 	/// <summary>
 	/// Key: "Action.ImpersonateUser"
 	/// English String: "Impersonate User"
 	/// </summary>
-	public override string ActionImpersonateUser => "Personificar usuário";
+	public override string ActionImpersonateUser => "Personificar usuÃ¡rio";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string ActionInventory => "Inventário";
+	public override string ActionInventory => "InventÃ¡rio";
 
 	/// <summary>
 	/// Key: "Action.JoinGame"
@@ -131,7 +131,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.SlideshowView"
 	/// English String: "Slideshow View"
 	/// </summary>
-	public override string ActionSlideshowView => "Ver apresentação de slides";
+	public override string ActionSlideshowView => "Ver apresentaÃ§Ã£o de slides";
 
 	/// <summary>
 	/// Key: "Action.Trade"
@@ -149,7 +149,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.UnblockUser"
 	/// English String: "Unblock User"
 	/// </summary>
-	public override string ActionUnblockUser => "Desbloquear usuário";
+	public override string ActionUnblockUser => "Desbloquear usuÃ¡rio";
 
 	/// <summary>
 	/// Key: "Action.Unfollow"
@@ -173,25 +173,25 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Description.BlockUserFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string DescriptionBlockUserFooter => "Quando você bloqueia um usuário, nem você nem ele podem se contatar.";
+	public override string DescriptionBlockUserFooter => "Quando vocÃª bloqueia um usuÃ¡rio, nem vocÃª nem ele podem se contatar.";
 
 	/// <summary>
 	/// Key: "Description.BlockUserPrompt"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string DescriptionBlockUserPrompt => "Quer mesmo bloquear este usuário?";
+	public override string DescriptionBlockUserPrompt => "Quer mesmo bloquear este usuÃ¡rio?";
 
 	/// <summary>
 	/// Key: "Description.ChangeAlias"
 	/// English String: "Only you can see this information"
 	/// </summary>
-	public override string DescriptionChangeAlias => "Só você pode ver esta informação";
+	public override string DescriptionChangeAlias => "SÃ³ vocÃª pode ver esta informaÃ§Ã£o";
 
 	/// <summary>
 	/// Key: "Description.UnblockUserPrompt"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string DescriptionUnblockUserPrompt => "Quer mesmo desbloquear este usuário?";
+	public override string DescriptionUnblockUserPrompt => "Quer mesmo desbloquear este usuÃ¡rio?";
 
 	/// <summary>
 	/// Key: "Heading.AboutTab"
@@ -210,7 +210,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Heading.Collections"
 	/// English String: "Collections"
 	/// </summary>
-	public override string HeadingCollections => "Coleções";
+	public override string HeadingCollections => "ColeÃ§Ãµes";
 
 	/// <summary>
 	/// Key: "Heading.CurrentlyWearing"
@@ -294,7 +294,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Heading.Statistics"
 	/// English String: "Statistics"
 	/// </summary>
-	public override string HeadingStatistics => "Estatísticas";
+	public override string HeadingStatistics => "EstatÃ­sticas";
 
 	/// <summary>
 	/// Key: "Label.About"
@@ -313,7 +313,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.BlockWarningBody"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string LabelBlockWarningBody => "Quer mesmo bloquear este usuário?";
+	public override string LabelBlockWarningBody => "Quer mesmo bloquear este usuÃ¡rio?";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningConfirm"
@@ -325,7 +325,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.BlockWarningFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string LabelBlockWarningFooter => "Quando você bloqueia um usuário, nem você nem ele podem se contatar.";
+	public override string LabelBlockWarningFooter => "Quando vocÃª bloqueia um usuÃ¡rio, nem vocÃª nem ele podem se contatar.";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
@@ -344,7 +344,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.Creations"
 	/// English String: "Creations"
 	/// </summary>
-	public override string LabelCreations => "Criações";
+	public override string LabelCreations => "CriaÃ§Ãµes";
 
 	/// <summary>
 	/// Key: "Label.Followers"
@@ -362,7 +362,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.ForumPosts"
 	/// English String: "Forum Posts"
 	/// </summary>
-	public override string LabelForumPosts => "Publicações no fórum";
+	public override string LabelForumPosts => "PublicaÃ§Ãµes no fÃ³rum";
 
 	/// <summary>
 	/// Key: "Label.Friends"
@@ -374,7 +374,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.GridView"
 	/// English String: "Grid View"
 	/// </summary>
-	public override string LabelGridView => "Visão de grade";
+	public override string LabelGridView => "VisÃ£o de grade";
 
 	/// <summary>
 	/// Key: "Label.JoinDate"
@@ -398,13 +398,13 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.PastUsername"
 	/// English String: "Past Usernames"
 	/// </summary>
-	public override string LabelPastUsername => "Nomes de usuário anteriores";
+	public override string LabelPastUsername => "Nomes de usuÃ¡rio anteriores";
 
 	/// <summary>
 	/// Key: "Label.PastUsernames"
 	/// English String: "Past usernames"
 	/// </summary>
-	public override string LabelPastUsernames => "Nomes de usuário anteriores";
+	public override string LabelPastUsernames => "Nomes de usuÃ¡rio anteriores";
 
 	/// <summary>
 	/// Key: "Label.PlaceVisits"
@@ -446,13 +446,13 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.SlideshowView"
 	/// English String: "Slideshow View"
 	/// </summary>
-	public override string LabelSlideshowView => "Ver apresentação de slides";
+	public override string LabelSlideshowView => "Ver apresentaÃ§Ã£o de slides";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningBody"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string LabelUnblockWarningBody => "Quer mesmo desbloquear este usuário?";
+	public override string LabelUnblockWarningBody => "Quer mesmo desbloquear este usuÃ¡rio?";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningConfirm"
@@ -488,13 +488,13 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// Key: "Message.ChangeStatus"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string MessageChangeStatus => "O que você está fazendo?";
+	public override string MessageChangeStatus => "O que vocÃª estÃ¡ fazendo?";
 
 	/// <summary>
 	/// Key: "Message.ErrorBlockLimit"
 	/// English String: "Operation failed! You may have blocked too many people."
 	/// </summary>
-	public override string MessageErrorBlockLimit => "Falha na operação! Você bloqueou pessoas demais.";
+	public override string MessageErrorBlockLimit => "Falha na operaÃ§Ã£o! VocÃª bloqueou pessoas demais.";
 
 	/// <summary>
 	/// Key: "Message.ErrorGeneral"
@@ -532,7 +532,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionBlockUser()
 	{
-		return "Bloquear usuário";
+		return "Bloquear usuÃ¡rio";
 	}
 
 	protected override string _GetTemplateForActionCancelBlockUser()
@@ -572,17 +572,17 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionGridView()
 	{
-		return "Visão de grade";
+		return "VisÃ£o de grade";
 	}
 
 	protected override string _GetTemplateForActionImpersonateUser()
 	{
-		return "Personificar usuário";
+		return "Personificar usuÃ¡rio";
 	}
 
 	protected override string _GetTemplateForActionInventory()
 	{
-		return "Inventário";
+		return "InventÃ¡rio";
 	}
 
 	protected override string _GetTemplateForActionJoinGame()
@@ -622,7 +622,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionSlideshowView()
 	{
-		return "Ver apresentação de slides";
+		return "Ver apresentaÃ§Ã£o de slides";
 	}
 
 	protected override string _GetTemplateForActionTrade()
@@ -637,7 +637,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionUnblockUser()
 	{
-		return "Desbloquear usuário";
+		return "Desbloquear usuÃ¡rio";
 	}
 
 	protected override string _GetTemplateForActionUnfollow()
@@ -657,22 +657,22 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForDescriptionBlockUserFooter()
 	{
-		return "Quando você bloqueia um usuário, nem você nem ele podem se contatar.";
+		return "Quando vocÃª bloqueia um usuÃ¡rio, nem vocÃª nem ele podem se contatar.";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserPrompt()
 	{
-		return "Quer mesmo bloquear este usuário?";
+		return "Quer mesmo bloquear este usuÃ¡rio?";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeAlias()
 	{
-		return "Só você pode ver esta informação";
+		return "SÃ³ vocÃª pode ver esta informaÃ§Ã£o";
 	}
 
 	protected override string _GetTemplateForDescriptionUnblockUserPrompt()
 	{
-		return "Quer mesmo desbloquear este usuário?";
+		return "Quer mesmo desbloquear este usuÃ¡rio?";
 	}
 
 	protected override string _GetTemplateForHeadingAboutTab()
@@ -687,7 +687,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForHeadingCollections()
 	{
-		return "Coleções";
+		return "ColeÃ§Ãµes";
 	}
 
 	protected override string _GetTemplateForHeadingCurrentlyWearing()
@@ -771,7 +771,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForHeadingStatistics()
 	{
-		return "Estatísticas";
+		return "EstatÃ­sticas";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
@@ -786,7 +786,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelBlockWarningBody()
 	{
-		return "Quer mesmo bloquear este usuário?";
+		return "Quer mesmo bloquear este usuÃ¡rio?";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningConfirm()
@@ -796,7 +796,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelBlockWarningFooter()
 	{
-		return "Quando você bloqueia um usuário, nem você nem ele podem se contatar.";
+		return "Quando vocÃª bloqueia um usuÃ¡rio, nem vocÃª nem ele podem se contatar.";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
@@ -811,7 +811,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelCreations()
 	{
-		return "Criações";
+		return "CriaÃ§Ãµes";
 	}
 
 	protected override string _GetTemplateForLabelFollowers()
@@ -826,7 +826,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelForumPosts()
 	{
-		return "Publicações no fórum";
+		return "PublicaÃ§Ãµes no fÃ³rum";
 	}
 
 	protected override string _GetTemplateForLabelFriends()
@@ -836,7 +836,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelGridView()
 	{
-		return "Visão de grade";
+		return "VisÃ£o de grade";
 	}
 
 	protected override string _GetTemplateForLabelJoinDate()
@@ -856,12 +856,12 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelPastUsername()
 	{
-		return "Nomes de usuário anteriores";
+		return "Nomes de usuÃ¡rio anteriores";
 	}
 
 	protected override string _GetTemplateForLabelPastUsernames()
 	{
-		return "Nomes de usuário anteriores";
+		return "Nomes de usuÃ¡rio anteriores";
 	}
 
 	protected override string _GetTemplateForLabelPlaceVisits()
@@ -876,7 +876,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
+	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	public override string LabelQuotation(string userStatus)
@@ -911,12 +911,12 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelSlideshowView()
 	{
-		return "Ver apresentação de slides";
+		return "Ver apresentaÃ§Ã£o de slides";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningBody()
 	{
-		return "Quer mesmo desbloquear este usuário?";
+		return "Quer mesmo desbloquear este usuÃ¡rio?";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningConfirm()
@@ -946,12 +946,12 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForMessageChangeStatus()
 	{
-		return "O que você está fazendo?";
+		return "O que vocÃª estÃ¡ fazendo?";
 	}
 
 	protected override string _GetTemplateForMessageErrorBlockLimit()
 	{
-		return "Falha na operação! Você bloqueou pessoas demais.";
+		return "Falha na operaÃ§Ã£o! VocÃª bloqueou pessoas demais.";
 	}
 
 	protected override string _GetTemplateForMessageErrorGeneral()
@@ -965,12 +965,12 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string MessageNoCreation(string username)
 	{
-		return $"{username} não tem criações.";
+		return $"{username} nÃ£o tem criaÃ§Ãµes.";
 	}
 
 	protected override string _GetTemplateForMessageNoCreation()
 	{
-		return "{username} não tem criações.";
+		return "{username} nÃ£o tem criaÃ§Ãµes.";
 	}
 
 	protected override string _GetTemplateForMessageSharing()
@@ -982,4 +982,7 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	{
 		return "Muitas tentativas";
 	}
+}
+
+
 }

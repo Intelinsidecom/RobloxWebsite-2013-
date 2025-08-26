@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PrivateSalesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,74 +10,74 @@ internal class PrivateSalesResources_ja_jp : PrivateSalesResources_en_us, IPriva
 	/// Key: "Action.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionBuy => "買う";
+	public override string ActionBuy => "è²·ã†";
 
 	/// <summary>
 	/// Key: "Heading.PriceChart"
 	/// English String: "Price Chart"
 	/// </summary>
-	public override string HeadingPriceChart => "価格表";
+	public override string HeadingPriceChart => "ä¾¡æ ¼è¡¨";
 
 	/// <summary>
 	/// Key: "Heading.Resellers"
 	/// English String: "Resellers"
 	/// </summary>
-	public override string HeadingResellers => "再販者";
+	public override string HeadingResellers => "å†è²©è€…";
 
 	/// <summary>
 	/// Key: "Label.AveragePrice"
 	/// English String: "Average Price"
 	/// </summary>
-	public override string LabelAveragePrice => "平均価格";
+	public override string LabelAveragePrice => "å¹³å‡ä¾¡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.NoHistoricalData"
 	/// English String: "No historical data to chart."
 	/// </summary>
-	public override string LabelNoHistoricalData => "表示する履歴データがありません。";
+	public override string LabelNoHistoricalData => "è¡¨ç¤ºã™ã‚‹å±¥æ­´ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Label.OriginalPrice"
 	/// English String: "Original Price"
 	/// </summary>
-	public override string LabelOriginalPrice => "元の価格";
+	public override string LabelOriginalPrice => "å…ƒã®ä¾¡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.QuantitySold"
 	/// English String: "Quantity Sold"
 	/// </summary>
-	public override string LabelQuantitySold => "売れた数";
+	public override string LabelQuantitySold => "å£²ã‚ŒãŸæ•°";
 
 	/// <summary>
 	/// Key: "Label.RecentAveragePrice"
 	/// English String: "Recent Average Price"
 	/// </summary>
-	public override string LabelRecentAveragePrice => "最近の平均価格";
+	public override string LabelRecentAveragePrice => "æœ€è¿‘ã®å¹³å‡ä¾¡æ ¼";
 
 	/// <summary>
 	/// Key: "Label.ResaleDataLoadFailure"
 	/// Price chart and resellers fail to load on the page.
 	/// English String: "Failed to load price chart and resellers. Try again"
 	/// </summary>
-	public override string LabelResaleDataLoadFailure => "価格表と再販者を読み込めませんでした。もう一度お試しください";
+	public override string LabelResaleDataLoadFailure => "ä¾¡æ ¼è¡¨ã¨å†è²©è€…ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "もっと見る";
+	public override string LabelSeeMore => "ã‚‚ã£ã¨è¦‹ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.Volume"
 	/// English String: "Volume"
 	/// </summary>
-	public override string LabelVolume => "量";
+	public override string LabelVolume => "é‡";
 
 	/// <summary>
 	/// Key: "Message.NoOneSelling"
 	/// English String: "Sorry, no one is reselling this item at the moment."
 	/// </summary>
-	public override string MessageNoOneSelling => "申し訳ありませんが、現在、誰もこのアイテムを再販売していません。";
+	public override string MessageNoOneSelling => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ç¾åœ¨ã€èª°ã‚‚ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’å†è²©å£²ã—ã¦ã„ã¾ã›ã‚“ã€‚";
 
 	public PrivateSalesResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -86,57 +86,57 @@ internal class PrivateSalesResources_ja_jp : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "買う";
+		return "è²·ã†";
 	}
 
 	protected override string _GetTemplateForHeadingPriceChart()
 	{
-		return "価格表";
+		return "ä¾¡æ ¼è¡¨";
 	}
 
 	protected override string _GetTemplateForHeadingResellers()
 	{
-		return "再販者";
+		return "å†è²©è€…";
 	}
 
 	protected override string _GetTemplateForLabelAveragePrice()
 	{
-		return "平均価格";
+		return "å¹³å‡ä¾¡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelNoHistoricalData()
 	{
-		return "表示する履歴データがありません。";
+		return "è¡¨ç¤ºã™ã‚‹å±¥æ­´ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelOriginalPrice()
 	{
-		return "元の価格";
+		return "å…ƒã®ä¾¡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelQuantitySold()
 	{
-		return "売れた数";
+		return "å£²ã‚ŒãŸæ•°";
 	}
 
 	protected override string _GetTemplateForLabelRecentAveragePrice()
 	{
-		return "最近の平均価格";
+		return "æœ€è¿‘ã®å¹³å‡ä¾¡æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelResaleDataLoadFailure()
 	{
-		return "価格表と再販者を読み込めませんでした。もう一度お試しください";
+		return "ä¾¡æ ¼è¡¨ã¨å†è²©è€…ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "もっと見る";
+		return "ã‚‚ã£ã¨è¦‹ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelVolume()
 	{
-		return "量";
+		return "é‡";
 	}
 
 	/// <summary>
@@ -145,16 +145,19 @@ internal class PrivateSalesResources_ja_jp : PrivateSalesResources_en_us, IPriva
 	/// </summary>
 	public override string LabelXDays(string numberOfDays)
 	{
-		return $"{numberOfDays}日";
+		return $"{numberOfDays}æ—¥";
 	}
 
 	protected override string _GetTemplateForLabelXDays()
 	{
-		return "{numberOfDays}日";
+		return "{numberOfDays}æ—¥";
 	}
 
 	protected override string _GetTemplateForMessageNoOneSelling()
 	{
-		return "申し訳ありませんが、現在、誰もこのアイテムを再販売していません。";
+		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ç¾åœ¨ã€èª°ã‚‚ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’å†è²©å£²ã—ã¦ã„ã¾ã›ã‚“ã€‚";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -104,7 +104,7 @@ internal class ControlsResources_fr_fr : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.August"
 	/// English String: "August"
 	/// </summary>
-	public override string LabelAugust => "Août";
+	public override string LabelAugust => "AoÃ»t";
 
 	/// <summary>
 	/// Key: "Label.Day"
@@ -117,13 +117,13 @@ internal class ControlsResources_fr_fr : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.December"
 	/// English String: "December"
 	/// </summary>
-	public override string LabelDecember => "Décembre";
+	public override string LabelDecember => "DÃ©cembre";
 
 	/// <summary>
 	/// Key: "Label.February"
 	/// English String: "February"
 	/// </summary>
-	public override string LabelFebruary => "Février";
+	public override string LabelFebruary => "FÃ©vrier";
 
 	/// <summary>
 	/// Key: "Label.January"
@@ -184,7 +184,7 @@ internal class ControlsResources_fr_fr : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "Précédent";
+	public override string LabelPrevious => "PrÃ©cÃ©dent";
 
 	/// <summary>
 	/// Key: "Label.September"
@@ -197,7 +197,7 @@ internal class ControlsResources_fr_fr : ControlsResources_en_us, IControlsResou
 	/// Year
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "Année";
+	public override string LabelYear => "AnnÃ©e";
 
 	public ControlsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -281,7 +281,7 @@ internal class ControlsResources_fr_fr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelAugust()
 	{
-		return "Août";
+		return "AoÃ»t";
 	}
 
 	/// <summary>
@@ -306,12 +306,12 @@ internal class ControlsResources_fr_fr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelDecember()
 	{
-		return "Décembre";
+		return "DÃ©cembre";
 	}
 
 	protected override string _GetTemplateForLabelFebruary()
 	{
-		return "Février";
+		return "FÃ©vrier";
 	}
 
 	protected override string _GetTemplateForLabelJanuary()
@@ -361,7 +361,7 @@ internal class ControlsResources_fr_fr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "Précédent";
+		return "PrÃ©cÃ©dent";
 	}
 
 	protected override string _GetTemplateForLabelSeptember()
@@ -371,6 +371,9 @@ internal class ControlsResources_fr_fr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "Année";
+		return "AnnÃ©e";
 	}
+}
+
+
 }

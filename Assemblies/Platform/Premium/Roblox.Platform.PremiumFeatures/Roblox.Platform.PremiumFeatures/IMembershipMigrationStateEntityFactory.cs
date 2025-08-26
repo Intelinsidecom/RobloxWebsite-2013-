@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures;
+﻿namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IMembershipMigrationStateEntityFactory
 
-public interface IMembershipMigrationStateEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStateEntity" /> by its ID.
@@ -15,4 +15,7 @@ public interface IMembershipMigrationStateEntityFactory
 	/// <param name="value">The value</param>
 	/// <returns>The <see cref="T:Roblox.PremiumFeatures.IMembershipMigrationStateEntity" /> with the given value, or null if none existed.</returns>
 	IMembershipMigrationStateEntity GetByValue(string value);
+}
+
+
 }

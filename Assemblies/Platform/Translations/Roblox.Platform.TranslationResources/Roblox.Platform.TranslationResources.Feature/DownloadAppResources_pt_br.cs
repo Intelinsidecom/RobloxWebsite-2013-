@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -46,7 +46,7 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "Jogue Roblox no nosso app para dispositivos móveis!";
+	public override string LabelPlayGamesInMobile => "Jogue Roblox no nosso app para dispositivos mÃ³veis!";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
@@ -60,7 +60,7 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 	/// The user is being encouraged to play through the mobile app.
 	/// English String: "Millions of games by players like you"
 	/// </summary>
-	public override string MessageAppBumperUpsell => "Milhões de jogos feitos por jogadores como você";
+	public override string MessageAppBumperUpsell => "MilhÃµes de jogos feitos por jogadores como vocÃª";
 
 	/// <summary>
 	/// Key: "Message.AppBumpIOSDevice"
@@ -101,7 +101,7 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "Jogue Roblox no nosso app para dispositivos móveis!";
+		return "Jogue Roblox no nosso app para dispositivos mÃ³veis!";
 	}
 
 	/// <summary>
@@ -111,12 +111,12 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 	/// </summary>
 	public override string LabelReviewsCount(string reviewCount)
 	{
-		return $"{reviewCount} avaliações";
+		return $"{reviewCount} avaliaÃ§Ãµes";
 	}
 
 	protected override string _GetTemplateForLabelReviewsCount()
 	{
-		return "{reviewCount} avaliações";
+		return "{reviewCount} avaliaÃ§Ãµes";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpAndroidDevice()
@@ -126,11 +126,14 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForMessageAppBumperUpsell()
 	{
-		return "Milhões de jogos feitos por jogadores como você";
+		return "MilhÃµes de jogos feitos por jogadores como vocÃª";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpIOSDevice()
 	{
 		return "Jogue Roblox no nosso app para iOS!";
 	}
+}
+
+
 }

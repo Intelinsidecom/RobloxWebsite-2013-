@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Roblox.Marketing.BLL;
+namespace Roblox.Marketing {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Marketing;
-
-[ExcludeFromCodeCoverage]
 internal class AccountBrowserTrackerEntityFactory : IAccountBrowserTrackerEntityFactory
 {
 	public IAccountBrowserTrackerEntity GetByAccountIdAndBrowserTrackerId(long accountId, long browserTrackerId)
@@ -26,4 +25,7 @@ internal class AccountBrowserTrackerEntityFactory : IAccountBrowserTrackerEntity
 		}
 		return null;
 	}
+}
+
+
 }

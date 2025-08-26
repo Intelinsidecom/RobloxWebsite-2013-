@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PresenceResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -82,4 +82,7 @@ internal class PresenceResources_pt_br : PresenceResources_en_us, IPresenceResou
 	{
 		return "Jogando {placeName}";
 	}
+}
+
+
 }

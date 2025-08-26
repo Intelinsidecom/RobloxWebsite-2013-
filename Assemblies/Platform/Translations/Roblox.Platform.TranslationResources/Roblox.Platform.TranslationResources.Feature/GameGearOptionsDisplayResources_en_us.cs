@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GameGearOptionsDisplayResources_en_us : TranslationResourcesBase, IGameGearOptionsDisplayResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GameGearOptionsDisplayResources_en_us : TranslationResourcesBase, IGameGearOptionsDisplayResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -72,4 +71,7 @@ internal class GameGearOptionsDisplayResources_en_us : TranslationResourcesBase,
 	{
 		return "No Gear Allowed";
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// A struct responsible for holding metrics for a particular 
 /// moderation queue.
 /// </summary>
@@ -25,4 +24,7 @@ public struct SerializableQueueMetrics
 	/// </summary>
 	[JsonProperty("oldestUnmoderated")]
 	public int OldestUnmoderated { get; set; }
+}
+
+
 }

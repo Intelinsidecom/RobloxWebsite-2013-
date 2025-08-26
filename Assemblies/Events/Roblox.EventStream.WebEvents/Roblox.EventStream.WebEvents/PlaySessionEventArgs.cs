@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class PlaySessionEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class PlaySessionEventArgs : WebEventArgs
 {
 	public Guid GameId { get; set; }
 
@@ -18,3 +18,12 @@ public class PlaySessionEventArgs : WebEventArgs
 
 	public int? CountryId { get; set; }
 }
+
+
+}
+
+
+
+
+
+

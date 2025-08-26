@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.StaticContent.Client {
+    [DataContract]
 
-namespace Roblox.StaticContent.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 internal class CreateStaticContentRequest
 {
@@ -15,4 +14,7 @@ internal class CreateStaticContentRequest
 
 	[DataMember(Name = "contentHash")]
 	public string ContentHash { get; set; }
+}
+
+
 }

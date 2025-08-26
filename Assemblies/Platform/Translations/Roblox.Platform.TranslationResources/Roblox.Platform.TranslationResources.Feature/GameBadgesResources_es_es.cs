@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameBadgesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -17,7 +17,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 	/// It would be extremely easy for the user to accomplish this goal.
 	/// English String: "Cake Walk"
 	/// </summary>
-	public override string LabelRarityCakeWalk => "Muy fácil";
+	public override string LabelRarityCakeWalk => "Muy fÃ¡cil";
 
 	/// <summary>
 	/// Key: "Label.RarityChallenging"
@@ -31,7 +31,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 	/// It would be easy for the user to accomplish this goal.
 	/// English String: "Easy"
 	/// </summary>
-	public override string LabelRarityEasy => "Fácil";
+	public override string LabelRarityEasy => "FÃ¡cil";
 
 	/// <summary>
 	/// Key: "Label.RarityExtreme"
@@ -52,7 +52,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 	/// It would be difficult for the user to accomplish this goal.
 	/// English String: "Hard"
 	/// </summary>
-	public override string LabelRarityHard => "Difícil";
+	public override string LabelRarityHard => "DifÃ­cil";
 
 	/// <summary>
 	/// Key: "Label.RarityImpossible"
@@ -85,7 +85,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 	/// Key: "LabelSeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "Ver más";
+	public override string LabelSeeMore => "Ver mÃ¡s";
 
 	/// <summary>
 	/// Key: "LabelWonEver"
@@ -111,7 +111,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityCakeWalk()
 	{
-		return "Muy fácil";
+		return "Muy fÃ¡cil";
 	}
 
 	protected override string _GetTemplateForLabelRarityChallenging()
@@ -121,7 +121,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityEasy()
 	{
-		return "Fácil";
+		return "FÃ¡cil";
 	}
 
 	protected override string _GetTemplateForLabelRarityExtreme()
@@ -136,7 +136,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelRarityHard()
 	{
-		return "Difícil";
+		return "DifÃ­cil";
 	}
 
 	protected override string _GetTemplateForLabelRarityImpossible()
@@ -161,7 +161,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "Ver más";
+		return "Ver mÃ¡s";
 	}
 
 	protected override string _GetTemplateForLabelWonEver()
@@ -173,4 +173,7 @@ internal class GameBadgesResources_es_es : GameBadgesResources_en_us, IGameBadge
 	{
 		return "Ganados ayer";
 	}
+}
+
+
 }

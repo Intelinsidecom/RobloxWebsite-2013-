@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Coreinternal {
+    interface ILocaleParser
 
-internal interface ILocaleParser
 {
 	/// <summary>
 	/// standardized the raw locale and return
@@ -22,4 +22,7 @@ internal interface ILocaleParser
 	/// <param name="localeCode"></param>
 	/// <returns><see cref="T:Roblox.Platform.Localization.Core.SupportedLocaleEnum" /></returns>
 	SupportedLocaleEnum? ParseLocaleCodeToSupportedLocaleEnum(string localeCode);
+}
+
+
 }

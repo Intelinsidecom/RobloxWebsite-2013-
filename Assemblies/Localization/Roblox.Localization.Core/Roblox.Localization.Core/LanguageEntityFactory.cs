@@ -1,9 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using Roblox.Platform.Core;
+namespace Roblox.Localization.Core {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Core;
-
-[ExcludeFromCodeCoverage]
 internal class LanguageEntityFactory : ILanguageEntityFactory
 {
 	public ILanguageEntity Get(int id)
@@ -79,4 +78,7 @@ internal class LanguageEntityFactory : ILanguageEntityFactory
 			throw new PlatformArgumentException(string.Format("'{0}' cannot be null or empty", "languageCode"));
 		}
 	}
+}
+
+
 }

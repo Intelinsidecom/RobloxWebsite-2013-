@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationLanguageSwitchResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,14 +11,14 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The label for the gear icon which is used to open the modal for changing default language
 	/// English String: "Change default"
 	/// </summary>
-	public override string DescriptionChangeDefault => "Changer la langue par défaut";
+	public override string DescriptionChangeDefault => "Changer la langue par dÃ©faut";
 
 	/// <summary>
 	/// Key: "Description.ChangeDefaultLanguage"
 	/// The body content for the modal which is used to change default language
 	/// English String: "What language do you want to set as default language?"
 	/// </summary>
-	public override string DescriptionChangeDefaultLanguage => "Quelle langue voulez-vous choisir par défaut\u00a0?";
+	public override string DescriptionChangeDefaultLanguage => "Quelle langue voulez-vous choisir par dÃ©faut\u00a0?";
 
 	/// <summary>
 	/// Key: "Description.Delete"
@@ -32,7 +32,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The tooltip description to explain what the language switch is
 	/// English String: "You can specify default and localized language, so that user can see game title and description in their language."
 	/// </summary>
-	public override string DescriptionLanguageSwitch => "Vous pouvez définir la langue par défaut et de traduction, qui permet à l'utilisateur de voir le titre du jeu et les descriptions dans sa langue.";
+	public override string DescriptionLanguageSwitch => "Vous pouvez dÃ©finir la langue par dÃ©faut et de traduction, qui permet Ã  l'utilisateur de voir le titre du jeu et les descriptions dans sa langue.";
 
 	/// <summary>
 	/// Key: "Description.MissingTranslation"
@@ -46,21 +46,21 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The body content for the modal which is used to delete a language
 	/// English String: "All localized information will be deleted."
 	/// </summary>
-	public override string DescriptionRemoveLanguage => "Toutes les informations traduites seront supprimées.";
+	public override string DescriptionRemoveLanguage => "Toutes les informations traduites seront supprimÃ©es.";
 
 	/// <summary>
 	/// Key: "Description.Save"
 	/// The content for save confirmation modal
 	/// English String: "You have unsaved changes. Are you sure you want to leave this page?"
 	/// </summary>
-	public override string DescriptionSave => "Certaines de vos modifications n'ont pas enregistrées. Voulez-vous vraiment quitter cette page\u00a0?";
+	public override string DescriptionSave => "Certaines de vos modifications n'ont pas enregistrÃ©es. Voulez-vous vraiment quitter cette page\u00a0?";
 
 	/// <summary>
 	/// Key: "Description.UseDefault"
 	/// The hint text in the body content of the model which is used to change default language
 	/// English String: "* If localized app information isn't available in an App Store territory, the information from your default language will be used instead."
 	/// </summary>
-	public override string DescriptionUseDefault => "* Si les informations traduites de l'application ne sont pas disponibles dans l'App Store de votre territoire, elles seront affichées dans votre langue par défaut.";
+	public override string DescriptionUseDefault => "* Si les informations traduites de l'application ne sont pas disponibles dans l'App Store de votre territoire, elles seront affichÃ©es dans votre langue par dÃ©faut.";
 
 	/// <summary>
 	/// Key: "Heading.AddLanguage"
@@ -74,7 +74,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The title for the modal which is used to change default language
 	/// English String: "Change the default language?"
 	/// </summary>
-	public override string HeadingChangeDefault => "Changer la langue par défaut\u00a0?";
+	public override string HeadingChangeDefault => "Changer la langue par dÃ©faut\u00a0?";
 
 	/// <summary>
 	/// Key: "Label.Add"
@@ -116,7 +116,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The label for current language selection dropdown
 	/// English String: "Choose a language to view/edit translations: "
 	/// </summary>
-	public override string LabelChooseLanguage => "Sélectionnez une langue pour consulter/éditer les traductions\u00a0: ";
+	public override string LabelChooseLanguage => "SÃ©lectionnez une langue pour consulter/Ã©diter les traductions\u00a0: ";
 
 	/// <summary>
 	/// Key: "Label.CurrentLanguage"
@@ -130,7 +130,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The label for user's default language
 	/// English String: "Default"
 	/// </summary>
-	public override string LabelDefault => "Par défaut";
+	public override string LabelDefault => "Par dÃ©faut";
 
 	/// <summary>
 	/// Key: "Label.Delete"
@@ -151,7 +151,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The label for current language field when user hasn't specified a language yet
 	/// English String: "Not specified"
 	/// </summary>
-	public override string LabelNotSpecified => "Non spécifié(e)";
+	public override string LabelNotSpecified => "Non spÃ©cifiÃ©(e)";
 
 	/// <summary>
 	/// Key: "Label.SearchLanguages"
@@ -165,7 +165,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The label for the link which is used to open up a modal for user to set a default language for the very first time
 	/// English String: "Set default language"
 	/// </summary>
-	public override string LabelSetDefaultLanguage => "Langue par défaut";
+	public override string LabelSetDefaultLanguage => "Langue par dÃ©faut";
 
 	/// <summary>
 	/// Key: "Label.Source"
@@ -186,7 +186,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "Erreur\u00a0: une erreur s'est produite. Veuillez réessayer plus tard.";
+	public override string ResponseGeneralError => "Erreur\u00a0: une erreur s'est produite. Veuillez rÃ©essayer plus tard.";
 
 	public TranslationLanguageSwitchResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -195,12 +195,12 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForDescriptionChangeDefault()
 	{
-		return "Changer la langue par défaut";
+		return "Changer la langue par dÃ©faut";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeDefaultLanguage()
 	{
-		return "Quelle langue voulez-vous choisir par défaut\u00a0?";
+		return "Quelle langue voulez-vous choisir par dÃ©faut\u00a0?";
 	}
 
 	protected override string _GetTemplateForDescriptionDelete()
@@ -210,7 +210,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForDescriptionLanguageSwitch()
 	{
-		return "Vous pouvez définir la langue par défaut et de traduction, qui permet à l'utilisateur de voir le titre du jeu et les descriptions dans sa langue.";
+		return "Vous pouvez dÃ©finir la langue par dÃ©faut et de traduction, qui permet Ã  l'utilisateur de voir le titre du jeu et les descriptions dans sa langue.";
 	}
 
 	protected override string _GetTemplateForDescriptionMissingTranslation()
@@ -220,17 +220,17 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForDescriptionRemoveLanguage()
 	{
-		return "Toutes les informations traduites seront supprimées.";
+		return "Toutes les informations traduites seront supprimÃ©es.";
 	}
 
 	protected override string _GetTemplateForDescriptionSave()
 	{
-		return "Certaines de vos modifications n'ont pas enregistrées. Voulez-vous vraiment quitter cette page\u00a0?";
+		return "Certaines de vos modifications n'ont pas enregistrÃ©es. Voulez-vous vraiment quitter cette page\u00a0?";
 	}
 
 	protected override string _GetTemplateForDescriptionUseDefault()
 	{
-		return "* Si les informations traduites de l'application ne sont pas disponibles dans l'App Store de votre territoire, elles seront affichées dans votre langue par défaut.";
+		return "* Si les informations traduites de l'application ne sont pas disponibles dans l'App Store de votre territoire, elles seront affichÃ©es dans votre langue par dÃ©faut.";
 	}
 
 	protected override string _GetTemplateForHeadingAddLanguage()
@@ -240,7 +240,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForHeadingChangeDefault()
 	{
-		return "Changer la langue par défaut\u00a0?";
+		return "Changer la langue par dÃ©faut\u00a0?";
 	}
 
 	/// <summary>
@@ -285,7 +285,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForLabelChooseLanguage()
 	{
-		return "Sélectionnez une langue pour consulter/éditer les traductions\u00a0: ";
+		return "SÃ©lectionnez une langue pour consulter/Ã©diter les traductions\u00a0: ";
 	}
 
 	protected override string _GetTemplateForLabelCurrentLanguage()
@@ -295,7 +295,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForLabelDefault()
 	{
-		return "Par défaut";
+		return "Par dÃ©faut";
 	}
 
 	protected override string _GetTemplateForLabelDelete()
@@ -310,7 +310,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForLabelNotSpecified()
 	{
-		return "Non spécifié(e)";
+		return "Non spÃ©cifiÃ©(e)";
 	}
 
 	protected override string _GetTemplateForLabelSearchLanguages()
@@ -320,7 +320,7 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForLabelSetDefaultLanguage()
 	{
-		return "Langue par défaut";
+		return "Langue par dÃ©faut";
 	}
 
 	protected override string _GetTemplateForLabelSource()
@@ -350,6 +350,9 @@ internal class TranslationLanguageSwitchResources_fr_fr : TranslationLanguageSwi
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "Erreur\u00a0: une erreur s'est produite. Veuillez réessayer plus tard.";
+		return "Erreur\u00a0: une erreur s'est produite. Veuillez rÃ©essayer plus tard.";
 	}
+}
+
+
 }

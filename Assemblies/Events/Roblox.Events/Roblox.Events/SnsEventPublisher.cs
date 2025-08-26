@@ -2,10 +2,9 @@ using Amazon;
 using Roblox.Amazon.Sns;
 using Roblox.Configuration;
 using Roblox.Instrumentation;
+namespace Roblox.Events {
+    internal class SnsEventPublisher : IEventPublisher
 
-namespace Roblox.Platform.Events;
-
-internal class SnsEventPublisher : IEventPublisher
 {
 	private readonly SnsPublisher _SnsPublisher;
 
@@ -21,4 +20,7 @@ internal class SnsEventPublisher : IEventPublisher
 	{
 		_SnsPublisher.Publish(message);
 	}
+}
+
+
 }

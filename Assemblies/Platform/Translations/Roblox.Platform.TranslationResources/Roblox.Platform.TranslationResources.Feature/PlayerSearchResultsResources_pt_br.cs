@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PlayerSearchResultsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -40,7 +40,7 @@ internal class PlayerSearchResultsResources_pt_br : PlayerSearchResultsResources
 	/// Key: "Label.AlsoKnownAsAbbreviation"
 	/// English String: "aka."
 	/// </summary>
-	public override string LabelAlsoKnownAsAbbreviation => "também conhecido como";
+	public override string LabelAlsoKnownAsAbbreviation => "tambÃ©m conhecido como";
 
 	/// <summary>
 	/// Key: "Label.Offline"
@@ -64,25 +64,25 @@ internal class PlayerSearchResultsResources_pt_br : PlayerSearchResultsResources
 	/// Key: "Label.ThisIsYou"
 	/// English String: "This is you"
 	/// </summary>
-	public override string LabelThisIsYou => "Este é você";
+	public override string LabelThisIsYou => "Este Ã© vocÃª";
 
 	/// <summary>
 	/// Key: "Label.UnsafeInput"
 	/// English String: "You have entered unsafe input. Please try your search again."
 	/// </summary>
-	public override string LabelUnsafeInput => "Você inseriu dados não seguros. Tente pesquisar de novo.";
+	public override string LabelUnsafeInput => "VocÃª inseriu dados nÃ£o seguros. Tente pesquisar de novo.";
 
 	/// <summary>
 	/// Key: "Label.YouAreFollowing"
 	/// English String: "You are following"
 	/// </summary>
-	public override string LabelYouAreFollowing => "Você está seguindo";
+	public override string LabelYouAreFollowing => "VocÃª estÃ¡ seguindo";
 
 	/// <summary>
 	/// Key: "Label.YouAreFriends"
 	/// English String: "You are friends"
 	/// </summary>
-	public override string LabelYouAreFriends => "Vocês são amigos";
+	public override string LabelYouAreFriends => "VocÃªs sÃ£o amigos";
 
 	public PlayerSearchResultsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -130,7 +130,7 @@ internal class PlayerSearchResultsResources_pt_br : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForLabelAlsoKnownAsAbbreviation()
 	{
-		return "também conhecido como";
+		return "tambÃ©m conhecido como";
 	}
 
 	/// <summary>
@@ -153,12 +153,12 @@ internal class PlayerSearchResultsResources_pt_br : PlayerSearchResultsResources
 	/// </summary>
 	public override string LabelNoMatchesAvailable(string keyword)
 	{
-		return $"Nenhuma partida disponível para \"{keyword}\"";
+		return $"Nenhuma partida disponÃ­vel para \"{keyword}\"";
 	}
 
 	protected override string _GetTemplateForLabelNoMatchesAvailable()
 	{
-		return "Nenhuma partida disponível para \"{keyword}\"";
+		return "Nenhuma partida disponÃ­vel para \"{keyword}\"";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
@@ -192,21 +192,24 @@ internal class PlayerSearchResultsResources_pt_br : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForLabelThisIsYou()
 	{
-		return "Este é você";
+		return "Este Ã© vocÃª";
 	}
 
 	protected override string _GetTemplateForLabelUnsafeInput()
 	{
-		return "Você inseriu dados não seguros. Tente pesquisar de novo.";
+		return "VocÃª inseriu dados nÃ£o seguros. Tente pesquisar de novo.";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFollowing()
 	{
-		return "Você está seguindo";
+		return "VocÃª estÃ¡ seguindo";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFriends()
 	{
-		return "Vocês são amigos";
+		return "VocÃªs sÃ£o amigos";
 	}
+}
+
+
 }

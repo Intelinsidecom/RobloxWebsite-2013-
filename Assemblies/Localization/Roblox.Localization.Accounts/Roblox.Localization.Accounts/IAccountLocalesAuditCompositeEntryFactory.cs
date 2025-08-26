@@ -1,8 +1,10 @@
-using Roblox.Platform.Localization.Audit;
+﻿using Roblox.Platform.Localization.Audit;
+namespace Roblox.Localization.Accountsinternal {
+    interface IAccountLocalesAuditCompositeEntryFactory
 
-namespace Roblox.Platform.Localization.Accounts;
-
-internal interface IAccountLocalesAuditCompositeEntryFactory
 {
 	IAccountLocalesAuditCompositeEntry Create(IAccountLocalesAuditMetadataEntity metadata, IAccountLocalesAuditEntryEntity auditEntry);
+}
+
+
 }

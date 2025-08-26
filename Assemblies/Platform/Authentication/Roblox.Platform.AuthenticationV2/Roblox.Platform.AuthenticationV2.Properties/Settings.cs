@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -7,10 +7,9 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using Roblox.Configuration;
+namespace Roblox.Platform.AuthenticationV2.Properties {
+    [SettingsProvider(typeof(Provider))]
 
-namespace Roblox.AuthenticationV2.Properties;
-
-[SettingsProvider(typeof(Provider))]
 [ExcludeFromCodeCoverage]
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
@@ -82,4 +81,7 @@ internal sealed class Settings : ApplicationSettingsBase, ISettings, IIPAddressH
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, this);
 	}
+}
+
+
 }

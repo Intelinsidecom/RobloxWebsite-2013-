@@ -1,9 +1,8 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using Roblox.DataV2.Core;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 internal class GetDisplayNameHistoryByUserIdRequest
@@ -19,4 +18,6 @@ internal class GetDisplayNameHistoryByUserIdRequest
 
 	[DataMember(Name = "exclusiveStartId")]
 	public long? ExclusiveStartId { get; set; }
+}
+
 }

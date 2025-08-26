@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides EngagementPayoutResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -21,4 +21,7 @@ internal class EngagementPayoutResources_fr_fr : EngagementPayoutResources_en_us
 	{
 		return "Engagement et paiement";
 	}
+}
+
+
 }

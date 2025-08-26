@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core;
+﻿namespace Roblox.Localization.Corepublic {
+    class LanguageFamilyIdentifier : ILanguageFamilyIdentifier
 
-public class LanguageFamilyIdentifier : ILanguageFamilyIdentifier
 {
 	public int Id { get; }
 
@@ -8,4 +8,7 @@ public class LanguageFamilyIdentifier : ILanguageFamilyIdentifier
 	{
 		Id = id;
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Parameters for requesting the filtering of text.
 /// </summary>
 public interface IModeratedTextRequest
@@ -34,4 +34,7 @@ public interface IModeratedTextRequest
 	/// Whether or to track detailed statistics for this client
 	/// </summary>
 	bool TrackDetailedClientStatistics { get; }
+}
+
+
 }

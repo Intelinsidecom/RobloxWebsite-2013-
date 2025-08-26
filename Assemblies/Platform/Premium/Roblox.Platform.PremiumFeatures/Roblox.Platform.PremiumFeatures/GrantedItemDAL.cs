@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.PremiumFeatures {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.PremiumFeatures;
-
-[ExcludeFromCodeCoverage]
 internal class GrantedItemDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxPremiumFeatures;
@@ -109,4 +108,7 @@ internal class GrantedItemDAL
 		SqlParameter[] queryParameters = obj;
 		return RobloxDatabase.RobloxPremiumFeatures.GetIDCollection<long>("GrantedItems_GetGrantedItemIDsByGrantedItemListID", queryParameters);
 	}
+}
+
+
 }

@@ -1,11 +1,13 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.Thumbnails.RequestValidationpublic {
+    class InvalidThumbnailSizeException : Exception
 
-namespace Roblox.Thumbnails.RequestValidation;
-
-public class InvalidThumbnailSizeException : Exception
 {
 	public InvalidThumbnailSizeException(string message)
 		: base(message)
 	{
 	}
+}
+
+
 }

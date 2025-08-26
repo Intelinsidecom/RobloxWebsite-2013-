@@ -1,10 +1,9 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+namespace Roblox.Platform.TextFilter.Client {
+    public class EmptyTextFilterClientV2 : ITextFilterClientV2
 
-namespace Roblox.TextFilter.Client;
-
-public class EmptyTextFilterClientV2 : ITextFilterClientV2
 {
 	public FilterLiveTextResult FilterLiveText(string text, IClientTextAuthor author, TextFilterUsage usage, string server, string instanceId)
 	{
@@ -55,4 +54,7 @@ public class EmptyTextFilterClientV2 : ITextFilterClientV2
 	{
 		throw new NotImplementedException();
 	}
+}
+
+
 }

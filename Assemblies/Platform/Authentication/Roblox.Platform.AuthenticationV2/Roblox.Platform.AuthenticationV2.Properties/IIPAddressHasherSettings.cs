@@ -1,6 +1,9 @@
-namespace Roblox.AuthenticationV2.Properties;
+﻿namespace Roblox.Platform.AuthenticationV2.Propertiesinternal {
+    interface IIPAddressHasherSettings
 
-internal interface IIPAddressHasherSettings
 {
 	string IPAddressHashingSalt { get; }
+}
+
+
 }

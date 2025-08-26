@@ -1,10 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using ProtoBuf;
+namespace Roblox.Platform.GameInstances.Client {
+    [ProtoContract]
 
-namespace Roblox.GameInstances.Client;
-
-[ProtoContract]
 public class GameCollectionPayload
 {
 	[ProtoMember(1)]
@@ -19,4 +18,7 @@ public class GameCollectionPayload
 	{
 		Data = games;
 	}
+}
+
+
 }

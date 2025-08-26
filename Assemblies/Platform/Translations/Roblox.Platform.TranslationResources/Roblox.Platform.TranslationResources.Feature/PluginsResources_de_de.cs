@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PluginsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class PluginsResources_de_de : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.ErrorBody"
 	/// English String: "There was a problem installing this plugin. Please try again later."
 	/// </summary>
-	public override string LabelErrorBody => "Beim Installieren dieses Plug-ins ist ein Problem aufgetreten. Bitte versuche es später erneut.";
+	public override string LabelErrorBody => "Beim Installieren dieses Plug-ins ist ein Problem aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Label.ErrorTitle"
@@ -40,7 +40,7 @@ internal class PluginsResources_de_de : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.UpdateErrorBody"
 	/// English String: "There was a problem updating this plugin. Please try again later."
 	/// </summary>
-	public override string LabelUpdateErrorBody => "Beim Aktualisieren dieses Plug-ins ist ein Problem aufgetreten. Bitte versuche es später erneut.";
+	public override string LabelUpdateErrorBody => "Beim Aktualisieren dieses Plug-ins ist ein Problem aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 
 	/// <summary>
 	/// Key: "Label.UpdateErrorTitle"
@@ -67,7 +67,7 @@ internal class PluginsResources_de_de : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelErrorBody()
 	{
-		return "Beim Installieren dieses Plug-ins ist ein Problem aufgetreten. Bitte versuche es später erneut.";
+		return "Beim Installieren dieses Plug-ins ist ein Problem aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForLabelErrorTitle()
@@ -106,7 +106,7 @@ internal class PluginsResources_de_de : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelUpdateErrorBody()
 	{
-		return "Beim Aktualisieren dieses Plug-ins ist ein Problem aufgetreten. Bitte versuche es später erneut.";
+		return "Beim Aktualisieren dieses Plug-ins ist ein Problem aufgetreten. Bitte versuche es spÃ¤ter erneut.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateErrorTitle()
@@ -120,12 +120,12 @@ internal class PluginsResources_de_de : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelUpdateSuccessBody(string item)
 	{
-		return $"{item} wurde erfolgreich aktualisiert! Bitte öffne ein neues Fenster, damit die Änderungen wirksam werden.";
+		return $"{item} wurde erfolgreich aktualisiert! Bitte Ã¶ffne ein neues Fenster, damit die Ã„nderungen wirksam werden.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessBody()
 	{
-		return "{item} wurde erfolgreich aktualisiert! Bitte öffne ein neues Fenster, damit die Änderungen wirksam werden.";
+		return "{item} wurde erfolgreich aktualisiert! Bitte Ã¶ffne ein neues Fenster, damit die Ã„nderungen wirksam werden.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessTitle()
@@ -137,4 +137,7 @@ internal class PluginsResources_de_de : PluginsResources_en_us, IPluginsResource
 	{
 		return "Aktualisieren";
 	}
+}
+
+
 }

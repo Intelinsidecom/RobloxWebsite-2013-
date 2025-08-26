@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Marketing.Corepublic {
+    interface ITakeoverContentItem
 
-namespace Roblox.Platform.Marketing.Core;
-
-public interface ITakeoverContentItem
 {
 	int Id { get; }
 
@@ -17,4 +16,7 @@ public interface ITakeoverContentItem
 	DateTime Updated { get; }
 
 	void Delete();
+}
+
+
 }

@@ -1,5 +1,8 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    class MatchmakingCapability : ServerCapabilityBase
 
-public class MatchmakingCapability : ServerCapabilityBase
 {
+}
+
+
 }

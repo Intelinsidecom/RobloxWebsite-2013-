@@ -1,9 +1,8 @@
-using ProtoBuf;
+﻿using ProtoBuf;
 using Roblox.GameInstances.Interfaces;
+namespace Roblox.Platform.GameInstances.Client {
+    [ProtoContract]
 
-namespace Roblox.GameInstances.Client;
-
-[ProtoContract]
 public class Geolocation : IGeolocation
 {
 	[ProtoMember(1)]
@@ -14,4 +13,7 @@ public class Geolocation : IGeolocation
 
 	[ProtoMember(3)]
 	public int? CountryId { get; set; }
+}
+
+
 }

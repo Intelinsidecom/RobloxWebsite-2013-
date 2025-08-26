@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class GameCounterEventArgs : WebEventArgs
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class GameCounterEventArgs : WebEventArgs
 {
 	public string CounterKey { get; set; }
 
@@ -10,3 +10,12 @@ public class GameCounterEventArgs : WebEventArgs
 
 	public DateTime TimeStamp { get; set; }
 }
+
+
+}
+
+
+
+
+
+

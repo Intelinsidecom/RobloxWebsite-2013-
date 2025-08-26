@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -53,7 +53,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.ConfirmUnblockUser"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string ActionConfirmUnblockUser => "Débloquer";
+	public override string ActionConfirmUnblockUser => "DÃ©bloquer";
 
 	/// <summary>
 	/// Key: "Action.Favorites"
@@ -77,7 +77,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.ImpersonateUser"
 	/// English String: "Impersonate User"
 	/// </summary>
-	public override string ActionImpersonateUser => "Usurpation d'identité";
+	public override string ActionImpersonateUser => "Usurpation d'identitÃ©";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
@@ -137,19 +137,19 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.Trade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string ActionTrade => "Échange";
+	public override string ActionTrade => "Ã‰change";
 
 	/// <summary>
 	/// Key: "Action.TradeItems"
 	/// English String: "Trade Items"
 	/// </summary>
-	public override string ActionTradeItems => "Échange d'objets";
+	public override string ActionTradeItems => "Ã‰change d'objets";
 
 	/// <summary>
 	/// Key: "Action.UnblockUser"
 	/// English String: "Unblock User"
 	/// </summary>
-	public override string ActionUnblockUser => "Débloquer l'utilisateur";
+	public override string ActionUnblockUser => "DÃ©bloquer l'utilisateur";
 
 	/// <summary>
 	/// Key: "Action.Unfollow"
@@ -167,7 +167,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.UpdateStatus"
 	/// English String: "Update Status"
 	/// </summary>
-	public override string ActionUpdateStatus => "Mettre à jour le statut";
+	public override string ActionUpdateStatus => "Mettre Ã  jour le statut";
 
 	/// <summary>
 	/// Key: "Description.BlockUserFooter"
@@ -191,14 +191,14 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Description.UnblockUserPrompt"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string DescriptionUnblockUserPrompt => "Voulez-vous vraiment débloquer cet utilisateur\u00a0?";
+	public override string DescriptionUnblockUserPrompt => "Voulez-vous vraiment dÃ©bloquer cet utilisateur\u00a0?";
 
 	/// <summary>
 	/// Key: "Heading.AboutTab"
 	/// this is for the heading under About tab on profile page
 	/// English String: "About"
 	/// </summary>
-	public override string HeadingAboutTab => "À propos";
+	public override string HeadingAboutTab => "Ã€ propos";
 
 	/// <summary>
 	/// Key: "Heading.BlockUserTitle"
@@ -258,13 +258,13 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Heading.PlayerAssetsClothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string HeadingPlayerAssetsClothing => "Vêtements";
+	public override string HeadingPlayerAssetsClothing => "VÃªtements";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsModels"
 	/// English String: "Models"
 	/// </summary>
-	public override string HeadingPlayerAssetsModels => "Modèles";
+	public override string HeadingPlayerAssetsModels => "ModÃ¨les";
 
 	/// <summary>
 	/// Key: "Heading.PlayerBadge"
@@ -300,7 +300,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.About"
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "À propos";
+	public override string LabelAbout => "Ã€ propos";
 
 	/// <summary>
 	/// Key: "Label.Alias"
@@ -338,19 +338,19 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// set nickname
 	/// English String: "Set Alias"
 	/// </summary>
-	public override string LabelChangeAlias => "Définir alias";
+	public override string LabelChangeAlias => "DÃ©finir alias";
 
 	/// <summary>
 	/// Key: "Label.Creations"
 	/// English String: "Creations"
 	/// </summary>
-	public override string LabelCreations => "Créations";
+	public override string LabelCreations => "CrÃ©ations";
 
 	/// <summary>
 	/// Key: "Label.Followers"
 	/// English String: "Followers"
 	/// </summary>
-	public override string LabelFollowers => "Abonnés";
+	public override string LabelFollowers => "AbonnÃ©s";
 
 	/// <summary>
 	/// Key: "Label.Following"
@@ -452,13 +452,13 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Label.UnblockWarningBody"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string LabelUnblockWarningBody => "Voulez-vous vraiment débloquer cet utilisateur\u00a0?";
+	public override string LabelUnblockWarningBody => "Voulez-vous vraiment dÃ©bloquer cet utilisateur\u00a0?";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningConfirm"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string LabelUnblockWarningConfirm => "Débloquer";
+	public override string LabelUnblockWarningConfirm => "DÃ©bloquer";
 
 	/// <summary>
 	/// Key: "Label.Visits"
@@ -476,7 +476,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Message.AliasHasError"
 	/// English String: "An error has occurred. Please try again later"
 	/// </summary>
-	public override string MessageAliasHasError => "Une erreur s'est produite, réessaye plus tard\u00a0";
+	public override string MessageAliasHasError => "Une erreur s'est produite, rÃ©essaye plus tard\u00a0";
 
 	/// <summary>
 	/// Key: "Message.AliasIsModerated"
@@ -488,19 +488,19 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Message.ChangeStatus"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string MessageChangeStatus => "Qu'avez-vous en tête\u00a0?";
+	public override string MessageChangeStatus => "Qu'avez-vous en tÃªte\u00a0?";
 
 	/// <summary>
 	/// Key: "Message.ErrorBlockLimit"
 	/// English String: "Operation failed! You may have blocked too many people."
 	/// </summary>
-	public override string MessageErrorBlockLimit => "Échec de l'opération. Vous avez peut-être bloqué trop d'utilisateurs.";
+	public override string MessageErrorBlockLimit => "Ã‰chec de l'opÃ©ration. Vous avez peut-Ãªtre bloquÃ© trop d'utilisateurs.";
 
 	/// <summary>
 	/// Key: "Message.ErrorGeneral"
 	/// English String: "Something went wrong. Please check back in a few minutes."
 	/// </summary>
-	public override string MessageErrorGeneral => "Un problème est survenu. Veuillez réessayer dans quelques minutes.";
+	public override string MessageErrorGeneral => "Un problÃ¨me est survenu. Veuillez rÃ©essayer dans quelques minutes.";
 
 	/// <summary>
 	/// Key: "Message.Sharing"
@@ -557,7 +557,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionConfirmUnblockUser()
 	{
-		return "Débloquer";
+		return "DÃ©bloquer";
 	}
 
 	protected override string _GetTemplateForActionFavorites()
@@ -577,7 +577,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionImpersonateUser()
 	{
-		return "Usurpation d'identité";
+		return "Usurpation d'identitÃ©";
 	}
 
 	protected override string _GetTemplateForActionInventory()
@@ -627,17 +627,17 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionTrade()
 	{
-		return "Échange";
+		return "Ã‰change";
 	}
 
 	protected override string _GetTemplateForActionTradeItems()
 	{
-		return "Échange d'objets";
+		return "Ã‰change d'objets";
 	}
 
 	protected override string _GetTemplateForActionUnblockUser()
 	{
-		return "Débloquer l'utilisateur";
+		return "DÃ©bloquer l'utilisateur";
 	}
 
 	protected override string _GetTemplateForActionUnfollow()
@@ -652,7 +652,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionUpdateStatus()
 	{
-		return "Mettre à jour le statut";
+		return "Mettre Ã  jour le statut";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserFooter()
@@ -672,12 +672,12 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForDescriptionUnblockUserPrompt()
 	{
-		return "Voulez-vous vraiment débloquer cet utilisateur\u00a0?";
+		return "Voulez-vous vraiment dÃ©bloquer cet utilisateur\u00a0?";
 	}
 
 	protected override string _GetTemplateForHeadingAboutTab()
 	{
-		return "À propos";
+		return "Ã€ propos";
 	}
 
 	protected override string _GetTemplateForHeadingBlockUserTitle()
@@ -741,12 +741,12 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForHeadingPlayerAssetsClothing()
 	{
-		return "Vêtements";
+		return "VÃªtements";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsModels()
 	{
-		return "Modèles";
+		return "ModÃ¨les";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerBadge()
@@ -776,7 +776,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "À propos";
+		return "Ã€ propos";
 	}
 
 	protected override string _GetTemplateForLabelAlias()
@@ -806,17 +806,17 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelChangeAlias()
 	{
-		return "Définir alias";
+		return "DÃ©finir alias";
 	}
 
 	protected override string _GetTemplateForLabelCreations()
 	{
-		return "Créations";
+		return "CrÃ©ations";
 	}
 
 	protected override string _GetTemplateForLabelFollowers()
 	{
-		return "Abonnés";
+		return "AbonnÃ©s";
 	}
 
 	protected override string _GetTemplateForLabelFollowing()
@@ -876,17 +876,17 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
+	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	public override string LabelQuotation(string userStatus)
 	{
-		return $"«\u00a0{userStatus}\u00a0»";
+		return $"Â«\u00a0{userStatus}\u00a0Â»";
 	}
 
 	protected override string _GetTemplateForLabelQuotation()
 	{
-		return "«\u00a0{userStatus}\u00a0»";
+		return "Â«\u00a0{userStatus}\u00a0Â»";
 	}
 
 	protected override string _GetTemplateForLabelRank()
@@ -916,12 +916,12 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForLabelUnblockWarningBody()
 	{
-		return "Voulez-vous vraiment débloquer cet utilisateur\u00a0?";
+		return "Voulez-vous vraiment dÃ©bloquer cet utilisateur\u00a0?";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningConfirm()
 	{
-		return "Débloquer";
+		return "DÃ©bloquer";
 	}
 
 	protected override string _GetTemplateForLabelVisits()
@@ -936,7 +936,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForMessageAliasHasError()
 	{
-		return "Une erreur s'est produite, réessaye plus tard\u00a0";
+		return "Une erreur s'est produite, rÃ©essaye plus tard\u00a0";
 	}
 
 	protected override string _GetTemplateForMessageAliasIsModerated()
@@ -946,17 +946,17 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForMessageChangeStatus()
 	{
-		return "Qu'avez-vous en tête\u00a0?";
+		return "Qu'avez-vous en tÃªte\u00a0?";
 	}
 
 	protected override string _GetTemplateForMessageErrorBlockLimit()
 	{
-		return "Échec de l'opération. Vous avez peut-être bloqué trop d'utilisateurs.";
+		return "Ã‰chec de l'opÃ©ration. Vous avez peut-Ãªtre bloquÃ© trop d'utilisateurs.";
 	}
 
 	protected override string _GetTemplateForMessageErrorGeneral()
 	{
-		return "Un problème est survenu. Veuillez réessayer dans quelques minutes.";
+		return "Un problÃ¨me est survenu. Veuillez rÃ©essayer dans quelques minutes.";
 	}
 
 	/// <summary>
@@ -965,12 +965,12 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string MessageNoCreation(string username)
 	{
-		return $"{username} n'a aucune création.";
+		return $"{username} n'a aucune crÃ©ation.";
 	}
 
 	protected override string _GetTemplateForMessageNoCreation()
 	{
-		return "{username} n'a aucune création.";
+		return "{username} n'a aucune crÃ©ation.";
 	}
 
 	protected override string _GetTemplateForMessageSharing()
@@ -982,4 +982,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	{
 		return "Trop de tentatives";
 	}
+}
+
+
 }

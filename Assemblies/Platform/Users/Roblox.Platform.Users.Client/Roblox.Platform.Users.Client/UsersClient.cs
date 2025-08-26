@@ -8,10 +8,9 @@ using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
 using Roblox.RequestContext;
-using Roblox.Users.Client.Properties;
-
-namespace Roblox.Users.Client;
-
+using Roblox.Platform.Users.Client.Properties;
+namespace Roblox.Platform.Users.Client
+{
 public class UsersClient : IUsersClient
 {
 	private readonly IServiceRequestSender _ServiceRequestSender;
@@ -412,6 +411,19 @@ public class UsersClient : IUsersClient
 		return _ServiceRequestSender.SendPostRequestAsync<SetUserBirthdateRequest, SetUserBirthdateResult>("/v1/SetUserBirthdate", requestData, cancellationToken);
 	}
 
+	private static bool ApiKeyViaHeaderEnabled()
+	{
+		return Settings.Default.ApiKeyViaHeaderEnabled;
+	}
+
+	private static IHttpClientBuilder CreateHttpClientBuilder(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, IRequestContextLoader requestContextLoader)
+	{
+		var builder = new Roblox.Http.ServiceClient.HttpClientBuilder((IServiceClientSettings)Settings.Default, counterRegistry, apiKeyGetter, (CookieContainer)null, requestContextLoader);
+		builder.ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled;
+		// GetClientCircuitBreakerType is not a property of HttpClientBuilder, so we can't set it directly
+		return builder;
+	}
+
 	public SetUserGenderResult SetUserGender(long userId, UserGender gender)
 	{
 		SetUserGenderRequest requestData = new SetUserGenderRequest
@@ -589,16 +601,6 @@ public class UsersClient : IUsersClient
 		return (ClientCircuitBreakerType)2;
 	}
 
-	private static bool ApiKeyViaHeaderEnabled()
-	{
-		return Settings.Default.ApiKeyViaHeaderEnabled;
-	}
+}
 
-	private static IHttpClientBuilder CreateHttpClientBuilder(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, IRequestContextLoader requestContextLoader)
-	{
-		var builder = new Roblox.Http.ServiceClient.HttpClientBuilder((IServiceClientSettings)Settings.Default, counterRegistry, apiKeyGetter, (CookieContainer)null, requestContextLoader);
-		builder.ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled;
-		// GetClientCircuitBreakerType is not a property of HttpClientBuilder, so we can't set it directly
-		return builder;
-	}
 }

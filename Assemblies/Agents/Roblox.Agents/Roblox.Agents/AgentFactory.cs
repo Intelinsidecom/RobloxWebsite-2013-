@@ -11,7 +11,7 @@ using Roblox.Caching.Interfaces;
 using Roblox.Data;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-using Roblox.Users.Client;
+using Roblox.Platform.Users.Client;
 
 namespace Roblox.Agents;
 

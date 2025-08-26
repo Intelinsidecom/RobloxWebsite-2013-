@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class RedeemToyResources_en_us : TranslationResourcesBase, IRedeemToyResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class RedeemToyResources_en_us : TranslationResourcesBase, IRedeemToyResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -347,4 +346,7 @@ internal class RedeemToyResources_en_us : TranslationResourcesBase, IRedeemToyRe
 	{
 		return "You have successfully redeemed your item.";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DevExHomeResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -64,13 +64,13 @@ internal class DevExHomeResources_de_de : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelBuilderClubForCash"
 	/// English String: "You'll need Outrageous Builder's Club to exchange Robux for cash."
 	/// </summary>
-	public override string GetLabelBuilderClubForCash => "Du musst „Outrageous Builders Club“-Mitglied sein, um Robux gegen echtes Geld eintauschen zu können.";
+	public override string GetLabelBuilderClubForCash => "Du musst â€žOutrageous Builders Clubâ€œ-Mitglied sein, um Robux gegen echtes Geld eintauschen zu kÃ¶nnen.";
 
 	/// <summary>
 	/// Key: "GetLabelBuildersCludForCashout"
 	/// English String: "You need Outrageous Builders Club to Cash Out."
 	/// </summary>
-	public override string GetLabelBuildersCludForCashout => "Du musst „Outrageous Builders Club“-Mitglied sein, um Auszahlungen erhalten zu können.";
+	public override string GetLabelBuildersCludForCashout => "Du musst â€žOutrageous Builders Clubâ€œ-Mitglied sein, um Auszahlungen erhalten zu kÃ¶nnen.";
 
 	/// <summary>
 	/// Key: "GetLabelCurrentExchangeRate"
@@ -82,7 +82,7 @@ internal class DevExHomeResources_de_de : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelNeedVerifiedEmail"
 	/// English String: "You need a verified email address to use DevEx."
 	/// </summary>
-	public override string GetLabelNeedVerifiedEmail => "Für die Nutzung von DevEx benötigst du eine verifizierte E-Mail-Adresse.";
+	public override string GetLabelNeedVerifiedEmail => "FÃ¼r die Nutzung von DevEx benÃ¶tigst du eine verifizierte E-Mail-Adresse.";
 
 	/// <summary>
 	/// Key: "GetLabelNotEligible"
@@ -94,7 +94,7 @@ internal class DevExHomeResources_de_de : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelNotEnoughRobuxForCashout"
 	/// English String: "You don't have enough Robux to Cash Out."
 	/// </summary>
-	public override string GetLabelNotEnoughRobuxForCashout => "Du hast nicht genügend Robux für eine Auszahlung.";
+	public override string GetLabelNotEnoughRobuxForCashout => "Du hast nicht genÃ¼gend Robux fÃ¼r eine Auszahlung.";
 
 	/// <summary>
 	/// Key: "GetLabelRobux"
@@ -172,12 +172,12 @@ internal class DevExHomeResources_de_de : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelBuilderClubForCash()
 	{
-		return "Du musst „Outrageous Builders Club“-Mitglied sein, um Robux gegen echtes Geld eintauschen zu können.";
+		return "Du musst â€žOutrageous Builders Clubâ€œ-Mitglied sein, um Robux gegen echtes Geld eintauschen zu kÃ¶nnen.";
 	}
 
 	protected override string _GetTemplateForGetLabelBuildersCludForCashout()
 	{
-		return "Du musst „Outrageous Builders Club“-Mitglied sein, um Auszahlungen erhalten zu können.";
+		return "Du musst â€žOutrageous Builders Clubâ€œ-Mitglied sein, um Auszahlungen erhalten zu kÃ¶nnen.";
 	}
 
 	protected override string _GetTemplateForGetLabelCurrentExchangeRate()
@@ -187,7 +187,7 @@ internal class DevExHomeResources_de_de : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelNeedVerifiedEmail()
 	{
-		return "Für die Nutzung von DevEx benötigst du eine verifizierte E-Mail-Adresse.";
+		return "FÃ¼r die Nutzung von DevEx benÃ¶tigst du eine verifizierte E-Mail-Adresse.";
 	}
 
 	protected override string _GetTemplateForGetLabelNotEligible()
@@ -197,7 +197,7 @@ internal class DevExHomeResources_de_de : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelNotEnoughRobuxForCashout()
 	{
-		return "Du hast nicht genügend Robux für eine Auszahlung.";
+		return "Du hast nicht genÃ¼gend Robux fÃ¼r eine Auszahlung.";
 	}
 
 	protected override string _GetTemplateForGetLabelRobux()
@@ -219,4 +219,7 @@ internal class DevExHomeResources_de_de : DevExHomeResources_en_us, IDevExHomeRe
 	{
 		return "Bevor du Auszahlungen erhalten kannst, musst du deine E-Mail-Adresse verifizieren.";
 	}
+}
+
+
 }

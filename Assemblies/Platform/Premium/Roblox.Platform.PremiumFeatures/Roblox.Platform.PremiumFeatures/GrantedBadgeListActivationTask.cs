@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class GrantedBadgeListActivationTask : IRobloxEntity<long, GrantedBadgeListActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
-namespace Roblox.PremiumFeatures;
-
-public class GrantedBadgeListActivationTask : IRobloxEntity<long, GrantedBadgeListActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 {
 	private GrantedBadgeListActivationTaskDAL _EntityDAL;
 
@@ -171,4 +170,7 @@ public class GrantedBadgeListActivationTask : IRobloxEntity<long, GrantedBadgeLi
 		Completed = DateTime.Now;
 		Save();
 	}
+}
+
+
 }

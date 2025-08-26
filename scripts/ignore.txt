@@ -13,7 +13,8 @@ Roblox.Captcha.Captcha.V1.CaptchaAPI.Client
 Roblox.Platform.InGameContentTables.Client
 Roblox.Platform.Groups
 Outfits\Settings.Properties.cs
-GameLocalization
+IGameLocalizationRolesClient.cs
+Models
 AutoLocalization
 Roblox.Platform.GameInstances.Client\Interfaces.cs
 Roblox.Platform.Friends.Client
@@ -30,9 +31,8 @@ Roblox.Platform.AssetOwnership
 Roblox.Platform.AssetMedia.Entities
 ContentFilterClient.Stub.cs
 ConfigurableEndpointService
-Roblox.Localization.Client
-Roblox.LightUtils
 Roblox.FloodCheckers
+Roblox.LightUtils
 Roblox.EntityFrameworkCore
 Roblox.Configuration
 Roblox.Collections

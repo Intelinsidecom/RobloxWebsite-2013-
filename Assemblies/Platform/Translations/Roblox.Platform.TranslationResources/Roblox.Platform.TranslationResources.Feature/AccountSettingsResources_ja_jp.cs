@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AccountSettingsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,37 +10,37 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Action.BillingHistoryLoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string ActionBillingHistoryLoadMore => "さらに読み込む";
+	public override string ActionBillingHistoryLoadMore => "ã•ã‚‰ã«èª­ã¿è¾¼ã‚€";
 
 	/// <summary>
 	/// Key: "Action.CancelRenewal"
 	/// English String: "Cancel Renewal"
 	/// </summary>
-	public override string ActionCancelRenewal => "更新をキャンセル";
+	public override string ActionCancelRenewal => "æ›´æ–°ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddEmail"
 	/// English String: "Add Email"
 	/// </summary>
-	public override string ActionDialogAddEmail => "メールアドレスを追加";
+	public override string ActionDialogAddEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string ActionDialogAddPhone => "電話番号を追加";
+	public override string ActionDialogAddPhone => "é›»è©±ç•ªå·ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionDialogCancel => "キャンセル";
+	public override string ActionDialogCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangeEmail"
 	/// English String: "Change Email"
 	/// </summary>
-	public override string ActionDialogChangeEmail => "メールアドレスの変更";
+	public override string ActionDialogChangeEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangeEmailConfirmation"
@@ -52,7 +52,7 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Action.Dialog.ChangePassword"
 	/// English String: "Update"
 	/// </summary>
-	public override string ActionDialogChangePassword => "アップデート";
+	public override string ActionDialogChangePassword => "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.ChangePasswordConfirmation"
@@ -64,43 +64,43 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Action.Dialog.ChangeUsernameBuy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionDialogChangeUsernameBuy => "買う";
+	public override string ActionDialogChangeUsernameBuy => "è²·ã†";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionDialogClose => "閉じる";
+	public override string ActionDialogClose => "é–‰ã˜ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.Dialog.EditPhonePrimary"
 	/// English String: "Edit Phone"
 	/// </summary>
-	public override string ActionDialogEditPhonePrimary => "電話番号の編集";
+	public override string ActionDialogEditPhonePrimary => "é›»è©±ç•ªå·ã®ç·¨é›†";
 
 	/// <summary>
 	/// Key: "Action.Dialog.EditPhoneSecondary"
 	/// English String: "Remove Phone Number"
 	/// </summary>
-	public override string ActionDialogEditPhoneSecondary => "電話番号を削除";
+	public override string ActionDialogEditPhoneSecondary => "é›»è©±ç•ªå·ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Action.Dialog.InsufficientFundsBuy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionDialogInsufficientFundsBuy => "買う";
+	public override string ActionDialogInsufficientFundsBuy => "è²·ã†";
 
 	/// <summary>
 	/// Key: "Action.Dialog.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionDialogNo => "いいえ";
+	public override string ActionDialogNo => "ã„ã„ãˆ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.PinCreate"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionDialogPinCreate => "追加";
+	public override string ActionDialogPinCreate => "è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.PinCreateOk"
@@ -112,26 +112,26 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Action.Dialog.PinUnlock"
 	/// English String: "Unlock"
 	/// </summary>
-	public override string ActionDialogPinUnlock => "アンロック";
+	public override string ActionDialogPinUnlock => "ã‚¢ãƒ³ãƒ­ãƒƒã‚¯";
 
 	/// <summary>
 	/// Key: "Action.Dialog.RemovePhonePrimary"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionDialogRemovePhonePrimary => "削除";
+	public override string ActionDialogRemovePhonePrimary => "å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Action.Dialog.RemovePhoneSecondary"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionDialogRemovePhoneSecondary => "キャンセル";
+	public override string ActionDialogRemovePhoneSecondary => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Send"
 	/// Send
 	/// English String: "Send"
 	/// </summary>
-	public override string ActionDialogSend => "送信";
+	public override string ActionDialogSend => "é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Success"
@@ -143,7 +143,7 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Action.Dialog.Update"
 	/// English String: "Update"
 	/// </summary>
-	public override string ActionDialogUpdate => "アップデート";
+	public override string ActionDialogUpdate => "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyEmailOk"
@@ -155,79 +155,79 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Action.Dialog.VerifyEmailPrimary"
 	/// English String: "Verify Email"
 	/// </summary>
-	public override string ActionDialogVerifyEmailPrimary => "メールアドレスを認証";
+	public override string ActionDialogVerifyEmailPrimary => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyEmailRetry"
 	/// English String: "Retry"
 	/// </summary>
-	public override string ActionDialogVerifyEmailRetry => "再試行";
+	public override string ActionDialogVerifyEmailRetry => "å†è©¦è¡Œ";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyPhonePrimary"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionDialogVerifyPhonePrimary => "認証";
+	public override string ActionDialogVerifyPhonePrimary => "èªè¨¼";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyPhoneResendLink"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string ActionDialogVerifyPhoneResendLink => "コードを再送信";
+	public override string ActionDialogVerifyPhoneResendLink => "ã‚³ãƒ¼ãƒ‰ã‚’å†é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Action.Dialog.VerifyPhoneSecondary"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionDialogVerifyPhoneSecondary => "キャンセル";
+	public override string ActionDialogVerifyPhoneSecondary => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionDialogYes => "はい";
+	public override string ActionDialogYes => "ã¯ã„";
 
 	/// <summary>
 	/// Key: "Action.Hide"
 	/// English String: "Hide"
 	/// </summary>
-	public override string ActionHide => "非表示";
+	public override string ActionHide => "éžè¡¨ç¤º";
 
 	/// <summary>
 	/// Key: "Action.Join"
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoin => "加入";
+	public override string ActionJoin => "åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Action.JoinBuildersClub"
 	/// English String: "Join Builders Club"
 	/// </summary>
-	public override string ActionJoinBuildersClub => "Builders Clubに加入";
+	public override string ActionJoinBuildersClub => "Builders Clubã«åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "保存";
+	public override string ActionSave => "ä¿å­˜";
 
 	/// <summary>
 	/// Key: "Action.Show"
 	/// English String: "Show"
 	/// </summary>
-	public override string ActionShow => "表示";
+	public override string ActionShow => "è¡¨ç¤º";
 
 	/// <summary>
 	/// Key: "Action.SignoutAllSessions"
 	/// English String: "Sign out"
 	/// </summary>
-	public override string ActionSignoutAllSessions => "サインアウト";
+	public override string ActionSignoutAllSessions => "ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆ";
 
 	/// <summary>
 	/// Key: "Action.SocialDisconnect"
 	/// English String: "Disconnect"
 	/// </summary>
-	public override string ActionSocialDisconnect => "切断";
+	public override string ActionSocialDisconnect => "åˆ‡æ–­";
 
 	/// <summary>
 	/// Key: "Action.SuccessDialogButtonText"
@@ -239,667 +239,667 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Action.Unblock"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string ActionUnblock => "ブロックを解除";
+	public override string ActionUnblock => "ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤";
 
 	/// <summary>
 	/// Key: "Action.UpgradeMembership"
 	/// English String: "Upgrade Membership"
 	/// </summary>
-	public override string ActionUpgradeMembership => "メンバーシップをアップグレード";
+	public override string ActionUpgradeMembership => "ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Description.AccountControls"
 	/// English String: "You can setup account restrictions on this account to restrict access to account settings and uncurated content"
 	/// </summary>
-	public override string DescriptionAccountControls => "このアカウントにアカウント制限を設定して、アカウント設定や不適切なコンテンツへのアクセスを制限することができます";
+	public override string DescriptionAccountControls => "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™ã‚’è¨­å®šã—ã¦ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã‚„ä¸é©åˆ‡ãªã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’åˆ¶é™ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™";
 
 	/// <summary>
 	/// Key: "Description.AccountEmailRevertEmail.Subject"
 	/// Subject for account email revert email that is sent out to the old account when the new account email is verified.
 	/// English String: "Roblox Email Reset"
 	/// </summary>
-	public override string DescriptionAccountEmailRevertEmailSubject => "Robloxメールアドレスのリセット";
+	public override string DescriptionAccountEmailRevertEmailSubject => "Robloxãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ãƒªã‚»ãƒƒãƒˆ";
 
 	/// <summary>
 	/// Key: "Description.DesktopPush1"
 	/// English String: "See notifications on this computer even when Roblox is closed."
 	/// </summary>
-	public override string DescriptionDesktopPush1 => "Robloxを閉じた後でも、このパソコンで通知が見れます。";
+	public override string DescriptionDesktopPush1 => "Robloxã‚’é–‰ã˜ãŸå¾Œã§ã‚‚ã€ã“ã®ãƒ‘ã‚½ã‚³ãƒ³ã§é€šçŸ¥ãŒè¦‹ã‚Œã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.DesktopPush2"
 	/// English String: "To see notifications, you may be prompted to turn on push notifications on your browser."
 	/// </summary>
-	public override string DescriptionDesktopPush2 => "通知を見るには、ブラウザのプッシュ通知を有効にするよう求められる場合があります。";
+	public override string DescriptionDesktopPush2 => "é€šçŸ¥ã‚’è¦‹ã‚‹ã«ã¯ã€ãƒ–ãƒ©ã‚¦ã‚¶ã®ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã‚’æœ‰åŠ¹ã«ã™ã‚‹ã‚ˆã†æ±‚ã‚ã‚‰ã‚Œã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.DesktopPush3"
 	/// English String: "Desktop notifications for this device."
 	/// </summary>
-	public override string DescriptionDesktopPush3 => "このデバイスのデスクトップ通知。";
+	public override string DescriptionDesktopPush3 => "ã“ã®ãƒ‡ãƒã‚¤ã‚¹ã®ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—é€šçŸ¥ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.AddPhone"
 	/// English String: "Please confirm your country code and enter your phone number. We will send a text message to complete verification. (Note: Text messaging charges may apply)"
 	/// </summary>
-	public override string DescriptionDialogAddPhone => "国コードを確認して、電話番号を入力してください。認証完了用のテキストメッセージが送信されます。（ご注意: 通信料がかかる場合があります）";
+	public override string DescriptionDialogAddPhone => "å›½ã‚³ãƒ¼ãƒ‰ã‚’ç¢ºèªã—ã¦ã€é›»è©±ç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚èªè¨¼å®Œäº†ç”¨ã®ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒé€ä¿¡ã•ã‚Œã¾ã™ã€‚ï¼ˆã”æ³¨æ„: é€šä¿¡æ–™ãŒã‹ã‹ã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ï¼‰";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeEmailConfirmation"
 	/// English String: "An email has been sent for verification"
 	/// </summary>
-	public override string DescriptionDialogChangeEmailConfirmation => "認証用メールを送信しました";
+	public override string DescriptionDialogChangeEmailConfirmation => "èªè¨¼ç”¨ãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeEmailWarning"
 	/// English String: "The account email will not change until the new email has been verified."
 	/// </summary>
-	public override string DescriptionDialogChangeEmailWarning => "新しいメールアドレスの認証が完了するまでは、アカウントのメールアドレスは変更されません。";
+	public override string DescriptionDialogChangeEmailWarning => "æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå®Œäº†ã™ã‚‹ã¾ã§ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangePasswordConfirmation"
 	/// English String: "You have successfully changed your password."
 	/// </summary>
-	public override string DescriptionDialogChangePasswordConfirmation => "パスワードが変更されました。";
+	public override string DescriptionDialogChangePasswordConfirmation => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒå¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameDisclaimer"
 	/// English String: "Important: Original account creation date will carry over to your new username."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameDisclaimer => "重要: アカウントの最初の作成日とフォーラムへの投稿数は、新しいユーザーネームに引き継がれます。";
+	public override string DescriptionDialogChangeUsernameDisclaimer => "é‡è¦: ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®æœ€åˆã®ä½œæˆæ—¥ã¨ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã¸ã®æŠ•ç¨¿æ•°ã¯ã€æ–°ã—ã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã«å¼•ãç¶™ãŒã‚Œã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameForFree"
 	/// Description notifying the user that this username change is free
 	/// English String: "Change username once for free."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameForFree => "ユーザーネームを1度だけ無料で変更できます。";
+	public override string DescriptionDialogChangeUsernameForFree => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’1åº¦ã ã‘ç„¡æ–™ã§å¤‰æ›´ã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameHistory"
 	/// English String: "Previous forum posts will appear under your old username and will NOT carry over to your new username."
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameHistory => "以前のフォーラムへの投稿は、以前のユーザーネームで表示され、新しいユーザーネームには引き継がれません。";
+	public override string DescriptionDialogChangeUsernameHistory => "ä»¥å‰ã®ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã¸ã®æŠ•ç¨¿ã¯ã€ä»¥å‰ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§è¡¨ç¤ºã•ã‚Œã€æ–°ã—ã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã«ã¯å¼•ãç¶™ãŒã‚Œã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.ChangeUsernameTitle"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string DescriptionDialogChangeUsernameTitle => "ユーザーネームの変更";
+	public override string DescriptionDialogChangeUsernameTitle => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EditPhoneWarning"
 	/// English String: "The phone number will not change until the new phone number has been verified."
 	/// </summary>
-	public override string DescriptionDialogEditPhoneWarning => "新しい電話番号の認証が完了するまでは、電話番号は変更されません。";
+	public override string DescriptionDialogEditPhoneWarning => "æ–°ã—ã„é›»è©±ç•ªå·ã®èªè¨¼ãŒå®Œäº†ã™ã‚‹ã¾ã§ã¯ã€é›»è©±ç•ªå·ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EmailProvideAndVerifyWarning"
 	/// warning message when user doesn't have email address on file at the time of changing username
 	/// English String: "You must provide and verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogEmailProvideAndVerifyWarning => "ユーザーネームを変更する前に、メールアドレスの登録と認証が必要です。";
+	public override string DescriptionDialogEmailProvideAndVerifyWarning => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ç™»éŒ²ã¨èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EmailVerificationSent"
 	/// English String: "Thanks! Your verification email has been sent."
 	/// </summary>
-	public override string DescriptionDialogEmailVerificationSent => "登録ありがとうございます！認証用メールを送信しました。";
+	public override string DescriptionDialogEmailVerificationSent => "ç™»éŒ²ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ï¼èªè¨¼ç”¨ãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.EmailVerifyWarning"
 	/// English String: "You must verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogEmailVerifyWarning => "ユーザーネームを変更する前に、メールアドレスの認証が必要です。";
+	public override string DescriptionDialogEmailVerifyWarning => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.FacebookDisconnectWarning"
 	/// English String: "Please add password to secure your account before disconnecting from Facebook."
 	/// </summary>
-	public override string DescriptionDialogFacebookDisconnectWarning => "Facebookとの接続を解除する前に、パスワードを追加してアカウントを保護してください。";
+	public override string DescriptionDialogFacebookDisconnectWarning => "Facebookã¨ã®æŽ¥ç¶šã‚’è§£é™¤ã™ã‚‹å‰ã«ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä¿è­·ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.MissingEmailAccountPin"
 	/// error message
 	/// English String: "You must provide and verify your email before you can add an Account PIN."
 	/// </summary>
-	public override string DescriptionDialogMissingEmailAccountPin => "アカウントPINを追加する前に、メールアドレスの登録と認証が必要です。";
+	public override string DescriptionDialogMissingEmailAccountPin => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã‚’è¿½åŠ ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ç™»éŒ²ã¨èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.MissingEmailTwoStepVerification"
 	/// error message
 	/// English String: "You must provide and verify your email before you can enable 2 Step Verification."
 	/// </summary>
-	public override string DescriptionDialogMissingEmailTwoStepVerification => "二段階認証を有効にする前に、メールアドレスの登録と認証が必要です。";
+	public override string DescriptionDialogMissingEmailTwoStepVerification => "äºŒæ®µéšŽèªè¨¼ã‚’æœ‰åŠ¹ã«ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ç™»éŒ²ã¨èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.MissingEmailUsername"
 	/// error message
 	/// English String: "You must provide and verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogMissingEmailUsername => "ユーザーネームを変更する前に、メールアドレスの登録と認証が必要です。";
+	public override string DescriptionDialogMissingEmailUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ç™»éŒ²ã¨èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.PinUnlock"
 	/// English String: "Enter the Account PIN attached to your account"
 	/// </summary>
-	public override string DescriptionDialogPinUnlock => "アカウントに設定されているアカウントPINを入力してください";
+	public override string DescriptionDialogPinUnlock => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«è¨­å®šã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Description.Dialog.UnverifiedEmailAccountPin"
 	/// error message
 	/// English String: "You must verify your email before you can add an Account PIN."
 	/// </summary>
-	public override string DescriptionDialogUnverifiedEmailAccountPin => "アカウントPINを追加する前に、メールアドレスの認証が必要です。";
+	public override string DescriptionDialogUnverifiedEmailAccountPin => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã‚’è¿½åŠ ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.UnverifiedEmailTwoStepVerification"
 	/// error message
 	/// English String: "You must verify your email before you can enable 2 Step Verification."
 	/// </summary>
-	public override string DescriptionDialogUnverifiedEmailTwoStepVerification => "二段階認証を有効にする前に、メールアドレスの認証が必要です。";
+	public override string DescriptionDialogUnverifiedEmailTwoStepVerification => "äºŒæ®µéšŽèªè¨¼ã‚’æœ‰åŠ¹ã«ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.Dialog.UnverifiedEmailUsername"
 	/// error message
 	/// English String: "You must verify your email before you can change your username."
 	/// </summary>
-	public override string DescriptionDialogUnverifiedEmailUsername => "ユーザーネームを変更する前に、メールアドレスの認証が必要です。";
+	public override string DescriptionDialogUnverifiedEmailUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.FastTrack"
 	/// A description of the Fast Track program that is intended to help users understand why they are part of the program and how they can best be involved.
 	/// English String: "You have been enrolled in the Fast Track reporting program for making good abuse reports.  Your abuse reports are now Fast Tracked for review.  Stay in the program by continuing to make good abuse reports. Thank you for helping to make Roblox a positive experience!"
 	/// </summary>
-	public override string DescriptionFastTrack => "あなたは、規約違反を報告するファストトラック報告プログラムに参加しています。規約違反のご報告は現在、簡易レビュー中です。これからも規約違反の報告をして、プログラムへのご協力をお願いします。Robloxでの体験をポジティブなものにするためにご協力ありがとうございます。";
+	public override string DescriptionFastTrack => "ã‚ãªãŸã¯ã€è¦ç´„é•åã‚’å ±å‘Šã™ã‚‹ãƒ•ã‚¡ã‚¹ãƒˆãƒˆãƒ©ãƒƒã‚¯å ±å‘Šãƒ—ãƒ­ã‚°ãƒ©ãƒ ã«å‚åŠ ã—ã¦ã„ã¾ã™ã€‚è¦ç´„é•åã®ã”å ±å‘Šã¯ç¾åœ¨ã€ç°¡æ˜“ãƒ¬ãƒ“ãƒ¥ãƒ¼ä¸­ã§ã™ã€‚ã“ã‚Œã‹ã‚‰ã‚‚è¦ç´„é•åã®å ±å‘Šã‚’ã—ã¦ã€ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¸ã®ã”å”åŠ›ã‚’ãŠé¡˜ã„ã—ã¾ã™ã€‚Robloxã§ã®ä½“é¨“ã‚’ãƒã‚¸ãƒ†ã‚£ãƒ–ãªã‚‚ã®ã«ã™ã‚‹ãŸã‚ã«ã”å”åŠ›ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.FastTrack.Statistics"
 	/// A section of the page dedicated to reporting, analysis, and charting of Fast Track contributor quality.
 	/// English String: "Statistics"
 	/// </summary>
-	public override string DescriptionFastTrackStatistics => "統計";
+	public override string DescriptionFastTrackStatistics => "çµ±è¨ˆ";
 
 	/// <summary>
 	/// Key: "Description.HelpText.Description"
 	/// English String: "Do not provide any details that can be used to identify you outside Roblox."
 	/// </summary>
-	public override string DescriptionHelpTextDescription => "Roblox以外の場所であなたを特定できるような情報を提供しないようご注意ください。";
+	public override string DescriptionHelpTextDescription => "Robloxä»¥å¤–ã®å ´æ‰€ã§ã‚ãªãŸã‚’ç‰¹å®šã§ãã‚‹ã‚ˆã†ãªæƒ…å ±ã‚’æä¾›ã—ãªã„ã‚ˆã†ã”æ³¨æ„ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.HelpText.FastTrack.Accuracy"
 	/// Help text that explains to users how we define Accuracy of abuse reports for the Fast Track program. Intention is to help avoid user confusion about the meaning of the scores.
 	/// English String: "Accuracy is how often moderation agreed with abuse reports. Your number will show after you submit several reports. 'Everyone' means all of the Fast Track members as a group."
 	/// </summary>
-	public override string DescriptionHelpTextFastTrackAccuracy => "信用度とは、規約違反の報告がモデレータにどれくらい採用されたかを表しています。報告をいくつか送信した後、あなたのスコアが表示されます。「全員」は、ファストトラックの全メンバーをグループとして表しています。";
+	public override string DescriptionHelpTextFastTrackAccuracy => "ä¿¡ç”¨åº¦ã¨ã¯ã€è¦ç´„é•åã®å ±å‘ŠãŒãƒ¢ãƒ‡ãƒ¬ãƒ¼ã‚¿ã«ã©ã‚Œãã‚‰ã„æŽ¡ç”¨ã•ã‚ŒãŸã‹ã‚’è¡¨ã—ã¦ã„ã¾ã™ã€‚å ±å‘Šã‚’ã„ãã¤ã‹é€ä¿¡ã—ãŸå¾Œã€ã‚ãªãŸã®ã‚¹ã‚³ã‚¢ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ã€Œå…¨å“¡ã€ã¯ã€ãƒ•ã‚¡ã‚¹ãƒˆãƒˆãƒ©ãƒƒã‚¯ã®å…¨ãƒ¡ãƒ³ãƒãƒ¼ã‚’ã‚°ãƒ«ãƒ¼ãƒ—ã¨ã—ã¦è¡¨ã—ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.HelpText.PrivacyMode"
 	/// English String: "Updating age to under 13 will enable Privacy Mode."
 	/// </summary>
-	public override string DescriptionHelpTextPrivacyMode => "年齢を13歳未満に更新すると、プライバシーモードが有効になります。";
+	public override string DescriptionHelpTextPrivacyMode => "å¹´é½¢ã‚’13æ­³æœªæº€ã«æ›´æ–°ã™ã‚‹ã¨ã€ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒ¢ãƒ¼ãƒ‰ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.HoverText.ChangePassword"
 	/// English String: "Change Password"
 	/// </summary>
-	public override string DescriptionHoverTextChangePassword => "パスワードの変更";
+	public override string DescriptionHoverTextChangePassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Description.HoverText.ChangeUsername"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string DescriptionHoverTextChangeUsername => "ユーザーネームの変更";
+	public override string DescriptionHoverTextChangeUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Description.HoverText.UpdateEmail"
 	/// English String: "Update Email"
 	/// </summary>
-	public override string DescriptionHoverTextUpdateEmail => "メールアドレスのアップデート";
+	public override string DescriptionHoverTextUpdateEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Description.MembershipHelp"
 	/// English String: "For billing and payment questions: info@roblox.com"
 	/// </summary>
-	public override string DescriptionMembershipHelp => "ご請求とお支払いについてのお問い合わせ: info@roblox.com";
+	public override string DescriptionMembershipHelp => "ã”è«‹æ±‚ã¨ãŠæ”¯æ‰•ã„ã«ã¤ã„ã¦ã®ãŠå•ã„åˆã‚ã›: info@roblox.com";
 
 	/// <summary>
 	/// Key: "Description.MembershipStatus"
 	/// English String: "You're not a member yet. Join Builders Club today!"
 	/// </summary>
-	public override string DescriptionMembershipStatus => "あなたは、まだメンバーではありません。今すぐBuilders Clubに加入してください！";
+	public override string DescriptionMembershipStatus => "ã‚ãªãŸã¯ã€ã¾ã ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»Šã™ãBuilders Clubã«åŠ å…¥ã—ã¦ãã ã•ã„ï¼";
 
 	/// <summary>
 	/// Key: "Description.MembershipStatusRobloxPremium"
 	/// English String: "You're not a member yet. Join Roblox Premium today!"
 	/// </summary>
-	public override string DescriptionMembershipStatusRobloxPremium => "あなたは、まだメンバーではありません。今すぐRoblox Premiumに加入してください！";
+	public override string DescriptionMembershipStatusRobloxPremium => "ã‚ãªãŸã¯ã€ã¾ã ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»Šã™ãRoblox Premiumã«åŠ å…¥ã—ã¦ãã ã•ã„ï¼";
 
 	/// <summary>
 	/// Key: "Description.MobilePush1"
 	/// English String: "See notifications on your devices' home screens. You can turn them on or off from the Roblox app."
 	/// </summary>
-	public override string DescriptionMobilePush1 => "デバイスのホーム画面に通知を見てください。Robloxのアプリから、オンオフの設定を行うことができます。";
+	public override string DescriptionMobilePush1 => "ãƒ‡ãƒã‚¤ã‚¹ã®ãƒ›ãƒ¼ãƒ ç”»é¢ã«é€šçŸ¥ã‚’è¦‹ã¦ãã ã•ã„ã€‚Robloxã®ã‚¢ãƒ—ãƒªã‹ã‚‰ã€ã‚ªãƒ³ã‚ªãƒ•ã®è¨­å®šã‚’è¡Œã†ã“ã¨ãŒã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.MobilePush2"
 	/// English String: "Mobile push notifications for this device."
 	/// </summary>
-	public override string DescriptionMobilePush2 => "このデバイスのモバイル用プッシュ通知。";
+	public override string DescriptionMobilePush2 => "ã“ã®ãƒ‡ãƒã‚¤ã‚¹ã®ãƒ¢ãƒã‚¤ãƒ«ç”¨ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã€‚";
 
 	/// <summary>
 	/// Key: "Description.NotificationStream1"
 	/// English String: "See notifications in my stream. Click the notifications icon in the top bar to view these notifications."
 	/// </summary>
-	public override string DescriptionNotificationStream1 => "マイストリームに通知で通知を見てください。通知を表示するには、上のバーの通知アイコンをクリックします。";
+	public override string DescriptionNotificationStream1 => "ãƒžã‚¤ã‚¹ãƒˆãƒªãƒ¼ãƒ ã«é€šçŸ¥ã§é€šçŸ¥ã‚’è¦‹ã¦ãã ã•ã„ã€‚é€šçŸ¥ã‚’è¡¨ç¤ºã™ã‚‹ã«ã¯ã€ä¸Šã®ãƒãƒ¼ã®é€šçŸ¥ã‚¢ã‚¤ã‚³ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.NotificationStream2"
 	/// English String: "After you turn off a notification type, we won't send you any new notifications of that type."
 	/// </summary>
-	public override string DescriptionNotificationStream2 => "通知タイプをオフにすると、そのタイプの新しい通知は届かなくなります。";
+	public override string DescriptionNotificationStream2 => "é€šçŸ¥ã‚¿ã‚¤ãƒ—ã‚’ã‚ªãƒ•ã«ã™ã‚‹ã¨ã€ãã®ã‚¿ã‚¤ãƒ—ã®æ–°ã—ã„é€šçŸ¥ã¯å±Šã‹ãªããªã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.RenevalFromWebsiteOnly"
 	/// English String: "Note: If you would like to cancel your renewal membership, please log in from the website."
 	/// </summary>
-	public override string DescriptionRenevalFromWebsiteOnly => "ご注意: メンバーシップの更新をキャンセルするには、ウェブサイトからログインしてください。";
+	public override string DescriptionRenevalFromWebsiteOnly => "ã”æ³¨æ„: ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã®æ›´æ–°ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã«ã¯ã€ã‚¦ã‚§ãƒ–ã‚µã‚¤ãƒˆã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Description.SuccessDialogMessage"
 	/// English String: "Saved  Successfully!"
 	/// </summary>
-	public override string DescriptionSuccessDialogMessage => "保存しました！";
+	public override string DescriptionSuccessDialogMessage => "ä¿å­˜ã—ã¾ã—ãŸï¼";
 
 	/// <summary>
 	/// Key: "Description.TwoStepVerificationSecondary"
 	/// English String: "A verified email is required"
 	/// </summary>
-	public override string DescriptionTwoStepVerificationSecondary => "認証済みメールアドレスが必要です";
+	public override string DescriptionTwoStepVerificationSecondary => "èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™";
 
 	/// <summary>
 	/// Key: "Description.UsernameChangeEmail.Subject"
 	/// Subject for username change email that is sent out on a successful change of username
 	/// English String: "Roblox Username Change"
 	/// </summary>
-	public override string DescriptionUsernameChangeEmailSubject => "Robloxユーザーネームの変更";
+	public override string DescriptionUsernameChangeEmailSubject => "Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.Subject.Over13"
 	/// Subject for verification email that is sent out when an over 13 user adds an email to the account
 	/// English String: "Roblox Email Verification"
 	/// </summary>
-	public override string DescriptionVerificationEmailSubjectOver13 => "Robloxメールアドレスの認証";
+	public override string DescriptionVerificationEmailSubjectOver13 => "Robloxãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼";
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.Subject.Under13"
 	/// Subject for verification email that is sent out when an under 13 user adds an email to the account
 	/// English String: "Roblox Account Authorization"
 	/// </summary>
-	public override string DescriptionVerificationEmailSubjectUnder13 => "Robloxアカウントの認証";
+	public override string DescriptionVerificationEmailSubjectUnder13 => "Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®èªè¨¼";
 
 	/// <summary>
 	/// Key: "Example.Description"
 	/// English String: "Describe yourself(1000 character limit)"
 	/// </summary>
-	public override string ExampleDescription => "自分についての説明を記入（最大1000文字）";
+	public override string ExampleDescription => "è‡ªåˆ†ã«ã¤ã„ã¦ã®èª¬æ˜Žã‚’è¨˜å…¥ï¼ˆæœ€å¤§1000æ–‡å­—ï¼‰";
 
 	/// <summary>
 	/// Key: "Example.Facebook"
 	/// English String: "e.g. www.facebook.com/Roblox"
 	/// </summary>
-	public override string ExampleFacebook => "例 www.facebook.com/Roblox";
+	public override string ExampleFacebook => "ä¾‹ www.facebook.com/Roblox";
 
 	/// <summary>
 	/// Key: "Example.GooglePlus"
 	/// English String: "e.g. http://plus.google.com/profileId"
 	/// </summary>
-	public override string ExampleGooglePlus => "例 http://plus.google.com/profileId";
+	public override string ExampleGooglePlus => "ä¾‹ http://plus.google.com/profileId";
 
 	/// <summary>
 	/// Key: "Example.Twitch"
 	/// English String: "e.g. www.twitch.tv/roblox/profile"
 	/// </summary>
-	public override string ExampleTwitch => "例 www.twitch.tv/roblox/profile";
+	public override string ExampleTwitch => "ä¾‹ www.twitch.tv/roblox/profile";
 
 	/// <summary>
 	/// Key: "Example.Twitter"
 	/// English String: "e.g. @Roblox"
 	/// </summary>
-	public override string ExampleTwitter => "例 @Roblox";
+	public override string ExampleTwitter => "ä¾‹ @Roblox";
 
 	/// <summary>
 	/// Key: "Example.YouTube"
 	/// English String: "e.g. www.youtube.com/user/roblox"
 	/// </summary>
-	public override string ExampleYouTube => "例 www.youtube.com/user/roblox";
+	public override string ExampleYouTube => "ä¾‹ www.youtube.com/user/roblox";
 
 	/// <summary>
 	/// Key: "Heading.AccountControls"
 	/// English String: "What are Account Controls?"
 	/// </summary>
-	public override string HeadingAccountControls => "アカウントコントロールについて";
+	public override string HeadingAccountControls => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¤ã„ã¦";
 
 	/// <summary>
 	/// Key: "Heading.AccountInfo"
 	/// English String: "Account Info"
 	/// </summary>
-	public override string HeadingAccountInfo => "アカウント情報";
+	public override string HeadingAccountInfo => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±";
 
 	/// <summary>
 	/// Key: "Heading.Billing"
 	/// English String: "Billing"
 	/// </summary>
-	public override string HeadingBilling => "ご請求";
+	public override string HeadingBilling => "ã”è«‹æ±‚";
 
 	/// <summary>
 	/// Key: "Heading.BlockedUsers"
 	/// English String: "Blocked Users"
 	/// </summary>
-	public override string HeadingBlockedUsers => "ブロック済みユーザー";
+	public override string HeadingBlockedUsers => "ãƒ–ãƒ­ãƒƒã‚¯æ¸ˆã¿ãƒ¦ãƒ¼ã‚¶ãƒ¼";
 
 	/// <summary>
 	/// Key: "Heading.ContactSettings"
 	/// English String: "Contact Settings"
 	/// </summary>
-	public override string HeadingContactSettings => "連絡先設定";
+	public override string HeadingContactSettings => "é€£çµ¡å…ˆè¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.DesktopPush"
 	/// English String: "Desktop Push"
 	/// </summary>
-	public override string HeadingDesktopPush => "デスクトッププッシュ";
+	public override string HeadingDesktopPush => "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ—ãƒƒã‚·ãƒ¥";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.AddPassword"
 	/// English String: "Add Password"
 	/// </summary>
-	public override string HeadingDialogAddPassword => "パスワードを追加:";
+	public override string HeadingDialogAddPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ :";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string HeadingDialogAddPhone => "電話番号を追加";
+	public override string HeadingDialogAddPhone => "é›»è©±ç•ªå·ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangeEmail"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string HeadingDialogChangeEmail => "メールアドレスの変更";
+	public override string HeadingDialogChangeEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangeEmailConfirmation"
 	/// English String: "Email Address Changed"
 	/// </summary>
-	public override string HeadingDialogChangeEmailConfirmation => "メールアドレスを変更しました";
+	public override string HeadingDialogChangeEmailConfirmation => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å¤‰æ›´ã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangePassword"
 	/// English String: "Change Password"
 	/// </summary>
-	public override string HeadingDialogChangePassword => "パスワードの変更";
+	public override string HeadingDialogChangePassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangePasswordConfirmation"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingDialogChangePasswordConfirmation => "成功";
+	public override string HeadingDialogChangePasswordConfirmation => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangePasswordSuccess"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingDialogChangePasswordSuccess => "成功";
+	public override string HeadingDialogChangePasswordSuccess => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.ChangeUsername"
 	/// English String: "Change Username"
 	/// </summary>
-	public override string HeadingDialogChangeUsername => "ユーザーネームの変更";
+	public override string HeadingDialogChangeUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.DefaultError"
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingDialogDefaultError => "エラー";
+	public override string HeadingDialogDefaultError => "ã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.DefaultSuccess"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingDialogDefaultSuccess => "成功";
+	public override string HeadingDialogDefaultSuccess => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.EditPhone"
 	/// English String: "Edit Phone"
 	/// </summary>
-	public override string HeadingDialogEditPhone => "電話番号の編集";
+	public override string HeadingDialogEditPhone => "é›»è©±ç•ªå·ã®ç·¨é›†";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.InsufficientFunds"
 	/// English String: "Insufficient Funds"
 	/// </summary>
-	public override string HeadingDialogInsufficientFunds => "資金が足りません";
+	public override string HeadingDialogInsufficientFunds => "è³‡é‡‘ãŒè¶³ã‚Šã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.InvalidUsername"
 	/// Invalid Username
 	/// English String: "Invalid Username"
 	/// </summary>
-	public override string HeadingDialogInvalidUsername => "無効なユーザーネーム";
+	public override string HeadingDialogInvalidUsername => "ç„¡åŠ¹ãªãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.PinCreate"
 	/// English String: "Add PIN"
 	/// </summary>
-	public override string HeadingDialogPinCreate => "PINを追加";
+	public override string HeadingDialogPinCreate => "PINã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.PinCreateSuccessConfirmation"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingDialogPinCreateSuccessConfirmation => "成功";
+	public override string HeadingDialogPinCreateSuccessConfirmation => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.PinUnlock"
 	/// English String: "Account PIN Required"
 	/// </summary>
-	public override string HeadingDialogPinUnlock => "アカウントPINが必要です";
+	public override string HeadingDialogPinUnlock => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINãŒå¿…è¦ã§ã™";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.RemovePhone"
 	/// English String: "Remove Phone"
 	/// </summary>
-	public override string HeadingDialogRemovePhone => "電話番号を削除";
+	public override string HeadingDialogRemovePhone => "é›»è©±ç•ªå·ã‚’å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.VerifiedEmailRequired"
 	/// English String: "Verified Email Required"
 	/// </summary>
-	public override string HeadingDialogVerifiedEmailRequired => "認証済みメールアドレスが必要です";
+	public override string HeadingDialogVerifiedEmailRequired => "èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.VerifyEmail"
 	/// English String: "Verify Email"
 	/// </summary>
-	public override string HeadingDialogVerifyEmail => "メールアドレスを認証";
+	public override string HeadingDialogVerifyEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.VerifyPhone"
 	/// English String: "Verify Phone"
 	/// </summary>
-	public override string HeadingDialogVerifyPhone => "電話番号を認証";
+	public override string HeadingDialogVerifyPhone => "é›»è©±ç•ªå·ã‚’èªè¨¼";
 
 	/// <summary>
 	/// Key: "Heading.FastTrack"
 	/// Fast Track is the name of the limited access community moderation program.
 	/// English String: "Fast Track"
 	/// </summary>
-	public override string HeadingFastTrack => "ファストトラック";
+	public override string HeadingFastTrack => "ãƒ•ã‚¡ã‚¹ãƒˆãƒˆãƒ©ãƒƒã‚¯";
 
 	/// <summary>
 	/// Key: "Heading.MembershipStatus"
 	/// English String: "Membership status"
 	/// </summary>
-	public override string HeadingMembershipStatus => "メンバーシップ状況";
+	public override string HeadingMembershipStatus => "ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—çŠ¶æ³";
 
 	/// <summary>
 	/// Key: "Heading.NotificationOptions"
 	/// English String: "Notify me when"
 	/// </summary>
-	public override string HeadingNotificationOptions => "通知タイミング";
+	public override string HeadingNotificationOptions => "é€šçŸ¥ã‚¿ã‚¤ãƒŸãƒ³ã‚°";
 
 	/// <summary>
 	/// Key: "Heading.Notifications"
 	/// English String: "Notifications"
 	/// </summary>
-	public override string HeadingNotifications => "通知";
+	public override string HeadingNotifications => "é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.ActionWhen"
 	/// English String: "Notify me when"
 	/// </summary>
-	public override string HeadingNotificationsActionWhen => "通知タイミング";
+	public override string HeadingNotificationsActionWhen => "é€šçŸ¥ã‚¿ã‚¤ãƒŸãƒ³ã‚°";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.DesktopPush"
 	/// English String: "Desktop Push"
 	/// </summary>
-	public override string HeadingNotificationsDesktopPush => "デスクトッププッシュ";
+	public override string HeadingNotificationsDesktopPush => "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ—ãƒƒã‚·ãƒ¥";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.MobilePush"
 	/// English String: "Mobile Push"
 	/// </summary>
-	public override string HeadingNotificationsMobilePush => "モバイルプッシュ";
+	public override string HeadingNotificationsMobilePush => "ãƒ¢ãƒã‚¤ãƒ«ãƒ—ãƒƒã‚·ãƒ¥";
 
 	/// <summary>
 	/// Key: "Heading.Notifications.Stream"
 	/// English String: "Notification Stream"
 	/// </summary>
-	public override string HeadingNotificationsStream => "通知ストリーム";
+	public override string HeadingNotificationsStream => "é€šçŸ¥ã‚¹ãƒˆãƒªãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Heading.NotificationStream"
 	/// English String: "Notification Stream"
 	/// </summary>
-	public override string HeadingNotificationStream => "通知ストリーム";
+	public override string HeadingNotificationStream => "é€šçŸ¥ã‚¹ãƒˆãƒªãƒ¼ãƒ ";
 
 	/// <summary>
 	/// Key: "Heading.OtherSettings"
 	/// English String: "Other Settings"
 	/// </summary>
-	public override string HeadingOtherSettings => "その他の設定";
+	public override string HeadingOtherSettings => "ãã®ä»–ã®è¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.PageTitle"
 	/// English String: "My Settings"
 	/// </summary>
-	public override string HeadingPageTitle => "マイ設定";
+	public override string HeadingPageTitle => "ãƒžã‚¤è¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.Personal"
 	/// English String: "Personal"
 	/// </summary>
-	public override string HeadingPersonal => "パーソナル";
+	public override string HeadingPersonal => "ãƒ‘ãƒ¼ã‚½ãƒŠãƒ«";
 
 	/// <summary>
 	/// Key: "Heading.Pin"
 	/// English String: "Account PIN"
 	/// </summary>
-	public override string HeadingPin => "アカウントPIN";
+	public override string HeadingPin => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPIN";
 
 	/// <summary>
 	/// Key: "Heading.PrivacySettings"
 	/// English String: "Privacy Settings"
 	/// </summary>
-	public override string HeadingPrivacySettings => "プライバシー設定";
+	public override string HeadingPrivacySettings => "ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®š";
 
 	/// <summary>
 	/// Key: "Heading.RenevalDate"
 	/// English String: "Renewal date"
 	/// </summary>
-	public override string HeadingRenevalDate => "更新日";
+	public override string HeadingRenevalDate => "æ›´æ–°æ—¥";
 
 	/// <summary>
 	/// Key: "Heading.Restrictions"
 	/// English String: "Account Restrictions"
 	/// </summary>
-	public override string HeadingRestrictions => "アカウント制限";
+	public override string HeadingRestrictions => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™";
 
 	/// <summary>
 	/// Key: "Heading.SecureSignOut"
 	/// English String: "Secure Sign Out"
 	/// </summary>
-	public override string HeadingSecureSignOut => "セキュアサインアウト";
+	public override string HeadingSecureSignOut => "ã‚»ã‚­ãƒ¥ã‚¢ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆ";
 
 	/// <summary>
 	/// Key: "Heading.SocialNetworks"
 	/// English String: "Social Networks"
 	/// </summary>
-	public override string HeadingSocialNetworks => "ソーシャルネットワーク";
+	public override string HeadingSocialNetworks => "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯";
 
 	/// <summary>
 	/// Key: "Heading.SocialSignOn"
 	/// English String: "Social Sign On"
 	/// </summary>
-	public override string HeadingSocialSignOn => "ソーシャルサインオン";
+	public override string HeadingSocialSignOn => "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒ³ã‚ªãƒ³";
 
 	/// <summary>
 	/// Key: "Heading.SuccessDialogTitle"
 	/// English String: "Success"
 	/// </summary>
-	public override string HeadingSuccessDialogTitle => "成功";
+	public override string HeadingSuccessDialogTitle => "æˆåŠŸ";
 
 	/// <summary>
 	/// Key: "Heading.Tab.AccountInfo"
 	/// English String: "Account Info"
 	/// </summary>
-	public override string HeadingTabAccountInfo => "アカウント情報";
+	public override string HeadingTabAccountInfo => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±";
 
 	/// <summary>
 	/// Key: "Heading.Tab.Billing"
 	/// English String: "Billing"
 	/// </summary>
-	public override string HeadingTabBilling => "ご請求";
+	public override string HeadingTabBilling => "ã”è«‹æ±‚";
 
 	/// <summary>
 	/// Key: "Heading.Tab.FastTrack"
 	/// Fast Track is the name of the limited access community moderation program.
 	/// English String: "Fast Track"
 	/// </summary>
-	public override string HeadingTabFastTrack => "ファストトラック";
+	public override string HeadingTabFastTrack => "ãƒ•ã‚¡ã‚¹ãƒˆãƒˆãƒ©ãƒƒã‚¯";
 
 	/// <summary>
 	/// Key: "Heading.Tab.Notifications"
 	/// English String: "Notifications"
 	/// </summary>
-	public override string HeadingTabNotifications => "通知";
+	public override string HeadingTabNotifications => "é€šçŸ¥";
 
 	/// <summary>
 	/// Key: "Heading.Tab.Privacy"
 	/// English String: "Privacy"
 	/// </summary>
-	public override string HeadingTabPrivacy => "プライバシー";
+	public override string HeadingTabPrivacy => "ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼";
 
 	/// <summary>
 	/// Key: "Heading.Tab.Security"
 	/// English String: "Security"
 	/// </summary>
-	public override string HeadingTabSecurity => "セキュリティ";
+	public override string HeadingTabSecurity => "ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£";
 
 	/// <summary>
 	/// Key: "Heading.Transactions"
 	/// English String: "Transactions"
 	/// </summary>
-	public override string HeadingTransactions => "取引";
+	public override string HeadingTransactions => "å–å¼•";
 
 	/// <summary>
 	/// Key: "Heading.TwoStepVerification"
 	/// English String: "2 Step Verification"
 	/// </summary>
-	public override string HeadingTwoStepVerification => "二段階認証";
+	public override string HeadingTwoStepVerification => "äºŒæ®µéšŽèªè¨¼";
 
 	/// <summary>
 	/// Key: "Heading.Xbox"
@@ -911,104 +911,104 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Label.AccountPinDisabled"
 	/// English String: "Account PIN is currently disabled"
 	/// </summary>
-	public override string LabelAccountPinDisabled => "アカウントPINは現在無効になっています";
+	public override string LabelAccountPinDisabled => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.AccountPinEnabled"
 	/// English String: "Account PIN is currently enabled"
 	/// </summary>
-	public override string LabelAccountPinEnabled => "アカウントPINは現在有効になっています";
+	public override string LabelAccountPinEnabled => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã¯ç¾åœ¨æœ‰åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.AccountRestrictionDisabled"
 	/// English String: "Account Restrictions is currently disabled"
 	/// </summary>
-	public override string LabelAccountRestrictionDisabled => "アカウント制限は現在無効になっています";
+	public override string LabelAccountRestrictionDisabled => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.AccountRestrictionEnabled"
 	/// English String: "Account Restrictions is currently enabled"
 	/// </summary>
-	public override string LabelAccountRestrictionEnabled => "アカウント制限は現在有効になっています";
+	public override string LabelAccountRestrictionEnabled => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™ã¯ç¾åœ¨æœ‰åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.AddEmail"
 	/// English String: "Add Email"
 	/// </summary>
-	public override string LabelAddEmail => "メールアドレスを追加";
+	public override string LabelAddEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.AddEmailParent"
 	/// English String: "Add Parent's Email"
 	/// </summary>
-	public override string LabelAddEmailParent => "保護者のメールアドレスを追加";
+	public override string LabelAddEmailParent => "ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.AddPassword"
 	/// English String: "Add Password:"
 	/// </summary>
-	public override string LabelAddPassword => "パスワードを追加:";
+	public override string LabelAddPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ :";
 
 	/// <summary>
 	/// Key: "Label.AddPhone"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string LabelAddPhone => "電話番号を追加";
+	public override string LabelAddPhone => "é›»è©±ç•ªå·ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.AddPhoneLink"
 	/// English String: "Add Phone"
 	/// </summary>
-	public override string LabelAddPhoneLink => "電話番号を追加";
+	public override string LabelAddPhoneLink => "é›»è©±ç•ªå·ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.BillingHelp"
 	/// English String: "For billing and payment questions:"
 	/// </summary>
-	public override string LabelBillingHelp => "ご請求とお支払いについてのお問い合わせ:";
+	public override string LabelBillingHelp => "ã”è«‹æ±‚ã¨ãŠæ”¯æ‰•ã„ã«ã¤ã„ã¦ã®ãŠå•ã„åˆã‚ã›:";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryCost"
 	/// English String: "Cost"
 	/// </summary>
-	public override string LabelBillingHistoryCost => "費用";
+	public override string LabelBillingHistoryCost => "è²»ç”¨";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryDate"
 	/// English String: "Date"
 	/// </summary>
-	public override string LabelBillingHistoryDate => "日付";
+	public override string LabelBillingHistoryDate => "æ—¥ä»˜";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryDescription"
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelBillingHistoryDescription => "詳細";
+	public override string LabelBillingHistoryDescription => "è©³ç´°";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryGeneralErrors"
 	/// error message
 	/// English String: "Service is currently disabled, please try again later."
 	/// </summary>
-	public override string LabelBillingHistoryGeneralErrors => "サービスは現在無効になっています。後でもう一度お試しください。";
+	public override string LabelBillingHistoryGeneralErrors => "ã‚µãƒ¼ãƒ“ã‚¹ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryNoTransactions"
 	/// English String: "No Transactions"
 	/// </summary>
-	public override string LabelBillingHistoryNoTransactions => "取引がありません";
+	public override string LabelBillingHistoryNoTransactions => "å–å¼•ãŒã‚ã‚Šã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Label.BillingHistoryPaymentType"
 	/// English String: "Payment Type"
 	/// </summary>
-	public override string LabelBillingHistoryPaymentType => "支払いタイプ";
+	public override string LabelBillingHistoryPaymentType => "æ”¯æ‰•ã„ã‚¿ã‚¤ãƒ—";
 
 	/// <summary>
 	/// Key: "Label.Birthday"
 	/// English String: "Birthday"
 	/// </summary>
-	public override string LabelBirthday => "生年月日";
+	public override string LabelBirthday => "ç”Ÿå¹´æœˆæ—¥";
 
 	/// <summary>
 	/// Key: "Label.BuildersClub"
@@ -1020,262 +1020,262 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Label.ChangeYourUsername"
 	/// English String: "change your username"
 	/// </summary>
-	public override string LabelChangeYourUsername => "ユーザーネームの変更";
+	public override string LabelChangeYourUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.ChooseLanguage"
 	/// English String: "Choose Language"
 	/// </summary>
-	public override string LabelChooseLanguage => "言語を選ぶ";
+	public override string LabelChooseLanguage => "è¨€èªžã‚’é¸ã¶";
 
 	/// <summary>
 	/// Key: "Label.ClassicTheme"
 	/// name of Theme, classic theme
 	/// English String: "Off"
 	/// </summary>
-	public override string LabelClassicTheme => "オフ";
+	public override string LabelClassicTheme => "ã‚ªãƒ•";
 
 	/// <summary>
 	/// Key: "Label.ConnectAccount"
 	/// English String: "Connect account:"
 	/// </summary>
-	public override string LabelConnectAccount => "接続アカウント:";
+	public override string LabelConnectAccount => "æŽ¥ç¶šã‚¢ã‚«ã‚¦ãƒ³ãƒˆ:";
 
 	/// <summary>
 	/// Key: "Label.Country"
 	/// English String: "Choose a Country/Region"
 	/// </summary>
-	public override string LabelCountry => "国/地域を選ぶ";
+	public override string LabelCountry => "å›½/åœ°åŸŸã‚’é¸ã¶";
 
 	/// <summary>
 	/// Key: "Label.CountryTitle"
 	/// label for country on account settings page
 	/// English String: "Location"
 	/// </summary>
-	public override string LabelCountryTitle => "場所";
+	public override string LabelCountryTitle => "å ´æ‰€";
 
 	/// <summary>
 	/// Key: "Label.DarkTheme"
 	/// Dark Theme
 	/// English String: "Dark"
 	/// </summary>
-	public override string LabelDarkTheme => "ダーク";
+	public override string LabelDarkTheme => "ãƒ€ãƒ¼ã‚¯";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddEmailOver13"
 	/// English String: "Add My Email"
 	/// </summary>
-	public override string LabelDialogAddEmailOver13 => "メールアドレスを追加";
+	public override string LabelDialogAddEmailOver13 => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddEmailUnder13"
 	/// English String: "Add Parent's Email"
 	/// </summary>
-	public override string LabelDialogAddEmailUnder13 => "保護者のメールアドレスを追加";
+	public override string LabelDialogAddEmailUnder13 => "ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddPhoneField"
 	/// English String: "Phone Number"
 	/// </summary>
-	public override string LabelDialogAddPhoneField => "電話番号";
+	public override string LabelDialogAddPhoneField => "é›»è©±ç•ªå·";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddPhonePassword"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelDialogAddPhonePassword => "アカウントのパスワードの認証";
+	public override string LabelDialogAddPhonePassword => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®èªè¨¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeEmailField"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailField => "メールアドレスの変更";
+	public override string LabelDialogChangeEmailField => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeEmailOver13"
 	/// English String: "Change My Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailOver13 => "メールアドレスの変更";
+	public override string LabelDialogChangeEmailOver13 => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeEmailUnder13"
 	/// English String: "Change Parent's Email"
 	/// </summary>
-	public override string LabelDialogChangeEmailUnder13 => "保護者のメールアドレスを変更";
+	public override string LabelDialogChangeEmailUnder13 => "ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangePasswordConfirm"
 	/// English String: "Confirm Password"
 	/// </summary>
-	public override string LabelDialogChangePasswordConfirm => "パスワード確認";
+	public override string LabelDialogChangePasswordConfirm => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ç¢ºèª";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangePasswordCurrent"
 	/// English String: "Current Password"
 	/// </summary>
-	public override string LabelDialogChangePasswordCurrent => "現在のパスワード";
+	public override string LabelDialogChangePasswordCurrent => "ç¾åœ¨ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangePasswordNew"
 	/// English String: "New Password"
 	/// </summary>
-	public override string LabelDialogChangePasswordNew => "新しいパスワード";
+	public override string LabelDialogChangePasswordNew => "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeUsernameAccountPassword"
 	/// English String: "Account Password"
 	/// </summary>
-	public override string LabelDialogChangeUsernameAccountPassword => "アカウントのパスワード";
+	public override string LabelDialogChangeUsernameAccountPassword => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ChangeUsernameField"
 	/// English String: "Desired Username (3-20 characters)"
 	/// </summary>
-	public override string LabelDialogChangeUsernameField => "希望するユーザーネーム （3〜20 文字）";
+	public override string LabelDialogChangeUsernameField => "å¸Œæœ›ã™ã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ  ï¼ˆ3ã€œ20 æ–‡å­—ï¼‰";
 
 	/// <summary>
 	/// Key: "Label.Dialog.ConfirmPin"
 	/// English String: "Confirm your PIN"
 	/// </summary>
-	public override string LabelDialogConfirmPin => "PINの確認";
+	public override string LabelDialogConfirmPin => "PINã®ç¢ºèª";
 
 	/// <summary>
 	/// Key: "Label.Dialog.EditPhoneCurrentNumber"
 	/// English String: "Current Number:"
 	/// </summary>
-	public override string LabelDialogEditPhoneCurrentNumber => "現在の番号:";
+	public override string LabelDialogEditPhoneCurrentNumber => "ç¾åœ¨ã®ç•ªå·:";
 
 	/// <summary>
 	/// Key: "Label.Dialog.EmailAddressChanged"
 	/// English String: "Email Address Changed"
 	/// </summary>
-	public override string LabelDialogEmailAddressChanged => "メールアドレスを変更しました";
+	public override string LabelDialogEmailAddressChanged => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å¤‰æ›´ã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Dialog.EmailRequired"
 	/// English String: "Email Required"
 	/// </summary>
-	public override string LabelDialogEmailRequired => "メールアドレスが必要です";
+	public override string LabelDialogEmailRequired => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™";
 
 	/// <summary>
 	/// Key: "Label.Dialog.VerifiedEmail"
 	/// English String: "Verified email:"
 	/// </summary>
-	public override string LabelDialogVerifiedEmail => "認証済みメールアドレス:";
+	public override string LabelDialogVerifiedEmail => "èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹:";
 
 	/// <summary>
 	/// Key: "Label.Dialog.VerifyPassword"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelDialogVerifyPassword => "アカウントのパスワードの認証";
+	public override string LabelDialogVerifyPassword => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®èªè¨¼";
 
 	/// <summary>
 	/// Key: "Label.Dialog.VerifyPhoneCodeLabel"
 	/// English String: "Enter the code we just sent to your phone"
 	/// </summary>
-	public override string LabelDialogVerifyPhoneCodeLabel => "あなたの電話に送信されたコードを入力してください";
+	public override string LabelDialogVerifyPhoneCodeLabel => "ã‚ãªãŸã®é›»è©±ã«é€ä¿¡ã•ã‚ŒãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Label.Dialog.VerifySms"
 	/// English String: "Verify SMS"
 	/// </summary>
-	public override string LabelDialogVerifySms => "SMS認証";
+	public override string LabelDialogVerifySms => "SMSèªè¨¼";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Custom"
 	/// English String: "Custom"
 	/// </summary>
-	public override string LabelDropDownCustom => "カスタム";
+	public override string LabelDropDownCustom => "ã‚«ã‚¹ã‚¿ãƒ ";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Default"
 	/// English String: "Default"
 	/// </summary>
-	public override string LabelDropDownDefault => "デフォルト";
+	public override string LabelDropDownDefault => "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Everyone"
 	/// English String: "Everyone"
 	/// </summary>
-	public override string LabelDropDownEveryone => "全員";
+	public override string LabelDropDownEveryone => "å…¨å“¡";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Followers"
 	/// English String: "Friends, Users I Follow, and Followers"
 	/// </summary>
-	public override string LabelDropDownFollowers => "友達、フォロー中のユーザー、フォロワー";
+	public override string LabelDropDownFollowers => "å‹é”ã€ãƒ•ã‚©ãƒ­ãƒ¼ä¸­ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€ãƒ•ã‚©ãƒ­ãƒ¯ãƒ¼";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Following"
 	/// English String: "Friends and Users I Follow"
 	/// </summary>
-	public override string LabelDropDownFollowing => "友達、フォロー中のユーザー";
+	public override string LabelDropDownFollowing => "å‹é”ã€ãƒ•ã‚©ãƒ­ãƒ¼ä¸­ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelDropDownFriends => "友達";
+	public override string LabelDropDownFriends => "å‹é”";
 
 	/// <summary>
 	/// Key: "Label.DropDown.High"
 	/// English String: "High"
 	/// </summary>
-	public override string LabelDropDownHigh => "高";
+	public override string LabelDropDownHigh => "é«˜";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Low"
 	/// English String: "Low"
 	/// </summary>
-	public override string LabelDropDownLow => "低";
+	public override string LabelDropDownLow => "ä½Ž";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Medium"
 	/// English String: "Medium"
 	/// </summary>
-	public override string LabelDropDownMedium => "中";
+	public override string LabelDropDownMedium => "ä¸­";
 
 	/// <summary>
 	/// Key: "Label.DropDown.None"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelDropDownNone => "なし";
+	public override string LabelDropDownNone => "ãªã—";
 
 	/// <summary>
 	/// Key: "Label.DropDown.NoOne"
 	/// English String: "No one"
 	/// </summary>
-	public override string LabelDropDownNoOne => "なし";
+	public override string LabelDropDownNoOne => "ãªã—";
 
 	/// <summary>
 	/// Key: "Label.DropDown.Off"
 	/// English String: "Off"
 	/// </summary>
-	public override string LabelDropDownOff => "オフ";
+	public override string LabelDropDownOff => "ã‚ªãƒ•";
 
 	/// <summary>
 	/// Key: "Label.Email"
 	/// English String: "Email address:"
 	/// </summary>
-	public override string LabelEmail => "メールアドレス:";
+	public override string LabelEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹:";
 
 	/// <summary>
 	/// Key: "Label.EmailParent"
 	/// English String: "Parent's Email address:"
 	/// </summary>
-	public override string LabelEmailParent => "保護者のメールアドレス:";
+	public override string LabelEmailParent => "ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹:";
 
 	/// <summary>
 	/// Key: "Label.EmailVerificationPending"
 	/// English String: "Pending verification"
 	/// </summary>
-	public override string LabelEmailVerificationPending => "認証を待っています";
+	public override string LabelEmailVerificationPending => "èªè¨¼ã‚’å¾…ã£ã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.ExpirationDate"
 	/// English String: "Expiration date"
 	/// </summary>
-	public override string LabelExpirationDate => "終了日";
+	public override string LabelExpirationDate => "çµ‚äº†æ—¥";
 
 	/// <summary>
 	/// Key: "Label.Facebook"
@@ -1288,48 +1288,48 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// A label above a report of the Fast Track member's reporting accuracy compared to other Fast Track members.
 	/// English String: "Accuracy"
 	/// </summary>
-	public override string LabelFastTrackAccuracy => "信用度";
+	public override string LabelFastTrackAccuracy => "ä¿¡ç”¨åº¦";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.AllFastTrackMembers"
 	/// The group of Roblox community members who are part of the Fast Track Member Role. These users, together, represent some of our most useful community reporters and their reports are given special attention.
 	/// English String: "Everyone"
 	/// </summary>
-	public override string LabelFastTrackAllFastTrackMembers => "全員";
+	public override string LabelFastTrackAllFastTrackMembers => "å…¨å“¡";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.ReportMonth"
 	/// A label for a column in a report that indicates that the column will contain months. For example "January" or "March".
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelFastTrackReportMonth => "月";
+	public override string LabelFastTrackReportMonth => "æœˆ";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.ReportYear"
 	/// A label used as a column header in a report table. This column contains "years". These will be localized. Examples for en-us "2015" and "2020"
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelFastTrackReportYear => "年";
+	public override string LabelFastTrackReportYear => "å¹´";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.Statistics"
 	/// Title of a section of the Fast Track member page that includes reporting and statistical data.
 	/// English String: "Statistics"
 	/// </summary>
-	public override string LabelFastTrackStatistics => "統計";
+	public override string LabelFastTrackStatistics => "çµ±è¨ˆ";
 
 	/// <summary>
 	/// Key: "Label.FastTrack.You"
 	/// Pronoun for the current user, who in this context is a Fast Track member. The usage here is intended to be as a heading for a column in a table.
 	/// English String: "You"
 	/// </summary>
-	public override string LabelFastTrackYou => "あなた";
+	public override string LabelFastTrackYou => "ã‚ãªãŸ";
 
 	/// <summary>
 	/// Key: "Label.Gender"
 	/// English String: "Gender"
 	/// </summary>
-	public override string LabelGender => "性別";
+	public override string LabelGender => "æ€§åˆ¥";
 
 	/// <summary>
 	/// Key: "Label.GooglePlus"
@@ -1342,227 +1342,227 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Light Theme
 	/// English String: "Light"
 	/// </summary>
-	public override string LabelLightTheme => "ライト";
+	public override string LabelLightTheme => "ãƒ©ã‚¤ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.LocaleTitle"
 	/// text label for locale select on account setting's page
 	/// English String: "Language"
 	/// </summary>
-	public override string LabelLocaleTitle => "言語";
+	public override string LabelLocaleTitle => "è¨€èªž";
 
 	/// <summary>
 	/// Key: "Label.MembershipStatusRobloxPremium"
 	/// English String: "You're not a member yet. Join Roblox Premium today!"
 	/// </summary>
-	public override string LabelMembershipStatusRobloxPremium => "あなたは、まだメンバーではありません。今すぐRoblox Premiumに加入してください！";
+	public override string LabelMembershipStatusRobloxPremium => "ã‚ãªãŸã¯ã€ã¾ã ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»Šã™ãRoblox Premiumã«åŠ å…¥ã—ã¦ãã ã•ã„ï¼";
 
 	/// <summary>
 	/// Key: "Label.Notifications.AddedToPrivateServer"
 	/// English String: "I am invited to a VIP server"
 	/// </summary>
-	public override string LabelNotificationsAddedToPrivateServer => "VIPサーバーに招待されました";
+	public override string LabelNotificationsAddedToPrivateServer => "VIPã‚µãƒ¼ãƒãƒ¼ã«æ‹›å¾…ã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Notifications.Chat"
 	/// English String: "Someone chats with me"
 	/// </summary>
-	public override string LabelNotificationsChat => "誰かからチャットが届きました";
+	public override string LabelNotificationsChat => "èª°ã‹ã‹ã‚‰ãƒãƒ£ãƒƒãƒˆãŒå±Šãã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Notifications.ConversationUniverseChanged"
 	/// label for notification settings
 	/// English String: "Someone pins a new game to play together"
 	/// </summary>
-	public override string LabelNotificationsConversationUniverseChanged => "一緒にプレイする新しいゲームがピン付けされました";
+	public override string LabelNotificationsConversationUniverseChanged => "ä¸€ç·’ã«ãƒ—ãƒ¬ã‚¤ã™ã‚‹æ–°ã—ã„ã‚²ãƒ¼ãƒ ãŒãƒ”ãƒ³ä»˜ã‘ã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Notifications.DeveloperMetricsAvailable"
 	/// English String: "Analytics report becomes available"
 	/// </summary>
-	public override string LabelNotificationsDeveloperMetricsAvailable => "解析レポートがあります";
+	public override string LabelNotificationsDeveloperMetricsAvailable => "è§£æžãƒ¬ãƒãƒ¼ãƒˆãŒã‚ã‚Šã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.Notifications.FriendRequestAccepted"
 	/// English String: "Someone accepts my friend request"
 	/// </summary>
-	public override string LabelNotificationsFriendRequestAccepted => "友達リクエストが承認されました";
+	public override string LabelNotificationsFriendRequestAccepted => "å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒæ‰¿èªã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Notifications.FriendRequestReceived"
 	/// English String: "I receive a friend request"
 	/// </summary>
-	public override string LabelNotificationsFriendRequestReceived => "友達リクエストが届きました";
+	public override string LabelNotificationsFriendRequestReceived => "å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Notifications.GameUpdate"
 	/// Checkbox label for enabling game update notifications in the notification stream
 	/// English String: "I receive update notifications"
 	/// </summary>
-	public override string LabelNotificationsGameUpdate => "アップデート通知を受け取る";
+	public override string LabelNotificationsGameUpdate => "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆé€šçŸ¥ã‚’å—ã‘å–ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.Notifications.PartyInvited"
 	/// English String: "Someone invites me to a party"
 	/// </summary>
-	public override string LabelNotificationsPartyInvited => "パーティに招待されました";
+	public override string LabelNotificationsPartyInvited => "ãƒ‘ãƒ¼ãƒ†ã‚£ã«æ‹›å¾…ã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Notifications.PartyJoined"
 	/// English String: "Someone joins a party I'm in"
 	/// </summary>
-	public override string LabelNotificationsPartyJoined => "誰かがパーティに参加しました";
+	public override string LabelNotificationsPartyJoined => "èª°ã‹ãŒãƒ‘ãƒ¼ãƒ†ã‚£ã«å‚åŠ ã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Notifications.PrivateMessage"
 	/// English String: "I receive a private message"
 	/// </summary>
-	public override string LabelNotificationsPrivateMessage => "プライベートメッセージが届きました";
+	public override string LabelNotificationsPrivateMessage => "ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒå±Šãã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Notifications.TeamCreateInvite"
 	/// English String: "Someone invites me to edit a game"
 	/// </summary>
-	public override string LabelNotificationsTeamCreateInvite => "ゲームの編集に招待されました";
+	public override string LabelNotificationsTeamCreateInvite => "ã‚²ãƒ¼ãƒ ã®ç·¨é›†ã«æ‹›å¾…ã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// English String: "Password:"
 	/// </summary>
-	public override string LabelPassword => "パスワード:";
+	public override string LabelPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰:";
 
 	/// <summary>
 	/// Key: "Label.Phone"
 	/// English String: "Phone Number:"
 	/// </summary>
-	public override string LabelPhone => "電話番号:";
+	public override string LabelPhone => "é›»è©±ç•ªå·:";
 
 	/// <summary>
 	/// Key: "Label.PinTimeMins"
 	/// English String: "min"
 	/// </summary>
-	public override string LabelPinTimeMins => "分";
+	public override string LabelPinTimeMins => "åˆ†";
 
 	/// <summary>
 	/// Key: "Label.PinTimeRemaining"
 	/// English String: "Time Remaining"
 	/// </summary>
-	public override string LabelPinTimeRemaining => "残り時間";
+	public override string LabelPinTimeRemaining => "æ®‹ã‚Šæ™‚é–“";
 
 	/// <summary>
 	/// Key: "Label.PinTimeSecs"
 	/// English String: "sec"
 	/// </summary>
-	public override string LabelPinTimeSecs => "秒";
+	public override string LabelPinTimeSecs => "ç§’";
 
 	/// <summary>
 	/// Key: "Label.PreviousUsernames"
 	/// English String: "Previous usernames:"
 	/// </summary>
-	public override string LabelPreviousUsernames => "以前のユーザーネーム:";
+	public override string LabelPreviousUsernames => "ä»¥å‰ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ :";
 
 	/// <summary>
 	/// Key: "Label.PrivacyMode"
 	/// English String: "Privacy Mode"
 	/// </summary>
-	public override string LabelPrivacyMode => "プライバシーモード";
+	public override string LabelPrivacyMode => "ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒ¢ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Label.RenevalDate"
 	/// English String: "Renewal date"
 	/// </summary>
-	public override string LabelRenevalDate => "更新日";
+	public override string LabelRenevalDate => "æ›´æ–°æ—¥";
 
 	/// <summary>
 	/// Key: "Label.SignOutAllSessions"
 	/// English String: "Sign out of all other sessions"
 	/// </summary>
-	public override string LabelSignOutAllSessions => "すべてのセッションからサインアウト";
+	public override string LabelSignOutAllSessions => "ã™ã¹ã¦ã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‹ã‚‰ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.SocialLinksVisibility"
 	/// English String: "Visible to:"
 	/// </summary>
-	public override string LabelSocialLinksVisibility => "公開範囲:";
+	public override string LabelSocialLinksVisibility => "å…¬é–‹ç¯„å›²:";
 
 	/// <summary>
 	/// Key: "Label.ThemeTitle"
 	/// English String: "Theme"
 	/// </summary>
-	public override string LabelThemeTitle => "壁紙テーマ";
+	public override string LabelThemeTitle => "å£ç´™ãƒ†ãƒ¼ãƒž";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.ContactSettings"
 	/// English String: "Custom - Control your own settings. Default - Enable chat and messages with Friends. Off - Disables chat and messages."
 	/// </summary>
-	public override string LabelToolTipContactSettings => "カスタム - 設定を自分で管理します。デフォルト - 友達とのチャットやメッセージを可能にします。オフ - チャットやメッセージを無効にします。";
+	public override string LabelToolTipContactSettings => "ã‚«ã‚¹ã‚¿ãƒ  - è¨­å®šã‚’è‡ªåˆ†ã§ç®¡ç†ã—ã¾ã™ã€‚ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ - å‹é”ã¨ã®ãƒãƒ£ãƒƒãƒˆã‚„ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å¯èƒ½ã«ã—ã¾ã™ã€‚ã‚ªãƒ• - ãƒãƒ£ãƒƒãƒˆã‚„ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç„¡åŠ¹ã«ã—ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.PinLocked"
 	/// English String: "All settings are locked. To edit, please unlock with your PIN"
 	/// </summary>
-	public override string LabelToolTipPinLocked => "すべての設定がロックされています。編集するには、PINを使用してアンロックしてください";
+	public override string LabelToolTipPinLocked => "ã™ã¹ã¦ã®è¨­å®šãŒãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚ç·¨é›†ã™ã‚‹ã«ã¯ã€PINã‚’ä½¿ç”¨ã—ã¦ã‚¢ãƒ³ãƒ­ãƒƒã‚¯ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.PinUnlocked"
 	/// English String: "Click to lock your Settings page"
 	/// </summary>
-	public override string LabelToolTipPinUnlocked => "クリックして設定ページをロック";
+	public override string LabelToolTipPinUnlocked => "ã‚¯ãƒªãƒƒã‚¯ã—ã¦è¨­å®šãƒšãƒ¼ã‚¸ã‚’ãƒ­ãƒƒã‚¯";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.PrivacyMode"
 	/// English String: "Click here for more information"
 	/// </summary>
-	public override string LabelToolTipPrivacyMode => "詳細については、こちらをクリックして確認してください";
+	public override string LabelToolTipPrivacyMode => "è©³ç´°ã«ã¤ã„ã¦ã¯ã€ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ç¢ºèªã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanChatInApp"
 	/// English String: "This setting controls who this user will be allowed to chat with in the app and on the web (separate from in game). The setting also prevents this user from posting on Forums and group walls."
 	/// </summary>
-	public override string LabelToolTipWhoCanChatInApp => "この設定は、アプリ内やネット上でこのユーザーが誰とチャットできるかを管理します（ゲーム内とは別の設定）。この設定で、フォーラムやグループ掲示板へのこのユーザーの投稿を禁止することもできます。";
+	public override string LabelToolTipWhoCanChatInApp => "ã“ã®è¨­å®šã¯ã€ã‚¢ãƒ—ãƒªå†…ã‚„ãƒãƒƒãƒˆä¸Šã§ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒèª°ã¨ãƒãƒ£ãƒƒãƒˆã§ãã‚‹ã‹ã‚’ç®¡ç†ã—ã¾ã™ï¼ˆã‚²ãƒ¼ãƒ å†…ã¨ã¯åˆ¥ã®è¨­å®šï¼‰ã€‚ã“ã®è¨­å®šã§ã€ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã‚„ã‚°ãƒ«ãƒ¼ãƒ—æŽ²ç¤ºæ¿ã¸ã®ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®æŠ•ç¨¿ã‚’ç¦æ­¢ã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanChatInGame"
 	/// English String: "This setting controls who this user will be allowed to chat with in game."
 	/// </summary>
-	public override string LabelToolTipWhoCanChatInGame => "この設定は、ゲーム内でこのユーザーが誰とチャットできるかを管理します。";
+	public override string LabelToolTipWhoCanChatInGame => "ã“ã®è¨­å®šã¯ã€ã‚²ãƒ¼ãƒ å†…ã§ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒèª°ã¨ãƒãƒ£ãƒƒãƒˆã§ãã‚‹ã‹ã‚’ç®¡ç†ã—ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanFindMeByPhone"
 	/// This setting controls who can find you using the phone number you provided.
 	/// English String: "This setting controls who can find you using the phone number you provided."
 	/// </summary>
-	public override string LabelToolTipWhoCanFindMeByPhone => "登録した電話番号からあなたを検索できる人を設定することができます。";
+	public override string LabelToolTipWhoCanFindMeByPhone => "ç™»éŒ²ã—ãŸé›»è©±ç•ªå·ã‹ã‚‰ã‚ãªãŸã‚’æ¤œç´¢ã§ãã‚‹äººã‚’è¨­å®šã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanInviteVIP"
 	/// English String: "This setting controls who can join this user in VIP servers - servers that can only be joined by invitation of the server owner."
 	/// </summary>
-	public override string LabelToolTipWhoCanInviteVIP => "この設定は、VIPサーバーでこのユーザーが誰と一緒に行動できるかを管理します。VIPサーバーは、サーバー管理者からの招待があった場合にのみ参加できるサーバーです。";
+	public override string LabelToolTipWhoCanInviteVIP => "ã“ã®è¨­å®šã¯ã€VIPã‚µãƒ¼ãƒãƒ¼ã§ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒèª°ã¨ä¸€ç·’ã«è¡Œå‹•ã§ãã‚‹ã‹ã‚’ç®¡ç†ã—ã¾ã™ã€‚VIPã‚µãƒ¼ãƒãƒ¼ã¯ã€ã‚µãƒ¼ãƒãƒ¼ç®¡ç†è€…ã‹ã‚‰ã®æ‹›å¾…ãŒã‚ã£ãŸå ´åˆã«ã®ã¿å‚åŠ ã§ãã‚‹ã‚µãƒ¼ãƒãƒ¼ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanJoinGame"
 	/// English String: "This setting controls who can see which game I'm in and join me in my server. Selecting no one means no one can follow me into my specific server, but I will be playing with other users."
 	/// </summary>
-	public override string LabelToolTipWhoCanJoinGame => "この設定は、自分がどのゲームに参加しているかを確認したり、サーバー上で一緒に行動できる相手を管理します。「なし」を選択すると、特定サーバーで自分をフォローできる相手は存在しませんが、自分は他のユーザーとプレイできるようになります。";
+	public override string LabelToolTipWhoCanJoinGame => "ã“ã®è¨­å®šã¯ã€è‡ªåˆ†ãŒã©ã®ã‚²ãƒ¼ãƒ ã«å‚åŠ ã—ã¦ã„ã‚‹ã‹ã‚’ç¢ºèªã—ãŸã‚Šã€ã‚µãƒ¼ãƒãƒ¼ä¸Šã§ä¸€ç·’ã«è¡Œå‹•ã§ãã‚‹ç›¸æ‰‹ã‚’ç®¡ç†ã—ã¾ã™ã€‚ã€Œãªã—ã€ã‚’é¸æŠžã™ã‚‹ã¨ã€ç‰¹å®šã‚µãƒ¼ãƒãƒ¼ã§è‡ªåˆ†ã‚’ãƒ•ã‚©ãƒ­ãƒ¼ã§ãã‚‹ç›¸æ‰‹ã¯å­˜åœ¨ã—ã¾ã›ã‚“ãŒã€è‡ªåˆ†ã¯ä»–ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¨ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanMessageMe"
 	/// English String: "This setting controls who this user can receive messages from in their messages inbox."
 	/// </summary>
-	public override string LabelToolTipWhoCanMessageMe => "この設定は、このユーザーがメッセージの受信トレイでメッセージを受信できる相手を管理します。";
+	public override string LabelToolTipWhoCanMessageMe => "ã“ã®è¨­å®šã¯ã€ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®å—ä¿¡ãƒˆãƒ¬ã‚¤ã§ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å—ä¿¡ã§ãã‚‹ç›¸æ‰‹ã‚’ç®¡ç†ã—ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanSeeInventory"
 	/// English String: "This setting controls who can see your inventory."
 	/// </summary>
-	public override string LabelToolTipWhoCanSeeInventory => "あなたのインベントリを見れる人を設定できます。";
+	public override string LabelToolTipWhoCanSeeInventory => "ã‚ãªãŸã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‚’è¦‹ã‚Œã‚‹äººã‚’è¨­å®šã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.TradeFilter"
 	/// English String: "Trade quality filter"
 	/// </summary>
-	public override string LabelTradeFilter => "取引品質フィルタ";
+	public override string LabelTradeFilter => "å–å¼•å“è³ªãƒ•ã‚£ãƒ«ã‚¿";
 
 	/// <summary>
 	/// Key: "Label.Twitch"
@@ -1580,118 +1580,118 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "Label.TwoStepEmail"
 	/// English String: "enable 2 Step Verification"
 	/// </summary>
-	public override string LabelTwoStepEmail => "二段階認証を有効にする";
+	public override string LabelTwoStepEmail => "äºŒæ®µéšŽèªè¨¼ã‚’æœ‰åŠ¹ã«ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.TwoStepPrerequisite"
 	/// English String: "A verified email is required."
 	/// </summary>
-	public override string LabelTwoStepPrerequisite => "認証済みメールアドレスが必要です。";
+	public override string LabelTwoStepPrerequisite => "èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerification"
 	/// English String: "Improve your account security. A code will be required when you login from a new device."
 	/// </summary>
-	public override string LabelTwoStepVerification => "アカウントのセキュリティを向上させましょう。新しいデバイスからログインする際にコードの入力が必要になります。";
+	public override string LabelTwoStepVerification => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’å‘ä¸Šã•ã›ã¾ã—ã‚‡ã†ã€‚æ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹éš›ã«ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ãŒå¿…è¦ã«ãªã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerificationEnabled"
 	/// English String: "Your account is protected!"
 	/// </summary>
-	public override string LabelTwoStepVerificationEnabled => "あなたのアカウントは保護されています！";
+	public override string LabelTwoStepVerificationEnabled => "ã‚ãªãŸã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ä¿è­·ã•ã‚Œã¦ã„ã¾ã™ï¼";
 
 	/// <summary>
 	/// Key: "Label.UpdateEmail"
 	/// English String: "Update Email"
 	/// </summary>
-	public override string LabelUpdateEmail => "メールアドレスのアップデート";
+	public override string LabelUpdateEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.UpdatePhone"
 	/// English String: "Update Phone"
 	/// </summary>
-	public override string LabelUpdatePhone => "電話番号のアップデート";
+	public override string LabelUpdatePhone => "é›»è©±ç•ªå·ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.UseDeviceLanguage"
 	/// Allow user to use device language
 	/// English String: "Use Device Language"
 	/// </summary>
-	public override string LabelUseDeviceLanguage => "デバイスの言語を使う";
+	public override string LabelUseDeviceLanguage => "ãƒ‡ãƒã‚¤ã‚¹ã®è¨€èªžã‚’ä½¿ã†";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username:"
 	/// </summary>
-	public override string LabelUsername => "ユーザーネーム:";
+	public override string LabelUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ :";
 
 	/// <summary>
 	/// Key: "Label.Verified"
 	/// English String: "Verified"
 	/// </summary>
-	public override string LabelVerified => "認証済み";
+	public override string LabelVerified => "èªè¨¼æ¸ˆã¿";
 
 	/// <summary>
 	/// Key: "Label.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string LabelVerify => "認証";
+	public override string LabelVerify => "èªè¨¼";
 
 	/// <summary>
 	/// Key: "Label.WhoCanChatInApp"
 	/// English String: "Who can chat with me in app?"
 	/// </summary>
-	public override string LabelWhoCanChatInApp => "アプリ内でチャット可能な相手。";
+	public override string LabelWhoCanChatInApp => "ã‚¢ãƒ—ãƒªå†…ã§ãƒãƒ£ãƒƒãƒˆå¯èƒ½ãªç›¸æ‰‹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.WhoCanChatInGame"
 	/// English String: "Who can chat with me?"
 	/// </summary>
-	public override string LabelWhoCanChatInGame => "チャット可能な相手。";
+	public override string LabelWhoCanChatInGame => "ãƒãƒ£ãƒƒãƒˆå¯èƒ½ãªç›¸æ‰‹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.WhoCanFindMeByPhone"
 	/// Who can find me by my phone number?
 	/// English String: "Who can find me by my phone number?"
 	/// </summary>
-	public override string LabelWhoCanFindMeByPhone => "電話番号からの検索を許可する対象";
+	public override string LabelWhoCanFindMeByPhone => "é›»è©±ç•ªå·ã‹ã‚‰ã®æ¤œç´¢ã‚’è¨±å¯ã™ã‚‹å¯¾è±¡";
 
 	/// <summary>
 	/// Key: "Label.WhoCanInviteVIP"
 	/// English String: "Who can invite me to VIP Servers?"
 	/// </summary>
-	public override string LabelWhoCanInviteVIP => "VIPサーバーに招待してもらえる相手。";
+	public override string LabelWhoCanInviteVIP => "VIPã‚µãƒ¼ãƒãƒ¼ã«æ‹›å¾…ã—ã¦ã‚‚ã‚‰ãˆã‚‹ç›¸æ‰‹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.WhoCanJoinGame"
 	/// English String: "Who can join me?"
 	/// </summary>
-	public override string LabelWhoCanJoinGame => "参加できる相手。";
+	public override string LabelWhoCanJoinGame => "å‚åŠ ã§ãã‚‹ç›¸æ‰‹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.WhoCanMessageMe"
 	/// English String: "Who can message me?"
 	/// </summary>
-	public override string LabelWhoCanMessageMe => "メッセージを受信できる相手。";
+	public override string LabelWhoCanMessageMe => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å—ä¿¡ã§ãã‚‹ç›¸æ‰‹ã€‚";
 
 	/// <summary>
 	/// Key: "Label.WhoCanSeeInventory"
 	/// This setting controls who can see the user's inventory.
 	/// English String: "Who can see my inventory?"
 	/// </summary>
-	public override string LabelWhoCanSeeInventory => "あなたのインベントリを見れるユーザー。";
+	public override string LabelWhoCanSeeInventory => "ã‚ãªãŸã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‚’è¦‹ã‚Œã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€‚";
 
 	/// <summary>
 	/// Key: "Label.WhoCanTradeWithMe"
 	/// English String: "Who can trade with me?"
 	/// </summary>
-	public override string LabelWhoCanTradeWithMe => "取引できる相手";
+	public override string LabelWhoCanTradeWithMe => "å–å¼•ã§ãã‚‹ç›¸æ‰‹";
 
 	/// <summary>
 	/// Key: "Label.XboxConnected"
 	/// English String: "Connected with an Xbox account"
 	/// </summary>
-	public override string LabelXboxConnected => "Xboxのアカウントで接続";
+	public override string LabelXboxConnected => "Xboxã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§æŽ¥ç¶š";
 
 	/// <summary>
 	/// Key: "Label.YouTube"
@@ -1703,513 +1703,513 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// Key: "LabelInsufficientRobux"
 	/// English String: "Insufficient Robux"
 	/// </summary>
-	public override string LabelInsufficientRobux => "Robuxが不足しています";
+	public override string LabelInsufficientRobux => "RobuxãŒä¸è¶³ã—ã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Message.Error.AccountHasPin"
 	/// English String: "The account already has a PIN. Try making a different request."
 	/// </summary>
-	public override string MessageErrorAccountHasPin => "アカウントにはすでにPINが設定されています。他のリクエストを行ってください。";
+	public override string MessageErrorAccountHasPin => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ã¯ã™ã§ã«PINãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ä»–ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’è¡Œã£ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.AccountLocked"
 	/// English String: "The account is locked. Unlock the acount before performing the action."
 	/// </summary>
-	public override string MessageErrorAccountLocked => "アカウントがロックされています。操作を実行する前にアカウントをアンロックしてください。";
+	public override string MessageErrorAccountLocked => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚æ“ä½œã‚’å®Ÿè¡Œã™ã‚‹å‰ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ã‚¢ãƒ³ãƒ­ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Default"
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string MessageErrorDefault => "問題が発生しました。後でもう一度お試しください。";
+	public override string MessageErrorDefault => "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.AlreadyVerified"
 	/// English String: "The email is already verified."
 	/// </summary>
-	public override string MessageErrorEmailAlreadyVerified => "メールアドレスは認証済みです。";
+	public override string MessageErrorEmailAlreadyVerified => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯èªè¨¼æ¸ˆã¿ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.FeatureDisabled"
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailFeatureDisabled => "この機能は現在無効になっています。後でもう一度お試しください。";
+	public override string MessageErrorEmailFeatureDisabled => "ã“ã®æ©Ÿèƒ½ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.IncorrectPassword"
 	/// English String: "Password is incorrect."
 	/// </summary>
-	public override string MessageErrorEmailIncorrectPassword => "パスワードが間違っています。";
+	public override string MessageErrorEmailIncorrectPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.InvalidEmail"
 	/// English String: "Invalid email address."
 	/// </summary>
-	public override string MessageErrorEmailInvalidEmail => "メールアドレスが無効です。";
+	public override string MessageErrorEmailInvalidEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒç„¡åŠ¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.NoEmailAssociated"
 	/// English String: "No email address is associated with the account."
 	/// </summary>
-	public override string MessageErrorEmailNoEmailAssociated => "このアカウントに関連付けられたメールアドレスはありません。";
+	public override string MessageErrorEmailNoEmailAssociated => "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.PinLocked"
 	/// English String: "PIN is locked."
 	/// </summary>
-	public override string MessageErrorEmailPinLocked => "PINはロックされています。";
+	public override string MessageErrorEmailPinLocked => "PINã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.SameEmail"
 	/// English String: "This is already the current email."
 	/// </summary>
-	public override string MessageErrorEmailSameEmail => "このアドレスは、現在のメールアドレスです。";
+	public override string MessageErrorEmailSameEmail => "ã“ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã€ç¾åœ¨ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.TooManyAccounts"
 	/// English String: "There are too many accounts associated with this email address."
 	/// </summary>
-	public override string MessageErrorEmailTooManyAccounts => "このメールアドレスに関連付けられているメールアドレスが多すぎます。";
+	public override string MessageErrorEmailTooManyAccounts => "ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¦ã„ã‚‹ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¤šã™ãŽã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.TooManyUpdates"
 	/// English String: "Too many attempts to update email. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailTooManyUpdates => "メールアドレスのアップデート試行回数が多すぎます。後でもう一度お試しください。";
+	public override string MessageErrorEmailTooManyUpdates => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆè©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.TooManyVerify"
 	/// English String: "Too many attempts to send verification email. Please try again later."
 	/// </summary>
-	public override string MessageErrorEmailTooManyVerify => "認証メールアドレス送信の試行回数が多すぎます。後でもう一度お試しください。";
+	public override string MessageErrorEmailTooManyVerify => "èªè¨¼ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹é€ä¿¡ã®è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.Email.Unknown"
 	/// English String: "An unknown error occured."
 	/// </summary>
-	public override string MessageErrorEmailUnknown => "不明なエラーが発生しました。";
+	public override string MessageErrorEmailUnknown => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.IncorrectPin"
 	/// English String: "Incorrect PIN."
 	/// </summary>
-	public override string MessageErrorIncorrectPin => "PINが間違っています。";
+	public override string MessageErrorIncorrectPin => "PINãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.InvalidPinFormat"
 	/// English String: "Invalid PIN format."
 	/// </summary>
-	public override string MessageErrorInvalidPinFormat => "PINの形式が間違っています。";
+	public override string MessageErrorInvalidPinFormat => "PINã®å½¢å¼ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.NoPin"
 	/// English String: "No PIN exists on the account."
 	/// </summary>
-	public override string MessageErrorNoPin => "アカウントにPINが設定されていません。";
+	public override string MessageErrorNoPin => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«PINãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.NoVerifiedEmail"
 	/// English String: "The account does not have a verified email."
 	/// </summary>
-	public override string MessageErrorNoVerifiedEmail => "アカウントに認証済みメールアドレスが設定されていません。";
+	public override string MessageErrorNoVerifiedEmail => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.System"
 	/// English String: "System error."
 	/// </summary>
-	public override string MessageErrorSystem => "システムエラーです。";
+	public override string MessageErrorSystem => "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.Error.TooManyRequests"
 	/// English String: "Too many requests made. Try again later."
 	/// </summary>
-	public override string MessageErrorTooManyRequests => "リクエストが多すぎます。後でもう一度お試しください。";
+	public override string MessageErrorTooManyRequests => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageEmailAddSuccess"
 	/// English String: "Email Added"
 	/// </summary>
-	public override string MessageEmailAddSuccess => "メールアドレスを追加しました";
+	public override string MessageEmailAddSuccess => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "MessageEmailAlreadyVerifiedError"
 	/// English String: "Your email is already verified!"
 	/// </summary>
-	public override string MessageEmailAlreadyVerifiedError => "あなたのメールアドレスは認証済みです！";
+	public override string MessageEmailAlreadyVerifiedError => "ã‚ãªãŸã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯èªè¨¼æ¸ˆã¿ã§ã™ï¼";
 
 	/// <summary>
 	/// Key: "MessageFeatureDisabledError"
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string MessageFeatureDisabledError => "この機能は現在無効になっています。後でもう一度お試しください。";
+	public override string MessageFeatureDisabledError => "ã“ã®æ©Ÿèƒ½ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageInsufficientRobuxErrorForUserName"
 	/// You don't have enough Robux to change your username.
 	/// English String: "You don't have enough Robux to change your username."
 	/// </summary>
-	public override string MessageInsufficientRobuxErrorForUserName => "Robuxが不足しているためユーザーネームを変更できません。";
+	public override string MessageInsufficientRobuxErrorForUserName => "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "MessageInvalidEmail"
 	/// English String: "Invalid Email"
 	/// </summary>
-	public override string MessageInvalidEmail => "無効なメールアドレス";
+	public override string MessageInvalidEmail => "ç„¡åŠ¹ãªãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
 
 	/// <summary>
 	/// Key: "MessageNoEmailAssociatedError"
 	/// English String: "You must associate an email address with your account"
 	/// </summary>
-	public override string MessageNoEmailAssociatedError => "アカウントにメールアドレスを関連付ける必要があります";
+	public override string MessageNoEmailAssociatedError => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’é–¢é€£ä»˜ã‘ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 
 	/// <summary>
 	/// Key: "MessagePermissionError"
 	/// English String: "You don't have enough Robux to change your username."
 	/// </summary>
-	public override string MessagePermissionError => "Robuxが不足しているためユーザーネームを変更できません。";
+	public override string MessagePermissionError => "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "MessagePinLockedError"
 	/// English String: "PIN is locked."
 	/// </summary>
-	public override string MessagePinLockedError => "PINはロックされています。";
+	public override string MessagePinLockedError => "PINã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "MessageSameEmailError"
 	/// English String: "This is already the current verified email."
 	/// </summary>
-	public override string MessageSameEmailError => "このアドレスは、現在の認証済みメールアドレスです。";
+	public override string MessageSameEmailError => "ã“ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã€ç¾åœ¨ã®èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "MessageSettingsUpdateSuccess"
 	/// English String: "Your settings have been updated."
 	/// </summary>
-	public override string MessageSettingsUpdateSuccess => "設定をアップデートしました。";
+	public override string MessageSettingsUpdateSuccess => "è¨­å®šã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "MessageTooManyAccountsOnEmailError"
 	/// English String: "There are too many accounts associated with this email address."
 	/// </summary>
-	public override string MessageTooManyAccountsOnEmailError => "このメールアドレスに関連付けられているメールアドレスが多すぎます。";
+	public override string MessageTooManyAccountsOnEmailError => "ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¦ã„ã‚‹ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¤šã™ãŽã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "MessageTooManyAttemptsError"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttemptsError => "試行回数が多すぎます。後でもう一度お試しください。";
+	public override string MessageTooManyAttemptsError => "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "MessageUnknownError"
 	/// English String: "An unknown error occurred."
 	/// </summary>
-	public override string MessageUnknownError => "不明なエラーが発生しました。";
+	public override string MessageUnknownError => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "MessageWrongPassword"
 	/// English String: "Your password is incorrect."
 	/// </summary>
-	public override string MessageWrongPassword => "パスワードが間違っています。";
+	public override string MessageWrongPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Respones.InvalidCodePhone"
 	/// error message
 	/// English String: "Code is invalid. Please check your phone and try again."
 	/// </summary>
-	public override string ResponesInvalidCodePhone => "コードが間違っています。電話番号をもう一度チェックしてからお試しください。";
+	public override string ResponesInvalidCodePhone => "ã‚³ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚é›»è©±ç•ªå·ã‚’ã‚‚ã†ä¸€åº¦ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Respones.InventoryAndTradePrivacyConflictError"
 	/// English String: "The value for \"Who can trade with me\" should be the same or more restrictive than the value for \"Who can see my inventory\"."
 	/// </summary>
-	public override string ResponesInventoryAndTradePrivacyConflictError => "「取引できる相手」は「あなたのインベントリを見れるユーザー」と同じか、より制限の厳しい値である必要があります。";
+	public override string ResponesInventoryAndTradePrivacyConflictError => "ã€Œå–å¼•ã§ãã‚‹ç›¸æ‰‹ã€ã¯ã€Œã‚ãªãŸã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‚’è¦‹ã‚Œã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€ã¨åŒã˜ã‹ã€ã‚ˆã‚Šåˆ¶é™ã®åŽ³ã—ã„å€¤ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.CodeRequired"
 	/// error message
 	/// English String: "A code is required. Please enter your code."
 	/// </summary>
-	public override string ResponseCodeRequired => "コードが必要です。コードを入力してください。";
+	public override string ResponseCodeRequired => "ã‚³ãƒ¼ãƒ‰ãŒå¿…è¦ã§ã™ã€‚ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangeDefaultWarning"
 	/// English String: "Changing your birthday to under age 13 cannot be un-done. Are you sure you want to continue?"
 	/// </summary>
-	public override string ResponseDialogBirthdayChangeDefaultWarning => "生年月日を13歳未満に設定すると、取り消すことはできません。よろしいですか？";
+	public override string ResponseDialogBirthdayChangeDefaultWarning => "ç”Ÿå¹´æœˆæ—¥ã‚’13æ­³æœªæº€ã«è¨­å®šã™ã‚‹ã¨ã€å–ã‚Šæ¶ˆã™ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangePasswordBody"
 	/// English String: "You must add a password to your Roblox account to change your birthday."
 	/// </summary>
-	public override string ResponseDialogBirthdayChangePasswordBody => "生年月日を変更するには、Robloxアカウントへのパスワードを追加する必要があります。";
+	public override string ResponseDialogBirthdayChangePasswordBody => "ç”Ÿå¹´æœˆæ—¥ã‚’å¤‰æ›´ã™ã‚‹ã«ã¯ã€Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¸ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangePasswordTitle"
 	/// English String: "Must Add Password"
 	/// </summary>
-	public override string ResponseDialogBirthdayChangePasswordTitle => "パスワードを追加する必要があります";
+	public override string ResponseDialogBirthdayChangePasswordTitle => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 
 	/// <summary>
 	/// Key: "Response.Dialog.BirthdayChangeSocialWarning"
 	/// English String: "Changing your birthday to under age 13 cannot be un-done. Your Social Sign On from Facebook will be disabled and you will need to sign on using your Roblox password."
 	/// </summary>
-	public override string ResponseDialogBirthdayChangeSocialWarning => "生年月日を13歳未満に変更すると、取り消すことができません。Facebookからのソーシャルサインオンは無効になり、Robloxのパスワードでのサインオンが必要になります。";
+	public override string ResponseDialogBirthdayChangeSocialWarning => "ç”Ÿå¹´æœˆæ—¥ã‚’13æ­³æœªæº€ã«å¤‰æ›´ã™ã‚‹ã¨ã€å–ã‚Šæ¶ˆã™ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚Facebookã‹ã‚‰ã®ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒ³ã‚ªãƒ³ã¯ç„¡åŠ¹ã«ãªã‚Šã€Robloxã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ã®ã‚µã‚¤ãƒ³ã‚ªãƒ³ãŒå¿…è¦ã«ãªã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordIncorrectPassword"
 	/// Your current password is incorrect, the password was not changed.
 	/// English String: "Your current password is incorrect, the password was not changed."
 	/// </summary>
-	public override string ResponseDialogChangePasswordIncorrectPassword => "現在のパスワードが間違っています。パスワードは変更されませんでした。";
+	public override string ResponseDialogChangePasswordIncorrectPassword => "ç¾åœ¨ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordNoMatch"
 	/// English String: "Passwords do not match"
 	/// </summary>
-	public override string ResponseDialogChangePasswordNoMatch => "パスワードが一致しません";
+	public override string ResponseDialogChangePasswordNoMatch => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒä¸€è‡´ã—ã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangePasswordTooShortError"
 	/// English String: "Must be at least 8 characters long"
 	/// </summary>
-	public override string ResponseDialogChangePasswordTooShortError => "8文字以上である必要があります";
+	public override string ResponseDialogChangePasswordTooShortError => "8æ–‡å­—ä»¥ä¸Šã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameNoInput"
 	/// English String: "Please enter a username."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameNoInput => "ユーザーネームを入力して下さい。";
+	public override string ResponseDialogChangeUsernameNoInput => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameNotAllowed"
 	/// error message
 	/// English String: "Username not appropriate for Roblox."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameNotAllowed => "Robloxには適切でないユーザーネームです。";
+	public override string ResponseDialogChangeUsernameNotAllowed => "Robloxã«ã¯é©åˆ‡ã§ãªã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameNotAvailable"
 	/// English String: "This username is already in use."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameNotAvailable => "このユーザーネームはすでに使われています。";
+	public override string ResponseDialogChangeUsernameNotAvailable => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã¯ã™ã§ã«ä½¿ã‚ã‚Œã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ChangeUsernameSuccess"
 	/// success message
 	/// English String: "Successfully changed username."
 	/// </summary>
-	public override string ResponseDialogChangeUsernameSuccess => "ユーザーネームを変更しました。";
+	public override string ResponseDialogChangeUsernameSuccess => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.CountryListError"
 	/// English String: "Error loading country list"
 	/// </summary>
-	public override string ResponseDialogCountryListError => "国名リストの読み込み中にエラーが発生しました";
+	public override string ResponseDialogCountryListError => "å›½åãƒªã‚¹ãƒˆã®èª­ã¿è¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.CurrencyServiceError"
 	/// English String: "There was an error with the currency service. Try again later."
 	/// </summary>
-	public override string ResponseDialogCurrencyServiceError => "通貨サービスにエラーが発生しました。後でもう一度お試しください。";
+	public override string ResponseDialogCurrencyServiceError => "é€šè²¨ã‚µãƒ¼ãƒ“ã‚¹ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DefaultErrorMessage"
 	/// English String: "Something went wrong, please try again later."
 	/// </summary>
-	public override string ResponseDialogDefaultErrorMessage => "問題が発生しました。後でもう一度お試しください。";
+	public override string ResponseDialogDefaultErrorMessage => "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DefaultErrorTitle"
 	/// English String: "Error occured"
 	/// </summary>
-	public override string ResponseDialogDefaultErrorTitle => "エラーが発生しました";
+	public override string ResponseDialogDefaultErrorTitle => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DefaultSuccessMessage"
 	/// English String: "Saved Successfully!"
 	/// </summary>
-	public override string ResponseDialogDefaultSuccessMessage => "保存しました！";
+	public override string ResponseDialogDefaultSuccessMessage => "ä¿å­˜ã—ã¾ã—ãŸï¼";
 
 	/// <summary>
 	/// Key: "Response.Dialog.DisconnectXBoxError"
 	/// English String: "There was an error disconnecting your Xbox account, please try again later."
 	/// </summary>
-	public override string ResponseDialogDisconnectXBoxError => "Xboxアカウントの接続の切断中にエラーが発生しました。後でもう一度お試しください。";
+	public override string ResponseDialogDisconnectXBoxError => "Xboxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®æŽ¥ç¶šã®åˆ‡æ–­ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.EmailSentForVerification"
 	/// English String: "An email has been sent for verification."
 	/// </summary>
-	public override string ResponseDialogEmailSentForVerification => "認証用Eメールを送信しました。";
+	public override string ResponseDialogEmailSentForVerification => "èªè¨¼ç”¨Eãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidEmailAddress"
 	/// English String: "Invalid Email Address"
 	/// </summary>
-	public override string ResponseDialogInvalidEmailAddress => "メールアドレスが無効です";
+	public override string ResponseDialogInvalidEmailAddress => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒç„¡åŠ¹ã§ã™";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidPhoneNumber"
 	/// English String: "Invalid phone number"
 	/// </summary>
-	public override string ResponseDialogInvalidPhoneNumber => "無効な電話番号";
+	public override string ResponseDialogInvalidPhoneNumber => "ç„¡åŠ¹ãªé›»è©±ç•ªå·";
 
 	/// <summary>
 	/// Key: "Response.Dialog.InvalidUsername"
 	/// Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker.
 	/// English String: "Press Send to submit the ticket or press Cancel to edit the username.  The username is very important information and may help get your issue addressed quicker."
 	/// </summary>
-	public override string ResponseDialogInvalidUsername => "「送信」を押してチケットを送信するか、「キャンセル」を押してユーザーネームを編集してください。ユーザーネームはとても重要な情報であり、発生した問題を素早く解決するのに役立ちます。";
+	public override string ResponseDialogInvalidUsername => "ã€Œé€ä¿¡ã€ã‚’æŠ¼ã—ã¦ãƒã‚±ãƒƒãƒˆã‚’é€ä¿¡ã™ã‚‹ã‹ã€ã€Œã‚­ãƒ£ãƒ³ã‚»ãƒ«ã€ã‚’æŠ¼ã—ã¦ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’ç·¨é›†ã—ã¦ãã ã•ã„ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã¯ã¨ã¦ã‚‚é‡è¦ãªæƒ…å ±ã§ã‚ã‚Šã€ç™ºç”Ÿã—ãŸå•é¡Œã‚’ç´ æ—©ãè§£æ±ºã™ã‚‹ã®ã«å½¹ç«‹ã¡ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PasswordRulesError"
 	/// English String: "Password must contain at least 2 digits, 4 letters, 1 symbol, and be at least 8 characters."
 	/// </summary>
-	public override string ResponseDialogPasswordRulesError => "パスワードは8文字以上で 少なくとも2つの数字、4つの文字、1つの記号を含んでいなければなりません。";
+	public override string ResponseDialogPasswordRulesError => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯8æ–‡å­—ä»¥ä¸Šã§ å°‘ãªãã¨ã‚‚2ã¤ã®æ•°å­—ã€4ã¤ã®æ–‡å­—ã€1ã¤ã®è¨˜å·ã‚’å«ã‚“ã§ã„ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PinCreateConfirmation"
 	/// English String: "Your PIN is now set. You will need to enter this PIN before accessing the Settings page in the future."
 	/// </summary>
-	public override string ResponseDialogPinCreateConfirmation => "PINが設定されました。今後設定ページにアクセスするには、このPINを入力する必要があります。";
+	public override string ResponseDialogPinCreateConfirmation => "PINãŒè¨­å®šã•ã‚Œã¾ã—ãŸã€‚ä»Šå¾Œè¨­å®šãƒšãƒ¼ã‚¸ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã«ã¯ã€ã“ã®PINã‚’å…¥åŠ›ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.PinCreateMismatch"
 	/// English String: "PINs do not match"
 	/// </summary>
-	public override string ResponseDialogPinCreateMismatch => "PINが一致しません";
+	public override string ResponseDialogPinCreateMismatch => "PINãŒä¸€è‡´ã—ã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Response.Dialog.SignoutSessionFailed"
 	/// English String: "There was an error signing you out of all other sessions, please try again later."
 	/// </summary>
-	public override string ResponseDialogSignoutSessionFailed => "すべてのセッションからのサインアウト中にエラーが発生しました。後でもう一度お試しください。";
+	public override string ResponseDialogSignoutSessionFailed => "ã™ã¹ã¦ã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‹ã‚‰ã®ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.SignoutSessionsConfirmation"
 	/// English String: "You have been signed out of all other sessions."
 	/// </summary>
-	public override string ResponseDialogSignoutSessionsConfirmation => "すべてのセッションからサインアウトしました。";
+	public override string ResponseDialogSignoutSessionsConfirmation => "ã™ã¹ã¦ã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‹ã‚‰ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆã—ã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TwoStepDisableWarning"
 	/// English String: "If you turn off 2-Step Verification, only your password will be needed when you login from a new device. Are you sure?"
 	/// </summary>
-	public override string ResponseDialogTwoStepDisableWarning => "二段階認証をオフにすると、新しいデバイスからログインする際にパスワードのみが求められるようになります。よろしいですか？";
+	public override string ResponseDialogTwoStepDisableWarning => "äºŒæ®µéšŽèªè¨¼ã‚’ã‚ªãƒ•ã«ã™ã‚‹ã¨ã€æ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹éš›ã«ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ã¿ãŒæ±‚ã‚ã‚‰ã‚Œã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TwoStepSuccessTitle"
 	/// English String: "2 Step Verification Enabled"
 	/// </summary>
-	public override string ResponseDialogTwoStepSuccessTitle => "二段階認証が有効になっています";
+	public override string ResponseDialogTwoStepSuccessTitle => "äºŒæ®µéšŽèªè¨¼ãŒæœ‰åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 
 	/// <summary>
 	/// Key: "Response.Dialog.TwoStepSucessBody"
 	/// English String: "Your account is now protected! No further action is required at this time. A security code will be sent next time you login from a new device."
 	/// </summary>
-	public override string ResponseDialogTwoStepSucessBody => "アカウントの保護が完了しました！これで現在行う必要のある操作は完了です。今後新しいデバイスからログインする際に、セキュリティコードが送信されます。";
+	public override string ResponseDialogTwoStepSucessBody => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ä¿è­·ãŒå®Œäº†ã—ã¾ã—ãŸï¼ã“ã‚Œã§ç¾åœ¨è¡Œã†å¿…è¦ã®ã‚ã‚‹æ“ä½œã¯å®Œäº†ã§ã™ã€‚ä»Šå¾Œæ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹éš›ã«ã€ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ãŒé€ä¿¡ã•ã‚Œã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateInventorySetting"
 	/// English String: "We have updated your inventory privacy setting. The inventory and trade settings must be consistent."
 	/// </summary>
-	public override string ResponseDialogUpdateInventorySetting => "インベントリのプライバシー設定をアップデートしました。インベントリと取引設定に矛盾がないことが必要です。";
+	public override string ResponseDialogUpdateInventorySetting => "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®šã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸã€‚ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã¨å–å¼•è¨­å®šã«çŸ›ç›¾ãŒãªã„ã“ã¨ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateNotificationSettingsError"
 	/// English String: "There was an error updating your notification settings, please try again later."
 	/// </summary>
-	public override string ResponseDialogUpdateNotificationSettingsError => "通知設定のアップデート中にエラーが発生しました。後でもう一度お試しください。";
+	public override string ResponseDialogUpdateNotificationSettingsError => "é€šçŸ¥è¨­å®šã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.UpdateTradeSetting"
 	/// English String: "We have updated your trade privacy setting. The inventory and trade settings must be consistent."
 	/// </summary>
-	public override string ResponseDialogUpdateTradeSetting => "取引のプライバシー設定をアップデートしました。インベントリと取引設定に矛盾がないことが必要です。";
+	public override string ResponseDialogUpdateTradeSetting => "å–å¼•ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®šã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸã€‚ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã¨å–å¼•è¨­å®šã«çŸ›ç›¾ãŒãªã„ã“ã¨ãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.VerifyPhoneInvalidCode"
 	/// English String: "Code is invalid. Please check your phone and try again."
 	/// </summary>
-	public override string ResponseDialogVerifyPhoneInvalidCode => "コードが間違っています。電話番号をもう一度チェックしてからお試しください。";
+	public override string ResponseDialogVerifyPhoneInvalidCode => "ã‚³ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚é›»è©±ç•ªå·ã‚’ã‚‚ã†ä¸€åº¦ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.Dialog.Warning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string ResponseDialogWarning => "警告";
+	public override string ResponseDialogWarning => "è­¦å‘Š";
 
 	/// <summary>
 	/// Key: "Response.FeatureDisabled"
 	/// error message
 	/// English String: "This feature is currently disabled. Please try again later."
 	/// </summary>
-	public override string ResponseFeatureDisabled => "この機能は現在無効になっています。後でもう一度お試しください。";
+	public override string ResponseFeatureDisabled => "ã“ã®æ©Ÿèƒ½ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// error
 	/// English String: "An error occurred. Please try again."
 	/// </summary>
-	public override string ResponseGeneralError => "エラーが発生しました。もう一度お試しください。";
+	public override string ResponseGeneralError => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.IncorrectCodeTooManyTimes"
 	/// error message
 	/// English String: "You have entered the incorrect code too many times."
 	/// </summary>
-	public override string ResponseIncorrectCodeTooManyTimes => "間違ったコードが何度も繰り返し入力されました。";
+	public override string ResponseIncorrectCodeTooManyTimes => "é–“é•ã£ãŸã‚³ãƒ¼ãƒ‰ãŒä½•åº¦ã‚‚ç¹°ã‚Šè¿”ã—å…¥åŠ›ã•ã‚Œã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Response.IncorrectPasswordTryAgain"
 	/// error message
 	/// English String: "Incorrect password. Please check your password and try again."
 	/// </summary>
-	public override string ResponseIncorrectPasswordTryAgain => "パスワードが間違っています。パスワードをチェックしてからもう一度お試しください。";
+	public override string ResponseIncorrectPasswordTryAgain => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.InvalidPhoneTryAgain"
 	/// error message
 	/// English String: "Phone number format is invalid. Please check and try again."
 	/// </summary>
-	public override string ResponseInvalidPhoneTryAgain => "電話番号の形式が間違っています。もう一度チェックしてからお試しください。";
+	public override string ResponseInvalidPhoneTryAgain => "é›»è©±ç•ªå·ã®å½¢å¼ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ã‚‚ã†ä¸€åº¦ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.NotificationBar.PhoneRemovedConfirmation"
 	/// English String: "Phone has been removed"
 	/// </summary>
-	public override string ResponseNotificationBarPhoneRemovedConfirmation => "電話番号が削除されました";
+	public override string ResponseNotificationBarPhoneRemovedConfirmation => "é›»è©±ç•ªå·ãŒå‰Šé™¤ã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Response.NotificationBar.PhoneVerifyConfirmation"
 	/// English String: "Phone has been successfully updated!"
 	/// </summary>
-	public override string ResponseNotificationBarPhoneVerifyConfirmation => "電話番号がアップデートされました！";
+	public override string ResponseNotificationBarPhoneVerifyConfirmation => "é›»è©±ç•ªå·ãŒã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã•ã‚Œã¾ã—ãŸï¼";
 
 	/// <summary>
 	/// Key: "Response.NumberAlreadyAssociated"
 	/// error message
 	/// English String: "Number is already associated with another account."
 	/// </summary>
-	public override string ResponseNumberAlreadyAssociated => "すでに他のアカウントと関連付けられている番号です。";
+	public override string ResponseNumberAlreadyAssociated => "ã™ã§ã«ä»–ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¨é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¦ã„ã‚‹ç•ªå·ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Response.PinRequired"
 	/// error
 	/// English String: "Please enter your PIN to change your settings."
 	/// </summary>
-	public override string ResponsePinRequired => "設定を変更するにはPINを入力してください。";
+	public override string ResponsePinRequired => "è¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯PINã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.SocialMedia.ValidationError"
 	/// English String: "The social network link is not valid."
 	/// </summary>
-	public override string ResponseSocialMediaValidationError => "ソーシャルネットワークのリンクが無効です。";
+	public override string ResponseSocialMediaValidationError => "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ã®ãƒªãƒ³ã‚¯ãŒç„¡åŠ¹ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "ResponseAgeDownError"
 	/// English String: "Sorry but you cannot change your age to under 13.  If you are under 13, please create a new account and contact support to delete your old account."
 	/// </summary>
-	public override string ResponseAgeDownError => "申し訳ありませんが、生年月日を13歳未満には変更できません。あなたが13歳未満の場合は、新しいアカウントを作成してから、サポートに古いアカウントの削除を依頼してください。";
+	public override string ResponseAgeDownError => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ç”Ÿå¹´æœˆæ—¥ã‚’13æ­³æœªæº€ã«ã¯å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚ã‚ãªãŸãŒ13æ­³æœªæº€ã®å ´åˆã¯ã€æ–°ã—ã„ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œæˆã—ã¦ã‹ã‚‰ã€ã‚µãƒãƒ¼ãƒˆã«å¤ã„ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã‚’ä¾é ¼ã—ã¦ãã ã•ã„ã€‚";
 
 	public AccountSettingsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -2218,32 +2218,32 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionBillingHistoryLoadMore()
 	{
-		return "さらに読み込む";
+		return "ã•ã‚‰ã«èª­ã¿è¾¼ã‚€";
 	}
 
 	protected override string _GetTemplateForActionCancelRenewal()
 	{
-		return "更新をキャンセル";
+		return "æ›´æ–°ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionDialogAddEmail()
 	{
-		return "メールアドレスを追加";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForActionDialogAddPhone()
 	{
-		return "電話番号を追加";
+		return "é›»è©±ç•ªå·ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForActionDialogCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionDialogChangeEmail()
 	{
-		return "メールアドレスの変更";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForActionDialogChangeEmailConfirmation()
@@ -2253,7 +2253,7 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogChangePassword()
 	{
-		return "アップデート";
+		return "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForActionDialogChangePasswordConfirmation()
@@ -2263,37 +2263,37 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogChangeUsernameBuy()
 	{
-		return "買う";
+		return "è²·ã†";
 	}
 
 	protected override string _GetTemplateForActionDialogClose()
 	{
-		return "閉じる";
+		return "é–‰ã˜ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionDialogEditPhonePrimary()
 	{
-		return "電話番号の編集";
+		return "é›»è©±ç•ªå·ã®ç·¨é›†";
 	}
 
 	protected override string _GetTemplateForActionDialogEditPhoneSecondary()
 	{
-		return "電話番号を削除";
+		return "é›»è©±ç•ªå·ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForActionDialogInsufficientFundsBuy()
 	{
-		return "買う";
+		return "è²·ã†";
 	}
 
 	protected override string _GetTemplateForActionDialogNo()
 	{
-		return "いいえ";
+		return "ã„ã„ãˆ";
 	}
 
 	protected override string _GetTemplateForActionDialogPinCreate()
 	{
-		return "追加";
+		return "è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForActionDialogPinCreateOk()
@@ -2303,22 +2303,22 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogPinUnlock()
 	{
-		return "アンロック";
+		return "ã‚¢ãƒ³ãƒ­ãƒƒã‚¯";
 	}
 
 	protected override string _GetTemplateForActionDialogRemovePhonePrimary()
 	{
-		return "削除";
+		return "å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForActionDialogRemovePhoneSecondary()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionDialogSend()
 	{
-		return "送信";
+		return "é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForActionDialogSuccess()
@@ -2328,7 +2328,7 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogUpdate()
 	{
-		return "アップデート";
+		return "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyEmailOk()
@@ -2338,67 +2338,67 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionDialogVerifyEmailPrimary()
 	{
-		return "メールアドレスを認証";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyEmailRetry()
 	{
-		return "再試行";
+		return "å†è©¦è¡Œ";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyPhonePrimary()
 	{
-		return "認証";
+		return "èªè¨¼";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyPhoneResendLink()
 	{
-		return "コードを再送信";
+		return "ã‚³ãƒ¼ãƒ‰ã‚’å†é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForActionDialogVerifyPhoneSecondary()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionDialogYes()
 	{
-		return "はい";
+		return "ã¯ã„";
 	}
 
 	protected override string _GetTemplateForActionHide()
 	{
-		return "非表示";
+		return "éžè¡¨ç¤º";
 	}
 
 	protected override string _GetTemplateForActionJoin()
 	{
-		return "加入";
+		return "åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForActionJoinBuildersClub()
 	{
-		return "Builders Clubに加入";
+		return "Builders Clubã«åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "保存";
+		return "ä¿å­˜";
 	}
 
 	protected override string _GetTemplateForActionShow()
 	{
-		return "表示";
+		return "è¡¨ç¤º";
 	}
 
 	protected override string _GetTemplateForActionSignoutAllSessions()
 	{
-		return "サインアウト";
+		return "ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆ";
 	}
 
 	protected override string _GetTemplateForActionSocialDisconnect()
 	{
-		return "切断";
+		return "åˆ‡æ–­";
 	}
 
 	protected override string _GetTemplateForActionSuccessDialogButtonText()
@@ -2408,17 +2408,17 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForActionUnblock()
 	{
-		return "ブロックを解除";
+		return "ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤";
 	}
 
 	protected override string _GetTemplateForActionUpgradeMembership()
 	{
-		return "メンバーシップをアップグレード";
+		return "ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountControls()
 	{
-		return "このアカウントにアカウント制限を設定して、アカウント設定や不適切なコンテンツへのアクセスを制限することができます";
+		return "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™ã‚’è¨­å®šã—ã¦ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã‚„ä¸é©åˆ‡ãªã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’åˆ¶é™ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™";
 	}
 
 	/// <summary>
@@ -2428,12 +2428,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Robloxメールアドレスのリセット{escapeLiteralEnd}{fromEmailAddress}";
+		return $"{escapeLiteralStart}Robloxãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ãƒªã‚»ãƒƒãƒˆ{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailFrom()
 	{
-		return "{escapeLiteralStart}Robloxメールアドレスのリセット{escapeLiteralEnd}{fromEmailAddress}";
+		return "{escapeLiteralStart}Robloxãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ãƒªã‚»ãƒƒãƒˆ{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -2443,12 +2443,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailHtmlBody(string lineBreak, string username, string oldEmailAddress, string newEmailAddress, string aTagWithHref, string revertAccountEmailLinkWithTicket, string hrefEnd, string revertAccountEmailLink, string aTagEnd, string robloxInfoEmailAddress)
 	{
-		return $"Robloxユーザー様、{lineBreak}{lineBreak}{username}アカウントのメールアドレスが{oldEmailAddress}から{newEmailAddress}に変更されました。間違って変更してしまった場合や、お心当たりがない場合、こちらのリンク{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}をクリックして、元のメールアドレスに戻してください。また、新しいパスワードを入力する必要があります。そうすることで、アカウントを完全に安心してご利用いただくことができます。{lineBreak}{lineBreak}Robloxの新しいメールアドレスに問題がなければ、何もする必要はありません。新しいメールアドレスはすでに設定されています。{lineBreak}{lineBreak}このメッセージには返信しないでください。何かご質問があれば、{robloxInfoEmailAddress}にメールでお問い合わせください。";
+		return $"Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreak}{lineBreak}{username}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒ{oldEmailAddress}ã‹ã‚‰{newEmailAddress}ã«å¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚é–“é•ã£ã¦å¤‰æ›´ã—ã¦ã—ã¾ã£ãŸå ´åˆã‚„ã€ãŠå¿ƒå½“ãŸã‚ŠãŒãªã„å ´åˆã€ã“ã¡ã‚‰ã®ãƒªãƒ³ã‚¯{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€å…ƒã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«æˆ»ã—ã¦ãã ã•ã„ã€‚ã¾ãŸã€æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ãã†ã™ã‚‹ã“ã¨ã§ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å®Œå…¨ã«å®‰å¿ƒã—ã¦ã”åˆ©ç”¨ã„ãŸã ãã“ã¨ãŒã§ãã¾ã™ã€‚{lineBreak}{lineBreak}Robloxã®æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€ä½•ã‚‚ã™ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã™ã§ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚{lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚ä½•ã‹ã”è³ªå•ãŒã‚ã‚Œã°ã€{robloxInfoEmailAddress}ã«ãƒ¡ãƒ¼ãƒ«ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailHtmlBody()
 	{
-		return "Robloxユーザー様、{lineBreak}{lineBreak}{username}アカウントのメールアドレスが{oldEmailAddress}から{newEmailAddress}に変更されました。間違って変更してしまった場合や、お心当たりがない場合、こちらのリンク{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}をクリックして、元のメールアドレスに戻してください。また、新しいパスワードを入力する必要があります。そうすることで、アカウントを完全に安心してご利用いただくことができます。{lineBreak}{lineBreak}Robloxの新しいメールアドレスに問題がなければ、何もする必要はありません。新しいメールアドレスはすでに設定されています。{lineBreak}{lineBreak}このメッセージには返信しないでください。何かご質問があれば、{robloxInfoEmailAddress}にメールでお問い合わせください。";
+		return "Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreak}{lineBreak}{username}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒ{oldEmailAddress}ã‹ã‚‰{newEmailAddress}ã«å¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚é–“é•ã£ã¦å¤‰æ›´ã—ã¦ã—ã¾ã£ãŸå ´åˆã‚„ã€ãŠå¿ƒå½“ãŸã‚ŠãŒãªã„å ´åˆã€ã“ã¡ã‚‰ã®ãƒªãƒ³ã‚¯{lineBreak}{aTagWithHref}{revertAccountEmailLinkWithTicket}{hrefEnd}{revertAccountEmailLink}{aTagEnd}{lineBreak}ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€å…ƒã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«æˆ»ã—ã¦ãã ã•ã„ã€‚ã¾ãŸã€æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ãã†ã™ã‚‹ã“ã¨ã§ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å®Œå…¨ã«å®‰å¿ƒã—ã¦ã”åˆ©ç”¨ã„ãŸã ãã“ã¨ãŒã§ãã¾ã™ã€‚{lineBreak}{lineBreak}Robloxã®æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€ä½•ã‚‚ã™ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã™ã§ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚{lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚ä½•ã‹ã”è³ªå•ãŒã‚ã‚Œã°ã€{robloxInfoEmailAddress}ã«ãƒ¡ãƒ¼ãƒ«ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -2458,17 +2458,17 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountEmailRevertEmailPlainBody(string lineBreak, string username, string oldEmailAddress, string newEmailAddress, string revertAccountEmailLink, string robloxInfoEmailAddress)
 	{
-		return $"Robloxユーザー様、{lineBreak}{lineBreak}{username}アカウントのメールアドレスが{oldEmailAddress}から{newEmailAddress}に変更されました。間違って変更してしまった場合や、お心当たりがない場合、こちらのリンク{lineBreak}{revertAccountEmailLink}{lineBreak}をクリックして、元のメールアドレスに戻してください。また、新しいパスワードを入力する必要があります。そうすることで、アカウントを完全に安心してご利用いただくことができます。{lineBreak}{lineBreak}Robloxの新しいメールアドレスに問題がなければ、何もする必要はありません。新しいメールアドレスはすでに設定されています。{lineBreak}このメッセージには返信しないでください。何かご質問があれば、{robloxInfoEmailAddress}にメールでお問い合わせください。";
+		return $"Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreak}{lineBreak}{username}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒ{oldEmailAddress}ã‹ã‚‰{newEmailAddress}ã«å¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚é–“é•ã£ã¦å¤‰æ›´ã—ã¦ã—ã¾ã£ãŸå ´åˆã‚„ã€ãŠå¿ƒå½“ãŸã‚ŠãŒãªã„å ´åˆã€ã“ã¡ã‚‰ã®ãƒªãƒ³ã‚¯{lineBreak}{revertAccountEmailLink}{lineBreak}ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€å…ƒã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«æˆ»ã—ã¦ãã ã•ã„ã€‚ã¾ãŸã€æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ãã†ã™ã‚‹ã“ã¨ã§ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å®Œå…¨ã«å®‰å¿ƒã—ã¦ã”åˆ©ç”¨ã„ãŸã ãã“ã¨ãŒã§ãã¾ã™ã€‚{lineBreak}{lineBreak}Robloxã®æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€ä½•ã‚‚ã™ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã™ã§ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚{lineBreak}ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚ä½•ã‹ã”è³ªå•ãŒã‚ã‚Œã°ã€{robloxInfoEmailAddress}ã«ãƒ¡ãƒ¼ãƒ«ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailPlainBody()
 	{
-		return "Robloxユーザー様、{lineBreak}{lineBreak}{username}アカウントのメールアドレスが{oldEmailAddress}から{newEmailAddress}に変更されました。間違って変更してしまった場合や、お心当たりがない場合、こちらのリンク{lineBreak}{revertAccountEmailLink}{lineBreak}をクリックして、元のメールアドレスに戻してください。また、新しいパスワードを入力する必要があります。そうすることで、アカウントを完全に安心してご利用いただくことができます。{lineBreak}{lineBreak}Robloxの新しいメールアドレスに問題がなければ、何もする必要はありません。新しいメールアドレスはすでに設定されています。{lineBreak}このメッセージには返信しないでください。何かご質問があれば、{robloxInfoEmailAddress}にメールでお問い合わせください。";
+		return "Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreak}{lineBreak}{username}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒ{oldEmailAddress}ã‹ã‚‰{newEmailAddress}ã«å¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚é–“é•ã£ã¦å¤‰æ›´ã—ã¦ã—ã¾ã£ãŸå ´åˆã‚„ã€ãŠå¿ƒå½“ãŸã‚ŠãŒãªã„å ´åˆã€ã“ã¡ã‚‰ã®ãƒªãƒ³ã‚¯{lineBreak}{revertAccountEmailLink}{lineBreak}ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€å…ƒã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«æˆ»ã—ã¦ãã ã•ã„ã€‚ã¾ãŸã€æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ãã†ã™ã‚‹ã“ã¨ã§ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å®Œå…¨ã«å®‰å¿ƒã—ã¦ã”åˆ©ç”¨ã„ãŸã ãã“ã¨ãŒã§ãã¾ã™ã€‚{lineBreak}{lineBreak}Robloxã®æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«å•é¡ŒãŒãªã‘ã‚Œã°ã€ä½•ã‚‚ã™ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã™ã§ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚{lineBreak}ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚ä½•ã‹ã”è³ªå•ãŒã‚ã‚Œã°ã€{robloxInfoEmailAddress}ã«ãƒ¡ãƒ¼ãƒ«ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountEmailRevertEmailSubject()
 	{
-		return "Robloxメールアドレスのリセット";
+		return "Robloxãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ãƒªã‚»ãƒƒãƒˆ";
 	}
 
 	/// <summary>
@@ -2477,12 +2477,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionAccountRestrictionsEnabled(string linkStart, string linkEnd)
 	{
-		return $"このアカウントは、プラットフォームで精選したコンテンツにのみアクセスできます。さらに連絡先設定（{linkStart}プライバシー{linkEnd}ページ内）はオフに設定されます。";
+		return $"ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ã€ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ç²¾é¸ã—ãŸã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«ã®ã¿ã‚¢ã‚¯ã‚»ã‚¹ã§ãã¾ã™ã€‚ã•ã‚‰ã«é€£çµ¡å…ˆè¨­å®šï¼ˆ{linkStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{linkEnd}ãƒšãƒ¼ã‚¸å†…ï¼‰ã¯ã‚ªãƒ•ã«è¨­å®šã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountRestrictionsEnabled()
 	{
-		return "このアカウントは、プラットフォームで精選したコンテンツにのみアクセスできます。さらに連絡先設定（{linkStart}プライバシー{linkEnd}ページ内）はオフに設定されます。";
+		return "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ã€ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ç²¾é¸ã—ãŸã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã«ã®ã¿ã‚¢ã‚¯ã‚»ã‚¹ã§ãã¾ã™ã€‚ã•ã‚‰ã«é€£çµ¡å…ˆè¨­å®šï¼ˆ{linkStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{linkEnd}ãƒšãƒ¼ã‚¸å†…ï¼‰ã¯ã‚ªãƒ•ã«è¨­å®šã•ã‚Œã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -2491,12 +2491,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionBlockedLimitMessage(string totalBlockedCount, string maxBlockedCount)
 	{
-		return $"最大{maxBlockedCount}人中{totalBlockedCount}人のユーザーをブロックしています:";
+		return $"æœ€å¤§{maxBlockedCount}äººä¸­{totalBlockedCount}äººã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã—ã¦ã„ã¾ã™:";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockedLimitMessage()
 	{
-		return "最大{maxBlockedCount}人中{totalBlockedCount}人のユーザーをブロックしています:";
+		return "æœ€å¤§{maxBlockedCount}äººä¸­{totalBlockedCount}äººã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã—ã¦ã„ã¾ã™:";
 	}
 
 	/// <summary>
@@ -2505,62 +2505,62 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionContactSetting(string linkStart, string linkEnd)
 	{
-		return $"アカウント制限（{linkStart}セキュリティ{linkEnd}ページ内）が有効のため連絡先設定はロックされています";
+		return $"ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™ï¼ˆ{linkStart}ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£{linkEnd}ãƒšãƒ¼ã‚¸å†…ï¼‰ãŒæœ‰åŠ¹ã®ãŸã‚é€£çµ¡å…ˆè¨­å®šã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForDescriptionContactSetting()
 	{
-		return "アカウント制限（{linkStart}セキュリティ{linkEnd}ページ内）が有効のため連絡先設定はロックされています";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™ï¼ˆ{linkStart}ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£{linkEnd}ãƒšãƒ¼ã‚¸å†…ï¼‰ãŒæœ‰åŠ¹ã®ãŸã‚é€£çµ¡å…ˆè¨­å®šã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForDescriptionDesktopPush1()
 	{
-		return "Robloxを閉じた後でも、このパソコンで通知が見れます。";
+		return "Robloxã‚’é–‰ã˜ãŸå¾Œã§ã‚‚ã€ã“ã®ãƒ‘ã‚½ã‚³ãƒ³ã§é€šçŸ¥ãŒè¦‹ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDesktopPush2()
 	{
-		return "通知を見るには、ブラウザのプッシュ通知を有効にするよう求められる場合があります。";
+		return "é€šçŸ¥ã‚’è¦‹ã‚‹ã«ã¯ã€ãƒ–ãƒ©ã‚¦ã‚¶ã®ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã‚’æœ‰åŠ¹ã«ã™ã‚‹ã‚ˆã†æ±‚ã‚ã‚‰ã‚Œã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDesktopPush3()
 	{
-		return "このデバイスのデスクトップ通知。";
+		return "ã“ã®ãƒ‡ãƒã‚¤ã‚¹ã®ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—é€šçŸ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogAddPhone()
 	{
-		return "国コードを確認して、電話番号を入力してください。認証完了用のテキストメッセージが送信されます。（ご注意: 通信料がかかる場合があります）";
+		return "å›½ã‚³ãƒ¼ãƒ‰ã‚’ç¢ºèªã—ã¦ã€é›»è©±ç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚èªè¨¼å®Œäº†ç”¨ã®ãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒé€ä¿¡ã•ã‚Œã¾ã™ã€‚ï¼ˆã”æ³¨æ„: é€šä¿¡æ–™ãŒã‹ã‹ã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ï¼‰";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeEmailConfirmation()
 	{
-		return "認証用メールを送信しました";
+		return "èªè¨¼ç”¨ãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeEmailWarning()
 	{
-		return "新しいメールアドレスの認証が完了するまでは、アカウントのメールアドレスは変更されません。";
+		return "æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå®Œäº†ã™ã‚‹ã¾ã§ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangePasswordConfirmation()
 	{
-		return "パスワードが変更されました。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒå¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameDisclaimer()
 	{
-		return "重要: アカウントの最初の作成日とフォーラムへの投稿数は、新しいユーザーネームに引き継がれます。";
+		return "é‡è¦: ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®æœ€åˆã®ä½œæˆæ—¥ã¨ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã¸ã®æŠ•ç¨¿æ•°ã¯ã€æ–°ã—ã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã«å¼•ãç¶™ãŒã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameForFree()
 	{
-		return "ユーザーネームを1度だけ無料で変更できます。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’1åº¦ã ã‘ç„¡æ–™ã§å¤‰æ›´ã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameHistory()
 	{
-		return "以前のフォーラムへの投稿は、以前のユーザーネームで表示され、新しいユーザーネームには引き継がれません。";
+		return "ä»¥å‰ã®ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã¸ã®æŠ•ç¨¿ã¯ã€ä»¥å‰ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§è¡¨ç¤ºã•ã‚Œã€æ–°ã—ã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã«ã¯å¼•ãç¶™ãŒã‚Œã¾ã›ã‚“ã€‚";
 	}
 
 	/// <summary>
@@ -2569,42 +2569,42 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogChangeUsernamePageText(string robuxIcon, string price)
 	{
-		return $"{robuxIcon} {price} でユーザーネームを変更しますか？";
+		return $"{robuxIcon} {price} ã§ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernamePageText()
 	{
-		return "{robuxIcon} {price} でユーザーネームを変更しますか？";
+		return "{robuxIcon} {price} ã§ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogChangeUsernameTitle()
 	{
-		return "ユーザーネームの変更";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEditPhoneWarning()
 	{
-		return "新しい電話番号の認証が完了するまでは、電話番号は変更されません。";
+		return "æ–°ã—ã„é›»è©±ç•ªå·ã®èªè¨¼ãŒå®Œäº†ã™ã‚‹ã¾ã§ã¯ã€é›»è©±ç•ªå·ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEmailProvideAndVerifyWarning()
 	{
-		return "ユーザーネームを変更する前に、メールアドレスの登録と認証が必要です。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ç™»éŒ²ã¨èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEmailVerificationSent()
 	{
-		return "登録ありがとうございます！認証用メールを送信しました。";
+		return "ç™»éŒ²ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ï¼èªè¨¼ç”¨ãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogEmailVerifyWarning()
 	{
-		return "ユーザーネームを変更する前に、メールアドレスの認証が必要です。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogFacebookDisconnectWarning()
 	{
-		return "Facebookとの接続を解除する前に、パスワードを追加してアカウントを保護してください。";
+		return "Facebookã¨ã®æŽ¥ç¶šã‚’è§£é™¤ã™ã‚‹å‰ã«ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä¿è­·ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -2613,32 +2613,32 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogInsufficientFundsWarning(string robuxToBuy)
 	{
-		return $"ユーザーネームの変更には、あと {robuxToBuy} 必要です。Robuxを追加購入しますか？";
+		return $"ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´ã«ã¯ã€ã‚ã¨ {robuxToBuy} å¿…è¦ã§ã™ã€‚Robuxã‚’è¿½åŠ è³¼å…¥ã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogInsufficientFundsWarning()
 	{
-		return "ユーザーネームの変更には、あと {robuxToBuy} 必要です。Robuxを追加購入しますか？";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´ã«ã¯ã€ã‚ã¨ {robuxToBuy} å¿…è¦ã§ã™ã€‚Robuxã‚’è¿½åŠ è³¼å…¥ã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailAccountPin()
 	{
-		return "アカウントPINを追加する前に、メールアドレスの登録と認証が必要です。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã‚’è¿½åŠ ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ç™»éŒ²ã¨èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailTwoStepVerification()
 	{
-		return "二段階認証を有効にする前に、メールアドレスの登録と認証が必要です。";
+		return "äºŒæ®µéšŽèªè¨¼ã‚’æœ‰åŠ¹ã«ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ç™»éŒ²ã¨èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogMissingEmailUsername()
 	{
-		return "ユーザーネームを変更する前に、メールアドレスの登録と認証が必要です。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ç™»éŒ²ã¨èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogPinUnlock()
 	{
-		return "アカウントに設定されているアカウントPINを入力してください";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«è¨­å®šã•ã‚Œã¦ã„ã‚‹ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 	}
 
 	/// <summary>
@@ -2647,117 +2647,117 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionDialogRemovePhoneWarning(string phoneLast4)
 	{
-		return $"末尾が {phoneLast4} の電話番号を削除してよろしいですか？";
+		return $"æœ«å°¾ãŒ {phoneLast4} ã®é›»è©±ç•ªå·ã‚’å‰Šé™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogRemovePhoneWarning()
 	{
-		return "末尾が {phoneLast4} の電話番号を削除してよろしいですか？";
+		return "æœ«å°¾ãŒ {phoneLast4} ã®é›»è©±ç•ªå·ã‚’å‰Šé™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailAccountPin()
 	{
-		return "アカウントPINを追加する前に、メールアドレスの認証が必要です。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã‚’è¿½åŠ ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailTwoStepVerification()
 	{
-		return "二段階認証を有効にする前に、メールアドレスの認証が必要です。";
+		return "äºŒæ®µéšŽèªè¨¼ã‚’æœ‰åŠ¹ã«ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogUnverifiedEmailUsername()
 	{
-		return "ユーザーネームを変更する前に、メールアドレスの認証が必要です。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionFastTrack()
 	{
-		return "あなたは、規約違反を報告するファストトラック報告プログラムに参加しています。規約違反のご報告は現在、簡易レビュー中です。これからも規約違反の報告をして、プログラムへのご協力をお願いします。Robloxでの体験をポジティブなものにするためにご協力ありがとうございます。";
+		return "ã‚ãªãŸã¯ã€è¦ç´„é•åã‚’å ±å‘Šã™ã‚‹ãƒ•ã‚¡ã‚¹ãƒˆãƒˆãƒ©ãƒƒã‚¯å ±å‘Šãƒ—ãƒ­ã‚°ãƒ©ãƒ ã«å‚åŠ ã—ã¦ã„ã¾ã™ã€‚è¦ç´„é•åã®ã”å ±å‘Šã¯ç¾åœ¨ã€ç°¡æ˜“ãƒ¬ãƒ“ãƒ¥ãƒ¼ä¸­ã§ã™ã€‚ã“ã‚Œã‹ã‚‰ã‚‚è¦ç´„é•åã®å ±å‘Šã‚’ã—ã¦ã€ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¸ã®ã”å”åŠ›ã‚’ãŠé¡˜ã„ã—ã¾ã™ã€‚Robloxã§ã®ä½“é¨“ã‚’ãƒã‚¸ãƒ†ã‚£ãƒ–ãªã‚‚ã®ã«ã™ã‚‹ãŸã‚ã«ã”å”åŠ›ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionFastTrackStatistics()
 	{
-		return "統計";
+		return "çµ±è¨ˆ";
 	}
 
 	protected override string _GetTemplateForDescriptionHelpTextDescription()
 	{
-		return "Roblox以外の場所であなたを特定できるような情報を提供しないようご注意ください。";
+		return "Robloxä»¥å¤–ã®å ´æ‰€ã§ã‚ãªãŸã‚’ç‰¹å®šã§ãã‚‹ã‚ˆã†ãªæƒ…å ±ã‚’æä¾›ã—ãªã„ã‚ˆã†ã”æ³¨æ„ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionHelpTextFastTrackAccuracy()
 	{
-		return "信用度とは、規約違反の報告がモデレータにどれくらい採用されたかを表しています。報告をいくつか送信した後、あなたのスコアが表示されます。「全員」は、ファストトラックの全メンバーをグループとして表しています。";
+		return "ä¿¡ç”¨åº¦ã¨ã¯ã€è¦ç´„é•åã®å ±å‘ŠãŒãƒ¢ãƒ‡ãƒ¬ãƒ¼ã‚¿ã«ã©ã‚Œãã‚‰ã„æŽ¡ç”¨ã•ã‚ŒãŸã‹ã‚’è¡¨ã—ã¦ã„ã¾ã™ã€‚å ±å‘Šã‚’ã„ãã¤ã‹é€ä¿¡ã—ãŸå¾Œã€ã‚ãªãŸã®ã‚¹ã‚³ã‚¢ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ã€Œå…¨å“¡ã€ã¯ã€ãƒ•ã‚¡ã‚¹ãƒˆãƒˆãƒ©ãƒƒã‚¯ã®å…¨ãƒ¡ãƒ³ãƒãƒ¼ã‚’ã‚°ãƒ«ãƒ¼ãƒ—ã¨ã—ã¦è¡¨ã—ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionHelpTextPrivacyMode()
 	{
-		return "年齢を13歳未満に更新すると、プライバシーモードが有効になります。";
+		return "å¹´é½¢ã‚’13æ­³æœªæº€ã«æ›´æ–°ã™ã‚‹ã¨ã€ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒ¢ãƒ¼ãƒ‰ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextChangePassword()
 	{
-		return "パスワードの変更";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextChangeUsername()
 	{
-		return "ユーザーネームの変更";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForDescriptionHoverTextUpdateEmail()
 	{
-		return "メールアドレスのアップデート";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForDescriptionMembershipHelp()
 	{
-		return "ご請求とお支払いについてのお問い合わせ: info@roblox.com";
+		return "ã”è«‹æ±‚ã¨ãŠæ”¯æ‰•ã„ã«ã¤ã„ã¦ã®ãŠå•ã„åˆã‚ã›: info@roblox.com";
 	}
 
 	protected override string _GetTemplateForDescriptionMembershipStatus()
 	{
-		return "あなたは、まだメンバーではありません。今すぐBuilders Clubに加入してください！";
+		return "ã‚ãªãŸã¯ã€ã¾ã ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»Šã™ãBuilders Clubã«åŠ å…¥ã—ã¦ãã ã•ã„ï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionMembershipStatusRobloxPremium()
 	{
-		return "あなたは、まだメンバーではありません。今すぐRoblox Premiumに加入してください！";
+		return "ã‚ãªãŸã¯ã€ã¾ã ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»Šã™ãRoblox Premiumã«åŠ å…¥ã—ã¦ãã ã•ã„ï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionMobilePush1()
 	{
-		return "デバイスのホーム画面に通知を見てください。Robloxのアプリから、オンオフの設定を行うことができます。";
+		return "ãƒ‡ãƒã‚¤ã‚¹ã®ãƒ›ãƒ¼ãƒ ç”»é¢ã«é€šçŸ¥ã‚’è¦‹ã¦ãã ã•ã„ã€‚Robloxã®ã‚¢ãƒ—ãƒªã‹ã‚‰ã€ã‚ªãƒ³ã‚ªãƒ•ã®è¨­å®šã‚’è¡Œã†ã“ã¨ãŒã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionMobilePush2()
 	{
-		return "このデバイスのモバイル用プッシュ通知。";
+		return "ã“ã®ãƒ‡ãƒã‚¤ã‚¹ã®ãƒ¢ãƒã‚¤ãƒ«ç”¨ãƒ—ãƒƒã‚·ãƒ¥é€šçŸ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionNotificationStream1()
 	{
-		return "マイストリームに通知で通知を見てください。通知を表示するには、上のバーの通知アイコンをクリックします。";
+		return "ãƒžã‚¤ã‚¹ãƒˆãƒªãƒ¼ãƒ ã«é€šçŸ¥ã§é€šçŸ¥ã‚’è¦‹ã¦ãã ã•ã„ã€‚é€šçŸ¥ã‚’è¡¨ç¤ºã™ã‚‹ã«ã¯ã€ä¸Šã®ãƒãƒ¼ã®é€šçŸ¥ã‚¢ã‚¤ã‚³ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionNotificationStream2()
 	{
-		return "通知タイプをオフにすると、そのタイプの新しい通知は届かなくなります。";
+		return "é€šçŸ¥ã‚¿ã‚¤ãƒ—ã‚’ã‚ªãƒ•ã«ã™ã‚‹ã¨ã€ãã®ã‚¿ã‚¤ãƒ—ã®æ–°ã—ã„é€šçŸ¥ã¯å±Šã‹ãªããªã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionRenevalFromWebsiteOnly()
 	{
-		return "ご注意: メンバーシップの更新をキャンセルするには、ウェブサイトからログインしてください。";
+		return "ã”æ³¨æ„: ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã®æ›´æ–°ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã«ã¯ã€ã‚¦ã‚§ãƒ–ã‚µã‚¤ãƒˆã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSuccessDialogMessage()
 	{
-		return "保存しました！";
+		return "ä¿å­˜ã—ã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationSecondary()
 	{
-		return "認証済みメールアドレスが必要です";
+		return "èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™";
 	}
 
 	/// <summary>
@@ -2766,12 +2766,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionTwoStepverificationSecondaryEnabled(string email)
 	{
-		return $"新しいデバイスからログインしたときに、{email}にコードが送信されます。";
+		return $"æ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã—ãŸã¨ãã«ã€{email}ã«ã‚³ãƒ¼ãƒ‰ãŒé€ä¿¡ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepverificationSecondaryEnabled()
 	{
-		return "新しいデバイスからログインしたときに、{email}にコードが送信されます。";
+		return "æ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã—ãŸã¨ãã«ã€{email}ã«ã‚³ãƒ¼ãƒ‰ãŒé€ä¿¡ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -2781,12 +2781,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionUsernameChangeEmailBody(string lineBreaks, string oldUsername, string newUsername, string robloxInfoEmailAddress)
 	{
-		return $"Robloxユーザー様、{lineBreaks}あなたのユーザーネームが最近{oldUsername}から{newUsername}に変更されました。お心当たりがない場合は、{robloxInfoEmailAddress}にメールにてご連絡ください。";
+		return $"Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreaks}ã‚ãªãŸã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒæœ€è¿‘{oldUsername}ã‹ã‚‰{newUsername}ã«å¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚ãŠå¿ƒå½“ãŸã‚ŠãŒãªã„å ´åˆã¯ã€{robloxInfoEmailAddress}ã«ãƒ¡ãƒ¼ãƒ«ã«ã¦ã”é€£çµ¡ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailBody()
 	{
-		return "Robloxユーザー様、{lineBreaks}あなたのユーザーネームが最近{oldUsername}から{newUsername}に変更されました。お心当たりがない場合は、{robloxInfoEmailAddress}にメールにてご連絡ください。";
+		return "Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreaks}ã‚ãªãŸã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ãŒæœ€è¿‘{oldUsername}ã‹ã‚‰{newUsername}ã«å¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚ãŠå¿ƒå½“ãŸã‚ŠãŒãªã„å ´åˆã¯ã€{robloxInfoEmailAddress}ã«ãƒ¡ãƒ¼ãƒ«ã«ã¦ã”é€£çµ¡ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -2796,17 +2796,17 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionUsernameChangeEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Robloxユーザーネームの変更{escapeLiteralEnd}{fromEmailAddress}";
+		return $"{escapeLiteralStart}Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailFrom()
 	{
-		return "{escapeLiteralStart}Robloxユーザーネームの変更{escapeLiteralEnd}{fromEmailAddress}";
+		return "{escapeLiteralStart}Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionUsernameChangeEmailSubject()
 	{
-		return "Robloxユーザーネームの変更";
+		return "Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 	}
 
 	/// <summary>
@@ -2816,12 +2816,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailFromOver13(string escapeLiteratStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteratStart}Robloxメールアドレスの認証{escapeLiteralEnd}{fromEmailAddress}";
+		return $"{escapeLiteratStart}Robloxãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailFromOver13()
 	{
-		return "{escapeLiteratStart}Robloxメールアドレスの認証{escapeLiteralEnd}{fromEmailAddress}";
+		return "{escapeLiteratStart}Robloxãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -2831,12 +2831,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailFromUnder13(string escapeLiteratStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteratStart}Robloxアカウントの認証{escapeLiteralEnd}{fromEmailAddress}";
+		return $"{escapeLiteratStart}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®èªè¨¼{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailFromUnder13()
 	{
-		return "{escapeLiteratStart}Robloxアカウントの認証{escapeLiteralEnd}{fromEmailAddress}";
+		return "{escapeLiteratStart}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®èªè¨¼{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -2846,42 +2846,42 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyOver13(string lineBreak, string username, string aTagStartWithHref, string verificationLink, string targetBlank, string buttonStart, string buttonEnd, string aTagEnd)
 	{
-		return $"Robloxユーザー様、{lineBreak}{lineBreak}メールアドレスによる{username}のアカウント保護にご協力ありがとうございます。{lineBreak}Robloxアカウントに関連付けされたメールアドレスを認証することにより、アカウントのセキュリティを向上できます。{lineBreak}下のボタンをクリックして認証処理を完了してください。{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}メールアドレスの認証{buttonEnd}{aTagEnd}";
+		return $"Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreak}{lineBreak}ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«ã‚ˆã‚‹{username}ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆä¿è­·ã«ã”å”åŠ›ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚{lineBreak}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«é–¢é€£ä»˜ã‘ã•ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼ã™ã‚‹ã“ã¨ã«ã‚ˆã‚Šã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’å‘ä¸Šã§ãã¾ã™ã€‚{lineBreak}ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦èªè¨¼å‡¦ç†ã‚’å®Œäº†ã—ã¦ãã ã•ã„ã€‚{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼{buttonEnd}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyOver13()
 	{
-		return "Robloxユーザー様、{lineBreak}{lineBreak}メールアドレスによる{username}のアカウント保護にご協力ありがとうございます。{lineBreak}Robloxアカウントに関連付けされたメールアドレスを認証することにより、アカウントのセキュリティを向上できます。{lineBreak}下のボタンをクリックして認証処理を完了してください。{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}メールアドレスの認証{buttonEnd}{aTagEnd}";
+		return "Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreak}{lineBreak}ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«ã‚ˆã‚‹{username}ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆä¿è­·ã«ã”å”åŠ›ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚{lineBreak}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«é–¢é€£ä»˜ã‘ã•ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼ã™ã‚‹ã“ã¨ã«ã‚ˆã‚Šã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’å‘ä¸Šã§ãã¾ã™ã€‚{lineBreak}ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦èªè¨¼å‡¦ç†ã‚’å®Œäº†ã—ã¦ãã ã•ã„ã€‚{lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{targetBlank}{buttonStart}ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼{buttonEnd}{aTagEnd}";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.HtmlBody.Under13"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account
-	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {boldTagStart}{username}{boldTagEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called “Roblox Studio” that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what it’s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parent’s email address. The parent’s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the child’s account access. To verify your email address, please click the button below: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}Verify Email{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}About Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox also offers {boldTagStart}parental controls{boldTagEnd}. Parents can enable a parent PIN and change their child’s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
+	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {boldTagStart}{username}{boldTagEnd} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called â€œRoblox Studioâ€ that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what itâ€™s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parentâ€™s email address. The parentâ€™s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the childâ€™s account access. To verify your email address, please click the button below: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}Verify Email{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}About Roblox{boldTagEnd}{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parentâ€™s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Roblox also offers {boldTagStart}parental controls{boldTagEnd}. Parents can enable a parent PIN and change their childâ€™s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyUnder13(string lineBreak, string boldTagStart, string username, string boldTagEnd, string aTagStartWithHref, string verificationLink, string hrefEnd, string buttonStart, string buttonEnd, string aTagEnd, string parentalPageLink, string accountSecurityLink, string accountPrivacyLink, string supportPageLink, string privacyPageLink, string robloxWebsiteLink)
 	{
-		return $"{lineBreak}{lineBreak}あなたのお子様がRobloxで{boldTagStart}{username}{boldTagEnd}のアカウントを作りました。Robloxは、ユーザーが作成した3Dの世界に入り込んで、イマジネーションを膨らませたり、ゲーム制作をしたり、一緒にプレイしたりできるオンラインのエンターテイメントプラットフォームです。このプラットフォームは、「Roblox Studio」という無料のゲーム開発ツールも提供しています。このツールは、簡単なドラッグアンドドロップによる作成体験から、複雑なマルチプレイヤーゲームまで、ユーザーが想像するものを何でも作り出すことができます。数百万人の子供たちがRobloxを使用して、究極のテーマパークのようなものを作ることを想像したり、プロのカーレースドライバーになって競争したり、ファッションショーに出演したり、夢のお家を作って友達と楽しい時間を過ごしたりしています。{lineBreak}{lineBreak}このメールは、お子様がユーザー名、生年月日、保護者の方のメールアドレスを登録されたことをお知らせするものです。保護者のメールアドレスは、アカウント管理、パスワードを忘れた場合のパスワードのリセット、お子様のアカウントへのアクセスを保護者の方にお知らせする目的にのみ使用します。このメールアドレスを認証するには、以下のボタンをクリックしてください: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}メールアドレスの認証{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Robloxについて{boldTagEnd}{lineBreak}{lineBreak}Robloxは、楽しくファミリーフレンドリーな環境を作り上げるため努力を続けています。セイフティ機能の改善に常に取り組んでいます。デジタルセイフティの専門家とともに、すべてのプレイヤーが安全で快適にプレイしたり、チャットしたり、制作プロジェクトでコラボレーションを行うことのできる場所を提供するために日々努力を続けています。保護者の方へのご案内をお読みいただき、Robloxでお子様が楽しい体験をしていただけるよう、このプラットフォームへのご理解をお願い申し上げます: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Robloxでは{boldTagStart}保護者による制限{boldTagEnd}もご用意しております。保護者のPINを有効にして、お子様の通信やチャットの設定を変更することができます。この制限については、お子様のアカウントでログインいただき、アカウント設定のセキュリティとプライバシータブでご確認ください。{lineBreak}{lineBreak}保護者のPINを追加するには: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}チャット設定を変更するには: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}プライバシー{boldTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}のカスターマーサービスにご連絡いただくことで、お子様のアカウントを削除することができます。お客様のメールアドレスを、上記以外の目的に使用したり、第三者に開示したり、お子様からご提供いただいた他の個人情報と関連付けることはありません。詳細については{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}のプライバシーポリシーをご確認ください。{lineBreak}{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム{lineBreak}{lineBreak}このメールには返信しないでください。{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return $"{lineBreak}{lineBreak}ã‚ãªãŸã®ãŠå­æ§˜ãŒRobloxã§{boldTagStart}{username}{boldTagEnd}ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚Šã¾ã—ãŸã€‚Robloxã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒä½œæˆã—ãŸ3Dã®ä¸–ç•Œã«å…¥ã‚Šè¾¼ã‚“ã§ã€ã‚¤ãƒžã‚¸ãƒãƒ¼ã‚·ãƒ§ãƒ³ã‚’è†¨ã‚‰ã¾ã›ãŸã‚Šã€ã‚²ãƒ¼ãƒ åˆ¶ä½œã‚’ã—ãŸã‚Šã€ä¸€ç·’ã«ãƒ—ãƒ¬ã‚¤ã—ãŸã‚Šã§ãã‚‹ã‚ªãƒ³ãƒ©ã‚¤ãƒ³ã®ã‚¨ãƒ³ã‚¿ãƒ¼ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ã™ã€‚ã“ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã¯ã€ã€ŒRoblox Studioã€ã¨ã„ã†ç„¡æ–™ã®ã‚²ãƒ¼ãƒ é–‹ç™ºãƒ„ãƒ¼ãƒ«ã‚‚æä¾›ã—ã¦ã„ã¾ã™ã€‚ã“ã®ãƒ„ãƒ¼ãƒ«ã¯ã€ç°¡å˜ãªãƒ‰ãƒ©ãƒƒã‚°ã‚¢ãƒ³ãƒ‰ãƒ‰ãƒ­ãƒƒãƒ—ã«ã‚ˆã‚‹ä½œæˆä½“é¨“ã‹ã‚‰ã€è¤‡é›‘ãªãƒžãƒ«ãƒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚²ãƒ¼ãƒ ã¾ã§ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒæƒ³åƒã™ã‚‹ã‚‚ã®ã‚’ä½•ã§ã‚‚ä½œã‚Šå‡ºã™ã“ã¨ãŒã§ãã¾ã™ã€‚æ•°ç™¾ä¸‡äººã®å­ä¾›ãŸã¡ãŒRobloxã‚’ä½¿ç”¨ã—ã¦ã€ç©¶æ¥µã®ãƒ†ãƒ¼ãƒžãƒ‘ãƒ¼ã‚¯ã®ã‚ˆã†ãªã‚‚ã®ã‚’ä½œã‚‹ã“ã¨ã‚’æƒ³åƒã—ãŸã‚Šã€ãƒ—ãƒ­ã®ã‚«ãƒ¼ãƒ¬ãƒ¼ã‚¹ãƒ‰ãƒ©ã‚¤ãƒãƒ¼ã«ãªã£ã¦ç«¶äº‰ã—ãŸã‚Šã€ãƒ•ã‚¡ãƒƒã‚·ãƒ§ãƒ³ã‚·ãƒ§ãƒ¼ã«å‡ºæ¼”ã—ãŸã‚Šã€å¤¢ã®ãŠå®¶ã‚’ä½œã£ã¦å‹é”ã¨æ¥½ã—ã„æ™‚é–“ã‚’éŽã”ã—ãŸã‚Šã—ã¦ã„ã¾ã™ã€‚{lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã¯ã€ãŠå­æ§˜ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼åã€ç”Ÿå¹´æœˆæ—¥ã€ä¿è­·è€…ã®æ–¹ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ç™»éŒ²ã•ã‚ŒãŸã“ã¨ã‚’ãŠçŸ¥ã‚‰ã›ã™ã‚‹ã‚‚ã®ã§ã™ã€‚ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆç®¡ç†ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¿˜ã‚ŒãŸå ´åˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’ä¿è­·è€…ã®æ–¹ã«ãŠçŸ¥ã‚‰ã›ã™ã‚‹ç›®çš„ã«ã®ã¿ä½¿ç”¨ã—ã¾ã™ã€‚ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼ã™ã‚‹ã«ã¯ã€ä»¥ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Robloxã«ã¤ã„ã¦{boldTagEnd}{lineBreak}{lineBreak}Robloxã¯ã€æ¥½ã—ããƒ•ã‚¡ãƒŸãƒªãƒ¼ãƒ•ãƒ¬ãƒ³ãƒ‰ãƒªãƒ¼ãªç’°å¢ƒã‚’ä½œã‚Šä¸Šã’ã‚‹ãŸã‚åŠªåŠ›ã‚’ç¶šã‘ã¦ã„ã¾ã™ã€‚ã‚»ã‚¤ãƒ•ãƒ†ã‚£æ©Ÿèƒ½ã®æ”¹å–„ã«å¸¸ã«å–ã‚Šçµ„ã‚“ã§ã„ã¾ã™ã€‚ãƒ‡ã‚¸ã‚¿ãƒ«ã‚»ã‚¤ãƒ•ãƒ†ã‚£ã®å°‚é–€å®¶ã¨ã¨ã‚‚ã«ã€ã™ã¹ã¦ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå®‰å…¨ã§å¿«é©ã«ãƒ—ãƒ¬ã‚¤ã—ãŸã‚Šã€ãƒãƒ£ãƒƒãƒˆã—ãŸã‚Šã€åˆ¶ä½œãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã§ã‚³ãƒ©ãƒœãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚’è¡Œã†ã“ã¨ã®ã§ãã‚‹å ´æ‰€ã‚’æä¾›ã™ã‚‹ãŸã‚ã«æ—¥ã€…åŠªåŠ›ã‚’ç¶šã‘ã¦ã„ã¾ã™ã€‚ä¿è­·è€…ã®æ–¹ã¸ã®ã”æ¡ˆå†…ã‚’ãŠèª­ã¿ã„ãŸã ãã€Robloxã§ãŠå­æ§˜ãŒæ¥½ã—ã„ä½“é¨“ã‚’ã—ã¦ã„ãŸã ã‘ã‚‹ã‚ˆã†ã€ã“ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã¸ã®ã”ç†è§£ã‚’ãŠé¡˜ã„ç”³ã—ä¸Šã’ã¾ã™: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Robloxã§ã¯{boldTagStart}ä¿è­·è€…ã«ã‚ˆã‚‹åˆ¶é™{boldTagEnd}ã‚‚ã”ç”¨æ„ã—ã¦ãŠã‚Šã¾ã™ã€‚ä¿è­·è€…ã®PINã‚’æœ‰åŠ¹ã«ã—ã¦ã€ãŠå­æ§˜ã®é€šä¿¡ã‚„ãƒãƒ£ãƒƒãƒˆã®è¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ã“ã®åˆ¶é™ã«ã¤ã„ã¦ã¯ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ãƒ­ã‚°ã‚¤ãƒ³ã„ãŸã ãã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã¨ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ã‚¿ãƒ–ã§ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ä¿è­·è€…ã®PINã‚’è¿½åŠ ã™ã‚‹ã«ã¯: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}ãƒãƒ£ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{boldTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}ã®ã‚«ã‚¹ã‚¿ãƒ¼ãƒžãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ã”é€£çµ¡ã„ãŸã ãã“ã¨ã§ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å‰Šé™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ãŠå®¢æ§˜ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€ä¸Šè¨˜ä»¥å¤–ã®ç›®çš„ã«ä½¿ç”¨ã—ãŸã‚Šã€ç¬¬ä¸‰è€…ã«é–‹ç¤ºã—ãŸã‚Šã€ãŠå­æ§˜ã‹ã‚‰ã”æä¾›ã„ãŸã ã„ãŸä»–ã®å€‹äººæƒ…å ±ã¨é–¢é€£ä»˜ã‘ã‚‹ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã‚’ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ {lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyUnder13()
 	{
-		return "{lineBreak}{lineBreak}あなたのお子様がRobloxで{boldTagStart}{username}{boldTagEnd}のアカウントを作りました。Robloxは、ユーザーが作成した3Dの世界に入り込んで、イマジネーションを膨らませたり、ゲーム制作をしたり、一緒にプレイしたりできるオンラインのエンターテイメントプラットフォームです。このプラットフォームは、「Roblox Studio」という無料のゲーム開発ツールも提供しています。このツールは、簡単なドラッグアンドドロップによる作成体験から、複雑なマルチプレイヤーゲームまで、ユーザーが想像するものを何でも作り出すことができます。数百万人の子供たちがRobloxを使用して、究極のテーマパークのようなものを作ることを想像したり、プロのカーレースドライバーになって競争したり、ファッションショーに出演したり、夢のお家を作って友達と楽しい時間を過ごしたりしています。{lineBreak}{lineBreak}このメールは、お子様がユーザー名、生年月日、保護者の方のメールアドレスを登録されたことをお知らせするものです。保護者のメールアドレスは、アカウント管理、パスワードを忘れた場合のパスワードのリセット、お子様のアカウントへのアクセスを保護者の方にお知らせする目的にのみ使用します。このメールアドレスを認証するには、以下のボタンをクリックしてください: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}メールアドレスの認証{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Robloxについて{boldTagEnd}{lineBreak}{lineBreak}Robloxは、楽しくファミリーフレンドリーな環境を作り上げるため努力を続けています。セイフティ機能の改善に常に取り組んでいます。デジタルセイフティの専門家とともに、すべてのプレイヤーが安全で快適にプレイしたり、チャットしたり、制作プロジェクトでコラボレーションを行うことのできる場所を提供するために日々努力を続けています。保護者の方へのご案内をお読みいただき、Robloxでお子様が楽しい体験をしていただけるよう、このプラットフォームへのご理解をお願い申し上げます: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Robloxでは{boldTagStart}保護者による制限{boldTagEnd}もご用意しております。保護者のPINを有効にして、お子様の通信やチャットの設定を変更することができます。この制限については、お子様のアカウントでログインいただき、アカウント設定のセキュリティとプライバシータブでご確認ください。{lineBreak}{lineBreak}保護者のPINを追加するには: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}チャット設定を変更するには: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}プライバシー{boldTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}のカスターマーサービスにご連絡いただくことで、お子様のアカウントを削除することができます。お客様のメールアドレスを、上記以外の目的に使用したり、第三者に開示したり、お子様からご提供いただいた他の個人情報と関連付けることはありません。詳細については{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}のプライバシーポリシーをご確認ください。{lineBreak}{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム{lineBreak}{lineBreak}このメールには返信しないでください。{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return "{lineBreak}{lineBreak}ã‚ãªãŸã®ãŠå­æ§˜ãŒRobloxã§{boldTagStart}{username}{boldTagEnd}ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚Šã¾ã—ãŸã€‚Robloxã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒä½œæˆã—ãŸ3Dã®ä¸–ç•Œã«å…¥ã‚Šè¾¼ã‚“ã§ã€ã‚¤ãƒžã‚¸ãƒãƒ¼ã‚·ãƒ§ãƒ³ã‚’è†¨ã‚‰ã¾ã›ãŸã‚Šã€ã‚²ãƒ¼ãƒ åˆ¶ä½œã‚’ã—ãŸã‚Šã€ä¸€ç·’ã«ãƒ—ãƒ¬ã‚¤ã—ãŸã‚Šã§ãã‚‹ã‚ªãƒ³ãƒ©ã‚¤ãƒ³ã®ã‚¨ãƒ³ã‚¿ãƒ¼ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ã™ã€‚ã“ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã¯ã€ã€ŒRoblox Studioã€ã¨ã„ã†ç„¡æ–™ã®ã‚²ãƒ¼ãƒ é–‹ç™ºãƒ„ãƒ¼ãƒ«ã‚‚æä¾›ã—ã¦ã„ã¾ã™ã€‚ã“ã®ãƒ„ãƒ¼ãƒ«ã¯ã€ç°¡å˜ãªãƒ‰ãƒ©ãƒƒã‚°ã‚¢ãƒ³ãƒ‰ãƒ‰ãƒ­ãƒƒãƒ—ã«ã‚ˆã‚‹ä½œæˆä½“é¨“ã‹ã‚‰ã€è¤‡é›‘ãªãƒžãƒ«ãƒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚²ãƒ¼ãƒ ã¾ã§ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒæƒ³åƒã™ã‚‹ã‚‚ã®ã‚’ä½•ã§ã‚‚ä½œã‚Šå‡ºã™ã“ã¨ãŒã§ãã¾ã™ã€‚æ•°ç™¾ä¸‡äººã®å­ä¾›ãŸã¡ãŒRobloxã‚’ä½¿ç”¨ã—ã¦ã€ç©¶æ¥µã®ãƒ†ãƒ¼ãƒžãƒ‘ãƒ¼ã‚¯ã®ã‚ˆã†ãªã‚‚ã®ã‚’ä½œã‚‹ã“ã¨ã‚’æƒ³åƒã—ãŸã‚Šã€ãƒ—ãƒ­ã®ã‚«ãƒ¼ãƒ¬ãƒ¼ã‚¹ãƒ‰ãƒ©ã‚¤ãƒãƒ¼ã«ãªã£ã¦ç«¶äº‰ã—ãŸã‚Šã€ãƒ•ã‚¡ãƒƒã‚·ãƒ§ãƒ³ã‚·ãƒ§ãƒ¼ã«å‡ºæ¼”ã—ãŸã‚Šã€å¤¢ã®ãŠå®¶ã‚’ä½œã£ã¦å‹é”ã¨æ¥½ã—ã„æ™‚é–“ã‚’éŽã”ã—ãŸã‚Šã—ã¦ã„ã¾ã™ã€‚{lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã¯ã€ãŠå­æ§˜ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼åã€ç”Ÿå¹´æœˆæ—¥ã€ä¿è­·è€…ã®æ–¹ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ç™»éŒ²ã•ã‚ŒãŸã“ã¨ã‚’ãŠçŸ¥ã‚‰ã›ã™ã‚‹ã‚‚ã®ã§ã™ã€‚ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆç®¡ç†ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¿˜ã‚ŒãŸå ´åˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’ä¿è­·è€…ã®æ–¹ã«ãŠçŸ¥ã‚‰ã›ã™ã‚‹ç›®çš„ã«ã®ã¿ä½¿ç”¨ã—ã¾ã™ã€‚ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼ã™ã‚‹ã«ã¯ã€ä»¥ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„: {lineBreak}{lineBreak}{aTagStartWithHref}{verificationLink}{hrefEnd}{buttonStart}ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼{buttonEnd}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}Robloxã«ã¤ã„ã¦{boldTagEnd}{lineBreak}{lineBreak}Robloxã¯ã€æ¥½ã—ããƒ•ã‚¡ãƒŸãƒªãƒ¼ãƒ•ãƒ¬ãƒ³ãƒ‰ãƒªãƒ¼ãªç’°å¢ƒã‚’ä½œã‚Šä¸Šã’ã‚‹ãŸã‚åŠªåŠ›ã‚’ç¶šã‘ã¦ã„ã¾ã™ã€‚ã‚»ã‚¤ãƒ•ãƒ†ã‚£æ©Ÿèƒ½ã®æ”¹å–„ã«å¸¸ã«å–ã‚Šçµ„ã‚“ã§ã„ã¾ã™ã€‚ãƒ‡ã‚¸ã‚¿ãƒ«ã‚»ã‚¤ãƒ•ãƒ†ã‚£ã®å°‚é–€å®¶ã¨ã¨ã‚‚ã«ã€ã™ã¹ã¦ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå®‰å…¨ã§å¿«é©ã«ãƒ—ãƒ¬ã‚¤ã—ãŸã‚Šã€ãƒãƒ£ãƒƒãƒˆã—ãŸã‚Šã€åˆ¶ä½œãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã§ã‚³ãƒ©ãƒœãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚’è¡Œã†ã“ã¨ã®ã§ãã‚‹å ´æ‰€ã‚’æä¾›ã™ã‚‹ãŸã‚ã«æ—¥ã€…åŠªåŠ›ã‚’ç¶šã‘ã¦ã„ã¾ã™ã€‚ä¿è­·è€…ã®æ–¹ã¸ã®ã”æ¡ˆå†…ã‚’ãŠèª­ã¿ã„ãŸã ãã€Robloxã§ãŠå­æ§˜ãŒæ¥½ã—ã„ä½“é¨“ã‚’ã—ã¦ã„ãŸã ã‘ã‚‹ã‚ˆã†ã€ã“ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã¸ã®ã”ç†è§£ã‚’ãŠé¡˜ã„ç”³ã—ä¸Šã’ã¾ã™: {aTagStartWithHref}{parentalPageLink}{hrefEnd}{parentalPageLink}{aTagEnd}{lineBreak}{lineBreak}Robloxã§ã¯{boldTagStart}ä¿è­·è€…ã«ã‚ˆã‚‹åˆ¶é™{boldTagEnd}ã‚‚ã”ç”¨æ„ã—ã¦ãŠã‚Šã¾ã™ã€‚ä¿è­·è€…ã®PINã‚’æœ‰åŠ¹ã«ã—ã¦ã€ãŠå­æ§˜ã®é€šä¿¡ã‚„ãƒãƒ£ãƒƒãƒˆã®è¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ã“ã®åˆ¶é™ã«ã¤ã„ã¦ã¯ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ãƒ­ã‚°ã‚¤ãƒ³ã„ãŸã ãã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã¨ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ã‚¿ãƒ–ã§ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ä¿è­·è€…ã®PINã‚’è¿½åŠ ã™ã‚‹ã«ã¯: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}ãƒãƒ£ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{boldTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}ã®ã‚«ã‚¹ã‚¿ãƒ¼ãƒžãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ã”é€£çµ¡ã„ãŸã ãã“ã¨ã§ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å‰Šé™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ãŠå®¢æ§˜ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€ä¸Šè¨˜ä»¥å¤–ã®ç›®çš„ã«ä½¿ç”¨ã—ãŸã‚Šã€ç¬¬ä¸‰è€…ã«é–‹ç¤ºã—ãŸã‚Šã€ãŠå­æ§˜ã‹ã‚‰ã”æä¾›ã„ãŸã ã„ãŸä»–ã®å€‹äººæƒ…å ±ã¨é–¢é€£ä»˜ã‘ã‚‹ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã‚’ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ {lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚{lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.HtmlBody.Under13.Part2"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account part 2
-	/// English String: "You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
+	/// English String: "You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}.{lineBreak}{lineBreak}To change chat settings, please visit: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}.{lineBreak}{lineBreak}{boldTagStart}Privacy{boldTagEnd}{lineBreak}{lineBreak}You may remove your child's account by contacting customer service at {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}.{lineBreak}{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team {lineBreak}{lineBreak} Do not reply to this email directly. {lineBreak}{lineBreak} {aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd} {lineBreak}{lineBreak} {aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}"
 	/// </summary>
 	public override string DescriptionVerificationEmailHtmlBodyUnder13Part2(string lineBreak, string aTagStartWithHref, string accountSecurityLink, string hrefEnd, string aTagEnd, string accountPrivacyLink, string boldTagStart, string boldTagEnd, string supportPageLink, string privacyPageLink, string robloxWebsiteLink)
 	{
-		return $"この制限については、お子様のアカウントでログインいただき、アカウント設定のセキュリティとプライバシータブでご確認ください。{lineBreak}{lineBreak}保護者のPINを追加するには: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}{lineBreak}{lineBreak}チャット設定を変更するには: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}プライバシー{boldTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}のカスターマーサービスにご連絡いただくことで、お子様のアカウントを削除することができます。お客様のメールアドレスを、上記以外の目的に使用したり、第三者に開示したり、お子様からご提供いただいた他の個人情報と関連付けることはありません。詳細については{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}のプライバシーポリシーをご確認ください。{lineBreak}{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム{lineBreak}{lineBreak}このメールには返信しないでください。{lineBreak}{lineBreak}{aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return $"ã“ã®åˆ¶é™ã«ã¤ã„ã¦ã¯ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ãƒ­ã‚°ã‚¤ãƒ³ã„ãŸã ãã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã¨ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ã‚¿ãƒ–ã§ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ä¿è­·è€…ã®PINã‚’è¿½åŠ ã™ã‚‹ã«ã¯: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}{lineBreak}{lineBreak}ãƒãƒ£ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{boldTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}ã®ã‚«ã‚¹ã‚¿ãƒ¼ãƒžãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ã”é€£çµ¡ã„ãŸã ãã“ã¨ã§ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å‰Šé™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ãŠå®¢æ§˜ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€ä¸Šè¨˜ä»¥å¤–ã®ç›®çš„ã«ä½¿ç”¨ã—ãŸã‚Šã€ç¬¬ä¸‰è€…ã«é–‹ç¤ºã—ãŸã‚Šã€ãŠå­æ§˜ã‹ã‚‰ã”æä¾›ã„ãŸã ã„ãŸä»–ã®å€‹äººæƒ…å ±ã¨é–¢é€£ä»˜ã‘ã‚‹ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã‚’ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ {lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚{lineBreak}{lineBreak}{aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailHtmlBodyUnder13Part2()
 	{
-		return "この制限については、お子様のアカウントでログインいただき、アカウント設定のセキュリティとプライバシータブでご確認ください。{lineBreak}{lineBreak}保護者のPINを追加するには: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}{lineBreak}{lineBreak}チャット設定を変更するには: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}プライバシー{boldTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}のカスターマーサービスにご連絡いただくことで、お子様のアカウントを削除することができます。お客様のメールアドレスを、上記以外の目的に使用したり、第三者に開示したり、お子様からご提供いただいた他の個人情報と関連付けることはありません。詳細については{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}のプライバシーポリシーをご確認ください。{lineBreak}{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム{lineBreak}{lineBreak}このメールには返信しないでください。{lineBreak}{lineBreak}{aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
+		return "ã“ã®åˆ¶é™ã«ã¤ã„ã¦ã¯ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ãƒ­ã‚°ã‚¤ãƒ³ã„ãŸã ãã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã¨ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ã‚¿ãƒ–ã§ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ä¿è­·è€…ã®PINã‚’è¿½åŠ ã™ã‚‹ã«ã¯: {aTagStartWithHref}{accountSecurityLink}{hrefEnd}{accountSecurityLink}{aTagEnd}{lineBreak}{lineBreak}ãƒãƒ£ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯: {aTagStartWithHref}{accountPrivacyLink}{hrefEnd}{accountPrivacyLink}{aTagEnd}{lineBreak}{lineBreak}{boldTagStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{boldTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}ã®ã‚«ã‚¹ã‚¿ãƒ¼ãƒžãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ã”é€£çµ¡ã„ãŸã ãã“ã¨ã§ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å‰Šé™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ãŠå®¢æ§˜ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€ä¸Šè¨˜ä»¥å¤–ã®ç›®çš„ã«ä½¿ç”¨ã—ãŸã‚Šã€ç¬¬ä¸‰è€…ã«é–‹ç¤ºã—ãŸã‚Šã€ãŠå­æ§˜ã‹ã‚‰ã”æä¾›ã„ãŸã ã„ãŸä»–ã®å€‹äººæƒ…å ±ã¨é–¢é€£ä»˜ã‘ã‚‹ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯{aTagStartWithHref}{privacyPageLink}{hrefEnd}{privacyPageLink}{aTagEnd}ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã‚’ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ {lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚{lineBreak}{lineBreak}{aTagStartWithHref}{robloxWebsiteLink}{hrefEnd}{robloxWebsiteLink}{aTagEnd}{lineBreak}{lineBreak}{aTagStartWithHref}{supportPageLink}{hrefEnd}{supportPageLink}{aTagEnd}";
 	}
 
 	/// <summary>
@@ -2891,27 +2891,27 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyOver13(string lineBreak, string username, string verificationLink)
 	{
-		return $"Robloxユーザー様、{lineBreak}{lineBreak}メールアドレスによる{username}のアカウント保護にご協力ありがとうございます。{lineBreak}Robloxアカウントに関連付けされたメールアドレスを認証することにより、アカウントのセキュリティを向上できます。{lineBreak}下のリンクをクリックして認証処理を完了してください。{lineBreak}{verificationLink}\n";
+		return $"Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreak}{lineBreak}ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«ã‚ˆã‚‹{username}ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆä¿è­·ã«ã”å”åŠ›ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚{lineBreak}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«é–¢é€£ä»˜ã‘ã•ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼ã™ã‚‹ã“ã¨ã«ã‚ˆã‚Šã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’å‘ä¸Šã§ãã¾ã™ã€‚{lineBreak}ä¸‹ã®ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦èªè¨¼å‡¦ç†ã‚’å®Œäº†ã—ã¦ãã ã•ã„ã€‚{lineBreak}{verificationLink}\n";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyOver13()
 	{
-		return "Robloxユーザー様、{lineBreak}{lineBreak}メールアドレスによる{username}のアカウント保護にご協力ありがとうございます。{lineBreak}Robloxアカウントに関連付けされたメールアドレスを認証することにより、アカウントのセキュリティを向上できます。{lineBreak}下のリンクをクリックして認証処理を完了してください。{lineBreak}{verificationLink}\n";
+		return "Robloxãƒ¦ãƒ¼ã‚¶ãƒ¼æ§˜ã€{lineBreak}{lineBreak}ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«ã‚ˆã‚‹{username}ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆä¿è­·ã«ã”å”åŠ›ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚{lineBreak}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«é–¢é€£ä»˜ã‘ã•ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼ã™ã‚‹ã“ã¨ã«ã‚ˆã‚Šã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’å‘ä¸Šã§ãã¾ã™ã€‚{lineBreak}ä¸‹ã®ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦èªè¨¼å‡¦ç†ã‚’å®Œäº†ã—ã¦ãã ã•ã„ã€‚{lineBreak}{verificationLink}\n";
 	}
 
 	/// <summary>
 	/// Key: "Description.VerificationEmail.PlainBody.Under13"
 	/// Email body of verification email that is sent out when an under 13 user adds an email to the account
-	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {username} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called “Roblox Studio” that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what it’s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parent’s email address. The parent’s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the child’s account access. To verify your email address, please click the button below:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}About Roblox{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parent’s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {parentalPageLink}{lineBreak}{lineBreak}Roblox also offers parental controls. Parents can enable a parent PIN and change their child’s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your child’s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {accountSecurityLink}{lineBreak}{lineBreak}To change chat settings, please visit: {chatPrivacyLink} {lineBreak}{lineBreak}Privacy{lineBreak}{lineBreak} You may remove your child's account by contacting customer service at {supportPageLink}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {privacyPageLink}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team{lineBreak}Do not reply to this email directly.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}"
+	/// English String: "Hello,{lineBreak}{lineBreak}Your child created the account {username} on Roblox, an online entertainment platform that enables kids to imagine, create, and play together in immersive, user-generated 3D worlds. Our platform also provides a free development tool called â€œRoblox Studioâ€ that allows users to create anything they imagine, from simple drag-and-drop building experiences to complex multiplayer games. Millions of kids have used Roblox to imagine what itâ€™s like to create the ultimate theme park, compete as a professional race car driver, star in a fashion show, or simply build a dream home and hang out with friends.{lineBreak}{lineBreak}This email is to inform you that your child has provided us with a username, date of birth, and a parentâ€™s email address. The parentâ€™s email address is only used for account management, password resets if the child forgets their password, and to notify parents of changes to the childâ€™s account access. To verify your email address, please click the button below:{lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}About Roblox{lineBreak}{lineBreak}Roblox is dedicated to building an enjoyable, family-friendly environment. We are constantly evolving our safety features and working with digital safety experts to ensure that all players have a safe, comfortable place to play, chat, and collaborate on creative projects. We recommend that you visit our Parentâ€™s Guide to help yourself get acquainted with our platform and find helpful tips for creating a positive experience for your kids on Roblox: {parentalPageLink}{lineBreak}{lineBreak}Roblox also offers parental controls. Parents can enable a parent PIN and change their childâ€™s communication and chat settings. You can find these controls by visiting the security and privacy tabs in the account settings while logged into your childâ€™s account.{lineBreak}{lineBreak}To add a parent PIN, please visit: {accountSecurityLink}{lineBreak}{lineBreak}To change chat settings, please visit: {chatPrivacyLink} {lineBreak}{lineBreak}Privacy{lineBreak}{lineBreak} You may remove your child's account by contacting customer service at {supportPageLink}. Your email will not be used for any other purpose, disclosed to third parties, or combined with any other personal information collected from your child. Please review our privacy policy for more information at {privacyPageLink}.{lineBreak}{lineBreak}Thank you,{lineBreak}{lineBreak}The Roblox Team{lineBreak}Do not reply to this email directly.{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}"
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyUnder13(string lineBreak, string username, string verificationLink, string parentalPageLink, string accountSecurityLink, string chatPrivacyLink, string supportPageLink, string privacyPageLink, string robloxWebiteLink)
 	{
-		return $"{lineBreak}{lineBreak}あなたのお子様がRobloxで{username}のアカウントを作成されました。Robloxは、ユーザーが作成した3Dの世界に入り込んで、イマジネーションを膨らませたり、ゲーム制作をしたり、一緒に遊んだりできるオンラインのエンターテイメントプラットフォームです。このプラットフォームは、「Roblox Studio」という無料のゲーム開発ツールも提供しています。このツールは、簡単なドラッグアンドドロップによる作成体験から、複雑なマルチプレイヤーゲームまで、ユーザーが想像するものを何でも作り出すことができます。数百万人の子供たちがRobloxを使用して、究極のテーマパークのようなものを作ることを想像したり、プロのカーレースドライバーになって競争したり、ファッションショーに出演したり、夢のお家をを作って友達と楽しい時間を過ごしたりしています。{lineBreak}{lineBreak}このメールは、お子様がユーザー名、生年月日、保護者の方のメールアドレスを登録されたことをお知らせするものです。保護者のメールアドレスは、アカウント管理、パスワードを忘れた場合のパスワードのリセット、お子様のアカウントへのアクセスを保護者の方にお知らせする目的にのみ使用します。このメールアドレスを認証するには、以下のボタンをクリックしてください: {lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Robloxについて{lineBreak}{lineBreak}Robloxは、楽しくファミリーフレンドリーな環境を作り上げるため努力を続けています。セイフティ機能の改善に常に取り組んでいます。デジタルセイフティの専門家とともに、すべてのプレイヤーが安全で快適にプレイしたり、チャットしたり、制作プロジェクトでコラボレーションを行うことのできる場所を提供するために日々努力を続けています。保護者の方へのご案内をお読みいただき、Robloxでお子様が楽しい体験をしていただけるよう、このプラットフォームへのご理解をお願い申し上げます: {parentalPageLink}{lineBreak}{lineBreak}Robloxでは保護者による制限もご用意しております。保護者のPINを有効にして、お子様の通信やチャットの設定を変更することができます。この制限については、お子様のアカウントでログインいただき、アカウント設定のセキュリティとプライバシータブでご確認ください。{lineBreak}{lineBreak}保護者のPINを追加するには: {accountSecurityLink}{lineBreak}{lineBreak}チャット設定を変更するには: {chatPrivacyLink}{lineBreak}{lineBreak}プライバシー{lineBreak}{lineBreak}{supportPageLink}のカスターマーサービスにご連絡いただくことで、お子様のアカウントを削除することができます。お客様のメールアドレスを、上記以外の目的に使用したり、第三者に開示したり、お子様からご提供いただいた他の個人情報と関連付けることはありません。詳細については{privacyPageLink}のプライバシーポリシーをご確認ください。{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム{lineBreak}このメールには返信しないでください。{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return $"{lineBreak}{lineBreak}ã‚ãªãŸã®ãŠå­æ§˜ãŒRobloxã§{username}ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œæˆã•ã‚Œã¾ã—ãŸã€‚Robloxã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒä½œæˆã—ãŸ3Dã®ä¸–ç•Œã«å…¥ã‚Šè¾¼ã‚“ã§ã€ã‚¤ãƒžã‚¸ãƒãƒ¼ã‚·ãƒ§ãƒ³ã‚’è†¨ã‚‰ã¾ã›ãŸã‚Šã€ã‚²ãƒ¼ãƒ åˆ¶ä½œã‚’ã—ãŸã‚Šã€ä¸€ç·’ã«éŠã‚“ã ã‚Šã§ãã‚‹ã‚ªãƒ³ãƒ©ã‚¤ãƒ³ã®ã‚¨ãƒ³ã‚¿ãƒ¼ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ã™ã€‚ã“ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã¯ã€ã€ŒRoblox Studioã€ã¨ã„ã†ç„¡æ–™ã®ã‚²ãƒ¼ãƒ é–‹ç™ºãƒ„ãƒ¼ãƒ«ã‚‚æä¾›ã—ã¦ã„ã¾ã™ã€‚ã“ã®ãƒ„ãƒ¼ãƒ«ã¯ã€ç°¡å˜ãªãƒ‰ãƒ©ãƒƒã‚°ã‚¢ãƒ³ãƒ‰ãƒ‰ãƒ­ãƒƒãƒ—ã«ã‚ˆã‚‹ä½œæˆä½“é¨“ã‹ã‚‰ã€è¤‡é›‘ãªãƒžãƒ«ãƒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚²ãƒ¼ãƒ ã¾ã§ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒæƒ³åƒã™ã‚‹ã‚‚ã®ã‚’ä½•ã§ã‚‚ä½œã‚Šå‡ºã™ã“ã¨ãŒã§ãã¾ã™ã€‚æ•°ç™¾ä¸‡äººã®å­ä¾›ãŸã¡ãŒRobloxã‚’ä½¿ç”¨ã—ã¦ã€ç©¶æ¥µã®ãƒ†ãƒ¼ãƒžãƒ‘ãƒ¼ã‚¯ã®ã‚ˆã†ãªã‚‚ã®ã‚’ä½œã‚‹ã“ã¨ã‚’æƒ³åƒã—ãŸã‚Šã€ãƒ—ãƒ­ã®ã‚«ãƒ¼ãƒ¬ãƒ¼ã‚¹ãƒ‰ãƒ©ã‚¤ãƒãƒ¼ã«ãªã£ã¦ç«¶äº‰ã—ãŸã‚Šã€ãƒ•ã‚¡ãƒƒã‚·ãƒ§ãƒ³ã‚·ãƒ§ãƒ¼ã«å‡ºæ¼”ã—ãŸã‚Šã€å¤¢ã®ãŠå®¶ã‚’ã‚’ä½œã£ã¦å‹é”ã¨æ¥½ã—ã„æ™‚é–“ã‚’éŽã”ã—ãŸã‚Šã—ã¦ã„ã¾ã™ã€‚{lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã¯ã€ãŠå­æ§˜ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼åã€ç”Ÿå¹´æœˆæ—¥ã€ä¿è­·è€…ã®æ–¹ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ç™»éŒ²ã•ã‚ŒãŸã“ã¨ã‚’ãŠçŸ¥ã‚‰ã›ã™ã‚‹ã‚‚ã®ã§ã™ã€‚ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆç®¡ç†ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¿˜ã‚ŒãŸå ´åˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’ä¿è­·è€…ã®æ–¹ã«ãŠçŸ¥ã‚‰ã›ã™ã‚‹ç›®çš„ã«ã®ã¿ä½¿ç”¨ã—ã¾ã™ã€‚ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼ã™ã‚‹ã«ã¯ã€ä»¥ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„: {lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Robloxã«ã¤ã„ã¦{lineBreak}{lineBreak}Robloxã¯ã€æ¥½ã—ããƒ•ã‚¡ãƒŸãƒªãƒ¼ãƒ•ãƒ¬ãƒ³ãƒ‰ãƒªãƒ¼ãªç’°å¢ƒã‚’ä½œã‚Šä¸Šã’ã‚‹ãŸã‚åŠªåŠ›ã‚’ç¶šã‘ã¦ã„ã¾ã™ã€‚ã‚»ã‚¤ãƒ•ãƒ†ã‚£æ©Ÿèƒ½ã®æ”¹å–„ã«å¸¸ã«å–ã‚Šçµ„ã‚“ã§ã„ã¾ã™ã€‚ãƒ‡ã‚¸ã‚¿ãƒ«ã‚»ã‚¤ãƒ•ãƒ†ã‚£ã®å°‚é–€å®¶ã¨ã¨ã‚‚ã«ã€ã™ã¹ã¦ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå®‰å…¨ã§å¿«é©ã«ãƒ—ãƒ¬ã‚¤ã—ãŸã‚Šã€ãƒãƒ£ãƒƒãƒˆã—ãŸã‚Šã€åˆ¶ä½œãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã§ã‚³ãƒ©ãƒœãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚’è¡Œã†ã“ã¨ã®ã§ãã‚‹å ´æ‰€ã‚’æä¾›ã™ã‚‹ãŸã‚ã«æ—¥ã€…åŠªåŠ›ã‚’ç¶šã‘ã¦ã„ã¾ã™ã€‚ä¿è­·è€…ã®æ–¹ã¸ã®ã”æ¡ˆå†…ã‚’ãŠèª­ã¿ã„ãŸã ãã€Robloxã§ãŠå­æ§˜ãŒæ¥½ã—ã„ä½“é¨“ã‚’ã—ã¦ã„ãŸã ã‘ã‚‹ã‚ˆã†ã€ã“ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã¸ã®ã”ç†è§£ã‚’ãŠé¡˜ã„ç”³ã—ä¸Šã’ã¾ã™: {parentalPageLink}{lineBreak}{lineBreak}Robloxã§ã¯ä¿è­·è€…ã«ã‚ˆã‚‹åˆ¶é™ã‚‚ã”ç”¨æ„ã—ã¦ãŠã‚Šã¾ã™ã€‚ä¿è­·è€…ã®PINã‚’æœ‰åŠ¹ã«ã—ã¦ã€ãŠå­æ§˜ã®é€šä¿¡ã‚„ãƒãƒ£ãƒƒãƒˆã®è¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ã“ã®åˆ¶é™ã«ã¤ã„ã¦ã¯ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ãƒ­ã‚°ã‚¤ãƒ³ã„ãŸã ãã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã¨ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ã‚¿ãƒ–ã§ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ä¿è­·è€…ã®PINã‚’è¿½åŠ ã™ã‚‹ã«ã¯: {accountSecurityLink}{lineBreak}{lineBreak}ãƒãƒ£ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯: {chatPrivacyLink}{lineBreak}{lineBreak}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{lineBreak}{lineBreak}{supportPageLink}ã®ã‚«ã‚¹ã‚¿ãƒ¼ãƒžãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ã”é€£çµ¡ã„ãŸã ãã“ã¨ã§ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å‰Šé™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ãŠå®¢æ§˜ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€ä¸Šè¨˜ä»¥å¤–ã®ç›®çš„ã«ä½¿ç”¨ã—ãŸã‚Šã€ç¬¬ä¸‰è€…ã«é–‹ç¤ºã—ãŸã‚Šã€ãŠå­æ§˜ã‹ã‚‰ã”æä¾›ã„ãŸã ã„ãŸä»–ã®å€‹äººæƒ…å ±ã¨é–¢é€£ä»˜ã‘ã‚‹ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯{privacyPageLink}ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã‚’ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ {lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyUnder13()
 	{
-		return "{lineBreak}{lineBreak}あなたのお子様がRobloxで{username}のアカウントを作成されました。Robloxは、ユーザーが作成した3Dの世界に入り込んで、イマジネーションを膨らませたり、ゲーム制作をしたり、一緒に遊んだりできるオンラインのエンターテイメントプラットフォームです。このプラットフォームは、「Roblox Studio」という無料のゲーム開発ツールも提供しています。このツールは、簡単なドラッグアンドドロップによる作成体験から、複雑なマルチプレイヤーゲームまで、ユーザーが想像するものを何でも作り出すことができます。数百万人の子供たちがRobloxを使用して、究極のテーマパークのようなものを作ることを想像したり、プロのカーレースドライバーになって競争したり、ファッションショーに出演したり、夢のお家をを作って友達と楽しい時間を過ごしたりしています。{lineBreak}{lineBreak}このメールは、お子様がユーザー名、生年月日、保護者の方のメールアドレスを登録されたことをお知らせするものです。保護者のメールアドレスは、アカウント管理、パスワードを忘れた場合のパスワードのリセット、お子様のアカウントへのアクセスを保護者の方にお知らせする目的にのみ使用します。このメールアドレスを認証するには、以下のボタンをクリックしてください: {lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Robloxについて{lineBreak}{lineBreak}Robloxは、楽しくファミリーフレンドリーな環境を作り上げるため努力を続けています。セイフティ機能の改善に常に取り組んでいます。デジタルセイフティの専門家とともに、すべてのプレイヤーが安全で快適にプレイしたり、チャットしたり、制作プロジェクトでコラボレーションを行うことのできる場所を提供するために日々努力を続けています。保護者の方へのご案内をお読みいただき、Robloxでお子様が楽しい体験をしていただけるよう、このプラットフォームへのご理解をお願い申し上げます: {parentalPageLink}{lineBreak}{lineBreak}Robloxでは保護者による制限もご用意しております。保護者のPINを有効にして、お子様の通信やチャットの設定を変更することができます。この制限については、お子様のアカウントでログインいただき、アカウント設定のセキュリティとプライバシータブでご確認ください。{lineBreak}{lineBreak}保護者のPINを追加するには: {accountSecurityLink}{lineBreak}{lineBreak}チャット設定を変更するには: {chatPrivacyLink}{lineBreak}{lineBreak}プライバシー{lineBreak}{lineBreak}{supportPageLink}のカスターマーサービスにご連絡いただくことで、お子様のアカウントを削除することができます。お客様のメールアドレスを、上記以外の目的に使用したり、第三者に開示したり、お子様からご提供いただいた他の個人情報と関連付けることはありません。詳細については{privacyPageLink}のプライバシーポリシーをご確認ください。{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム{lineBreak}このメールには返信しないでください。{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return "{lineBreak}{lineBreak}ã‚ãªãŸã®ãŠå­æ§˜ãŒRobloxã§{username}ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œæˆã•ã‚Œã¾ã—ãŸã€‚Robloxã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒä½œæˆã—ãŸ3Dã®ä¸–ç•Œã«å…¥ã‚Šè¾¼ã‚“ã§ã€ã‚¤ãƒžã‚¸ãƒãƒ¼ã‚·ãƒ§ãƒ³ã‚’è†¨ã‚‰ã¾ã›ãŸã‚Šã€ã‚²ãƒ¼ãƒ åˆ¶ä½œã‚’ã—ãŸã‚Šã€ä¸€ç·’ã«éŠã‚“ã ã‚Šã§ãã‚‹ã‚ªãƒ³ãƒ©ã‚¤ãƒ³ã®ã‚¨ãƒ³ã‚¿ãƒ¼ãƒ†ã‚¤ãƒ¡ãƒ³ãƒˆãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ã™ã€‚ã“ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã¯ã€ã€ŒRoblox Studioã€ã¨ã„ã†ç„¡æ–™ã®ã‚²ãƒ¼ãƒ é–‹ç™ºãƒ„ãƒ¼ãƒ«ã‚‚æä¾›ã—ã¦ã„ã¾ã™ã€‚ã“ã®ãƒ„ãƒ¼ãƒ«ã¯ã€ç°¡å˜ãªãƒ‰ãƒ©ãƒƒã‚°ã‚¢ãƒ³ãƒ‰ãƒ‰ãƒ­ãƒƒãƒ—ã«ã‚ˆã‚‹ä½œæˆä½“é¨“ã‹ã‚‰ã€è¤‡é›‘ãªãƒžãƒ«ãƒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚²ãƒ¼ãƒ ã¾ã§ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒæƒ³åƒã™ã‚‹ã‚‚ã®ã‚’ä½•ã§ã‚‚ä½œã‚Šå‡ºã™ã“ã¨ãŒã§ãã¾ã™ã€‚æ•°ç™¾ä¸‡äººã®å­ä¾›ãŸã¡ãŒRobloxã‚’ä½¿ç”¨ã—ã¦ã€ç©¶æ¥µã®ãƒ†ãƒ¼ãƒžãƒ‘ãƒ¼ã‚¯ã®ã‚ˆã†ãªã‚‚ã®ã‚’ä½œã‚‹ã“ã¨ã‚’æƒ³åƒã—ãŸã‚Šã€ãƒ—ãƒ­ã®ã‚«ãƒ¼ãƒ¬ãƒ¼ã‚¹ãƒ‰ãƒ©ã‚¤ãƒãƒ¼ã«ãªã£ã¦ç«¶äº‰ã—ãŸã‚Šã€ãƒ•ã‚¡ãƒƒã‚·ãƒ§ãƒ³ã‚·ãƒ§ãƒ¼ã«å‡ºæ¼”ã—ãŸã‚Šã€å¤¢ã®ãŠå®¶ã‚’ã‚’ä½œã£ã¦å‹é”ã¨æ¥½ã—ã„æ™‚é–“ã‚’éŽã”ã—ãŸã‚Šã—ã¦ã„ã¾ã™ã€‚{lineBreak}{lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã¯ã€ãŠå­æ§˜ãŒãƒ¦ãƒ¼ã‚¶ãƒ¼åã€ç”Ÿå¹´æœˆæ—¥ã€ä¿è­·è€…ã®æ–¹ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ç™»éŒ²ã•ã‚ŒãŸã“ã¨ã‚’ãŠçŸ¥ã‚‰ã›ã™ã‚‹ã‚‚ã®ã§ã™ã€‚ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆç®¡ç†ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¿˜ã‚ŒãŸå ´åˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’ä¿è­·è€…ã®æ–¹ã«ãŠçŸ¥ã‚‰ã›ã™ã‚‹ç›®çš„ã«ã®ã¿ä½¿ç”¨ã—ã¾ã™ã€‚ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼ã™ã‚‹ã«ã¯ã€ä»¥ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„: {lineBreak}{lineBreak}{verificationLink}{lineBreak}{lineBreak}Robloxã«ã¤ã„ã¦{lineBreak}{lineBreak}Robloxã¯ã€æ¥½ã—ããƒ•ã‚¡ãƒŸãƒªãƒ¼ãƒ•ãƒ¬ãƒ³ãƒ‰ãƒªãƒ¼ãªç’°å¢ƒã‚’ä½œã‚Šä¸Šã’ã‚‹ãŸã‚åŠªåŠ›ã‚’ç¶šã‘ã¦ã„ã¾ã™ã€‚ã‚»ã‚¤ãƒ•ãƒ†ã‚£æ©Ÿèƒ½ã®æ”¹å–„ã«å¸¸ã«å–ã‚Šçµ„ã‚“ã§ã„ã¾ã™ã€‚ãƒ‡ã‚¸ã‚¿ãƒ«ã‚»ã‚¤ãƒ•ãƒ†ã‚£ã®å°‚é–€å®¶ã¨ã¨ã‚‚ã«ã€ã™ã¹ã¦ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå®‰å…¨ã§å¿«é©ã«ãƒ—ãƒ¬ã‚¤ã—ãŸã‚Šã€ãƒãƒ£ãƒƒãƒˆã—ãŸã‚Šã€åˆ¶ä½œãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã§ã‚³ãƒ©ãƒœãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚’è¡Œã†ã“ã¨ã®ã§ãã‚‹å ´æ‰€ã‚’æä¾›ã™ã‚‹ãŸã‚ã«æ—¥ã€…åŠªåŠ›ã‚’ç¶šã‘ã¦ã„ã¾ã™ã€‚ä¿è­·è€…ã®æ–¹ã¸ã®ã”æ¡ˆå†…ã‚’ãŠèª­ã¿ã„ãŸã ãã€Robloxã§ãŠå­æ§˜ãŒæ¥½ã—ã„ä½“é¨“ã‚’ã—ã¦ã„ãŸã ã‘ã‚‹ã‚ˆã†ã€ã“ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã¸ã®ã”ç†è§£ã‚’ãŠé¡˜ã„ç”³ã—ä¸Šã’ã¾ã™: {parentalPageLink}{lineBreak}{lineBreak}Robloxã§ã¯ä¿è­·è€…ã«ã‚ˆã‚‹åˆ¶é™ã‚‚ã”ç”¨æ„ã—ã¦ãŠã‚Šã¾ã™ã€‚ä¿è­·è€…ã®PINã‚’æœ‰åŠ¹ã«ã—ã¦ã€ãŠå­æ§˜ã®é€šä¿¡ã‚„ãƒãƒ£ãƒƒãƒˆã®è¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ã“ã®åˆ¶é™ã«ã¤ã„ã¦ã¯ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§ãƒ­ã‚°ã‚¤ãƒ³ã„ãŸã ãã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã¨ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ã‚¿ãƒ–ã§ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ä¿è­·è€…ã®PINã‚’è¿½åŠ ã™ã‚‹ã«ã¯: {accountSecurityLink}{lineBreak}{lineBreak}ãƒãƒ£ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯: {chatPrivacyLink}{lineBreak}{lineBreak}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{lineBreak}{lineBreak}{supportPageLink}ã®ã‚«ã‚¹ã‚¿ãƒ¼ãƒžãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ã”é€£çµ¡ã„ãŸã ãã“ã¨ã§ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å‰Šé™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ãŠå®¢æ§˜ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€ä¸Šè¨˜ä»¥å¤–ã®ç›®çš„ã«ä½¿ç”¨ã—ãŸã‚Šã€ç¬¬ä¸‰è€…ã«é–‹ç¤ºã—ãŸã‚Šã€ãŠå­æ§˜ã‹ã‚‰ã”æä¾›ã„ãŸã ã„ãŸä»–ã®å€‹äººæƒ…å ±ã¨é–¢é€£ä»˜ã‘ã‚‹ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯{privacyPageLink}ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã‚’ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ {lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	/// <summary>
@@ -2921,322 +2921,322 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string DescriptionVerificationEmailPlainBodyUnder13Part2(string chatPrivacyLink, string lineBreak, string supportPageLink, string privacyPageLink, string robloxWebiteLink)
 	{
-		return $"チャット設定を変更するには: {chatPrivacyLink}{lineBreak}{lineBreak}プライバシー{lineBreak}{lineBreak}{supportPageLink}のカスターマーサービスにご連絡いただくことで、お子様のアカウントを削除することができます。お客様のメールアドレスを、上記以外の目的に使用したり、第三者に開示したり、お子様からご提供いただいた他の個人情報と関連付けることはありません。詳細については{privacyPageLink}のプライバシーポリシーをご確認ください。{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム{lineBreak}このメールには返信しないでください。{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return $"ãƒãƒ£ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯: {chatPrivacyLink}{lineBreak}{lineBreak}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{lineBreak}{lineBreak}{supportPageLink}ã®ã‚«ã‚¹ã‚¿ãƒ¼ãƒžãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ã”é€£çµ¡ã„ãŸã ãã“ã¨ã§ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å‰Šé™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ãŠå®¢æ§˜ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€ä¸Šè¨˜ä»¥å¤–ã®ç›®çš„ã«ä½¿ç”¨ã—ãŸã‚Šã€ç¬¬ä¸‰è€…ã«é–‹ç¤ºã—ãŸã‚Šã€ãŠå­æ§˜ã‹ã‚‰ã”æä¾›ã„ãŸã ã„ãŸä»–ã®å€‹äººæƒ…å ±ã¨é–¢é€£ä»˜ã‘ã‚‹ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯{privacyPageLink}ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã‚’ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ {lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailPlainBodyUnder13Part2()
 	{
-		return "チャット設定を変更するには: {chatPrivacyLink}{lineBreak}{lineBreak}プライバシー{lineBreak}{lineBreak}{supportPageLink}のカスターマーサービスにご連絡いただくことで、お子様のアカウントを削除することができます。お客様のメールアドレスを、上記以外の目的に使用したり、第三者に開示したり、お子様からご提供いただいた他の個人情報と関連付けることはありません。詳細については{privacyPageLink}のプライバシーポリシーをご確認ください。{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム{lineBreak}このメールには返信しないでください。{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
+		return "ãƒãƒ£ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯: {chatPrivacyLink}{lineBreak}{lineBreak}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼{lineBreak}{lineBreak}{supportPageLink}ã®ã‚«ã‚¹ã‚¿ãƒ¼ãƒžãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ã”é€£çµ¡ã„ãŸã ãã“ã¨ã§ã€ãŠå­æ§˜ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å‰Šé™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ãŠå®¢æ§˜ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€ä¸Šè¨˜ä»¥å¤–ã®ç›®çš„ã«ä½¿ç”¨ã—ãŸã‚Šã€ç¬¬ä¸‰è€…ã«é–‹ç¤ºã—ãŸã‚Šã€ãŠå­æ§˜ã‹ã‚‰ã”æä¾›ã„ãŸã ã„ãŸä»–ã®å€‹äººæƒ…å ±ã¨é–¢é€£ä»˜ã‘ã‚‹ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚è©³ç´°ã«ã¤ã„ã¦ã¯{privacyPageLink}ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã‚’ã”ç¢ºèªãã ã•ã„ã€‚{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ {lineBreak}ã“ã®ãƒ¡ãƒ¼ãƒ«ã«ã¯è¿”ä¿¡ã—ãªã„ã§ãã ã•ã„ã€‚{lineBreak}{robloxWebiteLink}{lineBreak}{supportPageLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailSubjectOver13()
 	{
-		return "Robloxメールアドレスの認証";
+		return "Robloxãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼";
 	}
 
 	protected override string _GetTemplateForDescriptionVerificationEmailSubjectUnder13()
 	{
-		return "Robloxアカウントの認証";
+		return "Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®èªè¨¼";
 	}
 
 	protected override string _GetTemplateForExampleDescription()
 	{
-		return "自分についての説明を記入（最大1000文字）";
+		return "è‡ªåˆ†ã«ã¤ã„ã¦ã®èª¬æ˜Žã‚’è¨˜å…¥ï¼ˆæœ€å¤§1000æ–‡å­—ï¼‰";
 	}
 
 	protected override string _GetTemplateForExampleFacebook()
 	{
-		return "例 www.facebook.com/Roblox";
+		return "ä¾‹ www.facebook.com/Roblox";
 	}
 
 	protected override string _GetTemplateForExampleGooglePlus()
 	{
-		return "例 http://plus.google.com/profileId";
+		return "ä¾‹ http://plus.google.com/profileId";
 	}
 
 	protected override string _GetTemplateForExampleTwitch()
 	{
-		return "例 www.twitch.tv/roblox/profile";
+		return "ä¾‹ www.twitch.tv/roblox/profile";
 	}
 
 	protected override string _GetTemplateForExampleTwitter()
 	{
-		return "例 @Roblox";
+		return "ä¾‹ @Roblox";
 	}
 
 	protected override string _GetTemplateForExampleYouTube()
 	{
-		return "例 www.youtube.com/user/roblox";
+		return "ä¾‹ www.youtube.com/user/roblox";
 	}
 
 	protected override string _GetTemplateForHeadingAccountControls()
 	{
-		return "アカウントコントロールについて";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã«ã¤ã„ã¦";
 	}
 
 	protected override string _GetTemplateForHeadingAccountInfo()
 	{
-		return "アカウント情報";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±";
 	}
 
 	protected override string _GetTemplateForHeadingBilling()
 	{
-		return "ご請求";
+		return "ã”è«‹æ±‚";
 	}
 
 	protected override string _GetTemplateForHeadingBlockedUsers()
 	{
-		return "ブロック済みユーザー";
+		return "ãƒ–ãƒ­ãƒƒã‚¯æ¸ˆã¿ãƒ¦ãƒ¼ã‚¶ãƒ¼";
 	}
 
 	protected override string _GetTemplateForHeadingContactSettings()
 	{
-		return "連絡先設定";
+		return "é€£çµ¡å…ˆè¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingDesktopPush()
 	{
-		return "デスクトッププッシュ";
+		return "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ—ãƒƒã‚·ãƒ¥";
 	}
 
 	protected override string _GetTemplateForHeadingDialogAddPassword()
 	{
-		return "パスワードを追加:";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ :";
 	}
 
 	protected override string _GetTemplateForHeadingDialogAddPhone()
 	{
-		return "電話番号を追加";
+		return "é›»è©±ç•ªå·ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangeEmail()
 	{
-		return "メールアドレスの変更";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangeEmailConfirmation()
 	{
-		return "メールアドレスを変更しました";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangePassword()
 	{
-		return "パスワードの変更";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangePasswordConfirmation()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangePasswordSuccess()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogChangeUsername()
 	{
-		return "ユーザーネームの変更";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForHeadingDialogDefaultError()
 	{
-		return "エラー";
+		return "ã‚¨ãƒ©ãƒ¼";
 	}
 
 	protected override string _GetTemplateForHeadingDialogDefaultSuccess()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogEditPhone()
 	{
-		return "電話番号の編集";
+		return "é›»è©±ç•ªå·ã®ç·¨é›†";
 	}
 
 	protected override string _GetTemplateForHeadingDialogInsufficientFunds()
 	{
-		return "資金が足りません";
+		return "è³‡é‡‘ãŒè¶³ã‚Šã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForHeadingDialogInvalidUsername()
 	{
-		return "無効なユーザーネーム";
+		return "ç„¡åŠ¹ãªãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogPinCreate()
 	{
-		return "PINを追加";
+		return "PINã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogPinCreateSuccessConfirmation()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogPinUnlock()
 	{
-		return "アカウントPINが必要です";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINãŒå¿…è¦ã§ã™";
 	}
 
 	protected override string _GetTemplateForHeadingDialogRemovePhone()
 	{
-		return "電話番号を削除";
+		return "é›»è©±ç•ªå·ã‚’å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForHeadingDialogVerifiedEmailRequired()
 	{
-		return "認証済みメールアドレスが必要です";
+		return "èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™";
 	}
 
 	protected override string _GetTemplateForHeadingDialogVerifyEmail()
 	{
-		return "メールアドレスを認証";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼";
 	}
 
 	protected override string _GetTemplateForHeadingDialogVerifyPhone()
 	{
-		return "電話番号を認証";
+		return "é›»è©±ç•ªå·ã‚’èªè¨¼";
 	}
 
 	protected override string _GetTemplateForHeadingFastTrack()
 	{
-		return "ファストトラック";
+		return "ãƒ•ã‚¡ã‚¹ãƒˆãƒˆãƒ©ãƒƒã‚¯";
 	}
 
 	protected override string _GetTemplateForHeadingMembershipStatus()
 	{
-		return "メンバーシップ状況";
+		return "ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—çŠ¶æ³";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationOptions()
 	{
-		return "通知タイミング";
+		return "é€šçŸ¥ã‚¿ã‚¤ãƒŸãƒ³ã‚°";
 	}
 
 	protected override string _GetTemplateForHeadingNotifications()
 	{
-		return "通知";
+		return "é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsActionWhen()
 	{
-		return "通知タイミング";
+		return "é€šçŸ¥ã‚¿ã‚¤ãƒŸãƒ³ã‚°";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsDesktopPush()
 	{
-		return "デスクトッププッシュ";
+		return "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ—ãƒƒã‚·ãƒ¥";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsMobilePush()
 	{
-		return "モバイルプッシュ";
+		return "ãƒ¢ãƒã‚¤ãƒ«ãƒ—ãƒƒã‚·ãƒ¥";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationsStream()
 	{
-		return "通知ストリーム";
+		return "é€šçŸ¥ã‚¹ãƒˆãƒªãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForHeadingNotificationStream()
 	{
-		return "通知ストリーム";
+		return "é€šçŸ¥ã‚¹ãƒˆãƒªãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForHeadingOtherSettings()
 	{
-		return "その他の設定";
+		return "ãã®ä»–ã®è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingPageTitle()
 	{
-		return "マイ設定";
+		return "ãƒžã‚¤è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingPersonal()
 	{
-		return "パーソナル";
+		return "ãƒ‘ãƒ¼ã‚½ãƒŠãƒ«";
 	}
 
 	protected override string _GetTemplateForHeadingPin()
 	{
-		return "アカウントPIN";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPIN";
 	}
 
 	protected override string _GetTemplateForHeadingPrivacySettings()
 	{
-		return "プライバシー設定";
+		return "ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®š";
 	}
 
 	protected override string _GetTemplateForHeadingRenevalDate()
 	{
-		return "更新日";
+		return "æ›´æ–°æ—¥";
 	}
 
 	protected override string _GetTemplateForHeadingRestrictions()
 	{
-		return "アカウント制限";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™";
 	}
 
 	protected override string _GetTemplateForHeadingSecureSignOut()
 	{
-		return "セキュアサインアウト";
+		return "ã‚»ã‚­ãƒ¥ã‚¢ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆ";
 	}
 
 	protected override string _GetTemplateForHeadingSocialNetworks()
 	{
-		return "ソーシャルネットワーク";
+		return "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯";
 	}
 
 	protected override string _GetTemplateForHeadingSocialSignOn()
 	{
-		return "ソーシャルサインオン";
+		return "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒ³ã‚ªãƒ³";
 	}
 
 	protected override string _GetTemplateForHeadingSuccessDialogTitle()
 	{
-		return "成功";
+		return "æˆåŠŸ";
 	}
 
 	protected override string _GetTemplateForHeadingTabAccountInfo()
 	{
-		return "アカウント情報";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±";
 	}
 
 	protected override string _GetTemplateForHeadingTabBilling()
 	{
-		return "ご請求";
+		return "ã”è«‹æ±‚";
 	}
 
 	protected override string _GetTemplateForHeadingTabFastTrack()
 	{
-		return "ファストトラック";
+		return "ãƒ•ã‚¡ã‚¹ãƒˆãƒˆãƒ©ãƒƒã‚¯";
 	}
 
 	protected override string _GetTemplateForHeadingTabNotifications()
 	{
-		return "通知";
+		return "é€šçŸ¥";
 	}
 
 	protected override string _GetTemplateForHeadingTabPrivacy()
 	{
-		return "プライバシー";
+		return "ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼";
 	}
 
 	protected override string _GetTemplateForHeadingTabSecurity()
 	{
-		return "セキュリティ";
+		return "ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£";
 	}
 
 	protected override string _GetTemplateForHeadingTransactions()
 	{
-		return "取引";
+		return "å–å¼•";
 	}
 
 	protected override string _GetTemplateForHeadingTwoStepVerification()
 	{
-		return "二段階認証";
+		return "äºŒæ®µéšŽèªè¨¼";
 	}
 
 	protected override string _GetTemplateForHeadingXbox()
@@ -3246,52 +3246,52 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelAccountPinDisabled()
 	{
-		return "アカウントPINは現在無効になっています";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelAccountPinEnabled()
 	{
-		return "アカウントPINは現在有効になっています";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆPINã¯ç¾åœ¨æœ‰åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelAccountRestrictionDisabled()
 	{
-		return "アカウント制限は現在無効になっています";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelAccountRestrictionEnabled()
 	{
-		return "アカウント制限は現在有効になっています";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåˆ¶é™ã¯ç¾åœ¨æœ‰åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelAddEmail()
 	{
-		return "メールアドレスを追加";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelAddEmailParent()
 	{
-		return "保護者のメールアドレスを追加";
+		return "ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelAddPassword()
 	{
-		return "パスワードを追加:";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ :";
 	}
 
 	protected override string _GetTemplateForLabelAddPhone()
 	{
-		return "電話番号を追加";
+		return "é›»è©±ç•ªå·ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelAddPhoneLink()
 	{
-		return "電話番号を追加";
+		return "é›»è©±ç•ªå·ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelBillingHelp()
 	{
-		return "ご請求とお支払いについてのお問い合わせ:";
+		return "ã”è«‹æ±‚ã¨ãŠæ”¯æ‰•ã„ã«ã¤ã„ã¦ã®ãŠå•ã„åˆã‚ã›:";
 	}
 
 	/// <summary>
@@ -3300,12 +3300,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelBillingHelpWithLink(string aTagStartWithHref, string billingHelpPagesLink, string hrefEnd, string aTagEnd)
 	{
-		return $"ご請求とお支払いについては、{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}ご請求のヘルプページ{aTagEnd}を見てください。";
+		return $"ã”è«‹æ±‚ã¨ãŠæ”¯æ‰•ã„ã«ã¤ã„ã¦ã¯ã€{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}ã”è«‹æ±‚ã®ãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸{aTagEnd}ã‚’è¦‹ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelBillingHelpWithLink()
 	{
-		return "ご請求とお支払いについては、{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}ご請求のヘルプページ{aTagEnd}を見てください。";
+		return "ã”è«‹æ±‚ã¨ãŠæ”¯æ‰•ã„ã«ã¤ã„ã¦ã¯ã€{aTagStartWithHref}{billingHelpPagesLink}{hrefEnd}ã”è«‹æ±‚ã®ãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸{aTagEnd}ã‚’è¦‹ã¦ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -3314,47 +3314,47 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelBillingHistoryCardNumber(string lastFourCard)
 	{
-		return $"末尾が{lastFourCard}のカード";
+		return $"æœ«å°¾ãŒ{lastFourCard}ã®ã‚«ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryCardNumber()
 	{
-		return "末尾が{lastFourCard}のカード";
+		return "æœ«å°¾ãŒ{lastFourCard}ã®ã‚«ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryCost()
 	{
-		return "費用";
+		return "è²»ç”¨";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryDate()
 	{
-		return "日付";
+		return "æ—¥ä»˜";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryDescription()
 	{
-		return "詳細";
+		return "è©³ç´°";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryGeneralErrors()
 	{
-		return "サービスは現在無効になっています。後でもう一度お試しください。";
+		return "ã‚µãƒ¼ãƒ“ã‚¹ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryNoTransactions()
 	{
-		return "取引がありません";
+		return "å–å¼•ãŒã‚ã‚Šã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForLabelBillingHistoryPaymentType()
 	{
-		return "支払いタイプ";
+		return "æ”¯æ‰•ã„ã‚¿ã‚¤ãƒ—";
 	}
 
 	protected override string _GetTemplateForLabelBirthday()
 	{
-		return "生年月日";
+		return "ç”Ÿå¹´æœˆæ—¥";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClub()
@@ -3368,112 +3368,112 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelBuildersClubJoin(string startSpan, string endSpan)
 	{
-		return $"あなたは、まだメンバーではありません。今すぐ{startSpan}Builders Club{endSpan}に加入してください！";
+		return $"ã‚ãªãŸã¯ã€ã¾ã ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»Šã™ã{startSpan}Builders Club{endSpan}ã«åŠ å…¥ã—ã¦ãã ã•ã„ï¼";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubJoin()
 	{
-		return "あなたは、まだメンバーではありません。今すぐ{startSpan}Builders Club{endSpan}に加入してください！";
+		return "ã‚ãªãŸã¯ã€ã¾ã ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»Šã™ã{startSpan}Builders Club{endSpan}ã«åŠ å…¥ã—ã¦ãã ã•ã„ï¼";
 	}
 
 	protected override string _GetTemplateForLabelChangeYourUsername()
 	{
-		return "ユーザーネームの変更";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelChooseLanguage()
 	{
-		return "言語を選ぶ";
+		return "è¨€èªžã‚’é¸ã¶";
 	}
 
 	protected override string _GetTemplateForLabelClassicTheme()
 	{
-		return "オフ";
+		return "ã‚ªãƒ•";
 	}
 
 	protected override string _GetTemplateForLabelConnectAccount()
 	{
-		return "接続アカウント:";
+		return "æŽ¥ç¶šã‚¢ã‚«ã‚¦ãƒ³ãƒˆ:";
 	}
 
 	protected override string _GetTemplateForLabelCountry()
 	{
-		return "国/地域を選ぶ";
+		return "å›½/åœ°åŸŸã‚’é¸ã¶";
 	}
 
 	protected override string _GetTemplateForLabelCountryTitle()
 	{
-		return "場所";
+		return "å ´æ‰€";
 	}
 
 	protected override string _GetTemplateForLabelDarkTheme()
 	{
-		return "ダーク";
+		return "ãƒ€ãƒ¼ã‚¯";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddEmailOver13()
 	{
-		return "メールアドレスを追加";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddEmailUnder13()
 	{
-		return "保護者のメールアドレスを追加";
+		return "ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddPhoneField()
 	{
-		return "電話番号";
+		return "é›»è©±ç•ªå·";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddPhonePassword()
 	{
-		return "アカウントのパスワードの認証";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®èªè¨¼";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeEmailField()
 	{
-		return "メールアドレスの変更";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeEmailOver13()
 	{
-		return "メールアドレスの変更";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeEmailUnder13()
 	{
-		return "保護者のメールアドレスを変更";
+		return "ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangePasswordConfirm()
 	{
-		return "パスワード確認";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ç¢ºèª";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangePasswordCurrent()
 	{
-		return "現在のパスワード";
+		return "ç¾åœ¨ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangePasswordNew()
 	{
-		return "新しいパスワード";
+		return "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeUsernameAccountPassword()
 	{
-		return "アカウントのパスワード";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogChangeUsernameField()
 	{
-		return "希望するユーザーネーム （3〜20 文字）";
+		return "å¸Œæœ›ã™ã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ  ï¼ˆ3ã€œ20 æ–‡å­—ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogConfirmPin()
 	{
-		return "PINの確認";
+		return "PINã®ç¢ºèª";
 	}
 
 	/// <summary>
@@ -3482,37 +3482,37 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelDialogCreatePin(string digitCount)
 	{
-		return $"{digitCount}桁のPINを作成";
+		return $"{digitCount}æ¡ã®PINã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelDialogCreatePin()
 	{
-		return "{digitCount}桁のPINを作成";
+		return "{digitCount}æ¡ã®PINã‚’ä½œæˆ";
 	}
 
 	protected override string _GetTemplateForLabelDialogEditPhoneCurrentNumber()
 	{
-		return "現在の番号:";
+		return "ç¾åœ¨ã®ç•ªå·:";
 	}
 
 	protected override string _GetTemplateForLabelDialogEmailAddressChanged()
 	{
-		return "メールアドレスを変更しました";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å¤‰æ›´ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelDialogEmailRequired()
 	{
-		return "メールアドレスが必要です";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifiedEmail()
 	{
-		return "認証済みメールアドレス:";
+		return "èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹:";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifyPassword()
 	{
-		return "アカウントのパスワードの認証";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®èªè¨¼";
 	}
 
 	/// <summary>
@@ -3521,102 +3521,102 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelDialogVerifyPhoneCode(string digitCount)
 	{
-		return $"コードを入力（{digitCount}桁）";
+		return $"ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ï¼ˆ{digitCount}æ¡ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifyPhoneCode()
 	{
-		return "コードを入力（{digitCount}桁）";
+		return "ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ï¼ˆ{digitCount}æ¡ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifyPhoneCodeLabel()
 	{
-		return "あなたの電話に送信されたコードを入力してください";
+		return "ã‚ãªãŸã®é›»è©±ã«é€ä¿¡ã•ã‚ŒãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelDialogVerifySms()
 	{
-		return "SMS認証";
+		return "SMSèªè¨¼";
 	}
 
 	protected override string _GetTemplateForLabelDropDownCustom()
 	{
-		return "カスタム";
+		return "ã‚«ã‚¹ã‚¿ãƒ ";
 	}
 
 	protected override string _GetTemplateForLabelDropDownDefault()
 	{
-		return "デフォルト";
+		return "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelDropDownEveryone()
 	{
-		return "全員";
+		return "å…¨å“¡";
 	}
 
 	protected override string _GetTemplateForLabelDropDownFollowers()
 	{
-		return "友達、フォロー中のユーザー、フォロワー";
+		return "å‹é”ã€ãƒ•ã‚©ãƒ­ãƒ¼ä¸­ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€ãƒ•ã‚©ãƒ­ãƒ¯ãƒ¼";
 	}
 
 	protected override string _GetTemplateForLabelDropDownFollowing()
 	{
-		return "友達、フォロー中のユーザー";
+		return "å‹é”ã€ãƒ•ã‚©ãƒ­ãƒ¼ä¸­ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼";
 	}
 
 	protected override string _GetTemplateForLabelDropDownFriends()
 	{
-		return "友達";
+		return "å‹é”";
 	}
 
 	protected override string _GetTemplateForLabelDropDownHigh()
 	{
-		return "高";
+		return "é«˜";
 	}
 
 	protected override string _GetTemplateForLabelDropDownLow()
 	{
-		return "低";
+		return "ä½Ž";
 	}
 
 	protected override string _GetTemplateForLabelDropDownMedium()
 	{
-		return "中";
+		return "ä¸­";
 	}
 
 	protected override string _GetTemplateForLabelDropDownNone()
 	{
-		return "なし";
+		return "ãªã—";
 	}
 
 	protected override string _GetTemplateForLabelDropDownNoOne()
 	{
-		return "なし";
+		return "ãªã—";
 	}
 
 	protected override string _GetTemplateForLabelDropDownOff()
 	{
-		return "オフ";
+		return "ã‚ªãƒ•";
 	}
 
 	protected override string _GetTemplateForLabelEmail()
 	{
-		return "メールアドレス:";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹:";
 	}
 
 	protected override string _GetTemplateForLabelEmailParent()
 	{
-		return "保護者のメールアドレス:";
+		return "ä¿è­·è€…ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹:";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerificationPending()
 	{
-		return "認証を待っています";
+		return "èªè¨¼ã‚’å¾…ã£ã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelExpirationDate()
 	{
-		return "終了日";
+		return "çµ‚äº†æ—¥";
 	}
 
 	/// <summary>
@@ -3625,12 +3625,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelExpirationDateMessage(string startSpan, string expirationDate, string endSpan)
 	{
-		return $"{startSpan}{expirationDate}{endSpan} に終了します。";
+		return $"{startSpan}{expirationDate}{endSpan} ã«çµ‚äº†ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelExpirationDateMessage()
 	{
-		return "{startSpan}{expirationDate}{endSpan} に終了します。";
+		return "{startSpan}{expirationDate}{endSpan} ã«çµ‚äº†ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelFacebook()
@@ -3640,37 +3640,37 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelFastTrackAccuracy()
 	{
-		return "信用度";
+		return "ä¿¡ç”¨åº¦";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackAllFastTrackMembers()
 	{
-		return "全員";
+		return "å…¨å“¡";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackReportMonth()
 	{
-		return "月";
+		return "æœˆ";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackReportYear()
 	{
-		return "年";
+		return "å¹´";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackStatistics()
 	{
-		return "統計";
+		return "çµ±è¨ˆ";
 	}
 
 	protected override string _GetTemplateForLabelFastTrackYou()
 	{
-		return "あなた";
+		return "ã‚ãªãŸ";
 	}
 
 	protected override string _GetTemplateForLabelGender()
 	{
-		return "性別";
+		return "æ€§åˆ¥";
 	}
 
 	protected override string _GetTemplateForLabelGooglePlus()
@@ -3680,12 +3680,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelLightTheme()
 	{
-		return "ライト";
+		return "ãƒ©ã‚¤ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelLocaleTitle()
 	{
-		return "言語";
+		return "è¨€èªž";
 	}
 
 	/// <summary>
@@ -3694,97 +3694,97 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelMembershipName(string startSpan, string endSpan)
 	{
-		return $"{startSpan}Builders Club{endSpan}メンバーシップ";
+		return $"{startSpan}Builders Club{endSpan}ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—";
 	}
 
 	protected override string _GetTemplateForLabelMembershipName()
 	{
-		return "{startSpan}Builders Club{endSpan}メンバーシップ";
+		return "{startSpan}Builders Club{endSpan}ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusRobloxPremium()
 	{
-		return "あなたは、まだメンバーではありません。今すぐRoblox Premiumに加入してください！";
+		return "ã‚ãªãŸã¯ã€ã¾ã ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ä»Šã™ãRoblox Premiumã«åŠ å…¥ã—ã¦ãã ã•ã„ï¼";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsAddedToPrivateServer()
 	{
-		return "VIPサーバーに招待されました";
+		return "VIPã‚µãƒ¼ãƒãƒ¼ã«æ‹›å¾…ã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsChat()
 	{
-		return "誰かからチャットが届きました";
+		return "èª°ã‹ã‹ã‚‰ãƒãƒ£ãƒƒãƒˆãŒå±Šãã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsConversationUniverseChanged()
 	{
-		return "一緒にプレイする新しいゲームがピン付けされました";
+		return "ä¸€ç·’ã«ãƒ—ãƒ¬ã‚¤ã™ã‚‹æ–°ã—ã„ã‚²ãƒ¼ãƒ ãŒãƒ”ãƒ³ä»˜ã‘ã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsDeveloperMetricsAvailable()
 	{
-		return "解析レポートがあります";
+		return "è§£æžãƒ¬ãƒãƒ¼ãƒˆãŒã‚ã‚Šã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsFriendRequestAccepted()
 	{
-		return "友達リクエストが承認されました";
+		return "å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒæ‰¿èªã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsFriendRequestReceived()
 	{
-		return "友達リクエストが届きました";
+		return "å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå±Šãã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsGameUpdate()
 	{
-		return "アップデート通知を受け取る";
+		return "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆé€šçŸ¥ã‚’å—ã‘å–ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsPartyInvited()
 	{
-		return "パーティに招待されました";
+		return "ãƒ‘ãƒ¼ãƒ†ã‚£ã«æ‹›å¾…ã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsPartyJoined()
 	{
-		return "誰かがパーティに参加しました";
+		return "èª°ã‹ãŒãƒ‘ãƒ¼ãƒ†ã‚£ã«å‚åŠ ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsPrivateMessage()
 	{
-		return "プライベートメッセージが届きました";
+		return "ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒå±Šãã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelNotificationsTeamCreateInvite()
 	{
-		return "ゲームの編集に招待されました";
+		return "ã‚²ãƒ¼ãƒ ã®ç·¨é›†ã«æ‹›å¾…ã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "パスワード:";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰:";
 	}
 
 	protected override string _GetTemplateForLabelPhone()
 	{
-		return "電話番号:";
+		return "é›»è©±ç•ªå·:";
 	}
 
 	protected override string _GetTemplateForLabelPinTimeMins()
 	{
-		return "分";
+		return "åˆ†";
 	}
 
 	protected override string _GetTemplateForLabelPinTimeRemaining()
 	{
-		return "残り時間";
+		return "æ®‹ã‚Šæ™‚é–“";
 	}
 
 	protected override string _GetTemplateForLabelPinTimeSecs()
 	{
-		return "秒";
+		return "ç§’";
 	}
 
 	/// <summary>
@@ -3803,17 +3803,17 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelPreviousUsernames()
 	{
-		return "以前のユーザーネーム:";
+		return "ä»¥å‰ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ :";
 	}
 
 	protected override string _GetTemplateForLabelPrivacyMode()
 	{
-		return "プライバシーモード";
+		return "ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒ¢ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelRenevalDate()
 	{
-		return "更新日";
+		return "æ›´æ–°æ—¥";
 	}
 
 	/// <summary>
@@ -3822,12 +3822,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelRenevalDateMessage(string startSpan, string expirationDate, string endSpan)
 	{
-		return $"{startSpan}{expirationDate}{endSpan} に自動更新されます。";
+		return $"{startSpan}{expirationDate}{endSpan} ã«è‡ªå‹•æ›´æ–°ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelRenevalDateMessage()
 	{
-		return "{startSpan}{expirationDate}{endSpan} に自動更新されます。";
+		return "{startSpan}{expirationDate}{endSpan} ã«è‡ªå‹•æ›´æ–°ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -3861,12 +3861,12 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelSignOutAllSessions()
 	{
-		return "すべてのセッションからサインアウト";
+		return "ã™ã¹ã¦ã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‹ã‚‰ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelSocialLinksVisibility()
 	{
-		return "公開範囲:";
+		return "å…¬é–‹ç¯„å›²:";
 	}
 
 	/// <summary>
@@ -3875,77 +3875,77 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 	/// </summary>
 	public override string LabelSocialUsername(string socialUsername)
 	{
-		return $"{socialUsername}として接続";
+		return $"{socialUsername}ã¨ã—ã¦æŽ¥ç¶š";
 	}
 
 	protected override string _GetTemplateForLabelSocialUsername()
 	{
-		return "{socialUsername}として接続";
+		return "{socialUsername}ã¨ã—ã¦æŽ¥ç¶š";
 	}
 
 	protected override string _GetTemplateForLabelThemeTitle()
 	{
-		return "壁紙テーマ";
+		return "å£ç´™ãƒ†ãƒ¼ãƒž";
 	}
 
 	protected override string _GetTemplateForLabelToolTipContactSettings()
 	{
-		return "カスタム - 設定を自分で管理します。デフォルト - 友達とのチャットやメッセージを可能にします。オフ - チャットやメッセージを無効にします。";
+		return "ã‚«ã‚¹ã‚¿ãƒ  - è¨­å®šã‚’è‡ªåˆ†ã§ç®¡ç†ã—ã¾ã™ã€‚ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ - å‹é”ã¨ã®ãƒãƒ£ãƒƒãƒˆã‚„ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å¯èƒ½ã«ã—ã¾ã™ã€‚ã‚ªãƒ• - ãƒãƒ£ãƒƒãƒˆã‚„ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç„¡åŠ¹ã«ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipPinLocked()
 	{
-		return "すべての設定がロックされています。編集するには、PINを使用してアンロックしてください";
+		return "ã™ã¹ã¦ã®è¨­å®šãŒãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚ç·¨é›†ã™ã‚‹ã«ã¯ã€PINã‚’ä½¿ç”¨ã—ã¦ã‚¢ãƒ³ãƒ­ãƒƒã‚¯ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelToolTipPinUnlocked()
 	{
-		return "クリックして設定ページをロック";
+		return "ã‚¯ãƒªãƒƒã‚¯ã—ã¦è¨­å®šãƒšãƒ¼ã‚¸ã‚’ãƒ­ãƒƒã‚¯";
 	}
 
 	protected override string _GetTemplateForLabelToolTipPrivacyMode()
 	{
-		return "詳細については、こちらをクリックして確認してください";
+		return "è©³ç´°ã«ã¤ã„ã¦ã¯ã€ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ç¢ºèªã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanChatInApp()
 	{
-		return "この設定は、アプリ内やネット上でこのユーザーが誰とチャットできるかを管理します（ゲーム内とは別の設定）。この設定で、フォーラムやグループ掲示板へのこのユーザーの投稿を禁止することもできます。";
+		return "ã“ã®è¨­å®šã¯ã€ã‚¢ãƒ—ãƒªå†…ã‚„ãƒãƒƒãƒˆä¸Šã§ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒèª°ã¨ãƒãƒ£ãƒƒãƒˆã§ãã‚‹ã‹ã‚’ç®¡ç†ã—ã¾ã™ï¼ˆã‚²ãƒ¼ãƒ å†…ã¨ã¯åˆ¥ã®è¨­å®šï¼‰ã€‚ã“ã®è¨­å®šã§ã€ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã‚„ã‚°ãƒ«ãƒ¼ãƒ—æŽ²ç¤ºæ¿ã¸ã®ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®æŠ•ç¨¿ã‚’ç¦æ­¢ã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanChatInGame()
 	{
-		return "この設定は、ゲーム内でこのユーザーが誰とチャットできるかを管理します。";
+		return "ã“ã®è¨­å®šã¯ã€ã‚²ãƒ¼ãƒ å†…ã§ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒèª°ã¨ãƒãƒ£ãƒƒãƒˆã§ãã‚‹ã‹ã‚’ç®¡ç†ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanFindMeByPhone()
 	{
-		return "登録した電話番号からあなたを検索できる人を設定することができます。";
+		return "ç™»éŒ²ã—ãŸé›»è©±ç•ªå·ã‹ã‚‰ã‚ãªãŸã‚’æ¤œç´¢ã§ãã‚‹äººã‚’è¨­å®šã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanInviteVIP()
 	{
-		return "この設定は、VIPサーバーでこのユーザーが誰と一緒に行動できるかを管理します。VIPサーバーは、サーバー管理者からの招待があった場合にのみ参加できるサーバーです。";
+		return "ã“ã®è¨­å®šã¯ã€VIPã‚µãƒ¼ãƒãƒ¼ã§ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒèª°ã¨ä¸€ç·’ã«è¡Œå‹•ã§ãã‚‹ã‹ã‚’ç®¡ç†ã—ã¾ã™ã€‚VIPã‚µãƒ¼ãƒãƒ¼ã¯ã€ã‚µãƒ¼ãƒãƒ¼ç®¡ç†è€…ã‹ã‚‰ã®æ‹›å¾…ãŒã‚ã£ãŸå ´åˆã«ã®ã¿å‚åŠ ã§ãã‚‹ã‚µãƒ¼ãƒãƒ¼ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanJoinGame()
 	{
-		return "この設定は、自分がどのゲームに参加しているかを確認したり、サーバー上で一緒に行動できる相手を管理します。「なし」を選択すると、特定サーバーで自分をフォローできる相手は存在しませんが、自分は他のユーザーとプレイできるようになります。";
+		return "ã“ã®è¨­å®šã¯ã€è‡ªåˆ†ãŒã©ã®ã‚²ãƒ¼ãƒ ã«å‚åŠ ã—ã¦ã„ã‚‹ã‹ã‚’ç¢ºèªã—ãŸã‚Šã€ã‚µãƒ¼ãƒãƒ¼ä¸Šã§ä¸€ç·’ã«è¡Œå‹•ã§ãã‚‹ç›¸æ‰‹ã‚’ç®¡ç†ã—ã¾ã™ã€‚ã€Œãªã—ã€ã‚’é¸æŠžã™ã‚‹ã¨ã€ç‰¹å®šã‚µãƒ¼ãƒãƒ¼ã§è‡ªåˆ†ã‚’ãƒ•ã‚©ãƒ­ãƒ¼ã§ãã‚‹ç›¸æ‰‹ã¯å­˜åœ¨ã—ã¾ã›ã‚“ãŒã€è‡ªåˆ†ã¯ä»–ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¨ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanMessageMe()
 	{
-		return "この設定は、このユーザーがメッセージの受信トレイでメッセージを受信できる相手を管理します。";
+		return "ã“ã®è¨­å®šã¯ã€ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®å—ä¿¡ãƒˆãƒ¬ã‚¤ã§ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å—ä¿¡ã§ãã‚‹ç›¸æ‰‹ã‚’ç®¡ç†ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanSeeInventory()
 	{
-		return "あなたのインベントリを見れる人を設定できます。";
+		return "ã‚ãªãŸã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‚’è¦‹ã‚Œã‚‹äººã‚’è¨­å®šã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelTradeFilter()
 	{
-		return "取引品質フィルタ";
+		return "å–å¼•å“è³ªãƒ•ã‚£ãƒ«ã‚¿";
 	}
 
 	protected override string _GetTemplateForLabelTwitch()
@@ -3960,97 +3960,97 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelTwoStepEmail()
 	{
-		return "二段階認証を有効にする";
+		return "äºŒæ®µéšŽèªè¨¼ã‚’æœ‰åŠ¹ã«ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepPrerequisite()
 	{
-		return "認証済みメールアドレスが必要です。";
+		return "èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "アカウントのセキュリティを向上させましょう。新しいデバイスからログインする際にコードの入力が必要になります。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’å‘ä¸Šã•ã›ã¾ã—ã‚‡ã†ã€‚æ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹éš›ã«ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ãŒå¿…è¦ã«ãªã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerificationEnabled()
 	{
-		return "あなたのアカウントは保護されています！";
+		return "ã‚ãªãŸã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ä¿è­·ã•ã‚Œã¦ã„ã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForLabelUpdateEmail()
 	{
-		return "メールアドレスのアップデート";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelUpdatePhone()
 	{
-		return "電話番号のアップデート";
+		return "é›»è©±ç•ªå·ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelUseDeviceLanguage()
 	{
-		return "デバイスの言語を使う";
+		return "ãƒ‡ãƒã‚¤ã‚¹ã®è¨€èªžã‚’ä½¿ã†";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ユーザーネーム:";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ :";
 	}
 
 	protected override string _GetTemplateForLabelVerified()
 	{
-		return "認証済み";
+		return "èªè¨¼æ¸ˆã¿";
 	}
 
 	protected override string _GetTemplateForLabelVerify()
 	{
-		return "認証";
+		return "èªè¨¼";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanChatInApp()
 	{
-		return "アプリ内でチャット可能な相手。";
+		return "ã‚¢ãƒ—ãƒªå†…ã§ãƒãƒ£ãƒƒãƒˆå¯èƒ½ãªç›¸æ‰‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanChatInGame()
 	{
-		return "チャット可能な相手。";
+		return "ãƒãƒ£ãƒƒãƒˆå¯èƒ½ãªç›¸æ‰‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanFindMeByPhone()
 	{
-		return "電話番号からの検索を許可する対象";
+		return "é›»è©±ç•ªå·ã‹ã‚‰ã®æ¤œç´¢ã‚’è¨±å¯ã™ã‚‹å¯¾è±¡";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanInviteVIP()
 	{
-		return "VIPサーバーに招待してもらえる相手。";
+		return "VIPã‚µãƒ¼ãƒãƒ¼ã«æ‹›å¾…ã—ã¦ã‚‚ã‚‰ãˆã‚‹ç›¸æ‰‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanJoinGame()
 	{
-		return "参加できる相手。";
+		return "å‚åŠ ã§ãã‚‹ç›¸æ‰‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanMessageMe()
 	{
-		return "メッセージを受信できる相手。";
+		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å—ä¿¡ã§ãã‚‹ç›¸æ‰‹ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanSeeInventory()
 	{
-		return "あなたのインベントリを見れるユーザー。";
+		return "ã‚ãªãŸã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‚’è¦‹ã‚Œã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanTradeWithMe()
 	{
-		return "取引できる相手";
+		return "å–å¼•ã§ãã‚‹ç›¸æ‰‹";
 	}
 
 	protected override string _GetTemplateForLabelXboxConnected()
 	{
-		return "Xboxのアカウントで接続";
+		return "Xboxã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã§æŽ¥ç¶š";
 	}
 
 	protected override string _GetTemplateForLabelYouTube()
@@ -4060,416 +4060,419 @@ internal class AccountSettingsResources_ja_jp : AccountSettingsResources_en_us, 
 
 	protected override string _GetTemplateForLabelInsufficientRobux()
 	{
-		return "Robuxが不足しています";
+		return "RobuxãŒä¸è¶³ã—ã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForMessageErrorAccountHasPin()
 	{
-		return "アカウントにはすでにPINが設定されています。他のリクエストを行ってください。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ã¯ã™ã§ã«PINãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚ä»–ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’è¡Œã£ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorAccountLocked()
 	{
-		return "アカウントがロックされています。操作を実行する前にアカウントをアンロックしてください。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚æ“ä½œã‚’å®Ÿè¡Œã™ã‚‹å‰ã«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ã‚¢ãƒ³ãƒ­ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorDefault()
 	{
-		return "問題が発生しました。後でもう一度お試しください。";
+		return "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailAlreadyVerified()
 	{
-		return "メールアドレスは認証済みです。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯èªè¨¼æ¸ˆã¿ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailFeatureDisabled()
 	{
-		return "この機能は現在無効になっています。後でもう一度お試しください。";
+		return "ã“ã®æ©Ÿèƒ½ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailIncorrectPassword()
 	{
-		return "パスワードが間違っています。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailInvalidEmail()
 	{
-		return "メールアドレスが無効です。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒç„¡åŠ¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailNoEmailAssociated()
 	{
-		return "このアカウントに関連付けられたメールアドレスはありません。";
+		return "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailPinLocked()
 	{
-		return "PINはロックされています。";
+		return "PINã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailSameEmail()
 	{
-		return "このアドレスは、現在のメールアドレスです。";
+		return "ã“ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã€ç¾åœ¨ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailTooManyAccounts()
 	{
-		return "このメールアドレスに関連付けられているメールアドレスが多すぎます。";
+		return "ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¦ã„ã‚‹ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¤šã™ãŽã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailTooManyUpdates()
 	{
-		return "メールアドレスのアップデート試行回数が多すぎます。後でもう一度お試しください。";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆè©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailTooManyVerify()
 	{
-		return "認証メールアドレス送信の試行回数が多すぎます。後でもう一度お試しください。";
+		return "èªè¨¼ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹é€ä¿¡ã®è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorEmailUnknown()
 	{
-		return "不明なエラーが発生しました。";
+		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorIncorrectPin()
 	{
-		return "PINが間違っています。";
+		return "PINãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorInvalidPinFormat()
 	{
-		return "PINの形式が間違っています。";
+		return "PINã®å½¢å¼ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorNoPin()
 	{
-		return "アカウントにPINが設定されていません。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«PINãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorNoVerifiedEmail()
 	{
-		return "アカウントに認証済みメールアドレスが設定されていません。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorSystem()
 	{
-		return "システムエラーです。";
+		return "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageErrorTooManyRequests()
 	{
-		return "リクエストが多すぎます。後でもう一度お試しください。";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEmailAddSuccess()
 	{
-		return "メールアドレスを追加しました";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½åŠ ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForMessageEmailAlreadyVerifiedError()
 	{
-		return "あなたのメールアドレスは認証済みです！";
+		return "ã‚ãªãŸã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯èªè¨¼æ¸ˆã¿ã§ã™ï¼";
 	}
 
 	protected override string _GetTemplateForMessageFeatureDisabledError()
 	{
-		return "この機能は現在無効になっています。後でもう一度お試しください。";
+		return "ã“ã®æ©Ÿèƒ½ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientRobuxErrorForUserName()
 	{
-		return "Robuxが不足しているためユーザーネームを変更できません。";
+		return "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageInvalidEmail()
 	{
-		return "無効なメールアドレス";
+		return "ç„¡åŠ¹ãªãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
 	}
 
 	protected override string _GetTemplateForMessageNoEmailAssociatedError()
 	{
-		return "アカウントにメールアドレスを関連付ける必要があります";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’é–¢é€£ä»˜ã‘ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 	}
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
-		return "Robuxが不足しているためユーザーネームを変更できません。";
+		return "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessagePinLockedError()
 	{
-		return "PINはロックされています。";
+		return "PINã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSameEmailError()
 	{
-		return "このアドレスは、現在の認証済みメールアドレスです。";
+		return "ã“ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯ã€ç¾åœ¨ã®èªè¨¼æ¸ˆã¿ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSettingsUpdateSuccess()
 	{
-		return "設定をアップデートしました。";
+		return "è¨­å®šã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAccountsOnEmailError()
 	{
-		return "このメールアドレスに関連付けられているメールアドレスが多すぎます。";
+		return "ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¦ã„ã‚‹ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¤šã™ãŽã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAttemptsError()
 	{
-		return "試行回数が多すぎます。後でもう一度お試しください。";
+		return "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "不明なエラーが発生しました。";
+		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForMessageWrongPassword()
 	{
-		return "パスワードが間違っています。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponesInvalidCodePhone()
 	{
-		return "コードが間違っています。電話番号をもう一度チェックしてからお試しください。";
+		return "ã‚³ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚é›»è©±ç•ªå·ã‚’ã‚‚ã†ä¸€åº¦ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponesInventoryAndTradePrivacyConflictError()
 	{
-		return "「取引できる相手」は「あなたのインベントリを見れるユーザー」と同じか、より制限の厳しい値である必要があります。";
+		return "ã€Œå–å¼•ã§ãã‚‹ç›¸æ‰‹ã€ã¯ã€Œã‚ãªãŸã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‚’è¦‹ã‚Œã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€ã¨åŒã˜ã‹ã€ã‚ˆã‚Šåˆ¶é™ã®åŽ³ã—ã„å€¤ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseCodeRequired()
 	{
-		return "コードが必要です。コードを入力してください。";
+		return "ã‚³ãƒ¼ãƒ‰ãŒå¿…è¦ã§ã™ã€‚ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangeDefaultWarning()
 	{
-		return "生年月日を13歳未満に設定すると、取り消すことはできません。よろしいですか？";
+		return "ç”Ÿå¹´æœˆæ—¥ã‚’13æ­³æœªæº€ã«è¨­å®šã™ã‚‹ã¨ã€å–ã‚Šæ¶ˆã™ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangePasswordBody()
 	{
-		return "生年月日を変更するには、Robloxアカウントへのパスワードを追加する必要があります。";
+		return "ç”Ÿå¹´æœˆæ—¥ã‚’å¤‰æ›´ã™ã‚‹ã«ã¯ã€Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¸ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangePasswordTitle()
 	{
-		return "パスワードを追加する必要があります";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¿½åŠ ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 	}
 
 	protected override string _GetTemplateForResponseDialogBirthdayChangeSocialWarning()
 	{
-		return "生年月日を13歳未満に変更すると、取り消すことができません。Facebookからのソーシャルサインオンは無効になり、Robloxのパスワードでのサインオンが必要になります。";
+		return "ç”Ÿå¹´æœˆæ—¥ã‚’13æ­³æœªæº€ã«å¤‰æ›´ã™ã‚‹ã¨ã€å–ã‚Šæ¶ˆã™ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚Facebookã‹ã‚‰ã®ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ã‚µã‚¤ãƒ³ã‚ªãƒ³ã¯ç„¡åŠ¹ã«ãªã‚Šã€Robloxã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ã®ã‚µã‚¤ãƒ³ã‚ªãƒ³ãŒå¿…è¦ã«ãªã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordIncorrectPassword()
 	{
-		return "現在のパスワードが間違っています。パスワードは変更されませんでした。";
+		return "ç¾åœ¨ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordNoMatch()
 	{
-		return "パスワードが一致しません";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒä¸€è‡´ã—ã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangePasswordTooShortError()
 	{
-		return "8文字以上である必要があります";
+		return "8æ–‡å­—ä»¥ä¸Šã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameNoInput()
 	{
-		return "ユーザーネームを入力して下さい。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameNotAllowed()
 	{
-		return "Robloxには適切でないユーザーネームです。";
+		return "Robloxã«ã¯é©åˆ‡ã§ãªã„ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameNotAvailable()
 	{
-		return "このユーザーネームはすでに使われています。";
+		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã¯ã™ã§ã«ä½¿ã‚ã‚Œã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogChangeUsernameSuccess()
 	{
-		return "ユーザーネームを変更しました。";
+		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’å¤‰æ›´ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogCountryListError()
 	{
-		return "国名リストの読み込み中にエラーが発生しました";
+		return "å›½åãƒªã‚¹ãƒˆã®èª­ã¿è¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForResponseDialogCurrencyServiceError()
 	{
-		return "通貨サービスにエラーが発生しました。後でもう一度お試しください。";
+		return "é€šè²¨ã‚µãƒ¼ãƒ“ã‚¹ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogDefaultErrorMessage()
 	{
-		return "問題が発生しました。後でもう一度お試しください。";
+		return "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogDefaultErrorTitle()
 	{
-		return "エラーが発生しました";
+		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForResponseDialogDefaultSuccessMessage()
 	{
-		return "保存しました！";
+		return "ä¿å­˜ã—ã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForResponseDialogDisconnectXBoxError()
 	{
-		return "Xboxアカウントの接続の切断中にエラーが発生しました。後でもう一度お試しください。";
+		return "Xboxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®æŽ¥ç¶šã®åˆ‡æ–­ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogEmailSentForVerification()
 	{
-		return "認証用Eメールを送信しました。";
+		return "èªè¨¼ç”¨Eãƒ¡ãƒ¼ãƒ«ã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidEmailAddress()
 	{
-		return "メールアドレスが無効です";
+		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒç„¡åŠ¹ã§ã™";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidPhoneNumber()
 	{
-		return "無効な電話番号";
+		return "ç„¡åŠ¹ãªé›»è©±ç•ªå·";
 	}
 
 	protected override string _GetTemplateForResponseDialogInvalidUsername()
 	{
-		return "「送信」を押してチケットを送信するか、「キャンセル」を押してユーザーネームを編集してください。ユーザーネームはとても重要な情報であり、発生した問題を素早く解決するのに役立ちます。";
+		return "ã€Œé€ä¿¡ã€ã‚’æŠ¼ã—ã¦ãƒã‚±ãƒƒãƒˆã‚’é€ä¿¡ã™ã‚‹ã‹ã€ã€Œã‚­ãƒ£ãƒ³ã‚»ãƒ«ã€ã‚’æŠ¼ã—ã¦ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã‚’ç·¨é›†ã—ã¦ãã ã•ã„ã€‚ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ã¯ã¨ã¦ã‚‚é‡è¦ãªæƒ…å ±ã§ã‚ã‚Šã€ç™ºç”Ÿã—ãŸå•é¡Œã‚’ç´ æ—©ãè§£æ±ºã™ã‚‹ã®ã«å½¹ç«‹ã¡ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPasswordRulesError()
 	{
-		return "パスワードは8文字以上で 少なくとも2つの数字、4つの文字、1つの記号を含んでいなければなりません。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯8æ–‡å­—ä»¥ä¸Šã§ å°‘ãªãã¨ã‚‚2ã¤ã®æ•°å­—ã€4ã¤ã®æ–‡å­—ã€1ã¤ã®è¨˜å·ã‚’å«ã‚“ã§ã„ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPinCreateConfirmation()
 	{
-		return "PINが設定されました。今後設定ページにアクセスするには、このPINを入力する必要があります。";
+		return "PINãŒè¨­å®šã•ã‚Œã¾ã—ãŸã€‚ä»Šå¾Œè¨­å®šãƒšãƒ¼ã‚¸ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã«ã¯ã€ã“ã®PINã‚’å…¥åŠ›ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogPinCreateMismatch()
 	{
-		return "PINが一致しません";
+		return "PINãŒä¸€è‡´ã—ã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForResponseDialogSignoutSessionFailed()
 	{
-		return "すべてのセッションからのサインアウト中にエラーが発生しました。後でもう一度お試しください。";
+		return "ã™ã¹ã¦ã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‹ã‚‰ã®ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogSignoutSessionsConfirmation()
 	{
-		return "すべてのセッションからサインアウトしました。";
+		return "ã™ã¹ã¦ã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‹ã‚‰ã‚µã‚¤ãƒ³ã‚¢ã‚¦ãƒˆã—ã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogTwoStepDisableWarning()
 	{
-		return "二段階認証をオフにすると、新しいデバイスからログインする際にパスワードのみが求められるようになります。よろしいですか？";
+		return "äºŒæ®µéšŽèªè¨¼ã‚’ã‚ªãƒ•ã«ã™ã‚‹ã¨ã€æ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹éš›ã«ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ã¿ãŒæ±‚ã‚ã‚‰ã‚Œã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForResponseDialogTwoStepSuccessTitle()
 	{
-		return "二段階認証が有効になっています";
+		return "äºŒæ®µéšŽèªè¨¼ãŒæœ‰åŠ¹ã«ãªã£ã¦ã„ã¾ã™";
 	}
 
 	protected override string _GetTemplateForResponseDialogTwoStepSucessBody()
 	{
-		return "アカウントの保護が完了しました！これで現在行う必要のある操作は完了です。今後新しいデバイスからログインする際に、セキュリティコードが送信されます。";
+		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ä¿è­·ãŒå®Œäº†ã—ã¾ã—ãŸï¼ã“ã‚Œã§ç¾åœ¨è¡Œã†å¿…è¦ã®ã‚ã‚‹æ“ä½œã¯å®Œäº†ã§ã™ã€‚ä»Šå¾Œæ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹éš›ã«ã€ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ãŒé€ä¿¡ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateInventorySetting()
 	{
-		return "インベントリのプライバシー設定をアップデートしました。インベントリと取引設定に矛盾がないことが必要です。";
+		return "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®šã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸã€‚ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã¨å–å¼•è¨­å®šã«çŸ›ç›¾ãŒãªã„ã“ã¨ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateNotificationSettingsError()
 	{
-		return "通知設定のアップデート中にエラーが発生しました。後でもう一度お試しください。";
+		return "é€šçŸ¥è¨­å®šã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogUpdateTradeSetting()
 	{
-		return "取引のプライバシー設定をアップデートしました。インベントリと取引設定に矛盾がないことが必要です。";
+		return "å–å¼•ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®šã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã—ã¾ã—ãŸã€‚ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã¨å–å¼•è¨­å®šã«çŸ›ç›¾ãŒãªã„ã“ã¨ãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogVerifyPhoneInvalidCode()
 	{
-		return "コードが間違っています。電話番号をもう一度チェックしてからお試しください。";
+		return "ã‚³ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚é›»è©±ç•ªå·ã‚’ã‚‚ã†ä¸€åº¦ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseDialogWarning()
 	{
-		return "警告";
+		return "è­¦å‘Š";
 	}
 
 	protected override string _GetTemplateForResponseFeatureDisabled()
 	{
-		return "この機能は現在無効になっています。後でもう一度お試しください。";
+		return "ã“ã®æ©Ÿèƒ½ã¯ç¾åœ¨ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "エラーが発生しました。もう一度お試しください。";
+		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectCodeTooManyTimes()
 	{
-		return "間違ったコードが何度も繰り返し入力されました。";
+		return "é–“é•ã£ãŸã‚³ãƒ¼ãƒ‰ãŒä½•åº¦ã‚‚ç¹°ã‚Šè¿”ã—å…¥åŠ›ã•ã‚Œã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectPasswordTryAgain()
 	{
-		return "パスワードが間違っています。パスワードをチェックしてからもう一度お試しください。";
+		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseInvalidPhoneTryAgain()
 	{
-		return "電話番号の形式が間違っています。もう一度チェックしてからお試しください。";
+		return "é›»è©±ç•ªå·ã®å½¢å¼ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ã‚‚ã†ä¸€åº¦ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseNotificationBarPhoneRemovedConfirmation()
 	{
-		return "電話番号が削除されました";
+		return "é›»è©±ç•ªå·ãŒå‰Šé™¤ã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForResponseNotificationBarPhoneVerifyConfirmation()
 	{
-		return "電話番号がアップデートされました！";
+		return "é›»è©±ç•ªå·ãŒã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã•ã‚Œã¾ã—ãŸï¼";
 	}
 
 	protected override string _GetTemplateForResponseNumberAlreadyAssociated()
 	{
-		return "すでに他のアカウントと関連付けられている番号です。";
+		return "ã™ã§ã«ä»–ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¨é–¢é€£ä»˜ã‘ã‚‰ã‚Œã¦ã„ã‚‹ç•ªå·ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponsePinRequired()
 	{
-		return "設定を変更するにはPINを入力してください。";
+		return "è¨­å®šã‚’å¤‰æ›´ã™ã‚‹ã«ã¯PINã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseSocialMediaValidationError()
 	{
-		return "ソーシャルネットワークのリンクが無効です。";
+		return "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ã®ãƒªãƒ³ã‚¯ãŒç„¡åŠ¹ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseAgeDownError()
 	{
-		return "申し訳ありませんが、生年月日を13歳未満には変更できません。あなたが13歳未満の場合は、新しいアカウントを作成してから、サポートに古いアカウントの削除を依頼してください。";
+		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ç”Ÿå¹´æœˆæ—¥ã‚’13æ­³æœªæº€ã«ã¯å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚ã‚ãªãŸãŒ13æ­³æœªæº€ã®å ´åˆã¯ã€æ–°ã—ã„ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œæˆã—ã¦ã‹ã‚‰ã€ã‚µãƒãƒ¼ãƒˆã«å¤ã„ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã‚’ä¾é ¼ã—ã¦ãã ã•ã„ã€‚";
 	}
+}
+
+
 }

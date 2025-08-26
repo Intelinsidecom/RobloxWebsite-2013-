@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using Roblox.ApiClientBase;
 using Roblox.DataV2.Core;
-using Roblox.OwnershipV2.Client;
-using Roblox.OwnershipV2.Client.Models;
+using Roblox.Platform.OwnershipV2.Client;
+using Roblox.Platform.OwnershipV2.Client.Models;
 using Roblox.Platform.Core;
 
 namespace Roblox.Platform.OwnershipV2;

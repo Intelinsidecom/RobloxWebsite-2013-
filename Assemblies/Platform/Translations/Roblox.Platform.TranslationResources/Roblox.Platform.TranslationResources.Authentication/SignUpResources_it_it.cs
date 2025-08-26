@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SignUpResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -119,14 +119,14 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.AlreadyHaveRobloxAccount"
 	/// English String: "Already have a Roblox account?"
 	/// </summary>
-	public override string LabelAlreadyHaveRobloxAccount => "Hai già un account Roblox?";
+	public override string LabelAlreadyHaveRobloxAccount => "Hai giÃ  un account Roblox?";
 
 	/// <summary>
 	/// Key: "Label.AlreadyRegistered"
 	/// label
 	/// English String: "Already registered?"
 	/// </summary>
-	public override string LabelAlreadyRegistered => "Sei già registrato?";
+	public override string LabelAlreadyRegistered => "Sei giÃ  registrato?";
 
 	/// <summary>
 	/// Key: "Label.Birthday"
@@ -164,7 +164,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.FacebookNotLinked"
 	/// English String: "Your Facebook account is not linked to any Roblox account. Please sign up for a Roblox account."
 	/// </summary>
-	public override string LabelFacebookNotLinked => "Il tuo account Facebook non è collegato a nessun account Roblox. Crea un account Roblox.";
+	public override string LabelFacebookNotLinked => "Il tuo account Facebook non Ã¨ collegato a nessun account Roblox. Crea un account Roblox.";
 
 	/// <summary>
 	/// Key: "Label.FacebookSignupUsername"
@@ -190,7 +190,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.GenderRequired"
 	/// English String: "Gender is required."
 	/// </summary>
-	public override string LabelGenderRequired => "Il genere è richiesto.";
+	public override string LabelGenderRequired => "Il genere Ã¨ richiesto.";
 
 	/// <summary>
 	/// Key: "Label.GenderWithColumn"
@@ -301,7 +301,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.UsernameRequirements"
 	/// English String: "Username (length 3-20, _ is allowed)"
 	/// </summary>
-	public override string LabelUsernameRequirements => "Nome utente (lunghezza 3-20, _ è ammesso)";
+	public override string LabelUsernameRequirements => "Nome utente (lunghezza 3-20, _ Ã¨ ammesso)";
 
 	/// <summary>
 	/// Key: "Label.Year"
@@ -332,7 +332,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// message shown when signing up with an inappropriate username
 	/// English String: "Username is not appropriate"
 	/// </summary>
-	public override string ResponseBadUsernameForWeChat => "Il nome utente non è appropriato";
+	public override string ResponseBadUsernameForWeChat => "Il nome utente non Ã¨ appropriato";
 
 	/// <summary>
 	/// Key: "Response.BirthdayInvalid"
@@ -396,7 +396,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.PasswordComplexity"
 	/// English String: "Please create a more complex password."
 	/// </summary>
-	public override string ResponsePasswordComplexity => "Crea una password più complessa.";
+	public override string ResponsePasswordComplexity => "Crea una password piÃ¹ complessa.";
 
 	/// <summary>
 	/// Key: "Response.PasswordConfirmation"
@@ -461,7 +461,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry! An unknown error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnknownError => "Spiacenti, si è verificato un errore imprevisto. Riprova più tardi.";
+	public override string ResponseUnknownError => "Spiacenti, si Ã¨ verificato un errore imprevisto. Riprova piÃ¹ tardi.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAllowedCharactersError"
@@ -474,13 +474,13 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.UsernameAlreadyInUse"
 	/// English String: "This username is already in use."
 	/// </summary>
-	public override string ResponseUsernameAlreadyInUse => "Questo nome utente è già in uso.";
+	public override string ResponseUsernameAlreadyInUse => "Questo nome utente Ã¨ giÃ  in uso.";
 
 	/// <summary>
 	/// Key: "Response.UsernameExplicit"
 	/// English String: "This username is not allowed, please try another."
 	/// </summary>
-	public override string ResponseUsernameExplicit => "Questo nome utente non è ammesso.";
+	public override string ResponseUsernameExplicit => "Questo nome utente non Ã¨ ammesso.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalid"
@@ -504,7 +504,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.UsernameInvalidUnderscore"
 	/// English String: "Usernames cannot start or end with _."
 	/// </summary>
-	public override string ResponseUsernameInvalidUnderscore => "I nomi utente non possono iniziare né terminare con _.";
+	public override string ResponseUsernameInvalidUnderscore => "I nomi utente non possono iniziare nÃ© terminare con _.";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotAvailable"
@@ -543,7 +543,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.UsernameTakenTryAgain"
 	/// English String: "This username is already taken! Please try a different one."
 	/// </summary>
-	public override string ResponseUsernameTakenTryAgain => "Questo nome utente è già in uso. Provane un altro.";
+	public override string ResponseUsernameTakenTryAgain => "Questo nome utente Ã¨ giÃ  in uso. Provane un altro.";
 
 	/// <summary>
 	/// Key: "Response.UsernameTooManyUnderscores"
@@ -673,12 +673,12 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelAlreadyHaveRobloxAccount()
 	{
-		return "Hai già un account Roblox?";
+		return "Hai giÃ  un account Roblox?";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyRegistered()
 	{
-		return "Sei già registrato?";
+		return "Sei giÃ  registrato?";
 	}
 
 	protected override string _GetTemplateForLabelBirthday()
@@ -708,7 +708,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelFacebookNotLinked()
 	{
-		return "Il tuo account Facebook non è collegato a nessun account Roblox. Crea un account Roblox.";
+		return "Il tuo account Facebook non Ã¨ collegato a nessun account Roblox. Crea un account Roblox.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookSignupUsername()
@@ -728,7 +728,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelGenderRequired()
 	{
-		return "Il genere è richiesto.";
+		return "Il genere Ã¨ richiesto.";
 	}
 
 	protected override string _GetTemplateForLabelGenderWithColumn()
@@ -808,7 +808,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelUsernameRequirements()
 	{
-		return "Nome utente (lunghezza 3-20, _ è ammesso)";
+		return "Nome utente (lunghezza 3-20, _ Ã¨ ammesso)";
 	}
 
 	protected override string _GetTemplateForLabelYear()
@@ -833,7 +833,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseBadUsernameForWeChat()
 	{
-		return "Il nome utente non è appropriato";
+		return "Il nome utente non Ã¨ appropriato";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayInvalid()
@@ -883,7 +883,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponsePasswordComplexity()
 	{
-		return "Crea una password più complessa.";
+		return "Crea una password piÃ¹ complessa.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordConfirmation()
@@ -933,7 +933,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "Spiacenti, si è verificato un errore imprevisto. Riprova più tardi.";
+		return "Spiacenti, si Ã¨ verificato un errore imprevisto. Riprova piÃ¹ tardi.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAllowedCharactersError()
@@ -943,12 +943,12 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseUsernameAlreadyInUse()
 	{
-		return "Questo nome utente è già in uso.";
+		return "Questo nome utente Ã¨ giÃ  in uso.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameExplicit()
 	{
-		return "Questo nome utente non è ammesso.";
+		return "Questo nome utente non Ã¨ ammesso.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalid()
@@ -968,7 +968,7 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseUsernameInvalidUnderscore()
 	{
-		return "I nomi utente non possono iniziare né terminare con _.";
+		return "I nomi utente non possono iniziare nÃ© terminare con _.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotAvailable()
@@ -998,11 +998,14 @@ internal class SignUpResources_it_it : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseUsernameTakenTryAgain()
 	{
-		return "Questo nome utente è già in uso. Provane un altro.";
+		return "Questo nome utente Ã¨ giÃ  in uso. Provane un altro.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTooManyUnderscores()
 	{
 		return "I nomi utente possono contenere al massimo un _.";
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IGrantedItemEntityFactory
 
-namespace Roblox.PremiumFeatures;
-
-public interface IGrantedItemEntityFactory
 {
 	/// <summary>
 	/// Gets an <see cref="T:Roblox.PremiumFeatures.IGrantedItemEntity" /> by its ID.
@@ -25,4 +24,7 @@ public interface IGrantedItemEntityFactory
 	/// Creates an <see cref="T:Roblox.PremiumFeatures.IGrantedItemEntity" />
 	/// </summary>
 	IGrantedItemEntity Create(long grantedItemListId, byte grantedItemTypeId, long grantedItemTargetId);
+}
+
+
 }

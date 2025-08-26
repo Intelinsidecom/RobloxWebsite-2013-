@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameLaunchGuestModeResources : ITranslationResources
 
-public interface IGameLaunchGuestModeResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Dialog.Close"
@@ -106,4 +106,7 @@ public interface IGameLaunchGuestModeResources : ITranslationResources
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have {numDays} gameplays left before we require free sign up."
 	/// </summary>
 	string DescriptionDialogYouArePlayingSomeDaysRemaining(string numDays);
+}
+
+
 }

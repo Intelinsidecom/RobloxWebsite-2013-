@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// How much redaction was applied?
 /// </summary>
 public enum ModerationLevel
@@ -17,4 +17,7 @@ public enum ModerationLevel
 	/// Text was completely redacted.
 	/// </summary>
 	FullyModerated
+}
+
+
 }

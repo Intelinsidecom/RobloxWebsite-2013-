@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IItemModelResources : ITranslationResources
 
-public interface IItemModelResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.AmazonExclusiveItem"
@@ -190,4 +190,7 @@ public interface IItemModelResources : ITranslationResources
 	/// English String: "{serial} of {total}"
 	/// </summary>
 	string LabelSerialNoOf(string serial, string total);
+}
+
+
 }

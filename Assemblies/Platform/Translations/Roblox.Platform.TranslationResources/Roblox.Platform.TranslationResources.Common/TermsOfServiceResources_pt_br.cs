@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TermsOfServiceResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -50,12 +50,12 @@ internal class TermsOfServiceResources_pt_br : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageAgreeToTosAndPrivacyBody(string tosLinkStart, string tosLinkEnd, string privacyLinkStart, string privacyLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Clicando em “Concordo\", você está aceitando os {tosLinkStart}Termos de Uso{tosLinkEnd} e {privacyLinkStart}Política de Privacidade{privacyLinkEnd}. Você pode saber mais sobre o que está mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
+		return $"Clicando em â€œConcordo\", vocÃª estÃ¡ aceitando os {tosLinkStart}Termos de Uso{tosLinkEnd} e {privacyLinkStart}PolÃ­tica de Privacidade{privacyLinkEnd}. VocÃª pode saber mais sobre o que estÃ¡ mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageAgreeToTosAndPrivacyBody()
 	{
-		return "Clicando em “Concordo\", você está aceitando os {tosLinkStart}Termos de Uso{tosLinkEnd} e {privacyLinkStart}Política de Privacidade{privacyLinkEnd}. Você pode saber mais sobre o que está mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
+		return "Clicando em â€œConcordo\", vocÃª estÃ¡ aceitando os {tosLinkStart}Termos de Uso{tosLinkEnd} e {privacyLinkStart}PolÃ­tica de Privacidade{privacyLinkEnd}. VocÃª pode saber mais sobre o que estÃ¡ mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
 	}
 
 	/// <summary>
@@ -64,12 +64,12 @@ internal class TermsOfServiceResources_pt_br : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreeChangeBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Clicando em “Concordo\", você está aceitando os {tosLinkStart}Termos de Uso{tosLinkEnd}, incluindo a licença, concedida a nós, do conteúdo passado e futuro que você fornecer ao serviço para nosso uso online e offline (como em itens tangíveis). Você pode saber mais sobre o que está mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
+		return $"Clicando em â€œConcordo\", vocÃª estÃ¡ aceitando os {tosLinkStart}Termos de Uso{tosLinkEnd}, incluindo a licenÃ§a, concedida a nÃ³s, do conteÃºdo passado e futuro que vocÃª fornecer ao serviÃ§o para nosso uso online e offline (como em itens tangÃ­veis). VocÃª pode saber mais sobre o que estÃ¡ mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreeChangeBody()
 	{
-		return "Clicando em “Concordo\", você está aceitando os {tosLinkStart}Termos de Uso{tosLinkEnd}, incluindo a licença, concedida a nós, do conteúdo passado e futuro que você fornecer ao serviço para nosso uso online e offline (como em itens tangíveis). Você pode saber mais sobre o que está mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
+		return "Clicando em â€œConcordo\", vocÃª estÃ¡ aceitando os {tosLinkStart}Termos de Uso{tosLinkEnd}, incluindo a licenÃ§a, concedida a nÃ³s, do conteÃºdo passado e futuro que vocÃª fornecer ao serviÃ§o para nosso uso online e offline (como em itens tangÃ­veis). VocÃª pode saber mais sobre o que estÃ¡ mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
 	}
 
 	/// <summary>
@@ -78,11 +78,14 @@ internal class TermsOfServiceResources_pt_br : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreementBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Clicando em “Concordo\", você está aceitando os {tosLinkStart}Termos de Uso do Roblox{tosLinkEnd}. Isto inclui a licença Roblox do conteúdo passado e futuro que você fornecer ao serviço para nosso uso online, offline e em itens tangíveis. Você pode saber mais sobre o que está mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
+		return $"Clicando em â€œConcordo\", vocÃª estÃ¡ aceitando os {tosLinkStart}Termos de Uso do Roblox{tosLinkEnd}. Isto inclui a licenÃ§a Roblox do conteÃºdo passado e futuro que vocÃª fornecer ao serviÃ§o para nosso uso online, offline e em itens tangÃ­veis. VocÃª pode saber mais sobre o que estÃ¡ mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreementBody()
 	{
-		return "Clicando em “Concordo\", você está aceitando os {tosLinkStart}Termos de Uso do Roblox{tosLinkEnd}. Isto inclui a licença Roblox do conteúdo passado e futuro que você fornecer ao serviço para nosso uso online, offline e em itens tangíveis. Você pode saber mais sobre o que está mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
+		return "Clicando em â€œConcordo\", vocÃª estÃ¡ aceitando os {tosLinkStart}Termos de Uso do Roblox{tosLinkEnd}. Isto inclui a licenÃ§a Roblox do conteÃºdo passado e futuro que vocÃª fornecer ao serviÃ§o para nosso uso online, offline e em itens tangÃ­veis. VocÃª pode saber mais sobre o que estÃ¡ mudando {legalChangesLinkStart}aqui{legalChangesLinkEnd}.";
 	}
+}
+
+
 }

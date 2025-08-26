@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResourcespublic {
+    interface ITranslationResources
 
-namespace Roblox.TranslationResources;
-
-public interface ITranslationResources
 {
 	/// <summary>
 	/// Get state of translated resources.
@@ -22,3 +21,5 @@ public interface ITranslationResources
 	/// <returns>full namespace where resource is.</returns>
 	string GetFullContentNamespaceName();
 }
+
+

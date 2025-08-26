@@ -1,6 +1,6 @@
-namespace Roblox.RealTimeNotifications;
+﻿namespace Roblox.Platform.RealTimeNotificationspublic {
+    enum UserNotificationPublishResult
 
-public enum UserNotificationPublishResult
 {
 	/// <summary>
 	/// At least one client/subsription for the user received the notification
@@ -18,4 +18,7 @@ public enum UserNotificationPublishResult
 	/// There was an error publishing notification
 	/// </summary>
 	ErrorPublishingNotification
+}
+
+
 }

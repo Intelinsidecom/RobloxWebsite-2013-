@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// The exception thrown when the system failed to load the Sqs config settings 
 /// for a specific moderation task queue.
 /// </summary>
@@ -18,4 +17,7 @@ public class InvalidModerationQueueSettingsException : PlatformException
 		: base(message, innerException)
 	{
 	}
+}
+
+
 }

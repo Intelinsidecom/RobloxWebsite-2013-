@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class ItemTagAddDeleteEventArgs : WebEventArgs
 
-public class ItemTagAddDeleteEventArgs : WebEventArgs
 {
 	public string ItemTagId { get; set; }
 
@@ -14,3 +15,12 @@ public class ItemTagAddDeleteEventArgs : WebEventArgs
 
 	public bool WasItemTagAdded { get; set; }
 }
+
+
+}
+
+
+
+
+
+

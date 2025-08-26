@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using Roblox.ContentFilterApi.Client;
 using Roblox.Platform.Core;
 using Roblox.Platform.Moderation.Interfaces;
+namespace Roblox.Moderation.Implementationinternal {
+    class WhitelistEntry : IWhitelistEntry
 
-namespace Roblox.Platform.Moderation.Implementation;
-
-internal class WhitelistEntry : IWhitelistEntry
 {
 	private ContentFilterClient _Client { get; set; }
 
@@ -37,4 +36,7 @@ internal class WhitelistEntry : IWhitelistEntry
 		_Client.DeleteWhitelistExpression(CategoryType.ToString(), CategoryTargetId, Value);
 		_Client.InsertWhitelistExpression(categoryType, categoryTargetId, value);
 	}
+}
+
+
 }

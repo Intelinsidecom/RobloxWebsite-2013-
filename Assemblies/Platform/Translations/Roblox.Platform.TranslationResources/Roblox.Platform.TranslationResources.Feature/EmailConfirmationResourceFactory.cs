@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class EmailConfirmationResourceFactory
 
-internal static class EmailConfirmationResourceFactory
 {
 	public const string FullNamespace = "Feature.EmailConfirmation";
 
@@ -21,4 +21,7 @@ internal static class EmailConfirmationResourceFactory
 			_ => new EmailConfirmationResources_en_us(state), 
 		};
 	}
+}
+
+
 }

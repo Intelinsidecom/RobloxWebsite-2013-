@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 
@@ -77,7 +77,7 @@ public class FilterDAL
 		}
 		List<SqlParameter> queryParameters = new List<SqlParameter>();
 		queryParameters.Add(new SqlParameter("@ID", _ID));
-		EntityHelper.DoEntityDALDelete(new DbInfo(Helper.DBConnectionString, "[dbo].[Filters_DeleteFilterByID]", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(Helper.DBConnectionString, "[dbo].[Filters_DeleteFilterByID]", queryParameters));
 	}
 
 	internal void Insert()

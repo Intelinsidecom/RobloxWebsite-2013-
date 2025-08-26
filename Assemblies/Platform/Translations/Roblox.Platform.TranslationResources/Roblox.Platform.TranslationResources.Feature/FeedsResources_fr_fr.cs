@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeedsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Heading.BuildSomething"
 	/// English String: "Build Something"
 	/// </summary>
-	public override string HeadingBuildSomething => "Créez quelque chose";
+	public override string HeadingBuildSomething => "CrÃ©ez quelque chose";
 
 	/// <summary>
 	/// Key: "Heading.CustomizeAvatar"
@@ -34,13 +34,13 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Heading.PlayGames"
 	/// English String: "Play Games"
 	/// </summary>
-	public override string HeadingPlayGames => "Jouez à des jeux";
+	public override string HeadingPlayGames => "Jouez Ã  des jeux";
 
 	/// <summary>
 	/// Key: "Label.NoFeedLink"
 	/// English String: "make some best friends now."
 	/// </summary>
-	public override string LabelNoFeedLink => "Rencontrez de nouveaux amis dès maintenant.";
+	public override string LabelNoFeedLink => "Rencontrez de nouveaux amis dÃ¨s maintenant.";
 
 	/// <summary>
 	/// Key: "Label.NoFeedText"
@@ -52,7 +52,7 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Label.PlayGames"
 	/// English String: "Nearly all Roblox games are built by players like you. Here are some of our favorites:"
 	/// </summary>
-	public override string LabelPlayGames => "La quasi-totalité des jeux sur Roblox ont été réalisés par des joueurs tels que vous. Voici quelques-uns de nos favoris\u00a0:";
+	public override string LabelPlayGames => "La quasi-totalitÃ© des jeux sur Roblox ont Ã©tÃ© rÃ©alisÃ©s par des joueurs tels que vous. Voici quelques-uns de nos favoris\u00a0:";
 
 	public FeedsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -61,7 +61,7 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 
 	protected override string _GetTemplateForHeadingBuildSomething()
 	{
-		return "Créez quelque chose";
+		return "CrÃ©ez quelque chose";
 	}
 
 	protected override string _GetTemplateForHeadingCustomizeAvatar()
@@ -81,7 +81,7 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 
 	protected override string _GetTemplateForHeadingPlayGames()
 	{
-		return "Jouez à des jeux";
+		return "Jouez Ã  des jeux";
 	}
 
 	/// <summary>
@@ -90,12 +90,12 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelBuildSomething(string linkStart, string linkEnd)
 	{
-		return $"Les constructeurs adoreront notre jeu de construction multijoueur en ligne. Les constructeurs professionnels seront peut-être plutôt intéressés par Roblox Studio, notre environnement de développement présenté sur ta {linkStart}page dédiée au développement.{linkEnd}.";
+		return $"Les constructeurs adoreront notre jeu de construction multijoueur en ligne. Les constructeurs professionnels seront peut-Ãªtre plutÃ´t intÃ©ressÃ©s par Roblox Studio, notre environnement de dÃ©veloppement prÃ©sentÃ© sur ta {linkStart}page dÃ©diÃ©e au dÃ©veloppement.{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelBuildSomething()
 	{
-		return "Les constructeurs adoreront notre jeu de construction multijoueur en ligne. Les constructeurs professionnels seront peut-être plutôt intéressés par Roblox Studio, notre environnement de développement présenté sur ta {linkStart}page dédiée au développement.{linkEnd}.";
+		return "Les constructeurs adoreront notre jeu de construction multijoueur en ligne. Les constructeurs professionnels seront peut-Ãªtre plutÃ´t intÃ©ressÃ©s par Roblox Studio, notre environnement de dÃ©veloppement prÃ©sentÃ© sur ta {linkStart}page dÃ©diÃ©e au dÃ©veloppement.{linkEnd}.";
 	}
 
 	/// <summary>
@@ -104,12 +104,12 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelCustomizeAvatarDesktop(string avatarLinkStart, string avatarLinkEnd, string catalogLinkStart, string catalogLinkEnd)
 	{
-		return $"Consulte l'{avatarLinkStart}éditeur d'avatar{avatarLinkEnd} afin de personnaliser ton personnage. Tu peux acheter des vêtements dans le {catalogLinkStart}catalogue{catalogLinkEnd}.";
+		return $"Consulte l'{avatarLinkStart}Ã©diteur d'avatar{avatarLinkEnd} afin de personnaliser ton personnage. Tu peux acheter des vÃªtements dans le {catalogLinkStart}catalogue{catalogLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarDesktop()
 	{
-		return "Consulte l'{avatarLinkStart}éditeur d'avatar{avatarLinkEnd} afin de personnaliser ton personnage. Tu peux acheter des vêtements dans le {catalogLinkStart}catalogue{catalogLinkEnd}.";
+		return "Consulte l'{avatarLinkStart}Ã©diteur d'avatar{avatarLinkEnd} afin de personnaliser ton personnage. Tu peux acheter des vÃªtements dans le {catalogLinkStart}catalogue{catalogLinkEnd}.";
 	}
 
 	/// <summary>
@@ -118,12 +118,12 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelCustomizeAvatarPhone(string linkStart, string linkEnd)
 	{
-		return $"Obtiens de nouveaux vêtements dans le {linkStart} catalogue {linkEnd} et personnalise ton avatar.";
+		return $"Obtiens de nouveaux vÃªtements dans le {linkStart} catalogue {linkEnd} et personnalise ton avatar.";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarPhone()
 	{
-		return "Obtiens de nouveaux vêtements dans le {linkStart} catalogue {linkEnd} et personnalise ton avatar.";
+		return "Obtiens de nouveaux vÃªtements dans le {linkStart} catalogue {linkEnd} et personnalise ton avatar.";
 	}
 
 	/// <summary>
@@ -146,17 +146,17 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelMakeFriends(string linkStart, string linkEnd)
 	{
-		return $"Rencontrez d'autres utilisateurs en jeu et envoyez-leur une demande d'amitié. Si vous avez raté l'occasion, vous avez toujours la possibilité d'en envoyer une plus tard en {linkStart}recherchant{linkEnd} leur profil d'utilisateur.";
+		return $"Rencontrez d'autres utilisateurs en jeu et envoyez-leur une demande d'amitiÃ©. Si vous avez ratÃ© l'occasion, vous avez toujours la possibilitÃ© d'en envoyer une plus tard en {linkStart}recherchant{linkEnd} leur profil d'utilisateur.";
 	}
 
 	protected override string _GetTemplateForLabelMakeFriends()
 	{
-		return "Rencontrez d'autres utilisateurs en jeu et envoyez-leur une demande d'amitié. Si vous avez raté l'occasion, vous avez toujours la possibilité d'en envoyer une plus tard en {linkStart}recherchant{linkEnd} leur profil d'utilisateur.";
+		return "Rencontrez d'autres utilisateurs en jeu et envoyez-leur une demande d'amitiÃ©. Si vous avez ratÃ© l'occasion, vous avez toujours la possibilitÃ© d'en envoyer une plus tard en {linkStart}recherchant{linkEnd} leur profil d'utilisateur.";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedLink()
 	{
-		return "Rencontrez de nouveaux amis dès maintenant.";
+		return "Rencontrez de nouveaux amis dÃ¨s maintenant.";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedText()
@@ -166,6 +166,9 @@ internal class FeedsResources_fr_fr : FeedsResources_en_us, IFeedsResources, ITr
 
 	protected override string _GetTemplateForLabelPlayGames()
 	{
-		return "La quasi-totalité des jeux sur Roblox ont été réalisés par des joueurs tels que vous. Voici quelques-uns de nos favoris\u00a0:";
+		return "La quasi-totalitÃ© des jeux sur Roblox ont Ã©tÃ© rÃ©alisÃ©s par des joueurs tels que vous. Voici quelques-uns de nos favoris\u00a0:";
 	}
+}
+
+
 }

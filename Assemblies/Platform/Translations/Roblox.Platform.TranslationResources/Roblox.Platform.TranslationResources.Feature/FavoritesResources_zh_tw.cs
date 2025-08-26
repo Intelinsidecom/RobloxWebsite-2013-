@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FavoritesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,83 +10,83 @@ internal class FavoritesResources_zh_tw : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "ActionAddToFavorites"
 	/// English String: "Add to Favorites"
 	/// </summary>
-	public override string ActionAddToFavorites => "設為最愛";
+	public override string ActionAddToFavorites => "è¨­ç‚ºæœ€æ„›";
 
 	/// <summary>
 	/// Key: "ActionCancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "取消";
+	public override string ActionCancel => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "ActionLogin"
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "登入";
+	public override string ActionLogin => "ç™»å…¥";
 
 	/// <summary>
 	/// Key: "ActionRemoveFromFavorites"
 	/// English String: "Remove from Favorites"
 	/// </summary>
-	public override string ActionRemoveFromFavorites => "從最愛移除";
+	public override string ActionRemoveFromFavorites => "å¾žæœ€æ„›ç§»é™¤";
 
 	/// <summary>
 	/// Key: "DescriptionLoginRequired"
 	/// English String: "You must be logged in to add this to your favorites. Please Login or Register to continue"
 	/// </summary>
-	public override string DescriptionLoginRequired => "若要將此設為最愛，請先登入或註冊";
+	public override string DescriptionLoginRequired => "è‹¥è¦å°‡æ­¤è¨­ç‚ºæœ€æ„›ï¼Œè«‹å…ˆç™»å…¥æˆ–è¨»å†Š";
 
 	/// <summary>
 	/// Key: "Heading.Favorites"
 	/// This is the button that users will click on the navigation menu to go to the Favorites page, which contains items and assets that the user has favorited.
 	/// English String: "Favorites"
 	/// </summary>
-	public override string HeadingFavorites => "最愛";
+	public override string HeadingFavorites => "æœ€æ„›";
 
 	/// <summary>
 	/// Key: "Heading.MyFavorites"
 	/// This is the page title referring to your own favorites. This page contains the user's favorite items and assets.
 	/// English String: "My Favorites"
 	/// </summary>
-	public override string HeadingMyFavorites => "我的最愛";
+	public override string HeadingMyFavorites => "æˆ‘çš„æœ€æ„›";
 
 	/// <summary>
 	/// Key: "Label.AddToFavorites"
 	/// English String: "Add to Favorites"
 	/// </summary>
-	public override string LabelAddToFavorites => "設為最愛";
+	public override string LabelAddToFavorites => "è¨­ç‚ºæœ€æ„›";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
 	/// English String: "Bundles"
 	/// </summary>
-	public override string LabelBundles => "組合";
+	public override string LabelBundles => "çµ„åˆ";
 
 	/// <summary>
 	/// Key: "Label.Favorite"
 	/// Label for button to add game to favorites
 	/// English String: "Favorite"
 	/// </summary>
-	public override string LabelFavorite => "設為最愛";
+	public override string LabelFavorite => "è¨­ç‚ºæœ€æ„›";
 
 	/// <summary>
 	/// Key: "Label.Favorited"
 	/// Label for button to remove game from favorites
 	/// English String: "Favorited"
 	/// </summary>
-	public override string LabelFavorited => "從最愛移除";
+	public override string LabelFavorited => "å¾žæœ€æ„›ç§»é™¤";
 
 	/// <summary>
 	/// Key: "LabelLoginRequired"
 	/// English String: "Login Required"
 	/// </summary>
-	public override string LabelLoginRequired => "需要登入";
+	public override string LabelLoginRequired => "éœ€è¦ç™»å…¥";
 
 	/// <summary>
 	/// Key: "MessageAssetNotFoundError"
 	/// English String: "The asset you are trying to favorite cannot be found."
 	/// </summary>
-	public override string MessageAssetNotFoundError => "找不到您想設為最愛的素材。";
+	public override string MessageAssetNotFoundError => "æ‰¾ä¸åˆ°æ‚¨æƒ³è¨­ç‚ºæœ€æ„›çš„ç´ æã€‚";
 
 	public FavoritesResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -95,37 +95,37 @@ internal class FavoritesResources_zh_tw : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForActionAddToFavorites()
 	{
-		return "設為最愛";
+		return "è¨­ç‚ºæœ€æ„›";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "登入";
+		return "ç™»å…¥";
 	}
 
 	protected override string _GetTemplateForActionRemoveFromFavorites()
 	{
-		return "從最愛移除";
+		return "å¾žæœ€æ„›ç§»é™¤";
 	}
 
 	protected override string _GetTemplateForDescriptionLoginRequired()
 	{
-		return "若要將此設為最愛，請先登入或註冊";
+		return "è‹¥è¦å°‡æ­¤è¨­ç‚ºæœ€æ„›ï¼Œè«‹å…ˆç™»å…¥æˆ–è¨»å†Š";
 	}
 
 	protected override string _GetTemplateForHeadingFavorites()
 	{
-		return "最愛";
+		return "æœ€æ„›";
 	}
 
 	protected override string _GetTemplateForHeadingMyFavorites()
 	{
-		return "我的最愛";
+		return "æˆ‘çš„æœ€æ„›";
 	}
 
 	/// <summary>
@@ -135,41 +135,44 @@ internal class FavoritesResources_zh_tw : FavoritesResources_en_us, IFavoritesRe
 	/// </summary>
 	public override string HeadingUserFavorites(string username)
 	{
-		return $"{username} 的最愛";
+		return $"{username} çš„æœ€æ„›";
 	}
 
 	protected override string _GetTemplateForHeadingUserFavorites()
 	{
-		return "{username} 的最愛";
+		return "{username} çš„æœ€æ„›";
 	}
 
 	protected override string _GetTemplateForLabelAddToFavorites()
 	{
-		return "設為最愛";
+		return "è¨­ç‚ºæœ€æ„›";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
 	{
-		return "組合";
+		return "çµ„åˆ";
 	}
 
 	protected override string _GetTemplateForLabelFavorite()
 	{
-		return "設為最愛";
+		return "è¨­ç‚ºæœ€æ„›";
 	}
 
 	protected override string _GetTemplateForLabelFavorited()
 	{
-		return "從最愛移除";
+		return "å¾žæœ€æ„›ç§»é™¤";
 	}
 
 	protected override string _GetTemplateForLabelLoginRequired()
 	{
-		return "需要登入";
+		return "éœ€è¦ç™»å…¥";
 	}
 
 	protected override string _GetTemplateForMessageAssetNotFoundError()
 	{
-		return "找不到您想設為最愛的素材。";
+		return "æ‰¾ä¸åˆ°æ‚¨æƒ³è¨­ç‚ºæœ€æ„›çš„ç´ æã€‚";
 	}
+}
+
+
 }

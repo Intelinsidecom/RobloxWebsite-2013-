@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameNameDescriptionChangeEvent : WebEventBase
 
-public class GameNameDescriptionChangeEvent : WebEventBase
 {
 	private const string _Name = "gameNameDescriptionChange";
 
@@ -18,3 +19,12 @@ public class GameNameDescriptionChangeEvent : WebEventBase
 		AddEventArg("field", args.Field);
 	}
 }
+
+
+}
+
+
+
+
+
+

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PlacesListResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -97,4 +97,7 @@ internal class PlacesListResources_de_de : PlacesListResources_en_us, IPlacesLis
 	{
 		return "{playerCount} Spieler";
 	}
+}
+
+
 }

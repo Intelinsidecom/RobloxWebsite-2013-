@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides EmailConfirmationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -25,21 +25,21 @@ internal class EmailConfirmationResources_es_es : EmailConfirmationResources_en_
 	/// heading
 	/// English String: "Thank You!"
 	/// </summary>
-	public override string HeadingThankYou => "¡Gracias!";
+	public override string HeadingThankYou => "Â¡Gracias!";
 
 	/// <summary>
 	/// Key: "Message.EmailVerified"
 	/// success message confirmation
 	/// English String: "Your email has been verified"
 	/// </summary>
-	public override string MessageEmailVerified => "Tu correo electrónico ha sido verificado.";
+	public override string MessageEmailVerified => "Tu correo electrÃ³nico ha sido verificado.";
 
 	/// <summary>
 	/// Key: "Message.EmailVerifiedEnjoyFreeHat"
 	/// success message confirmation notifying user they have verified their email and have received a free hat
 	/// English String: "Your email has been verified. Enjoy the free hat!"
 	/// </summary>
-	public override string MessageEmailVerifiedEnjoyFreeHat => "Se ha verificado tu correo electrónico. ¡Disfruta el sombrero gratis!";
+	public override string MessageEmailVerifiedEnjoyFreeHat => "Se ha verificado tu correo electrÃ³nico. Â¡Disfruta el sombrero gratis!";
 
 	public EmailConfirmationResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -58,16 +58,19 @@ internal class EmailConfirmationResources_es_es : EmailConfirmationResources_en_
 
 	protected override string _GetTemplateForHeadingThankYou()
 	{
-		return "¡Gracias!";
+		return "Â¡Gracias!";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerified()
 	{
-		return "Tu correo electrónico ha sido verificado.";
+		return "Tu correo electrÃ³nico ha sido verificado.";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerifiedEnjoyFreeHat()
 	{
-		return "Se ha verificado tu correo electrónico. ¡Disfruta el sombrero gratis!";
+		return "Se ha verificado tu correo electrÃ³nico. Â¡Disfruta el sombrero gratis!";
 	}
+}
+
+
 }

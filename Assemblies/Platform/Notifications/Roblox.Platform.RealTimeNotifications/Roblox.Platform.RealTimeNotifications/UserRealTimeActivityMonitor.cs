@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using Roblox.RealTimeNotifications.Properties;
 using Roblox.Redis;
 using StackExchange.Redis;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    class UserRealTimeActivityMonitor : IUserRealTimeActivityMonitor
 
-namespace Roblox.RealTimeNotifications;
-
-public class UserRealTimeActivityMonitor : IUserRealTimeActivityMonitor
 {
 	private readonly IRedisClient _RedisClient;
 
@@ -71,4 +70,7 @@ public class UserRealTimeActivityMonitor : IUserRealTimeActivityMonitor
 	{
 		return "LastConnActivity_U:" + userId;
 	}
+}
+
+
 }

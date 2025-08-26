@@ -1,9 +1,8 @@
-using Roblox.Platform.Demographics;
+﻿using Roblox.Platform.Demographics;
 using Roblox.Platform.Membership;
+namespace Roblox.Localization.Accountspublic {
+    interface IAccountCountryAccessor
 
-namespace Roblox.Platform.Localization.Accounts;
-
-public interface IAccountCountryAccessor
 {
 	/// <summary>
 	/// Get IAccountCountry associated with account id.
@@ -18,4 +17,7 @@ public interface IAccountCountryAccessor
 	/// <param name="user">The <see cref="T:Roblox.Platform.Membership.IUser" /> in question.</param>
 	/// <param name="onlyIfExplicitlySetByUser">If set to true, the method will only return an <see cref="T:Roblox.Platform.Demographics.ICountry" /> that is explicitly set by the user.  If false (default), the method not distinguish whether the country was explicitly set by the user.</param>
 	ICountry GetUserCountry(IUser user, bool onlyIfExplicitlySetByUser = false);
+}
+
+
 }

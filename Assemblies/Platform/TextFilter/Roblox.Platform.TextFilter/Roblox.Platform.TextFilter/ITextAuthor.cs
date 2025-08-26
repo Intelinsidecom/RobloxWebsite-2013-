@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter;
+﻿namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-/// <summary>
 /// Fields required by Moderation to identify the Author of a given piece of text.
 /// </summary>
 public interface ITextAuthor
@@ -19,4 +19,7 @@ public interface ITextAuthor
 	/// Is the user Under 13.
 	/// </summary>
 	bool IsUnder13 { get; }
+}
+
+
 }

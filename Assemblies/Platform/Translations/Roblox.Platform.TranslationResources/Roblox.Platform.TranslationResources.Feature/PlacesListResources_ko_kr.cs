@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PlacesListResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,33 +11,33 @@ internal class PlacesListResources_ko_kr : PlacesListResources_en_us, IPlacesLis
 	/// Join game
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoinGame => "참가";
+	public override string ActionJoinGame => "ì°¸ê°€";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "전체 보기";
+	public override string ActionSeeAll => "ì „ì²´ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.ViewDetails"
 	/// check game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "자세히 보기";
+	public override string ActionViewDetails => "ìžì„¸ížˆ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Label.ContextMenuTitle"
 	/// English String: "Game"
 	/// </summary>
-	public override string LabelContextMenuTitle => "게임";
+	public override string LabelContextMenuTitle => "ê²Œìž„";
 
 	/// <summary>
 	/// Key: "Label.PlacesListName"
 	/// Title of game list
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelPlacesListName => "게임";
+	public override string LabelPlacesListName => "ê²Œìž„";
 
 	public PlacesListResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -46,22 +46,22 @@ internal class PlacesListResources_ko_kr : PlacesListResources_en_us, IPlacesLis
 
 	protected override string _GetTemplateForActionJoinGame()
 	{
-		return "참가";
+		return "ì°¸ê°€";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "전체 보기";
+		return "ì „ì²´ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "자세히 보기";
+		return "ìžì„¸ížˆ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelContextMenuTitle()
 	{
-		return "게임";
+		return "ê²Œìž„";
 	}
 
 	/// <summary>
@@ -70,17 +70,17 @@ internal class PlacesListResources_ko_kr : PlacesListResources_en_us, IPlacesLis
 	/// </summary>
 	public override string LabelCreatorBy(string creatorLink)
 	{
-		return $"개발: {creatorLink}";
+		return $"ê°œë°œ: {creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelCreatorBy()
 	{
-		return "개발: {creatorLink}";
+		return "ê°œë°œ: {creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelPlacesListName()
 	{
-		return "게임";
+		return "ê²Œìž„";
 	}
 
 	/// <summary>
@@ -90,11 +90,14 @@ internal class PlacesListResources_ko_kr : PlacesListResources_en_us, IPlacesLis
 	/// </summary>
 	public override string LabelPlayingPhrase(string playerCount)
 	{
-		return $"{playerCount}명 플레이 중";
+		return $"{playerCount}ëª… í”Œë ˆì´ ì¤‘";
 	}
 
 	protected override string _GetTemplateForLabelPlayingPhrase()
 	{
-		return "{playerCount}명 플레이 중";
+		return "{playerCount}ëª… í”Œë ˆì´ ì¤‘";
 	}
+}
+
+
 }

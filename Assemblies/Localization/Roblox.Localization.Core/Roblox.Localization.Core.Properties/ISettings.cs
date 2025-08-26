@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Core.Properties;
+﻿namespace Roblox.Localization.Core.Propertiesinternal {
+    interface ISettings
 
-internal interface ISettings
 {
 	/// <summary>
 	/// Default supported locale code. Example - en-us
@@ -46,4 +46,7 @@ internal interface ISettings
 	/// A comma separated list for the available in game UGC language codes
 	/// </summary>
 	string AvailableInGameUgcLanguageCodesCsv { get; }
+}
+
+
 }

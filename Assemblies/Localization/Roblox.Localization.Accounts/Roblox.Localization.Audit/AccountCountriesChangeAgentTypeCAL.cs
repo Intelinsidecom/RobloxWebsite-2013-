@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Localization.Audit {
+    [ExcludeFromCodeCoverage]
 
-namespace Roblox.Platform.Localization.Audit;
-
-[ExcludeFromCodeCoverage]
 internal class AccountCountriesChangeAgentTypeCAL : IRobloxEntity<byte, AccountCountriesChangeAgentTypeDAL>, ICacheableObject<byte>, ICacheableObject, IRemoteCacheableObject
 {
 	private AccountCountriesChangeAgentTypeDAL _EntityDAL;
@@ -150,4 +149,7 @@ internal class AccountCountriesChangeAgentTypeCAL : IRobloxEntity<byte, AccountC
 	{
 		return $"Value:{value}";
 	}
+}
+
+
 }

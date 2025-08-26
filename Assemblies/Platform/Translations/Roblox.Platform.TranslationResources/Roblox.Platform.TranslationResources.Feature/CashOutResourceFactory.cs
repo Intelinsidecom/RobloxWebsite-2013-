@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class CashOutResourceFactory
 
-internal static class CashOutResourceFactory
 {
 	public const string FullNamespace = "Feature.CashOut";
 
@@ -21,4 +21,7 @@ internal static class CashOutResourceFactory
 			_ => new CashOutResources_en_us(state), 
 		};
 	}
+}
+
+
 }

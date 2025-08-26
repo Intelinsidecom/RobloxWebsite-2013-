@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.EphemeralCounterspublic {
+    interface ISequence
 
-namespace Roblox.EphemeralCounters;
-
-public interface ISequence
 {
 	void Add(double value);
 
@@ -11,4 +10,7 @@ public interface ISequence
 	ISequenceStatistics GetStatistics();
 
 	ISequenceStatistics FlushStatistics();
+}
+
+
 }

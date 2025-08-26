@@ -1,6 +1,6 @@
-namespace Roblox.GameInstances.Client;
+﻿namespace Roblox.Platform.GameInstances.Clientpublic {
+    enum CustomPlayerCount
 
-public enum CustomPlayerCount
 {
 	Unrecognized,
 	TotalCount,
@@ -9,4 +9,7 @@ public enum CustomPlayerCount
 	BotCheckStatusUnknownCount,
 	Under13Count,
 	PayingCount
+}
+
+
 }

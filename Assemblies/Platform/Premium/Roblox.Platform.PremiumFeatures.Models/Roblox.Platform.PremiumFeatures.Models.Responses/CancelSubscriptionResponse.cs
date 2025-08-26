@@ -1,8 +1,7 @@
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models.Responses {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models.Responses;
-
-[DataContract]
 public class CancelSubscriptionResponse
 {
 	[DataMember(Name = "isSuccess", EmitDefaultValue = true, IsRequired = true)]
@@ -10,4 +9,7 @@ public class CancelSubscriptionResponse
 
 	[DataMember(Name = "message", EmitDefaultValue = true, IsRequired = true)]
 	public string Message { get; set; }
+}
+
+
 }

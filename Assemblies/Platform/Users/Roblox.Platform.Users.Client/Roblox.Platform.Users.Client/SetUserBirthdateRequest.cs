@@ -1,9 +1,8 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 internal class SetUserBirthdateRequest
@@ -13,4 +12,6 @@ internal class SetUserBirthdateRequest
 
 	[DataMember(Name = "birthdate")]
 	public DateTime? Birthdate { get; set; }
+}
+
 }

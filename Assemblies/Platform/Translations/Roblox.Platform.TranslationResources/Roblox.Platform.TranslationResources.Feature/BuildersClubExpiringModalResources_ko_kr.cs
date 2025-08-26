@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubExpiringModalResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,42 +11,42 @@ internal class BuildersClubExpiringModalResources_ko_kr : BuildersClubExpiringMo
 	/// button text
 	/// English String: "No, thanks."
 	/// </summary>
-	public override string ActionNoThanks => "아니요, 갱신하지 않겠습니다.";
+	public override string ActionNoThanks => "ì•„ë‹ˆìš”, ê°±ì‹ í•˜ì§€ ì•Šê² ìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Action.WantToRenew"
 	/// button text
 	/// English String: "I Want To Renew!"
 	/// </summary>
-	public override string ActionWantToRenew => "갱신하고 싶어요!";
+	public override string ActionWantToRenew => "ê°±ì‹ í•˜ê³  ì‹¶ì–´ìš”!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpired"
 	/// description text
 	/// English String: "Oh, no! Your Builders Club membership has expired!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpired => "이런! Builders Club 멤버십이 만료되었습니다.";
+	public override string DescriptionBuildersClubExpired => "ì´ëŸ°! Builders Club ë©¤ë²„ì‹­ì´ ë§Œë£Œë˜ì—ˆìŠµë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringOneDay"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring in one day!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringOneDay => "이런! Builders Club 멤버십이 하루 후 만료됩니다.";
+	public override string DescriptionBuildersClubExpiringOneDay => "ì´ëŸ°! Builders Club ë©¤ë²„ì‹­ì´ í•˜ë£¨ í›„ ë§Œë£Œë©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringToday"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring today!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringToday => "이런! Builders Club 멤버십이 오늘 만료됩니다.";
+	public override string DescriptionBuildersClubExpiringToday => "ì´ëŸ°! Builders Club ë©¤ë²„ì‹­ì´ ì˜¤ëŠ˜ ë§Œë£Œë©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Heading.DontMissRenewNow"
 	/// modal heading
 	/// English String: "Don't Miss Out - Renew Now!"
 	/// </summary>
-	public override string HeadingDontMissRenewNow => "놓치지 마세요. 지금 갱신하세요!";
+	public override string HeadingDontMissRenewNow => "ë†“ì¹˜ì§€ ë§ˆì„¸ìš”. ì§€ê¸ˆ ê°±ì‹ í•˜ì„¸ìš”!";
 
 	public BuildersClubExpiringModalResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -55,22 +55,22 @@ internal class BuildersClubExpiringModalResources_ko_kr : BuildersClubExpiringMo
 
 	protected override string _GetTemplateForActionNoThanks()
 	{
-		return "아니요, 갱신하지 않겠습니다.";
+		return "ì•„ë‹ˆìš”, ê°±ì‹ í•˜ì§€ ì•Šê² ìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForActionWantToRenew()
 	{
-		return "갱신하고 싶어요!";
+		return "ê°±ì‹ í•˜ê³  ì‹¶ì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpired()
 	{
-		return "이런! Builders Club 멤버십이 만료되었습니다.";
+		return "ì´ëŸ°! Builders Club ë©¤ë²„ì‹­ì´ ë§Œë£Œë˜ì—ˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringOneDay()
 	{
-		return "이런! Builders Club 멤버십이 하루 후 만료됩니다.";
+		return "ì´ëŸ°! Builders Club ë©¤ë²„ì‹­ì´ í•˜ë£¨ í›„ ë§Œë£Œë©ë‹ˆë‹¤.";
 	}
 
 	/// <summary>
@@ -80,21 +80,24 @@ internal class BuildersClubExpiringModalResources_ko_kr : BuildersClubExpiringMo
 	/// </summary>
 	public override string DescriptionBuildersClubExpiringSomeDays(string numDays)
 	{
-		return $"이런! Builders Club 멤버십 {numDays}일 후 만료됩니다.";
+		return $"ì´ëŸ°! Builders Club ë©¤ë²„ì‹­ {numDays}ì¼ í›„ ë§Œë£Œë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringSomeDays()
 	{
-		return "이런! Builders Club 멤버십 {numDays}일 후 만료됩니다.";
+		return "ì´ëŸ°! Builders Club ë©¤ë²„ì‹­ {numDays}ì¼ í›„ ë§Œë£Œë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringToday()
 	{
-		return "이런! Builders Club 멤버십이 오늘 만료됩니다.";
+		return "ì´ëŸ°! Builders Club ë©¤ë²„ì‹­ì´ ì˜¤ëŠ˜ ë§Œë£Œë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForHeadingDontMissRenewNow()
 	{
-		return "놓치지 마세요. 지금 갱신하세요!";
+		return "ë†“ì¹˜ì§€ ë§ˆì„¸ìš”. ì§€ê¸ˆ ê°±ì‹ í•˜ì„¸ìš”!";
 	}
+}
+
+
 }

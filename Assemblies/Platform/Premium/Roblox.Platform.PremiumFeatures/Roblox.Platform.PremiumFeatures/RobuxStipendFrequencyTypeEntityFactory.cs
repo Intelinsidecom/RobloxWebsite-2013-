@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using Roblox.PremiumFeatures.Entities;
 using Roblox.PremiumFeatures.Interfaces.Entities;
 using Roblox.PremiumFeatures.Interfaces.EntityFactories;
+namespace Roblox.Platform.PremiumFeatures {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures;
-
-/// <summary>
 /// The entity factory for <see cref="T:Roblox.PremiumFeatures.Entities.RobuxStipendFrequencyTypeEntity" />
 /// </summary>
 public class RobuxStipendFrequencyTypeEntityFactory : IRobuxStipendFrequencyTypeEntityFactory
@@ -44,4 +43,7 @@ public class RobuxStipendFrequencyTypeEntityFactory : IRobuxStipendFrequencyType
 		}
 		return null;
 	}
+}
+
+
 }

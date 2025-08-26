@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Properties;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class PremiumFeatureActivationTasks_BillingTestDAL
 
-namespace Roblox.PremiumFeatures;
-
-public class PremiumFeatureActivationTasks_BillingTestDAL
 {
 	private long _ID;
 
@@ -100,4 +99,7 @@ public class PremiumFeatureActivationTasks_BillingTestDAL
 		queryParameters.Add(new SqlParameter("@ID", id));
 		return EntityHelper.GetEntityDAL(new DbInfo(ConnectionString, "PremiumFeatureActivationTasks_BillingTest_GetPremiumFeatureActivationTasks_BillingTestByID", queryParameters), BuildDAL);
 	}
+}
+
+
 }

@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameNameDescriptionChangeEventArgs : WebEventArgs
 
-public class GameNameDescriptionChangeEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The ID of universe of which name or description was changed.
@@ -32,3 +33,12 @@ public class GameNameDescriptionChangeEventArgs : WebEventArgs
 	/// </summary>
 	public string Field { get; set; }
 }
+
+
+}
+
+
+
+
+
+

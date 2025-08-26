@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GameLaunchGuestModeResourceFactory
 
-internal static class GameLaunchGuestModeResourceFactory
 {
 	public const string FullNamespace = "Feature.GameLaunchGuestMode";
 
@@ -21,4 +21,7 @@ internal static class GameLaunchGuestModeResourceFactory
 			_ => new GameLaunchGuestModeResources_en_us(state), 
 		};
 	}
+}
+
+
 }

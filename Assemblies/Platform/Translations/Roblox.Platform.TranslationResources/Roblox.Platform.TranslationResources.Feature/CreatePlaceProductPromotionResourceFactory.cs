@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class CreatePlaceProductPromotionResourceFactory
 
-internal static class CreatePlaceProductPromotionResourceFactory
 {
 	public const string FullNamespace = "Feature.CreatePlaceProductPromotion";
 
@@ -21,4 +21,7 @@ internal static class CreatePlaceProductPromotionResourceFactory
 			_ => new CreatePlaceProductPromotionResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameDetailsResources : ITranslationResources
 
-public interface IGameDetailsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.ShareGameToChat"
@@ -208,4 +208,7 @@ public interface IGameDetailsResources : ITranslationResources
 	/// English String: "{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}This game may not function as intended.{aTagEnd} The developer needs to update the game."
 	/// </summary>
 	string LabelExperimentalWarning(string aTagStartWithHref, string ExperimentalGamesInfoLink, string hrefEnd, string aTagEnd);
+}
+
+
 }

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.EventStream</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -14,38 +14,38 @@
   <ItemGroup>
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
-    <ProjectReference Include="..\\..\\Amazon\\Roblox.Amazon.Firehose\\Roblox.Amazon.Firehose.csproj">
+    <ProjectReference Include="..\..\Amazon\Roblox.Amazon.Firehose\Roblox.Amazon.Firehose.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\Roblox.EventLog\\Roblox.EventLog.csproj">
+    <ProjectReference Include="..\Roblox.EventLog\Roblox.EventLog.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Collections\\Roblox.Collections\\Roblox.Collections.csproj">
+    <ProjectReference Include="..\..\Collections\Roblox.Collections\Roblox.Collections.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Random\\Roblox.Random\\Roblox.Random.csproj">
+    <ProjectReference Include="..\..\Random\Roblox.Random\Roblox.Random.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+    <ProjectReference Include="..\..\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Coordination\\Roblox.Coordination\\Roblox.Coordination.csproj">
+    <ProjectReference Include="..\..\Coordination\Roblox.Coordination\Roblox.Coordination.csproj">
       <Project>
       </Project>
     </ProjectReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AWSSDK.Core" Version="3.7.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.200" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.1" />
   </ItemGroup>
 </Project>

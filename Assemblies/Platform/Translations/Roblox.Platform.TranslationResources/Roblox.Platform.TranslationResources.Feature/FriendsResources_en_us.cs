@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class FriendsResources_en_us : TranslationResourcesBase, IFriendsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class FriendsResources_en_us : TranslationResourcesBase, IFriendsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -787,4 +786,7 @@ internal class FriendsResources_en_us : TranslationResourcesBase, IFriendsResour
 	{
 		return "Users need to be in the same game.";
 	}
+}
+
+
 }

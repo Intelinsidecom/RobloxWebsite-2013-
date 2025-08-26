@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Newtonsoft.Json;
 using Roblox.GameInstances.Interfaces;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class RawGameSessionModel : IRawGameSessionModel
 
-namespace Roblox.GameInstances.Client;
-
-public class RawGameSessionModel : IRawGameSessionModel
 {
 	private class GameSessionModel
 	{
@@ -82,4 +81,7 @@ public class RawGameSessionModel : IRawGameSessionModel
 			PlaySessionFlags = (long)playSessionFlags
 		});
 	}
+}
+
+
 }

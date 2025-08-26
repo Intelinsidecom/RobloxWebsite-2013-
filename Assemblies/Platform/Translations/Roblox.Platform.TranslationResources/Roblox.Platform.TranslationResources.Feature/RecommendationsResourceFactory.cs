@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class RecommendationsResourceFactory
 
-internal static class RecommendationsResourceFactory
 {
 	public const string FullNamespace = "Feature.Recommendations";
 
@@ -21,4 +21,7 @@ internal static class RecommendationsResourceFactory
 			_ => new RecommendationsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUIinternal {
+    class FeaturesResources_en_us : TranslationResourcesBase, IFeaturesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.CommonUI;
-
-internal class FeaturesResources_en_us : TranslationResourcesBase, IFeaturesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -41,9 +40,9 @@ internal class FeaturesResources_en_us : TranslationResourcesBase, IFeaturesReso
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public virtual string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.";
+	public virtual string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
@@ -695,22 +694,22 @@ internal class FeaturesResources_en_us : TranslationResourcesBase, IFeaturesReso
 
 	protected virtual string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.";
+		return "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public virtual string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.";
+		return $"Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.";
 	}
 
 	protected virtual string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.";
+		return "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.";
 	}
 
 	protected virtual string _GetTemplateForDescriptionUnsupportedLanguage()
@@ -1005,4 +1004,7 @@ internal class FeaturesResources_en_us : TranslationResourcesBase, IFeaturesReso
 	{
 		return "Upgrade";
 	}
+}
+
+
 }

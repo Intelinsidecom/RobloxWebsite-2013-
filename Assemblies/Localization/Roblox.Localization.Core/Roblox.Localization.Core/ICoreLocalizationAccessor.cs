@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Localization.Core {
+    /// <summary>
 
-namespace Roblox.Platform.Localization.Core;
-
-/// <summary>
 /// An interface that provides core localization constructs needed.
 /// </summary>
 public interface ICoreLocalizationAccessor
@@ -107,4 +106,7 @@ public interface ICoreLocalizationAccessor
 	/// <param name="language">The <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily" /></param>
 	/// <returns>The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocale" /></returns>
 	ISupportedLocale GetDefaultSupportedLocaleFromLanguage(ILanguageFamily language);
+}
+
+
 }

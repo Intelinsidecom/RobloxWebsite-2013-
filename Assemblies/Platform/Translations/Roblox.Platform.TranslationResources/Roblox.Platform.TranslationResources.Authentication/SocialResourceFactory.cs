@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+    static class SocialResourceFactory
 
-internal static class SocialResourceFactory
 {
 	public const string FullNamespace = "Authentication.Social";
 
@@ -21,4 +21,7 @@ internal static class SocialResourceFactory
 			_ => new SocialResources_en_us(state), 
 		};
 	}
+}
+
+
 }

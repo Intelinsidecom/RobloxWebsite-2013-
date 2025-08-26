@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class WebUtilResources_en_us : TranslationResourcesBase, IWebUtilResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class WebUtilResources_en_us : TranslationResourcesBase, IWebUtilResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -295,4 +294,7 @@ internal class WebUtilResources_en_us : TranslationResourcesBase, IWebUtilResour
 	{
 		return "{years} years";
 	}
+}
+
+
 }

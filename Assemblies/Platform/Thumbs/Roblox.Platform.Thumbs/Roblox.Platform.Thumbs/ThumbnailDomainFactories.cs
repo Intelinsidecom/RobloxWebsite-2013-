@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Assets;
@@ -11,10 +11,9 @@ using Roblox.Thumbnails.Client;
 using Roblox.Thumbnails.RequestValidation;
 using Roblox.Thumbs.Properties;
 using Roblox.Web.Thumbnails;
+namespace Roblox.Platform.Thumbspublic {
+    class ThumbnailDomainFactories : DomainFactoriesBase
 
-namespace Roblox.Thumbs;
-
-public class ThumbnailDomainFactories : DomainFactoriesBase
 {
 	private ICounterRegistry _CounterRegistry;
 
@@ -78,4 +77,7 @@ public class ThumbnailDomainFactories : DomainFactoriesBase
 		ThumbnailInvalidator = new ThumbnailInvalidator(this);
 		ThumbnailDependenciesInvalidator = new ThumbnailDependenciesInvalidator(this);
 	}
+}
+
+
 }

@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// A factory for creating and retrieving <see cref="T:Roblox.Platform.Moderation.ISqsOpenTask" />.
 /// </summary>
 public interface ISqsOpenTaskFactory
@@ -19,4 +18,7 @@ public interface ISqsOpenTaskFactory
 	/// <exception cref="T:System.ArgumentNullException">Throws when the input queueIdentifier, or message is null.</exception>
 	/// <exception cref="T:System.ArgumentException">Throws when the ReceiptHandle or ReceiptRegionName of taskIdentifier is null or white space.</exception>
 	ISqsOpenTask Create(ITaskQueueIdentifier queueIdentifier, string message, DateTime taskExpiry, string worker, OpenTaskIdentifier taskIdentifier);
+}
+
+
 }

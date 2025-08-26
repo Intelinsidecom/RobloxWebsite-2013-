@@ -1,6 +1,9 @@
-namespace Roblox.Platform.Events;
+namespace Roblox.Events {
+    internal class SqsMessageWrapper
 
-internal class SqsMessageWrapper
 {
 	public string Message { get; set; }
+}
+
+
 }

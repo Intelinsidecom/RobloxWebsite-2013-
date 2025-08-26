@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures.Models.Interfaces;
+﻿namespace Roblox.Platform.PremiumFeatures.Models.Interfaces {
+    /// <summary>
 
-/// <summary>
 /// SubscriptionType Factory
 /// </summary>
 public interface ISubscriptionTypeFactory
@@ -19,4 +19,7 @@ public interface ISubscriptionTypeFactory
 	/// <param name="name">Product name</param>
 	/// <returns>If product is Builders Club type</returns>
 	bool IsBuildersClubType(string name);
+}
+
+
 }

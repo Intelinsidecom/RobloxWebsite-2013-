@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,7 +11,7 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 	/// button label
 	/// English String: "Continue in App"
 	/// </summary>
-	public override string ActionContinueInApp => "Continuar en la aplicación";
+	public override string ActionContinueInApp => "Continuar en la aplicaciÃ³n";
 
 	/// <summary>
 	/// Key: "Action.ContinueInBrowser"
@@ -46,28 +46,28 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "¡Juega Roblox en nuestra aplicación para móvil!";
+	public override string LabelPlayGamesInMobile => "Â¡Juega Roblox en nuestra aplicaciÃ³n para mÃ³vil!";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
 	/// The user is being encouraged to play on the native mobile Android app
 	/// English String: "Play Roblox in our Android app!"
 	/// </summary>
-	public override string MessageAppBumpAndroidDevice => "¡Juega Roblox en nuestra aplicación para Android!";
+	public override string MessageAppBumpAndroidDevice => "Â¡Juega Roblox en nuestra aplicaciÃ³n para Android!";
 
 	/// <summary>
 	/// Key: "Message.AppBumperUpsell"
 	/// The user is being encouraged to play through the mobile app.
 	/// English String: "Millions of games by players like you"
 	/// </summary>
-	public override string MessageAppBumperUpsell => "Millones de juegos generados por jugadores como tú";
+	public override string MessageAppBumperUpsell => "Millones de juegos generados por jugadores como tÃº";
 
 	/// <summary>
 	/// Key: "Message.AppBumpIOSDevice"
 	/// The user is being encouraged to play on the native mobile iOS app
 	/// English String: "Play Roblox in our iOS app!"
 	/// </summary>
-	public override string MessageAppBumpIOSDevice => "¡Juega Roblox en nuestra aplicación para iOS!";
+	public override string MessageAppBumpIOSDevice => "Â¡Juega Roblox en nuestra aplicaciÃ³n para iOS!";
 
 	public DownloadAppResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -76,7 +76,7 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForActionContinueInApp()
 	{
-		return "Continuar en la aplicación";
+		return "Continuar en la aplicaciÃ³n";
 	}
 
 	protected override string _GetTemplateForActionContinueInBrowser()
@@ -101,7 +101,7 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "¡Juega Roblox en nuestra aplicación para móvil!";
+		return "Â¡Juega Roblox en nuestra aplicaciÃ³n para mÃ³vil!";
 	}
 
 	/// <summary>
@@ -111,26 +111,29 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 	/// </summary>
 	public override string LabelReviewsCount(string reviewCount)
 	{
-		return $"{reviewCount} reseñas";
+		return $"{reviewCount} reseÃ±as";
 	}
 
 	protected override string _GetTemplateForLabelReviewsCount()
 	{
-		return "{reviewCount} reseñas";
+		return "{reviewCount} reseÃ±as";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpAndroidDevice()
 	{
-		return "¡Juega Roblox en nuestra aplicación para Android!";
+		return "Â¡Juega Roblox en nuestra aplicaciÃ³n para Android!";
 	}
 
 	protected override string _GetTemplateForMessageAppBumperUpsell()
 	{
-		return "Millones de juegos generados por jugadores como tú";
+		return "Millones de juegos generados por jugadores como tÃº";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpIOSDevice()
 	{
-		return "¡Juega Roblox en nuestra aplicación para iOS!";
+		return "Â¡Juega Roblox en nuestra aplicaciÃ³n para iOS!";
 	}
+}
+
+
 }

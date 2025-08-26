@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelopLandingResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelopLandingResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -78,9 +77,9 @@ internal class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelo
 	/// <summary>
 	/// Key: "Description.TestimonialAlexBalfanz"
 	/// testimonial
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
-	public virtual string DescriptionTestimonialAlexBalfanz => "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers.";
+	public virtual string DescriptionTestimonialAlexBalfanz => "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialAndrewBereza"
@@ -92,9 +91,9 @@ internal class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelo
 	/// <summary>
 	/// Key: "Description.TestimonialJacksonMunsell"
 	/// testimonial
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
-	public virtual string DescriptionTestimonialJacksonMunsell => "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community.";
+	public virtual string DescriptionTestimonialJacksonMunsell => "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialOne"
@@ -106,16 +105,16 @@ internal class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelo
 	/// <summary>
 	/// Key: "Description.TestimonialThree"
 	/// testimonial text
-	/// English String: "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers."
+	/// English String: "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers."
 	/// </summary>
-	public virtual string DescriptionTestimonialThree => "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers.";
+	public virtual string DescriptionTestimonialThree => "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers.";
 
 	/// <summary>
 	/// Key: "Description.TestimonialTwo"
 	/// description
-	/// English String: "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
+	/// English String: "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community."
 	/// </summary>
-	public virtual string DescriptionTestimonialTwo => "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community.";
+	public virtual string DescriptionTestimonialTwo => "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community.";
 
 	/// <summary>
 	/// Key: "Heading.EarnSeriousCash"
@@ -437,7 +436,7 @@ internal class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelo
 
 	protected virtual string _GetTemplateForDescriptionTestimonialAlexBalfanz()
 	{
-		return "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers.";
+		return "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers.";
 	}
 
 	protected virtual string _GetTemplateForDescriptionTestimonialAndrewBereza()
@@ -447,7 +446,7 @@ internal class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelo
 
 	protected virtual string _GetTemplateForDescriptionTestimonialJacksonMunsell()
 	{
-		return "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community.";
+		return "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community.";
 	}
 
 	protected virtual string _GetTemplateForDescriptionTestimonialOne()
@@ -457,12 +456,12 @@ internal class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelo
 
 	protected virtual string _GetTemplateForDescriptionTestimonialThree()
 	{
-		return "Roblox was so easy to get into. You can have a whole career on it because it’s such a hot platform and the team there is always providing great resources for developers.";
+		return "Roblox was so easy to get into. You can have a whole career on it because itâ€™s such a hot platform and the team there is always providing great resources for developers.";
 	}
 
 	protected virtual string _GetTemplateForDescriptionTestimonialTwo()
 	{
-		return "I enjoy creating games on Roblox because it’s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community.";
+		return "I enjoy creating games on Roblox because itâ€™s social. It takes the socialization of platforms like Facebook to a new level with the games and creativity of the community.";
 	}
 
 	protected virtual string _GetTemplateForHeadingEarnSeriousCash()
@@ -549,4 +548,7 @@ internal class DevelopLandingResources_en_us : TranslationResourcesBase, IDevelo
 	{
 		return "Jackson Munsell";
 	}
+}
+
+
 }

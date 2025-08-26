@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CaptchaResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -21,4 +21,7 @@ internal class CaptchaResources_de_de : CaptchaResources_en_us, ICaptchaResource
 	{
 		return "Bitte gib das Captcha ein";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TwoStepVerificationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -616,4 +616,7 @@ internal class TwoStepVerificationResources_id_id : TwoStepVerificationResources
 	{
 		return "Terlalu banyak karakter";
 	}
+}
+
+
 }

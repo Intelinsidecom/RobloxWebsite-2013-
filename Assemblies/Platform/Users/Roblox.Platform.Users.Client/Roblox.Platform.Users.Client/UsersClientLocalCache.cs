@@ -7,10 +7,9 @@ using Roblox.Configuration;
 using Roblox.DataV2.Core;
 using Roblox.EventLog;
 using Roblox.Http.ServiceClient;
-using Roblox.Users.Client.Properties;
-
-namespace Roblox.Users.Client;
-
+using Roblox.Platform.Users.Client.Properties;
+namespace Roblox.Platform.Users.Client
+{
 public class UsersClientLocalCache : IUsersClientCache
 {
 	internal static ILogger RequestLogger;
@@ -46,6 +45,7 @@ public class UsersClientLocalCache : IUsersClientCache
 		: this(Settings.Default, usersClient, usersClientAgentCache, StaticLoggerRegistry.Instance)
 	{
 	}
+
 
 	public UsersClientLocalCache(IUsersClient usersClient, IUsersClientAgentCache usersClientAgentCache, ILogger logger)
 		: this(Settings.Default, usersClient, usersClientAgentCache, logger)
@@ -364,3 +364,6 @@ public class UsersClientLocalCache : IUsersClientCache
 		return _Settings.DisplayNameHistoryCacheExpiry;
 	}
 }
+
+}
+

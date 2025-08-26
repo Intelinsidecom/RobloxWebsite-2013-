@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.Outfitspublic {
+    class OutfitAccoutrement : IRobloxEntity<long, OutfitAccoutrementDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 
-namespace Roblox.Outfits;
-
-public class OutfitAccoutrement : IRobloxEntity<long, OutfitAccoutrementDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 {
 	private OutfitAccoutrementDAL _EntityDAL;
 
@@ -134,4 +133,7 @@ public class OutfitAccoutrement : IRobloxEntity<long, OutfitAccoutrementDAL>, IC
 	{
 		yield return new StateToken($"OutfitID:{OutfitID}");
 	}
+}
+
+
 }

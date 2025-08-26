@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameGearOptionsDisplayResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class GameGearOptionsDisplayResources_pt_br : GameGearOptionsDisplayRes
 	/// Key: "LabelAllGenreAllowed"
 	/// English String: "All Genres Allowed"
 	/// </summary>
-	public override string LabelAllGenreAllowed => "Todos os gêneros permitidos";
+	public override string LabelAllGenreAllowed => "Todos os gÃªneros permitidos";
 
 	/// <summary>
 	/// Key: "LabelNoGear"
@@ -25,7 +25,7 @@ internal class GameGearOptionsDisplayResources_pt_br : GameGearOptionsDisplayRes
 
 	protected override string _GetTemplateForLabelAllGenreAllowed()
 	{
-		return "Todos os gêneros permitidos";
+		return "Todos os gÃªneros permitidos";
 	}
 
 	/// <summary>
@@ -46,4 +46,7 @@ internal class GameGearOptionsDisplayResources_pt_br : GameGearOptionsDisplayRes
 	{
 		return "Nenhum equipamento permitido";
 	}
+}
+
+
 }

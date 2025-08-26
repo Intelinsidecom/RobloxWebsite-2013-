@@ -1,10 +1,11 @@
-namespace Roblox.Platform.EventStream.WebEvents.Events;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class ChatConversationUsageEvent : WebEventBase
 
-public class ChatConversationUsageEvent : WebEventBase
 {
 	private const string _Name = "chatconversationusageevent";
 
-	public ChatConversationUsageEvent(EventStreamer streamer, ChatConversationUsageEventArgs args)
+	public ChatConversationUsageEvent(IEventStreamer streamer, ChatConversationUsageEventArgs args)
 		: base(streamer, "chatconversationusageevent", args)
 	{
 		AddEventArg("eventTime", args.EventTime.ToUniversalTime().ToString("o"));
@@ -13,3 +14,12 @@ public class ChatConversationUsageEvent : WebEventBase
 		AddEventArg("puids", string.Join(",", args.ParticipantUserIds));
 	}
 }
+
+
+}
+
+
+
+
+
+

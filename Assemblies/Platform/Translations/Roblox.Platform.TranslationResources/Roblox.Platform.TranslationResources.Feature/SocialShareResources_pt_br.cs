@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SocialShareResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -22,4 +22,7 @@ internal class SocialShareResources_pt_br : SocialShareResources_en_us, ISocialS
 	{
 		return "Comp.";
 	}
+}
+
+
 }

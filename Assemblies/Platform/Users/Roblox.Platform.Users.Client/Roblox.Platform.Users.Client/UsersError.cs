@@ -1,5 +1,5 @@
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public enum UsersError
 {
 	Unknown,
@@ -17,4 +17,6 @@ public enum UsersError
 	UnsupportedAnonymizedIdType,
 	InvalidNewDisplayName,
 	InvalidCurrentDisplayName
+}
+
 }

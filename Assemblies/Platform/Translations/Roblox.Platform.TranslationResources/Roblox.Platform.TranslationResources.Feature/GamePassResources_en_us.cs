@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class GamePassResources_en_us : TranslationResourcesBase, IGamePassResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class GamePassResources_en_us : TranslationResourcesBase, IGamePassResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -84,4 +83,7 @@ internal class GamePassResources_en_us : TranslationResourcesBase, IGamePassReso
 	{
 		return "Owned";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GamePageResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,92 +10,92 @@ internal class GamePageResources_zh_cn : GamePageResources_en_us, IGamePageResou
 	/// Key: "abelFilterDefault"
 	/// English String: "Default"
 	/// </summary>
-	public override string abelFilterDefault => "默认";
+	public override string abelFilterDefault => "é»˜è®¤";
 
 	/// <summary>
 	/// Key: "ActionDisableExperimentalMode"
 	/// English String: "Disable"
 	/// </summary>
-	public override string ActionDisableExperimentalMode => "停用";
+	public override string ActionDisableExperimentalMode => "åœç”¨";
 
 	/// <summary>
 	/// Key: "ActionSeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "查看全部";
+	public override string ActionSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
 
 	/// <summary>
 	/// Key: "HeadingExperimentalMode"
 	/// English String: "Experimental Mode Games"
 	/// </summary>
-	public override string HeadingExperimentalMode => "实验模式游戏";
+	public override string HeadingExperimentalMode => "å®žéªŒæ¨¡å¼æ¸¸æˆ";
 
 	/// <summary>
 	/// Key: "Label.FilterExperimental"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelFilterExperimental => "推荐";
+	public override string LabelFilterExperimental => "æŽ¨è";
 
 	/// <summary>
 	/// Key: "Label.MoreResults"
 	/// English String: "more results"
 	/// </summary>
-	public override string LabelMoreResults => "更多结果";
+	public override string LabelMoreResults => "æ›´å¤šç»“æžœ";
 
 	/// <summary>
 	/// Key: "Label.MoreResultsFor"
 	/// English String: "More Results For"
 	/// </summary>
-	public override string LabelMoreResultsFor => "更多搜索结果：";
+	public override string LabelMoreResultsFor => "æ›´å¤šæœç´¢ç»“æžœï¼š";
 
 	/// <summary>
 	/// Key: "Label.SponsoredAd"
 	/// text for label of sponsored game cards
 	/// English String: "Sponsored Ad"
 	/// </summary>
-	public override string LabelSponsoredAd => "赞助广告";
+	public override string LabelSponsoredAd => "èµžåŠ©å¹¿å‘Š";
 
 	/// <summary>
 	/// Key: "Label.TopResult"
 	/// English String: "Top Result"
 	/// </summary>
-	public override string LabelTopResult => "最佳结果";
+	public override string LabelTopResult => "æœ€ä½³ç»“æžœ";
 
 	/// <summary>
 	/// Key: "LabelCancelField"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancelField => "取消";
+	public override string LabelCancelField => "å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "LabelExperimental"
 	/// English String: "Experimental"
 	/// </summary>
-	public override string LabelExperimental => "实验性";
+	public override string LabelExperimental => "å®žéªŒæ€§";
 
 	/// <summary>
 	/// Key: "LabelExperimentalHelpText"
 	/// English String: "What's this?"
 	/// </summary>
-	public override string LabelExperimentalHelpText => "这是什么？";
+	public override string LabelExperimentalHelpText => "è¿™æ˜¯ä»€ä¹ˆï¼Ÿ";
 
 	/// <summary>
 	/// Key: "LabelExperimentalMode"
 	/// English String: "Experimental Mode"
 	/// </summary>
-	public override string LabelExperimentalMode => "实验模式";
+	public override string LabelExperimentalMode => "å®žéªŒæ¨¡å¼";
 
 	/// <summary>
 	/// Key: "LabelExperimentalResults"
 	/// English String: "These results contain Experimental Mode games."
 	/// </summary>
-	public override string LabelExperimentalResults => "以下结果包含实验模式游戏。";
+	public override string LabelExperimentalResults => "ä»¥ä¸‹ç»“æžœåŒ…å«å®žéªŒæ¨¡å¼æ¸¸æˆã€‚";
 
 	/// <summary>
 	/// Key: "LabelFilterAllTime"
 	/// English String: "All Time"
 	/// </summary>
-	public override string LabelFilterAllTime => "全部";
+	public override string LabelFilterAllTime => "å…¨éƒ¨";
 
 	/// <summary>
 	/// Key: "LabelFilterBuildersClub"
@@ -107,187 +107,187 @@ internal class GamePageResources_zh_cn : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelFilterBy"
 	/// English String: "Filter By"
 	/// </summary>
-	public override string LabelFilterBy => "过滤条件";
+	public override string LabelFilterBy => "è¿‡æ»¤æ¡ä»¶";
 
 	/// <summary>
 	/// Key: "LabelFilterContest"
 	/// English String: "Contest"
 	/// </summary>
-	public override string LabelFilterContest => "竞赛";
+	public override string LabelFilterContest => "ç«žèµ›";
 
 	/// <summary>
 	/// Key: "LabelFilterDefault"
 	/// English String: "Default"
 	/// </summary>
-	public override string LabelFilterDefault => "默认";
+	public override string LabelFilterDefault => "é»˜è®¤";
 
 	/// <summary>
 	/// Key: "LabelFilterFeatured"
 	/// English String: "Featured"
 	/// </summary>
-	public override string LabelFilterFeatured => "精选";
+	public override string LabelFilterFeatured => "ç²¾é€‰";
 
 	/// <summary>
 	/// Key: "LabelFilterFriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string LabelFilterFriendActivity => "好友动态";
+	public override string LabelFilterFriendActivity => "å¥½å‹åŠ¨æ€";
 
 	/// <summary>
 	/// Key: "LabelFilterGenre"
 	/// English String: "Genre"
 	/// </summary>
-	public override string LabelFilterGenre => "主题";
+	public override string LabelFilterGenre => "ä¸»é¢˜";
 
 	/// <summary>
 	/// Key: "LabelFilterMyFavorite"
 	/// English String: "My Favorite"
 	/// </summary>
-	public override string LabelFilterMyFavorite => "我的最爱";
+	public override string LabelFilterMyFavorite => "æˆ‘çš„æœ€çˆ±";
 
 	/// <summary>
 	/// Key: "LabelFilterMyFavorites"
 	/// English String: "My Favorites"
 	/// </summary>
-	public override string LabelFilterMyFavorites => "我的最爱";
+	public override string LabelFilterMyFavorites => "æˆ‘çš„æœ€çˆ±";
 
 	/// <summary>
 	/// Key: "LabelFilterMyRecent"
 	/// English String: "My Recent"
 	/// </summary>
-	public override string LabelFilterMyRecent => "我的最近活动";
+	public override string LabelFilterMyRecent => "æˆ‘çš„æœ€è¿‘æ´»åŠ¨";
 
 	/// <summary>
 	/// Key: "LabelFilterNow"
 	/// English String: "Now"
 	/// </summary>
-	public override string LabelFilterNow => "现在";
+	public override string LabelFilterNow => "çŽ°åœ¨";
 
 	/// <summary>
 	/// Key: "LabelFilterPastDay"
 	/// English String: "Past Day"
 	/// </summary>
-	public override string LabelFilterPastDay => "昨天";
+	public override string LabelFilterPastDay => "æ˜¨å¤©";
 
 	/// <summary>
 	/// Key: "LabelFilterPastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelFilterPastWeek => "上星期";
+	public override string LabelFilterPastWeek => "ä¸Šæ˜ŸæœŸ";
 
 	/// <summary>
 	/// Key: "LabelFilterPersonalizedByLiked"
 	/// English String: "Because You Liked"
 	/// </summary>
-	public override string LabelFilterPersonalizedByLiked => "因为你赞过";
+	public override string LabelFilterPersonalizedByLiked => "å› ä¸ºä½ èµžè¿‡";
 
 	/// <summary>
 	/// Key: "LabelFilterPersonalServer"
 	/// English String: "Personal Server"
 	/// </summary>
-	public override string LabelFilterPersonalServer => "个人服务器";
+	public override string LabelFilterPersonalServer => "ä¸ªäººæœåŠ¡å™¨";
 
 	/// <summary>
 	/// Key: "LabelFilterPopular"
 	/// English String: "Popular"
 	/// </summary>
-	public override string LabelFilterPopular => "热门";
+	public override string LabelFilterPopular => "çƒ­é—¨";
 
 	/// <summary>
 	/// Key: "LabelFilterPopularInVr"
 	/// English String: "Popular in VR"
 	/// </summary>
-	public override string LabelFilterPopularInVr => "VR 热门";
+	public override string LabelFilterPopularInVr => "VR çƒ­é—¨";
 
 	/// <summary>
 	/// Key: "LabelFilterPopularNearYou"
 	/// English String: "Popular Near You"
 	/// </summary>
-	public override string LabelFilterPopularNearYou => "你附近的热门";
+	public override string LabelFilterPopularNearYou => "ä½ é™„è¿‘çš„çƒ­é—¨";
 
 	/// <summary>
 	/// Key: "LabelFilterPopularWorldwide"
 	/// English String: "Popular Worldwide"
 	/// </summary>
-	public override string LabelFilterPopularWorldwide => "全球流行";
+	public override string LabelFilterPopularWorldwide => "å…¨çƒæµè¡Œ";
 
 	/// <summary>
 	/// Key: "LabelFilterPurchased"
 	/// English String: "Purchased"
 	/// </summary>
-	public override string LabelFilterPurchased => "已购买";
+	public override string LabelFilterPurchased => "å·²è´­ä¹°";
 
 	/// <summary>
 	/// Key: "LabelFilterRecentlyPlayed "
 	/// English String: "Recently Played"
 	/// </summary>
-	public override string LabelFilterRecentlyPlayed => "最近玩过";
+	public override string LabelFilterRecentlyPlayed => "æœ€è¿‘çŽ©è¿‡";
 
 	/// <summary>
 	/// Key: "LabelFilterTime"
 	/// English String: "Time"
 	/// </summary>
-	public override string LabelFilterTime => "时间";
+	public override string LabelFilterTime => "æ—¶é—´";
 
 	/// <summary>
 	/// Key: "LabelFilterTopFavorite"
 	/// English String: "Top Favorite"
 	/// </summary>
-	public override string LabelFilterTopFavorite => "最受喜爱";
+	public override string LabelFilterTopFavorite => "æœ€å—å–œçˆ±";
 
 	/// <summary>
 	/// Key: "LabelFilterTopGrossing"
 	/// English String: "Top Earning"
 	/// </summary>
-	public override string LabelFilterTopGrossing => "最高收入";
+	public override string LabelFilterTopGrossing => "æœ€é«˜æ”¶å…¥";
 
 	/// <summary>
 	/// Key: "LabelFilterTopPaid"
 	/// English String: "Top Paid"
 	/// </summary>
-	public override string LabelFilterTopPaid => "最高收益";
+	public override string LabelFilterTopPaid => "æœ€é«˜æ”¶ç›Š";
 
 	/// <summary>
 	/// Key: "LabelFilterTopRated"
 	/// English String: "Top Rated"
 	/// </summary>
-	public override string LabelFilterTopRated => "最高评分";
+	public override string LabelFilterTopRated => "æœ€é«˜è¯„åˆ†";
 
 	/// <summary>
 	/// Key: "LabelFilterTopRetaining"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelFilterTopRetaining => "推荐";
+	public override string LabelFilterTopRetaining => "æŽ¨è";
 
 	/// <summary>
 	/// Key: "LabelNoSearchResults"
 	/// English String: "No Search Results Found"
 	/// </summary>
-	public override string LabelNoSearchResults => "未找到搜索结果";
+	public override string LabelNoSearchResults => "æœªæ‰¾åˆ°æœç´¢ç»“æžœ";
 
 	/// <summary>
 	/// Key: "LabelSearchField"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearchField => "搜索";
+	public override string LabelSearchField => "æœç´¢";
 
 	/// <summary>
 	/// Key: "LabelSearchInsteadFor"
 	/// English String: "Search instead for"
 	/// </summary>
-	public override string LabelSearchInsteadFor => "仍然搜索";
+	public override string LabelSearchInsteadFor => "ä»ç„¶æœç´¢";
 
 	/// <summary>
 	/// Key: "LabelSearchYouMightMean"
 	/// English String: "Did you mean:"
 	/// </summary>
-	public override string LabelSearchYouMightMean => "你要找的是不是：";
+	public override string LabelSearchYouMightMean => "ä½ è¦æ‰¾çš„æ˜¯ä¸æ˜¯ï¼š";
 
 	/// <summary>
 	/// Key: "LabelShowingResultsFor"
 	/// English String: "Showing results for"
 	/// </summary>
-	public override string LabelShowingResultsFor => "显示的是搜索以下字符的结果：";
+	public override string LabelShowingResultsFor => "æ˜¾ç¤ºçš„æ˜¯æœç´¢ä»¥ä¸‹å­—ç¬¦çš„ç»“æžœï¼š";
 
 	public GamePageResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -296,52 +296,52 @@ internal class GamePageResources_zh_cn : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForabelFilterDefault()
 	{
-		return "默认";
+		return "é»˜è®¤";
 	}
 
 	protected override string _GetTemplateForActionDisableExperimentalMode()
 	{
-		return "停用";
+		return "åœç”¨";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "查看全部";
+		return "æŸ¥çœ‹å…¨éƒ¨";
 	}
 
 	protected override string _GetTemplateForHeadingExperimentalMode()
 	{
-		return "实验模式游戏";
+		return "å®žéªŒæ¨¡å¼æ¸¸æˆ";
 	}
 
 	protected override string _GetTemplateForLabelFilterExperimental()
 	{
-		return "推荐";
+		return "æŽ¨è";
 	}
 
 	protected override string _GetTemplateForLabelMoreResults()
 	{
-		return "更多结果";
+		return "æ›´å¤šç»“æžœ";
 	}
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
 	{
-		return "更多搜索结果：";
+		return "æ›´å¤šæœç´¢ç»“æžœï¼š";
 	}
 
 	protected override string _GetTemplateForLabelSponsoredAd()
 	{
-		return "赞助广告";
+		return "èµžåŠ©å¹¿å‘Š";
 	}
 
 	protected override string _GetTemplateForLabelTopResult()
 	{
-		return "最佳结果";
+		return "æœ€ä½³ç»“æžœ";
 	}
 
 	protected override string _GetTemplateForLabelCancelField()
 	{
-		return "取消";
+		return "å–æ¶ˆ";
 	}
 
 	/// <summary>
@@ -350,37 +350,37 @@ internal class GamePageResources_zh_cn : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelCreatorBy(string creatorLink)
 	{
-		return $"创作者 {creatorLink}";
+		return $"åˆ›ä½œè€… {creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelCreatorBy()
 	{
-		return "创作者 {creatorLink}";
+		return "åˆ›ä½œè€… {creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelExperimental()
 	{
-		return "实验性";
+		return "å®žéªŒæ€§";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalHelpText()
 	{
-		return "这是什么？";
+		return "è¿™æ˜¯ä»€ä¹ˆï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalMode()
 	{
-		return "实验模式";
+		return "å®žéªŒæ¨¡å¼";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalResults()
 	{
-		return "以下结果包含实验模式游戏。";
+		return "ä»¥ä¸‹ç»“æžœåŒ…å«å®žéªŒæ¨¡å¼æ¸¸æˆã€‚";
 	}
 
 	protected override string _GetTemplateForLabelFilterAllTime()
 	{
-		return "全部";
+		return "å…¨éƒ¨";
 	}
 
 	/// <summary>
@@ -389,12 +389,12 @@ internal class GamePageResources_zh_cn : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelFilterBecauseYouLiked(string gameName)
 	{
-		return $"因为你赞过 {gameName}";
+		return $"å› ä¸ºä½ èµžè¿‡ {gameName}";
 	}
 
 	protected override string _GetTemplateForLabelFilterBecauseYouLiked()
 	{
-		return "因为你赞过 {gameName}";
+		return "å› ä¸ºä½ èµžè¿‡ {gameName}";
 	}
 
 	protected override string _GetTemplateForLabelFilterBuildersClub()
@@ -404,77 +404,77 @@ internal class GamePageResources_zh_cn : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelFilterBy()
 	{
-		return "过滤条件";
+		return "è¿‡æ»¤æ¡ä»¶";
 	}
 
 	protected override string _GetTemplateForLabelFilterContest()
 	{
-		return "竞赛";
+		return "ç«žèµ›";
 	}
 
 	protected override string _GetTemplateForLabelFilterDefault()
 	{
-		return "默认";
+		return "é»˜è®¤";
 	}
 
 	protected override string _GetTemplateForLabelFilterFeatured()
 	{
-		return "精选";
+		return "ç²¾é€‰";
 	}
 
 	protected override string _GetTemplateForLabelFilterFriendActivity()
 	{
-		return "好友动态";
+		return "å¥½å‹åŠ¨æ€";
 	}
 
 	protected override string _GetTemplateForLabelFilterGenre()
 	{
-		return "主题";
+		return "ä¸»é¢˜";
 	}
 
 	protected override string _GetTemplateForLabelFilterMyFavorite()
 	{
-		return "我的最爱";
+		return "æˆ‘çš„æœ€çˆ±";
 	}
 
 	protected override string _GetTemplateForLabelFilterMyFavorites()
 	{
-		return "我的最爱";
+		return "æˆ‘çš„æœ€çˆ±";
 	}
 
 	protected override string _GetTemplateForLabelFilterMyRecent()
 	{
-		return "我的最近活动";
+		return "æˆ‘çš„æœ€è¿‘æ´»åŠ¨";
 	}
 
 	protected override string _GetTemplateForLabelFilterNow()
 	{
-		return "现在";
+		return "çŽ°åœ¨";
 	}
 
 	protected override string _GetTemplateForLabelFilterPastDay()
 	{
-		return "昨天";
+		return "æ˜¨å¤©";
 	}
 
 	protected override string _GetTemplateForLabelFilterPastWeek()
 	{
-		return "上星期";
+		return "ä¸Šæ˜ŸæœŸ";
 	}
 
 	protected override string _GetTemplateForLabelFilterPersonalizedByLiked()
 	{
-		return "因为你赞过";
+		return "å› ä¸ºä½ èµžè¿‡";
 	}
 
 	protected override string _GetTemplateForLabelFilterPersonalServer()
 	{
-		return "个人服务器";
+		return "ä¸ªäººæœåŠ¡å™¨";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopular()
 	{
-		return "热门";
+		return "çƒ­é—¨";
 	}
 
 	/// <summary>
@@ -483,72 +483,72 @@ internal class GamePageResources_zh_cn : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelFilterPopularByCountry(string CountryName)
 	{
-		return $"{CountryName}热门";
+		return $"{CountryName}çƒ­é—¨";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopularByCountry()
 	{
-		return "{CountryName}热门";
+		return "{CountryName}çƒ­é—¨";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopularInVr()
 	{
-		return "VR 热门";
+		return "VR çƒ­é—¨";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopularNearYou()
 	{
-		return "你附近的热门";
+		return "ä½ é™„è¿‘çš„çƒ­é—¨";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopularWorldwide()
 	{
-		return "全球流行";
+		return "å…¨çƒæµè¡Œ";
 	}
 
 	protected override string _GetTemplateForLabelFilterPurchased()
 	{
-		return "已购买";
+		return "å·²è´­ä¹°";
 	}
 
 	protected override string _GetTemplateForLabelFilterRecentlyPlayed()
 	{
-		return "最近玩过";
+		return "æœ€è¿‘çŽ©è¿‡";
 	}
 
 	protected override string _GetTemplateForLabelFilterTime()
 	{
-		return "时间";
+		return "æ—¶é—´";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopFavorite()
 	{
-		return "最受喜爱";
+		return "æœ€å—å–œçˆ±";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopGrossing()
 	{
-		return "最高收入";
+		return "æœ€é«˜æ”¶å…¥";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopPaid()
 	{
-		return "最高收益";
+		return "æœ€é«˜æ”¶ç›Š";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopRated()
 	{
-		return "最高评分";
+		return "æœ€é«˜è¯„åˆ†";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopRetaining()
 	{
-		return "推荐";
+		return "æŽ¨è";
 	}
 
 	protected override string _GetTemplateForLabelNoSearchResults()
 	{
-		return "未找到搜索结果";
+		return "æœªæ‰¾åˆ°æœç´¢ç»“æžœ";
 	}
 
 	/// <summary>
@@ -557,31 +557,34 @@ internal class GamePageResources_zh_cn : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelPlayingPhrase(string playerCount)
 	{
-		return $"{playerCount} 人正在玩";
+		return $"{playerCount} äººæ­£åœ¨çŽ©";
 	}
 
 	protected override string _GetTemplateForLabelPlayingPhrase()
 	{
-		return "{playerCount} 人正在玩";
+		return "{playerCount} äººæ­£åœ¨çŽ©";
 	}
 
 	protected override string _GetTemplateForLabelSearchField()
 	{
-		return "搜索";
+		return "æœç´¢";
 	}
 
 	protected override string _GetTemplateForLabelSearchInsteadFor()
 	{
-		return "仍然搜索";
+		return "ä»ç„¶æœç´¢";
 	}
 
 	protected override string _GetTemplateForLabelSearchYouMightMean()
 	{
-		return "你要找的是不是：";
+		return "ä½ è¦æ‰¾çš„æ˜¯ä¸æ˜¯ï¼š";
 	}
 
 	protected override string _GetTemplateForLabelShowingResultsFor()
 	{
-		return "显示的是搜索以下字符的结果：";
+		return "æ˜¾ç¤ºçš„æ˜¯æœç´¢ä»¥ä¸‹å­—ç¬¦çš„ç»“æžœï¼š";
 	}
+}
+
+
 }

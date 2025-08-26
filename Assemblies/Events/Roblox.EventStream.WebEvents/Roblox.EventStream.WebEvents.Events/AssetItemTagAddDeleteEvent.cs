@@ -1,8 +1,7 @@
-using Roblox.Platform.EventStream.WebEvents.EventArgs;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents.Events {
+    /// <inheritdoc />
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-/// <inheritdoc />
 /// Additionally, includes event args specific to Assets
 public class AssetItemTagAddDeleteEvent : ItemTagAddDeleteEvent
 {
@@ -14,3 +13,9 @@ public class AssetItemTagAddDeleteEvent : ItemTagAddDeleteEvent
 		AddEventArgIfNotNullDoesNotThrow("assetType", eventArgs.AssetType);
 	}
 }
+
+
+}
+
+
+

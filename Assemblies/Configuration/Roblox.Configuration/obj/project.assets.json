@@ -191,6 +191,16 @@
             "rid": "win"
           }
         }
+      },
+      "Roblox.EventLog/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.EventLog.dll": {}
+        }
       }
     }
   },
@@ -677,12 +687,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Roblox.EventLog/1.0.0": {
+      "type": "project",
+      "path": "../../Events/Roblox.EventLog/Roblox.EventLog.csproj",
+      "msbuildProject": "../../Events/Roblox.EventLog/Roblox.EventLog.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 13.0.3",
+      "Roblox.EventLog >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 4.7.0"
     ]
   },
@@ -718,7 +734,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

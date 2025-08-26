@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Roblox.Assets;
 using Roblox.CatalogItemChangePublisher.Properties;
 using Roblox.Economy;
@@ -9,10 +9,9 @@ using Roblox.Platform.Assets;
 using Roblox.Platform.Counters;
 using Roblox.Properties;
 using Roblox.WebsiteSettings.Properties;
+namespace Roblox.Platform.CatalogItemChangePublisherpublic {
+    static class CatalogItemEventListener
 
-namespace Roblox.CatalogItemChangePublisher;
-
-public static class CatalogItemEventListener
 {
 	private static IAssetOwnershipAuthority _AssetOwnershipAuthority { get; } = new AssetOwnershipAuthority(Asset.LookupAssetTypeId, "Roblox.CatalogItemChangePublisher", NoOpLogger.Instance);
 
@@ -147,4 +146,7 @@ public static class CatalogItemEventListener
 		}
 		return assetId;
 	}
+}
+
+
 }

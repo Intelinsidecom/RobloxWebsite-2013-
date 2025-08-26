@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Platform.MembershipCore;
+namespace Roblox.Marketing {
+    /// <summary>
 
-namespace Roblox.Platform.Marketing;
-
-/// <summary>
 /// An occurance of a Windows 10 App signup
 /// </summary>
 public interface IWin10AppSignup
@@ -17,4 +16,7 @@ public interface IWin10AppSignup
 	/// The time that <see cref="P:Roblox.Platform.Marketing.IWin10AppSignup.User" /> signed up.
 	/// </summary>
 	DateTime Created { get; }
+}
+
+
 }

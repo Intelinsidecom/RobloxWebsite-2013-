@@ -1,12 +1,11 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Roblox.Serialization.Json;
+namespace Roblox.Platform.StaticContent.Client {
+    [DataContract]
 
-namespace Roblox.StaticContent.Client;
-
-[DataContract]
 [ExcludeFromCodeCoverage]
 public class StaticContent
 {
@@ -32,4 +31,7 @@ public class StaticContent
 	[DataMember(Name = "updated")]
 	[JsonConverter(typeof(KindAwareDateTimeConverter))]
 	public DateTime Updated { get; set; }
+}
+
+
 }

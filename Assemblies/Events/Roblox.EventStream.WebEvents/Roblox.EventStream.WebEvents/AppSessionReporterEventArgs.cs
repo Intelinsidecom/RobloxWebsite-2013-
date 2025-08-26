@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-/// <summary>
 /// Represents the event arguments for an <see cref="T:Roblox.Platform.EventStream.WebEvents.AppSessionReporterEvent" />.
 /// </summary>
 public class AppSessionReporterEventArgs : WebEventArgs
@@ -22,3 +22,12 @@ public class AppSessionReporterEventArgs : WebEventArgs
 	/// </summary>
 	public DateTime EventTime { get; set; }
 }
+
+
+}
+
+
+
+
+
+

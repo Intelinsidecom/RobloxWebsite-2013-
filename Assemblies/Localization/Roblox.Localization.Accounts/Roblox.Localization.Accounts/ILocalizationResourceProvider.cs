@@ -1,10 +1,9 @@
-using Roblox.Platform.Localization.Core;
+﻿using Roblox.Platform.Localization.Core;
 using Roblox.Platform.Membership;
 using Roblox.TranslationResources;
+namespace Roblox.Localization.Accounts {
+    /// <summary>
 
-namespace Roblox.Platform.Localization.Accounts;
-
-/// <summary>
 /// Common Interface to access Locale specific resources.
 /// </summary>
 public interface ILocalizationResourceProvider
@@ -23,4 +22,7 @@ public interface ILocalizationResourceProvider
 	/// <param name="locale">Locale for which resource will be returned</param>
 	/// <returns>Localized resource based on locale<see cref="T:Roblox.TranslationResources.IMasterResources" /></returns>
 	IMasterResources GetLocalizationResourcesForSpecificLocale(IUser user, SupportedLocaleEnum locale);
+}
+
+
 }

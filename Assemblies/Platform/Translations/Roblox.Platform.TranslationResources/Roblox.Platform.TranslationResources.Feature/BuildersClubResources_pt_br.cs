@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -51,12 +51,12 @@ internal class BuildersClubResources_pt_br : BuildersClubResources_en_us, IBuild
 	/// </summary>
 	public override string DescriptionBuildersClubOnlyModel(string bcRequirementName)
 	{
-		return $"Este é um item premium somente disponível para nossos membros {bcRequirementName}.";
+		return $"Este Ã© um item premium somente disponÃ­vel para nossos membros {bcRequirementName}.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubOnlyModel()
 	{
-		return "Este é um item premium somente disponível para nossos membros {bcRequirementName}.";
+		return "Este Ã© um item premium somente disponÃ­vel para nossos membros {bcRequirementName}.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubOnly()
@@ -68,4 +68,7 @@ internal class BuildersClubResources_pt_br : BuildersClubResources_en_us, IBuild
 	{
 		return "Fechar";
 	}
+}
+
+
 }

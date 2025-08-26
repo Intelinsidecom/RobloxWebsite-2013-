@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,63 +11,63 @@ internal class DownloadAppResources_ko_kr : DownloadAppResources_en_us, IDownloa
 	/// button label
 	/// English String: "Continue in App"
 	/// </summary>
-	public override string ActionContinueInApp => "앱에서 계속";
+	public override string ActionContinueInApp => "ì•±ì—ì„œ ê³„ì†";
 
 	/// <summary>
 	/// Key: "Action.ContinueInBrowser"
 	/// button label
 	/// English String: "Continue in browser"
 	/// </summary>
-	public override string ActionContinueInBrowser => "브라우저에서 계속";
+	public override string ActionContinueInBrowser => "ë¸Œë¼ìš°ì €ì—ì„œ ê³„ì†";
 
 	/// <summary>
 	/// Key: "Action.Play"
 	/// Button that takes the user to the game.
 	/// English String: "Play"
 	/// </summary>
-	public override string ActionPlay => "플레이";
+	public override string ActionPlay => "í”Œë ˆì´";
 
 	/// <summary>
 	/// Key: "Heading.RobloxForAndroid"
 	/// heading for the page
 	/// English String: "Roblox for Android"
 	/// </summary>
-	public override string HeadingRobloxForAndroid => "Roblox (Android용)";
+	public override string HeadingRobloxForAndroid => "Roblox (Androidìš©)";
 
 	/// <summary>
 	/// Key: "Heading.RobloxForIos"
 	/// heading for page
 	/// English String: "Roblox for iOS"
 	/// </summary>
-	public override string HeadingRobloxForIos => "Roblox (iOS용)";
+	public override string HeadingRobloxForIos => "Roblox (iOSìš©)";
 
 	/// <summary>
 	/// Key: "Label.PlayGamesInMobile"
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "모바일 앱으로 Roblox를 플레이하세요!";
+	public override string LabelPlayGamesInMobile => "ëª¨ë°”ì¼ ì•±ìœ¼ë¡œ Robloxë¥¼ í”Œë ˆì´í•˜ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
 	/// The user is being encouraged to play on the native mobile Android app
 	/// English String: "Play Roblox in our Android app!"
 	/// </summary>
-	public override string MessageAppBumpAndroidDevice => "Android 앱으로 Roblox를 플레이하세요!";
+	public override string MessageAppBumpAndroidDevice => "Android ì•±ìœ¼ë¡œ Robloxë¥¼ í”Œë ˆì´í•˜ì„¸ìš”!";
 
 	/// <summary>
 	/// Key: "Message.AppBumperUpsell"
 	/// The user is being encouraged to play through the mobile app.
 	/// English String: "Millions of games by players like you"
 	/// </summary>
-	public override string MessageAppBumperUpsell => "회원님과 같은 플레이어들이 만든 수많은 게임";
+	public override string MessageAppBumperUpsell => "íšŒì›ë‹˜ê³¼ ê°™ì€ í”Œë ˆì´ì–´ë“¤ì´ ë§Œë“  ìˆ˜ë§Žì€ ê²Œìž„";
 
 	/// <summary>
 	/// Key: "Message.AppBumpIOSDevice"
 	/// The user is being encouraged to play on the native mobile iOS app
 	/// English String: "Play Roblox in our iOS app!"
 	/// </summary>
-	public override string MessageAppBumpIOSDevice => "iOS 앱으로 Roblox를 플레이하세요!";
+	public override string MessageAppBumpIOSDevice => "iOS ì•±ìœ¼ë¡œ Robloxë¥¼ í”Œë ˆì´í•˜ì„¸ìš”!";
 
 	public DownloadAppResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -76,32 +76,32 @@ internal class DownloadAppResources_ko_kr : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForActionContinueInApp()
 	{
-		return "앱에서 계속";
+		return "ì•±ì—ì„œ ê³„ì†";
 	}
 
 	protected override string _GetTemplateForActionContinueInBrowser()
 	{
-		return "브라우저에서 계속";
+		return "ë¸Œë¼ìš°ì €ì—ì„œ ê³„ì†";
 	}
 
 	protected override string _GetTemplateForActionPlay()
 	{
-		return "플레이";
+		return "í”Œë ˆì´";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxForAndroid()
 	{
-		return "Roblox (Android용)";
+		return "Roblox (Androidìš©)";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxForIos()
 	{
-		return "Roblox (iOS용)";
+		return "Roblox (iOSìš©)";
 	}
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "모바일 앱으로 Roblox를 플레이하세요!";
+		return "ëª¨ë°”ì¼ ì•±ìœ¼ë¡œ Robloxë¥¼ í”Œë ˆì´í•˜ì„¸ìš”!";
 	}
 
 	/// <summary>
@@ -111,26 +111,29 @@ internal class DownloadAppResources_ko_kr : DownloadAppResources_en_us, IDownloa
 	/// </summary>
 	public override string LabelReviewsCount(string reviewCount)
 	{
-		return $"리뷰 {reviewCount}개";
+		return $"ë¦¬ë·° {reviewCount}ê°œ";
 	}
 
 	protected override string _GetTemplateForLabelReviewsCount()
 	{
-		return "리뷰 {reviewCount}개";
+		return "ë¦¬ë·° {reviewCount}ê°œ";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpAndroidDevice()
 	{
-		return "Android 앱으로 Roblox를 플레이하세요!";
+		return "Android ì•±ìœ¼ë¡œ Robloxë¥¼ í”Œë ˆì´í•˜ì„¸ìš”!";
 	}
 
 	protected override string _GetTemplateForMessageAppBumperUpsell()
 	{
-		return "회원님과 같은 플레이어들이 만든 수많은 게임";
+		return "íšŒì›ë‹˜ê³¼ ê°™ì€ í”Œë ˆì´ì–´ë“¤ì´ ë§Œë“  ìˆ˜ë§Žì€ ê²Œìž„";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpIOSDevice()
 	{
-		return "iOS 앱으로 Roblox를 플레이하세요!";
+		return "iOS ì•±ìœ¼ë¡œ Robloxë¥¼ í”Œë ˆì´í•˜ì„¸ìš”!";
 	}
+}
+
+
 }

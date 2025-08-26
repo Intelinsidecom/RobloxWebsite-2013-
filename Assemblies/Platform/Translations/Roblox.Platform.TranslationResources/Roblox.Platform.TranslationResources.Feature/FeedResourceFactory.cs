@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class FeedResourceFactory
 
-internal static class FeedResourceFactory
 {
 	public const string FullNamespace = "Feature.Feed";
 
@@ -21,4 +21,7 @@ internal static class FeedResourceFactory
 			_ => new FeedResources_en_us(state), 
 		};
 	}
+}
+
+
 }

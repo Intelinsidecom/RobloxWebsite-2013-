@@ -1,7 +1,8 @@
 param(
     [string]$Root = $PSScriptRoot,
     [string]$ReportPath,
-    [switch]$Verbose
+    [switch]$Verbose,
+    [switch]$ScanScripts # optional: include scanning of script files for literal .csproj paths
 )
 
 $ErrorActionPreference = 'Stop'
@@ -129,36 +130,61 @@ foreach ($sln in $slnFiles) {
 }
 
 # 3) Optional: scan build scripts for literal csproj paths (lightweight)
-Write-Host "\nScanning build scripts for literal csproj paths..." -ForegroundColor Cyan
-$scriptFiles = Get-ChildItem -LiteralPath $rootPath -Recurse -File -Force -Include *.ps1,*.cmd,*.bat,*.props,*.targets
-$literalIssues = New-Object System.Collections.Generic.List[object]
-foreach ($sf in $scriptFiles) {
-    $txt = Get-Content -LiteralPath $sf.FullName -Raw
-    $matches = [System.Text.RegularExpressions.Regex]::Matches($txt, "(?im)([^\r\n]*?)([\\/][^\r\n]*?\.csproj)")
-    foreach ($m in $matches) {
-        $rel = $m.Groups[2].Value
-        # Try resolve relative to file dir when appears relative
-        $resolved = $null
-        try {
-            $resolved = Resolve-Path -LiteralPath (Join-Path ([System.IO.Path]::GetDirectoryName($sf.FullName)) $rel) -ErrorAction Stop
-            $resolved = $resolved.Path
-        } catch { }
-        if ($resolved -and (Test-Path -LiteralPath $resolved)) { continue }
-        $leaf = [System.IO.Path]::GetFileName($rel)
-        $candidates = @()
-        if ($leaf -and $projectByLeaf.ContainsKey($leaf)) { $candidates = $projectByLeaf[$leaf] }
-        $literalIssues.Add([pscustomobject]@{
-            File        = $sf.FullName
-            Snippet     = $m.Groups[0].Value.Trim()
-            IncludePath = $rel
-            Resolved    = $resolved
-            Exists      = $false
-            Candidates  = ($candidates -join '; ')
-        }) | Out-Null
-        if ($Verbose) {
-            Write-Host "Potential script reference -> $($sf.FullName) :: $rel" -ForegroundColor DarkYellow
+if ($ScanScripts) {
+    $scriptTotalMatches = 0
+    $scriptUnresolvedMatches = 0
+    Write-Host "\nScanning build scripts for literal csproj paths..." -ForegroundColor Cyan
+    $scriptFiles = Get-ChildItem -LiteralPath $rootPath -Recurse -File -Force -Include *.ps1,*.cmd,*.bat,*.props,*.targets
+    $literalIssues = New-Object System.Collections.Generic.List[object]
+    foreach ($sf in $scriptFiles) {
+        # Skip analyzing this script to avoid self-matching its regex/source strings
+        if ([System.IO.Path]::GetFileName($sf.FullName) -eq 'Analyze-PlatformMove.ps1') { continue }
+        $txt = Get-Content -LiteralPath $sf.FullName -Raw
+        # Tightened pattern: avoid matching escape sequences like \n, \r, \t as path separators
+        $matches = [System.Text.RegularExpressions.Regex]::Matches($txt, "(?im)([^\r\n]*?)((?:\\\\|/)(?![nrt](?![A-Za-z0-9]))[^\r\n]*?\.csproj)")
+        foreach ($m in $matches) {
+            $scriptTotalMatches++
+            $rel = $m.Groups[2].Value
+            # Normalize quotes/whitespace around the captured path
+            $rel = $rel.Trim()
+            if ($rel.StartsWith('"') -and $rel.EndsWith('"')) { $rel = $rel.Trim('"') }
+            # Try resolve relative to file dir when appears relative
+            $resolved = $null
+            try {
+                $resolved = Resolve-Path -LiteralPath (Join-Path ([System.IO.Path]::GetDirectoryName($sf.FullName)) $rel) -ErrorAction Stop
+                $resolved = $resolved.Path
+            } catch { }
+            if ($resolved -and (Test-Path -LiteralPath $resolved)) {
+                # Always show resolved detections so users see progress
+                Write-Host "OK script reference ->" -NoNewline; Write-Host " $($sf.FullName) :: $rel" -ForegroundColor DarkGreen
+                continue
+            }
+            # Derive leaf safely; $rel may contain illegal path characters from script literals
+            $leaf = $null
+            try {
+                if ($rel -and ($rel -notmatch '[<>:"\|\?\*]')) { $leaf = [System.IO.Path]::GetFileName($rel) }
+            } catch { $leaf = $null }
+            $candidates = @()
+            if ($leaf -and $projectByLeaf.ContainsKey($leaf)) { $candidates = $projectByLeaf[$leaf] }
+            $scriptUnresolvedMatches++
+            $literalIssues.Add([pscustomobject]@{
+                File        = $sf.FullName
+                Snippet     = $m.Groups[0].Value.Trim()
+                IncludePath = $rel
+                Resolved    = $resolved
+                Exists      = $false
+                Candidates  = ($candidates -join '; ')
+            }) | Out-Null
+            # Always inform the user about unresolved script literal references
+            Write-Host "Potential script reference ->" -NoNewline; Write-Host " $($sf.FullName) :: $rel" -ForegroundColor Yellow
+            Write-Host "  Snippet:     $($m.Groups[0].Value.Trim())" -ForegroundColor DarkYellow
+            Write-Host "  Detected:    $($(if ($leaf) { $leaf } else { '<unparseable>' }))" -ForegroundColor DarkYellow
+            if ($resolved) { Write-Host "  Resolved:    $resolved" -ForegroundColor DarkYellow }
+            if ($candidates.Count -gt 0) { Write-Host "  Suggested:   $($candidates -join '; ')" -ForegroundColor DarkYellow } else { Write-Host "  Suggested:   <none>" -ForegroundColor DarkYellow }
         }
     }
+    # Summary for script scan
+    Write-Host ("Build scripts scan: processed {0} reference(s), unresolved {1}." -f $scriptTotalMatches, $scriptUnresolvedMatches) -ForegroundColor Cyan
 }
 
 # Write report

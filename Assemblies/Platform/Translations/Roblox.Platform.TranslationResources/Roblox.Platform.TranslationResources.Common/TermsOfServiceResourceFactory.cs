@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+    static class TermsOfServiceResourceFactory
 
-internal static class TermsOfServiceResourceFactory
 {
 	public const string FullNamespace = "Common.TermsOfService";
 
@@ -21,4 +21,7 @@ internal static class TermsOfServiceResourceFactory
 			_ => new TermsOfServiceResources_en_us(state), 
 		};
 	}
+}
+
+
 }

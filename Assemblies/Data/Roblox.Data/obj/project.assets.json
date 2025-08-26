@@ -2,6 +2,51 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Azure.Core/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "System.ClientModel": "1.0.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.1",
+          "System.Memory.Data": "1.0.2",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.7.2",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Identity/1.11.4": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.38.0",
+          "Microsoft.Identity.Client": "4.61.3",
+          "Microsoft.Identity.Client.Extensions.Msal": "4.61.3",
+          "System.Memory": "4.5.4",
+          "System.Security.Cryptography.ProtectedData": "4.7.0",
+          "System.Text.Json": "4.7.2",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Identity.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Identity.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Consul/1.6.10.4": {
         "type": "package",
         "dependencies": {
@@ -31,6 +76,266 @@
           }
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Microsoft.CSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Data.SqlClient/5.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Identity": "1.11.4",
+          "Microsoft.Data.SqlClient.SNI.runtime": "5.2.0",
+          "Microsoft.Identity.Client": "4.61.3",
+          "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0",
+          "Microsoft.SqlServer.Server": "1.0.0",
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Diagnostics.DiagnosticSource": "6.0.1",
+          "System.Runtime.Caching": "6.0.0",
+          "System.Runtime.Loader": "4.3.0",
+          "System.Security.Cryptography.Cng": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/netstandard2.0/de/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pt-BR/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard2.0/Microsoft.Data.SqlClient.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Microsoft.Data.SqlClient.SNI.runtime/5.2.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Microsoft.Identity.Client/4.61.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "6.35.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Identity.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Identity.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Identity.Client.Extensions.Msal/4.61.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "4.61.3",
+          "System.IO.FileSystem.AccessControl": "5.0.0",
+          "System.Security.Cryptography.ProtectedData": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Abstractions/6.35.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/6.35.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.35.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/6.35.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "6.35.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/6.35.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "6.35.0",
+          "Microsoft.IdentityModel.Tokens": "6.35.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.35.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "6.35.0",
+          "System.IdentityModel.Tokens.Jwt": "6.35.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/6.35.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.IdentityModel.Logging": "6.35.0",
+          "System.Security.Cryptography.Cng": "4.5.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -47,6 +352,19 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.SqlServer.Server/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Win32.Primitives/4.3.0": {
@@ -363,6 +681,23 @@
           }
         }
       },
+      "System.ClientModel/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory.Data": "1.0.2",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.ClientModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ClientModel.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -418,32 +753,19 @@
           "lib/netstandard1.3/System.Collections.NonGeneric.dll": {}
         }
       },
-      "System.Configuration.ConfigurationManager/4.7.0": {
+      "System.Configuration.ConfigurationManager/6.0.1": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.7.0",
-          "System.Security.Permissions": "4.7.0"
+          "System.Security.Cryptography.ProtectedData": "6.0.0",
+          "System.Security.Permissions": "6.0.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Data.SqlClient/4.9.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Data.SqlClient.dll": {
             "related": ".xml"
           }
         }
@@ -457,6 +779,23 @@
         },
         "compile": {
           "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
         }
@@ -540,6 +879,23 @@
           }
         }
       },
+      "System.IdentityModel.Tokens.Jwt/6.35.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
+          "Microsoft.IdentityModel.Tokens": "6.35.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.IO/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -608,6 +964,31 @@
           }
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -654,6 +1035,23 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory.Data/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {
             "related": ".xml"
           }
         }
@@ -770,7 +1168,7 @@
           }
         }
       },
-      "System.Numerics.Vectors/4.4.0": {
+      "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Numerics.Vectors.dll": {
@@ -934,13 +1332,13 @@
           }
         }
       },
-      "System.Runtime.Caching/4.7.0": {
+      "System.Runtime.Caching/6.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Runtime.Caching.dll": {
+          "lib/netstandard2.0/System.Runtime.Caching.dll": {
             "related": ".xml"
           }
         },
@@ -956,10 +1354,10 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
         },
@@ -1037,6 +1435,22 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Runtime.Loader/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
         }
       },
       "System.Runtime.Numerics/4.3.0": {
@@ -1134,29 +1548,19 @@
           }
         }
       },
-      "System.Security.Cryptography.Cng/4.3.0": {
+      "System.Security.Cryptography.Cng/5.0.0": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Encoding": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.3.0",
-          "System.Text.Encoding": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.6/_._": {}
+          "ref/netstandard2.0/System.Security.Cryptography.Cng.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.Cng.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
           "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
             "assetType": "runtime",
             "rid": "win"
@@ -1274,13 +1678,13 @@
           "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
         }
       },
-      "System.Security.Cryptography.ProtectedData/4.7.0": {
+      "System.Security.Cryptography.ProtectedData/6.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.3"
+          "System.Memory": "4.5.4"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
             "related": ".xml"
           }
         },
@@ -1403,6 +1807,69 @@
           }
         }
       },
+      "System.Text.Encoding.CodePages/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Text.Json/4.7.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1",
+          "System.Text.Encodings.Web": "4.7.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1446,6 +1913,22 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
             "related": ".xml"
           }
         }
@@ -1518,6 +2001,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Roblox.EventLog": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -1532,6 +2016,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
+          "Roblox.EventLog": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -1640,6 +2125,44 @@
     }
   },
   "libraries": {
+    "Azure.Core/1.38.0": {
+      "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
+      "type": "package",
+      "path": "azure.core/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.core.1.38.0.nupkg.sha512",
+        "azure.core.nuspec",
+        "azureicon.png",
+        "lib/net461/Azure.Core.dll",
+        "lib/net461/Azure.Core.xml",
+        "lib/net472/Azure.Core.dll",
+        "lib/net472/Azure.Core.xml",
+        "lib/net6.0/Azure.Core.dll",
+        "lib/net6.0/Azure.Core.xml",
+        "lib/netstandard2.0/Azure.Core.dll",
+        "lib/netstandard2.0/Azure.Core.xml"
+      ]
+    },
+    "Azure.Identity/1.11.4": {
+      "sha512": "Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
+      "type": "package",
+      "path": "azure.identity/1.11.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.identity.1.11.4.nupkg.sha512",
+        "azure.identity.nuspec",
+        "azureicon.png",
+        "lib/netstandard2.0/Azure.Identity.dll",
+        "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
     "Consul/1.6.10.4": {
       "sha512": "5L3O7XirEx3bJ03OjMVdi/hdRLpkH/gRilgMZzk55Is5ttJ4GamwW+aONfFVneTKRKBpcCw/gIH5qoz4zomi1g==",
       "type": "package",
@@ -1680,6 +2203,382 @@
         "lib/netstandard2.1/DnsClient.xml"
       ]
     },
+    "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
+      "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "type": "package",
+      "path": "microsoft.csharp/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Data.SqlClient/5.2.2": {
+      "sha512": "mtoeRMh7F/OA536c/Cnh8L4H0uLSKB5kSmoi54oN7Fp0hNJDy22IqyMhaMH4PkDCqI7xL//Fvg9ldtuPHG0h5g==",
+      "type": "package",
+      "path": "microsoft.data.sqlclient/5.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnet.png",
+        "lib/net462/Microsoft.Data.SqlClient.dll",
+        "lib/net462/Microsoft.Data.SqlClient.xml",
+        "lib/net462/de/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/es/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/fr/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/it/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/ja/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/ko/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/pt-BR/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/ru/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/Microsoft.Data.SqlClient.dll",
+        "lib/net6.0/Microsoft.Data.SqlClient.xml",
+        "lib/net6.0/de/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/es/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/fr/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/it/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/ja/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/ko/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/pt-BR/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/ru/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net6.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/Microsoft.Data.SqlClient.dll",
+        "lib/net8.0/Microsoft.Data.SqlClient.xml",
+        "lib/net8.0/de/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/es/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/fr/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/it/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/ja/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/ko/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/pt-BR/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/ru/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net8.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.xml",
+        "lib/netstandard2.0/de/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/es/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/fr/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/it/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/ja/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/ko/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/pt-BR/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/ru/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
+        "lib/netstandard2.1/Microsoft.Data.SqlClient.xml",
+        "lib/netstandard2.1/de/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/es/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/fr/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/it/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/ja/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/ko/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/pt-BR/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/ru/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netstandard2.1/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
+        "microsoft.data.sqlclient.5.2.2.nupkg.sha512",
+        "microsoft.data.sqlclient.nuspec",
+        "ref/net462/Microsoft.Data.SqlClient.dll",
+        "ref/net462/Microsoft.Data.SqlClient.xml",
+        "ref/net6.0/Microsoft.Data.SqlClient.dll",
+        "ref/net6.0/Microsoft.Data.SqlClient.xml",
+        "ref/net8.0/Microsoft.Data.SqlClient.dll",
+        "ref/net8.0/Microsoft.Data.SqlClient.xml",
+        "ref/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "ref/netstandard2.0/Microsoft.Data.SqlClient.xml",
+        "ref/netstandard2.1/Microsoft.Data.SqlClient.dll",
+        "ref/netstandard2.1/Microsoft.Data.SqlClient.xml",
+        "runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/net462/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard2.1/Microsoft.Data.SqlClient.dll"
+      ]
+    },
+    "Microsoft.Data.SqlClient.SNI.runtime/5.2.0": {
+      "sha512": "po1jhvFd+8pbfvJR/puh+fkHi0GRanAdvayh/0e47yaM6CXWZ6opUjCMFuYlAnD2LcbyvQE7fPJKvogmaUcN+w==",
+      "type": "package",
+      "path": "microsoft.data.sqlclient.sni.runtime/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "dotnet.png",
+        "microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
+        "microsoft.data.sqlclient.sni.runtime.nuspec",
+        "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll",
+        "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll",
+        "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll",
+        "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
+      ]
+    },
+    "Microsoft.Identity.Client/4.61.3": {
+      "sha512": "naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA==",
+      "type": "package",
+      "path": "microsoft.identity.client/4.61.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Microsoft.Identity.Client.dll",
+        "lib/net462/Microsoft.Identity.Client.xml",
+        "lib/net6.0-android31.0/Microsoft.Identity.Client.dll",
+        "lib/net6.0-android31.0/Microsoft.Identity.Client.xml",
+        "lib/net6.0-ios15.4/Microsoft.Identity.Client.dll",
+        "lib/net6.0-ios15.4/Microsoft.Identity.Client.xml",
+        "lib/net6.0/Microsoft.Identity.Client.dll",
+        "lib/net6.0/Microsoft.Identity.Client.xml",
+        "lib/netstandard2.0/Microsoft.Identity.Client.dll",
+        "lib/netstandard2.0/Microsoft.Identity.Client.xml",
+        "microsoft.identity.client.4.61.3.nupkg.sha512",
+        "microsoft.identity.client.nuspec"
+      ]
+    },
+    "Microsoft.Identity.Client.Extensions.Msal/4.61.3": {
+      "sha512": "PWnJcznrSGr25MN8ajlc2XIDW4zCFu0U6FkpaNLEWLgd1NgFCp5uDY3mqLDgM8zCN8hqj8yo5wHYfLB2HjcdGw==",
+      "type": "package",
+      "path": "microsoft.identity.client.extensions.msal/4.61.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "microsoft.identity.client.extensions.msal.4.61.3.nupkg.sha512",
+        "microsoft.identity.client.extensions.msal.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Abstractions/6.35.0": {
+      "sha512": "xuR8E4Rd96M41CnUSCiOJ2DBh+z+zQSmyrYHdYhD6K4fXBcQGVnRCFQ0efROUYpP+p0zC1BLKr0JRpVuujTZSg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.abstractions/6.35.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net45/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net461/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net461/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net462/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net462/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net472/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net472/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.xml",
+        "microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
+        "microsoft.identitymodel.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/6.35.0": {
+      "sha512": "9wxai3hKgZUb4/NjdRKfQd0QJvtXKDlvmGMYACbEC8DFaicMFCFhQFZq9ZET1kJLwZahf2lfY5Gtcpsx8zYzbg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.35.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net462/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net462/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net472/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/6.35.0": {
+      "sha512": "jePrSfGAmqT81JDCNSY+fxVWoGuJKt9e6eJ+vT7+quVS55nWl//jGjUQn4eFtVKt4rt5dXaleZdHRB9J9AJZ7Q==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/6.35.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Logging.dll",
+        "lib/net45/Microsoft.IdentityModel.Logging.xml",
+        "lib/net461/Microsoft.IdentityModel.Logging.dll",
+        "lib/net461/Microsoft.IdentityModel.Logging.xml",
+        "lib/net462/Microsoft.IdentityModel.Logging.dll",
+        "lib/net462/Microsoft.IdentityModel.Logging.xml",
+        "lib/net472/Microsoft.IdentityModel.Logging.dll",
+        "lib/net472/Microsoft.IdentityModel.Logging.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Logging.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
+        "microsoft.identitymodel.logging.6.35.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols/6.35.0": {
+      "sha512": "BPQhlDzdFvv1PzaUxNSk+VEPwezlDEVADIKmyxubw7IiELK18uJ06RQ9QKKkds30XI+gDu9n8j24XQ8w7fjWcg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols/6.35.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net45/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net461/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net462/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net462/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net472/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net472/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Protocols.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.xml",
+        "microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.35.0": {
+      "sha512": "LMtVqnECCCdSmyFoCOxIE5tXQqkOLrvGrL7OxHg41DIm1bpWtaCdGyVcTAfOQpJXvzND9zUKIN/lhngPkYR8vg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols.openidconnect/6.35.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net462/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net462/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.openidconnect.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Tokens/6.35.0": {
+      "sha512": "RN7lvp7s3Boucg1NaNAbqDbxtlLj5Qeb+4uSS1TeK5FSBVM40P4DKaTKChT43sHyKfh7V0zkrMph6DdHvyA4bg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.tokens/6.35.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net45/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net462/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net462/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net472/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net472/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net6.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net6.0/Microsoft.IdentityModel.Tokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
+        "microsoft.identitymodel.tokens.6.35.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -1708,6 +2607,24 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.SqlServer.Server/1.0.0": {
+      "sha512": "N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug==",
+      "type": "package",
+      "path": "microsoft.sqlserver.server/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnet.png",
+        "lib/net46/Microsoft.SqlServer.Server.dll",
+        "lib/net46/Microsoft.SqlServer.Server.pdb",
+        "lib/net46/Microsoft.SqlServer.Server.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Server.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Server.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Server.xml",
+        "microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+        "microsoft.sqlserver.server.nuspec"
       ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
@@ -2264,6 +3181,24 @@
         "version.txt"
       ]
     },
+    "System.ClientModel/1.0.0": {
+      "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
+      "type": "package",
+      "path": "system.clientmodel/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "DotNetPackageIcon.png",
+        "README.md",
+        "lib/net6.0/System.ClientModel.dll",
+        "lib/net6.0/System.ClientModel.xml",
+        "lib/netstandard2.0/System.ClientModel.dll",
+        "lib/netstandard2.0/System.ClientModel.xml",
+        "system.clientmodel.1.0.0.nupkg.sha512",
+        "system.clientmodel.nuspec"
+      ]
+    },
     "System.Collections/4.3.0": {
       "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
       "type": "package",
@@ -2439,60 +3374,29 @@
         "system.collections.nongeneric.nuspec"
       ]
     },
-    "System.Configuration.ConfigurationManager/4.7.0": {
-      "sha512": "/anOTeSZCNNI2zDilogWrZ8pNqCmYbzGNexUnNhjW8k0sHqEZ2nHJBp147jBV3hGYswu5lINpNg1vxR7bnqvVA==",
+    "System.Configuration.ConfigurationManager/6.0.1": {
+      "sha512": "jXw9MlUu/kRfEU0WyTptAVueupqIeE3/rl0EZDMlf8pcvJnitQ8HeVEp69rZdaStXwTV72boi/Bhw8lOeO+U2w==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/4.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Configuration.ConfigurationManager.dll",
-        "lib/net461/System.Configuration.ConfigurationManager.xml",
-        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "ref/net461/System.Configuration.ConfigurationManager.dll",
-        "ref/net461/System.Configuration.ConfigurationManager.xml",
-        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.4.7.0.nupkg.sha512",
-        "system.configuration.configurationmanager.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Data.SqlClient/4.9.0": {
-      "sha512": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
-      "type": "package",
-      "path": "system.data.sqlclient/4.9.0",
+      "path": "system.configuration.configurationmanager/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "PACKAGE.md",
-        "buildTransitive/net461/System.Data.SqlClient.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Data.SqlClient.targets",
-        "lib/net462/System.Data.SqlClient.dll",
-        "lib/net462/System.Data.SqlClient.xml",
-        "lib/net6.0/System.Data.SqlClient.dll",
-        "lib/net6.0/System.Data.SqlClient.xml",
-        "lib/net8.0/System.Data.SqlClient.dll",
-        "lib/net8.0/System.Data.SqlClient.xml",
-        "lib/netstandard2.0/System.Data.SqlClient.dll",
-        "lib/netstandard2.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.9.0.nupkg.sha512",
-        "system.data.sqlclient.nuspec"
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/net461/System.Configuration.ConfigurationManager.xml",
+        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.dll",
+        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.6.0.1.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Diagnostics.Debug/4.3.0": {
@@ -2561,6 +3465,31 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.debug.4.3.0.nupkg.sha512",
         "system.diagnostics.debug.nuspec"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/6.0.1": {
+      "sha512": "KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net461/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net5.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net5.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net6.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net6.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Diagnostics.Tools/4.3.0": {
@@ -2857,6 +3786,29 @@
         "system.globalization.extensions.nuspec"
       ]
     },
+    "System.IdentityModel.Tokens.Jwt/6.35.0": {
+      "sha512": "yxGIQd3BFK7F6S62/7RdZk3C/mfwyVxvh6ngd1VYMBmbJ1YZZA9+Ku6suylVtso0FjI0wbElpJ0d27CdsyLpBQ==",
+      "type": "package",
+      "path": "system.identitymodel.tokens.jwt/6.35.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net462/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net462/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net472/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net472/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net6.0/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
+        "system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.nuspec"
+      ]
+    },
     "System.IO/4.3.0": {
       "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "type": "package",
@@ -3047,6 +3999,50 @@
         "system.io.filesystem.nuspec"
       ]
     },
+    "System.IO.FileSystem.AccessControl/5.0.0": {
+      "sha512": "SxHB3nuNrpptVk+vZ/F+7OHEpoHUIKKMl02bUmYHQr1r+glbZQxs7pRtsf4ENO29TVm2TH3AEeep2fJcy92oYw==",
+      "type": "package",
+      "path": "system.io.filesystem.accesscontrol/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.IO.FileSystem.AccessControl.dll",
+        "lib/net461/System.IO.FileSystem.AccessControl.dll",
+        "lib/net461/System.IO.FileSystem.AccessControl.xml",
+        "lib/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.AccessControl.xml",
+        "ref/net46/System.IO.FileSystem.AccessControl.dll",
+        "ref/net461/System.IO.FileSystem.AccessControl.dll",
+        "ref/net461/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "ref/netstandard1.3/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/de/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/es/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/it/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "ref/netstandard2.0/System.IO.FileSystem.AccessControl.xml",
+        "runtimes/win/lib/net46/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/net461/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/net461/System.IO.FileSystem.AccessControl.xml",
+        "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.xml",
+        "system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
+        "system.io.filesystem.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.IO.FileSystem.Primitives/4.3.0": {
       "sha512": "6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "type": "package",
@@ -3179,6 +4175,24 @@
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Memory.Data/1.0.2": {
+      "sha512": "JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
+      "type": "package",
+      "path": "system.memory.data/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "DotNetPackageIcon.png",
+        "README.md",
+        "lib/net461/System.Memory.Data.dll",
+        "lib/net461/System.Memory.Data.xml",
+        "lib/netstandard2.0/System.Memory.Data.dll",
+        "lib/netstandard2.0/System.Memory.Data.xml",
+        "system.memory.data.1.0.2.nupkg.sha512",
+        "system.memory.data.nuspec"
       ]
     },
     "System.Net.NameResolution/4.3.0": {
@@ -3382,10 +4396,10 @@
         "system.net.sockets.nuspec"
       ]
     },
-    "System.Numerics.Vectors/4.4.0": {
-      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
-      "path": "system.numerics.vectors/4.4.0",
+      "path": "system.numerics.vectors/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3402,12 +4416,15 @@
         "lib/netstandard2.0/System.Numerics.Vectors.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
         "ref/net46/System.Numerics.Vectors.dll",
         "ref/net46/System.Numerics.Vectors.xml",
         "ref/netcoreapp2.0/_._",
@@ -3415,11 +4432,12 @@
         "ref/netstandard1.0/System.Numerics.Vectors.xml",
         "ref/netstandard2.0/System.Numerics.Vectors.dll",
         "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.numerics.vectors.4.4.0.nupkg.sha512",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -3976,69 +4994,66 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.Caching/4.7.0": {
-      "sha512": "NdvNRjTPxYvIEhXQszT9L9vJhdQoX6AQ0AlhjTU+5NqFQVuacJTfhPVAvtGWNA2OJCqRiR/okBcZgMwI6MqcZg==",
+    "System.Runtime.Caching/6.0.0": {
+      "sha512": "E0e03kUp5X2k+UAoVl6efmI7uU7JRBWi5EIdlQ7cr0NpBGjHG4fWII35PgsBY9T4fJQ8E4QPsL0rKksU9gcL5A==",
       "type": "package",
-      "path": "system.runtime.caching/4.7.0",
+      "path": "system.runtime.caching/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.Caching.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net45/_._",
+        "lib/net461/_._",
+        "lib/net6.0/System.Runtime.Caching.dll",
+        "lib/net6.0/System.Runtime.Caching.xml",
+        "lib/netcoreapp3.1/System.Runtime.Caching.dll",
+        "lib/netcoreapp3.1/System.Runtime.Caching.xml",
         "lib/netstandard2.0/System.Runtime.Caching.dll",
         "lib/netstandard2.0/System.Runtime.Caching.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netstandard2.0/System.Runtime.Caching.dll",
-        "ref/netstandard2.0/System.Runtime.Caching.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net45/_._",
+        "runtimes/win/lib/net461/_._",
+        "runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
+        "runtimes/win/lib/net6.0/System.Runtime.Caching.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Runtime.Caching.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Runtime.Caching.xml",
         "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
         "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.xml",
-        "system.runtime.caching.4.7.0.nupkg.sha512",
+        "system.runtime.caching.6.0.0.nupkg.sha512",
         "system.runtime.caching.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
-      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Runtime.Extensions/4.3.0": {
@@ -4288,6 +5303,38 @@
         "system.runtime.interopservices.runtimeinformation.nuspec"
       ]
     },
+    "System.Runtime.Loader/4.3.0": {
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "type": "package",
+      "path": "system.runtime.loader/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/_._",
+        "lib/netstandard1.5/System.Runtime.Loader.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard1.5/System.Runtime.Loader.dll",
+        "ref/netstandard1.5/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml",
+        "system.runtime.loader.4.3.0.nupkg.sha512",
+        "system.runtime.loader.nuspec"
+      ]
+    },
     "System.Runtime.Numerics/4.3.0": {
       "sha512": "yMH+MfdzHjy17l2KESnPiF2dwq7T+xLnSJar7slyimAkUh/gTrS9/UQOtv7xarskJ2/XDSNvfLGOBQPjL7PaHQ==",
       "type": "package",
@@ -4454,32 +5501,85 @@
         "system.security.cryptography.algorithms.nuspec"
       ]
     },
-    "System.Security.Cryptography.Cng/4.3.0": {
-      "sha512": "03idZOqFlsKRL4W+LuCpJ6dBYDUWReug6lZjBa3uJWnk5sPCUXckocevTaUA8iT/MFSrY/2HXkOt753xQ/cf8g==",
+    "System.Security.Cryptography.Cng/5.0.0": {
+      "sha512": "jIMXsKn94T9JY7PvPq/tMfqa6GAaHpElRDpmG+SuL+D3+sTw2M8VhnibKnN8Tq+4JqbPJ/f+BwtLeDMEnzAvRg==",
       "type": "package",
-      "path": "system.security.cryptography.cng/4.3.0",
+      "path": "system.security.cryptography.cng/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
         "lib/net46/System.Security.Cryptography.Cng.dll",
         "lib/net461/System.Security.Cryptography.Cng.dll",
-        "lib/net463/System.Security.Cryptography.Cng.dll",
+        "lib/net461/System.Security.Cryptography.Cng.xml",
+        "lib/net462/System.Security.Cryptography.Cng.dll",
+        "lib/net462/System.Security.Cryptography.Cng.xml",
+        "lib/net47/System.Security.Cryptography.Cng.dll",
+        "lib/net47/System.Security.Cryptography.Cng.xml",
+        "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
+        "lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
+        "lib/netcoreapp3.0/System.Security.Cryptography.Cng.xml",
+        "lib/netstandard1.3/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard1.4/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Cng.xml",
+        "lib/netstandard2.1/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard2.1/System.Security.Cryptography.Cng.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
         "ref/net46/System.Security.Cryptography.Cng.dll",
         "ref/net461/System.Security.Cryptography.Cng.dll",
-        "ref/net463/System.Security.Cryptography.Cng.dll",
+        "ref/net461/System.Security.Cryptography.Cng.xml",
+        "ref/net462/System.Security.Cryptography.Cng.dll",
+        "ref/net462/System.Security.Cryptography.Cng.xml",
+        "ref/net47/System.Security.Cryptography.Cng.dll",
+        "ref/net47/System.Security.Cryptography.Cng.xml",
+        "ref/netcoreapp2.0/System.Security.Cryptography.Cng.dll",
+        "ref/netcoreapp2.0/System.Security.Cryptography.Cng.xml",
+        "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
+        "ref/netcoreapp2.1/System.Security.Cryptography.Cng.xml",
+        "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
+        "ref/netcoreapp3.0/System.Security.Cryptography.Cng.xml",
         "ref/netstandard1.3/System.Security.Cryptography.Cng.dll",
         "ref/netstandard1.4/System.Security.Cryptography.Cng.dll",
         "ref/netstandard1.6/System.Security.Cryptography.Cng.dll",
-        "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.Cng.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.Cng.xml",
+        "ref/netstandard2.1/System.Security.Cryptography.Cng.dll",
+        "ref/netstandard2.1/System.Security.Cryptography.Cng.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
         "runtimes/win/lib/net46/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.Cng.dll",
-        "runtimes/win/lib/net463/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Cng.xml",
+        "runtimes/win/lib/net462/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net462/System.Security.Cryptography.Cng.xml",
+        "runtimes/win/lib/net47/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net47/System.Security.Cryptography.Cng.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Cng.xml",
         "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll",
         "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
-        "system.security.cryptography.cng.4.3.0.nupkg.sha512",
-        "system.security.cryptography.cng.nuspec"
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.cryptography.cng.5.0.0.nupkg.sha512",
+        "system.security.cryptography.cng.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Security.Cryptography.Csp/4.3.0": {
@@ -4600,49 +5700,39 @@
         "system.security.cryptography.primitives.nuspec"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/4.7.0": {
-      "sha512": "ehYW0m9ptxpGWvE4zgqongBVWpSDU/JCFD4K7krxkQwSz/sFQjEXCUqpvencjy6DYDbn7Ig09R8GFffu8TtneQ==",
+    "System.Security.Cryptography.ProtectedData/6.0.0": {
+      "sha512": "rp1gMNEZpvx9vP0JW0oHLxlf8oSiQgtno77Y4PLUBjSiDYoD77Y8uXHr1Ea5XG4/pIKhqAdxZ8v8OTUtqo9PeQ==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/4.7.0",
+      "path": "system.security.cryptography.protecteddata/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net46/System.Security.Cryptography.ProtectedData.dll",
         "lib/net461/System.Security.Cryptography.ProtectedData.dll",
         "lib/net461/System.Security.Cryptography.ProtectedData.xml",
-        "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Security.Cryptography.ProtectedData.dll",
-        "ref/net461/System.Security.Cryptography.ProtectedData.dll",
-        "ref/net461/System.Security.Cryptography.ProtectedData.xml",
-        "ref/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.xml",
-        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
-        "system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Security.Cryptography.X509Certificates/4.3.0": {
@@ -4912,6 +6002,94 @@
         "system.text.encoding.nuspec"
       ]
     },
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "sha512": "ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.xml",
+        "lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.6.0.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Encodings.Web/6.0.0": {
+      "sha512": "Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+      "type": "package",
+      "path": "system.text.encodings.web/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Text.Encodings.Web.dll",
+        "lib/net461/System.Text.Encodings.Web.xml",
+        "lib/net6.0/System.Text.Encodings.Web.dll",
+        "lib/net6.0/System.Text.Encodings.Web.xml",
+        "lib/netcoreapp3.1/System.Text.Encodings.Web.dll",
+        "lib/netcoreapp3.1/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.6.0.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Json/4.7.2": {
+      "sha512": "TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
+      "type": "package",
+      "path": "system.text.json/4.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.4.7.2.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Text.RegularExpressions/4.3.0": {
       "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
       "type": "package",
@@ -5135,6 +6313,43 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Threading.Thread/4.3.0": {
       "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
       "type": "package",
@@ -5323,12 +6538,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Microsoft.Data.SqlClient >= 5.2.2",
       "NETStandard.Library >= 2.0.3",
       "Roblox.Caching >= 1.0.0",
       "Roblox.Configuration >= 1.0.0",
       "Roblox.EventLog >= 1.0.0",
-      "System.Configuration.ConfigurationManager >= 4.7.0",
-      "System.Data.SqlClient >= 4.9.0",
+      "System.Configuration.ConfigurationManager >= 6.0.1",
       "System.Resources.Extensions >= 7.0.0"
     ]
   },
@@ -5393,6 +6608,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.2.2, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -5401,11 +6620,7 @@
           },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
-            "version": "[4.7.0, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.9.0, )"
+            "version": "[6.0.1, )"
           },
           "System.Resources.Extensions": {
             "target": "Package",

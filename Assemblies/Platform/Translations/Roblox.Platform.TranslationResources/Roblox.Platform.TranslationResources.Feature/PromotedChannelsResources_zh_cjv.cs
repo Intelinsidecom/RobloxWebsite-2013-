@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PromotedChannelsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,42 +11,42 @@ internal class PromotedChannelsResources_zh_cjv : PromotedChannelsResources_en_u
 	/// The button text for adding an additional social link.
 	/// English String: "Add Link"
 	/// </summary>
-	public override string ActionAddLink => "添加链接";
+	public override string ActionAddLink => "æ·»åŠ é“¾æŽ¥";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// The remove button text for configuring social links.
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "移除";
+	public override string ActionRemove => "ç§»é™¤";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// The save button text for updating a social link.
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "保存";
+	public override string ActionSave => "ä¿å­˜";
 
 	/// <summary>
 	/// Key: "HeadingSocialLinks"
 	/// The heading of the social links panel on the game details page
 	/// English String: "Social Links"
 	/// </summary>
-	public override string HeadingSocialLinks => "社交链接";
+	public override string HeadingSocialLinks => "ç¤¾äº¤é“¾æŽ¥";
 
 	/// <summary>
 	/// Key: "HeadingSocialMedia"
 	/// The heading of the social media panel on the game details page
 	/// English String: "Social Media"
 	/// </summary>
-	public override string HeadingSocialMedia => "社交媒体";
+	public override string HeadingSocialMedia => "ç¤¾äº¤åª’ä½“";
 
 	/// <summary>
 	/// Key: "Label.Title"
 	/// Placeholder text for inputting a title for a social link.
 	/// English String: "Title"
 	/// </summary>
-	public override string LabelTitle => "标题";
+	public override string LabelTitle => "æ ‡é¢˜";
 
 	/// <summary>
 	/// Key: "Label.Url"
@@ -60,70 +60,70 @@ internal class PromotedChannelsResources_zh_cjv : PromotedChannelsResources_en_u
 	/// The error message displayed when the user does not have permission to the group they are trying to add.
 	/// English String: "You do not have permission to configure this group."
 	/// </summary>
-	public override string MessageNoGroupPermission => "你没有配置此群组的权限。";
+	public override string MessageNoGroupPermission => "ä½ æ²¡æœ‰é…ç½®æ­¤ç¾¤ç»„çš„æƒé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SocialLinkInvalidError"
 	/// The error message displayed when a social link attempts to be saved but no longer exists.
 	/// English String: "The social link no longer exists."
 	/// </summary>
-	public override string MessageSocialLinkInvalidError => "社交链接已不存在。";
+	public override string MessageSocialLinkInvalidError => "ç¤¾äº¤é“¾æŽ¥å·²ä¸å­˜åœ¨ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SocialLinkRemoved"
 	/// The message displayed when the social link has been removed.
 	/// English String: "The social media link has been deleted."
 	/// </summary>
-	public override string MessageSocialLinkRemoved => "社交媒体链接已被删除。";
+	public override string MessageSocialLinkRemoved => "ç¤¾äº¤åª’ä½“é“¾æŽ¥å·²è¢«åˆ é™¤ã€‚";
 
 	/// <summary>
 	/// Key: "Message.SocialLinksEditDisabledError"
 	/// The error message displayed when the social links feature is disabled and attempt to be edited.
 	/// English String: "Social links may not be edited at this time."
 	/// </summary>
-	public override string MessageSocialLinksEditDisabledError => "目前无法编辑社交链接。";
+	public override string MessageSocialLinksEditDisabledError => "ç›®å‰æ— æ³•ç¼–è¾‘ç¤¾äº¤é“¾æŽ¥ã€‚";
 
 	/// <summary>
 	/// Key: "Message.TitleEmptyError"
 	/// The error message displayed when the title input is empty.
 	/// English String: "The title cannot be empty."
 	/// </summary>
-	public override string MessageTitleEmptyError => "标题不能为空。";
+	public override string MessageTitleEmptyError => "æ ‡é¢˜ä¸èƒ½ä¸ºç©ºã€‚";
 
 	/// <summary>
 	/// Key: "Message.TitleModeratedError"
 	/// The error message displayed when a title is moderated while being edited.
 	/// English String: "The title has been moderated, please try something else."
 	/// </summary>
-	public override string MessageTitleModeratedError => "标题已被过滤，请尝试其他标题。";
+	public override string MessageTitleModeratedError => "æ ‡é¢˜å·²è¢«è¿‡æ»¤ï¼Œè¯·å°è¯•å…¶ä»–æ ‡é¢˜ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedError"
 	/// The error message displayed when an action is attempted against a social link but the user does not have permission to edit social links.
 	/// English String: "You do not have permission to update social links."
 	/// </summary>
-	public override string MessageUnauthorizedError => "你没有更新社交链接的权限。";
+	public override string MessageUnauthorizedError => "ä½ æ²¡æœ‰æ›´æ–°ç¤¾äº¤é“¾æŽ¥çš„æƒé™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// The error message displayed when something unknown goes wrong trying to manage a social link.
 	/// English String: "Something went wrong, please try again."
 	/// </summary>
-	public override string MessageUnknownError => "发生错误，请重试。";
+	public override string MessageUnknownError => "å‘ç”Ÿé”™è¯¯ï¼Œè¯·é‡è¯•ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UrlEmptyError"
 	/// The error message displayed when the url input is empty.
 	/// English String: "The url cannot be empty."
 	/// </summary>
-	public override string MessageUrlEmptyError => "url 不能为空。";
+	public override string MessageUrlEmptyError => "url ä¸èƒ½ä¸ºç©ºã€‚";
 
 	/// <summary>
 	/// Key: "Message.UrlSocialMediaTypeMismatchError"
 	/// The error message displayed when the url input is not a valid url for the social media type selected.
 	/// English String: "The url must match the social media type."
 	/// </summary>
-	public override string MessageUrlSocialMediaTypeMismatchError => "url 必须与社交媒体类型匹配。";
+	public override string MessageUrlSocialMediaTypeMismatchError => "url å¿…é¡»ä¸Žç¤¾äº¤åª’ä½“ç±»åž‹åŒ¹é…ã€‚";
 
 	public PromotedChannelsResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -132,27 +132,27 @@ internal class PromotedChannelsResources_zh_cjv : PromotedChannelsResources_en_u
 
 	protected override string _GetTemplateForActionAddLink()
 	{
-		return "添加链接";
+		return "æ·»åŠ é“¾æŽ¥";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "移除";
+		return "ç§»é™¤";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "保存";
+		return "ä¿å­˜";
 	}
 
 	protected override string _GetTemplateForHeadingSocialLinks()
 	{
-		return "社交链接";
+		return "ç¤¾äº¤é“¾æŽ¥";
 	}
 
 	protected override string _GetTemplateForHeadingSocialMedia()
 	{
-		return "社交媒体";
+		return "ç¤¾äº¤åª’ä½“";
 	}
 
 	/// <summary>
@@ -162,17 +162,17 @@ internal class PromotedChannelsResources_zh_cjv : PromotedChannelsResources_en_u
 	/// </summary>
 	public override string LabelLimits(string socialLinkLimit)
 	{
-		return $"你可以最多添加 {socialLinkLimit} 个社交链接。";
+		return $"ä½ å¯ä»¥æœ€å¤šæ·»åŠ  {socialLinkLimit} ä¸ªç¤¾äº¤é“¾æŽ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelLimits()
 	{
-		return "你可以最多添加 {socialLinkLimit} 个社交链接。";
+		return "ä½ å¯ä»¥æœ€å¤šæ·»åŠ  {socialLinkLimit} ä¸ªç¤¾äº¤é“¾æŽ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
 	{
-		return "标题";
+		return "æ ‡é¢˜";
 	}
 
 	protected override string _GetTemplateForLabelUrl()
@@ -182,17 +182,17 @@ internal class PromotedChannelsResources_zh_cjv : PromotedChannelsResources_en_u
 
 	protected override string _GetTemplateForMessageNoGroupPermission()
 	{
-		return "你没有配置此群组的权限。";
+		return "ä½ æ²¡æœ‰é…ç½®æ­¤ç¾¤ç»„çš„æƒé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkInvalidError()
 	{
-		return "社交链接已不存在。";
+		return "ç¤¾äº¤é“¾æŽ¥å·²ä¸å­˜åœ¨ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkRemoved()
 	{
-		return "社交媒体链接已被删除。";
+		return "ç¤¾äº¤åª’ä½“é“¾æŽ¥å·²è¢«åˆ é™¤ã€‚";
 	}
 
 	/// <summary>
@@ -202,17 +202,17 @@ internal class PromotedChannelsResources_zh_cjv : PromotedChannelsResources_en_u
 	/// </summary>
 	public override string MessageSocialLinkSaved(string title)
 	{
-		return $"“{title}”已保存。";
+		return $"â€œ{title}â€å·²ä¿å­˜ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkSaved()
 	{
-		return "“{title}”已保存。";
+		return "â€œ{title}â€å·²ä¿å­˜ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinksEditDisabledError()
 	{
-		return "目前无法编辑社交链接。";
+		return "ç›®å‰æ— æ³•ç¼–è¾‘ç¤¾äº¤é“¾æŽ¥ã€‚";
 	}
 
 	/// <summary>
@@ -222,41 +222,44 @@ internal class PromotedChannelsResources_zh_cjv : PromotedChannelsResources_en_u
 	/// </summary>
 	public override string MessageSocialLinkTypeLimitError(string socialMediaType)
 	{
-		return $"不能拥有多个{socialMediaType}社交媒体链接。";
+		return $"ä¸èƒ½æ‹¥æœ‰å¤šä¸ª{socialMediaType}ç¤¾äº¤åª’ä½“é“¾æŽ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkTypeLimitError()
 	{
-		return "不能拥有多个{socialMediaType}社交媒体链接。";
+		return "ä¸èƒ½æ‹¥æœ‰å¤šä¸ª{socialMediaType}ç¤¾äº¤åª’ä½“é“¾æŽ¥ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTitleEmptyError()
 	{
-		return "标题不能为空。";
+		return "æ ‡é¢˜ä¸èƒ½ä¸ºç©ºã€‚";
 	}
 
 	protected override string _GetTemplateForMessageTitleModeratedError()
 	{
-		return "标题已被过滤，请尝试其他标题。";
+		return "æ ‡é¢˜å·²è¢«è¿‡æ»¤ï¼Œè¯·å°è¯•å…¶ä»–æ ‡é¢˜ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedError()
 	{
-		return "你没有更新社交链接的权限。";
+		return "ä½ æ²¡æœ‰æ›´æ–°ç¤¾äº¤é“¾æŽ¥çš„æƒé™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "发生错误，请重试。";
+		return "å‘ç”Ÿé”™è¯¯ï¼Œè¯·é‡è¯•ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUrlEmptyError()
 	{
-		return "url 不能为空。";
+		return "url ä¸èƒ½ä¸ºç©ºã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUrlSocialMediaTypeMismatchError()
 	{
-		return "url 必须与社交媒体类型匹配。";
+		return "url å¿…é¡»ä¸Žç¤¾äº¤åª’ä½“ç±»åž‹åŒ¹é…ã€‚";
 	}
+}
+
+
 }

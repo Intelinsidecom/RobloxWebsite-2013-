@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+    /// <summary>
 
-/// <summary>
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,75 +11,75 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// button title
 	/// English String: "Go to the Previous Page"
 	/// </summary>
-	public override string ActionPreviousPage => "前のページに戻る";
+	public override string ActionPreviousPage => "å‰ã®ãƒšãƒ¼ã‚¸ã«æˆ»ã‚‹";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button title
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "ホーム画面に戻る";
+	public override string ActionReturnHome => "ãƒ›ãƒ¼ãƒ ç”»é¢ã«æˆ»ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "エラー";
+	public override string LabelError => "ã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Label.ErrorImage"
 	/// alternate text shown for error image
 	/// English String: "Error Image"
 	/// </summary>
-	public override string LabelErrorImage => "エラー画像";
+	public override string LabelErrorImage => "ã‚¨ãƒ©ãƒ¼ç”»åƒ";
 
 	/// <summary>
 	/// Key: "Label.TooManyCharacters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyCharacters => "文字数が多すぎます！";
+	public override string LabelTooManyCharacters => "æ–‡å­—æ•°ãŒå¤šã™ãŽã¾ã™ï¼";
 
 	/// <summary>
 	/// Key: "Message.AlwaysAllowed"
 	/// English String: "Always allowed"
 	/// </summary>
-	public override string MessageAlwaysAllowed => "常に許可";
+	public override string MessageAlwaysAllowed => "å¸¸ã«è¨±å¯";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookies"
 	/// English String: "Analytics Cookies"
 	/// </summary>
-	public override string MessageAnalyiticsCookies => "分析クッキー";
+	public override string MessageAnalyiticsCookies => "åˆ†æžã‚¯ãƒƒã‚­ãƒ¼";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesDescription"
 	/// English String: "These cookies used for improving site performance or understanding site usage."
 	/// </summary>
-	public override string MessageAnalyiticsCookiesDescription => "これらのクッキーはサイトのパフォーマンス改善やサイトがどのように使用されているかを理解するために使用されています。";
+	public override string MessageAnalyiticsCookiesDescription => "ã“ã‚Œã‚‰ã®ã‚¯ãƒƒã‚­ãƒ¼ã¯ã‚µã‚¤ãƒˆã®ãƒ‘ãƒ•ã‚©ãƒ¼ãƒžãƒ³ã‚¹æ”¹å–„ã‚„ã‚µã‚¤ãƒˆãŒã©ã®ã‚ˆã†ã«ä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ã‹ã‚’ç†è§£ã™ã‚‹ãŸã‚ã«ä½¿ç”¨ã•ã‚Œã¦ã„ã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem1"
 	/// English String: "Google Analytics"
 	/// </summary>
-	public override string MessageAnalyiticsCookiesItem1 => "Google アナリティクス";
+	public override string MessageAnalyiticsCookiesItem1 => "Google ã‚¢ãƒŠãƒªãƒ†ã‚£ã‚¯ã‚¹";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem2"
 	/// English String: "Google Universal Analytics"
 	/// </summary>
-	public override string MessageAnalyiticsCookiesItem2 => "Google ユニバース アナリティクス";
+	public override string MessageAnalyiticsCookiesItem2 => "Google ãƒ¦ãƒ‹ãƒãƒ¼ã‚¹ ã‚¢ãƒŠãƒªãƒ†ã‚£ã‚¯ã‚¹";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookies"
 	/// English String: "Essential Cookies"
 	/// </summary>
-	public override string MessageEssentialCookies => "エッセンシャルクッキー";
+	public override string MessageEssentialCookies => "ã‚¨ãƒƒã‚»ãƒ³ã‚·ãƒ£ãƒ«ã‚¯ãƒƒã‚­ãƒ¼";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "これらのクッキーはユーザー認証やシステム保全、クッキー環境設定の保存などのサイト機能を提供するために必要です。";
+	public override string MessageEssentialCookiesDescription => "ã“ã‚Œã‚‰ã®ã‚¯ãƒƒã‚­ãƒ¼ã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ã‚„ã‚·ã‚¹ãƒ†ãƒ ä¿å…¨ã€ã‚¯ãƒƒã‚­ãƒ¼ç’°å¢ƒè¨­å®šã®ä¿å­˜ãªã©ã®ã‚µã‚¤ãƒˆæ©Ÿèƒ½ã‚’æä¾›ã™ã‚‹ãŸã‚ã«å¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -97,7 +97,7 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.ManageCookies"
 	/// English String: "Manage Cookies"
 	/// </summary>
-	public override string MessageManageCookies => "クッキー管理";
+	public override string MessageManageCookies => "ã‚¯ãƒƒã‚­ãƒ¼ç®¡ç†";
 
 	/// <summary>
 	/// Key: "MessageEssentialCookiesItem3"
@@ -110,83 +110,83 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// 403 error message
 	/// English String: "Access Denied"
 	/// </summary>
-	public override string ResponseAccessDenied => "アクセス禁止";
+	public override string ResponseAccessDenied => "ã‚¢ã‚¯ã‚»ã‚¹ç¦æ­¢";
 
 	/// <summary>
 	/// Key: "Response.AccessDeniedDescription"
 	/// 403 error message detail
 	/// English String: "You don't have permission to view this page"
 	/// </summary>
-	public override string ResponseAccessDeniedDescription => "このページを見る権限がありません";
+	public override string ResponseAccessDeniedDescription => "ã“ã®ãƒšãƒ¼ã‚¸ã‚’è¦‹ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Response.BadRequest"
 	/// 400 error message title
 	/// English String: "Bad Request"
 	/// </summary>
-	public override string ResponseBadRequest => "不当なリクエスト";
+	public override string ResponseBadRequest => "ä¸å½“ãªãƒªã‚¯ã‚¨ã‚¹ãƒˆ";
 
 	/// <summary>
 	/// Key: "Response.BadRequestDescription"
 	/// error message detail for 400 error
 	/// English String: "There was a problem with your request"
 	/// </summary>
-	public override string ResponseBadRequestDescription => "リクエストにエラーが発生しました";
+	public override string ResponseBadRequestDescription => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Response.InternalServerError"
 	/// 500 error message title
 	/// English String: "Internal Server Error"
 	/// </summary>
-	public override string ResponseInternalServerError => "内部サーバーエラー";
+	public override string ResponseInternalServerError => "å†…éƒ¨ã‚µãƒ¼ãƒãƒ¼ã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Response.InternalServerErrorDescription"
 	/// 500 error message description
 	/// English String: "An unexpected error occurred"
 	/// </summary>
-	public override string ResponseInternalServerErrorDescription => "予期せぬエラーが発生しました";
+	public override string ResponseInternalServerErrorDescription => "äºˆæœŸã›ã¬ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Response.PageNotFound"
 	/// 404 error message title
 	/// English String: "Page Not found"
 	/// </summary>
-	public override string ResponsePageNotFound => "ページが見つかりませんでした";
+	public override string ResponsePageNotFound => "ãƒšãƒ¼ã‚¸ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Response.PageNotFoundDescrition"
 	/// 404 error message description
 	/// English String: "Page cannot be found or no longer exists"
 	/// </summary>
-	public override string ResponsePageNotFoundDescrition => "ページを表示できないか、既に存在しません";
+	public override string ResponsePageNotFoundDescrition => "ãƒšãƒ¼ã‚¸ã‚’è¡¨ç¤ºã§ããªã„ã‹ã€æ—¢ã«å­˜åœ¨ã—ã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Response.RequestError"
 	/// error message for incorrect request
 	/// English String: "Error with your request"
 	/// </summary>
-	public override string ResponseRequestError => "リクエストのエラー";
+	public override string ResponseRequestError => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã®ã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Response.SomethingWentWrong"
 	/// default error message
 	/// English String: "Something went wrong"
 	/// </summary>
-	public override string ResponseSomethingWentWrong => "問題が起きたようです";
+	public override string ResponseSomethingWentWrong => "å•é¡ŒãŒèµ·ããŸã‚ˆã†ã§ã™";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsText"
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttemptsText => "試行回数が多すぎます";
+	public override string ResponseTooManyAttemptsText => "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™";
 
 	/// <summary>
 	/// Key: "Response.UnexpectedError"
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "不明なエラーが発生しました。後でもう一度お試しください。";
+	public override string ResponseUnexpectedError => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	public MessagesResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -195,12 +195,12 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionPreviousPage()
 	{
-		return "前のページに戻る";
+		return "å‰ã®ãƒšãƒ¼ã‚¸ã«æˆ»ã‚‹";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "ホーム画面に戻る";
+		return "ãƒ›ãƒ¼ãƒ ç”»é¢ã«æˆ»ã‚‹";
 	}
 
 	/// <summary>
@@ -210,12 +210,12 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Robloxはコンテンツのパーソナライズ、ソーシャルメディア機能の提供、サイト上のトラフィック分析のためにクッキーを使用しています。Robloxによるクッキー使用の内容を確認し、{startLink}クッキー環境設定の管理{endLink}を行うには、{startLink2}プライバシーおよびクッキーポリシー{endLink2}をご覧ください。";
+		return $"Robloxã¯ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒ‘ãƒ¼ã‚½ãƒŠãƒ©ã‚¤ã‚ºã€ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢æ©Ÿèƒ½ã®æä¾›ã€ã‚µã‚¤ãƒˆä¸Šã®ãƒˆãƒ©ãƒ•ã‚£ãƒƒã‚¯åˆ†æžã®ãŸã‚ã«ã‚¯ãƒƒã‚­ãƒ¼ã‚’ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚Robloxã«ã‚ˆã‚‹ã‚¯ãƒƒã‚­ãƒ¼ä½¿ç”¨ã®å†…å®¹ã‚’ç¢ºèªã—ã€{startLink}ã‚¯ãƒƒã‚­ãƒ¼ç’°å¢ƒè¨­å®šã®ç®¡ç†{endLink}ã‚’è¡Œã†ã«ã¯ã€{startLink2}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãŠã‚ˆã³ã‚¯ãƒƒã‚­ãƒ¼ãƒãƒªã‚·ãƒ¼{endLink2}ã‚’ã”è¦§ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Robloxはコンテンツのパーソナライズ、ソーシャルメディア機能の提供、サイト上のトラフィック分析のためにクッキーを使用しています。Robloxによるクッキー使用の内容を確認し、{startLink}クッキー環境設定の管理{endLink}を行うには、{startLink2}プライバシーおよびクッキーポリシー{endLink2}をご覧ください。";
+		return "Robloxã¯ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒ‘ãƒ¼ã‚½ãƒŠãƒ©ã‚¤ã‚ºã€ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢æ©Ÿèƒ½ã®æä¾›ã€ã‚µã‚¤ãƒˆä¸Šã®ãƒˆãƒ©ãƒ•ã‚£ãƒƒã‚¯åˆ†æžã®ãŸã‚ã«ã‚¯ãƒƒã‚­ãƒ¼ã‚’ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚Robloxã«ã‚ˆã‚‹ã‚¯ãƒƒã‚­ãƒ¼ä½¿ç”¨ã®å†…å®¹ã‚’ç¢ºèªã—ã€{startLink}ã‚¯ãƒƒã‚­ãƒ¼ç’°å¢ƒè¨­å®šã®ç®¡ç†{endLink}ã‚’è¡Œã†ã«ã¯ã€{startLink2}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãŠã‚ˆã³ã‚¯ãƒƒã‚­ãƒ¼ãƒãƒªã‚·ãƒ¼{endLink2}ã‚’ã”è¦§ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -225,52 +225,52 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string DescriptionContactCustomerService(string emailLink)
 	{
-		return $"このページが続けて表示される場合はカスターサービスにメールでお問い合わせください:{emailLink}";
+		return $"ã“ã®ãƒšãƒ¼ã‚¸ãŒç¶šã‘ã¦è¡¨ç¤ºã•ã‚Œã‚‹å ´åˆã¯ã‚«ã‚¹ã‚¿ãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ãƒ¡ãƒ¼ãƒ«ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„:{emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionContactCustomerService()
 	{
-		return "このページが続けて表示される場合はカスターサービスにメールでお問い合わせください:{emailLink}";
+		return "ã“ã®ãƒšãƒ¼ã‚¸ãŒç¶šã‘ã¦è¡¨ç¤ºã•ã‚Œã‚‹å ´åˆã¯ã‚«ã‚¹ã‚¿ãƒ¼ã‚µãƒ¼ãƒ“ã‚¹ã«ãƒ¡ãƒ¼ãƒ«ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„:{emailLink}";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "エラー";
+		return "ã‚¨ãƒ©ãƒ¼";
 	}
 
 	protected override string _GetTemplateForLabelErrorImage()
 	{
-		return "エラー画像";
+		return "ã‚¨ãƒ©ãƒ¼ç”»åƒ";
 	}
 
 	protected override string _GetTemplateForLabelTooManyCharacters()
 	{
-		return "文字数が多すぎます！";
+		return "æ–‡å­—æ•°ãŒå¤šã™ãŽã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForMessageAlwaysAllowed()
 	{
-		return "常に許可";
+		return "å¸¸ã«è¨±å¯";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookies()
 	{
-		return "分析クッキー";
+		return "åˆ†æžã‚¯ãƒƒã‚­ãƒ¼";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesDescription()
 	{
-		return "これらのクッキーはサイトのパフォーマンス改善やサイトがどのように使用されているかを理解するために使用されています。";
+		return "ã“ã‚Œã‚‰ã®ã‚¯ãƒƒã‚­ãƒ¼ã¯ã‚µã‚¤ãƒˆã®ãƒ‘ãƒ•ã‚©ãƒ¼ãƒžãƒ³ã‚¹æ”¹å–„ã‚„ã‚µã‚¤ãƒˆãŒã©ã®ã‚ˆã†ã«ä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ã‹ã‚’ç†è§£ã™ã‚‹ãŸã‚ã«ä½¿ç”¨ã•ã‚Œã¦ã„ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem1()
 	{
-		return "Google アナリティクス";
+		return "Google ã‚¢ãƒŠãƒªãƒ†ã‚£ã‚¯ã‚¹";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem2()
 	{
-		return "Google ユニバース アナリティクス";
+		return "Google ãƒ¦ãƒ‹ãƒãƒ¼ã‚¹ ã‚¢ãƒŠãƒªãƒ†ã‚£ã‚¯ã‚¹";
 	}
 
 	/// <summary>
@@ -280,12 +280,12 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNotice(string startLink, string endLink)
 	{
-		return $"Robloxではより良い体験をご提供するために、クッキーを利用しております。 同意を取り消す方法や、Robloxでの クッキーの管理方法などの詳細については、{startLink}プライバシーおよびクッキーポリシー{endLink}をご参照ください。";
+		return $"Robloxã§ã¯ã‚ˆã‚Šè‰¯ã„ä½“é¨“ã‚’ã”æä¾›ã™ã‚‹ãŸã‚ã«ã€ã‚¯ãƒƒã‚­ãƒ¼ã‚’åˆ©ç”¨ã—ã¦ãŠã‚Šã¾ã™ã€‚ åŒæ„ã‚’å–ã‚Šæ¶ˆã™æ–¹æ³•ã‚„ã€Robloxã§ã® ã‚¯ãƒƒã‚­ãƒ¼ã®ç®¡ç†æ–¹æ³•ãªã©ã®è©³ç´°ã«ã¤ã„ã¦ã¯ã€{startLink}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãŠã‚ˆã³ã‚¯ãƒƒã‚­ãƒ¼ãƒãƒªã‚·ãƒ¼{endLink}ã‚’ã”å‚ç…§ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNotice()
 	{
-		return "Robloxではより良い体験をご提供するために、クッキーを利用しております。 同意を取り消す方法や、Robloxでの クッキーの管理方法などの詳細については、{startLink}プライバシーおよびクッキーポリシー{endLink}をご参照ください。";
+		return "Robloxã§ã¯ã‚ˆã‚Šè‰¯ã„ä½“é¨“ã‚’ã”æä¾›ã™ã‚‹ãŸã‚ã«ã€ã‚¯ãƒƒã‚­ãƒ¼ã‚’åˆ©ç”¨ã—ã¦ãŠã‚Šã¾ã™ã€‚ åŒæ„ã‚’å–ã‚Šæ¶ˆã™æ–¹æ³•ã‚„ã€Robloxã§ã® ã‚¯ãƒƒã‚­ãƒ¼ã®ç®¡ç†æ–¹æ³•ãªã©ã®è©³ç´°ã«ã¤ã„ã¦ã¯ã€{startLink}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãŠã‚ˆã³ã‚¯ãƒƒã‚­ãƒ¼ãƒãƒªã‚·ãƒ¼{endLink}ã‚’ã”å‚ç…§ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -294,12 +294,12 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Robloxはコンテンツのパーソナライズ、ソーシャルメディア機能の提供、サイト上のトラフィック分析のためにクッキーを使用しています。Robloxによるクッキー使用の内容を確認し、{startLink}クッキー環境設定の管理{endLink}を行うには、{startLink2}プライバシーおよびクッキーポリシー{endLink2}をご覧ください。";
+		return $"Robloxã¯ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒ‘ãƒ¼ã‚½ãƒŠãƒ©ã‚¤ã‚ºã€ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢æ©Ÿèƒ½ã®æä¾›ã€ã‚µã‚¤ãƒˆä¸Šã®ãƒˆãƒ©ãƒ•ã‚£ãƒƒã‚¯åˆ†æžã®ãŸã‚ã«ã‚¯ãƒƒã‚­ãƒ¼ã‚’ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚Robloxã«ã‚ˆã‚‹ã‚¯ãƒƒã‚­ãƒ¼ä½¿ç”¨ã®å†…å®¹ã‚’ç¢ºèªã—ã€{startLink}ã‚¯ãƒƒã‚­ãƒ¼ç’°å¢ƒè¨­å®šã®ç®¡ç†{endLink}ã‚’è¡Œã†ã«ã¯ã€{startLink2}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãŠã‚ˆã³ã‚¯ãƒƒã‚­ãƒ¼ãƒãƒªã‚·ãƒ¼{endLink2}ã‚’ã”è¦§ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Robloxはコンテンツのパーソナライズ、ソーシャルメディア機能の提供、サイト上のトラフィック分析のためにクッキーを使用しています。Robloxによるクッキー使用の内容を確認し、{startLink}クッキー環境設定の管理{endLink}を行うには、{startLink2}プライバシーおよびクッキーポリシー{endLink2}をご覧ください。";
+		return "Robloxã¯ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒ‘ãƒ¼ã‚½ãƒŠãƒ©ã‚¤ã‚ºã€ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ¡ãƒ‡ã‚£ã‚¢æ©Ÿèƒ½ã®æä¾›ã€ã‚µã‚¤ãƒˆä¸Šã®ãƒˆãƒ©ãƒ•ã‚£ãƒƒã‚¯åˆ†æžã®ãŸã‚ã«ã‚¯ãƒƒã‚­ãƒ¼ã‚’ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚Robloxã«ã‚ˆã‚‹ã‚¯ãƒƒã‚­ãƒ¼ä½¿ç”¨ã®å†…å®¹ã‚’ç¢ºèªã—ã€{startLink}ã‚¯ãƒƒã‚­ãƒ¼ç’°å¢ƒè¨­å®šã®ç®¡ç†{endLink}ã‚’è¡Œã†ã«ã¯ã€{startLink2}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãŠã‚ˆã³ã‚¯ãƒƒã‚­ãƒ¼ãƒãƒªã‚·ãƒ¼{endLink2}ã‚’ã”è¦§ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -308,22 +308,22 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieModalText(string startLink, string endLink)
 	{
-		return $"下で説明されている内容でサイトがクッキーを使用するかどうかを選んでください。本サイトがクッキーおよび関連技術を使用する内容の詳細については、{startLink}プライバシーポリシー{endLink}をご覧ください。";
+		return $"ä¸‹ã§èª¬æ˜Žã•ã‚Œã¦ã„ã‚‹å†…å®¹ã§ã‚µã‚¤ãƒˆãŒã‚¯ãƒƒã‚­ãƒ¼ã‚’ä½¿ç”¨ã™ã‚‹ã‹ã©ã†ã‹ã‚’é¸ã‚“ã§ãã ã•ã„ã€‚æœ¬ã‚µã‚¤ãƒˆãŒã‚¯ãƒƒã‚­ãƒ¼ãŠã‚ˆã³é–¢é€£æŠ€è¡“ã‚’ä½¿ç”¨ã™ã‚‹å†…å®¹ã®è©³ç´°ã«ã¤ã„ã¦ã¯ã€{startLink}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼{endLink}ã‚’ã”è¦§ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCookieModalText()
 	{
-		return "下で説明されている内容でサイトがクッキーを使用するかどうかを選んでください。本サイトがクッキーおよび関連技術を使用する内容の詳細については、{startLink}プライバシーポリシー{endLink}をご覧ください。";
+		return "ä¸‹ã§èª¬æ˜Žã•ã‚Œã¦ã„ã‚‹å†…å®¹ã§ã‚µã‚¤ãƒˆãŒã‚¯ãƒƒã‚­ãƒ¼ã‚’ä½¿ç”¨ã™ã‚‹ã‹ã©ã†ã‹ã‚’é¸ã‚“ã§ãã ã•ã„ã€‚æœ¬ã‚µã‚¤ãƒˆãŒã‚¯ãƒƒã‚­ãƒ¼ãŠã‚ˆã³é–¢é€£æŠ€è¡“ã‚’ä½¿ç”¨ã™ã‚‹å†…å®¹ã®è©³ç´°ã«ã¤ã„ã¦ã¯ã€{startLink}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼{endLink}ã‚’ã”è¦§ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookies()
 	{
-		return "エッセンシャルクッキー";
+		return "ã‚¨ãƒƒã‚»ãƒ³ã‚·ãƒ£ãƒ«ã‚¯ãƒƒã‚­ãƒ¼";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "これらのクッキーはユーザー認証やシステム保全、クッキー環境設定の保存などのサイト機能を提供するために必要です。";
+		return "ã“ã‚Œã‚‰ã®ã‚¯ãƒƒã‚­ãƒ¼ã¯ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ã‚„ã‚·ã‚¹ãƒ†ãƒ ä¿å…¨ã€ã‚¯ãƒƒã‚­ãƒ¼ç’°å¢ƒè¨­å®šã®ä¿å­˜ãªã©ã®ã‚µã‚¤ãƒˆæ©Ÿèƒ½ã‚’æä¾›ã™ã‚‹ãŸã‚ã«å¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -338,7 +338,7 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageManageCookies()
 	{
-		return "クッキー管理";
+		return "ã‚¯ãƒƒã‚­ãƒ¼ç®¡ç†";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem3()
@@ -348,61 +348,64 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "アクセス禁止";
+		return "ã‚¢ã‚¯ã‚»ã‚¹ç¦æ­¢";
 	}
 
 	protected override string _GetTemplateForResponseAccessDeniedDescription()
 	{
-		return "このページを見る権限がありません";
+		return "ã“ã®ãƒšãƒ¼ã‚¸ã‚’è¦‹ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForResponseBadRequest()
 	{
-		return "不当なリクエスト";
+		return "ä¸å½“ãªãƒªã‚¯ã‚¨ã‚¹ãƒˆ";
 	}
 
 	protected override string _GetTemplateForResponseBadRequestDescription()
 	{
-		return "リクエストにエラーが発生しました";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerError()
 	{
-		return "内部サーバーエラー";
+		return "å†…éƒ¨ã‚µãƒ¼ãƒãƒ¼ã‚¨ãƒ©ãƒ¼";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerErrorDescription()
 	{
-		return "予期せぬエラーが発生しました";
+		return "äºˆæœŸã›ã¬ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFound()
 	{
-		return "ページが見つかりませんでした";
+		return "ãƒšãƒ¼ã‚¸ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFoundDescrition()
 	{
-		return "ページを表示できないか、既に存在しません";
+		return "ãƒšãƒ¼ã‚¸ã‚’è¡¨ç¤ºã§ããªã„ã‹ã€æ—¢ã«å­˜åœ¨ã—ã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForResponseRequestError()
 	{
-		return "リクエストのエラー";
+		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã®ã‚¨ãƒ©ãƒ¼";
 	}
 
 	protected override string _GetTemplateForResponseSomethingWentWrong()
 	{
-		return "問題が起きたようです";
+		return "å•é¡ŒãŒèµ·ããŸã‚ˆã†ã§ã™";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsText()
 	{
-		return "試行回数が多すぎます";
+		return "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™";
 	}
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "不明なエラーが発生しました。後でもう一度お試しください。";
+		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
+}
+
+
 }

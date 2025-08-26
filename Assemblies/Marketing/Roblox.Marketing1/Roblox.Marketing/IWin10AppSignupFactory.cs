@@ -1,8 +1,7 @@
-using Roblox.Platform.MembershipCore;
+﻿using Roblox.Platform.MembershipCore;
+namespace Roblox.Marketing {
+    /// <summary>
 
-namespace Roblox.Platform.Marketing;
-
-/// <summary>
 /// Provides a common interface for creation of <see cref="T:Roblox.Platform.Marketing.IWin10AppSignup" />s.
 /// </summary>
 public interface IWin10AppSignupFactory
@@ -15,4 +14,7 @@ public interface IWin10AppSignupFactory
 	/// <exception cref="!:PlatformArgumentNullException">Thrown if <paramref name="user" /> is null.</exception>
 	/// <exception cref="!:PlatformArgumentException">Thrown if <paramref name="user" />'s Id field is the default value.</exception>
 	IWin10AppSignup Create(IUserIdentifier user);
+}
+
+
 }

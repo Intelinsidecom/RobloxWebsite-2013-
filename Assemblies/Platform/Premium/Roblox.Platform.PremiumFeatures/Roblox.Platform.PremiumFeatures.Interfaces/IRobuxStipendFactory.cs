@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Interfaces;
-
-/// <summary>
 /// IRobuxStipendFactory interface
 /// </summary>
 public interface IRobuxStipendFactory
@@ -50,4 +49,7 @@ public interface IRobuxStipendFactory
 	/// <param name="nextDistribution">nextDistribution datetime</param>
 	/// <returns></returns>
 	IRobuxStipendModel UpdateRobuxStipend(RobuxStipend robuxStipend, byte? robuxStipendFrequencyTypeID, byte robuxStipendQuantityTypeID, DateTime? lastAwarded, DateTime? nextDistribution);
+}
+
+
 }

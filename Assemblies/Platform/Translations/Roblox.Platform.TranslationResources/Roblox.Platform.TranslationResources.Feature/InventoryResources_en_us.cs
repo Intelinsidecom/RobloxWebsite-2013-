@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class InventoryResources_en_us : TranslationResourcesBase, IInventoryResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class InventoryResources_en_us : TranslationResourcesBase, IInventoryResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -581,4 +580,7 @@ internal class InventoryResources_en_us : TranslationResourcesBase, IInventoryRe
 	{
 		return "You have not favorited any {itemsPlural}.";
 	}
+}
+
+
 }

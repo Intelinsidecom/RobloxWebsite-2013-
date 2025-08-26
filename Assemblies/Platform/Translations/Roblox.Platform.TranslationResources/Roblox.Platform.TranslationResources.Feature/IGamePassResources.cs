@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGamePassResources : ITranslationResources
 
-public interface IGamePassResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.AddPass"
@@ -25,4 +25,7 @@ public interface IGamePassResources : ITranslationResources
 	/// English String: "Owned"
 	/// </summary>
 	string LabelOwned { get; }
+}
+
+
 }

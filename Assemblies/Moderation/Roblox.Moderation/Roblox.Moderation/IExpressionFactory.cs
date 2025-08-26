@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderation {
+    /// <summary>
 
-/// <summary>
 /// An interface for creating or getting an <see cref="T:Roblox.Platform.Moderation.IExpression" />. An expression is user or moderator enterd strings that are persisted.
 /// </summary>
 public interface IExpressionFactory
@@ -26,4 +26,7 @@ public interface IExpressionFactory
 	/// <param name="value">The value.</param>
 	/// <returns>An <see cref="T:Roblox.Platform.Moderation.IExpression" /> or null if not found.</returns>
 	IExpression Get(string value);
+}
+
+
 }

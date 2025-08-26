@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class AccountAddOnExpirationTask : IParallelWorkTask
 
-namespace Roblox.PremiumFeatures;
-
-public class AccountAddOnExpirationTask : IParallelWorkTask
 {
 	public delegate void BuildersClubExpirationEventHandler(long accountId, EventArgs e);
 
@@ -57,4 +56,7 @@ public class AccountAddOnExpirationTask : IParallelWorkTask
 			_AccountAddOn.Save();
 		}
 	}
+}
+
+
 }

@@ -2,7 +2,6 @@ using System;
 
 namespace Roblox.Diagnostics;
 
-[Obsolete("Use Roblox.Instrumentation instead of Windows Perfmon counters")]
 [AttributeUsage(AttributeTargets.Class)]
 public class CounterCategory : Attribute
 {

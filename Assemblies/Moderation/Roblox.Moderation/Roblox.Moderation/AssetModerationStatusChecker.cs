@@ -1,8 +1,7 @@
-using Roblox.Platform.Assets;
+﻿using Roblox.Platform.Assets;
+namespace Roblox.Moderation {
+    /// <inheritdoc cref="T:Roblox.Platform.Moderation.IAssetModerationStatusChecker" />
 
-namespace Roblox.Platform.Moderation;
-
-/// <inheritdoc cref="T:Roblox.Platform.Moderation.IAssetModerationStatusChecker" />
 public class AssetModerationStatusChecker : IAssetModerationStatusChecker
 {
 	/// <inheritdoc cref="T:Roblox.Platform.Moderation.IAssetModerationStatusChecker" />
@@ -10,4 +9,7 @@ public class AssetModerationStatusChecker : IAssetModerationStatusChecker
 	{
 		return asset.GetModerationStatus();
 	}
+}
+
+
 }

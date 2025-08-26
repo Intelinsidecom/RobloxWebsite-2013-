@@ -1,12 +1,14 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.Localization.Client.Propertiesinternal {
+    interface ISettings
 
-namespace Roblox.Localization.Client.Properties;
-
-internal interface ISettings
 {
 	TimeSpan LanguageFamilyLocalCacheExpiry { get; }
 
 	TimeSpan SupportedLocaleLocalCacheExpiry { get; }
 
 	TimeSpan DeviceReportedLocaleCacheExpiry { get; }
+}
+
+
 }

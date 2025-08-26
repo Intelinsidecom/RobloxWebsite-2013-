@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class PremiumFeatureActivationTask : IRobloxEntity<long, PremiumFeatureActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
-namespace Roblox.PremiumFeatures;
-
-public class PremiumFeatureActivationTask : IRobloxEntity<long, PremiumFeatureActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 {
 	public delegate void GrantedItemListActivationEventHandler(long premiumFeatureActivationTaskId, EventArgs e);
 
@@ -197,4 +196,7 @@ public class PremiumFeatureActivationTask : IRobloxEntity<long, PremiumFeatureAc
 	{
 		PremiumFeatureActivationTask.GrantedItemListActivation?.Invoke(premiumFeatureActivationTaskId, e);
 	}
+}
+
+
 }

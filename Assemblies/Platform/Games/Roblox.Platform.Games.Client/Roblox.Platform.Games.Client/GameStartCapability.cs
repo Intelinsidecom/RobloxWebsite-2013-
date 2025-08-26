@@ -1,5 +1,8 @@
-namespace Roblox.Games.Client;
+﻿namespace Roblox.Platform.Games.Clientpublic {
+    class GameStartCapability : ServerCapabilityBase
 
-public class GameStartCapability : ServerCapabilityBase
 {
+}
+
+
 }

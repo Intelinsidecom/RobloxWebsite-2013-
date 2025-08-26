@@ -5,11 +5,10 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Roblox.CommunitySift;
 using Roblox.ContentFilterApi.Client;
-using Roblox.TextFilter.Properties;
+using Roblox.Platform.TextFilter.Properties;
+namespace Roblox.Platform.TextFilter {
+    /// <summary>
 
-namespace Roblox.TextFilter;
-
-/// <summary>
 /// Represents an <see cref="T:Roblox.TextFilter.ITextFilter" /> that performs basic text filtering.
 /// </summary>
 internal class BasicTextFilter : ITextFilter
@@ -494,4 +493,7 @@ internal class BasicTextFilter : ITextFilter
 			TriggeredModerationCategories = new HashSet<ModerationCategory>()
 		};
 	}
+}
+
+
 }

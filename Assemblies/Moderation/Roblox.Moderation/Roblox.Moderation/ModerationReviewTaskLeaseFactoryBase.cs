@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Platform.Membership.Core;
 using Roblox.Platform.Moderation.Properties;
+namespace Roblox.Moderationinternal {
+    abstract class ModerationReviewTaskLeaseFactoryBase<TIReviewTask, TReviewTaskLease, TIReviewTaskLease_Internal, TIReviewTaskLease, TIReviewTaskLeaseEntity> where TIReviewTask : IReviewTask where TReviewTaskLease : TIReviewTaskLease_Internal, TIReviewTaskLease where TIReviewTaskLease_Internal : IReviewTaskLease_Internal, TIReviewTaskLease where TIReviewTaskLease : IReviewTaskLease where TIReviewTaskLeaseEntity : IReviewTaskLeaseEntity
 
-namespace Roblox.Platform.Moderation;
-
-internal abstract class ModerationReviewTaskLeaseFactoryBase<TIReviewTask, TReviewTaskLease, TIReviewTaskLease_Internal, TIReviewTaskLease, TIReviewTaskLeaseEntity> where TIReviewTask : IReviewTask where TReviewTaskLease : TIReviewTaskLease_Internal, TIReviewTaskLease where TIReviewTaskLease_Internal : IReviewTaskLease_Internal, TIReviewTaskLease where TIReviewTaskLease : IReviewTaskLease where TIReviewTaskLeaseEntity : IReviewTaskLeaseEntity
 {
 	private readonly Func<DateTime> _NowFunc;
 
@@ -74,4 +73,7 @@ internal abstract class ModerationReviewTaskLeaseFactoryBase<TIReviewTask, TRevi
 		}
 		return default(TIReviewTaskLeaseEntity);
 	}
+}
+
+
 }

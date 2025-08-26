@@ -1,9 +1,19 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class WebAuthenticatorLoginEventArgs : WebEventArgs
 
-public class WebAuthenticatorLoginEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// URL of the page or endpoint through which this event is fired
 	/// </summary>
 	public string Url;
 }
+
+
+}
+
+
+
+
+
+

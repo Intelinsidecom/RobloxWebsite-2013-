@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PromotedChannelsResources_en_us : TranslationResourcesBase, IPromotedChannelsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PromotedChannelsResources_en_us : TranslationResourcesBase, IPromotedChannelsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -353,4 +352,7 @@ internal class PromotedChannelsResources_en_us : TranslationResourcesBase, IProm
 	{
 		return "The url must match the social media type.";
 	}
+}
+
+
 }

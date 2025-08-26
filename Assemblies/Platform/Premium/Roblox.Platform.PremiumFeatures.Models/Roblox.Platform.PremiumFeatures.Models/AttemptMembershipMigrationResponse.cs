@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Runtime.Serialization;
+namespace Roblox.Platform.PremiumFeatures.Models {
+    [DataContract]
 
-namespace Roblox.PremiumFeatures.Models;
-
-[DataContract]
 public class AttemptMembershipMigrationResponse : MembershipMigrationResponse
 {
 	/// <summary>
@@ -58,4 +57,7 @@ public class AttemptMembershipMigrationResponse : MembershipMigrationResponse
 	public AttemptMembershipMigrationResponse()
 	{
 	}
+}
+
+
 }

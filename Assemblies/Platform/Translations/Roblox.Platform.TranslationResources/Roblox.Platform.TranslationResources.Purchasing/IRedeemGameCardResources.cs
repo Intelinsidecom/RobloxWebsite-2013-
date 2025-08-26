@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Purchasing;
+﻿namespace Roblox.Platform.TranslationResources.Purchasingpublic {
+    interface IRedeemGameCardResources : ITranslationResources
 
-public interface IRedeemGameCardResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.Dialog.Close"
@@ -287,4 +287,7 @@ public interface IRedeemGameCardResources : ITranslationResources
 	/// English String: "Redeem one more Roblox card from Walmart to receive {rewardName}."
 	/// </summary>
 	string ResponseWalmartRewardUpsell(string rewardName);
+}
+
+
 }

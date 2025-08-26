@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RedeemToyResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -18,7 +18,7 @@ internal class RedeemToyResources_pt_br : RedeemToyResources_en_us, IRedeemToyRe
 	/// link text
 	/// English String: "Can't find your code?"
 	/// </summary>
-	public override string ActionCantFindCode => "Não consegue encontrar o código?";
+	public override string ActionCantFindCode => "NÃ£o consegue encontrar o cÃ³digo?";
 
 	/// <summary>
 	/// Key: "Action.Close"
@@ -32,14 +32,14 @@ internal class RedeemToyResources_pt_br : RedeemToyResources_en_us, IRedeemToyRe
 	/// button text
 	/// English String: "Continue to Video"
 	/// </summary>
-	public override string ActionContinueVideo => "Continuar para o vídeo";
+	public override string ActionContinueVideo => "Continuar para o vÃ­deo";
 
 	/// <summary>
 	/// Key: "Action.HavePromoCode"
 	/// link text
 	/// English String: "Have a promo code? Click here"
 	/// </summary>
-	public override string ActionHavePromoCode => "Você tem um código promocional? Clique aqui";
+	public override string ActionHavePromoCode => "VocÃª tem um cÃ³digo promocional? Clique aqui";
 
 	/// <summary>
 	/// Key: "Action.HowToRedeem"
@@ -88,7 +88,7 @@ internal class RedeemToyResources_pt_br : RedeemToyResources_en_us, IRedeemToyRe
 	/// modal description text warning user that they are leaving Roblox main site
 	/// English String: "You are about to leave Roblox to view a video on Youtube. Youtube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionLeavingRoblox => "Você está prestes a sair do Roblox para ver um vídeo no Youtube. O Youtube não faz parte de Roblox.com e é regido por uma política de privacidade separada.";
+	public override string DescriptionLeavingRoblox => "VocÃª estÃ¡ prestes a sair do Roblox para ver um vÃ­deo no Youtube. O Youtube nÃ£o faz parte de Roblox.com e Ã© regido por uma polÃ­tica de privacidade separada.";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.Success"
@@ -109,35 +109,35 @@ internal class RedeemToyResources_pt_br : RedeemToyResources_en_us, IRedeemToyRe
 	/// modal heading
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingYoureLeavingRoblox => "Você está saindo do Roblox";
+	public override string HeadingYoureLeavingRoblox => "VocÃª estÃ¡ saindo do Roblox";
 
 	/// <summary>
 	/// Key: "Label.EnterToyCode"
 	/// label
 	/// English String: "Enter Toy Code"
 	/// </summary>
-	public override string LabelEnterToyCode => "Insira o código do brinquedo";
+	public override string LabelEnterToyCode => "Insira o cÃ³digo do brinquedo";
 
 	/// <summary>
 	/// Key: "Response.InvalidCodeTryAgain"
 	/// error message
 	/// English String: "Invalid code, please try again."
 	/// </summary>
-	public override string ResponseInvalidCodeTryAgain => "Código inválido. Tente novamente.";
+	public override string ResponseInvalidCodeTryAgain => "CÃ³digo invÃ¡lido. Tente novamente.";
 
 	/// <summary>
 	/// Key: "Response.LoginRequiredToRedeem"
 	/// error message
 	/// English String: "You must be logged in to your Roblox account to redeem the code for your virtual item!"
 	/// </summary>
-	public override string ResponseLoginRequiredToRedeem => "Você precisa estar conectado com sua conta Roblox para utilizar o código do seu item virtual!";
+	public override string ResponseLoginRequiredToRedeem => "VocÃª precisa estar conectado com sua conta Roblox para utilizar o cÃ³digo do seu item virtual!";
 
 	/// <summary>
 	/// Key: "Response.RedeemSuccess"
 	/// success message
 	/// English String: "You have successfully redeemed your item."
 	/// </summary>
-	public override string ResponseRedeemSuccess => "Você utilizou seu item com sucesso!";
+	public override string ResponseRedeemSuccess => "VocÃª utilizou seu item com sucesso!";
 
 	public RedeemToyResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -151,7 +151,7 @@ internal class RedeemToyResources_pt_br : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForActionCantFindCode()
 	{
-		return "Não consegue encontrar o código?";
+		return "NÃ£o consegue encontrar o cÃ³digo?";
 	}
 
 	protected override string _GetTemplateForActionClose()
@@ -161,12 +161,12 @@ internal class RedeemToyResources_pt_br : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForActionContinueVideo()
 	{
-		return "Continuar para o vídeo";
+		return "Continuar para o vÃ­deo";
 	}
 
 	protected override string _GetTemplateForActionHavePromoCode()
 	{
-		return "Você tem um código promocional? Clique aqui";
+		return "VocÃª tem um cÃ³digo promocional? Clique aqui";
 	}
 
 	protected override string _GetTemplateForActionHowToRedeem()
@@ -206,17 +206,17 @@ internal class RedeemToyResources_pt_br : RedeemToyResources_en_us, IRedeemToyRe
 	/// </summary>
 	public override string DescriptionDialogSuccess(string spanTagStart, string itemName, string spanTagEnd, string itemType, string creatorName)
 	{
-		return $"Você utilizou {spanTagStart}{itemName}{spanTagEnd} ({itemType}) de {creatorName} com sucesso.";
+		return $"VocÃª utilizou {spanTagStart}{itemName}{spanTagEnd} ({itemType}) de {creatorName} com sucesso.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSuccess()
 	{
-		return "Você utilizou {spanTagStart}{itemName}{spanTagEnd} ({itemType}) de {creatorName} com sucesso.";
+		return "VocÃª utilizou {spanTagStart}{itemName}{spanTagEnd} ({itemType}) de {creatorName} com sucesso.";
 	}
 
 	protected override string _GetTemplateForDescriptionLeavingRoblox()
 	{
-		return "Você está prestes a sair do Roblox para ver um vídeo no Youtube. O Youtube não faz parte de Roblox.com e é regido por uma política de privacidade separada.";
+		return "VocÃª estÃ¡ prestes a sair do Roblox para ver um vÃ­deo no Youtube. O Youtube nÃ£o faz parte de Roblox.com e Ã© regido por uma polÃ­tica de privacidade separada.";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSuccess()
@@ -231,26 +231,29 @@ internal class RedeemToyResources_pt_br : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForHeadingYoureLeavingRoblox()
 	{
-		return "Você está saindo do Roblox";
+		return "VocÃª estÃ¡ saindo do Roblox";
 	}
 
 	protected override string _GetTemplateForLabelEnterToyCode()
 	{
-		return "Insira o código do brinquedo";
+		return "Insira o cÃ³digo do brinquedo";
 	}
 
 	protected override string _GetTemplateForResponseInvalidCodeTryAgain()
 	{
-		return "Código inválido. Tente novamente.";
+		return "CÃ³digo invÃ¡lido. Tente novamente.";
 	}
 
 	protected override string _GetTemplateForResponseLoginRequiredToRedeem()
 	{
-		return "Você precisa estar conectado com sua conta Roblox para utilizar o código do seu item virtual!";
+		return "VocÃª precisa estar conectado com sua conta Roblox para utilizar o cÃ³digo do seu item virtual!";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccess()
 	{
-		return "Você utilizou seu item com sucesso!";
+		return "VocÃª utilizou seu item com sucesso!";
 	}
+}
+
+
 }

@@ -1,7 +1,10 @@
-namespace Roblox.Platform.Events;
+namespace Roblox.Events {
+    public enum EventDestinationType
 
-public enum EventDestinationType
 {
 	AmazonSns = 1,
 	AmazonSqs
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IDevExHomeResources : ITranslationResources
 
-public interface IDevExHomeResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "GetActionCancel"
@@ -115,4 +115,7 @@ public interface IDevExHomeResources : ITranslationResources
 	/// English String: "You must verify your email before you can cash out."
 	/// </summary>
 	string GetLabelVerifiedEmailForCashout { get; }
+}
+
+
 }

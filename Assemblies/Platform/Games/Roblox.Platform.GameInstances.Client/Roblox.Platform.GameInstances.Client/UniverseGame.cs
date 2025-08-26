@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.GameInstances.Interfaces;
+namespace Roblox.Platform.GameInstances.Clientpublic {
+    class UniverseGame : IGame
 
-namespace Roblox.GameInstances.Client;
-
-public class UniverseGame : IGame
 {
 	public long PlaceId { get; }
 
@@ -22,4 +21,7 @@ public class UniverseGame : IGame
 		PlaySessions = Enumerable.Empty<PlaySession>();
 		Updated = DateTime.UtcNow;
 	}
+}
+
+
 }

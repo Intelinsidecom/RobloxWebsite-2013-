@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class BuildersClubResources_en_us : TranslationResourcesBase, IBuildersClubResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class BuildersClubResources_en_us : TranslationResourcesBase, IBuildersClubResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -102,4 +101,7 @@ internal class BuildersClubResources_en_us : TranslationResourcesBase, IBuilders
 	{
 		return "Close";
 	}
+}
+
+
 }

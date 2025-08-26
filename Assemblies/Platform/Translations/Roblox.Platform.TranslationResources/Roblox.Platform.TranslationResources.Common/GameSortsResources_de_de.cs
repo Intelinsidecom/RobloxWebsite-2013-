@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides GameSortsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -58,7 +58,7 @@ internal class GameSortsResources_de_de : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.FriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string LabelFriendActivity => "Freundesaktivität";
+	public override string LabelFriendActivity => "FreundesaktivitÃ¤t";
 
 	/// <summary>
 	/// Key: "Label.FriendsPlaying"
@@ -70,13 +70,13 @@ internal class GameSortsResources_de_de : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.GamesForYou"
 	/// English String: "Games for You"
 	/// </summary>
-	public override string LabelGamesForYou => "Spiele für dich";
+	public override string LabelGamesForYou => "Spiele fÃ¼r dich";
 
 	/// <summary>
 	/// Key: "Label.MoreResultsFor"
 	/// English String: "More Results for"
 	/// </summary>
-	public override string LabelMoreResultsFor => "Mehr Ergebnisse für";
+	public override string LabelMoreResultsFor => "Mehr Ergebnisse fÃ¼r";
 
 	/// <summary>
 	/// Key: "Label.MostEngaging"
@@ -118,7 +118,7 @@ internal class GameSortsResources_de_de : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.PersonalServer"
 	/// English String: "Personal Server"
 	/// </summary>
-	public override string LabelPersonalServer => "Persönlicher Server";
+	public override string LabelPersonalServer => "PersÃ¶nlicher Server";
 
 	/// <summary>
 	/// Key: "Label.PlayersLove"
@@ -226,7 +226,7 @@ internal class GameSortsResources_de_de : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "MoreResultsFor"
 	/// English String: "More Results for"
 	/// </summary>
-	public override string MoreResultsFor => "Mehr Ergebnisse für";
+	public override string MoreResultsFor => "Mehr Ergebnisse fÃ¼r";
 
 	public GameSortsResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -275,7 +275,7 @@ internal class GameSortsResources_de_de : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelFriendActivity()
 	{
-		return "Freundesaktivität";
+		return "FreundesaktivitÃ¤t";
 	}
 
 	protected override string _GetTemplateForLabelFriendsPlaying()
@@ -285,12 +285,12 @@ internal class GameSortsResources_de_de : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelGamesForYou()
 	{
-		return "Spiele für dich";
+		return "Spiele fÃ¼r dich";
 	}
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
 	{
-		return "Mehr Ergebnisse für";
+		return "Mehr Ergebnisse fÃ¼r";
 	}
 
 	protected override string _GetTemplateForLabelMostEngaging()
@@ -325,7 +325,7 @@ internal class GameSortsResources_de_de : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelPersonalServer()
 	{
-		return "Persönlicher Server";
+		return "PersÃ¶nlicher Server";
 	}
 
 	protected override string _GetTemplateForLabelPlayersLove()
@@ -429,6 +429,9 @@ internal class GameSortsResources_de_de : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForMoreResultsFor()
 	{
-		return "Mehr Ergebnisse für";
+		return "Mehr Ergebnisse fÃ¼r";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Notifications;
+﻿namespace Roblox.Platform.TranslationResources.Notifications {
+    /// <summary>
 
-/// <summary>
 /// This class overrides DesktopPushNotificationPromptsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,56 +11,56 @@ internal class DesktopPushNotificationPromptsResources_ko_kr : DesktopPushNotifi
 	/// Notify Me
 	/// English String: "Notify Me"
 	/// </summary>
-	public override string ActionAcceptNotificationPrompt => "알려주세요";
+	public override string ActionAcceptNotificationPrompt => "ì•Œë ¤ì£¼ì„¸ìš”";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// Close
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "닫기";
+	public override string ActionClose => "ë‹«ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.TurnNotificationsBackOn"
 	/// Turn Push Notifications Back On
 	/// English String: "Turn Push Notifications Back On"
 	/// </summary>
-	public override string HeadingTurnNotificationsBackOn => "푸시 알림 다시 켜기";
+	public override string HeadingTurnNotificationsBackOn => "í‘¸ì‹œ ì•Œë¦¼ ë‹¤ì‹œ ì¼œê¸°";
 
 	/// <summary>
 	/// Key: "Heading.TurnNotificationsOn"
 	/// Enable Desktop Push Notifications
 	/// English String: "Enable Desktop Push Notifications"
 	/// </summary>
-	public override string HeadingTurnNotificationsOn => "데스크톱 푸시 알림 활성화";
+	public override string HeadingTurnNotificationsOn => "ë°ìŠ¤í¬í†± í‘¸ì‹œ ì•Œë¦¼ í™œì„±í™”";
 
 	/// <summary>
 	/// Key: "Label.ClickGreenLockOnUrl"
 	/// Click the green lock next to the URL bar to open up your site permissions.
 	/// English String: "Click the green lock next to the URL bar to open up your site permissions."
 	/// </summary>
-	public override string LabelClickGreenLockOnUrl => "URL 입력창 옆의 녹색 자물쇠를 클릭하여 웹 사이트 권한을 여세요.";
+	public override string LabelClickGreenLockOnUrl => "URL ìž…ë ¥ì°½ ì˜†ì˜ ë…¹ìƒ‰ ìžë¬¼ì‡ ë¥¼ í´ë¦­í•˜ì—¬ ì›¹ ì‚¬ì´íŠ¸ ê¶Œí•œì„ ì—¬ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Message.PushNotificationsDisabledSuccess"
 	/// Push notifications have been disabled.
 	/// English String: "Push notifications have been disabled."
 	/// </summary>
-	public override string MessagePushNotificationsDisabledSuccess => "푸시 알림이 비활성화되었어요.";
+	public override string MessagePushNotificationsDisabledSuccess => "í‘¸ì‹œ ì•Œë¦¼ì´ ë¹„í™œì„±í™”ë˜ì—ˆì–´ìš”.";
 
 	/// <summary>
 	/// Key: "Message.PushNotificationsEnabledSuccess"
 	/// Push notifications have been enabled!
 	/// English String: "Push notifications have been enabled!"
 	/// </summary>
-	public override string MessagePushNotificationsEnabledSuccess => "푸시 알림이 활성화되었어요!";
+	public override string MessagePushNotificationsEnabledSuccess => "í‘¸ì‹œ ì•Œë¦¼ì´ í™œì„±í™”ë˜ì—ˆì–´ìš”!";
 
 	/// <summary>
 	/// Key: "Message.SendNotificationsPrompt"
 	/// Can we send you notifications on this computer?
 	/// English String: "Can we send you notifications on this computer?"
 	/// </summary>
-	public override string MessageSendNotificationsPrompt => "사용 중인 컴퓨터에서 알림을 받고 싶나요?";
+	public override string MessageSendNotificationsPrompt => "ì‚¬ìš© ì¤‘ì¸ ì»´í“¨í„°ì—ì„œ ì•Œë¦¼ì„ ë°›ê³  ì‹¶ë‚˜ìš”?";
 
 	public DesktopPushNotificationPromptsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -69,27 +69,27 @@ internal class DesktopPushNotificationPromptsResources_ko_kr : DesktopPushNotifi
 
 	protected override string _GetTemplateForActionAcceptNotificationPrompt()
 	{
-		return "알려주세요";
+		return "ì•Œë ¤ì£¼ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "닫기";
+		return "ë‹«ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingTurnNotificationsBackOn()
 	{
-		return "푸시 알림 다시 켜기";
+		return "í‘¸ì‹œ ì•Œë¦¼ ë‹¤ì‹œ ì¼œê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingTurnNotificationsOn()
 	{
-		return "데스크톱 푸시 알림 활성화";
+		return "ë°ìŠ¤í¬í†± í‘¸ì‹œ ì•Œë¦¼ í™œì„±í™”";
 	}
 
 	protected override string _GetTemplateForLabelClickGreenLockOnUrl()
 	{
-		return "URL 입력창 옆의 녹색 자물쇠를 클릭하여 웹 사이트 권한을 여세요.";
+		return "URL ìž…ë ¥ì°½ ì˜†ì˜ ë…¹ìƒ‰ ìžë¬¼ì‡ ë¥¼ í´ë¦­í•˜ì—¬ ì›¹ ì‚¬ì´íŠ¸ ê¶Œí•œì„ ì—¬ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -99,12 +99,12 @@ internal class DesktopPushNotificationPromptsResources_ko_kr : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAllowNotificationsBackOn(string startBold, string endBold)
 	{
-		return $"{startBold}허용{endBold}을 선택하여 알림을 다시 켜세요.";
+		return $"{startBold}í—ˆìš©{endBold}ì„ ì„ íƒí•˜ì—¬ ì•Œë¦¼ì„ ë‹¤ì‹œ ì¼œì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAllowNotificationsBackOn()
 	{
-		return "{startBold}허용{endBold}을 선택하여 알림을 다시 켜세요.";
+		return "{startBold}í—ˆìš©{endBold}ì„ ì„ íƒí•˜ì—¬ ì•Œë¦¼ì„ ë‹¤ì‹œ ì¼œì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -114,12 +114,12 @@ internal class DesktopPushNotificationPromptsResources_ko_kr : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAllowReceiveNotifications(string startBold, string endBold)
 	{
-		return $"브라우저에서 {startBold}허용{endBold}을 클릭하시면, 저희가 보내드리는 푸시 알림을 받게 된답니다!";
+		return $"ë¸Œë¼ìš°ì €ì—ì„œ {startBold}í—ˆìš©{endBold}ì„ í´ë¦­í•˜ì‹œë©´, ì €í¬ê°€ ë³´ë‚´ë“œë¦¬ëŠ” í‘¸ì‹œ ì•Œë¦¼ì„ ë°›ê²Œ ëœë‹µë‹ˆë‹¤!";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAllowReceiveNotifications()
 	{
-		return "브라우저에서 {startBold}허용{endBold}을 클릭하시면, 저희가 보내드리는 푸시 알림을 받게 된답니다!";
+		return "ë¸Œë¼ìš°ì €ì—ì„œ {startBold}í—ˆìš©{endBold}ì„ í´ë¦­í•˜ì‹œë©´, ì €í¬ê°€ ë³´ë‚´ë“œë¦¬ëŠ” í‘¸ì‹œ ì•Œë¦¼ì„ ë°›ê²Œ ëœë‹µë‹ˆë‹¤!";
 	}
 
 	/// <summary>
@@ -129,12 +129,12 @@ internal class DesktopPushNotificationPromptsResources_ko_kr : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAlwaysAllowNotificationsBackOn(string startBold, string endBold)
 	{
-		return $"{startBold}이 사이트에서 항상 허용{endBold}을 선택하여 알림을 다시 켜세요.";
+		return $"{startBold}ì´ ì‚¬ì´íŠ¸ì—ì„œ í•­ìƒ í—ˆìš©{endBold}ì„ ì„ íƒí•˜ì—¬ ì•Œë¦¼ì„ ë‹¤ì‹œ ì¼œì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAlwaysAllowNotificationsBackOn()
 	{
-		return "{startBold}이 사이트에서 항상 허용{endBold}을 선택하여 알림을 다시 켜세요.";
+		return "{startBold}ì´ ì‚¬ì´íŠ¸ì—ì„œ í•­ìƒ í—ˆìš©{endBold}ì„ ì„ íƒí•˜ì—¬ ì•Œë¦¼ì„ ë‹¤ì‹œ ì¼œì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -144,12 +144,12 @@ internal class DesktopPushNotificationPromptsResources_ko_kr : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAlwaysReceiveNotifications(string startBold, string endBold)
 	{
-		return $"브라우저에서 {startBold}항상 알림 받기{endBold}를 클릭하시면, 저희가 보내드리는 푸시 알림을 받게 된답니다!";
+		return $"ë¸Œë¼ìš°ì €ì—ì„œ {startBold}í•­ìƒ ì•Œë¦¼ ë°›ê¸°{endBold}ë¥¼ í´ë¦­í•˜ì‹œë©´, ì €í¬ê°€ ë³´ë‚´ë“œë¦¬ëŠ” í‘¸ì‹œ ì•Œë¦¼ì„ ë°›ê²Œ ëœë‹µë‹ˆë‹¤!";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAlwaysReceiveNotifications()
 	{
-		return "브라우저에서 {startBold}항상 알림 받기{endBold}를 클릭하시면, 저희가 보내드리는 푸시 알림을 받게 된답니다!";
+		return "ë¸Œë¼ìš°ì €ì—ì„œ {startBold}í•­ìƒ ì•Œë¦¼ ë°›ê¸°{endBold}ë¥¼ í´ë¦­í•˜ì‹œë©´, ì €í¬ê°€ ë³´ë‚´ë“œë¦¬ëŠ” í‘¸ì‹œ ì•Œë¦¼ì„ ë°›ê²Œ ëœë‹µë‹ˆë‹¤!";
 	}
 
 	/// <summary>
@@ -159,26 +159,29 @@ internal class DesktopPushNotificationPromptsResources_ko_kr : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionClickPermissionDropdown(string startBold, string endBold)
 	{
-		return $"{startBold}권한{endBold} 탭의 알림 옆에 있는 드롭다운 화살표를 클릭하세요.";
+		return $"{startBold}ê¶Œí•œ{endBold} íƒ­ì˜ ì•Œë¦¼ ì˜†ì— ìžˆëŠ” ë“œë¡­ë‹¤ìš´ í™”ì‚´í‘œë¥¼ í´ë¦­í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionClickPermissionDropdown()
 	{
-		return "{startBold}권한{endBold} 탭의 알림 옆에 있는 드롭다운 화살표를 클릭하세요.";
+		return "{startBold}ê¶Œí•œ{endBold} íƒ­ì˜ ì•Œë¦¼ ì˜†ì— ìžˆëŠ” ë“œë¡­ë‹¤ìš´ í™”ì‚´í‘œë¥¼ í´ë¦­í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForMessagePushNotificationsDisabledSuccess()
 	{
-		return "푸시 알림이 비활성화되었어요.";
+		return "í‘¸ì‹œ ì•Œë¦¼ì´ ë¹„í™œì„±í™”ë˜ì—ˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForMessagePushNotificationsEnabledSuccess()
 	{
-		return "푸시 알림이 활성화되었어요!";
+		return "í‘¸ì‹œ ì•Œë¦¼ì´ í™œì„±í™”ë˜ì—ˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForMessageSendNotificationsPrompt()
 	{
-		return "사용 중인 컴퓨터에서 알림을 받고 싶나요?";
+		return "ì‚¬ìš© ì¤‘ì¸ ì»´í“¨í„°ì—ì„œ ì•Œë¦¼ì„ ë°›ê³  ì‹¶ë‚˜ìš”?";
 	}
+}
+
+
 }

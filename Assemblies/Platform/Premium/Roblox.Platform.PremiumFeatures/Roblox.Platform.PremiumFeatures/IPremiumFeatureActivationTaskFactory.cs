@@ -1,6 +1,9 @@
-namespace Roblox.PremiumFeatures;
+﻿namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IPremiumFeatureActivationTaskFactory
 
-public interface IPremiumFeatureActivationTaskFactory
 {
 	PremiumFeature RequestPremiumFeatureActivation(long accountId, int premiumFeatureId);
+}
+
+
 }

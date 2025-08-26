@@ -2,10 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Diagnostics;
+namespace Roblox.Platform.TextFilter {
+    class TextFilterMetricsTracker : ITextFilterMetricsTracker
 
-namespace Roblox.TextFilter;
-
-internal class TextFilterMetricsTracker : ITextFilterMetricsTracker
 {
 	private const string _DefaultClient = "Unspecified";
 
@@ -129,4 +128,7 @@ internal class TextFilterMetricsTracker : ITextFilterMetricsTracker
 	{
 		return new List<T?>(((T[])Enum.GetValues(typeof(T))).Cast<T?>()) { null };
 	}
+}
+
+
 }

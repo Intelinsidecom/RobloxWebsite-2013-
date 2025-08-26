@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides WebUtilResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -221,4 +221,7 @@ internal class WebUtilResources_de_de : WebUtilResources_en_us, IWebUtilResource
 	{
 		return "{years} Jahre";
 	}
+}
+
+
 }

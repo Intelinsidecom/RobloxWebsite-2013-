@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents.Events;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class ConfigurePlaceEvent : WebEventBase
 
-public class ConfigurePlaceEvent : WebEventBase
 {
 	private const string _Name = "configurePlace";
 
@@ -48,3 +49,12 @@ public class ConfigurePlaceEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

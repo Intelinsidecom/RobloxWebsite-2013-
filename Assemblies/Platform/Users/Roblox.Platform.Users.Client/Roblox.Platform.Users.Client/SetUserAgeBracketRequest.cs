@@ -1,8 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 internal class SetUserAgeBracketRequest
@@ -12,4 +11,6 @@ internal class SetUserAgeBracketRequest
 
 	[DataMember(Name = "ageBracket")]
 	public UserAgeBracket AgeBracket { get; set; }
+}
+
 }

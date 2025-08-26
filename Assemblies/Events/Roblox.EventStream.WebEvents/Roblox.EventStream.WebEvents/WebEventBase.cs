@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Represents a web event that can be streamed.
 /// </summary>
 public abstract class WebEventBase : EventBase
@@ -10,7 +11,7 @@ public abstract class WebEventBase : EventBase
 	/// <summary>
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventBase" /> class.
 	/// </summary>
-	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.EventStreamer" /> used to stream the event.</param>
+	/// <param name="streamer">The <see cref="T:Roblox.Platform.EventStream.IEventStreamer" /> used to stream the event.</param>
 	/// <param name="eventName">The name of the event.</param>
 	/// <param name="args">The <see cref="T:Roblox.Platform.EventStream.WebEvents.WebEventArgs" /> containing event info.</param>
 	/// <exception cref="!:PlatformArgumentNullException">Thrown if <paramref name="streamer" />, <paramref name="eventName" />, or <paramref name="args" /> is null.</exception>
@@ -52,3 +53,12 @@ public abstract class WebEventBase : EventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

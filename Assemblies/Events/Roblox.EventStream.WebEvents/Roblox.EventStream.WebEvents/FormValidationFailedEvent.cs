@@ -1,8 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
+namespace Roblox.EventStream.WebEvents {
+    public class FormValidationFailedEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents;
-
-public class FormValidationFailedEvent : WebEventBase
 {
 	private const string _Name = "formValidation";
 
@@ -37,3 +37,12 @@ public class FormValidationFailedEvent : WebEventBase
 		AddEventArg("vis", args.IsVisible.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

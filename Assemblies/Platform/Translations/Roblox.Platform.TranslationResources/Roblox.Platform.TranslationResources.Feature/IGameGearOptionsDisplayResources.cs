@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IGameGearOptionsDisplayResources : ITranslationResources
 
-public interface IGameGearOptionsDisplayResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "LabelAllGenreAllowed"
@@ -19,4 +19,7 @@ public interface IGameGearOptionsDisplayResources : ITranslationResources
 	/// English String: "{GearName} Gear Only"
 	/// </summary>
 	string LabelGearOnly(string GearName);
+}
+
+
 }

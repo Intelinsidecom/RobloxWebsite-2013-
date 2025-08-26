@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+namespace Roblox.EventStream.ChatTrainingDatapublic {
+    class ChatTrainingData : IChatTrainingData
 
-namespace Roblox.Platform.EventStream.ChatTrainingData;
-
-public class ChatTrainingData : IChatTrainingData
 {
 	[JsonProperty(PropertyName = "evt")]
 	public string Event { get; set; }
@@ -50,4 +49,7 @@ public class ChatTrainingData : IChatTrainingData
 
 	[JsonProperty(PropertyName = "o13moderationLevel")]
 	public int? Over13ModerationLevel { get; set; }
+}
+
+
 }

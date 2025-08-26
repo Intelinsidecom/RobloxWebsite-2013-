@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PremiumResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,74 +10,74 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// Key: "Action.Bought"
 	/// English String: "Bought"
 	/// </summary>
-	public override string ActionBought => "購入しました";
+	public override string ActionBought => "è³¼å…¥ã—ã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Action.BuyNow"
 	/// English String: "Buy Now!"
 	/// </summary>
-	public override string ActionBuyNow => "今すぐ買う！";
+	public override string ActionBuyNow => "ä»Šã™ãè²·ã†ï¼";
 
 	/// <summary>
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "Robuxを買う";
+	public override string ActionBuyRobux => "Robuxã‚’è²·ã†";
 
 	/// <summary>
 	/// Key: "Description.GetMoreRobux"
 	/// English String: "Get 10% more when purchasing Robux"
 	/// </summary>
-	public override string DescriptionGetMoreRobux => "Robuxの購入で10%のボーナスをゲット";
+	public override string DescriptionGetMoreRobux => "Robuxã®è³¼å…¥ã§10%ã®ãƒœãƒ¼ãƒŠã‚¹ã‚’ã‚²ãƒƒãƒˆ";
 
 	/// <summary>
 	/// Key: "Description.RobloxPremiumSubtitle"
 	/// English String: "Joining Roblox Premium gets you a monthly Robux allowance and a 10% bonus when buying Robux. You will also get access to Roblox's economy features including buying, selling, and trading items, as well as increased revenue share on all sales in your games."
 	/// </summary>
-	public override string DescriptionRobloxPremiumSubtitle => "Roblox Premiumに入会すると毎月Robuxが支給され、さらにRobuxを購入した際に10%のボーナスをゲットします。また、すべてのゲーム内での収入アップだけでなく、購入、販売、アイテムの交換など、Robloxの経済機能にアクセスすることができます。";
+	public override string DescriptionRobloxPremiumSubtitle => "Roblox Premiumã«å…¥ä¼šã™ã‚‹ã¨æ¯ŽæœˆRobuxãŒæ”¯çµ¦ã•ã‚Œã€ã•ã‚‰ã«Robuxã‚’è³¼å…¥ã—ãŸéš›ã«10%ã®ãƒœãƒ¼ãƒŠã‚¹ã‚’ã‚²ãƒƒãƒˆã—ã¾ã™ã€‚ã¾ãŸã€ã™ã¹ã¦ã®ã‚²ãƒ¼ãƒ å†…ã§ã®åŽå…¥ã‚¢ãƒƒãƒ—ã ã‘ã§ãªãã€è³¼å…¥ã€è²©å£²ã€ã‚¢ã‚¤ãƒ†ãƒ ã®äº¤æ›ãªã©ã€Robloxã®çµŒæ¸ˆæ©Ÿèƒ½ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.SellMoreItems"
 	/// English String: "Resell items and get more Robux selling your creations"
 	/// </summary>
-	public override string DescriptionSellMoreItems => "アイテムを再販売したり、作品を売ってRobuxをさらにゲット";
+	public override string DescriptionSellMoreItems => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å†è²©å£²ã—ãŸã‚Šã€ä½œå“ã‚’å£²ã£ã¦Robuxã‚’ã•ã‚‰ã«ã‚²ãƒƒãƒˆ";
 
 	/// <summary>
 	/// Key: "Description.Trade"
 	/// English String: "Trade items with other Premium members"
 	/// </summary>
-	public override string DescriptionTrade => "他のPremiumメンバーとアイテムを取引する";
+	public override string DescriptionTrade => "ä»–ã®Premiumãƒ¡ãƒ³ãƒãƒ¼ã¨ã‚¢ã‚¤ãƒ†ãƒ ã‚’å–å¼•ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobux"
 	/// The title of Robux page
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string HeadingBuyRobux => "Robuxを買う";
+	public override string HeadingBuyRobux => "Robuxã‚’è²·ã†";
 
 	/// <summary>
 	/// Key: "Heading.ConfirmCancellation"
 	/// English String: "Confirm Cancellation"
 	/// </summary>
-	public override string HeadingConfirmCancellation => "キャンセルの確認";
+	public override string HeadingConfirmCancellation => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã®ç¢ºèª";
 
 	/// <summary>
 	/// Key: "Heading.EvenMoreFeatures"
 	/// English String: "Even more Features"
 	/// </summary>
-	public override string HeadingEvenMoreFeatures => "さらに多くの機能";
+	public override string HeadingEvenMoreFeatures => "ã•ã‚‰ã«å¤šãã®æ©Ÿèƒ½";
 
 	/// <summary>
 	/// Key: "Heading.GeneralError"
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingGeneralError => "エラー";
+	public override string HeadingGeneralError => "ã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Heading.PremiumRobuxDiscounts"
 	/// English String: "As a Premium user, you get discounts on Robux!"
 	/// </summary>
-	public override string HeadingPremiumRobuxDiscounts => "Premiumユーザーとして、Robuxで割引きをもらえます！";
+	public override string HeadingPremiumRobuxDiscounts => "Premiumãƒ¦ãƒ¼ã‚¶ãƒ¼ã¨ã—ã¦ã€Robuxã§å‰²å¼•ãã‚’ã‚‚ã‚‰ãˆã¾ã™ï¼";
 
 	/// <summary>
 	/// Key: "Heading.RobloxPremium"
@@ -90,110 +90,110 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// Key: "Heading.ServerError"
 	/// English String: "Server Error"
 	/// </summary>
-	public override string HeadingServerError => "サーバーエラー";
+	public override string HeadingServerError => "ã‚µãƒ¼ãƒãƒ¼ã‚¨ãƒ©ãƒ¼";
 
 	/// <summary>
 	/// Key: "Heading.SubscriptionUnavailable"
 	/// English String: "Subscription Unavailable"
 	/// </summary>
-	public override string HeadingSubscriptionUnavailable => "サブスクリプションは利用できません";
+	public override string HeadingSubscriptionUnavailable => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Heading.SwitchPlanModal"
 	/// English String: "Confirm Subscription Update"
 	/// </summary>
-	public override string HeadingSwitchPlanModal => "サブスクリプションの更新を確認";
+	public override string HeadingSwitchPlanModal => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®æ›´æ–°ã‚’ç¢ºèª";
 
 	/// <summary>
 	/// Key: "Heading.UnableToFindBc"
 	/// English String: "Cannot find Builders Club"
 	/// </summary>
-	public override string HeadingUnableToFindBc => "Builders Clubが見つかりませんでした";
+	public override string HeadingUnableToFindBc => "Builders ClubãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Heading.UpgradeToPremium"
 	/// English String: "Upgrade to Roblox Premium"
 	/// </summary>
-	public override string HeadingUpgradeToPremium => "Roblox Premiumにアップグレード";
+	public override string HeadingUpgradeToPremium => "Roblox Premiumã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Heading.UpgradeUnavailable"
 	/// English String: "Upgrade Unavailable"
 	/// </summary>
-	public override string HeadingUpgradeUnavailable => "アップグレードできません";
+	public override string HeadingUpgradeUnavailable => "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã§ãã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Label.10PercentMoreRobux"
 	/// Part 1 of a two part label (Label.SinceYouSubscribed)
 	/// English String: "You'll get 10% more Robux"
 	/// </summary>
-	public override string Label10PercentMoreRobux => "Robuxをさらに10%ゲットします";
+	public override string Label10PercentMoreRobux => "Robuxã‚’ã•ã‚‰ã«10%ã‚²ãƒƒãƒˆã—ã¾ã™";
 
 	/// <summary>
 	/// Key: "Label.AndGetMore"
 	/// English String: "and get more!"
 	/// </summary>
-	public override string LabelAndGetMore => "さらにゲット！";
+	public override string LabelAndGetMore => "ã•ã‚‰ã«ã‚²ãƒƒãƒˆï¼";
 
 	/// <summary>
 	/// Key: "Label.BecauseYouSubscribed"
 	/// English String: "Because you Subscribed!"
 	/// </summary>
-	public override string LabelBecauseYouSubscribed => "サブスクリプションしているため！";
+	public override string LabelBecauseYouSubscribed => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã—ã¦ã„ã‚‹ãŸã‚ï¼";
 
 	/// <summary>
 	/// Key: "Label.BuyOnce"
 	/// English String: "Buy Once"
 	/// </summary>
-	public override string LabelBuyOnce => "一度買う";
+	public override string LabelBuyOnce => "ä¸€åº¦è²·ã†";
 
 	/// <summary>
 	/// Key: "Label.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string LabelBuyRobux => "Robuxを買う";
+	public override string LabelBuyRobux => "Robuxã‚’è²·ã†";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "キャンセル";
+	public override string LabelCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Label.Confirm"
 	/// English String: "Confirm"
 	/// </summary>
-	public override string LabelConfirm => "確定";
+	public override string LabelConfirm => "ç¢ºå®š";
 
 	/// <summary>
 	/// Key: "Label.CurrentPlan"
 	/// English String: "Your Current Plan"
 	/// </summary>
-	public override string LabelCurrentPlan => "現在のプラン";
+	public override string LabelCurrentPlan => "ç¾åœ¨ã®ãƒ—ãƒ©ãƒ³";
 
 	/// <summary>
 	/// Key: "Label.Get10PercentOffRobux"
 	/// English String: "Get 10% off Robux"
 	/// </summary>
-	public override string LabelGet10PercentOffRobux => "Robuxを10%オフでゲット";
+	public override string LabelGet10PercentOffRobux => "Robuxã‚’10%ã‚ªãƒ•ã§ã‚²ãƒƒãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.GetMoreRobux"
 	/// English String: "Get More Robux"
 	/// </summary>
-	public override string LabelGetMoreRobux => "さらにRobuxをゲットする";
+	public override string LabelGetMoreRobux => "ã•ã‚‰ã«Robuxã‚’ã‚²ãƒƒãƒˆã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.MembershipManagementRecurring"
 	/// English String: "To manage your Premium subscription, please go to your Billing settings using a browser."
 	/// </summary>
-	public override string LabelMembershipManagementRecurring => "Premiumサブスクリプションを管理するには、ブラウザを使って請求設定へ行ってください。";
+	public override string LabelMembershipManagementRecurring => "Premiumã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã‚’ç®¡ç†ã™ã‚‹ã«ã¯ã€ãƒ–ãƒ©ã‚¦ã‚¶ã‚’ä½¿ã£ã¦è«‹æ±‚è¨­å®šã¸è¡Œã£ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.No"
 	/// English String: "No"
 	/// </summary>
-	public override string LabelNo => "いいえ";
+	public override string LabelNo => "ã„ã„ãˆ";
 
 	/// <summary>
 	/// Key: "Label.PremiumClub2200"
@@ -217,7 +217,7 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.RobloxPremium1000OneMonth"
 	/// English String: "Roblox Premium 1000 One Month"
 	/// </summary>
-	public override string LabelRobloxPremium1000OneMonth => "Roblox Premium 1000 一ヶ月";
+	public override string LabelRobloxPremium1000OneMonth => "Roblox Premium 1000 ä¸€ãƒ¶æœˆ";
 
 	/// <summary>
 	/// Key: "Label.RobloxPremium2200"
@@ -229,7 +229,7 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.RobloxPremium2200OneMonth"
 	/// English String: "Roblox Premium 2200 One Month"
 	/// </summary>
-	public override string LabelRobloxPremium2200OneMonth => "Roblox Premium 2200 一ヶ月";
+	public override string LabelRobloxPremium2200OneMonth => "Roblox Premium 2200 ä¸€ãƒ¶æœˆ";
 
 	/// <summary>
 	/// Key: "Label.RobloxPremium450"
@@ -241,87 +241,87 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// Key: "Label.RobloxPremium450OneMonth"
 	/// English String: "Roblox Premium 450 One Month"
 	/// </summary>
-	public override string LabelRobloxPremium450OneMonth => "Roblox Premium 450 一ヶ月";
+	public override string LabelRobloxPremium450OneMonth => "Roblox Premium 450 ä¸€ãƒ¶æœˆ";
 
 	/// <summary>
 	/// Key: "Label.SellMore"
 	/// English String: "Sell More"
 	/// </summary>
-	public override string LabelSellMore => "もっと売る";
+	public override string LabelSellMore => "ã‚‚ã£ã¨å£²ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.SinceYouSubscribed"
 	/// Part 2 of a 2 part label
 	/// English String: "since you subscribed"
 	/// </summary>
-	public override string LabelSinceYouSubscribed => "サブスクリプションしたため";
+	public override string LabelSinceYouSubscribed => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã—ãŸãŸã‚";
 
 	/// <summary>
 	/// Key: "Label.Subscribe"
 	/// English String: "Subscribe"
 	/// </summary>
-	public override string LabelSubscribe => "サブスクリプション契約する";
+	public override string LabelSubscribe => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.Trade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string LabelTrade => "取引";
+	public override string LabelTrade => "å–å¼•";
 
 	/// <summary>
 	/// Key: "Label.ValuePacks"
 	/// English String: "Value Packs"
 	/// </summary>
-	public override string LabelValuePacks => "バリューパック";
+	public override string LabelValuePacks => "ãƒãƒªãƒ¥ãƒ¼ãƒ‘ãƒƒã‚¯";
 
 	/// <summary>
 	/// Key: "Label.WantMoreRobux"
 	/// English String: "Want more Robux?"
 	/// </summary>
-	public override string LabelWantMoreRobux => "Robuxがもっと必要ですか？";
+	public override string LabelWantMoreRobux => "RobuxãŒã‚‚ã£ã¨å¿…è¦ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelYes => "はい";
+	public override string LabelYes => "ã¯ã„";
 
 	/// <summary>
 	/// Key: "Message.GeneralError"
 	/// English String: "An error occurred while updating your subscription. Please try again later."
 	/// </summary>
-	public override string MessageGeneralError => "サブスクリプションのアップデート中にエラーが発生しました。後でもう一度お試しください。";
+	public override string MessageGeneralError => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.NoDataError"
 	/// English String: "No subscriptions information."
 	/// </summary>
-	public override string MessageNoDataError => "サブスクリプション情報はありません。";
+	public override string MessageNoDataError => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³æƒ…å ±ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "Message.ServerError"
 	/// English String: "A server error occurred while updating your subscription. Please try again later."
 	/// </summary>
-	public override string MessageServerError => "サブスクリプションのアップデート中にサーバーエラーが発生しました。後でもう一度お試しください。";
+	public override string MessageServerError => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆä¸­ã«ã‚µãƒ¼ãƒãƒ¼ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Message.UnableToFindBc"
 	/// English String: "Cannot find Builders Club information for this user."
 	/// </summary>
-	public override string MessageUnableToFindBc => "このユーザーのBuilders Club情報が見つかりません";
+	public override string MessageUnableToFindBc => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®Builders Clubæƒ…å ±ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Message.UpgradeUnavailableModal"
 	/// English String: "We are sorry, we cannot change your subscription because there is currently no package equivalent to Lifetime Builders Club."
 	/// </summary>
-	public override string MessageUpgradeUnavailableModal => "申し訳ありませんが、現在、永久Builders Clubと同等のパッケージがないため、サブスクリプションの変更はできません。";
+	public override string MessageUpgradeUnavailableModal => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ç¾åœ¨ã€æ°¸ä¹…Builders Clubã¨åŒç­‰ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãŒãªã„ãŸã‚ã€ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®å¤‰æ›´ã¯ã§ãã¾ã›ã‚“ã€‚";
 
 	/// <summary>
 	/// Key: "SwitchPlanTitle"
 	/// Wrong string. Do translate this.
 	/// English String: "Confirm Subscription Update"
 	/// </summary>
-	public override string SwitchPlanTitle => "サブスクリプションの更新を確認";
+	public override string SwitchPlanTitle => "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®æ›´æ–°ã‚’ç¢ºèª";
 
 	public PremiumResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -330,17 +330,17 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForActionBought()
 	{
-		return "購入しました";
+		return "è³¼å…¥ã—ã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForActionBuyNow()
 	{
-		return "今すぐ買う！";
+		return "ä»Šã™ãè²·ã†ï¼";
 	}
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "Robuxを買う";
+		return "Robuxã‚’è²·ã†";
 	}
 
 	/// <summary>
@@ -349,12 +349,12 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionBuyMoreRobuxSubtitle(string lineBreak, string learnMoreLinkStart, string learnMoreLinkEnd)
 	{
-		return $"Robuxを買ってゲーム内でアバターのアップグレードや特殊能力を購入しましょう。{lineBreak} Roblox Premiumのサブスクリプション契約をして、ボーナス機能と毎月もっとRobuxをゲット。Premiumはキャンセルするまで、毎月課金されます。 {learnMoreLinkStart}詳細はこちら。{learnMoreLinkEnd}";
+		return $"Robuxã‚’è²·ã£ã¦ã‚²ãƒ¼ãƒ å†…ã§ã‚¢ãƒã‚¿ãƒ¼ã®ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã‚„ç‰¹æ®Šèƒ½åŠ›ã‚’è³¼å…¥ã—ã¾ã—ã‚‡ã†ã€‚{lineBreak} Roblox Premiumã®ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã‚’ã—ã¦ã€ãƒœãƒ¼ãƒŠã‚¹æ©Ÿèƒ½ã¨æ¯Žæœˆã‚‚ã£ã¨Robuxã‚’ã‚²ãƒƒãƒˆã€‚Premiumã¯ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§ã€æ¯Žæœˆèª²é‡‘ã•ã‚Œã¾ã™ã€‚ {learnMoreLinkStart}è©³ç´°ã¯ã“ã¡ã‚‰ã€‚{learnMoreLinkEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyMoreRobuxSubtitle()
 	{
-		return "Robuxを買ってゲーム内でアバターのアップグレードや特殊能力を購入しましょう。{lineBreak} Roblox Premiumのサブスクリプション契約をして、ボーナス機能と毎月もっとRobuxをゲット。Premiumはキャンセルするまで、毎月課金されます。 {learnMoreLinkStart}詳細はこちら。{learnMoreLinkEnd}";
+		return "Robuxã‚’è²·ã£ã¦ã‚²ãƒ¼ãƒ å†…ã§ã‚¢ãƒã‚¿ãƒ¼ã®ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã‚„ç‰¹æ®Šèƒ½åŠ›ã‚’è³¼å…¥ã—ã¾ã—ã‚‡ã†ã€‚{lineBreak} Roblox Premiumã®ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã‚’ã—ã¦ã€ãƒœãƒ¼ãƒŠã‚¹æ©Ÿèƒ½ã¨æ¯Žæœˆã‚‚ã£ã¨Robuxã‚’ã‚²ãƒƒãƒˆã€‚Premiumã¯ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§ã€æ¯Žæœˆèª²é‡‘ã•ã‚Œã¾ã™ã€‚ {learnMoreLinkStart}è©³ç´°ã¯ã“ã¡ã‚‰ã€‚{learnMoreLinkEnd}";
 	}
 
 	/// <summary>
@@ -363,17 +363,17 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionBuyRobuxSubtitle(string helpLinkStart, string helpLinkEnd, string paragraphBreaker, string learnMoreLinkStart, string learnMoreLinkEnd)
 	{
-		return $"Robuxをゲットしてゲーム内でアバターのアップグレードや特殊能力を買いましょう。Robuxを稼ぐ方法についての情報については{helpLinkStart}Robuxヘルプページ{helpLinkEnd}をチェックしてください。{paragraphBreaker}Roblox Premiumを買うと、同じ金額でより多くRobuxをゲットできます。Roblox Premiumはキャンセルするまで毎月課金されます。{learnMoreLinkStart}詳細はこちら{learnMoreLinkEnd}。";
+		return $"Robuxã‚’ã‚²ãƒƒãƒˆã—ã¦ã‚²ãƒ¼ãƒ å†…ã§ã‚¢ãƒã‚¿ãƒ¼ã®ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã‚„ç‰¹æ®Šèƒ½åŠ›ã‚’è²·ã„ã¾ã—ã‚‡ã†ã€‚Robuxã‚’ç¨¼ãæ–¹æ³•ã«ã¤ã„ã¦ã®æƒ…å ±ã«ã¤ã„ã¦ã¯{helpLinkStart}Robuxãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸{helpLinkEnd}ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚{paragraphBreaker}Roblox Premiumã‚’è²·ã†ã¨ã€åŒã˜é‡‘é¡ã§ã‚ˆã‚Šå¤šãRobuxã‚’ã‚²ãƒƒãƒˆã§ãã¾ã™ã€‚Roblox Premiumã¯ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§æ¯Žæœˆèª²é‡‘ã•ã‚Œã¾ã™ã€‚{learnMoreLinkStart}è©³ç´°ã¯ã“ã¡ã‚‰{learnMoreLinkEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyRobuxSubtitle()
 	{
-		return "Robuxをゲットしてゲーム内でアバターのアップグレードや特殊能力を買いましょう。Robuxを稼ぐ方法についての情報については{helpLinkStart}Robuxヘルプページ{helpLinkEnd}をチェックしてください。{paragraphBreaker}Roblox Premiumを買うと、同じ金額でより多くRobuxをゲットできます。Roblox Premiumはキャンセルするまで毎月課金されます。{learnMoreLinkStart}詳細はこちら{learnMoreLinkEnd}。";
+		return "Robuxã‚’ã‚²ãƒƒãƒˆã—ã¦ã‚²ãƒ¼ãƒ å†…ã§ã‚¢ãƒã‚¿ãƒ¼ã®ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã‚„ç‰¹æ®Šèƒ½åŠ›ã‚’è²·ã„ã¾ã—ã‚‡ã†ã€‚Robuxã‚’ç¨¼ãæ–¹æ³•ã«ã¤ã„ã¦ã®æƒ…å ±ã«ã¤ã„ã¦ã¯{helpLinkStart}Robuxãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸{helpLinkEnd}ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚{paragraphBreaker}Roblox Premiumã‚’è²·ã†ã¨ã€åŒã˜é‡‘é¡ã§ã‚ˆã‚Šå¤šãRobuxã‚’ã‚²ãƒƒãƒˆã§ãã¾ã™ã€‚Roblox Premiumã¯ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§æ¯Žæœˆèª²é‡‘ã•ã‚Œã¾ã™ã€‚{learnMoreLinkStart}è©³ç´°ã¯ã“ã¡ã‚‰{learnMoreLinkEnd}ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionGetMoreRobux()
 	{
-		return "Robuxの購入で10%のボーナスをゲット";
+		return "Robuxã®è³¼å…¥ã§10%ã®ãƒœãƒ¼ãƒŠã‚¹ã‚’ã‚²ãƒƒãƒˆ";
 	}
 
 	/// <summary>
@@ -382,12 +382,12 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionIosMonthlySubscriptionDisclosure(string costPrice, string renewalPrice)
 	{
-		return $"Roblox Premiumは、料金が月額 {costPrice} のサブスクリプション契約です。お支払いは、ご購入の確認時にiTunesアカウントに課金されます。Roblox Premiumは、現在の契約期間終了日の少なくとも24時間前に自動更新がオフにされない限り自動更新されます。アカウントは現在の契約期間の最終日の24時間以内に {renewalPrice} 課金され更新されます。サブスクリプション契約は、アカウント設定へ行けば管理したり自動更新をオフにしたりできます。18歳以下の場合は、購入する前に必ず両親か法的な保護者の許可があることを確かめてください。許可のない購入をすることは、お持ちのアカウントの削除につながることがあります。";
+		return $"Roblox Premiumã¯ã€æ–™é‡‘ãŒæœˆé¡ {costPrice} ã®ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã§ã™ã€‚ãŠæ”¯æ‰•ã„ã¯ã€ã”è³¼å…¥ã®ç¢ºèªæ™‚ã«iTunesã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«èª²é‡‘ã•ã‚Œã¾ã™ã€‚Roblox Premiumã¯ã€ç¾åœ¨ã®å¥‘ç´„æœŸé–“çµ‚äº†æ—¥ã®å°‘ãªãã¨ã‚‚24æ™‚é–“å‰ã«è‡ªå‹•æ›´æ–°ãŒã‚ªãƒ•ã«ã•ã‚Œãªã„é™ã‚Šè‡ªå‹•æ›´æ–°ã•ã‚Œã¾ã™ã€‚ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ç¾åœ¨ã®å¥‘ç´„æœŸé–“ã®æœ€çµ‚æ—¥ã®24æ™‚é–“ä»¥å†…ã« {renewalPrice} èª²é‡‘ã•ã‚Œæ›´æ–°ã•ã‚Œã¾ã™ã€‚ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã¸è¡Œã‘ã°ç®¡ç†ã—ãŸã‚Šè‡ªå‹•æ›´æ–°ã‚’ã‚ªãƒ•ã«ã—ãŸã‚Šã§ãã¾ã™ã€‚18æ­³ä»¥ä¸‹ã®å ´åˆã¯ã€è³¼å…¥ã™ã‚‹å‰ã«å¿…ãšä¸¡è¦ªã‹æ³•çš„ãªä¿è­·è€…ã®è¨±å¯ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºã‹ã‚ã¦ãã ã•ã„ã€‚è¨±å¯ã®ãªã„è³¼å…¥ã‚’ã™ã‚‹ã“ã¨ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã«ã¤ãªãŒã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionIosMonthlySubscriptionDisclosure()
 	{
-		return "Roblox Premiumは、料金が月額 {costPrice} のサブスクリプション契約です。お支払いは、ご購入の確認時にiTunesアカウントに課金されます。Roblox Premiumは、現在の契約期間終了日の少なくとも24時間前に自動更新がオフにされない限り自動更新されます。アカウントは現在の契約期間の最終日の24時間以内に {renewalPrice} 課金され更新されます。サブスクリプション契約は、アカウント設定へ行けば管理したり自動更新をオフにしたりできます。18歳以下の場合は、購入する前に必ず両親か法的な保護者の許可があることを確かめてください。許可のない購入をすることは、お持ちのアカウントの削除につながることがあります。";
+		return "Roblox Premiumã¯ã€æ–™é‡‘ãŒæœˆé¡ {costPrice} ã®ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã§ã™ã€‚ãŠæ”¯æ‰•ã„ã¯ã€ã”è³¼å…¥ã®ç¢ºèªæ™‚ã«iTunesã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«èª²é‡‘ã•ã‚Œã¾ã™ã€‚Roblox Premiumã¯ã€ç¾åœ¨ã®å¥‘ç´„æœŸé–“çµ‚äº†æ—¥ã®å°‘ãªãã¨ã‚‚24æ™‚é–“å‰ã«è‡ªå‹•æ›´æ–°ãŒã‚ªãƒ•ã«ã•ã‚Œãªã„é™ã‚Šè‡ªå‹•æ›´æ–°ã•ã‚Œã¾ã™ã€‚ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ç¾åœ¨ã®å¥‘ç´„æœŸé–“ã®æœ€çµ‚æ—¥ã®24æ™‚é–“ä»¥å†…ã« {renewalPrice} èª²é‡‘ã•ã‚Œæ›´æ–°ã•ã‚Œã¾ã™ã€‚ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã¸è¡Œã‘ã°ç®¡ç†ã—ãŸã‚Šè‡ªå‹•æ›´æ–°ã‚’ã‚ªãƒ•ã«ã—ãŸã‚Šã§ãã¾ã™ã€‚18æ­³ä»¥ä¸‹ã®å ´åˆã¯ã€è³¼å…¥ã™ã‚‹å‰ã«å¿…ãšä¸¡è¦ªã‹æ³•çš„ãªä¿è­·è€…ã®è¨±å¯ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºã‹ã‚ã¦ãã ã•ã„ã€‚è¨±å¯ã®ãªã„è³¼å…¥ã‚’ã™ã‚‹ã“ã¨ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã«ã¤ãªãŒã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -396,12 +396,12 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionIosSubscriptionDisclosure(string durationType, string costPrice, string renewalPrice)
 	{
-		return $"Roblox Premiumは、料金が {costPrice} の {durationType} サブスクリプション契約です。お支払いは、ご購入の確認時にiTunesアカウントに課金されます。Roblox Premiumは、現在の契約期間終了日の少なくとも24時間前に自動更新がオフにされない限り自動更新されます。アカウントは現在の契約期間の最終日の24時間以内に {renewalPrice} 課金され更新されます。サブスクリプション契約はアカウント設定へ行けば管理したり自動更新をオフにしたりできます。";
+		return $"Roblox Premiumã¯ã€æ–™é‡‘ãŒ {costPrice} ã® {durationType} ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã§ã™ã€‚ãŠæ”¯æ‰•ã„ã¯ã€ã”è³¼å…¥ã®ç¢ºèªæ™‚ã«iTunesã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«èª²é‡‘ã•ã‚Œã¾ã™ã€‚Roblox Premiumã¯ã€ç¾åœ¨ã®å¥‘ç´„æœŸé–“çµ‚äº†æ—¥ã®å°‘ãªãã¨ã‚‚24æ™‚é–“å‰ã«è‡ªå‹•æ›´æ–°ãŒã‚ªãƒ•ã«ã•ã‚Œãªã„é™ã‚Šè‡ªå‹•æ›´æ–°ã•ã‚Œã¾ã™ã€‚ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ç¾åœ¨ã®å¥‘ç´„æœŸé–“ã®æœ€çµ‚æ—¥ã®24æ™‚é–“ä»¥å†…ã« {renewalPrice} èª²é‡‘ã•ã‚Œæ›´æ–°ã•ã‚Œã¾ã™ã€‚ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã¯ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã¸è¡Œã‘ã°ç®¡ç†ã—ãŸã‚Šè‡ªå‹•æ›´æ–°ã‚’ã‚ªãƒ•ã«ã—ãŸã‚Šã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionIosSubscriptionDisclosure()
 	{
-		return "Roblox Premiumは、料金が {costPrice} の {durationType} サブスクリプション契約です。お支払いは、ご購入の確認時にiTunesアカウントに課金されます。Roblox Premiumは、現在の契約期間終了日の少なくとも24時間前に自動更新がオフにされない限り自動更新されます。アカウントは現在の契約期間の最終日の24時間以内に {renewalPrice} 課金され更新されます。サブスクリプション契約はアカウント設定へ行けば管理したり自動更新をオフにしたりできます。";
+		return "Roblox Premiumã¯ã€æ–™é‡‘ãŒ {costPrice} ã® {durationType} ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã§ã™ã€‚ãŠæ”¯æ‰•ã„ã¯ã€ã”è³¼å…¥ã®ç¢ºèªæ™‚ã«iTunesã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«èª²é‡‘ã•ã‚Œã¾ã™ã€‚Roblox Premiumã¯ã€ç¾åœ¨ã®å¥‘ç´„æœŸé–“çµ‚äº†æ—¥ã®å°‘ãªãã¨ã‚‚24æ™‚é–“å‰ã«è‡ªå‹•æ›´æ–°ãŒã‚ªãƒ•ã«ã•ã‚Œãªã„é™ã‚Šè‡ªå‹•æ›´æ–°ã•ã‚Œã¾ã™ã€‚ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ç¾åœ¨ã®å¥‘ç´„æœŸé–“ã®æœ€çµ‚æ—¥ã®24æ™‚é–“ä»¥å†…ã« {renewalPrice} èª²é‡‘ã•ã‚Œæ›´æ–°ã•ã‚Œã¾ã™ã€‚ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã¯ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®šã¸è¡Œã‘ã°ç®¡ç†ã—ãŸã‚Šè‡ªå‹•æ›´æ–°ã‚’ã‚ªãƒ•ã«ã—ãŸã‚Šã§ãã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -410,81 +410,81 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string DescriptionlegalDisclosuresPremiumRobuxPage(string termsLinkStart, string termsLinkEnd)
 	{
-		return $"Robuxを買うと、制限があり返金不可で譲渡不可で取り消し可能なRobuxを使うライセンスを受け取るだけで、これには現実の通貨での価値はありません。その他の制限については、{termsLinkStart}利用規約{termsLinkEnd}をご覧ください。18歳以下の場合は、購入する前に必ず両親か法的な保護者の許可があることを確かめてください。許可のない購入をすることは、お持ちのアカウントの削除につながることがあります。";
+		return $"Robuxã‚’è²·ã†ã¨ã€åˆ¶é™ãŒã‚ã‚Šè¿”é‡‘ä¸å¯ã§è­²æ¸¡ä¸å¯ã§å–ã‚Šæ¶ˆã—å¯èƒ½ãªRobuxã‚’ä½¿ã†ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã‚’å—ã‘å–ã‚‹ã ã‘ã§ã€ã“ã‚Œã«ã¯ç¾å®Ÿã®é€šè²¨ã§ã®ä¾¡å€¤ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ãã®ä»–ã®åˆ¶é™ã«ã¤ã„ã¦ã¯ã€{termsLinkStart}åˆ©ç”¨è¦ç´„{termsLinkEnd}ã‚’ã”è¦§ãã ã•ã„ã€‚18æ­³ä»¥ä¸‹ã®å ´åˆã¯ã€è³¼å…¥ã™ã‚‹å‰ã«å¿…ãšä¸¡è¦ªã‹æ³•çš„ãªä¿è­·è€…ã®è¨±å¯ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºã‹ã‚ã¦ãã ã•ã„ã€‚è¨±å¯ã®ãªã„è³¼å…¥ã‚’ã™ã‚‹ã“ã¨ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã«ã¤ãªãŒã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionlegalDisclosuresPremiumRobuxPage()
 	{
-		return "Robuxを買うと、制限があり返金不可で譲渡不可で取り消し可能なRobuxを使うライセンスを受け取るだけで、これには現実の通貨での価値はありません。その他の制限については、{termsLinkStart}利用規約{termsLinkEnd}をご覧ください。18歳以下の場合は、購入する前に必ず両親か法的な保護者の許可があることを確かめてください。許可のない購入をすることは、お持ちのアカウントの削除につながることがあります。";
+		return "Robuxã‚’è²·ã†ã¨ã€åˆ¶é™ãŒã‚ã‚Šè¿”é‡‘ä¸å¯ã§è­²æ¸¡ä¸å¯ã§å–ã‚Šæ¶ˆã—å¯èƒ½ãªRobuxã‚’ä½¿ã†ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã‚’å—ã‘å–ã‚‹ã ã‘ã§ã€ã“ã‚Œã«ã¯ç¾å®Ÿã®é€šè²¨ã§ã®ä¾¡å€¤ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ãã®ä»–ã®åˆ¶é™ã«ã¤ã„ã¦ã¯ã€{termsLinkStart}åˆ©ç”¨è¦ç´„{termsLinkEnd}ã‚’ã”è¦§ãã ã•ã„ã€‚18æ­³ä»¥ä¸‹ã®å ´åˆã¯ã€è³¼å…¥ã™ã‚‹å‰ã«å¿…ãšä¸¡è¦ªã‹æ³•çš„ãªä¿è­·è€…ã®è¨±å¯ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºã‹ã‚ã¦ãã ã•ã„ã€‚è¨±å¯ã®ãªã„è³¼å…¥ã‚’ã™ã‚‹ã“ã¨ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã«ã¤ãªãŒã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚";
 	}
 
 	/// <summary>
 	/// Key: "Description.legalDisclosuresPremiumUpgradePage"
-	/// English String: "If you are under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking “Submit Order” (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {termsLinkStart}Terms of Use{termsLinkEnd} and {privacyLinkStart}Privacy Policy{privatyLinkEnd}. You can cancel at any time by clicking “Cancel membership” on the {billingLinkStart}billing tab{billingLinkEnd}  of the setting page. If you cancel, you will still be charged for the current billing period."
+	/// English String: "If you are under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking â€œSubmit Orderâ€ (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {termsLinkStart}Terms of Use{termsLinkEnd} and {privacyLinkStart}Privacy Policy{privatyLinkEnd}. You can cancel at any time by clicking â€œCancel membershipâ€ on the {billingLinkStart}billing tab{billingLinkEnd}  of the setting page. If you cancel, you will still be charged for the current billing period."
 	/// </summary>
 	public override string DescriptionlegalDisclosuresPremiumUpgradePage(string termsLinkStart, string termsLinkEnd, string privacyLinkStart, string privatyLinkEnd, string billingLinkStart, string billingLinkEnd)
 	{
-		return $"18歳以下の場合は、購入する前に必ず両親か法的な保護者の許可があることを確かめてください。許可のない購入をすることは、お持ちのアカウントの削除につながることがあります。「ご注文を送信」をクリックすると、(1) サブスクリプション契約をキャンセルするまで毎月、当社が課金することを許可し、 (2) {termsLinkStart}利用規約{termsLinkEnd} と {privacyLinkStart}プライバシーポリシー{privatyLinkEnd}を理解し、同意を表明したことになります。設定ページにある {billingLinkStart}ご請求タブ{billingLinkEnd} の「メンバーシップをキャンセルする」をクリックすれば、いつでもキャンセルできます。キャンセルしても、現在のご請求期間に関しては課金されます。";
+		return $"18æ­³ä»¥ä¸‹ã®å ´åˆã¯ã€è³¼å…¥ã™ã‚‹å‰ã«å¿…ãšä¸¡è¦ªã‹æ³•çš„ãªä¿è­·è€…ã®è¨±å¯ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºã‹ã‚ã¦ãã ã•ã„ã€‚è¨±å¯ã®ãªã„è³¼å…¥ã‚’ã™ã‚‹ã“ã¨ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã«ã¤ãªãŒã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚ã€Œã”æ³¨æ–‡ã‚’é€ä¿¡ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€(1) ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§æ¯Žæœˆã€å½“ç¤¾ãŒèª²é‡‘ã™ã‚‹ã“ã¨ã‚’è¨±å¯ã—ã€ (2) {termsLinkStart}åˆ©ç”¨è¦ç´„{termsLinkEnd} ã¨ {privacyLinkStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼{privatyLinkEnd}ã‚’ç†è§£ã—ã€åŒæ„ã‚’è¡¨æ˜Žã—ãŸã“ã¨ã«ãªã‚Šã¾ã™ã€‚è¨­å®šãƒšãƒ¼ã‚¸ã«ã‚ã‚‹ {billingLinkStart}ã”è«‹æ±‚ã‚¿ãƒ–{billingLinkEnd} ã®ã€Œãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ã„ã¤ã§ã‚‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§ãã¾ã™ã€‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ã¦ã‚‚ã€ç¾åœ¨ã®ã”è«‹æ±‚æœŸé–“ã«é–¢ã—ã¦ã¯èª²é‡‘ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionlegalDisclosuresPremiumUpgradePage()
 	{
-		return "18歳以下の場合は、購入する前に必ず両親か法的な保護者の許可があることを確かめてください。許可のない購入をすることは、お持ちのアカウントの削除につながることがあります。「ご注文を送信」をクリックすると、(1) サブスクリプション契約をキャンセルするまで毎月、当社が課金することを許可し、 (2) {termsLinkStart}利用規約{termsLinkEnd} と {privacyLinkStart}プライバシーポリシー{privatyLinkEnd}を理解し、同意を表明したことになります。設定ページにある {billingLinkStart}ご請求タブ{billingLinkEnd} の「メンバーシップをキャンセルする」をクリックすれば、いつでもキャンセルできます。キャンセルしても、現在のご請求期間に関しては課金されます。";
+		return "18æ­³ä»¥ä¸‹ã®å ´åˆã¯ã€è³¼å…¥ã™ã‚‹å‰ã«å¿…ãšä¸¡è¦ªã‹æ³•çš„ãªä¿è­·è€…ã®è¨±å¯ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºã‹ã‚ã¦ãã ã•ã„ã€‚è¨±å¯ã®ãªã„è³¼å…¥ã‚’ã™ã‚‹ã“ã¨ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã«ã¤ãªãŒã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚ã€Œã”æ³¨æ–‡ã‚’é€ä¿¡ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€(1) ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§æ¯Žæœˆã€å½“ç¤¾ãŒèª²é‡‘ã™ã‚‹ã“ã¨ã‚’è¨±å¯ã—ã€ (2) {termsLinkStart}åˆ©ç”¨è¦ç´„{termsLinkEnd} ã¨ {privacyLinkStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼{privatyLinkEnd}ã‚’ç†è§£ã—ã€åŒæ„ã‚’è¡¨æ˜Žã—ãŸã“ã¨ã«ãªã‚Šã¾ã™ã€‚è¨­å®šãƒšãƒ¼ã‚¸ã«ã‚ã‚‹ {billingLinkStart}ã”è«‹æ±‚ã‚¿ãƒ–{billingLinkEnd} ã®ã€Œãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ã„ã¤ã§ã‚‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§ãã¾ã™ã€‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ã¦ã‚‚ã€ç¾åœ¨ã®ã”è«‹æ±‚æœŸé–“ã«é–¢ã—ã¦ã¯èª²é‡‘ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	/// <summary>
 	/// Key: "Description.PremiumSubscriptionDisclosure"
 	/// Duplicated
-	/// English String: "If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking “Submit Order” (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {teamOfUseLinkStart}Terms of Use{teamOfUseLinkEnd} and {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You can cancel at any time by clicking “Cancel membership” on the {billingTabLinkStart}billing tab{billingTabLinkEnd} of the setting page. If you cancel, you will still be charged for the current billing period."
+	/// English String: "If you're under 18 make sure you have the permission of your parent or legal guardian before making a purchase. Making a purchase without permission may result in your account being deleted.  By clicking â€œSubmit Orderâ€ (1) you authorize us to charge your account every month until you cancel the subscription, and (2) you represent that you understand and agree to the {teamOfUseLinkStart}Terms of Use{teamOfUseLinkEnd} and {privacyPolicyLinkStart}Privacy Policy{privacyPolicyLinkEnd}. You can cancel at any time by clicking â€œCancel membershipâ€ on the {billingTabLinkStart}billing tab{billingTabLinkEnd} of the setting page. If you cancel, you will still be charged for the current billing period."
 	/// </summary>
 	public override string DescriptionPremiumSubscriptionDisclosure(string teamOfUseLinkStart, string teamOfUseLinkEnd, string privacyPolicyLinkStart, string privacyPolicyLinkEnd, string billingTabLinkStart, string billingTabLinkEnd)
 	{
-		return $"18歳以下の場合は、購入する前に必ず両親か法的な保護者の許可があることを確かめてください。許可のない購入をすることは、お持ちのアカウントの削除につながることがあります。「ご注文を送信」をクリックすると、(1) サブスクリプション契約をキャンセルするまで毎月、当社が課金することを許可し、 (2) {teamOfUseLinkStart}利用規約{teamOfUseLinkEnd} と  {privacyPolicyLinkStart}プライバシーポリシー{privacyPolicyLinkEnd}を理解し、同意を表明したことになります。設定ページにある {billingTabLinkStart} ご請求タブ{billingTabLinkEnd} の「メンバーシップをキャンセルする」をクリックすれば、いつでもキャンセルできます。キャンセルしても、現在のご請求期間に関しては課金されます。";
+		return $"18æ­³ä»¥ä¸‹ã®å ´åˆã¯ã€è³¼å…¥ã™ã‚‹å‰ã«å¿…ãšä¸¡è¦ªã‹æ³•çš„ãªä¿è­·è€…ã®è¨±å¯ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºã‹ã‚ã¦ãã ã•ã„ã€‚è¨±å¯ã®ãªã„è³¼å…¥ã‚’ã™ã‚‹ã“ã¨ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã«ã¤ãªãŒã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚ã€Œã”æ³¨æ–‡ã‚’é€ä¿¡ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€(1) ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§æ¯Žæœˆã€å½“ç¤¾ãŒèª²é‡‘ã™ã‚‹ã“ã¨ã‚’è¨±å¯ã—ã€ (2) {teamOfUseLinkStart}åˆ©ç”¨è¦ç´„{teamOfUseLinkEnd} ã¨  {privacyPolicyLinkStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼{privacyPolicyLinkEnd}ã‚’ç†è§£ã—ã€åŒæ„ã‚’è¡¨æ˜Žã—ãŸã“ã¨ã«ãªã‚Šã¾ã™ã€‚è¨­å®šãƒšãƒ¼ã‚¸ã«ã‚ã‚‹ {billingTabLinkStart} ã”è«‹æ±‚ã‚¿ãƒ–{billingTabLinkEnd} ã®ã€Œãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ã„ã¤ã§ã‚‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§ãã¾ã™ã€‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ã¦ã‚‚ã€ç¾åœ¨ã®ã”è«‹æ±‚æœŸé–“ã«é–¢ã—ã¦ã¯èª²é‡‘ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionPremiumSubscriptionDisclosure()
 	{
-		return "18歳以下の場合は、購入する前に必ず両親か法的な保護者の許可があることを確かめてください。許可のない購入をすることは、お持ちのアカウントの削除につながることがあります。「ご注文を送信」をクリックすると、(1) サブスクリプション契約をキャンセルするまで毎月、当社が課金することを許可し、 (2) {teamOfUseLinkStart}利用規約{teamOfUseLinkEnd} と  {privacyPolicyLinkStart}プライバシーポリシー{privacyPolicyLinkEnd}を理解し、同意を表明したことになります。設定ページにある {billingTabLinkStart} ご請求タブ{billingTabLinkEnd} の「メンバーシップをキャンセルする」をクリックすれば、いつでもキャンセルできます。キャンセルしても、現在のご請求期間に関しては課金されます。";
+		return "18æ­³ä»¥ä¸‹ã®å ´åˆã¯ã€è³¼å…¥ã™ã‚‹å‰ã«å¿…ãšä¸¡è¦ªã‹æ³•çš„ãªä¿è­·è€…ã®è¨±å¯ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºã‹ã‚ã¦ãã ã•ã„ã€‚è¨±å¯ã®ãªã„è³¼å…¥ã‚’ã™ã‚‹ã“ã¨ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®å‰Šé™¤ã«ã¤ãªãŒã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã™ã€‚ã€Œã”æ³¨æ–‡ã‚’é€ä¿¡ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€(1) ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§æ¯Žæœˆã€å½“ç¤¾ãŒèª²é‡‘ã™ã‚‹ã“ã¨ã‚’è¨±å¯ã—ã€ (2) {teamOfUseLinkStart}åˆ©ç”¨è¦ç´„{teamOfUseLinkEnd} ã¨  {privacyPolicyLinkStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼{privacyPolicyLinkEnd}ã‚’ç†è§£ã—ã€åŒæ„ã‚’è¡¨æ˜Žã—ãŸã“ã¨ã«ãªã‚Šã¾ã™ã€‚è¨­å®šãƒšãƒ¼ã‚¸ã«ã‚ã‚‹ {billingTabLinkStart} ã”è«‹æ±‚ã‚¿ãƒ–{billingTabLinkEnd} ã®ã€Œãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ã„ã¤ã§ã‚‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã§ãã¾ã™ã€‚ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ã¦ã‚‚ã€ç¾åœ¨ã®ã”è«‹æ±‚æœŸé–“ã«é–¢ã—ã¦ã¯èª²é‡‘ã•ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxPremiumSubtitle()
 	{
-		return "Roblox Premiumに入会すると毎月Robuxが支給され、さらにRobuxを購入した際に10%のボーナスをゲットします。また、すべてのゲーム内での収入アップだけでなく、購入、販売、アイテムの交換など、Robloxの経済機能にアクセスすることができます。";
+		return "Roblox Premiumã«å…¥ä¼šã™ã‚‹ã¨æ¯ŽæœˆRobuxãŒæ”¯çµ¦ã•ã‚Œã€ã•ã‚‰ã«Robuxã‚’è³¼å…¥ã—ãŸéš›ã«10%ã®ãƒœãƒ¼ãƒŠã‚¹ã‚’ã‚²ãƒƒãƒˆã—ã¾ã™ã€‚ã¾ãŸã€ã™ã¹ã¦ã®ã‚²ãƒ¼ãƒ å†…ã§ã®åŽå…¥ã‚¢ãƒƒãƒ—ã ã‘ã§ãªãã€è³¼å…¥ã€è²©å£²ã€ã‚¢ã‚¤ãƒ†ãƒ ã®äº¤æ›ãªã©ã€Robloxã®çµŒæ¸ˆæ©Ÿèƒ½ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSellMoreItems()
 	{
-		return "アイテムを再販売したり、作品を売ってRobuxをさらにゲット";
+		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å†è²©å£²ã—ãŸã‚Šã€ä½œå“ã‚’å£²ã£ã¦Robuxã‚’ã•ã‚‰ã«ã‚²ãƒƒãƒˆ";
 	}
 
 	protected override string _GetTemplateForDescriptionTrade()
 	{
-		return "他のPremiumメンバーとアイテムを取引する";
+		return "ä»–ã®Premiumãƒ¡ãƒ³ãƒãƒ¼ã¨ã‚¢ã‚¤ãƒ†ãƒ ã‚’å–å¼•ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobux()
 	{
-		return "Robuxを買う";
+		return "Robuxã‚’è²·ã†";
 	}
 
 	protected override string _GetTemplateForHeadingConfirmCancellation()
 	{
-		return "キャンセルの確認";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã®ç¢ºèª";
 	}
 
 	protected override string _GetTemplateForHeadingEvenMoreFeatures()
 	{
-		return "さらに多くの機能";
+		return "ã•ã‚‰ã«å¤šãã®æ©Ÿèƒ½";
 	}
 
 	protected override string _GetTemplateForHeadingGeneralError()
 	{
-		return "エラー";
+		return "ã‚¨ãƒ©ãƒ¼";
 	}
 
 	protected override string _GetTemplateForHeadingPremiumRobuxDiscounts()
 	{
-		return "Premiumユーザーとして、Robuxで割引きをもらえます！";
+		return "Premiumãƒ¦ãƒ¼ã‚¶ãƒ¼ã¨ã—ã¦ã€Robuxã§å‰²å¼•ãã‚’ã‚‚ã‚‰ãˆã¾ã™ï¼";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxPremium()
@@ -494,87 +494,87 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForHeadingServerError()
 	{
-		return "サーバーエラー";
+		return "ã‚µãƒ¼ãƒãƒ¼ã‚¨ãƒ©ãƒ¼";
 	}
 
 	protected override string _GetTemplateForHeadingSubscriptionUnavailable()
 	{
-		return "サブスクリプションは利用できません";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForHeadingSwitchPlanModal()
 	{
-		return "サブスクリプションの更新を確認";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®æ›´æ–°ã‚’ç¢ºèª";
 	}
 
 	protected override string _GetTemplateForHeadingUnableToFindBc()
 	{
-		return "Builders Clubが見つかりませんでした";
+		return "Builders ClubãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForHeadingUpgradeToPremium()
 	{
-		return "Roblox Premiumにアップグレード";
+		return "Roblox Premiumã«ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForHeadingUpgradeUnavailable()
 	{
-		return "アップグレードできません";
+		return "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã§ãã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForLabel10PercentMoreRobux()
 	{
-		return "Robuxをさらに10%ゲットします";
+		return "Robuxã‚’ã•ã‚‰ã«10%ã‚²ãƒƒãƒˆã—ã¾ã™";
 	}
 
 	protected override string _GetTemplateForLabelAndGetMore()
 	{
-		return "さらにゲット！";
+		return "ã•ã‚‰ã«ã‚²ãƒƒãƒˆï¼";
 	}
 
 	protected override string _GetTemplateForLabelBecauseYouSubscribed()
 	{
-		return "サブスクリプションしているため！";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã—ã¦ã„ã‚‹ãŸã‚ï¼";
 	}
 
 	protected override string _GetTemplateForLabelBuyOnce()
 	{
-		return "一度買う";
+		return "ä¸€åº¦è²·ã†";
 	}
 
 	protected override string _GetTemplateForLabelBuyRobux()
 	{
-		return "Robuxを買う";
+		return "Robuxã‚’è²·ã†";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForLabelConfirm()
 	{
-		return "確定";
+		return "ç¢ºå®š";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPlan()
 	{
-		return "現在のプラン";
+		return "ç¾åœ¨ã®ãƒ—ãƒ©ãƒ³";
 	}
 
 	protected override string _GetTemplateForLabelGet10PercentOffRobux()
 	{
-		return "Robuxを10%オフでゲット";
+		return "Robuxã‚’10%ã‚ªãƒ•ã§ã‚²ãƒƒãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelGetMoreRobux()
 	{
-		return "さらにRobuxをゲットする";
+		return "ã•ã‚‰ã«Robuxã‚’ã‚²ãƒƒãƒˆã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelMembershipManagementRecurring()
 	{
-		return "Premiumサブスクリプションを管理するには、ブラウザを使って請求設定へ行ってください。";
+		return "Premiumã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã‚’ç®¡ç†ã™ã‚‹ã«ã¯ã€ãƒ–ãƒ©ã‚¦ã‚¶ã‚’ä½¿ã£ã¦è«‹æ±‚è¨­å®šã¸è¡Œã£ã¦ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -583,12 +583,12 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatus(string premiumSubscription, string expirationDate)
 	{
-		return $"現在のプランは {premiumSubscription} です。契約は {expirationDate} 日に終了します。";
+		return $"ç¾åœ¨ã®ãƒ—ãƒ©ãƒ³ã¯ {premiumSubscription} ã§ã™ã€‚å¥‘ç´„ã¯ {expirationDate} æ—¥ã«çµ‚äº†ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatus()
 	{
-		return "現在のプランは {premiumSubscription} です。契約は {expirationDate} 日に終了します。";
+		return "ç¾åœ¨ã®ãƒ—ãƒ©ãƒ³ã¯ {premiumSubscription} ã§ã™ã€‚å¥‘ç´„ã¯ {expirationDate} æ—¥ã«çµ‚äº†ã—ã¾ã™ã€‚";
 	}
 
 	/// <summary>
@@ -597,12 +597,12 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatusExpiration(string premiumSubscription, string expirationDate)
 	{
-		return $"あなたの現在のプランは {premiumSubscription} です。{expirationDate} に終了します。メンバーシップの終了後は、再購入するか、新しいプランに申し込むことができます。 ";
+		return $"ã‚ãªãŸã®ç¾åœ¨ã®ãƒ—ãƒ©ãƒ³ã¯ {premiumSubscription} ã§ã™ã€‚{expirationDate} ã«çµ‚äº†ã—ã¾ã™ã€‚ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã®çµ‚äº†å¾Œã¯ã€å†è³¼å…¥ã™ã‚‹ã‹ã€æ–°ã—ã„ãƒ—ãƒ©ãƒ³ã«ç”³ã—è¾¼ã‚€ã“ã¨ãŒã§ãã¾ã™ã€‚ ";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusExpiration()
 	{
-		return "あなたの現在のプランは {premiumSubscription} です。{expirationDate} に終了します。メンバーシップの終了後は、再購入するか、新しいプランに申し込むことができます。 ";
+		return "ã‚ãªãŸã®ç¾åœ¨ã®ãƒ—ãƒ©ãƒ³ã¯ {premiumSubscription} ã§ã™ã€‚{expirationDate} ã«çµ‚äº†ã—ã¾ã™ã€‚ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã®çµ‚äº†å¾Œã¯ã€å†è³¼å…¥ã™ã‚‹ã‹ã€æ–°ã—ã„ãƒ—ãƒ©ãƒ³ã«ç”³ã—è¾¼ã‚€ã“ã¨ãŒã§ãã¾ã™ã€‚ ";
 	}
 
 	/// <summary>
@@ -611,17 +611,17 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelMembershipStatusRecurring(string premiumSubscription, string renewal)
 	{
-		return $"現在のプランは {premiumSubscription} です。契約は {renewal} 日に更新します。";
+		return $"ç¾åœ¨ã®ãƒ—ãƒ©ãƒ³ã¯ {premiumSubscription} ã§ã™ã€‚å¥‘ç´„ã¯ {renewal} æ—¥ã«æ›´æ–°ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelMembershipStatusRecurring()
 	{
-		return "現在のプランは {premiumSubscription} です。契約は {renewal} 日に更新します。";
+		return "ç¾åœ¨ã®ãƒ—ãƒ©ãƒ³ã¯ {premiumSubscription} ã§ã™ã€‚å¥‘ç´„ã¯ {renewal} æ—¥ã«æ›´æ–°ã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNo()
 	{
-		return "いいえ";
+		return "ã„ã„ãˆ";
 	}
 
 	protected override string _GetTemplateForLabelPremiumClub2200()
@@ -635,12 +635,12 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelPriceMonth(string robux, string subTextStart, string subTextEnd)
 	{
-		return $"{robux}{subTextStart}/月{subTextEnd}";
+		return $"{robux}{subTextStart}/æœˆ{subTextEnd}";
 	}
 
 	protected override string _GetTemplateForLabelPriceMonth()
 	{
-		return "{robux}{subTextStart}/月{subTextEnd}";
+		return "{robux}{subTextStart}/æœˆ{subTextEnd}";
 	}
 
 	/// <summary>
@@ -650,12 +650,12 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelPricePerMonth(string robuxAmount)
 	{
-		return $"{robuxAmount}/月";
+		return $"{robuxAmount}/æœˆ";
 	}
 
 	protected override string _GetTemplateForLabelPricePerMonth()
 	{
-		return "{robuxAmount}/月";
+		return "{robuxAmount}/æœˆ";
 	}
 
 	protected override string _GetTemplateForLabelRobloxPremium()
@@ -670,7 +670,7 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelRobloxPremium1000OneMonth()
 	{
-		return "Roblox Premium 1000 一ヶ月";
+		return "Roblox Premium 1000 ä¸€ãƒ¶æœˆ";
 	}
 
 	protected override string _GetTemplateForLabelRobloxPremium2200()
@@ -680,7 +680,7 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelRobloxPremium2200OneMonth()
 	{
-		return "Roblox Premium 2200 一ヶ月";
+		return "Roblox Premium 2200 ä¸€ãƒ¶æœˆ";
 	}
 
 	protected override string _GetTemplateForLabelRobloxPremium450()
@@ -690,22 +690,22 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 
 	protected override string _GetTemplateForLabelRobloxPremium450OneMonth()
 	{
-		return "Roblox Premium 450 一ヶ月";
+		return "Roblox Premium 450 ä¸€ãƒ¶æœˆ";
 	}
 
 	protected override string _GetTemplateForLabelSellMore()
 	{
-		return "もっと売る";
+		return "ã‚‚ã£ã¨å£²ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelSinceYouSubscribed()
 	{
-		return "サブスクリプションしたため";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã—ãŸãŸã‚";
 	}
 
 	protected override string _GetTemplateForLabelSubscribe()
 	{
-		return "サブスクリプション契約する";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã™ã‚‹";
 	}
 
 	/// <summary>
@@ -714,32 +714,32 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string LabelSubscribeUpsell(string upsellLinkStart, string upsellLinkEnd)
 	{
-		return $"サブスクリプション契約して {upsellLinkStart}もっとゲットしよう！{upsellLinkEnd}";
+		return $"ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã—ã¦ {upsellLinkStart}ã‚‚ã£ã¨ã‚²ãƒƒãƒˆã—ã‚ˆã†ï¼{upsellLinkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelSubscribeUpsell()
 	{
-		return "サブスクリプション契約して {upsellLinkStart}もっとゲットしよう！{upsellLinkEnd}";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ã—ã¦ {upsellLinkStart}ã‚‚ã£ã¨ã‚²ãƒƒãƒˆã—ã‚ˆã†ï¼{upsellLinkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelTrade()
 	{
-		return "取引";
+		return "å–å¼•";
 	}
 
 	protected override string _GetTemplateForLabelValuePacks()
 	{
-		return "バリューパック";
+		return "ãƒãƒªãƒ¥ãƒ¼ãƒ‘ãƒƒã‚¯";
 	}
 
 	protected override string _GetTemplateForLabelWantMoreRobux()
 	{
-		return "Robuxがもっと必要ですか？";
+		return "RobuxãŒã‚‚ã£ã¨å¿…è¦ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelYes()
 	{
-		return "はい";
+		return "ã¯ã„";
 	}
 
 	/// <summary>
@@ -748,27 +748,27 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageConfirmCancellationModal(string newLine, string robuxAmount)
 	{
-		return $"「確定」をクリックすると、Builders Clubメンバーシップから脱退して、Roblox Premiumの申し込みが可能になります。{newLine} 1度だけ {robuxAmount} のペイアウトを受けることができます";
+		return $"ã€Œç¢ºå®šã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€Builders Clubãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‹ã‚‰è„±é€€ã—ã¦ã€Roblox Premiumã®ç”³ã—è¾¼ã¿ãŒå¯èƒ½ã«ãªã‚Šã¾ã™ã€‚{newLine} 1åº¦ã ã‘ {robuxAmount} ã®ãƒšã‚¤ã‚¢ã‚¦ãƒˆã‚’å—ã‘ã‚‹ã“ã¨ãŒã§ãã¾ã™";
 	}
 
 	protected override string _GetTemplateForMessageConfirmCancellationModal()
 	{
-		return "「確定」をクリックすると、Builders Clubメンバーシップから脱退して、Roblox Premiumの申し込みが可能になります。{newLine} 1度だけ {robuxAmount} のペイアウトを受けることができます";
+		return "ã€Œç¢ºå®šã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€Builders Clubãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‹ã‚‰è„±é€€ã—ã¦ã€Roblox Premiumã®ç”³ã—è¾¼ã¿ãŒå¯èƒ½ã«ãªã‚Šã¾ã™ã€‚{newLine} 1åº¦ã ã‘ {robuxAmount} ã®ãƒšã‚¤ã‚¢ã‚¦ãƒˆã‚’å—ã‘ã‚‹ã“ã¨ãŒã§ãã¾ã™";
 	}
 
 	protected override string _GetTemplateForMessageGeneralError()
 	{
-		return "サブスクリプションのアップデート中にエラーが発生しました。後でもう一度お試しください。";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageNoDataError()
 	{
-		return "サブスクリプション情報はありません。";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³æƒ…å ±ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageServerError()
 	{
-		return "サブスクリプションのアップデート中にサーバーエラーが発生しました。後でもう一度お試しください。";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆä¸­ã«ã‚µãƒ¼ãƒãƒ¼ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -777,12 +777,12 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageSubscriptionUnavailableModal(string expiredDate)
 	{
-		return $"申し訳ありませんが、キャンセルした現在のプランの期限が切れるまでは、サブスクリプションを行うことができません。{expiredDate}にもう一度申し込みしてください。";
+		return $"ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ãŸç¾åœ¨ã®ãƒ—ãƒ©ãƒ³ã®æœŸé™ãŒåˆ‡ã‚Œã‚‹ã¾ã§ã¯ã€ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¡Œã†ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚{expiredDate}ã«ã‚‚ã†ä¸€åº¦ç”³ã—è¾¼ã¿ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSubscriptionUnavailableModal()
 	{
-		return "申し訳ありませんが、キャンセルした現在のプランの期限が切れるまでは、サブスクリプションを行うことができません。{expiredDate}にもう一度申し込みしてください。";
+		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ãŸç¾åœ¨ã®ãƒ—ãƒ©ãƒ³ã®æœŸé™ãŒåˆ‡ã‚Œã‚‹ã¾ã§ã¯ã€ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¡Œã†ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚{expiredDate}ã«ã‚‚ã†ä¸€åº¦ç”³ã—è¾¼ã¿ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	/// <summary>
@@ -791,26 +791,29 @@ internal class PremiumResources_ja_jp : PremiumResources_en_us, IPremiumResource
 	/// </summary>
 	public override string MessageSwitchPlanBody(string price, string renewalDate)
 	{
-		return $"「確定」をクリックすると、{renewalDate} からキャンセルまたはサブスクリプション切り替えを行うまで、毎月 {price} の課金に同意したものとみなします。";
+		return $"ã€Œç¢ºå®šã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€{renewalDate} ã‹ã‚‰ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã¾ãŸã¯ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³åˆ‡ã‚Šæ›¿ãˆã‚’è¡Œã†ã¾ã§ã€æ¯Žæœˆ {price} ã®èª²é‡‘ã«åŒæ„ã—ãŸã‚‚ã®ã¨ã¿ãªã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageSwitchPlanBody()
 	{
-		return "「確定」をクリックすると、{renewalDate} からキャンセルまたはサブスクリプション切り替えを行うまで、毎月 {price} の課金に同意したものとみなします。";
+		return "ã€Œç¢ºå®šã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€{renewalDate} ã‹ã‚‰ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã¾ãŸã¯ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³åˆ‡ã‚Šæ›¿ãˆã‚’è¡Œã†ã¾ã§ã€æ¯Žæœˆ {price} ã®èª²é‡‘ã«åŒæ„ã—ãŸã‚‚ã®ã¨ã¿ãªã—ã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageUnableToFindBc()
 	{
-		return "このユーザーのBuilders Club情報が見つかりません";
+		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®Builders Clubæƒ…å ±ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForMessageUpgradeUnavailableModal()
 	{
-		return "申し訳ありませんが、現在、永久Builders Clubと同等のパッケージがないため、サブスクリプションの変更はできません。";
+		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ç¾åœ¨ã€æ°¸ä¹…Builders Clubã¨åŒç­‰ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãŒãªã„ãŸã‚ã€ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®å¤‰æ›´ã¯ã§ãã¾ã›ã‚“ã€‚";
 	}
 
 	protected override string _GetTemplateForSwitchPlanTitle()
 	{
-		return "サブスクリプションの更新を確認";
+		return "ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã®æ›´æ–°ã‚’ç¢ºèª";
 	}
+}
+
+
 }

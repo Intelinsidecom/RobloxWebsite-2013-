@@ -3,9 +3,8 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Roblox.Serialization.Json;
-
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 [DataContract]
 [ExcludeFromCodeCoverage]
 public class HistoricalDisplayName
@@ -23,3 +22,6 @@ public class HistoricalDisplayName
 	[JsonConverter(typeof(KindAwareDateTimeConverter))]
 	public DateTime Created { get; set; }
 }
+
+}
+

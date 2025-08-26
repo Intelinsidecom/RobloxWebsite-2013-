@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Instrumentation;
+namespace Roblox.Platform.AuthenticationV2 {
+    /// <inheritdoc />
 
-namespace Roblox.AuthenticationV2;
-
-/// <inheritdoc />
 public class AuthenticationV2Telemetry : IAuthenticationV2Telemetry
 {
 	private const string _Category = "Roblox.AuthenticationV2";
@@ -25,4 +24,7 @@ public class AuthenticationV2Telemetry : IAuthenticationV2Telemetry
 	{
 		_CounterRegistry.GetRateOfCountsPerSecondCounter("Roblox.AuthenticationV2", counter.ToString(), instance.ToString()).Increment();
 	}
+}
+
+
 }

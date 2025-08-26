@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using Roblox.DataV2.Core;
 using System.Threading.Tasks;
 
+#if false
+// Legacy stubs (disabled): Real implementations now exist in this project under
+// namespace Roblox.Platform.StaticContent.Client. These stubs are retained for
+// reference only and are excluded from compilation to avoid duplicate types.
 namespace Roblox.StaticContent.Client
 {
     // Minimal stubs to satisfy Roblox.Platform.StaticContent project
@@ -80,3 +84,4 @@ namespace Roblox.StaticContent.Client
         Task<StaticContentResult> UploadSourceMap(string filename, string contents);
     }
 }
+#endif

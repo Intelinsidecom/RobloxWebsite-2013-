@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
+namespace Roblox.Platform.AuthenticationV2.Client {
+    /// <summary>
 
-namespace Roblox.AuthenticationV2.Client;
-
-/// <summary>
 /// Request model for /DeletRobloxUserSession
 /// </summary>
 [DataContract]
@@ -16,4 +15,7 @@ public class DeleteRobloxUserSessionRequest
 	[DataMember]
 	[JsonProperty("token")]
 	public Guid Token { get; set; }
+}
+
+
 }

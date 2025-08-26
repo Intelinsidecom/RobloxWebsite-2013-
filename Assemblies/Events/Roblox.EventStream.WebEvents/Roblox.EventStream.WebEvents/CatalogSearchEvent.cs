@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class CatalogSearchEvent : WebEventBase
 
-public class CatalogSearchEvent : WebEventBase
 {
 	private const string _Name = "catalogSort";
 
@@ -65,9 +66,18 @@ public class CatalogSearchEvent : WebEventBase
 	/// Sends catalog sort events to event stream.
 	/// </summary>
 	/// <param name="eventArgs"></param>
-	/// <param name="eventStreamer"></param>
-	public static void SendCatalogSearchEvent(CatalogSearchEventArgs eventArgs, IEventStreamer eventStreamer)
+	/// <param name="IEventStreamer"></param>
+	public static void SendCatalogSearchEvent(CatalogSearchEventArgs eventArgs, IEventStreamer IEventStreamer)
 	{
-		new CatalogSearchEvent(eventStreamer, eventArgs).Stream();
+		new CatalogSearchEvent(IEventStreamer, eventArgs).Stream();
 	}
 }
+
+
+}
+
+
+
+
+
+

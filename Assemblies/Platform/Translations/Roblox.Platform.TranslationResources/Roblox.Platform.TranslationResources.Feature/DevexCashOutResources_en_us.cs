@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class DevexCashOutResources_en_us : TranslationResourcesBase, IDevexCashOutResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class DevexCashOutResources_en_us : TranslationResourcesBase, IDevexCashOutResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -465,4 +464,7 @@ internal class DevexCashOutResources_en_us : TranslationResourcesBase, IDevexCas
 	{
 		return "Sorry, you are not eligible to cash out at this time.";
 	}
+}
+
+
 }

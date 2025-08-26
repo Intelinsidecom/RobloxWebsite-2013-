@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Platform.Assets;
+namespace Roblox.Platform.Thumbspublic {
+    interface IAssetThumbnail
 
-namespace Roblox.Thumbs;
-
-public interface IAssetThumbnail
 {
 	ThumbnailDomainFactories DomainFactories { get; }
 
@@ -118,4 +117,7 @@ public interface IAssetThumbnail
 	ThumbResult GetDefaultPlaceThumbnail(long placeId, ImageParameters imageParameters);
 
 	ThumbResult GetDefaultPlaceGameIcon(long placeId, ImageParameters imageParameters);
+}
+
+
 }

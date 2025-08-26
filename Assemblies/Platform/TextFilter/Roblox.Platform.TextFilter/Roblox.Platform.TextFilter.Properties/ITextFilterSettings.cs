@@ -1,6 +1,6 @@
-namespace Roblox.TextFilter.Properties;
+namespace Roblox.Platform.TextFilter.Properties {
+    public interface ITextFilterSettings
 
-internal interface ITextFilterSettings
 {
 	string ContentFilterApiKey { get; }
 
@@ -17,4 +17,7 @@ internal interface ITextFilterSettings
 	bool ObjectNameValidationEnabled { get; }
 
 	string ObjectNameValidationRegex { get; }
+}
+
+
 }

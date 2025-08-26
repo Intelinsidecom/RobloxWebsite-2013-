@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures.Interfaces;
+﻿namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-/// <summary>
 /// PremiumFeature Model
 /// </summary>
 public interface IPremiumFeatureModel
@@ -94,4 +94,7 @@ public interface IPremiumFeatureModel
 	/// Is outrageous Builders Club
 	/// </summary>
 	bool IsOutrageousBuildersClub { get; }
+}
+
+
 }

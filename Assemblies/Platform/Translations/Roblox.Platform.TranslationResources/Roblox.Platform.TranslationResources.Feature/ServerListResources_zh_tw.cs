@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ServerListResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,101 +11,101 @@ internal class ServerListResources_zh_tw : ServerListResources_en_us, IServerLis
 	/// Configure server
 	/// English String: "Configure"
 	/// </summary>
-	public override string ActionConfigureServer => "設定";
+	public override string ActionConfigureServer => "è¨­å®š";
 
 	/// <summary>
 	/// Key: "Action.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string ActionLoadMore => "載入更多";
+	public override string ActionLoadMore => "è¼‰å…¥æ›´å¤š";
 
 	/// <summary>
 	/// Key: "Heading.OtherServers"
 	/// English String: "Other Servers"
 	/// </summary>
-	public override string HeadingOtherServers => "其它伺服器";
+	public override string HeadingOtherServers => "å…¶å®ƒä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Heading.RunningServers"
 	/// English String: "All Running Servers"
 	/// </summary>
-	public override string HeadingRunningServers => "所有正在運作的伺服器";
+	public override string HeadingRunningServers => "æ‰€æœ‰æ­£åœ¨é‹ä½œçš„ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Heading.ServersMyFriendsAreIn"
 	/// English String: "Servers My Friends Are In"
 	/// </summary>
-	public override string HeadingServersMyFriendsAreIn => "我的好友所在的伺服器";
+	public override string HeadingServersMyFriendsAreIn => "æˆ‘çš„å¥½å‹æ‰€åœ¨çš„ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Label.Inactive"
 	/// English String: "Inactive."
 	/// </summary>
-	public override string LabelInactive => "未啟用。";
+	public override string LabelInactive => "æœªå•Ÿç”¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.InsufficientFunds"
 	/// English String: "This Server has been deactivated. We were not able to process the recurring payment due to insufficient funds in your account."
 	/// </summary>
-	public override string LabelInsufficientFunds => "此伺服器已關閉。由於您的帳號資金不足，無法為您進行定期付款。";
+	public override string LabelInsufficientFunds => "æ­¤ä¼ºæœå™¨å·²é—œé–‰ã€‚ç”±æ–¼æ‚¨çš„å¸³è™Ÿè³‡é‡‘ä¸è¶³ï¼Œç„¡æ³•ç‚ºæ‚¨é€²è¡Œå®šæœŸä»˜æ¬¾ã€‚";
 
 	/// <summary>
 	/// Key: "Label.MyVipServer"
 	/// English String: "My VIP Server"
 	/// </summary>
-	public override string LabelMyVipServer => "我的 VIP 伺服器";
+	public override string LabelMyVipServer => "æˆ‘çš„ VIP ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Label.NoServersFound"
 	/// No Servers Found.
 	/// English String: "No Servers Found."
 	/// </summary>
-	public override string LabelNoServersFound => "找不到伺服器。";
+	public override string LabelNoServersFound => "æ‰¾ä¸åˆ°ä¼ºæœå™¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.NoVipServers"
 	/// No VIP Server Instances Found.
 	/// English String: "No VIP Server Instances Found."
 	/// </summary>
-	public override string LabelNoVipServers => "找不到 VIP 伺服器。";
+	public override string LabelNoVipServers => "æ‰¾ä¸åˆ° VIP ä¼ºæœå™¨ã€‚";
 
 	/// <summary>
 	/// Key: "Label.PaymentCancelled"
 	/// English String: "Payment Cancelled"
 	/// </summary>
-	public override string LabelPaymentCancelled => "付款已取消";
+	public override string LabelPaymentCancelled => "ä»˜æ¬¾å·²å–æ¶ˆ";
 
 	/// <summary>
 	/// Key: "Label.PlacesNotLoading"
 	/// The list of places failed to load for some unknown reason.
 	/// English String: "Sorry, something went wrong loading places."
 	/// </summary>
-	public override string LabelPlacesNotLoading => "對不起，載入空間時發生錯誤。";
+	public override string LabelPlacesNotLoading => "å°ä¸èµ·ï¼Œè¼‰å…¥ç©ºé–“æ™‚ç™¼ç”ŸéŒ¯èª¤ã€‚";
 
 	/// <summary>
 	/// Key: "Label.ServerListJoin"
 	/// English String: "Join"
 	/// </summary>
-	public override string LabelServerListJoin => "加入";
+	public override string LabelServerListJoin => "åŠ å…¥";
 
 	/// <summary>
 	/// Key: "Label.ServerListRenew"
 	/// English String: "Renew"
 	/// </summary>
-	public override string LabelServerListRenew => "續訂";
+	public override string LabelServerListRenew => "çºŒè¨‚";
 
 	/// <summary>
 	/// Key: "Label.ShutDownServer"
 	/// User chooses to close their game server.
 	/// English String: "Shut Down This Server"
 	/// </summary>
-	public override string LabelShutDownServer => "關閉此伺服器";
+	public override string LabelShutDownServer => "é—œé–‰æ­¤ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Label.SlowGame"
 	/// English String: "Slow Game"
 	/// </summary>
-	public override string LabelSlowGame => "運作緩慢";
+	public override string LabelSlowGame => "é‹ä½œç·©æ…¢";
 
 	public ServerListResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -114,27 +114,27 @@ internal class ServerListResources_zh_tw : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForActionConfigureServer()
 	{
-		return "設定";
+		return "è¨­å®š";
 	}
 
 	protected override string _GetTemplateForActionLoadMore()
 	{
-		return "載入更多";
+		return "è¼‰å…¥æ›´å¤š";
 	}
 
 	protected override string _GetTemplateForHeadingOtherServers()
 	{
-		return "其它伺服器";
+		return "å…¶å®ƒä¼ºæœå™¨";
 	}
 
 	protected override string _GetTemplateForHeadingRunningServers()
 	{
-		return "所有正在運作的伺服器";
+		return "æ‰€æœ‰æ­£åœ¨é‹ä½œçš„ä¼ºæœå™¨";
 	}
 
 	protected override string _GetTemplateForHeadingServersMyFriendsAreIn()
 	{
-		return "我的好友所在的伺服器";
+		return "æˆ‘çš„å¥½å‹æ‰€åœ¨çš„ä¼ºæœå™¨";
 	}
 
 	/// <summary>
@@ -143,66 +143,69 @@ internal class ServerListResources_zh_tw : ServerListResources_en_us, IServerLis
 	/// </summary>
 	public override string LabelCurrentPlayerCount(string currentPlayers, string maximumAllowedPlayers)
 	{
-		return $"{currentPlayers} 位玩家，最多 {maximumAllowedPlayers} 位";
+		return $"{currentPlayers} ä½çŽ©å®¶ï¼Œæœ€å¤š {maximumAllowedPlayers} ä½";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPlayerCount()
 	{
-		return "{currentPlayers} 位玩家，最多 {maximumAllowedPlayers} 位";
+		return "{currentPlayers} ä½çŽ©å®¶ï¼Œæœ€å¤š {maximumAllowedPlayers} ä½";
 	}
 
 	protected override string _GetTemplateForLabelInactive()
 	{
-		return "未啟用。";
+		return "æœªå•Ÿç”¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelInsufficientFunds()
 	{
-		return "此伺服器已關閉。由於您的帳號資金不足，無法為您進行定期付款。";
+		return "æ­¤ä¼ºæœå™¨å·²é—œé–‰ã€‚ç”±æ–¼æ‚¨çš„å¸³è™Ÿè³‡é‡‘ä¸è¶³ï¼Œç„¡æ³•ç‚ºæ‚¨é€²è¡Œå®šæœŸä»˜æ¬¾ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelMyVipServer()
 	{
-		return "我的 VIP 伺服器";
+		return "æˆ‘çš„ VIP ä¼ºæœå™¨";
 	}
 
 	protected override string _GetTemplateForLabelNoServersFound()
 	{
-		return "找不到伺服器。";
+		return "æ‰¾ä¸åˆ°ä¼ºæœå™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelNoVipServers()
 	{
-		return "找不到 VIP 伺服器。";
+		return "æ‰¾ä¸åˆ° VIP ä¼ºæœå™¨ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelPaymentCancelled()
 	{
-		return "付款已取消";
+		return "ä»˜æ¬¾å·²å–æ¶ˆ";
 	}
 
 	protected override string _GetTemplateForLabelPlacesNotLoading()
 	{
-		return "對不起，載入空間時發生錯誤。";
+		return "å°ä¸èµ·ï¼Œè¼‰å…¥ç©ºé–“æ™‚ç™¼ç”ŸéŒ¯èª¤ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelServerListJoin()
 	{
-		return "加入";
+		return "åŠ å…¥";
 	}
 
 	protected override string _GetTemplateForLabelServerListRenew()
 	{
-		return "續訂";
+		return "çºŒè¨‚";
 	}
 
 	protected override string _GetTemplateForLabelShutDownServer()
 	{
-		return "關閉此伺服器";
+		return "é—œé–‰æ­¤ä¼ºæœå™¨";
 	}
 
 	protected override string _GetTemplateForLabelSlowGame()
 	{
-		return "運作緩慢";
+		return "é‹ä½œç·©æ…¢";
 	}
+}
+
+
 }

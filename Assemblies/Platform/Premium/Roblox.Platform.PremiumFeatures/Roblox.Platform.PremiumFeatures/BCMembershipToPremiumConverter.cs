@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.PremiumFeatures.Interfaces;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    class BCMembershipToPremiumConverter : IBCMembershipToPremiumConverter
 
-namespace Roblox.PremiumFeatures;
-
-public class BCMembershipToPremiumConverter : IBCMembershipToPremiumConverter
 {
 	private readonly IPremiumFeatureFactory _PremiumFeatureFactory;
 
@@ -74,4 +73,7 @@ public class BCMembershipToPremiumConverter : IBCMembershipToPremiumConverter
 		_BCToPremiumMap.Add("Outrageous Builders Club 1 Month", _RobloxPremium2200OneMonth);
 		_BCToPremiumMap.Add("Gift 12 Months Outrageous Builders Club", _RobloxPremium2200OneMonth);
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class AccountSettingsResourceFactory
 
-internal static class AccountSettingsResourceFactory
 {
 	public const string FullNamespace = "Feature.AccountSettings";
 
@@ -21,4 +21,7 @@ internal static class AccountSettingsResourceFactory
 			_ => new AccountSettingsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

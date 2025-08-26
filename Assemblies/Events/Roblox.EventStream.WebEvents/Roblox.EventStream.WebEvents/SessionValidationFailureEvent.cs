@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class SessionValidationFailureEvent : WebEventBase
 
-public class SessionValidationFailureEvent : WebEventBase
 {
 	private const string _Name = "sessionValidationFailure";
 
@@ -10,3 +11,12 @@ public class SessionValidationFailureEvent : WebEventBase
 		AddEventArg("status", args.CookieValidationStatus.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

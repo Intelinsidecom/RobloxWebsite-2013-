@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IAlertsAndOptionsResources : ITranslationResources
 
-public interface IAlertsAndOptionsResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.sBuyRobux"
@@ -34,7 +34,10 @@ public interface IAlertsAndOptionsResources : ITranslationResources
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue} Robux"
+	/// English String: "{robuxValue}Â Robux"
 	/// </summary>
 	string LabelsRobuxMessage(string robuxValue);
+}
+
+
 }

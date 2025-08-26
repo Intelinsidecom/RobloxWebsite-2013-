@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+namespace Roblox.Moderationinternal {
+    class InGameAdvertisingBan : IRobloxEntity<int, InGameAdvertisingBanDAL>, ICacheableObject<int>, ICacheableObject
 
-namespace Roblox.Platform.Moderation;
-
-internal class InGameAdvertisingBan : IRobloxEntity<int, InGameAdvertisingBanDAL>, ICacheableObject<int>, ICacheableObject
 {
 	private InGameAdvertisingBanDAL _EntityDAL;
 
@@ -122,4 +121,7 @@ internal class InGameAdvertisingBan : IRobloxEntity<int, InGameAdvertisingBanDAL
 	{
 		yield break;
 	}
+}
+
+
 }

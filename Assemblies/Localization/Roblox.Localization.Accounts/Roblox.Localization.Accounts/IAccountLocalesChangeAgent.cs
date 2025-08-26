@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accounts {
+    /// <summary>
 
-/// <summary>
 /// Provides a container for AccountLocaleChangeAgent details.
 /// </summary>
 public interface IAccountLocalesChangeAgent
@@ -14,4 +14,7 @@ public interface IAccountLocalesChangeAgent
 	/// The id of the change agent.
 	/// </summary>
 	long ChangeAgentTargetId { get; }
+}
+
+
 }

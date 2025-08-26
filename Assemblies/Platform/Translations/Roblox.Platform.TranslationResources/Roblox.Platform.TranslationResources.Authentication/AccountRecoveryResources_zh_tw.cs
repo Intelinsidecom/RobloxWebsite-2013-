@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AccountRecoveryResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,79 +10,79 @@ internal class AccountRecoveryResources_zh_tw : AccountRecoveryResources_en_us, 
 	/// Key: "ActionSubmit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "提交";
+	public override string ActionSubmit => "æäº¤";
 
 	/// <summary>
 	/// Key: "DescriptionResetFollowing"
 	/// English String: "This will reset the following settings:"
 	/// </summary>
-	public override string DescriptionResetFollowing => "此動作將會重置以下設定：";
+	public override string DescriptionResetFollowing => "æ­¤å‹•ä½œå°‡æœƒé‡ç½®ä»¥ä¸‹è¨­å®šï¼š";
 
 	/// <summary>
 	/// Key: "DescriptionRevertAccount"
 	/// English String: "You are about to revert your account to a past state.\nTo revert your account you must set a new password."
 	/// </summary>
-	public override string DescriptionRevertAccount => "您即將把帳號還原成之前的狀態。\n若要還原您的帳號，請先設置新的密碼。";
+	public override string DescriptionRevertAccount => "æ‚¨å³å°‡æŠŠå¸³è™Ÿé‚„åŽŸæˆä¹‹å‰çš„ç‹€æ…‹ã€‚\nè‹¥è¦é‚„åŽŸæ‚¨çš„å¸³è™Ÿï¼Œè«‹å…ˆè¨­ç½®æ–°çš„å¯†ç¢¼ã€‚";
 
 	/// <summary>
 	/// Key: "HeadingAccountRecovery"
 	/// English String: "Reset Password"
 	/// </summary>
-	public override string HeadingAccountRecovery => "重置密碼";
+	public override string HeadingAccountRecovery => "é‡ç½®å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "HeadingChooseAccount"
 	/// English String: "Choose an Account"
 	/// </summary>
-	public override string HeadingChooseAccount => "選擇帳號";
+	public override string HeadingChooseAccount => "é¸æ“‡å¸³è™Ÿ";
 
 	/// <summary>
 	/// Key: "HeadingRevertAccount"
 	/// English String: "Revert Account"
 	/// </summary>
-	public override string HeadingRevertAccount => "還原帳號";
+	public override string HeadingRevertAccount => "é‚„åŽŸå¸³è™Ÿ";
 
 	/// <summary>
 	/// Key: "LabelConfirmNewPassword"
 	/// English String: "Confirm New Password"
 	/// </summary>
-	public override string LabelConfirmNewPassword => "確認新密碼";
+	public override string LabelConfirmNewPassword => "ç¢ºèªæ–°å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "LabelEmail"
 	/// English String: "Email"
 	/// </summary>
-	public override string LabelEmail => "電子郵件地址";
+	public override string LabelEmail => "é›»å­éƒµä»¶åœ°å€";
 
 	/// <summary>
 	/// Key: "LabelNewPassword"
 	/// English String: "New Password"
 	/// </summary>
-	public override string LabelNewPassword => "新密碼";
+	public override string LabelNewPassword => "æ–°å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "LabelPassword"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "密碼";
+	public override string LabelPassword => "å¯†ç¢¼";
 
 	/// <summary>
 	/// Key: "LabelTwoStepVerification"
 	/// English String: "Two Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "雙步驟驗證";
+	public override string LabelTwoStepVerification => "é›™æ­¥é©Ÿé©—è­‰";
 
 	/// <summary>
 	/// Key: "MessageDisableTwoStepVerification"
 	/// English String: "This will disable two step verification."
 	/// </summary>
-	public override string MessageDisableTwoStepVerification => "此動作會停用雙步驟驗證。";
+	public override string MessageDisableTwoStepVerification => "æ­¤å‹•ä½œæœƒåœç”¨é›™æ­¥é©Ÿé©—è­‰ã€‚";
 
 	/// <summary>
 	/// Key: "MessageRevertToUnverifiedEmail"
 	/// English String: "You are reverting your email to an unverified email."
 	/// </summary>
-	public override string MessageRevertToUnverifiedEmail => "您即將把電子郵件地址還原成未驗證的電子郵件地址。";
+	public override string MessageRevertToUnverifiedEmail => "æ‚¨å³å°‡æŠŠé›»å­éƒµä»¶åœ°å€é‚„åŽŸæˆæœªé©—è­‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 
 	public AccountRecoveryResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -91,57 +91,57 @@ internal class AccountRecoveryResources_zh_tw : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "提交";
+		return "æäº¤";
 	}
 
 	protected override string _GetTemplateForDescriptionResetFollowing()
 	{
-		return "此動作將會重置以下設定：";
+		return "æ­¤å‹•ä½œå°‡æœƒé‡ç½®ä»¥ä¸‹è¨­å®šï¼š";
 	}
 
 	protected override string _GetTemplateForDescriptionRevertAccount()
 	{
-		return "您即將把帳號還原成之前的狀態。\n若要還原您的帳號，請先設置新的密碼。";
+		return "æ‚¨å³å°‡æŠŠå¸³è™Ÿé‚„åŽŸæˆä¹‹å‰çš„ç‹€æ…‹ã€‚\nè‹¥è¦é‚„åŽŸæ‚¨çš„å¸³è™Ÿï¼Œè«‹å…ˆè¨­ç½®æ–°çš„å¯†ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingAccountRecovery()
 	{
-		return "重置密碼";
+		return "é‡ç½®å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAccount()
 	{
-		return "選擇帳號";
+		return "é¸æ“‡å¸³è™Ÿ";
 	}
 
 	protected override string _GetTemplateForHeadingRevertAccount()
 	{
-		return "還原帳號";
+		return "é‚„åŽŸå¸³è™Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelConfirmNewPassword()
 	{
-		return "確認新密碼";
+		return "ç¢ºèªæ–°å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelEmail()
 	{
-		return "電子郵件地址";
+		return "é›»å­éƒµä»¶åœ°å€";
 	}
 
 	protected override string _GetTemplateForLabelNewPassword()
 	{
-		return "新密碼";
+		return "æ–°å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "密碼";
+		return "å¯†ç¢¼";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "雙步驟驗證";
+		return "é›™æ­¥é©Ÿé©—è­‰";
 	}
 
 	/// <summary>
@@ -150,17 +150,17 @@ internal class AccountRecoveryResources_zh_tw : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageCreateNewPasswordDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"請建立新密碼。{styleFront}不可{styleEnd}使用舊密碼。";
+		return $"è«‹å»ºç«‹æ–°å¯†ç¢¼ã€‚{styleFront}ä¸å¯{styleEnd}ä½¿ç”¨èˆŠå¯†ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageCreateNewPasswordDontUseOldPassword()
 	{
-		return "請建立新密碼。{styleFront}不可{styleEnd}使用舊密碼。";
+		return "è«‹å»ºç«‹æ–°å¯†ç¢¼ã€‚{styleFront}ä¸å¯{styleEnd}ä½¿ç”¨èˆŠå¯†ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDisableTwoStepVerification()
 	{
-		return "此動作會停用雙步驟驗證。";
+		return "æ­¤å‹•ä½œæœƒåœç”¨é›™æ­¥é©Ÿé©—è­‰ã€‚";
 	}
 
 	/// <summary>
@@ -169,16 +169,19 @@ internal class AccountRecoveryResources_zh_tw : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"請{styleFront}不要{styleEnd}使用舊密碼。";
+		return $"è«‹{styleFront}ä¸è¦{styleEnd}ä½¿ç”¨èˆŠå¯†ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageDontUseOldPassword()
 	{
-		return "請{styleFront}不要{styleEnd}使用舊密碼。";
+		return "è«‹{styleFront}ä¸è¦{styleEnd}ä½¿ç”¨èˆŠå¯†ç¢¼ã€‚";
 	}
 
 	protected override string _GetTemplateForMessageRevertToUnverifiedEmail()
 	{
-		return "您即將把電子郵件地址還原成未驗證的電子郵件地址。";
+		return "æ‚¨å³å°‡æŠŠé›»å­éƒµä»¶åœ°å€é‚„åŽŸæˆæœªé©—è­‰çš„é›»å­éƒµä»¶åœ°å€ã€‚";
 	}
+}
+
+
 }

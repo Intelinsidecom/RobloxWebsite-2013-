@@ -1,6 +1,8 @@
-namespace Roblox.Platform.EventStream.WebEvents.EventArgs;
+ using Roblox.EventStream.WebEvents;
 
-public class EndpointIncorrectUsageEventArgs : WebEventArgs
+namespace Roblox.EventStream.WebEvents.EventArgs {
+    public class EndpointIncorrectUsageEventArgs : WebEventArgs
+
 {
 	/// <summary>
 	/// Gets or sets the name of the endpoint. (required)
@@ -19,3 +21,12 @@ public class EndpointIncorrectUsageEventArgs : WebEventArgs
 	/// </value>
 	public string Report { get; set; }
 }
+
+
+}
+
+
+
+
+
+

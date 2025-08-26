@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class LogoutEvent : WebEventBase
 
-public class LogoutEvent : WebEventBase
 {
 	private const string _Name = "logout";
 
@@ -11,3 +12,12 @@ public class LogoutEvent : WebEventBase
 		AddEventArg("reason", eventArgs.LogoutReason.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

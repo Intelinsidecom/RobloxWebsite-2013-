@@ -1,9 +1,8 @@
+using Roblox.EventStream.WebEvents.EventArgs;
 using System;
-using Roblox.Platform.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents.Events {
+    public class EndpointIncorrectUsageEvent : WebEventBase
 
-namespace Roblox.Platform.EventStream.WebEvents.Events;
-
-public class EndpointIncorrectUsageEvent : WebEventBase
 {
 	private const string _Name = "endpointincorrectusage";
 
@@ -21,3 +20,12 @@ public class EndpointIncorrectUsageEvent : WebEventBase
 		}
 	}
 }
+
+
+}
+
+
+
+
+
+

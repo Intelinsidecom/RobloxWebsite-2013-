@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,19 +10,19 @@ internal class AlertsAndOptionsResources_tr_tr : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sBuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string LabelsBuyRobux => "Robux Satın Al";
+	public override string LabelsBuyRobux => "Robux SatÄ±n Al";
 
 	/// <summary>
 	/// Key: "Label.sHelp"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelsHelp => "Yardım";
+	public override string LabelsHelp => "YardÄ±m";
 
 	/// <summary>
 	/// Key: "Label.sLogout"
 	/// English String: "Logout"
 	/// </summary>
-	public override string LabelsLogout => "Çıkış Yap";
+	public override string LabelsLogout => "Ã‡Ä±kÄ±ÅŸ Yap";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -43,17 +43,17 @@ internal class AlertsAndOptionsResources_tr_tr : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsBuyRobux()
 	{
-		return "Robux Satın Al";
+		return "Robux SatÄ±n Al";
 	}
 
 	protected override string _GetTemplateForLabelsHelp()
 	{
-		return "Yardım";
+		return "YardÄ±m";
 	}
 
 	protected override string _GetTemplateForLabelsLogout()
 	{
-		return "Çıkış Yap";
+		return "Ã‡Ä±kÄ±ÅŸ Yap";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -63,7 +63,7 @@ internal class AlertsAndOptionsResources_tr_tr : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue} Robux"
+	/// English String: "{robuxValue}Â Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{
@@ -79,4 +79,7 @@ internal class AlertsAndOptionsResources_tr_tr : AlertsAndOptionsResources_en_us
 	{
 		return "Ayarlar";
 	}
+}
+
+
 }

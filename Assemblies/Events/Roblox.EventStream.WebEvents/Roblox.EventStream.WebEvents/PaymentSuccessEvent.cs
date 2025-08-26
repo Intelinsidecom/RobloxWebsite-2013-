@@ -1,12 +1,22 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class PaymentSuccessEvent : WebEventBase
 
-public class PaymentSuccessEvent : WebEventBase
 {
 	private const string _Name = "paymentSuccess";
 
-	public PaymentSuccessEvent(EventStreamer streamer, PaymentSuccessEventArgs eventArgs)
+	public PaymentSuccessEvent(IEventStreamer streamer, PaymentSuccessEventArgs eventArgs)
 		: base(streamer, "paymentSuccess", eventArgs)
 	{
 		AddEventArg("pids", string.Join(",", eventArgs.ProductIds));
 	}
 }
+
+
+}
+
+
+
+
+
+

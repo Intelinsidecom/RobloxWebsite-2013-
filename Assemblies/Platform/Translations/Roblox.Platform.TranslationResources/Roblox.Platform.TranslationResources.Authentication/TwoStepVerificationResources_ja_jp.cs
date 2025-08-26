@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TwoStepVerificationResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,147 +10,147 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "キャンセル";
+	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.Resend"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string ActionResend => "コードを再送信";
+	public override string ActionResend => "ã‚³ãƒ¼ãƒ‰ã‚’å†é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Action.StartOver"
 	/// link text to restart verification
 	/// English String: "Start Over"
 	/// </summary>
-	public override string ActionStartOver => "やり直す";
+	public override string ActionStartOver => "ã‚„ã‚Šç›´ã™";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// submit button text
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "送信";
+	public override string ActionSubmit => "é€ä¿¡";
 
 	/// <summary>
 	/// Key: "Action.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionVerify => "確認";
+	public override string ActionVerify => "ç¢ºèª";
 
 	/// <summary>
 	/// Key: "Label.Code"
 	/// verification code for 2 factor authentication
 	/// English String: "Code"
 	/// </summary>
-	public override string LabelCode => "コード";
+	public override string LabelCode => "ã‚³ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Label.DidNotReceive"
 	/// English String: "Didn't receive the code?"
 	/// </summary>
-	public override string LabelDidNotReceive => "コードを受け取りませんでしたか？";
+	public override string LabelDidNotReceive => "ã‚³ãƒ¼ãƒ‰ã‚’å—ã‘å–ã‚Šã¾ã›ã‚“ã§ã—ãŸã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.EnterCode"
 	/// English String: "Enter Code (6-digit)"
 	/// </summary>
-	public override string LabelEnterCode => "コードを入力 (6桁)";
+	public override string LabelEnterCode => "ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ› (6æ¡)";
 
 	/// <summary>
 	/// Key: "Label.EnterEmailCode"
 	/// English String: "Enter the code we just sent you via email"
 	/// </summary>
-	public override string LabelEnterEmailCode => "今メールで送信したコードを入力してください";
+	public override string LabelEnterEmailCode => "ä»Šãƒ¡ãƒ¼ãƒ«ã§é€ä¿¡ã—ãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Label.EnterTextCode"
 	/// English String: "Enter the code we just sent you via text message"
 	/// </summary>
-	public override string LabelEnterTextCode => "今テキストメッセージで送信したコードを入力してください";
+	public override string LabelEnterTextCode => "ä»Šãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã§é€ä¿¡ã—ãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Label.EnterTwoStepVerificationCode"
 	/// Enter your two step verification code.
 	/// English String: "Enter your two step verification code."
 	/// </summary>
-	public override string LabelEnterTwoStepVerificationCode => "二段階認証コードを入力してください。";
+	public override string LabelEnterTwoStepVerificationCode => "äºŒæ®µéšŽèªè¨¼ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Label.FacebookPasswordWarning"
 	/// If you have been signing in with Facebook, you must set a password.
 	/// English String: "If you have been signing in with Facebook, you must set a password."
 	/// </summary>
-	public override string LabelFacebookPasswordWarning => "Facebookでサインインしている場合には、パスワードの設定が必要です。";
+	public override string LabelFacebookPasswordWarning => "Facebookã§ã‚µã‚¤ãƒ³ã‚¤ãƒ³ã—ã¦ã„ã‚‹å ´åˆã«ã¯ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®è¨­å®šãŒå¿…è¦ã§ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
 	/// Learn More link text
 	/// English String: "Learn More"
 	/// </summary>
-	public override string LabelLearnMore => "詳しく知る";
+	public override string LabelLearnMore => "è©³ã—ãçŸ¥ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.NewCode"
 	/// verification code resent, label changes to new code
 	/// English String: "New Code"
 	/// </summary>
-	public override string LabelNewCode => "新しいコード";
+	public override string LabelNewCode => "æ–°ã—ã„ã‚³ãƒ¼ãƒ‰";
 
 	/// <summary>
 	/// Key: "Label.RobloxSupport"
 	/// English String: "Roblox Support"
 	/// </summary>
-	public override string LabelRobloxSupport => "Robloxサポート";
+	public override string LabelRobloxSupport => "Robloxã‚µãƒãƒ¼ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.TrustThisDevice"
 	/// English String: "Trust this device for 30 days"
 	/// </summary>
-	public override string LabelTrustThisDevice => "このデバイスを30日間信頼する";
+	public override string LabelTrustThisDevice => "ã“ã®ãƒ‡ãƒã‚¤ã‚¹ã‚’30æ—¥é–“ä¿¡é ¼ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerification"
 	/// English String: "2-Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "2段階認証";
+	public override string LabelTwoStepVerification => "2æ®µéšŽèªè¨¼";
 
 	/// <summary>
 	/// Key: "Response.CodeSent"
 	/// English String: "Code Sent"
 	/// </summary>
-	public override string ResponseCodeSent => "コードが送信されました";
+	public override string ResponseCodeSent => "ã‚³ãƒ¼ãƒ‰ãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸ";
 
 	/// <summary>
 	/// Key: "Response.FeatureNotAvailable"
 	/// English String: "Feature not available. Please contact support."
 	/// </summary>
-	public override string ResponseFeatureNotAvailable => "機能が利用できません。サポートまでご連絡ください。";
+	public override string ResponseFeatureNotAvailable => "æ©Ÿèƒ½ãŒåˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚ã‚µãƒãƒ¼ãƒˆã¾ã§ã”é€£çµ¡ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.InvalidCode"
 	/// English String: "Invalid code."
 	/// </summary>
-	public override string ResponseInvalidCode => "無効なコード。";
+	public override string ResponseInvalidCode => "ç„¡åŠ¹ãªã‚³ãƒ¼ãƒ‰ã€‚";
 
 	/// <summary>
 	/// Key: "Response.SystemErrorReturnToLogin"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string ResponseSystemErrorReturnToLogin => "システムエラー。ログイン画面にお戻りください。";
+	public override string ResponseSystemErrorReturnToLogin => "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ã€‚ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«ãŠæˆ»ã‚Šãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseTooManyAttempts => "試行回数が多すぎます。しばらくしてからやり直してください。";
+	public override string ResponseTooManyAttempts => "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 
 	/// <summary>
 	/// Key: "Response.TooManyCharacters"
 	/// error message
 	/// English String: "Too many characters"
 	/// </summary>
-	public override string ResponseTooManyCharacters => "文字数が多すぎます";
+	public override string ResponseTooManyCharacters => "æ–‡å­—æ•°ãŒå¤šã™ãŽã¾ã™";
 
 	public TwoStepVerificationResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -159,27 +159,27 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionResend()
 	{
-		return "コードを再送信";
+		return "ã‚³ãƒ¼ãƒ‰ã‚’å†é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForActionStartOver()
 	{
-		return "やり直す";
+		return "ã‚„ã‚Šç›´ã™";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "送信";
+		return "é€ä¿¡";
 	}
 
 	protected override string _GetTemplateForActionVerify()
 	{
-		return "確認";
+		return "ç¢ºèª";
 	}
 
 	/// <summary>
@@ -189,12 +189,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"{accountName}さん、こんにちは。{lineBreak}{lineBreak}Robloxアカウントの2段階認証プロセスが有効になりました。 新しいデバイスから次回ログインする時に、Robloxがメールでお送りする６桁のセキュリティコードの入力が必要となります。{lineBreak}{lineBreak}Roblox";
+		return $"{accountName}ã•ã‚“ã€ã“ã‚“ã«ã¡ã¯ã€‚{lineBreak}{lineBreak}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚ æ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰æ¬¡å›žãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹æ™‚ã«ã€RobloxãŒãƒ¡ãƒ¼ãƒ«ã§ãŠé€ã‚Šã™ã‚‹ï¼–æ¡ã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ãŒå¿…è¦ã¨ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyOver13()
 	{
-		return "{accountName}さん、こんにちは。{lineBreak}{lineBreak}Robloxアカウントの2段階認証プロセスが有効になりました。 新しいデバイスから次回ログインする時に、Robloxがメールでお送りする６桁のセキュリティコードの入力が必要となります。{lineBreak}{lineBreak}Roblox";
+		return "{accountName}ã•ã‚“ã€ã“ã‚“ã«ã¡ã¯ã€‚{lineBreak}{lineBreak}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚ æ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰æ¬¡å›žãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹æ™‚ã«ã€RobloxãŒãƒ¡ãƒ¼ãƒ«ã§ãŠé€ã‚Šã™ã‚‹ï¼–æ¡ã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ãŒå¿…è¦ã¨ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -204,12 +204,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"こんにちは。{lineBreak}{lineBreak}お子様のRobloxアカウント{accountName}の2段階認証プロセスが有効になりました。 お子様が新しいデバイスから次回ログインする時に、Robloxがメールでお送りする６桁のセキュリティコードの入力が必要となります。{lineBreak}{lineBreak}Roblox";
+		return $"ã“ã‚“ã«ã¡ã¯ã€‚{lineBreak}{lineBreak}ãŠå­æ§˜ã®Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆ{accountName}ã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚ ãŠå­æ§˜ãŒæ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰æ¬¡å›žãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹æ™‚ã«ã€RobloxãŒãƒ¡ãƒ¼ãƒ«ã§ãŠé€ã‚Šã™ã‚‹ï¼–æ¡ã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ãŒå¿…è¦ã¨ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyUnder13()
 	{
-		return "こんにちは。{lineBreak}{lineBreak}お子様のRobloxアカウント{accountName}の2段階認証プロセスが有効になりました。 お子様が新しいデバイスから次回ログインする時に、Robloxがメールでお送りする６桁のセキュリティコードの入力が必要となります。{lineBreak}{lineBreak}Roblox";
+		return "ã“ã‚“ã«ã¡ã¯ã€‚{lineBreak}{lineBreak}ãŠå­æ§˜ã®Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆ{accountName}ã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚ ãŠå­æ§˜ãŒæ–°ã—ã„ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰æ¬¡å›žãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹æ™‚ã«ã€RobloxãŒãƒ¡ãƒ¼ãƒ«ã§ãŠé€ã‚Šã™ã‚‹ï¼–æ¡ã®ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ãŒå¿…è¦ã¨ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -219,12 +219,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailSubject(string accountName)
 	{
-		return $"Robloxアカウントの2段階認証プロセスが有効になりました： {accountName}";
+		return $"Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã—ãŸï¼š {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailSubject()
 	{
-		return "Robloxアカウントの2段階認証プロセスが有効になりました： {accountName}";
+		return "Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã—ãŸï¼š {accountName}";
 	}
 
 	/// <summary>
@@ -234,12 +234,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"{accountName}さん、こんにちは。{lineBreak}{lineBreak}Robloxアカウントの2段階認証プロセスが無効になりました。 アカウントに次回ログインする時に、セキュリティコードの入力は不要になります。{lineBreak}{lineBreak}Roblox";
+		return $"{accountName}ã•ã‚“ã€ã“ã‚“ã«ã¡ã¯ã€‚{lineBreak}{lineBreak}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚ ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«æ¬¡å›žãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹æ™‚ã«ã€ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ã¯ä¸è¦ã«ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyOver13()
 	{
-		return "{accountName}さん、こんにちは。{lineBreak}{lineBreak}Robloxアカウントの2段階認証プロセスが無効になりました。 アカウントに次回ログインする時に、セキュリティコードの入力は不要になります。{lineBreak}{lineBreak}Roblox";
+		return "{accountName}ã•ã‚“ã€ã“ã‚“ã«ã¡ã¯ã€‚{lineBreak}{lineBreak}Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚ ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«æ¬¡å›žãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹æ™‚ã«ã€ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ã¯ä¸è¦ã«ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -249,12 +249,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"こんにちは。{lineBreak}{lineBreak}お子様のRobloxアカウント{accountName}の2段階認証プロセスが無効になりました。 お子様がアカウントに次回ログインする時に、セキュリティコードの入力は不要になります。{lineBreak}{lineBreak}Roblox";
+		return $"ã“ã‚“ã«ã¡ã¯ã€‚{lineBreak}{lineBreak}ãŠå­æ§˜ã®Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆ{accountName}ã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚ ãŠå­æ§˜ãŒã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«æ¬¡å›žãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹æ™‚ã«ã€ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ã¯ä¸è¦ã«ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyUnder13()
 	{
-		return "こんにちは。{lineBreak}{lineBreak}お子様のRobloxアカウント{accountName}の2段階認証プロセスが無効になりました。 お子様がアカウントに次回ログインする時に、セキュリティコードの入力は不要になります。{lineBreak}{lineBreak}Roblox";
+		return "ã“ã‚“ã«ã¡ã¯ã€‚{lineBreak}{lineBreak}ãŠå­æ§˜ã®Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆ{accountName}ã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚ ãŠå­æ§˜ãŒã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«æ¬¡å›žãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹æ™‚ã«ã€ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚³ãƒ¼ãƒ‰ã®å…¥åŠ›ã¯ä¸è¦ã«ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -264,12 +264,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailSubject(string accountName)
 	{
-		return $"Robloxアカウントの2段階認証プロセスが無効になりました：{accountName}";
+		return $"Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸï¼š{accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailSubject()
 	{
-		return "Robloxアカウントの2段階認証プロセスが無効になりました：{accountName}";
+		return "Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®2æ®µéšŽèªè¨¼ãƒ—ãƒ­ã‚»ã‚¹ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸï¼š{accountName}";
 	}
 
 	/// <summary>
@@ -279,12 +279,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo1(string spanStartTagWithBold, string username, string region, string country, string ipAddress, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{country}({ipAddress})の{region}に居住する{username} からログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{country}({ipAddress})ã®{region}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo1()
 	{
-		return "{spanStartTagWithBold}{country}({ipAddress})の{region}に居住する{username} からログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{country}({ipAddress})ã®{region}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -294,12 +294,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo2(string spanStartTagWithBold, string username, string country, string ipAddress, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{country}({ipAddress})に住む {username} さんからログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}\t";
+		return $"{spanStartTagWithBold}{country}({ipAddress})ã«ä½ã‚€ {username} ã•ã‚“ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo2()
 	{
-		return "{spanStartTagWithBold}{country}({ipAddress})に住む {username} さんからログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}\t";
+		return "{spanStartTagWithBold}{country}({ipAddress})ã«ä½ã‚€ {username} ã•ã‚“ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	/// <summary>
@@ -309,12 +309,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo3(string spanStartTagWithBold, string username, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{username} (Roblox内部)からログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}\t";
+		return $"{spanStartTagWithBold}{username} (Robloxå†…éƒ¨)ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo3()
 	{
-		return "{spanStartTagWithBold}{username} (Roblox内部)からログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}\t";
+		return "{spanStartTagWithBold}{username} (Robloxå†…éƒ¨)ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	/// <summary>
@@ -324,12 +324,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo4(string spanStartTagWithBold, string username, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{country}に住む {username} さんからログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{country}ã«ä½ã‚€ {username} ã•ã‚“ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo4()
 	{
-		return "{spanStartTagWithBold}{country}に住む {username} さんからログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{country}ã«ä½ã‚€ {username} ã•ã‚“ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -339,12 +339,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo5(string spanStartTagWithBold, string username, string region, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{country}、{region}に住む {username} さんからログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{country}ã€{region}ã«ä½ã‚€ {username} ã•ã‚“ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo5()
 	{
-		return "{spanStartTagWithBold}{country}、{region}に住む {username} さんからログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{country}ã€{region}ã«ä½ã‚€ {username} ã•ã‚“ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -354,12 +354,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo6(string spanStartTagWithBold, string username, string city, string region, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{country}、{region}、{city}に住む {username} さんからログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{country}ã€{region}ã€{city}ã«ä½ã‚€ {username} ã•ã‚“ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo6()
 	{
-		return "{spanStartTagWithBold}{country}、{region}、{city}に住む {username} さんからログインリクエストを受けました。{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{country}ã€{region}ã€{city}ã«ä½ã‚€ {username} ã•ã‚“ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -369,12 +369,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlBody(string geoLocationInformation, string spanStartTagWithBold, string accountName, string lineBreak, string code, string spanEndTag, string aTagStartWithHref, string ChangePasswordLink, string hrefEnd, string aTagEnd, string TwoStepVerificationArticleLink, string AccountSafetyArticleLink, string SupportLink)
 	{
-		return $"{geoLocationInformation}{spanStartTagWithBold}のログインコード{accountName}: {lineBreak}{lineBreak}{code}{spanEndTag}{lineBreak}{lineBreak}このコードを2段階認証画面に入力すればログインが完了します。コードは15分後に期限切れになります。{lineBreak}{lineBreak}アカウントが新しいブラウザ、またはデバイスからのRobloxへのログインに使用されたため、このメールをお送りしています。Robloxにログインしようとしていない場合はアカウントは不正アクセスされている可能性があります。このリクエストに覚えが場合はパスワードを変更することを強くおすすめします。{lineBreak}{lineBreak}リソース: {lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}パスワードの変更{aTagEnd}{lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2段階認証について {aTagEnd}{lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}アカウントを安全に保ち続けましょう {aTagEnd}{lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Robloxに関する全般的なサポート{aTagEnd}{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム";
+		return $"{geoLocationInformation}{spanStartTagWithBold}ã®ãƒ­ã‚°ã‚¤ãƒ³ã‚³ãƒ¼ãƒ‰{accountName}: {lineBreak}{lineBreak}{code}{spanEndTag}{lineBreak}{lineBreak}ã“ã®ã‚³ãƒ¼ãƒ‰ã‚’2æ®µéšŽèªè¨¼ç”»é¢ã«å…¥åŠ›ã™ã‚Œã°ãƒ­ã‚°ã‚¤ãƒ³ãŒå®Œäº†ã—ã¾ã™ã€‚ã‚³ãƒ¼ãƒ‰ã¯15åˆ†å¾Œã«æœŸé™åˆ‡ã‚Œã«ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒæ–°ã—ã„ãƒ–ãƒ©ã‚¦ã‚¶ã€ã¾ãŸã¯ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ã®Robloxã¸ã®ãƒ­ã‚°ã‚¤ãƒ³ã«ä½¿ç”¨ã•ã‚ŒãŸãŸã‚ã€ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚’ãŠé€ã‚Šã—ã¦ã„ã¾ã™ã€‚Robloxã«ãƒ­ã‚°ã‚¤ãƒ³ã—ã‚ˆã†ã¨ã—ã¦ã„ãªã„å ´åˆã¯ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ä¸æ­£ã‚¢ã‚¯ã‚»ã‚¹ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚ã“ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«è¦šãˆãŒå ´åˆã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ã‚’å¼·ããŠã™ã™ã‚ã—ã¾ã™ã€‚{lineBreak}{lineBreak}ãƒªã‚½ãƒ¼ã‚¹: {lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´{aTagEnd}{lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2æ®µéšŽèªè¨¼ã«ã¤ã„ã¦ {aTagEnd}{lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å®‰å…¨ã«ä¿ã¡ç¶šã‘ã¾ã—ã‚‡ã† {aTagEnd}{lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Robloxã«é–¢ã™ã‚‹å…¨èˆ¬çš„ãªã‚µãƒãƒ¼ãƒˆ{aTagEnd}{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlBody()
 	{
-		return "{geoLocationInformation}{spanStartTagWithBold}のログインコード{accountName}: {lineBreak}{lineBreak}{code}{spanEndTag}{lineBreak}{lineBreak}このコードを2段階認証画面に入力すればログインが完了します。コードは15分後に期限切れになります。{lineBreak}{lineBreak}アカウントが新しいブラウザ、またはデバイスからのRobloxへのログインに使用されたため、このメールをお送りしています。Robloxにログインしようとしていない場合はアカウントは不正アクセスされている可能性があります。このリクエストに覚えが場合はパスワードを変更することを強くおすすめします。{lineBreak}{lineBreak}リソース: {lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}パスワードの変更{aTagEnd}{lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2段階認証について {aTagEnd}{lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}アカウントを安全に保ち続けましょう {aTagEnd}{lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Robloxに関する全般的なサポート{aTagEnd}{lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム";
+		return "{geoLocationInformation}{spanStartTagWithBold}ã®ãƒ­ã‚°ã‚¤ãƒ³ã‚³ãƒ¼ãƒ‰{accountName}: {lineBreak}{lineBreak}{code}{spanEndTag}{lineBreak}{lineBreak}ã“ã®ã‚³ãƒ¼ãƒ‰ã‚’2æ®µéšŽèªè¨¼ç”»é¢ã«å…¥åŠ›ã™ã‚Œã°ãƒ­ã‚°ã‚¤ãƒ³ãŒå®Œäº†ã—ã¾ã™ã€‚ã‚³ãƒ¼ãƒ‰ã¯15åˆ†å¾Œã«æœŸé™åˆ‡ã‚Œã«ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒæ–°ã—ã„ãƒ–ãƒ©ã‚¦ã‚¶ã€ã¾ãŸã¯ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ã®Robloxã¸ã®ãƒ­ã‚°ã‚¤ãƒ³ã«ä½¿ç”¨ã•ã‚ŒãŸãŸã‚ã€ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚’ãŠé€ã‚Šã—ã¦ã„ã¾ã™ã€‚Robloxã«ãƒ­ã‚°ã‚¤ãƒ³ã—ã‚ˆã†ã¨ã—ã¦ã„ãªã„å ´åˆã¯ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ä¸æ­£ã‚¢ã‚¯ã‚»ã‚¹ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚ã“ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«è¦šãˆãŒå ´åˆã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ã‚’å¼·ããŠã™ã™ã‚ã—ã¾ã™ã€‚{lineBreak}{lineBreak}ãƒªã‚½ãƒ¼ã‚¹: {lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´{aTagEnd}{lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2æ®µéšŽèªè¨¼ã«ã¤ã„ã¦ {aTagEnd}{lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å®‰å…¨ã«ä¿ã¡ç¶šã‘ã¾ã—ã‚‡ã† {aTagEnd}{lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Robloxã«é–¢ã™ã‚‹å…¨èˆ¬çš„ãªã‚µãƒãƒ¼ãƒˆ{aTagEnd}{lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ ";
 	}
 
 	/// <summary>
@@ -384,12 +384,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainBody(string geoLocationInformation, string accountName, string lineBreak, string code, string accountInfoPageLink, string twoStepVerificationHelpArticleLink, string keepAccountSafeArticleLink, string supportPageLink)
 	{
-		return $"{geoLocationInformation}{accountName}のログインコード: {lineBreak}{lineBreak}{code}{lineBreak}{lineBreak}このコードを2段階認証画面に入力すればログインが完了します。コードは15分後に期限切れになります。{lineBreak}{lineBreak}アカウントが新しいブラウザ、またはデバイスからのRobloxへのログインに使用されたため、このメールをお送りしています。Robloxにログインしようとしていない場合はアカウントが不正にアクセスされている可能性があります。このリクエストに覚えがない場合はパスワードを変更することを強くおすすめします。{lineBreak}{lineBreak}リソース: {lineBreak}パスワードの変更 [{accountInfoPageLink}] {lineBreak}2段階認証について [{twoStepVerificationHelpArticleLink}]{lineBreak}アカウントを安全に保ち続けましょう [{keepAccountSafeArticleLink}] {lineBreak}Robloxに関する全般的なサポート [{supportPageLink}] {lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム";
+		return $"{geoLocationInformation}{accountName}ã®ãƒ­ã‚°ã‚¤ãƒ³ã‚³ãƒ¼ãƒ‰: {lineBreak}{lineBreak}{code}{lineBreak}{lineBreak}ã“ã®ã‚³ãƒ¼ãƒ‰ã‚’2æ®µéšŽèªè¨¼ç”»é¢ã«å…¥åŠ›ã™ã‚Œã°ãƒ­ã‚°ã‚¤ãƒ³ãŒå®Œäº†ã—ã¾ã™ã€‚ã‚³ãƒ¼ãƒ‰ã¯15åˆ†å¾Œã«æœŸé™åˆ‡ã‚Œã«ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒæ–°ã—ã„ãƒ–ãƒ©ã‚¦ã‚¶ã€ã¾ãŸã¯ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ã®Robloxã¸ã®ãƒ­ã‚°ã‚¤ãƒ³ã«ä½¿ç”¨ã•ã‚ŒãŸãŸã‚ã€ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚’ãŠé€ã‚Šã—ã¦ã„ã¾ã™ã€‚Robloxã«ãƒ­ã‚°ã‚¤ãƒ³ã—ã‚ˆã†ã¨ã—ã¦ã„ãªã„å ´åˆã¯ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒä¸æ­£ã«ã‚¢ã‚¯ã‚»ã‚¹ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚ã“ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«è¦šãˆãŒãªã„å ´åˆã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ã‚’å¼·ããŠã™ã™ã‚ã—ã¾ã™ã€‚{lineBreak}{lineBreak}ãƒªã‚½ãƒ¼ã‚¹: {lineBreak}ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´ [{accountInfoPageLink}] {lineBreak}2æ®µéšŽèªè¨¼ã«ã¤ã„ã¦ [{twoStepVerificationHelpArticleLink}]{lineBreak}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å®‰å…¨ã«ä¿ã¡ç¶šã‘ã¾ã—ã‚‡ã† [{keepAccountSafeArticleLink}] {lineBreak}Robloxã«é–¢ã™ã‚‹å…¨èˆ¬çš„ãªã‚µãƒãƒ¼ãƒˆ [{supportPageLink}] {lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ ";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainBody()
 	{
-		return "{geoLocationInformation}{accountName}のログインコード: {lineBreak}{lineBreak}{code}{lineBreak}{lineBreak}このコードを2段階認証画面に入力すればログインが完了します。コードは15分後に期限切れになります。{lineBreak}{lineBreak}アカウントが新しいブラウザ、またはデバイスからのRobloxへのログインに使用されたため、このメールをお送りしています。Robloxにログインしようとしていない場合はアカウントが不正にアクセスされている可能性があります。このリクエストに覚えがない場合はパスワードを変更することを強くおすすめします。{lineBreak}{lineBreak}リソース: {lineBreak}パスワードの変更 [{accountInfoPageLink}] {lineBreak}2段階認証について [{twoStepVerificationHelpArticleLink}]{lineBreak}アカウントを安全に保ち続けましょう [{keepAccountSafeArticleLink}] {lineBreak}Robloxに関する全般的なサポート [{supportPageLink}] {lineBreak}{lineBreak}よろしくお願いいたします。{lineBreak}{lineBreak}Robloxチーム";
+		return "{geoLocationInformation}{accountName}ã®ãƒ­ã‚°ã‚¤ãƒ³ã‚³ãƒ¼ãƒ‰: {lineBreak}{lineBreak}{code}{lineBreak}{lineBreak}ã“ã®ã‚³ãƒ¼ãƒ‰ã‚’2æ®µéšŽèªè¨¼ç”»é¢ã«å…¥åŠ›ã™ã‚Œã°ãƒ­ã‚°ã‚¤ãƒ³ãŒå®Œäº†ã—ã¾ã™ã€‚ã‚³ãƒ¼ãƒ‰ã¯15åˆ†å¾Œã«æœŸé™åˆ‡ã‚Œã«ãªã‚Šã¾ã™ã€‚{lineBreak}{lineBreak}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒæ–°ã—ã„ãƒ–ãƒ©ã‚¦ã‚¶ã€ã¾ãŸã¯ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ã®Robloxã¸ã®ãƒ­ã‚°ã‚¤ãƒ³ã«ä½¿ç”¨ã•ã‚ŒãŸãŸã‚ã€ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚’ãŠé€ã‚Šã—ã¦ã„ã¾ã™ã€‚Robloxã«ãƒ­ã‚°ã‚¤ãƒ³ã—ã‚ˆã†ã¨ã—ã¦ã„ãªã„å ´åˆã¯ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒä¸æ­£ã«ã‚¢ã‚¯ã‚»ã‚¹ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚ã“ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆã«è¦šãˆãŒãªã„å ´åˆã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ã‚’å¼·ããŠã™ã™ã‚ã—ã¾ã™ã€‚{lineBreak}{lineBreak}ãƒªã‚½ãƒ¼ã‚¹: {lineBreak}ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´ [{accountInfoPageLink}] {lineBreak}2æ®µéšŽèªè¨¼ã«ã¤ã„ã¦ [{twoStepVerificationHelpArticleLink}]{lineBreak}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å®‰å…¨ã«ä¿ã¡ç¶šã‘ã¾ã—ã‚‡ã† [{keepAccountSafeArticleLink}] {lineBreak}Robloxã«é–¢ã™ã‚‹å…¨èˆ¬çš„ãªã‚µãƒãƒ¼ãƒˆ [{supportPageLink}] {lineBreak}{lineBreak}ã‚ˆã‚ã—ããŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚{lineBreak}{lineBreak}Robloxãƒãƒ¼ãƒ ";
 	}
 
 	/// <summary>
@@ -399,12 +399,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo1(string username, string region, string country, string ipAddress, string lineBreak)
 	{
-		return $" {country}の{region} ({ipAddress})に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return $" {country}ã®{region} ({ipAddress})ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo1()
 	{
-		return " {country}の{region} ({ipAddress})に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return " {country}ã®{region} ({ipAddress})ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -414,12 +414,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo2(string username, string country, string ipAddress, string lineBreak)
 	{
-		return $"({ipAddress})の{country}に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return $"({ipAddress})ã®{country}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo2()
 	{
-		return "({ipAddress})の{country}に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return "({ipAddress})ã®{country}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -429,12 +429,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo3(string username, string lineBreak)
 	{
-		return $"{username} (Roblox内部)からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return $"{username} (Robloxå†…éƒ¨)ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo3()
 	{
-		return "{username} (Roblox内部)からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return "{username} (Robloxå†…éƒ¨)ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -444,12 +444,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo4(string username, string country, string lineBreak)
 	{
-		return $"{country}に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return $"{country}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo4()
 	{
-		return "{country}に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return "{country}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -459,12 +459,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo5(string username, string region, string country, string lineBreak)
 	{
-		return $"{country}、{region}に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return $"{country}ã€{region}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo5()
 	{
-		return "{country}、{region}に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return "{country}ã€{region}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -474,12 +474,12 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo6(string username, string city, string region, string country, string lineBreak)
 	{
-		return $"{country}、{region}、{city}に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return $"{country}ã€{region}ã€{city}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo6()
 	{
-		return "{country}、{region}、{city}に居住する{username} からログインリクエストを受けました。{lineBreak}{lineBreak}";
+		return "{country}ã€{region}ã€{city}ã«å±…ä½ã™ã‚‹{username} ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å—ã‘ã¾ã—ãŸã€‚{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -489,17 +489,17 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailSubject(string accountName)
 	{
-		return $"Robloxアカウントの認証コード: {accountName}";
+		return $"Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®èªè¨¼ã‚³ãƒ¼ãƒ‰: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailSubject()
 	{
-		return "Robloxアカウントの認証コード: {accountName}";
+		return "Robloxã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®èªè¨¼ã‚³ãƒ¼ãƒ‰: {accountName}";
 	}
 
 	protected override string _GetTemplateForLabelCode()
 	{
-		return "コード";
+		return "ã‚³ãƒ¼ãƒ‰";
 	}
 
 	/// <summary>
@@ -509,47 +509,47 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string LabelCodeInputPlaceholderText(string codeLength)
 	{
-		return $"{codeLength}桁のコードを入力してください";
+		return $"{codeLength}æ¡ã®ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelCodeInputPlaceholderText()
 	{
-		return "{codeLength}桁のコードを入力してください";
+		return "{codeLength}æ¡ã®ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelDidNotReceive()
 	{
-		return "コードを受け取りませんでしたか？";
+		return "ã‚³ãƒ¼ãƒ‰ã‚’å—ã‘å–ã‚Šã¾ã›ã‚“ã§ã—ãŸã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelEnterCode()
 	{
-		return "コードを入力 (6桁)";
+		return "ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ› (6æ¡)";
 	}
 
 	protected override string _GetTemplateForLabelEnterEmailCode()
 	{
-		return "今メールで送信したコードを入力してください";
+		return "ä»Šãƒ¡ãƒ¼ãƒ«ã§é€ä¿¡ã—ãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelEnterTextCode()
 	{
-		return "今テキストメッセージで送信したコードを入力してください";
+		return "ä»Šãƒ†ã‚­ã‚¹ãƒˆãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã§é€ä¿¡ã—ãŸã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelEnterTwoStepVerificationCode()
 	{
-		return "二段階認証コードを入力してください。";
+		return "äºŒæ®µéšŽèªè¨¼ã‚³ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelFacebookPasswordWarning()
 	{
-		return "Facebookでサインインしている場合には、パスワードの設定が必要です。";
+		return "Facebookã§ã‚µã‚¤ãƒ³ã‚¤ãƒ³ã—ã¦ã„ã‚‹å ´åˆã«ã¯ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®è¨­å®šãŒå¿…è¦ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
 	{
-		return "詳しく知る";
+		return "è©³ã—ãçŸ¥ã‚‹";
 	}
 
 	/// <summary>
@@ -559,61 +559,64 @@ internal class TwoStepVerificationResources_ja_jp : TwoStepVerificationResources
 	/// </summary>
 	public override string LabelNeedHelpContactSupport(string supportLink)
 	{
-		return $"ヘルプが必要ですか？{supportLink}までお問い合わせください";
+		return $"ãƒ˜ãƒ«ãƒ—ãŒå¿…è¦ã§ã™ã‹ï¼Ÿ{supportLink}ã¾ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelNeedHelpContactSupport()
 	{
-		return "ヘルプが必要ですか？{supportLink}までお問い合わせください";
+		return "ãƒ˜ãƒ«ãƒ—ãŒå¿…è¦ã§ã™ã‹ï¼Ÿ{supportLink}ã¾ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForLabelNewCode()
 	{
-		return "新しいコード";
+		return "æ–°ã—ã„ã‚³ãƒ¼ãƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelRobloxSupport()
 	{
-		return "Robloxサポート";
+		return "Robloxã‚µãƒãƒ¼ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelTrustThisDevice()
 	{
-		return "このデバイスを30日間信頼する";
+		return "ã“ã®ãƒ‡ãƒã‚¤ã‚¹ã‚’30æ—¥é–“ä¿¡é ¼ã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "2段階認証";
+		return "2æ®µéšŽèªè¨¼";
 	}
 
 	protected override string _GetTemplateForResponseCodeSent()
 	{
-		return "コードが送信されました";
+		return "ã‚³ãƒ¼ãƒ‰ãŒé€ä¿¡ã•ã‚Œã¾ã—ãŸ";
 	}
 
 	protected override string _GetTemplateForResponseFeatureNotAvailable()
 	{
-		return "機能が利用できません。サポートまでご連絡ください。";
+		return "æ©Ÿèƒ½ãŒåˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚ã‚µãƒãƒ¼ãƒˆã¾ã§ã”é€£çµ¡ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseInvalidCode()
 	{
-		return "無効なコード。";
+		return "ç„¡åŠ¹ãªã‚³ãƒ¼ãƒ‰ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseSystemErrorReturnToLogin()
 	{
-		return "システムエラー。ログイン画面にお戻りください。";
+		return "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ã€‚ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«ãŠæˆ»ã‚Šãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
 	{
-		return "試行回数が多すぎます。しばらくしてからやり直してください。";
+		return "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™ã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
 	}
 
 	protected override string _GetTemplateForResponseTooManyCharacters()
 	{
-		return "文字数が多すぎます";
+		return "æ–‡å­—æ•°ãŒå¤šã™ãŽã¾ã™";
 	}
+}
+
+
 }

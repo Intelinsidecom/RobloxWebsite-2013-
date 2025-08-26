@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CreatePlaceProductPromotionResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -34,7 +34,7 @@ internal class CreatePlaceProductPromotionResources_pt_br : CreatePlaceProductPr
 	/// Key: "Label.NotForSale"
 	/// English String: "This item is not for sale."
 	/// </summary>
-	public override string LabelNotForSale => "Este item não está disponível para compra.";
+	public override string LabelNotForSale => "Este item nÃ£o estÃ¡ disponÃ­vel para compra.";
 
 	/// <summary>
 	/// Key: "Label.Ok"
@@ -82,7 +82,7 @@ internal class CreatePlaceProductPromotionResources_pt_br : CreatePlaceProductPr
 	/// Key: "Label.SorryWeCouldnt"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorryWeCouldnt => "Infelizmente, não conseguimos remover o item do seu jogo. Tente novamente.";
+	public override string LabelSorryWeCouldnt => "Infelizmente, nÃ£o conseguimos remover o item do seu jogo. Tente novamente.";
 
 	/// <summary>
 	/// Key: "Label.Success"
@@ -117,7 +117,7 @@ internal class CreatePlaceProductPromotionResources_pt_br : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelNotForSale()
 	{
-		return "Este item não está disponível para compra.";
+		return "Este item nÃ£o estÃ¡ disponÃ­vel para compra.";
 	}
 
 	protected override string _GetTemplateForLabelOk()
@@ -157,7 +157,7 @@ internal class CreatePlaceProductPromotionResources_pt_br : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelSorryWeCouldnt()
 	{
-		return "Infelizmente, não conseguimos remover o item do seu jogo. Tente novamente.";
+		return "Infelizmente, nÃ£o conseguimos remover o item do seu jogo. Tente novamente.";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
@@ -171,11 +171,14 @@ internal class CreatePlaceProductPromotionResources_pt_br : CreatePlaceProductPr
 	/// </summary>
 	public override string MessageWhatIsAddingGear(string affiliateSaleTotal)
 	{
-		return $"O que é a funcionalidade de adicionar equipamento a um jogo? Este item é exibido na página do jogo e permitido automaticamente no seu jogo. Se alguém comprar este item da sua página do jogo, você ganhará {affiliateSaleTotal} Robux!";
+		return $"O que Ã© a funcionalidade de adicionar equipamento a um jogo? Este item Ã© exibido na pÃ¡gina do jogo e permitido automaticamente no seu jogo. Se alguÃ©m comprar este item da sua pÃ¡gina do jogo, vocÃª ganharÃ¡ {affiliateSaleTotal} Robux!";
 	}
 
 	protected override string _GetTemplateForMessageWhatIsAddingGear()
 	{
-		return "O que é a funcionalidade de adicionar equipamento a um jogo? Este item é exibido na página do jogo e permitido automaticamente no seu jogo. Se alguém comprar este item da sua página do jogo, você ganhará {affiliateSaleTotal} Robux!";
+		return "O que Ã© a funcionalidade de adicionar equipamento a um jogo? Este item Ã© exibido na pÃ¡gina do jogo e permitido automaticamente no seu jogo. Se alguÃ©m comprar este item da sua pÃ¡gina do jogo, vocÃª ganharÃ¡ {affiliateSaleTotal} Robux!";
 	}
+}
+
+
 }

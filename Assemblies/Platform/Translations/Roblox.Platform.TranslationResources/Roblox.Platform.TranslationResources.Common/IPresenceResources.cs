@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
+    interface IPresenceResources : ITranslationResources
 
-public interface IPresenceResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Label.Creating"
@@ -37,4 +37,7 @@ public interface IPresenceResources : ITranslationResources
 	/// English String: "Playing {placeName}"
 	/// </summary>
 	string LabelPlayingGame(string placeName);
+}
+
+
 }

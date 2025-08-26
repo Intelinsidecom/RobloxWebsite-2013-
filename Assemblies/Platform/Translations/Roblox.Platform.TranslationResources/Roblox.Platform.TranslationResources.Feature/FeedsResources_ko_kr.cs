@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides FeedsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,49 +10,49 @@ internal class FeedsResources_ko_kr : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Heading.BuildSomething"
 	/// English String: "Build Something"
 	/// </summary>
-	public override string HeadingBuildSomething => "만들어 보기";
+	public override string HeadingBuildSomething => "ë§Œë“¤ì–´ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.CustomizeAvatar"
 	/// English String: "Customize Your Avatar"
 	/// </summary>
-	public override string HeadingCustomizeAvatar => "아바타 꾸미기";
+	public override string HeadingCustomizeAvatar => "ì•„ë°”íƒ€ ê¾¸ë¯¸ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.ForumHelp"
 	/// English String: "Roblox forums for help"
 	/// </summary>
-	public override string HeadingForumHelp => "Roblox 포럼에서 도움 얻기";
+	public override string HeadingForumHelp => "Roblox í¬ëŸ¼ì—ì„œ ë„ì›€ ì–»ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.MakeFriends"
 	/// English String: "Make Friends"
 	/// </summary>
-	public override string HeadingMakeFriends => "친구 사귀기";
+	public override string HeadingMakeFriends => "ì¹œêµ¬ ì‚¬ê·€ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.PlayGames"
 	/// English String: "Play Games"
 	/// </summary>
-	public override string HeadingPlayGames => "게임 플레이";
+	public override string HeadingPlayGames => "ê²Œìž„ í”Œë ˆì´";
 
 	/// <summary>
 	/// Key: "Label.NoFeedLink"
 	/// English String: "make some best friends now."
 	/// </summary>
-	public override string LabelNoFeedLink => "지금 바로 베스트 프렌드를 사귀어보세요.";
+	public override string LabelNoFeedLink => "ì§€ê¸ˆ ë°”ë¡œ ë² ìŠ¤íŠ¸ í”„ë Œë“œë¥¼ ì‚¬ê·€ì–´ë³´ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Label.NoFeedText"
 	/// English String: "No news about your best friends... want to know what your best friends are up to?"
 	/// </summary>
-	public override string LabelNoFeedText => "베스트 프렌드에 관한 새소식이 없네요... 베스트 프렌드들이 무엇을 하고 있는지 궁금하세요?";
+	public override string LabelNoFeedText => "ë² ìŠ¤íŠ¸ í”„ë Œë“œì— ê´€í•œ ìƒˆì†Œì‹ì´ ì—†ë„¤ìš”... ë² ìŠ¤íŠ¸ í”„ë Œë“œë“¤ì´ ë¬´ì—‡ì„ í•˜ê³  ìžˆëŠ”ì§€ ê¶ê¸ˆí•˜ì„¸ìš”?";
 
 	/// <summary>
 	/// Key: "Label.PlayGames"
 	/// English String: "Nearly all Roblox games are built by players like you. Here are some of our favorites:"
 	/// </summary>
-	public override string LabelPlayGames => "대부분의 Roblox 게임은 여러분과 같은 플레이어들이 만든답니다. 재미난 게임 몇 가지를 구경해보세요.";
+	public override string LabelPlayGames => "ëŒ€ë¶€ë¶„ì˜ Roblox ê²Œìž„ì€ ì—¬ëŸ¬ë¶„ê³¼ ê°™ì€ í”Œë ˆì´ì–´ë“¤ì´ ë§Œë“ ë‹µë‹ˆë‹¤. ìž¬ë¯¸ë‚œ ê²Œìž„ ëª‡ ê°€ì§€ë¥¼ êµ¬ê²½í•´ë³´ì„¸ìš”.";
 
 	public FeedsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -61,27 +61,27 @@ internal class FeedsResources_ko_kr : FeedsResources_en_us, IFeedsResources, ITr
 
 	protected override string _GetTemplateForHeadingBuildSomething()
 	{
-		return "만들어 보기";
+		return "ë§Œë“¤ì–´ ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingCustomizeAvatar()
 	{
-		return "아바타 꾸미기";
+		return "ì•„ë°”íƒ€ ê¾¸ë¯¸ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingForumHelp()
 	{
-		return "Roblox 포럼에서 도움 얻기";
+		return "Roblox í¬ëŸ¼ì—ì„œ ë„ì›€ ì–»ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingMakeFriends()
 	{
-		return "친구 사귀기";
+		return "ì¹œêµ¬ ì‚¬ê·€ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingPlayGames()
 	{
-		return "게임 플레이";
+		return "ê²Œìž„ í”Œë ˆì´";
 	}
 
 	/// <summary>
@@ -90,12 +90,12 @@ internal class FeedsResources_ko_kr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelBuildSomething(string linkStart, string linkEnd)
 	{
-		return $"Roblox에는 재미난 멀티플레이어 건설 게임이 가득하죠. 직접 게임을 만들고 싶나요? {linkStart}개발 페이지{linkEnd}에서 Roblox의 게임 개발 환경인 Roblox Studio를 살펴보세요.";
+		return $"Robloxì—ëŠ” ìž¬ë¯¸ë‚œ ë©€í‹°í”Œë ˆì´ì–´ ê±´ì„¤ ê²Œìž„ì´ ê°€ë“í•˜ì£ . ì§ì ‘ ê²Œìž„ì„ ë§Œë“¤ê³  ì‹¶ë‚˜ìš”? {linkStart}ê°œë°œ íŽ˜ì´ì§€{linkEnd}ì—ì„œ Robloxì˜ ê²Œìž„ ê°œë°œ í™˜ê²½ì¸ Roblox Studioë¥¼ ì‚´íŽ´ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelBuildSomething()
 	{
-		return "Roblox에는 재미난 멀티플레이어 건설 게임이 가득하죠. 직접 게임을 만들고 싶나요? {linkStart}개발 페이지{linkEnd}에서 Roblox의 게임 개발 환경인 Roblox Studio를 살펴보세요.";
+		return "Robloxì—ëŠ” ìž¬ë¯¸ë‚œ ë©€í‹°í”Œë ˆì´ì–´ ê±´ì„¤ ê²Œìž„ì´ ê°€ë“í•˜ì£ . ì§ì ‘ ê²Œìž„ì„ ë§Œë“¤ê³  ì‹¶ë‚˜ìš”? {linkStart}ê°œë°œ íŽ˜ì´ì§€{linkEnd}ì—ì„œ Robloxì˜ ê²Œìž„ ê°œë°œ í™˜ê²½ì¸ Roblox Studioë¥¼ ì‚´íŽ´ë³´ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -104,12 +104,12 @@ internal class FeedsResources_ko_kr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelCustomizeAvatarDesktop(string avatarLinkStart, string avatarLinkEnd, string catalogLinkStart, string catalogLinkEnd)
 	{
-		return $"{avatarLinkStart}아바타 편집기{avatarLinkEnd}에서 캐릭터를 꾸며보세요. 복장 아이템은 {catalogLinkStart}카탈로그{catalogLinkEnd}에서 구매할 수 있어요.";
+		return $"{avatarLinkStart}ì•„ë°”íƒ€ íŽ¸ì§‘ê¸°{avatarLinkEnd}ì—ì„œ ìºë¦­í„°ë¥¼ ê¾¸ë©°ë³´ì„¸ìš”. ë³µìž¥ ì•„ì´í…œì€ {catalogLinkStart}ì¹´íƒˆë¡œê·¸{catalogLinkEnd}ì—ì„œ êµ¬ë§¤í•  ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarDesktop()
 	{
-		return "{avatarLinkStart}아바타 편집기{avatarLinkEnd}에서 캐릭터를 꾸며보세요. 복장 아이템은 {catalogLinkStart}카탈로그{catalogLinkEnd}에서 구매할 수 있어요.";
+		return "{avatarLinkStart}ì•„ë°”íƒ€ íŽ¸ì§‘ê¸°{avatarLinkEnd}ì—ì„œ ìºë¦­í„°ë¥¼ ê¾¸ë©°ë³´ì„¸ìš”. ë³µìž¥ ì•„ì´í…œì€ {catalogLinkStart}ì¹´íƒˆë¡œê·¸{catalogLinkEnd}ì—ì„œ êµ¬ë§¤í•  ìˆ˜ ìžˆì–´ìš”.";
 	}
 
 	/// <summary>
@@ -118,12 +118,12 @@ internal class FeedsResources_ko_kr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelCustomizeAvatarPhone(string linkStart, string linkEnd)
 	{
-		return $"{linkStart}카탈로그{linkEnd}에서 새 복장을 구입하여 아바타를 마음껏 꾸며보세요.";
+		return $"{linkStart}ì¹´íƒˆë¡œê·¸{linkEnd}ì—ì„œ ìƒˆ ë³µìž¥ì„ êµ¬ìž…í•˜ì—¬ ì•„ë°”íƒ€ë¥¼ ë§ˆìŒê» ê¾¸ë©°ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelCustomizeAvatarPhone()
 	{
-		return "{linkStart}카탈로그{linkEnd}에서 새 복장을 구입하여 아바타를 마음껏 꾸며보세요.";
+		return "{linkStart}ì¹´íƒˆë¡œê·¸{linkEnd}ì—ì„œ ìƒˆ ë³µìž¥ì„ êµ¬ìž…í•˜ì—¬ ì•„ë°”íƒ€ë¥¼ ë§ˆìŒê» ê¾¸ë©°ë³´ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -132,12 +132,12 @@ internal class FeedsResources_ko_kr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelForumHelp(string linkStart, string linkEnd)
 	{
-		return $"Roblox에 관해 궁금한 점이 너무 많다구요? {linkStart}여기{linkEnd}에서 다른 사람들의 이야기를 들어보세요.";
+		return $"Robloxì— ê´€í•´ ê¶ê¸ˆí•œ ì ì´ ë„ˆë¬´ ë§Žë‹¤êµ¬ìš”? {linkStart}ì—¬ê¸°{linkEnd}ì—ì„œ ë‹¤ë¥¸ ì‚¬ëžŒë“¤ì˜ ì´ì•¼ê¸°ë¥¼ ë“¤ì–´ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelForumHelp()
 	{
-		return "Roblox에 관해 궁금한 점이 너무 많다구요? {linkStart}여기{linkEnd}에서 다른 사람들의 이야기를 들어보세요.";
+		return "Robloxì— ê´€í•´ ê¶ê¸ˆí•œ ì ì´ ë„ˆë¬´ ë§Žë‹¤êµ¬ìš”? {linkStart}ì—¬ê¸°{linkEnd}ì—ì„œ ë‹¤ë¥¸ ì‚¬ëžŒë“¤ì˜ ì´ì•¼ê¸°ë¥¼ ë“¤ì–´ë³´ì„¸ìš”.";
 	}
 
 	/// <summary>
@@ -146,26 +146,29 @@ internal class FeedsResources_ko_kr : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelMakeFriends(string linkStart, string linkEnd)
 	{
-		return $"게임에서 만난 다른 플레이어들에게 친구 요청을 보내보세요. 혹시 기회를 놓쳤다면 언제든 사용자 프로필을 {linkStart}검색{linkEnd}하여 친구 요청을 보낼 수 있습니다.";
+		return $"ê²Œìž„ì—ì„œ ë§Œë‚œ ë‹¤ë¥¸ í”Œë ˆì´ì–´ë“¤ì—ê²Œ ì¹œêµ¬ ìš”ì²­ì„ ë³´ë‚´ë³´ì„¸ìš”. í˜¹ì‹œ ê¸°íšŒë¥¼ ë†“ì³¤ë‹¤ë©´ ì–¸ì œë“  ì‚¬ìš©ìž í”„ë¡œí•„ì„ {linkStart}ê²€ìƒ‰{linkEnd}í•˜ì—¬ ì¹œêµ¬ ìš”ì²­ì„ ë³´ë‚¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelMakeFriends()
 	{
-		return "게임에서 만난 다른 플레이어들에게 친구 요청을 보내보세요. 혹시 기회를 놓쳤다면 언제든 사용자 프로필을 {linkStart}검색{linkEnd}하여 친구 요청을 보낼 수 있습니다.";
+		return "ê²Œìž„ì—ì„œ ë§Œë‚œ ë‹¤ë¥¸ í”Œë ˆì´ì–´ë“¤ì—ê²Œ ì¹œêµ¬ ìš”ì²­ì„ ë³´ë‚´ë³´ì„¸ìš”. í˜¹ì‹œ ê¸°íšŒë¥¼ ë†“ì³¤ë‹¤ë©´ ì–¸ì œë“  ì‚¬ìš©ìž í”„ë¡œí•„ì„ {linkStart}ê²€ìƒ‰{linkEnd}í•˜ì—¬ ì¹œêµ¬ ìš”ì²­ì„ ë³´ë‚¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedLink()
 	{
-		return "지금 바로 베스트 프렌드를 사귀어보세요.";
+		return "ì§€ê¸ˆ ë°”ë¡œ ë² ìŠ¤íŠ¸ í”„ë Œë“œë¥¼ ì‚¬ê·€ì–´ë³´ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedText()
 	{
-		return "베스트 프렌드에 관한 새소식이 없네요... 베스트 프렌드들이 무엇을 하고 있는지 궁금하세요?";
+		return "ë² ìŠ¤íŠ¸ í”„ë Œë“œì— ê´€í•œ ìƒˆì†Œì‹ì´ ì—†ë„¤ìš”... ë² ìŠ¤íŠ¸ í”„ë Œë“œë“¤ì´ ë¬´ì—‡ì„ í•˜ê³  ìžˆëŠ”ì§€ ê¶ê¸ˆí•˜ì„¸ìš”?";
 	}
 
 	protected override string _GetTemplateForLabelPlayGames()
 	{
-		return "대부분의 Roblox 게임은 여러분과 같은 플레이어들이 만든답니다. 재미난 게임 몇 가지를 구경해보세요.";
+		return "ëŒ€ë¶€ë¶„ì˜ Roblox ê²Œìž„ì€ ì—¬ëŸ¬ë¶„ê³¼ ê°™ì€ í”Œë ˆì´ì–´ë“¤ì´ ë§Œë“ ë‹µë‹ˆë‹¤. ìž¬ë¯¸ë‚œ ê²Œìž„ ëª‡ ê°€ì§€ë¥¼ êµ¬ê²½í•´ë³´ì„¸ìš”.";
 	}
+}
+
+
 }

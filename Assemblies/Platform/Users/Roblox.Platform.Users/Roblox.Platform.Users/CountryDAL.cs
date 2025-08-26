@@ -5,10 +5,9 @@ using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.Users {
+    class CountryDAL
 
-namespace Roblox.Users;
-
-public class CountryDAL
 {
 	private byte _ID;
 
@@ -124,4 +123,7 @@ public class CountryDAL
 		queryParameters.Add(new SqlParameter("@MaximumRows", maximumRows));
 		return EntityHelper.GetDataEntityIDCollection<byte>(new DbInfo(dbConnectionString_CountryDAL, "dbo.Countries_GetActiveCountryIDs_Paged", queryParameters));
 	}
+}
+
+
 }

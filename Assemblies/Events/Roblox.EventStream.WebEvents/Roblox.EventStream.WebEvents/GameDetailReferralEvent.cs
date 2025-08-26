@@ -1,6 +1,7 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    public class GameDetailReferralEvent : WebEventBase
 
-public class GameDetailReferralEvent : WebEventBase
 {
 	private const string _Name = "gameDetailReferral";
 
@@ -16,3 +17,12 @@ public class GameDetailReferralEvent : WebEventBase
 		AddEventArg("expctx", extendedArgs.ExperimentalContext ?? string.Empty);
 	}
 }
+
+
+}
+
+
+
+
+
+

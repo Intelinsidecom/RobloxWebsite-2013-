@@ -1,8 +1,10 @@
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public enum SetUserAgeBracketResult
 {
 	Unknown,
 	Changed,
 	Unchanged
+}
+
 }

@@ -1,10 +1,13 @@
-namespace Roblox.Platform.Localization.Accounts;
+﻿namespace Roblox.Localization.Accountsinternal {
+    interface IAccountCountryEntityFactory
 
-internal interface IAccountCountryEntityFactory
 {
 	IAccountCountryEntity Get(long id);
 
 	IAccountCountryEntity GetByAccountId(long accountId);
 
 	IAccountCountryEntity GetOrCreate(long accountId, out bool entityWasCreated);
+}
+
+
 }

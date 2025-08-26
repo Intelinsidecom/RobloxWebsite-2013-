@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class PrivateSalesResources_en_us : TranslationResourcesBase, IPrivateSalesResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class PrivateSalesResources_en_us : TranslationResourcesBase, IPrivateSalesResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -223,4 +222,7 @@ internal class PrivateSalesResources_en_us : TranslationResourcesBase, IPrivateS
 	{
 		return "Sorry, no one is reselling this item at the moment.";
 	}
+}
+
+
 }

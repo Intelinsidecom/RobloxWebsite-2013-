@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslationLanguageSwitchResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,182 +11,182 @@ internal class TranslationLanguageSwitchResources_ja_jp : TranslationLanguageSwi
 	/// The label for the gear icon which is used to open the modal for changing default language
 	/// English String: "Change default"
 	/// </summary>
-	public override string DescriptionChangeDefault => "デフォルトの変更";
+	public override string DescriptionChangeDefault => "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Description.ChangeDefaultLanguage"
 	/// The body content for the modal which is used to change default language
 	/// English String: "What language do you want to set as default language?"
 	/// </summary>
-	public override string DescriptionChangeDefaultLanguage => "どの言語をデフォルト言語に設定しますか？";
+	public override string DescriptionChangeDefaultLanguage => "ã©ã®è¨€èªžã‚’ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã«è¨­å®šã—ã¾ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.Delete"
 	/// The label for the trash bin icon which is used to open the modal for deleting a language
 	/// English String: "Delete"
 	/// </summary>
-	public override string DescriptionDelete => "削除";
+	public override string DescriptionDelete => "å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Description.LanguageSwitch"
 	/// The tooltip description to explain what the language switch is
 	/// English String: "You can specify default and localized language, so that user can see game title and description in their language."
 	/// </summary>
-	public override string DescriptionLanguageSwitch => "デフォルト言語と翻訳言語を指定すると、ユーザーがゲームタイトルと詳細を現地の言語で見れるようにできます。";
+	public override string DescriptionLanguageSwitch => "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã¨ç¿»è¨³è¨€èªžã‚’æŒ‡å®šã™ã‚‹ã¨ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒã‚²ãƒ¼ãƒ ã‚¿ã‚¤ãƒˆãƒ«ã¨è©³ç´°ã‚’ç¾åœ°ã®è¨€èªžã§è¦‹ã‚Œã‚‹ã‚ˆã†ã«ã§ãã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Description.MissingTranslation"
 	/// The eror text when user has entered invalid information for some languages
 	/// English String: "Please add missing translations(s)"
 	/// </summary>
-	public override string DescriptionMissingTranslation => "欠落している翻訳を追加してください";
+	public override string DescriptionMissingTranslation => "æ¬ è½ã—ã¦ã„ã‚‹ç¿»è¨³ã‚’è¿½åŠ ã—ã¦ãã ã•ã„";
 
 	/// <summary>
 	/// Key: "Description.RemoveLanguage"
 	/// The body content for the modal which is used to delete a language
 	/// English String: "All localized information will be deleted."
 	/// </summary>
-	public override string DescriptionRemoveLanguage => "翻訳済みデータがすべて削除されました。";
+	public override string DescriptionRemoveLanguage => "ç¿»è¨³æ¸ˆã¿ãƒ‡ãƒ¼ã‚¿ãŒã™ã¹ã¦å‰Šé™¤ã•ã‚Œã¾ã—ãŸã€‚";
 
 	/// <summary>
 	/// Key: "Description.Save"
 	/// The content for save confirmation modal
 	/// English String: "You have unsaved changes. Are you sure you want to leave this page?"
 	/// </summary>
-	public override string DescriptionSave => "保存していない変更があります。このページを終了してよろしいですか？";
+	public override string DescriptionSave => "ä¿å­˜ã—ã¦ã„ãªã„å¤‰æ›´ãŒã‚ã‚Šã¾ã™ã€‚ã“ã®ãƒšãƒ¼ã‚¸ã‚’çµ‚äº†ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Description.UseDefault"
 	/// The hint text in the body content of the model which is used to change default language
 	/// English String: "* If localized app information isn't available in an App Store territory, the information from your default language will be used instead."
 	/// </summary>
-	public override string DescriptionUseDefault => "* App Storeの地域で、翻訳済みアプリ情報が利用できない場合、デフォルト言語の情報が代わりに使われます。";
+	public override string DescriptionUseDefault => "* App Storeã®åœ°åŸŸã§ã€ç¿»è¨³æ¸ˆã¿ã‚¢ãƒ—ãƒªæƒ…å ±ãŒåˆ©ç”¨ã§ããªã„å ´åˆã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã®æƒ…å ±ãŒä»£ã‚ã‚Šã«ä½¿ã‚ã‚Œã¾ã™ã€‚";
 
 	/// <summary>
 	/// Key: "Heading.AddLanguage"
 	/// The title for the modal which is used to add new languages
 	/// English String: "Add translations in other language(s)"
 	/// </summary>
-	public override string HeadingAddLanguage => "別の言語の翻訳を追加";
+	public override string HeadingAddLanguage => "åˆ¥ã®è¨€èªžã®ç¿»è¨³ã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Heading.ChangeDefault"
 	/// The title for the modal which is used to change default language
 	/// English String: "Change the default language?"
 	/// </summary>
-	public override string HeadingChangeDefault => "デフォルト言語を変更しますか？";
+	public override string HeadingChangeDefault => "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã‚’å¤‰æ›´ã—ã¾ã™ã‹ï¼Ÿ";
 
 	/// <summary>
 	/// Key: "Label.Add"
 	/// The label for the button in the modal which is used to add new languages
 	/// English String: "Add"
 	/// </summary>
-	public override string LabelAdd => "追加";
+	public override string LabelAdd => "è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.AddAnotherLanguage"
 	/// The label for the dropdown menu option that is used open up a modal for user to add new languages
 	/// English String: "Add another language"
 	/// </summary>
-	public override string LabelAddAnotherLanguage => "他の言語を追加";
+	public override string LabelAddAnotherLanguage => "ä»–ã®è¨€èªžã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// The label for the button in the modal which is used to dismiss the modal
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "キャンセル";
+	public override string LabelCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Label.Change"
 	/// The label for the button in the modal which is used to change default language
 	/// English String: "Change"
 	/// </summary>
-	public override string LabelChange => "変更";
+	public override string LabelChange => "å¤‰æ›´";
 
 	/// <summary>
 	/// Key: "Label.ChangeAddLanguages"
 	/// The label for the link which is used to open up a modal for user to add new languages
 	/// English String: "Change / add in other language(s)"
 	/// </summary>
-	public override string LabelChangeAddLanguages => "他の言語に変更/他の言語を追加";
+	public override string LabelChangeAddLanguages => "ä»–ã®è¨€èªžã«å¤‰æ›´/ä»–ã®è¨€èªžã‚’è¿½åŠ ";
 
 	/// <summary>
 	/// Key: "Label.ChooseLanguage"
 	/// The label for current language selection dropdown
 	/// English String: "Choose a language to view/edit translations: "
 	/// </summary>
-	public override string LabelChooseLanguage => "翻訳の確認/編集を行う言語を選択: ";
+	public override string LabelChooseLanguage => "ç¿»è¨³ã®ç¢ºèª/ç·¨é›†ã‚’è¡Œã†è¨€èªžã‚’é¸æŠž: ";
 
 	/// <summary>
 	/// Key: "Label.CurrentLanguage"
 	/// The label for the field that displays user's current language
 	/// English String: "Current Language"
 	/// </summary>
-	public override string LabelCurrentLanguage => "現在の言語";
+	public override string LabelCurrentLanguage => "ç¾åœ¨ã®è¨€èªž";
 
 	/// <summary>
 	/// Key: "Label.Default"
 	/// The label for user's default language
 	/// English String: "Default"
 	/// </summary>
-	public override string LabelDefault => "デフォルト";
+	public override string LabelDefault => "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ";
 
 	/// <summary>
 	/// Key: "Label.Delete"
 	/// The label for the button in the modal which is used to delete a language
 	/// English String: "Delete"
 	/// </summary>
-	public override string LabelDelete => "削除";
+	public override string LabelDelete => "å‰Šé™¤";
 
 	/// <summary>
 	/// Key: "Label.Language"
 	/// The label for the language switch dropdown
 	/// English String: "Language"
 	/// </summary>
-	public override string LabelLanguage => "言語";
+	public override string LabelLanguage => "è¨€èªž";
 
 	/// <summary>
 	/// Key: "Label.NotSpecified"
 	/// The label for current language field when user hasn't specified a language yet
 	/// English String: "Not specified"
 	/// </summary>
-	public override string LabelNotSpecified => "指定されていません";
+	public override string LabelNotSpecified => "æŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“";
 
 	/// <summary>
 	/// Key: "Label.SearchLanguages"
 	/// The placeholder for the search bar in the add languages modal
 	/// English String: "Search other languages"
 	/// </summary>
-	public override string LabelSearchLanguages => "他の言語を検索";
+	public override string LabelSearchLanguages => "ä»–ã®è¨€èªžã‚’æ¤œç´¢";
 
 	/// <summary>
 	/// Key: "Label.SetDefaultLanguage"
 	/// The label for the link which is used to open up a modal for user to set a default language for the very first time
 	/// English String: "Set default language"
 	/// </summary>
-	public override string LabelSetDefaultLanguage => "デフォルト言語を設定する";
+	public override string LabelSetDefaultLanguage => "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã‚’è¨­å®šã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Label.Source"
 	/// The label for the soure language in the dropdown
 	/// English String: "Source"
 	/// </summary>
-	public override string LabelSource => "ソース";
+	public override string LabelSource => "ã‚½ãƒ¼ã‚¹";
 
 	/// <summary>
 	/// Key: "Label.ViewGameInfoForLanguage"
 	/// The label for current language selection dropdown
 	/// English String: "View Game Info for language"
 	/// </summary>
-	public override string LabelViewGameInfoForLanguage => "ゲーム情報で言語を表示";
+	public override string LabelViewGameInfoForLanguage => "ã‚²ãƒ¼ãƒ æƒ…å ±ã§è¨€èªžã‚’è¡¨ç¤º";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "エラー: エラーが発生しました。後でもう一度お試しください。";
+	public override string ResponseGeneralError => "ã‚¨ãƒ©ãƒ¼: ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 
 	public TranslationLanguageSwitchResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -195,52 +195,52 @@ internal class TranslationLanguageSwitchResources_ja_jp : TranslationLanguageSwi
 
 	protected override string _GetTemplateForDescriptionChangeDefault()
 	{
-		return "デフォルトの変更";
+		return "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeDefaultLanguage()
 	{
-		return "どの言語をデフォルト言語に設定しますか？";
+		return "ã©ã®è¨€èªžã‚’ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã«è¨­å®šã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionDelete()
 	{
-		return "削除";
+		return "å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForDescriptionLanguageSwitch()
 	{
-		return "デフォルト言語と翻訳言語を指定すると、ユーザーがゲームタイトルと詳細を現地の言語で見れるようにできます。";
+		return "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã¨ç¿»è¨³è¨€èªžã‚’æŒ‡å®šã™ã‚‹ã¨ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒã‚²ãƒ¼ãƒ ã‚¿ã‚¤ãƒˆãƒ«ã¨è©³ç´°ã‚’ç¾åœ°ã®è¨€èªžã§è¦‹ã‚Œã‚‹ã‚ˆã†ã«ã§ãã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionMissingTranslation()
 	{
-		return "欠落している翻訳を追加してください";
+		return "æ¬ è½ã—ã¦ã„ã‚‹ç¿»è¨³ã‚’è¿½åŠ ã—ã¦ãã ã•ã„";
 	}
 
 	protected override string _GetTemplateForDescriptionRemoveLanguage()
 	{
-		return "翻訳済みデータがすべて削除されました。";
+		return "ç¿»è¨³æ¸ˆã¿ãƒ‡ãƒ¼ã‚¿ãŒã™ã¹ã¦å‰Šé™¤ã•ã‚Œã¾ã—ãŸã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionSave()
 	{
-		return "保存していない変更があります。このページを終了してよろしいですか？";
+		return "ä¿å­˜ã—ã¦ã„ãªã„å¤‰æ›´ãŒã‚ã‚Šã¾ã™ã€‚ã“ã®ãƒšãƒ¼ã‚¸ã‚’çµ‚äº†ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForDescriptionUseDefault()
 	{
-		return "* App Storeの地域で、翻訳済みアプリ情報が利用できない場合、デフォルト言語の情報が代わりに使われます。";
+		return "* App Storeã®åœ°åŸŸã§ã€ç¿»è¨³æ¸ˆã¿ã‚¢ãƒ—ãƒªæƒ…å ±ãŒåˆ©ç”¨ã§ããªã„å ´åˆã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã®æƒ…å ±ãŒä»£ã‚ã‚Šã«ä½¿ã‚ã‚Œã¾ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingAddLanguage()
 	{
-		return "別の言語の翻訳を追加";
+		return "åˆ¥ã®è¨€èªžã®ç¿»è¨³ã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForHeadingChangeDefault()
 	{
-		return "デフォルト言語を変更しますか？";
+		return "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã‚’å¤‰æ›´ã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	/// <summary>
@@ -250,82 +250,82 @@ internal class TranslationLanguageSwitchResources_ja_jp : TranslationLanguageSwi
 	/// </summary>
 	public override string HeadingRemoveLanguage(string languageName)
 	{
-		return $"{languageName}の翻訳を削除しますか？";
+		return $"{languageName}ã®ç¿»è¨³ã‚’å‰Šé™¤ã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForHeadingRemoveLanguage()
 	{
-		return "{languageName}の翻訳を削除しますか？";
+		return "{languageName}ã®ç¿»è¨³ã‚’å‰Šé™¤ã—ã¾ã™ã‹ï¼Ÿ";
 	}
 
 	protected override string _GetTemplateForLabelAdd()
 	{
-		return "追加";
+		return "è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelAddAnotherLanguage()
 	{
-		return "他の言語を追加";
+		return "ä»–ã®è¨€èªžã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForLabelChange()
 	{
-		return "変更";
+		return "å¤‰æ›´";
 	}
 
 	protected override string _GetTemplateForLabelChangeAddLanguages()
 	{
-		return "他の言語に変更/他の言語を追加";
+		return "ä»–ã®è¨€èªžã«å¤‰æ›´/ä»–ã®è¨€èªžã‚’è¿½åŠ ";
 	}
 
 	protected override string _GetTemplateForLabelChooseLanguage()
 	{
-		return "翻訳の確認/編集を行う言語を選択: ";
+		return "ç¿»è¨³ã®ç¢ºèª/ç·¨é›†ã‚’è¡Œã†è¨€èªžã‚’é¸æŠž: ";
 	}
 
 	protected override string _GetTemplateForLabelCurrentLanguage()
 	{
-		return "現在の言語";
+		return "ç¾åœ¨ã®è¨€èªž";
 	}
 
 	protected override string _GetTemplateForLabelDefault()
 	{
-		return "デフォルト";
+		return "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ";
 	}
 
 	protected override string _GetTemplateForLabelDelete()
 	{
-		return "削除";
+		return "å‰Šé™¤";
 	}
 
 	protected override string _GetTemplateForLabelLanguage()
 	{
-		return "言語";
+		return "è¨€èªž";
 	}
 
 	protected override string _GetTemplateForLabelNotSpecified()
 	{
-		return "指定されていません";
+		return "æŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“";
 	}
 
 	protected override string _GetTemplateForLabelSearchLanguages()
 	{
-		return "他の言語を検索";
+		return "ä»–ã®è¨€èªžã‚’æ¤œç´¢";
 	}
 
 	protected override string _GetTemplateForLabelSetDefaultLanguage()
 	{
-		return "デフォルト言語を設定する";
+		return "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆè¨€èªžã‚’è¨­å®šã™ã‚‹";
 	}
 
 	protected override string _GetTemplateForLabelSource()
 	{
-		return "ソース";
+		return "ã‚½ãƒ¼ã‚¹";
 	}
 
 	/// <summary>
@@ -335,21 +335,24 @@ internal class TranslationLanguageSwitchResources_ja_jp : TranslationLanguageSwi
 	/// </summary>
 	public override string LabelSourceWithLanguageName(string languageName)
 	{
-		return $"ソース（{languageName}）";
+		return $"ã‚½ãƒ¼ã‚¹ï¼ˆ{languageName}ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelSourceWithLanguageName()
 	{
-		return "ソース（{languageName}）";
+		return "ã‚½ãƒ¼ã‚¹ï¼ˆ{languageName}ï¼‰";
 	}
 
 	protected override string _GetTemplateForLabelViewGameInfoForLanguage()
 	{
-		return "ゲーム情報で言語を表示";
+		return "ã‚²ãƒ¼ãƒ æƒ…å ±ã§è¨€èªžã‚’è¡¨ç¤º";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "エラー: エラーが発生しました。後でもう一度お試しください。";
+		return "ã‚¨ãƒ©ãƒ¼: ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
 	}
+}
+
+
 }

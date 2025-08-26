@@ -1,8 +1,7 @@
-using System;
+﻿using System;
+namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-namespace Roblox.PremiumFeatures.Interfaces;
-
-/// <summary>
 /// AccountAddOnModel interface
 /// </summary>
 public interface IAccountAddOnModel
@@ -61,4 +60,7 @@ public interface IAccountAddOnModel
 	/// Is lifetime
 	/// </summary>
 	bool IsLifetime { get; }
+}
+
+
 }

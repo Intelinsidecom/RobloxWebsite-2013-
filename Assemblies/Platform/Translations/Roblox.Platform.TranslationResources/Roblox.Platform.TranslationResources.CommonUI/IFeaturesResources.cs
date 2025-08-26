@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.CommonUI;
+﻿namespace Roblox.Platform.TranslationResources.CommonUIpublic {
+    interface IFeaturesResources : ITranslationResources
 
-public interface IFeaturesResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.BackToTop"
@@ -36,7 +36,7 @@ public interface IFeaturesResources : ITranslationResources
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	string DescriptionCopyRightMessage { get; }
 
@@ -388,7 +388,7 @@ public interface IFeaturesResources : ITranslationResources
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	string DescriptionCopyRightMessageDynamicYear(string copyrightYear);
 
@@ -403,4 +403,7 @@ public interface IFeaturesResources : ITranslationResources
 	/// English String: "Search \"{phrase}\" in {location}"
 	/// </summary>
 	string LabelsSearchPhrase(string phrase, string location);
+}
+
+
 }

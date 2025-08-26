@@ -1,8 +1,8 @@
 using Roblox.Time;
 
-namespace Roblox.Platform.EventStream.WebEvents;
+namespace Roblox.EventStream.WebEvents {
+    public class MatchUserContactsByPhoneEventArgs : WebEventArgs
 
-public class MatchUserContactsByPhoneEventArgs : WebEventArgs
 {
 	/// <summary>
 	/// The event time <see cref="T:Roblox.Time.UtcInstant" />.
@@ -21,3 +21,12 @@ public class MatchUserContactsByPhoneEventArgs : WebEventArgs
 	/// </summary>
 	public int Matches { get; set; }
 }
+
+
+}
+
+
+
+
+
+

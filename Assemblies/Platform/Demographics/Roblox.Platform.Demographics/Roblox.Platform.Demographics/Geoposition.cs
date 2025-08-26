@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
@@ -6,10 +6,9 @@ using Roblox.Common;
 using Roblox.Configuration;
 using Roblox.Data.Interfaces;
 using Roblox.Demographics.Properties;
+namespace Roblox.Platform.Demographicspublic {
+    class Geoposition : IRobloxEntity<long, GeopositionDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 
-namespace Roblox.Demographics;
-
-public class Geoposition : IRobloxEntity<long, GeopositionDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
 {
 	private GeopositionDAL _EntityDAL;
 
@@ -155,4 +154,7 @@ public class Geoposition : IRobloxEntity<long, GeopositionDAL>, ICacheableObject
 		}
 		return $"Latitude:{latitude:0.0000}_Longitude:{longitude:0.0000}";
 	}
+}
+
+
 }

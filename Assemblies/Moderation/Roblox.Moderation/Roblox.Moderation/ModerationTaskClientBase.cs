@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Roblox.EventLog;
+namespace Roblox.Moderation {
+    /// <summary>
 
-namespace Roblox.Platform.Moderation;
-
-/// <summary>
 /// This is A base class for moderation task clients interacting with the SQS queues. 
 /// Centralizes logic around the initialization of a dictionary set of Sqs clients 
 /// identifiable by their queue identifier. The base class abstracts away the multiple 
@@ -106,4 +105,7 @@ internal abstract class ModerationTaskClientBase<T>
 	{
 		oldClients?.Clear();
 	}
+}
+
+
 }

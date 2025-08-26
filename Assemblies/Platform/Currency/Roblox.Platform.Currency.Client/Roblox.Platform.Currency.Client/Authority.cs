@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Concurrent;
 
-namespace Roblox.Currency.Client
+namespace Roblox.Platform.Currency.Client
 {
     public class CurrencyClientException : Exception
     {

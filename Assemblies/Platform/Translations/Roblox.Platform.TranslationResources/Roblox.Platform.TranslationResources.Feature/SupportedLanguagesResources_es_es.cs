@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides SupportedLanguagesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -17,13 +17,13 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// The tooltip content for Automatic Text Capture toggle button
 	/// English String: "Automatically capture text from game UI while users play"
 	/// </summary>
-	public override string DescriptionAutomaticTextCapture => "Capturar automáticamente el texto de la interfaz de usuario del juego mientras los jugadores juegan";
+	public override string DescriptionAutomaticTextCapture => "Capturar automÃ¡ticamente el texto de la interfaz de usuario del juego mientras los jugadores juegan";
 
 	/// <summary>
 	/// Key: "Description.ClearTableWarning"
 	/// English String: "All entries that have been automatically captured and have no translations will be cleared from your table. Note: All applicable text will be recaptured automatically."
 	/// </summary>
-	public override string DescriptionClearTableWarning => "Todas las entradas que han sido capturadas automáticamente y no están traducidas se borrarán de tu tabla. Nota: Todo el texto disponible se volverá a capturar automáticamente.";
+	public override string DescriptionClearTableWarning => "Todas las entradas que han sido capturadas automÃ¡ticamente y no estÃ¡n traducidas se borrarÃ¡n de tu tabla. Nota: Todo el texto disponible se volverÃ¡ a capturar automÃ¡ticamente.";
 
 	/// <summary>
 	/// Key: "Description.UseTranslatedContent"
@@ -37,7 +37,7 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// modal heading
 	/// English String: "Are you sure you want to clear entries?"
 	/// </summary>
-	public override string HeadingAreYouSureToClear => "¿Seguro que quieres borrar estas entradas?";
+	public override string HeadingAreYouSureToClear => "Â¿Seguro que quieres borrar estas entradas?";
 
 	/// <summary>
 	/// Key: "Heading.InGameContentTranslations"
@@ -51,27 +51,27 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// The label for toggle button that is used to enable/disable automatic text scraping for a game
 	/// English String: "Automatic Text Capture: "
 	/// </summary>
-	public override string LabelAutomaticTextCapture => "Captura automática del texto: ";
+	public override string LabelAutomaticTextCapture => "Captura automÃ¡tica del texto: ";
 
 	/// <summary>
 	/// Key: "Label.ClearTableEntries"
 	/// English String: "Clear untranslated auto-captured strings"
 	/// </summary>
-	public override string LabelClearTableEntries => "Borrar las cadenas sin traducción capturadas automáticamente";
+	public override string LabelClearTableEntries => "Borrar las cadenas sin traducciÃ³n capturadas automÃ¡ticamente";
 
 	/// <summary>
 	/// Key: "Label.CrowdsourceEnabled"
 	/// Table header for the column which will display the toggle button that can by used by the user to turn on/off crowdsource translation for each language
 	/// English String: "Crowdsource Enabled"
 	/// </summary>
-	public override string LabelCrowdsourceEnabled => "Colaboración masiva activada";
+	public override string LabelCrowdsourceEnabled => "ColaboraciÃ³n masiva activada";
 
 	/// <summary>
 	/// Key: "Label.EnableAutoUITextCapture"
 	/// The label for the checkbox used to turn on/off automatic UI text captrue feature
 	/// English String: "Enable Auto UI Text Capture"
 	/// </summary>
-	public override string LabelEnableAutoUITextCapture => "Activar captura de texto automática de la interfaz de usuario";
+	public override string LabelEnableAutoUITextCapture => "Activar captura de texto automÃ¡tica de la interfaz de usuario";
 
 	/// <summary>
 	/// Key: "Label.InProgress"
@@ -108,7 +108,7 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// Text for the link that user can click to display more languages in the table
 	/// English String: "Show more languages..."
 	/// </summary>
-	public override string LabelShowMoreLanguages => "Mostrar más idiomas...";
+	public override string LabelShowMoreLanguages => "Mostrar mÃ¡s idiomas...";
 
 	/// <summary>
 	/// Key: "Label.SourceLanguage"
@@ -156,7 +156,7 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// The text of the system feedback which is displayed when the request to persist a change to a status of a language returns an error
 	/// English String: "An error has occurred, please try again later!"
 	/// </summary>
-	public override string MessageUpdateFail => "Se ha producido un error. Inténtalo de nuevo más tarde.";
+	public override string MessageUpdateFail => "Se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Message.UpdateSuccess"
@@ -183,14 +183,14 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "Error: se ha producido un error. Inténtalo de nuevo más tarde.";
+	public override string ResponseGeneralError => "Error: se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 
 	/// <summary>
 	/// Key: "Response.SaveConfiguration"
 	/// The feedback message for user when a configuration setting change cannot be saved
 	/// English String: "Error: Could not change setting. Please try again."
 	/// </summary>
-	public override string ResponseSaveConfiguration => "Error: no se ha podido cambiar la configuración. Inténtalo de nuevo.";
+	public override string ResponseSaveConfiguration => "Error: no se ha podido cambiar la configuraciÃ³n. IntÃ©ntalo de nuevo.";
 
 	public SupportedLanguagesResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -204,12 +204,12 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 
 	protected override string _GetTemplateForDescriptionAutomaticTextCapture()
 	{
-		return "Capturar automáticamente el texto de la interfaz de usuario del juego mientras los jugadores juegan";
+		return "Capturar automÃ¡ticamente el texto de la interfaz de usuario del juego mientras los jugadores juegan";
 	}
 
 	protected override string _GetTemplateForDescriptionClearTableWarning()
 	{
-		return "Todas las entradas que han sido capturadas automáticamente y no están traducidas se borrarán de tu tabla. Nota: Todo el texto disponible se volverá a capturar automáticamente.";
+		return "Todas las entradas que han sido capturadas automÃ¡ticamente y no estÃ¡n traducidas se borrarÃ¡n de tu tabla. Nota: Todo el texto disponible se volverÃ¡ a capturar automÃ¡ticamente.";
 	}
 
 	/// <summary>
@@ -219,12 +219,12 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// </summary>
 	public override string DescriptionCrowdsourceEnabled(string lineBreak)
 	{
-		return $"Activada: la colaboración masiva está activada (los traductores pueden ver y traducir las cadenas del juego){lineBreak}Desactivada: la colaboración masiva está desactivada (los traductores no pueden ver ni traducir las cadenas del juego)";
+		return $"Activada: la colaboraciÃ³n masiva estÃ¡ activada (los traductores pueden ver y traducir las cadenas del juego){lineBreak}Desactivada: la colaboraciÃ³n masiva estÃ¡ desactivada (los traductores no pueden ver ni traducir las cadenas del juego)";
 	}
 
 	protected override string _GetTemplateForDescriptionCrowdsourceEnabled()
 	{
-		return "Activada: la colaboración masiva está activada (los traductores pueden ver y traducir las cadenas del juego){lineBreak}Desactivada: la colaboración masiva está desactivada (los traductores no pueden ver ni traducir las cadenas del juego)";
+		return "Activada: la colaboraciÃ³n masiva estÃ¡ activada (los traductores pueden ver y traducir las cadenas del juego){lineBreak}Desactivada: la colaboraciÃ³n masiva estÃ¡ desactivada (los traductores no pueden ver ni traducir las cadenas del juego)";
 	}
 
 	/// <summary>
@@ -249,12 +249,12 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// </summary>
 	public override string DescriptionSupportedStatus(string lineBreak)
 	{
-		return $"El estado de compatibilidad muestra si el idioma figura en la lista de la página de detalles del juego.{lineBreak}Compatible - incluido en la lista{lineBreak}En curso - incluido en la lista como beta{lineBreak}No compatible - no incluido en la lista";
+		return $"El estado de compatibilidad muestra si el idioma figura en la lista de la pÃ¡gina de detalles del juego.{lineBreak}Compatible - incluido en la lista{lineBreak}En curso - incluido en la lista como beta{lineBreak}No compatible - no incluido en la lista";
 	}
 
 	protected override string _GetTemplateForDescriptionSupportedStatus()
 	{
-		return "El estado de compatibilidad muestra si el idioma figura en la lista de la página de detalles del juego.{lineBreak}Compatible - incluido en la lista{lineBreak}En curso - incluido en la lista como beta{lineBreak}No compatible - no incluido en la lista";
+		return "El estado de compatibilidad muestra si el idioma figura en la lista de la pÃ¡gina de detalles del juego.{lineBreak}Compatible - incluido en la lista{lineBreak}En curso - incluido en la lista como beta{lineBreak}No compatible - no incluido en la lista";
 	}
 
 	protected override string _GetTemplateForDescriptionUseTranslatedContent()
@@ -264,7 +264,7 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 
 	protected override string _GetTemplateForHeadingAreYouSureToClear()
 	{
-		return "¿Seguro que quieres borrar estas entradas?";
+		return "Â¿Seguro que quieres borrar estas entradas?";
 	}
 
 	protected override string _GetTemplateForHeadingInGameContentTranslations()
@@ -274,22 +274,22 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 
 	protected override string _GetTemplateForLabelAutomaticTextCapture()
 	{
-		return "Captura automática del texto: ";
+		return "Captura automÃ¡tica del texto: ";
 	}
 
 	protected override string _GetTemplateForLabelClearTableEntries()
 	{
-		return "Borrar las cadenas sin traducción capturadas automáticamente";
+		return "Borrar las cadenas sin traducciÃ³n capturadas automÃ¡ticamente";
 	}
 
 	protected override string _GetTemplateForLabelCrowdsourceEnabled()
 	{
-		return "Colaboración masiva activada";
+		return "ColaboraciÃ³n masiva activada";
 	}
 
 	protected override string _GetTemplateForLabelEnableAutoUITextCapture()
 	{
-		return "Activar captura de texto automática de la interfaz de usuario";
+		return "Activar captura de texto automÃ¡tica de la interfaz de usuario";
 	}
 
 	protected override string _GetTemplateForLabelInProgress()
@@ -314,12 +314,12 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 	/// </summary>
 	public override string LabelLocalizationStatus(string lineBreak, string stringCount)
 	{
-		return $"Estado de la localización{lineBreak}({stringCount} cadenas)";
+		return $"Estado de la localizaciÃ³n{lineBreak}({stringCount} cadenas)";
 	}
 
 	protected override string _GetTemplateForLabelLocalizationStatus()
 	{
-		return "Estado de la localización{lineBreak}({stringCount} cadenas)";
+		return "Estado de la localizaciÃ³n{lineBreak}({stringCount} cadenas)";
 	}
 
 	protected override string _GetTemplateForLabelNotSpecified()
@@ -334,7 +334,7 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 
 	protected override string _GetTemplateForLabelShowMoreLanguages()
 	{
-		return "Mostrar más idiomas...";
+		return "Mostrar mÃ¡s idiomas...";
 	}
 
 	protected override string _GetTemplateForLabelSourceLanguage()
@@ -369,7 +369,7 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 
 	protected override string _GetTemplateForMessageUpdateFail()
 	{
-		return "Se ha producido un error. Inténtalo de nuevo más tarde.";
+		return "Se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForMessageUpdateSuccess()
@@ -389,11 +389,14 @@ internal class SupportedLanguagesResources_es_es : SupportedLanguagesResources_e
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "Error: se ha producido un error. Inténtalo de nuevo más tarde.";
+		return "Error: se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde.";
 	}
 
 	protected override string _GetTemplateForResponseSaveConfiguration()
 	{
-		return "Error: no se ha podido cambiar la configuración. Inténtalo de nuevo.";
+		return "Error: no se ha podido cambiar la configuraciÃ³n. IntÃ©ntalo de nuevo.";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class SocialMetaTagsResources_en_us : TranslationResourcesBase, ISocialMetaTagsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class SocialMetaTagsResources_en_us : TranslationResourcesBase, ISocialMetaTagsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -119,31 +118,31 @@ internal class SocialMetaTagsResources_en_us : TranslationResourcesBase, ISocial
 	/// <summary>
 	/// Key: "Description.FavoritesPage"
 	/// social meta tag
-	/// English String: "Visit {userName}’s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
+	/// English String: "Visit {userName}â€™s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
 	/// </summary>
 	public virtual string DescriptionFavoritesPage(string userName)
 	{
-		return $"Visit {userName}’s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!";
+		return $"Visit {userName}â€™s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!";
 	}
 
 	protected virtual string _GetTemplateForDescriptionFavoritesPage()
 	{
-		return "Visit {userName}’s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!";
+		return "Visit {userName}â€™s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!";
 	}
 
 	/// <summary>
 	/// Key: "Description.GamePage"
 	/// The game description which shows on social media, when shared
-	/// English String: "Check out {gameName}. It’s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
+	/// English String: "Check out {gameName}. Itâ€™s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
 	/// </summary>
 	public virtual string DescriptionGamePage(string gameName, string gameDescription)
 	{
-		return $"Check out {gameName}. It’s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}";
+		return $"Check out {gameName}. Itâ€™s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}";
 	}
 
 	protected virtual string _GetTemplateForDescriptionGamePage()
 	{
-		return "Check out {gameName}. It’s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}";
+		return "Check out {gameName}. Itâ€™s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}";
 	}
 
 	protected virtual string _GetTemplateForDescriptionGamesPage()
@@ -154,16 +153,16 @@ internal class SocialMetaTagsResources_en_us : TranslationResourcesBase, ISocial
 	/// <summary>
 	/// Key: "Description.InventoryPage"
 	/// social meta tag
-	/// English String: "Visit {userName1}’s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}’s collection of hats, shirts, gear, and more."
+	/// English String: "Visit {userName1}â€™s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}â€™s collection of hats, shirts, gear, and more."
 	/// </summary>
 	public virtual string DescriptionInventoryPage(string userName1, string userName2)
 	{
-		return $"Visit {userName1}’s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}’s collection of hats, shirts, gear, and more.";
+		return $"Visit {userName1}â€™s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}â€™s collection of hats, shirts, gear, and more.";
 	}
 
 	protected virtual string _GetTemplateForDescriptionInventoryPage()
 	{
-		return "Visit {userName1}’s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}’s collection of hats, shirts, gear, and more.";
+		return "Visit {userName1}â€™s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}â€™s collection of hats, shirts, gear, and more.";
 	}
 
 	protected virtual string _GetTemplateForDescriptionRoblox()
@@ -215,4 +214,7 @@ internal class SocialMetaTagsResources_en_us : TranslationResourcesBase, ISocial
 	{
 		return "{userName}'s Profile";
 	}
+}
+
+
 }

@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Entities;
+namespace Roblox.Platform.PremiumFeaturespublic {
+    interface IGrantedItemListActivationTaskEntity : IUpdateableEntity<long>, IEntity<long>
 
-namespace Roblox.PremiumFeatures;
-
-public interface IGrantedItemListActivationTaskEntity : IUpdateableEntity<long>, IEntity<long>
 {
 	byte GrantedItemTypeId { get; set; }
 
@@ -14,4 +13,7 @@ public interface IGrantedItemListActivationTaskEntity : IUpdateableEntity<long>,
 	DateTime? Completed { get; set; }
 
 	DateTime? LeaseExpiration { get; set; }
+}
+
+
 }

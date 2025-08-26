@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides ServerListResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -35,7 +35,7 @@ internal class ServerListResources_pt_br : ServerListResources_en_us, IServerLis
 	/// Key: "Heading.ServersMyFriendsAreIn"
 	/// English String: "Servers My Friends Are In"
 	/// </summary>
-	public override string HeadingServersMyFriendsAreIn => "Servidores onde meus amigos estão";
+	public override string HeadingServersMyFriendsAreIn => "Servidores onde meus amigos estÃ£o";
 
 	/// <summary>
 	/// Key: "Label.Inactive"
@@ -47,7 +47,7 @@ internal class ServerListResources_pt_br : ServerListResources_en_us, IServerLis
 	/// Key: "Label.InsufficientFunds"
 	/// English String: "This Server has been deactivated. We were not able to process the recurring payment due to insufficient funds in your account."
 	/// </summary>
-	public override string LabelInsufficientFunds => "Este servidor foi desativado. Não conseguimos processar o pagamento recorrente devido à falta de fundos na sua conta.";
+	public override string LabelInsufficientFunds => "Este servidor foi desativado. NÃ£o conseguimos processar o pagamento recorrente devido Ã  falta de fundos na sua conta.";
 
 	/// <summary>
 	/// Key: "Label.MyVipServer"
@@ -67,7 +67,7 @@ internal class ServerListResources_pt_br : ServerListResources_en_us, IServerLis
 	/// No VIP Server Instances Found.
 	/// English String: "No VIP Server Instances Found."
 	/// </summary>
-	public override string LabelNoVipServers => "Nenhuma instância de servidor VIP encontrada.";
+	public override string LabelNoVipServers => "Nenhuma instÃ¢ncia de servidor VIP encontrada.";
 
 	/// <summary>
 	/// Key: "Label.PaymentCancelled"
@@ -134,7 +134,7 @@ internal class ServerListResources_pt_br : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForHeadingServersMyFriendsAreIn()
 	{
-		return "Servidores onde meus amigos estão";
+		return "Servidores onde meus amigos estÃ£o";
 	}
 
 	/// <summary>
@@ -143,12 +143,12 @@ internal class ServerListResources_pt_br : ServerListResources_en_us, IServerLis
 	/// </summary>
 	public override string LabelCurrentPlayerCount(string currentPlayers, string maximumAllowedPlayers)
 	{
-		return $"{currentPlayers} de um máximo de {maximumAllowedPlayers} jogadores";
+		return $"{currentPlayers} de um mÃ¡ximo de {maximumAllowedPlayers} jogadores";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPlayerCount()
 	{
-		return "{currentPlayers} de um máximo de {maximumAllowedPlayers} jogadores";
+		return "{currentPlayers} de um mÃ¡ximo de {maximumAllowedPlayers} jogadores";
 	}
 
 	protected override string _GetTemplateForLabelInactive()
@@ -158,7 +158,7 @@ internal class ServerListResources_pt_br : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForLabelInsufficientFunds()
 	{
-		return "Este servidor foi desativado. Não conseguimos processar o pagamento recorrente devido à falta de fundos na sua conta.";
+		return "Este servidor foi desativado. NÃ£o conseguimos processar o pagamento recorrente devido Ã  falta de fundos na sua conta.";
 	}
 
 	protected override string _GetTemplateForLabelMyVipServer()
@@ -173,7 +173,7 @@ internal class ServerListResources_pt_br : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForLabelNoVipServers()
 	{
-		return "Nenhuma instância de servidor VIP encontrada.";
+		return "Nenhuma instÃ¢ncia de servidor VIP encontrada.";
 	}
 
 	protected override string _GetTemplateForLabelPaymentCancelled()
@@ -205,4 +205,7 @@ internal class ServerListResources_pt_br : ServerListResources_en_us, IServerLis
 	{
 		return "Desacelerar jogo";
 	}
+}
+
+
 }

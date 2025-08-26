@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IBuildersClubPanelResources : ITranslationResources
 
-public interface IBuildersClubPanelResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.BuyRobux"
@@ -40,7 +40,7 @@ public interface IBuildersClubPanelResources : ITranslationResources
 	/// <summary>
 	/// Key: "Description.BuyRobux"
 	/// description text
-	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. You’ll need Robux to make it all happen. What are you waiting for?"
+	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. Youâ€™ll need Robux to make it all happen. What are you waiting for?"
 	/// </summary>
 	string DescriptionBuyRobux { get; }
 
@@ -139,4 +139,7 @@ public interface IBuildersClubPanelResources : ITranslationResources
 	/// English String: "Credit Balance: {amount}"
 	/// </summary>
 	string LabelCreditBalance(string amount);
+}
+
+
 }

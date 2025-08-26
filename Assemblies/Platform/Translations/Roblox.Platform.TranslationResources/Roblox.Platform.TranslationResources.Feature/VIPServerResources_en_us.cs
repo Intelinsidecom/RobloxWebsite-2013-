@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class VIPServerResources_en_us : TranslationResourcesBase, IVIPServerResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class VIPServerResources_en_us : TranslationResourcesBase, IVIPServerResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -615,4 +614,7 @@ internal class VIPServerResources_en_us : TranslationResourcesBase, IVIPServerRe
 	{
 		return "Your Clan";
 	}
+}
+
+
 }

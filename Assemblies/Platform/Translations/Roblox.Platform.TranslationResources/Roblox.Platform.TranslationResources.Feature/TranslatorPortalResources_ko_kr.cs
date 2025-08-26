@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TranslatorPortalResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,107 +10,107 @@ internal class TranslatorPortalResources_ko_kr : TranslatorPortalResources_en_us
 	/// Key: "Action.Reports"
 	/// English String: "Reports"
 	/// </summary>
-	public override string ActionReports => "신고";
+	public override string ActionReports => "ì‹ ê³ ";
 
 	/// <summary>
 	/// Key: "Action.Translate"
 	/// button text
 	/// English String: "Translate"
 	/// </summary>
-	public override string ActionTranslate => "번역하기";
+	public override string ActionTranslate => "ë²ˆì—­í•˜ê¸°";
 
 	/// <summary>
 	/// Key: "Heading.DownloadTranslationContributionReport"
 	/// modal window heading
 	/// English String: "Download Translation Contribution Report"
 	/// </summary>
-	public override string HeadingDownloadTranslationContributionReport => "번역 기여도 보고서 다운로드";
+	public override string HeadingDownloadTranslationContributionReport => "ë²ˆì—­ ê¸°ì—¬ë„ ë³´ê³ ì„œ ë‹¤ìš´ë¡œë“œ";
 
 	/// <summary>
 	/// Key: "Heading.TranslatorPortal"
 	/// English String: "Translator Portal"
 	/// </summary>
-	public override string HeadingTranslatorPortal => "번역자 포털";
+	public override string HeadingTranslatorPortal => "ë²ˆì—­ìž í¬í„¸";
 
 	/// <summary>
 	/// Key: "Label.Creator"
 	/// English String: "Creator"
 	/// </summary>
-	public override string LabelCreator => "개발자";
+	public override string LabelCreator => "ê°œë°œìž";
 
 	/// <summary>
 	/// Key: "Label.GameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelGameName => "게임 이름";
+	public override string LabelGameName => "ê²Œìž„ ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.Games"
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelGames => "게임";
+	public override string LabelGames => "ê²Œìž„";
 
 	/// <summary>
 	/// Key: "Label.OrderBy"
 	/// English String: "Order By"
 	/// </summary>
-	public override string LabelOrderBy => "정렬 기준";
+	public override string LabelOrderBy => "ì •ë ¬ ê¸°ì¤€";
 
 	/// <summary>
 	/// Key: "Label.OrderByAlphabetical"
 	/// English String: "Alphabetical"
 	/// </summary>
-	public override string LabelOrderByAlphabetical => "알파벳 순";
+	public override string LabelOrderByAlphabetical => "ì•ŒíŒŒë²³ ìˆœ";
 
 	/// <summary>
 	/// Key: "Label.OrderByFavorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelOrderByFavorites => "즐겨찾기";
+	public override string LabelOrderByFavorites => "ì¦ê²¨ì°¾ê¸°";
 
 	/// <summary>
 	/// Key: "Label.OrderByGameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelOrderByGameName => "게임 이름";
+	public override string LabelOrderByGameName => "ê²Œìž„ ì´ë¦„";
 
 	/// <summary>
 	/// Key: "Label.OrderByProgress"
 	/// English String: "Progress"
 	/// </summary>
-	public override string LabelOrderByProgress => "진행";
+	public override string LabelOrderByProgress => "ì§„í–‰";
 
 	/// <summary>
 	/// Key: "Label.OrderByProgressAsc"
 	/// translation percent progress of a game
 	/// English String: "Progress (Low to High)"
 	/// </summary>
-	public override string LabelOrderByProgressAsc => "낮은 진행률 순";
+	public override string LabelOrderByProgressAsc => "ë‚®ì€ ì§„í–‰ë¥  ìˆœ";
 
 	/// <summary>
 	/// Key: "Label.OrderByProgressDesc"
 	/// translation percent progress of a game
 	/// English String: "Progress (High to Low)"
 	/// </summary>
-	public override string LabelOrderByProgressDesc => "높은 진행률 순";
+	public override string LabelOrderByProgressDesc => "ë†’ì€ ì§„í–‰ë¥  ìˆœ";
 
 	/// <summary>
 	/// Key: "Label.Search"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearch => "검색";
+	public override string LabelSearch => "ê²€ìƒ‰";
 
 	/// <summary>
 	/// Key: "Label.SortBy"
 	/// English String: "Sort By"
 	/// </summary>
-	public override string LabelSortBy => "정렬 기준";
+	public override string LabelSortBy => "ì •ë ¬ ê¸°ì¤€";
 
 	/// <summary>
 	/// Key: "Label.Translator"
 	/// English String: "Translator"
 	/// </summary>
-	public override string LabelTranslator => "번역자";
+	public override string LabelTranslator => "ë²ˆì—­ìž";
 
 	public TranslatorPortalResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -119,27 +119,27 @@ internal class TranslatorPortalResources_ko_kr : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForActionReports()
 	{
-		return "신고";
+		return "ì‹ ê³ ";
 	}
 
 	protected override string _GetTemplateForActionTranslate()
 	{
-		return "번역하기";
+		return "ë²ˆì—­í•˜ê¸°";
 	}
 
 	protected override string _GetTemplateForHeadingDownloadTranslationContributionReport()
 	{
-		return "번역 기여도 보고서 다운로드";
+		return "ë²ˆì—­ ê¸°ì—¬ë„ ë³´ê³ ì„œ ë‹¤ìš´ë¡œë“œ";
 	}
 
 	protected override string _GetTemplateForHeadingTranslatorPortal()
 	{
-		return "번역자 포털";
+		return "ë²ˆì—­ìž í¬í„¸";
 	}
 
 	protected override string _GetTemplateForLabelCreator()
 	{
-		return "개발자";
+		return "ê°œë°œìž";
 	}
 
 	/// <summary>
@@ -148,22 +148,22 @@ internal class TranslatorPortalResources_ko_kr : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelGameCreator(string linkStart, string creatorName, string linkEnd)
 	{
-		return $"제작: {linkStart}{creatorName}{linkEnd}";
+		return $"ì œìž‘: {linkStart}{creatorName}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelGameCreator()
 	{
-		return "제작: {linkStart}{creatorName}{linkEnd}";
+		return "ì œìž‘: {linkStart}{creatorName}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelGameName()
 	{
-		return "게임 이름";
+		return "ê²Œìž„ ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelGames()
 	{
-		return "게임";
+		return "ê²Œìž„";
 	}
 
 	/// <summary>
@@ -173,12 +173,12 @@ internal class TranslatorPortalResources_ko_kr : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelGroupName(string groupName)
 	{
-		return $"그룹: {groupName}";
+		return $"ê·¸ë£¹: {groupName}";
 	}
 
 	protected override string _GetTemplateForLabelGroupName()
 	{
-		return "그룹: {groupName}";
+		return "ê·¸ë£¹: {groupName}";
 	}
 
 	/// <summary>
@@ -201,57 +201,57 @@ internal class TranslatorPortalResources_ko_kr : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelLanguageNotSupportedByGame(string languageName)
 	{
-		return $"이 게임은 {languageName}를 지원하지 않아요";
+		return $"ì´ ê²Œìž„ì€ {languageName}ë¥¼ ì§€ì›í•˜ì§€ ì•Šì•„ìš”";
 	}
 
 	protected override string _GetTemplateForLabelLanguageNotSupportedByGame()
 	{
-		return "이 게임은 {languageName}를 지원하지 않아요";
+		return "ì´ ê²Œìž„ì€ {languageName}ë¥¼ ì§€ì›í•˜ì§€ ì•Šì•„ìš”";
 	}
 
 	protected override string _GetTemplateForLabelOrderBy()
 	{
-		return "정렬 기준";
+		return "ì •ë ¬ ê¸°ì¤€";
 	}
 
 	protected override string _GetTemplateForLabelOrderByAlphabetical()
 	{
-		return "알파벳 순";
+		return "ì•ŒíŒŒë²³ ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelOrderByFavorites()
 	{
-		return "즐겨찾기";
+		return "ì¦ê²¨ì°¾ê¸°";
 	}
 
 	protected override string _GetTemplateForLabelOrderByGameName()
 	{
-		return "게임 이름";
+		return "ê²Œìž„ ì´ë¦„";
 	}
 
 	protected override string _GetTemplateForLabelOrderByProgress()
 	{
-		return "진행";
+		return "ì§„í–‰";
 	}
 
 	protected override string _GetTemplateForLabelOrderByProgressAsc()
 	{
-		return "낮은 진행률 순";
+		return "ë‚®ì€ ì§„í–‰ë¥  ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelOrderByProgressDesc()
 	{
-		return "높은 진행률 순";
+		return "ë†’ì€ ì§„í–‰ë¥  ìˆœ";
 	}
 
 	protected override string _GetTemplateForLabelSearch()
 	{
-		return "검색";
+		return "ê²€ìƒ‰";
 	}
 
 	protected override string _GetTemplateForLabelSortBy()
 	{
-		return "정렬 기준";
+		return "ì •ë ¬ ê¸°ì¤€";
 	}
 
 	/// <summary>
@@ -260,16 +260,19 @@ internal class TranslatorPortalResources_ko_kr : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelTranslationProgress(string translatedEntriesCount, string totalEntriesCount)
 	{
-		return $"번역 진행 상황 ({translatedEntriesCount}/{totalEntriesCount})";
+		return $"ë²ˆì—­ ì§„í–‰ ìƒí™© ({translatedEntriesCount}/{totalEntriesCount})";
 	}
 
 	protected override string _GetTemplateForLabelTranslationProgress()
 	{
-		return "번역 진행 상황 ({translatedEntriesCount}/{totalEntriesCount})";
+		return "ë²ˆì—­ ì§„í–‰ ìƒí™© ({translatedEntriesCount}/{totalEntriesCount})";
 	}
 
 	protected override string _GetTemplateForLabelTranslator()
 	{
-		return "번역자";
+		return "ë²ˆì—­ìž";
 	}
+}
+
+
 }

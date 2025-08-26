@@ -147,6 +147,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Roblox.EventLog": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
@@ -161,6 +162,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
+          "Roblox.EventLog": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {

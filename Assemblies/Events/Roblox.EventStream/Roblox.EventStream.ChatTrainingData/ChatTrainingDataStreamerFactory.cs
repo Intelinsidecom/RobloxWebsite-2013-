@@ -1,11 +1,10 @@
 using System;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-using Roblox.Platform.EventStream.Properties;
+using Roblox.EventStream.Properties;
+namespace Roblox.EventStream.ChatTrainingData {
+    /// <summary>
 
-namespace Roblox.Platform.EventStream.ChatTrainingData;
-
-/// <summary>
 /// A class producing <see cref="T:Roblox.Platform.EventStream.IChatTrainingDataStreamer" />
 /// </summary>
 public class ChatTrainingDataStreamerFactory : IChatTrainingDataStreamerFactory
@@ -33,4 +32,7 @@ public class ChatTrainingDataStreamerFactory : IChatTrainingDataStreamerFactory
 		AmazonKinesisFirehoseChatTrainingDataSender gdprDataSender = new AmazonKinesisFirehoseChatTrainingDataSender(logger, AmazonKinesisFirehoseGDPRStreamName, AmazonKinesisFirehoseMaxChatTrainingDataMessagesPerBatchRequest);
 		return new ChatTrainingDataStreamer(counterRegistry, logger, unitedStatesDataSender, gdprDataSender);
 	}
+}
+
+
 }

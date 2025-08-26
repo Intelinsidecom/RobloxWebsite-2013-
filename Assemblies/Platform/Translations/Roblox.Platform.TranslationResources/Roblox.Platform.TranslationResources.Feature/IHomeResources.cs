@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
+    interface IHomeResources : ITranslationResources
 
-public interface IHomeResources : ITranslationResources
 {
 	/// <summary>
 	/// Key: "Action.BackToTop"
@@ -145,4 +145,7 @@ public interface IHomeResources : ITranslationResources
 	/// English String: "Hello, {username}!"
 	/// </summary>
 	string LabelGreeting(string username);
+}
+
+
 }

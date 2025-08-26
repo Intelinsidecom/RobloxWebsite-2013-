@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using StackExchange.Redis;
+namespace Roblox.Platform.RealTimeNotificationsinternal {
+    class RedisSubscriptionResult : ISubscriptionResult
 
-namespace Roblox.RealTimeNotifications;
-
-internal class RedisSubscriptionResult : ISubscriptionResult
 {
 	private readonly string _ChannelName;
 
@@ -23,4 +22,7 @@ internal class RedisSubscriptionResult : ISubscriptionResult
 		_ServerId = serverId;
 		_CallbackAction = callbackAction;
 	}
+}
+
+
 }

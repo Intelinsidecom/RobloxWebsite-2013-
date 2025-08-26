@@ -1,8 +1,7 @@
 using System;
+namespace Roblox.EventStream {
+    class InvalidEventTargetException : Exception
 
-namespace Roblox.Platform.EventStream;
-
-public class InvalidEventTargetException : Exception
 {
 	private string _Message;
 
@@ -10,4 +9,7 @@ public class InvalidEventTargetException : Exception
 	{
 		_Message = message;
 	}
+}
+
+
 }

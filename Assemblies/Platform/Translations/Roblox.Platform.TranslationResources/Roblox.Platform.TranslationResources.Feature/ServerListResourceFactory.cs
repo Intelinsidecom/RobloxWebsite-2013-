@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class ServerListResourceFactory
 
-internal static class ServerListResourceFactory
 {
 	public const string FullNamespace = "Feature.ServerList";
 
@@ -21,4 +21,7 @@ internal static class ServerListResourceFactory
 			_ => new ServerListResources_en_us(state), 
 		};
 	}
+}
+
+
 }

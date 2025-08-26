@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides RedeemToyResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,133 +11,133 @@ internal class RedeemToyResources_ko_kr : RedeemToyResources_en_us, IRedeemToyRe
 	/// button text
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "취소";
+	public override string ActionCancel => "ì·¨ì†Œ";
 
 	/// <summary>
 	/// Key: "Action.CantFindCode"
 	/// link text
 	/// English String: "Can't find your code?"
 	/// </summary>
-	public override string ActionCantFindCode => "코드를 찾을 수 없나요?";
+	public override string ActionCantFindCode => "ì½”ë“œë¥¼ ì°¾ì„ ìˆ˜ ì—†ë‚˜ìš”?";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// button text
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "닫기";
+	public override string ActionClose => "ë‹«ê¸°";
 
 	/// <summary>
 	/// Key: "Action.ContinueVideo"
 	/// button text
 	/// English String: "Continue to Video"
 	/// </summary>
-	public override string ActionContinueVideo => "비디오 계속 보기";
+	public override string ActionContinueVideo => "ë¹„ë””ì˜¤ ê³„ì† ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Action.HavePromoCode"
 	/// link text
 	/// English String: "Have a promo code? Click here"
 	/// </summary>
-	public override string ActionHavePromoCode => "프로모션 코드가 있으신가요? 여기를 클릭";
+	public override string ActionHavePromoCode => "í”„ë¡œëª¨ì…˜ ì½”ë“œê°€ ìžˆìœ¼ì‹ ê°€ìš”? ì—¬ê¸°ë¥¼ í´ë¦­";
 
 	/// <summary>
 	/// Key: "Action.HowToRedeem"
 	/// link text
 	/// English String: "How to redeem"
 	/// </summary>
-	public override string ActionHowToRedeem => "사용 방법";
+	public override string ActionHowToRedeem => "ì‚¬ìš© ë°©ë²•";
 
 	/// <summary>
 	/// Key: "Action.Login"
 	/// button text
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "로그인";
+	public override string ActionLogin => "ë¡œê·¸ì¸";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
 	/// button text
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "사용";
+	public override string ActionRedeem => "ì‚¬ìš©";
 
 	/// <summary>
 	/// Key: "Action.RedeemAnotherItem"
 	/// button text
 	/// English String: "Redeem Another Item"
 	/// </summary>
-	public override string ActionRedeemAnotherItem => "다른 아이템 사용";
+	public override string ActionRedeemAnotherItem => "ë‹¤ë¥¸ ì•„ì´í…œ ì‚¬ìš©";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
 	/// button text
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string ActionSignUp => "회원가입";
+	public override string ActionSignUp => "íšŒì›ê°€ìž…";
 
 	/// <summary>
 	/// Key: "Action.ViewItem"
 	/// button text
 	/// English String: "View Item"
 	/// </summary>
-	public override string ActionViewItem => "아이템 보기";
+	public override string ActionViewItem => "ì•„ì´í…œ ë³´ê¸°";
 
 	/// <summary>
 	/// Key: "Description.LeavingRoblox"
 	/// modal description text warning user that they are leaving Roblox main site
 	/// English String: "You are about to leave Roblox to view a video on Youtube. Youtube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionLeavingRoblox => "Roblox를 나가 YouTube 비디오를 시청하려 하시는군요. YouTube는 Roblox.com과는 별개의 콘텐츠로 별도의 개인정보 처리방침이 적용됩니다.";
+	public override string DescriptionLeavingRoblox => "Robloxë¥¼ ë‚˜ê°€ YouTube ë¹„ë””ì˜¤ë¥¼ ì‹œì²­í•˜ë ¤ í•˜ì‹œëŠ”êµ°ìš”. YouTubeëŠ” Roblox.comê³¼ëŠ” ë³„ê°œì˜ ì½˜í…ì¸ ë¡œ ë³„ë„ì˜ ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨ì´ ì ìš©ë©ë‹ˆë‹¤.";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.Success"
 	/// modal heading
 	/// English String: "Successfully Redeemed"
 	/// </summary>
-	public override string HeadingDialogSuccess => "사용 완료";
+	public override string HeadingDialogSuccess => "ì‚¬ìš© ì™„ë£Œ";
 
 	/// <summary>
 	/// Key: "Heading.RedeemVirtualItem"
 	/// page heading
 	/// English String: "Redeem Roblox Virtual Item"
 	/// </summary>
-	public override string HeadingRedeemVirtualItem => "Roblox 가상 아이템 사용";
+	public override string HeadingRedeemVirtualItem => "Roblox ê°€ìƒ ì•„ì´í…œ ì‚¬ìš©";
 
 	/// <summary>
 	/// Key: "Heading.YoureLeavingRoblox"
 	/// modal heading
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingYoureLeavingRoblox => "안녕히 가세요";
+	public override string HeadingYoureLeavingRoblox => "ì•ˆë…•ížˆ ê°€ì„¸ìš”";
 
 	/// <summary>
 	/// Key: "Label.EnterToyCode"
 	/// label
 	/// English String: "Enter Toy Code"
 	/// </summary>
-	public override string LabelEnterToyCode => "장난감 코드 입력";
+	public override string LabelEnterToyCode => "ìž¥ë‚œê° ì½”ë“œ ìž…ë ¥";
 
 	/// <summary>
 	/// Key: "Response.InvalidCodeTryAgain"
 	/// error message
 	/// English String: "Invalid code, please try again."
 	/// </summary>
-	public override string ResponseInvalidCodeTryAgain => "유효하지 않은 코드입니다. 다시 시도하세요.";
+	public override string ResponseInvalidCodeTryAgain => "ìœ íš¨í•˜ì§€ ì•Šì€ ì½”ë“œìž…ë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 
 	/// <summary>
 	/// Key: "Response.LoginRequiredToRedeem"
 	/// error message
 	/// English String: "You must be logged in to your Roblox account to redeem the code for your virtual item!"
 	/// </summary>
-	public override string ResponseLoginRequiredToRedeem => "코드를 가상 아이템으로 교환하려면 Roblox 계정에 로그인해야 해요!";
+	public override string ResponseLoginRequiredToRedeem => "ì½”ë“œë¥¼ ê°€ìƒ ì•„ì´í…œìœ¼ë¡œ êµí™˜í•˜ë ¤ë©´ Roblox ê³„ì •ì— ë¡œê·¸ì¸í•´ì•¼ í•´ìš”!";
 
 	/// <summary>
 	/// Key: "Response.RedeemSuccess"
 	/// success message
 	/// English String: "You have successfully redeemed your item."
 	/// </summary>
-	public override string ResponseRedeemSuccess => "아이템 사용을 완료했어요!";
+	public override string ResponseRedeemSuccess => "ì•„ì´í…œ ì‚¬ìš©ì„ ì™„ë£Œí–ˆì–´ìš”!";
 
 	public RedeemToyResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -146,57 +146,57 @@ internal class RedeemToyResources_ko_kr : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "취소";
+		return "ì·¨ì†Œ";
 	}
 
 	protected override string _GetTemplateForActionCantFindCode()
 	{
-		return "코드를 찾을 수 없나요?";
+		return "ì½”ë“œë¥¼ ì°¾ì„ ìˆ˜ ì—†ë‚˜ìš”?";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "닫기";
+		return "ë‹«ê¸°";
 	}
 
 	protected override string _GetTemplateForActionContinueVideo()
 	{
-		return "비디오 계속 보기";
+		return "ë¹„ë””ì˜¤ ê³„ì† ë³´ê¸°";
 	}
 
 	protected override string _GetTemplateForActionHavePromoCode()
 	{
-		return "프로모션 코드가 있으신가요? 여기를 클릭";
+		return "í”„ë¡œëª¨ì…˜ ì½”ë“œê°€ ìžˆìœ¼ì‹ ê°€ìš”? ì—¬ê¸°ë¥¼ í´ë¦­";
 	}
 
 	protected override string _GetTemplateForActionHowToRedeem()
 	{
-		return "사용 방법";
+		return "ì‚¬ìš© ë°©ë²•";
 	}
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "로그인";
+		return "ë¡œê·¸ì¸";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "사용";
+		return "ì‚¬ìš©";
 	}
 
 	protected override string _GetTemplateForActionRedeemAnotherItem()
 	{
-		return "다른 아이템 사용";
+		return "ë‹¤ë¥¸ ì•„ì´í…œ ì‚¬ìš©";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "회원가입";
+		return "íšŒì›ê°€ìž…";
 	}
 
 	protected override string _GetTemplateForActionViewItem()
 	{
-		return "아이템 보기";
+		return "ì•„ì´í…œ ë³´ê¸°";
 	}
 
 	/// <summary>
@@ -206,51 +206,54 @@ internal class RedeemToyResources_ko_kr : RedeemToyResources_en_us, IRedeemToyRe
 	/// </summary>
 	public override string DescriptionDialogSuccess(string spanTagStart, string itemName, string spanTagEnd, string itemType, string creatorName)
 	{
-		return $"{creatorName}의 {spanTagStart}{itemName}{spanTagEnd}({itemType})을 성공적으로 사용했어요!";
+		return $"{creatorName}ì˜ {spanTagStart}{itemName}{spanTagEnd}({itemType})ì„ ì„±ê³µì ìœ¼ë¡œ ì‚¬ìš©í–ˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSuccess()
 	{
-		return "{creatorName}의 {spanTagStart}{itemName}{spanTagEnd}({itemType})을 성공적으로 사용했어요!";
+		return "{creatorName}ì˜ {spanTagStart}{itemName}{spanTagEnd}({itemType})ì„ ì„±ê³µì ìœ¼ë¡œ ì‚¬ìš©í–ˆì–´ìš”!";
 	}
 
 	protected override string _GetTemplateForDescriptionLeavingRoblox()
 	{
-		return "Roblox를 나가 YouTube 비디오를 시청하려 하시는군요. YouTube는 Roblox.com과는 별개의 콘텐츠로 별도의 개인정보 처리방침이 적용됩니다.";
+		return "Robloxë¥¼ ë‚˜ê°€ YouTube ë¹„ë””ì˜¤ë¥¼ ì‹œì²­í•˜ë ¤ í•˜ì‹œëŠ”êµ°ìš”. YouTubeëŠ” Roblox.comê³¼ëŠ” ë³„ê°œì˜ ì½˜í…ì¸ ë¡œ ë³„ë„ì˜ ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨ì´ ì ìš©ë©ë‹ˆë‹¤.";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSuccess()
 	{
-		return "사용 완료";
+		return "ì‚¬ìš© ì™„ë£Œ";
 	}
 
 	protected override string _GetTemplateForHeadingRedeemVirtualItem()
 	{
-		return "Roblox 가상 아이템 사용";
+		return "Roblox ê°€ìƒ ì•„ì´í…œ ì‚¬ìš©";
 	}
 
 	protected override string _GetTemplateForHeadingYoureLeavingRoblox()
 	{
-		return "안녕히 가세요";
+		return "ì•ˆë…•ížˆ ê°€ì„¸ìš”";
 	}
 
 	protected override string _GetTemplateForLabelEnterToyCode()
 	{
-		return "장난감 코드 입력";
+		return "ìž¥ë‚œê° ì½”ë“œ ìž…ë ¥";
 	}
 
 	protected override string _GetTemplateForResponseInvalidCodeTryAgain()
 	{
-		return "유효하지 않은 코드입니다. 다시 시도하세요.";
+		return "ìœ íš¨í•˜ì§€ ì•Šì€ ì½”ë“œìž…ë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
 	}
 
 	protected override string _GetTemplateForResponseLoginRequiredToRedeem()
 	{
-		return "코드를 가상 아이템으로 교환하려면 Roblox 계정에 로그인해야 해요!";
+		return "ì½”ë“œë¥¼ ê°€ìƒ ì•„ì´í…œìœ¼ë¡œ êµí™˜í•˜ë ¤ë©´ Roblox ê³„ì •ì— ë¡œê·¸ì¸í•´ì•¼ í•´ìš”!";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccess()
 	{
-		return "아이템 사용을 완료했어요!";
+		return "ì•„ì´í…œ ì‚¬ìš©ì„ ì™„ë£Œí–ˆì–´ìš”!";
 	}
+}
+
+
 }

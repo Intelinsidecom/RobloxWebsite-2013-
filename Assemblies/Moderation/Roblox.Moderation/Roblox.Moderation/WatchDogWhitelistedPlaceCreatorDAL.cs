@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Platform.Moderation.Properties;
+namespace Roblox.Moderationpublic {
+    class WatchDogWhitelistedPlaceCreatorDAL
 
-namespace Roblox.Platform.Moderation;
-
-public class WatchDogWhitelistedPlaceCreatorDAL
 {
 	internal long ID { get; set; }
 
@@ -93,4 +92,7 @@ public class WatchDogWhitelistedPlaceCreatorDAL
 		};
 		return EntityHelper.GetEntityDAL(new DbInfo(_DbConnectionString, "WatchDogWhitelistedPlaceCreatorsV2_GetWatchDogWhitelistedPlaceCreatorV2ByCreatorID", queryParameters), BuildDAL);
 	}
+}
+
+
 }

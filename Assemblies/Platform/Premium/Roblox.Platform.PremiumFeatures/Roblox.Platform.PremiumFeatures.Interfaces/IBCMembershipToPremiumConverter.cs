@@ -1,6 +1,6 @@
-namespace Roblox.PremiumFeatures.Interfaces;
+﻿namespace Roblox.Platform.PremiumFeatures.Interfaces {
+    /// <summary>
 
-/// <summary>
 /// Provides a common interface for an object that can convert a <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType" /> into an ID.
 /// </summary>
 public interface IBCMembershipToPremiumConverter
@@ -11,4 +11,7 @@ public interface IBCMembershipToPremiumConverter
 	/// <param name="robuxStipendFrequencyType">The <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType" />.</param>
 	/// <returns>The ID of the <see cref="T:Roblox.PremiumFeatures.Enums.RobuxStipendFrequencyType" />.</returns>
 	IPremiumFeatureModel MapBCToPremiumProduct(IPremiumFeatureModel bcPremiumFeature);
+}
+
+
 }

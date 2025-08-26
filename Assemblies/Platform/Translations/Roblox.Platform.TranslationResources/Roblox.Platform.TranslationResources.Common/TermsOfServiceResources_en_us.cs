@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class TermsOfServiceResources_en_us : TranslationResourcesBase, ITermsOfServiceResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class TermsOfServiceResources_en_us : TranslationResourcesBase, ITermsOfServiceResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -123,4 +122,7 @@ internal class TermsOfServiceResources_en_us : TranslationResourcesBase, ITermsO
 	{
 		return "By clicking \"I Agree\", you are agreeing to the {tosLinkStart}Roblox Terms of Use{tosLinkEnd}. This includes the license to Roblox of past and future content you provide to the service for our use online, offline, and in tangible items. You can learn more about what is changing {legalChangesLinkStart}here{legalChangesLinkEnd}.";
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides CreatePlaceProductPromotionResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,7 +10,7 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 	/// Key: "Label.AddToGame"
 	/// English String: "Add to Game"
 	/// </summary>
-	public override string LabelAddToGame => "Zu Spiel hinzufügen";
+	public override string LabelAddToGame => "Zu Spiel hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
@@ -46,7 +46,7 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 	/// Key: "Label.PromoteOnYourGame"
 	/// English String: "Promote on your Game"
 	/// </summary>
-	public override string LabelPromoteOnYourGame => "Werbung für dein Spiel machen";
+	public override string LabelPromoteOnYourGame => "Werbung fÃ¼r dein Spiel machen";
 
 	/// <summary>
 	/// Key: "Label.Rent"
@@ -58,7 +58,7 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 	/// Key: "Label.SelectGroup"
 	/// English String: "Select Group"
 	/// </summary>
-	public override string LabelSelectGroup => "Gruppe wählen";
+	public override string LabelSelectGroup => "Gruppe wÃ¤hlen";
 
 	/// <summary>
 	/// Key: "Label.SelectNone"
@@ -70,13 +70,13 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 	/// Key: "Label.SelectYourGame"
 	/// English String: "Select Your Game"
 	/// </summary>
-	public override string LabelSelectYourGame => "Wähle dein Spiel";
+	public override string LabelSelectYourGame => "WÃ¤hle dein Spiel";
 
 	/// <summary>
 	/// Key: "Label.SelectYourGameSemicolon"
 	/// English String: "Select Your Game:"
 	/// </summary>
-	public override string LabelSelectYourGameSemicolon => "Wähle dein Spiel:";
+	public override string LabelSelectYourGameSemicolon => "WÃ¤hle dein Spiel:";
 
 	/// <summary>
 	/// Key: "Label.SorryWeCouldnt"
@@ -97,7 +97,7 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelAddToGame()
 	{
-		return "Zu Spiel hinzufügen";
+		return "Zu Spiel hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
@@ -127,7 +127,7 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelPromoteOnYourGame()
 	{
-		return "Werbung für dein Spiel machen";
+		return "Werbung fÃ¼r dein Spiel machen";
 	}
 
 	protected override string _GetTemplateForLabelRent()
@@ -137,7 +137,7 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelSelectGroup()
 	{
-		return "Gruppe wählen";
+		return "Gruppe wÃ¤hlen";
 	}
 
 	protected override string _GetTemplateForLabelSelectNone()
@@ -147,12 +147,12 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelSelectYourGame()
 	{
-		return "Wähle dein Spiel";
+		return "WÃ¤hle dein Spiel";
 	}
 
 	protected override string _GetTemplateForLabelSelectYourGameSemicolon()
 	{
-		return "Wähle dein Spiel:";
+		return "WÃ¤hle dein Spiel:";
 	}
 
 	protected override string _GetTemplateForLabelSorryWeCouldnt()
@@ -171,11 +171,14 @@ internal class CreatePlaceProductPromotionResources_de_de : CreatePlaceProductPr
 	/// </summary>
 	public override string MessageWhatIsAddingGear(string affiliateSaleTotal)
 	{
-		return $"Was bedeutet es, Ausrüstung zu einem Spiel hinzuzufügen? Dieser Artikel wird auf deiner Spielseite angezeigt und automatisch in deinem Spiel zugelassen. Wenn jemand diesen Artikel von deiner Spielseite kauft, erhältst du {affiliateSaleTotal} Robux!";
+		return $"Was bedeutet es, AusrÃ¼stung zu einem Spiel hinzuzufÃ¼gen? Dieser Artikel wird auf deiner Spielseite angezeigt und automatisch in deinem Spiel zugelassen. Wenn jemand diesen Artikel von deiner Spielseite kauft, erhÃ¤ltst du {affiliateSaleTotal} Robux!";
 	}
 
 	protected override string _GetTemplateForMessageWhatIsAddingGear()
 	{
-		return "Was bedeutet es, Ausrüstung zu einem Spiel hinzuzufügen? Dieser Artikel wird auf deiner Spielseite angezeigt und automatisch in deinem Spiel zugelassen. Wenn jemand diesen Artikel von deiner Spielseite kauft, erhältst du {affiliateSaleTotal} Robux!";
+		return "Was bedeutet es, AusrÃ¼stung zu einem Spiel hinzuzufÃ¼gen? Dieser Artikel wird auf deiner Spielseite angezeigt und automatisch in deinem Spiel zugelassen. Wenn jemand diesen Artikel von deiner Spielseite kauft, erhÃ¤ltst du {affiliateSaleTotal} Robux!";
 	}
+}
+
+
 }

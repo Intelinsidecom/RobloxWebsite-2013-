@@ -1,14 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Roblox.EventLog;
 using Roblox.RealTimeNotifications.Properties;
+namespace Roblox.Platform.RealTimeNotificationspublic {
+    class SubscriptionProxy<TKeyInput, TSubscriberId, TPublishMessage> : ISubscriptionProxy<TKeyInput, TSubscriberId>
 
-namespace Roblox.RealTimeNotifications;
-
-public class SubscriptionProxy<TKeyInput, TSubscriberId, TPublishMessage> : ISubscriptionProxy<TKeyInput, TSubscriberId>
 {
 	/// <summary>
 	/// Event handler when the server which is serving the subscription disconnects.
@@ -222,4 +221,7 @@ public class SubscriptionProxy<TKeyInput, TSubscriberId, TPublishMessage> : ISub
 			});
 		}
 	}
+}
+
+
 }

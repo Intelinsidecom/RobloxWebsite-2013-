@@ -1,15 +1,25 @@
-namespace Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.EventStream.WebEvents.EventArgs;
+namespace Roblox.EventStream.WebEvents {
+    /// <summary>
 
-/// <summary>
 /// Represents an event for when a game pass purchase was attempted
 /// </summary>
 public class PurchaseGamePassEvent : PurchaseEventBase
 {
 	private const string _Name = "purchaseGamePass";
 
-	public PurchaseGamePassEvent(EventStreamer streamer, PurchaseGamePassEventArgs args)
+	public PurchaseGamePassEvent(IEventStreamer streamer, PurchaseGamePassEventArgs args)
 		: base(streamer, "purchaseGamePass", args)
 	{
 		AddEventArg("gamePassId", args.GamePassId.ToString());
 	}
 }
+
+
+}
+
+
+
+
+
+

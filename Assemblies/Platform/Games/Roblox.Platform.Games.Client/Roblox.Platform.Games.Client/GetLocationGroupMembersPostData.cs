@@ -1,8 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+namespace Roblox.Platform.Games.Clientpublic {
+    class GetLocationGroupMembersPostData
 
-namespace Roblox.Games.Client;
-
-public class GetLocationGroupMembersPostData
 {
 	public IReadOnlyCollection<Location> Locations { get; set; }
+}
+
+
 }

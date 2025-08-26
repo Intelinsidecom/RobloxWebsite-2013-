@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Authentication;
+﻿namespace Roblox.Platform.TranslationResources.Authentication {
+    /// <summary>
 
-/// <summary>
 /// This class overrides LoginResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -168,7 +168,7 @@ internal class LoginResources_id_id : LoginResources_en_us, ILoginResources, ITr
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging in…"
+	/// English String: "Logging inâ€¦"
 	/// </summary>
 	public override string LabelLoggingInSpinnerText => "Masuk...";
 
@@ -777,4 +777,7 @@ internal class LoginResources_id_id : LoginResources_en_us, ILoginResources, ITr
 	{
 		return "WeChat kamu tidak terverifikasi sebagai nama asli. Harap gunakan akun WeChat yang terverifikasi sebagai nama asli lalu coba lagi. Kunjungi https://jiazhang.qq.com/zk/home.html";
 	}
+}
+
+
 }

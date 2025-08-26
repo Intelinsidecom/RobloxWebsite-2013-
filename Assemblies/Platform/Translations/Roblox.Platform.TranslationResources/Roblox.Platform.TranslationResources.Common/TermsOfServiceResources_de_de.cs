@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides TermsOfServiceResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class TermsOfServiceResources_de_de : TermsOfServiceResources_en_us, IT
 	/// Key: "Heading.TosHaveChangedTitle"
 	/// English String: "TERMS OF USE HAVE CHANGED"
 	/// </summary>
-	public override string HeadingTosHaveChangedTitle => "NUTZUNGSBEDINGUNGEN WURDEN GEÄNDERT";
+	public override string HeadingTosHaveChangedTitle => "NUTZUNGSBEDINGUNGEN WURDEN GEÃ„NDERT";
 
 	/// <summary>
 	/// Key: "Label.IAgree"
@@ -36,7 +36,7 @@ internal class TermsOfServiceResources_de_de : TermsOfServiceResources_en_us, IT
 
 	protected override string _GetTemplateForHeadingTosHaveChangedTitle()
 	{
-		return "NUTZUNGSBEDINGUNGEN WURDEN GEÄNDERT";
+		return "NUTZUNGSBEDINGUNGEN WURDEN GEÃ„NDERT";
 	}
 
 	protected override string _GetTemplateForLabelIAgree()
@@ -50,12 +50,12 @@ internal class TermsOfServiceResources_de_de : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageAgreeToTosAndPrivacyBody(string tosLinkStart, string tosLinkEnd, string privacyLinkStart, string privacyLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Indem du auf „Ich akzeptiere“ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen{tosLinkEnd} und {privacyLinkStart}Datenschutzrichtlinien{privacyLinkEnd} zu. Mehr Details zu den Änderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
+		return $"Indem du auf â€žIch akzeptiereâ€œ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen{tosLinkEnd} und {privacyLinkStart}Datenschutzrichtlinien{privacyLinkEnd} zu. Mehr Details zu den Ã„nderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageAgreeToTosAndPrivacyBody()
 	{
-		return "Indem du auf „Ich akzeptiere“ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen{tosLinkEnd} und {privacyLinkStart}Datenschutzrichtlinien{privacyLinkEnd} zu. Mehr Details zu den Änderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
+		return "Indem du auf â€žIch akzeptiereâ€œ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen{tosLinkEnd} und {privacyLinkStart}Datenschutzrichtlinien{privacyLinkEnd} zu. Mehr Details zu den Ã„nderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
 	}
 
 	/// <summary>
@@ -64,12 +64,12 @@ internal class TermsOfServiceResources_de_de : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreeChangeBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Indem du auf „Ich akzeptiere“ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen{tosLinkEnd} zu. Dazu gehört auch die Erlaubniserteilung an uns, bisherige und künftige Inhalte, die du dem Dienst zu Verfügung stellst, online und offline (etwa für materielle Artikel) nutzen zu dürfen. Mehr Details zu den Änderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
+		return $"Indem du auf â€žIch akzeptiereâ€œ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen{tosLinkEnd} zu. Dazu gehÃ¶rt auch die Erlaubniserteilung an uns, bisherige und kÃ¼nftige Inhalte, die du dem Dienst zu VerfÃ¼gung stellst, online und offline (etwa fÃ¼r materielle Artikel) nutzen zu dÃ¼rfen. Mehr Details zu den Ã„nderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreeChangeBody()
 	{
-		return "Indem du auf „Ich akzeptiere“ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen{tosLinkEnd} zu. Dazu gehört auch die Erlaubniserteilung an uns, bisherige und künftige Inhalte, die du dem Dienst zu Verfügung stellst, online und offline (etwa für materielle Artikel) nutzen zu dürfen. Mehr Details zu den Änderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
+		return "Indem du auf â€žIch akzeptiereâ€œ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen{tosLinkEnd} zu. Dazu gehÃ¶rt auch die Erlaubniserteilung an uns, bisherige und kÃ¼nftige Inhalte, die du dem Dienst zu VerfÃ¼gung stellst, online und offline (etwa fÃ¼r materielle Artikel) nutzen zu dÃ¼rfen. Mehr Details zu den Ã„nderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
 	}
 
 	/// <summary>
@@ -78,11 +78,14 @@ internal class TermsOfServiceResources_de_de : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreementBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Indem du auf „Ich akzeptiere“ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen von Roblox{tosLinkEnd} zu. Dazu gehört auch die Erlaubniserteilung an Roblox, bisherige und künftige Inhalte, die du dem Dienst zu Verfügung stellst, online, offline und für materielle Artikel nutzen zu dürfen. Mehr Details zu den Änderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
+		return $"Indem du auf â€žIch akzeptiereâ€œ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen von Roblox{tosLinkEnd} zu. Dazu gehÃ¶rt auch die Erlaubniserteilung an Roblox, bisherige und kÃ¼nftige Inhalte, die du dem Dienst zu VerfÃ¼gung stellst, online, offline und fÃ¼r materielle Artikel nutzen zu dÃ¼rfen. Mehr Details zu den Ã„nderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreementBody()
 	{
-		return "Indem du auf „Ich akzeptiere“ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen von Roblox{tosLinkEnd} zu. Dazu gehört auch die Erlaubniserteilung an Roblox, bisherige und künftige Inhalte, die du dem Dienst zu Verfügung stellst, online, offline und für materielle Artikel nutzen zu dürfen. Mehr Details zu den Änderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
+		return "Indem du auf â€žIch akzeptiereâ€œ klickst, stimmst du den {tosLinkStart}Nutzungsbedingungen von Roblox{tosLinkEnd} zu. Dazu gehÃ¶rt auch die Erlaubniserteilung an Roblox, bisherige und kÃ¼nftige Inhalte, die du dem Dienst zu VerfÃ¼gung stellst, online, offline und fÃ¼r materielle Artikel nutzen zu dÃ¼rfen. Mehr Details zu den Ã„nderungen findest du {legalChangesLinkStart}hier{legalChangesLinkEnd}.";
 	}
+}
+
+
 }

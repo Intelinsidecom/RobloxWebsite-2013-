@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Diagnostics;
 using Roblox.EventLog;
 using Roblox.RealTimeNotifications.Properties;
+namespace Roblox.Platform.RealTimeNotifications {
+    /// <summary>
 
-namespace Roblox.RealTimeNotifications;
-
-/// <summary>
 /// Performance monitor for <see cref="T:Roblox.RealTimeNotifications.UserNotificationPublisher`1" />
 /// </summary>
 public class UserNotificationPublisherPerformanceMonitor : IUserNotificationPublisherPerformanceMonitor
@@ -67,4 +66,7 @@ public class UserNotificationPublisherPerformanceMonitor : IUserNotificationPubl
 		});
 		counterBuilder.Create();
 	}
+}
+
+
 }

@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,25 +10,25 @@ internal class BuildersClubResources_ja_jp : BuildersClubResources_en_us, IBuild
 	/// Key: "Action.BuidlersClubOnlyCancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionBuidlersClubOnlyCancel => "キャンセル";
+	public override string ActionBuidlersClubOnlyCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
 	/// <summary>
 	/// Key: "Action.BuidlersClubOnlyUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionBuidlersClubOnlyUpgradeNow => "アップグレードする";
+	public override string ActionBuidlersClubOnlyUpgradeNow => "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã™ã‚‹";
 
 	/// <summary>
 	/// Key: "Heading.BuildersClubOnly"
 	/// English String: "Builders Club Only"
 	/// </summary>
-	public override string HeadingBuildersClubOnly => "Builders Club専用";
+	public override string HeadingBuildersClubOnly => "Builders Clubå°‚ç”¨";
 
 	/// <summary>
 	/// Key: "Label.BuidlersClubOnlyClose"
 	/// English String: "Close"
 	/// </summary>
-	public override string LabelBuidlersClubOnlyClose => "閉じる";
+	public override string LabelBuidlersClubOnlyClose => "é–‰ã˜ã‚‹";
 
 	public BuildersClubResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -37,12 +37,12 @@ internal class BuildersClubResources_ja_jp : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForActionBuidlersClubOnlyCancel()
 	{
-		return "キャンセル";
+		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 	}
 
 	protected override string _GetTemplateForActionBuidlersClubOnlyUpgradeNow()
 	{
-		return "アップグレードする";
+		return "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰ã™ã‚‹";
 	}
 
 	/// <summary>
@@ -51,21 +51,24 @@ internal class BuildersClubResources_ja_jp : BuildersClubResources_en_us, IBuild
 	/// </summary>
 	public override string DescriptionBuildersClubOnlyModel(string bcRequirementName)
 	{
-		return $"これは、{bcRequirementName}のメンバー専用のプレミアムアイテムです。";
+		return $"ã“ã‚Œã¯ã€{bcRequirementName}ã®ãƒ¡ãƒ³ãƒãƒ¼å°‚ç”¨ã®ãƒ—ãƒ¬ãƒŸã‚¢ãƒ ã‚¢ã‚¤ãƒ†ãƒ ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubOnlyModel()
 	{
-		return "これは、{bcRequirementName}のメンバー専用のプレミアムアイテムです。";
+		return "ã“ã‚Œã¯ã€{bcRequirementName}ã®ãƒ¡ãƒ³ãƒãƒ¼å°‚ç”¨ã®ãƒ—ãƒ¬ãƒŸã‚¢ãƒ ã‚¢ã‚¤ãƒ†ãƒ ã§ã™ã€‚";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubOnly()
 	{
-		return "Builders Club専用";
+		return "Builders Clubå°‚ç”¨";
 	}
 
 	protected override string _GetTemplateForLabelBuidlersClubOnlyClose()
 	{
-		return "閉じる";
+		return "é–‰ã˜ã‚‹";
 	}
+}
+
+
 }

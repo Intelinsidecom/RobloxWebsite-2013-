@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides PlayerSearchResultsResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -16,7 +16,7 @@ internal class PlayerSearchResultsResources_de_de : PlayerSearchResultsResources
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "Freund hinzufügen";
+	public override string ActionAddFriend => "Freund hinzufÃ¼gen";
 
 	/// <summary>
 	/// Key: "Action.Chat"
@@ -70,7 +70,7 @@ internal class PlayerSearchResultsResources_de_de : PlayerSearchResultsResources
 	/// Key: "Label.UnsafeInput"
 	/// English String: "You have entered unsafe input. Please try your search again."
 	/// </summary>
-	public override string LabelUnsafeInput => "Du hast einen unangemessenen Suchbegriff eingegeben. Bitte führe eine neue Suche durch.";
+	public override string LabelUnsafeInput => "Du hast einen unangemessenen Suchbegriff eingegeben. Bitte fÃ¼hre eine neue Suche durch.";
 
 	/// <summary>
 	/// Key: "Label.YouAreFollowing"
@@ -96,7 +96,7 @@ internal class PlayerSearchResultsResources_de_de : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "Freund hinzufügen";
+		return "Freund hinzufÃ¼gen";
 	}
 
 	protected override string _GetTemplateForActionChat()
@@ -120,12 +120,12 @@ internal class PlayerSearchResultsResources_de_de : PlayerSearchResultsResources
 	/// </summary>
 	public override string HeadingPlayerResultsFor(string startSpan, string keyword, string endSpan)
 	{
-		return $"Spielerergebnisse für {startSpan}{keyword}{endSpan}";
+		return $"Spielerergebnisse fÃ¼r {startSpan}{keyword}{endSpan}";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerResultsFor()
 	{
-		return "Spielerergebnisse für {startSpan}{keyword}{endSpan}";
+		return "Spielerergebnisse fÃ¼r {startSpan}{keyword}{endSpan}";
 	}
 
 	protected override string _GetTemplateForLabelAlsoKnownAsAbbreviation()
@@ -153,12 +153,12 @@ internal class PlayerSearchResultsResources_de_de : PlayerSearchResultsResources
 	/// </summary>
 	public override string LabelNoMatchesAvailable(string keyword)
 	{
-		return $"Es gibt keine Treffer für „{keyword}“";
+		return $"Es gibt keine Treffer fÃ¼r â€ž{keyword}â€œ";
 	}
 
 	protected override string _GetTemplateForLabelNoMatchesAvailable()
 	{
-		return "Es gibt keine Treffer für „{keyword}“";
+		return "Es gibt keine Treffer fÃ¼r â€ž{keyword}â€œ";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
@@ -182,12 +182,12 @@ internal class PlayerSearchResultsResources_de_de : PlayerSearchResultsResources
 	/// </summary>
 	public override string LabelShowingCountOfResults(string countStartSpan, string resultsStart, string resultsInPage, string countEndSpan, string totalStartSpan, string totalResults, string totalEndSpan)
 	{
-		return $"{countStartSpan}{resultsStart}\u00a0– {resultsInPage} von {countEndSpan}{totalStartSpan}{totalResults}{totalEndSpan}";
+		return $"{countStartSpan}{resultsStart}\u00a0â€“ {resultsInPage} von {countEndSpan}{totalStartSpan}{totalResults}{totalEndSpan}";
 	}
 
 	protected override string _GetTemplateForLabelShowingCountOfResults()
 	{
-		return "{countStartSpan}{resultsStart}\u00a0– {resultsInPage} von {countEndSpan}{totalStartSpan}{totalResults}{totalEndSpan}";
+		return "{countStartSpan}{resultsStart}\u00a0â€“ {resultsInPage} von {countEndSpan}{totalStartSpan}{totalResults}{totalEndSpan}";
 	}
 
 	protected override string _GetTemplateForLabelThisIsYou()
@@ -197,7 +197,7 @@ internal class PlayerSearchResultsResources_de_de : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForLabelUnsafeInput()
 	{
-		return "Du hast einen unangemessenen Suchbegriff eingegeben. Bitte führe eine neue Suche durch.";
+		return "Du hast einen unangemessenen Suchbegriff eingegeben. Bitte fÃ¼hre eine neue Suche durch.";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFollowing()
@@ -209,4 +209,7 @@ internal class PlayerSearchResultsResources_de_de : PlayerSearchResultsResources
 	{
 		return "Ihr seid befreundet";
 	}
+}
+
+
 }

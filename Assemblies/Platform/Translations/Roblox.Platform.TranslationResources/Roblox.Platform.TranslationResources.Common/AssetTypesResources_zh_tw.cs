@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Common;
+﻿namespace Roblox.Platform.TranslationResources.Common {
+    /// <summary>
 
-/// <summary>
 /// This class overrides AssetTypesResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -10,442 +10,442 @@ internal class AssetTypesResources_zh_tw : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.Accessories"
 	/// English String: "Accessories"
 	/// </summary>
-	public override string LabelAccessories => "飾品";
+	public override string LabelAccessories => "é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Accessory"
 	/// Accessory asset group, in singular form
 	/// English String: "Accessory"
 	/// </summary>
-	public override string LabelAccessory => "飾品";
+	public override string LabelAccessory => "é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Animation"
 	/// Asset type Animation, singular form
 	/// English String: "Animation"
 	/// </summary>
-	public override string LabelAnimation => "動畫";
+	public override string LabelAnimation => "å‹•ç•«";
 
 	/// <summary>
 	/// Key: "Label.Animations"
 	/// English String: "Animations"
 	/// </summary>
-	public override string LabelAnimations => "動畫";
+	public override string LabelAnimations => "å‹•ç•«";
 
 	/// <summary>
 	/// Key: "Label.Audio"
 	/// English String: "Audio"
 	/// </summary>
-	public override string LabelAudio => "音訊";
+	public override string LabelAudio => "éŸ³è¨Š";
 
 	/// <summary>
 	/// Key: "Label.AvatarAnimations"
 	/// Avatar Animations allow the user to have their character or avatar move differently within the game.
 	/// English String: "Avatar Animations"
 	/// </summary>
-	public override string LabelAvatarAnimations => "虛擬人偶動畫";
+	public override string LabelAvatarAnimations => "è™›æ“¬äººå¶å‹•ç•«";
 
 	/// <summary>
 	/// Key: "Label.Back"
 	/// This is the back of a person. The user has an avatar which has a back.
 	/// English String: "Back"
 	/// </summary>
-	public override string LabelBack => "背面";
+	public override string LabelBack => "èƒŒé¢";
 
 	/// <summary>
 	/// Key: "Label.BackAccessory"
 	/// English String: "Back Accessory"
 	/// </summary>
-	public override string LabelBackAccessory => "背面飾品";
+	public override string LabelBackAccessory => "èƒŒé¢é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Badge"
 	/// Asset type Badge, singular form
 	/// English String: "Badge"
 	/// </summary>
-	public override string LabelBadge => "徽章";
+	public override string LabelBadge => "å¾½ç« ";
 
 	/// <summary>
 	/// Key: "Label.Badges"
 	/// English String: "Badges"
 	/// </summary>
-	public override string LabelBadges => "徽章";
+	public override string LabelBadges => "å¾½ç« ";
 
 	/// <summary>
 	/// Key: "Label.Climb"
 	/// English String: "Climb"
 	/// </summary>
-	public override string LabelClimb => "攀爬";
+	public override string LabelClimb => "æ”€çˆ¬";
 
 	/// <summary>
 	/// Key: "Label.Death"
 	/// English String: "Death"
 	/// </summary>
-	public override string LabelDeath => "死亡";
+	public override string LabelDeath => "æ­»äº¡";
 
 	/// <summary>
 	/// Key: "Label.Decal"
 	/// Asset type Decal, singular form
 	/// English String: "Decal"
 	/// </summary>
-	public override string LabelDecal => "貼花";
+	public override string LabelDecal => "è²¼èŠ±";
 
 	/// <summary>
 	/// Key: "Label.Decals"
 	/// English String: "Decals"
 	/// </summary>
-	public override string LabelDecals => "貼花";
+	public override string LabelDecals => "è²¼èŠ±";
 
 	/// <summary>
 	/// Key: "Label.Emote"
 	/// Asset type Emote, singular form
 	/// English String: "Emote"
 	/// </summary>
-	public override string LabelEmote => "動作";
+	public override string LabelEmote => "å‹•ä½œ";
 
 	/// <summary>
 	/// Key: "Label.Emotes"
 	/// Asset type Emote, plural form
 	/// English String: "Emotes"
 	/// </summary>
-	public override string LabelEmotes => "動作";
+	public override string LabelEmotes => "å‹•ä½œ";
 
 	/// <summary>
 	/// Key: "Label.Face"
 	/// English String: "Face"
 	/// </summary>
-	public override string LabelFace => "臉部";
+	public override string LabelFace => "è‡‰éƒ¨";
 
 	/// <summary>
 	/// Key: "Label.FaceAccessory"
 	/// English String: "Face Accessory"
 	/// </summary>
-	public override string LabelFaceAccessory => "臉部飾品";
+	public override string LabelFaceAccessory => "è‡‰éƒ¨é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Faces"
 	/// English String: "Faces"
 	/// </summary>
-	public override string LabelFaces => "臉部";
+	public override string LabelFaces => "è‡‰éƒ¨";
 
 	/// <summary>
 	/// Key: "Label.Fall"
 	/// English String: "Fall"
 	/// </summary>
-	public override string LabelFall => "跌落";
+	public override string LabelFall => "è·Œè½";
 
 	/// <summary>
 	/// Key: "Label.Front"
 	/// This is the front of a person. The user has an avatar which has a front.
 	/// English String: "Front"
 	/// </summary>
-	public override string LabelFront => "正面";
+	public override string LabelFront => "æ­£é¢";
 
 	/// <summary>
 	/// Key: "Label.FrontAccessory"
 	/// English String: "Front Accessory"
 	/// </summary>
-	public override string LabelFrontAccessory => "正面飾品";
+	public override string LabelFrontAccessory => "æ­£é¢é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Game"
 	/// English String: "Game"
 	/// </summary>
-	public override string LabelGame => "遊戲";
+	public override string LabelGame => "éŠæˆ²";
 
 	/// <summary>
 	/// Key: "Label.GamePass"
 	/// Asset type Game Pass, singular form
 	/// English String: "Game Pass"
 	/// </summary>
-	public override string LabelGamePass => "遊戲證";
+	public override string LabelGamePass => "éŠæˆ²è­‰";
 
 	/// <summary>
 	/// Key: "Label.GamePasses"
 	/// English String: "Game Passes"
 	/// </summary>
-	public override string LabelGamePasses => "遊戲證";
+	public override string LabelGamePasses => "éŠæˆ²è­‰";
 
 	/// <summary>
 	/// Key: "Label.Gear"
 	/// English String: "Gear"
 	/// </summary>
-	public override string LabelGear => "裝備";
+	public override string LabelGear => "è£å‚™";
 
 	/// <summary>
 	/// Key: "Label.Hair"
 	/// English String: "Hair"
 	/// </summary>
-	public override string LabelHair => "髮型";
+	public override string LabelHair => "é«®åž‹";
 
 	/// <summary>
 	/// Key: "Label.HairAccessory"
 	/// English String: "Hair Accessory"
 	/// </summary>
-	public override string LabelHairAccessory => "髮型飾品";
+	public override string LabelHairAccessory => "é«®åž‹é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Hat"
 	/// English String: "Hat"
 	/// </summary>
-	public override string LabelHat => "帽子";
+	public override string LabelHat => "å¸½å­";
 
 	/// <summary>
 	/// Key: "Label.Hats"
 	/// English String: "Hats"
 	/// </summary>
-	public override string LabelHats => "帽子";
+	public override string LabelHats => "å¸½å­";
 
 	/// <summary>
 	/// Key: "Label.Head"
 	/// Asset type Head, singular form
 	/// English String: "Head"
 	/// </summary>
-	public override string LabelHead => "頭部";
+	public override string LabelHead => "é ­éƒ¨";
 
 	/// <summary>
 	/// Key: "Label.Heads"
 	/// English String: "Heads"
 	/// </summary>
-	public override string LabelHeads => "頭部";
+	public override string LabelHeads => "é ­éƒ¨";
 
 	/// <summary>
 	/// Key: "Label.Idle"
 	/// English String: "Idle"
 	/// </summary>
-	public override string LabelIdle => "閒置";
+	public override string LabelIdle => "é–’ç½®";
 
 	/// <summary>
 	/// Key: "Label.Image"
 	/// Asset type Image, singular form
 	/// English String: "Image"
 	/// </summary>
-	public override string LabelImage => "圖像";
+	public override string LabelImage => "åœ–åƒ";
 
 	/// <summary>
 	/// Key: "Label.Jump"
 	/// English String: "Jump"
 	/// </summary>
-	public override string LabelJump => "跳躍";
+	public override string LabelJump => "è·³èº";
 
 	/// <summary>
 	/// Key: "Label.LeftArm"
 	/// Asset type Left Arm, singular form
 	/// English String: "Left Arm"
 	/// </summary>
-	public override string LabelLeftArm => "左臂";
+	public override string LabelLeftArm => "å·¦è‡‚";
 
 	/// <summary>
 	/// Key: "Label.LeftLeg"
 	/// Asset type Left Leg, singular form
 	/// English String: "Left Leg"
 	/// </summary>
-	public override string LabelLeftLeg => "左腿";
+	public override string LabelLeftLeg => "å·¦è…¿";
 
 	/// <summary>
 	/// Key: "Label.Mesh"
 	/// Asset type mesh, singular form
 	/// English String: "Mesh"
 	/// </summary>
-	public override string LabelMesh => "網格";
+	public override string LabelMesh => "ç¶²æ ¼";
 
 	/// <summary>
 	/// Key: "Label.Meshes"
 	/// English String: "Meshes"
 	/// </summary>
-	public override string LabelMeshes => "網格";
+	public override string LabelMeshes => "ç¶²æ ¼";
 
 	/// <summary>
 	/// Key: "Label.MeshPart"
 	/// Asset type Mesh Part, singular form
 	/// English String: "Mesh Part"
 	/// </summary>
-	public override string LabelMeshPart => "網格零件";
+	public override string LabelMeshPart => "ç¶²æ ¼é›¶ä»¶";
 
 	/// <summary>
 	/// Key: "Label.Model"
 	/// Asset type Model, singular form
 	/// English String: "Model"
 	/// </summary>
-	public override string LabelModel => "模型";
+	public override string LabelModel => "æ¨¡åž‹";
 
 	/// <summary>
 	/// Key: "Label.Models"
 	/// English String: "Models"
 	/// </summary>
-	public override string LabelModels => "模型";
+	public override string LabelModels => "æ¨¡åž‹";
 
 	/// <summary>
 	/// Key: "Label.Neck"
 	/// English String: "Neck"
 	/// </summary>
-	public override string LabelNeck => "頸部";
+	public override string LabelNeck => "é ¸éƒ¨";
 
 	/// <summary>
 	/// Key: "Label.NeckAccessory"
 	/// English String: "Neck Accessory"
 	/// </summary>
-	public override string LabelNeckAccessory => "頸部飾品";
+	public override string LabelNeckAccessory => "é ¸éƒ¨é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Package"
 	/// Asset type Package, singular form
 	/// English String: "Package"
 	/// </summary>
-	public override string LabelPackage => "套裝";
+	public override string LabelPackage => "å¥—è£";
 
 	/// <summary>
 	/// Key: "Label.Packages"
 	/// English String: "Packages"
 	/// </summary>
-	public override string LabelPackages => "套裝";
+	public override string LabelPackages => "å¥—è£";
 
 	/// <summary>
 	/// Key: "Label.Pants"
 	/// English String: "Pants"
 	/// </summary>
-	public override string LabelPants => "褲子";
+	public override string LabelPants => "è¤²å­";
 
 	/// <summary>
 	/// Key: "Label.Place"
 	/// Asset type Place, singular form
 	/// English String: "Place"
 	/// </summary>
-	public override string LabelPlace => "空間";
+	public override string LabelPlace => "ç©ºé–“";
 
 	/// <summary>
 	/// Key: "Label.Places"
 	/// English String: "Places"
 	/// </summary>
-	public override string LabelPlaces => "空間";
+	public override string LabelPlaces => "ç©ºé–“";
 
 	/// <summary>
 	/// Key: "Label.Plugin"
 	/// Asset type Plugin, singular form
 	/// English String: "Plugin"
 	/// </summary>
-	public override string LabelPlugin => "外掛程式";
+	public override string LabelPlugin => "å¤–æŽ›ç¨‹å¼";
 
 	/// <summary>
 	/// Key: "Label.Plugins"
 	/// English String: "Plugins"
 	/// </summary>
-	public override string LabelPlugins => "外掛程式";
+	public override string LabelPlugins => "å¤–æŽ›ç¨‹å¼";
 
 	/// <summary>
 	/// Key: "Label.Pose"
 	/// English String: "Pose"
 	/// </summary>
-	public override string LabelPose => "姿勢";
+	public override string LabelPose => "å§¿å‹¢";
 
 	/// <summary>
 	/// Key: "Label.RightArm"
 	/// Asset type Right Arm, singular form
 	/// English String: "Right Arm"
 	/// </summary>
-	public override string LabelRightArm => "右臂";
+	public override string LabelRightArm => "å³è‡‚";
 
 	/// <summary>
 	/// Key: "Label.RightLeg"
 	/// Asset type Right Leg, singular form
 	/// English String: "Right Leg"
 	/// </summary>
-	public override string LabelRightLeg => "右腿";
+	public override string LabelRightLeg => "å³è…¿";
 
 	/// <summary>
 	/// Key: "Label.Run"
 	/// English String: "Run"
 	/// </summary>
-	public override string LabelRun => "奔跑";
+	public override string LabelRun => "å¥”è·‘";
 
 	/// <summary>
 	/// Key: "Label.Shirt"
 	/// Asset type Shirt, singular form
 	/// English String: "Shirt"
 	/// </summary>
-	public override string LabelShirt => "襯衫";
+	public override string LabelShirt => "è¥¯è¡«";
 
 	/// <summary>
 	/// Key: "Label.Shirts"
 	/// English String: "Shirts"
 	/// </summary>
-	public override string LabelShirts => "襯衫";
+	public override string LabelShirts => "è¥¯è¡«";
 
 	/// <summary>
 	/// Key: "Label.Shoulder"
 	/// English String: "Shoulder"
 	/// </summary>
-	public override string LabelShoulder => "肩膀";
+	public override string LabelShoulder => "è‚©è†€";
 
 	/// <summary>
 	/// Key: "Label.ShoulderAccessory"
 	/// English String: "Shoulder Accessory"
 	/// </summary>
-	public override string LabelShoulderAccessory => "肩膀飾品";
+	public override string LabelShoulderAccessory => "è‚©è†€é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Shoulders"
 	/// English String: "Shoulders"
 	/// </summary>
-	public override string LabelShoulders => "肩膀";
+	public override string LabelShoulders => "è‚©è†€";
 
 	/// <summary>
 	/// Key: "Label.SolidModel"
 	/// Asset type Solid Model, singular
 	/// English String: "Solid Model"
 	/// </summary>
-	public override string LabelSolidModel => "固體模型";
+	public override string LabelSolidModel => "å›ºé«”æ¨¡åž‹";
 
 	/// <summary>
 	/// Key: "Label.Swim"
 	/// English String: "Swim"
 	/// </summary>
-	public override string LabelSwim => "游泳";
+	public override string LabelSwim => "æ¸¸æ³³";
 
 	/// <summary>
 	/// Key: "Label.Torso"
 	/// Asset type Torso, singular form
 	/// English String: "Torso"
 	/// </summary>
-	public override string LabelTorso => "軀幹";
+	public override string LabelTorso => "è»€å¹¹";
 
 	/// <summary>
 	/// Key: "Label.TShirt"
 	/// Asset type T-Shirt, singular form
 	/// English String: "T-Shirt"
 	/// </summary>
-	public override string LabelTShirt => "T 恤";
+	public override string LabelTShirt => "T æ¤";
 
 	/// <summary>
 	/// Key: "Label.TShirts"
 	/// English String: "T-Shirts"
 	/// </summary>
-	public override string LabelTShirts => "T 恤";
+	public override string LabelTShirts => "T æ¤";
 
 	/// <summary>
 	/// Key: "Label.VipServers"
 	/// VIP servers are private servers which users can create to play only with their friends instead of strangers.
 	/// English String: "VIP Servers"
 	/// </summary>
-	public override string LabelVipServers => "VIP 伺服器";
+	public override string LabelVipServers => "VIP ä¼ºæœå™¨";
 
 	/// <summary>
 	/// Key: "Label.Waist"
 	/// English String: "Waist"
 	/// </summary>
-	public override string LabelWaist => "腰部";
+	public override string LabelWaist => "è…°éƒ¨";
 
 	/// <summary>
 	/// Key: "Label.WaistAccessory"
 	/// English String: "Waist Accessory"
 	/// </summary>
-	public override string LabelWaistAccessory => "腰部飾品";
+	public override string LabelWaistAccessory => "è…°éƒ¨é£¾å“";
 
 	/// <summary>
 	/// Key: "Label.Walk"
 	/// English String: "Walk"
 	/// </summary>
-	public override string LabelWalk => "步行";
+	public override string LabelWalk => "æ­¥è¡Œ";
 
 	public AssetTypesResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -454,346 +454,349 @@ internal class AssetTypesResources_zh_tw : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelAccessories()
 	{
-		return "飾品";
+		return "é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelAccessory()
 	{
-		return "飾品";
+		return "é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelAnimation()
 	{
-		return "動畫";
+		return "å‹•ç•«";
 	}
 
 	protected override string _GetTemplateForLabelAnimations()
 	{
-		return "動畫";
+		return "å‹•ç•«";
 	}
 
 	protected override string _GetTemplateForLabelAudio()
 	{
-		return "音訊";
+		return "éŸ³è¨Š";
 	}
 
 	protected override string _GetTemplateForLabelAvatarAnimations()
 	{
-		return "虛擬人偶動畫";
+		return "è™›æ“¬äººå¶å‹•ç•«";
 	}
 
 	protected override string _GetTemplateForLabelBack()
 	{
-		return "背面";
+		return "èƒŒé¢";
 	}
 
 	protected override string _GetTemplateForLabelBackAccessory()
 	{
-		return "背面飾品";
+		return "èƒŒé¢é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelBadge()
 	{
-		return "徽章";
+		return "å¾½ç« ";
 	}
 
 	protected override string _GetTemplateForLabelBadges()
 	{
-		return "徽章";
+		return "å¾½ç« ";
 	}
 
 	protected override string _GetTemplateForLabelClimb()
 	{
-		return "攀爬";
+		return "æ”€çˆ¬";
 	}
 
 	protected override string _GetTemplateForLabelDeath()
 	{
-		return "死亡";
+		return "æ­»äº¡";
 	}
 
 	protected override string _GetTemplateForLabelDecal()
 	{
-		return "貼花";
+		return "è²¼èŠ±";
 	}
 
 	protected override string _GetTemplateForLabelDecals()
 	{
-		return "貼花";
+		return "è²¼èŠ±";
 	}
 
 	protected override string _GetTemplateForLabelEmote()
 	{
-		return "動作";
+		return "å‹•ä½œ";
 	}
 
 	protected override string _GetTemplateForLabelEmotes()
 	{
-		return "動作";
+		return "å‹•ä½œ";
 	}
 
 	protected override string _GetTemplateForLabelFace()
 	{
-		return "臉部";
+		return "è‡‰éƒ¨";
 	}
 
 	protected override string _GetTemplateForLabelFaceAccessory()
 	{
-		return "臉部飾品";
+		return "è‡‰éƒ¨é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelFaces()
 	{
-		return "臉部";
+		return "è‡‰éƒ¨";
 	}
 
 	protected override string _GetTemplateForLabelFall()
 	{
-		return "跌落";
+		return "è·Œè½";
 	}
 
 	protected override string _GetTemplateForLabelFront()
 	{
-		return "正面";
+		return "æ­£é¢";
 	}
 
 	protected override string _GetTemplateForLabelFrontAccessory()
 	{
-		return "正面飾品";
+		return "æ­£é¢é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelGame()
 	{
-		return "遊戲";
+		return "éŠæˆ²";
 	}
 
 	protected override string _GetTemplateForLabelGamePass()
 	{
-		return "遊戲證";
+		return "éŠæˆ²è­‰";
 	}
 
 	protected override string _GetTemplateForLabelGamePasses()
 	{
-		return "遊戲證";
+		return "éŠæˆ²è­‰";
 	}
 
 	protected override string _GetTemplateForLabelGear()
 	{
-		return "裝備";
+		return "è£å‚™";
 	}
 
 	protected override string _GetTemplateForLabelHair()
 	{
-		return "髮型";
+		return "é«®åž‹";
 	}
 
 	protected override string _GetTemplateForLabelHairAccessory()
 	{
-		return "髮型飾品";
+		return "é«®åž‹é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelHat()
 	{
-		return "帽子";
+		return "å¸½å­";
 	}
 
 	protected override string _GetTemplateForLabelHats()
 	{
-		return "帽子";
+		return "å¸½å­";
 	}
 
 	protected override string _GetTemplateForLabelHead()
 	{
-		return "頭部";
+		return "é ­éƒ¨";
 	}
 
 	protected override string _GetTemplateForLabelHeads()
 	{
-		return "頭部";
+		return "é ­éƒ¨";
 	}
 
 	protected override string _GetTemplateForLabelIdle()
 	{
-		return "閒置";
+		return "é–’ç½®";
 	}
 
 	protected override string _GetTemplateForLabelImage()
 	{
-		return "圖像";
+		return "åœ–åƒ";
 	}
 
 	protected override string _GetTemplateForLabelJump()
 	{
-		return "跳躍";
+		return "è·³èº";
 	}
 
 	protected override string _GetTemplateForLabelLeftArm()
 	{
-		return "左臂";
+		return "å·¦è‡‚";
 	}
 
 	protected override string _GetTemplateForLabelLeftLeg()
 	{
-		return "左腿";
+		return "å·¦è…¿";
 	}
 
 	protected override string _GetTemplateForLabelMesh()
 	{
-		return "網格";
+		return "ç¶²æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelMeshes()
 	{
-		return "網格";
+		return "ç¶²æ ¼";
 	}
 
 	protected override string _GetTemplateForLabelMeshPart()
 	{
-		return "網格零件";
+		return "ç¶²æ ¼é›¶ä»¶";
 	}
 
 	protected override string _GetTemplateForLabelModel()
 	{
-		return "模型";
+		return "æ¨¡åž‹";
 	}
 
 	protected override string _GetTemplateForLabelModels()
 	{
-		return "模型";
+		return "æ¨¡åž‹";
 	}
 
 	protected override string _GetTemplateForLabelNeck()
 	{
-		return "頸部";
+		return "é ¸éƒ¨";
 	}
 
 	protected override string _GetTemplateForLabelNeckAccessory()
 	{
-		return "頸部飾品";
+		return "é ¸éƒ¨é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelPackage()
 	{
-		return "套裝";
+		return "å¥—è£";
 	}
 
 	protected override string _GetTemplateForLabelPackages()
 	{
-		return "套裝";
+		return "å¥—è£";
 	}
 
 	protected override string _GetTemplateForLabelPants()
 	{
-		return "褲子";
+		return "è¤²å­";
 	}
 
 	protected override string _GetTemplateForLabelPlace()
 	{
-		return "空間";
+		return "ç©ºé–“";
 	}
 
 	protected override string _GetTemplateForLabelPlaces()
 	{
-		return "空間";
+		return "ç©ºé–“";
 	}
 
 	protected override string _GetTemplateForLabelPlugin()
 	{
-		return "外掛程式";
+		return "å¤–æŽ›ç¨‹å¼";
 	}
 
 	protected override string _GetTemplateForLabelPlugins()
 	{
-		return "外掛程式";
+		return "å¤–æŽ›ç¨‹å¼";
 	}
 
 	protected override string _GetTemplateForLabelPose()
 	{
-		return "姿勢";
+		return "å§¿å‹¢";
 	}
 
 	protected override string _GetTemplateForLabelRightArm()
 	{
-		return "右臂";
+		return "å³è‡‚";
 	}
 
 	protected override string _GetTemplateForLabelRightLeg()
 	{
-		return "右腿";
+		return "å³è…¿";
 	}
 
 	protected override string _GetTemplateForLabelRun()
 	{
-		return "奔跑";
+		return "å¥”è·‘";
 	}
 
 	protected override string _GetTemplateForLabelShirt()
 	{
-		return "襯衫";
+		return "è¥¯è¡«";
 	}
 
 	protected override string _GetTemplateForLabelShirts()
 	{
-		return "襯衫";
+		return "è¥¯è¡«";
 	}
 
 	protected override string _GetTemplateForLabelShoulder()
 	{
-		return "肩膀";
+		return "è‚©è†€";
 	}
 
 	protected override string _GetTemplateForLabelShoulderAccessory()
 	{
-		return "肩膀飾品";
+		return "è‚©è†€é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelShoulders()
 	{
-		return "肩膀";
+		return "è‚©è†€";
 	}
 
 	protected override string _GetTemplateForLabelSolidModel()
 	{
-		return "固體模型";
+		return "å›ºé«”æ¨¡åž‹";
 	}
 
 	protected override string _GetTemplateForLabelSwim()
 	{
-		return "游泳";
+		return "æ¸¸æ³³";
 	}
 
 	protected override string _GetTemplateForLabelTorso()
 	{
-		return "軀幹";
+		return "è»€å¹¹";
 	}
 
 	protected override string _GetTemplateForLabelTShirt()
 	{
-		return "T 恤";
+		return "T æ¤";
 	}
 
 	protected override string _GetTemplateForLabelTShirts()
 	{
-		return "T 恤";
+		return "T æ¤";
 	}
 
 	protected override string _GetTemplateForLabelVipServers()
 	{
-		return "VIP 伺服器";
+		return "VIP ä¼ºæœå™¨";
 	}
 
 	protected override string _GetTemplateForLabelWaist()
 	{
-		return "腰部";
+		return "è…°éƒ¨";
 	}
 
 	protected override string _GetTemplateForLabelWaistAccessory()
 	{
-		return "腰部飾品";
+		return "è…°éƒ¨é£¾å“";
 	}
 
 	protected override string _GetTemplateForLabelWalk()
 	{
-		return "步行";
+		return "æ­¥è¡Œ";
 	}
+}
+
+
 }

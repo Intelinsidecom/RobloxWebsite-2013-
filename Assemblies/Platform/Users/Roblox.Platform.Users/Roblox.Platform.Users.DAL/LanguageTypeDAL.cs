@@ -5,10 +5,9 @@ using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
+namespace Roblox.Platform.Users.DAL {
+    class LanguageTypeDAL
 
-namespace Roblox.Users.DAL;
-
-public class LanguageTypeDAL
 {
 	private short _ID;
 
@@ -127,4 +126,7 @@ public class LanguageTypeDAL
 	{
 		return EntityHelper.GetDataEntityIDCollection<short>(new DbInfo(dbConnectionString_LanguageTypeDAL, "LanguageTypes_GetActiveLanguageTypeIDs"));
 	}
+}
+
+
 }

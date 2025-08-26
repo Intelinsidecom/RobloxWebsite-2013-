@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Roblox.ApiClientBase;
 using Roblox.Configuration;
 using Roblox.Games.Client.Properties;
+namespace Roblox.Platform.Games.Clientpublic {
+    class PolicyGroupsClient : GuardedApiClientBase
 
-namespace Roblox.Games.Client;
-
-public class PolicyGroupsClient : GuardedApiClientBase
 {
 	private readonly Func<string> _ApiKeyGetter;
 
@@ -303,4 +302,7 @@ public class PolicyGroupsClient : GuardedApiClientBase
 		};
 		Post("/v1.0/PolicyGroups/DeletePolicyGroupMembers", queryStringParameters);
 	}
+}
+
+
 }

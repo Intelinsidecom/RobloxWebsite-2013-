@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Featureinternal {
+    class SurveysGameRatingsResources_en_us : TranslationResourcesBase, ISurveysGameRatingsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Feature;
-
-internal class SurveysGameRatingsResources_en_us : TranslationResourcesBase, ISurveysGameRatingsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -536,4 +535,7 @@ internal class SurveysGameRatingsResources_en_us : TranslationResourcesBase, ISu
 	{
 		return "Some realistic violence";
 	}
+}
+
+
 }

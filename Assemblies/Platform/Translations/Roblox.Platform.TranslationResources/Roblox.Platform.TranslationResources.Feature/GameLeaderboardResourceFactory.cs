@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class GameLeaderboardResourceFactory
 
-internal static class GameLeaderboardResourceFactory
 {
 	public const string FullNamespace = "Feature.GameLeaderboard";
 
@@ -21,4 +21,7 @@ internal static class GameLeaderboardResourceFactory
 			_ => new GameLeaderboardResources_en_us(state), 
 		};
 	}
+}
+
+
 }

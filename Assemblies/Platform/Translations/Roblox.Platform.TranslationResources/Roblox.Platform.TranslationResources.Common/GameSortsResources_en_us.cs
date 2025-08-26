@@ -1,9 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Commoninternal {
+    class GameSortsResources_en_us : TranslationResourcesBase, IGameSortsResources, ITranslationResources
 
-namespace Roblox.TranslationResources.Common;
-
-internal class GameSortsResources_en_us : TranslationResourcesBase, IGameSortsResources, ITranslationResources
 {
 	private readonly Lazy<IReadOnlyDictionary<string, string>> _AllKeys;
 
@@ -597,4 +596,7 @@ internal class GameSortsResources_en_us : TranslationResourcesBase, IGameSortsRe
 	{
 		return "More Results for";
 	}
+}
+
+
 }

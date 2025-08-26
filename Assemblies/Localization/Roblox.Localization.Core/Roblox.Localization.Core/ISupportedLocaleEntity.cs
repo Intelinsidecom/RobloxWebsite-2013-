@@ -1,8 +1,7 @@
-using Roblox.Entities;
+﻿using Roblox.Entities;
+namespace Roblox.Localization.Coreinternal {
+    interface ISupportedLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 
-namespace Roblox.Platform.Localization.Core;
-
-internal interface ISupportedLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 {
 	string Locale { get; set; }
 
@@ -11,4 +10,7 @@ internal interface ISupportedLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 	string NativeName { get; set; }
 
 	int LanguageId { get; set; }
+}
+
+
 }

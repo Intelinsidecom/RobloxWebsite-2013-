@@ -1,6 +1,6 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderation {
+    /// <summary>
 
-/// <summary>
 /// Provides metrics for the state of work in the given moderation queue(s).
 /// </summary>
 public interface IModerationQueueMetrics
@@ -40,4 +40,7 @@ public interface IModerationQueueMetrics
 	/// <param name="localeId">The locale Id.</param>
 	/// <exception cref="T:System.ArgumentException">Throws when the locale Id is not supported.</exception>
 	long GetTotalNumberOfOpenTasksByLocale(int localeId);
+}
+
+
 }

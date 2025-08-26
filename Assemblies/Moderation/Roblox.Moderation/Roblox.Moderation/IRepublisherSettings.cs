@@ -1,6 +1,9 @@
-namespace Roblox.Platform.Moderation;
+﻿namespace Roblox.Moderationpublic {
+    interface IRepublisherSettings
 
-public interface IRepublisherSettings
 {
 	int MaximumNumberOfOpenTasksToRepublish { get; }
+}
+
+
 }

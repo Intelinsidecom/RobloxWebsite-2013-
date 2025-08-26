@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class CommentsResourceFactory
 
-internal static class CommentsResourceFactory
 {
 	public const string FullNamespace = "Feature.Comments";
 
@@ -21,4 +21,7 @@ internal static class CommentsResourceFactory
 			_ => new CommentsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

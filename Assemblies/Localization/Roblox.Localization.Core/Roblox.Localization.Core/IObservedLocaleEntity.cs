@@ -1,12 +1,14 @@
-using Roblox.Entities;
+﻿using Roblox.Entities;
+namespace Roblox.Localization.Coreinternal {
+    interface IObservedLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 
-namespace Roblox.Platform.Localization.Core;
-
-internal interface IObservedLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 {
 	string Locale { get; set; }
 
 	int? LanguageId { get; set; }
 
 	int? SupportedLocaleId { get; set; }
+}
+
+
 }

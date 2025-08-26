@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class FavoritesResourceFactory
 
-internal static class FavoritesResourceFactory
 {
 	public const string FullNamespace = "Feature.Favorites";
 
@@ -21,4 +21,7 @@ internal static class FavoritesResourceFactory
 			_ => new FavoritesResources_en_us(state), 
 		};
 	}
+}
+
+
 }

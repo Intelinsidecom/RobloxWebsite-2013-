@@ -1,5 +1,5 @@
-namespace Roblox.Users.Client;
-
+namespace Roblox.Platform.Users.Client
+{
 public interface IUsersClientAgentCache
 {
 	void SaveAgent(AgentData agentData);
@@ -8,3 +8,6 @@ public interface IUsersClientAgentCache
 
 	bool TryGetAgentByTypeAndTarget(AssociatedEntityType agentType, long agentTargetId, out AgentData agentData);
 }
+
+}
+

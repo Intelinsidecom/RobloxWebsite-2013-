@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Feature {
+    /// <summary>
 
-/// <summary>
 /// This class overrides LandingResources_en_us to provide locale specific translations where possible,
 /// using the base translations where they are not provided
 /// </summary>
@@ -11,21 +11,21 @@ internal class LandingResources_pt_br : LandingResources_en_us, ILandingResource
 	/// first paragraph under Roblox on your device heading on landing page
 	/// English String: "You can access Roblox on all modern smartphones, desktops, Xbox One, Oculus Rift, and soon on Daydream and Cardboard. Roblox adventures are accessible from any device, so players can imagine with their friends regardless of where they are."
 	/// </summary>
-	public override string DescriptionRobloxOnDeviceParagraphOne => "Você pode acessar Roblox em todos os smartphones modernos, desktops, Xbox One, Oculus Rift e em breve em Daydream e Cardboard. As aventuras do Roblox podem ser jogadas em qualquer dispositivo, ou seja, você pode imaginar com seus amigos onde quer que estejam.";
+	public override string DescriptionRobloxOnDeviceParagraphOne => "VocÃª pode acessar Roblox em todos os smartphones modernos, desktops, Xbox One, Oculus Rift e em breve em Daydream e Cardboard. As aventuras do Roblox podem ser jogadas em qualquer dispositivo, ou seja, vocÃª pode imaginar com seus amigos onde quer que estejam.";
 
 	/// <summary>
 	/// Key: "Description.RobloxOnDeviceParagraphTwo"
 	/// second paragraph under Roblox on Your Device on landing page
 	/// English String: "You can access Roblox on PC, Mac, iOS, Android, Amazon Devices, and Xbox One. Roblox adventures are accessible from any device, so players can imagine with their friends regardless of where they are."
 	/// </summary>
-	public override string DescriptionRobloxOnDeviceParagraphTwo => "Você pode acessar Roblox em PC, Mac, iOS, Android, dispositivos Amazon e Xbox One. As aventuras do Roblox podem ser jogadas em qualquer dispositivo, ou seja, você pode imaginar com seus amigos onde quer que estejam.";
+	public override string DescriptionRobloxOnDeviceParagraphTwo => "VocÃª pode acessar Roblox em PC, Mac, iOS, Android, dispositivos Amazon e Xbox One. As aventuras do Roblox podem ser jogadas em qualquer dispositivo, ou seja, vocÃª pode imaginar com seus amigos onde quer que estejam.";
 
 	/// <summary>
 	/// Key: "Description.WhatIsRobloxParagraphOne"
 	/// first paragraph under what's Roblox heading on landing page
-	/// English String: "Roblox helps power the imagination of people around the world. As the largest growing social platform for play, over 44 million players come to Roblox every month to create adventures, play games, roleplay, and learn with friends. We call it the ‘Imagination Platform’ and believe everyone should have the right to play on it."
+	/// English String: "Roblox helps power the imagination of people around the world. As the largest growing social platform for play, over 44 million players come to Roblox every month to create adventures, play games, roleplay, and learn with friends. We call it the â€˜Imagination Platformâ€™ and believe everyone should have the right to play on it."
 	/// </summary>
-	public override string DescriptionWhatIsRobloxParagraphOne => "Roblox dá asas à imaginação de pessoas no mundo todo. Como a plataforma social para jogo que mais cresce, Roblox conta com mais de 44 milhões de jogadores que se conectam todo mês para criar, jogar, brincar e aprender com os amigos. Chamamos nosso app de uma ‘plataforma de imaginação’ e acreditamos que todos devem ter o direito de jogar nele.";
+	public override string DescriptionWhatIsRobloxParagraphOne => "Roblox dÃ¡ asas Ã  imaginaÃ§Ã£o de pessoas no mundo todo. Como a plataforma social para jogo que mais cresce, Roblox conta com mais de 44 milhÃµes de jogadores que se conectam todo mÃªs para criar, jogar, brincar e aprender com os amigos. Chamamos nosso app de uma â€˜plataforma de imaginaÃ§Ã£oâ€™ e acreditamos que todos devem ter o direito de jogar nele.";
 
 	/// <summary>
 	/// Key: "Heading.RobloxOnDevice"
@@ -39,14 +39,14 @@ internal class LandingResources_pt_br : LandingResources_en_us, ILandingResource
 	/// heading for what is Roblox section on the landing page
 	/// English String: "What is Roblox?"
 	/// </summary>
-	public override string HeadingWhatIsRoblox => "O que é Roblox?";
+	public override string HeadingWhatIsRoblox => "O que Ã© Roblox?";
 
 	/// <summary>
 	/// Key: "Heading.WhatIsRobloxParagraphTwo"
 	/// second paragraph under what's Roblox on the landing page
 	/// English String: "Roblox is the best place to Imagine with Friends. With the largest user-generated online gaming platform, and over 15 million games created by users, Roblox is the #1 gaming site for kids and teens (comScore). Every day, virtual explorers come to Roblox to create adventures, play games, role play, and learn with their friends in a family-friendly, immersive, 3D environment."
 	/// </summary>
-	public override string HeadingWhatIsRobloxParagraphTwo => "Roblox é o melhor lugar para imaginar com seus amigos. Com a maior plataforma de jogo online gerado por usuários e mais de 15 milhões de jogos criados, Roblox é o site nº 1 para crianças e adolescentes (comScore). Todo dia, exploradores virtuais se conectam ao Roblox para criar aventuras, jogar, imaginar e aprender com seus amigos em um ambiente 3D familiar e imersivo.";
+	public override string HeadingWhatIsRobloxParagraphTwo => "Roblox Ã© o melhor lugar para imaginar com seus amigos. Com a maior plataforma de jogo online gerado por usuÃ¡rios e mais de 15 milhÃµes de jogos criados, Roblox Ã© o site nÂº 1 para crianÃ§as e adolescentes (comScore). Todo dia, exploradores virtuais se conectam ao Roblox para criar aventuras, jogar, imaginar e aprender com seus amigos em um ambiente 3D familiar e imersivo.";
 
 	/// <summary>
 	/// Key: "Label.About"
@@ -111,17 +111,17 @@ internal class LandingResources_pt_br : LandingResources_en_us, ILandingResource
 
 	protected override string _GetTemplateForDescriptionRobloxOnDeviceParagraphOne()
 	{
-		return "Você pode acessar Roblox em todos os smartphones modernos, desktops, Xbox One, Oculus Rift e em breve em Daydream e Cardboard. As aventuras do Roblox podem ser jogadas em qualquer dispositivo, ou seja, você pode imaginar com seus amigos onde quer que estejam.";
+		return "VocÃª pode acessar Roblox em todos os smartphones modernos, desktops, Xbox One, Oculus Rift e em breve em Daydream e Cardboard. As aventuras do Roblox podem ser jogadas em qualquer dispositivo, ou seja, vocÃª pode imaginar com seus amigos onde quer que estejam.";
 	}
 
 	protected override string _GetTemplateForDescriptionRobloxOnDeviceParagraphTwo()
 	{
-		return "Você pode acessar Roblox em PC, Mac, iOS, Android, dispositivos Amazon e Xbox One. As aventuras do Roblox podem ser jogadas em qualquer dispositivo, ou seja, você pode imaginar com seus amigos onde quer que estejam.";
+		return "VocÃª pode acessar Roblox em PC, Mac, iOS, Android, dispositivos Amazon e Xbox One. As aventuras do Roblox podem ser jogadas em qualquer dispositivo, ou seja, vocÃª pode imaginar com seus amigos onde quer que estejam.";
 	}
 
 	protected override string _GetTemplateForDescriptionWhatIsRobloxParagraphOne()
 	{
-		return "Roblox dá asas à imaginação de pessoas no mundo todo. Como a plataforma social para jogo que mais cresce, Roblox conta com mais de 44 milhões de jogadores que se conectam todo mês para criar, jogar, brincar e aprender com os amigos. Chamamos nosso app de uma ‘plataforma de imaginação’ e acreditamos que todos devem ter o direito de jogar nele.";
+		return "Roblox dÃ¡ asas Ã  imaginaÃ§Ã£o de pessoas no mundo todo. Como a plataforma social para jogo que mais cresce, Roblox conta com mais de 44 milhÃµes de jogadores que se conectam todo mÃªs para criar, jogar, brincar e aprender com os amigos. Chamamos nosso app de uma â€˜plataforma de imaginaÃ§Ã£oâ€™ e acreditamos que todos devem ter o direito de jogar nele.";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxOnDevice()
@@ -131,12 +131,12 @@ internal class LandingResources_pt_br : LandingResources_en_us, ILandingResource
 
 	protected override string _GetTemplateForHeadingWhatIsRoblox()
 	{
-		return "O que é Roblox?";
+		return "O que Ã© Roblox?";
 	}
 
 	protected override string _GetTemplateForHeadingWhatIsRobloxParagraphTwo()
 	{
-		return "Roblox é o melhor lugar para imaginar com seus amigos. Com a maior plataforma de jogo online gerado por usuários e mais de 15 milhões de jogos criados, Roblox é o site nº 1 para crianças e adolescentes (comScore). Todo dia, exploradores virtuais se conectam ao Roblox para criar aventuras, jogar, imaginar e aprender com seus amigos em um ambiente 3D familiar e imersivo.";
+		return "Roblox Ã© o melhor lugar para imaginar com seus amigos. Com a maior plataforma de jogo online gerado por usuÃ¡rios e mais de 15 milhÃµes de jogos criados, Roblox Ã© o site nÂº 1 para crianÃ§as e adolescentes (comScore). Todo dia, exploradores virtuais se conectam ao Roblox para criar aventuras, jogar, imaginar e aprender com seus amigos em um ambiente 3D familiar e imersivo.";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
@@ -178,4 +178,7 @@ internal class LandingResources_pt_br : LandingResources_en_us, ILandingResource
 	{
 		return "Roblox na Windows Store";
 	}
+}
+
+
 }

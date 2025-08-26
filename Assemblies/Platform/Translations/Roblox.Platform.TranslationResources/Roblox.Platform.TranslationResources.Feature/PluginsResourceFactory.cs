@@ -1,6 +1,6 @@
-namespace Roblox.TranslationResources.Feature;
+﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+    static class PluginsResourceFactory
 
-internal static class PluginsResourceFactory
 {
 	public const string FullNamespace = "Feature.Plugins";
 
@@ -21,4 +21,7 @@ internal static class PluginsResourceFactory
 			_ => new PluginsResources_en_us(state), 
 		};
 	}
+}
+
+
 }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Data</AssemblyName>
@@ -15,8 +15,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Resources.Extensions" Version="7.0.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj" />
