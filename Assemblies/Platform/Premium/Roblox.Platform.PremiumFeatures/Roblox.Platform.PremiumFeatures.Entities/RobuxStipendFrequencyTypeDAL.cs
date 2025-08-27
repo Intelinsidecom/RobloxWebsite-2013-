@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
-namespace Roblox.Platform.PremiumFeatures.Entitiesinternal {
+namespace Roblox.Platform.PremiumFeatures.Entities {
     class RobuxStipendFrequencyTypeDAL
 
 {

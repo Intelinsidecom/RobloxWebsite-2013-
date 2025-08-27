@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Roblox.OwnershipV2.Client.Models
+namespace Roblox.Platform.OwnershipV2.Client.Models
 {
     public enum OwnershipV2OperationResult
     {
@@ -70,9 +70,9 @@ namespace Roblox.OwnershipV2.Client.Models
     }
 }
 
-namespace Roblox.OwnershipV2.Client
+namespace Roblox.Platform.OwnershipV2.Client
 {
-    using Roblox.OwnershipV2.Client.Models;
+    using Roblox.Platform.OwnershipV2.Client.Models;
     using Roblox.ApiClientBase;
 
     public enum SortOrder { Asc, Desc }

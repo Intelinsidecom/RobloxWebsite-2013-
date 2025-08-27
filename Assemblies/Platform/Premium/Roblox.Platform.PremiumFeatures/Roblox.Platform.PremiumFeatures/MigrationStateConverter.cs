@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using Roblox.EventLog;
-namespace Roblox.Platform.PremiumFeaturespublic {
-    class MigrationStateConverter
+namespace Roblox.Platform.PremiumFeatures
+{
+    public class MigrationStateConverter
 
 {
 	private ILogger _Logger;

@@ -1,4 +1,5 @@
-﻿namespace Roblox.Platform.PremiumFeaturespublic {
+namespace Roblox.Platform.PremiumFeatures
+{
     interface IGrantedItemListEntityFactory
 
 {

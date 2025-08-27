@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Roblox.AssetInstances.Client;
+using Roblox.Platform.AssetInstances.Client;
 using Roblox.DataV2.Core;
 using Roblox.EventLog;
-using Roblox.OwnershipV2.Client.Models;
+using Roblox.Platform.OwnershipV2.Client.Models;
 using Roblox.Platform.Core.ExclusiveStartPaging;
-using Roblox.Platform.Membership.Core;
+using Roblox.Platform.MembershipCore;
 
 namespace Roblox.Platform.AssetOwnership;
 

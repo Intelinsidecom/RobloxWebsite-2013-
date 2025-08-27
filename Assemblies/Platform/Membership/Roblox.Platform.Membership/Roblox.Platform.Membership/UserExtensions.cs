@@ -3,7 +3,6 @@ using System.Text;
 using Roblox.Hashing;
 using Roblox.Platform.Core;
 using Roblox.Platform.MembershipCore;
-using Roblox.PremiumFeatures;
 
 namespace Roblox.Platform.Membership;
 
@@ -289,32 +288,5 @@ public static class UserExtensions
 	public static double? ApproximateAgeInDoubleYears(this IUser user)
 	{
 		return AgeChecker.GetSingleton().ApproximateAgeInDoubleYears(user);
-	}
-
-	public static BuildersClubMembershipType GetBuildersClubMembershipType(this IUser user)
-	{
-		if (user == null)
-		{
-			return BuildersClubMembershipType.None;
-		}
-		AccountAddOn accountAddOn = AccountAddOn.GetBuildersClubMembershipAccountAddOn(user.AccountId);
-		if (accountAddOn == null || accountAddOn.Expiration <= DateTime.Now)
-		{
-			return BuildersClubMembershipType.None;
-		}
-		PremiumFeature premiumFeature = PremiumFeature.Get(accountAddOn.PremiumFeatureID);
-		if (premiumFeature.IsOutrageousBuildersClub)
-		{
-			return BuildersClubMembershipType.OBC;
-		}
-		if (premiumFeature.IsTurboBuildersClub)
-		{
-			return BuildersClubMembershipType.TBC;
-		}
-		if (premiumFeature.IsBuildersClub)
-		{
-			return BuildersClubMembershipType.BC;
-		}
-		return BuildersClubMembershipType.None;
 	}
 }

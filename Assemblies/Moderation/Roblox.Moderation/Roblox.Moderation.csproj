@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Moderation</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <NoWarn>$(NoWarn);0618;0436;1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -13,7 +13,7 @@
   <PropertyGroup />
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\\..\\Platform\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
@@ -36,10 +36,6 @@
       </Project>
     </ProjectReference>
     <ProjectReference Include="..\\..\\Localization\\Roblox.Localization.Core\\Roblox.Localization.Core.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
-    <ProjectReference Include="Roblox.Moderation.csproj">
       <Project>
       </Project>
     </ProjectReference>

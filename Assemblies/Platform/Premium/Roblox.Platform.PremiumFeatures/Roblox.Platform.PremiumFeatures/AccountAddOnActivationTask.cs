@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Caching;
@@ -8,7 +8,9 @@ using Roblox.Data.Interfaces;
 using Roblox.EventLog;
 using Roblox.Locking;
 using Roblox.Properties;
-namespace Roblox.Platform.PremiumFeaturespublic {
+using Roblox;
+using Roblox.PremiumFeatures;
+namespace Roblox.Platform.PremiumFeatures {
     class AccountAddOnActivationTask : IRobloxEntity<long, AccountAddOnActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
 {

@@ -53,8 +53,9 @@ public class CountryFactory : ICountryFactory
 	{
 		if (country != null)
 		{
-			return new Roblox.Platform.Users.CountryModel(country.ID, country.Value, country.Code, country.Active, country.Created, country.Updated);
+			return new Roblox.Platform.Users.Implementation.CountryModel(country.ID, country.Value, country.Code, country.Active, country.Created, country.Updated);
 		}
 		return null;
 	}
+}
 }

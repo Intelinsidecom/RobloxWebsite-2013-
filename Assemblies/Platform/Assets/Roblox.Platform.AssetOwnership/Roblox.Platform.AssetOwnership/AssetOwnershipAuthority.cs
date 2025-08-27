@@ -6,7 +6,7 @@ using Roblox.Caching.Interfaces;
 using Roblox.Configuration;
 using Roblox.DataV2.Core;
 using Roblox.EventLog;
-using Roblox.Ownership.Client;
+using Roblox.Platform.Ownership.Client;
 using Roblox.Platform.AssetOwnership.Implementation;
 using Roblox.Platform.AssetOwnership.Properties;
 using Roblox.Platform.Core;

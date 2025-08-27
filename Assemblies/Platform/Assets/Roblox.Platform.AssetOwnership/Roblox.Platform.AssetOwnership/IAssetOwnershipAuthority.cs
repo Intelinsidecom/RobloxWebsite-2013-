@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Roblox.DataV2.Core;
-using Roblox.Ownership.Client;
+using Roblox.Platform.Ownership.Client;
 using Roblox.Platform.Core.ExclusiveStartPaging;
 
 namespace Roblox.Platform.AssetOwnership;

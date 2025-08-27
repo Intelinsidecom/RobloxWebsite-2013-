@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using Roblox.Common;
 using Roblox.EventLog;
-using Roblox.Ownership.Client;
+using Roblox.Platform.Ownership.Client;
 using Roblox.Platform.AssetOwnership.Properties;
 
 namespace Roblox.Platform.AssetOwnership;

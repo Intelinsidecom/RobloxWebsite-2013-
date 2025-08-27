@@ -1620,10 +1620,21 @@
           "bin/placeholder/Roblox.Platform.OwnershipV2.Client.dll": {}
         }
       },
+      "Roblox.Platform.PremiumFeatures.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Platform.PremiumFeatures.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.PremiumFeatures.Models.dll": {}
+        }
+      },
       "Roblox.Platform.VirtualCurrency/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.Currency.Client": "1.0.0",
@@ -3730,6 +3741,11 @@
       "path": "../../Ownership/Roblox.Platform.OwnershipV2.Client/Roblox.Platform.OwnershipV2.Client.csproj",
       "msbuildProject": "../../Ownership/Roblox.Platform.OwnershipV2.Client/Roblox.Platform.OwnershipV2.Client.csproj"
     },
+    "Roblox.Platform.PremiumFeatures.Models/1.0.0": {
+      "type": "project",
+      "path": "../Roblox.Platform.PremiumFeatures.Models/Roblox.Platform.PremiumFeatures.Models.csproj",
+      "msbuildProject": "../Roblox.Platform.PremiumFeatures.Models/Roblox.Platform.PremiumFeatures.Models.csproj"
+    },
     "Roblox.Platform.VirtualCurrency/1.0.0": {
       "type": "project",
       "path": "../../VirtualCurrency/Roblox.Platform.VirtualCurrency/Roblox.Platform.VirtualCurrency.csproj",
@@ -3785,6 +3801,7 @@
       "Roblox.Locking >= 1.0.0",
       "Roblox.MssqlDatabases >= 1.0.0",
       "Roblox.Platform.AssetOwnership >= 1.0.0",
+      "Roblox.Platform.PremiumFeatures.Models >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 7.0.0",
       "System.Data.SqlClient >= 4.9.0"
     ]
@@ -3851,6 +3868,9 @@
             },
             "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj": {
               "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Premium\\Roblox.Platform.PremiumFeatures.Models\\Roblox.Platform.PremiumFeatures.Models.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Premium\\Roblox.Platform.PremiumFeatures.Models\\Roblox.Platform.PremiumFeatures.Models.csproj"
             },
             "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
               "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"

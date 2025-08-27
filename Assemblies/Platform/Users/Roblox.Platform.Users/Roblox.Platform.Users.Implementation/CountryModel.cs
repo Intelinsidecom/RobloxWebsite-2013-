@@ -1,5 +1,5 @@
-﻿using System;
-using Roblox.Users.Interfaces;
+using System;
+using Roblox.Platform.Users.Interfaces;
 namespace Roblox.Platform.Users.Implementation {
     /// <summary>
 

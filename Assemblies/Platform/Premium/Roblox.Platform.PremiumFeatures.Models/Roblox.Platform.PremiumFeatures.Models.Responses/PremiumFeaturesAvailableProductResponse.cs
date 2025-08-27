@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Roblox.PremiumFeatures.Models.Core;
+using Roblox.Platform.PremiumFeatures.Models.Core;
 namespace Roblox.Platform.PremiumFeatures.Models.Responses {
     /// <summary>
 

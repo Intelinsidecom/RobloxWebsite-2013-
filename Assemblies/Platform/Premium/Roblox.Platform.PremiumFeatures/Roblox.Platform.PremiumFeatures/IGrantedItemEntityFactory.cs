@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-namespace Roblox.Platform.PremiumFeaturespublic {
-    interface IGrantedItemEntityFactory
+using System.Collections.Generic;
+namespace Roblox.Platform.PremiumFeatures {
+    public interface IGrantedItemEntityFactory
 
 {
 	/// <summary>

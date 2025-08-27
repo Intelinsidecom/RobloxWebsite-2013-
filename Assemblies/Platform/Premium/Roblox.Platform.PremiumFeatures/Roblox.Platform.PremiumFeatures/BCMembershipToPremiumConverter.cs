@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Roblox.PremiumFeatures.Interfaces;
-namespace Roblox.Platform.PremiumFeaturespublic {
-    class BCMembershipToPremiumConverter : IBCMembershipToPremiumConverter
+using Roblox.Platform.PremiumFeatures.Interfaces;
 
+namespace Roblox.Platform.PremiumFeatures
+{
+    class BCMembershipToPremiumConverter : IBCMembershipToPremiumConverter
 {
 	private readonly IPremiumFeatureFactory _PremiumFeatureFactory;
 

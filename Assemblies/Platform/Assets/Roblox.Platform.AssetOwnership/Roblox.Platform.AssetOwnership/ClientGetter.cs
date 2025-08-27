@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using Roblox.Caching.Interfaces;
 using Roblox.Configuration;
 using Roblox.EventLog;
-using Roblox.Ownership.Client;
+using Roblox.Platform.Ownership.Client;
 using Roblox.Platform.AssetOwnership.Properties;
 
 namespace Roblox.Platform.AssetOwnership;

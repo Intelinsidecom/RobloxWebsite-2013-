@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.PremiumFeaturespublic {
+namespace Roblox.Platform.PremiumFeatures
+{
     interface IGrantedItemListActivationTaskEntityFactory
 
 {

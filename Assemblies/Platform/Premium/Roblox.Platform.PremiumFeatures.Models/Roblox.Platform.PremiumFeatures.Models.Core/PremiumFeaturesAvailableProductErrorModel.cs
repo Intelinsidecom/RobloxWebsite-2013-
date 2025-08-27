@@ -1,6 +1,6 @@
-﻿using System.Runtime.Serialization;
-using Roblox.PremiumFeatures.Models.Enums;
-using Roblox.PremiumFeatures.Models.Responses;
+using System.Runtime.Serialization;
+using Roblox.Platform.PremiumFeatures.Models.Enums;
+using Roblox.Platform.PremiumFeatures.Models.Responses;
 namespace Roblox.Platform.PremiumFeatures.Models.Core {
     [DataContract]
 

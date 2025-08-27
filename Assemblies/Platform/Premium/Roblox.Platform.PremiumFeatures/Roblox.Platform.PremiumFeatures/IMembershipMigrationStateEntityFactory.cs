@@ -1,5 +1,6 @@
-﻿namespace Roblox.Platform.PremiumFeaturespublic {
-    interface IMembershipMigrationStateEntityFactory
+namespace Roblox.Platform.PremiumFeatures
+{
+    public interface IMembershipMigrationStateEntityFactory
 
 {
 	/// <summary>

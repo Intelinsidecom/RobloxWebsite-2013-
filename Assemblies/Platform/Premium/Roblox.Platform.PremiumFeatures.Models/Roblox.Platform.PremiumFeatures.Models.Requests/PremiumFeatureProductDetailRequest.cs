@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Roblox.PremiumFeatures.Models.Core;
-using Roblox.PremiumFeatures.Models.Enums;
+using Roblox.Platform.PremiumFeatures.Models.Core;
+using Roblox.Platform.PremiumFeatures.Models.Enums;
 namespace Roblox.Platform.PremiumFeatures.Models.Requests {
     [DataContract]
 

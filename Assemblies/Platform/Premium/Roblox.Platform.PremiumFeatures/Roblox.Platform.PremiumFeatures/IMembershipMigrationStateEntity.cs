@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using Roblox.Entities;
-namespace Roblox.Platform.PremiumFeaturespublic {
-    interface IMembershipMigrationStateEntity : IUpdateableEntity<int>, IEntity<int>
+namespace Roblox.Platform.PremiumFeatures
+{
+    public interface IMembershipMigrationStateEntity : IUpdateableEntity<int>, IEntity<int>
 
 {
 	string Value { get; set; }

@@ -1,11 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Properties;
-namespace Roblox.Platform.PremiumFeaturespublic {
+namespace Roblox.Platform.PremiumFeatures
+{
     class PremiumFeatureActivationTasks_BillingTestDAL
 
 {

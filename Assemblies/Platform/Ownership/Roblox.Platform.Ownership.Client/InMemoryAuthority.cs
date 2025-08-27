@@ -225,4 +225,3 @@ namespace Roblox.Platform.Ownership.Client {
         }
     }
 }
-}

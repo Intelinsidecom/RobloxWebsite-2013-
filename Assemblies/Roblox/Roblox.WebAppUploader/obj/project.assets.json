@@ -1941,6 +1941,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.Currency.Client": "1.0.0",
@@ -3942,6 +3943,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.Currency.Client": "1.0.0",

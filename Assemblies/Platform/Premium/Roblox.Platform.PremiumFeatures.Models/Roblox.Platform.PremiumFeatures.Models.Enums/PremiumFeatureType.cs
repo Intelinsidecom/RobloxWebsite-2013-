@@ -1,13 +1,11 @@
-﻿namespace Roblox.Platform.PremiumFeatures.Models.Enumspublic {
-    enum PremiumFeatureType
-
+namespace Roblox.Platform.PremiumFeatures.Models.Enums
 {
-	All = 0,
-	Subscription = 10,
-	Robux = 30,
-	BC = 40,
-	Unknown = int.MaxValue
-}
-
-
+    public enum PremiumFeatureType
+    {
+        All = 0,
+        Subscription = 10,
+        Robux = 30,
+        BC = 40,
+        Unknown = int.MaxValue
+    }
 }

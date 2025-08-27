@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using Roblox.Common;
-namespace Roblox.Platform.PremiumFeaturespublic {
+namespace Roblox.Platform.PremiumFeatures
+{
     static class MembershipMigrationStateExtensions
 
 {

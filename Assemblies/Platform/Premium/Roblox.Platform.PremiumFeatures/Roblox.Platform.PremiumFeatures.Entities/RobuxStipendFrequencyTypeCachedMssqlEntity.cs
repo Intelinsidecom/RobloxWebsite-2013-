@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using Roblox.Entities;
-using Roblox.PremiumFeatures.Interfaces.Entities;
-namespace Roblox.Platform.PremiumFeatures.Entitiesinternal {
+using Roblox.Platform.PremiumFeatures.Interfaces.Entities;
+namespace Roblox.Platform.PremiumFeatures.Entities {
     class RobuxStipendFrequencyTypeCachedMssqlEntity : IRobuxStipendFrequencyTypeEntity, IUpdateableEntity<byte>, IEntity<byte>
 
 {

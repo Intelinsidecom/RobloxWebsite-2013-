@@ -1,5 +1,6 @@
-﻿using System;
-namespace Roblox.Platform.PremiumFeaturespublic {
+using System;
+namespace Roblox.Platform.PremiumFeatures
+{
     class AccountAddOnActivationTaskFactory : IAccountAddOnActivationTaskFactory
 
 {

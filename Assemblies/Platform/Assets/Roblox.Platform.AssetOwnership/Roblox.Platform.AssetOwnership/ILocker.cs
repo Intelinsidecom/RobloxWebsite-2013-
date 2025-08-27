@@ -1,4 +1,4 @@
-using Roblox.Ownership.Client;
+using Roblox.Platform.Ownership.Client;
 
 namespace Roblox.Platform.AssetOwnership;
 

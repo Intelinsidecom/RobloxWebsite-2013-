@@ -1,4 +1,4 @@
-using Roblox.Currency.Client;
+using Roblox.Platform.Currency.Client;
 using Roblox.Platform.MembershipCore;
 
 namespace Roblox.Platform.VirtualCurrency;

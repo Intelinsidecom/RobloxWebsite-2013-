@@ -1,5 +1,5 @@
-﻿using System;
-using Roblox.PremiumFeatures.Interfaces;
+using System;
+using Roblox.Platform.PremiumFeatures.Interfaces;
 namespace Roblox.Platform.PremiumFeatures.Implementation {
     /// <summary>
 

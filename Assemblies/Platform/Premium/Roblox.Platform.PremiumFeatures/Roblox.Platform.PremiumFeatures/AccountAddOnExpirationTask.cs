@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Roblox.Caching;
-namespace Roblox.Platform.PremiumFeaturespublic {
+using Roblox;
+namespace Roblox.Platform.PremiumFeatures {
     class AccountAddOnExpirationTask : IParallelWorkTask
 
 {

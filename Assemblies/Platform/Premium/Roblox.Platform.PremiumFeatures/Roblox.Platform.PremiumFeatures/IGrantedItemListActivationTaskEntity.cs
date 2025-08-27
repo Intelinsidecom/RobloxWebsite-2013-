@@ -1,15 +1,17 @@
-﻿using System;
+using System;
 using Roblox.Entities;
-namespace Roblox.Platform.PremiumFeaturespublic {
-    interface IGrantedItemListActivationTaskEntity : IUpdateableEntity<long>, IEntity<long>
 
+namespace Roblox.Platform.PremiumFeatures
 {
-	byte GrantedItemTypeId { get; set; }
+    public interface IGrantedItemListActivationTaskEntity : IUpdateableEntity<long>, IEntity<long>
+    {
+        void ProcessTaskAndMarkComplete(PremiumFeatureActivationTask premiumFeatureActivationTask);
 
-	long PremiumFeatureActivationTaskId { get; set; }
+        byte GrantedItemTypeId { get; set; }
 
-	Guid? WorkerId { get; set; }
+        long PremiumFeatureActivationTaskId { get; set; }
 
+        Guid? WorkerId { get; set; }
 	DateTime? Completed { get; set; }
 
 	DateTime? LeaseExpiration { get; set; }

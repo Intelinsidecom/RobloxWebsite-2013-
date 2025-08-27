@@ -1,13 +1,11 @@
-﻿namespace Roblox.Platform.PremiumFeatures.Models.Enumspublic {
-    enum PremiumFeaturesProductPlatformType
-
+namespace Roblox.Platform.PremiumFeatures.Models.Enums
 {
-	Default,
-	Amazon,
-	Apple,
-	Google,
-	Uwp
-}
-
-
+    public enum PremiumFeaturesProductPlatformType
+    {
+        Default,
+        Amazon,
+        Apple,
+        Google,
+        Uwp
+    }
 }

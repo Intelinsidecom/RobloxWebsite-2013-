@@ -29,5 +29,6 @@
       <Project>
       </Project>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox.PremiumFeatures\Roblox.PremiumFeatures.csproj" />
   </ItemGroup>
 </Project>

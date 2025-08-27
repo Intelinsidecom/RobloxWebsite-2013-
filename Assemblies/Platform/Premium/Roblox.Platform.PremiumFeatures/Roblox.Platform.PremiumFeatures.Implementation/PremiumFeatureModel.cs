@@ -1,4 +1,4 @@
-﻿using Roblox.PremiumFeatures.Interfaces;
+using Roblox.Platform.PremiumFeatures.Interfaces;
 namespace Roblox.Platform.PremiumFeatures.Implementation {
     /// <inheritdoc />
 

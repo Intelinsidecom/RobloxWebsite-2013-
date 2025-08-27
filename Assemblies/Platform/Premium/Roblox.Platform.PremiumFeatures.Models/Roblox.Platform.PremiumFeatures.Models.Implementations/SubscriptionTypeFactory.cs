@@ -1,6 +1,6 @@
-﻿using System;
-using Roblox.PremiumFeatures.Models.Enums;
-using Roblox.PremiumFeatures.Models.Interfaces;
+using System;
+using Roblox.Platform.PremiumFeatures.Models.Enums;
+using Roblox.Platform.PremiumFeatures.Models.Interfaces;
 namespace Roblox.Platform.PremiumFeatures.Models.Implementations {
     /// <summary>
 

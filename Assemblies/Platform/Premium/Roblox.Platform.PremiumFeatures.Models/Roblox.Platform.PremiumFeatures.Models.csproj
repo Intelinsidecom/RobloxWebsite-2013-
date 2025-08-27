@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.PremiumFeatures.Models</AssemblyName>
@@ -11,5 +11,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="..\Roblox.Platform.PremiumFeatures\Roblox.PremiumFeatures.Models\**\*.cs">
+      <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
+    </Compile>
+  </ItemGroup>
 </Project>

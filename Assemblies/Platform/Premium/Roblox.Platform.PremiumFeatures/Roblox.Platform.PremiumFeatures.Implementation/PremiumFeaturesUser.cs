@@ -4,9 +4,9 @@ using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
 using Roblox.Platform.PremiumFeatures.Interfaces;
 using Roblox.PremiumFeatures.Client.Interfaces;
-using Roblox.PremiumFeatures.Models.Enums;
-using Roblox.PremiumFeatures.Models.Requests;
-using Roblox.PremiumFeatures.Models.Responses;
+using Roblox.Platform.PremiumFeatures.Models.Enums;
+using Roblox.Platform.PremiumFeatures.Models.Requests;
+using Roblox.Platform.PremiumFeatures.Models.Responses;
 
 namespace Roblox.Platform.PremiumFeatures.Implementation;
 

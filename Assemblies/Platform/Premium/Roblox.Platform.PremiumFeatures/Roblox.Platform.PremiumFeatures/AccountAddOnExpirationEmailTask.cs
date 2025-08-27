@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-namespace Roblox.Platform.PremiumFeaturespublic {
+namespace Roblox.Platform.PremiumFeatures
+{
     class AccountAddOnExpirationEmailTask : IRobloxEntity<long, AccountAddOnExpirationEmailTaskDAL>, ICacheableObject<long>, ICacheableObject
 
 {

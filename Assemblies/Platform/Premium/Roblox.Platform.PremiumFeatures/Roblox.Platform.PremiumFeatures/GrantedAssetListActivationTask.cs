@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
@@ -6,7 +6,9 @@ using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.EventLog;
 using Roblox.Platform.AssetOwnership;
-namespace Roblox.Platform.PremiumFeaturespublic {
+using Roblox;
+namespace Roblox.Platform.PremiumFeatures
+{
     class GrantedAssetListActivationTask : IRobloxEntity<long, GrantedAssetListActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
 {

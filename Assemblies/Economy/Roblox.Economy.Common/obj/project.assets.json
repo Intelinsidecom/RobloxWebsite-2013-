@@ -942,6 +942,24 @@
           "bin/placeholder/Roblox.Amazon.Firehose.dll": {}
         }
       },
+      "Roblox.ApiClientBase/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.DataV2.Core": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Sentinels": "1.0.0",
+          "System.Configuration.ConfigurationManager": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.ApiClientBase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.ApiClientBase.dll": {}
+        }
+      },
       "Roblox.Caching/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1208,6 +1226,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.Currency.Client": "1.0.0",
@@ -2709,6 +2728,11 @@
       "type": "project",
       "path": "../../Amazon/Roblox.Amazon.Firehose/Roblox.Amazon.Firehose.csproj",
       "msbuildProject": "../../Amazon/Roblox.Amazon.Firehose/Roblox.Amazon.Firehose.csproj"
+    },
+    "Roblox.ApiClientBase/1.0.0": {
+      "type": "project",
+      "path": "../../ApiClientBase/Roblox.ApiClientBase/Roblox.ApiClientBase.csproj",
+      "msbuildProject": "../../ApiClientBase/Roblox.ApiClientBase/Roblox.ApiClientBase.csproj"
     },
     "Roblox.Caching/1.0.0": {
       "type": "project",

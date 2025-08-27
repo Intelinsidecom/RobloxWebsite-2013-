@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Roblox.DataV2.Core;
 using Roblox.EventLog;
-using Roblox.Ownership.Client;
+using Roblox.Platform.Ownership.Client;
 using Roblox.Platform.Core.ExclusiveStartPaging;
 
 namespace Roblox.Platform.AssetOwnership;

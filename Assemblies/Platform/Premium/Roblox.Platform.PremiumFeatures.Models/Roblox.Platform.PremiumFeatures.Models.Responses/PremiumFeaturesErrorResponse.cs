@@ -1,12 +1,12 @@
-﻿using System.Runtime.Serialization;
-using Roblox.PremiumFeatures.Models.Enums;
+using System.Runtime.Serialization;
+using Roblox.Platform.PremiumFeatures.Models.Enums;
 namespace Roblox.Platform.PremiumFeatures.Models.Responses {
     [DataContract]
 
 public class PremiumFeaturesErrorResponse : PremiumFeaturesAvailableProductResponse
 {
 	/// <summary>
-	/// Error Code. see <see cref="T:Roblox.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode" />
+	/// Error Code. see <see cref="T:Roblox.Platform.PremiumFeatures.Models.Enums.PremiumFeaturesErrorCode" />
 	/// </summary>
 	[DataMember(Name = "errorCode", EmitDefaultValue = false, IsRequired = false)]
 	public PremiumFeaturesErrorCode ErrorCode { get; set; }

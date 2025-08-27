@@ -1,7 +1,7 @@
-﻿namespace Roblox.Platform.PremiumFeatures.Models.Enumspublic {
-    enum SubscriptionType
-
+namespace Roblox.Platform.PremiumFeatures.Models.Enums
 {
+    public enum SubscriptionType
+    {
 	/// <summary>
 	/// Unknown Type
 	/// </summary>
@@ -42,7 +42,5 @@
 	/// Premium Membership Tier 3 One Month
 	/// </summary>
 	RobloxPremium2200OneMonth = 120
-}
-
-
+    }
 }

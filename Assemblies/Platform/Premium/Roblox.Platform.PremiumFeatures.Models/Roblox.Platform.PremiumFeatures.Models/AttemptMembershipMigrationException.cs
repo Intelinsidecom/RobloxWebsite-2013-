@@ -1,24 +1,22 @@
-﻿using System;
-namespace Roblox.Platform.PremiumFeatures.Modelspublic {
-    class AttemptMembershipMigrationException : Exception
-
+using System;
+namespace Roblox.Platform.PremiumFeatures.Models
 {
-	public MembershipMigrationErrorResponse MembershipMigrationErrorResponse { get; set; }
+    public class AttemptMembershipMigrationException : Exception
+    {
+        public MembershipMigrationErrorResponse MembershipMigrationErrorResponse { get; set; }
 
-	public AttemptMembershipMigrationException(MembershipMigrationErrorResponse errorResponse)
-	{
-		MembershipMigrationErrorResponse = errorResponse;
-	}
+        public AttemptMembershipMigrationException(MembershipMigrationErrorResponse errorResponse)
+        {
+            MembershipMigrationErrorResponse = errorResponse;
+        }
 
-	public AttemptMembershipMigrationException(string message, MembershipMigrationsErrorCode? errorCode = null)
-	{
-		MembershipMigrationErrorResponse = new MembershipMigrationErrorResponse
-		{
-			ErrorCode = (errorCode ?? MembershipMigrationsErrorCode.Unknown),
-			ErrorMessage = message
-		};
-	}
-}
-
-
+        public AttemptMembershipMigrationException(string message, MembershipMigrationsErrorCode? errorCode = null)
+        {
+            MembershipMigrationErrorResponse = new MembershipMigrationErrorResponse
+            {
+                ErrorCode = (errorCode ?? MembershipMigrationsErrorCode.Unknown),
+                ErrorMessage = message
+            };
+        }
+    }
 }

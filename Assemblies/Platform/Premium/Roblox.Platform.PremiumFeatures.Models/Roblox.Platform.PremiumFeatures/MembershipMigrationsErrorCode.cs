@@ -1,11 +1,9 @@
-﻿namespace Roblox.Platform.PremiumFeaturespublic {
-    enum MembershipMigrationsErrorCode
-
+namespace Roblox.Platform.PremiumFeatures.Models
 {
-	Unknown = 0,
-	Disabled = 10,
-	ServerError = 20
-}
-
-
+    public enum MembershipMigrationsErrorCode
+    {
+        Unknown = 0,
+        Disabled = 10,
+        ServerError = 20
+    }
 }

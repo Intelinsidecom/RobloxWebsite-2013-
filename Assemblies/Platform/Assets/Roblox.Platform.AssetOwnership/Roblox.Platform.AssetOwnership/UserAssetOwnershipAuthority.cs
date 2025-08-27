@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Roblox.AssetInstances.Client;
+using Roblox.Platform.AssetInstances.Client;
 using Roblox.Configuration;
 using Roblox.DataV2.Core;
 using Roblox.EventLog;
-using Roblox.OwnershipV2.Client;
-using Roblox.OwnershipV2.Client.Models;
+using Roblox.Platform.OwnershipV2.Client;
+using Roblox.Platform.OwnershipV2.Client.Models;
 using Roblox.Platform.AssetOwnership.Properties;
 using Roblox.Platform.Core;
-using Roblox.Platform.Membership.Core;
+using Roblox.Platform.MembershipCore;
 using Roblox.Platform.OwnershipV2;
 
 namespace Roblox.Platform.AssetOwnership;

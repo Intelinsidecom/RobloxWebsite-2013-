@@ -17,10 +17,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="Roblox.Platform.PolicyLookup.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <ProjectReference Include="..\\..\\Demographics\\Roblox.Platform.Demographics\\Roblox.Platform.Demographics.csproj">
       <Project>
       </Project>
@@ -34,10 +30,6 @@
       </Project>
     </ProjectReference>
     <ProjectReference Include="..\\..\\..\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
-    <ProjectReference Include="Roblox.Platform.PolicyLookup.csproj">
       <Project>
       </Project>
     </ProjectReference>

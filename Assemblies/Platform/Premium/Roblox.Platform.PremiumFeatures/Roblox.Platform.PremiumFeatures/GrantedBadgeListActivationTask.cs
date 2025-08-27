@@ -1,11 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-namespace Roblox.Platform.PremiumFeaturespublic {
+using Roblox;
+namespace Roblox.Platform.PremiumFeatures
+{
     class GrantedBadgeListActivationTask : IRobloxEntity<long, GrantedBadgeListActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
 {

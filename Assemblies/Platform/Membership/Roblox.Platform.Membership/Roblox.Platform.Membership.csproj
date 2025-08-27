@@ -36,8 +36,7 @@
     <ProjectReference Include="..\..\..\Random\Roblox.Random\Roblox.Random.csproj" />
     <ProjectReference Include="..\..\..\Roblox\Roblox.Entities\Roblox.Entities.csproj" />
     <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj" />
-    <ProjectReference Include="..\..\Premium\Roblox.Platform.PremiumFeatures\Roblox.Platform.PremiumFeatures.csproj" />
-    <ProjectReference Include="..\..\Premium\Roblox.Platform.PremiumFeatures\Roblox.Platform.PremiumFeatures.csproj" />
     <ProjectReference Include="..\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj" />
+    <ProjectReference Include="..\..\..\Agents\Roblox.Agents\Roblox.Agents.csproj" />
   </ItemGroup>
 </Project>
