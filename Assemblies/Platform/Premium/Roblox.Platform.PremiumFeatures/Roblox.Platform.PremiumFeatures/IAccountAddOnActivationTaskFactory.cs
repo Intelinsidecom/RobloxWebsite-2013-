@@ -1,4 +1,5 @@
 using System;
+using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures
 {
     interface IAccountAddOnActivationTaskFactory

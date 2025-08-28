@@ -1,7 +1,7 @@
 using Roblox.Billing.Client;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
-using Roblox.PremiumFeatures.Models;
+using Roblox.Platform.PremiumFeatures.Models;
 
 namespace Roblox.Platform.PremiumFeatures;
 

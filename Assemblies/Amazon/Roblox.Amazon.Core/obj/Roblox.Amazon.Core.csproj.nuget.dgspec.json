@@ -60,7 +60,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.102, )"
+              "version": "[3.7.500.11, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

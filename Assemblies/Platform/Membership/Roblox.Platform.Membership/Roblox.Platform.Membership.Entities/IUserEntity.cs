@@ -1,4 +1,6 @@
 using System;
+using Roblox;
+using Roblox.Platform.Membership;
 
 namespace Roblox.Platform.Membership.Entities;
 

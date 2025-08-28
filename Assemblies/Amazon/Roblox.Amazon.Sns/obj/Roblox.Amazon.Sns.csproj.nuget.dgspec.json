@@ -60,7 +60,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.102, )"
+              "version": "[3.7.500.11, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -146,7 +146,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.102, )"
+              "version": "[3.7.500.11, )"
             },
             "AWSSDK.SimpleNotificationService": {
               "target": "Package",
@@ -164,7 +164,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -245,7 +245,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

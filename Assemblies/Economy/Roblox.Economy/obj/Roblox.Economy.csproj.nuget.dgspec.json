@@ -60,7 +60,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.102, )"
+              "version": "[3.7.500.11, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -152,7 +152,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.200, )"
+              "version": "[3.7.500.11, )"
             },
             "AWSSDK.KinesisFirehose": {
               "target": "Package",
@@ -166,7 +166,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -256,7 +256,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -356,7 +356,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             },
             "System.Runtime.Caching": {
               "target": "Package",
@@ -593,7 +593,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -629,7 +629,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net471"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -637,8 +637,8 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net471": {
-            "targetAlias": "net471",
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Common\\Roblox.Common.NetStandard\\Roblox.Common.NetStandard.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Common\\Roblox.Common.NetStandard\\Roblox.Common.NetStandard.csproj"
@@ -668,18 +668,12 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net471": {
-          "targetAlias": "net471",
+        "net472": {
+          "targetAlias": "net472",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -753,7 +747,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -978,7 +972,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             },
             "System.Resources.Extensions": {
               "target": "Package",
@@ -1074,7 +1068,7 @@
           "dependencies": {
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -1160,7 +1154,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -1307,7 +1301,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.200, )"
+              "version": "[3.7.500.11, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -1315,7 +1309,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -1533,7 +1527,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -1657,7 +1651,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net471"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -1665,8 +1659,8 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net471": {
-            "targetAlias": "net471",
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj"
@@ -1687,15 +1681,9 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net471": {
-          "targetAlias": "net471",
+        "net472": {
+          "targetAlias": "net472",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -1723,7 +1711,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net471"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -1731,8 +1719,8 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net471": {
-            "targetAlias": "net471",
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         },
@@ -1749,15 +1737,9 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net471": {
-          "targetAlias": "net471",
+        "net472": {
+          "targetAlias": "net472",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
             "System.Collections.Concurrent": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -1785,7 +1767,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net471"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -1793,8 +1775,8 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net471": {
-            "targetAlias": "net471",
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         },
@@ -1811,16 +1793,8 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net471": {
-          "targetAlias": "net471",
-          "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            }
-          },
+        "net472": {
+          "targetAlias": "net472",
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
@@ -1843,7 +1817,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net471"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -1851,8 +1825,8 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net471": {
-            "targetAlias": "net471",
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj"
@@ -1888,18 +1862,12 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net471": {
-          "targetAlias": "net471",
+        "net472": {
+          "targetAlias": "net472",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -2054,11 +2022,11 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             },
             "System.Security.Permissions": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -2215,7 +2183,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

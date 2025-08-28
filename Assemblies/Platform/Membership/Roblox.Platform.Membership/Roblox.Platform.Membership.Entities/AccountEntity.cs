@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
-using Roblox.Users.Client;
+using Roblox.Platform.Users.Client;
+using Roblox;
 
 namespace Roblox.Platform.Membership.Entities;
 

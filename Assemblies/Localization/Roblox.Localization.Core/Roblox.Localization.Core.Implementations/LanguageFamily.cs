@@ -1,6 +1,6 @@
-﻿using System;
-namespace Roblox.Localization.Core.Implementationsinternal {
-    class LanguageFamily : IEquatable<LanguageFamily>, ILanguageFamily, ILanguageFamilyIdentifier
+using System;
+namespace Roblox.Localization.Core.Implementations {
+    internal class LanguageFamily : IEquatable<LanguageFamily>, ILanguageFamily, ILanguageFamilyIdentifier
 
 {
 	public int Id { get; }

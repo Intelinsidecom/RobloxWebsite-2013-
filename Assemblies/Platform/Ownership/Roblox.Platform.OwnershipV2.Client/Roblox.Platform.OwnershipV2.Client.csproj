@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.OwnershipV2.Client</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <LangVersion>11.0</LangVersion>
     <NoWarn>$(NoWarn);CS0618;CS1668</NoWarn>
   </PropertyGroup>

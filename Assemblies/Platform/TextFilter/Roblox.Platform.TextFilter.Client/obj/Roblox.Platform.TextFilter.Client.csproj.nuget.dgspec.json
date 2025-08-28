@@ -67,7 +67,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -627,7 +627,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"

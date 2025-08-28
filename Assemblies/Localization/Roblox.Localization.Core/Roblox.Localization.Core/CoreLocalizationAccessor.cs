@@ -5,9 +5,9 @@ using System.Linq;
 using Roblox.Common;
 using Roblox.Configuration;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core.Implementations;
-using Roblox.Platform.Localization.Core.Properties;
-namespace Roblox.Platform.Localization.Core {
+using Roblox.Localization.Core.Implementations;
+using Roblox.Localization.Core.Properties;
+namespace Roblox.Localization.Core {
     internal class CoreLocalizationAccessor : ICoreLocalizationAccessor
     {
 	private const int _PageSizeForSupportedLocale = 1000;
@@ -207,4 +207,3 @@ namespace Roblox.Platform.Localization.Core {
 }
 
 }
-

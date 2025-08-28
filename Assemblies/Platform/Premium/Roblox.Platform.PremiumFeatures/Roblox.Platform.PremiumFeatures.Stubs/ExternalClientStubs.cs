@@ -1,7 +1,7 @@
-using Roblox.PremiumFeatures.Models.Enums;
-using Roblox.PremiumFeatures.Models.Requests;
-using Roblox.PremiumFeatures.Models.Responses;
-using Roblox.PremiumFeatures.Models;
+using Roblox.Platform.PremiumFeatures.Models.Enums;
+using Roblox.Platform.PremiumFeatures.Models.Requests;
+using Roblox.Platform.PremiumFeatures.Models.Responses;
+using Roblox.Platform.PremiumFeatures.Models;
 
 namespace Roblox.PremiumFeatures.Client.Interfaces
 {
@@ -18,9 +18,9 @@ namespace Roblox.PremiumFeatures.Client.Interfaces
 
 namespace Roblox.Billing.Client
 {
-    using Roblox.PremiumFeatures.Models.Requests;
-    using Roblox.PremiumFeatures.Models.Responses;
-    using Roblox.PremiumFeatures.Models;
+    using Roblox.Platform.PremiumFeatures.Models.Requests;
+    using Roblox.Platform.PremiumFeatures.Models.Responses;
+    using Roblox.Platform.PremiumFeatures.Models;
 
     // Minimal stub to satisfy compile until real client is wired
     public interface IBillingClient

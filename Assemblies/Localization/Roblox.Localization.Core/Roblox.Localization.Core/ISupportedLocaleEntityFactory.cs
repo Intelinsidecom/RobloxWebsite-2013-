@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-namespace Roblox.Localization.Coreinternal {
-    interface ISupportedLocaleEntityFactory
+using System.Collections.Generic;
+namespace Roblox.Localization.Core {
+    internal interface ISupportedLocaleEntityFactory
 
 {
 	/// <summary>

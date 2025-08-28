@@ -6,8 +6,9 @@ using Roblox.Instrumentation;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership.Entities;
 using Roblox.Platform.Membership.Properties;
-using Roblox.Users.Client;
-using Roblox.Users.Properties;
+using Roblox.Platform.Users.Client;
+using Roblox.Platform.Users.Properties;
+using Roblox;
 
 namespace Roblox.Platform.Membership;
 

@@ -1466,7 +1466,7 @@
           "Roblox.MemCachedClient": "1.0.0",
           "Roblox.Redis": "1.0.0",
           "StackExchange.Redis": "1.2.6",
-          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Runtime.Caching": "4.7.0"
         },
         "compile": {
@@ -1481,7 +1481,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Roblox.EventLog": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Common.NetStandard.dll": {}
@@ -1496,7 +1496,7 @@
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "Roblox.EventLog": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Configuration.dll": {}
@@ -1637,8 +1637,8 @@
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.ServiceDiscovery": "1.0.0",
           "StackExchange.Redis": "1.2.6",
-          "System.Configuration.ConfigurationManager": "4.7.0",
-          "System.Security.Permissions": "6.0.0"
+          "System.Configuration.ConfigurationManager": "7.0.0",
+          "System.Security.Permissions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Redis.dll": {}
@@ -1675,7 +1675,7 @@
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.ServiceDiscovery.dll": {}

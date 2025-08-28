@@ -1,5 +1,5 @@
-﻿using Roblox.Entities;
-namespace Roblox.Localization.Coreinternal {
+using Roblox.Entities;
+namespace Roblox.Localization.Core {
     interface IObservedLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 
 {

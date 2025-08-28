@@ -10,7 +10,7 @@ using Roblox.Platform.Membership.Commands.Properties;
 using Roblox.Platform.Membership.Entities;
 using Roblox.Platform.Membership.Properties;
 using Roblox.TextFilter.Client;
-using Roblox.Users.Client;
+using Roblox.Platform.Users.Client;
 
 namespace Roblox.Platform.Membership.Commands;
 

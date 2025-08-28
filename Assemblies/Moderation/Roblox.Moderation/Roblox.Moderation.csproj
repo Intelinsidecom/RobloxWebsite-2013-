@@ -47,10 +47,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <ProjectReference Include="..\\..\\Roblox\\Roblox.TrackingQueue\\Roblox.TrackingQueue.csproj">
       <Project>
       </Project>

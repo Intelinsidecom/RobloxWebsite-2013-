@@ -1,7 +1,7 @@
 using System;
 using Roblox.Platform.Membership.Entities;
 using Roblox.Platform.MembershipCore;
-using Roblox.Users.Client;
+using Roblox.Platform.Users.Client;
 
 namespace Roblox.Platform.Membership;
 
@@ -65,22 +65,22 @@ internal class User : Visitor, IUser, IVisitor, IVisitorIdentifier, IUserIdentif
 
 	public bool IsBuildersClubMember()
 	{
-		return PremiumFeatureHelper.IsBuildersClubMember(AccountId);
+		return BcMembership.Service.IsBuildersClubMember(AccountId);
 	}
 
 	public bool IsTurboBuildersClubMember()
 	{
-		return PremiumFeatureHelper.IsTurboBuildersClubMember(AccountId);
+		return BcMembership.Service.IsTurboBuildersClubMember(AccountId);
 	}
 
 	public bool IsOutrageousBuildersClubMember()
 	{
-		return PremiumFeatureHelper.IsOutrageousBuildersClubMember(AccountId);
+		return BcMembership.Service.IsOutrageousBuildersClubMember(AccountId);
 	}
 
 	public bool IsAnyBuildersClubMember()
 	{
-		return PremiumFeatureHelper.IsAnyBuildersClubMember(AccountId);
+		return BcMembership.Service.IsAnyBuildersClubMember(AccountId);
 	}
 
 	public bool IsBCMember(MembershipLevels.BCMembershipLevel? bcMembershipLevel = null)

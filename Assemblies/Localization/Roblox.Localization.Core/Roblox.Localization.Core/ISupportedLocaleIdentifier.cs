@@ -1,5 +1,5 @@
-﻿namespace Roblox.Localization.Corepublic {
-    interface ISupportedLocaleIdentifier
+namespace Roblox.Localization.Core {
+    public interface ISupportedLocaleIdentifier
 
 {
 	int Id { get; }

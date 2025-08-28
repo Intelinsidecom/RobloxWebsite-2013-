@@ -1,4 +1,4 @@
-﻿using Roblox.PremiumFeatures.Interfaces.Entities;
+using Roblox.Platform.PremiumFeatures.Interfaces.Entities;
 namespace Roblox.Platform.PremiumFeatures.Interfaces.EntityFactories {
     /// <summary>
 

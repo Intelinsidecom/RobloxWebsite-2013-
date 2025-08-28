@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Notifications.Push</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <NoWarn>$(NoWarn);1668;0618</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -13,10 +13,10 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <PackageReference Include="AWSSDK.Core" Version="3.7.0" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.11" />
     <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Core" />

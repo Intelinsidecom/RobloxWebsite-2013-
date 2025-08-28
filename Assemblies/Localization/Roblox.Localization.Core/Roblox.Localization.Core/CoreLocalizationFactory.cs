@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.EventLog;
-using Roblox.Platform.Localization.Core.Properties;
+using Roblox.Localization.Core.Properties;
 namespace Roblox.Localization.Core {
     [ExcludeFromCodeCoverage]
 

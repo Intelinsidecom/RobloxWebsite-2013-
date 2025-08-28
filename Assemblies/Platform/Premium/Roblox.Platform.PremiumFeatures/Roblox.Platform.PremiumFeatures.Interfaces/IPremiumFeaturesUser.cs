@@ -1,5 +1,5 @@
-using Roblox.PremiumFeatures.Models.Requests;
-using Roblox.PremiumFeatures.Models.Responses;
+using Roblox.Platform.PremiumFeatures.Models.Requests;
+using Roblox.Platform.PremiumFeatures.Models.Responses;
 
 namespace Roblox.Platform.PremiumFeatures.Interfaces;
 

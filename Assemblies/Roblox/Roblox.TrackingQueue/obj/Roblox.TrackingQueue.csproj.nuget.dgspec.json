@@ -60,7 +60,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.102, )"
+              "version": "[3.7.500.11, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -161,7 +161,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.200, )"
+              "version": "[3.7.500.11, )"
             },
             "AWSSDK.SQS": {
               "target": "Package",
@@ -179,7 +179,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -260,7 +260,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -564,7 +564,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -803,11 +803,11 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             },
             "System.Security.Permissions": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -843,7 +843,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net471"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -851,8 +851,8 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net471": {
-            "targetAlias": "net471",
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj"
@@ -876,15 +876,9 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net471": {
-          "targetAlias": "net471",
+        "net472": {
+          "targetAlias": "net472",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -1033,7 +1027,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

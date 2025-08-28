@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "AWSSDK.Core/3.7.200": {
+      "AWSSDK.Core/3.7.500.11": {
         "type": "package",
         "compile": {
           "lib/net45/AWSSDK.Core.dll": {
@@ -490,29 +490,26 @@
           "lib/net45/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/6.0.1": {
+      "System.Configuration.ConfigurationManager/7.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.Permissions": "6.0.0"
+          "System.Security.Permissions": "7.0.0"
         },
         "frameworkAssemblies": [
           "System.Configuration"
         ],
         "compile": {
-          "lib/net461/System.Configuration.ConfigurationManager.dll": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net461/System.Configuration.ConfigurationManager.dll": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
-        "runtimeTargets": {
-          "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+        "build": {
+          "buildTransitive/net462/_._": {}
         }
       },
       "System.Data.SqlClient/4.9.0": {
@@ -764,7 +761,7 @@
           }
         }
       },
-      "System.Security.Permissions/6.0.0": {
+      "System.Security.Permissions/7.0.0": {
         "type": "package",
         "dependencies": {
           "System.Security.AccessControl": "6.0.0"
@@ -779,20 +776,17 @@
           "WindowsBase"
         ],
         "compile": {
-          "lib/net461/System.Security.Permissions.dll": {
+          "lib/net462/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net461/System.Security.Permissions.dll": {
+          "lib/net462/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
-        "runtimeTargets": {
-          "runtimes/win/lib/net461/System.Security.Permissions.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+        "build": {
+          "buildTransitive/net462/_._": {}
         }
       },
       "System.Security.Principal.Windows/5.0.0": {
@@ -910,7 +904,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "AWSSDK.Core": "3.7.102",
+          "AWSSDK.Core": "3.7.500.11",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Sentinels": "1.0.0"
         },
@@ -925,7 +919,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "AWSSDK.Core": "3.7.200",
+          "AWSSDK.Core": "3.7.500.11",
           "AWSSDK.KinesisFirehose": "3.7.200",
           "Roblox.Amazon.Core": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -933,7 +927,7 @@
           "Roblox.EventLog": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Sentinels": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Amazon.Firehose.dll": {}
@@ -951,7 +945,7 @@
           "Roblox.DataV2.Core": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Sentinels": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.ApiClientBase.dll": {}
@@ -972,7 +966,7 @@
           "Roblox.MemCachedClient": "1.0.0",
           "Roblox.Redis": "1.0.0",
           "StackExchange.Redis": "1.2.6",
-          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Runtime.Caching": "4.7.0"
         },
         "compile": {
@@ -998,13 +992,13 @@
       },
       "Roblox.Common/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Roblox.Common.NetStandard": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Data.SqlClient": "4.9.0"
         },
         "compile": {
@@ -1019,7 +1013,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Roblox.EventLog": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Common.NetStandard.dll": {}
@@ -1034,7 +1028,7 @@
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "Roblox.EventLog": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Configuration.dll": {}
@@ -1061,7 +1055,7 @@
           "Roblox.Caching": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Resources.Extensions": "7.0.0"
         },
         "compile": {
@@ -1093,7 +1087,7 @@
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.VirtualCurrency": "1.0.0",
           "Roblox.TransactionEvents": "1.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Data.SqlClient": "4.9.0"
         },
         "compile": {
@@ -1117,7 +1111,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "AWSSDK.Core": "3.7.200",
+          "AWSSDK.Core": "3.7.500.11",
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Amazon.Firehose": "1.0.0",
           "Roblox.Collections": "1.0.0",
@@ -1126,7 +1120,7 @@
           "Roblox.EventLog": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Random": "1.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.1"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.EventStream.dll": {}
@@ -1197,7 +1191,7 @@
           "Roblox.Configuration": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Mssql": "1.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Data.SqlClient": "4.9.0"
         },
         "compile": {
@@ -1209,7 +1203,7 @@
       },
       "Roblox.Platform.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "Roblox.DataV2.Core": "1.0.0"
@@ -1223,7 +1217,7 @@
       },
       "Roblox.Platform.Currency.Client/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "System.Collections.Concurrent": "4.3.0"
         },
@@ -1236,7 +1230,7 @@
       },
       "Roblox.Platform.MembershipCore/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
+        "framework": ".NETFramework,Version=v4.7.2",
         "compile": {
           "bin/placeholder/Roblox.Platform.MembershipCore.dll": {}
         },
@@ -1246,7 +1240,7 @@
       },
       "Roblox.Platform.VirtualCurrency/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
+        "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Roblox.ApiClientBase": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -1254,7 +1248,7 @@
           "Roblox.Platform.Currency.Client": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.Sentinels": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.VirtualCurrency.dll": {}
@@ -1284,8 +1278,8 @@
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.ServiceDiscovery": "1.0.0",
           "StackExchange.Redis": "1.2.6",
-          "System.Configuration.ConfigurationManager": "4.7.0",
-          "System.Security.Permissions": "6.0.0"
+          "System.Configuration.ConfigurationManager": "7.0.0",
+          "System.Security.Permissions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Redis.dll": {}
@@ -1312,7 +1306,7 @@
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
-          "System.Configuration.ConfigurationManager": "4.7.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.ServiceDiscovery.dll": {}
@@ -1338,15 +1332,15 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.7.200": {
-      "sha512": "Nf6mjRMLQZjy5W6B4l2FoKX6bibwNBWrm6HCeBveHmc8BxA22FZSRLMzSsUVmFo6BfjzuduX+t1AsCYIUw1DjA==",
+    "AWSSDK.Core/3.7.500.11": {
+      "sha512": "mKWo09X/l6oKvtUs902CxhM3/YTqEfhkcfBtremdd6DNWLd1Xg0fLbhOOJvdKUlt8gKDWF6nVfi6LORx9dU7Ow==",
       "type": "package",
-      "path": "awssdk.core/3.7.200",
+      "path": "awssdk.core/3.7.500.11",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.7.200.nupkg.sha512",
+        "awssdk.core.3.7.500.11.nupkg.sha512",
         "awssdk.core.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.Core.dll",
@@ -1355,6 +1349,9 @@
         "lib/net45/AWSSDK.Core.dll",
         "lib/net45/AWSSDK.Core.pdb",
         "lib/net45/AWSSDK.Core.xml",
+        "lib/net8.0/AWSSDK.Core.dll",
+        "lib/net8.0/AWSSDK.Core.pdb",
+        "lib/net8.0/AWSSDK.Core.xml",
         "lib/netcoreapp3.1/AWSSDK.Core.dll",
         "lib/netcoreapp3.1/AWSSDK.Core.pdb",
         "lib/netcoreapp3.1/AWSSDK.Core.xml",
@@ -2024,27 +2021,29 @@
         "system.collections.concurrent.nuspec"
       ]
     },
-    "System.Configuration.ConfigurationManager/6.0.1": {
-      "sha512": "jXw9MlUu/kRfEU0WyTptAVueupqIeE3/rl0EZDMlf8pcvJnitQ8HeVEp69rZdaStXwTV72boi/Bhw8lOeO+U2w==",
+    "System.Configuration.ConfigurationManager/7.0.0": {
+      "sha512": "WvRUdlL1lB0dTRZSs5XcQOd5q9MYNk90GkbmRmiCvRHThWiojkpGqWdmEDJdXyHbxG/BhE5hmVbMfRLXW9FJVA==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/6.0.1",
+      "path": "system.configuration.configurationmanager/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Configuration.ConfigurationManager.dll",
-        "lib/net461/System.Configuration.ConfigurationManager.xml",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
         "lib/net6.0/System.Configuration.ConfigurationManager.dll",
         "lib/net6.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net7.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net7.0/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.dll",
-        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.6.0.1.nupkg.sha512",
+        "system.configuration.configurationmanager.7.0.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2459,31 +2458,29 @@
         "version.txt"
       ]
     },
-    "System.Security.Permissions/6.0.0": {
-      "sha512": "T/uuc7AklkDoxmcJ7LGkyX1CcSviZuLCa4jg3PekfJ7SU0niF0IVTXwUiNVP9DSpzou2PpxJ+eNY2IfDM90ZCg==",
+    "System.Security.Permissions/7.0.0": {
+      "sha512": "Vmp0iRmCEno9BWiskOW5pxJ3d9n+jUqKxvX4GhLwFhnQaySZmBN2FuC0N5gjFHgyFMUjC5sfIJ8KZfoJwkcMmA==",
       "type": "package",
-      "path": "system.security.permissions/6.0.0",
+      "path": "system.security.permissions/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Permissions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Permissions.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Security.Permissions.dll",
-        "lib/net461/System.Security.Permissions.xml",
-        "lib/net5.0/System.Security.Permissions.dll",
-        "lib/net5.0/System.Security.Permissions.xml",
+        "lib/net462/System.Security.Permissions.dll",
+        "lib/net462/System.Security.Permissions.xml",
         "lib/net6.0/System.Security.Permissions.dll",
         "lib/net6.0/System.Security.Permissions.xml",
-        "lib/netcoreapp3.1/System.Security.Permissions.dll",
-        "lib/netcoreapp3.1/System.Security.Permissions.xml",
+        "lib/net7.0/System.Security.Permissions.dll",
+        "lib/net7.0/System.Security.Permissions.xml",
         "lib/netstandard2.0/System.Security.Permissions.dll",
         "lib/netstandard2.0/System.Security.Permissions.xml",
-        "runtimes/win/lib/net461/System.Security.Permissions.dll",
-        "runtimes/win/lib/net461/System.Security.Permissions.xml",
-        "system.security.permissions.6.0.0.nupkg.sha512",
+        "system.security.permissions.7.0.0.nupkg.sha512",
         "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2892,7 +2889,7 @@
       "Roblox.Economy.Common >= 1.0.0",
       "Roblox.EventLog >= 1.0.0",
       "Roblox.MssqlDatabases >= 1.0.0",
-      "System.Configuration.ConfigurationManager >= 6.0.1"
+      "System.Configuration.ConfigurationManager >= 7.0.0"
     ]
   },
   "packageFolders": {
@@ -2974,7 +2971,7 @@
           },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
-            "version": "[6.0.1, )"
+            "version": "[7.0.0, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"

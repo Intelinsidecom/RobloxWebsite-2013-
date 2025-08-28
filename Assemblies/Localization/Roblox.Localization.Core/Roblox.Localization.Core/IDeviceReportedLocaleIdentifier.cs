@@ -1,5 +1,5 @@
-﻿namespace Roblox.Localization.Corepublic {
-    interface IDeviceReportedLocaleIdentifier
+namespace Roblox.Localization.Core {
+    public interface IDeviceReportedLocaleIdentifier
 
 {
 	int Id { get; }

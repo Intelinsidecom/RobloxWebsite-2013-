@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Chat</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <NoWarn>$(NoWarn);CS1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -14,7 +14,7 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Core" />
@@ -81,10 +81,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
       <Project>
       </Project>
@@ -121,7 +117,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj">
+    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj">
       <Project>
       </Project>
     </ProjectReference>
@@ -145,6 +141,6 @@
     <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
     <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.102" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="AWSSDK.Core" Version="3.7.102" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.11" />
   </ItemGroup>
 </Project>

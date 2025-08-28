@@ -3,5 +3,13 @@
   <PropertyGroup>
     <!-- Suppress invalid LIB search path warning across the solution -->
     <NoWarn>$(NoWarn);1668</NoWarn>
+    <!-- Use static graph evaluation during restore to avoid target walk cycles -->
+    <RestoreUseStaticGraphEvaluation>true</RestoreUseStaticGraphEvaluation>
   </PropertyGroup>
+  <ItemGroup>
+    <!-- Centralize package versions to avoid downgrades across projects -->
+    <PackageReference Update="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Update="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Update="AWSSDK.Core" Version="3.7.300.27" />
+  </ItemGroup>
 </Project>

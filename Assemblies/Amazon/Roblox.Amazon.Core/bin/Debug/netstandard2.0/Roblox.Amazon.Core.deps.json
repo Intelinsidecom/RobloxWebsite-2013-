@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Roblox.Amazon.Core/1.0.0": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.102",
+          "AWSSDK.Core": "3.7.500.11",
           "NETStandard.Library": "2.0.3",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Sentinels": "1.0.0"
@@ -18,14 +18,14 @@
           "Roblox.Amazon.Core.dll": {}
         }
       },
-      "AWSSDK.Core/3.7.102": {
+      "AWSSDK.Core/3.7.500.11": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.102.0"
+            "fileVersion": "3.7.500.11"
           }
         }
       },
@@ -100,12 +100,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/3.7.102": {
+    "AWSSDK.Core/3.7.500.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TTuZOjWacoCrtMP2l1pjdMCkDskR5qnUBEDSh3nDUoBhaomEIkGfnV7c+ow7MPOawaaxSTGWvclF0MkJqoitdw==",
-      "path": "awssdk.core/3.7.102",
-      "hashPath": "awssdk.core.3.7.102.nupkg.sha512"
+      "sha512": "sha512-mKWo09X/l6oKvtUs902CxhM3/YTqEfhkcfBtremdd6DNWLd1Xg0fLbhOOJvdKUlt8gKDWF6nVfi6LORx9dU7Ow==",
+      "path": "awssdk.core/3.7.500.11",
+      "hashPath": "awssdk.core.3.7.500.11.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",

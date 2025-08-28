@@ -1,5 +1,4 @@
 using Roblox.Platform.Membership;
-using Roblox.Platform.Membership.Extensions;
 using Roblox.TextFilter;
 using Roblox.TextFilter.Client;
 
@@ -37,7 +36,12 @@ public class AssetNameAndDescription : IAssetNameAndDescription, INameAndDescrip
 	/// <param name="name"></param>
 	/// <param name="description"></param>
 	public AssetNameAndDescription(IUser user, string name, string description)
-		: this(user.ToClientTextAuthor(), name, description)
+		: this(new Roblox.TextFilter.Client.TextAuthor
+		{
+			Id = user.Id,
+			Name = user.Name,
+			IsUnder13 = user.IsUnder13
+		}, name, description)
 	{
 	}
 

@@ -1,5 +1,5 @@
-﻿namespace Roblox.Localization.Core.Propertiesinternal {
-    interface ISettings
+namespace Roblox.Localization.Core.Properties {
+    internal interface ISettings
 
 {
 	/// <summary>

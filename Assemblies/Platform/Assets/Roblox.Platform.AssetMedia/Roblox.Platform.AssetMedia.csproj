@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.AssetMedia</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -127,10 +127,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Thumbs\\Roblox.Platform.Thumbs\\Roblox.Platform.Thumbs.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <ProjectReference Include="..\\Roblox.Platform.AssetMedia.Entities\\Roblox.Platform.AssetMedia.Entities.csproj">
       <Project>
       </Project>
@@ -144,6 +140,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
 </Project>

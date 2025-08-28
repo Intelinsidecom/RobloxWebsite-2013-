@@ -60,7 +60,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.102, )"
+              "version": "[3.7.500.11, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -152,7 +152,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.200, )"
+              "version": "[3.7.500.11, )"
             },
             "AWSSDK.KinesisFirehose": {
               "target": "Package",
@@ -166,7 +166,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -323,7 +323,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -550,7 +550,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.200, )"
+              "version": "[3.7.500.11, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -558,7 +558,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"

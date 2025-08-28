@@ -1,5 +1,5 @@
-﻿namespace Roblox.Localization.Corepublic {
-    class LanguageFamilyIdentifier : ILanguageFamilyIdentifier
+namespace Roblox.Localization.Core {
+    internal class LanguageFamilyIdentifier : ILanguageFamilyIdentifier
 
 {
 	public int Id { get; }

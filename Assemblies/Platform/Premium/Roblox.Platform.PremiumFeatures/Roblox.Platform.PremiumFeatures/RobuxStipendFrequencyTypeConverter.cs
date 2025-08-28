@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using Roblox.EventLog;
-using Roblox.PremiumFeatures.Enums;
-using Roblox.PremiumFeatures.Interfaces.Converters;
-using Roblox.PremiumFeatures.Interfaces.Entities;
-using Roblox.PremiumFeatures.Interfaces.EntityFactories;
+using Roblox.Platform.PremiumFeatures.Enums;
+using Roblox.Platform.PremiumFeatures.Interfaces.Converters;
+using Roblox.Platform.PremiumFeatures.Interfaces.Entities;
+using Roblox.Platform.PremiumFeatures.Interfaces.EntityFactories;
 namespace Roblox.Platform.PremiumFeatures {
     /// <summary>
 

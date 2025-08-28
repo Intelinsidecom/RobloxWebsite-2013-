@@ -1,4 +1,4 @@
-using Roblox.PremiumFeatures.Models;
+using Roblox.Platform.PremiumFeatures.Models;
 
 namespace Roblox.Platform.PremiumFeatures;
 

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Thumbs</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -128,10 +128,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Moderation\\Roblox.Moderation\\Roblox.Moderation.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetMedia\\Roblox.Platform.AssetMedia.csproj">
       <Project>
       </Project>
@@ -139,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AWSSDK.SQS" Version="3.7.200.10" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\\..\\Thumbnails\\Roblox.Platform.Thumbnails.Client\\Roblox.Platform.Thumbnails.Client.csproj" />

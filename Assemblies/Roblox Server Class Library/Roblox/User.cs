@@ -276,50 +276,50 @@ public class User : IEquatable<User>, IPunishableUser, ICreator, IRemoteCacheabl
 		return false;
 	}
 
-	public bool IsOwnerOf(AssetSet set)
-	{
-		return set?.Creator.Equals(this) ?? false;
-	}
+public bool IsAnyBuildersClubMember()
+{
+    return BcMembership.Instance.IsAnyBuildersClubMember(AccountID);
+}
 
-	public bool IsAnyBuildersClubMember()
-	{
-		return PremiumFeatureHelper.IsAnyBuildersClubMember(AccountID);
-	}
+public bool IsBuildersClubMember()
+{
+    return BcMembership.Instance.IsBuildersClubMember(AccountID);
+}
 
-	public bool IsBuildersClubMember()
-	{
-		return PremiumFeatureHelper.IsBuildersClubMember(AccountID);
-	}
+public bool IsTurboBuildersClubMember()
+{
+    return BcMembership.Instance.IsTurboBuildersClubMember(AccountID);
+}
 
-	public bool IsTurboBuildersClubMember()
-	{
-		return PremiumFeatureHelper.IsTurboBuildersClubMember(AccountID);
-	}
+public bool IsOutrageousBuildersClubMember()
+{
+    return BcMembership.Instance.IsOutrageousBuildersClubMember(AccountID);
+}
 
-	public bool IsOutrageousBuildersClubMember()
-	{
-		return PremiumFeatureHelper.IsOutrageousBuildersClubMember(AccountID);
-	}
+public bool IsExBuildersClubMember()
+{
+    return BcMembership.Instance.IsExBuildersClubMember(AccountID);
+}
 
-	public bool IsExBuildersClubMember()
-	{
-		return PremiumFeatureHelper.IsExBuildersClubMember(AccountID);
-	}
+public string GetExBuildersClubMembership()
+{
+    return BcMembership.Instance.GetExBuildersClubMembership(AccountID);
+}
 
-	public string GetExBuildersClubMembership()
-	{
-		return PremiumFeatureHelper.GetExBuildersClubMembership(AccountID);
-	}
+public long GetCurrentOrFormerBuildersClubStipend()
+{
+    return BcMembership.Instance.GetCurrentOrFormerBuildersClubStipend(AccountID);
+}
 
-	public long GetCurrentOrFormerBuildersClubStipend()
-	{
-		return PremiumFeatureHelper.GetCurrentOrFormerBuildersClubStipend(AccountID);
-	}
+public bool TestIsSuperAdministrator()
+{
+    return GetAccount().TestIsSuperAdministrator();
+}
 
-	public bool TestIsSuperAdministrator()
-	{
-		return GetAccount().TestIsSuperAdministrator();
-	}
+public bool TestIsCustomerService()
+{
+    return GetAccount().TestIsCustomerService();
+}
 
 	public bool TestIsCustomerService()
 	{

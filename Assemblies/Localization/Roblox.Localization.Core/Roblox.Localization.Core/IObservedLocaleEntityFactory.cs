@@ -1,4 +1,4 @@
-﻿namespace Roblox.Localization.Coreinternal {
+namespace Roblox.Localization.Core {
     interface IObservedLocaleEntityFactory
 
 {

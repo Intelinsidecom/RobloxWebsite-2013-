@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "AWSSDK.Core/3.7.102": {
+      "AWSSDK.Core/3.7.500.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
@@ -124,22 +124,26 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.7.102": {
-      "sha512": "TTuZOjWacoCrtMP2l1pjdMCkDskR5qnUBEDSh3nDUoBhaomEIkGfnV7c+ow7MPOawaaxSTGWvclF0MkJqoitdw==",
+    "AWSSDK.Core/3.7.500.11": {
+      "sha512": "mKWo09X/l6oKvtUs902CxhM3/YTqEfhkcfBtremdd6DNWLd1Xg0fLbhOOJvdKUlt8gKDWF6nVfi6LORx9dU7Ow==",
       "type": "package",
-      "path": "awssdk.core/3.7.102",
+      "path": "awssdk.core/3.7.500.11",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.7.102.nupkg.sha512",
+        "awssdk.core.3.7.500.11.nupkg.sha512",
         "awssdk.core.nuspec",
+        "images/AWSLogo.png",
         "lib/net35/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.pdb",
         "lib/net35/AWSSDK.Core.xml",
         "lib/net45/AWSSDK.Core.dll",
         "lib/net45/AWSSDK.Core.pdb",
         "lib/net45/AWSSDK.Core.xml",
+        "lib/net8.0/AWSSDK.Core.dll",
+        "lib/net8.0/AWSSDK.Core.pdb",
+        "lib/net8.0/AWSSDK.Core.xml",
         "lib/netcoreapp3.1/AWSSDK.Core.dll",
         "lib/netcoreapp3.1/AWSSDK.Core.pdb",
         "lib/netcoreapp3.1/AWSSDK.Core.xml",
@@ -417,7 +421,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "AWSSDK.Core >= 3.7.102",
+      "AWSSDK.Core >= 3.7.500.11",
       "NETStandard.Library >= 2.0.3",
       "Roblox.Instrumentation >= 1.0.0",
       "Roblox.Sentinels >= 1.0.0"
@@ -483,7 +487,7 @@
         "dependencies": {
           "AWSSDK.Core": {
             "target": "Package",
-            "version": "[3.7.102, )"
+            "version": "[3.7.500.11, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

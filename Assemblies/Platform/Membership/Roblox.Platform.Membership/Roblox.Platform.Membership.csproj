@@ -31,10 +31,10 @@
     <ProjectReference Include="..\..\Users\Roblox.Platform.Users.Client\Roblox.Platform.Users.Client.csproj" />
     <ProjectReference Include="..\..\Users\Roblox.Platform.Users\Roblox.Platform.Users.csproj" />
     <ProjectReference Include="..\..\..\Passwords\Roblox.Passwords.Client\Roblox.Passwords.Client.csproj" />
-    <ProjectReference Include="..\..\..\Amazon\Roblox.Amazon.Sns\Roblox.Amazon.Sns.csproj" />
+    
     <ProjectReference Include="..\..\..\Amazon\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj" />
     <ProjectReference Include="..\..\..\Random\Roblox.Random\Roblox.Random.csproj" />
-    <ProjectReference Include="..\..\..\Roblox\Roblox.Entities\Roblox.Entities.csproj" />
+    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj" />
     <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj" />
     <ProjectReference Include="..\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj" />
     <ProjectReference Include="..\..\..\Agents\Roblox.Agents\Roblox.Agents.csproj" />

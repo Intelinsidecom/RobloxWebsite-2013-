@@ -1,5 +1,5 @@
 using System;
-using Roblox.Users.Client;
+using Roblox.Platform.Users.Client;
 
 namespace Roblox.Platform.Membership;
 
@@ -10,7 +10,7 @@ public class PlaceholderUsernameFactory : IPlaceholderUsernameFactory
 	/// <summary>
 	/// Default constructor
 	/// </summary>
-	/// <param name="usersClient"><see cref="T:Roblox.Users.Client.IUsersClient" /></param>
+	/// <param name="usersClient"><see cref="T:Roblox.Platform.Users.Client.IUsersClient" /></param>
 	public PlaceholderUsernameFactory(IUsersClient usersClient)
 	{
 		_UsersClient = usersClient ?? throw new ArgumentNullException("usersClient");

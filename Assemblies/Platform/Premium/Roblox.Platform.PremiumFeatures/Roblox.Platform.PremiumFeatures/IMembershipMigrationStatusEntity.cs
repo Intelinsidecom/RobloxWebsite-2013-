@@ -1,26 +1,24 @@
 using System;
 using Roblox.Entities;
+
 namespace Roblox.Platform.PremiumFeatures
 {
-    interface IMembershipMigrationStatusEntity : IUpdateableEntity<long>, IEntity<long>
+    public interface IMembershipMigrationStatusEntity : IUpdateableEntity<long>, IEntity<long>
+    {
+        long AccountId { get; }
 
-{
-	long AccountId { get; }
+        int OriginalPremiumFeatureId { get; }
 
-	int OriginalPremiumFeatureId { get; }
+        int UpdatedPremiumFeatureId { get; }
 
-	int UpdatedPremiumFeatureId { get; }
+        DateTime? PremiumStartDate { get; }
 
-	DateTime? PremiumStartDate { get; }
+        int RobuxDistributionAmount { get; }
 
-	int RobuxDistributionAmount { get; }
+        int MigrationStateID { get; }
 
-	int MigrationStateID { get; }
+        new DateTime Created { get; }
 
-	new DateTime Created { get; }
-
-	new DateTime Updated { get; }
-}
-
-
+        new DateTime Updated { get; }
+    }
 }

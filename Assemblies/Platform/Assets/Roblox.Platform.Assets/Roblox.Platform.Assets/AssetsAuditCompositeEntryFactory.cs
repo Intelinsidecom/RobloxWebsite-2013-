@@ -3,7 +3,7 @@ using System.Linq;
 using Roblox.Platform.Assets.Entities.Audit;
 using Roblox.Platform.Assets.Implementation;
 using Roblox.Platform.Membership;
-using Roblox.Platform.Membership.UserDataAudit;
+using Roblox.Platform.Assets.UserDataAuditBase;
 
 namespace Roblox.Platform.Assets;
 

@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net471"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net471": {
-            "targetAlias": "net471",
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         },
@@ -48,15 +48,9 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net471": {
-          "targetAlias": "net471",
+        "net472": {
+          "targetAlias": "net472",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
             "System.Collections.Concurrent": {
               "target": "Package",
               "version": "[4.3.0, )"

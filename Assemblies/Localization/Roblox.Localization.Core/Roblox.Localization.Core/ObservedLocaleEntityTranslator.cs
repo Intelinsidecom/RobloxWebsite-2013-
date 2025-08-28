@@ -1,5 +1,5 @@
-﻿using Roblox.Platform.Core;
-namespace Roblox.Localization.Coreinternal {
+using Roblox.Platform.Core;
+namespace Roblox.Localization.Core {
     class ObservedLocaleEntityTranslator : IObservedLocaleEntityTranslator
 
 {

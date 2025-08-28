@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
+using Roblox;
 
 namespace Roblox.Platform.Membership.Entities;
 

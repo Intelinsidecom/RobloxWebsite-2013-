@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using Roblox.Platform.Core;
-namespace Roblox.Localization.Coreinternal {
+namespace Roblox.Localization.Core {
     class CoreLocalizationBuilder : ICoreLocalizationBuilder
 
 {

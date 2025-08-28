@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core.Implementations;
-using Roblox.Platform.Localization.Core.Properties;
-namespace Roblox.Localization.Coreinternal {
+using Roblox.Localization.Core.Implementations;
+using Roblox.Localization.Core.Properties;
+namespace Roblox.Localization.Core {
     class SupportedLocaleEntityTranslator : ISupportedLocaleEntityTranslator
 
 {
@@ -42,7 +42,7 @@ namespace Roblox.Localization.Coreinternal {
 		}
 		ILanguageFamily language = CoreLocalizationAccessor.ToLanguage(_LanguageEntityFactory.Get(supportedLocaleEntity.LanguageId));
 		SupportedLocaleEnum? locale = _LocaleParser.ParseLocaleCodeToSupportedLocaleEnum(supportedLocaleEntity.Locale);
-		return new Roblox.Platform.Localization.Core.Implementations.SupportedLocale
+		return new SupportedLocale
 		{
 			Id = supportedLocaleEntity.Id,
 			NativeName = supportedLocaleEntity.NativeName,
@@ -72,7 +72,7 @@ namespace Roblox.Localization.Coreinternal {
 	private ISupportedLocale GetDefaultSupportedLocaleFromSettings()
 	{
 		LanguageFamily language = new LanguageFamily(_Settings.DefaultSupportedLocaleAssociatedLanguageId, _Settings.DefaultSupportedLocaleAssociatedLanguageName, _Settings.DefaultSupportedLocaleAssociatedLanguageNativeName, _Settings.DefaultSupportedLocaleAssociatedLanguageCode);
-		return new Roblox.Platform.Localization.Core.Implementations.SupportedLocale
+		return new SupportedLocale
 		{
 			Name = _Settings.DefaultSupportedLocaleName,
 			NativeName = _Settings.DefaultSupportedLocaleNativeName,

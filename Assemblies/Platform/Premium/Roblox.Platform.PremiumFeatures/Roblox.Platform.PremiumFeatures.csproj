@@ -30,9 +30,9 @@
     <ProjectReference Include="..\..\..\Common\Roblox.Common\Roblox.Common.csproj" />
     <ProjectReference Include="..\..\..\Roblox\Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj" />
     <ProjectReference Include="..\..\..\Economy\Roblox.Economy.Common\Roblox.Economy.Common.csproj" />
-    <ProjectReference Include="..\Demographics\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
+    <ProjectReference Include="..\..\Demographics\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
     <ProjectReference Include="..\Roblox.Platform.PremiumFeatures.Models\Roblox.Platform.PremiumFeatures.Models.csproj" />
-    <ProjectReference Include="..\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj" />
+    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Roblox.PremiumFeatures.Models\**\*.cs" />

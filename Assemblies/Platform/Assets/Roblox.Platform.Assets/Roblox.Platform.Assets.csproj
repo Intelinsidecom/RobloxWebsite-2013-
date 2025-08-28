@@ -34,10 +34,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Amazon\Roblox.Amazon.Sns\Roblox.Amazon.Sns.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj">
       <Project>
       </Project>
@@ -62,10 +58,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
+    
     <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj">
       <Project>
       </Project>
@@ -75,10 +68,6 @@
       </Project>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.UserDataAudit\Roblox.Platform.Membership.UserDataAudit.csproj">
       <Project>
       </Project>
     </ProjectReference>
@@ -106,14 +95,11 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Roblox\Roblox.Entities\Roblox.Entities.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
+    
     <ProjectReference Include="..\..\Users\Roblox.Platform.Users\Roblox.Platform.Users.csproj">
       <Project>
       </Project>
@@ -126,30 +112,23 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.Extensions\Roblox.Platform.Membership.Extensions.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Common\Roblox.Common\Roblox.Common.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
+    
     <ProjectReference Include="..\..\Content\Roblox.Platform.ContentFilter.Client\Roblox.Platform.ContentFilter.Client.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="AWSSDK.Core" Version="3.7.200" />
+    <ProjectReference Include="..\Roblox.Platform.Assets.Client\Roblox.Assets.Client.csproj" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.11" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Assets\Roblox.Assets\Roblox.Assets.csproj" />
     <ProjectReference Include="..\..\TextFilter\Roblox.Platform.TextFilter\Roblox.Platform.TextFilter.csproj" />
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.UserDataAudit\Roblox.Platform.Membership.UserDataAudit.csproj" />
     <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.UserDataAuditCore\Roblox.Platform.Membership.UserDataAuditCore.csproj" />
     <ProjectReference Include="..\..\..\FloodCheckers\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
     <ProjectReference Include="..\..\..\Roblox\Roblox.Paging\Roblox.Paging.csproj" />
     <ProjectReference Include="..\..\Translations\Roblox.Platform.TranslationResources\Roblox.Platform.TranslationResources.csproj" />
     <ProjectReference Include="..\..\..\Drawing\Roblox.Drawing\Roblox.Drawing.csproj" />
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.Extensions\Roblox.Platform.Membership.Extensions.csproj" />
+    
     <ProjectReference Include="..\Roblox.Platform.Assets.Client\Roblox.Assets.Client.csproj" />
   </ItemGroup>
 </Project>

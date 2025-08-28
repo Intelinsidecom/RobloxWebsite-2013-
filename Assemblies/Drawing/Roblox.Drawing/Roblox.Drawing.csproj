@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Roblox.Drawing</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -14,7 +14,7 @@
   <ItemGroup>
     <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="14.7.0" />
     <Reference Include="System.Core" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
       <Project>
       </Project>
